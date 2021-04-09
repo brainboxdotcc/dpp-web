@@ -1,25 +1,9 @@
 var searchData=
 [
-  ['_7eban',['~ban',['../a00016.html#a975e673c3ea3c1a976397542fde9e379',1,'dpp::ban']]],
-  ['_7echannel',['~channel',['../a00019.html#a51afd2284fe4ae3a6d1043c8f3ecf4f1',1,'dpp::channel']]],
-  ['_7ecluster',['~cluster',['../a00028.html#a270be0ab59aff4f335ef3f4af7559d92',1,'dpp::cluster']]],
-  ['_7ediscordclient',['~DiscordClient',['../a00031.html#a1faa58025b20607f19b497732bcee107',1,'DiscordClient']]],
-  ['_7edtemplate',['~dtemplate',['../a00033.html#a1ae48c050ffc66f77f857f939cc66487',1,'dpp::dtemplate']]],
-  ['_7eembed',['~embed',['../a00034.html#a9d43c2e1648e03cf5aa28825f600391f',1,'dpp::embed']]],
-  ['_7eemoji',['~emoji',['../a00040.html#a0a25072ec7ccc6e5da014fa888c6d8e9',1,'dpp::emoji']]],
-  ['_7eguild',['~guild',['../a00044.html#ae88cd41fc43a4b43944c246976199c32',1,'dpp::guild']]],
-  ['_7eguild_5fmember',['~guild_member',['../a00057.html#a6d0e30bb136c02988d33fb48f77e8d9c',1,'dpp::guild_member']]],
-  ['_7ehttp_5frequest',['~http_request',['../a00075.html#a94d82f10c9922b400b1dd5b8459a6691',1,'dpp::http_request']]],
-  ['_7eintegration',['~integration',['../a00077.html#ac07d5279a573d7745536d367dbd2d5be',1,'dpp::integration']]],
-  ['_7einvite',['~invite',['../a00087.html#a93e926569d8c6df52006c07c427f1601',1,'dpp::invite']]],
-  ['_7emanaged',['~managed',['../a00094.html#a68f95fa01f17991b35920e38df9f7fe9',1,'dpp::managed']]],
-  ['_7epresence',['~presence',['../a00112.html#aaf9b4823dc5cfa358f1431dc0a13df6b',1,'dpp::presence']]],
-  ['_7erequest_5fqueue',['~request_queue',['../a00119.html#a5ccaae72d03d626852be0a0d3c6b86dd',1,'dpp::request_queue']]],
-  ['_7erole',['~role',['../a00122.html#a1cd275ca1aa52763e05b78a8a3443476',1,'dpp::role']]],
-  ['_7esslclient',['~SSLClient',['../a00123.html#a69992ff843777542907521c8edc5d83b',1,'SSLClient']]],
-  ['_7euser',['~user',['../a00126.html#a7787310b4607e5e3eb61c2b504bae94e',1,'dpp::user']]],
-  ['_7evoiceregion',['~voiceregion',['../a00133.html#ab08402a1538913ad465b2c36cd4dbf92',1,'dpp::voiceregion']]],
-  ['_7evoicestate',['~voicestate',['../a00134.html#a29e5fdd1ec931b6ad1feed0094a1225f',1,'dpp::voicestate']]],
-  ['_7ewebhook',['~webhook',['../a00135.html#aa5f6e90d2be315fd438b827e25447a36',1,'dpp::webhook']]],
-  ['_7ewsclient',['~WSClient',['../a00138.html#a3e6383c63cd22720dc4c61e5b0dbb899',1,'WSClient']]]
+  ['web_5fstatus',['web_status',['../a00164.html#acd054b45f55114f1c8a3a41c54f280ea',1,'dpp::presence']]],
+  ['webhook',['webhook',['../a00203.html#a7144cd4b090eaa5a22687230cf2d6bd3',1,'dpp::webhook']]],
+  ['webhooks_5fupdate_5ft',['webhooks_update_t',['../a00205.html#aa070b1866b55bc3e6d2a7a8b698e8c1b',1,'dpp::webhooks_update_t']]],
+  ['websocket_5fclient',['websocket_client',['../a00206.html#a809b342e343bd370141ba25a5e90cf64',1,'dpp::websocket_client']]],
+  ['widget_5fenabled',['widget_enabled',['../a00087.html#a589a0df44c82fe9521b44a8165a0ac20',1,'dpp::guild']]],
+  ['write',['write',['../a00177.html#a4d9bde88c0c1926be915c6d232506176',1,'dpp::ssl_client::write()'],['../a00206.html#aac65765349cbd3e787c0fd2af576ec6d',1,'dpp::websocket_client::write()']]]
 ];

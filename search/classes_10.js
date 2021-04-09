@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['webhook',['webhook',['../a00135.html',1,'dpp']]],
-  ['webhooks_5fupdate',['webhooks_update',['../a00136.html',1,'']]],
-  ['webhooks_5fupdate_5ft',['webhooks_update_t',['../a00137.html',1,'dpp']]],
-  ['wsclient',['WSClient',['../a00138.html',1,'']]]
+  ['webhook',['webhook',['../a00203.html',1,'dpp']]],
+  ['webhooks_5fupdate',['webhooks_update',['../a00204.html',1,'dpp::events']]],
+  ['webhooks_5fupdate_5ft',['webhooks_update_t',['../a00205.html',1,'dpp']]],
+  ['websocket_5fclient',['websocket_client',['../a00206.html',1,'dpp']]]
 ];

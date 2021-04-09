@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['presence_5fflags',['presence_flags',['../a00242.html#a953f1484a5140481ffab2b248618fb22',1,'dpp']]],
-  ['presence_5fstatus',['presence_status',['../a00242.html#a172aa830689e55f4bba337de1592db96',1,'dpp']]]
+  ['message_5fflags',['message_flags',['../a00345.html#a0157b2de9cc3cf2f819b8e4d969f84a8',1,'dpp']]],
+  ['message_5ftype',['message_type',['../a00345.html#acd7f41dcc93c1cf48514d2b123e4d8bc',1,'dpp']]]
 ];

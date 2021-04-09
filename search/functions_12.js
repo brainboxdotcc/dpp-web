@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['web_5fstatus',['web_status',['../a00112.html#acd054b45f55114f1c8a3a41c54f280ea',1,'dpp::presence']]],
-  ['webhook',['webhook',['../a00135.html#a7144cd4b090eaa5a22687230cf2d6bd3',1,'dpp::webhook']]],
-  ['webhooks_5fupdate_5ft',['webhooks_update_t',['../a00137.html#a6545a441d2d24a633b57cbc800c8afeb',1,'dpp::webhooks_update_t']]],
-  ['widget_5fenabled',['widget_enabled',['../a00044.html#a589a0df44c82fe9521b44a8165a0ac20',1,'dpp::guild']]],
-  ['write',['write',['../a00123.html#a23fd1c57a3a1c8f7e34702101a0434c4',1,'SSLClient::write()'],['../a00138.html#a62aea8780d7b32869772a1b57dc5353e',1,'WSClient::write()']]],
-  ['wsclient',['WSClient',['../a00138.html#a8b9d53eb52348154a4df2e6f7ec36d86',1,'WSClient']]]
+  ['vformat_5fto',['vformat_to',['../a00344.html#aeb555f3e2a033f189dcb5e5029acf45f',1,'detail::vformat_to(buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; format_str, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; Char &gt;&gt;&gt;, type_identity_t&lt; Char &gt;&gt;&gt; args)'],['../a00344.html#aa3d0ac653ec89026559e5906b3bf7e91',1,'detail::vformat_to(buffer&lt; char &gt; &amp;, string_view, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; char &gt;&gt;&gt;, type_identity_t&lt; char &gt;&gt;&gt;)']]],
+  ['voice_5fbuffer_5fsend_5ft',['voice_buffer_send_t',['../a00191.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
+  ['voice_5fready_5ft',['voice_ready_t',['../a00192.html#afe0122cb6850df07ca84ba3592181490',1,'dpp::voice_ready_t']]],
+  ['voice_5freceive_5ft',['voice_receive_t',['../a00193.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t']]],
+  ['voice_5fserver_5fupdate_5ft',['voice_server_update_t',['../a00195.html#a818081c81337f241f2c7fdc2bf0be1bc',1,'dpp::voice_server_update_t']]],
+  ['voice_5fstate_5fupdate_5ft',['voice_state_update_t',['../a00197.html#a421fc199dfeb2542ad61248b3a600a79',1,'dpp::voice_state_update_t']]],
+  ['voice_5ftrack_5fmarker_5ft',['voice_track_marker_t',['../a00198.html#ab3a8a8296e89fd188caed6d11c2d8c72',1,'dpp::voice_track_marker_t']]],
+  ['voice_5fuser_5ftalking_5ft',['voice_user_talking_t',['../a00199.html#a364eafcc97db6de005b150f3a92ed634',1,'dpp::voice_user_talking_t']]],
+  ['voiceconn',['voiceconn',['../a00200.html#a2238afc107e4e97daa0693c81fe150fd',1,'dpp::voiceconn::voiceconn()=default'],['../a00200.html#a7b0b033f371d814cf04e09ac7cf08ac1',1,'dpp::voiceconn::voiceconn(class discord_client *o, snowflake _channel_id)']]],
+  ['voiceregion',['voiceregion',['../a00201.html#aa49a3a3f843f2f97f27ad262dff11c5c',1,'dpp::voiceregion']]],
+  ['voicestate',['voicestate',['../a00202.html#a2cffc101e4bff3c2aa40f5efc9fee895',1,'dpp::voicestate']]]
 ];

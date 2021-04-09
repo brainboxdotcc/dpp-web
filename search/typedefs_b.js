@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['snowflake',['snowflake',['../a00242.html#a0dec2a52b080906aebfd3e1b3db02475',1,'dpp']]]
+  ['role_5fmap',['role_map',['../a00345.html#adb1c0770936ed4ac64158cf9523e638b',1,'dpp']]]
 ];

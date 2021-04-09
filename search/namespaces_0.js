@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['dpp',['dpp',['../a00242.html',1,'']]],
-  ['utility',['utility',['../a00243.html',1,'dpp']]]
+  ['anonymous_5fnamespace_7bos_2ecpp_7d',['anonymous_namespace{os.cpp}',['../a00343.html',1,'']]]
 ];

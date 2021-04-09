@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['voiceregion_5fflags',['voiceregion_flags',['../a00242.html#a03f707e068e2f7e7c7277094af901813',1,'dpp']]],
-  ['voicestate_5fflags',['voicestate_flags',['../a00242.html#a6a7cc94290184616d0267d751f02d53f',1,'dpp']]]
+  ['region',['region',['../a00345.html#a51891a9e382f9c396d378de00fa65099',1,'dpp']]],
+  ['role_5fflags',['role_flags',['../a00345.html#a0dc77b8a509bf5337322d02e93e96c2e',1,'dpp']]],
+  ['role_5fpermissions',['role_permissions',['../a00345.html#a0bb678a7eb060b6f35ad38e6f4ee0002',1,'dpp']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['user',['user',['../a00126.html',1,'dpp']]],
-  ['user_5fupdate',['user_update',['../a00127.html',1,'']]],
-  ['user_5fupdate_5ft',['user_update_t',['../a00128.html',1,'dpp']]]
+  ['uptime',['uptime',['../a00187.html',1,'dpp::utility']]],
+  ['user',['user',['../a00188.html',1,'dpp']]],
+  ['user_5fupdate',['user_update',['../a00189.html',1,'dpp::events']]],
+  ['user_5fupdate_5ft',['user_update_t',['../a00190.html',1,'dpp']]]
 ];

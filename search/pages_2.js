@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['frequently_20asked_20questions_20_28faq_29',['Frequently Asked Questions (FAQ)',['../a00002.html',1,'']]]
+  ['example_20programs',['Example Programs',['../a00008.html',1,'']]],
+  ['event_20handlers',['Event Handlers',['../a00028.html',1,'']]]
 ];
