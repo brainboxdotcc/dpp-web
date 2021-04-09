@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['sent',['sent',['../a00095.html#a9991c58453a1deb7b785a6b7457372f2',1,'dpp::message']]],
+  ['session_5fid',['session_id',['../a00118.html#a23affdff20fde573d1296cd21c3d56c8',1,'dpp::ready_t::session_id()'],['../a00121.html#a117033854fb7a8d871ed5a7638a8d8e6',1,'dpp::resumed_t::session_id()'],['../a00134.html#adda1e3192a8dbe103f5b5c29b29ca74b',1,'dpp::voicestate::session_id()']]],
+  ['session_5fstart_5fmax_5fconcurrency',['session_start_max_concurrency',['../a00043.html#a34dcabe707a6ba554176fb80124962e9',1,'dpp::gateway']]],
+  ['session_5fstart_5fremaining',['session_start_remaining',['../a00043.html#ada9225b2a8f91500e7b5d1107a0acd46',1,'dpp::gateway']]],
+  ['session_5fstart_5freset_5fafter',['session_start_reset_after',['../a00043.html#a58109dac8a28a7b01c6755c1879474d8',1,'dpp::gateway']]],
+  ['session_5fstart_5ftotal',['session_start_total',['../a00043.html#a64fe90aa1ef4e9f32e539b23fe0bf327',1,'dpp::gateway']]],
+  ['sessionid',['sessionid',['../a00031.html#abeca4d1ff6076c89b536f38c773f3cc2',1,'DiscordClient']]],
+  ['severity',['severity',['../a00092.html#ae1316a6ace98555175a4c1c70c9d0549',1,'dpp::log_t']]],
+  ['sfd',['sfd',['../a00123.html#a84ffcd7952354c279407b74ed3a6f763',1,'SSLClient']]],
+  ['shard_5fid',['shard_id',['../a00031.html#a5914bd4fd4eb5ab72757dd23f7e50a68',1,'DiscordClient::shard_id()'],['../a00118.html#ad031e4a6c0354ac8ad28b61045c2c09d',1,'dpp::ready_t::shard_id()'],['../a00121.html#a6427ec22c7567f5b39db9777d114dac7',1,'dpp::resumed_t::shard_id()']]],
+  ['shards',['shards',['../a00043.html#aa51b1ff8814f325fa974b887108836b4',1,'dpp::gateway::shards()'],['../a00028.html#aa603b2c07c1cf437d87cfab613b656ca',1,'dpp::cluster::shards()']]],
+  ['source_5fguild_5fid',['source_guild_id',['../a00033.html#a4ec6536f11f56d2cb001dc76e9bd9ceb',1,'dpp::dtemplate']]],
+  ['splash',['splash',['../a00044.html#a34aecd494c1a856e013d7ac9a35a5945',1,'dpp::guild']]],
+  ['ssl',['ssl',['../a00123.html#ac415d9e5b67ec9366699ce1ce8be4118',1,'SSLClient']]],
+  ['start',['start',['../a00009.html#a3ab31f2d396e1c16e3f5a2036a683c9f',1,'dpp::activity']]],
+  ['state',['state',['../a00132.html#a00fa332a89cc7839515806e58b8731a3',1,'dpp::voice_state_update_t::state()'],['../a00009.html#a6314c58d23a4301b3d7dabc91e472666',1,'dpp::activity::state()']]],
+  ['status',['status',['../a00076.html#a43d0cd80d26f3e1aa23c5539e4f984e0',1,'dpp::http_request_completion_t']]],
+  ['subscriber_5fcount',['subscriber_count',['../a00077.html#a6226522574b38e03a4cb2df9ddc7dbba',1,'dpp::integration']]],
+  ['success',['success',['../a00029.html#af16e812b41c01161a984498c0c52e66e',1,'dpp::confirmation']]],
+  ['summary',['summary',['../a00078.html#a467fed81de74c5d9e75bd367e430bca8',1,'dpp::integration_app']]],
+  ['synced_5fat',['synced_at',['../a00077.html#adc4d5078e65f35a398d4d43c88870812',1,'dpp::integration']]],
+  ['system_5fchannel_5fid',['system_channel_id',['../a00044.html#a0fc5cec016c0604ce2575fbe5eea5ded',1,'dpp::guild']]]
+];

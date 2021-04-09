@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['managed',['managed',['../a00094.html#a31ef760e6aff5631cdaf8425daaf7e6a',1,'dpp::managed']]],
+  ['message_5fadd_5freaction',['message_add_reaction',['../a00028.html#a08eb4e0352a29a92587d677d4b5fd6a7',1,'dpp::cluster']]],
+  ['message_5fcreate',['message_create',['../a00028.html#a080a8cefc6ceb0b882fdb6fe70c078a6',1,'dpp::cluster']]],
+  ['message_5fcreate_5ft',['message_create_t',['../a00097.html#a64400ee681d733ccb68114d7ed6644fe',1,'dpp::message_create_t']]],
+  ['message_5fcrosspost',['message_crosspost',['../a00028.html#a8cdf2c55ac48902e7b194ab8e651d869',1,'dpp::cluster']]],
+  ['message_5fdelete',['message_delete',['../a00028.html#abb75919ec5abd5b510255692ef439f97',1,'dpp::cluster']]],
+  ['message_5fdelete_5fall_5freactions',['message_delete_all_reactions',['../a00028.html#a13ae40b4389928ce8e6f8d9b47512291',1,'dpp::cluster']]],
+  ['message_5fdelete_5fbulk',['message_delete_bulk',['../a00028.html#ab4534c2c87bf45c326b126ef0a00ee80',1,'dpp::cluster']]],
+  ['message_5fdelete_5fbulk_5ft',['message_delete_bulk_t',['../a00100.html#a0b914ff2653cd6634ebad47108f27083',1,'dpp::message_delete_bulk_t']]],
+  ['message_5fdelete_5fown_5freaction',['message_delete_own_reaction',['../a00028.html#aba9abca51107d5aed147fa9b0aa8d675',1,'dpp::cluster']]],
+  ['message_5fdelete_5freaction',['message_delete_reaction',['../a00028.html#a72b04160e95d808013fe222a9b690dae',1,'dpp::cluster']]],
+  ['message_5fdelete_5freaction_5femoji',['message_delete_reaction_emoji',['../a00028.html#a6a1478ca3f0fb3c645a34474099e4e04',1,'dpp::cluster']]],
+  ['message_5fdelete_5ft',['message_delete_t',['../a00101.html#ad0b1f868653814f3ea980083939e5a50',1,'dpp::message_delete_t']]],
+  ['message_5fedit',['message_edit',['../a00028.html#a754206a7e97f1aaab4ab83ed53e4f351',1,'dpp::cluster']]],
+  ['message_5fget',['message_get',['../a00028.html#a9d3b0f7c3dae4ecb1980cabe8f10ccd7',1,'dpp::cluster']]],
+  ['message_5fget_5freactions',['message_get_reactions',['../a00028.html#ab05fea3d6c298d5f2371704084383f8f',1,'dpp::cluster']]],
+  ['message_5fpin',['message_pin',['../a00028.html#aa140a11ab0b2feede600761aaee2483b',1,'dpp::cluster']]],
+  ['message_5freaction_5fadd_5ft',['message_reaction_add_t',['../a00103.html#a6d9d7792c64ae919cf883a6df3565642',1,'dpp::message_reaction_add_t']]],
+  ['message_5freaction_5fremove_5fall_5ft',['message_reaction_remove_all_t',['../a00106.html#a1311322c5ed341ba2aabcc373fcc6e7c',1,'dpp::message_reaction_remove_all_t']]],
+  ['message_5freaction_5fremove_5femoji_5ft',['message_reaction_remove_emoji_t',['../a00108.html#a87c98f77c6f09c02beba9b7bdc3dcad3',1,'dpp::message_reaction_remove_emoji_t']]],
+  ['message_5freaction_5fremove_5ft',['message_reaction_remove_t',['../a00109.html#a7bbe9eaa5d2aa6c333badcd2e540387f',1,'dpp::message_reaction_remove_t']]],
+  ['message_5funpin',['message_unpin',['../a00028.html#a454e53cea10416ca9d299855dbb08e0b',1,'dpp::cluster']]],
+  ['message_5fupdate_5ft',['message_update_t',['../a00111.html#ac279dc9570132b516a3dad3a146017b7',1,'dpp::message_update_t']]],
+  ['messages_5fget',['messages_get',['../a00028.html#acb1a4777f0907ee6c841ba008a81f60b',1,'dpp::cluster']]],
+  ['mobile_5fstatus',['mobile_status',['../a00112.html#ae98e7b1b73d1e18af8655e0274ee9615',1,'dpp::presence']]]
+];
