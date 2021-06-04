@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="Using component interactions - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Integrating with spdlog - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Using component interactions - D++ - The lightweight C++ Discord API Library">
-<title>Using component interactions - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Integrating with spdlog - D++ - The lightweight C++ Discord API Library">
+<title>Integrating with spdlog - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,54 +96,68 @@ $(document).ready(function(){initNavTree('a00020.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Using component interactions </div>  </div>
+<div class="title">Integrating with spdlog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Discord's newest features support sending buttons alongside messages, which when clicked by the user trigger an interaction which is routed by D++ as an on_button_click event. To make use of this, use code as in this example.</p>
+<div class="textblock"><p>If you want to make your bot use spdlog, like aegis does, you can attach it to the on_log event. You can do this as follows:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;dpp/message.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;dpp/fmt/format.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;spdlog/spdlog.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;spdlog/async.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;spdlog/sinks/rotating_file_sink.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> <span class="keyword">const</span> *argv[])</div>
 <div class="line">{</div>
-<div class="line">    <a class="code" href="a00061.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
+<div class="line">    <a class="code" href="a00063.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">    <span class="comment">/* Message handler to look for a command called !button */</span></div>
-<div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code" href="a00147.html">dpp::message_create_t</a> &amp; event) {</div>
-<div class="line">        <span class="keywordflow">if</span> (event.<a class="code" href="a00147.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code" href="a00145.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!button&quot;</span>) {</div>
-<div class="line">            <span class="comment">/* Create a message containing an action row, and a button within the action row. */</span></div>
-<div class="line">            bot.message_create(</div>
-<div class="line">                dpp::message(event.msg-&gt;channel_id, <span class="stringliteral">&quot;this text has buttons&quot;</span>).add_component(</div>
-<div class="line">                    dpp::component().add_component(</div>
-<div class="line">                        dpp::component().set_label(<span class="stringliteral">&quot;Click me!&quot;</span>).</div>
-<div class="line">                        set_emoji(<span class="stringliteral">&quot;😄&quot;</span>).</div>
-<div class="line">                        set_style(dpp::cos_danger).</div>
-<div class="line">                        set_id(<span class="stringliteral">&quot;myid&quot;</span>)</div>
-<div class="line">                    )</div>
-<div class="line">                )</div>
-<div class="line">            );</div>
+<div class="line">    <span class="keyword">const</span> std::string log_name = <span class="stringliteral">&quot;mybot.log&quot;</span>;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">/* Set up spdlog logger */</span></div>
+<div class="line">    std::shared_ptr&lt;spdlog::logger&gt; log;</div>
+<div class="line">    spdlog::init_thread_pool(8192, 2);</div>
+<div class="line">    std::vector&lt;spdlog::sink_ptr&gt; sinks;</div>
+<div class="line">    <span class="keyword">auto</span> stdout_sink = std::make_shared&lt;spdlog::sinks::stdout_color_sink_mt &gt;();</div>
+<div class="line">    <span class="keyword">auto</span> rotating = std::make_shared&lt;spdlog::sinks::rotating_file_sink_mt&gt;(log_name, 1024 * 1024 * 5, 10);</div>
+<div class="line">    sinks.push_back(stdout_sink);</div>
+<div class="line">    sinks.push_back(rotating);</div>
+<div class="line">    log = std::make_shared&lt;spdlog::async_logger&gt;(<span class="stringliteral">&quot;logs&quot;</span>, sinks.begin(), sinks.end(), spdlog::thread_pool(), spdlog::async_overflow_policy::block);</div>
+<div class="line">    spdlog::register_logger(log);</div>
+<div class="line">    log-&gt;set_pattern(<span class="stringliteral">&quot;%^%Y-%m-%d %H:%M:%S.%e [%L] [th#%t]%$ : %v&quot;</span>);</div>
+<div class="line">    log-&gt;set_level(spdlog::level::level_enum::debug);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">/* Integrate spdlog logger to D++ log events */</span></div>
+<div class="line">    bot.on_log([&amp;bot, &amp;log](<span class="keyword">const</span> <a class="code" href="a00144.html">dpp::log_t</a> &amp; event) {</div>
+<div class="line">        <span class="keywordflow">switch</span> (event.<a class="code" href="a00144.html#ae1316a6ace98555175a4c1c70c9d0549">severity</a>) {</div>
+<div class="line">            case dpp::ll_trace:</div>
+<div class="line">                log-&gt;trace(<span class="stringliteral">&quot;{}&quot;</span>, event.message);</div>
+<div class="line">            break;</div>
+<div class="line">            case dpp::ll_debug:</div>
+<div class="line">                log-&gt;debug(<span class="stringliteral">&quot;{}&quot;</span>, event.message);</div>
+<div class="line">            break;</div>
+<div class="line">            case dpp::ll_info:</div>
+<div class="line">                log-&gt;info(<span class="stringliteral">&quot;{}&quot;</span>, event.message);</div>
+<div class="line">            break;</div>
+<div class="line">            case dpp::ll_warning:</div>
+<div class="line">                log-&gt;warn(<span class="stringliteral">&quot;{}&quot;</span>, event.message);</div>
+<div class="line">            break;</div>
+<div class="line">            case dpp::ll_error:</div>
+<div class="line">                log-&gt;error(<span class="stringliteral">&quot;{}&quot;</span>, event.message);</div>
+<div class="line">            break;</div>
+<div class="line">            case dpp::ll_critical:</div>
+<div class="line">            default:</div>
+<div class="line">                log-&gt;critical(<span class="stringliteral">&quot;{}&quot;</span>, event.message);</div>
+<div class="line">            break;</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"></div>
-<div class="line">    <span class="comment">/* When a user clicks your button, the on_button_click event will fire,</span></div>
-<div class="line"><span class="comment">     * containing the custom_id you defined in your button.</span></div>
-<div class="line"><span class="comment">     */</span></div>
-<div class="line">    bot.on_button_click([&amp;bot](<span class="keyword">const</span> <a class="code" href="a00049.html">dpp::button_click_t</a> &amp; event) {</div>
-<div class="line">        <span class="comment">/* Button clicks are still interactions, and must be replied to in some form to</span></div>
-<div class="line"><span class="comment">         * prevent the &quot;this interaction has failed&quot; message from Discord to the user.</span></div>
-<div class="line"><span class="comment">         */</span></div>
-<div class="line">        <span class="keyword">event</span>.reply(<a class="code" href="a00345.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a>, <span class="stringliteral">&quot;You clicked: &quot;</span> + event.<a class="code" href="a00049.html#a9cd563e83eab3b92b4aecda2680cf3c8">custom_id</a>);</div>
-<div class="line">    });</div>
+<div class="line">    <span class="comment">/* Add the rest of your events */</span></div>
 <div class="line"></div>
 <div class="line">    bot.start(<span class="keyword">false</span>);</div>
-<div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>When the feature is functioning, the code below will produce buttons on the reply message like in the image below:</p>
-<div class="image">
-<img src="button.png" alt="button.png"/>
-</div>
- </div></div><!-- contents -->
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

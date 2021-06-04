@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Using component interactions (advanced) - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library">
-<title>Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Using component interactions (advanced) - D++ - The lightweight C++ Discord API Library">
+<title>Using component interactions (advanced) - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,19 +96,58 @@ $(document).ready(function(){initNavTree('a00026.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Clusters, Shards and Guilds </div>  </div>
+<div class="title">Using component interactions (advanced) </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>D++ takes a three-tiered highly scalable approach to bots, with three levels known as Clusters, Shards and Guilds as documented below.</p>
-<h2>Clusters</h2>
-<p>A bot may be made of one or more clusters. Each cluster maintains a queue of commands waiting to be sent to Discord, a queue of replies from Discord for all commands executed, and zero or more <b>shards</b>.</p>
-<p>Small bots will require just one cluster. Clusters may be started within separate processes if required (this is recommended) and will split the required number of shards equally across themselves. There is some level of communication between clusters, however they all remain independent without any central "controller" process.</p>
-<h2>Shards</h2>
-<p>A cluster contains zero or more shards. Each shard maintains a persistent websocket connection to Discord which receives all events the bot is made aware of, e.g. messages, channel edits, etc.</p>
-<p>Small bots require only one shard. You may however create as many as you wish. Once you reach 2500 guilds, Discord require that your bot have at least one shard for every 2500 guilds. Any shard which would have over 2500 guilds on it will be disallowed connection.</p>
-<h2>Guilds</h2>
-<p>Guilds are what servers are known as to the API. There can be up to <b>2500</b> of these per shard. Each of these is usually a distinct community and will contain a collection of guild members (users with a membership of this guild), channels and roles, emojis and various other pieces of data. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>This example demonstrates receiving button clicks and sending response messages.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using</span> json = <a class="code" href="a00363.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="a00063.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">    bot.on_button_click([&amp;bot](<span class="keyword">const</span> <a class="code" href="a00051.html">dpp::button_click_t</a> &amp; event) {</div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code" href="a00051.html#a9cd563e83eab3b92b4aecda2680cf3c8">custom_id</a> == <span class="stringliteral">&quot;10&quot;</span>) {</div>
+<div class="line">            event.reply(dpp::ir_channel_message_with_source, dpp::message(<span class="stringliteral">&quot;Correct&quot;</span>).set_flags(dpp::m_ephemeral));</div>
+<div class="line">        } <span class="keywordflow">else</span> {</div>
+<div class="line">            event.reply(dpp::ir_channel_message_with_source, dpp::message(<span class="stringliteral">&quot;Incorrect&quot;</span>).set_flags(dpp::m_ephemeral));</div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+<div class="line"></div>
+<div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code" href="a00149.html">dpp::message_create_t</a> &amp; event) {</div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code" href="a00149.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code" href="a00147.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!ping2&quot;</span>) {</div>
+<div class="line">            bot.message_create(</div>
+<div class="line">                dpp::message(event.msg-&gt;channel_id, <span class="stringliteral">&quot;What is 5+5?&quot;</span>).add_component(</div>
+<div class="line">                    dpp::component().add_component(</div>
+<div class="line">                        dpp::component().set_label(<span class="stringliteral">&quot;9&quot;</span>).</div>
+<div class="line">                        set_style(dpp::cos_primary).</div>
+<div class="line">                        set_id(<span class="stringliteral">&quot;9&quot;</span>)</div>
+<div class="line">                    ).add_component(</div>
+<div class="line">                        dpp::component().set_label(<span class="stringliteral">&quot;10&quot;</span>).</div>
+<div class="line">                        set_style(dpp::cos_primary).</div>
+<div class="line">                        set_id(<span class="stringliteral">&quot;10&quot;</span>)</div>
+<div class="line">                    ).add_component(</div>
+<div class="line">                        dpp::component().set_label(<span class="stringliteral">&quot;11&quot;</span>).</div>
+<div class="line">                        set_style(dpp::cos_primary).</div>
+<div class="line">                        set_id(<span class="stringliteral">&quot;11&quot;</span>)</div>
+<div class="line">                    )</div>
+<div class="line">                )</div>
+<div class="line">            );</div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+<div class="line"></div>
+<div class="line">    bot.start(<span class="keyword">false</span>);</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>This code will send a different message for correct and incorrect answers.</p>
+<div class="image">
+<img src="button_2.png" alt="button_2.png"/>
+</div>
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -1,7 +1,7 @@
 var a00064 =
 [
-    [ "id", "a00064.html#a6e1ddf18af43a38f4385ed418e5bfa7f", null ],
-    [ "name", "a00064.html#a526dfc98a7e142fc8c28a870e6981853", null ],
-    [ "options", "a00064.html#a1888851c94c4f2316b20c019c171121b", null ],
-    [ "resolved", "a00064.html#abb6e1caad1c42ecdf4679fd59991d872", null ]
+    [ "name", "a00064.html#a0c3bbf03c956d22fc1ecf677c1476ac7", null ],
+    [ "options", "a00064.html#aa26028641de473d1486d26e8048340b4", null ],
+    [ "type", "a00064.html#a3e664aff9bad6fffbd521d0dcc1d2299", null ],
+    [ "value", "a00064.html#a576bda8a063f9b1d1aa4b931973e4587", null ]
 ];

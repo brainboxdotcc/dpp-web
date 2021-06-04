@@ -1,4 +1,5 @@
 var a00350 =
 [
-    [ "anonymous_namespace{json.hpp}", "a00351.html", null ]
+    [ "iconhash", "a00125.html", "a00125" ],
+    [ "uptime", "a00189.html", "a00189" ]
 ];

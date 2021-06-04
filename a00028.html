@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="Event Handlers - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Event Handlers - D++ - The lightweight C++ Discord API Library">
-<title>Event Handlers - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library">
+<title>Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,101 +96,18 @@ $(document).ready(function(){initNavTree('a00028.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Event Handlers </div>  </div>
+<div class="title">Clusters, Shards and Guilds </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Event handlers can be attached to from your program to be notified of updates to discord. Each one can be hooked by attaching a lambda, std::function or std::bind or equivalent to the event with one of the functions below, for example to be notified of messages being sent, assuming you have an instance of <a class="el" href="a00061.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> called <code>bot</code>:</p>
-<div class="fragment"><div class="line">bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code" href="a00147.html">dpp::message_create_t</a> &amp; event) {</div>
-<div class="line">    bot.log(<a class="code" href="a00345.html#a7d48d478ccc3bffb34637bdb48f629c2a2219e945b7b3bff23816011423d2504a">dpp::ll_info</a>, fmt::format(<span class="stringliteral">&quot;Message Received: {}&quot;</span>, event.<a class="code" href="a00147.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code" href="a00145.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a>));</div>
-<div class="line">});</div>
-</div><!-- fragment --><h3><a class="el" href="a00061.html#a52046d1e6bbbad709abe05cedd376eb0" title="on voice state update event ">dpp::cluster::on_voice_state_update</a> ()</h3>
-<p>Be notified of a change in voice state for a user</p>
-<h3><a class="el" href="a00061.html#ab42d2402bb68ba381a011f4ade31c909" title="Called when a log message is to be written to the log. You can attach any logging system here you wis...">dpp::cluster::on_log</a> ()</h3>
-<p>Be notified of log lines to implement your own logging of bot activity</p>
-<h3><a class="el" href="a00061.html#ab17aa65a6835eca5a95036d6bf6f736c" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a> ()</h3>
-<p>Be notified of use of a slash command on a server</p>
-<h3><a class="el" href="a00061.html#a6cb092977902daa7f92e33f4fd05928d" title="Called when a guild is deleted. A guild can be deleted via the bot being kicked, the bot leaving the ...">dpp::cluster::on_guild_delete</a> ()</h3>
-<p>Be notified of a guild being deleted (bot kicked, left, or server unavailable)</p>
-<h3><a class="el" href="a00061.html#a198205866e58980295bdf41d69fc91d1" title="Called when a channel is deleted from a guild. The channel will still be temporarily avaialble in the...">dpp::cluster::on_channel_delete</a> ()</h3>
-<p>Be notified of a channel being deleted</p>
-<h3><a class="el" href="a00061.html#a0a610f0b4ff4f2836c6b5b73d833d85c" title="Called when a channel is edited on a guild. The new channel details have already been applied to the ...">dpp::cluster::on_channel_update</a> ()</h3>
-<p>Be notified of a channel being edited</p>
-<h3><a class="el" href="a00061.html#ad8170aef3ae244df66464b192e3e30e7" title="Called when a shard is connected and ready. A set of on_guild_create events will follow this event...">dpp::cluster::on_ready</a> ()</h3>
-<p>Be notified of a shard becoming ready</p>
-<h3><a class="el" href="a00061.html#a10cb7cb6746c6420a8db7b0419d7167e" title="Called when a message is deleted. The message has already been deleted from Discord when you receive ...">dpp::cluster::on_message_delete</a> ()</h3>
-<p>Be notified of a message being deleted</p>
-<h3><a class="el" href="a00061.html#abd8ee0e654de56e39c418e83e1115af3" title="Called when an application command (slash command) is deleted. ">dpp::cluster::on_application_command_delete</a> ()</h3>
-<p>Be notified of an application command (slash command) being deleted</p>
-<h3><a class="el" href="a00061.html#a066836f6875a4e3c0337ac8bdb5dc0cd" title="Called when a user leaves a guild (either through being kicked, or choosing to leave) ...">dpp::cluster::on_guild_member_remove</a> ()</h3>
-<p>Be notified of a guild member being removed (kicked or leaving)</p>
-<h3><a class="el" href="a00061.html#aaf2ae12b7d433f3b8e84dc72258e90a2" title="Called when a new application command (slash command) is registered. ">dpp::cluster::on_application_command_create</a> ()</h3>
-<p>Be notified of an application command (slash command) being created</p>
-<h3><a class="el" href="a00061.html#ab14ac92eae4e4830f4cc17ae58aa9eaf" title="Called when a connection to a shard successfully resumes. A resumed session does not need to re-synch...">dpp::cluster::on_resumed</a> ()</h3>
-<p>Be notified of a connection being resumed</p>
-<h3><a class="el" href="a00061.html#ae672ed645f2d2ac9c16400fdfb280028" title="Called when a new role is created on a guild. ">dpp::cluster::on_guild_role_create</a> ()</h3>
-<p>Be notified of a guild role being created</p>
-<h3><a class="el" href="a00061.html#af39f3dd46cbc25cf33f17ddb7621a0fc" title="Called when a user is typing on a channel. ">dpp::cluster::on_typing_start</a> ()</h3>
-<p>Be notified of a user typing</p>
-<h3><a class="el" href="a00061.html#a6f6c50a06dde8496cc5975831182616e" title="Called when a new reaction is added to a message. ">dpp::cluster::on_message_reaction_add</a> ()</h3>
-<p>Be notified of a reaction on a message</p>
-<h3><a class="el" href="a00061.html#a6563c6a86b51b51604367a49e5b7d40e" title="Called when a set of members is received for a guild. D++ will request these for all new guilds if ne...">dpp::cluster::on_guild_members_chunk</a> ()</h3>
-<p>Be notified of a set of guild member information being received</p>
-<h3><a class="el" href="a00061.html#adba3843eca8e834a08833dff0e0c5cc0" title="Called when a single reaction is removed from a message. ">dpp::cluster::on_message_reaction_remove</a> ()</h3>
-<p>Be notified of a reaction being removed from a message</p>
-<h3><a class="el" href="a00061.html#a5664cec1efc2de0beb9fde7b3a7b15fb" title="Called when a new guild is created. D++ will request members for the guild for its cache using guild_...">dpp::cluster::on_guild_create</a> ()</h3>
-<p>Be notified of a guild being created/joined</p>
-<h3><a class="el" href="a00061.html#ac23e89c1685520bf303ac9b1b5eea08d" title="Called when a new channel is created on a guild. ">dpp::cluster::on_channel_create</a> ()</h3>
-<p>Be notified of a channel being created</p>
-<h3><a class="el" href="a00061.html#a22f73e8bd1a6fb5aed92ae992fdef1d8" title="Called when all reactions for a particular emoji are removed from a message. ">dpp::cluster::on_message_reaction_remove_emoji</a> ()</h3>
-<p>Be notified of all message reactions being removed on a message for one particular emoji</p>
-<h3><a class="el" href="a00061.html#aac2a29067eabb416c07773fa4c92628f" title="Called when multiple messages are deleted from a channel or DM. ">dpp::cluster::on_message_delete_bulk</a> ()</h3>
-<p>Be notified of a set of messages being deleted</p>
-<h3><a class="el" href="a00061.html#a9dfa1de622ce391d5f5a9131fdba50ef" title="Called when an existing role is updated on a guild. ">dpp::cluster::on_guild_role_update</a> ()</h3>
-<p>Be notified of a role being edited</p>
-<h3><a class="el" href="a00061.html#a6ff0483a599f5e925778f08c8e2736e7" title="Called when a role is deleted in a guild. ">dpp::cluster::on_guild_role_delete</a> ()</h3>
-<p>Be notified of a role being deleted</p>
-<h3><a class="el" href="a00061.html#aa4fe070786e817347ab1f97217e1a713" title="Called when a message is pinned. Note that the pinned message is not returned to this event...">dpp::cluster::on_channel_pins_update</a> ()</h3>
-<p>Be notified of the channel pins for a channel being updated</p>
-<h3><a class="el" href="a00061.html#a25376d14ddda772a12105451c99834cd" title="Called when all reactions are removed from a message. ">dpp::cluster::on_message_reaction_remove_all</a> ()</h3>
-<p>Be notified of a message reaction being removed</p>
-<h3><a class="el" href="a00061.html#ab7ae85a0111247501183673313d09abe" title="Called when we are told which voice server we can use. This will be sent either when we establish a n...">dpp::cluster::on_voice_server_update</a> ()</h3>
-<p>Be notified of the voice server endpoint being updated</p>
-<h3><a class="el" href="a00061.html#abef8cb4e6080a0bd0f6641853d088fec" title="Called when new emojis are added to a guild. The complete set of emojis is sent every time...">dpp::cluster::on_guild_emojis_update</a> ()</h3>
-<p>Be notified of a guild's emojis being updated</p>
-<h3><a class="el" href="a00061.html#a2f55020d0ad012c494cf80bb9ee86d3a" title="Called when a user&#39;s presence is updated. To receive these you will need the GUILD_PRESENCES privileg...">dpp::cluster::on_presence_update</a> ()</h3>
-<p>Be notified of a user's presence/activity being updated</p>
-<h3><a class="el" href="a00061.html#aca67bc20cb570e7563d157913066ad0b" title="Called when the webhooks for a guild are updated. ">dpp::cluster::on_webhooks_update</a> ()</h3>
-<p>Be notified of a webhook being updated</p>
-<h3><a class="el" href="a00061.html#a8a394c8eb339f59d74b212b1c8af70a9" title="Called when a new member joins a guild. ">dpp::cluster::on_guild_member_add</a> ()</h3>
-<p>Be notified of a guild member being added</p>
-<h3><a class="el" href="a00061.html#a86478198b682c09a4b5d4bcfa9d41f15" title="Called when an invite is deleted from a guild. ">dpp::cluster::on_invite_delete</a> ()</h3>
-<p>Be notified of an invite being deleted</p>
-<h3><a class="el" href="a00061.html#acfd6eb377df60cc02fb84de9136f5b9d" title="Called when details of a guild are updated. ">dpp::cluster::on_guild_update</a> ()</h3>
-<p>Be notified of a guild being updated</p>
-<h3><a class="el" href="a00061.html#a17765cfe21f91fcbac2e67778f6b36b3" title="Called when an integration is updated for a guild. This returns the complete list. An integration is a connection to a guild of a user&#39;s associated accounts, e.g. youtube or twitch, for automatic assignment of roles etc. ">dpp::cluster::on_guild_integrations_update</a> ()</h3>
-<p>Be notified of a guild integration being updated</p>
-<h3><a class="el" href="a00061.html#acc914758724437ef5e2bd7af8cd6f2b6" title="Called when details of a guild member (e.g. their roles or nickname) are updated. ...">dpp::cluster::on_guild_member_update</a> ()</h3>
-<p>Be notified of a guild member being updated</p>
-<h3><a class="el" href="a00061.html#a6fbee88ecc38a82cb1d13813199fb4ce" title="Called when an application command (slash command) is updated. You will only receive this event for a...">dpp::cluster::on_application_command_update</a> ()</h3>
-<p>Be notified of an application command (slash command) being updated</p>
-<h3><a class="el" href="a00061.html#ada70d52d327d96129829ba6b677ac0aa" title="Called when a new invite is created for a guild. ">dpp::cluster::on_invite_create</a> ()</h3>
-<p>Be notified of an invite being created</p>
-<h3><a class="el" href="a00061.html#ad75729ec22faab8b62de375cdfb98cee" title="Called when a message is updated (edited). ">dpp::cluster::on_message_update</a> ()</h3>
-<p>Be notified of a message being edited</p>
-<h3><a class="el" href="a00061.html#abd822542ad661833cbf1fc23b6f0a1aa" title="Called when a user is updated. This is separate to guild_member_update and includes things such as an...">dpp::cluster::on_user_update</a> ()</h3>
-<p>Be notified of a user's information being updated</p>
-<h3><a class="el" href="a00061.html#a29140a7c0e1250fe2016dbe4ced56f95" title="Called when a new message arrives from discord. Note that D++ does not cache messages. If you want to cache these objects you should create something yourself within your bot. Caching of messages is not on the roadmap to be supported as it consumes excessive amounts of RAM. ">dpp::cluster::on_message_create</a> ()</h3>
-<p>Be notified of a message being sent</p>
-<h3><a class="el" href="a00061.html#aee3b96f180a7cad98daaaab8ba98530a" title="Called when a ban is added to a guild. ">dpp::cluster::on_guild_ban_add</a> ()</h3>
-<p>Be notified of a ban being added</p>
-<h3><a class="el" href="a00061.html#a4fb67064fbd4738ec8bad14b5a80d2dd" title="Called when a ban is removed from a guild. ">dpp::cluster::on_guild_ban_remove</a> ()</h3>
-<p>Be notified of a ban being removed</p>
-<h3><a class="el" href="a00061.html#a8483003e4f9d6ab671a2cf05e2e056fc" title="Called when a new intgration is attached to a guild by a user. An integration is a connection to a gu...">dpp::cluster::on_integration_create</a> ()</h3>
-<p>Be notified of an integration being created</p>
-<h3><a class="el" href="a00061.html#ad8b5162af3648f5c521a9a3377211ea1" title="Called when an integration is updated by a user. This returns details of just the single integration ...">dpp::cluster::on_integration_update</a> ()</h3>
-<p>Be notified of an integration being updated</p>
-<h3><a class="el" href="a00061.html#a1d4f63cec74428a22f783e95bc8d8201" title="Called when an integration is removed by a user. An integration is a connection to a guild of a user&#39;...">dpp::cluster::on_integration_delete</a> ()</h3>
-<p>Be notified of an integration being deleted </p>
+<div class="textblock"><p>D++ takes a three-tiered highly scalable approach to bots, with three levels known as Clusters, Shards and Guilds as documented below.</p>
+<h2>Clusters</h2>
+<p>A bot may be made of one or more clusters. Each cluster maintains a queue of commands waiting to be sent to Discord, a queue of replies from Discord for all commands executed, and zero or more <b>shards</b>.</p>
+<p>Small bots will require just one cluster. Clusters may be started within separate processes if required (this is recommended) and will split the required number of shards equally across themselves. There is some level of communication between clusters, however they all remain independent without any central "controller" process.</p>
+<h2>Shards</h2>
+<p>A cluster contains zero or more shards. Each shard maintains a persistent websocket connection to Discord which receives all events the bot is made aware of, e.g. messages, channel edits, etc.</p>
+<p>Small bots require only one shard. You may however create as many as you wish. Once you reach 2500 guilds, Discord require that your bot have at least one shard for every 2500 guilds. Any shard which would have over 2500 guilds on it will be disallowed connection.</p>
+<h2>Guilds</h2>
+<p>Guilds are what servers are known as to the API. There can be up to <b>2500</b> of these per shard. Each of these is usually a distinct community and will contain a collection of guild members (users with a membership of this guild), channels and roles, emojis and various other pieces of data. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

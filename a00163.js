@@ -1,7 +1,7 @@
 var a00163 =
 [
-    [ "allow", "a00163.html#a38e3d8e91284eba62a01f77a1c134e49", null ],
-    [ "deny", "a00163.html#acf2ede1bb80c8661eb6c58a4dc124f10", null ],
-    [ "id", "a00163.html#a802c7e289221f1609c8ce90b0afb6ac2", null ],
-    [ "type", "a00163.html#a61b144231337c0e10ad11dd693c152c3", null ]
+    [ "message_update_t", "a00163.html#a5a45121e28e907254438e5854c90a2f8", null ],
+    [ "from", "a00163.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
+    [ "raw_event", "a00163.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
+    [ "updated", "a00163.html#ac10f5778903d395b2bc52182de140f62", null ]
 ];

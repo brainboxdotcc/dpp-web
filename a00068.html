@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="dpp::command_source Struct Reference - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="dpp::command_option_choice Struct Reference - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="dpp::command_source Struct Reference - D++ - The lightweight C++ Discord API Library">
-<title>dpp::command_source Struct Reference - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="dpp::command_option_choice Struct Reference - D++ - The lightweight C++ Discord API Library">
+<title>dpp::command_option_choice Struct Reference - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,111 +96,126 @@ $(document).ready(function(){initNavTree('a00068.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00436.html">List of all members</a>  </div>
+<a href="a00437.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dpp::command_source Struct Reference</div>  </div>
+<div class="title">dpp::command_option_choice Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the sending source of a command. This is passed to any command handler and should be passed back to <a class="el" href="a00069.html#a09893dbf101b7d0082b0a13e801a9db9" title="Reply to a command. You should use this method rather than cluster::message_create as the way you rep...">commandhandler::reply()</a>, allowing the reply method to route any replies back to the origin, which may be a slash command or a message. Both require different response facilities but we want this to be transparent if you use the command handler class.  
+<p>This struct represents choices in a multiple choice option for a command parameter. It has both a string name, and a value parameter which is a variant, meaning it can hold different potential types (see <a class="el" href="a00348.html#a210a8688d51d3b313d3959c6dd91c40b" title="This type is a variant that can hold any of the potential native data types represented by the enum a...">dpp::command_value</a>) that you can retrieve with std::get().  
  <a href="a00068.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::command_source:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::command_option_choice:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="a00437.svg" width="100%" height="573"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00438.svg" width="315" height="247"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb">command_option_choice</a> ()=default</td></tr>
+<tr class="memdesc:a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new command option choice object.  <a href="#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb">More...</a><br /></td></tr>
+<tr class="separator:a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb4415c9d27246156e8cc368d131767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a2bb4415c9d27246156e8cc368d131767">command_option_choice</a> (const std::string &amp;n, <a class="el" href="a00348.html#a210a8688d51d3b313d3959c6dd91c40b">command_value</a> v)</td></tr>
+<tr class="memdesc:a2bb4415c9d27246156e8cc368d131767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new command option choice object.  <a href="#a2bb4415c9d27246156e8cc368d131767">More...</a><br /></td></tr>
+<tr class="separator:a2bb4415c9d27246156e8cc368d131767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8ed068737789c5230db85047d9499b11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00345.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a8ed068737789c5230db85047d9499b11">guild_id</a> = 0</td></tr>
-<tr class="memdesc:a8ed068737789c5230db85047d9499b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sending guild id.  <a href="#a8ed068737789c5230db85047d9499b11">More...</a><br /></td></tr>
-<tr class="separator:a8ed068737789c5230db85047d9499b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98d2f56173783173717ee1ef90f6e424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00345.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a98d2f56173783173717ee1ef90f6e424">channel_id</a> = 0</td></tr>
-<tr class="memdesc:a98d2f56173783173717ee1ef90f6e424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source channel id.  <a href="#a98d2f56173783173717ee1ef90f6e424">More...</a><br /></td></tr>
-<tr class="separator:a98d2f56173783173717ee1ef90f6e424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49e99fcfc393681af05f3e4bc8a7b360"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00345.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a49e99fcfc393681af05f3e4bc8a7b360">command_id</a> = 0</td></tr>
-<tr class="memdesc:a49e99fcfc393681af05f3e4bc8a7b360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command ID of a slash command.  <a href="#a49e99fcfc393681af05f3e4bc8a7b360">More...</a><br /></td></tr>
-<tr class="separator:a49e99fcfc393681af05f3e4bc8a7b360"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bec40f2cc0e419489921c4a222353df"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a8bec40f2cc0e419489921c4a222353df">command_token</a></td></tr>
-<tr class="memdesc:a8bec40f2cc0e419489921c4a222353df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token for sending a slash command reply.  <a href="#a8bec40f2cc0e419489921c4a222353df">More...</a><br /></td></tr>
-<tr class="separator:a8bec40f2cc0e419489921c4a222353df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad81aa8dca95492d9e26488cb22d4df45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00188.html">user</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ad81aa8dca95492d9e26488cb22d4df45">issuer</a></td></tr>
-<tr class="memdesc:ad81aa8dca95492d9e26488cb22d4df45"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user who issued the command.  <a href="#ad81aa8dca95492d9e26488cb22d4df45">More...</a><br /></td></tr>
-<tr class="separator:ad81aa8dca95492d9e26488cb22d4df45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4ceb9707c454d74d25a49dbcdb25ee"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a6e4ceb9707c454d74d25a49dbcdb25ee">name</a></td></tr>
+<tr class="separator:a6e4ceb9707c454d74d25a49dbcdb25ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70021160d60b6403a353b302d97123ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00348.html#a210a8688d51d3b313d3959c6dd91c40b">command_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a70021160d60b6403a353b302d97123ff">value</a></td></tr>
+<tr class="separator:a70021160d60b6403a353b302d97123ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the sending source of a command. This is passed to any command handler and should be passed back to <a class="el" href="a00069.html#a09893dbf101b7d0082b0a13e801a9db9" title="Reply to a command. You should use this method rather than cluster::message_create as the way you rep...">commandhandler::reply()</a>, allowing the reply method to route any replies back to the origin, which may be a slash command or a message. Both require different response facilities but we want this to be transparent if you use the command handler class. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a98d2f56173783173717ee1ef90f6e424"></a>
+<div class="textblock"><p>This struct represents choices in a multiple choice option for a command parameter. It has both a string name, and a value parameter which is a variant, meaning it can hold different potential types (see <a class="el" href="a00348.html#a210a8688d51d3b313d3959c6dd91c40b" title="This type is a variant that can hold any of the potential native data types represented by the enum a...">dpp::command_value</a>) that you can retrieve with std::get(). </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dpp::command_option_choice::command_option_choice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new command option choice object. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2bb4415c9d27246156e8cc368d131767"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00345.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> dpp::command_source::channel_id = 0</td>
+          <td class="memname">dpp::command_option_choice::command_option_choice </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00348.html#a210a8688d51d3b313d3959c6dd91c40b">command_value</a>&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Source channel id. </p>
+<p>Construct a new command option choice object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>name to initialise with </td></tr>
+    <tr><td class="paramname">v</td><td>value to initialise with </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a49e99fcfc393681af05f3e4bc8a7b360"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6e4ceb9707c454d74d25a49dbcdb25ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00345.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> dpp::command_source::command_id = 0</td>
+          <td class="memname">std::string dpp::command_option_choice::name</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Command ID of a slash command. </p>
-
 </div>
 </div>
-<a class="anchor" id="a8bec40f2cc0e419489921c4a222353df"></a>
+<a class="anchor" id="a70021160d60b6403a353b302d97123ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string dpp::command_source::command_token</td>
+          <td class="memname"><a class="el" href="a00348.html#a210a8688d51d3b313d3959c6dd91c40b">command_value</a> dpp::command_option_choice::value</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Token for sending a slash command reply. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8ed068737789c5230db85047d9499b11"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00345.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> dpp::command_source::guild_id = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sending guild id. </p>
-
-</div>
-</div>
-<a class="anchor" id="ad81aa8dca95492d9e26488cb22d4df45"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00188.html">user</a>* dpp::command_source::issuer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The user who issued the command. </p>
 
 </div>
 </div>
@@ -210,7 +225,7 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00345.html">dpp</a></li><li class="navelem"><a class="el" href="a00068.html">command_source</a></li>
+    <li class="navelem"><a class="el" href="a00348.html">dpp</a></li><li class="navelem"><a class="el" href="a00068.html">command_option_choice</a></li>
   </ul>
 </div>
 </body>

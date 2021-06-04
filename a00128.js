@@ -1,7 +1,9 @@
 var a00128 =
 [
-    [ "integration_create_t", "a00128.html#adb57b57c0dab581173935aa2a92eef0a", null ],
-    [ "created_integration", "a00128.html#aed87baa097b6100796d1c1596ec4435a", null ],
-    [ "from", "a00128.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
-    [ "raw_event", "a00128.html#a2d4777d1049d31ed943ecebfa2de7db9", null ]
+    [ "bot", "a00128.html#aca271fe17734a35346dc13a18034b5b8", null ],
+    [ "description", "a00128.html#a22db17b70cfe919b79a629d0c19a5dad", null ],
+    [ "icon", "a00128.html#abe2f733166b76c0006eb124a90de10a6", null ],
+    [ "id", "a00128.html#a12110a3bd5df3326a425c92ede8f932b", null ],
+    [ "name", "a00128.html#a92df22fb3f2784477db558ba63b58c64", null ],
+    [ "summary", "a00128.html#a467fed81de74c5d9e75bd367e430bca8", null ]
 ];

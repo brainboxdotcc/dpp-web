@@ -1,14 +1,8 @@
 var a00121 =
 [
-    [ "http_request", "a00121.html#a46242b648249b5e8a67e2abdb306c3b3", null ],
-    [ "~http_request", "a00121.html#a94d82f10c9922b400b1dd5b8459a6691", null ],
-    [ "complete", "a00121.html#a6f350d4340fe77e224783091607f63eb", null ],
-    [ "is_completed", "a00121.html#ab5f1688d8b657f6d0f0a4dd8df7b8731", null ],
-    [ "Run", "a00121.html#a620ba104acf6e2c25bcc844857fd44d3", null ],
-    [ "endpoint", "a00121.html#a31cf6b360a893292435ea56b8d6a94c6", null ],
-    [ "file_content", "a00121.html#adcff8fd11769c1b04854cc56137c356b", null ],
-    [ "file_name", "a00121.html#a3e56eb82e308ec41c0b15f70501a3d93", null ],
-    [ "method", "a00121.html#a6717d11da20292e2dc77826def3aaef3", null ],
-    [ "parameters", "a00121.html#a349ce3f41c300aeac915d38f8f1d8642", null ],
-    [ "postdata", "a00121.html#adab1976475788ca96b5b52349367a322", null ]
+    [ "guild_widget", "a00121.html#af862be6e098acb507a306bc37b6e4ad9", null ],
+    [ "build_json", "a00121.html#a6f770cd76c0f0658da8346cdb954cb2d", null ],
+    [ "fill_from_json", "a00121.html#a2adf7cbd5445c59c17224828bab0f4c4", null ],
+    [ "channel_id", "a00121.html#aef9e534b3727d4a2b972e3fd64c54e29", null ],
+    [ "enabled", "a00121.html#aedf956fc1f600b82020271b411eb86c8", null ]
 ];

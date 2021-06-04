@@ -1,9 +1,7 @@
 var a00046 =
 [
-    [ "ban", "a00046.html#ad892633726780283e88837a404953351", null ],
-    [ "~ban", "a00046.html#a975e673c3ea3c1a976397542fde9e379", null ],
-    [ "build_json", "a00046.html#aea73c83f2e1e30334cc7e386bf984717", null ],
-    [ "fill_from_json", "a00046.html#a87b3151fac55308a2f1c3b77f78aba36", null ],
-    [ "reason", "a00046.html#af3f56d08933ee4007f442b11c6b75c01", null ],
-    [ "user_id", "a00046.html#aa4bfab1d617a8e41fe5353c210f7b7ea", null ]
+    [ "auditlog", "a00046.html#aa1aeb75a27474dc9323c3e5c012199d9", null ],
+    [ "~auditlog", "a00046.html#adcd0ccdef0c8027acab54e19ffd971c4", null ],
+    [ "fill_from_json", "a00046.html#aef1a68fb697621c4292f801725e4475f", null ],
+    [ "entries", "a00046.html#a36c8f45302e0d22cda77279ab2708daa", null ]
 ];

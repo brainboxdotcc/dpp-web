@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="REST Calls - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Threading Model - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="REST Calls - D++ - The lightweight C++ Discord API Library">
-<title>REST Calls - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Threading Model - D++ - The lightweight C++ Discord API Library">
+<title>Threading Model - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,208 +96,13 @@ $(document).ready(function(){initNavTree('a00032.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">REST Calls </div>  </div>
+<div class="title">Threading Model </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Each REST call has a different effect on discord. Each is considered a distinct "command" with a reply. All REST calls take time to complete. Depending on current load, discord latency, and rate limits, they may return almost instantly to the callback function, or may take seconds to complete.</p>
-<p>Click each item to find details on the specifics of the call.</p>
-<h3><a class="el" href="a00061.html#a9d3b0f7c3dae4ecb1980cabe8f10ccd7" title="Get a message. ">dpp::cluster::message_get</a> (snowflake, snowflake, callback)</h3>
-<p>Get a single message</p>
-<h3><a class="el" href="a00061.html#acb1a4777f0907ee6c841ba008a81f60b" title="Get multiple messages. ">dpp::cluster::messages_get</a> (snowflake, snowflake around, snowflake before, snowflake after, snowflake limit, callback)</h3>
-<p>Get multiple messages</p>
-<h3><a class="el" href="a00061.html#a080a8cefc6ceb0b882fdb6fe70c078a6" title="Send a message to a channel. The callback function is called when the message has been sent...">dpp::cluster::message_create</a> (message, callback)</h3>
-<p>Send a message (may include embeds, files)</p>
-<h3><a class="el" href="a00061.html#a8cdf2c55ac48902e7b194ab8e651d869" title="Crosspost a message. The callback function is called when the message has been sent. ">dpp::cluster::message_crosspost</a> (snowflake, snowflake, callback)</h3>
-<p>Crosspost a news message to other servers</p>
-<h3><a class="el" href="a00061.html#a754206a7e97f1aaab4ab83ed53e4f351" title="Edit a message on a channel. The callback function is called when the message has been edited...">dpp::cluster::message_edit</a> (message, callback)</h3>
-<p>Update a mesage's content (including embeds)</p>
-<h3><a class="el" href="a00061.html#a08eb4e0352a29a92587d677d4b5fd6a7" title="Add a reaction to a message. The reaction string must be either an emojiname:id or a unicode characte...">dpp::cluster::message_add_reaction</a> (message, callback)</h3>
-<p>Add a reaction to a message</p>
-<h3><a class="el" href="a00061.html#aba9abca51107d5aed147fa9b0aa8d675" title="Delete own reaction from a message. The reaction string must be either an emojiname:id or a unicode c...">dpp::cluster::message_delete_own_reaction</a> (message, callback)</h3>
-<p>Delete bot's reaction from a message</p>
-<h3><a class="el" href="a00061.html#a72b04160e95d808013fe222a9b690dae" title="Delete a user&#39;s reaction from a message. The reaction string must be either an emojiname:id or a unic...">dpp::cluster::message_delete_reaction</a> (message, snowflake, callback)</h3>
-<p>Delete another user's reaction from a message</p>
-<h3><a class="el" href="a00061.html#ab05fea3d6c298d5f2371704084383f8f" title="Get reactions on a message for a particular emoji. The reaction string must be either an emojiname:id...">dpp::cluster::message_get_reactions</a> (message, snowflake before, snowflake after, snowflake, callback)</h3>
-<p>Get all reactions for a message</p>
-<h3><a class="el" href="a00061.html#a13ae40b4389928ce8e6f8d9b47512291" title="Delete all reactions on a message. ">dpp::cluster::message_delete_all_reactions</a> (message, callback)</h3>
-<p>Detel all reactions for a message</p>
-<h3><a class="el" href="a00061.html#a6a1478ca3f0fb3c645a34474099e4e04" title="Delete all reactions on a message using a particular emoji. The reaction string must be either an emo...">dpp::cluster::message_delete_reaction_emoji</a> (message, callback)</h3>
-<p>Delete all reactions for a message that reacted with a particular emoji</p>
-<h3><a class="el" href="a00061.html#abb75919ec5abd5b510255692ef439f97" title="Delete a message from a channel. The callback function is called when the message has been edited...">dpp::cluster::message_delete</a> (snowflake, snowflake, callback)</h3>
-<p>Delete a message</p>
-<h3><a class="el" href="a00061.html#ab4534c2c87bf45c326b126ef0a00ee80" title="Bulk delete messages from a channel. The callback function is called when the message has been edited...">dpp::cluster::message_delete_bulk</a> (vector&lt;snowflake&gt;, snowflake, callback)</h3>
-<p>Delete a set of messages</p>
-<h3><a class="el" href="a00061.html#a108f6f06b43709c8d47df5f94a3ca0a5" title="Get a channel. ">dpp::cluster::channel_get</a> (snowflake c, callback)</h3>
-<p>Get a channel</p>
-<h3><a class="el" href="a00061.html#a24e67431b79cc2c3d0f12d59afd5a1c8" title="Get all channels for a guild. ">dpp::cluster::channels_get</a> (snowflake, callback)</h3>
-<p>Get all channels for a guild</p>
-<h3><a class="el" href="a00061.html#ad73706406e2f99b9a580319e389777be" title="Create a channel. ">dpp::cluster::channel_create</a> (channel, callback)</h3>
-<p>Create a channel</p>
-<h3><a class="el" href="a00061.html#a5511e31156dd2508387b1ba5a1612c09" title="Edit a channel. ">dpp::cluster::channel_edit</a> (channel, callback)</h3>
-<p>Edit a channel</p>
-<h3><a class="el" href="a00061.html#a391779232600ba3a6f57d678047761b0" title="Edit a channel&#39;s position. ">dpp::cluster::channel_edit_position</a> (channel, callback)</h3>
-<p>Edit a channel's position in the channel list</p>
-<h3><a class="el" href="a00061.html#abfb4457e63c60500b44bfdee27d80c75" title="Edit a channel&#39;s permissions. ">dpp::cluster::channel_edit_permissions</a> (channel, snowflake, uint32_t, uint32_t, bool member, callback)</h3>
-<p>Edit permissions for a channel</p>
-<h3><a class="el" href="a00061.html#ad3b00dafa69984d444422b500c3d18b3" title="Delete a channel. ">dpp::cluster::channel_delete</a> (snowflake, callback)</h3>
-<p>Delete a channel</p>
-<h3><a class="el" href="a00061.html#a4a4d4220a93d6ba8c72d5472fd6718d0" title="Get details about an invite. ">dpp::cluster::invite_get</a> (code, callback)</h3>
-<p>Get an invite for a channel</p>
-<h3><a class="el" href="a00061.html#a4c22698fbbb32edebd9824309015a017" title="Delete an invite. ">dpp::cluster::invite_delete</a> (code, callback)</h3>
-<p>Delete an invite from a channel</p>
-<h3><a class="el" href="a00061.html#aa03a0da5c8e6801dc56bda258265da04" title="Get invites for a channel. ">dpp::cluster::channel_invites_get</a> (channel, callback)</h3>
-<p>Get all invites for a channel</p>
-<h3><a class="el" href="a00061.html#a07e66a7400101f466aab40ed58c67942" title="Create invite for a channel. ">dpp::cluster::channel_invite_create</a> (channel, invite, callback)</h3>
-<p>Create an invite for a channel</p>
-<h3><a class="el" href="a00061.html#a566bb31ea08798afe2fca4888e3c5e70" title="Get a channel&#39;s pins. ">dpp::cluster::pins_get</a> (snowflake, callback)</h3>
-<p>Get pinned messages for a channel</p>
-<h3><a class="el" href="a00061.html#a9ad36637b9bb094d9f24d18f204138a3" title="Adds a recipient to a Group DM using their access token. ">dpp::cluster::gdm_add</a> (snowflake, snowflake, callback)</h3>
-<p>Add user to a group DM</p>
-<h3><a class="el" href="a00061.html#a6be231a13131f6fae94f88ee6fcdc5f0" title="Removes a recipient from a Group DM. ">dpp::cluster::gdm_remove</a> (snowflake, snowflake, callback)</h3>
-<p>Remove user from a group DM</p>
-<h3><a class="el" href="a00061.html#aa2fce9638b93c6b5d5d67f8bea9f8f6c" title="Remove a permission from a channel. ">dpp::cluster::channel_delete_permission</a> (channel, snowflake, callback)</h3>
-<p>Delete permission entry from a channel</p>
-<h3><a class="el" href="a00061.html#a1b7593e4ba82977bf3d8ad9052c9c565" title="Follow a news channel. ">dpp::cluster::channel_follow_news</a> (channel, snowflake, callback)</h3>
-<p>Follow a news channel</p>
-<h3><a class="el" href="a00061.html#a2caf58e161373fd3fa26172a4a78c835" title="Trigger channel typing indicator. ">dpp::cluster::channel_typing</a> (channel, callback)</h3>
-<p>Indicate to a channel that the bot is typing</p>
-<h3><a class="el" href="a00061.html#aa140a11ab0b2feede600761aaee2483b" title="Pin a message. ">dpp::cluster::message_pin</a> (snowflake, snowflake, callback)</h3>
-<p>Pin a message</p>
-<h3><a class="el" href="a00061.html#a454e53cea10416ca9d299855dbb08e0b" title="Unpin a message. ">dpp::cluster::message_unpin</a> (snowflake, snowflake, callback)</h3>
-<p>Unpin a message</p>
-<h3><a class="el" href="a00061.html#a6a003669770549d25a951810bff0153e" title="Get a guild. ">dpp::cluster::guild_get</a> (snowflake, callback)</h3>
-<p>Get a guild</p>
-<h3><a class="el" href="a00061.html#a3ecd82c6169107c9c944356f19abba9e" title="Get a guild preview. Returns a guild object but only a subset of the fields will be populated...">dpp::cluster::guild_get_preview</a> (snowflake, callback)</h3>
-<p>Get a guild's preview</p>
-<h3><a class="el" href="a00061.html#a99e8227f11ef33cd2d9cc3abef46adfd" title="Get a guild member. ">dpp::cluster::guild_get_member</a> (snowflake, snowflake, callback)</h3>
-<p>Get a guild member</p>
-<h3><a class="el" href="a00061.html#ab0598354c7302d1243bea4148365927d" title="Get all guild members. ">dpp::cluster::guild_get_members</a> (snowflake, callback)</h3>
-<p>Get all guild members</p>
-<h3><a class="el" href="a00061.html#aa2937f10828bc3fbdeff87fc6b4463cc" title="Add guild member. Needs a specific oauth2 scope, from which you get the access_token. ">dpp::cluster::guild_add_member</a> (guild_member, callback)</h3>
-<p>Add a guild member (requires OAUTH2)</p>
-<h3><a class="el" href="a00061.html#a57a1957b81c9606850e730c477dd44aa" title="Edit the properties of an existing guild member. ">dpp::cluster::guild_edit_member</a> (guild_member, callback)</h3>
-<p>Edit a guild member</p>
-<h3><a class="el" href="a00061.html#aa30ff4f80815720bafab51f9bc86b089" title="Change current user nickname. ">dpp::cluster::guild_set_nickname</a> (snowflake, callback)</h3>
-<p>Set a guild member's nickname</p>
-<h3><a class="el" href="a00061.html#aa9dcac8996e5eaad9b1eed9983ecefef" title="Add role to guild member. ">dpp::cluster::guild_member_add_role</a> (snowflake, snowflake, snowflake, callback)</h3>
-<p>Add a role to a member of a guild</p>
-<h3><a class="el" href="a00061.html#af0289849ef90572a331e68fc84075cb2" title="Remove role from guild member. ">dpp::cluster::guild_member_delete_role</a> (snowflake, snowflake, snowflake, callback)</h3>
-<p>Delete a role from a member of a guild</p>
-<h3><a class="el" href="a00061.html#a58be46d2934738b32229d984c266a4b7" title="Remove (kick) a guild member. ">dpp::cluster::guild_member_delete</a> (snowflake, snowflake, callback)</h3>
-<p>Delete (kick!) a guild member</p>
-<h3><a class="el" href="a00061.html#ad2273fdee237880d5e6b948198ffae52" title="Add guild ban. ">dpp::cluster::guild_ban_add</a> (snowflake, snowflake, uint32_t, callback)</h3>
-<p>Add a ban for a user</p>
-<h3><a class="el" href="a00061.html#a18f31527cd6b99cf2757e6c14dac5e5b" title="Delete guild ban. ">dpp::cluster::guild_ban_delete</a> (snowflake, snowflake, callback)</h3>
-<p>Delete a ban</p>
-<h3><a class="el" href="a00061.html#af9fffa4f080e0b5abab1417fa8eb1b0f" title="Get guild ban list. ">dpp::cluster::guild_get_bans</a> (snowflake, callback)</h3>
-<p>Get the ban list</p>
-<h3><a class="el" href="a00061.html#ad871d30ed11d0799da4a831ede8a7d95" title="Get single guild ban. ">dpp::cluster::guild_get_ban</a> (snowflake, snowflake, callback)</h3>
-<p>Get one ban</p>
-<h3><a class="el" href="a00061.html#a52366e37144b166c6a2c773e14992b21" title="Get a template. ">dpp::cluster::template_get</a> (code, callback)</h3>
-<p>Get a guild template</p>
-<h3><a class="el" href="a00061.html#ad277277c10ccdaecc3869a23d9ecb94b" title="Create a new guild based on a template. ">dpp::cluster::guild_create_from_template</a> (code, callback)</h3>
-<p>Create a guild from a template</p>
-<h3><a class="el" href="a00061.html#a1faa321ede15b209c789ea1155a3d356" title="Get guild templates. ">dpp::cluster::guild_templates_get</a> (snowflake, callback)</h3>
-<p>Get all guild templates in a guild</p>
-<h3><a class="el" href="a00061.html#a38db2ce96431b742e98cabf8170a84d7" title="Creates a template for the guild. ">dpp::cluster::guild_template_create</a> (snowflake, callback)</h3>
-<p>Create a guild template from a guild</p>
-<h3><a class="el" href="a00061.html#a3fc2ed8ec7e7550daa418f693ade1016" title="Syncs the template to the guild&#39;s current state. ">dpp::cluster::guild_template_sync</a> (snowflake, callback)</h3>
-<p>Synchronise a guild template with current settings</p>
-<h3><a class="el" href="a00061.html#a22f9702b44025f54cf03920d3a3e554b" title="Modifies the template&#39;s metadata. ">dpp::cluster::guild_template_modify</a> (snowflake,, callback)</h3>
-<p>Modify an existing guild template</p>
-<h3><a class="el" href="a00061.html#a91791a9d280c0973834223df37d39ac8" title="Deletes the template. ">dpp::cluster::guild_template_delete</a> (snowflake, callback)</h3>
-<p>Delete a guild template</p>
-<h3><a class="el" href="a00061.html#af327d6e65c703ce001d666ef2adc4b25" title="Create a guild. ">dpp::cluster::guild_create</a> (guild, callback)</h3>
-<p>Create a guild (only applicable for bots on less than 10 guilds)</p>
-<h3><a class="el" href="a00061.html#a5b0ce3857773519ca2ed62b49c04f267" title="Edit a guild. ">dpp::cluster::guild_edit</a> (guild, callback)</h3>
-<p>Edit a guild</p>
-<h3><a class="el" href="a00061.html#a8a78935110be8ea8bf5fdc4f0734fd28" title="Delete a guild. ">dpp::cluster::guild_delete</a> (snowflake, callback)</h3>
-<p>Delete a guild</p>
-<h3><a class="el" href="a00061.html#ad66ab98a72eb1ba8d2686fcaa1eb49db" title="Get all emojis for a guild. ">dpp::cluster::guild_emojis_get</a> (snowflake, callback)</h3>
-<p>Get all guild emojis</p>
-<h3><a class="el" href="a00061.html#ada721a222fb3a42a1a1bb6d93dfcc745" title="Get a single emoji. ">dpp::cluster::guild_emoji_get</a> (snowflake, snowflake, callback)</h3>
-<p>Get an individual guild emoji</p>
-<h3><a class="el" href="a00061.html#a5f6d9dbdb2009bdea2fad46e93813af5" title="Create single emoji. You must ensure that the emoji passed contained image data using the emoji::load...">dpp::cluster::guild_emoji_create</a> (snowflake, emoji, callback)</h3>
-<p>Create a guild emoji</p>
-<h3><a class="el" href="a00061.html#a2c4bf8c1767b71ed06bfa407341096d4" title="Edit a single emoji. You must ensure that the emoji passed contained image data using the emoji::load...">dpp::cluster::guild_emoji_edit</a> (snowflake, emoji, callback)</h3>
-<p>Edit a guild emoji</p>
-<h3><a class="el" href="a00061.html#af9c8f4357998bc8a77e8561edcb738c3" title="Delete a guild emoji. ">dpp::cluster::guild_emoji_delete</a> (snowflake, snowflake, callback)</h3>
-<p>Delete a guild emoji</p>
-<h3><a class="el" href="a00061.html#aad296f07bd5b9f900dcedbf88c464e09" title="Get prune counts. ">dpp::cluster::guild_get_prune_counts</a> (snowflake, prune, callback)</h3>
-<p>Get the calculated counts for a prune (mass kick) operation</p>
-<h3><a class="el" href="a00061.html#a2102835f11fabbc2cd2e6b41155783f6" title="Begin guild prune. ">dpp::cluster::guild_begin_prune</a> (snowflake, prune, callback)</h3>
-<p>Begin a guild prune (mass kick) operation</p>
-<h3><a class="el" href="a00061.html#ae5556385a69a408a268332f774ba6c3c" title="Get guild voice regions. Voice regions per guild are somewhat deprecated in preference of per-channel...">dpp::cluster::guild_get_voice_regions</a> hsnowflake, callback)</h3>
-<p>Get a list of voice regions applicable to a guild</p>
-<h3><a class="el" href="a00061.html#a24d66752ec835f989e72ffa111ff0af7" title="Get guild invites. ">dpp::cluster::get_guild_invites</a> (snowflake, callback)</h3>
-<p>Get a list of invites for a guild</p>
-<h3><a class="el" href="a00061.html#a43cba3bd187f9b28dcaed5b4f4ed5bda" title="Get guild itegrations. ">dpp::cluster::guild_get_integrations</a> (snowflake, callback)</h3>
-<p>Get a list of integrations on a guild</p>
-<h3><a class="el" href="a00061.html#afb07fc90589ee936f73da5551cff1255" title="Modify guild integration. ">dpp::cluster::guild_modify_integration</a> (snowflake, integration, callback)</h3>
-<p>Modify a guild integration</p>
-<h3><a class="el" href="a00061.html#a0db4a48d1ebc2133c30963a995e156e1" title="Delete guild integration. ">dpp::cluster::guild_delete_integration</a> (snowflake, snowflake, callback)</h3>
-<p>Delete a guild integration</p>
-<h3><a class="el" href="a00061.html#a58d976f9d101225e05482db7b739f986" title="Sync guild integration. ">dpp::cluster::guild_sync_integration</a> (snowflake, snowflake, callback)</h3>
-<p>Sync a guild integration with the guild</p>
-<h3><a class="el" href="a00061.html#a57626c7a0e06aee1c362b986e44030c2" title="Get guild widget. ">dpp::cluster::guild_get_widget</a> (snowflake, callback)</h3>
-<p>Get the guilds widget settings</p>
-<h3><a class="el" href="a00061.html#afb37eaa792a69f43171f580695fd4520" title="Edit guild widget. ">dpp::cluster::guild_edit_widget</a> (snowflake, guild_widget, callback)</h3>
-<p>Modify the guilds widget settings</p>
-<h3><a class="el" href="a00061.html#ad1332e45cc89e871009e840c25145df5" title="Get guild vanity url, if enabled. ">dpp::cluster::guild_get_vanity</a> (snowflake, callback)</h3>
-<p>Get a guild's vanity URL if applicable</p>
-<h3><a class="el" href="a00061.html#a627510bf4f4d1c3a999ccb506c75ec47" title="Create a webhook. ">dpp::cluster::create_webhook</a> (webhook, callback)</h3>
-<p>Create a webhook</p>
-<h3><a class="el" href="a00061.html#a8d352afcbc0430ca11576386278da7d0" title="Get guild webhooks. ">dpp::cluster::get_guild_webhooks</a> (snowflake, callback)</h3>
-<p>Get a list of all webhooks</p>
-<h3><a class="el" href="a00061.html#ae58b1f27711b42e9aa8a21e34147429f" title="Get channel webhooks. ">dpp::cluster::get_channel_webhooks</a> (snowflake, callback)</h3>
-<p>Get webhooks for a channel</p>
-<h3><a class="el" href="a00061.html#a40e140f1e2eda9632828bce461bc7338" title="Get webhook. ">dpp::cluster::get_webhook</a> (snowflake, callback)</h3>
-<p>Get a specific webhook</p>
-<h3><a class="el" href="a00061.html#a770526895ed13e2dfb746decc3f0be67" title="Get webhook using token. ">dpp::cluster::get_webhook_with_token</a> (snowflake, callback)</h3>
-<p>Get a webhook using its access token</p>
-<h3><a class="el" href="a00061.html#af319c151f1b9b2b578d9303bab7ce5d0" title="Edit webhook. ">dpp::cluster::edit_webhook</a> (webhook, callback)</h3>
-<p>Edit a webhook</p>
-<h3><a class="el" href="a00061.html#a2bffc1fa43d6a78814f9ca0f378755c5" title="Edit webhook with token (token is encapsulated in the webhook object) ">dpp::cluster::edit_webhook_with_token</a> (webhook, callback)</h3>
-<p>Edit a webhook using its access token</p>
-<h3><a class="el" href="a00061.html#aee76e0048ec1cd35420da1bfc5317646" title="Delete a webhook. ">dpp::cluster::delete_webhook</a> (snowflake, callback)</h3>
-<p>Delete a webhook</p>
-<h3><a class="el" href="a00061.html#ae790b70aaecd9c42fe8a64c4c71a3d0c" title="Delete webhook with token. ">dpp::cluster::delete_webhook_with_token</a> (snowflake, callback)</h3>
-<p>Delete a webhook using its access token</p>
-<h3><a class="el" href="a00061.html#a941406482519ac38b1525016cd9ea585" title="Execute webhook. ">dpp::cluster::execute_webhook</a> (webhook, message, callback)</h3>
-<p>Execute a webhook, causing it to send a message</p>
-<h3><a class="el" href="a00061.html#a86a37684f9d12edd4ca7d00296a5443b" title="Edit webhook message. ">dpp::cluster::edit_webhook_message</a> (webhook, message, callback)</h3>
-<p>Edit a message previously sent by a webhook</p>
-<h3><a class="el" href="a00061.html#ae6e937f48e410469c90f37368afa4cbe" title="Delete webhook message. ">dpp::cluster::delete_webhook_message</a> (webhook, snowflake, callback)</h3>
-<p>Delete a message previously sent by a webhook</p>
-<h3><a class="el" href="a00061.html#a884dbb70619fcf92b06577dea8093219" title="Get a role for a guild. ">dpp::cluster::roles_get</a> (snowflake, callback)</h3>
-<p>Get all roles for a guild</p>
-<h3><a class="el" href="a00061.html#ab912eb28e9bb4df46954c7a9b93b283d" title="Create a role on a guild. ">dpp::cluster::role_create</a> (role, callback)</h3>
-<p>Create a role on a guild</p>
-<h3><a class="el" href="a00061.html#a24cc5286955e6641d574d232d8b47f55" title="Edit a role on a guild. ">dpp::cluster::role_edit</a> (role, callback)</h3>
-<p>Edit a role on a guild</p>
-<h3><a class="el" href="a00061.html#ac77932ee797aeb44098c2013811b2887" title="Edit a role&#39;s position in a guild. ">dpp::cluster::role_edit_position</a> (role, callback)</h3>
-<p>Edit a role's position in the list of roles</p>
-<h3><a class="el" href="a00061.html#a45414d0d189edd147c3d76b4480ec0b8" title="Delete a role. ">dpp::cluster::role_delete</a> (snowflake, snowflake, callback)</h3>
-<p>Delete a role</p>
-<h3><a class="el" href="a00061.html#a73483dbeb0f1946dc18b1d0a5331b0d0" title="Get a user by id. ">dpp::cluster::user_get</a> (snowflake, callback)</h3>
-<p>Get information on a user</p>
-<h3><a class="el" href="a00061.html#aad927e85ed6b99e9b05f4190f1b19cae" title="Get current (bot) user. ">dpp::cluster::current_user_get</a> (callback)</h3>
-<p>Get the information on the current (bot) user</p>
-<h3><a class="el" href="a00061.html#a93c8fd5f22e0eae6bf357ad498b43f87" title="Get current (bot) user guilds. ">dpp::cluster::current_user_get_guilds</a> (callback)</h3>
-<p>Get the information on the current (bot) user's guilds. Does not work if the bot is on over 100,000 guilds.</p>
-<h3><a class="el" href="a00061.html#a462e5859d1123c8b29c09d477a957157" title="Edit current (bot) user. ">dpp::cluster::current_user_edit</a> (settings, image_data, image_type, callback)</h3>
-<p>Change the settings of the current (bot) user</p>
-<h3><a class="el" href="a00061.html#a662fc0a998c62395f166da5e4a2acaf3" title="Get current user DM channels. ">dpp::cluster::current_user_get_dms</a> (callback)</h3>
-<p>Get the current (bot) user's dm channels</p>
-<h3><a class="el" href="a00061.html#a55c6a9bb92a500aefc65a953e419c27f" title="Create a dm channel. ">dpp::cluster::create_dm_channel</a> (snowflake, callback)</h3>
-<p>Create a DM channel</p>
-<h3><a class="el" href="a00061.html#aa20f6c8ef35465a17c9510fa8353ef3a" title="Leave a guild. ">dpp::cluster::current_user_leave_guild</a> (snowflake, callback)</h3>
-<p>Leave a guild</p>
-<h3><a class="el" href="a00061.html#af6d45a29b3976f7b623d92e70ab9a1bc" title="Get all voice regions. ">dpp::cluster::get_voice_regions</a> (callback)</h3>
-<p>Get a global list of voice regions applicable to all users</p>
-<h3><a class="el" href="a00061.html#a68f16d04f100a0159683cba96e8c0a6c" title="Get the gateway information for the bot using the token. ">dpp::cluster::get_gateway_bot</a> (callback)</h3>
-<p>Get the information required for a bot to register with the websocket gateway </p>
-</div></div><!-- contents -->
+<div class="textblock"><div class="image">
+<img src="DPP_Architecture.svg" alt="DPP_Architecture.svg"/>
+</div>
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

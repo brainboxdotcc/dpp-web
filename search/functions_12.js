@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['vformat_5fto',['vformat_to',['../a00344.html#aeb555f3e2a033f189dcb5e5029acf45f',1,'detail::vformat_to(buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; format_str, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; Char &gt;&gt;&gt;, type_identity_t&lt; Char &gt;&gt;&gt; args)'],['../a00344.html#aa3d0ac653ec89026559e5906b3bf7e91',1,'detail::vformat_to(buffer&lt; char &gt; &amp;, string_view, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; char &gt;&gt;&gt;, type_identity_t&lt; char &gt;&gt;&gt;)']]],
-  ['voice_5fbuffer_5fsend_5ft',['voice_buffer_send_t',['../a00191.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
-  ['voice_5fready_5ft',['voice_ready_t',['../a00192.html#afe0122cb6850df07ca84ba3592181490',1,'dpp::voice_ready_t']]],
-  ['voice_5freceive_5ft',['voice_receive_t',['../a00193.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t']]],
-  ['voice_5fserver_5fupdate_5ft',['voice_server_update_t',['../a00195.html#a818081c81337f241f2c7fdc2bf0be1bc',1,'dpp::voice_server_update_t']]],
-  ['voice_5fstate_5fupdate_5ft',['voice_state_update_t',['../a00197.html#a421fc199dfeb2542ad61248b3a600a79',1,'dpp::voice_state_update_t']]],
-  ['voice_5ftrack_5fmarker_5ft',['voice_track_marker_t',['../a00198.html#ab3a8a8296e89fd188caed6d11c2d8c72',1,'dpp::voice_track_marker_t']]],
-  ['voice_5fuser_5ftalking_5ft',['voice_user_talking_t',['../a00199.html#a364eafcc97db6de005b150f3a92ed634',1,'dpp::voice_user_talking_t']]],
-  ['voiceconn',['voiceconn',['../a00200.html#a2238afc107e4e97daa0693c81fe150fd',1,'dpp::voiceconn::voiceconn()=default'],['../a00200.html#a7b0b033f371d814cf04e09ac7cf08ac1',1,'dpp::voiceconn::voiceconn(class discord_client *o, snowflake _channel_id)']]],
-  ['voiceregion',['voiceregion',['../a00201.html#aa49a3a3f843f2f97f27ad262dff11c5c',1,'dpp::voiceregion']]],
-  ['voicestate',['voicestate',['../a00202.html#a2cffc101e4bff3c2aa40f5efc9fee895',1,'dpp::voicestate']]]
+  ['vformat_5fto',['vformat_to',['../a00347.html#aeb555f3e2a033f189dcb5e5029acf45f',1,'detail::vformat_to(buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; format_str, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; Char &gt;&gt;&gt;, type_identity_t&lt; Char &gt;&gt;&gt; args)'],['../a00347.html#aa3d0ac653ec89026559e5906b3bf7e91',1,'detail::vformat_to(buffer&lt; char &gt; &amp;, string_view, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; char &gt;&gt;&gt;, type_identity_t&lt; char &gt;&gt;&gt;)']]],
+  ['voice_5fbuffer_5fsend_5ft',['voice_buffer_send_t',['../a00193.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
+  ['voice_5fready_5ft',['voice_ready_t',['../a00194.html#afe0122cb6850df07ca84ba3592181490',1,'dpp::voice_ready_t']]],
+  ['voice_5freceive_5ft',['voice_receive_t',['../a00195.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t']]],
+  ['voice_5fserver_5fupdate_5ft',['voice_server_update_t',['../a00197.html#a818081c81337f241f2c7fdc2bf0be1bc',1,'dpp::voice_server_update_t']]],
+  ['voice_5fstate_5fupdate_5ft',['voice_state_update_t',['../a00199.html#a421fc199dfeb2542ad61248b3a600a79',1,'dpp::voice_state_update_t']]],
+  ['voice_5ftrack_5fmarker_5ft',['voice_track_marker_t',['../a00200.html#ab3a8a8296e89fd188caed6d11c2d8c72',1,'dpp::voice_track_marker_t']]],
+  ['voice_5fuser_5ftalking_5ft',['voice_user_talking_t',['../a00201.html#a364eafcc97db6de005b150f3a92ed634',1,'dpp::voice_user_talking_t']]],
+  ['voiceconn',['voiceconn',['../a00202.html#a2238afc107e4e97daa0693c81fe150fd',1,'dpp::voiceconn::voiceconn()=default'],['../a00202.html#a7b0b033f371d814cf04e09ac7cf08ac1',1,'dpp::voiceconn::voiceconn(class discord_client *o, snowflake _channel_id)']]],
+  ['voiceregion',['voiceregion',['../a00203.html#aa49a3a3f843f2f97f27ad262dff11c5c',1,'dpp::voiceregion']]],
+  ['voicestate',['voicestate',['../a00204.html#a2cffc101e4bff3c2aa40f5efc9fee895',1,'dpp::voicestate']]]
 ];

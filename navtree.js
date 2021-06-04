@@ -4,11 +4,12 @@ var NAVTREE =
     [ "Frequently Asked Questions (FAQ)", "a00002.html", null ],
     [ "Building on Linux", "a00004.html", null ],
     [ "Building on Windows", "a00006.html", null ],
-    [ "Example Programs", "a00008.html", "a00008" ],
-    [ "Clusters, Shards and Guilds", "a00026.html", null ],
-    [ "Event Handlers", "a00028.html", null ],
-    [ "Threading Model", "a00030.html", null ],
-    [ "REST Calls", "a00032.html", null ],
+    [ "Building on macOS", "a00008.html", null ],
+    [ "Example Programs", "a00010.html", "a00010" ],
+    [ "Clusters, Shards and Guilds", "a00028.html", null ],
+    [ "Event Handlers", "a00030.html", null ],
+    [ "Threading Model", "a00032.html", null ],
+    [ "REST Calls", "a00034.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -36,12 +37,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a00002.html",
-"a00061.html#a5b0ce3857773519ca2ed62b49c04f267",
-"a00073.html#af59b7db59d0fe39259efcb2380016ee4",
-"a00087.html#ab0ad04559371a5e732dd1574622ab28d",
-"a00134.html",
-"a00174.html#a11df7852a7397628154acc21d5b0d1ef",
-"a00202.html#a24cf57b27275f7e5c650f581da9c469d"
+"a00063.html#a58d976f9d101225e05482db7b739f986",
+"a00075.html#af4c5772b702123423fa5ad2a12d11804",
+"a00089.html#ab06f6531b9380ece07b3d8861a4de268",
+"a00135.html#af42be274f0c532e1b227d6725f25ecd3",
+"a00176.html#a09cfeae91c1f26a5e8598b86c8217967",
+"a00204.html#a216776aa1bd956523f9667041e5cef55"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

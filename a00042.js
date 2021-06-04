@@ -1,10 +1,14 @@
 var a00042 =
 [
-    [ "changes", "a00042.html#ab4c452b5018afcc42cd96f67b7ae75f9", null ],
-    [ "event", "a00042.html#a3abfeeaa8c3662ee181190575da51b8b", null ],
-    [ "id", "a00042.html#ae52ad0499e9492694af8bfc66de01255", null ],
-    [ "options", "a00042.html#a9c715dcbef3d08e2d5d7cc58d5be1ca3", null ],
-    [ "reason", "a00042.html#a9681924b6d2256345a7c5579a34f3f7b", null ],
-    [ "target_id", "a00042.html#a0b6fcc890dfd0e55e68c39d2f88d268b", null ],
-    [ "user_id", "a00042.html#a4c44d24615548cc33303082104b24b05", null ]
+    [ "attachment", "a00042.html#ad10a254f41a718652557c7f6605f5ecd", null ],
+    [ "attachment", "a00042.html#a296b4131050f58216a9291df6f900e54", null ],
+    [ "~attachment", "a00042.html#a0911f0f41b456e42ec31615b24042d63", null ],
+    [ "content_type", "a00042.html#a57c192b2925012e1d06913da80f1bafd", null ],
+    [ "filename", "a00042.html#a37ae8a828923ad5184133f486241000c", null ],
+    [ "height", "a00042.html#a448f0ad9591bb19788cd595ace201ce3", null ],
+    [ "id", "a00042.html#a78fa9315fae4737d760e0b19cc9597cf", null ],
+    [ "proxy_url", "a00042.html#ac3fa01bbb9915006c0a11db9ed386749", null ],
+    [ "size", "a00042.html#a899697fe4fea962a9a81f0cae66e86f5", null ],
+    [ "url", "a00042.html#ac8dfe8ccce296e4f30452ddbc5bded26", null ],
+    [ "width", "a00042.html#a62039388d0f56e389a538b32716e44c5", null ]
 ];

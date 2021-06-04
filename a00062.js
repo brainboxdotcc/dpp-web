@@ -1,7 +1,8 @@
 var a00062 =
 [
-    [ "name", "a00062.html#a0c3bbf03c956d22fc1ecf677c1476ac7", null ],
-    [ "options", "a00062.html#aa26028641de473d1486d26e8048340b4", null ],
-    [ "type", "a00062.html#a3e664aff9bad6fffbd521d0dcc1d2299", null ],
-    [ "value", "a00062.html#a576bda8a063f9b1d1aa4b931973e4587", null ]
+    [ "channel_update_t", "a00062.html#afdadb0a8a19ba2d5e3203953d9d0f404", null ],
+    [ "from", "a00062.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
+    [ "raw_event", "a00062.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
+    [ "updated", "a00062.html#ac0d376e5d1ef37af8b1c73c5dcc90910", null ],
+    [ "updating_guild", "a00062.html#a73bba799554bf2bb04d8a36d00386fa2", null ]
 ];

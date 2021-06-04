@@ -1,8 +1,7 @@
 var a00097 =
 [
-    [ "guild_emojis_update_t", "a00097.html#a7d95cfe4bea653efceb7311699be645b", null ],
-    [ "emojis", "a00097.html#a51c22afd4b65afc11ef1ea6877b39a19", null ],
+    [ "guild_delete_t", "a00097.html#af8c8addd685e8c939cce01f8deaf1c6d", null ],
+    [ "deleted", "a00097.html#a9067e4a557c9e1f2f50997b4762e9dc1", null ],
     [ "from", "a00097.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
-    [ "raw_event", "a00097.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
-    [ "updating_guild", "a00097.html#a8d93eb74c1a847a94c7ac7dabaadbf3a", null ]
+    [ "raw_event", "a00097.html#a2d4777d1049d31ed943ecebfa2de7db9", null ]
 ];

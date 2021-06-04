@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="dpp::dispatcher Class Reference - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="dpp::discord_client Class Reference - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="dpp::dispatcher Class Reference - D++ - The lightweight C++ Discord API Library">
-<title>dpp::dispatcher Class Reference - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="dpp::discord_client Class Reference - D++ - The lightweight C++ Discord API Library">
+<title>dpp::discord_client Class Reference - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,1306 +96,1505 @@ $(document).ready(function(){initNavTree('a00075.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00453.html">List of all members</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="a00450.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dpp::dispatcher Class Reference</div>  </div>
+<div class="title">dpp::discord_client Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The dispatcher class contains a set of std::functions representing hooked events that the user code is interested in. These are modified via the on_eventname style methods in the cluster class.  
+<p>Implements a discord client. Each <a class="el" href="a00075.html" title="Implements a discord client. Each discord_client connects to one shard and derives from a websocket c...">discord_client</a> connects to one shard and derives from a websocket client.  
  <a href="a00075.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::dispatcher:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for dpp::discord_client:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="a00454.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00451.svg" width="163" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::discord_client:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="a00452.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aaeb4b65604a497f2ca93c4b62dcbdfb7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aaeb4b65604a497f2ca93c4b62dcbdfb7">log</a> (<a class="el" href="a00348.html#a7d48d478ccc3bffb34637bdb48f629c2">dpp::loglevel</a> severity, const std::string &amp;msg) const </td></tr>
+<tr class="separator:aaeb4b65604a497f2ca93c4b62dcbdfb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189b8eb73439b8ac82bc132b9acde04c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a189b8eb73439b8ac82bc132b9acde04c">HandleEvent</a> (const std::string &amp;event, <a class="el" href="a00348.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> &amp;j, const std::string &amp;raw)</td></tr>
+<tr class="separator:a189b8eb73439b8ac82bc132b9acde04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e750fd3a503a65b41ab6525b7b2e72"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a24e750fd3a503a65b41ab6525b7b2e72">get_guild_count</a> ()</td></tr>
+<tr class="memdesc:a24e750fd3a503a65b41ab6525b7b2e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Guild Count for this shard.  <a href="#a24e750fd3a503a65b41ab6525b7b2e72">More...</a><br /></td></tr>
+<tr class="separator:a24e750fd3a503a65b41ab6525b7b2e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74f28655846f30487d931bb1e3b1639"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad74f28655846f30487d931bb1e3b1639">get_member_count</a> ()</td></tr>
+<tr class="memdesc:ad74f28655846f30487d931bb1e3b1639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Member Count for this shard.  <a href="#ad74f28655846f30487d931bb1e3b1639">More...</a><br /></td></tr>
+<tr class="separator:ad74f28655846f30487d931bb1e3b1639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad490f19d38e26deff51dccbfd1c445c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aad490f19d38e26deff51dccbfd1c445c">get_channel_count</a> ()</td></tr>
+<tr class="memdesc:aad490f19d38e26deff51dccbfd1c445c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Channel Count for this shard.  <a href="#aad490f19d38e26deff51dccbfd1c445c">More...</a><br /></td></tr>
+<tr class="separator:aad490f19d38e26deff51dccbfd1c445c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d9e1814c13c386ca55bc6d75708de0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ae0d9e1814c13c386ca55bc6d75708de0">OneSecondTimer</a> ()</td></tr>
+<tr class="separator:ae0d9e1814c13c386ca55bc6d75708de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb1b789c7b365c1dfe776316d5a9829"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#afbb1b789c7b365c1dfe776316d5a9829">QueueMessage</a> (const std::string &amp;j, bool to_front=false)</td></tr>
+<tr class="memdesc:afbb1b789c7b365c1dfe776316d5a9829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a message to be sent via the websocket.  <a href="#afbb1b789c7b365c1dfe776316d5a9829">More...</a><br /></td></tr>
+<tr class="separator:afbb1b789c7b365c1dfe776316d5a9829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b40c6db59e7aed95958e2fec5f6b8ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a5b40c6db59e7aed95958e2fec5f6b8ba">ClearQueue</a> ()</td></tr>
+<tr class="memdesc:a5b40c6db59e7aed95958e2fec5f6b8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the outbound message queue.  <a href="#a5b40c6db59e7aed95958e2fec5f6b8ba">More...</a><br /></td></tr>
+<tr class="separator:a5b40c6db59e7aed95958e2fec5f6b8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca66e47e5e2d6fcd0bd17187465107db"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aca66e47e5e2d6fcd0bd17187465107db">GetQueueSize</a> ()</td></tr>
+<tr class="memdesc:aca66e47e5e2d6fcd0bd17187465107db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the outbound message queue.  <a href="#aca66e47e5e2d6fcd0bd17187465107db">More...</a><br /></td></tr>
+<tr class="separator:aca66e47e5e2d6fcd0bd17187465107db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59b7db59d0fe39259efcb2380016ee4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#af59b7db59d0fe39259efcb2380016ee4">is_connected</a> ()</td></tr>
+<tr class="memdesc:af59b7db59d0fe39259efcb2380016ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the shard is connected.  <a href="#af59b7db59d0fe39259efcb2380016ee4">More...</a><br /></td></tr>
+<tr class="separator:af59b7db59d0fe39259efcb2380016ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fef02c819339ee1d088b39647d70957"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00189.html">dpp::utility::uptime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a6fef02c819339ee1d088b39647d70957">get_uptime</a> ()</td></tr>
+<tr class="memdesc:a6fef02c819339ee1d088b39647d70957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the connection time of the shard.  <a href="#a6fef02c819339ee1d088b39647d70957">More...</a><br /></td></tr>
+<tr class="separator:a6fef02c819339ee1d088b39647d70957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bc3c07e4b547d0d6e2c820d255fac7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a26bc3c07e4b547d0d6e2c820d255fac7">discord_client</a> (<a class="el" href="a00063.html">dpp::cluster</a> *_cluster, uint32_t _shard_id, uint32_t _max_shards, const std::string &amp;_token, uint32_t <a class="el" href="a00348.html#a0042c0fc8164da4239b977d5be8e2ef5">intents</a>=0, bool compressed=true)</td></tr>
+<tr class="separator:a26bc3c07e4b547d0d6e2c820d255fac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7384d3ea3ee938b626e536f82a5f349"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad7384d3ea3ee938b626e536f82a5f349">~discord_client</a> ()</td></tr>
+<tr class="separator:ad7384d3ea3ee938b626e536f82a5f349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade85ebcbf1a24079511436d504940fcf"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ade85ebcbf1a24079511436d504940fcf">get_decompressed_bytes_in</a> ()</td></tr>
+<tr class="separator:ade85ebcbf1a24079511436d504940fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c5772b702123423fa5ad2a12d11804"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#af4c5772b702123423fa5ad2a12d11804">HandleFrame</a> (const std::string &amp;<a class="el" href="a00179.html#ae0e5e0799448bf29506bfcc21168d3fa">buffer</a>)</td></tr>
+<tr class="separator:af4c5772b702123423fa5ad2a12d11804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7743f641f2eabe2c83c3142d9b46a3aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a7743f641f2eabe2c83c3142d9b46a3aa">Error</a> (uint32_t errorcode)</td></tr>
+<tr class="separator:a7743f641f2eabe2c83c3142d9b46a3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae768cabb169f9501bba20704867110e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ae768cabb169f9501bba20704867110e5">Run</a> ()</td></tr>
+<tr class="separator:ae768cabb169f9501bba20704867110e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927122885bd65d221df2d5fae8d19a16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a927122885bd65d221df2d5fae8d19a16">connect_voice</a> (<a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id)</td></tr>
+<tr class="memdesc:a927122885bd65d221df2d5fae8d19a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a voice channel.  <a href="#a927122885bd65d221df2d5fae8d19a16">More...</a><br /></td></tr>
+<tr class="separator:a927122885bd65d221df2d5fae8d19a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27c7a127b4bf2aaee24e406adfe3bb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ab27c7a127b4bf2aaee24e406adfe3bb2">disconnect_voice</a> (<a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id)</td></tr>
+<tr class="memdesc:ab27c7a127b4bf2aaee24e406adfe3bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the connected voice channel on a guild.  <a href="#ab27c7a127b4bf2aaee24e406adfe3bb2">More...</a><br /></td></tr>
+<tr class="separator:ab27c7a127b4bf2aaee24e406adfe3bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9c5c491ce195ec7f0127d6c8ec36b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html">voiceconn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#add9c5c491ce195ec7f0127d6c8ec36b7">get_voice</a> (<a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id)</td></tr>
+<tr class="separator:add9c5c491ce195ec7f0127d6c8ec36b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac65765349cbd3e787c0fd2af576ec6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#aac65765349cbd3e787c0fd2af576ec6d">write</a> (const std::string &amp;data)</td></tr>
+<tr class="memdesc:aac65765349cbd3e787c0fd2af576ec6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to websocket. Encapsulates data in frames if the status is CONNECTED.  <a href="#aac65765349cbd3e787c0fd2af576ec6d">More...</a><br /></td></tr>
+<tr class="separator:aac65765349cbd3e787c0fd2af576ec6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e9461b921ebae46f3063d2503621d0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#a93e9461b921ebae46f3063d2503621d0">HandleBuffer</a> (std::string &amp;<a class="el" href="a00179.html#ae0e5e0799448bf29506bfcc21168d3fa">buffer</a>)</td></tr>
+<tr class="memdesc:a93e9461b921ebae46f3063d2503621d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes incoming frames from the SSL socket input buffer.  <a href="#a93e9461b921ebae46f3063d2503621d0">More...</a><br /></td></tr>
+<tr class="separator:a93e9461b921ebae46f3063d2503621d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3398642150ca79c8f266de83ee93aa30"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#a3398642150ca79c8f266de83ee93aa30">close</a> ()</td></tr>
+<tr class="memdesc:a3398642150ca79c8f266de83ee93aa30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close websocket.  <a href="#a3398642150ca79c8f266de83ee93aa30">More...</a><br /></td></tr>
+<tr class="separator:a3398642150ca79c8f266de83ee93aa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4da6489c8f08030ca49c060a23740a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aad4da6489c8f08030ca49c060a23740a">get_bytes_out</a> ()</td></tr>
+<tr class="separator:aad4da6489c8f08030ca49c060a23740a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5d5654ce0b631d07045088ef347418"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#afa5d5654ce0b631d07045088ef347418">get_bytes_in</a> ()</td></tr>
+<tr class="separator:afa5d5654ce0b631d07045088ef347418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a736a578cc10fa747ca1e2875fbdf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ad6a736a578cc10fa747ca1e2875fbdf5">ReadLoop</a> ()</td></tr>
+<tr class="memdesc:ad6a736a578cc10fa747ca1e2875fbdf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nonblocking I/O loop.  <a href="#ad6a736a578cc10fa747ca1e2875fbdf5">More...</a><br /></td></tr>
+<tr class="separator:ad6a736a578cc10fa747ca1e2875fbdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa3e934f108231fa426cbcd1956e72b1c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00142.html">log_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aa3e934f108231fa426cbcd1956e72b1c">log</a></td></tr>
-<tr class="memdesc:aa3e934f108231fa426cbcd1956e72b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for log event.  <a href="#aa3e934f108231fa426cbcd1956e72b1c">More...</a><br /></td></tr>
-<tr class="separator:aa3e934f108231fa426cbcd1956e72b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1980829c218c2b75b608769009bdfd6f"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00197.html">voice_state_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a1980829c218c2b75b608769009bdfd6f">voice_state_update</a></td></tr>
-<tr class="memdesc:a1980829c218c2b75b608769009bdfd6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for voice state update event.  <a href="#a1980829c218c2b75b608769009bdfd6f">More...</a><br /></td></tr>
-<tr class="separator:a1980829c218c2b75b608769009bdfd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40072713dd30b8e37200d3ec91a1d1b2"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00135.html">interaction_create_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a40072713dd30b8e37200d3ec91a1d1b2">interaction_create</a></td></tr>
-<tr class="memdesc:a40072713dd30b8e37200d3ec91a1d1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for interaction create event.  <a href="#a40072713dd30b8e37200d3ec91a1d1b2">More...</a><br /></td></tr>
-<tr class="separator:a40072713dd30b8e37200d3ec91a1d1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95261b35417e81c65e9046eca9f0d57c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00049.html">button_click_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a95261b35417e81c65e9046eca9f0d57c">button_click</a></td></tr>
-<tr class="memdesc:a95261b35417e81c65e9046eca9f0d57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for button click event.  <a href="#a95261b35417e81c65e9046eca9f0d57c">More...</a><br /></td></tr>
-<tr class="separator:a95261b35417e81c65e9046eca9f0d57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8403bfd35d479d62884057b5561ebb6a"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00095.html">guild_delete_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a8403bfd35d479d62884057b5561ebb6a">guild_delete</a></td></tr>
-<tr class="memdesc:a8403bfd35d479d62884057b5561ebb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild delete event.  <a href="#a8403bfd35d479d62884057b5561ebb6a">More...</a><br /></td></tr>
-<tr class="separator:a8403bfd35d479d62884057b5561ebb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941fe0c8a4f52c1bf82c34a5c38d86b2"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00056.html">channel_delete_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a941fe0c8a4f52c1bf82c34a5c38d86b2">channel_delete</a></td></tr>
-<tr class="memdesc:a941fe0c8a4f52c1bf82c34a5c38d86b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for channel delete event.  <a href="#a941fe0c8a4f52c1bf82c34a5c38d86b2">More...</a><br /></td></tr>
-<tr class="separator:a941fe0c8a4f52c1bf82c34a5c38d86b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a6151ce96b42aef5d3ceb6d9f55ee5"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00060.html">channel_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad4a6151ce96b42aef5d3ceb6d9f55ee5">channel_update</a></td></tr>
-<tr class="memdesc:ad4a6151ce96b42aef5d3ceb6d9f55ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for channel update event.  <a href="#ad4a6151ce96b42aef5d3ceb6d9f55ee5">More...</a><br /></td></tr>
-<tr class="separator:ad4a6151ce96b42aef5d3ceb6d9f55ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65719ce2641b1ab281f499ea116bc137"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00170.html">ready_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a65719ce2641b1ab281f499ea116bc137">ready</a></td></tr>
-<tr class="memdesc:a65719ce2641b1ab281f499ea116bc137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for ready event.  <a href="#a65719ce2641b1ab281f499ea116bc137">More...</a><br /></td></tr>
-<tr class="separator:a65719ce2641b1ab281f499ea116bc137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8816e6679fff4b73ccffa8fa46caa08"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00151.html">message_delete_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ae8816e6679fff4b73ccffa8fa46caa08">message_delete</a></td></tr>
-<tr class="memdesc:ae8816e6679fff4b73ccffa8fa46caa08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for message delete event.  <a href="#ae8816e6679fff4b73ccffa8fa46caa08">More...</a><br /></td></tr>
-<tr class="separator:ae8816e6679fff4b73ccffa8fa46caa08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeda9731343cd06bd13b6aaf716082f3"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00037.html">application_command_delete_t</a> <br class="typebreak" />
-&amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#adeda9731343cd06bd13b6aaf716082f3">application_command_delete</a></td></tr>
-<tr class="memdesc:adeda9731343cd06bd13b6aaf716082f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for application command delete event.  <a href="#adeda9731343cd06bd13b6aaf716082f3">More...</a><br /></td></tr>
-<tr class="separator:adeda9731343cd06bd13b6aaf716082f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99f8ce259906ef7912c8509ad3ff70ac"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00106.html">guild_member_remove_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a99f8ce259906ef7912c8509ad3ff70ac">guild_member_remove</a></td></tr>
-<tr class="memdesc:a99f8ce259906ef7912c8509ad3ff70ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild member remove event.  <a href="#a99f8ce259906ef7912c8509ad3ff70ac">More...</a><br /></td></tr>
-<tr class="separator:a99f8ce259906ef7912c8509ad3ff70ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe9360d2e501ae40d513bf2a737758b8"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00035.html">application_command_create_t</a> <br class="typebreak" />
-&amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#abe9360d2e501ae40d513bf2a737758b8">application_command_create</a></td></tr>
-<tr class="memdesc:abe9360d2e501ae40d513bf2a737758b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild member remove event.  <a href="#abe9360d2e501ae40d513bf2a737758b8">More...</a><br /></td></tr>
-<tr class="separator:abe9360d2e501ae40d513bf2a737758b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95bc992af2a7efc1c1c524eeab354990"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00173.html">resumed_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a95bc992af2a7efc1c1c524eeab354990">resumed</a></td></tr>
-<tr class="memdesc:a95bc992af2a7efc1c1c524eeab354990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for resumed event.  <a href="#a95bc992af2a7efc1c1c524eeab354990">More...</a><br /></td></tr>
-<tr class="separator:a95bc992af2a7efc1c1c524eeab354990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac698fd6fd317a93f4d1feb7e8710ee4f"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00112.html">guild_role_create_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ac698fd6fd317a93f4d1feb7e8710ee4f">guild_role_create</a></td></tr>
-<tr class="memdesc:ac698fd6fd317a93f4d1feb7e8710ee4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild role create event.  <a href="#ac698fd6fd317a93f4d1feb7e8710ee4f">More...</a><br /></td></tr>
-<tr class="separator:ac698fd6fd317a93f4d1feb7e8710ee4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af63372a6426fa4aacd0eecfee5f4ac48"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00186.html">typing_start_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#af63372a6426fa4aacd0eecfee5f4ac48">typing_start</a></td></tr>
-<tr class="memdesc:af63372a6426fa4aacd0eecfee5f4ac48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for typing start event.  <a href="#af63372a6426fa4aacd0eecfee5f4ac48">More...</a><br /></td></tr>
-<tr class="separator:af63372a6426fa4aacd0eecfee5f4ac48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f34ecc15f698db28f340d8801f6685"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00153.html">message_reaction_add_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a67f34ecc15f698db28f340d8801f6685">message_reaction_add</a></td></tr>
-<tr class="memdesc:a67f34ecc15f698db28f340d8801f6685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for message reaction add event.  <a href="#a67f34ecc15f698db28f340d8801f6685">More...</a><br /></td></tr>
-<tr class="separator:a67f34ecc15f698db28f340d8801f6685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a299d7f48d2cadf09b389850ee115fc5e"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00110.html">guild_members_chunk_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a299d7f48d2cadf09b389850ee115fc5e">guild_members_chunk</a></td></tr>
-<tr class="memdesc:a299d7f48d2cadf09b389850ee115fc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild members chunk event.  <a href="#a299d7f48d2cadf09b389850ee115fc5e">More...</a><br /></td></tr>
-<tr class="separator:a299d7f48d2cadf09b389850ee115fc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a101b1939b506bbb33d711e50c46bf391"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00159.html">message_reaction_remove_t</a> <br class="typebreak" />
-&amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a101b1939b506bbb33d711e50c46bf391">message_reaction_remove</a></td></tr>
-<tr class="memdesc:a101b1939b506bbb33d711e50c46bf391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for message reaction remove event.  <a href="#a101b1939b506bbb33d711e50c46bf391">More...</a><br /></td></tr>
-<tr class="separator:a101b1939b506bbb33d711e50c46bf391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f70d6226670de148013d4ad7281afe9"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00093.html">guild_create_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a1f70d6226670de148013d4ad7281afe9">guild_create</a></td></tr>
-<tr class="memdesc:a1f70d6226670de148013d4ad7281afe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild create event.  <a href="#a1f70d6226670de148013d4ad7281afe9">More...</a><br /></td></tr>
-<tr class="separator:a1f70d6226670de148013d4ad7281afe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac82562a94e2bca3629f6e0d7ad9868e2"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00054.html">channel_create_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ac82562a94e2bca3629f6e0d7ad9868e2">channel_create</a></td></tr>
-<tr class="memdesc:ac82562a94e2bca3629f6e0d7ad9868e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild channel create event.  <a href="#ac82562a94e2bca3629f6e0d7ad9868e2">More...</a><br /></td></tr>
-<tr class="separator:ac82562a94e2bca3629f6e0d7ad9868e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ee8b4cb141a7c23acfae0c758027486"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00158.html">message_reaction_remove_emoji_t</a> <br class="typebreak" />
-&amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a2ee8b4cb141a7c23acfae0c758027486">message_reaction_remove_emoji</a></td></tr>
-<tr class="memdesc:a2ee8b4cb141a7c23acfae0c758027486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for message reaction remove emoji event.  <a href="#a2ee8b4cb141a7c23acfae0c758027486">More...</a><br /></td></tr>
-<tr class="separator:a2ee8b4cb141a7c23acfae0c758027486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace33de42639a464557e525450a5835b7"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00150.html">message_delete_bulk_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ace33de42639a464557e525450a5835b7">message_delete_bulk</a></td></tr>
-<tr class="memdesc:ace33de42639a464557e525450a5835b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for message delete bulk event.  <a href="#ace33de42639a464557e525450a5835b7">More...</a><br /></td></tr>
-<tr class="separator:ace33de42639a464557e525450a5835b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a276a38f9d9e9a89c55f07c2c20a7ea9c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00116.html">guild_role_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a276a38f9d9e9a89c55f07c2c20a7ea9c">guild_role_update</a></td></tr>
-<tr class="memdesc:a276a38f9d9e9a89c55f07c2c20a7ea9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild role update event.  <a href="#a276a38f9d9e9a89c55f07c2c20a7ea9c">More...</a><br /></td></tr>
-<tr class="separator:a276a38f9d9e9a89c55f07c2c20a7ea9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae134fc0cbe3f4537ce557f72571c8eed"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00114.html">guild_role_delete_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ae134fc0cbe3f4537ce557f72571c8eed">guild_role_delete</a></td></tr>
-<tr class="memdesc:ae134fc0cbe3f4537ce557f72571c8eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild role delete event.  <a href="#ae134fc0cbe3f4537ce557f72571c8eed">More...</a><br /></td></tr>
-<tr class="separator:ae134fc0cbe3f4537ce557f72571c8eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a65cd0820a545d14b01324cf1508bc7"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00058.html">channel_pins_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a8a65cd0820a545d14b01324cf1508bc7">channel_pins_update</a></td></tr>
-<tr class="memdesc:a8a65cd0820a545d14b01324cf1508bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for channel pins update event.  <a href="#a8a65cd0820a545d14b01324cf1508bc7">More...</a><br /></td></tr>
-<tr class="separator:a8a65cd0820a545d14b01324cf1508bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ddbf5711d20ac6de1638f8a1392f70a"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00156.html">message_reaction_remove_all_t</a> <br class="typebreak" />
-&amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a7ddbf5711d20ac6de1638f8a1392f70a">message_reaction_remove_all</a></td></tr>
-<tr class="memdesc:a7ddbf5711d20ac6de1638f8a1392f70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for message reaction remove all event.  <a href="#a7ddbf5711d20ac6de1638f8a1392f70a">More...</a><br /></td></tr>
-<tr class="separator:a7ddbf5711d20ac6de1638f8a1392f70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4635617a097fd90d9a9782066b7c8b3"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00195.html">voice_server_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ab4635617a097fd90d9a9782066b7c8b3">voice_server_update</a></td></tr>
-<tr class="memdesc:ab4635617a097fd90d9a9782066b7c8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for voice server update event.  <a href="#ab4635617a097fd90d9a9782066b7c8b3">More...</a><br /></td></tr>
-<tr class="separator:ab4635617a097fd90d9a9782066b7c8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac63839af90854dbe6a9fbb801075d862"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00097.html">guild_emojis_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ac63839af90854dbe6a9fbb801075d862">guild_emojis_update</a></td></tr>
-<tr class="memdesc:ac63839af90854dbe6a9fbb801075d862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild emojis update event.  <a href="#ac63839af90854dbe6a9fbb801075d862">More...</a><br /></td></tr>
-<tr class="separator:ac63839af90854dbe6a9fbb801075d862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e0bbce14f6aba7065eeb20dcf4ae8d"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00166.html">presence_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a21e0bbce14f6aba7065eeb20dcf4ae8d">presence_update</a></td></tr>
-<tr class="memdesc:a21e0bbce14f6aba7065eeb20dcf4ae8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for presence update event.  <a href="#a21e0bbce14f6aba7065eeb20dcf4ae8d">More...</a><br /></td></tr>
-<tr class="separator:a21e0bbce14f6aba7065eeb20dcf4ae8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d9099bf4647dc0ddb98d03b16613d6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00205.html">webhooks_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a56d9099bf4647dc0ddb98d03b16613d6">webhooks_update</a></td></tr>
-<tr class="memdesc:a56d9099bf4647dc0ddb98d03b16613d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for webhooks update event.  <a href="#a56d9099bf4647dc0ddb98d03b16613d6">More...</a><br /></td></tr>
-<tr class="separator:a56d9099bf4647dc0ddb98d03b16613d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a862f7dcddef43cc9b5bfe06d6577bb"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00104.html">guild_member_add_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a4a862f7dcddef43cc9b5bfe06d6577bb">guild_member_add</a></td></tr>
-<tr class="memdesc:a4a862f7dcddef43cc9b5bfe06d6577bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild member add event.  <a href="#a4a862f7dcddef43cc9b5bfe06d6577bb">More...</a><br /></td></tr>
-<tr class="separator:a4a862f7dcddef43cc9b5bfe06d6577bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff8bbb12c4d123fbd0b57fb3b48962a"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00141.html">invite_delete_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#acff8bbb12c4d123fbd0b57fb3b48962a">invite_delete</a></td></tr>
-<tr class="memdesc:acff8bbb12c4d123fbd0b57fb3b48962a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for invite delete event.  <a href="#acff8bbb12c4d123fbd0b57fb3b48962a">More...</a><br /></td></tr>
-<tr class="separator:acff8bbb12c4d123fbd0b57fb3b48962a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fbab68118106ac916dc8ce2d5ffd825"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00118.html">guild_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a0fbab68118106ac916dc8ce2d5ffd825">guild_update</a></td></tr>
-<tr class="memdesc:a0fbab68118106ac916dc8ce2d5ffd825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild update event.  <a href="#a0fbab68118106ac916dc8ce2d5ffd825">More...</a><br /></td></tr>
-<tr class="separator:a0fbab68118106ac916dc8ce2d5ffd825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866a5a142d35804453929dcc153435d6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00099.html">guild_integrations_update_t</a> <br class="typebreak" />
-&amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a866a5a142d35804453929dcc153435d6">guild_integrations_update</a></td></tr>
-<tr class="memdesc:a866a5a142d35804453929dcc153435d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild integrations update event.  <a href="#a866a5a142d35804453929dcc153435d6">More...</a><br /></td></tr>
-<tr class="separator:a866a5a142d35804453929dcc153435d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2521b114ee75a9d4f0aa36f9aba63f2"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00108.html">guild_member_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ac2521b114ee75a9d4f0aa36f9aba63f2">guild_member_update</a></td></tr>
-<tr class="memdesc:ac2521b114ee75a9d4f0aa36f9aba63f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild member update event.  <a href="#ac2521b114ee75a9d4f0aa36f9aba63f2">More...</a><br /></td></tr>
-<tr class="separator:ac2521b114ee75a9d4f0aa36f9aba63f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f4cdfa198a3aa8cbbbf3f6bd5ffd447"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00039.html">application_command_update_t</a> <br class="typebreak" />
-&amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a1f4cdfa198a3aa8cbbbf3f6bd5ffd447">application_command_update</a></td></tr>
-<tr class="memdesc:a1f4cdfa198a3aa8cbbbf3f6bd5ffd447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for application command update event.  <a href="#a1f4cdfa198a3aa8cbbbf3f6bd5ffd447">More...</a><br /></td></tr>
-<tr class="separator:a1f4cdfa198a3aa8cbbbf3f6bd5ffd447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a811c8990061c5ce56d221f767ec0576d"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00139.html">invite_create_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a811c8990061c5ce56d221f767ec0576d">invite_create</a></td></tr>
-<tr class="memdesc:a811c8990061c5ce56d221f767ec0576d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for invite create event.  <a href="#a811c8990061c5ce56d221f767ec0576d">More...</a><br /></td></tr>
-<tr class="separator:a811c8990061c5ce56d221f767ec0576d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7db3b3fd784e67a460a67147f2c315"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00161.html">message_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aff7db3b3fd784e67a460a67147f2c315">message_update</a></td></tr>
-<tr class="memdesc:aff7db3b3fd784e67a460a67147f2c315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for message update event.  <a href="#aff7db3b3fd784e67a460a67147f2c315">More...</a><br /></td></tr>
-<tr class="separator:aff7db3b3fd784e67a460a67147f2c315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac44804e681d34dc35bd98a61ab41e73"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00190.html">user_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aac44804e681d34dc35bd98a61ab41e73">user_update</a></td></tr>
-<tr class="memdesc:aac44804e681d34dc35bd98a61ab41e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for user update event.  <a href="#aac44804e681d34dc35bd98a61ab41e73">More...</a><br /></td></tr>
-<tr class="separator:aac44804e681d34dc35bd98a61ab41e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a74c97a762054030a2423c01d3010de"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00147.html">message_create_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a8a74c97a762054030a2423c01d3010de">message_create</a></td></tr>
-<tr class="memdesc:a8a74c97a762054030a2423c01d3010de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for message create event.  <a href="#a8a74c97a762054030a2423c01d3010de">More...</a><br /></td></tr>
-<tr class="separator:a8a74c97a762054030a2423c01d3010de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a171442fd458ad1a423ac48e44f269e20"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00089.html">guild_ban_add_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a171442fd458ad1a423ac48e44f269e20">guild_ban_add</a></td></tr>
-<tr class="memdesc:a171442fd458ad1a423ac48e44f269e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild ban add event.  <a href="#a171442fd458ad1a423ac48e44f269e20">More...</a><br /></td></tr>
-<tr class="separator:a171442fd458ad1a423ac48e44f269e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc9e992868216001c607d0473425795"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00091.html">guild_ban_remove_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a3cc9e992868216001c607d0473425795">guild_ban_remove</a></td></tr>
-<tr class="memdesc:a3cc9e992868216001c607d0473425795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild ban remove event.  <a href="#a3cc9e992868216001c607d0473425795">More...</a><br /></td></tr>
-<tr class="separator:a3cc9e992868216001c607d0473425795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9156aeb607b633a0beafb0754840bde2"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00128.html">integration_create_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a9156aeb607b633a0beafb0754840bde2">integration_create</a></td></tr>
-<tr class="memdesc:a9156aeb607b633a0beafb0754840bde2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for integration create event.  <a href="#a9156aeb607b633a0beafb0754840bde2">More...</a><br /></td></tr>
-<tr class="separator:a9156aeb607b633a0beafb0754840bde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a650bafe23ae42306008046f8cf3de2a5"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00132.html">integration_update_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a650bafe23ae42306008046f8cf3de2a5">integration_update</a></td></tr>
-<tr class="memdesc:a650bafe23ae42306008046f8cf3de2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for integration update event.  <a href="#a650bafe23ae42306008046f8cf3de2a5">More...</a><br /></td></tr>
-<tr class="separator:a650bafe23ae42306008046f8cf3de2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32054b6807a7abcd456fd8f7ad17f4c3"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00130.html">integration_delete_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a32054b6807a7abcd456fd8f7ad17f4c3">integration_delete</a></td></tr>
-<tr class="memdesc:a32054b6807a7abcd456fd8f7ad17f4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for integration delete event.  <a href="#a32054b6807a7abcd456fd8f7ad17f4c3">More...</a><br /></td></tr>
-<tr class="separator:a32054b6807a7abcd456fd8f7ad17f4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05479a227ee0b2e3a9fc110fc22a1edc"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00191.html">voice_buffer_send_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a05479a227ee0b2e3a9fc110fc22a1edc">voice_buffer_send</a></td></tr>
-<tr class="memdesc:a05479a227ee0b2e3a9fc110fc22a1edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for voice buffer send event.  <a href="#a05479a227ee0b2e3a9fc110fc22a1edc">More...</a><br /></td></tr>
-<tr class="separator:a05479a227ee0b2e3a9fc110fc22a1edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9734f36f8ed672bdcc0efc4e1125b08"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00199.html">voice_user_talking_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad9734f36f8ed672bdcc0efc4e1125b08">voice_user_talking</a></td></tr>
-<tr class="memdesc:ad9734f36f8ed672bdcc0efc4e1125b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for voice user talking event.  <a href="#ad9734f36f8ed672bdcc0efc4e1125b08">More...</a><br /></td></tr>
-<tr class="separator:ad9734f36f8ed672bdcc0efc4e1125b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c2f74f1e854a61ec6795ab0e3f7c40b"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00192.html">voice_ready_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a9c2f74f1e854a61ec6795ab0e3f7c40b">voice_ready</a></td></tr>
-<tr class="memdesc:a9c2f74f1e854a61ec6795ab0e3f7c40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for voice ready event.  <a href="#a9c2f74f1e854a61ec6795ab0e3f7c40b">More...</a><br /></td></tr>
-<tr class="separator:a9c2f74f1e854a61ec6795ab0e3f7c40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52035826c4e3be4f6e6ac641389bee9"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00193.html">voice_receive_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#af52035826c4e3be4f6e6ac641389bee9">voice_receive</a></td></tr>
-<tr class="memdesc:af52035826c4e3be4f6e6ac641389bee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for voice receieve event.  <a href="#af52035826c4e3be4f6e6ac641389bee9">More...</a><br /></td></tr>
-<tr class="separator:af52035826c4e3be4f6e6ac641389bee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab604386c5676c63901dff045a46b4aae"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00198.html">voice_track_marker_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ab604386c5676c63901dff045a46b4aae">voice_track_marker</a></td></tr>
-<tr class="memdesc:ab604386c5676c63901dff045a46b4aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for voice track marker event.  <a href="#ab604386c5676c63901dff045a46b4aae">More...</a><br /></td></tr>
-<tr class="separator:ab604386c5676c63901dff045a46b4aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e95a46331f7dadc12210bee432a49e6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00101.html">guild_join_request_delete_t</a> <br class="typebreak" />
-&amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a9e95a46331f7dadc12210bee432a49e6">guild_join_request_delete</a></td></tr>
-<tr class="memdesc:a9e95a46331f7dadc12210bee432a49e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for guild join request delete event.  <a href="#a9e95a46331f7dadc12210bee432a49e6">More...</a><br /></td></tr>
-<tr class="separator:a9e95a46331f7dadc12210bee432a49e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa405a83fbbbd434010b838b443d61897"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00179.html">stage_instance_create_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aa405a83fbbbd434010b838b443d61897">stage_instance_create</a></td></tr>
-<tr class="memdesc:aa405a83fbbbd434010b838b443d61897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for stage instance create event.  <a href="#aa405a83fbbbd434010b838b443d61897">More...</a><br /></td></tr>
-<tr class="separator:aa405a83fbbbd434010b838b443d61897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83540a056df758f8e9847c1bc8d9ba06"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <br class="typebreak" />
-<a class="el" href="a00181.html">stage_instance_delete_t</a> &amp;event)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a83540a056df758f8e9847c1bc8d9ba06">stage_instance_delete</a></td></tr>
-<tr class="memdesc:a83540a056df758f8e9847c1bc8d9ba06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function pointer for stage instance delete event.  <a href="#a83540a056df758f8e9847c1bc8d9ba06">More...</a><br /></td></tr>
-<tr class="separator:a83540a056df758f8e9847c1bc8d9ba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed78d2e1b09e006ede8b4690895a866"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="a00063.html">dpp::cluster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#afed78d2e1b09e006ede8b4690895a866">creator</a></td></tr>
+<tr class="separator:afed78d2e1b09e006ede8b4690895a866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f72c7433043cbb61fe1917efabd2f7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a62f72c7433043cbb61fe1917efabd2f7">heartbeat_interval</a></td></tr>
+<tr class="separator:a62f72c7433043cbb61fe1917efabd2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ef401a0b38b2cce833d184ddf38bbb"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ac6ef401a0b38b2cce833d184ddf38bbb">last_heartbeat</a></td></tr>
+<tr class="separator:ac6ef401a0b38b2cce833d184ddf38bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11253c28f842aad3939e9d3138a0c6d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aa11253c28f842aad3939e9d3138a0c6d">shard_id</a></td></tr>
+<tr class="separator:aa11253c28f842aad3939e9d3138a0c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8e56675006b1af1c09d8de1519f001"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a7e8e56675006b1af1c09d8de1519f001">max_shards</a></td></tr>
+<tr class="separator:a7e8e56675006b1af1c09d8de1519f001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48586d5bfd6ce1e8f58770c7bfcc5c27"><td class="memItemLeft" align="right" valign="top">std::thread::native_handle_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a48586d5bfd6ce1e8f58770c7bfcc5c27">thread_id</a></td></tr>
+<tr class="separator:a48586d5bfd6ce1e8f58770c7bfcc5c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc9f84c9b65a58f8e9eea6326a424bd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a8dc9f84c9b65a58f8e9eea6326a424bd">last_seq</a></td></tr>
+<tr class="separator:a8dc9f84c9b65a58f8e9eea6326a424bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f6acb88970deecd85236fc0df8be78"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ac6f6acb88970deecd85236fc0df8be78">token</a></td></tr>
+<tr class="separator:ac6f6acb88970deecd85236fc0df8be78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdea0fb06605d44be0161991c5d68e58"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#acdea0fb06605d44be0161991c5d68e58">intents</a></td></tr>
+<tr class="separator:acdea0fb06605d44be0161991c5d68e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66922f8fbb2df8c1c92744f4eb524a52"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a66922f8fbb2df8c1c92744f4eb524a52">sessionid</a></td></tr>
+<tr class="separator:a66922f8fbb2df8c1c92744f4eb524a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef561c63eecce36ba9384bbb70e8f19"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a4ef561c63eecce36ba9384bbb70e8f19">voice_mutex</a></td></tr>
+<tr class="separator:a4ef561c63eecce36ba9384bbb70e8f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575bb766c7c9e8ea510392265c0abba6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a575bb766c7c9e8ea510392265c0abba6">resumes</a></td></tr>
+<tr class="separator:a575bb766c7c9e8ea510392265c0abba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af002768a9defc98dc3fcf777a95d8bcf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#af002768a9defc98dc3fcf777a95d8bcf">reconnects</a></td></tr>
+<tr class="separator:af002768a9defc98dc3fcf777a95d8bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e39136f09297f7ba0ab6a449e435f3d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a5e39136f09297f7ba0ab6a449e435f3d">websocket_ping</a></td></tr>
+<tr class="separator:a5e39136f09297f7ba0ab6a449e435f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ffb74d2fa81b0e6f0864848151fa90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a03ffb74d2fa81b0e6f0864848151fa90">ready</a></td></tr>
+<tr class="separator:a03ffb74d2fa81b0e6f0864848151fa90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611a05e14a49affa23f58ea173d829ba"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a611a05e14a49affa23f58ea173d829ba">last_heartbeat_ack</a></td></tr>
+<tr class="separator:a611a05e14a49affa23f58ea173d829ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad474846a37755a4b1064a5c3a3480fbc"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <br class="typebreak" />
+<a class="el" href="a00202.html">voiceconn</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad474846a37755a4b1064a5c3a3480fbc">connecting_voice_channels</a></td></tr>
+<tr class="separator:ad474846a37755a4b1064a5c3a3480fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b75ebfaeb8bbe40741a1ad95e58c56"><td class="memItemLeft" align="right" valign="top">std::function&lt; int()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ad2b75ebfaeb8bbe40741a1ad95e58c56">custom_readable_fd</a></td></tr>
+<tr class="memdesc:ad2b75ebfaeb8bbe40741a1ad95e58c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaching an additional file descriptor to this function will send notifications when there is data to read.  <a href="#ad2b75ebfaeb8bbe40741a1ad95e58c56">More...</a><br /></td></tr>
+<tr class="separator:ad2b75ebfaeb8bbe40741a1ad95e58c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a0f4e6e46da398d77b33e55e3d4ced"><td class="memItemLeft" align="right" valign="top">std::function&lt; int()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a32a0f4e6e46da398d77b33e55e3d4ced">custom_writeable_fd</a></td></tr>
+<tr class="memdesc:a32a0f4e6e46da398d77b33e55e3d4ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaching an additional file descriptor to this function will send notifications when you are able to write to the socket.  <a href="#a32a0f4e6e46da398d77b33e55e3d4ced">More...</a><br /></td></tr>
+<tr class="separator:a32a0f4e6e46da398d77b33e55e3d4ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf27074007db73b13663ab985f2221e8"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aaf27074007db73b13663ab985f2221e8">custom_readable_ready</a></td></tr>
+<tr class="memdesc:aaf27074007db73b13663ab985f2221e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event will be called when you can read from the custom fd.  <a href="#aaf27074007db73b13663ab985f2221e8">More...</a><br /></td></tr>
+<tr class="separator:aaf27074007db73b13663ab985f2221e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eac615119a5068c1634e3729752ddb6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a5eac615119a5068c1634e3729752ddb6">custom_writeable_ready</a></td></tr>
+<tr class="memdesc:a5eac615119a5068c1634e3729752ddb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event will be called when you can write to a custom fd.  <a href="#a5eac615119a5068c1634e3729752ddb6">More...</a><br /></td></tr>
+<tr class="separator:a5eac615119a5068c1634e3729752ddb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac7f26051b6ce8db8e57536ce4e035caf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#ac7f26051b6ce8db8e57536ce4e035caf">Connect</a> ()</td></tr>
+<tr class="separator:ac7f26051b6ce8db8e57536ce4e035caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad699ad1f6cefc29a1868fdfca530c550"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00348.html#af0e6c1fc5986facd4bb63a152ffa6057">ws_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#ad699ad1f6cefc29a1868fdfca530c550">GetState</a> ()</td></tr>
+<tr class="separator:ad699ad1f6cefc29a1868fdfca530c550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae0e5e0799448bf29506bfcc21168d3fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae0e5e0799448bf29506bfcc21168d3fa">buffer</a></td></tr>
+<tr class="separator:ae0e5e0799448bf29506bfcc21168d3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9600d4fd902c74c6d8b748c359eecc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a1f9600d4fd902c74c6d8b748c359eecc">obuffer</a></td></tr>
+<tr class="separator:a1f9600d4fd902c74c6d8b748c359eecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1486b3df6780a842552442a25634fcc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a1486b3df6780a842552442a25634fcc9">nonblocking</a></td></tr>
+<tr class="separator:a1486b3df6780a842552442a25634fcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5d88470fa16ed75a3b3ee195265caf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a5d5d88470fa16ed75a3b3ee195265caf">sfd</a></td></tr>
+<tr class="separator:a5d5d88470fa16ed75a3b3ee195265caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd57f219d186fda6496e966910b771ad"><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#afd57f219d186fda6496e966910b771ad">ssl</a></td></tr>
+<tr class="separator:afd57f219d186fda6496e966910b771ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5378304f2669fe75092bdd452ae651ff"><td class="memItemLeft" align="right" valign="top">SSL_CTX *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a5378304f2669fe75092bdd452ae651ff">ctx</a></td></tr>
+<tr class="separator:a5378304f2669fe75092bdd452ae651ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc2e7836da5485216419bbf17e49428"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a5fc2e7836da5485216419bbf17e49428">cipher</a></td></tr>
+<tr class="separator:a5fc2e7836da5485216419bbf17e49428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f0bbeefa25de686ac93887afa65895"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a61f0bbeefa25de686ac93887afa65895">last_tick</a></td></tr>
+<tr class="separator:a61f0bbeefa25de686ac93887afa65895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aab17086711ef6777a01ee0974b5ce8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a9aab17086711ef6777a01ee0974b5ce8">hostname</a></td></tr>
+<tr class="separator:a9aab17086711ef6777a01ee0974b5ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53cda56d5d61e3371bd7be2424e7ff07"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a53cda56d5d61e3371bd7be2424e7ff07">port</a></td></tr>
+<tr class="separator:a53cda56d5d61e3371bd7be2424e7ff07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8022a8002cfc6f394016546168ef4085"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a8022a8002cfc6f394016546168ef4085">bytes_out</a></td></tr>
+<tr class="separator:a8022a8002cfc6f394016546168ef4085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a7b3bbb4e6a9e271c8f19736b36b71d5d">bytes_in</a></td></tr>
+<tr class="separator:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The dispatcher class contains a set of std::functions representing hooked events that the user code is interested in. These are modified via the on_eventname style methods in the cluster class. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="abe9360d2e501ae40d513bf2a737758b8"></a>
+<div class="textblock"><p>Implements a discord client. Each <a class="el" href="a00075.html" title="Implements a discord client. Each discord_client connects to one shard and derives from a websocket c...">discord_client</a> connects to one shard and derives from a websocket client. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a26bc3c07e4b547d0d6e2c820d255fac7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00035.html">application_command_create_t</a>&amp; event)&gt; dpp::dispatcher::application_command_create</td>
+          <td class="memname">dpp::discord_client::discord_client </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00063.html">dpp::cluster</a> *&#160;</td>
+          <td class="paramname"><em>_cluster</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_shard_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_shards</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>_token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>intents</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>compressed</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild member remove event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor takes shard id, max shards and token. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
+    <tr><td class="paramname">_cluster</td><td>The owning cluster for this shard </td></tr>
+    <tr><td class="paramname">_shard_id</td><td>The ID of the shard to start </td></tr>
+    <tr><td class="paramname">_max_shards</td><td>The total number of shards across all clusters </td></tr>
+    <tr><td class="paramname">_token</td><td>The bot token to use for identifying to the websocket </td></tr>
+    <tr><td class="paramname">intents</td><td>Privileged intents to use, a bitmask of values from <a class="el" href="a00348.html#a0042c0fc8164da4239b977d5be8e2ef5" title="intents are a bitmask of allowed events on your websocket. ">dpp::intents</a> </td></tr>
+    <tr><td class="paramname">compressed</td><td>True if the received data will be gzip compressed </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="adeda9731343cd06bd13b6aaf716082f3"></a>
+<a class="anchor" id="ad7384d3ea3ee938b626e536f82a5f349"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dpp::discord_client::~discord_client </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5b40c6db59e7aed95958e2fec5f6b8ba"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00037.html">application_command_delete_t</a>&amp; event)&gt; dpp::dispatcher::application_command_delete</td>
+          <td class="memname">void dpp::discord_client::ClearQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event handler function pointer for application command delete event. </p>
+<p>Clear the outbound message queue. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3398642150ca79c8f266de83ee93aa30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::websocket_client::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Close websocket. </p>
+
+<p>Reimplemented from <a class="el" href="a00179.html#af20b792a7590e0b9457dec6cdb52568a">dpp::ssl_client</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7f26051b6ce8db8e57536ce4e035caf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::websocket_client::Connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>(Re)connect </p>
+
+<p>Reimplemented from <a class="el" href="a00179.html#a5d60fdbda3819c8e2c387b2d35b5e770">dpp::ssl_client</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a927122885bd65d221df2d5fae8d19a16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_client::connect_voice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect to a voice channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
+    <tr><td class="paramname">guild_id</td><td>Guild where the voice channel is </td></tr>
+    <tr><td class="paramname">channel_id</td><td>Channel ID of the voice channel </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a1f4cdfa198a3aa8cbbbf3f6bd5ffd447"></a>
+<a class="anchor" id="ab27c7a127b4bf2aaee24e406adfe3bb2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00039.html">application_command_update_t</a>&amp; event)&gt; dpp::dispatcher::application_command_update</td>
+          <td class="memname">void dpp::discord_client::disconnect_voice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event handler function pointer for application command update event. </p>
+<p>Disconnect from the connected voice channel on a guild. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
+    <tr><td class="paramname">guild_id</td><td>The guild who's voice channel you wish to disconnect from </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a95261b35417e81c65e9046eca9f0d57c"></a>
+<a class="anchor" id="a7743f641f2eabe2c83c3142d9b46a3aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_client::Error </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>errorcode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Handle a websocket error. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorcode</td><td>The error returned from the websocket </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="a00208.html#a65ca871fe6af9b131472890fc8d49cef">dpp::websocket_client</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa5d5654ce0b631d07045088ef347418"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dpp::ssl_client::get_bytes_in </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get total bytes received </p>
+
+</div>
+</div>
+<a class="anchor" id="aad4da6489c8f08030ca49c060a23740a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dpp::ssl_client::get_bytes_out </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get total bytes sent </p>
+
+</div>
+</div>
+<a class="anchor" id="aad490f19d38e26deff51dccbfd1c445c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00049.html">button_click_t</a>&amp; event)&gt; dpp::dispatcher::button_click</td>
+          <td class="memname">uint64_t dpp::discord_client::get_channel_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event handler function pointer for button click event. </p>
+<p>Get the Channel Count for this shard. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t channel count </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ade85ebcbf1a24079511436d504940fcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dpp::discord_client::get_decompressed_bytes_in </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get decompressed total bytes received </p>
+
+</div>
+</div>
+<a class="anchor" id="a24e750fd3a503a65b41ab6525b7b2e72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dpp::discord_client::get_guild_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Guild Count for this shard. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t guild count </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad74f28655846f30487d931bb1e3b1639"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dpp::discord_client::get_member_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Member Count for this shard. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t member count </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6fef02c819339ee1d088b39647d70957"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00189.html">dpp::utility::uptime</a> dpp::discord_client::get_uptime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the connection time of the shard. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="a00189.html" title="A class used to represent an uptime in hours, minutes, seconds and days, with helper functions to con...">dpp::utility::uptime</a> Detail of how long the shard has been connected for </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="add9c5c491ce195ec7f0127d6c8ec36b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00202.html">voiceconn</a> * dpp::discord_client::get_voice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca66e47e5e2d6fcd0bd17187465107db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t dpp::discord_client::GetQueueSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the size of the outbound message queue. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size of the queue </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad699ad1f6cefc29a1868fdfca530c550"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00348.html#af0e6c1fc5986facd4bb63a152ffa6057">ws_state</a> dpp::websocket_client::GetState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get websocket state </p><dl class="section return"><dt>Returns</dt><dd>websocket state </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a93e9461b921ebae46f3063d2503621d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::websocket_client::HandleBuffer </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes incoming frames from the SSL socket input buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
+    <tr><td class="paramname">buffer</td><td>The buffer contents. Can modify this value removing the head elements when processed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="a00179.html#af12864b28027d04480b3896dcb346884">dpp::ssl_client</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a189b8eb73439b8ac82bc132b9acde04c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_client::HandleEvent </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00348.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>raw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Handle an event (opcode 0) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Event name, e.g. MESSAGE_CREATE </td></tr>
+    <tr><td class="paramname">j</td><td>JSON object for the event content </td></tr>
+    <tr><td class="paramname">raw</td><td>Raw JSON event string </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="ac82562a94e2bca3629f6e0d7ad9868e2"></a>
+<a class="anchor" id="af4c5772b702123423fa5ad2a12d11804"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::discord_client::HandleFrame </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Handle JSON from the websocket. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The entire buffer content from the websocket client </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a frame has been handled </dd></dl>
+
+<p>Reimplemented from <a class="el" href="a00208.html#a7893b4f67b88472cf72dea1aa8f2c377">dpp::websocket_client</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af59b7db59d0fe39259efcb2380016ee4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00054.html">channel_create_t</a>&amp; event)&gt; dpp::dispatcher::channel_create</td>
+          <td class="memname">bool dpp::discord_client::is_connected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Event handler function pointer for guild channel create event. </p>
+<p>Returns true if the shard is connected. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if connected </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaeb4b65604a497f2ca93c4b62dcbdfb7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_client::log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00348.html#a7d48d478ccc3bffb34637bdb48f629c2">dpp::loglevel</a>&#160;</td>
+          <td class="paramname"><em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Log a message to whatever log the user is using. The logged message is passed up the chain to the on_log event in user code which can then do whatever it wants to do with it. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">severity</td><td>The log level from <a class="el" href="a00348.html#a7d48d478ccc3bffb34637bdb48f629c2" title="Log levels. ">dpp::loglevel</a> </td></tr>
+    <tr><td class="paramname">msg</td><td>The log message to output </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="a00179.html#a2ed6248d7b95dce6f33f9c6513b4151e">dpp::ssl_client</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0d9e1814c13c386ca55bc6d75708de0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_client::OneSecondTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Fires every second from the underlying socket I/O loop, used for sending heartbeats </p>
+
+<p>Reimplemented from <a class="el" href="a00208.html#af7d1abd5932c8436a2787ace54b38d50">dpp::websocket_client</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afbb1b789c7b365c1dfe776316d5a9829"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_client::QueueMessage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>to_front</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queue a message to be sent via the websocket. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
+    <tr><td class="paramname">j</td><td>The JSON data of the message to be sent </td></tr>
+    <tr><td class="paramname">to_front</td><td>If set to true, will place the message at the front of the queue not the back (this is for urgent messages such as heartbeat, presence, so they can take precedence over chunk requests etc) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a941fe0c8a4f52c1bf82c34a5c38d86b2"></a>
+<a class="anchor" id="ad6a736a578cc10fa747ca1e2875fbdf5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::ssl_client::ReadLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nonblocking I/O loop. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae768cabb169f9501bba20704867110e5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00056.html">channel_delete_t</a>&amp; event)&gt; dpp::dispatcher::channel_delete</td>
+          <td class="memname">void dpp::discord_client::Run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Start and monitor I/O loop </p>
 
-<p>Event handler function pointer for channel delete event. </p>
+</div>
+</div>
+<a class="anchor" id="aac65765349cbd3e787c0fd2af576ec6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::websocket_client::write </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write to websocket. Encapsulates data in frames if the status is CONNECTED. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
+    <tr><td class="paramname">data</td><td>The data to send. </td></tr>
   </table>
   </dd>
 </dl>
 
+<p>Reimplemented from <a class="el" href="a00179.html#a4d9bde88c0c1926be915c6d232506176">dpp::ssl_client</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a8a65cd0820a545d14b01324cf1508bc7"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ae0e5e0799448bf29506bfcc21168d3fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::ssl_client::buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Input buffer received from openssl </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b3bbb4e6a9e271c8f19736b36b71d5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dpp::ssl_client::bytes_in</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bytes in </p>
+
+</div>
+</div>
+<a class="anchor" id="a8022a8002cfc6f394016546168ef4085"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dpp::ssl_client::bytes_out</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bytes out </p>
+
+</div>
+</div>
+<a class="anchor" id="a5fc2e7836da5485216419bbf17e49428"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::ssl_client::cipher</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>SSL cipher in use </p>
+
+</div>
+</div>
+<a class="anchor" id="ad474846a37755a4b1064a5c3a3480fbc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00058.html">channel_pins_update_t</a>&amp; event)&gt; dpp::dispatcher::channel_pins_update</td>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="a00202.html">voiceconn</a>*&gt; dpp::discord_client::connecting_voice_channels</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for channel pins update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>List of voice channels we are connecting to keyed by guild id </p>
 
 </div>
 </div>
-<a class="anchor" id="ad4a6151ce96b42aef5d3ceb6d9f55ee5"></a>
+<a class="anchor" id="afed78d2e1b09e006ede8b4690895a866"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00060.html">channel_update_t</a>&amp; event)&gt; dpp::dispatcher::channel_update</td>
+          <td class="memname">class <a class="el" href="a00063.html">dpp::cluster</a>* dpp::discord_client::creator</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for channel update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Owning cluster </p>
 
 </div>
 </div>
-<a class="anchor" id="a171442fd458ad1a423ac48e44f269e20"></a>
+<a class="anchor" id="a5378304f2669fe75092bdd452ae651ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL_CTX* dpp::ssl_client::ctx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OpenSSL context </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2b75ebfaeb8bbe40741a1ad95e58c56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;int()&gt; dpp::ssl_client::custom_readable_fd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attaching an additional file descriptor to this function will send notifications when there is data to read. </p>
+<p>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! Returning -1 means that you don't want to be notified. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf27074007db73b13663ab985f2221e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; dpp::ssl_client::custom_readable_ready</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This event will be called when you can read from the custom fd. </p>
+
+</div>
+</div>
+<a class="anchor" id="a32a0f4e6e46da398d77b33e55e3d4ced"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;int()&gt; dpp::ssl_client::custom_writeable_fd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attaching an additional file descriptor to this function will send notifications when you are able to write to the socket. </p>
+<p>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! You should toggle this to -1 when you do not have anything to write otherwise it'll keep triggering repeatedly (it is level triggered). </p>
+
+</div>
+</div>
+<a class="anchor" id="a5eac615119a5068c1634e3729752ddb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; dpp::ssl_client::custom_writeable_ready</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This event will be called when you can write to a custom fd. </p>
+
+</div>
+</div>
+<a class="anchor" id="a62f72c7433043cbb61fe1917efabd2f7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00089.html">guild_ban_add_t</a>&amp; event)&gt; dpp::dispatcher::guild_ban_add</td>
+          <td class="memname">uint32_t dpp::discord_client::heartbeat_interval</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild ban add event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Heartbeat interval for sending heartbeat keepalive </p>
 
 </div>
 </div>
-<a class="anchor" id="a3cc9e992868216001c607d0473425795"></a>
+<a class="anchor" id="a9aab17086711ef6777a01ee0974b5ce8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::ssl_client::hostname</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hostname connected to </p>
+
+</div>
+</div>
+<a class="anchor" id="acdea0fb06605d44be0161991c5d68e58"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00091.html">guild_ban_remove_t</a>&amp; event)&gt; dpp::dispatcher::guild_ban_remove</td>
+          <td class="memname">uint32_t dpp::discord_client::intents</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild ban remove event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Privileged gateway intents </p>
 
 </div>
 </div>
-<a class="anchor" id="a1f70d6226670de148013d4ad7281afe9"></a>
+<a class="anchor" id="ac6ef401a0b38b2cce833d184ddf38bbb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00093.html">guild_create_t</a>&amp; event)&gt; dpp::dispatcher::guild_create</td>
+          <td class="memname">time_t dpp::discord_client::last_heartbeat</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild create event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Last heartbeat </p>
 
 </div>
 </div>
-<a class="anchor" id="a8403bfd35d479d62884057b5561ebb6a"></a>
+<a class="anchor" id="a611a05e14a49affa23f58ea173d829ba"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00095.html">guild_delete_t</a>&amp; event)&gt; dpp::dispatcher::guild_delete</td>
+          <td class="memname">time_t dpp::discord_client::last_heartbeat_ack</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild delete event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Last heartbeat ACK (opcode 11) </p>
 
 </div>
 </div>
-<a class="anchor" id="ac63839af90854dbe6a9fbb801075d862"></a>
+<a class="anchor" id="a8dc9f84c9b65a58f8e9eea6326a424bd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00097.html">guild_emojis_update_t</a>&amp; event)&gt; dpp::dispatcher::guild_emojis_update</td>
+          <td class="memname">uint64_t dpp::discord_client::last_seq</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild emojis update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Last sequence number received, for resumes and pings </p>
 
 </div>
 </div>
-<a class="anchor" id="a866a5a142d35804453929dcc153435d6"></a>
+<a class="anchor" id="a61f0bbeefa25de686ac93887afa65895"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t dpp::ssl_client::last_tick</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For timers </p>
+
+</div>
+</div>
+<a class="anchor" id="a7e8e56675006b1af1c09d8de1519f001"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00099.html">guild_integrations_update_t</a>&amp; event)&gt; dpp::dispatcher::guild_integrations_update</td>
+          <td class="memname">uint32_t dpp::discord_client::max_shards</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild integrations update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Total number of shards </p>
 
 </div>
 </div>
-<a class="anchor" id="a9e95a46331f7dadc12210bee432a49e6"></a>
+<a class="anchor" id="a1486b3df6780a842552442a25634fcc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::ssl_client::nonblocking</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True if in nonblocking mode. The socket switches to nonblocking mode once ReadLoop is called. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f9600d4fd902c74c6d8b748c359eecc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::ssl_client::obuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Output buffer for sending to openssl </p>
+
+</div>
+</div>
+<a class="anchor" id="a53cda56d5d61e3371bd7be2424e7ff07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::ssl_client::port</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Port connected to </p>
+
+</div>
+</div>
+<a class="anchor" id="a03ffb74d2fa81b0e6f0864848151fa90"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00101.html">guild_join_request_delete_t</a>&amp; event)&gt; dpp::dispatcher::guild_join_request_delete</td>
+          <td class="memname">bool dpp::discord_client::ready</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild join request delete event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>True if READY or RESUMED has been received </p>
 
 </div>
 </div>
-<a class="anchor" id="a4a862f7dcddef43cc9b5bfe06d6577bb"></a>
+<a class="anchor" id="af002768a9defc98dc3fcf777a95d8bcf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00104.html">guild_member_add_t</a>&amp; event)&gt; dpp::dispatcher::guild_member_add</td>
+          <td class="memname">uint32_t dpp::discord_client::reconnects</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild member add event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Reconnection count </p>
 
 </div>
 </div>
-<a class="anchor" id="a99f8ce259906ef7912c8509ad3ff70ac"></a>
+<a class="anchor" id="a575bb766c7c9e8ea510392265c0abba6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00106.html">guild_member_remove_t</a>&amp; event)&gt; dpp::dispatcher::guild_member_remove</td>
+          <td class="memname">uint32_t dpp::discord_client::resumes</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild member remove event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Resume count </p>
 
 </div>
 </div>
-<a class="anchor" id="ac2521b114ee75a9d4f0aa36f9aba63f2"></a>
+<a class="anchor" id="a66922f8fbb2df8c1c92744f4eb524a52"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00108.html">guild_member_update_t</a>&amp; event)&gt; dpp::dispatcher::guild_member_update</td>
+          <td class="memname">std::string dpp::discord_client::sessionid</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild member update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Discord session id </p>
 
 </div>
 </div>
-<a class="anchor" id="a299d7f48d2cadf09b389850ee115fc5e"></a>
+<a class="anchor" id="a5d5d88470fa16ed75a3b3ee195265caf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dpp::ssl_client::sfd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Raw file descriptor of connection </p>
+
+</div>
+</div>
+<a class="anchor" id="aa11253c28f842aad3939e9d3138a0c6d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00110.html">guild_members_chunk_t</a>&amp; event)&gt; dpp::dispatcher::guild_members_chunk</td>
+          <td class="memname">uint32_t dpp::discord_client::shard_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild members chunk event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Shard ID of this client </p>
 
 </div>
 </div>
-<a class="anchor" id="ac698fd6fd317a93f4d1feb7e8710ee4f"></a>
+<a class="anchor" id="afd57f219d186fda6496e966910b771ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL* dpp::ssl_client::ssl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OpenSSL session </p>
+
+</div>
+</div>
+<a class="anchor" id="a48586d5bfd6ce1e8f58770c7bfcc5c27"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00112.html">guild_role_create_t</a>&amp; event)&gt; dpp::dispatcher::guild_role_create</td>
+          <td class="memname">std::thread::native_handle_type dpp::discord_client::thread_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild role create event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Thread ID </p>
 
 </div>
 </div>
-<a class="anchor" id="ae134fc0cbe3f4537ce557f72571c8eed"></a>
+<a class="anchor" id="ac6f6acb88970deecd85236fc0df8be78"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00114.html">guild_role_delete_t</a>&amp; event)&gt; dpp::dispatcher::guild_role_delete</td>
+          <td class="memname">std::string dpp::discord_client::token</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild role delete event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Discord bot token </p>
 
 </div>
 </div>
-<a class="anchor" id="a276a38f9d9e9a89c55f07c2c20a7ea9c"></a>
+<a class="anchor" id="a4ef561c63eecce36ba9384bbb70e8f19"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00116.html">guild_role_update_t</a>&amp; event)&gt; dpp::dispatcher::guild_role_update</td>
+          <td class="memname">std::mutex dpp::discord_client::voice_mutex</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild role update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Mutex for voice connections map </p>
 
 </div>
 </div>
-<a class="anchor" id="a0fbab68118106ac916dc8ce2d5ffd825"></a>
+<a class="anchor" id="a5e39136f09297f7ba0ab6a449e435f3d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00118.html">guild_update_t</a>&amp; event)&gt; dpp::dispatcher::guild_update</td>
+          <td class="memname">double dpp::discord_client::websocket_ping</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Event handler function pointer for guild update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a9156aeb607b633a0beafb0754840bde2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00128.html">integration_create_t</a>&amp; event)&gt; dpp::dispatcher::integration_create</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for integration create event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a32054b6807a7abcd456fd8f7ad17f4c3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00130.html">integration_delete_t</a>&amp; event)&gt; dpp::dispatcher::integration_delete</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for integration delete event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a650bafe23ae42306008046f8cf3de2a5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00132.html">integration_update_t</a>&amp; event)&gt; dpp::dispatcher::integration_update</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for integration update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a40072713dd30b8e37200d3ec91a1d1b2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00135.html">interaction_create_t</a>&amp; event)&gt; dpp::dispatcher::interaction_create</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for interaction create event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a811c8990061c5ce56d221f767ec0576d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00139.html">invite_create_t</a>&amp; event)&gt; dpp::dispatcher::invite_create</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for invite create event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="acff8bbb12c4d123fbd0b57fb3b48962a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00141.html">invite_delete_t</a>&amp; event)&gt; dpp::dispatcher::invite_delete</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for invite delete event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa3e934f108231fa426cbcd1956e72b1c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00142.html">log_t</a>&amp; event)&gt; dpp::dispatcher::log</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for log event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8a74c97a762054030a2423c01d3010de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00147.html">message_create_t</a>&amp; event)&gt; dpp::dispatcher::message_create</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for message create event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ae8816e6679fff4b73ccffa8fa46caa08"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00151.html">message_delete_t</a>&amp; event)&gt; dpp::dispatcher::message_delete</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for message delete event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ace33de42639a464557e525450a5835b7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00150.html">message_delete_bulk_t</a>&amp; event)&gt; dpp::dispatcher::message_delete_bulk</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for message delete bulk event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a67f34ecc15f698db28f340d8801f6685"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00153.html">message_reaction_add_t</a>&amp; event)&gt; dpp::dispatcher::message_reaction_add</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for message reaction add event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a101b1939b506bbb33d711e50c46bf391"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00159.html">message_reaction_remove_t</a>&amp; event)&gt; dpp::dispatcher::message_reaction_remove</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for message reaction remove event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a7ddbf5711d20ac6de1638f8a1392f70a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00156.html">message_reaction_remove_all_t</a>&amp; event)&gt; dpp::dispatcher::message_reaction_remove_all</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for message reaction remove all event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a2ee8b4cb141a7c23acfae0c758027486"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00158.html">message_reaction_remove_emoji_t</a>&amp; event)&gt; dpp::dispatcher::message_reaction_remove_emoji</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for message reaction remove emoji event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aff7db3b3fd784e67a460a67147f2c315"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00161.html">message_update_t</a>&amp; event)&gt; dpp::dispatcher::message_update</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for message update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a21e0bbce14f6aba7065eeb20dcf4ae8d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00166.html">presence_update_t</a>&amp; event)&gt; dpp::dispatcher::presence_update</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for presence update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a65719ce2641b1ab281f499ea116bc137"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00170.html">ready_t</a>&amp; event)&gt; dpp::dispatcher::ready</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for ready event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a95bc992af2a7efc1c1c524eeab354990"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00173.html">resumed_t</a>&amp; event)&gt; dpp::dispatcher::resumed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for resumed event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa405a83fbbbd434010b838b443d61897"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00179.html">stage_instance_create_t</a>&amp; event)&gt; dpp::dispatcher::stage_instance_create</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for stage instance create event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a83540a056df758f8e9847c1bc8d9ba06"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00181.html">stage_instance_delete_t</a>&amp; event)&gt; dpp::dispatcher::stage_instance_delete</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for stage instance delete event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="af63372a6426fa4aacd0eecfee5f4ac48"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00186.html">typing_start_t</a>&amp; event)&gt; dpp::dispatcher::typing_start</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for typing start event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aac44804e681d34dc35bd98a61ab41e73"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00190.html">user_update_t</a>&amp; event)&gt; dpp::dispatcher::user_update</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for user update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a05479a227ee0b2e3a9fc110fc22a1edc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00191.html">voice_buffer_send_t</a>&amp; event)&gt; dpp::dispatcher::voice_buffer_send</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for voice buffer send event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a9c2f74f1e854a61ec6795ab0e3f7c40b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00192.html">voice_ready_t</a>&amp; event)&gt; dpp::dispatcher::voice_ready</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for voice ready event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="af52035826c4e3be4f6e6ac641389bee9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00193.html">voice_receive_t</a>&amp; event)&gt; dpp::dispatcher::voice_receive</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for voice receieve event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ab4635617a097fd90d9a9782066b7c8b3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00195.html">voice_server_update_t</a>&amp; event)&gt; dpp::dispatcher::voice_server_update</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for voice server update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a1980829c218c2b75b608769009bdfd6f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00197.html">voice_state_update_t</a>&amp; event)&gt; dpp::dispatcher::voice_state_update</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for voice state update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ab604386c5676c63901dff045a46b4aae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00198.html">voice_track_marker_t</a>&amp; event)&gt; dpp::dispatcher::voice_track_marker</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for voice track marker event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ad9734f36f8ed672bdcc0efc4e1125b08"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00199.html">voice_user_talking_t</a>&amp; event)&gt; dpp::dispatcher::voice_user_talking</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for voice user talking event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a56d9099bf4647dc0ddb98d03b16613d6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(const <a class="el" href="a00205.html">webhooks_update_t</a>&amp; event)&gt; dpp::dispatcher::webhooks_update</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event handler function pointer for webhooks update event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>Event parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Websocket latency in fractional seconds </p>
 
 </div>
 </div>
@@ -1405,7 +1604,7 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00345.html">dpp</a></li><li class="navelem"><a class="el" href="a00075.html">dispatcher</a></li>
+    <li class="navelem"><a class="el" href="a00348.html">dpp</a></li><li class="navelem"><a class="el" href="a00075.html">discord_client</a></li>
   </ul>
 </div>
 </body>

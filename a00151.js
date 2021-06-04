@@ -1,7 +1,4 @@
 var a00151 =
 [
-    [ "message_delete_t", "a00151.html#a14892cbdd39d84894747b4a4e225bb48", null ],
-    [ "deleted", "a00151.html#a9bbdf2268285285714ef5635d1ef4c04", null ],
-    [ "from", "a00151.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
-    [ "raw_event", "a00151.html#a2d4777d1049d31ed943ecebfa2de7db9", null ]
+    [ "handle", "a00151.html#a4c99cabc95d797105cad96d6ef85c60c", null ]
 ];

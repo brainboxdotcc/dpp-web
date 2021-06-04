@@ -1,8 +1,7 @@
 var a00068 =
 [
-    [ "channel_id", "a00068.html#a98d2f56173783173717ee1ef90f6e424", null ],
-    [ "command_id", "a00068.html#a49e99fcfc393681af05f3e4bc8a7b360", null ],
-    [ "command_token", "a00068.html#a8bec40f2cc0e419489921c4a222353df", null ],
-    [ "guild_id", "a00068.html#a8ed068737789c5230db85047d9499b11", null ],
-    [ "issuer", "a00068.html#ad81aa8dca95492d9e26488cb22d4df45", null ]
+    [ "command_option_choice", "a00068.html#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb", null ],
+    [ "command_option_choice", "a00068.html#a2bb4415c9d27246156e8cc368d131767", null ],
+    [ "name", "a00068.html#a6e4ceb9707c454d74d25a49dbcdb25ee", null ],
+    [ "value", "a00068.html#a70021160d60b6403a353b302d97123ff", null ]
 ];

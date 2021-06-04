@@ -1,8 +1,10 @@
 var a00170 =
 [
-    [ "ready_t", "a00170.html#aebf5fe086e4ee6921042fe798d58d72a", null ],
-    [ "from", "a00170.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
-    [ "raw_event", "a00170.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
-    [ "session_id", "a00170.html#a23affdff20fde573d1296cd21c3d56c8", null ],
-    [ "shard_id", "a00170.html#ad031e4a6c0354ac8ad28b61045c2c09d", null ]
+    [ "reaction", "a00170.html#a7809f620d77f3da97ba34b65fd6b5a5d", null ],
+    [ "reaction", "a00170.html#ae9d457d1976ecdcb04cc4ccced45084e", null ],
+    [ "~reaction", "a00170.html#a33c3c809d9d08afb794be04f573c3d59", null ],
+    [ "count", "a00170.html#ac7e46baa7c5cd668e43198670579af6e", null ],
+    [ "emoji_id", "a00170.html#a10ee4c6e61a76d6ad8e9c6d52f123073", null ],
+    [ "emoji_name", "a00170.html#a9f0dd8c76b3370670547a34367ea3c30", null ],
+    [ "me", "a00170.html#aab4f4848e93102e1698e29ee0d1e4c58", null ]
 ];

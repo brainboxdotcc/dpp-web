@@ -1,7 +1,7 @@
 var a00066 =
 [
-    [ "command_option_choice", "a00066.html#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb", null ],
-    [ "command_option_choice", "a00066.html#a2bb4415c9d27246156e8cc368d131767", null ],
-    [ "name", "a00066.html#a6e4ceb9707c454d74d25a49dbcdb25ee", null ],
-    [ "value", "a00066.html#a70021160d60b6403a353b302d97123ff", null ]
+    [ "id", "a00066.html#a6e1ddf18af43a38f4385ed418e5bfa7f", null ],
+    [ "name", "a00066.html#a526dfc98a7e142fc8c28a870e6981853", null ],
+    [ "options", "a00066.html#a1888851c94c4f2316b20c019c171121b", null ],
+    [ "resolved", "a00066.html#abb6e1caad1c42ecdf4679fd59991d872", null ]
 ];

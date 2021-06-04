@@ -1,11 +1,13 @@
 var a00067 =
 [
-    [ "commandhandler", "a00067.html#a7300779eb1aaf04041e48c756abafafb", null ],
-    [ "~commandhandler", "a00067.html#a62373f8cdd5b887eb78eb4f4cb265baf", null ],
-    [ "add_command", "a00067.html#a791ed0c75ef77306af84be30ded619f8", null ],
-    [ "add_prefix", "a00067.html#a69ce2bb96adb1a658b3a29c37274f2bb", null ],
-    [ "reply", "a00067.html#a09893dbf101b7d0082b0a13e801a9db9", null ],
-    [ "route", "a00067.html#acecd44c69a7cee36d1d12aa5b0354d0d", null ],
-    [ "route", "a00067.html#a0438c6a4b44fe2e5101debe846cf0894", null ],
-    [ "set_owner", "a00067.html#a8640d327288a6dd1c5fdbde85726e7de", null ]
+    [ "command_option", "a00067.html#a7b9a89420e48ccd85cfdc6deaae63e50", null ],
+    [ "command_option", "a00067.html#a7059a6049828707b2eda2c5a649aeb79", null ],
+    [ "add_choice", "a00067.html#a760d208354981f2866d6788b67dc4026", null ],
+    [ "add_option", "a00067.html#aa5c54bbb1e3cf93a9e18ea21f789cf2c", null ],
+    [ "choices", "a00067.html#a05f44f181203ed332696b789c4ef7c6f", null ],
+    [ "description", "a00067.html#a82debcf96e4265cf7d8ea6b2aa47e481", null ],
+    [ "name", "a00067.html#ac2d487bd055fecbe1c566742def38bb7", null ],
+    [ "options", "a00067.html#a0f238f1e8bb393b2c37b47c6fb564952", null ],
+    [ "required", "a00067.html#ad203ab30a75ce7508f565f5821301bdb", null ],
+    [ "type", "a00067.html#adbb960edfa14ae19545d64397a785ab3", null ]
 ];

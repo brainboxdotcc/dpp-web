@@ -1,6 +1,6 @@
 var a00041 =
 [
-    [ "key", "a00041.html#abb0f7485a2d413476f1f8663fe1a8014", null ],
-    [ "new_value", "a00041.html#a7241b5b440781dccabfbc24c154de9cb", null ],
-    [ "old_value", "a00041.html#a025a06b03f1592b67bd59310bcadb946", null ]
+    [ "application_command_update_t", "a00041.html#ab1b3a755a92dabe7f150ae66cb4b649c", null ],
+    [ "from", "a00041.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
+    [ "raw_event", "a00041.html#a2d4777d1049d31ed943ecebfa2de7db9", null ]
 ];

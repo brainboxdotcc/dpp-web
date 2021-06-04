@@ -1,5 +1,8 @@
 var a00050 =
 [
-    [ "component_type", "a00050.html#a704acd2f69018a08d4ff47d3be6d3c7e", null ],
-    [ "custom_id", "a00050.html#ad172ceb8ae05c99c9b048bafc0483a82", null ]
+    [ "limit", "a00050.html#a092991348f1588a752cae246db4b30f6", null ],
+    [ "remaining", "a00050.html#ae8f8eca07afcc928040496878a4c2281", null ],
+    [ "reset_after", "a00050.html#a69e733a2599fa42777c7cd302219d1ab", null ],
+    [ "retry_after", "a00050.html#a459a7edb477440e6ad2c9d42cc30f71c", null ],
+    [ "timestamp", "a00050.html#a3e2e9b5b75af791b18a92f466b75020c", null ]
 ];

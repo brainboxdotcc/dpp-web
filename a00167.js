@@ -1,8 +1,4 @@
 var a00167 =
 [
-    [ "build_json", "a00167.html#afeb430aef6bba13aa4770842c1b42ccf", null ],
-    [ "fill_from_json", "a00167.html#af14af138229a9c1205c97766d640a503", null ],
-    [ "compute_prune_count", "a00167.html#a948f8af4cf30f7e0a35978e36e1d3601", null ],
-    [ "days", "a00167.html#a981d093ed62361879e862c6e4b98556a", null ],
-    [ "include_roles", "a00167.html#a83cf2b149716078a0379f97b2c47526c", null ]
+    [ "handle", "a00167.html#a88d2eddd8c88200f6ac9968af9f6fe24", null ]
 ];

@@ -1,20 +1,15 @@
 var a00202 =
 [
-    [ "voicestate", "a00202.html#a2cffc101e4bff3c2aa40f5efc9fee895", null ],
-    [ "~voicestate", "a00202.html#a29e5fdd1ec931b6ad1feed0094a1225f", null ],
-    [ "build_json", "a00202.html#a5540c3997db9d636991472684e2864e1", null ],
-    [ "fill_from_json", "a00202.html#a24cf57b27275f7e5c650f581da9c469d", null ],
-    [ "is_deaf", "a00202.html#ada57c9490c750cd624746346e10394fb", null ],
-    [ "is_mute", "a00202.html#a216776aa1bd956523f9667041e5cef55", null ],
-    [ "is_self_deaf", "a00202.html#a8b07092f4d7a76db4c18851a26a58e97", null ],
-    [ "is_self_mute", "a00202.html#a252f5860bad2ecaf89999cc1ccc88bfc", null ],
-    [ "is_supressed", "a00202.html#a6aac3d2a85d63a432d911d7d8711a833", null ],
-    [ "self_stream", "a00202.html#a14bfe38e85f94b03a773ba098384f6d9", null ],
-    [ "self_video", "a00202.html#a3e344995e2ab027322c3174bd00c9c31", null ],
-    [ "channel_id", "a00202.html#a0ea73d3fd39463142c315005321e28f5", null ],
-    [ "flags", "a00202.html#abf58f2ac3357bc012b7bf617309919c9", null ],
-    [ "guild_id", "a00202.html#ae7a837b367c89d55482d448a4a6eb702", null ],
-    [ "session_id", "a00202.html#adda1e3192a8dbe103f5b5c29b29ca74b", null ],
-    [ "shard", "a00202.html#a94e4a9ddbfb2368a4d06c1cd1f538141", null ],
-    [ "user_id", "a00202.html#a2a56a68ec5590ac218711f72893013fd", null ]
+    [ "voiceconn", "a00202.html#a2238afc107e4e97daa0693c81fe150fd", null ],
+    [ "voiceconn", "a00202.html#a7b0b033f371d814cf04e09ac7cf08ac1", null ],
+    [ "~voiceconn", "a00202.html#a5200c6bba0b6219a0cdd29c6590d0c98", null ],
+    [ "connect", "a00202.html#a596e75341bfd350810241d350e7da112", null ],
+    [ "disconnect", "a00202.html#a462b82f234c78686edb38ba9c301d9bb", null ],
+    [ "is_active", "a00202.html#a8bb23d980d80e0d61c1cadc61bacf278", null ],
+    [ "is_ready", "a00202.html#a7dd6504b406b5e08f9fd9337a275568d", null ],
+    [ "channel_id", "a00202.html#a9ae04af7ba5f3ed36e248ece6f2ad25b", null ],
+    [ "session_id", "a00202.html#aaaae5391243bb862501088170037b041", null ],
+    [ "token", "a00202.html#a9c4ef16e1fb1c077f6adb18ce5ac9a41", null ],
+    [ "voiceclient", "a00202.html#a812e4cdee1fc7ed2a024d78161c84f86", null ],
+    [ "websocket_hostname", "a00202.html#a9c0868d279364472bf0c86a4b5ae8f1b", null ]
 ];
