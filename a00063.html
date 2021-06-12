@@ -457,6 +457,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57a1957b81c9606850e730c477dd44aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a57a1957b81c9606850e730c477dd44aa">guild_edit_member</a> (const <a class="el" href="a00104.html">guild_member</a> &amp;gm, <a class="el" href="a00348.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a57a1957b81c9606850e730c477dd44aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit the properties of an existing guild member.  <a href="#a57a1957b81c9606850e730c477dd44aa">More...</a><br /></td></tr>
 <tr class="separator:a57a1957b81c9606850e730c477dd44aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40665f55528cfc1077b8adcae2d49086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a40665f55528cfc1077b8adcae2d49086">guild_member_move</a> (const <a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, const <a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const <a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, <a class="el" href="a00348.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a40665f55528cfc1077b8adcae2d49086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the guild member to a other voice channel, if member is connected to one.  <a href="#a40665f55528cfc1077b8adcae2d49086">More...</a><br /></td></tr>
+<tr class="separator:a40665f55528cfc1077b8adcae2d49086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa30ff4f80815720bafab51f9bc86b089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#aa30ff4f80815720bafab51f9bc86b089">guild_set_nickname</a> (<a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const std::string &amp;nickname, <a class="el" href="a00348.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:aa30ff4f80815720bafab51f9bc86b089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change current user nickname.  <a href="#aa30ff4f80815720bafab51f9bc86b089">More...</a><br /></td></tr>
 <tr class="separator:aa30ff4f80815720bafab51f9bc86b089"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3662,6 +3665,55 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">guild_id</td><td>Guild ID to remove role from user on </td></tr>
     <tr><td class="paramname">user_id</td><td>User ID to remove role from </td></tr>
     <tr><td class="paramname">role_id</td><td>Role to remove </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a40665f55528cfc1077b8adcae2d49086"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_member_move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00348.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00348.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves the guild member to a other voice channel, if member is connected to one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>Id of the channel to which the user is used </td></tr>
+    <tr><td class="paramname">guild_id</td><td>Guild id to which the user is connected </td></tr>
+    <tr><td class="paramname">user_id</td><td>User id, who should be moved </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>

@@ -92,6 +92,7 @@ var searchData=
   ['guild_5fmember_5fadd_5ft',['guild_member_add_t',['../a00106.html#a872dde4fcbcebf6fb56208aa201cb630',1,'dpp::guild_member_add_t']]],
   ['guild_5fmember_5fdelete',['guild_member_delete',['../a00063.html#a58be46d2934738b32229d984c266a4b7',1,'dpp::cluster']]],
   ['guild_5fmember_5fdelete_5frole',['guild_member_delete_role',['../a00063.html#af0289849ef90572a331e68fc84075cb2',1,'dpp::cluster']]],
+  ['guild_5fmember_5fmove',['guild_member_move',['../a00063.html#a40665f55528cfc1077b8adcae2d49086',1,'dpp::cluster']]],
   ['guild_5fmember_5fremove_5ft',['guild_member_remove_t',['../a00108.html#abfcc390e07732a43ed7ced93ff7ea9bb',1,'dpp::guild_member_remove_t']]],
   ['guild_5fmember_5fupdate_5ft',['guild_member_update_t',['../a00110.html#afd6b31eb3846eac32fb45928353c69e9',1,'dpp::guild_member_update_t']]],
   ['guild_5fmembers_5fchunk_5ft',['guild_members_chunk_t',['../a00112.html#aa40accc015feb69e1ef124daba2ecc2a',1,'dpp::guild_members_chunk_t']]],

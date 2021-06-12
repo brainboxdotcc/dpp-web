@@ -80,6 +80,7 @@ var a00063 =
     [ "guild_member_add_role", "a00063.html#aa9dcac8996e5eaad9b1eed9983ecefef", null ],
     [ "guild_member_delete", "a00063.html#a58be46d2934738b32229d984c266a4b7", null ],
     [ "guild_member_delete_role", "a00063.html#af0289849ef90572a331e68fc84075cb2", null ],
+    [ "guild_member_move", "a00063.html#a40665f55528cfc1077b8adcae2d49086", null ],
     [ "guild_modify_integration", "a00063.html#afb07fc90589ee936f73da5551cff1255", null ],
     [ "guild_set_nickname", "a00063.html#aa30ff4f80815720bafab51f9bc86b089", null ],
     [ "guild_sync_integration", "a00063.html#a58d976f9d101225e05482db7b739f986", null ],
