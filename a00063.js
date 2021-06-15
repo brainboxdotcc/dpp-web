@@ -1,6 +1,8 @@
 var a00063 =
 [
     [ "cluster", "a00063.html#ae141341b373554f02ab4847fba1ecee7", null ],
+    [ "cluster", "a00063.html#a6b0b523f89559b4ce204ca9ed9693d79", null ],
+    [ "cluster", "a00063.html#a2d957f52245734f6d44444af8380c952", null ],
     [ "~cluster", "a00063.html#a270be0ab59aff4f335ef3f4af7559d92", null ],
     [ "channel_create", "a00063.html#ad73706406e2f99b9a580319e389777be", null ],
     [ "channel_delete", "a00063.html#ad3b00dafa69984d444422b500c3d18b3", null ],

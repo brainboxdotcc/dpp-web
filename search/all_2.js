@@ -53,7 +53,7 @@ var searchData=
   ['clearqueue',['ClearQueue',['../a00075.html#a5b40c6db59e7aed95958e2fec5f6b8ba',1,'dpp::discord_client']]],
   ['close',['close',['../a00179.html#af20b792a7590e0b9457dec6cdb52568a',1,'dpp::ssl_client::close()'],['../a00208.html#a3398642150ca79c8f266de83ee93aa30',1,'dpp::websocket_client::close()']]],
   ['cluster',['cluster',['../a00063.html',1,'dpp']]],
-  ['cluster',['cluster',['../a00063.html#ae141341b373554f02ab4847fba1ecee7',1,'dpp::cluster']]],
+  ['cluster',['cluster',['../a00063.html#ae141341b373554f02ab4847fba1ecee7',1,'dpp::cluster::cluster(const std::string &amp;token, uint32_t intents=i_default_intents, uint32_t shards=0, uint32_t cluster_id=0, uint32_t maxclusters=1, bool compressed=true, cache_policy_t policy=cp_aggressive)'],['../a00063.html#a6b0b523f89559b4ce204ca9ed9693d79',1,'dpp::cluster::cluster(const cluster &amp;)=delete'],['../a00063.html#a2d957f52245734f6d44444af8380c952',1,'dpp::cluster::cluster(const cluster &amp;&amp;)=delete']]],
   ['cluster_5fid',['cluster_id',['../a00063.html#a5155862c1d7267c7f4ee8781ff3e8d7f',1,'dpp::cluster']]],
   ['cmd_5fresult_5ft',['cmd_result_t',['../a00350.html#a36d13f96f86debc010768d4c812e3fa6',1,'dpp::utility']]],
   ['co_5fboolean',['co_boolean',['../a00348.html#abc401d86119c6443bf72d736857c1a58a804453a3a94d413b634544e57f5ae2cc',1,'dpp']]],
