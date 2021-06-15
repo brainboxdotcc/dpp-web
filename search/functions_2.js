@@ -20,7 +20,7 @@ var searchData=
   ['channels_5fget',['channels_get',['../a00063.html#a24e67431b79cc2c3d0f12d59afd5a1c8',1,'dpp::cluster']]],
   ['clearqueue',['ClearQueue',['../a00075.html#a5b40c6db59e7aed95958e2fec5f6b8ba',1,'dpp::discord_client']]],
   ['close',['close',['../a00179.html#af20b792a7590e0b9457dec6cdb52568a',1,'dpp::ssl_client::close()'],['../a00208.html#a3398642150ca79c8f266de83ee93aa30',1,'dpp::websocket_client::close()']]],
-  ['cluster',['cluster',['../a00063.html#a5f867a28d0abe02bd4286fad068662ab',1,'dpp::cluster']]],
+  ['cluster',['cluster',['../a00063.html#ae141341b373554f02ab4847fba1ecee7',1,'dpp::cluster']]],
   ['command_5foption',['command_option',['../a00067.html#a7b9a89420e48ccd85cfdc6deaae63e50',1,'dpp::command_option::command_option()=default'],['../a00067.html#a7059a6049828707b2eda2c5a649aeb79',1,'dpp::command_option::command_option(command_option_type t, const std::string &amp;name, const std::string &amp;description, bool required=false)']]],
   ['command_5foption_5fchoice',['command_option_choice',['../a00068.html#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb',1,'dpp::command_option_choice::command_option_choice()=default'],['../a00068.html#a2bb4415c9d27246156e8cc368d131767',1,'dpp::command_option_choice::command_option_choice(const std::string &amp;n, command_value v)']]],
   ['commandhandler',['commandhandler',['../a00071.html#a7300779eb1aaf04041e48c756abafafb',1,'dpp::commandhandler']]],

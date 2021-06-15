@@ -1,13 +1,14 @@
 var a00147 =
 [
     [ "message", "a00147.html#a717067505cfc5f5dcf05459c216c9756", null ],
+    [ "~message", "a00147.html#a4b176cfde5ca415d09dedf3d6156ee97", null ],
     [ "message", "a00147.html#a21466e050ee9c0646392ccf5940bb62a", null ],
     [ "message", "a00147.html#a0e71afdc706c7ae83934ddfd8c2ffc38", null ],
     [ "message", "a00147.html#a45a0883a10a19e933fbba682aba212f6", null ],
     [ "add_component", "a00147.html#a85dbf0b4a0b294eac34ec49feb1d4540", null ],
     [ "add_embed", "a00147.html#a9ff92caceb655fa1f89710445a24c107", null ],
     [ "build_json", "a00147.html#ae2a5e3ddd0eadd028a33d755e567fe86", null ],
-    [ "fill_from_json", "a00147.html#ae28ee933cde939ecd82ee7def78aff69", null ],
+    [ "fill_from_json", "a00147.html#aa57579a2ef10edc52a8f86acbd36c7f1", null ],
     [ "is_crosspost", "a00147.html#a30ec8f9aa1d210b047826adecfe7e5fa", null ],
     [ "is_crossposted", "a00147.html#a29b1e13e6eebcc8529f50a3a403c17e1", null ],
     [ "is_ephemeral", "a00147.html#addf240902f592afc3418f9af686a7484", null ],
@@ -40,6 +41,7 @@ var a00147 =
     [ "nonce", "a00147.html#afaaf4f44ce0631c49c15088b033d25e6", null ],
     [ "pinned", "a00147.html#a029932133e0a6aea2afdea5f2d98146e", null ],
     [ "reactions", "a00147.html#af6c6ea9f1319adde40d068a2e9b230e7", null ],
+    [ "self_allocated", "a00147.html#aa15ce9932be1e4e92aa8739ec5a0d855", null ],
     [ "sent", "a00147.html#a9991c58453a1deb7b785a6b7457372f2", null ],
     [ "tts", "a00147.html#a8f4ab5546606db3ea4bcdb41b60a5dba", null ],
     [ "type", "a00147.html#a2ed7eaf6f5ff69a94fcb4912c0c795c2", null ],

@@ -1,6 +1,6 @@
 var a00063 =
 [
-    [ "cluster", "a00063.html#a5f867a28d0abe02bd4286fad068662ab", null ],
+    [ "cluster", "a00063.html#ae141341b373554f02ab4847fba1ecee7", null ],
     [ "~cluster", "a00063.html#a270be0ab59aff4f335ef3f4af7559d92", null ],
     [ "channel_create", "a00063.html#ad73706406e2f99b9a580319e389777be", null ],
     [ "channel_delete", "a00063.html#ad3b00dafa69984d444422b500c3d18b3", null ],
@@ -175,6 +175,7 @@ var a00063 =
     [ "template_get", "a00063.html#a52366e37144b166c6a2c773e14992b21", null ],
     [ "uptime", "a00063.html#af12b5b33ea156bde9977796858066a6b", null ],
     [ "user_get", "a00063.html#a73483dbeb0f1946dc18b1d0a5331b0d0", null ],
+    [ "cache_policy", "a00063.html#a9fae28f81712be86530fe3314d166ad3", null ],
     [ "cluster_id", "a00063.html#a5155862c1d7267c7f4ee8781ff3e8d7f", null ],
     [ "dispatch", "a00063.html#ad7dfd048a845235dda924b989c1383f3", null ],
     [ "intents", "a00063.html#a239af1e13449c85658fb37e6589745a0", null ],

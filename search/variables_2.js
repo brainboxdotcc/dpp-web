@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cache_5fpolicy',['cache_policy',['../a00063.html#a9fae28f81712be86530fe3314d166ad3',1,'dpp::cluster']]],
   ['changes',['changes',['../a00044.html#ab4c452b5018afcc42cd96f67b7ae75f9',1,'dpp::audit_entry']]],
   ['channel_5fcache',['channel_cache',['../a00348.html#adf9c30193655252606a5db50aaf9cb98',1,'dpp']]],
   ['channel_5fcreate',['channel_create',['../a00077.html#ac82562a94e2bca3629f6e0d7ad9868e2',1,'dpp::dispatcher']]],

@@ -670,6 +670,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a1111f17373e7a972e77ffc0a6e621522"><td class="mdescLeft">&#160;</td><td class="mdescRight">channel permission overwrite types  <a href="a00348.html#a1111f17373e7a972e77ffc0a6e621522">More...</a><br /></td></tr>
 <tr class="separator:a1111f17373e7a972e77ffc0a6e621522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f93e8f1fe93161eaf80ce67b0a9ca83"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html#a7f93e8f1fe93161eaf80ce67b0a9ca83">cache_policy_t</a> : uint8_t { <a class="el" href="a00348.html#a7f93e8f1fe93161eaf80ce67b0a9ca83a81a53a5c84326ed9419729871d0af46e">cp_aggressive</a> = 0, 
+<a class="el" href="a00348.html#a7f93e8f1fe93161eaf80ce67b0a9ca83a055c40e9038f2345a5c1fb9a3d3d648c">cp_lazy</a> = 1, 
+<a class="el" href="a00348.html#a7f93e8f1fe93161eaf80ce67b0a9ca83a68e2695356af38492410341873083c49">cp_none</a> = 2
+ }</td></tr>
+<tr class="memdesc:a7f93e8f1fe93161eaf80ce67b0a9ca83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the user caching policy of the cluster.  <a href="a00348.html#a7f93e8f1fe93161eaf80ce67b0a9ca83">More...</a><br /></td></tr>
+<tr class="separator:a7f93e8f1fe93161eaf80ce67b0a9ca83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2049904620e4f62b82f8dc818de864"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html#a9a2049904620e4f62b82f8dc818de864">parameter_type</a> { <br />
 &#160;&#160;<a class="el" href="a00348.html#a9a2049904620e4f62b82f8dc818de864a36958c192951cad2ae2b921de3db644a">pt_string</a>, 
 <a class="el" href="a00348.html#a9a2049904620e4f62b82f8dc818de864a44145f9f2768b2c9419f3e56b03691d9">pt_role</a>, 
@@ -1779,6 +1785,31 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a29a51ae6f6d959baee7d5e77d53d6c3da6e661282e369e74d2c6067bd1ca10101"></a>ae_integration_update&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a29a51ae6f6d959baee7d5e77d53d6c3da8ead0380000825094c1b8c110800a2b2"></a>ae_integration_delete&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a7f93e8f1fe93161eaf80ce67b0a9ca83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00348.html#a7f93e8f1fe93161eaf80ce67b0a9ca83">dpp::cache_policy_t</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the user caching policy of the cluster. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7f93e8f1fe93161eaf80ce67b0a9ca83a81a53a5c84326ed9419729871d0af46e"></a>cp_aggressive&#160;</td><td class="fielddoc">
+<p>request whole member lists on seeing new guilds, and also store users when they message us </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7f93e8f1fe93161eaf80ce67b0a9ca83a055c40e9038f2345a5c1fb9a3d3d648c"></a>cp_lazy&#160;</td><td class="fielddoc">
+<p>only cache users/members when they message the bot (NOT IMPLEMENTED YET) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7f93e8f1fe93161eaf80ce67b0a9ca83a68e2695356af38492410341873083c49"></a>cp_none&#160;</td><td class="fielddoc">
+<p>Don't cache anything. Fill member details when we see them. (NOT IMPLEMENTED YET) </p>
 </td></tr>
 </table>
 

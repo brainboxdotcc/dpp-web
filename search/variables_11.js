@@ -2,6 +2,7 @@ var searchData=
 [
   ['second',['second',['../a00125.html#ac78956497078b93d5510d493a4d23172',1,'dpp::utility::iconhash']]],
   ['secs',['secs',['../a00189.html#adf60583f58dfe5cff52196b44c29f012',1,'dpp::utility::uptime']]],
+  ['self_5fallocated',['self_allocated',['../a00147.html#aa15ce9932be1e4e92aa8739ec5a0d855',1,'dpp::message']]],
   ['sent',['sent',['../a00147.html#a9991c58453a1deb7b785a6b7457372f2',1,'dpp::message']]],
   ['sequence',['sequence',['../a00177.html#abe61ce13c97dadb9a3fd4693acc909a5',1,'dpp::rtp_header']]],
   ['server_5fid',['server_id',['../a00076.html#ac1d99be8bb3a89a43e5f5b368fe63f7d',1,'dpp::discord_voice_client']]],

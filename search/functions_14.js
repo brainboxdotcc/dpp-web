@@ -18,6 +18,7 @@ var searchData=
   ['_7einteraction_5fresponse',['~interaction_response',['../a00138.html#a314950e3ab3b3938a0b9493492d334f5',1,'dpp::interaction_response']]],
   ['_7einvite',['~invite',['../a00139.html#a93e926569d8c6df52006c07c427f1601',1,'dpp::invite']]],
   ['_7emanaged',['~managed',['../a00146.html#a68f95fa01f17991b35920e38df9f7fe9',1,'dpp::managed']]],
+  ['_7emessage',['~message',['../a00147.html#a4b176cfde5ca415d09dedf3d6156ee97',1,'dpp::message']]],
   ['_7epresence',['~presence',['../a00166.html#aaf9b4823dc5cfa358f1431dc0a13df6b',1,'dpp::presence']]],
   ['_7ereaction',['~reaction',['../a00170.html#a33c3c809d9d08afb794be04f573c3d59',1,'dpp::reaction']]],
   ['_7erequest_5fqueue',['~request_queue',['../a00173.html#a5ccaae72d03d626852be0a0d3c6b86dd',1,'dpp::request_queue']]],
