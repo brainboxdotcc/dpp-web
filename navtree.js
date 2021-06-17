@@ -1,15 +1,15 @@
 var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
-    [ "Frequently Asked Questions (FAQ)", "a00002.html", null ],
-    [ "Building on Linux", "a00004.html", null ],
-    [ "Building on Windows", "a00006.html", null ],
-    [ "Building on macOS", "a00008.html", null ],
-    [ "Example Programs", "a00010.html", "a00010" ],
-    [ "Clusters, Shards and Guilds", "a00028.html", null ],
-    [ "Event Handlers", "a00030.html", null ],
-    [ "Threading Model", "a00032.html", null ],
-    [ "REST Calls", "a00034.html", null ],
+    [ "Frequently Asked Questions (FAQ)", "md_docpages__z_01__f_a_q.html", null ],
+    [ "Building on Linux", "md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html", null ],
+    [ "Building on Windows", "md_docpages__z_03__b_u_i_l_d__w_i_n.html", null ],
+    [ "Building on macOS", "md_docpages__z_04__b_u_i_l_d__m_a_c.html", null ],
+    [ "Example Programs", "md_docpages__z_05__e_x_a_m_p_l_e.html", "md_docpages__z_05__e_x_a_m_p_l_e" ],
+    [ "Clusters, Shards and Guilds", "md_docpages__z_06__c_l_u_s_t_e_r_s.html", null ],
+    [ "Event Handlers", "md_docpages__z_07__e_v_e_n_t.html", null ],
+    [ "Threading Model", "md_docpages__z_07__t_h_r_e_a_d_m_o_d_e_l.html", null ],
+    [ "REST Calls", "md_docpages__z_08__r_e_s_t.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -36,13 +36,13 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"a00002.html",
-"a00063.html#a588cb9aff5b15b9f54cc2818a5482994",
-"a00075.html#ade85ebcbf1a24079511436d504940fcf",
-"a00089.html#aa940f6a4ceadc06905d32c51634ebd2f",
-"a00135.html#a8062f778758ef53d0ea4e40f62ff4015",
-"a00175.html#a6427ec22c7567f5b39db9777d114dac7",
-"a00203.html#ab08402a1538913ad465b2c36cd4dbf92"
+"annotated.html",
+"classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc",
+"classdpp_1_1events_1_1channel__pins__update.html#afe5eb4a399dfb61c3c9413eef304e269",
+"classdpp_1_1role.html#a02b9692d3739aa885749948ba61a895f",
+"functions_l.html",
+"structdpp_1_1embed.html#a4aee84626ea24406ff68caeea1e43b08",
+"structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

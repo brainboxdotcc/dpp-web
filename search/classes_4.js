@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['embed',['embed',['../a00079.html',1,'dpp']]],
-  ['embed_5fauthor',['embed_author',['../a00080.html',1,'dpp']]],
-  ['embed_5ffield',['embed_field',['../a00081.html',1,'dpp']]],
-  ['embed_5ffooter',['embed_footer',['../a00082.html',1,'dpp']]],
-  ['embed_5fimage',['embed_image',['../a00083.html',1,'dpp']]],
-  ['embed_5fprovider',['embed_provider',['../a00084.html',1,'dpp']]],
-  ['emoji',['emoji',['../a00085.html',1,'dpp']]],
-  ['event',['event',['../a00086.html',1,'dpp::events']]],
-  ['event_5fdispatch_5ft',['event_dispatch_t',['../a00087.html',1,'dpp']]]
+  ['embed',['embed',['../structdpp_1_1embed.html',1,'dpp']]],
+  ['embed_5fauthor',['embed_author',['../structdpp_1_1embed__author.html',1,'dpp']]],
+  ['embed_5ffield',['embed_field',['../structdpp_1_1embed__field.html',1,'dpp']]],
+  ['embed_5ffooter',['embed_footer',['../structdpp_1_1embed__footer.html',1,'dpp']]],
+  ['embed_5fimage',['embed_image',['../structdpp_1_1embed__image.html',1,'dpp']]],
+  ['embed_5fprovider',['embed_provider',['../structdpp_1_1embed__provider.html',1,'dpp']]],
+  ['emoji',['emoji',['../classdpp_1_1emoji.html',1,'dpp']]],
+  ['event',['event',['../classdpp_1_1events_1_1event.html',1,'dpp::events']]],
+  ['event_5fdispatch_5ft',['event_dispatch_t',['../structdpp_1_1event__dispatch__t.html',1,'dpp']]]
 ];
