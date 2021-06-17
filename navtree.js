@@ -1,10 +1,8 @@
 var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
-    [ "Frequently Asked Questions (FAQ)", "md_docpages__z_01__f_a_q.html", null ],
-    [ "Building on Linux", "md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html", null ],
-    [ "Building on Windows", "md_docpages__z_03__b_u_i_l_d__w_i_n.html", null ],
-    [ "Building on macOS", "md_docpages__z_04__b_u_i_l_d__m_a_c.html", null ],
+    [ "Frequently Asked Questions (FAQ)", "md_docpages__z_01_frequently_asked_questions.html", null ],
+    [ "Building D++", "md_docpages__z_02_build.html", "md_docpages__z_02_build" ],
     [ "Example Programs", "md_docpages__z_05__e_x_a_m_p_l_e.html", "md_docpages__z_05__e_x_a_m_p_l_e" ],
     [ "Clusters, Shards and Guilds", "md_docpages__z_06__c_l_u_s_t_e_r_s.html", null ],
     [ "Event Handlers", "md_docpages__z_07__e_v_e_n_t.html", null ],
@@ -37,12 +35,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc",
-"classdpp_1_1events_1_1channel__pins__update.html#afe5eb4a399dfb61c3c9413eef304e269",
-"classdpp_1_1role.html#a02b9692d3739aa885749948ba61a895f",
-"functions_l.html",
-"structdpp_1_1embed.html#a4aee84626ea24406ff68caeea1e43b08",
-"structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7"
+"classdpp_1_1cluster.html#af327d6e65c703ce001d666ef2adc4b25",
+"classdpp_1_1events_1_1channel__delete.html",
+"classdpp_1_1request__queue.html#a59e2169cb34083a6de526d4eafb99fd0",
+"functions_i.html",
+"structdpp_1_1embed.html#a431c219b7e195e151c19dfbebc09e13a",
+"structdpp_1_1message.html#ae2a5e3ddd0eadd028a33d755e567fe86"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
