@@ -34,7 +34,7 @@ var searchData=
   ['reaction',['reaction',['../a00170.html#a7809f620d77f3da97ba34b65fd6b5a5d',1,'dpp::reaction::reaction()'],['../a00170.html#ae9d457d1976ecdcb04cc4ccced45084e',1,'dpp::reaction::reaction(nlohmann::json *j)']]],
   ['reaction',['reaction',['../a00170.html',1,'dpp']]],
   ['reactions',['reactions',['../a00147.html#af6c6ea9f1319adde40d068a2e9b230e7',1,'dpp::message']]],
-  ['readloop',['ReadLoop',['../a00179.html#ad6a736a578cc10fa747ca1e2875fbdf5',1,'dpp::ssl_client']]],
+  ['read_5floop',['read_loop',['../a00179.html#a17d4e73c74413a5a79a3859615f913e2',1,'dpp::ssl_client']]],
   ['ready',['ready',['../a00171.html',1,'dpp::events']]],
   ['ready',['ready',['../a00075.html#a03ffb74d2fa81b0e6f0864848151fa90',1,'dpp::discord_client::ready()'],['../a00077.html#a65719ce2641b1ab281f499ea116bc137',1,'dpp::dispatcher::ready()']]],
   ['ready_5ft',['ready_t',['../a00172.html#aebf5fe086e4ee6921042fe798d58d72a',1,'dpp::ready_t']]],
