@@ -17,8 +17,8 @@ var searchData=
   ['fmt',['fmt',['../namespacefmt.html',1,'']]],
   ['footer',['footer',['../structdpp_1_1embed.html#a431c219b7e195e151c19dfbebc09e13a',1,'dpp::embed']]],
   ['format_5ffloat',['format_float',['../namespacedetail.html#aa6c7f232657c83f4e976f9af21f12dcb',1,'detail']]],
+  ['frequently_20asked_20questions',['Frequently Asked Questions',['../frequently-asked-questions.html',1,'index']]],
   ['from',['from',['../structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db',1,'dpp::event_dispatch_t']]],
   ['from_5fjson',['from_json',['../namespacedpp.html#a177af60de5536cff95f417fce3d9487a',1,'dpp::from_json(const nlohmann::json &amp;j, guild_member &amp;gm)'],['../namespacedpp.html#ac2ac98206ba62a7ddba95355743a9e07',1,'dpp::from_json(const nlohmann::json &amp;j, command_data_option &amp;cdo)'],['../namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17',1,'dpp::from_json(const nlohmann::json &amp;j, command_interaction &amp;ci)'],['../namespacedpp.html#acf7c299afaaa55d078a7917b30622222',1,'dpp::from_json(const nlohmann::json &amp;j, button_interaction &amp;bi)'],['../namespacedpp.html#a1d5a166cc8328a1d2728e9e451c966f5',1,'dpp::from_json(const nlohmann::json &amp;j, interaction &amp;i)'],['../namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52',1,'dpp::from_json(const nlohmann::json &amp;j, user &amp;u)']]],
-  ['func',['func',['../structdpp_1_1command__info__t.html#ab5d9fb4cdeaf92805125f15a06459fe2',1,'dpp::command_info_t']]],
-  ['frequently_20asked_20questions_20_28faq_29',['Frequently Asked Questions (FAQ)',['../md_docpages_01_frequently_asked_questions.html',1,'']]]
+  ['func',['func',['../structdpp_1_1command__info__t.html#ab5d9fb4cdeaf92805125f15a06459fe2',1,'dpp::command_info_t']]]
 ];

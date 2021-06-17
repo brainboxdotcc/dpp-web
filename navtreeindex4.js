@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"functions_g.html":[5,3,0,6],
 "functions_h.html":[5,3,0,7],
 "functions_i.html":[5,3,0,8],
 "functions_j.html":[5,3,0,9],
@@ -43,7 +44,6 @@ var NAVTREEINDEX4 =
 "hierarchy.html":[5,2],
 "index.html":[],
 "joinvc.html":[2,3],
-"md_docpages_01_frequently_asked_questions.html":[0],
 "md_docpages_02_build.html":[1],
 "md_docpages_03_example_programs.html":[2],
 "md_docpages_04_advanced_reference.html":[3],

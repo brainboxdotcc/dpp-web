@@ -220,6 +220,7 @@ var NAVTREEINDEX3 =
 "components.html":[2,5],
 "components2.html":[2,6],
 "firstbot.html":[2,0],
+"frequently-asked-questions.html":[0],
 "functions.html":[5,3,0],
 "functions.html":[5,3,0,0],
 "functions_b.html":[5,3,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "functions_func_u.html":[5,3,1,17],
 "functions_func_v.html":[5,3,1,18],
 "functions_func_w.html":[5,3,1,19],
-"functions_func_~.html":[5,3,1,20],
-"functions_g.html":[5,3,0,6]
+"functions_func_~.html":[5,3,1,20]
 };

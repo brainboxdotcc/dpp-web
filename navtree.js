@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
-    [ "Frequently Asked Questions (FAQ)", "md_docpages_01_frequently_asked_questions.html", null ],
+    [ "Frequently Asked Questions", "frequently-asked-questions.html", null ],
     [ "Building D++", "md_docpages_02_build.html", "md_docpages_02_build" ],
     [ "Example Programs", "md_docpages_03_example_programs.html", "md_docpages_03_example_programs" ],
     [ "Advanced Reference", "md_docpages_04_advanced_reference.html", "md_docpages_04_advanced_reference" ],
@@ -35,7 +35,7 @@ var NAVTREEINDEX =
 "classdpp_1_1cluster.html#af327d6e65c703ce001d666ef2adc4b25",
 "classdpp_1_1events_1_1channel__delete.html",
 "classdpp_1_1request__queue.html#a59e2169cb34083a6de526d4eafb99fd0",
-"functions_h.html",
+"functions_g.html",
 "structdpp_1_1embed.html#a51999ed159b5d326b0117604bb8dc4ee",
 "structdpp_1_1message.html#afaaf4f44ce0631c49c15088b033d25e6"
 ];
