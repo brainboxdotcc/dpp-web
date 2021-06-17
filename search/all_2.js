@@ -55,6 +55,7 @@ var searchData=
   ['cluster',['cluster',['../classdpp_1_1cluster.html',1,'dpp']]],
   ['cluster',['cluster',['../classdpp_1_1cluster.html#ae141341b373554f02ab4847fba1ecee7',1,'dpp::cluster::cluster(const std::string &amp;token, uint32_t intents=i_default_intents, uint32_t shards=0, uint32_t cluster_id=0, uint32_t maxclusters=1, bool compressed=true, cache_policy_t policy=cp_aggressive)'],['../classdpp_1_1cluster.html#a6b0b523f89559b4ce204ca9ed9693d79',1,'dpp::cluster::cluster(const cluster &amp;)=delete'],['../classdpp_1_1cluster.html#a2d957f52245734f6d44444af8380c952',1,'dpp::cluster::cluster(const cluster &amp;&amp;)=delete']]],
   ['cluster_5fid',['cluster_id',['../classdpp_1_1cluster.html#a5155862c1d7267c7f4ee8781ff3e8d7f',1,'dpp::cluster']]],
+  ['clusters_2c_20shards_20and_20guilds',['Clusters, Shards and Guilds',['../clusters-shards-guilds.html',1,'md_docpages_04_advanced_reference']]],
   ['cmd_5fresult_5ft',['cmd_result_t',['../namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6',1,'dpp::utility']]],
   ['co_5fboolean',['co_boolean',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a804453a3a94d413b634544e57f5ae2cc',1,'dpp']]],
   ['co_5fchannel',['co_channel',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a96f8ffcbd6b293e75a0500d729fc9b31',1,'dpp']]],
@@ -137,7 +138,6 @@ var searchData=
   ['custom_5freadable_5fready',['custom_readable_ready',['../classdpp_1_1ssl__client.html#aaf27074007db73b13663ab985f2221e8',1,'dpp::ssl_client']]],
   ['custom_5fwriteable_5ffd',['custom_writeable_fd',['../classdpp_1_1ssl__client.html#a32a0f4e6e46da398d77b33e55e3d4ced',1,'dpp::ssl_client']]],
   ['custom_5fwriteable_5fready',['custom_writeable_ready',['../classdpp_1_1ssl__client.html#a5eac615119a5068c1634e3729752ddb6',1,'dpp::ssl_client']]],
-  ['creating_20your_20first_20bot',['Creating Your First Bot',['../firstbot.html',1,'md_docpages_Z_05_EXAMPLE']]],
-  ['clusters_2c_20shards_20and_20guilds',['Clusters, Shards and Guilds',['../md_docpages__z_06__c_l_u_s_t_e_r_s.html',1,'']]],
-  ['creating_20a_20sound_20board',['Creating a Sound Board',['../soundboard.html',1,'md_docpages_Z_05_EXAMPLE']]]
+  ['creating_20your_20first_20bot',['Creating Your First Bot',['../firstbot.html',1,'md_docpages_03_example_programs']]],
+  ['creating_20a_20sound_20board',['Creating a Sound Board',['../soundboard.html',1,'md_docpages_03_example_programs']]]
 ];

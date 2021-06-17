@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['rest_20calls',['REST Calls',['../md_docpages__z_08__r_e_s_t.html',1,'']]],
   ['r_5fbrazil',['r_brazil',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313',1,'dpp']]],
   ['r_5fcentral_5feurope',['r_central_europe',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8',1,'dpp']]],
   ['r_5fhoist',['r_hoist',['../namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea28bd72d5ab200ddcdadd9759c84f2c2e',1,'dpp']]],

@@ -1,13 +1,10 @@
 var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
-    [ "Frequently Asked Questions (FAQ)", "md_docpages__z_01_frequently_asked_questions.html", null ],
-    [ "Building D++", "md_docpages__z_02_build.html", "md_docpages__z_02_build" ],
-    [ "Example Programs", "md_docpages__z_05__e_x_a_m_p_l_e.html", "md_docpages__z_05__e_x_a_m_p_l_e" ],
-    [ "Clusters, Shards and Guilds", "md_docpages__z_06__c_l_u_s_t_e_r_s.html", null ],
-    [ "Event Handlers", "md_docpages__z_07__e_v_e_n_t.html", null ],
-    [ "Threading Model", "md_docpages__z_07__t_h_r_e_a_d_m_o_d_e_l.html", null ],
-    [ "REST Calls", "md_docpages__z_08__r_e_s_t.html", null ],
+    [ "Frequently Asked Questions (FAQ)", "md_docpages_01_frequently_asked_questions.html", null ],
+    [ "Building D++", "md_docpages_02_build.html", "md_docpages_02_build" ],
+    [ "Example Programs", "md_docpages_03_example_programs.html", "md_docpages_03_example_programs" ],
+    [ "Advanced Reference", "md_docpages_04_advanced_reference.html", "md_docpages_04_advanced_reference" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -38,9 +35,9 @@ var NAVTREEINDEX =
 "classdpp_1_1cluster.html#af327d6e65c703ce001d666ef2adc4b25",
 "classdpp_1_1events_1_1channel__delete.html",
 "classdpp_1_1request__queue.html#a59e2169cb34083a6de526d4eafb99fd0",
-"functions_i.html",
-"structdpp_1_1embed.html#a431c219b7e195e151c19dfbebc09e13a",
-"structdpp_1_1message.html#ae2a5e3ddd0eadd028a33d755e567fe86"
+"functions_h.html",
+"structdpp_1_1embed.html#a51999ed159b5d326b0117604bb8dc4ee",
+"structdpp_1_1message.html#afaaf4f44ce0631c49c15088b033d25e6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

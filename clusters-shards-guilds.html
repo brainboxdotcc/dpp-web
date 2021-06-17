@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="Main Page - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Main Page - D++ - The lightweight C++ Discord API Library">
-<title>Main Page - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library">
+<title>Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('clusters-shards-guilds.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -96,55 +96,18 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">D++ (DPP) Documentation</div>  </div>
+<div class="title">Clusters, Shards and Guilds </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>What is D++ (DPP)?</h2>
-<div class="image">
-<img src="DPP-Logo.png"  align="right" style="max-width: 20% !important"/>
-</div>
-<p> D++ is a lightweight and simple library for Discord written in modern C++. It is designed to cover as much of the API specification as possible and take very little memory to do so, even when caching large amounts of the data to cut down on HTTP requests.</p>
-<p>It is created by the developer of <a href="https://triviabot.co.uk">TriviaBot</a> and contributed to by a dedicated team of developers.</p>
-<p>This project is in beta stages of development.</p>
-<h2>Library features:</h2>
-<ul>
-<li>Really small memory footprint</li>
-<li>Efficient caching system for guilds, channels, guild members, roles, users</li>
-<li>Sharding (Many shards, one process: specify the number of shards, or let the library decide)</li>
-<li>Voice support</li>
-<li>Slash command/interaction support</li>
-<li>Pretty much the entire API is supported</li>
-<li>Windows support</li>
-</ul>
-<p>Want to help? Drop me a line or send me a PR. I'll be choosy about what PRs i accept whilst the library is in such a heavy state of development.</p>
-<h2>Supported Operating Systems</h2>
-<p>The library runs best on Linux. Windows is supported via cmake and Visual Studio 2019 but not encouraged for production use. The library may work fine in other operating systems too, but with no access to these we cannot support them.</p>
-<h2>Getting started</h2>
-<ul>
-<li><a href="https://github.com/brainboxdotcc/DPP">GitHub Repository</a></li>
-<li><a href="https://discord.gg/dpp">Discord Server</a></li>
-<li>Frequently Asked Questions</li>
-<li><a class="el" href="buildlinux.html">Building on Linux</a></li>
-<li><a class="el" href="buildwindows.html">Building on Windows</a></li>
-<li><a class="el" href="buildosx.html">Building on OSX</a></li>
-<li>Example Programs</li>
-</ul>
-<h2>Reference</h2>
-<ul>
-<li>Library Types, Classes and Structs</li>
-<li>REST Calls</li>
-<li>Event Handlers</li>
-</ul>
-<h2>Architecture</h2>
-<ul>
-<li>Clusters, Shards and Guilds</li>
-<li>Thread model</li>
-</ul>
-<h2>Learning Resources</h2>
-<ul>
-<li><a href="https://pawelgrzybek.com/cpp-for-javascript-developers/">C++ for JavaScript Developers</a></li>
-<li><a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y&amp;vl=en">C++ In Four Hours</a> </li>
-</ul>
+<div class="textblock"><p>D++ takes a three-tiered highly scalable approach to bots, with three levels known as Clusters, Shards and Guilds as documented below.</p>
+<h2>Clusters</h2>
+<p>A bot may be made of one or more clusters. Each cluster maintains a queue of commands waiting to be sent to Discord, a queue of replies from Discord for all commands executed, and zero or more <b>shards</b>.</p>
+<p>Small bots will require just one cluster. Clusters may be started within separate processes if required (this is recommended) and will split the required number of shards equally across themselves. There is some level of communication between clusters, however they all remain independent without any central "controller" process.</p>
+<h2>Shards</h2>
+<p>A cluster contains zero or more shards. Each shard maintains a persistent websocket connection to Discord which receives all events the bot is made aware of, e.g. messages, channel edits, etc.</p>
+<p>Small bots require only one shard. You may however create as many as you wish. Once you reach 2500 guilds, Discord require that your bot have at least one shard for every 2500 guilds. Any shard which would have over 2500 guilds on it will be disallowed connection.</p>
+<h2>Guilds</h2>
+<p>Guilds are what servers are known as to the API. There can be up to <b>2500</b> of these per shard. Each of these is usually a distinct community and will contain a collection of guild members (users with a membership of this guild), channels and roles, emojis and various other pieces of data. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
