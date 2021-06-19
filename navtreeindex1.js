@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classdpp_1_1cluster.html#af319c151f1b9b2b578d9303bab7ce5d0":[5,0,0,21,27],
 "classdpp_1_1cluster.html#af327d6e65c703ce001d666ef2adc4b25":[5,0,0,21,56],
 "classdpp_1_1cluster.html#af39f3dd46cbc25cf33f17ddb7621a0fc":[5,0,0,21,154],
 "classdpp_1_1cluster.html#af4d6195862e6d25c644902631a0b34d1":[5,0,0,21,39],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classdpp_1_1events_1_1application__command__delete.html#a12ee2dfb2453f32b530827e3c860858f":[5,0,0,0,1,0],
 "classdpp_1_1events_1_1application__command__update.html":[5,0,0,0,2],
 "classdpp_1_1events_1_1application__command__update.html#a0e11fb63ba505e23daf53ba64f0e252c":[5,0,0,0,2,0],
-"classdpp_1_1events_1_1channel__create.html":[5,0,0,0,3],
-"classdpp_1_1events_1_1channel__create.html#ab8faf85c49f4d0463e84152171dd762c":[5,0,0,0,3,0]
+"classdpp_1_1events_1_1channel__create.html":[5,0,0,0,3]
 };

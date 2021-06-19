@@ -1,6 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "annotated.html":[5,0],
+"buildcmake.html":[1,3],
 "buildlinux.html":[1,0],
 "buildosx.html":[1,2],
 "buildwindows.html":[1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classdpp_1_1cluster.html#aee76e0048ec1cd35420da1bfc5317646":[5,0,0,21,23],
 "classdpp_1_1cluster.html#aef037a47fee2efddedfe78ba4bf0467c":[5,0,0,21,45],
 "classdpp_1_1cluster.html#af0289849ef90572a331e68fc84075cb2":[5,0,0,21,81],
-"classdpp_1_1cluster.html#af12b5b33ea156bde9977796858066a6b":[5,0,0,21,175],
-"classdpp_1_1cluster.html#af319c151f1b9b2b578d9303bab7ce5d0":[5,0,0,21,27]
+"classdpp_1_1cluster.html#af12b5b33ea156bde9977796858066a6b":[5,0,0,21,175]
 };

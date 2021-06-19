@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="Building on Linux - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Building with CMake - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Building on Linux - D++ - The lightweight C++ Discord API Library">
-<title>Building on Linux - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Building with CMake - D++ - The lightweight C++ Discord API Library">
+<title>Building with CMake - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('buildlinux.html','');});
+$(document).ready(function(){initNavTree('buildcmake.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -96,33 +96,54 @@ $(document).ready(function(){initNavTree('buildlinux.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Building on Linux </div>  </div>
+<div class="title">Building with CMake </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Building on Linux</h1>
-<h2>1. Build Source Code</h2>
-<pre class="fragment">mkdir build
-cd build
-cmake ..
-make -j8
-</pre><p>Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
-<h2>2. Optional: Run test cases</h2>
-<p>run <code>./test</code> for unit test cases. You will need to create a <code>config.json</code> file in the directory above the executable file with a valid bot token in it. See the example file <code>config.example.json</code> for an example of the correct format.</p>
-<h2>3. Install to /usr/local/include and /usr/local/lib</h2>
-<pre class="fragment">sudo make install
-</pre><h2>4. Installation to a different directory</h2>
-<p>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
-</pre><p>Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
-<h2>5. Using the library</h2>
-<p>Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">g++ -std=c++17 -ldpp -lfmt mydppbot.cpp -o dppbot
-</pre><p>The important flags in this command-line are:</p>
-<ul>
-<li><code>-std=c++17</code> - Required to compile the headers</li>
-<li><code>-ldpp -lfmt</code> - Link to libdpp.so and its dependencies, also in /usr/local</li>
-<li><code>mydppbot.cpp</code> - Your source code</li>
-<li><code>dppbot</code> - The name of the executable to make</li>
+<div class="textblock"><h1>Building with CMake</h1>
+<h2>1. Toolchain</h2>
+<p>Before compiling, you will need to install <code>cmake</code> on your system. To be sure that <code>cmake</code> is installed, you can type the following command: ```sh $ cmake &ndash;version cmake version 3.20.4 ```</p>
+<h2>2. Create a CMake project</h2>
+<p>In an empty directory, create different directories and files like below: ```</p><ul>
+<li>your_project/ |&ndash; libs/ |&ndash; src/ |&ndash; main.cpp |&ndash; CMakeLists.txt ```</li>
 </ul>
-<p>Of course, this is just a proof of concept - you should really use a more robust build system like GNU <code>make</code> or <a class="el" href="buildcmake.html">`cmake`</a>.</p>
+<p>In the <code>libs/</code> directory, clone the sources with: <code>git clone <a href="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</a></code></p>
+<h2>3. Configure CMake</h2>
+<p>Here is an example of a CMake configuration, adapt it according to your needs:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;# minimum CMake version required</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;cmake_minimum_required(VERSION 3.15)</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;# Project name, version and description</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;project(discord-bot VERSION 1.0 DESCRIPTION &quot;A discord bot&quot;)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;# Add DPP as dependency</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;add_subdirectory(libs/DPP)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;# Create an executable</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;add_executable(${PROJECT_NAME}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    src/main.cpp</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    # your others files...</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;# Linking libraries</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;target_link_libraries(${PROJECT_NAME}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    dpp</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    spdlog # if you need a logger. Don&#39;t forget to clone sources</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;           # in the `libs/` directory</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;# Specify includes</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;target_include_directories(${PROJECT_NAME} PRIVATE</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    libs/DPP/include</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    libs/spdlog/include # Like before, if you need spdlog</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;# Set C++ version</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;set_target_properties(${PROJECT_NAME} PROPERTIES</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    CXX_STANDARD 17 # or 20 if you want something more recent</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    CXX_STANDARD_REQUIRED ON</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;)</div>
+</div><!-- fragment --><p>Your project directory should look like this: ```</p><ul>
+<li>your_project/ |&ndash; libs/ |&ndash; DPP |&ndash; spdlog # again, only if you need it |&ndash; src/ |&ndash; main.cpp |&ndash; CMakeLists.txt ```</li>
+</ul>
 <p><b>Have fun!</b> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

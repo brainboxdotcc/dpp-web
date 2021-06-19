@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classdpp_1_1request__queue.html#a147c57abc0a433e1121347b73e7e7642":[5,0,0,95,0],
 "classdpp_1_1request__queue.html#a59e2169cb34083a6de526d4eafb99fd0":[5,0,0,95,2],
 "classdpp_1_1request__queue.html#a5ccaae72d03d626852be0a0d3c6b86dd":[5,0,0,95,1],
 "classdpp_1_1role.html":[5,0,0,97],
@@ -221,8 +222,8 @@ var NAVTREEINDEX3 =
 "components2.html":[2,6],
 "firstbot.html":[2,0],
 "frequently-asked-questions.html":[0],
-"functions.html":[5,3,0],
 "functions.html":[5,3,0,0],
+"functions.html":[5,3,0],
 "functions_b.html":[5,3,0,1],
 "functions_c.html":[5,3,0,2],
 "functions_d.html":[5,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "functions_func_t.html":[5,3,1,16],
 "functions_func_u.html":[5,3,1,17],
 "functions_func_v.html":[5,3,1,18],
-"functions_func_w.html":[5,3,1,19],
-"functions_func_~.html":[5,3,1,20]
+"functions_func_w.html":[5,3,1,19]
 };
