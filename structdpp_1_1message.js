@@ -1,5 +1,6 @@
 var structdpp_1_1message =
 [
+    [ "message_ref", "structdpp_1_1message_1_1message__ref.html", "structdpp_1_1message_1_1message__ref" ],
     [ "message", "structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756", null ],
     [ "~message", "structdpp_1_1message.html#a4b176cfde5ca415d09dedf3d6156ee97", null ],
     [ "message", "structdpp_1_1message.html#a21466e050ee9c0646392ccf5940bb62a", null ],
@@ -38,6 +39,7 @@ var structdpp_1_1message =
     [ "mention_everyone", "structdpp_1_1message.html#a499cacfe6a270dca773fc7f91718ac70", null ],
     [ "mention_roles", "structdpp_1_1message.html#a1f9fbfe4171cdc02306dc505583b7ed9", null ],
     [ "mentions", "structdpp_1_1message.html#a96f97a2ade23d3f58b221f98c60d9950", null ],
+    [ "message_reference", "structdpp_1_1message.html#a6de961520d75562cf61244e1da63543d", null ],
     [ "nonce", "structdpp_1_1message.html#afaaf4f44ce0631c49c15088b033d25e6", null ],
     [ "pinned", "structdpp_1_1message.html#a029932133e0a6aea2afdea5f2d98146e", null ],
     [ "reactions", "structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7", null ],

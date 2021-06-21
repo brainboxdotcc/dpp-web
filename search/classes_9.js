@@ -16,6 +16,7 @@ var searchData=
   ['message_5freaction_5fremove_5femoji',['message_reaction_remove_emoji',['../classdpp_1_1events_1_1message__reaction__remove__emoji.html',1,'dpp::events']]],
   ['message_5freaction_5fremove_5femoji_5ft',['message_reaction_remove_emoji_t',['../structdpp_1_1message__reaction__remove__emoji__t.html',1,'dpp']]],
   ['message_5freaction_5fremove_5ft',['message_reaction_remove_t',['../structdpp_1_1message__reaction__remove__t.html',1,'dpp']]],
+  ['message_5fref',['message_ref',['../structdpp_1_1message_1_1message__ref.html',1,'dpp::message']]],
   ['message_5fupdate',['message_update',['../classdpp_1_1events_1_1message__update.html',1,'dpp::events']]],
   ['message_5fupdate_5ft',['message_update_t',['../structdpp_1_1message__update__t.html',1,'dpp']]]
 ];

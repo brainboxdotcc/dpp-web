@@ -1,7 +1,13 @@
 var NAVTREEINDEX6 =
 {
-"structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7":[5,0,0,79,40],
-"structdpp_1_1message.html#afaaf4f44ce0631c49c15088b033d25e6":[5,0,0,79,38],
+"structdpp_1_1message.html#ae2a5e3ddd0eadd028a33d755e567fe86":[5,0,0,79,8],
+"structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7":[5,0,0,79,42],
+"structdpp_1_1message.html#afaaf4f44ce0631c49c15088b033d25e6":[5,0,0,79,40],
+"structdpp_1_1message_1_1message__ref.html":[5,0,0,79,0],
+"structdpp_1_1message_1_1message__ref.html#a0f2a2c6c106eea456bfc14ab354faa02":[5,0,0,79,0,3],
+"structdpp_1_1message_1_1message__ref.html#a37a6962e6a12721f65c3e7226aecd77b":[5,0,0,79,0,2],
+"structdpp_1_1message_1_1message__ref.html#abb2fb1eabf7743c00876cc103741c9e7":[5,0,0,79,0,1],
+"structdpp_1_1message_1_1message__ref.html#ad00fb23855b0cfd3210e6211efc5be4f":[5,0,0,79,0,0],
 "structdpp_1_1message__create__t.html":[5,0,0,80],
 "structdpp_1_1message__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[5,0,0,80,3],
 "structdpp_1_1message__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[5,0,0,80,1],
