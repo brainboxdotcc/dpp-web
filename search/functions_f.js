@@ -22,6 +22,7 @@ var searchData=
   ['set_5fowner',['set_owner',['../classdpp_1_1commandhandler.html#a8640d327288a6dd1c5fdbde85726e7de',1,'dpp::commandhandler']]],
   ['set_5fpresence',['set_presence',['../classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9',1,'dpp::cluster']]],
   ['set_5fprovider',['set_provider',['../structdpp_1_1embed.html#a61d03e13bd14870613ea6b781a9ad0e2',1,'dpp::embed']]],
+  ['set_5freference',['set_reference',['../structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283',1,'dpp::message']]],
   ['set_5fstyle',['set_style',['../classdpp_1_1component.html#a19213be82f2cd18748f669e53e1348a8',1,'dpp::component']]],
   ['set_5fthumbnail',['set_thumbnail',['../structdpp_1_1embed.html#a90ffe75eeb96781a014c249fedbea6d7',1,'dpp::embed']]],
   ['set_5ftitle',['set_title',['../structdpp_1_1embed.html#abde15c192fcfa8b9418bfea4585e947e',1,'dpp::embed']]],

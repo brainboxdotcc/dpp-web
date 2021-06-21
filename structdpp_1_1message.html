@@ -112,8 +112,7 @@ $(document).ready(function(){initNavTree('structdpp_1_1message.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structdpp_1_1message__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structdpp_1_1message__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -137,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a45a0883a10a19e933fbba682aba212f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#a45a0883a10a19e933fbba682aba212f6">message</a> (const std::string &amp;<a class="el" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a>, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc">message_type</a> <a class="el" href="classstd_1_1conditional_1_1type.html">type</a>=<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152">mt_default</a>)</td></tr>
 <tr class="memdesc:a45a0883a10a19e933fbba682aba212f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new message object with content.  <a href="#a45a0883a10a19e933fbba682aba212f6">More...</a><br /></td></tr>
 <tr class="separator:a45a0883a10a19e933fbba682aba212f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8649d77de4e7b1c89b90016d3692f283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283">set_reference</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> _message_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> _guild_id=0, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> _channel_id=0, bool fail_if_not_exists=false)</td></tr>
+<tr class="memdesc:a8649d77de4e7b1c89b90016d3692f283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the original message reference for replies/crossposts.  <a href="#a8649d77de4e7b1c89b90016d3692f283">More...</a><br /></td></tr>
+<tr class="separator:a8649d77de4e7b1c89b90016d3692f283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa57579a2ef10edc52a8f86acbd36c7f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#aa57579a2ef10edc52a8f86acbd36c7f1">fill_from_json</a> (<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, <a class="el" href="namespacedpp.html#a7f93e8f1fe93161eaf80ce67b0a9ca83">cache_policy_t</a> cp=<a class="el" href="namespacedpp.html#a7f93e8f1fe93161eaf80ce67b0a9ca83a81a53a5c84326ed9419729871d0af46e">dpp::cp_aggressive</a>)</td></tr>
 <tr class="separator:aa57579a2ef10edc52a8f86acbd36c7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a5e3ddd0eadd028a33d755e567fe86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#ae2a5e3ddd0eadd028a33d755e567fe86">build_json</a> (bool with_id=false, bool is_interaction_response=false) const </td></tr>
@@ -709,6 +711,56 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>message&amp; reference to self </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8649d77de4e7b1c89b90016d3692f283"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdpp_1_1message.html">message</a> &amp; dpp::message::set_reference </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>_message_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>_guild_id</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>_channel_id</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fail_if_not_exists</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the original message reference for replies/crossposts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_message_id</td><td>message id to reply to </td></tr>
+    <tr><td class="paramname">_guild_id</td><td>guild id to reply to (optional) </td></tr>
+    <tr><td class="paramname">_channel_id</td><td>channel id to reply to (optional) </td></tr>
+    <tr><td class="paramname">fail_if_not_exists</td><td>true if the message send should fail if these values are invalid (optional) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>message&amp; </dd></dl>
 
 </div>
 </div>

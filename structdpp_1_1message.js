@@ -20,6 +20,7 @@ var structdpp_1_1message =
     [ "set_file_content", "structdpp_1_1message.html#a7063a512a6e7f078e2a81bad077dfcde", null ],
     [ "set_filename", "structdpp_1_1message.html#a95675acbf18ed30c5141d3180842611f", null ],
     [ "set_flags", "structdpp_1_1message.html#a3895655222ad8f3b9d9b96c47afb2454", null ],
+    [ "set_reference", "structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283", null ],
     [ "set_type", "structdpp_1_1message.html#ada2f9404e7dbb12b3de0a382c3733587", null ],
     [ "supress_embeds", "structdpp_1_1message.html#a21972b1d7d2e600a4760927ccdb1ca42", null ],
     [ "attachments", "structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7", null ],
