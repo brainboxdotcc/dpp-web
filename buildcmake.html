@@ -101,12 +101,15 @@ $(document).ready(function(){initNavTree('buildcmake.html','');});
 <div class="contents">
 <div class="textblock"><h1>Building with CMake</h1>
 <h2>1. Toolchain</h2>
-<p>Before compiling, you will need to install <code>cmake</code> on your system. To be sure that <code>cmake</code> is installed, you can type the following command: ```sh $ cmake &ndash;version cmake version 3.20.4 ```</p>
-<h2>2. Create a CMake project</h2>
-<p>In an empty directory, create different directories and files like below: ```</p><ul>
-<li>your_project/ |&ndash; libs/ |&ndash; src/ |&ndash; main.cpp |&ndash; CMakeLists.txt ```</li>
-</ul>
-<p>In the <code>libs/</code> directory, clone the sources with: <code>git clone <a href="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</a></code></p>
+<p>Before compiling, you will need to install <code>cmake</code> on your system. To be sure that <code>cmake</code> is installed, you can type the following command: </p><pre class="fragment">$ cmake --version
+cmake version 3.20.4
+</pre><h2>2. Create a CMake project</h2>
+<p>In an empty directory, create different directories and files like below: </p><pre class="fragment">- your_project/
+    |-- libs/
+    |-- src/
+        |-- main.cpp
+    |-- CMakeLists.txt
+</pre><p>In the <code>libs/</code> directory, clone the sources with: <code>git clone <a href="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</a></code></p>
 <h2>3. Configure CMake</h2>
 <p>Here is an example of a CMake configuration, adapt it according to your needs:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;# minimum CMake version required</div>
@@ -141,10 +144,14 @@ $(document).ready(function(){initNavTree('buildcmake.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    CXX_STANDARD 17 # or 20 if you want something more recent</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    CXX_STANDARD_REQUIRED ON</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;)</div>
-</div><!-- fragment --><p>Your project directory should look like this: ```</p><ul>
-<li>your_project/ |&ndash; libs/ |&ndash; DPP |&ndash; spdlog # again, only if you need it |&ndash; src/ |&ndash; main.cpp |&ndash; CMakeLists.txt ```</li>
-</ul>
-<p><b>Have fun!</b> </p>
+</div><!-- fragment --><p>Your project directory should look like this: </p><pre class="fragment">- your_project/
+    |-- libs/
+        |-- DPP
+        |-- spdlog # again, only if you need it
+    |-- src/
+        |-- main.cpp
+    |-- CMakeLists.txt
+</pre><p><b>Have fun!</b> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
