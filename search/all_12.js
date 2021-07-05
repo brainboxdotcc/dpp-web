@@ -27,6 +27,7 @@ var searchData=
   ['set_5ffile_5fcontent',['set_file_content',['../structdpp_1_1message.html#a7063a512a6e7f078e2a81bad077dfcde',1,'dpp::message']]],
   ['set_5ffilename',['set_filename',['../structdpp_1_1message.html#a95675acbf18ed30c5141d3180842611f',1,'dpp::message']]],
   ['set_5fflags',['set_flags',['../structdpp_1_1message.html#a3895655222ad8f3b9d9b96c47afb2454',1,'dpp::message']]],
+  ['set_5ffooter',['set_footer',['../structdpp_1_1embed.html#acfdeb54fd78b9c3b3e969e4d553f373e',1,'dpp::embed']]],
   ['set_5fid',['set_id',['../classdpp_1_1component.html#a1bf3798669b015711df5d2621ff92d73',1,'dpp::component']]],
   ['set_5fimage',['set_image',['../structdpp_1_1embed.html#a4aee84626ea24406ff68caeea1e43b08',1,'dpp::embed']]],
   ['set_5flabel',['set_label',['../classdpp_1_1component.html#a23955055e9d77383fca2a5738ae3a30f',1,'dpp::component']]],
