@@ -6,6 +6,7 @@ var searchData=
   ['emoji_5fcache',['emoji_cache',['../namespacedpp.html#a3d2e114ba137f1f5bf6fd9782f41d2f2',1,'dpp']]],
   ['emoji_5fid',['emoji_id',['../structdpp_1_1reaction.html#a10ee4c6e61a76d6ad8e9c6d52f123073',1,'dpp::reaction']]],
   ['emoji_5fname',['emoji_name',['../structdpp_1_1reaction.html#a9f0dd8c76b3370670547a34367ea3c30',1,'dpp::reaction']]],
+  ['emoji_5fpolicy',['emoji_policy',['../structdpp_1_1cache__policy__t.html#af2691cd3cc93a264f9177f3d164f9546',1,'dpp::cache_policy_t']]],
   ['emojis',['emojis',['../structdpp_1_1guild__emojis__update__t.html#a51c22afd4b65afc11ef1ea6877b39a19',1,'dpp::guild_emojis_update_t::emojis()'],['../classdpp_1_1guild.html#a9169668a25a134dc50bbdb6dd9ddd203',1,'dpp::guild::emojis()']]],
   ['enabled',['enabled',['../classdpp_1_1guild__widget.html#aedf956fc1f600b82020271b411eb86c8',1,'dpp::guild_widget']]],
   ['end',['end',['../classdpp_1_1activity.html#a54cf821d1e457ca1834e53a7bf8de774',1,'dpp::activity']]],

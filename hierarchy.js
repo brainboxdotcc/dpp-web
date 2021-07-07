@@ -12,6 +12,7 @@ var hierarchy =
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::button_interaction", "structdpp_1_1button__interaction.html", null ],
     [ "dpp::cache", "classdpp_1_1cache.html", null ],
+    [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
     [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
     [ "dpp::command_data_option", "structdpp_1_1command__data__option.html", null ],
     [ "dpp::command_info_t", "structdpp_1_1command__info__t.html", null ],

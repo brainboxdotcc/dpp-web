@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cache',['cache',['../classdpp_1_1cache.html',1,'dpp']]],
+  ['cache_5fpolicy_5ft',['cache_policy_t',['../structdpp_1_1cache__policy__t.html',1,'dpp']]],
   ['channel',['channel',['../classdpp_1_1channel.html',1,'dpp']]],
   ['channel_5fcreate',['channel_create',['../classdpp_1_1events_1_1channel__create.html',1,'dpp::events']]],
   ['channel_5fcreate_5ft',['channel_create_t',['../structdpp_1_1channel__create__t.html',1,'dpp']]],
