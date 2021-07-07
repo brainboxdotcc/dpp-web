@@ -2,7 +2,7 @@ var searchData=
 [
   ['second',['second',['../structdpp_1_1utility_1_1iconhash.html#ac78956497078b93d5510d493a4d23172',1,'dpp::utility::iconhash']]],
   ['secs',['secs',['../structdpp_1_1utility_1_1uptime.html#adf60583f58dfe5cff52196b44c29f012',1,'dpp::utility::uptime']]],
-  ['self_5fallocated',['self_allocated',['../structdpp_1_1message.html#aa15ce9932be1e4e92aa8739ec5a0d855',1,'dpp::message']]],
+  ['self_5fauthor',['self_author',['../structdpp_1_1message.html#a01de1e67af35ecb77549ccbe94ab7185',1,'dpp::message']]],
   ['self_5fstream',['self_stream',['../classdpp_1_1voicestate.html#a14bfe38e85f94b03a773ba098384f6d9',1,'dpp::voicestate']]],
   ['self_5fvideo',['self_video',['../classdpp_1_1voicestate.html#a3e344995e2ab027322c3174bd00c9c31',1,'dpp::voicestate']]],
   ['send_5faudio',['send_audio',['../classdpp_1_1discord__voice__client.html#a453942021fbf45a1944a125209cdface',1,'dpp::discord_voice_client']]],
