@@ -116,14 +116,19 @@ $(document).ready(function(){initNavTree('structdpp_1_1cache__policy__t.html',''
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af54025fb4062c038de9fa20d02101d36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52">cache_policy_setting_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1cache__policy__t.html#af54025fb4062c038de9fa20d02101d36">user_policy</a> = <a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e">cp_aggressive</a></td></tr>
+<tr class="memdesc:af54025fb4062c038de9fa20d02101d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caching policy for users and guild members.  <a href="#af54025fb4062c038de9fa20d02101d36">More...</a><br /></td></tr>
 <tr class="separator:af54025fb4062c038de9fa20d02101d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2691cd3cc93a264f9177f3d164f9546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52">cache_policy_setting_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1cache__policy__t.html#af2691cd3cc93a264f9177f3d164f9546">emoji_policy</a> = <a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e">cp_aggressive</a></td></tr>
+<tr class="memdesc:af2691cd3cc93a264f9177f3d164f9546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caching policy for emojis.  <a href="#af2691cd3cc93a264f9177f3d164f9546">More...</a><br /></td></tr>
 <tr class="separator:af2691cd3cc93a264f9177f3d164f9546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4068b588e7268978fd28299e6538739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52">cache_policy_setting_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739">role_policy</a> = <a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e">cp_aggressive</a></td></tr>
+<tr class="memdesc:ab4068b588e7268978fd28299e6538739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caching policy for roles.  <a href="#ab4068b588e7268978fd28299e6538739">More...</a><br /></td></tr>
 <tr class="separator:ab4068b588e7268978fd28299e6538739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the caching policy of the cluster. </p>
+<p>Channels and guilds are always cached as these caches are used interally by the library. The memory usage of these is minimal.</p>
+<p>All default to 'aggressive' which means to actively attempt to cache, going out of the way to fill the caches completely. On large bots this can take a LOT of RAM. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="af2691cd3cc93a264f9177f3d164f9546"></a>
 <div class="memitem">
@@ -134,6 +139,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Caching policy for emojis. </p>
 
 </div>
 </div>
@@ -147,6 +154,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Caching policy for roles. </p>
+
 </div>
 </div>
 <a class="anchor" id="af54025fb4062c038de9fa20d02101d36"></a>
@@ -158,6 +167,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Caching policy for users and guild members. </p>
 
 </div>
 </div>
