@@ -105,13 +105,18 @@ $(document).ready(function(){initNavTree('firstbot.html','');});
 <tr>
 <th>C++/DPP </th><th>JavaScript/Discord.js  </th></tr>
 <tr>
-<td><div class="image">
-<img src="cprog.png"  align="right" style="max-width: 100% !important"/>
-</div>
- </td><td><div class="image">
-<img src="jsprog.png"  align="right" style="max-width: 100% !important"/>
-</div>
- </td></tr>
+<td><p class="starttd"></p>
+<p>```cpp #include &lt;dpp/dpp.h&gt; #include &lt;iostream&gt;</p>
+<p>int main () { <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> bot("token");</p>
+<p>bot.on_ready([&amp;bot](const <a class="el" href="structdpp_1_1ready__t.html" title="Session ready. ">dpp::ready_t</a> &amp; event) { std::cout &lt;&lt; "Logged in as " &lt;&lt; bot.me.username &lt;&lt; "!\n"; });</p>
+<p>bot.on_message_create([&amp;bot](const <a class="el" href="structdpp_1_1message__create__t.html" title="Create message. ">dpp::message_create_t</a> &amp; event) { if (event.msg-&gt;content == "!ping") { bot.message_create(<a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord. ">dpp::message</a>(event.msg-&gt;channel_id, "Pong!")); } });</p>
+<p class="endtd">bot.start(false); return 0; } ```  </p>
+</td><td><p class="starttd"></p>
+<p>```js const Discord = require('discord.js'); const client = new Discord.Client();</p>
+<p>client.on('ready', () =&gt; { console.log(<code>Logged in as ${client.user.tag}!</code>); });</p>
+<p>client.on('message', msg =&gt; { if (msg.content == '!ping') { msg.reply('Pong!'); } });</p>
+<p class="endtd">client.login('token'); ```  </p>
+</td></tr>
 </table>
 <p>Let's break this program down step by step:</p>
 <h3>1. Start with an empty C++ program</h3>
