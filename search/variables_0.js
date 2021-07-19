@@ -9,7 +9,7 @@ var searchData=
   ['afk_5fchannel_5fid',['afk_channel_id',['../classdpp_1_1guild.html#afe32f37c1ac7dcde9933ba48e7b27130',1,'dpp::guild']]],
   ['afk_5ftimeout',['afk_timeout',['../classdpp_1_1guild.html#a624cb68654a2d32be54f4203835b0722',1,'dpp::guild']]],
   ['allow',['allow',['../structdpp_1_1permission__overwrite.html#a38e3d8e91284eba62a01f77a1c134e49',1,'dpp::permission_overwrite']]],
-  ['animated',['animated',['../structdpp_1_1component_1_1inner__emoji.html#a2e23c4214aeb04ee0a7e89ce352634ea',1,'dpp::component::inner_emoji']]],
+  ['animated',['animated',['../structdpp_1_1select__option_1_1inner__select__emoji.html#aa81fe14ecba46fc45bd9607d4c1ef95a',1,'dpp::select_option::inner_select_emoji::animated()'],['../structdpp_1_1component_1_1inner__emoji.html#a2e23c4214aeb04ee0a7e89ce352634ea',1,'dpp::component::inner_emoji::animated()']]],
   ['app',['app',['../classdpp_1_1integration.html#ab3283de104da19b3371cf86adecc4ebb',1,'dpp::integration']]],
   ['application_5fcommand_5fcreate',['application_command_create',['../classdpp_1_1dispatcher.html#abe9360d2e501ae40d513bf2a737758b8',1,'dpp::dispatcher']]],
   ['application_5fcommand_5fdelete',['application_command_delete',['../classdpp_1_1dispatcher.html#adeda9731343cd06bd13b6aaf716082f3',1,'dpp::dispatcher']]],
