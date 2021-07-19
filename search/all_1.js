@@ -25,7 +25,6 @@ var searchData=
   ['button_5fclick',['button_click',['../classdpp_1_1dispatcher.html#a95261b35417e81c65e9046eca9f0d57c',1,'dpp::dispatcher']]],
   ['button_5fclick_5ft',['button_click_t',['../structdpp_1_1button__click__t.html',1,'dpp']]],
   ['button_5fclick_5ft',['button_click_t',['../structdpp_1_1button__click__t.html#a18cfc5b1ec6d672e6e8c77f4f467dc7b',1,'dpp::button_click_t']]],
-  ['button_5finteraction',['button_interaction',['../structdpp_1_1button__interaction.html',1,'dpp']]],
   ['bytes',['bytes',['../classdpp_1_1cache.html#adce9b317fc1c93aff5638b3ac2795630',1,'dpp::cache::bytes()'],['../namespacedpp_1_1utility.html#a84b01aa8d5a72a0ce43055cc5942ce23',1,'dpp::utility::bytes()']]],
   ['bytes_5fin',['bytes_in',['../classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d',1,'dpp::ssl_client']]],
   ['bytes_5fout',['bytes_out',['../classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085',1,'dpp::ssl_client']]],

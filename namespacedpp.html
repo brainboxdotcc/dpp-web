@@ -155,9 +155,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1button__click__t.html">button_click_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on button.  <a href="structdpp_1_1button__click__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1button__interaction.html">button_interaction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A button click for a button component.  <a href="structdpp_1_1button__interaction.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache.html">cache</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cache object maintains a cache of <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> objects. This is for example users, channels or guilds.  <a href="classdpp_1_1cache.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +205,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html">component</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the component object. A component is a clickable button or drop down list within a discord message, where the buttons emit on_button_click events when the user interacts with them.  <a href="classdpp_1_1component.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1component__interaction.html">component_interaction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A button click for a button component.  <a href="structdpp_1_1component__interaction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Confirmation object represents any true or false simple REST request.  <a href="structdpp_1_1confirmation.html#details">More...</a><br /></td></tr>
@@ -1043,6 +1043,10 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1">it_component_button</a> = 3
  }</td></tr>
 <tr class="separator:a53805450964cf3ad4a26f673aebebd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63342923617f0829b64c53cd02fafd1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1b">component_type_t</a> { <a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e">cotype_button</a> = 2, 
+<a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc">cotype_select</a> = 3
+ }</td></tr>
+<tr class="separator:a63342923617f0829b64c53cd02fafd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace1318b24526febab72157cdd8b7b468"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ace1318b24526febab72157cdd8b7b468">user_flags</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#ace1318b24526febab72157cdd8b7b468a08571594b32cf14501db06b9a39c0d2b">u_bot</a> = 0b00000000000000000000001, 
 <a class="el" href="namespacedpp.html#ace1318b24526febab72157cdd8b7b468ab798237a2b87e22960a9928fede47221">u_system</a> = 0b00000000000000000000010, 
@@ -1222,9 +1226,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1bfffa121ee7a78fe2c0e4d4a9a7fa17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="structdpp_1_1command__interaction.html">command_interaction</a> &amp;ci)</td></tr>
 <tr class="memdesc:a1bfffa121ee7a78fe2c0e4d4a9a7fa17"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="structdpp_1_1command__interaction.html" title="Details of a command within an interaction. This subobject represents the application command associa...">command_interaction</a> from json  <a href="#a1bfffa121ee7a78fe2c0e4d4a9a7fa17">More...</a><br /></td></tr>
 <tr class="separator:a1bfffa121ee7a78fe2c0e4d4a9a7fa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7c299afaaa55d078a7917b30622222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acf7c299afaaa55d078a7917b30622222">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="structdpp_1_1button__interaction.html">button_interaction</a> &amp;bi)</td></tr>
-<tr class="memdesc:acf7c299afaaa55d078a7917b30622222"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="structdpp_1_1button__interaction.html" title="A button click for a button component. ">button_interaction</a> from json  <a href="#acf7c299afaaa55d078a7917b30622222">More...</a><br /></td></tr>
-<tr class="separator:acf7c299afaaa55d078a7917b30622222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc378142329f7d4fe1ac82c81027114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aabc378142329f7d4fe1ac82c81027114">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="structdpp_1_1component__interaction.html">component_interaction</a> &amp;bi)</td></tr>
+<tr class="memdesc:aabc378142329f7d4fe1ac82c81027114"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="structdpp_1_1component__interaction.html" title="A button click for a button component. ">component_interaction</a> from json  <a href="#aabc378142329f7d4fe1ac82c81027114">More...</a><br /></td></tr>
+<tr class="separator:aabc378142329f7d4fe1ac82c81027114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d5a166cc8328a1d2728e9e451c966f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1d5a166cc8328a1d2728e9e451c966f5">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="classdpp_1_1interaction.html">interaction</a> &amp;i)</td></tr>
 <tr class="memdesc:a1d5a166cc8328a1d2728e9e451c966f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize an interaction from json  <a href="#a1d5a166cc8328a1d2728e9e451c966f5">More...</a><br /></td></tr>
 <tr class="separator:a1d5a166cc8328a1d2728e9e451c966f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2028,6 +2032,24 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f"></a>cot_selectmenu&#160;</td><td class="fielddoc">
 <p>Select menu. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a63342923617f0829b64c53cd02fafd1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1b">dpp::component_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e"></a>cotype_button&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc"></a>cotype_select&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -3444,7 +3466,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acf7c299afaaa55d078a7917b30622222"></a>
+<a class="anchor" id="aabc378142329f7d4fe1ac82c81027114"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -3457,7 +3479,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">button_interaction &amp;&#160;</td>
+          <td class="paramtype">component_interaction &amp;&#160;</td>
           <td class="paramname"><em>bi</em>&#160;</td>
         </tr>
         <tr>
@@ -3468,12 +3490,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>helper function to deserialize a <a class="el" href="structdpp_1_1button__interaction.html" title="A button click for a button component. ">button_interaction</a> from json </p>
+<p>helper function to deserialize a <a class="el" href="structdpp_1_1component__interaction.html" title="A button click for a button component. ">component_interaction</a> from json </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">j</td><td>output json object </td></tr>
-    <tr><td class="paramname">bi</td><td><a class="el" href="structdpp_1_1button__interaction.html" title="A button click for a button component. ">button_interaction</a> to be deserialized </td></tr>
+    <tr><td class="paramname">bi</td><td>button_interaction to be deserialized </td></tr>
   </table>
   </dd>
 </dl>

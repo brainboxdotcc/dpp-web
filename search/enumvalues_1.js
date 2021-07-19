@@ -26,6 +26,8 @@ var searchData=
   ['cot_5faction_5frow',['cot_action_row',['../namespacedpp.html#afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8',1,'dpp']]],
   ['cot_5fbutton',['cot_button',['../namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9',1,'dpp']]],
   ['cot_5fselectmenu',['cot_selectmenu',['../namespacedpp.html#afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f',1,'dpp']]],
+  ['cotype_5fbutton',['cotype_button',['../namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e',1,'dpp']]],
+  ['cotype_5fselect',['cotype_select',['../namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc',1,'dpp']]],
   ['cp_5faggressive',['cp_aggressive',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e',1,'dpp']]],
   ['cp_5flazy',['cp_lazy',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a055c40e9038f2345a5c1fb9a3d3d648c',1,'dpp']]],
   ['cp_5fnone',['cp_none',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a68e2695356af38492410341873083c49',1,'dpp']]]

@@ -21,6 +21,7 @@ var searchData=
   ['command_5fsource',['command_source',['../structdpp_1_1command__source.html',1,'dpp']]],
   ['commandhandler',['commandhandler',['../classdpp_1_1commandhandler.html',1,'dpp']]],
   ['component',['component',['../classdpp_1_1component.html',1,'dpp']]],
+  ['component_5finteraction',['component_interaction',['../structdpp_1_1component__interaction.html',1,'dpp']]],
   ['confirmation',['confirmation',['../structdpp_1_1confirmation.html',1,'dpp']]],
   ['confirmation_5fcallback_5ft',['confirmation_callback_t',['../structdpp_1_1confirmation__callback__t.html',1,'dpp']]]
 ];
