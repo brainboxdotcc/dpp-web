@@ -102,6 +102,7 @@ var namespacedpp =
     [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
     [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
     [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
+    [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
     [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
     [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
     [ "ssl_client", "classdpp_1_1ssl__client.html", "classdpp_1_1ssl__client" ],

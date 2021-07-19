@@ -41,6 +41,7 @@ var classdpp_1_1dispatcher =
     [ "presence_update", "classdpp_1_1dispatcher.html#a21e0bbce14f6aba7065eeb20dcf4ae8d", null ],
     [ "ready", "classdpp_1_1dispatcher.html#a65719ce2641b1ab281f499ea116bc137", null ],
     [ "resumed", "classdpp_1_1dispatcher.html#a95bc992af2a7efc1c1c524eeab354990", null ],
+    [ "select_click", "classdpp_1_1dispatcher.html#a071ef2f5586d7879dbb17d9b1757d38a", null ],
     [ "stage_instance_create", "classdpp_1_1dispatcher.html#aa405a83fbbbd434010b838b443d61897", null ],
     [ "stage_instance_delete", "classdpp_1_1dispatcher.html#a83540a056df758f8e9847c1bc8d9ba06", null ],
     [ "typing_start", "classdpp_1_1dispatcher.html#af63372a6426fa4aacd0eecfee5f4ac48", null ],

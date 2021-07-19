@@ -2,6 +2,7 @@ var searchData=
 [
   ['second',['second',['../structdpp_1_1utility_1_1iconhash.html#ac78956497078b93d5510d493a4d23172',1,'dpp::utility::iconhash']]],
   ['secs',['secs',['../structdpp_1_1utility_1_1uptime.html#adf60583f58dfe5cff52196b44c29f012',1,'dpp::utility::uptime']]],
+  ['select_5fclick',['select_click',['../classdpp_1_1dispatcher.html#a071ef2f5586d7879dbb17d9b1757d38a',1,'dpp::dispatcher']]],
   ['self_5fauthor',['self_author',['../structdpp_1_1message.html#a01de1e67af35ecb77549ccbe94ab7185',1,'dpp::message']]],
   ['sent',['sent',['../structdpp_1_1message.html#a9991c58453a1deb7b785a6b7457372f2',1,'dpp::message']]],
   ['sequence',['sequence',['../structdpp_1_1rtp__header.html#abe61ce13c97dadb9a3fd4693acc909a5',1,'dpp::rtp_header']]],

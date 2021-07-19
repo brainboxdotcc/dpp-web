@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['select_5fclick_5ft',['select_click_t',['../structdpp_1_1select__click__t.html#adb17761e9ee06c77ae9daf0313c63913',1,'dpp::select_click_t']]],
   ['select_5foption',['select_option',['../structdpp_1_1select__option.html#aa6ca8ed29e8e1f81ab8ce82e2b9ed1fa',1,'dpp::select_option::select_option()'],['../structdpp_1_1select__option.html#a1f8c4acd212b4001db9ac11f55a68053',1,'dpp::select_option::select_option(const std::string &amp;label, const std::string &amp;value, const std::string &amp;description)']]],
   ['self_5fstream',['self_stream',['../classdpp_1_1voicestate.html#a14bfe38e85f94b03a773ba098384f6d9',1,'dpp::voicestate']]],
   ['self_5fvideo',['self_video',['../classdpp_1_1voicestate.html#a3e344995e2ab027322c3174bd00c9c31',1,'dpp::voicestate']]],

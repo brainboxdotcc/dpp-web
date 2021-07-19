@@ -111,7 +111,8 @@ $(document).ready(function(){initNavTree('classdpp_1_1cluster.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -166,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb5b1009f3eacd98784cfb642c8e2858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#afb5b1009f3eacd98784cfb642c8e2858">on_button_click</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1button__click__t.html">button_click_t</a> &amp;_event)&gt; _button_click)</td></tr>
 <tr class="memdesc:afb5b1009f3eacd98784cfb642c8e2858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a button is clicked attached to a message. Button clicks are triggered by discord when buttons are clicked which you have associated with a message using <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a>.  <a href="#afb5b1009f3eacd98784cfb642c8e2858">More...</a><br /></td></tr>
 <tr class="separator:afb5b1009f3eacd98784cfb642c8e2858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cfef69413003d5bed51b986fd15787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a75cfef69413003d5bed51b986fd15787">on_select_click</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1select__click__t.html">select_click_t</a> &amp;_event)&gt; _select_click)</td></tr>
+<tr class="memdesc:a75cfef69413003d5bed51b986fd15787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a select menu is clicked attached to a message. Select menu clicks are triggered by discord when select menus are clicked which you have associated with a message using <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a>.  <a href="#a75cfef69413003d5bed51b986fd15787">More...</a><br /></td></tr>
+<tr class="separator:a75cfef69413003d5bed51b986fd15787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cb092977902daa7f92e33f4fd05928d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a6cb092977902daa7f92e33f4fd05928d">on_guild_delete</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1guild__delete__t.html">guild_delete_t</a> &amp;_event)&gt; _guild_delete)</td></tr>
 <tr class="memdesc:a6cb092977902daa7f92e33f4fd05928d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a guild is deleted. A guild can be deleted via the bot being kicked, the bot leaving the guild explicitly with dpp::guild_delete, or via the guild being unavaialble due to an outage.  <a href="#a6cb092977902daa7f92e33f4fd05928d">More...</a><br /></td></tr>
 <tr class="separator:a6cb092977902daa7f92e33f4fd05928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5086,7 +5090,7 @@ Public Attributes</h2></td></tr>
 <p>Called when a button is clicked attached to a message. Button clicks are triggered by discord when buttons are clicked which you have associated with a message using <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_interaction_create</td><td>User function to attach to event </td></tr>
+    <tr><td class="paramname">_button_click</td><td>User function to attach to event </td></tr>
   </table>
   </dd>
 </dl>
@@ -5975,6 +5979,30 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_resumed</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a75cfef69413003d5bed51b986fd15787"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_select_click </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1select__click__t.html">select_click_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_select_click</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a select menu is clicked attached to a message. Select menu clicks are triggered by discord when select menus are clicked which you have associated with a message using <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_select_click</td><td>User function to attach to event </td></tr>
   </table>
   </dd>
 </dl>

@@ -111,7 +111,8 @@ var hierarchy =
       [ "dpp::integration_delete_t", "structdpp_1_1integration__delete__t.html", null ],
       [ "dpp::integration_update_t", "structdpp_1_1integration__update__t.html", null ],
       [ "dpp::interaction_create_t", "structdpp_1_1interaction__create__t.html", [
-        [ "dpp::button_click_t", "structdpp_1_1button__click__t.html", null ]
+        [ "dpp::button_click_t", "structdpp_1_1button__click__t.html", null ],
+        [ "dpp::select_click_t", "structdpp_1_1select__click__t.html", null ]
       ] ],
       [ "dpp::invite_create_t", "structdpp_1_1invite__create__t.html", null ],
       [ "dpp::invite_delete_t", "structdpp_1_1invite__delete__t.html", null ],
