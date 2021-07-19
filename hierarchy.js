@@ -148,6 +148,7 @@ var hierarchy =
     [ "dpp::http_request_completion_t", "structdpp_1_1http__request__completion__t.html", null ],
     [ "dpp::utility::iconhash", "structdpp_1_1utility_1_1iconhash.html", null ],
     [ "dpp::component::inner_emoji", "structdpp_1_1component_1_1inner__emoji.html", null ],
+    [ "dpp::select_option::inner_select_emoji", "structdpp_1_1select__option_1_1inner__select__emoji.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
     [ "dpp::interaction_response", "structdpp_1_1interaction__response.html", null ],
     [ "dpp::invite", "classdpp_1_1invite.html", null ],
@@ -171,6 +172,7 @@ var hierarchy =
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
+    [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [
         [ "dpp::discord_client", "classdpp_1_1discord__client.html", null ],

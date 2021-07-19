@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['select_5foption',['select_option',['../structdpp_1_1select__option.html',1,'dpp']]],
   ['slashcommand',['slashcommand',['../classdpp_1_1slashcommand.html',1,'dpp']]],
   ['ssl_5fclient',['ssl_client',['../classdpp_1_1ssl__client.html',1,'dpp']]],
   ['stage_5finstance_5fcreate',['stage_instance_create',['../classdpp_1_1events_1_1stage__instance__create.html',1,'dpp::events']]],

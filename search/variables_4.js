@@ -2,7 +2,7 @@ var searchData=
 [
   ['edited',['edited',['../structdpp_1_1message.html#a94f1f6750ca95e4bb66f069d9b4b3a54',1,'dpp::message']]],
   ['embeds',['embeds',['../structdpp_1_1message.html#a9c0eb22ba371ead6d960bdf7c9838b6e',1,'dpp::message']]],
-  ['emoji',['emoji',['../classdpp_1_1component.html#a99f69b18204a7020927c8ff7aceffbc6',1,'dpp::component']]],
+  ['emoji',['emoji',['../structdpp_1_1select__option.html#ad0e854a2bce6f33ea92823227f3bcd78',1,'dpp::select_option::emoji()'],['../classdpp_1_1component.html#a99f69b18204a7020927c8ff7aceffbc6',1,'dpp::component::emoji()']]],
   ['emoji_5fcache',['emoji_cache',['../namespacedpp.html#a3d2e114ba137f1f5bf6fd9782f41d2f2',1,'dpp']]],
   ['emoji_5fid',['emoji_id',['../structdpp_1_1reaction.html#a10ee4c6e61a76d6ad8e9c6d52f123073',1,'dpp::reaction']]],
   ['emoji_5fname',['emoji_name',['../structdpp_1_1reaction.html#a9f0dd8c76b3370670547a34367ea3c30',1,'dpp::reaction']]],

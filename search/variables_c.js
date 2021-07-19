@@ -3,6 +3,7 @@ var searchData=
   ['max_5fage',['max_age',['../classdpp_1_1invite.html#af48b1a919db49531f09a01f8e8115f64',1,'dpp::invite']]],
   ['max_5fshards',['max_shards',['../classdpp_1_1discord__client.html#a7e8e56675006b1af1c09d8de1519f001',1,'dpp::discord_client']]],
   ['max_5fuses',['max_uses',['../classdpp_1_1invite.html#a942cafe78963747660ed5309f6747787',1,'dpp::invite']]],
+  ['max_5fvalues',['max_values',['../classdpp_1_1component.html#aa500b2f7e185ed70bb03f5b75628bd4f',1,'dpp::component']]],
   ['max_5fvideo_5fchannel_5fusers',['max_video_channel_users',['../classdpp_1_1guild.html#ad0334ce3a68a51441d539120ceb7123e',1,'dpp::guild']]],
   ['maxclusters',['maxclusters',['../classdpp_1_1cluster.html#ad80e4df300e69988d163d61c14e540ab',1,'dpp::cluster']]],
   ['maxheadersize',['MAXHEADERSIZE',['../namespacedpp.html#aeef0538fa45377c9b04fc944efec0f0c',1,'dpp']]],
@@ -28,6 +29,7 @@ var searchData=
   ['message_5fupdate',['message_update',['../classdpp_1_1dispatcher.html#aff7db3b3fd784e67a460a67147f2c315',1,'dpp::dispatcher']]],
   ['method',['method',['../classdpp_1_1http__request.html#a6717d11da20292e2dc77826def3aaef3',1,'dpp::http_request']]],
   ['mfa_5flevel',['mfa_level',['../classdpp_1_1guild.html#a29059b4f68f9d24505beefb1d550092d',1,'dpp::guild']]],
+  ['min_5fvalues',['min_values',['../classdpp_1_1component.html#a5662544df984dfeafce097cf287b7c4a',1,'dpp::component']]],
   ['mins',['mins',['../structdpp_1_1utility_1_1uptime.html#aabc6d30745795aca91b39c9a99233447',1,'dpp::utility::uptime']]],
   ['msg',['msg',['../structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0',1,'dpp::message_create_t::msg()'],['../structdpp_1_1interaction__response.html#afa292ebb598e2ecbb1d8eb089f415493',1,'dpp::interaction_response::msg()']]]
 ];

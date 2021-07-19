@@ -7,6 +7,7 @@ var searchData=
   ['pin_5fchannel',['pin_channel',['../structdpp_1_1channel__pins__update__t.html#a39a68c81854f61285159cef7f80c3cbd',1,'dpp::channel_pins_update_t']]],
   ['pin_5fguild',['pin_guild',['../structdpp_1_1channel__pins__update__t.html#a3adefc9d11d8264cb7a23201fdfb8690',1,'dpp::channel_pins_update_t']]],
   ['pinned',['pinned',['../structdpp_1_1message.html#a029932133e0a6aea2afdea5f2d98146e',1,'dpp::message']]],
+  ['placeholder',['placeholder',['../classdpp_1_1component.html#a4fe9d95b2fd61a38269c3368db4c17ce',1,'dpp::component']]],
   ['port',['port',['../classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07',1,'dpp::ssl_client']]],
   ['position',['position',['../classdpp_1_1channel.html#a1f31178c9e86ad1490b8619cb9bdbde4',1,'dpp::channel::position()'],['../classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958',1,'dpp::role::position()']]],
   ['postdata',['postdata',['../classdpp_1_1http__request.html#adab1976475788ca96b5b52349367a322',1,'dpp::http_request']]],
