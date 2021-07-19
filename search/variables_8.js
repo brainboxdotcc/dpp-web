@@ -15,6 +15,7 @@ var searchData=
   ['invite_5fcreate',['invite_create',['../classdpp_1_1dispatcher.html#a811c8990061c5ce56d221f767ec0576d',1,'dpp::dispatcher']]],
   ['invite_5fdelete',['invite_delete',['../classdpp_1_1dispatcher.html#acff8bbb12c4d123fbd0b57fb3b48962a',1,'dpp::dispatcher']]],
   ['inviter_5fid',['inviter_id',['../classdpp_1_1invite.html#a6142074754432a855a7e37d731a52f88',1,'dpp::invite']]],
+  ['is_5fdefault',['is_default',['../structdpp_1_1select__option.html#a0bbb221b08b77ffb46d1b352bf7f8222',1,'dpp::select_option']]],
   ['is_5fdirty',['is_dirty',['../classdpp_1_1dtemplate.html#a457edbe0f739d80640807571875cdc5a',1,'dpp::dtemplate']]],
   ['is_5finline',['is_inline',['../structdpp_1_1embed__field.html#a7c79073fef1c97bd8489975224ccfd04',1,'dpp::embed_field']]],
   ['issuer',['issuer',['../structdpp_1_1command__source.html#ad81aa8dca95492d9e26488cb22d4df45',1,'dpp::command_source']]]

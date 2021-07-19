@@ -3,7 +3,7 @@ var searchData=
   ['second',['second',['../structdpp_1_1utility_1_1iconhash.html#ac78956497078b93d5510d493a4d23172',1,'dpp::utility::iconhash']]],
   ['secs',['secs',['../structdpp_1_1utility_1_1uptime.html#adf60583f58dfe5cff52196b44c29f012',1,'dpp::utility::uptime']]],
   ['select_5foption',['select_option',['../structdpp_1_1select__option.html',1,'dpp']]],
-  ['select_5foption',['select_option',['../structdpp_1_1select__option.html#af0eb201a58e65edf6fe81bda372a132d',1,'dpp::select_option::select_option()=default'],['../structdpp_1_1select__option.html#a1f8c4acd212b4001db9ac11f55a68053',1,'dpp::select_option::select_option(const std::string &amp;label, const std::string &amp;value, const std::string &amp;description)']]],
+  ['select_5foption',['select_option',['../structdpp_1_1select__option.html#aa6ca8ed29e8e1f81ab8ce82e2b9ed1fa',1,'dpp::select_option::select_option()'],['../structdpp_1_1select__option.html#a1f8c4acd212b4001db9ac11f55a68053',1,'dpp::select_option::select_option(const std::string &amp;label, const std::string &amp;value, const std::string &amp;description)']]],
   ['self_5fauthor',['self_author',['../structdpp_1_1message.html#a01de1e67af35ecb77549ccbe94ab7185',1,'dpp::message']]],
   ['self_5fstream',['self_stream',['../classdpp_1_1voicestate.html#a14bfe38e85f94b03a773ba098384f6d9',1,'dpp::voicestate']]],
   ['self_5fvideo',['self_video',['../classdpp_1_1voicestate.html#a3e344995e2ab027322c3174bd00c9c31',1,'dpp::voicestate']]],
