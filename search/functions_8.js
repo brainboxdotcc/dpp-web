@@ -41,6 +41,7 @@ var searchData=
   ['is_5fearly_5fsupporter',['is_early_supporter',['../classdpp_1_1user.html#af77532a2b5975a27510991b5253ebc7d',1,'dpp::user']]],
   ['is_5fenabled',['is_enabled',['../classdpp_1_1integration.html#ac73687cf0a5b22176456b5731df459d8',1,'dpp::integration']]],
   ['is_5fephemeral',['is_ephemeral',['../structdpp_1_1message.html#addf240902f592afc3418f9af686a7484',1,'dpp::message']]],
+  ['is_5ferror',['is_error',['../structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5',1,'dpp::confirmation_callback_t']]],
   ['is_5ffeatureable',['is_featureable',['../classdpp_1_1guild.html#a64d75cbdbdf0965bbb9f1e1339bea7f1',1,'dpp::guild']]],
   ['is_5fgroup_5fdm',['is_group_dm',['../classdpp_1_1channel.html#afa2c85d43c3ef818452ca15adabb85b6',1,'dpp::channel']]],
   ['is_5fhoisted',['is_hoisted',['../classdpp_1_1role.html#a4ad327e906431f6aea33520c32e23145',1,'dpp::role']]],

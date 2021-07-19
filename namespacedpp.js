@@ -45,6 +45,8 @@ var namespacedpp =
     [ "embed_image", "structdpp_1_1embed__image.html", "structdpp_1_1embed__image" ],
     [ "embed_provider", "structdpp_1_1embed__provider.html", "structdpp_1_1embed__provider" ],
     [ "emoji", "classdpp_1_1emoji.html", "classdpp_1_1emoji" ],
+    [ "error_detail", "structdpp_1_1error__detail.html", "structdpp_1_1error__detail" ],
+    [ "error_info", "structdpp_1_1error__info.html", "structdpp_1_1error__info" ],
     [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
     [ "guild", "classdpp_1_1guild.html", "classdpp_1_1guild" ],

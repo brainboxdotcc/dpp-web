@@ -15,7 +15,7 @@ var searchData=
   ['mention_5feveryone',['mention_everyone',['../structdpp_1_1message.html#a499cacfe6a270dca773fc7f91718ac70',1,'dpp::message']]],
   ['mention_5froles',['mention_roles',['../structdpp_1_1message.html#a1f9fbfe4171cdc02306dc505583b7ed9',1,'dpp::message']]],
   ['mentions',['mentions',['../structdpp_1_1message.html#a96f97a2ade23d3f58b221f98c60d9950',1,'dpp::message']]],
-  ['message',['message',['../structdpp_1_1log__t.html#a127b3f7ba1478e9ee378248e98c3bad7',1,'dpp::log_t']]],
+  ['message',['message',['../structdpp_1_1error__info.html#aa2fb364975f2c201cec668db8090d845',1,'dpp::error_info::message()'],['../structdpp_1_1log__t.html#a127b3f7ba1478e9ee378248e98c3bad7',1,'dpp::log_t::message()']]],
   ['message_5fcreate',['message_create',['../classdpp_1_1dispatcher.html#a8a74c97a762054030a2423c01d3010de',1,'dpp::dispatcher']]],
   ['message_5fdelete',['message_delete',['../classdpp_1_1dispatcher.html#ae8816e6679fff4b73ccffa8fa46caa08',1,'dpp::dispatcher']]],
   ['message_5fdelete_5fbulk',['message_delete_bulk',['../classdpp_1_1dispatcher.html#ace33de42639a464557e525450a5835b7',1,'dpp::dispatcher']]],

@@ -14,7 +14,7 @@ var searchData=
   ['reacting_5fuser',['reacting_user',['../structdpp_1_1message__reaction__add__t.html#a20264319a0f8da84a8e832be40f7d82e',1,'dpp::message_reaction_add_t::reacting_user()'],['../structdpp_1_1message__reaction__remove__t.html#af9b48a79f65b577be3ee21f2c1f01f5b',1,'dpp::message_reaction_remove_t::reacting_user()']]],
   ['reactions',['reactions',['../structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7',1,'dpp::message']]],
   ['ready',['ready',['../classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90',1,'dpp::discord_client::ready()'],['../classdpp_1_1dispatcher.html#a65719ce2641b1ab281f499ea116bc137',1,'dpp::dispatcher::ready()']]],
-  ['reason',['reason',['../structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b',1,'dpp::audit_entry::reason()'],['../classdpp_1_1ban.html#af3f56d08933ee4007f442b11c6b75c01',1,'dpp::ban::reason()']]],
+  ['reason',['reason',['../structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b',1,'dpp::audit_entry::reason()'],['../classdpp_1_1ban.html#af3f56d08933ee4007f442b11c6b75c01',1,'dpp::ban::reason()'],['../structdpp_1_1error__detail.html#a8c674fce9f4c539e7347cb61880698dd',1,'dpp::error_detail::reason()']]],
   ['recipients',['recipients',['../classdpp_1_1channel.html#a0d66636187a0382693d69c2ac2827e89',1,'dpp::channel']]],
   ['reconnects',['reconnects',['../classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf',1,'dpp::discord_client']]],
   ['refcount',['refcount',['../classdpp_1_1user.html#a68d336b1fc0b592ea970c11eaf9f2048',1,'dpp::user']]],

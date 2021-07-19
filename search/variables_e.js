@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['object',['object',['../structdpp_1_1error__detail.html#a856fdb5778779ee6b1c307233bcc070c',1,'dpp::error_detail']]],
   ['obuffer',['obuffer',['../classdpp_1_1ssl__client.html#a1f9600d4fd902c74c6d8b748c359eecc',1,'dpp::ssl_client']]],
   ['old_5fvalue',['old_value',['../structdpp_1_1audit__change.html#a025a06b03f1592b67bd59310bcadb946',1,'dpp::audit_change']]],
   ['optional',['optional',['../structdpp_1_1param__info.html#a9e834a2d46d81a2f57e88c59ca887f5f',1,'dpp::param_info']]],

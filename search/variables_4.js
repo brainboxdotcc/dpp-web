@@ -14,6 +14,7 @@ var searchData=
   ['entries',['entries',['../classdpp_1_1auditlog.html#a36c8f45302e0d22cda77279ab2708daa',1,'dpp::auditlog']]],
   ['error',['error',['../structdpp_1_1http__request__completion__t.html#a6e8e54c80c5b439ddfd0ddb6f9e4039b',1,'dpp::http_request_completion_t']]],
   ['error_5fstatus',['ERROR_STATUS',['../namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87',1,'dpp']]],
+  ['errors',['errors',['../structdpp_1_1error__info.html#ac84fd7b6e0344c9b282b13a43dfc40a0',1,'dpp::error_info']]],
   ['event',['event',['../structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b',1,'dpp::audit_entry']]],
   ['eventmap',['eventmap',['../namespacedpp.html#ac40602ddc592a7cfb7709375cfd8528e',1,'dpp']]],
   ['expire_5fgrace_5fperiod',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
