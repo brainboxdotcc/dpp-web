@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"structdpp_1_1voice__state__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[5,0,0,115,2],
 "structdpp_1_1voice__state__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[5,0,0,115,1],
 "structdpp_1_1voice__state__update__t.html#a421fc199dfeb2542ad61248b3a600a79":[5,0,0,115,0],
 "structdpp_1_1voice__track__marker__t.html":[5,0,0,116],

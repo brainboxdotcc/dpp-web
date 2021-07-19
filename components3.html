@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="Using component interactions (buttons) - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Using component interactions (select menus) - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Using component interactions (buttons) - D++ - The lightweight C++ Discord API Library">
-<title>Using component interactions (buttons) - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Using component interactions (select menus) - D++ - The lightweight C++ Discord API Library">
+<title>Using component interactions (select menus) - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('components.html','');});
+$(document).ready(function(){initNavTree('components3.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -96,52 +96,59 @@ $(document).ready(function(){initNavTree('components.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Using component interactions (buttons) </div>  </div>
+<div class="title">Using component interactions (select menus) </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Discord's newest features support sending buttons alongside messages, which when clicked by the user trigger an interaction which is routed by D++ as an on_button_click event. To make use of this, use code as in this example.</p>
+<div class="textblock"><p>This example demonstrates receiving select menu clicks and sending response messages.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;dpp/message.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using</span> json = <a class="code" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a>;</div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
+<div class="line"></div>
 <div class="line">    <a class="code" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">    <span class="comment">/* Message handler to look for a command called !button */</span></div>
+<div class="line">    <span class="comment">/* Message handler to look for a command called !select */</span></div>
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp; event) {</div>
-<div class="line">        <span class="keywordflow">if</span> (event.<a class="code" href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!button&quot;</span>) {</div>
-<div class="line">            <span class="comment">/* Create a message containing an action row, and a button within the action row. */</span></div>
-<div class="line">            bot.message_create(</div>
-<div class="line">                dpp::message(event.msg-&gt;channel_id, <span class="stringliteral">&quot;this text has buttons&quot;</span>).add_component(</div>
-<div class="line">                    dpp::component().add_component(</div>
-<div class="line">                        dpp::component().set_label(<span class="stringliteral">&quot;Click me!&quot;</span>).</div>
-<div class="line">                        set_emoji(<span class="stringliteral">&quot;😄&quot;</span>).</div>
-<div class="line">                        set_style(dpp::cos_danger).</div>
-<div class="line">                        set_id(<span class="stringliteral">&quot;myid&quot;</span>)</div>
-<div class="line">                    )</div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code" href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!select&quot;</span>) {</div>
+<div class="line">            <span class="comment">/* Create a message containing an action row, and a select menu within the action row. */</span></div>
+<div class="line">            dpp::message m(event.msg-&gt;channel_id, <span class="stringliteral">&quot;this text has a select menu&quot;</span>);</div>
+<div class="line">            m.add_component(</div>
+<div class="line">                dpp::component().add_component(</div>
+<div class="line">                    dpp::component().set_type(dpp::cot_selectmenu).</div>
+<div class="line">                    set_placeholder(<span class="stringliteral">&quot;Pick something&quot;</span>).</div>
+<div class="line">                    add_select_option(dpp::select_option(<span class="stringliteral">&quot;label1&quot;</span>,<span class="stringliteral">&quot;value1&quot;</span>,<span class="stringliteral">&quot;description1&quot;</span>).set_emoji(<span class="stringliteral">&quot;😄&quot;</span>)).</div>
+<div class="line">                    add_select_option(dpp::select_option(<span class="stringliteral">&quot;label2&quot;</span>,<span class="stringliteral">&quot;value2&quot;</span>,<span class="stringliteral">&quot;description2&quot;</span>).set_emoji(<span class="stringliteral">&quot;🙂&quot;</span>)).</div>
+<div class="line">                    set_id(<span class="stringliteral">&quot;myselid&quot;</span>)</div>
 <div class="line">                )</div>
 <div class="line">            );</div>
+<div class="line">            bot.message_create(m);</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
-<div class="line"></div>
-<div class="line">    <span class="comment">/* When a user clicks your button, the on_button_click event will fire,</span></div>
-<div class="line"><span class="comment">     * containing the custom_id you defined in your button.</span></div>
+<div class="line">    <span class="comment">/* When a user clicks your select menu , the on_select_click event will fire,</span></div>
+<div class="line"><span class="comment">     * containing the custom_id you defined in your select menu.</span></div>
 <div class="line"><span class="comment">     */</span></div>
-<div class="line">    bot.on_button_click([&amp;bot](<span class="keyword">const</span> <a class="code" href="structdpp_1_1button__click__t.html">dpp::button_click_t</a> &amp; event) {</div>
-<div class="line">        <span class="comment">/* Button clicks are still interactions, and must be replied to in some form to</span></div>
+<div class="line">    bot.on_select_click([&amp;bot](<span class="keyword">const</span> <a class="code" href="structdpp_1_1select__click__t.html">dpp::select_click_t</a> &amp; event) {</div>
+<div class="line">        <span class="comment">/* Select clicks are still interactions, and must be replied to in some form to</span></div>
 <div class="line"><span class="comment">         * prevent the &quot;this interaction has failed&quot; message from Discord to the user.</span></div>
 <div class="line"><span class="comment">         */</span></div>
-<div class="line">        <span class="keyword">event</span>.reply(<a class="code" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a>, <span class="stringliteral">&quot;You clicked: &quot;</span> + event.<a class="code" href="structdpp_1_1button__click__t.html#a9cd563e83eab3b92b4aecda2680cf3c8">custom_id</a>);</div>
+<div class="line">        <span class="keyword">event</span>.reply(<a class="code" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a>, <span class="stringliteral">&quot;You clicked &quot;</span> + event.<a class="code" href="structdpp_1_1select__click__t.html#aac30db2484043c37184d96401a5e36d4">custom_id</a> + <span class="stringliteral">&quot; and chose: &quot;</span> + event.<a class="code" href="structdpp_1_1select__click__t.html#a8f94f1a7b473d0210d9e2b1553db6b76">values</a>[0]);</div>
+<div class="line">    });</div>
+<div class="line"></div>
+<div class="line">    bot.on_log([](<span class="keyword">const</span> <a class="code" href="structdpp_1_1log__t.html">dpp::log_t</a> &amp; event) {</div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code" href="structdpp_1_1log__t.html#ae1316a6ace98555175a4c1c70c9d0549">severity</a> &gt; <a class="code" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a">dpp::ll_trace</a>) {</div>
+<div class="line">            std::cout &lt;&lt; event.message &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"></div>
 <div class="line">    bot.start(<span class="keyword">false</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>When the feature is functioning, the code below will produce buttons on the reply message like in the image below:</p>
+</div><!-- fragment --><p>This code will send a different message for correct and incorrect answers.</p>
 <div class="image">
-<img src="button.png" alt="button.png"/>
+<img src="button_2.png" alt="button_2.png"/>
 </div>
  </div></div><!-- contents -->
 </div><!-- doc-content -->

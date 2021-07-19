@@ -227,9 +227,10 @@ var NAVTREEINDEX3 =
 "classes.html":[5,1],
 "classstd_1_1conditional_1_1type.html":[5,0,7],
 "clusters-shards-guilds.html":[3,0],
-"commandhandler.html":[2,7],
+"commandhandler.html":[2,8],
 "components.html":[2,5],
-"components2.html":[2,6],
+"components2.html":[2,7],
+"components3.html":[2,6],
 "firstbot.html":[2,0],
 "frequently-asked-questions.html":[0],
 "functions.html":[5,3,0],
@@ -239,8 +240,8 @@ var NAVTREEINDEX3 =
 "functions_d.html":[5,3,0,3],
 "functions_e.html":[5,3,0,4],
 "functions_f.html":[5,3,0,5],
-"functions_func.html":[5,3,1,0],
 "functions_func.html":[5,3,1],
+"functions_func.html":[5,3,1,0],
 "functions_func_b.html":[5,3,1,1],
 "functions_func_c.html":[5,3,1,2],
 "functions_func_d.html":[5,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "functions_func_f.html":[5,3,1,5],
 "functions_func_g.html":[5,3,1,6],
 "functions_func_h.html":[5,3,1,7],
-"functions_func_i.html":[5,3,1,8],
-"functions_func_l.html":[5,3,1,9]
+"functions_func_i.html":[5,3,1,8]
 };
