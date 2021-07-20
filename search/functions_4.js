@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['edit_5fresponse',['edit_response',['../structdpp_1_1interaction__create__t.html#ab71587c74f4bbf1ee1b0f0b95523394b',1,'dpp::interaction_create_t::edit_response(const message &amp;m) const '],['../structdpp_1_1interaction__create__t.html#ad94f5ca5d1602958053a7b99fcde57be',1,'dpp::interaction_create_t::edit_response(const std::string &amp;mt) const ']]],
   ['edit_5fwebhook',['edit_webhook',['../classdpp_1_1cluster.html#af319c151f1b9b2b578d9303bab7ce5d0',1,'dpp::cluster']]],
   ['edit_5fwebhook_5fmessage',['edit_webhook_message',['../classdpp_1_1cluster.html#a86a37684f9d12edd4ca7d00296a5443b',1,'dpp::cluster']]],
   ['edit_5fwebhook_5fwith_5ftoken',['edit_webhook_with_token',['../classdpp_1_1cluster.html#a2bffc1fa43d6a78814f9ca0f378755c5',1,'dpp::cluster']]],

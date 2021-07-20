@@ -92,7 +92,7 @@ var classdpp_1_1cluster =
     [ "guild_template_sync", "classdpp_1_1cluster.html#a3fc2ed8ec7e7550daa418f693ade1016", null ],
     [ "guild_templates_get", "classdpp_1_1cluster.html#a1faa321ede15b209c789ea1155a3d356", null ],
     [ "interaction_response_create", "classdpp_1_1cluster.html#a4c92a68228fe9dcb96b1c7cb6b8ae795", null ],
-    [ "interaction_response_edit", "classdpp_1_1cluster.html#a192ac994fb58e279047c2335ed46f8d9", null ],
+    [ "interaction_response_edit", "classdpp_1_1cluster.html#a41c9c18dd9185dfc2cc61b463ad7cf0f", null ],
     [ "invite_delete", "classdpp_1_1cluster.html#a4c22698fbbb32edebd9824309015a017", null ],
     [ "invite_get", "classdpp_1_1cluster.html#a4a4d4220a93d6ba8c72d5472fd6718d0", null ],
     [ "log", "classdpp_1_1cluster.html#afec6113a3f72d5bae2605ede9e0966ee", null ],

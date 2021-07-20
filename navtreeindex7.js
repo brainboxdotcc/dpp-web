@@ -1,5 +1,11 @@
 var NAVTREEINDEX7 =
 {
+"structdpp_1_1voice__server__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[5,0,0,114,2],
+"structdpp_1_1voice__server__update__t.html#a818081c81337f241f2c7fdc2bf0be1bc":[5,0,0,114,0],
+"structdpp_1_1voice__server__update__t.html#a8e30dc32463638976c4bd2d59b10ddb1":[5,0,0,114,5],
+"structdpp_1_1voice__server__update__t.html#aafc5056f206e0783df145d3aef4ef01b":[5,0,0,114,1],
+"structdpp_1_1voice__state__update__t.html":[5,0,0,115],
+"structdpp_1_1voice__state__update__t.html#a00fa332a89cc7839515806e58b8731a3":[5,0,0,115,3],
 "structdpp_1_1voice__state__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[5,0,0,115,2],
 "structdpp_1_1voice__state__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[5,0,0,115,1],
 "structdpp_1_1voice__state__update__t.html#a421fc199dfeb2542ad61248b3a600a79":[5,0,0,115,0],

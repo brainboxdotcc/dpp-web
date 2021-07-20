@@ -73,7 +73,7 @@ var searchData=
   ['interaction_5fresponse',['interaction_response',['../structdpp_1_1interaction__response.html#a074094acbb739670f92520011cdcff09',1,'dpp::interaction_response::interaction_response()'],['../structdpp_1_1interaction__response.html#a50e33b74f32d9e100db207c1ae5f3b9c',1,'dpp::interaction_response::interaction_response(interaction_response_type t, const struct message &amp;m)']]],
   ['interaction_5fresponse',['interaction_response',['../structdpp_1_1interaction__response.html',1,'dpp']]],
   ['interaction_5fresponse_5fcreate',['interaction_response_create',['../classdpp_1_1cluster.html#a4c92a68228fe9dcb96b1c7cb6b8ae795',1,'dpp::cluster']]],
-  ['interaction_5fresponse_5fedit',['interaction_response_edit',['../classdpp_1_1cluster.html#a192ac994fb58e279047c2335ed46f8d9',1,'dpp::cluster']]],
+  ['interaction_5fresponse_5fedit',['interaction_response_edit',['../classdpp_1_1cluster.html#a41c9c18dd9185dfc2cc61b463ad7cf0f',1,'dpp::cluster']]],
   ['interaction_5fresponse_5ftype',['interaction_response_type',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02',1,'dpp']]],
   ['interaction_5ftype',['interaction_type',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96',1,'dpp']]],
   ['invite',['invite',['../classdpp_1_1invite.html',1,'dpp']]],
