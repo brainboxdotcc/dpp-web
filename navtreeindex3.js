@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classdpp_1_1presence.html#a7f015f7eabc016a1f5567ccbbf80db0d":[5,0,0,93,11],
 "classdpp_1_1presence.html#aaf9b4823dc5cfa358f1431dc0a13df6b":[5,0,0,93,2],
 "classdpp_1_1presence.html#ab29149dcde2872002715212b8a6ff951":[5,0,0,93,10],
 "classdpp_1_1presence.html#ac856456c71d7aa98cd88002e00878fe6":[5,0,0,93,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "functions_func_d.html":[5,3,1,3],
 "functions_func_e.html":[5,3,1,4],
 "functions_func_f.html":[5,3,1,5],
-"functions_func_g.html":[5,3,1,6],
-"functions_func_h.html":[5,3,1,7]
+"functions_func_g.html":[5,3,1,6]
 };

@@ -23,7 +23,7 @@ var searchData=
   ['set',['set',['../structdpp_1_1utility_1_1iconhash.html#ac675809d00cef53ef6887ef7ffcd095c',1,'dpp::utility::iconhash']]],
   ['set_5fanimated',['set_animated',['../structdpp_1_1select__option.html#a841099bce27c36f02c3edd204a334a68',1,'dpp::select_option']]],
   ['set_5fapplication_5fid',['set_application_id',['../classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92',1,'dpp::slashcommand']]],
-  ['set_5fauthor',['set_author',['../structdpp_1_1embed.html#ad0ec387f616f680cab54378063f36fd3',1,'dpp::embed']]],
+  ['set_5fauthor',['set_author',['../structdpp_1_1embed.html#a1191592fd154b5cd29aad3b361ec3e9e',1,'dpp::embed::set_author(const dpp::embed_author &amp;a)'],['../structdpp_1_1embed.html#ad0ec387f616f680cab54378063f36fd3',1,'dpp::embed::set_author(const std::string &amp;name, const std::string &amp;url, const std::string &amp;icon_url)']]],
   ['set_5fcolor',['set_color',['../structdpp_1_1embed.html#a3bcc6f23d8d16c347139f624569e61e1',1,'dpp::embed']]],
   ['set_5fcontent',['set_content',['../structdpp_1_1message.html#a18a1ebb4b981a0ef46f78f147aa12b66',1,'dpp::message']]],
   ['set_5fdefault',['set_default',['../structdpp_1_1select__option.html#a8fd5bb5f91cf48af2f5adc18396e74b4',1,'dpp::select_option']]],

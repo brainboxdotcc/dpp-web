@@ -4,6 +4,7 @@ var structdpp_1_1embed =
     [ "embed", "structdpp_1_1embed.html#a03bbf47ebfcdb5a267fae660232c9577", null ],
     [ "~embed", "structdpp_1_1embed.html#a9d43c2e1648e03cf5aa28825f600391f", null ],
     [ "add_field", "structdpp_1_1embed.html#ab9c9deedd331451367aa561e6f9178d0", null ],
+    [ "set_author", "structdpp_1_1embed.html#a1191592fd154b5cd29aad3b361ec3e9e", null ],
     [ "set_author", "structdpp_1_1embed.html#ad0ec387f616f680cab54378063f36fd3", null ],
     [ "set_color", "structdpp_1_1embed.html#a3bcc6f23d8d16c347139f624569e61e1", null ],
     [ "set_description", "structdpp_1_1embed.html#aab60c0a8678a3c47d0fc47ae04818b16", null ],

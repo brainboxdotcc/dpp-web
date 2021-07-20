@@ -42,6 +42,7 @@ var classdpp_1_1cluster =
     [ "get_shards", "classdpp_1_1cluster.html#af4d6195862e6d25c644902631a0b34d1", null ],
     [ "get_voice_regions", "classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc", null ],
     [ "get_webhook", "classdpp_1_1cluster.html#a40e140f1e2eda9632828bce461bc7338", null ],
+    [ "get_webhook_message", "classdpp_1_1cluster.html#a8685b3bd821ab87342670d730689191e", null ],
     [ "get_webhook_with_token", "classdpp_1_1cluster.html#a770526895ed13e2dfb746decc3f0be67", null ],
     [ "global_command_create", "classdpp_1_1cluster.html#a124b1a52ca2f5ae298f1bb99ca964dcb", null ],
     [ "global_command_delete", "classdpp_1_1cluster.html#a7cb7e2a8ddcb41a39d989802853a8605", null ],
