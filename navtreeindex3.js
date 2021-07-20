@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classdpp_1_1presence.html#aaf9b4823dc5cfa358f1431dc0a13df6b":[5,0,0,93,2],
 "classdpp_1_1presence.html#ab29149dcde2872002715212b8a6ff951":[5,0,0,93,10],
 "classdpp_1_1presence.html#ac856456c71d7aa98cd88002e00878fe6":[5,0,0,93,4],
 "classdpp_1_1presence.html#acd054b45f55114f1c8a3a41c54f280ea":[5,0,0,93,8],
@@ -233,21 +234,20 @@ var NAVTREEINDEX3 =
 "components3.html":[2,6],
 "firstbot.html":[2,0],
 "frequently-asked-questions.html":[0],
-"functions.html":[5,3,0,0],
 "functions.html":[5,3,0],
+"functions.html":[5,3,0,0],
 "functions_b.html":[5,3,0,1],
 "functions_c.html":[5,3,0,2],
 "functions_d.html":[5,3,0,3],
 "functions_e.html":[5,3,0,4],
 "functions_f.html":[5,3,0,5],
-"functions_func.html":[5,3,1],
 "functions_func.html":[5,3,1,0],
+"functions_func.html":[5,3,1],
 "functions_func_b.html":[5,3,1,1],
 "functions_func_c.html":[5,3,1,2],
 "functions_func_d.html":[5,3,1,3],
 "functions_func_e.html":[5,3,1,4],
 "functions_func_f.html":[5,3,1,5],
 "functions_func_g.html":[5,3,1,6],
-"functions_func_h.html":[5,3,1,7],
-"functions_func_i.html":[5,3,1,8]
+"functions_func_h.html":[5,3,1,7]
 };
