@@ -111,7 +111,8 @@ $(document).ready(function(){initNavTree('classdpp_1_1cluster.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -292,6 +293,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d4f63cec74428a22f783e95bc8d8201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a1d4f63cec74428a22f783e95bc8d8201">on_integration_delete</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1integration__delete__t.html">integration_delete_t</a> &amp;_event)&gt; _integration_delete)</td></tr>
 <tr class="memdesc:a1d4f63cec74428a22f783e95bc8d8201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an integration is removed by a user. An integration is a connection to a guild of a user's associated accounts, e.g. youtube or twitch, for automatic assignment of roles etc.  <a href="#a1d4f63cec74428a22f783e95bc8d8201">More...</a><br /></td></tr>
 <tr class="separator:a1d4f63cec74428a22f783e95bc8d8201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090c58e8249813c550077c0fd569dbf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a090c58e8249813c550077c0fd569dbf1">on_thread_create</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1thread__create__t.html">thread_create_t</a> &amp;_event)&gt; _thread_create)</td></tr>
+<tr class="memdesc:a090c58e8249813c550077c0fd569dbf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a thread is created Note: Threads are not cached by D++, but a list of thread IDs is accessible in a guild object.  <a href="#a090c58e8249813c550077c0fd569dbf1">More...</a><br /></td></tr>
+<tr class="separator:a090c58e8249813c550077c0fd569dbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c176195c3a2b4ef002cf4cbfbd382b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a21c176195c3a2b4ef002cf4cbfbd382b">on_thread_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1thread__update__t.html">thread_update_t</a> &amp;_event)&gt; _thread_update)</td></tr>
+<tr class="memdesc:a21c176195c3a2b4ef002cf4cbfbd382b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a thread is updated.  <a href="#a21c176195c3a2b4ef002cf4cbfbd382b">More...</a><br /></td></tr>
+<tr class="separator:a21c176195c3a2b4ef002cf4cbfbd382b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545c320691915b49d0d6fd794c984816"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a545c320691915b49d0d6fd794c984816">on_thread_delete</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1thread__delete__t.html">thread_delete_t</a> &amp;_event)&gt; _thread_delete)</td></tr>
+<tr class="memdesc:a545c320691915b49d0d6fd794c984816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a thread is deleted.  <a href="#a545c320691915b49d0d6fd794c984816">More...</a><br /></td></tr>
+<tr class="separator:a545c320691915b49d0d6fd794c984816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314b36750a8b16d0a13f3fdd94342965"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a314b36750a8b16d0a13f3fdd94342965">on_thread_list_sync</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1thread__list__sync__t.html">thread_list_sync_t</a> &amp;_event)&gt; _thread_list_sync)</td></tr>
+<tr class="memdesc:a314b36750a8b16d0a13f3fdd94342965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when thread list is synced (upon gaining access to a channel) Note: Threads are not cached by D++, but a list of thread IDs is accessible in a guild object.  <a href="#a314b36750a8b16d0a13f3fdd94342965">More...</a><br /></td></tr>
+<tr class="separator:a314b36750a8b16d0a13f3fdd94342965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cecbf9791b82b34defc264fad24066c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a0cecbf9791b82b34defc264fad24066c">on_thread_member_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1thread__member__update__t.html">thread_member_update_t</a> &amp;_event)&gt; _thread_member_update)</td></tr>
+<tr class="memdesc:a0cecbf9791b82b34defc264fad24066c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when current user's thread member object is updated.  <a href="#a0cecbf9791b82b34defc264fad24066c">More...</a><br /></td></tr>
+<tr class="separator:a0cecbf9791b82b34defc264fad24066c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56429a7a625651fd36e6f45ec8793d65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a56429a7a625651fd36e6f45ec8793d65">on_thread_members_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1thread__members__update__t.html">thread_members_update_t</a> &amp;_event)&gt; _thread_members_update)</td></tr>
+<tr class="memdesc:a56429a7a625651fd36e6f45ec8793d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a thread's member list is updated (without GUILD_MEMBERS intent, is only called for current user)  <a href="#a56429a7a625651fd36e6f45ec8793d65">More...</a><br /></td></tr>
+<tr class="separator:a56429a7a625651fd36e6f45ec8793d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1485e8d3d133680e506c25ab9d9554bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a1485e8d3d133680e506c25ab9d9554bd">on_voice_buffer_send</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__buffer__send__t.html">voice_buffer_send_t</a> &amp;_event)&gt; _voice_buffer_send)</td></tr>
 <tr class="memdesc:a1485e8d3d133680e506c25ab9d9554bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when packets are sent from the voice buffer. The voice buffer contains packets that are already encoded with Opus and encrypted with Sodium, and merged into packets by the repacketizer, which is done in the <a class="el" href="classdpp_1_1discord__voice__client.html#a453942021fbf45a1944a125209cdface" title="Send audio to the voice channel. ">dpp::discord_voice_client::send_audio</a> method. You should use the buffer size properties of <a class="el" href="structdpp_1_1voice__buffer__send__t.html" title="voice buffer send ">dpp::voice_buffer_send_t</a> to determine if you should fill the buffer with more content.  <a href="#a1485e8d3d133680e506c25ab9d9554bd">More...</a><br /></td></tr>
 <tr class="separator:a1485e8d3d133680e506c25ab9d9554bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -598,9 +617,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae790b70aaecd9c42fe8a64c4c71a3d0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ae790b70aaecd9c42fe8a64c4c71a3d0c">delete_webhook_with_token</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> webhook_id, const std::string &amp;<a class="el" href="classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e">token</a>, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:ae790b70aaecd9c42fe8a64c4c71a3d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete webhook with token.  <a href="#ae790b70aaecd9c42fe8a64c4c71a3d0c">More...</a><br /></td></tr>
 <tr class="separator:ae790b70aaecd9c42fe8a64c4c71a3d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941406482519ac38b1525016cd9ea585"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a941406482519ac38b1525016cd9ea585">execute_webhook</a> (const class <a class="el" href="classdpp_1_1webhook.html">webhook</a> &amp;wh, const struct <a class="el" href="structdpp_1_1message.html">message</a> &amp;m, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:a941406482519ac38b1525016cd9ea585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute webhook.  <a href="#a941406482519ac38b1525016cd9ea585">More...</a><br /></td></tr>
-<tr class="separator:a941406482519ac38b1525016cd9ea585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5e83314cede8b9277a01b7b173abbad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ad5e83314cede8b9277a01b7b173abbad">execute_webhook</a> (const class <a class="el" href="classdpp_1_1webhook.html">webhook</a> &amp;wh, const struct <a class="el" href="structdpp_1_1message.html">message</a> &amp;m, bool wait=false, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> thread_id=0, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:ad5e83314cede8b9277a01b7b173abbad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute webhook.  <a href="#ad5e83314cede8b9277a01b7b173abbad">More...</a><br /></td></tr>
+<tr class="separator:ad5e83314cede8b9277a01b7b173abbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8685b3bd821ab87342670d730689191e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a8685b3bd821ab87342670d730689191e">get_webhook_message</a> (const class <a class="el" href="classdpp_1_1webhook.html">webhook</a> &amp;wh, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a8685b3bd821ab87342670d730689191e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get webhook message.  <a href="#a8685b3bd821ab87342670d730689191e">More...</a><br /></td></tr>
 <tr class="separator:a8685b3bd821ab87342670d730689191e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -646,6 +665,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa20f6c8ef35465a17c9510fa8353ef3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa20f6c8ef35465a17c9510fa8353ef3a">current_user_leave_guild</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:aa20f6c8ef35465a17c9510fa8353ef3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leave a guild.  <a href="#aa20f6c8ef35465a17c9510fa8353ef3a">More...</a><br /></td></tr>
 <tr class="separator:aa20f6c8ef35465a17c9510fa8353ef3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbf6a68d6ba12a2cca7f263c227b5bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a1dbf6a68d6ba12a2cca7f263c227b5bc">thread_create</a> (const std::string &amp;thread_name, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, uint16_t auto_archive_duration, <a class="el" href="namespacedpp.html#a8af3a726df107c304139477dbfa42092">channel_type</a> thread_type, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a1dbf6a68d6ba12a2cca7f263c227b5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread.  <a href="#a1dbf6a68d6ba12a2cca7f263c227b5bc">More...</a><br /></td></tr>
+<tr class="separator:a1dbf6a68d6ba12a2cca7f263c227b5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632d0bd95fa36ed7bea925123d5b07ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a632d0bd95fa36ed7bea925123d5b07ba">thread_create_with_message</a> (const std::string &amp;thread_name, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> message_id, uint16_t auto_archive_duration, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a632d0bd95fa36ed7bea925123d5b07ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread with a message (Discord: ID of a thread is same as mesage ID)  <a href="#a632d0bd95fa36ed7bea925123d5b07ba">More...</a><br /></td></tr>
+<tr class="separator:a632d0bd95fa36ed7bea925123d5b07ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485553dc602bb2a7ed3ca11057034221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a485553dc602bb2a7ed3ca11057034221">current_user_join_thread</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> thread_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a485553dc602bb2a7ed3ca11057034221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join a thread.  <a href="#a485553dc602bb2a7ed3ca11057034221">More...</a><br /></td></tr>
+<tr class="separator:a485553dc602bb2a7ed3ca11057034221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a819f21159771de3142d57eabfe306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a13a819f21159771de3142d57eabfe306">current_user_leave_thread</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> thread_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a13a819f21159771de3142d57eabfe306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leave a thread.  <a href="#a13a819f21159771de3142d57eabfe306">More...</a><br /></td></tr>
+<tr class="separator:a13a819f21159771de3142d57eabfe306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066a4a71deac82b823757c2c80479a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a066a4a71deac82b823757c2c80479a5d">thread_member_add</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> thread_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a066a4a71deac82b823757c2c80479a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a member to a thread.  <a href="#a066a4a71deac82b823757c2c80479a5d">More...</a><br /></td></tr>
+<tr class="separator:a066a4a71deac82b823757c2c80479a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad253c2a68c5a1e78b880da7252a15814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ad253c2a68c5a1e78b880da7252a15814">thread_member_remove</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> thread_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:ad253c2a68c5a1e78b880da7252a15814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a member from a thread.  <a href="#ad253c2a68c5a1e78b880da7252a15814">More...</a><br /></td></tr>
+<tr class="separator:ad253c2a68c5a1e78b880da7252a15814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba92db711beb50fd66ba5ee97546b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aaba92db711beb50fd66ba5ee97546b0c">get_thread_members</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> thread_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:aaba92db711beb50fd66ba5ee97546b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get members of a thread.  <a href="#aaba92db711beb50fd66ba5ee97546b0c">More...</a><br /></td></tr>
+<tr class="separator:aaba92db711beb50fd66ba5ee97546b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0ad6c1d79f922ad6b0b07cbb9407b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2e0ad6c1d79f922ad6b0b07cbb9407b1">get_active_threads</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a2e0ad6c1d79f922ad6b0b07cbb9407b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get active threads in a channel (Sorted by ID in descending order)  <a href="#a2e0ad6c1d79f922ad6b0b07cbb9407b1">More...</a><br /></td></tr>
+<tr class="separator:a2e0ad6c1d79f922ad6b0b07cbb9407b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e1c8797c831de444a0e51aa96a870a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a55e1c8797c831de444a0e51aa96a870a">get_public_archived_threads</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, time_t before_timestamp=0, uint16_t limit=0, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a55e1c8797c831de444a0e51aa96a870a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get public archived threads in a channel (Sorted by archive_timestamp in descending order)  <a href="#a55e1c8797c831de444a0e51aa96a870a">More...</a><br /></td></tr>
+<tr class="separator:a55e1c8797c831de444a0e51aa96a870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac194025b4189078493a6684a2df6d3d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac194025b4189078493a6684a2df6d3d3">get_private_archived_threads</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, time_t before_timestamp=0, uint16_t limit=0, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:ac194025b4189078493a6684a2df6d3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get private archived threads in a channel (Sorted by archive_timestamp in descending order)  <a href="#ac194025b4189078493a6684a2df6d3d3">More...</a><br /></td></tr>
+<tr class="separator:ac194025b4189078493a6684a2df6d3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab119357a15f1c5a53f4d53bf06bf9e49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab119357a15f1c5a53f4d53bf06bf9e49">get_joined_private_archived_threads</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> before_id=0, uint16_t limit=0, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:ab119357a15f1c5a53f4d53bf06bf9e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get private archived threads in a channel which current user has joined (Sorted by ID in descending order)  <a href="#ab119357a15f1c5a53f4d53bf06bf9e49">More...</a><br /></td></tr>
+<tr class="separator:ab119357a15f1c5a53f4d53bf06bf9e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc">get_voice_regions</a> (<a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all voice regions.  <a href="#af6d45a29b3976f7b623d92e70ab9a1bc">More...</a><br /></td></tr>
 <tr class="separator:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1477,6 +1529,41 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a485553dc602bb2a7ed3ca11057034221"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::current_user_join_thread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>thread_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Join a thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_id</td><td>Thread ID to join </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aa20f6c8ef35465a17c9510fa8353ef3a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1505,6 +1592,41 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to leave </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a13a819f21159771de3142d57eabfe306"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::current_user_leave_thread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>thread_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Leave a thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_id</td><td>Thread ID to leave </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>
@@ -1785,7 +1907,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a941406482519ac38b1525016cd9ea585"></a>
+<a class="anchor" id="ad5e83314cede8b9277a01b7b173abbad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1800,6 +1922,18 @@ Public Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">const struct <a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td>
           <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wait</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>thread_id</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1820,6 +1954,8 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">wh</td><td>Webhook to execute </td></tr>
     <tr><td class="paramname">m</td><td>Message to send </td></tr>
+    <tr><td class="paramname">wait</td><td>waits for server confirmation of message send before response, and returns the created message body </td></tr>
+    <tr><td class="paramname">thread_id</td><td>Send a message to the specified thread within a webhook's channel. The thread will automatically be unarchived </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>
@@ -1919,6 +2055,40 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">channel_id</td><td>Channel ID of group DM </td></tr>
     <tr><td class="paramname">user_id</td><td>User ID to remove from group DM </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2e0ad6c1d79f922ad6b0b07cbb9407b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::get_active_threads </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get active threads in a channel (Sorted by ID in descending order) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>Channel to get active threads for </td></tr>
   </table>
   </dd>
 </dl>
@@ -2079,6 +2249,150 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab119357a15f1c5a53f4d53bf06bf9e49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::get_joined_private_archived_threads </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>before_id</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>limit</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get private archived threads in a channel which current user has joined (Sorted by ID in descending order) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
+    <tr><td class="paramname">before_id</td><td>Get threads before this id </td></tr>
+    <tr><td class="paramname">limit</td><td>Number of threads to get </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac194025b4189078493a6684a2df6d3d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::get_private_archived_threads </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>before_timestamp</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>limit</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get private archived threads in a channel (Sorted by archive_timestamp in descending order) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
+    <tr><td class="paramname">before_timestamp</td><td>Get threads before this timestamp </td></tr>
+    <tr><td class="paramname">limit</td><td>Number of threads to get </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a55e1c8797c831de444a0e51aa96a870a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::get_public_archived_threads </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>before_timestamp</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>limit</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get public archived threads in a channel (Sorted by archive_timestamp in descending order) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
+    <tr><td class="paramname">before_timestamp</td><td>Get threads before this timestamp </td></tr>
+    <tr><td class="paramname">limit</td><td>Number of threads to get </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a5c677c0d5c059e87cc01ce598d49487d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2119,6 +2433,40 @@ Public Attributes</h2></td></tr>
 
 <p>Get the list of shards. </p>
 <dl class="section return"><dt>Returns</dt><dd>shard_list&amp; Reference to map of shards for this cluster </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaba92db711beb50fd66ba5ee97546b0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::get_thread_members </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>thread_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get members of a thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_id</td><td>Thread to get members for </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -6087,6 +6435,150 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a090c58e8249813c550077c0fd569dbf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_thread_create </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1thread__create__t.html">thread_create_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_thread_create</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a thread is created Note: Threads are not cached by D++, but a list of thread IDs is accessible in a guild object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_thread_create</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a545c320691915b49d0d6fd794c984816"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_thread_delete </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1thread__delete__t.html">thread_delete_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_thread_delete</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a thread is deleted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_thread_delete</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a314b36750a8b16d0a13f3fdd94342965"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_thread_list_sync </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1thread__list__sync__t.html">thread_list_sync_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_thread_list_sync</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when thread list is synced (upon gaining access to a channel) Note: Threads are not cached by D++, but a list of thread IDs is accessible in a guild object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_thread_list_sync</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0cecbf9791b82b34defc264fad24066c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_thread_member_update </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1thread__member__update__t.html">thread_member_update_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_thread_member_update</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when current user's thread member object is updated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_thread_member_update</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a56429a7a625651fd36e6f45ec8793d65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_thread_members_update </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1thread__members__update__t.html">thread_members_update_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_thread_members_update</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a thread's member list is updated (without GUILD_MEMBERS intent, is only called for current user) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_thread_members_update</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a21c176195c3a2b4ef002cf4cbfbd382b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_thread_update </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1thread__update__t.html">thread_update_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_thread_update</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a thread is updated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_thread_update</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="af39f3dd46cbc25cf33f17ddb7621a0fc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -6733,6 +7225,202 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>Template code </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1dbf6a68d6ba12a2cca7f263c227b5bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::thread_create </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>thread_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>auto_archive_duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a8af3a726df107c304139477dbfa42092">channel_type</a>&#160;</td>
+          <td class="paramname"><em>thread_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
+    <tr><td class="paramname">channel_id</td><td>Channel in which thread to create </td></tr>
+    <tr><td class="paramname">auto_archive_duration</td><td>Duration after which thread auto-archives. Can be set to - 60, 1440 (for boosted guilds can also be: 4320, 10080) </td></tr>
+    <tr><td class="paramname">thread_type</td><td>Type of thread - GUILD_PUBLIC_THREAD, GUILD_NEWS_THREAD, GUILD_PRIVATE_THREAD </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a632d0bd95fa36ed7bea925123d5b07ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::thread_create_with_message </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>thread_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>message_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>auto_archive_duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a thread with a message (Discord: ID of a thread is same as mesage ID) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
+    <tr><td class="paramname">channel_id</td><td>Channel in which thread to create </td></tr>
+    <tr><td class="paramname">message_id</td><td>message to start thread with </td></tr>
+    <tr><td class="paramname">auto_archive_duration</td><td>Duration after which thread auto-archives. Can be set to - 60, 1440 (for boosted guilds can also be: 4320, 10080) </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a066a4a71deac82b823757c2c80479a5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::thread_member_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>thread_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a member to a thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_id</td><td>Thread ID to add to </td></tr>
+    <tr><td class="paramname">user_id</td><td>Member ID to add </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad253c2a68c5a1e78b880da7252a15814"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::thread_member_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>thread_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a member from a thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_id</td><td>Thread ID to remove from </td></tr>
+    <tr><td class="paramname">user_id</td><td>Member ID to remove </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>

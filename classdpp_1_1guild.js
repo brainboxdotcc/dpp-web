@@ -53,6 +53,7 @@ var classdpp_1_1guild =
     [ "shard_id", "classdpp_1_1guild.html#a80181fee5f66b2dd6f24bad72226bf7c", null ],
     [ "splash", "classdpp_1_1guild.html#a45281957f5252467c6b620c61de4ca14", null ],
     [ "system_channel_id", "classdpp_1_1guild.html#a0fc5cec016c0604ce2575fbe5eea5ded", null ],
+    [ "threads", "classdpp_1_1guild.html#a8e13e2dd21e91104a1e8335990046bf7", null ],
     [ "vanity_url_code", "classdpp_1_1guild.html#ad858d700638f1785f2338e8ec667c74f", null ],
     [ "verification_level", "classdpp_1_1guild.html#a6132ae5944f766ade85c4fc4521180a5", null ],
     [ "voice_members", "classdpp_1_1guild.html#a42066fe3bbfb976ba27fbb9ca38b722f", null ],

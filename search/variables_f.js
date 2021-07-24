@@ -3,7 +3,7 @@ var searchData=
   ['parameters',['parameters',['../structdpp_1_1command__info__t.html#a17285092877891df2580305980354f4d',1,'dpp::command_info_t::parameters()'],['../classdpp_1_1http__request.html#a349ce3f41c300aeac915d38f8f1d8642',1,'dpp::http_request::parameters()']]],
   ['parent_5fid',['parent_id',['../classdpp_1_1channel.html#ae1e877475ccc7113683382f787cfbc48',1,'dpp::channel']]],
   ['permission_5foverwrites',['permission_overwrites',['../classdpp_1_1channel.html#a3eb698179af0d4c535cf5b7ed01b096e',1,'dpp::channel']]],
-  ['permissions',['permissions',['../classdpp_1_1role.html#ab1dc3dc9a99e540de875910d91e52f50',1,'dpp::role']]],
+  ['permissions',['permissions',['../classdpp_1_1role.html#ad1d79b737f5e7d2cc71238068fc36ad4',1,'dpp::role']]],
   ['pin_5fchannel',['pin_channel',['../structdpp_1_1channel__pins__update__t.html#a39a68c81854f61285159cef7f80c3cbd',1,'dpp::channel_pins_update_t']]],
   ['pin_5fguild',['pin_guild',['../structdpp_1_1channel__pins__update__t.html#a3adefc9d11d8264cb7a23201fdfb8690',1,'dpp::channel_pins_update_t']]],
   ['pinned',['pinned',['../structdpp_1_1message.html#a029932133e0a6aea2afdea5f2d98146e',1,'dpp::message']]],

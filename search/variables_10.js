@@ -20,6 +20,7 @@ var searchData=
   ['refcount',['refcount',['../classdpp_1_1user.html#a68d336b1fc0b592ea970c11eaf9f2048',1,'dpp::user']]],
   ['remaining',['remaining',['../structdpp_1_1bucket__t.html#ae8f8eca07afcc928040496878a4c2281',1,'dpp::bucket_t']]],
   ['removed',['removed',['../structdpp_1_1guild__member__remove__t.html#a3b83576117dbcfad3dd2de0e93b0057c',1,'dpp::guild_member_remove_t']]],
+  ['removed_5fids',['removed_ids',['../structdpp_1_1thread__members__update__t.html#a23811d6e8ff4b461e8905a890d3f2285',1,'dpp::thread_members_update_t']]],
   ['removing_5fguild',['removing_guild',['../structdpp_1_1guild__member__remove__t.html#aad078018917f530f80d3e554ad37760e',1,'dpp::guild_member_remove_t']]],
   ['required',['required',['../structdpp_1_1command__option.html#ad203ab30a75ce7508f565f5821301bdb',1,'dpp::command_option']]],
   ['reset_5fafter',['reset_after',['../structdpp_1_1bucket__t.html#a69e733a2599fa42777c7cd302219d1ab',1,'dpp::bucket_t']]],

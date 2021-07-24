@@ -38,5 +38,7 @@ var searchData=
   ['current_5fuser_5fget',['current_user_get',['../classdpp_1_1cluster.html#aad927e85ed6b99e9b05f4190f1b19cae',1,'dpp::cluster']]],
   ['current_5fuser_5fget_5fdms',['current_user_get_dms',['../classdpp_1_1cluster.html#a662fc0a998c62395f166da5e4a2acaf3',1,'dpp::cluster']]],
   ['current_5fuser_5fget_5fguilds',['current_user_get_guilds',['../classdpp_1_1cluster.html#a93c8fd5f22e0eae6bf357ad498b43f87',1,'dpp::cluster']]],
-  ['current_5fuser_5fleave_5fguild',['current_user_leave_guild',['../classdpp_1_1cluster.html#aa20f6c8ef35465a17c9510fa8353ef3a',1,'dpp::cluster']]]
+  ['current_5fuser_5fjoin_5fthread',['current_user_join_thread',['../classdpp_1_1cluster.html#a485553dc602bb2a7ed3ca11057034221',1,'dpp::cluster']]],
+  ['current_5fuser_5fleave_5fguild',['current_user_leave_guild',['../classdpp_1_1cluster.html#aa20f6c8ef35465a17c9510fa8353ef3a',1,'dpp::cluster']]],
+  ['current_5fuser_5fleave_5fthread',['current_user_leave_thread',['../classdpp_1_1cluster.html#a13a819f21159771de3142d57eabfe306',1,'dpp::cluster']]]
 ];

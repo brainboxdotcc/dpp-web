@@ -2,6 +2,7 @@ var namespacemembers_eval =
 [
     [ "a", "namespacemembers_eval.html", null ],
     [ "c", "namespacemembers_eval.html", null ],
+    [ "d", "namespacemembers_eval.html", null ],
     [ "e", "namespacemembers_eval.html", null ],
     [ "g", "namespacemembers_eval.html", null ],
     [ "h", "namespacemembers_eval.html", null ],
