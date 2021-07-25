@@ -22,6 +22,7 @@ var searchData=
   ['removed',['removed',['../structdpp_1_1guild__member__remove__t.html#a3b83576117dbcfad3dd2de0e93b0057c',1,'dpp::guild_member_remove_t']]],
   ['removed_5fids',['removed_ids',['../structdpp_1_1thread__members__update__t.html#a23811d6e8ff4b461e8905a890d3f2285',1,'dpp::thread_members_update_t']]],
   ['removing_5fguild',['removing_guild',['../structdpp_1_1guild__member__remove__t.html#aad078018917f530f80d3e554ad37760e',1,'dpp::guild_member_remove_t']]],
+  ['replied_5fuser',['replied_user',['../structdpp_1_1message_1_1allowed__ref.html#a2b618e76580414b02526dfccc8564d39',1,'dpp::message::allowed_ref']]],
   ['required',['required',['../structdpp_1_1command__option.html#ad203ab30a75ce7508f565f5821301bdb',1,'dpp::command_option']]],
   ['reset_5fafter',['reset_after',['../structdpp_1_1bucket__t.html#a69e733a2599fa42777c7cd302219d1ab',1,'dpp::bucket_t']]],
   ['resolved',['resolved',['../structdpp_1_1command__interaction.html#abb6e1caad1c42ecdf4679fd59991d872',1,'dpp::command_interaction']]],
@@ -33,6 +34,6 @@ var searchData=
   ['role_5fid',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
   ['role_5fname',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
   ['role_5fpolicy',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],
-  ['roles',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()']]],
+  ['roles',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()']]],
   ['rules_5fchannel_5fid',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
 ];

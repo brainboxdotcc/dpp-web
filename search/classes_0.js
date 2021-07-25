@@ -1,6 +1,7 @@
 var searchData=
 [
   ['activity',['activity',['../classdpp_1_1activity.html',1,'dpp']]],
+  ['allowed_5fref',['allowed_ref',['../structdpp_1_1message_1_1allowed__ref.html',1,'dpp::message']]],
   ['application_5fcommand_5fcreate',['application_command_create',['../classdpp_1_1events_1_1application__command__create.html',1,'dpp::events']]],
   ['application_5fcommand_5fcreate_5ft',['application_command_create_t',['../structdpp_1_1application__command__create__t.html',1,'dpp']]],
   ['application_5fcommand_5fdelete',['application_command_delete',['../classdpp_1_1events_1_1application__command__delete.html',1,'dpp::events']]],

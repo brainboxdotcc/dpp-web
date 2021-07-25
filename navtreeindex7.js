@@ -1,5 +1,14 @@
 var NAVTREEINDEX7 =
 {
+"structdpp_1_1stage__instance__delete__t.html#a686464b6183804c70137ea9f66812c55":[5,0,0,107,7],
+"structdpp_1_1stage__instance__delete__t.html#a8ff28d0bbd8dba9dd589ee946c533856":[5,0,0,107,1],
+"structdpp_1_1stage__instance__delete__t.html#ac9b9b8d50d30ec1c70bcafc596830fb9":[5,0,0,107,4],
+"structdpp_1_1stage__instance__delete__t.html#ad9815ab643039f8346df3c6bb97ddc20":[5,0,0,107,0],
+"structdpp_1_1thread__create__t.html":[5,0,0,108],
+"structdpp_1_1thread__create__t.html#a096df9aa1bb92c18a69edcf2daee29db":[5,0,0,108,2],
+"structdpp_1_1thread__create__t.html#a23487c60d75274fdca7eb8beedd29a70":[5,0,0,108,0],
+"structdpp_1_1thread__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[5,0,0,108,4],
+"structdpp_1_1thread__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[5,0,0,108,3],
 "structdpp_1_1thread__create__t.html#ab68b2fb8155b0d859c73c896b5535750":[5,0,0,108,1],
 "structdpp_1_1thread__delete__t.html":[5,0,0,109],
 "structdpp_1_1thread__delete__t.html#a1bf5a7dc3ee2fbdc07b49493a347eb0f":[5,0,0,109,1],

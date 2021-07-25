@@ -38,7 +38,7 @@ var NAVTREEINDEX =
 "classdpp_1_1websocket__client.html#a5eac615119a5068c1634e3729752ddb6",
 "structdpp_1_1channel__update__t.html",
 "structdpp_1_1integration__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1thread__create__t.html#ab68b2fb8155b0d859c73c896b5535750"
+"structdpp_1_1stage__instance__delete__t.html#a686464b6183804c70137ea9f66812c55"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

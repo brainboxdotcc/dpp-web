@@ -48,9 +48,10 @@ var searchData=
   ['user_5fpolicy',['user_policy',['../structdpp_1_1cache__policy__t.html#af54025fb4062c038de9fa20d02101d36',1,'dpp::cache_policy_t']]],
   ['user_5fupdate',['user_update',['../classdpp_1_1dispatcher.html#aac44804e681d34dc35bd98a61ab41e73',1,'dpp::dispatcher']]],
   ['user_5fupdate',['user_update',['../classdpp_1_1events_1_1user__update.html',1,'dpp::events']]],
-  ['user_5fupdate_5ft',['user_update_t',['../structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e',1,'dpp::user_update_t']]],
   ['user_5fupdate_5ft',['user_update_t',['../structdpp_1_1user__update__t.html',1,'dpp']]],
+  ['user_5fupdate_5ft',['user_update_t',['../structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e',1,'dpp::user_update_t']]],
   ['username',['username',['../classdpp_1_1user.html#a4e72b2e5ac7d5539fdae64be6e01246c',1,'dpp::user']]],
+  ['users',['users',['../structdpp_1_1message_1_1allowed__ref.html#a8e22776356f1b3029224dae4679eff22',1,'dpp::message::allowed_ref']]],
   ['usr',['usr',['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction']]],
   ['utf8len',['utf8len',['../namespacedpp_1_1utility.html#a915b95a9f5efa3bcde16540cd3a08d3b',1,'dpp::utility']]],
   ['utf8substr',['utf8substr',['../namespacedpp_1_1utility.html#a61d1cf45d36c302d245c05508ce83f84',1,'dpp::utility']]]

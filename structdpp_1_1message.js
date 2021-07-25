@@ -1,5 +1,6 @@
 var structdpp_1_1message =
 [
+    [ "allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", "structdpp_1_1message_1_1allowed__ref" ],
     [ "message_ref", "structdpp_1_1message_1_1message__ref.html", "structdpp_1_1message_1_1message__ref" ],
     [ "message", "structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756", null ],
     [ "~message", "structdpp_1_1message.html#a4b176cfde5ca415d09dedf3d6156ee97", null ],
@@ -16,6 +17,7 @@ var structdpp_1_1message =
     [ "is_loading", "structdpp_1_1message.html#a7227dae2580372f1f47ab13442da0d1c", null ],
     [ "is_source_message_deleted", "structdpp_1_1message.html#a000f28d53465976ca14e77baf57848ae", null ],
     [ "is_urgent", "structdpp_1_1message.html#ade2685318c082418fd1b02613e19542b", null ],
+    [ "set_allowed_mentions", "structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913", null ],
     [ "set_content", "structdpp_1_1message.html#a18a1ebb4b981a0ef46f78f147aa12b66", null ],
     [ "set_file_content", "structdpp_1_1message.html#a7063a512a6e7f078e2a81bad077dfcde", null ],
     [ "set_filename", "structdpp_1_1message.html#a95675acbf18ed30c5141d3180842611f", null ],
@@ -23,6 +25,7 @@ var structdpp_1_1message =
     [ "set_reference", "structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283", null ],
     [ "set_type", "structdpp_1_1message.html#ada2f9404e7dbb12b3de0a382c3733587", null ],
     [ "supress_embeds", "structdpp_1_1message.html#a21972b1d7d2e600a4760927ccdb1ca42", null ],
+    [ "allowed_mentions", "structdpp_1_1message.html#a6c59498ae2c014b13eb714c494e6493c", null ],
     [ "attachments", "structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7", null ],
     [ "author", "structdpp_1_1message.html#a35c14f04382266b29c4ca076b4e0f9e0", null ],
     [ "channel_id", "structdpp_1_1message.html#adceaf61877eede79f0ebeb14efa74b5e", null ],

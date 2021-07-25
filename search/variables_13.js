@@ -15,5 +15,6 @@ var searchData=
   ['user_5fpolicy',['user_policy',['../structdpp_1_1cache__policy__t.html#af54025fb4062c038de9fa20d02101d36',1,'dpp::cache_policy_t']]],
   ['user_5fupdate',['user_update',['../classdpp_1_1dispatcher.html#aac44804e681d34dc35bd98a61ab41e73',1,'dpp::dispatcher']]],
   ['username',['username',['../classdpp_1_1user.html#a4e72b2e5ac7d5539fdae64be6e01246c',1,'dpp::user']]],
+  ['users',['users',['../structdpp_1_1message_1_1allowed__ref.html#a8e22776356f1b3029224dae4679eff22',1,'dpp::message::allowed_ref']]],
   ['usr',['usr',['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction']]]
 ];

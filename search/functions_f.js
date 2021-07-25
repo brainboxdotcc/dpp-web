@@ -6,6 +6,7 @@ var searchData=
   ['self_5fvideo',['self_video',['../classdpp_1_1voicestate.html#a3e344995e2ab027322c3174bd00c9c31',1,'dpp::voicestate']]],
   ['send_5faudio',['send_audio',['../classdpp_1_1discord__voice__client.html#a453942021fbf45a1944a125209cdface',1,'dpp::discord_voice_client']]],
   ['set',['set',['../structdpp_1_1utility_1_1iconhash.html#ac675809d00cef53ef6887ef7ffcd095c',1,'dpp::utility::iconhash']]],
+  ['set_5fallowed_5fmentions',['set_allowed_mentions',['../structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913',1,'dpp::message']]],
   ['set_5fanimated',['set_animated',['../structdpp_1_1select__option.html#a841099bce27c36f02c3edd204a334a68',1,'dpp::select_option']]],
   ['set_5fapplication_5fid',['set_application_id',['../classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92',1,'dpp::slashcommand']]],
   ['set_5fauthor',['set_author',['../structdpp_1_1embed.html#a1191592fd154b5cd29aad3b361ec3e9e',1,'dpp::embed::set_author(const dpp::embed_author &amp;a)'],['../structdpp_1_1embed.html#ad0ec387f616f680cab54378063f36fd3',1,'dpp::embed::set_author(const std::string &amp;name, const std::string &amp;url, const std::string &amp;icon_url)']]],
