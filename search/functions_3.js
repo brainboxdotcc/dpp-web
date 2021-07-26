@@ -6,6 +6,7 @@ var searchData=
   ['delete_5fwebhook_5fwith_5ftoken',['delete_webhook_with_token',['../classdpp_1_1cluster.html#ae790b70aaecd9c42fe8a64c4c71a3d0c',1,'dpp::cluster']]],
   ['desktop_5fstatus',['desktop_status',['../classdpp_1_1presence.html#ac856456c71d7aa98cd88002e00878fe6',1,'dpp::presence']]],
   ['direct_5fmessage_5fcreate',['direct_message_create',['../classdpp_1_1cluster.html#ae3a5e7d9ba9dcbfc1e219eeb029f61ad',1,'dpp::cluster']]],
+  ['disable_5fdefault_5fpermissions',['disable_default_permissions',['../classdpp_1_1slashcommand.html#af5e01640cbf5f00e74e7dd724e43d6f0',1,'dpp::slashcommand']]],
   ['disconnect',['disconnect',['../classdpp_1_1voiceconn.html#a462b82f234c78686edb38ba9c301d9bb',1,'dpp::voiceconn']]],
   ['disconnect_5fvoice',['disconnect_voice',['../classdpp_1_1discord__client.html#ab27c7a127b4bf2aaee24e406adfe3bb2',1,'dpp::discord_client']]],
   ['discord_5fclient',['discord_client',['../classdpp_1_1discord__client.html#a26bc3c07e4b547d0d6e2c820d255fac7',1,'dpp::discord_client']]],

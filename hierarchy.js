@@ -19,6 +19,7 @@ var hierarchy =
     [ "dpp::command_interaction", "structdpp_1_1command__interaction.html", null ],
     [ "dpp::command_option", "structdpp_1_1command__option.html", null ],
     [ "dpp::command_option_choice", "structdpp_1_1command__option__choice.html", null ],
+    [ "dpp::command_permission", "classdpp_1_1command__permission.html", null ],
     [ "dpp::command_resolved", "structdpp_1_1command__resolved.html", null ],
     [ "dpp::command_source", "structdpp_1_1command__source.html", null ],
     [ "dpp::commandhandler", "classdpp_1_1commandhandler.html", null ],
@@ -155,6 +156,7 @@ var hierarchy =
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
     [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
+    [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
     [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ],
     [ "Handler", "class_handler.html", null ],

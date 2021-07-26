@@ -33,5 +33,7 @@ var searchData=
   ['cotype_5fselect',['cotype_select',['../namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc',1,'dpp']]],
   ['cp_5faggressive',['cp_aggressive',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e',1,'dpp']]],
   ['cp_5flazy',['cp_lazy',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a055c40e9038f2345a5c1fb9a3d3d648c',1,'dpp']]],
-  ['cp_5fnone',['cp_none',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a68e2695356af38492410341873083c49',1,'dpp']]]
+  ['cp_5fnone',['cp_none',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a68e2695356af38492410341873083c49',1,'dpp']]],
+  ['cpt_5frole',['cpt_role',['../namespacedpp.html#ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f',1,'dpp']]],
+  ['cpt_5fuser',['cpt_user',['../namespacedpp.html#ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d',1,'dpp']]]
 ];

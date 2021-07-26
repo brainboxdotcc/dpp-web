@@ -17,6 +17,7 @@ var searchData=
   ['command_5finteraction',['command_interaction',['../structdpp_1_1command__interaction.html',1,'dpp']]],
   ['command_5foption',['command_option',['../structdpp_1_1command__option.html',1,'dpp']]],
   ['command_5foption_5fchoice',['command_option_choice',['../structdpp_1_1command__option__choice.html',1,'dpp']]],
+  ['command_5fpermission',['command_permission',['../classdpp_1_1command__permission.html',1,'dpp']]],
   ['command_5fresolved',['command_resolved',['../structdpp_1_1command__resolved.html',1,'dpp']]],
   ['command_5fsource',['command_source',['../structdpp_1_1command__source.html',1,'dpp']]],
   ['commandhandler',['commandhandler',['../classdpp_1_1commandhandler.html',1,'dpp']]],

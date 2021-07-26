@@ -6,6 +6,7 @@ var searchData=
   ['guild_5fban_5fadd_5ft',['guild_ban_add_t',['../structdpp_1_1guild__ban__add__t.html',1,'dpp']]],
   ['guild_5fban_5fremove',['guild_ban_remove',['../classdpp_1_1events_1_1guild__ban__remove.html',1,'dpp::events']]],
   ['guild_5fban_5fremove_5ft',['guild_ban_remove_t',['../structdpp_1_1guild__ban__remove__t.html',1,'dpp']]],
+  ['guild_5fcommand_5fpermissions',['guild_command_permissions',['../classdpp_1_1guild__command__permissions.html',1,'dpp']]],
   ['guild_5fcreate',['guild_create',['../classdpp_1_1events_1_1guild__create.html',1,'dpp::events']]],
   ['guild_5fcreate_5ft',['guild_create_t',['../structdpp_1_1guild__create__t.html',1,'dpp']]],
   ['guild_5fdelete',['guild_delete',['../classdpp_1_1events_1_1guild__delete.html',1,'dpp::events']]],
