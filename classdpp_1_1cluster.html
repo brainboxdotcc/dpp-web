@@ -2636,10 +2636,12 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Slash command to create, s.id will be filled if the creation succeeds </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. The callback is passed one parameter of type <code>const <a class="el" href="structdpp_1_1confirmation__callback__t.html" title="The results of a REST call wrapped in a convenient struct. ">confirmation_callback_t</a>&amp;</code>.</td></tr>
   </table>
   </dd>
 </dl>
+<p>On success this parameter will contain a <a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild. ">dpp::slashcommand</a> object in the <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a> std::variant member, which you must use std::get to obtain.</p>
+<p>On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </p>
 
 </div>
 </div>
@@ -2807,10 +2809,12 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to get the audit log of </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes The callback is passed one parameter of type <code>const <a class="el" href="structdpp_1_1confirmation__callback__t.html" title="The results of a REST call wrapped in a convenient struct. ">confirmation_callback_t</a>&amp;</code>.</td></tr>
   </table>
   </dd>
 </dl>
+<p>On success this parameter will contain a <a class="el" href="classdpp_1_1auditlog.html" title="The auditlog class represents the audit log entry of a guild. ">dpp::auditlog</a> object in the <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a> std::variant member, which you must use std::get to obtain.</p>
+<p>On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </p>
 
 </div>
 </div>
@@ -4612,10 +4616,12 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">interaction_id</td><td>Interaction id to respond to </td></tr>
     <tr><td class="paramname">r</td><td>Response to send </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. The callback is passed one parameter of type <code>const <a class="el" href="structdpp_1_1confirmation__callback__t.html" title="The results of a REST call wrapped in a convenient struct. ">confirmation_callback_t</a>&amp;</code>.</td></tr>
   </table>
   </dd>
 </dl>
+<p>On success this parameter will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request. ">dpp::confirmation</a> object in the <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a> std::variant member, which you must use std::get to obtain.</p>
+<p>On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </p>
 
 </div>
 </div>
@@ -4653,10 +4659,12 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to send </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. The callback is passed one parameter of type <code>const <a class="el" href="structdpp_1_1confirmation__callback__t.html" title="The results of a REST call wrapped in a convenient struct. ">confirmation_callback_t</a>&amp;</code>.</td></tr>
   </table>
   </dd>
 </dl>
+<p>On success this parameter will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request. ">dpp::confirmation</a> object in the <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a> std::variant member, which you must use std::get to obtain.</p>
+<p>On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </p>
 
 </div>
 </div>
@@ -6967,7 +6975,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">parameters</td><td>Minor parameters for the API request </td></tr>
     <tr><td class="paramname">method</td><td>Method, e.g. GET, POST </td></tr>
     <tr><td class="paramname">postdata</td><td>Post data (usually JSON encoded) </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the HTTP call completes </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the HTTP call completes. The callback will contain the decoded json. </td></tr>
     <tr><td class="paramname">filename</td><td>Filename to post for POST requests (for uploading files) </td></tr>
     <tr><td class="paramname">filecontent</td><td>File content to post for POST requests (for uploading files) </td></tr>
   </table>
