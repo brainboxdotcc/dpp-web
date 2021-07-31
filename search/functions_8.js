@@ -61,6 +61,7 @@ var searchData=
   ['is_5fpartnered',['is_partnered',['../classdpp_1_1guild.html#a84d8e9b43ec2d9d57e1560a876deeb62',1,'dpp::guild']]],
   ['is_5fpartnered_5fowner',['is_partnered_owner',['../classdpp_1_1user.html#a967603184f377f9ab5b2cab2def20fbc',1,'dpp::user']]],
   ['is_5fpaused',['is_paused',['../classdpp_1_1discord__voice__client.html#aef426df9775031fed6c6f50554573a0c',1,'dpp::discord_voice_client']]],
+  ['is_5fpending',['is_pending',['../classdpp_1_1guild__member.html#a6e8cd0a3909b06e5787e1cf1b9fc92a4',1,'dpp::guild_member']]],
   ['is_5fplaying',['is_playing',['../classdpp_1_1discord__voice__client.html#a1a98e05342f5c6b8de0f9324758f3fd6',1,'dpp::discord_voice_client']]],
   ['is_5fpreview_5fenabled',['is_preview_enabled',['../classdpp_1_1guild.html#a5738a87f96c9cc0882721cc499cae68f',1,'dpp::guild']]],
   ['is_5fready',['is_ready',['../classdpp_1_1voiceconn.html#a7dd6504b406b5e08f9fd9337a275568d',1,'dpp::voiceconn::is_ready()'],['../classdpp_1_1discord__voice__client.html#aee5fcfe947f581ecce2c9096871f88a2',1,'dpp::discord_voice_client::is_ready()']]],
