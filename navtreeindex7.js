@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"structdpp_1_1select__option_1_1inner__select__emoji.html#a60d4986e79fe71beadd6d7a1eb32175d":[5,0,0,105,0,1],
+"structdpp_1_1select__option_1_1inner__select__emoji.html#a81266873a679663cc267e96951b52425":[5,0,0,105,0,2],
 "structdpp_1_1select__option_1_1inner__select__emoji.html#aa81fe14ecba46fc45bd9607d4c1ef95a":[5,0,0,105,0,0],
 "structdpp_1_1stage__instance__create__t.html":[5,0,0,108],
 "structdpp_1_1stage__instance__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[5,0,0,108,6],

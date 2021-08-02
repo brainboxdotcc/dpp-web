@@ -7,6 +7,7 @@ var searchData=
   ['find_5fguild',['find_guild',['../namespacedpp.html#ae6750ab645d45e0d71f8391b35257754',1,'dpp']]],
   ['find_5frole',['find_role',['../namespacedpp.html#a9b26ed01e9bb9ec98b942b452cf11295',1,'dpp']]],
   ['find_5fuser',['find_user',['../namespacedpp.html#a03f57fb047d0aeabeb6401727d071a47',1,'dpp']]],
+  ['format',['format',['../classdpp_1_1emoji.html#a201842eacc22432f9804c786deacbdf6',1,'dpp::emoji']]],
   ['format_5ffloat',['format_float',['../namespacedetail.html#aa6c7f232657c83f4e976f9af21f12dcb',1,'detail']]],
   ['from_5fjson',['from_json',['../namespacedpp.html#a177af60de5536cff95f417fce3d9487a',1,'dpp::from_json(const nlohmann::json &amp;j, guild_member &amp;gm)'],['../namespacedpp.html#ac2ac98206ba62a7ddba95355743a9e07',1,'dpp::from_json(const nlohmann::json &amp;j, command_data_option &amp;cdo)'],['../namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17',1,'dpp::from_json(const nlohmann::json &amp;j, command_interaction &amp;ci)'],['../namespacedpp.html#aabc378142329f7d4fe1ac82c81027114',1,'dpp::from_json(const nlohmann::json &amp;j, component_interaction &amp;bi)'],['../namespacedpp.html#a1d5a166cc8328a1d2728e9e451c966f5',1,'dpp::from_json(const nlohmann::json &amp;j, interaction &amp;i)'],['../namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52',1,'dpp::from_json(const nlohmann::json &amp;j, user &amp;u)']]]
 ];

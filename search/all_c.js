@@ -16,7 +16,7 @@ var searchData=
   ['make_5fbearer_5ftoken_5fauthentication_5fheader',['make_bearer_token_authentication_header',['../namespacehttplib.html#aa082ee1ea10ce9c5132da091292799f3',1,'httplib']]],
   ['make_5frange_5fheader',['make_range_header',['../namespacehttplib.html#ae6c22614b4ac2395596d91e449515f12',1,'httplib']]],
   ['managed',['managed',['../classdpp_1_1managed.html',1,'dpp']]],
-  ['managed',['managed',['../classdpp_1_1managed.html#a31ef760e6aff5631cdaf8425daaf7e6a',1,'dpp::managed']]],
+  ['managed',['managed',['../classdpp_1_1managed.html#a3e2b7d69e7313d84aff23cadf9ba9a6a',1,'dpp::managed']]],
   ['max_5fage',['max_age',['../classdpp_1_1invite.html#af48b1a919db49531f09a01f8e8115f64',1,'dpp::invite']]],
   ['max_5fshards',['max_shards',['../classdpp_1_1discord__client.html#a7e8e56675006b1af1c09d8de1519f001',1,'dpp::discord_client']]],
   ['max_5fuses',['max_uses',['../classdpp_1_1invite.html#a942cafe78963747660ed5309f6747787',1,'dpp::invite']]],
