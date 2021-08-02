@@ -1,7 +1,8 @@
 var classdpp_1_1presence =
 [
     [ "presence", "classdpp_1_1presence.html#a48cd5e5ab349078d079d0d9f8098451b", null ],
-    [ "presence", "classdpp_1_1presence.html#a30afcfa47028d9ba6419e6e186049353", null ],
+    [ "presence", "classdpp_1_1presence.html#a98d7b61872c1f9a8f8cedcad3075c60f", null ],
+    [ "presence", "classdpp_1_1presence.html#a90f22796d5eeba0cb5abb72301e03e2b", null ],
     [ "~presence", "classdpp_1_1presence.html#aaf9b4823dc5cfa358f1431dc0a13df6b", null ],
     [ "build_json", "classdpp_1_1presence.html#ad281813bc827bc6a471d8436f9c83186", null ],
     [ "desktop_status", "classdpp_1_1presence.html#ac856456c71d7aa98cd88002e00878fe6", null ],

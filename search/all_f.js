@@ -77,7 +77,7 @@ var searchData=
   ['premium_5fsince',['premium_since',['../classdpp_1_1guild__member.html#ae262a3f3d68a9728a92654e2f5b9c758',1,'dpp::guild_member']]],
   ['premium_5fsubscription_5fcount',['premium_subscription_count',['../classdpp_1_1guild.html#acd884a98bc58d26d29a6a5d2e249f1c9',1,'dpp::guild']]],
   ['premium_5ftier',['premium_tier',['../classdpp_1_1guild.html#a164e4d1c99fcce1bed5a72d3bb5e493e',1,'dpp::guild']]],
-  ['presence',['presence',['../classdpp_1_1presence.html#a48cd5e5ab349078d079d0d9f8098451b',1,'dpp::presence::presence()'],['../classdpp_1_1presence.html#a30afcfa47028d9ba6419e6e186049353',1,'dpp::presence::presence(presence_status status, activity_type type, const std::string activity_description)']]],
+  ['presence',['presence',['../classdpp_1_1presence.html#a48cd5e5ab349078d079d0d9f8098451b',1,'dpp::presence::presence()'],['../classdpp_1_1presence.html#a98d7b61872c1f9a8f8cedcad3075c60f',1,'dpp::presence::presence(presence_status status, activity_type type, const std::string &amp;activity_description)'],['../classdpp_1_1presence.html#a90f22796d5eeba0cb5abb72301e03e2b',1,'dpp::presence::presence(presence_status status, activity a)']]],
   ['presence',['presence',['../classdpp_1_1presence.html',1,'dpp']]],
   ['presence_5fflags',['presence_flags',['../namespacedpp.html#a953f1484a5140481ffab2b248618fb22',1,'dpp']]],
   ['presence_5fmap',['presence_map',['../namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f',1,'dpp']]],
