@@ -1,7 +1,7 @@
 var searchData=
 [
   ['talking_5fflags',['talking_flags',['../structdpp_1_1voice__user__talking__t.html#a9d52fb0412548166b6e54d81bdb8980b',1,'dpp::voice_user_talking_t']]],
-  ['target_5fid',['target_id',['../structdpp_1_1audit__entry.html#a0b6fcc890dfd0e55e68c39d2f88d268b',1,'dpp::audit_entry']]],
+  ['target_5fid',['target_id',['../structdpp_1_1audit__entry.html#a0b6fcc890dfd0e55e68c39d2f88d268b',1,'dpp::audit_entry::target_id()'],['../structdpp_1_1command__data__option.html#ae304fd46ea2487bf84be87d7312d92bd',1,'dpp::command_data_option::target_id()']]],
   ['target_5fuser_5fid',['target_user_id',['../classdpp_1_1invite.html#ad9a3073a99b276032dce0e850b21a955',1,'dpp::invite']]],
   ['target_5fuser_5ftype',['target_user_type',['../classdpp_1_1invite.html#aaaf04b46e869c2f365051c81fd06dcf2',1,'dpp::invite']]],
   ['temporary',['temporary',['../classdpp_1_1invite.html#a3cbbaea6f39490617d8e6b2e452a4db5',1,'dpp::invite']]],
