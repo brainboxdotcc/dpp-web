@@ -10,11 +10,13 @@ var classdpp_1_1slashcommand =
     [ "set_application_id", "classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92", null ],
     [ "set_description", "classdpp_1_1slashcommand.html#a50fc02275a4dcba70a5dacb4ecbd2085", null ],
     [ "set_name", "classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353", null ],
+    [ "set_type", "classdpp_1_1slashcommand.html#aa1095faeeacc9c711c9a1e93ff883bfe", null ],
     [ "application_id", "classdpp_1_1slashcommand.html#a68823472ad357bc69759212f6ebe1a82", null ],
     [ "default_permission", "classdpp_1_1slashcommand.html#a464b5758679dd76d9603cea18540021b", null ],
     [ "description", "classdpp_1_1slashcommand.html#a9bdfc4a4e6121349903f7ab28010691a", null ],
     [ "id", "classdpp_1_1slashcommand.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "name", "classdpp_1_1slashcommand.html#aba1bc2d7cb8d9f67071aab5c16df964b", null ],
     [ "options", "classdpp_1_1slashcommand.html#ad7bf348ca0d07ccd3416656f023d913e", null ],
-    [ "permissions", "classdpp_1_1slashcommand.html#a63b80f4596de1e0906a5fc5d4bf5d4f0", null ]
+    [ "permissions", "classdpp_1_1slashcommand.html#a63b80f4596de1e0906a5fc5d4bf5d4f0", null ],
+    [ "type", "classdpp_1_1slashcommand.html#a5c87c504512af7090f8f4c215184320a", null ]
 ];

@@ -35,5 +35,9 @@ var searchData=
   ['cp_5flazy',['cp_lazy',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a055c40e9038f2345a5c1fb9a3d3d648c',1,'dpp']]],
   ['cp_5fnone',['cp_none',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a68e2695356af38492410341873083c49',1,'dpp']]],
   ['cpt_5frole',['cpt_role',['../namespacedpp.html#ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f',1,'dpp']]],
-  ['cpt_5fuser',['cpt_user',['../namespacedpp.html#ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d',1,'dpp']]]
+  ['cpt_5fuser',['cpt_user',['../namespacedpp.html#ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d',1,'dpp']]],
+  ['ctxm_5fchat_5finput',['ctxm_chat_input',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a',1,'dpp']]],
+  ['ctxm_5fmessage',['ctxm_message',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a',1,'dpp']]],
+  ['ctxm_5fnone',['ctxm_none',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824',1,'dpp']]],
+  ['ctxm_5fuser',['ctxm_user',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659',1,'dpp']]]
 ];
