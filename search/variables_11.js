@@ -29,6 +29,7 @@ var searchData=
   ['start',['start',['../classdpp_1_1activity.html#a3ab31f2d396e1c16e3f5a2036a683c9f',1,'dpp::activity']]],
   ['state',['state',['../structdpp_1_1voice__state__update__t.html#a00fa332a89cc7839515806e58b8731a3',1,'dpp::voice_state_update_t::state()'],['../classdpp_1_1activity.html#a6314c58d23a4301b3d7dabc91e472666',1,'dpp::activity::state()']]],
   ['status',['status',['../structdpp_1_1http__request__completion__t.html#a43d0cd80d26f3e1aa23c5539e4f984e0',1,'dpp::http_request_completion_t']]],
+  ['stickers',['stickers',['../structdpp_1_1message.html#a8ab53932e4cf4fa00d021a5ca3f4b906',1,'dpp::message']]],
   ['style',['style',['../classdpp_1_1component.html#a114f858c5c2bcdc1067cb26a14e578af',1,'dpp::component']]],
   ['subscriber_5fcount',['subscriber_count',['../classdpp_1_1integration.html#a6226522574b38e03a4cb2df9ddc7dbba',1,'dpp::integration']]],
   ['success',['success',['../structdpp_1_1confirmation.html#af16e812b41c01161a984498c0c52e66e',1,'dpp::confirmation']]],

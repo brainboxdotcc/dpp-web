@@ -8,5 +8,6 @@ var searchData=
   ['stage_5finstance_5fcreate_5ft',['stage_instance_create_t',['../structdpp_1_1stage__instance__create__t.html',1,'dpp']]],
   ['stage_5finstance_5fdelete',['stage_instance_delete',['../classdpp_1_1events_1_1stage__instance__delete.html',1,'dpp::events']]],
   ['stage_5finstance_5fdelete_5ft',['stage_instance_delete_t',['../structdpp_1_1stage__instance__delete__t.html',1,'dpp']]],
+  ['sticker',['sticker',['../structdpp_1_1sticker.html',1,'dpp']]],
   ['stream',['Stream',['../class_stream.html',1,'']]]
 ];

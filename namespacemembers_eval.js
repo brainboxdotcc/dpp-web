@@ -12,6 +12,7 @@ var namespacemembers_eval =
     [ "o", "namespacemembers_eval.html", null ],
     [ "p", "namespacemembers_eval.html", null ],
     [ "r", "namespacemembers_eval.html", null ],
+    [ "s", "namespacemembers_eval.html", null ],
     [ "u", "namespacemembers_eval.html", null ],
     [ "v", "namespacemembers_eval.html", null ],
     [ "w", "namespacemembers_eval.html", null ]

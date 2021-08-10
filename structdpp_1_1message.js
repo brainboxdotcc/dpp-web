@@ -49,6 +49,7 @@ var structdpp_1_1message =
     [ "reactions", "structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7", null ],
     [ "self_author", "structdpp_1_1message.html#a01de1e67af35ecb77549ccbe94ab7185", null ],
     [ "sent", "structdpp_1_1message.html#a9991c58453a1deb7b785a6b7457372f2", null ],
+    [ "stickers", "structdpp_1_1message.html#a8ab53932e4cf4fa00d021a5ca3f4b906", null ],
     [ "tts", "structdpp_1_1message.html#a8f4ab5546606db3ea4bcdb41b60a5dba", null ],
     [ "type", "structdpp_1_1message.html#a2ed7eaf6f5ff69a94fcb4912c0c795c2", null ],
     [ "webhook_id", "structdpp_1_1message.html#ad1033bc27c5c1436c2e321d1be1d65ed", null ]
