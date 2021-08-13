@@ -22,7 +22,6 @@ var namespacedpp_1_1events =
     [ "guild_role_create", "classdpp_1_1events_1_1guild__role__create.html", "classdpp_1_1events_1_1guild__role__create" ],
     [ "guild_role_delete", "classdpp_1_1events_1_1guild__role__delete.html", "classdpp_1_1events_1_1guild__role__delete" ],
     [ "guild_role_update", "classdpp_1_1events_1_1guild__role__update.html", "classdpp_1_1events_1_1guild__role__update" ],
-    [ "guild_stickers_update", "classdpp_1_1events_1_1guild__stickers__update.html", "classdpp_1_1events_1_1guild__stickers__update" ],
     [ "guild_update", "classdpp_1_1events_1_1guild__update.html", "classdpp_1_1events_1_1guild__update" ],
     [ "integration_create", "classdpp_1_1events_1_1integration__create.html", "classdpp_1_1events_1_1integration__create" ],
     [ "integration_delete", "classdpp_1_1events_1_1integration__delete.html", "classdpp_1_1events_1_1integration__delete" ],

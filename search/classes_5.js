@@ -32,8 +32,6 @@ var searchData=
   ['guild_5frole_5fdelete_5ft',['guild_role_delete_t',['../structdpp_1_1guild__role__delete__t.html',1,'dpp']]],
   ['guild_5frole_5fupdate',['guild_role_update',['../classdpp_1_1events_1_1guild__role__update.html',1,'dpp::events']]],
   ['guild_5frole_5fupdate_5ft',['guild_role_update_t',['../structdpp_1_1guild__role__update__t.html',1,'dpp']]],
-  ['guild_5fstickers_5fupdate',['guild_stickers_update',['../classdpp_1_1events_1_1guild__stickers__update.html',1,'dpp::events']]],
-  ['guild_5fstickers_5fupdate_5ft',['guild_stickers_update_t',['../structdpp_1_1guild__stickers__update__t.html',1,'dpp']]],
   ['guild_5fupdate',['guild_update',['../classdpp_1_1events_1_1guild__update.html',1,'dpp::events']]],
   ['guild_5fupdate_5ft',['guild_update_t',['../structdpp_1_1guild__update__t.html',1,'dpp']]],
   ['guild_5fwidget',['guild_widget',['../classdpp_1_1guild__widget.html',1,'dpp']]]

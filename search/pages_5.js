@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['frequently_20asked_20questions',['Frequently Asked Questions',['../frequently-asked-questions.html',1,'index']]]
+  ['integrating_20with_20spdlog',['Integrating with spdlog',['../spdlog.html',1,'md_docpages_03_example_programs']]]
 ];

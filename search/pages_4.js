@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['example_20programs',['Example Programs',['../md_docpages_03_example_programs.html',1,'']]]
+  ['frequently_20asked_20questions',['Frequently Asked Questions',['../frequently-asked-questions.html',1,'index']]]
 ];
