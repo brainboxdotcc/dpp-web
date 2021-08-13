@@ -111,6 +111,7 @@ var namespacedpp =
     [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],
     [ "stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", "structdpp_1_1stage__instance__delete__t" ],
     [ "sticker", "structdpp_1_1sticker.html", "structdpp_1_1sticker" ],
+    [ "sticker_pack", "structdpp_1_1sticker__pack.html", "structdpp_1_1sticker__pack" ],
     [ "thread_create_t", "structdpp_1_1thread__create__t.html", "structdpp_1_1thread__create__t" ],
     [ "thread_delete_t", "structdpp_1_1thread__delete__t.html", "structdpp_1_1thread__delete__t" ],
     [ "thread_list_sync_t", "structdpp_1_1thread__list__sync__t.html", "structdpp_1_1thread__list__sync__t" ],

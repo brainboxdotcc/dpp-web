@@ -196,6 +196,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
+    [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
     [ "Stream", "class_stream.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],

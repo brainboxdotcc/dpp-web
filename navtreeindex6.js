@@ -1,5 +1,13 @@
 var NAVTREEINDEX6 =
 {
+"structdpp_1_1guild__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[5,0,0,67,1],
+"structdpp_1_1guild__update__t.html#a713b4bd961d45764e5903f85fb8ef9a2":[5,0,0,67,3],
+"structdpp_1_1guild__update__t.html#ac55c2959d69f9852abe93f07101659da":[5,0,0,67,0],
+"structdpp_1_1http__request__completion__t.html":[5,0,0,70],
+"structdpp_1_1http__request__completion__t.html#a060318a4877fff905907532077b5b6a6":[5,0,0,70,7],
+"structdpp_1_1http__request__completion__t.html#a094ddd933ec9bc288812cead549bc39c":[5,0,0,70,8],
+"structdpp_1_1http__request__completion__t.html#a0d11ccc783c204f117a4000bac3b1988":[5,0,0,70,6],
+"structdpp_1_1http__request__completion__t.html#a43d0cd80d26f3e1aa23c5539e4f984e0":[5,0,0,70,9],
 "structdpp_1_1http__request__completion__t.html#a56ffdd4e2660564d3360e28d34bccc64":[5,0,0,70,4],
 "structdpp_1_1http__request__completion__t.html#a6e8e54c80c5b439ddfd0ddb6f9e4039b":[5,0,0,70,1],
 "structdpp_1_1http__request__completion__t.html#a75ce533196be655ba6b95fac23122a41":[5,0,0,70,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX6 =
 "structdpp_1_1select__click__t.html#ab71587c74f4bbf1ee1b0f0b95523394b":[5,0,0,104,1],
 "structdpp_1_1select__click__t.html#ad4dea83a9b8e03c431c84389bf71557e":[5,0,0,104,5],
 "structdpp_1_1select__click__t.html#ad94f5ca5d1602958053a7b99fcde57be":[5,0,0,104,2],
-"structdpp_1_1select__click__t.html#adb17761e9ee06c77ae9daf0313c63913":[5,0,0,104,0],
-"structdpp_1_1select__click__t.html#af8cdf3e3262aa93c7b4bcb023c8b1f46":[5,0,0,104,3],
-"structdpp_1_1select__option.html":[5,0,0,105],
-"structdpp_1_1select__option.html#a0bbb221b08b77ffb46d1b352bf7f8222":[5,0,0,105,11],
-"structdpp_1_1select__option.html#a473cb19e265133cac10f20813f047b80":[5,0,0,105,6],
-"structdpp_1_1select__option.html#a57297c33373a7e60e5ca2a1fa1252d34":[5,0,0,105,7],
-"structdpp_1_1select__option.html#a78df0a21b01447ffacefe4ee5d0a076a":[5,0,0,105,8],
-"structdpp_1_1select__option.html#a841099bce27c36f02c3edd204a334a68":[5,0,0,105,3],
-"structdpp_1_1select__option.html#a8fd5bb5f91cf48af2f5adc18396e74b4":[5,0,0,105,4]
+"structdpp_1_1select__click__t.html#adb17761e9ee06c77ae9daf0313c63913":[5,0,0,104,0]
 };
