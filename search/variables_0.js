@@ -20,10 +20,12 @@ var searchData=
   ['approximate_5fpresence_5fcount',['approximate_presence_count',['../classdpp_1_1invite.html#a76dac8c741c2315e6be8733d12856b43',1,'dpp::invite']]],
   ['archive_5ftimestamp',['archive_timestamp',['../structdpp_1_1thread__metadata.html#a6d25e9f26dabba02352d6a9aaacb7743',1,'dpp::thread_metadata']]],
   ['archived',['archived',['../structdpp_1_1thread__metadata.html#aacd872999ff72501feadb8069e0243fd',1,'dpp::thread_metadata']]],
+  ['asset',['asset',['../structdpp_1_1sticker.html#af01f4dd7249de7c69f0a08e5b0e27459',1,'dpp::sticker']]],
   ['attachments',['attachments',['../structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7',1,'dpp::message']]],
   ['audio',['audio',['../structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413',1,'dpp::voice_receive_t']]],
   ['audio_5fsize',['audio_size',['../structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668',1,'dpp::voice_receive_t']]],
   ['author',['author',['../structdpp_1_1embed.html#abe6263ce0132837017e0aca16c6e299d',1,'dpp::embed::author()'],['../structdpp_1_1message.html#a35c14f04382266b29c4ca076b4e0f9e0',1,'dpp::message::author()']]],
   ['auto_5farchive_5fduration',['auto_archive_duration',['../structdpp_1_1thread__metadata.html#af45bbe4a17648d3becaa0aab698f3fb9',1,'dpp::thread_metadata']]],
+  ['available',['available',['../structdpp_1_1sticker.html#a2c42ec44209ccf454785b796250caa7f',1,'dpp::sticker']]],
   ['avatar',['avatar',['../classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3',1,'dpp::user::avatar()'],['../classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110',1,'dpp::webhook::avatar()']]]
 ];

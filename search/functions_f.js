@@ -58,6 +58,7 @@ var searchData=
   ['stage_5finstance_5fdelete_5ft',['stage_instance_delete_t',['../structdpp_1_1stage__instance__delete__t.html#ad9815ab643039f8346df3c6bb97ddc20',1,'dpp::stage_instance_delete_t']]],
   ['start',['start',['../classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f',1,'dpp::cluster']]],
   ['status',['status',['../classdpp_1_1presence.html#af939e50cae79426b3402a74e237a015a',1,'dpp::presence']]],
+  ['sticker',['sticker',['../structdpp_1_1sticker.html#a0d0f399bc06d635cab0fc0cab9603b6f',1,'dpp::sticker']]],
   ['stop_5faudio',['stop_audio',['../classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d',1,'dpp::discord_voice_client']]],
   ['store',['store',['../classdpp_1_1cache.html#a959d7e651c20f8befe5958ee9b9633ba',1,'dpp::cache']]],
   ['stringnotnull',['StringNotNull',['../namespacedpp.html#acd67ddd4f95dbdac48f554ddcbbeb0b1',1,'dpp']]],
