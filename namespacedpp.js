@@ -67,6 +67,7 @@ var namespacedpp =
     [ "guild_role_create_t", "structdpp_1_1guild__role__create__t.html", "structdpp_1_1guild__role__create__t" ],
     [ "guild_role_delete_t", "structdpp_1_1guild__role__delete__t.html", "structdpp_1_1guild__role__delete__t" ],
     [ "guild_role_update_t", "structdpp_1_1guild__role__update__t.html", "structdpp_1_1guild__role__update__t" ],
+    [ "guild_stickers_update_t", "structdpp_1_1guild__stickers__update__t.html", "structdpp_1_1guild__stickers__update__t" ],
     [ "guild_update_t", "structdpp_1_1guild__update__t.html", "structdpp_1_1guild__update__t" ],
     [ "guild_widget", "classdpp_1_1guild__widget.html", "classdpp_1_1guild__widget" ],
     [ "http_request", "classdpp_1_1http__request.html", "classdpp_1_1http__request" ],

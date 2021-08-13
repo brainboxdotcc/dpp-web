@@ -111,7 +111,8 @@ $(document).ready(function(){initNavTree('classdpp_1_1cluster.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -241,6 +242,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abef8cb4e6080a0bd0f6641853d088fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#abef8cb4e6080a0bd0f6641853d088fec">on_guild_emojis_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1guild__emojis__update__t.html">guild_emojis_update_t</a> &amp;_event)&gt; _guild_emojis_update)</td></tr>
 <tr class="memdesc:abef8cb4e6080a0bd0f6641853d088fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when new emojis are added to a guild. The complete set of emojis is sent every time.  <a href="#abef8cb4e6080a0bd0f6641853d088fec">More...</a><br /></td></tr>
 <tr class="separator:abef8cb4e6080a0bd0f6641853d088fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d716ef851d50ef8cb266d17306b65de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7d716ef851d50ef8cb266d17306b65de">on_guild_stickers_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1guild__stickers__update__t.html">guild_stickers_update_t</a> &amp;_event)&gt; _guild_stickers_update)</td></tr>
+<tr class="memdesc:a7d716ef851d50ef8cb266d17306b65de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when new stickers are added to a guild. The complete set of stickers is sent every time.  <a href="#a7d716ef851d50ef8cb266d17306b65de">More...</a><br /></td></tr>
+<tr class="separator:a7d716ef851d50ef8cb266d17306b65de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f55020d0ad012c494cf80bb9ee86d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2f55020d0ad012c494cf80bb9ee86d3a">on_presence_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1presence__update__t.html">presence_update_t</a> &amp;_event)&gt; _presence_update)</td></tr>
 <tr class="memdesc:a2f55020d0ad012c494cf80bb9ee86d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a user's presence is updated. To receive these you will need the GUILD_PRESENCES privileged intent. You will receive many of these, very often, and receiving them will significaintly increase your bot's CPU usage. If you don't need them it is recommended to not ask for them.  <a href="#a2f55020d0ad012c494cf80bb9ee86d3a">More...</a><br /></td></tr>
 <tr class="separator:a2f55020d0ad012c494cf80bb9ee86d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6190,6 +6194,30 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_guild_role_update</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7d716ef851d50ef8cb266d17306b65de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_guild_stickers_update </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1guild__stickers__update__t.html">guild_stickers_update_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_guild_stickers_update</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when new stickers are added to a guild. The complete set of stickers is sent every time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_guild_stickers_update</td><td>User function to attach to event </td></tr>
   </table>
   </dd>
 </dl>

@@ -114,6 +114,7 @@ var searchData=
   ['guild_5fsticker_5fget',['guild_sticker_get',['../classdpp_1_1cluster.html#ac7a2d335385b4689e7489d0eaf4475fe',1,'dpp::cluster']]],
   ['guild_5fsticker_5fmodify',['guild_sticker_modify',['../classdpp_1_1cluster.html#a222a8cb4498fd65ae8bb3345b02d0f8e',1,'dpp::cluster']]],
   ['guild_5fstickers_5fget',['guild_stickers_get',['../classdpp_1_1cluster.html#adccd1468d3f031c5bc786fdbd087d0a2',1,'dpp::cluster']]],
+  ['guild_5fstickers_5fupdate_5ft',['guild_stickers_update_t',['../structdpp_1_1guild__stickers__update__t.html#aefdc969a94cdbb6d91c7123bd820d8ff',1,'dpp::guild_stickers_update_t']]],
   ['guild_5fsync_5fintegration',['guild_sync_integration',['../classdpp_1_1cluster.html#a58d976f9d101225e05482db7b739f986',1,'dpp::cluster']]],
   ['guild_5ftemplate_5fcreate',['guild_template_create',['../classdpp_1_1cluster.html#a38db2ce96431b742e98cabf8170a84d7',1,'dpp::cluster']]],
   ['guild_5ftemplate_5fdelete',['guild_template_delete',['../classdpp_1_1cluster.html#a91791a9d280c0973834223df37d39ac8',1,'dpp::cluster']]],
