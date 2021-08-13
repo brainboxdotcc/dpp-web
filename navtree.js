@@ -5,6 +5,7 @@ var NAVTREE =
     [ "Building D++", "md_docpages_02_build.html", "md_docpages_02_build" ],
     [ "Example Programs", "md_docpages_03_example_programs.html", "md_docpages_03_example_programs" ],
     [ "Advanced Reference", "md_docpages_04_advanced_reference.html", "md_docpages_04_advanced_reference" ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -36,9 +37,9 @@ var NAVTREEINDEX =
 "classdpp_1_1dispatcher.html#abe9360d2e501ae40d513bf2a737758b8",
 "classdpp_1_1http__request.html#a6f350d4340fe77e224783091607f63eb",
 "classdpp_1_1voicestate.html#a8b07092f4d7a76db4c18851a26a58e97",
-"structdpp_1_1button__click__t.html",
-"structdpp_1_1guild__role__update__t.html#ac9d31e61c8f77d7a8108b6a2652f41cd",
-"structdpp_1_1select__click__t.html#a2d4777d1049d31ed943ecebfa2de7db9"
+"structdpp_1_1bucket__t.html#ae8f8eca07afcc928040496878a4c2281",
+"structdpp_1_1guild__role__update__t.html#a7d60995bae8dace1057424b3e1e97237",
+"structdpp_1_1select__click__t.html#a163eb52d33f1b91333f62f5db98f9ce3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

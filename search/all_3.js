@@ -18,6 +18,7 @@ var searchData=
   ['deletion_5fmutex',['deletion_mutex',['../namespacedpp.html#a2630b73cc2ee72fec720c5324655f400',1,'dpp']]],
   ['deletion_5fqueue',['deletion_queue',['../namespacedpp.html#a04c02d7d0ead46eea16ed48015e82a99',1,'dpp']]],
   ['deny',['deny',['../structdpp_1_1permission__overwrite.html#acf2ede1bb80c8661eb6c58a4dc124f10',1,'dpp::permission_overwrite']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['description',['description',['../structdpp_1_1param__info.html#a83b97805bed52aafbce70379a9e4cb18',1,'dpp::param_info::description()'],['../classdpp_1_1dtemplate.html#a3b48f9a642e8bcca21c75679c50ce413',1,'dpp::dtemplate::description()'],['../classdpp_1_1guild.html#ade8a95b5a41929f92e1fbc079cedb86e',1,'dpp::guild::description()'],['../structdpp_1_1integration__app.html#a22db17b70cfe919b79a629d0c19a5dad',1,'dpp::integration_app::description()'],['../structdpp_1_1select__option.html#a9e8b7f77dc54e0746d5781179d65f703',1,'dpp::select_option::description()'],['../structdpp_1_1embed.html#ac9d64f935df99fc11ac960a29529f37c',1,'dpp::embed::description()'],['../structdpp_1_1sticker.html#a82f59ad29bbfdad53ed45177e1b77c96',1,'dpp::sticker::description()'],['../structdpp_1_1sticker__pack.html#a27f09153a66b2a3390b9b8b66a700f28',1,'dpp::sticker_pack::description()'],['../structdpp_1_1command__option.html#a82debcf96e4265cf7d8ea6b2aa47e481',1,'dpp::command_option::description()'],['../classdpp_1_1slashcommand.html#a9bdfc4a4e6121349903f7ab28010691a',1,'dpp::slashcommand::description()']]],
   ['desktop_5fstatus',['desktop_status',['../classdpp_1_1presence.html#ac856456c71d7aa98cd88002e00878fe6',1,'dpp::presence']]],
   ['detail',['detail',['../namespacedetail.html',1,'']]],
@@ -37,8 +38,8 @@ var searchData=
   ['dispatcher',['dispatcher',['../classdpp_1_1dispatcher.html',1,'dpp']]],
   ['dm',['DM',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092aea2cd43492b5252e09a6c9b29c58d159',1,'dpp']]],
   ['dpp',['dpp',['../namespacedpp.html',1,'']]],
-  ['dtemplate',['dtemplate',['../classdpp_1_1dtemplate.html',1,'dpp']]],
   ['dtemplate',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]],
+  ['dtemplate',['dtemplate',['../classdpp_1_1dtemplate.html',1,'dpp']]],
   ['dtemplate_5fmap',['dtemplate_map',['../namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6',1,'dpp']]],
   ['events',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
   ['utility',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]]
