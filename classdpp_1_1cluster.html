@@ -111,7 +111,8 @@ $(document).ready(function(){initNavTree('classdpp_1_1cluster.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -241,6 +242,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abef8cb4e6080a0bd0f6641853d088fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#abef8cb4e6080a0bd0f6641853d088fec">on_guild_emojis_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1guild__emojis__update__t.html">guild_emojis_update_t</a> &amp;_event)&gt; _guild_emojis_update)</td></tr>
 <tr class="memdesc:abef8cb4e6080a0bd0f6641853d088fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when new emojis are added to a guild. The complete set of emojis is sent every time.  <a href="#abef8cb4e6080a0bd0f6641853d088fec">More...</a><br /></td></tr>
 <tr class="separator:abef8cb4e6080a0bd0f6641853d088fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d716ef851d50ef8cb266d17306b65de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7d716ef851d50ef8cb266d17306b65de">on_guild_stickers_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1guild__stickers__update__t.html">guild_stickers_update_t</a> &amp;_event)&gt; _guild_stickers_update)</td></tr>
+<tr class="memdesc:a7d716ef851d50ef8cb266d17306b65de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when new stickers are added to a guild. The complete set of stickers is sent every time.  <a href="#a7d716ef851d50ef8cb266d17306b65de">More...</a><br /></td></tr>
+<tr class="separator:a7d716ef851d50ef8cb266d17306b65de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f55020d0ad012c494cf80bb9ee86d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2f55020d0ad012c494cf80bb9ee86d3a">on_presence_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1presence__update__t.html">presence_update_t</a> &amp;_event)&gt; _presence_update)</td></tr>
 <tr class="memdesc:a2f55020d0ad012c494cf80bb9ee86d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a user's presence is updated. To receive these you will need the GUILD_PRESENCES privileged intent. You will receive many of these, very often, and receiving them will significaintly increase your bot's CPU usage. If you don't need them it is recommended to not ask for them.  <a href="#a2f55020d0ad012c494cf80bb9ee86d3a">More...</a><br /></td></tr>
 <tr class="separator:a2f55020d0ad012c494cf80bb9ee86d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -700,6 +704,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab119357a15f1c5a53f4d53bf06bf9e49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab119357a15f1c5a53f4d53bf06bf9e49">get_joined_private_archived_threads</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> before_id=0, uint16_t limit=0, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:ab119357a15f1c5a53f4d53bf06bf9e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get private archived threads in a channel which current user has joined (Sorted by ID in descending order)  <a href="#ab119357a15f1c5a53f4d53bf06bf9e49">More...</a><br /></td></tr>
 <tr class="separator:ab119357a15f1c5a53f4d53bf06bf9e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f31d36f327a74d24fb4075cec6c2400"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7f31d36f327a74d24fb4075cec6c2400">guild_sticker_create</a> (<a class="el" href="structdpp_1_1sticker.html">sticker</a> &amp;s, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a7f31d36f327a74d24fb4075cec6c2400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a sticker in a guild.  <a href="#a7f31d36f327a74d24fb4075cec6c2400">More...</a><br /></td></tr>
+<tr class="separator:a7f31d36f327a74d24fb4075cec6c2400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222a8cb4498fd65ae8bb3345b02d0f8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a222a8cb4498fd65ae8bb3345b02d0f8e">guild_sticker_modify</a> (<a class="el" href="structdpp_1_1sticker.html">sticker</a> &amp;s, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a222a8cb4498fd65ae8bb3345b02d0f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a sticker in a guild.  <a href="#a222a8cb4498fd65ae8bb3345b02d0f8e">More...</a><br /></td></tr>
+<tr class="separator:a222a8cb4498fd65ae8bb3345b02d0f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ed56cd299340bdf286bc3457225124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a08ed56cd299340bdf286bc3457225124">guild_sticker_delete</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> sticker_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a08ed56cd299340bdf286bc3457225124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a sticker from a guild.  <a href="#a08ed56cd299340bdf286bc3457225124">More...</a><br /></td></tr>
+<tr class="separator:a08ed56cd299340bdf286bc3457225124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115a49075ceb1817f1e81fc9388bf65e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a115a49075ceb1817f1e81fc9388bf65e">nitro_sticker_get</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:a115a49075ceb1817f1e81fc9388bf65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a nitro sticker.  <a href="#a115a49075ceb1817f1e81fc9388bf65e">More...</a><br /></td></tr>
+<tr class="separator:a115a49075ceb1817f1e81fc9388bf65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a2d335385b4689e7489d0eaf4475fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac7a2d335385b4689e7489d0eaf4475fe">guild_sticker_get</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:ac7a2d335385b4689e7489d0eaf4475fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a guild sticker.  <a href="#ac7a2d335385b4689e7489d0eaf4475fe">More...</a><br /></td></tr>
+<tr class="separator:ac7a2d335385b4689e7489d0eaf4475fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adccd1468d3f031c5bc786fdbd087d0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#adccd1468d3f031c5bc786fdbd087d0a2">guild_stickers_get</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:adccd1468d3f031c5bc786fdbd087d0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all guild stickers.  <a href="#adccd1468d3f031c5bc786fdbd087d0a2">More...</a><br /></td></tr>
+<tr class="separator:adccd1468d3f031c5bc786fdbd087d0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64421a4b2402238feb0536639009c18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ae64421a4b2402238feb0536639009c18">sticker_packs_get</a> (<a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:ae64421a4b2402238feb0536639009c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sticker packs.  <a href="#ae64421a4b2402238feb0536639009c18">More...</a><br /></td></tr>
+<tr class="separator:ae64421a4b2402238feb0536639009c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc">get_voice_regions</a> (<a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all voice regions.  <a href="#af6d45a29b3976f7b623d92e70ab9a1bc">More...</a><br /></td></tr>
 <tr class="separator:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4305,6 +4330,195 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7f31d36f327a74d24fb4075cec6c2400"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_sticker_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdpp_1_1sticker.html">sticker</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a sticker in a guild. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Sticker to create. Must have its guild ID set. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1sticker.html" title="Represents stickers received in messages. ">dpp::sticker</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a08ed56cd299340bdf286bc3457225124"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_sticker_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>sticker_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete a sticker from a guild. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sticker_id</td><td>sticker ID to delete </td></tr>
+    <tr><td class="paramname">guild_id</td><td>guild ID to delete from </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1sticker.html" title="Represents stickers received in messages. ">dpp::sticker</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac7a2d335385b4689e7489d0eaf4475fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_sticker_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a guild sticker. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Id of sticker to get. </td></tr>
+    <tr><td class="paramname">guild_id</td><td>Guild ID of the guild where the sticker is </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1sticker.html" title="Represents stickers received in messages. ">dpp::sticker</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a222a8cb4498fd65ae8bb3345b02d0f8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_sticker_modify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdpp_1_1sticker.html">sticker</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modify a sticker in a guild. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Sticker to modify. Must have its guild ID and sticker ID set. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1sticker.html" title="Represents stickers received in messages. ">dpp::sticker</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adccd1468d3f031c5bc786fdbd087d0a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_stickers_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all guild stickers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild ID of the guild where the sticker is </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1sticker.html" title="Represents stickers received in messages. ">dpp::sticker</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a58d976f9d101225e05482db7b739f986"></a>
 <div class="memitem">
 <div class="memproto">
@@ -5423,6 +5637,41 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a115a49075ceb1817f1e81fc9388bf65e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::nitro_sticker_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a nitro sticker. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Id of sticker to get. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1sticker.html" title="Represents stickers received in messages. ">dpp::sticker</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aaf2ae12b7d433f3b8e84dc72258e90a2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -5945,6 +6194,30 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_guild_role_update</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7d716ef851d50ef8cb266d17306b65de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_guild_stickers_update </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1guild__stickers__update__t.html">guild_stickers_update_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_guild_stickers_update</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when new stickers are added to a guild. The complete set of stickers is sent every time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_guild_stickers_update</td><td>User function to attach to event </td></tr>
   </table>
   </dd>
 </dl>
@@ -7235,6 +7508,30 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">return_after</td><td>If true the bot will return to your program after starting shards, if false this function will never return. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae64421a4b2402238feb0536639009c18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::sticker_packs_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get sticker packs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1sticker.html" title="Represents stickers received in messages. ">dpp::sticker</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>

@@ -2,6 +2,7 @@ var searchData=
 [
   ['banned',['banned',['../structdpp_1_1guild__ban__add__t.html#a66dadcaca1f356964834a9b981dcf1fb',1,'dpp::guild_ban_add_t']]],
   ['banner',['banner',['../classdpp_1_1guild.html#ad5736b31cf35641cb2c78f9353d3a8a5',1,'dpp::guild']]],
+  ['banner_5fasset_5fid',['banner_asset_id',['../structdpp_1_1sticker__pack.html#a1f2430ab0a0bebabe48954017ef4a003',1,'dpp::sticker_pack']]],
   ['banning_5fguild',['banning_guild',['../structdpp_1_1guild__ban__add__t.html#a205babd5bfbb4ed9810d824d28711536',1,'dpp::guild_ban_add_t']]],
   ['body',['body',['../structdpp_1_1http__request__completion__t.html#ac14ffa7060df12797e238f2619153ef9',1,'dpp::http_request_completion_t']]],
   ['bot',['bot',['../structdpp_1_1integration__app.html#aca271fe17734a35346dc13a18034b5b8',1,'dpp::integration_app']]],

@@ -59,6 +59,7 @@ var hierarchy =
       [ "dpp::events::guild_role_create", "classdpp_1_1events_1_1guild__role__create.html", null ],
       [ "dpp::events::guild_role_delete", "classdpp_1_1events_1_1guild__role__delete.html", null ],
       [ "dpp::events::guild_role_update", "classdpp_1_1events_1_1guild__role__update.html", null ],
+      [ "dpp::events::guild_stickers_update", "classdpp_1_1events_1_1guild__stickers__update.html", null ],
       [ "dpp::events::guild_update", "classdpp_1_1events_1_1guild__update.html", null ],
       [ "dpp::events::integration_create", "classdpp_1_1events_1_1integration__create.html", null ],
       [ "dpp::events::integration_delete", "classdpp_1_1events_1_1integration__delete.html", null ],
@@ -114,6 +115,7 @@ var hierarchy =
       [ "dpp::guild_role_create_t", "structdpp_1_1guild__role__create__t.html", null ],
       [ "dpp::guild_role_delete_t", "structdpp_1_1guild__role__delete__t.html", null ],
       [ "dpp::guild_role_update_t", "structdpp_1_1guild__role__update__t.html", null ],
+      [ "dpp::guild_stickers_update_t", "structdpp_1_1guild__stickers__update__t.html", null ],
       [ "dpp::guild_update_t", "structdpp_1_1guild__update__t.html", null ],
       [ "dpp::integration_create_t", "structdpp_1_1integration__create__t.html", null ],
       [ "dpp::integration_delete_t", "structdpp_1_1integration__delete__t.html", null ],
@@ -196,6 +198,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
+    [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
     [ "Stream", "class_stream.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],

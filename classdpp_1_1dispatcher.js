@@ -44,6 +44,7 @@ var classdpp_1_1dispatcher =
     [ "select_click", "classdpp_1_1dispatcher.html#a071ef2f5586d7879dbb17d9b1757d38a", null ],
     [ "stage_instance_create", "classdpp_1_1dispatcher.html#aa405a83fbbbd434010b838b443d61897", null ],
     [ "stage_instance_delete", "classdpp_1_1dispatcher.html#a83540a056df758f8e9847c1bc8d9ba06", null ],
+    [ "stickers_update", "classdpp_1_1dispatcher.html#a9bd685c0f0e60a75d65a231d1e4193cd", null ],
     [ "thread_create", "classdpp_1_1dispatcher.html#afbfed5c7753f5d0314d17bef0f475960", null ],
     [ "thread_delete", "classdpp_1_1dispatcher.html#a80f4cf2b1a6d240d1519126705147412", null ],
     [ "thread_list_sync", "classdpp_1_1dispatcher.html#a488948f48942387f07d6309b73dd5b90", null ],
