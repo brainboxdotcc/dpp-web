@@ -80,7 +80,7 @@ var searchData=
   ['slashcommand',['slashcommand',['../classdpp_1_1slashcommand.html',1,'dpp']]],
   ['slashcommand',['slashcommand',['../classdpp_1_1slashcommand.html#add0654f80f31c52fbbf7d1541653a7b0',1,'dpp::slashcommand']]],
   ['slashcommand_5fcontextmenu_5ftype',['slashcommand_contextmenu_type',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb',1,'dpp']]],
-  ['slashcommand_5fmap',['slashcommand_map',['../namespacedpp.html#acb9a69e08af58173ea9644999290416d',1,'dpp']]],
+  ['slashcommand_5fmap',['slashcommand_map',['../namespacedpp.html#adfefe335636cdf5dbbba145a3828c554',1,'dpp']]],
   ['snowflake',['snowflake',['../namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475',1,'dpp']]],
   ['snowflakenotnull',['SnowflakeNotNull',['../namespacedpp.html#a82aba4478fa9f6b684d209af7a9eb754',1,'dpp']]],
   ['sodium_5finitialised',['sodium_initialised',['../classdpp_1_1discord__voice__client.html#adfbadeaa50f485f0a0418c4570e1a4cd',1,'dpp::discord_voice_client']]],
