@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classdpp_1_1voicestate.html#a5540c3997db9d636991472684e2864e1":[6,0,0,133,2],
+"classdpp_1_1voicestate.html#a6aac3d2a85d63a432d911d7d8711a833":[6,0,0,133,8],
 "classdpp_1_1voicestate.html#a8b07092f4d7a76db4c18851a26a58e97":[6,0,0,133,6],
 "classdpp_1_1voicestate.html#a94e4a9ddbfb2368a4d06c1cd1f538141":[6,0,0,133,15],
 "classdpp_1_1voicestate.html#abf58f2ac3357bc012b7bf617309919c9":[6,0,0,133,12],
@@ -63,8 +65,8 @@ var NAVTREEINDEX4 =
 "deprecated.html":[4],
 "firstbot.html":[2,0],
 "frequently-asked-questions.html":[0],
-"functions.html":[6,3,0],
 "functions.html":[6,3,0,0],
+"functions.html":[6,3,0],
 "functions_b.html":[6,3,0,1],
 "functions_c.html":[6,3,0,2],
 "functions_d.html":[6,3,0,3],
@@ -109,8 +111,8 @@ var NAVTREEINDEX4 =
 "functions_t.html":[6,3,0,19],
 "functions_u.html":[6,3,0,20],
 "functions_v.html":[6,3,0,21],
-"functions_vars.html":[6,3,2],
 "functions_vars.html":[6,3,2,0],
+"functions_vars.html":[6,3,2],
 "functions_vars_b.html":[6,3,2,1],
 "functions_vars_c.html":[6,3,2,2],
 "functions_vars_d.html":[6,3,2,3],
@@ -160,8 +162,6 @@ var NAVTREEINDEX4 =
 "namespacemembers.html":[5,1,0,7],
 "namespacemembers.html":[5,1,0,8],
 "namespacemembers.html":[5,1,0,9],
-"namespacemembers.html":[5,1,0,15],
-"namespacemembers.html":[5,1,0,10],
 "namespacemembers.html":[5,1,0,11],
 "namespacemembers.html":[5,1,0,14],
 "namespacemembers.html":[5,1,0,16],
@@ -171,6 +171,8 @@ var NAVTREEINDEX4 =
 "namespacemembers.html":[5,1,0,19],
 "namespacemembers.html":[5,1,0,12],
 "namespacemembers.html":[5,1,0,5],
+"namespacemembers.html":[5,1,0,15],
+"namespacemembers.html":[5,1,0,10],
 "namespacemembers_enum.html":[5,1,4],
 "namespacemembers_eval.html":[5,1,5,5],
 "namespacemembers_eval.html":[5,1,5,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "structdpp_1_1audit__extra.html#ae6773d56dd102f899895079daa2c66a9":[6,0,0,9,7],
 "structdpp_1_1bucket__t.html":[6,0,0,12],
 "structdpp_1_1bucket__t.html#a092991348f1588a752cae246db4b30f6":[6,0,0,12,0],
-"structdpp_1_1bucket__t.html#a3e2e9b5b75af791b18a92f466b75020c":[6,0,0,12,4],
-"structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c":[6,0,0,12,3],
-"structdpp_1_1bucket__t.html#a69e733a2599fa42777c7cd302219d1ab":[6,0,0,12,2]
+"structdpp_1_1bucket__t.html#a3e2e9b5b75af791b18a92f466b75020c":[6,0,0,12,4]
 };

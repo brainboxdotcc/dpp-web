@@ -352,6 +352,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5bca14a420fac05fbff570edb8d36e7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a5bca14a420fac05fbff570edb8d36e7a">guild_command_create</a> (<a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &amp;s, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a5bca14a420fac05fbff570edb8d36e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a slash command local to a guild.  <a href="#a5bca14a420fac05fbff570edb8d36e7a">More...</a><br /></td></tr>
 <tr class="separator:a5bca14a420fac05fbff570edb8d36e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7aad2d123fe4d13cb880ff59d8048f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa7aad2d123fe4d13cb880ff59d8048f5">guild_bulk_command_create</a> (const std::vector&lt; <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &gt; &amp;commands, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:aa7aad2d123fe4d13cb880ff59d8048f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create/overwrite guild slash commands.  <a href="#aa7aad2d123fe4d13cb880ff59d8048f5">More...</a><br /></td></tr>
+<tr class="separator:aa7aad2d123fe4d13cb880ff59d8048f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2319ca200dcd5cce1b9b6696946ece22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2319ca200dcd5cce1b9b6696946ece22">global_bulk_command_create</a> (const std::vector&lt; <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &gt; &amp;commands, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a2319ca200dcd5cce1b9b6696946ece22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create/overwrite global slash commands.  <a href="#a2319ca200dcd5cce1b9b6696946ece22">More...</a><br /></td></tr>
+<tr class="separator:a2319ca200dcd5cce1b9b6696946ece22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef037a47fee2efddedfe78ba4bf0467c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aef037a47fee2efddedfe78ba4bf0467c">global_command_edit</a> (const <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &amp;s, <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:aef037a47fee2efddedfe78ba4bf0467c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a global slash command (a bot can have a maximum of 100 of these)  <a href="#aef037a47fee2efddedfe78ba4bf0467c">More...</a><br /></td></tr>
 <tr class="separator:aef037a47fee2efddedfe78ba4bf0467c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2632,6 +2638,41 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2319ca200dcd5cce1b9b6696946ece22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::global_bulk_command_create </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>commands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create/overwrite global slash commands. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Vector of slash commands to create/update </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a list of dpp::slashcommmand object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a1140708ccf01ffb15f19f50ae731386d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2972,6 +3013,48 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">guild_id</td><td>Guild ID to prune </td></tr>
     <tr><td class="paramname">pruneinfo</td><td>Pruning info </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa7aad2d123fe4d13cb880ff59d8048f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_bulk_command_create </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>commands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create/overwrite guild slash commands. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Vector of slash commands to create/update </td></tr>
+    <tr><td class="paramname">guild_id</td><td>Guild ID to create/update the slash commands in </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a list of dpp::slashcommmand object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>
