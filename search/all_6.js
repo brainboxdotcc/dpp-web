@@ -38,7 +38,7 @@ var searchData=
   ['get_5fdm_5fchannel',['get_dm_channel',['../classdpp_1_1cluster.html#ae6164d5543b7594731a980da9b0b2088',1,'dpp::cluster']]],
   ['get_5femoji_5fcache',['get_emoji_cache',['../namespacedpp.html#a139e9e31a917d3ec43624cfb8ad86c96',1,'dpp']]],
   ['get_5femoji_5fcount',['get_emoji_count',['../namespacedpp.html#a8efa72a90f8cb79e1632f2d3525fd5fe',1,'dpp']]],
-  ['get_5ferror',['get_error',['../structdpp_1_1confirmation__callback__t.html#a236e18583e5bec566956670374cb28fa',1,'dpp::confirmation_callback_t']]],
+  ['get_5ferror',['get_error',['../structdpp_1_1confirmation__callback__t.html#a612750509ef5f81831fa4c8c59fa7711',1,'dpp::confirmation_callback_t']]],
   ['get_5fgateway_5fbot',['get_gateway_bot',['../classdpp_1_1cluster.html#a68f16d04f100a0159683cba96e8c0a6c',1,'dpp::cluster']]],
   ['get_5fguild_5fcache',['get_guild_cache',['../namespacedpp.html#a75368ba131feafab62f8468e183fdde4',1,'dpp']]],
   ['get_5fguild_5fcount',['get_guild_count',['../classdpp_1_1discord__client.html#a24e750fd3a503a65b41ab6525b7b2e72',1,'dpp::discord_client::get_guild_count()'],['../namespacedpp.html#a95ca5ac5d924ef3178950365ac4be1bd',1,'dpp::get_guild_count()']]],
