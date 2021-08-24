@@ -114,11 +114,11 @@ make -j8
 <p>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </pre><p>Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
 <h2>5. Using the library</h2>
-<p>Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">g++ -std=c++17 -ldpp -lfmt mydppbot.cpp -o dppbot
+<p>Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp
 </pre><p>The important flags in this command-line are:</p>
 <ul>
 <li><code>-std=c++17</code> - Required to compile the headers</li>
-<li><code>-ldpp -lfmt</code> - Link to libdpp.so and its dependencies, also in /usr/local</li>
+<li><code>-lfmt</code> - Link to libdpp.so in /usr/local</li>
 <li><code>mydppbot.cpp</code> - Your source code</li>
 <li><code>dppbot</code> - The name of the executable to make</li>
 </ul>
