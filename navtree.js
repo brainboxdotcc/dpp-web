@@ -33,13 +33,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1cluster.html#acb1a4777f0907ee6c841ba008a81f60b",
-"classdpp_1_1dispatcher.html#ab4635617a097fd90d9a9782066b7c8b3",
-"classdpp_1_1http__request.html#a620ba104acf6e2c25bcc844857fd44d3",
-"classdpp_1_1voicestate.html#a5540c3997db9d636991472684e2864e1",
-"structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c",
-"structdpp_1_1guild__role__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1rtp__header.html#acc1b39793e54cb2caf586cf65e2d42bd"
+"classdpp_1_1cluster.html#ac194025b4189078493a6684a2df6d3d3",
+"classdpp_1_1dispatcher.html#a9bd685c0f0e60a75d65a231d1e4193cd",
+"classdpp_1_1guild__widget.html#af862be6e098acb507a306bc37b6e4ad9",
+"classdpp_1_1voicestate.html#a24cf57b27275f7e5c650f581da9c469d",
+"structdpp_1_1audit__extra.html#a9821254451dc82c5308243e44ee02ef3",
+"structdpp_1_1guild__role__delete__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
+"structdpp_1_1resumed__t.html#a6427ec22c7567f5b39db9777d114dac7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
