@@ -94,6 +94,7 @@ var namespacedpp =
     [ "message_reaction_remove_emoji_t", "structdpp_1_1message__reaction__remove__emoji__t.html", "structdpp_1_1message__reaction__remove__emoji__t" ],
     [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
     [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
+    [ "opensslcontext", "classdpp_1_1opensslcontext.html", "classdpp_1_1opensslcontext" ],
     [ "param_info", "structdpp_1_1param__info.html", "structdpp_1_1param__info" ],
     [ "permission_overwrite", "structdpp_1_1permission__overwrite.html", "structdpp_1_1permission__overwrite" ],
     [ "presence", "classdpp_1_1presence.html", "classdpp_1_1presence" ],
@@ -136,5 +137,6 @@ var namespacedpp =
     [ "voicestate", "classdpp_1_1voicestate.html", "classdpp_1_1voicestate" ],
     [ "webhook", "classdpp_1_1webhook.html", "classdpp_1_1webhook" ],
     [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
-    [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ]
+    [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
+    [ "zlibcontext", "classdpp_1_1zlibcontext.html", "classdpp_1_1zlibcontext" ]
 ];

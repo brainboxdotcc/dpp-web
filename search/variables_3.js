@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['d_5fstream',['d_stream',['../classdpp_1_1zlibcontext.html#a9d39a0ef94d09fc1f9eece55d1134f46',1,'dpp::zlibcontext']]],
   ['data',['data',['../classdpp_1_1interaction.html#ac31d2411a96216b8e0f1549f4f87c99d',1,'dpp::interaction']]],
   ['days',['days',['../structdpp_1_1utility_1_1uptime.html#a67e56c2d2f868f561a48b5c3b7d5777e',1,'dpp::utility::uptime::days()'],['../structdpp_1_1prune.html#a981d093ed62361879e862c6e4b98556a',1,'dpp::prune::days()']]],
   ['default_5fmessage_5fnotifications',['default_message_notifications',['../classdpp_1_1guild.html#a304278e17a5d18d322a91cd6e2843a7f',1,'dpp::guild']]],

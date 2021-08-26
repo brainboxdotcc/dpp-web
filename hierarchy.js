@@ -183,6 +183,7 @@ var hierarchy =
     ] ],
     [ "dpp::message", "structdpp_1_1message.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
+    [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
     [ "dpp::presence", "classdpp_1_1presence.html", null ],
@@ -208,5 +209,6 @@ var hierarchy =
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
+    [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ],
     [ "pair< const Key, T >", "classstd_1_1pair_3_01const_01_key_00_01_t_01_4.html", null ]
 ];

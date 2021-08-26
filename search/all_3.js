@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['d_5fstream',['d_stream',['../classdpp_1_1zlibcontext.html#a9d39a0ef94d09fc1f9eece55d1134f46',1,'dpp::zlibcontext']]],
   ['data',['data',['../classdpp_1_1interaction.html#ac31d2411a96216b8e0f1549f4f87c99d',1,'dpp::interaction']]],
   ['days',['days',['../structdpp_1_1utility_1_1uptime.html#a67e56c2d2f868f561a48b5c3b7d5777e',1,'dpp::utility::uptime::days()'],['../structdpp_1_1prune.html#a981d093ed62361879e862c6e4b98556a',1,'dpp::prune::days()']]],
   ['debug_5fdump',['debug_dump',['../namespacedpp_1_1utility.html#a0ad0c8794eb053266d79258eb7339124',1,'dpp::utility']]],
@@ -27,8 +28,8 @@ var searchData=
   ['disabled',['disabled',['../classdpp_1_1component.html#ad364b789494d7888666173079bdb48ad',1,'dpp::component']]],
   ['disconnect',['disconnect',['../classdpp_1_1voiceconn.html#a462b82f234c78686edb38ba9c301d9bb',1,'dpp::voiceconn']]],
   ['disconnect_5fvoice',['disconnect_voice',['../classdpp_1_1discord__client.html#ab27c7a127b4bf2aaee24e406adfe3bb2',1,'dpp::discord_client']]],
-  ['discord_5fclient',['discord_client',['../classdpp_1_1discord__client.html',1,'dpp']]],
   ['discord_5fclient',['discord_client',['../classdpp_1_1discord__client.html#a26bc3c07e4b547d0d6e2c820d255fac7',1,'dpp::discord_client']]],
+  ['discord_5fclient',['discord_client',['../classdpp_1_1discord__client.html',1,'dpp']]],
   ['discord_5fvoice_5fclient',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#a5b344a5989d67f0f0caf5b52236055bf',1,'dpp::discord_voice_client']]],
   ['discord_5fvoice_5fclient',['discord_voice_client',['../classdpp_1_1discord__voice__client.html',1,'dpp']]],
   ['discover_5fip',['discover_ip',['../classdpp_1_1discord__voice__client.html#ae8e844ebb991eeb2d63771f6c5ea4938',1,'dpp::discord_voice_client']]],
@@ -38,8 +39,8 @@ var searchData=
   ['dispatcher',['dispatcher',['../classdpp_1_1dispatcher.html',1,'dpp']]],
   ['dm',['DM',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092aea2cd43492b5252e09a6c9b29c58d159',1,'dpp']]],
   ['dpp',['dpp',['../namespacedpp.html',1,'']]],
-  ['dtemplate',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]],
   ['dtemplate',['dtemplate',['../classdpp_1_1dtemplate.html',1,'dpp']]],
+  ['dtemplate',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]],
   ['dtemplate_5fmap',['dtemplate_map',['../namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6',1,'dpp']]],
   ['events',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
   ['utility',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]]

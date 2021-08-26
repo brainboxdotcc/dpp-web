@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['select_5fclick_5ft',['select_click_t',['../structdpp_1_1select__click__t.html',1,'dpp']]],
-  ['select_5foption',['select_option',['../structdpp_1_1select__option.html',1,'dpp']]],
-  ['slashcommand',['slashcommand',['../classdpp_1_1slashcommand.html',1,'dpp']]],
-  ['ssl_5fclient',['ssl_client',['../classdpp_1_1ssl__client.html',1,'dpp']]],
-  ['stage_5finstance_5fcreate',['stage_instance_create',['../classdpp_1_1events_1_1stage__instance__create.html',1,'dpp::events']]],
-  ['stage_5finstance_5fcreate_5ft',['stage_instance_create_t',['../structdpp_1_1stage__instance__create__t.html',1,'dpp']]],
-  ['stage_5finstance_5fdelete',['stage_instance_delete',['../classdpp_1_1events_1_1stage__instance__delete.html',1,'dpp::events']]],
-  ['stage_5finstance_5fdelete_5ft',['stage_instance_delete_t',['../structdpp_1_1stage__instance__delete__t.html',1,'dpp']]],
-  ['sticker',['sticker',['../structdpp_1_1sticker.html',1,'dpp']]],
-  ['sticker_5fpack',['sticker_pack',['../structdpp_1_1sticker__pack.html',1,'dpp']]],
-  ['stream',['Stream',['../class_stream.html',1,'']]]
+  ['reaction',['reaction',['../structdpp_1_1reaction.html',1,'dpp']]],
+  ['ready',['ready',['../classdpp_1_1events_1_1ready.html',1,'dpp::events']]],
+  ['ready_5ft',['ready_t',['../structdpp_1_1ready__t.html',1,'dpp']]],
+  ['request_5fqueue',['request_queue',['../classdpp_1_1request__queue.html',1,'dpp']]],
+  ['resumed',['resumed',['../classdpp_1_1events_1_1resumed.html',1,'dpp::events']]],
+  ['resumed_5ft',['resumed_t',['../structdpp_1_1resumed__t.html',1,'dpp']]],
+  ['role',['role',['../classdpp_1_1role.html',1,'dpp']]],
+  ['rtp_5fheader',['rtp_header',['../structdpp_1_1rtp__header.html',1,'dpp']]]
 ];

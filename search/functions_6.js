@@ -11,6 +11,7 @@ var searchData=
   ['get_5fchannel_5fcache',['get_channel_cache',['../namespacedpp.html#ace0612ab2a3d27da79190d971743074d',1,'dpp']]],
   ['get_5fchannel_5fcount',['get_channel_count',['../classdpp_1_1discord__client.html#aad490f19d38e26deff51dccbfd1c445c',1,'dpp::discord_client::get_channel_count()'],['../namespacedpp.html#a70474b3e729b41bfc1c51fa628cba6a4',1,'dpp::get_channel_count()']]],
   ['get_5fchannel_5fwebhooks',['get_channel_webhooks',['../classdpp_1_1cluster.html#ae58b1f27711b42e9aa8a21e34147429f',1,'dpp::cluster']]],
+  ['get_5fcipher',['get_cipher',['../classdpp_1_1ssl__client.html#abf247ed0871e89e6a319c95841a315bd',1,'dpp::ssl_client']]],
   ['get_5fcontainer',['get_container',['../classdpp_1_1cache.html#a1e8cb2a3dfe15d3922cfefc840d9e346',1,'dpp::cache']]],
   ['get_5fdecompressed_5fbytes_5fin',['get_decompressed_bytes_in',['../classdpp_1_1discord__client.html#ade85ebcbf1a24079511436d504940fcf',1,'dpp::discord_client']]],
   ['get_5fdm_5fchannel',['get_dm_channel',['../classdpp_1_1cluster.html#ae6164d5543b7594731a980da9b0b2088',1,'dpp::cluster']]],
