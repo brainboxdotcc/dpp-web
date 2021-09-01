@@ -21,6 +21,7 @@ var searchData=
   ['widget_5fchannel_5fid',['widget_channel_id',['../classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01',1,'dpp::guild']]],
   ['widget_5fenabled',['widget_enabled',['../classdpp_1_1guild.html#a589a0df44c82fe9521b44a8165a0ac20',1,'dpp::guild']]],
   ['width',['width',['../structdpp_1_1embed__image.html#aa92eade95917fe8ebc72ec7f6e035767',1,'dpp::embed_image::width()'],['../structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5',1,'dpp::attachment::width()']]],
+  ['winsock_5finitialised',['winsock_initialised',['../namespacedpp.html#a05987255dcbd8c5f62a06790c2dc0991',1,'dpp']]],
   ['write',['write',['../classdpp_1_1ssl__client.html#a4d9bde88c0c1926be915c6d232506176',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#aac65765349cbd3e787c0fd2af576ec6d',1,'dpp::websocket_client::write()']]],
   ['ws_5ffinbit',['WS_FINBIT',['../namespacedpp.html#a9f1a62eaba2a019735abc7101cffee69',1,'dpp']]],
   ['ws_5fmaskbit',['WS_MASKBIT',['../namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd',1,'dpp']]],
