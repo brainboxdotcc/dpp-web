@@ -105,11 +105,6 @@ $(document).ready(function(){initNavTree('buildwindows.html','');});
 <p><b>Instructions here are subject to change!</b></p>
 <ol type="1">
 <li>Make sure you have Visual Studio 2019. Community, Professional or Enterprise work fine. You do <b>NOT</b> want to use <em>Visual Studio Code</em> for this. You can <a href="https://visualstudio.microsoft.com/downloads/">download the correct version here</a>.</li>
-<li><a href="https://docs.microsoft.com/en-us/cpp/build/install-vcpkg?view=msvc-160&amp;tabs=windows">Download and install vcpkg</a> to the default recommended path if you do not have it already.</li>
-<li>Use the following command to install <code>openssl</code> and <code>zlib</code> via vcpkg: <code>c:\vcpkg\vcpkg.exe install openssl:x64-windows zlib:x64-windows</code> <div class="image">
-<img src="winbuild_0.png" alt="winbuild_0.png"/>
-</div>
-</li>
 <li>Check out the DPP project source using git</li>
 <li>From within Visual Studio 2019, click the "File" menu, choose "Open" then "CMake", and select the CMakeLists.txt within the project folder <div class="image">
 <img src="winbuild_1.png" alt="winbuild_1.png"/>
@@ -133,7 +128,7 @@ $(document).ready(function(){initNavTree('buildwindows.html','');});
 <li>If the project does not build, please ask for help on the <a href="https://discord.gg/dpp">official discord server</a></li>
 </ul>
 <h2>After compiling</h2>
-<p>After compilation you can directly reference the compiled project in your own CMakeLists.txt as a library or use the lib/dll/headers as you wish. Note that openssl will also be a dependency of your program and should be copied alongside <code>libdpp.dll</code>. </p>
+<p>After compilation you can directly reference the compiled project in your own CMakeLists.txt as a library or use the lib/dll/headers as you wish. Note that <code>openssl</code> and <code>zlib</code> will also be an indirect dependency of your program (as <code>DLL</code> files) and should be copied alongside <code>dpp.dll</code>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
