@@ -33,7 +33,7 @@ var searchData=
   ['count',['count',['../classdpp_1_1cache.html#accdc86a37537b1c242a1a9b53a7cb1e3',1,'dpp::cache']]],
   ['create_5fdm_5fchannel',['create_dm_channel',['../classdpp_1_1cluster.html#a55c6a9bb92a500aefc65a953e419c27f',1,'dpp::cluster']]],
   ['create_5fwebhook',['create_webhook',['../classdpp_1_1cluster.html#a627510bf4f4d1c3a999ccb506c75ec47',1,'dpp::cluster']]],
-  ['current_5fdate_5ftime',['current_date_time',['../namespacedpp_1_1utility.html#a20db200cd842b93cb65767bf78b36bf5',1,'dpp::utility']]],
+  ['current_5fdate_5ftime',['current_date_time',['../namespacedpp_1_1utility.html#a92e96c2cb9bc5dcd7343f23f70ccfd94',1,'dpp::utility']]],
   ['current_5fuser_5fedit',['current_user_edit',['../classdpp_1_1cluster.html#a462e5859d1123c8b29c09d477a957157',1,'dpp::cluster']]],
   ['current_5fuser_5fget',['current_user_get',['../classdpp_1_1cluster.html#aad927e85ed6b99e9b05f4190f1b19cae',1,'dpp::cluster']]],
   ['current_5fuser_5fget_5fdms',['current_user_get_dms',['../classdpp_1_1cluster.html#a662fc0a998c62395f166da5e4a2acaf3',1,'dpp::cluster']]],

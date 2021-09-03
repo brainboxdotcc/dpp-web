@@ -8,7 +8,6 @@ var searchData=
   ['websocket_5fping',['websocket_ping',['../classdpp_1_1discord__client.html#a5e39136f09297f7ba0ab6a449e435f3d',1,'dpp::discord_client']]],
   ['widget_5fchannel_5fid',['widget_channel_id',['../classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01',1,'dpp::guild']]],
   ['width',['width',['../structdpp_1_1embed__image.html#aa92eade95917fe8ebc72ec7f6e035767',1,'dpp::embed_image::width()'],['../structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5',1,'dpp::attachment::width()']]],
-  ['winsock_5finitialised',['winsock_initialised',['../namespacedpp.html#a05987255dcbd8c5f62a06790c2dc0991',1,'dpp']]],
   ['ws_5ffinbit',['WS_FINBIT',['../namespacedpp.html#a9f1a62eaba2a019735abc7101cffee69',1,'dpp']]],
   ['ws_5fmaskbit',['WS_MASKBIT',['../namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd',1,'dpp']]],
   ['ws_5fmax_5fpayload_5flength_5flarge',['WS_MAX_PAYLOAD_LENGTH_LARGE',['../namespacedpp.html#a657e035c24d7cdf888ba40868167f098',1,'dpp']]],

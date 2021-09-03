@@ -53,6 +53,6 @@ var searchData=
   ['username',['username',['../classdpp_1_1user.html#a4e72b2e5ac7d5539fdae64be6e01246c',1,'dpp::user']]],
   ['users',['users',['../structdpp_1_1message_1_1allowed__ref.html#a8e22776356f1b3029224dae4679eff22',1,'dpp::message::allowed_ref']]],
   ['usr',['usr',['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction']]],
-  ['utf8len',['utf8len',['../namespacedpp_1_1utility.html#a915b95a9f5efa3bcde16540cd3a08d3b',1,'dpp::utility']]],
-  ['utf8substr',['utf8substr',['../namespacedpp_1_1utility.html#a61d1cf45d36c302d245c05508ce83f84',1,'dpp::utility']]]
+  ['utf8len',['utf8len',['../namespacedpp_1_1utility.html#a274ad7457496c9c28634c2e11fa08edf',1,'dpp::utility']]],
+  ['utf8substr',['utf8substr',['../namespacedpp_1_1utility.html#ad2be660538b63fad0566076c96c88dcf',1,'dpp::utility']]]
 ];

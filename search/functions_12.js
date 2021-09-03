@@ -5,6 +5,6 @@ var searchData=
   ['user',['user',['../classdpp_1_1user.html#a10ae5c579f6d60370d825e71fdff697b',1,'dpp::user']]],
   ['user_5fget',['user_get',['../classdpp_1_1cluster.html#a73483dbeb0f1946dc18b1d0a5331b0d0',1,'dpp::cluster']]],
   ['user_5fupdate_5ft',['user_update_t',['../structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e',1,'dpp::user_update_t']]],
-  ['utf8len',['utf8len',['../namespacedpp_1_1utility.html#a915b95a9f5efa3bcde16540cd3a08d3b',1,'dpp::utility']]],
-  ['utf8substr',['utf8substr',['../namespacedpp_1_1utility.html#a61d1cf45d36c302d245c05508ce83f84',1,'dpp::utility']]]
+  ['utf8len',['utf8len',['../namespacedpp_1_1utility.html#a274ad7457496c9c28634c2e11fa08edf',1,'dpp::utility']]],
+  ['utf8substr',['utf8substr',['../namespacedpp_1_1utility.html#ad2be660538b63fad0566076c96c88dcf',1,'dpp::utility']]]
 ];

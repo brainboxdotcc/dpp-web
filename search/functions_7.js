@@ -52,6 +52,6 @@ var searchData=
   ['has_5fview_5fchannel',['has_view_channel',['../classdpp_1_1role.html#a41f3a992677fb797f5e802fb6104313e',1,'dpp::role']]],
   ['has_5fview_5fguild_5finsights',['has_view_guild_insights',['../classdpp_1_1role.html#a4db8bac8686328f3783fad1ef375049e',1,'dpp::role']]],
   ['has_5fvip_5fregions',['has_vip_regions',['../classdpp_1_1guild.html#a3fd38418d77e7c03a4954888d0996d3a',1,'dpp::guild']]],
-  ['has_5fvoice',['has_voice',['../namespacedpp_1_1utility.html#a67c39c1d585e4efc89518e643c4ca112',1,'dpp::utility']]],
+  ['has_5fvoice',['has_voice',['../namespacedpp_1_1utility.html#a3e939d08d5474d50096fc9e889d9934b',1,'dpp::utility']]],
   ['http_5frequest',['http_request',['../classdpp_1_1http__request.html#a46242b648249b5e8a67e2abdb306c3b3',1,'dpp::http_request']]]
 ];

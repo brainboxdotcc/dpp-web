@@ -54,7 +54,7 @@ var classdpp_1_1discord__client =
     [ "reconnects", "classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf", null ],
     [ "resumes", "classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6", null ],
     [ "sessionid", "classdpp_1_1discord__client.html#a66922f8fbb2df8c1c92744f4eb524a52", null ],
-    [ "sfd", "classdpp_1_1discord__client.html#a5d5d88470fa16ed75a3b3ee195265caf", null ],
+    [ "sfd", "classdpp_1_1discord__client.html#a0b6edcf258bcc2153a1b39b5f01403f4", null ],
     [ "shard_id", "classdpp_1_1discord__client.html#aa11253c28f842aad3939e9d3138a0c6d", null ],
     [ "ssl", "classdpp_1_1discord__client.html#a2398ebb5fe51346ca7e97ec162327c4e", null ],
     [ "thread_id", "classdpp_1_1discord__client.html#a48586d5bfd6ce1e8f58770c7bfcc5c27", null ],

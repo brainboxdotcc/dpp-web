@@ -21,5 +21,5 @@ var searchData=
   ['log_5ft',['log_t',['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t']]],
   ['log_5ft',['log_t',['../structdpp_1_1log__t.html',1,'dpp']]],
   ['logger',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
-  ['loglevel',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#a67c212540ecc5258241898a8973caebe',1,'dpp::utility::loglevel()']]]
+  ['loglevel',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#abd999684969fdf39b77e7f9fd09bf57f',1,'dpp::utility::loglevel()']]]
 ];
