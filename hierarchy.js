@@ -182,6 +182,7 @@ var hierarchy =
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
     [ "dpp::message", "structdpp_1_1message.html", null ],
+    [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],

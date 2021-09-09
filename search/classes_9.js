@@ -8,6 +8,7 @@ var searchData=
   ['message_5fdelete_5fbulk',['message_delete_bulk',['../classdpp_1_1events_1_1message__delete__bulk.html',1,'dpp::events']]],
   ['message_5fdelete_5fbulk_5ft',['message_delete_bulk_t',['../structdpp_1_1message__delete__bulk__t.html',1,'dpp']]],
   ['message_5fdelete_5ft',['message_delete_t',['../structdpp_1_1message__delete__t.html',1,'dpp']]],
+  ['message_5finteraction_5fstruct',['message_interaction_struct',['../structdpp_1_1message_1_1message__interaction__struct.html',1,'dpp::message']]],
   ['message_5freaction_5fadd',['message_reaction_add',['../classdpp_1_1events_1_1message__reaction__add.html',1,'dpp::events']]],
   ['message_5freaction_5fadd_5ft',['message_reaction_add_t',['../structdpp_1_1message__reaction__add__t.html',1,'dpp']]],
   ['message_5freaction_5fremove',['message_reaction_remove',['../classdpp_1_1events_1_1message__reaction__remove.html',1,'dpp::events']]],

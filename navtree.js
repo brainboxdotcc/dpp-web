@@ -39,7 +39,7 @@ var NAVTREEINDEX =
 "classdpp_1_1voicestate.html#a0ea73d3fd39463142c315005321e28f5",
 "structdpp_1_1audit__extra.html#a01c4162bf4f852e6202f60b196f7dae8",
 "structdpp_1_1guild__role__create__t.html#a2f07681bfc59700b451764013a9d4e13",
-"structdpp_1_1resumed__t.html"
+"structdpp_1_1ready__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
