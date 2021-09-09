@@ -18,6 +18,7 @@ var searchData=
   ['websocket_5fclient',['websocket_client',['../classdpp_1_1websocket__client.html#a809b342e343bd370141ba25a5e90cf64',1,'dpp::websocket_client']]],
   ['websocket_5fhostname',['websocket_hostname',['../classdpp_1_1voiceconn.html#a9c0868d279364472bf0c86a4b5ae8f1b',1,'dpp::voiceconn']]],
   ['websocket_5fping',['websocket_ping',['../classdpp_1_1discord__client.html#a5e39136f09297f7ba0ab6a449e435f3d',1,'dpp::discord_client']]],
+  ['what',['what',['../classdpp_1_1exception.html#ad0f78982d40e6654c2b458e17352ca4d',1,'dpp::exception']]],
   ['widget_5fchannel_5fid',['widget_channel_id',['../classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01',1,'dpp::guild']]],
   ['widget_5fenabled',['widget_enabled',['../classdpp_1_1guild.html#a589a0df44c82fe9521b44a8165a0ac20',1,'dpp::guild']]],
   ['width',['width',['../structdpp_1_1embed__image.html#aa92eade95917fe8ebc72ec7f6e035767',1,'dpp::embed_image::width()'],['../structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5',1,'dpp::attachment::width()']]],

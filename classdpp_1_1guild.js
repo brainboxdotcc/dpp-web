@@ -1,6 +1,7 @@
 var classdpp_1_1guild =
 [
     [ "guild", "classdpp_1_1guild.html#aeae6599054436a5a66e07683032089dc", null ],
+    [ "~guild", "classdpp_1_1guild.html#a7e494da5ab1aaaddae4d588849ea9f14", null ],
     [ "base_permissions", "classdpp_1_1guild.html#aab6c11a3f36981309411c979615e1a2f", null ],
     [ "build_json", "classdpp_1_1guild.html#ab06f6531b9380ece07b3d8861a4de268", null ],
     [ "connect_member_voice", "classdpp_1_1guild.html#a771c4830e1c4e775837d7c6c020ecb4f", null ],

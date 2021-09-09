@@ -157,6 +157,9 @@ var hierarchy =
       [ "dpp::voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", null ],
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
+    [ "std::exception", null, [
+      [ "dpp::exception", "classdpp_1_1exception.html", null ]
+    ] ],
     [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
     [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
