@@ -21,6 +21,7 @@ var searchData=
   ['component_5ftype',['component_type',['../structdpp_1_1button__click__t.html#a2a5e3ed8a2ccc64fb68926916a39dbfd',1,'dpp::button_click_t::component_type()'],['../structdpp_1_1select__click__t.html#a163eb52d33f1b91333f62f5db98f9ce3',1,'dpp::select_click_t::component_type()'],['../structdpp_1_1component__interaction.html#a101d3c5e87f664d8b9d66ebc80a33a6d',1,'dpp::component_interaction::component_type()']]],
   ['components',['components',['../classdpp_1_1component.html#a51efd287b483b485f7019fb8263465ed',1,'dpp::component::components()'],['../structdpp_1_1message.html#ab9cb60fc35159bfa604164c5574a4957',1,'dpp::message::components()']]],
   ['compute_5fprune_5fcount',['compute_prune_count',['../structdpp_1_1prune.html#a948f8af4cf30f7e0a35978e36e1d3601',1,'dpp::prune']]],
+  ['confirmation_5fcallback_5ft',['confirmation_callback_t',['../namespacedpp.html#a67e29e78e1e13bed67c3c68a6adad5fa',1,'dpp']]],
   ['connecting_5fvoice_5fchannels',['connecting_voice_channels',['../classdpp_1_1discord__client.html#ad474846a37755a4b1064a5c3a3480fbc',1,'dpp::discord_client']]],
   ['constant',['constant',['../structdpp_1_1rtp__header.html#a2411f0c8462cab6379465f4a3697a5df',1,'dpp::rtp_header']]],
   ['content',['content',['../structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6',1,'dpp::message']]],
