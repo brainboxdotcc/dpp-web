@@ -28,7 +28,7 @@ var namespacedpp =
     [ "command_option", "structdpp_1_1command__option.html", "structdpp_1_1command__option" ],
     [ "command_option_choice", "structdpp_1_1command__option__choice.html", "structdpp_1_1command__option__choice" ],
     [ "command_permission", "classdpp_1_1command__permission.html", "classdpp_1_1command__permission" ],
-    [ "command_resolved", "structdpp_1_1command__resolved.html", null ],
+    [ "command_resolved", "structdpp_1_1command__resolved.html", "structdpp_1_1command__resolved" ],
     [ "command_source", "structdpp_1_1command__source.html", "structdpp_1_1command__source" ],
     [ "commandhandler", "classdpp_1_1commandhandler.html", "classdpp_1_1commandhandler" ],
     [ "component", "classdpp_1_1component.html", "classdpp_1_1component" ],

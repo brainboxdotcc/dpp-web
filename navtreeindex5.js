@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"structdpp_1_1audit__change.html#a025a06b03f1592b67bd59310bcadb946":[6,0,0,7,2],
 "structdpp_1_1audit__change.html#a7241b5b440781dccabfbc24c154de9cb":[6,0,0,7,1],
 "structdpp_1_1audit__change.html#abb0f7485a2d413476f1f8663fe1a8014":[6,0,0,7,0],
 "structdpp_1_1audit__entry.html":[6,0,0,8],
@@ -99,6 +100,10 @@ var NAVTREEINDEX5 =
 "structdpp_1_1command__option__choice.html#a6e4ceb9707c454d74d25a49dbcdb25ee":[6,0,0,26,2],
 "structdpp_1_1command__option__choice.html#a70021160d60b6403a353b302d97123ff":[6,0,0,26,3],
 "structdpp_1_1command__resolved.html":[6,0,0,28],
+"structdpp_1_1command__resolved.html#a253cd8cb71207dbdf0b8f687218f24e3":[6,0,0,28,3],
+"structdpp_1_1command__resolved.html#a31c6fdc7a7abe57a049534bcc4dccbd3":[6,0,0,28,1],
+"structdpp_1_1command__resolved.html#a5fc7b8909f13bc77e433fae06706253f":[6,0,0,28,0],
+"structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc":[6,0,0,28,2],
 "structdpp_1_1command__source.html":[6,0,0,29],
 "structdpp_1_1command__source.html#a49e99fcfc393681af05f3e4bc8a7b360":[6,0,0,29,1],
 "structdpp_1_1command__source.html#a8bec40f2cc0e419489921c4a222353df":[6,0,0,29,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "structdpp_1_1guild__member__add__t.html#adc73c832775296a7a50a3fec448db63d":[6,0,0,61,2],
 "structdpp_1_1guild__member__remove__t.html":[6,0,0,62],
 "structdpp_1_1guild__member__remove__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,0,62,2],
-"structdpp_1_1guild__member__remove__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,0,62,1],
-"structdpp_1_1guild__member__remove__t.html#a3b83576117dbcfad3dd2de0e93b0057c":[6,0,0,62,3],
-"structdpp_1_1guild__member__remove__t.html#aad078018917f530f80d3e554ad37760e":[6,0,0,62,4],
-"structdpp_1_1guild__member__remove__t.html#abfcc390e07732a43ed7ced93ff7ea9bb":[6,0,0,62,0],
-"structdpp_1_1guild__member__update__t.html":[6,0,0,63],
-"structdpp_1_1guild__member__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,0,63,2]
+"structdpp_1_1guild__member__remove__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,0,62,1]
 };

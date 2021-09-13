@@ -51,7 +51,7 @@ var searchData=
   ['channel_5fupdate',['channel_update',['../classdpp_1_1dispatcher.html#ad4a6151ce96b42aef5d3ceb6d9f55ee5',1,'dpp::dispatcher']]],
   ['channel_5fupdate_5ft',['channel_update_t',['../structdpp_1_1channel__update__t.html',1,'dpp']]],
   ['channel_5fupdate_5ft',['channel_update_t',['../structdpp_1_1channel__update__t.html#afdadb0a8a19ba2d5e3203953d9d0f404',1,'dpp::channel_update_t']]],
-  ['channels',['channels',['../classdpp_1_1guild.html#a0995288cfbf8ae64973bbf0181d1789a',1,'dpp::guild']]],
+  ['channels',['channels',['../classdpp_1_1guild.html#a0995288cfbf8ae64973bbf0181d1789a',1,'dpp::guild::channels()'],['../structdpp_1_1command__resolved.html#a5fc7b8909f13bc77e433fae06706253f',1,'dpp::command_resolved::channels()']]],
   ['channels_5fget',['channels_get',['../classdpp_1_1cluster.html#a24e67431b79cc2c3d0f12d59afd5a1c8',1,'dpp::cluster']]],
   ['choices',['choices',['../structdpp_1_1param__info.html#a7ee6e520bba68abd58065863eb9bbac2',1,'dpp::param_info::choices()'],['../structdpp_1_1command__option.html#a05f44f181203ed332696b789c4ef7c6f',1,'dpp::command_option::choices()']]],
   ['cipher',['cipher',['../classdpp_1_1ssl__client.html#a5fc2e7836da5485216419bbf17e49428',1,'dpp::ssl_client']]],

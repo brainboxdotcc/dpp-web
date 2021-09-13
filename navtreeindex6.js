@@ -1,5 +1,10 @@
 var NAVTREEINDEX6 =
 {
+"structdpp_1_1guild__member__remove__t.html#a3b83576117dbcfad3dd2de0e93b0057c":[6,0,0,62,3],
+"structdpp_1_1guild__member__remove__t.html#aad078018917f530f80d3e554ad37760e":[6,0,0,62,4],
+"structdpp_1_1guild__member__remove__t.html#abfcc390e07732a43ed7ced93ff7ea9bb":[6,0,0,62,0],
+"structdpp_1_1guild__member__update__t.html":[6,0,0,63],
+"structdpp_1_1guild__member__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,0,63,2],
 "structdpp_1_1guild__member__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,0,63,1],
 "structdpp_1_1guild__member__update__t.html#a6e06a11821a89c7276946c31869e9f58":[6,0,0,63,4],
 "structdpp_1_1guild__member__update__t.html#a923dc93f73d3a1b34b1ac1adfd8d29fe":[6,0,0,63,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX6 =
 "structdpp_1_1permission__overwrite.html#a61b144231337c0e10ad11dd693c152c3":[6,0,0,97,3],
 "structdpp_1_1permission__overwrite.html#a802c7e289221f1609c8ce90b0afb6ac2":[6,0,0,97,2],
 "structdpp_1_1permission__overwrite.html#acf2ede1bb80c8661eb6c58a4dc124f10":[6,0,0,97,1],
-"structdpp_1_1presence__update__t.html":[6,0,0,99],
-"structdpp_1_1presence__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,0,99,2],
-"structdpp_1_1presence__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,0,99,1],
-"structdpp_1_1presence__update__t.html#a6c58850853d61ab933e0fc5abb29ad15":[6,0,0,99,0],
-"structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813":[6,0,0,99,3],
-"structdpp_1_1prune.html":[6,0,0,100]
+"structdpp_1_1presence__update__t.html":[6,0,0,99]
 };
