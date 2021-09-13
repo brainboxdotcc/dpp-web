@@ -104,6 +104,7 @@ var namespacedpp =
     [ "reaction", "structdpp_1_1reaction.html", "structdpp_1_1reaction" ],
     [ "ready_t", "structdpp_1_1ready__t.html", "structdpp_1_1ready__t" ],
     [ "request_queue", "classdpp_1_1request__queue.html", "classdpp_1_1request__queue" ],
+    [ "resolved_user", "structdpp_1_1resolved__user.html", "structdpp_1_1resolved__user" ],
     [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
     [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
     [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],

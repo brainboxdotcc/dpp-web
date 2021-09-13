@@ -423,6 +423,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> class manages rate limits and marshalls HTTP requests that have been built as <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request. ">http_request</a> objects.  <a href="classdpp_1_1request__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resolved__user.html">resolved_user</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resumed__t.html">resumed_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session resumed.  <a href="structdpp_1_1resumed__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -580,19 +582,20 @@ class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *
 <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a></td></tr>
 <tr class="memdesc:aafc7fb6792b12d92c4e77b46d20924ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically JSON encoded HTTP result.  <a href="#aafc7fb6792b12d92c4e77b46d20924ee">More...</a><br /></td></tr>
 <tr class="separator:aafc7fb6792b12d92c4e77b46d20924ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e0c2512acea8d740b4ddd963923744"><td class="memItemLeft" align="right" valign="top">typedef std::variant<br class="typebreak" />
+<tr class="memitem:abb2baec22d57fda4e7441777c0f6c09b"><td class="memItemLeft" align="right" valign="top">typedef std::variant<br class="typebreak" />
 &lt; std::monostate, std::string, <br class="typebreak" />
 <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <br class="typebreak" />
-<a class="el" href="classdpp_1_1user.html">dpp::user</a>, int32_t, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a76e0c2512acea8d740b4ddd963923744">command_parameter</a></td></tr>
-<tr class="memdesc:a76e0c2512acea8d740b4ddd963923744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a received parameter. We use variant so that multiple non-related types can be contained within.  <a href="#a76e0c2512acea8d740b4ddd963923744">More...</a><br /></td></tr>
-<tr class="separator:a76e0c2512acea8d740b4ddd963923744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="structdpp_1_1resolved__user.html">dpp::resolved_user</a>, int32_t, <br class="typebreak" />
+bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#abb2baec22d57fda4e7441777c0f6c09b">command_parameter</a></td></tr>
+<tr class="memdesc:abb2baec22d57fda4e7441777c0f6c09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a received parameter. We use variant so that multiple non-related types can be contained within.  <a href="#abb2baec22d57fda4e7441777c0f6c09b">More...</a><br /></td></tr>
+<tr class="separator:abb2baec22d57fda4e7441777c0f6c09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6daf230da747f01eeaa36fd3d5e51a65"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair<br class="typebreak" />
 &lt; std::string, <a class="el" href="structdpp_1_1param__info.html">param_info</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65">parameter_registration_t</a></td></tr>
 <tr class="memdesc:a6daf230da747f01eeaa36fd3d5e51a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter list used during registration. Note that use of vector/pair is important here to preserve parameter order, as opposed to unordered_map (which doesnt guarantee any order at all) and std::map, which reorders keys alphabetically.  <a href="#a6daf230da747f01eeaa36fd3d5e51a65">More...</a><br /></td></tr>
 <tr class="separator:a6daf230da747f01eeaa36fd3d5e51a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632b6ae7b47a5feb95104644a487e4f1"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair<br class="typebreak" />
 &lt; std::string, <br class="typebreak" />
-<a class="el" href="namespacedpp.html#a76e0c2512acea8d740b4ddd963923744">command_parameter</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a></td></tr>
+<a class="el" href="namespacedpp.html#abb2baec22d57fda4e7441777c0f6c09b">command_parameter</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a></td></tr>
 <tr class="memdesc:a632b6ae7b47a5feb95104644a487e4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter list for a called command. See <a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65" title="Parameter list used during registration. Note that use of vector/pair is important here to preserve p...">dpp::parameter_registration_t</a> for an explaination as to why vector is used.  <a href="#a632b6ae7b47a5feb95104644a487e4f1">More...</a><br /></td></tr>
 <tr class="separator:a632b6ae7b47a5feb95104644a487e4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a8ab3231965d0e361f305a7fe431f3"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <br class="typebreak" />
@@ -1470,12 +1473,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a76e0c2512acea8d740b4ddd963923744"></a>
+<a class="anchor" id="abb2baec22d57fda4e7441777c0f6c09b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::variant&lt;std::monostate, std::string, <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <a class="el" href="classdpp_1_1user.html">dpp::user</a>, int32_t, bool&gt; <a class="el" href="namespacedpp.html#a76e0c2512acea8d740b4ddd963923744">dpp::command_parameter</a></td>
+          <td class="memname">typedef std::variant&lt;std::monostate, std::string, <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <a class="el" href="structdpp_1_1resolved__user.html">dpp::resolved_user</a>, int32_t, bool&gt; <a class="el" href="namespacedpp.html#abb2baec22d57fda4e7441777c0f6c09b">dpp::command_parameter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1665,7 +1668,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;std::pair&lt;std::string, <a class="el" href="namespacedpp.html#a76e0c2512acea8d740b4ddd963923744">command_parameter</a>&gt; &gt; <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">dpp::parameter_list_t</a></td>
+          <td class="memname">typedef std::vector&lt;std::pair&lt;std::string, <a class="el" href="namespacedpp.html#abb2baec22d57fda4e7441777c0f6c09b">command_parameter</a>&gt; &gt; <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">dpp::parameter_list_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

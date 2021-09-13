@@ -38,7 +38,7 @@ var searchData=
   ['url_5fencode',['url_encode',['../namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4',1,'dpp']]],
   ['usage_5fcount',['usage_count',['../classdpp_1_1dtemplate.html#a0086e48d5206046a581b1deb9105668c',1,'dpp::dtemplate']]],
   ['user',['user',['../classdpp_1_1user.html',1,'dpp']]],
-  ['user',['user',['../classdpp_1_1user.html#a10ae5c579f6d60370d825e71fdff697b',1,'dpp::user']]],
+  ['user',['user',['../structdpp_1_1resolved__user.html#a2637dfddc2584ff21d6772b9540818d4',1,'dpp::resolved_user::user()'],['../classdpp_1_1user.html#a10ae5c579f6d60370d825e71fdff697b',1,'dpp::user::user()']]],
   ['user_5fcache',['user_cache',['../namespacedpp.html#a6ddd481a6548ebed807a5cebbd2fba79',1,'dpp']]],
   ['user_5fflags',['user_flags',['../namespacedpp.html#ace1318b24526febab72157cdd8b7b468',1,'dpp']]],
   ['user_5fget',['user_get',['../classdpp_1_1cluster.html#a73483dbeb0f1946dc18b1d0a5331b0d0',1,'dpp::cluster']]],

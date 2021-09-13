@@ -194,6 +194,7 @@ var hierarchy =
     [ "dpp::prune", "structdpp_1_1prune.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
+    [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
