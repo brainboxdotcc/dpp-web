@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['acknowledge',['acknowledge',['../classdpp_1_1commandhandler.html#a75b51c6ef8d2eb2fdc90ef1ea1a33e97',1,'dpp::commandhandler']]],
   ['activity',['activity',['../classdpp_1_1activity.html#af8879258ef30113d205348fad6f5d2b8',1,'dpp::activity::activity()=default'],['../classdpp_1_1activity.html#a05dd85de62a60b6dc2dbce16583f8be4',1,'dpp::activity::activity(const activity_type typ, const std::string &amp;nam, const std::string &amp;stat, const std::string &amp;url_)']]],
   ['add_5fchoice',['add_choice',['../structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026',1,'dpp::command_option']]],
   ['add_5fcommand',['add_command',['../classdpp_1_1commandhandler.html#a791ed0c75ef77306af84be30ded619f8',1,'dpp::commandhandler']]],
