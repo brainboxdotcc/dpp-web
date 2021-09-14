@@ -424,6 +424,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> class manages rate limits and marshalls HTTP requests that have been built as <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request. ">http_request</a> objects.  <a href="classdpp_1_1request__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resolved__user.html">resolved_user</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdpp_1_1resolved__user.html" title="dpp::resolved_user contains both a dpp::guild_member and a dpp::user. The user can be used to obtain ...">dpp::resolved_user</a> contains both a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. ">dpp::guild_member</a> and a <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild. ">dpp::user</a>. The user can be used to obtain in-depth user details such as if they are nitro, and the guild member information to check their roles on a guild etc. The Discord API provides both if a parameter is a user ping, so we offer both in a combined structure.  <a href="structdpp_1_1resolved__user.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resumed__t.html">resumed_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session resumed.  <a href="structdpp_1_1resumed__t.html#details">More...</a><br /></td></tr>
@@ -1132,13 +1133,11 @@ Enumerations</h2></td></tr>
 <tr class="separator:abc401d86119c6443bf72d736857c1a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83479ddaa45166def7719d5511b09d02"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02">interaction_response_type</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede">ir_pong</a> = 1, 
-<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02adedea5e5d6fb997f7ddaed5d59a55ea9">ir_acknowledge</a> = 2, 
-<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a55c989cea99cb8ce15439d19ee718619">ir_channel_message</a> = 3, 
 <a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">ir_channel_message_with_source</a> = 4, 
-<br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294">ir_deferred_channel_message_with_source</a> = 5, 
+<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294">ir_deferred_channel_message_with_source</a> = 5, 
 <a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312">ir_deferred_update_message</a> = 6, 
-<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847">ir_update_message</a> = 7
+<br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847">ir_update_message</a> = 7
 <br />
  }</td></tr>
 <tr class="memdesc:a83479ddaa45166def7719d5511b09d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Response types when responding to an interaction within on_interaction_create. Do not use ir_acknowledge or ir::channel_message, as these are deprecated in the Discord API spec. They are listed in this enum for completeness.  <a href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02">More...</a><br /></td></tr>
@@ -2678,12 +2677,6 @@ Variables</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede"></a>ir_pong&#160;</td><td class="fielddoc">
 <p>ACK a Ping. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a83479ddaa45166def7719d5511b09d02adedea5e5d6fb997f7ddaed5d59a55ea9"></a>ir_acknowledge&#160;</td><td class="fielddoc">
-<p>DEPRECATED ACK a command without sending a message, eating the user's input. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a83479ddaa45166def7719d5511b09d02a55c989cea99cb8ce15439d19ee718619"></a>ir_channel_message&#160;</td><td class="fielddoc">
-<p>DEPRECATED respond with a message, eating the user's input. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c"></a>ir_channel_message_with_source&#160;</td><td class="fielddoc">
 <p>respond to an interaction with a message </p>

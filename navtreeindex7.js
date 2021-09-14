@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"structdpp_1_1presence__update__t.html":[6,0,0,99],
 "structdpp_1_1presence__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,0,99,2],
 "structdpp_1_1presence__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,0,99,1],
 "structdpp_1_1presence__update__t.html#a6c58850853d61ab933e0fc5abb29ad15":[6,0,0,99,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structdpp_1_1webhooks__update__t.html":[6,0,0,138],
 "structdpp_1_1webhooks__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,0,138,2],
 "structdpp_1_1webhooks__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,0,138,1],
-"structdpp_1_1webhooks__update__t.html#a39a25531b301ffc214ddd17a7b3475f3":[6,0,0,138,3],
-"structdpp_1_1webhooks__update__t.html#aa070b1866b55bc3e6d2a7a8b698e8c1b":[6,0,0,138,0]
+"structdpp_1_1webhooks__update__t.html#a39a25531b301ffc214ddd17a7b3475f3":[6,0,0,138,3]
 };

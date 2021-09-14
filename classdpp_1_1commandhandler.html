@@ -132,6 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09893dbf101b7d0082b0a13e801a9db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a09893dbf101b7d0082b0a13e801a9db9">reply</a> (const <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;m, <a class="el" href="structdpp_1_1command__source.html">command_source</a> source)</td></tr>
 <tr class="memdesc:a09893dbf101b7d0082b0a13e801a9db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command. You should use this method rather than <a class="el" href="classdpp_1_1cluster.html#a080a8cefc6ceb0b882fdb6fe70c078a6" title="Send a message to a channel. The callback function is called when the message has been sent...">cluster::message_create</a> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="#a09893dbf101b7d0082b0a13e801a9db9">More...</a><br /></td></tr>
 <tr class="separator:a09893dbf101b7d0082b0a13e801a9db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad7a740213d2daf06bf182ba1afc13e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a4ad7a740213d2daf06bf182ba1afc13e">thinking</a> (<a class="el" href="structdpp_1_1command__source.html">command_source</a> source)</td></tr>
+<tr class="separator:a4ad7a740213d2daf06bf182ba1afc13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b51c6ef8d2eb2fdc90ef1ea1a33e97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a75b51c6ef8d2eb2fdc90ef1ea1a33e97">acknowledge</a> (<a class="el" href="structdpp_1_1command__source.html">command_source</a> source)</td></tr>
+<tr class="separator:a75b51c6ef8d2eb2fdc90ef1ea1a33e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The commandhandler class represents a group of commands, prefixed or slash commands with handling functions. </p>
@@ -196,6 +200,22 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a75b51c6ef8d2eb2fdc90ef1ea1a33e97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::commandhandler::acknowledge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdpp_1_1command__source.html">command_source</a>&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a791ed0c75ef77306af84be30ded619f8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -380,6 +400,22 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ad7a740213d2daf06bf182ba1afc13e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::commandhandler::thinking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdpp_1_1command__source.html">command_source</a>&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

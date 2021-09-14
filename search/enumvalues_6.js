@@ -29,8 +29,6 @@ var searchData=
   ['if_5fexpire_5fkick',['if_expire_kick',['../namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0a8fa6e6961f9500c23086730960c35bad',1,'dpp']]],
   ['if_5frevoked',['if_revoked',['../namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0a29bde3bb98405da55ed02463ca320ef1',1,'dpp']]],
   ['if_5fsyncing',['if_syncing',['../namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11',1,'dpp']]],
-  ['ir_5facknowledge',['ir_acknowledge',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02adedea5e5d6fb997f7ddaed5d59a55ea9',1,'dpp']]],
-  ['ir_5fchannel_5fmessage',['ir_channel_message',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a55c989cea99cb8ce15439d19ee718619',1,'dpp']]],
   ['ir_5fchannel_5fmessage_5fwith_5fsource',['ir_channel_message_with_source',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c',1,'dpp']]],
   ['ir_5fdeferred_5fchannel_5fmessage_5fwith_5fsource',['ir_deferred_channel_message_with_source',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294',1,'dpp']]],
   ['ir_5fdeferred_5fupdate_5fmessage',['ir_deferred_update_message',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312',1,'dpp']]],

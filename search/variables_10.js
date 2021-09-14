@@ -25,7 +25,7 @@ var searchData=
   ['replied_5fuser',['replied_user',['../structdpp_1_1message_1_1allowed__ref.html#a2b618e76580414b02526dfccc8564d39',1,'dpp::message::allowed_ref']]],
   ['required',['required',['../structdpp_1_1command__option.html#ad203ab30a75ce7508f565f5821301bdb',1,'dpp::command_option']]],
   ['reset_5fafter',['reset_after',['../structdpp_1_1bucket__t.html#a69e733a2599fa42777c7cd302219d1ab',1,'dpp::bucket_t']]],
-  ['resolved',['resolved',['../structdpp_1_1command__interaction.html#abb6e1caad1c42ecdf4679fd59991d872',1,'dpp::command_interaction::resolved()'],['../classdpp_1_1interaction.html#aaa88ba118d0a7b5b32090a844610d7e7',1,'dpp::interaction::resolved()']]],
+  ['resolved',['resolved',['../classdpp_1_1interaction.html#aaa88ba118d0a7b5b32090a844610d7e7',1,'dpp::interaction']]],
   ['resumed',['resumed',['../classdpp_1_1dispatcher.html#a95bc992af2a7efc1c1c524eeab354990',1,'dpp::dispatcher']]],
   ['resumes',['resumes',['../classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6',1,'dpp::discord_client']]],
   ['retry_5fafter',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
