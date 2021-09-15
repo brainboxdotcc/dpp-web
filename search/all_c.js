@@ -10,7 +10,7 @@ var searchData=
   ['m_5fpost',['m_post',['../namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88afc49711c29fdc4f00456e06562c9168e',1,'dpp']]],
   ['m_5fput',['m_put',['../namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88aaaa5f54e87d3160af88f2bc295b77fb8',1,'dpp']]],
   ['m_5fsource_5fmessage_5fdeleted',['m_source_message_deleted',['../namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d',1,'dpp']]],
-  ['m_5fsupress_5fembeds',['m_supress_embeds',['../namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aac780581bacd412c2298fc2e73efcca9',1,'dpp']]],
+  ['m_5fsuppress_5fembeds',['m_suppress_embeds',['../namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01',1,'dpp']]],
   ['m_5furgent',['m_urgent',['../namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7',1,'dpp']]],
   ['make_5fbasic_5fauthentication_5fheader',['make_basic_authentication_header',['../namespacehttplib.html#a7447b8785a1156430aedd771437a0ee3',1,'httplib']]],
   ['make_5fbearer_5ftoken_5fauthentication_5fheader',['make_bearer_token_authentication_header',['../namespacehttplib.html#aa082ee1ea10ce9c5132da091292799f3',1,'httplib']]],

@@ -64,5 +64,5 @@ var searchData=
   ['stop_5faudio',['stop_audio',['../classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d',1,'dpp::discord_voice_client']]],
   ['store',['store',['../classdpp_1_1cache.html#a959d7e651c20f8befe5958ee9b9633ba',1,'dpp::cache']]],
   ['stringnotnull',['StringNotNull',['../namespacedpp.html#acd67ddd4f95dbdac48f554ddcbbeb0b1',1,'dpp']]],
-  ['supress_5fembeds',['supress_embeds',['../structdpp_1_1message.html#a21972b1d7d2e600a4760927ccdb1ca42',1,'dpp::message']]]
+  ['suppress_5fembeds',['suppress_embeds',['../structdpp_1_1message.html#ac131de2cea0b34ca67c8871659ac02a4',1,'dpp::message']]]
 ];

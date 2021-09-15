@@ -698,7 +698,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1dbf6a68d6ba12a2cca7f263c227b5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread.  <a href="#a1dbf6a68d6ba12a2cca7f263c227b5bc">More...</a><br /></td></tr>
 <tr class="separator:a1dbf6a68d6ba12a2cca7f263c227b5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632d0bd95fa36ed7bea925123d5b07ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a632d0bd95fa36ed7bea925123d5b07ba">thread_create_with_message</a> (const std::string &amp;thread_name, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> message_id, uint16_t auto_archive_duration, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:a632d0bd95fa36ed7bea925123d5b07ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread with a message (Discord: ID of a thread is same as mesage ID)  <a href="#a632d0bd95fa36ed7bea925123d5b07ba">More...</a><br /></td></tr>
+<tr class="memdesc:a632d0bd95fa36ed7bea925123d5b07ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread with a message (Discord: ID of a thread is same as message ID)  <a href="#a632d0bd95fa36ed7bea925123d5b07ba">More...</a><br /></td></tr>
 <tr class="separator:a632d0bd95fa36ed7bea925123d5b07ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a485553dc602bb2a7ed3ca11057034221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a485553dc602bb2a7ed3ca11057034221">current_user_join_thread</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> thread_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a485553dc602bb2a7ed3ca11057034221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join a thread.  <a href="#a485553dc602bb2a7ed3ca11057034221">More...</a><br /></td></tr>
@@ -841,8 +841,8 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">intents</td><td>A bitmask of dpd::intents values for all shards on this cluster. This is required to be sent for all bots with over 100 servers. </td></tr>
     <tr><td class="paramname">shards</td><td>The total number of shards on this bot. If there are multiple clusters, then (shards / clusters) actual shards will run on this cluster. If you omit this value, the library will attempt to query the Discord API for the correct number of shards to start. </td></tr>
     <tr><td class="paramname">cluster_id</td><td>The ID of this cluster, should be between 0 and MAXCLUSTERS-1 </td></tr>
-    <tr><td class="paramname">maxclusters</td><td>The total number of clusters that are active, which may be on seperate processes or even separate machines. </td></tr>
-    <tr><td class="paramname">compressed</td><td>Wether or not to use compression for shards on this cluster. Saves a ton of bandwidth at the cost of some CPU </td></tr>
+    <tr><td class="paramname">maxclusters</td><td>The total number of clusters that are active, which may be on separate processes or even separate machines. </td></tr>
+    <tr><td class="paramname">compressed</td><td>Whether or not to use compression for shards on this cluster. Saves a ton of bandwidth at the cost of some CPU </td></tr>
     <tr><td class="paramname">policy</td><td>Set the user caching policy for the cluster, either lazy (only cache users/members when they message the bot) or aggressive (request whole member lists on seeing new guilds too) </td></tr>
   </table>
   </dd>
@@ -8086,7 +8086,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a thread with a message (Discord: ID of a thread is same as mesage ID) </p>
+<p>Create a thread with a message (Discord: ID of a thread is same as message ID) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>

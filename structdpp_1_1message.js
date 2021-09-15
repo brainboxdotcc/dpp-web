@@ -25,7 +25,7 @@ var structdpp_1_1message =
     [ "set_flags", "structdpp_1_1message.html#a3895655222ad8f3b9d9b96c47afb2454", null ],
     [ "set_reference", "structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283", null ],
     [ "set_type", "structdpp_1_1message.html#ada2f9404e7dbb12b3de0a382c3733587", null ],
-    [ "supress_embeds", "structdpp_1_1message.html#a21972b1d7d2e600a4760927ccdb1ca42", null ],
+    [ "suppress_embeds", "structdpp_1_1message.html#ac131de2cea0b34ca67c8871659ac02a4", null ],
     [ "allowed_mentions", "structdpp_1_1message.html#a6c59498ae2c014b13eb714c494e6493c", null ],
     [ "attachments", "structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7", null ],
     [ "author", "structdpp_1_1message.html#a35c14f04382266b29c4ca076b4e0f9e0", null ],
