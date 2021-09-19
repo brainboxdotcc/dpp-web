@@ -172,10 +172,11 @@ var NAVTREEINDEX0 =
 "classdpp_1_1cluster.html#a5bca14a420fac05fbff570edb8d36e7a":[6,0,0,21,62],
 "classdpp_1_1cluster.html#a5c677c0d5c059e87cc01ce598d49487d":[6,0,0,21,44],
 "classdpp_1_1cluster.html#a5f6d9dbdb2009bdea2fad46e93813af5":[6,0,0,21,74],
+"classdpp_1_1cluster.html#a6161f8d412b2e81a06594f727684a260":[6,0,0,21,221],
 "classdpp_1_1cluster.html#a627510bf4f4d1c3a999ccb506c75ec47":[6,0,0,21,17],
 "classdpp_1_1cluster.html#a62b83ee3be02df68eb5e697ddc5efc0a":[6,0,0,21,196],
 "classdpp_1_1cluster.html#a632d0bd95fa36ed7bea925123d5b07ba":[6,0,0,21,208],
-"classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e":[6,0,0,21,221],
+"classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e":[6,0,0,21,222],
 "classdpp_1_1cluster.html#a6563c6a86b51b51604367a49e5b7d40e":[6,0,0,21,152],
 "classdpp_1_1cluster.html#a662fc0a998c62395f166da5e4a2acaf3":[6,0,0,21,20],
 "classdpp_1_1cluster.html#a68f16d04f100a0159683cba96e8c0a6c":[6,0,0,21,38],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classdpp_1_1cluster.html#abb75919ec5abd5b510255692ef439f97":[6,0,0,21,116],
 "classdpp_1_1cluster.html#abd822542ad661833cbf1fc23b6f0a1aa":[6,0,0,21,186],
 "classdpp_1_1cluster.html#abd8ee0e654de56e39c418e83e1115af3":[6,0,0,21,135],
-"classdpp_1_1cluster.html#abef8cb4e6080a0bd0f6641853d088fec":[6,0,0,21,146],
-"classdpp_1_1cluster.html#abfb4457e63c60500b44bfdee27d80c75":[6,0,0,21,8]
+"classdpp_1_1cluster.html#abef8cb4e6080a0bd0f6641853d088fec":[6,0,0,21,146]
 };

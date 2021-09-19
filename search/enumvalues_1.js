@@ -15,6 +15,8 @@ var searchData=
   ['co_5fboolean',['co_boolean',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a804453a3a94d413b634544e57f5ae2cc',1,'dpp']]],
   ['co_5fchannel',['co_channel',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a96f8ffcbd6b293e75a0500d729fc9b31',1,'dpp']]],
   ['co_5finteger',['co_integer',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a7e18bae49699df4948c28c12bfa8bd19',1,'dpp']]],
+  ['co_5fmentionable',['co_mentionable',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a6104d8b3d8c608855ccf8eab2d60a821',1,'dpp']]],
+  ['co_5fnumber',['co_number',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b',1,'dpp']]],
   ['co_5frole',['co_role',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a4476d79df02a4909cd7931d5a7e5f0ac',1,'dpp']]],
   ['co_5fstring',['co_string',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58acd751201efe224973dfe952d8658a384',1,'dpp']]],
   ['co_5fsub_5fcommand',['co_sub_command',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c',1,'dpp']]],

@@ -53,12 +53,13 @@ var searchData=
   ['replied_5fuser',['replied_user',['../structdpp_1_1message_1_1allowed__ref.html#a2b618e76580414b02526dfccc8564d39',1,'dpp::message::allowed_ref']]],
   ['reply',['reply',['../classdpp_1_1commandhandler.html#a09893dbf101b7d0082b0a13e801a9db9',1,'dpp::commandhandler::reply()'],['../structdpp_1_1interaction__create__t.html#a4ed4f3ec8cb17a1bfd7f786fc4a7d285',1,'dpp::interaction_create_t::reply(interaction_response_type t, const message &amp;m) const '],['../structdpp_1_1interaction__create__t.html#ad4dea83a9b8e03c431c84389bf71557e',1,'dpp::interaction_create_t::reply(interaction_response_type t, const std::string &amp;mt) const ']]],
   ['request_5fqueue',['request_queue',['../classdpp_1_1request__queue.html',1,'dpp']]],
-  ['request_5fqueue',['request_queue',['../classdpp_1_1request__queue.html#a147c57abc0a433e1121347b73e7e7642',1,'dpp::request_queue']]],
+  ['request_5fqueue',['request_queue',['../classdpp_1_1request__queue.html#ad2fd85ef74eb9f7cc91897ba2d3f6957',1,'dpp::request_queue']]],
   ['required',['required',['../structdpp_1_1command__option.html#ad203ab30a75ce7508f565f5821301bdb',1,'dpp::command_option']]],
   ['requires_5fcolons',['requires_colons',['../classdpp_1_1emoji.html#ab68017899f67241751299e4b7d77dac7',1,'dpp::emoji']]],
   ['reset_5fafter',['reset_after',['../structdpp_1_1bucket__t.html#a69e733a2599fa42777c7cd302219d1ab',1,'dpp::bucket_t']]],
   ['resolved',['resolved',['../classdpp_1_1interaction.html#aaa88ba118d0a7b5b32090a844610d7e7',1,'dpp::interaction']]],
   ['resolved_5fuser',['resolved_user',['../structdpp_1_1resolved__user.html',1,'dpp']]],
+  ['rest_5fping',['rest_ping',['../classdpp_1_1cluster.html#a6161f8d412b2e81a06594f727684a260',1,'dpp::cluster']]],
   ['resumed',['resumed',['../classdpp_1_1dispatcher.html#a95bc992af2a7efc1c1c524eeab354990',1,'dpp::dispatcher']]],
   ['resumed',['resumed',['../classdpp_1_1events_1_1resumed.html',1,'dpp::events']]],
   ['resumed_5ft',['resumed_t',['../structdpp_1_1resumed__t.html#a39a9ceb42b2608326c23e25412eb6967',1,'dpp::resumed_t']]],
@@ -82,8 +83,8 @@ var searchData=
   ['roles',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()'],['../structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc',1,'dpp::command_resolved::roles()']]],
   ['roles_5fget',['roles_get',['../classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219',1,'dpp::cluster']]],
   ['route',['route',['../classdpp_1_1commandhandler.html#acecd44c69a7cee36d1d12aa5b0354d0d',1,'dpp::commandhandler::route(const class dpp::message &amp;msg)'],['../classdpp_1_1commandhandler.html#a0438c6a4b44fe2e5101debe846cf0894',1,'dpp::commandhandler::route(const class interaction_create_t &amp;event)']]],
-  ['rtp_5fheader',['rtp_header',['../structdpp_1_1rtp__header.html#acc1b39793e54cb2caf586cf65e2d42bd',1,'dpp::rtp_header']]],
   ['rtp_5fheader',['rtp_header',['../structdpp_1_1rtp__header.html',1,'dpp']]],
+  ['rtp_5fheader',['rtp_header',['../structdpp_1_1rtp__header.html#acc1b39793e54cb2caf586cf65e2d42bd',1,'dpp::rtp_header']]],
   ['rules_5fchannel_5fid',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]],
-  ['run',['Run',['../classdpp_1_1discord__client.html#ae768cabb169f9501bba20704867110e5',1,'dpp::discord_client::Run()'],['../classdpp_1_1discord__voice__client.html#a102408db3accf1a8561bb3e2bccef345',1,'dpp::discord_voice_client::Run()'],['../classdpp_1_1http__request.html#a620ba104acf6e2c25bcc844857fd44d3',1,'dpp::http_request::Run()']]]
+  ['run',['Run',['../classdpp_1_1discord__client.html#ae768cabb169f9501bba20704867110e5',1,'dpp::discord_client::Run()'],['../classdpp_1_1discord__voice__client.html#a102408db3accf1a8561bb3e2bccef345',1,'dpp::discord_voice_client::Run()'],['../classdpp_1_1http__request.html#a49af6bb0b85e162b79162b701545cbaa',1,'dpp::http_request::Run()']]]
 ];

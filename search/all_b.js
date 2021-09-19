@@ -8,6 +8,7 @@ var searchData=
   ['last_5fpin_5ftimestamp',['last_pin_timestamp',['../classdpp_1_1channel.html#ae33f863adef0f0cc89a7324cd93bc752',1,'dpp::channel']]],
   ['last_5fseq',['last_seq',['../classdpp_1_1discord__client.html#a8dc9f84c9b65a58f8e9eea6326a424bd',1,'dpp::discord_client']]],
   ['last_5ftick',['last_tick',['../classdpp_1_1ssl__client.html#a61f0bbeefa25de686ac93887afa65895',1,'dpp::ssl_client']]],
+  ['latency',['latency',['../structdpp_1_1http__request__completion__t.html#aa39b263a9671e1b106429c6e440faaad',1,'dpp::http_request_completion_t']]],
   ['limit',['limit',['../structdpp_1_1bucket__t.html#a092991348f1588a752cae246db4b30f6',1,'dpp::bucket_t']]],
   ['ll_5fcritical',['ll_critical',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aba578d32adc07ba8723784d8810cb57a',1,'dpp']]],
   ['ll_5fdebug',['ll_debug',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3',1,'dpp']]],
@@ -18,8 +19,8 @@ var searchData=
   ['load_5fimage',['load_image',['../classdpp_1_1emoji.html#abc20d1f03cc624b82251780cd534c085',1,'dpp::emoji::load_image()'],['../classdpp_1_1webhook.html#a32001586764985ccb69c26e47890028f',1,'dpp::webhook::load_image()']]],
   ['locked',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
   ['log',['log',['../classdpp_1_1dispatcher.html#aa3e934f108231fa426cbcd1956e72b1c',1,'dpp::dispatcher::log()'],['../classdpp_1_1cluster.html#afec6113a3f72d5bae2605ede9e0966ee',1,'dpp::cluster::log()'],['../classdpp_1_1discord__client.html#aaeb4b65604a497f2ca93c4b62dcbdfb7',1,'dpp::discord_client::log()'],['../classdpp_1_1discord__voice__client.html#a75e6ecd47216794a447f2b1def837852',1,'dpp::discord_voice_client::log()'],['../classdpp_1_1ssl__client.html#a2ed6248d7b95dce6f33f9c6513b4151e',1,'dpp::ssl_client::log()']]],
-  ['log_5ft',['log_t',['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t']]],
   ['log_5ft',['log_t',['../structdpp_1_1log__t.html',1,'dpp']]],
+  ['log_5ft',['log_t',['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t']]],
   ['logger',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
   ['loglevel',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#abd999684969fdf39b77e7f9fd09bf57f',1,'dpp::utility::loglevel()']]]
 ];
