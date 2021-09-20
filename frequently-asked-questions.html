@@ -151,7 +151,22 @@ $(document).ready(function(){initNavTree('frequently-asked-questions.html','');}
 <h2>When using precompiled libraries in Windows, the program runs but is just a black console window and the bot doesnt come online?</h2>
 <p>If this happens, switch your project to release mode. Our precompiled binaries are built in release mode for x64 vs2019 only. If you require a debug build, or a build for a newer visual studio, you will have to compile it yourself from the github sources. Please see the section about <a class="el" href="buildwindows.html">Building on Windows</a> for more information on how to do this.</p>
 <h2>Does this library build/run on Raspberry Pi?</h2>
-<p>Yes! This project will build and run on Raspberry Pi and is very much suited to this kind of system. It may take some time (read: hours) to compile the project on your Raspberry Pi unless you build it using a cross compiler. We offer pre-built <code>.deb</code> files for arm7 and arm64, you should use these where possible to avoid having to compile it by hand, or you can use a cross-compiler to build it on your PC then transfer the compiled binaries across. </p>
+<p>Yes! This project will build and run on Raspberry Pi and is very much suited to this kind of system. It may take some time (read: hours) to compile the project on your Raspberry Pi unless you build it using a cross compiler. We offer pre-built <code>.deb</code> files for arm6, arm7 and arm64, you should use these where possible to avoid having to compile it by hand, or you can use a cross-compiler to build it on your PC then transfer the compiled binaries across.</p>
+<h2>There are so many versions! Which deb file do i need for my Raspberry Pi?</h2>
+<p>Depending on which Raspberry Pi version you have, you will need to download a different release binary: </p><table class="doxtable">
+<tr>
+<th>Raspberry Pi Model </th><th>Architecture </th><th>Deb file to install  </th></tr>
+<tr>
+<td>Raspberry Pi Zero/Zero W</td><td>ARMv6</td><td><code>libdpp-x.x.x-linux-rpi-arm6.deb</code> </td></tr>
+<tr>
+<td>Raspberry Pi 3</td><td>ARMv7HF</td><td><code>libdpp-x.x.x-linux-rpi-arm7hf.deb</code> </td></tr>
+<tr>
+<td>Raspberry Pi 4</td><td>ARMv7HF</td><td><code>libdpp-x.x.x-linux-rpi-arm7hf.deb</code> </td></tr>
+<tr>
+<td>Raspberry Pi 4 with 64 Bit Linux</td><td>ARM64</td><td><code>libdpp-x.x.x-linux-rpi-arm64.deb</code> </td></tr>
+</table>
+<h2>Are other ARM devices supported?</h2>
+<p>Yes! We have confirmed that the D++ deb file will successfully install and operate on various forms of cellphone or non-pi ARM devices. If you get it working on any other devices please let us know and we can build a compatibility chart. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
