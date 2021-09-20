@@ -1025,15 +1025,22 @@ Protected Attributes</h2></td></tr>
 
 <p>Send audio to the voice channel. </p>
 <p>You should send an audio packet of n11520 bytes. Note that this function can be costly as it has to opus encode the PCM audio on the fly, and also encrypt it with libsodium.</p>
-<dl class="section note"><dt>Note</dt><dd>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once. Constantly calling this from the dpp::on_voice_buffer_send callback can and will eat a TON of cpu!</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once (unless you have set use_opus to false). Constantly calling this from the dpp::on_voice_buffer_send callback can and will eat a TON of cpu!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">audio_data</td><td>Raw PCM audio data. Channels are interleaved, with each channel's amplitude being a 16 bit value. </td></tr>
-    <tr><td class="paramname">length</td><td>The length of the audio data. The length should be a multiple of 4 (2x 16 bit stero channels) with a maximum length of 11520, which is a complete opus frame at highest quality. </td></tr>
-    <tr><td class="paramname">use_opus</td><td>Some containers such as .ogg may contain OPUS encoded data already. In this case, we don't need to encode the frames using opus here. We can set use_opus to false and bypass the codec, only applying libsodium to the stream. </td></tr>
+    <tr><td class="paramname">audio_data</td><td>Raw PCM audio data. Channels are interleaved, with each channel's amplitude being a 16 bit value.</td></tr>
   </table>
   </dd>
 </dl>
+<p>The audio data should be 48000Khz signed 16 bit audio.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>The length of the audio data. The length should be a multiple of 4 (2x 16 bit stero channels) with a maximum length of 11520, which is a complete opus frame at highest quality. </td></tr>
+    <tr><td class="paramname">use_opus</td><td>Some containers such as .ogg may contain OPUS encoded data already. In this case, we don't need to encode the frames using opus here. We can set use_opus to false and bypass the codec, only applying libsodium to the stream.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If you set use_opus to false, it is your responsibility to ensure that packets of data sent to send_audio are correctly repacketized for streaming, e.g. that audio frames are not too large or contain an incorrect format. Discord will still expect the same frequency and bit width of audio and the same signedness. </dd></dl>
 
 </div>
 </div>
