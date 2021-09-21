@@ -36,6 +36,7 @@ var searchData=
   ['error_5fdetail',['error_detail',['../structdpp_1_1error__detail.html',1,'dpp']]],
   ['error_5finfo',['error_info',['../structdpp_1_1error__info.html',1,'dpp']]],
   ['error_5fstatus',['ERROR_STATUS',['../namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87',1,'dpp']]],
+  ['errorhandler',['ErrorHandler',['../class_error_handler.html',1,'']]],
   ['errors',['errors',['../structdpp_1_1error__info.html#ac84fd7b6e0344c9b282b13a43dfc40a0',1,'dpp::error_info']]],
   ['event',['event',['../structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b',1,'dpp::audit_entry']]],
   ['event',['event',['../classdpp_1_1events_1_1event.html',1,'dpp::events']]],

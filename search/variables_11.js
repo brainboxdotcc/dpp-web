@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['s',['s',['../structdetail_1_1chrono__formatter.html#ad793b92f09fbf72b77e05b4890f7c738',1,'detail::chrono_formatter']]],
   ['second',['second',['../structdpp_1_1utility_1_1iconhash.html#ac78956497078b93d5510d493a4d23172',1,'dpp::utility::iconhash']]],
   ['secs',['secs',['../structdpp_1_1utility_1_1uptime.html#adf60583f58dfe5cff52196b44c29f012',1,'dpp::utility::uptime']]],
   ['select_5fclick',['select_click',['../classdpp_1_1dispatcher.html#a071ef2f5586d7879dbb17d9b1757d38a',1,'dpp::dispatcher']]],
@@ -23,6 +24,7 @@ var searchData=
   ['sodium_5finitialised',['sodium_initialised',['../classdpp_1_1discord__voice__client.html#adfbadeaa50f485f0a0418c4570e1a4cd',1,'dpp::discord_voice_client']]],
   ['sort_5fvalue',['sort_value',['../structdpp_1_1sticker.html#a621d5047225fb02a39523d74ce7e9130',1,'dpp::sticker']]],
   ['source_5fguild_5fid',['source_guild_id',['../classdpp_1_1dtemplate.html#a4ec6536f11f56d2cb001dc76e9bd9ceb',1,'dpp::dtemplate']]],
+  ['specs',['specs',['../structformatter_3_01std_1_1tm_00_01_char_01_4.html#a57c0d36c7943de87688eeae9c3bd0b28',1,'formatter&lt; std::tm, Char &gt;']]],
   ['splash',['splash',['../classdpp_1_1guild.html#a45281957f5252467c6b620c61de4ca14',1,'dpp::guild']]],
   ['ssl',['ssl',['../classdpp_1_1opensslcontext.html#a720f2e9de953471de4aeda813156ccc1',1,'dpp::opensslcontext::ssl()'],['../classdpp_1_1ssl__client.html#a2398ebb5fe51346ca7e97ec162327c4e',1,'dpp::ssl_client::ssl()']]],
   ['ssrc',['ssrc',['../structdpp_1_1rtp__header.html#a86786b1a234f930d804d9f3895eca995',1,'dpp::rtp_header']]],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['b1',['B1',['../class_b1.html',1,'']]],
   ['ban',['ban',['../classdpp_1_1ban.html',1,'dpp']]],
   ['ban',['ban',['../classdpp_1_1ban.html#ad892633726780283e88837a404953351',1,'dpp::ban']]],
   ['ban_5fmap',['ban_map',['../namespacedpp.html#a52b195380df96e9c43f35fa2da82db14',1,'dpp']]],
@@ -10,7 +9,6 @@ var searchData=
   ['banning_5fguild',['banning_guild',['../structdpp_1_1guild__ban__add__t.html#a205babd5bfbb4ed9810d824d28711536',1,'dpp::guild_ban_add_t']]],
   ['base64_5fencode',['base64_encode',['../namespacedpp.html#ae14a21eeaf5db9a458c3ea6acf5b36f2',1,'dpp']]],
   ['base_5fpermissions',['base_permissions',['../classdpp_1_1guild.html#aab6c11a3f36981309411c979615e1a2f',1,'dpp::guild']]],
-  ['binarytype',['BinaryType',['../class_binary_type.html',1,'']]],
   ['body',['body',['../structdpp_1_1http__request__completion__t.html#ac14ffa7060df12797e238f2619153ef9',1,'dpp::http_request_completion_t']]],
   ['boolnotnull',['BoolNotNull',['../namespacedpp.html#af0b40be5029ec87c8df251f927e94eef',1,'dpp']]],
   ['bot',['bot',['../structdpp_1_1integration__app.html#aca271fe17734a35346dc13a18034b5b8',1,'dpp::integration_app']]],
@@ -24,8 +22,8 @@ var searchData=
   ['building_20on_20osx',['Building on OSX',['../buildosx.html',1,'md_docpages_02_build']]],
   ['building_20on_20windows',['Building on Windows',['../buildwindows.html',1,'md_docpages_02_build']]],
   ['button_5fclick',['button_click',['../classdpp_1_1dispatcher.html#a95261b35417e81c65e9046eca9f0d57c',1,'dpp::dispatcher']]],
-  ['button_5fclick_5ft',['button_click_t',['../structdpp_1_1button__click__t.html#a18cfc5b1ec6d672e6e8c77f4f467dc7b',1,'dpp::button_click_t']]],
   ['button_5fclick_5ft',['button_click_t',['../structdpp_1_1button__click__t.html',1,'dpp']]],
+  ['button_5fclick_5ft',['button_click_t',['../structdpp_1_1button__click__t.html#a18cfc5b1ec6d672e6e8c77f4f467dc7b',1,'dpp::button_click_t']]],
   ['bytes',['bytes',['../classdpp_1_1cache.html#adce9b317fc1c93aff5638b3ac2795630',1,'dpp::cache::bytes()'],['../namespacedpp_1_1utility.html#a0175a6451f8d41c9e17833fae9be3c5c',1,'dpp::utility::bytes()']]],
   ['bytes_5fin',['bytes_in',['../classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d',1,'dpp::ssl_client']]],
   ['bytes_5fout',['bytes_out',['../classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085',1,'dpp::ssl_client']]],

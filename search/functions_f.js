@@ -7,6 +7,7 @@ var searchData=
   ['rehash_5fmembers',['rehash_members',['../classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac',1,'dpp::guild']]],
   ['remove',['remove',['../classdpp_1_1cache.html#a0aece71ffd50382b7f070738a4599d49',1,'dpp::cache']]],
   ['reply',['reply',['../classdpp_1_1commandhandler.html#a09893dbf101b7d0082b0a13e801a9db9',1,'dpp::commandhandler::reply()'],['../structdpp_1_1interaction__create__t.html#a4ed4f3ec8cb17a1bfd7f786fc4a7d285',1,'dpp::interaction_create_t::reply(interaction_response_type t, const message &amp;m) const '],['../structdpp_1_1interaction__create__t.html#ad4dea83a9b8e03c431c84389bf71557e',1,'dpp::interaction_create_t::reply(interaction_response_type t, const std::string &amp;mt) const ']]],
+  ['report_5fno_5fdate',['report_no_date',['../structdetail_1_1chrono__format__checker.html#a741f5427b5d79845a9e4ffb7c0878b5f',1,'detail::chrono_format_checker']]],
   ['request_5fqueue',['request_queue',['../classdpp_1_1request__queue.html#ad2fd85ef74eb9f7cc91897ba2d3f6957',1,'dpp::request_queue']]],
   ['requires_5fcolons',['requires_colons',['../classdpp_1_1emoji.html#ab68017899f67241751299e4b7d77dac7',1,'dpp::emoji']]],
   ['resumed_5ft',['resumed_t',['../structdpp_1_1resumed__t.html#a39a9ceb42b2608326c23e25412eb6967',1,'dpp::resumed_t']]],

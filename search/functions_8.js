@@ -83,5 +83,7 @@ var searchData=
   ['is_5fverified_5fbot_5fdev',['is_verified_bot_dev',['../classdpp_1_1user.html#af39cec5c8d97d2a238f4505a14609de1',1,'dpp::user']]],
   ['is_5fvip',['is_vip',['../classdpp_1_1voiceregion.html#a0607cfeaeed50a1ec660e4338b0901f0',1,'dpp::voiceregion']]],
   ['is_5fvoice_5fchannel',['is_voice_channel',['../classdpp_1_1channel.html#ad7e17dfb9f4ca86aa7aec303d7e53186',1,'dpp::channel']]],
-  ['is_5fwelcome_5fscreen_5fenabled',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#ac59c9d19e736ae7f6ce3617684333677',1,'dpp::guild']]]
+  ['is_5fwelcome_5fscreen_5fenabled',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#ac59c9d19e736ae7f6ce3617684333677',1,'dpp::guild']]],
+  ['isfinite',['isfinite',['../namespacedetail.html#ab69f2583a2a167ea0b0e4c333448b113',1,'detail']]],
+  ['isnan',['isnan',['../namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841',1,'detail']]]
 ];

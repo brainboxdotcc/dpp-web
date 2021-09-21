@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['safe_5fduration_5fcast',['safe_duration_cast',['../namespacesafe__duration__cast.html#a1b2f780f349d616fa841550dc49f59d0',1,'safe_duration_cast']]],
+  ['safe_5ffloat_5fconversion',['safe_float_conversion',['../namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a',1,'safe_duration_cast']]],
+  ['second',['second',['../structdetail_1_1chrono__formatter.html#aa58642943b9e4a6513f299f195d5bf18',1,'detail::chrono_formatter']]],
   ['select_5fclick_5ft',['select_click_t',['../structdpp_1_1select__click__t.html#adb17761e9ee06c77ae9daf0313c63913',1,'dpp::select_click_t']]],
   ['select_5foption',['select_option',['../structdpp_1_1select__option.html#aa6ca8ed29e8e1f81ab8ce82e2b9ed1fa',1,'dpp::select_option::select_option()'],['../structdpp_1_1select__option.html#afdd887738c88c21cee80ce2ddd6a0f84',1,'dpp::select_option::select_option(const std::string &amp;label, const std::string &amp;value, const std::string &amp;description=&quot;&quot;)']]],
   ['self_5fstream',['self_stream',['../classdpp_1_1voicestate.html#a14bfe38e85f94b03a773ba098384f6d9',1,'dpp::voicestate']]],
@@ -63,6 +66,7 @@ var searchData=
   ['sticker_5fpacks_5fget',['sticker_packs_get',['../classdpp_1_1cluster.html#ae64421a4b2402238feb0536639009c18',1,'dpp::cluster']]],
   ['stop_5faudio',['stop_audio',['../classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d',1,'dpp::discord_voice_client']]],
   ['store',['store',['../classdpp_1_1cache.html#a959d7e651c20f8befe5958ee9b9633ba',1,'dpp::cache']]],
+  ['strftime',['strftime',['../namespacedetail.html#a1f56278fd84d8bc33338c33694a87fb8',1,'detail::strftime(char *str, size_t count, const char *format, const std::tm *time)'],['../namespacedetail.html#aa394945bd077a30102ef2ca015a1540b',1,'detail::strftime(wchar_t *str, size_t count, const wchar_t *format, const std::tm *time)']]],
   ['stringnotnull',['StringNotNull',['../namespacedpp.html#acd67ddd4f95dbdac48f554ddcbbeb0b1',1,'dpp']]],
   ['suppress_5fembeds',['suppress_embeds',['../structdpp_1_1message.html#ac131de2cea0b34ca67c8871659ac02a4',1,'dpp::message']]]
 ];

@@ -11,6 +11,8 @@ var searchData=
   ['channel_5fpins_5fupdate_5ft',['channel_pins_update_t',['../structdpp_1_1channel__pins__update__t.html',1,'dpp']]],
   ['channel_5fupdate',['channel_update',['../classdpp_1_1events_1_1channel__update.html',1,'dpp::events']]],
   ['channel_5fupdate_5ft',['channel_update_t',['../structdpp_1_1channel__update__t.html',1,'dpp']]],
+  ['chrono_5fformat_5fchecker',['chrono_format_checker',['../structdetail_1_1chrono__format__checker.html',1,'detail']]],
+  ['chrono_5fformatter',['chrono_formatter',['../structdetail_1_1chrono__formatter.html',1,'detail']]],
   ['cluster',['cluster',['../classdpp_1_1cluster.html',1,'dpp']]],
   ['command_5fdata_5foption',['command_data_option',['../structdpp_1_1command__data__option.html',1,'dpp']]],
   ['command_5finfo_5ft',['command_info_t',['../structdpp_1_1command__info__t.html',1,'dpp']]],

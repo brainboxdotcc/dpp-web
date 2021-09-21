@@ -1,6 +1,8 @@
 var searchData=
 [
   ['param_5finfo',['param_info',['../structdpp_1_1param__info.html#aa47a4f69b706710769204d4bcc4e63f8',1,'dpp::param_info']]],
+  ['parse',['parse',['../structformatter_3_01std_1_1tm_00_01_char_01_4.html#a9c8caf13b1795ab3974768dc5f98a0e9',1,'formatter&lt; std::tm, Char &gt;::parse()'],['../structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a61336eae6a6e84dc63a367da3aaf91e8',1,'formatter&lt; std::chrono::duration&lt; Rep, Period &gt;, Char &gt;::parse()']]],
+  ['parse_5fchrono_5fformat',['parse_chrono_format',['../namespacedetail.html#af4b2fcda1a7aa1d25d707e0b531c9d6b',1,'detail']]],
   ['pause_5faudio',['pause_audio',['../classdpp_1_1discord__voice__client.html#ad21c8743aef9a874ef53edfebd8ee2fb',1,'dpp::discord_voice_client']]],
   ['permission_5foverwrites',['permission_overwrites',['../classdpp_1_1guild.html#a6a4f4c513e88f3827c8ae666ae13af26',1,'dpp::guild']]],
   ['pins_5fget',['pins_get',['../classdpp_1_1cluster.html#a566bb31ea08798afe2fca4888e3c5e70',1,'dpp::cluster']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['slashcommand_5fcontextmenu_5ftype',['slashcommand_contextmenu_type',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb',1,'dpp']]],
-  ['sticker_5fformat',['sticker_format',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2',1,'dpp']]],
-  ['sticker_5ftype',['sticker_type',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bff',1,'dpp']]]
+  ['region',['region',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099',1,'dpp']]],
+  ['role_5fflags',['role_flags',['../namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2e',1,'dpp']]],
+  ['role_5fpermissions',['role_permissions',['../namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f',1,'dpp']]]
 ];

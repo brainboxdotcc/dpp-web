@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['anonymous_5fnamespace_7bos_2ecpp_7d',['anonymous_namespace{os.cpp}',['../namespaceanonymous__namespace_02os_8cpp_03.html',1,'']]]
+  ['detail',['detail',['../namespacedetail.html',1,'']]],
+  ['dpp',['dpp',['../namespacedpp.html',1,'']]],
+  ['events',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
+  ['utility',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]]
 ];
