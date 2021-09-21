@@ -1,7 +1,7 @@
 var classdpp_1_1emoji =
 [
     [ "emoji", "classdpp_1_1emoji.html#aee6f71256204a1882749bf3f8939a2e9", null ],
-    [ "emoji", "classdpp_1_1emoji.html#ac8bb2ad49ad8c6b78312e1d5ffc6945a", null ],
+    [ "emoji", "classdpp_1_1emoji.html#aaeb35bb6ddb0b46c4099386ba074a0d4", null ],
     [ "~emoji", "classdpp_1_1emoji.html#a0a25072ec7ccc6e5da014fa888c6d8e9", null ],
     [ "build_json", "classdpp_1_1emoji.html#a293a68d3618187e663a38b0865e0fb20", null ],
     [ "fill_from_json", "classdpp_1_1emoji.html#a01f1788797bbf2bde2b8856f50c280f5", null ],

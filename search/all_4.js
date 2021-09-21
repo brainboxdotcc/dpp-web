@@ -17,7 +17,7 @@ var searchData=
   ['embed_5fimage',['embed_image',['../structdpp_1_1embed__image.html',1,'dpp']]],
   ['embed_5fprovider',['embed_provider',['../structdpp_1_1embed__provider.html',1,'dpp']]],
   ['embeds',['embeds',['../structdpp_1_1message.html#a9c0eb22ba371ead6d960bdf7c9838b6e',1,'dpp::message']]],
-  ['emoji',['emoji',['../structdpp_1_1select__option.html#ad0e854a2bce6f33ea92823227f3bcd78',1,'dpp::select_option::emoji()'],['../classdpp_1_1component.html#a99f69b18204a7020927c8ff7aceffbc6',1,'dpp::component::emoji()'],['../classdpp_1_1emoji.html#aee6f71256204a1882749bf3f8939a2e9',1,'dpp::emoji::emoji()'],['../classdpp_1_1emoji.html#ac8bb2ad49ad8c6b78312e1d5ffc6945a',1,'dpp::emoji::emoji(const std::string, const snowflake=0, const uint8_t=0)']]],
+  ['emoji',['emoji',['../structdpp_1_1select__option.html#ad0e854a2bce6f33ea92823227f3bcd78',1,'dpp::select_option::emoji()'],['../classdpp_1_1component.html#a99f69b18204a7020927c8ff7aceffbc6',1,'dpp::component::emoji()'],['../classdpp_1_1emoji.html#aee6f71256204a1882749bf3f8939a2e9',1,'dpp::emoji::emoji()'],['../classdpp_1_1emoji.html#aaeb35bb6ddb0b46c4099386ba074a0d4',1,'dpp::emoji::emoji(const std::string n, const snowflake i=0, const uint8_t f=0)']]],
   ['emoji',['emoji',['../classdpp_1_1emoji.html',1,'dpp']]],
   ['emoji_5fcache',['emoji_cache',['../namespacedpp.html#a3d2e114ba137f1f5bf6fd9782f41d2f2',1,'dpp']]],
   ['emoji_5fflags',['emoji_flags',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8',1,'dpp']]],

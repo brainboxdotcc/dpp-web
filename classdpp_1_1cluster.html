@@ -2608,7 +2608,7 @@ Public Attributes</h2></td></tr>
 <p>Get webhook message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Webhook</td><td>to get the original message for </td></tr>
+    <tr><td class="paramname">wh</td><td>Webhook to get the original message for </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
   </table>
   </dd>
@@ -2685,7 +2685,7 @@ Public Attributes</h2></td></tr>
 <p>Create/overwrite global slash commands. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Vector of slash commands to create/update. overwriting existing commands that are registered globally for this application. Updates will be available in all guilds after 1 hour. Commands that do not already exist will count toward daily application command create limits. </td></tr>
+    <tr><td class="paramname">commands</td><td>Vector of slash commands to create/update. overwriting existing commands that are registered globally for this application. Updates will be available in all guilds after 1 hour. Commands that do not already exist will count toward daily application command create limits. </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a list of dpp::slashcommmand object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a612750509ef5f81831fa4c8c59fa7711" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
@@ -3072,7 +3072,7 @@ Public Attributes</h2></td></tr>
 <p>Create/overwrite guild slash commands. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Vector of slash commands to create/update. New guild commands will be available in the guild immediately. If the command did not already exist, it will count toward daily application command create limits. </td></tr>
+    <tr><td class="paramname">commands</td><td>Vector of slash commands to create/update. New guild commands will be available in the guild immediately. If the command did not already exist, it will count toward daily application command create limits. </td></tr>
     <tr><td class="paramname">guild_id</td><td>Guild ID to create/update the slash commands in </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a list of dpp::slashcommmand object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a612750509ef5f81831fa4c8c59fa7711" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
@@ -4968,7 +4968,7 @@ Public Attributes</h2></td></tr>
 <p>Respond to a slash command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td>Message to send </td></tr>
+    <tr><td class="paramname">r</td><td>Message to send </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request. ">dpp::confirmation</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a612750509ef5f81831fa4c8c59fa7711" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
@@ -7499,7 +7499,7 @@ Public Attributes</h2></td></tr>
 <p>Called when sending of audio passes over a track marker. Track markers are arbitrarily placed "bookmarks" in the audio buffer, placed by the bot developer. Each track marker can have a string value associated with it which is specified in <a class="el" href="classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84" title="Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer...">dpp::discord_voice_client::insert_marker</a> and returned to this event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_voice_receive</td><td>User function to attach to event </td></tr>
+    <tr><td class="paramname">_voice_track_marker</td><td>User function to attach to event </td></tr>
   </table>
   </dd>
 </dl>
