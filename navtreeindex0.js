@@ -6,7 +6,7 @@ var NAVTREEINDEX0 =
 "buildosx.html":[1,2],
 "buildwindows.html":[1,1],
 "class_error_handler.html":[6,0,2],
-"class_traits.html":[6,0,6],
+"class_traits.html":[6,0,9],
 "classdpp_1_1activity.html":[6,0,1,2],
 "classdpp_1_1activity.html#a05dd85de62a60b6dc2dbce16583f8be4":[6,0,1,2,1],
 "classdpp_1_1activity.html#a0f393e44d64caee04effbd9821f13635":[6,0,1,2,3],
