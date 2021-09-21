@@ -2141,6 +2141,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel to get active threads for </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>
 </dl>
@@ -2343,6 +2344,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
     <tr><td class="paramname">before_id</td><td>Get threads before this id </td></tr>
     <tr><td class="paramname">limit</td><td>Number of threads to get </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>
 </dl>
@@ -2391,6 +2393,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
     <tr><td class="paramname">before_timestamp</td><td>Get threads before this timestamp </td></tr>
     <tr><td class="paramname">limit</td><td>Number of threads to get </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>
 </dl>
@@ -2439,6 +2442,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
     <tr><td class="paramname">before_timestamp</td><td>Get threads before this timestamp </td></tr>
     <tr><td class="paramname">limit</td><td>Number of threads to get </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>
 </dl>
@@ -2516,6 +2520,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread to get members for </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes </td></tr>
   </table>
   </dd>
 </dl>
@@ -4927,6 +4932,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interaction_id</td><td>Interaction id to respond to </td></tr>
+    <tr><td class="paramname">token</td><td>Token for the interaction webhook </td></tr>
     <tr><td class="paramname">r</td><td>Response to send </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request. ">dpp::confirmation</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a612750509ef5f81831fa4c8c59fa7711" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
@@ -4968,6 +4974,7 @@ Public Attributes</h2></td></tr>
 <p>Respond to a slash command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">token</td><td>Token for the interaction webhook </td></tr>
     <tr><td class="paramname">r</td><td>Message to send </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request. ">dpp::confirmation</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a37cbc7933dd12462e0630ef03052dad5" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a612750509ef5f81831fa4c8c59fa7711" title="Get the error_info object. The error_info object contains the details of any REST error...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
