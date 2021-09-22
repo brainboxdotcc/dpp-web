@@ -5,6 +5,7 @@ var searchData=
   ['using_20component_20interactions_20_28advanced_29',['Using component interactions (advanced)',['../components2.html',1,'md_docpages_03_example_programs']]],
   ['using_20component_20interactions_20_28select_20menus_29',['Using component interactions (select menus)',['../components3.html',1,'md_docpages_03_example_programs']]],
   ['using_20slash_20commands_20and_20interactions',['Using Slash Commands and Interactions',['../slashcommands.html',1,'md_docpages_03_example_programs']]],
+  ['using_20sub_2dcommands_20in_20slash_20commands',['Using sub-commands in slash commands',['../subcommands.html',1,'md_docpages_03_example_programs']]],
   ['u_5fanimated_5ficon',['u_animated_icon',['../namespacedpp.html#ace1318b24526febab72157cdd8b7b468a2aef392b3338053d54a8e2bc0a3a465f',1,'dpp']]],
   ['u_5fbot',['u_bot',['../namespacedpp.html#ace1318b24526febab72157cdd8b7b468a08571594b32cf14501db06b9a39c0d2b',1,'dpp']]],
   ['u_5fbughunter_5f1',['u_bughunter_1',['../namespacedpp.html#ace1318b24526febab72157cdd8b7b468aff3f9dd3f4da4e8c47c3dad9b080264e',1,'dpp']]],
