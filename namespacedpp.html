@@ -192,7 +192,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each command option is a command line parameter. It can have a type (see <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58" title="Represents command option types. These are the possible parameter value types. ">dpp::command_option_type</a>), a name, a description, can be required or optional, and can have zero or more choices (for multiple choice), plus options. Adding options acts like sub-commands and can contain more options.  <a href="structdpp_1_1command__option.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__option__choice.html">command_option_choice</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct represents choices in a multiple choice option for a command parameter. It has both a string name, and a value parameter which is a variant, meaning it can hold different potential types (see <a class="el" href="namespacedpp.html#acba8fe9be2a2912f93fed30293321f42" title="This type is a variant that can hold any of the potential native data types represented by the enum a...">dpp::command_value</a>) that you can retrieve with std::get().  <a href="structdpp_1_1command__option__choice.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct represents choices in a multiple choice option for a command parameter. It has both a string name, and a value parameter which is a variant, meaning it can hold different potential types (see <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6" title="This type is a variant that can hold any of the potential native data types represented by the enum a...">dpp::command_value</a>) that you can retrieve with std::get().  <a href="structdpp_1_1command__option__choice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1command__permission.html">command_permission</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application command permissions allow you to enable or disable commands for specific users or roles within a guild.  <a href="classdpp_1_1command__permission.html#details">More...</a><br /></td></tr>
@@ -584,20 +584,20 @@ class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *
 <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a></td></tr>
 <tr class="memdesc:aafc7fb6792b12d92c4e77b46d20924ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically JSON encoded HTTP result.  <a href="#aafc7fb6792b12d92c4e77b46d20924ee">More...</a><br /></td></tr>
 <tr class="separator:aafc7fb6792b12d92c4e77b46d20924ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb2baec22d57fda4e7441777c0f6c09b"><td class="memItemLeft" align="right" valign="top">typedef std::variant<br class="typebreak" />
+<tr class="memitem:aeda63f2562bc6f52b50b793b70341abd"><td class="memItemLeft" align="right" valign="top">typedef std::variant<br class="typebreak" />
 &lt; std::monostate, std::string, <br class="typebreak" />
 <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <br class="typebreak" />
-<a class="el" href="structdpp_1_1resolved__user.html">dpp::resolved_user</a>, int32_t, <br class="typebreak" />
-bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#abb2baec22d57fda4e7441777c0f6c09b">command_parameter</a></td></tr>
-<tr class="memdesc:abb2baec22d57fda4e7441777c0f6c09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a received parameter. We use variant so that multiple non-related types can be contained within.  <a href="#abb2baec22d57fda4e7441777c0f6c09b">More...</a><br /></td></tr>
-<tr class="separator:abb2baec22d57fda4e7441777c0f6c09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="structdpp_1_1resolved__user.html">dpp::resolved_user</a>, int64_t, <br class="typebreak" />
+bool, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">command_parameter</a></td></tr>
+<tr class="memdesc:aeda63f2562bc6f52b50b793b70341abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a received parameter. We use variant so that multiple non-related types can be contained within.  <a href="#aeda63f2562bc6f52b50b793b70341abd">More...</a><br /></td></tr>
+<tr class="separator:aeda63f2562bc6f52b50b793b70341abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6daf230da747f01eeaa36fd3d5e51a65"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair<br class="typebreak" />
 &lt; std::string, <a class="el" href="structdpp_1_1param__info.html">param_info</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65">parameter_registration_t</a></td></tr>
 <tr class="memdesc:a6daf230da747f01eeaa36fd3d5e51a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter list used during registration. Note that use of vector/pair is important here to preserve parameter order, as opposed to unordered_map (which doesnt guarantee any order at all) and std::map, which reorders keys alphabetically.  <a href="#a6daf230da747f01eeaa36fd3d5e51a65">More...</a><br /></td></tr>
 <tr class="separator:a6daf230da747f01eeaa36fd3d5e51a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632b6ae7b47a5feb95104644a487e4f1"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair<br class="typebreak" />
 &lt; std::string, <br class="typebreak" />
-<a class="el" href="namespacedpp.html#abb2baec22d57fda4e7441777c0f6c09b">command_parameter</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a></td></tr>
+<a class="el" href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">command_parameter</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a></td></tr>
 <tr class="memdesc:a632b6ae7b47a5feb95104644a487e4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter list for a called command. See <a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65" title="Parameter list used during registration. Note that use of vector/pair is important here to preserve p...">dpp::parameter_registration_t</a> for an explanation as to why vector is used.  <a href="#a632b6ae7b47a5feb95104644a487e4f1">More...</a><br /></td></tr>
 <tr class="separator:a632b6ae7b47a5feb95104644a487e4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a8ab3231965d0e361f305a7fe431f3"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <br class="typebreak" />
@@ -651,11 +651,12 @@ std::string &amp;, const <br class="typebreak" />
 <tr class="memitem:adb1c0770936ed4ac64158cf9523e638b"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map<br class="typebreak" />
 &lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1role.html">role</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b">role_map</a></td></tr>
 <tr class="separator:adb1c0770936ed4ac64158cf9523e638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acba8fe9be2a2912f93fed30293321f42"><td class="memItemLeft" align="right" valign="top">typedef std::variant<br class="typebreak" />
+<tr class="memitem:a710b32b577396ba92917d0578f0bedb6"><td class="memItemLeft" align="right" valign="top">typedef std::variant<br class="typebreak" />
 &lt; std::monostate, std::string, <br class="typebreak" />
-int32_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acba8fe9be2a2912f93fed30293321f42">command_value</a></td></tr>
-<tr class="memdesc:acba8fe9be2a2912f93fed30293321f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is a variant that can hold any of the potential native data types represented by the enum above. It is used in interactions.  <a href="#acba8fe9be2a2912f93fed30293321f42">More...</a><br /></td></tr>
-<tr class="separator:acba8fe9be2a2912f93fed30293321f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+int64_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <br class="typebreak" />
+double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a></td></tr>
+<tr class="memdesc:a710b32b577396ba92917d0578f0bedb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is a variant that can hold any of the potential native data types represented by the enum above. It is used in interactions.  <a href="#a710b32b577396ba92917d0578f0bedb6">More...</a><br /></td></tr>
+<tr class="separator:a710b32b577396ba92917d0578f0bedb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfefe335636cdf5dbbba145a3828c554"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map<br class="typebreak" />
 &lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">slashcommand_map</a></td></tr>
 <tr class="memdesc:adfefe335636cdf5dbbba145a3828c554"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of application slash commands.  <a href="#adfefe335636cdf5dbbba145a3828c554">More...</a><br /></td></tr>
@@ -774,6 +775,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a65e5825b1a709ece15c7de9dd2b21bdf">pt_user</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270">pt_integer</a>, 
+<a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a095d2a7bbe72af8c679d3f02f4395650">pt_double</a>, 
 <a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864acdd3703d49822d51598fa8575ce7bbd9">pt_boolean</a>
 <br />
  }</td></tr>
@@ -1484,12 +1486,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb2baec22d57fda4e7441777c0f6c09b"></a>
+<a class="anchor" id="aeda63f2562bc6f52b50b793b70341abd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::variant&lt;std::monostate, std::string, <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <a class="el" href="structdpp_1_1resolved__user.html">dpp::resolved_user</a>, int32_t, bool&gt; <a class="el" href="namespacedpp.html#abb2baec22d57fda4e7441777c0f6c09b">dpp::command_parameter</a></td>
+          <td class="memname">typedef std::variant&lt;std::monostate, std::string, <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <a class="el" href="structdpp_1_1resolved__user.html">dpp::resolved_user</a>, int64_t, bool, double&gt; <a class="el" href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">dpp::command_parameter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1498,12 +1500,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acba8fe9be2a2912f93fed30293321f42"></a>
+<a class="anchor" id="a710b32b577396ba92917d0578f0bedb6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::variant&lt;std::monostate, std::string, int32_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&gt; <a class="el" href="namespacedpp.html#acba8fe9be2a2912f93fed30293321f42">dpp::command_value</a></td>
+          <td class="memname">typedef std::variant&lt;std::monostate, std::string, int64_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, double&gt; <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">dpp::command_value</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1679,7 +1681,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;std::pair&lt;std::string, <a class="el" href="namespacedpp.html#abb2baec22d57fda4e7441777c0f6c09b">command_parameter</a>&gt; &gt; <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">dpp::parameter_list_t</a></td>
+          <td class="memname">typedef std::vector&lt;std::pair&lt;std::string, <a class="el" href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">command_parameter</a>&gt; &gt; <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">dpp::parameter_list_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2942,7 +2944,10 @@ Variables</h2></td></tr>
 <p>User object. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270"></a>pt_integer&#160;</td><td class="fielddoc">
-<p>32 bit signed integer </p>
+<p>64 bit signed integer </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9a2049904620e4f62b82f8dc818de864a095d2a7bbe72af8c679d3f02f4395650"></a>pt_double&#160;</td><td class="fielddoc">
+<p>double floating point </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9a2049904620e4f62b82f8dc818de864acdd3703d49822d51598fa8575ce7bbd9"></a>pt_boolean&#160;</td><td class="fielddoc">
 <p>boolean </p>

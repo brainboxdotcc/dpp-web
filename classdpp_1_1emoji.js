@@ -9,7 +9,7 @@ var classdpp_1_1emoji =
     [ "is_animated", "classdpp_1_1emoji.html#a30357ca75d1659499271b947c6edcf91", null ],
     [ "is_available", "classdpp_1_1emoji.html#ad1c9edcd52c7e3ca86c3824c4285b426", null ],
     [ "is_managed", "classdpp_1_1emoji.html#a09ad5ba947491f3ee4941d47444a22f3", null ],
-    [ "load_image", "classdpp_1_1emoji.html#abc20d1f03cc624b82251780cd534c085", null ],
+    [ "load_image", "classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9", null ],
     [ "requires_colons", "classdpp_1_1emoji.html#ab68017899f67241751299e4b7d77dac7", null ],
     [ "flags", "classdpp_1_1emoji.html#aa022607f3828123364721c6420b57f2f", null ],
     [ "id", "classdpp_1_1emoji.html#a40bf0c6cc03909910512808fa6caa112", null ],
