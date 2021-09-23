@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta charset="utf-8">
-<meta property="og:title" content="Building D++ - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Building on FreeBSD - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.brainbox.cc/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.brainbox.cc/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Building D++ - D++ - The lightweight C++ Discord API Library">
-<title>Building D++ - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Building on FreeBSD - D++ - The lightweight C++ Discord API Library">
+<title>Building on FreeBSD - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('md_docpages_02_build.html','');});
+$(document).ready(function(){initNavTree('buildfreebsd.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -96,17 +96,39 @@ $(document).ready(function(){initNavTree('md_docpages_02_build.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Building D++ </div>  </div>
+<div class="title">Building on FreeBSD </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The way D++ is built varies from system to system. Please follow the guides below depending on if you are building the library on Linux, Windows, or OSX:</p>
+<div class="textblock"><h1>Building on FreeBSD</h1>
+<h2>1. Toolchain</h2>
+<p>This project uses CMake. Install it with <code>pkg install cmake</code></p>
+<h2>2. Install External Dependencies</h2>
+<p>Your FreeBSD base system should have all the required dependencies installed by default.</p>
+<p>For voice support, additional dependencies are required </p><pre class="fragment">pkg install libsodium opus pkgconf
+</pre><h2>3. Build Source Code</h2>
+<p>Download the source code via Github or get the archive from the releases. Then navigate to the root directory of the project and run the commands below. </p><pre class="fragment">mkdir build
+cd build
+cmake ..
+make -j8
+</pre><p>Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
+<h2>4. Optional: Run test cases</h2>
+<p>run <code>./test</code> for unit test cases. You will need to create a <code>config.json</code> file in the directory above the executable file with a valid bot token in it. See the example file <code>config.example.json</code> for an example of the correct format.</p>
+<h2>5. Install globally</h2>
+<pre class="fragment">make install
+</pre><h2>6. Installation to a different directory</h2>
+<p>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
+</pre><p>Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
+<h2>7. Using the library</h2>
+<p>Once installed, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
+</pre><p>The important flags in this command-line are:</p>
 <ul>
-<li><a class="el" href="buildlinux.html">Building on Linux</a></li>
-<li><a class="el" href="buildwindows.html">Building on Windows</a></li>
-<li><a class="el" href="buildosx.html">Building on OSX</a></li>
-<li><a class="el" href="buildfreebsd.html">Building on FreeBSD</a></li>
-<li><a class="el" href="buildcmake.html">Building with CMake</a> </li>
+<li><code>-std=c++17</code> - Required to compile the headers</li>
+<li><code>-ldpp</code> - Link to libdpp.dylib</li>
+<li><code>mydppbot.cpp</code> - Your source code</li>
+<li><code>dppbot</code> - The name of the executable to make</li>
 </ul>
+<p>Of course, this is just a proof of concept - you should really use a more robust build system like <a class="el" href="buildcmake.html">`cmake`</a>.</p>
+<p><b>Have fun!</b> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

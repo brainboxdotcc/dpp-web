@@ -34,14 +34,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1cluster.html#ac77932ee797aeb44098c2013811b2887",
-"classdpp_1_1dispatcher.html#a9c2f74f1e854a61ec6795ab0e3f7c40b",
-"classdpp_1_1guild__member.html#abc1c9039f54691ae4e8938c2768ccf84",
-"classdpp_1_1voiceconn.html#a9c4ef16e1fb1c077f6adb18ce5ac9a41",
-"structdetail_1_1chrono__format__checker.html#ace1dae94b0b5481bf0bef49cf07a9917",
-"structdpp_1_1embed__footer.html#a1593ace894fe6bb370fb665347b8e25b",
-"structdpp_1_1message_1_1allowed__ref.html#a2903ac1a5d93f152e08ff843e3b17226",
-"structdpp_1_1thread__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9"
+"classdpp_1_1cluster.html#ac23e89c1685520bf303ac9b1b5eea08d",
+"classdpp_1_1dispatcher.html#a9bd685c0f0e60a75d65a231d1e4193cd",
+"classdpp_1_1guild__member.html#aae2dfc2f98671c98704db1fa4295b05f",
+"classdpp_1_1voiceconn.html#a9c0868d279364472bf0c86a4b5ae8f1b",
+"structdetail_1_1chrono__format__checker.html#ac97f798a072d060879a08d0b86759819",
+"structdpp_1_1embed__footer.html#a05db5bbbe47df842045ce91234cec716",
+"structdpp_1_1message_1_1allowed__ref.html",
+"structdpp_1_1thread__update__t.html#a0db19ba91c0c98b56c0266d67a7a21ae"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
