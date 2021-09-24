@@ -88,8 +88,8 @@ var searchData=
   ['command_5finteraction',['command_interaction',['../structdpp_1_1command__interaction.html',1,'dpp']]],
   ['command_5foption',['command_option',['../structdpp_1_1command__option.html',1,'dpp']]],
   ['command_5foption',['command_option',['../structdpp_1_1command__option.html#a7b9a89420e48ccd85cfdc6deaae63e50',1,'dpp::command_option::command_option()=default'],['../structdpp_1_1command__option.html#a7059a6049828707b2eda2c5a649aeb79',1,'dpp::command_option::command_option(command_option_type t, const std::string &amp;name, const std::string &amp;description, bool required=false)']]],
-  ['command_5foption_5fchoice',['command_option_choice',['../structdpp_1_1command__option__choice.html',1,'dpp']]],
   ['command_5foption_5fchoice',['command_option_choice',['../structdpp_1_1command__option__choice.html#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb',1,'dpp::command_option_choice::command_option_choice()=default'],['../structdpp_1_1command__option__choice.html#a2bb4415c9d27246156e8cc368d131767',1,'dpp::command_option_choice::command_option_choice(const std::string &amp;n, command_value v)']]],
+  ['command_5foption_5fchoice',['command_option_choice',['../structdpp_1_1command__option__choice.html',1,'dpp']]],
   ['command_5foption_5ftype',['command_option_type',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58',1,'dpp']]],
   ['command_5fparameter',['command_parameter',['../namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd',1,'dpp']]],
   ['command_5fpermission',['command_permission',['../classdpp_1_1command__permission.html',1,'dpp']]],
@@ -168,5 +168,6 @@ var searchData=
   ['custom_5fwriteable_5ffd',['custom_writeable_fd',['../classdpp_1_1ssl__client.html#a32a0f4e6e46da398d77b33e55e3d4ced',1,'dpp::ssl_client']]],
   ['custom_5fwriteable_5fready',['custom_writeable_ready',['../classdpp_1_1ssl__client.html#a5eac615119a5068c1634e3729752ddb6',1,'dpp::ssl_client']]],
   ['creating_20your_20first_20bot',['Creating Your First Bot',['../firstbot.html',1,'md_docpages_03_example_programs']]],
+  ['creating_20a_20discord_20bot',['Creating a Discord Bot',['../md_docpages_02_building_a_bot.html',1,'']]],
   ['creating_20a_20sound_20board',['Creating a Sound Board',['../soundboard.html',1,'md_docpages_03_example_programs']]]
 ];
