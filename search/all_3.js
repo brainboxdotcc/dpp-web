@@ -28,6 +28,7 @@ var searchData=
   ['disabled',['disabled',['../classdpp_1_1component.html#ad364b789494d7888666173079bdb48ad',1,'dpp::component']]],
   ['disconnect',['disconnect',['../classdpp_1_1voiceconn.html#a462b82f234c78686edb38ba9c301d9bb',1,'dpp::voiceconn']]],
   ['disconnect_5fvoice',['disconnect_voice',['../classdpp_1_1discord__client.html#ab27c7a127b4bf2aaee24e406adfe3bb2',1,'dpp::discord_client']]],
+  ['disconnect_5fvoice_5finternal',['disconnect_voice_internal',['../classdpp_1_1discord__client.html#ad6720e53bbc68722cc807dbd05b5fb71',1,'dpp::discord_client']]],
   ['discord_5fclient',['discord_client',['../classdpp_1_1discord__client.html#a26bc3c07e4b547d0d6e2c820d255fac7',1,'dpp::discord_client']]],
   ['discord_5fclient',['discord_client',['../classdpp_1_1discord__client.html',1,'dpp']]],
   ['discord_5fvoice_5fclient',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#a5b344a5989d67f0f0caf5b52236055bf',1,'dpp::discord_voice_client']]],
@@ -43,5 +44,6 @@ var searchData=
   ['dtemplate',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]],
   ['dtemplate_5fmap',['dtemplate_map',['../namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6',1,'dpp']]],
   ['events',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
-  ['utility',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]]
+  ['utility',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]],
+  ['voice_5fstate_5fupdate',['voice_state_update',['../classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86',1,'dpp::discord_client']]]
 ];

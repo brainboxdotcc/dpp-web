@@ -9,6 +9,7 @@ var searchData=
   ['disable_5fdefault_5fpermissions',['disable_default_permissions',['../classdpp_1_1slashcommand.html#af5e01640cbf5f00e74e7dd724e43d6f0',1,'dpp::slashcommand']]],
   ['disconnect',['disconnect',['../classdpp_1_1voiceconn.html#a462b82f234c78686edb38ba9c301d9bb',1,'dpp::voiceconn']]],
   ['disconnect_5fvoice',['disconnect_voice',['../classdpp_1_1discord__client.html#ab27c7a127b4bf2aaee24e406adfe3bb2',1,'dpp::discord_client']]],
+  ['disconnect_5fvoice_5finternal',['disconnect_voice_internal',['../classdpp_1_1discord__client.html#ad6720e53bbc68722cc807dbd05b5fb71',1,'dpp::discord_client']]],
   ['discord_5fclient',['discord_client',['../classdpp_1_1discord__client.html#a26bc3c07e4b547d0d6e2c820d255fac7',1,'dpp::discord_client']]],
   ['discord_5fvoice_5fclient',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#a5b344a5989d67f0f0caf5b52236055bf',1,'dpp::discord_voice_client']]],
   ['discover_5fip',['discover_ip',['../classdpp_1_1discord__voice__client.html#ae8e844ebb991eeb2d63771f6c5ea4938',1,'dpp::discord_voice_client']]],

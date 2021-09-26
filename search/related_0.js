@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bg',['bg',['../classtext__style.html#a0e774baca51b1026d9e413e49789f6bd',1,'text_style']]]
+  ['voice_5fstate_5fupdate',['voice_state_update',['../classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86',1,'dpp::discord_client']]]
 ];
