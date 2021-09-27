@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['streaming_20ogg_20opus_20file',['Streaming Ogg Opus file',['../oggopus.html',1,'md_docpages_03_example_programs']]],
   ['s',['s',['../structdetail_1_1chrono__formatter.html#ad793b92f09fbf72b77e05b4890f7c738',1,'detail::chrono_formatter']]],
   ['safe_5fduration_5fcast',['safe_duration_cast',['../namespacesafe__duration__cast.html',1,'safe_duration_cast'],['../namespacesafe__duration__cast.html#a1b2f780f349d616fa841550dc49f59d0',1,'safe_duration_cast::safe_duration_cast()']]],
   ['safe_5ffloat_5fconversion',['safe_float_conversion',['../namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a',1,'safe_duration_cast']]],
