@@ -1,6 +1,7 @@
 var searchData=
 [
   ['pack_5fid',['pack_id',['../structdpp_1_1sticker.html#a88dc531bebffaf77068457ea360ac939',1,'dpp::sticker']]],
+  ['packet',['packet',['../structdpp_1_1voice__out__packet.html#ae13a5a23e3d3205c48c53975f6d6272f',1,'dpp::voice_out_packet']]],
   ['parameters',['parameters',['../structdpp_1_1command__info__t.html#a17285092877891df2580305980354f4d',1,'dpp::command_info_t::parameters()'],['../classdpp_1_1http__request.html#a349ce3f41c300aeac915d38f8f1d8642',1,'dpp::http_request::parameters()']]],
   ['parent_5fid',['parent_id',['../classdpp_1_1channel.html#ae1e877475ccc7113683382f787cfbc48',1,'dpp::channel']]],
   ['parse_5feveryone',['parse_everyone',['../structdpp_1_1message_1_1allowed__ref.html#a2903ac1a5d93f152e08ff843e3b17226',1,'dpp::message::allowed_ref']]],

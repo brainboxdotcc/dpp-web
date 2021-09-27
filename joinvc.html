@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('joinvc.html','');});
 <div class="line">                    join_vc = <span class="keyword">false</span>;</div>
 <div class="line">                    <span class="comment">/* We are on this voice channel, at this point we can send any audio instantly to vc:</span></div>
 <div class="line"><span class="comment"></span></div>
-<div class="line"><span class="comment">                     * current_vc-&gt;send_audio(...)</span></div>
+<div class="line"><span class="comment">                     * current_vc-&gt;send_audio_raw(...)</span></div>
 <div class="line"><span class="comment">                     */</span></div>
 <div class="line">                } <span class="keywordflow">else</span> {</div>
 <div class="line">                    <span class="comment">/* We are on a different voice channel. Leave it, then join the new one </span></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('joinvc.html','');});
 <div class="line">                    <span class="comment">/* We are now connecting to a vc. Wait for on_voice_ready </span></div>
 <div class="line"><span class="comment">                     * event, and then send the audio within that event:</span></div>
 <div class="line"><span class="comment">                     * </span></div>
-<div class="line"><span class="comment">                     * event.voice_client-&gt;send_audio(...);</span></div>
+<div class="line"><span class="comment">                     * event.voice_client-&gt;send_audio_raw(...);</span></div>
 <div class="line"><span class="comment">                     * </span></div>
 <div class="line"><span class="comment">                     * NOTE: We can&#39;t instantly send audio, as we have to wait for</span></div>
 <div class="line"><span class="comment">                     * the connection to the voice server to be established!</span></div>

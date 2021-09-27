@@ -218,6 +218,7 @@ var hierarchy =
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "Traits", "class_traits.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
+    [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],

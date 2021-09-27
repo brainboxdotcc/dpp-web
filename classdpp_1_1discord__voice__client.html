@@ -149,9 +149,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0d00c79077db2d8caf1b798b23d7829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a102408db3accf1a8561bb3e2bccef345"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a102408db3accf1a8561bb3e2bccef345">Run</a> ()</td></tr>
 <tr class="separator:a102408db3accf1a8561bb3e2bccef345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a453942021fbf45a1944a125209cdface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a453942021fbf45a1944a125209cdface">send_audio</a> (uint16_t *audio_data, const size_t length, bool use_opus=true)</td></tr>
-<tr class="memdesc:a453942021fbf45a1944a125209cdface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send audio to the voice channel.  <a href="#a453942021fbf45a1944a125209cdface">More...</a><br /></td></tr>
-<tr class="separator:a453942021fbf45a1944a125209cdface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d30b9c9549201db0e54beeac89beb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#aa2d30b9c9549201db0e54beeac89beb8">send_audio_raw</a> (uint16_t *audio_data, const size_t length)</td></tr>
+<tr class="memdesc:aa2d30b9c9549201db0e54beeac89beb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send raw audio to the voice channel.  <a href="#aa2d30b9c9549201db0e54beeac89beb8">More...</a><br /></td></tr>
+<tr class="separator:aa2d30b9c9549201db0e54beeac89beb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b9a29017f92098edaac0bada6988e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a96b9a29017f92098edaac0bada6988e4">send_audio_opus</a> (uint8_t *opus_packet, const size_t length, uint64_t duration)</td></tr>
+<tr class="memdesc:a96b9a29017f92098edaac0bada6988e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send opus packets to the voice channel.  <a href="#a96b9a29017f92098edaac0bada6988e4">More...</a><br /></td></tr>
+<tr class="separator:a96b9a29017f92098edaac0bada6988e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad21c8743aef9a874ef53edfebd8ee2fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#ad21c8743aef9a874ef53edfebd8ee2fb">pause_audio</a> (bool pause)</td></tr>
 <tr class="memdesc:ad21c8743aef9a874ef53edfebd8ee2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause sending of audio.  <a href="#ad21c8743aef9a874ef53edfebd8ee2fb">More...</a><br /></td></tr>
 <tr class="separator:ad21c8743aef9a874ef53edfebd8ee2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -995,15 +998,15 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a453942021fbf45a1944a125209cdface"></a>
+<a class="anchor" id="a96b9a29017f92098edaac0bada6988e4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dpp::discord_voice_client::send_audio </td>
+          <td class="memname">void dpp::discord_voice_client::send_audio_opus </td>
           <td>(</td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>audio_data</em>, </td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>opus_packet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1014,8 +1017,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>use_opus</em> = <code>true</code>&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>duration</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1025,7 +1028,45 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Send audio to the voice channel. </p>
+<p>Send opus packets to the voice channel. </p>
+<p>Some containers such as .ogg may contain OPUS encoded data already. In this case, we don't need to encode the frames using opus here. We can bypass the codec, only applying libsodium to the stream.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opus_packet</td><td>Opus packets. Discord expects opus frames to be encoded at 48000Hz</td></tr>
+    <tr><td class="paramname">length</td><td>The length of the audio data.</td></tr>
+    <tr><td class="paramname">duration</td><td>Generally duration is 2.5, 5, 10, 20, 40 or 60 if the timescale is 1000000 (1ms)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>It is your responsibility to ensure that packets of data sent to send_audio are correctly repacketized for streaming, e.g. that audio frames are not too large or contain an incorrect format. Discord will still expect the same frequency and bit width of audio and the same signedness. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa2d30b9c9549201db0e54beeac89beb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_voice_client::send_audio_raw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>audio_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send raw audio to the voice channel. </p>
 <p>You should send an audio packet of n11520 bytes. Note that this function can be costly as it has to opus encode the PCM audio on the fly, and also encrypt it with libsodium.</p>
 <dl class="section note"><dt>Note</dt><dd>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once (unless you have set use_opus to false). Constantly calling this from the dpp::on_voice_buffer_send callback can and will eat a TON of cpu!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1034,15 +1075,13 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>The audio data should be 48000Khz signed 16 bit audio.</p>
+<p>The audio data should be 48000Hz signed 16 bit audio.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">length</td><td>The length of the audio data. The length should be a multiple of 4 (2x 16 bit stero channels) with a maximum length of 11520, which is a complete opus frame at highest quality. </td></tr>
-    <tr><td class="paramname">use_opus</td><td>Some containers such as .ogg may contain OPUS encoded data already. In this case, we don't need to encode the frames using opus here. We can set use_opus to false and bypass the codec, only applying libsodium to the stream.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>If you set use_opus to false, it is your responsibility to ensure that packets of data sent to send_audio are correctly repacketized for streaming, e.g. that audio frames are not too large or contain an incorrect format. Discord will still expect the same frequency and bit width of audio and the same signedness. </dd></dl>
 
 </div>
 </div>

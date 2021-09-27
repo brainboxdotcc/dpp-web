@@ -128,6 +128,7 @@ var namespacedpp =
     [ "user", "classdpp_1_1user.html", "classdpp_1_1user" ],
     [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
     [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
+    [ "voice_out_packet", "structdpp_1_1voice__out__packet.html", "structdpp_1_1voice__out__packet" ],
     [ "voice_ready_t", "structdpp_1_1voice__ready__t.html", "structdpp_1_1voice__ready__t" ],
     [ "voice_receive_t", "structdpp_1_1voice__receive__t.html", "structdpp_1_1voice__receive__t" ],
     [ "voice_server_update_t", "structdpp_1_1voice__server__update__t.html", "structdpp_1_1voice__server__update__t" ],
