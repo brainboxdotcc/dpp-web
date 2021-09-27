@@ -40,6 +40,7 @@ var searchData=
   ['get_5fshard',['get_shard',['../classdpp_1_1cluster.html#a5c677c0d5c059e87cc01ce598d49487d',1,'dpp::cluster']]],
   ['get_5fshards',['get_shards',['../classdpp_1_1cluster.html#af4d6195862e6d25c644902631a0b34d1',1,'dpp::cluster']]],
   ['get_5fthread_5fmembers',['get_thread_members',['../classdpp_1_1cluster.html#aaba92db711beb50fd66ba5ee97546b0c',1,'dpp::cluster']]],
+  ['get_5ftimescale',['get_timescale',['../classdpp_1_1discord__voice__client.html#a45085f49408bdeae9cd05dbf59d39972',1,'dpp::discord_voice_client']]],
   ['get_5ftracks_5fremaining',['get_tracks_remaining',['../classdpp_1_1discord__voice__client.html#a4e75f5d97ca1691dde43ed8b0b8ca196',1,'dpp::discord_voice_client']]],
   ['get_5funits',['get_units',['../namespacedetail.html#a9ae34916c3678054d39bc4876d46c73a',1,'detail']]],
   ['get_5funits_3c_20std_3a_3aatto_20_3e',['get_units&lt; std::atto &gt;',['../namespacedetail.html#a927d79d7b4fcfb52d701ad1569106fd6',1,'detail']]],

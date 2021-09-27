@@ -5,7 +5,7 @@ var classdpp_1_1discord__client =
     [ "ClearQueue", "classdpp_1_1discord__client.html#a5b40c6db59e7aed95958e2fec5f6b8ba", null ],
     [ "close", "classdpp_1_1discord__client.html#a3398642150ca79c8f266de83ee93aa30", null ],
     [ "Connect", "classdpp_1_1discord__client.html#ac7f26051b6ce8db8e57536ce4e035caf", null ],
-    [ "connect_voice", "classdpp_1_1discord__client.html#a927122885bd65d221df2d5fae8d19a16", null ],
+    [ "connect_voice", "classdpp_1_1discord__client.html#a8ceeec92eb0ba816c1c172f53d4e7891", null ],
     [ "disconnect_voice", "classdpp_1_1discord__client.html#ab27c7a127b4bf2aaee24e406adfe3bb2", null ],
     [ "disconnect_voice_internal", "classdpp_1_1discord__client.html#ad6720e53bbc68722cc807dbd05b5fb71", null ],
     [ "Error", "classdpp_1_1discord__client.html#a7743f641f2eabe2c83c3142d9b46a3aa", null ],

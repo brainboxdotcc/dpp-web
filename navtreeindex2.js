@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"classdpp_1_1dispatcher.html#a8a65cd0820a545d14b01324cf1508bc7":[7,0,1,37,6],
+"classdpp_1_1dispatcher.html#a8a74c97a762054030a2423c01d3010de":[7,0,1,37,30],
+"classdpp_1_1dispatcher.html#a9156aeb607b633a0beafb0754840bde2":[7,0,1,37,23],
 "classdpp_1_1dispatcher.html#a941fe0c8a4f52c1bf82c34a5c38d86b2":[7,0,1,37,5],
 "classdpp_1_1dispatcher.html#a95261b35417e81c65e9046eca9f0d57c":[7,0,1,37,3],
 "classdpp_1_1dispatcher.html#a95bc992af2a7efc1c1c524eeab354990":[7,0,1,37,40],
@@ -185,6 +188,7 @@ var NAVTREEINDEX2 =
 "classdpp_1_1guild.html#a076d93f613841640d046825f87ed8c7b":[7,0,1,51,13],
 "classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c":[7,0,1,51,49],
 "classdpp_1_1guild.html#a0995288cfbf8ae64973bbf0181d1789a":[7,0,1,51,31],
+"classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e":[7,0,1,51,4],
 "classdpp_1_1guild.html#a0fc5cec016c0604ce2575fbe5eea5ded":[7,0,1,51,53],
 "classdpp_1_1guild.html#a10f966d4bc54c233a1ecd6a24ca80dc3":[7,0,1,51,48],
 "classdpp_1_1guild.html#a11908725a34cd6ef5530c6e0086ed8b0":[7,0,1,51,11],
@@ -210,7 +214,6 @@ var NAVTREEINDEX2 =
 "classdpp_1_1guild.html#a64d75cbdbdf0965bbb9f1e1339bea7f1":[7,0,1,51,17],
 "classdpp_1_1guild.html#a65c77ce1a6155bc6e7fd6f8937bd1385":[7,0,1,51,42],
 "classdpp_1_1guild.html#a6a4f4c513e88f3827c8ae666ae13af26":[7,0,1,51,24],
-"classdpp_1_1guild.html#a771c4830e1c4e775837d7c6c020ecb4f":[7,0,1,51,4],
 "classdpp_1_1guild.html#a7e494da5ab1aaaddae4d588849ea9f14":[7,0,1,51,1],
 "classdpp_1_1guild.html#a80181fee5f66b2dd6f24bad72226bf7c":[7,0,1,51,51],
 "classdpp_1_1guild.html#a84d8e9b43ec2d9d57e1560a876deeb62":[7,0,1,51,19],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "classdpp_1_1guild__command__permissions.html#a50db0da47083c2f875ef797d6dd5effb":[7,0,1,54,0],
 "classdpp_1_1guild__command__permissions.html#a91a4e85c841f1aa33c384a878d538bd1":[7,0,1,54,2],
 "classdpp_1_1guild__command__permissions.html#adcd2d742e57c1645c51d206ddc4c350c":[7,0,1,54,3],
-"classdpp_1_1guild__member.html":[7,0,1,60],
-"classdpp_1_1guild__member.html#a11636d9baaca59361c22ac163b09fd7c":[7,0,1,60,6],
-"classdpp_1_1guild__member.html#a127de740430a1f3ce4e793e21f94ce97":[7,0,1,60,12],
-"classdpp_1_1guild__member.html#a22fc1a4cacec96dafe98277604823be0":[7,0,1,60,0]
+"classdpp_1_1guild__member.html":[7,0,1,60]
 };

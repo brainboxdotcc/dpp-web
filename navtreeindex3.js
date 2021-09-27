@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"classdpp_1_1guild__member.html#a11636d9baaca59361c22ac163b09fd7c":[7,0,1,60,6],
+"classdpp_1_1guild__member.html#a127de740430a1f3ce4e793e21f94ce97":[7,0,1,60,12],
+"classdpp_1_1guild__member.html#a22fc1a4cacec96dafe98277604823be0":[7,0,1,60,0],
 "classdpp_1_1guild__member.html#a6269af3e8562d18a9cd6c10e24089313":[7,0,1,60,3],
 "classdpp_1_1guild__member.html#a6e8cd0a3909b06e5787e1cf1b9fc92a4":[7,0,1,60,5],
 "classdpp_1_1guild__member.html#a6f058594e9a40ab340b97b819d6335d8":[7,0,1,60,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "classdpp_1_1user.html#afe658cc2d4adcf83a76f798dead3e5e6":[7,0,1,125,25],
 "classdpp_1_1voiceconn.html":[7,0,1,135],
 "classdpp_1_1voiceconn.html#a2238afc107e4e97daa0693c81fe150fd":[7,0,1,135,0],
-"classdpp_1_1voiceconn.html#a462b82f234c78686edb38ba9c301d9bb":[7,0,1,135,4],
-"classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98":[7,0,1,135,2],
-"classdpp_1_1voiceconn.html#a596e75341bfd350810241d350e7da112":[7,0,1,135,3],
-"classdpp_1_1voiceconn.html#a7b0b033f371d814cf04e09ac7cf08ac1":[7,0,1,135,1]
+"classdpp_1_1voiceconn.html#a462b82f234c78686edb38ba9c301d9bb":[7,0,1,135,4]
 };

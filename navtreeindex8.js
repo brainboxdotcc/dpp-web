@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"structdpp_1_1thread__members__update__t.html#aac6818d914f76a823cca99da2fdde6d1":[7,0,1,121,6],
+"structdpp_1_1thread__members__update__t.html#ac270c5c092e891df0947e4841696e6a4":[7,0,1,121,0],
+"structdpp_1_1thread__members__update__t.html#ad074d5f55fb5d894944f523c84260425":[7,0,1,121,7],
 "structdpp_1_1thread__metadata.html":[7,0,1,122],
 "structdpp_1_1thread__metadata.html#a6d25e9f26dabba02352d6a9aaacb7743":[7,0,1,122,0],
 "structdpp_1_1thread__metadata.html#aacd872999ff72501feadb8069e0243fd":[7,0,1,122,1],

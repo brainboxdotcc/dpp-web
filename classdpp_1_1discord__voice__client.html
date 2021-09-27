@@ -155,6 +155,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96b9a29017f92098edaac0bada6988e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a96b9a29017f92098edaac0bada6988e4">send_audio_opus</a> (uint8_t *opus_packet, const size_t length, uint64_t duration)</td></tr>
 <tr class="memdesc:a96b9a29017f92098edaac0bada6988e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send opus packets to the voice channel.  <a href="#a96b9a29017f92098edaac0bada6988e4">More...</a><br /></td></tr>
 <tr class="separator:a96b9a29017f92098edaac0bada6988e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067cdfaf8a84c2bdf09febe974eb4730"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a067cdfaf8a84c2bdf09febe974eb4730">set_timescale</a> (uint64_t new_timescale)</td></tr>
+<tr class="memdesc:a067cdfaf8a84c2bdf09febe974eb4730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timescale in nanoseconds.  <a href="#a067cdfaf8a84c2bdf09febe974eb4730">More...</a><br /></td></tr>
+<tr class="separator:a067cdfaf8a84c2bdf09febe974eb4730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45085f49408bdeae9cd05dbf59d39972"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a45085f49408bdeae9cd05dbf59d39972">get_timescale</a> ()</td></tr>
+<tr class="memdesc:a45085f49408bdeae9cd05dbf59d39972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current timescale, this will default to 1000000 which means 1 millisecond.  <a href="#a45085f49408bdeae9cd05dbf59d39972">More...</a><br /></td></tr>
+<tr class="separator:a45085f49408bdeae9cd05dbf59d39972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec763c308a70871233c8a51de2c6118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#afec763c308a70871233c8a51de2c6118">speak</a> ()</td></tr>
+<tr class="memdesc:afec763c308a70871233c8a51de2c6118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the voice connection as 'speaking'. This sends a JSON message to the voice websocket which tells discord that the user is speaking. The library automatically calls this for you whenever you send audio.  <a href="#afec763c308a70871233c8a51de2c6118">More...</a><br /></td></tr>
+<tr class="separator:afec763c308a70871233c8a51de2c6118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad21c8743aef9a874ef53edfebd8ee2fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#ad21c8743aef9a874ef53edfebd8ee2fb">pause_audio</a> (bool pause)</td></tr>
 <tr class="memdesc:ad21c8743aef9a874ef53edfebd8ee2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause sending of audio.  <a href="#ad21c8743aef9a874ef53edfebd8ee2fb">More...</a><br /></td></tr>
 <tr class="separator:ad21c8743aef9a874ef53edfebd8ee2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -595,6 +604,24 @@ Protected Attributes</h2></td></tr>
 
 <p>Get the number of seconds remaining of the audio output buffer. </p>
 <dl class="section return"><dt>Returns</dt><dd>float number of seconds remaining </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a45085f49408bdeae9cd05dbf59d39972"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t dpp::discord_voice_client::get_timescale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current timescale, this will default to 1000000 which means 1 millisecond. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t timescale in nanoseconds </dd></dl>
 
 </div>
 </div>
@@ -1085,6 +1112,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a067cdfaf8a84c2bdf09febe974eb4730"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> &amp; dpp::discord_voice_client::set_timescale </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>new_timescale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the timescale in nanoseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_timescale</td><td>Timescale to set. This defaults to 1000000, which means 1 millisecond. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>&amp; Reference to self </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a8c30775fa7e4c8f82ff5531e4fae200f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1100,6 +1152,23 @@ Protected Attributes</h2></td></tr>
 
 <p>Skip tp the next track marker, previously inserted by using the <a class="el" href="classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84" title="Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer...">dpp::discord_voice_client::insert_marker</a> function. If there are no markers in the output buffer, then this skips to the end of the buffer and is equivalent to the <a class="el" href="classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d" title="Immediately stop all audio. Clears the packet queue. ">dpp::discord_voice_client::stop_audio</a> function. </p>
 <dl class="section note"><dt>Note</dt><dd>It is possible to use this function while the output stream is paused. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afec763c308a70871233c8a51de2c6118"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_voice_client::speak </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark the voice connection as 'speaking'. This sends a JSON message to the voice websocket which tells discord that the user is speaking. The library automatically calls this for you whenever you send audio. </p>
 
 </div>
 </div>
