@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structdpp_1_1thread__members__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,1,121,2],
 "structdpp_1_1thread__members__update__t.html#a978bc18a56e8dedc743c8e959f414007":[7,0,1,121,1],
 "structdpp_1_1thread__members__update__t.html#aac6818d914f76a823cca99da2fdde6d1":[7,0,1,121,6],
 "structdpp_1_1thread__members__update__t.html#ac270c5c092e891df0947e4841696e6a4":[7,0,1,121,0],
@@ -111,6 +112,6 @@ var NAVTREEINDEX8 =
 "structformatter_3_01std_1_1tm_00_01_char_01_4.html#a0222d68c5e1ca97550eecb6cf60abed0":[7,0,5,0],
 "structformatter_3_01std_1_1tm_00_01_char_01_4.html#a57c0d36c7943de87688eeae9c3bd0b28":[7,0,5,2],
 "structformatter_3_01std_1_1tm_00_01_char_01_4.html#a9c8caf13b1795ab3974768dc5f98a0e9":[7,0,5,1],
-"subcommands.html":[3,10],
+"subcommands.html":[3,11],
 "thread-model.html":[4,1]
 };
