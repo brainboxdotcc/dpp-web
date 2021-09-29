@@ -289,19 +289,19 @@
     <detaileddescription>
 <para>You should instantiate one of these objects via its constructor, and pass a pointer to it into an instance of <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref>. Although you can directly call the <ref refid="classdpp_1_1http__request_1a49af6bb0b85e162b79162b701545cbaa" kindref="member">Run()</ref> method of the object and it will make a HTTP call, be aware that if you do this, it will be a <bold>BLOCKING call</bold> (not asynchronous) and will not respect rate limits, as both of these functions are managed by the <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> class. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="11433">
+      <node id="11599">
         <label>http_method</label>
       </node>
-      <node id="11435">
+      <node id="11601">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="11432">
+      <node id="11598">
         <label>dpp::http_request</label>
         <link refid="classdpp_1_1http__request"/>
-        <childnode refid="11433" relation="usage">
+        <childnode refid="11599" relation="usage">
           <edgelabel>method</edgelabel>
         </childnode>
-        <childnode refid="11434" relation="usage">
+        <childnode refid="11600" relation="usage">
           <edgelabel>endpoint</edgelabel>
           <edgelabel>file_content</edgelabel>
           <edgelabel>file_name</edgelabel>
@@ -309,9 +309,9 @@
           <edgelabel>postdata</edgelabel>
         </childnode>
       </node>
-      <node id="11434">
+      <node id="11600">
         <label>std::string</label>
-        <childnode refid="11435" relation="public-inheritance">
+        <childnode refid="11601" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

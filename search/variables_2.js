@@ -18,6 +18,7 @@ var searchData=
   ['command',['command',['../structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14',1,'dpp::interaction_create_t']]],
   ['command_5fid',['command_id',['../structdpp_1_1command__source.html#a49e99fcfc393681af05f3e4bc8a7b360',1,'dpp::command_source']]],
   ['command_5ftoken',['command_token',['../structdpp_1_1command__source.html#a8bec40f2cc0e419489921c4a222353df',1,'dpp::command_source']]],
+  ['commands',['commands',['../classdpp_1_1commandhandler.html#aaeb676a799cda302d4b08106f898a867',1,'dpp::commandhandler']]],
   ['component_5ftype',['component_type',['../structdpp_1_1button__click__t.html#a2a5e3ed8a2ccc64fb68926916a39dbfd',1,'dpp::button_click_t::component_type()'],['../structdpp_1_1select__click__t.html#a163eb52d33f1b91333f62f5db98f9ce3',1,'dpp::select_click_t::component_type()'],['../structdpp_1_1component__interaction.html#a101d3c5e87f664d8b9d66ebc80a33a6d',1,'dpp::component_interaction::component_type()']]],
   ['components',['components',['../classdpp_1_1component.html#a51efd287b483b485f7019fb8263465ed',1,'dpp::component::components()'],['../structdpp_1_1message.html#ab9cb60fc35159bfa604164c5574a4957',1,'dpp::message::components()']]],
   ['compute_5fprune_5fcount',['compute_prune_count',['../structdpp_1_1prune.html#a948f8af4cf30f7e0a35978e36e1d3601',1,'dpp::prune']]],

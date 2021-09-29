@@ -70,6 +70,7 @@ var searchData=
   ['stop_5faudio',['stop_audio',['../classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d',1,'dpp::discord_voice_client']]],
   ['store',['store',['../classdpp_1_1cache.html#a959d7e651c20f8befe5958ee9b9633ba',1,'dpp::cache']]],
   ['strftime',['strftime',['../namespacedetail.html#a1f56278fd84d8bc33338c33694a87fb8',1,'detail::strftime(char *str, size_t count, const char *format, const std::tm *time)'],['../namespacedetail.html#aa394945bd077a30102ef2ca015a1540b',1,'detail::strftime(wchar_t *str, size_t count, const wchar_t *format, const std::tm *time)']]],
+  ['string_5fhas_5fprefix',['string_has_prefix',['../classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d',1,'dpp::commandhandler']]],
   ['stringnotnull',['StringNotNull',['../namespacedpp.html#acd67ddd4f95dbdac48f554ddcbbeb0b1',1,'dpp']]],
   ['suppress_5fembeds',['suppress_embeds',['../structdpp_1_1message.html#ac131de2cea0b34ca67c8871659ac02a4',1,'dpp::message']]]
 ];

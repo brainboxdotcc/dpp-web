@@ -21,6 +21,7 @@ var searchData=
   ['shards',['shards',['../structdpp_1_1gateway.html#aa51b1ff8814f325fa974b887108836b4',1,'dpp::gateway']]],
   ['size',['size',['../structdpp_1_1attachment.html#a899697fe4fea962a9a81f0cae66e86f5',1,'dpp::attachment']]],
   ['sku_5fid',['sku_id',['../structdpp_1_1sticker__pack.html#ac9ee077be2df50175a2e9b9c99ec35d3',1,'dpp::sticker_pack']]],
+  ['slash_5fcommands_5fenabled',['slash_commands_enabled',['../classdpp_1_1commandhandler.html#a29e869380af75e438094960b2e66a898',1,'dpp::commandhandler']]],
   ['sodium_5finitialised',['sodium_initialised',['../classdpp_1_1discord__voice__client.html#adfbadeaa50f485f0a0418c4570e1a4cd',1,'dpp::discord_voice_client']]],
   ['sort_5fvalue',['sort_value',['../structdpp_1_1sticker.html#a621d5047225fb02a39523d74ce7e9130',1,'dpp::sticker']]],
   ['source_5fguild_5fid',['source_guild_id',['../classdpp_1_1dtemplate.html#a4ec6536f11f56d2cb001dc76e9bd9ceb',1,'dpp::dtemplate']]],
