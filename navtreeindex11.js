@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"namespacedpp.html#ac49a4ce7276ce7386399c5cf020895f6":[6,0,1,280],
 "namespacedpp.html#ac66e44bd22afee53242581010ddd3728":[6,0,1,182],
 "namespacedpp.html#ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f":[6,0,1,182,0],
 "namespacedpp.html#ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d":[6,0,1,182,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structdetail_1_1chrono__formatter.html#a120f073a8cc67e6e733f8ab56b0743d4":[7,0,0,1,35],
 "structdetail_1_1chrono__formatter.html#a120f073a8cc67e6e733f8ab56b0743d4":[6,0,0,1,35],
 "structdetail_1_1chrono__formatter.html#a20190a929488a6507d1c1c6de5a20cd4":[6,0,0,1,15],
-"structdetail_1_1chrono__formatter.html#a20190a929488a6507d1c1c6de5a20cd4":[7,0,0,1,15],
-"structdetail_1_1chrono__formatter.html#a2209049fadfc704a5fee247950ae50af":[7,0,0,1,20]
+"structdetail_1_1chrono__formatter.html#a20190a929488a6507d1c1c6de5a20cd4":[7,0,0,1,15]
 };
