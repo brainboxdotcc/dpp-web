@@ -7,7 +7,6 @@ var searchData=
   ['find_5fguild',['find_guild',['../namespacedpp.html#a6c9b2178f66c62051b390471ec776a80',1,'dpp']]],
   ['find_5frole',['find_role',['../namespacedpp.html#a0d9afe4fdd8a401a1e38d4ae799d3f9c',1,'dpp']]],
   ['find_5fuser',['find_user',['../namespacedpp.html#ae86132d779fcb255bfc3c6eeaba1d700',1,'dpp']]],
-  ['finish',['finish',['../classdpp_1_1commandhandler.html#aedc9825f681bf31cd7c3f00dfd2b31c9',1,'dpp::commandhandler']]],
   ['fmt_5fsafe_5fduration_5fcast',['fmt_safe_duration_cast',['../namespacedetail.html#a455d343d67b456f593d31c1b40186bb5',1,'detail']]],
   ['format',['format',['../classdpp_1_1emoji.html#a201842eacc22432f9804c786deacbdf6',1,'dpp::emoji::format()'],['../structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#aa0e7df1351cc1c6f9a760c12bf9d31b0',1,'formatter&lt; std::chrono::time_point&lt; std::chrono::system_clock, Duration &gt;, Char &gt;::format()'],['../structformatter_3_01std_1_1tm_00_01_char_01_4.html#a0222d68c5e1ca97550eecb6cf60abed0',1,'formatter&lt; std::tm, Char &gt;::format()'],['../structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#af5f36bee52319a4a42bfea75a762e3a7',1,'formatter&lt; std::chrono::duration&lt; Rep, Period &gt;, Char &gt;::format()']]],
   ['format_5fduration_5funit',['format_duration_unit',['../namespacedetail.html#afcf68cff2fcc34231c571f367bbffa3c',1,'detail']]],

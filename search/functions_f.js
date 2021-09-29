@@ -3,6 +3,7 @@ var searchData=
   ['reaction',['reaction',['../structdpp_1_1reaction.html#a7809f620d77f3da97ba34b65fd6b5a5d',1,'dpp::reaction::reaction()'],['../structdpp_1_1reaction.html#ae9d457d1976ecdcb04cc4ccced45084e',1,'dpp::reaction::reaction(nlohmann::json *j)']]],
   ['read_5floop',['read_loop',['../classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2',1,'dpp::ssl_client']]],
   ['ready_5ft',['ready_t',['../structdpp_1_1ready__t.html#aebf5fe086e4ee6921042fe798d58d72a',1,'dpp::ready_t']]],
+  ['register_5fcommands',['register_commands',['../classdpp_1_1commandhandler.html#a208f3684f3987d87074824bd13699e42',1,'dpp::commandhandler']]],
   ['rehash',['rehash',['../classdpp_1_1cache.html#a83d17b63891d47e5c286bc9690cb2d97',1,'dpp::cache']]],
   ['rehash_5fmembers',['rehash_members',['../classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac',1,'dpp::guild']]],
   ['remove',['remove',['../classdpp_1_1cache.html#a0aece71ffd50382b7f070738a4599d49',1,'dpp::cache']]],
