@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="structdpp_1_1prune" kind="struct" prot="public">
+    <compoundname>dpp::prune</compoundname>
+    <includes local="no">prune.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1prune_1a981d093ed62361879e862c6e4b98556a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::prune::days</definition>
+        <argsstring></argsstring>
+        <name>days</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of days to include in the prune </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/include/dpp/prune.h" line="34" column="1" bodyfile="/home/brain/D++/include/dpp/prune.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1prune_1a83cf2b149716078a0379f97b2c47526c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
+        <definition>std::vector&lt;snowflake&gt; dpp::prune::include_roles</definition>
+        <argsstring></argsstring>
+        <name>include_roles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Roles to include in the prune (empty to include everyone) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/include/dpp/prune.h" line="37" column="1" bodyfile="/home/brain/D++/include/dpp/prune.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1prune_1a948f8af4cf30f7e0a35978e36e1d3601" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::prune::compute_prune_count</definition>
+        <argsstring></argsstring>
+        <name>compute_prune_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if the count of pruneable users should be returned (discord recommend not using this on big guilds) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/include/dpp/prune.h" line="41" column="1" bodyfile="/home/brain/D++/include/dpp/prune.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1prune_1af14af138229a9c1205c97766d640a503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1prune" kindref="compound">prune</ref> &amp;</type>
+        <definition>prune &amp; dpp::prune::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill this object from json. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON object to fill from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/include/dpp/prune.h" line="47" column="1" bodyfile="/home/brain/D++/src/dpp/prune.cpp" bodystart="30" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1prune_1afeb430aef6bba13aa4770842c1b42ccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::prune::build_json</definition>
+        <argsstring>(bool with_prune_count) const </argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_prune_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build JSON from this object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_prune_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the prune count boolean is to be set in the built JSON </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The JSON text of the prune object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/include/dpp/prune.h" line="53" column="1" bodyfile="/home/brain/D++/src/dpp/prune.cpp" bodystart="41" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a request to count prunable users, or start a prune operation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13409">
+        <label>uint64_t</label>
+      </node>
+      <node id="13406">
+        <label>uint32_t</label>
+      </node>
+      <node id="13405">
+        <label>dpp::prune</label>
+        <link refid="structdpp_1_1prune"/>
+        <childnode refid="13406" relation="usage">
+          <edgelabel>days</edgelabel>
+        </childnode>
+        <childnode refid="13407" relation="usage">
+          <edgelabel>compute_prune_count</edgelabel>
+        </childnode>
+        <childnode refid="13408" relation="usage">
+          <edgelabel>include_roles</edgelabel>
+        </childnode>
+      </node>
+      <node id="13407">
+        <label>bool</label>
+      </node>
+      <node id="13408">
+        <label>std::vector&lt; snowflake &gt;</label>
+        <childnode refid="13409" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/brain/D++/include/dpp/prune.h" line="31" column="1" bodyfile="/home/brain/D++/include/dpp/prune.h" bodystart="31" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1prune_1afeb430aef6bba13aa4770842c1b42ccf" prot="public" virt="non-virtual"><scope>dpp::prune</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1prune_1a948f8af4cf30f7e0a35978e36e1d3601" prot="public" virt="non-virtual"><scope>dpp::prune</scope><name>compute_prune_count</name></member>
+      <member refid="structdpp_1_1prune_1a981d093ed62361879e862c6e4b98556a" prot="public" virt="non-virtual"><scope>dpp::prune</scope><name>days</name></member>
+      <member refid="structdpp_1_1prune_1af14af138229a9c1205c97766d640a503" prot="public" virt="non-virtual"><scope>dpp::prune</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1prune_1a83cf2b149716078a0379f97b2c47526c" prot="public" virt="non-virtual"><scope>dpp::prune</scope><name>include_roles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

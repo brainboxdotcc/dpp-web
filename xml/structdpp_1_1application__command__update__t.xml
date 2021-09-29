@@ -1,0 +1,759 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="structdpp_1_1application__command__update__t" kind="struct" prot="public">
+    <compoundname>dpp::application_command_update_t</compoundname>
+    <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
+    <includes local="no">dispatcher.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1application__command__update__t_1ab1b3a755a92dabe7f150ae66cb4b649c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::application_command_update_t::application_command_update_t</definition>
+        <argsstring>(class discord_client *client, const std::string &amp;raw)</argsstring>
+        <name>application_command_update_t</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>raw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shard the event originated on </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw event text as JSON </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/include/dpp/dispatcher.h" line="646" column="1" bodyfile="/home/brain/D++/src/dpp/dispatcher.cpp" bodystart="130" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::event_dispatch_t::raw_event</definition>
+        <argsstring></argsstring>
+        <name>raw_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raw event text </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/include/dpp/dispatcher.h" line="40" column="1" bodyfile="/home/brain/D++/include/dpp/dispatcher.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shard the event came from </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/include/dpp/dispatcher.h" line="43" column="1" bodyfile="/home/brain/D++/include/dpp/dispatcher.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Update application slash command. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8174">
+        <label>dpp::event_dispatch_t</label>
+        <link refid="structdpp_1_1event__dispatch__t"/>
+      </node>
+      <node id="8173">
+        <label>dpp::application_command_update_t</label>
+        <link refid="structdpp_1_1application__command__update__t"/>
+        <childnode refid="8174" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8254">
+        <label>function&lt; void(const dpp::guild_integrations_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8192">
+        <label>dpp::cluster</label>
+        <link refid="classdpp_1_1cluster"/>
+        <childnode refid="8191" relation="usage">
+          <edgelabel>rest_ping</edgelabel>
+        </childnode>
+        <childnode refid="8184" relation="usage">
+          <edgelabel>last_identify</edgelabel>
+        </childnode>
+        <childnode refid="8193" relation="usage">
+          <edgelabel>cache_policy</edgelabel>
+        </childnode>
+        <childnode refid="8195" relation="usage">
+          <edgelabel>me</edgelabel>
+        </childnode>
+        <childnode refid="8198" relation="usage">
+          <edgelabel>maxclusters</edgelabel>
+          <edgelabel>cluster_id</edgelabel>
+          <edgelabel>numshards</edgelabel>
+          <edgelabel>intents</edgelabel>
+        </childnode>
+        <childnode refid="8177" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="8201" relation="usage">
+          <edgelabel>dispatch</edgelabel>
+        </childnode>
+      </node>
+      <node id="8188">
+        <label>dpp::opensslcontext</label>
+        <link refid="classdpp_1_1opensslcontext"/>
+        <childnode refid="8189" relation="usage">
+          <edgelabel>ssl</edgelabel>
+        </childnode>
+        <childnode refid="8190" relation="usage">
+          <edgelabel>ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="8218">
+        <label>function&lt; void(const dpp::stage_instance_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8233">
+        <label>function&lt; void(const dpp::message_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8219">
+        <label>function&lt; void(const dpp::thread_member_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8266">
+        <label>dpp::voiceconn</label>
+        <link refid="classdpp_1_1voiceconn"/>
+        <childnode refid="8183" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+        </childnode>
+        <childnode refid="8267" relation="usage">
+          <edgelabel>voiceclient</edgelabel>
+        </childnode>
+        <childnode refid="8177" relation="usage">
+          <edgelabel>token</edgelabel>
+          <edgelabel>session_id</edgelabel>
+          <edgelabel>websocket_hostname</edgelabel>
+        </childnode>
+      </node>
+      <node id="8259">
+        <label>function&lt; void(const dpp::voice_buffer_send_t &amp;event)&gt;</label>
+      </node>
+      <node id="8246">
+        <label>function&lt; void(const dpp::user_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8195">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="8196" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8197" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="8198" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="8199" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+        <childnode refid="8177" relation="usage">
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="8200" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+      </node>
+      <node id="8204">
+        <label>function&lt; void(const dpp::thread_members_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8248">
+        <label>function&lt; void(const dpp::invite_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8220">
+        <label>function&lt; void(const dpp::guild_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8250">
+        <label>function&lt; void(const dpp::guild_emojis_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8260">
+        <label>function&lt; void(const dpp::guild_member_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8186">
+        <label>function&lt; int()&gt;</label>
+      </node>
+      <node id="8201">
+        <label>dpp::dispatcher</label>
+        <link refid="classdpp_1_1dispatcher"/>
+        <childnode refid="8202" relation="usage">
+          <edgelabel>guild_role_create</edgelabel>
+        </childnode>
+        <childnode refid="8203" relation="usage">
+          <edgelabel>voice_state_update</edgelabel>
+        </childnode>
+        <childnode refid="8204" relation="usage">
+          <edgelabel>thread_members_update</edgelabel>
+        </childnode>
+        <childnode refid="8205" relation="usage">
+          <edgelabel>channel_delete</edgelabel>
+        </childnode>
+        <childnode refid="8206" relation="usage">
+          <edgelabel>thread_delete</edgelabel>
+        </childnode>
+        <childnode refid="8207" relation="usage">
+          <edgelabel>integration_update</edgelabel>
+        </childnode>
+        <childnode refid="8208" relation="usage">
+          <edgelabel>message_reaction_remove_emoji</edgelabel>
+        </childnode>
+        <childnode refid="8209" relation="usage">
+          <edgelabel>resumed</edgelabel>
+        </childnode>
+        <childnode refid="8210" relation="usage">
+          <edgelabel>presence_update</edgelabel>
+        </childnode>
+        <childnode refid="8211" relation="usage">
+          <edgelabel>message_delete_bulk</edgelabel>
+        </childnode>
+        <childnode refid="8212" relation="usage">
+          <edgelabel>voice_ready</edgelabel>
+        </childnode>
+        <childnode refid="8213" relation="usage">
+          <edgelabel>guild_ban_remove</edgelabel>
+        </childnode>
+        <childnode refid="8214" relation="usage">
+          <edgelabel>guild_role_delete</edgelabel>
+        </childnode>
+        <childnode refid="8215" relation="usage">
+          <edgelabel>channel_update</edgelabel>
+        </childnode>
+        <childnode refid="8216" relation="usage">
+          <edgelabel>stickers_update</edgelabel>
+        </childnode>
+        <childnode refid="8217" relation="usage">
+          <edgelabel>guild_members_chunk</edgelabel>
+        </childnode>
+        <childnode refid="8218" relation="usage">
+          <edgelabel>stage_instance_delete</edgelabel>
+        </childnode>
+        <childnode refid="8219" relation="usage">
+          <edgelabel>thread_member_update</edgelabel>
+        </childnode>
+        <childnode refid="8220" relation="usage">
+          <edgelabel>guild_create</edgelabel>
+        </childnode>
+        <childnode refid="8221" relation="usage">
+          <edgelabel>message_reaction_remove</edgelabel>
+        </childnode>
+        <childnode refid="8222" relation="usage">
+          <edgelabel>select_click</edgelabel>
+        </childnode>
+        <childnode refid="8223" relation="usage">
+          <edgelabel>interaction_create</edgelabel>
+        </childnode>
+        <childnode refid="8224" relation="usage">
+          <edgelabel>guild_join_request_delete</edgelabel>
+        </childnode>
+        <childnode refid="8225" relation="usage">
+          <edgelabel>guild_member_add</edgelabel>
+        </childnode>
+        <childnode refid="8226" relation="usage">
+          <edgelabel>voice_user_talking</edgelabel>
+        </childnode>
+        <childnode refid="8227" relation="usage">
+          <edgelabel>thread_create</edgelabel>
+        </childnode>
+        <childnode refid="8228" relation="usage">
+          <edgelabel>application_command_create</edgelabel>
+        </childnode>
+        <childnode refid="8229" relation="usage">
+          <edgelabel>button_click</edgelabel>
+        </childnode>
+        <childnode refid="8230" relation="usage">
+          <edgelabel>guild_update</edgelabel>
+        </childnode>
+        <childnode refid="8231" relation="usage">
+          <edgelabel>message_reaction_remove_all</edgelabel>
+        </childnode>
+        <childnode refid="8232" relation="usage">
+          <edgelabel>voice_receive</edgelabel>
+        </childnode>
+        <childnode refid="8233" relation="usage">
+          <edgelabel>message_create</edgelabel>
+        </childnode>
+        <childnode refid="8234" relation="usage">
+          <edgelabel>webhooks_update</edgelabel>
+        </childnode>
+        <childnode refid="8235" relation="usage">
+          <edgelabel>message_reaction_add</edgelabel>
+        </childnode>
+        <childnode refid="8236" relation="usage">
+          <edgelabel>message_delete</edgelabel>
+        </childnode>
+        <childnode refid="8237" relation="usage">
+          <edgelabel>voice_track_marker</edgelabel>
+        </childnode>
+        <childnode refid="8238" relation="usage">
+          <edgelabel>thread_list_sync</edgelabel>
+        </childnode>
+        <childnode refid="8239" relation="usage">
+          <edgelabel>integration_delete</edgelabel>
+        </childnode>
+        <childnode refid="8240" relation="usage">
+          <edgelabel>guild_ban_add</edgelabel>
+        </childnode>
+        <childnode refid="8241" relation="usage">
+          <edgelabel>channel_pins_update</edgelabel>
+        </childnode>
+        <childnode refid="8242" relation="usage">
+          <edgelabel>typing_start</edgelabel>
+        </childnode>
+        <childnode refid="8243" relation="usage">
+          <edgelabel>ready</edgelabel>
+        </childnode>
+        <childnode refid="8244" relation="usage">
+          <edgelabel>thread_update</edgelabel>
+        </childnode>
+        <childnode refid="8245" relation="usage">
+          <edgelabel>integration_create</edgelabel>
+        </childnode>
+        <childnode refid="8246" relation="usage">
+          <edgelabel>user_update</edgelabel>
+        </childnode>
+        <childnode refid="8247" relation="usage">
+          <edgelabel>message_update</edgelabel>
+        </childnode>
+        <childnode refid="8248" relation="usage">
+          <edgelabel>invite_create</edgelabel>
+        </childnode>
+        <childnode refid="8249" relation="usage">
+          <edgelabel>invite_delete</edgelabel>
+        </childnode>
+        <childnode refid="8250" relation="usage">
+          <edgelabel>guild_emojis_update</edgelabel>
+        </childnode>
+        <childnode refid="8251" relation="usage">
+          <edgelabel>guild_delete</edgelabel>
+        </childnode>
+        <childnode refid="8252" relation="usage">
+          <edgelabel>application_command_delete</edgelabel>
+        </childnode>
+        <childnode refid="8253" relation="usage">
+          <edgelabel>application_command_update</edgelabel>
+        </childnode>
+        <childnode refid="8254" relation="usage">
+          <edgelabel>guild_integrations_update</edgelabel>
+        </childnode>
+        <childnode refid="8255" relation="usage">
+          <edgelabel>voice_server_update</edgelabel>
+        </childnode>
+        <childnode refid="8256" relation="usage">
+          <edgelabel>guild_role_update</edgelabel>
+        </childnode>
+        <childnode refid="8257" relation="usage">
+          <edgelabel>channel_create</edgelabel>
+        </childnode>
+        <childnode refid="8258" relation="usage">
+          <edgelabel>stage_instance_create</edgelabel>
+        </childnode>
+        <childnode refid="8259" relation="usage">
+          <edgelabel>voice_buffer_send</edgelabel>
+        </childnode>
+        <childnode refid="8260" relation="usage">
+          <edgelabel>guild_member_update</edgelabel>
+        </childnode>
+        <childnode refid="8261" relation="usage">
+          <edgelabel>guild_member_remove</edgelabel>
+        </childnode>
+        <childnode refid="8262" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+      </node>
+      <node id="8208">
+        <label>function&lt; void(const dpp::message_reaction_remove_emoji_t &amp;event)&gt;</label>
+      </node>
+      <node id="8215">
+        <label>function&lt; void(const dpp::channel_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8257">
+        <label>function&lt; void(const dpp::channel_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8183">
+        <label>uint64_t</label>
+      </node>
+      <node id="8252">
+        <label>function&lt; void(const dpp::application_command_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8249">
+        <label>function&lt; void(const dpp::invite_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8235">
+        <label>function&lt; void(const dpp::message_reaction_add_t &amp;event)&gt;</label>
+      </node>
+      <node id="8229">
+        <label>function&lt; void(const dpp::button_click_t &amp;event)&gt;</label>
+      </node>
+      <node id="8217">
+        <label>function&lt; void(const dpp::guild_members_chunk_t &amp;event)&gt;</label>
+      </node>
+      <node id="8206">
+        <label>function&lt; void(const dpp::thread_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8225">
+        <label>function&lt; void(const dpp::guild_member_add_t &amp;event)&gt;</label>
+      </node>
+      <node id="8242">
+        <label>function&lt; void(const dpp::typing_start_t &amp;event)&gt;</label>
+      </node>
+      <node id="8239">
+        <label>function&lt; void(const dpp::integration_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8262">
+        <label>function&lt; void(const dpp::log_t &amp;event)&gt;</label>
+      </node>
+      <node id="8197">
+        <label>uint16_t</label>
+      </node>
+      <node id="8227">
+        <label>function&lt; void(const dpp::thread_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8184">
+        <label>time_t</label>
+      </node>
+      <node id="8178">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="8261">
+        <label>function&lt; void(const dpp::guild_member_remove_t &amp;event)&gt;</label>
+      </node>
+      <node id="8238">
+        <label>function&lt; void(const dpp::thread_list_sync_t &amp;event)&gt;</label>
+      </node>
+      <node id="8267">
+        <label>dpp::discord_voice_client</label>
+        <link refid="classdpp_1_1discord__voice__client"/>
+        <childnode refid="8180" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8183" relation="usage">
+          <edgelabel>server_id</edgelabel>
+          <edgelabel>channel_id</edgelabel>
+        </childnode>
+        <childnode refid="8184" relation="usage">
+          <edgelabel>last_heartbeat</edgelabel>
+        </childnode>
+        <childnode refid="8192" relation="usage">
+          <edgelabel>creator</edgelabel>
+        </childnode>
+        <childnode refid="8198" relation="usage">
+          <edgelabel>heartbeat_interval</edgelabel>
+        </childnode>
+        <childnode refid="8177" relation="usage">
+          <edgelabel>token</edgelabel>
+          <edgelabel>sessionid</edgelabel>
+        </childnode>
+        <childnode refid="8187" relation="usage">
+          <edgelabel>terminating</edgelabel>
+          <edgelabel>sodium_initialised</edgelabel>
+        </childnode>
+        <childnode refid="8264" relation="usage">
+          <edgelabel>thread_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="8200">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="8183" relation="usage">
+          <edgelabel>second</edgelabel>
+          <edgelabel>first</edgelabel>
+        </childnode>
+      </node>
+      <node id="8237">
+        <label>function&lt; void(const dpp::voice_track_marker_t &amp;event)&gt;</label>
+      </node>
+      <node id="8226">
+        <label>function&lt; void(const dpp::voice_user_talking_t &amp;event)&gt;</label>
+      </node>
+      <node id="8191">
+        <label>double</label>
+      </node>
+      <node id="8181">
+        <label>dpp::ssl_client</label>
+        <link refid="classdpp_1_1ssl__client"/>
+        <childnode refid="8182" relation="usage">
+          <edgelabel>custom_writeable_ready</edgelabel>
+          <edgelabel>custom_readable_ready</edgelabel>
+        </childnode>
+        <childnode refid="8183" relation="usage">
+          <edgelabel>bytes_in</edgelabel>
+          <edgelabel>bytes_out</edgelabel>
+        </childnode>
+        <childnode refid="8184" relation="usage">
+          <edgelabel>last_tick</edgelabel>
+        </childnode>
+        <childnode refid="8185" relation="usage">
+          <edgelabel>sfd</edgelabel>
+        </childnode>
+        <childnode refid="8186" relation="usage">
+          <edgelabel>custom_readable_fd</edgelabel>
+          <edgelabel>custom_writeable_fd</edgelabel>
+        </childnode>
+        <childnode refid="8187" relation="usage">
+          <edgelabel>nonblocking</edgelabel>
+        </childnode>
+        <childnode refid="8177" relation="usage">
+          <edgelabel>port</edgelabel>
+          <edgelabel>cipher</edgelabel>
+          <edgelabel>hostname</edgelabel>
+          <edgelabel>obuffer</edgelabel>
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+        <childnode refid="8188" relation="usage">
+          <edgelabel>ssl</edgelabel>
+        </childnode>
+      </node>
+      <node id="8236">
+        <label>function&lt; void(const dpp::message_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8258">
+        <label>function&lt; void(const dpp::stage_instance_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8198">
+        <label>uint32_t</label>
+      </node>
+      <node id="8256">
+        <label>function&lt; void(const dpp::guild_role_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8176">
+        <label>dpp::event_dispatch_t</label>
+        <link refid="structdpp_1_1event__dispatch__t"/>
+        <childnode refid="8177" relation="usage">
+          <edgelabel>raw_event</edgelabel>
+        </childnode>
+        <childnode refid="8179" relation="usage">
+          <edgelabel>from</edgelabel>
+        </childnode>
+      </node>
+      <node id="8199">
+        <label>uint8_t</label>
+      </node>
+      <node id="8241">
+        <label>function&lt; void(const dpp::channel_pins_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8194">
+        <label>cache_policy_setting_t</label>
+      </node>
+      <node id="8180">
+        <label>dpp::websocket_client</label>
+        <link refid="classdpp_1_1websocket__client"/>
+        <childnode refid="8181" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8193">
+        <label>dpp::cache_policy_t</label>
+        <link refid="structdpp_1_1cache__policy__t"/>
+        <childnode refid="8194" relation="usage">
+          <edgelabel>role_policy</edgelabel>
+          <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>user_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="8175">
+        <label>dpp::application_command_update_t</label>
+        <link refid="structdpp_1_1application__command__update__t"/>
+        <childnode refid="8176" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8210">
+        <label>function&lt; void(const dpp::presence_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8222">
+        <label>function&lt; void(const dpp::select_click_t &amp;event)&gt;</label>
+      </node>
+      <node id="8207">
+        <label>function&lt; void(const dpp::integration_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8230">
+        <label>function&lt; void(const dpp::guild_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8232">
+        <label>function&lt; void(const dpp::voice_receive_t &amp;event)&gt;</label>
+      </node>
+      <node id="8265">
+        <label>std::unordered_map&lt; snowflake, dpp::voiceconn * &gt;</label>
+        <childnode refid="8183" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="8266" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8182">
+        <label>function&lt; void()&gt;</label>
+      </node>
+      <node id="8224">
+        <label>function&lt; void(const dpp::guild_join_request_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8179">
+        <label>dpp::discord_client</label>
+        <link refid="classdpp_1_1discord__client"/>
+        <childnode refid="8180" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8191" relation="usage">
+          <edgelabel>websocket_ping</edgelabel>
+        </childnode>
+        <childnode refid="8183" relation="usage">
+          <edgelabel>last_seq</edgelabel>
+        </childnode>
+        <childnode refid="8184" relation="usage">
+          <edgelabel>last_heartbeat_ack</edgelabel>
+          <edgelabel>last_heartbeat</edgelabel>
+        </childnode>
+        <childnode refid="8192" relation="usage">
+          <edgelabel>creator</edgelabel>
+        </childnode>
+        <childnode refid="8263" relation="usage">
+          <edgelabel>voice_mutex</edgelabel>
+        </childnode>
+        <childnode refid="8198" relation="usage">
+          <edgelabel>reconnects</edgelabel>
+          <edgelabel>shard_id</edgelabel>
+          <edgelabel>resumes</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>max_shards</edgelabel>
+          <edgelabel>heartbeat_interval</edgelabel>
+        </childnode>
+        <childnode refid="8187" relation="usage">
+          <edgelabel>ready</edgelabel>
+        </childnode>
+        <childnode refid="8177" relation="usage">
+          <edgelabel>token</edgelabel>
+          <edgelabel>sessionid</edgelabel>
+        </childnode>
+        <childnode refid="8264" relation="usage">
+          <edgelabel>thread_id</edgelabel>
+        </childnode>
+        <childnode refid="8265" relation="usage">
+          <edgelabel>connecting_voice_channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="8231">
+        <label>function&lt; void(const dpp::message_reaction_remove_all_t &amp;event)&gt;</label>
+      </node>
+      <node id="8189">
+        <label>SSL *</label>
+      </node>
+      <node id="8196">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="8183" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="8244">
+        <label>function&lt; void(const dpp::thread_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8245">
+        <label>function&lt; void(const dpp::integration_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8253">
+        <label>function&lt; void(const dpp::application_command_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8190">
+        <label>SSL_CTX *</label>
+      </node>
+      <node id="8240">
+        <label>function&lt; void(const dpp::guild_ban_add_t &amp;event)&gt;</label>
+      </node>
+      <node id="8263">
+        <label>mutex</label>
+      </node>
+      <node id="8251">
+        <label>function&lt; void(const dpp::guild_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8209">
+        <label>function&lt; void(const dpp::resumed_t &amp;event)&gt;</label>
+      </node>
+      <node id="8228">
+        <label>function&lt; void(const dpp::application_command_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8234">
+        <label>function&lt; void(const dpp::webhooks_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8247">
+        <label>function&lt; void(const dpp::message_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8187">
+        <label>bool</label>
+      </node>
+      <node id="8185">
+        <label>SOCKET</label>
+      </node>
+      <node id="8223">
+        <label>function&lt; void(const dpp::interaction_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8255">
+        <label>function&lt; void(const dpp::voice_server_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8213">
+        <label>function&lt; void(const dpp::guild_ban_remove_t &amp;event)&gt;</label>
+      </node>
+      <node id="8205">
+        <label>function&lt; void(const dpp::channel_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8202">
+        <label>function&lt; void(const dpp::guild_role_create_t &amp;event)&gt;</label>
+      </node>
+      <node id="8221">
+        <label>function&lt; void(const dpp::message_reaction_remove_t &amp;event)&gt;</label>
+      </node>
+      <node id="8243">
+        <label>function&lt; void(const dpp::ready_t &amp;event)&gt;</label>
+      </node>
+      <node id="8203">
+        <label>function&lt; void(const dpp::voice_state_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8216">
+        <label>function&lt; void(const dpp::guild_stickers_update_t &amp;event)&gt;</label>
+      </node>
+      <node id="8212">
+        <label>function&lt; void(const dpp::voice_ready_t &amp;event)&gt;</label>
+      </node>
+      <node id="8264">
+        <label>native_handle_type</label>
+      </node>
+      <node id="8214">
+        <label>function&lt; void(const dpp::guild_role_delete_t &amp;event)&gt;</label>
+      </node>
+      <node id="8177">
+        <label>std::string</label>
+        <childnode refid="8178" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8211">
+        <label>function&lt; void(const dpp::message_delete_bulk_t &amp;event)&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/brain/D++/include/dpp/dispatcher.h" line="641" column="1" bodyfile="/home/brain/D++/include/dpp/dispatcher.h" bodystart="641" bodyend="647"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1application__command__update__t_1ab1b3a755a92dabe7f150ae66cb4b649c" prot="public" virt="non-virtual"><scope>dpp::application_command_update_t</scope><name>application_command_update_t</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::application_command_update_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" virt="non-virtual"><scope>dpp::application_command_update_t</scope><name>from</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" virt="non-virtual"><scope>dpp::application_command_update_t</scope><name>raw_event</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="logger_8cpp" kind="file">
+    <compoundname>logger.cpp</compoundname>
+    <includes refid="discord_8h" local="no">dpp/discord.h</includes>
+    <includes refid="event_8h" local="no">dpp/event.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="discordclient_8h" local="no">dpp/discordclient.h</includes>
+    <includes refid="cache_8h" local="no">dpp/cache.h</includes>
+    <includes refid="stringops_8h" local="no">dpp/stringops.h</includes>
+    <includes local="no">dpp/nlohmann/json.hpp</includes>
+    <incdepgraph>
+      <node id="4916">
+        <label>locale</label>
+      </node>
+      <node id="4900">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="4915">
+        <label>iomanip</label>
+      </node>
+      <node id="4863">
+        <label>functional</label>
+      </node>
+      <node id="4896">
+        <label>queue</label>
+      </node>
+      <node id="4871">
+        <label>dpp/invite.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4898">
+        <label>dpp/discordvoiceclient.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4899" relation="include">
+        </childnode>
+        <childnode refid="4900" relation="include">
+        </childnode>
+        <childnode refid="4901" relation="include">
+        </childnode>
+        <childnode refid="4902" relation="include">
+        </childnode>
+        <childnode refid="4903" relation="include">
+        </childnode>
+        <childnode refid="4904" relation="include">
+        </childnode>
+        <childnode refid="4905" relation="include">
+        </childnode>
+        <childnode refid="4906" relation="include">
+        </childnode>
+        <childnode refid="4907" relation="include">
+        </childnode>
+        <childnode refid="4908" relation="include">
+        </childnode>
+        <childnode refid="4909" relation="include">
+        </childnode>
+        <childnode refid="4910" relation="include">
+        </childnode>
+        <childnode refid="4911" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4860" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+        <childnode refid="4890" relation="include">
+        </childnode>
+        <childnode refid="4892" relation="include">
+        </childnode>
+        <childnode refid="4894" relation="include">
+        </childnode>
+        <childnode refid="4896" relation="include">
+        </childnode>
+        <childnode refid="4897" relation="include">
+        </childnode>
+        <childnode refid="4912" relation="include">
+        </childnode>
+        <childnode refid="4870" relation="include">
+        </childnode>
+      </node>
+      <node id="4894">
+        <label>dpp/cluster.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4882" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4892" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+        <childnode refid="4889" relation="include">
+        </childnode>
+        <childnode refid="4895" relation="include">
+        </childnode>
+      </node>
+      <node id="4882">
+        <label>variant</label>
+      </node>
+      <node id="4907">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4877">
+        <label>dpp/integration.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4901">
+        <label>resolv.h</label>
+      </node>
+      <node id="4873">
+        <label>dpp/emoji.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4895">
+        <label>dpp/queues.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4861" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4896" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4897" relation="include">
+        </childnode>
+        <childnode refid="4870" relation="include">
+        </childnode>
+        <childnode refid="4860" relation="include">
+        </childnode>
+        <childnode refid="4863" relation="include">
+        </childnode>
+      </node>
+      <node id="4899">
+        <label>errno.h</label>
+      </node>
+      <node id="4868">
+        <label>dpp/channel.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4909">
+        <label>fcntl.h</label>
+      </node>
+      <node id="4891">
+        <label>dpp/sslclient.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4863" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+      </node>
+      <node id="4859">
+        <label>string</label>
+      </node>
+      <node id="4862">
+        <label>map</label>
+      </node>
+      <node id="4883">
+        <label>dpp/message.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4884" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4893">
+        <label>exception</label>
+      </node>
+      <node id="4888">
+        <label>fstream</label>
+      </node>
+      <node id="4879">
+        <label>dpp/presence.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4902">
+        <label>netdb.h</label>
+      </node>
+      <node id="4919">
+        <label>dpp/nlohmann/json.hpp</label>
+      </node>
+      <node id="4889">
+        <label>dpp/discordclient.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4860" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+        <childnode refid="4890" relation="include">
+        </childnode>
+        <childnode refid="4892" relation="include">
+        </childnode>
+        <childnode refid="4894" relation="include">
+        </childnode>
+        <childnode refid="4898" relation="include">
+        </childnode>
+        <childnode refid="4886" relation="include">
+        </childnode>
+        <childnode refid="4896" relation="include">
+        </childnode>
+        <childnode refid="4897" relation="include">
+        </childnode>
+        <childnode refid="4912" relation="include">
+        </childnode>
+        <childnode refid="4870" relation="include">
+        </childnode>
+      </node>
+      <node id="4875">
+        <label>dpp/prune.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4874">
+        <label>dpp/ban.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4865">
+        <label>dpp/json_fwd.hpp</label>
+      </node>
+      <node id="4858">
+        <label>dpp/export.h</label>
+      </node>
+      <node id="4864">
+        <label>dpp/voicestate.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4904">
+        <label>netinet/tcp.h</label>
+      </node>
+      <node id="4914">
+        <label>dpp/stringops.h</label>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4915" relation="include">
+        </childnode>
+        <childnode refid="4916" relation="include">
+        </childnode>
+        <childnode refid="4917" relation="include">
+        </childnode>
+        <childnode refid="4918" relation="include">
+        </childnode>
+        <childnode refid="4887" relation="include">
+        </childnode>
+      </node>
+      <node id="4908">
+        <label>sys/types.h</label>
+      </node>
+      <node id="4872">
+        <label>dpp/dtemplate.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4911">
+        <label>string.h</label>
+      </node>
+      <node id="4867">
+        <label>dpp/user.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4884">
+        <label>optional</label>
+      </node>
+      <node id="4881">
+        <label>dpp/slashcommand.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4882" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+        <childnode refid="4883" relation="include">
+        </childnode>
+      </node>
+      <node id="4876">
+        <label>dpp/voiceregion.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4905">
+        <label>unistd.h</label>
+      </node>
+      <node id="4869">
+        <label>dpp/guild.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4870" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4861" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4864" relation="include">
+        </childnode>
+      </node>
+      <node id="4860">
+        <label>vector</label>
+      </node>
+      <node id="4910">
+        <label>signal.h</label>
+      </node>
+      <node id="4886">
+        <label>dpp/event.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4918">
+        <label>sstream</label>
+      </node>
+      <node id="4857">
+        <label>dpp/discord.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4860" relation="include">
+        </childnode>
+        <childnode refid="4861" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4863" relation="include">
+        </childnode>
+        <childnode refid="4864" relation="include">
+        </childnode>
+        <childnode refid="4866" relation="include">
+        </childnode>
+        <childnode refid="4867" relation="include">
+        </childnode>
+        <childnode refid="4868" relation="include">
+        </childnode>
+        <childnode refid="4869" relation="include">
+        </childnode>
+        <childnode refid="4871" relation="include">
+        </childnode>
+        <childnode refid="4872" relation="include">
+        </childnode>
+        <childnode refid="4873" relation="include">
+        </childnode>
+        <childnode refid="4874" relation="include">
+        </childnode>
+        <childnode refid="4875" relation="include">
+        </childnode>
+        <childnode refid="4876" relation="include">
+        </childnode>
+        <childnode refid="4877" relation="include">
+        </childnode>
+        <childnode refid="4878" relation="include">
+        </childnode>
+        <childnode refid="4879" relation="include">
+        </childnode>
+        <childnode refid="4880" relation="include">
+        </childnode>
+        <childnode refid="4881" relation="include">
+        </childnode>
+        <childnode refid="4885" relation="include">
+        </childnode>
+      </node>
+      <node id="4913">
+        <label>dpp/cache.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4870" relation="include">
+        </childnode>
+      </node>
+      <node id="4866">
+        <label>dpp/role.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4887">
+        <label>iostream</label>
+      </node>
+      <node id="4885">
+        <label>dpp/auditlog.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+        <childnode refid="4884" relation="include">
+        </childnode>
+      </node>
+      <node id="4880">
+        <label>dpp/intents.h</label>
+      </node>
+      <node id="4912">
+        <label>deque</label>
+      </node>
+      <node id="4861">
+        <label>unordered_map</label>
+      </node>
+      <node id="4870">
+        <label>mutex</label>
+      </node>
+      <node id="4903">
+        <label>sys/socket.h</label>
+      </node>
+      <node id="4897">
+        <label>thread</label>
+      </node>
+      <node id="4856">
+        <label>logger.cpp</label>
+        <link refid="logger.cpp"/>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4886" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4887" relation="include">
+        </childnode>
+        <childnode refid="4888" relation="include">
+        </childnode>
+        <childnode refid="4889" relation="include">
+        </childnode>
+        <childnode refid="4913" relation="include">
+        </childnode>
+        <childnode refid="4914" relation="include">
+        </childnode>
+        <childnode refid="4919" relation="include">
+        </childnode>
+      </node>
+      <node id="4878">
+        <label>dpp/webhook.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4865" relation="include">
+        </childnode>
+      </node>
+      <node id="4917">
+        <label>algorithm</label>
+      </node>
+      <node id="4906">
+        <label>stdio.h</label>
+      </node>
+      <node id="4890">
+        <label>dpp/wsclient.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4860" relation="include">
+        </childnode>
+        <childnode refid="4882" relation="include">
+        </childnode>
+        <childnode refid="4891" relation="include">
+        </childnode>
+      </node>
+      <node id="4892">
+        <label>dpp/dispatcher.h</label>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4883" relation="include">
+        </childnode>
+        <childnode refid="4881" relation="include">
+        </childnode>
+        <childnode refid="4863" relation="include">
+        </childnode>
+        <childnode refid="4882" relation="include">
+        </childnode>
+        <childnode refid="4893" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacedpp">dpp</innernamespace>
+    <innernamespace refid="namespacedpp_1_1events">dpp::events</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="logger_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" prot="public" static="no">
+        <type>nlohmann::json</type>
+        <definition>using json =  nlohmann::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/brain/D++/src/dpp/events/logger.cpp" line="32" column="1" bodyfile="/home/brain/D++/src/dpp/events/logger.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/brain/D++/src/dpp/events/logger.cpp"/>
+  </compounddef>
+</doxygen>
