@@ -8,7 +8,7 @@ var classdpp_1_1ssl__client =
     [ "get_bytes_out", "classdpp_1_1ssl__client.html#aad4da6489c8f08030ca49c060a23740a", null ],
     [ "get_cipher", "classdpp_1_1ssl__client.html#abf247ed0871e89e6a319c95841a315bd", null ],
     [ "handle_buffer", "classdpp_1_1ssl__client.html#a17e09b948aa1c61cf8c5f73281dd07e6", null ],
-    [ "log", "classdpp_1_1ssl__client.html#a2ed6248d7b95dce6f33f9c6513b4151e", null ],
+    [ "log", "classdpp_1_1ssl__client.html#a6037b1a66cf83e022655bd47f0df61a5", null ],
     [ "one_second_timer", "classdpp_1_1ssl__client.html#ae78617d00003abcbfce5446cb6bdde41", null ],
     [ "read_loop", "classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
     [ "write", "classdpp_1_1ssl__client.html#a4d9bde88c0c1926be915c6d232506176", null ],

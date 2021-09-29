@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="stream-mp3-discord-bot" kind="page">
     <compoundname>stream-mp3-discord-bot</compoundname>
     <title>Streaming MP3 files</title>
+    <briefdescription>
+    </briefdescription>
     <detaileddescription>
-<para>To stream MP3 files via D++ you need to link an additional dependency to your bot, namely <computeroutput>libmpg123</computeroutput>. It is relatively simple when linking this library to your bot to then decode audio to PCM and send it to the <ref refid="classdpp_1_1discord__voice__client_1aa2d30b9c9549201db0e54beeac89beb8" kindref="member">dpp::discord_voice_client::send_audio_raw</ref> function as shown below:</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para>To stream MP3 files via D++ you need to link an additional dependency to your bot, namely <computeroutput>libmpg123</computeroutput>. It is relatively simple when linking this library to your bot to then decode audio to PCM and send it to the <ref refid="classdpp_1_1discord__voice__client_1aa2d30b9c9549201db0e54beeac89beb8" kindref="member">dpp::discord_voice_client::send_audio_raw</ref> function as shown below:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/nlohmann/json.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/fmt/format.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -92,7 +95,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>A<sp/>basic<sp/>logger<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1log__t" kindref="compound">dpp::log_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1log__t_1ae1316a6ace98555175a4c1c70c9d0549" kindref="member">severity</ref><sp/>&gt;<sp/><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a" kindref="member">dpp::ll_trace</ref>)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>event.message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -104,6 +107,10 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para><para>To compile this program you must remember to specify <computeroutput>libmpg123</computeroutput> alongside <computeroutput>libdpp</computeroutput> in the build command, for example:</para><para><computeroutput>g++ -std=c++17 -o musictest musictest.cpp -lmpg123 -ldpp</computeroutput> </para>    </detaileddescription>
+</programlisting></para>
+<para>To compile this program you must remember to specify <computeroutput>libmpg123</computeroutput> alongside <computeroutput>libdpp</computeroutput> in the build command, for example:</para>
+<para><computeroutput>g++ -std=c++17 -o musictest musictest.cpp -lmpg123 -ldpp</computeroutput> </para>
+    </detaileddescription>
+    <location file="docpages/03_example_programs.md"/>
   </compounddef>
 </doxygen>

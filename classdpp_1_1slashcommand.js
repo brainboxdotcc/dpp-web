@@ -4,7 +4,7 @@ var classdpp_1_1slashcommand =
     [ "~slashcommand", "classdpp_1_1slashcommand.html#aa6f13f22de1b2e26b2ca7976e42e5b67", null ],
     [ "add_option", "classdpp_1_1slashcommand.html#a3959f3f3b2709c56e03610e6f774e449", null ],
     [ "add_permission", "classdpp_1_1slashcommand.html#a35086350bd76709e6befeed71e2598ab", null ],
-    [ "build_json", "classdpp_1_1slashcommand.html#a31e724aa6fc1b98116761fd0b2004671", null ],
+    [ "build_json", "classdpp_1_1slashcommand.html#a540339915ce149aa7631d3977ea1882a", null ],
     [ "disable_default_permissions", "classdpp_1_1slashcommand.html#af5e01640cbf5f00e74e7dd724e43d6f0", null ],
     [ "fill_from_json", "classdpp_1_1slashcommand.html#a2295a43bd5defc3a87afa5f0cc0c36af", null ],
     [ "set_application_id", "classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92", null ],

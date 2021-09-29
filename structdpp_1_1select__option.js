@@ -10,7 +10,7 @@ var structdpp_1_1select__option =
     [ "set_label", "structdpp_1_1select__option.html#a57297c33373a7e60e5ca2a1fa1252d34", null ],
     [ "set_value", "structdpp_1_1select__option.html#a78df0a21b01447ffacefe4ee5d0a076a", null ],
     [ "description", "structdpp_1_1select__option.html#a9e8b7f77dc54e0746d5781179d65f703", null ],
-    [ "emoji", "structdpp_1_1select__option.html#ad0e854a2bce6f33ea92823227f3bcd78", null ],
+    [ "emoji", "structdpp_1_1select__option.html#a87080e97f389b83a93c43198a1380f7b", null ],
     [ "is_default", "structdpp_1_1select__option.html#a0bbb221b08b77ffb46d1b352bf7f8222", null ],
     [ "label", "structdpp_1_1select__option.html#a9b69bce92e58e606f37964d60c99c799", null ],
     [ "value", "structdpp_1_1select__option.html#a9dbeb317e3612fb10d2f47cc8b61eb39", null ]

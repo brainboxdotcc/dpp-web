@@ -37,7 +37,6 @@ var hierarchy =
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
     [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
-    [ "ErrorHandler", "class_error_handler.html", null ],
     [ "dpp::events::event", "classdpp_1_1events_1_1event.html", [
       [ "dpp::events::application_command_create", "classdpp_1_1events_1_1application__command__create.html", null ],
       [ "dpp::events::application_command_delete", "classdpp_1_1events_1_1application__command__delete.html", null ],
@@ -216,7 +215,6 @@ var hierarchy =
     [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
-    [ "Traits", "class_traits.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],

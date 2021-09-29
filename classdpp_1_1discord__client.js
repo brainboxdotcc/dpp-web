@@ -24,7 +24,7 @@ var classdpp_1_1discord__client =
     [ "HandleEvent", "classdpp_1_1discord__client.html#a189b8eb73439b8ac82bc132b9acde04c", null ],
     [ "HandleFrame", "classdpp_1_1discord__client.html#af4c5772b702123423fa5ad2a12d11804", null ],
     [ "is_connected", "classdpp_1_1discord__client.html#af59b7db59d0fe39259efcb2380016ee4", null ],
-    [ "log", "classdpp_1_1discord__client.html#aaeb4b65604a497f2ca93c4b62dcbdfb7", null ],
+    [ "log", "classdpp_1_1discord__client.html#a9880e3f13c00cd6e4397fe64ae23b4d0", null ],
     [ "one_second_timer", "classdpp_1_1discord__client.html#a8e90fb79f5686c73a2024ed6ba704c6b", null ],
     [ "QueueMessage", "classdpp_1_1discord__client.html#afbb1b789c7b365c1dfe776316d5a9829", null ],
     [ "read_loop", "classdpp_1_1discord__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],

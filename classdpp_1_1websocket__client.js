@@ -11,7 +11,7 @@ var classdpp_1_1websocket__client =
     [ "GetState", "classdpp_1_1websocket__client.html#ad699ad1f6cefc29a1868fdfca530c550", null ],
     [ "handle_buffer", "classdpp_1_1websocket__client.html#a96a1c910426a6094a81f5bf26ce9119b", null ],
     [ "HandleFrame", "classdpp_1_1websocket__client.html#a7893b4f67b88472cf72dea1aa8f2c377", null ],
-    [ "log", "classdpp_1_1websocket__client.html#a2ed6248d7b95dce6f33f9c6513b4151e", null ],
+    [ "log", "classdpp_1_1websocket__client.html#a6037b1a66cf83e022655bd47f0df61a5", null ],
     [ "one_second_timer", "classdpp_1_1websocket__client.html#a113d7064f2d7f61ac7246850b6cd66cb", null ],
     [ "read_loop", "classdpp_1_1websocket__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
     [ "write", "classdpp_1_1websocket__client.html#aac65765349cbd3e787c0fd2af576ec6d", null ],

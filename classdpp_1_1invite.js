@@ -2,7 +2,7 @@ var classdpp_1_1invite =
 [
     [ "invite", "classdpp_1_1invite.html#ad3c1ed34b2256dcbf2dce82436071f8b", null ],
     [ "~invite", "classdpp_1_1invite.html#a93e926569d8c6df52006c07c427f1601", null ],
-    [ "build_json", "classdpp_1_1invite.html#a95b8e279a49bb7f591dc2a3af3009061", null ],
+    [ "build_json", "classdpp_1_1invite.html#ab2efea5e28b135bf39a6a65fac1a02ca", null ],
     [ "fill_from_json", "classdpp_1_1invite.html#a1b2060938ed618edb951114537269c14", null ],
     [ "approximate_member_count", "classdpp_1_1invite.html#a1eeea3785ede65e9a93640352674a6c3", null ],
     [ "approximate_presence_count", "classdpp_1_1invite.html#a76dac8c741c2315e6be8733d12856b43", null ],
