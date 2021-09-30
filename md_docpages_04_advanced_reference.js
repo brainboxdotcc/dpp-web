@@ -8,7 +8,7 @@ var md_docpages_04_advanced_reference =
     [ "Thread Model", "thread-model.html", null ],
     [ "Coding Style Standards", "coding-standards.html", [
       [ "Class names, function names and method names", "coding-standards.html#autotoc_md44", null ],
-      [ "Constants and <tt>#define</tt> macros", "coding-standards.html#autotoc_md45", null ],
+      [ "Constants and #define macros", "coding-standards.html#autotoc_md45", null ],
       [ "Comments", "coding-standards.html#autotoc_md46", null ],
       [ "Symbol exporting", "coding-standards.html#autotoc_md47", null ],
       [ "Public vs private vs protected", "coding-standards.html#autotoc_md48", null ],
