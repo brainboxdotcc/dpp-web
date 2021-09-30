@@ -135,7 +135,7 @@ API type names</h1>
 <p >Where discord provide a name in PascalCase we should stick as closely to that name as possible but convert it to <code>snake_case</code>. For example, GuildMember would become <code>guild_member</code>.</p>
 <h1><a class="anchor" id="autotoc_md54"></a>
 Don't introduce any platform-specific code</h1>
-<p >Do not introduce platform specific (e.g. windows only) code or libc functions. If you really must use these functions safely wrap them e.g. in <code>\#ifdef _WIN32</code> and provide a cross-platform alternative so that it works for everyone.</p>
+<p >Do not introduce platform specific (e.g. windows only) code or libc functions. If you really must use these functions safely wrap them e.g. in <code>#ifdef _WIN32</code> and provide a cross-platform alternative so that it works for everyone.</p>
 <h1><a class="anchor" id="autotoc_md55"></a>
 Select the right size type for numeric types</h1>
 <p >If a value will only hold values up to 255, use <code>uint8_t</code>. If a value cannot hold over 65536, use <code>uint16_t</code>. These types can help use a lot less ram at scale.</p>
