@@ -117,7 +117,8 @@ Symbol exporting</h1>
 <div class="line">    <span class="keywordtype">int</span> hats;</div>
 <div class="line">    <span class="keywordtype">int</span> clowns;</div>
 <div class="line">};</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md49"></a>
+</div><!-- fragment --><p >The <code>CoreExport</code> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</p>
+<h1><a class="anchor" id="autotoc_md49"></a>
 Public vs private vs protected</h1>
 <p >It is a design philosophy of D++ that everything possible in a class should be public, unless the user really does not need it (you should consider justifying in comments why) or user adjustment of the variable could badly break the functioning of the library. Avoid the use of accessors for setting/getting values in a class, except for bit fields, where you should provide accessors for setting and getting individual bits (for example, see <code>user.h</code>), or in the event you want to provide a "fluent" interface.</p>
 <h1><a class="anchor" id="autotoc_md50"></a>
