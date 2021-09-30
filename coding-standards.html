@@ -151,8 +151,13 @@ Fluent design</h1>
 <div class="line">    my_new_class&amp; set_clowns(<span class="keywordtype">int</span> new_clowns);</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line">my_new_class&amp; my_new_class::set_hats(<span class="keywordtype">int</span> my_new_hats) {</div>
+<div class="line">my_new_class&amp; my_new_class::set_hats(<span class="keywordtype">int</span> new_hats) {</div>
 <div class="line">    hats = new_hats;</div>
+<div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">my_new_class&amp; my_new_class::set_clowns(<span class="keywordtype">int</span> new_clowns) {</div>
+<div class="line">    clowns = new_clowns;</div>
 <div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p >This would allow the user to do this:</p>
