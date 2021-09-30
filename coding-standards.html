@@ -151,11 +151,17 @@ Fluent design</h1>
 <div class="line">    my_new_class&amp; set_clowns(<span class="keywordtype">int</span> new_clowns);</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line">my_new_class::set_hats(<span class="keywordtype">int</span> my_new_hats) {</div>
+<div class="line">my_new_class&amp; my_new_class::set_hats(<span class="keywordtype">int</span> my_new_hats) {</div>
 <div class="line">    hats = new_hats;</div>
 <div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line">}</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- fragment --><p >This would allow the user to do this:</p>
+<div class="fragment"><div class="line">dpp::my_new_class nc;</div>
+<div class="line">nc.set_hats(3).set_clowns(9001);</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md57"></a>
+Keep all D++ related types in the dpp namespace</h1>
+<p >All types for the library should be within the <code>dpp</code> namespace. There are a couple of additional namespaces, e.g. <code><a class="el" href="namespacedpp_1_1utility.html" title="Utility helper functions, generally for logging.">dpp::utility</a></code> for static standalone helper functions and helper classes, and <code>dpp::event</code> for internal websocket event handlers. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

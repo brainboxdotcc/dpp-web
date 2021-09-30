@@ -19,6 +19,7 @@ var md_docpages_04_advanced_reference =
       [ "API type names", "coding-standards.html#autotoc_md53", null ],
       [ "Don't introduce any platform-specific code", "coding-standards.html#autotoc_md54", null ],
       [ "Select the right size type for numeric types", "coding-standards.html#autotoc_md55", null ],
-      [ "Fluent design", "coding-standards.html#autotoc_md56", null ]
+      [ "Fluent design", "coding-standards.html#autotoc_md56", null ],
+      [ "Keep all D++ related types in the dpp namespace", "coding-standards.html#autotoc_md57", null ]
     ] ]
 ];

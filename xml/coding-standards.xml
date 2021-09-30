@@ -74,11 +74,19 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>my_new_class&amp;<sp/>set_clowns(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_clowns);</highlight></codeline>
 <codeline><highlight class="normal">};</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal">my_new_class::set_hats(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>my_new_hats)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal">my_new_class&amp;<sp/>my_new_class::set_hats(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>my_new_hats)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hats<sp/>=<sp/>new_hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting> </para>
+</programlisting></para>
+<para>This would allow the user to do this:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal">dpp::my_new_class<sp/>nc;</highlight></codeline>
+<codeline><highlight class="normal">nc.set_hats(3).set_clowns(9001);</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="coding-standards_1autotoc_md57">
+<title>Keep all D++ related types in the dpp namespace</title>
+<para>All types for the library should be within the <computeroutput>dpp</computeroutput> namespace. There are a couple of additional namespaces, e.g. <computeroutput><ref refid="namespacedpp_1_1utility" kindref="compound">dpp::utility</ref></computeroutput> for static standalone helper functions and helper classes, and <computeroutput>dpp::event</computeroutput> for internal websocket event handlers. </para>
 </sect1>
     </detaileddescription>
     <location file="docpages/04_advanced_reference.md"/>
