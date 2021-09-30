@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee":[6,0,1,158],
+"namespacedpp.html#ab3ce48617238a41aebf1048467ebdfd6":[6,0,1,246],
 "namespacedpp.html#ab3eb25fd6578973e4b2bc86d5c073d1b":[6,0,1,245],
 "namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd":[6,0,1,277],
 "namespacedpp.html#abc401d86119c6443bf72d736857c1a58":[6,0,1,181],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "structdetail_1_1chrono__format__checker.html#ac97f798a072d060879a08d0b86759819":[7,0,0,0,14],
 "structdetail_1_1chrono__format__checker.html#ac97f798a072d060879a08d0b86759819":[6,0,0,0,14],
 "structdetail_1_1chrono__format__checker.html#ace1dae94b0b5481bf0bef49cf07a9917":[7,0,0,0,7],
-"structdetail_1_1chrono__format__checker.html#ace1dae94b0b5481bf0bef49cf07a9917":[6,0,0,0,7],
-"structdetail_1_1chrono__format__checker.html#adb019fd95217d41f525e4cb864771051":[6,0,0,0,21],
-"structdetail_1_1chrono__format__checker.html#adb019fd95217d41f525e4cb864771051":[7,0,0,0,21]
+"structdetail_1_1chrono__format__checker.html#ace1dae94b0b5481bf0bef49cf07a9917":[6,0,0,0,7]
 };
