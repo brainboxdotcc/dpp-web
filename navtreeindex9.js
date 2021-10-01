@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"firstbot.html":[3,0],
+"frequently-asked-questions.html":[0,7],
 "frequently-asked-questions.html#autotoc_md67":[0,7,0],
 "frequently-asked-questions.html#autotoc_md68":[0,7,0,0],
 "frequently-asked-questions.html#autotoc_md69":[0,7,0,1],
@@ -28,15 +30,15 @@ var NAVTREEINDEX9 =
 "frequently-asked-questions.html#autotoc_md92":[0,7,0,24],
 "frequently-asked-questions.html#autotoc_md93":[0,7,0,25],
 "frequently-asked-questions.html#autotoc_md94":[0,7,0,26],
-"functions.html":[7,3,0,0],
 "functions.html":[7,3,0],
+"functions.html":[7,3,0,0],
 "functions_b.html":[7,3,0,1],
 "functions_c.html":[7,3,0,2],
 "functions_d.html":[7,3,0,3],
 "functions_e.html":[7,3,0,4],
 "functions_f.html":[7,3,0,5],
-"functions_func.html":[7,3,1],
 "functions_func.html":[7,3,1,0],
+"functions_func.html":[7,3,1],
 "functions_func_b.html":[7,3,1,1],
 "functions_func_c.html":[7,3,1,2],
 "functions_func_d.html":[7,3,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3d":[6,0,1,177],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da02429f8355107f3a0b355f6e091ca7cf":[6,0,1,177,7],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da03abd59d9efdfa055047d83a575097f7":[6,0,1,177,29],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0b788dfd104a51ce239dbadc3fbcd664":[6,0,1,177,30],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0d6ef1503a63905a83d469fc9e2d8bcd":[6,0,1,177,17],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1a50fe9c8ab4c8fbd86c7d45a2798e7a":[6,0,1,177,2]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0b788dfd104a51ce239dbadc3fbcd664":[6,0,1,177,30]
 };

@@ -16,10 +16,10 @@
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Example<sp/>to<sp/>record<sp/>a<sp/>user<sp/>in<sp/>a<sp/>VC</highlight></codeline>
-<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
-<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Recording<sp/>is<sp/>output<sp/>as<sp/>&apos;./me.pcm&apos;<sp/>and<sp/>you<sp/>can<sp/>play<sp/>it<sp/>via<sp/>the<sp/>soundboard<sp/>example</highlight></codeline>
-<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>or<sp/>use<sp/>ffmpeg<sp/>&apos;ffplay<sp/>-f<sp/>s16le<sp/>-ar<sp/>48000<sp/>-ac<sp/>2<sp/>-i<sp/>./me.pcm&apos;</highlight></codeline>
-<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Recording<sp/>is<sp/>output<sp/>as<sp/>&apos;./me.pcm&apos;<sp/>and<sp/>you<sp/>can<sp/>play<sp/>it<sp/>via<sp/>the<sp/>soundboard<sp/>example</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>or<sp/>use<sp/>ffmpeg<sp/>&apos;ffplay<sp/>-f<sp/>s16le<sp/>-ar<sp/>48000<sp/>-ac<sp/>2<sp/>-i<sp/>./me.pcm&apos;</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Replace<sp/>with<sp/>the<sp/>user&apos;s<sp/>id<sp/>you<sp/>wish<sp/>to<sp/>record<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref><sp/>user_id<sp/>=<sp/>407877550216314882;</highlight></codeline>
@@ -55,15 +55,8 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_voice_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1voice__ready__t" kindref="compound">dpp::voice_ready_t</ref><sp/>&amp;event)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>a<sp/>packet<sp/>of<sp/>silence<sp/>to<sp/>initialize<sp/>the<sp/>voice<sp/>receive</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>silence_packet[3]<sp/>=<sp/>{<sp/>0xf8,<sp/>0xff,<sp/>0xfe<sp/>};</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.voice_client-&gt;send_audio_opus(silence_packet,<sp/>3,<sp/>20);</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_voice_receive([&amp;bot,<sp/>&amp;fd,<sp/>&amp;user_id](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1voice__receive__t" kindref="compound">dpp::voice_receive_t</ref><sp/>&amp;event)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1voice__receive__t_1ae70014f7c00864c278df265da0967026" kindref="member">user_id</ref><sp/>==<sp/>user_id)</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1voice__receive__t_1ae70014f7c00864c278df265da0967026" kindref="member">user_id</ref><sp/>==<sp/>user_id)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fwrite((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)event.<ref refid="structdpp_1_1voice__receive__t_1abe0062119471690caacc95d849274413" kindref="member">audio</ref>,<sp/>1,<sp/>event.<ref refid="structdpp_1_1voice__receive__t_1abdc253b2799cb504caa9bd030838f668" kindref="member">audio_size</ref>,<sp/>fd);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>

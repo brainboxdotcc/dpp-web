@@ -105,10 +105,10 @@ $(document).ready(function(){initNavTree('record-user.html',''); initResizable()
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> <span class="keyword">const</span> *argv[])</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">/* Example to record a user in a VC</span></div>
-<div class="line"><span class="comment">     * </span></div>
-<div class="line"><span class="comment">     * Recording is output as &#39;./me.pcm&#39; and you can play it via the soundboard example</span></div>
-<div class="line"><span class="comment">     * or use ffmpeg &#39;ffplay -f s16le -ar 48000 -ac 2 -i ./me.pcm&#39;</span></div>
-<div class="line"><span class="comment">     */</span></div>
+<div class="line"><span class="comment">    * </span></div>
+<div class="line"><span class="comment">    * Recording is output as &#39;./me.pcm&#39; and you can play it via the soundboard example</span></div>
+<div class="line"><span class="comment">    * or use ffmpeg &#39;ffplay -f s16le -ar 48000 -ac 2 -i ./me.pcm&#39;</span></div>
+<div class="line"><span class="comment">    */</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Replace with the user&#39;s id you wish to record */</span></div>
 <div class="line">    <a class="code hl_typedef" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a> user_id = 407877550216314882;</div>
@@ -144,15 +144,8 @@ $(document).ready(function(){initNavTree('record-user.html',''); initResizable()
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    bot.on_voice_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1voice__ready__t.html">dpp::voice_ready_t</a> &amp;event) {</div>
-<div class="line">        <span class="comment">// Send a packet of silence to initialize the voice receive</span></div>
-<div class="line">        uint8_t silence_packet[3] = { 0xf8, 0xff, 0xfe };</div>
-<div class="line">        <span class="keyword">event</span>.voice_client-&gt;send_audio_opus(silence_packet, 3, 20);</div>
-<div class="line">    });</div>
-<div class="line"> </div>
 <div class="line">    bot.on_voice_receive([&amp;bot, &amp;fd, &amp;user_id](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1voice__receive__t.html">dpp::voice_receive_t</a> &amp;event) {</div>
-<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1voice__receive__t.html#ae70014f7c00864c278df265da0967026">user_id</a> == user_id)</div>
-<div class="line">        {</div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1voice__receive__t.html#ae70014f7c00864c278df265da0967026">user_id</a> == user_id) {</div>
 <div class="line">            fwrite((<span class="keywordtype">char</span> *)event.<a class="code hl_variable" href="structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413">audio</a>, 1, event.<a class="code hl_variable" href="structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668">audio_size</a>, fd);</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
@@ -174,7 +167,6 @@ $(document).ready(function(){initNavTree('record-user.html',''); initResizable()
 <div class="ttc" id="astructdpp_1_1message_html_a5e75f7cd8a7e952e6621c520627d5b84"><div class="ttname"><a href="structdpp_1_1message.html#a5e75f7cd8a7e952e6621c520627d5b84">dpp::message::guild_id</a></div><div class="ttdeci">snowflake guild_id</div><div class="ttdef"><b>Definition:</b> message.h:847</div></div>
 <div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> message.h:853</div></div>
 <div class="ttc" id="astructdpp_1_1message_html_adceaf61877eede79f0ebeb14efa74b5e"><div class="ttname"><a href="structdpp_1_1message.html#adceaf61877eede79f0ebeb14efa74b5e">dpp::message::channel_id</a></div><div class="ttdeci">snowflake channel_id</div><div class="ttdef"><b>Definition:</b> message.h:845</div></div>
-<div class="ttc" id="astructdpp_1_1voice__ready__t_html"><div class="ttname"><a href="structdpp_1_1voice__ready__t.html">dpp::voice_ready_t</a></div><div class="ttdoc">voice user talking</div><div class="ttdef"><b>Definition:</b> dispatcher.h:852</div></div>
 <div class="ttc" id="astructdpp_1_1voice__receive__t_html"><div class="ttname"><a href="structdpp_1_1voice__receive__t.html">dpp::voice_receive_t</a></div><div class="ttdoc">voice receive packet</div><div class="ttdef"><b>Definition:</b> dispatcher.h:865</div></div>
 <div class="ttc" id="astructdpp_1_1voice__receive__t_html_abdc253b2799cb504caa9bd030838f668"><div class="ttname"><a href="structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668">dpp::voice_receive_t::audio_size</a></div><div class="ttdeci">size_t audio_size</div><div class="ttdoc">Size of audio buffer.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:881</div></div>
 <div class="ttc" id="astructdpp_1_1voice__receive__t_html_abe0062119471690caacc95d849274413"><div class="ttname"><a href="structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413">dpp::voice_receive_t::audio</a></div><div class="ttdeci">uint8_t * audio</div><div class="ttdoc">Audio data, encoded as 48kHz stereo PCM or Opus.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:877</div></div>
