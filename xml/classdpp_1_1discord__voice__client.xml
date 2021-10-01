@@ -1328,7 +1328,51 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="474" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="799" bodyend="829"/>
+        <location file="include/dpp/discordvoiceclient.h" line="474" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="807" bodyend="837"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ad5273e978592bafc14430c28eb9010bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::discord_voice_client::send_audio_opus</definition>
+        <argsstring>(uint8_t *opus_packet, const size_t length)</argsstring>
+        <name>send_audio_opus</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>opus_packet</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Send opus packets to the voice channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some containers such as .ogg may contain OPUS encoded data already. In this case, we don&apos;t need to encode the frames using opus here. We can bypass the codec, only applying libsodium to the stream.</para>
+<para>Duration is calculated internally</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opus_packet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opus packets. Discord expects opus frames to be encoded at 48000Hz</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the audio data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>It is your responsibility to ensure that packets of data sent to send_audio are correctly repacketized for streaming, e.g. that audio frames are not too large or contain an incorrect format. Discord will still expect the same frequency and bit width of audio and the same signedness. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="497" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="799" bodyend="805"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a067cdfaf8a84c2bdf09febe974eb4730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1358,7 +1402,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="483" column="22" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="845" bodyend="848"/>
+        <location file="include/dpp/discordvoiceclient.h" line="506" column="22" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="853" bodyend="856"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a45085f49408bdeae9cd05dbf59d39972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -1375,7 +1419,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="491" column="10" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="850" bodyend="852"/>
+        <location file="include/dpp/discordvoiceclient.h" line="514" column="10" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="858" bodyend="860"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1afec763c308a70871233c8a51de2c6118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1389,7 +1433,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="499" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="831" bodyend="843"/>
+        <location file="include/dpp/discordvoiceclient.h" line="522" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="839" bodyend="851"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ad21c8743aef9a874ef53edfebd8ee2fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1417,7 +1461,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="506" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="373" bodyend="375"/>
+        <location file="include/dpp/discordvoiceclient.h" line="529" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="373" bodyend="375"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1acc63a25566f48bb68af74c43f2b4e41d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1431,7 +1475,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="512" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="396" bodyend="399"/>
+        <location file="include/dpp/discordvoiceclient.h" line="535" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="396" bodyend="399"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a1a98e05342f5c6b8de0f9324758f3fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1448,7 +1492,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="519" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="150" bodyend="153"/>
+        <location file="include/dpp/discordvoiceclient.h" line="542" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="150" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a15ba91026079da2100714c12b7ade88e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -1465,7 +1509,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="527" column="7" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="381" bodyend="389"/>
+        <location file="include/dpp/discordvoiceclient.h" line="550" column="7" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="381" bodyend="389"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a4e75f5d97ca1691dde43ed8b0b8ca196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -1482,7 +1526,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="537" column="10" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="726" bodyend="732"/>
+        <location file="include/dpp/discordvoiceclient.h" line="560" column="10" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="726" bodyend="732"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a15ec0940d0a963dbb5e58d2eb895bcc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
@@ -1499,7 +1543,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="545" column="22" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="391" bodyend="394"/>
+        <location file="include/dpp/discordvoiceclient.h" line="568" column="22" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="391" bodyend="394"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a84fc0cb1aaf9691aed818e18daea1b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1528,7 +1572,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="562" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="712" bodyend="724"/>
+        <location file="include/dpp/discordvoiceclient.h" line="585" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="712" bodyend="724"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a8c30775fa7e4c8f82ff5531e4fae200f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1545,7 +1589,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="576" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="734" bodyend="749"/>
+        <location file="include/dpp/discordvoiceclient.h" line="599" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="734" bodyend="749"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a69727c9ff92f6e86f4ee51260de3d111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const std::vector&lt; std::string &gt;</type>
@@ -1562,7 +1606,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="583" column="19" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="635" bodyend="638"/>
+        <location file="include/dpp/discordvoiceclient.h" line="606" column="19" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="635" bodyend="638"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1aef426df9775031fed6c6f50554573a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1579,7 +1623,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="592" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="377" bodyend="379"/>
+        <location file="include/dpp/discordvoiceclient.h" line="615" column="6" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="377" bodyend="379"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ae8e844ebb991eeb2d63771f6c5ea4938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1598,7 +1642,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="600" column="13" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="854" bodyend="901"/>
+        <location file="include/dpp/discordvoiceclient.h" line="623" column="13" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="862" bodyend="909"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1aac65765349cbd3e787c0fd2af576ec6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -2188,7 +2232,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/discordvoiceclient.h" line="88" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="89" bodyend="601"/>
+    <location file="include/dpp/discordvoiceclient.h" line="88" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="89" bodyend="624"/>
     <listofallmembers>
       <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>buffer</name></member>
       <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>bytes_in</name></member>
@@ -2259,6 +2303,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
       <member refid="classdpp_1_1discord__voice__client_1a7c520f9a22acad2e2a7801910fc8097c" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>secret_key</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a9b0d02d5c4949b2945bb8a80a00edbfe" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>Send</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a96b9a29017f92098edaac0bada6988e4" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>send_audio_opus</name></member>
+      <member refid="classdpp_1_1discord__voice__client_1ad5273e978592bafc14430c28eb9010bd" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>send_audio_opus</name></member>
       <member refid="classdpp_1_1discord__voice__client_1aa2d30b9c9549201db0e54beeac89beb8" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>send_audio_raw</name></member>
       <member refid="classdpp_1_1discord__voice__client_1ad7f590f55089547625a67aa6ef15a2a3" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>sending</name></member>
       <member refid="classdpp_1_1discord__voice__client_1aecd8c23811fac92dda3980af6dafacf4" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>sequence</name></member>

@@ -7,7 +7,7 @@ var searchData=
   ['select_5foption_4',['select_option',['../structdpp_1_1select__option.html#afdd887738c88c21cee80ce2ddd6a0f84',1,'dpp::select_option::select_option(const std::string &amp;label, const std::string &amp;value, const std::string &amp;description=&quot;&quot;)'],['../structdpp_1_1select__option.html#aa6ca8ed29e8e1f81ab8ce82e2b9ed1fa',1,'dpp::select_option::select_option()']]],
   ['self_5fstream_5',['self_stream',['../classdpp_1_1voicestate.html#a5b0fa82d1d55249aeb96fd7119aac5c2',1,'dpp::voicestate']]],
   ['self_5fvideo_6',['self_video',['../classdpp_1_1voicestate.html#a6d2114f152b6170f039c096f8a200219',1,'dpp::voicestate']]],
-  ['send_5faudio_5fopus_7',['send_audio_opus',['../classdpp_1_1discord__voice__client.html#a96b9a29017f92098edaac0bada6988e4',1,'dpp::discord_voice_client']]],
+  ['send_5faudio_5fopus_7',['send_audio_opus',['../classdpp_1_1discord__voice__client.html#a96b9a29017f92098edaac0bada6988e4',1,'dpp::discord_voice_client::send_audio_opus(uint8_t *opus_packet, const size_t length, uint64_t duration)'],['../classdpp_1_1discord__voice__client.html#ad5273e978592bafc14430c28eb9010bd',1,'dpp::discord_voice_client::send_audio_opus(uint8_t *opus_packet, const size_t length)']]],
   ['send_5faudio_5fraw_8',['send_audio_raw',['../classdpp_1_1discord__voice__client.html#aa2d30b9c9549201db0e54beeac89beb8',1,'dpp::discord_voice_client']]],
   ['set_9',['set',['../structdpp_1_1utility_1_1iconhash.html#ac675809d00cef53ef6887ef7ffcd095c',1,'dpp::utility::iconhash']]],
   ['set_5fallowed_5fmentions_10',['set_allowed_mentions',['../structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913',1,'dpp::message']]],

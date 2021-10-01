@@ -29,6 +29,7 @@ var classdpp_1_1discord__voice__client =
     [ "pause_audio", "classdpp_1_1discord__voice__client.html#ad21c8743aef9a874ef53edfebd8ee2fb", null ],
     [ "read_loop", "classdpp_1_1discord__voice__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
     [ "Run", "classdpp_1_1discord__voice__client.html#a102408db3accf1a8561bb3e2bccef345", null ],
+    [ "send_audio_opus", "classdpp_1_1discord__voice__client.html#ad5273e978592bafc14430c28eb9010bd", null ],
     [ "send_audio_opus", "classdpp_1_1discord__voice__client.html#a96b9a29017f92098edaac0bada6988e4", null ],
     [ "send_audio_raw", "classdpp_1_1discord__voice__client.html#aa2d30b9c9549201db0e54beeac89beb8", null ],
     [ "set_timescale", "classdpp_1_1discord__voice__client.html#a067cdfaf8a84c2bdf09febe974eb4730", null ],

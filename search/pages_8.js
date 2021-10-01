@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['streaming_20mp3_20files_0',['Streaming MP3 files',['../stream-mp3-discord-bot.html',1,'md_docpages_03_example_programs']]],
-  ['streaming_20ogg_20opus_20file_1',['Streaming Ogg Opus file',['../oggopus.html',1,'md_docpages_03_example_programs']]]
+  ['record_20yourself_20in_20a_20vc_0',['Record yourself in a VC',['../record-user.html',1,'md_docpages_03_example_programs']]]
 ];
