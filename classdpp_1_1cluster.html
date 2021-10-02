@@ -153,6 +153,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52046d1e6bbbad709abe05cedd376eb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a52046d1e6bbbad709abe05cedd376eb0">on_voice_state_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__state__update__t.html">voice_state_update_t</a> &amp;_event)&gt; _voice_state_update)</td></tr>
 <tr class="memdesc:a52046d1e6bbbad709abe05cedd376eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice state update event  <a href="classdpp_1_1cluster.html#a52046d1e6bbbad709abe05cedd376eb0">More...</a><br /></td></tr>
 <tr class="separator:a52046d1e6bbbad709abe05cedd376eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23fb971337e9ebf046d67e1c70d2ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ad23fb971337e9ebf046d67e1c70d2ee2">on_voice_client_disconnect</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__client__disconnect__t.html">voice_client_disconnect_t</a> &amp;_event)&gt; _voice_client_disconnect)</td></tr>
+<tr class="memdesc:ad23fb971337e9ebf046d67e1c70d2ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice client disconnect event  <a href="classdpp_1_1cluster.html#ad23fb971337e9ebf046d67e1c70d2ee2">More...</a><br /></td></tr>
+<tr class="separator:ad23fb971337e9ebf046d67e1c70d2ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a6c34e0d882135ea2f362e76f1d1a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af1a6c34e0d882135ea2f362e76f1d1a6">on_voice_client_speaking</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__client__speaking__t.html">voice_client_speaking_t</a> &amp;_event)&gt; _voice_client_speaking)</td></tr>
+<tr class="memdesc:af1a6c34e0d882135ea2f362e76f1d1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice client speaking event  <a href="classdpp_1_1cluster.html#af1a6c34e0d882135ea2f362e76f1d1a6">More...</a><br /></td></tr>
+<tr class="separator:af1a6c34e0d882135ea2f362e76f1d1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab42d2402bb68ba381a011f4ade31c909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab42d2402bb68ba381a011f4ade31c909">on_log</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1log__t.html">log_t</a> &amp;_event)&gt; _log)</td></tr>
 <tr class="memdesc:ab42d2402bb68ba381a011f4ade31c909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a log message is to be written to the log. You can attach any logging system here you wish, e.g. spdlog, or even just a simple use of std::cout or printf. If nothing attaches this log event, then the library will be silent.  <a href="classdpp_1_1cluster.html#ab42d2402bb68ba381a011f4ade31c909">More...</a><br /></td></tr>
 <tr class="separator:ab42d2402bb68ba381a011f4ade31c909"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,7 +328,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac9795329c70bca7027829a94a6d25c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a voice channel is connected and ready to send audio. Note that this is not directly attached to the READY event of the websocket, as there is further connection that needs to be done before audio is ready to send.  <a href="classdpp_1_1cluster.html#ac9795329c70bca7027829a94a6d25c47">More...</a><br /></td></tr>
 <tr class="separator:ac9795329c70bca7027829a94a6d25c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaac5fbafa18f2634e450e78979660365"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aaac5fbafa18f2634e450e78979660365">on_voice_receive</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__receive__t.html">voice_receive_t</a> &amp;_event)&gt; _voice_receive)</td></tr>
-<tr class="memdesc:aaac5fbafa18f2634e450e78979660365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when new audio data is received.  <a href="classdpp_1_1cluster.html#aaac5fbafa18f2634e450e78979660365">More...</a><br /></td></tr>
+<tr class="memdesc:aaac5fbafa18f2634e450e78979660365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when new audio data is received. Each separate user's audio from the voice channel will arrive tagged with their user id in the event, if a user can be attributed to the received audio.  <a href="classdpp_1_1cluster.html#aaac5fbafa18f2634e450e78979660365">More...</a><br /></td></tr>
 <tr class="separator:aaac5fbafa18f2634e450e78979660365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588cb9aff5b15b9f54cc2818a5482994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a588cb9aff5b15b9f54cc2818a5482994">on_voice_track_marker</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__track__marker__t.html">voice_track_marker_t</a> &amp;_event)&gt; _voice_track_marker)</td></tr>
 <tr class="memdesc:a588cb9aff5b15b9f54cc2818a5482994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when sending of audio passes over a track marker. Track markers are arbitrarily placed "bookmarks" in the audio buffer, placed by the bot developer. Each track marker can have a string value associated with it which is specified in <a class="el" href="classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84" title="Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer...">dpp::discord_voice_client::insert_marker</a> and returned to this event.  <a href="classdpp_1_1cluster.html#a588cb9aff5b15b9f54cc2818a5482994">More...</a><br /></td></tr>
@@ -7767,6 +7773,58 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad23fb971337e9ebf046d67e1c70d2ee2" name="ad23fb971337e9ebf046d67e1c70d2ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23fb971337e9ebf046d67e1c70d2ee2">&#9670;&nbsp;</a></span>on_voice_client_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_voice_client_disconnect </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1voice__client__disconnect__t.html">voice_client_disconnect_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_voice_client_disconnect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>on voice client disconnect event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_voice_state_update</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1a6c34e0d882135ea2f362e76f1d1a6" name="af1a6c34e0d882135ea2f362e76f1d1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a6c34e0d882135ea2f362e76f1d1a6">&#9670;&nbsp;</a></span>on_voice_client_speaking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_voice_client_speaking </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1voice__client__speaking__t.html">voice_client_speaking_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_voice_client_speaking</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>on voice client speaking event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_voice_state_update</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac9795329c70bca7027829a94a6d25c47" name="ac9795329c70bca7027829a94a6d25c47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9795329c70bca7027829a94a6d25c47">&#9670;&nbsp;</a></span>on_voice_ready()</h2>
 
@@ -7809,8 +7867,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called when new audio data is received. </p>
-<dl class="section note"><dt>Note</dt><dd>Receiveing audio for bots is not supported or documented, so this endpoint will be triggered at the correct times but the audio buffer will always be null and size zero.</dd></dl>
+<p>Called when new audio data is received. Each separate user's audio from the voice channel will arrive tagged with their user id in the event, if a user can be attributed to the received audio. </p>
+<dl class="section note"><dt>Note</dt><dd>Receiveing audio for bots is not officially supported by discord.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_voice_receive</td><td>User function to attach to event </td></tr>

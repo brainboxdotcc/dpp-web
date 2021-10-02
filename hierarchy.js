@@ -149,6 +149,8 @@ var hierarchy =
       [ "dpp::typing_start_t", "structdpp_1_1typing__start__t.html", null ],
       [ "dpp::user_update_t", "structdpp_1_1user__update__t.html", null ],
       [ "dpp::voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", null ],
+      [ "dpp::voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", null ],
+      [ "dpp::voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", null ],
       [ "dpp::voice_ready_t", "structdpp_1_1voice__ready__t.html", null ],
       [ "dpp::voice_receive_t", "structdpp_1_1voice__receive__t.html", null ],
       [ "dpp::voice_server_update_t", "structdpp_1_1voice__server__update__t.html", null ],

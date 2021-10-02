@@ -320,6 +320,8 @@
     <member refid="classdpp_1_1cluster_1a5c677c0d5c059e87cc01ce598d49487d" kind="function"><name>get_shard</name></member>
     <member refid="classdpp_1_1cluster_1af4d6195862e6d25c644902631a0b34d1" kind="function"><name>get_shards</name></member>
     <member refid="classdpp_1_1cluster_1a52046d1e6bbbad709abe05cedd376eb0" kind="function"><name>on_voice_state_update</name></member>
+    <member refid="classdpp_1_1cluster_1ad23fb971337e9ebf046d67e1c70d2ee2" kind="function"><name>on_voice_client_disconnect</name></member>
+    <member refid="classdpp_1_1cluster_1af1a6c34e0d882135ea2f362e76f1d1a6" kind="function"><name>on_voice_client_speaking</name></member>
     <member refid="classdpp_1_1cluster_1ab42d2402bb68ba381a011f4ade31c909" kind="function"><name>on_log</name></member>
     <member refid="classdpp_1_1cluster_1a543b76d7b49f9473b0476dbfee627271" kind="function"><name>on_guild_join_request_delete</name></member>
     <member refid="classdpp_1_1cluster_1ab17aa65a6835eca5a95036d6bf6f736c" kind="function"><name>on_interaction_create</name></member>
@@ -826,6 +828,8 @@
   <compound refid="classdpp_1_1dispatcher" kind="class"><name>dpp::dispatcher</name>
     <member refid="classdpp_1_1dispatcher_1aa3e934f108231fa426cbcd1956e72b1c" kind="variable"><name>log</name></member>
     <member refid="classdpp_1_1dispatcher_1a1980829c218c2b75b608769009bdfd6f" kind="variable"><name>voice_state_update</name></member>
+    <member refid="classdpp_1_1dispatcher_1acb4325dcc023f84a56515df1105cd0ee" kind="variable"><name>voice_client_speaking</name></member>
+    <member refid="classdpp_1_1dispatcher_1a324baf0ce362a3501af414836bd317af" kind="variable"><name>voice_client_disconnect</name></member>
     <member refid="classdpp_1_1dispatcher_1a40072713dd30b8e37200d3ec91a1d1b2" kind="variable"><name>interaction_create</name></member>
     <member refid="classdpp_1_1dispatcher_1a95261b35417e81c65e9046eca9f0d57c" kind="variable"><name>button_click</name></member>
     <member refid="classdpp_1_1dispatcher_1a071ef2f5586d7879dbb17d9b1757d38a" kind="variable"><name>select_click</name></member>
@@ -2134,6 +2138,21 @@
     <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1voice__buffer__send__t_1a75a9ca3edffe2bb3dae1e7a1ff0bd8e2" kind="function"><name>voice_buffer_send_t</name></member>
+  </compound>
+  <compound refid="structdpp_1_1voice__client__disconnect__t" kind="struct"><name>dpp::voice_client_disconnect_t</name>
+    <member refid="structdpp_1_1voice__client__disconnect__t_1a389b7a0870173e2b7fc9175db5cdd027" kind="variable"><name>voice_client</name></member>
+    <member refid="structdpp_1_1voice__client__disconnect__t_1a9f3bde52dfaae31347144c82a6aca617" kind="variable"><name>user_id</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
+    <member refid="structdpp_1_1voice__client__disconnect__t_1afa8b1b2cf9a31e4c34acf1883f57ac12" kind="function"><name>voice_client_disconnect_t</name></member>
+  </compound>
+  <compound refid="structdpp_1_1voice__client__speaking__t" kind="struct"><name>dpp::voice_client_speaking_t</name>
+    <member refid="structdpp_1_1voice__client__speaking__t_1a2d58a4064ff41f7c2b4c51e9558eb13b" kind="variable"><name>voice_client</name></member>
+    <member refid="structdpp_1_1voice__client__speaking__t_1a067067bfde4be0fe5f022a338fab657e" kind="variable"><name>user_id</name></member>
+    <member refid="structdpp_1_1voice__client__speaking__t_1a5835d5ddc60b1d06389d85c92e7d06be" kind="variable"><name>ssrc</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
+    <member refid="structdpp_1_1voice__client__speaking__t_1a5160a6d4005ffd9a97c52442f3e2aecf" kind="function"><name>voice_client_speaking_t</name></member>
   </compound>
   <compound refid="structdpp_1_1voice__out__packet" kind="struct"><name>dpp::voice_out_packet</name>
     <member refid="structdpp_1_1voice__out__packet_1ae13a5a23e3d3205c48c53975f6d6272f" kind="variable"><name>packet</name></member>
