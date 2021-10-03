@@ -161,9 +161,9 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="863" column="8" bodyfile="include/dpp/message.h" bodystart="863" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1a96f97a2ade23d3f58b221f98c60d9950" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
-        <definition>std::vector&lt;snowflake&gt; dpp::message::mentions</definition>
+      <memberdef kind="variable" id="structdpp_1_1message_1ae9fd7563e8fcc9f3379f8d642a48945a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;user, guild_member&gt; &gt; dpp::message::mentions</definition>
         <argsstring></argsstring>
         <name>mentions</name>
         <briefdescription>
@@ -183,25 +183,25 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>roles specifically mentioned in this message </para>
+<para>roles specifically mentioned in this message (only IDs currently) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="867" column="13" bodyfile="include/dpp/message.h" bodystart="867" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1ae161a71904462eab6bdd539f4ff32332" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
-        <definition>std::vector&lt;snowflake&gt; dpp::message::mention_channels</definition>
+      <memberdef kind="variable" id="structdpp_1_1message_1adcc2146a8b07c51a68ab314c548efa5b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &gt;</type>
+        <definition>std::vector&lt;channel&gt; dpp::message::mention_channels</definition>
         <argsstring></argsstring>
         <name>mention_channels</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Optional: channels specifically mentioned in this message </para>
+<para>Channels mentioned in the message. (Discord: not all types supported) Discord: Only textual channels that are visible to everyone in a lurkable guild will ever be included. Only crossposted messages (via Channel Following) currently include mention_channels at all. (includes ID, Guild ID, Type, Name) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="869" column="13" bodyfile="include/dpp/message.h" bodystart="869" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="870" column="13" bodyfile="include/dpp/message.h" bodystart="870" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1aa59a613a4ee0bab7f9a5ea18fe7edea7" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1attachment" kindref="compound">attachment</ref> &gt;</type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="871" column="13" bodyfile="include/dpp/message.h" bodystart="871" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="872" column="13" bodyfile="include/dpp/message.h" bodystart="872" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a9c0eb22ba371ead6d960bdf7c9838b6e" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1embed" kindref="compound">embed</ref> &gt;</type>
@@ -229,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="873" column="13" bodyfile="include/dpp/message.h" bodystart="873" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="874" column="13" bodyfile="include/dpp/message.h" bodystart="874" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1af6c6ea9f1319adde40d068a2e9b230e7" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1reaction" kindref="compound">reaction</ref> &gt;</type>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="875" column="13" bodyfile="include/dpp/message.h" bodystart="875" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="876" column="13" bodyfile="include/dpp/message.h" bodystart="876" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1afaaf4f44ce0631c49c15088b033d25e6" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -257,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="877" column="12" bodyfile="include/dpp/message.h" bodystart="877" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="878" column="12" bodyfile="include/dpp/message.h" bodystart="878" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a029932133e0a6aea2afdea5f2d98146e" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -271,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="879" column="5" bodyfile="include/dpp/message.h" bodystart="879" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="880" column="5" bodyfile="include/dpp/message.h" bodystart="880" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1ad1033bc27c5c1436c2e321d1be1d65ed" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -285,7 +285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="881" column="10" bodyfile="include/dpp/message.h" bodystart="881" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="882" column="10" bodyfile="include/dpp/message.h" bodystart="882" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a16fca6ff4595e0fcab2305205eb54626" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -299,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="883" column="8" bodyfile="include/dpp/message.h" bodystart="883" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="884" column="8" bodyfile="include/dpp/message.h" bodystart="884" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a8ab53932e4cf4fa00d021a5ca3f4b906" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="885" column="13" bodyfile="include/dpp/message.h" bodystart="885" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="886" column="13" bodyfile="include/dpp/message.h" bodystart="886" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a9f158cde13b3916c9823b18865b24f41" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -327,7 +327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="888" column="12" bodyfile="include/dpp/message.h" bodystart="888" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="889" column="12" bodyfile="include/dpp/message.h" bodystart="889" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a020ceaaad56ff4af60e2325a3cb9fbc7" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -341,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="891" column="12" bodyfile="include/dpp/message.h" bodystart="891" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="892" column="12" bodyfile="include/dpp/message.h" bodystart="892" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a2ed7eaf6f5ff69a94fcb4912c0c795c2" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -355,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="894" column="8" bodyfile="include/dpp/message.h" bodystart="894" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="895" column="8" bodyfile="include/dpp/message.h" bodystart="895" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a01de1e67af35ecb77549ccbe94ab7185" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
@@ -369,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="897" column="5" bodyfile="include/dpp/message.h" bodystart="897" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="898" column="5" bodyfile="include/dpp/message.h" bodystart="898" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1adc283f0458df6fb0fc966c9f5040c19e" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structdpp_1_1message_1_1message__ref" kindref="compound">dpp::message::message_ref</ref></type>
@@ -382,7 +382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="908" column="19"/>
+        <location file="include/dpp/message.h" line="909" column="19"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1ab61c894afe6b0f7655b3908217878e68" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structdpp_1_1message_1_1message__interaction__struct" kindref="compound">dpp::message::message_interaction_struct</ref></type>
@@ -395,7 +395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="919" column="13"/>
+        <location file="include/dpp/message.h" line="920" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a389f295110a630b2e3f076013b617111" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structdpp_1_1message_1_1allowed__ref" kindref="compound">dpp::message::allowed_ref</ref></type>
@@ -408,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="928" column="18"/>
+        <location file="include/dpp/message.h" line="929" column="18"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -424,7 +424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="933" column="1" bodyfile="src/dpp/message.cpp" bodystart="251" bodyend="269"/>
+        <location file="include/dpp/message.h" line="934" column="1" bodyfile="src/dpp/message.cpp" bodystart="251" bodyend="269"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a4b176cfde5ca415d09dedf3d6156ee97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -438,7 +438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="938" column="1"/>
+        <location file="include/dpp/message.h" line="939" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a21466e050ee9c0646392ccf5940bb62a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -491,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="947" column="1" bodyfile="src/dpp/message.cpp" bodystart="289" bodyend="293"/>
+        <location file="include/dpp/message.h" line="948" column="1" bodyfile="src/dpp/message.cpp" bodystart="289" bodyend="293"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a0e71afdc706c7ae83934ddfd8c2ffc38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -531,7 +531,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="955" column="1" bodyfile="src/dpp/message.cpp" bodystart="342" bodyend="345"/>
+        <location file="include/dpp/message.h" line="956" column="1" bodyfile="src/dpp/message.cpp" bodystart="342" bodyend="345"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a45a0883a10a19e933fbba682aba212f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -572,7 +572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="963" column="1" bodyfile="src/dpp/message.cpp" bodystart="337" bodyend="340"/>
+        <location file="include/dpp/message.h" line="964" column="1" bodyfile="src/dpp/message.cpp" bodystart="337" bodyend="340"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a8649d77de4e7b1c89b90016d3692f283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -641,7 +641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="974" column="9" bodyfile="src/dpp/message.cpp" bodystart="271" bodyend="277"/>
+        <location file="include/dpp/message.h" line="975" column="9" bodyfile="src/dpp/message.cpp" bodystart="271" bodyend="277"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a13389a16cb9bec891527d2405dfed913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -731,7 +731,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="987" column="9" bodyfile="src/dpp/message.cpp" bodystart="279" bodyend="287"/>
+        <location file="include/dpp/message.h" line="988" column="9" bodyfile="src/dpp/message.cpp" bodystart="279" bodyend="287"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a7e15337119679e582768d794b409cffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -773,7 +773,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="994" column="9" bodyfile="src/dpp/message.cpp" bodystart="776" bodyend="902"/>
+        <location file="include/dpp/message.h" line="995" column="9" bodyfile="src/dpp/message.cpp" bodystart="776" bodyend="906"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a53e788c52de75b4e067f658e8657adc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -816,7 +816,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1002" column="13" bodyfile="src/dpp/message.cpp" bodystart="539" bodyend="738"/>
+        <location file="include/dpp/message.h" line="1003" column="13" bodyfile="src/dpp/message.cpp" bodystart="539" bodyend="738"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1acd532877b68dcd3f1713fd6df9045ed2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -833,7 +833,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1009" column="6" bodyfile="src/dpp/message.cpp" bodystart="740" bodyend="742"/>
+        <location file="include/dpp/message.h" line="1010" column="6" bodyfile="src/dpp/message.cpp" bodystart="740" bodyend="742"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a03ce860de6231985a823f8ce2dd2dd8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -850,7 +850,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1016" column="6" bodyfile="src/dpp/message.cpp" bodystart="744" bodyend="747"/>
+        <location file="include/dpp/message.h" line="1017" column="6" bodyfile="src/dpp/message.cpp" bodystart="744" bodyend="747"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1ae6f7c8c7061f1b53da8c43e59d79d040" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -867,7 +867,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1023" column="6" bodyfile="src/dpp/message.cpp" bodystart="749" bodyend="751"/>
+        <location file="include/dpp/message.h" line="1024" column="6" bodyfile="src/dpp/message.cpp" bodystart="749" bodyend="751"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a0f22f044046ebc8bdc7d35e950baca25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -884,7 +884,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1030" column="6" bodyfile="src/dpp/message.cpp" bodystart="753" bodyend="755"/>
+        <location file="include/dpp/message.h" line="1031" column="6" bodyfile="src/dpp/message.cpp" bodystart="753" bodyend="755"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1ad164b78c5ee2dc8a8237d1ec7a0d863f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -901,7 +901,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1037" column="6" bodyfile="src/dpp/message.cpp" bodystart="757" bodyend="759"/>
+        <location file="include/dpp/message.h" line="1038" column="6" bodyfile="src/dpp/message.cpp" bodystart="757" bodyend="759"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a9b05e57f76d9c2e656d86f45bf8a5230" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -918,7 +918,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1044" column="6" bodyfile="src/dpp/message.cpp" bodystart="761" bodyend="763"/>
+        <location file="include/dpp/message.h" line="1045" column="6" bodyfile="src/dpp/message.cpp" bodystart="761" bodyend="763"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a6d8e17c0e9066eb044b241355d0a3efb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -935,7 +935,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1051" column="6" bodyfile="src/dpp/message.cpp" bodystart="765" bodyend="767"/>
+        <location file="include/dpp/message.h" line="1052" column="6" bodyfile="src/dpp/message.cpp" bodystart="765" bodyend="767"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a25d4b0fbfcc698a74fa4f2b71796e874" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -952,7 +952,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1058" column="6" bodyfile="src/dpp/message.cpp" bodystart="769" bodyend="771"/>
+        <location file="include/dpp/message.h" line="1059" column="6" bodyfile="src/dpp/message.cpp" bodystart="769" bodyend="771"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a85dbf0b4a0b294eac34ec49feb1d4540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -982,7 +982,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1066" column="9" bodyfile="src/dpp/message.cpp" bodystart="295" bodyend="299"/>
+        <location file="include/dpp/message.h" line="1067" column="9" bodyfile="src/dpp/message.cpp" bodystart="295" bodyend="299"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a9ff92caceb655fa1f89710445a24c107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -1012,7 +1012,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1074" column="9" bodyfile="src/dpp/message.cpp" bodystart="301" bodyend="305"/>
+        <location file="include/dpp/message.h" line="1075" column="9" bodyfile="src/dpp/message.cpp" bodystart="301" bodyend="305"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a3895655222ad8f3b9d9b96c47afb2454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -1042,7 +1042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1082" column="9" bodyfile="src/dpp/message.cpp" bodystart="307" bodyend="311"/>
+        <location file="include/dpp/message.h" line="1083" column="9" bodyfile="src/dpp/message.cpp" bodystart="307" bodyend="311"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1ada2f9404e7dbb12b3de0a382c3733587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -1072,7 +1072,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1090" column="9" bodyfile="src/dpp/message.cpp" bodystart="313" bodyend="317"/>
+        <location file="include/dpp/message.h" line="1091" column="9" bodyfile="src/dpp/message.cpp" bodystart="313" bodyend="317"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a95675acbf18ed30c5141d3180842611f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -1102,7 +1102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1098" column="9" bodyfile="src/dpp/message.cpp" bodystart="319" bodyend="323"/>
+        <location file="include/dpp/message.h" line="1099" column="9" bodyfile="src/dpp/message.cpp" bodystart="319" bodyend="323"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a7063a512a6e7f078e2a81bad077dfcde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -1132,7 +1132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1106" column="9" bodyfile="src/dpp/message.cpp" bodystart="325" bodyend="329"/>
+        <location file="include/dpp/message.h" line="1107" column="9" bodyfile="src/dpp/message.cpp" bodystart="325" bodyend="329"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a18a1ebb4b981a0ef46f78f147aa12b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
@@ -1162,7 +1162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1114" column="9" bodyfile="src/dpp/message.cpp" bodystart="331" bodyend="335"/>
+        <location file="include/dpp/message.h" line="1115" column="9" bodyfile="src/dpp/message.cpp" bodystart="331" bodyend="335"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1355,7 +1355,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/message.h" line="841" column="1" bodyfile="include/dpp/message.h" bodystart="841" bodyend="1115"/>
+    <location file="include/dpp/message.h" line="841" column="1" bodyfile="include/dpp/message.h" bodystart="841" bodyend="1116"/>
     <listofallmembers>
       <member refid="structdpp_1_1message_1a85dbf0b4a0b294eac34ec49feb1d4540" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_component</name></member>
       <member refid="structdpp_1_1message_1a9ff92caceb655fa1f89710445a24c107" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_embed</name></member>
@@ -1383,10 +1383,10 @@
       <member refid="structdpp_1_1message_1a0f22f044046ebc8bdc7d35e950baca25" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>is_source_message_deleted</name></member>
       <member refid="structdpp_1_1message_1ad164b78c5ee2dc8a8237d1ec7a0d863f" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>is_urgent</name></member>
       <member refid="structdpp_1_1message_1a550f3dc37e4b55cccc2e78d90fc047fb" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>member</name></member>
-      <member refid="structdpp_1_1message_1ae161a71904462eab6bdd539f4ff32332" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mention_channels</name></member>
+      <member refid="structdpp_1_1message_1adcc2146a8b07c51a68ab314c548efa5b" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mention_channels</name></member>
       <member refid="structdpp_1_1message_1a499cacfe6a270dca773fc7f91718ac70" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mention_everyone</name></member>
       <member refid="structdpp_1_1message_1a1f9fbfe4171cdc02306dc505583b7ed9" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mention_roles</name></member>
-      <member refid="structdpp_1_1message_1a96f97a2ade23d3f58b221f98c60d9950" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mentions</name></member>
+      <member refid="structdpp_1_1message_1ae9fd7563e8fcc9f3379f8d642a48945a" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mentions</name></member>
       <member refid="structdpp_1_1message_1a717067505cfc5f5dcf05459c216c9756" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1a21466e050ee9c0646392ccf5940bb62a" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1a0e71afdc706c7ae83934ddfd8c2ffc38" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>

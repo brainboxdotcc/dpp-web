@@ -510,9 +510,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99e8227f11ef33cd2d9cc3abef46adfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a99e8227f11ef33cd2d9cc3abef46adfd">guild_get_member</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a99e8227f11ef33cd2d9cc3abef46adfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a guild member.  <a href="classdpp_1_1cluster.html#a99e8227f11ef33cd2d9cc3abef46adfd">More...</a><br /></td></tr>
 <tr class="separator:a99e8227f11ef33cd2d9cc3abef46adfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0598354c7302d1243bea4148365927d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab0598354c7302d1243bea4148365927d">guild_get_members</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
-<tr class="memdesc:ab0598354c7302d1243bea4148365927d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all guild members.  <a href="classdpp_1_1cluster.html#ab0598354c7302d1243bea4148365927d">More...</a><br /></td></tr>
-<tr class="separator:ab0598354c7302d1243bea4148365927d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52cc92ce052d063854e0372539e4d9ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a52cc92ce052d063854e0372539e4d9ee">guild_search_members</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const std::string &amp;query, uint16_t limit, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:a52cc92ce052d063854e0372539e4d9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for guild members based on whether their username or nickname starts with the given string.  <a href="classdpp_1_1cluster.html#a52cc92ce052d063854e0372539e4d9ee">More...</a><br /></td></tr>
+<tr class="separator:a52cc92ce052d063854e0372539e4d9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b24baba4de9d38f7d9a7cea2f71a545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a6b24baba4de9d38f7d9a7cea2f71a545">guild_get_members</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, uint16_t limit, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> after, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:a6b24baba4de9d38f7d9a7cea2f71a545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all guild members.  <a href="classdpp_1_1cluster.html#a6b24baba4de9d38f7d9a7cea2f71a545">More...</a><br /></td></tr>
+<tr class="separator:a6b24baba4de9d38f7d9a7cea2f71a545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2937f10828bc3fbdeff87fc6b4463cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa2937f10828bc3fbdeff87fc6b4463cc">guild_add_member</a> (const <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm, const std::string &amp;access_token, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:aa2937f10828bc3fbdeff87fc6b4463cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add guild member. Needs a specific oauth2 scope, from which you get the access_token.  <a href="classdpp_1_1cluster.html#aa2937f10828bc3fbdeff87fc6b4463cc">More...</a><br /></td></tr>
 <tr class="separator:aa2937f10828bc3fbdeff87fc6b4463cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4120,8 +4123,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab0598354c7302d1243bea4148365927d" name="ab0598354c7302d1243bea4148365927d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0598354c7302d1243bea4148365927d">&#9670;&nbsp;</a></span>guild_get_members()</h2>
+<a id="a6b24baba4de9d38f7d9a7cea2f71a545" name="a6b24baba4de9d38f7d9a7cea2f71a545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b24baba4de9d38f7d9a7cea2f71a545">&#9670;&nbsp;</a></span>guild_get_members()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4131,6 +4134,18 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
           <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>after</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4150,6 +4165,8 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get all members for </td></tr>
+    <tr><td class="paramname">limit</td><td>max number of members to return (1-1000) </td></tr>
+    <tr><td class="paramname">after</td><td>the highest user id in the previous page </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
   </table>
   </dd>
@@ -4584,6 +4601,56 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">guild_id</td><td>Guild ID to modify integration for </td></tr>
     <tr><td class="paramname">i</td><td>Integration to modify </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a52cc92ce052d063854e0372539e4d9ee" name="a52cc92ce052d063854e0372539e4d9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52cc92ce052d063854e0372539e4d9ee">&#9670;&nbsp;</a></span>guild_search_members()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_search_members </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search for guild members based on whether their username or nickname starts with the given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild ID to search in </td></tr>
+    <tr><td class="paramname">query</td><td>Query string to match username(s) and nickname(s) against </td></tr>
+    <tr><td class="paramname">limit</td><td>max number of members to return (1-1000) </td></tr>
   </table>
   </dd>
 </dl>

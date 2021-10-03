@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"coding-standards.html#autotoc_md54":[4,2,10],
+"coding-standards.html#autotoc_md55":[4,2,11],
 "coding-standards.html#autotoc_md56":[4,2,12],
 "coding-standards.html#autotoc_md57":[4,2,13],
 "coding-standards.html#autotoc_md58":[4,2,14],
@@ -40,15 +42,15 @@ var NAVTREEINDEX9 =
 "frequently-asked-questions.html#autotoc_md94":[0,7,0,24],
 "frequently-asked-questions.html#autotoc_md95":[0,7,0,25],
 "frequently-asked-questions.html#autotoc_md96":[0,7,0,26],
-"functions.html":[7,3,0,0],
 "functions.html":[7,3,0],
+"functions.html":[7,3,0,0],
 "functions_b.html":[7,3,0,1],
 "functions_c.html":[7,3,0,2],
 "functions_d.html":[7,3,0,3],
 "functions_e.html":[7,3,0,4],
 "functions_f.html":[7,3,0,5],
-"functions_func.html":[7,3,1,0],
 "functions_func.html":[7,3,1],
+"functions_func.html":[7,3,1,0],
 "functions_func_b.html":[7,3,1,1],
 "functions_func_c.html":[7,3,1,2],
 "functions_func_d.html":[7,3,1,3],
@@ -88,8 +90,8 @@ var NAVTREEINDEX9 =
 "functions_type.html":[7,3,3],
 "functions_u.html":[7,3,0,20],
 "functions_v.html":[7,3,0,21],
-"functions_vars.html":[7,3,2],
 "functions_vars.html":[7,3,2,0],
+"functions_vars.html":[7,3,2],
 "functions_vars_b.html":[7,3,2,1],
 "functions_vars_c.html":[7,3,2,2],
 "functions_vars_d.html":[7,3,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0":[6,0,1,215],
 "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a":[6,0,1,215,0],
 "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354":[6,0,1,215,1],
-"namespacedpp.html#a219aedbe5bf37835c4a65115fccba278":[6,0,1,155],
-"namespacedpp.html#a2630b73cc2ee72fec720c5324655f400":[6,0,1,267],
-"namespacedpp.html#a27a655378b0676c4444b32079c19d667":[6,0,1,216]
+"namespacedpp.html#a219aedbe5bf37835c4a65115fccba278":[6,0,1,155]
 };
