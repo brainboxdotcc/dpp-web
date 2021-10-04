@@ -1,7 +1,7 @@
 var classdpp_1_1http__request =
 [
     [ "http_request", "classdpp_1_1http__request.html#a46242b648249b5e8a67e2abdb306c3b3", null ],
-    [ "http_request", "classdpp_1_1http__request.html#a3d15668b6d3d2c8bbb02f7fe8a8bb5eb", null ],
+    [ "http_request", "classdpp_1_1http__request.html#a7a2134b1a466d6f523a37c5631376073", null ],
     [ "~http_request", "classdpp_1_1http__request.html#a94d82f10c9922b400b1dd5b8459a6691", null ],
     [ "complete", "classdpp_1_1http__request.html#a6f350d4340fe77e224783091607f63eb", null ],
     [ "is_completed", "classdpp_1_1http__request.html#ab5f1688d8b657f6d0f0a4dd8df7b8731", null ],

@@ -200,6 +200,7 @@ var classdpp_1_1cluster =
     [ "on_webhooks_update", "classdpp_1_1cluster.html#aca67bc20cb570e7563d157913066ad0b", null ],
     [ "pins_get", "classdpp_1_1cluster.html#a566bb31ea08798afe2fca4888e3c5e70", null ],
     [ "post_rest", "classdpp_1_1cluster.html#a62b83ee3be02df68eb5e697ddc5efc0a", null ],
+    [ "request", "classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52", null ],
     [ "role_create", "classdpp_1_1cluster.html#ab912eb28e9bb4df46954c7a9b93b283d", null ],
     [ "role_delete", "classdpp_1_1cluster.html#a45414d0d189edd147c3d76b4480ec0b8", null ],
     [ "role_edit", "classdpp_1_1cluster.html#a24cc5286955e6641d574d232d8b47f55", null ],

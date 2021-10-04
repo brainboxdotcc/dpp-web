@@ -265,10 +265,10 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="165" column="1" bodyfile="src/dpp/queues.cpp" bodystart="55" bodyend="57"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1http__request_1a3d15668b6d3d2c8bbb02f7fe8a8bb5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1http__request_1a7a2134b1a466d6f523a37c5631376073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::http_request::http_request</definition>
-        <argsstring>(const std::string &amp;_url, http_completion_event completion, http_method method=m_get, const std::string &amp;_postdata=&quot;&quot;, const std::string &amp;_mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;_headers)</argsstring>
+        <argsstring>(const std::string &amp;_url, http_completion_event completion, http_method method=m_get, const std::string &amp;_postdata=&quot;&quot;, const std::string &amp;_mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;_headers={})</argsstring>
         <name>http_request</name>
         <param>
           <type>const std::string &amp;</type>
@@ -296,6 +296,7 @@
         <param>
           <type>const std::multimap&lt; std::string, std::string &gt; &amp;</type>
           <declname>_headers</declname>
+          <defval>{}</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -318,6 +319,14 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP method to use from <ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">dpp::http_method</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
 <parametername>_postdata</parametername>
 </parameternamelist>
 <parameterdescription>
@@ -326,10 +335,18 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>method</parametername>
+<parametername>_mimetype</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The HTTP method to use from <ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">dpp::http_method</ref> </para>
+<para>POST data mime type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP headers to send </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -337,7 +354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="173" column="1"/>
+        <location file="include/dpp/queues.h" line="175" column="1" bodyfile="src/dpp/queues.cpp" bodystart="59" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__request_1a94d82f10c9922b400b1dd5b8459a6691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -351,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="176" column="1"/>
+        <location file="include/dpp/queues.h" line="178" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__request_1a6f350d4340fe77e224783091607f63eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -378,7 +395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="181" column="6" bodyfile="src/dpp/queues.cpp" bodystart="65" bodyend="69"/>
+        <location file="include/dpp/queues.h" line="183" column="6" bodyfile="src/dpp/queues.cpp" bodystart="66" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__request_1a49af6bb0b85e162b79162b701545cbaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref></type>
@@ -386,7 +403,7 @@
         <argsstring>(class cluster *owner)</argsstring>
         <name>Run</name>
         <param>
-          <type>class cluster *</type>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
           <declname>owner</declname>
         </param>
         <briefdescription>
@@ -405,7 +422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="186" column="27" bodyfile="src/dpp/queues.cpp" bodystart="111" bodyend="238"/>
+        <location file="include/dpp/queues.h" line="188" column="27" bodyfile="src/dpp/queues.cpp" bodystart="110" bodyend="238"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1http__request_1ab5f1688d8b657f6d0f0a4dd8df7b8731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -419,7 +436,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="189" column="6" bodyfile="src/dpp/queues.cpp" bodystart="105" bodyend="108"/>
+        <location file="include/dpp/queues.h" line="191" column="6" bodyfile="src/dpp/queues.cpp" bodystart="104" bodyend="107"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -462,7 +479,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/queues.h" line="131" column="1" bodyfile="include/dpp/queues.h" bodystart="131" bodyend="190"/>
+    <location file="include/dpp/queues.h" line="131" column="1" bodyfile="include/dpp/queues.h" bodystart="131" bodyend="192"/>
     <listofallmembers>
       <member refid="classdpp_1_1http__request_1a6f350d4340fe77e224783091607f63eb" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>complete</name></member>
       <member refid="classdpp_1_1http__request_1a12922296092235b17ac7408824b87d8b" prot="private" virt="non-virtual"><scope>dpp::http_request</scope><name>complete_handler</name></member>
@@ -471,7 +488,7 @@
       <member refid="classdpp_1_1http__request_1adcff8fd11769c1b04854cc56137c356b" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>file_content</name></member>
       <member refid="classdpp_1_1http__request_1a3e56eb82e308ec41c0b15f70501a3d93" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>file_name</name></member>
       <member refid="classdpp_1_1http__request_1a46242b648249b5e8a67e2abdb306c3b3" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>http_request</name></member>
-      <member refid="classdpp_1_1http__request_1a3d15668b6d3d2c8bbb02f7fe8a8bb5eb" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>http_request</name></member>
+      <member refid="classdpp_1_1http__request_1a7a2134b1a466d6f523a37c5631376073" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>http_request</name></member>
       <member refid="classdpp_1_1http__request_1ab5f1688d8b657f6d0f0a4dd8df7b8731" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>is_completed</name></member>
       <member refid="classdpp_1_1http__request_1a6717d11da20292e2dc77826def3aaef3" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>method</name></member>
       <member refid="classdpp_1_1http__request_1aedac6464c95174507a322861191ccc02" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>mimetype</name></member>

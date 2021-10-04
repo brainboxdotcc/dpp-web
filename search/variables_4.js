@@ -10,14 +10,15 @@ var searchData=
   ['emojis_7',['emojis',['../structdpp_1_1guild__emojis__update__t.html#a51c22afd4b65afc11ef1ea6877b39a19',1,'dpp::guild_emojis_update_t::emojis()'],['../classdpp_1_1guild.html#a9169668a25a134dc50bbdb6dd9ddd203',1,'dpp::guild::emojis()']]],
   ['enabled_8',['enabled',['../classdpp_1_1guild__widget.html#aedf956fc1f600b82020271b411eb86c8',1,'dpp::guild_widget']]],
   ['end_9',['end',['../classdpp_1_1activity.html#a54cf821d1e457ca1834e53a7bf8de774',1,'dpp::activity']]],
-  ['endpoint_10',['endpoint',['../structdpp_1_1voice__server__update__t.html#aafc5056f206e0783df145d3aef4ef01b',1,'dpp::voice_server_update_t::endpoint()'],['../classdpp_1_1http__request.html#a31cf6b360a893292435ea56b8d6a94c6',1,'dpp::http_request::endpoint()']]],
+  ['endpoint_10',['endpoint',['../classdpp_1_1http__request.html#a31cf6b360a893292435ea56b8d6a94c6',1,'dpp::http_request::endpoint()'],['../structdpp_1_1voice__server__update__t.html#aafc5056f206e0783df145d3aef4ef01b',1,'dpp::voice_server_update_t::endpoint()']]],
   ['entries_11',['entries',['../classdpp_1_1auditlog.html#a36c8f45302e0d22cda77279ab2708daa',1,'dpp::auditlog']]],
   ['ephemeral_12',['ephemeral',['../structdpp_1_1attachment.html#a453d43c1a5bb073038cc2a0890cfdbec',1,'dpp::attachment']]],
   ['error_13',['error',['../structdpp_1_1http__request__completion__t.html#a6e8e54c80c5b439ddfd0ddb6f9e4039b',1,'dpp::http_request_completion_t']]],
   ['error_5fstatus_14',['ERROR_STATUS',['../namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87',1,'dpp']]],
-  ['event_15',['event',['../structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b',1,'dpp::audit_entry']]],
-  ['eventmap_16',['eventmap',['../namespacedpp.html#ac40602ddc592a7cfb7709375cfd8528e',1,'dpp']]],
-  ['expire_5fgrace_5fperiod_17',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
-  ['explicit_5fcontent_5ffilter_18',['explicit_content_filter',['../classdpp_1_1guild.html#aaf0bdf8f43b4feafb756431764a8d9aa',1,'dpp::guild']]],
-  ['external_5fip_19',['external_ip',['../namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c',1,'dpp']]]
+  ['errors_15',['errors',['../structdpp_1_1error__info.html#ac84fd7b6e0344c9b282b13a43dfc40a0',1,'dpp::error_info']]],
+  ['event_16',['event',['../structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b',1,'dpp::audit_entry']]],
+  ['eventmap_17',['eventmap',['../namespacedpp.html#ac40602ddc592a7cfb7709375cfd8528e',1,'dpp']]],
+  ['expire_5fgrace_5fperiod_18',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
+  ['explicit_5fcontent_5ffilter_19',['explicit_content_filter',['../classdpp_1_1guild.html#aaf0bdf8f43b4feafb756431764a8d9aa',1,'dpp::guild']]],
+  ['external_5fip_20',['external_ip',['../namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c',1,'dpp']]]
 ];

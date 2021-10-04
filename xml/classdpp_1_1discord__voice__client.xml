@@ -385,7 +385,7 @@
       </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1discord__voice__client_1a23cac9565c94195b8050df206d29d6b2" prot="public" static="no" mutable="no">
-        <type>class dpp::cluster *</type>
+        <type>class <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> *</type>
         <definition>class dpp::cluster* dpp::discord_voice_client::creator</definition>
         <argsstring></argsstring>
         <name>creator</name>
@@ -1063,7 +1063,7 @@
         <argsstring>(dpp::cluster *_cluster, snowflake _channel_id, snowflake _server_id, const std::string &amp;_token, const std::string &amp;_session_id, const std::string &amp;_host)</argsstring>
         <name>discord_voice_client</name>
         <param>
-          <type>dpp::cluster *</type>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> *</type>
           <declname>_cluster</declname>
         </param>
         <param>
@@ -2065,8 +2065,48 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
       <node id="6">
         <label>bool</label>
       </node>
+      <node id="24">
+        <label>cache_policy_setting_t</label>
+      </node>
+      <node id="16">
+        <label>double</label>
+      </node>
+      <node id="23">
+        <label>dpp::cache_policy_t</label>
+        <link refid="structdpp_1_1cache__policy__t"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>role_policy</edgelabel>
+          <edgelabel>user_policy</edgelabel>
+        </childnode>
+      </node>
       <node id="14">
-        <label>cluster *</label>
+        <label>dpp::cluster</label>
+        <link refid="classdpp_1_1cluster"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>last_identify</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>cluster_id</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>maxclusters</edgelabel>
+          <edgelabel>numshards</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>rest_ping</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>dispatch</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>me</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>cache_policy</edgelabel>
+        </childnode>
       </node>
       <node id="1">
         <label>dpp::discord_voice_client</label>
@@ -2087,7 +2127,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         <childnode refid="11" relation="usage">
           <edgelabel>last_heartbeat</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>thread_id</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
@@ -2097,6 +2137,30 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         <childnode refid="12" relation="usage">
           <edgelabel>channel_id</edgelabel>
           <edgelabel>server_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>dpp::dispatcher</label>
+        <link refid="classdpp_1_1dispatcher"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>application_command_create</edgelabel>
+          <edgelabel>application_command_delete</edgelabel>
+          <edgelabel>application_command_update</edgelabel>
+          <edgelabel>button_click</edgelabel>
+          <edgelabel>channel_create</edgelabel>
+          <edgelabel>channel_delete</edgelabel>
+          <edgelabel>channel_pins_update</edgelabel>
+          <edgelabel>channel_update</edgelabel>
+          <edgelabel>guild_ban_add</edgelabel>
+          <edgelabel>guild_ban_remove</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>id</edgelabel>
         </childnode>
       </node>
       <node id="8">
@@ -2142,6 +2206,35 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
           <edgelabel>custom_writeable_ready</edgelabel>
         </childnode>
       </node>
+      <node id="18">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
       <node id="2">
         <label>dpp::websocket_client</label>
         <link refid="classdpp_1_1websocket__client"/>
@@ -2159,17 +2252,23 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="16">
+      <node id="25">
         <label>native_handle_type</label>
       </node>
       <node id="11">
         <label>time_t</label>
+      </node>
+      <node id="20">
+        <label>uint16_t</label>
       </node>
       <node id="15">
         <label>uint32_t</label>
       </node>
       <node id="12">
         <label>uint64_t</label>
+      </node>
+      <node id="22">
+        <label>uint8_t</label>
       </node>
     </collaborationgraph>
     <location file="include/dpp/discordvoiceclient.h" line="88" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="89" bodyend="642"/>

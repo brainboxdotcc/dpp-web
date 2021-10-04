@@ -35,14 +35,14 @@
 </sect2>
 <sect2 id="firstbot_1autotoc_md34">
 <title>2. Create an instance of dpp::cluster</title>
-<para>To make use of the library you must create a dpp::cluster object. This object is the main object in your program like the <computeroutput>Discord.Client</computeroutput> object in Discord.js.</para>
+<para>To make use of the library you must create a <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> object. This object is the main object in your program like the <computeroutput>Discord.Client</computeroutput> object in Discord.js.</para>
 <para>You can instantiate this class as shown below. Remember to put your bot token in the code where it says <computeroutput>&quot;token&quot;</computeroutput>!</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dpp::cluster<sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
@@ -50,13 +50,13 @@
 </sect2>
 <sect2 id="firstbot_1autotoc_md35">
 <title>3. Attach to an event</title>
-<para>To have a bot that does something, you should attach to some events. Let&apos;s start by attaching to the <computeroutput>on_ready</computeroutput> event (dpp::cluster::on_ready) which will notify your program when the bot is connected:</para>
+<para>To have a bot that does something, you should attach to some events. Let&apos;s start by attaching to the <computeroutput>on_ready</computeroutput> event (<ref refid="classdpp_1_1cluster_1ad8170aef3ae244df66464b192e3e30e7" kindref="member">dpp::cluster::on_ready</ref>) which will notify your program when the bot is connected:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dpp::cluster<sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
@@ -67,13 +67,13 @@
 </sect2>
 <sect2 id="firstbot_1autotoc_md36">
 <title>4. Attach to another event to reveice messages</title>
-<para>If you want to receive messages, you should also attach your program to the <computeroutput>on_message_create</computeroutput> event (dpp::cluster::on_message_create) which is the same as the Discord.js <computeroutput>message</computeroutput> event. You add this to your program after the <computeroutput>on_ready</computeroutput> event:</para>
+<para>If you want to receive messages, you should also attach your program to the <computeroutput>on_message_create</computeroutput> event (<ref refid="classdpp_1_1cluster_1a29140a7c0e1250fe2016dbe4ced56f95" kindref="member">dpp::cluster::on_message_create</ref>) which is the same as the Discord.js <computeroutput>message</computeroutput> event. You add this to your program after the <computeroutput>on_ready</computeroutput> event:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dpp::cluster<sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
@@ -87,13 +87,13 @@
 </sect2>
 <sect2 id="firstbot_1autotoc_md37">
 <title>5 . Add some content to the events</title>
-<para>Attaching to an event is a good start, but to make a bot you should actually put some program code into the events. Lets add some simple things into the events. We will add some code to the <computeroutput>on_ready</computeroutput> event to output the bot&apos;s nickname (dpp::cluster::me) and some code into the <computeroutput>on_message_create</computeroutput> to look for messages that are the text <computeroutput>!ping</computeroutput> and reply with <computeroutput>!pong</computeroutput>:</para>
+<para>Attaching to an event is a good start, but to make a bot you should actually put some program code into the events. Lets add some simple things into the events. We will add some code to the <computeroutput>on_ready</computeroutput> event to output the bot&apos;s nickname (<ref refid="classdpp_1_1cluster_1ad31317a40181f6864646c8758871b495" kindref="member">dpp::cluster::me</ref>) and some code into the <computeroutput>on_message_create</computeroutput> to look for messages that are the text <computeroutput>!ping</computeroutput> and reply with <computeroutput>!pong</computeroutput>:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dpp::cluster<sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Logged<sp/>in<sp/>as<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bot.me.username<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -115,7 +115,7 @@
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 <para>This code is simply comparing the message content <computeroutput>event.msg-&gt;content</computeroutput> (dpp::message_create_t::content) against the value in a constant string value <computeroutput>&quot;!ping&quot;</computeroutput>. If they match, then the <computeroutput>message_create</computeroutput> function is called.</para>
-<para>The <computeroutput>message_create</computeroutput> function (dpp::cluster::message_create) sends a message. There are many ways to call this function to send embed messages, upload files, and more, but for this simple demonstration we will just send some message text. The <computeroutput>message_create</computeroutput> function accepts a <computeroutput><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref></computeroutput> object, which we create using two parameters:</para>
+<para>The <computeroutput>message_create</computeroutput> function (<ref refid="classdpp_1_1cluster_1a080a8cefc6ceb0b882fdb6fe70c078a6" kindref="member">dpp::cluster::message_create</ref>) sends a message. There are many ways to call this function to send embed messages, upload files, and more, but for this simple demonstration we will just send some message text. The <computeroutput>message_create</computeroutput> function accepts a <computeroutput><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref></computeroutput> object, which we create using two parameters:</para>
 <para><itemizedlist>
 <listitem><para>The channel ID to send to, which we get from <computeroutput>event.msg-&gt;channel_id</computeroutput> (dpp::message_create_t::channel_id)</para>
 </listitem><listitem><para>The message content, which for this demonstration we just make the static text <computeroutput>&quot;Pong!&quot;</computeroutput>.</para>
@@ -131,7 +131,7 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dpp::cluster<sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Logged<sp/>in<sp/>as<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bot.me.username<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
