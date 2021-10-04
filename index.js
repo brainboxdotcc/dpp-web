@@ -26,7 +26,7 @@ var index =
         [ "Does this library support sharding?", "frequently-asked-questions.html#autotoc_md84", null ],
         [ "How do I contribute to the documentation and website?", "frequently-asked-questions.html#autotoc_md85", null ],
         [ "What version of the Discord API does this library support?", "frequently-asked-questions.html#autotoc_md86", null ],
-        [ "Does this Discord library support the v9 Threads feature?", "frequently-asked-questions.html#autotoc_md87", null ],
+        [ "Does this Discord library support the v9 threads feature?", "frequently-asked-questions.html#autotoc_md87", null ],
         [ "Does D++ require C++20 support?", "frequently-asked-questions.html#autotoc_md88", null ],
         [ "When I start my bot i get an error: \"error while loading shared libraries: libdpp.so: cannot open shared object file: No such file or directory\"", "frequently-asked-questions.html#autotoc_md89", null ],
         [ "When compiling with voice support, i get an error: \"No rule to make target 'sodium_LIBRARY_DEBUG-NOTFOUND', needed by 'libdpp.so'. Stop.\"", "frequently-asked-questions.html#autotoc_md90", null ],
@@ -34,7 +34,7 @@ var index =
         [ "Does this library build/run on Raspberry Pi?", "frequently-asked-questions.html#autotoc_md92", null ],
         [ "There are so many versions! Which deb file do i need for my Raspberry Pi?", "frequently-asked-questions.html#autotoc_md93", null ],
         [ "Are other ARM devices supported?", "frequently-asked-questions.html#autotoc_md94", null ],
-        [ "Can i run a D++ bot in repl.it?", "frequently-asked-questions.html#autotoc_md95", null ],
+        [ "Can I run a D++ bot in repl.it?", "frequently-asked-questions.html#autotoc_md95", null ],
         [ "Why do the \"get\" functions like \"messages_get\" return void rather than what I'm after?", "frequently-asked-questions.html#autotoc_md96", null ]
       ] ]
     ] ]
