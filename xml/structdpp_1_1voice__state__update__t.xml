@@ -119,48 +119,11 @@
       <node id="8">
         <label>bool</label>
       </node>
-      <node id="26">
-        <label>cache_policy_setting_t</label>
-      </node>
-      <node id="18">
-        <label>double</label>
-      </node>
-      <node id="25">
-        <label>dpp::cache_policy_t</label>
-        <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="26" relation="usage">
-          <edgelabel>emoji_policy</edgelabel>
-          <edgelabel>role_policy</edgelabel>
-          <edgelabel>user_policy</edgelabel>
-        </childnode>
-      </node>
       <node id="16">
-        <label>dpp::cluster</label>
-        <link refid="classdpp_1_1cluster"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>token</edgelabel>
-        </childnode>
-        <childnode refid="13" relation="usage">
-          <edgelabel>last_identify</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>cluster_id</edgelabel>
-          <edgelabel>intents</edgelabel>
-          <edgelabel>maxclusters</edgelabel>
-          <edgelabel>numshards</edgelabel>
-        </childnode>
-        <childnode refid="18" relation="usage">
-          <edgelabel>rest_ping</edgelabel>
-        </childnode>
-        <childnode refid="19" relation="usage">
-          <edgelabel>dispatch</edgelabel>
-        </childnode>
-        <childnode refid="20" relation="usage">
-          <edgelabel>me</edgelabel>
-        </childnode>
-        <childnode refid="25" relation="usage">
-          <edgelabel>cache_policy</edgelabel>
-        </childnode>
+        <label>cluster *</label>
+      </node>
+      <node id="20">
+        <label>double</label>
       </node>
       <node id="5">
         <label>dpp::discord_client</label>
@@ -182,7 +145,7 @@
           <edgelabel>last_heartbeat</edgelabel>
           <edgelabel>last_heartbeat_ack</edgelabel>
         </childnode>
-        <childnode refid="27" relation="usage">
+        <childnode refid="18" relation="usage">
           <edgelabel>thread_id</edgelabel>
         </childnode>
         <childnode refid="14" relation="usage">
@@ -192,34 +155,17 @@
           <edgelabel>sessionid</edgelabel>
           <edgelabel>token</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>voice_mutex</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>websocket_ping</edgelabel>
         </childnode>
         <childnode refid="8" relation="usage">
           <edgelabel>ready</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>connecting_voice_channels</edgelabel>
-        </childnode>
-      </node>
-      <node id="19">
-        <label>dpp::dispatcher</label>
-        <link refid="classdpp_1_1dispatcher"/>
-        <childnode refid="15" relation="usage">
-          <edgelabel>application_command_create</edgelabel>
-          <edgelabel>application_command_delete</edgelabel>
-          <edgelabel>application_command_update</edgelabel>
-          <edgelabel>button_click</edgelabel>
-          <edgelabel>channel_create</edgelabel>
-          <edgelabel>channel_delete</edgelabel>
-          <edgelabel>channel_pins_update</edgelabel>
-          <edgelabel>channel_update</edgelabel>
-          <edgelabel>guild_ban_add</edgelabel>
-          <edgelabel>guild_ban_remove</edgelabel>
-          <edgelabel>...</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -230,13 +176,6 @@
         </childnode>
         <childnode refid="5" relation="usage">
           <edgelabel>from</edgelabel>
-        </childnode>
-      </node>
-      <node id="21">
-        <label>dpp::managed</label>
-        <link refid="classdpp_1_1managed"/>
-        <childnode refid="14" relation="usage">
-          <edgelabel>id</edgelabel>
         </childnode>
       </node>
       <node id="10">
@@ -282,45 +221,16 @@
           <edgelabel>custom_writeable_ready</edgelabel>
         </childnode>
       </node>
-      <node id="20">
-        <label>dpp::user</label>
-        <link refid="classdpp_1_1user"/>
-        <childnode refid="21" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>username</edgelabel>
-        </childnode>
-        <childnode refid="22" relation="usage">
-          <edgelabel>discriminator</edgelabel>
-        </childnode>
-        <childnode refid="23" relation="usage">
-          <edgelabel>avatar</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>flags</edgelabel>
-        </childnode>
-        <childnode refid="24" relation="usage">
-          <edgelabel>refcount</edgelabel>
-        </childnode>
-      </node>
-      <node id="23">
-        <label>dpp::utility::iconhash</label>
-        <link refid="structdpp_1_1utility_1_1iconhash"/>
-        <childnode refid="14" relation="usage">
-          <edgelabel>first</edgelabel>
-          <edgelabel>second</edgelabel>
-        </childnode>
-      </node>
       <node id="1">
         <label>dpp::voice_state_update_t</label>
         <link refid="structdpp_1_1voice__state__update__t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>state</edgelabel>
         </childnode>
       </node>
-      <node id="30">
+      <node id="22">
         <label>dpp::voicestate</label>
         <link refid="classdpp_1_1voicestate"/>
         <childnode refid="5" relation="usage">
@@ -334,7 +244,7 @@
         <childnode refid="3" relation="usage">
           <edgelabel>session_id</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
       </node>
@@ -350,7 +260,7 @@
       <node id="15">
         <label>function&lt;</label>
       </node>
-      <node id="28">
+      <node id="19">
         <label>std::mutex</label>
       </node>
       <node id="3">
@@ -358,17 +268,14 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="18">
         <label>native_handle_type</label>
       </node>
-      <node id="29">
+      <node id="21">
         <label>unordered_map&lt;</label>
       </node>
       <node id="13">
         <label>time_t</label>
-      </node>
-      <node id="22">
-        <label>uint16_t</label>
       </node>
       <node id="17">
         <label>uint32_t</label>
@@ -376,7 +283,7 @@
       <node id="14">
         <label>uint64_t</label>
       </node>
-      <node id="24">
+      <node id="23">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>

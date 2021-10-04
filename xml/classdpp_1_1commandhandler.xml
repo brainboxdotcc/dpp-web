@@ -77,7 +77,7 @@
         <location file="include/dpp/commandhandler.h" line="213" column="6" bodyfile="include/dpp/commandhandler.h" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1commandhandler_1a81203fb77ae98d8cfe81d95bf714fcf0" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <type>class cluster *</type>
         <definition>class cluster* dpp::commandhandler::owner</definition>
         <argsstring></argsstring>
         <name>owner</name>
@@ -144,7 +144,7 @@
         <argsstring>(class cluster *o, bool auto_hook_events=true, snowflake application_id=0)</argsstring>
         <name>commandhandler</name>
         <param>
-          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <type>class cluster *</type>
           <declname>o</declname>
         </param>
         <param>
@@ -212,7 +212,7 @@
         <argsstring>(class cluster *o)</argsstring>
         <name>set_owner</name>
         <param>
-          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <type>class cluster *</type>
           <declname>o</declname>
         </param>
         <briefdescription>
@@ -431,7 +431,7 @@
           <declname>source</declname>
         </param>
         <briefdescription>
-<para>Reply to a command. You should use this method rather than <ref refid="classdpp_1_1cluster_1a080a8cefc6ceb0b882fdb6fe70c078a6" kindref="member">cluster::message_create</ref> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds. </para>
+<para>Reply to a command. You should use this method rather than cluster::message_create as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -495,48 +495,8 @@
       <node id="4">
         <label>bool</label>
       </node>
-      <node id="20">
-        <label>cache_policy_setting_t</label>
-      </node>
-      <node id="10">
-        <label>double</label>
-      </node>
-      <node id="19">
-        <label>dpp::cache_policy_t</label>
-        <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="20" relation="usage">
-          <edgelabel>emoji_policy</edgelabel>
-          <edgelabel>role_policy</edgelabel>
-          <edgelabel>user_policy</edgelabel>
-        </childnode>
-      </node>
       <node id="5">
-        <label>dpp::cluster</label>
-        <link refid="classdpp_1_1cluster"/>
-        <childnode refid="6" relation="usage">
-          <edgelabel>token</edgelabel>
-        </childnode>
-        <childnode refid="8" relation="usage">
-          <edgelabel>last_identify</edgelabel>
-        </childnode>
-        <childnode refid="9" relation="usage">
-          <edgelabel>cluster_id</edgelabel>
-          <edgelabel>intents</edgelabel>
-          <edgelabel>maxclusters</edgelabel>
-          <edgelabel>numshards</edgelabel>
-        </childnode>
-        <childnode refid="10" relation="usage">
-          <edgelabel>rest_ping</edgelabel>
-        </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>dispatch</edgelabel>
-        </childnode>
-        <childnode refid="13" relation="usage">
-          <edgelabel>me</edgelabel>
-        </childnode>
-        <childnode refid="19" relation="usage">
-          <edgelabel>cache_policy</edgelabel>
-        </childnode>
+        <label>class cluster *</label>
       </node>
       <node id="1">
         <label>dpp::commandhandler</label>
@@ -553,72 +513,8 @@
         <childnode refid="5" relation="usage">
           <edgelabel>owner</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
-          <edgelabel>app_id</edgelabel>
-        </childnode>
-      </node>
-      <node id="11">
-        <label>dpp::dispatcher</label>
-        <link refid="classdpp_1_1dispatcher"/>
-        <childnode refid="12" relation="usage">
-          <edgelabel>application_command_create</edgelabel>
-          <edgelabel>application_command_delete</edgelabel>
-          <edgelabel>application_command_update</edgelabel>
-          <edgelabel>button_click</edgelabel>
-          <edgelabel>channel_create</edgelabel>
-          <edgelabel>channel_delete</edgelabel>
-          <edgelabel>channel_pins_update</edgelabel>
-          <edgelabel>channel_update</edgelabel>
-          <edgelabel>guild_ban_add</edgelabel>
-          <edgelabel>guild_ban_remove</edgelabel>
-          <edgelabel>...</edgelabel>
-        </childnode>
-      </node>
-      <node id="14">
-        <label>dpp::managed</label>
-        <link refid="classdpp_1_1managed"/>
-        <childnode refid="15" relation="usage">
-          <edgelabel>id</edgelabel>
-        </childnode>
-      </node>
-      <node id="13">
-        <label>dpp::user</label>
-        <link refid="classdpp_1_1user"/>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
         <childnode refid="6" relation="usage">
-          <edgelabel>username</edgelabel>
-        </childnode>
-        <childnode refid="16" relation="usage">
-          <edgelabel>discriminator</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>avatar</edgelabel>
-        </childnode>
-        <childnode refid="9" relation="usage">
-          <edgelabel>flags</edgelabel>
-        </childnode>
-        <childnode refid="18" relation="usage">
-          <edgelabel>refcount</edgelabel>
-        </childnode>
-      </node>
-      <node id="17">
-        <label>dpp::utility::iconhash</label>
-        <link refid="structdpp_1_1utility_1_1iconhash"/>
-        <childnode refid="15" relation="usage">
-          <edgelabel>first</edgelabel>
-          <edgelabel>second</edgelabel>
-        </childnode>
-      </node>
-      <node id="7">
-        <label>std::basic_string&lt; Char &gt;</label>
-      </node>
-      <node id="12">
-        <label>function&lt;</label>
-      </node>
-      <node id="6">
-        <label>std::string</label>
-        <childnode refid="7" relation="public-inheritance">
+          <edgelabel>app_id</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -627,20 +523,8 @@
       <node id="3">
         <label>vector&lt;</label>
       </node>
-      <node id="8">
-        <label>time_t</label>
-      </node>
-      <node id="16">
-        <label>uint16_t</label>
-      </node>
-      <node id="9">
-        <label>uint32_t</label>
-      </node>
-      <node id="15">
+      <node id="6">
         <label>uint64_t</label>
-      </node>
-      <node id="18">
-        <label>uint8_t</label>
       </node>
     </collaborationgraph>
     <location file="include/dpp/commandhandler.h" line="189" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="189" bodyend="339"/>

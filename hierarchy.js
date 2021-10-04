@@ -13,7 +13,6 @@ var hierarchy =
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
     [ "detail::chrono_format_checker", "structdetail_1_1chrono__format__checker.html", null ],
     [ "detail::chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structdetail_1_1chrono__formatter.html", null ],
-    [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
     [ "dpp::command_data_option", "structdpp_1_1command__data__option.html", null ],
     [ "dpp::command_info_t", "structdpp_1_1command__info__t.html", null ],
     [ "dpp::command_interaction", "structdpp_1_1command__interaction.html", null ],
@@ -25,8 +24,6 @@ var hierarchy =
     [ "dpp::commandhandler", "classdpp_1_1commandhandler.html", null ],
     [ "dpp::component", "classdpp_1_1component.html", null ],
     [ "dpp::component_interaction", "structdpp_1_1component__interaction.html", null ],
-    [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
-    [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
     [ "dpp::dispatcher", "classdpp_1_1dispatcher.html", null ],
     [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
@@ -35,8 +32,6 @@ var hierarchy =
     [ "dpp::embed_footer", "structdpp_1_1embed__footer.html", null ],
     [ "dpp::embed_image", "structdpp_1_1embed__image.html", null ],
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
-    [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
-    [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
     [ "dpp::events::event", "classdpp_1_1events_1_1event.html", [
       [ "dpp::events::application_command_create", "classdpp_1_1events_1_1application__command__create.html", null ],
       [ "dpp::events::application_command_delete", "classdpp_1_1events_1_1application__command__delete.html", null ],
@@ -166,7 +161,6 @@ var hierarchy =
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
       [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", null ]
     ] ],
-    [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
     [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
     [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ],
