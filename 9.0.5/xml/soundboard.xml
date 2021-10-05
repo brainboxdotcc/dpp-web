@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="soundboard" kind="page">
+    <compoundname>soundboard</compoundname>
+    <title>Creating a Sound Board</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This example script shows how to send a sound file to a voice channel. A few shortcuts are taken here, for more advanced techniques for connecting to a voice channel see the tutorial <ref refid="joinvc" kindref="compound">Join or switch to the voice channel of the user issuing a command</ref></para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Load<sp/>a<sp/>sound<sp/>file<sp/>called<sp/>Robot.pcm<sp/>into<sp/>memory.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>bot<sp/>expects<sp/>PCM<sp/>format,<sp/>which<sp/>are<sp/>raw<sp/>sound<sp/>data,</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>2<sp/>channel<sp/>stereo,<sp/>16<sp/>bit<sp/>signed<sp/>48000Hz.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>You<sp/>can<sp/>use<sp/>audacity<sp/>to<sp/>export<sp/>these<sp/>from<sp/>WAV<sp/>or<sp/>MP3<sp/>etc.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>If<sp/>you<sp/>wanted<sp/>to<sp/>send<sp/>a<sp/>more<sp/>complicated<sp/>format,<sp/>you<sp/>could</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>use<sp/>a<sp/>separate<sp/>library<sp/>to<sp/>decode<sp/>that<sp/>audio<sp/>to<sp/>PCM.<sp/>For</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>example<sp/>purposes,<sp/>a<sp/>raw<sp/>PCM<sp/>will<sp/>suffice.<sp/>This<sp/>PCM<sp/>file<sp/>can</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>be<sp/>found<sp/>within<sp/>the<sp/>bot&apos;s<sp/>github<sp/>repo.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/>robot<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>robot_size<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>input<sp/>(</highlight><highlight class="stringliteral">&quot;../testdata/Robot.pcm&quot;</highlight><highlight class="normal">,<sp/>std::ios::in|std::ios::binary|std::ios::ate);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(input.is_open())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot_size<sp/>=<sp/>input.tellg();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>uint8_t[robot_size];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input.seekg<sp/>(0,<sp/>std::ios::beg);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input.read<sp/>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)robot,<sp/>robot_size);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input.close();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Setup<sp/>the<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Use<sp/>the<sp/>on_message_create<sp/>event<sp/>to<sp/>look<sp/>for<sp/>commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_create([&amp;bot,<sp/>robot,<sp/>robot_size](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss(event.<ref refid="structdpp_1_1message__create__t_1a93c10b3fce36e161eca41edcd32857d0" kindref="member">msg</ref>-&gt;<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>command;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&gt;&gt;<sp/>command;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tell<sp/>the<sp/>bot<sp/>to<sp/>join<sp/>the<sp/>discord<sp/>voice<sp/>channel<sp/>the<sp/>user<sp/>is<sp/>on.<sp/>Syntax:<sp/>.join<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(command<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;.join&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1guild" kindref="compound">dpp::guild</ref><sp/>*<sp/>g<sp/>=<sp/><ref refid="namespacedpp_1a6c9b2178f66c62051b390471ec776a80" kindref="member">dpp::find_guild</ref>(event.<ref refid="structdpp_1_1message__create__t_1a93c10b3fce36e161eca41edcd32857d0" kindref="member">msg</ref>-&gt;<ref refid="structdpp_1_1message_1a5e75f7cd8a7e952e6621c520627d5b84" kindref="member">guild_id</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!g-&gt;<ref refid="classdpp_1_1guild_1a0d5e43e678d6a0448930bd31620d979e" kindref="member">connect_member_voice</ref>(event.<ref refid="structdpp_1_1message__create__t_1a93c10b3fce36e161eca41edcd32857d0" kindref="member">msg</ref>-&gt;<ref refid="structdpp_1_1message_1a35c14f04382266b29c4ca076b4e0f9e0" kindref="member">author</ref>-&gt;<ref refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kindref="member">id</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(<ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(channel_id,<sp/></highlight><highlight class="stringliteral">&quot;You<sp/>don&apos;t<sp/>seem<sp/>to<sp/>be<sp/>on<sp/>a<sp/>voice<sp/>channel!<sp/>:(&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tell<sp/>the<sp/>bot<sp/>to<sp/>play<sp/>the<sp/>sound<sp/>file<sp/>&apos;Robot.pcm&apos;.<sp/>Syntax:<sp/>.robot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(command<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;.robot&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1voiceconn" kindref="compound">dpp::voiceconn</ref>*<sp/>v<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.from-&gt;get_voice(event.<ref refid="structdpp_1_1message__create__t_1a93c10b3fce36e161eca41edcd32857d0" kindref="member">msg</ref>-&gt;<ref refid="structdpp_1_1message_1a5e75f7cd8a7e952e6621c520627d5b84" kindref="member">guild_id</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v<sp/>&amp;&amp;<sp/>v-&gt;<ref refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" kindref="member">voiceclient</ref><sp/>&amp;&amp;<sp/>v-&gt;<ref refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" kindref="member">voiceclient</ref>-&gt;<ref refid="classdpp_1_1discord__voice__client_1aee5fcfe947f581ecce2c9096871f88a2" kindref="member">is_ready</ref>())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v-&gt;<ref refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" kindref="member">voiceclient</ref>-&gt;<ref refid="classdpp_1_1discord__voice__client_1a6d52a32631231f3120ba9e5ebbe61a7a" kindref="member">send_audio_raw</ref>((uint16_t*)robot,<sp/>robot_size);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="docpages/03_example_programs.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['value_0',['value',['../a01797.html#ae6ea76574be01d0b9fa75ae19f5fbb50',1,'dpp::embed_field::value()'],['../a02417.html#a70021160d60b6403a353b302d97123ff',1,'dpp::command_option_choice::value()'],['../a02433.html#a576bda8a063f9b1d1aa4b931973e4587',1,'dpp::command_data_option::value()'],['../a01297.html#a4725ef83209a64c0558a598ec01ad463',1,'dpp::confirmation_callback_t::value()']]],
+  ['vanity_5furl_5fcode_1',['vanity_url_code',['../a01749.html#ad858d700638f1785f2338e8ec667c74f',1,'dpp::guild']]],
+  ['verification_5flevel_2',['verification_level',['../a01749.html#a6132ae5944f766ade85c4fc4521180a5',1,'dpp::guild']]],
+  ['version_3',['version',['../a02445.html#a326c799b4b9d813f44f5462dae01e027',1,'dpp::interaction']]],
+  ['video_4',['video',['../a01801.html#aa8eb54d9c1a20cd2502f0ca79297fa0d',1,'dpp::embed']]],
+  ['voice_5fbuffer_5fsend_5',['voice_buffer_send',['../a01545.html#a05479a227ee0b2e3a9fc110fc22a1edc',1,'dpp::dispatcher']]],
+  ['voice_5fchannel_5fid_6',['voice_channel_id',['../a01537.html#a176e7a9e1db9780c0dbf9a801d86794e',1,'dpp::voice_ready_t']]],
+  ['voice_5fclient_7',['voice_client',['../a01533.html#ae12eb0670dc7a3ade33bf9b5334b886a',1,'dpp::voice_user_talking_t::voice_client()'],['../a01541.html#ab690fe6ef4bef4d2523239d404bd1eff',1,'dpp::voice_receive_t::voice_client()'],['../a01537.html#ad34aeeaaee554cf4fea30d68fcea87d8',1,'dpp::voice_ready_t::voice_client()'],['../a01529.html#abeabd38889b90cbc26f4fdcd44fd683e',1,'dpp::voice_buffer_send_t::voice_client()'],['../a01405.html#af1db1ea6cf29bda244a732f23f8efc55',1,'dpp::voice_track_marker_t::voice_client()']]],
+  ['voice_5fmembers_8',['voice_members',['../a01749.html#a42066fe3bbfb976ba27fbb9ca38b722f',1,'dpp::guild']]],
+  ['voice_5fmutex_9',['voice_mutex',['../a01321.html#a9f6579908d9a4d0a2d895ee22f68fd00',1,'dpp::DiscordClient']]],
+  ['voice_5fready_10',['voice_ready',['../a01545.html#a9c2f74f1e854a61ec6795ab0e3f7c40b',1,'dpp::dispatcher']]],
+  ['voice_5freceive_11',['voice_receive',['../a01545.html#af52035826c4e3be4f6e6ac641389bee9',1,'dpp::dispatcher']]],
+  ['voice_5fregion_12',['voice_region',['../a01749.html#ab4e8470fb6d73ecc5cf60d952616fda6',1,'dpp::guild']]],
+  ['voice_5fserver_5fupdate_13',['voice_server_update',['../a01545.html#ab4635617a097fd90d9a9782066b7c8b3',1,'dpp::dispatcher']]],
+  ['voice_5fstate_5fupdate_14',['voice_state_update',['../a01545.html#a1980829c218c2b75b608769009bdfd6f',1,'dpp::dispatcher']]],
+  ['voice_5ftrack_5fmarker_15',['voice_track_marker',['../a01545.html#ab604386c5676c63901dff045a46b4aae',1,'dpp::dispatcher']]],
+  ['voice_5fuser_5ftalking_16',['voice_user_talking',['../a01545.html#ad9734f36f8ed672bdcc0efc4e1125b08',1,'dpp::dispatcher']]],
+  ['voiceclient_17',['voiceclient',['../a01317.html#a49544c35c3f99db8547f5aa958f243f3',1,'dpp::voiceconn']]]
+];
