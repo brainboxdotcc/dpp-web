@@ -51,6 +51,6 @@ var searchData=
   ['using_20slash_20commands_20and_20interactions_48',['Using Slash Commands and Interactions',['../slashcommands.html',1,'md_docpages_03_example_programs']]],
   ['using_20sub_2dcommands_20in_20slash_20commands_49',['Using sub-commands in slash commands',['../subcommands.html',1,'md_docpages_03_example_programs']]],
   ['usr_50',['usr',['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()'],['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()']]],
-  ['utf8len_51',['utf8len',['../namespacedpp_1_1utility.html#a274ad7457496c9c28634c2e11fa08edf',1,'dpp::utility']]],
-  ['utf8substr_52',['utf8substr',['../namespacedpp_1_1utility.html#ad2be660538b63fad0566076c96c88dcf',1,'dpp::utility']]]
+  ['utf8len_51',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
+  ['utf8substr_52',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
 ];

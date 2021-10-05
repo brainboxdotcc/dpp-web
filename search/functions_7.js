@@ -57,7 +57,7 @@ var searchData=
   ['has_5fview_5fchannel_54',['has_view_channel',['../classdpp_1_1role.html#acbe56d5d1d54e9fea3a6b7acd66ef888',1,'dpp::role']]],
   ['has_5fview_5fguild_5finsights_55',['has_view_guild_insights',['../classdpp_1_1role.html#ac71887da3f920e070d1fa743ea000d1c',1,'dpp::role']]],
   ['has_5fvip_5fregions_56',['has_vip_regions',['../classdpp_1_1guild.html#a41a4d225e7ad466e1cba1a5352270075',1,'dpp::guild']]],
-  ['has_5fvoice_57',['has_voice',['../namespacedpp_1_1utility.html#a3e939d08d5474d50096fc9e889d9934b',1,'dpp::utility']]],
+  ['has_5fvoice_57',['has_voice',['../namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4',1,'dpp::utility']]],
   ['hour_58',['hour',['../structdetail_1_1chrono__formatter.html#a2998d48369105d8103ba142053259cbd',1,'detail::chrono_formatter']]],
   ['hour12_59',['hour12',['../structdetail_1_1chrono__formatter.html#a2adbe9db64e2b10a8548be7ce015b166',1,'detail::chrono_formatter']]],
   ['http_5frequest_60',['http_request',['../classdpp_1_1http__request.html#a46242b648249b5e8a67e2abdb306c3b3',1,'dpp::http_request::http_request(const std::string &amp;_endpoint, const std::string &amp;_parameters, http_completion_event completion, const std::string &amp;_postdata=&quot;&quot;, http_method method=m_get, const std::string &amp;filename=&quot;&quot;, const std::string &amp;filecontent=&quot;&quot;)'],['../classdpp_1_1http__request.html#a7a2134b1a466d6f523a37c5631376073',1,'dpp::http_request::http_request(const std::string &amp;_url, http_completion_event completion, http_method method=m_get, const std::string &amp;_postdata=&quot;&quot;, const std::string &amp;_mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;_headers={})']]]
