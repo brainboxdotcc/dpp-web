@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['vformat_5fto_0',['vformat_to',['../namespacedetail.html#ab60222a912202fa179149bc2a630e4ee',1,'detail::vformat_to(buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; format_str, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; Char &gt; &gt; &gt;, type_identity_t&lt; Char &gt; &gt; &gt; args)'],['../namespacedetail.html#ae732653a877af30fd393e774a72bebec',1,'detail::vformat_to(buffer&lt; char &gt; &amp;, string_view, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; char &gt; &gt; &gt;, type_identity_t&lt; char &gt; &gt; &gt;)']]],
+  ['vformat_0',['vformat',['../namespacedetail.html#a88bdf7763638196f86a29118fba9442e',1,'detail']]],
   ['voice_5fbuffer_5fsend_5ft_1',['voice_buffer_send_t',['../structdpp_1_1voice__buffer__send__t.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
   ['voice_5fready_5ft_2',['voice_ready_t',['../structdpp_1_1voice__ready__t.html#afe0122cb6850df07ca84ba3592181490',1,'dpp::voice_ready_t']]],
   ['voice_5freceive_5ft_3',['voice_receive_t',['../structdpp_1_1voice__receive__t.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t']]],

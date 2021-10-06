@@ -1,18 +1,11 @@
 var namespaces_dup =
 [
-    [ "anonymous_namespace{os.cpp}", "a00439.html", null ],
-    [ "detail", "a00435.html", [
-      [ "format_float", "a00435.html#aa6c7f232657c83f4e976f9af21f12dcb", null ],
-      [ "vformat_to", "a00435.html#ae732653a877af30fd393e774a72bebec", null ],
-      [ "vformat_to", "a00435.html#ab60222a912202fa179149bc2a630e4ee", null ]
-    ] ],
-    [ "dpp", "a00433.html", "a00433" ],
-    [ "fmt", "a00441.html", null ],
-    [ "httplib", "a00436.html", [
-      [ "make_basic_authentication_header", "a00436.html#a6b202b4fd91bd8e6a10a83dba358bc02", null ],
-      [ "make_bearer_token_authentication_header", "a00436.html#a98075992689c300834040c9c963b7251", null ],
-      [ "make_range_header", "a00436.html#a01bfe9dba7c203f1bb22ec29e2f3ede8", null ]
-    ] ],
-    [ "nlohmann", "a00450.html", "a00450" ],
-    [ "std", "a00432.html", null ]
+    [ "detail", "namespacedetail.html", "namespacedetail" ],
+    [ "dpp", "namespacedpp.html", "namespacedpp" ],
+    [ "fmt", "namespacefmt.html", null ],
+    [ "safe_duration_cast", "namespacesafe__duration__cast.html", [
+      [ "lossless_integral_conversion", "namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9", null ],
+      [ "safe_duration_cast", "namespacesafe__duration__cast.html#a1b2f780f349d616fa841550dc49f59d0", null ],
+      [ "safe_float_conversion", "namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a", null ]
+    ] ]
 ];

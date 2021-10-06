@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="md_docpages__z_03__b_u_i_l_d__w_i_n" kind="page">
+    <compoundname>md_docpages_Z_03_BUILD_WIN</compoundname>
+    <title>Building on Windows</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To build on windows follow these steps <emphasis>exactly</emphasis>. The build process depends on specific libraries being installed on your system in specific locations.</para>
+<para><simplesect kind="note"><para>You should not need to build a copy of the library for windows - DLL, LIB and EXP files for Windows and visual studio 2019 64-bit will be provided in the github version releases. Unless you wish to submit fixes and enhancements to the library itself you should use these releases instead.</para>
+</simplesect>
+<bold>Instructions here are subject to change!</bold></para>
+<para><orderedlist>
+<listitem><para>Make sure you have Visual Studio 2019 Community. <bold>NOT</bold> Visual Studio Code. You can <ulink url="https://visualstudio.microsoft.com/downloads/">download the correct version here</ulink>.</para>
+</listitem><listitem><para>Download and install cmake from <ulink url="https://cmake.org/download/">here</ulink> and install it to the system path.</para>
+</listitem><listitem><para>Download windows version of git <ulink url="https://git-scm.com/download/win">here</ulink> install it to your path.</para>
+</listitem><listitem><para><ulink url="https://docs.microsoft.com/en-us/cpp/build/install-vcpkg?view=msvc-160&amp;tabs=windows">Download and install vcpkg</ulink> to the default recommended path</para>
+</listitem><listitem><para>Open a command prompt window.</para>
+</listitem><listitem><para>Use the following command to install <computeroutput>openssl</computeroutput> and <computeroutput>zlib</computeroutput> via vcpkg: <computeroutput>c:\vckpg\vcpkg.exe install openssl:x64-windows zlib:x64-windows</computeroutput></para>
+</listitem><listitem><para>Change to the directory where you want to clone the sources.</para>
+</listitem><listitem><para>Issue the command: <computeroutput>git clone <ulink url="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</ulink></computeroutput></para>
+</listitem><listitem><para>Issue the command: <computeroutput>cd DPP</computeroutput></para>
+</listitem><listitem><para>Issue the command: <computeroutput>build.bat</computeroutput></para>
+</listitem><listitem><para>Build a <computeroutput>config.json</computeroutput> file in the directory above the <computeroutput>test.exe</computeroutput> containing a valid bot token and shard count.</para>
+</listitem><listitem><para>Start the test bot!</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="runbot.png"></image>
+</para>
+<sect1 id="md_docpages__z_03__b_u_i_l_d__w_i_n_1autotoc_md123">
+<title>Troubleshooting</title>
+<para>If the program fails to build, you may need to adjust build.bat to suit paths on your system, notably the path to msbuild.</para>
+</sect1>
+<sect1 id="md_docpages__z_03__b_u_i_l_d__w_i_n_1autotoc_md124">
+<title>After compiling</title>
+<para>After compilation you can take the .dll, .lib, .pdb and .exp files and copy them into your project as needed. You can also just start changing test.cpp to suit your needs, and build the entire project around the code you cloned from git as a template. </para>
+</sect1>
+    </detaileddescription>
+    <location file="docpages/Z_03_BUILD_WIN.md"/>
+  </compounddef>
+</doxygen>

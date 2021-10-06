@@ -1,22 +1,5 @@
 var searchData=
 [
-  ['iconhash_0',['iconhash',['../a01375.html',1,'dpp::utility']]],
-  ['inner_5femoji_1',['inner_emoji',['../a02835.html',1,'dpp::component']]],
-  ['integration_2',['integration',['../a02823.html',1,'dpp']]],
-  ['integration_5fapp_3',['integration_app',['../a02819.html',1,'dpp']]],
-  ['integration_5fcreate_4',['integration_create',['../a01803.html',1,'dpp::events']]],
-  ['integration_5fcreate_5ft_5',['integration_create_t',['../a01583.html',1,'dpp']]],
-  ['integration_5fdelete_6',['integration_delete',['../a01811.html',1,'dpp::events']]],
-  ['integration_5fdelete_5ft_7',['integration_delete_t',['../a01591.html',1,'dpp']]],
-  ['integration_5fupdate_8',['integration_update',['../a01807.html',1,'dpp::events']]],
-  ['integration_5fupdate_5ft_9',['integration_update_t',['../a01587.html',1,'dpp']]],
-  ['interaction_10',['interaction',['../a03503.html',1,'dpp']]],
-  ['interaction_5fcreate_11',['interaction_create',['../a01799.html',1,'dpp::events']]],
-  ['interaction_5fcreate_5ft_12',['interaction_create_t',['../a01415.html',1,'dpp']]],
-  ['interaction_5fresponse_13',['interaction_response',['../a03483.html',1,'dpp']]],
-  ['invite_14',['invite',['../a02827.html',1,'dpp']]],
-  ['invite_5fcreate_15',['invite_create',['../a01767.html',1,'dpp::events']]],
-  ['invite_5fcreate_5ft_16',['invite_create_t',['../a01559.html',1,'dpp']]],
-  ['invite_5fdelete_17',['invite_delete',['../a01771.html',1,'dpp::events']]],
-  ['invite_5fdelete_5ft_18',['invite_delete_t',['../a01539.html',1,'dpp']]]
+  ['http_5frequest_0',['http_request',['../classdpp_1_1http__request.html',1,'dpp']]],
+  ['http_5frequest_5fcompletion_5ft_1',['http_request_completion_t',['../structdpp_1_1http__request__completion__t.html',1,'dpp']]]
 ];

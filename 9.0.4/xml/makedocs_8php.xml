@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="makedocs_8php" kind="file" language="PHP">
+    <compoundname>makedocs.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="makedocs_8php_1a0805d7a8aa4d0151c71bf49d5e664026" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>if(!file_exists(getenv(&quot;HOME&quot;) . &quot;/dpp-web&quot;))</definition>
+        <argsstring>(!file_exists(getenv(&quot;HOME&quot;) . &quot;/dpp-web&quot;))</argsstring>
+        <name>if</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="4" column="1" bodyfile="docpages/makedocs.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1a2fce6a9b8be45967a21c53a89d006eaf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$opts</definition>
+        <argsstring></argsstring>
+        <name>$opts</name>
+        <initializer>= shell_exec(&quot;git tag | perl -p -e s/^v//g | sort -n -r | (echo \&quot;&lt;option value=&apos;/&apos;&gt;master&lt;/option&gt;\&quot; &amp;&amp; sed \&quot;s/.*/&lt;option value=&apos;\/&amp;\/&apos;&gt;&amp;&lt;\/option&gt;/\&quot;)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="13" column="1" bodyfile="docpages/makedocs.php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1aa3e9534005fd516d941f6a5569896e01" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$template</definition>
+        <argsstring></argsstring>
+        <name>$template</name>
+        <initializer>= file_get_contents(&quot;header.template.html&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="16" column="1" bodyfile="docpages/makedocs.php" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1a4f44601f2b9dc8a1644bce53c94ce622" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$header</definition>
+        <argsstring></argsstring>
+        <name>$header</name>
+        <initializer>= str_replace(&quot;##VERSION_OPTIONS##&quot;, $opts, $template)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="17" column="1" bodyfile="docpages/makedocs.php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1a475a6a63b85186663d34151bcbd21590" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$tags</definition>
+        <argsstring></argsstring>
+        <name>$tags</name>
+        <initializer>= explode(&quot;\n&quot;, shell_exec(&quot;git tag&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="29" column="1" bodyfile="docpages/makedocs.php" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1a39981fe8269ad9ba0f2404c2a89349fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>foreach($tags as $tag)</definition>
+        <argsstring>( $tags as $tag)</argsstring>
+        <name>foreach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="35" column="1" bodyfile="docpages/makedocs.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="docpages/makedocs.php"/>
+  </compounddef>
+</doxygen>

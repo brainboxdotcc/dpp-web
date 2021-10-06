@@ -1,5 +1,11 @@
 var annotated_dup =
 [
+    [ "detail", "namespacedetail.html", [
+      [ "chrono_format_checker", "structdetail_1_1chrono__format__checker.html", "structdetail_1_1chrono__format__checker" ],
+      [ "chrono_formatter", "structdetail_1_1chrono__formatter.html", "structdetail_1_1chrono__formatter" ],
+      [ "make_unsigned_or_unchanged", "structdetail_1_1make__unsigned__or__unchanged.html", "structdetail_1_1make__unsigned__or__unchanged" ],
+      [ "make_unsigned_or_unchanged< T, true >", "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4" ]
+    ] ],
     [ "dpp", "namespacedpp.html", [
       [ "events", "namespacedpp_1_1events.html", [
         [ "application_command_create", "classdpp_1_1events_1_1application__command__create.html", "classdpp_1_1events_1_1application__command__create" ],
@@ -202,9 +208,7 @@ var annotated_dup =
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
       [ "zlibcontext", "classdpp_1_1zlibcontext.html", "classdpp_1_1zlibcontext" ]
     ] ],
-    [ "B1", "class_b1.html", null ],
-    [ "BinaryType", "class_binary_type.html", null ],
-    [ "ErrorHandler", "class_error_handler.html", null ],
-    [ "Handler", "class_handler.html", null ],
-    [ "Stream", "class_stream.html", null ]
+    [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4" ],
+    [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4" ],
+    [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", "structformatter_3_01std_1_1tm_00_01_char_01_4" ]
 ];

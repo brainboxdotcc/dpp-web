@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['overwrite_5ftype_0',['overwrite_type',['../namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522',1,'dpp']]]
+  ['numeric_5fsystem_0',['numeric_system',['../namespacedetail.html#a4938659a89541ba388c06c6a33e0c8ad',1,'detail']]]
 ];

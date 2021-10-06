@@ -33,7 +33,7 @@ var searchData=
   ['is_5fcrosspost_30',['is_crosspost',['../structdpp_1_1message.html#a03ce860de6231985a823f8ce2dd2dd8d',1,'dpp::message']]],
   ['is_5fcrossposted_31',['is_crossposted',['../structdpp_1_1message.html#acd532877b68dcd3f1713fd6df9045ed2',1,'dpp::message']]],
   ['is_5fcustom_32',['is_custom',['../classdpp_1_1voiceregion.html#a2acea0a6fa26f8713e7ff712c21626b4',1,'dpp::voiceregion']]],
-  ['is_5fdeaf_33',['is_deaf',['../classdpp_1_1guild__member.html#a1136b98c677fbbcbcc1291857cfe53ec',1,'dpp::guild_member::is_deaf()'],['../classdpp_1_1voicestate.html#a307d3a8776385f6ab468e838c97099ed',1,'dpp::voicestate::is_deaf()']]],
+  ['is_5fdeaf_33',['is_deaf',['../classdpp_1_1voicestate.html#a307d3a8776385f6ab468e838c97099ed',1,'dpp::voicestate::is_deaf()'],['../classdpp_1_1guild__member.html#a1136b98c677fbbcbcc1291857cfe53ec',1,'dpp::guild_member::is_deaf()']]],
   ['is_5fdeprecated_34',['is_deprecated',['../classdpp_1_1voiceregion.html#af29355f165f2ee1aeed095f79136c039',1,'dpp::voiceregion']]],
   ['is_5fdiscord_5femployee_35',['is_discord_employee',['../classdpp_1_1user.html#a5780e0142e20d952d348c33d51a4d926',1,'dpp::user']]],
   ['is_5fdiscoverable_36',['is_discoverable',['../classdpp_1_1guild.html#a6123f35315e5fbb8c6ee0dfaeb61300e',1,'dpp::guild']]],
@@ -83,5 +83,7 @@ var searchData=
   ['is_5fverified_5fbot_5fdev_80',['is_verified_bot_dev',['../classdpp_1_1user.html#abe54bbcf190f3aba2aeaf8c2d6287152',1,'dpp::user']]],
   ['is_5fvip_81',['is_vip',['../classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14',1,'dpp::voiceregion']]],
   ['is_5fvoice_5fchannel_82',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
-  ['is_5fwelcome_5fscreen_5fenabled_83',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]]
+  ['is_5fwelcome_5fscreen_5fenabled_83',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]],
+  ['isfinite_84',['isfinite',['../namespacedetail.html#ab69f2583a2a167ea0b0e4c333448b113',1,'detail']]],
+  ['isnan_85',['isnan',['../namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841',1,'detail']]]
 ];

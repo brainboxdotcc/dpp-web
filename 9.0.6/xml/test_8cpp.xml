@@ -3,8 +3,10 @@
   <compounddef id="test_8cpp" kind="file" language="C++">
     <compoundname>test.cpp</compoundname>
     <includes refid="dpp_8h" local="no">dpp/dpp.h</includes>
-    <includes local="no">dpp/fmt/format.h</includes>
     <includes local="no">dpp/nlohmann/json.hpp</includes>
+    <includes local="no">dpp/fmt/format.h</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">sstream</includes>
     <incdepgraph>
       <node id="36">
         <label>dpp/auditlog.h</label>
@@ -26,7 +28,7 @@
         <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="63">
+      <node id="61">
         <label>dpp/cache.h</label>
         <childnode refid="3" relation="include">
         </childnode>
@@ -65,7 +67,7 @@
         <childnode refid="42" relation="include">
         </childnode>
       </node>
-      <node id="64">
+      <node id="62">
         <label>dpp/commandhandler.h</label>
         <childnode refid="3" relation="include">
         </childnode>
@@ -151,20 +153,15 @@
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="60" relation="include">
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="59">
-        <label>dpp/discordevents.h</label>
-        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="45">
@@ -211,17 +208,13 @@
         </childnode>
         <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
         <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -267,11 +260,11 @@
         </childnode>
         <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="63" relation="include">
+        <childnode refid="61" relation="include">
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
       </node>
       <node id="23">
@@ -292,7 +285,7 @@
         <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="62">
+      <node id="60">
         <label>dpp/event.h</label>
         <childnode refid="3" relation="include">
         </childnode>
@@ -474,27 +467,28 @@
         <link refid="test_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
         <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
       </node>
-      <node id="61">
-        <label>chrono</label>
-      </node>
       <node id="10">
         <label>ctime</label>
       </node>
-      <node id="60">
+      <node id="59">
         <label>deque</label>
       </node>
-      <node id="65">
+      <node id="64">
         <label>dpp/fmt/format.h</label>
       </node>
       <node id="16">
         <label>dpp/json_fwd.hpp</label>
       </node>
-      <node id="66">
+      <node id="63">
         <label>dpp/nlohmann/json.hpp</label>
       </node>
       <node id="46">
@@ -511,6 +505,9 @@
       </node>
       <node id="14">
         <label>functional</label>
+      </node>
+      <node id="65">
+        <label>iomanip</label>
       </node>
       <node id="9">
         <label>iostream</label>
@@ -541,6 +538,9 @@
       </node>
       <node id="57">
         <label>signal.h</label>
+      </node>
+      <node id="66">
+        <label>sstream</label>
       </node>
       <node id="53">
         <label>stdio.h</label>
@@ -588,22 +588,31 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="6" column="1" bodyfile="src/test.cpp" bodystart="6" bodyend="-1"/>
+        <location file="src/test.cpp" line="9" column="1" bodyfile="src/test.cpp" bodystart="9" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="test_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test_8cpp_1abf9e6b7e6f15df4b525a2e7705ba3089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int main</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(int argc, char const *argv[])</argsstring>
         <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="8" column="5" bodyfile="src/test.cpp" bodystart="8" bodyend="24"/>
+        <location file="src/test.cpp" line="11" column="5" bodyfile="src/test.cpp" bodystart="11" bodyend="81"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

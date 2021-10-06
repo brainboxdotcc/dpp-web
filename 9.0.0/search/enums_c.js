@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['user_5fflags_0',['user_flags',['../namespacedpp.html#ace1318b24526febab72157cdd8b7b468',1,'dpp']]]
+  ['slashcommand_5fcontextmenu_5ftype_0',['slashcommand_contextmenu_type',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb',1,'dpp']]],
+  ['sticker_5ftype_1',['sticker_type',['../namespacedpp.html#ac21b1c79d9e30338aeafc83407c4e279',1,'dpp']]]
 ];

@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['reaction_0',['reaction',['../a02863.html',1,'dpp']]],
-  ['ready_1',['ready',['../a01703.html',1,'dpp::events']]],
-  ['ready_5ft_2',['ready_t',['../a01439.html',1,'dpp']]],
-  ['request_5fqueue_3',['request_queue',['../a03467.html',1,'dpp']]],
-  ['resumed_4',['resumed',['../a01699.html',1,'dpp::events']]],
-  ['resumed_5ft_5',['resumed_t',['../a01459.html',1,'dpp']]],
-  ['role_6',['role',['../a03471.html',1,'dpp']]],
-  ['rtp_5fheader_7',['rtp_header',['../a01271.html',1,'dpp']]]
+  ['permission_5foverwrite_0',['permission_overwrite',['../structdpp_1_1permission__overwrite.html',1,'dpp']]],
+  ['presence_1',['presence',['../classdpp_1_1presence.html',1,'dpp']]],
+  ['presence_5fupdate_2',['presence_update',['../classdpp_1_1events_1_1presence__update.html',1,'dpp::events']]],
+  ['presence_5fupdate_5ft_3',['presence_update_t',['../structdpp_1_1presence__update__t.html',1,'dpp']]],
+  ['prune_4',['prune',['../structdpp_1_1prune.html',1,'dpp']]]
 ];

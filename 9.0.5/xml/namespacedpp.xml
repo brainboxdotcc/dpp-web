@@ -128,9 +128,6 @@
     <innerclass refid="classdpp_1_1user" prot="public">dpp::user</innerclass>
     <innerclass refid="structdpp_1_1user__update__t" prot="public">dpp::user_update_t</innerclass>
     <innerclass refid="structdpp_1_1voice__buffer__send__t" prot="public">dpp::voice_buffer_send_t</innerclass>
-    <innerclass refid="structdpp_1_1voice__client__disconnect__t" prot="public">dpp::voice_client_disconnect_t</innerclass>
-    <innerclass refid="structdpp_1_1voice__client__speaking__t" prot="public">dpp::voice_client_speaking_t</innerclass>
-    <innerclass refid="structdpp_1_1voice__out__packet" prot="public">dpp::voice_out_packet</innerclass>
     <innerclass refid="structdpp_1_1voice__ready__t" prot="public">dpp::voice_ready_t</innerclass>
     <innerclass refid="structdpp_1_1voice__receive__t" prot="public">dpp::voice_receive_t</innerclass>
     <innerclass refid="structdpp_1_1voice__server__update__t" prot="public">dpp::voice_server_update_t</innerclass>
@@ -773,15 +770,7 @@
         <enumvalue id="namespacedpp_1a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270" prot="public">
           <name>pt_integer</name>
           <briefdescription>
-<para>64 bit signed integer </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="namespacedpp_1a9a2049904620e4f62b82f8dc818de864a095d2a7bbe72af8c679d3f02f4395650" prot="public">
-          <name>pt_double</name>
-          <briefdescription>
-<para>double floating point </para>
+<para>32 bit signed integer </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -801,7 +790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="63" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="63" bodyend="71"/>
+        <location file="include/dpp/commandhandler.h" line="63" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="63" bodyend="70"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" prot="public" static="no" strong="no">
         <type></type>
@@ -2564,7 +2553,7 @@
           <name>r_mentionable</name>
           <initializer>=		0b00000100</initializer>
           <briefdescription>
-<para>Mentionable with a ping. </para>
+<para>Mentionable with an @ping. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -2747,7 +2736,7 @@
           <name>p_mention_everyone</name>
           <initializer>=	0x0000020000</initializer>
           <briefdescription>
-<para>allows for using the everyone and the here tag to notify users in a channel </para>
+<para>allows for using the @everyone and the @here tag to notify users in a channel </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -3811,9 +3800,9 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="215" column="23" bodyfile="include/dpp/cluster.h" bodystart="215" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" prot="public" static="no">
-        <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int64_t, bool, double &gt;</type>
-        <definition>typedef std::variant&lt;std::monostate, std::string, dpp::role, dpp::channel, dpp::resolved_user, int64_t, bool, double&gt; dpp::command_parameter</definition>
+      <memberdef kind="typedef" id="namespacedpp_1abb2baec22d57fda4e7441777c0f6c09b" prot="public" static="no">
+        <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int32_t, bool &gt;</type>
+        <definition>typedef std::variant&lt;std::monostate, std::string, dpp::role, dpp::channel, dpp::resolved_user, int32_t, bool&gt; dpp::command_parameter</definition>
         <argsstring></argsstring>
         <name>command_parameter</name>
         <briefdescription>
@@ -3837,10 +3826,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="120" column="21" bodyfile="include/dpp/commandhandler.h" bodystart="120" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="119" column="21" bodyfile="include/dpp/commandhandler.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" prot="public" static="no">
-        <type>std::vector&lt; std::pair&lt; std::string, <ref refid="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" kindref="member">command_parameter</ref> &gt; &gt;</type>
+        <type>std::vector&lt; std::pair&lt; std::string, <ref refid="namespacedpp_1abb2baec22d57fda4e7441777c0f6c09b" kindref="member">command_parameter</ref> &gt; &gt;</type>
         <definition>typedef std::vector&lt;std::pair&lt;std::string, command_parameter&gt; &gt; dpp::parameter_list_t</definition>
         <argsstring></argsstring>
         <name>parameter_list_t</name>
@@ -3851,7 +3840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="126" column="21" bodyfile="include/dpp/commandhandler.h" bodystart="126" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="125" column="21" bodyfile="include/dpp/commandhandler.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a72a8ab3231965d0e361f305a7fe431f3" prot="public" static="no">
         <type>std::function&lt; void(const std::string &amp;, const <ref refid="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" kindref="member">parameter_list_t</ref> &amp;, <ref refid="structdpp_1_1command__source" kindref="compound">command_source</ref>)&gt;</type>
@@ -3865,7 +3854,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="163" column="23" bodyfile="include/dpp/commandhandler.h" bodystart="163" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="162" column="23" bodyfile="include/dpp/commandhandler.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" prot="public" static="no">
         <type>uint64_t</type>
@@ -3935,7 +3924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="383" column="28" bodyfile="include/dpp/guild.h" bodystart="383" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="381" column="28" bodyfile="include/dpp/guild.h" bodystart="381" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt;</type>
@@ -3949,7 +3938,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="431" column="28" bodyfile="include/dpp/guild.h" bodystart="431" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="429" column="28" bodyfile="include/dpp/guild.h" bodystart="429" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref> &gt;</type>
@@ -3991,7 +3980,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1119" column="28" bodyfile="include/dpp/message.h" bodystart="1119" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1116" column="28" bodyfile="include/dpp/message.h" bodystart="1116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
@@ -4005,7 +3994,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1122" column="28" bodyfile="include/dpp/message.h" bodystart="1122" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1119" column="28" bodyfile="include/dpp/message.h" bodystart="1119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref> &gt;</type>
@@ -4019,7 +4008,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1125" column="28" bodyfile="include/dpp/message.h" bodystart="1125" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1122" column="28" bodyfile="include/dpp/message.h" bodystart="1122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a037f40c104056183a26a4b4dbdf76f4f" prot="public" static="no">
         <type>std::unordered_map&lt; std::string, <ref refid="classdpp_1_1presence" kindref="compound">presence</ref> &gt;</type>
@@ -4064,11 +4053,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="223" column="28" bodyfile="include/dpp/role.h" bodystart="223" bodyend="-1"/>
+        <location file="include/dpp/role.h" line="208" column="28" bodyfile="include/dpp/role.h" bodystart="208" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" prot="public" static="no">
-        <type>std::variant&lt; std::monostate, std::string, int64_t, bool, <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, double &gt;</type>
-        <definition>typedef std::variant&lt;std::monostate, std::string, int64_t, bool, snowflake, double&gt; dpp::command_value</definition>
+      <memberdef kind="typedef" id="namespacedpp_1acba8fe9be2a2912f93fed30293321f42" prot="public" static="no">
+        <type>std::variant&lt; std::monostate, std::string, int32_t, bool, <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
+        <definition>typedef std::variant&lt;std::monostate, std::string, int32_t, bool, snowflake&gt; dpp::command_value</definition>
         <argsstring></argsstring>
         <name>command_value</name>
         <briefdescription>
@@ -4273,7 +4262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordvoiceclient.cpp" line="47" column="13" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="47" bodyend="-1"/>
+        <location file="src/dpp/discordvoiceclient.cpp" line="38" column="13" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a4f29330ede66fa21fc47c361a9c51a7b" prot="public" static="yes" mutable="no">
         <type>std::string</type>
@@ -4289,20 +4278,6 @@
         </inbodydescription>
         <location file="src/dpp/queues.cpp" line="52" column="20" bodyfile="src/dpp/queues.cpp" bodystart="52" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a27df95e52167e3d7020ee6ad7958eaa8" prot="public" static="yes" mutable="no">
-        <type>const char *</type>
-        <definition>const char* dpp::DISCORD_HOST</definition>
-        <argsstring></argsstring>
-        <name>DISCORD_HOST</name>
-        <initializer>= &quot;https://discord.com&quot;</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="53" column="19" bodyfile="src/dpp/queues.cpp" bodystart="53" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a5dd1452ee8156729d4cb1ae5cbfdda87" prot="public" static="no" mutable="no">
         <type>const int</type>
         <definition>const int dpp::ERROR_STATUS</definition>
@@ -4315,7 +4290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="83" column="11" bodyfile="src/dpp/sslclient.cpp" bodystart="83" bodyend="-1"/>
+        <location file="src/dpp/sslclient.cpp" line="79" column="11" bodyfile="src/dpp/sslclient.cpp" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1ab5f42fb08301629416cbca4d5412c0fd" prot="public" static="no" mutable="no">
         <type>const unsigned char</type>
@@ -5493,7 +5468,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/guild.cpp" line="108" column="6" bodyfile="src/dpp/guild.cpp" bodystart="108" bodyend="123" declfile="include/dpp/guild.h" declline="428" declcolumn="6"/>
+        <location file="src/dpp/guild.cpp" line="108" column="6" bodyfile="src/dpp/guild.cpp" bodystart="108" bodyend="123" declfile="include/dpp/guild.h" declline="426" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a4d0e7257dbc68790bbaa6a34a20b776d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5522,7 +5497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="73" column="6" bodyfile="src/dpp/queues.cpp" bodystart="73" bodyend="101"/>
+        <location file="src/dpp/queues.cpp" line="68" column="6" bodyfile="src/dpp/queues.cpp" bodystart="68" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a971c15a3dd2177d329cdef9c2cdc55f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -5540,7 +5515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="516" column="13" bodyfile="src/dpp/queues.cpp" bodystart="516" bodyend="537" declfile="include/dpp/queues.h" declline="35" declcolumn="13"/>
+        <location file="src/dpp/queues.cpp" line="459" column="13" bodyfile="src/dpp/queues.cpp" bodystart="459" bodyend="480" declfile="include/dpp/queues.h" declline="35" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ae5041ec3547b4d4b7bf3416eea9b6403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5792,7 +5767,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="208" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="208" bodyend="247" declfile="include/dpp/slashcommand.h" declline="275" declcolumn="6"/>
+        <location file="src/dpp/slashcommand.cpp" line="208" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="208" bodyend="243" declfile="include/dpp/slashcommand.h" declline="275" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a1bfffa121ee7a78fe2c0e4d4a9a7fa17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5834,7 +5809,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="249" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="249" bodyend="256" declfile="include/dpp/slashcommand.h" declline="304" declcolumn="6"/>
+        <location file="src/dpp/slashcommand.cpp" line="245" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="245" bodyend="252" declfile="include/dpp/slashcommand.h" declline="304" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aabc378142329f7d4fe1ac82c81027114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5876,7 +5851,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="258" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="258" bodyend="267" declfile="include/dpp/slashcommand.h" declline="328" declcolumn="6"/>
+        <location file="src/dpp/slashcommand.cpp" line="254" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="254" bodyend="263" declfile="include/dpp/slashcommand.h" declline="328" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a1d5a166cc8328a1d2728e9e451c966f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5918,7 +5893,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="269" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="269" bodyend="343" declfile="include/dpp/slashcommand.h" declline="373" declcolumn="6"/>
+        <location file="src/dpp/slashcommand.cpp" line="265" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="265" bodyend="339" declfile="include/dpp/slashcommand.h" declline="373" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a36d2c45cce93740da4da28ef18e90a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5960,7 +5935,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/user.cpp" line="156" column="6" bodyfile="src/dpp/user.cpp" bodystart="156" bodyend="182" declfile="include/dpp/user.h" declline="244" declcolumn="6"/>
+        <location file="src/dpp/user.cpp" line="156" column="6" bodyfile="src/dpp/user.cpp" bodystart="156" bodyend="181" declfile="include/dpp/user.h" declline="244" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a981df68922716d97ba921fd2027c3513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::string &gt;</type>

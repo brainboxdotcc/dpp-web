@@ -9,7 +9,6 @@ var namespacedpp_1_1utility =
     [ "exec", "namespacedpp_1_1utility.html#a329ced24b62e56f2f137e2db637497f6", null ],
     [ "has_voice", "namespacedpp_1_1utility.html#a67c39c1d585e4efc89518e643c4ca112", null ],
     [ "loglevel", "namespacedpp_1_1utility.html#a67c212540ecc5258241898a8973caebe", null ],
-    [ "time_f", "namespacedpp_1_1utility.html#a94498cd13d062928e0158f42b38ceb8a", null ],
     [ "utf8len", "namespacedpp_1_1utility.html#a915b95a9f5efa3bcde16540cd3a08d3b", null ],
     [ "utf8substr", "namespacedpp_1_1utility.html#a61d1cf45d36c302d245c05508ce83f84", null ]
 ];

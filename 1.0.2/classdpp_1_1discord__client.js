@@ -18,14 +18,14 @@ var classdpp_1_1discord__client =
     [ "get_voice", "classdpp_1_1discord__client.html#add9c5c491ce195ec7f0127d6c8ec36b7", null ],
     [ "GetQueueSize", "classdpp_1_1discord__client.html#aca66e47e5e2d6fcd0bd17187465107db", null ],
     [ "GetState", "classdpp_1_1discord__client.html#ad699ad1f6cefc29a1868fdfca530c550", null ],
-    [ "handle_buffer", "classdpp_1_1discord__client.html#a96a1c910426a6094a81f5bf26ce9119b", null ],
+    [ "HandleBuffer", "classdpp_1_1discord__client.html#a93e9461b921ebae46f3063d2503621d0", null ],
     [ "HandleEvent", "classdpp_1_1discord__client.html#a189b8eb73439b8ac82bc132b9acde04c", null ],
     [ "HandleFrame", "classdpp_1_1discord__client.html#af4c5772b702123423fa5ad2a12d11804", null ],
     [ "is_connected", "classdpp_1_1discord__client.html#af59b7db59d0fe39259efcb2380016ee4", null ],
     [ "log", "classdpp_1_1discord__client.html#a9880e3f13c00cd6e4397fe64ae23b4d0", null ],
-    [ "one_second_timer", "classdpp_1_1discord__client.html#a8e90fb79f5686c73a2024ed6ba704c6b", null ],
+    [ "OneSecondTimer", "classdpp_1_1discord__client.html#ae0d9e1814c13c386ca55bc6d75708de0", null ],
     [ "QueueMessage", "classdpp_1_1discord__client.html#afbb1b789c7b365c1dfe776316d5a9829", null ],
-    [ "read_loop", "classdpp_1_1discord__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
+    [ "ReadLoop", "classdpp_1_1discord__client.html#ad6a736a578cc10fa747ca1e2875fbdf5", null ],
     [ "Run", "classdpp_1_1discord__client.html#ae768cabb169f9501bba20704867110e5", null ],
     [ "write", "classdpp_1_1discord__client.html#aac65765349cbd3e787c0fd2af576ec6d", null ],
     [ "buffer", "classdpp_1_1discord__client.html#ae0e5e0799448bf29506bfcc21168d3fa", null ],
@@ -59,6 +59,5 @@ var classdpp_1_1discord__client =
     [ "ssl", "classdpp_1_1discord__client.html#afd57f219d186fda6496e966910b771ad", null ],
     [ "thread_id", "classdpp_1_1discord__client.html#a48586d5bfd6ce1e8f58770c7bfcc5c27", null ],
     [ "token", "classdpp_1_1discord__client.html#ac6f6acb88970deecd85236fc0df8be78", null ],
-    [ "voice_mutex", "classdpp_1_1discord__client.html#a4ef561c63eecce36ba9384bbb70e8f19", null ],
-    [ "websocket_ping", "classdpp_1_1discord__client.html#a5e39136f09297f7ba0ab6a449e435f3d", null ]
+    [ "voice_mutex", "classdpp_1_1discord__client.html#a4ef561c63eecce36ba9384bbb70e8f19", null ]
 ];

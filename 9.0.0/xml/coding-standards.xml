@@ -42,14 +42,14 @@
 </sect1>
 <sect1 id="coding-standards_1autotoc_md50">
 <title>Symbol exporting</title>
-<para>If you export a class which is to be accessible to users, be sure to prefix it with the <computeroutput>CoreExport</computeroutput> macro, for example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoreExport<sp/>my_new_class<sp/>{</highlight></codeline>
+<para>If you export a class which is to be accessible to users, be sure to prefix it with the <computeroutput>DPP_EXPORT</computeroutput> macro, for example:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>
 <codeline><highlight class="normal">};</highlight></codeline>
 </programlisting></para>
-<para>The <computeroutput>CoreExport</computeroutput> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</para>
+<para>The <computeroutput>DPP_EXPORT</computeroutput> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</para>
 </sect1>
 <sect1 id="coding-standards_1autotoc_md51">
 <title>Public vs private vs protected</title>
@@ -82,7 +82,7 @@
 <sect1 id="coding-standards_1autotoc_md58">
 <title>Fluent design</title>
 <para>Where possible, if you are adding methods to a class you should consider fluent design. Fluent design is the use of class methods tha return a reference to self (via <computeroutput>return *this</computeroutput>), so that you can chain object method calls together (in the way <computeroutput><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref></computeroutput> and <computeroutput><ref refid="structdpp_1_1embed" kindref="compound">dpp::embed</ref></computeroutput> do). For example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoreExport<sp/>my_new_class<sp/>{</highlight></codeline>
+<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>

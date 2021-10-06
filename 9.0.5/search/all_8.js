@@ -89,7 +89,7 @@ var searchData=
   ['is_5fcertified_5fmoderator_86',['is_certified_moderator',['../classdpp_1_1user.html#a88d7f40223baa835b92f6aa54af42420',1,'dpp::user']]],
   ['is_5fcommunity_87',['is_community',['../classdpp_1_1guild.html#aaf353ec02bc9a4fe25544ec78ee93a8f',1,'dpp::guild']]],
   ['is_5fcompleted_88',['is_completed',['../classdpp_1_1http__request.html#ab5f1688d8b657f6d0f0a4dd8df7b8731',1,'dpp::http_request']]],
-  ['is_5fconnected_89',['is_connected',['../classdpp_1_1discord__client.html#af59b7db59d0fe39259efcb2380016ee4',1,'dpp::discord_client::is_connected()'],['../classdpp_1_1discord__voice__client.html#a1062401920a3462500f2c642138095c0',1,'dpp::discord_voice_client::is_connected()']]],
+  ['is_5fconnected_89',['is_connected',['../classdpp_1_1discord__voice__client.html#a1062401920a3462500f2c642138095c0',1,'dpp::discord_voice_client::is_connected()'],['../classdpp_1_1discord__client.html#af59b7db59d0fe39259efcb2380016ee4',1,'dpp::discord_client::is_connected()']]],
   ['is_5fcrosspost_90',['is_crosspost',['../structdpp_1_1message.html#a03ce860de6231985a823f8ce2dd2dd8d',1,'dpp::message']]],
   ['is_5fcrossposted_91',['is_crossposted',['../structdpp_1_1message.html#acd532877b68dcd3f1713fd6df9045ed2',1,'dpp::message']]],
   ['is_5fcustom_92',['is_custom',['../classdpp_1_1voiceregion.html#a2acea0a6fa26f8713e7ff712c21626b4',1,'dpp::voiceregion']]],
@@ -147,8 +147,10 @@ var searchData=
   ['is_5fvip_144',['is_vip',['../classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14',1,'dpp::voiceregion']]],
   ['is_5fvoice_5fchannel_145',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
   ['is_5fwelcome_5fscreen_5fenabled_146',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]],
-  ['issuer_147',['issuer',['../structdpp_1_1command__source.html#ad81aa8dca95492d9e26488cb22d4df45',1,'dpp::command_source']]],
-  ['it_5fapplication_5fcommand_148',['it_application_command',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0',1,'dpp']]],
-  ['it_5fcomponent_5fbutton_149',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
-  ['it_5fping_150',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]]
+  ['isfinite_147',['isfinite',['../namespacedetail.html#ab69f2583a2a167ea0b0e4c333448b113',1,'detail']]],
+  ['isnan_148',['isnan',['../namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841',1,'detail']]],
+  ['issuer_149',['issuer',['../structdpp_1_1command__source.html#ad81aa8dca95492d9e26488cb22d4df45',1,'dpp::command_source']]],
+  ['it_5fapplication_5fcommand_150',['it_application_command',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0',1,'dpp']]],
+  ['it_5fcomponent_5fbutton_151',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
+  ['it_5fping_152',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]]
 ];

@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="md_docpages__z_07__r_e_s_t" kind="page">
+    <compoundname>md_docpages_Z_07_REST</compoundname>
+    <title>REST Calls</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Each REST call has a different effect on discord. Each is considered a distinct &quot;command&quot; with a reply. All REST calls take time to complete. Depending on current load, discord latency, and rate limits, they may return almost instantly to the callback function, or may take seconds to complete.</para>
+<para>Click each item to find details on the specifics of the call.</para>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md95">
+<title>dpp::cluster::message_get (snowflake, snowflake, callback)</title>
+<para>Get a single message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md96">
+<title>dpp::cluster::messages_get (snowflake, snowflake around, snowflake before, snowflake after, snowflake limit, callback)</title>
+<para>Get multiple messages</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md97">
+<title>dpp::cluster::message_create (message, callback)</title>
+<para>Send a message (may include embeds, files)</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md98">
+<title>dpp::cluster::message_crosspost (snowflake, snowflake, callback)</title>
+<para>Crosspost a news message to other servers</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md99">
+<title>dpp::cluster::message_edit (message, callback)</title>
+<para>Update a mesage&apos;s content (including embeds)</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md100">
+<title>dpp::cluster::message_add_reaction (message,  callback)</title>
+<para>Add a reaction to a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md101">
+<title>dpp::cluster::message_delete_own_reaction (message,  callback)</title>
+<para>Delete bot&apos;s reaction from a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md102">
+<title>dpp::cluster::message_delete_reaction (message, snowflake, callback)</title>
+<para>Delete another user&apos;s reaction from a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md103">
+<title>dpp::cluster::message_get_reactions (message, snowflake before, snowflake after, snowflake, callback)</title>
+<para>Get all reactions for a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md104">
+<title>dpp::cluster::message_delete_all_reactions (message, callback)</title>
+<para>Detel all reactions for a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md105">
+<title>dpp::cluster::message_delete_reaction_emoji (message,  callback)</title>
+<para>Delete all reactions for a message that reacted with a particular emoji</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md106">
+<title>dpp::cluster::message_delete (snowflake, snowflake, callback)</title>
+<para>Delete a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md107">
+<title>dpp::cluster::message_delete_bulk (vector&lt;snowflake&gt;, snowflake, callback)</title>
+<para>Delete a set of messages</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md108">
+<title>dpp::cluster::channel_get (snowflake c, callback)</title>
+<para>Get a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md109">
+<title>dpp::cluster::channels_get (snowflake, callback)</title>
+<para>Get all channels for a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md110">
+<title>dpp::cluster::channel_create (channel, callback)</title>
+<para>Create a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md111">
+<title>dpp::cluster::channel_edit (channel, callback)</title>
+<para>Edit a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md112">
+<title>dpp::cluster::channel_edit_position (channel, callback)</title>
+<para>Edit a channel&apos;s position in the channel list</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md113">
+<title>dpp::cluster::channel_edit_permissions (channel, snowflake, uint32_t, uint32_t, bool member, callback)</title>
+<para>Edit permissions for a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md114">
+<title>dpp::cluster::channel_delete (snowflake, callback)</title>
+<para>Delete a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md115">
+<title>dpp::cluster::invite_get (code, callback)</title>
+<para>Get an invite for a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md116">
+<title>dpp::cluster::invite_delete (code, callback)</title>
+<para>Delete an invite from a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md117">
+<title>dpp::cluster::channel_invites_get (channel, callback)</title>
+<para>Get all invites for a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md118">
+<title>dpp::cluster::channel_invite_create (channel, invite, callback)</title>
+<para>Create an invite for a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md119">
+<title>dpp::cluster::pins_get (snowflake, callback)</title>
+<para>Get pinned messages for a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md120">
+<title>dpp::cluster::gdm_add (snowflake, snowflake,  callback)</title>
+<para>Add user to a group DM</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md121">
+<title>dpp::cluster::gdm_remove (snowflake, snowflake, callback)</title>
+<para>Remove user from a group DM</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md122">
+<title>dpp::cluster::channel_delete_permission (channel, snowflake, callback)</title>
+<para>Delete permission entry from a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md123">
+<title>dpp::cluster::channel_follow_news (channel, snowflake, callback)</title>
+<para>Follow a news channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md124">
+<title>dpp::cluster::channel_typing (channel, callback)</title>
+<para>Indicate to a channel that the bot is typing</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md125">
+<title>dpp::cluster::message_pin (snowflake, snowflake, callback)</title>
+<para>Pin a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md126">
+<title>dpp::cluster::message_unpin (snowflake, snowflake, callback)</title>
+<para>Unpin a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md127">
+<title>dpp::cluster::guild_get (snowflake, callback)</title>
+<para>Get a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md128">
+<title>dpp::cluster::guild_get_preview (snowflake, callback)</title>
+<para>Get a guild&apos;s preview</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md129">
+<title>dpp::cluster::guild_get_member (snowflake, snowflake, callback)</title>
+<para>Get a guild member</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md130">
+<title>dpp::cluster::guild_get_members (snowflake, callback)</title>
+<para>Get all guild members</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md131">
+<title>dpp::cluster::guild_add_member (guild_member,  callback)</title>
+<para>Add a guild member (requires OAUTH2)</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md132">
+<title>dpp::cluster::guild_edit_member (guild_member, callback)</title>
+<para>Edit a guild member</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md133">
+<title>dpp::cluster::guild_set_nickname (snowflake, callback)</title>
+<para>Set a guild member&apos;s nickname</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md134">
+<title>dpp::cluster::guild_member_add_role (snowflake, snowflake, snowflake, callback)</title>
+<para>Add a role to a member of a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md135">
+<title>dpp::cluster::guild_member_delete_role (snowflake, snowflake, snowflake, callback)</title>
+<para>Delete a role from a member of a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md136">
+<title>dpp::cluster::guild_member_delete (snowflake, snowflake, callback)</title>
+<para>Delete (kick!) a guild member</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md137">
+<title>dpp::cluster::guild_ban_add (snowflake, snowflake, uint32_t,  callback)</title>
+<para>Add a ban for a user</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md138">
+<title>dpp::cluster::guild_ban_delete (snowflake, snowflake, callback)</title>
+<para>Delete a ban</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md139">
+<title>dpp::cluster::guild_get_bans (snowflake, callback)</title>
+<para>Get the ban list</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md140">
+<title>dpp::cluster::guild_get_ban (snowflake, snowflake, callback)</title>
+<para>Get one ban</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md141">
+<title>dpp::cluster::template_get (code, callback)</title>
+<para>Get a guild template</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md142">
+<title>dpp::cluster::guild_create_from_template (code,  callback)</title>
+<para>Create a guild from a template</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md143">
+<title>dpp::cluster::guild_templates_get (snowflake, callback)</title>
+<para>Get all guild templates in a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md144">
+<title>dpp::cluster::guild_template_create (snowflake,  callback)</title>
+<para>Create a guild template from a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md145">
+<title>dpp::cluster::guild_template_sync (snowflake, callback)</title>
+<para>Synchronise a guild template with current settings</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md146">
+<title>dpp::cluster::guild_template_modify (snowflake,, callback)</title>
+<para>Modify an existing guild template</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md147">
+<title>dpp::cluster::guild_template_delete (snowflake, callback)</title>
+<para>Delete a guild template</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md148">
+<title>dpp::cluster::guild_create (guild, callback)</title>
+<para>Create a guild (only applicable for bots on less than 10 guilds)</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md149">
+<title>dpp::cluster::guild_edit (guild, callback)</title>
+<para>Edit a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md150">
+<title>dpp::cluster::guild_delete (snowflake, callback)</title>
+<para>Delete a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md151">
+<title>dpp::cluster::guild_emojis_get (snowflake, callback)</title>
+<para>Get all guild emojis</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md152">
+<title>dpp::cluster::guild_emoji_get (snowflake, snowflake, callback)</title>
+<para>Get an individual guild emoji</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md153">
+<title>dpp::cluster::guild_emoji_create (snowflake, emoji, callback)</title>
+<para>Create a guild emoji</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md154">
+<title>dpp::cluster::guild_emoji_edit (snowflake, emoji, callback)</title>
+<para>Edit a guild emoji</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md155">
+<title>dpp::cluster::guild_emoji_delete (snowflake, snowflake, callback)</title>
+<para>Delete a guild emoji</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md156">
+<title>dpp::cluster::guild_get_prune_counts (snowflake, prune, callback)</title>
+<para>Get the calculated counts for a prune (mass kick) operation</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md157">
+<title>dpp::cluster::guild_begin_prune (snowflake, prune, callback)</title>
+<para>Begin a guild prune (mass kick) operation</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md158">
+<title>dpp::cluster::guild_get_voice_regions hsnowflake, callback)</title>
+<para>Get a list of voice regions applicable to a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md159">
+<title>dpp::cluster::get_guild_invites (snowflake, callback)</title>
+<para>Get a list of invites for a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md160">
+<title>dpp::cluster::guild_get_integrations (snowflake, callback)</title>
+<para>Get a list of integrations on a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md161">
+<title>dpp::cluster::guild_modify_integration (snowflake, integration, callback)</title>
+<para>Modify a guild integration</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md162">
+<title>dpp::cluster::guild_delete_integration (snowflake, snowflake, callback)</title>
+<para>Delete a guild integration</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md163">
+<title>dpp::cluster::guild_sync_integration (snowflake, snowflake, callback)</title>
+<para>Sync a guild integration with the guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md164">
+<title>dpp::cluster::guild_get_widget (snowflake, callback)</title>
+<para>Get the guilds widget settings</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md165">
+<title>dpp::cluster::guild_edit_widget (snowflake, guild_widget, callback)</title>
+<para>Modify the guilds widget settings</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md166">
+<title>dpp::cluster::guild_get_vanity (snowflake, callback)</title>
+<para>Get a guild&apos;s vanity URL if applicable</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md167">
+<title>dpp::cluster::create_webhook (webhook, callback)</title>
+<para>Create a webhook</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md168">
+<title>dpp::cluster::get_guild_webhooks (snowflake, callback)</title>
+<para>Get a list of all webhooks</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md169">
+<title>dpp::cluster::get_channel_webhooks (snowflake, callback)</title>
+<para>Get webhooks for a channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md170">
+<title>dpp::cluster::get_webhook (snowflake, callback)</title>
+<para>Get a specific webhook</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md171">
+<title>dpp::cluster::get_webhook_with_token (snowflake, callback)</title>
+<para>Get a webhook using its access token</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md172">
+<title>dpp::cluster::edit_webhook (webhook, callback)</title>
+<para>Edit a webhook</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md173">
+<title>dpp::cluster::edit_webhook_with_token (webhook, callback)</title>
+<para>Edit a webhook using its access token</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md174">
+<title>dpp::cluster::delete_webhook (snowflake, callback)</title>
+<para>Delete a webhook</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md175">
+<title>dpp::cluster::delete_webhook_with_token (snowflake, callback)</title>
+<para>Delete a webhook using its access token</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md176">
+<title>dpp::cluster::execute_webhook (webhook, message, callback)</title>
+<para>Execute a webhook, causing it to send a message</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md177">
+<title>dpp::cluster::edit_webhook_message (webhook, message, callback)</title>
+<para>Edit a message previously sent by a webhook</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md178">
+<title>dpp::cluster::delete_webhook_message (webhook, snowflake, callback)</title>
+<para>Delete a message previously sent by a webhook</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md179">
+<title>dpp::cluster::roles_get (snowflake, callback)</title>
+<para>Get all roles for a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md180">
+<title>dpp::cluster::role_create (role, callback)</title>
+<para>Create a role on a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md181">
+<title>dpp::cluster::role_edit (role, callback)</title>
+<para>Edit a role on a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md182">
+<title>dpp::cluster::role_edit_position (role, callback)</title>
+<para>Edit a role&apos;s position in the list of roles</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md183">
+<title>dpp::cluster::role_delete (snowflake, snowflake, callback)</title>
+<para>Delete a role</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md184">
+<title>dpp::cluster::user_get (snowflake, callback)</title>
+<para>Get information on a user</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md185">
+<title>dpp::cluster::current_user_get (callback)</title>
+<para>Get the information on the current (bot) user</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md186">
+<title>dpp::cluster::current_user_get_guilds (callback)</title>
+<para>Get the information on the current (bot) user&apos;s guilds. Does not work if the bot is on over 100,000 guilds.</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md187">
+<title>dpp::cluster::current_user_edit (settings, image_data, image_type, callback)</title>
+<para>Change the settings of the current (bot) user</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md188">
+<title>dpp::cluster::current_user_get_dms (callback)</title>
+<para>Get the current (bot) user&apos;s dm channels</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md189">
+<title>dpp::cluster::create_dm_channel (snowflake, callback)</title>
+<para>Create a DM channel</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md190">
+<title>dpp::cluster::current_user_leave_guild (snowflake, callback)</title>
+<para>Leave a guild</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md191">
+<title>dpp::cluster::get_voice_regions (callback)</title>
+<para>Get a global list of voice regions applicable to all users</para>
+</sect2>
+<sect2 id="md_docpages__z_07__r_e_s_t_1autotoc_md192">
+<title>dpp::cluster::get_gateway_bot (callback)</title>
+<para>Get the information required for a bot to register with the websocket gateway </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/Z_07_REST.md"/>
+  </compounddef>
+</doxygen>
