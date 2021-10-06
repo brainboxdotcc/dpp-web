@@ -293,11 +293,11 @@ var namespacedpp =
       [ "cotype_button", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e", null ],
       [ "cotype_select", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc", null ]
     ] ],
-    [ "emoji_flags", "namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8", [
-      [ "e_require_colons", "namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8ad9baba8ca224a0acb80019fcd3a9a0cb", null ],
-      [ "e_managed", "namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8aa8e9ef37a91a1bbe4012548a0fd3bd82", null ],
-      [ "e_animated", "namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a9036ca4ebc156999b7efd35de1adb2f5", null ],
-      [ "e_available", "namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a5acfa9eb7e214d29511692811b93890d", null ]
+    [ "emoji_flags", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c", [
+      [ "e_require_colons", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb", null ],
+      [ "e_managed", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947caa8e9ef37a91a1bbe4012548a0fd3bd82", null ],
+      [ "e_animated", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca9036ca4ebc156999b7efd35de1adb2f5", null ],
+      [ "e_available", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d", null ]
     ] ],
     [ "guild_flags", "namespacedpp.html#a94aba4d1f2669c7da3b676859d54602f", [
       [ "g_large", "namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b", null ],
@@ -490,11 +490,11 @@ var namespacedpp =
       [ "r_us_west", "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a6c27cbd85161eb3666d8f136391a5f58", null ],
       [ "r_western_europe", "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a8d6403af9f4d5b0b849c3f883d0e49e8", null ]
     ] ],
-    [ "role_flags", "namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2e", [
-      [ "r_hoist", "namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea28bd72d5ab200ddcdadd9759c84f2c2e", null ],
-      [ "r_managed", "namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2eaed8ce041eb7cb3a5cf913de8efbbddc6", null ],
-      [ "r_mentionable", "namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea50fbd694d79806b3b099b76c36765b26", null ],
-      [ "r_premium_subscriber", "namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea3db26ad1126a3dda385d750b0da11026", null ]
+    [ "role_flags", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53", [
+      [ "r_hoist", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e", null ],
+      [ "r_managed", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6", null ],
+      [ "r_mentionable", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26", null ],
+      [ "r_premium_subscriber", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026", null ]
     ] ],
     [ "role_permissions", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f", [
       [ "p_create_instant_invite", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab", null ],

@@ -96,8 +96,8 @@ var NAVTREEINDEX9 =
 "functions_type.html":[7,3,3],
 "functions_u.html":[7,3,0,20],
 "functions_v.html":[7,3,0,21],
-"functions_vars.html":[7,3,2,0],
 "functions_vars.html":[7,3,2],
+"functions_vars.html":[7,3,2,0],
 "functions_vars_b.html":[7,3,2,1],
 "functions_vars_c.html":[7,3,2,2],
 "functions_vars_d.html":[7,3,2,3],
@@ -218,11 +218,6 @@ var NAVTREEINDEX9 =
 "namespacedpp.html#a04c02d7d0ead46eea16ed48015e82a99":[6,0,1,269],
 "namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f":[6,0,1,170],
 "namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7":[6,0,1,154],
-"namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2e":[6,0,1,207],
-"namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea28bd72d5ab200ddcdadd9759c84f2c2e":[6,0,1,207,0],
-"namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea3db26ad1126a3dda385d750b0da11026":[6,0,1,207,3],
-"namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea50fbd694d79806b3b099b76c36765b26":[6,0,1,207,2],
-"namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2eaed8ce041eb7cb3a5cf913de8efbbddc6":[6,0,1,207,1],
 "namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475":[6,0,1,169],
 "namespacedpp.html#a0ec00af0eb7cc6ae98fffbbd589e102b":[6,0,1,243],
 "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522":[6,0,1,202],
@@ -249,5 +244,10 @@ var NAVTREEINDEX9 =
 "namespacedpp.html#a1d5a166cc8328a1d2728e9e451c966f5":[6,0,1,229],
 "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bff":[6,0,1,211],
 "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca":[6,0,1,211,0],
-"namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede":[6,0,1,211,1]
+"namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede":[6,0,1,211,1],
+"namespacedpp.html#a1ec69281fca102c8dbc0afb117e18c3b":[6,0,1,242],
+"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0":[6,0,1,215],
+"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a":[6,0,1,215,0],
+"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354":[6,0,1,215,1],
+"namespacedpp.html#a219aedbe5bf37835c4a65115fccba278":[6,0,1,155]
 };

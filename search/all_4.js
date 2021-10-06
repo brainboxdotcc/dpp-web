@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['e_5fanimated_0',['e_animated',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a9036ca4ebc156999b7efd35de1adb2f5',1,'dpp']]],
-  ['e_5favailable_1',['e_available',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a5acfa9eb7e214d29511692811b93890d',1,'dpp']]],
-  ['e_5fmanaged_2',['e_managed',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8aa8e9ef37a91a1bbe4012548a0fd3bd82',1,'dpp']]],
-  ['e_5frequire_5fcolons_3',['e_require_colons',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8ad9baba8ca224a0acb80019fcd3a9a0cb',1,'dpp']]],
+  ['e_5fanimated_0',['e_animated',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca9036ca4ebc156999b7efd35de1adb2f5',1,'dpp']]],
+  ['e_5favailable_1',['e_available',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d',1,'dpp']]],
+  ['e_5fmanaged_2',['e_managed',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947caa8e9ef37a91a1bbe4012548a0fd3bd82',1,'dpp']]],
+  ['e_5frequire_5fcolons_3',['e_require_colons',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb',1,'dpp']]],
   ['edit_5fresponse_4',['edit_response',['../structdpp_1_1interaction__create__t.html#a690fd3663ea3ffda8ad6d3238f3a7e79',1,'dpp::interaction_create_t::edit_response(const std::string &amp;mt) const'],['../structdpp_1_1interaction__create__t.html#a0bfaf4c5d6a7de14ffeea0e4bf160ba6',1,'dpp::interaction_create_t::edit_response(const message &amp;m) const']]],
   ['edit_5fwebhook_5',['edit_webhook',['../classdpp_1_1cluster.html#af319c151f1b9b2b578d9303bab7ce5d0',1,'dpp::cluster']]],
   ['edit_5fwebhook_5fmessage_6',['edit_webhook_message',['../classdpp_1_1cluster.html#a86a37684f9d12edd4ca7d00296a5443b',1,'dpp::cluster']]],
@@ -18,7 +18,7 @@ var searchData=
   ['embeds_15',['embeds',['../structdpp_1_1message.html#a9c0eb22ba371ead6d960bdf7c9838b6e',1,'dpp::message']]],
   ['emoji_16',['emoji',['../classdpp_1_1emoji.html',1,'dpp::emoji'],['../classdpp_1_1emoji.html#aaeb35bb6ddb0b46c4099386ba074a0d4',1,'dpp::emoji::emoji(const std::string n, const snowflake i=0, const uint8_t f=0)'],['../classdpp_1_1emoji.html#aee6f71256204a1882749bf3f8939a2e9',1,'dpp::emoji::emoji()'],['../classdpp_1_1component.html#a259175c6c6da17af6d00765088fb73f6',1,'dpp::component::emoji()'],['../structdpp_1_1select__option.html#a87080e97f389b83a93c43198a1380f7b',1,'dpp::select_option::emoji()']]],
   ['emoji_5fcache_17',['emoji_cache',['../namespacedpp.html#a3d2e114ba137f1f5bf6fd9782f41d2f2',1,'dpp']]],
-  ['emoji_5fflags_18',['emoji_flags',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8',1,'dpp']]],
+  ['emoji_5fflags_18',['emoji_flags',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c',1,'dpp']]],
   ['emoji_5fid_19',['emoji_id',['../structdpp_1_1reaction.html#a10ee4c6e61a76d6ad8e9c6d52f123073',1,'dpp::reaction']]],
   ['emoji_5fmap_20',['emoji_map',['../namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9',1,'dpp']]],
   ['emoji_5fname_21',['emoji_name',['../structdpp_1_1reaction.html#a9f0dd8c76b3370670547a34367ea3c30',1,'dpp::reaction']]],
