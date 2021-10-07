@@ -170,6 +170,7 @@ var namespacedpp =
     [ "shard_list", "namespacedpp.html#a13c4d4e6238396245b349e6a637897e0", null ],
     [ "slashcommand_map", "namespacedpp.html#adfefe335636cdf5dbbba145a3828c554", null ],
     [ "snowflake", "namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475", null ],
+    [ "socket", "namespacedpp.html#a51156024d6211aef2731770340cfe452", null ],
     [ "sticker_map", "namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f", null ],
     [ "sticker_pack_map", "namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283", null ],
     [ "thread_member_map", "namespacedpp.html#a57e84724c41fed341bee0d653a06076a", null ],

@@ -15,7 +15,7 @@ var searchData=
   ['session_5fstart_5ftotal_12',['session_start_total',['../structdpp_1_1gateway.html#a64fe90aa1ef4e9f32e539b23fe0bf327',1,'dpp::gateway']]],
   ['sessionid_13',['sessionid',['../classdpp_1_1discord__client.html#a66922f8fbb2df8c1c92744f4eb524a52',1,'dpp::discord_client::sessionid()'],['../classdpp_1_1discord__voice__client.html#a8f011c857ff968e44a8e5ddf818a9160',1,'dpp::discord_voice_client::sessionid()']]],
   ['severity_14',['severity',['../structdpp_1_1log__t.html#ae1316a6ace98555175a4c1c70c9d0549',1,'dpp::log_t']]],
-  ['sfd_15',['sfd',['../classdpp_1_1ssl__client.html#a0b6edcf258bcc2153a1b39b5f01403f4',1,'dpp::ssl_client']]],
+  ['sfd_15',['sfd',['../classdpp_1_1ssl__client.html#a423ca70d4046067ebe219f85c7baa540',1,'dpp::ssl_client']]],
   ['shard_16',['shard',['../classdpp_1_1voicestate.html#a94e4a9ddbfb2368a4d06c1cd1f538141',1,'dpp::voicestate']]],
   ['shard_5fid_17',['shard_id',['../classdpp_1_1discord__client.html#aa11253c28f842aad3939e9d3138a0c6d',1,'dpp::discord_client::shard_id()'],['../structdpp_1_1ready__t.html#ad031e4a6c0354ac8ad28b61045c2c09d',1,'dpp::ready_t::shard_id()'],['../structdpp_1_1resumed__t.html#a6427ec22c7567f5b39db9777d114dac7',1,'dpp::resumed_t::shard_id()'],['../classdpp_1_1guild.html#a80181fee5f66b2dd6f24bad72226bf7c',1,'dpp::guild::shard_id()']]],
   ['shards_18',['shards',['../structdpp_1_1gateway.html#aa51b1ff8814f325fa974b887108836b4',1,'dpp::gateway']]],
