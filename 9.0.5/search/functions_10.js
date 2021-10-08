@@ -68,5 +68,5 @@ var searchData=
   ['store_65',['store',['../classdpp_1_1cache.html#a959d7e651c20f8befe5958ee9b9633ba',1,'dpp::cache']]],
   ['strftime_66',['strftime',['../namespacedetail.html#a1f56278fd84d8bc33338c33694a87fb8',1,'detail::strftime(char *str, size_t count, const char *format, const std::tm *time)'],['../namespacedetail.html#aa394945bd077a30102ef2ca015a1540b',1,'detail::strftime(wchar_t *str, size_t count, const wchar_t *format, const std::tm *time)']]],
   ['stringnotnull_67',['StringNotNull',['../namespacedpp.html#acd67ddd4f95dbdac48f554ddcbbeb0b1',1,'dpp']]],
-  ['suppress_5fembeds_68',['suppress_embeds',['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message']]]
+  ['supress_5fembeds_68',['supress_embeds',['../structdpp_1_1message.html#ade17fb77debb971918af8434b0f7477c',1,'dpp::message']]]
 ];
