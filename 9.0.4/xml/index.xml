@@ -534,7 +534,6 @@
   <compound refid="structdpp_1_1command__interaction" kind="struct"><name>dpp::command_interaction</name>
     <member refid="structdpp_1_1command__interaction_1a6e1ddf18af43a38f4385ed418e5bfa7f" kind="variable"><name>id</name></member>
     <member refid="structdpp_1_1command__interaction_1a526dfc98a7e142fc8c28a870e6981853" kind="variable"><name>name</name></member>
-    <member refid="structdpp_1_1command__interaction_1abb6e1caad1c42ecdf4679fd59991d872" kind="variable"><name>resolved</name></member>
     <member refid="structdpp_1_1command__interaction_1a1888851c94c4f2316b20c019c171121b" kind="variable"><name>options</name></member>
   </compound>
   <compound refid="structdpp_1_1command__option" kind="struct"><name>dpp::command_option</name>
@@ -561,6 +560,10 @@
     <member refid="classdpp_1_1command__permission_1ad7a4b773ebea531ba206e6948e6c7ba3" kind="variable"><name>permission</name></member>
   </compound>
   <compound refid="structdpp_1_1command__resolved" kind="struct"><name>dpp::command_resolved</name>
+    <member refid="structdpp_1_1command__resolved_1a253cd8cb71207dbdf0b8f687218f24e3" kind="variable"><name>users</name></member>
+    <member refid="structdpp_1_1command__resolved_1a31c6fdc7a7abe57a049534bcc4dccbd3" kind="variable"><name>members</name></member>
+    <member refid="structdpp_1_1command__resolved_1a6f354275ab39eb9b0771a167fd7af7fc" kind="variable"><name>roles</name></member>
+    <member refid="structdpp_1_1command__resolved_1a5fc7b8909f13bc77e433fae06706253f" kind="variable"><name>channels</name></member>
   </compound>
   <compound refid="structdpp_1_1command__source" kind="struct"><name>dpp::command_source</name>
     <member refid="structdpp_1_1command__source_1a8ed068737789c5230db85047d9499b11" kind="variable"><name>guild_id</name></member>
@@ -584,6 +587,7 @@
     <member refid="classdpp_1_1commandhandler_1acecd44c69a7cee36d1d12aa5b0354d0d" kind="function"><name>route</name></member>
     <member refid="classdpp_1_1commandhandler_1a0438c6a4b44fe2e5101debe846cf0894" kind="function"><name>route</name></member>
     <member refid="classdpp_1_1commandhandler_1a09893dbf101b7d0082b0a13e801a9db9" kind="function"><name>reply</name></member>
+    <member refid="classdpp_1_1commandhandler_1a4ad7a740213d2daf06bf182ba1afc13e" kind="function"><name>thinking</name></member>
   </compound>
   <compound refid="classdpp_1_1component" kind="class"><name>dpp::component</name>
     <member refid="classdpp_1_1component_1afdb70ec9968493ed54bab29135f8b8c6" kind="variable"><name>type</name></member>
@@ -1379,6 +1383,7 @@
     <member refid="classdpp_1_1interaction_1af42be274f0c532e1b227d6725f25ecd3" kind="variable"><name>usr</name></member>
     <member refid="classdpp_1_1interaction_1a3d20499cf0b8b93c655b904847622085" kind="variable"><name>token</name></member>
     <member refid="classdpp_1_1interaction_1a326c799b4b9d813f44f5462dae01e027" kind="variable"><name>version</name></member>
+    <member refid="classdpp_1_1interaction_1aaa88ba118d0a7b5b32090a844610d7e7" kind="variable"><name>resolved</name></member>
     <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
     <member refid="classdpp_1_1interaction_1a23ff816e36c44d2afa51c34a1121a124" kind="function"><name>fill_from_json</name></member>
     <member refid="classdpp_1_1interaction_1a4ee649c8fe2a79e51fffd95315a0cae7" kind="function"><name>build_json</name></member>
@@ -1716,6 +1721,10 @@
     <member refid="classdpp_1_1request__queue_1a147c57abc0a433e1121347b73e7e7642" kind="function"><name>request_queue</name></member>
     <member refid="classdpp_1_1request__queue_1a5ccaae72d03d626852be0a0d3c6b86dd" kind="function"><name>~request_queue</name></member>
     <member refid="classdpp_1_1request__queue_1a59e2169cb34083a6de526d4eafb99fd0" kind="function"><name>post_request</name></member>
+  </compound>
+  <compound refid="structdpp_1_1resolved__user" kind="struct"><name>dpp::resolved_user</name>
+    <member refid="structdpp_1_1resolved__user_1a2637dfddc2584ff21d6772b9540818d4" kind="variable"><name>user</name></member>
+    <member refid="structdpp_1_1resolved__user_1acaa72a6aafeb299aef839a375fb299c7" kind="variable"><name>member</name></member>
   </compound>
   <compound refid="classdpp_1_1events_1_1resumed" kind="class"><name>dpp::events::resumed</name>
     <member refid="classdpp_1_1events_1_1resumed_1a6d76bd654778ec18d8f5101b49c71a0a" kind="function"><name>handle</name></member>
@@ -2614,8 +2623,6 @@
     <member refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58a4476d79df02a4909cd7931d5a7e5f0ac" kind="enumvalue"><name>co_role</name></member>
     <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kind="enum"><name>interaction_response_type</name></member>
     <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede" kind="enumvalue"><name>ir_pong</name></member>
-    <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02adedea5e5d6fb997f7ddaed5d59a55ea9" kind="enumvalue"><name>ir_acknowledge</name></member>
-    <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a55c989cea99cb8ce15439d19ee718619" kind="enumvalue"><name>ir_channel_message</name></member>
     <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c" kind="enumvalue"><name>ir_channel_message_with_source</name></member>
     <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294" kind="enumvalue"><name>ir_deferred_channel_message_with_source</name></member>
     <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312" kind="enumvalue"><name>ir_deferred_update_message</name></member>
@@ -2691,7 +2698,7 @@
     <member refid="namespacedpp_1aa9b8b2be70d0b0b5fdb8e9dddf3ece10" kind="typedef"><name>confirmable_t</name></member>
     <member refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kind="typedef"><name>command_completion_event_t</name></member>
     <member refid="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" kind="typedef"><name>json_encode_t</name></member>
-    <member refid="namespacedpp_1abb8e7d04227af92295494367dcec6a4d" kind="typedef"><name>command_parameter</name></member>
+    <member refid="namespacedpp_1abb2baec22d57fda4e7441777c0f6c09b" kind="typedef"><name>command_parameter</name></member>
     <member refid="namespacedpp_1a6daf230da747f01eeaa36fd3d5e51a65" kind="typedef"><name>parameter_registration_t</name></member>
     <member refid="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" kind="typedef"><name>parameter_list_t</name></member>
     <member refid="namespacedpp_1a72a8ab3231965d0e361f305a7fe431f3" kind="typedef"><name>command_handler</name></member>
@@ -2709,7 +2716,7 @@
     <member refid="namespacedpp_1a037f40c104056183a26a4b4dbdf76f4f" kind="typedef"><name>presence_map</name></member>
     <member refid="namespacedpp_1ae3249e99494d04bb4be50341f474621e" kind="typedef"><name>http_completion_event</name></member>
     <member refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kind="typedef"><name>role_map</name></member>
-    <member refid="namespacedpp_1a210a8688d51d3b313d3959c6dd91c40b" kind="typedef"><name>command_value</name></member>
+    <member refid="namespacedpp_1acba8fe9be2a2912f93fed30293321f42" kind="typedef"><name>command_value</name></member>
     <member refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kind="typedef"><name>slashcommand_map</name></member>
     <member refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kind="typedef"><name>user_map</name></member>
     <member refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kind="typedef"><name>voiceregion_map</name></member>
