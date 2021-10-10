@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"coding-standards.html#autotoc_md46":[4,2,2],
+"coding-standards.html#autotoc_md47":[4,2,3],
 "coding-standards.html#autotoc_md48":[4,2,4],
 "coding-standards.html#autotoc_md49":[4,2,5],
 "coding-standards.html#autotoc_md50":[4,2,6],
@@ -96,8 +98,8 @@ var NAVTREEINDEX9 =
 "functions_type.html":[7,3,3],
 "functions_u.html":[7,3,0,20],
 "functions_v.html":[7,3,0,21],
-"functions_vars.html":[7,3,2,0],
 "functions_vars.html":[7,3,2],
+"functions_vars.html":[7,3,2,0],
 "functions_vars_b.html":[7,3,2,1],
 "functions_vars_c.html":[7,3,2,2],
 "functions_vars_d.html":[7,3,2,3],
@@ -122,8 +124,8 @@ var NAVTREEINDEX9 =
 "functions_w.html":[7,3,0,22],
 "functions_~.html":[7,3,0,23],
 "hierarchy.html":[7,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md62":[0,0],
 "index.html#autotoc_md63":[0,1],
 "index.html#autotoc_md64":[0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede":[6,0,1,212,1],
 "namespacedpp.html#a1ec69281fca102c8dbc0afb117e18c3b":[6,0,1,243],
 "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0":[6,0,1,216],
-"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a":[6,0,1,216,0],
-"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354":[6,0,1,216,1],
-"namespacedpp.html#a219aedbe5bf37835c4a65115fccba278":[6,0,1,155]
+"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a":[6,0,1,216,0]
 };
