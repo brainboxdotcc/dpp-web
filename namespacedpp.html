@@ -153,6 +153,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ban class represents a ban on a guild.  <a href="classdpp_1_1ban.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1bucket__t.html">bucket_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A rate limit bucket. The library builds one of these for each endpoint.  <a href="structdpp_1_1bucket__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1button__click__t.html">button_click_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on button.  <a href="structdpp_1_1button__click__t.html#details">More...</a><br /></td></tr>
@@ -1011,6 +1012,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449a65bb2cb9582bd3e13fc7704e36a5bf54">h_compression</a>
 <br />
  }</td></tr>
+<tr class="memdesc:ae525add0ec39d647375aabe5ce455449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error values. Don't change the order or add extra values here, as they map onto the error values of cpp-httplib.  <a href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449">More...</a><br /></td></tr>
 <tr class="separator:ae525add0ec39d647375aabe5ce455449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a805ef1feb2862a208ec0e9d1be005c88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88a1c5397a2ab65a9b09e466d3e7cf5a82e">m_get</a>
@@ -1294,6 +1296,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a4d0e7257dbc68790bbaa6a34a20b776d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4d0e7257dbc68790bbaa6a34a20b776d">populate_result</a> (const std::string &amp;url, <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;rv, const httplib::Result &amp;res)</td></tr>
 <tr class="separator:a4d0e7257dbc68790bbaa6a34a20b776d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4">url_encode</a> (const std::string &amp;value)</td></tr>
+<tr class="memdesc:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a url parameter similar to php urlencode()  <a href="namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4">More...</a><br /></td></tr>
 <tr class="separator:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1command__option__choice.html">command_option_choice</a> &amp;choice)</td></tr>
 <tr class="memdesc:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to serialize a <a class="el" href="structdpp_1_1command__option__choice.html" title="This struct represents choices in a multiple choice option for a command parameter....">command_option_choice</a> to json  <a href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">More...</a><br /></td></tr>
@@ -2403,7 +2406,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Error values. Don't change the order or add extra values here, as they map onto the error values of cpp-httplib </p>
+
+<p>Error values. Don't change the order or add extra values here, as they map onto the error values of cpp-httplib. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da" name="ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da"></a>h_success&#160;</td><td class="fielddoc"><p >Request successful. </p>
 </td></tr>
@@ -4812,7 +4816,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Encodes a url parameter similar to php urlencode() </p>
+
+<p>Encodes a url parameter similar to php urlencode() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>String to encode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>* std::string URL encoded string </dd></dl>
 
 </div>
 </div>
