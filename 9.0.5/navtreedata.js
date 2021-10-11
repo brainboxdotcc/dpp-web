@@ -63,19 +63,19 @@ var NAVTREEINDEX =
 "classdpp_1_1discord__client.html#a8022a8002cfc6f394016546168ef4085",
 "classdpp_1_1dispatcher.html#a95261b35417e81c65e9046eca9f0d57c",
 "classdpp_1_1events_1_1message__delete__bulk.html",
-"classdpp_1_1guild__widget.html#aedf956fc1f600b82020271b411eb86c8",
-"classdpp_1_1role.html#a80c8b573fc16edfd685294e0326b38d2",
-"classdpp_1_1voiceregion.html#af29355f165f2ee1aeed095f79136c039",
-"index.html#autotoc_md37",
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8",
-"namespacedpp.html#ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da",
-"structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html#a80c4e8ddfad700203b4dfbc1b624c928",
-"structdpp_1_1command__source.html",
-"structdpp_1_1guild__emojis__update__t.html#a8d93eb74c1a847a94c7ac7dabaadbf3a",
-"structdpp_1_1invite__delete__t.html#a47871a82a55c589964aeca15393fbe79",
-"structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8",
-"structdpp_1_1sticker__pack.html#a7fb0eeaade402ee61d213ecf45fa5258",
-"structdpp_1_1voice__user__talking__t.html#a357873be4dd30eef7928ae5f7c13e7db"
+"classdpp_1_1guild__member.html#a127de740430a1f3ce4e793e21f94ce97",
+"classdpp_1_1role.html#a42f8b747f7a04cd1022ce3bc42e6a05b",
+"classdpp_1_1voiceconn.html#aaaae5391243bb862501088170037b041",
+"functions_vars_h.html",
+"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824",
+"namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b",
+"structdetail_1_1chrono__formatter.html#ad78d2d2b84620162584228a742e2dfbc",
+"structdpp_1_1command__option.html#a7b9a89420e48ccd85cfdc6deaae63e50",
+"structdpp_1_1guild__create__t.html#aa01c8bb6c3624eeb4d3de063623ec6cb",
+"structdpp_1_1interaction__response.html#a7c06a118113d431b3725b70e12d92f19",
+"structdpp_1_1message__reaction__remove__emoji__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
+"structdpp_1_1sticker.html#a621d5047225fb02a39523d74ce7e9130",
+"structdpp_1_1voice__server__update__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

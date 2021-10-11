@@ -1,6 +1,7 @@
 var structdpp_1_1message =
 [
     [ "allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", "structdpp_1_1message_1_1allowed__ref" ],
+    [ "message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", "structdpp_1_1message_1_1message__interaction__struct" ],
     [ "message_ref", "structdpp_1_1message_1_1message__ref.html", "structdpp_1_1message_1_1message__ref" ],
     [ "message", "structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756", null ],
     [ "~message", "structdpp_1_1message.html#a4b176cfde5ca415d09dedf3d6156ee97", null ],
@@ -38,6 +39,7 @@ var structdpp_1_1message =
     [ "flags", "structdpp_1_1message.html#a16fca6ff4595e0fcab2305205eb54626", null ],
     [ "guild_id", "structdpp_1_1message.html#a5e75f7cd8a7e952e6621c520627d5b84", null ],
     [ "id", "structdpp_1_1message.html#a7c1e0cc707a4168b75945da0d31105a0", null ],
+    [ "interaction", "structdpp_1_1message.html#ab61c894afe6b0f7655b3908217878e68", null ],
     [ "member", "structdpp_1_1message.html#a550f3dc37e4b55cccc2e78d90fc047fb", null ],
     [ "mention_channels", "structdpp_1_1message.html#ae161a71904462eab6bdd539f4ff32332", null ],
     [ "mention_everyone", "structdpp_1_1message.html#a499cacfe6a270dca773fc7f91718ac70", null ],

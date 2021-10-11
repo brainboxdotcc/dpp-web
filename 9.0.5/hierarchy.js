@@ -157,6 +157,9 @@ var hierarchy =
       [ "dpp::voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", null ],
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
+    [ "std::exception", null, [
+      [ "dpp::exception", "classdpp_1_1exception.html", null ]
+    ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
       [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", null ]
@@ -187,6 +190,7 @@ var hierarchy =
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
     [ "dpp::message", "structdpp_1_1message.html", null ],
+    [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
