@@ -14,12 +14,13 @@
           <type><ref refid="classdpp_1_1events_1_1voice__state__update" kindref="compound">dpp::events::voice_state_update</ref></type>
         </param>
         <briefdescription>
+<para>Needed so that voice_state_update can call <ref refid="classdpp_1_1discord__client_1ad6720e53bbc68722cc807dbd05b5fb71" kindref="member">dpp::discord_client::disconnect_voice_internal</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="141" column="14" bodyfile="include/dpp/discordclient.h" bodystart="141" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="144" column="14" bodyfile="include/dpp/discordclient.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -35,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="152" column="12" bodyfile="include/dpp/discordclient.h" bodystart="152" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="158" column="12" bodyfile="include/dpp/discordclient.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a0c7eeee6642b74777eb48b90b5d5c3b4" prot="private" static="no" mutable="no">
         <type>std::deque&lt; std::string &gt;</type>
@@ -49,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="155" column="12" bodyfile="include/dpp/discordclient.h" bodystart="155" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="161" column="12" bodyfile="include/dpp/discordclient.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1ae2b41454f50ff851430d2a2615336e63" prot="private" static="no" mutable="no">
         <type>std::thread *</type>
@@ -63,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="158" column="13" bodyfile="include/dpp/discordclient.h" bodystart="158" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="164" column="13" bodyfile="include/dpp/discordclient.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a298936775c800395bb933f2e8d7aeb30" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -77,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="164" column="6" bodyfile="include/dpp/discordclient.h" bodystart="164" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="173" column="6" bodyfile="include/dpp/discordclient.h" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a2f9aaec64dc13e9130d022d091bcceb5" prot="private" static="no" mutable="no">
         <type>unsigned char *</type>
@@ -91,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="167" column="15" bodyfile="include/dpp/discordclient.h" bodystart="167" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="176" column="15" bodyfile="include/dpp/discordclient.h" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1ac9efcc6052f2fc585cbaa96786ee734d" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -105,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="170" column="13" bodyfile="include/dpp/discordclient.h" bodystart="170" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="179" column="13" bodyfile="include/dpp/discordclient.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a660560dada5987466d081a53dc2e8a76" prot="private" static="no" mutable="no">
         <type><ref refid="classdpp_1_1zlibcontext" kindref="compound">zlibcontext</ref> *</type>
@@ -113,13 +114,13 @@
         <argsstring></argsstring>
         <name>zlib</name>
         <briefdescription>
+<para>This object contains the various zlib structs which are not usable by the user of the library directly. They are wrapped within this opaque object so that this header file does not bring in a dependency on zlib.h. </para>
         </briefdescription>
         <detaileddescription>
-<para>Frame decompression stream </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="173" column="13" bodyfile="include/dpp/discordclient.h" bodystart="173" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="187" column="13" bodyfile="include/dpp/discordclient.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1ad9f5ec6d2933ad84c06e238e9a3bdf19" prot="private" static="no" mutable="no">
         <type>uint64_t</type>
@@ -133,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="176" column="10" bodyfile="include/dpp/discordclient.h" bodystart="176" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="190" column="10" bodyfile="include/dpp/discordclient.h" bodystart="190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1ad5b9759853019efe55112f13d589b0e1" prot="private" static="no" mutable="no">
         <type>time_t</type>
@@ -147,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="179" column="8" bodyfile="include/dpp/discordclient.h" bodystart="179" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="193" column="8" bodyfile="include/dpp/discordclient.h" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a250f37b3cbff382ae91dc662366571ec" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -157,11 +158,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Time last ping sent to websocket </para>
+<para>Time last ping sent to websocket, in fractional seconds </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="182" column="8" bodyfile="include/dpp/discordclient.h" bodystart="182" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="196" column="8" bodyfile="include/dpp/discordclient.h" bodystart="196" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -177,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="196" column="20" bodyfile="include/dpp/discordclient.h" bodystart="196" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="210" column="20" bodyfile="include/dpp/discordclient.h" bodystart="210" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a62f72c7433043cbb61fe1917efabd2f7" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -191,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="199" column="10" bodyfile="include/dpp/discordclient.h" bodystart="199" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="213" column="10" bodyfile="include/dpp/discordclient.h" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1ac6ef401a0b38b2cce833d184ddf38bbb" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -205,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="202" column="8" bodyfile="include/dpp/discordclient.h" bodystart="202" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="216" column="8" bodyfile="include/dpp/discordclient.h" bodystart="216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1aa11253c28f842aad3939e9d3138a0c6d" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -219,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="205" column="10" bodyfile="include/dpp/discordclient.h" bodystart="205" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="219" column="10" bodyfile="include/dpp/discordclient.h" bodystart="219" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a7e8e56675006b1af1c09d8de1519f001" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -233,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="208" column="10" bodyfile="include/dpp/discordclient.h" bodystart="208" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="222" column="10" bodyfile="include/dpp/discordclient.h" bodystart="222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a48586d5bfd6ce1e8f58770c7bfcc5c27" prot="public" static="no" mutable="no">
         <type>std::thread::native_handle_type</type>
@@ -247,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="211" column="33" bodyfile="include/dpp/discordclient.h" bodystart="211" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="225" column="33" bodyfile="include/dpp/discordclient.h" bodystart="225" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a8dc9f84c9b65a58f8e9eea6326a424bd" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -261,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="214" column="10" bodyfile="include/dpp/discordclient.h" bodystart="214" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="228" column="10" bodyfile="include/dpp/discordclient.h" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1ac6f6acb88970deecd85236fc0df8be78" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -275,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="217" column="13" bodyfile="include/dpp/discordclient.h" bodystart="217" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="231" column="13" bodyfile="include/dpp/discordclient.h" bodystart="231" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1acdea0fb06605d44be0161991c5d68e58" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -289,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="220" column="10" bodyfile="include/dpp/discordclient.h" bodystart="220" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="234" column="10" bodyfile="include/dpp/discordclient.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a66922f8fbb2df8c1c92744f4eb524a52" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -303,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="223" column="13" bodyfile="include/dpp/discordclient.h" bodystart="223" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="237" column="13" bodyfile="include/dpp/discordclient.h" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a4ef561c63eecce36ba9384bbb70e8f19" prot="public" static="no" mutable="no">
         <type>std::mutex</type>
@@ -317,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="226" column="12" bodyfile="include/dpp/discordclient.h" bodystart="226" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="240" column="12" bodyfile="include/dpp/discordclient.h" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a575bb766c7c9e8ea510392265c0abba6" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -331,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="229" column="10" bodyfile="include/dpp/discordclient.h" bodystart="229" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="243" column="10" bodyfile="include/dpp/discordclient.h" bodystart="243" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1af002768a9defc98dc3fcf777a95d8bcf" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -345,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="232" column="10" bodyfile="include/dpp/discordclient.h" bodystart="232" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="246" column="10" bodyfile="include/dpp/discordclient.h" bodystart="246" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a5e39136f09297f7ba0ab6a449e435f3d" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -359,7 +360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="235" column="8" bodyfile="include/dpp/discordclient.h" bodystart="235" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="249" column="8" bodyfile="include/dpp/discordclient.h" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a03ffb74d2fa81b0e6f0864848151fa90" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -373,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="238" column="6" bodyfile="include/dpp/discordclient.h" bodystart="238" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="252" column="6" bodyfile="include/dpp/discordclient.h" bodystart="252" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1a611a05e14a49affa23f58ea173d829ba" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -387,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="241" column="8" bodyfile="include/dpp/discordclient.h" bodystart="241" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="255" column="8" bodyfile="include/dpp/discordclient.h" bodystart="255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1discord__client_1ad474846a37755a4b1064a5c3a3480fbc" prot="public" static="no" mutable="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> * &gt;</type>
@@ -401,7 +402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="244" column="20" bodyfile="include/dpp/discordclient.h" bodystart="244" bodyend="-1"/>
+        <location file="include/dpp/discordclient.h" line="258" column="20" bodyfile="include/dpp/discordclient.h" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa9d0383a9c348b35352edc264996446e" prot="public" static="no" mutable="no">
         <type>std::function&lt; <ref refid="namespacedpp_1a51156024d6211aef2731770340cfe452" kindref="member">dpp::socket</ref>()&gt;</type>
@@ -502,7 +503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="149" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="549" bodyend="572"/>
+        <location file="include/dpp/discordclient.h" line="153" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="549" bodyend="572"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1ac7f26051b6ce8db8e57536ce4e035caf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -517,7 +518,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="99" column="14" bodyfile="src/dpp/wsclient.cpp" bodystart="45" bodyend="64"/>
+        <location file="include/dpp/wsclient.h" line="106" column="14" bodyfile="src/dpp/wsclient.cpp" bodystart="45" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1ad699ad1f6cefc29a1868fdfca530c550" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1af0e6c1fc5986facd4bb63a152ffa6057" kindref="member">ws_state</ref></type>
@@ -533,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="104" column="10" bodyfile="src/dpp/wsclient.cpp" bodystart="183" bodyend="186"/>
+        <location file="include/dpp/wsclient.h" line="111" column="10" bodyfile="src/dpp/wsclient.cpp" bodystart="183" bodyend="186"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -543,13 +544,13 @@
         <argsstring>()</argsstring>
         <name>ThreadRun</name>
         <briefdescription>
+<para>Run shard loop under a thread. Calls <ref refid="classdpp_1_1discord__client_1ae768cabb169f9501bba20704867110e5" kindref="member">discord_client::Run()</ref> from within a std::thread. </para>
         </briefdescription>
         <detaileddescription>
-<para>Run shard loop under a thread </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="161" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="113" bodyend="138"/>
+        <location file="include/dpp/discordclient.h" line="170" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="113" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a74b3093d95864d7b7bb02ea5ab3f48cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -557,13 +558,13 @@
         <argsstring>()</argsstring>
         <name>SetupZLib</name>
         <briefdescription>
-<para>Initialise ZLib. </para>
+<para>Initialise ZLib (websocket compression) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="187" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="88" bodyend="100"/>
+        <location file="include/dpp/discordclient.h" line="201" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="88" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1ad54cd0f411f631b57141b7e8faba0a5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -571,13 +572,13 @@
         <argsstring>()</argsstring>
         <name>EndZLib</name>
         <briefdescription>
-<para>Shut down ZLib. </para>
+<para>Shut down ZLib (websocket compression) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="192" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="102" bodyend="111"/>
+        <location file="include/dpp/discordclient.h" line="206" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="102" bodyend="111"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -619,7 +620,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="252" column="14" bodyfile="src/dpp/discordclient.cpp" bodystart="369" bodyend="378"/>
+        <location file="include/dpp/discordclient.h" line="266" column="14" bodyfile="src/dpp/discordclient.cpp" bodystart="369" bodyend="378"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a189b8eb73439b8ac82bc132b9acde04c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -670,7 +671,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="259" column="14" bodyfile="src/dpp/discordevents.cpp" bodystart="309" bodyend="323"/>
+        <location file="include/dpp/discordclient.h" line="273" column="14" bodyfile="src/dpp/discordevents.cpp" bodystart="309" bodyend="323"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a24e750fd3a503a65b41ab6525b7b2e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -687,7 +688,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="266" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="473" bodyend="486"/>
+        <location file="include/dpp/discordclient.h" line="280" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="473" bodyend="486"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1ad74f28655846f30487d931bb1e3b1639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -704,7 +705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="273" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="488" bodyend="507"/>
+        <location file="include/dpp/discordclient.h" line="287" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="488" bodyend="507"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1aad490f19d38e26deff51dccbfd1c445c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -721,7 +722,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="280" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="509" bodyend="522"/>
+        <location file="include/dpp/discordclient.h" line="294" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="509" bodyend="522"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a8e90fb79f5686c73a2024ed6ba704c6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -736,7 +737,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="283" column="14" bodyfile="src/dpp/discordclient.cpp" bodystart="402" bodyend="471"/>
+        <location file="include/dpp/discordclient.h" line="297" column="14" bodyfile="src/dpp/discordclient.cpp" bodystart="402" bodyend="471"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1afbb1b789c7b365c1dfe776316d5a9829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -777,7 +778,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="293" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="380" bodyend="388"/>
+        <location file="include/dpp/discordclient.h" line="307" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="380" bodyend="388"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a5b40c6db59e7aed95958e2fec5f6b8ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -791,7 +792,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="299" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="390" bodyend="394"/>
+        <location file="include/dpp/discordclient.h" line="312" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="390" bodyend="394"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1aca66e47e5e2d6fcd0bd17187465107db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -808,7 +809,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="306" column="8" bodyfile="src/dpp/discordclient.cpp" bodystart="396" bodyend="400"/>
+        <location file="include/dpp/discordclient.h" line="319" column="8" bodyfile="src/dpp/discordclient.cpp" bodystart="396" bodyend="400"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1af59b7db59d0fe39259efcb2380016ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -825,7 +826,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="313" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="318" bodyend="321"/>
+        <location file="include/dpp/discordclient.h" line="326" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="318" bodyend="321"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a6fef02c819339ee1d088b39647d70957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
@@ -842,7 +843,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="320" column="22" bodyfile="src/dpp/discordclient.cpp" bodystart="313" bodyend="316"/>
+        <location file="include/dpp/discordclient.h" line="333" column="22" bodyfile="src/dpp/discordclient.cpp" bodystart="313" bodyend="316"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a26bc3c07e4b547d0d6e2c820d255fac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -876,9 +877,10 @@
           <defval>true</defval>
         </param>
         <briefdescription>
+<para>Construct a new <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> object. </para>
         </briefdescription>
         <detaileddescription>
-<para>Constructor takes shard id, max shards and token. <parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>_cluster</parametername>
 </parameternamelist>
@@ -931,7 +933,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="330" column="1" bodyfile="src/dpp/discordclient.cpp" bodystart="49" bodyend="72"/>
+        <location file="include/dpp/discordclient.h" line="345" column="1" bodyfile="src/dpp/discordclient.cpp" bodystart="49" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1ad7384d3ea3ee938b626e536f82a5f349" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -945,7 +947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="333" column="9" bodyfile="src/dpp/discordclient.cpp" bodystart="74" bodyend="81"/>
+        <location file="include/dpp/discordclient.h" line="348" column="9" bodyfile="src/dpp/discordclient.cpp" bodystart="74" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1ade85ebcbf1a24079511436d504940fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -959,7 +961,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="336" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="83" bodyend="86"/>
+        <location file="include/dpp/discordclient.h" line="351" column="10" bodyfile="src/dpp/discordclient.cpp" bodystart="83" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1af4c5772b702123423fa5ad2a12d11804" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -989,7 +991,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="342" column="14" bodyfile="src/dpp/discordclient.cpp" bodystart="146" bodyend="311"/>
+        <location file="include/dpp/discordclient.h" line="357" column="14" bodyfile="src/dpp/discordclient.cpp" bodystart="146" bodyend="311"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a7743f641f2eabe2c83c3142d9b46a3aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1017,7 +1019,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="347" column="14" bodyfile="src/dpp/discordclient.cpp" bodystart="323" bodyend="367"/>
+        <location file="include/dpp/discordclient.h" line="362" column="14" bodyfile="src/dpp/discordclient.cpp" bodystart="323" bodyend="367"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1ae768cabb169f9501bba20704867110e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1025,13 +1027,13 @@
         <argsstring>()</argsstring>
         <name>Run</name>
         <briefdescription>
+<para>Start and monitor I/O loop. Note that this is a blocking call and is usually executed within a thread by whatever creates the object. </para>
         </briefdescription>
         <detaileddescription>
-<para>Start and monitor I/O loop </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="350" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="140" bodyend="144"/>
+        <location file="include/dpp/discordclient.h" line="369" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="140" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a8ceeec92eb0ba816c1c172f53d4e7891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1097,7 +1099,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="360" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="524" bodyend="547"/>
+        <location file="include/dpp/discordclient.h" line="379" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="524" bodyend="547"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1ab27c7a127b4bf2aaee24e406adfe3bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1125,7 +1127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="367" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="574" bodyend="576"/>
+        <location file="include/dpp/discordclient.h" line="386" column="6" bodyfile="src/dpp/discordclient.cpp" bodystart="574" bodyend="576"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1add9c5c491ce195ec7f0127d6c8ec36b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> *</type>
@@ -1137,12 +1139,25 @@
           <declname>guild_id</declname>
         </param>
         <briefdescription>
+<para>Get the <ref refid="classdpp_1_1voiceconn" kindref="compound">dpp::voiceconn</ref> object for a specific guild on this shard. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The guild ID to retrieve the voice connection for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>voiceconn* The voice connection for the guild, or nullptr if there is no voice connection to this guild. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="369" column="11" bodyfile="src/dpp/discordclient.cpp" bodystart="578" bodyend="587"/>
+        <location file="include/dpp/discordclient.h" line="395" column="11" bodyfile="src/dpp/discordclient.cpp" bodystart="578" bodyend="587"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1aac65765349cbd3e787c0fd2af576ec6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1171,7 +1186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="123" column="22" bodyfile="src/dpp/wsclient.cpp" bodystart="112" bodyend="124"/>
+        <location file="include/dpp/wsclient.h" line="130" column="22" bodyfile="src/dpp/wsclient.cpp" bodystart="112" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1a96a1c910426a6094a81f5bf26ce9119b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -1200,7 +1215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="130" column="22" bodyfile="src/dpp/wsclient.cpp" bodystart="138" bodyend="181"/>
+        <location file="include/dpp/wsclient.h" line="137" column="22" bodyfile="src/dpp/wsclient.cpp" bodystart="138" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1a3398642150ca79c8f266de83ee93aa30" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1215,7 +1230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="135" column="22" bodyfile="src/dpp/wsclient.cpp" bodystart="319" bodyend="323"/>
+        <location file="include/dpp/wsclient.h" line="142" column="22" bodyfile="src/dpp/wsclient.cpp" bodystart="319" bodyend="323"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -1690,7 +1705,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/discordclient.h" line="138" column="1" bodyfile="include/dpp/discordclient.h" bodystart="139" bodyend="370"/>
+    <location file="include/dpp/discordclient.h" line="138" column="1" bodyfile="include/dpp/discordclient.h" bodystart="139" bodyend="396"/>
     <listofallmembers>
       <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>buffer</name></member>
       <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>bytes_in</name></member>
