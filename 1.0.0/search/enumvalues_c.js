@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['sf_5fapng_0',['sf_apng',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2',1,'dpp']]],
-  ['sf_5flottie_1',['sf_lottie',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5',1,'dpp']]],
-  ['sf_5fpng_2',['sf_png',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484',1,'dpp']]],
-  ['st_5fguild_3',['st_guild',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede',1,'dpp']]],
-  ['st_5fstandard_4',['st_standard',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca',1,'dpp']]],
-  ['standard_5',['standard',['../namespacedetail.html#a4938659a89541ba388c06c6a33e0c8adac00f0c4675b91fb8b918e4079a0b1bac',1,'detail']]]
+  ['v_5fcustom_0',['v_custom',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813a2e982013a8628fec52e4d04c2079aa8f',1,'dpp']]],
+  ['v_5fdeprecated_1',['v_deprecated',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813a7ffeb4c61fc6bdfc3c66fc45837df985',1,'dpp']]],
+  ['v_5foptimal_2',['v_optimal',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813afb06fc75de5270a1646e4ed14754ac1c',1,'dpp']]],
+  ['v_5fvip_3',['v_vip',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813a17f33e1022039e04ac480b2956075cc2',1,'dpp']]],
+  ['vs_5fdeaf_4',['vs_deaf',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53fad67d4828942e6cb916ad2911f79a3948',1,'dpp']]],
+  ['vs_5fmute_5',['vs_mute',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53faa3f883725cc590d56f32a968eef566aa',1,'dpp']]],
+  ['vs_5fself_5fdeaf_6',['vs_self_deaf',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53fabaf7cfcc392357c72245e847b3dc6954',1,'dpp']]],
+  ['vs_5fself_5fmute_7',['vs_self_mute',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53fa320ea835cd4680b54d5935d8fb32953a',1,'dpp']]],
+  ['vs_5fself_5fstream_8',['vs_self_stream',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53faa71e77d5dec0a32ba01779884f83cf3b',1,'dpp']]],
+  ['vs_5fself_5fvideo_9',['vs_self_video',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53fa33cbc9aa408db6c7ee21d28dbbbdbe57',1,'dpp']]],
+  ['vs_5fsupress_10',['vs_supress',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53faf1366589595934ba16d4451ff2a0f30d',1,'dpp']]]
 ];

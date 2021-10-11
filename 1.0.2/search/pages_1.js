@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['building_20d_2b_2b_0',['Building D++',['../md_docpages_02_build.html',1,'']]],
-  ['building_20on_20linux_1',['Building on Linux',['../buildlinux.html',1,'md_docpages_02_build']]],
-  ['building_20on_20osx_2',['Building on OSX',['../buildosx.html',1,'md_docpages_02_build']]],
-  ['building_20on_20windows_3',['Building on Windows',['../buildwindows.html',1,'md_docpages_02_build']]],
-  ['building_20with_20cmake_4',['Building with CMake',['../buildcmake.html',1,'md_docpages_02_build']]]
+  ['clusters_2c_20shards_20and_20guilds_0',['Clusters, Shards and Guilds',['../md_docpages__z_05__c_l_u_s_t_e_r_s.html',1,'']]],
+  ['creating_20a_20sound_20board_1',['Creating a Sound Board',['../soundboard.html',1,'md_docpages_Z_04_EXAMPLE']]],
+  ['creating_20your_20first_20bot_2',['Creating Your First Bot',['../firstbot.html',1,'md_docpages_Z_04_EXAMPLE']]]
 ];

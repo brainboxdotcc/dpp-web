@@ -71,7 +71,7 @@ var searchData=
   ['is_5fsource_5fmessage_5fdeleted_68',['is_source_message_deleted',['../structdpp_1_1message.html#a0f22f044046ebc8bdc7d35e950baca25',1,'dpp::message']]],
   ['is_5fstage_5fchannel_69',['is_stage_channel',['../classdpp_1_1channel.html#ae95ae73f17ff4badd2001bcc07940709',1,'dpp::channel']]],
   ['is_5fstore_5fchannel_70',['is_store_channel',['../classdpp_1_1channel.html#a04256bb3015b9fa150d56a8025a6e1d0',1,'dpp::channel']]],
-  ['is_5fsupressed_71',['is_supressed',['../classdpp_1_1voicestate.html#a134136615335efe7fedadb7d6df8d75c',1,'dpp::voicestate']]],
+  ['is_5fsuppressed_71',['is_suppressed',['../classdpp_1_1voicestate.html#a631921c8fd04d5b3c1989218b48ef4d3',1,'dpp::voicestate']]],
   ['is_5fsyncing_72',['is_syncing',['../classdpp_1_1integration.html#a32fff1ec90aea8ce08d481c0f0957ebb',1,'dpp::integration']]],
   ['is_5fsystem_73',['is_system',['../classdpp_1_1user.html#ae38c55d7ccd3752f73cf2a7bbe40b8fb',1,'dpp::user']]],
   ['is_5fteam_5fuser_74',['is_team_user',['../classdpp_1_1user.html#ab5309aeff0b712ed39e6fb47dd19d32b',1,'dpp::user']]],
