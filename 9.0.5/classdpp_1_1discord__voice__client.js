@@ -50,7 +50,7 @@ var classdpp_1_1discord__voice__client =
     [ "obuffer", "classdpp_1_1discord__voice__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
     [ "server_id", "classdpp_1_1discord__voice__client.html#ac1d99be8bb3a89a43e5f5b368fe63f7d", null ],
     [ "sessionid", "classdpp_1_1discord__voice__client.html#a8f011c857ff968e44a8e5ddf818a9160", null ],
-    [ "sfd", "classdpp_1_1discord__voice__client.html#a0b6edcf258bcc2153a1b39b5f01403f4", null ],
+    [ "sfd", "classdpp_1_1discord__voice__client.html#a5d5d88470fa16ed75a3b3ee195265caf", null ],
     [ "sodium_initialised", "classdpp_1_1discord__voice__client.html#adfbadeaa50f485f0a0418c4570e1a4cd", null ],
     [ "ssl", "classdpp_1_1discord__voice__client.html#a2398ebb5fe51346ca7e97ec162327c4e", null ],
     [ "terminating", "classdpp_1_1discord__voice__client.html#a495139ab5289f6f7860177cf121ba2cb", null ],

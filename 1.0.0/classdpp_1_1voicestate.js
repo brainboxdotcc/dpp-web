@@ -15,6 +15,6 @@ var classdpp_1_1voicestate =
     [ "flags", "classdpp_1_1voicestate.html#abf58f2ac3357bc012b7bf617309919c9", null ],
     [ "guild_id", "classdpp_1_1voicestate.html#ae7a837b367c89d55482d448a4a6eb702", null ],
     [ "session_id", "classdpp_1_1voicestate.html#adda1e3192a8dbe103f5b5c29b29ca74b", null ],
-    [ "shard", "classdpp_1_1voicestate.html#a2deba82a29b1f802fac30c16ae5e2ed1", null ],
+    [ "shard", "classdpp_1_1voicestate.html#a94e4a9ddbfb2368a4d06c1cd1f538141", null ],
     [ "user_id", "classdpp_1_1voicestate.html#a2a56a68ec5590ac218711f72893013fd", null ]
 ];

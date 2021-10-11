@@ -71,7 +71,7 @@ var searchData=
   ['sf_5fapng_68',['sf_apng',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2',1,'dpp']]],
   ['sf_5flottie_69',['sf_lottie',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5',1,'dpp']]],
   ['sf_5fpng_70',['sf_png',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484',1,'dpp']]],
-  ['sfd_71',['sfd',['../classdpp_1_1ssl__client.html#a0b6edcf258bcc2153a1b39b5f01403f4',1,'dpp::ssl_client']]],
+  ['sfd_71',['sfd',['../classdpp_1_1ssl__client.html#a5d5d88470fa16ed75a3b3ee195265caf',1,'dpp::ssl_client']]],
   ['shard_72',['shard',['../classdpp_1_1voicestate.html#a94e4a9ddbfb2368a4d06c1cd1f538141',1,'dpp::voicestate']]],
   ['shard_5fid_73',['shard_id',['../structdpp_1_1resumed__t.html#a6427ec22c7567f5b39db9777d114dac7',1,'dpp::resumed_t::shard_id()'],['../classdpp_1_1guild.html#a80181fee5f66b2dd6f24bad72226bf7c',1,'dpp::guild::shard_id()'],['../structdpp_1_1ready__t.html#ad031e4a6c0354ac8ad28b61045c2c09d',1,'dpp::ready_t::shard_id()'],['../classdpp_1_1discord__client.html#aa11253c28f842aad3939e9d3138a0c6d',1,'dpp::discord_client::shard_id()']]],
   ['shard_5flist_74',['shard_list',['../namespacedpp.html#a13c4d4e6238396245b349e6a637897e0',1,'dpp']]],
@@ -120,7 +120,7 @@ var searchData=
   ['subscriber_5fcount_117',['subscriber_count',['../classdpp_1_1integration.html#a6226522574b38e03a4cb2df9ddc7dbba',1,'dpp::integration']]],
   ['success_118',['success',['../structdpp_1_1confirmation.html#af16e812b41c01161a984498c0c52e66e',1,'dpp::confirmation']]],
   ['summary_119',['summary',['../structdpp_1_1integration__app.html#a467fed81de74c5d9e75bd367e430bca8',1,'dpp::integration_app']]],
-  ['suppress_5fembeds_120',['suppress_embeds',['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message']]],
+  ['supress_5fembeds_120',['supress_embeds',['../structdpp_1_1message.html#ade17fb77debb971918af8434b0f7477c',1,'dpp::message']]],
   ['synced_5fat_121',['synced_at',['../classdpp_1_1integration.html#adc4d5078e65f35a398d4d43c88870812',1,'dpp::integration']]],
   ['system_5fchannel_5fid_122',['system_channel_id',['../classdpp_1_1guild.html#a0fc5cec016c0604ce2575fbe5eea5ded',1,'dpp::guild']]]
 ];

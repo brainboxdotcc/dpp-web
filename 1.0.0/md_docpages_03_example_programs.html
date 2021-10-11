@@ -23,19 +23,14 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <script>
 	setTimeout(function() {
-		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
-		var v = window.location.pathname.split("/")[1];
-		if (v.substring(0, 1) == 'v') {
-			$("select[name=vsv]").val(window.location.pathname.split("/")[1]);
-		} else {
-			$("select[name=vsv]").val("/");
-		}
+		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option selected value='/1.0.0/'>1.0.0</option></select></li>");
 	}, 500);
 </script>
 <div id="titlearea">
@@ -45,6 +40,7 @@
   <td id="projectlogo"><img alt="Logo" src="DPP-Logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">D++ (DPP)
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">A Lightweight C++ library for Discord</div>
   </td>
@@ -111,16 +107,12 @@ $(document).ready(function(){initNavTree('md_docpages_03_example_programs.html',
 <li><a class="el" href="firstbot.html">Creating Your First Bot</a></li>
 <li><a class="el" href="slashcommands.html">Using Slash Commands and Interactions</a></li>
 <li><a class="el" href="soundboard.html">Creating a Sound Board</a></li>
-<li><a class="el" href="oggopus.html">Streaming Ogg Opus file</a></li>
-<li><a class="el" href="stream-mp3-discord-bot.html">Streaming MP3 files</a></li>
-<li><a class="el" href="record-user.html">Record yourself in a VC</a></li>
 <li><a class="el" href="joinvc.html">Join or switch to the voice channel of the user issuing a command</a></li>
 <li><a class="el" href="spdlog.html">Integrating with spdlog</a></li>
 <li><a class="el" href="components.html">Using component interactions (buttons)</a></li>
 <li><a class="el" href="components3.html">Using component interactions (select menus)</a></li>
 <li><a class="el" href="components2.html">Using component interactions (advanced)</a></li>
-<li><a class="el" href="commandhandler.html">Using a command handler object</a></li>
-<li><a class="el" href="subcommands.html">Using sub-commands in slash commands</a> </li>
+<li><a class="el" href="commandhandler.html">Using a command handler object</a> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -130,6 +122,18 @@ $(document).ready(function(){initNavTree('md_docpages_03_example_programs.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
   </ul>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTH6YHBNG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+        gtag('config', 'G-QTH6YHBNG5');
+</script>
+<div style="font-size: 0.001rem;font-color:transparent">
+	<!-- For crawlability of past versions -->
+	<a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.0/'>D++ Library version v1.0.0</a><a href='/1.0.1/'>D++ Library version v1.0.1</a><a href='/1.0.2/'>D++ Library version v1.0.2</a><a href='/9.0.1/'>D++ Library version v9.0.1</a><a href='/9.0.2/'>D++ Library version v9.0.2</a><a href='/9.0.3/'>D++ Library version v9.0.3</a><a href='/9.0.4/'>D++ Library version v9.0.4</a><a href='/9.0.5/'>D++ Library version v9.0.5</a><a href='/9.0.6/'>D++ Library version v9.0.6</a><a href='/9.0.7/'>D++ Library version v9.0.7</a>
 </div>
 </body>
 </html>

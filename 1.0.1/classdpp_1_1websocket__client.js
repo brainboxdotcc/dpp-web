@@ -7,6 +7,7 @@ var classdpp_1_1websocket__client =
     [ "Error", "classdpp_1_1websocket__client.html#a65ca871fe6af9b131472890fc8d49cef", null ],
     [ "get_bytes_in", "classdpp_1_1websocket__client.html#afa5d5654ce0b631d07045088ef347418", null ],
     [ "get_bytes_out", "classdpp_1_1websocket__client.html#aad4da6489c8f08030ca49c060a23740a", null ],
+    [ "get_cipher", "classdpp_1_1websocket__client.html#abf247ed0871e89e6a319c95841a315bd", null ],
     [ "GetState", "classdpp_1_1websocket__client.html#ad699ad1f6cefc29a1868fdfca530c550", null ],
     [ "handle_buffer", "classdpp_1_1websocket__client.html#a96a1c910426a6094a81f5bf26ce9119b", null ],
     [ "HandleFrame", "classdpp_1_1websocket__client.html#a7893b4f67b88472cf72dea1aa8f2c377", null ],
@@ -18,7 +19,6 @@ var classdpp_1_1websocket__client =
     [ "bytes_in", "classdpp_1_1websocket__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d", null ],
     [ "bytes_out", "classdpp_1_1websocket__client.html#a8022a8002cfc6f394016546168ef4085", null ],
     [ "cipher", "classdpp_1_1websocket__client.html#a5fc2e7836da5485216419bbf17e49428", null ],
-    [ "ctx", "classdpp_1_1websocket__client.html#a5378304f2669fe75092bdd452ae651ff", null ],
     [ "custom_readable_fd", "classdpp_1_1websocket__client.html#ad2b75ebfaeb8bbe40741a1ad95e58c56", null ],
     [ "custom_readable_ready", "classdpp_1_1websocket__client.html#aaf27074007db73b13663ab985f2221e8", null ],
     [ "custom_writeable_fd", "classdpp_1_1websocket__client.html#a32a0f4e6e46da398d77b33e55e3d4ced", null ],
@@ -28,6 +28,6 @@ var classdpp_1_1websocket__client =
     [ "nonblocking", "classdpp_1_1websocket__client.html#a1486b3df6780a842552442a25634fcc9", null ],
     [ "obuffer", "classdpp_1_1websocket__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
     [ "port", "classdpp_1_1websocket__client.html#a53cda56d5d61e3371bd7be2424e7ff07", null ],
-    [ "sfd", "classdpp_1_1websocket__client.html#a5d5d88470fa16ed75a3b3ee195265caf", null ],
-    [ "ssl", "classdpp_1_1websocket__client.html#afd57f219d186fda6496e966910b771ad", null ]
+    [ "sfd", "classdpp_1_1websocket__client.html#a0b6edcf258bcc2153a1b39b5f01403f4", null ],
+    [ "ssl", "classdpp_1_1websocket__client.html#a2398ebb5fe51346ca7e97ec162327c4e", null ]
 ];

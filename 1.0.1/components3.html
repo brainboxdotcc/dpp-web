@@ -23,19 +23,14 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <script>
 	setTimeout(function() {
-		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
-		var v = window.location.pathname.split("/")[1];
-		if (v.substring(0, 1) == 'v') {
-			$("select[name=vsv]").val(window.location.pathname.split("/")[1]);
-		} else {
-			$("select[name=vsv]").val("/");
-		}
+		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option selected value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
 	}, 500);
 </script>
 <div id="titlearea">
@@ -45,6 +40,7 @@
   <td id="projectlogo"><img alt="Logo" src="DPP-Logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">D++ (DPP)
+   &#160;<span id="projectnumber">1.0.1</span>
    </div>
    <div id="projectbrief">A Lightweight C++ library for Discord</div>
   </td>
@@ -136,11 +132,11 @@ $(document).ready(function(){initNavTree('components3.html',''); initResizable()
 <div class="line">    <span class="comment">/* When a user clicks your select menu , the on_select_click event will fire,</span></div>
 <div class="line"><span class="comment">     * containing the custom_id you defined in your select menu.</span></div>
 <div class="line"><span class="comment">     */</span></div>
-<div class="line">    bot.on_select_click([&amp;bot](<span class="keyword">const</span> dpp::select_click_t &amp; event) {</div>
+<div class="line">    bot.on_select_click([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1select__click__t.html">dpp::select_click_t</a> &amp; event) {</div>
 <div class="line">        <span class="comment">/* Select clicks are still interactions, and must be replied to in some form to</span></div>
 <div class="line"><span class="comment">         * prevent the &quot;this interaction has failed&quot; message from Discord to the user.</span></div>
 <div class="line"><span class="comment">         */</span></div>
-<div class="line">        <span class="keyword">event</span>.reply(<a class="code hl_enumvalue" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a>, <span class="stringliteral">&quot;You clicked &quot;</span> + event.custom_id + <span class="stringliteral">&quot; and chose: &quot;</span> + event.values[0]);</div>
+<div class="line">        <span class="keyword">event</span>.reply(<a class="code hl_enumvalue" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a>, <span class="stringliteral">&quot;You clicked &quot;</span> + event.<a class="code hl_variable" href="structdpp_1_1select__click__t.html#aac30db2484043c37184d96401a5e36d4">custom_id</a> + <span class="stringliteral">&quot; and chose: &quot;</span> + event.<a class="code hl_variable" href="structdpp_1_1select__click__t.html#a8f94f1a7b473d0210d9e2b1553db6b76">values</a>[0]);</div>
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">    bot.on_log([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1log__t.html">dpp::log_t</a> &amp; event) {</div>
@@ -153,14 +149,17 @@ $(document).ready(function(){initNavTree('components3.html',''); initResizable()
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:154</div></div>
-<div class="ttc" id="anamespacedpp_html_a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a"><div class="ttname"><a href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a">dpp::ll_trace</a></div><div class="ttdeci">@ ll_trace</div><div class="ttdef"><b>Definition:</b> discord.h:60</div></div>
-<div class="ttc" id="anamespacedpp_html_a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c"><div class="ttname"><a href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a></div><div class="ttdeci">@ ir_channel_message_with_source</div><div class="ttdef"><b>Definition:</b> slashcommand.h:141</div></div>
+<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:221</div></div>
+<div class="ttc" id="anamespacedpp_html_a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a"><div class="ttname"><a href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a">dpp::ll_trace</a></div><div class="ttdeci">@ ll_trace</div><div class="ttdoc">Trace.</div><div class="ttdef"><b>Definition:</b> discord.h:64</div></div>
+<div class="ttc" id="anamespacedpp_html_a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c"><div class="ttname"><a href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a></div><div class="ttdeci">@ ir_channel_message_with_source</div><div class="ttdoc">respond to an interaction with a message</div><div class="ttdef"><b>Definition:</b> slashcommand.h:162</div></div>
 <div class="ttc" id="astructdpp_1_1log__t_html"><div class="ttname"><a href="structdpp_1_1log__t.html">dpp::log_t</a></div><div class="ttdoc">Log messages.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:48</div></div>
 <div class="ttc" id="astructdpp_1_1log__t_html_ae1316a6ace98555175a4c1c70c9d0549"><div class="ttname"><a href="structdpp_1_1log__t.html#ae1316a6ace98555175a4c1c70c9d0549">dpp::log_t::severity</a></div><div class="ttdeci">loglevel severity</div><div class="ttdef"><b>Definition:</b> dispatcher.h:56</div></div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:617</div></div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html_a93c10b3fce36e161eca41edcd32857d0"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">dpp::message_create_t::msg</a></div><div class="ttdeci">message * msg</div><div class="ttdef"><b>Definition:</b> dispatcher.h:623</div></div>
-<div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> message.h:529</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:667</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html_a93c10b3fce36e161eca41edcd32857d0"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">dpp::message_create_t::msg</a></div><div class="ttdeci">message * msg</div><div class="ttdef"><b>Definition:</b> dispatcher.h:673</div></div>
+<div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> message.h:847</div></div>
+<div class="ttc" id="astructdpp_1_1select__click__t_html"><div class="ttname"><a href="structdpp_1_1select__click__t.html">dpp::select_click_t</a></div><div class="ttdoc">Click on select.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:211</div></div>
+<div class="ttc" id="astructdpp_1_1select__click__t_html_a8f94f1a7b473d0210d9e2b1553db6b76"><div class="ttname"><a href="structdpp_1_1select__click__t.html#a8f94f1a7b473d0210d9e2b1553db6b76">dpp::select_click_t::values</a></div><div class="ttdeci">std::vector&lt; std::string &gt; values</div><div class="ttdef"><b>Definition:</b> dispatcher.h:228</div></div>
+<div class="ttc" id="astructdpp_1_1select__click__t_html_aac30db2484043c37184d96401a5e36d4"><div class="ttname"><a href="structdpp_1_1select__click__t.html#aac30db2484043c37184d96401a5e36d4">dpp::select_click_t::custom_id</a></div><div class="ttdeci">std::string custom_id</div><div class="ttdef"><b>Definition:</b> dispatcher.h:227</div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -170,6 +169,18 @@ $(document).ready(function(){initNavTree('components3.html',''); initResizable()
   <ul>
     <li class="navelem"><a class="el" href="md_docpages_03_example_programs.html">Example Programs</a></li>
   </ul>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTH6YHBNG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+        gtag('config', 'G-QTH6YHBNG5');
+</script>
+<div style="font-size: 0.001rem;font-color:transparent">
+	<!-- For crawlability of past versions -->
+	<a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.0/'>D++ Library version v1.0.0</a><a href='/1.0.1/'>D++ Library version v1.0.1</a><a href='/1.0.2/'>D++ Library version v1.0.2</a><a href='/9.0.1/'>D++ Library version v9.0.1</a><a href='/9.0.2/'>D++ Library version v9.0.2</a><a href='/9.0.3/'>D++ Library version v9.0.3</a><a href='/9.0.4/'>D++ Library version v9.0.4</a><a href='/9.0.5/'>D++ Library version v9.0.5</a><a href='/9.0.6/'>D++ Library version v9.0.6</a><a href='/9.0.7/'>D++ Library version v9.0.7</a>
 </div>
 </body>
 </html>

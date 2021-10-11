@@ -25,55 +25,11 @@
 var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
-    [ "Welcome to the D++ developer wiki!", "index.html", [
-      [ "What is D++ (DPP)?", "index.html#autotoc_md1", null ],
-      [ "Library features:", "index.html#autotoc_md2", null ],
-      [ "Supported Operating Systems", "index.html#autotoc_md3", null ],
-      [ "Getting started", "index.html#autotoc_md4", null ],
-      [ "Reference", "index.html#autotoc_md5", null ],
-      [ "Architecture", "index.html#autotoc_md6", null ],
-      [ "Learning Resources", "index.html#autotoc_md7", null ]
-    ] ],
-    [ "Frequently Asked Questions (FAQ)", "md_docpages__z_01__f_a_q.html", [
-      [ "Is this library in production use?", "md_docpages__z_01__f_a_q.html#autotoc_md9", null ],
-      [ "How much RAM does this library use?", "md_docpages__z_01__f_a_q.html#autotoc_md10", null ],
-      [ "How much of the library is completed?", "md_docpages__z_01__f_a_q.html#autotoc_md11", null ],
-      [ "How do I chat with the developers or get help?", "md_docpages__z_01__f_a_q.html#autotoc_md12", null ],
-      [ "How can I contribute to development?", "md_docpages__z_01__f_a_q.html#autotoc_md13", null ],
-      [ "Whats the best way to learn C++?", "md_docpages__z_01__f_a_q.html#autotoc_md14", null ],
-      [ "Do I need to be an expert in C++ to use this library?", "md_docpages__z_01__f_a_q.html#autotoc_md15", null ],
-      [ "Why is D++ also called DPP", "md_docpages__z_01__f_a_q.html#autotoc_md16", null ],
-      [ "Is D++ a single header library?", "md_docpages__z_01__f_a_q.html#autotoc_md17", null ],
-      [ "Does this library support slash commands/interactions?", "md_docpages__z_01__f_a_q.html#autotoc_md18", null ],
-      [ "Is the library asynchronous?", "md_docpages__z_01__f_a_q.html#autotoc_md19", null ],
-      [ "Does this library support voice?", "md_docpages__z_01__f_a_q.html#autotoc_md20", null ],
-      [ "Does this library support sharding?", "md_docpages__z_01__f_a_q.html#autotoc_md21", null ],
-      [ "How do I contribute to the documentation and website?", "md_docpages__z_01__f_a_q.html#autotoc_md22", null ],
-      [ "What version of the Discord API does this library support?", "md_docpages__z_01__f_a_q.html#autotoc_md23", null ],
-      [ "Does D++ require C++20 support?", "md_docpages__z_01__f_a_q.html#autotoc_md24", null ],
-      [ "When I start my bot i get an error: \"error while loading shared libraries: libdpp.so: cannot open shared object file: No such file or directory\"", "md_docpages__z_01__f_a_q.html#autotoc_md25", null ],
-      [ "When compiling with voice support, i get an error: \"No rule to make target 'sodium_LIBRARY_DEBUG-NOTFOUND', needed by 'libdpp.so'. Stop.\"", "md_docpages__z_01__f_a_q.html#autotoc_md26", null ]
-    ] ],
-    [ "Building on Linux", "md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html", [
-      [ "1. Build Source Code", "md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html#autotoc_md28", null ],
-      [ "2. Optional: Run test cases", "md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html#autotoc_md29", null ],
-      [ "3. Install to /usr/local/include and /usr/local/lib", "md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html#autotoc_md30", null ],
-      [ "4. Installation to a different directory", "md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html#autotoc_md31", null ],
-      [ "5. Using the library", "md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html#autotoc_md32", null ]
-    ] ],
-    [ "Building on Windows", "md_docpages__z_03__b_u_i_l_d__w_i_n.html", [
-      [ "Troubleshooting", "md_docpages__z_03__b_u_i_l_d__w_i_n.html#autotoc_md34", null ],
-      [ "After compiling", "md_docpages__z_03__b_u_i_l_d__w_i_n.html#autotoc_md35", null ]
-    ] ],
-    [ "Example Programs", "md_docpages__z_04__e_x_a_m_p_l_e.html", "md_docpages__z_04__e_x_a_m_p_l_e" ],
-    [ "Clusters, Shards and Guilds", "md_docpages__z_05__c_l_u_s_t_e_r_s.html", [
-      [ "Clusters", "md_docpages__z_05__c_l_u_s_t_e_r_s.html#autotoc_md45", null ],
-      [ "Shards", "md_docpages__z_05__c_l_u_s_t_e_r_s.html#autotoc_md46", null ],
-      [ "Guilds", "md_docpages__z_05__c_l_u_s_t_e_r_s.html#autotoc_md47", null ]
-    ] ],
-    [ "Event Handlers", "md_docpages__z_06__e_v_e_n_t.html", null ],
-    [ "Threading Model", "md_docpages__z_06__t_h_r_e_a_d_m_o_d_e_l.html", null ],
-    [ "REST Calls", "md_docpages__z_07__r_e_s_t.html", null ],
+    [ "Welcome to the D++ developer wiki!", "index.html", "index" ],
+    [ "Building D++", "md_docpages_02_build.html", "md_docpages_02_build" ],
+    [ "Example Programs", "md_docpages_03_example_programs.html", "md_docpages_03_example_programs" ],
+    [ "Advanced Reference", "md_docpages_04_advanced_reference.html", "md_docpages_04_advanced_reference" ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -92,7 +48,8 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ]
+        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ]
   ] ]
@@ -101,20 +58,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1_s_s_l_client.html#a5a7c0ad6978157507c525d2076b97244",
-"classdpp_1_1cluster.html#a108f6f06b43709c8d47df5f94a3ca0a5",
-"classdpp_1_1cluster.html#abd8ee0e654de56e39c418e83e1115af3",
-"classdpp_1_1dtemplate.html#a1ae48c050ffc66f77f857f939cc66487",
-"classdpp_1_1guild.html#a02e42564118a777e6da228de14a0aae2",
-"classdpp_1_1invite.html#a1eeea3785ede65e9a93640352674a6c3",
-"classdpp_1_1user.html#af4a509ae622f1b4531a758524b34f47e",
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a4278f54e9f1f408d43be33f7e0beac88",
-"namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359",
-"structdpp_1_1audit__change.html#a025a06b03f1592b67bd59310bcadb946",
-"structdpp_1_1embed.html#abe6263ce0132837017e0aca16c6e299d",
-"structdpp_1_1http__request__completion__t.html#a060318a4877fff905907532077b5b6a6",
-"structdpp_1_1message__reaction__add__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1utility_1_1uptime.html#aff6d3ddd12cb12ebaed33231a2cfff3a"
+"classdpp_1_1cluster.html#a29140a7c0e1250fe2016dbe4ced56f95",
+"classdpp_1_1cluster.html#abd822542ad661833cbf1fc23b6f0a1aa",
+"classdpp_1_1discord__client.html#a8022a8002cfc6f394016546168ef4085",
+"classdpp_1_1dispatcher.html#a95261b35417e81c65e9046eca9f0d57c",
+"classdpp_1_1events_1_1message__delete__bulk.html",
+"classdpp_1_1guild__widget.html#aedf956fc1f600b82020271b411eb86c8",
+"classdpp_1_1role.html#a80c8b573fc16edfd685294e0326b38d2",
+"classdpp_1_1voiceregion.html#af29355f165f2ee1aeed095f79136c039",
+"index.html#autotoc_md37",
+"namespacedpp.html#a51891a9e382f9c396d378de00fa65099a8d6403af9f4d5b0b849c3f883d0e49e8",
+"namespacedpp.html#ae525add0ec39d647375aabe5ce455449ab64dc04f299fcfd9b1f4750908eb0a2e",
+"structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html#a80c4e8ddfad700203b4dfbc1b624c928",
+"structdpp_1_1command__source.html",
+"structdpp_1_1guild__emojis__update__t.html#a8d93eb74c1a847a94c7ac7dabaadbf3a",
+"structdpp_1_1invite__delete__t.html#a47871a82a55c589964aeca15393fbe79",
+"structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8",
+"structdpp_1_1sticker__pack.html#a7fb0eeaade402ee61d213ecf45fa5258",
+"structdpp_1_1voice__user__talking__t.html#a357873be4dd30eef7928ae5f7c13e7db"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

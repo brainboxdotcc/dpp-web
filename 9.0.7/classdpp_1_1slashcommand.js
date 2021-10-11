@@ -18,6 +18,5 @@ var classdpp_1_1slashcommand =
     [ "name", "classdpp_1_1slashcommand.html#aba1bc2d7cb8d9f67071aab5c16df964b", null ],
     [ "options", "classdpp_1_1slashcommand.html#ad7bf348ca0d07ccd3416656f023d913e", null ],
     [ "permissions", "classdpp_1_1slashcommand.html#a63b80f4596de1e0906a5fc5d4bf5d4f0", null ],
-    [ "type", "classdpp_1_1slashcommand.html#a5c87c504512af7090f8f4c215184320a", null ],
-    [ "version", "classdpp_1_1slashcommand.html#a945310d52b555f3d04b13ca04bd532b4", null ]
+    [ "type", "classdpp_1_1slashcommand.html#a5c87c504512af7090f8f4c215184320a", null ]
 ];

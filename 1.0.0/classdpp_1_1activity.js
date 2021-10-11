@@ -1,5 +1,7 @@
 var classdpp_1_1activity =
 [
+    [ "activity", "classdpp_1_1activity.html#af8879258ef30113d205348fad6f5d2b8", null ],
+    [ "activity", "classdpp_1_1activity.html#a05dd85de62a60b6dc2dbce16583f8be4", null ],
     [ "application_id", "classdpp_1_1activity.html#aba3ef035ea27dde96a5d45a97a80a29b", null ],
     [ "created_at", "classdpp_1_1activity.html#a0f393e44d64caee04effbd9821f13635", null ],
     [ "end", "classdpp_1_1activity.html#a54cf821d1e457ca1834e53a7bf8de774", null ],

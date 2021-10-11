@@ -10,6 +10,5 @@ var searchData=
   ['error_5fdetail_7',['error_detail',['../structdpp_1_1error__detail.html',1,'dpp']]],
   ['error_5finfo_8',['error_info',['../structdpp_1_1error__info.html',1,'dpp']]],
   ['event_9',['event',['../classdpp_1_1events_1_1event.html',1,'dpp::events']]],
-  ['event_5fdispatch_5ft_10',['event_dispatch_t',['../structdpp_1_1event__dispatch__t.html',1,'dpp']]],
-  ['exception_11',['exception',['../classdpp_1_1exception.html',1,'dpp']]]
+  ['event_5fdispatch_5ft_10',['event_dispatch_t',['../structdpp_1_1event__dispatch__t.html',1,'dpp']]]
 ];

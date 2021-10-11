@@ -1,7 +1,6 @@
 var structdpp_1_1message =
 [
     [ "allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", "structdpp_1_1message_1_1allowed__ref" ],
-    [ "message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", "structdpp_1_1message_1_1message__interaction__struct" ],
     [ "message_ref", "structdpp_1_1message_1_1message__ref.html", "structdpp_1_1message_1_1message__ref" ],
     [ "message", "structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756", null ],
     [ "~message", "structdpp_1_1message.html#a4b176cfde5ca415d09dedf3d6156ee97", null ],
@@ -12,7 +11,6 @@ var structdpp_1_1message =
     [ "add_embed", "structdpp_1_1message.html#a9ff92caceb655fa1f89710445a24c107", null ],
     [ "build_json", "structdpp_1_1message.html#a53e788c52de75b4e067f658e8657adc7", null ],
     [ "fill_from_json", "structdpp_1_1message.html#a7e15337119679e582768d794b409cffb", null ],
-    [ "has_thread", "structdpp_1_1message.html#a9b05e57f76d9c2e656d86f45bf8a5230", null ],
     [ "is_crosspost", "structdpp_1_1message.html#a03ce860de6231985a823f8ce2dd2dd8d", null ],
     [ "is_crossposted", "structdpp_1_1message.html#acd532877b68dcd3f1713fd6df9045ed2", null ],
     [ "is_ephemeral", "structdpp_1_1message.html#a6d8e17c0e9066eb044b241355d0a3efb", null ],
@@ -26,7 +24,7 @@ var structdpp_1_1message =
     [ "set_flags", "structdpp_1_1message.html#a3895655222ad8f3b9d9b96c47afb2454", null ],
     [ "set_reference", "structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283", null ],
     [ "set_type", "structdpp_1_1message.html#ada2f9404e7dbb12b3de0a382c3733587", null ],
-    [ "suppress_embeds", "structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040", null ],
+    [ "supress_embeds", "structdpp_1_1message.html#ade17fb77debb971918af8434b0f7477c", null ],
     [ "allowed_mentions", "structdpp_1_1message.html#a389f295110a630b2e3f076013b617111", null ],
     [ "attachments", "structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7", null ],
     [ "author", "structdpp_1_1message.html#a35c14f04382266b29c4ca076b4e0f9e0", null ],
@@ -40,7 +38,6 @@ var structdpp_1_1message =
     [ "flags", "structdpp_1_1message.html#a16fca6ff4595e0fcab2305205eb54626", null ],
     [ "guild_id", "structdpp_1_1message.html#a5e75f7cd8a7e952e6621c520627d5b84", null ],
     [ "id", "structdpp_1_1message.html#a7c1e0cc707a4168b75945da0d31105a0", null ],
-    [ "interaction", "structdpp_1_1message.html#ab61c894afe6b0f7655b3908217878e68", null ],
     [ "member", "structdpp_1_1message.html#a550f3dc37e4b55cccc2e78d90fc047fb", null ],
     [ "mention_channels", "structdpp_1_1message.html#ae161a71904462eab6bdd539f4ff32332", null ],
     [ "mention_everyone", "structdpp_1_1message.html#a499cacfe6a270dca773fc7f91718ac70", null ],

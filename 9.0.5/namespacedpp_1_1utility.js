@@ -3,13 +3,13 @@ var namespacedpp_1_1utility =
     [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
     [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ],
     [ "cmd_result_t", "namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6", null ],
-    [ "bytes", "namespacedpp_1_1utility.html#a0175a6451f8d41c9e17833fae9be3c5c", null ],
-    [ "current_date_time", "namespacedpp_1_1utility.html#a92e96c2cb9bc5dcd7343f23f70ccfd94", null ],
-    [ "debug_dump", "namespacedpp_1_1utility.html#aa202188acb66811e6ea0f56571614c6a", null ],
-    [ "exec", "namespacedpp_1_1utility.html#abeab04272170b56d6075e386db1c7785", null ],
-    [ "has_voice", "namespacedpp_1_1utility.html#a3e939d08d5474d50096fc9e889d9934b", null ],
-    [ "loglevel", "namespacedpp_1_1utility.html#abd999684969fdf39b77e7f9fd09bf57f", null ],
-    [ "time_f", "namespacedpp_1_1utility.html#a5603a807b2a0384968d07be7581e1d0f", null ],
-    [ "utf8len", "namespacedpp_1_1utility.html#a274ad7457496c9c28634c2e11fa08edf", null ],
-    [ "utf8substr", "namespacedpp_1_1utility.html#ad2be660538b63fad0566076c96c88dcf", null ]
+    [ "bytes", "namespacedpp_1_1utility.html#a84b01aa8d5a72a0ce43055cc5942ce23", null ],
+    [ "current_date_time", "namespacedpp_1_1utility.html#a20db200cd842b93cb65767bf78b36bf5", null ],
+    [ "debug_dump", "namespacedpp_1_1utility.html#a0ad0c8794eb053266d79258eb7339124", null ],
+    [ "exec", "namespacedpp_1_1utility.html#a329ced24b62e56f2f137e2db637497f6", null ],
+    [ "has_voice", "namespacedpp_1_1utility.html#a67c39c1d585e4efc89518e643c4ca112", null ],
+    [ "loglevel", "namespacedpp_1_1utility.html#a67c212540ecc5258241898a8973caebe", null ],
+    [ "time_f", "namespacedpp_1_1utility.html#a94498cd13d062928e0158f42b38ceb8a", null ],
+    [ "utf8len", "namespacedpp_1_1utility.html#a915b95a9f5efa3bcde16540cd3a08d3b", null ],
+    [ "utf8substr", "namespacedpp_1_1utility.html#a61d1cf45d36c302d245c05508ce83f84", null ]
 ];

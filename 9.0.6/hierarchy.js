@@ -157,9 +157,6 @@ var hierarchy =
       [ "dpp::voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", null ],
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
-    [ "std::exception", null, [
-      [ "dpp::exception", "classdpp_1_1exception.html", null ]
-    ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
       [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", null ]
@@ -190,19 +187,14 @@ var hierarchy =
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
     [ "dpp::message", "structdpp_1_1message.html", null ],
-    [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
-    [ "OpusDecoder", "struct_opus_decoder.html", null ],
-    [ "OpusEncoder", "struct_opus_encoder.html", null ],
-    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
     [ "dpp::presence", "classdpp_1_1presence.html", null ],
     [ "dpp::prune", "structdpp_1_1prune.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
-    [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
@@ -216,7 +208,6 @@ var hierarchy =
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
-    [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
