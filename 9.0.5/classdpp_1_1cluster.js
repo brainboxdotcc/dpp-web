@@ -221,5 +221,6 @@ var classdpp_1_1cluster =
     [ "maxclusters", "classdpp_1_1cluster.html#ad80e4df300e69988d163d61c14e540ab", null ],
     [ "me", "classdpp_1_1cluster.html#ad31317a40181f6864646c8758871b495", null ],
     [ "numshards", "classdpp_1_1cluster.html#a7418aa521c49af80822039b013d8d004", null ],
+    [ "rest_ping", "classdpp_1_1cluster.html#a6161f8d412b2e81a06594f727684a260", null ],
     [ "token", "classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e", null ]
 ];

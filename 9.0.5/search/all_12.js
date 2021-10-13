@@ -120,7 +120,7 @@ var searchData=
   ['subscriber_5fcount_117',['subscriber_count',['../classdpp_1_1integration.html#a6226522574b38e03a4cb2df9ddc7dbba',1,'dpp::integration']]],
   ['success_118',['success',['../structdpp_1_1confirmation.html#af16e812b41c01161a984498c0c52e66e',1,'dpp::confirmation']]],
   ['summary_119',['summary',['../structdpp_1_1integration__app.html#a467fed81de74c5d9e75bd367e430bca8',1,'dpp::integration_app']]],
-  ['supress_5fembeds_120',['supress_embeds',['../structdpp_1_1message.html#ade17fb77debb971918af8434b0f7477c',1,'dpp::message']]],
+  ['suppress_5fembeds_120',['suppress_embeds',['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message']]],
   ['synced_5fat_121',['synced_at',['../classdpp_1_1integration.html#adc4d5078e65f35a398d4d43c88870812',1,'dpp::integration']]],
   ['system_5fchannel_5fid_122',['system_channel_id',['../classdpp_1_1guild.html#a0fc5cec016c0604ce2575fbe5eea5ded',1,'dpp::guild']]]
 ];
