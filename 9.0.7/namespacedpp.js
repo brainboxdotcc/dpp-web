@@ -28,7 +28,7 @@ var namespacedpp =
     [ "command_option", "structdpp_1_1command__option.html", "structdpp_1_1command__option" ],
     [ "command_option_choice", "structdpp_1_1command__option__choice.html", "structdpp_1_1command__option__choice" ],
     [ "command_permission", "classdpp_1_1command__permission.html", "classdpp_1_1command__permission" ],
-    [ "command_resolved", "structdpp_1_1command__resolved.html", "structdpp_1_1command__resolved" ],
+    [ "command_resolved", "structdpp_1_1command__resolved.html", null ],
     [ "command_source", "structdpp_1_1command__source.html", "structdpp_1_1command__source" ],
     [ "commandhandler", "classdpp_1_1commandhandler.html", "classdpp_1_1commandhandler" ],
     [ "component", "classdpp_1_1component.html", "classdpp_1_1component" ],
@@ -104,7 +104,6 @@ var namespacedpp =
     [ "reaction", "structdpp_1_1reaction.html", "structdpp_1_1reaction" ],
     [ "ready_t", "structdpp_1_1ready__t.html", "structdpp_1_1ready__t" ],
     [ "request_queue", "classdpp_1_1request__queue.html", "classdpp_1_1request__queue" ],
-    [ "resolved_user", "structdpp_1_1resolved__user.html", "structdpp_1_1resolved__user" ],
     [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
     [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
     [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
@@ -128,9 +127,6 @@ var namespacedpp =
     [ "user", "classdpp_1_1user.html", "classdpp_1_1user" ],
     [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
     [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
-    [ "voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", "structdpp_1_1voice__client__disconnect__t" ],
-    [ "voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", "structdpp_1_1voice__client__speaking__t" ],
-    [ "voice_out_packet", "structdpp_1_1voice__out__packet.html", "structdpp_1_1voice__out__packet" ],
     [ "voice_ready_t", "structdpp_1_1voice__ready__t.html", "structdpp_1_1voice__ready__t" ],
     [ "voice_receive_t", "structdpp_1_1voice__receive__t.html", "structdpp_1_1voice__receive__t" ],
     [ "voice_server_update_t", "structdpp_1_1voice__server__update__t.html", "structdpp_1_1voice__server__update__t" ],
@@ -149,8 +145,8 @@ var namespacedpp =
     [ "channel_map", "namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30", null ],
     [ "command_completion_event_t", "namespacedpp.html#a022dce6b086ec4515384eaece59c84c3", null ],
     [ "command_handler", "namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3", null ],
-    [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
-    [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
+    [ "command_parameter", "namespacedpp.html#abb8e7d04227af92295494367dcec6a4d", null ],
+    [ "command_value", "namespacedpp.html#a210a8688d51d3b313d3959c6dd91c40b", null ],
     [ "confirmable_t", "namespacedpp.html#aa9b8b2be70d0b0b5fdb8e9dddf3ece10", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
@@ -269,9 +265,7 @@ var namespacedpp =
       [ "co_boolean", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a804453a3a94d413b634544e57f5ae2cc", null ],
       [ "co_user", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a5a2ea837ca5ec64e6385acf392cef1e2", null ],
       [ "co_channel", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a96f8ffcbd6b293e75a0500d729fc9b31", null ],
-      [ "co_role", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a4476d79df02a4909cd7931d5a7e5f0ac", null ],
-      [ "co_mentionable", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a6104d8b3d8c608855ccf8eab2d60a821", null ],
-      [ "co_number", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b", null ]
+      [ "co_role", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a4476d79df02a4909cd7931d5a7e5f0ac", null ]
     ] ],
     [ "command_permission_type", "namespacedpp.html#ac66e44bd22afee53242581010ddd3728", [
       [ "cpt_role", "namespacedpp.html#ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f", null ],
@@ -388,6 +382,8 @@ var namespacedpp =
     ] ],
     [ "interaction_response_type", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02", [
       [ "ir_pong", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede", null ],
+      [ "ir_acknowledge", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02adedea5e5d6fb997f7ddaed5d59a55ea9", null ],
+      [ "ir_channel_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a55c989cea99cb8ce15439d19ee718619", null ],
       [ "ir_channel_message_with_source", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c", null ],
       [ "ir_deferred_channel_message_with_source", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294", null ],
       [ "ir_deferred_update_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312", null ],
@@ -409,10 +405,9 @@ var namespacedpp =
     [ "message_flags", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8", [
       [ "m_crossposted", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aab96a9099e9e1de98d2e0270dae49851", null ],
       [ "m_is_crosspost", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d", null ],
-      [ "m_suppress_embeds", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01", null ],
+      [ "m_supress_embeds", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aac780581bacd412c2298fc2e73efcca9", null ],
       [ "m_source_message_deleted", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d", null ],
       [ "m_urgent", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7", null ],
-      [ "m_has_thread", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1", null ],
       [ "m_ephemeral", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf", null ],
       [ "m_loading", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a347b30bfa696feef3b8948a5ea20127e", null ]
     ] ],
@@ -438,8 +433,7 @@ var namespacedpp =
       [ "mt_reply", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca13c1c1a4ead0ba6bfaca3c8e0fa53c7c", null ],
       [ "mt_application_command", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac0bfbd92c02b3e5e0a74f2b949c321fa", null ],
       [ "mt_thread_starter_message", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f", null ],
-      [ "mt_guild_invite_reminder", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a", null ],
-      [ "mt_context_menu_command", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe", null ]
+      [ "mt_guild_invite_reminder", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a", null ]
     ] ],
     [ "overwrite_type", "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522", [
       [ "ot_role", "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522ab1e3ea27fc98089b63c9e89fe7c44df5", null ],
@@ -451,7 +445,6 @@ var namespacedpp =
       [ "pt_channel", "namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a35cd631f30378b96f3ea002e74b8f026", null ],
       [ "pt_user", "namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a65e5825b1a709ece15c7de9dd2b21bdf", null ],
       [ "pt_integer", "namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270", null ],
-      [ "pt_double", "namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a095d2a7bbe72af8c679d3f02f4395650", null ],
       [ "pt_boolean", "namespacedpp.html#a9a2049904620e4f62b82f8dc818de864acdd3703d49822d51598fa8575ce7bbd9", null ]
     ] ],
     [ "presence_flags", "namespacedpp.html#a953f1484a5140481ffab2b248618fb22", [
@@ -527,15 +520,12 @@ var namespacedpp =
       [ "p_manage_nicknames", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faf2cc3c251fd4d3a180b932220681c8c7", null ],
       [ "p_manage_roles", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa2fc44537c377d2b8f1d0038fb981d7b1", null ],
       [ "p_manage_webhooks", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa549b4abc6dada6f0bf90867796811022", null ],
-      [ "p_manage_emojis_and_stickers", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad691e887806c25155195bee70d772311", null ],
-      [ "p_use_application_commands", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae628847e2db7d4b3d986d6546efde812", null ],
+      [ "p_manage_emojis", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa52ca744579742782d999f42f867cb061", null ],
+      [ "p_use_slash_commands", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faa0864fd6d44071028ec1f35d09c355b7", null ],
       [ "p_request_to_speak", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa36d490ca8b4746a76b4982dfa03d7396", null ],
       [ "p_manage_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b", null ],
-      [ "p_create_public_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa32c172d9953bb8cf72dea1a33762eddb", null ],
-      [ "p_create_private_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34", null ],
-      [ "p_use_external_stickers", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3", null ],
-      [ "p_send_messages_in_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937", null ],
-      [ "p_start_embedded_activities", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa8b664cc72b2379ebe85894385e804e33", null ]
+      [ "p_use_public_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa8904936919c87a25e2e40c26e9b19d81", null ],
+      [ "p_use_private_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5250139ae5b4f2ce5dae2e784e69212a", null ]
     ] ],
     [ "slashcommand_contextmenu_type", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb", [
       [ "ctxm_none", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824", null ],
@@ -587,7 +577,7 @@ var namespacedpp =
       [ "vs_self_deaf", "namespacedpp.html#a6a7cc94290184616d0267d751f02d53fabaf7cfcc392357c72245e847b3dc6954", null ],
       [ "vs_self_stream", "namespacedpp.html#a6a7cc94290184616d0267d751f02d53faa71e77d5dec0a32ba01779884f83cf3b", null ],
       [ "vs_self_video", "namespacedpp.html#a6a7cc94290184616d0267d751f02d53fa33cbc9aa408db6c7ee21d28dbbbdbe57", null ],
-      [ "vs_suppress", "namespacedpp.html#a6a7cc94290184616d0267d751f02d53fab6b112d9c3a80339f4c722d127c5e4d6", null ]
+      [ "vs_supress", "namespacedpp.html#a6a7cc94290184616d0267d751f02d53faf1366589595934ba16d4451ff2a0f30d", null ]
     ] ],
     [ "webhook_type", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0", [
       [ "w_incoming", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a", null ],
@@ -633,7 +623,7 @@ var namespacedpp =
     [ "Int32NotNull", "namespacedpp.html#a0ec00af0eb7cc6ae98fffbbd589e102b", null ],
     [ "Int64NotNull", "namespacedpp.html#acbaec22075a1b65604103b2b90a6e282", null ],
     [ "Int8NotNull", "namespacedpp.html#a36b79dfd40f25ebd4967f519b52e068f", null ],
-    [ "populate_result", "namespacedpp.html#a4d0e7257dbc68790bbaa6a34a20b776d", null ],
+    [ "populate_result", "namespacedpp.html#a7c317c37b23dfe20a62f5b9453555e10", null ],
     [ "SetBoolNotNull", "namespacedpp.html#ab3eb25fd6578973e4b2bc86d5c073d1b", null ],
     [ "SetInt16NotNull", "namespacedpp.html#ab3ce48617238a41aebf1048467ebdfd6", null ],
     [ "SetInt32NotNull", "namespacedpp.html#ac296a013a8ea5f03da0953ff263a6438", null ],
@@ -656,13 +646,11 @@ var namespacedpp =
     [ "confirmation_callback_t", "namespacedpp.html#a67e29e78e1e13bed67c3c68a6adad5fa", null ],
     [ "deletion_mutex", "namespacedpp.html#a2630b73cc2ee72fec720c5324655f400", null ],
     [ "deletion_queue", "namespacedpp.html#a04c02d7d0ead46eea16ed48015e82a99", null ],
-    [ "DISCORD_HOST", "namespacedpp.html#a27df95e52167e3d7020ee6ad7958eaa8", null ],
     [ "emoji_cache", "namespacedpp.html#a3d2e114ba137f1f5bf6fd9782f41d2f2", null ],
     [ "ERROR_STATUS", "namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87", null ],
     [ "eventmap", "namespacedpp.html#ac40602ddc592a7cfb7709375cfd8528e", null ],
     [ "external_ip", "namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c", null ],
     [ "guild_cache", "namespacedpp.html#a2bc14e10038152802645f051c747dc2f", null ],
-    [ "http_version", "namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b", null ],
     [ "MAXHEADERSIZE", "namespacedpp.html#aeef0538fa45377c9b04fc944efec0f0c", null ],
     [ "role_cache", "namespacedpp.html#a859e163ce0aca88e3d1f5379ee53ad3d", null ],
     [ "user_cache", "namespacedpp.html#a6ddd481a6548ebed807a5cebbd2fba79", null ],
