@@ -20,6 +20,7 @@ var NAVTREEINDEX9 =
 "components2.html":[3,10],
 "components3.html":[3,9],
 "deprecated.html":[5],
+"embed-message.html":[3,13],
 "firstbot.html":[3,0],
 "frequently-asked-questions.html":[0,7],
 "frequently-asked-questions.html#autotoc_md69":[0,7,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca":[6,0,1,212,0],
 "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede":[6,0,1,212,1],
 "namespacedpp.html#a1ec69281fca102c8dbc0afb117e18c3b":[6,0,1,243],
-"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0":[6,0,1,216],
-"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a":[6,0,1,216,0]
+"namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0":[6,0,1,216]
 };
