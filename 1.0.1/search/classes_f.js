@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['voice_5fbuffer_5fsend_5ft_0',['voice_buffer_send_t',['../structdpp_1_1voice__buffer__send__t.html',1,'dpp']]],
-  ['voice_5fready_5ft_1',['voice_ready_t',['../structdpp_1_1voice__ready__t.html',1,'dpp']]],
-  ['voice_5freceive_5ft_2',['voice_receive_t',['../structdpp_1_1voice__receive__t.html',1,'dpp']]],
-  ['voice_5fserver_5fupdate_3',['voice_server_update',['../classdpp_1_1events_1_1voice__server__update.html',1,'dpp::events']]],
-  ['voice_5fserver_5fupdate_5ft_4',['voice_server_update_t',['../structdpp_1_1voice__server__update__t.html',1,'dpp']]],
-  ['voice_5fstate_5fupdate_5',['voice_state_update',['../classdpp_1_1events_1_1voice__state__update.html',1,'dpp::events']]],
-  ['voice_5fstate_5fupdate_5ft_6',['voice_state_update_t',['../structdpp_1_1voice__state__update__t.html',1,'dpp']]],
-  ['voice_5ftrack_5fmarker_5ft_7',['voice_track_marker_t',['../structdpp_1_1voice__track__marker__t.html',1,'dpp']]],
-  ['voice_5fuser_5ftalking_5ft_8',['voice_user_talking_t',['../structdpp_1_1voice__user__talking__t.html',1,'dpp']]],
-  ['voiceconn_9',['voiceconn',['../classdpp_1_1voiceconn.html',1,'dpp']]],
-  ['voiceregion_10',['voiceregion',['../classdpp_1_1voiceregion.html',1,'dpp']]],
-  ['voicestate_11',['voicestate',['../classdpp_1_1voicestate.html',1,'dpp']]]
+  ['thread_5fcreate_0',['thread_create',['../classdpp_1_1events_1_1thread__create.html',1,'dpp::events']]],
+  ['thread_5fcreate_5ft_1',['thread_create_t',['../structdpp_1_1thread__create__t.html',1,'dpp']]],
+  ['thread_5fdelete_2',['thread_delete',['../classdpp_1_1events_1_1thread__delete.html',1,'dpp::events']]],
+  ['thread_5fdelete_5ft_3',['thread_delete_t',['../structdpp_1_1thread__delete__t.html',1,'dpp']]],
+  ['thread_5flist_5fsync_4',['thread_list_sync',['../classdpp_1_1events_1_1thread__list__sync.html',1,'dpp::events']]],
+  ['thread_5flist_5fsync_5ft_5',['thread_list_sync_t',['../structdpp_1_1thread__list__sync__t.html',1,'dpp']]],
+  ['thread_5fmember_6',['thread_member',['../structdpp_1_1thread__member.html',1,'dpp']]],
+  ['thread_5fmember_5fupdate_7',['thread_member_update',['../classdpp_1_1events_1_1thread__member__update.html',1,'dpp::events']]],
+  ['thread_5fmember_5fupdate_5ft_8',['thread_member_update_t',['../structdpp_1_1thread__member__update__t.html',1,'dpp']]],
+  ['thread_5fmembers_5fupdate_9',['thread_members_update',['../classdpp_1_1events_1_1thread__members__update.html',1,'dpp::events']]],
+  ['thread_5fmembers_5fupdate_5ft_10',['thread_members_update_t',['../structdpp_1_1thread__members__update__t.html',1,'dpp']]],
+  ['thread_5fmetadata_11',['thread_metadata',['../structdpp_1_1thread__metadata.html',1,'dpp']]],
+  ['thread_5fupdate_12',['thread_update',['../classdpp_1_1events_1_1thread__update.html',1,'dpp::events']]],
+  ['thread_5fupdate_5ft_13',['thread_update_t',['../structdpp_1_1thread__update__t.html',1,'dpp']]],
+  ['typing_5fstart_14',['typing_start',['../classdpp_1_1events_1_1typing__start.html',1,'dpp::events']]],
+  ['typing_5fstart_5ft_15',['typing_start_t',['../structdpp_1_1typing__start__t.html',1,'dpp']]]
 ];

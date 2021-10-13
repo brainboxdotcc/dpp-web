@@ -1,9 +1,10 @@
 var classdpp_1_1guild =
 [
     [ "guild", "classdpp_1_1guild.html#aeae6599054436a5a66e07683032089dc", null ],
+    [ "~guild", "classdpp_1_1guild.html#a7e494da5ab1aaaddae4d588849ea9f14", null ],
     [ "base_permissions", "classdpp_1_1guild.html#a0efc24108bb872be9be88cf26bc5af28", null ],
     [ "build_json", "classdpp_1_1guild.html#ac61dbbc6e4c64edd19a96a7ce44d9ab9", null ],
-    [ "ConnectMemberVoice", "classdpp_1_1guild.html#a09d9fdbfb0759d27f97f571dd046ebb5", null ],
+    [ "connect_member_voice", "classdpp_1_1guild.html#a771c4830e1c4e775837d7c6c020ecb4f", null ],
     [ "fill_from_json", "classdpp_1_1guild.html#af180ee5682802b64c79d2dc8abc7c9cd", null ],
     [ "has_animated_icon", "classdpp_1_1guild.html#a46cf6e3821d628027553641c0623df34", null ],
     [ "has_animated_icon_hash", "classdpp_1_1guild.html#a019d630e2b5aeb708b48d6f8fbb420de", null ],
@@ -53,6 +54,7 @@ var classdpp_1_1guild =
     [ "shard_id", "classdpp_1_1guild.html#a80181fee5f66b2dd6f24bad72226bf7c", null ],
     [ "splash", "classdpp_1_1guild.html#a45281957f5252467c6b620c61de4ca14", null ],
     [ "system_channel_id", "classdpp_1_1guild.html#a0fc5cec016c0604ce2575fbe5eea5ded", null ],
+    [ "threads", "classdpp_1_1guild.html#a8e13e2dd21e91104a1e8335990046bf7", null ],
     [ "vanity_url_code", "classdpp_1_1guild.html#ad858d700638f1785f2338e8ec667c74f", null ],
     [ "verification_level", "classdpp_1_1guild.html#a6132ae5944f766ade85c4fc4521180a5", null ],
     [ "voice_members", "classdpp_1_1guild.html#a42066fe3bbfb976ba27fbb9ca38b722f", null ],

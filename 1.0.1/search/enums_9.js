@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['presence_5fflags_0',['presence_flags',['../namespacedpp.html#a953f1484a5140481ffab2b248618fb22',1,'dpp']]],
-  ['presence_5fstatus_1',['presence_status',['../namespacedpp.html#a172aa830689e55f4bba337de1592db96',1,'dpp']]]
+  ['overwrite_5ftype_0',['overwrite_type',['../namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522',1,'dpp']]]
 ];

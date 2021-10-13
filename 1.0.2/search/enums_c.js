@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['user_5fflags_0',['user_flags',['../namespacedpp.html#ace1318b24526febab72157cdd8b7b468',1,'dpp']]]
+  ['slashcommand_5fcontextmenu_5ftype_0',['slashcommand_contextmenu_type',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb',1,'dpp']]],
+  ['sticker_5fformat_1',['sticker_format',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2',1,'dpp']]],
+  ['sticker_5ftype_2',['sticker_type',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bff',1,'dpp']]]
 ];

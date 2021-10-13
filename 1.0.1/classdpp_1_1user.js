@@ -11,6 +11,7 @@ var classdpp_1_1user =
     [ "is_bot", "classdpp_1_1user.html#aeb219805eb74e76d7814ba671de31a21", null ],
     [ "is_bughunter_1", "classdpp_1_1user.html#afeb70e25be8585ff557b51dd99bb7f99", null ],
     [ "is_bughunter_2", "classdpp_1_1user.html#a287d9706c6ba49a5d627ceef2d5c3525", null ],
+    [ "is_certified_moderator", "classdpp_1_1user.html#a88d7f40223baa835b92f6aa54af42420", null ],
     [ "is_discord_employee", "classdpp_1_1user.html#a5780e0142e20d952d348c33d51a4d926", null ],
     [ "is_early_supporter", "classdpp_1_1user.html#a5768865659ca76eebc37a8f02b1b7b9b", null ],
     [ "is_house_balanace", "classdpp_1_1user.html#ae4fda64d92055ef9ddac0ce0109b8d94", null ],

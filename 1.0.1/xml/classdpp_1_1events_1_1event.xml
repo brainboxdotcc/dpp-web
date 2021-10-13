@@ -23,6 +23,7 @@
     <derivedcompoundref refid="classdpp_1_1events_1_1guild__role__create" prot="public" virt="non-virtual">dpp::events::guild_role_create</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1guild__role__delete" prot="public" virt="non-virtual">dpp::events::guild_role_delete</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1guild__role__update" prot="public" virt="non-virtual">dpp::events::guild_role_update</derivedcompoundref>
+    <derivedcompoundref refid="classdpp_1_1events_1_1guild__stickers__update" prot="public" virt="non-virtual">dpp::events::guild_stickers_update</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1guild__update" prot="public" virt="non-virtual">dpp::events::guild_update</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1integration__create" prot="public" virt="non-virtual">dpp::events::integration_create</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1integration__delete" prot="public" virt="non-virtual">dpp::events::integration_delete</derivedcompoundref>
@@ -44,6 +45,12 @@
     <derivedcompoundref refid="classdpp_1_1events_1_1resumed" prot="public" virt="non-virtual">dpp::events::resumed</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1stage__instance__create" prot="public" virt="non-virtual">dpp::events::stage_instance_create</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1stage__instance__delete" prot="public" virt="non-virtual">dpp::events::stage_instance_delete</derivedcompoundref>
+    <derivedcompoundref refid="classdpp_1_1events_1_1thread__create" prot="public" virt="non-virtual">dpp::events::thread_create</derivedcompoundref>
+    <derivedcompoundref refid="classdpp_1_1events_1_1thread__delete" prot="public" virt="non-virtual">dpp::events::thread_delete</derivedcompoundref>
+    <derivedcompoundref refid="classdpp_1_1events_1_1thread__list__sync" prot="public" virt="non-virtual">dpp::events::thread_list_sync</derivedcompoundref>
+    <derivedcompoundref refid="classdpp_1_1events_1_1thread__member__update" prot="public" virt="non-virtual">dpp::events::thread_member_update</derivedcompoundref>
+    <derivedcompoundref refid="classdpp_1_1events_1_1thread__members__update" prot="public" virt="non-virtual">dpp::events::thread_members_update</derivedcompoundref>
+    <derivedcompoundref refid="classdpp_1_1events_1_1thread__update" prot="public" virt="non-virtual">dpp::events::thread_update</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1typing__start" prot="public" virt="non-virtual">dpp::events::typing_start</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1user__update" prot="public" virt="non-virtual">dpp::events::user_update</derivedcompoundref>
     <derivedcompoundref refid="classdpp_1_1events_1_1voice__server__update" prot="public" virt="non-virtual">dpp::events::voice_server_update</derivedcompoundref>
@@ -51,60 +58,67 @@
     <derivedcompoundref refid="classdpp_1_1events_1_1webhooks__update" prot="public" virt="non-virtual">dpp::events::webhooks_update</derivedcompoundref>
     <includes local="no">event.h</includes>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1events_1_1event_1a1663950556f9eec571c8ed47ad22a664" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="classdpp_1_1events_1_1event_1a03fd1d1321e3660f00c4a9e00da2aa81" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
         <definition>virtual void dpp::events::event::handle</definition>
-        <argsstring>(class DiscordClient *client, nlohmann::json &amp;j, const std::string &amp;raw)=0</argsstring>
+        <argsstring>(class discord_client *client, nlohmann::json &amp;j, const std::string &amp;raw)=0</argsstring>
         <name>handle</name>
-        <reimplementedby refid="classdpp_1_1events_1_1logger_1aeef085770fbd9744cc0d0267764b8b2e">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__create_1a3b967caac5f5d76540a9f764bcb718ce">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__update_1a6f3c57fb03141e24141ed82877b4b844">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__delete_1a267dc839ead1e910c44b665cd1da6b91">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__ban__add_1a8fe84322f9b3608601a3e1fbc62a7d94">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__ban__remove_1a95c84eb7783ecf9b63d88758184db64f">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__emojis__update_1a79840995cffdf35b4a8b7d8108741b58">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__integrations__update_1a9569be786bbfb86ffd1221b4676f5dde">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__join__request__delete_1a036d35bd8db9b7d5c3958942252e9201">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1stage__instance__create_1aebaf6215d6ddeabbc361a2ed2fa8f6a9">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1stage__instance__delete_1a2751f8dfd00e18dcfc96261a2e477b37">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__member__add_1a7fdb69bccc78af6aa7aa332062a30ecd">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__member__remove_1af6c4082c87e6f5d13bb754a11fd60918">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__members__chunk_1aedb4e17ffa4495c34b385496e5b9c0cc">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__member__update_1ad7290280433ec52816b1fe834a4d2363">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__role__create_1a14e958a4cb67671d3a366cffe3cdb266">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__role__update_1a5e45d691eb4b3a1bdbcba9e38bc96353">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1guild__role__delete_1aa9c19d45192cfa627a2d3f99db42e69b">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1resumed_1acde153cb73870e19ba5167989e12a484">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1ready_1aaecb52f7d7859e59396a303fd6bf32c3">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1channel__create_1abdd74afa691f42819c616fe2f293c3ef">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1channel__update_1ab4b6e0ba08fc0d4cdcc13164d93a9348">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1channel__delete_1a35ff454372246066b034b2f79534bfbe">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1channel__pins__update_1a93db8600a02ffad7c46b7363f09209ad">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1message__create_1af31ed98ee013037ffd8dab66b8f2743b">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1message__update_1a9461c8b122f2017822c56b5d7baf7da8">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1message__delete_1a17b84c7b079b3658f346a989bd1bbb94">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1message__delete__bulk_1ad6b9cde9f9322d7507337aec0666c221">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1presence__update_1a212fd0e3c2eff1286057617f23837235">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1typing__start_1ae7150dc5e3586caed0bd5ef0bfc6d125">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1user__update_1ad2912c419d891010d05092106bd65e0f">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1message__reaction__add_1a7935a044a1151f960a2fb57e7b7212f1">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1message__reaction__remove_1a389e0ea356e987ab56ad76b6de75e231">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1message__reaction__remove__all_1a4c84d801952b8c1255cade0ce0f8516d">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1message__reaction__remove__emoji_1a28a22266adfa810a0899b156aec39096">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1invite__create_1ab96d1468d7069ca20e38ab0a25677a2b">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1invite__delete_1a99e19db734fa293e4674e3b87731d406">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1voice__state__update_1a03ebb58de4cb61a8458873565fbec623">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1voice__server__update_1a34e683003d2337b652e8560b277e37a9">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1webhooks__update_1a01d9c7f70cdbd89f10a5e3bfb2783244">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1application__command__create_1a683723093d310da8f7377f6279b6b5dc">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1application__command__update_1a7bd6b3853fb717c3bd0cae7a307294c2">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1application__command__delete_1a2823a8f977ed57f9cf82fe4bfbe10423">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1interaction__create_1a0de0fcca0cfcd88250b0ee290bebf461">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1integration__create_1a9651b8fd457ab735d27d8ededffb6f68">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1integration__update_1a3cd6eacab800afe79c5dfef0e83be810">handle</reimplementedby>
-        <reimplementedby refid="classdpp_1_1events_1_1integration__delete_1a6e68a620201deb15fd7be713af51f96d">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1logger_1a399c5e92bf7861b2687664bac3bd491a">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__create_1acb3f8d44cdc963d18c6fd9ee1d5a4638">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__update_1ac125490e98316c3c62051c5a1a4cc761">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__delete_1a6baacb90ecd3490ca5f8b1372948a6c0">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__ban__add_1ab1c0bf658f2f51f2fae6fdc66cd6fcb9">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__ban__remove_1ae8f80c9de4d098769ce003e0e7e33266">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__emojis__update_1a9022c51c33ad67e31852bcb37d389844">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__integrations__update_1af375505f17eddfc5d9757008d0f547eb">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__join__request__delete_1a08011db8fdfb04f79260bfb50d3a44f8">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__stickers__update_1a99135f0e34a38780c4757f852e8bf538">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1stage__instance__create_1a48650031a83d11f1f62de9e979f97b8e">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1stage__instance__delete_1aec50d425bdd145e1a9b91d2d8522914c">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__member__add_1aae35805b0315d3febf7fd318320a7497">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__member__remove_1a73577a379cd95f9d45aa27b38bfa9173">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__members__chunk_1a6dca626b36e32fe74b5b0b7b0fe1967b">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__member__update_1ab88e6bdc92d2c208ad7c6444baec9869">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__role__create_1aba241add35e6554370eca4a148696302">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__role__update_1a947488a8ca9337b9c70ac8b07408898a">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1guild__role__delete_1a82d147885b275ad98286cb04396ea3b1">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1resumed_1a6d76bd654778ec18d8f5101b49c71a0a">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1ready_1afc6d431df9ea70d7472354910f231061">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1channel__create_1ab8faf85c49f4d0463e84152171dd762c">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1channel__update_1a6e5040dc526562d8df02ee2c3ddff090">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1channel__delete_1aa9a005c8f84d11ea1ca473852b4ab251">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1channel__pins__update_1afe5eb4a399dfb61c3c9413eef304e269">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1thread__create_1addf9a7cb6fb4c570e0509b8d34d7ec02">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1thread__update_1aba954310cadc1eacbaca2978e9dac2bb">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1thread__delete_1a6ff7973ec13f421edda28b008a4489dc">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1thread__list__sync_1a9b6d911d3e63679e7fb9b8e300242216">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1thread__member__update_1ab2e2dc50a8fc76d3b14451adfc526230">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1thread__members__update_1a0bf91b21d280d71bf3c881550f5298aa">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1message__create_1a309d726ee14343ae5be473b2bdbb41c0">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1message__update_1a19933a7610803b65289a59317efbd149">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1message__delete_1a56fb52622ae6013f9b98ab0936e8fb2e">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1message__delete__bulk_1a4c99cabc95d797105cad96d6ef85c60c">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1presence__update_1a88d2eddd8c88200f6ac9968af9f6fe24">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1typing__start_1a0ec0504e27b69c2f4fab5390753ee932">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1user__update_1aeb1696b8542e8977563d71ef74f8ae7c">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1message__reaction__add_1a71dcb1fbbc71a43315d571979cdeb5fb">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1message__reaction__remove_1adeef7ea48b85c1cef03d22de48feb938">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1message__reaction__remove__all_1acfceb322ccb593860eedc8bac3961708">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1message__reaction__remove__emoji_1a3c3a0c2f285ce23ae007905897865107">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1invite__create_1a865c0d07ab3f28bb54dc93542be84274">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1invite__delete_1a1b2d785c0ddc13561b33946a14274fcf">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1voice__state__update_1a7da71dc920068836088cc072e41822a0">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1voice__server__update_1a06f9bdc915af84b585a55a15b9c283b1">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1webhooks__update_1ac426527ed6dbb78142da1faa1556d6e9">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1application__command__create_1afa86f5658b7e42d39f2c85eaf907e00d">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1application__command__update_1a0e11fb63ba505e23daf53ba64f0e252c">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1application__command__delete_1a12ee2dfb2453f32b530827e3c860858f">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1interaction__create_1aed602109e4b95799c9cd08aae135b4d1">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1integration__create_1a8cdaee9227fd810a3a961ef0e10200ac">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1integration__update_1a55bf00986abe08842a1ce196b2fcd6ef">handle</reimplementedby>
+        <reimplementedby refid="classdpp_1_1events_1_1integration__delete_1a3b786dcf2a633d6737ad6596f14d68ee">handle</reimplementedby>
         <param>
-          <type>class <ref refid="classdpp_1_1_discord_client" kindref="compound">DiscordClient</ref> *</type>
+          <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
           <declname>client</declname>
         </param>
         <param>
@@ -287,156 +301,198 @@
         </childnode>
       </node>
       <node id="23">
+        <label>dpp::events::guild_stickers_update</label>
+        <link refid="classdpp_1_1events_1_1guild__stickers__update"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
         <label>dpp::events::guild_update</label>
         <link refid="classdpp_1_1events_1_1guild__update"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>dpp::events::integration_create</label>
         <link refid="classdpp_1_1events_1_1integration__create"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>dpp::events::integration_delete</label>
         <link refid="classdpp_1_1events_1_1integration__delete"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>dpp::events::integration_update</label>
         <link refid="classdpp_1_1events_1_1integration__update"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>dpp::events::interaction_create</label>
         <link refid="classdpp_1_1events_1_1interaction__create"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>dpp::events::invite_create</label>
         <link refid="classdpp_1_1events_1_1invite__create"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="30">
         <label>dpp::events::invite_delete</label>
         <link refid="classdpp_1_1events_1_1invite__delete"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="31">
         <label>dpp::events::logger</label>
         <link refid="classdpp_1_1events_1_1logger"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="32">
         <label>dpp::events::message_create</label>
         <link refid="classdpp_1_1events_1_1message__create"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>dpp::events::message_delete</label>
         <link refid="classdpp_1_1events_1_1message__delete"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
+      <node id="34">
         <label>dpp::events::message_delete_bulk</label>
         <link refid="classdpp_1_1events_1_1message__delete__bulk"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="35">
         <label>dpp::events::message_reaction_add</label>
         <link refid="classdpp_1_1events_1_1message__reaction__add"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="36">
         <label>dpp::events::message_reaction_remove</label>
         <link refid="classdpp_1_1events_1_1message__reaction__remove"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="36">
+      <node id="37">
         <label>dpp::events::message_reaction_remove_all</label>
         <link refid="classdpp_1_1events_1_1message__reaction__remove__all"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="37">
+      <node id="38">
         <label>dpp::events::message_reaction_remove_emoji</label>
         <link refid="classdpp_1_1events_1_1message__reaction__remove__emoji"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="38">
+      <node id="39">
         <label>dpp::events::message_update</label>
         <link refid="classdpp_1_1events_1_1message__update"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="39">
+      <node id="40">
         <label>dpp::events::presence_update</label>
         <link refid="classdpp_1_1events_1_1presence__update"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="40">
+      <node id="41">
         <label>dpp::events::ready</label>
         <link refid="classdpp_1_1events_1_1ready"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="41">
+      <node id="42">
         <label>dpp::events::resumed</label>
         <link refid="classdpp_1_1events_1_1resumed"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="42">
+      <node id="43">
         <label>dpp::events::stage_instance_create</label>
         <link refid="classdpp_1_1events_1_1stage__instance__create"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="43">
+      <node id="44">
         <label>dpp::events::stage_instance_delete</label>
         <link refid="classdpp_1_1events_1_1stage__instance__delete"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="44">
+      <node id="45">
+        <label>dpp::events::thread_create</label>
+        <link refid="classdpp_1_1events_1_1thread__create"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>dpp::events::thread_delete</label>
+        <link refid="classdpp_1_1events_1_1thread__delete"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>dpp::events::thread_list_sync</label>
+        <link refid="classdpp_1_1events_1_1thread__list__sync"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>dpp::events::thread_member_update</label>
+        <link refid="classdpp_1_1events_1_1thread__member__update"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>dpp::events::thread_members_update</label>
+        <link refid="classdpp_1_1events_1_1thread__members__update"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>dpp::events::thread_update</label>
+        <link refid="classdpp_1_1events_1_1thread__update"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
         <label>dpp::events::typing_start</label>
         <link refid="classdpp_1_1events_1_1typing__start"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="45">
+      <node id="52">
         <label>dpp::events::user_update</label>
         <link refid="classdpp_1_1events_1_1user__update"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="46">
+      <node id="53">
         <label>dpp::events::voice_server_update</label>
         <link refid="classdpp_1_1events_1_1voice__server__update"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="47">
+      <node id="54">
         <label>dpp::events::voice_state_update</label>
         <link refid="classdpp_1_1events_1_1voice__state__update"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="48">
+      <node id="55">
         <label>dpp::events::webhooks_update</label>
         <link refid="classdpp_1_1events_1_1webhooks__update"/>
         <childnode refid="1" relation="public-inheritance">
@@ -445,7 +501,7 @@
     </inheritancegraph>
     <location file="include/dpp/event.h" line="41" column="1" bodyfile="include/dpp/event.h" bodystart="41" bodyend="49"/>
     <listofallmembers>
-      <member refid="classdpp_1_1events_1_1event_1a1663950556f9eec571c8ed47ad22a664" prot="public" virt="pure-virtual"><scope>dpp::events::event</scope><name>handle</name></member>
+      <member refid="classdpp_1_1events_1_1event_1a03fd1d1321e3660f00c4a9e00da2aa81" prot="public" virt="pure-virtual"><scope>dpp::events::event</scope><name>handle</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>
