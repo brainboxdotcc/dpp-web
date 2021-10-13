@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['param_5finfo_0',['param_info',['../structdpp_1_1param__info.html',1,'dpp']]],
-  ['permission_5foverwrite_1',['permission_overwrite',['../structdpp_1_1permission__overwrite.html',1,'dpp']]],
-  ['presence_2',['presence',['../classdpp_1_1presence.html',1,'dpp']]],
-  ['presence_5fupdate_3',['presence_update',['../classdpp_1_1events_1_1presence__update.html',1,'dpp::events']]],
-  ['presence_5fupdate_5ft_4',['presence_update_t',['../structdpp_1_1presence__update__t.html',1,'dpp']]],
-  ['prune_5',['prune',['../structdpp_1_1prune.html',1,'dpp']]]
+  ['slashcommand_0',['slashcommand',['../classdpp_1_1slashcommand.html',1,'dpp']]],
+  ['sslclient_1',['SSLClient',['../classdpp_1_1_s_s_l_client.html',1,'dpp']]],
+  ['stage_5finstance_5fcreate_2',['stage_instance_create',['../classdpp_1_1events_1_1stage__instance__create.html',1,'dpp::events']]],
+  ['stage_5finstance_5fcreate_5ft_3',['stage_instance_create_t',['../structdpp_1_1stage__instance__create__t.html',1,'dpp']]],
+  ['stage_5finstance_5fdelete_4',['stage_instance_delete',['../classdpp_1_1events_1_1stage__instance__delete.html',1,'dpp::events']]],
+  ['stage_5finstance_5fdelete_5ft_5',['stage_instance_delete_t',['../structdpp_1_1stage__instance__delete__t.html',1,'dpp']]]
 ];

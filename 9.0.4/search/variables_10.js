@@ -25,7 +25,7 @@ var searchData=
   ['replied_5fuser_22',['replied_user',['../structdpp_1_1message_1_1allowed__ref.html#a2b618e76580414b02526dfccc8564d39',1,'dpp::message::allowed_ref']]],
   ['required_23',['required',['../structdpp_1_1command__option.html#ad203ab30a75ce7508f565f5821301bdb',1,'dpp::command_option']]],
   ['reset_5fafter_24',['reset_after',['../structdpp_1_1bucket__t.html#a69e733a2599fa42777c7cd302219d1ab',1,'dpp::bucket_t']]],
-  ['resolved_25',['resolved',['../structdpp_1_1command__interaction.html#abb6e1caad1c42ecdf4679fd59991d872',1,'dpp::command_interaction']]],
+  ['resolved_25',['resolved',['../classdpp_1_1interaction.html#aaa88ba118d0a7b5b32090a844610d7e7',1,'dpp::interaction']]],
   ['resumed_26',['resumed',['../classdpp_1_1dispatcher.html#a95bc992af2a7efc1c1c524eeab354990',1,'dpp::dispatcher']]],
   ['resumes_27',['resumes',['../classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6',1,'dpp::discord_client']]],
   ['retry_5fafter_28',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
@@ -34,6 +34,6 @@ var searchData=
   ['role_5fid_31',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
   ['role_5fname_32',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
   ['role_5fpolicy_33',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],
-  ['roles_34',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()']]],
+  ['roles_34',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()'],['../structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc',1,'dpp::command_resolved::roles()']]],
   ['rules_5fchannel_5fid_35',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
 ];
