@@ -94,7 +94,7 @@ var annotated_dup =
       [ "command_option", "structdpp_1_1command__option.html", "structdpp_1_1command__option" ],
       [ "command_option_choice", "structdpp_1_1command__option__choice.html", "structdpp_1_1command__option__choice" ],
       [ "command_permission", "classdpp_1_1command__permission.html", "classdpp_1_1command__permission" ],
-      [ "command_resolved", "structdpp_1_1command__resolved.html", null ],
+      [ "command_resolved", "structdpp_1_1command__resolved.html", "structdpp_1_1command__resolved" ],
       [ "command_source", "structdpp_1_1command__source.html", "structdpp_1_1command__source" ],
       [ "commandhandler", "classdpp_1_1commandhandler.html", "classdpp_1_1commandhandler" ],
       [ "component", "classdpp_1_1component.html", "classdpp_1_1component" ],
@@ -170,6 +170,7 @@ var annotated_dup =
       [ "reaction", "structdpp_1_1reaction.html", "structdpp_1_1reaction" ],
       [ "ready_t", "structdpp_1_1ready__t.html", "structdpp_1_1ready__t" ],
       [ "request_queue", "classdpp_1_1request__queue.html", "classdpp_1_1request__queue" ],
+      [ "resolved_user", "structdpp_1_1resolved__user.html", "structdpp_1_1resolved__user" ],
       [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
       [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
       [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
@@ -193,6 +194,7 @@ var annotated_dup =
       [ "user", "classdpp_1_1user.html", "classdpp_1_1user" ],
       [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
       [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
+      [ "voice_out_packet", "structdpp_1_1voice__out__packet.html", "structdpp_1_1voice__out__packet" ],
       [ "voice_ready_t", "structdpp_1_1voice__ready__t.html", "structdpp_1_1voice__ready__t" ],
       [ "voice_receive_t", "structdpp_1_1voice__receive__t.html", "structdpp_1_1voice__receive__t" ],
       [ "voice_server_update_t", "structdpp_1_1voice__server__update__t.html", "structdpp_1_1voice__server__update__t" ],
@@ -209,5 +211,8 @@ var annotated_dup =
     ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4" ],
     [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4" ],
-    [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", "structformatter_3_01std_1_1tm_00_01_char_01_4" ]
+    [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", "structformatter_3_01std_1_1tm_00_01_char_01_4" ],
+    [ "OpusDecoder", "struct_opus_decoder.html", null ],
+    [ "OpusEncoder", "struct_opus_encoder.html", null ],
+    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ]
 ];
