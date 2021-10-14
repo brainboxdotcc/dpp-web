@@ -54,8 +54,6 @@ var classdpp_1_1dispatcher =
     [ "typing_start", "classdpp_1_1dispatcher.html#af63372a6426fa4aacd0eecfee5f4ac48", null ],
     [ "user_update", "classdpp_1_1dispatcher.html#aac44804e681d34dc35bd98a61ab41e73", null ],
     [ "voice_buffer_send", "classdpp_1_1dispatcher.html#a05479a227ee0b2e3a9fc110fc22a1edc", null ],
-    [ "voice_client_disconnect", "classdpp_1_1dispatcher.html#a324baf0ce362a3501af414836bd317af", null ],
-    [ "voice_client_speaking", "classdpp_1_1dispatcher.html#acb4325dcc023f84a56515df1105cd0ee", null ],
     [ "voice_ready", "classdpp_1_1dispatcher.html#a9c2f74f1e854a61ec6795ab0e3f7c40b", null ],
     [ "voice_receive", "classdpp_1_1dispatcher.html#af52035826c4e3be4f6e6ac641389bee9", null ],
     [ "voice_server_update", "classdpp_1_1dispatcher.html#ab4635617a097fd90d9a9782066b7c8b3", null ],
