@@ -228,8 +228,8 @@ var NAVTREEINDEX2 =
 "classdpp_1_1component.html#af99f293166995b8273405e446d0efa3e":[6,0,1,31,15],
 "classdpp_1_1component.html#afdb70ec9968493ed54bab29135f8b8c6":[7,0,1,31,26],
 "classdpp_1_1component.html#afdb70ec9968493ed54bab29135f8b8c6":[6,0,1,31,26],
-"classdpp_1_1discord__client.html":[7,0,1,35],
 "classdpp_1_1discord__client.html":[6,0,1,35],
+"classdpp_1_1discord__client.html":[7,0,1,35],
 "classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90":[7,0,1,35,52],
 "classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90":[6,0,1,35,52],
 "classdpp_1_1discord__client.html#a1486b3df6780a842552442a25634fcc9":[7,0,1,35,49],
@@ -248,6 +248,6 @@ var NAVTREEINDEX2 =
 "classdpp_1_1discord__client.html#a26bc3c07e4b547d0d6e2c820d255fac7":[6,0,1,35,0],
 "classdpp_1_1discord__client.html#a3398642150ca79c8f266de83ee93aa30":[7,0,1,35,3],
 "classdpp_1_1discord__client.html#a3398642150ca79c8f266de83ee93aa30":[6,0,1,35,3],
-"classdpp_1_1discord__client.html#a423ca70d4046067ebe219f85c7baa540":[7,0,1,35,56],
-"classdpp_1_1discord__client.html#a423ca70d4046067ebe219f85c7baa540":[6,0,1,35,56]
+"classdpp_1_1discord__client.html#a423ca70d4046067ebe219f85c7baa540":[6,0,1,35,56],
+"classdpp_1_1discord__client.html#a423ca70d4046067ebe219f85c7baa540":[7,0,1,35,56]
 };

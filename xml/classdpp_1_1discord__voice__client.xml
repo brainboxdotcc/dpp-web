@@ -952,11 +952,12 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a75e6ecd47216794a447f2b1def837852" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ac06f68e15b979b0590f09c9732548f16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void dpp::discord_voice_client::log</definition>
-        <argsstring>(dpp::loglevel severity, const std::string &amp;msg)</argsstring>
+        <argsstring>(dpp::loglevel severity, const std::string &amp;msg) const</argsstring>
         <name>log</name>
+        <reimplements refid="classdpp_1_1ssl__client_1a6037b1a66cf83e022655bd47f0df61a5">log</reimplements>
         <param>
           <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
           <declname>severity</declname>
@@ -1812,47 +1813,6 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
         </inbodydescription>
         <location file="include/dpp/sslclient.h" line="133" column="6" bodyfile="src/dpp/sslclient.cpp" bodystart="207" bodyend="381"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ssl__client_1a6037b1a66cf83e022655bd47f0df61a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>void dpp::ssl_client::log</definition>
-        <argsstring>(dpp::loglevel severity, const std::string &amp;msg) const</argsstring>
-        <name>log</name>
-        <reimplementedby refid="classdpp_1_1discord__client_1a9880e3f13c00cd6e4397fe64ae23b4d0">log</reimplementedby>
-        <param>
-          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
-          <declname>severity</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>msg</declname>
-        </param>
-        <briefdescription>
-<para>Log a message. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>severity</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>severity of log message </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Log message to send </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="163" column="14" bodyfile="src/dpp/sslclient.cpp" bodystart="203" bodyend="205"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classdpp_1_1websocket__client_1ac7f26051b6ce8db8e57536ce4e035caf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
@@ -2321,8 +2281,7 @@ The audio data should be 48000Hz signed 16 bit audio.</para>
       <member refid="classdpp_1_1discord__voice__client_1a4517befd07e1179155ffafa8ba69b73f" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_heartbeat</name></member>
       <member refid="classdpp_1_1ssl__client_1a61f0bbeefa25de686ac93887afa65895" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_tick</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a6a9412b209fb4b40a0842fad31997b2d" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>last_timestamp</name></member>
-      <member refid="classdpp_1_1discord__voice__client_1a75e6ecd47216794a447f2b1def837852" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>log</name></member>
-      <member refid="classdpp_1_1ssl__client_1a6037b1a66cf83e022655bd47f0df61a5" prot="public" virt="virtual" ambiguityscope="dpp::websocket_client::"><scope>dpp::discord_voice_client</scope><name>log</name></member>
+      <member refid="classdpp_1_1discord__voice__client_1ac06f68e15b979b0590f09c9732548f16" prot="public" virt="virtual"><scope>dpp::discord_voice_client</scope><name>log</name></member>
       <member refid="classdpp_1_1discord__voice__client_1aa88ea27bc7f59500eb44486a782c5f49" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>message_queue</name></member>
       <member refid="classdpp_1_1discord__voice__client_1a1ff3c6c8fe3650e5be8ddd268dcea6f6" prot="private" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>modes</name></member>
       <member refid="classdpp_1_1ssl__client_1a1486b3df6780a842552442a25634fcc9" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>nonblocking</name></member>

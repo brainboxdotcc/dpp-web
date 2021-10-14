@@ -1,7 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"structdpp_1_1thread__member.html#a5dbdfa69bced84ca047f45fa329904c5":[6,0,1,119,4],
-"structdpp_1_1thread__member.html#a5dbdfa69bced84ca047f45fa329904c5":[7,0,1,119,4],
 "structdpp_1_1thread__member.html#a840e99fdb640dfa0cda1d853360e1836":[6,0,1,119,1],
 "structdpp_1_1thread__member.html#a840e99fdb640dfa0cda1d853360e1836":[7,0,1,119,1],
 "structdpp_1_1thread__member__update__t.html":[7,0,1,120],
@@ -249,5 +247,7 @@ var NAVTREEINDEX18 =
 "structdpp_1_1webhooks__update__t.html#aa070b1866b55bc3e6d2a7a8b698e8c1b":[6,0,1,141,0],
 "structdpp_1_1webhooks__update__t.html#aa070b1866b55bc3e6d2a7a8b698e8c1b":[7,0,1,141,0],
 "structdpp_1_1webhooks__update__t.html#ab4ff84fc65e90fe97fa0526d0976f7ae":[7,0,1,141,4],
-"structdpp_1_1webhooks__update__t.html#ab4ff84fc65e90fe97fa0526d0976f7ae":[6,0,1,141,4]
+"structdpp_1_1webhooks__update__t.html#ab4ff84fc65e90fe97fa0526d0976f7ae":[6,0,1,141,4],
+"structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html":[7,0,2],
+"structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a61336eae6a6e84dc63a367da3aaf91e8":[7,0,2,1]
 };
