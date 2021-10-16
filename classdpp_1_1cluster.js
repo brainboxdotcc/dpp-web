@@ -208,6 +208,7 @@ var classdpp_1_1cluster =
     [ "roles_get", "classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219", null ],
     [ "set_dm_channel", "classdpp_1_1cluster.html#a3fc501cc0ebb334d09a7f4bb1ea6b3e6", null ],
     [ "set_presence", "classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9", null ],
+    [ "set_websocket_protocol", "classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9", null ],
     [ "start", "classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f", null ],
     [ "sticker_packs_get", "classdpp_1_1cluster.html#ae64421a4b2402238feb0536639009c18", null ],
     [ "template_get", "classdpp_1_1cluster.html#a52366e37144b166c6a2c773e14992b21", null ],
@@ -226,5 +227,6 @@ var classdpp_1_1cluster =
     [ "me", "classdpp_1_1cluster.html#ad31317a40181f6864646c8758871b495", null ],
     [ "numshards", "classdpp_1_1cluster.html#a7418aa521c49af80822039b013d8d004", null ],
     [ "rest_ping", "classdpp_1_1cluster.html#a6161f8d412b2e81a06594f727684a260", null ],
-    [ "token", "classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e", null ]
+    [ "token", "classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e", null ],
+    [ "ws_mode", "classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551", null ]
 ];

@@ -114,6 +114,7 @@ var annotated_dup =
       [ "emoji", "classdpp_1_1emoji.html", "classdpp_1_1emoji" ],
       [ "error_detail", "structdpp_1_1error__detail.html", "structdpp_1_1error__detail" ],
       [ "error_info", "structdpp_1_1error__info.html", "structdpp_1_1error__info" ],
+      [ "etf_parser", "classdpp_1_1etf__parser.html", "classdpp_1_1etf__parser" ],
       [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
       [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
       [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],

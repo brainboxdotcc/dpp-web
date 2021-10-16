@@ -307,11 +307,13 @@
     <member refid="classdpp_1_1cluster_1ad7dfd048a845235dda924b989c1383f3" kind="variable"><name>dispatch</name></member>
     <member refid="classdpp_1_1cluster_1ad31317a40181f6864646c8758871b495" kind="variable"><name>me</name></member>
     <member refid="classdpp_1_1cluster_1a9fae28f81712be86530fe3314d166ad3" kind="variable"><name>cache_policy</name></member>
+    <member refid="classdpp_1_1cluster_1ae10466db79966215a799fc2a30010551" kind="variable"><name>ws_mode</name></member>
     <member refid="classdpp_1_1cluster_1aeb86e87c07ca3954e198741175fbcb5a" kind="function"><name>auto_shard</name></member>
     <member refid="classdpp_1_1cluster_1aac40e45e1ff8efb4e9ae75a7ecacc786" kind="function"><name>cluster</name></member>
     <member refid="classdpp_1_1cluster_1a6b0b523f89559b4ce204ca9ed9693d79" kind="function"><name>cluster</name></member>
     <member refid="classdpp_1_1cluster_1a2d957f52245734f6d44444af8380c952" kind="function"><name>cluster</name></member>
     <member refid="classdpp_1_1cluster_1a270be0ab59aff4f335ef3f4af7559d92" kind="function"><name>~cluster</name></member>
+    <member refid="classdpp_1_1cluster_1a056e4191c03dd210c2a410b6599a0bf9" kind="function"><name>set_websocket_protocol</name></member>
     <member refid="classdpp_1_1cluster_1a13689440c9cc80279d415c563a6363c0" kind="function"><name>log</name></member>
     <member refid="classdpp_1_1cluster_1ae6164d5543b7594731a980da9b0b2088" kind="function"><name>get_dm_channel</name></member>
     <member refid="classdpp_1_1cluster_1a3fc501cc0ebb334d09a7f4bb1ea6b3e6" kind="function"><name>set_dm_channel</name></member>
@@ -659,6 +661,7 @@
     <member refid="classdpp_1_1discord__client_1ad9f5ec6d2933ad84c06e238e9a3bdf19" kind="variable"><name>decompressed_total</name></member>
     <member refid="classdpp_1_1discord__client_1ad5b9759853019efe55112f13d589b0e1" kind="variable"><name>connect_time</name></member>
     <member refid="classdpp_1_1discord__client_1a250f37b3cbff382ae91dc662366571ec" kind="variable"><name>ping_start</name></member>
+    <member refid="classdpp_1_1discord__client_1a14a215a05e4afbc95073c1b3d0ad1302" kind="variable"><name>etf</name></member>
     <member refid="classdpp_1_1discord__client_1afed78d2e1b09e006ede8b4690895a866" kind="variable"><name>creator</name></member>
     <member refid="classdpp_1_1discord__client_1a62f72c7433043cbb61fe1917efabd2f7" kind="variable"><name>heartbeat_interval</name></member>
     <member refid="classdpp_1_1discord__client_1ac6ef401a0b38b2cce833d184ddf38bbb" kind="variable"><name>last_heartbeat</name></member>
@@ -675,6 +678,7 @@
     <member refid="classdpp_1_1discord__client_1a5e39136f09297f7ba0ab6a449e435f3d" kind="variable"><name>websocket_ping</name></member>
     <member refid="classdpp_1_1discord__client_1a03ffb74d2fa81b0e6f0864848151fa90" kind="variable"><name>ready</name></member>
     <member refid="classdpp_1_1discord__client_1a611a05e14a49affa23f58ea173d829ba" kind="variable"><name>last_heartbeat_ack</name></member>
+    <member refid="classdpp_1_1discord__client_1afde2bb2612e474fbfda2d7312e2bc5e7" kind="variable"><name>protocol</name></member>
     <member refid="classdpp_1_1discord__client_1ad474846a37755a4b1064a5c3a3480fbc" kind="variable"><name>connecting_voice_channels</name></member>
     <member refid="classdpp_1_1ssl__client_1aa9d0383a9c348b35352edc264996446e" kind="variable"><name>custom_readable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1ac5c5b7071d0cb95f34aee7b4b5a32428" kind="variable"><name>custom_writeable_fd</name></member>
@@ -697,7 +701,7 @@
     <member refid="classdpp_1_1discord__client_1aca66e47e5e2d6fcd0bd17187465107db" kind="function"><name>GetQueueSize</name></member>
     <member refid="classdpp_1_1discord__client_1af59b7db59d0fe39259efcb2380016ee4" kind="function"><name>is_connected</name></member>
     <member refid="classdpp_1_1discord__client_1a6fef02c819339ee1d088b39647d70957" kind="function"><name>get_uptime</name></member>
-    <member refid="classdpp_1_1discord__client_1a26bc3c07e4b547d0d6e2c820d255fac7" kind="function"><name>discord_client</name></member>
+    <member refid="classdpp_1_1discord__client_1a5d2ce19636f235882ad32c285f645082" kind="function"><name>discord_client</name></member>
     <member refid="classdpp_1_1discord__client_1ad7384d3ea3ee938b626e536f82a5f349" kind="function"><name>~discord_client</name></member>
     <member refid="classdpp_1_1discord__client_1ade85ebcbf1a24079511436d504940fcf" kind="function"><name>get_decompressed_bytes_in</name></member>
     <member refid="classdpp_1_1discord__client_1af4c5772b702123423fa5ad2a12d11804" kind="function"><name>HandleFrame</name></member>
@@ -996,6 +1000,11 @@
     <member refid="structdpp_1_1error__info_1abfe93b65ec981b72d3a05a60f03c4834" kind="variable"><name>code</name></member>
     <member refid="structdpp_1_1error__info_1aa2fb364975f2c201cec668db8090d845" kind="variable"><name>message</name></member>
     <member refid="structdpp_1_1error__info_1ac84fd7b6e0344c9b282b13a43dfc40a0" kind="variable"><name>errors</name></member>
+  </compound>
+  <compound refid="classdpp_1_1etf__parser" kind="class"><name>dpp::etf_parser</name>
+    <member refid="classdpp_1_1etf__parser_1a1fda89db96ffa12c3f922ece4c099a92" kind="function"><name>etf_parser</name></member>
+    <member refid="classdpp_1_1etf__parser_1abf03b044d5a883cac5816a4c93df3688" kind="function"><name>~etf_parser</name></member>
+    <member refid="classdpp_1_1etf__parser_1a3b2b3a2520099ae3a49ffd660a3375ef" kind="function"><name>parse</name></member>
   </compound>
   <compound refid="classdpp_1_1events_1_1event" kind="class"><name>dpp::events::event</name>
     <member refid="classdpp_1_1events_1_1event_1a03fd1d1321e3660f00c4a9e00da2aa81" kind="function"><name>handle</name></member>
@@ -2757,6 +2766,9 @@
     <member refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0" kind="enum"><name>webhook_type</name></member>
     <member refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a" kind="enumvalue"><name>w_incoming</name></member>
     <member refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354" kind="enumvalue"><name>w_channel_follower</name></member>
+    <member refid="namespacedpp_1ac15fded6ab38b51e685f9ebd670d1f55" kind="enum"><name>websocket_protocol_t</name></member>
+    <member refid="namespacedpp_1ac15fded6ab38b51e685f9ebd670d1f55abea765ef009bccd9080351f806bae437" kind="enumvalue"><name>ws_json</name></member>
+    <member refid="namespacedpp_1ac15fded6ab38b51e685f9ebd670d1f55ac465dd3c03a072c41148d3562b6cbd64" kind="enumvalue"><name>ws_etf</name></member>
     <member refid="namespacedpp_1af0e6c1fc5986facd4bb63a152ffa6057" kind="enum"><name>ws_state</name></member>
     <member refid="namespacedpp_1af0e6c1fc5986facd4bb63a152ffa6057ac4e7462fef7673f64bf129dde58c9f70" kind="enumvalue"><name>HTTP_HEADERS</name></member>
     <member refid="namespacedpp_1af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d" kind="enumvalue"><name>CONNECTED</name></member>
@@ -2953,6 +2965,8 @@
   <compound refid="emoji_8h" kind="file"><name>emoji.h</name>
     <member refid="emoji_8h_1afeb12e7fd98b5ccaa2375d34a80e060d" kind="define"><name>MAX_EMOJI_SIZE</name></member>
   </compound>
+  <compound refid="etf_8h" kind="file"><name>etf.h</name>
+  </compound>
   <compound refid="event_8h" kind="file"><name>event.h</name>
     <member refid="event_8h_1ab8250a74fd95e614b26f28787a272022" kind="define"><name>event_decl</name></member>
   </compound>
@@ -3123,6 +3137,8 @@
     <member refid="dtemplate_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
   </compound>
   <compound refid="emoji_8cpp" kind="file"><name>emoji.cpp</name>
+  </compound>
+  <compound refid="etf_8cpp" kind="file"><name>etf.cpp</name>
   </compound>
   <compound refid="application__command__create_8cpp" kind="file"><name>application_command_create.cpp</name>
     <member refid="application__command__create_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>

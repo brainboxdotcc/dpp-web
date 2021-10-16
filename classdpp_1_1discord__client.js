@@ -1,6 +1,6 @@
 var classdpp_1_1discord__client =
 [
-    [ "discord_client", "classdpp_1_1discord__client.html#a26bc3c07e4b547d0d6e2c820d255fac7", null ],
+    [ "discord_client", "classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082", null ],
     [ "~discord_client", "classdpp_1_1discord__client.html#ad7384d3ea3ee938b626e536f82a5f349", null ],
     [ "ClearQueue", "classdpp_1_1discord__client.html#a5b40c6db59e7aed95958e2fec5f6b8ba", null ],
     [ "close", "classdpp_1_1discord__client.html#a3398642150ca79c8f266de83ee93aa30", null ],
@@ -52,6 +52,7 @@ var classdpp_1_1discord__client =
     [ "nonblocking", "classdpp_1_1discord__client.html#a1486b3df6780a842552442a25634fcc9", null ],
     [ "obuffer", "classdpp_1_1discord__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
     [ "port", "classdpp_1_1discord__client.html#a53cda56d5d61e3371bd7be2424e7ff07", null ],
+    [ "protocol", "classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7", null ],
     [ "ready", "classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90", null ],
     [ "reconnects", "classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf", null ],
     [ "resumes", "classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6", null ],

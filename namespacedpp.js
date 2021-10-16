@@ -48,6 +48,7 @@ var namespacedpp =
     [ "emoji", "classdpp_1_1emoji.html", "classdpp_1_1emoji" ],
     [ "error_detail", "structdpp_1_1error__detail.html", "structdpp_1_1error__detail" ],
     [ "error_info", "structdpp_1_1error__info.html", "structdpp_1_1error__info" ],
+    [ "etf_parser", "classdpp_1_1etf__parser.html", "classdpp_1_1etf__parser" ],
     [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
     [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
@@ -594,6 +595,10 @@ var namespacedpp =
     [ "webhook_type", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0", [
       [ "w_incoming", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a", null ],
       [ "w_channel_follower", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354", null ]
+    ] ],
+    [ "websocket_protocol_t", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55", [
+      [ "ws_json", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55abea765ef009bccd9080351f806bae437", null ],
+      [ "ws_etf", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55ac465dd3c03a072c41148d3562b6cbd64", null ]
     ] ],
     [ "ws_opcode", "namespacedpp.html#a27a655378b0676c4444b32079c19d667", [
       [ "OP_CONTINUATION", "namespacedpp.html#a27a655378b0676c4444b32079c19d667ac641ff6036ee7056ef3a2617f7dc6163", null ],
