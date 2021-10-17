@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>buf</name>
         <briefdescription>
+<para>Raw buffer. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="67" column="13" bodyfile="include/dpp/etf.h" bodystart="67" bodyend="-1"/>
+        <location file="include/dpp/etf.h" line="126" column="13" bodyfile="include/dpp/etf.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1etf__buffer_1aceff1ab2a5802b0146d1db0a772aab32" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -23,12 +24,13 @@
         <argsstring></argsstring>
         <name>length</name>
         <briefdescription>
+<para>Current used length of buffer (this is different from buf.size() as it is pre-allocated using resize and may not all be in use) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="68" column="8" bodyfile="include/dpp/etf.h" bodystart="68" bodyend="-1"/>
+        <location file="include/dpp/etf.h" line="132" column="8" bodyfile="include/dpp/etf.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,12 +44,23 @@
           <declname>initial</declname>
         </param>
         <briefdescription>
+<para>Construct a new etf buffer object. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>initial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial buffer size to allocate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="70" column="1" bodyfile="src/dpp/etf.cpp" bodystart="709" bodyend="712"/>
+        <location file="include/dpp/etf.h" line="139" column="1" bodyfile="src/dpp/etf.cpp" bodystart="721" bodyend="724"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1etf__buffer_1a70486adb573cacfd4158cac6271a71bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -55,15 +68,17 @@
         <argsstring>()</argsstring>
         <name>~etf_buffer</name>
         <briefdescription>
+<para>Destroy the etf buffer object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="71" column="1"/>
+        <location file="include/dpp/etf.h" line="144" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Represents a buffer of bytes being encoded into ETF. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -85,7 +100,7 @@
         <label>vector&lt;</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/etf.h" line="66" column="1" bodyfile="include/dpp/etf.h" bodystart="66" bodyend="72"/>
+    <location file="include/dpp/etf.h" line="122" column="1" bodyfile="include/dpp/etf.h" bodystart="122" bodyend="145"/>
     <listofallmembers>
       <member refid="structdpp_1_1etf__buffer_1a43b8f9084fb86968add81fbf3de15f85" prot="public" virt="non-virtual"><scope>dpp::etf_buffer</scope><name>buf</name></member>
       <member refid="structdpp_1_1etf__buffer_1a105888d6babca010046a6fefc73b0c32" prot="public" virt="non-virtual"><scope>dpp::etf_buffer</scope><name>etf_buffer</name></member>

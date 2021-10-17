@@ -261,6 +261,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full details of an error from a REST response.  <a href="structdpp_1_1error__info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1etf__buffer.html">etf_buffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a buffer of bytes being encoded into ETF.  <a href="structdpp_1_1etf__buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1etf__parser.html">etf_parser</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1etf__parser.html" title="The etf_parser class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohma...">etf_parser</a> class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohmann::json object, so that layers above the websocket don't have to be any different for handling ETF.  <a href="classdpp_1_1etf__parser.html#details">More...</a><br /></td></tr>
@@ -490,6 +491,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread Update.  <a href="structdpp_1_1thread__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uniondpp_1_1type__punner.html">type_punner</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A horrible structure used within the ETF parser to convert uint64_t to double and back. This is horrible, but it is the official way erlang term format does this, so we can't really mess with it much.  <a href="uniondpp_1_1type__punner.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1typing__start__t.html">typing_start_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typing start.  <a href="structdpp_1_1typing__start__t.html#details">More...</a><br /></td></tr>
@@ -804,6 +806,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c">ett_atom_utf8_small</a> = 'w'
 <br />
  }</td></tr>
+<tr class="memdesc:ad775fb0c6c9e6923fb562c95907d26c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a token which identifies the type of value which follows it in the ETF binary structure.  <a href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2">More...</a><br /></td></tr>
 <tr class="separator:ad775fb0c6c9e6923fb562c95907d26c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51891a9e382f9c396d378de00fa65099"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099">region</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313">r_brazil</a>
@@ -2372,33 +2375,61 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Represents a token which identifies the type of value which follows it in the ETF binary structure. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565" name="ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565"></a>ett_new_float&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6" name="ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6"></a>ett_bit_binary&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf" name="ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf"></a>ett_compressed&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd" name="ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd"></a>ett_smallint&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948" name="ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948"></a>ett_integer&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf" name="ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf"></a>ett_float&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4" name="ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4"></a>ett_atom&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5" name="ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5"></a>ett_reference&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db" name="ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db"></a>ett_port&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965" name="ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965"></a>ett_pid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16" name="ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16"></a>ett_small_tuple&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2" name="ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2"></a>ett_large_tuple&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9" name="ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9"></a>ett_nil&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381" name="ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381"></a>ett_string&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad" name="ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad"></a>ett_list&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986" name="ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986"></a>ett_binary&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d" name="ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d"></a>ett_bigint_small&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557" name="ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557"></a>ett_bigint_large&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d" name="ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d"></a>ett_new_function&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81" name="ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81"></a>ett_export&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e" name="ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e"></a>ett_new_reference&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905" name="ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905"></a>ett_atom_small&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39" name="ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39"></a>ett_map&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147" name="ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147"></a>ett_function&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed" name="ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed"></a>ett_atom_utf8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c" name="ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c"></a>ett_atom_utf8_small&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565" name="ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565"></a>ett_new_float&#160;</td><td class="fielddoc"><p >70 [Float64:IEEE float] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6" name="ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6"></a>ett_bit_binary&#160;</td><td class="fielddoc"><p >77 [UInt32:Len, UInt8:Bits, Len:Data] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf" name="ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf"></a>ett_compressed&#160;</td><td class="fielddoc"><p >80 [UInt4:UncompressedSize, N:ZlibCompressedData] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd" name="ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd"></a>ett_smallint&#160;</td><td class="fielddoc"><p >97 [UInt8:Int] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948" name="ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948"></a>ett_integer&#160;</td><td class="fielddoc"><p >98 [Int32:Int] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf" name="ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf"></a>ett_float&#160;</td><td class="fielddoc"><p >99 [31:Float String] Float in string format (formatted "%.20e", sscanf "%lf"). Superseded by ett_new_float </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4" name="ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4"></a>ett_atom&#160;</td><td class="fielddoc"><p >100 [UInt16:Len, Len:AtomName] max Len is 255 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5" name="ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5"></a>ett_reference&#160;</td><td class="fielddoc"><p >101 [atom:Node, UInt32:ID, UInt8:Creation] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db" name="ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db"></a>ett_port&#160;</td><td class="fielddoc"><p >102 [atom:Node, UInt32:ID, UInt8:Creation] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965" name="ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965"></a>ett_pid&#160;</td><td class="fielddoc"><p >103 [atom:Node, UInt32:ID, UInt32:Serial, UInt8:Creation] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16" name="ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16"></a>ett_small_tuple&#160;</td><td class="fielddoc"><p >104 [UInt8:Arity, N:Elements] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2" name="ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2"></a>ett_large_tuple&#160;</td><td class="fielddoc"><p >105 [UInt32:Arity, N:Elements] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9" name="ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9"></a>ett_nil&#160;</td><td class="fielddoc"><p >106 empty list </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381" name="ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381"></a>ett_string&#160;</td><td class="fielddoc"><p >107 [UInt16:Len, Len:Characters] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad" name="ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad"></a>ett_list&#160;</td><td class="fielddoc"><p >108 [UInt32:Len, Elements, Tail] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986" name="ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986"></a>ett_binary&#160;</td><td class="fielddoc"><p >109 [UInt32:Len, Len:Data] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d" name="ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d"></a>ett_bigint_small&#160;</td><td class="fielddoc"><p >110 [UInt8:n, UInt8:Sign, n:nums] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557" name="ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557"></a>ett_bigint_large&#160;</td><td class="fielddoc"><p >111 [UInt32:n, UInt8:Sign, n:nums] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d" name="ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d"></a>ett_new_function&#160;</td><td class="fielddoc"><p >112 [UInt32:Size, UInt8:Arity, 16*Uint6-MD5:Uniq, UInt32:Index, UInt32:NumFree, atom:Module, int:OldIndex, int:OldUniq, pid:Pid, NunFree*ext:FreeVars] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81" name="ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81"></a>ett_export&#160;</td><td class="fielddoc"><p >113 [atom:Module, atom:Function, smallint:Arity] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e" name="ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e"></a>ett_new_reference&#160;</td><td class="fielddoc"><p >114 [UInt16:Len, atom:Node, UInt8:Creation, Len*UInt32:ID] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905" name="ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905"></a>ett_atom_small&#160;</td><td class="fielddoc"><p >115 [UInt8:Len, Len:AtomName] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39" name="ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39"></a>ett_map&#160;</td><td class="fielddoc"><p >116 [UInt32:Airty, N:Pairs] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147" name="ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147"></a>ett_function&#160;</td><td class="fielddoc"><p >117 [UInt4:NumFree, pid:Pid, atom:Module, int:Index, int:Uniq, NumFree*ext:FreeVars] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed" name="ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed"></a>ett_atom_utf8&#160;</td><td class="fielddoc"><p >118 [UInt16:Len, Len:AtomName] max Len is 255 characters (up to 4 bytes per) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c" name="ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c"></a>ett_atom_utf8_small&#160;</td><td class="fielddoc"><p >119 [UInt8:Len, Len:AtomName] </p>
+</td></tr>
 </table>
 
 </div>

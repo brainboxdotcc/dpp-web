@@ -132,6 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a270be0ab59aff4f335ef3f4af7559d92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a270be0ab59aff4f335ef3f4af7559d92">~cluster</a> ()</td></tr>
 <tr class="separator:a270be0ab59aff4f335ef3f4af7559d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056e4191c03dd210c2a410b6599a0bf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">set_websocket_protocol</a> (<a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55">websocket_protocol_t</a> mode)</td></tr>
+<tr class="memdesc:a056e4191c03dd210c2a410b6599a0bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards. Returns once all shards are connected.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development.  <a href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">More...</a><br /></td></tr>
 <tr class="separator:a056e4191c03dd210c2a410b6599a0bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13689440c9cc80279d415c563a6363c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0">log</a> (<a class="el" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">dpp::loglevel</a> severity, const std::string &amp;msg) const</td></tr>
 <tr class="memdesc:a13689440c9cc80279d415c563a6363c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message to whatever log the user is using. The logged message is passed up the chain to the on_log event in user code which can then do whatever it wants to do with it.  <a href="classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0">More...</a><br /></td></tr>
@@ -8539,6 +8540,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards. Returns once all shards are connected.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>websocket protocol to use, either ws_json or ws_etf. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>cluster&amp; Reference to self for chaining. </dd></dl>
 
 </div>
 </div>

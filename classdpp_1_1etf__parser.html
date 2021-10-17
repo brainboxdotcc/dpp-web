@@ -113,12 +113,16 @@ $(document).ready(function(){initNavTree('classdpp_1_1etf__parser.html',''); ini
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fda89db96ffa12c3f922ece4c099a92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1etf__parser.html#a1fda89db96ffa12c3f922ece4c099a92">etf_parser</a> ()</td></tr>
+<tr class="memdesc:a1fda89db96ffa12c3f922ece4c099a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new etf parser object.  <a href="classdpp_1_1etf__parser.html#a1fda89db96ffa12c3f922ece4c099a92">More...</a><br /></td></tr>
 <tr class="separator:a1fda89db96ffa12c3f922ece4c099a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf03b044d5a883cac5816a4c93df3688"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1etf__parser.html#abf03b044d5a883cac5816a4c93df3688">~etf_parser</a> ()</td></tr>
+<tr class="memdesc:abf03b044d5a883cac5816a4c93df3688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the etf parser object.  <a href="classdpp_1_1etf__parser.html#abf03b044d5a883cac5816a4c93df3688">More...</a><br /></td></tr>
 <tr class="separator:abf03b044d5a883cac5816a4c93df3688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b91fa9e1e2024d5cb390b293c4238f"><td class="memItemLeft" align="right" valign="top">nlohmann::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1etf__parser.html#a16b91fa9e1e2024d5cb390b293c4238f">parse</a> (const std::string &amp;in)</td></tr>
+<tr class="memdesc:a16b91fa9e1e2024d5cb390b293c4238f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert ETF binary content to nlohmann::json.  <a href="classdpp_1_1etf__parser.html#a16b91fa9e1e2024d5cb390b293c4238f">More...</a><br /></td></tr>
 <tr class="separator:a16b91fa9e1e2024d5cb390b293c4238f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c074f9ccd302a8eae2ffe3d19c9adc0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1etf__parser.html#a9c074f9ccd302a8eae2ffe3d19c9adc0">build</a> (const nlohmann::json &amp;j)</td></tr>
+<tr class="memdesc:a9c074f9ccd302a8eae2ffe3d19c9adc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create ETF binary data from nlohmann::json.  <a href="classdpp_1_1etf__parser.html#a9c074f9ccd302a8eae2ffe3d19c9adc0">More...</a><br /></td></tr>
 <tr class="separator:a9c074f9ccd302a8eae2ffe3d19c9adc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -138,7 +142,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Constructor </p>
+
+<p>Construct a new etf parser object. </p>
 
 </div>
 </div>
@@ -164,7 +169,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Destructor </p>
+
+<p>Destroy the etf parser object. </p>
 
 </div>
 </div>
@@ -185,6 +191,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Create ETF binary data from nlohmann::json. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td>JSON value to encode to ETF </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string raw ETF data. Note that this can and probably will contain null values, use std::string::data() and std::string::size() to manipulate or send it. </dd></dl>
+
 </div>
 </div>
 <a id="a16b91fa9e1e2024d5cb390b293c4238f" name="a16b91fa9e1e2024d5cb390b293c4238f"></a>
@@ -202,6 +217,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Convert ETF binary content to nlohmann::json. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>Raw binary ETF data (generally from a websocket) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nlohmann::json JSON data for use in the library </dd></dl>
 
 </div>
 </div>

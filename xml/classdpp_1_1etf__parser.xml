@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>size</name>
         <briefdescription>
+<para>Current size of binary data. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="81" column="8" bodyfile="include/dpp/etf.h" bodystart="81" bodyend="-1"/>
+        <location file="include/dpp/etf.h" line="157" column="8" bodyfile="include/dpp/etf.h" bodystart="157" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1etf__parser_1a0b80df35b6cd591a5e1d30269ef43d99" prot="private" static="no" mutable="no">
         <type>size_t</type>
@@ -23,12 +24,13 @@
         <argsstring></argsstring>
         <name>offset</name>
         <briefdescription>
+<para>Current offset into binary data. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="83" column="8" bodyfile="include/dpp/etf.h" bodystart="83" bodyend="-1"/>
+        <location file="include/dpp/etf.h" line="162" column="8" bodyfile="include/dpp/etf.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1etf__parser_1a1b5969a81823b8938e860a0690685950" prot="private" static="no" mutable="no">
         <type>uint8_t *</type>
@@ -36,12 +38,13 @@
         <argsstring></argsstring>
         <name>data</name>
         <briefdescription>
+<para>Pointer to binary ETF data to be decoded. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="85" column="9" bodyfile="include/dpp/etf.h" bodystart="85" bodyend="-1"/>
+        <location file="include/dpp/etf.h" line="167" column="9" bodyfile="include/dpp/etf.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -51,12 +54,16 @@
         <argsstring>()</argsstring>
         <name>inner_parse</name>
         <briefdescription>
+<para>Parse a single value, and if that value contains other values (e.g. an array or map) then call itself recursively. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json JSON value from the ETF </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="87" column="16" bodyfile="src/dpp/etf.cpp" bodystart="561" bodyend="615"/>
+        <location file="include/dpp/etf.h" line="175" column="16" bodyfile="src/dpp/etf.cpp" bodystart="573" bodyend="627"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1ae62dbad0512e2bd5372f243ab81f82ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -64,12 +71,16 @@
         <argsstring>()</argsstring>
         <name>read_8_bits</name>
         <briefdescription>
+<para>Read 8 bits of data from the buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>uint8_t data retrieved </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="89" column="9" bodyfile="src/dpp/etf.cpp" bodystart="214" bodyend="221"/>
+        <location file="include/dpp/etf.h" line="182" column="9" bodyfile="src/dpp/etf.cpp" bodystart="226" bodyend="233"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a407ca5ef650785330af6be9d1654d729" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -77,12 +88,16 @@
         <argsstring>()</argsstring>
         <name>read_16_bits</name>
         <briefdescription>
+<para>Read 16 bits of data from the buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>uint16_t data retrieved </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="91" column="10" bodyfile="src/dpp/etf.cpp" bodystart="223" bodyend="230"/>
+        <location file="include/dpp/etf.h" line="189" column="10" bodyfile="src/dpp/etf.cpp" bodystart="235" bodyend="242"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a5c0388db5aef8f93c1a5d9e9b806dfa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -90,12 +105,16 @@
         <argsstring>()</argsstring>
         <name>read_32_bits</name>
         <briefdescription>
+<para>Read 32 bits of data from the buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>uint32_t data retrieved </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="93" column="10" bodyfile="src/dpp/etf.cpp" bodystart="232" bodyend="239"/>
+        <location file="include/dpp/etf.h" line="196" column="10" bodyfile="src/dpp/etf.cpp" bodystart="244" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a8ca03fce713d3cba5f8b32d83e3d61ea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -103,12 +122,16 @@
         <argsstring>()</argsstring>
         <name>read_64_bits</name>
         <briefdescription>
+<para>Read 64 bits of data from the buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>uint64_t data retrieved </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="95" column="10" bodyfile="src/dpp/etf.cpp" bodystart="241" bodyend="248"/>
+        <location file="include/dpp/etf.h" line="203" column="10" bodyfile="src/dpp/etf.cpp" bodystart="253" bodyend="260"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1ac83d5a9f6df2649b5aaf9fc3f91c1902" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -120,12 +143,25 @@
           <declname>length</declname>
         </param>
         <briefdescription>
+<para>Read string data from the buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of string to retrieve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const char* data retrieved </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="97" column="12" bodyfile="src/dpp/etf.cpp" bodystart="250" bodyend="258"/>
+        <location file="include/dpp/etf.h" line="211" column="12" bodyfile="src/dpp/etf.cpp" bodystart="262" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a3cda25969eda0ceff4cd292e90c5c4fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -141,12 +177,16 @@
           <declname>length</declname>
         </param>
         <briefdescription>
+<para>Process an &apos;atom&apos; value. An atom is a &quot;label&quot; or constant value within the data, such as a key name, nullptr, or false. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="99" column="16" bodyfile="src/dpp/etf.cpp" bodystart="260" bodyend="286"/>
+        <location file="include/dpp/etf.h" line="220" column="16" bodyfile="src/dpp/etf.cpp" bodystart="272" bodyend="298"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a747485967f92bab65bee8db90c3eda54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -154,12 +194,16 @@
         <argsstring>()</argsstring>
         <name>decode_atom</name>
         <briefdescription>
+<para>Decode an &apos;atom&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="100" column="16" bodyfile="src/dpp/etf.cpp" bodystart="288" bodyend="292"/>
+        <location file="include/dpp/etf.h" line="227" column="16" bodyfile="src/dpp/etf.cpp" bodystart="300" bodyend="304"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a4f46e6660f389b3cd1f9b1c45d03e809" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -167,12 +211,16 @@
         <argsstring>()</argsstring>
         <name>decode_small_atom</name>
         <briefdescription>
+<para>Decode a small &apos;atom&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="101" column="16" bodyfile="src/dpp/etf.cpp" bodystart="294" bodyend="298"/>
+        <location file="include/dpp/etf.h" line="234" column="16" bodyfile="src/dpp/etf.cpp" bodystart="306" bodyend="310"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a978d1edd1685405a7c6d10c840dbb4fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -180,12 +228,16 @@
         <argsstring>()</argsstring>
         <name>decode_small_integer</name>
         <briefdescription>
+<para>Decode a small integer value (0-255). </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="102" column="16" bodyfile="src/dpp/etf.cpp" bodystart="300" bodyend="304"/>
+        <location file="include/dpp/etf.h" line="241" column="16" bodyfile="src/dpp/etf.cpp" bodystart="312" bodyend="316"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1aa649bdd2162396fe329a9b19f46b4254" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -193,12 +245,16 @@
         <argsstring>()</argsstring>
         <name>decode_integer</name>
         <briefdescription>
+<para>Decode an integer value (-MAXINT -&gt; MAXINT-1). </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="103" column="16" bodyfile="src/dpp/etf.cpp" bodystart="306" bodyend="310"/>
+        <location file="include/dpp/etf.h" line="248" column="16" bodyfile="src/dpp/etf.cpp" bodystart="318" bodyend="322"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a18f60dde0715b34e6cb9504f233c3dd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -210,12 +266,16 @@
           <declname>length</declname>
         </param>
         <briefdescription>
+<para>Decode an array of values. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json values converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="104" column="16" bodyfile="src/dpp/etf.cpp" bodystart="312" bodyend="318"/>
+        <location file="include/dpp/etf.h" line="255" column="16" bodyfile="src/dpp/etf.cpp" bodystart="324" bodyend="330"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a79bb865d014dc48c9f84fe977960e2bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -223,12 +283,16 @@
         <argsstring>()</argsstring>
         <name>decode_list</name>
         <briefdescription>
+<para>Decode a list of values. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json values converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="105" column="16" bodyfile="src/dpp/etf.cpp" bodystart="320" bodyend="330"/>
+        <location file="include/dpp/etf.h" line="262" column="16" bodyfile="src/dpp/etf.cpp" bodystart="332" bodyend="342"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a4ef7545a9646952f50bce39868f2122d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -240,12 +304,16 @@
           <declname>length</declname>
         </param>
         <briefdescription>
+<para>Decode a &apos;tuple&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="106" column="16" bodyfile="src/dpp/etf.cpp" bodystart="332" bodyend="334"/>
+        <location file="include/dpp/etf.h" line="269" column="16" bodyfile="src/dpp/etf.cpp" bodystart="344" bodyend="346"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a35e273d951a94d78d2ece636a61f9f12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -253,12 +321,16 @@
         <argsstring>()</argsstring>
         <name>decode_nil</name>
         <briefdescription>
+<para>Decode a nil &apos;atom&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="107" column="16" bodyfile="src/dpp/etf.cpp" bodystart="336" bodyend="338"/>
+        <location file="include/dpp/etf.h" line="276" column="16" bodyfile="src/dpp/etf.cpp" bodystart="348" bodyend="350"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1aa718d9cd0c2b578b612a9926f0fc52b6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -266,12 +338,16 @@
         <argsstring>()</argsstring>
         <name>decode_map</name>
         <briefdescription>
+<para>Decode a map (object) value. Will recurse to evaluate each member variable. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json values converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="108" column="16" bodyfile="src/dpp/etf.cpp" bodystart="340" bodyend="353"/>
+        <location file="include/dpp/etf.h" line="284" column="16" bodyfile="src/dpp/etf.cpp" bodystart="352" bodyend="365"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a0c28839df67f0e60ea6e71696d508aa4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -279,12 +355,16 @@
         <argsstring>()</argsstring>
         <name>decode_float</name>
         <briefdescription>
+<para>Decode a floating point numeric value. (depreciated in erlang but still expected to be supported) </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="109" column="16" bodyfile="src/dpp/etf.cpp" bodystart="355" bodyend="377"/>
+        <location file="include/dpp/etf.h" line="292" column="16" bodyfile="src/dpp/etf.cpp" bodystart="367" bodyend="389"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a461839e26b19b5c4b5009784ee7c1a3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -292,12 +372,16 @@
         <argsstring>()</argsstring>
         <name>decode_new_float</name>
         <briefdescription>
+<para>Decode a floating type numeric value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="110" column="16" bodyfile="src/dpp/etf.cpp" bodystart="379" bodyend="387"/>
+        <location file="include/dpp/etf.h" line="299" column="16" bodyfile="src/dpp/etf.cpp" bodystart="391" bodyend="399"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a7f869015e42c8987ae26a5febfb0092f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -309,12 +393,16 @@
           <declname>digits</declname>
         </param>
         <briefdescription>
+<para>Decode a &apos;bigint&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="111" column="16" bodyfile="src/dpp/etf.cpp" bodystart="389" bodyend="428"/>
+        <location file="include/dpp/etf.h" line="306" column="16" bodyfile="src/dpp/etf.cpp" bodystart="401" bodyend="440"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a6a50437eb54bfa98bb07953a3a0fc7e8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -322,12 +410,16 @@
         <argsstring>()</argsstring>
         <name>decode_bigint_small</name>
         <briefdescription>
+<para>Decode a small &apos;bigint&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="112" column="16" bodyfile="src/dpp/etf.cpp" bodystart="430" bodyend="433"/>
+        <location file="include/dpp/etf.h" line="313" column="16" bodyfile="src/dpp/etf.cpp" bodystart="442" bodyend="445"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a2566cff11f5b539ab11691f9cc4df2b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -335,12 +427,16 @@
         <argsstring>()</argsstring>
         <name>decode_bigint_large</name>
         <briefdescription>
+<para>Decode a large &apos;bigint&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="113" column="16" bodyfile="src/dpp/etf.cpp" bodystart="435" bodyend="438"/>
+        <location file="include/dpp/etf.h" line="320" column="16" bodyfile="src/dpp/etf.cpp" bodystart="447" bodyend="450"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1affc11fe706d363dd29550b0dc2052b4b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -348,12 +444,16 @@
         <argsstring>()</argsstring>
         <name>decode_binary</name>
         <briefdescription>
+<para>Decode a binary value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="114" column="16" bodyfile="src/dpp/etf.cpp" bodystart="440" bodyend="449"/>
+        <location file="include/dpp/etf.h" line="327" column="16" bodyfile="src/dpp/etf.cpp" bodystart="452" bodyend="461"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1addfe7bab3d972ba803b2b27a98fbeba6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -361,25 +461,33 @@
         <argsstring>()</argsstring>
         <name>decode_string</name>
         <briefdescription>
+<para>Decode a string value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="115" column="16" bodyfile="src/dpp/etf.cpp" bodystart="451" bodyend="459"/>
+        <location file="include/dpp/etf.h" line="334" column="16" bodyfile="src/dpp/etf.cpp" bodystart="463" bodyend="471"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1etf__parser_1ac4d0324e9d690eccc2e0897182b40e8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a1c0c7b9a0602c1df208ca1d17a0a8385" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
-        <definition>json dpp::etf_parser::decode_stringAsList</definition>
+        <definition>json dpp::etf_parser::decode_string_as_list</definition>
         <argsstring>()</argsstring>
-        <name>decode_stringAsList</name>
+        <name>decode_string_as_list</name>
         <briefdescription>
+<para>Decode a string list value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="116" column="16" bodyfile="src/dpp/etf.cpp" bodystart="461" bodyend="471"/>
+        <location file="include/dpp/etf.h" line="341" column="16" bodyfile="src/dpp/etf.cpp" bodystart="473" bodyend="483"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a4acd4adba92eacc16363f468cf28be02" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -387,12 +495,16 @@
         <argsstring>()</argsstring>
         <name>decode_tuple_small</name>
         <briefdescription>
+<para>Decode a &apos;small tuple&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="117" column="16" bodyfile="src/dpp/etf.cpp" bodystart="473" bodyend="475"/>
+        <location file="include/dpp/etf.h" line="348" column="16" bodyfile="src/dpp/etf.cpp" bodystart="485" bodyend="487"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a9912918cdaaf14495c326be55ff58b58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -400,12 +512,16 @@
         <argsstring>()</argsstring>
         <name>decode_tuple_large</name>
         <briefdescription>
+<para>Decode a &apos;large tuple&apos; value. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="118" column="16" bodyfile="src/dpp/etf.cpp" bodystart="477" bodyend="479"/>
+        <location file="include/dpp/etf.h" line="355" column="16" bodyfile="src/dpp/etf.cpp" bodystart="489" bodyend="491"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1abf06e36d7b9021e890217e2785720922" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -413,12 +529,16 @@
         <argsstring>()</argsstring>
         <name>decode_compressed</name>
         <briefdescription>
+<para>Decode a compressed value. This is a zlib-compressed binary blob which contains another ETF object. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="119" column="16" bodyfile="src/dpp/etf.cpp" bodystart="481" bodyend="504"/>
+        <location file="include/dpp/etf.h" line="364" column="16" bodyfile="src/dpp/etf.cpp" bodystart="493" bodyend="516"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a00672ac9194dc1f8c507271f9b19bc3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -426,12 +546,16 @@
         <argsstring>()</argsstring>
         <name>decode_reference</name>
         <briefdescription>
+<para>Decode a &apos;reference&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="120" column="16" bodyfile="src/dpp/etf.cpp" bodystart="506" bodyend="518"/>
+        <location file="include/dpp/etf.h" line="372" column="16" bodyfile="src/dpp/etf.cpp" bodystart="518" bodyend="530"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a8bad87d12e83a76e2a248fa6f480bd4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -439,12 +563,16 @@
         <argsstring>()</argsstring>
         <name>decode_new_reference</name>
         <briefdescription>
+<para>Decode a &apos;new reference&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="121" column="16" bodyfile="src/dpp/etf.cpp" bodystart="520" bodyend="534"/>
+        <location file="include/dpp/etf.h" line="380" column="16" bodyfile="src/dpp/etf.cpp" bodystart="532" bodyend="546"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1acaa6dd830d69c03dcef1a0f9e35a85ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -452,12 +580,16 @@
         <argsstring>()</argsstring>
         <name>decode_port</name>
         <briefdescription>
+<para>Decode a &apos;port&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="122" column="16" bodyfile="src/dpp/etf.cpp" bodystart="536" bodyend="542"/>
+        <location file="include/dpp/etf.h" line="388" column="16" bodyfile="src/dpp/etf.cpp" bodystart="548" bodyend="554"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a6903e4a9817c8bfd2521f20a18e9db7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -465,12 +597,16 @@
         <argsstring>()</argsstring>
         <name>decode_pid</name>
         <briefdescription>
+<para>Decode a &apos;PID&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="123" column="16" bodyfile="src/dpp/etf.cpp" bodystart="544" bodyend="551"/>
+        <location file="include/dpp/etf.h" line="396" column="16" bodyfile="src/dpp/etf.cpp" bodystart="556" bodyend="563"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a310c409349c82db897ac226ef04fd713" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -478,12 +614,16 @@
         <argsstring>()</argsstring>
         <name>decode_export</name>
         <briefdescription>
+<para>Decode an &apos;export&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="124" column="16" bodyfile="src/dpp/etf.cpp" bodystart="553" bodyend="559"/>
+        <location file="include/dpp/etf.h" line="404" column="16" bodyfile="src/dpp/etf.cpp" bodystart="565" bodyend="571"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a95b0046624f88ae59d3f483728d9d0b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -503,12 +643,39 @@
           <declname>l</declname>
         </param>
         <briefdescription>
+<para>Write to output buffer for creation of ETF from JSON. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer struct </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>byte buffer to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="126" column="6" bodyfile="src/dpp/etf.cpp" bodystart="35" bodyend="44"/>
+        <location file="include/dpp/etf.h" line="413" column="6" bodyfile="src/dpp/etf.cpp" bodystart="47" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1ae9beba8cfe1c35806f40dbdc7d190403" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -520,12 +687,23 @@
           <declname>b</declname>
         </param>
         <briefdescription>
+<para>Append version number to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="128" column="6" bodyfile="src/dpp/etf.cpp" bodystart="46" bodyend="49"/>
+        <location file="include/dpp/etf.h" line="420" column="6" bodyfile="src/dpp/etf.cpp" bodystart="58" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1ae278aba7de419601695c4e74826214d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -537,12 +715,23 @@
           <declname>b</declname>
         </param>
         <briefdescription>
+<para>Append nil value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="130" column="6" bodyfile="src/dpp/etf.cpp" bodystart="51" bodyend="54"/>
+        <location file="include/dpp/etf.h" line="427" column="6" bodyfile="src/dpp/etf.cpp" bodystart="63" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a6ba2c938440bbbfe2ca04a42b5d61f5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -554,12 +743,23 @@
           <declname>b</declname>
         </param>
         <briefdescription>
+<para>Append false value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="132" column="6" bodyfile="src/dpp/etf.cpp" bodystart="56" bodyend="59"/>
+        <location file="include/dpp/etf.h" line="434" column="6" bodyfile="src/dpp/etf.cpp" bodystart="68" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a4646ee5a5eec58c6dffe1b4d8a92eeb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -571,12 +771,23 @@
           <declname>b</declname>
         </param>
         <briefdescription>
+<para>Append true value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="134" column="6" bodyfile="src/dpp/etf.cpp" bodystart="61" bodyend="64"/>
+        <location file="include/dpp/etf.h" line="441" column="6" bodyfile="src/dpp/etf.cpp" bodystart="73" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1aa30fb150fa781c3d7dd9751a81f9b28d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -592,12 +803,31 @@
           <declname>d</declname>
         </param>
         <briefdescription>
+<para>Append small integer value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>double to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="136" column="6" bodyfile="src/dpp/etf.cpp" bodystart="66" bodyend="69"/>
+        <location file="include/dpp/etf.h" line="449" column="6" bodyfile="src/dpp/etf.cpp" bodystart="78" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1adfb336ced272f026e931221ae1303126" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -613,12 +843,31 @@
           <declname>d</declname>
         </param>
         <briefdescription>
+<para>Append integer value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="138" column="6" bodyfile="src/dpp/etf.cpp" bodystart="71" bodyend="76"/>
+        <location file="include/dpp/etf.h" line="457" column="6" bodyfile="src/dpp/etf.cpp" bodystart="83" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1ac25fdf66bb5f7216cba9e70cabf8a484" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -634,12 +883,31 @@
           <declname>d</declname>
         </param>
         <briefdescription>
+<para>Append 64 bit integer value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="140" column="6" bodyfile="src/dpp/etf.cpp" bodystart="78" bodyend="92"/>
+        <location file="include/dpp/etf.h" line="465" column="6" bodyfile="src/dpp/etf.cpp" bodystart="90" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a9103fde0a34d053adad08974b1ee2e2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -655,12 +923,31 @@
           <declname>d</declname>
         </param>
         <briefdescription>
+<para>Append 64 bit integer value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="142" column="6" bodyfile="src/dpp/etf.cpp" bodystart="94" bodyend="107"/>
+        <location file="include/dpp/etf.h" line="473" column="6" bodyfile="src/dpp/etf.cpp" bodystart="106" bodyend="119"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1aad86d9ac2f2baf85bb0041631c549560" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -676,12 +963,31 @@
           <declname>f</declname>
         </param>
         <briefdescription>
+<para>Append double value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>doule to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="144" column="6" bodyfile="src/dpp/etf.cpp" bodystart="109" bodyend="116"/>
+        <location file="include/dpp/etf.h" line="481" column="6" bodyfile="src/dpp/etf.cpp" bodystart="121" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a7c1c3f85a5e6d2d0c724c2d3fade22ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -701,12 +1007,39 @@
           <declname>size</declname>
         </param>
         <briefdescription>
+<para>Append atom value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to string to append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of string to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="146" column="6" bodyfile="src/dpp/etf.cpp" bodystart="118" bodyend="135"/>
+        <location file="include/dpp/etf.h" line="490" column="6" bodyfile="src/dpp/etf.cpp" bodystart="130" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1ab0d97b706d48a022101f734c0d4a979f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -726,12 +1059,39 @@
           <declname>size</declname>
         </param>
         <briefdescription>
+<para>Append utf8 atom value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to string to append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of string to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="148" column="6" bodyfile="src/dpp/etf.cpp" bodystart="137" bodyend="154"/>
+        <location file="include/dpp/etf.h" line="499" column="6" bodyfile="src/dpp/etf.cpp" bodystart="149" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1aba3d013ff4167fcb8989abf1eb081a23" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -751,12 +1111,39 @@
           <declname>size</declname>
         </param>
         <briefdescription>
+<para>Append binary value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to string to append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of string to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="150" column="6" bodyfile="src/dpp/etf.cpp" bodystart="156" bodyend="163"/>
+        <location file="include/dpp/etf.h" line="508" column="6" bodyfile="src/dpp/etf.cpp" bodystart="168" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a1774505ade9ddea5b194b631d43c5881" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -776,12 +1163,39 @@
           <declname>size</declname>
         </param>
         <briefdescription>
+<para>Append string value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to string to append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of string to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="152" column="6" bodyfile="src/dpp/etf.cpp" bodystart="165" bodyend="172"/>
+        <location file="include/dpp/etf.h" line="517" column="6" bodyfile="src/dpp/etf.cpp" bodystart="177" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a323f9f6be5a94b883dd3cc34b57e49b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -797,12 +1211,31 @@
           <declname>size</declname>
         </param>
         <briefdescription>
+<para>Append tuple value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of value to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="154" column="6" bodyfile="src/dpp/etf.cpp" bodystart="174" bodyend="186"/>
+        <location file="include/dpp/etf.h" line="525" column="6" bodyfile="src/dpp/etf.cpp" bodystart="186" bodyend="198"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a9105afad81f956d629555c0ccc9205bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -814,12 +1247,23 @@
           <declname>b</declname>
         </param>
         <briefdescription>
+<para>Append list terminator to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="156" column="6" bodyfile="src/dpp/etf.cpp" bodystart="188" bodyend="191"/>
+        <location file="include/dpp/etf.h" line="532" column="6" bodyfile="src/dpp/etf.cpp" bodystart="200" bodyend="203"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a61836185002e9119e02cf938a39d4c0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -835,12 +1279,31 @@
           <declname>size</declname>
         </param>
         <briefdescription>
+<para>Append a list header value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of values to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="158" column="6" bodyfile="src/dpp/etf.cpp" bodystart="193" bodyend="198"/>
+        <location file="include/dpp/etf.h" line="540" column="6" bodyfile="src/dpp/etf.cpp" bodystart="205" bodyend="210"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a27254eafc57ea2ef5bd6febb17e48e12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -856,12 +1319,31 @@
           <declname>size</declname>
         </param>
         <briefdescription>
+<para>Append a map header value to ETF buffer. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of values to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="160" column="6" bodyfile="src/dpp/etf.cpp" bodystart="200" bodyend="205"/>
+        <location file="include/dpp/etf.h" line="548" column="6" bodyfile="src/dpp/etf.cpp" bodystart="212" bodyend="217"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a59de2b005efa93b208b35cf4b5afaf5e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -882,7 +1364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="162" column="6" bodyfile="src/dpp/etf.cpp" bodystart="630" bodyend="700"/>
+        <location file="include/dpp/etf.h" line="550" column="6" bodyfile="src/dpp/etf.cpp" bodystart="642" bodyend="712"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -892,13 +1374,13 @@
         <argsstring>()</argsstring>
         <name>etf_parser</name>
         <briefdescription>
+<para>Construct a new etf parser object. </para>
         </briefdescription>
         <detaileddescription>
-<para>Constructor </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="166" column="1" bodyfile="src/dpp/etf.cpp" bodystart="207" bodyend="209"/>
+        <location file="include/dpp/etf.h" line="556" column="1" bodyfile="src/dpp/etf.cpp" bodystart="219" bodyend="221"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1abf03b044d5a883cac5816a4c93df3688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -906,13 +1388,13 @@
         <argsstring>()</argsstring>
         <name>~etf_parser</name>
         <briefdescription>
+<para>Destroy the etf parser object. </para>
         </briefdescription>
         <detaileddescription>
-<para>Destructor </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="169" column="1"/>
+        <location file="include/dpp/etf.h" line="561" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a16b91fa9e1e2024d5cb390b293c4238f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>nlohmann::json</type>
@@ -924,12 +1406,25 @@
           <declname>in</declname>
         </param>
         <briefdescription>
+<para>Convert ETF binary content to nlohmann::json. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw binary ETF data (generally from a websocket) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nlohmann::json JSON data for use in the library </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="171" column="16" bodyfile="src/dpp/etf.cpp" bodystart="617" bodyend="628"/>
+        <location file="include/dpp/etf.h" line="569" column="16" bodyfile="src/dpp/etf.cpp" bodystart="629" bodyend="640"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1etf__parser_1a9c074f9ccd302a8eae2ffe3d19c9adc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -941,12 +1436,25 @@
           <declname>j</declname>
         </param>
         <briefdescription>
+<para>Create ETF binary data from nlohmann::json. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON value to encode to ETF </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string raw ETF data. Note that this can and probably will contain null values, use std::string::data() and std::string::size() to manipulate or send it. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="173" column="13" bodyfile="src/dpp/etf.cpp" bodystart="702" bodyend="707"/>
+        <location file="include/dpp/etf.h" line="579" column="13" bodyfile="src/dpp/etf.cpp" bodystart="714" bodyend="719"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -954,7 +1462,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/dpp/etf.h" line="79" column="1" bodyfile="include/dpp/etf.h" bodystart="79" bodyend="174"/>
+    <location file="include/dpp/etf.h" line="152" column="1" bodyfile="include/dpp/etf.h" bodystart="152" bodyend="580"/>
     <listofallmembers>
       <member refid="classdpp_1_1etf__parser_1a7c1c3f85a5e6d2d0c724c2d3fade22ba" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_atom</name></member>
       <member refid="classdpp_1_1etf__parser_1ab0d97b706d48a022101f734c0d4a979f" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_atom_utf8</name></member>
@@ -997,7 +1505,7 @@
       <member refid="classdpp_1_1etf__parser_1a4f46e6660f389b3cd1f9b1c45d03e809" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_small_atom</name></member>
       <member refid="classdpp_1_1etf__parser_1a978d1edd1685405a7c6d10c840dbb4fe" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_small_integer</name></member>
       <member refid="classdpp_1_1etf__parser_1addfe7bab3d972ba803b2b27a98fbeba6" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_string</name></member>
-      <member refid="classdpp_1_1etf__parser_1ac4d0324e9d690eccc2e0897182b40e8a" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_stringAsList</name></member>
+      <member refid="classdpp_1_1etf__parser_1a1c0c7b9a0602c1df208ca1d17a0a8385" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_string_as_list</name></member>
       <member refid="classdpp_1_1etf__parser_1a4ef7545a9646952f50bce39868f2122d" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_tuple</name></member>
       <member refid="classdpp_1_1etf__parser_1a9912918cdaaf14495c326be55ff58b58" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_tuple_large</name></member>
       <member refid="classdpp_1_1etf__parser_1a4acd4adba92eacc16363f468cf28be02" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_tuple_small</name></member>

@@ -958,6 +958,7 @@
           <name>ett_new_float</name>
           <initializer>=		&apos;F&apos;</initializer>
           <briefdescription>
+<para>70 [Float64:IEEE float] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -966,6 +967,7 @@
           <name>ett_bit_binary</name>
           <initializer>=	&apos;M&apos;</initializer>
           <briefdescription>
+<para>77 [UInt32:Len, UInt8:Bits, Len:Data] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -974,6 +976,7 @@
           <name>ett_compressed</name>
           <initializer>=	&apos;P&apos;</initializer>
           <briefdescription>
+<para>80 [UInt4:UncompressedSize, N:ZlibCompressedData] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -982,6 +985,7 @@
           <name>ett_smallint</name>
           <initializer>=		&apos;a&apos;</initializer>
           <briefdescription>
+<para>97 [UInt8:Int] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -990,6 +994,7 @@
           <name>ett_integer</name>
           <initializer>=		&apos;b&apos;</initializer>
           <briefdescription>
+<para>98 [Int32:Int] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -998,6 +1003,7 @@
           <name>ett_float</name>
           <initializer>=		&apos;c&apos;</initializer>
           <briefdescription>
+<para>99 [31:Float String] Float in string format (formatted &quot;%.20e&quot;, sscanf &quot;%lf&quot;). Superseded by ett_new_float </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1006,6 +1012,7 @@
           <name>ett_atom</name>
           <initializer>=		&apos;d&apos;</initializer>
           <briefdescription>
+<para>100 [UInt16:Len, Len:AtomName] max Len is 255 </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1014,6 +1021,7 @@
           <name>ett_reference</name>
           <initializer>=		&apos;e&apos;</initializer>
           <briefdescription>
+<para>101 [atom:Node, UInt32:ID, UInt8:Creation] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1022,6 +1030,7 @@
           <name>ett_port</name>
           <initializer>=		&apos;f&apos;</initializer>
           <briefdescription>
+<para>102 [atom:Node, UInt32:ID, UInt8:Creation] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1030,6 +1039,7 @@
           <name>ett_pid</name>
           <initializer>=		&apos;g&apos;</initializer>
           <briefdescription>
+<para>103 [atom:Node, UInt32:ID, UInt32:Serial, UInt8:Creation] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1038,6 +1048,7 @@
           <name>ett_small_tuple</name>
           <initializer>=	&apos;h&apos;</initializer>
           <briefdescription>
+<para>104 [UInt8:Arity, N:Elements] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1046,6 +1057,7 @@
           <name>ett_large_tuple</name>
           <initializer>=	&apos;i&apos;</initializer>
           <briefdescription>
+<para>105 [UInt32:Arity, N:Elements] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1054,6 +1066,7 @@
           <name>ett_nil</name>
           <initializer>=		&apos;j&apos;</initializer>
           <briefdescription>
+<para>106 empty list </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1062,6 +1075,7 @@
           <name>ett_string</name>
           <initializer>=		&apos;k&apos;</initializer>
           <briefdescription>
+<para>107 [UInt16:Len, Len:Characters] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1070,6 +1084,7 @@
           <name>ett_list</name>
           <initializer>=		&apos;l&apos;</initializer>
           <briefdescription>
+<para>108 [UInt32:Len, Elements, Tail] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1078,6 +1093,7 @@
           <name>ett_binary</name>
           <initializer>=		&apos;m&apos;</initializer>
           <briefdescription>
+<para>109 [UInt32:Len, Len:Data] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1086,6 +1102,7 @@
           <name>ett_bigint_small</name>
           <initializer>=	&apos;n&apos;</initializer>
           <briefdescription>
+<para>110 [UInt8:n, UInt8:Sign, n:nums] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1094,6 +1111,7 @@
           <name>ett_bigint_large</name>
           <initializer>=	&apos;o&apos;</initializer>
           <briefdescription>
+<para>111 [UInt32:n, UInt8:Sign, n:nums] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1102,6 +1120,7 @@
           <name>ett_new_function</name>
           <initializer>=	&apos;p&apos;</initializer>
           <briefdescription>
+<para>112 [UInt32:Size, UInt8:Arity, 16*Uint6-MD5:Uniq, UInt32:Index, UInt32:NumFree, atom:Module, int:OldIndex, int:OldUniq, pid:Pid, NunFree*ext:FreeVars] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1110,6 +1129,7 @@
           <name>ett_export</name>
           <initializer>=		&apos;q&apos;</initializer>
           <briefdescription>
+<para>113 [atom:Module, atom:Function, smallint:Arity] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1118,6 +1138,7 @@
           <name>ett_new_reference</name>
           <initializer>=	&apos;r&apos;</initializer>
           <briefdescription>
+<para>114 [UInt16:Len, atom:Node, UInt8:Creation, Len*UInt32:ID] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1126,6 +1147,7 @@
           <name>ett_atom_small</name>
           <initializer>=	&apos;s&apos;</initializer>
           <briefdescription>
+<para>115 [UInt8:Len, Len:AtomName] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1134,6 +1156,7 @@
           <name>ett_map</name>
           <initializer>=	 	&apos;t&apos;</initializer>
           <briefdescription>
+<para>116 [UInt32:Airty, N:Pairs] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1142,6 +1165,7 @@
           <name>ett_function</name>
           <initializer>=		&apos;u&apos;</initializer>
           <briefdescription>
+<para>117 [UInt4:NumFree, pid:Pid, atom:Module, int:Index, int:Uniq, NumFree*ext:FreeVars] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1150,6 +1174,7 @@
           <name>ett_atom_utf8</name>
           <initializer>=		&apos;v&apos;</initializer>
           <briefdescription>
+<para>118 [UInt16:Len, Len:AtomName] max Len is 255 characters (up to 4 bytes per) </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1158,17 +1183,19 @@
           <name>ett_atom_utf8_small</name>
           <initializer>=	&apos;w&apos;</initializer>
           <briefdescription>
+<para>119 [UInt8:Len, Len:AtomName] </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Represents a token which identifies the type of value which follows it in the ETF binary structure. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="32" column="1" bodyfile="include/dpp/etf.h" bodystart="32" bodyend="59"/>
+        <location file="include/dpp/etf.h" line="48" column="1" bodyfile="include/dpp/etf.h" bodystart="48" bodyend="101"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a51891a9e382f9c396d378de00fa65099" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -4712,7 +4739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/etf.h" line="30" column="15" bodyfile="include/dpp/etf.h" bodystart="30" bodyend="-1"/>
+        <location file="include/dpp/etf.h" line="42" column="15" bodyfile="include/dpp/etf.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">

@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('structdpp_1_1etf__buffer.html',''); in
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a buffer of bytes being encoded into ETF.  
+ <a href="structdpp_1_1etf__buffer.html#details">More...</a></p>
+
 <p><code>#include &lt;etf.h&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::etf_buffer:</div>
@@ -119,18 +122,24 @@ $(document).ready(function(){initNavTree('structdpp_1_1etf__buffer.html',''); in
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a105888d6babca010046a6fefc73b0c32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1etf__buffer.html#a105888d6babca010046a6fefc73b0c32">etf_buffer</a> (size_t initial)</td></tr>
+<tr class="memdesc:a105888d6babca010046a6fefc73b0c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new etf buffer object.  <a href="structdpp_1_1etf__buffer.html#a105888d6babca010046a6fefc73b0c32">More...</a><br /></td></tr>
 <tr class="separator:a105888d6babca010046a6fefc73b0c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70486adb573cacfd4158cac6271a71bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1etf__buffer.html#a70486adb573cacfd4158cac6271a71bb">~etf_buffer</a> ()</td></tr>
+<tr class="memdesc:a70486adb573cacfd4158cac6271a71bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the etf buffer object.  <a href="structdpp_1_1etf__buffer.html#a70486adb573cacfd4158cac6271a71bb">More...</a><br /></td></tr>
 <tr class="separator:a70486adb573cacfd4158cac6271a71bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a43b8f9084fb86968add81fbf3de15f85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1etf__buffer.html#a43b8f9084fb86968add81fbf3de15f85">buf</a></td></tr>
+<tr class="memdesc:a43b8f9084fb86968add81fbf3de15f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw buffer.  <a href="structdpp_1_1etf__buffer.html#a43b8f9084fb86968add81fbf3de15f85">More...</a><br /></td></tr>
 <tr class="separator:a43b8f9084fb86968add81fbf3de15f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceff1ab2a5802b0146d1db0a772aab32"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1etf__buffer.html#aceff1ab2a5802b0146d1db0a772aab32">length</a></td></tr>
+<tr class="memdesc:aceff1ab2a5802b0146d1db0a772aab32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current used length of buffer (this is different from buf.size() as it is pre-allocated using resize and may not all be in use)  <a href="structdpp_1_1etf__buffer.html#aceff1ab2a5802b0146d1db0a772aab32">More...</a><br /></td></tr>
 <tr class="separator:aceff1ab2a5802b0146d1db0a772aab32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Represents a buffer of bytes being encoded into ETF. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a105888d6babca010046a6fefc73b0c32" name="a105888d6babca010046a6fefc73b0c32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a105888d6babca010046a6fefc73b0c32">&#9670;&nbsp;</a></span>etf_buffer()</h2>
 
@@ -146,6 +155,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construct a new etf buffer object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initial</td><td>initial buffer size to allocate </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -172,6 +189,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Destroy the etf buffer object. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -187,6 +206,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Raw buffer. </p>
+
 </div>
 </div>
 <a id="aceff1ab2a5802b0146d1db0a772aab32" name="aceff1ab2a5802b0146d1db0a772aab32"></a>
@@ -200,6 +221,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Current used length of buffer (this is different from buf.size() as it is pre-allocated using resize and may not all be in use) </p>
 
 </div>
 </div>
