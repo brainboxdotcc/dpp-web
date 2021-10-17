@@ -45,6 +45,15 @@
     <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
   </compound>
+  <compound refid="structdpp_1_1atom__t" kind="struct"><name>dpp::atom_t</name>
+    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236" kind="enum"><name>special_value</name></member>
+    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236a4409a072640955963a4391bfb0acbaae" kind="enumvalue"><name>atom_string</name></member>
+    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236a48fa5e83e92f20edbecbd1597c39042c" kind="enumvalue"><name>atom_null</name></member>
+    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236a7ab4a3f35e4e7c46f53fbd9ca27baa41" kind="enumvalue"><name>atom_true</name></member>
+    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236a8bb870f66a0e253a29acc81148b80566" kind="enumvalue"><name>atom_false</name></member>
+    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236aff51036cf69fd0d104707ecd41d5935d" kind="enumvalue"><name>atom_nan</name></member>
+    <member refid="structdpp_1_1atom__t_1a6a02141f0d94a69c52fc25dd8fafd550" kind="variable"><name>content</name></member>
+  </compound>
   <compound refid="structdpp_1_1attachment" kind="struct"><name>dpp::attachment</name>
     <member refid="structdpp_1_1attachment_1a78fa9315fae4737d760e0b19cc9597cf" kind="variable"><name>id</name></member>
     <member refid="structdpp_1_1attachment_1a899697fe4fea962a9a81f0cae66e86f5" kind="variable"><name>size</name></member>
@@ -1016,6 +1025,7 @@
     <member refid="classdpp_1_1etf__parser_1abee70a22e708a789c484b03bfebb560e" kind="function"><name>read16</name></member>
     <member refid="classdpp_1_1etf__parser_1ae2da80db247469d2207e1ffbcf550c86" kind="function"><name>read32</name></member>
     <member refid="classdpp_1_1etf__parser_1a6110651704744314e28433f6a662c4db" kind="function"><name>read64</name></member>
+    <member refid="classdpp_1_1etf__parser_1a267f3be97e97780b3298bf8b32cb68c5" kind="function"><name>readString</name></member>
     <member refid="classdpp_1_1etf__parser_1ab1acab2b9f80170213de99dfb46b8777" kind="function"><name>erlpack_buffer_write</name></member>
     <member refid="classdpp_1_1etf__parser_1a9e87679d41eb1451642b0623d0dd8bc3" kind="function"><name>erlpack_append_version</name></member>
     <member refid="classdpp_1_1etf__parser_1a2d0d0c9541f1e60ca1feab5c08ea26bb" kind="function"><name>erlpack_append_nil</name></member>
@@ -2903,6 +2913,25 @@
     <member refid="namespacedpp_1a81eeb32f4e67cd830f6bc5f52c006c9b" kind="function"><name>base64_encode</name></member>
     <member refid="namespacedpp_1a39627e093f238673664294587921a590" kind="function"><name>TimestampNotNull</name></member>
     <member refid="namespacedpp_1ad8d0229b64fda0313bdedc5966227aaa" kind="function"><name>SetTimestampNotNull</name></member>
+    <member refid="namespacedpp_1a1fd0f81dfcc174276202cd666c7dfdba" kind="function"><name>processAtom</name></member>
+    <member refid="namespacedpp_1a85b9f0d3fa1bca1c2a9b21ff5640d454" kind="function"><name>decodeAtom</name></member>
+    <member refid="namespacedpp_1a035632955b64cdbf44cce8d50092c083" kind="function"><name>decodeSmallAtom</name></member>
+    <member refid="namespacedpp_1ac85fcce10c3b81b535612c29b1e868ea" kind="function"><name>decodeFloat</name></member>
+    <member refid="namespacedpp_1a21db8f83b165d3ef8e73d0268a8a398d" kind="function"><name>decodeNewFloat</name></member>
+    <member refid="namespacedpp_1a322c7747836b1eb40fcc456509264a10" kind="function"><name>decodeBig</name></member>
+    <member refid="namespacedpp_1add6a20b34dfd11acbc010e82ff8053fd" kind="function"><name>decodeSmallBig</name></member>
+    <member refid="namespacedpp_1a25fff6cbccb92d4e11edac478b4c9e99" kind="function"><name>decodeLargeBig</name></member>
+    <member refid="namespacedpp_1a85193f6de95562e559a1a6aa978254ba" kind="function"><name>decodeBinaryAsString</name></member>
+    <member refid="namespacedpp_1a25b309724a2297a70137b9341a881d36" kind="function"><name>decodeString</name></member>
+    <member refid="namespacedpp_1adaea27132e3125d48534c62249cac3ba" kind="function"><name>decodeStringAsList</name></member>
+    <member refid="namespacedpp_1aa8b45766d990fa351d34c58e9bbe9e97" kind="function"><name>decodeSmallTuple</name></member>
+    <member refid="namespacedpp_1a8c09bf0d75317e8d20ddaf9c43e9f610" kind="function"><name>decodeLargeTuple</name></member>
+    <member refid="namespacedpp_1a42f4ea6b1a3438767dbfc83287491a4c" kind="function"><name>decodeCompressed</name></member>
+    <member refid="namespacedpp_1a187527dc00ed5f8c78bd97479126a72c" kind="function"><name>decodeReference</name></member>
+    <member refid="namespacedpp_1a5a5ed8707a849837acb123b38e2e8668" kind="function"><name>decodeNewReference</name></member>
+    <member refid="namespacedpp_1a81ae4193b627f26c4171e1ecdfd22c74" kind="function"><name>decodePort</name></member>
+    <member refid="namespacedpp_1a251e1acb4b896721aa84c47f218fc89c" kind="function"><name>decodePID</name></member>
+    <member refid="namespacedpp_1a541cea106f2e50dfb173d0d6c8238681" kind="function"><name>decodeExport</name></member>
     <member refid="namespacedpp_1a177af60de5536cff95f417fce3d9487a" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1acd18d41e47000c592ab63b702335e184" kind="function"><name>to_json</name></member>
     <member refid="namespacedpp_1a4d0e7257dbc68790bbaa6a34a20b776d" kind="function"><name>populate_result</name></member>

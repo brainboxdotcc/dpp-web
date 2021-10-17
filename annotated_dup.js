@@ -72,6 +72,7 @@ var annotated_dup =
       [ "application_command_create_t", "structdpp_1_1application__command__create__t.html", "structdpp_1_1application__command__create__t" ],
       [ "application_command_delete_t", "structdpp_1_1application__command__delete__t.html", "structdpp_1_1application__command__delete__t" ],
       [ "application_command_update_t", "structdpp_1_1application__command__update__t.html", "structdpp_1_1application__command__update__t" ],
+      [ "atom_t", "structdpp_1_1atom__t.html", "structdpp_1_1atom__t" ],
       [ "attachment", "structdpp_1_1attachment.html", "structdpp_1_1attachment" ],
       [ "audit_change", "structdpp_1_1audit__change.html", "structdpp_1_1audit__change" ],
       [ "audit_entry", "structdpp_1_1audit__entry.html", "structdpp_1_1audit__entry" ],
