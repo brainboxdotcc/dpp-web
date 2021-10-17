@@ -13,7 +13,7 @@ var searchData=
   ['bot_10',['bot',['../structdpp_1_1integration__app.html#aca271fe17734a35346dc13a18034b5b8',1,'dpp::integration_app']]],
   ['bot_5fid_11',['bot_id',['../classdpp_1_1role.html#ada5cb5675b012b2cf55d285d5b233df3',1,'dpp::role']]],
   ['bucket_5ft_12',['bucket_t',['../structdpp_1_1bucket__t.html',1,'dpp']]],
-  ['buf_13',['buf',['../structdpp_1_1erlpack__buffer.html#a3285088619b53bf1a1549509ea89240f',1,'dpp::erlpack_buffer']]],
+  ['buf_13',['buf',['../structdpp_1_1erlpack__buffer.html#a2d16546fd8b236e748565b21ab7c0139',1,'dpp::erlpack_buffer']]],
   ['buffer_14',['buffer',['../classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa',1,'dpp::ssl_client']]],
   ['buffer_5fsize_15',['buffer_size',['../structdpp_1_1voice__buffer__send__t.html#a2dca750294ff5b2e4e08fc3b759dd84c',1,'dpp::voice_buffer_send_t']]],
   ['build_16',['build',['../classdpp_1_1etf__parser.html#a9c074f9ccd302a8eae2ffe3d19c9adc0',1,'dpp::etf_parser']]],
