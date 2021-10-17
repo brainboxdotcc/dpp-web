@@ -30,6 +30,7 @@ var classdpp_1_1discord__client =
     [ "read_loop", "classdpp_1_1discord__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
     [ "Run", "classdpp_1_1discord__client.html#ae768cabb169f9501bba20704867110e5", null ],
     [ "write", "classdpp_1_1discord__client.html#aac65765349cbd3e787c0fd2af576ec6d", null ],
+    [ "dpp::cluster", "classdpp_1_1discord__client.html#a836b658e110edfcbb21ea88b2ad90e90", null ],
     [ "dpp::events::voice_state_update", "classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86", null ],
     [ "buffer", "classdpp_1_1discord__client.html#ae0e5e0799448bf29506bfcc21168d3fa", null ],
     [ "bytes_in", "classdpp_1_1discord__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d", null ],

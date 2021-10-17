@@ -651,6 +651,7 @@
   </compound>
   <compound refid="classdpp_1_1discord__client" kind="class"><name>dpp::discord_client</name>
     <member refid="classdpp_1_1discord__client_1af5314358ae06ff298fbe659984648c86" kind="friend"><name>dpp::events::voice_state_update</name></member>
+    <member refid="classdpp_1_1discord__client_1a836b658e110edfcbb21ea88b2ad90e90" kind="friend"><name>dpp::cluster</name></member>
     <member refid="classdpp_1_1discord__client_1aac742863ae29a76c2ef1a337c19c7b45" kind="variable"><name>queue_mutex</name></member>
     <member refid="classdpp_1_1discord__client_1a0c7eeee6642b74777eb48b90b5d5c3b4" kind="variable"><name>message_queue</name></member>
     <member refid="classdpp_1_1discord__client_1ae2b41454f50ff851430d2a2615336e63" kind="variable"><name>runner</name></member>
@@ -688,7 +689,7 @@
     <member refid="classdpp_1_1websocket__client_1ac7f26051b6ce8db8e57536ce4e035caf" kind="function"><name>Connect</name></member>
     <member refid="classdpp_1_1websocket__client_1ad699ad1f6cefc29a1868fdfca530c550" kind="function"><name>GetState</name></member>
     <member refid="classdpp_1_1discord__client_1aea8ab00076142308a6de5f8e7f868c2d" kind="function"><name>ThreadRun</name></member>
-    <member refid="classdpp_1_1discord__client_1a420d66e787d8cd8a1014fe4d843619a4" kind="function"><name>jsonobj_to_string</name></member>
+    <member refid="classdpp_1_1discord__client_1a43d77bd4e49d0d55120ac109de69d523" kind="function"><name>jsonobj_to_string</name></member>
     <member refid="classdpp_1_1discord__client_1a74b3093d95864d7b7bb02ea5ab3f48cb" kind="function"><name>SetupZLib</name></member>
     <member refid="classdpp_1_1discord__client_1ad54cd0f411f631b57141b7e8faba0a5a" kind="function"><name>EndZLib</name></member>
     <member refid="classdpp_1_1discord__client_1a9880e3f13c00cd6e4397fe64ae23b4d0" kind="function"><name>log</name></member>
@@ -1045,24 +1046,24 @@
     <member refid="classdpp_1_1etf__parser_1a852929985a3dabb4a674957fc790e064" kind="function"><name>decodePID</name></member>
     <member refid="classdpp_1_1etf__parser_1a45f28cf40a86516dab6f7a4c271dfb40" kind="function"><name>decodeExport</name></member>
     <member refid="classdpp_1_1etf__parser_1ac9e9e7e22e4e6fbf16836e4a7ad94058" kind="function"><name>erlpack_buffer_write</name></member>
-    <member refid="classdpp_1_1etf__parser_1a9e87679d41eb1451642b0623d0dd8bc3" kind="function"><name>erlpack_append_version</name></member>
-    <member refid="classdpp_1_1etf__parser_1a2d0d0c9541f1e60ca1feab5c08ea26bb" kind="function"><name>erlpack_append_nil</name></member>
-    <member refid="classdpp_1_1etf__parser_1ab560aa5c98f3a869b42b993b9ab09b74" kind="function"><name>erlpack_append_false</name></member>
-    <member refid="classdpp_1_1etf__parser_1ab6e5e792b7d9631d901e0855cb791c1e" kind="function"><name>erlpack_append_true</name></member>
-    <member refid="classdpp_1_1etf__parser_1ab7caa85d5989b32c78d38fce64adef01" kind="function"><name>erlpack_append_small_integer</name></member>
-    <member refid="classdpp_1_1etf__parser_1afa9269351e1dc9d3d82d19e5870686e2" kind="function"><name>erlpack_append_integer</name></member>
-    <member refid="classdpp_1_1etf__parser_1a4ea67ff8efdb74381ad238c47f3a040e" kind="function"><name>erlpack_append_unsigned_long_long</name></member>
-    <member refid="classdpp_1_1etf__parser_1ad98716123c1dcaaee71826e89d02a0d9" kind="function"><name>erlpack_append_long_long</name></member>
-    <member refid="classdpp_1_1etf__parser_1ad205a2b5086e15d35ea9c7229633afc1" kind="function"><name>erlpack_append_double</name></member>
-    <member refid="classdpp_1_1etf__parser_1ae93c8defcaed4a6c929541f136b3ed1c" kind="function"><name>erlpack_append_atom</name></member>
-    <member refid="classdpp_1_1etf__parser_1aa8e1531af0eeeae66cff45f03d12f8d1" kind="function"><name>erlpack_append_atom_utf8</name></member>
-    <member refid="classdpp_1_1etf__parser_1abb86ecdc2f3a64074a377c9205f70cdb" kind="function"><name>erlpack_append_binary</name></member>
-    <member refid="classdpp_1_1etf__parser_1a534a67dcd17daff2cde03d3368386e30" kind="function"><name>erlpack_append_string</name></member>
-    <member refid="classdpp_1_1etf__parser_1aabafe1b5f0e44a8808e747c37a727782" kind="function"><name>erlpack_append_tuple_header</name></member>
-    <member refid="classdpp_1_1etf__parser_1a770aa0ea7e03a5415d6d0ee9308ab49d" kind="function"><name>erlpack_append_nil_ext</name></member>
-    <member refid="classdpp_1_1etf__parser_1ae349f502cdd5010ba1388a82699c1c76" kind="function"><name>erlpack_append_list_header</name></member>
-    <member refid="classdpp_1_1etf__parser_1a18d0554976340579992d52f6a6749eaa" kind="function"><name>erlpack_append_map_header</name></member>
-    <member refid="classdpp_1_1etf__parser_1ab20f59adcb7eb2b5b3ddc13da39375ea" kind="function"><name>inner_build</name></member>
+    <member refid="classdpp_1_1etf__parser_1af58d3a90d8fa215368e7f83485ef1b77" kind="function"><name>erlpack_append_version</name></member>
+    <member refid="classdpp_1_1etf__parser_1a1a5d89a2b7f48b299f191a42ff2fa39c" kind="function"><name>erlpack_append_nil</name></member>
+    <member refid="classdpp_1_1etf__parser_1a7551f422a7b1a5dfc5d30bd89e86468e" kind="function"><name>erlpack_append_false</name></member>
+    <member refid="classdpp_1_1etf__parser_1a96ae90790c448107b741bb7a571be4d7" kind="function"><name>erlpack_append_true</name></member>
+    <member refid="classdpp_1_1etf__parser_1a72088e9d62614b80c835470964b12337" kind="function"><name>erlpack_append_small_integer</name></member>
+    <member refid="classdpp_1_1etf__parser_1aeb3baf2005e7f52d7e796ddbd46d445e" kind="function"><name>erlpack_append_integer</name></member>
+    <member refid="classdpp_1_1etf__parser_1a09d96f8ba6da62d1479be255e6779a0d" kind="function"><name>erlpack_append_unsigned_long_long</name></member>
+    <member refid="classdpp_1_1etf__parser_1a2c3a091b50436d795b36d58f4e4e8974" kind="function"><name>erlpack_append_long_long</name></member>
+    <member refid="classdpp_1_1etf__parser_1a7e9dc054acb11f7d63451aa3c7460617" kind="function"><name>erlpack_append_double</name></member>
+    <member refid="classdpp_1_1etf__parser_1aacacd69102e5798244e7dbbadc8f89b0" kind="function"><name>erlpack_append_atom</name></member>
+    <member refid="classdpp_1_1etf__parser_1a184504648e04a32b28625c2ec584159f" kind="function"><name>erlpack_append_atom_utf8</name></member>
+    <member refid="classdpp_1_1etf__parser_1a8067a7def93b703d8ecb6f2fed78ab66" kind="function"><name>erlpack_append_binary</name></member>
+    <member refid="classdpp_1_1etf__parser_1a1d3d2695efc7892d1bb05e1dde6d0da0" kind="function"><name>erlpack_append_string</name></member>
+    <member refid="classdpp_1_1etf__parser_1a7f1f3c0ea521b13ea1df853cfeaebd72" kind="function"><name>erlpack_append_tuple_header</name></member>
+    <member refid="classdpp_1_1etf__parser_1a5851c4b0e6b5c123df04aabd3b320d95" kind="function"><name>erlpack_append_nil_ext</name></member>
+    <member refid="classdpp_1_1etf__parser_1a915bf27794f4661f1b32c6292f6710a0" kind="function"><name>erlpack_append_list_header</name></member>
+    <member refid="classdpp_1_1etf__parser_1ad6c510dd4b45edb15e8bc763d30f2b4f" kind="function"><name>erlpack_append_map_header</name></member>
+    <member refid="classdpp_1_1etf__parser_1a5fd3ad0c30af6014e36ec2b5bad1a09f" kind="function"><name>inner_build</name></member>
     <member refid="classdpp_1_1etf__parser_1a1fda89db96ffa12c3f922ece4c099a92" kind="function"><name>etf_parser</name></member>
     <member refid="classdpp_1_1etf__parser_1abf03b044d5a883cac5816a4c93df3688" kind="function"><name>~etf_parser</name></member>
     <member refid="classdpp_1_1etf__parser_1a16b91fa9e1e2024d5cb390b293c4238f" kind="function"><name>parse</name></member>
