@@ -51,8 +51,6 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
@@ -71,16 +69,16 @@ var NAVTREEINDEX =
 "classdpp_1_1opensslcontext.html#a720f2e9de953471de4aeda813156ccc1",
 "classdpp_1_1ssl__client.html#ac5c5b7071d0cb95f34aee7b4b5a32428",
 "classdpp_1_1websocket__client.html#afa5d5654ce0b631d07045088ef347418",
-"namespacedpp.html#a172aa830689e55f4bba337de1592db96ac85606cb4be43da0a426d80f6ad2c90f",
-"namespacedpp.html#a8af3a726df107c304139477dbfa42092ad6cedbe459b1e8cf4e8f5a25adbe5b20",
-"namespacemembers_eval_r.html",
-"structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5",
-"structdpp_1_1component__interaction.html#aeb198e9e83ed7a8f6e3a7d6540beb607",
-"structdpp_1_1guild__join__request__delete__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b",
-"structdpp_1_1message__update__t.html",
-"structdpp_1_1sticker.html#af85380855738ab7cbbbd2cafa3414d7a",
-"structdpp_1_1voice__receive__t.html#aa843a6b21c4dc8742960abec208e7fa5"
+"namespacedpp.html#a1c4073c92e19579c06591033a4a234e1",
+"namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faa013ed7a6d95dfe09ef48449204ee72d",
+"namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9",
+"structdpp_1_1audit__extra.html#a7b393b645a46875b2a2bc3b4232970dd",
+"structdpp_1_1embed.html#a618ee49a00b10349b039f4a75529005e",
+"structdpp_1_1guild__members__chunk__t.html",
+"structdpp_1_1message.html#a550f3dc37e4b55cccc2e78d90fc047fb",
+"structdpp_1_1prune.html#a1fccd070246b84a4c1315fc254337ed9",
+"structdpp_1_1thread__delete__t.html#a938c747399f7bef531f1316d1c6dcf35",
+"structdpp_1_1voice__user__talking__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

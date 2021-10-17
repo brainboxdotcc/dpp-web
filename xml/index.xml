@@ -45,15 +45,6 @@
     <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
   </compound>
-  <compound refid="structdpp_1_1atom__t" kind="struct"><name>dpp::atom_t</name>
-    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236" kind="enum"><name>special_value</name></member>
-    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236a4409a072640955963a4391bfb0acbaae" kind="enumvalue"><name>atom_string</name></member>
-    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236a48fa5e83e92f20edbecbd1597c39042c" kind="enumvalue"><name>atom_null</name></member>
-    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236a7ab4a3f35e4e7c46f53fbd9ca27baa41" kind="enumvalue"><name>atom_true</name></member>
-    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236a8bb870f66a0e253a29acc81148b80566" kind="enumvalue"><name>atom_false</name></member>
-    <member refid="structdpp_1_1atom__t_1a8869b384d16e9e778d005f527e914236aff51036cf69fd0d104707ecd41d5935d" kind="enumvalue"><name>atom_nan</name></member>
-    <member refid="structdpp_1_1atom__t_1a6a02141f0d94a69c52fc25dd8fafd550" kind="variable"><name>content</name></member>
-  </compound>
   <compound refid="structdpp_1_1attachment" kind="struct"><name>dpp::attachment</name>
     <member refid="structdpp_1_1attachment_1a78fa9315fae4737d760e0b19cc9597cf" kind="variable"><name>id</name></member>
     <member refid="structdpp_1_1attachment_1a899697fe4fea962a9a81f0cae66e86f5" kind="variable"><name>size</name></member>
@@ -1019,13 +1010,39 @@
   <compound refid="classdpp_1_1etf__parser" kind="class"><name>dpp::etf_parser</name>
     <member refid="classdpp_1_1etf__parser_1a1d142726294e1b13238c8d5ada5d84d5" kind="variable"><name>size</name></member>
     <member refid="classdpp_1_1etf__parser_1a0b80df35b6cd591a5e1d30269ef43d99" kind="variable"><name>offset</name></member>
-    <member refid="classdpp_1_1etf__parser_1af77929986cae381566d1328557927dbc" kind="variable"><name>data</name></member>
+    <member refid="classdpp_1_1etf__parser_1a1b5969a81823b8938e860a0690685950" kind="variable"><name>data</name></member>
     <member refid="classdpp_1_1etf__parser_1ad041ce7bfa3431a7aaf5dc17dbf055f0" kind="function"><name>inner_parse</name></member>
     <member refid="classdpp_1_1etf__parser_1a376b4e0440f819d27ab26e8f1ca1a816" kind="function"><name>read8</name></member>
     <member refid="classdpp_1_1etf__parser_1abee70a22e708a789c484b03bfebb560e" kind="function"><name>read16</name></member>
     <member refid="classdpp_1_1etf__parser_1ae2da80db247469d2207e1ffbcf550c86" kind="function"><name>read32</name></member>
     <member refid="classdpp_1_1etf__parser_1a6110651704744314e28433f6a662c4db" kind="function"><name>read64</name></member>
     <member refid="classdpp_1_1etf__parser_1a267f3be97e97780b3298bf8b32cb68c5" kind="function"><name>readString</name></member>
+    <member refid="classdpp_1_1etf__parser_1a484246396a4bc66c97b51ba521247660" kind="function"><name>processAtom</name></member>
+    <member refid="classdpp_1_1etf__parser_1a18f9258e2e8ae29af9347fb6fa492f8c" kind="function"><name>decodeAtom</name></member>
+    <member refid="classdpp_1_1etf__parser_1abac4ba9566d385e5099fa47e7bfd7960" kind="function"><name>decodeSmallAtom</name></member>
+    <member refid="classdpp_1_1etf__parser_1a75003ba22c763245f675097357a9a626" kind="function"><name>decodeSmallInteger</name></member>
+    <member refid="classdpp_1_1etf__parser_1af9d4309df653ed38085c6d09f36ba7c3" kind="function"><name>decodeInteger</name></member>
+    <member refid="classdpp_1_1etf__parser_1a9cc6a8c98e707582a4c4f818ac2df8d2" kind="function"><name>decodeArray</name></member>
+    <member refid="classdpp_1_1etf__parser_1a55d4a40d3f9f64a833a1702299235b6e" kind="function"><name>decodeList</name></member>
+    <member refid="classdpp_1_1etf__parser_1a763cad886a70faa1641dcf067fdade7a" kind="function"><name>decodeTuple</name></member>
+    <member refid="classdpp_1_1etf__parser_1ad357b2a39207256865d0edf69accc23c" kind="function"><name>decodeNil</name></member>
+    <member refid="classdpp_1_1etf__parser_1ac008624a711c234c2b143eab6daecf5c" kind="function"><name>decodeMap</name></member>
+    <member refid="classdpp_1_1etf__parser_1ab126185994c9ae325b7670b3846f59c5" kind="function"><name>decodeFloat</name></member>
+    <member refid="classdpp_1_1etf__parser_1adae44b56ccce32934040bb1bfc1db74d" kind="function"><name>decodeNewFloat</name></member>
+    <member refid="classdpp_1_1etf__parser_1a2a1234fc3a7edf32fe558b67a221d318" kind="function"><name>decodeBig</name></member>
+    <member refid="classdpp_1_1etf__parser_1a7da34ee75065371ec705edb75b1d4c18" kind="function"><name>decodeSmallBig</name></member>
+    <member refid="classdpp_1_1etf__parser_1ab49bc49d3379caca652c76316a69e745" kind="function"><name>decodeLargeBig</name></member>
+    <member refid="classdpp_1_1etf__parser_1a7178670702814cd27d47d2adba76cf66" kind="function"><name>decodeBinaryAsString</name></member>
+    <member refid="classdpp_1_1etf__parser_1ab0ed37a085c3ea1e0e37eee51ae20b47" kind="function"><name>decodeString</name></member>
+    <member refid="classdpp_1_1etf__parser_1ae8409669fb67d6304df9002851ef8c78" kind="function"><name>decodeStringAsList</name></member>
+    <member refid="classdpp_1_1etf__parser_1a0d246f8aeafec952e14fe13186cad62b" kind="function"><name>decodeSmallTuple</name></member>
+    <member refid="classdpp_1_1etf__parser_1ad5565e524f0ca206337ee89547fab4ac" kind="function"><name>decodeLargeTuple</name></member>
+    <member refid="classdpp_1_1etf__parser_1a3f25f2e04fc46d20dc346a30840cfa33" kind="function"><name>decodeCompressed</name></member>
+    <member refid="classdpp_1_1etf__parser_1abb9f8f810d2820dfb5bc8f761c6e7724" kind="function"><name>decodeReference</name></member>
+    <member refid="classdpp_1_1etf__parser_1a6c84b075218efe516db693a2a0d1d12e" kind="function"><name>decodeNewReference</name></member>
+    <member refid="classdpp_1_1etf__parser_1a7a6ba1efcef1e0aa5b644c12bfbad4a7" kind="function"><name>decodePort</name></member>
+    <member refid="classdpp_1_1etf__parser_1a852929985a3dabb4a674957fc790e064" kind="function"><name>decodePID</name></member>
+    <member refid="classdpp_1_1etf__parser_1a45f28cf40a86516dab6f7a4c271dfb40" kind="function"><name>decodeExport</name></member>
     <member refid="classdpp_1_1etf__parser_1ab1acab2b9f80170213de99dfb46b8777" kind="function"><name>erlpack_buffer_write</name></member>
     <member refid="classdpp_1_1etf__parser_1a9e87679d41eb1451642b0623d0dd8bc3" kind="function"><name>erlpack_append_version</name></member>
     <member refid="classdpp_1_1etf__parser_1a2d0d0c9541f1e60ca1feab5c08ea26bb" kind="function"><name>erlpack_append_nil</name></member>
@@ -1046,7 +1063,7 @@
     <member refid="classdpp_1_1etf__parser_1a18d0554976340579992d52f6a6749eaa" kind="function"><name>erlpack_append_map_header</name></member>
     <member refid="classdpp_1_1etf__parser_1a1fda89db96ffa12c3f922ece4c099a92" kind="function"><name>etf_parser</name></member>
     <member refid="classdpp_1_1etf__parser_1abf03b044d5a883cac5816a4c93df3688" kind="function"><name>~etf_parser</name></member>
-    <member refid="classdpp_1_1etf__parser_1ace377273ca65ad002b2a46c0da507b91" kind="function"><name>parse</name></member>
+    <member refid="classdpp_1_1etf__parser_1a16b91fa9e1e2024d5cb390b293c4238f" kind="function"><name>parse</name></member>
     <member refid="classdpp_1_1etf__parser_1a9c074f9ccd302a8eae2ffe3d19c9adc0" kind="function"><name>build</name></member>
   </compound>
   <compound refid="classdpp_1_1events_1_1event" kind="class"><name>dpp::events::event</name>
@@ -2913,32 +2930,6 @@
     <member refid="namespacedpp_1a81eeb32f4e67cd830f6bc5f52c006c9b" kind="function"><name>base64_encode</name></member>
     <member refid="namespacedpp_1a39627e093f238673664294587921a590" kind="function"><name>TimestampNotNull</name></member>
     <member refid="namespacedpp_1ad8d0229b64fda0313bdedc5966227aaa" kind="function"><name>SetTimestampNotNull</name></member>
-    <member refid="namespacedpp_1a59cb39d31100911e59a93b9597104c1e" kind="function"><name>processAtom</name></member>
-    <member refid="namespacedpp_1a4b7befda29f0dcd24618b3c605b8fd0a" kind="function"><name>decodeAtom</name></member>
-    <member refid="namespacedpp_1a44d1492c9425d54e1e3cee9ba98a6e67" kind="function"><name>decodeSmallAtom</name></member>
-    <member refid="namespacedpp_1a93387f65b0e1577ad9714c4a2e8ae333" kind="function"><name>decodeSmallInteger</name></member>
-    <member refid="namespacedpp_1a6599c76e0c69a38007a6116a95351c3f" kind="function"><name>decodeInteger</name></member>
-    <member refid="namespacedpp_1a2a98241be7355242fd07c0079366c123" kind="function"><name>decodeArray</name></member>
-    <member refid="namespacedpp_1a2fc6b72079569575704d80394ee426cc" kind="function"><name>decodeList</name></member>
-    <member refid="namespacedpp_1a33ace66c835eb492dc65f511491fa1fb" kind="function"><name>decodeTuple</name></member>
-    <member refid="namespacedpp_1adc7302eb49352799452e8efa752786b8" kind="function"><name>decodeNil</name></member>
-    <member refid="namespacedpp_1ad9d14e924cd907b6509c8f4f5651a829" kind="function"><name>decodeMap</name></member>
-    <member refid="namespacedpp_1afad8ecf655b7d3f8ba6ff69ec222ac5b" kind="function"><name>decodeFloat</name></member>
-    <member refid="namespacedpp_1a4fcfb1414d18d7cafebf28440155137d" kind="function"><name>decodeNewFloat</name></member>
-    <member refid="namespacedpp_1a45b48f3d271da16c830998eaec77c73a" kind="function"><name>decodeBig</name></member>
-    <member refid="namespacedpp_1a65ba764993bb81c4a71542af7ce43199" kind="function"><name>decodeSmallBig</name></member>
-    <member refid="namespacedpp_1aca0f19e1454d78dafda077b9d94fb241" kind="function"><name>decodeLargeBig</name></member>
-    <member refid="namespacedpp_1ab25832b2b0a0eda4e0ad8fbbb4735ab0" kind="function"><name>decodeBinaryAsString</name></member>
-    <member refid="namespacedpp_1a271f9007c190dbb862093909d0d61c19" kind="function"><name>decodeString</name></member>
-    <member refid="namespacedpp_1aea0fe1359ebf40984a25569e172b6121" kind="function"><name>decodeStringAsList</name></member>
-    <member refid="namespacedpp_1a9fe327a2da0695378543c8e1dfdeb4b5" kind="function"><name>decodeSmallTuple</name></member>
-    <member refid="namespacedpp_1a8efe37ce1d6172631f8d31cd14bd3bc4" kind="function"><name>decodeLargeTuple</name></member>
-    <member refid="namespacedpp_1a8d572f758086b1947083508a58aecec3" kind="function"><name>decodeCompressed</name></member>
-    <member refid="namespacedpp_1ad82624b4d6de1c850a7181b4973cbee3" kind="function"><name>decodeReference</name></member>
-    <member refid="namespacedpp_1a0ac923a766821f1a6c12c1708b77d51d" kind="function"><name>decodeNewReference</name></member>
-    <member refid="namespacedpp_1abd53b78858937cbd4a5b7f4734f3b350" kind="function"><name>decodePort</name></member>
-    <member refid="namespacedpp_1a0e4331e52138ad5062d0c25976e6e018" kind="function"><name>decodePID</name></member>
-    <member refid="namespacedpp_1ad9ebe8efcf7d9c6d77ea38b5ae51adf9" kind="function"><name>decodeExport</name></member>
     <member refid="namespacedpp_1a177af60de5536cff95f417fce3d9487a" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1acd18d41e47000c592ab63b702335e184" kind="function"><name>to_json</name></member>
     <member refid="namespacedpp_1a4d0e7257dbc68790bbaa6a34a20b776d" kind="function"><name>populate_result</name></member>
@@ -2964,7 +2955,7 @@
     <member refid="namespacedpp_1_1utility_1a9d70739d6485741d1617c359ec70d1f4" kind="function"><name>has_voice</name></member>
     <member refid="namespacedpp_1_1utility_1a1a9168eaaf347543e55e607858f24eb3" kind="function"><name>current_date_time</name></member>
     <member refid="namespacedpp_1_1utility_1acae9e089e4b7cfd9745235f86455c045" kind="function"><name>loglevel</name></member>
-    <member refid="namespacedpp_1_1utility_1a5f16eb38738d3739f33cd8ee2cf6b338" kind="function"><name>debug_dump</name></member>
+    <member refid="namespacedpp_1_1utility_1a02456e22a1d41893a9b321bf8ccaeec6" kind="function"><name>debug_dump</name></member>
     <member refid="namespacedpp_1_1utility_1af74cf004f32b11f0f804968c64bb3d08" kind="function"><name>bytes</name></member>
     <member refid="namespacedpp_1_1utility_1ac7d516c03d572fe65d01c4ec5e92c6f0" kind="function"><name>exec</name></member>
     <member refid="namespacedpp_1_1utility_1a62cc8fc3994f6b3d49cf4923b993c231" kind="function"><name>utf8len</name></member>
@@ -3204,8 +3195,10 @@
   <compound refid="commandhandler_8cpp" kind="file"><name>commandhandler.cpp</name>
   </compound>
   <compound refid="discordclient_8cpp" kind="file"><name>discordclient.cpp</name>
-    <member refid="discordclient_8cpp_1a2e4a86ca5e3f50db175cecd0dcce65bd" kind="define"><name>PATH_UNCOMPRESSED</name></member>
-    <member refid="discordclient_8cpp_1a5ca5fad813a798965b3abbe9457af47e" kind="define"><name>PATH_COMPRESSED</name></member>
+    <member refid="discordclient_8cpp_1a81724d1f32cef8b17e72673cd5aa50eb" kind="define"><name>PATH_UNCOMPRESSED_JSON</name></member>
+    <member refid="discordclient_8cpp_1a40312eccc7a336c3d6e4147da9da3aa9" kind="define"><name>PATH_COMPRESSED_JSON</name></member>
+    <member refid="discordclient_8cpp_1a7d5e1b4b7021475c1c0f4874e9c6f7a3" kind="define"><name>PATH_UNCOMPRESSED_ETF</name></member>
+    <member refid="discordclient_8cpp_1ab0db5a5c742ff3cac6f86147add8c1f1" kind="define"><name>PATH_COMPRESSED_ETF</name></member>
     <member refid="discordclient_8cpp_1a4eeed96e0929901b6451125ee313d4b8" kind="define"><name>DECOMP_BUFFER_SIZE</name></member>
   </compound>
   <compound refid="discordevents_8cpp" kind="file"><name>discordevents.cpp</name>
@@ -3222,6 +3215,7 @@
   <compound refid="emoji_8cpp" kind="file"><name>emoji.cpp</name>
   </compound>
   <compound refid="etf_8cpp" kind="file"><name>etf.cpp</name>
+    <member refid="etf_8cpp_1aacbb9e1f38be71e22df1584a37c56693" kind="define"><name>__STDC_FORMAT_MACROS</name></member>
     <member refid="etf_8cpp_1a32e312f88992a4323a8be770a7aa5a6b" kind="define"><name>FORMAT_VERSION</name></member>
     <member refid="etf_8cpp_1a2f16e99dd7fd42cc09cfec5be09f9ecf" kind="define"><name>NEW_FLOAT_EXT</name></member>
     <member refid="etf_8cpp_1a7144268fdb4e310e481e9ba84696e34e" kind="define"><name>BIT_BINARY_EXT</name></member>
