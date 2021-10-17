@@ -7,6 +7,7 @@
     <includes refid="discordevents_8h" local="no">dpp/discordevents.h</includes>
     <includes refid="discord_8h" local="no">dpp/discord.h</includes>
     <includes local="no">dpp/nlohmann/json.hpp</includes>
+    <includes local="no">zlib.h</includes>
     <incdepgraph>
       <node id="31">
         <label>dpp/auditlog.h</label>
@@ -84,7 +85,7 @@
         <childnode refid="31" relation="include">
         </childnode>
       </node>
-      <node id="38">
+      <node id="39">
         <label>dpp/discordevents.h</label>
         <childnode refid="11" relation="include">
         </childnode>
@@ -113,7 +114,7 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -202,10 +203,8 @@
         <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>dpp/sysdep.h</label>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="35" relation="include">
@@ -213,6 +212,8 @@
         <childnode refid="36" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
       <node id="13">
@@ -252,22 +253,24 @@
         <link refid="etf_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
       </node>
-      <node id="37">
+      <node id="38">
         <label>arpa/inet.h</label>
       </node>
       <node id="11">
         <label>dpp/json_fwd.hpp</label>
       </node>
-      <node id="39">
+      <node id="32">
         <label>dpp/nlohmann/json.hpp</label>
       </node>
       <node id="9">
@@ -282,16 +285,16 @@
       <node id="30">
         <label>optional</label>
       </node>
-      <node id="36">
+      <node id="37">
         <label>stdbool.h</label>
       </node>
-      <node id="34">
+      <node id="35">
         <label>stddef.h</label>
       </node>
-      <node id="35">
+      <node id="36">
         <label>stdint.h</label>
       </node>
-      <node id="33">
+      <node id="34">
         <label>stdlib.h</label>
       </node>
       <node id="5">
@@ -306,6 +309,9 @@
       <node id="6">
         <label>vector</label>
       </node>
+      <node id="40">
+        <label>zlib.h</label>
+      </node>
     </incdepgraph>
     <innernamespace refid="namespacedpp">dpp</innernamespace>
       <sectiondef kind="define">
@@ -318,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="27" column="9" bodyfile="src/dpp/etf.cpp" bodystart="27" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="28" column="9" bodyfile="src/dpp/etf.cpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a2f16e99dd7fd42cc09cfec5be09f9ecf" prot="public" static="no">
         <name>NEW_FLOAT_EXT</name>
@@ -329,7 +335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="28" column="9" bodyfile="src/dpp/etf.cpp" bodystart="28" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="29" column="9" bodyfile="src/dpp/etf.cpp" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a7144268fdb4e310e481e9ba84696e34e" prot="public" static="no">
         <name>BIT_BINARY_EXT</name>
@@ -340,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="29" column="9" bodyfile="src/dpp/etf.cpp" bodystart="29" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="30" column="9" bodyfile="src/dpp/etf.cpp" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a97a8197035fcf69e3982b9f30095f12f" prot="public" static="no">
         <name>COMPRESSED</name>
@@ -351,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="30" column="9" bodyfile="src/dpp/etf.cpp" bodystart="30" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="31" column="9" bodyfile="src/dpp/etf.cpp" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1ab87ed8705437bdfb9413423ffd1b82d3" prot="public" static="no">
         <name>SMALL_INTEGER_EXT</name>
@@ -362,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="31" column="9" bodyfile="src/dpp/etf.cpp" bodystart="31" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="32" column="9" bodyfile="src/dpp/etf.cpp" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1aff6ddf42b3c1b50eb5455f70ec802d0f" prot="public" static="no">
         <name>INTEGER_EXT</name>
@@ -373,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="32" column="9" bodyfile="src/dpp/etf.cpp" bodystart="32" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="33" column="9" bodyfile="src/dpp/etf.cpp" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a39e0e2686a6c3ca2e3e5b1b2993bffa4" prot="public" static="no">
         <name>FLOAT_EXT</name>
@@ -384,7 +390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="33" column="9" bodyfile="src/dpp/etf.cpp" bodystart="33" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="34" column="9" bodyfile="src/dpp/etf.cpp" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1afc7bb84fd99bcc43d53bc3e575054be5" prot="public" static="no">
         <name>ATOM_EXT</name>
@@ -395,7 +401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="34" column="9" bodyfile="src/dpp/etf.cpp" bodystart="34" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="35" column="9" bodyfile="src/dpp/etf.cpp" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a38500470005b9fd252185460edffa4df" prot="public" static="no">
         <name>REFERENCE_EXT</name>
@@ -406,7 +412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="35" column="9" bodyfile="src/dpp/etf.cpp" bodystart="35" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="36" column="9" bodyfile="src/dpp/etf.cpp" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1aa4f7a77698f43152d261181b4e791654" prot="public" static="no">
         <name>PORT_EXT</name>
@@ -417,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="36" column="9" bodyfile="src/dpp/etf.cpp" bodystart="36" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="37" column="9" bodyfile="src/dpp/etf.cpp" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a9c9fc3e88cb4f7dae67564f2c6c16555" prot="public" static="no">
         <name>PID_EXT</name>
@@ -428,7 +434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="37" column="9" bodyfile="src/dpp/etf.cpp" bodystart="37" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="38" column="9" bodyfile="src/dpp/etf.cpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a4748f67b525ea3fdb05500c7ad3d020d" prot="public" static="no">
         <name>SMALL_TUPLE_EXT</name>
@@ -439,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="38" column="9" bodyfile="src/dpp/etf.cpp" bodystart="38" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="39" column="9" bodyfile="src/dpp/etf.cpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a38bc2c470a6c47a6a1445a299f7be375" prot="public" static="no">
         <name>LARGE_TUPLE_EXT</name>
@@ -450,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="39" column="9" bodyfile="src/dpp/etf.cpp" bodystart="39" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="40" column="9" bodyfile="src/dpp/etf.cpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a92442b250f645b09a11c4d8df872c2ea" prot="public" static="no">
         <name>NIL_EXT</name>
@@ -461,7 +467,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="40" column="9" bodyfile="src/dpp/etf.cpp" bodystart="40" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="41" column="9" bodyfile="src/dpp/etf.cpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1ae1847d5aa13c60c9cd3a2699d47b8a2c" prot="public" static="no">
         <name>STRING_EXT</name>
@@ -472,7 +478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="41" column="9" bodyfile="src/dpp/etf.cpp" bodystart="41" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="42" column="9" bodyfile="src/dpp/etf.cpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1acbf9d34211d072c787fb66702b61e19b" prot="public" static="no">
         <name>LIST_EXT</name>
@@ -483,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="42" column="9" bodyfile="src/dpp/etf.cpp" bodystart="42" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="43" column="9" bodyfile="src/dpp/etf.cpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a33221a22bc4fd9183788b7a02eb21a1b" prot="public" static="no">
         <name>BINARY_EXT</name>
@@ -494,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="43" column="9" bodyfile="src/dpp/etf.cpp" bodystart="43" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="44" column="9" bodyfile="src/dpp/etf.cpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a1b43d898c184392fabfa7a0c95c5ba51" prot="public" static="no">
         <name>SMALL_BIG_EXT</name>
@@ -505,7 +511,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="44" column="9" bodyfile="src/dpp/etf.cpp" bodystart="44" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="45" column="9" bodyfile="src/dpp/etf.cpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a389bd1014723343b8f913b341c893f44" prot="public" static="no">
         <name>LARGE_BIG_EXT</name>
@@ -516,7 +522,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="45" column="9" bodyfile="src/dpp/etf.cpp" bodystart="45" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="46" column="9" bodyfile="src/dpp/etf.cpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a25767ffcd53ffb0885b8d3740e58a638" prot="public" static="no">
         <name>NEW_FUN_EXT</name>
@@ -527,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="46" column="9" bodyfile="src/dpp/etf.cpp" bodystart="46" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="47" column="9" bodyfile="src/dpp/etf.cpp" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a46a88f504b8af78b709de9cf1bc21537" prot="public" static="no">
         <name>EXPORT_EXT</name>
@@ -538,7 +544,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="47" column="9" bodyfile="src/dpp/etf.cpp" bodystart="47" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="48" column="9" bodyfile="src/dpp/etf.cpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1aeaa23feead2d9b8b94c417601710e1e1" prot="public" static="no">
         <name>NEW_REFERENCE_EXT</name>
@@ -549,7 +555,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="48" column="9" bodyfile="src/dpp/etf.cpp" bodystart="48" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="49" column="9" bodyfile="src/dpp/etf.cpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a7f19273150e3f1400110999753fdc115" prot="public" static="no">
         <name>SMALL_ATOM_EXT</name>
@@ -560,7 +566,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="49" column="9" bodyfile="src/dpp/etf.cpp" bodystart="49" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="50" column="9" bodyfile="src/dpp/etf.cpp" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a56fd86bb8fde37e05821d9eb753c9a46" prot="public" static="no">
         <name>MAP_EXT</name>
@@ -571,7 +577,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="50" column="9" bodyfile="src/dpp/etf.cpp" bodystart="50" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="51" column="9" bodyfile="src/dpp/etf.cpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1aa03b2ea43168b1651f15f593df8345f2" prot="public" static="no">
         <name>FUN_EXT</name>
@@ -582,7 +588,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="51" column="9" bodyfile="src/dpp/etf.cpp" bodystart="51" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="52" column="9" bodyfile="src/dpp/etf.cpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a0581efa67c87fffe205461bce2729d6e" prot="public" static="no">
         <name>ATOM_UTF8_EXT</name>
@@ -593,7 +599,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="52" column="9" bodyfile="src/dpp/etf.cpp" bodystart="52" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="53" column="9" bodyfile="src/dpp/etf.cpp" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="etf_8cpp_1a29023d9400ef23d6df84f5d23d2040e5" prot="public" static="no">
         <name>SMALL_ATOM_UTF8_EXT</name>
@@ -604,7 +610,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/etf.cpp" line="53" column="9" bodyfile="src/dpp/etf.cpp" bodystart="53" bodyend="-1"/>
+        <location file="src/dpp/etf.cpp" line="54" column="9" bodyfile="src/dpp/etf.cpp" bodystart="54" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
