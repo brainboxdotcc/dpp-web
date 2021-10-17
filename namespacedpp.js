@@ -304,6 +304,7 @@ var namespacedpp =
       [ "e_available", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d", null ]
     ] ],
     [ "etf_token_type", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2", [
+      [ "ett_distribution", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1f73d99cedad0b2bef42243ab11a7fd5", null ],
       [ "ett_new_float", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565", null ],
       [ "ett_bit_binary", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6", null ],
       [ "ett_compressed", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf", null ],
