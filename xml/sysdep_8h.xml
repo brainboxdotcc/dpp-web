@@ -61,8 +61,8 @@
         </inbodydescription>
         <location file="include/dpp/sysdep.h" line="61" column="9" bodyfile="include/dpp/sysdep.h" bodystart="61" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="sysdep_8h_1a64ab9eb0a6ce71dc5c344526e7aa0662" prot="public" static="no">
-        <name>_erlpack_be16</name>
+      <memberdef kind="define" id="sysdep_8h_1a155fe2ff938e89918650ec124faa830c" prot="public" static="no">
+        <name>etf_byte_order_16</name>
         <param><defname>x</defname></param>
         <initializer>ntohs(x)</initializer>
         <briefdescription>
@@ -73,8 +73,8 @@
         </inbodydescription>
         <location file="include/dpp/sysdep.h" line="83" column="12" bodyfile="include/dpp/sysdep.h" bodystart="83" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="sysdep_8h_1a30ef4cf334cd1eff23469598a585eab0" prot="public" static="no">
-        <name>_erlpack_be32</name>
+      <memberdef kind="define" id="sysdep_8h_1aca08e3884be59b0def5a461867a32ef3" prot="public" static="no">
+        <name>etf_byte_order_32</name>
         <param><defname>x</defname></param>
         <initializer>ntohl(x)</initializer>
         <briefdescription>
@@ -85,8 +85,8 @@
         </inbodydescription>
         <location file="include/dpp/sysdep.h" line="99" column="12" bodyfile="include/dpp/sysdep.h" bodystart="99" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="sysdep_8h_1a0fe1abc776ce36cc5e2f376264416a37" prot="public" static="no">
-        <name>_erlpack_be64</name>
+      <memberdef kind="define" id="sysdep_8h_1ab3ca41370de624be670d3a2c41a30d88" prot="public" static="no">
+        <name>etf_byte_order_64</name>
         <param><defname>x</defname></param>
         <initializer>    ( ((((uint64_t)x) &lt;&lt; 56)                         ) | \
       ((((uint64_t)x) &lt;&lt; 40) &amp; 0x00ff000000000000ULL ) | \
@@ -104,11 +104,11 @@
         </inbodydescription>
         <location file="include/dpp/sysdep.h" line="111" column="12" bodyfile="include/dpp/sysdep.h" bodystart="111" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="sysdep_8h_1afb248b226ecd63307f0dc760d523111d" prot="public" static="no">
-        <name>_erlpack_store16</name>
+      <memberdef kind="define" id="sysdep_8h_1a9319ec1d4c84b19f610cb21d6a7767a4" prot="public" static="no">
+        <name>store_16_bits</name>
         <param><defname>to</defname></param>
         <param><defname>num</defname></param>
-        <initializer>    do { uint16_t val = _erlpack_be16(num); memcpy(to, &amp;val, 2); } while(0)</initializer>
+        <initializer>    do { uint16_t val = etf_byte_order_16(num); memcpy(to, &amp;val, 2); } while(0)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -117,11 +117,11 @@
         </inbodydescription>
         <location file="include/dpp/sysdep.h" line="128" column="9" bodyfile="include/dpp/sysdep.h" bodystart="128" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="sysdep_8h_1a51338e797115117aad070443b686e758" prot="public" static="no">
-        <name>_erlpack_store32</name>
+      <memberdef kind="define" id="sysdep_8h_1a2a26373ec11f93cd075ae437118c3580" prot="public" static="no">
+        <name>store_32_bits</name>
         <param><defname>to</defname></param>
         <param><defname>num</defname></param>
-        <initializer>    do { uint32_t val = _erlpack_be32(num); memcpy(to, &amp;val, 4); } while(0)</initializer>
+        <initializer>    do { uint32_t val = etf_byte_order_32(num); memcpy(to, &amp;val, 4); } while(0)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -130,11 +130,11 @@
         </inbodydescription>
         <location file="include/dpp/sysdep.h" line="130" column="9" bodyfile="include/dpp/sysdep.h" bodystart="130" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="sysdep_8h_1ad30b721d2c205a46a292759881c6ff42" prot="public" static="no">
-        <name>_erlpack_store64</name>
+      <memberdef kind="define" id="sysdep_8h_1a4798ad8a29746ad210d55b18bfccd543" prot="public" static="no">
+        <name>store_64_bits</name>
         <param><defname>to</defname></param>
         <param><defname>num</defname></param>
-        <initializer>    do { uint64_t val = _erlpack_be64(num); memcpy(to, &amp;val, 8); } while(0)</initializer>
+        <initializer>    do { uint64_t val = etf_byte_order_64(num); memcpy(to, &amp;val, 8); } while(0)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

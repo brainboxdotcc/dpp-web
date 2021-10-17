@@ -46,9 +46,9 @@
     <innerclass refid="structdpp_1_1embed__image" prot="public">dpp::embed_image</innerclass>
     <innerclass refid="structdpp_1_1embed__provider" prot="public">dpp::embed_provider</innerclass>
     <innerclass refid="classdpp_1_1emoji" prot="public">dpp::emoji</innerclass>
-    <innerclass refid="structdpp_1_1erlpack__buffer" prot="public">dpp::erlpack_buffer</innerclass>
     <innerclass refid="structdpp_1_1error__detail" prot="public">dpp::error_detail</innerclass>
     <innerclass refid="structdpp_1_1error__info" prot="public">dpp::error_info</innerclass>
+    <innerclass refid="structdpp_1_1etf__buffer" prot="public">dpp::etf_buffer</innerclass>
     <innerclass refid="classdpp_1_1etf__parser" prot="public">dpp::etf_parser</innerclass>
     <innerclass refid="structdpp_1_1event__dispatch__t" prot="public">dpp::event_dispatch_t</innerclass>
     <innerclass refid="classdpp_1_1exception" prot="public">dpp::exception</innerclass>
@@ -950,6 +950,225 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/emoji.h" line="33" column="1" bodyfile="include/dpp/emoji.h" bodystart="33" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>etf_token_type</name>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565" prot="public">
+          <name>ett_new_float</name>
+          <initializer>=		&apos;F&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6" prot="public">
+          <name>ett_bit_binary</name>
+          <initializer>=	&apos;M&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf" prot="public">
+          <name>ett_compressed</name>
+          <initializer>=	&apos;P&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd" prot="public">
+          <name>ett_smallint</name>
+          <initializer>=		&apos;a&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948" prot="public">
+          <name>ett_integer</name>
+          <initializer>=		&apos;b&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf" prot="public">
+          <name>ett_float</name>
+          <initializer>=		&apos;c&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4" prot="public">
+          <name>ett_atom</name>
+          <initializer>=		&apos;d&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5" prot="public">
+          <name>ett_reference</name>
+          <initializer>=		&apos;e&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db" prot="public">
+          <name>ett_port</name>
+          <initializer>=		&apos;f&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965" prot="public">
+          <name>ett_pid</name>
+          <initializer>=		&apos;g&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16" prot="public">
+          <name>ett_small_tuple</name>
+          <initializer>=	&apos;h&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2" prot="public">
+          <name>ett_large_tuple</name>
+          <initializer>=	&apos;i&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9" prot="public">
+          <name>ett_nil</name>
+          <initializer>=		&apos;j&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381" prot="public">
+          <name>ett_string</name>
+          <initializer>=		&apos;k&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad" prot="public">
+          <name>ett_list</name>
+          <initializer>=		&apos;l&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986" prot="public">
+          <name>ett_binary</name>
+          <initializer>=		&apos;m&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d" prot="public">
+          <name>ett_bigint_small</name>
+          <initializer>=	&apos;n&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557" prot="public">
+          <name>ett_bigint_large</name>
+          <initializer>=	&apos;o&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d" prot="public">
+          <name>ett_new_function</name>
+          <initializer>=	&apos;p&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81" prot="public">
+          <name>ett_export</name>
+          <initializer>=		&apos;q&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e" prot="public">
+          <name>ett_new_reference</name>
+          <initializer>=	&apos;r&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905" prot="public">
+          <name>ett_atom_small</name>
+          <initializer>=	&apos;s&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39" prot="public">
+          <name>ett_map</name>
+          <initializer>=	 	&apos;t&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147" prot="public">
+          <name>ett_function</name>
+          <initializer>=		&apos;u&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed" prot="public">
+          <name>ett_atom_utf8</name>
+          <initializer>=		&apos;v&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c" prot="public">
+          <name>ett_atom_utf8_small</name>
+          <initializer>=	&apos;w&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="32" column="1" bodyfile="include/dpp/etf.h" bodystart="32" bodyend="59"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a51891a9e382f9c396d378de00fa65099" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -4479,6 +4698,21 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="32" column="17" bodyfile="include/dpp/dispatcher.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1af762f7c2f0c23de9fbba385e8f547d29" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t dpp::FORMAT_VERSION</definition>
+        <argsstring></argsstring>
+        <name>FORMAT_VERSION</name>
+        <initializer>= 131</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current ETF format version in use </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="30" column="15" bodyfile="include/dpp/etf.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">

@@ -13,7 +13,7 @@ var searchData=
   ['_7edtemplate_10',['~dtemplate',['../classdpp_1_1dtemplate.html#a1ae48c050ffc66f77f857f939cc66487',1,'dpp::dtemplate']]],
   ['_7eembed_11',['~embed',['../structdpp_1_1embed.html#a9d43c2e1648e03cf5aa28825f600391f',1,'dpp::embed']]],
   ['_7eemoji_12',['~emoji',['../classdpp_1_1emoji.html#a0a25072ec7ccc6e5da014fa888c6d8e9',1,'dpp::emoji']]],
-  ['_7eerlpack_5fbuffer_13',['~erlpack_buffer',['../structdpp_1_1erlpack__buffer.html#aa26a4d016455ce5d9b655b2d9a651811',1,'dpp::erlpack_buffer']]],
+  ['_7eetf_5fbuffer_13',['~etf_buffer',['../structdpp_1_1etf__buffer.html#a70486adb573cacfd4158cac6271a71bb',1,'dpp::etf_buffer']]],
   ['_7eetf_5fparser_14',['~etf_parser',['../classdpp_1_1etf__parser.html#abf03b044d5a883cac5816a4c93df3688',1,'dpp::etf_parser']]],
   ['_7eexception_15',['~exception',['../classdpp_1_1exception.html#afe7dc4002e1d4c812192f5afb4bed1d7',1,'dpp::exception']]],
   ['_7eguild_16',['~guild',['../classdpp_1_1guild.html#a7e494da5ab1aaaddae4d588849ea9f14',1,'dpp::guild']]],
