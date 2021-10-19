@@ -144,7 +144,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:af74cf004f32b11f0f804968c64bb3d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a byte count to display value.  <a href="namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08">More...</a><br /></td></tr>
 <tr class="separator:af74cf004f32b11f0f804968c64bb3d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7d516c03d572fe65d01c4ec5e92c6f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">exec</a> (const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters={}, <a class="el" href="namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6">cmd_result_t</a> callback={})</td></tr>
-<tr class="memdesc:ac7d516c03d572fe65d01c4ec5e92c6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a commandline program asyncronously. The command line program is spawned in a separate std::thread, and when complete, its output from stdout is passed to the callback function in its string prameter. For eample.  <a href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">More...</a><br /></td></tr>
+<tr class="memdesc:ac7d516c03d572fe65d01c4ec5e92c6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a commandline program asyncronously. The command line program is spawned in a separate std::thread, and when complete, its output from stdout is passed to the callback function in its string prameter. For example.  <a href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">More...</a><br /></td></tr>
 <tr class="separator:ac7d516c03d572fe65d01c4ec5e92c6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62cc8fc3994f6b3d49cf4923b993c231"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231">utf8len</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a62cc8fc3994f6b3d49cf4923b993c231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of a UTF-8 string in codepoints.  <a href="namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231">More...</a><br /></td></tr>
@@ -287,15 +287,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Run a commandline program asyncronously. The command line program is spawned in a separate std::thread, and when complete, its output from stdout is passed to the callback function in its string prameter. For eample. </p>
-<div class="fragment"><div class="line"><a class="code hl_function" href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a>(<span class="stringliteral">&quot;ls&quot;</span>, [](<span class="keyword">const</span> std::string&amp; output) {</div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Output of &#39;ls&#39;: &quot;</span> &lt;&lt; output &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<p>Run a commandline program asyncronously. The command line program is spawned in a separate std::thread, and when complete, its output from stdout is passed to the callback function in its string prameter. For example. </p>
+<div class="fragment"><div class="line"><a class="code hl_function" href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a>(<span class="stringliteral">&quot;/bin/ls&quot;</span>, {<span class="stringliteral">&quot;-al&quot;</span>}, [](<span class="keyword">const</span> std::string&amp; output) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Output of &#39;ls -al&#39;: &quot;</span> &lt;&lt; output &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">});</div>
 <div class="ttc" id="anamespacedpp_1_1utility_html_ac7d516c03d572fe65d01c4ec5e92c6f0"><div class="ttname"><a href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a></div><div class="ttdeci">void exec(const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters, cmd_result_t callback)</div><div class="ttdoc">Run a commandline program asyncronously. The command line program is spawned in a separate std::threa...</div><div class="ttdef"><b>Definition:</b> utility.cpp:191</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>The command to run. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Command line parameters. Each will be escaped using std::quoted. </td></tr>
+    <tr><td class="paramname">parameters</td><td>Command line parameters. Each will be escaped using <code>std::quoted</code>. </td></tr>
     <tr><td class="paramname">callback</td><td>The callback to call on completion. </td></tr>
   </table>
   </dd>

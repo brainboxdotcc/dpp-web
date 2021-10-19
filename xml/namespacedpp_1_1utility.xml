@@ -191,11 +191,11 @@
           <defval>{}</defval>
         </param>
         <briefdescription>
-<para>Run a commandline program asyncronously. The command line program is spawned in a separate std::thread, and when complete, its output from stdout is passed to the callback function in its string prameter. For eample. </para>
+<para>Run a commandline program asyncronously. The command line program is spawned in a separate std::thread, and when complete, its output from stdout is passed to the callback function in its string prameter. For example. </para>
         </briefdescription>
         <detaileddescription>
-<para><programlisting><codeline><highlight class="normal"><ref refid="namespacedpp_1_1utility_1ac7d516c03d572fe65d01c4ec5e92c6f0" kindref="member">dpp::utility::exec</ref>(</highlight><highlight class="stringliteral">&quot;ls&quot;</highlight><highlight class="normal">,<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>output)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Output<sp/>of<sp/>&apos;ls&apos;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>output<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<para><programlisting><codeline><highlight class="normal"><ref refid="namespacedpp_1_1utility_1ac7d516c03d572fe65d01c4ec5e92c6f0" kindref="member">dpp::utility::exec</ref>(</highlight><highlight class="stringliteral">&quot;/bin/ls&quot;</highlight><highlight class="normal">,<sp/>{</highlight><highlight class="stringliteral">&quot;-al&quot;</highlight><highlight class="normal">},<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>output)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Output<sp/>of<sp/>&apos;ls<sp/>-al&apos;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>output<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal">});</highlight></codeline>
 </programlisting></para>
 <para><parameterlist kind="param"><parameteritem>
@@ -211,7 +211,7 @@
 <parametername>parameters</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Command line parameters. Each will be escaped using std::quoted. </para>
+<para>Command line parameters. Each will be escaped using <computeroutput>std::quoted</computeroutput>. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
