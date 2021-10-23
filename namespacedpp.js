@@ -691,6 +691,7 @@ var namespacedpp =
     [ "to_json", "namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2", null ],
     [ "tokenize", "namespacedpp.html#a981df68922716d97ba921fd2027c3513", null ],
     [ "url_encode", "namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4", null ],
+    [ "audit_reason", "namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98", null ],
     [ "channel_cache", "namespacedpp.html#adf9c30193655252606a5db50aaf9cb98", null ],
     [ "confirmation_callback_t", "namespacedpp.html#ac9654800251161e0925af5d1ec1452f8", null ],
     [ "deletion_mutex", "namespacedpp.html#a2630b73cc2ee72fec720c5324655f400", null ],
