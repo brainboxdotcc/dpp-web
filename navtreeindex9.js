@@ -1,9 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"classdpp_1_1websocket__client.html#a65ca871fe6af9b131472890fc8d49cef":[7,0,1,147,4],
+"classdpp_1_1websocket__client.html#a65ca871fe6af9b131472890fc8d49cef":[6,0,1,147,4],
 "classdpp_1_1websocket__client.html#a7893b4f67b88472cf72dea1aa8f2c377":[7,0,1,147,10],
 "classdpp_1_1websocket__client.html#a7893b4f67b88472cf72dea1aa8f2c377":[6,0,1,147,10],
-"classdpp_1_1websocket__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d":[6,0,1,147,16],
 "classdpp_1_1websocket__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d":[7,0,1,147,16],
+"classdpp_1_1websocket__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d":[6,0,1,147,16],
 "classdpp_1_1websocket__client.html#a8022a8002cfc6f394016546168ef4085":[7,0,1,147,17],
 "classdpp_1_1websocket__client.html#a8022a8002cfc6f394016546168ef4085":[6,0,1,147,17],
 "classdpp_1_1websocket__client.html#a809b342e343bd370141ba25a5e90cf64":[6,0,1,147,0],
@@ -18,12 +20,12 @@ var NAVTREEINDEX9 =
 "classdpp_1_1websocket__client.html#aac65765349cbd3e787c0fd2af576ec6d":[6,0,1,147,14],
 "classdpp_1_1websocket__client.html#aad4da6489c8f08030ca49c060a23740a":[7,0,1,147,6],
 "classdpp_1_1websocket__client.html#aad4da6489c8f08030ca49c060a23740a":[6,0,1,147,6],
-"classdpp_1_1websocket__client.html#aaf27074007db73b13663ab985f2221e8":[6,0,1,147,20],
 "classdpp_1_1websocket__client.html#aaf27074007db73b13663ab985f2221e8":[7,0,1,147,20],
+"classdpp_1_1websocket__client.html#aaf27074007db73b13663ab985f2221e8":[6,0,1,147,20],
 "classdpp_1_1websocket__client.html#abf247ed0871e89e6a319c95841a315bd":[7,0,1,147,7],
 "classdpp_1_1websocket__client.html#abf247ed0871e89e6a319c95841a315bd":[6,0,1,147,7],
-"classdpp_1_1websocket__client.html#ac5c5b7071d0cb95f34aee7b4b5a32428":[6,0,1,147,21],
 "classdpp_1_1websocket__client.html#ac5c5b7071d0cb95f34aee7b4b5a32428":[7,0,1,147,21],
+"classdpp_1_1websocket__client.html#ac5c5b7071d0cb95f34aee7b4b5a32428":[6,0,1,147,21],
 "classdpp_1_1websocket__client.html#ac7f26051b6ce8db8e57536ce4e035caf":[6,0,1,147,3],
 "classdpp_1_1websocket__client.html#ac7f26051b6ce8db8e57536ce4e035caf":[7,0,1,147,3],
 "classdpp_1_1websocket__client.html#ad699ad1f6cefc29a1868fdfca530c550":[7,0,1,147,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5af9f6255c96ad6a0e5a9e9af5eff1eaf9":[6,0,1,203,8],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5afa12813bc586d75c467a64a8ec793531":[6,0,1,203,5],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5afdc0ced010f66a5c3a0c818ec5975359":[6,0,1,203,0],
-"namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8":[6,0,1,207],
-"namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01":[6,0,1,207,2],
-"namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf":[6,0,1,207,6]
+"namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8":[6,0,1,207]
 };
