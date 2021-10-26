@@ -29,10 +29,11 @@ var searchData=
   ['_7erole_26',['~role',['../classdpp_1_1role.html#a1cd275ca1aa52763e05b78a8a3443476',1,'dpp::role']]],
   ['_7eslashcommand_27',['~slashcommand',['../classdpp_1_1slashcommand.html#aa6f13f22de1b2e26b2ca7976e42e5b67',1,'dpp::slashcommand']]],
   ['_7essl_5fclient_28',['~ssl_client',['../classdpp_1_1ssl__client.html#ab805a3cc483018dbba6b745f7fa6ff24',1,'dpp::ssl_client']]],
-  ['_7euser_29',['~user',['../classdpp_1_1user.html#a7787310b4607e5e3eb61c2b504bae94e',1,'dpp::user']]],
-  ['_7evoiceconn_30',['~voiceconn',['../classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98',1,'dpp::voiceconn']]],
-  ['_7evoiceregion_31',['~voiceregion',['../classdpp_1_1voiceregion.html#ab08402a1538913ad465b2c36cd4dbf92',1,'dpp::voiceregion']]],
-  ['_7evoicestate_32',['~voicestate',['../classdpp_1_1voicestate.html#a29e5fdd1ec931b6ad1feed0094a1225f',1,'dpp::voicestate']]],
-  ['_7ewebhook_33',['~webhook',['../classdpp_1_1webhook.html#aa5f6e90d2be315fd438b827e25447a36',1,'dpp::webhook']]],
-  ['_7ewebsocket_5fclient_34',['~websocket_client',['../classdpp_1_1websocket__client.html#aea281ac4eef3336e3b78227beb21e4ef',1,'dpp::websocket_client']]]
+  ['_7estage_5finstance_29',['~stage_instance',['../structdpp_1_1stage__instance.html#a88af3a5f8cead59a98c9ae7a695695a7',1,'dpp::stage_instance']]],
+  ['_7euser_30',['~user',['../classdpp_1_1user.html#a7787310b4607e5e3eb61c2b504bae94e',1,'dpp::user']]],
+  ['_7evoiceconn_31',['~voiceconn',['../classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98',1,'dpp::voiceconn']]],
+  ['_7evoiceregion_32',['~voiceregion',['../classdpp_1_1voiceregion.html#ab08402a1538913ad465b2c36cd4dbf92',1,'dpp::voiceregion']]],
+  ['_7evoicestate_33',['~voicestate',['../classdpp_1_1voicestate.html#a29e5fdd1ec931b6ad1feed0094a1225f',1,'dpp::voicestate']]],
+  ['_7ewebhook_34',['~webhook',['../classdpp_1_1webhook.html#aa5f6e90d2be315fd438b827e25447a36',1,'dpp::webhook']]],
+  ['_7ewebsocket_5fclient_35',['~websocket_client',['../classdpp_1_1websocket__client.html#aea281ac4eef3336e3b78227beb21e4ef',1,'dpp::websocket_client']]]
 ];

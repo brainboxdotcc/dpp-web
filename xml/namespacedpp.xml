@@ -114,8 +114,10 @@
     <innerclass refid="structdpp_1_1select__option" prot="public">dpp::select_option</innerclass>
     <innerclass refid="classdpp_1_1slashcommand" prot="public">dpp::slashcommand</innerclass>
     <innerclass refid="classdpp_1_1ssl__client" prot="public">dpp::ssl_client</innerclass>
+    <innerclass refid="structdpp_1_1stage__instance" prot="public">dpp::stage_instance</innerclass>
     <innerclass refid="structdpp_1_1stage__instance__create__t" prot="public">dpp::stage_instance_create_t</innerclass>
     <innerclass refid="structdpp_1_1stage__instance__delete__t" prot="public">dpp::stage_instance_delete_t</innerclass>
+    <innerclass refid="structdpp_1_1stage__instance__update__t" prot="public">dpp::stage_instance_update_t</innerclass>
     <innerclass refid="structdpp_1_1sticker" prot="public">dpp::sticker</innerclass>
     <innerclass refid="structdpp_1_1sticker__pack" prot="public">dpp::sticker_pack</innerclass>
     <innerclass refid="structdpp_1_1thread__create__t" prot="public">dpp::thread_create_t</innerclass>
@@ -3516,6 +3518,34 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="435" column="1" bodyfile="include/dpp/slashcommand.h" bodystart="435" bodyend="440"/>
       </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a29954c9dfc5a906346177226d036a418" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>stage_privacy_level</name>
+        <enumvalue id="namespacedpp_1a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed" prot="public">
+          <name>sp_public</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d" prot="public">
+          <name>sp_guild_only</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>The Stage instance is visible publicly, such as on Stage Discovery. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/stage_instance.h" line="28" column="1" bodyfile="include/dpp/stage_instance.h" bodystart="28" bodyend="31"/>
+      </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ace1318b24526febab72157cdd8b7b468" prot="public" static="no" strong="no">
         <type></type>
         <name>user_flags</name>
@@ -4033,7 +4063,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="132" column="28" bodyfile="include/dpp/channel.h" bodystart="132" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="134" column="28" bodyfile="include/dpp/channel.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &gt;</type>
@@ -4047,7 +4077,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="299" column="28" bodyfile="include/dpp/channel.h" bodystart="299" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="330" column="28" bodyfile="include/dpp/channel.h" bodystart="330" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a13c4d4e6238396245b349e6a637897e0" prot="public" static="no">
         <type>std::map&lt; uint32_t, class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> * &gt;</type>
@@ -4063,9 +4093,9 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="41" column="18" bodyfile="include/dpp/cluster.h" bodystart="41" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1aa9b8b2be70d0b0b5fdb8e9dddf3ece10" prot="public" static="no">
-        <type>std::variant&lt; <ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref>, <ref refid="structdpp_1_1message" kindref="compound">message</ref>, <ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">user_map</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>, <ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref>, <ref refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kindref="member">channel_map</ref>, <ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref>, <ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref>, <ref refid="classdpp_1_1role" kindref="compound">role</ref>, <ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref>, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref>, <ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref>, <ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref>, <ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref>, <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref>, <ref refid="namespacedpp_1a58e2720e1ccc11d2b3b1be2e18df79d9" kindref="member">emoji_map</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref>, <ref refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kindref="member">ban_map</ref>, <ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref>, <ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref>, <ref refid="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" kindref="member">integration_map</ref>, <ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref>, <ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref>, <ref refid="structdpp_1_1prune" kindref="compound">prune</ref>, <ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref>, <ref refid="structdpp_1_1gateway" kindref="compound">gateway</ref>, <ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref>, <ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>, <ref refid="classdpp_1_1auditlog" kindref="compound">auditlog</ref>, <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref>, <ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref>, <ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref>, <ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref> &gt;</type>
-        <definition>typedef std::variant&lt; confirmation, message, message_map, user, user_map, guild_member, guild_member_map, channel, channel_map, thread_member_map, guild, guild_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog, slashcommand, slashcommand_map, sticker, sticker_map, sticker_pack, sticker_pack_map &gt; dpp::confirmable_t</definition>
+      <memberdef kind="typedef" id="namespacedpp_1a927bdab169583369b18fe3335dacbea3" prot="public" static="no">
+        <type>std::variant&lt; <ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref>, <ref refid="structdpp_1_1message" kindref="compound">message</ref>, <ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">user_map</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>, <ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref>, <ref refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kindref="member">channel_map</ref>, <ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref>, <ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref>, <ref refid="classdpp_1_1role" kindref="compound">role</ref>, <ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref>, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref>, <ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref>, <ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref>, <ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref>, <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref>, <ref refid="namespacedpp_1a58e2720e1ccc11d2b3b1be2e18df79d9" kindref="member">emoji_map</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref>, <ref refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kindref="member">ban_map</ref>, <ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref>, <ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref>, <ref refid="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" kindref="member">integration_map</ref>, <ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref>, <ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref>, <ref refid="structdpp_1_1prune" kindref="compound">prune</ref>, <ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref>, <ref refid="structdpp_1_1gateway" kindref="compound">gateway</ref>, <ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref>, <ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>, <ref refid="classdpp_1_1auditlog" kindref="compound">auditlog</ref>, <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref>, <ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref>, <ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref>, <ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref>, <ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref> &gt;</type>
+        <definition>typedef std::variant&lt; confirmation, message, message_map, user, user_map, guild_member, guild_member_map, channel, channel_map, thread_member_map, guild, guild_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog, slashcommand, slashcommand_map, stage_instance, sticker, sticker_map, sticker_pack, sticker_pack_map &gt; dpp::confirmable_t</definition>
         <argsstring></argsstring>
         <name>confirmable_t</name>
         <briefdescription>
@@ -4075,7 +4105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="120" column="2" bodyfile="include/dpp/cluster.h" bodystart="120" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="121" column="2" bodyfile="include/dpp/cluster.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &amp;)&gt;</type>
@@ -4089,7 +4119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="210" column="23" bodyfile="include/dpp/cluster.h" bodystart="210" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="211" column="23" bodyfile="include/dpp/cluster.h" bodystart="211" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
         <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
@@ -4103,7 +4133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="215" column="23" bodyfile="include/dpp/cluster.h" bodystart="215" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="216" column="23" bodyfile="include/dpp/cluster.h" bodystart="216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int64_t, bool, double &gt;</type>
@@ -4994,6 +5024,27 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/dpp/cache.cpp" line="159" column="249" bodyfile="src/dpp/cache.cpp" bodystart="159" bodyend="159" declfile="include/dpp/cache.h" declline="125" declcolumn="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a77d77e1ffffe22979d93132a7acee1d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::to_json</definition>
+        <argsstring>(nlohmann::json &amp;j, const thread_metadata &amp;tmdata)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdpp_1_1thread__metadata" kindref="compound">thread_metadata</ref> &amp;</type>
+          <declname>tmdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/channel.cpp" line="41" column="6" bodyfile="src/dpp/channel.cpp" bodystart="41" bodyend="46" declfile="include/dpp/channel.h" declline="325" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a82aba4478fa9f6b684d209af7a9eb754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>

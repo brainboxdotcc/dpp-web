@@ -23,7 +23,7 @@ var searchData=
   ['premium_5fsubscription_5fcount_20',['premium_subscription_count',['../classdpp_1_1guild.html#acd884a98bc58d26d29a6a5d2e249f1c9',1,'dpp::guild']]],
   ['premium_5ftier_21',['premium_tier',['../classdpp_1_1guild.html#a164e4d1c99fcce1bed5a72d3bb5e493e',1,'dpp::guild']]],
   ['presence_5fupdate_22',['presence_update',['../classdpp_1_1dispatcher.html#a21e0bbce14f6aba7065eeb20dcf4ae8d',1,'dpp::dispatcher']]],
-  ['privacy_5flevel_23',['privacy_level',['../structdpp_1_1stage__instance__delete__t.html#a06af17bcc80db57d6941d52d3338a820',1,'dpp::stage_instance_delete_t::privacy_level()'],['../structdpp_1_1stage__instance__create__t.html#a2f17c637b97c2e7eb0af0d25f1c6545e',1,'dpp::stage_instance_create_t::privacy_level()']]],
+  ['privacy_5flevel_23',['privacy_level',['../structdpp_1_1stage__instance.html#ae198d6dba53766e0375c1705165ddca7',1,'dpp::stage_instance']]],
   ['protect_5fthe_5floot_24',['protect_the_loot',['../namespacedpp_1_1events.html#abb48b619aaa302ed2ab79d152146902e',1,'dpp::events']]],
   ['protocol_25',['protocol',['../classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7',1,'dpp::discord_client']]],
   ['provider_26',['provider',['../structdpp_1_1embed.html#a689c7c16c458de20b1998b532364be0d',1,'dpp::embed']]],

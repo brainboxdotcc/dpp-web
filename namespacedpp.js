@@ -114,8 +114,10 @@ var namespacedpp =
     [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
     [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
     [ "ssl_client", "classdpp_1_1ssl__client.html", "classdpp_1_1ssl__client" ],
+    [ "stage_instance", "structdpp_1_1stage__instance.html", "structdpp_1_1stage__instance" ],
     [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],
     [ "stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", "structdpp_1_1stage__instance__delete__t" ],
+    [ "stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", "structdpp_1_1stage__instance__update__t" ],
     [ "sticker", "structdpp_1_1sticker.html", "structdpp_1_1sticker" ],
     [ "sticker_pack", "structdpp_1_1sticker__pack.html", "structdpp_1_1sticker__pack" ],
     [ "thread_create_t", "structdpp_1_1thread__create__t.html", "structdpp_1_1thread__create__t" ],
@@ -154,7 +156,7 @@ var namespacedpp =
     [ "command_handler", "namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#aa9b8b2be70d0b0b5fdb8e9dddf3ece10", null ],
+    [ "confirmable_t", "namespacedpp.html#a927bdab169583369b18fe3335dacbea3", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
     [ "guild_map", "namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7", null ],
@@ -577,6 +579,10 @@ var namespacedpp =
       [ "ctxm_user", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659", null ],
       [ "ctxm_message", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a", null ]
     ] ],
+    [ "stage_privacy_level", "namespacedpp.html#a29954c9dfc5a906346177226d036a418", [
+      [ "sp_public", "namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed", null ],
+      [ "sp_guild_only", "namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d", null ]
+    ] ],
     [ "sticker_format", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2", [
       [ "sf_png", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484", null ],
       [ "sf_apng", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2", null ],
@@ -689,6 +695,7 @@ var namespacedpp =
     [ "to_json", "namespacedpp.html#a752b7140de023c34db60c92363aacf3f", null ],
     [ "to_json", "namespacedpp.html#a735482218b54177427bc882605fa1e4a", null ],
     [ "to_json", "namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2", null ],
+    [ "to_json", "namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3", null ],
     [ "tokenize", "namespacedpp.html#a981df68922716d97ba921fd2027c3513", null ],
     [ "url_encode", "namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4", null ],
     [ "audit_reason", "namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98", null ],

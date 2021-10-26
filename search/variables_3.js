@@ -7,7 +7,7 @@ var searchData=
   ['default_5fmessage_5fnotifications_4',['default_message_notifications',['../classdpp_1_1guild.html#a304278e17a5d18d322a91cd6e2843a7f',1,'dpp::guild']]],
   ['default_5fpermission_5',['default_permission',['../classdpp_1_1slashcommand.html#a464b5758679dd76d9603cea18540021b',1,'dpp::slashcommand']]],
   ['delete_5fmember_5fdays_6',['delete_member_days',['../structdpp_1_1audit__extra.html#aae4e14638f648029aad67dbbab0300f1',1,'dpp::audit_extra']]],
-  ['deleted_7',['deleted',['../structdpp_1_1guild__role__delete__t.html#a2ea6c85d5db71c5710a04339978b7db4',1,'dpp::guild_role_delete_t::deleted()'],['../structdpp_1_1thread__delete__t.html#a1bf5a7dc3ee2fbdc07b49493a347eb0f',1,'dpp::thread_delete_t::deleted()'],['../structdpp_1_1message__delete__bulk__t.html#a34eaf5cc7e14267633070399ece6c235',1,'dpp::message_delete_bulk_t::deleted()'],['../structdpp_1_1message__delete__t.html#a9bbdf2268285285714ef5635d1ef4c04',1,'dpp::message_delete_t::deleted()'],['../structdpp_1_1channel__delete__t.html#acfca1fcfe565e94a626d7b4a9cab1714',1,'dpp::channel_delete_t::deleted()'],['../structdpp_1_1guild__delete__t.html#a9067e4a557c9e1f2f50997b4762e9dc1',1,'dpp::guild_delete_t::deleted()']]],
+  ['deleted_7',['deleted',['../structdpp_1_1message__delete__bulk__t.html#a34eaf5cc7e14267633070399ece6c235',1,'dpp::message_delete_bulk_t::deleted()'],['../structdpp_1_1thread__delete__t.html#a1bf5a7dc3ee2fbdc07b49493a347eb0f',1,'dpp::thread_delete_t::deleted()'],['../structdpp_1_1guild__role__delete__t.html#a2ea6c85d5db71c5710a04339978b7db4',1,'dpp::guild_role_delete_t::deleted()'],['../structdpp_1_1message__delete__t.html#a9bbdf2268285285714ef5635d1ef4c04',1,'dpp::message_delete_t::deleted()'],['../structdpp_1_1channel__delete__t.html#acfca1fcfe565e94a626d7b4a9cab1714',1,'dpp::channel_delete_t::deleted()'],['../structdpp_1_1guild__delete__t.html#a9067e4a557c9e1f2f50997b4762e9dc1',1,'dpp::guild_delete_t::deleted()'],['../structdpp_1_1stage__instance__delete__t.html#aafbbb340b715691333b305555e06fb54',1,'dpp::stage_instance_delete_t::deleted()']]],
   ['deleted_5fintegration_8',['deleted_integration',['../structdpp_1_1integration__delete__t.html#a1a29b8f92d060f66b09d0b8e2a4afed2',1,'dpp::integration_delete_t']]],
   ['deleted_5finvite_9',['deleted_invite',['../structdpp_1_1invite__delete__t.html#a47871a82a55c589964aeca15393fbe79',1,'dpp::invite_delete_t']]],
   ['deleting_5fchannel_10',['deleting_channel',['../structdpp_1_1message__delete__bulk__t.html#a26ba3d82ef9ea2a0b5f4cc6c7332f0df',1,'dpp::message_delete_bulk_t']]],
@@ -20,8 +20,9 @@ var searchData=
   ['df_17',['df',['../uniondpp_1_1type__punner.html#a3e84c246810f34612b65b60ab78edd61',1,'dpp::type_punner']]],
   ['disabled_18',['disabled',['../classdpp_1_1component.html#ad364b789494d7888666173079bdb48ad',1,'dpp::component']]],
   ['discord_5fhost_19',['DISCORD_HOST',['../namespacedpp.html#a27df95e52167e3d7020ee6ad7958eaa8',1,'dpp']]],
-  ['discovery_5fsplash_20',['discovery_splash',['../classdpp_1_1guild.html#a368ba3a6ae2e752a3f702dcba5eb5ce0',1,'dpp::guild']]],
-  ['discriminator_21',['discriminator',['../classdpp_1_1user.html#afe658cc2d4adcf83a76f798dead3e5e6',1,'dpp::user']]],
-  ['dispatch_22',['dispatch',['../classdpp_1_1cluster.html#ad7dfd048a845235dda924b989c1383f3',1,'dpp::cluster']]],
-  ['duration_23',['duration',['../structdpp_1_1voice__out__packet.html#ac6d63ea4575aadec0fff0d966c2c3191',1,'dpp::voice_out_packet']]]
+  ['discoverable_5fdisabled_20',['discoverable_disabled',['../structdpp_1_1stage__instance.html#aae76dc45493e1430bfdd6473d773de1f',1,'dpp::stage_instance']]],
+  ['discovery_5fsplash_21',['discovery_splash',['../classdpp_1_1guild.html#a368ba3a6ae2e752a3f702dcba5eb5ce0',1,'dpp::guild']]],
+  ['discriminator_22',['discriminator',['../classdpp_1_1user.html#afe658cc2d4adcf83a76f798dead3e5e6',1,'dpp::user']]],
+  ['dispatch_23',['dispatch',['../classdpp_1_1cluster.html#ad7dfd048a845235dda924b989c1383f3',1,'dpp::cluster']]],
+  ['duration_24',['duration',['../structdpp_1_1voice__out__packet.html#ac6d63ea4575aadec0fff0d966c2c3191',1,'dpp::voice_out_packet']]]
 ];

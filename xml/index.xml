@@ -170,6 +170,9 @@
     <member refid="classdpp_1_1channel_1a1b6b7a32e44eec70466a98b31252aa54" kind="function"><name>is_category</name></member>
     <member refid="classdpp_1_1channel_1a9fb22156c167cb2c334ec3388502fdff" kind="function"><name>is_news_channel</name></member>
     <member refid="classdpp_1_1channel_1a04256bb3015b9fa150d56a8025a6e1d0" kind="function"><name>is_store_channel</name></member>
+    <member refid="classdpp_1_1channel_1a82ca1deaef0f898883830a3ae3be9fbc" kind="function"><name>is_news_thread</name></member>
+    <member refid="classdpp_1_1channel_1af9fef5595fa8c91adc102bde9b854b04" kind="function"><name>is_public_thread</name></member>
+    <member refid="classdpp_1_1channel_1a441356251e7c4fc246727423d19b3350" kind="function"><name>is_private_thread</name></member>
     <member refid="classdpp_1_1channel_1ae95ae73f17ff4badd2001bcc07940709" kind="function"><name>is_stage_channel</name></member>
   </compound>
   <compound refid="classdpp_1_1events_1_1channel__create" kind="class"><name>dpp::events::channel_create</name>
@@ -387,6 +390,7 @@
     <member refid="classdpp_1_1cluster_1aaac5fbafa18f2634e450e78979660365" kind="function"><name>on_voice_receive</name></member>
     <member refid="classdpp_1_1cluster_1a588cb9aff5b15b9f54cc2818a5482994" kind="function"><name>on_voice_track_marker</name></member>
     <member refid="classdpp_1_1cluster_1aa606c528c83756715ab608dd9ddba3e4" kind="function"><name>on_stage_instance_create</name></member>
+    <member refid="classdpp_1_1cluster_1a48905d60b7f52386e061fdd850bf29e8" kind="function"><name>on_stage_instance_update</name></member>
     <member refid="classdpp_1_1cluster_1aa71427dc52a2edbd2ec497a4810e38c9" kind="function"><name>on_stage_instance_delete</name></member>
     <member refid="classdpp_1_1cluster_1a62b83ee3be02df68eb5e697ddc5efc0a" kind="function"><name>post_rest</name></member>
     <member refid="classdpp_1_1cluster_1a156fe68358c421111e690f553c4e4f52" kind="function"><name>request</name></member>
@@ -528,6 +532,10 @@
     <member refid="classdpp_1_1cluster_1ac7a2d335385b4689e7489d0eaf4475fe" kind="function"><name>guild_sticker_get</name></member>
     <member refid="classdpp_1_1cluster_1adccd1468d3f031c5bc786fdbd087d0a2" kind="function"><name>guild_stickers_get</name></member>
     <member refid="classdpp_1_1cluster_1ae64421a4b2402238feb0536639009c18" kind="function"><name>sticker_packs_get</name></member>
+    <member refid="classdpp_1_1cluster_1a5fe69055dc2ee16d08e693df11fec75a" kind="function"><name>stage_instance_create</name></member>
+    <member refid="classdpp_1_1cluster_1a1edd6ac5d8553b4823465bebadfaa9af" kind="function"><name>stage_instance_get</name></member>
+    <member refid="classdpp_1_1cluster_1af4e1b1edb3094c7d220a3a80323bbe17" kind="function"><name>stage_instance_edit</name></member>
+    <member refid="classdpp_1_1cluster_1a9f8c2ba02d51ad166f90300ab5b53ecb" kind="function"><name>stage_instance_delete</name></member>
     <member refid="classdpp_1_1cluster_1af6d45a29b3976f7b623d92e70ab9a1bc" kind="function"><name>get_voice_regions</name></member>
     <member refid="classdpp_1_1cluster_1a68f16d04f100a0159683cba96e8c0a6c" kind="function"><name>get_gateway_bot</name></member>
   </compound>
@@ -899,6 +907,7 @@
     <member refid="classdpp_1_1dispatcher_1ab604386c5676c63901dff045a46b4aae" kind="variable"><name>voice_track_marker</name></member>
     <member refid="classdpp_1_1dispatcher_1a9e95a46331f7dadc12210bee432a49e6" kind="variable"><name>guild_join_request_delete</name></member>
     <member refid="classdpp_1_1dispatcher_1aa405a83fbbbd434010b838b443d61897" kind="variable"><name>stage_instance_create</name></member>
+    <member refid="classdpp_1_1dispatcher_1a7f08bc02a16493e03e7fc3bed3526a0e" kind="variable"><name>stage_instance_update</name></member>
     <member refid="classdpp_1_1dispatcher_1a83540a056df758f8e9847c1bc8d9ba06" kind="variable"><name>stage_instance_delete</name></member>
     <member refid="classdpp_1_1dispatcher_1a9bd685c0f0e60a75d65a231d1e4193cd" kind="variable"><name>stickers_update</name></member>
   </compound>
@@ -2014,15 +2023,23 @@
     <member refid="classdpp_1_1ssl__client_1af20b792a7590e0b9457dec6cdb52568a" kind="function"><name>close</name></member>
     <member refid="classdpp_1_1ssl__client_1a6037b1a66cf83e022655bd47f0df61a5" kind="function"><name>log</name></member>
   </compound>
+  <compound refid="structdpp_1_1stage__instance" kind="struct"><name>dpp::stage_instance</name>
+    <member refid="structdpp_1_1stage__instance_1ad12ef15d7e00007b1c38cee84603cb19" kind="variable"><name>id</name></member>
+    <member refid="structdpp_1_1stage__instance_1ac78c5c60945f082d1b42ba3c81b43217" kind="variable"><name>guild_id</name></member>
+    <member refid="structdpp_1_1stage__instance_1a21bda7ddd059504607abca421e747c94" kind="variable"><name>channel_id</name></member>
+    <member refid="structdpp_1_1stage__instance_1ae373539ed2656ca14f306cb00465158a" kind="variable"><name>topic</name></member>
+    <member refid="structdpp_1_1stage__instance_1ae198d6dba53766e0375c1705165ddca7" kind="variable"><name>privacy_level</name></member>
+    <member refid="structdpp_1_1stage__instance_1aae76dc45493e1430bfdd6473d773de1f" kind="variable"><name>discoverable_disabled</name></member>
+    <member refid="structdpp_1_1stage__instance_1a5ef48a926a1e604a0bcf8f53d27521c3" kind="function"><name>stage_instance</name></member>
+    <member refid="structdpp_1_1stage__instance_1a88af3a5f8cead59a98c9ae7a695695a7" kind="function"><name>~stage_instance</name></member>
+    <member refid="structdpp_1_1stage__instance_1aa0f2f5070d37d060856eeb78ee06254b" kind="function"><name>fill_from_json</name></member>
+    <member refid="structdpp_1_1stage__instance_1a6508584b765bd8df29575325973f9bf5" kind="function"><name>build_json</name></member>
+  </compound>
   <compound refid="classdpp_1_1events_1_1stage__instance__create" kind="class"><name>dpp::events::stage_instance_create</name>
     <member refid="classdpp_1_1events_1_1stage__instance__create_1a48650031a83d11f1f62de9e979f97b8e" kind="function"><name>handle</name></member>
   </compound>
   <compound refid="structdpp_1_1stage__instance__create__t" kind="struct"><name>dpp::stage_instance_create_t</name>
-    <member refid="structdpp_1_1stage__instance__create__t_1ad79981650d838c2654bcd727a4bf5131" kind="variable"><name>id</name></member>
-    <member refid="structdpp_1_1stage__instance__create__t_1ad6cfced8e7b6aa54586748625dfb2e43" kind="variable"><name>channel_id</name></member>
-    <member refid="structdpp_1_1stage__instance__create__t_1a32754597d464b1cdecf9b4f70ddb3fca" kind="variable"><name>guild_id</name></member>
-    <member refid="structdpp_1_1stage__instance__create__t_1a2f17c637b97c2e7eb0af0d25f1c6545e" kind="variable"><name>privacy_level</name></member>
-    <member refid="structdpp_1_1stage__instance__create__t_1a6193ead57024e23762718f04abbe4cab" kind="variable"><name>topic</name></member>
+    <member refid="structdpp_1_1stage__instance__create__t_1a11d50c4d4bdc7e078e095ec598684014" kind="variable"><name>created</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1stage__instance__create__t_1ab1c85a535ca71b29978703fa68952227" kind="function"><name>stage_instance_create_t</name></member>
@@ -2031,14 +2048,19 @@
     <member refid="classdpp_1_1events_1_1stage__instance__delete_1aec50d425bdd145e1a9b91d2d8522914c" kind="function"><name>handle</name></member>
   </compound>
   <compound refid="structdpp_1_1stage__instance__delete__t" kind="struct"><name>dpp::stage_instance_delete_t</name>
-    <member refid="structdpp_1_1stage__instance__delete__t_1ac9b9b8d50d30ec1c70bcafc596830fb9" kind="variable"><name>id</name></member>
-    <member refid="structdpp_1_1stage__instance__delete__t_1a8ff28d0bbd8dba9dd589ee946c533856" kind="variable"><name>channel_id</name></member>
-    <member refid="structdpp_1_1stage__instance__delete__t_1a3ea1829ddff52ddf684d989fb932e00e" kind="variable"><name>guild_id</name></member>
-    <member refid="structdpp_1_1stage__instance__delete__t_1a06af17bcc80db57d6941d52d3338a820" kind="variable"><name>privacy_level</name></member>
-    <member refid="structdpp_1_1stage__instance__delete__t_1a686464b6183804c70137ea9f66812c55" kind="variable"><name>topic</name></member>
+    <member refid="structdpp_1_1stage__instance__delete__t_1aafbbb340b715691333b305555e06fb54" kind="variable"><name>deleted</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1stage__instance__delete__t_1ad9815ab643039f8346df3c6bb97ddc20" kind="function"><name>stage_instance_delete_t</name></member>
+  </compound>
+  <compound refid="classdpp_1_1events_1_1stage__instance__update" kind="class"><name>dpp::events::stage_instance_update</name>
+    <member refid="classdpp_1_1events_1_1stage__instance__update_1a03dbbf61f9783feb7f892def39762761" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="structdpp_1_1stage__instance__update__t" kind="struct"><name>dpp::stage_instance_update_t</name>
+    <member refid="structdpp_1_1stage__instance__update__t_1a90724de0f7627c42e5c402894f1c80dd" kind="variable"><name>updated</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
+    <member refid="structdpp_1_1stage__instance__update__t_1a2bc8c9b078e8739f12a2390ce57f6a66" kind="function"><name>stage_instance_update_t</name></member>
   </compound>
   <compound refid="structdpp_1_1sticker" kind="struct"><name>dpp::sticker</name>
     <member refid="structdpp_1_1sticker_1a91b7994e82fdc7071d080097ec38136d" kind="variable"><name>id</name></member>
@@ -2138,6 +2160,7 @@
     <member refid="structdpp_1_1thread__metadata_1a6d25e9f26dabba02352d6a9aaacb7743" kind="variable"><name>archive_timestamp</name></member>
     <member refid="structdpp_1_1thread__metadata_1af45bbe4a17648d3becaa0aab698f3fb9" kind="variable"><name>auto_archive_duration</name></member>
     <member refid="structdpp_1_1thread__metadata_1add58e423f075a5167a4784dcf8b0aad4" kind="variable"><name>locked</name></member>
+    <member refid="structdpp_1_1thread__metadata_1abe6e0ca85770822ee98384dec757ec64" kind="variable"><name>invitable</name></member>
   </compound>
   <compound refid="classdpp_1_1events_1_1thread__update" kind="class"><name>dpp::events::thread_update</name>
     <member refid="classdpp_1_1events_1_1thread__update_1aba954310cadc1eacbaca2978e9dac2bb" kind="function"><name>handle</name></member>
@@ -2824,6 +2847,9 @@
     <member refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a" kind="enumvalue"><name>ctxm_chat_input</name></member>
     <member refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659" kind="enumvalue"><name>ctxm_user</name></member>
     <member refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a" kind="enumvalue"><name>ctxm_message</name></member>
+    <member refid="namespacedpp_1a29954c9dfc5a906346177226d036a418" kind="enum"><name>stage_privacy_level</name></member>
+    <member refid="namespacedpp_1a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed" kind="enumvalue"><name>sp_public</name></member>
+    <member refid="namespacedpp_1a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d" kind="enumvalue"><name>sp_guild_only</name></member>
     <member refid="namespacedpp_1ace1318b24526febab72157cdd8b7b468" kind="enum"><name>user_flags</name></member>
     <member refid="namespacedpp_1ace1318b24526febab72157cdd8b7b468a08571594b32cf14501db06b9a39c0d2b" kind="enumvalue"><name>u_bot</name></member>
     <member refid="namespacedpp_1ace1318b24526febab72157cdd8b7b468ab798237a2b87e22960a9928fede47221" kind="enumvalue"><name>u_system</name></member>
@@ -2880,7 +2906,7 @@
     <member refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kind="typedef"><name>thread_member_map</name></member>
     <member refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kind="typedef"><name>channel_map</name></member>
     <member refid="namespacedpp_1a13c4d4e6238396245b349e6a637897e0" kind="typedef"><name>shard_list</name></member>
-    <member refid="namespacedpp_1aa9b8b2be70d0b0b5fdb8e9dddf3ece10" kind="typedef"><name>confirmable_t</name></member>
+    <member refid="namespacedpp_1a927bdab169583369b18fe3335dacbea3" kind="typedef"><name>confirmable_t</name></member>
     <member refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kind="typedef"><name>command_completion_event_t</name></member>
     <member refid="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" kind="typedef"><name>json_encode_t</name></member>
     <member refid="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" kind="typedef"><name>command_parameter</name></member>
@@ -2946,6 +2972,7 @@
     <member refid="namespacedpp_1a595cb5fb51cb3bca106454502f654e03" kind="function"><name>find_emoji</name></member>
     <member refid="namespacedpp_1af7bf80aac0473a20777487bfd99cd1f5" kind="function"><name>get_emoji_cache</name></member>
     <member refid="namespacedpp_1a1728693a6b7bc12f1bb05e113e5c0428" kind="function"><name>get_emoji_count</name></member>
+    <member refid="namespacedpp_1a77d77e1ffffe22979d93132a7acee1d3" kind="function"><name>to_json</name></member>
     <member refid="namespacedpp_1a82aba4478fa9f6b684d209af7a9eb754" kind="function"><name>SnowflakeNotNull</name></member>
     <member refid="namespacedpp_1a1216561cf2609de845f0085c6ba9c06c" kind="function"><name>SetSnowflakeNotNull</name></member>
     <member refid="namespacedpp_1acd67ddd4f95dbdac48f554ddcbbeb0b1" kind="function"><name>StringNotNull</name></member>
@@ -3170,6 +3197,8 @@
   </compound>
   <compound refid="sslclient_8h" kind="file"><name>sslclient.h</name>
   </compound>
+  <compound refid="stage__instance_8h" kind="file"><name>stage_instance.h</name>
+  </compound>
   <compound refid="stringops_8h" kind="file"><name>stringops.h</name>
     <member refid="stringops_8h_1af2ab78d76b1e2c8915900e877c0eb49c" kind="function"><name>lowercase</name></member>
     <member refid="stringops_8h_1aaa4acc4ff4e08ab5cf379ed6351dcf53" kind="function"><name>uppercase</name></member>
@@ -3226,7 +3255,7 @@
   </compound>
   <compound refid="cluster_8cpp" kind="file"><name>cluster.cpp</name>
   </compound>
-  <compound refid="command_8cpp" kind="file"><name>command.cpp</name>
+  <compound refid="appcommand_8cpp" kind="file"><name>appcommand.cpp</name>
   </compound>
   <compound refid="confirmation_8cpp" kind="file"><name>confirmation.cpp</name>
   </compound>
@@ -3399,6 +3428,9 @@
   <compound refid="stage__instance__delete_8cpp" kind="file"><name>stage_instance_delete.cpp</name>
     <member refid="stage__instance__delete_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
   </compound>
+  <compound refid="stage__instance__update_8cpp" kind="file"><name>stage_instance_update.cpp</name>
+    <member refid="stage__instance__update_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+  </compound>
   <compound refid="thread__create_8cpp" kind="file"><name>thread_create.cpp</name>
     <member refid="thread__create_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
   </compound>
@@ -3473,6 +3505,10 @@
     <member refid="sslclient_8cpp_1a30e9ccbb9ca0cc93137190a034ba4603" kind="define"><name>SAFE_FD_SET</name></member>
     <member refid="sslclient_8cpp_1acbd2b2c5a09a8925ec522307201782ff" kind="define"><name>SAFE_FD_ISSET</name></member>
     <member refid="sslclient_8cpp_1a7c8b4f4783cbb6f976128e8bcc1217c4" kind="define"><name>BUFSIZZ</name></member>
+  </compound>
+  <compound refid="cluster_2stage__instance_8cpp" kind="file"><name>cluster/stage_instance.cpp</name>
+  </compound>
+  <compound refid="stage__instance_8cpp" kind="file"><name>stage_instance.cpp</name>
   </compound>
   <compound refid="cluster_2user_8cpp" kind="file"><name>cluster/user.cpp</name>
   </compound>

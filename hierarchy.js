@@ -83,6 +83,7 @@ var hierarchy =
       [ "dpp::events::resumed", "classdpp_1_1events_1_1resumed.html", null ],
       [ "dpp::events::stage_instance_create", "classdpp_1_1events_1_1stage__instance__create.html", null ],
       [ "dpp::events::stage_instance_delete", "classdpp_1_1events_1_1stage__instance__delete.html", null ],
+      [ "dpp::events::stage_instance_update", "classdpp_1_1events_1_1stage__instance__update.html", null ],
       [ "dpp::events::thread_create", "classdpp_1_1events_1_1thread__create.html", null ],
       [ "dpp::events::thread_delete", "classdpp_1_1events_1_1thread__delete.html", null ],
       [ "dpp::events::thread_list_sync", "classdpp_1_1events_1_1thread__list__sync.html", null ],
@@ -142,6 +143,7 @@ var hierarchy =
       [ "dpp::resumed_t", "structdpp_1_1resumed__t.html", null ],
       [ "dpp::stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", null ],
       [ "dpp::stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", null ],
+      [ "dpp::stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", null ],
       [ "dpp::thread_create_t", "structdpp_1_1thread__create__t.html", null ],
       [ "dpp::thread_delete_t", "structdpp_1_1thread__delete__t.html", null ],
       [ "dpp::thread_list_sync_t", "structdpp_1_1thread__list__sync__t.html", null ],
@@ -215,6 +217,7 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
+    [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
     [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
