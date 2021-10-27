@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"structdpp_1_1guild__delete__t.html#af8c8addd685e8c939cce01f8deaf1c6d":[6,0,1,58,0],
+"structdpp_1_1guild__emojis__update__t.html":[7,0,1,59],
 "structdpp_1_1guild__emojis__update__t.html":[6,0,1,59],
 "structdpp_1_1guild__emojis__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[7,0,1,59,3],
 "structdpp_1_1guild__emojis__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,1,59,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "structdpp_1_1interaction__response.html#afa292ebb598e2ecbb1d8eb089f415493":[6,0,1,82,5],
 "structdpp_1_1invite__create__t.html":[6,0,1,84],
 "structdpp_1_1invite__create__t.html":[7,0,1,84],
-"structdpp_1_1invite__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,1,84,3],
-"structdpp_1_1invite__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[7,0,1,84,3],
-"structdpp_1_1invite__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,1,84,2]
+"structdpp_1_1invite__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[6,0,1,84,3]
 };
