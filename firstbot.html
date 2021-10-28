@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:305</div></div>
+<div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:316</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md36"></a>
 4. Attach to another event to reveice messages</h2>
 <p >If you want to receive messages, you should also attach your program to the <code>on_message_create</code> event (<a class="el" href="classdpp_1_1cluster.html#a29140a7c0e1250fe2016dbe4ced56f95" title="Called when a new message arrives from discord. Note that D++ does not cache messages....">dpp::cluster::on_message_create</a>) which is the same as the Discord.js <code>message</code> event. You add this to your program after the <code>on_ready</code> event:</p>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:683</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:694</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md37"></a>
 5 . Add some content to the events</h2>
 <p >Attaching to an event is a good start, but to make a bot you should actually put some program code into the events. We will add some code to the <code>on_ready</code> event to output the bot's nickname (<a class="el" href="classdpp_1_1cluster.html#ad31317a40181f6864646c8758871b495" title="The details of the bot user. This is assumed to be identical across all shards in the cluster....">dpp::cluster::me</a>) and some code into the <code>on_message_create</code> to look for messages that are the text <code>!ping</code> and reply with <code>!pong</code>:</p>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">    bot.start(<span class="keyword">false</span>);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html_a93c10b3fce36e161eca41edcd32857d0"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">dpp::message_create_t::msg</a></div><div class="ttdeci">message * msg</div><div class="ttdef"><b>Definition:</b> dispatcher.h:689</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html_a93c10b3fce36e161eca41edcd32857d0"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">dpp::message_create_t::msg</a></div><div class="ttdeci">message * msg</div><div class="ttdef"><b>Definition:</b> dispatcher.h:700</div></div>
 <div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> message.h:854</div></div>
 </div><!-- fragment --><p >Let's break down the code in the <code>on_message_create</code> event so that we can discuss what it is doing:</p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!ping&quot;</span>) {</div>
