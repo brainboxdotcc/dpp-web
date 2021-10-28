@@ -89,6 +89,20 @@
     <member refid="classdpp_1_1auditlog_1adcd0ccdef0c8027acab54e19ffd971c4" kind="function"><name>~auditlog</name></member>
     <member refid="classdpp_1_1auditlog_1aef1a68fb697621c4292f801725e4475f" kind="function"><name>fill_from_json</name></member>
   </compound>
+  <compound refid="structdpp_1_1autocomplete__interaction" kind="struct"><name>dpp::autocomplete_interaction</name>
+  </compound>
+  <compound refid="structdpp_1_1autocomplete__t" kind="struct"><name>dpp::autocomplete_t</name>
+    <member refid="structdpp_1_1autocomplete__t_1a2ccc278a70570af25f9fa7b245a120b9" kind="function"><name>autocomplete_t</name></member>
+    <member refid="structdpp_1_1autocomplete__t_1a9e46b59ec205a971235573c73d8437d3" kind="function"><name>get_parameter</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a81a1b21aa504d87a1cc47869daff2c77" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a5d8b161419b6eba6fbe05da696ba76a1" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1ab2658732fd275f78e887435667d96d0c" kind="function"><name>get_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a0bfaf4c5d6a7de14ffeea0e4bf160ba6" kind="function"><name>edit_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a690fd3663ea3ffda8ad6d3238f3a7e79" kind="function"><name>edit_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kind="variable"><name>command</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
+  </compound>
   <compound refid="classdpp_1_1ban" kind="class"><name>dpp::ban</name>
     <member refid="classdpp_1_1ban_1af3f56d08933ee4007f442b11c6b75c01" kind="variable"><name>reason</name></member>
     <member refid="classdpp_1_1ban_1aa4bfab1d617a8e41fe5353c210f7b7ea" kind="variable"><name>user_id</name></member>
@@ -336,6 +350,7 @@
     <member refid="classdpp_1_1cluster_1a543b76d7b49f9473b0476dbfee627271" kind="function"><name>on_guild_join_request_delete</name></member>
     <member refid="classdpp_1_1cluster_1ab17aa65a6835eca5a95036d6bf6f736c" kind="function"><name>on_interaction_create</name></member>
     <member refid="classdpp_1_1cluster_1afb5b1009f3eacd98784cfb642c8e2858" kind="function"><name>on_button_click</name></member>
+    <member refid="classdpp_1_1cluster_1a852c07b9c34e60946122bfbeb5c2921b" kind="function"><name>on_autocomplete</name></member>
     <member refid="classdpp_1_1cluster_1a75cfef69413003d5bed51b986fd15787" kind="function"><name>on_select_click</name></member>
     <member refid="classdpp_1_1cluster_1a6cb092977902daa7f92e33f4fd05928d" kind="function"><name>on_guild_delete</name></member>
     <member refid="classdpp_1_1cluster_1a198205866e58980295bdf41d69fc91d1" kind="function"><name>on_channel_delete</name></member>
@@ -856,6 +871,7 @@
     <member refid="classdpp_1_1dispatcher_1a324baf0ce362a3501af414836bd317af" kind="variable"><name>voice_client_disconnect</name></member>
     <member refid="classdpp_1_1dispatcher_1a40072713dd30b8e37200d3ec91a1d1b2" kind="variable"><name>interaction_create</name></member>
     <member refid="classdpp_1_1dispatcher_1a95261b35417e81c65e9046eca9f0d57c" kind="variable"><name>button_click</name></member>
+    <member refid="classdpp_1_1dispatcher_1a846a4dc92b56f0dcc230e67f3771d0c3" kind="variable"><name>autocomplete</name></member>
     <member refid="classdpp_1_1dispatcher_1a071ef2f5586d7879dbb17d9b1757d38a" kind="variable"><name>select_click</name></member>
     <member refid="classdpp_1_1dispatcher_1a8403bfd35d479d62884057b5561ebb6a" kind="variable"><name>guild_delete</name></member>
     <member refid="classdpp_1_1dispatcher_1a941fe0c8a4f52c1bf82c34a5c38d86b2" kind="variable"><name>channel_delete</name></member>
@@ -1498,7 +1514,7 @@
   <compound refid="classdpp_1_1interaction" kind="class"><name>dpp::interaction</name>
     <member refid="classdpp_1_1interaction_1a2575444b8e918c947fb4ffc30c442201" kind="variable"><name>application_id</name></member>
     <member refid="classdpp_1_1interaction_1ae1df9ec5826bac923ee92e2037bf17cc" kind="variable"><name>type</name></member>
-    <member refid="classdpp_1_1interaction_1ac31d2411a96216b8e0f1549f4f87c99d" kind="variable"><name>data</name></member>
+    <member refid="classdpp_1_1interaction_1a04d74cfb07306fdf8bc540ee5a7e2f4e" kind="variable"><name>data</name></member>
     <member refid="classdpp_1_1interaction_1a6301d14a86e9b51b656ef589c2e39009" kind="variable"><name>guild_id</name></member>
     <member refid="classdpp_1_1interaction_1a8062f778758ef53d0ea4e40f62ff4015" kind="variable"><name>channel_id</name></member>
     <member refid="classdpp_1_1interaction_1a5101b493d82a15b9fa3aca68a6386e39" kind="variable"><name>message_id</name></member>
@@ -2840,6 +2856,7 @@
     <member refid="namespacedpp_1a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275" kind="enumvalue"><name>it_ping</name></member>
     <member refid="namespacedpp_1a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0" kind="enumvalue"><name>it_application_command</name></member>
     <member refid="namespacedpp_1a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1" kind="enumvalue"><name>it_component_button</name></member>
+    <member refid="namespacedpp_1a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4" kind="enumvalue"><name>it_autocomplete</name></member>
     <member refid="namespacedpp_1a63342923617f0829b64c53cd02fafd1b" kind="enum"><name>component_type_t</name></member>
     <member refid="namespacedpp_1a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e" kind="enumvalue"><name>cotype_button</name></member>
     <member refid="namespacedpp_1a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc" kind="enumvalue"><name>cotype_select</name></member>
@@ -3006,6 +3023,7 @@
     <member refid="namespacedpp_1ac2ac98206ba62a7ddba95355743a9e07" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1a1bfffa121ee7a78fe2c0e4d4a9a7fa17" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1aabc378142329f7d4fe1ac82c81027114" kind="function"><name>from_json</name></member>
+    <member refid="namespacedpp_1a965939ea98a0cc2a038250fc73bd6e10" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1a1d5a166cc8328a1d2728e9e451c966f5" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1a36d2c45cce93740da4da28ef18e90a52" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1a981df68922716d97ba921fd2027c3513" kind="function"><name>tokenize</name></member>

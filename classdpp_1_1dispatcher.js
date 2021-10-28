@@ -3,6 +3,7 @@ var classdpp_1_1dispatcher =
     [ "application_command_create", "classdpp_1_1dispatcher.html#abe9360d2e501ae40d513bf2a737758b8", null ],
     [ "application_command_delete", "classdpp_1_1dispatcher.html#adeda9731343cd06bd13b6aaf716082f3", null ],
     [ "application_command_update", "classdpp_1_1dispatcher.html#a1f4cdfa198a3aa8cbbbf3f6bd5ffd447", null ],
+    [ "autocomplete", "classdpp_1_1dispatcher.html#a846a4dc92b56f0dcc230e67f3771d0c3", null ],
     [ "button_click", "classdpp_1_1dispatcher.html#a95261b35417e81c65e9046eca9f0d57c", null ],
     [ "channel_create", "classdpp_1_1dispatcher.html#ac82562a94e2bca3629f6e0d7ad9868e2", null ],
     [ "channel_delete", "classdpp_1_1dispatcher.html#a941fe0c8a4f52c1bf82c34a5c38d86b2", null ],

@@ -78,6 +78,8 @@ var annotated_dup =
       [ "audit_entry", "structdpp_1_1audit__entry.html", "structdpp_1_1audit__entry" ],
       [ "audit_extra", "structdpp_1_1audit__extra.html", "structdpp_1_1audit__extra" ],
       [ "auditlog", "classdpp_1_1auditlog.html", "classdpp_1_1auditlog" ],
+      [ "autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
+      [ "autocomplete_t", "structdpp_1_1autocomplete__t.html", "structdpp_1_1autocomplete__t" ],
       [ "ban", "classdpp_1_1ban.html", "classdpp_1_1ban" ],
       [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
       [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],

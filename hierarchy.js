@@ -7,6 +7,7 @@ var hierarchy =
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
     [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ],
+    [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
     [ "dpp::ban", "classdpp_1_1ban.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache", "classdpp_1_1cache.html", null ],
@@ -124,6 +125,7 @@ var hierarchy =
       [ "dpp::integration_delete_t", "structdpp_1_1integration__delete__t.html", null ],
       [ "dpp::integration_update_t", "structdpp_1_1integration__update__t.html", null ],
       [ "dpp::interaction_create_t", "structdpp_1_1interaction__create__t.html", [
+        [ "dpp::autocomplete_t", "structdpp_1_1autocomplete__t.html", null ],
         [ "dpp::button_click_t", "structdpp_1_1button__click__t.html", null ],
         [ "dpp::select_click_t", "structdpp_1_1select__click__t.html", null ]
       ] ],

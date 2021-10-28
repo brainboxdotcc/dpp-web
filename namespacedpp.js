@@ -11,6 +11,8 @@ var namespacedpp =
     [ "audit_entry", "structdpp_1_1audit__entry.html", "structdpp_1_1audit__entry" ],
     [ "audit_extra", "structdpp_1_1audit__extra.html", "structdpp_1_1audit__extra" ],
     [ "auditlog", "classdpp_1_1auditlog.html", "classdpp_1_1auditlog" ],
+    [ "autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
+    [ "autocomplete_t", "structdpp_1_1autocomplete__t.html", "structdpp_1_1autocomplete__t" ],
     [ "ban", "classdpp_1_1ban.html", "classdpp_1_1ban" ],
     [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
     [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],
@@ -432,7 +434,8 @@ var namespacedpp =
     [ "interaction_type", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96", [
       [ "it_ping", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275", null ],
       [ "it_application_command", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0", null ],
-      [ "it_component_button", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1", null ]
+      [ "it_component_button", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1", null ],
+      [ "it_autocomplete", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4", null ]
     ] ],
     [ "loglevel", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2", [
       [ "ll_trace", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a", null ],
@@ -656,6 +659,7 @@ var namespacedpp =
     [ "find_guild", "namespacedpp.html#a3a13097fcd3f19b409e2a15b9fa56f90", null ],
     [ "find_role", "namespacedpp.html#ab1583937bb5eb90f8090a2e6b6b77839", null ],
     [ "find_user", "namespacedpp.html#a368cff415172099d1d3c90e11721b37e", null ],
+    [ "from_json", "namespacedpp.html#a965939ea98a0cc2a038250fc73bd6e10", null ],
     [ "from_json", "namespacedpp.html#ac2ac98206ba62a7ddba95355743a9e07", null ],
     [ "from_json", "namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17", null ],
     [ "from_json", "namespacedpp.html#aabc378142329f7d4fe1ac82c81027114", null ],

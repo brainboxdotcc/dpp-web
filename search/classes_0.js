@@ -12,5 +12,7 @@ var searchData=
   ['audit_5fchange_9',['audit_change',['../structdpp_1_1audit__change.html',1,'dpp']]],
   ['audit_5fentry_10',['audit_entry',['../structdpp_1_1audit__entry.html',1,'dpp']]],
   ['audit_5fextra_11',['audit_extra',['../structdpp_1_1audit__extra.html',1,'dpp']]],
-  ['auditlog_12',['auditlog',['../classdpp_1_1auditlog.html',1,'dpp']]]
+  ['auditlog_12',['auditlog',['../classdpp_1_1auditlog.html',1,'dpp']]],
+  ['autocomplete_5finteraction_13',['autocomplete_interaction',['../structdpp_1_1autocomplete__interaction.html',1,'dpp']]],
+  ['autocomplete_5ft_14',['autocomplete_t',['../structdpp_1_1autocomplete__t.html',1,'dpp']]]
 ];

@@ -3,6 +3,7 @@
   <compounddef id="structdpp_1_1interaction__create__t" kind="struct" language="C++" prot="public">
     <compoundname>dpp::interaction_create_t</compoundname>
     <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
+    <derivedcompoundref refid="structdpp_1_1autocomplete__t" prot="public" virt="non-virtual">dpp::autocomplete_t</derivedcompoundref>
     <derivedcompoundref refid="structdpp_1_1button__click__t" prot="public" virt="non-virtual">dpp::button_click_t</derivedcompoundref>
     <derivedcompoundref refid="structdpp_1_1select__click__t" prot="public" virt="non-virtual">dpp::select_click_t</derivedcompoundref>
     <includes local="no">dispatcher.h</includes>
@@ -87,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="122" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="99" bodyend="99"/>
+        <location file="include/dpp/dispatcher.h" line="122" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="106" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__create__t_1a81a1b21aa504d87a1cc47869daff2c77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -260,6 +261,7 @@
         <argsstring>(const std::string &amp;name) const</argsstring>
         <name>get_parameter</name>
         <reimplementedby refid="structdpp_1_1button__click__t_1af2c6ff89794c5d0e719b2742fcede3bc">get_parameter</reimplementedby>
+        <reimplementedby refid="structdpp_1_1autocomplete__t_1a9e46b59ec205a971235573c73d8437d3">get_parameter</reimplementedby>
         <reimplementedby refid="structdpp_1_1select__click__t_1a3b67abd4d7858b669e939de9c0bf06d7">get_parameter</reimplementedby>
         <param>
           <type>const std::string &amp;</type>
@@ -294,6 +296,12 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
+        <label>dpp::autocomplete_t</label>
+        <link refid="structdpp_1_1autocomplete__t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
         <label>dpp::button_click_t</label>
         <link refid="structdpp_1_1button__click__t"/>
         <childnode refid="1" relation="public-inheritance">
@@ -309,7 +317,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>dpp::select_click_t</label>
         <link refid="structdpp_1_1select__click__t"/>
         <childnode refid="1" relation="public-inheritance">
@@ -435,13 +443,13 @@
           <edgelabel>application_command_create</edgelabel>
           <edgelabel>application_command_delete</edgelabel>
           <edgelabel>application_command_update</edgelabel>
+          <edgelabel>autocomplete</edgelabel>
           <edgelabel>button_click</edgelabel>
           <edgelabel>channel_create</edgelabel>
           <edgelabel>channel_delete</edgelabel>
           <edgelabel>channel_pins_update</edgelabel>
           <edgelabel>channel_update</edgelabel>
           <edgelabel>guild_ban_add</edgelabel>
-          <edgelabel>guild_ban_remove</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
       </node>

@@ -15,5 +15,6 @@ var searchData=
   ['application_5fcommand_5fdelete_5ft_12',['application_command_delete_t',['../structdpp_1_1application__command__delete__t.html#ab63f70622d0adf539d38913ddad28dd3',1,'dpp::application_command_delete_t']]],
   ['application_5fcommand_5fupdate_5ft_13',['application_command_update_t',['../structdpp_1_1application__command__update__t.html#ab1b3a755a92dabe7f150ae66cb4b649c',1,'dpp::application_command_update_t']]],
   ['attachment_14',['attachment',['../structdpp_1_1attachment.html#ad10a254f41a718652557c7f6605f5ecd',1,'dpp::attachment::attachment()'],['../structdpp_1_1attachment.html#a296b4131050f58216a9291df6f900e54',1,'dpp::attachment::attachment(nlohmann::json *j)']]],
-  ['auditlog_15',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]]
+  ['auditlog_15',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]],
+  ['autocomplete_5ft_16',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]]
 ];
