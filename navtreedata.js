@@ -28,7 +28,6 @@ var NAVTREE =
     [ "D++ Developer Documentation", "index.html", "index" ],
     [ "Building D++", "md_docpages_02_build.html", "md_docpages_02_build" ],
     [ "Creating a Discord Bot", "md_docpages_02_building_a_bot.html", "md_docpages_02_building_a_bot" ],
-    [ "Creating a bot application", "creating-a-bot-application.html", null ],
     [ "Example Programs", "md_docpages_03_example_programs.html", "md_docpages_03_example_programs" ],
     [ "Advanced Reference", "md_docpages_04_advanced_reference.html", "md_docpages_04_advanced_reference" ],
     [ "Deprecated List", "deprecated.html", null ],
