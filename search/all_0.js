@@ -87,7 +87,7 @@ var searchData=
   ['at_5fgame_84',['at_game',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701',1,'dpp']]],
   ['at_5flistening_85',['at_listening',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6',1,'dpp']]],
   ['at_5fstreaming_86',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]],
-  ['attachment_87',['attachment',['../structdpp_1_1attachment.html#a296b4131050f58216a9291df6f900e54',1,'dpp::attachment::attachment(nlohmann::json *j)'],['../structdpp_1_1attachment.html#ad10a254f41a718652557c7f6605f5ecd',1,'dpp::attachment::attachment()'],['../structdpp_1_1attachment.html',1,'dpp::attachment']]],
+  ['attachment_87',['attachment',['../structdpp_1_1attachment.html#ad10a254f41a718652557c7f6605f5ecd',1,'dpp::attachment::attachment()'],['../structdpp_1_1attachment.html#a296b4131050f58216a9291df6f900e54',1,'dpp::attachment::attachment(nlohmann::json *j)'],['../structdpp_1_1attachment.html',1,'dpp::attachment']]],
   ['attachments_88',['attachments',['../structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7',1,'dpp::message']]],
   ['audio_89',['audio',['../structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413',1,'dpp::voice_receive_t']]],
   ['audio_5fsize_90',['audio_size',['../structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668',1,'dpp::voice_receive_t']]],
@@ -100,8 +100,9 @@ var searchData=
   ['author_97',['author',['../structdpp_1_1message.html#a35c14f04382266b29c4ca076b4e0f9e0',1,'dpp::message::author()'],['../structdpp_1_1embed.html#abe6263ce0132837017e0aca16c6e299d',1,'dpp::embed::author()']]],
   ['auto_5farchive_5fduration_98',['auto_archive_duration',['../structdpp_1_1thread__metadata.html#af45bbe4a17648d3becaa0aab698f3fb9',1,'dpp::thread_metadata']]],
   ['autocomplete_99',['autocomplete',['../classdpp_1_1dispatcher.html#a846a4dc92b56f0dcc230e67f3771d0c3',1,'dpp::dispatcher::autocomplete()'],['../structdpp_1_1command__option.html#a0363e8509ec6e91a4bd313c0a57ef71d',1,'dpp::command_option::autocomplete()']]],
-  ['autocomplete_5finteraction_100',['autocomplete_interaction',['../structdpp_1_1autocomplete__interaction.html',1,'dpp']]],
-  ['autocomplete_5ft_101',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t::autocomplete_t()'],['../structdpp_1_1autocomplete__t.html',1,'dpp::autocomplete_t']]],
-  ['available_102',['available',['../structdpp_1_1sticker.html#a2c42ec44209ccf454785b796250caa7f',1,'dpp::sticker']]],
-  ['avatar_103',['avatar',['../classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3',1,'dpp::user::avatar()'],['../classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110',1,'dpp::webhook::avatar()']]]
+  ['autocomplete_5fchoices_100',['autocomplete_choices',['../structdpp_1_1interaction__response.html#abb21d304dedf4a9bef3e221d115209e1',1,'dpp::interaction_response']]],
+  ['autocomplete_5finteraction_101',['autocomplete_interaction',['../structdpp_1_1autocomplete__interaction.html',1,'dpp']]],
+  ['autocomplete_5ft_102',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t::autocomplete_t()'],['../structdpp_1_1autocomplete__t.html',1,'dpp::autocomplete_t']]],
+  ['available_103',['available',['../structdpp_1_1sticker.html#a2c42ec44209ccf454785b796250caa7f',1,'dpp::sticker']]],
+  ['avatar_104',['avatar',['../classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3',1,'dpp::user::avatar()'],['../classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110',1,'dpp::webhook::avatar()']]]
 ];

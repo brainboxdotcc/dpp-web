@@ -92,6 +92,12 @@
   <compound refid="structdpp_1_1autocomplete__interaction" kind="struct"><name>dpp::autocomplete_interaction</name>
   </compound>
   <compound refid="structdpp_1_1autocomplete__t" kind="struct"><name>dpp::autocomplete_t</name>
+    <member refid="structdpp_1_1autocomplete__t_1a9a1be45450a5bd7699b6f5799850721c" kind="variable"><name>id</name></member>
+    <member refid="structdpp_1_1autocomplete__t_1a8c04822f347b7621987f0ba60f3b697a" kind="variable"><name>name</name></member>
+    <member refid="structdpp_1_1autocomplete__t_1a3611e80443a208bc2e6b7c466ed1679d" kind="variable"><name>options</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kind="variable"><name>command</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1autocomplete__t_1a2ccc278a70570af25f9fa7b245a120b9" kind="function"><name>autocomplete_t</name></member>
     <member refid="structdpp_1_1autocomplete__t_1a9e46b59ec205a971235573c73d8437d3" kind="function"><name>get_parameter</name></member>
     <member refid="structdpp_1_1interaction__create__t_1a81a1b21aa504d87a1cc47869daff2c77" kind="function"><name>reply</name></member>
@@ -99,9 +105,6 @@
     <member refid="structdpp_1_1interaction__create__t_1ab2658732fd275f78e887435667d96d0c" kind="function"><name>get_original_response</name></member>
     <member refid="structdpp_1_1interaction__create__t_1a0bfaf4c5d6a7de14ffeea0e4bf160ba6" kind="function"><name>edit_response</name></member>
     <member refid="structdpp_1_1interaction__create__t_1a690fd3663ea3ffda8ad6d3238f3a7e79" kind="function"><name>edit_response</name></member>
-    <member refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kind="variable"><name>command</name></member>
-    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
-    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
   </compound>
   <compound refid="classdpp_1_1ban" kind="class"><name>dpp::ban</name>
     <member refid="classdpp_1_1ban_1af3f56d08933ee4007f442b11c6b75c01" kind="variable"><name>reason</name></member>
@@ -578,6 +581,8 @@
     <member refid="structdpp_1_1command__option_1ac2d487bd055fecbe1c566742def38bb7" kind="variable"><name>name</name></member>
     <member refid="structdpp_1_1command__option_1a82debcf96e4265cf7d8ea6b2aa47e481" kind="variable"><name>description</name></member>
     <member refid="structdpp_1_1command__option_1ad203ab30a75ce7508f565f5821301bdb" kind="variable"><name>required</name></member>
+    <member refid="structdpp_1_1command__option_1ac06b240c8c64a12178564ee97aa231cc" kind="variable"><name>focused</name></member>
+    <member refid="structdpp_1_1command__option_1a82d0b0d7177e846cc441cfb3c77903fc" kind="variable"><name>value</name></member>
     <member refid="structdpp_1_1command__option_1a05f44f181203ed332696b789c4ef7c6f" kind="variable"><name>choices</name></member>
     <member refid="structdpp_1_1command__option_1a0363e8509ec6e91a4bd313c0a57ef71d" kind="variable"><name>autocomplete</name></member>
     <member refid="structdpp_1_1command__option_1a0f238f1e8bb393b2c37b47c6fb564952" kind="variable"><name>options</name></member>
@@ -1545,6 +1550,7 @@
   <compound refid="structdpp_1_1interaction__response" kind="struct"><name>dpp::interaction_response</name>
     <member refid="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" kind="variable"><name>type</name></member>
     <member refid="structdpp_1_1interaction__response_1afa292ebb598e2ecbb1d8eb089f415493" kind="variable"><name>msg</name></member>
+    <member refid="structdpp_1_1interaction__response_1abb21d304dedf4a9bef3e221d115209e1" kind="variable"><name>autocomplete_choices</name></member>
     <member refid="structdpp_1_1interaction__response_1a074094acbb739670f92520011cdcff09" kind="function"><name>interaction_response</name></member>
     <member refid="structdpp_1_1interaction__response_1a50e33b74f32d9e100db207c1ae5f3b9c" kind="function"><name>interaction_response</name></member>
     <member refid="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" kind="function"><name>fill_from_json</name></member>
@@ -2852,6 +2858,7 @@
     <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294" kind="enumvalue"><name>ir_deferred_channel_message_with_source</name></member>
     <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312" kind="enumvalue"><name>ir_deferred_update_message</name></member>
     <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847" kind="enumvalue"><name>ir_update_message</name></member>
+    <member refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02a78d890228291650cd463e3fd43b1c075" kind="enumvalue"><name>ir_autocomplete_reply</name></member>
     <member refid="namespacedpp_1a53805450964cf3ad4a26f673aebebd96" kind="enum"><name>interaction_type</name></member>
     <member refid="namespacedpp_1a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275" kind="enumvalue"><name>it_ping</name></member>
     <member refid="namespacedpp_1a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0" kind="enumvalue"><name>it_application_command</name></member>

@@ -10,8 +10,10 @@ var structdpp_1_1command__option =
     [ "channel_types", "structdpp_1_1command__option.html#a447f1eea2df77fd55ba9a122a80c3ccf", null ],
     [ "choices", "structdpp_1_1command__option.html#a05f44f181203ed332696b789c4ef7c6f", null ],
     [ "description", "structdpp_1_1command__option.html#a82debcf96e4265cf7d8ea6b2aa47e481", null ],
+    [ "focused", "structdpp_1_1command__option.html#ac06b240c8c64a12178564ee97aa231cc", null ],
     [ "name", "structdpp_1_1command__option.html#ac2d487bd055fecbe1c566742def38bb7", null ],
     [ "options", "structdpp_1_1command__option.html#a0f238f1e8bb393b2c37b47c6fb564952", null ],
     [ "required", "structdpp_1_1command__option.html#ad203ab30a75ce7508f565f5821301bdb", null ],
-    [ "type", "structdpp_1_1command__option.html#adbb960edfa14ae19545d64397a785ab3", null ]
+    [ "type", "structdpp_1_1command__option.html#adbb960edfa14ae19545d64397a785ab3", null ],
+    [ "value", "structdpp_1_1command__option.html#a82d0b0d7177e846cc441cfb3c77903fc", null ]
 ];

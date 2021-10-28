@@ -4,6 +4,88 @@
     <compoundname>dpp::autocomplete_t</compoundname>
     <basecompoundref refid="structdpp_1_1interaction__create__t" prot="public" virt="non-virtual">dpp::interaction_create_t</basecompoundref>
     <includes local="no">dispatcher.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1autocomplete__t_1a9a1be45450a5bd7699b6f5799850721c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
+        <definition>dpp::snowflake dpp::autocomplete_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="216" column="16" bodyfile="include/dpp/dispatcher.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1autocomplete__t_1a8c04822f347b7621987f0ba60f3b697a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::autocomplete_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="217" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1autocomplete__t_1a3611e80443a208bc2e6b7c466ed1679d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1command__option" kindref="compound">dpp::command_option</ref> &gt;</type>
+        <definition>std::vector&lt;dpp::command_option&gt; dpp::autocomplete_t::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="218" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref></type>
+        <definition>interaction dpp::interaction_create_t::command</definition>
+        <argsstring></argsstring>
+        <name>command</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="171" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::event_dispatch_t::raw_event</definition>
+        <argsstring></argsstring>
+        <name>raw_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raw event text </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="40" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shard the event came from </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="43" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="structdpp_1_1autocomplete__t_1a2ccc278a70570af25f9fa7b245a120b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -241,49 +323,6 @@
         <location file="include/dpp/dispatcher.h" line="160" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="60" bodyend="63"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref></type>
-        <definition>interaction dpp::interaction_create_t::command</definition>
-        <argsstring></argsstring>
-        <name>command</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="171" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="171" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::event_dispatch_t::raw_event</definition>
-        <argsstring></argsstring>
-        <name>raw_event</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Raw event text </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="40" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="40" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
-        <argsstring></argsstring>
-        <name>from</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Shard the event came from </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="43" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="43" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
     <briefdescription>
 <para>Click on button. </para>
     </briefdescription>
@@ -327,6 +366,15 @@
         <label>dpp::autocomplete_t</label>
         <link refid="structdpp_1_1autocomplete__t"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>options</edgelabel>
         </childnode>
       </node>
       <node id="26">
@@ -649,7 +697,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="200" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="200" bodyend="215"/>
+    <location file="include/dpp/dispatcher.h" line="200" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="200" bodyend="219"/>
     <listofallmembers>
       <member refid="structdpp_1_1autocomplete__t_1a2ccc278a70570af25f9fa7b245a120b9" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>autocomplete_t</name></member>
       <member refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>command</name></member>
@@ -659,7 +707,10 @@
       <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>from</name></member>
       <member refid="structdpp_1_1interaction__create__t_1ab2658732fd275f78e887435667d96d0c" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>get_original_response</name></member>
       <member refid="structdpp_1_1autocomplete__t_1a9e46b59ec205a971235573c73d8437d3" prot="public" virt="virtual"><scope>dpp::autocomplete_t</scope><name>get_parameter</name></member>
+      <member refid="structdpp_1_1autocomplete__t_1a9a1be45450a5bd7699b6f5799850721c" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>id</name></member>
       <member refid="structdpp_1_1interaction__create__t_1ab0b360b2769c2e3be693aae2f0df27b6" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>interaction_create_t</name></member>
+      <member refid="structdpp_1_1autocomplete__t_1a8c04822f347b7621987f0ba60f3b697a" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>name</name></member>
+      <member refid="structdpp_1_1autocomplete__t_1a3611e80443a208bc2e6b7c466ed1679d" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>options</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>raw_event</name></member>
       <member refid="structdpp_1_1interaction__create__t_1a81a1b21aa504d87a1cc47869daff2c77" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>reply</name></member>
       <member refid="structdpp_1_1interaction__create__t_1a5d8b161419b6eba6fbe05da696ba76a1" prot="public" virt="non-virtual"><scope>dpp::autocomplete_t</scope><name>reply</name></member>

@@ -429,7 +429,8 @@ var namespacedpp =
       [ "ir_channel_message_with_source", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c", null ],
       [ "ir_deferred_channel_message_with_source", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294", null ],
       [ "ir_deferred_update_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312", null ],
-      [ "ir_update_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847", null ]
+      [ "ir_update_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847", null ],
+      [ "ir_autocomplete_reply", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a78d890228291650cd463e3fd43b1c075", null ]
     ] ],
     [ "interaction_type", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96", [
       [ "it_ping", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275", null ],

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="208" column="27" bodyfile="include/dpp/slashcommand.h" bodystart="208" bodyend="-1"/>
+        <location file="include/dpp/slashcommand.h" line="211" column="27" bodyfile="include/dpp/slashcommand.h" bodystart="211" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1interaction__response_1afa292ebb598e2ecbb1d8eb089f415493" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structdpp_1_1message" kindref="compound">message</ref> *</type>
@@ -30,7 +30,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="214" column="15" bodyfile="include/dpp/slashcommand.h" bodystart="214" bodyend="-1"/>
+        <location file="include/dpp/slashcommand.h" line="217" column="15" bodyfile="include/dpp/slashcommand.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1interaction__response_1abb21d304dedf4a9bef3e221d115209e1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &gt;</type>
+        <definition>std::vector&lt;command_option_choice&gt; dpp::interaction_response::autocomplete_choices</definition>
+        <argsstring></argsstring>
+        <name>autocomplete_choices</name>
+        <briefdescription>
+<para>Array of up to 25 autocomplete choices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/slashcommand.h" line="222" column="13" bodyfile="include/dpp/slashcommand.h" bodystart="222" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -46,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="219" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="375" bodyend="377"/>
+        <location file="include/dpp/slashcommand.h" line="227" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="375" bodyend="377"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1a50e33b74f32d9e100db207c1ae5f3b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -86,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="227" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="383" bodyend="386"/>
+        <location file="include/dpp/slashcommand.h" line="235" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="383" bodyend="386"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
@@ -116,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="235" column="22" bodyfile="src/dpp/slashcommand.cpp" bodystart="388" bodyend="394"/>
+        <location file="include/dpp/slashcommand.h" line="243" column="22" bodyfile="src/dpp/slashcommand.cpp" bodystart="388" bodyend="394"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1ac0b038fcda6f46f0b391d32cac1b3df5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -133,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="242" column="13" bodyfile="src/dpp/slashcommand.cpp" bodystart="396" bodyend="406"/>
+        <location file="include/dpp/slashcommand.h" line="250" column="13" bodyfile="src/dpp/slashcommand.cpp" bodystart="396" bodyend="406"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1a314950e3ab3b3938a0b9493492d334f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -147,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="247" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="379" bodyend="381"/>
+        <location file="include/dpp/slashcommand.h" line="255" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="379" bodyend="381"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -190,6 +204,9 @@
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>autocomplete_choices</edgelabel>
         </childnode>
       </node>
       <node id="6">
@@ -355,8 +372,9 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/slashcommand.h" line="201" column="1" bodyfile="include/dpp/slashcommand.h" bodystart="201" bodyend="249"/>
+    <location file="include/dpp/slashcommand.h" line="204" column="1" bodyfile="include/dpp/slashcommand.h" bodystart="204" bodyend="257"/>
     <listofallmembers>
+      <member refid="structdpp_1_1interaction__response_1abb21d304dedf4a9bef3e221d115209e1" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>autocomplete_choices</name></member>
       <member refid="structdpp_1_1interaction__response_1ac0b038fcda6f46f0b391d32cac1b3df5" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>build_json</name></member>
       <member refid="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>fill_from_json</name></member>
       <member refid="structdpp_1_1interaction__response_1a074094acbb739670f92520011cdcff09" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>interaction_response</name></member>
