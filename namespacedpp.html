@@ -1452,6 +1452,9 @@ Variables</h2></td></tr>
 <tr class="separator:ac9654800251161e0925af5d1ec1452f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af762f7c2f0c23de9fbba385e8f547d29"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29">FORMAT_VERSION</a> = 131</td></tr>
 <tr class="separator:af762f7c2f0c23de9fbba385e8f547d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade984eb788efb3e775c64760f2050755"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ade984eb788efb3e775c64760f2050755">AUTOCOMPLETE_MAX_CHOICES</a> = 25</td></tr>
+<tr class="memdesc:ade984eb788efb3e775c64760f2050755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discord limits the maximum number of replies to an autocomplete interaction to 25. This value represents that maximum. <a class="el" href="structdpp_1_1interaction__response.html#aba47b23a0d825ab443c0f91711a94c9a" title="Add a command option choice.">interaction_response::add_autocomplete_choice</a> does not allow adding more than this number of elements to the vector.  <a href="namespacedpp.html#ade984eb788efb3e775c64760f2050755">More...</a><br /></td></tr>
+<tr class="separator:ade984eb788efb3e775c64760f2050755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The main namespace for D++ functions. classes and types. </p>
@@ -5102,6 +5105,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>An audit reason for each thread. These are per-thread to make the cluster methods like <a class="el" href="classdpp_1_1cluster.html#ab7a2958625740b4a6fde6643042c5f7e" title="Get the audit reason set for the next REST call to be made on this thread. This is set per-thread,...">cluster::get_audit_reason</a> and <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason</a> thread safe across multiple threads. You must ensure you set the audit reason on the same thread that makes the request associated with it. </p>
+
+</div>
+</div>
+<a id="ade984eb788efb3e775c64760f2050755" name="ade984eb788efb3e775c64760f2050755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade984eb788efb3e775c64760f2050755">&#9670;&nbsp;</a></span>AUTOCOMPLETE_MAX_CHOICES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t dpp::AUTOCOMPLETE_MAX_CHOICES = 25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Discord limits the maximum number of replies to an autocomplete interaction to 25. This value represents that maximum. <a class="el" href="structdpp_1_1interaction__response.html#aba47b23a0d825ab443c0f91711a94c9a" title="Add a command option choice.">interaction_response::add_autocomplete_choice</a> does not allow adding more than this number of elements to the vector. </p>
 
 </div>
 </div>
