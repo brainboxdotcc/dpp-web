@@ -6,7 +6,8 @@ var searchData=
   ['cmd_5fresult_5ft_3',['cmd_result_t',['../namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6',1,'dpp::utility']]],
   ['command_5fcompletion_5fevent_5ft_4',['command_completion_event_t',['../namespacedpp.html#a022dce6b086ec4515384eaece59c84c3',1,'dpp']]],
   ['command_5fhandler_5',['command_handler',['../namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3',1,'dpp']]],
-  ['command_5fparameter_6',['command_parameter',['../namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd',1,'dpp']]],
-  ['command_5fvalue_7',['command_value',['../namespacedpp.html#a710b32b577396ba92917d0578f0bedb6',1,'dpp']]],
-  ['confirmable_5ft_8',['confirmable_t',['../namespacedpp.html#a4d76f7b3ef878b78e96636e81894eef9',1,'dpp']]]
+  ['command_5foption_5frange_6',['command_option_range',['../namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba',1,'dpp']]],
+  ['command_5fparameter_7',['command_parameter',['../namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd',1,'dpp']]],
+  ['command_5fvalue_8',['command_value',['../namespacedpp.html#a710b32b577396ba92917d0578f0bedb6',1,'dpp']]],
+  ['confirmable_5ft_9',['confirmable_t',['../namespacedpp.html#a4d76f7b3ef878b78e96636e81894eef9',1,'dpp']]]
 ];

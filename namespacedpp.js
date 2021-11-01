@@ -156,6 +156,7 @@ var namespacedpp =
     [ "channel_map", "namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30", null ],
     [ "command_completion_event_t", "namespacedpp.html#a022dce6b086ec4515384eaece59c84c3", null ],
     [ "command_handler", "namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3", null ],
+    [ "command_option_range", "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
     [ "confirmable_t", "namespacedpp.html#a4d76f7b3ef878b78e96636e81894eef9", null ],

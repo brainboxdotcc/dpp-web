@@ -70,15 +70,15 @@ var NAVTREEINDEX =
 "classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2",
 "classdpp_1_1websocket__client.html#a5eac615119a5068c1634e3729752ddb6",
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a944508be9b272a33b626da260026bf83",
-"namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83",
-"namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29",
+"namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2ad2fc6394fc5f72dce99d47d2da031658",
+"namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c",
 "structdpp_1_1application__command__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
 "structdpp_1_1command__option.html#a0f238f1e8bb393b2c37b47c6fb564952",
-"structdpp_1_1gateway.html#ac5bf9ef5d953c0d944d31d98696f03f0",
-"structdpp_1_1integration__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1message__delete__bulk__t.html#aa8fb42cb1b7f751bcbad1964d48cb759",
-"structdpp_1_1select__option_1_1inner__select__emoji.html",
-"structdpp_1_1utility_1_1iconhash.html"
+"structdpp_1_1gateway.html#a34dcabe707a6ba554176fb80124962e9",
+"structdpp_1_1integration__delete__t.html#a1a29b8f92d060f66b09d0b8e2a4afed2",
+"structdpp_1_1message__delete__bulk__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
+"structdpp_1_1select__option.html#a9e8b7f77dc54e0746d5781179d65f703",
+"structdpp_1_1user__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
