@@ -162,6 +162,7 @@ var namespacedpp =
     [ "confirmable_t", "namespacedpp.html#a4d76f7b3ef878b78e96636e81894eef9", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
+    [ "event_handle", "namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e", null ],
     [ "guild_map", "namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7", null ],
     [ "guild_member_map", "namespacedpp.html#a219aedbe5bf37835c4a65115fccba278", null ],
     [ "http_completion_event", "namespacedpp.html#ae3249e99494d04bb4be50341f474621e", null ],
