@@ -273,7 +273,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1etf__parser.html" title="The etf_parser class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohma...">etf_parser</a> class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohmann::json object, so that layers above the websocket don't have to be any different for handling ETF.  <a href="classdpp_1_1etf__parser.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base event parameter struct.  <a href="structdpp_1_1event__dispatch__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base event parameter struct. Each event you receive from the library will have its parameter derived from this class. The class contains the raw event data, and a pointer to the current shard's <a class="el" href="classdpp_1_1discord__client.html" title="Implements a discord client. Each discord_client connects to one shard and derives from a websocket c...">dpp::discord_client</a> object. You can also use this object to cancel the current event, meaning that any listeners after yours do not get notified of the current event if you call it.  <a href="structdpp_1_1event__dispatch__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1exception.html">exception</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a> class derives from std::exception and supports some other ways of passing in error details such as via std::string.  <a href="classdpp_1_1exception.html#details">More...</a><br /></td></tr>
@@ -1407,9 +1407,10 @@ Functions</h2></td></tr>
 <tr class="separator:a36d2c45cce93740da4da28ef18e90a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981df68922716d97ba921fd2027c3513"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a981df68922716d97ba921fd2027c3513">tokenize</a> (std::string const &amp;in, const char *sep=&quot;\r\n&quot;)</td></tr>
 <tr class="separator:a981df68922716d97ba921fd2027c3513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a451907072ea06d8cbf840b6a68537760"><td class="memTemplParams" colspan="2">template&lt;std::vector V, <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> E&gt; </td></tr>
-<tr class="memitem:a451907072ea06d8cbf840b6a68537760"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a451907072ea06d8cbf840b6a68537760">call_event</a> (V &amp;vec, E &amp;event)</td></tr>
-<tr class="separator:a451907072ea06d8cbf840b6a68537760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8a2ea3b1c197d0d2277574186226c6"><td class="memTemplParams" colspan="2">template&lt;class V , class E &gt; </td></tr>
+<tr class="memitem:a0d8a2ea3b1c197d0d2277574186226c6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0d8a2ea3b1c197d0d2277574186226c6">call_event</a> (const V &amp;vec, const E &amp;event)</td></tr>
+<tr class="memdesc:a0d8a2ea3b1c197d0d2277574186226c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all listeners for an event handler.  <a href="namespacedpp.html#a0d8a2ea3b1c197d0d2277574186226c6">More...</a><br /></td></tr>
+<tr class="separator:a0d8a2ea3b1c197d0d2277574186226c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1456,8 +1457,6 @@ Variables</h2></td></tr>
 <tr class="separator:a657e035c24d7cdf888ba40868167f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeef0538fa45377c9b04fc944efec0f0c"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aeef0538fa45377c9b04fc944efec0f0c">MAXHEADERSIZE</a> = sizeof(uint64_t) + 2</td></tr>
 <tr class="separator:aeef0538fa45377c9b04fc944efec0f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9654800251161e0925af5d1ec1452f8"><td class="memItemLeft" align="right" valign="top">struct DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac9654800251161e0925af5d1ec1452f8">confirmation_callback_t</a></td></tr>
-<tr class="separator:ac9654800251161e0925af5d1ec1452f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af762f7c2f0c23de9fbba385e8f547d29"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29">FORMAT_VERSION</a> = 131</td></tr>
 <tr class="separator:af762f7c2f0c23de9fbba385e8f547d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade984eb788efb3e775c64760f2050755"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ade984eb788efb3e775c64760f2050755">AUTOCOMPLETE_MAX_CHOICES</a> = 25</td></tr>
@@ -1527,7 +1526,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A callback upon command completion. </p>
-<p >Used as a simple way to trigger events. </p>
+<p >A function used as a callback for any REST based command. </p>
 
 </div>
 </div>
@@ -3613,24 +3612,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a451907072ea06d8cbf840b6a68537760" name="a451907072ea06d8cbf840b6a68537760"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a451907072ea06d8cbf840b6a68537760">&#9670;&nbsp;</a></span>call_event()</h2>
+<a id="a0d8a2ea3b1c197d0d2277574186226c6" name="a0d8a2ea3b1c197d0d2277574186226c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8a2ea3b1c197d0d2277574186226c6">&#9670;&nbsp;</a></span>call_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::vector V, <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> E&gt; </div>
+template&lt;class V , class E &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void dpp::call_event </td>
           <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
+          <td class="paramtype">const V &amp;&#160;</td>
           <td class="paramname"><em>vec</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">E &amp;&#160;</td>
+          <td class="paramtype">const E &amp;&#160;</td>
           <td class="paramname"><em>event</em>&#160;</td>
         </tr>
         <tr>
@@ -3640,6 +3639,22 @@ template&lt;std::vector V, <a class="el" href="structdpp_1_1event__dispatch__t.h
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Call all listeners for an event handler. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">V</td><td>a <code>std::vector</code> of <code>std::function</code>, where each <code>std::function</code> takes a single parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">dpp::event_dispatch_t</a> </td></tr>
+    <tr><td class="paramname">E</td><td>an object derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">dpp::event_dispatch_t</a> to pass as the single parameter to the event listener functions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>vector of listeners attached to an event handler </td></tr>
+    <tr><td class="paramname">event</td><td>event object to pass as a parameter to the event handler </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -5187,20 +5202,6 @@ template&lt;std::vector V, <a class="el" href="structdpp_1_1event__dispatch__t.h
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a>* dpp::channel_cache = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac9654800251161e0925af5d1ec1452f8" name="ac9654800251161e0925af5d1ec1452f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9654800251161e0925af5d1ec1452f8">&#9670;&nbsp;</a></span>confirmation_callback_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct DPP_EXPORT <a class="el" href="structdpp_1_1confirmation__callback__t.html">dpp::confirmation_callback_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -13,6 +13,6 @@ var structdpp_1_1select__click__t =
     [ "component_type", "structdpp_1_1select__click__t.html#a163eb52d33f1b91333f62f5db98f9ce3", null ],
     [ "custom_id", "structdpp_1_1select__click__t.html#aac30db2484043c37184d96401a5e36d4", null ],
     [ "from", "structdpp_1_1select__click__t.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
-    [ "raw_event", "structdpp_1_1select__click__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
+    [ "raw_event", "structdpp_1_1select__click__t.html#a22df2fa7e547eaefbd65e501d8bf67b7", null ],
     [ "values", "structdpp_1_1select__click__t.html#a8f94f1a7b473d0210d9e2b1553db6b76", null ]
 ];

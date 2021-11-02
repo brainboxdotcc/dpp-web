@@ -11,5 +11,5 @@ var structdpp_1_1interaction__create__t =
     [ "reply", "structdpp_1_1interaction__create__t.html#a5d8b161419b6eba6fbe05da696ba76a1", null ],
     [ "command", "structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14", null ],
     [ "from", "structdpp_1_1interaction__create__t.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
-    [ "raw_event", "structdpp_1_1interaction__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ]
+    [ "raw_event", "structdpp_1_1interaction__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7", null ]
 ];

@@ -5,5 +5,5 @@ var structdpp_1_1message__create__t =
     [ "is_cancelled", "structdpp_1_1message__create__t.html#aca2880114f69b7ba62eb5137824c1432", null ],
     [ "from", "structdpp_1_1message__create__t.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
     [ "msg", "structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0", null ],
-    [ "raw_event", "structdpp_1_1message__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ]
+    [ "raw_event", "structdpp_1_1message__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7", null ]
 ];

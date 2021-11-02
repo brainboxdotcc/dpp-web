@@ -13,5 +13,5 @@ var structdpp_1_1button__click__t =
     [ "component_type", "structdpp_1_1button__click__t.html#a2a5e3ed8a2ccc64fb68926916a39dbfd", null ],
     [ "custom_id", "structdpp_1_1button__click__t.html#a9cd563e83eab3b92b4aecda2680cf3c8", null ],
     [ "from", "structdpp_1_1button__click__t.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
-    [ "raw_event", "structdpp_1_1button__click__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ]
+    [ "raw_event", "structdpp_1_1button__click__t.html#a22df2fa7e547eaefbd65e501d8bf67b7", null ]
 ];

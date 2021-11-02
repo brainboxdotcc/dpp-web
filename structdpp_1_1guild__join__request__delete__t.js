@@ -5,6 +5,6 @@ var structdpp_1_1guild__join__request__delete__t =
     [ "is_cancelled", "structdpp_1_1guild__join__request__delete__t.html#aca2880114f69b7ba62eb5137824c1432", null ],
     [ "from", "structdpp_1_1guild__join__request__delete__t.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
     [ "guild_id", "structdpp_1_1guild__join__request__delete__t.html#aa985fff3de79dabb40de48de443f54bb", null ],
-    [ "raw_event", "structdpp_1_1guild__join__request__delete__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
+    [ "raw_event", "structdpp_1_1guild__join__request__delete__t.html#a22df2fa7e547eaefbd65e501d8bf67b7", null ],
     [ "user_id", "structdpp_1_1guild__join__request__delete__t.html#a14a853ac56283599039cb8ed2594a5c7", null ]
 ];
