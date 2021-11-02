@@ -130,6 +130,12 @@ $(document).ready(function(){initNavTree('structdpp_1_1typing__start__t.html',''
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a806b74ba396ab577fb3b4268b169c9ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1typing__start__t.html#a806b74ba396ab577fb3b4268b169c9ad">typing_start_t</a> (class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *client, const std::string &amp;raw)</td></tr>
 <tr class="separator:a806b74ba396ab577fb3b4268b169c9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afbcd36109734ad0fca14ec848b73b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">cancel_event</a> () const</td></tr>
+<tr class="memdesc:a5afbcd36109734ad0fca14ec848b73b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">More...</a><br /></td></tr>
+<tr class="separator:a5afbcd36109734ad0fca14ec848b73b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2880114f69b7ba62eb5137824c1432"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#aca2880114f69b7ba62eb5137824c1432">is_cancelled</a> () const</td></tr>
+<tr class="memdesc:aca2880114f69b7ba62eb5137824c1432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#aca2880114f69b7ba62eb5137824c1432">More...</a><br /></td></tr>
+<tr class="separator:aca2880114f69b7ba62eb5137824c1432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -139,6 +145,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0803971e8cf5e1d411ebbc521c68d046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9faffa3da5cb3907651ad92613a11a35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1user.html">user</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1typing__start__t.html#a9faffa3da5cb3907651ad92613a11a35">typing_user</a></td></tr>
 <tr class="separator:a9faffa3da5cb3907651ad92613a11a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e77e181dbd3974eb082a7197c895ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1typing__start__t.html#a52e77e181dbd3974eb082a7197c895ad">user_id</a></td></tr>
+<tr class="separator:a52e77e181dbd3974eb082a7197c895ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd3028990dec19b65e046d918074676"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1typing__start__t.html#a9bd3028990dec19b65e046d918074676">timestamp</a></td></tr>
 <tr class="separator:a9bd3028990dec19b65e046d918074676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4777d1049d31ed943ecebfa2de7db9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a2d4777d1049d31ed943ecebfa2de7db9">raw_event</a></td></tr>
@@ -181,6 +189,63 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5afbcd36109734ad0fca14ec848b73b7" name="a5afbcd36109734ad0fca14ec848b73b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afbcd36109734ad0fca14ec848b73b7">&#9670;&nbsp;</a></span>cancel_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp; dpp::event_dispatch_t::cancel_event </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state). </p>
+<dl class="section return"><dt>Returns</dt><dd>const <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct.">event_dispatch_t</a>&amp; reference to self for chaining </dd></dl>
+
+</div>
+</div>
+<a id="aca2880114f69b7ba62eb5137824c1432" name="aca2880114f69b7ba62eb5137824c1432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca2880114f69b7ba62eb5137824c1432">&#9670;&nbsp;</a></span>is_cancelled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::event_dispatch_t::is_cancelled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state). </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the event is cancelled </dd></dl>
 
 </div>
 </div>
@@ -281,6 +346,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classdpp_1_1user.html">user</a>* dpp::typing_start_t::typing_user</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52e77e181dbd3974eb082a7197c895ad" name="a52e77e181dbd3974eb082a7197c895ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e77e181dbd3974eb082a7197c895ad">&#9670;&nbsp;</a></span>user_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> dpp::typing_start_t::user_id</td>
         </tr>
       </table>
 </div><div class="memdoc">

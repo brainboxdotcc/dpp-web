@@ -1407,6 +1407,9 @@ Functions</h2></td></tr>
 <tr class="separator:a36d2c45cce93740da4da28ef18e90a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981df68922716d97ba921fd2027c3513"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a981df68922716d97ba921fd2027c3513">tokenize</a> (std::string const &amp;in, const char *sep=&quot;\r\n&quot;)</td></tr>
 <tr class="separator:a981df68922716d97ba921fd2027c3513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451907072ea06d8cbf840b6a68537760"><td class="memTemplParams" colspan="2">template&lt;std::vector V, <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> E&gt; </td></tr>
+<tr class="memitem:a451907072ea06d8cbf840b6a68537760"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a451907072ea06d8cbf840b6a68537760">call_event</a> (V &amp;vec, E &amp;event)</td></tr>
+<tr class="separator:a451907072ea06d8cbf840b6a68537760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1431,6 +1434,8 @@ Variables</h2></td></tr>
 <tr class="separator:a04b7d06f713536bf48333522c9a4264b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d78d18a19b3fef2cf11ff545fee91c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c">external_ip</a></td></tr>
 <tr class="separator:af5d78d18a19b3fef2cf11ff545fee91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54eb501e23564f837949f0f5a574abb"><td class="memItemLeft" align="right" valign="top">thread_local bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa54eb501e23564f837949f0f5a574abb">stop_event</a> = false</td></tr>
+<tr class="separator:aa54eb501e23564f837949f0f5a574abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f29330ede66fa21fc47c361a9c51a7b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b">http_version</a> = &quot;DiscordBot (https://github.com/brainboxdotcc/DPP, &quot; + std::to_string(DPP_VERSION_MAJOR) + &quot;.&quot; + std::to_string(DPP_VERSION_MINOR) + &quot;.&quot; + std::to_string(DPP_VERSION_PATCH) + &quot;)&quot;</td></tr>
 <tr class="separator:a4f29330ede66fa21fc47c361a9c51a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27df95e52167e3d7020ee6ad7958eaa8"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a27df95e52167e3d7020ee6ad7958eaa8">DISCORD_HOST</a> = &quot;https://discord.com&quot;</td></tr>
@@ -1522,6 +1527,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A callback upon command completion. </p>
+<p >Used as a simple way to trigger events. </p>
 
 </div>
 </div>
@@ -3607,6 +3613,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a451907072ea06d8cbf840b6a68537760" name="a451907072ea06d8cbf840b6a68537760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451907072ea06d8cbf840b6a68537760">&#9670;&nbsp;</a></span>call_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::vector V, <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> E&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::call_event </td>
+          <td>(</td>
+          <td class="paramtype">V &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">E &amp;&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a430445c5a47943ca2d1422f1f45434ab" name="a430445c5a47943ca2d1422f1f45434ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a430445c5a47943ca2d1422f1f45434ab">&#9670;&nbsp;</a></span>find_channel()</h2>
 
@@ -5350,6 +5386,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a>* dpp::role_cache = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa54eb501e23564f837949f0f5a574abb" name="aa54eb501e23564f837949f0f5a574abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54eb501e23564f837949f0f5a574abb">&#9670;&nbsp;</a></span>stop_event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thread_local bool dpp::stop_event = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
