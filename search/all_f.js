@@ -89,7 +89,7 @@ var searchData=
   ['presence_5fflags_86',['presence_flags',['../namespacedpp.html#a953f1484a5140481ffab2b248618fb22',1,'dpp']]],
   ['presence_5fmap_87',['presence_map',['../namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f',1,'dpp']]],
   ['presence_5fstatus_88',['presence_status',['../namespacedpp.html#a172aa830689e55f4bba337de1592db96',1,'dpp']]],
-  ['presence_5fupdate_89',['presence_update',['../classdpp_1_1events_1_1presence__update.html',1,'dpp::events::presence_update'],['../classdpp_1_1dispatcher.html#a21e0bbce14f6aba7065eeb20dcf4ae8d',1,'dpp::dispatcher::presence_update()']]],
+  ['presence_5fupdate_89',['presence_update',['../classdpp_1_1events_1_1presence__update.html',1,'dpp::events::presence_update'],['../classdpp_1_1dispatcher.html#aec853af28f121c4a1cac2dd83909002b',1,'dpp::dispatcher::presence_update()']]],
   ['presence_5fupdate_5ft_90',['presence_update_t',['../structdpp_1_1presence__update__t.html',1,'dpp::presence_update_t'],['../structdpp_1_1presence__update__t.html#a6c58850853d61ab933e0fc5abb29ad15',1,'dpp::presence_update_t::presence_update_t()']]],
   ['privacy_5flevel_91',['privacy_level',['../structdpp_1_1stage__instance.html#ae198d6dba53766e0375c1705165ddca7',1,'dpp::stage_instance']]],
   ['protect_5fthe_5floot_92',['protect_the_loot',['../namespacedpp_1_1events.html#abb48b619aaa302ed2ab79d152146902e',1,'dpp::events']]],

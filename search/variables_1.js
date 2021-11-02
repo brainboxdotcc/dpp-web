@@ -11,7 +11,7 @@ var searchData=
   ['buf_8',['buf',['../structdpp_1_1etf__buffer.html#a43b8f9084fb86968add81fbf3de15f85',1,'dpp::etf_buffer']]],
   ['buffer_9',['buffer',['../classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa',1,'dpp::ssl_client']]],
   ['buffer_5fsize_10',['buffer_size',['../structdpp_1_1voice__buffer__send__t.html#a2dca750294ff5b2e4e08fc3b759dd84c',1,'dpp::voice_buffer_send_t']]],
-  ['button_5fclick_11',['button_click',['../classdpp_1_1dispatcher.html#a95261b35417e81c65e9046eca9f0d57c',1,'dpp::dispatcher']]],
+  ['button_5fclick_11',['button_click',['../classdpp_1_1dispatcher.html#a4fc75a5f2c0fe0150c99b9fe4e538f36',1,'dpp::dispatcher']]],
   ['bytes_5fin_12',['bytes_in',['../classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d',1,'dpp::ssl_client']]],
   ['bytes_5fout_13',['bytes_out',['../classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085',1,'dpp::ssl_client']]]
 ];

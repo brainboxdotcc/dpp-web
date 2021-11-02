@@ -9,6 +9,7 @@
     <includes local="no">functional</includes>
     <includes local="no">variant</includes>
     <includes local="no">exception</includes>
+    <includes local="no">algorithm</includes>
     <includedby refid="cluster_8h" local="no">cluster.h</includedby>
     <includedby refid="commandhandler_8cpp" local="no">commandhandler.cpp</includedby>
     <includedby refid="discordclient_8h" local="no">discordclient.h</includedby>
@@ -116,6 +117,8 @@
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
       <node id="17">
@@ -262,6 +265,9 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
+      </node>
+      <node id="33">
+        <label>algorithm</label>
       </node>
       <node id="10">
         <label>dpp/json_fwd.hpp</label>
@@ -848,6 +854,22 @@
     <innerclass refid="classdpp_1_1dispatcher" prot="public">dpp::dispatcher</innerclass>
     <innerclass refid="classdpp_1_1exception" prot="public">dpp::exception</innerclass>
     <innernamespace refid="namespacedpp">dpp</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dispatcher_8h_1aa722ee6a9cf5df632c1e463932710dd3" prot="public" static="no">
+        <name>call_event</name>
+        <param><defname>event</defname></param>
+        <param><defname>parameter</defname></param>
+        <initializer>std::for_each(event.begin(), event.end(), [&amp;parameter](auto &amp;ev){ ev(parameter); });</initializer>
+        <briefdescription>
+<para>Used as a simple way to trigger events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="38" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
