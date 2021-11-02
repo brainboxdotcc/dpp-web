@@ -365,7 +365,8 @@ var namespacedpp =
     [ "guild_member_flags", "namespacedpp.html#a7e036e9909741e00af34e2505117218d", [
       [ "gm_deaf", "namespacedpp.html#a7e036e9909741e00af34e2505117218da966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
       [ "gm_mute", "namespacedpp.html#a7e036e9909741e00af34e2505117218da557d08c731cb82cfd66915aaa0466a2f", null ],
-      [ "gm_pending", "namespacedpp.html#a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41", null ]
+      [ "gm_pending", "namespacedpp.html#a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41", null ],
+      [ "gm_animated_avatar", "namespacedpp.html#a7e036e9909741e00af34e2505117218da5fdf0027681c83f79661940b012518e4", null ]
     ] ],
     [ "http_error", "namespacedpp.html#ae525add0ec39d647375aabe5ce455449", [
       [ "h_success", "namespacedpp.html#ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da", null ],
