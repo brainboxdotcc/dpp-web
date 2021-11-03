@@ -9,6 +9,7 @@ var structdpp_1_1select__click__t =
     [ "is_cancelled", "structdpp_1_1select__click__t.html#aca2880114f69b7ba62eb5137824c1432", null ],
     [ "reply", "structdpp_1_1select__click__t.html#a81a1b21aa504d87a1cc47869daff2c77", null ],
     [ "reply", "structdpp_1_1select__click__t.html#a5d8b161419b6eba6fbe05da696ba76a1", null ],
+    [ "thinking", "structdpp_1_1select__click__t.html#a627e71baf70a588842a137fb251380ef", null ],
     [ "command", "structdpp_1_1select__click__t.html#a8b0c69c156a1e532507a918c13414f14", null ],
     [ "component_type", "structdpp_1_1select__click__t.html#a163eb52d33f1b91333f62f5db98f9ce3", null ],
     [ "custom_id", "structdpp_1_1select__click__t.html#aac30db2484043c37184d96401a5e36d4", null ],
