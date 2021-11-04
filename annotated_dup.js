@@ -106,6 +106,7 @@ var annotated_dup =
       [ "component_interaction", "structdpp_1_1component__interaction.html", "structdpp_1_1component__interaction" ],
       [ "confirmation", "structdpp_1_1confirmation.html", "structdpp_1_1confirmation" ],
       [ "confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", "structdpp_1_1confirmation__callback__t" ],
+      [ "connection", "classdpp_1_1connection.html", "classdpp_1_1connection" ],
       [ "discord_client", "classdpp_1_1discord__client.html", "classdpp_1_1discord__client" ],
       [ "discord_voice_client", "classdpp_1_1discord__voice__client.html", "classdpp_1_1discord__voice__client" ],
       [ "dispatcher", "classdpp_1_1dispatcher.html", "classdpp_1_1dispatcher" ],

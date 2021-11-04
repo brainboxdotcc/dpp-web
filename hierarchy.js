@@ -30,6 +30,7 @@ var hierarchy =
     [ "dpp::component_interaction", "structdpp_1_1component__interaction.html", null ],
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
+    [ "dpp::connection", "classdpp_1_1connection.html", null ],
     [ "dpp::dispatcher", "classdpp_1_1dispatcher.html", null ],
     [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],

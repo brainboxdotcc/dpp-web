@@ -20,6 +20,7 @@ var classdpp_1_1cluster =
     [ "create_dm_channel", "classdpp_1_1cluster.html#a55c6a9bb92a500aefc65a953e419c27f", null ],
     [ "create_webhook", "classdpp_1_1cluster.html#a627510bf4f4d1c3a999ccb506c75ec47", null ],
     [ "current_application_get", "classdpp_1_1cluster.html#ac3dc39069aaaa492727f39b35edd957e", null ],
+    [ "current_user_connections_get", "classdpp_1_1cluster.html#a75e1e5dd813d36fffd6b532ed1b31178", null ],
     [ "current_user_edit", "classdpp_1_1cluster.html#a0a4db23ebdf9a8323bd54458dadecaed", null ],
     [ "current_user_get", "classdpp_1_1cluster.html#aad927e85ed6b99e9b05f4190f1b19cae", null ],
     [ "current_user_get_dms", "classdpp_1_1cluster.html#a662fc0a998c62395f166da5e4a2acaf3", null ],
