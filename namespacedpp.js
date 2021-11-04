@@ -153,6 +153,8 @@ var namespacedpp =
     [ "webhook", "classdpp_1_1webhook.html", "classdpp_1_1webhook" ],
     [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
     [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
+    [ "welcome_channel_t", "structdpp_1_1welcome__channel__t.html", "structdpp_1_1welcome__channel__t" ],
+    [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ],
     [ "zlibcontext", "classdpp_1_1zlibcontext.html", "classdpp_1_1zlibcontext" ],
     [ "application_map", "namespacedpp.html#a9cd9f77c18810c3ad68e06b0625099bd", null ],
     [ "ban_map", "namespacedpp.html#a52b195380df96e9c43f35fa2da82db14", null ],
@@ -251,7 +253,16 @@ var namespacedpp =
       [ "ae_message_unpin", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da97943162763a70984d5d4d37b06c4c7f", null ],
       [ "ae_integration_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daf62cf0f28c5c9dc6814f06357bd890b8", null ],
       [ "ae_integration_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da6e661282e369e74d2c6067bd1ca10101", null ],
-      [ "ae_integration_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8ead0380000825094c1b8c110800a2b2", null ]
+      [ "ae_integration_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8ead0380000825094c1b8c110800a2b2", null ],
+      [ "ae_stage_instance_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da21c5b7af5377a390b67c7b4fc5a73a1b", null ],
+      [ "ae_stage_instance_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dad8095b6ef3fecf9dc09d96b8a4c76ac0", null ],
+      [ "ae_stage_instance_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da295bab4e90df571b311734937f8eb821", null ],
+      [ "ae_sticker_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da715b099e5710e27fa4b0f6250ba69d5f", null ],
+      [ "ae_sticker_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dab2e511e9d77675916c2d02ab231da36e", null ],
+      [ "ae_sticker_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da228e699a1feef4f5c4d1054bb70543b2", null ],
+      [ "ae_thread_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772", null ],
+      [ "ae_thread_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da9c1afffc90d0adfdf5ce3ff3f6cfa7dc", null ],
+      [ "ae_thread_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da60c1a36d005177f08743aa2239bb09e1", null ]
     ] ],
     [ "cache_policy_setting_t", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52", [
       [ "cp_aggressive", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e", null ],

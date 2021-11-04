@@ -233,5 +233,7 @@ var hierarchy =
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
+    [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
+    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ],
     [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
 ];
