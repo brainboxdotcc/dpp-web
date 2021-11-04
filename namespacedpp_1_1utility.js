@@ -10,7 +10,7 @@ var namespacedpp_1_1utility =
     [ "has_voice", "namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4", null ],
     [ "loglevel", "namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045", null ],
     [ "rgb", "namespacedpp_1_1utility.html#a2ab5fc7a9fd0ac6358c3c7133b563362", null ],
-    [ "rgb", "namespacedpp_1_1utility.html#ae99bafceb8ab7be12abc71304dfa3fa1", null ],
+    [ "rgb", "namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb", null ],
     [ "time_f", "namespacedpp_1_1utility.html#a1184092d62c7ab561cb3f60a92f71b67", null ],
     [ "utf8len", "namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231", null ],
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ]
