@@ -7,7 +7,7 @@ var classdpp_1_1application =
     [ "bot_require_code_grant", "classdpp_1_1application.html#a9942dd58f1ca9da0839f0a295612290c", null ],
     [ "cover_image", "classdpp_1_1application.html#a564b1a926e6890cb59db5130c5b3ac5d", null ],
     [ "description", "classdpp_1_1application.html#a6ddc12a2501ab7bd7b5d9ad3633cab9f", null ],
-    [ "flags", "classdpp_1_1application.html#a0905ac4d9bcfc7e16699ca12efeaf150", null ],
+    [ "flags", "classdpp_1_1application.html#ad057bffc84c68adf36cf6532455a7f40", null ],
     [ "guild_id", "classdpp_1_1application.html#aff84fc8a95d5fe5aa88da545ebe5154c", null ],
     [ "icon", "classdpp_1_1application.html#ac6e765f3953994066ba388d70f3f7ecb", null ],
     [ "id", "classdpp_1_1application.html#abf03308f84ba39a04af9c02cd535fefe", null ],
@@ -18,7 +18,7 @@ var classdpp_1_1application =
     [ "rpc_origins", "classdpp_1_1application.html#ac80deaf158551887c9f4c0b4be7b6ec7", null ],
     [ "slug", "classdpp_1_1application.html#af6ae37d7a50f84f688abc53b47655797", null ],
     [ "summary", "classdpp_1_1application.html#a2989a857540c3d20b96b3722a8c9aaf1", null ],
-    [ "team", "classdpp_1_1application.html#ae6dfeaa25ac1a89a86cfe326c278ae93", null ],
+    [ "team", "classdpp_1_1application.html#a45812eef5fcaa5981dfbd107a8a565fc", null ],
     [ "terms_of_service_url", "classdpp_1_1application.html#a1ba6df6bcd2636fcc0203fdecb10047a", null ],
     [ "verify_key", "classdpp_1_1application.html#a53fefb61833dd83db7abe1b0a9c2ef3e", null ]
 ];

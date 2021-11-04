@@ -5,6 +5,7 @@
     <includes refid="export_8h" local="no">dpp/export.h</includes>
     <includes refid="discord_8h" local="no">dpp/discord.h</includes>
     <includes local="no">dpp/json_fwd.hpp</includes>
+    <includedby refid="application_8cpp" local="no">application.cpp</includedby>
     <includedby refid="discord_8h" local="no">discord.h</includedby>
     <incdepgraph>
       <node id="1">
@@ -64,8 +65,6 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="1" relation="include">
-        </childnode>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
@@ -95,6 +94,8 @@
         <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
         </childnode>
       </node>
       <node id="17">
@@ -276,21 +277,21 @@
         <link refid="application_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="9">
         <label>auditlog.h</label>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="11">
         <label>ban.h</label>
-        <childnode refid="4" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="13">
@@ -430,7 +431,7 @@
       </node>
       <node id="78">
         <label>cluster.h</label>
-        <childnode refid="3" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="77" relation="include">
         </childnode>
@@ -492,11 +493,11 @@
         <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>discord.h</label>
-        <childnode refid="3" relation="include">
-        </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="1" relation="include">
         </childnode>
@@ -897,14 +898,14 @@
       </node>
       <node id="106">
         <label>dtemplate.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="107" relation="include">
         </childnode>
       </node>
       <node id="108">
         <label>emoji.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="101" relation="include">
         </childnode>
@@ -1035,7 +1036,7 @@
       </node>
       <node id="111">
         <label>invite.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
@@ -1053,21 +1054,21 @@
       </node>
       <node id="116">
         <label>presence.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="117" relation="include">
         </childnode>
       </node>
       <node id="118">
         <label>prune.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="119" relation="include">
         </childnode>
       </node>
       <node id="115">
         <label>slashcommand.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="82" relation="include">
         </childnode>
@@ -1085,21 +1086,21 @@
       </node>
       <node id="125">
         <label>stage_instance.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="124" relation="include">
         </childnode>
       </node>
       <node id="129">
         <label>voiceregion.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="128" relation="include">
         </childnode>
       </node>
       <node id="131">
         <label>webhook.h</label>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="105" relation="include">
         </childnode>
@@ -1112,6 +1113,9 @@
         </childnode>
         <childnode refid="123" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>application.cpp</label>
       </node>
       <node id="8">
         <label>auditlog.cpp</label>
@@ -1128,11 +1132,8 @@
       <node id="19">
         <label>cluster.cpp</label>
       </node>
-      <node id="3">
-        <label>appcommand.cpp</label>
-      </node>
       <node id="4">
-        <label>application.cpp</label>
+        <label>appcommand.cpp</label>
       </node>
       <node id="77">
         <label>channel.cpp</label>
@@ -1433,7 +1434,7 @@
       </node>
     </invincdepgraph>
     <innerclass refid="classdpp_1_1team__member" prot="public">dpp::team_member</innerclass>
-    <innerclass refid="classdpp_1_1team" prot="public">dpp::team</innerclass>
+    <innerclass refid="classdpp_1_1app__team" prot="public">dpp::app_team</innerclass>
     <innerclass refid="classdpp_1_1application" prot="public">dpp::application</innerclass>
     <innernamespace refid="namespacedpp">dpp</innernamespace>
     <briefdescription>

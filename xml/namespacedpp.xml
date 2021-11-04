@@ -3,6 +3,7 @@
   <compounddef id="namespacedpp" kind="namespace" language="C++">
     <compoundname>dpp</compoundname>
     <innerclass refid="classdpp_1_1activity" prot="public">dpp::activity</innerclass>
+    <innerclass refid="classdpp_1_1app__team" prot="public">dpp::app_team</innerclass>
     <innerclass refid="classdpp_1_1application" prot="public">dpp::application</innerclass>
     <innerclass refid="structdpp_1_1application__command__create__t" prot="public">dpp::application_command_create_t</innerclass>
     <innerclass refid="structdpp_1_1application__command__delete__t" prot="public">dpp::application_command_delete_t</innerclass>
@@ -123,7 +124,6 @@
     <innerclass refid="structdpp_1_1stage__instance__update__t" prot="public">dpp::stage_instance_update_t</innerclass>
     <innerclass refid="structdpp_1_1sticker" prot="public">dpp::sticker</innerclass>
     <innerclass refid="structdpp_1_1sticker__pack" prot="public">dpp::sticker_pack</innerclass>
-    <innerclass refid="classdpp_1_1team" prot="public">dpp::team</innerclass>
     <innerclass refid="classdpp_1_1team__member" prot="public">dpp::team_member</innerclass>
     <innerclass refid="structdpp_1_1thread__create__t" prot="public">dpp::thread_create_t</innerclass>
     <innerclass refid="structdpp_1_1thread__delete__t" prot="public">dpp::thread_delete_t</innerclass>
@@ -164,6 +164,7 @@
           <name>tms_invited</name>
           <initializer>= 1</initializer>
           <briefdescription>
+<para>User was invited to the team. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -172,17 +173,19 @@
           <name>tms_accepted</name>
           <initializer>= 2</initializer>
           <briefdescription>
+<para>User has accepted membership onto the team. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>status of a member of a team who maintain a bot/applicaiton </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/application.h" line="29" column="1" bodyfile="include/dpp/application.h" bodystart="29" bodyend="32"/>
+        <location file="include/dpp/application.h" line="32" column="1" bodyfile="include/dpp/application.h" bodystart="32" bodyend="37"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72" prot="public" static="no" strong="no">
         <type>uint32_t</type>
@@ -191,6 +194,7 @@
           <name>apf_gateway_presence</name>
           <initializer>= (1 &lt;&lt; 12)</initializer>
           <briefdescription>
+<para>Has gateway presence intent. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -199,6 +203,7 @@
           <name>apf_gateway_presence_limited</name>
           <initializer>= (1 &lt;&lt; 13)</initializer>
           <briefdescription>
+<para>Has gateway presence intent for &lt;100 guilds. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -207,6 +212,7 @@
           <name>apf_gateway_guild_members</name>
           <initializer>= (1 &lt;&lt; 14)</initializer>
           <briefdescription>
+<para>Has guild members intent. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -215,6 +221,7 @@
           <name>apf_gateway_guild_members_limited</name>
           <initializer>= (1 &lt;&lt; 15)</initializer>
           <briefdescription>
+<para>Has guild members intent for &lt;100 guilds. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -223,6 +230,7 @@
           <name>apf_verification_pending_guild_limit</name>
           <initializer>= (1 &lt;&lt; 16)</initializer>
           <briefdescription>
+<para>Verification is pending. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -231,6 +239,7 @@
           <name>apf_embedded</name>
           <initializer>= (1 &lt;&lt; 17)</initializer>
           <briefdescription>
+<para>Embedded. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -239,6 +248,7 @@
           <name>apf_gateway_message_content</name>
           <initializer>= (1 &lt;&lt; 18)</initializer>
           <briefdescription>
+<para>Has approval for message content. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -247,17 +257,19 @@
           <name>apf_gateway_message_content_limited</name>
           <initializer>= (1 &lt;&lt; 19)</initializer>
           <briefdescription>
+<para>Has message content, but &lt;100 guilds. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Flags for a bot or application. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/application.h" line="34" column="1" bodyfile="include/dpp/application.h" bodystart="34" bodyend="43"/>
+        <location file="include/dpp/application.h" line="42" column="1" bodyfile="include/dpp/application.h" bodystart="42" bodyend="59"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3d" prot="public" static="no" strong="no">
         <type></type>
@@ -4164,7 +4176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/auditlog.cpp" line="28" column="1" bodyfile="src/dpp/auditlog.cpp" bodystart="28" bodyend="-1"/>
+        <location file="src/dpp/application.cpp" line="28" column="1" bodyfile="src/dpp/application.cpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a9cd9f77c18810c3ad68e06b0625099bd" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1application" kindref="compound">application</ref> &gt;</type>
@@ -4178,7 +4190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/application.h" line="102" column="28" bodyfile="include/dpp/application.h" bodystart="102" bodyend="-1"/>
+        <location file="include/dpp/application.h" line="123" column="28" bodyfile="include/dpp/application.h" bodystart="123" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref> &gt;</type>
@@ -6719,6 +6731,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/dpp/auditlog.cpp" line="26" column="1"/>
+    <location file="src/dpp/application.cpp" line="26" column="1"/>
   </compounddef>
 </doxygen>
