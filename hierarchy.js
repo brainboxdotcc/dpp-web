@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "dpp::activity", "classdpp_1_1activity.html", null ],
     [ "dpp::message::allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", null ],
+    [ "dpp::application", "classdpp_1_1application.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
@@ -222,6 +223,8 @@ var hierarchy =
     [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
     [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
+    [ "dpp::team", "classdpp_1_1team.html", null ],
+    [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],

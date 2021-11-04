@@ -3,6 +3,7 @@
   <compounddef id="namespacedpp" kind="namespace" language="C++">
     <compoundname>dpp</compoundname>
     <innerclass refid="classdpp_1_1activity" prot="public">dpp::activity</innerclass>
+    <innerclass refid="classdpp_1_1application" prot="public">dpp::application</innerclass>
     <innerclass refid="structdpp_1_1application__command__create__t" prot="public">dpp::application_command_create_t</innerclass>
     <innerclass refid="structdpp_1_1application__command__delete__t" prot="public">dpp::application_command_delete_t</innerclass>
     <innerclass refid="structdpp_1_1application__command__update__t" prot="public">dpp::application_command_update_t</innerclass>
@@ -122,6 +123,8 @@
     <innerclass refid="structdpp_1_1stage__instance__update__t" prot="public">dpp::stage_instance_update_t</innerclass>
     <innerclass refid="structdpp_1_1sticker" prot="public">dpp::sticker</innerclass>
     <innerclass refid="structdpp_1_1sticker__pack" prot="public">dpp::sticker_pack</innerclass>
+    <innerclass refid="classdpp_1_1team" prot="public">dpp::team</innerclass>
+    <innerclass refid="classdpp_1_1team__member" prot="public">dpp::team_member</innerclass>
     <innerclass refid="structdpp_1_1thread__create__t" prot="public">dpp::thread_create_t</innerclass>
     <innerclass refid="structdpp_1_1thread__delete__t" prot="public">dpp::thread_delete_t</innerclass>
     <innerclass refid="structdpp_1_1thread__list__sync__t" prot="public">dpp::thread_list_sync_t</innerclass>
@@ -154,6 +157,108 @@
     <innernamespace refid="namespacedpp_1_1events">dpp::events</innernamespace>
     <innernamespace refid="namespacedpp_1_1utility">dpp::utility</innernamespace>
       <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacedpp_1ad2ee47e8839a8445d88bf66e927cb0d4" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>team_member_status</name>
+        <enumvalue id="namespacedpp_1ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230" prot="public">
+          <name>tms_invited</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31" prot="public">
+          <name>tms_accepted</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="29" column="1" bodyfile="include/dpp/application.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72" prot="public" static="no" strong="no">
+        <type>uint32_t</type>
+        <name>application_flags</name>
+        <enumvalue id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72a08dc8a2e3715e84bb24a63c7d158202a" prot="public">
+          <name>apf_gateway_presence</name>
+          <initializer>= (1 &lt;&lt; 12)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72a1455a34f5d35a17d88b671560f4a2822" prot="public">
+          <name>apf_gateway_presence_limited</name>
+          <initializer>= (1 &lt;&lt; 13)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72a6797cde1207f7f9e2ad8ecb2a3c477f6" prot="public">
+          <name>apf_gateway_guild_members</name>
+          <initializer>= (1 &lt;&lt; 14)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72a655d4febe1df4e5c3f6992cacd7ee3f1" prot="public">
+          <name>apf_gateway_guild_members_limited</name>
+          <initializer>= (1 &lt;&lt; 15)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72a8e2969052ac05d4aac4c7c1ad1ad8546" prot="public">
+          <name>apf_verification_pending_guild_limit</name>
+          <initializer>= (1 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72aa84f5e794fef323f94d4824d7c133033" prot="public">
+          <name>apf_embedded</name>
+          <initializer>= (1 &lt;&lt; 17)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72a33aabc481930927e85b7a410bd456379" prot="public">
+          <name>apf_gateway_message_content</name>
+          <initializer>= (1 &lt;&lt; 18)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ee31b61c76a466e853bf04c22a25b72a4d794600b5fa9f1479b0f43af7e31888" prot="public">
+          <name>apf_gateway_message_content_limited</name>
+          <initializer>= (1 &lt;&lt; 19)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="34" column="1" bodyfile="include/dpp/application.h" bodystart="34" bodyend="43"/>
+      </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3d" prot="public" static="no" strong="no">
         <type></type>
         <name>audit_type</name>
@@ -808,7 +913,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="63" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="63" bodyend="71"/>
+        <location file="include/dpp/commandhandler.h" line="64" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="64" bodyend="72"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" prot="public" static="no" strong="no">
         <type></type>
@@ -3575,185 +3680,194 @@
         </inbodydescription>
         <location file="include/dpp/stage_instance.h" line="28" column="1" bodyfile="include/dpp/stage_instance.h" bodystart="28" bodyend="31"/>
       </memberdef>
-      <memberdef kind="enum" id="namespacedpp_1ace1318b24526febab72157cdd8b7b468" prot="public" static="no" strong="no">
-        <type></type>
+      <memberdef kind="enum" id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0" prot="public" static="no" strong="no">
+        <type>uint32_t</type>
         <name>user_flags</name>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a08571594b32cf14501db06b9a39c0d2b" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a08571594b32cf14501db06b9a39c0d2b" prot="public">
           <name>u_bot</name>
-          <initializer>=			0b00000000000000000000001</initializer>
+          <initializer>=				0b00000000000000000000001</initializer>
           <briefdescription>
 <para>User is a bot. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468ab798237a2b87e22960a9928fede47221" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0ab798237a2b87e22960a9928fede47221" prot="public">
           <name>u_system</name>
-          <initializer>=		0b00000000000000000000010</initializer>
+          <initializer>=			0b00000000000000000000010</initializer>
           <briefdescription>
 <para>User is a system user (Clyde!) </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a77ba30113792b4046dce41d9e0d3e092" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a77ba30113792b4046dce41d9e0d3e092" prot="public">
           <name>u_mfa_enabled</name>
-          <initializer>=		0b00000000000000000000100</initializer>
+          <initializer>=			0b00000000000000000000100</initializer>
           <briefdescription>
 <para>User has multi-factor authentication enabled. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a8055b637db4c88b54da2c3157ebb7f74" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a8055b637db4c88b54da2c3157ebb7f74" prot="public">
           <name>u_verified</name>
-          <initializer>=		0b00000000000000000001000</initializer>
+          <initializer>=			0b00000000000000000001000</initializer>
           <briefdescription>
 <para>User is verified (verified email address) </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a224c3134630104447a7d739f37f5f6f0" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a224c3134630104447a7d739f37f5f6f0" prot="public">
           <name>u_nitro_full</name>
-          <initializer>=		0b00000000000000000010000</initializer>
+          <initializer>=			0b00000000000000000010000</initializer>
           <briefdescription>
 <para>User has full nitro. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468afe08f965f264db94c343e1cb6ed2ba76" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0afe08f965f264db94c343e1cb6ed2ba76" prot="public">
           <name>u_nitro_classic</name>
-          <initializer>=	0b00000000000000000100000</initializer>
+          <initializer>=		0b00000000000000000100000</initializer>
           <briefdescription>
 <para>User has nitro classic. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a4ba288ac839eaff56a3d46e373764d76" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a4ba288ac839eaff56a3d46e373764d76" prot="public">
           <name>u_discord_employee</name>
-          <initializer>=	0b00000000000000001000000</initializer>
+          <initializer>=		0b00000000000000001000000</initializer>
           <briefdescription>
 <para>User is discord staff. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a666e085f0d2ba3edbd420f36d68a5e7e" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a666e085f0d2ba3edbd420f36d68a5e7e" prot="public">
           <name>u_partnered_owner</name>
-          <initializer>=	0b00000000000000010000000</initializer>
+          <initializer>=		0b00000000000000010000000</initializer>
           <briefdescription>
 <para>User owns a partnered server. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468ad59de70fe3833bd7b46b134bd6a77eeb" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0ad59de70fe3833bd7b46b134bd6a77eeb" prot="public">
           <name>u_hypesquad_events</name>
-          <initializer>=	0b00000000000000100000000</initializer>
+          <initializer>=		0b00000000000000100000000</initializer>
           <briefdescription>
 <para>User is a member of hypesquad events. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468aff3f9dd3f4da4e8c47c3dad9b080264e" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0aff3f9dd3f4da4e8c47c3dad9b080264e" prot="public">
           <name>u_bughunter_1</name>
-          <initializer>=		0b00000000000001000000000</initializer>
+          <initializer>=			0b00000000000001000000000</initializer>
           <briefdescription>
 <para>User has BugHunter level 1. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a90aa6259394b0cc214042c0fa0ae5f36" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a90aa6259394b0cc214042c0fa0ae5f36" prot="public">
           <name>u_house_bravery</name>
-          <initializer>=	0b00000000000010000000000</initializer>
+          <initializer>=		0b00000000000010000000000</initializer>
           <briefdescription>
 <para>User is a member of House Bravery. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a092724653fc653a65807a13740eaec91" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a092724653fc653a65807a13740eaec91" prot="public">
           <name>u_house_brilliance</name>
-          <initializer>=	0b00000000000100000000000</initializer>
+          <initializer>=		0b00000000000100000000000</initializer>
           <briefdescription>
 <para>User is a member of House Brilliance. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a3e99159c534d3cd8d2b62ddbb465a85a" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a3e99159c534d3cd8d2b62ddbb465a85a" prot="public">
           <name>u_house_balanace</name>
-          <initializer>=	0b00000000001000000000000</initializer>
+          <initializer>=		0b00000000001000000000000</initializer>
           <briefdescription>
 <para>User is a member of House Balance. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468aefb9e680096448b61609f13e1b23736a" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0aefb9e680096448b61609f13e1b23736a" prot="public">
           <name>u_early_supporter</name>
-          <initializer>=	0b00000000010000000000000</initializer>
+          <initializer>=		0b00000000010000000000000</initializer>
           <briefdescription>
 <para>User is an early supporter. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468ad9e65390bac5097c18380407eeaa8891" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0ad9e65390bac5097c18380407eeaa8891" prot="public">
           <name>u_team_user</name>
-          <initializer>=		0b00000000100000000000000</initializer>
+          <initializer>=			0b00000000100000000000000</initializer>
           <briefdescription>
 <para>User is a team user. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a464829636537cdc63c5afae54f37f271" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a464829636537cdc63c5afae54f37f271" prot="public">
           <name>u_bughunter_2</name>
-          <initializer>=		0b00000001000000000000000</initializer>
+          <initializer>=			0b00000001000000000000000</initializer>
           <briefdescription>
 <para>User is has Bug Hunter level 2. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468aa07166e5a0e4e1e29a43e924b9c6d41f" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0aa07166e5a0e4e1e29a43e924b9c6d41f" prot="public">
           <name>u_verified_bot</name>
-          <initializer>=	0b00000010000000000000000</initializer>
+          <initializer>=		0b00000010000000000000000</initializer>
           <briefdescription>
 <para>User is a verified bot. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a52e7662e76e7375fdb2b2df4d3780d70" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a52e7662e76e7375fdb2b2df4d3780d70" prot="public">
           <name>u_verified_bot_dev</name>
-          <initializer>=	0b00000100000000000000000</initializer>
+          <initializer>=	 	0b00000100000000000000000</initializer>
           <briefdescription>
 <para>User has the Early Verified Bot Developer badge. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a2aef392b3338053d54a8e2bc0a3a465f" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a2aef392b3338053d54a8e2bc0a3a465f" prot="public">
           <name>u_animated_icon</name>
-          <initializer>=	0b00001000000000000000000</initializer>
+          <initializer>=		0b00001000000000000000000</initializer>
           <briefdescription>
 <para>User&apos;s icon is animated. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1ace1318b24526febab72157cdd8b7b468a05e7983fd9a8181c8d8e59faa6d43b79" prot="public">
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a05e7983fd9a8181c8d8e59faa6d43b79" prot="public">
           <name>u_certified_moderator</name>
-          <initializer>=	0b00010000000000000000000</initializer>
+          <initializer>=		0b00010000000000000000000</initializer>
           <briefdescription>
 <para>User is a certified moderator. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0a87c2acb3a9ffda46076dd46150c02c30" prot="public">
+          <name>u_bot_http_interactions</name>
+          <initializer>=	0b00100000000000000000000</initializer>
+          <briefdescription>
+<para>User is a bot using HTTP interactions (shows online even when not connected to a websocket) </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -3765,7 +3879,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/user.h" line="30" column="1" bodyfile="include/dpp/user.h" bodystart="30" bodyend="71"/>
+        <location file="include/dpp/user.h" line="30" column="1" bodyfile="include/dpp/user.h" bodystart="30" bodyend="73"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a03f707e068e2f7e7c7277094af901813" prot="public" static="no" strong="no">
         <type></type>
@@ -4052,6 +4166,20 @@
         </inbodydescription>
         <location file="src/dpp/auditlog.cpp" line="28" column="1" bodyfile="src/dpp/auditlog.cpp" bodystart="28" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1a9cd9f77c18810c3ad68e06b0625099bd" prot="public" static="no">
+        <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1application" kindref="compound">application</ref> &gt;</type>
+        <definition>typedef std::unordered_map&lt;snowflake, application&gt; dpp::application_map</definition>
+        <argsstring></argsstring>
+        <name>application_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A group of bans </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="102" column="28" bodyfile="include/dpp/application.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref> &gt;</type>
         <definition>typedef std::unordered_map&lt;snowflake, ban&gt; dpp::ban_map</definition>
@@ -4122,9 +4250,9 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="42" column="18" bodyfile="include/dpp/cluster.h" bodystart="42" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a4d76f7b3ef878b78e96636e81894eef9" prot="public" static="no">
-        <type>std::variant&lt; <ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref>, <ref refid="structdpp_1_1message" kindref="compound">message</ref>, <ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">user_map</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>, <ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref>, <ref refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kindref="member">channel_map</ref>, <ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref>, <ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref>, <ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref>, <ref refid="classdpp_1_1role" kindref="compound">role</ref>, <ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref>, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref>, <ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref>, <ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref>, <ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref>, <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref>, <ref refid="namespacedpp_1a58e2720e1ccc11d2b3b1be2e18df79d9" kindref="member">emoji_map</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref>, <ref refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kindref="member">ban_map</ref>, <ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref>, <ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref>, <ref refid="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" kindref="member">integration_map</ref>, <ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref>, <ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref>, <ref refid="structdpp_1_1prune" kindref="compound">prune</ref>, <ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref>, <ref refid="structdpp_1_1gateway" kindref="compound">gateway</ref>, <ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref>, <ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>, <ref refid="classdpp_1_1auditlog" kindref="compound">auditlog</ref>, <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref>, <ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref>, <ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref>, <ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref>, <ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref> &gt;</type>
-        <definition>typedef std::variant&lt; confirmation, message, message_map, user, user_map, guild_member, guild_member_map, channel, channel_map, thread_member, thread_member_map, guild, guild_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog, slashcommand, slashcommand_map, stage_instance, sticker, sticker_map, sticker_pack, sticker_pack_map &gt; dpp::confirmable_t</definition>
+      <memberdef kind="typedef" id="namespacedpp_1a5d251a63d5c9c67a44e1d25bed1fe577" prot="public" static="no">
+        <type>std::variant&lt; <ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref>, <ref refid="structdpp_1_1message" kindref="compound">message</ref>, <ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">user_map</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>, <ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref>, <ref refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kindref="member">channel_map</ref>, <ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref>, <ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref>, <ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref>, <ref refid="classdpp_1_1role" kindref="compound">role</ref>, <ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref>, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref>, <ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref>, <ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref>, <ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref>, <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref>, <ref refid="namespacedpp_1a58e2720e1ccc11d2b3b1be2e18df79d9" kindref="member">emoji_map</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref>, <ref refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kindref="member">ban_map</ref>, <ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref>, <ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref>, <ref refid="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" kindref="member">integration_map</ref>, <ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref>, <ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref>, <ref refid="structdpp_1_1prune" kindref="compound">prune</ref>, <ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref>, <ref refid="structdpp_1_1gateway" kindref="compound">gateway</ref>, <ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref>, <ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>, <ref refid="classdpp_1_1auditlog" kindref="compound">auditlog</ref>, <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref>, <ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref>, <ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref>, <ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref>, <ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref>, <ref refid="classdpp_1_1application" kindref="compound">application</ref>, <ref refid="namespacedpp_1a9cd9f77c18810c3ad68e06b0625099bd" kindref="member">application_map</ref> &gt;</type>
+        <definition>typedef std::variant&lt; confirmation, message, message_map, user, user_map, guild_member, guild_member_map, channel, channel_map, thread_member, thread_member_map, guild, guild_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog, slashcommand, slashcommand_map, stage_instance, sticker, sticker_map, sticker_pack, sticker_pack_map, application, application_map &gt; dpp::confirmable_t</definition>
         <argsstring></argsstring>
         <name>confirmable_t</name>
         <briefdescription>
@@ -4134,7 +4262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="123" column="2" bodyfile="include/dpp/cluster.h" bodystart="123" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="125" column="2" bodyfile="include/dpp/cluster.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &amp;)&gt;</type>
@@ -4149,7 +4277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="213" column="23" bodyfile="include/dpp/cluster.h" bodystart="213" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="215" column="23" bodyfile="include/dpp/cluster.h" bodystart="215" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
         <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
@@ -4163,7 +4291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="218" column="23" bodyfile="include/dpp/cluster.h" bodystart="218" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="220" column="23" bodyfile="include/dpp/cluster.h" bodystart="220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" prot="public" static="no">
         <type>size_t</type>
@@ -4177,7 +4305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="223" column="16" bodyfile="include/dpp/cluster.h" bodystart="223" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="225" column="16" bodyfile="include/dpp/cluster.h" bodystart="225" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int64_t, bool, double &gt;</type>
@@ -4191,7 +4319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="55" column="22" bodyfile="include/dpp/commandhandler.h" bodystart="55" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="56" column="22" bodyfile="include/dpp/commandhandler.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a6daf230da747f01eeaa36fd3d5e51a65" prot="public" static="no">
         <type>std::vector&lt; std::pair&lt; std::string, <ref refid="structdpp_1_1param__info" kindref="compound">param_info</ref> &gt; &gt;</type>
@@ -4205,7 +4333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="120" column="21" bodyfile="include/dpp/commandhandler.h" bodystart="120" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="121" column="21" bodyfile="include/dpp/commandhandler.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" prot="public" static="no">
         <type>std::vector&lt; std::pair&lt; std::string, <ref refid="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" kindref="member">command_parameter</ref> &gt; &gt;</type>
@@ -4219,7 +4347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="126" column="21" bodyfile="include/dpp/commandhandler.h" bodystart="126" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="127" column="21" bodyfile="include/dpp/commandhandler.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a72a8ab3231965d0e361f305a7fe431f3" prot="public" static="no">
         <type>std::function&lt; void(const std::string &amp;, const <ref refid="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" kindref="member">parameter_list_t</ref> &amp;, <ref refid="structdpp_1_1command__source" kindref="compound">command_source</ref>)&gt;</type>
@@ -4233,7 +4361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/commandhandler.h" line="163" column="23" bodyfile="include/dpp/commandhandler.h" bodystart="163" bodyend="-1"/>
+        <location file="include/dpp/commandhandler.h" line="164" column="23" bodyfile="include/dpp/commandhandler.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" prot="public" static="no">
         <type>uint64_t</type>
@@ -4502,7 +4630,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/user.h" line="247" column="28" bodyfile="include/dpp/user.h" bodystart="247" bodyend="-1"/>
+        <location file="include/dpp/user.h" line="256" column="28" bodyfile="include/dpp/user.h" bodystart="256" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ae90871830444cab0316109a1824fc0b8" prot="public" static="no">
         <type>std::unordered_map&lt; std::string, <ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref> &gt;</type>
@@ -6496,7 +6624,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/user.cpp" line="156" column="6" bodyfile="src/dpp/user.cpp" bodystart="156" bodyend="182" declfile="include/dpp/user.h" declline="244" declcolumn="6"/>
+        <location file="src/dpp/user.cpp" line="161" column="6" bodyfile="src/dpp/user.cpp" bodystart="161" bodyend="187" declfile="include/dpp/user.h" declline="253" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a981df68922716d97ba921fd2027c3513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::string &gt;</type>

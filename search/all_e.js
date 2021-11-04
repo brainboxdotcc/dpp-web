@@ -110,6 +110,7 @@ var searchData=
   ['ot_5frole_107',['ot_role',['../namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522ab1e3ea27fc98089b63c9e89fe7c44df5',1,'dpp']]],
   ['out_108',['out',['../structdetail_1_1chrono__formatter.html#aa409f576841d07ded4250215bef8f409',1,'detail::chrono_formatter']]],
   ['overwrite_5ftype_109',['overwrite_type',['../namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522',1,'dpp']]],
-  ['owner_110',['owner',['../classdpp_1_1commandhandler.html#a81203fb77ae98d8cfe81d95bf714fcf0',1,'dpp::commandhandler']]],
-  ['owner_5fid_111',['owner_id',['../classdpp_1_1guild.html#a4f608587f82bc3deab0974aeb30b2f24',1,'dpp::guild::owner_id()'],['../classdpp_1_1channel.html#adb22659e9dc7fb8dd36d1c9f67eb7181',1,'dpp::channel::owner_id()']]]
+  ['owner_110',['owner',['../classdpp_1_1commandhandler.html#a81203fb77ae98d8cfe81d95bf714fcf0',1,'dpp::commandhandler::owner()'],['../classdpp_1_1application.html#a5af52bd0ba8718a8bea8cd0c8898f1b6',1,'dpp::application::owner()']]],
+  ['owner_5fid_111',['owner_id',['../classdpp_1_1guild.html#a4f608587f82bc3deab0974aeb30b2f24',1,'dpp::guild::owner_id()'],['../classdpp_1_1channel.html#adb22659e9dc7fb8dd36d1c9f67eb7181',1,'dpp::channel::owner_id()']]],
+  ['owner_5fuser_5fid_112',['owner_user_id',['../classdpp_1_1team.html#a6842d6df9e9e225703cfe783c9d3ba60',1,'dpp::team']]]
 ];

@@ -42,9 +42,17 @@ var searchData=
   ['af_5fspectate_39',['af_spectate',['../namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da6641e2affb027ec2ee799a06b388a2cd',1,'dpp']]],
   ['af_5fsync_40',['af_sync',['../namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4dab869609c55109a542a9505cc75f2d93f',1,'dpp']]],
   ['alternative_41',['alternative',['../namespacedetail.html#a4938659a89541ba388c06c6a33e0c8adaa04fe4e390a7c7d5d4583f85d24e164d',1,'detail']]],
-  ['at_5fcompeting_42',['at_competing',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72',1,'dpp']]],
-  ['at_5fcustom_43',['at_custom',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400',1,'dpp']]],
-  ['at_5fgame_44',['at_game',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701',1,'dpp']]],
-  ['at_5flistening_45',['at_listening',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6',1,'dpp']]],
-  ['at_5fstreaming_46',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]]
+  ['apf_5fembedded_42',['apf_embedded',['../namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72aa84f5e794fef323f94d4824d7c133033',1,'dpp']]],
+  ['apf_5fgateway_5fguild_5fmembers_43',['apf_gateway_guild_members',['../namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a6797cde1207f7f9e2ad8ecb2a3c477f6',1,'dpp']]],
+  ['apf_5fgateway_5fguild_5fmembers_5flimited_44',['apf_gateway_guild_members_limited',['../namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a655d4febe1df4e5c3f6992cacd7ee3f1',1,'dpp']]],
+  ['apf_5fgateway_5fmessage_5fcontent_45',['apf_gateway_message_content',['../namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a33aabc481930927e85b7a410bd456379',1,'dpp']]],
+  ['apf_5fgateway_5fmessage_5fcontent_5flimited_46',['apf_gateway_message_content_limited',['../namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a4d794600b5fa9f1479b0f43af7e31888',1,'dpp']]],
+  ['apf_5fgateway_5fpresence_47',['apf_gateway_presence',['../namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a08dc8a2e3715e84bb24a63c7d158202a',1,'dpp']]],
+  ['apf_5fgateway_5fpresence_5flimited_48',['apf_gateway_presence_limited',['../namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a1455a34f5d35a17d88b671560f4a2822',1,'dpp']]],
+  ['apf_5fverification_5fpending_5fguild_5flimit_49',['apf_verification_pending_guild_limit',['../namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a8e2969052ac05d4aac4c7c1ad1ad8546',1,'dpp']]],
+  ['at_5fcompeting_50',['at_competing',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72',1,'dpp']]],
+  ['at_5fcustom_51',['at_custom',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400',1,'dpp']]],
+  ['at_5fgame_52',['at_game',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701',1,'dpp']]],
+  ['at_5flistening_53',['at_listening',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6',1,'dpp']]],
+  ['at_5fstreaming_54',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]]
 ];
