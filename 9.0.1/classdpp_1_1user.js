@@ -9,6 +9,7 @@ var classdpp_1_1user =
     [ "has_nitro_classic", "classdpp_1_1user.html#a2a7d44696be1880931498dc48d4bb23c", null ],
     [ "has_nitro_full", "classdpp_1_1user.html#a9c4116cc16eb91d0a1e3b3803c618395", null ],
     [ "is_bot", "classdpp_1_1user.html#aeb219805eb74e76d7814ba671de31a21", null ],
+    [ "is_bot_http_interactions", "classdpp_1_1user.html#a897b8816c44f11d99ad54b4f87521a20", null ],
     [ "is_bughunter_1", "classdpp_1_1user.html#afeb70e25be8585ff557b51dd99bb7f99", null ],
     [ "is_bughunter_2", "classdpp_1_1user.html#a287d9706c6ba49a5d627ceef2d5c3525", null ],
     [ "is_certified_moderator", "classdpp_1_1user.html#a88d7f40223baa835b92f6aa54af42420", null ],

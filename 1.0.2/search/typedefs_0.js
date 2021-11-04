@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ban_5fmap_0',['ban_map',['../namespacedpp.html#a52b195380df96e9c43f35fa2da82db14',1,'dpp']]]
+  ['application_5fmap_0',['application_map',['../namespacedpp.html#a9cd9f77c18810c3ad68e06b0625099bd',1,'dpp']]]
 ];

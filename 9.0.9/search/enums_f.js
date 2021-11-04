@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['webhook_5ftype_0',['webhook_type',['../namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0',1,'dpp']]],
-  ['websocket_5fprotocol_5ft_1',['websocket_protocol_t',['../namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55',1,'dpp']]],
-  ['ws_5fopcode_2',['ws_opcode',['../namespacedpp.html#a27a655378b0676c4444b32079c19d667',1,'dpp']]],
-  ['ws_5fstate_3',['ws_state',['../namespacedpp.html#af0e6c1fc5986facd4bb63a152ffa6057',1,'dpp']]]
+  ['voiceregion_5fflags_0',['voiceregion_flags',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813',1,'dpp']]],
+  ['voicestate_5fflags_1',['voicestate_flags',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53f',1,'dpp']]]
 ];

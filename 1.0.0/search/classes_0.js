@@ -1,14 +1,20 @@
 var searchData=
 [
   ['activity_0',['activity',['../classdpp_1_1activity.html',1,'dpp']]],
-  ['application_5fcommand_5fcreate_1',['application_command_create',['../classdpp_1_1events_1_1application__command__create.html',1,'dpp::events']]],
-  ['application_5fcommand_5fcreate_5ft_2',['application_command_create_t',['../structdpp_1_1application__command__create__t.html',1,'dpp']]],
-  ['application_5fcommand_5fdelete_3',['application_command_delete',['../classdpp_1_1events_1_1application__command__delete.html',1,'dpp::events']]],
-  ['application_5fcommand_5fdelete_5ft_4',['application_command_delete_t',['../structdpp_1_1application__command__delete__t.html',1,'dpp']]],
-  ['application_5fcommand_5fupdate_5',['application_command_update',['../classdpp_1_1events_1_1application__command__update.html',1,'dpp::events']]],
-  ['application_5fcommand_5fupdate_5ft_6',['application_command_update_t',['../structdpp_1_1application__command__update__t.html',1,'dpp']]],
-  ['audit_5fchange_7',['audit_change',['../structdpp_1_1audit__change.html',1,'dpp']]],
-  ['audit_5fentry_8',['audit_entry',['../structdpp_1_1audit__entry.html',1,'dpp']]],
-  ['audit_5fextra_9',['audit_extra',['../structdpp_1_1audit__extra.html',1,'dpp']]],
-  ['auditlog_10',['auditlog',['../classdpp_1_1auditlog.html',1,'dpp']]]
+  ['allowed_5fref_1',['allowed_ref',['../structdpp_1_1message_1_1allowed__ref.html',1,'dpp::message']]],
+  ['app_5fteam_2',['app_team',['../classdpp_1_1app__team.html',1,'dpp']]],
+  ['application_3',['application',['../classdpp_1_1application.html',1,'dpp']]],
+  ['application_5fcommand_5fcreate_4',['application_command_create',['../classdpp_1_1events_1_1application__command__create.html',1,'dpp::events']]],
+  ['application_5fcommand_5fcreate_5ft_5',['application_command_create_t',['../structdpp_1_1application__command__create__t.html',1,'dpp']]],
+  ['application_5fcommand_5fdelete_6',['application_command_delete',['../classdpp_1_1events_1_1application__command__delete.html',1,'dpp::events']]],
+  ['application_5fcommand_5fdelete_5ft_7',['application_command_delete_t',['../structdpp_1_1application__command__delete__t.html',1,'dpp']]],
+  ['application_5fcommand_5fupdate_8',['application_command_update',['../classdpp_1_1events_1_1application__command__update.html',1,'dpp::events']]],
+  ['application_5fcommand_5fupdate_5ft_9',['application_command_update_t',['../structdpp_1_1application__command__update__t.html',1,'dpp']]],
+  ['attachment_10',['attachment',['../structdpp_1_1attachment.html',1,'dpp']]],
+  ['audit_5fchange_11',['audit_change',['../structdpp_1_1audit__change.html',1,'dpp']]],
+  ['audit_5fentry_12',['audit_entry',['../structdpp_1_1audit__entry.html',1,'dpp']]],
+  ['audit_5fextra_13',['audit_extra',['../structdpp_1_1audit__extra.html',1,'dpp']]],
+  ['auditlog_14',['auditlog',['../classdpp_1_1auditlog.html',1,'dpp']]],
+  ['autocomplete_5finteraction_15',['autocomplete_interaction',['../structdpp_1_1autocomplete__interaction.html',1,'dpp']]],
+  ['autocomplete_5ft_16',['autocomplete_t',['../structdpp_1_1autocomplete__t.html',1,'dpp']]]
 ];

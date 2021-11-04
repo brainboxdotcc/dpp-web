@@ -30,7 +30,7 @@
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <script>
 	setTimeout(function() {
-		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option selected value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
+		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option selected value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
 	}, 500);
 </script>
 <div id="titlearea">
@@ -130,28 +130,39 @@ $(document).ready(function(){initNavTree('structdpp_1_1voice__user__talking__t.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a336ea55444d2ab53d451c65f13734b5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__user__talking__t.html#a336ea55444d2ab53d451c65f13734b5b">voice_user_talking_t</a> (class <a class="el" href="classdpp_1_1_discord_client.html">DiscordClient</a> *client, const std::string &amp;raw)</td></tr>
-<tr class="memdesc:a336ea55444d2ab53d451c65f13734b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="structdpp_1_1voice__user__talking__t.html#a336ea55444d2ab53d451c65f13734b5b">More...</a><br /></td></tr>
-<tr class="separator:a336ea55444d2ab53d451c65f13734b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364eafcc97db6de005b150f3a92ed634"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__user__talking__t.html#a364eafcc97db6de005b150f3a92ed634">voice_user_talking_t</a> (class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *client, const std::string &amp;raw)</td></tr>
+<tr class="memdesc:a364eafcc97db6de005b150f3a92ed634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="structdpp_1_1voice__user__talking__t.html#a364eafcc97db6de005b150f3a92ed634">More...</a><br /></td></tr>
+<tr class="separator:a364eafcc97db6de005b150f3a92ed634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afbcd36109734ad0fca14ec848b73b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">cancel_event</a> () const</td></tr>
+<tr class="memdesc:a5afbcd36109734ad0fca14ec848b73b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">More...</a><br /></td></tr>
+<tr class="separator:a5afbcd36109734ad0fca14ec848b73b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2880114f69b7ba62eb5137824c1432"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#aca2880114f69b7ba62eb5137824c1432">is_cancelled</a> () const</td></tr>
+<tr class="memdesc:aca2880114f69b7ba62eb5137824c1432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#aca2880114f69b7ba62eb5137824c1432">More...</a><br /></td></tr>
+<tr class="separator:aca2880114f69b7ba62eb5137824c1432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae12eb0670dc7a3ade33bf9b5334b886a"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1_discord_voice_client.html">DiscordVoiceClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__user__talking__t.html#ae12eb0670dc7a3ade33bf9b5334b886a">voice_client</a></td></tr>
-<tr class="separator:ae12eb0670dc7a3ade33bf9b5334b886a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac496e63b6b2eba1f3ac9e172a558ec38"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__user__talking__t.html#ac496e63b6b2eba1f3ac9e172a558ec38">voice_client</a></td></tr>
+<tr class="memdesc:ac496e63b6b2eba1f3ac9e172a558ec38"><td class="mdescLeft">&#160;</td><td class="mdescRight">voice client where user is talking  <a href="structdpp_1_1voice__user__talking__t.html#ac496e63b6b2eba1f3ac9e172a558ec38">More...</a><br /></td></tr>
+<tr class="separator:ac496e63b6b2eba1f3ac9e172a558ec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9986889aec16ac0d5da675636218dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__user__talking__t.html#aeb9986889aec16ac0d5da675636218dd">user_id</a></td></tr>
+<tr class="memdesc:aeb9986889aec16ac0d5da675636218dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">talking user id  <a href="structdpp_1_1voice__user__talking__t.html#aeb9986889aec16ac0d5da675636218dd">More...</a><br /></td></tr>
 <tr class="separator:aeb9986889aec16ac0d5da675636218dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d52fb0412548166b6e54d81bdb8980b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__user__talking__t.html#a9d52fb0412548166b6e54d81bdb8980b">talking_flags</a></td></tr>
+<tr class="memdesc:a9d52fb0412548166b6e54d81bdb8980b"><td class="mdescLeft">&#160;</td><td class="mdescRight">flags for talking user  <a href="structdpp_1_1voice__user__talking__t.html#a9d52fb0412548166b6e54d81bdb8980b">More...</a><br /></td></tr>
 <tr class="separator:a9d52fb0412548166b6e54d81bdb8980b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d4777d1049d31ed943ecebfa2de7db9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a2d4777d1049d31ed943ecebfa2de7db9">raw_event</a></td></tr>
-<tr class="separator:a2d4777d1049d31ed943ecebfa2de7db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a602fbba2e1729accb3a495bc5368450f"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1_discord_client.html">DiscordClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a602fbba2e1729accb3a495bc5368450f">from</a></td></tr>
-<tr class="separator:a602fbba2e1729accb3a495bc5368450f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22df2fa7e547eaefbd65e501d8bf67b7"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a22df2fa7e547eaefbd65e501d8bf67b7">raw_event</a></td></tr>
+<tr class="memdesc:a22df2fa7e547eaefbd65e501d8bf67b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data.  <a href="structdpp_1_1event__dispatch__t.html#a22df2fa7e547eaefbd65e501d8bf67b7">More...</a><br /></td></tr>
+<tr class="separator:a22df2fa7e547eaefbd65e501d8bf67b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357873be4dd30eef7928ae5f7c13e7db"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db">from</a></td></tr>
+<tr class="memdesc:a357873be4dd30eef7928ae5f7c13e7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shard the event came from. Note that for some events, notably voice events, this may be nullptr.  <a href="structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db">More...</a><br /></td></tr>
+<tr class="separator:a357873be4dd30eef7928ae5f7c13e7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >voice user talking </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a336ea55444d2ab53d451c65f13734b5b" name="a336ea55444d2ab53d451c65f13734b5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a336ea55444d2ab53d451c65f13734b5b">&#9670;&nbsp;</a></span>voice_user_talking_t()</h2>
+<a id="a364eafcc97db6de005b150f3a92ed634" name="a364eafcc97db6de005b150f3a92ed634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364eafcc97db6de005b150f3a92ed634">&#9670;&nbsp;</a></span>voice_user_talking_t()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +170,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">dpp::voice_user_talking_t::voice_user_talking_t </td>
           <td>(</td>
-          <td class="paramtype">class <a class="el" href="classdpp_1_1_discord_client.html">DiscordClient</a> *&#160;</td>
+          <td class="paramtype">class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *&#160;</td>
           <td class="paramname"><em>client</em>, </td>
         </tr>
         <tr>
@@ -187,9 +198,66 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5afbcd36109734ad0fca14ec848b73b7" name="a5afbcd36109734ad0fca14ec848b73b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afbcd36109734ad0fca14ec848b73b7">&#9670;&nbsp;</a></span>cancel_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp; dpp::event_dispatch_t::cancel_event </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state). </p>
+<dl class="section return"><dt>Returns</dt><dd>const <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>&amp; reference to self for chaining </dd></dl>
+
+</div>
+</div>
+<a id="aca2880114f69b7ba62eb5137824c1432" name="aca2880114f69b7ba62eb5137824c1432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca2880114f69b7ba62eb5137824c1432">&#9670;&nbsp;</a></span>is_cancelled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::event_dispatch_t::is_cancelled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state). </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the event is cancelled </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a602fbba2e1729accb3a495bc5368450f" name="a602fbba2e1729accb3a495bc5368450f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a602fbba2e1729accb3a495bc5368450f">&#9670;&nbsp;</a></span>from</h2>
+<a id="a357873be4dd30eef7928ae5f7c13e7db" name="a357873be4dd30eef7928ae5f7c13e7db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357873be4dd30eef7928ae5f7c13e7db">&#9670;&nbsp;</a></span>from</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +266,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">class <a class="el" href="classdpp_1_1_discord_client.html">DiscordClient</a>* dpp::event_dispatch_t::from</td>
+          <td class="memname">class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a>* dpp::event_dispatch_t::from</td>
         </tr>
       </table>
   </td>
@@ -207,12 +275,13 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Shard the event came from </p>
+
+<p>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </p>
 
 </div>
 </div>
-<a id="a2d4777d1049d31ed943ecebfa2de7db9" name="a2d4777d1049d31ed943ecebfa2de7db9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d4777d1049d31ed943ecebfa2de7db9">&#9670;&nbsp;</a></span>raw_event</h2>
+<a id="a22df2fa7e547eaefbd65e501d8bf67b7" name="a22df2fa7e547eaefbd65e501d8bf67b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22df2fa7e547eaefbd65e501d8bf67b7">&#9670;&nbsp;</a></span>raw_event</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +290,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string dpp::event_dispatch_t::raw_event</td>
+          <td class="memname">const std::string dpp::event_dispatch_t::raw_event</td>
         </tr>
       </table>
   </td>
@@ -230,7 +299,8 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Raw event text </p>
+
+<p>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </p>
 
 </div>
 </div>
@@ -246,6 +316,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>flags for talking user </p>
+
 </div>
 </div>
 <a id="aeb9986889aec16ac0d5da675636218dd" name="aeb9986889aec16ac0d5da675636218dd"></a>
@@ -260,19 +332,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>talking user id </p>
+
 </div>
 </div>
-<a id="ae12eb0670dc7a3ade33bf9b5334b886a" name="ae12eb0670dc7a3ade33bf9b5334b886a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae12eb0670dc7a3ade33bf9b5334b886a">&#9670;&nbsp;</a></span>voice_client</h2>
+<a id="ac496e63b6b2eba1f3ac9e172a558ec38" name="ac496e63b6b2eba1f3ac9e172a558ec38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac496e63b6b2eba1f3ac9e172a558ec38">&#9670;&nbsp;</a></span>voice_client</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">class <a class="el" href="classdpp_1_1_discord_voice_client.html">DiscordVoiceClient</a>* dpp::voice_user_talking_t::voice_client</td>
+          <td class="memname">class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a>* dpp::voice_user_talking_t::voice_client</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>voice client where user is talking </p>
 
 </div>
 </div>
@@ -295,7 +371,7 @@ Public Attributes</h2></td></tr>
 </script>
 <div style="z-index: -9999; position: absolute; right: 0; top: 0; font-size: 0.0001rem;color:transparent;background:none">
 	<!-- For crawlability of past versions -->
-	<a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.0/'>D++ Library version v1.0.0</a><a href='/1.0.1/'>D++ Library version v1.0.1</a><a href='/1.0.2/'>D++ Library version v1.0.2</a><a href='/9.0.1/'>D++ Library version v9.0.1</a><a href='/9.0.2/'>D++ Library version v9.0.2</a><a href='/9.0.3/'>D++ Library version v9.0.3</a><a href='/9.0.4/'>D++ Library version v9.0.4</a><a href='/9.0.5/'>D++ Library version v9.0.5</a><a href='/9.0.6/'>D++ Library version v9.0.6</a><a href='/9.0.7/'>D++ Library version v9.0.7</a><a href='/9.0.8/'>D++ Library version v9.0.8</a><a href='/9.0.9/'>D++ Library version v9.0.9</a><a href='/9.0.10/'>D++ Library version v9.0.10</a>
+	<a href='/9.0.10/'>D++ Library version 9.0.10</a><a href='/9.0.9/'>D++ Library version 9.0.9</a><a href='/9.0.8/'>D++ Library version 9.0.8</a><a href='/9.0.7/'>D++ Library version 9.0.7</a><a href='/9.0.6/'>D++ Library version 9.0.6</a><a href='/9.0.5/'>D++ Library version 9.0.5</a><a href='/9.0.4/'>D++ Library version 9.0.4</a><a href='/9.0.3/'>D++ Library version 9.0.3</a><a href='/9.0.2/'>D++ Library version 9.0.2</a><a href='/9.0.1/'>D++ Library version 9.0.1</a><a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.2/'>D++ Library version 1.0.2</a><a href='/1.0.1/'>D++ Library version 1.0.1</a><a href='/1.0.0/'>D++ Library version 1.0.0</a>
 </div>
 </body>
 </html>

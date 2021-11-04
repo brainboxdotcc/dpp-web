@@ -30,7 +30,7 @@
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <script>
 	setTimeout(function() {
-		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option selected value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
+		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option selected value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
 	}, 500);
 </script>
 <div id="titlearea">
@@ -108,29 +108,29 @@ Building on macOS</h1>
 1. Toolchain</h2>
 <p >Before compiling make sure you have all the tools installed.</p>
 <ol type="1">
-<li>To install the dependencies, this guide will use homebrew which has <a href="https://brew.sh/">installation instructions on their project page</a></li>
-<li>This project uses CMake to generate the makefiles. Install it with <code>brew install cmake</code></li>
+<li>To install the dependencies, this guide will use homebrew which has <a href="https://brew.sh/">installation instructions on their project page</a>.</li>
+<li>This project uses CMake to generate the makefiles. Install it with <code>brew install cmake</code>.</li>
 </ol>
 <h2><a class="anchor" id="autotoc_md12"></a>
 2. Install External Dependencies</h2>
 <pre class="fragment">brew install openssl
-</pre><p> For voice support, additional dependencies are required </p><pre class="fragment">brew install libsodium opus
+</pre><p> For voice support, additional dependencies are required: </p><pre class="fragment">brew install libsodium opus
 </pre> <h2><a class="anchor" id="autotoc_md13"></a>
 3. Build Source Code</h2>
-<p >Download the source code via Github or get the archive from the releases. Then navigate to the root directory of the project and run the commands below. </p><pre class="fragment">mkdir build
+<pre class="fragment">mkdir build
 cd build
 cmake ..
 make -j8
 </pre><p> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
 <h2><a class="anchor" id="autotoc_md14"></a>
 4. Optional: Run test cases</h2>
-<p >run <code>./test</code> for unit test cases. You will need to create a <code>config.json</code> file in the directory above the executable file with a valid bot token in it. See the example file <code>config.example.json</code> for an example of the correct format.</p>
+<p >Run <code>./test</code> for unit test cases. You will need to create a <code>config.json</code> file in the directory above the executable file with a valid bot token in it. See the example file <code>config.example.json</code> for an example of the correct format.</p>
 <h2><a class="anchor" id="autotoc_md15"></a>
 5. Install globally</h2>
 <pre class="fragment">sudo make install
 </pre> <h2><a class="anchor" id="autotoc_md16"></a>
 6. Installation to a different directory</h2>
-<p >If you want to install the library, its dependendancies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
+<p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </pre><p> Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
 <h2><a class="anchor" id="autotoc_md17"></a>
 7. Using the library</h2>
@@ -143,6 +143,7 @@ make -j8
 <li><code>dppbot</code> - The name of the executable to make</li>
 </ul>
 <p >Of course, this is just a proof of concept - you should really use a more robust build system like GNU <code>make</code> or <a class="el" href="buildcmake.html">`cmake`</a>.</p>
+<p >If you are having trouble setting up CMake, you can try <a href="https://github.com/brainboxdotcc/templatebot">our template bot</a>.</p>
 <p ><b>Have fun!</b> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -164,7 +165,7 @@ make -j8
 </script>
 <div style="z-index: -9999; position: absolute; right: 0; top: 0; font-size: 0.0001rem;color:transparent;background:none">
 	<!-- For crawlability of past versions -->
-	<a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.0/'>D++ Library version v1.0.0</a><a href='/1.0.1/'>D++ Library version v1.0.1</a><a href='/1.0.2/'>D++ Library version v1.0.2</a><a href='/9.0.1/'>D++ Library version v9.0.1</a><a href='/9.0.2/'>D++ Library version v9.0.2</a><a href='/9.0.3/'>D++ Library version v9.0.3</a><a href='/9.0.4/'>D++ Library version v9.0.4</a><a href='/9.0.5/'>D++ Library version v9.0.5</a><a href='/9.0.6/'>D++ Library version v9.0.6</a><a href='/9.0.7/'>D++ Library version v9.0.7</a><a href='/9.0.8/'>D++ Library version v9.0.8</a><a href='/9.0.9/'>D++ Library version v9.0.9</a><a href='/9.0.10/'>D++ Library version v9.0.10</a>
+	<a href='/9.0.10/'>D++ Library version 9.0.10</a><a href='/9.0.9/'>D++ Library version 9.0.9</a><a href='/9.0.8/'>D++ Library version 9.0.8</a><a href='/9.0.7/'>D++ Library version 9.0.7</a><a href='/9.0.6/'>D++ Library version 9.0.6</a><a href='/9.0.5/'>D++ Library version 9.0.5</a><a href='/9.0.4/'>D++ Library version 9.0.4</a><a href='/9.0.3/'>D++ Library version 9.0.3</a><a href='/9.0.2/'>D++ Library version 9.0.2</a><a href='/9.0.1/'>D++ Library version 9.0.1</a><a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.2/'>D++ Library version 1.0.2</a><a href='/1.0.1/'>D++ Library version 1.0.1</a><a href='/1.0.0/'>D++ Library version 1.0.0</a>
 </div>
 </body>
 </html>

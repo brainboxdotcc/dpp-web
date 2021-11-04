@@ -30,7 +30,7 @@
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <script>
 	setTimeout(function() {
-		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option selected value='/9.0.2/'>9.0.2</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
+		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option selected value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
 	}, 500);
 </script>
 <div id="titlearea">
@@ -99,17 +99,109 @@ $(document).ready(function(){initNavTree('structdpp_1_1command__resolved.html','
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structdpp_1_1command__resolved-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dpp::command_resolved Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Resolved snowflake ids to usernames. TODO: Needs implementation. Not needed something that functions as we have cache.  
+<p>Resolved snowflake ids to users, guild members, roles and channels.  
  <a href="structdpp_1_1command__resolved.html#details">More...</a></p>
 
 <p><code>#include &lt;slashcommand.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::command_resolved:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structdpp_1_1command__resolved__coll__graph.svg" width="175" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a253cd8cb71207dbdf0b8f687218f24e3"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a>, <a class="el" href="classdpp_1_1user.html">dpp::user</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__resolved.html#a253cd8cb71207dbdf0b8f687218f24e3">users</a></td></tr>
+<tr class="memdesc:a253cd8cb71207dbdf0b8f687218f24e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved users.  <a href="structdpp_1_1command__resolved.html#a253cd8cb71207dbdf0b8f687218f24e3">More...</a><br /></td></tr>
+<tr class="separator:a253cd8cb71207dbdf0b8f687218f24e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c6fdc7a7abe57a049534bcc4dccbd3"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a>, <a class="el" href="classdpp_1_1guild__member.html">dpp::guild_member</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__resolved.html#a31c6fdc7a7abe57a049534bcc4dccbd3">members</a></td></tr>
+<tr class="memdesc:a31c6fdc7a7abe57a049534bcc4dccbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved guild members.  <a href="structdpp_1_1command__resolved.html#a31c6fdc7a7abe57a049534bcc4dccbd3">More...</a><br /></td></tr>
+<tr class="separator:a31c6fdc7a7abe57a049534bcc4dccbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f354275ab39eb9b0771a167fd7af7fc"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a>, <a class="el" href="classdpp_1_1role.html">dpp::role</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc">roles</a></td></tr>
+<tr class="memdesc:a6f354275ab39eb9b0771a167fd7af7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved roles.  <a href="structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc">More...</a><br /></td></tr>
+<tr class="separator:a6f354275ab39eb9b0771a167fd7af7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc7b8909f13bc77e433fae06706253f"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__resolved.html#a5fc7b8909f13bc77e433fae06706253f">channels</a></td></tr>
+<tr class="memdesc:a5fc7b8909f13bc77e433fae06706253f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved channels.  <a href="structdpp_1_1command__resolved.html#a5fc7b8909f13bc77e433fae06706253f">More...</a><br /></td></tr>
+<tr class="separator:a5fc7b8909f13bc77e433fae06706253f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Resolved snowflake ids to usernames. TODO: Needs implementation. Not needed something that functions as we have cache. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p >Resolved snowflake ids to users, guild members, roles and channels. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5fc7b8909f13bc77e433fae06706253f" name="a5fc7b8909f13bc77e433fae06706253f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc7b8909f13bc77e433fae06706253f">&#9670;&nbsp;</a></span>channels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>&gt; dpp::command_resolved::channels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolved channels. </p>
+
+</div>
+</div>
+<a id="a31c6fdc7a7abe57a049534bcc4dccbd3" name="a31c6fdc7a7abe57a049534bcc4dccbd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c6fdc7a7abe57a049534bcc4dccbd3">&#9670;&nbsp;</a></span>members</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a>, <a class="el" href="classdpp_1_1guild__member.html">dpp::guild_member</a>&gt; dpp::command_resolved::members</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolved guild members. </p>
+
+</div>
+</div>
+<a id="a6f354275ab39eb9b0771a167fd7af7fc" name="a6f354275ab39eb9b0771a167fd7af7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f354275ab39eb9b0771a167fd7af7fc">&#9670;&nbsp;</a></span>roles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a>, <a class="el" href="classdpp_1_1role.html">dpp::role</a>&gt; dpp::command_resolved::roles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolved roles. </p>
+
+</div>
+</div>
+<a id="a253cd8cb71207dbdf0b8f687218f24e3" name="a253cd8cb71207dbdf0b8f687218f24e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a253cd8cb71207dbdf0b8f687218f24e3">&#9670;&nbsp;</a></span>users</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a>, <a class="el" href="classdpp_1_1user.html">dpp::user</a>&gt; dpp::command_resolved::users</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolved users. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
@@ -128,7 +220,7 @@ $(document).ready(function(){initNavTree('structdpp_1_1command__resolved.html','
 </script>
 <div style="z-index: -9999; position: absolute; right: 0; top: 0; font-size: 0.0001rem;color:transparent;background:none">
 	<!-- For crawlability of past versions -->
-	<a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.0/'>D++ Library version v1.0.0</a><a href='/1.0.1/'>D++ Library version v1.0.1</a><a href='/1.0.2/'>D++ Library version v1.0.2</a><a href='/9.0.1/'>D++ Library version v9.0.1</a><a href='/9.0.2/'>D++ Library version v9.0.2</a><a href='/9.0.3/'>D++ Library version v9.0.3</a><a href='/9.0.4/'>D++ Library version v9.0.4</a><a href='/9.0.5/'>D++ Library version v9.0.5</a><a href='/9.0.6/'>D++ Library version v9.0.6</a><a href='/9.0.7/'>D++ Library version v9.0.7</a><a href='/9.0.8/'>D++ Library version v9.0.8</a><a href='/9.0.9/'>D++ Library version v9.0.9</a><a href='/9.0.10/'>D++ Library version v9.0.10</a>
+	<a href='/9.0.10/'>D++ Library version 9.0.10</a><a href='/9.0.9/'>D++ Library version 9.0.9</a><a href='/9.0.8/'>D++ Library version 9.0.8</a><a href='/9.0.7/'>D++ Library version 9.0.7</a><a href='/9.0.6/'>D++ Library version 9.0.6</a><a href='/9.0.5/'>D++ Library version 9.0.5</a><a href='/9.0.4/'>D++ Library version 9.0.4</a><a href='/9.0.3/'>D++ Library version 9.0.3</a><a href='/9.0.2/'>D++ Library version 9.0.2</a><a href='/9.0.1/'>D++ Library version 9.0.1</a><a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.2/'>D++ Library version 1.0.2</a><a href='/1.0.1/'>D++ Library version 1.0.1</a><a href='/1.0.0/'>D++ Library version 1.0.0</a>
 </div>
 </body>
 </html>

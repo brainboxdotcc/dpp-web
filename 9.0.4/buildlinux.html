@@ -30,7 +30,7 @@
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <script>
 	setTimeout(function() {
-		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option selected value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
+		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option selected value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
 	}, 500);
 </script>
 <div id="titlearea">
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('buildlinux.html',''); initResizable();
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
 Building on Linux</h1>
+<dl class="section note"><dt>Note</dt><dd>You might not need to build a copy of the library for Linux - precompiled deb files for 64 bit and 32 bit Debian and Ubuntu are provided in the GitHub version releases. Unless you are on a different Linux distribution which does not support the installation of deb files, or wish to submit fixes and enhancements to the library itself you should have an easier time installing the precompiled version instead.</dd></dl>
 <h2><a class="anchor" id="autotoc_md2"></a>
 1. Build Source Code</h2>
 <pre class="fragment">mkdir build
@@ -113,7 +114,7 @@ make -j8
 </pre><p> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 2. Optional: Run test cases</h2>
-<p >run <code>./test</code> for unit test cases. You will need to create a <code>config.json</code> file in the directory above the executable file with a valid bot token in it. See the example file <code>config.example.json</code> for an example of the correct format.</p>
+<p >Run <code>./test</code> for unit test cases. You will need to create a <code>config.json</code> file in the directory above the executable file with a valid bot token in it. See the example file <code>config.example.json</code> for an example of the correct format.</p>
 <h2><a class="anchor" id="autotoc_md4"></a>
 3. Install to /usr/local/include and /usr/local/lib</h2>
 <pre class="fragment">sudo make install
@@ -126,12 +127,14 @@ make -j8
 <p >Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp
 </pre><p> The important flags in this command-line are:</p>
 <ul>
-<li><code>-std=c++17</code> - Required to compile the headers</li>
-<li><code>-lfmt</code> - Link to libdpp.so in /usr/local</li>
+<li><code>-std=c++17</code> - Required to compile the headers<ul>
 <li><code>mydppbot.cpp</code> - Your source code</li>
+</ul>
+</li>
 <li><code>dppbot</code> - The name of the executable to make</li>
 </ul>
-<p >Of course, this is just a proof of concept - you should really use a more robust build system like GNU <code>make</code> or <a class="el" href="buildcmake.html">`cmake`</a>.</p>
+<p >Of course, this is just a proof of concept — you should really use a more robust build system like GNU <code>make</code> or <a class="el" href="buildcmake.html">`cmake`</a>.</p>
+<p >If you are having trouble setting up CMake, you can try <a href="https://github.com/brainboxdotcc/templatebot">our template bot</a>.</p>
 <p ><b>Have fun!</b> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -153,7 +156,7 @@ make -j8
 </script>
 <div style="z-index: -9999; position: absolute; right: 0; top: 0; font-size: 0.0001rem;color:transparent;background:none">
 	<!-- For crawlability of past versions -->
-	<a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.0/'>D++ Library version v1.0.0</a><a href='/1.0.1/'>D++ Library version v1.0.1</a><a href='/1.0.2/'>D++ Library version v1.0.2</a><a href='/9.0.1/'>D++ Library version v9.0.1</a><a href='/9.0.2/'>D++ Library version v9.0.2</a><a href='/9.0.3/'>D++ Library version v9.0.3</a><a href='/9.0.4/'>D++ Library version v9.0.4</a><a href='/9.0.5/'>D++ Library version v9.0.5</a><a href='/9.0.6/'>D++ Library version v9.0.6</a><a href='/9.0.7/'>D++ Library version v9.0.7</a><a href='/9.0.8/'>D++ Library version v9.0.8</a><a href='/9.0.9/'>D++ Library version v9.0.9</a><a href='/9.0.10/'>D++ Library version v9.0.10</a>
+	<a href='/9.0.10/'>D++ Library version 9.0.10</a><a href='/9.0.9/'>D++ Library version 9.0.9</a><a href='/9.0.8/'>D++ Library version 9.0.8</a><a href='/9.0.7/'>D++ Library version 9.0.7</a><a href='/9.0.6/'>D++ Library version 9.0.6</a><a href='/9.0.5/'>D++ Library version 9.0.5</a><a href='/9.0.4/'>D++ Library version 9.0.4</a><a href='/9.0.3/'>D++ Library version 9.0.3</a><a href='/9.0.2/'>D++ Library version 9.0.2</a><a href='/9.0.1/'>D++ Library version 9.0.1</a><a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.2/'>D++ Library version 1.0.2</a><a href='/1.0.1/'>D++ Library version 1.0.1</a><a href='/1.0.0/'>D++ Library version 1.0.0</a>
 </div>
 </body>
 </html>

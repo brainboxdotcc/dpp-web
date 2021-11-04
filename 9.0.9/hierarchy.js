@@ -2,11 +2,14 @@ var hierarchy =
 [
     [ "dpp::activity", "classdpp_1_1activity.html", null ],
     [ "dpp::message::allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", null ],
+    [ "dpp::app_team", "classdpp_1_1app__team.html", null ],
+    [ "dpp::application", "classdpp_1_1application.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
     [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ],
+    [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
     [ "dpp::ban", "classdpp_1_1ban.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache", "classdpp_1_1cache.html", null ],
@@ -27,6 +30,7 @@ var hierarchy =
     [ "dpp::component_interaction", "structdpp_1_1component__interaction.html", null ],
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
+    [ "dpp::connection", "classdpp_1_1connection.html", null ],
     [ "dpp::dispatcher", "classdpp_1_1dispatcher.html", null ],
     [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
@@ -124,6 +128,7 @@ var hierarchy =
       [ "dpp::integration_delete_t", "structdpp_1_1integration__delete__t.html", null ],
       [ "dpp::integration_update_t", "structdpp_1_1integration__update__t.html", null ],
       [ "dpp::interaction_create_t", "structdpp_1_1interaction__create__t.html", [
+        [ "dpp::autocomplete_t", "structdpp_1_1autocomplete__t.html", null ],
         [ "dpp::button_click_t", "structdpp_1_1button__click__t.html", null ],
         [ "dpp::select_click_t", "structdpp_1_1select__click__t.html", null ]
       ] ],
@@ -220,6 +225,7 @@ var hierarchy =
     [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
     [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
+    [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
@@ -228,5 +234,7 @@ var hierarchy =
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
+    [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
+    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ],
     [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
 ];

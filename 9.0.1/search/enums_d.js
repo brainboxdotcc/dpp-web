@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_5fflags_0',['user_flags',['../namespacedpp.html#ace1318b24526febab72157cdd8b7b468',1,'dpp']]]
+  ['team_5fmember_5fstatus_0',['team_member_status',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4',1,'dpp']]]
 ];

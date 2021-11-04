@@ -2,14 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="components" kind="page">
     <compoundname>components</compoundname>
-    <title>Using component interactions</title>
+    <title>Using component interactions (buttons)</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Discord&apos;s newest features support sending buttons alongside messages, which when clicked by the user trigger an interaction which is routed by D++ as an on_button_click event. To make use of this, use code as in this example.</para>
-<para><simplesect kind="note"><para>Please be aware that this feature is currently in a <bold>closed beta</bold>. There is no way to get access to this at present to test this or see buttons in your bot. When this is released, this functionality of the library will work as expected.</para>
-</simplesect>
-<programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/message.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -25,7 +23,8 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::message(event.msg-&gt;channel_id,<sp/></highlight><highlight class="stringliteral">&quot;this<sp/>text<sp/>has<sp/>buttons&quot;</highlight><highlight class="normal">).add_component(</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::component().add_component(</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::component().set_label(</highlight><highlight class="stringliteral">&quot;Click<sp/>me!&quot;</highlight><highlight class="normal">).</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_emoji(</highlight><highlight class="stringliteral">&quot;😄&quot;</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_type(dpp::cot_button).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_emoji(u8</highlight><highlight class="stringliteral">&quot;😄&quot;</highlight><highlight class="normal">).</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_style(dpp::cos_danger).</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_id(</highlight><highlight class="stringliteral">&quot;myid&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
@@ -53,6 +52,6 @@
 <para><image type="html" name="button.png"></image>
  </para>
     </detaileddescription>
-    <location file="docpages/Z_04_EXAMPLE.md"/>
+    <location file="docpages/03_example_programs.md"/>
   </compounddef>
 </doxygen>

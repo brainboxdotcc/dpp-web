@@ -30,7 +30,7 @@
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <script>
 	setTimeout(function() {
-		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option selected value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
+		$("#main-menu").html($("#main-menu").html() + "<li><select name='vsv' onchange='window.location.href=this.options[this.selectedIndex].value'><option value='/'>master</option><option value='/9.0.10/'>9.0.10</option><option value='/9.0.9/'>9.0.9</option><option value='/9.0.8/'>9.0.8</option><option value='/9.0.7/'>9.0.7</option><option selected value='/9.0.6/'>9.0.6</option><option value='/9.0.5/'>9.0.5</option><option value='/9.0.4/'>9.0.4</option><option value='/9.0.3/'>9.0.3</option><option value='/9.0.2/'>9.0.2</option><option value='/9.0.1/'>9.0.1</option><option value='/9.0.0/'>9.0.0</option><option value='/1.0.2/'>1.0.2</option><option value='/1.0.1/'>1.0.1</option><option value='/1.0.0/'>1.0.0</option></select></li>");
 	}, 500);
 </script>
 <div id="titlearea">
@@ -132,16 +132,26 @@ $(document).ready(function(){initNavTree('structdpp_1_1resumed__t.html',''); ini
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a39a9ceb42b2608326c23e25412eb6967"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resumed__t.html#a39a9ceb42b2608326c23e25412eb6967">resumed_t</a> (class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *client, const std::string &amp;raw)</td></tr>
 <tr class="separator:a39a9ceb42b2608326c23e25412eb6967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afbcd36109734ad0fca14ec848b73b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">cancel_event</a> () const</td></tr>
+<tr class="memdesc:a5afbcd36109734ad0fca14ec848b73b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">More...</a><br /></td></tr>
+<tr class="separator:a5afbcd36109734ad0fca14ec848b73b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2880114f69b7ba62eb5137824c1432"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#aca2880114f69b7ba62eb5137824c1432">is_cancelled</a> () const</td></tr>
+<tr class="memdesc:aca2880114f69b7ba62eb5137824c1432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#aca2880114f69b7ba62eb5137824c1432">More...</a><br /></td></tr>
+<tr class="separator:aca2880114f69b7ba62eb5137824c1432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a117033854fb7a8d871ed5a7638a8d8e6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resumed__t.html#a117033854fb7a8d871ed5a7638a8d8e6">session_id</a></td></tr>
+<tr class="memdesc:a117033854fb7a8d871ed5a7638a8d8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">websocket session id  <a href="structdpp_1_1resumed__t.html#a117033854fb7a8d871ed5a7638a8d8e6">More...</a><br /></td></tr>
 <tr class="separator:a117033854fb7a8d871ed5a7638a8d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6427ec22c7567f5b39db9777d114dac7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resumed__t.html#a6427ec22c7567f5b39db9777d114dac7">shard_id</a></td></tr>
+<tr class="memdesc:a6427ec22c7567f5b39db9777d114dac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">shard id  <a href="structdpp_1_1resumed__t.html#a6427ec22c7567f5b39db9777d114dac7">More...</a><br /></td></tr>
 <tr class="separator:a6427ec22c7567f5b39db9777d114dac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d4777d1049d31ed943ecebfa2de7db9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a2d4777d1049d31ed943ecebfa2de7db9">raw_event</a></td></tr>
-<tr class="separator:a2d4777d1049d31ed943ecebfa2de7db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22df2fa7e547eaefbd65e501d8bf67b7"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a22df2fa7e547eaefbd65e501d8bf67b7">raw_event</a></td></tr>
+<tr class="memdesc:a22df2fa7e547eaefbd65e501d8bf67b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data.  <a href="structdpp_1_1event__dispatch__t.html#a22df2fa7e547eaefbd65e501d8bf67b7">More...</a><br /></td></tr>
+<tr class="separator:a22df2fa7e547eaefbd65e501d8bf67b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a357873be4dd30eef7928ae5f7c13e7db"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db">from</a></td></tr>
+<tr class="memdesc:a357873be4dd30eef7928ae5f7c13e7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shard the event came from. Note that for some events, notably voice events, this may be nullptr.  <a href="structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db">More...</a><br /></td></tr>
 <tr class="separator:a357873be4dd30eef7928ae5f7c13e7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -182,6 +192,63 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5afbcd36109734ad0fca14ec848b73b7" name="a5afbcd36109734ad0fca14ec848b73b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afbcd36109734ad0fca14ec848b73b7">&#9670;&nbsp;</a></span>cancel_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp; dpp::event_dispatch_t::cancel_event </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state). </p>
+<dl class="section return"><dt>Returns</dt><dd>const <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>&amp; reference to self for chaining </dd></dl>
+
+</div>
+</div>
+<a id="aca2880114f69b7ba62eb5137824c1432" name="aca2880114f69b7ba62eb5137824c1432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca2880114f69b7ba62eb5137824c1432">&#9670;&nbsp;</a></span>is_cancelled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::event_dispatch_t::is_cancelled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state). </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the event is cancelled </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a357873be4dd30eef7928ae5f7c13e7db" name="a357873be4dd30eef7928ae5f7c13e7db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a357873be4dd30eef7928ae5f7c13e7db">&#9670;&nbsp;</a></span>from</h2>
@@ -202,12 +269,13 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Shard the event came from </p>
+
+<p>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </p>
 
 </div>
 </div>
-<a id="a2d4777d1049d31ed943ecebfa2de7db9" name="a2d4777d1049d31ed943ecebfa2de7db9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d4777d1049d31ed943ecebfa2de7db9">&#9670;&nbsp;</a></span>raw_event</h2>
+<a id="a22df2fa7e547eaefbd65e501d8bf67b7" name="a22df2fa7e547eaefbd65e501d8bf67b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22df2fa7e547eaefbd65e501d8bf67b7">&#9670;&nbsp;</a></span>raw_event</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +284,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string dpp::event_dispatch_t::raw_event</td>
+          <td class="memname">const std::string dpp::event_dispatch_t::raw_event</td>
         </tr>
       </table>
   </td>
@@ -225,7 +293,8 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Raw event text </p>
+
+<p>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </p>
 
 </div>
 </div>
@@ -241,6 +310,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>websocket session id </p>
+
 </div>
 </div>
 <a id="a6427ec22c7567f5b39db9777d114dac7" name="a6427ec22c7567f5b39db9777d114dac7"></a>
@@ -254,6 +325,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>shard id </p>
 
 </div>
 </div>
@@ -276,7 +349,7 @@ Public Attributes</h2></td></tr>
 </script>
 <div style="z-index: -9999; position: absolute; right: 0; top: 0; font-size: 0.0001rem;color:transparent;background:none">
 	<!-- For crawlability of past versions -->
-	<a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.0/'>D++ Library version v1.0.0</a><a href='/1.0.1/'>D++ Library version v1.0.1</a><a href='/1.0.2/'>D++ Library version v1.0.2</a><a href='/9.0.1/'>D++ Library version v9.0.1</a><a href='/9.0.2/'>D++ Library version v9.0.2</a><a href='/9.0.3/'>D++ Library version v9.0.3</a><a href='/9.0.4/'>D++ Library version v9.0.4</a><a href='/9.0.5/'>D++ Library version v9.0.5</a><a href='/9.0.6/'>D++ Library version v9.0.6</a><a href='/9.0.7/'>D++ Library version v9.0.7</a><a href='/9.0.8/'>D++ Library version v9.0.8</a><a href='/9.0.9/'>D++ Library version v9.0.9</a><a href='/9.0.10/'>D++ Library version v9.0.10</a>
+	<a href='/9.0.10/'>D++ Library version 9.0.10</a><a href='/9.0.9/'>D++ Library version 9.0.9</a><a href='/9.0.8/'>D++ Library version 9.0.8</a><a href='/9.0.7/'>D++ Library version 9.0.7</a><a href='/9.0.6/'>D++ Library version 9.0.6</a><a href='/9.0.5/'>D++ Library version 9.0.5</a><a href='/9.0.4/'>D++ Library version 9.0.4</a><a href='/9.0.3/'>D++ Library version 9.0.3</a><a href='/9.0.2/'>D++ Library version 9.0.2</a><a href='/9.0.1/'>D++ Library version 9.0.1</a><a href='/9.0.0/'>D++ Library version 9.0.0</a><a href='/1.0.2/'>D++ Library version 1.0.2</a><a href='/1.0.1/'>D++ Library version 1.0.1</a><a href='/1.0.0/'>D++ Library version 1.0.0</a>
 </div>
 </body>
 </html>

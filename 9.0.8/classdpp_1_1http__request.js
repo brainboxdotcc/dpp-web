@@ -1,6 +1,6 @@
 var classdpp_1_1http__request =
 [
-    [ "http_request", "classdpp_1_1http__request.html#a46242b648249b5e8a67e2abdb306c3b3", null ],
+    [ "http_request", "classdpp_1_1http__request.html#a07b3bbba903d3b5c4c489da6148b3ee4", null ],
     [ "http_request", "classdpp_1_1http__request.html#a7a2134b1a466d6f523a37c5631376073", null ],
     [ "~http_request", "classdpp_1_1http__request.html#a94d82f10c9922b400b1dd5b8459a6691", null ],
     [ "complete", "classdpp_1_1http__request.html#a6f350d4340fe77e224783091607f63eb", null ],
@@ -13,5 +13,6 @@ var classdpp_1_1http__request =
     [ "mimetype", "classdpp_1_1http__request.html#aedac6464c95174507a322861191ccc02", null ],
     [ "parameters", "classdpp_1_1http__request.html#a349ce3f41c300aeac915d38f8f1d8642", null ],
     [ "postdata", "classdpp_1_1http__request.html#adab1976475788ca96b5b52349367a322", null ],
+    [ "reason", "classdpp_1_1http__request.html#a96bc944a868341d97772beca88f02ac0", null ],
     [ "req_headers", "classdpp_1_1http__request.html#a7248f6e47440f670e2a9adbfb50022bc", null ]
 ];

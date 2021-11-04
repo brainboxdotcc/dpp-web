@@ -60,5 +60,6 @@ var classdpp_1_1guild =
     [ "verification_level", "classdpp_1_1guild.html#a6132ae5944f766ade85c4fc4521180a5", null ],
     [ "voice_members", "classdpp_1_1guild.html#a42066fe3bbfb976ba27fbb9ca38b722f", null ],
     [ "voice_region", "classdpp_1_1guild.html#ab4e8470fb6d73ecc5cf60d952616fda6", null ],
+    [ "welcome_screen", "classdpp_1_1guild.html#a5a37b855f93b3fcd6ce083329dace4f1", null ],
     [ "widget_channel_id", "classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01", null ]
 ];

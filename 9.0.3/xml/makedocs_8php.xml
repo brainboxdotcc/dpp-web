@@ -28,11 +28,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="docpages/makedocs.php" line="13" column="1" bodyfile="docpages/makedocs.php" bodystart="13" bodyend="-1"/>
+        <location file="docpages/makedocs.php" line="14" column="1" bodyfile="docpages/makedocs.php" bodystart="14" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="makedocs_8php_1aa3e9534005fd516d941f6a5569896e01" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="makedocs_8php_1a475a6a63b85186663d34151bcbd21590" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>$template</definition>
+        <definition>$tags</definition>
+        <argsstring></argsstring>
+        <name>$tags</name>
+        <initializer>= explode(&quot;\n&quot;, shell_exec(&quot;git tag&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="16" column="1" bodyfile="docpages/makedocs.php" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1a94085dd5e12daab0d2b68dcec20539fa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$taglist</definition>
+        <argsstring></argsstring>
+        <name>$taglist</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs.php" line="18" column="1" bodyfile="docpages/makedocs.php" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs_8php_1acab205064e5579a0432a1a7b3e0aec01" prot="public" static="no" mutable="no">
+        <type>foreach($tags as $tag)</type>
+        <definition>foreach ( $tags as $tag) $template</definition>
         <argsstring></argsstring>
         <name>$template</name>
         <initializer>= file_get_contents(&quot;header.template.html&quot;)</initializer>
@@ -42,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="docpages/makedocs.php" line="16" column="1" bodyfile="docpages/makedocs.php" bodystart="16" bodyend="-1"/>
+        <location file="docpages/makedocs.php" line="26" column="1" bodyfile="docpages/makedocs.php" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="makedocs_8php_1a4f44601f2b9dc8a1644bce53c94ce622" prot="public" static="no" mutable="no">
         <type></type>
@@ -56,14 +84,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="docpages/makedocs.php" line="17" column="1" bodyfile="docpages/makedocs.php" bodystart="17" bodyend="-1"/>
+        <location file="docpages/makedocs.php" line="27" column="1" bodyfile="docpages/makedocs.php" bodystart="27" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="makedocs_8php_1a475a6a63b85186663d34151bcbd21590" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="makedocs_8php_1abaa4216c852c51c380dd8f10d3cfe944" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>$tags</definition>
+        <definition>$footer</definition>
         <argsstring></argsstring>
-        <name>$tags</name>
-        <initializer>= explode(&quot;\n&quot;, shell_exec(&quot;git tag&quot;))</initializer>
+        <name>$footer</name>
+        <initializer>= file_get_contents(&quot;footer.template.html&quot;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -83,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="docpages/makedocs.php" line="35" column="1" bodyfile="docpages/makedocs.php" bodystart="35" bodyend="-1"/>
+        <location file="docpages/makedocs.php" line="46" column="1" bodyfile="docpages/makedocs.php" bodystart="46" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
