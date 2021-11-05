@@ -1426,36 +1426,6 @@
         </inbodydescription>
         <location file="include/dpp/etf.h" line="571" column="16" bodyfile="src/dpp/etf.cpp" bodystart="631" bodyend="642"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1etf__parser_1a9c074f9ccd302a8eae2ffe3d19c9adc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::etf_parser::build</definition>
-        <argsstring>(const nlohmann::json &amp;j)</argsstring>
-        <name>build</name>
-        <param>
-          <type>const nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Create ETF binary data from nlohmann::json. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>JSON value to encode to ETF </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string raw ETF data. Note that this can and probably will contain null values, use std::string::data() and std::string::size() to manipulate or send it. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/etf.h" line="581" column="13" bodyfile="src/dpp/etf.cpp" bodystart="716" bodyend="721"/>
-      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>The <ref refid="classdpp_1_1etf__parser" kindref="compound">etf_parser</ref> class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohmann::json object, so that layers above the websocket don&apos;t have to be any different for handling ETF. </para>
@@ -1482,7 +1452,6 @@
       <member refid="classdpp_1_1etf__parser_1ac25fdf66bb5f7216cba9e70cabf8a484" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_unsigned_long_long</name></member>
       <member refid="classdpp_1_1etf__parser_1ae9beba8cfe1c35806f40dbdc7d190403" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_version</name></member>
       <member refid="classdpp_1_1etf__parser_1a95b0046624f88ae59d3f483728d9d0b5" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>buffer_write</name></member>
-      <member refid="classdpp_1_1etf__parser_1a9c074f9ccd302a8eae2ffe3d19c9adc0" prot="public" virt="non-virtual"><scope>dpp::etf_parser</scope><name>build</name></member>
       <member refid="classdpp_1_1etf__parser_1a1b5969a81823b8938e860a0690685950" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>data</name></member>
       <member refid="classdpp_1_1etf__parser_1a18f60dde0715b34e6cb9504f233c3dd6" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_array</name></member>
       <member refid="classdpp_1_1etf__parser_1a747485967f92bab65bee8db90c3eda54" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_atom</name></member>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"structdpp_1_1typing__start__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,135,2],
-"structdpp_1_1typing__start__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,1,135,2],
 "structdpp_1_1user__update__t.html":[7,0,1,137],
 "structdpp_1_1user__update__t.html":[6,0,1,137],
 "structdpp_1_1user__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,137,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX21 =
 "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#a0222d68c5e1ca97550eecb6cf60abed0":[7,0,3,0],
 "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#a57c0d36c7943de87688eeae9c3bd0b28":[7,0,3,3],
 "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#a9c8caf13b1795ab3974768dc5f98a0e9":[7,0,3,2],
-"structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#aa0e7df1351cc1c6f9a760c12bf9d31b0":[7,0,3,1]
+"structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#aa0e7df1351cc1c6f9a760c12bf9d31b0":[7,0,3,1],
+"structformatter_3_01std_1_1tm_00_01_char_01_4.html":[7,0,4],
+"structformatter_3_01std_1_1tm_00_01_char_01_4.html#a0222d68c5e1ca97550eecb6cf60abed0":[7,0,4,0]
 };
