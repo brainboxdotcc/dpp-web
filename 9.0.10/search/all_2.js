@@ -41,7 +41,7 @@ var searchData=
   ['channel_5fpins_5fupdate_5ft_38',['channel_pins_update_t',['../structdpp_1_1channel__pins__update__t.html#a91754873add345d5d4b3e12110394e23',1,'dpp::channel_pins_update_t::channel_pins_update_t()'],['../structdpp_1_1channel__pins__update__t.html',1,'dpp::channel_pins_update_t']]],
   ['channel_5ftype_39',['channel_type',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092',1,'dpp']]],
   ['channel_5ftypes_40',['channel_types',['../structdpp_1_1command__option.html#a447f1eea2df77fd55ba9a122a80c3ccf',1,'dpp::command_option']]],
-  ['channel_5ftyping_41',['channel_typing',['../classdpp_1_1cluster.html#a2caf58e161373fd3fa26172a4a78c835',1,'dpp::cluster']]],
+  ['channel_5ftyping_41',['channel_typing',['../classdpp_1_1cluster.html#a2caf58e161373fd3fa26172a4a78c835',1,'dpp::cluster::channel_typing(const class channel &amp;c, command_completion_event_t callback={})'],['../classdpp_1_1cluster.html#ad80ac0e99c0a20c9c05678631189b8f3',1,'dpp::cluster::channel_typing(snowflake cid, command_completion_event_t callback={})']]],
   ['channel_5fupdate_42',['channel_update',['../classdpp_1_1dispatcher.html#a10542964e34b031dbf6c29db5e29bb6e',1,'dpp::dispatcher::channel_update()'],['../classdpp_1_1events_1_1channel__update.html',1,'dpp::events::channel_update']]],
   ['channel_5fupdate_5ft_43',['channel_update_t',['../structdpp_1_1channel__update__t.html#afdadb0a8a19ba2d5e3203953d9d0f404',1,'dpp::channel_update_t::channel_update_t()'],['../structdpp_1_1channel__update__t.html',1,'dpp::channel_update_t']]],
   ['channels_44',['channels',['../structdpp_1_1command__resolved.html#a5fc7b8909f13bc77e433fae06706253f',1,'dpp::command_resolved::channels()'],['../classdpp_1_1guild.html#a0995288cfbf8ae64973bbf0181d1789a',1,'dpp::guild::channels()']]],

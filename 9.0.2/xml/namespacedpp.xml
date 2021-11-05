@@ -2176,12 +2176,13 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Represents the type of a sticker. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="593" column="1" bodyfile="include/dpp/message.h" bodystart="593" bodyend="598"/>
+        <location file="include/dpp/message.h" line="686" column="1" bodyfile="include/dpp/message.h" bodystart="686" bodyend="691"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ae2ee458707682eabe7d539c9a13beac2" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2217,7 +2218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="603" column="1" bodyfile="include/dpp/message.h" bodystart="603" bodyend="607"/>
+        <location file="include/dpp/message.h" line="696" column="1" bodyfile="include/dpp/message.h" bodystart="696" bodyend="700"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8" prot="public" static="no" strong="no">
         <type></type>
@@ -2301,7 +2302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="724" column="1" bodyfile="include/dpp/message.h" bodystart="724" bodyend="741"/>
+        <location file="include/dpp/message.h" line="820" column="1" bodyfile="include/dpp/message.h" bodystart="820" bodyend="837"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1acd7f41dcc93c1cf48514d2b123e4d8bc" prot="public" static="no" strong="no">
         <type></type>
@@ -2520,7 +2521,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="746" column="1" bodyfile="include/dpp/message.h" bodystart="746" bodyend="793"/>
+        <location file="include/dpp/message.h" line="842" column="1" bodyfile="include/dpp/message.h" bodystart="842" bodyend="889"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52" prot="public" static="no" strong="no">
         <type></type>
@@ -2529,7 +2530,7 @@
           <name>cp_aggressive</name>
           <initializer>= 0</initializer>
           <briefdescription>
-<para>request aggressively on seeing new guilds, and also store missing data from messages. This is the default behaviour. </para>
+<para>request aggressively on seeing new guilds, and also store missing data from messages. This is the default behaviour and the least memory-efficient option. Memory usage will increase over time, initiailly quite rapidly, and then linearly over time. It is the least cpu-intensive setting. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -2538,7 +2539,7 @@
           <name>cp_lazy</name>
           <initializer>= 1</initializer>
           <briefdescription>
-<para>only cache when there is relavent activity, e.g. a message to the bot. </para>
+<para>only cache when there is relavent activity, e.g. a message to the bot. This is a good middle-ground, memory usage will increase linearly over time. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -2547,18 +2548,19 @@
           <name>cp_none</name>
           <initializer>= 2</initializer>
           <briefdescription>
-<para>Don&apos;t cache anything. Fill details when we see them. (NOT IMPLEMENTED YET) </para>
+<para>Don&apos;t cache anything. Fill details when we see them. This is the most memory-efficient option but consumes more CPU time. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Represents the caching policy of a cache in the library. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="795" column="1" bodyfile="include/dpp/message.h" bodystart="795" bodyend="810"/>
+        <location file="include/dpp/message.h" line="894" column="1" bodyfile="include/dpp/message.h" bodystart="894" bodyend="912"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a953f1484a5140481ffab2b248618fb22" prot="public" static="no" strong="no">
         <type></type>
@@ -3755,6 +3757,7 @@
           <name>sp_public</name>
           <initializer>= 1</initializer>
           <briefdescription>
+<para>The Stage instance is visible publicly, such as on Stage Discovery. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -3763,18 +3766,19 @@
           <name>sp_guild_only</name>
           <initializer>= 2</initializer>
           <briefdescription>
-<para>The Stage instance is visible publicly, such as on Stage Discovery. </para>
+<para>The Stage instance is visible to only guild members. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Represents the privacy of a stage instance. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/stage_instance.h" line="28" column="1" bodyfile="include/dpp/stage_instance.h" bodystart="28" bodyend="31"/>
+        <location file="include/dpp/stage_instance.h" line="31" column="1" bodyfile="include/dpp/stage_instance.h" bodystart="31" bodyend="36"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a99a238db04976402abb94ea0c989d8c0" prot="public" static="no" strong="no">
         <type>uint32_t</type>
@@ -4555,7 +4559,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/integration.h" line="157" column="28" bodyfile="include/dpp/integration.h" bodystart="157" bodyend="-1"/>
+        <location file="include/dpp/integration.h" line="159" column="28" bodyfile="include/dpp/integration.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1connection" kindref="compound">connection</ref> &gt;</type>
@@ -4569,7 +4573,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/integration.h" line="160" column="28" bodyfile="include/dpp/integration.h" bodystart="160" bodyend="-1"/>
+        <location file="include/dpp/integration.h" line="162" column="28" bodyfile="include/dpp/integration.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" prot="public" static="no">
         <type>std::unordered_map&lt; std::string, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &gt;</type>
@@ -4597,7 +4601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1120" column="28" bodyfile="include/dpp/message.h" bodystart="1120" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1249" column="28" bodyfile="include/dpp/message.h" bodystart="1249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
@@ -4611,7 +4615,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1123" column="28" bodyfile="include/dpp/message.h" bodystart="1123" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1252" column="28" bodyfile="include/dpp/message.h" bodystart="1252" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref> &gt;</type>
@@ -4625,7 +4629,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1126" column="28" bodyfile="include/dpp/message.h" bodystart="1126" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1255" column="28" bodyfile="include/dpp/message.h" bodystart="1255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a037f40c104056183a26a4b4dbdf76f4f" prot="public" static="no">
         <type>std::unordered_map&lt; std::string, <ref refid="classdpp_1_1presence" kindref="compound">presence</ref> &gt;</type>
@@ -4976,7 +4980,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="83" column="11" bodyfile="src/dpp/sslclient.cpp" bodystart="83" bodyend="-1"/>
+        <location file="src/dpp/sslclient.cpp" line="92" column="11" bodyfile="src/dpp/sslclient.cpp" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1ab5f42fb08301629416cbca4d5412c0fd" prot="public" static="no" mutable="no">
         <type>const unsigned char</type>
