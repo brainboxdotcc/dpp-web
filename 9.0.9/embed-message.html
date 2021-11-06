@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('embed-message.html',''); initResizable
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!embed&quot;</span>) {</div>
 <div class="line"> </div>
-<div class="line">            <span class="comment">/* create the embed and send it into the channel */</span></div>
+<div class="line">            <span class="comment">/* create the embed */</span></div>
 <div class="line">            dpp::embed embed = dpp::embed().</div>
 <div class="line">                set_color(0x0099ff).</div>
 <div class="line">                set_title(<span class="stringliteral">&quot;Some name&quot;</span>).</div>
@@ -139,7 +139,8 @@ $(document).ready(function(){initNavTree('embed-message.html',''); initResizable
 <div class="line">                set_footer(dpp::embed_footer().set_text(<span class="stringliteral">&quot;Some footer text here&quot;</span>).set_icon(<span class="stringliteral">&quot;https://dpp.dev/DPP-Logo.png&quot;</span>)).</div>
 <div class="line">                set_timestamp(time(0));</div>
 <div class="line"> </div>
-<div class="line">            bot.message_create(dpp::message(event.msg-&gt;channel_id, embed));</div>
+<div class="line">            <span class="comment">/* reply with the created embed */</span></div>
+<div class="line">            bot.message_create(dpp::message(event.msg-&gt;channel_id, embed).set_reference(event.msg-&gt;id));</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
