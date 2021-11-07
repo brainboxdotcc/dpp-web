@@ -4947,7 +4947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1609" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="181" bodyend="187"/>
+        <location file="include/dpp/cluster.h" line="1609" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="173" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a41c9c18dd9185dfc2cc61b463ad7cf0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5000,15 +5000,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1619" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="189" bodyend="195"/>
+        <location file="include/dpp/cluster.h" line="1619" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="181" bodyend="187"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1a1140708ccf01ffb15f19f50ae731386d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a124b1a52ca2f5ae298f1bb99ca964dcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::cluster::global_command_create</definition>
-        <argsstring>(slashcommand &amp;s, command_completion_event_t callback={})</argsstring>
+        <argsstring>(const slashcommand &amp;s, command_completion_event_t callback={})</argsstring>
         <name>global_command_create</name>
         <param>
-          <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+          <type>const <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
           <declname>s</declname>
         </param>
         <param>
@@ -5020,14 +5020,14 @@
 <para>Create a global slash command (a bot can have a maximum of 100 of these). </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Global commands are cached by discord server-side and can take up to an hour to be visible. For testing, you should use <ref refid="classdpp_1_1cluster_1a5bca14a420fac05fbff570edb8d36e7a" kindref="member">cluster::guild_command_create</ref> instead.</para>
+<para><simplesect kind="note"><para>Global commands are cached by discord server-side and can take up to an hour to be visible. For testing, you should use <ref refid="classdpp_1_1cluster_1a4c0ce1ad5256a252ab0ce43923a07ae3" kindref="member">cluster::guild_command_create</ref> instead.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>s</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Slash command to create, s.id will be filled if the creation succeeds </para>
+<para>Slash command to create </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -5043,7 +5043,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1631" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="49" bodyend="59"/>
+        <location file="include/dpp/cluster.h" line="1631" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="49" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a74a61aa62ddf9207c197bfd496ae6ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5085,13 +5085,13 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="1640" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="27" bodyend="33"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1a5bca14a420fac05fbff570edb8d36e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a4c0ce1ad5256a252ab0ce43923a07ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::cluster::guild_command_create</definition>
-        <argsstring>(slashcommand &amp;s, snowflake guild_id, command_completion_event_t callback={})</argsstring>
+        <argsstring>(const slashcommand &amp;s, snowflake guild_id, command_completion_event_t callback={})</argsstring>
         <name>guild_command_create</name>
         <param>
-          <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+          <type>const <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
           <declname>s</declname>
         </param>
         <param>
@@ -5112,7 +5112,7 @@
 <parametername>s</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Slash command to create, s.id will be filled if the creation succeeds </para>
+<para>Slash command to create </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -5136,7 +5136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1650" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="115" bodyend="129"/>
+        <location file="include/dpp/cluster.h" line="1650" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="111" bodyend="121"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa7aad2d123fe4d13cb880ff59d8048f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5189,7 +5189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1663" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="93" bodyend="113"/>
+        <location file="include/dpp/cluster.h" line="1663" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="89" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2319ca200dcd5cce1b9b6696946ece22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5273,7 +5273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1687" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="69" bodyend="75"/>
+        <location file="include/dpp/cluster.h" line="1687" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="65" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4d555ccc3e69298ccac9d160ce3a71bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5326,7 +5326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1697" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="158" bodyend="164"/>
+        <location file="include/dpp/cluster.h" line="1697" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="150" bodyend="156"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4ebb701d07c25d3667f0e1640670bbc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5379,7 +5379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1708" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="139" bodyend="156"/>
+        <location file="include/dpp/cluster.h" line="1708" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="131" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7cb7e2a8ddcb41a39d989802853a8605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5420,7 +5420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1719" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="61" bodyend="67"/>
+        <location file="include/dpp/cluster.h" line="1719" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="57" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5b4a91a572c4e33ae60a3b09041ae3c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5473,7 +5473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1729" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="131" bodyend="137"/>
+        <location file="include/dpp/cluster.h" line="1729" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="123" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a01623d7535dc359905990e710ae3b5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5513,7 +5513,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1738" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="166" bodyend="179"/>
+        <location file="include/dpp/cluster.h" line="1738" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="158" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8a8cadcdde42fcfa8d29c0c4fd0bec5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5541,7 +5541,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1746" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="77" bodyend="90"/>
+        <location file="include/dpp/cluster.h" line="1746" column="6" bodyfile="src/dpp/cluster/appcommand.cpp" bodystart="73" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae3a5e7d9ba9dcbfc1e219eeb029f61ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12553,7 +12553,7 @@
       <member refid="classdpp_1_1cluster_1a8685b3bd821ab87342670d730689191e" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_webhook_message</name></member>
       <member refid="classdpp_1_1cluster_1a770526895ed13e2dfb746decc3f0be67" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_webhook_with_token</name></member>
       <member refid="classdpp_1_1cluster_1a2319ca200dcd5cce1b9b6696946ece22" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>global_bulk_command_create</name></member>
-      <member refid="classdpp_1_1cluster_1a1140708ccf01ffb15f19f50ae731386d" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>global_command_create</name></member>
+      <member refid="classdpp_1_1cluster_1a124b1a52ca2f5ae298f1bb99ca964dcb" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>global_command_create</name></member>
       <member refid="classdpp_1_1cluster_1a7cb7e2a8ddcb41a39d989802853a8605" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>global_command_delete</name></member>
       <member refid="classdpp_1_1cluster_1aef037a47fee2efddedfe78ba4bf0467c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>global_command_edit</name></member>
       <member refid="classdpp_1_1cluster_1a8a8cadcdde42fcfa8d29c0c4fd0bec5b" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>global_commands_get</name></member>
@@ -12563,7 +12563,7 @@
       <member refid="classdpp_1_1cluster_1a18f31527cd6b99cf2757e6c14dac5e5b" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_delete</name></member>
       <member refid="classdpp_1_1cluster_1a2102835f11fabbc2cd2e6b41155783f6" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_begin_prune</name></member>
       <member refid="classdpp_1_1cluster_1aa7aad2d123fe4d13cb880ff59d8048f5" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_bulk_command_create</name></member>
-      <member refid="classdpp_1_1cluster_1a5bca14a420fac05fbff570edb8d36e7a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_command_create</name></member>
+      <member refid="classdpp_1_1cluster_1a4c0ce1ad5256a252ab0ce43923a07ae3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_command_create</name></member>
       <member refid="classdpp_1_1cluster_1a5b4a91a572c4e33ae60a3b09041ae3c2" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_command_delete</name></member>
       <member refid="classdpp_1_1cluster_1a4d555ccc3e69298ccac9d160ce3a71bf" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_command_edit</name></member>
       <member refid="classdpp_1_1cluster_1a4ebb701d07c25d3667f0e1640670bbc1" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_command_edit_permissions</name></member>
