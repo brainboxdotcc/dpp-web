@@ -672,21 +672,21 @@ var namespacedpp =
       [ "w_incoming", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a", null ],
       [ "w_channel_follower", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354", null ]
     ] ],
-    [ "websocket_protocol_t", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55", [
-      [ "ws_json", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55abea765ef009bccd9080351f806bae437", null ],
-      [ "ws_etf", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55ac465dd3c03a072c41148d3562b6cbd64", null ]
+    [ "websocket_protocol_t", "namespacedpp.html#af7cde3079d745428f44ef6231a2ac672", [
+      [ "ws_json", "namespacedpp.html#af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437", null ],
+      [ "ws_etf", "namespacedpp.html#af7cde3079d745428f44ef6231a2ac672ac465dd3c03a072c41148d3562b6cbd64", null ]
     ] ],
-    [ "ws_opcode", "namespacedpp.html#a27a655378b0676c4444b32079c19d667", [
-      [ "OP_CONTINUATION", "namespacedpp.html#a27a655378b0676c4444b32079c19d667ac641ff6036ee7056ef3a2617f7dc6163", null ],
-      [ "OP_TEXT", "namespacedpp.html#a27a655378b0676c4444b32079c19d667a24f8b16a9b360f9ab17180433018587e", null ],
-      [ "OP_BINARY", "namespacedpp.html#a27a655378b0676c4444b32079c19d667ac6c295924c27154cf564628ebb9677c9", null ],
-      [ "OP_CLOSE", "namespacedpp.html#a27a655378b0676c4444b32079c19d667af10fce37d364106c0d8d13472f031bb0", null ],
-      [ "OP_PING", "namespacedpp.html#a27a655378b0676c4444b32079c19d667a1cba9d927313c32ed6fdbf191018ee59", null ],
-      [ "OP_PONG", "namespacedpp.html#a27a655378b0676c4444b32079c19d667a0dbab9ed2998b084825c4803c52fb7bc", null ]
+    [ "ws_opcode", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1c", [
+      [ "OP_CONTINUATION", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1cac641ff6036ee7056ef3a2617f7dc6163", null ],
+      [ "OP_TEXT", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1ca24f8b16a9b360f9ab17180433018587e", null ],
+      [ "OP_BINARY", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1cac6c295924c27154cf564628ebb9677c9", null ],
+      [ "OP_CLOSE", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1caf10fce37d364106c0d8d13472f031bb0", null ],
+      [ "OP_PING", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1ca1cba9d927313c32ed6fdbf191018ee59", null ],
+      [ "OP_PONG", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1ca0dbab9ed2998b084825c4803c52fb7bc", null ]
     ] ],
-    [ "ws_state", "namespacedpp.html#af0e6c1fc5986facd4bb63a152ffa6057", [
-      [ "HTTP_HEADERS", "namespacedpp.html#af0e6c1fc5986facd4bb63a152ffa6057ac4e7462fef7673f64bf129dde58c9f70", null ],
-      [ "CONNECTED", "namespacedpp.html#af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d", null ]
+    [ "ws_state", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519", [
+      [ "HTTP_HEADERS", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519ac4e7462fef7673f64bf129dde58c9f70", null ],
+      [ "CONNECTED", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519ab21dc4f63ee869c75f21c77922769e6d", null ]
     ] ],
     [ "base64_encode", "namespacedpp.html#a81eeb32f4e67cd830f6bc5f52c006c9b", null ],
     [ "BoolNotNull", "namespacedpp.html#af0b40be5029ec87c8df251f927e94eef", null ],

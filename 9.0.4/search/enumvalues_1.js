@@ -22,7 +22,7 @@ var searchData=
   ['co_5fsub_5fcommand_19',['co_sub_command',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c',1,'dpp']]],
   ['co_5fsub_5fcommand_5fgroup_20',['co_sub_command_group',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58aaf7efc648d35b8a702480f916c904547',1,'dpp']]],
   ['co_5fuser_21',['co_user',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a5a2ea837ca5ec64e6385acf392cef1e2',1,'dpp']]],
-  ['connected_22',['CONNECTED',['../namespacedpp.html#af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d',1,'dpp']]],
+  ['connected_22',['CONNECTED',['../namespacedpp.html#af3b7f3e861707f45beefa9449de70519ab21dc4f63ee869c75f21c77922769e6d',1,'dpp']]],
   ['cos_5fdanger_23',['cos_danger',['../namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5aa62ddfb05e437c4d4bf7a3ef1b73752b',1,'dpp']]],
   ['cos_5flink_24',['cos_link',['../namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6',1,'dpp']]],
   ['cos_5fprimary_25',['cos_primary',['../namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5ad29e42f919f0ba23aff73e3ea6ac1f5c',1,'dpp']]],

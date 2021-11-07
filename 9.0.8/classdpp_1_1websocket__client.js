@@ -1,6 +1,6 @@
 var classdpp_1_1websocket__client =
 [
-    [ "websocket_client", "classdpp_1_1websocket__client.html#a809b342e343bd370141ba25a5e90cf64", null ],
+    [ "websocket_client", "classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b", null ],
     [ "~websocket_client", "classdpp_1_1websocket__client.html#aea281ac4eef3336e3b78227beb21e4ef", null ],
     [ "close", "classdpp_1_1websocket__client.html#a3398642150ca79c8f266de83ee93aa30", null ],
     [ "Connect", "classdpp_1_1websocket__client.html#ac7f26051b6ce8db8e57536ce4e035caf", null ],

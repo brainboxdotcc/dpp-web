@@ -2689,6 +2689,7 @@
     <member refid="classdpp_1_1websocket__client_1a81d3d2f7c4ad7ca01777131d8131b294" kind="variable"><name>key</name></member>
     <member refid="classdpp_1_1websocket__client_1ad7337ca3851942c1457b95d71da5f790" kind="variable"><name>state</name></member>
     <member refid="classdpp_1_1websocket__client_1ab39bac55d55ee3af9046a5b7957caf1c" kind="variable"><name>path</name></member>
+    <member refid="classdpp_1_1websocket__client_1a6f9b303bbb4a2236fb16e6b7369f3974" kind="variable"><name>data_opcode</name></member>
     <member refid="classdpp_1_1websocket__client_1ad5d64b39f3946a9ce3801a2ffabeeca4" kind="variable"><name>HTTPHeaders</name></member>
     <member refid="classdpp_1_1websocket__client_1aa851724333720b7d727526d609ddf0fc" kind="function"><name>parseheader</name></member>
     <member refid="classdpp_1_1websocket__client_1ad0bd6044f3bac18094579f65d2c64efa" kind="function"><name>unpack</name></member>
@@ -2696,7 +2697,7 @@
     <member refid="classdpp_1_1websocket__client_1ac072f4206de55d925e1d4d4017592362" kind="function"><name>HandlePingPong</name></member>
     <member refid="classdpp_1_1websocket__client_1ac7f26051b6ce8db8e57536ce4e035caf" kind="function"><name>Connect</name></member>
     <member refid="classdpp_1_1websocket__client_1ad699ad1f6cefc29a1868fdfca530c550" kind="function"><name>GetState</name></member>
-    <member refid="classdpp_1_1websocket__client_1a809b342e343bd370141ba25a5e90cf64" kind="function"><name>websocket_client</name></member>
+    <member refid="classdpp_1_1websocket__client_1afb654507dbe469ad4f0f3f242769692b" kind="function"><name>websocket_client</name></member>
     <member refid="classdpp_1_1websocket__client_1aea281ac4eef3336e3b78227beb21e4ef" kind="function"><name>~websocket_client</name></member>
     <member refid="classdpp_1_1websocket__client_1aac65765349cbd3e787c0fd2af576ec6d" kind="function"><name>write</name></member>
     <member refid="classdpp_1_1websocket__client_1a96a1c910426a6094a81f5bf26ce9119b" kind="function"><name>handle_buffer</name></member>
@@ -3216,19 +3217,19 @@
     <member refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0" kind="enum"><name>webhook_type</name></member>
     <member refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a" kind="enumvalue"><name>w_incoming</name></member>
     <member refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354" kind="enumvalue"><name>w_channel_follower</name></member>
-    <member refid="namespacedpp_1ac15fded6ab38b51e685f9ebd670d1f55" kind="enum"><name>websocket_protocol_t</name></member>
-    <member refid="namespacedpp_1ac15fded6ab38b51e685f9ebd670d1f55abea765ef009bccd9080351f806bae437" kind="enumvalue"><name>ws_json</name></member>
-    <member refid="namespacedpp_1ac15fded6ab38b51e685f9ebd670d1f55ac465dd3c03a072c41148d3562b6cbd64" kind="enumvalue"><name>ws_etf</name></member>
-    <member refid="namespacedpp_1af0e6c1fc5986facd4bb63a152ffa6057" kind="enum"><name>ws_state</name></member>
-    <member refid="namespacedpp_1af0e6c1fc5986facd4bb63a152ffa6057ac4e7462fef7673f64bf129dde58c9f70" kind="enumvalue"><name>HTTP_HEADERS</name></member>
-    <member refid="namespacedpp_1af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d" kind="enumvalue"><name>CONNECTED</name></member>
-    <member refid="namespacedpp_1a27a655378b0676c4444b32079c19d667" kind="enum"><name>ws_opcode</name></member>
-    <member refid="namespacedpp_1a27a655378b0676c4444b32079c19d667ac641ff6036ee7056ef3a2617f7dc6163" kind="enumvalue"><name>OP_CONTINUATION</name></member>
-    <member refid="namespacedpp_1a27a655378b0676c4444b32079c19d667a24f8b16a9b360f9ab17180433018587e" kind="enumvalue"><name>OP_TEXT</name></member>
-    <member refid="namespacedpp_1a27a655378b0676c4444b32079c19d667ac6c295924c27154cf564628ebb9677c9" kind="enumvalue"><name>OP_BINARY</name></member>
-    <member refid="namespacedpp_1a27a655378b0676c4444b32079c19d667af10fce37d364106c0d8d13472f031bb0" kind="enumvalue"><name>OP_CLOSE</name></member>
-    <member refid="namespacedpp_1a27a655378b0676c4444b32079c19d667a1cba9d927313c32ed6fdbf191018ee59" kind="enumvalue"><name>OP_PING</name></member>
-    <member refid="namespacedpp_1a27a655378b0676c4444b32079c19d667a0dbab9ed2998b084825c4803c52fb7bc" kind="enumvalue"><name>OP_PONG</name></member>
+    <member refid="namespacedpp_1af7cde3079d745428f44ef6231a2ac672" kind="enum"><name>websocket_protocol_t</name></member>
+    <member refid="namespacedpp_1af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437" kind="enumvalue"><name>ws_json</name></member>
+    <member refid="namespacedpp_1af7cde3079d745428f44ef6231a2ac672ac465dd3c03a072c41148d3562b6cbd64" kind="enumvalue"><name>ws_etf</name></member>
+    <member refid="namespacedpp_1af3b7f3e861707f45beefa9449de70519" kind="enum"><name>ws_state</name></member>
+    <member refid="namespacedpp_1af3b7f3e861707f45beefa9449de70519ac4e7462fef7673f64bf129dde58c9f70" kind="enumvalue"><name>HTTP_HEADERS</name></member>
+    <member refid="namespacedpp_1af3b7f3e861707f45beefa9449de70519ab21dc4f63ee869c75f21c77922769e6d" kind="enumvalue"><name>CONNECTED</name></member>
+    <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1c" kind="enum"><name>ws_opcode</name></member>
+    <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1cac641ff6036ee7056ef3a2617f7dc6163" kind="enumvalue"><name>OP_CONTINUATION</name></member>
+    <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1ca24f8b16a9b360f9ab17180433018587e" kind="enumvalue"><name>OP_TEXT</name></member>
+    <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1cac6c295924c27154cf564628ebb9677c9" kind="enumvalue"><name>OP_BINARY</name></member>
+    <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1caf10fce37d364106c0d8d13472f031bb0" kind="enumvalue"><name>OP_CLOSE</name></member>
+    <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1ca1cba9d927313c32ed6fdbf191018ee59" kind="enumvalue"><name>OP_PING</name></member>
+    <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1ca0dbab9ed2998b084825c4803c52fb7bc" kind="enumvalue"><name>OP_PONG</name></member>
     <member refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kind="typedef"><name>json</name></member>
     <member refid="namespacedpp_1a9cd9f77c18810c3ad68e06b0625099bd" kind="typedef"><name>application_map</name></member>
     <member refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kind="typedef"><name>ban_map</name></member>
