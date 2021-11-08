@@ -72,7 +72,7 @@ var searchData=
   ['message_5funpin_69',['message_unpin',['../classdpp_1_1cluster.html#a454e53cea10416ca9d299855dbb08e0b',1,'dpp::cluster']]],
   ['message_5fupdate_70',['message_update',['../classdpp_1_1events_1_1message__update.html',1,'dpp::events::message_update'],['../classdpp_1_1dispatcher.html#a92bc1bf874f00ce1ec748288bd8eab7e',1,'dpp::dispatcher::message_update()']]],
   ['message_5fupdate_5ft_71',['message_update_t',['../structdpp_1_1message__update__t.html',1,'dpp::message_update_t'],['../structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8',1,'dpp::message_update_t::message_update_t()']]],
-  ['messages_5fget_72',['messages_get',['../classdpp_1_1cluster.html#acb1a4777f0907ee6c841ba008a81f60b',1,'dpp::cluster']]],
+  ['messages_5fget_72',['messages_get',['../classdpp_1_1cluster.html#a630d744322d1f570a63f33ae10b23ae9',1,'dpp::cluster']]],
   ['metadata_73',['metadata',['../classdpp_1_1channel.html#a050a9a897e37fe7d6075410ba02488de',1,'dpp::channel']]],
   ['method_74',['method',['../classdpp_1_1http__request.html#a6717d11da20292e2dc77826def3aaef3',1,'dpp::http_request']]],
   ['mfa_5flevel_75',['mfa_level',['../classdpp_1_1guild.html#a29059b4f68f9d24505beefb1d550092d',1,'dpp::guild']]],

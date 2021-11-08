@@ -204,7 +204,7 @@ var classdpp_1_1cluster =
     [ "message_get_reactions", "classdpp_1_1cluster.html#a06083a6cacaf7c4e41884cfb2a1078ab", null ],
     [ "message_pin", "classdpp_1_1cluster.html#aa140a11ab0b2feede600761aaee2483b", null ],
     [ "message_unpin", "classdpp_1_1cluster.html#a454e53cea10416ca9d299855dbb08e0b", null ],
-    [ "messages_get", "classdpp_1_1cluster.html#acb1a4777f0907ee6c841ba008a81f60b", null ],
+    [ "messages_get", "classdpp_1_1cluster.html#a630d744322d1f570a63f33ae10b23ae9", null ],
     [ "nitro_sticker_get", "classdpp_1_1cluster.html#a115a49075ceb1817f1e81fc9388bf65e", null ],
     [ "on_application_command_create", "classdpp_1_1cluster.html#a5e4c89e99887415ff9309d704f2899ac", null ],
     [ "on_application_command_delete", "classdpp_1_1cluster.html#a0f244bc712531ce761c51fdcc61d96a2", null ],
