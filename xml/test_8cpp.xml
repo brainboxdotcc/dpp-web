@@ -648,7 +648,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="37" column="15" bodyfile="src/test.cpp" bodystart="37" bodyend="-1"/>
+        <location file="src/test.cpp" line="42" column="15" bodyfile="src/test.cpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="test_8cpp_1a4932bbf4b3132474249ad709430797af" prot="public" static="no" mutable="no">
         <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
@@ -662,7 +662,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="38" column="22" bodyfile="src/test.cpp" bodystart="38" bodyend="-1"/>
+        <location file="src/test.cpp" line="45" column="22" bodyfile="src/test.cpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="test_8cpp_1a6a18b9b0646ed164d2e674261d59785f" prot="public" static="no" mutable="no">
         <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
@@ -676,7 +676,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="39" column="22" bodyfile="src/test.cpp" bodystart="39" bodyend="-1"/>
+        <location file="src/test.cpp" line="46" column="22" bodyfile="src/test.cpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="test_8cpp_1a6618d7a4efe95b1e8b5c869a04f00b84" prot="public" static="no" mutable="no">
         <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
@@ -690,7 +690,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="40" column="22" bodyfile="src/test.cpp" bodystart="40" bodyend="-1"/>
+        <location file="src/test.cpp" line="47" column="22" bodyfile="src/test.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8cpp_1a97bae62345d426bd95942467fb3cd8ee" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
+        <definition>const dpp::snowflake TEST_USER_ID</definition>
+        <argsstring></argsstring>
+        <name>TEST_USER_ID</name>
+        <initializer>= 826535422381391913</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.cpp" line="48" column="22" bodyfile="src/test.cpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="test_8cpp_1a4845fee65f6b717196f72714d9ef0276" prot="public" static="no" mutable="no">
         <type>std::map&lt; std::string, <ref refid="structtest__t" kindref="compound">test_t</ref> &gt;</type>
@@ -708,9 +722,12 @@
 	{&quot;MESSAGEDELETE&quot;, {&quot;Deletion of a channel message&quot;, false, false}},
 	{&quot;MESSAGERECEIVE&quot;, {&quot;Receipt of a created message&quot;, false, false}},
 	{&quot;CACHE&quot;, {&quot;Test guild cache&quot;, false, false}},
+	{&quot;USERCACHE&quot;, {&quot;Test user cache&quot;, false, false}},
 	{&quot;VOICECONN&quot;, {&quot;Connect to voice channel&quot;, false, false}},
+	{&quot;VOICESEND&quot;, {&quot;Send audio to voice channel&quot;, false, false}},
 	{&quot;REACT&quot;, {&quot;React to a message&quot;, false, false}},
 	{&quot;REACTEVENT&quot;, {&quot;Reaction event&quot;, false, false}},
+	{&quot;GUILDCREATE&quot;, {&quot;Receive guild create event&quot;, false, false}},
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -718,7 +735,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="42" column="10" bodyfile="src/test.cpp" bodystart="42" bodyend="-1"/>
+        <location file="src/test.cpp" line="51" column="10" bodyfile="src/test.cpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -737,12 +754,31 @@
           <defval>false</defval>
         </param>
         <briefdescription>
+<para>Sets a test&apos;s status. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>testname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>test name (key) to set the status of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>success</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If set to true, sets success to true, if set to false and called once, sets executed to true, if called twice, also sets success to false. This means that before you run the test you should call this function once with success set to false, then if/wen the test completes call it again with true. If the test fails, call it a second time with false, or not at all. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="58" column="6" bodyfile="src/test.cpp" bodystart="58" bodyend="72"/>
+        <location file="src/test.cpp" line="80" column="6" bodyfile="src/test.cpp" bodystart="80" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="test_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -755,7 +791,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="74" column="5" bodyfile="src/test.cpp" bodystart="74" bodyend="207"/>
+        <location file="src/test.cpp" line="97" column="5" bodyfile="src/test.cpp" bodystart="97" bodyend="271"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
