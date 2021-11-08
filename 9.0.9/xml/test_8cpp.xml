@@ -4,6 +4,7 @@
     <compoundname>test.cpp</compoundname>
     <includes refid="dpp_8h" local="no">dpp/dpp.h</includes>
     <includes local="no">dpp/nlohmann/json.hpp</includes>
+    <includes local="no">dpp/fmt/format.h</includes>
     <incdepgraph>
       <node id="38">
         <label>dpp/application.h</label>
@@ -512,6 +513,8 @@
         </childnode>
         <childnode refid="70" relation="include">
         </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
       </node>
       <node id="40">
         <label>algorithm</label>
@@ -542,6 +545,9 @@
       </node>
       <node id="65">
         <label>deque</label>
+      </node>
+      <node id="71">
+        <label>dpp/fmt/format.h</label>
       </node>
       <node id="16">
         <label>dpp/json_fwd.hpp</label>
@@ -613,6 +619,7 @@
         <label>vector</label>
       </node>
     </incdepgraph>
+    <innerclass refid="structtest__t" prot="public">test_t</innerclass>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="test_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" prot="public" static="no">
         <type>nlohmann::json</type>
@@ -625,10 +632,118 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="8" column="1" bodyfile="src/test.cpp" bodystart="8" bodyend="-1"/>
+        <location file="src/test.cpp" line="29" column="1" bodyfile="src/test.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="test_8cpp_1a55275c598c1db4f8d8544ad93e9085b4" prot="public" static="no" mutable="no">
+        <type>const int64_t</type>
+        <definition>const int64_t TEST_TIMEOUT</definition>
+        <argsstring></argsstring>
+        <name>TEST_TIMEOUT</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.cpp" line="37" column="15" bodyfile="src/test.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8cpp_1a4932bbf4b3132474249ad709430797af" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
+        <definition>const dpp::snowflake TEST_GUILD_ID</definition>
+        <argsstring></argsstring>
+        <name>TEST_GUILD_ID</name>
+        <initializer>= 825407338755653642</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.cpp" line="38" column="22" bodyfile="src/test.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8cpp_1a6a18b9b0646ed164d2e674261d59785f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
+        <definition>const dpp::snowflake TEST_TEXT_CHANNEL_ID</definition>
+        <argsstring></argsstring>
+        <name>TEST_TEXT_CHANNEL_ID</name>
+        <initializer>= 828681546533437471</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.cpp" line="39" column="22" bodyfile="src/test.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8cpp_1a6618d7a4efe95b1e8b5c869a04f00b84" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
+        <definition>const dpp::snowflake TEST_VC_ID</definition>
+        <argsstring></argsstring>
+        <name>TEST_VC_ID</name>
+        <initializer>= 825411635631095858</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.cpp" line="40" column="22" bodyfile="src/test.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8cpp_1a4845fee65f6b717196f72714d9ef0276" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="structtest__t" kindref="compound">test_t</ref> &gt;</type>
+        <definition>std::map&lt;std::string, test_t&gt; tests</definition>
+        <argsstring></argsstring>
+        <name>tests</name>
+        <initializer>= {
+	{&quot;CLUSTER&quot;, {&quot;Instantiate DPP cluster&quot;, false, false}},
+	{&quot;BOTSTART&quot;, {&quot;cluster::start method&quot;, false, false}},
+	{&quot;CONNECTION&quot;, {&quot;Connection to client websocket&quot;, false, false}},
+	{&quot;APPCOMMAND&quot;, {&quot;Creation of application command&quot;, false, false}},
+	{&quot;DELCOMMAND&quot;, {&quot;Deletion of application command&quot;, false, false}},
+	{&quot;LOGGER&quot;, {&quot;Log events&quot;, false, false}},
+	{&quot;MESSAGECREATE&quot;, {&quot;Creation of a channel message&quot;, false, false}},
+	{&quot;MESSAGEDELETE&quot;, {&quot;Deletion of a channel message&quot;, false, false}},
+	{&quot;MESSAGERECEIVE&quot;, {&quot;Receipt of a created message&quot;, false, false}},
+	{&quot;CACHE&quot;, {&quot;Test guild cache&quot;, false, false}},
+	{&quot;VOICECONN&quot;, {&quot;Connect to voice channel&quot;, false, false}},
+	{&quot;REACT&quot;, {&quot;React to a message&quot;, false, false}},
+	{&quot;REACTEVENT&quot;, {&quot;Reaction event&quot;, false, false}},
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.cpp" line="42" column="10" bodyfile="src/test.cpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
+      <memberdef kind="function" id="test_8cpp_1a35cb68a0aae23a8f0059a33fb82379f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_test</definition>
+        <argsstring>(const std::string testname, bool success=false)</argsstring>
+        <name>set_test</name>
+        <param>
+          <type>const std::string</type>
+          <declname>testname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.cpp" line="58" column="6" bodyfile="src/test.cpp" bodystart="58" bodyend="72"/>
+      </memberdef>
       <memberdef kind="function" id="test_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int main</definition>
@@ -640,7 +755,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.cpp" line="10" column="5" bodyfile="src/test.cpp" bodystart="10" bodyend="85"/>
+        <location file="src/test.cpp" line="74" column="5" bodyfile="src/test.cpp" bodystart="74" bodyend="202"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

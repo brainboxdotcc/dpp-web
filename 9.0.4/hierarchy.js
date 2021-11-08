@@ -226,6 +226,7 @@ var hierarchy =
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
     [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
+    [ "test_t", "structtest__t.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],

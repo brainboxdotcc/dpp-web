@@ -230,5 +230,6 @@ var annotated_dup =
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", "structformatter_3_01std_1_1tm_00_01_char_01_4" ],
     [ "OpusDecoder", "struct_opus_decoder.html", null ],
     [ "OpusEncoder", "struct_opus_encoder.html", null ],
-    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ]
+    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
+    [ "test_t", "structtest__t.html", "structtest__t" ]
 ];
