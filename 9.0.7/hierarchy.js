@@ -190,7 +190,9 @@ var hierarchy =
     [ "detail::make_unsigned_or_unchanged< T, INTEGRAL >", "structdetail_1_1make__unsigned__or__unchanged.html", null ],
     [ "detail::make_unsigned_or_unchanged< T, true >", "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
-      [ "dpp::channel", "classdpp_1_1channel.html", null ],
+      [ "dpp::channel", "classdpp_1_1channel.html", [
+        [ "dpp::thread", "classdpp_1_1thread.html", null ]
+      ] ],
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ],
       [ "dpp::guild", "classdpp_1_1guild.html", null ],
       [ "dpp::integration", "classdpp_1_1integration.html", null ],

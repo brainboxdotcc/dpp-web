@@ -185,24 +185,26 @@
         <link refid="classdpp_1_1channel"/>
         <childnode refid="22" relation="public-inheritance">
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="23" relation="usage">
+          <edgelabel>bitrate</edgelabel>
           <edgelabel>flags</edgelabel>
-          <edgelabel>user_limit</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>rate_limit_per_user</edgelabel>
         </childnode>
         <childnode refid="14" relation="usage">
           <edgelabel>guild_id</edgelabel>
           <edgelabel>last_message_id</edgelabel>
           <edgelabel>owner_id</edgelabel>
           <edgelabel>parent_id</edgelabel>
-        </childnode>
-        <childnode refid="23" relation="usage">
-          <edgelabel>bitrate</edgelabel>
-          <edgelabel>position</edgelabel>
-          <edgelabel>rate_limit_per_user</edgelabel>
+          <edgelabel>permissions</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>name</edgelabel>
+          <edgelabel>rtc_region</edgelabel>
           <edgelabel>topic</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>user_limit</edgelabel>
         </childnode>
         <childnode refid="13" relation="usage">
           <edgelabel>last_pin_timestamp</edgelabel>
@@ -463,6 +465,9 @@
         <childnode refid="40" relation="usage">
           <edgelabel>metadata</edgelabel>
         </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>member</edgelabel>
+        </childnode>
       </node>
       <node id="1">
         <label>dpp::thread_create_t</label>
@@ -474,6 +479,20 @@
         </childnode>
         <childnode refid="38" relation="usage">
           <edgelabel>created</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>dpp::thread_member</label>
+        <link refid="structdpp_1_1thread__member"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>thread_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>joined</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>flags</edgelabel>
         </childnode>
       </node>
       <node id="40">

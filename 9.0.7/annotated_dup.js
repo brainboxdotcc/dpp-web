@@ -193,6 +193,7 @@ var annotated_dup =
       [ "sticker", "structdpp_1_1sticker.html", "structdpp_1_1sticker" ],
       [ "sticker_pack", "structdpp_1_1sticker__pack.html", "structdpp_1_1sticker__pack" ],
       [ "team_member", "classdpp_1_1team__member.html", "classdpp_1_1team__member" ],
+      [ "thread", "classdpp_1_1thread.html", "classdpp_1_1thread" ],
       [ "thread_create_t", "structdpp_1_1thread__create__t.html", "structdpp_1_1thread__create__t" ],
       [ "thread_delete_t", "structdpp_1_1thread__delete__t.html", "structdpp_1_1thread__delete__t" ],
       [ "thread_list_sync_t", "structdpp_1_1thread__list__sync__t.html", "structdpp_1_1thread__list__sync__t" ],

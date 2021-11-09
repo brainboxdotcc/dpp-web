@@ -273,19 +273,21 @@ var namespacedpp =
       [ "cp_lazy", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a055c40e9038f2345a5c1fb9a3d3d648c", null ],
       [ "cp_none", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a68e2695356af38492410341873083c49", null ]
     ] ],
-    [ "channel_flags", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99b", [
-      [ "c_nsfw", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba0b0d31477f484ddc8b5da869e8a020bd", null ],
-      [ "c_text", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba779d9594b416bec6ebd5823d8f2e5081", null ],
-      [ "c_dm", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba9a43d4cf5eede8927da336fc11531826", null ],
-      [ "c_voice", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99baf3b3f12a0d3d000e030a971a9021ef9e", null ],
-      [ "c_group", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba48c87a3615235f5b89bdf35da075ad91", null ],
-      [ "c_category", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba57a07827de1901dfbd7fa964bd9cdd43", null ],
-      [ "c_news", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99bac23ad6a6bbda0d45c5d0dd54746ef230", null ],
-      [ "c_store", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba6ac705dc87352c5d7d04497e9b06ae3a", null ],
-      [ "c_stage", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba832adb175719706ed9ce18acbec539cc", null ],
-      [ "c_news_thread", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba8d925c9e629ea695ef4fa3da201bf339", null ],
-      [ "c_public_thread", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba61764be8214a7e6f22e31943630ece9a", null ],
-      [ "c_private_thread", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99baffe1298bd7ee0ace51a2416a4ae1a687", null ]
+    [ "channel_flags", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9", [
+      [ "c_video_quality_auto", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a08563ff59cf566972597414166a41952", null ],
+      [ "c_nsfw", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a0b0d31477f484ddc8b5da869e8a020bd", null ],
+      [ "c_text", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a779d9594b416bec6ebd5823d8f2e5081", null ],
+      [ "c_dm", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a9a43d4cf5eede8927da336fc11531826", null ],
+      [ "c_voice", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9af3b3f12a0d3d000e030a971a9021ef9e", null ],
+      [ "c_group", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a48c87a3615235f5b89bdf35da075ad91", null ],
+      [ "c_category", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a57a07827de1901dfbd7fa964bd9cdd43", null ],
+      [ "c_news", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9ac23ad6a6bbda0d45c5d0dd54746ef230", null ],
+      [ "c_store", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a6ac705dc87352c5d7d04497e9b06ae3a", null ],
+      [ "c_stage", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a832adb175719706ed9ce18acbec539cc", null ],
+      [ "c_news_thread", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a8d925c9e629ea695ef4fa3da201bf339", null ],
+      [ "c_public_thread", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a61764be8214a7e6f22e31943630ece9a", null ],
+      [ "c_private_thread", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9affe1298bd7ee0ace51a2416a4ae1a687", null ],
+      [ "c_video_quality_720p", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a76fb8f7043c63103db86dc0ef1f14fca", null ]
     ] ],
     [ "channel_type", "namespacedpp.html#a8af3a726df107c304139477dbfa42092", [
       [ "GUILD_TEXT", "namespacedpp.html#a8af3a726df107c304139477dbfa42092ac240528d2f3f3a773b5e418c4f25d696", null ],

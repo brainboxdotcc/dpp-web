@@ -213,9 +213,6 @@
     <member refid="classdpp_1_1channel_1ae33f863adef0f0cc89a7324cd93bc752" kind="variable"><name>last_pin_timestamp</name></member>
     <member refid="classdpp_1_1channel_1a0d66636187a0382693d69c2ac2827e89" kind="variable"><name>recipients</name></member>
     <member refid="classdpp_1_1channel_1a3eb698179af0d4c535cf5b7ed01b096e" kind="variable"><name>permission_overwrites</name></member>
-    <member refid="classdpp_1_1channel_1a45a99c23b0075b866074fee56b081efd" kind="variable"><name>message_count</name></member>
-    <member refid="classdpp_1_1channel_1a500fc7bbe9d9b43b05f1c3fa9e348e5a" kind="variable"><name>member_count</name></member>
-    <member refid="classdpp_1_1channel_1a050a9a897e37fe7d6075410ba02488de" kind="variable"><name>metadata</name></member>
     <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
     <member refid="classdpp_1_1channel_1a53bbf494148ceea48e3b78716d7a8b07" kind="function"><name>channel</name></member>
     <member refid="classdpp_1_1channel_1a51afd2284fe4ae3a6d1043c8f3ecf4f1" kind="function"><name>~channel</name></member>
@@ -232,9 +229,6 @@
     <member refid="classdpp_1_1channel_1a1b6b7a32e44eec70466a98b31252aa54" kind="function"><name>is_category</name></member>
     <member refid="classdpp_1_1channel_1a9fb22156c167cb2c334ec3388502fdff" kind="function"><name>is_news_channel</name></member>
     <member refid="classdpp_1_1channel_1a04256bb3015b9fa150d56a8025a6e1d0" kind="function"><name>is_store_channel</name></member>
-    <member refid="classdpp_1_1channel_1a82ca1deaef0f898883830a3ae3be9fbc" kind="function"><name>is_news_thread</name></member>
-    <member refid="classdpp_1_1channel_1af9fef5595fa8c91adc102bde9b854b04" kind="function"><name>is_public_thread</name></member>
-    <member refid="classdpp_1_1channel_1a441356251e7c4fc246727423d19b3350" kind="function"><name>is_private_thread</name></member>
     <member refid="classdpp_1_1channel_1ae95ae73f17ff4badd2001bcc07940709" kind="function"><name>is_stage_channel</name></member>
   </compound>
   <compound refid="classdpp_1_1events_1_1channel__create" kind="class"><name>dpp::events::channel_create</name>
@@ -659,12 +653,12 @@
     <member refid="classdpp_1_1cluster_1a13a819f21159771de3142d57eabfe306" kind="function"><name>current_user_leave_thread</name></member>
     <member refid="classdpp_1_1cluster_1a066a4a71deac82b823757c2c80479a5d" kind="function"><name>thread_member_add</name></member>
     <member refid="classdpp_1_1cluster_1ad253c2a68c5a1e78b880da7252a15814" kind="function"><name>thread_member_remove</name></member>
-    <member refid="classdpp_1_1cluster_1a893d54dcab37f2cb02dd43f222c236cc" kind="function"><name>get_thread_member</name></member>
-    <member refid="classdpp_1_1cluster_1a3dbedc9a00e3c933fbe77551225f0ee1" kind="function"><name>get_thread_members</name></member>
-    <member refid="classdpp_1_1cluster_1ac314d51f702f9cdbb6515b0fb80da983" kind="function"><name>get_active_threads</name></member>
-    <member refid="classdpp_1_1cluster_1a7a22da099cbefb0cad999bf92cad13c7" kind="function"><name>get_public_archived_threads</name></member>
-    <member refid="classdpp_1_1cluster_1ae0bf6018fe516ba4fd19bc44871066e6" kind="function"><name>get_private_archived_threads</name></member>
-    <member refid="classdpp_1_1cluster_1ac478bd7a8ba5749dbd2dd90a710b88d6" kind="function"><name>get_joined_private_archived_threads</name></member>
+    <member refid="classdpp_1_1cluster_1ad39edec2f1389d1aa5bb6c09e4318b6a" kind="function"><name>thread_member_get</name></member>
+    <member refid="classdpp_1_1cluster_1a636b55f518a2e724eabf31453aa89abe" kind="function"><name>thread_members_get</name></member>
+    <member refid="classdpp_1_1cluster_1a6825c29651e995f251e01f5a1f20122d" kind="function"><name>threads_get_active</name></member>
+    <member refid="classdpp_1_1cluster_1a2b93e8be30c7e954c27e19d8b7fa8170" kind="function"><name>threads_get_public_archived</name></member>
+    <member refid="classdpp_1_1cluster_1ae8336e48eaabaeb8df4d69a087982e82" kind="function"><name>threads_get_private_archived</name></member>
+    <member refid="classdpp_1_1cluster_1a0d0c3894cd560fa7871f22d7cfb8f591" kind="function"><name>threads_get_joined_private_archived</name></member>
     <member refid="classdpp_1_1cluster_1a7f31d36f327a74d24fb4075cec6c2400" kind="function"><name>guild_sticker_create</name></member>
     <member refid="classdpp_1_1cluster_1a222a8cb4498fd65ae8bb3345b02d0f8e" kind="function"><name>guild_sticker_modify</name></member>
     <member refid="classdpp_1_1cluster_1a08ed56cd299340bdf286bc3457225124" kind="function"><name>guild_sticker_delete</name></member>
@@ -2355,12 +2349,51 @@
     <member refid="structtest__t_1a337617aaab1f8f387723732467148792" kind="variable"><name>executed</name></member>
     <member refid="structtest__t_1a311e4fb11b006397f3ff01f8e86fd83e" kind="variable"><name>success</name></member>
   </compound>
+  <compound refid="classdpp_1_1thread" kind="class"><name>dpp::thread</name>
+    <member refid="classdpp_1_1thread_1a546adcc48a0b7853ade0f11544ebfcc7" kind="variable"><name>message_count</name></member>
+    <member refid="classdpp_1_1thread_1ace7afa978603442b3a4c0cbf366fdf6e" kind="variable"><name>member_count</name></member>
+    <member refid="classdpp_1_1thread_1a64231c8975f095c371b0a4ba478d33ee" kind="variable"><name>metadata</name></member>
+    <member refid="classdpp_1_1channel_1a709f24110a06b558170cae9231572bef" kind="variable"><name>flags</name></member>
+    <member refid="classdpp_1_1channel_1a52a3d85468b8b6a1eb16c1bdb19cb499" kind="variable"><name>guild_id</name></member>
+    <member refid="classdpp_1_1channel_1a1f31178c9e86ad1490b8619cb9bdbde4" kind="variable"><name>position</name></member>
+    <member refid="classdpp_1_1channel_1a065d6fbd4e21759354c2516b074078a8" kind="variable"><name>name</name></member>
+    <member refid="classdpp_1_1channel_1a57864fde3659243453d1ad1c9bf60983" kind="variable"><name>topic</name></member>
+    <member refid="classdpp_1_1channel_1aa510e7eb5e93c1c885392c7fcdf24779" kind="variable"><name>last_message_id</name></member>
+    <member refid="classdpp_1_1channel_1a79251adb1bc9dc6780af2afd21499769" kind="variable"><name>user_limit</name></member>
+    <member refid="classdpp_1_1channel_1ab32308d8281aef6bfe4d5a6538c6306e" kind="variable"><name>bitrate</name></member>
+    <member refid="classdpp_1_1channel_1a2ec41d2c2a7d592c1a17888d3f401fd5" kind="variable"><name>rate_limit_per_user</name></member>
+    <member refid="classdpp_1_1channel_1adb22659e9dc7fb8dd36d1c9f67eb7181" kind="variable"><name>owner_id</name></member>
+    <member refid="classdpp_1_1channel_1ae1e877475ccc7113683382f787cfbc48" kind="variable"><name>parent_id</name></member>
+    <member refid="classdpp_1_1channel_1ae33f863adef0f0cc89a7324cd93bc752" kind="variable"><name>last_pin_timestamp</name></member>
+    <member refid="classdpp_1_1channel_1a0d66636187a0382693d69c2ac2827e89" kind="variable"><name>recipients</name></member>
+    <member refid="classdpp_1_1channel_1a3eb698179af0d4c535cf5b7ed01b096e" kind="variable"><name>permission_overwrites</name></member>
+    <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
+    <member refid="classdpp_1_1thread_1aa013c0c3c26e9109488c8e2e83e9e36a" kind="function"><name>thread</name></member>
+    <member refid="classdpp_1_1thread_1ab8a6fdcfef22b3aba9c41020e1811670" kind="function"><name>is_news_thread</name></member>
+    <member refid="classdpp_1_1thread_1af7e19705c6040c7593eb6a582fa017c1" kind="function"><name>is_public_thread</name></member>
+    <member refid="classdpp_1_1thread_1a8b23ff4092db13a836895efbd5ede669" kind="function"><name>is_private_thread</name></member>
+    <member refid="classdpp_1_1thread_1a21cde7487e3bb861e5e7136470b57a21" kind="function"><name>fill_from_json</name></member>
+    <member refid="classdpp_1_1thread_1a080515539a7f6e6f48bf097f119f51ac" kind="function"><name>~thread</name></member>
+    <member refid="classdpp_1_1thread_1a3606d9b03710775529e277315afd8fb0" kind="function"><name>build_json</name></member>
+    <member refid="classdpp_1_1channel_1a86527c1fe86e93c66bf731c73ebcc0ac" kind="function"><name>get_user_permissions</name></member>
+    <member refid="classdpp_1_1channel_1ab817b065af6dab9a77e406908e368ae1" kind="function"><name>get_members</name></member>
+    <member refid="classdpp_1_1channel_1a915cc4ba3ec7514a684315594255253a" kind="function"><name>get_voice_members</name></member>
+    <member refid="classdpp_1_1channel_1a41631deb5f2cb740b4d124cde9f266d2" kind="function"><name>is_nsfw</name></member>
+    <member refid="classdpp_1_1channel_1a7b9bfb2f922e7cfcbbb1d60f02e5a901" kind="function"><name>is_text_channel</name></member>
+    <member refid="classdpp_1_1channel_1a918afc6016a1114151a253e7caa35179" kind="function"><name>is_dm</name></member>
+    <member refid="classdpp_1_1channel_1a8ee69208f9cf16c18f2ceb460ada1916" kind="function"><name>is_voice_channel</name></member>
+    <member refid="classdpp_1_1channel_1a27a623072570b333f697bd01c3616208" kind="function"><name>is_group_dm</name></member>
+    <member refid="classdpp_1_1channel_1a1b6b7a32e44eec70466a98b31252aa54" kind="function"><name>is_category</name></member>
+    <member refid="classdpp_1_1channel_1a9fb22156c167cb2c334ec3388502fdff" kind="function"><name>is_news_channel</name></member>
+    <member refid="classdpp_1_1channel_1a04256bb3015b9fa150d56a8025a6e1d0" kind="function"><name>is_store_channel</name></member>
+    <member refid="classdpp_1_1channel_1ae95ae73f17ff4badd2001bcc07940709" kind="function"><name>is_stage_channel</name></member>
+  </compound>
   <compound refid="classdpp_1_1events_1_1thread__create" kind="class"><name>dpp::events::thread_create</name>
     <member refid="classdpp_1_1events_1_1thread__create_1addf9a7cb6fb4c570e0509b8d34d7ec02" kind="function"><name>handle</name></member>
   </compound>
   <compound refid="structdpp_1_1thread__create__t" kind="struct"><name>dpp::thread_create_t</name>
     <member refid="structdpp_1_1thread__create__t_1a096df9aa1bb92c18a69edcf2daee29db" kind="variable"><name>creating_guild</name></member>
-    <member refid="structdpp_1_1thread__create__t_1ab68b2fb8155b0d859c73c896b5535750" kind="variable"><name>created</name></member>
+    <member refid="structdpp_1_1thread__create__t_1af8e2ffceaa4b2f6b511456a7b886df7e" kind="variable"><name>created</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1thread__create__t_1a23487c60d75274fdca7eb8beedd29a70" kind="function"><name>thread_create_t</name></member>
@@ -2372,7 +2405,7 @@
   </compound>
   <compound refid="structdpp_1_1thread__delete__t" kind="struct"><name>dpp::thread_delete_t</name>
     <member refid="structdpp_1_1thread__delete__t_1a938c747399f7bef531f1316d1c6dcf35" kind="variable"><name>deleting_guild</name></member>
-    <member refid="structdpp_1_1thread__delete__t_1a1bf5a7dc3ee2fbdc07b49493a347eb0f" kind="variable"><name>deleted</name></member>
+    <member refid="structdpp_1_1thread__delete__t_1af238563412c7807524d7604461de89df" kind="variable"><name>deleted</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1thread__delete__t_1adbd8ec36d8d3cdb6571f1c026d59297d" kind="function"><name>thread_delete_t</name></member>
@@ -2384,7 +2417,7 @@
   </compound>
   <compound refid="structdpp_1_1thread__list__sync__t" kind="struct"><name>dpp::thread_list_sync_t</name>
     <member refid="structdpp_1_1thread__list__sync__t_1abbf38daac2b090e9f2fb587caa33f574" kind="variable"><name>updating_guild</name></member>
-    <member refid="structdpp_1_1thread__list__sync__t_1a8fb0f184795e5cd99e764ce518d32eb8" kind="variable"><name>threads</name></member>
+    <member refid="structdpp_1_1thread__list__sync__t_1ac2bc262ffbf1986c5edcf97189ff19f5" kind="variable"><name>threads</name></member>
     <member refid="structdpp_1_1thread__list__sync__t_1a31bf68ed2826d2dedd431b88a164b8d2" kind="variable"><name>members</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
@@ -2437,7 +2470,7 @@
   </compound>
   <compound refid="structdpp_1_1thread__update__t" kind="struct"><name>dpp::thread_update_t</name>
     <member refid="structdpp_1_1thread__update__t_1ad3a5c92fd3df75f874bca743d0d708b6" kind="variable"><name>updating_guild</name></member>
-    <member refid="structdpp_1_1thread__update__t_1a0db19ba91c0c98b56c0266d67a7a21ae" kind="variable"><name>updated</name></member>
+    <member refid="structdpp_1_1thread__update__t_1a1436540530dfebc15f2a95e9d3737461" kind="variable"><name>updated</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1thread__update__t_1abf1d17ddf8c8784446bb09ec965cf461" kind="function"><name>thread_update_t</name></member>
@@ -3240,8 +3273,9 @@
     <member refid="namespacedpp_1a4524e2a056f2d16ba591516fbf275235" kind="typedef"><name>cache_container</name></member>
     <member refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kind="typedef"><name>thread_member_map</name></member>
     <member refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kind="typedef"><name>channel_map</name></member>
+    <member refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kind="typedef"><name>thread_map</name></member>
     <member refid="namespacedpp_1a13c4d4e6238396245b349e6a637897e0" kind="typedef"><name>shard_list</name></member>
-    <member refid="namespacedpp_1a8f19a87519dab97249a2f1ea3ec7f9ea" kind="typedef"><name>confirmable_t</name></member>
+    <member refid="namespacedpp_1ae5375b639dbdd4d5c7489908c0f02e61" kind="typedef"><name>confirmable_t</name></member>
     <member refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kind="typedef"><name>command_completion_event_t</name></member>
     <member refid="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" kind="typedef"><name>json_encode_t</name></member>
     <member refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kind="typedef"><name>event_handle</name></member>
