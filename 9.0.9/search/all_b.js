@@ -18,12 +18,13 @@ var searchData=
   ['ll_5ftrace_15',['ll_trace',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a',1,'dpp']]],
   ['ll_5fwarning_16',['ll_warning',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2ad2fc6394fc5f72dce99d47d2da031658',1,'dpp']]],
   ['load_5fimage_17',['load_image',['../classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9',1,'dpp::emoji::load_image()'],['../classdpp_1_1role.html#a6d46d3e4a1b8e166f4a26da58bf119dc',1,'dpp::role::load_image()'],['../classdpp_1_1webhook.html#ac170fa1d18eacf094fea2b8ad6c96e9b',1,'dpp::webhook::load_image()']]],
-  ['localtime_5fr_18',['localtime_r',['../namespacedetail.html#af0a05177ff15d17183395170cd81a3a0',1,'detail']]],
-  ['localtime_5fs_19',['localtime_s',['../namespacedetail.html#acca4638afe6cbc4e38e3901cd0c16186',1,'detail']]],
-  ['locked_20',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
-  ['log_21',['log',['../classdpp_1_1ssl__client.html#a6037b1a66cf83e022655bd47f0df61a5',1,'dpp::ssl_client::log()'],['../classdpp_1_1discord__voice__client.html#ac06f68e15b979b0590f09c9732548f16',1,'dpp::discord_voice_client::log()'],['../classdpp_1_1discord__client.html#a9880e3f13c00cd6e4397fe64ae23b4d0',1,'dpp::discord_client::log()'],['../classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0',1,'dpp::cluster::log()'],['../classdpp_1_1dispatcher.html#ade7ab56cf5c74ffed80fcee69a66c144',1,'dpp::dispatcher::log()']]],
-  ['log_5ft_22',['log_t',['../structdpp_1_1log__t.html',1,'dpp::log_t'],['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t::log_t()']]],
-  ['logger_23',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
-  ['loglevel_24',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045',1,'dpp::utility::loglevel()']]],
-  ['lossless_5fintegral_5fconversion_25',['lossless_integral_conversion',['../namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9',1,'safe_duration_cast']]]
+  ['locale_18',['locale',['../classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b',1,'dpp::user_identified']]],
+  ['localtime_5fr_19',['localtime_r',['../namespacedetail.html#af0a05177ff15d17183395170cd81a3a0',1,'detail']]],
+  ['localtime_5fs_20',['localtime_s',['../namespacedetail.html#acca4638afe6cbc4e38e3901cd0c16186',1,'detail']]],
+  ['locked_21',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
+  ['log_22',['log',['../classdpp_1_1ssl__client.html#a6037b1a66cf83e022655bd47f0df61a5',1,'dpp::ssl_client::log()'],['../classdpp_1_1discord__voice__client.html#ac06f68e15b979b0590f09c9732548f16',1,'dpp::discord_voice_client::log()'],['../classdpp_1_1discord__client.html#a9880e3f13c00cd6e4397fe64ae23b4d0',1,'dpp::discord_client::log()'],['../classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0',1,'dpp::cluster::log()'],['../classdpp_1_1dispatcher.html#ade7ab56cf5c74ffed80fcee69a66c144',1,'dpp::dispatcher::log()']]],
+  ['log_5ft_23',['log_t',['../structdpp_1_1log__t.html',1,'dpp::log_t'],['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t::log_t()']]],
+  ['logger_24',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
+  ['loglevel_25',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045',1,'dpp::utility::loglevel()']]],
+  ['lossless_5fintegral_5fconversion_26',['lossless_integral_conversion',['../namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9',1,'safe_duration_cast']]]
 ];

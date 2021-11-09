@@ -11,6 +11,7 @@ var searchData=
   ['latency_8',['latency',['../structdpp_1_1http__request__completion__t.html#aa39b263a9671e1b106429c6e440faaad',1,'dpp::http_request_completion_t']]],
   ['length_9',['length',['../structdpp_1_1etf__buffer.html#aceff1ab2a5802b0146d1db0a772aab32',1,'dpp::etf_buffer']]],
   ['limit_10',['limit',['../structdpp_1_1bucket__t.html#a092991348f1588a752cae246db4b30f6',1,'dpp::bucket_t']]],
-  ['locked_11',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
-  ['log_12',['log',['../classdpp_1_1dispatcher.html#ade7ab56cf5c74ffed80fcee69a66c144',1,'dpp::dispatcher']]]
+  ['locale_11',['locale',['../classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b',1,'dpp::user_identified']]],
+  ['locked_12',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
+  ['log_13',['log',['../classdpp_1_1dispatcher.html#ade7ab56cf5c74ffed80fcee69a66c144',1,'dpp::dispatcher']]]
 ];

@@ -138,6 +138,7 @@ var namespacedpp =
     [ "type_punner", "uniondpp_1_1type__punner.html", "uniondpp_1_1type__punner" ],
     [ "typing_start_t", "structdpp_1_1typing__start__t.html", "structdpp_1_1typing__start__t" ],
     [ "user", "classdpp_1_1user.html", "classdpp_1_1user" ],
+    [ "user_identified", "classdpp_1_1user__identified.html", "classdpp_1_1user__identified" ],
     [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
     [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
     [ "voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", "structdpp_1_1voice__client__disconnect__t" ],
@@ -167,7 +168,7 @@ var namespacedpp =
     [ "command_option_range", "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#ae5375b639dbdd4d5c7489908c0f02e61", null ],
+    [ "confirmable_t", "namespacedpp.html#a83bbf863761cba81ec4177e2346668a0", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
@@ -273,19 +274,21 @@ var namespacedpp =
       [ "cp_lazy", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a055c40e9038f2345a5c1fb9a3d3d648c", null ],
       [ "cp_none", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a68e2695356af38492410341873083c49", null ]
     ] ],
-    [ "channel_flags", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99b", [
-      [ "c_nsfw", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba0b0d31477f484ddc8b5da869e8a020bd", null ],
-      [ "c_text", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba779d9594b416bec6ebd5823d8f2e5081", null ],
-      [ "c_dm", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba9a43d4cf5eede8927da336fc11531826", null ],
-      [ "c_voice", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99baf3b3f12a0d3d000e030a971a9021ef9e", null ],
-      [ "c_group", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba48c87a3615235f5b89bdf35da075ad91", null ],
-      [ "c_category", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba57a07827de1901dfbd7fa964bd9cdd43", null ],
-      [ "c_news", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99bac23ad6a6bbda0d45c5d0dd54746ef230", null ],
-      [ "c_store", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba6ac705dc87352c5d7d04497e9b06ae3a", null ],
-      [ "c_stage", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba832adb175719706ed9ce18acbec539cc", null ],
-      [ "c_news_thread", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba8d925c9e629ea695ef4fa3da201bf339", null ],
-      [ "c_public_thread", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba61764be8214a7e6f22e31943630ece9a", null ],
-      [ "c_private_thread", "namespacedpp.html#a373a53f1340e01ad64bb89f82158f99baffe1298bd7ee0ace51a2416a4ae1a687", null ]
+    [ "channel_flags", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9", [
+      [ "c_video_quality_auto", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a08563ff59cf566972597414166a41952", null ],
+      [ "c_nsfw", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a0b0d31477f484ddc8b5da869e8a020bd", null ],
+      [ "c_text", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a779d9594b416bec6ebd5823d8f2e5081", null ],
+      [ "c_dm", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a9a43d4cf5eede8927da336fc11531826", null ],
+      [ "c_voice", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9af3b3f12a0d3d000e030a971a9021ef9e", null ],
+      [ "c_group", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a48c87a3615235f5b89bdf35da075ad91", null ],
+      [ "c_category", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a57a07827de1901dfbd7fa964bd9cdd43", null ],
+      [ "c_news", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9ac23ad6a6bbda0d45c5d0dd54746ef230", null ],
+      [ "c_store", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a6ac705dc87352c5d7d04497e9b06ae3a", null ],
+      [ "c_stage", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a832adb175719706ed9ce18acbec539cc", null ],
+      [ "c_news_thread", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a8d925c9e629ea695ef4fa3da201bf339", null ],
+      [ "c_public_thread", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a61764be8214a7e6f22e31943630ece9a", null ],
+      [ "c_private_thread", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9affe1298bd7ee0ace51a2416a4ae1a687", null ],
+      [ "c_video_quality_720p", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a76fb8f7043c63103db86dc0ef1f14fca", null ]
     ] ],
     [ "channel_type", "namespacedpp.html#a8af3a726df107c304139477dbfa42092", [
       [ "GUILD_TEXT", "namespacedpp.html#a8af3a726df107c304139477dbfa42092ac240528d2f3f3a773b5e418c4f25d696", null ],
@@ -367,6 +370,11 @@ var namespacedpp =
       [ "ett_atom_utf8", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed", null ],
       [ "ett_atom_utf8_small", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c", null ]
     ] ],
+    [ "guild_explicit_content_t", "namespacedpp.html#a47f79e1142def583c59df70b1382319f", [
+      [ "expl_disabled", "namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479", null ],
+      [ "expl_members_without_roles", "namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce", null ],
+      [ "expl_all_members", "namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3", null ]
+    ] ],
     [ "guild_flags", "namespacedpp.html#a94aba4d1f2669c7da3b676859d54602f", [
       [ "g_large", "namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b", null ],
       [ "g_unavailable", "namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359", null ],
@@ -396,6 +404,12 @@ var namespacedpp =
       [ "gm_mute", "namespacedpp.html#a7e036e9909741e00af34e2505117218da557d08c731cb82cfd66915aaa0466a2f", null ],
       [ "gm_pending", "namespacedpp.html#a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41", null ],
       [ "gm_animated_avatar", "namespacedpp.html#a7e036e9909741e00af34e2505117218da5fdf0027681c83f79661940b012518e4", null ]
+    ] ],
+    [ "guild_nsfw_level_t", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591", [
+      [ "nsfw_default", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa", null ],
+      [ "nsfw_explicit", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a874c549de86f7e835ef471d6c9f05b35", null ],
+      [ "nsfw_safe", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a5b915fea251bc3a57ff13b40b4eeeef9", null ],
+      [ "nsfw_age_restricted", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a50782d1bfac8ee3e7c44afabe1ce8113", null ]
     ] ],
     [ "http_error", "namespacedpp.html#ae525add0ec39d647375aabe5ce455449", [
       [ "h_success", "namespacedpp.html#ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da", null ],
@@ -512,6 +526,10 @@ var namespacedpp =
       [ "mt_thread_starter_message", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f", null ],
       [ "mt_guild_invite_reminder", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a", null ],
       [ "mt_context_menu_command", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe", null ]
+    ] ],
+    [ "mfa_level_t", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4a", [
+      [ "mfa_none", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4aaca2f84896f4202cf23eaaba3c4c8ff5e", null ],
+      [ "mfa_elevated", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4aaf85178c8a67b9194513ebe7c9507914f", null ]
     ] ],
     [ "overwrite_type", "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522", [
       [ "ot_role", "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522ab1e3ea27fc98089b63c9e89fe7c44df5", null ],
@@ -655,6 +673,13 @@ var namespacedpp =
       [ "u_certified_moderator", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a05e7983fd9a8181c8d8e59faa6d43b79", null ],
       [ "u_bot_http_interactions", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a87c2acb3a9ffda46076dd46150c02c30", null ]
     ] ],
+    [ "verification_level_t", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85", [
+      [ "ver_none", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a40641216d07d139fe3c2744f2318f75f", null ],
+      [ "ver_low", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a838e511c735776d803d52c7c7b0d38c3", null ],
+      [ "ver_medium", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85abfd923a1a12342f4b61722cdeefdac99", null ],
+      [ "ver_high", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a637cb88d1e072ae739f24ea01982c456", null ],
+      [ "ver_very_high", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85aba06f9c0033583341762686e4e76679b", null ]
+    ] ],
     [ "voiceregion_flags", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813", [
       [ "v_optimal", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813afb06fc75de5270a1646e4ed14754ac1c", null ],
       [ "v_deprecated", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813a7ffeb4c61fc6bdfc3c66fc45837df985", null ],
@@ -705,6 +730,7 @@ var namespacedpp =
     [ "from_json", "namespacedpp.html#a177af60de5536cff95f417fce3d9487a", null ],
     [ "from_json", "namespacedpp.html#a1d5a166cc8328a1d2728e9e451c966f5", null ],
     [ "from_json", "namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52", null ],
+    [ "from_json", "namespacedpp.html#a1b146099de6ccbd7135ffba167aee39d", null ],
     [ "garbage_collection", "namespacedpp.html#af9f0984484c2408f8bac07674720ef07", null ],
     [ "get_channel_cache", "namespacedpp.html#a3fdbe795e93af8ae42508a9eb8845ccd", null ],
     [ "get_channel_count", "namespacedpp.html#a564bd51f9aaa38759d667dee4a0c8615", null ],

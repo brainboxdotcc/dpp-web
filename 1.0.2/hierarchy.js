@@ -199,7 +199,9 @@ var hierarchy =
       [ "dpp::interaction", "classdpp_1_1interaction.html", null ],
       [ "dpp::role", "classdpp_1_1role.html", null ],
       [ "dpp::slashcommand", "classdpp_1_1slashcommand.html", null ],
-      [ "dpp::user", "classdpp_1_1user.html", null ],
+      [ "dpp::user", "classdpp_1_1user.html", [
+        [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
+      ] ],
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
     [ "dpp::message", "structdpp_1_1message.html", null ],

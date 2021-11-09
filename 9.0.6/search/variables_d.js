@@ -6,5 +6,6 @@ var searchData=
   ['nickname_3',['nickname',['../classdpp_1_1guild__member.html#af305ded317e0fb05fc67d15713549efa',1,'dpp::guild_member']]],
   ['nonblocking_4',['nonblocking',['../classdpp_1_1ssl__client.html#a1486b3df6780a842552442a25634fcc9',1,'dpp::ssl_client']]],
   ['nonce_5',['nonce',['../structdpp_1_1message.html#afaaf4f44ce0631c49c15088b033d25e6',1,'dpp::message']]],
-  ['numshards_6',['numshards',['../classdpp_1_1cluster.html#a7418aa521c49af80822039b013d8d004',1,'dpp::cluster']]]
+  ['nsfw_5flevel_6',['nsfw_level',['../classdpp_1_1guild.html#a6520b72031ed26371bb23dc9c23b60c0',1,'dpp::guild']]],
+  ['numshards_7',['numshards',['../classdpp_1_1cluster.html#a7418aa521c49af80822039b013d8d004',1,'dpp::cluster']]]
 ];

@@ -52,7 +52,7 @@ var searchData=
   ['is_5fhouse_5fbrilliance_49',['is_house_brilliance',['../classdpp_1_1user.html#af4a509ae622f1b4531a758524b34f47e',1,'dpp::user']]],
   ['is_5flarge_50',['is_large',['../classdpp_1_1guild.html#ab345901eb0418b58344b72dbe21d40a1',1,'dpp::guild']]],
   ['is_5floading_51',['is_loading',['../structdpp_1_1message.html#a25d4b0fbfcc698a74fa4f2b71796e874',1,'dpp::message']]],
-  ['is_5fmanaged_52',['is_managed',['../classdpp_1_1emoji.html#ae92572e9263cf62cc3e1cc826d98f5ad',1,'dpp::emoji::is_managed()'],['../classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9',1,'dpp::role::is_managed() const']]],
+  ['is_5fmanaged_52',['is_managed',['../classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9',1,'dpp::role::is_managed()'],['../classdpp_1_1emoji.html#ae92572e9263cf62cc3e1cc826d98f5ad',1,'dpp::emoji::is_managed()']]],
   ['is_5fmentionable_53',['is_mentionable',['../classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f',1,'dpp::role']]],
   ['is_5fmfa_5fenabled_54',['is_mfa_enabled',['../classdpp_1_1user.html#a08cd09a04a75493693d60a99e0123905',1,'dpp::user']]],
   ['is_5fmute_55',['is_mute',['../classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d',1,'dpp::voicestate']]],
@@ -86,9 +86,11 @@ var searchData=
   ['is_5fverified_83',['is_verified',['../classdpp_1_1guild.html#af79641512c0342d3082174afa2e636e8',1,'dpp::guild::is_verified()'],['../classdpp_1_1user.html#aa08cdd77402ef1d08b003e2e5342004a',1,'dpp::user::is_verified() const']]],
   ['is_5fverified_5fbot_84',['is_verified_bot',['../classdpp_1_1user.html#a9aabc6989097e79dc8e3e8d00d7a0c5f',1,'dpp::user']]],
   ['is_5fverified_5fbot_5fdev_85',['is_verified_bot_dev',['../classdpp_1_1user.html#abe54bbcf190f3aba2aeaf8c2d6287152',1,'dpp::user']]],
-  ['is_5fvip_86',['is_vip',['../classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14',1,'dpp::voiceregion']]],
-  ['is_5fvoice_5fchannel_87',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
-  ['is_5fwelcome_5fscreen_5fenabled_88',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]],
-  ['isfinite_89',['isfinite',['../namespacedetail.html#ab69f2583a2a167ea0b0e4c333448b113',1,'detail']]],
-  ['isnan_90',['isnan',['../namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841',1,'detail']]]
+  ['is_5fvideo_5f720p_86',['is_video_720p',['../classdpp_1_1channel.html#a311501db36692f1753254e1bf618e75d',1,'dpp::channel']]],
+  ['is_5fvideo_5fauto_87',['is_video_auto',['../classdpp_1_1channel.html#afb783f82a86a5ed6f247aaa213164854',1,'dpp::channel']]],
+  ['is_5fvip_88',['is_vip',['../classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14',1,'dpp::voiceregion']]],
+  ['is_5fvoice_5fchannel_89',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
+  ['is_5fwelcome_5fscreen_5fenabled_90',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]],
+  ['isfinite_91',['isfinite',['../namespacedetail.html#ab69f2583a2a167ea0b0e4c333448b113',1,'detail']]],
+  ['isnan_92',['isnan',['../namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841',1,'detail']]]
 ];

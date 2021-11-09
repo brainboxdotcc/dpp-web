@@ -205,6 +205,7 @@ var annotated_dup =
       [ "type_punner", "uniondpp_1_1type__punner.html", "uniondpp_1_1type__punner" ],
       [ "typing_start_t", "structdpp_1_1typing__start__t.html", "structdpp_1_1typing__start__t" ],
       [ "user", "classdpp_1_1user.html", "classdpp_1_1user" ],
+      [ "user_identified", "classdpp_1_1user__identified.html", "classdpp_1_1user__identified" ],
       [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
       [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
       [ "voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", "structdpp_1_1voice__client__disconnect__t" ],
