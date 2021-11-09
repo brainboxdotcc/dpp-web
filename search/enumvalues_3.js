@@ -30,5 +30,8 @@ var searchData=
   ['ett_5freference_27',['ett_reference',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5',1,'dpp']]],
   ['ett_5fsmall_5ftuple_28',['ett_small_tuple',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16',1,'dpp']]],
   ['ett_5fsmallint_29',['ett_smallint',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd',1,'dpp']]],
-  ['ett_5fstring_30',['ett_string',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381',1,'dpp']]]
+  ['ett_5fstring_30',['ett_string',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381',1,'dpp']]],
+  ['expl_5fall_5fmembers_31',['expl_all_members',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3',1,'dpp']]],
+  ['expl_5fdisabled_32',['expl_disabled',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479',1,'dpp']]],
+  ['expl_5fmembers_5fwithout_5froles_33',['expl_members_without_roles',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce',1,'dpp']]]
 ];

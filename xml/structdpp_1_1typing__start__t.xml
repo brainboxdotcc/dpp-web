@@ -221,7 +221,7 @@
           <edgelabel>user_policy</edgelabel>
         </childnode>
       </node>
-      <node id="38">
+      <node id="41">
         <label>dpp::channel</label>
         <link refid="classdpp_1_1channel"/>
         <childnode refid="22" relation="public-inheritance">
@@ -371,6 +371,8 @@
         </childnode>
         <childnode refid="17" relation="usage">
           <edgelabel>flags</edgelabel>
+          <edgelabel>max_members</edgelabel>
+          <edgelabel>max_presences</edgelabel>
           <edgelabel>member_count</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
@@ -393,16 +395,19 @@
           <edgelabel>system_channel_id</edgelabel>
           <edgelabel>widget_channel_id</edgelabel>
         </childnode>
-        <childnode refid="33" relation="usage">
-          <edgelabel>voice_region</edgelabel>
-        </childnode>
         <childnode refid="25" relation="usage">
           <edgelabel>afk_timeout</edgelabel>
           <edgelabel>default_message_notifications</edgelabel>
-          <edgelabel>explicit_content_filter</edgelabel>
-          <edgelabel>mfa_level</edgelabel>
           <edgelabel>premium_tier</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
           <edgelabel>verification_level</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>explicit_content_filter</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>mfa_level</edgelabel>
         </childnode>
         <childnode refid="20" relation="usage">
           <edgelabel>channels</edgelabel>
@@ -410,17 +415,20 @@
           <edgelabel>roles</edgelabel>
           <edgelabel>threads</edgelabel>
         </childnode>
-        <childnode refid="34" relation="usage">
+        <childnode refid="36" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
-        <childnode refid="36" relation="usage">
+        <childnode refid="38" relation="usage">
           <edgelabel>voice_members</edgelabel>
         </childnode>
-        <childnode refid="37" relation="usage">
+        <childnode refid="39" relation="usage">
           <edgelabel>welcome_screen</edgelabel>
         </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>nsfw_level</edgelabel>
+        </childnode>
       </node>
-      <node id="35">
+      <node id="37">
         <label>dpp::guild_member</label>
         <link refid="classdpp_1_1guild__member"/>
         <childnode refid="3" relation="usage">
@@ -502,7 +510,7 @@
         <childnode refid="32" relation="usage">
           <edgelabel>typing_guild</edgelabel>
         </childnode>
-        <childnode refid="38" relation="usage">
+        <childnode refid="41" relation="usage">
           <edgelabel>typing_channel</edgelabel>
         </childnode>
         <childnode refid="21" relation="usage">
@@ -550,7 +558,7 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="37">
+      <node id="39">
         <label>dpp::welcome_screen_t</label>
         <link refid="structdpp_1_1welcome__screen__t"/>
         <childnode refid="3" relation="usage">
@@ -560,11 +568,17 @@
           <edgelabel>welcome_channels</edgelabel>
         </childnode>
       </node>
+      <node id="34">
+        <label>guild_explicit_content_t</label>
+      </node>
+      <node id="40">
+        <label>guild_nsfw_level_t</label>
+      </node>
       <node id="9">
         <label>int</label>
       </node>
-      <node id="33">
-        <label>region</label>
+      <node id="35">
+        <label>mfa_level_t</label>
       </node>
       <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
@@ -572,7 +586,7 @@
       <node id="15">
         <label>function&lt;</label>
       </node>
-      <node id="36">
+      <node id="38">
         <label>map&lt;</label>
       </node>
       <node id="30">
@@ -607,14 +621,17 @@
       <node id="25">
         <label>uint8_t</label>
       </node>
-      <node id="34">
+      <node id="36">
         <label>std::unordered_map&lt; snowflake, guild_member &gt;</label>
         <childnode refid="14" relation="usage">
           <edgelabel>keys</edgelabel>
         </childnode>
-        <childnode refid="35" relation="usage">
+        <childnode refid="37" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
+      </node>
+      <node id="33">
+        <label>verification_level_t</label>
       </node>
       <node id="28">
         <label>websocket_protocol_t</label>
