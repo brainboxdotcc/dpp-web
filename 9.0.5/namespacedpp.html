@@ -319,7 +319,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guild join request delete (user declined membership screening)  <a href="structdpp_1_1guild__join__request__delete__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild__member.html">guild_member</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a> membership upon a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a>.  <a href="classdpp_1_1guild__member.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a> membership upon a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a>. This contains the user's nickname, guild roles, and any other guild-specific flags.  <a href="classdpp_1_1guild__member.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1guild__member__add__t.html">guild_member_add_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guild member add.  <a href="structdpp_1_1guild__member__add__t.html#details">More...</a><br /></td></tr>
@@ -451,7 +451,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> class manages rate limits and marshalls HTTP requests that have been built as <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> objects.  <a href="classdpp_1_1request__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resolved__user.html">resolved_user</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdpp_1_1resolved__user.html" title="dpp::resolved_user contains both a dpp::guild_member and a dpp::user. The user can be used to obtain ...">dpp::resolved_user</a> contains both a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild.">dpp::guild_member</a> and a <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a>. The user can be used to obtain in-depth user details such as if they are nitro, and the guild member information to check their roles on a guild etc. The Discord API provides both if a parameter is a user ping, so we offer both in a combined structure.  <a href="structdpp_1_1resolved__user.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdpp_1_1resolved__user.html" title="dpp::resolved_user contains both a dpp::guild_member and a dpp::user. The user can be used to obtain ...">dpp::resolved_user</a> contains both a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">dpp::guild_member</a> and a <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a>. The user can be used to obtain in-depth user details such as if they are nitro, and the guild member information to check their roles on a guild etc. The Discord API provides both if a parameter is a user ping, so we offer both in a combined structure.  <a href="structdpp_1_1resolved__user.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resumed__t.html">resumed_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session resumed.  <a href="structdpp_1_1resumed__t.html#details">More...</a><br /></td></tr>
@@ -921,45 +921,47 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a51891a9e382f9c396d378de00fa65099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents voice regions for guilds and channels.  <a href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099">More...</a><br /></td></tr>
 <tr class="separator:a51891a9e382f9c396d378de00fa65099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94aba4d1f2669c7da3b676859d54602f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602f">guild_flags</a> { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b">g_large</a> = 0b0000000000000000000001
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359">g_unavailable</a> = 0b0000000000000000000010
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa95bab65c1394b0a2cbd23083a788be5c">g_widget_enabled</a> = 0b0000000000000000000100
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa08b2f4c963b17f60801f9a2deb17ccd7">g_invite_splash</a> = 0b0000000000000000001000
+<tr class="memitem:ace5fc4a0db4c08d37d3a1b8e7e22383a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383a">guild_flags</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aad6705273a057a9c7f7032a22f29e538b">g_large</a> = 0b000000000000000000000001
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa6f5a2b3aa3e079cd62bb3ad595f04359">g_unavailable</a> = 0b000000000000000000000010
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa95bab65c1394b0a2cbd23083a788be5c">g_widget_enabled</a> = 0b000000000000000000000100
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa08b2f4c963b17f60801f9a2deb17ccd7">g_invite_splash</a> = 0b000000000000000000001000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa5b7123fe609093340a16c80264d09172">g_vip_regions</a> = 0b0000000000000000010000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf7bd4841ddff627c7aa89d2fb714a0fa">g_vanity_url</a> = 0b0000000000000000100000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad0048575cf495f4069fbe6d885da6c25">g_verified</a> = 0b0000000000000001000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa2475366e2137c374d70e109a4f558e67">g_partnered</a> = 0b0000000000000010000000
+&#160;&#160;<a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa5b7123fe609093340a16c80264d09172">g_vip_regions</a> = 0b000000000000000000010000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aaf7bd4841ddff627c7aa89d2fb714a0fa">g_vanity_url</a> = 0b000000000000000000100000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aad0048575cf495f4069fbe6d885da6c25">g_verified</a> = 0b000000000000000001000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa2475366e2137c374d70e109a4f558e67">g_partnered</a> = 0b000000000000000010000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa07826673632e29a3f19ffb92f92de6b2">g_community</a> = 0b0000000000000100000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa857663f1db666045ea04595a6168e02f">g_commerce</a> = 0b0000000000001000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faeee130a9c893f8b40a40032cb1e103dd">g_news</a> = 0b0000000000010000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fabc22c6fe89086b9a5e99134118d675af">g_discoverable</a> = 0b0000000000100000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa07826673632e29a3f19ffb92f92de6b2">g_community</a> = 0b000000000000000100000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa857663f1db666045ea04595a6168e02f">g_commerce</a> = 0b000000000000001000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aaeee130a9c893f8b40a40032cb1e103dd">g_news</a> = 0b000000000000010000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aabc22c6fe89086b9a5e99134118d675af">g_discoverable</a> = 0b000000000000100000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa1ac4e8b1bf2d97e934def6e656b6853b">g_featureable</a> = 0b0000000001000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa41116ed045326dcffe6c89f69b8a16b4">g_animated_icon</a> = 0b0000000010000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa2f620e3b0ccaf4c4e55fb83393f77ad6">g_banner</a> = 0b0000000100000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa395413623895eaac5998ae8b4dc2031f">g_welcome_screen_enabled</a> = 0b0000001000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa1ac4e8b1bf2d97e934def6e656b6853b">g_featureable</a> = 0b000000000001000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa41116ed045326dcffe6c89f69b8a16b4">g_animated_icon</a> = 0b000000000010000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa2f620e3b0ccaf4c4e55fb83393f77ad6">g_banner</a> = 0b000000000100000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa395413623895eaac5998ae8b4dc2031f">g_welcome_screen_enabled</a> = 0b000000001000000000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faa013ed7a6d95dfe09ef48449204ee72d">g_member_verification_gate</a> = 0b0000010000000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf3dd4637ed204605d0271d128ada7db8">g_preview_enabled</a> = 0b0000100000000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faccb9055123427741b9d4b08c0f0342c8">g_no_join_notifications</a> = 0b0001000000000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faeed2962f0767222fb28a046ee64fffaf">g_no_boost_notifications</a> = 0b0010000000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aaa013ed7a6d95dfe09ef48449204ee72d">g_member_verification_gate</a> = 0b000000010000000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aaf3dd4637ed204605d0271d128ada7db8">g_preview_enabled</a> = 0b000000100000000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aaccb9055123427741b9d4b08c0f0342c8">g_no_join_notifications</a> = 0b000001000000000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aaeed2962f0767222fb28a046ee64fffaf">g_no_boost_notifications</a> = 0b000010000000000000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf86b8a8efaa0bd140bcf714d4a59f7c0">g_has_animated_icon</a> = 0b0100000000000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa7886733c68622fb94d225d97b0f58d91">g_has_animated_banner</a> = 0b1000000000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aaf86b8a8efaa0bd140bcf714d4a59f7c0">g_has_animated_icon</a> = 0b000100000000000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa7886733c68622fb94d225d97b0f58d91">g_has_animated_banner</a> = 0b001000000000000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa746b47a905f2094b65516cfaac098778">g_no_setup_tips</a> = 0b010000000000000000000000
+, <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aadee23452bb4b1dbfdb4999d5cec75036">g_no_sticker_greeting</a> = 0b100000000000000000000000
 <br />
  }</td></tr>
-<tr class="memdesc:a94aba4d1f2669c7da3b676859d54602f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The various flags that represent the status of a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a> object.  <a href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602f">More...</a><br /></td></tr>
-<tr class="separator:a94aba4d1f2669c7da3b676859d54602f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e036e9909741e00af34e2505117218d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7e036e9909741e00af34e2505117218d">guild_member_flags</a> { <a class="el" href="namespacedpp.html#a7e036e9909741e00af34e2505117218da966c5f8d7bd60e0daf9ceaafb556b4c4">gm_deaf</a> = 0b00001
-, <a class="el" href="namespacedpp.html#a7e036e9909741e00af34e2505117218da557d08c731cb82cfd66915aaa0466a2f">gm_mute</a> = 0b00010
-, <a class="el" href="namespacedpp.html#a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41">gm_pending</a> = 0b00100
-, <a class="el" href="namespacedpp.html#a7e036e9909741e00af34e2505117218da5fdf0027681c83f79661940b012518e4">gm_animated_avatar</a> = 0b01000
+<tr class="memdesc:ace5fc4a0db4c08d37d3a1b8e7e22383a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The various flags that represent the status of a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a> object.  <a href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383a">More...</a><br /></td></tr>
+<tr class="separator:ace5fc4a0db4c08d37d3a1b8e7e22383a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ffb1848bf700da25bc187e38054a30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30">guild_member_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4">gm_deaf</a> = 0b00001
+, <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f">gm_mute</a> = 0b00010
+, <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41">gm_pending</a> = 0b00100
+, <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4">gm_animated_avatar</a> = 0b01000
  }</td></tr>
-<tr class="memdesc:a7e036e9909741e00af34e2505117218d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various flags that can be used to indicate the status of a guild member.  <a href="namespacedpp.html#a7e036e9909741e00af34e2505117218d">More...</a><br /></td></tr>
-<tr class="separator:a7e036e9909741e00af34e2505117218d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:aa4ffb1848bf700da25bc187e38054a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various flags that can be used to indicate the status of a guild member.  <a href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30">More...</a><br /></td></tr>
+<tr class="separator:aa4ffb1848bf700da25bc187e38054a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5e6717b5f1f374c5c29f91394aa591"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591">guild_nsfw_level_t</a> : uint8_t { <a class="el" href="namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa">nsfw_default</a> = 0
 , <a class="el" href="namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a874c549de86f7e835ef471d6c9f05b35">nsfw_explicit</a> = 1
 , <a class="el" href="namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a5b915fea251bc3a57ff13b40b4eeeef9">nsfw_safe</a> = 2
@@ -1291,6 +1293,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a63342923617f0829b64c53cd02fafd1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1b">component_type_t</a> { <a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e">cotype_button</a> = 2
 , <a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc">cotype_select</a> = 3
  }</td></tr>
+<tr class="memdesc:a63342923617f0829b64c53cd02fafd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Component type, either button or select.  <a href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1b">More...</a><br /></td></tr>
 <tr class="separator:a63342923617f0829b64c53cd02fafd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66e44bd22afee53242581010ddd3728"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac66e44bd22afee53242581010ddd3728">command_permission_type</a> { <a class="el" href="namespacedpp.html#ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f">cpt_role</a> = 1
 , <a class="el" href="namespacedpp.html#ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d">cpt_user</a> = 2
@@ -1302,6 +1305,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659">ctxm_user</a> = 2
 , <a class="el" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a">ctxm_message</a> = 3
  }</td></tr>
+<tr class="memdesc:a3af415bd74cead2c665a6a507ce843fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-click context menu types.  <a href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb">More...</a><br /></td></tr>
 <tr class="separator:a3af415bd74cead2c665a6a507ce843fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29954c9dfc5a906346177226d036a418"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418">stage_privacy_level</a> : uint8_t { <a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed">sp_public</a> = 1
 , <a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d">sp_guild_only</a> = 2
@@ -1474,7 +1478,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad8d0229b64fda0313bdedc5966227aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an timestamp from a json field value containing an ISO8601 string, if defined, else does nothing.  <a href="namespacedpp.html#ad8d0229b64fda0313bdedc5966227aaa">More...</a><br /></td></tr>
 <tr class="separator:ad8d0229b64fda0313bdedc5966227aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177af60de5536cff95f417fce3d9487a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm)</td></tr>
-<tr class="memdesc:a177af60de5536cff95f417fce3d9487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild.">guild_member</a> from json  <a href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">More...</a><br /></td></tr>
+<tr class="memdesc:a177af60de5536cff95f417fce3d9487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> from json  <a href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">More...</a><br /></td></tr>
 <tr class="separator:a177af60de5536cff95f417fce3d9487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd18d41e47000c592ab63b702335e184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acd18d41e47000c592ab63b702335e184">to_json</a> (<a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> &amp;j, const <a class="el" href="classdpp_1_1component.html">component</a> &amp;cp)</td></tr>
 <tr class="separator:acd18d41e47000c592ab63b702335e184"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2549,8 +2553,10 @@ Variables</h2></td></tr>
 
 <p>type of permission in the <a class="el" href="classdpp_1_1command__permission.html" title="Application command permissions allow you to enable or disable commands for specific users or roles w...">dpp::command_permission</a> class </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f" name="ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f"></a>cpt_role&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d" name="ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d"></a>cpt_user&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f" name="ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f"></a>cpt_role&#160;</td><td class="fielddoc"><p >Role permission. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d" name="ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d"></a>cpt_user&#160;</td><td class="fielddoc"><p >User permission. </p>
+</td></tr>
 </table>
 
 </div>
@@ -2618,9 +2624,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Component type, either button or select. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e" name="a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e"></a>cotype_button&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc" name="a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc"></a>cotype_select&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e" name="a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e"></a>cotype_button&#160;</td><td class="fielddoc"><p >Button. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc" name="a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc"></a>cotype_select&#160;</td><td class="fielddoc"><p >Option select list (drop-down) </p>
+</td></tr>
 </table>
 
 </div>
@@ -2747,89 +2757,93 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a94aba4d1f2669c7da3b676859d54602f" name="a94aba4d1f2669c7da3b676859d54602f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94aba4d1f2669c7da3b676859d54602f">&#9670;&nbsp;</a></span>guild_flags</h2>
+<a id="ace5fc4a0db4c08d37d3a1b8e7e22383a" name="ace5fc4a0db4c08d37d3a1b8e7e22383a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5fc4a0db4c08d37d3a1b8e7e22383a">&#9670;&nbsp;</a></span>guild_flags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602f">dpp::guild_flags</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383a">dpp::guild_flags</a> : uint32_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The various flags that represent the status of a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a> object. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b" name="a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b"></a>g_large&#160;</td><td class="fielddoc"><p >Large guild </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aad6705273a057a9c7f7032a22f29e538b" name="ace5fc4a0db4c08d37d3a1b8e7e22383aad6705273a057a9c7f7032a22f29e538b"></a>g_large&#160;</td><td class="fielddoc"><p >Large guild </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359" name="a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359"></a>g_unavailable&#160;</td><td class="fielddoc"><p >Unavailable guild (inaccessible due to an outage) </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa6f5a2b3aa3e079cd62bb3ad595f04359" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa6f5a2b3aa3e079cd62bb3ad595f04359"></a>g_unavailable&#160;</td><td class="fielddoc"><p >Unavailable guild (inaccessible due to an outage) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa95bab65c1394b0a2cbd23083a788be5c" name="a94aba4d1f2669c7da3b676859d54602fa95bab65c1394b0a2cbd23083a788be5c"></a>g_widget_enabled&#160;</td><td class="fielddoc"><p >Guild has widget enabled </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa95bab65c1394b0a2cbd23083a788be5c" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa95bab65c1394b0a2cbd23083a788be5c"></a>g_widget_enabled&#160;</td><td class="fielddoc"><p >Guild has widget enabled </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa08b2f4c963b17f60801f9a2deb17ccd7" name="a94aba4d1f2669c7da3b676859d54602fa08b2f4c963b17f60801f9a2deb17ccd7"></a>g_invite_splash&#160;</td><td class="fielddoc"><p >Guild can have an invite splash image </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa08b2f4c963b17f60801f9a2deb17ccd7" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa08b2f4c963b17f60801f9a2deb17ccd7"></a>g_invite_splash&#160;</td><td class="fielddoc"><p >Guild can have an invite splash image </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa5b7123fe609093340a16c80264d09172" name="a94aba4d1f2669c7da3b676859d54602fa5b7123fe609093340a16c80264d09172"></a>g_vip_regions&#160;</td><td class="fielddoc"><p >Guild can have VIP regions </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa5b7123fe609093340a16c80264d09172" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa5b7123fe609093340a16c80264d09172"></a>g_vip_regions&#160;</td><td class="fielddoc"><p >Guild can have VIP regions </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602faf7bd4841ddff627c7aa89d2fb714a0fa" name="a94aba4d1f2669c7da3b676859d54602faf7bd4841ddff627c7aa89d2fb714a0fa"></a>g_vanity_url&#160;</td><td class="fielddoc"><p >Guild can have a vanity url </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aaf7bd4841ddff627c7aa89d2fb714a0fa" name="ace5fc4a0db4c08d37d3a1b8e7e22383aaf7bd4841ddff627c7aa89d2fb714a0fa"></a>g_vanity_url&#160;</td><td class="fielddoc"><p >Guild can have a vanity url </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fad0048575cf495f4069fbe6d885da6c25" name="a94aba4d1f2669c7da3b676859d54602fad0048575cf495f4069fbe6d885da6c25"></a>g_verified&#160;</td><td class="fielddoc"><p >Guild is verified </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aad0048575cf495f4069fbe6d885da6c25" name="ace5fc4a0db4c08d37d3a1b8e7e22383aad0048575cf495f4069fbe6d885da6c25"></a>g_verified&#160;</td><td class="fielddoc"><p >Guild is verified </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa2475366e2137c374d70e109a4f558e67" name="a94aba4d1f2669c7da3b676859d54602fa2475366e2137c374d70e109a4f558e67"></a>g_partnered&#160;</td><td class="fielddoc"><p >Guild is partnered </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa2475366e2137c374d70e109a4f558e67" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa2475366e2137c374d70e109a4f558e67"></a>g_partnered&#160;</td><td class="fielddoc"><p >Guild is partnered </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa07826673632e29a3f19ffb92f92de6b2" name="a94aba4d1f2669c7da3b676859d54602fa07826673632e29a3f19ffb92f92de6b2"></a>g_community&#160;</td><td class="fielddoc"><p >Community features enabled </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa07826673632e29a3f19ffb92f92de6b2" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa07826673632e29a3f19ffb92f92de6b2"></a>g_community&#160;</td><td class="fielddoc"><p >Community features enabled </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa857663f1db666045ea04595a6168e02f" name="a94aba4d1f2669c7da3b676859d54602fa857663f1db666045ea04595a6168e02f"></a>g_commerce&#160;</td><td class="fielddoc"><p >Guild has commerce features enabled </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa857663f1db666045ea04595a6168e02f" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa857663f1db666045ea04595a6168e02f"></a>g_commerce&#160;</td><td class="fielddoc"><p >Guild has commerce features enabled </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602faeee130a9c893f8b40a40032cb1e103dd" name="a94aba4d1f2669c7da3b676859d54602faeee130a9c893f8b40a40032cb1e103dd"></a>g_news&#160;</td><td class="fielddoc"><p >Guild has news features enabled </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aaeee130a9c893f8b40a40032cb1e103dd" name="ace5fc4a0db4c08d37d3a1b8e7e22383aaeee130a9c893f8b40a40032cb1e103dd"></a>g_news&#160;</td><td class="fielddoc"><p >Guild has news features enabled </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fabc22c6fe89086b9a5e99134118d675af" name="a94aba4d1f2669c7da3b676859d54602fabc22c6fe89086b9a5e99134118d675af"></a>g_discoverable&#160;</td><td class="fielddoc"><p >Guild is discoverable in discovery </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aabc22c6fe89086b9a5e99134118d675af" name="ace5fc4a0db4c08d37d3a1b8e7e22383aabc22c6fe89086b9a5e99134118d675af"></a>g_discoverable&#160;</td><td class="fielddoc"><p >Guild is discoverable in discovery </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa1ac4e8b1bf2d97e934def6e656b6853b" name="a94aba4d1f2669c7da3b676859d54602fa1ac4e8b1bf2d97e934def6e656b6853b"></a>g_featureable&#160;</td><td class="fielddoc"><p >Guild is featureable </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa1ac4e8b1bf2d97e934def6e656b6853b" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa1ac4e8b1bf2d97e934def6e656b6853b"></a>g_featureable&#160;</td><td class="fielddoc"><p >Guild is featureable </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa41116ed045326dcffe6c89f69b8a16b4" name="a94aba4d1f2669c7da3b676859d54602fa41116ed045326dcffe6c89f69b8a16b4"></a>g_animated_icon&#160;</td><td class="fielddoc"><p >Guild can have an animated icon (doesn't mean it actually has one though) </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa41116ed045326dcffe6c89f69b8a16b4" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa41116ed045326dcffe6c89f69b8a16b4"></a>g_animated_icon&#160;</td><td class="fielddoc"><p >Guild can have an animated icon (doesn't mean it actually has one though) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa2f620e3b0ccaf4c4e55fb83393f77ad6" name="a94aba4d1f2669c7da3b676859d54602fa2f620e3b0ccaf4c4e55fb83393f77ad6"></a>g_banner&#160;</td><td class="fielddoc"><p >Guild can have a banner image </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa2f620e3b0ccaf4c4e55fb83393f77ad6" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa2f620e3b0ccaf4c4e55fb83393f77ad6"></a>g_banner&#160;</td><td class="fielddoc"><p >Guild can have a banner image </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa395413623895eaac5998ae8b4dc2031f" name="a94aba4d1f2669c7da3b676859d54602fa395413623895eaac5998ae8b4dc2031f"></a>g_welcome_screen_enabled&#160;</td><td class="fielddoc"><p >Guild has a welcome screen </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa395413623895eaac5998ae8b4dc2031f" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa395413623895eaac5998ae8b4dc2031f"></a>g_welcome_screen_enabled&#160;</td><td class="fielddoc"><p >Guild has a welcome screen </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602faa013ed7a6d95dfe09ef48449204ee72d" name="a94aba4d1f2669c7da3b676859d54602faa013ed7a6d95dfe09ef48449204ee72d"></a>g_member_verification_gate&#160;</td><td class="fielddoc"><p >Guild has a member verification gate </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aaa013ed7a6d95dfe09ef48449204ee72d" name="ace5fc4a0db4c08d37d3a1b8e7e22383aaa013ed7a6d95dfe09ef48449204ee72d"></a>g_member_verification_gate&#160;</td><td class="fielddoc"><p >Guild has a member verification gate </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602faf3dd4637ed204605d0271d128ada7db8" name="a94aba4d1f2669c7da3b676859d54602faf3dd4637ed204605d0271d128ada7db8"></a>g_preview_enabled&#160;</td><td class="fielddoc"><p >Guild has a preview </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aaf3dd4637ed204605d0271d128ada7db8" name="ace5fc4a0db4c08d37d3a1b8e7e22383aaf3dd4637ed204605d0271d128ada7db8"></a>g_preview_enabled&#160;</td><td class="fielddoc"><p >Guild has a preview </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602faccb9055123427741b9d4b08c0f0342c8" name="a94aba4d1f2669c7da3b676859d54602faccb9055123427741b9d4b08c0f0342c8"></a>g_no_join_notifications&#160;</td><td class="fielddoc"><p >Guild join notifications are off </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aaccb9055123427741b9d4b08c0f0342c8" name="ace5fc4a0db4c08d37d3a1b8e7e22383aaccb9055123427741b9d4b08c0f0342c8"></a>g_no_join_notifications&#160;</td><td class="fielddoc"><p >Guild join notifications are off </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602faeed2962f0767222fb28a046ee64fffaf" name="a94aba4d1f2669c7da3b676859d54602faeed2962f0767222fb28a046ee64fffaf"></a>g_no_boost_notifications&#160;</td><td class="fielddoc"><p >Guild boost notifications are off </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aaeed2962f0767222fb28a046ee64fffaf" name="ace5fc4a0db4c08d37d3a1b8e7e22383aaeed2962f0767222fb28a046ee64fffaf"></a>g_no_boost_notifications&#160;</td><td class="fielddoc"><p >Guild boost notifications are off </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602faf86b8a8efaa0bd140bcf714d4a59f7c0" name="a94aba4d1f2669c7da3b676859d54602faf86b8a8efaa0bd140bcf714d4a59f7c0"></a>g_has_animated_icon&#160;</td><td class="fielddoc"><p >Guild has an actual animated icon (set by the icon hash starting with 'a_') </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aaf86b8a8efaa0bd140bcf714d4a59f7c0" name="ace5fc4a0db4c08d37d3a1b8e7e22383aaf86b8a8efaa0bd140bcf714d4a59f7c0"></a>g_has_animated_icon&#160;</td><td class="fielddoc"><p >Guild has an actual animated icon (set by the icon hash starting with 'a_') </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa7886733c68622fb94d225d97b0f58d91" name="a94aba4d1f2669c7da3b676859d54602fa7886733c68622fb94d225d97b0f58d91"></a>g_has_animated_banner&#160;</td><td class="fielddoc"><p >Guild has an actual animated banner (set by the icon hash starting with 'a_') </p>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa7886733c68622fb94d225d97b0f58d91" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa7886733c68622fb94d225d97b0f58d91"></a>g_has_animated_banner&#160;</td><td class="fielddoc"><p >Guild has an actual animated banner (set by the icon hash starting with 'a_') </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aa746b47a905f2094b65516cfaac098778" name="ace5fc4a0db4c08d37d3a1b8e7e22383aa746b47a905f2094b65516cfaac098778"></a>g_no_setup_tips&#160;</td><td class="fielddoc"><p >Guild setup tips are off </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ace5fc4a0db4c08d37d3a1b8e7e22383aadee23452bb4b1dbfdb4999d5cec75036" name="ace5fc4a0db4c08d37d3a1b8e7e22383aadee23452bb4b1dbfdb4999d5cec75036"></a>g_no_sticker_greeting&#160;</td><td class="fielddoc"><p >"Wave to say hi" sticker prompt buttons are off </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="a7e036e9909741e00af34e2505117218d" name="a7e036e9909741e00af34e2505117218d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e036e9909741e00af34e2505117218d">&#9670;&nbsp;</a></span>guild_member_flags</h2>
+<a id="aa4ffb1848bf700da25bc187e38054a30" name="aa4ffb1848bf700da25bc187e38054a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ffb1848bf700da25bc187e38054a30">&#9670;&nbsp;</a></span>guild_member_flags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a7e036e9909741e00af34e2505117218d">dpp::guild_member_flags</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30">dpp::guild_member_flags</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Various flags that can be used to indicate the status of a guild member. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e036e9909741e00af34e2505117218da966c5f8d7bd60e0daf9ceaafb556b4c4" name="a7e036e9909741e00af34e2505117218da966c5f8d7bd60e0daf9ceaafb556b4c4"></a>gm_deaf&#160;</td><td class="fielddoc"><p >Member deafened </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4" name="aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4"></a>gm_deaf&#160;</td><td class="fielddoc"><p >Member deafened in voice channels </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7e036e9909741e00af34e2505117218da557d08c731cb82cfd66915aaa0466a2f" name="a7e036e9909741e00af34e2505117218da557d08c731cb82cfd66915aaa0466a2f"></a>gm_mute&#160;</td><td class="fielddoc"><p >Member muted </p>
+<tr><td class="fieldname"><a id="aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f" name="aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f"></a>gm_mute&#160;</td><td class="fielddoc"><p >Member muted in voice channels </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41" name="a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41"></a>gm_pending&#160;</td><td class="fielddoc"><p >Member pending verification by membership screening </p>
+<tr><td class="fieldname"><a id="aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41" name="aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41"></a>gm_pending&#160;</td><td class="fielddoc"><p >Member pending verification by membership screening </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7e036e9909741e00af34e2505117218da5fdf0027681c83f79661940b012518e4" name="a7e036e9909741e00af34e2505117218da5fdf0027681c83f79661940b012518e4"></a>gm_animated_avatar&#160;</td><td class="fielddoc"><p >Member has animated guild-specific avatar </p>
+<tr><td class="fieldname"><a id="aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4" name="aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4"></a>gm_animated_avatar&#160;</td><td class="fielddoc"><p >Member has animated guild-specific avatar </p>
 </td></tr>
 </table>
 
@@ -2848,12 +2862,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Guild NSFW level. Used to represent just how naughty this guild is. Naughty guild, go sit in the corner. </p>
+<dl class="section note"><dt>Note</dt><dd>This is set by Discord, and cannot be set by any bot or user on the guild. </dd></dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa" name="afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa"></a>nsfw_default&#160;</td><td class="fielddoc"><p >Default, not set by owner. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa" name="afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa"></a>nsfw_default&#160;</td><td class="fielddoc"><p >Default setting, not configured. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afd5e6717b5f1f374c5c29f91394aa591a874c549de86f7e835ef471d6c9f05b35" name="afd5e6717b5f1f374c5c29f91394aa591a874c549de86f7e835ef471d6c9f05b35"></a>nsfw_explicit&#160;</td><td class="fielddoc"><p >Explicit. </p>
+<tr><td class="fieldname"><a id="afd5e6717b5f1f374c5c29f91394aa591a874c549de86f7e835ef471d6c9f05b35" name="afd5e6717b5f1f374c5c29f91394aa591a874c549de86f7e835ef471d6c9f05b35"></a>nsfw_explicit&#160;</td><td class="fielddoc"><p >Explicit content may be in this guild. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afd5e6717b5f1f374c5c29f91394aa591a5b915fea251bc3a57ff13b40b4eeeef9" name="afd5e6717b5f1f374c5c29f91394aa591a5b915fea251bc3a57ff13b40b4eeeef9"></a>nsfw_safe&#160;</td><td class="fielddoc"><p >Safe for work. </p>
+<tr><td class="fieldname"><a id="afd5e6717b5f1f374c5c29f91394aa591a5b915fea251bc3a57ff13b40b4eeeef9" name="afd5e6717b5f1f374c5c29f91394aa591a5b915fea251bc3a57ff13b40b4eeeef9"></a>nsfw_safe&#160;</td><td class="fielddoc"><p >Safe for work content only. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="afd5e6717b5f1f374c5c29f91394aa591a50782d1bfac8ee3e7c44afabe1ce8113" name="afd5e6717b5f1f374c5c29f91394aa591a50782d1bfac8ee3e7c44afabe1ce8113"></a>nsfw_age_restricted&#160;</td><td class="fielddoc"><p >Age restricted, 18+. </p>
 </td></tr>
@@ -3567,8 +3582,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Right-click context menu types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824" name="a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824"></a>ctxm_none&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824" name="a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824"></a>ctxm_none&#160;</td><td class="fielddoc"><p >Undefined context menu type. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a" name="a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a"></a>ctxm_chat_input&#160;</td><td class="fielddoc"><p >DEFAULT, these are the slash commands you're used to. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659" name="a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659"></a>ctxm_user&#160;</td><td class="fielddoc"><p >Add command to user context menu. </p>
@@ -4291,12 +4309,12 @@ template&lt;class V , class E &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>helper function to deserialize a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild.">guild_member</a> from json </p>
+<p>helper function to deserialize a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> from json </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">j</td><td>output json object </td></tr>
-    <tr><td class="paramname">gm</td><td><a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild.">guild_member</a> to be deserialized </td></tr>
+    <tr><td class="paramname">gm</td><td><a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> to be deserialized </td></tr>
   </table>
   </dd>
 </dl>
