@@ -7276,11 +7276,11 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="2073" column="6" bodyfile="src/dpp/cluster/channel.cpp" bodystart="95" bodyend="101"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1a566bb31ea08798afe2fca4888e3c5e70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a553bfda3b4f1671e75c5713275b781bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::cluster::pins_get</definition>
+        <definition>void dpp::cluster::channel_pins_get</definition>
         <argsstring>(snowflake channel_id, command_completion_event_t callback)</argsstring>
-        <name>pins_get</name>
+        <name>channel_pins_get</name>
         <param>
           <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
           <declname>channel_id</declname>
@@ -9546,11 +9546,11 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="2518" column="6" bodyfile="src/dpp/cluster/voice.cpp" bodystart="41" bodyend="52"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1a24d66752ec835f989e72ffa111ff0af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a93c0e07243611419141305da123c859a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::cluster::get_guild_invites</definition>
+        <definition>void dpp::cluster::guild_get_invites</definition>
         <argsstring>(snowflake guild_id, command_completion_event_t callback)</argsstring>
-        <name>get_guild_invites</name>
+        <name>guild_get_invites</name>
         <param>
           <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
           <declname>guild_id</declname>
@@ -12440,6 +12440,7 @@
       <member refid="classdpp_1_1cluster_1a108f6f06b43709c8d47df5f94a3ca0a5" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channel_get</name></member>
       <member refid="classdpp_1_1cluster_1a07e66a7400101f466aab40ed58c67942" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channel_invite_create</name></member>
       <member refid="classdpp_1_1cluster_1aa03a0da5c8e6801dc56bda258265da04" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channel_invites_get</name></member>
+      <member refid="classdpp_1_1cluster_1a553bfda3b4f1671e75c5713275b781bd" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channel_pins_get</name></member>
       <member refid="classdpp_1_1cluster_1a2caf58e161373fd3fa26172a4a78c835" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channel_typing</name></member>
       <member refid="classdpp_1_1cluster_1ad80ac0e99c0a20c9c05678631189b8f3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channel_typing</name></member>
       <member refid="classdpp_1_1cluster_1a24e67431b79cc2c3d0f12d59afd5a1c8" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channels_get</name></member>
@@ -12542,7 +12543,6 @@
       <member refid="classdpp_1_1cluster_1ae58b1f27711b42e9aa8a21e34147429f" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_channel_webhooks</name></member>
       <member refid="classdpp_1_1cluster_1ae6164d5543b7594731a980da9b0b2088" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_dm_channel</name></member>
       <member refid="classdpp_1_1cluster_1a68f16d04f100a0159683cba96e8c0a6c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_gateway_bot</name></member>
-      <member refid="classdpp_1_1cluster_1a24d66752ec835f989e72ffa111ff0af7" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_guild_invites</name></member>
       <member refid="classdpp_1_1cluster_1a8d352afcbc0430ca11576386278da7d0" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_guild_webhooks</name></member>
       <member refid="classdpp_1_1cluster_1a5c677c0d5c059e87cc01ce598d49487d" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_shard</name></member>
       <member refid="classdpp_1_1cluster_1af4d6195862e6d25c644902631a0b34d1" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>get_shards</name></member>
@@ -12582,6 +12582,7 @@
       <member refid="classdpp_1_1cluster_1ad871d30ed11d0799da4a831ede8a7d95" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_ban</name></member>
       <member refid="classdpp_1_1cluster_1af9fffa4f080e0b5abab1417fa8eb1b0f" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_bans</name></member>
       <member refid="classdpp_1_1cluster_1a43cba3bd187f9b28dcaed5b4f4ed5bda" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_integrations</name></member>
+      <member refid="classdpp_1_1cluster_1a93c0e07243611419141305da123c859a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_invites</name></member>
       <member refid="classdpp_1_1cluster_1a99e8227f11ef33cd2d9cc3abef46adfd" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_member</name></member>
       <member refid="classdpp_1_1cluster_1a6b24baba4de9d38f7d9a7cea2f71a545" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_members</name></member>
       <member refid="classdpp_1_1cluster_1a3ecd82c6169107c9c944356f19abba9e" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_preview</name></member>
@@ -12704,7 +12705,6 @@
       <member refid="classdpp_1_1cluster_1a0777f715bdfd39c897f7ef93d67427a1" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>on_voice_track_marker</name></member>
       <member refid="classdpp_1_1cluster_1aaee7911f1695b3873d6963260264d8ef" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>on_voice_user_talking</name></member>
       <member refid="classdpp_1_1cluster_1afcf720a6c565961648577ebfb46bd716" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>on_webhooks_update</name></member>
-      <member refid="classdpp_1_1cluster_1a566bb31ea08798afe2fca4888e3c5e70" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>pins_get</name></member>
       <member refid="classdpp_1_1cluster_1a62b83ee3be02df68eb5e697ddc5efc0a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>post_rest</name></member>
       <member refid="classdpp_1_1cluster_1a24896cc48e0c7bcafae0db762ea725d8" prot="private" virt="non-virtual"><scope>dpp::cluster</scope><name>raw_rest</name></member>
       <member refid="classdpp_1_1cluster_1a156fe68358c421111e690f553c4e4f52" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>request</name></member>

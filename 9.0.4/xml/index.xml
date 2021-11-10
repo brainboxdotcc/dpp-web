@@ -573,7 +573,7 @@
     <member refid="classdpp_1_1cluster_1a4c22698fbbb32edebd9824309015a017" kind="function"><name>invite_delete</name></member>
     <member refid="classdpp_1_1cluster_1aa03a0da5c8e6801dc56bda258265da04" kind="function"><name>channel_invites_get</name></member>
     <member refid="classdpp_1_1cluster_1a07e66a7400101f466aab40ed58c67942" kind="function"><name>channel_invite_create</name></member>
-    <member refid="classdpp_1_1cluster_1a566bb31ea08798afe2fca4888e3c5e70" kind="function"><name>pins_get</name></member>
+    <member refid="classdpp_1_1cluster_1a553bfda3b4f1671e75c5713275b781bd" kind="function"><name>channel_pins_get</name></member>
     <member refid="classdpp_1_1cluster_1a9ad36637b9bb094d9f24d18f204138a3" kind="function"><name>gdm_add</name></member>
     <member refid="classdpp_1_1cluster_1a6be231a13131f6fae94f88ee6fcdc5f0" kind="function"><name>gdm_remove</name></member>
     <member refid="classdpp_1_1cluster_1aa2fce9638b93c6b5d5d67f8bea9f8f6c" kind="function"><name>channel_delete_permission</name></member>
@@ -616,7 +616,7 @@
     <member refid="classdpp_1_1cluster_1aad296f07bd5b9f900dcedbf88c464e09" kind="function"><name>guild_get_prune_counts</name></member>
     <member refid="classdpp_1_1cluster_1a2102835f11fabbc2cd2e6b41155783f6" kind="function"><name>guild_begin_prune</name></member>
     <member refid="classdpp_1_1cluster_1ae5556385a69a408a268332f774ba6c3c" kind="function"><name>guild_get_voice_regions</name></member>
-    <member refid="classdpp_1_1cluster_1a24d66752ec835f989e72ffa111ff0af7" kind="function"><name>get_guild_invites</name></member>
+    <member refid="classdpp_1_1cluster_1a93c0e07243611419141305da123c859a" kind="function"><name>guild_get_invites</name></member>
     <member refid="classdpp_1_1cluster_1a43cba3bd187f9b28dcaed5b4f4ed5bda" kind="function"><name>guild_get_integrations</name></member>
     <member refid="classdpp_1_1cluster_1afb07fc90589ee936f73da5551cff1255" kind="function"><name>guild_modify_integration</name></member>
     <member refid="classdpp_1_1cluster_1a0db4a48d1ebc2133c30963a995e156e1" kind="function"><name>guild_delete_integration</name></member>
@@ -3984,15 +3984,36 @@
   <compound refid="wsclient_8cpp" kind="file"><name>wsclient.cpp</name>
   </compound>
   <compound refid="test_8cpp" kind="file"><name>test.cpp</name>
-    <member refid="test_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
-    <member refid="test_8cpp_1a55275c598c1db4f8d8544ad93e9085b4" kind="variable"><name>TEST_TIMEOUT</name></member>
-    <member refid="test_8cpp_1a4932bbf4b3132474249ad709430797af" kind="variable"><name>TEST_GUILD_ID</name></member>
-    <member refid="test_8cpp_1a6a18b9b0646ed164d2e674261d59785f" kind="variable"><name>TEST_TEXT_CHANNEL_ID</name></member>
-    <member refid="test_8cpp_1a6618d7a4efe95b1e8b5c869a04f00b84" kind="variable"><name>TEST_VC_ID</name></member>
-    <member refid="test_8cpp_1a97bae62345d426bd95942467fb3cd8ee" kind="variable"><name>TEST_USER_ID</name></member>
-    <member refid="test_8cpp_1a4845fee65f6b717196f72714d9ef0276" kind="variable"><name>tests</name></member>
-    <member refid="test_8cpp_1a35cb68a0aae23a8f0059a33fb82379f0" kind="function"><name>set_test</name></member>
     <member refid="test_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test_8h" kind="file"><name>test.h</name>
+    <member refid="test_8h_1aa18fe28e98d0e509b094253cd60760b1" kind="define"><name>singleparam_api_test</name></member>
+    <member refid="test_8h_1a8f5ef4bc59689b2f802b1b712efc5e2d" kind="define"><name>singleparam_api_test_list</name></member>
+    <member refid="test_8h_1a206ce9de3ecfb1220fa0d18c1022fdc1" kind="define"><name>noparam_api_test</name></member>
+    <member refid="test_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+    <member refid="test_8h_1a55275c598c1db4f8d8544ad93e9085b4" kind="variable"><name>TEST_TIMEOUT</name></member>
+    <member refid="test_8h_1a4932bbf4b3132474249ad709430797af" kind="variable"><name>TEST_GUILD_ID</name></member>
+    <member refid="test_8h_1a6a18b9b0646ed164d2e674261d59785f" kind="variable"><name>TEST_TEXT_CHANNEL_ID</name></member>
+    <member refid="test_8h_1a6618d7a4efe95b1e8b5c869a04f00b84" kind="variable"><name>TEST_VC_ID</name></member>
+    <member refid="test_8h_1a97bae62345d426bd95942467fb3cd8ee" kind="variable"><name>TEST_USER_ID</name></member>
+    <member refid="test_8h_1a921fdff07e87cb1ab3999fcc17e5bbf6" kind="function"><name>set_test</name></member>
+    <member refid="test_8h_1ad9a56733d9249067ebac92700c32088a" kind="function"><name>test_summary</name></member>
+    <member refid="test_8h_1a8c8b8c2c90a7f32d65b866b70d1facd5" kind="function"><name>load_test_audio</name></member>
+    <member refid="test_8h_1a02f493a9f72e6a291ca66cf24d0a4b9c" kind="function"><name>get_token</name></member>
+    <member refid="test_8h_1a0f2c6a8b44bbd5ff4e0c204e6fcd2a76" kind="function"><name>wait_for_tests</name></member>
+    <member refid="test_8h_1a742b96fd1e4453bd852af2fe6131fff2" kind="function"><name>get_start_time</name></member>
+    <member refid="test_8h_1af7ab092ab10d65db3b9051a12420fa52" kind="function"><name>get_time</name></member>
+  </compound>
+  <compound refid="unittest_8cpp" kind="file"><name>unittest.cpp</name>
+    <member refid="unittest_8cpp_1a4845fee65f6b717196f72714d9ef0276" kind="variable"><name>tests</name></member>
+    <member refid="unittest_8cpp_1a45314566a84a31f43e6435d1eb24d4ec" kind="variable"><name>start</name></member>
+    <member refid="unittest_8cpp_1ad77c7ffd021451a3b6fd8f40883ad588" kind="function"><name>set_test</name></member>
+    <member refid="unittest_8cpp_1a742b96fd1e4453bd852af2fe6131fff2" kind="function"><name>get_start_time</name></member>
+    <member refid="unittest_8cpp_1af7ab092ab10d65db3b9051a12420fa52" kind="function"><name>get_time</name></member>
+    <member refid="unittest_8cpp_1ad9a56733d9249067ebac92700c32088a" kind="function"><name>test_summary</name></member>
+    <member refid="unittest_8cpp_1a8c8b8c2c90a7f32d65b866b70d1facd5" kind="function"><name>load_test_audio</name></member>
+    <member refid="unittest_8cpp_1a02f493a9f72e6a291ca66cf24d0a4b9c" kind="function"><name>get_token</name></member>
+    <member refid="unittest_8cpp_1a0f2c6a8b44bbd5ff4e0c204e6fcd2a76" kind="function"><name>wait_for_tests</name></member>
   </compound>
   <compound refid="md_docpages_02_build" kind="page"><name>md_docpages_02_build</name>
   </compound>
