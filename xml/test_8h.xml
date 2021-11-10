@@ -659,12 +659,41 @@
 		} \
 	});</initializer>
         <briefdescription>
+<para>Perform a test of a REST base API call with one parameter. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="50" column="9" bodyfile="src/test.h" bodystart="50" bodyend="-1"/>
+        <location file="src/test.h" line="53" column="9" bodyfile="src/test.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test_8h_1a8f5ef4bc59689b2f802b1b712efc5e2d" prot="public" static="no">
+        <name>singleparam_api_test_list</name>
+        <param><defname>func_name</defname></param>
+        <param><defname>param</defname></param>
+        <param><defname>return_type</defname></param>
+        <param><defname>testname</defname></param>
+        <initializer>	set_test(testname, false); \
+	bot.func_name (param, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
+		if (!cc.is_error()) { \
+			return_type g = std::get&lt;return_type&gt;(cc.value); \
+			if (g.size() &gt; 0) { \
+				set_test(testname, true); \
+			} else { \
+				set_test(testname, false); \
+			} \
+		} else { \
+			set_test(testname, false); \
+		} \
+	});</initializer>
+        <briefdescription>
+<para>Perform a test of a REST base API call with one parameter that returns a list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="71" column="9" bodyfile="src/test.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1a206ce9de3ecfb1220fa0d18c1022fdc1" prot="public" static="no">
         <name>noparam_api_test</name>
@@ -681,12 +710,13 @@
 		} \
 	});</initializer>
         <briefdescription>
+<para>Perform a test of a REST base API call with no parameters. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="65" column="9" bodyfile="src/test.h" bodystart="65" bodyend="-1"/>
+        <location file="src/test.h" line="89" column="9" bodyfile="src/test.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -777,13 +807,13 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="test_8h_1a35cb68a0aae23a8f0059a33fb82379f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test_8h_1a921fdff07e87cb1ab3999fcc17e5bbf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void set_test</definition>
-        <argsstring>(const std::string testname, bool success=false)</argsstring>
+        <argsstring>(const std::string &amp;testname, bool success=false)</argsstring>
         <name>set_test</name>
         <param>
-          <type>const std::string</type>
+          <type>const std::string &amp;</type>
           <declname>testname</declname>
         </param>
         <param>
@@ -816,7 +846,117 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="76" column="6" bodyfile="src/unittest.cpp" bodystart="33" bodyend="47" declfile="src/test.h" declline="76" declcolumn="6"/>
+        <location file="src/test.h" line="110" column="6" bodyfile="src/unittest.cpp" bodystart="55" bodyend="69" declfile="src/test.h" declline="110" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1ad9a56733d9249067ebac92700c32088a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_summary</definition>
+        <argsstring>()</argsstring>
+        <name>test_summary</name>
+        <briefdescription>
+<para>Prints a summary of all tests executed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tests</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of tests executed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Returns number of failed tests, for use as a return value from the main() function </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="118" column="5" bodyfile="src/unittest.cpp" bodystart="79" bodyend="93" declfile="src/test.h" declline="118" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1a8c8b8c2c90a7f32d65b866b70d1facd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt; uint8_t &gt; load_test_audio</definition>
+        <argsstring>()</argsstring>
+        <name>load_test_audio</name>
+        <briefdescription>
+<para>Load test audio for the voice channel tests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;uint8_t&gt; data and size for test audio </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="126" column="13" bodyfile="src/unittest.cpp" bodystart="95" bodyend="106" declfile="src/test.h" declline="126" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1a02f493a9f72e6a291ca66cf24d0a4b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string get_token</definition>
+        <argsstring>()</argsstring>
+        <name>get_token</name>
+        <briefdescription>
+<para>Get the token from the environment variable DPP_UNIT_TEST_TOKEN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string token </para>
+</simplesect>
+<simplesect kind="note"><para>If the environment variable does not exist, this will exit the program. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="134" column="13" bodyfile="src/unittest.cpp" bodystart="108" bodyend="115" declfile="src/test.h" declline="134" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1a0f2c6a8b44bbd5ff4e0c204e6fcd2a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wait_for_tests</definition>
+        <argsstring>()</argsstring>
+        <name>wait_for_tests</name>
+        <briefdescription>
+<para>Wait for all tests to be completed or test program to time out. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="139" column="6" bodyfile="src/unittest.cpp" bodystart="117" bodyend="133" declfile="src/test.h" declline="139" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1a742b96fd1e4453bd852af2fe6131fff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double get_start_time</definition>
+        <argsstring>()</argsstring>
+        <name>get_start_time</name>
+        <briefdescription>
+<para>Get the start time of tests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double start time in fractional seconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="146" column="8" bodyfile="src/unittest.cpp" bodystart="71" bodyend="73" declfile="src/test.h" declline="146" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1af7ab092ab10d65db3b9051a12420fa52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double get_time</definition>
+        <argsstring>()</argsstring>
+        <name>get_time</name>
+        <briefdescription>
+<para>Get the current execution time in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double fractional seconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="153" column="8" bodyfile="src/unittest.cpp" bodystart="75" bodyend="77" declfile="src/test.h" declline="153" declcolumn="8"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
