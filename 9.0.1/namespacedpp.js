@@ -399,7 +399,14 @@ var namespacedpp =
       [ "g_has_animated_icon", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aaf86b8a8efaa0bd140bcf714d4a59f7c0", null ],
       [ "g_has_animated_banner", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa7886733c68622fb94d225d97b0f58d91", null ],
       [ "g_no_setup_tips", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa746b47a905f2094b65516cfaac098778", null ],
-      [ "g_no_sticker_greeting", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aadee23452bb4b1dbfdb4999d5cec75036", null ]
+      [ "g_no_sticker_greeting", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aadee23452bb4b1dbfdb4999d5cec75036", null ],
+      [ "g_monetization_enabled", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aab4c9237135054d4b28c3a287840a5ecc", null ],
+      [ "g_more_stickers", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa3688ffdc21bb6808e169de041a74095e", null ],
+      [ "g_private_threads", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aacf87942af70f28ce0d758d436e45a57b", null ],
+      [ "g_role_icons", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa1471f351d0cbe0aaae622d50c8050bbf", null ],
+      [ "g_seven_day_thread_archive", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa0ec280972e684f49e958e9b882e01760", null ],
+      [ "g_three_day_thread_archive", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa58c9c9013412ff54052a11bae62d48fb", null ],
+      [ "g_ticketed_events", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa5fce362e803c63fe1ef9ebb2b06bb5a8", null ]
     ] ],
     [ "guild_member_flags", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30", [
       [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
