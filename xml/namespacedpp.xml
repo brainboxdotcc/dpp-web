@@ -76,6 +76,11 @@
     <innerclass refid="structdpp_1_1guild__role__create__t" prot="public">dpp::guild_role_create_t</innerclass>
     <innerclass refid="structdpp_1_1guild__role__delete__t" prot="public">dpp::guild_role_delete_t</innerclass>
     <innerclass refid="structdpp_1_1guild__role__update__t" prot="public">dpp::guild_role_update_t</innerclass>
+    <innerclass refid="structdpp_1_1guild__scheduled__event__create__t" prot="public">dpp::guild_scheduled_event_create_t</innerclass>
+    <innerclass refid="structdpp_1_1guild__scheduled__event__delete__t" prot="public">dpp::guild_scheduled_event_delete_t</innerclass>
+    <innerclass refid="structdpp_1_1guild__scheduled__event__update__t" prot="public">dpp::guild_scheduled_event_update_t</innerclass>
+    <innerclass refid="structdpp_1_1guild__scheduled__event__user__add__t" prot="public">dpp::guild_scheduled_event_user_add_t</innerclass>
+    <innerclass refid="structdpp_1_1guild__scheduled__event__user__remove__t" prot="public">dpp::guild_scheduled_event_user_remove_t</innerclass>
     <innerclass refid="structdpp_1_1guild__stickers__update__t" prot="public">dpp::guild_stickers_update_t</innerclass>
     <innerclass refid="structdpp_1_1guild__update__t" prot="public">dpp::guild_update_t</innerclass>
     <innerclass refid="classdpp_1_1guild__widget" prot="public">dpp::guild_widget</innerclass>
@@ -2333,9 +2338,18 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5ae8e1fccd9f13d710f2221ad8064f45e2" prot="public">
+          <name>i_guild_scheduled_events</name>
+          <initializer>= (1 &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Scheduled events. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" prot="public">
           <name>i_default_intents</name>
-          <initializer>= dpp::i_guilds | dpp::i_guild_bans | dpp::i_guild_emojis | dpp::i_guild_integrations | dpp::i_guild_webhooks | dpp::i_guild_invites | dpp::i_guild_voice_states | dpp::i_guild_messages | dpp::i_guild_message_reactions | dpp::i_guild_message_typing | dpp::i_direct_messages | dpp::i_direct_message_typing | dpp::i_direct_message_reactions</initializer>
+          <initializer>= dpp::i_guilds | dpp::i_guild_bans | dpp::i_guild_emojis | dpp::i_guild_integrations | dpp::i_guild_webhooks | dpp::i_guild_invites | dpp::i_guild_voice_states | dpp::i_guild_messages | dpp::i_guild_message_reactions | dpp::i_guild_message_typing | dpp::i_direct_messages | dpp::i_direct_message_typing | dpp::i_direct_message_reactions | dpp::i_guild_scheduled_events</initializer>
           <briefdescription>
 <para>Default D++ intents (all non-privileged intents) </para>
           </briefdescription>
@@ -2366,7 +2380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/intents.h" line="32" column="1" bodyfile="include/dpp/intents.h" bodystart="32" bodyend="69"/>
+        <location file="include/dpp/intents.h" line="32" column="1" bodyfile="include/dpp/intents.h" bodystart="32" bodyend="71"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1afce43206033521b990e3a72bb87481b7" prot="public" static="no" strong="no">
         <type>uint8_t</type>
