@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1resolved__user" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::resolved_user</compoundname>
+    <includes local="no">commandhandler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1resolved__user_1a2637dfddc2584ff21d6772b9540818d4" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref></type>
+        <definition>dpp::user dpp::resolved_user::user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <briefdescription>
+<para>Holds user information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="45" column="11" bodyfile="include/dpp/commandhandler.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1resolved__user_1acaa72a6aafeb299aef839a375fb299c7" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">dpp::guild_member</ref></type>
+        <definition>dpp::guild_member dpp::resolved_user::member</definition>
+        <argsstring></argsstring>
+        <name>member</name>
+        <briefdescription>
+<para>Holds member information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="49" column="19" bodyfile="include/dpp/commandhandler.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref> contains both a <ref refid="classdpp_1_1guild__member" kindref="compound">dpp::guild_member</ref> and a <ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref>. The user can be used to obtain in-depth user details such as if they are nitro, and the guild member information to check their roles on a guild etc. The Discord API provides both if a parameter is a user ping, so we offer both in a combined structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>dpp::guild_member</label>
+        <link refid="classdpp_1_1guild__member"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>nickname</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>roles</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>joined_at</edgelabel>
+          <edgelabel>premium_since</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::resolved_user</label>
+        <link refid="structdpp_1_1resolved__user"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>user</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>member</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="5">
+        <label>std::string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector&lt;</label>
+      </node>
+      <node id="13">
+        <label>time_t</label>
+      </node>
+      <node id="7">
+        <label>uint16_t</label>
+      </node>
+      <node id="9">
+        <label>uint32_t</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
+      </node>
+      <node id="10">
+        <label>uint8_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/commandhandler.h" line="41" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="41" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1resolved__user_1acaa72a6aafeb299aef839a375fb299c7" prot="public" virt="non-virtual"><scope>dpp::resolved_user</scope><name>member</name></member>
+      <member refid="structdpp_1_1resolved__user_1a2637dfddc2584ff21d6772b9540818d4" prot="public" virt="non-virtual"><scope>dpp::resolved_user</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
