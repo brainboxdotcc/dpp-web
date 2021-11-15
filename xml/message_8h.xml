@@ -4,6 +4,7 @@
     <compoundname>message.h</compoundname>
     <includes refid="export_8h" local="no">dpp/export.h</includes>
     <includes refid="discord_8h" local="no">dpp/discord.h</includes>
+    <includes refid="queues_8h" local="no">dpp/queues.h</includes>
     <includes local="no">optional</includes>
     <includes local="no">dpp/json_fwd.hpp</includes>
     <includedby refid="cluster_8cpp" local="no">cluster.cpp</includedby>
@@ -40,7 +41,7 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="15">
         <label>dpp/channel.h</label>
         <childnode refid="2" relation="include">
         </childnode>
@@ -65,11 +66,11 @@
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
         <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -121,11 +122,11 @@
       <node id="2">
         <label>dpp/export.h</label>
       </node>
-      <node id="14">
+      <node id="12">
         <label>dpp/guild.h</label>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
@@ -162,6 +163,8 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
         <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
@@ -185,11 +188,36 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
+      <node id="32">
+        <label>dpp/queues.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
       <node id="11">
         <label>dpp/role.h</label>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="26">
@@ -214,7 +242,7 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="14">
         <label>dpp/user.h</label>
         <childnode refid="2" relation="include">
         </childnode>
@@ -246,6 +274,9 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
+      <node id="35">
+        <label>condition_variable</label>
+      </node>
       <node id="10">
         <label>dpp/json_fwd.hpp</label>
       </node>
@@ -255,14 +286,20 @@
       <node id="7">
         <label>map</label>
       </node>
-      <node id="15">
+      <node id="13">
         <label>mutex</label>
       </node>
       <node id="30">
         <label>optional</label>
       </node>
+      <node id="33">
+        <label>queue</label>
+      </node>
       <node id="4">
         <label>string</label>
+      </node>
+      <node id="34">
+        <label>thread</label>
       </node>
       <node id="6">
         <label>unordered_map</label>
@@ -401,6 +438,8 @@
         <childnode refid="56" relation="include">
         </childnode>
         <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
         </childnode>
         <childnode refid="58" relation="include">
         </childnode>
@@ -553,19 +592,19 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
         <childnode refid="92" relation="include">
         </childnode>
         <childnode refid="76" relation="include">
         </childnode>
-        <childnode refid="112" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
         <childnode refid="93" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
         <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
         </childnode>
         <childnode refid="77" relation="include">
         </childnode>
@@ -619,7 +658,7 @@
         </childnode>
         <childnode refid="80" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
@@ -627,7 +666,7 @@
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
         <childnode refid="81" relation="include">
         </childnode>
@@ -649,11 +688,11 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="121" relation="include">
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
@@ -661,7 +700,7 @@
         </childnode>
         <childnode refid="83" relation="include">
         </childnode>
-        <childnode refid="122" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
         <childnode refid="94" relation="include">
         </childnode>
@@ -898,28 +937,28 @@
         <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="110">
+      <node id="111">
         <label>dtemplate.h</label>
         <childnode refid="99" relation="include">
         </childnode>
-        <childnode refid="111" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
-      <node id="112">
+      <node id="113">
         <label>emoji.h</label>
         <childnode refid="99" relation="include">
         </childnode>
         <childnode refid="92" relation="include">
         </childnode>
       </node>
-      <node id="113">
+      <node id="114">
         <label>etf.h</label>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="93" relation="include">
         </childnode>
       </node>
-      <node id="114">
+      <node id="115">
         <label>event.h</label>
         <childnode refid="11" relation="include">
         </childnode>
@@ -1036,11 +1075,11 @@
         <childnode refid="71" relation="include">
         </childnode>
       </node>
-      <node id="115">
+      <node id="116">
         <label>invite.h</label>
         <childnode refid="99" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -1055,18 +1094,18 @@
         <childnode refid="98" relation="include">
         </childnode>
       </node>
-      <node id="118">
+      <node id="119">
         <label>presence.h</label>
         <childnode refid="99" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
       </node>
-      <node id="120">
+      <node id="121">
         <label>prune.h</label>
         <childnode refid="99" relation="include">
         </childnode>
-        <childnode refid="121" relation="include">
+        <childnode refid="122" relation="include">
         </childnode>
       </node>
       <node id="98">
@@ -1204,7 +1243,7 @@
       <node id="74">
         <label>dispatcher.cpp</label>
       </node>
-      <node id="111">
+      <node id="112">
         <label>dtemplate.cpp</label>
       </node>
       <node id="92">
@@ -1384,25 +1423,25 @@
       <node id="109">
         <label>integration.cpp</label>
       </node>
-      <node id="116">
+      <node id="117">
         <label>invite.cpp</label>
       </node>
-      <node id="117">
+      <node id="118">
         <label>managed.cpp</label>
       </node>
       <node id="97">
         <label>message.cpp</label>
       </node>
-      <node id="119">
+      <node id="120">
         <label>presence.cpp</label>
       </node>
-      <node id="121">
+      <node id="122">
         <label>prune.cpp</label>
       </node>
       <node id="82">
         <label>queues.cpp</label>
       </node>
-      <node id="122">
+      <node id="110">
         <label>role.cpp</label>
       </node>
       <node id="94">
