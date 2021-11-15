@@ -285,6 +285,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base event parameter struct. Each event you receive from the library will have its parameter derived from this class. The class contains the raw event data, and a pointer to the current shard's <a class="el" href="classdpp_1_1discord__client.html" title="Implements a discord client. Each discord_client connects to one shard and derives from a websocket c...">dpp::discord_client</a> object. You can also use this object to cancel the current event, meaning that any listeners after yours do not get notified of the current event if you call it.  <a href="structdpp_1_1event__dispatch__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__entities.html">event_entities</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entities for the event.  <a href="structdpp_1_1event__entities.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1exception.html">exception</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a> class derives from std::exception and supports some other ways of passing in error details such as via std::string.  <a href="classdpp_1_1exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -461,6 +464,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1rtp__header.html">rtp_header</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an RTP packet. Size should always be exactly 12.  <a href="structdpp_1_1rtp__header.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1scheduled__event.html">scheduled_event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A scheduled event.  <a href="structdpp_1_1scheduled__event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1select__click__t.html">select_click_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on select.  <a href="structdpp_1_1select__click__t.html#details">More...</a><br /></td></tr>
@@ -771,7 +777,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dab2e511e9d77675916c2d02ab231da36e">ae_sticker_update</a> = 91
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da228e699a1feef4f5c4d1054bb70543b2">ae_sticker_delete</a> = 92
-, <a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772">ae_thread_create</a> = 110
+, <a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1c9a8c9ac9d162d20b6492cf97e0ac13">ae_guild_scheduled_event_create</a> = 100
+, <a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1483b4dc1716196e2f0d22951faba74f">ae_guild_scheduled_event_update</a> = 101
+, <a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da93f74cc23f6c486d0062ce8ba8a76250">ae_guild_scheduled_event_delete</a> = 102
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772">ae_thread_create</a> = 110
 , <a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da9c1afffc90d0adfdf5ce3ff3f6cfa7dc">ae_thread_update</a> = 111
 , <a class="el" href="namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da60c1a36d005177f08743aa2239bb09e1">ae_thread_delete</a> = 112
 <br />
@@ -1264,6 +1274,25 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a2b8b5573bf936e034d33a7238fe5604f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various discord permissions.  <a href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f">More...</a><br /></td></tr>
 <tr class="separator:a2b8b5573bf936e034d33a7238fe5604f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6add40f37f2f043dede513edebaa67bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6add40f37f2f043dede513edebaa67bd">event_privacy_level</a> : uint8_t { <a class="el" href="namespacedpp.html#a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123">ep_public</a> = 1
+, <a class="el" href="namespacedpp.html#a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959">ep_guild_only</a> = 2
+ }</td></tr>
+<tr class="memdesc:a6add40f37f2f043dede513edebaa67bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the privacy of an event.  <a href="namespacedpp.html#a6add40f37f2f043dede513edebaa67bd">More...</a><br /></td></tr>
+<tr class="separator:a6add40f37f2f043dede513edebaa67bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d65d1ee306708cb7f7307502aaa1834"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834">event_entity_type</a> : uint8_t { <a class="el" href="namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8">eet_none</a> = 0
+, <a class="el" href="namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456">eet_stage_instance</a> = 1
+, <a class="el" href="namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59">eet_voice</a> = 2
+, <a class="el" href="namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52">eet_external</a> = 3
+ }</td></tr>
+<tr class="memdesc:a7d65d1ee306708cb7f7307502aaa1834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event entity types.  <a href="namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834">More...</a><br /></td></tr>
+<tr class="separator:a7d65d1ee306708cb7f7307502aaa1834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ffd72c4bfd503c9c5980202c354e60"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60">event_status</a> : uint8_t { <a class="el" href="namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60ae8677228c0ed107e942a36a6b4cdddee">es_scheduled</a> = 1
+, <a class="el" href="namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60af9f79e39e58b7ba24154c0751ad09826">es_active</a> = 2
+, <a class="el" href="namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc">es_completed</a> = 3
+, <a class="el" href="namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03">es_cancelled</a> = 4
+ }</td></tr>
+<tr class="memdesc:a07ffd72c4bfd503c9c5980202c354e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event status types.  <a href="namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60">More...</a><br /></td></tr>
+<tr class="separator:a07ffd72c4bfd503c9c5980202c354e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc401d86119c6443bf72d736857c1a58"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58">command_option_type</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c">co_sub_command</a> = 1
 , <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58aaf7efc648d35b8a702480f916c904547">co_sub_command_group</a> = 2
@@ -2390,6 +2419,12 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a29a51ae6f6d959baee7d5e77d53d6c3da228e699a1feef4f5c4d1054bb70543b2" name="a29a51ae6f6d959baee7d5e77d53d6c3da228e699a1feef4f5c4d1054bb70543b2"></a>ae_sticker_delete&#160;</td><td class="fielddoc"><p >Sticker delete. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a29a51ae6f6d959baee7d5e77d53d6c3da1c9a8c9ac9d162d20b6492cf97e0ac13" name="a29a51ae6f6d959baee7d5e77d53d6c3da1c9a8c9ac9d162d20b6492cf97e0ac13"></a>ae_guild_scheduled_event_create&#160;</td><td class="fielddoc"><p >Scheduled event creation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a29a51ae6f6d959baee7d5e77d53d6c3da1483b4dc1716196e2f0d22951faba74f" name="a29a51ae6f6d959baee7d5e77d53d6c3da1483b4dc1716196e2f0d22951faba74f"></a>ae_guild_scheduled_event_update&#160;</td><td class="fielddoc"><p >Scheduled event update. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a29a51ae6f6d959baee7d5e77d53d6c3da93f74cc23f6c486d0062ce8ba8a76250" name="a29a51ae6f6d959baee7d5e77d53d6c3da93f74cc23f6c486d0062ce8ba8a76250"></a>ae_guild_scheduled_event_delete&#160;</td><td class="fielddoc"><p >Scheduled event deletion. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772" name="a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772"></a>ae_thread_create&#160;</td><td class="fielddoc"><p >Thread create. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a29a51ae6f6d959baee7d5e77d53d6c3da9c1afffc90d0adfdf5ce3ff3f6cfa7dc" name="a29a51ae6f6d959baee7d5e77d53d6c3da9c1afffc90d0adfdf5ce3ff3f6cfa7dc"></a>ae_thread_update&#160;</td><td class="fielddoc"><p >Thread update. </p>
@@ -2737,6 +2772,80 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed" name="ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed"></a>ett_atom_utf8&#160;</td><td class="fielddoc"><p >118 [UInt16:Len, Len:AtomName] max Len is 255 characters (up to 4 bytes per) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c" name="ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c"></a>ett_atom_utf8_small&#160;</td><td class="fielddoc"><p >119 [UInt8:Len, Len:AtomName] </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7d65d1ee306708cb7f7307502aaa1834" name="a7d65d1ee306708cb7f7307502aaa1834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d65d1ee306708cb7f7307502aaa1834">&#9670;&nbsp;</a></span>event_entity_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834">dpp::event_entity_type</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event entity types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8" name="a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8"></a>eet_none&#160;</td><td class="fielddoc"><p >Not set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456" name="a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456"></a>eet_stage_instance&#160;</td><td class="fielddoc"><p >A stage instance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59" name="a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59"></a>eet_voice&#160;</td><td class="fielddoc"><p >A voice channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52" name="a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52"></a>eet_external&#160;</td><td class="fielddoc"><p >External to discord, or a text channel etc. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6add40f37f2f043dede513edebaa67bd" name="a6add40f37f2f043dede513edebaa67bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6add40f37f2f043dede513edebaa67bd">&#9670;&nbsp;</a></span>event_privacy_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a6add40f37f2f043dede513edebaa67bd">dpp::event_privacy_level</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the privacy of an event. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123" name="a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123"></a>ep_public&#160;</td><td class="fielddoc"><p >The event is visible publicly, such as on Stage Discovery. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959" name="a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959"></a>ep_guild_only&#160;</td><td class="fielddoc"><p >The event is visible to only guild members. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a07ffd72c4bfd503c9c5980202c354e60" name="a07ffd72c4bfd503c9c5980202c354e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ffd72c4bfd503c9c5980202c354e60">&#9670;&nbsp;</a></span>event_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60">dpp::event_status</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event status types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a07ffd72c4bfd503c9c5980202c354e60ae8677228c0ed107e942a36a6b4cdddee" name="a07ffd72c4bfd503c9c5980202c354e60ae8677228c0ed107e942a36a6b4cdddee"></a>es_scheduled&#160;</td><td class="fielddoc"><p >Scheduled. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a07ffd72c4bfd503c9c5980202c354e60af9f79e39e58b7ba24154c0751ad09826" name="a07ffd72c4bfd503c9c5980202c354e60af9f79e39e58b7ba24154c0751ad09826"></a>es_active&#160;</td><td class="fielddoc"><p >Active now. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc" name="a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc"></a>es_completed&#160;</td><td class="fielddoc"><p >Completed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03" name="a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03"></a>es_cancelled&#160;</td><td class="fielddoc"><p >Cancelled. </p>
 </td></tr>
 </table>
 

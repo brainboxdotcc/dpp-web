@@ -168,6 +168,7 @@ var hierarchy =
       [ "dpp::voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", null ],
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
+    [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
     [ "std::exception", null, [
       [ "dpp::exception", "classdpp_1_1exception.html", null ]
     ] ],
@@ -219,6 +220,7 @@ var hierarchy =
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
+    [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [

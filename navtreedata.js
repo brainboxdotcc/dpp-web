@@ -71,17 +71,18 @@ var NAVTREEINDEX =
 "classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07",
 "classdpp_1_1user__identified.html#aab86456a191f214b38277cf65bb6af05",
 "frequently-asked-questions.html#autotoc_md80",
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da4c65b928d1e5adbb973e9fe333b4ebc5",
-"namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4aaca2f84896f4202cf23eaaba3c4c8ff5e",
-"namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb",
-"structdpp_1_1application__command__update__t.html#a5afbcd36109734ad0fca14ec848b73b7",
-"structdpp_1_1command__info__t.html#a17285092877891df2580305980354f4d",
-"structdpp_1_1etf__buffer.html",
-"structdpp_1_1guild__role__update__t.html#ac9d31e61c8f77d7a8108b6a2652f41cd",
-"structdpp_1_1message.html#a4b176cfde5ca415d09dedf3d6156ee97",
-"structdpp_1_1message__update__t.html#ac10f5778903d395b2bc52182de140f62",
-"structdpp_1_1stage__instance__update__t.html#a90724de0f7627c42e5c402894f1c80dd",
-"structdpp_1_1utility_1_1uptime.html#a4430115cf5a406ac9f6b4b9d3fa76f3d"
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da2d77a92ab2c4bda93783d4483eab3d77",
+"namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a464829636537cdc63c5afae54f37f271",
+"namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa",
+"structdpp_1_1application__command__delete__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
+"structdpp_1_1channel__update__t.html#afdadb0a8a19ba2d5e3203953d9d0f404",
+"structdpp_1_1error__detail.html#a07ca605032ba32cf9f963fb569905cf9",
+"structdpp_1_1guild__role__delete__t.html#a2ea6c85d5db71c5710a04339978b7db4",
+"structdpp_1_1message.html#a16fca6ff4595e0fcab2305205eb54626",
+"structdpp_1_1message__reaction__remove__t.html#a4b140eb7ebf96cdca56377a932d10007",
+"structdpp_1_1select__option_1_1inner__select__emoji.html#a81266873a679663cc267e96951b52425",
+"structdpp_1_1thread__update__t.html#abf1d17ddf8c8784446bb09ec965cf461",
+"structdpp_1_1webhooks__update__t.html#aca2880114f69b7ba62eb5137824c1432"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

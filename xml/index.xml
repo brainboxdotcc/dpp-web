@@ -1252,6 +1252,10 @@
     <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
+  <compound refid="structdpp_1_1event__entities" kind="struct"><name>dpp::event_entities</name>
+    <member refid="structdpp_1_1event__entities_1ab7fd10f4cf4724a5f40100db19ce1139" kind="variable"><name>speaker_ids</name></member>
+    <member refid="structdpp_1_1event__entities_1a55ed07b7c6e84678dfee16c71973a3bb" kind="variable"><name>location</name></member>
+  </compound>
   <compound refid="classdpp_1_1exception" kind="class"><name>dpp::exception</name>
     <member refid="classdpp_1_1exception_1ac033c933ff59daf22d4ea121303e11b9" kind="variable"><name>msg</name></member>
     <member refid="classdpp_1_1exception_1a82a21aa6228b4c8e2ead7c45128cd9b7" kind="function"><name>exception</name></member>
@@ -2177,6 +2181,28 @@
     <member refid="structdpp_1_1rtp__header_1a86786b1a234f930d804d9f3895eca995" kind="variable"><name>ssrc</name></member>
     <member refid="structdpp_1_1rtp__header_1acc1b39793e54cb2caf586cf65e2d42bd" kind="function"><name>rtp_header</name></member>
   </compound>
+  <compound refid="structdpp_1_1scheduled__event" kind="struct"><name>dpp::scheduled_event</name>
+    <member refid="structdpp_1_1scheduled__event_1a5439abfd87f8cdf968968a2d7b0ebe25" kind="variable"><name>id</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a5872e40ff1f2bf3599d5403ec6fe6599" kind="variable"><name>guild_id</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a5b6b7c91848c8723141950f370eec2ee" kind="variable"><name>channel_id</name></member>
+    <member refid="structdpp_1_1scheduled__event_1aef4360786203c65703c19fc44ad6ed02" kind="variable"><name>creator_id</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a3e15cff6d8e5466e5ef90c952fc249de" kind="variable"><name>name</name></member>
+    <member refid="structdpp_1_1scheduled__event_1ae88e5cc19ae2dcd72b30461e313527ff" kind="variable"><name>description</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a641492ee3c1f21f38072799fa9775d7b" kind="variable"><name>image</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a796cb34ccf0fcb1d92579be2d1132048" kind="variable"><name>scheduled_start_time</name></member>
+    <member refid="structdpp_1_1scheduled__event_1aaf52978adc48f65eb63a3871dd1c784c" kind="variable"><name>scheduled_end_time</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a52f6049445ba9debcbdb1ec896c0fcb1" kind="variable"><name>privacy_level</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a16187b13721a0181c365f15d087295b6" kind="variable"><name>status</name></member>
+    <member refid="structdpp_1_1scheduled__event_1afd4d1b9be6926956b7631eba31ea81f7" kind="variable"><name>entity_type</name></member>
+    <member refid="structdpp_1_1scheduled__event_1aa9a1f15d3f9ab7fa82747a0576629598" kind="variable"><name>entity_id</name></member>
+    <member refid="structdpp_1_1scheduled__event_1aacfd8d3b0bb171ea11f6613a334d0a73" kind="variable"><name>entity_metadata</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a00779228a1511d4d256156c68fc058a5" kind="variable"><name>creator</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a58b45b0ca4be45bde0a2c58a56dfb22f" kind="variable"><name>user_count</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a4b4a32d20426b9a559e4ec0b86e049d1" kind="function"><name>scheduled_event</name></member>
+    <member refid="structdpp_1_1scheduled__event_1ab23f053c09b3f8fcce9041073de156c2" kind="function"><name>~scheduled_event</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a99bff586aef0ff58f4d16367f948e997" kind="function"><name>fill_from_json</name></member>
+    <member refid="structdpp_1_1scheduled__event_1a5b7d78308526a0c384861dea18304dae" kind="function"><name>build_json</name></member>
+  </compound>
   <compound refid="structdpp_1_1select__click__t" kind="struct"><name>dpp::select_click_t</name>
     <member refid="structdpp_1_1select__click__t_1aac30db2484043c37184d96401a5e36d4" kind="variable"><name>custom_id</name></member>
     <member refid="structdpp_1_1select__click__t_1a8f94f1a7b473d0210d9e2b1553db6b76" kind="variable"><name>values</name></member>
@@ -2935,6 +2961,9 @@
     <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da715b099e5710e27fa4b0f6250ba69d5f" kind="enumvalue"><name>ae_sticker_create</name></member>
     <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3dab2e511e9d77675916c2d02ab231da36e" kind="enumvalue"><name>ae_sticker_update</name></member>
     <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da228e699a1feef4f5c4d1054bb70543b2" kind="enumvalue"><name>ae_sticker_delete</name></member>
+    <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da1c9a8c9ac9d162d20b6492cf97e0ac13" kind="enumvalue"><name>ae_guild_scheduled_event_create</name></member>
+    <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da1483b4dc1716196e2f0d22951faba74f" kind="enumvalue"><name>ae_guild_scheduled_event_update</name></member>
+    <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da93f74cc23f6c486d0062ce8ba8a76250" kind="enumvalue"><name>ae_guild_scheduled_event_delete</name></member>
     <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772" kind="enumvalue"><name>ae_thread_create</name></member>
     <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da9c1afffc90d0adfdf5ce3ff3f6cfa7dc" kind="enumvalue"><name>ae_thread_update</name></member>
     <member refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da60c1a36d005177f08743aa2239bb09e1" kind="enumvalue"><name>ae_thread_delete</name></member>
@@ -3269,6 +3298,19 @@
     <member refid="namespacedpp_1a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3" kind="enumvalue"><name>p_use_external_stickers</name></member>
     <member refid="namespacedpp_1a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937" kind="enumvalue"><name>p_send_messages_in_threads</name></member>
     <member refid="namespacedpp_1a2b8b5573bf936e034d33a7238fe5604fa8b664cc72b2379ebe85894385e804e33" kind="enumvalue"><name>p_start_embedded_activities</name></member>
+    <member refid="namespacedpp_1a6add40f37f2f043dede513edebaa67bd" kind="enum"><name>event_privacy_level</name></member>
+    <member refid="namespacedpp_1a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123" kind="enumvalue"><name>ep_public</name></member>
+    <member refid="namespacedpp_1a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959" kind="enumvalue"><name>ep_guild_only</name></member>
+    <member refid="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834" kind="enum"><name>event_entity_type</name></member>
+    <member refid="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8" kind="enumvalue"><name>eet_none</name></member>
+    <member refid="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456" kind="enumvalue"><name>eet_stage_instance</name></member>
+    <member refid="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59" kind="enumvalue"><name>eet_voice</name></member>
+    <member refid="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52" kind="enumvalue"><name>eet_external</name></member>
+    <member refid="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60" kind="enum"><name>event_status</name></member>
+    <member refid="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60ae8677228c0ed107e942a36a6b4cdddee" kind="enumvalue"><name>es_scheduled</name></member>
+    <member refid="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60af9f79e39e58b7ba24154c0751ad09826" kind="enumvalue"><name>es_active</name></member>
+    <member refid="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc" kind="enumvalue"><name>es_completed</name></member>
+    <member refid="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03" kind="enumvalue"><name>es_cancelled</name></member>
     <member refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58" kind="enum"><name>command_option_type</name></member>
     <member refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c" kind="enumvalue"><name>co_sub_command</name></member>
     <member refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58aaf7efc648d35b8a702480f916c904547" kind="enumvalue"><name>co_sub_command_group</name></member>
@@ -3658,6 +3700,8 @@
   </compound>
   <compound refid="role_8h" kind="file"><name>role.h</name>
   </compound>
+  <compound refid="scheduled__event_8h" kind="file"><name>scheduled_event.h</name>
+  </compound>
   <compound refid="slashcommand_8h" kind="file"><name>slashcommand.h</name>
   </compound>
   <compound refid="socket_8h" kind="file"><name>socket.h</name>
@@ -3972,6 +4016,8 @@
   </compound>
   <compound refid="role_8cpp" kind="file"><name>role.cpp</name>
     <member refid="role_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+  </compound>
+  <compound refid="scheduled__event_8cpp" kind="file"><name>scheduled_event.cpp</name>
   </compound>
   <compound refid="slashcommand_8cpp" kind="file"><name>slashcommand.cpp</name>
   </compound>

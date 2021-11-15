@@ -27,6 +27,7 @@
     <includes refid="stage__instance_8h" local="no">dpp/stage_instance.h</includes>
     <includes refid="auditlog_8h" local="no">dpp/auditlog.h</includes>
     <includes refid="application_8h" local="no">dpp/application.h</includes>
+    <includes refid="scheduled__event_8h" local="no">dpp/scheduled_event.h</includes>
     <includedby refid="appcommand_8cpp" local="no">appcommand.cpp</includedby>
     <includedby refid="application_8cpp" local="no">application.cpp</includedby>
     <includedby refid="application_8h" local="no">application.h</includedby>
@@ -39,8 +40,8 @@
     <includedby refid="ban_8h" local="no">ban.h</includedby>
     <includedby refid="cache_8cpp" local="no">cache.cpp</includedby>
     <includedby refid="cache_8h" local="no">cache.h</includedby>
-    <includedby refid="channel_8cpp" local="no">channel.cpp</includedby>
     <includedby refid="cluster_2channel_8cpp" local="no">channel.cpp</includedby>
+    <includedby refid="channel_8cpp" local="no">channel.cpp</includedby>
     <includedby refid="channel__create_8cpp" local="no">channel_create.cpp</includedby>
     <includedby refid="channel__delete_8cpp" local="no">channel_delete.cpp</includedby>
     <includedby refid="channel__pins__update_8cpp" local="no">channel_pins_update.cpp</includedby>
@@ -110,6 +111,8 @@
     <includedby refid="resumed_8cpp" local="no">resumed.cpp</includedby>
     <includedby refid="cluster_2role_8cpp" local="no">role.cpp</includedby>
     <includedby refid="role_8cpp" local="no">role.cpp</includedby>
+    <includedby refid="scheduled__event_8cpp" local="no">scheduled_event.cpp</includedby>
+    <includedby refid="scheduled__event_8h" local="no">scheduled_event.h</includedby>
     <includedby refid="slashcommand_8cpp" local="no">slashcommand.cpp</includedby>
     <includedby refid="slashcommand_8h" local="no">slashcommand.h</includedby>
     <includedby refid="sslclient_8cpp" local="no">sslclient.cpp</includedby>
@@ -130,8 +133,8 @@
     <includedby refid="thread__members__update_8cpp" local="no">thread_members_update.cpp</includedby>
     <includedby refid="thread__update_8cpp" local="no">thread_update.cpp</includedby>
     <includedby refid="typing__start_8cpp" local="no">typing_start.cpp</includedby>
-    <includedby refid="user_8cpp" local="no">user.cpp</includedby>
     <includedby refid="cluster_2user_8cpp" local="no">user.cpp</includedby>
+    <includedby refid="user_8cpp" local="no">user.cpp</includedby>
     <includedby refid="user__update_8cpp" local="no">user_update.cpp</includedby>
     <includedby refid="utility_8cpp" local="no">utility.cpp</includedby>
     <includedby refid="voice_8cpp" local="no">voice.cpp</includedby>
@@ -233,6 +236,8 @@
         <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -351,6 +356,15 @@
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>dpp/scheduled_event.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="25">
@@ -696,9 +710,9 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
         <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
@@ -838,19 +852,23 @@
         </childnode>
         <childnode refid="65" relation="include">
         </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
         <childnode refid="106" relation="include">
         </childnode>
         <childnode refid="118" relation="include">
         </childnode>
         <childnode refid="107" relation="include">
         </childnode>
-        <childnode refid="123" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
         <childnode refid="95" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
-        <childnode refid="127" relation="include">
+        <childnode refid="129" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
@@ -878,13 +896,13 @@
         </childnode>
         <childnode refid="75" relation="include">
         </childnode>
-        <childnode refid="128" relation="include">
-        </childnode>
         <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
         </childnode>
         <childnode refid="76" relation="include">
         </childnode>
-        <childnode refid="129" relation="include">
+        <childnode refid="131" relation="include">
         </childnode>
         <childnode refid="100" relation="include">
         </childnode>
@@ -892,17 +910,17 @@
         </childnode>
         <childnode refid="78" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
-        </childnode>
-        <childnode refid="131" relation="include">
-        </childnode>
         <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
         </childnode>
         <childnode refid="101" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="133" relation="include">
+        <childnode refid="135" relation="include">
         </childnode>
         <childnode refid="79" relation="include">
         </childnode>
@@ -1245,6 +1263,13 @@
         <childnode refid="122" relation="include">
         </childnode>
       </node>
+      <node id="124">
+        <label>scheduled_event.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
       <node id="118">
         <label>slashcommand.h</label>
         <childnode refid="1" relation="include">
@@ -1256,41 +1281,41 @@
         <childnode refid="106" relation="include">
         </childnode>
       </node>
-      <node id="123">
+      <node id="125">
         <label>sslclient.h</label>
         <childnode refid="107" relation="include">
-        </childnode>
-        <childnode refid="124" relation="include">
-        </childnode>
-      </node>
-      <node id="127">
-        <label>stage_instance.h</label>
-        <childnode refid="1" relation="include">
         </childnode>
         <childnode refid="126" relation="include">
         </childnode>
       </node>
-      <node id="131">
-        <label>voiceregion.h</label>
+      <node id="129">
+        <label>stage_instance.h</label>
         <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
       <node id="133">
+        <label>voiceregion.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
         <label>webhook.h</label>
         <childnode refid="1" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
       </node>
-      <node id="124">
+      <node id="126">
         <label>wsclient.h</label>
         <childnode refid="83" relation="include">
         </childnode>
         <childnode refid="84" relation="include">
         </childnode>
-        <childnode refid="125" relation="include">
+        <childnode refid="127" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -1581,31 +1606,34 @@
       <node id="65">
         <label>role.cpp</label>
       </node>
+      <node id="123">
+        <label>scheduled_event.cpp</label>
+      </node>
       <node id="106">
         <label>slashcommand.cpp</label>
       </node>
       <node id="107">
         <label>sslclient.cpp</label>
       </node>
-      <node id="126">
+      <node id="128">
         <label>stage_instance.cpp</label>
       </node>
-      <node id="128">
+      <node id="130">
         <label>user.cpp</label>
       </node>
-      <node id="129">
+      <node id="131">
         <label>utility.cpp</label>
       </node>
-      <node id="130">
+      <node id="132">
         <label>voiceregion.cpp</label>
       </node>
-      <node id="132">
+      <node id="134">
         <label>voicestate.cpp</label>
       </node>
       <node id="108">
         <label>webhook.cpp</label>
       </node>
-      <node id="125">
+      <node id="127">
         <label>wsclient.cpp</label>
       </node>
       <node id="26">

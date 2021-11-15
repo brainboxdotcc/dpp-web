@@ -56,6 +56,7 @@ var namespacedpp =
     [ "etf_buffer", "structdpp_1_1etf__buffer.html", "structdpp_1_1etf__buffer" ],
     [ "etf_parser", "classdpp_1_1etf__parser.html", "classdpp_1_1etf__parser" ],
     [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
+    [ "event_entities", "structdpp_1_1event__entities.html", "structdpp_1_1event__entities" ],
     [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
     [ "guild", "classdpp_1_1guild.html", "classdpp_1_1guild" ],
@@ -115,6 +116,7 @@ var namespacedpp =
     [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
     [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
     [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
+    [ "scheduled_event", "structdpp_1_1scheduled__event.html", "structdpp_1_1scheduled__event" ],
     [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
     [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
     [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
@@ -265,6 +267,9 @@ var namespacedpp =
       [ "ae_sticker_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da715b099e5710e27fa4b0f6250ba69d5f", null ],
       [ "ae_sticker_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dab2e511e9d77675916c2d02ab231da36e", null ],
       [ "ae_sticker_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da228e699a1feef4f5c4d1054bb70543b2", null ],
+      [ "ae_guild_scheduled_event_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1c9a8c9ac9d162d20b6492cf97e0ac13", null ],
+      [ "ae_guild_scheduled_event_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1483b4dc1716196e2f0d22951faba74f", null ],
+      [ "ae_guild_scheduled_event_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da93f74cc23f6c486d0062ce8ba8a76250", null ],
       [ "ae_thread_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772", null ],
       [ "ae_thread_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da9c1afffc90d0adfdf5ce3ff3f6cfa7dc", null ],
       [ "ae_thread_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da60c1a36d005177f08743aa2239bb09e1", null ]
@@ -369,6 +374,22 @@ var namespacedpp =
       [ "ett_function", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147", null ],
       [ "ett_atom_utf8", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed", null ],
       [ "ett_atom_utf8_small", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c", null ]
+    ] ],
+    [ "event_entity_type", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834", [
+      [ "eet_none", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8", null ],
+      [ "eet_stage_instance", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456", null ],
+      [ "eet_voice", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59", null ],
+      [ "eet_external", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52", null ]
+    ] ],
+    [ "event_privacy_level", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bd", [
+      [ "ep_public", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123", null ],
+      [ "ep_guild_only", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959", null ]
+    ] ],
+    [ "event_status", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60", [
+      [ "es_scheduled", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60ae8677228c0ed107e942a36a6b4cdddee", null ],
+      [ "es_active", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60af9f79e39e58b7ba24154c0751ad09826", null ],
+      [ "es_completed", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc", null ],
+      [ "es_cancelled", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03", null ]
     ] ],
     [ "guild_explicit_content_t", "namespacedpp.html#a47f79e1142def583c59df70b1382319f", [
       [ "expl_disabled", "namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479", null ],

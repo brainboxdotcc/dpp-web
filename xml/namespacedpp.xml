@@ -56,6 +56,7 @@
     <innerclass refid="structdpp_1_1etf__buffer" prot="public">dpp::etf_buffer</innerclass>
     <innerclass refid="classdpp_1_1etf__parser" prot="public">dpp::etf_parser</innerclass>
     <innerclass refid="structdpp_1_1event__dispatch__t" prot="public">dpp::event_dispatch_t</innerclass>
+    <innerclass refid="structdpp_1_1event__entities" prot="public">dpp::event_entities</innerclass>
     <innerclass refid="classdpp_1_1exception" prot="public">dpp::exception</innerclass>
     <innerclass refid="structdpp_1_1gateway" prot="public">dpp::gateway</innerclass>
     <innerclass refid="classdpp_1_1guild" prot="public">dpp::guild</innerclass>
@@ -115,6 +116,7 @@
     <innerclass refid="structdpp_1_1resumed__t" prot="public">dpp::resumed_t</innerclass>
     <innerclass refid="classdpp_1_1role" prot="public">dpp::role</innerclass>
     <innerclass refid="structdpp_1_1rtp__header" prot="public">dpp::rtp_header</innerclass>
+    <innerclass refid="structdpp_1_1scheduled__event" prot="public">dpp::scheduled_event</innerclass>
     <innerclass refid="structdpp_1_1select__click__t" prot="public">dpp::select_click_t</innerclass>
     <innerclass refid="structdpp_1_1select__option" prot="public">dpp::select_option</innerclass>
     <innerclass refid="classdpp_1_1slashcommand" prot="public">dpp::slashcommand</innerclass>
@@ -648,6 +650,33 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da1c9a8c9ac9d162d20b6492cf97e0ac13" prot="public">
+          <name>ae_guild_scheduled_event_create</name>
+          <initializer>=	100</initializer>
+          <briefdescription>
+<para>Scheduled event creation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da1483b4dc1716196e2f0d22951faba74f" prot="public">
+          <name>ae_guild_scheduled_event_update</name>
+          <initializer>=	101</initializer>
+          <briefdescription>
+<para>Scheduled event update. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da93f74cc23f6c486d0062ce8ba8a76250" prot="public">
+          <name>ae_guild_scheduled_event_delete</name>
+          <initializer>=	102</initializer>
+          <briefdescription>
+<para>Scheduled event deletion. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772" prot="public">
           <name>ae_thread_create</name>
           <initializer>=	110</initializer>
@@ -682,7 +711,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/auditlog.h" line="33" column="1" bodyfile="include/dpp/auditlog.h" bodystart="33" bodyend="122"/>
+        <location file="include/dpp/auditlog.h" line="33" column="1" bodyfile="include/dpp/auditlog.h" bodystart="33" bodyend="128"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a8af3a726df107c304139477dbfa42092" prot="public" static="no" strong="no">
         <type></type>
@@ -3709,6 +3738,132 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/role.h" line="39" column="1" bodyfile="include/dpp/role.h" bodystart="39" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a6add40f37f2f043dede513edebaa67bd" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>event_privacy_level</name>
+        <enumvalue id="namespacedpp_1a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123" prot="public">
+          <name>ep_public</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The event is visible publicly, such as on Stage Discovery. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959" prot="public">
+          <name>ep_guild_only</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>The event is visible to only guild members. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the privacy of an event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="31" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="31" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>event_entity_type</name>
+        <enumvalue id="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8" prot="public">
+          <name>eet_none</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Not set. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456" prot="public">
+          <name>eet_stage_instance</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>A stage instance. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59" prot="public">
+          <name>eet_voice</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>A voice channel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52" prot="public">
+          <name>eet_external</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>External to discord, or a text channel etc. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Event entity types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="41" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="41" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>event_status</name>
+        <enumvalue id="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60ae8677228c0ed107e942a36a6b4cdddee" prot="public">
+          <name>es_scheduled</name>
+          <initializer>=	1</initializer>
+          <briefdescription>
+<para>Scheduled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60af9f79e39e58b7ba24154c0751ad09826" prot="public">
+          <name>es_active</name>
+          <initializer>=	2</initializer>
+          <briefdescription>
+<para>Active now. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc" prot="public">
+          <name>es_completed</name>
+          <initializer>=	3</initializer>
+          <briefdescription>
+<para>Completed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03" prot="public">
+          <name>es_cancelled</name>
+          <initializer>=	4</initializer>
+          <briefdescription>
+<para>Cancelled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Event status types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="55" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="55" bodyend="64"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1abc401d86119c6443bf72d736857c1a58" prot="public" static="no" strong="no">
         <type>uint8_t</type>
