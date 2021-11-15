@@ -193,6 +193,7 @@ var namespacedpp =
     [ "parameter_registration_t", "namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65", null ],
     [ "presence_map", "namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f", null ],
     [ "role_map", "namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b", null ],
+    [ "scheduled_event_map", "namespacedpp.html#a1d8eeeaca0cdc14125cbf2f4f0722781", null ],
     [ "shard_list", "namespacedpp.html#a13c4d4e6238396245b349e6a637897e0", null ],
     [ "slashcommand_map", "namespacedpp.html#adfefe335636cdf5dbbba145a3828c554", null ],
     [ "snowflake", "namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475", null ],

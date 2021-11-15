@@ -12617,6 +12617,273 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="3185" column="6" bodyfile="src/dpp/cluster/gateway.cpp" bodystart="27" bodyend="33"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1ae8554f93aed5fb84162af41c997fc1e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::guild_events_get</definition>
+        <argsstring>(snowflake guild_id, command_completion_event_t callback)</argsstring>
+        <name>guild_events_get</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Get all scheduled events for a guild. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get events for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kindref="member">dpp::scheduled_event_map</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3194" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1ac42918dff5ab1c82d2e274ffc9e1f218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::guild_event_users_get</definition>
+        <argsstring>(snowflake guild_id, snowflake event_id, command_completion_event_t callback)</argsstring>
+        <name>guild_event_users_get</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>event_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Get users RSVP&apos;d to an event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get user list for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get user list for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">dpp::user_map</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3204" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a04dc202cee249447c1a135a80a852daf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::guild_event_create</definition>
+        <argsstring>(const scheduled_event &amp;event, command_completion_event_t callback={})</argsstring>
+        <name>guild_event_create</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a scheduled event on a guild. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event to create (guild ID must be populated) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kindref="member">dpp::scheduled_event_map</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3213" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1ae1b5d460513586b9dcf506643c6e01f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::guild_event_delete</definition>
+        <argsstring>(snowflake event_id, command_completion_event_t callback={})</argsstring>
+        <name>guild_event_delete</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>event_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Delete a scheduled event from a guild. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event ID to delete </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3222" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a36b82a96ca6b744388e9b290cbf775ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::guild_event_edit</definition>
+        <argsstring>(const scheduled_event &amp;event, command_completion_event_t callback={})</argsstring>
+        <name>guild_event_edit</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Edit/modify a scheduled event on a guild. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event to create (event ID and guild ID must be populated) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kindref="member">dpp::scheduled_event_map</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3231" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1aea5be335e4e6bd4baaa35fbb0210efe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::guild_events_get</definition>
+        <argsstring>(snowflake guild_id, snowflake event_id, command_completion_event_t callback)</argsstring>
+        <name>guild_events_get</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>event_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Get a scheduled event for a guild. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get event for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event ID to get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="structdpp_1_1scheduled__event" kindref="compound">dpp::scheduled_event</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3241" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>The cluster class represents a group of shards and a command queue for sending and receiving commands from discord via HTTP. You should usually instantiate a cluster object at the very least to make use of the library. </para>
@@ -12753,7 +13020,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/cluster.h" line="236" column="1" bodyfile="include/dpp/cluster.h" bodystart="236" bodyend="3188"/>
+    <location file="include/dpp/cluster.h" line="236" column="1" bodyfile="include/dpp/cluster.h" bodystart="236" bodyend="3244"/>
     <listofallmembers>
       <member refid="classdpp_1_1cluster_1aeb86e87c07ca3954e198741175fbcb5a" prot="private" virt="non-virtual"><scope>dpp::cluster</scope><name>auto_shard</name></member>
       <member refid="classdpp_1_1cluster_1a9fae28f81712be86530fe3314d166ad3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>cache_policy</name></member>
@@ -12910,6 +13177,12 @@
       <member refid="classdpp_1_1cluster_1a2c4bf8c1767b71ed06bfa407341096d4" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_emoji_edit</name></member>
       <member refid="classdpp_1_1cluster_1ada721a222fb3a42a1a1bb6d93dfcc745" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_emoji_get</name></member>
       <member refid="classdpp_1_1cluster_1ad66ab98a72eb1ba8d2686fcaa1eb49db" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_emojis_get</name></member>
+      <member refid="classdpp_1_1cluster_1a04dc202cee249447c1a135a80a852daf" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_event_create</name></member>
+      <member refid="classdpp_1_1cluster_1ae1b5d460513586b9dcf506643c6e01f6" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_event_delete</name></member>
+      <member refid="classdpp_1_1cluster_1a36b82a96ca6b744388e9b290cbf775ff" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_event_edit</name></member>
+      <member refid="classdpp_1_1cluster_1ac42918dff5ab1c82d2e274ffc9e1f218" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_event_users_get</name></member>
+      <member refid="classdpp_1_1cluster_1ae8554f93aed5fb84162af41c997fc1e3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_events_get</name></member>
+      <member refid="classdpp_1_1cluster_1aea5be335e4e6bd4baaa35fbb0210efe2" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_events_get</name></member>
       <member refid="classdpp_1_1cluster_1a6a003669770549d25a951810bff0153e" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get</name></member>
       <member refid="classdpp_1_1cluster_1ad871d30ed11d0799da4a831ede8a7d95" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_ban</name></member>
       <member refid="classdpp_1_1cluster_1af9fffa4f080e0b5abab1417fa8eb1b0f" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_bans</name></member>
