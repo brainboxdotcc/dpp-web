@@ -65,6 +65,11 @@ var hierarchy =
       [ "dpp::events::guild_role_create", "classdpp_1_1events_1_1guild__role__create.html", null ],
       [ "dpp::events::guild_role_delete", "classdpp_1_1events_1_1guild__role__delete.html", null ],
       [ "dpp::events::guild_role_update", "classdpp_1_1events_1_1guild__role__update.html", null ],
+      [ "dpp::events::guild_scheduled_event_create", "classdpp_1_1events_1_1guild__scheduled__event__create.html", null ],
+      [ "dpp::events::guild_scheduled_event_delete", "classdpp_1_1events_1_1guild__scheduled__event__delete.html", null ],
+      [ "dpp::events::guild_scheduled_event_update", "classdpp_1_1events_1_1guild__scheduled__event__update.html", null ],
+      [ "dpp::events::guild_scheduled_event_user_add", "classdpp_1_1events_1_1guild__scheduled__event__user__add.html", null ],
+      [ "dpp::events::guild_scheduled_event_user_remove", "classdpp_1_1events_1_1guild__scheduled__event__user__remove.html", null ],
       [ "dpp::events::guild_stickers_update", "classdpp_1_1events_1_1guild__stickers__update.html", null ],
       [ "dpp::events::guild_update", "classdpp_1_1events_1_1guild__update.html", null ],
       [ "dpp::events::integration_create", "classdpp_1_1events_1_1integration__create.html", null ],
@@ -122,6 +127,11 @@ var hierarchy =
       [ "dpp::guild_role_create_t", "structdpp_1_1guild__role__create__t.html", null ],
       [ "dpp::guild_role_delete_t", "structdpp_1_1guild__role__delete__t.html", null ],
       [ "dpp::guild_role_update_t", "structdpp_1_1guild__role__update__t.html", null ],
+      [ "dpp::guild_scheduled_event_create_t", "structdpp_1_1guild__scheduled__event__create__t.html", null ],
+      [ "dpp::guild_scheduled_event_delete_t", "structdpp_1_1guild__scheduled__event__delete__t.html", null ],
+      [ "dpp::guild_scheduled_event_update_t", "structdpp_1_1guild__scheduled__event__update__t.html", null ],
+      [ "dpp::guild_scheduled_event_user_add_t", "structdpp_1_1guild__scheduled__event__user__add__t.html", null ],
+      [ "dpp::guild_scheduled_event_user_remove_t", "structdpp_1_1guild__scheduled__event__user__remove__t.html", null ],
       [ "dpp::guild_stickers_update_t", "structdpp_1_1guild__stickers__update__t.html", null ],
       [ "dpp::guild_update_t", "structdpp_1_1guild__update__t.html", null ],
       [ "dpp::integration_create_t", "structdpp_1_1integration__create__t.html", null ],
@@ -168,6 +178,7 @@ var hierarchy =
       [ "dpp::voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", null ],
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
+    [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
     [ "std::exception", null, [
       [ "dpp::exception", "classdpp_1_1exception.html", null ]
     ] ],
@@ -219,6 +230,7 @@ var hierarchy =
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
+    [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [

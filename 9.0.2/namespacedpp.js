@@ -56,6 +56,7 @@ var namespacedpp =
     [ "etf_buffer", "structdpp_1_1etf__buffer.html", "structdpp_1_1etf__buffer" ],
     [ "etf_parser", "classdpp_1_1etf__parser.html", "classdpp_1_1etf__parser" ],
     [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
+    [ "event_entities", "structdpp_1_1event__entities.html", "structdpp_1_1event__entities" ],
     [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
     [ "guild", "classdpp_1_1guild.html", "classdpp_1_1guild" ],
@@ -75,6 +76,11 @@ var namespacedpp =
     [ "guild_role_create_t", "structdpp_1_1guild__role__create__t.html", "structdpp_1_1guild__role__create__t" ],
     [ "guild_role_delete_t", "structdpp_1_1guild__role__delete__t.html", "structdpp_1_1guild__role__delete__t" ],
     [ "guild_role_update_t", "structdpp_1_1guild__role__update__t.html", "structdpp_1_1guild__role__update__t" ],
+    [ "guild_scheduled_event_create_t", "structdpp_1_1guild__scheduled__event__create__t.html", "structdpp_1_1guild__scheduled__event__create__t" ],
+    [ "guild_scheduled_event_delete_t", "structdpp_1_1guild__scheduled__event__delete__t.html", "structdpp_1_1guild__scheduled__event__delete__t" ],
+    [ "guild_scheduled_event_update_t", "structdpp_1_1guild__scheduled__event__update__t.html", "structdpp_1_1guild__scheduled__event__update__t" ],
+    [ "guild_scheduled_event_user_add_t", "structdpp_1_1guild__scheduled__event__user__add__t.html", "structdpp_1_1guild__scheduled__event__user__add__t" ],
+    [ "guild_scheduled_event_user_remove_t", "structdpp_1_1guild__scheduled__event__user__remove__t.html", "structdpp_1_1guild__scheduled__event__user__remove__t" ],
     [ "guild_stickers_update_t", "structdpp_1_1guild__stickers__update__t.html", "structdpp_1_1guild__stickers__update__t" ],
     [ "guild_update_t", "structdpp_1_1guild__update__t.html", "structdpp_1_1guild__update__t" ],
     [ "guild_widget", "classdpp_1_1guild__widget.html", "classdpp_1_1guild__widget" ],
@@ -115,6 +121,7 @@ var namespacedpp =
     [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
     [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
     [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
+    [ "scheduled_event", "structdpp_1_1scheduled__event.html", "structdpp_1_1scheduled__event" ],
     [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
     [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
     [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
@@ -168,7 +175,7 @@ var namespacedpp =
     [ "command_option_range", "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#a83bbf863761cba81ec4177e2346668a0", null ],
+    [ "confirmable_t", "namespacedpp.html#a2e93faa45caea523126fea519a245e61", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
@@ -186,6 +193,7 @@ var namespacedpp =
     [ "parameter_registration_t", "namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65", null ],
     [ "presence_map", "namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f", null ],
     [ "role_map", "namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b", null ],
+    [ "scheduled_event_map", "namespacedpp.html#a1d8eeeaca0cdc14125cbf2f4f0722781", null ],
     [ "shard_list", "namespacedpp.html#a13c4d4e6238396245b349e6a637897e0", null ],
     [ "slashcommand_map", "namespacedpp.html#adfefe335636cdf5dbbba145a3828c554", null ],
     [ "snowflake", "namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475", null ],
@@ -265,6 +273,9 @@ var namespacedpp =
       [ "ae_sticker_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da715b099e5710e27fa4b0f6250ba69d5f", null ],
       [ "ae_sticker_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dab2e511e9d77675916c2d02ab231da36e", null ],
       [ "ae_sticker_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da228e699a1feef4f5c4d1054bb70543b2", null ],
+      [ "ae_guild_scheduled_event_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1c9a8c9ac9d162d20b6492cf97e0ac13", null ],
+      [ "ae_guild_scheduled_event_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1483b4dc1716196e2f0d22951faba74f", null ],
+      [ "ae_guild_scheduled_event_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da93f74cc23f6c486d0062ce8ba8a76250", null ],
       [ "ae_thread_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772", null ],
       [ "ae_thread_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da9c1afffc90d0adfdf5ce3ff3f6cfa7dc", null ],
       [ "ae_thread_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da60c1a36d005177f08743aa2239bb09e1", null ]
@@ -369,6 +380,22 @@ var namespacedpp =
       [ "ett_function", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147", null ],
       [ "ett_atom_utf8", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed", null ],
       [ "ett_atom_utf8_small", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c", null ]
+    ] ],
+    [ "event_entity_type", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834", [
+      [ "eet_none", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8", null ],
+      [ "eet_stage_instance", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456", null ],
+      [ "eet_voice", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59", null ],
+      [ "eet_external", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52", null ]
+    ] ],
+    [ "event_privacy_level", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bd", [
+      [ "ep_public", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123", null ],
+      [ "ep_guild_only", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959", null ]
+    ] ],
+    [ "event_status", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60", [
+      [ "es_scheduled", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60ae8677228c0ed107e942a36a6b4cdddee", null ],
+      [ "es_active", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60af9f79e39e58b7ba24154c0751ad09826", null ],
+      [ "es_completed", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc", null ],
+      [ "es_cancelled", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03", null ]
     ] ],
     [ "guild_explicit_content_t", "namespacedpp.html#a47f79e1142def583c59df70b1382319f", [
       [ "expl_disabled", "namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479", null ],
@@ -475,6 +502,7 @@ var namespacedpp =
       [ "i_direct_messages", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5aaed663fb83df98a3b2797dbdffa1eec3", null ],
       [ "i_direct_message_reactions", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a5cdd239960ca917f44bab7be89625ae6", null ],
       [ "i_direct_message_typing", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a8a5fced64cc944ced2e4c69b877c45bf", null ],
+      [ "i_guild_scheduled_events", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ae8e1fccd9f13d710f2221ad8064f45e2", null ],
       [ "i_default_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f", null ],
       [ "i_privileged_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ad4af85bb8ca011125370342f0961bf05", null ],
       [ "i_all_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a76061cf60f9d06cf58ca38ddee1b825d", null ]
