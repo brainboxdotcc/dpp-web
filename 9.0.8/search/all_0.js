@@ -110,7 +110,7 @@ var searchData=
   ['at_5fgame_107',['at_game',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701',1,'dpp']]],
   ['at_5flistening_108',['at_listening',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6',1,'dpp']]],
   ['at_5fstreaming_109',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]],
-  ['attachment_110',['attachment',['../structdpp_1_1attachment.html#a4002cf5fa97634eb544ff7485efa7c4b',1,'dpp::attachment::attachment(class message *o)'],['../structdpp_1_1attachment.html#aba2fc9f36ddbea1b6f37337098c02d49',1,'dpp::attachment::attachment(class message *o, nlohmann::json *j)'],['../structdpp_1_1attachment.html',1,'dpp::attachment']]],
+  ['attachment_110',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)'],['../structdpp_1_1attachment.html',1,'dpp::attachment']]],
   ['attachments_111',['attachments',['../structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7',1,'dpp::message']]],
   ['audio_112',['audio',['../structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413',1,'dpp::voice_receive_t']]],
   ['audio_5fsize_113',['audio_size',['../structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668',1,'dpp::voice_receive_t']]],
