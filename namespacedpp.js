@@ -175,7 +175,7 @@ var namespacedpp =
     [ "command_option_range", "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#a83bbf863761cba81ec4177e2346668a0", null ],
+    [ "confirmable_t", "namespacedpp.html#a2e93faa45caea523126fea519a245e61", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],

@@ -61,7 +61,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classdpp_1_1cluster.html#a06083a6cacaf7c4e41884cfb2a1078ab",
-"classdpp_1_1cluster.html#a5c677c0d5c059e87cc01ce598d49487d",
+"classdpp_1_1cluster.html#a5b8c168682519ee125ed0a48239c08ef",
 "classdpp_1_1cluster.html#ad2273fdee237880d5e6b948198ffae52",
 "classdpp_1_1connection.html#aac95d3131d2975510b155b2a067c2740",
 "classdpp_1_1discord__voice__client.html#ae0e5e0799448bf29506bfcc21168d3fa",
@@ -72,7 +72,7 @@ var NAVTREEINDEX =
 "classdpp_1_1user.html#ae9fecaa47d8ba5330c4cdda978ffe267",
 "classdpp_1_1websocket__client.html#abf247ed0871e89e6a319c95841a315bd",
 "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03",
-"namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aba578d32adc07ba8723784d8810cb57a",
+"namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a",
 "namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283",
 "structdetail_1_1chrono__formatter.html#a8aa1665dbad20671c2a31c3937ee4ea4",
 "structdpp_1_1channel__create__t.html",
