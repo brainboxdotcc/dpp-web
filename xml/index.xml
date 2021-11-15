@@ -512,6 +512,16 @@
     <member refid="classdpp_1_1cluster_1a567b3f5bf160831373933f058bd177d2" kind="function"><name>detach_thread_member_update</name></member>
     <member refid="classdpp_1_1cluster_1abe9e5c58c9fe8b5cb7f98e3aaf3944d3" kind="function"><name>on_thread_members_update</name></member>
     <member refid="classdpp_1_1cluster_1a284102ffbb5953325e4b8fb36155a7f7" kind="function"><name>detach_thread_members_update</name></member>
+    <member refid="classdpp_1_1cluster_1aac1d9a0fbc87cfd2312faf2ad2aab381" kind="function"><name>on_guild_scheduled_event_create</name></member>
+    <member refid="classdpp_1_1cluster_1a1d9a58f0e8f7dfcabec9ed86d494dac4" kind="function"><name>detach_guild_scheduled_event_create</name></member>
+    <member refid="classdpp_1_1cluster_1abdebff7b0db64e06bb8585193bd41a52" kind="function"><name>on_guild_scheduled_event_update</name></member>
+    <member refid="classdpp_1_1cluster_1a8ee3b48a74d9243df3b160ec5d688335" kind="function"><name>detach_guild_scheduled_event_update</name></member>
+    <member refid="classdpp_1_1cluster_1a31f19dadb24daf8a92186fdea29a7599" kind="function"><name>on_guild_scheduled_event_delete</name></member>
+    <member refid="classdpp_1_1cluster_1a4988a9fa82fc1593a9f66627626f1e78" kind="function"><name>detach_guild_scheduled_event_delete</name></member>
+    <member refid="classdpp_1_1cluster_1ad448883ec484005d51c98330c8fc26ce" kind="function"><name>on_guild_scheduled_event_user_add</name></member>
+    <member refid="classdpp_1_1cluster_1a6ae706fc7e036a45aa686ca1b88a4b88" kind="function"><name>detach_guild_scheduled_event_user_add</name></member>
+    <member refid="classdpp_1_1cluster_1a67a9b0e0f6e35314b91f5c765823b75f" kind="function"><name>on_guild_scheduled_event_user_remove</name></member>
+    <member refid="classdpp_1_1cluster_1a4622b6cadc6edd6a6f067f5d811a32b1" kind="function"><name>detach_guild_scheduled_event_user_remove</name></member>
     <member refid="classdpp_1_1cluster_1ae1c915eafbf888a369278f21989f8476" kind="function"><name>on_voice_buffer_send</name></member>
     <member refid="classdpp_1_1cluster_1ab8d89e1aeb06cfef9fe246fad880fb7c" kind="function"><name>detach_voice_buffer_send</name></member>
     <member refid="classdpp_1_1cluster_1aaee7911f1695b3873d6963260264d8ef" kind="function"><name>on_voice_user_talking</name></member>
@@ -1076,7 +1086,7 @@
     <member refid="classdpp_1_1dispatcher_1a0ac476a8dcfe751c319279934aade9a8" kind="variable"><name>guild_scheduled_event_update</name></member>
     <member refid="classdpp_1_1dispatcher_1aa8ac70035ef49335b5589e9e133e1b10" kind="variable"><name>guild_scheduled_event_delete</name></member>
     <member refid="classdpp_1_1dispatcher_1a9b000b1d51d2aa602230bf25e91bb799" kind="variable"><name>guild_scheduled_event_user_add</name></member>
-    <member refid="classdpp_1_1dispatcher_1ae5ceac64c34d0cfb63cb9a666dc8590d" kind="variable"><name>guild_scheduled_event_remove</name></member>
+    <member refid="classdpp_1_1dispatcher_1acda8ea8caf42cf35e27c43a2f9ca22bd" kind="variable"><name>guild_scheduled_event_user_remove</name></member>
   </compound>
   <compound refid="classdpp_1_1dtemplate" kind="class"><name>dpp::dtemplate</name>
     <member refid="classdpp_1_1dtemplate_1afd09c5cd9ada37b0b3dc4f8c4570d25e" kind="variable"><name>code</name></member>
@@ -1605,7 +1615,9 @@
     <member refid="classdpp_1_1events_1_1guild__scheduled__event__user__add_1a0c6f8c0c16b9d9a31b6c3d60307449cc" kind="function"><name>handle</name></member>
   </compound>
   <compound refid="structdpp_1_1guild__scheduled__event__user__add__t" kind="struct"><name>dpp::guild_scheduled_event_user_add_t</name>
-    <member refid="structdpp_1_1guild__scheduled__event__user__add__t_1a24ca0ea37941678ea24a60f785dd7143" kind="variable"><name>event</name></member>
+    <member refid="structdpp_1_1guild__scheduled__event__user__add__t_1a340444fbb5e027722de705f27ad101ea" kind="variable"><name>event_id</name></member>
+    <member refid="structdpp_1_1guild__scheduled__event__user__add__t_1a6e54de7f486ef6505378eb77dda8cb34" kind="variable"><name>user_id</name></member>
+    <member refid="structdpp_1_1guild__scheduled__event__user__add__t_1a4eff5ae4fe3851c2f2d682eaee113603" kind="variable"><name>guild_id</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1guild__scheduled__event__user__add__t_1a66c38d82e2102b0452c4c969f1f7d42d" kind="function"><name>guild_scheduled_event_user_add_t</name></member>
@@ -1616,7 +1628,9 @@
     <member refid="classdpp_1_1events_1_1guild__scheduled__event__user__remove_1a77d255f243d064e44e8d69aaebae25b7" kind="function"><name>handle</name></member>
   </compound>
   <compound refid="structdpp_1_1guild__scheduled__event__user__remove__t" kind="struct"><name>dpp::guild_scheduled_event_user_remove_t</name>
-    <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1a666177abd9a95f51e02ded82576ebb83" kind="variable"><name>event</name></member>
+    <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1a6a30b55dde5f359ff5fdae1714477e26" kind="variable"><name>event_id</name></member>
+    <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1a83122271a5b333bfc6b0d25d4cc661ed" kind="variable"><name>user_id</name></member>
+    <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1ac46b8704fe4f52559f8c69ced83f84fd" kind="variable"><name>guild_id</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
     <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1afb7df9e7e9d1b6ff1d13496dceac8d3f" kind="function"><name>guild_scheduled_event_user_remove_t</name></member>

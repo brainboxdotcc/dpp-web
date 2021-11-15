@@ -5,11 +5,11 @@
     <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
     <includes local="no">dispatcher.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structdpp_1_1guild__scheduled__event__user__remove__t_1a666177abd9a95f51e02ded82576ebb83" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref></type>
-        <definition>scheduled_event dpp::guild_scheduled_event_user_remove_t::event</definition>
+      <memberdef kind="variable" id="structdpp_1_1guild__scheduled__event__user__remove__t_1a6a30b55dde5f359ff5fdae1714477e26" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::guild_scheduled_event_user_remove_t::event_id</definition>
         <argsstring></argsstring>
-        <name>event</name>
+        <name>event_id</name>
         <briefdescription>
 <para>event user removed from </para>
         </briefdescription>
@@ -17,7 +17,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="142" column="17" bodyfile="include/dpp/dispatcher.h" bodystart="142" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="154" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1guild__scheduled__event__user__remove__t_1a83122271a5b333bfc6b0d25d4cc661ed" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::guild_scheduled_event_user_remove_t::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+<para>User being removed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="160" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1guild__scheduled__event__user__remove__t_1ac46b8704fe4f52559f8c69ced83f84fd" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::guild_scheduled_event_user_remove_t::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>Guild being removed from. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="166" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
         <type>const std::string</type>
@@ -86,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="138" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="197" bodyend="197"/>
+        <location file="include/dpp/dispatcher.h" line="150" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="197" bodyend="197"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
@@ -269,23 +297,15 @@
           <edgelabel>from</edgelabel>
         </childnode>
       </node>
-      <node id="36">
-        <label>dpp::event_entities</label>
-        <link refid="structdpp_1_1event__entities"/>
-        <childnode refid="20" relation="usage">
-          <edgelabel>speaker_ids</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>location</edgelabel>
-        </childnode>
-      </node>
       <node id="1">
         <label>dpp::guild_scheduled_event_user_remove_t</label>
         <link refid="structdpp_1_1guild__scheduled__event__user__remove__t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="32" relation="usage">
-          <edgelabel>event</edgelabel>
+        <childnode refid="14" relation="usage">
+          <edgelabel>event_id</edgelabel>
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
         </childnode>
       </node>
       <node id="22">
@@ -303,44 +323,6 @@
         </childnode>
         <childnode refid="12" relation="usage">
           <edgelabel>ctx</edgelabel>
-        </childnode>
-      </node>
-      <node id="32">
-        <label>dpp::scheduled_event</label>
-        <link refid="structdpp_1_1scheduled__event"/>
-        <childnode refid="14" relation="usage">
-          <edgelabel>channel_id</edgelabel>
-          <edgelabel>creator_id</edgelabel>
-          <edgelabel>entity_id</edgelabel>
-          <edgelabel>guild_id</edgelabel>
-          <edgelabel>id</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>description</edgelabel>
-          <edgelabel>image</edgelabel>
-          <edgelabel>name</edgelabel>
-        </childnode>
-        <childnode refid="13" relation="usage">
-          <edgelabel>scheduled_end_time</edgelabel>
-          <edgelabel>scheduled_start_time</edgelabel>
-        </childnode>
-        <childnode refid="33" relation="usage">
-          <edgelabel>privacy_level</edgelabel>
-        </childnode>
-        <childnode refid="34" relation="usage">
-          <edgelabel>status</edgelabel>
-        </childnode>
-        <childnode refid="35" relation="usage">
-          <edgelabel>entity_type</edgelabel>
-        </childnode>
-        <childnode refid="36" relation="usage">
-          <edgelabel>entity_metadata</edgelabel>
-        </childnode>
-        <childnode refid="21" relation="usage">
-          <edgelabel>creator</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>user_count</edgelabel>
         </childnode>
       </node>
       <node id="7">
@@ -411,15 +393,6 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
-        <label>event_entity_type</label>
-      </node>
-      <node id="33">
-        <label>event_privacy_level</label>
-      </node>
-      <node id="34">
-        <label>event_status</label>
-      </node>
       <node id="9">
         <label>int</label>
       </node>
@@ -465,15 +438,17 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="132" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="132" bodyend="143"/>
+    <location file="include/dpp/dispatcher.h" line="144" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="144" bodyend="167"/>
     <listofallmembers>
       <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>cancel_event</name></member>
-      <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1a666177abd9a95f51e02ded82576ebb83" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>event</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1a6a30b55dde5f359ff5fdae1714477e26" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>event_id</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>from</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1ac46b8704fe4f52559f8c69ced83f84fd" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>guild_id</name></member>
       <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1afb7df9e7e9d1b6ff1d13496dceac8d3f" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>guild_scheduled_event_user_remove_t</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>is_cancelled</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>raw_event</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__user__remove__t_1a83122271a5b333bfc6b0d25d4cc661ed" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_user_remove_t</scope><name>user_id</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

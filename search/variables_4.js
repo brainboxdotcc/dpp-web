@@ -20,10 +20,11 @@ var searchData=
   ['error_17',['error',['../structdpp_1_1http__request__completion__t.html#a6e8e54c80c5b439ddfd0ddb6f9e4039b',1,'dpp::http_request_completion_t']]],
   ['error_5fstatus_18',['ERROR_STATUS',['../namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87',1,'dpp']]],
   ['errors_19',['errors',['../structdpp_1_1error__info.html#ac84fd7b6e0344c9b282b13a43dfc40a0',1,'dpp::error_info']]],
-  ['event_20',['event',['../structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b',1,'dpp::audit_entry::event()'],['../structdpp_1_1guild__scheduled__event__user__add__t.html#a24ca0ea37941678ea24a60f785dd7143',1,'dpp::guild_scheduled_event_user_add_t::event()'],['../structdpp_1_1guild__scheduled__event__user__remove__t.html#a666177abd9a95f51e02ded82576ebb83',1,'dpp::guild_scheduled_event_user_remove_t::event()']]],
-  ['eventmap_21',['eventmap',['../namespacedpp.html#a04b7d06f713536bf48333522c9a4264b',1,'dpp']]],
-  ['executed_22',['executed',['../structtest__t.html#a337617aaab1f8f387723732467148792',1,'test_t']]],
-  ['expire_5fgrace_5fperiod_23',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
-  ['explicit_5fcontent_5ffilter_24',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]],
-  ['external_5fip_25',['external_ip',['../namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c',1,'dpp']]]
+  ['event_20',['event',['../structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b',1,'dpp::audit_entry']]],
+  ['event_5fid_21',['event_id',['../structdpp_1_1guild__scheduled__event__user__add__t.html#a340444fbb5e027722de705f27ad101ea',1,'dpp::guild_scheduled_event_user_add_t::event_id()'],['../structdpp_1_1guild__scheduled__event__user__remove__t.html#a6a30b55dde5f359ff5fdae1714477e26',1,'dpp::guild_scheduled_event_user_remove_t::event_id()']]],
+  ['eventmap_22',['eventmap',['../namespacedpp.html#a04b7d06f713536bf48333522c9a4264b',1,'dpp']]],
+  ['executed_23',['executed',['../structtest__t.html#a337617aaab1f8f387723732467148792',1,'test_t']]],
+  ['expire_5fgrace_5fperiod_24',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
+  ['explicit_5fcontent_5ffilter_25',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]],
+  ['external_5fip_26',['external_ip',['../namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c',1,'dpp']]]
 ];
