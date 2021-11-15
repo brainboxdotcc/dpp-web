@@ -55,7 +55,7 @@ var searchData=
   ['get_5fguild_5fwebhooks_52',['get_guild_webhooks',['../classdpp_1_1cluster.html#a8d352afcbc0430ca11576386278da7d0',1,'dpp::cluster']]],
   ['get_5fmarker_5fmetadata_53',['get_marker_metadata',['../classdpp_1_1discord__voice__client.html#a69727c9ff92f6e86f4ee51260de3d111',1,'dpp::discord_voice_client']]],
   ['get_5fmember_5fcount_54',['get_member_count',['../classdpp_1_1discord__client.html#ad74f28655846f30487d931bb1e3b1639',1,'dpp::discord_client']]],
-  ['get_5fmembers_55',['get_members',['../classdpp_1_1channel.html#ab817b065af6dab9a77e406908e368ae1',1,'dpp::channel']]],
+  ['get_5fmembers_55',['get_members',['../classdpp_1_1channel.html#ab817b065af6dab9a77e406908e368ae1',1,'dpp::channel::get_members()'],['../classdpp_1_1role.html#a60bd9c7e3901c18f5ec3c4f835e1c1de',1,'dpp::role::get_members()']]],
   ['get_5fmilliseconds_56',['get_milliseconds',['../namespacedetail.html#afe1ec4d4c96158dd196c3f3eee8d7ed1',1,'detail']]],
   ['get_5fmutex_57',['get_mutex',['../classdpp_1_1cache.html#aedc334e64ff058f9e82c66ed4e6e9dd8',1,'dpp::cache']]],
   ['get_5foriginal_5fresponse_58',['get_original_response',['../structdpp_1_1interaction__create__t.html#ad106ea02219af2a9bc35519f3bde6b36',1,'dpp::interaction_create_t']]],

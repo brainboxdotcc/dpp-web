@@ -79,5 +79,6 @@ var searchData=
   ['discord_5fclient_76',['discord_client',['../classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082',1,'dpp::discord_client']]],
   ['discord_5fvoice_5fclient_77',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#a5b344a5989d67f0f0caf5b52236055bf',1,'dpp::discord_voice_client']]],
   ['discover_5fip_78',['discover_ip',['../classdpp_1_1discord__voice__client.html#ae8e844ebb991eeb2d63771f6c5ea4938',1,'dpp::discord_voice_client']]],
-  ['dtemplate_79',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
+  ['download_79',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
+  ['dtemplate_80',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
 ];

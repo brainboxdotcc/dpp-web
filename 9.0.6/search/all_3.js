@@ -109,11 +109,12 @@ var searchData=
   ['dispatch_106',['dispatch',['../classdpp_1_1cluster.html#ad7dfd048a845235dda924b989c1383f3',1,'dpp::cluster']]],
   ['dispatcher_107',['dispatcher',['../classdpp_1_1dispatcher.html',1,'dpp']]],
   ['dm_108',['DM',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092aea2cd43492b5252e09a6c9b29c58d159',1,'dpp']]],
-  ['dpp_109',['dpp',['../namespacedpp.html',1,'']]],
-  ['dtemplate_110',['dtemplate',['../classdpp_1_1dtemplate.html',1,'dpp::dtemplate'],['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate::dtemplate()']]],
-  ['dtemplate_5fmap_111',['dtemplate_map',['../namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6',1,'dpp']]],
-  ['duration_112',['duration',['../structdpp_1_1voice__out__packet.html#ac6d63ea4575aadec0fff0d966c2c3191',1,'dpp::voice_out_packet']]],
-  ['events_113',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
-  ['utility_114',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]],
-  ['voice_5fstate_5fupdate_115',['voice_state_update',['../classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86',1,'dpp::discord_client']]]
+  ['download_109',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
+  ['dpp_110',['dpp',['../namespacedpp.html',1,'']]],
+  ['dtemplate_111',['dtemplate',['../classdpp_1_1dtemplate.html',1,'dpp::dtemplate'],['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate::dtemplate()']]],
+  ['dtemplate_5fmap_112',['dtemplate_map',['../namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6',1,'dpp']]],
+  ['duration_113',['duration',['../structdpp_1_1voice__out__packet.html#ac6d63ea4575aadec0fff0d966c2c3191',1,'dpp::voice_out_packet']]],
+  ['events_114',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
+  ['utility_115',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]],
+  ['voice_5fstate_5fupdate_116',['voice_state_update',['../classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86',1,'dpp::discord_client']]]
 ];

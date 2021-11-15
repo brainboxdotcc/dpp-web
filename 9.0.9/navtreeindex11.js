@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"frequently-asked-questions.html#autotoc_md80":[0,7,0,10],
+"frequently-asked-questions.html#autotoc_md81":[0,7,0,11],
 "frequently-asked-questions.html#autotoc_md82":[0,7,0,12],
 "frequently-asked-questions.html#autotoc_md83":[0,7,0,13],
 "frequently-asked-questions.html#autotoc_md84":[0,7,0,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da40d9dab24c746a49b1304e835968fc4f":[6,0,1,201,13],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da4381582918c56da2ce630bb91c755f81":[6,0,1,201,23],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da4b33465e53ba30f4325056066a3f62fd":[6,0,1,201,24],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da4c55bc638a92e4ca11304267f163b64c":[6,0,1,201,6],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da4c65b928d1e5adbb973e9fe333b4ebc5":[6,0,1,201,1],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da60c1a36d005177f08743aa2239bb09e1":[6,0,1,201,43]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da4c55bc638a92e4ca11304267f163b64c":[6,0,1,201,6]
 };
