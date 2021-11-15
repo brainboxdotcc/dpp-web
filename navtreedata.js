@@ -61,8 +61,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classdpp_1_1cluster.html#a06083a6cacaf7c4e41884cfb2a1078ab",
-"classdpp_1_1cluster.html#a5e4c89e99887415ff9309d704f2899ac",
-"classdpp_1_1cluster.html#ad253c2a68c5a1e78b880da7252a15814",
+"classdpp_1_1cluster.html#a5c677c0d5c059e87cc01ce598d49487d",
+"classdpp_1_1cluster.html#ad2273fdee237880d5e6b948198ffae52",
 "classdpp_1_1connection.html#aac95d3131d2975510b155b2a067c2740",
 "classdpp_1_1discord__voice__client.html#ae0e5e0799448bf29506bfcc21168d3fa",
 "classdpp_1_1events_1_1channel__update.html",
