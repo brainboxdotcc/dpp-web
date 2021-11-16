@@ -658,6 +658,7 @@ var namespacedpp =
       [ "p_manage_emojis_and_stickers", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad691e887806c25155195bee70d772311", null ],
       [ "p_use_application_commands", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae628847e2db7d4b3d986d6546efde812", null ],
       [ "p_request_to_speak", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa36d490ca8b4746a76b4982dfa03d7396", null ],
+      [ "p_manage_events", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa61f9317f8737db94a3dfaf0aedc0a5a4", null ],
       [ "p_manage_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b", null ],
       [ "p_create_public_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa32c172d9953bb8cf72dea1a33762eddb", null ],
       [ "p_create_private_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34", null ],

@@ -475,7 +475,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session resumed.  <a href="structdpp_1_1resumed__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1role.html">role</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a role within a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a>.  <a href="classdpp_1_1role.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a role within a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a>. Roles are combined via logical OR of the permission bitmasks, then channel-specific overrides can be applied on top, deny types apply a logic NOT to the bit mask, and allows apply a logical OR.  <a href="classdpp_1_1role.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1rtp__header.html">rtp_header</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an RTP packet. Size should always be exactly 12.  <a href="structdpp_1_1rtp__header.html#details">More...</a><br /></td></tr>
@@ -1242,24 +1242,24 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:af803e69eddf23c5862947295f3df5d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8b5573bf936e034d33a7238fe5604f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f">role_permissions</a> : uint64_t { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab">p_create_instant_invite</a> = 0x00000001
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae57cb8bf1870f74f2820f84255ca8104">p_kick_members</a> = 0x00000002
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6c9849fc7380edaf4ab8f169c2f4cc82">p_ban_members</a> = 0x00000004
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa43f62c967b9b16b49c315a0b23f86039">p_administrator</a> = 0x00000008
+&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab">p_create_instant_invite</a> = 0x0000000001
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae57cb8bf1870f74f2820f84255ca8104">p_kick_members</a> = 0x0000000002
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6c9849fc7380edaf4ab8f169c2f4cc82">p_ban_members</a> = 0x0000000004
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa43f62c967b9b16b49c315a0b23f86039">p_administrator</a> = 0x0000000008
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fadc5505422542cd70bc9b77d8ac672fbc">p_manage_channels</a> = 0x00000010
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa18b5244cfb592afca2659104e694aff4">p_manage_guild</a> = 0x00000020
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faef865fd4526947d2c9195386769a021c">p_add_reactions</a> = 0x00000040
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa1491e4917cb525e97df238b995cd57fc">p_view_audit_log</a> = 0x00000080
+&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fadc5505422542cd70bc9b77d8ac672fbc">p_manage_channels</a> = 0x0000000010
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa18b5244cfb592afca2659104e694aff4">p_manage_guild</a> = 0x0000000020
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faef865fd4526947d2c9195386769a021c">p_add_reactions</a> = 0x0000000040
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa1491e4917cb525e97df238b995cd57fc">p_view_audit_log</a> = 0x0000000080
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faff4b56b63ea738a7e62b3f7372662ff9">p_priority_speaker</a> = 0x00000100
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fafc77a3132f5a3f615ada9a19c486dec9">p_stream</a> = 0x00000200
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5ca9e89b32af806f7c0c179c3bdfb1ad">p_view_channel</a> = 0x00000400
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad410586df8dba6f62b7770f1d08d3b79">p_send_messages</a> = 0x00000800
+&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faff4b56b63ea738a7e62b3f7372662ff9">p_priority_speaker</a> = 0x0000000100
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fafc77a3132f5a3f615ada9a19c486dec9">p_stream</a> = 0x0000000200
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5ca9e89b32af806f7c0c179c3bdfb1ad">p_view_channel</a> = 0x0000000400
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad410586df8dba6f62b7770f1d08d3b79">p_send_messages</a> = 0x0000000800
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa3d621da851d24381179506bef573fae6">p_send_tts_messages</a> = 0x00001000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faefd6d8454b40cdaa9c01a86038559988">p_manage_messages</a> = 0x00002000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa1298ec58bdd34875c6ce723109637cf8">p_embed_links</a> = 0x00004000
+&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa3d621da851d24381179506bef573fae6">p_send_tts_messages</a> = 0x0000001000
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faefd6d8454b40cdaa9c01a86038559988">p_manage_messages</a> = 0x0000002000
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa1298ec58bdd34875c6ce723109637cf8">p_embed_links</a> = 0x0000004000
 , <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faf68496d326e48c4e8fb8396b56711650">p_attach_files</a> = 0x0000008000
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa808dee0401adefdb0ffcd0b5364f8369">p_read_message_history</a> = 0x0000010000
@@ -3634,7 +3634,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Various flags related to <a class="el" href="classdpp_1_1role.html" title="Represents a role within a dpp::guild.">dpp::role</a> </p>
+<p >Various flags related to <a class="el" href="classdpp_1_1role.html" title="Represents a role within a dpp::guild. Roles are combined via logical OR of the permission bitmasks,...">dpp::role</a> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e" name="af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e"></a>r_hoist&#160;</td><td class="fielddoc"><p >Hoisted role. </p>
 </td></tr>
@@ -3662,7 +3662,7 @@ Variables</h2></td></tr>
 
 <p>Represents the various discord permissions. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab" name="a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab"></a>p_create_instant_invite&#160;</td><td class="fielddoc"><p >allows creationboosters of instant invites </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab" name="a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab"></a>p_create_instant_invite&#160;</td><td class="fielddoc"><p >allows creation of instant invites </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fae57cb8bf1870f74f2820f84255ca8104" name="a2b8b5573bf936e034d33a7238fe5604fae57cb8bf1870f74f2820f84255ca8104"></a>p_kick_members&#160;</td><td class="fielddoc"><p >allows kicking members </p>
 </td></tr>
