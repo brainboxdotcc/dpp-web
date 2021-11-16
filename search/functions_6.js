@@ -109,7 +109,7 @@ var searchData=
   ['guild_5fevent_5fdelete_106',['guild_event_delete',['../classdpp_1_1cluster.html#a17bec34914c433a1105697dd5c24c7f2',1,'dpp::cluster']]],
   ['guild_5fevent_5fedit_107',['guild_event_edit',['../classdpp_1_1cluster.html#a36b82a96ca6b744388e9b290cbf775ff',1,'dpp::cluster']]],
   ['guild_5fevent_5fget_108',['guild_event_get',['../classdpp_1_1cluster.html#a5b8c168682519ee125ed0a48239c08ef',1,'dpp::cluster']]],
-  ['guild_5fevent_5fusers_5fget_109',['guild_event_users_get',['../classdpp_1_1cluster.html#ae5b4dd348fbb0054cebddb23e8e348d1',1,'dpp::cluster']]],
+  ['guild_5fevent_5fusers_5fget_109',['guild_event_users_get',['../classdpp_1_1cluster.html#a09f6a78b9b2ad6218ed1b8c7b044013a',1,'dpp::cluster']]],
   ['guild_5fevents_5fget_110',['guild_events_get',['../classdpp_1_1cluster.html#ae8554f93aed5fb84162af41c997fc1e3',1,'dpp::cluster']]],
   ['guild_5fget_111',['guild_get',['../classdpp_1_1cluster.html#a6a003669770549d25a951810bff0153e',1,'dpp::cluster']]],
   ['guild_5fget_5fban_112',['guild_get_ban',['../classdpp_1_1cluster.html#ad871d30ed11d0799da4a831ede8a7d95',1,'dpp::cluster']]],
