@@ -19,6 +19,7 @@ var classdpp_1_1role =
     [ "has_kick_members", "classdpp_1_1role.html#a7b76518e70c32391bbae2c80439a2a76", null ],
     [ "has_manage_channels", "classdpp_1_1role.html#a9630315e9c31cb53335e077140497ad7", null ],
     [ "has_manage_emojis_and_stickers", "classdpp_1_1role.html#a6d9b1dd5f966530c162b85409b00561c", null ],
+    [ "has_manage_events", "classdpp_1_1role.html#a04025962b533f09ea8a55d3c2815a442", null ],
     [ "has_manage_guild", "classdpp_1_1role.html#ad1de8e0ce44138225e9e7620b0834cb0", null ],
     [ "has_manage_messages", "classdpp_1_1role.html#a1a28c7f8685b1c0287067665aecf6efb", null ],
     [ "has_manage_nicknames", "classdpp_1_1role.html#a80c8b573fc16edfd685294e0326b38d2", null ],
