@@ -433,7 +433,8 @@ var namespacedpp =
       [ "g_role_icons", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa1471f351d0cbe0aaae622d50c8050bbf", null ],
       [ "g_seven_day_thread_archive", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa0ec280972e684f49e958e9b882e01760", null ],
       [ "g_three_day_thread_archive", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa58c9c9013412ff54052a11bae62d48fb", null ],
-      [ "g_ticketed_events", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa5fce362e803c63fe1ef9ebb2b06bb5a8", null ]
+      [ "g_ticketed_events", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa5fce362e803c63fe1ef9ebb2b06bb5a8", null ],
+      [ "g_channel_banners", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa35aa6bdeb78a4e8c80b4896c6fde3965", null ]
     ] ],
     [ "guild_member_flags", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30", [
       [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
