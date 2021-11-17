@@ -180,7 +180,15 @@ var hierarchy =
     ] ],
     [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
     [ "std::exception", null, [
-      [ "dpp::exception", "classdpp_1_1exception.html", null ]
+      [ "dpp::exception", "classdpp_1_1exception.html", [
+        [ "dpp::connection_exception", "classdpp_1_1connection__exception.html", null ],
+        [ "dpp::file_exception", "classdpp_1_1file__exception.html", null ],
+        [ "dpp::length_exception", "classdpp_1_1length__exception.html", null ],
+        [ "dpp::logic_exception", "classdpp_1_1logic__exception.html", null ],
+        [ "dpp::parse_exception", "classdpp_1_1parse__exception.html", null ],
+        [ "dpp::rest_exception", "classdpp_1_1rest__exception.html", null ],
+        [ "dpp::voice_exception", "classdpp_1_1voice__exception.html", null ]
+      ] ]
     ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [

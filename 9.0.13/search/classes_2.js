@@ -27,5 +27,6 @@ var searchData=
   ['component_5finteraction_24',['component_interaction',['../structdpp_1_1component__interaction.html',1,'dpp']]],
   ['confirmation_25',['confirmation',['../structdpp_1_1confirmation.html',1,'dpp']]],
   ['confirmation_5fcallback_5ft_26',['confirmation_callback_t',['../structdpp_1_1confirmation__callback__t.html',1,'dpp']]],
-  ['connection_27',['connection',['../classdpp_1_1connection.html',1,'dpp']]]
+  ['connection_27',['connection',['../classdpp_1_1connection.html',1,'dpp']]],
+  ['connection_5fexception_28',['connection_exception',['../classdpp_1_1connection__exception.html',1,'dpp']]]
 ];
