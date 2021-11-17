@@ -77,12 +77,12 @@ var NAVTREEINDEX =
 "structdetail_1_1chrono__formatter.html#a40ca3e085945aa66a6e2b499d4ef043b",
 "structdpp_1_1button__click__t.html#a7201727cb2e7a6d327c7f778d335b6bd",
 "structdpp_1_1embed.html#a573e0fd77066ee0aa4d9e5d8a0be3823",
-"structdpp_1_1guild__join__request__delete__t.html#a5afbcd36109734ad0fca14ec848b73b7",
-"structdpp_1_1http__request__completion__t.html#aca6bb7b51b265b5303d1ff9ad940b130",
-"structdpp_1_1message.html#ada2f9404e7dbb12b3de0a382c3733587",
-"structdpp_1_1prune.html#a948f8af4cf30f7e0a35978e36e1d3601",
-"structdpp_1_1sticker.html",
-"structdpp_1_1utility_1_1uptime.html#a67e56c2d2f868f561a48b5c3b7d5777e"
+"structdpp_1_1guild__join__request__delete__t.html#a9bfb8a3d492b2a7d9d176bea92d4694f",
+"structdpp_1_1integration__app.html",
+"structdpp_1_1message.html#adc283f0458df6fb0fc966c9f5040c19e",
+"structdpp_1_1prune.html#a981d093ed62361879e862c6e4b98556a",
+"structdpp_1_1sticker.html#a0d0f399bc06d635cab0fc0cab9603b6f",
+"structdpp_1_1utility_1_1uptime.html#aa4907af9819765cf8c97ac56b82c37b2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

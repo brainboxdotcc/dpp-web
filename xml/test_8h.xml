@@ -682,7 +682,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="53" column="9" bodyfile="src/test.h" bodystart="53" bodyend="-1"/>
+        <location file="src/test.h" line="54" column="9" bodyfile="src/test.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1a8f5ef4bc59689b2f802b1b712efc5e2d" prot="public" static="no">
         <name>singleparam_api_test_list</name>
@@ -712,7 +712,38 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="73" column="9" bodyfile="src/test.h" bodystart="73" bodyend="-1"/>
+        <location file="src/test.h" line="74" column="9" bodyfile="src/test.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test_8h_1a6b3beae0b7a5441d7ec9ebda2e75ce1e" prot="public" static="no">
+        <name>twoparam_api_test_list</name>
+        <param><defname>func_name</defname></param>
+        <param><defname>param1</defname></param>
+        <param><defname>param2</defname></param>
+        <param><defname>return_type</defname></param>
+        <param><defname>testname</defname></param>
+        <initializer>	set_test(testname, false); \
+	bot.func_name (param1, param2, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
+		if (!cc.is_error()) { \
+			return_type g = std::get&lt;return_type&gt;(cc.value); \
+			if (g.size() &gt; 0) { \
+				set_test(testname, true); \
+			} else { \
+				bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
+				set_test(testname, false); \
+			} \
+		} else { \
+			bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
+			set_test(testname, false); \
+		} \
+	});</initializer>
+        <briefdescription>
+<para>Perform a test of a REST base API call with two parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="94" column="9" bodyfile="src/test.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1a206ce9de3ecfb1220fa0d18c1022fdc1" prot="public" static="no">
         <name>noparam_api_test</name>
@@ -736,7 +767,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="93" column="9" bodyfile="src/test.h" bodystart="93" bodyend="-1"/>
+        <location file="src/test.h" line="115" column="9" bodyfile="src/test.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -825,6 +856,20 @@
         </inbodydescription>
         <location file="src/test.h" line="48" column="22" bodyfile="src/test.h" bodystart="48" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="test_8h_1af64a87b585eeeed23fd0284ef8dce151" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
+        <definition>const dpp::snowflake TEST_EVENT_ID</definition>
+        <argsstring></argsstring>
+        <name>TEST_EVENT_ID</name>
+        <initializer>= 909928577951203360</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="49" column="22" bodyfile="src/test.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="test_8h_1a921fdff07e87cb1ab3999fcc17e5bbf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -866,7 +911,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="115" column="6" bodyfile="src/unittest.cpp" bodystart="60" bodyend="74" declfile="src/test.h" declline="115" declcolumn="6"/>
+        <location file="src/test.h" line="137" column="6" bodyfile="src/unittest.cpp" bodystart="60" bodyend="74" declfile="src/test.h" declline="137" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1ad9a56733d9249067ebac92700c32088a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -892,7 +937,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="123" column="5" bodyfile="src/unittest.cpp" bodystart="84" bodyend="98" declfile="src/test.h" declline="123" declcolumn="5"/>
+        <location file="src/test.h" line="145" column="5" bodyfile="src/unittest.cpp" bodystart="84" bodyend="98" declfile="src/test.h" declline="145" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1a8c8b8c2c90a7f32d65b866b70d1facd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; uint8_t &gt;</type>
@@ -909,7 +954,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="131" column="13" bodyfile="src/unittest.cpp" bodystart="100" bodyend="111" declfile="src/test.h" declline="131" declcolumn="13"/>
+        <location file="src/test.h" line="153" column="13" bodyfile="src/unittest.cpp" bodystart="100" bodyend="111" declfile="src/test.h" declline="153" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1a02f493a9f72e6a291ca66cf24d0a4b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -928,7 +973,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="139" column="13" bodyfile="src/unittest.cpp" bodystart="113" bodyend="125" declfile="src/test.h" declline="139" declcolumn="13"/>
+        <location file="src/test.h" line="161" column="13" bodyfile="src/unittest.cpp" bodystart="113" bodyend="125" declfile="src/test.h" declline="161" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1a0f2c6a8b44bbd5ff4e0c204e6fcd2a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -942,7 +987,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="144" column="6" bodyfile="src/unittest.cpp" bodystart="127" bodyend="143" declfile="src/test.h" declline="144" declcolumn="6"/>
+        <location file="src/test.h" line="166" column="6" bodyfile="src/unittest.cpp" bodystart="127" bodyend="143" declfile="src/test.h" declline="166" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1a742b96fd1e4453bd852af2fe6131fff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -959,7 +1004,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="151" column="8" bodyfile="src/unittest.cpp" bodystart="76" bodyend="78" declfile="src/test.h" declline="151" declcolumn="8"/>
+        <location file="src/test.h" line="173" column="8" bodyfile="src/unittest.cpp" bodystart="76" bodyend="78" declfile="src/test.h" declline="173" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1af7ab092ab10d65db3b9051a12420fa52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -976,7 +1021,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="158" column="8" bodyfile="src/unittest.cpp" bodystart="80" bodyend="82" declfile="src/test.h" declline="158" declcolumn="8"/>
+        <location file="src/test.h" line="180" column="8" bodyfile="src/unittest.cpp" bodystart="80" bodyend="82" declfile="src/test.h" declline="180" declcolumn="8"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
