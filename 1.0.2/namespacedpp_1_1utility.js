@@ -14,5 +14,6 @@ var namespacedpp_1_1utility =
     [ "rgb", "namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb", null ],
     [ "time_f", "namespacedpp_1_1utility.html#a1184092d62c7ab561cb3f60a92f71b67", null ],
     [ "utf8len", "namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231", null ],
-    [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ]
+    [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
+    [ "validate", "namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86", null ]
 ];

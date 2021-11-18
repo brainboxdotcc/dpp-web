@@ -58,6 +58,7 @@ var namespacedpp =
     [ "etf_parser", "classdpp_1_1etf__parser.html", "classdpp_1_1etf__parser" ],
     [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
     [ "event_entities", "structdpp_1_1event__entities.html", "structdpp_1_1event__entities" ],
+    [ "event_member", "structdpp_1_1event__member.html", "structdpp_1_1event__member" ],
     [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
     [ "file_exception", "classdpp_1_1file__exception.html", "classdpp_1_1file__exception" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
@@ -182,11 +183,12 @@ var namespacedpp =
     [ "command_option_range", "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#a2e93faa45caea523126fea519a245e61", null ],
+    [ "confirmable_t", "namespacedpp.html#ac0547d37139fcef1d641fb3cccc631f3", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
     [ "event_handle", "namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e", null ],
+    [ "event_member_map", "namespacedpp.html#a912d2a5c3a763ffc462dfb7c4c7a0562", null ],
     [ "guild_map", "namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7", null ],
     [ "guild_member_map", "namespacedpp.html#a219aedbe5bf37835c4a65115fccba278", null ],
     [ "http_completion_event", "namespacedpp.html#ae3249e99494d04bb4be50341f474621e", null ],
@@ -389,13 +391,11 @@ var namespacedpp =
       [ "ett_atom_utf8_small", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c", null ]
     ] ],
     [ "event_entity_type", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834", [
-      [ "eet_none", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8", null ],
       [ "eet_stage_instance", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456", null ],
       [ "eet_voice", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59", null ],
       [ "eet_external", "namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52", null ]
     ] ],
     [ "event_privacy_level", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bd", [
-      [ "ep_public", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123", null ],
       [ "ep_guild_only", "namespacedpp.html#a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959", null ]
     ] ],
     [ "event_status", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60", [

@@ -462,6 +462,81 @@
         </inbodydescription>
         <location file="src/dpp/utility.cpp" line="301" column="13" bodyfile="src/dpp/utility.cpp" bodystart="301" bodyend="317" declfile="include/dpp/discord.h" declline="292" declcolumn="24"/>
       </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a56f2d7d280f78b086037c44e4536ea86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::utility::validate</definition>
+        <argsstring>(const std::string &amp;value, size_t _min, size_t _max, const std::string &amp;exception_message)</argsstring>
+        <name>validate</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_min</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_max</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>exception_message</declname>
+        </param>
+        <briefdescription>
+<para>Validate a string value In the event the length of the string is less than _min, then an exception of type dpp:<ref refid="classdpp_1_1length__exception" kindref="compound">length_exception</ref> will be thrown. If the string is longer than _max UTF8 codepoints it will be truncated to fit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to validate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum length </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum length </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception message to throw if value length &lt; _min </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string Validated string, truncated if neccessary. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1length__exception" kindref="compound">dpp::length_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if value UTF8 length &lt; _min </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/utility.cpp" line="319" column="13" bodyfile="src/dpp/utility.cpp" bodystart="319" bodyend="326" declfile="include/dpp/discord.h" declline="306" declcolumn="13"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Utility helper functions, generally for logging. </para>

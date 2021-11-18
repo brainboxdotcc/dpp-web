@@ -130,6 +130,7 @@ var annotated_dup =
       [ "etf_parser", "classdpp_1_1etf__parser.html", "classdpp_1_1etf__parser" ],
       [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
       [ "event_entities", "structdpp_1_1event__entities.html", "structdpp_1_1event__entities" ],
+      [ "event_member", "structdpp_1_1event__member.html", "structdpp_1_1event__member" ],
       [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
       [ "file_exception", "classdpp_1_1file__exception.html", "classdpp_1_1file__exception" ],
       [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],

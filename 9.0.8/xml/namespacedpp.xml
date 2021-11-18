@@ -58,6 +58,7 @@
     <innerclass refid="classdpp_1_1etf__parser" prot="public">dpp::etf_parser</innerclass>
     <innerclass refid="structdpp_1_1event__dispatch__t" prot="public">dpp::event_dispatch_t</innerclass>
     <innerclass refid="structdpp_1_1event__entities" prot="public">dpp::event_entities</innerclass>
+    <innerclass refid="structdpp_1_1event__member" prot="public">dpp::event_member</innerclass>
     <innerclass refid="classdpp_1_1exception" prot="public">dpp::exception</innerclass>
     <innerclass refid="classdpp_1_1file__exception" prot="public">dpp::file_exception</innerclass>
     <innerclass refid="structdpp_1_1gateway" prot="public">dpp::gateway</innerclass>
@@ -3781,15 +3782,6 @@
       <memberdef kind="enum" id="namespacedpp_1a6add40f37f2f043dede513edebaa67bd" prot="public" static="no" strong="no">
         <type>uint8_t</type>
         <name>event_privacy_level</name>
-        <enumvalue id="namespacedpp_1a6add40f37f2f043dede513edebaa67bdafa01eaba1c46c31c65c33635d7a37123" prot="public">
-          <name>ep_public</name>
-          <initializer>= 1</initializer>
-          <briefdescription>
-<para>The event is visible publicly, such as on Stage Discovery. </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
         <enumvalue id="namespacedpp_1a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959" prot="public">
           <name>ep_guild_only</name>
           <initializer>= 2</initializer>
@@ -3806,20 +3798,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/scheduled_event.h" line="31" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="31" bodyend="36"/>
+        <location file="include/dpp/scheduled_event.h" line="31" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="31" bodyend="34"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834" prot="public" static="no" strong="no">
         <type>uint8_t</type>
         <name>event_entity_type</name>
-        <enumvalue id="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834a771ac53041cd1e6fd362536f00b96bf8" prot="public">
-          <name>eet_none</name>
-          <initializer>= 0</initializer>
-          <briefdescription>
-<para>Not set. </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
         <enumvalue id="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456" prot="public">
           <name>eet_stage_instance</name>
           <initializer>= 1</initializer>
@@ -3854,7 +3837,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/scheduled_event.h" line="41" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="41" bodyend="50"/>
+        <location file="include/dpp/scheduled_event.h" line="39" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="39" bodyend="46"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a07ffd72c4bfd503c9c5980202c354e60" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -3902,7 +3885,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/scheduled_event.h" line="55" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="55" bodyend="64"/>
+        <location file="include/dpp/scheduled_event.h" line="51" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="51" bodyend="60"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1abc401d86119c6443bf72d736857c1a58" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -4842,9 +4825,9 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="42" column="18" bodyfile="include/dpp/cluster.h" bodystart="42" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a2e93faa45caea523126fea519a245e61" prot="public" static="no">
-        <type>std::variant&lt; <ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref>, <ref refid="structdpp_1_1message" kindref="compound">message</ref>, <ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref>, <ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">user_map</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>, <ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref>, <ref refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kindref="member">channel_map</ref>, <ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref>, <ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref>, <ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref>, <ref refid="classdpp_1_1role" kindref="compound">role</ref>, <ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref>, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref>, <ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref>, <ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref>, <ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref>, <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref>, <ref refid="namespacedpp_1a58e2720e1ccc11d2b3b1be2e18df79d9" kindref="member">emoji_map</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref>, <ref refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kindref="member">ban_map</ref>, <ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref>, <ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref>, <ref refid="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" kindref="member">integration_map</ref>, <ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref>, <ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref>, <ref refid="structdpp_1_1prune" kindref="compound">prune</ref>, <ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref>, <ref refid="structdpp_1_1gateway" kindref="compound">gateway</ref>, <ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref>, <ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>, <ref refid="classdpp_1_1auditlog" kindref="compound">auditlog</ref>, <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref>, <ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref>, <ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref>, <ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref>, <ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref>, <ref refid="classdpp_1_1application" kindref="compound">application</ref>, <ref refid="namespacedpp_1a9cd9f77c18810c3ad68e06b0625099bd" kindref="member">application_map</ref>, <ref refid="classdpp_1_1connection" kindref="compound">connection</ref>, <ref refid="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" kindref="member">connection_map</ref>, <ref refid="classdpp_1_1thread" kindref="compound">thread</ref>, <ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref>, <ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>, <ref refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kindref="member">scheduled_event_map</ref> &gt;</type>
-        <definition>typedef std::variant&lt; confirmation, message, message_map, user, user_identified, user_map, guild_member, guild_member_map, channel, channel_map, thread_member, thread_member_map, guild, guild_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog, slashcommand, slashcommand_map, stage_instance, sticker, sticker_map, sticker_pack, sticker_pack_map, application, application_map, connection, connection_map, thread, thread_map, scheduled_event, scheduled_event_map &gt; dpp::confirmable_t</definition>
+      <memberdef kind="typedef" id="namespacedpp_1ac0547d37139fcef1d641fb3cccc631f3" prot="public" static="no">
+        <type>std::variant&lt; <ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref>, <ref refid="structdpp_1_1message" kindref="compound">message</ref>, <ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref>, <ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">user_map</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>, <ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref>, <ref refid="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" kindref="member">channel_map</ref>, <ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref>, <ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref>, <ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref>, <ref refid="classdpp_1_1role" kindref="compound">role</ref>, <ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref>, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref>, <ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref>, <ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref>, <ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref>, <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref>, <ref refid="namespacedpp_1a58e2720e1ccc11d2b3b1be2e18df79d9" kindref="member">emoji_map</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref>, <ref refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kindref="member">ban_map</ref>, <ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref>, <ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref>, <ref refid="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" kindref="member">integration_map</ref>, <ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref>, <ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref>, <ref refid="structdpp_1_1prune" kindref="compound">prune</ref>, <ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref>, <ref refid="structdpp_1_1gateway" kindref="compound">gateway</ref>, <ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref>, <ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>, <ref refid="classdpp_1_1auditlog" kindref="compound">auditlog</ref>, <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref>, <ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref>, <ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref>, <ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref>, <ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref>, <ref refid="classdpp_1_1application" kindref="compound">application</ref>, <ref refid="namespacedpp_1a9cd9f77c18810c3ad68e06b0625099bd" kindref="member">application_map</ref>, <ref refid="classdpp_1_1connection" kindref="compound">connection</ref>, <ref refid="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" kindref="member">connection_map</ref>, <ref refid="classdpp_1_1thread" kindref="compound">thread</ref>, <ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref>, <ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref>, <ref refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kindref="member">scheduled_event_map</ref>, <ref refid="structdpp_1_1event__member" kindref="compound">event_member</ref>, <ref refid="namespacedpp_1a912d2a5c3a763ffc462dfb7c4c7a0562" kindref="member">event_member_map</ref> &gt;</type>
+        <definition>typedef std::variant&lt; confirmation, message, message_map, user, user_identified, user_map, guild_member, guild_member_map, channel, channel_map, thread_member, thread_member_map, guild, guild_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog, slashcommand, slashcommand_map, stage_instance, sticker, sticker_map, sticker_pack, sticker_pack_map, application, application_map, connection, connection_map, thread, thread_map, scheduled_event, scheduled_event_map, event_member, event_member_map &gt; dpp::confirmable_t</definition>
         <argsstring></argsstring>
         <name>confirmable_t</name>
         <briefdescription>
@@ -4854,7 +4837,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="132" column="2" bodyfile="include/dpp/cluster.h" bodystart="132" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="134" column="2" bodyfile="include/dpp/cluster.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &amp;)&gt;</type>
@@ -4869,7 +4852,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="222" column="23" bodyfile="include/dpp/cluster.h" bodystart="222" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="224" column="23" bodyfile="include/dpp/cluster.h" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
         <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
@@ -4883,7 +4866,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="227" column="23" bodyfile="include/dpp/cluster.h" bodystart="227" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="229" column="23" bodyfile="include/dpp/cluster.h" bodystart="229" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" prot="public" static="no">
         <type>size_t</type>
@@ -4897,7 +4880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="232" column="16" bodyfile="include/dpp/cluster.h" bodystart="232" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="234" column="16" bodyfile="include/dpp/cluster.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int64_t, bool, double &gt;</type>
@@ -5023,7 +5006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="662" column="28" bodyfile="include/dpp/guild.h" bodystart="662" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="671" column="28" bodyfile="include/dpp/guild.h" bodystart="671" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt;</type>
@@ -5037,7 +5020,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="710" column="28" bodyfile="include/dpp/guild.h" bodystart="710" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="719" column="28" bodyfile="include/dpp/guild.h" bodystart="719" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref> &gt;</type>
@@ -5180,7 +5163,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/scheduled_event.h" line="124" column="28" bodyfile="include/dpp/scheduled_event.h" bodystart="124" bodyend="-1"/>
+        <location file="include/dpp/scheduled_event.h" line="213" column="28" bodyfile="include/dpp/scheduled_event.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1a912d2a5c3a763ffc462dfb7c4c7a0562" prot="public" static="no">
+        <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="structdpp_1_1event__member" kindref="compound">event_member</ref> &gt;</type>
+        <definition>typedef std::unordered_map&lt;snowflake, event_member&gt; dpp::event_member_map</definition>
+        <argsstring></argsstring>
+        <name>event_member_map</name>
+        <briefdescription>
+<para>A group of scheduled event members. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/scheduled_event.h" line="218" column="28" bodyfile="include/dpp/scheduled_event.h" bodystart="218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, int64_t, bool, <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, double &gt;</type>
@@ -6702,7 +6699,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/guild.cpp" line="101" column="6" bodyfile="src/dpp/guild.cpp" bodystart="101" bodyend="125" declfile="include/dpp/guild.h" declline="707" declcolumn="6"/>
+        <location file="src/dpp/guild.cpp" line="101" column="6" bodyfile="src/dpp/guild.cpp" bodystart="101" bodyend="125" declfile="include/dpp/guild.h" declline="716" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1acd18d41e47000c592ab63b702335e184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

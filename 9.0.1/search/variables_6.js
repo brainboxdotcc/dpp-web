@@ -18,8 +18,9 @@ var searchData=
   ['guild_5frole_5fupdate_15',['guild_role_update',['../classdpp_1_1dispatcher.html#aea4881d3ba77988cad20feb09a34dbd5',1,'dpp::dispatcher']]],
   ['guild_5fscheduled_5fevent_5fcreate_16',['guild_scheduled_event_create',['../classdpp_1_1dispatcher.html#a61bba64b40bf175e3c0ac1c01de35e46',1,'dpp::dispatcher']]],
   ['guild_5fscheduled_5fevent_5fdelete_17',['guild_scheduled_event_delete',['../classdpp_1_1dispatcher.html#aa8ac70035ef49335b5589e9e133e1b10',1,'dpp::dispatcher']]],
-  ['guild_5fscheduled_5fevent_5fupdate_18',['guild_scheduled_event_update',['../classdpp_1_1dispatcher.html#a0ac476a8dcfe751c319279934aade9a8',1,'dpp::dispatcher']]],
-  ['guild_5fscheduled_5fevent_5fuser_5fadd_19',['guild_scheduled_event_user_add',['../classdpp_1_1dispatcher.html#a9b000b1d51d2aa602230bf25e91bb799',1,'dpp::dispatcher']]],
-  ['guild_5fscheduled_5fevent_5fuser_5fremove_20',['guild_scheduled_event_user_remove',['../classdpp_1_1dispatcher.html#acda8ea8caf42cf35e27c43a2f9ca22bd',1,'dpp::dispatcher']]],
-  ['guild_5fupdate_21',['guild_update',['../classdpp_1_1dispatcher.html#a60947c0324d974dc7ba87b8ba09f2b67',1,'dpp::dispatcher']]]
+  ['guild_5fscheduled_5fevent_5fid_18',['guild_scheduled_event_id',['../structdpp_1_1event__member.html#a87a64043879a5d82902e0e9c002a7b50',1,'dpp::event_member']]],
+  ['guild_5fscheduled_5fevent_5fupdate_19',['guild_scheduled_event_update',['../classdpp_1_1dispatcher.html#a0ac476a8dcfe751c319279934aade9a8',1,'dpp::dispatcher']]],
+  ['guild_5fscheduled_5fevent_5fuser_5fadd_20',['guild_scheduled_event_user_add',['../classdpp_1_1dispatcher.html#a9b000b1d51d2aa602230bf25e91bb799',1,'dpp::dispatcher']]],
+  ['guild_5fscheduled_5fevent_5fuser_5fremove_21',['guild_scheduled_event_user_remove',['../classdpp_1_1dispatcher.html#acda8ea8caf42cf35e27c43a2f9ca22bd',1,'dpp::dispatcher']]],
+  ['guild_5fupdate_22',['guild_update',['../classdpp_1_1dispatcher.html#a60947c0324d974dc7ba87b8ba09f2b67',1,'dpp::dispatcher']]]
 ];

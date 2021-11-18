@@ -35,6 +35,7 @@ var classdpp_1_1guild =
     [ "is_welcome_screen_enabled", "classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e", null ],
     [ "permission_overwrites", "classdpp_1_1guild.html#af9f1c71e0d491f2b34079888cadc9dcf", null ],
     [ "rehash_members", "classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac", null ],
+    [ "set_name", "classdpp_1_1guild.html#a2aa137d0bad0143fc22c0e9b45df2540", null ],
     [ "widget_enabled", "classdpp_1_1guild.html#afdfe3c2bd4025d259b42dedddc2301a1", null ],
     [ "afk_channel_id", "classdpp_1_1guild.html#afe32f37c1ac7dcde9933ba48e7b27130", null ],
     [ "afk_timeout", "classdpp_1_1guild.html#a624cb68654a2d32be54f4203835b0722", null ],
