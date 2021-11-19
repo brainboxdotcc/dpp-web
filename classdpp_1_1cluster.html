@@ -148,9 +148,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a13689440c9cc80279d415c563a6363c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0">log</a> (<a class="el" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">dpp::loglevel</a> severity, const std::string &amp;msg) const</td></tr>
 <tr class="memdesc:a13689440c9cc80279d415c563a6363c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message to whatever log the user is using. The logged message is passed up the chain to the on_log event in user code which can then do whatever it wants to do with it.  <a href="classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0">More...</a><br /></td></tr>
 <tr class="separator:a13689440c9cc80279d415c563a6363c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a574bdf50ef0642508c1aea7a5ebfc6be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a574bdf50ef0642508c1aea7a5ebfc6be">start_timer</a> (<a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a> callback, uint64_t frequency)</td></tr>
-<tr class="memdesc:a574bdf50ef0642508c1aea7a5ebfc6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a timer. Every <code>frequency</code> seconds, the callback is called.  <a href="classdpp_1_1cluster.html#a574bdf50ef0642508c1aea7a5ebfc6be">More...</a><br /></td></tr>
-<tr class="separator:a574bdf50ef0642508c1aea7a5ebfc6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a87a674519512fbf96b59f9b9cb8bb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5">start_timer</a> (<a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a> on_tick, uint64_t frequency, <a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a> on_stop={})</td></tr>
+<tr class="memdesc:a2a87a674519512fbf96b59f9b9cb8bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a timer. Every <code>frequency</code> seconds, the callback is called.  <a href="classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5">More...</a><br /></td></tr>
+<tr class="separator:a2a87a674519512fbf96b59f9b9cb8bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065dbc305d760d94f4ce0867f64777a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3">stop_timer</a> (<a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> t)</td></tr>
 <tr class="memdesc:a065dbc305d760d94f4ce0867f64777a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a ticking timer.  <a href="classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3">More...</a><br /></td></tr>
 <tr class="separator:a065dbc305d760d94f4ce0867f64777a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -11422,8 +11422,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a574bdf50ef0642508c1aea7a5ebfc6be" name="a574bdf50ef0642508c1aea7a5ebfc6be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a574bdf50ef0642508c1aea7a5ebfc6be">&#9670;&nbsp;</a></span>start_timer()</h2>
+<a id="a2a87a674519512fbf96b59f9b9cb8bb5" name="a2a87a674519512fbf96b59f9b9cb8bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a87a674519512fbf96b59f9b9cb8bb5">&#9670;&nbsp;</a></span>start_timer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11432,13 +11432,19 @@ Friends</h2></td></tr>
           <td class="memname"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> dpp::cluster::start_timer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
+          <td class="paramname"><em>on_tick</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>frequency</em>&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a>&#160;</td>
+          <td class="paramname"><em>on_stop</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -11451,7 +11457,8 @@ Friends</h2></td></tr>
 <p>Start a timer. Every <code>frequency</code> seconds, the callback is called. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">callback</td><td>The callback lambda to call for this timer </td></tr>
+    <tr><td class="paramname">on_tick</td><td>The callback lambda to call for this timer when ticked </td></tr>
+    <tr><td class="paramname">on_stop</td><td>The callback lambda to call for this timer when it is stopped </td></tr>
     <tr><td class="paramname">frequency</td><td>How often to tick the timer </td></tr>
   </table>
   </dd>
@@ -11505,11 +11512,12 @@ Friends</h2></td></tr>
 <p>Stop a ticking timer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>Timer handle received from <a class="el" href="classdpp_1_1cluster.html#a574bdf50ef0642508c1aea7a5ebfc6be" title="Start a timer. Every frequency seconds, the callback is called.">cluster::start_timer</a> </td></tr>
+    <tr><td class="paramname">t</td><td>Timer handle received from <a class="el" href="classdpp_1_1cluster.html#a2a87a674519512fbf96b59f9b9cb8bb5" title="Start a timer. Every frequency seconds, the callback is called.">cluster::start_timer</a> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if the timer was stopped, false if it did not exist </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the timer has an on_stop lambda, the on_stop lambda will be called. </dd></dl>
 
 </div>
 </div>
