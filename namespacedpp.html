@@ -565,6 +565,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread Update.  <a href="structdpp_1_1thread__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1timer__t.html">timer_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to store state of active timers.  <a href="structdpp_1_1timer__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uniondpp_1_1type__punner.html">type_punner</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A horrible structure used within the ETF parser to convert uint64_t to double and back. This is horrible, but it is the official way erlang term format does this, so we can't really mess with it much.  <a href="uniondpp_1_1type__punner.html#details">More...</a><br /></td></tr>
@@ -741,12 +742,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a51156024d6211aef2731770340cfe452"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">socket</a></td></tr>
 <tr class="separator:a51156024d6211aef2731770340cfe452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9ab0b8cf29978147a7df3947cd8f30"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a></td></tr>
+<tr class="memdesc:a8b9ab0b8cf29978147a7df3947cd8f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a timer handle. Returned from <a class="el" href="classdpp_1_1cluster.html#a574bdf50ef0642508c1aea7a5ebfc6be" title="Start a timer. Every frequency seconds, the callback is called.">cluster::start_timer</a> and used by <a class="el" href="classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3" title="Stop a ticking timer.">cluster::stop_timer</a>. This is obtained from a simple incrementing value, internally.  <a href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">More...</a><br /></td></tr>
 <tr class="separator:a8b9ab0b8cf29978147a7df3947cd8f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13d8465c3c643fdd87405fd115cd4964"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a></td></tr>
+<tr class="memdesc:a13d8465c3c643fdd87405fd115cd4964"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for a timer callback.  <a href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">More...</a><br /></td></tr>
 <tr class="separator:a13d8465c3c643fdd87405fd115cd4964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2600f973a908a2ecec6f6b0b998e880"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; time_t, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af2600f973a908a2ecec6f6b0b998e880">timer_next_t</a></td></tr>
+<tr class="memdesc:af2600f973a908a2ecec6f6b0b998e880"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of timers, ordered by earliest first so that map::begin() is always the soonest to be due.  <a href="namespacedpp.html#af2600f973a908a2ecec6f6b0b998e880">More...</a><br /></td></tr>
 <tr class="separator:af2600f973a908a2ecec6f6b0b998e880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81b406b8f9f9fa3da4b61fd006f13455"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455">timer_reg_t</a></td></tr>
+<tr class="memdesc:a81b406b8f9f9fa3da4b61fd006f13455"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of timers stored by handle.  <a href="namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455">More...</a><br /></td></tr>
 <tr class="separator:a81b406b8f9f9fa3da4b61fd006f13455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4073c92e19579c06591033a4a234e1"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1user.html">user</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a></td></tr>
 <tr class="separator:a1c4073c92e19579c06591033a4a234e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1643,6 +1648,10 @@ Variables</h2></td></tr>
 <tr class="memitem:a9e6c27b0fbcc58fe84087382096dca98"><td class="memItemLeft" align="right" valign="top">thread_local std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98">audit_reason</a></td></tr>
 <tr class="memdesc:a9e6c27b0fbcc58fe84087382096dca98"><td class="mdescLeft">&#160;</td><td class="mdescRight">An audit reason for each thread. These are per-thread to make the cluster methods like <a class="el" href="classdpp_1_1cluster.html#ab7a2958625740b4a6fde6643042c5f7e" title="Get the audit reason set for the next REST call to be made on this thread. This is set per-thread,...">cluster::get_audit_reason</a> and <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason</a> thread safe across multiple threads. You must ensure you set the audit reason on the same thread that makes the request associated with it.  <a href="namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98">More...</a><br /></td></tr>
 <tr class="separator:a9e6c27b0fbcc58fe84087382096dca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae16796831ecce90e670d207b0d0e1dd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae16796831ecce90e670d207b0d0e1dd8">lasthandle</a> = 1</td></tr>
+<tr class="separator:ae16796831ecce90e670d207b0d0e1dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835efcb82cabe1ec8cd844ea070cc340"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a835efcb82cabe1ec8cd844ea070cc340">timer_guard</a></td></tr>
+<tr class="separator:a835efcb82cabe1ec8cd844ea070cc340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04b7d06f713536bf48333522c9a4264b"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, <a class="el" href="classdpp_1_1events_1_1event.html">dpp::events::event</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a04b7d06f713536bf48333522c9a4264b">eventmap</a></td></tr>
 <tr class="separator:a04b7d06f713536bf48333522c9a4264b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d78d18a19b3fef2cf11ff545fee91c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c">external_ip</a></td></tr>
@@ -2268,6 +2277,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Represents a timer handle. Returned from <a class="el" href="classdpp_1_1cluster.html#a574bdf50ef0642508c1aea7a5ebfc6be" title="Start a timer. Every frequency seconds, the callback is called.">cluster::start_timer</a> and used by <a class="el" href="classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3" title="Stop a ticking timer.">cluster::stop_timer</a>. This is obtained from a simple incrementing value, internally. </p>
+
 </div>
 </div>
 <a id="a13d8465c3c643fdd87405fd115cd4964" name="a13d8465c3c643fdd87405fd115cd4964"></a>
@@ -2281,6 +2292,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The type for a timer callback. </p>
 
 </div>
 </div>
@@ -2296,6 +2309,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>A map of timers, ordered by earliest first so that map::begin() is always the soonest to be due. </p>
+
 </div>
 </div>
 <a id="a81b406b8f9f9fa3da4b61fd006f13455" name="a81b406b8f9f9fa3da4b61fd006f13455"></a>
@@ -2309,6 +2324,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A map of timers stored by handle. </p>
 
 </div>
 </div>
@@ -6064,6 +6081,20 @@ template&lt;class V , class E &gt; </div>
 
 </div>
 </div>
+<a id="ae16796831ecce90e670d207b0d0e1dd8" name="ae16796831ecce90e670d207b0d0e1dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16796831ecce90e670d207b0d0e1dd8">&#9670;&nbsp;</a></span>lasthandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> dpp::lasthandle = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeef0538fa45377c9b04fc944efec0f0c" name="aeef0538fa45377c9b04fc944efec0f0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeef0538fa45377c9b04fc944efec0f0c">&#9670;&nbsp;</a></span>MAXHEADERSIZE</h2>
 
@@ -6100,6 +6131,20 @@ template&lt;class V , class E &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">thread_local bool dpp::stop_event = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a835efcb82cabe1ec8cd844ea070cc340" name="a835efcb82cabe1ec8cd844ea070cc340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835efcb82cabe1ec8cd844ea070cc340">&#9670;&nbsp;</a></span>timer_guard</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex dpp::timer_guard</td>
         </tr>
       </table>
 </div><div class="memdoc">

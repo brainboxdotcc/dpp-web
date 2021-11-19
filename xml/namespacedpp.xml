@@ -5242,12 +5242,13 @@
         <argsstring></argsstring>
         <name>timer</name>
         <briefdescription>
+<para>Represents a timer handle. Returned from <ref refid="classdpp_1_1cluster_1a574bdf50ef0642508c1aea7a5ebfc6be" kindref="member">cluster::start_timer</ref> and used by <ref refid="classdpp_1_1cluster_1a065dbc305d760d94f4ce0867f64777a3" kindref="member">cluster::stop_timer</ref>. This is obtained from a simple incrementing value, internally. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="30" column="16" bodyfile="include/dpp/timer.h" bodystart="30" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="35" column="16" bodyfile="include/dpp/timer.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a13d8465c3c643fdd87405fd115cd4964" prot="public" static="no">
         <type>std::function&lt; void()&gt;</type>
@@ -5255,12 +5256,13 @@
         <argsstring></argsstring>
         <name>timer_callback_t</name>
         <briefdescription>
+<para>The type for a timer callback. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="32" column="23" bodyfile="include/dpp/timer.h" bodystart="32" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="40" column="23" bodyfile="include/dpp/timer.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1af2600f973a908a2ecec6f6b0b998e880" prot="public" static="no">
         <type>std::map&lt; time_t, <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref> * &gt;</type>
@@ -5268,12 +5270,13 @@
         <argsstring></argsstring>
         <name>timer_next_t</name>
         <briefdescription>
+<para>A map of timers, ordered by earliest first so that map::begin() is always the soonest to be due. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="40" column="18" bodyfile="include/dpp/timer.h" bodystart="40" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="56" column="18" bodyfile="include/dpp/timer.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a81b406b8f9f9fa3da4b61fd006f13455" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref>, <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref> * &gt;</type>
@@ -5281,12 +5284,13 @@
         <argsstring></argsstring>
         <name>timer_reg_t</name>
         <briefdescription>
+<para>A map of timers stored by handle. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="41" column="28" bodyfile="include/dpp/timer.h" bodystart="41" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="61" column="28" bodyfile="include/dpp/timer.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1user" kindref="compound">user</ref> &gt;</type>
@@ -5455,6 +5459,33 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/dpp/cluster.cpp" line="44" column="26" bodyfile="src/dpp/cluster.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1ae16796831ecce90e670d207b0d0e1dd8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
+        <definition>timer dpp::lasthandle</definition>
+        <argsstring></argsstring>
+        <name>lasthandle</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/cluster/timer.cpp" line="27" column="7" bodyfile="src/dpp/cluster/timer.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a835efcb82cabe1ec8cd844ea070cc340" prot="public" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex dpp::timer_guard</definition>
+        <argsstring></argsstring>
+        <name>timer_guard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/cluster/timer.cpp" line="28" column="12" bodyfile="src/dpp/cluster/timer.cpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a04b7d06f713536bf48333522c9a4264b" prot="public" static="no" mutable="no">
         <type>const std::map&lt; std::string, <ref refid="classdpp_1_1events_1_1event" kindref="compound">dpp::events::event</ref> * &gt;</type>

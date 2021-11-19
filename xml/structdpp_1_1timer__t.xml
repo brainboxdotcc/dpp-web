@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="35" column="7" bodyfile="include/dpp/timer.h" bodystart="35" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="46" column="7" bodyfile="include/dpp/timer.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1timer__t_1a44c96ea920324eda48be7a60a387ae38" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -28,7 +28,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="36" column="8" bodyfile="include/dpp/timer.h" bodystart="36" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="47" column="8" bodyfile="include/dpp/timer.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1timer__t_1a6f7bb27bdbd5454dde61d6c9371d7c74" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::timer_t::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="48" column="10" bodyfile="include/dpp/timer.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1timer__t_1af4f1b1442229aeaf08afce0ce781564b" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a13d8465c3c643fdd87405fd115cd4964" kindref="member">timer_callback_t</ref></type>
@@ -41,10 +54,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="37" column="18" bodyfile="include/dpp/timer.h" bodystart="37" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="49" column="18" bodyfile="include/dpp/timer.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Used internally to store state of active timers. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -59,22 +73,29 @@
           <edgelabel>next_tick</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
+          <edgelabel>frequency</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
           <edgelabel>callback</edgelabel>
         </childnode>
       </node>
       <node id="2">
         <label>size_t</label>
       </node>
-      <node id="4">
+      <node id="5">
         <label>function&lt; void()&gt;</label>
       </node>
       <node id="3">
         <label>time_t</label>
       </node>
+      <node id="4">
+        <label>uint64_t</label>
+      </node>
     </collaborationgraph>
-    <location file="include/dpp/timer.h" line="34" column="1" bodyfile="include/dpp/timer.h" bodystart="34" bodyend="38"/>
+    <location file="include/dpp/timer.h" line="45" column="1" bodyfile="include/dpp/timer.h" bodystart="45" bodyend="50"/>
     <listofallmembers>
       <member refid="structdpp_1_1timer__t_1af4f1b1442229aeaf08afce0ce781564b" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>callback</name></member>
+      <member refid="structdpp_1_1timer__t_1a6f7bb27bdbd5454dde61d6c9371d7c74" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>frequency</name></member>
       <member refid="structdpp_1_1timer__t_1a4f1f9ed3d687cad53d683d017f0f21a6" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>handle</name></member>
       <member refid="structdpp_1_1timer__t_1a44c96ea920324eda48be7a60a387ae38" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>next_tick</name></member>
     </listofallmembers>

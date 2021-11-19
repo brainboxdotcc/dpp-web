@@ -365,6 +365,7 @@
     <member refid="structdetail_1_1chrono__formatter_1a2209049fadfc704a5fee247950ae50af" kind="function"><name>on_duration_unit</name></member>
   </compound>
   <compound refid="classdpp_1_1cluster" kind="class"><name>dpp::cluster</name>
+    <member refid="classdpp_1_1cluster_1ab0d2c95628830a28f9abb09441914e40" kind="friend"><name>discord_client</name></member>
     <member refid="classdpp_1_1cluster_1a550e3f1bf003f129a04c6acc0fcaa914" kind="variable"><name>rest</name></member>
     <member refid="classdpp_1_1cluster_1a24896cc48e0c7bcafae0db762ea725d8" kind="variable"><name>raw_rest</name></member>
     <member refid="classdpp_1_1cluster_1a3334e0a3ee0cbf7e20a7a88e9b73f8df" kind="variable"><name>compressed</name></member>
@@ -387,6 +388,7 @@
     <member refid="classdpp_1_1cluster_1ae10466db79966215a799fc2a30010551" kind="variable"><name>ws_mode</name></member>
     <member refid="classdpp_1_1cluster_1aeb86e87c07ca3954e198741175fbcb5a" kind="function"><name>auto_shard</name></member>
     <member refid="classdpp_1_1cluster_1a5c4de3765be2073c0c39cc1c16481f83" kind="function"><name>tick_timers</name></member>
+    <member refid="classdpp_1_1cluster_1a39020c02b1a38a2abd412e651543d0b5" kind="function"><name>timer_reschedule</name></member>
     <member refid="classdpp_1_1cluster_1aac40e45e1ff8efb4e9ae75a7ecacc786" kind="function"><name>cluster</name></member>
     <member refid="classdpp_1_1cluster_1a6b0b523f89559b4ce204ca9ed9693d79" kind="function"><name>cluster</name></member>
     <member refid="classdpp_1_1cluster_1a2d957f52245734f6d44444af8380c952" kind="function"><name>cluster</name></member>
@@ -396,8 +398,8 @@
     <member refid="classdpp_1_1cluster_1af1e3f0868ece15373e81844dff719aa0" kind="function"><name>clear_audit_reason</name></member>
     <member refid="classdpp_1_1cluster_1ab7a2958625740b4a6fde6643042c5f7e" kind="function"><name>get_audit_reason</name></member>
     <member refid="classdpp_1_1cluster_1a13689440c9cc80279d415c563a6363c0" kind="function"><name>log</name></member>
-    <member refid="classdpp_1_1cluster_1af4709985448aabc7692721f67ebb8a46" kind="function"><name>start_timer</name></member>
-    <member refid="classdpp_1_1cluster_1a790f0d0686c07b19978389a36239c60b" kind="function"><name>stop_timer</name></member>
+    <member refid="classdpp_1_1cluster_1a574bdf50ef0642508c1aea7a5ebfc6be" kind="function"><name>start_timer</name></member>
+    <member refid="classdpp_1_1cluster_1a065dbc305d760d94f4ce0867f64777a3" kind="function"><name>stop_timer</name></member>
     <member refid="classdpp_1_1cluster_1ae6164d5543b7594731a980da9b0b2088" kind="function"><name>get_dm_channel</name></member>
     <member refid="classdpp_1_1cluster_1a3fc501cc0ebb334d09a7f4bb1ea6b3e6" kind="function"><name>set_dm_channel</name></member>
     <member refid="classdpp_1_1cluster_1af12b5b33ea156bde9977796858066a6b" kind="function"><name>uptime</name></member>
@@ -2671,6 +2673,7 @@
   <compound refid="structdpp_1_1timer__t" kind="struct"><name>dpp::timer_t</name>
     <member refid="structdpp_1_1timer__t_1a4f1f9ed3d687cad53d683d017f0f21a6" kind="variable"><name>handle</name></member>
     <member refid="structdpp_1_1timer__t_1a44c96ea920324eda48be7a60a387ae38" kind="variable"><name>next_tick</name></member>
+    <member refid="structdpp_1_1timer__t_1a6f7bb27bdbd5454dde61d6c9371d7c74" kind="variable"><name>frequency</name></member>
     <member refid="structdpp_1_1timer__t_1af4f1b1442229aeaf08afce0ce781564b" kind="variable"><name>callback</name></member>
   </compound>
   <compound refid="uniondpp_1_1type__punner" kind="union"><name>dpp::type_punner</name>
@@ -3604,6 +3607,8 @@
     <member refid="namespacedpp_1a2bc14e10038152802645f051c747dc2f" kind="variable"><name>guild_cache</name></member>
     <member refid="namespacedpp_1a3d2e114ba137f1f5bf6fd9782f41d2f2" kind="variable"><name>emoji_cache</name></member>
     <member refid="namespacedpp_1a9e6c27b0fbcc58fe84087382096dca98" kind="variable"><name>audit_reason</name></member>
+    <member refid="namespacedpp_1ae16796831ecce90e670d207b0d0e1dd8" kind="variable"><name>lasthandle</name></member>
+    <member refid="namespacedpp_1a835efcb82cabe1ec8cd844ea070cc340" kind="variable"><name>timer_guard</name></member>
     <member refid="namespacedpp_1a04b7d06f713536bf48333522c9a4264b" kind="variable"><name>eventmap</name></member>
     <member refid="namespacedpp_1af5d78d18a19b3fef2cf11ff545fee91c" kind="variable"><name>external_ip</name></member>
     <member refid="namespacedpp_1aa54eb501e23564f837949f0f5a574abb" kind="variable"><name>stop_event</name></member>
