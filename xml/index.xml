@@ -2670,6 +2670,14 @@
     <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
+  <compound refid="classdpp_1_1timed__listener" kind="class"><name>dpp::timed_listener</name>
+    <member refid="classdpp_1_1timed__listener_1ac8a2fd6903d87f6008c20a7f729b171b" kind="variable"><name>duration</name></member>
+    <member refid="classdpp_1_1timed__listener_1ac1d8ca69ca7585f4e8c09c64abe43fb4" kind="variable"><name>th</name></member>
+    <member refid="classdpp_1_1timed__listener_1a97d56b13131efc8a60affb21672e8652" kind="variable"><name>listener_handler</name></member>
+    <member refid="classdpp_1_1timed__listener_1a5b25cb9e5d0c25f6b3c15f6e7ae69336" kind="variable"><name>state</name></member>
+    <member refid="classdpp_1_1timed__listener_1a6b66feca199915368cc37b7ca69d7609" kind="function"><name>timed_listener</name></member>
+    <member refid="classdpp_1_1timed__listener_1a9c7c1c9b1fc081e0acb5cb77c061553c" kind="function"><name>~timed_listener</name></member>
+  </compound>
   <compound refid="structdpp_1_1timer__t" kind="struct"><name>dpp::timer_t</name>
     <member refid="structdpp_1_1timer__t_1a4f1f9ed3d687cad53d683d017f0f21a6" kind="variable"><name>handle</name></member>
     <member refid="structdpp_1_1timer__t_1a44c96ea920324eda48be7a60a387ae38" kind="variable"><name>next_tick</name></member>
@@ -3564,9 +3572,9 @@
     <member refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kind="typedef"><name>thread_map</name></member>
     <member refid="namespacedpp_1a13c4d4e6238396245b349e6a637897e0" kind="typedef"><name>shard_list</name></member>
     <member refid="namespacedpp_1ac0547d37139fcef1d641fb3cccc631f3" kind="typedef"><name>confirmable_t</name></member>
+    <member refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kind="typedef"><name>event_handle</name></member>
     <member refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kind="typedef"><name>command_completion_event_t</name></member>
     <member refid="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" kind="typedef"><name>json_encode_t</name></member>
-    <member refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kind="typedef"><name>event_handle</name></member>
     <member refid="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" kind="typedef"><name>command_parameter</name></member>
     <member refid="namespacedpp_1a6daf230da747f01eeaa36fd3d5e51a65" kind="typedef"><name>parameter_registration_t</name></member>
     <member refid="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" kind="typedef"><name>parameter_list_t</name></member>
@@ -3676,6 +3684,7 @@
     <member refid="namespacedpp_1a1b146099de6ccbd7135ffba167aee39d" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1a36d2c45cce93740da4da28ef18e90a52" kind="function"><name>from_json</name></member>
     <member refid="namespacedpp_1a981df68922716d97ba921fd2027c3513" kind="function"><name>tokenize</name></member>
+    <member refid="namespacedpp_1a951e53ab4cf1a2e8a186e2bdeb2ccb34" kind="function"><name>detach</name></member>
     <member refid="namespacedpp_1a0d8a2ea3b1c197d0d2277574186226c6" kind="function"><name>call_event</name></member>
   </compound>
   <compound refid="namespacedpp_1_1events" kind="namespace"><name>dpp::events</name>
@@ -3903,6 +3912,8 @@
     <member refid="sysdep_8h_1a2a26373ec11f93cd075ae437118c3580" kind="define"><name>store_32_bits</name></member>
     <member refid="sysdep_8h_1a4798ad8a29746ad210d55b18bfccd543" kind="define"><name>store_64_bits</name></member>
   </compound>
+  <compound refid="timed__listener_8h" kind="file"><name>timed_listener.h</name>
+  </compound>
   <compound refid="timer_8h" kind="file"><name>timer.h</name>
   </compound>
   <compound refid="user_8h" kind="file"><name>user.h</name>
@@ -3941,7 +3952,6 @@
   <compound refid="cluster_2channel_8cpp" kind="file"><name>cluster/channel.cpp</name>
   </compound>
   <compound refid="cluster_8cpp" kind="file"><name>cluster.cpp</name>
-    <member refid="cluster_8cpp_1af4f16f631aaf362b9f2374593ecffd24" kind="define"><name>detach</name></member>
   </compound>
   <compound refid="appcommand_8cpp" kind="file"><name>appcommand.cpp</name>
   </compound>

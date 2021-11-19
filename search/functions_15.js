@@ -33,11 +33,12 @@ var searchData=
   ['_7essl_5fclient_30',['~ssl_client',['../classdpp_1_1ssl__client.html#ab805a3cc483018dbba6b745f7fa6ff24',1,'dpp::ssl_client']]],
   ['_7estage_5finstance_31',['~stage_instance',['../structdpp_1_1stage__instance.html#a88af3a5f8cead59a98c9ae7a695695a7',1,'dpp::stage_instance']]],
   ['_7ethread_32',['~thread',['../classdpp_1_1thread.html#a080515539a7f6e6f48bf097f119f51ac',1,'dpp::thread']]],
-  ['_7euser_33',['~user',['../classdpp_1_1user.html#a7787310b4607e5e3eb61c2b504bae94e',1,'dpp::user']]],
-  ['_7euser_5fidentified_34',['~user_identified',['../classdpp_1_1user__identified.html#a9cb53a8e30f9782cd8efc882337e887b',1,'dpp::user_identified']]],
-  ['_7evoiceconn_35',['~voiceconn',['../classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98',1,'dpp::voiceconn']]],
-  ['_7evoiceregion_36',['~voiceregion',['../classdpp_1_1voiceregion.html#ab08402a1538913ad465b2c36cd4dbf92',1,'dpp::voiceregion']]],
-  ['_7evoicestate_37',['~voicestate',['../classdpp_1_1voicestate.html#a29e5fdd1ec931b6ad1feed0094a1225f',1,'dpp::voicestate']]],
-  ['_7ewebhook_38',['~webhook',['../classdpp_1_1webhook.html#aa5f6e90d2be315fd438b827e25447a36',1,'dpp::webhook']]],
-  ['_7ewebsocket_5fclient_39',['~websocket_client',['../classdpp_1_1websocket__client.html#aea281ac4eef3336e3b78227beb21e4ef',1,'dpp::websocket_client']]]
+  ['_7etimed_5flistener_33',['~timed_listener',['../classdpp_1_1timed__listener.html#a9c7c1c9b1fc081e0acb5cb77c061553c',1,'dpp::timed_listener']]],
+  ['_7euser_34',['~user',['../classdpp_1_1user.html#a7787310b4607e5e3eb61c2b504bae94e',1,'dpp::user']]],
+  ['_7euser_5fidentified_35',['~user_identified',['../classdpp_1_1user__identified.html#a9cb53a8e30f9782cd8efc882337e887b',1,'dpp::user_identified']]],
+  ['_7evoiceconn_36',['~voiceconn',['../classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98',1,'dpp::voiceconn']]],
+  ['_7evoiceregion_37',['~voiceregion',['../classdpp_1_1voiceregion.html#ab08402a1538913ad465b2c36cd4dbf92',1,'dpp::voiceregion']]],
+  ['_7evoicestate_38',['~voicestate',['../classdpp_1_1voicestate.html#a29e5fdd1ec931b6ad1feed0094a1225f',1,'dpp::voicestate']]],
+  ['_7ewebhook_39',['~webhook',['../classdpp_1_1webhook.html#aa5f6e90d2be315fd438b827e25447a36',1,'dpp::webhook']]],
+  ['_7ewebsocket_5fclient_40',['~websocket_client',['../classdpp_1_1websocket__client.html#aea281ac4eef3336e3b78227beb21e4ef',1,'dpp::websocket_client']]]
 ];

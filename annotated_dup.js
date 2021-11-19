@@ -221,6 +221,7 @@ var annotated_dup =
       [ "thread_members_update_t", "structdpp_1_1thread__members__update__t.html", "structdpp_1_1thread__members__update__t" ],
       [ "thread_metadata", "structdpp_1_1thread__metadata.html", "structdpp_1_1thread__metadata" ],
       [ "thread_update_t", "structdpp_1_1thread__update__t.html", "structdpp_1_1thread__update__t" ],
+      [ "timed_listener", "classdpp_1_1timed__listener.html", "classdpp_1_1timed__listener" ],
       [ "timer_t", "structdpp_1_1timer__t.html", "structdpp_1_1timer__t" ],
       [ "type_punner", "uniondpp_1_1type__punner.html", "uniondpp_1_1type__punner" ],
       [ "typing_start_t", "structdpp_1_1typing__start__t.html", "structdpp_1_1typing__start__t" ],

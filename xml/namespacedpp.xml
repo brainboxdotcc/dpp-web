@@ -149,6 +149,7 @@
     <innerclass refid="structdpp_1_1thread__members__update__t" prot="public">dpp::thread_members_update_t</innerclass>
     <innerclass refid="structdpp_1_1thread__metadata" prot="public">dpp::thread_metadata</innerclass>
     <innerclass refid="structdpp_1_1thread__update__t" prot="public">dpp::thread_update_t</innerclass>
+    <innerclass refid="classdpp_1_1timed__listener" prot="public">dpp::timed_listener</innerclass>
     <innerclass refid="structdpp_1_1timer__t" prot="public">dpp::timer_t</innerclass>
     <innerclass refid="uniondpp_1_1type__punner" prot="public">dpp::type_punner</innerclass>
     <innerclass refid="structdpp_1_1typing__start__t" prot="public">dpp::typing_start_t</innerclass>
@@ -4840,6 +4841,20 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="135" column="2" bodyfile="include/dpp/cluster.h" bodystart="135" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" prot="public" static="no">
+        <type>size_t</type>
+        <definition>typedef size_t dpp::event_handle</definition>
+        <argsstring></argsstring>
+        <name>event_handle</name>
+        <briefdescription>
+<para>A returned event handle for an event which was attached. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="140" column="16" bodyfile="include/dpp/cluster.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &amp;)&gt;</type>
         <definition>typedef std::function&lt; void(const confirmation_callback_t &amp;)&gt; dpp::command_completion_event_t</definition>
@@ -4853,7 +4868,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="225" column="23" bodyfile="include/dpp/cluster.h" bodystart="225" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="248" column="23" bodyfile="include/dpp/cluster.h" bodystart="248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
         <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
@@ -4867,21 +4882,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="230" column="23" bodyfile="include/dpp/cluster.h" bodystart="230" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" prot="public" static="no">
-        <type>size_t</type>
-        <definition>typedef size_t dpp::event_handle</definition>
-        <argsstring></argsstring>
-        <name>event_handle</name>
-        <briefdescription>
-<para>A returned event handle for an event which was attached. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="235" column="16" bodyfile="include/dpp/cluster.h" bodystart="235" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="253" column="23" bodyfile="include/dpp/cluster.h" bodystart="253" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int64_t, bool, double &gt;</type>
@@ -7390,6 +7391,62 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/dpp/wsclient.cpp" line="127" column="13" bodyfile="src/dpp/wsclient.cpp" bodystart="127" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a951e53ab4cf1a2e8a186e2bdeb2ccb34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool dpp::detach</definition>
+        <argsstring>(T container, const event_handle ptr)</argsstring>
+        <name>detach</name>
+        <param>
+          <type>T</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Detatch a listener from an event container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event container type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>container to detach from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handle to listener to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool True if successfully removed listener </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="150" column="17" bodyfile="include/dpp/cluster.h" bodystart="150" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a0d8a2ea3b1c197d0d2277574186226c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
