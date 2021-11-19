@@ -44,7 +44,7 @@ var searchData=
   ['user_5flimit_41',['user_limit',['../classdpp_1_1channel.html#a79251adb1bc9dc6780af2afd21499769',1,'dpp::channel']]],
   ['user_5fmap_42',['user_map',['../namespacedpp.html#a1c4073c92e19579c06591033a4a234e1',1,'dpp']]],
   ['user_5fpolicy_43',['user_policy',['../structdpp_1_1cache__policy__t.html#af54025fb4062c038de9fa20d02101d36',1,'dpp::cache_policy_t']]],
-  ['user_5fupdate_44',['user_update',['../classdpp_1_1events_1_1user__update.html',1,'dpp::events::user_update'],['../classdpp_1_1dispatcher.html#afaa94db14876c40ca92069f5982ddf85',1,'dpp::dispatcher::user_update()']]],
+  ['user_5fupdate_44',['user_update',['../classdpp_1_1events_1_1user__update.html',1,'dpp::events::user_update'],['../classdpp_1_1dispatcher.html#ac1788ad2e0273a67a16fedb6f60ce705',1,'dpp::dispatcher::user_update()']]],
   ['user_5fupdate_5ft_45',['user_update_t',['../structdpp_1_1user__update__t.html',1,'dpp::user_update_t'],['../structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e',1,'dpp::user_update_t::user_update_t()']]],
   ['username_46',['username',['../classdpp_1_1user.html#a4e72b2e5ac7d5539fdae64be6e01246c',1,'dpp::user']]],
   ['users_47',['users',['../structdpp_1_1message_1_1allowed__ref.html#a8e22776356f1b3029224dae4679eff22',1,'dpp::message::allowed_ref::users()'],['../structdpp_1_1command__resolved.html#a253cd8cb71207dbdf0b8f687218f24e3',1,'dpp::command_resolved::users()']]],

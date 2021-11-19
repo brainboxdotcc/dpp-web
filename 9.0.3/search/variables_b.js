@@ -8,11 +8,12 @@ var searchData=
   ['last_5fpin_5ftimestamp_5',['last_pin_timestamp',['../classdpp_1_1channel.html#ae33f863adef0f0cc89a7324cd93bc752',1,'dpp::channel']]],
   ['last_5fseq_6',['last_seq',['../classdpp_1_1discord__client.html#a8dc9f84c9b65a58f8e9eea6326a424bd',1,'dpp::discord_client']]],
   ['last_5ftick_7',['last_tick',['../classdpp_1_1ssl__client.html#a61f0bbeefa25de686ac93887afa65895',1,'dpp::ssl_client']]],
-  ['latency_8',['latency',['../structdpp_1_1http__request__completion__t.html#aa39b263a9671e1b106429c6e440faaad',1,'dpp::http_request_completion_t']]],
-  ['length_9',['length',['../structdpp_1_1etf__buffer.html#aceff1ab2a5802b0146d1db0a772aab32',1,'dpp::etf_buffer']]],
-  ['limit_10',['limit',['../structdpp_1_1bucket__t.html#a092991348f1588a752cae246db4b30f6',1,'dpp::bucket_t']]],
-  ['locale_11',['locale',['../classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b',1,'dpp::user_identified']]],
-  ['location_12',['location',['../structdpp_1_1event__entities.html#a55ed07b7c6e84678dfee16c71973a3bb',1,'dpp::event_entities']]],
-  ['locked_13',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
-  ['log_14',['log',['../classdpp_1_1dispatcher.html#ade7ab56cf5c74ffed80fcee69a66c144',1,'dpp::dispatcher']]]
+  ['lasthandle_8',['lasthandle',['../namespacedpp.html#ae16796831ecce90e670d207b0d0e1dd8',1,'dpp']]],
+  ['latency_9',['latency',['../structdpp_1_1http__request__completion__t.html#aa39b263a9671e1b106429c6e440faaad',1,'dpp::http_request_completion_t']]],
+  ['length_10',['length',['../structdpp_1_1etf__buffer.html#aceff1ab2a5802b0146d1db0a772aab32',1,'dpp::etf_buffer']]],
+  ['limit_11',['limit',['../structdpp_1_1bucket__t.html#a092991348f1588a752cae246db4b30f6',1,'dpp::bucket_t']]],
+  ['locale_12',['locale',['../classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b',1,'dpp::user_identified']]],
+  ['location_13',['location',['../structdpp_1_1event__entities.html#a55ed07b7c6e84678dfee16c71973a3bb',1,'dpp::event_entities']]],
+  ['locked_14',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
+  ['log_15',['log',['../classdpp_1_1dispatcher.html#a3c5d2123f95b3fa326cecbadfb21fd5e',1,'dpp::dispatcher']]]
 ];

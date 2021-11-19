@@ -90,7 +90,7 @@ var searchData=
   ['presence_5fflags_87',['presence_flags',['../namespacedpp.html#a953f1484a5140481ffab2b248618fb22',1,'dpp']]],
   ['presence_5fmap_88',['presence_map',['../namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f',1,'dpp']]],
   ['presence_5fstatus_89',['presence_status',['../namespacedpp.html#a172aa830689e55f4bba337de1592db96',1,'dpp']]],
-  ['presence_5fupdate_90',['presence_update',['../classdpp_1_1events_1_1presence__update.html',1,'dpp::events::presence_update'],['../classdpp_1_1dispatcher.html#aec853af28f121c4a1cac2dd83909002b',1,'dpp::dispatcher::presence_update()']]],
+  ['presence_5fupdate_90',['presence_update',['../classdpp_1_1events_1_1presence__update.html',1,'dpp::events::presence_update'],['../classdpp_1_1dispatcher.html#a98d5d58c75a3b74066bc7d8f11411b80',1,'dpp::dispatcher::presence_update()']]],
   ['presence_5fupdate_5ft_91',['presence_update_t',['../structdpp_1_1presence__update__t.html',1,'dpp::presence_update_t'],['../structdpp_1_1presence__update__t.html#a6c58850853d61ab933e0fc5abb29ad15',1,'dpp::presence_update_t::presence_update_t()']]],
   ['primary_5fsku_5fid_92',['primary_sku_id',['../classdpp_1_1application.html#a7aa6f427a79d6efb30d22f34dbecae98',1,'dpp::application']]],
   ['privacy_5flevel_93',['privacy_level',['../structdpp_1_1stage__instance.html#ae198d6dba53766e0375c1705165ddca7',1,'dpp::stage_instance::privacy_level()'],['../structdpp_1_1scheduled__event.html#a52f6049445ba9debcbdb1ec896c0fcb1',1,'dpp::scheduled_event::privacy_level()']]],

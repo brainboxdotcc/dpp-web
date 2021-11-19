@@ -13,7 +13,8 @@ var searchData=
   ['footer_10',['footer',['../structdpp_1_1embed.html#a431c219b7e195e151c19dfbebc09e13a',1,'dpp::embed']]],
   ['format_5ftype_11',['format_type',['../structdpp_1_1sticker.html#ad7972e12390ac0eea0027794e0c0fca6',1,'dpp::sticker']]],
   ['format_5fversion_12',['FORMAT_VERSION',['../namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29',1,'dpp']]],
-  ['friend_5fsync_13',['friend_sync',['../classdpp_1_1connection.html#a131edac1a872df01bea43ab8adf9ff63',1,'dpp::connection']]],
-  ['from_14',['from',['../structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db',1,'dpp::event_dispatch_t']]],
-  ['func_15',['func',['../structdpp_1_1command__info__t.html#ab5d9fb4cdeaf92805125f15a06459fe2',1,'dpp::command_info_t']]]
+  ['frequency_13',['frequency',['../structdpp_1_1timer__t.html#a6f7bb27bdbd5454dde61d6c9371d7c74',1,'dpp::timer_t']]],
+  ['friend_5fsync_14',['friend_sync',['../classdpp_1_1connection.html#a131edac1a872df01bea43ab8adf9ff63',1,'dpp::connection']]],
+  ['from_15',['from',['../structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db',1,'dpp::event_dispatch_t']]],
+  ['func_16',['func',['../structdpp_1_1command__info__t.html#ab5d9fb4cdeaf92805125f15a06459fe2',1,'dpp::command_info_t']]]
 ];
