@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"md_docpages_02_build.html":[1],
+"md_docpages_02_building_a_bot.html":[2],
 "md_docpages_03_example_programs.html":[3],
 "md_docpages_04_advanced_reference.html":[4],
 "namespacedetail.html":[6,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "namespacedpp.html#a4524e2a056f2d16ba591516fbf275235":[6,0,1,178],
 "namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e":[6,0,1,189],
 "namespacedpp.html#a47f79e1142def583c59df70b1382319f":[6,0,1,238],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3":[6,0,1,238,2],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce":[6,0,1,238,1],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479":[6,0,1,238,0]
+"namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3":[6,0,1,238,2]
 };

@@ -15,5 +15,5 @@ var searchData=
   ['locale_12',['locale',['../classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b',1,'dpp::user_identified']]],
   ['location_13',['location',['../structdpp_1_1event__entities.html#a55ed07b7c6e84678dfee16c71973a3bb',1,'dpp::event_entities']]],
   ['locked_14',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
-  ['log_15',['log',['../classdpp_1_1dispatcher.html#ade7ab56cf5c74ffed80fcee69a66c144',1,'dpp::dispatcher']]]
+  ['log_15',['log',['../classdpp_1_1dispatcher.html#a3c5d2123f95b3fa326cecbadfb21fd5e',1,'dpp::dispatcher']]]
 ];

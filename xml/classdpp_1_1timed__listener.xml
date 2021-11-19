@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3322" column="9" bodyfile="include/dpp/cluster.h" bodystart="3322" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3332" column="9" bodyfile="include/dpp/cluster.h" bodystart="3332" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1timed__listener_1a9e103aec81167c7a9aa24766f8804ae7" prot="private" static="no" mutable="no">
         <type>time_t</type>
@@ -39,11 +39,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3323" column="8" bodyfile="include/dpp/cluster.h" bodystart="3323" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3333" column="8" bodyfile="include/dpp/cluster.h" bodystart="3333" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1timed__listener_1af824efa8af5aa8bb3c5190654dbf357f" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; attached_event &gt; &amp;</type>
-        <definition>std::vector&lt;attached_event&gt;&amp; dpp::timed_listener&lt; stored_state, attached_event, listening_function &gt;::ev</definition>
+      <memberdef kind="variable" id="classdpp_1_1timed__listener_1ab67a36910a4f5568cc4fc110ae670ad2" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, attached_event &gt; &amp;</type>
+        <definition>std::map&lt;event_handle, attached_event&gt;&amp; dpp::timed_listener&lt; stored_state, attached_event, listening_function &gt;::ev</definition>
         <argsstring></argsstring>
         <name>ev</name>
         <briefdescription>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3324" column="13" bodyfile="include/dpp/cluster.h" bodystart="3324" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3334" column="10" bodyfile="include/dpp/cluster.h" bodystart="3334" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1timed__listener_1a14065dd704c279a26ef31a95b2f0a928" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3325" column="7" bodyfile="include/dpp/cluster.h" bodystart="3325" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3335" column="7" bodyfile="include/dpp/cluster.h" bodystart="3335" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1timed__listener_1a7229040f223e350ff50ff3018021b08a" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3326" column="14" bodyfile="include/dpp/cluster.h" bodystart="3326" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3336" column="14" bodyfile="include/dpp/cluster.h" bodystart="3336" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1timed__listener_1ab9012d72b95f8e583782c2ab98f8f3c4" prot="private" static="no" mutable="no">
         <type>stored_state</type>
@@ -91,14 +91,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3327" column="14" bodyfile="include/dpp/cluster.h" bodystart="3327" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3337" column="14" bodyfile="include/dpp/cluster.h" bodystart="3337" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1timed__listener_1afb5880b13615ce3c04661530f94ffcd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1timed__listener_1a1dcbefa5936948822977a1092f39287b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>dpp::timed_listener&lt; stored_state, attached_event, listening_function &gt;::timed_listener</definition>
-        <argsstring>(cluster *cl, time_t dur, std::vector&lt; attached_event &gt; &amp;event, listening_function listener, stored_state state)</argsstring>
+        <argsstring>(cluster *cl, time_t dur, std::map&lt; event_handle, attached_event &gt; &amp;event, listening_function listener, stored_state state)</argsstring>
         <name>timed_listener</name>
         <param>
           <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
@@ -109,7 +109,7 @@
           <declname>dur</declname>
         </param>
         <param>
-          <type>std::vector&lt; attached_event &gt; &amp;</type>
+          <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, attached_event &gt; &amp;</type>
           <declname>event</declname>
         </param>
         <param>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3339" column="1" bodyfile="include/dpp/cluster.h" bodystart="3339" bodyend="3350"/>
+        <location file="include/dpp/cluster.h" line="3349" column="1" bodyfile="include/dpp/cluster.h" bodystart="3349" bodyend="3363"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1timed__listener_1acf6198856967cf4f88043774d8a2808c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -183,22 +183,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3355" column="1" bodyfile="include/dpp/cluster.h" bodystart="3355" bodyend="3358"/>
+        <location file="include/dpp/cluster.h" line="3368" column="1" bodyfile="include/dpp/cluster.h" bodystart="3368" bodyend="3372"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/dpp/cluster.h" line="3319" column="16" bodyfile="include/dpp/cluster.h" bodystart="3320" bodyend="3359"/>
+    <location file="include/dpp/cluster.h" line="3329" column="16" bodyfile="include/dpp/cluster.h" bodystart="3330" bodyend="3373"/>
     <listofallmembers>
       <member refid="classdpp_1_1timed__listener_1a9e103aec81167c7a9aa24766f8804ae7" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>duration</name></member>
-      <member refid="classdpp_1_1timed__listener_1af824efa8af5aa8bb3c5190654dbf357f" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>ev</name></member>
+      <member refid="classdpp_1_1timed__listener_1ab67a36910a4f5568cc4fc110ae670ad2" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>ev</name></member>
       <member refid="classdpp_1_1timed__listener_1a7229040f223e350ff50ff3018021b08a" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>listener_handler</name></member>
       <member refid="classdpp_1_1timed__listener_1a76d6b9f0b4506f69af2766441c6524f3" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>owner</name></member>
       <member refid="classdpp_1_1timed__listener_1ab9012d72b95f8e583782c2ab98f8f3c4" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>state</name></member>
       <member refid="classdpp_1_1timed__listener_1a14065dd704c279a26ef31a95b2f0a928" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>th</name></member>
-      <member refid="classdpp_1_1timed__listener_1afb5880b13615ce3c04661530f94ffcd4" prot="public" virt="non-virtual"><scope>dpp::timed_listener</scope><name>timed_listener</name></member>
+      <member refid="classdpp_1_1timed__listener_1a1dcbefa5936948822977a1092f39287b" prot="public" virt="non-virtual"><scope>dpp::timed_listener</scope><name>timed_listener</name></member>
       <member refid="classdpp_1_1timed__listener_1acf6198856967cf4f88043774d8a2808c" prot="public" virt="non-virtual"><scope>dpp::timed_listener</scope><name>~timed_listener</name></member>
     </listofallmembers>
   </compounddef>

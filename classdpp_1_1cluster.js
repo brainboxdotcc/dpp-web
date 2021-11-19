@@ -115,6 +115,7 @@ var classdpp_1_1cluster =
     [ "get_dm_channel", "classdpp_1_1cluster.html#ae6164d5543b7594731a980da9b0b2088", null ],
     [ "get_gateway_bot", "classdpp_1_1cluster.html#a68f16d04f100a0159683cba96e8c0a6c", null ],
     [ "get_guild_webhooks", "classdpp_1_1cluster.html#a8d352afcbc0430ca11576386278da7d0", null ],
+    [ "get_next_handle", "classdpp_1_1cluster.html#a056e56a119d016fd7a6dcbe709742c22", null ],
     [ "get_shard", "classdpp_1_1cluster.html#a5c677c0d5c059e87cc01ce598d49487d", null ],
     [ "get_shards", "classdpp_1_1cluster.html#af4d6195862e6d25c644902631a0b34d1", null ],
     [ "get_voice_regions", "classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc", null ],
