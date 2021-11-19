@@ -147,6 +147,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a13689440c9cc80279d415c563a6363c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0">log</a> (<a class="el" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">dpp::loglevel</a> severity, const std::string &amp;msg) const</td></tr>
 <tr class="memdesc:a13689440c9cc80279d415c563a6363c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message to whatever log the user is using. The logged message is passed up the chain to the on_log event in user code which can then do whatever it wants to do with it.  <a href="classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0">More...</a><br /></td></tr>
 <tr class="separator:a13689440c9cc80279d415c563a6363c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4709985448aabc7692721f67ebb8a46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af4709985448aabc7692721f67ebb8a46">start_timer</a> (<a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a> callback, uint32_t frequency)</td></tr>
+<tr class="memdesc:af4709985448aabc7692721f67ebb8a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a timer. Every <code>frequency</code> seconds, the callback is called.  <a href="classdpp_1_1cluster.html#af4709985448aabc7692721f67ebb8a46">More...</a><br /></td></tr>
+<tr class="separator:af4709985448aabc7692721f67ebb8a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790f0d0686c07b19978389a36239c60b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a790f0d0686c07b19978389a36239c60b">stop_timer</a> (<a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> t)</td></tr>
+<tr class="memdesc:a790f0d0686c07b19978389a36239c60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a ticking timer.  <a href="classdpp_1_1cluster.html#a790f0d0686c07b19978389a36239c60b">More...</a><br /></td></tr>
+<tr class="separator:a790f0d0686c07b19978389a36239c60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6164d5543b7594731a980da9b0b2088"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ae6164d5543b7594731a980da9b0b2088">get_dm_channel</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id)</td></tr>
 <tr class="memdesc:ae6164d5543b7594731a980da9b0b2088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dm channel for a user id.  <a href="classdpp_1_1cluster.html#ae6164d5543b7594731a980da9b0b2088">More...</a><br /></td></tr>
 <tr class="separator:ae6164d5543b7594731a980da9b0b2088"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -11402,6 +11408,44 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af4709985448aabc7692721f67ebb8a46" name="af4709985448aabc7692721f67ebb8a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4709985448aabc7692721f67ebb8a46">&#9670;&nbsp;</a></span>start_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a> dpp::cluster::start_timer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>frequency</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start a timer. Every <code>frequency</code> seconds, the callback is called. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The callback lambda to call for this timer </td></tr>
+    <tr><td class="paramname">frequency</td><td>How often to tick the timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>timer A handle to the timer, used to remove that timer later </dd></dl>
+
+</div>
+</div>
 <a id="ae64421a4b2402238feb0536639009c18" name="ae64421a4b2402238feb0536639009c18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae64421a4b2402238feb0536639009c18">&#9670;&nbsp;</a></span>sticker_packs_get()</h2>
 
@@ -11422,6 +11466,32 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1sticker.html" title="Represents stickers received in messages.">dpp::sticker</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a790f0d0686c07b19978389a36239c60b" name="a790f0d0686c07b19978389a36239c60b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a790f0d0686c07b19978389a36239c60b">&#9670;&nbsp;</a></span>stop_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::stop_timer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop a ticking timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Timer handle received from <a class="el" href="classdpp_1_1cluster.html#af4709985448aabc7692721f67ebb8a46" title="Start a timer. Every frequency seconds, the callback is called.">cluster::start_timer</a> </td></tr>
   </table>
   </dd>
 </dl>

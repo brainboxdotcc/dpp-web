@@ -372,6 +372,8 @@
     <member refid="classdpp_1_1cluster_1a9b12c3db92a110916052b0c1b260299d" kind="variable"><name>start_time</name></member>
     <member refid="classdpp_1_1cluster_1a643e94b648db0e392f52e345c8bc3377" kind="variable"><name>dm_channels</name></member>
     <member refid="classdpp_1_1cluster_1a0846d3ebce4cb2c346ef4947683cf058" kind="variable"><name>shards</name></member>
+    <member refid="classdpp_1_1cluster_1a68804071670257a06ffe64c973265753" kind="variable"><name>timer_list</name></member>
+    <member refid="classdpp_1_1cluster_1ac8f279f9245bbfe35888f213b011d3a4" kind="variable"><name>next_timer</name></member>
     <member refid="classdpp_1_1cluster_1a644b186bc4b386a8313e3c5dce456c4e" kind="variable"><name>token</name></member>
     <member refid="classdpp_1_1cluster_1a32ce7fc13658a25e2faeadcd36282b0b" kind="variable"><name>last_identify</name></member>
     <member refid="classdpp_1_1cluster_1a239af1e13449c85658fb37e6589745a0" kind="variable"><name>intents</name></member>
@@ -384,6 +386,7 @@
     <member refid="classdpp_1_1cluster_1a9fae28f81712be86530fe3314d166ad3" kind="variable"><name>cache_policy</name></member>
     <member refid="classdpp_1_1cluster_1ae10466db79966215a799fc2a30010551" kind="variable"><name>ws_mode</name></member>
     <member refid="classdpp_1_1cluster_1aeb86e87c07ca3954e198741175fbcb5a" kind="function"><name>auto_shard</name></member>
+    <member refid="classdpp_1_1cluster_1a5c4de3765be2073c0c39cc1c16481f83" kind="function"><name>tick_timers</name></member>
     <member refid="classdpp_1_1cluster_1aac40e45e1ff8efb4e9ae75a7ecacc786" kind="function"><name>cluster</name></member>
     <member refid="classdpp_1_1cluster_1a6b0b523f89559b4ce204ca9ed9693d79" kind="function"><name>cluster</name></member>
     <member refid="classdpp_1_1cluster_1a2d957f52245734f6d44444af8380c952" kind="function"><name>cluster</name></member>
@@ -393,6 +396,8 @@
     <member refid="classdpp_1_1cluster_1af1e3f0868ece15373e81844dff719aa0" kind="function"><name>clear_audit_reason</name></member>
     <member refid="classdpp_1_1cluster_1ab7a2958625740b4a6fde6643042c5f7e" kind="function"><name>get_audit_reason</name></member>
     <member refid="classdpp_1_1cluster_1a13689440c9cc80279d415c563a6363c0" kind="function"><name>log</name></member>
+    <member refid="classdpp_1_1cluster_1af4709985448aabc7692721f67ebb8a46" kind="function"><name>start_timer</name></member>
+    <member refid="classdpp_1_1cluster_1a790f0d0686c07b19978389a36239c60b" kind="function"><name>stop_timer</name></member>
     <member refid="classdpp_1_1cluster_1ae6164d5543b7594731a980da9b0b2088" kind="function"><name>get_dm_channel</name></member>
     <member refid="classdpp_1_1cluster_1a3fc501cc0ebb334d09a7f4bb1ea6b3e6" kind="function"><name>set_dm_channel</name></member>
     <member refid="classdpp_1_1cluster_1af12b5b33ea156bde9977796858066a6b" kind="function"><name>uptime</name></member>
@@ -2663,6 +2668,11 @@
     <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
+  <compound refid="structdpp_1_1timer__t" kind="struct"><name>dpp::timer_t</name>
+    <member refid="structdpp_1_1timer__t_1a4f1f9ed3d687cad53d683d017f0f21a6" kind="variable"><name>handle</name></member>
+    <member refid="structdpp_1_1timer__t_1a44c96ea920324eda48be7a60a387ae38" kind="variable"><name>next_tick</name></member>
+    <member refid="structdpp_1_1timer__t_1af4f1b1442229aeaf08afce0ce781564b" kind="variable"><name>callback</name></member>
+  </compound>
   <compound refid="uniondpp_1_1type__punner" kind="union"><name>dpp::type_punner</name>
     <member refid="uniondpp_1_1type__punner_1a4b3bceccd17314133e9e3c2568dd7235" kind="variable"><name>ui64</name></member>
     <member refid="uniondpp_1_1type__punner_1a3e84c246810f34612b65b60ab78edd61" kind="variable"><name>df</name></member>
@@ -3578,6 +3588,10 @@
     <member refid="namespacedpp_1a3e80cf6b8ecad18c951fec28be2377ba" kind="typedef"><name>command_option_range</name></member>
     <member refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kind="typedef"><name>slashcommand_map</name></member>
     <member refid="namespacedpp_1a51156024d6211aef2731770340cfe452" kind="typedef"><name>socket</name></member>
+    <member refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kind="typedef"><name>timer</name></member>
+    <member refid="namespacedpp_1a13d8465c3c643fdd87405fd115cd4964" kind="typedef"><name>timer_callback_t</name></member>
+    <member refid="namespacedpp_1af2600f973a908a2ecec6f6b0b998e880" kind="typedef"><name>timer_next_t</name></member>
+    <member refid="namespacedpp_1a81b406b8f9f9fa3da4b61fd006f13455" kind="typedef"><name>timer_reg_t</name></member>
     <member refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kind="typedef"><name>user_map</name></member>
     <member refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kind="typedef"><name>voiceregion_map</name></member>
     <member refid="namespacedpp_1aacfd609f0e027752b093141bc1739282" kind="typedef"><name>voicestate_map</name></member>
@@ -3883,6 +3897,8 @@
     <member refid="sysdep_8h_1a2a26373ec11f93cd075ae437118c3580" kind="define"><name>store_32_bits</name></member>
     <member refid="sysdep_8h_1a4798ad8a29746ad210d55b18bfccd543" kind="define"><name>store_64_bits</name></member>
   </compound>
+  <compound refid="timer_8h" kind="file"><name>timer.h</name>
+  </compound>
   <compound refid="user_8h" kind="file"><name>user.h</name>
   </compound>
   <compound refid="version_8h" kind="file"><name>version.h</name>
@@ -3936,6 +3952,8 @@
   <compound refid="template_8cpp" kind="file"><name>template.cpp</name>
   </compound>
   <compound refid="thread_8cpp" kind="file"><name>thread.cpp</name>
+  </compound>
+  <compound refid="timer_8cpp" kind="file"><name>timer.cpp</name>
   </compound>
   <compound refid="voice_8cpp" kind="file"><name>voice.cpp</name>
   </compound>

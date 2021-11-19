@@ -564,6 +564,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__update__t.html">thread_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread Update.  <a href="structdpp_1_1thread__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1timer__t.html">timer_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uniondpp_1_1type__punner.html">type_punner</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A horrible structure used within the ETF parser to convert uint64_t to double and back. This is horrible, but it is the official way erlang term format does this, so we can't really mess with it much.  <a href="uniondpp_1_1type__punner.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -738,6 +740,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:adfefe335636cdf5dbbba145a3828c554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51156024d6211aef2731770340cfe452"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">socket</a></td></tr>
 <tr class="separator:a51156024d6211aef2731770340cfe452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9ab0b8cf29978147a7df3947cd8f30"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a></td></tr>
+<tr class="separator:a8b9ab0b8cf29978147a7df3947cd8f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d8465c3c643fdd87405fd115cd4964"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a></td></tr>
+<tr class="separator:a13d8465c3c643fdd87405fd115cd4964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2600f973a908a2ecec6f6b0b998e880"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; time_t, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af2600f973a908a2ecec6f6b0b998e880">timer_next_t</a></td></tr>
+<tr class="separator:af2600f973a908a2ecec6f6b0b998e880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b406b8f9f9fa3da4b61fd006f13455"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455">timer_reg_t</a></td></tr>
+<tr class="separator:a81b406b8f9f9fa3da4b61fd006f13455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4073c92e19579c06591033a4a234e1"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1user.html">user</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a></td></tr>
 <tr class="separator:a1c4073c92e19579c06591033a4a234e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae90871830444cab0316109a1824fc0b8"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; std::string, <a class="el" href="classdpp_1_1voiceregion.html">voiceregion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae90871830444cab0316109a1824fc0b8">voiceregion_map</a></td></tr>
@@ -2243,6 +2253,62 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A group of thread member objects. </p>
+
+</div>
+</div>
+<a id="a8b9ab0b8cf29978147a7df3947cd8f30" name="a8b9ab0b8cf29978147a7df3947cd8f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b9ab0b8cf29978147a7df3947cd8f30">&#9670;&nbsp;</a></span>timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef size_t <a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">dpp::timer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13d8465c3c643fdd87405fd115cd4964" name="a13d8465c3c643fdd87405fd115cd4964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d8465c3c643fdd87405fd115cd4964">&#9670;&nbsp;</a></span>timer_callback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void()&gt; <a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">dpp::timer_callback_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2600f973a908a2ecec6f6b0b998e880" name="af2600f973a908a2ecec6f6b0b998e880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2600f973a908a2ecec6f6b0b998e880">&#9670;&nbsp;</a></span>timer_next_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;time_t, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a>*&gt; <a class="el" href="namespacedpp.html#af2600f973a908a2ecec6f6b0b998e880">dpp::timer_next_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81b406b8f9f9fa3da4b61fd006f13455" name="a81b406b8f9f9fa3da4b61fd006f13455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b406b8f9f9fa3da4b61fd006f13455">&#9670;&nbsp;</a></span>timer_reg_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30">timer</a>, <a class="el" href="structdpp_1_1timer__t.html">timer_t</a>*&gt; <a class="el" href="namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455">dpp::timer_reg_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
