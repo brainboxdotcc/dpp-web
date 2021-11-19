@@ -185,6 +185,7 @@ var annotated_dup =
       [ "message_reaction_remove_emoji_t", "structdpp_1_1message__reaction__remove__emoji__t.html", "structdpp_1_1message__reaction__remove__emoji__t" ],
       [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
       [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
+      [ "oneshot_timer", "classdpp_1_1oneshot__timer.html", "classdpp_1_1oneshot__timer" ],
       [ "opensslcontext", "classdpp_1_1opensslcontext.html", "classdpp_1_1opensslcontext" ],
       [ "param_info", "structdpp_1_1param__info.html", "structdpp_1_1param__info" ],
       [ "parse_exception", "classdpp_1_1parse__exception.html", "classdpp_1_1parse__exception" ],

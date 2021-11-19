@@ -113,6 +113,7 @@
     <innerclass refid="structdpp_1_1message__reaction__remove__emoji__t" prot="public">dpp::message_reaction_remove_emoji_t</innerclass>
     <innerclass refid="structdpp_1_1message__reaction__remove__t" prot="public">dpp::message_reaction_remove_t</innerclass>
     <innerclass refid="structdpp_1_1message__update__t" prot="public">dpp::message_update_t</innerclass>
+    <innerclass refid="classdpp_1_1oneshot__timer" prot="public">dpp::oneshot_timer</innerclass>
     <innerclass refid="classdpp_1_1opensslcontext" prot="public">dpp::opensslcontext</innerclass>
     <innerclass refid="structdpp_1_1param__info" prot="public">dpp::param_info</innerclass>
     <innerclass refid="classdpp_1_1parse__exception" prot="public">dpp::parse_exception</innerclass>
@@ -4854,7 +4855,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="245" column="23" bodyfile="include/dpp/cluster.h" bodystart="245" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="243" column="23" bodyfile="include/dpp/cluster.h" bodystart="243" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
         <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
@@ -4868,7 +4869,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="250" column="23" bodyfile="include/dpp/cluster.h" bodystart="250" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="248" column="23" bodyfile="include/dpp/cluster.h" bodystart="248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int64_t, bool, double &gt;</type>
@@ -5265,9 +5266,9 @@
         </inbodydescription>
         <location file="include/dpp/timer.h" line="40" column="23" bodyfile="include/dpp/timer.h" bodystart="40" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1af2600f973a908a2ecec6f6b0b998e880" prot="public" static="no">
-        <type>std::map&lt; time_t, <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref> * &gt;</type>
-        <definition>typedef std::map&lt;time_t, timer_t*&gt; dpp::timer_next_t</definition>
+      <memberdef kind="typedef" id="namespacedpp_1a408d79969007e9c450e186f5387df9e5" prot="public" static="no">
+        <type>std::multimap&lt; time_t, <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref> * &gt;</type>
+        <definition>typedef std::multimap&lt;time_t, timer_t*&gt; dpp::timer_next_t</definition>
         <argsstring></argsstring>
         <name>timer_next_t</name>
         <briefdescription>
@@ -5277,7 +5278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/timer.h" line="72" column="18" bodyfile="include/dpp/timer.h" bodystart="72" bodyend="-1"/>
+        <location file="include/dpp/timer.h" line="72" column="23" bodyfile="include/dpp/timer.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a81b406b8f9f9fa3da4b61fd006f13455" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref>, <ref refid="structdpp_1_1timer__t" kindref="compound">timer_t</ref> * &gt;</type>
@@ -7446,7 +7447,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="146" column="17" bodyfile="include/dpp/cluster.h" bodystart="146" bodyend="155"/>
+        <location file="include/dpp/cluster.h" line="146" column="17" bodyfile="include/dpp/cluster.h" bodystart="146" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a0d8a2ea3b1c197d0d2277574186226c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
