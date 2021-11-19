@@ -254,7 +254,7 @@ var hierarchy =
     [ "test_t", "structtest__t.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
-    [ "dpp::timed_listener< stored_state, T >", "classdpp_1_1timed__listener.html", null ],
+    [ "dpp::timed_listener< stored_state, attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
     [ "dpp::timer_t", "structdpp_1_1timer__t.html", null ],
     [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],

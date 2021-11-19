@@ -48,7 +48,7 @@ var searchData=
   ['thumbnail_45',['thumbnail',['../structdpp_1_1embed.html#a60eebf805a4e809d319411c44043d8e2',1,'dpp::embed']]],
   ['time_46',['time',['../structdetail_1_1chrono__formatter.html#a120f073a8cc67e6e733f8ab56b0743d4',1,'detail::chrono_formatter']]],
   ['time_5ff_47',['time_f',['../namespacedpp_1_1utility.html#a1184092d62c7ab561cb3f60a92f71b67',1,'dpp::utility']]],
-  ['timed_5flistener_48',['timed_listener',['../classdpp_1_1timed__listener.html',1,'dpp::timed_listener&lt; stored_state, T &gt;'],['../classdpp_1_1timed__listener.html#a6b66feca199915368cc37b7ca69d7609',1,'dpp::timed_listener::timed_listener()']]],
+  ['timed_5flistener_48',['timed_listener',['../classdpp_1_1timed__listener.html',1,'dpp::timed_listener&lt; stored_state, attached_event, listening_function &gt;'],['../classdpp_1_1timed__listener.html#afb5880b13615ce3c04661530f94ffcd4',1,'dpp::timed_listener::timed_listener()']]],
   ['timer_49',['timer',['../namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30',1,'dpp']]],
   ['timer_5fcallback_5ft_50',['timer_callback_t',['../namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964',1,'dpp']]],
   ['timer_5fguard_51',['timer_guard',['../namespacedpp.html#a835efcb82cabe1ec8cd844ea070cc340',1,'dpp']]],
