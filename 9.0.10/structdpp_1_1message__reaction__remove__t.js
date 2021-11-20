@@ -9,5 +9,6 @@ var structdpp_1_1message__reaction__remove__t =
     [ "reacting_channel", "structdpp_1_1message__reaction__remove__t.html#ab10be361baa593c9715b72b61f701e12", null ],
     [ "reacting_emoji", "structdpp_1_1message__reaction__remove__t.html#a318122b733ddbf503fa1f984782f6503", null ],
     [ "reacting_guild", "structdpp_1_1message__reaction__remove__t.html#aa392a2a0af9eecace90f8afdae0e3ed2", null ],
-    [ "reacting_user_id", "structdpp_1_1message__reaction__remove__t.html#aa4086eee72124257c292aa11db1a7433", null ]
+    [ "reacting_member", "structdpp_1_1message__reaction__remove__t.html#a4d4f9b7585689c872752d0ae4908bf10", null ],
+    [ "reacting_user", "structdpp_1_1message__reaction__remove__t.html#a5fbb10fa4c91bc48b90315f7548470c3", null ]
 ];

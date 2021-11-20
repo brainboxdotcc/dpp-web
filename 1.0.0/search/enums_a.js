@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parameter_5ftype_0',['parameter_type',['../namespacedpp.html#a9a2049904620e4f62b82f8dc818de864',1,'dpp']]],
-  ['presence_5fflags_1',['presence_flags',['../namespacedpp.html#a953f1484a5140481ffab2b248618fb22',1,'dpp']]],
-  ['presence_5fstatus_2',['presence_status',['../namespacedpp.html#a172aa830689e55f4bba337de1592db96',1,'dpp']]]
+  ['region_0',['region',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099',1,'dpp']]],
+  ['role_5fflags_1',['role_flags',['../namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2e',1,'dpp']]],
+  ['role_5fpermissions_2',['role_permissions',['../namespacedpp.html#a0bb678a7eb060b6f35ad38e6f4ee0002',1,'dpp']]]
 ];

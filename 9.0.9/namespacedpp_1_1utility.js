@@ -9,11 +9,7 @@ var namespacedpp_1_1utility =
     [ "exec", "namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0", null ],
     [ "has_voice", "namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4", null ],
     [ "loglevel", "namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045", null ],
-    [ "read_file", "namespacedpp_1_1utility.html#a4e85ceba20c4ed2bfda15d806890428b", null ],
-    [ "rgb", "namespacedpp_1_1utility.html#a2ab5fc7a9fd0ac6358c3c7133b563362", null ],
-    [ "rgb", "namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb", null ],
     [ "time_f", "namespacedpp_1_1utility.html#a1184092d62c7ab561cb3f60a92f71b67", null ],
     [ "utf8len", "namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231", null ],
-    [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
-    [ "validate", "namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86", null ]
+    [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ]
 ];

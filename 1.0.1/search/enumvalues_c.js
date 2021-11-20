@@ -1,21 +1,14 @@
 var searchData=
 [
-  ['r_5fbrazil_0',['r_brazil',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313',1,'dpp']]],
-  ['r_5fcentral_5feurope_1',['r_central_europe',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8',1,'dpp']]],
-  ['r_5fhoist_2',['r_hoist',['../namespacedpp.html#af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e',1,'dpp']]],
-  ['r_5fhong_5fkong_3',['r_hong_kong',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099af7d0b58ca7fee21a8131b704558f7d02',1,'dpp']]],
-  ['r_5findia_4',['r_india',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a7ad00eff38e894d72279e13b29e4ab87',1,'dpp']]],
-  ['r_5fjapan_5',['r_japan',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099aaf3dc305ad57fce93bd2ffedfda56c9e',1,'dpp']]],
-  ['r_5fmanaged_6',['r_managed',['../namespacedpp.html#af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6',1,'dpp']]],
-  ['r_5fmentionable_7',['r_mentionable',['../namespacedpp.html#af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26',1,'dpp']]],
-  ['r_5fpremium_5fsubscriber_8',['r_premium_subscriber',['../namespacedpp.html#af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026',1,'dpp']]],
-  ['r_5frussia_9',['r_russia',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099add96d40dff33aeaa90caa7979c469da3',1,'dpp']]],
-  ['r_5fsingapore_10',['r_singapore',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099aba9d0404b39ea6672b3bcf52feae17b1',1,'dpp']]],
-  ['r_5fsouth_5fafrica_11',['r_south_africa',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099aa9cf62c258d60209c8cded95f3bdda5f',1,'dpp']]],
-  ['r_5fsydney_12',['r_sydney',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a1497e7d00b13f4eec2dd1556af760885',1,'dpp']]],
-  ['r_5fus_5fcentral_13',['r_us_central',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099aefde0f307a19a2ca2b3091099c962131',1,'dpp']]],
-  ['r_5fus_5feast_14',['r_us_east',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a64b0c58ed6fc338811fa50e4001c739b',1,'dpp']]],
-  ['r_5fus_5fsouth_15',['r_us_south',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a406609dc4e2712b0abc9ca72bf57e390',1,'dpp']]],
-  ['r_5fus_5fwest_16',['r_us_west',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a6c27cbd85161eb3666d8f136391a5f58',1,'dpp']]],
-  ['r_5fwestern_5feurope_17',['r_western_europe',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a8d6403af9f4d5b0b849c3f883d0e49e8',1,'dpp']]]
+  ['v_5fcustom_0',['v_custom',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813a2e982013a8628fec52e4d04c2079aa8f',1,'dpp']]],
+  ['v_5fdeprecated_1',['v_deprecated',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813a7ffeb4c61fc6bdfc3c66fc45837df985',1,'dpp']]],
+  ['v_5foptimal_2',['v_optimal',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813afb06fc75de5270a1646e4ed14754ac1c',1,'dpp']]],
+  ['v_5fvip_3',['v_vip',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813a17f33e1022039e04ac480b2956075cc2',1,'dpp']]],
+  ['vs_5fdeaf_4',['vs_deaf',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53fad67d4828942e6cb916ad2911f79a3948',1,'dpp']]],
+  ['vs_5fmute_5',['vs_mute',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53faa3f883725cc590d56f32a968eef566aa',1,'dpp']]],
+  ['vs_5fself_5fdeaf_6',['vs_self_deaf',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53fabaf7cfcc392357c72245e847b3dc6954',1,'dpp']]],
+  ['vs_5fself_5fmute_7',['vs_self_mute',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53fa320ea835cd4680b54d5935d8fb32953a',1,'dpp']]],
+  ['vs_5fself_5fstream_8',['vs_self_stream',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53faa71e77d5dec0a32ba01779884f83cf3b',1,'dpp']]],
+  ['vs_5fself_5fvideo_9',['vs_self_video',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53fa33cbc9aa408db6c7ee21d28dbbbdbe57',1,'dpp']]],
+  ['vs_5fsupress_10',['vs_supress',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53faf1366589595934ba16d4451ff2a0f30d',1,'dpp']]]
 ];

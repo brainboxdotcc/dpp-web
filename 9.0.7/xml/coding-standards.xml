@@ -42,51 +42,47 @@
 </sect1>
 <sect1 id="coding-standards_1autotoc_md50">
 <title>Symbol exporting</title>
-<para>If you export a class which is to be accessible to users, be sure to prefix it with the <computeroutput>DPP_EXPORT</computeroutput> macro, for example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
+<para>If you export a class which is to be accessible to users, be sure to prefix it with the <computeroutput>CoreExport</computeroutput> macro, for example:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoreExport<sp/>my_new_class<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>
 <codeline><highlight class="normal">};</highlight></codeline>
 </programlisting></para>
-<para>The <computeroutput>DPP_EXPORT</computeroutput> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</para>
+<para>The <computeroutput>CoreExport</computeroutput> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</para>
 </sect1>
 <sect1 id="coding-standards_1autotoc_md51">
 <title>Public vs private vs protected</title>
-<para>It is a design philosophy of D++ that everything possible in a class should be public, unless the user really does not need it (you should consider justifying in comments why) or user adjustment of the variable could badly break the functioning of the library. Avoid the use of accessors for setting/getting values in a class, except for bit fields, where you should provide accessors for setting and getting individual bits (for example, see <computeroutput>user.h</computeroutput>), or in the event you want to provide a &quot;fluent&quot; interface. The exception to this is where you want to provide a logic validation of a field, for example if you have a string field with a minimum and maximum length, you can provide a setter the user can <emphasis>optionally use</emphasis> which will validate their input.</para>
+<para>It is a design philosophy of D++ that everything possible in a class should be public, unless the user really does not need it (you should consider justifying in comments why) or user adjustment of the variable could badly break the functioning of the library. Avoid the use of accessors for setting/getting values in a class, except for bit fields, where you should provide accessors for setting and getting individual bits (for example, see <computeroutput>user.h</computeroutput>), or in the event you want to provide a &quot;fluent&quot; interface.</para>
 </sect1>
 <sect1 id="coding-standards_1autotoc_md52">
-<title>Exceptions</title>
-<para>All exceptions thrown should derive from <ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref> (see dpp/exception.h) - when validating string lengths, a string which is too long should be truncated using <ref refid="namespacedpp_1_1utility_1afa6985aaa798fa30b73c1decc418cd32" kindref="member">dpp::utility::utf8substr</ref> and any strings that are too short should throw a <ref refid="classdpp_1_1length__exception" kindref="compound">dpp::length_exception</ref>.</para>
+<title>Inheritence</title>
+<para>Keep levels of inheritence low. If you need to inherit more than 3 levels deep, it is probable that the design could be simplified. Remember that at scale, there can be tens of millions of certain classes and each level of virtual nesting adds to the <computeroutput>vtable</computeroutput> of that object&apos;s instance in RAM.</para>
 </sect1>
 <sect1 id="coding-standards_1autotoc_md53">
-<title>Inheritance</title>
-<para>Keep levels of inheritance low. If you need to inherit more than 3 levels deep, it is probable that the design could be simplified. Remember that at scale, there can be tens of millions of certain classes and each level of virtual nesting adds to the <computeroutput>vtable</computeroutput> of that object&apos;s instance in RAM.</para>
-</sect1>
-<sect1 id="coding-standards_1autotoc_md54">
 <title>Bit field packing</title>
 <para>Where discord provides boolean flags, if the user is expected to store many of the object in RAM, or in cache, you should pack all these booleans into bit fields (see <computeroutput>user.h</computeroutput> and <computeroutput>channel.h</computeroutput> for examples). In the event that the object is transient, such as an interaction or a message, packing the data into bit fields is counter intuitive. Remember that you should provide specific accessors for bit field values!</para>
 </sect1>
-<sect1 id="coding-standards_1autotoc_md55">
+<sect1 id="coding-standards_1autotoc_md54">
 <title>Keep dependencies internal!</title>
 <para>Where you are making use of an external dependency such as <computeroutput>opus</computeroutput> or <computeroutput>libssl</computeroutput>, do not place references to the types/structs, or the header files of these external libraries within the header files of D++. Doing so adds that library as a public dependency to the project (which is bad!). Instead make an opaque class, and/or forward-declare the structs (for examples see <computeroutput>sslclient.h</computeroutput> and <computeroutput>discordvoiceclient.h</computeroutput>).</para>
 </sect1>
-<sect1 id="coding-standards_1autotoc_md56">
+<sect1 id="coding-standards_1autotoc_md55">
 <title>API type names</title>
 <para>Where discord provide a name in PascalCase we should stick as closely to that name as possible but convert it to <computeroutput>snake_case</computeroutput>. For example, GuildMember would become <computeroutput>guild_member</computeroutput>.</para>
 </sect1>
-<sect1 id="coding-standards_1autotoc_md57">
+<sect1 id="coding-standards_1autotoc_md56">
 <title>Don&apos;t introduce any platform-specific code</title>
 <para>Do not introduce platform specific (e.g. windows only) code or libc functions. If you really must use these functions safely wrap them e.g. in <computeroutput>#ifdef _WIN32</computeroutput> and provide a cross-platform alternative so that it works for everyone.</para>
 </sect1>
-<sect1 id="coding-standards_1autotoc_md58">
+<sect1 id="coding-standards_1autotoc_md57">
 <title>Select the right size type for numeric types</title>
 <para>If a value will only hold values up to 255, use <computeroutput>uint8_t</computeroutput>. If a value cannot hold over 65536, use <computeroutput>uint16_t</computeroutput>. These types can help use a lot less ram at scale.</para>
 </sect1>
-<sect1 id="coding-standards_1autotoc_md59">
+<sect1 id="coding-standards_1autotoc_md58">
 <title>Fluent design</title>
 <para>Where possible, if you are adding methods to a class you should consider fluent design. Fluent design is the use of class methods tha return a reference to self (via <computeroutput>return *this</computeroutput>), so that you can chain object method calls together (in the way <computeroutput><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref></computeroutput> and <computeroutput><ref refid="structdpp_1_1embed" kindref="compound">dpp::embed</ref></computeroutput> do). For example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
+<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoreExport<sp/>my_new_class<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>
@@ -110,11 +106,11 @@
 <codeline><highlight class="normal">nc.set_hats(3).set_clowns(9001);</highlight></codeline>
 </programlisting></para>
 </sect1>
-<sect1 id="coding-standards_1autotoc_md60">
+<sect1 id="coding-standards_1autotoc_md59">
 <title>Keep all D++ related types in the dpp namespace</title>
 <para>All types for the library should be within the <computeroutput>dpp</computeroutput> namespace. There are a couple of additional namespaces, e.g. <computeroutput><ref refid="namespacedpp_1_1utility" kindref="compound">dpp::utility</ref></computeroutput> for static standalone helper functions and helper classes, and <computeroutput><ref refid="namespacedpp_1_1events" kindref="compound">dpp::events</ref></computeroutput> for internal websocket event handlers.</para>
 </sect1>
-<sect1 id="coding-standards_1autotoc_md61">
+<sect1 id="coding-standards_1autotoc_md60">
 <title>Commit messages and Git</title>
 <para>All pull requests (&quot;PRs&quot;) should be submitted against the <computeroutput>dev</computeroutput> branch in GitHub. It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your commit or the PR Created. Read <ulink url="https://www.conventionalcommits.org/en/v1.0.0-beta.3/">conventional commits</ulink> for information on how we like to format commit messages.</para>
 <para>All PRs must pass the <ulink url="https://github.com/brainboxdotcc/DPP/actions">GitHub Actions</ulink> tests before being allowed to be merged. This is to ensure that no code committed into the project fails to compile on any of our officially supported platforms or architectures. </para>

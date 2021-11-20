@@ -25,9 +25,8 @@
 var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
-    [ "D++ Developer Documentation", "index.html", "index" ],
+    [ "Welcome to the D++ developer wiki!", "index.html", "index" ],
     [ "Building D++", "md_docpages_02_build.html", "md_docpages_02_build" ],
-    [ "Creating a Discord Bot", "md_docpages_02_building_a_bot.html", "md_docpages_02_building_a_bot" ],
     [ "Example Programs", "md_docpages_03_example_programs.html", "md_docpages_03_example_programs" ],
     [ "Advanced Reference", "md_docpages_04_advanced_reference.html", "md_docpages_04_advanced_reference" ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -50,8 +49,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ]
   ] ]
@@ -60,30 +58,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1cluster.html#a0548cce6c1916b6bc1335a0142c2f5fe",
-"classdpp_1_1cluster.html#a58be46d2934738b32229d984c266a4b7",
-"classdpp_1_1cluster.html#ac7a2d335385b4689e7489d0eaf4475fe",
-"classdpp_1_1connection.html#a17e5272ec12e4772ae9cc94580542af6",
-"classdpp_1_1discord__voice__client.html#ac5c5b7071d0cb95f34aee7b4b5a32428",
-"classdpp_1_1events_1_1application__command__delete.html#a12ee2dfb2453f32b530827e3c860858f",
-"classdpp_1_1exception.html#a82a21aa6228b4c8e2ead7c45128cd9b7",
-"classdpp_1_1http__request.html#aedac6464c95174507a322861191ccc02",
-"classdpp_1_1role.html#a6451e41576902faa14d0394d47d19934",
-"classdpp_1_1thread.html#a9fb22156c167cb2c334ec3388502fdff",
-"classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d",
-"index.html",
-"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659",
-"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc",
-"struct_opus_repacketizer.html",
-"structdpp_1_1audit__extra.html#a01c4162bf4f852e6202f60b196f7dae8",
-"structdpp_1_1command__option__choice.html#a6e4ceb9707c454d74d25a49dbcdb25ee",
-"structdpp_1_1guild__ban__add__t.html#aca2880114f69b7ba62eb5137824c1432",
-"structdpp_1_1guild__scheduled__event__user__add__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
-"structdpp_1_1message.html#a0e71afdc706c7ae83934ddfd8c2ffc38",
-"structdpp_1_1message__reaction__remove__emoji__t.html#a8f56826905f65cb4cc5e054f18482c3b",
-"structdpp_1_1select__click__t.html#ad5812c293c176f38988509d7dc8d3f8e",
-"structdpp_1_1thread__members__update__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1voice__track__marker__t.html"
+"classdpp_1_1cluster.html#a29140a7c0e1250fe2016dbe4ced56f95",
+"classdpp_1_1cluster.html#abd822542ad661833cbf1fc23b6f0a1aa",
+"classdpp_1_1discord__client.html#a7e8e56675006b1af1c09d8de1519f001",
+"classdpp_1_1dispatcher.html#a941fe0c8a4f52c1bf82c34a5c38d86b2",
+"classdpp_1_1events_1_1message__delete.html#a56fb52622ae6013f9b98ab0936e8fb2e",
+"classdpp_1_1guild__member.html#a11636d9baaca59361c22ac163b09fd7c",
+"classdpp_1_1role.html#a3ffcaced8369d47cc3f954fa0978c40c",
+"classdpp_1_1voiceconn.html#a9c0868d279364472bf0c86a4b5ae8f1b",
+"functions_vars_c.html",
+"namespacedpp.html#a373a53f1340e01ad64bb89f82158f99baffe1298bd7ee0ace51a2416a4ae1a687",
+"namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5aab0deba2352e4cf8e36af9389dfef612",
+"structdetail_1_1chrono__formatter.html#ad3078b36afabe9936547b07c8018f7d9",
+"structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026",
+"structdpp_1_1guild__ban__remove__t.html#a96b984d6584eb2dc6a9d16d3c4c671f5",
+"structdpp_1_1interaction__create__t.html#ab2658732fd275f78e887435667d96d0c",
+"structdpp_1_1message__reaction__remove__all__t.html#a4ea348517f397f86e94bbf6449a7f1aa",
+"structdpp_1_1stage__instance__delete__t.html#ac9b9b8d50d30ec1c70bcafc596830fb9",
+"structdpp_1_1voice__ready__t.html#afe0122cb6850df07ca84ba3592181490"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

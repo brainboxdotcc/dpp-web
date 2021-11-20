@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1discord__voice__client.htm
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1discord__voice__client__inherit__graph.svg" width="163" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1discord__voice__client__inherit__graph.svg" width="178" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -135,7 +135,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac06f68e15b979b0590f09c9732548f16"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#ac06f68e15b979b0590f09c9732548f16">log</a> (<a class="el" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">dpp::loglevel</a> severity, const std::string &amp;msg) const</td></tr>
 <tr class="separator:ac06f68e15b979b0590f09c9732548f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b878e8bec47a04cb0132b34fe1f6f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a79b878e8bec47a04cb0132b34fe1f6f9">one_second_timer</a> ()</td></tr>
-<tr class="memdesc:a79b878e8bec47a04cb0132b34fe1f6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fires every second from the underlying socket I/O loop, used for sending heartbeats.  <a href="classdpp_1_1discord__voice__client.html#a79b878e8bec47a04cb0132b34fe1f6f9">More...</a><br /></td></tr>
 <tr class="separator:a79b878e8bec47a04cb0132b34fe1f6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5fcfe947f581ecce2c9096871f88a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#aee5fcfe947f581ecce2c9096871f88a2">is_ready</a> ()</td></tr>
 <tr class="memdesc:aee5fcfe947f581ecce2c9096871f88a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">voice client is ready to stream audio. The voice client is considered ready if it has a secret key.  <a href="classdpp_1_1discord__voice__client.html#aee5fcfe947f581ecce2c9096871f88a2">More...</a><br /></td></tr>
@@ -359,12 +358,6 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">_token</td><td>The voice session token to use for identifying to the websocket </td></tr>
     <tr><td class="paramname">_session_id</td><td>The voice session id to identify with </td></tr>
     <tr><td class="paramname">_host</td><td>The voice server hostname to connect to (hostname:port format) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>Sodium or Opus failed to initialise </td></tr>
   </table>
   </dd>
 </dl>
@@ -799,13 +792,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool True if a frame has been handled </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>If there was an error processing the frame, or connection to UDP socket failed </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a frame has been handled </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classdpp_1_1websocket__client.html#a7893b4f67b88472cf72dea1aa8f2c377">dpp::websocket_client</a>.</p>
 
@@ -984,14 +971,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Fires every second from the underlying socket I/O loop, used for sending heartbeats. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>if the socket needs to disconnect </td></tr>
-  </table>
-  </dd>
-</dl>
+<p >Fires every second from the underlying socket I/O loop, used for sending heartbeats </p>
 
 <p>Reimplemented from <a class="el" href="classdpp_1_1websocket__client.html#a113d7064f2d7f61ac7246850b6cd66cb">dpp::websocket_client</a>.</p>
 
@@ -1047,12 +1027,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Nonblocking I/O loop. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td>Any std::exception (or derivative) thrown from <a class="el" href="classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2" title="Nonblocking I/O loop.">read_loop()</a> causes reconnection of the shard </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1111,13 +1085,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>&amp; Reference to self</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>It is your responsibility to ensure that packets of data sent to send_audio are correctly repacketized for streaming, e.g. that audio frames are not too large or contain an incorrect format. Discord will still expect the same frequency and bit width of audio and the same signedness.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>If data length is invalid </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section note"><dt>Note</dt><dd>It is your responsibility to ensure that packets of data sent to send_audio are correctly repacketized for streaming, e.g. that audio frames are not too large or contain an incorrect format. Discord will still expect the same frequency and bit width of audio and the same signedness. </dd></dl>
 
 </div>
 </div>
@@ -1164,13 +1132,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>&amp; Reference to self</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>It is your responsibility to ensure that packets of data sent to send_audio are correctly repacketized for streaming, e.g. that audio frames are not too large or contain an incorrect format. Discord will still expect the same frequency and bit width of audio and the same signedness.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>If data length is invalid </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section note"><dt>Note</dt><dd>It is your responsibility to ensure that packets of data sent to send_audio are correctly repacketized for streaming, e.g. that audio frames are not too large or contain an incorrect format. Discord will still expect the same frequency and bit width of audio and the same signedness. </dd></dl>
 
 </div>
 </div>
@@ -1216,13 +1178,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>&amp; Reference to self</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>If data length is invalid </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>&amp; Reference to self </dd></dl>
 
 </div>
 </div>
@@ -1277,12 +1233,6 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>&amp; Reference to self </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>If data length is invalid </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

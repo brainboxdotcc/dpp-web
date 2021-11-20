@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parameter_5flist_5ft_0',['parameter_list_t',['../namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1',1,'dpp']]],
-  ['parameter_5fregistration_5ft_1',['parameter_registration_t',['../namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65',1,'dpp']]],
-  ['presence_5fmap_2',['presence_map',['../namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f',1,'dpp']]]
+  ['rep_0',['rep',['../structdetail_1_1chrono__formatter.html#a2c6fb5bb3ba1229db77d88ed858a5194',1,'detail::chrono_formatter']]],
+  ['role_5fmap_1',['role_map',['../namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b',1,'dpp']]]
 ];

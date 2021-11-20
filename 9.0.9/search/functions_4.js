@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['edit_5fresponse_0',['edit_response',['../structdpp_1_1interaction__create__t.html#a7201727cb2e7a6d327c7f778d335b6bd',1,'dpp::interaction_create_t::edit_response(const std::string &amp;mt, command_completion_event_t callback={}) const'],['../structdpp_1_1interaction__create__t.html#ace8c437a0c0e95590c9e59830743a1d2',1,'dpp::interaction_create_t::edit_response(const message &amp;m, command_completion_event_t callback={}) const']]],
+  ['edit_5fresponse_0',['edit_response',['../structdpp_1_1interaction__create__t.html#a690fd3663ea3ffda8ad6d3238f3a7e79',1,'dpp::interaction_create_t::edit_response(const std::string &amp;mt) const'],['../structdpp_1_1interaction__create__t.html#a0bfaf4c5d6a7de14ffeea0e4bf160ba6',1,'dpp::interaction_create_t::edit_response(const message &amp;m) const']]],
   ['edit_5fwebhook_1',['edit_webhook',['../classdpp_1_1cluster.html#af319c151f1b9b2b578d9303bab7ce5d0',1,'dpp::cluster']]],
   ['edit_5fwebhook_5fmessage_2',['edit_webhook_message',['../classdpp_1_1cluster.html#a86a37684f9d12edd4ca7d00296a5443b',1,'dpp::cluster']]],
   ['edit_5fwebhook_5fwith_5ftoken_3',['edit_webhook_with_token',['../classdpp_1_1cluster.html#a2bffc1fa43d6a78814f9ca0f378755c5',1,'dpp::cluster']]],

@@ -15,15 +15,14 @@ var md_docpages_04_advanced_reference =
       [ "Comments", "coding-standards.html#autotoc_md49", null ],
       [ "Symbol exporting", "coding-standards.html#autotoc_md50", null ],
       [ "Public vs private vs protected", "coding-standards.html#autotoc_md51", null ],
-      [ "Exceptions", "coding-standards.html#autotoc_md52", null ],
-      [ "Inheritance", "coding-standards.html#autotoc_md53", null ],
-      [ "Bit field packing", "coding-standards.html#autotoc_md54", null ],
-      [ "Keep dependencies internal!", "coding-standards.html#autotoc_md55", null ],
-      [ "API type names", "coding-standards.html#autotoc_md56", null ],
-      [ "Don't introduce any platform-specific code", "coding-standards.html#autotoc_md57", null ],
-      [ "Select the right size type for numeric types", "coding-standards.html#autotoc_md58", null ],
-      [ "Fluent design", "coding-standards.html#autotoc_md59", null ],
-      [ "Keep all D++ related types in the dpp namespace", "coding-standards.html#autotoc_md60", null ],
-      [ "Commit messages and Git", "coding-standards.html#autotoc_md61", null ]
+      [ "Inheritance", "coding-standards.html#autotoc_md52", null ],
+      [ "Bit field packing", "coding-standards.html#autotoc_md53", null ],
+      [ "Keep dependencies internal!", "coding-standards.html#autotoc_md54", null ],
+      [ "API type names", "coding-standards.html#autotoc_md55", null ],
+      [ "Don't introduce any platform-specific code", "coding-standards.html#autotoc_md56", null ],
+      [ "Select the right size type for numeric types", "coding-standards.html#autotoc_md57", null ],
+      [ "Fluent design", "coding-standards.html#autotoc_md58", null ],
+      [ "Keep all D++ related types in the dpp namespace", "coding-standards.html#autotoc_md59", null ],
+      [ "Commit messages and Git", "coding-standards.html#autotoc_md60", null ]
     ] ]
 ];

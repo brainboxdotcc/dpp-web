@@ -12,20 +12,20 @@
 <title>1. Toolchain</title>
 <para>Before compiling make sure you have all the tools installed.</para>
 <para><orderedlist>
-<listitem><para>To install the dependencies, this guide will use homebrew which has <ulink url="https://brew.sh/">installation instructions on their project page</ulink>.</para>
-</listitem><listitem><para>This project uses CMake to generate the makefiles. Install it with <computeroutput>brew install cmake</computeroutput>.</para>
+<listitem><para>To install the dependencies, this guide will use homebrew which has <ulink url="https://brew.sh/">installation instructions on their project page</ulink></para>
+</listitem><listitem><para>This project uses CMake to generate the makefiles. Install it with <computeroutput>brew install cmake</computeroutput></para>
 </listitem></orderedlist>
 </para>
 </sect2>
 <sect2 id="buildosx_1autotoc_md12">
 <title>2. Install External Dependencies</title>
 <para><verbatim>brew install openssl
-</verbatim> For voice support, additional dependencies are required: <verbatim>brew install libsodium opus
+</verbatim> For voice support, additional dependencies are required <verbatim>brew install libsodium opus
 </verbatim> </para>
 </sect2>
 <sect2 id="buildosx_1autotoc_md13">
 <title>3. Build Source Code</title>
-<para><verbatim>mkdir build
+<para>Download the source code via Github or get the archive from the releases. Then navigate to the root directory of the project and run the commands below. <verbatim>mkdir build
 cd build
 cmake ..
 make -j8
@@ -33,7 +33,7 @@ make -j8
 </sect2>
 <sect2 id="buildosx_1autotoc_md14">
 <title>4. Optional: Run test cases</title>
-<para>Run <computeroutput>./test</computeroutput> for unit test cases. You will need to create a <computeroutput>config.json</computeroutput> file in the directory above the executable file with a valid bot token in it. See the example file <computeroutput>config.example.json</computeroutput> for an example of the correct format.</para>
+<para>run <computeroutput>./test</computeroutput> for unit test cases. You will need to create a <computeroutput>config.json</computeroutput> file in the directory above the executable file with a valid bot token in it. See the example file <computeroutput>config.example.json</computeroutput> for an example of the correct format.</para>
 </sect2>
 <sect2 id="buildosx_1autotoc_md15">
 <title>5. Install globally</title>
@@ -57,7 +57,6 @@ make -j8
 </listitem></itemizedlist>
 </para>
 <para>Of course, this is just a proof of concept - you should really use a more robust build system like GNU <computeroutput>make</computeroutput> or <ref refid="buildcmake" kindref="compound">`cmake`</ref>.</para>
-<para>If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template bot</ulink>.</para>
 <para><bold>Have fun!</bold> </para>
 </sect2>
 </sect1>

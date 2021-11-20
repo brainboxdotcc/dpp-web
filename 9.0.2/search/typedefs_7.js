@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['integration_5fmap_0',['integration_map',['../namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a',1,'dpp']]],
-  ['invite_5fmap_1',['invite_map',['../namespacedpp.html#aa85b043fd45cf24caa23ab6004a2415a',1,'dpp']]]
+  ['json_0',['json',['../namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e',1,'dpp']]],
+  ['json_5fencode_5ft_1',['json_encode_t',['../namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee',1,'dpp']]]
 ];

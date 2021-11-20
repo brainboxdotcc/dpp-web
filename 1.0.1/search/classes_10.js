@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['uptime_0',['uptime',['../structdpp_1_1utility_1_1uptime.html',1,'dpp::utility']]],
-  ['user_1',['user',['../classdpp_1_1user.html',1,'dpp']]],
-  ['user_5fidentified_2',['user_identified',['../classdpp_1_1user__identified.html',1,'dpp']]],
-  ['user_5fupdate_3',['user_update',['../classdpp_1_1events_1_1user__update.html',1,'dpp::events']]],
-  ['user_5fupdate_5ft_4',['user_update_t',['../structdpp_1_1user__update__t.html',1,'dpp']]]
+  ['webhook_0',['webhook',['../classdpp_1_1webhook.html',1,'dpp']]],
+  ['webhooks_5fupdate_1',['webhooks_update',['../classdpp_1_1events_1_1webhooks__update.html',1,'dpp::events']]],
+  ['webhooks_5fupdate_5ft_2',['webhooks_update_t',['../structdpp_1_1webhooks__update__t.html',1,'dpp']]],
+  ['wsclient_3',['WSClient',['../classdpp_1_1_w_s_client.html',1,'dpp']]]
 ];

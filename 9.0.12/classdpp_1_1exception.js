@@ -8,6 +8,5 @@ var classdpp_1_1exception =
     [ "exception", "classdpp_1_1exception.html#a1e8f1486c898e2ab6c513c7844221a9f", null ],
     [ "exception", "classdpp_1_1exception.html#a269a23dc033395e0266a6c3c41b9ffb0", null ],
     [ "~exception", "classdpp_1_1exception.html#afe7dc4002e1d4c812192f5afb4bed1d7", null ],
-    [ "what", "classdpp_1_1exception.html#a010588e4eec074c113ff36c82dde74f9", null ],
-    [ "msg", "classdpp_1_1exception.html#ac033c933ff59daf22d4ea121303e11b9", null ]
+    [ "what", "classdpp_1_1exception.html#a010588e4eec074c113ff36c82dde74f9", null ]
 ];

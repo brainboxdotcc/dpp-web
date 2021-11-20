@@ -179,17 +179,8 @@ var hierarchy =
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
     [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
-    [ "dpp::event_member", "structdpp_1_1event__member.html", null ],
     [ "std::exception", null, [
-      [ "dpp::exception", "classdpp_1_1exception.html", [
-        [ "dpp::connection_exception", "classdpp_1_1connection__exception.html", null ],
-        [ "dpp::file_exception", "classdpp_1_1file__exception.html", null ],
-        [ "dpp::length_exception", "classdpp_1_1length__exception.html", null ],
-        [ "dpp::logic_exception", "classdpp_1_1logic__exception.html", null ],
-        [ "dpp::parse_exception", "classdpp_1_1parse__exception.html", null ],
-        [ "dpp::rest_exception", "classdpp_1_1rest__exception.html", null ],
-        [ "dpp::voice_exception", "classdpp_1_1voice__exception.html", null ]
-      ] ]
+      [ "dpp::exception", "classdpp_1_1exception.html", null ]
     ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
@@ -227,7 +218,6 @@ var hierarchy =
     [ "dpp::message", "structdpp_1_1message.html", null ],
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
-    [ "dpp::oneshot_timer", "classdpp_1_1oneshot__timer.html", null ],
     [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
     [ "OpusDecoder", "struct_opus_decoder.html", null ],
     [ "OpusEncoder", "struct_opus_encoder.html", null ],
@@ -255,8 +245,6 @@ var hierarchy =
     [ "test_t", "structtest__t.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
-    [ "dpp::timed_listener< attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
-    [ "dpp::timer_t", "structdpp_1_1timer__t.html", null ],
     [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
