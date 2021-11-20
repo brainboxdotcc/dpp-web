@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"namespacedpp.html#acd67ddd4f95dbdac48f554ddcbbeb0b1":[6,0,1,317],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc":[6,0,1,253],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787":[6,0,1,253,11],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca0761b0d92c9f4c6d5fda7ac47cb7e596":[6,0,1,253,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "soundboard.html":[3,2],
 "spdlog.html":[3,7],
 "stream-mp3-discord-bot.html":[3,4],
-"struct_opus_decoder.html":[7,0,5],
-"struct_opus_encoder.html":[7,0,6]
+"struct_opus_decoder.html":[7,0,5]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"struct_opus_encoder.html":[7,0,6],
 "struct_opus_repacketizer.html":[7,0,7],
 "structdetail_1_1chrono__format__checker.html":[7,0,0,0],
 "structdetail_1_1chrono__format__checker.html":[6,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "structdpp_1_1audit__entry.html#ae52ad0499e9492694af8bfc66de01255":[6,0,1,10,2],
 "structdpp_1_1audit__entry.html#ae52ad0499e9492694af8bfc66de01255":[7,0,1,10,2],
 "structdpp_1_1audit__extra.html":[6,0,1,11],
-"structdpp_1_1audit__extra.html":[7,0,1,11],
-"structdpp_1_1audit__extra.html#a01c4162bf4f852e6202f60b196f7dae8":[6,0,1,11,4]
+"structdpp_1_1audit__extra.html":[7,0,1,11]
 };

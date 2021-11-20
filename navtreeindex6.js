@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classdpp_1_1events_1_1application__command__delete.html#a12ee2dfb2453f32b530827e3c860858f":[6,0,1,0,1,0],
 "classdpp_1_1events_1_1application__command__delete.html#a12ee2dfb2453f32b530827e3c860858f":[7,0,1,0,1,0],
 "classdpp_1_1events_1_1application__command__update.html":[6,0,1,0,2],
 "classdpp_1_1events_1_1application__command__update.html":[7,0,1,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classdpp_1_1exception.html#a269a23dc033395e0266a6c3c41b9ffb0":[7,0,1,59,6],
 "classdpp_1_1exception.html#a269a23dc033395e0266a6c3c41b9ffb0":[6,0,1,59,6],
 "classdpp_1_1exception.html#a369458d8db837316c84256bfed913426":[7,0,1,59,2],
-"classdpp_1_1exception.html#a369458d8db837316c84256bfed913426":[6,0,1,59,2],
-"classdpp_1_1exception.html#a82a21aa6228b4c8e2ead7c45128cd9b7":[6,0,1,59,0]
+"classdpp_1_1exception.html#a369458d8db837316c84256bfed913426":[6,0,1,59,2]
 };

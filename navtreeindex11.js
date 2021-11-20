@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d":[7,0,1,170,5],
 "classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d":[6,0,1,170,5],
 "classdpp_1_1voicestate.html#a631921c8fd04d5b3c1989218b48ef4d3":[7,0,1,170,8],
 "classdpp_1_1voicestate.html#a631921c8fd04d5b3c1989218b48ef4d3":[6,0,1,170,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "functions_vars_v.html":[7,3,2,20],
 "functions_vars_w.html":[7,3,2,21],
 "functions_w.html":[7,3,0,22],
-"functions_~.html":[7,3,0,23],
-"hierarchy.html":[7,2]
+"functions_~.html":[7,3,0,23]
 };

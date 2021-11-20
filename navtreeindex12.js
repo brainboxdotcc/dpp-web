@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"hierarchy.html":[7,2],
 "index.html":[],
 "index.html":[0],
 "index.html#autotoc_md63":[0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "namespacedpp.html#a3a13097fcd3f19b409e2a15b9fa56f90":[6,0,1,281],
 "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb":[6,0,1,262],
 "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a":[6,0,1,262,1],
-"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824":[6,0,1,262,0],
-"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a":[6,0,1,262,3]
+"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824":[6,0,1,262,0]
 };
