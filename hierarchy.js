@@ -179,7 +179,7 @@ var hierarchy =
     ] ],
     [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
     [ "dpp::event_member", "structdpp_1_1event__member.html", null ],
-    [ "dpp::event_router_t< F >", "classdpp_1_1event__router__t.html", null ],
+    [ "dpp::event_router_t< T >", "classdpp_1_1event__router__t.html", null ],
     [ "std::exception", null, [
       [ "dpp::exception", "classdpp_1_1exception.html", [
         [ "dpp::connection_exception", "classdpp_1_1connection__exception.html", null ],

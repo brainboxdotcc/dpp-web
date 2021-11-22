@@ -19,7 +19,7 @@ var searchData=
   ['cache_5fpolicy_16',['cache_policy',['../classdpp_1_1cluster.html#a9fae28f81712be86530fe3314d166ad3',1,'dpp::cluster']]],
   ['cache_5fpolicy_5fsetting_5ft_17',['cache_policy_setting_t',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52',1,'dpp']]],
   ['cache_5fpolicy_5ft_18',['cache_policy_t',['../structdpp_1_1cache__policy__t.html',1,'dpp']]],
-  ['call_19',['call',['../classdpp_1_1event__router__t.html#a6e94644732d2785dde4fea7a42330f26',1,'dpp::event_router_t']]],
+  ['call_19',['call',['../classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3',1,'dpp::event_router_t']]],
   ['cancel_20',['cancel',['../classdpp_1_1oneshot__timer.html#a084107aff1b71f0776a501527d3e14ef',1,'dpp::oneshot_timer']]],
   ['cancel_5fevent_21',['cancel_event',['../structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7',1,'dpp::event_dispatch_t']]],
   ['changes_22',['changes',['../structdpp_1_1audit__entry.html#ab4c452b5018afcc42cd96f67b7ae75f9',1,'dpp::audit_entry']]],

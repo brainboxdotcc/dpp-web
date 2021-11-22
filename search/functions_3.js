@@ -6,7 +6,7 @@ var searchData=
   ['delete_5fwebhook_5fmessage_3',['delete_webhook_message',['../classdpp_1_1cluster.html#ae6e937f48e410469c90f37368afa4cbe',1,'dpp::cluster']]],
   ['delete_5fwebhook_5fwith_5ftoken_4',['delete_webhook_with_token',['../classdpp_1_1cluster.html#ae790b70aaecd9c42fe8a64c4c71a3d0c',1,'dpp::cluster']]],
   ['desktop_5fstatus_5',['desktop_status',['../classdpp_1_1presence.html#a63177953eddc1a1425721110a6469042',1,'dpp::presence']]],
-  ['detach_6',['detach',['../classdpp_1_1event__router__t.html#ae4a92aefb81f9c04ab314f5bc248aedf',1,'dpp::event_router_t']]],
+  ['detach_6',['detach',['../classdpp_1_1event__router__t.html#a6f0435163c6765ddc61c42f9f9beabb2',1,'dpp::event_router_t']]],
   ['direct_5fmessage_5fcreate_7',['direct_message_create',['../classdpp_1_1cluster.html#ae3a5e7d9ba9dcbfc1e219eeb029f61ad',1,'dpp::cluster']]],
   ['disable_5fdefault_5fpermissions_8',['disable_default_permissions',['../classdpp_1_1slashcommand.html#af5e01640cbf5f00e74e7dd724e43d6f0',1,'dpp::slashcommand']]],
   ['disconnect_9',['disconnect',['../classdpp_1_1voiceconn.html#a462b82f234c78686edb38ba9c301d9bb',1,'dpp::voiceconn']]],
