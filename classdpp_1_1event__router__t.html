@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1event__router__t.html','')
 </div><!--header-->
 <div class="contents">
 
-<p>Handles routing of an event to multiple listeners. Multiple listeners may attach to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners. Multiple listeners may attach to the event_router_...">event_router_t</a> by means of operator(). Passing a lambda into operator() attaches to the event. Dispatchers of the event may call the <a class="el" href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3" title="Call all attached listeners. Listenrs may cancel, by calling the event.cancel method.">event_router_t::call()</a> method to cause all listeners to receive the event. The <a class="el" href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab" title="Returns true if the container of listeners is empty, i.e. there is nothing listening for this event r...">event_router_t::empty()</a> method will return true if there are no listeners attached to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners. Multiple listeners may attach to the event_router_...">event_router_t</a> (this can be used to save time by not constructing objects that nobody will ever see). The <a class="el" href="classdpp_1_1event__router__t.html#a6f0435163c6765ddc61c42f9f9beabb2" title="Detach a listener from the event using a previously obtained ID.">event_router_t::detach()</a> method removes an existing listener from the event, using the event_handle ID returned by operator().  
+<p>Handles routing of an event to multiple listeners.  
  <a href="classdpp_1_1event__router__t.html#details">More...</a></p>
 
 <p><code>#include &lt;cluster.h&gt;</code></p>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1event__router__t.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a667c18e57cc53f960d3467e84358a822"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a667c18e57cc53f960d3467e84358a822">event_router_t</a> ()</td></tr>
-<tr class="memdesc:a667c18e57cc53f960d3467e84358a822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners. Multiple listeners may attach to the event_router_...">event_router_t</a> object. Note: Starts handle at 1.  <a href="classdpp_1_1event__router__t.html#a667c18e57cc53f960d3467e84358a822">More...</a><br /></td></tr>
+<tr class="memdesc:a667c18e57cc53f960d3467e84358a822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners.">event_router_t</a> object. Note: Starts handle at 1.  <a href="classdpp_1_1event__router__t.html#a667c18e57cc53f960d3467e84358a822">More...</a><br /></td></tr>
 <tr class="separator:a667c18e57cc53f960d3467e84358a822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3">call</a> (const T &amp;event) const</td></tr>
 <tr class="memdesc:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all attached listeners. Listenrs may cancel, by calling the event.cancel method.  <a href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3">More...</a><br /></td></tr>
@@ -124,13 +124,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afde1df1dba72f9a6e35b676b89ebc8e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#afde1df1dba72f9a6e35b676b89ebc8e0">operator()</a> (std::function&lt; void(const T &amp;)&gt; func)</td></tr>
 <tr class="memdesc:afde1df1dba72f9a6e35b676b89ebc8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>.  <a href="classdpp_1_1event__router__t.html#afde1df1dba72f9a6e35b676b89ebc8e0">More...</a><br /></td></tr>
 <tr class="separator:afde1df1dba72f9a6e35b676b89ebc8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6af4a0b09bba980a625beb49a16590c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c">attach</a> (std::function&lt; void(const T &amp;)&gt; func)</td></tr>
+<tr class="memdesc:ad6af4a0b09bba980a625beb49a16590c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>.  <a href="classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c">More...</a><br /></td></tr>
+<tr class="separator:ad6af4a0b09bba980a625beb49a16590c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f0435163c6765ddc61c42f9f9beabb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a6f0435163c6765ddc61c42f9f9beabb2">detach</a> (const <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> handle)</td></tr>
 <tr class="memdesc:a6f0435163c6765ddc61c42f9f9beabb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach a listener from the event using a previously obtained ID.  <a href="classdpp_1_1event__router__t.html#a6f0435163c6765ddc61c42f9f9beabb2">More...</a><br /></td></tr>
 <tr class="separator:a6f0435163c6765ddc61c42f9f9beabb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
-class dpp::event_router_t&lt; T &gt;</div><p >Handles routing of an event to multiple listeners. Multiple listeners may attach to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners. Multiple listeners may attach to the event_router_...">event_router_t</a> by means of operator(). Passing a lambda into operator() attaches to the event. Dispatchers of the event may call the <a class="el" href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3" title="Call all attached listeners. Listenrs may cancel, by calling the event.cancel method.">event_router_t::call()</a> method to cause all listeners to receive the event. The <a class="el" href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab" title="Returns true if the container of listeners is empty, i.e. there is nothing listening for this event r...">event_router_t::empty()</a> method will return true if there are no listeners attached to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners. Multiple listeners may attach to the event_router_...">event_router_t</a> (this can be used to save time by not constructing objects that nobody will ever see). The <a class="el" href="classdpp_1_1event__router__t.html#a6f0435163c6765ddc61c42f9f9beabb2" title="Detach a listener from the event using a previously obtained ID.">event_router_t::detach()</a> method removes an existing listener from the event, using the event_handle ID returned by operator(). </p>
+class dpp::event_router_t&lt; T &gt;</div><p >Handles routing of an event to multiple listeners. </p>
+<p >Multiple listeners may attach to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners.">event_router_t</a> by means of operator(). Passing a lambda into operator() attaches to the event.</p>
+<p >Dispatchers of the event may call the <a class="el" href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3" title="Call all attached listeners. Listenrs may cancel, by calling the event.cancel method.">event_router_t::call()</a> method to cause all listeners to receive the event.</p>
+<p >The <a class="el" href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab" title="Returns true if the container of listeners is empty, i.e. there is nothing listening for this event r...">event_router_t::empty()</a> method will return true if there are no listeners attached to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners.">event_router_t</a> (this can be used to save time by not constructing objects that nobody will ever see).</p>
+<p >The <a class="el" href="classdpp_1_1event__router__t.html#a6f0435163c6765ddc61c42f9f9beabb2" title="Detach a listener from the event using a previously obtained ID.">event_router_t::detach()</a> method removes an existing listener from the event, using the event_handle ID returned by operator().</p>
 <p >This class is used by the library to route all websocket events to listening code.</p>
 <p >Example:</p>
 <div class="fragment"><div class="line"><span class="comment">// Declare an event that takes log_t as its parameter</span></div>
@@ -181,11 +188,48 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners. Multiple listeners may attach to the event_router_...">event_router_t</a> object. Note: Starts handle at 1. </p>
+<p>Construct a new <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners.">event_router_t</a> object. Note: Starts handle at 1. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad6af4a0b09bba980a625beb49a16590c" name="ad6af4a0b09bba980a625beb49a16590c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6af4a0b09bba980a625beb49a16590c">&#9670;&nbsp;</a></span>attach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> <a class="el" href="classdpp_1_1event__router__t.html">dpp::event_router_t</a>&lt; T &gt;::attach </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const T &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>Function lambda to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>event_handle An event handle unique to this event, used to detach the listener from the event later if neccessary. </dd></dl>
+
+</div>
+</div>
 <a id="a8099d8f317b52a9e9a2e5c6b248a73a3" name="a8099d8f317b52a9e9a2e5c6b248a73a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8099d8f317b52a9e9a2e5c6b248a73a3">&#9670;&nbsp;</a></span>call()</h2>
 

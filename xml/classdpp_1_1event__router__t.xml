@@ -9,6 +9,20 @@
       </param>
     </templateparamlist>
       <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" prot="private" static="no" mutable="yes">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::event_router_t&lt; T &gt;::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <briefdescription>
+<para>Thread safety mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="280" column="27" bodyfile="include/dpp/cluster.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" prot="private" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
         <definition>event_handle dpp::event_router_t&lt; T &gt;::next_handle</definition>
@@ -21,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="275" column="14" bodyfile="include/dpp/cluster.h" bodystart="275" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="284" column="14" bodyfile="include/dpp/cluster.h" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, std::function&lt; void(const T &amp;)&gt; &gt;</type>
@@ -35,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="282" column="10" bodyfile="include/dpp/cluster.h" bodystart="282" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="291" column="10" bodyfile="include/dpp/cluster.h" bodystart="291" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -51,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="288" column="1" bodyfile="include/dpp/cluster.h" bodystart="288" bodyend="289"/>
+        <location file="include/dpp/cluster.h" line="297" column="1" bodyfile="include/dpp/cluster.h" bodystart="297" bodyend="298"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -79,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="297" column="6" bodyfile="include/dpp/cluster.h" bodystart="297" bodyend="303"/>
+        <location file="include/dpp/cluster.h" line="306" column="6" bodyfile="include/dpp/cluster.h" bodystart="306" bodyend="313"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -98,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="312" column="6" bodyfile="include/dpp/cluster.h" bodystart="312" bodyend="314"/>
+        <location file="include/dpp/cluster.h" line="322" column="6" bodyfile="include/dpp/cluster.h" bodystart="322" bodyend="325"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
@@ -128,7 +142,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="326" column="14" bodyfile="include/dpp/cluster.h" bodystart="326" bodyend="330"/>
+        <location file="include/dpp/cluster.h" line="337" column="14" bodyfile="include/dpp/cluster.h" bodystart="337" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::attach</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; func)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function lambda to attach to event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>event_handle An event handle unique to this event, used to detach the listener from the event later if neccessary. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="354" column="14" bodyfile="include/dpp/cluster.h" bodystart="354" bodyend="356"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a6f0435163c6765ddc61c42f9f9beabb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -160,13 +204,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="339" column="6" bodyfile="include/dpp/cluster.h" bodystart="339" bodyend="346"/>
+        <location file="include/dpp/cluster.h" line="365" column="6" bodyfile="include/dpp/cluster.h" bodystart="365" bodyend="373"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Handles routing of an event to multiple listeners. Multiple listeners may attach to the <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> by means of operator(). Passing a lambda into operator() attaches to the event. Dispatchers of the event may call the <ref refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" kindref="member">event_router_t::call()</ref> method to cause all listeners to receive the event. The <ref refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" kindref="member">event_router_t::empty()</ref> method will return true if there are no listeners attached to the <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> (this can be used to save time by not constructing objects that nobody will ever see). The <ref refid="classdpp_1_1event__router__t_1a6f0435163c6765ddc61c42f9f9beabb2" kindref="member">event_router_t::detach()</ref> method removes an existing listener from the event, using the event_handle ID returned by operator(). </para>
+<para>Handles routing of an event to multiple listeners. </para>
     </briefdescription>
     <detaileddescription>
+<para>Multiple listeners may attach to the <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> by means of operator(). Passing a lambda into operator() attaches to the event.</para>
+<para>Dispatchers of the event may call the <ref refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" kindref="member">event_router_t::call()</ref> method to cause all listeners to receive the event.</para>
+<para>The <ref refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" kindref="member">event_router_t::empty()</ref> method will return true if there are no listeners attached to the <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> (this can be used to save time by not constructing objects that nobody will ever see).</para>
+<para>The <ref refid="classdpp_1_1event__router__t_1a6f0435163c6765ddc61c42f9f9beabb2" kindref="member">event_router_t::detach()</ref> method removes an existing listener from the event, using the event_handle ID returned by operator().</para>
 <para>This class is used by the library to route all websocket events to listening code.</para>
 <para>Example:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Declare<sp/>an<sp/>event<sp/>that<sp/>takes<sp/>log_t<sp/>as<sp/>its<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
@@ -196,13 +244,15 @@
 </parameterlist>
 </para>
     </detaileddescription>
-    <location file="include/dpp/cluster.h" line="270" column="11" bodyfile="include/dpp/cluster.h" bodystart="270" bodyend="347"/>
+    <location file="include/dpp/cluster.h" line="275" column="11" bodyfile="include/dpp/cluster.h" bodystart="275" bodyend="374"/>
     <listofallmembers>
+      <member refid="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach</name></member>
       <member refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>call</name></member>
       <member refid="classdpp_1_1event__router__t_1a6f0435163c6765ddc61c42f9f9beabb2" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>detach</name></member>
       <member refid="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>dispatch_container</name></member>
       <member refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>empty</name></member>
       <member refid="classdpp_1_1event__router__t_1a667c18e57cc53f960d3467e84358a822" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>event_router_t</name></member>
+      <member refid="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>lock</name></member>
       <member refid="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>next_handle</name></member>
       <member refid="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator()</name></member>
     </listofallmembers>
