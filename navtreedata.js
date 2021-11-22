@@ -60,9 +60,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1cluster.html#a06083a6cacaf7c4e41884cfb2a1078ab",
-"classdpp_1_1cluster.html#a75e1e5dd813d36fffd6b532ed1b31178",
-"classdpp_1_1cluster.html#afdcac1f0134cb08bdaebad831fa483fd",
+"classdpp_1_1cluster.html#a04dc202cee249447c1a135a80a852daf",
+"classdpp_1_1cluster.html#a79bca459baf731e6fea858f641d634d1",
+"classdpp_1_1cluster.html#afe71c4ae6b36b32750eb0316e162489f",
 "classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86",
 "classdpp_1_1events_1_1event.html#a03fd1d1321e3660f00c4a9e00da2aa81",
 "classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c",
