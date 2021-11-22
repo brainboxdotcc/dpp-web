@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"structdpp_1_1command__source.html#a98d2f56173783173717ee1ef90f6e424":[6,0,1,33,0],
+"structdpp_1_1command__source.html#a98d2f56173783173717ee1ef90f6e424":[7,0,1,33,0],
 "structdpp_1_1command__source.html#ad81aa8dca95492d9e26488cb22d4df45":[7,0,1,33,4],
 "structdpp_1_1command__source.html#ad81aa8dca95492d9e26488cb22d4df45":[6,0,1,33,4],
 "structdpp_1_1component_1_1inner__emoji.html":[7,0,1,35,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "structdpp_1_1guild__ban__remove__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,1,64,2],
 "structdpp_1_1guild__ban__remove__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,64,2],
 "structdpp_1_1guild__create__t.html":[6,0,1,66],
-"structdpp_1_1guild__create__t.html":[7,0,1,66],
-"structdpp_1_1guild__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,66,5],
-"structdpp_1_1guild__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,66,5]
+"structdpp_1_1guild__create__t.html":[7,0,1,66]
 };

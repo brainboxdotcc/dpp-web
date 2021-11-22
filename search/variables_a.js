@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['key_0',['key',['../structdpp_1_1audit__change.html#abb0f7485a2d413476f1f8663fe1a8014',1,'dpp::audit_change']]]
+  ['joined_0',['joined',['../structdpp_1_1thread__member.html#a1b8e07233ef58b4a0b765b0e1e54e000',1,'dpp::thread_member']]],
+  ['joined_5fat_1',['joined_at',['../classdpp_1_1guild__member.html#aae2dfc2f98671c98704db1fa4295b05f',1,'dpp::guild_member']]]
 ];
