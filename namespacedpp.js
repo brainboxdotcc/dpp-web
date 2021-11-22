@@ -768,6 +768,7 @@ var namespacedpp =
       [ "HTTP_HEADERS", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519ac4e7462fef7673f64bf129dde58c9f70", null ],
       [ "CONNECTED", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519ab21dc4f63ee869c75f21c77922769e6d", null ]
     ] ],
+    [ "attach", "namespacedpp.html#a6706334b9e9feed5d39174d3c1e5532c", null ],
     [ "base64_encode", "namespacedpp.html#a81eeb32f4e67cd830f6bc5f52c006c9b", null ],
     [ "BoolNotNull", "namespacedpp.html#af0b40be5029ec87c8df251f927e94eef", null ],
     [ "call_event", "namespacedpp.html#a0d8a2ea3b1c197d0d2277574186226c6", null ],

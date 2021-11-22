@@ -1634,6 +1634,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a951e53ab4cf1a2e8a186e2bdeb2ccb34"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a951e53ab4cf1a2e8a186e2bdeb2ccb34">detach</a> (T container, const <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> ptr)</td></tr>
 <tr class="memdesc:a951e53ab4cf1a2e8a186e2bdeb2ccb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detatch a listener from an event container.  <a href="namespacedpp.html#a951e53ab4cf1a2e8a186e2bdeb2ccb34">More...</a><br /></td></tr>
 <tr class="separator:a951e53ab4cf1a2e8a186e2bdeb2ccb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6706334b9e9feed5d39174d3c1e5532c"><td class="memTemplParams" colspan="2">template&lt;typename T , class F &gt; </td></tr>
+<tr class="memitem:a6706334b9e9feed5d39174d3c1e5532c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6706334b9e9feed5d39174d3c1e5532c">attach</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *c, T &amp;container, F func)</td></tr>
+<tr class="memdesc:a6706334b9e9feed5d39174d3c1e5532c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach an event to a dispatcher map. Used internally by the library.  <a href="namespacedpp.html#a6706334b9e9feed5d39174d3c1e5532c">More...</a><br /></td></tr>
+<tr class="separator:a6706334b9e9feed5d39174d3c1e5532c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d8a2ea3b1c197d0d2277574186226c6"><td class="memTemplParams" colspan="2">template&lt;class V , class E &gt; </td></tr>
 <tr class="memitem:a0d8a2ea3b1c197d0d2277574186226c6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0d8a2ea3b1c197d0d2277574186226c6">call_event</a> (const V &amp;vec, const E &amp;event)</td></tr>
 <tr class="memdesc:a0d8a2ea3b1c197d0d2277574186226c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all listeners for an event handler.  <a href="namespacedpp.html#a0d8a2ea3b1c197d0d2277574186226c6">More...</a><br /></td></tr>
@@ -4224,6 +4228,60 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a6706334b9e9feed5d39174d3c1e5532c" name="a6706334b9e9feed5d39174d3c1e5532c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6706334b9e9feed5d39174d3c1e5532c">&#9670;&nbsp;</a></span>attach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> dpp::attach </td>
+          <td>(</td>
+          <td class="paramtype">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attach an event to a dispatcher map. Used internally by the library. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>map container in <a class="el" href="classdpp_1_1dispatcher.html" title="The dispatcher class contains a set of std::functions representing hooked events that the user code i...">dpp::dispatcher</a> to attach event to </td></tr>
+    <tr><td class="paramname">F</td><td>listener function to attach to the event </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>owning cluster for the event </td></tr>
+    <tr><td class="paramname">container</td><td>container within the <a class="el" href="classdpp_1_1dispatcher.html" title="The dispatcher class contains a set of std::functions representing hooked events that the user code i...">dpp::dispatcher</a> </td></tr>
+    <tr><td class="paramname">func</td><td>function to attach to listen to the event </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>event_handle event handle of the attached event, for use with <a class="el" href="namespacedpp.html#a951e53ab4cf1a2e8a186e2bdeb2ccb34" title="Detatch a listener from an event container.">dpp::detach</a> </dd></dl>
+
+</div>
+</div>
 <a id="a81eeb32f4e67cd830f6bc5f52c006c9b" name="a81eeb32f4e67cd830f6bc5f52c006c9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81eeb32f4e67cd830f6bc5f52c006c9b">&#9670;&nbsp;</a></span>base64_encode()</h2>
 

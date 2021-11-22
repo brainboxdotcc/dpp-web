@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structdpp_1_1voice__state__update__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,165,2],
 "structdpp_1_1voice__track__marker__t.html":[6,0,1,166],
 "structdpp_1_1voice__track__marker__t.html":[7,0,1,166],
 "structdpp_1_1voice__track__marker__t.html#a09cf903ff8f180dc53a844b99bd2bdbd":[6,0,1,166,6],
