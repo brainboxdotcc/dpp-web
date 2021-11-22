@@ -15,5 +15,6 @@ var searchData=
   ['event_5fdispatch_5ft_12',['event_dispatch_t',['../structdpp_1_1event__dispatch__t.html',1,'dpp']]],
   ['event_5fentities_13',['event_entities',['../structdpp_1_1event__entities.html',1,'dpp']]],
   ['event_5fmember_14',['event_member',['../structdpp_1_1event__member.html',1,'dpp']]],
-  ['exception_15',['exception',['../classdpp_1_1exception.html',1,'dpp']]]
+  ['event_5frouter_5ft_15',['event_router_t',['../classdpp_1_1event__router__t.html',1,'dpp']]],
+  ['exception_16',['exception',['../classdpp_1_1exception.html',1,'dpp']]]
 ];

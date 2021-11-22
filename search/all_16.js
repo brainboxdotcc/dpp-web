@@ -9,7 +9,7 @@ var searchData=
   ['webhook_5fid_6',['webhook_id',['../structdpp_1_1message.html#ad1033bc27c5c1436c2e321d1be1d65ed',1,'dpp::message']]],
   ['webhook_5fmap_7',['webhook_map',['../namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca',1,'dpp']]],
   ['webhook_5ftype_8',['webhook_type',['../namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0',1,'dpp']]],
-  ['webhooks_5fupdate_9',['webhooks_update',['../classdpp_1_1events_1_1webhooks__update.html',1,'dpp::events::webhooks_update'],['../classdpp_1_1dispatcher.html#a87a2dda728afdbb14b9879304692c38b',1,'dpp::dispatcher::webhooks_update()']]],
+  ['webhooks_5fupdate_9',['webhooks_update',['../classdpp_1_1events_1_1webhooks__update.html',1,'dpp::events']]],
   ['webhooks_5fupdate_5ft_10',['webhooks_update_t',['../structdpp_1_1webhooks__update__t.html',1,'dpp::webhooks_update_t'],['../structdpp_1_1webhooks__update__t.html#aa070b1866b55bc3e6d2a7a8b698e8c1b',1,'dpp::webhooks_update_t::webhooks_update_t()']]],
   ['websocket_5fclient_11',['websocket_client',['../classdpp_1_1websocket__client.html',1,'dpp::websocket_client'],['../classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b',1,'dpp::websocket_client::websocket_client()']]],
   ['websocket_5fhostname_12',['websocket_hostname',['../classdpp_1_1voiceconn.html#a9c0868d279364472bf0c86a4b5ae8f1b',1,'dpp::voiceconn']]],

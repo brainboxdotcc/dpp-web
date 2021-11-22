@@ -112,9 +112,9 @@ $(document).ready(function(){initNavTree('classdpp_1_1timed__listener.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8994ee0a17d8909a79e6d2a6880fa9e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1timed__listener.html#a8994ee0a17d8909a79e6d2a6880fa9e8">timed_listener</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *cl, uint64_t _duration, std::map&lt; <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>, attached_event &gt; &amp;event, listening_function listener, <a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a> on_end={})</td></tr>
-<tr class="memdesc:a8994ee0a17d8909a79e6d2a6880fa9e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new timed listener object.  <a href="classdpp_1_1timed__listener.html#a8994ee0a17d8909a79e6d2a6880fa9e8">More...</a><br /></td></tr>
-<tr class="separator:a8994ee0a17d8909a79e6d2a6880fa9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8557fea6b073b1cce59dae3582b8cdba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1timed__listener.html#a8557fea6b073b1cce59dae3582b8cdba">timed_listener</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *cl, uint64_t _duration, attached_event &amp;event, listening_function listener, <a class="el" href="namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964">timer_callback_t</a> on_end={})</td></tr>
+<tr class="memdesc:a8557fea6b073b1cce59dae3582b8cdba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new timed listener object.  <a href="classdpp_1_1timed__listener.html#a8557fea6b073b1cce59dae3582b8cdba">More...</a><br /></td></tr>
+<tr class="separator:a8557fea6b073b1cce59dae3582b8cdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60aecf4b71039950d7965adca65dc7d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1timed__listener.html#a60aecf4b71039950d7965adca65dc7d7">~timed_listener</a> ()</td></tr>
 <tr class="memdesc:a60aecf4b71039950d7965adca65dc7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the timed listener object.  <a href="classdpp_1_1timed__listener.html#a60aecf4b71039950d7965adca65dc7d7">More...</a><br /></td></tr>
 <tr class="separator:a60aecf4b71039950d7965adca65dc7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,14 +124,14 @@ Public Member Functions</h2></td></tr>
 class dpp::timed_listener&lt; attached_event, listening_function &gt;</div><p >A <a class="el" href="classdpp_1_1timed__listener.html" title="A timed_listener is a way to temporarily attach to an event for a specific timeframe,...">timed_listener</a> is a way to temporarily attach to an event for a specific timeframe, then detach when complete. A lambda may also be optionally called when the timeout is reached. Destructing the <a class="el" href="classdpp_1_1timed__listener.html" title="A timed_listener is a way to temporarily attach to an event for a specific timeframe,...">timed_listener</a> detaches any attached event listeners, and cancels any created timers, but does not call any timeout lambda. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">attached_event</td><td>Event within cluster to attach to within the <a class="el" href="classdpp_1_1cluster.html#ad7dfd048a845235dda924b989c1383f3">cluster::dispatch</a> member (<a class="el" href="classdpp_1_1dispatcher.html" title="The dispatcher class contains a set of std::functions representing hooked events that the user code i...">dpp::dispatcher</a> object) </td></tr>
+    <tr><td class="paramname">attached_event</td><td>Event within cluster to attach to within the cluster::dispatch member (dpp::dispatcher object) </td></tr>
     <tr><td class="paramname">listening_function</td><td>Definition of lambda function that matches up with the attached_event. </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8994ee0a17d8909a79e6d2a6880fa9e8" name="a8994ee0a17d8909a79e6d2a6880fa9e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8994ee0a17d8909a79e6d2a6880fa9e8">&#9670;&nbsp;</a></span>timed_listener()</h2>
+<a id="a8557fea6b073b1cce59dae3582b8cdba" name="a8557fea6b073b1cce59dae3582b8cdba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8557fea6b073b1cce59dae3582b8cdba">&#9670;&nbsp;</a></span>timed_listener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +156,7 @@ template&lt;typename attached_event , class listening_function &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>, attached_event &gt; &amp;&#160;</td>
+          <td class="paramtype">attached_event &amp;&#160;</td>
           <td class="paramname"><em>event</em>, </td>
         </tr>
         <tr>

@@ -246,9 +246,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a discord voice connection. Each <a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a> connects to one voice channel and derives from a websocket client.  <a href="classdpp_1_1discord__voice__client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1dispatcher.html">dispatcher</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dispatcher class contains a set of std::functions representing hooked events that the user code is interested in. These are modified via the on_eventname style methods in the cluster class.  <a href="classdpp_1_1dispatcher.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1dtemplate.html">dtemplate</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a guild template.  <a href="classdpp_1_1dtemplate.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,6 +290,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__member.html">event_member</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a guild member/user who has registered interest in an event.  <a href="structdpp_1_1event__member.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles routing of an event to multiple listeners. Multiple listeners may attach to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners. Multiple listeners may attach to the event_router_...">event_router_t</a> by means of operator(). Passing a lambda into operator() attaches to the event. Dispatchers of the event may call the <a class="el" href="classdpp_1_1event__router__t.html#a6e94644732d2785dde4fea7a42330f26" title="Call all attached listeners. Listenrs may cancel, by calling the event.cancel method.">event_router_t::call()</a> method to cause all listeners to receive the event. The <a class="el" href="classdpp_1_1event__router__t.html#ae0c04d0d1c7488aabff0a5eac7b09dd7" title="Returns true if the container of listeners is empty, i.e. there is nothing listening for this event r...">event_router_t::empty()</a> method will return true if there are no listeners attached to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners. Multiple listeners may attach to the event_router_...">event_router_t</a> (this can be used to save time by not constructing objects that nobody will ever see). The event_router_t::dispatch() method removes an existing listener from the event, using the event_handle ID returned by operator().  <a href="classdpp_1_1event__router__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1exception.html">exception</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a> class derives from std::exception and supports some other ways of passing in error details such as via std::string.  <a href="classdpp_1_1exception.html#details">More...</a><br /></td></tr>
@@ -400,7 +400,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integration update.  <a href="structdpp_1_1integration__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1interaction.html">interaction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An interaction represents a user running a command and arrives via the <a class="el" href="classdpp_1_1cluster.html#a3287881d5f1aba46a7013c695b69a591" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a> event.  <a href="classdpp_1_1interaction.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An interaction represents a user running a command and arrives via the <a class="el" href="classdpp_1_1cluster.html#a23aa1d8bcc90afe7aa265940763f5a65" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a> event.  <a href="classdpp_1_1interaction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html">interaction_create_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interaction.  <a href="structdpp_1_1interaction__create__t.html#details">More...</a><br /></td></tr>
@@ -1630,18 +1630,6 @@ Functions</h2></td></tr>
 <tr class="separator:a36d2c45cce93740da4da28ef18e90a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981df68922716d97ba921fd2027c3513"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a981df68922716d97ba921fd2027c3513">tokenize</a> (std::string const &amp;in, const char *sep=&quot;\r\n&quot;)</td></tr>
 <tr class="separator:a981df68922716d97ba921fd2027c3513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951e53ab4cf1a2e8a186e2bdeb2ccb34"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a951e53ab4cf1a2e8a186e2bdeb2ccb34"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a951e53ab4cf1a2e8a186e2bdeb2ccb34">detach</a> (T container, const <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> ptr)</td></tr>
-<tr class="memdesc:a951e53ab4cf1a2e8a186e2bdeb2ccb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detatch a listener from an event container.  <a href="namespacedpp.html#a951e53ab4cf1a2e8a186e2bdeb2ccb34">More...</a><br /></td></tr>
-<tr class="separator:a951e53ab4cf1a2e8a186e2bdeb2ccb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6706334b9e9feed5d39174d3c1e5532c"><td class="memTemplParams" colspan="2">template&lt;typename T , class F &gt; </td></tr>
-<tr class="memitem:a6706334b9e9feed5d39174d3c1e5532c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6706334b9e9feed5d39174d3c1e5532c">attach</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *c, T &amp;container, F func)</td></tr>
-<tr class="memdesc:a6706334b9e9feed5d39174d3c1e5532c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach an event to a dispatcher map. Used internally by the library.  <a href="namespacedpp.html#a6706334b9e9feed5d39174d3c1e5532c">More...</a><br /></td></tr>
-<tr class="separator:a6706334b9e9feed5d39174d3c1e5532c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d8a2ea3b1c197d0d2277574186226c6"><td class="memTemplParams" colspan="2">template&lt;class V , class E &gt; </td></tr>
-<tr class="memitem:a0d8a2ea3b1c197d0d2277574186226c6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0d8a2ea3b1c197d0d2277574186226c6">call_event</a> (const V &amp;vec, const E &amp;event)</td></tr>
-<tr class="memdesc:a0d8a2ea3b1c197d0d2277574186226c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all listeners for an event handler.  <a href="namespacedpp.html#a0d8a2ea3b1c197d0d2277574186226c6">More...</a><br /></td></tr>
-<tr class="separator:a0d8a2ea3b1c197d0d2277574186226c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -4228,60 +4216,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6706334b9e9feed5d39174d3c1e5532c" name="a6706334b9e9feed5d39174d3c1e5532c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6706334b9e9feed5d39174d3c1e5532c">&#9670;&nbsp;</a></span>attach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , class F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> dpp::attach </td>
-          <td>(</td>
-          <td class="paramtype">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>container</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">F&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Attach an event to a dispatcher map. Used internally by the library. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>map container in <a class="el" href="classdpp_1_1dispatcher.html" title="The dispatcher class contains a set of std::functions representing hooked events that the user code i...">dpp::dispatcher</a> to attach event to </td></tr>
-    <tr><td class="paramname">F</td><td>listener function to attach to the event </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c</td><td>owning cluster for the event </td></tr>
-    <tr><td class="paramname">container</td><td>container within the <a class="el" href="classdpp_1_1dispatcher.html" title="The dispatcher class contains a set of std::functions representing hooked events that the user code i...">dpp::dispatcher</a> </td></tr>
-    <tr><td class="paramname">func</td><td>function to attach to listen to the event </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>event_handle event handle of the attached event, for use with <a class="el" href="namespacedpp.html#a951e53ab4cf1a2e8a186e2bdeb2ccb34" title="Detatch a listener from an event container.">dpp::detach</a> </dd></dl>
-
-</div>
-</div>
 <a id="a81eeb32f4e67cd830f6bc5f52c006c9b" name="a81eeb32f4e67cd830f6bc5f52c006c9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81eeb32f4e67cd830f6bc5f52c006c9b">&#9670;&nbsp;</a></span>base64_encode()</h2>
 
@@ -4355,98 +4289,6 @@ template&lt;typename T , class F &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>found value </dd></dl>
-
-</div>
-</div>
-<a id="a0d8a2ea3b1c197d0d2277574186226c6" name="a0d8a2ea3b1c197d0d2277574186226c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d8a2ea3b1c197d0d2277574186226c6">&#9670;&nbsp;</a></span>call_event()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V , class E &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dpp::call_event </td>
-          <td>(</td>
-          <td class="paramtype">const V &amp;&#160;</td>
-          <td class="paramname"><em>vec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const E &amp;&#160;</td>
-          <td class="paramname"><em>event</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call all listeners for an event handler. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">V</td><td>a <code>std::map</code> of <code>std::function</code>, where each <code>std::function</code> takes a single parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">dpp::event_dispatch_t</a> </td></tr>
-    <tr><td class="paramname">E</td><td>an object derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">dpp::event_dispatch_t</a> to pass as the single parameter to the event listener functions </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vec</td><td>vector of listeners attached to an event handler </td></tr>
-    <tr><td class="paramname">event</td><td>event object to pass as a parameter to the event handler </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a951e53ab4cf1a2e8a186e2bdeb2ccb34" name="a951e53ab4cf1a2e8a186e2bdeb2ccb34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a951e53ab4cf1a2e8a186e2bdeb2ccb34">&#9670;&nbsp;</a></span>detach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dpp::detach </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>container</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td>
-          <td class="paramname"><em>ptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Detatch a listener from an event container. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>event container type </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">container</td><td>container to detach from </td></tr>
-    <tr><td class="paramname">ptr</td><td>handle to listener to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>bool True if successfully removed listener </dd></dl>
 
 </div>
 </div>

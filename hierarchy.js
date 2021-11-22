@@ -31,7 +31,6 @@ var hierarchy =
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
     [ "dpp::connection", "classdpp_1_1connection.html", null ],
-    [ "dpp::dispatcher", "classdpp_1_1dispatcher.html", null ],
     [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
     [ "dpp::embed_author", "structdpp_1_1embed__author.html", null ],
@@ -180,6 +179,7 @@ var hierarchy =
     ] ],
     [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
     [ "dpp::event_member", "structdpp_1_1event__member.html", null ],
+    [ "dpp::event_router_t< F >", "classdpp_1_1event__router__t.html", null ],
     [ "std::exception", null, [
       [ "dpp::exception", "classdpp_1_1exception.html", [
         [ "dpp::connection_exception", "classdpp_1_1connection__exception.html", null ],

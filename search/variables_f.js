@@ -22,14 +22,13 @@ var searchData=
   ['premium_5fsince_19',['premium_since',['../classdpp_1_1guild__member.html#ae262a3f3d68a9728a92654e2f5b9c758',1,'dpp::guild_member']]],
   ['premium_5fsubscription_5fcount_20',['premium_subscription_count',['../classdpp_1_1guild.html#acd884a98bc58d26d29a6a5d2e249f1c9',1,'dpp::guild']]],
   ['premium_5ftier_21',['premium_tier',['../classdpp_1_1guild.html#a164e4d1c99fcce1bed5a72d3bb5e493e',1,'dpp::guild']]],
-  ['presence_5fupdate_22',['presence_update',['../classdpp_1_1dispatcher.html#a98d5d58c75a3b74066bc7d8f11411b80',1,'dpp::dispatcher']]],
-  ['primary_5fsku_5fid_23',['primary_sku_id',['../classdpp_1_1application.html#a7aa6f427a79d6efb30d22f34dbecae98',1,'dpp::application']]],
-  ['privacy_5flevel_24',['privacy_level',['../structdpp_1_1stage__instance.html#ae198d6dba53766e0375c1705165ddca7',1,'dpp::stage_instance::privacy_level()'],['../structdpp_1_1scheduled__event.html#a52f6049445ba9debcbdb1ec896c0fcb1',1,'dpp::scheduled_event::privacy_level()']]],
-  ['privacy_5fpolicy_5furl_25',['privacy_policy_url',['../classdpp_1_1application.html#a97b791c3e357fcdcea6306efffb9584e',1,'dpp::application']]],
-  ['protect_5fthe_5floot_26',['protect_the_loot',['../namespacedpp_1_1events.html#abb48b619aaa302ed2ab79d152146902e',1,'dpp::events']]],
-  ['protocol_27',['protocol',['../classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7',1,'dpp::discord_client']]],
-  ['provider_28',['provider',['../structdpp_1_1embed.html#a689c7c16c458de20b1998b532364be0d',1,'dpp::embed']]],
-  ['proxy_5ficon_5furl_29',['proxy_icon_url',['../structdpp_1_1embed__author.html#a7b5bda59d7afeca91450d57c72b7c242',1,'dpp::embed_author']]],
-  ['proxy_5furl_30',['proxy_url',['../structdpp_1_1embed__footer.html#aba53ba63861ea7dc412973c274923b6d',1,'dpp::embed_footer::proxy_url()'],['../structdpp_1_1embed__image.html#a156faedb90a1c9a6d9d10d7eb2d1000a',1,'dpp::embed_image::proxy_url()'],['../structdpp_1_1attachment.html#ac3fa01bbb9915006c0a11db9ed386749',1,'dpp::attachment::proxy_url()']]],
-  ['public_5fupdates_5fchannel_5fid_31',['public_updates_channel_id',['../classdpp_1_1guild.html#a10f966d4bc54c233a1ecd6a24ca80dc3',1,'dpp::guild']]]
+  ['primary_5fsku_5fid_22',['primary_sku_id',['../classdpp_1_1application.html#a7aa6f427a79d6efb30d22f34dbecae98',1,'dpp::application']]],
+  ['privacy_5flevel_23',['privacy_level',['../structdpp_1_1stage__instance.html#ae198d6dba53766e0375c1705165ddca7',1,'dpp::stage_instance::privacy_level()'],['../structdpp_1_1scheduled__event.html#a52f6049445ba9debcbdb1ec896c0fcb1',1,'dpp::scheduled_event::privacy_level()']]],
+  ['privacy_5fpolicy_5furl_24',['privacy_policy_url',['../classdpp_1_1application.html#a97b791c3e357fcdcea6306efffb9584e',1,'dpp::application']]],
+  ['protect_5fthe_5floot_25',['protect_the_loot',['../namespacedpp_1_1events.html#abb48b619aaa302ed2ab79d152146902e',1,'dpp::events']]],
+  ['protocol_26',['protocol',['../classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7',1,'dpp::discord_client']]],
+  ['provider_27',['provider',['../structdpp_1_1embed.html#a689c7c16c458de20b1998b532364be0d',1,'dpp::embed']]],
+  ['proxy_5ficon_5furl_28',['proxy_icon_url',['../structdpp_1_1embed__author.html#a7b5bda59d7afeca91450d57c72b7c242',1,'dpp::embed_author']]],
+  ['proxy_5furl_29',['proxy_url',['../structdpp_1_1embed__footer.html#aba53ba63861ea7dc412973c274923b6d',1,'dpp::embed_footer::proxy_url()'],['../structdpp_1_1embed__image.html#a156faedb90a1c9a6d9d10d7eb2d1000a',1,'dpp::embed_image::proxy_url()'],['../structdpp_1_1attachment.html#ac3fa01bbb9915006c0a11db9ed386749',1,'dpp::attachment::proxy_url()']]],
+  ['public_5fupdates_5fchannel_5fid_30',['public_updates_channel_id',['../classdpp_1_1guild.html#a10f966d4bc54c233a1ecd6a24ca80dc3',1,'dpp::guild']]]
 ];
