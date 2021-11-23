@@ -23,5 +23,5 @@ var searchData=
   ['roles_5fget_20',['roles_get',['../classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219',1,'dpp::cluster']]],
   ['route_21',['route',['../classdpp_1_1commandhandler.html#a76d6c3790f9dd01cddaa4d521151c369',1,'dpp::commandhandler::route(const dpp::message &amp;msg)'],['../classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3',1,'dpp::commandhandler::route(const struct interaction_create_t &amp;event)']]],
   ['rtp_5fheader_22',['rtp_header',['../structdpp_1_1rtp__header.html#acc1b39793e54cb2caf586cf65e2d42bd',1,'dpp::rtp_header']]],
-  ['run_23',['Run',['../classdpp_1_1discord__client.html#ae768cabb169f9501bba20704867110e5',1,'dpp::discord_client::Run()'],['../classdpp_1_1discord__voice__client.html#a102408db3accf1a8561bb3e2bccef345',1,'dpp::discord_voice_client::Run()'],['../classdpp_1_1http__request.html#a49af6bb0b85e162b79162b701545cbaa',1,'dpp::http_request::Run()']]]
+  ['run_23',['run',['../classdpp_1_1discord__client.html#ae659e7343de4a120d14f1b81e9535ea0',1,'dpp::discord_client::run()'],['../classdpp_1_1discord__voice__client.html#a418f98812e850eb963e4b3a2a4dc0c74',1,'dpp::discord_voice_client::run()'],['../classdpp_1_1http__request.html#a3693b97e3f58505fa4187a86eecaaa39',1,'dpp::http_request::run()']]]
 ];

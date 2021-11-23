@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queuemessage_0',['QueueMessage',['../classdpp_1_1discord__client.html#afbb1b789c7b365c1dfe776316d5a9829',1,'dpp::discord_client']]]
+  ['queue_5fmessage_0',['queue_message',['../classdpp_1_1discord__client.html#a123f98e2faef134f6954d9a91346fb8d',1,'dpp::discord_client']]]
 ];
