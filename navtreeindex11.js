@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"md_docpages_02_building_a_bot.html":[2],
+"md_docpages_03_example_programs.html":[3],
+"md_docpages_04_advanced_reference.html":[4],
+"namespacedetail.html":[6,0,0],
+"namespacedetail.html#a023a7fa430553323ed4f9613dcfaa421":[6,0,0,22],
+"namespacedetail.html#a0e2ed063eecbb4cc00db8c6242503c5a":[6,0,0,18],
+"namespacedetail.html#a124e4142bce4975170df82199789b2e1":[6,0,0,32],
+"namespacedetail.html#a1a00a41ec118d7a7ede3533869e5572f":[6,0,0,24],
 "namespacedetail.html#a1f56278fd84d8bc33338c33694a87fb8":[6,0,0,39],
 "namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841":[6,0,0,34],
 "namespacedetail.html#a2cf23ad60116d790fd2c2930e68ea609":[6,0,0,27],
@@ -241,13 +249,5 @@ var NAVTREEINDEX11 =
 "namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3":[6,0,1,241,2],
 "namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce":[6,0,1,241,1],
 "namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479":[6,0,1,241,0],
-"namespacedpp.html#a48d2af8b0b8a7a17835b306d44e5e872":[6,0,1,305],
-"namespacedpp.html#a4d0e7257dbc68790bbaa6a34a20b776d":[6,0,1,307],
-"namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b":[6,0,1,342],
-"namespacedpp.html#a50b421a786601a401c22eccf3069d0f8":[6,0,1,352],
-"namespacedpp.html#a51156024d6211aef2731770340cfe452":[6,0,1,209],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099":[6,0,1,261],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099a1497e7d00b13f4eec2dd1556af760885":[6,0,1,261,8],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099a406609dc4e2712b0abc9ca72bf57e390":[6,0,1,261,11],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099a64b0c58ed6fc338811fa50e4001c739b":[6,0,1,261,10]
+"namespacedpp.html#a48d2af8b0b8a7a17835b306d44e5e872":[6,0,1,305]
 };
