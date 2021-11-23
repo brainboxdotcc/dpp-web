@@ -13,6 +13,8 @@ var classdpp_1_1commandhandler =
     [ "thinking", "classdpp_1_1commandhandler.html#aa8ddef707401052283e69956feab5a5c", null ],
     [ "app_id", "classdpp_1_1commandhandler.html#aa77b113d11ae040d9eb32a462bd88a7c", null ],
     [ "commands", "classdpp_1_1commandhandler.html#aaeb676a799cda302d4b08106f898a867", null ],
+    [ "interactions", "classdpp_1_1commandhandler.html#af8ca0a5c050b1774794de79e221a4b4e", null ],
+    [ "messages", "classdpp_1_1commandhandler.html#ac2ed801cb8ac1697bd92799acfae2c0a", null ],
     [ "owner", "classdpp_1_1commandhandler.html#a81203fb77ae98d8cfe81d95bf714fcf0", null ],
     [ "prefixes", "classdpp_1_1commandhandler.html#acbbac80b9d8fd5b3f82fd5bfc919f9bc", null ],
     [ "slash_commands_enabled", "classdpp_1_1commandhandler.html#a29e869380af75e438094960b2e66a898", null ]

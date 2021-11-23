@@ -1,5 +1,9 @@
 var NAVTREEINDEX11 =
 {
+"index.html#autotoc_md68":[0,5],
+"index.html#autotoc_md69":[0,6],
+"joinvc.html":[3,6],
+"md_docpages_02_build.html":[1],
 "md_docpages_02_building_a_bot.html":[2],
 "md_docpages_03_example_programs.html":[3],
 "md_docpages_04_advanced_reference.html":[4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX11 =
 "namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708":[6,0,1,200],
 "namespacedpp.html#a4524e2a056f2d16ba591516fbf275235":[6,0,1,179],
 "namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e":[6,0,1,190],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319f":[6,0,1,241],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3":[6,0,1,241,2],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce":[6,0,1,241,1],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479":[6,0,1,241,0],
-"namespacedpp.html#a48d2af8b0b8a7a17835b306d44e5e872":[6,0,1,305]
+"namespacedpp.html#a47f79e1142def583c59df70b1382319f":[6,0,1,241]
 };
