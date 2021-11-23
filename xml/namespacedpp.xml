@@ -5514,7 +5514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="247" column="16" bodyfile="src/dpp/discordevents.cpp" bodystart="247" bodyend="-1"/>
+        <location file="src/dpp/discordevents.cpp" line="259" column="16" bodyfile="src/dpp/discordevents.cpp" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1af5d78d18a19b3fef2cf11ff545fee91c" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -5965,11 +5965,41 @@
         </inbodydescription>
         <location file="src/dpp/channel.cpp" line="41" column="6" bodyfile="src/dpp/channel.cpp" bodystart="41" bodyend="46" declfile="include/dpp/channel.h" declline="417" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a82aba4478fa9f6b684d209af7a9eb754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1aa5d1b14ba391c0e2c80da8104029e3e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::ts_to_string</definition>
+        <argsstring>(time_t ts)</argsstring>
+        <name>ts_to_string</name>
+        <param>
+          <type>time_t</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+<para>Convert time_t unix epoch to std::string ISO date/time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timestamp to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string Converted time/date string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/discordevents.cpp" line="50" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="50" bodyend="60" declfile="include/dpp/discordevents.h" declline="154" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ae3adf3a9d45170342096a41c8f8a73c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::SnowflakeNotNull</definition>
+        <definition>uint64_t dpp::snowflake_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
-        <name>SnowflakeNotNull</name>
+        <name>snowflake_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6005,13 +6035,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="50" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="50" bodyend="63" declfile="include/dpp/discordevents.h" declline="32" declcolumn="10"/>
+        <location file="src/dpp/discordevents.cpp" line="62" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="62" bodyend="75" declfile="include/dpp/discordevents.h" declline="32" declcolumn="10"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a1216561cf2609de845f0085c6ba9c06c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1adb72b0665329d21e979e60be8239a962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::SetSnowflakeNotNull</definition>
+        <definition>void dpp::set_snowflake_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint64_t &amp;v)</argsstring>
-        <name>SetSnowflakeNotNull</name>
+        <name>set_snowflake_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6057,13 +6087,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="65" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="65" bodyend="70" declfile="include/dpp/discordevents.h" declline="39" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="77" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="77" bodyend="82" declfile="include/dpp/discordevents.h" declline="39" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1acd67ddd4f95dbdac48f554ddcbbeb0b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1aff1b41932df1203db7b45eb24c9ec297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
-        <definition>std::string dpp::StringNotNull</definition>
+        <definition>std::string dpp::string_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
-        <name>StringNotNull</name>
+        <name>string_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6099,13 +6129,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="73" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="73" bodyend="81" declfile="include/dpp/discordevents.h" declline="46" declcolumn="13"/>
+        <location file="src/dpp/discordevents.cpp" line="85" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="85" bodyend="93" declfile="include/dpp/discordevents.h" declline="46" declcolumn="13"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a0372deb43206ac56d44b1ab77f07f98d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1af3688ca52199826cb1ac394fb5d1116e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::SetStringNotNull</definition>
+        <definition>void dpp::set_string_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, std::string &amp;v)</argsstring>
-        <name>SetStringNotNull</name>
+        <name>set_string_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6151,13 +6181,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="83" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="83" bodyend="89" declfile="include/dpp/discordevents.h" declline="53" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="95" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="95" bodyend="101" declfile="include/dpp/discordevents.h" declline="53" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1acbaec22075a1b65604103b2b90a6e282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a48d2af8b0b8a7a17835b306d44e5e872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::Int64NotNull</definition>
+        <definition>uint64_t dpp::int64_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
-        <name>Int64NotNull</name>
+        <name>int64_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6193,13 +6223,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="91" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="91" bodyend="98" declfile="include/dpp/discordevents.h" declline="61" declcolumn="10"/>
+        <location file="src/dpp/discordevents.cpp" line="103" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="103" bodyend="110" declfile="include/dpp/discordevents.h" declline="61" declcolumn="10"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1aaab450d8bc3301010a1f75df8ce63e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1ad700ccb42655b4b1001340160bdb2068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::SetInt64NotNull</definition>
+        <definition>void dpp::set_int64_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint64_t &amp;v)</argsstring>
-        <name>SetInt64NotNull</name>
+        <name>set_int64_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6245,13 +6275,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="100" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="100" bodyend="105" declfile="include/dpp/discordevents.h" declline="68" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="112" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="112" bodyend="117" declfile="include/dpp/discordevents.h" declline="68" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a0ec00af0eb7cc6ae98fffbbd589e102b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a60433ef687fe69d1771739ae6313edc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
-        <definition>uint32_t dpp::Int32NotNull</definition>
+        <definition>uint32_t dpp::int32_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
-        <name>Int32NotNull</name>
+        <name>int32_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6287,13 +6317,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="108" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="108" bodyend="115" declfile="include/dpp/discordevents.h" declline="75" declcolumn="10"/>
+        <location file="src/dpp/discordevents.cpp" line="120" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="120" bodyend="127" declfile="include/dpp/discordevents.h" declline="75" declcolumn="10"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ac296a013a8ea5f03da0953ff263a6438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a14347ab13e156a95f1ab83991ddd3dc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::SetInt32NotNull</definition>
+        <definition>void dpp::set_int32_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint32_t &amp;v)</argsstring>
-        <name>SetInt32NotNull</name>
+        <name>set_int32_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6339,13 +6369,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="117" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="117" bodyend="122" declfile="include/dpp/discordevents.h" declline="82" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="129" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="129" bodyend="134" declfile="include/dpp/discordevents.h" declline="82" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a1ec69281fca102c8dbc0afb117e18c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1af661e9d3c9ba050db0a1cf8a74d519ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
-        <definition>uint16_t dpp::Int16NotNull</definition>
+        <definition>uint16_t dpp::int16_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
-        <name>Int16NotNull</name>
+        <name>int16_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6381,13 +6411,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="124" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="124" bodyend="131" declfile="include/dpp/discordevents.h" declline="89" declcolumn="10"/>
+        <location file="src/dpp/discordevents.cpp" line="136" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="136" bodyend="143" declfile="include/dpp/discordevents.h" declline="89" declcolumn="10"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ab3ce48617238a41aebf1048467ebdfd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a9d2f9cffa7858b142252ed828135031b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::SetInt16NotNull</definition>
+        <definition>void dpp::set_int16_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint16_t &amp;v)</argsstring>
-        <name>SetInt16NotNull</name>
+        <name>set_int16_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6433,13 +6463,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="133" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="133" bodyend="138" declfile="include/dpp/discordevents.h" declline="96" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="145" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="145" bodyend="150" declfile="include/dpp/discordevents.h" declline="96" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a36b79dfd40f25ebd4967f519b52e068f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a7e158129906c5ea85d850f204dbc7d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
-        <definition>uint8_t dpp::Int8NotNull</definition>
+        <definition>uint8_t dpp::int8_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
-        <name>Int8NotNull</name>
+        <name>int8_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6475,13 +6505,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="140" column="9" bodyfile="src/dpp/discordevents.cpp" bodystart="140" bodyend="147" declfile="include/dpp/discordevents.h" declline="103" declcolumn="9"/>
+        <location file="src/dpp/discordevents.cpp" line="152" column="9" bodyfile="src/dpp/discordevents.cpp" bodystart="152" bodyend="159" declfile="include/dpp/discordevents.h" declline="103" declcolumn="9"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ad0ab4c9d88aa3224ca1b8513f9b7f91b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a81be2f1016248ed7e697a7a50fb9586f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::SetInt8NotNull</definition>
+        <definition>void dpp::set_int8_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint8_t &amp;v)</argsstring>
-        <name>SetInt8NotNull</name>
+        <name>set_int8_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6527,13 +6557,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="149" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="149" bodyend="154" declfile="include/dpp/discordevents.h" declline="110" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="161" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="161" bodyend="166" declfile="include/dpp/discordevents.h" declline="110" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1af0b40be5029ec87c8df251f927e94eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a0b572e3b9c9589abfda7c048782f1089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::BoolNotNull</definition>
+        <definition>bool dpp::bool_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
-        <name>BoolNotNull</name>
+        <name>bool_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6569,13 +6599,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="156" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="156" bodyend="163" declfile="include/dpp/discordevents.h" declline="117" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="168" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="168" bodyend="175" declfile="include/dpp/discordevents.h" declline="117" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ab3eb25fd6578973e4b2bc86d5c073d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a1d859699fdaf24be9eb952c925e0f4e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::SetBoolNotNull</definition>
+        <definition>void dpp::set_bool_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, bool &amp;v)</argsstring>
-        <name>SetBoolNotNull</name>
+        <name>set_bool_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6621,7 +6651,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="165" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="165" bodyend="170" declfile="include/dpp/discordevents.h" declline="124" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="177" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="177" bodyend="182" declfile="include/dpp/discordevents.h" declline="124" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a81eeb32f4e67cd830f6bc5f52c006c9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -6663,13 +6693,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="172" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="172" bodyend="197" declfile="include/dpp/discordevents.h" declline="146" declcolumn="13"/>
+        <location file="src/dpp/discordevents.cpp" line="184" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="184" bodyend="209" declfile="include/dpp/discordevents.h" declline="146" declcolumn="13"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a39627e093f238673664294587921a590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1aa4ab356292d0e7b1ee074a8f4a08a9c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>time_t</type>
-        <definition>time_t dpp::TimestampNotNull</definition>
+        <definition>time_t dpp::ts_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
-        <name>TimestampNotNull</name>
+        <name>ts_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6705,13 +6735,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="199" column="8" bodyfile="src/dpp/discordevents.cpp" bodystart="199" bodyend="221" declfile="include/dpp/discordevents.h" declline="132" declcolumn="8"/>
+        <location file="src/dpp/discordevents.cpp" line="211" column="8" bodyfile="src/dpp/discordevents.cpp" bodystart="211" bodyend="233" declfile="include/dpp/discordevents.h" declline="132" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ad8d0229b64fda0313bdedc5966227aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1a0a53fcf964c451a36d8970d7e73cad10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::SetTimestampNotNull</definition>
+        <definition>void dpp::set_ts_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, time_t &amp;v)</argsstring>
-        <name>SetTimestampNotNull</name>
+        <name>set_ts_not_null</name>
         <param>
           <type>const nlohmann::json *</type>
           <declname>j</declname>
@@ -6757,7 +6787,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="223" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="223" bodyend="245" declfile="include/dpp/discordevents.h" declline="139" declcolumn="6"/>
+        <location file="src/dpp/discordevents.cpp" line="235" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="235" bodyend="257" declfile="include/dpp/discordevents.h" declline="139" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a177af60de5536cff95f417fce3d9487a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
