@@ -91,6 +91,7 @@ var annotated_dup =
       [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
       [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],
       [ "cache", "classdpp_1_1cache.html", "classdpp_1_1cache" ],
+      [ "cache_exception", "classdpp_1_1cache__exception.html", "classdpp_1_1cache__exception" ],
       [ "cache_policy_t", "structdpp_1_1cache__policy__t.html", "structdpp_1_1cache__policy__t" ],
       [ "channel", "classdpp_1_1channel.html", "classdpp_1_1channel" ],
       [ "channel_create_t", "structdpp_1_1channel__create__t.html", "structdpp_1_1channel__create__t" ],

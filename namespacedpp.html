@@ -174,6 +174,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache.html">cache</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cache object maintains a cache of <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> objects. This is for example users, channels or guilds.  <a href="classdpp_1_1cache.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache__exception.html">cache_exception</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents invalid access to dpp's cache or its members, which may or may not exist.  <a href="classdpp_1_1cache__exception.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1cache__policy__t.html">cache_policy_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the caching policy of the cluster.  <a href="structdpp_1_1cache__policy__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1535,6 +1538,9 @@ Functions</h2></td></tr>
 <tr class="separator:af7bf80aac0473a20777487bfd99cd1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1728693a6b7bc12f1bb05e113e5c0428"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1728693a6b7bc12f1bb05e113e5c0428">get_emoji_count</a> ()</td></tr>
 <tr class="separator:a1728693a6b7bc12f1bb05e113e5c0428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0dc906b53c7ccb5ce3ff0b1dbe66a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1guild__member.html">guild_member</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2a0dc906b53c7ccb5ce3ff0b1dbe66a3">find_guild_member</a> (const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id)</td></tr>
+<tr class="memdesc:a2a0dc906b53c7ccb5ce3ff0b1dbe66a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> from cache of given IDs.  <a href="namespacedpp.html#a2a0dc906b53c7ccb5ce3ff0b1dbe66a3">More...</a><br /></td></tr>
+<tr class="separator:a2a0dc906b53c7ccb5ce3ff0b1dbe66a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d77e1ffffe22979d93132a7acee1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a> &amp;tmdata)</td></tr>
 <tr class="separator:a77d77e1ffffe22979d93132a7acee1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5d1b14ba391c0e2c80da8104029e3e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa5d1b14ba391c0e2c80da8104029e3e0">ts_to_string</a> (time_t ts)</td></tr>
@@ -4386,6 +4392,50 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a0dc906b53c7ccb5ce3ff0b1dbe66a3" name="a2a0dc906b53c7ccb5ce3ff0b1dbe66a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a0dc906b53c7ccb5ce3ff0b1dbe66a3">&#9670;&nbsp;</a></span>find_guild_member()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1guild__member.html">guild_member</a> dpp::find_guild_member </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> from cache of given IDs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>ID of the guild to find <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> for </td></tr>
+    <tr><td class="paramname">user_id</td><td>ID of the user to find <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1cache__exception.html" title="Represents invalid access to dpp&#39;s cache or its members, which may or may not exist.">dpp::cache_exception</a></td><td>if the guild or <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> is not found in the cache </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> the cached object, if found </dd></dl>
 
 </div>
 </div>
