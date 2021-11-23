@@ -9,6 +9,7 @@ var classdpp_1_1guild__member =
     [ "is_muted", "classdpp_1_1guild__member.html#a0d9540b747d4f604088bc2d4b82f1695", null ],
     [ "is_pending", "classdpp_1_1guild__member.html#a0e8b71e030ad98f31831d7e0a079b873", null ],
     [ "avatar", "classdpp_1_1guild__member.html#aeb9413ebe5540ebd625a35166f5ad799", null ],
+    [ "communication_disabled_until", "classdpp_1_1guild__member.html#a6bf5f4ec4e76b15734782ff2fdd51170", null ],
     [ "flags", "classdpp_1_1guild__member.html#a11636d9baaca59361c22ac163b09fd7c", null ],
     [ "guild_id", "classdpp_1_1guild__member.html#abc1c9039f54691ae4e8938c2768ccf84", null ],
     [ "joined_at", "classdpp_1_1guild__member.html#aae2dfc2f98671c98704db1fa4295b05f", null ],
