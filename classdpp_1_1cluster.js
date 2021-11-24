@@ -9,7 +9,7 @@ var classdpp_1_1cluster =
     [ "channel_delete_permission", "classdpp_1_1cluster.html#aa2fce9638b93c6b5d5d67f8bea9f8f6c", null ],
     [ "channel_edit", "classdpp_1_1cluster.html#a5511e31156dd2508387b1ba5a1612c09", null ],
     [ "channel_edit_permissions", "classdpp_1_1cluster.html#abfb4457e63c60500b44bfdee27d80c75", null ],
-    [ "channel_edit_position", "classdpp_1_1cluster.html#af23f4785c6b2b01fa42caf2a36b3e725", null ],
+    [ "channel_edit_positions", "classdpp_1_1cluster.html#abed598b2dda139c6a6ed427b4bde1e75", null ],
     [ "channel_follow_news", "classdpp_1_1cluster.html#a1b7593e4ba82977bf3d8ad9052c9c565", null ],
     [ "channel_get", "classdpp_1_1cluster.html#a108f6f06b43709c8d47df5f94a3ca0a5", null ],
     [ "channel_invite_create", "classdpp_1_1cluster.html#a07e66a7400101f466aab40ed58c67942", null ],

@@ -33,7 +33,7 @@ var searchData=
   ['channel_5fdelete_5ft_30',['channel_delete_t',['../structdpp_1_1channel__delete__t.html#afd170d6f5321097ef9c43561b9a8cf1f',1,'dpp::channel_delete_t::channel_delete_t()'],['../structdpp_1_1channel__delete__t.html',1,'dpp::channel_delete_t']]],
   ['channel_5fedit_31',['channel_edit',['../classdpp_1_1cluster.html#a5511e31156dd2508387b1ba5a1612c09',1,'dpp::cluster']]],
   ['channel_5fedit_5fpermissions_32',['channel_edit_permissions',['../classdpp_1_1cluster.html#abfb4457e63c60500b44bfdee27d80c75',1,'dpp::cluster']]],
-  ['channel_5fedit_5fposition_33',['channel_edit_position',['../classdpp_1_1cluster.html#af23f4785c6b2b01fa42caf2a36b3e725',1,'dpp::cluster']]],
+  ['channel_5fedit_5fpositions_33',['channel_edit_positions',['../classdpp_1_1cluster.html#abed598b2dda139c6a6ed427b4bde1e75',1,'dpp::cluster']]],
   ['channel_5fflags_34',['channel_flags',['../namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9',1,'dpp']]],
   ['channel_5ffollow_5fnews_35',['channel_follow_news',['../classdpp_1_1cluster.html#a1b7593e4ba82977bf3d8ad9052c9c565',1,'dpp::cluster']]],
   ['channel_5fget_36',['channel_get',['../classdpp_1_1cluster.html#a108f6f06b43709c8d47df5f94a3ca0a5',1,'dpp::cluster']]],
