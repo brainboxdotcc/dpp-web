@@ -228,7 +228,8 @@ var hierarchy =
       [ "dpp::user", "classdpp_1_1user.html", [
         [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
       ] ],
-      [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
+      [ "dpp::webhook", "classdpp_1_1webhook.html", null ],
+      [ "test_cached_object_t", "classtest__cached__object__t.html", null ]
     ] ],
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],

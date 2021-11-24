@@ -15,13 +15,14 @@
         <argsstring></argsstring>
         <name>cache_mutex</name>
         <briefdescription>
+<para>Mutex to protect the cache. </para>
         </briefdescription>
         <detaileddescription>
-<para>Mutex to protect the cache </para>
+<para>This is a shared mutex so reading is cheap. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="44" column="19" bodyfile="include/dpp/cache.h" bodystart="44" bodyend="-1"/>
+        <location file="include/dpp/cache.h" line="55" column="19" bodyfile="include/dpp/cache.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cache_1af05540682d77589f50cc5bd54665ac18" prot="private" static="no" mutable="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, T * &gt; *</type>
@@ -29,13 +30,13 @@
         <argsstring></argsstring>
         <name>cache_map</name>
         <briefdescription>
+<para>Container of pointers to cached items. </para>
         </briefdescription>
         <detaileddescription>
-<para>Cached items </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="47" column="20" bodyfile="include/dpp/cache.h" bodystart="47" bodyend="-1"/>
+        <location file="include/dpp/cache.h" line="60" column="20" bodyfile="include/dpp/cache.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -48,10 +49,11 @@
 <para>Construct a new cache object. </para>
         </briefdescription>
         <detaileddescription>
+<para>Caches must contain classes derived from <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="53" column="1" bodyfile="include/dpp/cache.h" bodystart="53" bodyend="55"/>
+        <location file="include/dpp/cache.h" line="68" column="1" bodyfile="include/dpp/cache.h" bodystart="68" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1a9e99a62833153d92a3dd160ae91b031b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -62,10 +64,13 @@
 <para>Destroy the cache object. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="note"><para>This does not delete objects stored in the cache. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="60" column="1" bodyfile="include/dpp/cache.h" bodystart="60" bodyend="63"/>
+        <location file="include/dpp/cache.h" line="77" column="1" bodyfile="include/dpp/cache.h" bodystart="77" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1ab2aa9a2fbf0cb47d49d4bba05c2e2039" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -77,15 +82,18 @@
           <declname>object</declname>
         </param>
         <briefdescription>
-<para>Store an object in the cache. </para>
+<para>Store an object in the cache. Passing a nullptr will have no effect. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para>The object must be derived from <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref> and should be allocated on the heap. Generally this is done via <computeroutput>new</computeroutput>. Once stored in the cache the lifetime of the stored object is managed by the cache class unless the cache is deleted (at which point responsibility for deleting the object returns to its allocator). Objects stored are removed when the <ref refid="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" kindref="member">cache::remove()</ref> method is called by placing them into a garbage collection queue for deletion within the next 60 seconds, which are then deleted in bulk for efficiency and to aid thread safety.</para>
+<para><simplesect kind="note"><para>Adding an object to the cache with an ID which already exists replaces that entry. The previously entered cache item is inserted into the garbage collection queue for deletion similarly to if <ref refid="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" kindref="member">cache::remove()</ref> was called first.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>object</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>object to store </para>
+<para>object to store. Storing a pointer to the cache relinquishes ownership to the cache object. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -93,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="70" column="6" bodyfile="include/dpp/cache.h" bodystart="70" bodyend="84"/>
+        <location file="include/dpp/cache.h" line="99" column="6" bodyfile="include/dpp/cache.h" bodystart="99" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -108,12 +116,14 @@
 <para>Remove an object from the cache. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para><simplesect kind="note"><para>The cache class takes ownership of the pointer, and calling this method will cause deletion of the object within the next 60 seconds by means of a garbage collection queue. This queue aids in efficiency by freeing memory in bulk, and assists in thread safety by ensuring that all deletions can be locked and freed at the same time.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>object</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>object to remove </para>
+<para>object to remove. Passing a nullptr will have no effect. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -121,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="91" column="6" bodyfile="include/dpp/cache.h" bodystart="91" bodyend="102"/>
+        <location file="include/dpp/cache.h" line="126" column="6" bodyfile="include/dpp/cache.h" bodystart="126" bodyend="137"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1abf1e2911e8e1559fa15a36c5f90454d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>T *</type>
@@ -136,22 +146,25 @@
 <para>Find an object in the cache by id. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para>The cache is searched for the object. All <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref> objects have a snowflake id (this is the only field <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref> actually has).</para>
+<para><simplesect kind="warning"><para>Do not hang onto objects returned by <ref refid="classdpp_1_1cache_1abf1e2911e8e1559fa15a36c5f90454d3" kindref="member">cache::find()</ref> indefinitely. They may be deleted at a later date if <ref refid="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" kindref="member">cache::remove()</ref> is called. If persistence is required, take a copy of the object after checking its pointer is non-null.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Object id to find </para>
+<para>Object snowflake id to find </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Found object or nullptr if not found </para>
+<simplesect kind="return"><para>Found object or nullptr if the object with this id does not exist. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="110" column="3" bodyfile="include/dpp/cache.h" bodystart="110" bodyend="117"/>
+        <location file="include/dpp/cache.h" line="152" column="3" bodyfile="include/dpp/cache.h" bodystart="152" bodyend="159"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1a63fb9389314371ca017647db2aad53f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint64_t</type>
@@ -162,13 +175,14 @@
 <para>Return a count of the number of items in the cache. </para>
         </briefdescription>
         <detaileddescription>
+<para>This is used by the library e.g. to count guilds, users, and roles stored within caches.</para>
 <para><simplesect kind="return"><para>uint64_t count of items in the cache </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="124" column="10" bodyfile="include/dpp/cache.h" bodystart="124" bodyend="127"/>
+        <location file="include/dpp/cache.h" line="169" column="10" bodyfile="include/dpp/cache.h" bodystart="169" bodyend="172"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::shared_mutex &amp;</type>
@@ -176,16 +190,19 @@
         <argsstring>()</argsstring>
         <name>get_mutex</name>
         <briefdescription>
-<para>Return the cache&apos;s locking mutex. Use this whenever you manipulate or iterate raw elements in the cache! </para>
+<para>Return the cache&apos;s locking mutex. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>The mutex used to protect the container </para>
+<para>Use this whenever you manipulate or iterate raw elements in the cache!</para>
+<para><simplesect kind="note"><para>If you are only reading from the cache&apos;s container, wrap this mutex in <computeroutput>std::shared_lock</computeroutput>, else wrap it in a <computeroutput>std::unique_lock</computeroutput>. Shared locks will allow for multiple readers whilst blocking writers, and unique locks will allow only one writer whilst blocking readers and writers.</para>
+</simplesect>
+<simplesect kind="return"><para>The mutex used to protect the container </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="135" column="19" bodyfile="include/dpp/cache.h" bodystart="135" bodyend="137"/>
+        <location file="include/dpp/cache.h" line="187" column="19" bodyfile="include/dpp/cache.h" bodystart="187" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1ab7647df5af8f7bf01826bf650b157aa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto &amp;</type>
@@ -193,10 +210,10 @@
         <argsstring>()</argsstring>
         <name>get_container</name>
         <briefdescription>
-<para>Get the container map. </para>
+<para>Get the container unordered map. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="warning"><para>Be sure to use <ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex()</ref> correctly if you manipulate or iterate the map returned by this method! If you do not, this is not thread safe and will cause crashes! </para>
+<para><simplesect kind="warning"><para>Be sure to use <ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex()</ref> correctly if you manipulate or iterate the map returned by this method! If you do not, this is not thread safe and will cause crashes!</para>
 </simplesect>
 <simplesect kind="see"><para><ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex</ref></para>
 </simplesect>
@@ -206,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="148" column="7" bodyfile="include/dpp/cache.h" bodystart="148" bodyend="150"/>
+        <location file="include/dpp/cache.h" line="202" column="7" bodyfile="include/dpp/cache.h" bodystart="202" bodyend="204"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1af1c53b4d84ae2d1c1fbf8d540d884034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -214,16 +231,17 @@
         <argsstring>()</argsstring>
         <name>rehash</name>
         <briefdescription>
-<para>&quot;Rehash&quot; a cache by cleaning out used RAM </para>
+<para>&quot;Rehash&quot; a cache by reallocating the map and copying all elements into the new one. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="warning"><para>May be time consuming! </para>
+<para>Over a long running timeframe, unordered maps can grow in size due to bucket allocation, this function frees that unused memory to keep the maps in control over time. If this is an issue which is apparent with your use of <ref refid="classdpp_1_1cache" kindref="compound">dpp::cache</ref> objects, you should periodically call this method.</para>
+<para><simplesect kind="warning"><para>May be time consuming! This function is O(n) in relation to the number of cached entries. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="156" column="6" bodyfile="include/dpp/cache.h" bodystart="156" bodyend="165"/>
+        <location file="include/dpp/cache.h" line="219" column="6" bodyfile="include/dpp/cache.h" bodystart="219" bodyend="228"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cache_1a9b2dc568fe8e6e92006a3bf3891b74c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>size_t</type>
@@ -231,24 +249,38 @@
         <argsstring>()</argsstring>
         <name>bytes</name>
         <briefdescription>
-<para>Get &quot;real&quot; size in RAM of the cache. </para>
+<para>Get &quot;real&quot; size in RAM of the cached objects. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>size_t </para>
+<para>This does not include metadata used to maintain the undordered map itself.</para>
+<para><simplesect kind="return"><para>size_t size of cache in bytes </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="172" column="8" bodyfile="include/dpp/cache.h" bodystart="172" bodyend="175"/>
+        <location file="include/dpp/cache.h" line="237" column="8" bodyfile="include/dpp/cache.h" bodystart="237" bodyend="240"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>A cache object maintains a cache of <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref> objects. This is for example users, channels or guilds. </para>
+<para>A cache object maintains a cache of <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref> objects. </para>
     </briefdescription>
     <detaileddescription>
+<para>This is for example users, channels or guilds. You may instantiate your own caches, to contain any type derived from <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref> including your own types.</para>
+<para><simplesect kind="note"><para>This class is critical to the operation of the library and therefore designed with thread safety in mind. </para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>class type to store, which should be derived from <ref refid="classdpp_1_1managed" kindref="compound">dpp::managed</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
     </detaileddescription>
-    <location file="include/dpp/cache.h" line="41" column="11" bodyfile="include/dpp/cache.h" bodystart="41" bodyend="177"/>
+    <location file="include/dpp/cache.h" line="48" column="11" bodyfile="include/dpp/cache.h" bodystart="48" bodyend="242"/>
     <listofallmembers>
       <member refid="classdpp_1_1cache_1a9b2dc568fe8e6e92006a3bf3891b74c3" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>bytes</name></member>
       <member refid="classdpp_1_1cache_1ae7b01fd8baebf24d31f6e0e2f15df8e2" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>cache</name></member>

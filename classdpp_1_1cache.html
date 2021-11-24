@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1cache.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>A cache object maintains a cache of <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> objects. This is for example users, channels or guilds.  
+<p>A cache object maintains a cache of <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> objects.  
  <a href="classdpp_1_1cache.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9e99a62833153d92a3dd160ae91b031b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the cache object.  <a href="classdpp_1_1cache.html#a9e99a62833153d92a3dd160ae91b031b">More...</a><br /></td></tr>
 <tr class="separator:a9e99a62833153d92a3dd160ae91b031b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2aa9a2fbf0cb47d49d4bba05c2e2039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache.html#ab2aa9a2fbf0cb47d49d4bba05c2e2039">store</a> (T *object)</td></tr>
-<tr class="memdesc:ab2aa9a2fbf0cb47d49d4bba05c2e2039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store an object in the cache.  <a href="classdpp_1_1cache.html#ab2aa9a2fbf0cb47d49d4bba05c2e2039">More...</a><br /></td></tr>
+<tr class="memdesc:ab2aa9a2fbf0cb47d49d4bba05c2e2039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store an object in the cache. Passing a nullptr will have no effect.  <a href="classdpp_1_1cache.html#ab2aa9a2fbf0cb47d49d4bba05c2e2039">More...</a><br /></td></tr>
 <tr class="separator:ab2aa9a2fbf0cb47d49d4bba05c2e2039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4994e44f3ec37d08acc8c064c95746ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache.html#a4994e44f3ec37d08acc8c064c95746ad">remove</a> (T *object)</td></tr>
 <tr class="memdesc:a4994e44f3ec37d08acc8c064c95746ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an object from the cache.  <a href="classdpp_1_1cache.html#a4994e44f3ec37d08acc8c064c95746ad">More...</a><br /></td></tr>
@@ -129,21 +129,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a63fb9389314371ca017647db2aad53f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a count of the number of items in the cache.  <a href="classdpp_1_1cache.html#a63fb9389314371ca017647db2aad53f1">More...</a><br /></td></tr>
 <tr class="separator:a63fb9389314371ca017647db2aad53f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff19cda1ffdfaa11f0e4027ba8d1b76"><td class="memItemLeft" align="right" valign="top">std::shared_mutex &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache.html#a5ff19cda1ffdfaa11f0e4027ba8d1b76">get_mutex</a> ()</td></tr>
-<tr class="memdesc:a5ff19cda1ffdfaa11f0e4027ba8d1b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the cache's locking mutex. Use this whenever you manipulate or iterate raw elements in the cache!  <a href="classdpp_1_1cache.html#a5ff19cda1ffdfaa11f0e4027ba8d1b76">More...</a><br /></td></tr>
+<tr class="memdesc:a5ff19cda1ffdfaa11f0e4027ba8d1b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the cache's locking mutex.  <a href="classdpp_1_1cache.html#a5ff19cda1ffdfaa11f0e4027ba8d1b76">More...</a><br /></td></tr>
 <tr class="separator:a5ff19cda1ffdfaa11f0e4027ba8d1b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7647df5af8f7bf01826bf650b157aa4"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache.html#ab7647df5af8f7bf01826bf650b157aa4">get_container</a> ()</td></tr>
-<tr class="memdesc:ab7647df5af8f7bf01826bf650b157aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the container map.  <a href="classdpp_1_1cache.html#ab7647df5af8f7bf01826bf650b157aa4">More...</a><br /></td></tr>
+<tr class="memdesc:ab7647df5af8f7bf01826bf650b157aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the container unordered map.  <a href="classdpp_1_1cache.html#ab7647df5af8f7bf01826bf650b157aa4">More...</a><br /></td></tr>
 <tr class="separator:ab7647df5af8f7bf01826bf650b157aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c53b4d84ae2d1c1fbf8d540d884034"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache.html#af1c53b4d84ae2d1c1fbf8d540d884034">rehash</a> ()</td></tr>
-<tr class="memdesc:af1c53b4d84ae2d1c1fbf8d540d884034"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Rehash" a cache by cleaning out used RAM  <a href="classdpp_1_1cache.html#af1c53b4d84ae2d1c1fbf8d540d884034">More...</a><br /></td></tr>
+<tr class="memdesc:af1c53b4d84ae2d1c1fbf8d540d884034"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Rehash" a cache by reallocating the map and copying all elements into the new one.  <a href="classdpp_1_1cache.html#af1c53b4d84ae2d1c1fbf8d540d884034">More...</a><br /></td></tr>
 <tr class="separator:af1c53b4d84ae2d1c1fbf8d540d884034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b2dc568fe8e6e92006a3bf3891b74c3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cache.html#a9b2dc568fe8e6e92006a3bf3891b74c3">bytes</a> ()</td></tr>
-<tr class="memdesc:a9b2dc568fe8e6e92006a3bf3891b74c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get "real" size in RAM of the cache.  <a href="classdpp_1_1cache.html#a9b2dc568fe8e6e92006a3bf3891b74c3">More...</a><br /></td></tr>
+<tr class="memdesc:a9b2dc568fe8e6e92006a3bf3891b74c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get "real" size in RAM of the cached objects.  <a href="classdpp_1_1cache.html#a9b2dc568fe8e6e92006a3bf3891b74c3">More...</a><br /></td></tr>
 <tr class="separator:a9b2dc568fe8e6e92006a3bf3891b74c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
-class dpp::cache&lt; T &gt;</div><p >A cache object maintains a cache of <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> objects. This is for example users, channels or guilds. </p>
+class dpp::cache&lt; T &gt;</div><p >A cache object maintains a cache of <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> objects. </p>
+<p >This is for example users, channels or guilds. You may instantiate your own caches, to contain any type derived from <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> including your own types.</p>
+<dl class="section note"><dt>Note</dt><dd>This class is critical to the operation of the library and therefore designed with thread safety in mind. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>class type to store, which should be derived from <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae7b01fd8baebf24d31f6e0e2f15df8e2" name="ae7b01fd8baebf24d31f6e0e2f15df8e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7b01fd8baebf24d31f6e0e2f15df8e2">&#9670;&nbsp;</a></span>cache()</h2>
@@ -171,6 +179,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Construct a new cache object. </p>
+<p >Caches must contain classes derived from <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a>. </p>
 
 </div>
 </div>
@@ -200,6 +209,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Destroy the cache object. </p>
+<dl class="section note"><dt>Note</dt><dd>This does not delete objects stored in the cache. </dd></dl>
 
 </div>
 </div>
@@ -229,8 +239,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get "real" size in RAM of the cache. </p>
-<dl class="section return"><dt>Returns</dt><dd>size_t </dd></dl>
+<p>Get "real" size in RAM of the cached objects. </p>
+<p >This does not include metadata used to maintain the undordered map itself.</p>
+<dl class="section return"><dt>Returns</dt><dd>size_t size of cache in bytes </dd></dl>
 
 </div>
 </div>
@@ -260,6 +271,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Return a count of the number of items in the cache. </p>
+<p >This is used by the library e.g. to count guilds, users, and roles stored within caches.</p>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t count of items in the cache </dd></dl>
 
 </div>
@@ -291,13 +303,15 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Find an object in the cache by id. </p>
+<p >The cache is searched for the object. All <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> objects have a snowflake id (this is the only field <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> actually has).</p>
+<dl class="section warning"><dt>Warning</dt><dd>Do not hang onto objects returned by <a class="el" href="classdpp_1_1cache.html#abf1e2911e8e1559fa15a36c5f90454d3" title="Find an object in the cache by id.">cache::find()</a> indefinitely. They may be deleted at a later date if <a class="el" href="classdpp_1_1cache.html#a4994e44f3ec37d08acc8c064c95746ad" title="Remove an object from the cache.">cache::remove()</a> is called. If persistence is required, take a copy of the object after checking its pointer is non-null.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>Object id to find </td></tr>
+    <tr><td class="paramname">id</td><td>Object snowflake id to find </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Found object or nullptr if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Found object or nullptr if the object with this id does not exist. </dd></dl>
 
 </div>
 </div>
@@ -326,9 +340,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the container map. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Be sure to use <a class="el" href="classdpp_1_1cache.html#a5ff19cda1ffdfaa11f0e4027ba8d1b76" title="Return the cache&#39;s locking mutex. Use this whenever you manipulate or iterate raw elements in the cac...">cache::get_mutex()</a> correctly if you manipulate or iterate the map returned by this method! If you do not, this is not thread safe and will cause crashes! </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cache.html#a5ff19cda1ffdfaa11f0e4027ba8d1b76" title="Return the cache&#39;s locking mutex. Use this whenever you manipulate or iterate raw elements in the cac...">cache::get_mutex</a></dd></dl>
+<p>Get the container unordered map. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Be sure to use <a class="el" href="classdpp_1_1cache.html#a5ff19cda1ffdfaa11f0e4027ba8d1b76" title="Return the cache&#39;s locking mutex.">cache::get_mutex()</a> correctly if you manipulate or iterate the map returned by this method! If you do not, this is not thread safe and will cause crashes!</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cache.html#a5ff19cda1ffdfaa11f0e4027ba8d1b76" title="Return the cache&#39;s locking mutex.">cache::get_mutex</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the cache's container map </dd></dl>
 
 </div>
@@ -358,7 +372,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Return the cache's locking mutex. Use this whenever you manipulate or iterate raw elements in the cache! </p>
+<p>Return the cache's locking mutex. </p>
+<p >Use this whenever you manipulate or iterate raw elements in the cache!</p>
+<dl class="section note"><dt>Note</dt><dd>If you are only reading from the cache's container, wrap this mutex in <code>std::shared_lock</code>, else wrap it in a <code>std::unique_lock</code>. Shared locks will allow for multiple readers whilst blocking writers, and unique locks will allow only one writer whilst blocking readers and writers.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The mutex used to protect the container </dd></dl>
 
 </div>
@@ -388,8 +404,9 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>"Rehash" a cache by cleaning out used RAM </p>
-<dl class="section warning"><dt>Warning</dt><dd>May be time consuming! </dd></dl>
+<p>"Rehash" a cache by reallocating the map and copying all elements into the new one. </p>
+<p >Over a long running timeframe, unordered maps can grow in size due to bucket allocation, this function frees that unused memory to keep the maps in control over time. If this is an issue which is apparent with your use of <a class="el" href="classdpp_1_1cache.html" title="A cache object maintains a cache of dpp::managed objects.">dpp::cache</a> objects, you should periodically call this method.</p>
+<dl class="section warning"><dt>Warning</dt><dd>May be time consuming! This function is O(n) in relation to the number of cached entries. </dd></dl>
 
 </div>
 </div>
@@ -420,9 +437,10 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Remove an object from the cache. </p>
+<dl class="section note"><dt>Note</dt><dd>The cache class takes ownership of the pointer, and calling this method will cause deletion of the object within the next 60 seconds by means of a garbage collection queue. This queue aids in efficiency by freeing memory in bulk, and assists in thread safety by ensuring that all deletions can be locked and freed at the same time.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>object to remove </td></tr>
+    <tr><td class="paramname">object</td><td>object to remove. Passing a nullptr will have no effect. </td></tr>
   </table>
   </dd>
 </dl>
@@ -455,10 +473,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Store an object in the cache. </p>
+<p>Store an object in the cache. Passing a nullptr will have no effect. </p>
+<p >The object must be derived from <a class="el" href="classdpp_1_1managed.html" title="The managed class is the base class for various types that can be stored in a cache that are identifi...">dpp::managed</a> and should be allocated on the heap. Generally this is done via <code>new</code>. Once stored in the cache the lifetime of the stored object is managed by the cache class unless the cache is deleted (at which point responsibility for deleting the object returns to its allocator). Objects stored are removed when the <a class="el" href="classdpp_1_1cache.html#a4994e44f3ec37d08acc8c064c95746ad" title="Remove an object from the cache.">cache::remove()</a> method is called by placing them into a garbage collection queue for deletion within the next 60 seconds, which are then deleted in bulk for efficiency and to aid thread safety.</p>
+<dl class="section note"><dt>Note</dt><dd>Adding an object to the cache with an ID which already exists replaces that entry. The previously entered cache item is inserted into the garbage collection queue for deletion similarly to if <a class="el" href="classdpp_1_1cache.html#a4994e44f3ec37d08acc8c064c95746ad" title="Remove an object from the cache.">cache::remove()</a> was called first.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>object to store </td></tr>
+    <tr><td class="paramname">object</td><td>object to store. Storing a pointer to the cache relinquishes ownership to the cache object. </td></tr>
   </table>
   </dd>
 </dl>

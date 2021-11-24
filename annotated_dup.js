@@ -257,5 +257,6 @@ var annotated_dup =
     [ "OpusDecoder", "struct_opus_decoder.html", null ],
     [ "OpusEncoder", "struct_opus_encoder.html", null ],
     [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
+    [ "test_cached_object_t", "classtest__cached__object__t.html", "classtest__cached__object__t" ],
     [ "test_t", "structtest__t.html", "structtest__t" ]
 ];
