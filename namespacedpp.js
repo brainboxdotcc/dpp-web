@@ -213,6 +213,7 @@ var namespacedpp =
     [ "socket", "namespacedpp.html#a51156024d6211aef2731770340cfe452", null ],
     [ "socket_callback_t", "namespacedpp.html#a982a3efeac04ddb820bbe87b08155640", null ],
     [ "socket_notification_t", "namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e", null ],
+    [ "stage_instance_map", "namespacedpp.html#a81bdee80b6fd684ea6959ec67e6ecafb", null ],
     [ "sticker_map", "namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f", null ],
     [ "sticker_pack_map", "namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283", null ],
     [ "thread_map", "namespacedpp.html#afb8eae726b5ea68baff8c48d7fb835af", null ],
