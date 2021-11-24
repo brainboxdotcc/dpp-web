@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"namespacesafe__duration__cast.html":[6,0,3],
 "namespacesafe__duration__cast.html#a1b2f780f349d616fa841550dc49f59d0":[6,0,3,1],
 "namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a":[6,0,3,2],
 "namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9":[6,0,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "structdpp_1_1audit__entry.html#a0b6fcc890dfd0e55e68c39d2f88d268b":[7,0,1,10,5],
 "structdpp_1_1audit__entry.html#a0b6fcc890dfd0e55e68c39d2f88d268b":[6,0,1,10,5],
 "structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b":[7,0,1,10,1],
-"structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b":[6,0,1,10,1],
-"structdpp_1_1audit__entry.html#a4c44d24615548cc33303082104b24b05":[7,0,1,10,6]
+"structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b":[6,0,1,10,1]
 };

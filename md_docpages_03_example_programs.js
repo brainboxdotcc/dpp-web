@@ -15,5 +15,6 @@ var md_docpages_03_example_programs =
     [ "Using sub-commands in slash commands", "subcommands.html", null ],
     [ "Sending Embeds", "embed-message.html", null ],
     [ "Slash command auto completion", "application-command-autocomplete.html", null ],
-    [ "Attaching a file to a message", "attach-file.html", null ]
+    [ "Attaching a file to a message", "attach-file.html", null ],
+    [ "Caching Messages", "caching-messages.html", null ]
 ];
