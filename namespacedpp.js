@@ -204,7 +204,7 @@ var namespacedpp =
     [ "message_map", "namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708", null ],
     [ "parameter_list_t", "namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1", null ],
     [ "parameter_registration_t", "namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65", null ],
-    [ "presence_map", "namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f", null ],
+    [ "presence_map", "namespacedpp.html#aa71f7e347422516d1022707f1d3e5b1c", null ],
     [ "role_map", "namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b", null ],
     [ "scheduled_event_map", "namespacedpp.html#a1d8eeeaca0cdc14125cbf2f4f0722781", null ],
     [ "shard_list", "namespacedpp.html#a13c4d4e6238396245b349e6a637897e0", null ],

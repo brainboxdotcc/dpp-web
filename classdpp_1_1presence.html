@@ -296,7 +296,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Build JSON from this object. </p><dl class="section return"><dt>Returns</dt><dd>The JSON text of the presence </dd></dl>
+<p >Build JSON from this object.</p>
+<p >Note: This excludes any part of the presence object that are not valid for websockets and bots, and includes websocket opcode 3. You will not get what you expect if you call this on a user's presence received from on_presence_update or on_guild_create!</p>
+<dl class="section return"><dt>Returns</dt><dd>The JSON text of the presence </dd></dl>
 
 </div>
 </div>
