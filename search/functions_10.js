@@ -99,7 +99,7 @@ var searchData=
   ['sticker_5fpacks_5fget_96',['sticker_packs_get',['../classdpp_1_1cluster.html#ae64421a4b2402238feb0536639009c18',1,'dpp::cluster']]],
   ['stop_5faudio_97',['stop_audio',['../classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d',1,'dpp::discord_voice_client']]],
   ['stop_5ftimer_98',['stop_timer',['../classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3',1,'dpp::cluster']]],
-  ['store_99',['store',['../classdpp_1_1cache.html#a959d7e651c20f8befe5958ee9b9633ba',1,'dpp::cache']]],
+  ['store_99',['store',['../classdpp_1_1cache.html#ab2aa9a2fbf0cb47d49d4bba05c2e2039',1,'dpp::cache']]],
   ['strftime_100',['strftime',['../namespacedetail.html#a1f56278fd84d8bc33338c33694a87fb8',1,'detail::strftime(char *str, size_t count, const char *format, const std::tm *time)'],['../namespacedetail.html#aa394945bd077a30102ef2ca015a1540b',1,'detail::strftime(wchar_t *str, size_t count, const wchar_t *format, const std::tm *time)']]],
   ['string_5fhas_5fprefix_101',['string_has_prefix',['../classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d',1,'dpp::commandhandler']]],
   ['string_5fnot_5fnull_102',['string_not_null',['../namespacedpp.html#aff1b41932df1203db7b45eb24c9ec297',1,'dpp']]],

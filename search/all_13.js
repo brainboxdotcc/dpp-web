@@ -162,7 +162,7 @@ var searchData=
   ['stop_5faudio_159',['stop_audio',['../classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d',1,'dpp::discord_voice_client']]],
   ['stop_5fevent_160',['stop_event',['../namespacedpp.html#aa54eb501e23564f837949f0f5a574abb',1,'dpp']]],
   ['stop_5ftimer_161',['stop_timer',['../classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3',1,'dpp::cluster']]],
-  ['store_162',['store',['../classdpp_1_1cache.html#a959d7e651c20f8befe5958ee9b9633ba',1,'dpp::cache']]],
+  ['store_162',['store',['../classdpp_1_1cache.html#ab2aa9a2fbf0cb47d49d4bba05c2e2039',1,'dpp::cache']]],
   ['streaming_20mp3_20files_163',['Streaming MP3 files',['../stream-mp3-discord-bot.html',1,'md_docpages_03_example_programs']]],
   ['streaming_20ogg_20opus_20file_164',['Streaming Ogg Opus file',['../oggopus.html',1,'md_docpages_03_example_programs']]],
   ['strftime_165',['strftime',['../namespacedetail.html#a1f56278fd84d8bc33338c33694a87fb8',1,'detail::strftime(char *str, size_t count, const char *format, const std::tm *time)'],['../namespacedetail.html#aa394945bd077a30102ef2ca015a1540b',1,'detail::strftime(wchar_t *str, size_t count, const wchar_t *format, const std::tm *time)']]],

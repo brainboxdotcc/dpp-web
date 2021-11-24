@@ -4,7 +4,7 @@ var searchData=
   ['_7eattachment_1',['~attachment',['../structdpp_1_1attachment.html#a0911f0f41b456e42ec31615b24042d63',1,'dpp::attachment']]],
   ['_7eauditlog_2',['~auditlog',['../classdpp_1_1auditlog.html#adcd0ccdef0c8027acab54e19ffd971c4',1,'dpp::auditlog']]],
   ['_7eban_3',['~ban',['../classdpp_1_1ban.html#a975e673c3ea3c1a976397542fde9e379',1,'dpp::ban']]],
-  ['_7ecache_4',['~cache',['../classdpp_1_1cache.html#ace0806ef4685c42a2f96c5a56c33d548',1,'dpp::cache']]],
+  ['_7ecache_4',['~cache',['../classdpp_1_1cache.html#a9e99a62833153d92a3dd160ae91b031b',1,'dpp::cache']]],
   ['_7echannel_5',['~channel',['../classdpp_1_1channel.html#a51afd2284fe4ae3a6d1043c8f3ecf4f1',1,'dpp::channel']]],
   ['_7ecluster_6',['~cluster',['../classdpp_1_1cluster.html#a270be0ab59aff4f335ef3f4af7559d92',1,'dpp::cluster']]],
   ['_7ecommandhandler_7',['~commandhandler',['../classdpp_1_1commandhandler.html#a62373f8cdd5b887eb78eb4f4cb265baf',1,'dpp::commandhandler']]],

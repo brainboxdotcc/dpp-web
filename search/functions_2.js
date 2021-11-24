@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cache_0',['cache',['../classdpp_1_1cache.html#ab2e42adbc838707c9d3c0d16cb6f2705',1,'dpp::cache']]],
+  ['cache_0',['cache',['../classdpp_1_1cache.html#ae7b01fd8baebf24d31f6e0e2f15df8e2',1,'dpp::cache']]],
   ['call_1',['call',['../classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3',1,'dpp::event_router_t']]],
   ['cancel_2',['cancel',['../classdpp_1_1oneshot__timer.html#a084107aff1b71f0776a501527d3e14ef',1,'dpp::oneshot_timer']]],
   ['cancel_5fevent_3',['cancel_event',['../structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7',1,'dpp::event_dispatch_t']]],
@@ -39,7 +39,7 @@ var searchData=
   ['connect_5fvoice_36',['connect_voice',['../classdpp_1_1discord__client.html#a8ceeec92eb0ba816c1c172f53d4e7891',1,'dpp::discord_client']]],
   ['connection_37',['connection',['../classdpp_1_1connection.html#a8011f7947197f36ed854a16ab0e63233',1,'dpp::connection']]],
   ['copy_5funit_38',['copy_unit',['../namespacedetail.html#a7594c0bc5a5dd12ad9d1804545f1c36f',1,'detail::copy_unit(string_view unit, OutputIt out, Char)'],['../namespacedetail.html#adcecc40fe13a2b872de3b7fc8a871c87',1,'detail::copy_unit(string_view unit, OutputIt out, wchar_t)']]],
-  ['count_39',['count',['../classdpp_1_1cache.html#accdc86a37537b1c242a1a9b53a7cb1e3',1,'dpp::cache']]],
+  ['count_39',['count',['../classdpp_1_1cache.html#a63fb9389314371ca017647db2aad53f1',1,'dpp::cache']]],
   ['create_5fdm_5fchannel_40',['create_dm_channel',['../classdpp_1_1cluster.html#a55c6a9bb92a500aefc65a953e419c27f',1,'dpp::cluster']]],
   ['create_5fwebhook_41',['create_webhook',['../classdpp_1_1cluster.html#a627510bf4f4d1c3a999ccb506c75ec47',1,'dpp::cluster']]],
   ['current_5fapplication_5fget_42',['current_application_get',['../classdpp_1_1cluster.html#ac3dc39069aaaa492727f39b35edd957e',1,'dpp::cluster']]],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"pages.html":[],
 "record-user.html":[3,5],
 "slashcommands.html":[3,1],
 "soundboard.html":[3,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "structdpp_1_1audit__entry.html#a4c44d24615548cc33303082104b24b05":[6,0,1,10,6],
 "structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b":[6,0,1,10,4],
 "structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b":[7,0,1,10,4],
-"structdpp_1_1audit__entry.html#a9c715dcbef3d08e2d5d7cc58d5be1ca3":[6,0,1,10,3]
+"structdpp_1_1audit__entry.html#a9c715dcbef3d08e2d5d7cc58d5be1ca3":[6,0,1,10,3],
+"structdpp_1_1audit__entry.html#a9c715dcbef3d08e2d5d7cc58d5be1ca3":[7,0,1,10,3]
 };

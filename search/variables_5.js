@@ -4,7 +4,7 @@ var searchData=
   ['email_1',['email',['../classdpp_1_1user__identified.html#a9636dd7572180e536bb6d96fc9721197',1,'dpp::user_identified']]],
   ['embeds_2',['embeds',['../structdpp_1_1message.html#a9c0eb22ba371ead6d960bdf7c9838b6e',1,'dpp::message']]],
   ['emoji_3',['emoji',['../structdpp_1_1select__option.html#a87080e97f389b83a93c43198a1380f7b',1,'dpp::select_option::emoji()'],['../classdpp_1_1component.html#a259175c6c6da17af6d00765088fb73f6',1,'dpp::component::emoji()']]],
-  ['emoji_5fcache_4',['emoji_cache',['../namespacedpp.html#a3d2e114ba137f1f5bf6fd9782f41d2f2',1,'dpp']]],
+  ['emoji_5fcache_4',['emoji_cache',['../namespacedpp.html#a2dc2ae71be039ddc79338f59150fecac',1,'dpp']]],
   ['emoji_5fid_5',['emoji_id',['../structdpp_1_1reaction.html#a10ee4c6e61a76d6ad8e9c6d52f123073',1,'dpp::reaction::emoji_id()'],['../structdpp_1_1welcome__channel__t.html#aebd3253cc04c7e251811d50ae18e58e5',1,'dpp::welcome_channel_t::emoji_id()']]],
   ['emoji_5fname_6',['emoji_name',['../structdpp_1_1welcome__channel__t.html#a0c438231f38a9241838a42178bcbe57f',1,'dpp::welcome_channel_t::emoji_name()'],['../structdpp_1_1reaction.html#a9f0dd8c76b3370670547a34367ea3c30',1,'dpp::reaction::emoji_name()']]],
   ['emoji_5fpolicy_7',['emoji_policy',['../structdpp_1_1cache__policy__t.html#af2691cd3cc93a264f9177f3d164f9546',1,'dpp::cache_policy_t']]],

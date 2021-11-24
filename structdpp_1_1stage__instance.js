@@ -7,7 +7,7 @@ var structdpp_1_1stage__instance =
     [ "channel_id", "structdpp_1_1stage__instance.html#a21bda7ddd059504607abca421e747c94", null ],
     [ "discoverable_disabled", "structdpp_1_1stage__instance.html#aae76dc45493e1430bfdd6473d773de1f", null ],
     [ "guild_id", "structdpp_1_1stage__instance.html#ac78c5c60945f082d1b42ba3c81b43217", null ],
-    [ "id", "structdpp_1_1stage__instance.html#ad12ef15d7e00007b1c38cee84603cb19", null ],
+    [ "id", "structdpp_1_1stage__instance.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "privacy_level", "structdpp_1_1stage__instance.html#ae198d6dba53766e0375c1705165ddca7", null ],
     [ "topic", "structdpp_1_1stage__instance.html#ae373539ed2656ca14f306cb00465158a", null ]
 ];

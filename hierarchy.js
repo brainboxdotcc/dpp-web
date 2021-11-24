@@ -3,7 +3,6 @@ var hierarchy =
     [ "dpp::activity", "classdpp_1_1activity.html", null ],
     [ "dpp::message::allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", null ],
     [ "dpp::app_team", "classdpp_1_1app__team.html", null ],
-    [ "dpp::application", "classdpp_1_1application.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
@@ -12,7 +11,7 @@ var hierarchy =
     [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
     [ "dpp::ban", "classdpp_1_1ban.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
-    [ "dpp::cache", "classdpp_1_1cache.html", null ],
+    [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
     [ "detail::chrono_format_checker", "structdetail_1_1chrono__format__checker.html", null ],
     [ "detail::chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structdetail_1_1chrono__formatter.html", null ],
@@ -211,6 +210,7 @@ var hierarchy =
     [ "detail::make_unsigned_or_unchanged< T, INTEGRAL >", "structdetail_1_1make__unsigned__or__unchanged.html", null ],
     [ "detail::make_unsigned_or_unchanged< T, true >", "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
+      [ "dpp::application", "classdpp_1_1application.html", null ],
       [ "dpp::channel", "classdpp_1_1channel.html", [
         [ "dpp::thread", "classdpp_1_1thread.html", null ]
       ] ],
@@ -218,14 +218,18 @@ var hierarchy =
       [ "dpp::guild", "classdpp_1_1guild.html", null ],
       [ "dpp::integration", "classdpp_1_1integration.html", null ],
       [ "dpp::interaction", "classdpp_1_1interaction.html", null ],
+      [ "dpp::message", "structdpp_1_1message.html", null ],
       [ "dpp::role", "classdpp_1_1role.html", null ],
+      [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ],
       [ "dpp::slashcommand", "classdpp_1_1slashcommand.html", null ],
+      [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
+      [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
+      [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
       [ "dpp::user", "classdpp_1_1user.html", [
         [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
       ] ],
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
-    [ "dpp::message", "structdpp_1_1message.html", null ],
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::oneshot_timer", "classdpp_1_1oneshot__timer.html", null ],
@@ -241,7 +245,6 @@ var hierarchy =
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
-    [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [
@@ -249,9 +252,6 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
-    [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
-    [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
-    [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
     [ "test_t", "structtest__t.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],

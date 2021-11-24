@@ -28,7 +28,7 @@ var searchData=
   ['building_20on_20osx_25',['Building on OSX',['../buildosx.html',1,'md_docpages_02_build']]],
   ['building_20on_20windows_26',['Building on Windows',['../buildwindows.html',1,'md_docpages_02_build']]],
   ['button_5fclick_5ft_27',['button_click_t',['../structdpp_1_1button__click__t.html#a18cfc5b1ec6d672e6e8c77f4f467dc7b',1,'dpp::button_click_t::button_click_t()'],['../structdpp_1_1button__click__t.html',1,'dpp::button_click_t']]],
-  ['bytes_28',['bytes',['../classdpp_1_1cache.html#adce9b317fc1c93aff5638b3ac2795630',1,'dpp::cache::bytes()'],['../namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08',1,'dpp::utility::bytes()']]],
+  ['bytes_28',['bytes',['../classdpp_1_1cache.html#a9b2dc568fe8e6e92006a3bf3891b74c3',1,'dpp::cache::bytes()'],['../namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08',1,'dpp::utility::bytes()']]],
   ['bytes_5fin_29',['bytes_in',['../classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d',1,'dpp::ssl_client']]],
   ['bytes_5fout_30',['bytes_out',['../classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085',1,'dpp::ssl_client']]]
 ];

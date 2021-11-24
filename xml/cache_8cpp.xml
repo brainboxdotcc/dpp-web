@@ -49,6 +49,8 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
       </node>
       <node id="15">
         <label>dpp/channel.h</label>
@@ -130,15 +132,15 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="40">
+      <node id="41">
         <label>dpp/exception.h</label>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
         <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -319,10 +321,10 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
       </node>
-      <node id="42">
+      <node id="43">
         <label>algorithm</label>
       </node>
       <node id="32">
@@ -331,7 +333,7 @@
       <node id="10">
         <label>dpp/json_fwd.hpp</label>
       </node>
-      <node id="41">
+      <node id="42">
         <label>exception</label>
       </node>
       <node id="8">
@@ -351,6 +353,9 @@
       </node>
       <node id="30">
         <label>queue</label>
+      </node>
+      <node id="40">
+        <label>shared_mutex</label>
       </node>
       <node id="4">
         <label>string</label>
@@ -377,13 +382,13 @@
         <param><defname>setter</defname></param>
         <param><defname>getter</defname></param>
         <param><defname>counter</defname></param>
-        <initializer>cache* cache_name = nullptr; \
+        <initializer>cache&lt;type&gt;* cache_name = nullptr; \
 type * setter (snowflake id) { \
 		return cache_name ? ( type * ) cache_name -&gt;find(id) : nullptr; \
 } \
-cache* getter () { \
+cache&lt;type&gt;* getter () { \
 	if (! cache_name ) { \
-		cache_name = new cache(); \
+		cache_name = new cache&lt;type&gt;(); \
 	} \
 	return cache_name ; \
 } \

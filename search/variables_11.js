@@ -34,7 +34,7 @@ var searchData=
   ['retry_5fafter_31',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
   ['revoked_32',['revoked',['../classdpp_1_1connection.html#acd1b67d2114b91c2028ad7d21c224adf',1,'dpp::connection']]],
   ['rich_5fpresence_33',['rich_presence',['../structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813',1,'dpp::presence_update_t']]],
-  ['role_5fcache_34',['role_cache',['../namespacedpp.html#a859e163ce0aca88e3d1f5379ee53ad3d',1,'dpp']]],
+  ['role_5fcache_34',['role_cache',['../namespacedpp.html#a74d591ac1d334f8a412f3f1c4f6d65ff',1,'dpp']]],
   ['role_5fid_35',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
   ['role_5fname_36',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
   ['role_5fpolicy_37',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],

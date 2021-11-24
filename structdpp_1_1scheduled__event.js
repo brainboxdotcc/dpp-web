@@ -21,7 +21,7 @@ var structdpp_1_1scheduled__event =
     [ "entity_metadata", "structdpp_1_1scheduled__event.html#aacfd8d3b0bb171ea11f6613a334d0a73", null ],
     [ "entity_type", "structdpp_1_1scheduled__event.html#afd4d1b9be6926956b7631eba31ea81f7", null ],
     [ "guild_id", "structdpp_1_1scheduled__event.html#a5872e40ff1f2bf3599d5403ec6fe6599", null ],
-    [ "id", "structdpp_1_1scheduled__event.html#a5439abfd87f8cdf968968a2d7b0ebe25", null ],
+    [ "id", "structdpp_1_1scheduled__event.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "image", "structdpp_1_1scheduled__event.html#a641492ee3c1f21f38072799fa9775d7b", null ],
     [ "name", "structdpp_1_1scheduled__event.html#a3e15cff6d8e5466e5ef90c952fc249de", null ],
     [ "privacy_level", "structdpp_1_1scheduled__event.html#a52f6049445ba9debcbdb1ec896c0fcb1", null ],

@@ -3,10 +3,15 @@
   <compounddef id="classdpp_1_1cache" kind="class" language="C++" prot="public">
     <compoundname>dpp::cache</compoundname>
     <includes local="no">cache.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classdpp_1_1cache_1a0f267eb38d28b24f2925be432ac550fa" prot="private" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::cache::cache_mutex</definition>
+      <memberdef kind="variable" id="classdpp_1_1cache_1a6a77ce300428f922964d0f1f7b85816f" prot="private" static="no" mutable="no">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::cache&lt; T &gt;::cache_mutex</definition>
         <argsstring></argsstring>
         <name>cache_mutex</name>
         <briefdescription>
@@ -16,11 +21,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="46" column="12" bodyfile="include/dpp/cache.h" bodystart="46" bodyend="-1"/>
+        <location file="include/dpp/cache.h" line="44" column="19" bodyfile="include/dpp/cache.h" bodystart="44" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1cache_1a93c29d30954c356dbc3c9282cbcee0a7" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a4524e2a056f2d16ba591516fbf275235" kindref="member">cache_container</ref> *</type>
-        <definition>cache_container* dpp::cache::cache_map</definition>
+      <memberdef kind="variable" id="classdpp_1_1cache_1af05540682d77589f50cc5bd54665ac18" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, T * &gt; *</type>
+        <definition>std::unordered_map&lt;snowflake, T*&gt;* dpp::cache&lt; T &gt;::cache_map</definition>
         <argsstring></argsstring>
         <name>cache_map</name>
         <briefdescription>
@@ -30,13 +35,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="49" column="17" bodyfile="include/dpp/cache.h" bodystart="49" bodyend="-1"/>
+        <location file="include/dpp/cache.h" line="47" column="20" bodyfile="include/dpp/cache.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1cache_1ab2e42adbc838707c9d3c0d16cb6f2705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cache_1ae7b01fd8baebf24d31f6e0e2f15df8e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
-        <definition>dpp::cache::cache</definition>
+        <definition>dpp::cache&lt; T &gt;::cache</definition>
         <argsstring>()</argsstring>
         <name>cache</name>
         <briefdescription>
@@ -46,11 +51,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="56" column="1" bodyfile="src/dpp/cache.cpp" bodystart="81" bodyend="83"/>
+        <location file="include/dpp/cache.h" line="53" column="1" bodyfile="include/dpp/cache.h" bodystart="53" bodyend="55"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1ace0806ef4685c42a2f96c5a56c33d548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cache_1a9e99a62833153d92a3dd160ae91b031b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
-        <definition>dpp::cache::~cache</definition>
+        <definition>dpp::cache&lt; T &gt;::~cache</definition>
         <argsstring>()</argsstring>
         <name>~cache</name>
         <briefdescription>
@@ -60,21 +65,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="61" column="1" bodyfile="src/dpp/cache.cpp" bodystart="85" bodyend="87"/>
+        <location file="include/dpp/cache.h" line="60" column="1" bodyfile="include/dpp/cache.h" bodystart="60" bodyend="63"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1a959d7e651c20f8befe5958ee9b9633ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cache_1ab2aa9a2fbf0cb47d49d4bba05c2e2039" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::cache::store</definition>
-        <argsstring>(managed *object)</argsstring>
+        <definition>void dpp::cache&lt; T &gt;::store</definition>
+        <argsstring>(T *object)</argsstring>
         <name>store</name>
         <param>
-          <type><ref refid="classdpp_1_1managed" kindref="compound">managed</ref> *</type>
+          <type>T *</type>
           <declname>object</declname>
         </param>
         <briefdescription>
+<para>Store an object in the cache. </para>
         </briefdescription>
         <detaileddescription>
-<para>Store an object in the cache. <parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>object</parametername>
 </parameternamelist>
@@ -87,21 +93,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="66" column="6" bodyfile="src/dpp/cache.cpp" bodystart="102" bodyend="116"/>
+        <location file="include/dpp/cache.h" line="70" column="6" bodyfile="include/dpp/cache.h" bodystart="70" bodyend="84"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1a0aece71ffd50382b7f070738a4599d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::cache::remove</definition>
-        <argsstring>(managed *object)</argsstring>
+        <definition>void dpp::cache&lt; T &gt;::remove</definition>
+        <argsstring>(T *object)</argsstring>
         <name>remove</name>
         <param>
-          <type><ref refid="classdpp_1_1managed" kindref="compound">managed</ref> *</type>
+          <type>T *</type>
           <declname>object</declname>
         </param>
         <briefdescription>
+<para>Remove an object from the cache. </para>
         </briefdescription>
         <detaileddescription>
-<para>Remove an object from the cache. <parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>object</parametername>
 </parameternamelist>
@@ -114,11 +121,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="71" column="6" bodyfile="src/dpp/cache.cpp" bodystart="134" bodyend="145"/>
+        <location file="include/dpp/cache.h" line="91" column="6" bodyfile="include/dpp/cache.h" bodystart="91" bodyend="102"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1af472ab6ed25400cc5df27fbc1cf8774d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1managed" kindref="compound">managed</ref> *</type>
-        <definition>managed * dpp::cache::find</definition>
+      <memberdef kind="function" id="classdpp_1_1cache_1abf1e2911e8e1559fa15a36c5f90454d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * dpp::cache&lt; T &gt;::find</definition>
         <argsstring>(snowflake id)</argsstring>
         <name>find</name>
         <param>
@@ -126,9 +133,10 @@
           <declname>id</declname>
         </param>
         <briefdescription>
+<para>Find an object in the cache by id. </para>
         </briefdescription>
         <detaileddescription>
-<para>Find an object in the cache by id. <parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>id</parametername>
 </parameternamelist>
@@ -137,29 +145,34 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>Found object or nullptr if not found </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="76" column="9" bodyfile="src/dpp/cache.cpp" bodystart="147" bodyend="154"/>
+        <location file="include/dpp/cache.h" line="110" column="3" bodyfile="include/dpp/cache.h" bodystart="110" bodyend="117"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1accdc86a37537b1c242a1a9b53a7cb1e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cache_1a63fb9389314371ca017647db2aad53f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t dpp::cache::count</definition>
+        <definition>uint64_t dpp::cache&lt; T &gt;::count</definition>
         <argsstring>()</argsstring>
         <name>count</name>
         <briefdescription>
+<para>Return a count of the number of items in the cache. </para>
         </briefdescription>
         <detaileddescription>
-<para>Return a count of the number of items in the cache. </para>
+<para><simplesect kind="return"><para>uint64_t count of items in the cache </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="80" column="10" bodyfile="src/dpp/cache.cpp" bodystart="89" bodyend="92"/>
+        <location file="include/dpp/cache.h" line="124" column="10" bodyfile="include/dpp/cache.h" bodystart="124" bodyend="127"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1aedc334e64ff058f9e82c66ed4e6e9dd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::mutex &amp;</type>
-        <definition>std::mutex &amp; dpp::cache::get_mutex</definition>
+      <memberdef kind="function" id="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_mutex &amp;</type>
+        <definition>std::shared_mutex &amp; dpp::cache&lt; T &gt;::get_mutex</definition>
         <argsstring>()</argsstring>
         <name>get_mutex</name>
         <briefdescription>
@@ -172,32 +185,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="88" column="12" bodyfile="src/dpp/cache.cpp" bodystart="94" bodyend="96"/>
+        <location file="include/dpp/cache.h" line="135" column="19" bodyfile="include/dpp/cache.h" bodystart="135" bodyend="137"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1a1e8cb2a3dfe15d3922cfefc840d9e346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacedpp_1a4524e2a056f2d16ba591516fbf275235" kindref="member">cache_container</ref> &amp;</type>
-        <definition>cache_container &amp; dpp::cache::get_container</definition>
+      <memberdef kind="function" id="classdpp_1_1cache_1a945fc105ced894bb32ea473cad8b1124" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, T * &gt; &amp;</type>
+        <definition>std::unordered_map&lt; snowflake, T * &gt; &amp; dpp::cache&lt; T &gt;::get_container</definition>
         <argsstring>()</argsstring>
         <name>get_container</name>
         <briefdescription>
 <para>Get the container map. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="warning"><para>Be sure to use <ref refid="classdpp_1_1cache_1aedc334e64ff058f9e82c66ed4e6e9dd8" kindref="member">cache::get_mutex()</ref> correctly if you manipulate or iterate the map returned by this method! If you do not, this is not thread safe and will cause crashes! </para>
+<para><simplesect kind="warning"><para>Be sure to use <ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex()</ref> correctly if you manipulate or iterate the map returned by this method! If you do not, this is not thread safe and will cause crashes! </para>
 </simplesect>
-<simplesect kind="see"><para><ref refid="classdpp_1_1cache_1aedc334e64ff058f9e82c66ed4e6e9dd8" kindref="member">cache::get_mutex</ref></para>
+<simplesect kind="see"><para><ref refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" kindref="member">cache::get_mutex</ref></para>
 </simplesect>
-<simplesect kind="return"><para>cache_container&amp; A reference to the cache&apos;s container map </para>
+<simplesect kind="return"><para>A reference to the cache&apos;s container map </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="99" column="17" bodyfile="src/dpp/cache.cpp" bodystart="98" bodyend="100"/>
+        <location file="include/dpp/cache.h" line="148" column="20" bodyfile="include/dpp/cache.h" bodystart="148" bodyend="150"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1a83d17b63891d47e5c286bc9690cb2d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cache_1af1c53b4d84ae2d1c1fbf8d540d884034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::cache::rehash</definition>
+        <definition>void dpp::cache&lt; T &gt;::rehash</definition>
         <argsstring>()</argsstring>
         <name>rehash</name>
         <briefdescription>
@@ -210,11 +223,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="105" column="6" bodyfile="src/dpp/cache.cpp" bodystart="123" bodyend="132"/>
+        <location file="include/dpp/cache.h" line="156" column="6" bodyfile="include/dpp/cache.h" bodystart="156" bodyend="165"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cache_1adce9b317fc1c93aff5638b3ac2795630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cache_1a9b2dc568fe8e6e92006a3bf3891b74c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>size_t</type>
-        <definition>size_t dpp::cache::bytes</definition>
+        <definition>size_t dpp::cache&lt; T &gt;::bytes</definition>
         <argsstring>()</argsstring>
         <name>bytes</name>
         <briefdescription>
@@ -227,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="112" column="8" bodyfile="src/dpp/cache.cpp" bodystart="118" bodyend="121"/>
+        <location file="include/dpp/cache.h" line="172" column="8" bodyfile="include/dpp/cache.h" bodystart="172" bodyend="175"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -235,20 +248,20 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/dpp/cache.h" line="42" column="1" bodyfile="include/dpp/cache.h" bodystart="42" bodyend="114"/>
+    <location file="include/dpp/cache.h" line="41" column="11" bodyfile="include/dpp/cache.h" bodystart="41" bodyend="177"/>
     <listofallmembers>
-      <member refid="classdpp_1_1cache_1adce9b317fc1c93aff5638b3ac2795630" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>bytes</name></member>
-      <member refid="classdpp_1_1cache_1ab2e42adbc838707c9d3c0d16cb6f2705" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>cache</name></member>
-      <member refid="classdpp_1_1cache_1a93c29d30954c356dbc3c9282cbcee0a7" prot="private" virt="non-virtual"><scope>dpp::cache</scope><name>cache_map</name></member>
-      <member refid="classdpp_1_1cache_1a0f267eb38d28b24f2925be432ac550fa" prot="private" virt="non-virtual"><scope>dpp::cache</scope><name>cache_mutex</name></member>
-      <member refid="classdpp_1_1cache_1accdc86a37537b1c242a1a9b53a7cb1e3" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>count</name></member>
-      <member refid="classdpp_1_1cache_1af472ab6ed25400cc5df27fbc1cf8774d" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>find</name></member>
-      <member refid="classdpp_1_1cache_1a1e8cb2a3dfe15d3922cfefc840d9e346" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>get_container</name></member>
-      <member refid="classdpp_1_1cache_1aedc334e64ff058f9e82c66ed4e6e9dd8" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>get_mutex</name></member>
-      <member refid="classdpp_1_1cache_1a83d17b63891d47e5c286bc9690cb2d97" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>rehash</name></member>
-      <member refid="classdpp_1_1cache_1a0aece71ffd50382b7f070738a4599d49" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>remove</name></member>
-      <member refid="classdpp_1_1cache_1a959d7e651c20f8befe5958ee9b9633ba" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>store</name></member>
-      <member refid="classdpp_1_1cache_1ace0806ef4685c42a2f96c5a56c33d548" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>~cache</name></member>
+      <member refid="classdpp_1_1cache_1a9b2dc568fe8e6e92006a3bf3891b74c3" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>bytes</name></member>
+      <member refid="classdpp_1_1cache_1ae7b01fd8baebf24d31f6e0e2f15df8e2" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>cache</name></member>
+      <member refid="classdpp_1_1cache_1af05540682d77589f50cc5bd54665ac18" prot="private" virt="non-virtual"><scope>dpp::cache</scope><name>cache_map</name></member>
+      <member refid="classdpp_1_1cache_1a6a77ce300428f922964d0f1f7b85816f" prot="private" virt="non-virtual"><scope>dpp::cache</scope><name>cache_mutex</name></member>
+      <member refid="classdpp_1_1cache_1a63fb9389314371ca017647db2aad53f1" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>count</name></member>
+      <member refid="classdpp_1_1cache_1abf1e2911e8e1559fa15a36c5f90454d3" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>find</name></member>
+      <member refid="classdpp_1_1cache_1a945fc105ced894bb32ea473cad8b1124" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>get_container</name></member>
+      <member refid="classdpp_1_1cache_1a5ff19cda1ffdfaa11f0e4027ba8d1b76" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>get_mutex</name></member>
+      <member refid="classdpp_1_1cache_1af1c53b4d84ae2d1c1fbf8d540d884034" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>rehash</name></member>
+      <member refid="classdpp_1_1cache_1a4994e44f3ec37d08acc8c064c95746ad" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>remove</name></member>
+      <member refid="classdpp_1_1cache_1ab2aa9a2fbf0cb47d49d4bba05c2e2039" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>store</name></member>
+      <member refid="classdpp_1_1cache_1a9e99a62833153d92a3dd160ae91b031b" prot="public" virt="non-virtual"><scope>dpp::cache</scope><name>~cache</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

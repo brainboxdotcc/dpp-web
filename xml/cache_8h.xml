@@ -6,6 +6,7 @@
     <includes refid="discord_8h" local="no">dpp/discord.h</includes>
     <includes local="no">map</includes>
     <includes local="no">mutex</includes>
+    <includes local="no">shared_mutex</includes>
     <includedby refid="application__command__create_8cpp" local="no">application_command_create.cpp</includedby>
     <includedby refid="application__command__delete_8cpp" local="no">application_command_delete.cpp</includedby>
     <includedby refid="application__command__update_8cpp" local="no">application_command_update.cpp</includedby>
@@ -118,6 +119,8 @@
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
       <node id="15">
@@ -383,6 +386,9 @@
       </node>
       <node id="30">
         <label>queue</label>
+      </node>
+      <node id="38">
+        <label>shared_mutex</label>
       </node>
       <node id="4">
         <label>string</label>
@@ -790,14 +796,14 @@
         <param><defname>setter</defname></param>
         <param><defname>getter</defname></param>
         <param><defname>counter</defname></param>
-        <initializer>DPP_EXPORT type * setter (snowflake id); DPP_EXPORT cache * getter ();  DPP_EXPORT uint64_t counter ();</initializer>
+        <initializer>DPP_EXPORT type * setter (snowflake id); DPP_EXPORT cache&lt;type&gt; * getter ();  DPP_EXPORT uint64_t counter ();</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cache.h" line="121" column="10" bodyfile="include/dpp/cache.h" bodystart="121" bodyend="-1"/>
+        <location file="include/dpp/cache.h" line="184" column="9" bodyfile="include/dpp/cache.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
