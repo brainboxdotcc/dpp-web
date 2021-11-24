@@ -5,7 +5,8 @@ var searchData=
   ['user_2',['user',['../classdpp_1_1user.html#a10ae5c579f6d60370d825e71fdff697b',1,'dpp::user']]],
   ['user_5fget_3',['user_get',['../classdpp_1_1cluster.html#a73483dbeb0f1946dc18b1d0a5331b0d0',1,'dpp::cluster']]],
   ['user_5fidentified_4',['user_identified',['../classdpp_1_1user__identified.html#ac66ddd9e773d41eaeb7fc2d6c5eac255',1,'dpp::user_identified']]],
-  ['user_5fupdate_5ft_5',['user_update_t',['../structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e',1,'dpp::user_update_t']]],
-  ['utf8len_6',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
-  ['utf8substr_7',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
+  ['user_5fset_5fvoice_5fstate_5',['user_set_voice_state',['../classdpp_1_1cluster.html#a0b6947686248bb0e551b6912856f9553',1,'dpp::cluster']]],
+  ['user_5fupdate_5ft_6',['user_update_t',['../structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e',1,'dpp::user_update_t']]],
+  ['utf8len_7',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
+  ['utf8substr_8',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
 ];

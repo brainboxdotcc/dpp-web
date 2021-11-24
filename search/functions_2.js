@@ -12,7 +12,7 @@ var searchData=
   ['channel_5fdelete_5ft_9',['channel_delete_t',['../structdpp_1_1channel__delete__t.html#afd170d6f5321097ef9c43561b9a8cf1f',1,'dpp::channel_delete_t']]],
   ['channel_5fedit_10',['channel_edit',['../classdpp_1_1cluster.html#a5511e31156dd2508387b1ba5a1612c09',1,'dpp::cluster']]],
   ['channel_5fedit_5fpermissions_11',['channel_edit_permissions',['../classdpp_1_1cluster.html#abfb4457e63c60500b44bfdee27d80c75',1,'dpp::cluster']]],
-  ['channel_5fedit_5fposition_12',['channel_edit_position',['../classdpp_1_1cluster.html#a391779232600ba3a6f57d678047761b0',1,'dpp::cluster']]],
+  ['channel_5fedit_5fposition_12',['channel_edit_position',['../classdpp_1_1cluster.html#af23f4785c6b2b01fa42caf2a36b3e725',1,'dpp::cluster']]],
   ['channel_5ffollow_5fnews_13',['channel_follow_news',['../classdpp_1_1cluster.html#a1b7593e4ba82977bf3d8ad9052c9c565',1,'dpp::cluster']]],
   ['channel_5fget_14',['channel_get',['../classdpp_1_1cluster.html#a108f6f06b43709c8d47df5f94a3ca0a5',1,'dpp::cluster']]],
   ['channel_5finvite_5fcreate_15',['channel_invite_create',['../classdpp_1_1cluster.html#a07e66a7400101f466aab40ed58c67942',1,'dpp::cluster']]],
@@ -51,5 +51,6 @@ var searchData=
   ['current_5fuser_5fget_5fguilds_48',['current_user_get_guilds',['../classdpp_1_1cluster.html#a93c8fd5f22e0eae6bf357ad498b43f87',1,'dpp::cluster']]],
   ['current_5fuser_5fjoin_5fthread_49',['current_user_join_thread',['../classdpp_1_1cluster.html#a485553dc602bb2a7ed3ca11057034221',1,'dpp::cluster']]],
   ['current_5fuser_5fleave_5fguild_50',['current_user_leave_guild',['../classdpp_1_1cluster.html#aa20f6c8ef35465a17c9510fa8353ef3a',1,'dpp::cluster']]],
-  ['current_5fuser_5fleave_5fthread_51',['current_user_leave_thread',['../classdpp_1_1cluster.html#a13a819f21159771de3142d57eabfe306',1,'dpp::cluster']]]
+  ['current_5fuser_5fleave_5fthread_51',['current_user_leave_thread',['../classdpp_1_1cluster.html#a13a819f21159771de3142d57eabfe306',1,'dpp::cluster']]],
+  ['current_5fuser_5fset_5fvoice_5fstate_52',['current_user_set_voice_state',['../classdpp_1_1cluster.html#ac67da00921ee8becaedabcc75556a76b',1,'dpp::cluster']]]
 ];

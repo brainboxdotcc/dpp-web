@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a270be0ab59aff4f335ef3f4af7559d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the cluster object.  <a href="classdpp_1_1cluster.html#a270be0ab59aff4f335ef3f4af7559d92">More...</a><br /></td></tr>
 <tr class="separator:a270be0ab59aff4f335ef3f4af7559d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056e4191c03dd210c2a410b6599a0bf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">set_websocket_protocol</a> (<a class="el" href="namespacedpp.html#af7cde3079d745428f44ef6231a2ac672">websocket_protocol_t</a> mode)</td></tr>
-<tr class="memdesc:a056e4191c03dd210c2a410b6599a0bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards. Returns once all shards are connected.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development.  <a href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">More...</a><br /></td></tr>
+<tr class="memdesc:a056e4191c03dd210c2a410b6599a0bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development.  <a href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">More...</a><br /></td></tr>
 <tr class="separator:a056e4191c03dd210c2a410b6599a0bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbcc02c388c197cf7050551ef89aeefe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe">set_audit_reason</a> (const std::string &amp;reason)</td></tr>
 <tr class="memdesc:adbcc02c388c197cf7050551ef89aeefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the audit log reason for the next REST call to be made. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically.  <a href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe">More...</a><br /></td></tr>
@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af12b5b33ea156bde9977796858066a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the uptime of the cluster.  <a href="classdpp_1_1cluster.html#af12b5b33ea156bde9977796858066a6b">More...</a><br /></td></tr>
 <tr class="separator:af12b5b33ea156bde9977796858066a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40e99d13e1380eccd30d13123014594f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f">start</a> (bool return_after=true)</td></tr>
-<tr class="memdesc:a40e99d13e1380eccd30d13123014594f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the cluster, connecting all its shards. Returns once all shards are connected.  <a href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f">More...</a><br /></td></tr>
+<tr class="memdesc:a40e99d13e1380eccd30d13123014594f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the cluster, connecting all its shards.  <a href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f">More...</a><br /></td></tr>
 <tr class="separator:a40e99d13e1380eccd30d13123014594f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b67c9455ac0378712e4c0fd0ba7f2a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9">set_presence</a> (const class <a class="el" href="classdpp_1_1presence.html">dpp::presence</a> &amp;p)</td></tr>
 <tr class="memdesc:a9b67c9455ac0378712e4c0fd0ba7f2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the presence for all shards on the cluster.  <a href="classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9">More...</a><br /></td></tr>
@@ -294,9 +294,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5511e31156dd2508387b1ba5a1612c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a5511e31156dd2508387b1ba5a1612c09">channel_edit</a> (const class <a class="el" href="classdpp_1_1channel.html">channel</a> &amp;c, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a5511e31156dd2508387b1ba5a1612c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a channel.  <a href="classdpp_1_1cluster.html#a5511e31156dd2508387b1ba5a1612c09">More...</a><br /></td></tr>
 <tr class="separator:a5511e31156dd2508387b1ba5a1612c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a391779232600ba3a6f57d678047761b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a391779232600ba3a6f57d678047761b0">channel_edit_position</a> (const class <a class="el" href="classdpp_1_1channel.html">channel</a> &amp;c, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:a391779232600ba3a6f57d678047761b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a channel's position.  <a href="classdpp_1_1cluster.html#a391779232600ba3a6f57d678047761b0">More...</a><br /></td></tr>
-<tr class="separator:a391779232600ba3a6f57d678047761b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23f4785c6b2b01fa42caf2a36b3e725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af23f4785c6b2b01fa42caf2a36b3e725">channel_edit_position</a> (const std::vector&lt; <a class="el" href="classdpp_1_1channel.html">channel</a> &gt; &amp;c, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:af23f4785c6b2b01fa42caf2a36b3e725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit multiple channels positions.  <a href="classdpp_1_1cluster.html#af23f4785c6b2b01fa42caf2a36b3e725">More...</a><br /></td></tr>
+<tr class="separator:af23f4785c6b2b01fa42caf2a36b3e725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfb4457e63c60500b44bfdee27d80c75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#abfb4457e63c60500b44bfdee27d80c75">channel_edit_permissions</a> (const class <a class="el" href="classdpp_1_1channel.html">channel</a> &amp;c, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> overwrite_id, uint32_t allow, uint32_t deny, bool member, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:abfb4457e63c60500b44bfdee27d80c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a channel's permissions.  <a href="classdpp_1_1cluster.html#abfb4457e63c60500b44bfdee27d80c75">More...</a><br /></td></tr>
 <tr class="separator:abfb4457e63c60500b44bfdee27d80c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,7 +430,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5f6d9dbdb2009bdea2fad46e93813af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create single emoji. You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method.  <a href="classdpp_1_1cluster.html#a5f6d9dbdb2009bdea2fad46e93813af5">More...</a><br /></td></tr>
 <tr class="separator:a5f6d9dbdb2009bdea2fad46e93813af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4bf8c1767b71ed06bfa407341096d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2c4bf8c1767b71ed06bfa407341096d4">guild_emoji_edit</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const class <a class="el" href="classdpp_1_1emoji.html">emoji</a> &amp;newemoji, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:a2c4bf8c1767b71ed06bfa407341096d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a single emoji. You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method.  <a href="classdpp_1_1cluster.html#a2c4bf8c1767b71ed06bfa407341096d4">More...</a><br /></td></tr>
+<tr class="memdesc:a2c4bf8c1767b71ed06bfa407341096d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a single emoji.  <a href="classdpp_1_1cluster.html#a2c4bf8c1767b71ed06bfa407341096d4">More...</a><br /></td></tr>
 <tr class="separator:a2c4bf8c1767b71ed06bfa407341096d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9c8f4357998bc8a77e8561edcb738c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af9c8f4357998bc8a77e8561edcb738c3">guild_emoji_delete</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> emoji_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:af9c8f4357998bc8a77e8561edcb738c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a guild emoji.  <a href="classdpp_1_1cluster.html#af9c8f4357998bc8a77e8561edcb738c3">More...</a><br /></td></tr>
@@ -442,7 +442,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2102835f11fabbc2cd2e6b41155783f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin guild prune.  <a href="classdpp_1_1cluster.html#a2102835f11fabbc2cd2e6b41155783f6">More...</a><br /></td></tr>
 <tr class="separator:a2102835f11fabbc2cd2e6b41155783f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5556385a69a408a268332f774ba6c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ae5556385a69a408a268332f774ba6c3c">guild_get_voice_regions</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
-<tr class="memdesc:ae5556385a69a408a268332f774ba6c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild voice regions. Voice regions per guild are somewhat deprecated in preference of per-channel voice regions.  <a href="classdpp_1_1cluster.html#ae5556385a69a408a268332f774ba6c3c">More...</a><br /></td></tr>
+<tr class="memdesc:ae5556385a69a408a268332f774ba6c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild voice regions.  <a href="classdpp_1_1cluster.html#ae5556385a69a408a268332f774ba6c3c">More...</a><br /></td></tr>
 <tr class="separator:ae5556385a69a408a268332f774ba6c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93c0e07243611419141305da123c859a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a93c0e07243611419141305da123c859a">guild_get_invites</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a93c0e07243611419141305da123c859a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get guild invites.  <a href="classdpp_1_1cluster.html#a93c0e07243611419141305da123c859a">More...</a><br /></td></tr>
@@ -642,6 +642,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b8c168682519ee125ed0a48239c08ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a5b8c168682519ee125ed0a48239c08ef">guild_event_get</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> event_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a5b8c168682519ee125ed0a48239c08ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a scheduled event for a guild.  <a href="classdpp_1_1cluster.html#a5b8c168682519ee125ed0a48239c08ef">More...</a><br /></td></tr>
 <tr class="separator:a5b8c168682519ee125ed0a48239c08ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67da00921ee8becaedabcc75556a76b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac67da00921ee8becaedabcc75556a76b">current_user_set_voice_state</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, bool suppress=false, time_t request_to_speak_timestamp=0, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:ac67da00921ee8becaedabcc75556a76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bot's voice state on a stage channel.  <a href="classdpp_1_1cluster.html#ac67da00921ee8becaedabcc75556a76b">More...</a><br /></td></tr>
+<tr class="separator:ac67da00921ee8becaedabcc75556a76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6947686248bb0e551b6912856f9553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a0b6947686248bb0e551b6912856f9553">user_set_voice_state</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, bool suppress=false, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a0b6947686248bb0e551b6912856f9553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a user's voice state on a stage channel.  <a href="classdpp_1_1cluster.html#a0b6947686248bb0e551b6912856f9553">More...</a><br /></td></tr>
+<tr class="separator:a0b6947686248bb0e551b6912856f9553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1083,6 +1089,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a channel. </p>
+<p >Create a new channel object for the guild. Requires the <code>MANAGE_CHANNELS</code> permission. If setting permission overwrites, only permissions your bot has in the guild can be allowed/denied. Setting <code>MANAGE_ROLES</code> permission in channels is only possible for guild administrators. Returns the new channel object on success. Fires a <code>Channel Create Gateway</code> event.</p>
+<p >All parameters to this endpoint are optional excluding <code>name</code></p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1280,8 +1288,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a391779232600ba3a6f57d678047761b0" name="a391779232600ba3a6f57d678047761b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a391779232600ba3a6f57d678047761b0">&#9670;&nbsp;</a></span>channel_edit_position()</h2>
+<a id="af23f4785c6b2b01fa42caf2a36b3e725" name="af23f4785c6b2b01fa42caf2a36b3e725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23f4785c6b2b01fa42caf2a36b3e725">&#9670;&nbsp;</a></span>channel_edit_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1289,7 +1297,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void dpp::cluster::channel_edit_position </td>
           <td>(</td>
-          <td class="paramtype">const class <a class="el" href="classdpp_1_1channel.html">channel</a> &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classdpp_1_1channel.html">channel</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
@@ -1306,12 +1314,13 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Edit a channel's position. </p>
+<p>Edit multiple channels positions. </p>
+<p >Modify the positions of a set of channel objects for the guild. Requires <code>MANAGE_CHANNELS</code> permission. Fires multiple <code>Channel Update Gateway</code> events. Only channels to be modified are required.</p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to change the position for </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request.">dpp::confirmation</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1817,6 +1826,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit current (bot) user. </p>
+<p >Modifies the current member in a guild. Returns the updated <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> object on success. Fires a <code>Guild Member Update</code> Gateway event.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nickname</td><td>Nickname to set </td></tr>
@@ -2019,6 +2029,81 @@ Friends</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to leave </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request.">dpp::confirmation</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac67da00921ee8becaedabcc75556a76b" name="ac67da00921ee8becaedabcc75556a76b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67da00921ee8becaedabcc75556a76b">&#9670;&nbsp;</a></span>current_user_set_voice_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::current_user_set_voice_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>suppress</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>request_to_speak_timestamp</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the bot's voice state on a stage channel. </p>
+<p ><b>Caveats</b></p>
+<p >There are currently several caveats for this endpoint:</p>
+<ul>
+<li><code>channel_id</code> must currently point to a stage channel.<ul>
+<li>current user must already have joined <code>channel_id</code>.</li>
+<li>You must have the <code>MUTE_MEMBERS</code> permission to unsuppress yourself. You can always suppress yourself.</li>
+<li>You must have the <code>REQUEST_TO_SPEAK</code> permission to request to speak. You can always clear your own request to speak.</li>
+<li>You are able to set <code>request_to_speak_timestamp</code> to any present or future time.</li>
+</ul>
+</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild to set voice state on </td></tr>
+    <tr><td class="paramname">channel_id</td><td>Stage channel to set voice state on </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
+    <tr><td class="paramname">suppress</td><td>True if the user's audio should be suppressed, false if it should not </td></tr>
+    <tr><td class="paramname">request_to_speak_timestamp</td><td>The time at which we requested to speak, or 0 to clear the request. The time set here must be the current time or in the future. On success the callback will contain a <a class="el" href="structdpp_1_1scheduled__event.html" title="A scheduled event.">dpp::scheduled_event</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_exception</td><td>You attempted to set a request_to_speak_timestamp in the past which is not the value of 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3020,6 +3105,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add guild member. Needs a specific oauth2 scope, from which you get the access_token. </p>
+<p >Adds a user to the guild, provided you have a valid oauth2 access token for the user with the guilds.join scope. Returns the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a>, which is defaulted if the user is already a member of the guild. Fires a <code>Guild Member Add</code> Gateway event.</p>
+<p >For guilds with Membership Screening enabled, this endpoint will default to adding new members as pending in the guild member object. Members that are pending will have to complete membership screening before they become full members that can talk.</p>
+<dl class="section note"><dt>Note</dt><dd>All parameters to this endpoint except for access_token are optional. The bot must be a member of the guild with <code>CREATE_INSTANT_INVITE</code> permission.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gm</td><td>Guild member to add </td></tr>
@@ -3113,7 +3201,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add guild ban. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Create a guild ban, and optionally delete previous messages sent by the banned user. Requires the <code>BAN_MEMBERS</code> permission. Fires a <code>Guild Ban Add</code> Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to add ban to </td></tr>
@@ -3160,7 +3249,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete guild ban. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Remove the ban for a user. Requires the <code>BAN_MEMBERS</code> permissions. Fires a Guild Ban Remove Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to delete ban from </td></tr>
@@ -3205,7 +3295,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begin guild prune. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Begin a prune operation. Requires the <code>KICK_MEMBERS</code> permission. Returns a prune object indicating the number of members that were removed in the prune operation. For large guilds it's recommended to set the <code>compute_prune_count</code> option to false, forcing 'pruned' to 0. Fires multiple <code>Guild Member Remove</code> Gateway events. By default, prune will not remove users with roles. You can optionally include specific roles in your prune by providing the <code>include_roles</code> parameter. Any inactive user that has a subset of the provided role(s) will be included in the prune and users with additional roles will not.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to prune </td></tr>
@@ -3501,7 +3592,10 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a guild. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p >Create a new guild. Returns a guild object on success. <code>Fires a Guild Create Gateway</code> event.</p>
+<p >When using the roles parameter, the first member of the array is used to change properties of the guild's everyone role. If you are trying to bootstrap a guild with additional roles, keep this in mind. The required id field within each role object is an integer placeholder, and will be replaced by the API upon consumption. Its purpose is to allow you to overwrite a role's permissions in a channel when also passing in channels with the channels array. </p><pre class="fragment">When using the channels parameter, the position field is ignored, and none of the default channels are created. The id field within
+</pre><p> each channel object may be set to an integer placeholder, and will be replaced by the API upon consumption. Its purpose is to allow you to create <code>GUILD_CATEGORY</code> channels by setting the <code>parent_id</code> field on any children to the category's id field. Category channels must be listed before any children. </p><pre class="fragment">@note The region field is deprecated and is replaced by channel.rtc_region.
+</pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>Guild to create </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -3582,6 +3676,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a guild. </p>
+<p >Delete a guild permanently. User must be owner. Fires a <code>Guild Delete Gateway</code> event.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to delete </td></tr>
@@ -3625,7 +3720,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete guild integration. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Delete the attached integration object for the guild. Deletes any associated webhooks and kicks the associated bot if there is one. Requires the <code>MANAGE_GUILD</code> permission. Fires a Guild Integrations Update Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to delete integration for </td></tr>
@@ -3664,7 +3760,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a guild. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Modify a guild's settings. Requires the <code>MANAGE_GUILD</code> permission. Returns the updated guild object on success. Fires a <code>Guild Update Gateway</code> event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>Guild to edit </td></tr>
@@ -3702,7 +3799,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit the properties of an existing guild member. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Modify attributes of a guild member. Returns the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a>. Fires a <code>Guild Member Update Gateway</code> event. If the <code>channel_id</code> is set to 0, this will force the target user to be disconnected from voice. When moving members to channels, the API user must have permissions to both connect to the channel and have the <code>MOVE_MEMBERS</code> permission.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gm</td><td>Guild member to edit </td></tr>
@@ -3746,6 +3844,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit guild widget. </p>
+<p >Requires the <code>MANAGE_GUILD</code> permission.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to edit widget for </td></tr>
@@ -3879,8 +3978,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Edit a single emoji. You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p>Edit a single emoji. </p>
+<p >You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to edit emoji on </td></tr>
@@ -4264,6 +4364,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a guild. </p>
+<p >Returns the guild object for the given id. This endpoint will also return approximate_member_count and approximate_presence_count for the guild.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>Guild ID to retrieve </td></tr>
@@ -4307,6 +4408,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get single guild ban. </p>
+<p >Requires the <code>BAN_MEMBERS</code> permission.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get ban for </td></tr>
@@ -4345,6 +4447,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild ban list. </p>
+<p >Requires the <code>BAN_MEMBERS</code> permission.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get bans for </td></tr>
@@ -4382,6 +4485,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild itegrations. </p>
+<p >Requires the <code>MANAGE_GUILD</code> permission.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get integrations for </td></tr>
@@ -4419,6 +4523,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild invites. </p>
+<p >Returns a list of invite objects (with invite metadata) for the guild. Requires the <code>MANAGE_GUILD</code> permission.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get invites for </td></tr>
@@ -4512,6 +4617,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all guild members. </p>
+<dl class="section note"><dt>Note</dt><dd>This endpoint is restricted according to whether the <code>GUILD_MEMBERS</code> Privileged Intent is enabled for your application.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get all members for </td></tr>
@@ -4551,6 +4657,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a guild preview. Returns a guild object but only a subset of the fields will be populated. </p>
+<p >Returns the guild preview object for the given id <code>g</code>. If the user is not in the guild, then the guild must be lurkable (it must be Discoverable or have a live public stage).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>Guild ID to retrieve </td></tr>
@@ -4594,6 +4701,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get prune counts. </p>
+<p >Returns a prune object indicating the number of members that would be removed in a prune operation. Requires the <code>KICK_MEMBERS</code> permission. By default, prune will not remove users with roles. You can optionally include specific roles in your prune by providing the include_roles parameter. Any inactive user that has a subset of the provided role(s) will be counted in the prune and users with additional roles will not.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to count for pruning </td></tr>
@@ -4632,6 +4740,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild vanity url, if enabled. </p>
+<p >Returns a partial <a class="el" href="classdpp_1_1invite.html" title="Represents an invite to a discord guild or channel.">dpp::invite</a> object for guilds with that feature enabled. Requires the <code>MANAGE_GUILD</code> permission. code will be null if a vanity url for the guild is not set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to get vanity URL for </td></tr>
@@ -4668,7 +4777,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get guild voice regions. Voice regions per guild are somewhat deprecated in preference of per-channel voice regions. </p>
+<p>Get guild voice regions. </p>
+<p >Voice regions per guild are somewhat deprecated in preference of per-channel voice regions. Returns a list of voice region objects for the guild. Unlike the similar /voice route, this returns VIP servers when the guild is VIP-enabled.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get voice regions for </td></tr>
@@ -4706,6 +4816,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild widget. </p>
+<p >Requires the <code>MANAGE_GUILD</code> permission.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get widget for </td></tr>
@@ -4755,7 +4866,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add role to guild member. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Adds a role to a guild member. Requires the <code>MANAGE_ROLES</code> permission. Fires a Guild Member Update Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to add a role to </td></tr>
@@ -4801,7 +4913,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove (kick) a guild member. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Remove a member from a guild. Requires <code>KICK_MEMBERS</code> permission. Fires a <code>Guild Member Remove</code> Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to kick member from </td></tr>
@@ -4852,7 +4965,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove role from guild member. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Removes a role from a guild member. Requires the <code>MANAGE_ROLES</code> permission. Fires a <code>Guild Member Update</code> Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to remove role from user on </td></tr>
@@ -5000,6 +5114,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Search for guild members based on whether their username or nickname starts with the given string. </p>
+<dl class="section note"><dt>Note</dt><dd>This endpoint is restricted according to whether the <code>GUILD_MEMBERS</code> Privileged Intent is enabled for your application.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to search in </td></tr>
@@ -5045,6 +5160,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Change current user nickname. </p>
+<p >Modifies the nickname of the current user in a guild. Fires a <code>Guild Member Update</code> Gateway event.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Deprecated in favor of Modify Current Member. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -6685,7 +6802,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unpin a message. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel id to unpin message on </td></tr>
@@ -6970,7 +7087,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a role on a guild. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Create a new role for the guild. Requires the <code>MANAGE_ROLES</code> permission. Returns the new role object on success. Fires a <code>Guild Role Create</code> Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>Role to create (guild ID is encapsulated in the role object) </td></tr>
@@ -7014,7 +7132,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a role. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Requires the <code>MANAGE_ROLES</code> permission. Fires a <code>Guild Role Delete</code> Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to delete the role on </td></tr>
@@ -7053,7 +7172,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a role on a guild. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Requires the <code>MANAGE_ROLES</code> permission. Returns the updated role on success. Fires a <code>Guild Role Update</code> Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>Role to edit </td></tr>
@@ -7091,7 +7211,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a role's position in a guild. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<p >Modify the positions of a set of role objects for the guild. Requires the <code>MANAGE_ROLES</code> permission. Fires multiple <code>Guild Role Update</code> Gateway events.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>Role to change position of </td></tr>
@@ -7247,7 +7368,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards. Returns once all shards are connected.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development. </p>
+<p>Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>websocket protocol to use, either ws_json or ws_etf. </td></tr>
@@ -7425,7 +7546,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start the cluster, connecting all its shards. Returns once all shards are connected. </p>
+<p>Start the cluster, connecting all its shards. </p>
+<p >Returns once all shards are connected if return_after is true, otherwise enters an infinite loop while the shards run.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">return_after</td><td>If true the bot will return to your program after starting shards, if false this function will never return. </td></tr>
@@ -8124,6 +8246,73 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The <a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">user_identified</a> object is a subclass of <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a> which contains further details if you have the oauth2 identify or email scopes. If you do not have these scopes, these fields are empty. You can safely convert a <a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">user_identified</a> to user with <code>dynamic_cast</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a0b6947686248bb0e551b6912856f9553" name="a0b6947686248bb0e551b6912856f9553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6947686248bb0e551b6912856f9553">&#9670;&nbsp;</a></span>user_set_voice_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::user_set_voice_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>suppress</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a user's voice state on a stage channel. </p>
+<p ><b>Caveats</b></p>
+<p >There are currently several caveats for this endpoint:</p>
+<ul>
+<li><code>channel_id</code> must currently point to a stage channel.</li>
+<li>User must already have joined <code>channel_id</code>.</li>
+<li>You must have the <code>MUTE_MEMBERS</code> permission. (Since suppression is the only thing that is available currently)</li>
+<li>When unsuppressed, non-bot users will have their <code>request_to_speak_timestamp</code> set to the current time. Bot users will not.</li>
+<li>When suppressed, the user will have their <code>request_to_speak_timestamp</code> removed.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user_id</td><td>The user to set the voice state of </td></tr>
+    <tr><td class="paramname">guild_id</td><td>Guild to set voice state on </td></tr>
+    <tr><td class="paramname">channel_id</td><td>Stage channel to set voice state on </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
+    <tr><td class="paramname">suppress</td><td>True if the user's audio should be suppressed, false if it should not On success the callback will contain a <a class="el" href="structdpp_1_1scheduled__event.html" title="A scheduled event.">dpp::scheduled_event</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
