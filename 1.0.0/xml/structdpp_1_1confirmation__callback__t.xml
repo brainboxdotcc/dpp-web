@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1confirmation__callback__t" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::confirmation_callback_t</compoundname>
+    <includes local="no">cluster.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1aa34bb49cd6a7ccbe3e076df27b434e86" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::confirmation_callback_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returned data type in confirmable_t, used to double check to avoid an exception if you wish </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="119" column="13" bodyfile="include/dpp/cluster.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1a97669d491cc60a5e76a248bae9ad7633" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref></type>
+        <definition>http_request_completion_t dpp::confirmation_callback_t::http_info</definition>
+        <argsstring></argsstring>
+        <name>http_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information about the HTTP call used to make the request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="121" column="27" bodyfile="include/dpp/cluster.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ab093361d83dce80f52b4ba88d3753758" kindref="member">confirmable_t</ref></type>
+        <definition>confirmable_t dpp::confirmation_callback_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value returned, wrapped in variant </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="123" column="15" bodyfile="include/dpp/cluster.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1abd8da2773d1de150b26f3d9187fe1e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::confirmation_callback_t::confirmation_callback_t</definition>
+        <argsstring>()=default</argsstring>
+        <name>confirmation_callback_t</name>
+        <briefdescription>
+<para>Construct a new confirmation callback t object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a8d84eec56c475c504c38213c0561a9fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::confirmation_callback_t::confirmation_callback_t</definition>
+        <argsstring>(const std::string &amp;_type, const confirmable_t &amp;_value, const http_request_completion_t &amp;_http)</argsstring>
+        <name>confirmation_callback_t</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1ab093361d83dce80f52b4ba88d3753758" kindref="member">confirmable_t</ref> &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;</type>
+          <declname>_http</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new confirmation callback object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of callback that is encapsulated in the confirmable_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to encapsulate in the confirmable_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_http</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP metadata from the REST call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="137" column="1" bodyfile="src/dpp/cluster.cpp" bodystart="47" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The results of a REST call wrapped in a convenient struct. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>dpp::confirmation_callback_t</label>
+        <link refid="structdpp_1_1confirmation__callback__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>http_info</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::http_request_completion_t</label>
+        <link refid="structdpp_1_1http__request__completion__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>headers</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>error</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>ratelimit_bucket</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ratelimit_limit</edgelabel>
+          <edgelabel>ratelimit_remaining</edgelabel>
+          <edgelabel>ratelimit_reset_after</edgelabel>
+          <edgelabel>ratelimit_retry_after</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ratelimit_global</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>http_error</label>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="5">
+        <label>map&lt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>variant&lt; confirmation, message, message_map, user, user_map, guild_member, guild_member_map, channel, channel_map, guild, guild_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog &gt;</label>
+      </node>
+      <node id="6">
+        <label>uint16_t</label>
+      </node>
+      <node id="8">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/cluster.h" line="117" column="1" bodyfile="include/dpp/cluster.h" bodystart="117" bodyend="138"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1confirmation__callback__t_1abd8da2773d1de150b26f3d9187fe1e44" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>confirmation_callback_t</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a8d84eec56c475c504c38213c0561a9fa" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>confirmation_callback_t</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a97669d491cc60a5e76a248bae9ad7633" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>http_info</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1aa34bb49cd6a7ccbe3e076df27b434e86" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>type</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

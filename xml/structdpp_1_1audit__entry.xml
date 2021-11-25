@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1audit__entry" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::audit_entry</compoundname>
+    <includes local="no">auditlog.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1ae52ad0499e9492694af8bfc66de01255" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::audit_entry::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>id of the entry </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="160" column="10" bodyfile="include/dpp/auditlog.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a0b6fcc890dfd0e55e68c39d2f88d268b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::audit_entry::target_id</definition>
+        <argsstring></argsstring>
+        <name>target_id</name>
+        <briefdescription>
+<para>id of the affected entity (webhook, user, role, etc.) (may be empty) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="161" column="10" bodyfile="include/dpp/auditlog.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1ab4c452b5018afcc42cd96f67b7ae75f9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1audit__change" kindref="compound">audit_change</ref> &gt;</type>
+        <definition>std::vector&lt;audit_change&gt; dpp::audit_entry::changes</definition>
+        <argsstring></argsstring>
+        <name>changes</name>
+        <briefdescription>
+<para>Optional: changes made to the target_id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="162" column="12" bodyfile="include/dpp/auditlog.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a4c44d24615548cc33303082104b24b05" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::audit_entry::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+<para>the user who made the changes (may be empty) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="163" column="10" bodyfile="include/dpp/auditlog.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a3abfeeaa8c3662ee181190575da51b8b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3d" kindref="member">audit_type</ref></type>
+        <definition>audit_type dpp::audit_entry::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+<para>type of action that occurred </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="164" column="11" bodyfile="include/dpp/auditlog.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a9c715dcbef3d08e2d5d7cc58d5be1ca3" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="structdpp_1_1audit__extra" kindref="compound">audit_extra</ref> &gt;</type>
+        <definition>std::optional&lt;audit_extra&gt; dpp::audit_entry::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+<para>Optional: additional info for certain action types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="165" column="14" bodyfile="include/dpp/auditlog.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1audit__entry_1a9681924b6d2256345a7c5579a34f3f7b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::audit_entry::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+<para>Optional: the reason for the change (0-512 characters) <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/auditlog.h" line="166" column="12" bodyfile="include/dpp/auditlog.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An individual audit log entry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>audit_type</label>
+      </node>
+      <node id="1">
+        <label>dpp::audit_entry</label>
+        <link refid="structdpp_1_1audit__entry"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>id</edgelabel>
+          <edgelabel>target_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>changes</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>event</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>options</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>reason</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="5">
+        <label>optional&lt;</label>
+      </node>
+      <node id="6">
+        <label>std::string</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector&lt;</label>
+      </node>
+      <node id="2">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/auditlog.h" line="159" column="1" bodyfile="include/dpp/auditlog.h" bodystart="159" bodyend="167"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1audit__entry_1ab4c452b5018afcc42cd96f67b7ae75f9" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>changes</name></member>
+      <member refid="structdpp_1_1audit__entry_1a3abfeeaa8c3662ee181190575da51b8b" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>event</name></member>
+      <member refid="structdpp_1_1audit__entry_1ae52ad0499e9492694af8bfc66de01255" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>id</name></member>
+      <member refid="structdpp_1_1audit__entry_1a9c715dcbef3d08e2d5d7cc58d5be1ca3" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>options</name></member>
+      <member refid="structdpp_1_1audit__entry_1a9681924b6d2256345a7c5579a34f3f7b" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>reason</name></member>
+      <member refid="structdpp_1_1audit__entry_1a0b6fcc890dfd0e55e68c39d2f88d268b" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>target_id</name></member>
+      <member refid="structdpp_1_1audit__entry_1a4c44d24615548cc33303082104b24b05" prot="public" virt="non-virtual"><scope>dpp::audit_entry</scope><name>user_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

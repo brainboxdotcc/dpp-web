@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1voice__user__talking__t" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::voice_user_talking_t</compoundname>
+    <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
+    <includes local="no">dispatcher.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1voice__user__talking__t_1ac496e63b6b2eba1f3ac9e172a558ec38" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> *</type>
+        <definition>class discord_voice_client* dpp::voice_user_talking_t::voice_client</definition>
+        <argsstring></argsstring>
+        <name>voice_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="848" column="28" bodyfile="include/dpp/dispatcher.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1voice__user__talking__t_1aeb9986889aec16ac0d5da675636218dd" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::voice_user_talking_t::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="849" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1voice__user__talking__t_1a9d52fb0412548166b6e54d81bdb8980b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::voice_user_talking_t::talking_flags</definition>
+        <argsstring></argsstring>
+        <name>talking_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="850" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="850" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::event_dispatch_t::raw_event</definition>
+        <argsstring></argsstring>
+        <name>raw_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raw event text </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="40" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shard the event came from </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="43" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1voice__user__talking__t_1a364eafcc97db6de005b150f3a92ed634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::voice_user_talking_t::voice_user_talking_t</definition>
+        <argsstring>(class discord_client *client, const std::string &amp;raw)</argsstring>
+        <name>voice_user_talking_t</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>raw</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shard the event originated on WILL ALWAYS be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw event text as JSON </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="847" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="149" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>voice user talking </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dpp::event_dispatch_t</label>
+        <link refid="structdpp_1_1event__dispatch__t"/>
+      </node>
+      <node id="1">
+        <label>dpp::voice_user_talking_t</label>
+        <link refid="structdpp_1_1voice__user__talking__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>SSL *</label>
+      </node>
+      <node id="12">
+        <label>SSL_CTX *</label>
+      </node>
+      <node id="8">
+        <label>bool</label>
+      </node>
+      <node id="26">
+        <label>cache_policy_setting_t</label>
+      </node>
+      <node id="18">
+        <label>double</label>
+      </node>
+      <node id="25">
+        <label>dpp::cache_policy_t</label>
+        <link refid="structdpp_1_1cache__policy__t"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>role_policy</edgelabel>
+          <edgelabel>user_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>dpp::cluster</label>
+        <link refid="classdpp_1_1cluster"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>last_identify</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>cluster_id</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>maxclusters</edgelabel>
+          <edgelabel>numshards</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>rest_ping</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>dispatch</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>me</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>cache_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dpp::discord_client</label>
+        <link refid="classdpp_1_1discord__client"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>creator</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>heartbeat_interval</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>max_shards</edgelabel>
+          <edgelabel>reconnects</edgelabel>
+          <edgelabel>resumes</edgelabel>
+          <edgelabel>shard_id</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>last_heartbeat</edgelabel>
+          <edgelabel>last_heartbeat_ack</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>thread_id</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>last_seq</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sessionid</edgelabel>
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>voice_mutex</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>websocket_ping</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ready</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>connecting_voice_channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>dpp::discord_voice_client</label>
+        <link refid="classdpp_1_1discord__voice__client"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>creator</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>decode_voice_recv</edgelabel>
+          <edgelabel>sodium_initialised</edgelabel>
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>heartbeat_interval</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>last_heartbeat</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>thread_id</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sessionid</edgelabel>
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+          <edgelabel>server_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>dpp::dispatcher</label>
+        <link refid="classdpp_1_1dispatcher"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>application_command_create</edgelabel>
+          <edgelabel>application_command_delete</edgelabel>
+          <edgelabel>application_command_update</edgelabel>
+          <edgelabel>button_click</edgelabel>
+          <edgelabel>channel_create</edgelabel>
+          <edgelabel>channel_delete</edgelabel>
+          <edgelabel>channel_pins_update</edgelabel>
+          <edgelabel>channel_update</edgelabel>
+          <edgelabel>guild_ban_add</edgelabel>
+          <edgelabel>guild_ban_remove</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::event_dispatch_t</label>
+        <link refid="structdpp_1_1event__dispatch__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>raw_event</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>from</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dpp::opensslcontext</label>
+        <link refid="classdpp_1_1opensslcontext"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ssl</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dpp::ssl_client</label>
+        <link refid="classdpp_1_1ssl__client"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buffer</edgelabel>
+          <edgelabel>cipher</edgelabel>
+          <edgelabel>hostname</edgelabel>
+          <edgelabel>obuffer</edgelabel>
+          <edgelabel>port</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>nonblocking</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>sfd</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ssl</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>last_tick</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>bytes_in</edgelabel>
+          <edgelabel>bytes_out</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>custom_readable_fd</edgelabel>
+          <edgelabel>custom_readable_ready</edgelabel>
+          <edgelabel>custom_writeable_fd</edgelabel>
+          <edgelabel>custom_writeable_ready</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::voice_user_talking_t</label>
+        <link refid="structdpp_1_1voice__user__talking__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>voice_client</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>talking_flags</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::websocket_client</label>
+        <link refid="classdpp_1_1websocket__client"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>int</label>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="15">
+        <label>function&lt;</label>
+      </node>
+      <node id="28">
+        <label>std::mutex</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>native_handle_type</label>
+      </node>
+      <node id="29">
+        <label>unordered_map&lt;</label>
+      </node>
+      <node id="13">
+        <label>time_t</label>
+      </node>
+      <node id="22">
+        <label>uint16_t</label>
+      </node>
+      <node id="17">
+        <label>uint32_t</label>
+      </node>
+      <node id="14">
+        <label>uint64_t</label>
+      </node>
+      <node id="24">
+        <label>uint8_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/dispatcher.h" line="840" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="840" bodyend="851"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::voice_user_talking_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" virt="non-virtual"><scope>dpp::voice_user_talking_t</scope><name>from</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" virt="non-virtual"><scope>dpp::voice_user_talking_t</scope><name>raw_event</name></member>
+      <member refid="structdpp_1_1voice__user__talking__t_1a9d52fb0412548166b6e54d81bdb8980b" prot="public" virt="non-virtual"><scope>dpp::voice_user_talking_t</scope><name>talking_flags</name></member>
+      <member refid="structdpp_1_1voice__user__talking__t_1aeb9986889aec16ac0d5da675636218dd" prot="public" virt="non-virtual"><scope>dpp::voice_user_talking_t</scope><name>user_id</name></member>
+      <member refid="structdpp_1_1voice__user__talking__t_1ac496e63b6b2eba1f3ac9e172a558ec38" prot="public" virt="non-virtual"><scope>dpp::voice_user_talking_t</scope><name>voice_client</name></member>
+      <member refid="structdpp_1_1voice__user__talking__t_1a364eafcc97db6de005b150f3a92ed634" prot="public" virt="non-virtual"><scope>dpp::voice_user_talking_t</scope><name>voice_user_talking_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
