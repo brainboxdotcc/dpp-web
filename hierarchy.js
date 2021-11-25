@@ -16,6 +16,16 @@ var hierarchy =
     [ "detail::chrono_format_checker", "structdetail_1_1chrono__format__checker.html", null ],
     [ "detail::chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structdetail_1_1chrono__formatter.html", null ],
     [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
+    [ "dpp::collector< T, C >", "classdpp_1_1collector.html", [
+      [ "dpp::channel_collector", "classdpp_1_1channel__collector.html", null ],
+      [ "dpp::message_collector", "classdpp_1_1message__collector.html", [
+        [ "message_collector", "classmessage__collector.html", null ]
+      ] ],
+      [ "dpp::reaction_collector", "classdpp_1_1reaction__collector.html", null ],
+      [ "dpp::role_collector", "classdpp_1_1role__collector.html", null ],
+      [ "dpp::scheduled_event_collector", "classdpp_1_1scheduled__event__collector.html", null ],
+      [ "dpp::thread_collector", "classdpp_1_1thread__collector.html", null ]
+    ] ],
     [ "dpp::command_data_option", "structdpp_1_1command__data__option.html", null ],
     [ "dpp::command_info_t", "structdpp_1_1command__info__t.html", null ],
     [ "dpp::command_interaction", "structdpp_1_1command__interaction.html", null ],
@@ -214,6 +224,7 @@ var hierarchy =
       [ "dpp::channel", "classdpp_1_1channel.html", [
         [ "dpp::thread", "classdpp_1_1thread.html", null ]
       ] ],
+      [ "dpp::collected_reaction", "classdpp_1_1collected__reaction.html", null ],
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ],
       [ "dpp::guild", "classdpp_1_1guild.html", null ],
       [ "dpp::integration", "classdpp_1_1integration.html", null ],

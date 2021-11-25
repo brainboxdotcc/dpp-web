@@ -26,7 +26,7 @@ var searchData=
   ['location_23',['location',['../structdpp_1_1event__entities.html#a55ed07b7c6e84678dfee16c71973a3bb',1,'dpp::event_entities']]],
   ['locked_24',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
   ['log_25',['log',['../classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0',1,'dpp::cluster::log()'],['../classdpp_1_1discord__client.html#a9880e3f13c00cd6e4397fe64ae23b4d0',1,'dpp::discord_client::log()'],['../classdpp_1_1discord__voice__client.html#ac06f68e15b979b0590f09c9732548f16',1,'dpp::discord_voice_client::log()'],['../classdpp_1_1ssl__client.html#a6037b1a66cf83e022655bd47f0df61a5',1,'dpp::ssl_client::log()']]],
-  ['log_5ft_26',['log_t',['../structdpp_1_1log__t.html',1,'dpp::log_t'],['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t::log_t()']]],
+  ['log_5ft_26',['log_t',['../structdpp_1_1log__t.html',1,'dpp::log_t'],['../structdpp_1_1log__t.html#af167a050a59e185b077709f0fd957f0f',1,'dpp::log_t::log_t(const log_t &amp;)=default'],['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t::log_t(class discord_client *client, const std::string &amp;raw)']]],
   ['logger_27',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
   ['logic_5fexception_28',['logic_exception',['../classdpp_1_1logic__exception.html',1,'dpp']]],
   ['loglevel_29',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045',1,'dpp::utility::loglevel()']]],

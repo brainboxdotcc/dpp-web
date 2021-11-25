@@ -10,6 +10,6 @@ var structdpp_1_1message__create__t =
     [ "send", "structdpp_1_1message__create__t.html#ac74d055f8d63c5218e7bd0a1f811392f", null ],
     [ "send", "structdpp_1_1message__create__t.html#af23cc09af5fd2b43b688188c7b29e14c", null ],
     [ "from", "structdpp_1_1message__create__t.html#a357873be4dd30eef7928ae5f7c13e7db", null ],
-    [ "msg", "structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0", null ],
+    [ "msg", "structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4", null ],
     [ "raw_event", "structdpp_1_1message__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7", null ]
 ];

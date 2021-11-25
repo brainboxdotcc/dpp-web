@@ -113,9 +113,9 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Message handler to look for a command called !file */</span></div>
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp;event) {</div>
-<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!file&quot;</span>) {</div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">msg</a>.<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!file&quot;</span>) {</div>
 <div class="line">            <span class="comment">// create a message</span></div>
-<div class="line">            dpp::message msg(event.msg-&gt;channel_id, <span class="stringliteral">&quot;Hey there, i&#39;ve got a new image!&quot;</span>);</div>
+<div class="line">            dpp::message msg(event.msg.channel_id, <span class="stringliteral">&quot;Hey there, i&#39;ve got a new image!&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">            std::filesystem::path filePath(<span class="stringliteral">&quot;path_to_your_file.json&quot;</span>);</div>
 <div class="line"> </div>
@@ -136,9 +136,9 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line">    bot.start(<span class="keyword">false</span>);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:371</div></div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1120</div></div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html_a93c10b3fce36e161eca41edcd32857d0"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">dpp::message_create_t::msg</a></div><div class="ttdeci">message * msg</div><div class="ttdoc">message that was created (sent). If you use any parts of this in another thread, take a copy!...</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1130</div></div>
+<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:373</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1122</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html_a02298492087c0ba68eeb4ea8e42833b4"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">dpp::message_create_t::msg</a></div><div class="ttdeci">message msg</div><div class="ttdoc">message that was created (sent).</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1131</div></div>
 <div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> message.h:964</div></div>
 </div><!-- fragment --><p >Attachments via an url aren't possible. But there's a workaround for. You can download the file and then attach it to the message.</p>
 <p >To make requests, D++ also has a helper function: <code><a class="el" href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52" title="Make a HTTP(S) request. For use when wanting asnyncronous access to HTTP APIs outside of Discord.">dpp::cluster::request</a></code>.</p>
@@ -150,9 +150,9 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Message handler to look for a command called !file */</span></div>
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp;event) {</div>
-<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">msg</a>-&gt;<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!file&quot;</span>) {</div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">msg</a>.<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!file&quot;</span>) {</div>
 <div class="line">            <span class="comment">// request an image</span></div>
-<div class="line">            bot.request(<span class="stringliteral">&quot;https://dpp.dev/DPP-Logo.png&quot;</span>, dpp::m_get, [&amp;bot, channel_id = event.msg-&gt;channel_id](const dpp::http_request_completion_t &amp; httpRequestCompletion) {</div>
+<div class="line">            bot.request(<span class="stringliteral">&quot;https://dpp.dev/DPP-Logo.png&quot;</span>, dpp::m_get, [&amp;bot, channel_id = event.msg.channel_id](const dpp::http_request_completion_t &amp; httpRequestCompletion) {</div>
 <div class="line"> </div>
 <div class="line">                <span class="comment">// create a message</span></div>
 <div class="line">                dpp::message msg(channel_id, <span class="stringliteral">&quot;This is my new attachment:&quot;</span>);</div>
