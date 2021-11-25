@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="buildwindows" kind="page">
+    <compoundname>buildwindows</compoundname>
+    <title>Building on Windows</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="buildwindows_1autotoc_md7">
+<title>Building on Windows</title>
+<para>To build on windows follow these steps <emphasis>exactly</emphasis>. The build process depends on specific libraries being installed on your system in specific locations.</para>
+<para><simplesect kind="note"><para>You should not need to build a copy of the library for windows - DLL, LIB and EXP files for Windows and visual studio 2019 64-bit will be provided in the github version releases. Unless you wish to submit fixes and enhancements to the library itself you should use these releases instead.</para>
+</simplesect>
+<bold>Instructions here are subject to change!</bold></para>
+<para><orderedlist>
+<listitem><para>Make sure you have Visual Studio 2019. Community, Professional or Enterprise work fine. You do <bold>NOT</bold> want to use <emphasis>Visual Studio Code</emphasis> for this. You can <ulink url="https://visualstudio.microsoft.com/downloads/">download the correct version here</ulink>.</para>
+</listitem><listitem><para>Check out the DPP project source using git</para>
+</listitem><listitem><para>From within Visual Studio 2019, click the &quot;File&quot; menu, choose &quot;Open&quot; then &quot;CMake&quot;, and select the CMakeLists.txt within the project folder <image type="html" name="winbuild_1.png"></image>
+ <image type="html" name="winbuild_2.png"></image>
+</para>
+</listitem><listitem><para>Go to the &quot;Build&quot; menu and choose &quot;Build all&quot; or just press F7 <image type="html" name="winbuild_3.png"></image>
+</para>
+</listitem><listitem><para>Check that compilation succeeded. You may now use the library in your projects! <image type="html" name="winbuild_4.png"></image>
+</para>
+</listitem></orderedlist>
+</para>
+<sect2 id="buildwindows_1autotoc_md8">
+<title>Troubleshooting</title>
+<para><itemizedlist>
+<listitem><para>If you do not have an option to open the CMakeLists.txt, ensure that you have installed the C++ development portions of visual studio (not just web development portions) with at least the default options.</para>
+</listitem><listitem><para>If the project does not build, please ask for help on the <ulink url="https://discord.gg/dpp">official discord server</ulink></para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="buildwindows_1autotoc_md9">
+<title>After compiling</title>
+<para>After compilation you can directly reference the compiled project in your own CMakeLists.txt as a library or use the lib/dll/headers as you wish. Note that <computeroutput>openssl</computeroutput> and <computeroutput>zlib</computeroutput> will also be an indirect dependency of your program (as <computeroutput>DLL</computeroutput> files) and should be copied alongside <computeroutput>dpp.dll</computeroutput>. </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="docpages/02_build.md"/>
+  </compounddef>
+</doxygen>

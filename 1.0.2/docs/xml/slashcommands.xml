@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="slashcommands" kind="page">
+    <compoundname>slashcommands</compoundname>
+    <title>Using Slash Commands and Interactions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Slash commands and interactions are a newer feature of Discord which allow bot&apos;s commands to be registered centrally within the system and for users to easily explore and get help with avaialble commands through the client itself.</para>
+<para>To add a slash command you should use the <ref refid="classdpp_1_1cluster_1a124b1a52ca2f5ae298f1bb99ca964dcb" kindref="member">dpp::cluster::global_command_create</ref> method for global commands (available to all guilds) or <ref refid="classdpp_1_1cluster_1a4c0ce1ad5256a252ab0ce43923a07ae3" kindref="member">dpp::cluster::guild_command_create</ref> to create a local command (available only to one guild).</para>
+<para>When a user issues these commands the reply will arrive via the on_interaction_create event which you can hook, and take action when you see your commands. It is possible to reply to an interaction by using either the <ref refid="structdpp_1_1interaction__create__t_1a81a1b21aa504d87a1cc47869daff2c77" kindref="member">dpp::interaction_create_t::reply</ref> method, or by manually instantiating an object of type <ref refid="structdpp_1_1interaction__response" kindref="compound">dpp::interaction_response</ref> and attaching a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> object to it.</para>
+<para><ref refid="structdpp_1_1interaction__create__t_1a81a1b21aa504d87a1cc47869daff2c77" kindref="member">dpp::interaction_create_t::reply</ref> has two overloaded versions of the method, one of which accepts simple std::string replies, for basic text-only messages (if your message is &apos;ephemeral&apos; you must use this) and one which accepts a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> for more advanced replies. Please note that at present, Discord only supports a small subset of message and embed features within an interaction response object.</para>
+<para><simplesect kind="note"><para>A later version of the library will include a built in command handler system which will be able to integrate with slash commands and interactions, making this process even more seamless.</para>
+</simplesect>
+<programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/fmt/format.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>interaction<sp/>create<sp/>event<sp/>is<sp/>fired<sp/>when<sp/>someone<sp/>issues<sp/>your<sp/>commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_interaction_create([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1ae1df9ec5826bac923ee92e2037bf17cc" kindref="member">type</ref><sp/>==<sp/><ref refid="namespacedpp_1a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0" kindref="member">dpp::it_application_command</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::command_interaction<sp/>cmd_data<sp/>=<sp/>std::get&lt;dpp::command_interaction&gt;(event.command.data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>which<sp/>command<sp/>they<sp/>ran<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(cmd_data.name<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;blep&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fetch<sp/>a<sp/>parameter<sp/>value<sp/>from<sp/>the<sp/>command<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>animal<sp/>=<sp/>std::get&lt;std::string&gt;(event.get_parameter(</highlight><highlight class="stringliteral">&quot;animal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reply<sp/>to<sp/>the<sp/>command.<sp/>There<sp/>is<sp/>an<sp/>overloaded<sp/>version<sp/>of<sp/>this</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>call<sp/>that<sp/>accepts<sp/>a<sp/>dpp::message<sp/>so<sp/>you<sp/>can<sp/>send<sp/>embeds.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(dpp::ir_channel_message_with_source,<sp/>fmt::format(</highlight><highlight class="stringliteral">&quot;Blep!<sp/>You<sp/>chose<sp/>{}&quot;</highlight><highlight class="normal">,<sp/>animal));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref><sp/>newcommand;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>a<sp/>new<sp/>global<sp/>command<sp/>on<sp/>ready<sp/>event<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newcommand.<ref refid="classdpp_1_1slashcommand_1aba074557679db547ec1a7ae955cd8353" kindref="member">set_name</ref>(</highlight><highlight class="stringliteral">&quot;blep&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.set_description(</highlight><highlight class="stringliteral">&quot;Send<sp/>a<sp/>random<sp/>adorable<sp/>animal<sp/>photo&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.set_application_id(bot.me.id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="classdpp_1_1slashcommand_1a3959f3f3b2709c56e03610e6f774e449" kindref="member">add_option</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdpp_1_1command__option" kindref="compound">dpp::command_option</ref>(<ref refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58acd751201efe224973dfe952d8658a384" kindref="member">dpp::co_string</ref>,<sp/></highlight><highlight class="stringliteral">&quot;animal&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>type<sp/>of<sp/>animal&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add_choice(<ref refid="structdpp_1_1command__option__choice" kindref="compound">dpp::command_option_choice</ref>(</highlight><highlight class="stringliteral">&quot;Dog&quot;</highlight><highlight class="normal">,<sp/>std::string(</highlight><highlight class="stringliteral">&quot;animal_dog&quot;</highlight><highlight class="normal">))).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add_choice(<ref refid="structdpp_1_1command__option__choice" kindref="compound">dpp::command_option_choice</ref>(</highlight><highlight class="stringliteral">&quot;Cat&quot;</highlight><highlight class="normal">,<sp/>std::string(</highlight><highlight class="stringliteral">&quot;animal_cat&quot;</highlight><highlight class="normal">))).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add_choice(<ref refid="structdpp_1_1command__option__choice" kindref="compound">dpp::command_option_choice</ref>(</highlight><highlight class="stringliteral">&quot;Penguin&quot;</highlight><highlight class="normal">,<sp/>std::string(</highlight><highlight class="stringliteral">&quot;animal_penguin&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Register<sp/>the<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_command_create(newcommand);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="docpages/Z_04_EXAMPLE.md"/>
+  </compounddef>
+</doxygen>

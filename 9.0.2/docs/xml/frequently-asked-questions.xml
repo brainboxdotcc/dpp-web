@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="frequently-asked-questions" kind="page">
+    <compoundname>frequently-asked-questions</compoundname>
+    <title>Frequently Asked Questions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="frequently-asked-questions_1autotoc_md41">
+<title>Frequently Asked Questions (FAQ)</title>
+<sect2 id="frequently-asked-questions_1autotoc_md42">
+<title>Is this library in production use?</title>
+<para>This library powers the bot <ulink url="https://triviabot.co.uk">TriviaBot</ulink> which has over <bold>111,000 servers</bold>, and <ulink url="https://sporks.gg">Sporks</ulink> which has over <bold>2,800 severs</bold>. The library&apos;s use in these bots shows that the library is production ready for bots of all sizes.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md43">
+<title>How much RAM does this library use?</title>
+<para>In production on TriviaBot, the bot takes approximately 2gb of ram to run 18 separate processes (this is approximately <bold>140mb</bold> per process) on a production bot with 11 million users and 111,000 guilds. Each process takes under 1% CPU. This is less than a quarter of the memory of a similar C++ Discord library, <bold>Aegis.cpp</bold> (version 2).</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md44">
+<title>How much of the library is completed?</title>
+<para>All REST calls (outbound commands) are completed including slash commands, and all Discord events are available. The library also has voice support.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md45">
+<title>How do I chat with the developers or get help?</title>
+<para>The best place to do this is on the <ulink url="https://discord.gg/dpp">discord server</ulink>. You most likely won&apos;t get an answer immediately (we have lives, and need to sleep sometimes), so feel free to lurk and join the community!</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md46">
+<title>How can I contribute to development?</title>
+<para>Just star and fork a copy of the repository, and submit a Pull Request! We won&apos;t bite! Authors of accepted pull requests get a special role on <ulink url="https://discord.gg/dpp">the support server</ulink>.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md47">
+<title>Whats the best way to learn C++?</title>
+<para>A simple search can find some learning tools, however not all are good. Here is a list of learning resources:</para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://www.codecademy.com/learn/c-plus-plus">CodeAcademy</ulink></para>
+</listitem><listitem><para><ulink url="https://www.learncpp.com/">Learn CPP</ulink></para>
+</listitem><listitem><para><ulink url="https://www.learn-cpp.org/">Learn CPP (Very Basic)</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para>If you don&apos;t understand something then feel free to ask in the <ulink url="https://discord.gg/dpp">discord server</ulink> ...*we don&apos;t bite!*</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md48">
+<title>Do I need to be an expert in C++ to use this library?</title>
+<para>NO! Definitely not! We have tried to keep things as simple as possible. We only use language features where they make sense, not just because they exist. Take a look at the example program (<computeroutput>test.cpp</computeroutput> and you&apos;ll see just how simple it is to get up and running quickly). We use a small subset of C++17 and C++14 features.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md49">
+<title>Why is D++ also called DPP</title>
+<para>DPP is short for <emphasis>Discord Plus Plus</emphasis> (D++), a play on the Discord and C++ names.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md50">
+<title>Is D++ a single header library?</title>
+<para>No, D++ is a classically designed library which installs itself to your library directory/system directory as a shared object or dll. You must link to its .lib file and include its header files to make use of it. We have no plans for a single-header build.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md51">
+<title>Does this library support slash commands/interactions?</title>
+<para>Yes! This library supports slash commands. For more information please see <ref refid="slashcommands" kindref="compound">Using Slash Commands and Interactions</ref>.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md52">
+<title>Does this library support buttons (message components)?</title>
+<para>Yes! This library supports button message components, e.g. interactive buttons on the bottom of messages. For more information please see our <ref refid="components" kindref="compound">Using component interactions</ref> and <ref refid="components2" kindref="compound">Using component interactions (advanced)</ref> examples.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md53">
+<title>Is the library asynchronous?</title>
+<para>All functions within D++ are multi-threaded. You should still avoid doing long operations within event handlers or within callbacks, to prevent starvation of the threads managing each shard. Various blocking operations such as running files and making HTTP requests are offered as library functions (for example <ref refid="namespacedpp_1_1utility_1abeab04272170b56d6075e386db1c7785" kindref="member">dpp::utility::exec</ref>)</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md54">
+<title>Does this library support voice?</title>
+<para>Yes! This library supports voice and will automatically enable voice if your system has the libopus and libsodium libraries. When running <computeroutput>cmake</computeroutput> the script will identify if these libraries are found. See the example programs for information on how to send audio.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md55">
+<title>Does this library support sharding?</title>
+<para>Yes! D++ supports sharding and also clustering (grouping of shards into one process) to ensure it is scalable for small and large bots alike.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md56">
+<title>How do I contribute to the documentation and website?</title>
+<para>The documentation and website are built using Doxygen. To contribute to site pages, submit a Pull Request to the main repository. The site pages can be found within the <computeroutput>docpages</computeroutput> directory. Details of classes, variables, namespaces etc are auto generated from Doxygen comments within the library source code in the <computeroutput>include</computeroutput> and <computeroutput>src</computeroutput> folders.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md57">
+<title>What version of the Discord API does this library support?</title>
+<para>D++ Only supports Discord API v9, the latest version.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md58">
+<title>Does this Discord library support the v9 Threads feature?</title>
+<para>Yes! D++ supports the new discord Threads. You can create, edit and delete threads and also attach events watching for messages within threads.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md59">
+<title>Does D++ require C++20 support?</title>
+<para>No, at present we do not use any C++20 features. Some C++17 features are used, which are available in all recent compilers.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md60">
+<title>When I start my bot i get an error: &quot;error while loading shared libraries: libdpp.so: cannot open shared object file: No such file or directory&quot;</title>
+<para>To fix this issue, as root run <computeroutput>ldconfig</computeroutput>: <computeroutput>sudo ldconfig</computeroutput>. Log out if your SSH session and log back in, and the bot should be able to find the library.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md61">
+<title>When compiling with voice support, i get an error: &quot;No rule to make target &apos;sodium_LIBRARY_DEBUG-NOTFOUND&apos;, needed by &apos;libdpp.so&apos;. Stop.&quot;</title>
+<para>The libsodium package requires pkg-config, but does not check for it when installed. Install it as root, e.g. <computeroutput>sudo apt install pkg-config</computeroutput>. Rerun cmake again, and rebuild the library.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md62">
+<title>When using precompiled libraries in Windows, the program runs but is just a black console window and the bot doesnt come online?</title>
+<para>If this happens, switch your project to release mode. Our precompiled binaries are built in release mode for x64 vs2019 only. If you require a debug build, or a build for a newer visual studio, you will have to compile it yourself from the github sources. Please see the section about <ref refid="buildwindows" kindref="compound">Building on Windows</ref> for more information on how to do this.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md63">
+<title>Does this library build on Raspberry Pi?</title>
+<para>Yes! This project will build and run on Raspberry Pi and is very much suited to this kind of system. It may take some time (read: hours) to compile the project on your Raspberry Pi unless you build it using a cross compiler. We plan to offer pre-built <computeroutput>.deb</computeroutput> files for arm7 and arm64 soon, stay tuned for further updates! </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="docpages/INDEX.md"/>
+  </compounddef>
+</doxygen>

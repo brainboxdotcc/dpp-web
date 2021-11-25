@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="locale_8h" kind="file" language="C++">
+    <compoundname>locale.h</compoundname>
+    <includes local="no">locale</includes>
+    <includes local="yes">format.h</includes>
+    <includedby refid="chrono_8h" local="yes">chrono.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>locale.h</label>
+        <link refid="locale_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>format.h</label>
+      </node>
+      <node id="2">
+        <label>locale</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>chrono.h</label>
+      </node>
+      <node id="1">
+        <label>locale.h</label>
+        <link refid="locale_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacedetail">detail</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="locale_8h_1a7b206a69b67d6883f71bf462c9eec34e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename S</type>
+          </param>
+          <param>
+            <type>typename Char</type>
+            <defval>char_t&lt;S&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>std::basic_string&lt; Char &gt;</type>
+        <definition>std::basic_string&lt; Char &gt; vformat</definition>
+        <argsstring>(const std::locale &amp;loc, const S &amp;format_str, basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt; &gt; &gt; args)</argsstring>
+        <name>vformat</name>
+        <param>
+          <type>const std::locale &amp;</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type>const S &amp;</type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type>basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt; &gt; &gt;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/fmt/locale.h" line="29" column="26" bodyfile="include/dpp/fmt/locale.h" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="locale_8h_1afc6c87da883066ffa27544590b873673" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename S</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+          <param>
+            <type>typename Char</type>
+            <defval>char_t&lt;S&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>std::basic_string&lt; Char &gt;</type>
+        <definition>std::basic_string&lt; Char &gt; format</definition>
+        <argsstring>(const std::locale &amp;loc, const S &amp;format_str, Args &amp;&amp;... args)</argsstring>
+        <name>format</name>
+        <param>
+          <type>const std::locale &amp;</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type>const S &amp;</type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/fmt/locale.h" line="36" column="26" bodyfile="include/dpp/fmt/locale.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="locale_8h_1ab06f3ce4fc00fb7bdedf99750c79f1cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename S</type>
+          </param>
+          <param>
+            <type>typename OutputIt</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+          <param>
+            <type>typename Char</type>
+            <defval>char_t&lt;S&gt;</defval>
+          </param>
+          <param>
+            <type>FMT_ENABLE_IF(detail::is_output_iterator&lt; OutputIt, Char &gt;::value)</type>
+          </param>
+        </templateparamlist>
+        <type>OutputIt</type>
+        <definition>OutputIt vformat_to</definition>
+        <argsstring>(OutputIt out, const std::locale &amp;loc, const S &amp;format_str, basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt; &gt; &gt; args)</argsstring>
+        <name>vformat_to</name>
+        <param>
+          <type>OutputIt</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::locale &amp;</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type>const S &amp;</type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type>basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt; &gt; &gt;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/fmt/locale.h" line="45" column="17" bodyfile="include/dpp/fmt/locale.h" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="locale_8h_1a746d476eb3490802dd51e252f3f840ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename OutputIt</type>
+          </param>
+          <param>
+            <type>typename S</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>enable</declname>
+            <defname>enable</defname>
+            <defval>detail::is_output_iterator&lt;OutputIt, char_t&lt;S&gt;&gt;::value</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto format_to</definition>
+        <argsstring>(OutputIt out, const std::locale &amp;loc, const S &amp;format_str, Args &amp;&amp;... args) -&gt; typename std::enable_if&lt; enable, OutputIt &gt;::type</argsstring>
+        <name>format_to</name>
+        <param>
+          <type>OutputIt</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::locale &amp;</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type>const S &amp;</type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/fmt/locale.h" line="55" column="13" bodyfile="include/dpp/fmt/locale.h" bodystart="55" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/fmt/locale.h"/>
+  </compounddef>
+</doxygen>
