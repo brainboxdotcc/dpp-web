@@ -319,13 +319,13 @@
         <argsstring></argsstring>
         <name>id</name>
         <briefdescription>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relavent to us as useful metadata. </para>
         </briefdescription>
         <detaileddescription>
-<para>Unique ID of object </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discord.h" line="44" column="11" bodyfile="include/dpp/discord.h" bodystart="44" bodyend="-1"/>
+        <location file="include/dpp/discord.h" line="48" column="11" bodyfile="include/dpp/discord.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -720,6 +720,23 @@
         </inbodydescription>
         <location file="include/dpp/channel.h" line="338" column="6" bodyfile="src/dpp/channel.cpp" bodystart="115" bodyend="117"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double dpp::managed::get_creation_time</definition>
+        <argsstring>() const</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="65" column="8" bodyfile="src/dpp/discordevents.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>A definition of a discord thread. A thread is a superset of a channel. Not to be confused with <computeroutput>std::thread</computeroutput>! </para>
@@ -881,6 +898,7 @@
       <member refid="classdpp_1_1channel_1a53bbf494148ceea48e3b78716d7a8b07" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>channel</name></member>
       <member refid="classdpp_1_1thread_1a21cde7487e3bb861e5e7136470b57a21" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>fill_from_json</name></member>
       <member refid="classdpp_1_1channel_1a4468e3981302301886f649d14b7ddcf7" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>flags</name></member>
+      <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_creation_time</name></member>
       <member refid="classdpp_1_1channel_1ab817b065af6dab9a77e406908e368ae1" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_members</name></member>
       <member refid="classdpp_1_1channel_1a86527c1fe86e93c66bf731c73ebcc0ac" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_user_permissions</name></member>
       <member refid="classdpp_1_1channel_1a915cc4ba3ec7514a684315594255253a" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_voice_members</name></member>

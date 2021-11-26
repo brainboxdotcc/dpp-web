@@ -5,6 +5,7 @@ var structdpp_1_1scheduled__event =
     [ "build_json", "structdpp_1_1scheduled__event.html#a60b34edcea4ce3c783d57e9766f17a94", null ],
     [ "clear_description", "structdpp_1_1scheduled__event.html#a9d315ff12641d8318989556769269c4a", null ],
     [ "fill_from_json", "structdpp_1_1scheduled__event.html#a99bff586aef0ff58f4d16367f948e997", null ],
+    [ "get_creation_time", "structdpp_1_1scheduled__event.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "set_channel_id", "structdpp_1_1scheduled__event.html#aa421c31223c1b130c0c4889e7bb99155", null ],
     [ "set_creator_id", "structdpp_1_1scheduled__event.html#a8e85a36227a167e5811f0073effcea8e", null ],
     [ "set_description", "structdpp_1_1scheduled__event.html#a8c74e5634eb4c33ee81d823026e61b44", null ],

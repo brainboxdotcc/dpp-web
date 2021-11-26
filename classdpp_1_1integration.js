@@ -6,6 +6,7 @@ var classdpp_1_1integration =
     [ "emoticons_enabled", "classdpp_1_1integration.html#a71c1fe98428f12efef492f8469c9c68c", null ],
     [ "expiry_kicks_user", "classdpp_1_1integration.html#aa8c768b223e8eb219c7ffe99f13f0a07", null ],
     [ "fill_from_json", "classdpp_1_1integration.html#a45139b5e2c08bab6e81c803b2cacb9fc", null ],
+    [ "get_creation_time", "classdpp_1_1integration.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "is_enabled", "classdpp_1_1integration.html#aa326f15ba2eea7d29f9ab20945d1b56d", null ],
     [ "is_revoked", "classdpp_1_1integration.html#a71170ae6931ae33969ae9352be724778", null ],
     [ "is_syncing", "classdpp_1_1integration.html#a32fff1ec90aea8ce08d481c0f0957ebb", null ],

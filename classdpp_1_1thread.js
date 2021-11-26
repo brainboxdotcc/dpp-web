@@ -4,6 +4,7 @@ var classdpp_1_1thread =
     [ "~thread", "classdpp_1_1thread.html#a080515539a7f6e6f48bf097f119f51ac", null ],
     [ "build_json", "classdpp_1_1thread.html#a3606d9b03710775529e277315afd8fb0", null ],
     [ "fill_from_json", "classdpp_1_1thread.html#a21cde7487e3bb861e5e7136470b57a21", null ],
+    [ "get_creation_time", "classdpp_1_1thread.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "get_members", "classdpp_1_1thread.html#ab817b065af6dab9a77e406908e368ae1", null ],
     [ "get_user_permissions", "classdpp_1_1thread.html#a86527c1fe86e93c66bf731c73ebcc0ac", null ],
     [ "get_voice_members", "classdpp_1_1thread.html#a915cc4ba3ec7514a684315594255253a", null ],

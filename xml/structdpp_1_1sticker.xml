@@ -195,13 +195,13 @@
         <argsstring></argsstring>
         <name>id</name>
         <briefdescription>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relavent to us as useful metadata. </para>
         </briefdescription>
         <detaileddescription>
-<para>Unique ID of object </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discord.h" line="44" column="11" bodyfile="include/dpp/discord.h" bodystart="44" bodyend="-1"/>
+        <location file="include/dpp/discord.h" line="48" column="11" bodyfile="include/dpp/discord.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -338,6 +338,23 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="787" column="9" bodyfile="src/dpp/message.cpp" bodystart="965" bodyend="968"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double dpp::managed::get_creation_time</definition>
+        <argsstring>() const</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="65" column="8" bodyfile="src/dpp/discordevents.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Represents stickers received in messages. </para>
@@ -466,6 +483,7 @@
       <member refid="structdpp_1_1sticker_1a9cfcb27f7aab9dde80e30cc80aef23a4" prot="public" virt="non-virtual"><scope>dpp::sticker</scope><name>filename</name></member>
       <member refid="structdpp_1_1sticker_1a399c9ca40a5d08a9a59d66a0751c5087" prot="public" virt="non-virtual"><scope>dpp::sticker</scope><name>fill_from_json</name></member>
       <member refid="structdpp_1_1sticker_1ad7972e12390ac0eea0027794e0c0fca6" prot="public" virt="non-virtual"><scope>dpp::sticker</scope><name>format_type</name></member>
+      <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" virt="non-virtual"><scope>dpp::sticker</scope><name>get_creation_time</name></member>
       <member refid="structdpp_1_1sticker_1af85380855738ab7cbbbd2cafa3414d7a" prot="public" virt="non-virtual"><scope>dpp::sticker</scope><name>guild_id</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::sticker</scope><name>id</name></member>
       <member refid="classdpp_1_1managed_1a3e2b7d69e7313d84aff23cadf9ba9a6a" prot="public" virt="non-virtual"><scope>dpp::sticker</scope><name>managed</name></member>
