@@ -71,9 +71,9 @@ var NAVTREEINDEX =
 "classdpp_1_1ssl__client.html#a1486b3df6780a842552442a25634fcc9",
 "classdpp_1_1user__identified.html#a2a7d44696be1880931498dc48d4bb23c",
 "classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b",
-"namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc",
-"namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30",
-"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147",
+"namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03",
+"namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb",
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905",
 "structdetail_1_1chrono__formatter.html#a50867ec6ec853e1911d481ebf70e2a04",
 "structdpp_1_1button__click__t.html#a9cd563e83eab3b92b4aecda2680cf3c8",
 "structdpp_1_1embed.html#a61d03e13bd14870613ea6b781a9ad0e2",
@@ -83,7 +83,7 @@ var NAVTREEINDEX =
 "structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813",
 "structdpp_1_1stage__instance__delete__t.html",
 "structdpp_1_1user__update__t.html",
-"structformatter_3_01std_1_1tm_00_01_char_01_4.html#a9c8caf13b1795ab3974768dc5f98a0e9"
+"structformatter_3_01std_1_1tm_00_01_char_01_4.html#a57c0d36c7943de87688eeae9c3bd0b28"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
