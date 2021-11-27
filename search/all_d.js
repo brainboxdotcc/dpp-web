@@ -15,7 +15,7 @@ var searchData=
   ['m_5furgent_12',['m_urgent',['../namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7',1,'dpp']]],
   ['make_5funsigned_5for_5funchanged_13',['make_unsigned_or_unchanged',['../structdetail_1_1make__unsigned__or__unchanged.html',1,'detail']]],
   ['make_5funsigned_5for_5funchanged_3c_20t_2c_20true_20_3e_14',['make_unsigned_or_unchanged&lt; T, true &gt;',['../structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html',1,'detail']]],
-  ['managed_15',['managed',['../classdpp_1_1managed.html',1,'dpp::managed'],['../classdpp_1_1managed.html#a3e2b7d69e7313d84aff23cadf9ba9a6a',1,'dpp::managed::managed()']]],
+  ['managed_15',['managed',['../classdpp_1_1managed.html',1,'dpp::managed'],['../classdpp_1_1managed.html#a30e9c7c9cef4cd42487f0be61aa616d0',1,'dpp::managed::managed()']]],
   ['max_5fage_16',['max_age',['../classdpp_1_1invite.html#af48b1a919db49531f09a01f8e8115f64',1,'dpp::invite']]],
   ['max_5fmembers_17',['max_members',['../classdpp_1_1guild.html#a32e894208805a5326e7a506c73425854',1,'dpp::guild']]],
   ['max_5fpresences_18',['max_presences',['../classdpp_1_1guild.html#ae5071e531ebbf2b8ae42dfbf409af494',1,'dpp::guild']]],

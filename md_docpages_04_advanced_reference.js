@@ -25,5 +25,6 @@ var md_docpages_04_advanced_reference =
       [ "Fluent design", "coding-standards.html#autotoc_md59", null ],
       [ "Keep all D++ related types in the dpp namespace", "coding-standards.html#autotoc_md60", null ],
       [ "Commit messages and Git", "coding-standards.html#autotoc_md61", null ]
-    ] ]
+    ] ],
+    [ "Ownership of local variables and safely transferring into a lambda", "lambdas-and-locals.html", null ]
 ];

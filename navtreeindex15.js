@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structdetail_1_1chrono__formatter.html":[7,0,0,1],
 "structdetail_1_1chrono__formatter.html":[6,0,0,1],
 "structdetail_1_1chrono__formatter.html#a0150e1d287a11078a50d883317237ad8":[6,0,0,1,41],
 "structdetail_1_1chrono__formatter.html#a0150e1d287a11078a50d883317237ad8":[7,0,0,1,41],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "structdpp_1_1autocomplete__t.html#ad106ea02219af2a9bc35519f3bde6b36":[7,0,1,14,5],
 "structdpp_1_1autocomplete__t.html#ad106ea02219af2a9bc35519f3bde6b36":[6,0,1,14,5],
 "structdpp_1_1autocomplete__t.html#ad5812c293c176f38988509d7dc8d3f8e":[7,0,1,14,2],
-"structdpp_1_1autocomplete__t.html#ad5812c293c176f38988509d7dc8d3f8e":[6,0,1,14,2],
-"structdpp_1_1bucket__t.html":[6,0,1,16]
+"structdpp_1_1autocomplete__t.html#ad5812c293c176f38988509d7dc8d3f8e":[6,0,1,14,2]
 };
