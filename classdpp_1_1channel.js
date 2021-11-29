@@ -6,6 +6,7 @@ var classdpp_1_1channel =
     [ "fill_from_json", "classdpp_1_1channel.html#a97c266efb07e429ecc1175207a409824", null ],
     [ "get_creation_time", "classdpp_1_1channel.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "get_members", "classdpp_1_1channel.html#ab817b065af6dab9a77e406908e368ae1", null ],
+    [ "get_mention", "classdpp_1_1channel.html#a08a674755c169a3517361dc847511617", null ],
     [ "get_user_permissions", "classdpp_1_1channel.html#a86527c1fe86e93c66bf731c73ebcc0ac", null ],
     [ "get_voice_members", "classdpp_1_1channel.html#a915cc4ba3ec7514a684315594255253a", null ],
     [ "is_category", "classdpp_1_1channel.html#a1b6b7a32e44eec70466a98b31252aa54", null ],

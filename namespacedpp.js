@@ -720,6 +720,15 @@ var namespacedpp =
       [ "tms_invited", "namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230", null ],
       [ "tms_accepted", "namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31", null ]
     ] ],
+    [ "time_format", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302", [
+      [ "tf_long_date", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302aebf768432ae4101f3c78b55571dfe910", null ],
+      [ "tf_long_datetime", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302a8438b463e73154e5851b84578980c009", null ],
+      [ "tf_relative_time", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302a9d088eb6467ea0e3813e3b80a11a6712", null ],
+      [ "tf_long_time", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302a398c474292fbfa2d7a5cc260d20f4582", null ],
+      [ "tf_short_date", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302aba087cf78b0b173fb5670cff44fd2138", null ],
+      [ "tf_short_datetime", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302a59f3745815f9013b1ee2969968f43bbd", null ],
+      [ "tf_short_time", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302a31907370264e0c60ed4344afdfe8f90c", null ]
+    ] ],
     [ "user_flags", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0", [
       [ "u_bot", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a08571594b32cf14501db06b9a39c0d2b", null ],
       [ "u_system", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ab798237a2b87e22960a9928fede47221", null ],
