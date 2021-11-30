@@ -34,10 +34,12 @@ var searchData=
   ['ir_5fchannel_5fmessage_5fwith_5fsource_31',['ir_channel_message_with_source',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c',1,'dpp']]],
   ['ir_5fdeferred_5fchannel_5fmessage_5fwith_5fsource_32',['ir_deferred_channel_message_with_source',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294',1,'dpp']]],
   ['ir_5fdeferred_5fupdate_5fmessage_33',['ir_deferred_update_message',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312',1,'dpp']]],
-  ['ir_5fpong_34',['ir_pong',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede',1,'dpp']]],
-  ['ir_5fupdate_5fmessage_35',['ir_update_message',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847',1,'dpp']]],
-  ['it_5fapplication_5fcommand_36',['it_application_command',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0',1,'dpp']]],
-  ['it_5fautocomplete_37',['it_autocomplete',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4',1,'dpp']]],
-  ['it_5fcomponent_5fbutton_38',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
-  ['it_5fping_39',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]]
+  ['ir_5fmodal_5fdialog_34',['ir_modal_dialog',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a85b5ff6f0109f5832f7d70a998ed50f5',1,'dpp']]],
+  ['ir_5fpong_35',['ir_pong',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede',1,'dpp']]],
+  ['ir_5fupdate_5fmessage_36',['ir_update_message',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847',1,'dpp']]],
+  ['it_5fapplication_5fcommand_37',['it_application_command',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0',1,'dpp']]],
+  ['it_5fautocomplete_38',['it_autocomplete',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4',1,'dpp']]],
+  ['it_5fcomponent_5fbutton_39',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
+  ['it_5fmodal_5fsubmit_40',['it_modal_submit',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a2260f71b08edd3a605b6bc6c49c0659b',1,'dpp']]],
+  ['it_5fping_41',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]]
 ];

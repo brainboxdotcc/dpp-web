@@ -65,6 +65,7 @@ var namespacedpp =
     [ "event_router_t", "classdpp_1_1event__router__t.html", "classdpp_1_1event__router__t" ],
     [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
     [ "file_exception", "classdpp_1_1file__exception.html", "classdpp_1_1file__exception" ],
+    [ "form_submit_t", "structdpp_1_1form__submit__t.html", "structdpp_1_1form__submit__t" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
     [ "guild", "classdpp_1_1guild.html", "classdpp_1_1guild" ],
     [ "guild_ban_add_t", "structdpp_1_1guild__ban__add__t.html", "structdpp_1_1guild__ban__add__t" ],
@@ -100,6 +101,7 @@ var namespacedpp =
     [ "integration_update_t", "structdpp_1_1integration__update__t.html", "structdpp_1_1integration__update__t" ],
     [ "interaction", "classdpp_1_1interaction.html", "classdpp_1_1interaction" ],
     [ "interaction_create_t", "structdpp_1_1interaction__create__t.html", "structdpp_1_1interaction__create__t" ],
+    [ "interaction_modal_response", "structdpp_1_1interaction__modal__response.html", "structdpp_1_1interaction__modal__response" ],
     [ "interaction_response", "structdpp_1_1interaction__response.html", "structdpp_1_1interaction__response" ],
     [ "invite", "classdpp_1_1invite.html", "classdpp_1_1invite" ],
     [ "invite_create_t", "structdpp_1_1invite__create__t.html", "structdpp_1_1invite__create__t" ],
@@ -373,7 +375,8 @@ var namespacedpp =
     [ "component_type", "namespacedpp.html#afce43206033521b990e3a72bb87481b7", [
       [ "cot_action_row", "namespacedpp.html#afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8", null ],
       [ "cot_button", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9", null ],
-      [ "cot_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f", null ]
+      [ "cot_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f", null ],
+      [ "cot_text", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b", null ]
     ] ],
     [ "component_type_t", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1b", [
       [ "cotype_button", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e", null ],
@@ -545,13 +548,15 @@ var namespacedpp =
       [ "ir_deferred_channel_message_with_source", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294", null ],
       [ "ir_deferred_update_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312", null ],
       [ "ir_update_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847", null ],
-      [ "ir_autocomplete_reply", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a78d890228291650cd463e3fd43b1c075", null ]
+      [ "ir_autocomplete_reply", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a78d890228291650cd463e3fd43b1c075", null ],
+      [ "ir_modal_dialog", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a85b5ff6f0109f5832f7d70a998ed50f5", null ]
     ] ],
     [ "interaction_type", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96", [
       [ "it_ping", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275", null ],
       [ "it_application_command", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0", null ],
       [ "it_component_button", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1", null ],
-      [ "it_autocomplete", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4", null ]
+      [ "it_autocomplete", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4", null ],
+      [ "it_modal_submit", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a2260f71b08edd3a605b6bc6c49c0659b", null ]
     ] ],
     [ "loglevel", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2", [
       [ "ll_trace", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a", null ],
@@ -719,6 +724,10 @@ var namespacedpp =
     [ "team_member_status", "namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4", [
       [ "tms_invited", "namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230", null ],
       [ "tms_accepted", "namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31", null ]
+    ] ],
+    [ "text_style_type", "namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3", [
+      [ "text_short", "namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3ae35e0964ac06220055227ed1176a1bd8", null ],
+      [ "text_paragraph", "namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3af6a87598b5d0eeb4d0fda285b6b8af30", null ]
     ] ],
     [ "time_format", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302", [
       [ "tf_long_date", "namespacedpp.html#ad4cdede378f95bd030412c254bd81302aebf768432ae4101f3c78b55571dfe910", null ],

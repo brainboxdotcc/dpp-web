@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structdpp_1_1interaction__response" kind="struct" language="C++" prot="public">
     <compoundname>dpp::interaction_response</compoundname>
+    <derivedcompoundref refid="structdpp_1_1interaction__modal__response" prot="public" virt="non-virtual">dpp::interaction_modal_response</derivedcompoundref>
     <includes local="no">slashcommand.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" prot="public" static="no" mutable="no">
@@ -160,11 +161,12 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="282" column="22" bodyfile="src/dpp/slashcommand.cpp" bodystart="435" bodyend="441"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1ac0b038fcda6f46f0b391d32cac1b3df5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1ac0b038fcda6f46f0b391d32cac1b3df5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string dpp::interaction_response::build_json</definition>
         <argsstring>() const</argsstring>
         <name>build_json</name>
+        <reimplementedby refid="structdpp_1_1interaction__modal__response_1affb2cf93095e890cf4a80ecb59d7954c">build_json</reimplementedby>
         <briefdescription>
 <para>Build a json string for this object. </para>
         </briefdescription>
@@ -175,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="289" column="13" bodyfile="src/dpp/slashcommand.cpp" bodystart="443" bodyend="462"/>
+        <location file="include/dpp/slashcommand.h" line="289" column="21" bodyfile="src/dpp/slashcommand.cpp" bodystart="456" bodyend="475"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1aba47b23a0d825ab443c0f91711a94c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
@@ -207,7 +209,7 @@
         </inbodydescription>
         <location file="include/dpp/slashcommand.h" line="297" column="22" bodyfile="src/dpp/slashcommand.cpp" bodystart="418" bodyend="423"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1a314950e3ab3b3938a0b9493492d334f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1a314950e3ab3b3938a0b9493492d334f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
         <definition>dpp::interaction_response::~interaction_response</definition>
         <argsstring>()</argsstring>
@@ -219,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/slashcommand.h" line="302" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="414" bodyend="416"/>
+        <location file="include/dpp/slashcommand.h" line="302" column="9" bodyfile="src/dpp/slashcommand.cpp" bodystart="414" bodyend="416"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -229,6 +231,18 @@
 <para>The <ref refid="structdpp_1_1interaction__response" kindref="compound">dpp::interaction_response</ref> object wraps a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> object. To set the message as &apos;ephemeral&apos; (e.g. only the command issuer can see it) you should add the <ref refid="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf" kindref="member">dpp::m_ephemeral</ref> flag to the <ref refid="structdpp_1_1message_1a16fca6ff4595e0fcab2305205eb54626" kindref="member">dpp::message::flags</ref> field. e.g.:</para>
 <para><computeroutput>mymessage.flags |= <ref refid="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf" kindref="member">dpp::m_ephemeral</ref>;</computeroutput> </para>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dpp::interaction_modal_response</label>
+        <link refid="structdpp_1_1interaction__modal__response"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::interaction_response</label>
+        <link refid="structdpp_1_1interaction__response"/>
+      </node>
+    </inheritancegraph>
     <collaborationgraph>
       <node id="16">
         <label>bool</label>
@@ -285,7 +299,7 @@
           <edgelabel>on_channel_delete</edgelabel>
           <edgelabel>on_channel_pins_update</edgelabel>
           <edgelabel>on_channel_update</edgelabel>
-          <edgelabel>on_guild_ban_add</edgelabel>
+          <edgelabel>on_form_submit</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
       </node>
@@ -503,14 +517,14 @@
     <listofallmembers>
       <member refid="structdpp_1_1interaction__response_1aba47b23a0d825ab443c0f91711a94c9a" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>add_autocomplete_choice</name></member>
       <member refid="structdpp_1_1interaction__response_1abb21d304dedf4a9bef3e221d115209e1" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>autocomplete_choices</name></member>
-      <member refid="structdpp_1_1interaction__response_1ac0b038fcda6f46f0b391d32cac1b3df5" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1interaction__response_1ac0b038fcda6f46f0b391d32cac1b3df5" prot="public" virt="virtual"><scope>dpp::interaction_response</scope><name>build_json</name></member>
       <member refid="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>fill_from_json</name></member>
       <member refid="structdpp_1_1interaction__response_1a074094acbb739670f92520011cdcff09" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>interaction_response</name></member>
       <member refid="structdpp_1_1interaction__response_1a50e33b74f32d9e100db207c1ae5f3b9c" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>interaction_response</name></member>
       <member refid="structdpp_1_1interaction__response_1a09635e2f99305125f42a926f1813a9bb" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>interaction_response</name></member>
       <member refid="structdpp_1_1interaction__response_1afa292ebb598e2ecbb1d8eb089f415493" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>msg</name></member>
       <member refid="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>type</name></member>
-      <member refid="structdpp_1_1interaction__response_1a314950e3ab3b3938a0b9493492d334f5" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>~interaction_response</name></member>
+      <member refid="structdpp_1_1interaction__response_1a314950e3ab3b3938a0b9493492d334f5" prot="public" virt="virtual"><scope>dpp::interaction_response</scope><name>~interaction_response</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

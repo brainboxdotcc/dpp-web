@@ -148,6 +148,7 @@ var hierarchy =
       [ "dpp::interaction_create_t", "structdpp_1_1interaction__create__t.html", [
         [ "dpp::autocomplete_t", "structdpp_1_1autocomplete__t.html", null ],
         [ "dpp::button_click_t", "structdpp_1_1button__click__t.html", null ],
+        [ "dpp::form_submit_t", "structdpp_1_1form__submit__t.html", null ],
         [ "dpp::select_click_t", "structdpp_1_1select__click__t.html", null ]
       ] ],
       [ "dpp::invite_create_t", "structdpp_1_1invite__create__t.html", null ],
@@ -215,7 +216,9 @@ var hierarchy =
     [ "dpp::component::inner_emoji", "structdpp_1_1component_1_1inner__emoji.html", null ],
     [ "dpp::select_option::inner_select_emoji", "structdpp_1_1select__option_1_1inner__select__emoji.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
-    [ "dpp::interaction_response", "structdpp_1_1interaction__response.html", null ],
+    [ "dpp::interaction_response", "structdpp_1_1interaction__response.html", [
+      [ "dpp::interaction_modal_response", "structdpp_1_1interaction__modal__response.html", null ]
+    ] ],
     [ "dpp::invite", "classdpp_1_1invite.html", null ],
     [ "detail::make_unsigned_or_unchanged< T, INTEGRAL >", "structdetail_1_1make__unsigned__or__unchanged.html", null ],
     [ "detail::make_unsigned_or_unchanged< T, true >", "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],

@@ -3,6 +3,7 @@ var structdpp_1_1button__click__t =
     [ "button_click_t", "structdpp_1_1button__click__t.html#a18cfc5b1ec6d672e6e8c77f4f467dc7b", null ],
     [ "cancel_event", "structdpp_1_1button__click__t.html#a5afbcd36109734ad0fca14ec848b73b7", null ],
     [ "delete_original_response", "structdpp_1_1button__click__t.html#ad5812c293c176f38988509d7dc8d3f8e", null ],
+    [ "dialog", "structdpp_1_1button__click__t.html#a441c95afa84bb0bd08cba59ae4a41035", null ],
     [ "edit_response", "structdpp_1_1button__click__t.html#ace8c437a0c0e95590c9e59830743a1d2", null ],
     [ "edit_response", "structdpp_1_1button__click__t.html#a7201727cb2e7a6d327c7f778d335b6bd", null ],
     [ "get_original_response", "structdpp_1_1button__click__t.html#ad106ea02219af2a9bc35519f3bde6b36", null ],

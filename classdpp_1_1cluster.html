@@ -708,6 +708,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2b040265e217148f7dd9dbf36630e763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1select__click__t.html">select_click_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2b040265e217148f7dd9dbf36630e763">on_select_click</a></td></tr>
 <tr class="memdesc:a2b040265e217148f7dd9dbf36630e763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a select menu is clicked attached to a message. Select menu clicks are triggered by discord when select menus are clicked which you have associated with a message using <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a>.  <a href="classdpp_1_1cluster.html#a2b040265e217148f7dd9dbf36630e763">More...</a><br /></td></tr>
 <tr class="separator:a2b040265e217148f7dd9dbf36630e763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f54e4a67895d916c58bd277e486a64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1form__submit__t.html">form_submit_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac8f54e4a67895d916c58bd277e486a64">on_form_submit</a></td></tr>
+<tr class="memdesc:ac8f54e4a67895d916c58bd277e486a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a modal dialog is submitted. Form submits are triggered by discord when modal dialogs are submitted which you have associated with a slash command using <a class="el" href="structdpp_1_1interaction__modal__response.html" title="Represents a modal dialog box response to an interaction.">dpp::interaction_modal_response</a>.  <a href="classdpp_1_1cluster.html#ac8f54e4a67895d916c58bd277e486a64">More...</a><br /></td></tr>
+<tr class="separator:ac8f54e4a67895d916c58bd277e486a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a951fe0695fd7cb33e844ebe45f08f96a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1guild__delete__t.html">guild_delete_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a951fe0695fd7cb33e844ebe45f08f96a">on_guild_delete</a></td></tr>
 <tr class="memdesc:a951fe0695fd7cb33e844ebe45f08f96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a guild is deleted. A guild can be deleted via the bot being kicked, the bot leaving the guild explicitly with dpp::guild_delete, or via the guild being unavaialble due to an outage.  <a href="classdpp_1_1cluster.html#a951fe0695fd7cb33e844ebe45f08f96a">More...</a><br /></td></tr>
 <tr class="separator:a951fe0695fd7cb33e844ebe45f08f96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8602,6 +8605,23 @@ Friends</h2></td></tr>
 
 <p>Called when a channel is edited on a guild. The new channel details have already been applied to the guild when you receive this event. </p>
 <dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1channel__update__t.html" title="Update channel.">channel_update_t</a>&amp;, and returns void. </dd></dl>
+
+</div>
+</div>
+<a id="ac8f54e4a67895d916c58bd277e486a64" name="ac8f54e4a67895d916c58bd277e486a64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f54e4a67895d916c58bd277e486a64">&#9670;&nbsp;</a></span>on_form_submit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt;<a class="el" href="structdpp_1_1form__submit__t.html">form_submit_t</a>&gt; dpp::cluster::on_form_submit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a modal dialog is submitted. Form submits are triggered by discord when modal dialogs are submitted which you have associated with a slash command using <a class="el" href="structdpp_1_1interaction__modal__response.html" title="Represents a modal dialog box response to an interaction.">dpp::interaction_modal_response</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1form__submit__t.html">form_submit_t</a>&amp;, and returns void. </dd></dl>
 
 </div>
 </div>

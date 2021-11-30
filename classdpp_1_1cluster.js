@@ -193,6 +193,7 @@ var classdpp_1_1cluster =
     [ "on_channel_delete", "classdpp_1_1cluster.html#adcf4188adae294f4cb41c615e6329e3f", null ],
     [ "on_channel_pins_update", "classdpp_1_1cluster.html#a730da835772cd7b6e638cd359e86209d", null ],
     [ "on_channel_update", "classdpp_1_1cluster.html#a5e299f9ff6447aba04af39abcdc085b4", null ],
+    [ "on_form_submit", "classdpp_1_1cluster.html#ac8f54e4a67895d916c58bd277e486a64", null ],
     [ "on_guild_ban_add", "classdpp_1_1cluster.html#adc62294deed1a73261ba43400f942380", null ],
     [ "on_guild_ban_remove", "classdpp_1_1cluster.html#ae5f02344b6d8d4cc56ff45ecc0a7602b", null ],
     [ "on_guild_create", "classdpp_1_1cluster.html#a60711e8b9aec2f10c6941f306ea4b041", null ],
