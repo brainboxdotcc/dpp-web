@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structdpp_1_1voice__client__speaking__t.html#a067067bfde4be0fe5f022a338fab657e":[6,0,1,170,6],
 "structdpp_1_1voice__client__speaking__t.html#a067067bfde4be0fe5f022a338fab657e":[7,0,1,170,6],
 "structdpp_1_1voice__client__speaking__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,170,4],
 "structdpp_1_1voice__client__speaking__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,170,4],
@@ -171,7 +172,7 @@ var NAVTREEINDEX24 =
 "structtest__t.html#a311e4fb11b006397f3ff01f8e86fd83e":[7,0,10,2],
 "structtest__t.html#a337617aaab1f8f387723732467148792":[7,0,10,1],
 "structtest__t.html#a814df587b1ffb7445e772c3194d70625":[7,0,10,0],
-"subcommands.html":[3,12],
+"subcommands.html":[3,13],
 "thread-model.html":[4,1],
 "uniondpp_1_1type__punner.html":[7,0,1,163],
 "uniondpp_1_1type__punner.html":[6,0,1,163],
