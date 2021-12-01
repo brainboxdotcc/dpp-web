@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"structdpp_1_1guild__scheduled__event__create__t.html":[7,0,1,84],
+"structdpp_1_1guild__scheduled__event__create__t.html":[6,0,1,84],
 "structdpp_1_1guild__scheduled__event__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,84,5],
 "structdpp_1_1guild__scheduled__event__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,84,5],
 "structdpp_1_1guild__scheduled__event__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,1,84,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "structdpp_1_1interaction__modal__response.html#ac35d013903ea4a8a90e0079ad82553ad":[6,0,1,101,2],
 "structdpp_1_1interaction__modal__response.html#ac35d013903ea4a8a90e0079ad82553ad":[7,0,1,101,2],
 "structdpp_1_1interaction__modal__response.html#af95e00ba604fec0833bc27e363e43235":[7,0,1,101,9],
-"structdpp_1_1interaction__modal__response.html#af95e00ba604fec0833bc27e363e43235":[6,0,1,101,9],
-"structdpp_1_1interaction__modal__response.html#afa292ebb598e2ecbb1d8eb089f415493":[7,0,1,101,13],
-"structdpp_1_1interaction__modal__response.html#afa292ebb598e2ecbb1d8eb089f415493":[6,0,1,101,13]
+"structdpp_1_1interaction__modal__response.html#af95e00ba604fec0833bc27e363e43235":[6,0,1,101,9]
 };

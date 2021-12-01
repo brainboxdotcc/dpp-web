@@ -119,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abab35ab0fc1efe0057b69ff7bbd485ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab">empty</a> () const</td></tr>
 <tr class="memdesc:abab35ab0fc1efe0057b69ff7bbd485ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the container of listeners is empty, i.e. there is nothing listening for this event right now.  <a href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab">More...</a><br /></td></tr>
 <tr class="separator:abab35ab0fc1efe0057b69ff7bbd485ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f8bb07280138a21bbdd2348912da5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a98f8bb07280138a21bbdd2348912da5b">operator bool</a> () const</td></tr>
+<tr class="memdesc:a98f8bb07280138a21bbdd2348912da5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any listeners are attached.  <a href="classdpp_1_1event__router__t.html#a98f8bb07280138a21bbdd2348912da5b">More...</a><br /></td></tr>
+<tr class="separator:a98f8bb07280138a21bbdd2348912da5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde1df1dba72f9a6e35b676b89ebc8e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#afde1df1dba72f9a6e35b676b89ebc8e0">operator()</a> (std::function&lt; void(const T &amp;)&gt; func)</td></tr>
 <tr class="memdesc:afde1df1dba72f9a6e35b676b89ebc8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>.  <a href="classdpp_1_1event__router__t.html#afde1df1dba72f9a6e35b676b89ebc8e0">More...</a><br /></td></tr>
 <tr class="separator:afde1df1dba72f9a6e35b676b89ebc8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,6 +335,38 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true if there are no listeners </dd>
 <dd>
 false if there are some listeners </dd></dl>
+
+</div>
+</div>
+<a id="a98f8bb07280138a21bbdd2348912da5b" name="a98f8bb07280138a21bbdd2348912da5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f8bb07280138a21bbdd2348912da5b">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">dpp::event_router_t</a>&lt; T &gt;::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if any listeners are attached. </p>
+<p >This is the boolean opposite of <a class="el" href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab" title="Returns true if the container of listeners is empty, i.e. there is nothing listening for this event r...">event_router_t::empty()</a>. </p><dl class="section return"><dt>Returns</dt><dd>true if listeners are attached </dd>
+<dd>
+false if no listeners are attached </dd></dl>
 
 </div>
 </div>
