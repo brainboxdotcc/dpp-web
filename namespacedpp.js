@@ -808,7 +808,7 @@ var namespacedpp =
     [ "find_channel", "namespacedpp.html#a430445c5a47943ca2d1422f1f45434ab", null ],
     [ "find_emoji", "namespacedpp.html#a595cb5fb51cb3bca106454502f654e03", null ],
     [ "find_guild", "namespacedpp.html#a3a13097fcd3f19b409e2a15b9fa56f90", null ],
-    [ "find_guild_member", "namespacedpp.html#a2a0dc906b53c7ccb5ce3ff0b1dbe66a3", null ],
+    [ "find_guild_member", "namespacedpp.html#a239ce3fb8b4d9873dffeb5cb9b249f5d", null ],
     [ "find_role", "namespacedpp.html#ab1583937bb5eb90f8090a2e6b6b77839", null ],
     [ "find_user", "namespacedpp.html#a368cff415172099d1d3c90e11721b37e", null ],
     [ "from_json", "namespacedpp.html#a965939ea98a0cc2a038250fc73bd6e10", null ],
