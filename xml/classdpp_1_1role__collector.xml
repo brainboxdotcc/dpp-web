@@ -159,6 +159,15 @@
         </briefdescription>
         <detaileddescription>
 <para>Every time an event is fired on the collector, this method wil be called to determine if we should add an object to the list or not. This function can then process the <computeroutput>element</computeroutput> value, extract the parts which are to be saved to a list (e.g. a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> out of a <ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>) and return it as the return value. Returning a value of nullptr causes no object to be stored.</para>
+<para>Here is an example of how to filter messages which have specific text in them. This should be used with the specialised type <ref refid="classdpp_1_1message__collector" kindref="compound">dpp::message_collector</ref></para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>*<sp/><ref refid="classdpp_1_1collector_1abe7a5ff238f82ee08003051468626c15" kindref="member">filter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>&amp;<sp/>m)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref>.find(</highlight><highlight class="stringliteral">&quot;something<sp/>i<sp/>want&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">*}</highlight></codeline>
+</programlisting></para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>element</parametername>
@@ -174,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3287" column="17"/>
+        <location file="include/dpp/cluster.h" line="3300" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -192,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3298" column="14" bodyfile="include/dpp/cluster.h" bodystart="3298" bodyend="3301"/>
+        <location file="include/dpp/cluster.h" line="3311" column="14" bodyfile="include/dpp/cluster.h" bodystart="3311" bodyend="3314"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
