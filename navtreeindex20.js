@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"structdpp_1_1interaction__modal__response.html#ac35d013903ea4a8a90e0079ad82553ad":[7,0,1,101,2],
 "structdpp_1_1interaction__modal__response.html#af95e00ba604fec0833bc27e363e43235":[6,0,1,101,9],
 "structdpp_1_1interaction__modal__response.html#af95e00ba604fec0833bc27e363e43235":[7,0,1,101,9],
 "structdpp_1_1interaction__modal__response.html#afa292ebb598e2ecbb1d8eb089f415493":[6,0,1,101,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structdpp_1_1message__create__t.html#af23cc09af5fd2b43b688188c7b29e14c":[7,0,1,112,8],
 "structdpp_1_1message__delete__bulk__t.html":[7,0,1,113],
 "structdpp_1_1message__delete__bulk__t.html":[6,0,1,113],
-"structdpp_1_1message__delete__bulk__t.html#a07ab83e88b6cf91e218c5da9e09cdfe1":[6,0,1,113,0],
-"structdpp_1_1message__delete__bulk__t.html#a07ab83e88b6cf91e218c5da9e09cdfe1":[7,0,1,113,0]
+"structdpp_1_1message__delete__bulk__t.html#a07ab83e88b6cf91e218c5da9e09cdfe1":[6,0,1,113,0]
 };

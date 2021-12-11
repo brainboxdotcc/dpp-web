@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Example Programs - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="&quot;Context Menus&quot; - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Example Programs - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="&quot;Context Menus&quot; - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Example Programs - D++ - The lightweight C++ Discord API Library">
-<title>Example Programs - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="&quot;Context Menus&quot; - D++ - The lightweight C++ Discord API Library">
+<title>&quot;Context Menus&quot; - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_docpages_03_example_programs.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('context-menu.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,39 +98,60 @@ $(document).ready(function(){initNavTree('md_docpages_03_example_programs.html',
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Example Programs </div></div>
+  <div class="headertitle"><div class="title">"Context Menus" </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >The best way to experiment with these example programs is to delete the content from <code>test.cpp</code> in the library repository, and replace it with program code as shown below. You can then use <code>cmake</code> and <code>make</code> to build the bot without having to mess around with installation, dependencies etc.</p>
-<ul>
-<li><a class="el" href="firstbot.html">Creating Your First Bot</a></li>
-<li><a class="el" href="slashcommands.html">Using Slash Commands and Interactions</a></li>
-<li><a class="el" href="soundboard.html">Creating a Sound Board</a></li>
-<li><a class="el" href="oggopus.html">Streaming Ogg Opus file</a></li>
-<li><a class="el" href="stream-mp3-discord-bot.html">Streaming MP3 files</a></li>
-<li><a class="el" href="record-user.html">Record yourself in a VC</a></li>
-<li><a class="el" href="joinvc.html">Join or switch to the voice channel of the user issuing a command</a></li>
-<li><a class="el" href="spdlog.html">Integrating with spdlog</a></li>
-<li><a class="el" href="components.html">Using component interactions (buttons)</a></li>
-<li><a class="el" href="components3.html">Using component interactions (select menus)</a></li>
-<li><a class="el" href="components2.html">Using component interactions (advanced)</a></li>
-<li><a class="el" href="modal-dialog-interactions.html">Modal Dialog Interactions</a></li>
-<li><a class="el" href="commandhandler.html">Using a command handler object</a></li>
-<li><a class="el" href="subcommands.html">Using sub-commands in slash commands</a></li>
-<li><a class="el" href="embed-message.html">Sending Embeds</a></li>
-<li><a class="el" href="application-command-autocomplete.html">Slash command auto completion</a></li>
-<li><a class="el" href="attach-file.html">Attaching a file</a></li>
-<li><a class="el" href="caching-messages.html">Caching messages</a></li>
-<li><a class="el" href="collecting-reactions.html">Collecting Reactions</a></li>
-<li><a class="el" href="context-menu.html">Context Menus</a> </li>
-</ul>
-</div></div><!-- contents -->
+<div class="textblock"><p >Context menus are application commands that appear on the context menu (right click or tap) of users or messages to perform context-specific actions. They can be created using <code><a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild.">dpp::slashcommand</a></code>. Once you create a context menu, try right-clicking either a user or message to see it in your server!</p>
+<div class="image">
+<img src="context_menu_user_command.png" alt=""/>
+</div>
+<p >The following example shows how to create and handle <b>user context menus</b>.</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">#include &lt;dpp/dpp.h&gt;</div>
+<div class="line">#include &lt;iostream&gt;</div>
+<div class="line"> </div>
+<div class="line">int main()</div>
+<div class="line">{</div>
+<div class="line">    dpp::cluster bot(&quot;token&quot;);</div>
+<div class="line"> </div>
+<div class="line">    bot.on_ready([&amp;bot](const dpp::ready_t &amp;event) {</div>
+<div class="line">        dpp::slashcommand command;</div>
+<div class="line">        /* Define a slash command */</div>
+<div class="line">        command.set_name(&quot;High Five&quot;)</div>
+<div class="line">                .set_type(dpp::ctxm_user)</div>
+<div class="line">                .set_application_id(bot.me.id);</div>
+<div class="line">        /* Register the command */</div>
+<div class="line">        bot.guild_command_create(command, 857692897221033129); // you need to put your guild-id in here</div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    bot.on_interaction_create([&amp;](const dpp::interaction_create_t &amp;event) {</div>
+<div class="line">        if (event.command.type == dpp::ctxm_user) {</div>
+<div class="line">            dpp::command_interaction cmd_data = std::get&lt;dpp::command_interaction&gt;(event.command.data);</div>
+<div class="line">            if (cmd_data.name == &quot;High Five&quot;) {</div>
+<div class="line">                dpp::user user = event.command.resolved.users.begin()-&gt;second; // the user who the command has been issued on</div>
+<div class="line">                dpp::user author = event.command.usr; // the user who clicked on the context menu</div>
+<div class="line">                event.reply(dpp::ir_channel_message_with_source, author.get_mention() + &quot; slapped &quot; + user.get_mention());</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    /* Start bot */</div>
+<div class="line">    bot.start(false);</div>
+<div class="line"> </div>
+<div class="line">    return 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >It registers a guild command that can be called by right-click a user and click on the created menu.</p>
+<div class="image">
+<img src="context_menu_user_command_showcase.png" alt=""/>
+</div>
+ </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="md_docpages_03_example_programs.html">Example Programs</a></li>
   </ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
