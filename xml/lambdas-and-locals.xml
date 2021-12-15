@@ -46,7 +46,7 @@
 <para><simplesect kind="warning"><para>Always avoid just using <computeroutput>[&amp;]</computeroutput> in a lambda to access all in the scope above. It is unlikely that half of this scope will still even be valid by the time you get a look at it!</para>
 </simplesect>
 Similarly, and important to note, your program <bold>will not wait for bot.message_create to send its message and call its lambda</bold> before continuing on to print <computeroutput>here</computeroutput>. It will instantly insert the request into its queue and bail straight back out (see the steps above) and immediately print the text.</para>
-<para>If you do want to get variables out of your lambda, create a class, or call a separate function, and pass what you need into that funtion from the lambda <bold>by value</bold> or alternatively, you can use <computeroutput>std::bind</computeroutput> to bind a lambda directly to an object&apos;s method instead (this is great for modular bots).</para>
+<para>If you do want to get variables out of your lambda, create a class, or call a separate function, and pass what you need into that function from the lambda <bold>by value</bold> or alternatively, you can use <computeroutput>std::bind</computeroutput> to bind a lambda directly to an object&apos;s method instead (this is great for modular bots).</para>
 <para>If you are stuck, as this is a complex subject please do feel free to ask on the <ulink url="https://discord.gg/dpp">official support server</ulink>! </para>
     </detaileddescription>
     <location file="docpages/04_advanced_reference.md"/>
