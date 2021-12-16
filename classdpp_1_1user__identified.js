@@ -3,7 +3,7 @@ var classdpp_1_1user__identified =
     [ "user_identified", "classdpp_1_1user__identified.html#ac66ddd9e773d41eaeb7fc2d6c5eac255", null ],
     [ "~user_identified", "classdpp_1_1user__identified.html#a9cb53a8e30f9782cd8efc882337e887b", null ],
     [ "fill_from_json", "classdpp_1_1user__identified.html#a60735ed134723b215cb6920ad96e30cc", null ],
-    [ "get_avatar_url", "classdpp_1_1user__identified.html#a6770b87f109f77fd1ed6550c72b6d8b4", null ],
+    [ "get_avatar_url", "classdpp_1_1user__identified.html#aad4786afe3a1a0193f612b0a44e111df", null ],
     [ "get_creation_time", "classdpp_1_1user__identified.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "get_mention", "classdpp_1_1user__identified.html#a09743ef07e78406808e74a8bd7b5d658", null ],
     [ "has_animated_icon", "classdpp_1_1user__identified.html#a51c599c37ab5ccc1b770084c937abe98", null ],
