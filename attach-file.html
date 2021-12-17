@@ -115,18 +115,17 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp;event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">msg</a>.<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!file&quot;</span>) {</div>
 <div class="line">            <span class="comment">// create a message</span></div>
-<div class="line">            dpp::message msg(event.msg.channel_id, <span class="stringliteral">&quot;Hey there, i&#39;ve got a new image!&quot;</span>);</div>
-<div class="line"> </div>
-<div class="line">            std::filesystem::path filePath(<span class="stringliteral">&quot;path_to_your_file.json&quot;</span>);</div>
+<div class="line">            dpp::message msg(event.msg.channel_id, <span class="stringliteral">&quot;Hey there, i&#39;ve got a new file!&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">// attach the file</span></div>
-<div class="line">            msg.set_file_content(dpp::utility::read_file(filePath.relative_path()));</div>
+<div class="line">            msg.set_file_content(dpp::utility::read_file(<span class="stringliteral">&quot;path_to_your_file.txt&quot;</span>));</div>
+<div class="line">            </div>
 <div class="line">            <span class="comment">/*</span></div>
 <div class="line"><span class="comment">             * alternatively, you can put any other name in here.</span></div>
 <div class="line"><span class="comment">             * This name doesn&#39;t have to be the same as the uploaded filename.</span></div>
 <div class="line"><span class="comment">             * But it should have the same file extension.</span></div>
 <div class="line"><span class="comment">             */</span></div>
-<div class="line">            msg.set_filename(filePath.filename());</div>
+<div class="line">            msg.set_filename(<span class="stringliteral">&quot;file.txt&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">// send the message</span></div>
 <div class="line">            bot.message_create(msg);</div>
@@ -166,6 +165,35 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line">                <span class="comment">// send the message</span></div>
 <div class="line">                bot.message_create(msg);</div>
 <div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    bot.start(<span class="keyword">false</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >Here's another example of how to add a local image to an embed.</p>
+<p >Upload the image in the same message as the embed and then reference it in the embed.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/* Message handler to look for a command called !file */</span></div>
+<div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp;event) {</div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">msg</a>.<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a> == <span class="stringliteral">&quot;!file&quot;</span>) {</div>
+<div class="line">            <span class="comment">// create a message</span></div>
+<div class="line">            dpp::message msg(event.msg.channel_id, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">// attach the file to the message</span></div>
+<div class="line">            msg.set_file_content(dpp::utility::read_file(<span class="stringliteral">&quot;path_to_your_image.jpg&quot;</span>));</div>
+<div class="line">            msg.set_filename(<span class="stringliteral">&quot;image.jpg&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">            dpp::embed embed;</div>
+<div class="line">            embed.set_image(<span class="stringliteral">&quot;attachment://image.jpg&quot;</span>); <span class="comment">// reference to the attached file</span></div>
+<div class="line">            msg.add_embed(embed);</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">// send the message</span></div>
+<div class="line">            bot.message_create(msg);</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
