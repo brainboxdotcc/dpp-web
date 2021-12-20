@@ -29,6 +29,7 @@ var classdpp_1_1role =
     [ "has_manage_threads", "classdpp_1_1role.html#a032ce15247e135d733e6879bed928e7e", null ],
     [ "has_manage_webhooks", "classdpp_1_1role.html#a9ac39f8c39f870603f0e9d9760159ef9", null ],
     [ "has_mention_everyone", "classdpp_1_1role.html#aed437137a98c1f99d28942070c8ccf0f", null ],
+    [ "has_moderate_members", "classdpp_1_1role.html#a12d4fba5e5a0a02425c923234dd486bf", null ],
     [ "has_move_members", "classdpp_1_1role.html#ac9605d0d14e4fff0c0848e08682c6da5", null ],
     [ "has_mute_members", "classdpp_1_1role.html#a504ae68edc2bfe1c21ffdb6745c1194c", null ],
     [ "has_priority_speaker", "classdpp_1_1role.html#a640358a9aa6e34c0e0b16020af176e55", null ],

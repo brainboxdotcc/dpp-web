@@ -700,7 +700,8 @@ var namespacedpp =
       [ "p_create_private_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34", null ],
       [ "p_use_external_stickers", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3", null ],
       [ "p_send_messages_in_threads", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937", null ],
-      [ "p_start_embedded_activities", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa8b664cc72b2379ebe85894385e804e33", null ]
+      [ "p_start_embedded_activities", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa8b664cc72b2379ebe85894385e804e33", null ],
+      [ "p_moderate_members", "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae54b883c0448ef564f34ed1fcf50fdb2", null ]
     ] ],
     [ "slashcommand_contextmenu_type", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb", [
       [ "ctxm_none", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824", null ],

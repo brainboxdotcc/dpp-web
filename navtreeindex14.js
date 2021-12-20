@@ -1,5 +1,8 @@
 var NAVTREEINDEX14 =
 {
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca3dbb35e6017af75be21cd1e1eac708cc":[6,0,1,272,7],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca45207c1afef758448fbc0b3c9a1830c6":[6,0,1,272,12],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca57b369b4b6b01c8061dad83b9e5eae9b":[6,0,1,272,6],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe":[6,0,1,272,22],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcab19bff5918591d0230159889a7b25b95":[6,0,1,272,5],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcab3bbd4be55810d639b4e46061a882203":[6,0,1,272,3],
@@ -190,16 +193,16 @@ var NAVTREEINDEX14 =
 "namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08":[6,0,1,1,3],
 "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32":[6,0,1,1,15],
 "namespacefmt.html":[6,0,2],
-"namespacemembers.html":[6,1,0,0],
 "namespacemembers.html":[6,1,0],
+"namespacemembers.html":[6,1,0,0],
 "namespacemembers_a.html":[6,1,0,1],
 "namespacemembers_b.html":[6,1,0,2],
 "namespacemembers_c.html":[6,1,0,3],
 "namespacemembers_d.html":[6,1,0,4],
 "namespacemembers_e.html":[6,1,0,5],
 "namespacemembers_enum.html":[6,1,4],
-"namespacemembers_eval.html":[6,1,5,0],
 "namespacemembers_eval.html":[6,1,5],
+"namespacemembers_eval.html":[6,1,5,0],
 "namespacemembers_eval_c.html":[6,1,5,1],
 "namespacemembers_eval_d.html":[6,1,5,2],
 "namespacemembers_eval_e.html":[6,1,5,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX14 =
 "record-user.html":[3,5],
 "slashcommands.html":[3,1],
 "soundboard.html":[3,2],
-"spdlog.html":[3,7],
-"stream-mp3-discord-bot.html":[3,4],
-"struct_opus_decoder.html":[7,0,6],
-"struct_opus_encoder.html":[7,0,7]
+"spdlog.html":[3,7]
 };
