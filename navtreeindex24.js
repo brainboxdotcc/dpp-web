@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"structdpp_1_1voice__client__disconnect__t.html":[7,0,1,169],
+"structdpp_1_1voice__client__disconnect__t.html":[6,0,1,169],
 "structdpp_1_1voice__client__disconnect__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,169,4],
 "structdpp_1_1voice__client__disconnect__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,169,4],
 "structdpp_1_1voice__client__disconnect__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,1,169,3],

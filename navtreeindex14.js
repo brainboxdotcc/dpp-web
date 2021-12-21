@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca2e93d061d961d64a50310ac4e5444c3b":[6,0,1,272,2],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a":[6,0,1,272,21],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca3dbb35e6017af75be21cd1e1eac708cc":[6,0,1,272,7],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca45207c1afef758448fbc0b3c9a1830c6":[6,0,1,272,12],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca57b369b4b6b01c8061dad83b9e5eae9b":[6,0,1,272,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "oggopus.html":[3,3],
 "pages.html":[],
 "record-user.html":[3,5],
-"slashcommands.html":[3,1],
-"soundboard.html":[3,2],
-"spdlog.html":[3,7]
+"slashcommands.html":[3,1]
 };
