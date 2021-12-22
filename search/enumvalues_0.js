@@ -66,5 +66,6 @@ var searchData=
   ['at_5fcustom_63',['at_custom',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400',1,'dpp']]],
   ['at_5fgame_64',['at_game',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701',1,'dpp']]],
   ['at_5flistening_65',['at_listening',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6',1,'dpp']]],
-  ['at_5fstreaming_66',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]]
+  ['at_5fstreaming_66',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]],
+  ['at_5fwatching_67',['at_watching',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a41a48506f1fde615713f676016525d9b',1,'dpp']]]
 ];

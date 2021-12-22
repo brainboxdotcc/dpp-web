@@ -253,6 +253,7 @@ var namespacedpp =
       [ "at_game", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701", null ],
       [ "at_streaming", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918", null ],
       [ "at_listening", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6", null ],
+      [ "at_watching", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a41a48506f1fde615713f676016525d9b", null ],
       [ "at_custom", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400", null ],
       [ "at_competing", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72", null ]
     ] ],
