@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"namespacedpp.html#acd18d41e47000c592ab63b702335e184":[6,0,1,338],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc":[6,0,1,272],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787":[6,0,1,272,11],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca0761b0d92c9f4c6d5fda7ac47cb7e596":[6,0,1,272,14],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca08b27991fef9b0c79308f33f29cffc88":[6,0,1,272,17],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca13c1c1a4ead0ba6bfaca3c8e0fa53c7c":[6,0,1,272,18],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca19a3b8cfddfc3dadbe11bb403b53f9ad":[6,0,1,272,13],
+"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca1efe7500d0c09339b36e12249bd94b25":[6,0,1,272,10],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca2e93d061d961d64a50310ac4e5444c3b":[6,0,1,272,2],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a":[6,0,1,272,21],
 "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca3dbb35e6017af75be21cd1e1eac708cc":[6,0,1,272,7],
@@ -203,8 +211,8 @@ var NAVTREEINDEX14 =
 "namespacemembers_d.html":[6,1,0,4],
 "namespacemembers_e.html":[6,1,0,5],
 "namespacemembers_enum.html":[6,1,4],
-"namespacemembers_eval.html":[6,1,5],
 "namespacemembers_eval.html":[6,1,5,0],
+"namespacemembers_eval.html":[6,1,5],
 "namespacemembers_eval_c.html":[6,1,5,1],
 "namespacemembers_eval_d.html":[6,1,5,2],
 "namespacemembers_eval_e.html":[6,1,5,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX14 =
 "namespacemembers_v.html":[6,1,0,20],
 "namespacemembers_vars.html":[6,1,2],
 "namespacemembers_w.html":[6,1,0,21],
-"namespaces.html":[6,0],
-"namespacesafe__duration__cast.html":[6,0,3],
-"namespacesafe__duration__cast.html#a1b2f780f349d616fa841550dc49f59d0":[6,0,3,1],
-"namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a":[6,0,3,2],
-"namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9":[6,0,3,0],
-"oggopus.html":[3,3],
-"pages.html":[],
-"record-user.html":[3,5],
-"slashcommands.html":[3,1]
+"namespaces.html":[6,0]
 };

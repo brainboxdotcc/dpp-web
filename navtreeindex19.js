@@ -1,5 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"structdpp_1_1guild__role__delete__t.html#a5afbcd36109734ad0fca14ec848b73b7":[7,0,1,82,1],
+"structdpp_1_1guild__role__delete__t.html#a5afbcd36109734ad0fca14ec848b73b7":[6,0,1,82,1],
+"structdpp_1_1guild__role__delete__t.html#a5cc18df82815b4439b95b2c621e058ce":[7,0,1,82,0],
+"structdpp_1_1guild__role__delete__t.html#a5cc18df82815b4439b95b2c621e058ce":[6,0,1,82,0],
+"structdpp_1_1guild__role__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,1,82,2],
+"structdpp_1_1guild__role__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,82,2],
+"structdpp_1_1guild__role__delete__t.html#ad935f5cb6e5fd57a2e92564679dd74b9":[6,0,1,82,4],
+"structdpp_1_1guild__role__delete__t.html#ad935f5cb6e5fd57a2e92564679dd74b9":[7,0,1,82,4],
 "structdpp_1_1guild__role__update__t.html":[7,0,1,83],
 "structdpp_1_1guild__role__update__t.html":[6,0,1,83],
 "structdpp_1_1guild__role__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,83,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX19 =
 "structdpp_1_1interaction__modal__response.html#a0d65fe1381b216c4be6de01a4a522ef1":[6,0,1,101,4],
 "structdpp_1_1interaction__modal__response.html#a0d65fe1381b216c4be6de01a4a522ef1":[7,0,1,101,4],
 "structdpp_1_1interaction__modal__response.html#a19d080adf6685ceb565a9e4cc1991e49":[7,0,1,101,11],
-"structdpp_1_1interaction__modal__response.html#a19d080adf6685ceb565a9e4cc1991e49":[6,0,1,101,11],
-"structdpp_1_1interaction__modal__response.html#a4eafdde2472ba66f54455dedea51e95a":[7,0,1,101,8],
-"structdpp_1_1interaction__modal__response.html#a4eafdde2472ba66f54455dedea51e95a":[6,0,1,101,8],
-"structdpp_1_1interaction__modal__response.html#a50dea6dd74d3141c9b2692d6725de37a":[7,0,1,101,14],
-"structdpp_1_1interaction__modal__response.html#a50dea6dd74d3141c9b2692d6725de37a":[6,0,1,101,14],
-"structdpp_1_1interaction__modal__response.html#a64e2352d62d7e4a54f3171d5e3024830":[6,0,1,101,5],
-"structdpp_1_1interaction__modal__response.html#a64e2352d62d7e4a54f3171d5e3024830":[7,0,1,101,5],
-"structdpp_1_1interaction__modal__response.html#a7b092ddfb222c173d60589c625fdcf7a":[6,0,1,101,12],
-"structdpp_1_1interaction__modal__response.html#a7b092ddfb222c173d60589c625fdcf7a":[7,0,1,101,12]
+"structdpp_1_1interaction__modal__response.html#a19d080adf6685ceb565a9e4cc1991e49":[6,0,1,101,11]
 };
