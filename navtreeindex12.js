@@ -1,5 +1,17 @@
 var NAVTREEINDEX12 =
 {
+"index.html#autotoc_md66":[0,1],
+"index.html#autotoc_md67":[0,2],
+"index.html#autotoc_md68":[0,3],
+"index.html#autotoc_md69":[0,4],
+"index.html#autotoc_md70":[0,5],
+"index.html#autotoc_md71":[0,6],
+"joinvc.html":[3,6],
+"lambdas-and-locals.html":[4,3],
+"md_docpages_02_build.html":[1],
+"md_docpages_02_building_a_bot.html":[2],
+"md_docpages_03_example_programs.html":[3],
+"md_docpages_04_advanced_reference.html":[4],
 "modal-dialog-interactions.html":[3,11],
 "namespacedetail.html":[6,0,0],
 "namespacedetail.html#a023a7fa430553323ed4f9613dcfaa421":[6,0,0,22],
@@ -237,17 +249,5 @@ var NAVTREEINDEX12 =
 "namespacedpp.html#a368cff415172099d1d3c90e11721b37e":[6,0,1,303],
 "namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52":[6,0,1,310],
 "namespacedpp.html#a3a00a1da866d0c189ee06d5c53864e7f":[6,0,1,313],
-"namespacedpp.html#a3a13097fcd3f19b409e2a15b9fa56f90":[6,0,1,300],
-"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb":[6,0,1,281],
-"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a":[6,0,1,281,1],
-"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824":[6,0,1,281,0],
-"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a":[6,0,1,281,3],
-"namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659":[6,0,1,281,2],
-"namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba":[6,0,1,194],
-"namespacedpp.html#a408d79969007e9c450e186f5387df9e5":[6,0,1,235],
-"namespacedpp.html#a430445c5a47943ca2d1422f1f45434ab":[6,0,1,298],
-"namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708":[6,0,1,212],
-"namespacedpp.html#a45736823a51be6eb7910f036b30397b2":[6,0,1,219],
-"namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e":[6,0,1,201],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319f":[6,0,1,258]
+"namespacedpp.html#a3a13097fcd3f19b409e2a15b9fa56f90":[6,0,1,300]
 };
