@@ -44,7 +44,6 @@ var namespacedpp_1_1events =
     [ "resumed", "classdpp_1_1events_1_1resumed.html", "classdpp_1_1events_1_1resumed" ],
     [ "stage_instance_create", "classdpp_1_1events_1_1stage__instance__create.html", "classdpp_1_1events_1_1stage__instance__create" ],
     [ "stage_instance_delete", "classdpp_1_1events_1_1stage__instance__delete.html", "classdpp_1_1events_1_1stage__instance__delete" ],
-    [ "stage_instance_update", "classdpp_1_1events_1_1stage__instance__update.html", "classdpp_1_1events_1_1stage__instance__update" ],
     [ "thread_create", "classdpp_1_1events_1_1thread__create.html", "classdpp_1_1events_1_1thread__create" ],
     [ "thread_delete", "classdpp_1_1events_1_1thread__delete.html", "classdpp_1_1events_1_1thread__delete" ],
     [ "thread_list_sync", "classdpp_1_1events_1_1thread__list__sync.html", "classdpp_1_1events_1_1thread__list__sync" ],

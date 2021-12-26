@@ -9,9 +9,6 @@ var searchData=
   ['emoji_6',['emoji',['../classdpp_1_1emoji.html',1,'dpp']]],
   ['error_5fdetail_7',['error_detail',['../structdpp_1_1error__detail.html',1,'dpp']]],
   ['error_5finfo_8',['error_info',['../structdpp_1_1error__info.html',1,'dpp']]],
-  ['etf_5fbuffer_9',['etf_buffer',['../structdpp_1_1etf__buffer.html',1,'dpp']]],
-  ['etf_5fparser_10',['etf_parser',['../classdpp_1_1etf__parser.html',1,'dpp']]],
-  ['event_11',['event',['../classdpp_1_1events_1_1event.html',1,'dpp::events']]],
-  ['event_5fdispatch_5ft_12',['event_dispatch_t',['../structdpp_1_1event__dispatch__t.html',1,'dpp']]],
-  ['exception_13',['exception',['../classdpp_1_1exception.html',1,'dpp']]]
+  ['event_9',['event',['../classdpp_1_1events_1_1event.html',1,'dpp::events']]],
+  ['event_5fdispatch_5ft_10',['event_dispatch_t',['../structdpp_1_1event__dispatch__t.html',1,'dpp']]]
 ];

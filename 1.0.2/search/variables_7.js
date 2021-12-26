@@ -5,6 +5,5 @@ var searchData=
   ['height_2',['height',['../structdpp_1_1embed__image.html#a3b7a8bc11894f4ce4fed111219cd9d93',1,'dpp::embed_image::height()'],['../structdpp_1_1attachment.html#a448f0ad9591bb19788cd595ace201ce3',1,'dpp::attachment::height()']]],
   ['hostname_3',['hostname',['../classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8',1,'dpp::ssl_client']]],
   ['hours_4',['hours',['../structdpp_1_1utility_1_1uptime.html#a55841b3a9e3a53240184645d3af39eb4',1,'dpp::utility::uptime']]],
-  ['http_5finfo_5',['http_info',['../structdpp_1_1confirmation__callback__t.html#a97669d491cc60a5e76a248bae9ad7633',1,'dpp::confirmation_callback_t']]],
-  ['http_5fversion_6',['http_version',['../namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b',1,'dpp']]]
+  ['http_5finfo_5',['http_info',['../structdpp_1_1confirmation__callback__t.html#a97669d491cc60a5e76a248bae9ad7633',1,'dpp::confirmation_callback_t']]]
 ];

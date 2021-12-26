@@ -3,9 +3,6 @@
   <compounddef id="structdpp_1_1message" kind="struct" language="C++" prot="public">
     <compoundname>dpp::message</compoundname>
     <includes local="no">message.h</includes>
-    <innerclass refid="structdpp_1_1message_1_1allowed__ref" prot="public">dpp::message::allowed_ref</innerclass>
-    <innerclass refid="structdpp_1_1message_1_1message__interaction__struct" prot="public">dpp::message::message_interaction_struct</innerclass>
-    <innerclass refid="structdpp_1_1message_1_1message__ref" prot="public">dpp::message::message_ref</innerclass>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1message_1a7c1e0cc707a4168b75945da0d31105a0" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -19,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="844" column="17" bodyfile="include/dpp/message.h" bodystart="844" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="256" column="17" bodyfile="include/dpp/message.h" bodystart="256" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1adceaf61877eede79f0ebeb14efa74b5e" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -33,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="846" column="17" bodyfile="include/dpp/message.h" bodystart="846" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="258" column="17" bodyfile="include/dpp/message.h" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a5e75f7cd8a7e952e6621c520627d5b84" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -47,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="848" column="17" bodyfile="include/dpp/message.h" bodystart="848" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="260" column="17" bodyfile="include/dpp/message.h" bodystart="260" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a35c14f04382266b29c4ca076b4e0f9e0" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1user" kindref="compound">user</ref> *</type>
@@ -61,11 +58,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="850" column="5" bodyfile="include/dpp/message.h" bodystart="850" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="262" column="5" bodyfile="include/dpp/message.h" bodystart="262" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1a550f3dc37e4b55cccc2e78d90fc047fb" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
-        <definition>guild_member dpp::message::member</definition>
+      <memberdef kind="variable" id="structdpp_1_1message_1a646a196b3a61b11abab16261eaa1e8c3" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> *</type>
+        <definition>guild_member* dpp::message::member</definition>
         <argsstring></argsstring>
         <name>member</name>
         <briefdescription>
@@ -75,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="852" column="13" bodyfile="include/dpp/message.h" bodystart="852" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="264" column="13" bodyfile="include/dpp/message.h" bodystart="264" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -89,21 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="854" column="12" bodyfile="include/dpp/message.h" bodystart="854" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1ab9cb60fc35159bfa604164c5574a4957" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classdpp_1_1component" kindref="compound">dpp::component</ref> &gt;</type>
-        <definition>std::vector&lt;dpp::component&gt; dpp::message::components</definition>
-        <argsstring></argsstring>
-        <name>components</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>message components </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="856" column="13" bodyfile="include/dpp/message.h" bodystart="856" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="266" column="12" bodyfile="include/dpp/message.h" bodystart="266" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a9991c58453a1deb7b785a6b7457372f2" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -117,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="858" column="7" bodyfile="include/dpp/message.h" bodystart="858" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="268" column="7" bodyfile="include/dpp/message.h" bodystart="268" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a94f1f6750ca95e4bb66f069d9b4b3a54" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -131,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="860" column="7" bodyfile="include/dpp/message.h" bodystart="860" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="270" column="7" bodyfile="include/dpp/message.h" bodystart="270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a8f4ab5546606db3ea4bcdb41b60a5dba" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -145,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="862" column="5" bodyfile="include/dpp/message.h" bodystart="862" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="272" column="5" bodyfile="include/dpp/message.h" bodystart="272" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a499cacfe6a270dca773fc7f91718ac70" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -159,11 +142,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="864" column="8" bodyfile="include/dpp/message.h" bodystart="864" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="274" column="8" bodyfile="include/dpp/message.h" bodystart="274" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1ae9fd7563e8fcc9f3379f8d642a48945a" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; std::pair&lt; <ref refid="classdpp_1_1user" kindref="compound">user</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt; &gt;</type>
-        <definition>std::vector&lt;std::pair&lt;user, guild_member&gt; &gt; dpp::message::mentions</definition>
+      <memberdef kind="variable" id="structdpp_1_1message_1a96f97a2ade23d3f58b221f98c60d9950" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
+        <definition>std::vector&lt;snowflake&gt; dpp::message::mentions</definition>
         <argsstring></argsstring>
         <name>mentions</name>
         <briefdescription>
@@ -173,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="866" column="12" bodyfile="include/dpp/message.h" bodystart="866" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="276" column="12" bodyfile="include/dpp/message.h" bodystart="276" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a1f9fbfe4171cdc02306dc505583b7ed9" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
@@ -183,29 +166,29 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>roles specifically mentioned in this message (only IDs currently) </para>
+<para>roles specifically mentioned in this message </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="868" column="13" bodyfile="include/dpp/message.h" bodystart="868" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="278" column="13" bodyfile="include/dpp/message.h" bodystart="278" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1adcc2146a8b07c51a68ab314c548efa5b" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &gt;</type>
-        <definition>std::vector&lt;channel&gt; dpp::message::mention_channels</definition>
+      <memberdef kind="variable" id="structdpp_1_1message_1ae161a71904462eab6bdd539f4ff32332" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
+        <definition>std::vector&lt;snowflake&gt; dpp::message::mention_channels</definition>
         <argsstring></argsstring>
         <name>mention_channels</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Channels mentioned in the message. (Discord: not all types supported) Discord: Only textual channels that are visible to everyone in a lurkable guild will ever be included. Only crossposted messages (via Channel Following) currently include mention_channels at all. (includes ID, Guild ID, Type, Name) </para>
+<para>Optional: channels specifically mentioned in this message </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="871" column="13" bodyfile="include/dpp/message.h" bodystart="871" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="280" column="13" bodyfile="include/dpp/message.h" bodystart="280" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1aa59a613a4ee0bab7f9a5ea18fe7edea7" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1attachment" kindref="compound">attachment</ref> &gt;</type>
-        <definition>std::vector&lt;attachment&gt; dpp::message::attachments</definition>
+      <memberdef kind="variable" id="structdpp_1_1message_1a1d6ee9c1c03f8adc4fdf32cc26deb7c2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; const unsigned char * &gt;</type>
+        <definition>std::vector&lt;const unsigned char*&gt; dpp::message::attachments</definition>
         <argsstring></argsstring>
         <name>attachments</name>
         <briefdescription>
@@ -215,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="873" column="13" bodyfile="include/dpp/message.h" bodystart="873" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="282" column="13" bodyfile="include/dpp/message.h" bodystart="282" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a9c0eb22ba371ead6d960bdf7c9838b6e" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1embed" kindref="compound">embed</ref> &gt;</type>
@@ -229,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="875" column="13" bodyfile="include/dpp/message.h" bodystart="875" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="284" column="13" bodyfile="include/dpp/message.h" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1af6c6ea9f1319adde40d068a2e9b230e7" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1reaction" kindref="compound">reaction</ref> &gt;</type>
@@ -243,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="877" column="13" bodyfile="include/dpp/message.h" bodystart="877" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="286" column="13" bodyfile="include/dpp/message.h" bodystart="286" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1afaaf4f44ce0631c49c15088b033d25e6" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -257,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="879" column="12" bodyfile="include/dpp/message.h" bodystart="879" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="288" column="12" bodyfile="include/dpp/message.h" bodystart="288" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a029932133e0a6aea2afdea5f2d98146e" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -271,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="881" column="5" bodyfile="include/dpp/message.h" bodystart="881" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="290" column="5" bodyfile="include/dpp/message.h" bodystart="290" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1ad1033bc27c5c1436c2e321d1be1d65ed" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -285,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="883" column="10" bodyfile="include/dpp/message.h" bodystart="883" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="292" column="10" bodyfile="include/dpp/message.h" bodystart="292" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a16fca6ff4595e0fcab2305205eb54626" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -299,21 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="885" column="8" bodyfile="include/dpp/message.h" bodystart="885" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1a8ab53932e4cf4fa00d021a5ca3f4b906" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
-        <definition>std::vector&lt;sticker&gt; dpp::message::stickers</definition>
-        <argsstring></argsstring>
-        <name>stickers</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Stickers </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="887" column="13" bodyfile="include/dpp/message.h" bodystart="887" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="294" column="8" bodyfile="include/dpp/message.h" bodystart="294" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a9f158cde13b3916c9823b18865b24f41" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -327,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="890" column="12" bodyfile="include/dpp/message.h" bodystart="890" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="297" column="12" bodyfile="include/dpp/message.h" bodystart="297" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a020ceaaad56ff4af60e2325a3cb9fbc7" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -341,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="893" column="12" bodyfile="include/dpp/message.h" bodystart="893" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="300" column="12" bodyfile="include/dpp/message.h" bodystart="300" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1a2ed7eaf6f5ff69a94fcb4912c0c795c2" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -355,60 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="896" column="8" bodyfile="include/dpp/message.h" bodystart="896" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1a01de1e67af35ecb77549ccbe94ab7185" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
-        <definition>user dpp::message::self_author</definition>
-        <argsstring></argsstring>
-        <name>self_author</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Self allocated user for caching being off </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="899" column="5" bodyfile="include/dpp/message.h" bodystart="899" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1adc283f0458df6fb0fc966c9f5040c19e" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="structdpp_1_1message_1_1message__ref" kindref="compound">dpp::message::message_ref</ref></type>
-        <definition>struct dpp::message::message_ref dpp::message::message_reference</definition>
-        <argsstring></argsstring>
-        <name>message_reference</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="910" column="19"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1ab61c894afe6b0f7655b3908217878e68" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="structdpp_1_1message_1_1message__interaction__struct" kindref="compound">dpp::message::message_interaction_struct</ref></type>
-        <definition>struct dpp::message::message_interaction_struct dpp::message::interaction</definition>
-        <argsstring></argsstring>
-        <name>interaction</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="921" column="13"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1a389f295110a630b2e3f076013b617111" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="structdpp_1_1message_1_1allowed__ref" kindref="compound">dpp::message::allowed_ref</ref></type>
-        <definition>struct dpp::message::allowed_ref dpp::message::allowed_mentions</definition>
-        <argsstring></argsstring>
-        <name>allowed_mentions</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="930" column="18"/>
+        <location file="include/dpp/message.h" line="303" column="8" bodyfile="include/dpp/message.h" bodystart="303" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -424,21 +340,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="935" column="1" bodyfile="src/dpp/message.cpp" bodystart="265" bodyend="283"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a4b176cfde5ca415d09dedf3d6156ee97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::message::~message</definition>
-        <argsstring>()</argsstring>
-        <name>~message</name>
-        <briefdescription>
-<para>Destroy the message object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="940" column="1"/>
+        <location file="include/dpp/message.h" line="308" column="1" bodyfile="src/dpp/message.cpp" bodystart="40" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a21466e050ee9c0646392ccf5940bb62a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -491,7 +393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="949" column="1" bodyfile="src/dpp/message.cpp" bodystart="303" bodyend="307"/>
+        <location file="include/dpp/message.h" line="317" column="1" bodyfile="src/dpp/message.cpp" bodystart="46" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a0e71afdc706c7ae83934ddfd8c2ffc38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -531,7 +433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="957" column="1" bodyfile="src/dpp/message.cpp" bodystart="356" bodyend="359"/>
+        <location file="include/dpp/message.h" line="325" column="1" bodyfile="src/dpp/message.cpp" bodystart="57" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a45a0883a10a19e933fbba682aba212f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -572,180 +474,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="965" column="1" bodyfile="src/dpp/message.cpp" bodystart="351" bodyend="354"/>
+        <location file="include/dpp/message.h" line="333" column="1" bodyfile="src/dpp/message.cpp" bodystart="52" bodyend="55"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a8649d77de4e7b1c89b90016d3692f283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::set_reference</definition>
-        <argsstring>(snowflake _message_id, snowflake _guild_id=0, snowflake _channel_id=0, bool fail_if_not_exists=false)</argsstring>
-        <name>set_reference</name>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>_message_id</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>_guild_id</declname>
-          <defval>0</defval>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>_channel_id</declname>
-          <defval>0</defval>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>fail_if_not_exists</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Set the original message reference for replies/crossposts. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_message_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>message id to reply to </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>_guild_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>guild id to reply to (optional) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>_channel_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>channel id to reply to (optional) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>fail_if_not_exists</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>true if the message send should fail if these values are invalid (optional) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="976" column="9" bodyfile="src/dpp/message.cpp" bodystart="285" bodyend="291"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a13389a16cb9bec891527d2405dfed913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::set_allowed_mentions</definition>
-        <argsstring>(bool _parse_users, bool _parse_roles, bool _parse_everyone, bool _replied_user, const std::vector&lt; snowflake &gt; &amp;users, const std::vector&lt; snowflake &gt; &amp;roles)</argsstring>
-        <name>set_allowed_mentions</name>
-        <param>
-          <type>bool</type>
-          <declname>_parse_users</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>_parse_roles</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>_parse_everyone</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>_replied_user</declname>
-        </param>
-        <param>
-          <type>const std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt; &amp;</type>
-          <declname>users</declname>
-        </param>
-        <param>
-          <type>const std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt; &amp;</type>
-          <declname>roles</declname>
-        </param>
-        <briefdescription>
-<para>Set the allowed mentions object for pings on the message. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_parse_users</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>whether or not to parse users in the message content or embeds </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>_parse_roles</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>whether or not to parse roles in the message content or embeds </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>_parse_everyone</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>whether or not to parse everyone/here in the message content or embeds </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>_replied_user</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>if set to true and this is a reply, then ping the user we reply to </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>users</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>list of user ids to allow pings for </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>roles</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>list of role ids to allow pings for </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="989" column="9" bodyfile="src/dpp/message.cpp" bodystart="293" bodyend="301"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a7e15337119679e582768d794b409cffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1ae28ee933cde939ecd82ee7def78aff69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
         <definition>message &amp; dpp::message::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j, cache_policy_t cp={cp_aggressive, cp_aggressive, cp_aggressive})</argsstring>
+        <argsstring>(nlohmann::json *j)</argsstring>
         <name>fill_from_json</name>
         <param>
           <type>nlohmann::json *</type>
           <declname>j</declname>
-        </param>
-        <param>
-          <type><ref refid="structdpp_1_1cache__policy__t" kindref="compound">cache_policy_t</ref></type>
-          <declname>cp</declname>
-          <defval>{<ref refid="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e" kindref="member">cp_aggressive</ref>, <ref refid="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e" kindref="member">cp_aggressive</ref>, <ref refid="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e" kindref="member">cp_aggressive</ref>}</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -758,14 +496,6 @@
 <para>JSON object to fill from </para>
 </parameterdescription>
 </parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>cp</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Cache policy for user records, whether or not we cache users when a message is received </para>
-</parameterdescription>
-</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>A reference to self </para>
 </simplesect>
@@ -773,21 +503,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="996" column="9" bodyfile="src/dpp/message.cpp" bodystart="728" bodyend="858"/>
+        <location file="include/dpp/message.h" line="339" column="9" bodyfile="src/dpp/message.cpp" bodystart="276" bodyend="360"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a53e788c52de75b4e067f658e8657adc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1afad5f16566640b47321333d5ee5526ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string dpp::message::build_json</definition>
-        <argsstring>(bool with_id=false, bool is_interaction_response=false) const</argsstring>
+        <argsstring>(bool with_id=false) const</argsstring>
         <name>build_json</name>
         <param>
           <type>bool</type>
           <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>is_interaction_response</declname>
           <defval>false</defval>
         </param>
         <briefdescription>
@@ -801,14 +526,6 @@
 <para>True if the ID is to be included in the built JSON </para>
 </parameterdescription>
 </parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>is_interaction_response</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Set to true if this message is intended to be included in an interaction response. This will exclude some fields that are not valid in interactions at this time. </para>
-</parameterdescription>
-</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>The JSON text of the message </para>
 </simplesect>
@@ -816,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1004" column="13" bodyfile="src/dpp/message.cpp" bodystart="559" bodyend="690"/>
+        <location file="include/dpp/message.h" line="345" column="13" bodyfile="src/dpp/message.cpp" bodystart="192" bodyend="244"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1acd532877b68dcd3f1713fd6df9045ed2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -824,16 +541,12 @@
         <argsstring>() const</argsstring>
         <name>is_crossposted</name>
         <briefdescription>
-<para>Returns true if the message was crossposted to other servers. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if crossposted </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1011" column="6" bodyfile="src/dpp/message.cpp" bodystart="692" bodyend="694"/>
+        <location file="include/dpp/message.h" line="347" column="6" bodyfile="src/dpp/message.cpp" bodystart="246" bodyend="248"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a03ce860de6231985a823f8ce2dd2dd8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -841,33 +554,25 @@
         <argsstring>() const</argsstring>
         <name>is_crosspost</name>
         <briefdescription>
-<para>Returns true if posted from other servers news channel via webhook. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if posted from other server </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1018" column="6" bodyfile="src/dpp/message.cpp" bodystart="696" bodyend="699"/>
+        <location file="include/dpp/message.h" line="348" column="6" bodyfile="src/dpp/message.cpp" bodystart="250" bodyend="253"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1ae6f7c8c7061f1b53da8c43e59d79d040" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1ade17fb77debb971918af8434b0f7477c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::message::suppress_embeds</definition>
+        <definition>bool dpp::message::supress_embeds</definition>
         <argsstring>() const</argsstring>
-        <name>suppress_embeds</name>
+        <name>supress_embeds</name>
         <briefdescription>
-<para>True if embeds have been removed. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if embeds removed </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1025" column="6" bodyfile="src/dpp/message.cpp" bodystart="701" bodyend="703"/>
+        <location file="include/dpp/message.h" line="349" column="6" bodyfile="src/dpp/message.cpp" bodystart="255" bodyend="257"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a0f22f044046ebc8bdc7d35e950baca25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -875,16 +580,12 @@
         <argsstring>() const</argsstring>
         <name>is_source_message_deleted</name>
         <briefdescription>
-<para>True if source message was deleted. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if source message deleted </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1032" column="6" bodyfile="src/dpp/message.cpp" bodystart="705" bodyend="707"/>
+        <location file="include/dpp/message.h" line="350" column="6" bodyfile="src/dpp/message.cpp" bodystart="259" bodyend="261"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1ad164b78c5ee2dc8a8237d1ec7a0d863f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -892,33 +593,12 @@
         <argsstring>() const</argsstring>
         <name>is_urgent</name>
         <briefdescription>
-<para>True if urgent. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if urgent </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1039" column="6" bodyfile="src/dpp/message.cpp" bodystart="709" bodyend="711"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a9b05e57f76d9c2e656d86f45bf8a5230" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::message::has_thread</definition>
-        <argsstring>() const</argsstring>
-        <name>has_thread</name>
-        <briefdescription>
-<para>True if has thread attached. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true if has thread attached </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="1046" column="6" bodyfile="src/dpp/message.cpp" bodystart="713" bodyend="715"/>
+        <location file="include/dpp/message.h" line="351" column="6" bodyfile="src/dpp/message.cpp" bodystart="263" bodyend="265"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a6d8e17c0e9066eb044b241355d0a3efb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -926,16 +606,12 @@
         <argsstring>() const</argsstring>
         <name>is_ephemeral</name>
         <briefdescription>
-<para>True if ephemeral (visible only to issuer of a slash command) </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if ephemeral </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1053" column="6" bodyfile="src/dpp/message.cpp" bodystart="717" bodyend="719"/>
+        <location file="include/dpp/message.h" line="352" column="6" bodyfile="src/dpp/message.cpp" bodystart="267" bodyend="269"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1message_1a25d4b0fbfcc698a74fa4f2b71796e874" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -943,226 +619,12 @@
         <argsstring>() const</argsstring>
         <name>is_loading</name>
         <briefdescription>
-<para>True if loading. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>true if loading </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1060" column="6" bodyfile="src/dpp/message.cpp" bodystart="721" bodyend="723"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a85dbf0b4a0b294eac34ec49feb1d4540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::add_component</definition>
-        <argsstring>(const component &amp;c)</argsstring>
-        <name>add_component</name>
-        <param>
-          <type>const <ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-          <declname>c</declname>
-        </param>
-        <briefdescription>
-<para>Add a component (button) to message. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>c</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>component to add </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="1068" column="9" bodyfile="src/dpp/message.cpp" bodystart="309" bodyend="313"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a9ff92caceb655fa1f89710445a24c107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::add_embed</definition>
-        <argsstring>(const embed &amp;e)</argsstring>
-        <name>add_embed</name>
-        <param>
-          <type>const <ref refid="structdpp_1_1embed" kindref="compound">embed</ref> &amp;</type>
-          <declname>e</declname>
-        </param>
-        <briefdescription>
-<para>Add an embed to message. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>e</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>embed to add </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="1076" column="9" bodyfile="src/dpp/message.cpp" bodystart="315" bodyend="319"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a3895655222ad8f3b9d9b96c47afb2454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::set_flags</definition>
-        <argsstring>(uint8_t f)</argsstring>
-        <name>set_flags</name>
-        <param>
-          <type>uint8_t</type>
-          <declname>f</declname>
-        </param>
-        <briefdescription>
-<para>Set the flags. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>f</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>flags to set </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="1084" column="9" bodyfile="src/dpp/message.cpp" bodystart="321" bodyend="325"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1ada2f9404e7dbb12b3de0a382c3733587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::set_type</definition>
-        <argsstring>(message_type t)</argsstring>
-        <name>set_type</name>
-        <param>
-          <type><ref refid="namespacedpp_1acd7f41dcc93c1cf48514d2b123e4d8bc" kindref="member">message_type</ref></type>
-          <declname>t</declname>
-        </param>
-        <briefdescription>
-<para>Set the message type. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>t</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>type to set </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="1092" column="9" bodyfile="src/dpp/message.cpp" bodystart="327" bodyend="331"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a95675acbf18ed30c5141d3180842611f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::set_filename</definition>
-        <argsstring>(const std::string &amp;fn)</argsstring>
-        <name>set_filename</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>fn</declname>
-        </param>
-        <briefdescription>
-<para>Set the filename. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>fn</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>filename </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="1100" column="9" bodyfile="src/dpp/message.cpp" bodystart="333" bodyend="337"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a7063a512a6e7f078e2a81bad077dfcde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::set_file_content</definition>
-        <argsstring>(const std::string &amp;fc)</argsstring>
-        <name>set_file_content</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>fc</declname>
-        </param>
-        <briefdescription>
-<para>Set the file content. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>fc</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>raw file content contained in std::string </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="1108" column="9" bodyfile="src/dpp/message.cpp" bodystart="339" bodyend="343"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a18a1ebb4b981a0ef46f78f147aa12b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-        <definition>message &amp; dpp::message::set_content</definition>
-        <argsstring>(const std::string &amp;c)</argsstring>
-        <name>set_content</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>c</declname>
-        </param>
-        <briefdescription>
-<para>Set the message content. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>c</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>message content </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>message&amp; reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/message.h" line="1116" column="9" bodyfile="src/dpp/message.cpp" bodystart="345" bodyend="349"/>
+        <location file="include/dpp/message.h" line="353" column="6" bodyfile="src/dpp/message.cpp" bodystart="271" bodyend="273"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1213,7 +675,6 @@
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>author</edgelabel>
-          <edgelabel>self_author</edgelabel>
         </childnode>
         <childnode refid="11" relation="usage">
           <edgelabel>member</edgelabel>
@@ -1224,16 +685,6 @@
           <edgelabel>filename</edgelabel>
           <edgelabel>nonce</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
-          <edgelabel>attachments</edgelabel>
-          <edgelabel>components</edgelabel>
-          <edgelabel>embeds</edgelabel>
-          <edgelabel>mention_channels</edgelabel>
-          <edgelabel>mention_roles</edgelabel>
-          <edgelabel>mentions</edgelabel>
-          <edgelabel>reactions</edgelabel>
-          <edgelabel>stickers</edgelabel>
-        </childnode>
         <childnode refid="13" relation="usage">
           <edgelabel>edited</edgelabel>
           <edgelabel>sent</edgelabel>
@@ -1243,60 +694,17 @@
           <edgelabel>pinned</edgelabel>
           <edgelabel>tts</edgelabel>
         </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>attachments</edgelabel>
+          <edgelabel>embeds</edgelabel>
+          <edgelabel>mention_channels</edgelabel>
+          <edgelabel>mention_roles</edgelabel>
+          <edgelabel>mentions</edgelabel>
+          <edgelabel>reactions</edgelabel>
+        </childnode>
         <childnode refid="10" relation="usage">
           <edgelabel>flags</edgelabel>
           <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="15" relation="usage">
-          <edgelabel>message_reference</edgelabel>
-        </childnode>
-        <childnode refid="16" relation="usage">
-          <edgelabel>interaction</edgelabel>
-        </childnode>
-        <childnode refid="17" relation="usage">
-          <edgelabel>allowed_mentions</edgelabel>
-        </childnode>
-      </node>
-      <node id="17">
-        <label>dpp::message::allowed_ref</label>
-        <link refid="structdpp_1_1message_1_1allowed__ref"/>
-        <childnode refid="14" relation="usage">
-          <edgelabel>parse_everyone</edgelabel>
-          <edgelabel>parse_roles</edgelabel>
-          <edgelabel>parse_users</edgelabel>
-          <edgelabel>replied_user</edgelabel>
-        </childnode>
-        <childnode refid="12" relation="usage">
-          <edgelabel>roles</edgelabel>
-          <edgelabel>users</edgelabel>
-        </childnode>
-      </node>
-      <node id="16">
-        <label>dpp::message::message_interaction_struct</label>
-        <link refid="structdpp_1_1message_1_1message__interaction__struct"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>id</edgelabel>
-        </childnode>
-        <childnode refid="10" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>name</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>usr</edgelabel>
-        </childnode>
-      </node>
-      <node id="15">
-        <label>dpp::message::message_ref</label>
-        <link refid="structdpp_1_1message_1_1message__ref"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>channel_id</edgelabel>
-          <edgelabel>guild_id</edgelabel>
-          <edgelabel>message_id</edgelabel>
-        </childnode>
-        <childnode refid="14" relation="usage">
-          <edgelabel>fail_if_not_exists</edgelabel>
         </childnode>
       </node>
       <node id="3">
@@ -1355,61 +763,44 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/message.h" line="842" column="1" bodyfile="include/dpp/message.h" bodystart="842" bodyend="1117"/>
+    <location file="include/dpp/message.h" line="254" column="1" bodyfile="include/dpp/message.h" bodystart="254" bodyend="354"/>
     <listofallmembers>
-      <member refid="structdpp_1_1message_1a85dbf0b4a0b294eac34ec49feb1d4540" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_component</name></member>
-      <member refid="structdpp_1_1message_1a9ff92caceb655fa1f89710445a24c107" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_embed</name></member>
-      <member refid="structdpp_1_1message_1a389f295110a630b2e3f076013b617111" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>allowed_mentions</name></member>
-      <member refid="structdpp_1_1message_1aa59a613a4ee0bab7f9a5ea18fe7edea7" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>attachments</name></member>
+      <member refid="structdpp_1_1message_1a1d6ee9c1c03f8adc4fdf32cc26deb7c2" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>attachments</name></member>
       <member refid="structdpp_1_1message_1a35c14f04382266b29c4ca076b4e0f9e0" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>author</name></member>
-      <member refid="structdpp_1_1message_1a53e788c52de75b4e067f658e8657adc7" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1message_1afad5f16566640b47321333d5ee5526ca" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>build_json</name></member>
       <member refid="structdpp_1_1message_1adceaf61877eede79f0ebeb14efa74b5e" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>channel_id</name></member>
-      <member refid="structdpp_1_1message_1ab9cb60fc35159bfa604164c5574a4957" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>components</name></member>
       <member refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>content</name></member>
       <member refid="structdpp_1_1message_1a94f1f6750ca95e4bb66f069d9b4b3a54" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>edited</name></member>
       <member refid="structdpp_1_1message_1a9c0eb22ba371ead6d960bdf7c9838b6e" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>embeds</name></member>
       <member refid="structdpp_1_1message_1a020ceaaad56ff4af60e2325a3cb9fbc7" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>filecontent</name></member>
       <member refid="structdpp_1_1message_1a9f158cde13b3916c9823b18865b24f41" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>filename</name></member>
-      <member refid="structdpp_1_1message_1a7e15337119679e582768d794b409cffb" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1message_1ae28ee933cde939ecd82ee7def78aff69" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>fill_from_json</name></member>
       <member refid="structdpp_1_1message_1a16fca6ff4595e0fcab2305205eb54626" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>flags</name></member>
       <member refid="structdpp_1_1message_1a5e75f7cd8a7e952e6621c520627d5b84" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>guild_id</name></member>
-      <member refid="structdpp_1_1message_1a9b05e57f76d9c2e656d86f45bf8a5230" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>has_thread</name></member>
       <member refid="structdpp_1_1message_1a7c1e0cc707a4168b75945da0d31105a0" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>id</name></member>
-      <member refid="structdpp_1_1message_1ab61c894afe6b0f7655b3908217878e68" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>interaction</name></member>
       <member refid="structdpp_1_1message_1a03ce860de6231985a823f8ce2dd2dd8d" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>is_crosspost</name></member>
       <member refid="structdpp_1_1message_1acd532877b68dcd3f1713fd6df9045ed2" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>is_crossposted</name></member>
       <member refid="structdpp_1_1message_1a6d8e17c0e9066eb044b241355d0a3efb" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>is_ephemeral</name></member>
       <member refid="structdpp_1_1message_1a25d4b0fbfcc698a74fa4f2b71796e874" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>is_loading</name></member>
       <member refid="structdpp_1_1message_1a0f22f044046ebc8bdc7d35e950baca25" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>is_source_message_deleted</name></member>
       <member refid="structdpp_1_1message_1ad164b78c5ee2dc8a8237d1ec7a0d863f" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>is_urgent</name></member>
-      <member refid="structdpp_1_1message_1a550f3dc37e4b55cccc2e78d90fc047fb" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>member</name></member>
-      <member refid="structdpp_1_1message_1adcc2146a8b07c51a68ab314c548efa5b" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mention_channels</name></member>
+      <member refid="structdpp_1_1message_1a646a196b3a61b11abab16261eaa1e8c3" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>member</name></member>
+      <member refid="structdpp_1_1message_1ae161a71904462eab6bdd539f4ff32332" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mention_channels</name></member>
       <member refid="structdpp_1_1message_1a499cacfe6a270dca773fc7f91718ac70" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mention_everyone</name></member>
       <member refid="structdpp_1_1message_1a1f9fbfe4171cdc02306dc505583b7ed9" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mention_roles</name></member>
-      <member refid="structdpp_1_1message_1ae9fd7563e8fcc9f3379f8d642a48945a" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mentions</name></member>
+      <member refid="structdpp_1_1message_1a96f97a2ade23d3f58b221f98c60d9950" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>mentions</name></member>
       <member refid="structdpp_1_1message_1a717067505cfc5f5dcf05459c216c9756" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1a21466e050ee9c0646392ccf5940bb62a" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1a0e71afdc706c7ae83934ddfd8c2ffc38" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1a45a0883a10a19e933fbba682aba212f6" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
-      <member refid="structdpp_1_1message_1adc283f0458df6fb0fc966c9f5040c19e" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message_reference</name></member>
       <member refid="structdpp_1_1message_1afaaf4f44ce0631c49c15088b033d25e6" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>nonce</name></member>
       <member refid="structdpp_1_1message_1a029932133e0a6aea2afdea5f2d98146e" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>pinned</name></member>
       <member refid="structdpp_1_1message_1af6c6ea9f1319adde40d068a2e9b230e7" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>reactions</name></member>
-      <member refid="structdpp_1_1message_1a01de1e67af35ecb77549ccbe94ab7185" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>self_author</name></member>
       <member refid="structdpp_1_1message_1a9991c58453a1deb7b785a6b7457372f2" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>sent</name></member>
-      <member refid="structdpp_1_1message_1a13389a16cb9bec891527d2405dfed913" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_allowed_mentions</name></member>
-      <member refid="structdpp_1_1message_1a18a1ebb4b981a0ef46f78f147aa12b66" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_content</name></member>
-      <member refid="structdpp_1_1message_1a7063a512a6e7f078e2a81bad077dfcde" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_file_content</name></member>
-      <member refid="structdpp_1_1message_1a95675acbf18ed30c5141d3180842611f" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_filename</name></member>
-      <member refid="structdpp_1_1message_1a3895655222ad8f3b9d9b96c47afb2454" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_flags</name></member>
-      <member refid="structdpp_1_1message_1a8649d77de4e7b1c89b90016d3692f283" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_reference</name></member>
-      <member refid="structdpp_1_1message_1ada2f9404e7dbb12b3de0a382c3733587" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_type</name></member>
-      <member refid="structdpp_1_1message_1a8ab53932e4cf4fa00d021a5ca3f4b906" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>stickers</name></member>
-      <member refid="structdpp_1_1message_1ae6f7c8c7061f1b53da8c43e59d79d040" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>suppress_embeds</name></member>
+      <member refid="structdpp_1_1message_1ade17fb77debb971918af8434b0f7477c" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>supress_embeds</name></member>
       <member refid="structdpp_1_1message_1a8f4ab5546606db3ea4bcdb41b60a5dba" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>tts</name></member>
       <member refid="structdpp_1_1message_1a2ed7eaf6f5ff69a94fcb4912c0c795c2" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>type</name></member>
       <member refid="structdpp_1_1message_1ad1033bc27c5c1436c2e321d1be1d65ed" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>webhook_id</name></member>
-      <member refid="structdpp_1_1message_1a4b176cfde5ca415d09dedf3d6156ee97" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>~message</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -26,15 +26,11 @@ var md_docpages_02_build =
         [ "7. Using the library", "buildosx.html#autotoc_md17", null ]
       ] ]
     ] ],
-    [ "Building on FreeBSD", "buildfreebsd.html", [
-      [ "Building on FreeBSD", "buildfreebsd.html#autotoc_md18", [
-        [ "1. Toolchain", "buildfreebsd.html#autotoc_md19", null ],
-        [ "2. Install External Dependencies", "buildfreebsd.html#autotoc_md20", null ],
-        [ "3. Build Source Code", "buildfreebsd.html#autotoc_md21", null ],
-        [ "4. Optional: Run test cases", "buildfreebsd.html#autotoc_md22", null ],
-        [ "5. Install globally", "buildfreebsd.html#autotoc_md23", null ],
-        [ "6. Installation to a different directory", "buildfreebsd.html#autotoc_md24", null ],
-        [ "7. Using the library", "buildfreebsd.html#autotoc_md25", null ]
+    [ "Building with CMake", "buildcmake.html", [
+      [ "Building with CMake", "buildcmake.html#autotoc_md18", [
+        [ "1. Toolchain", "buildcmake.html#autotoc_md19", null ],
+        [ "2. Create a CMake project", "buildcmake.html#autotoc_md20", null ],
+        [ "3. Configure CMake", "buildcmake.html#autotoc_md21", null ]
       ] ]
     ] ]
 ];

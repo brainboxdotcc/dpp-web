@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['uptime_0',['uptime',['../classdpp_1_1cluster.html#af12b5b33ea156bde9977796858066a6b',1,'dpp::cluster::uptime()'],['../structdpp_1_1utility_1_1uptime.html#a2ab9e8edf1a6ac715d86e532c335eaf9',1,'dpp::utility::uptime::uptime()'],['../structdpp_1_1utility_1_1uptime.html#a4430115cf5a406ac9f6b4b9d3fa76f3d',1,'dpp::utility::uptime::uptime(time_t diff)']]],
-  ['url_5fencode_1',['url_encode',['../namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4',1,'dpp']]],
-  ['user_2',['user',['../classdpp_1_1user.html#a10ae5c579f6d60370d825e71fdff697b',1,'dpp::user']]],
-  ['user_5fget_3',['user_get',['../classdpp_1_1cluster.html#a73483dbeb0f1946dc18b1d0a5331b0d0',1,'dpp::cluster']]],
-  ['user_5fupdate_5ft_4',['user_update_t',['../structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e',1,'dpp::user_update_t']]],
-  ['utf8len_5',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
-  ['utf8substr_6',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
+  ['vformat_0',['vformat',['../namespacedetail.html#a88bdf7763638196f86a29118fba9442e',1,'detail']]],
+  ['voice_5fbuffer_5fsend_5ft_1',['voice_buffer_send_t',['../structdpp_1_1voice__buffer__send__t.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
+  ['voice_5fready_5ft_2',['voice_ready_t',['../structdpp_1_1voice__ready__t.html#afe0122cb6850df07ca84ba3592181490',1,'dpp::voice_ready_t']]],
+  ['voice_5freceive_5ft_3',['voice_receive_t',['../structdpp_1_1voice__receive__t.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t']]],
+  ['voice_5fserver_5fupdate_5ft_4',['voice_server_update_t',['../structdpp_1_1voice__server__update__t.html#a818081c81337f241f2c7fdc2bf0be1bc',1,'dpp::voice_server_update_t']]],
+  ['voice_5fstate_5fupdate_5ft_5',['voice_state_update_t',['../structdpp_1_1voice__state__update__t.html#a421fc199dfeb2542ad61248b3a600a79',1,'dpp::voice_state_update_t']]],
+  ['voice_5ftrack_5fmarker_5ft_6',['voice_track_marker_t',['../structdpp_1_1voice__track__marker__t.html#ab3a8a8296e89fd188caed6d11c2d8c72',1,'dpp::voice_track_marker_t']]],
+  ['voice_5fuser_5ftalking_5ft_7',['voice_user_talking_t',['../structdpp_1_1voice__user__talking__t.html#a364eafcc97db6de005b150f3a92ed634',1,'dpp::voice_user_talking_t']]],
+  ['voiceconn_8',['voiceconn',['../classdpp_1_1voiceconn.html#a2238afc107e4e97daa0693c81fe150fd',1,'dpp::voiceconn::voiceconn()=default'],['../classdpp_1_1voiceconn.html#a7b0b033f371d814cf04e09ac7cf08ac1',1,'dpp::voiceconn::voiceconn(class discord_client *o, snowflake _channel_id)']]],
+  ['voiceregion_9',['voiceregion',['../classdpp_1_1voiceregion.html#aa49a3a3f843f2f97f27ad262dff11c5c',1,'dpp::voiceregion']]],
+  ['voicestate_10',['voicestate',['../classdpp_1_1voicestate.html#a2cffc101e4bff3c2aa40f5efc9fee895',1,'dpp::voicestate']]]
 ];

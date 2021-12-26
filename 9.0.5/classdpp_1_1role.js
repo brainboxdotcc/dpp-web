@@ -46,17 +46,13 @@ var classdpp_1_1role =
     [ "is_hoisted", "classdpp_1_1role.html#ae0cb040c022f08d210c885012bf47919", null ],
     [ "is_managed", "classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9", null ],
     [ "is_mentionable", "classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f", null ],
-    [ "load_image", "classdpp_1_1role.html#a6d46d3e4a1b8e166f4a26da58bf119dc", null ],
     [ "bot_id", "classdpp_1_1role.html#ada5cb5675b012b2cf55d285d5b233df3", null ],
     [ "colour", "classdpp_1_1role.html#a42f8b747f7a04cd1022ce3bc42e6a05b", null ],
     [ "flags", "classdpp_1_1role.html#a67fa7fe9f3650b5783cf4f5d2ed37de0", null ],
     [ "guild_id", "classdpp_1_1role.html#ab831d734d6cfe3a88c54bb91b0f578ea", null ],
-    [ "icon", "classdpp_1_1role.html#a4cca9d86bb489189d5938102fc52905f", null ],
     [ "id", "classdpp_1_1role.html#a40bf0c6cc03909910512808fa6caa112", null ],
-    [ "image_data", "classdpp_1_1role.html#ade838f66e78b524c5c14d30188e08281", null ],
     [ "integration_id", "classdpp_1_1role.html#aa44718ae47c00bcf2008366218646572", null ],
     [ "name", "classdpp_1_1role.html#a6451e41576902faa14d0394d47d19934", null ],
     [ "permissions", "classdpp_1_1role.html#ad1d79b737f5e7d2cc71238068fc36ad4", null ],
-    [ "position", "classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958", null ],
-    [ "unicode_emoji", "classdpp_1_1role.html#ad84006ea16f3dc59cfd67559a60c5d10", null ]
+    [ "position", "classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958", null ]
 ];

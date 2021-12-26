@@ -16,15 +16,15 @@ var classdpp_1_1ssl__client =
     [ "bytes_in", "classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d", null ],
     [ "bytes_out", "classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085", null ],
     [ "cipher", "classdpp_1_1ssl__client.html#a5fc2e7836da5485216419bbf17e49428", null ],
-    [ "custom_readable_fd", "classdpp_1_1ssl__client.html#aa9d0383a9c348b35352edc264996446e", null ],
+    [ "custom_readable_fd", "classdpp_1_1ssl__client.html#ad2b75ebfaeb8bbe40741a1ad95e58c56", null ],
     [ "custom_readable_ready", "classdpp_1_1ssl__client.html#aaf27074007db73b13663ab985f2221e8", null ],
-    [ "custom_writeable_fd", "classdpp_1_1ssl__client.html#ac5c5b7071d0cb95f34aee7b4b5a32428", null ],
+    [ "custom_writeable_fd", "classdpp_1_1ssl__client.html#a32a0f4e6e46da398d77b33e55e3d4ced", null ],
     [ "custom_writeable_ready", "classdpp_1_1ssl__client.html#a5eac615119a5068c1634e3729752ddb6", null ],
     [ "hostname", "classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8", null ],
     [ "last_tick", "classdpp_1_1ssl__client.html#a61f0bbeefa25de686ac93887afa65895", null ],
     [ "nonblocking", "classdpp_1_1ssl__client.html#a1486b3df6780a842552442a25634fcc9", null ],
     [ "obuffer", "classdpp_1_1ssl__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
     [ "port", "classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07", null ],
-    [ "sfd", "classdpp_1_1ssl__client.html#a423ca70d4046067ebe219f85c7baa540", null ],
+    [ "sfd", "classdpp_1_1ssl__client.html#a5d5d88470fa16ed75a3b3ee195265caf", null ],
     [ "ssl", "classdpp_1_1ssl__client.html#a2398ebb5fe51346ca7e97ec162327c4e", null ]
 ];

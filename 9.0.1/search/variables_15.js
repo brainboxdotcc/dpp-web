@@ -8,11 +8,11 @@ var searchData=
   ['websocket_5fping_5',['websocket_ping',['../classdpp_1_1discord__client.html#a5e39136f09297f7ba0ab6a449e435f3d',1,'dpp::discord_client']]],
   ['widget_5fchannel_5fid_6',['widget_channel_id',['../classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01',1,'dpp::guild']]],
   ['width_7',['width',['../structdpp_1_1embed__image.html#aa92eade95917fe8ebc72ec7f6e035767',1,'dpp::embed_image::width()'],['../structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5',1,'dpp::attachment::width()']]],
-  ['ws_5ffinbit_8',['WS_FINBIT',['../namespacedpp.html#a9f1a62eaba2a019735abc7101cffee69',1,'dpp']]],
-  ['ws_5fmaskbit_9',['WS_MASKBIT',['../namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd',1,'dpp']]],
-  ['ws_5fmax_5fpayload_5flength_5flarge_10',['WS_MAX_PAYLOAD_LENGTH_LARGE',['../namespacedpp.html#a657e035c24d7cdf888ba40868167f098',1,'dpp']]],
-  ['ws_5fmax_5fpayload_5flength_5fsmall_11',['WS_MAX_PAYLOAD_LENGTH_SMALL',['../namespacedpp.html#a50b421a786601a401c22eccf3069d0f8',1,'dpp']]],
-  ['ws_5fmode_12',['ws_mode',['../classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551',1,'dpp::cluster']]],
+  ['winsock_5finitialised_8',['winsock_initialised',['../namespacedpp.html#a05987255dcbd8c5f62a06790c2dc0991',1,'dpp']]],
+  ['ws_5ffinbit_9',['WS_FINBIT',['../namespacedpp.html#a9f1a62eaba2a019735abc7101cffee69',1,'dpp']]],
+  ['ws_5fmaskbit_10',['WS_MASKBIT',['../namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd',1,'dpp']]],
+  ['ws_5fmax_5fpayload_5flength_5flarge_11',['WS_MAX_PAYLOAD_LENGTH_LARGE',['../namespacedpp.html#a657e035c24d7cdf888ba40868167f098',1,'dpp']]],
+  ['ws_5fmax_5fpayload_5flength_5fsmall_12',['WS_MAX_PAYLOAD_LENGTH_SMALL',['../namespacedpp.html#a50b421a786601a401c22eccf3069d0f8',1,'dpp']]],
   ['ws_5fpayload_5flength_5fmagic_5fhuge_13',['WS_PAYLOAD_LENGTH_MAGIC_HUGE',['../namespacedpp.html#ac49a4ce7276ce7386399c5cf020895f6',1,'dpp']]],
   ['ws_5fpayload_5flength_5fmagic_5flarge_14',['WS_PAYLOAD_LENGTH_MAGIC_LARGE',['../namespacedpp.html#ae6fd1619d39b4a2d583c09248f32cbe8',1,'dpp']]]
 ];

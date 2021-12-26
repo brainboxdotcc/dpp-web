@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="523" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="523" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="547" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="547" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1voice__server__update__t_1a8e30dc32463638976c4bd2d59b10ddb1" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="524" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="524" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="548" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="548" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1voice__server__update__t_1aafc5056f206e0783df145d3aef4ef01b" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="525" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="525" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="549" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="549" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="522" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="122" bodyend="122"/>
+        <location file="include/dpp/dispatcher.h" line="546" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="121" bodyend="121"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -132,6 +132,9 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="9">
+        <label>SOCKET</label>
+      </node>
       <node id="11">
         <label>SSL *</label>
       </node>
@@ -183,9 +186,6 @@
         <childnode refid="25" relation="usage">
           <edgelabel>cache_policy</edgelabel>
         </childnode>
-        <childnode refid="27" relation="usage">
-          <edgelabel>ws_mode</edgelabel>
-        </childnode>
       </node>
       <node id="5">
         <label>dpp::discord_client</label>
@@ -207,7 +207,7 @@
           <edgelabel>last_heartbeat</edgelabel>
           <edgelabel>last_heartbeat_ack</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>thread_id</edgelabel>
         </childnode>
         <childnode refid="14" relation="usage">
@@ -217,7 +217,7 @@
           <edgelabel>sessionid</edgelabel>
           <edgelabel>token</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>voice_mutex</edgelabel>
         </childnode>
         <childnode refid="18" relation="usage">
@@ -226,10 +226,7 @@
         <childnode refid="8" relation="usage">
           <edgelabel>ready</edgelabel>
         </childnode>
-        <childnode refid="27" relation="usage">
-          <edgelabel>protocol</edgelabel>
-        </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>connecting_voice_channels</edgelabel>
         </childnode>
       </node>
@@ -358,16 +355,13 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
-        <label>int</label>
-      </node>
       <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
       <node id="15">
         <label>function&lt;</label>
       </node>
-      <node id="29">
+      <node id="28">
         <label>std::mutex</label>
       </node>
       <node id="3">
@@ -375,10 +369,10 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="27">
         <label>native_handle_type</label>
       </node>
-      <node id="30">
+      <node id="29">
         <label>unordered_map&lt;</label>
       </node>
       <node id="13">
@@ -396,11 +390,8 @@
       <node id="24">
         <label>uint8_t</label>
       </node>
-      <node id="27">
-        <label>websocket_protocol_t</label>
-      </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="517" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="517" bodyend="526"/>
+    <location file="include/dpp/dispatcher.h" line="541" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="541" bodyend="550"/>
     <listofallmembers>
       <member refid="structdpp_1_1voice__server__update__t_1aafc5056f206e0783df145d3aef4ef01b" prot="public" virt="non-virtual"><scope>dpp::voice_server_update_t</scope><name>endpoint</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::voice_server_update_t</scope><name>event_dispatch_t</name></member>

@@ -48,8 +48,6 @@ var namespacedpp =
     [ "emoji", "classdpp_1_1emoji.html", "classdpp_1_1emoji" ],
     [ "error_detail", "structdpp_1_1error__detail.html", "structdpp_1_1error__detail" ],
     [ "error_info", "structdpp_1_1error__info.html", "structdpp_1_1error__info" ],
-    [ "etf_buffer", "structdpp_1_1etf__buffer.html", "structdpp_1_1etf__buffer" ],
-    [ "etf_parser", "classdpp_1_1etf__parser.html", "classdpp_1_1etf__parser" ],
     [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
     [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
@@ -114,10 +112,8 @@ var namespacedpp =
     [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
     [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
     [ "ssl_client", "classdpp_1_1ssl__client.html", "classdpp_1_1ssl__client" ],
-    [ "stage_instance", "structdpp_1_1stage__instance.html", "structdpp_1_1stage__instance" ],
     [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],
     [ "stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", "structdpp_1_1stage__instance__delete__t" ],
-    [ "stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", "structdpp_1_1stage__instance__update__t" ],
     [ "sticker", "structdpp_1_1sticker.html", "structdpp_1_1sticker" ],
     [ "sticker_pack", "structdpp_1_1sticker__pack.html", "structdpp_1_1sticker__pack" ],
     [ "thread_create_t", "structdpp_1_1thread__create__t.html", "structdpp_1_1thread__create__t" ],
@@ -128,7 +124,6 @@ var namespacedpp =
     [ "thread_members_update_t", "structdpp_1_1thread__members__update__t.html", "structdpp_1_1thread__members__update__t" ],
     [ "thread_metadata", "structdpp_1_1thread__metadata.html", "structdpp_1_1thread__metadata" ],
     [ "thread_update_t", "structdpp_1_1thread__update__t.html", "structdpp_1_1thread__update__t" ],
-    [ "type_punner", "uniondpp_1_1type__punner.html", "uniondpp_1_1type__punner" ],
     [ "typing_start_t", "structdpp_1_1typing__start__t.html", "structdpp_1_1typing__start__t" ],
     [ "user", "classdpp_1_1user.html", "classdpp_1_1user" ],
     [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
@@ -156,7 +151,7 @@ var namespacedpp =
     [ "command_handler", "namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#a927bdab169583369b18fe3335dacbea3", null ],
+    [ "confirmable_t", "namespacedpp.html#aa9b8b2be70d0b0b5fdb8e9dddf3ece10", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
     [ "guild_map", "namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7", null ],
@@ -304,35 +299,6 @@ var namespacedpp =
       [ "e_managed", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947caa8e9ef37a91a1bbe4012548a0fd3bd82", null ],
       [ "e_animated", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca9036ca4ebc156999b7efd35de1adb2f5", null ],
       [ "e_available", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d", null ]
-    ] ],
-    [ "etf_token_type", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2", [
-      [ "ett_distribution", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1f73d99cedad0b2bef42243ab11a7fd5", null ],
-      [ "ett_new_float", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565", null ],
-      [ "ett_bit_binary", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6", null ],
-      [ "ett_compressed", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf", null ],
-      [ "ett_smallint", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd", null ],
-      [ "ett_integer", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948", null ],
-      [ "ett_float", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf", null ],
-      [ "ett_atom", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4", null ],
-      [ "ett_reference", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5", null ],
-      [ "ett_port", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db", null ],
-      [ "ett_pid", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965", null ],
-      [ "ett_small_tuple", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16", null ],
-      [ "ett_large_tuple", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2", null ],
-      [ "ett_nil", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9", null ],
-      [ "ett_string", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381", null ],
-      [ "ett_list", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad", null ],
-      [ "ett_binary", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986", null ],
-      [ "ett_bigint_small", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d", null ],
-      [ "ett_bigint_large", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557", null ],
-      [ "ett_new_function", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d", null ],
-      [ "ett_export", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81", null ],
-      [ "ett_new_reference", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e", null ],
-      [ "ett_atom_small", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905", null ],
-      [ "ett_map", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39", null ],
-      [ "ett_function", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147", null ],
-      [ "ett_atom_utf8", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed", null ],
-      [ "ett_atom_utf8_small", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c", null ]
     ] ],
     [ "guild_flags", "namespacedpp.html#a94aba4d1f2669c7da3b676859d54602f", [
       [ "g_large", "namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b", null ],
@@ -579,10 +545,6 @@ var namespacedpp =
       [ "ctxm_user", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659", null ],
       [ "ctxm_message", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a", null ]
     ] ],
-    [ "stage_privacy_level", "namespacedpp.html#a29954c9dfc5a906346177226d036a418", [
-      [ "sp_public", "namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed", null ],
-      [ "sp_guild_only", "namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d", null ]
-    ] ],
     [ "sticker_format", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2", [
       [ "sf_png", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484", null ],
       [ "sf_apng", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2", null ],
@@ -632,10 +594,6 @@ var namespacedpp =
     [ "webhook_type", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0", [
       [ "w_incoming", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a", null ],
       [ "w_channel_follower", "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354", null ]
-    ] ],
-    [ "websocket_protocol_t", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55", [
-      [ "ws_json", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55abea765ef009bccd9080351f806bae437", null ],
-      [ "ws_etf", "namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55ac465dd3c03a072c41148d3562b6cbd64", null ]
     ] ],
     [ "ws_opcode", "namespacedpp.html#a27a655378b0676c4444b32079c19d667", [
       [ "OP_CONTINUATION", "namespacedpp.html#a27a655378b0676c4444b32079c19d667ac641ff6036ee7056ef3a2617f7dc6163", null ],
@@ -695,10 +653,8 @@ var namespacedpp =
     [ "to_json", "namespacedpp.html#a752b7140de023c34db60c92363aacf3f", null ],
     [ "to_json", "namespacedpp.html#a735482218b54177427bc882605fa1e4a", null ],
     [ "to_json", "namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2", null ],
-    [ "to_json", "namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3", null ],
     [ "tokenize", "namespacedpp.html#a981df68922716d97ba921fd2027c3513", null ],
     [ "url_encode", "namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4", null ],
-    [ "audit_reason", "namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98", null ],
     [ "channel_cache", "namespacedpp.html#adf9c30193655252606a5db50aaf9cb98", null ],
     [ "confirmation_callback_t", "namespacedpp.html#ac9654800251161e0925af5d1ec1452f8", null ],
     [ "deletion_mutex", "namespacedpp.html#a2630b73cc2ee72fec720c5324655f400", null ],
@@ -708,7 +664,6 @@ var namespacedpp =
     [ "ERROR_STATUS", "namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87", null ],
     [ "eventmap", "namespacedpp.html#ac40602ddc592a7cfb7709375cfd8528e", null ],
     [ "external_ip", "namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c", null ],
-    [ "FORMAT_VERSION", "namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29", null ],
     [ "guild_cache", "namespacedpp.html#a2bc14e10038152802645f051c747dc2f", null ],
     [ "http_version", "namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b", null ],
     [ "MAXHEADERSIZE", "namespacedpp.html#aeef0538fa45377c9b04fc944efec0f0c", null ],

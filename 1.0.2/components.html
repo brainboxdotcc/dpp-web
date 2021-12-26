@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Using component interactions (buttons) - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Using component interactions - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Using component interactions (buttons) - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Using component interactions - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Using component interactions (buttons) - D++ - The lightweight C++ Discord API Library">
-<title>Using component interactions (buttons) - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Using component interactions - D++ - The lightweight C++ Discord API Library">
+<title>Using component interactions - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,10 +98,11 @@ $(document).ready(function(){initNavTree('components.html',''); initResizable();
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Using component interactions (buttons) </div></div>
+  <div class="headertitle"><div class="title">Using component interactions </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >Discord's newest features support sending buttons alongside messages, which when clicked by the user trigger an interaction which is routed by D++ as an on_button_click event. To make use of this, use code as in this example.</p>
+<dl class="section note"><dt>Note</dt><dd>Please be aware that this feature is currently in a <b>closed beta</b>. There is no way to get access to this at present to test this or see buttons in your bot. When this is released, this functionality of the library will work as expected.</dd></dl>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;dpp/message.h&gt;</span></div>
@@ -118,8 +119,7 @@ $(document).ready(function(){initNavTree('components.html',''); initResizable();
 <div class="line">                dpp::message(event.msg-&gt;channel_id, <span class="stringliteral">&quot;this text has buttons&quot;</span>).add_component(</div>
 <div class="line">                    dpp::component().add_component(</div>
 <div class="line">                        dpp::component().set_label(<span class="stringliteral">&quot;Click me!&quot;</span>).</div>
-<div class="line">                        set_type(dpp::cot_button).</div>
-<div class="line">                        set_emoji(u8<span class="stringliteral">&quot;😄&quot;</span>).</div>
+<div class="line">                        set_emoji(<span class="stringliteral">&quot;😄&quot;</span>).</div>
 <div class="line">                        set_style(dpp::cos_danger).</div>
 <div class="line">                        set_id(<span class="stringliteral">&quot;myid&quot;</span>)</div>
 <div class="line">                    )</div>
@@ -142,13 +142,13 @@ $(document).ready(function(){initNavTree('components.html',''); initResizable();
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:222</div></div>
-<div class="ttc" id="anamespacedpp_html_a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c"><div class="ttname"><a href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a></div><div class="ttdeci">@ ir_channel_message_with_source</div><div class="ttdoc">respond to an interaction with a message</div><div class="ttdef"><b>Definition:</b> slashcommand.h:176</div></div>
-<div class="ttc" id="astructdpp_1_1button__click__t_html"><div class="ttname"><a href="structdpp_1_1button__click__t.html">dpp::button_click_t</a></div><div class="ttdoc">Click on button.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:177</div></div>
-<div class="ttc" id="astructdpp_1_1button__click__t_html_a9cd563e83eab3b92b4aecda2680cf3c8"><div class="ttname"><a href="structdpp_1_1button__click__t.html#a9cd563e83eab3b92b4aecda2680cf3c8">dpp::button_click_t::custom_id</a></div><div class="ttdeci">std::string custom_id</div><div class="ttdef"><b>Definition:</b> dispatcher.h:193</div></div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:658</div></div>
-<div class="ttc" id="astructdpp_1_1message__create__t_html_a93c10b3fce36e161eca41edcd32857d0"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">dpp::message_create_t::msg</a></div><div class="ttdeci">message * msg</div><div class="ttdef"><b>Definition:</b> dispatcher.h:664</div></div>
-<div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> message.h:854</div></div>
+<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:154</div></div>
+<div class="ttc" id="anamespacedpp_html_a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c"><div class="ttname"><a href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">dpp::ir_channel_message_with_source</a></div><div class="ttdeci">@ ir_channel_message_with_source</div><div class="ttdef"><b>Definition:</b> slashcommand.h:161</div></div>
+<div class="ttc" id="astructdpp_1_1button__click__t_html"><div class="ttname"><a href="structdpp_1_1button__click__t.html">dpp::button_click_t</a></div><div class="ttdoc">Click on button.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:174</div></div>
+<div class="ttc" id="astructdpp_1_1button__click__t_html_a9cd563e83eab3b92b4aecda2680cf3c8"><div class="ttname"><a href="structdpp_1_1button__click__t.html#a9cd563e83eab3b92b4aecda2680cf3c8">dpp::button_click_t::custom_id</a></div><div class="ttdeci">std::string custom_id</div><div class="ttdef"><b>Definition:</b> dispatcher.h:190</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:617</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html_a93c10b3fce36e161eca41edcd32857d0"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0">dpp::message_create_t::msg</a></div><div class="ttdeci">message * msg</div><div class="ttdef"><b>Definition:</b> dispatcher.h:623</div></div>
+<div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> message.h:529</div></div>
 </div><!-- fragment --><p >When the feature is functioning, the code below will produce buttons on the reply message like in the image below:</p>
 <div class="image">
 <img src="button.png" alt=""/>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('components.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="md_docpages_03_example_programs.html">Example Programs</a></li>
+    <li class="navelem"><a class="el" href="md_docpages__z_04__e_x_a_m_p_l_e.html">Example Programs</a></li>
   </ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

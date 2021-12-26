@@ -19,7 +19,7 @@ var searchData=
   ['role_5fedit_16',['role_edit',['../classdpp_1_1cluster.html#a24cc5286955e6641d574d232d8b47f55',1,'dpp::cluster']]],
   ['role_5fedit_5fposition_17',['role_edit_position',['../classdpp_1_1cluster.html#ac77932ee797aeb44098c2013811b2887',1,'dpp::cluster']]],
   ['roles_5fget_18',['roles_get',['../classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219',1,'dpp::cluster']]],
-  ['route_19',['route',['../classdpp_1_1commandhandler.html#a76d6c3790f9dd01cddaa4d521151c369',1,'dpp::commandhandler::route(const dpp::message &amp;msg)'],['../classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3',1,'dpp::commandhandler::route(const struct interaction_create_t &amp;event)']]],
+  ['route_19',['route',['../classdpp_1_1commandhandler.html#acecd44c69a7cee36d1d12aa5b0354d0d',1,'dpp::commandhandler::route(const class dpp::message &amp;msg)'],['../classdpp_1_1commandhandler.html#a0438c6a4b44fe2e5101debe846cf0894',1,'dpp::commandhandler::route(const class interaction_create_t &amp;event)']]],
   ['rtp_5fheader_20',['rtp_header',['../structdpp_1_1rtp__header.html#acc1b39793e54cb2caf586cf65e2d42bd',1,'dpp::rtp_header']]],
   ['run_21',['Run',['../classdpp_1_1discord__client.html#ae768cabb169f9501bba20704867110e5',1,'dpp::discord_client::Run()'],['../classdpp_1_1discord__voice__client.html#a102408db3accf1a8561bb3e2bccef345',1,'dpp::discord_voice_client::Run()'],['../classdpp_1_1http__request.html#a49af6bb0b85e162b79162b701545cbaa',1,'dpp::http_request::Run()']]]
 ];
