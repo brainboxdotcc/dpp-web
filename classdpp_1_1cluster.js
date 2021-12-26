@@ -177,6 +177,7 @@ var classdpp_1_1cluster =
     [ "user_get", "classdpp_1_1cluster.html#a73483dbeb0f1946dc18b1d0a5331b0d0", null ],
     [ "user_set_voice_state", "classdpp_1_1cluster.html#a0b6947686248bb0e551b6912856f9553", null ],
     [ "discord_client", "classdpp_1_1cluster.html#ab0d2c95628830a28f9abb09441914e40", null ],
+    [ "discord_voice_client", "classdpp_1_1cluster.html#abc4e53e79731117ca95bca977baef820", null ],
     [ "cache_policy", "classdpp_1_1cluster.html#a9fae28f81712be86530fe3314d166ad3", null ],
     [ "cluster_id", "classdpp_1_1cluster.html#a5155862c1d7267c7f4ee8781ff3e8d7f", null ],
     [ "intents", "classdpp_1_1cluster.html#a239af1e13449c85658fb37e6589745a0", null ],

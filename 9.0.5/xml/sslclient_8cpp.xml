@@ -3,10 +3,10 @@
   <compounddef id="sslclient_8cpp" kind="file" language="C++">
     <compoundname>sslclient.cpp</compoundname>
     <includes local="no">errno.h</includes>
+    <includes local="no">netinet/in.h</includes>
     <includes local="no">resolv.h</includes>
     <includes local="no">netdb.h</includes>
     <includes local="no">sys/socket.h</includes>
-    <includes local="no">netinet/in.h</includes>
     <includes local="no">netinet/tcp.h</includes>
     <includes local="no">unistd.h</includes>
     <includes local="no">signal.h</includes>
@@ -25,7 +25,7 @@
     <includes refid="discord_8h" local="no">dpp/discord.h</includes>
     <includes refid="dispatcher_8h" local="no">dpp/dispatcher.h</includes>
     <incdepgraph>
-      <node id="49">
+      <node id="50">
         <label>dpp/auditlog.h</label>
         <childnode refid="22" relation="include">
         </childnode>
@@ -100,8 +100,10 @@
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
       </node>
-      <node id="50">
+      <node id="52">
         <label>dpp/dispatcher.h</label>
         <childnode refid="22" relation="include">
         </childnode>
@@ -222,6 +224,9 @@
         <childnode refid="47" relation="include">
         </childnode>
       </node>
+      <node id="51">
+        <label>dpp/socket.h</label>
+      </node>
       <node id="21">
         <label>dpp/sslclient.h</label>
         <childnode refid="22" relation="include">
@@ -231,6 +236,17 @@
         <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>dpp/stage_instance.h</label>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="31">
@@ -310,7 +326,7 @@
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="50" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
       </node>
       <node id="20">
@@ -340,10 +356,10 @@
       <node id="34">
         <label>mutex</label>
       </node>
-      <node id="4">
+      <node id="5">
         <label>netdb.h</label>
       </node>
-      <node id="6">
+      <node id="3">
         <label>netinet/in.h</label>
       </node>
       <node id="7">
@@ -358,7 +374,7 @@
       <node id="48">
         <label>optional</label>
       </node>
-      <node id="3">
+      <node id="4">
         <label>resolv.h</label>
       </node>
       <node id="9">
@@ -376,7 +392,7 @@
       <node id="14">
         <label>string.h</label>
       </node>
-      <node id="5">
+      <node id="6">
         <label>sys/socket.h</label>
       </node>
       <node id="12">
@@ -398,16 +414,42 @@
     <innerclass refid="classdpp_1_1opensslcontext" prot="public">dpp::opensslcontext</innerclass>
     <innernamespace refid="namespacedpp">dpp</innernamespace>
       <sectiondef kind="define">
-      <memberdef kind="define" id="sslclient_8cpp_1a7c8b4f4783cbb6f976128e8bcc1217c4" prot="public" static="no">
-        <name>BUFSIZZ</name>
-        <initializer>1024 * 16</initializer>
+      <memberdef kind="define" id="sslclient_8cpp_1a30e9ccbb9ca0cc93137190a034ba4603" prot="public" static="no">
+        <name>SAFE_FD_SET</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>{ if (a &gt;= 0) { FD_SET(a, b); }}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="78" column="9" bodyfile="src/dpp/sslclient.cpp" bodystart="78" bodyend="-1"/>
+        <location file="src/dpp/sslclient.cpp" line="75" column="9" bodyfile="src/dpp/sslclient.cpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sslclient_8cpp_1acbd2b2c5a09a8925ec522307201782ff" prot="public" static="no">
+        <name>SAFE_FD_ISSET</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((a &gt;= 0) ? FD_ISSET(a, b) : 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/sslclient.cpp" line="76" column="9" bodyfile="src/dpp/sslclient.cpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sslclient_8cpp_1a7c8b4f4783cbb6f976128e8bcc1217c4" prot="public" static="no">
+        <name>BUFSIZZ</name>
+        <initializer>16 * 1240</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/sslclient.cpp" line="82" column="9" bodyfile="src/dpp/sslclient.cpp" bodystart="82" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

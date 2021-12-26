@@ -37,6 +37,8 @@ var hierarchy =
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
     [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
+    [ "dpp::etf_buffer", "structdpp_1_1etf__buffer.html", null ],
+    [ "dpp::etf_parser", "classdpp_1_1etf__parser.html", null ],
     [ "dpp::events::event", "classdpp_1_1events_1_1event.html", [
       [ "dpp::events::application_command_create", "classdpp_1_1events_1_1application__command__create.html", null ],
       [ "dpp::events::application_command_delete", "classdpp_1_1events_1_1application__command__delete.html", null ],
@@ -81,6 +83,7 @@ var hierarchy =
       [ "dpp::events::resumed", "classdpp_1_1events_1_1resumed.html", null ],
       [ "dpp::events::stage_instance_create", "classdpp_1_1events_1_1stage__instance__create.html", null ],
       [ "dpp::events::stage_instance_delete", "classdpp_1_1events_1_1stage__instance__delete.html", null ],
+      [ "dpp::events::stage_instance_update", "classdpp_1_1events_1_1stage__instance__update.html", null ],
       [ "dpp::events::thread_create", "classdpp_1_1events_1_1thread__create.html", null ],
       [ "dpp::events::thread_delete", "classdpp_1_1events_1_1thread__delete.html", null ],
       [ "dpp::events::thread_list_sync", "classdpp_1_1events_1_1thread__list__sync.html", null ],
@@ -140,6 +143,7 @@ var hierarchy =
       [ "dpp::resumed_t", "structdpp_1_1resumed__t.html", null ],
       [ "dpp::stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", null ],
       [ "dpp::stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", null ],
+      [ "dpp::stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", null ],
       [ "dpp::thread_create_t", "structdpp_1_1thread__create__t.html", null ],
       [ "dpp::thread_delete_t", "structdpp_1_1thread__delete__t.html", null ],
       [ "dpp::thread_list_sync_t", "structdpp_1_1thread__list__sync__t.html", null ],
@@ -149,6 +153,8 @@ var hierarchy =
       [ "dpp::typing_start_t", "structdpp_1_1typing__start__t.html", null ],
       [ "dpp::user_update_t", "structdpp_1_1user__update__t.html", null ],
       [ "dpp::voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", null ],
+      [ "dpp::voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", null ],
+      [ "dpp::voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", null ],
       [ "dpp::voice_ready_t", "structdpp_1_1voice__ready__t.html", null ],
       [ "dpp::voice_receive_t", "structdpp_1_1voice__receive__t.html", null ],
       [ "dpp::voice_server_update_t", "structdpp_1_1voice__server__update__t.html", null ],
@@ -156,6 +162,9 @@ var hierarchy =
       [ "dpp::voice_track_marker_t", "structdpp_1_1voice__track__marker__t.html", null ],
       [ "dpp::voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", null ],
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
+    ] ],
+    [ "std::exception", null, [
+      [ "dpp::exception", "classdpp_1_1exception.html", null ]
     ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
@@ -187,14 +196,19 @@ var hierarchy =
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
     [ "dpp::message", "structdpp_1_1message.html", null ],
+    [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
+    [ "OpusDecoder", "struct_opus_decoder.html", null ],
+    [ "OpusEncoder", "struct_opus_encoder.html", null ],
+    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
     [ "dpp::presence", "classdpp_1_1presence.html", null ],
     [ "dpp::prune", "structdpp_1_1prune.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
+    [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
@@ -203,11 +217,14 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
+    [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
     [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
+    [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
+    [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],

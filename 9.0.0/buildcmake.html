@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Building with CMake - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Building a Discord Bot using CMake/UNIX - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Building with CMake - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Building a Discord Bot using CMake/UNIX - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Building with CMake - D++ - The lightweight C++ Discord API Library">
-<title>Building with CMake - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Building a Discord Bot using CMake/UNIX - D++ - The lightweight C++ Discord API Library">
+<title>Building a Discord Bot using CMake/UNIX - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,26 +98,26 @@ $(document).ready(function(){initNavTree('buildcmake.html',''); initResizable();
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Building with CMake </div></div>
+  <div class="headertitle"><div class="title">Building a Discord Bot using CMake/UNIX </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md18"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md27"></a>
 Building with CMake</h1>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 1. Toolchain</h2>
 <p >Before compiling, you will need to install <code>cmake</code> on your system. To be sure that <code>cmake</code> is installed, you can type the following command: </p><pre class="fragment">$ cmake --version
 cmake version 3.20.4
-</pre><h2><a class="anchor" id="autotoc_md20"></a>
+</pre><h2><a class="anchor" id="autotoc_md29"></a>
 2. Create a CMake project</h2>
-<p >In an empty directory, create different directories and files like below: </p><pre class="fragment">- your_project/
+<p >In an empty directory, create the following files and directories: </p><pre class="fragment">- your_project/
     |-- libs/
     |-- src/
         |-- main.cpp
     |-- CMakeLists.txt
-</pre><p >In the <code>libs/</code> directory, clone the sources with: <code>git clone <a href="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</a></code></p>
-<h2><a class="anchor" id="autotoc_md21"></a>
+</pre><p >In the <code>libs/</code> directory, clone D++ with: <code>git clone <a href="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</a></code></p>
+<h2><a class="anchor" id="autotoc_md30"></a>
 3. Configure CMake</h2>
-<p >Here is an example of a CMake configuration, adapt it according to your needs:</p>
+<p >Here is an example CMake configuration, adapt it according to your needs:</p>
 <div class="fragment"><div class="line"># minimum CMake version required</div>
 <div class="line">cmake_minimum_required(VERSION 3.15)</div>
 <div class="line"># Project name, version and description</div>
@@ -125,6 +125,8 @@ cmake version 3.20.4
 <div class="line"> </div>
 <div class="line"># Add DPP as dependency</div>
 <div class="line">add_subdirectory(libs/DPP)</div>
+<div class="line">add_subdirectory(libs/spdlog) # if you need a logger. Don&#39;t forget to clone sources</div>
+<div class="line">                              # in the `libs/` directory</div>
 <div class="line"> </div>
 <div class="line"># Create an executable</div>
 <div class="line">add_executable(${PROJECT_NAME}</div>
@@ -135,8 +137,7 @@ cmake version 3.20.4
 <div class="line"># Linking libraries</div>
 <div class="line">target_link_libraries(${PROJECT_NAME}</div>
 <div class="line">    dpp</div>
-<div class="line">    spdlog # if you need a logger. Don&#39;t forget to clone sources</div>
-<div class="line">           # in the `libs/` directory</div>
+<div class="line">    spdlog # Like before, if you need spdlog</div>
 <div class="line">)</div>
 <div class="line"> </div>
 <div class="line"># Specify includes</div>
@@ -165,7 +166,7 @@ cmake version 3.20.4
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="md_docpages_02_build.html">Building D++</a></li>
+    <li class="navelem"><a class="el" href="md_docpages_02_building_a_bot.html">Creating a Discord Bot</a></li>
   </ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

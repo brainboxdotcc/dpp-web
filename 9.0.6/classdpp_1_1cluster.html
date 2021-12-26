@@ -113,8 +113,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1cluster.html',''); initRes
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1cluster__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -129,7 +128,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2d957f52245734f6d44444af8380c952"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a> is non-moveable  <a href="classdpp_1_1cluster.html#a2d957f52245734f6d44444af8380c952">More...</a><br /></td></tr>
 <tr class="separator:a2d957f52245734f6d44444af8380c952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a270be0ab59aff4f335ef3f4af7559d92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a270be0ab59aff4f335ef3f4af7559d92">~cluster</a> ()</td></tr>
+<tr class="memdesc:a270be0ab59aff4f335ef3f4af7559d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the cluster object.  <a href="classdpp_1_1cluster.html#a270be0ab59aff4f335ef3f4af7559d92">More...</a><br /></td></tr>
 <tr class="separator:a270be0ab59aff4f335ef3f4af7559d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056e4191c03dd210c2a410b6599a0bf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">set_websocket_protocol</a> (<a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55">websocket_protocol_t</a> mode)</td></tr>
+<tr class="memdesc:a056e4191c03dd210c2a410b6599a0bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards. Returns once all shards are connected.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development.  <a href="classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9">More...</a><br /></td></tr>
+<tr class="separator:a056e4191c03dd210c2a410b6599a0bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbcc02c388c197cf7050551ef89aeefe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe">set_audit_reason</a> (const std::string &amp;reason)</td></tr>
+<tr class="memdesc:adbcc02c388c197cf7050551ef89aeefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the audit log reason for the next REST call to be made. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically.  <a href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe">More...</a><br /></td></tr>
+<tr class="separator:adbcc02c388c197cf7050551ef89aeefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e3f0868ece15373e81844dff719aa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af1e3f0868ece15373e81844dff719aa0">clear_audit_reason</a> ()</td></tr>
+<tr class="memdesc:af1e3f0868ece15373e81844dff719aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the audit log reason for the next REST call to be made. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically.  <a href="classdpp_1_1cluster.html#af1e3f0868ece15373e81844dff719aa0">More...</a><br /></td></tr>
+<tr class="separator:af1e3f0868ece15373e81844dff719aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a2958625740b4a6fde6643042c5f7e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab7a2958625740b4a6fde6643042c5f7e">get_audit_reason</a> ()</td></tr>
+<tr class="memdesc:ab7a2958625740b4a6fde6643042c5f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the audit reason set for the next REST call to be made on this thread. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically.  <a href="classdpp_1_1cluster.html#ab7a2958625740b4a6fde6643042c5f7e">More...</a><br /></td></tr>
+<tr class="separator:ab7a2958625740b4a6fde6643042c5f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13689440c9cc80279d415c563a6363c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0">log</a> (<a class="el" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">dpp::loglevel</a> severity, const std::string &amp;msg) const</td></tr>
 <tr class="memdesc:a13689440c9cc80279d415c563a6363c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message to whatever log the user is using. The logged message is passed up the chain to the on_log event in user code which can then do whatever it wants to do with it.  <a href="classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0">More...</a><br /></td></tr>
 <tr class="separator:a13689440c9cc80279d415c563a6363c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +169,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52046d1e6bbbad709abe05cedd376eb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a52046d1e6bbbad709abe05cedd376eb0">on_voice_state_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__state__update__t.html">voice_state_update_t</a> &amp;_event)&gt; _voice_state_update)</td></tr>
 <tr class="memdesc:a52046d1e6bbbad709abe05cedd376eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice state update event  <a href="classdpp_1_1cluster.html#a52046d1e6bbbad709abe05cedd376eb0">More...</a><br /></td></tr>
 <tr class="separator:a52046d1e6bbbad709abe05cedd376eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23fb971337e9ebf046d67e1c70d2ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ad23fb971337e9ebf046d67e1c70d2ee2">on_voice_client_disconnect</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__client__disconnect__t.html">voice_client_disconnect_t</a> &amp;_event)&gt; _voice_client_disconnect)</td></tr>
+<tr class="memdesc:ad23fb971337e9ebf046d67e1c70d2ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice client disconnect event  <a href="classdpp_1_1cluster.html#ad23fb971337e9ebf046d67e1c70d2ee2">More...</a><br /></td></tr>
+<tr class="separator:ad23fb971337e9ebf046d67e1c70d2ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a6c34e0d882135ea2f362e76f1d1a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af1a6c34e0d882135ea2f362e76f1d1a6">on_voice_client_speaking</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__client__speaking__t.html">voice_client_speaking_t</a> &amp;_event)&gt; _voice_client_speaking)</td></tr>
+<tr class="memdesc:af1a6c34e0d882135ea2f362e76f1d1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice client speaking event  <a href="classdpp_1_1cluster.html#af1a6c34e0d882135ea2f362e76f1d1a6">More...</a><br /></td></tr>
+<tr class="separator:af1a6c34e0d882135ea2f362e76f1d1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab42d2402bb68ba381a011f4ade31c909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab42d2402bb68ba381a011f4ade31c909">on_log</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1log__t.html">log_t</a> &amp;_event)&gt; _log)</td></tr>
 <tr class="memdesc:ab42d2402bb68ba381a011f4ade31c909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a log message is to be written to the log. You can attach any logging system here you wish, e.g. spdlog, or even just a simple use of std::cout or printf. If nothing attaches this log event, then the library will be silent.  <a href="classdpp_1_1cluster.html#ab42d2402bb68ba381a011f4ade31c909">More...</a><br /></td></tr>
 <tr class="separator:ab42d2402bb68ba381a011f4ade31c909"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,7 +344,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac9795329c70bca7027829a94a6d25c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a voice channel is connected and ready to send audio. Note that this is not directly attached to the READY event of the websocket, as there is further connection that needs to be done before audio is ready to send.  <a href="classdpp_1_1cluster.html#ac9795329c70bca7027829a94a6d25c47">More...</a><br /></td></tr>
 <tr class="separator:ac9795329c70bca7027829a94a6d25c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaac5fbafa18f2634e450e78979660365"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aaac5fbafa18f2634e450e78979660365">on_voice_receive</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__receive__t.html">voice_receive_t</a> &amp;_event)&gt; _voice_receive)</td></tr>
-<tr class="memdesc:aaac5fbafa18f2634e450e78979660365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when new audio data is received.  <a href="classdpp_1_1cluster.html#aaac5fbafa18f2634e450e78979660365">More...</a><br /></td></tr>
+<tr class="memdesc:aaac5fbafa18f2634e450e78979660365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when new audio data is received. Each separate user's audio from the voice channel will arrive tagged with their user id in the event, if a user can be attributed to the received audio.  <a href="classdpp_1_1cluster.html#aaac5fbafa18f2634e450e78979660365">More...</a><br /></td></tr>
 <tr class="separator:aaac5fbafa18f2634e450e78979660365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588cb9aff5b15b9f54cc2818a5482994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a588cb9aff5b15b9f54cc2818a5482994">on_voice_track_marker</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1voice__track__marker__t.html">voice_track_marker_t</a> &amp;_event)&gt; _voice_track_marker)</td></tr>
 <tr class="memdesc:a588cb9aff5b15b9f54cc2818a5482994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when sending of audio passes over a track marker. Track markers are arbitrarily placed "bookmarks" in the audio buffer, placed by the bot developer. Each track marker can have a string value associated with it which is specified in <a class="el" href="classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84" title="Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer...">dpp::discord_voice_client::insert_marker</a> and returned to this event.  <a href="classdpp_1_1cluster.html#a588cb9aff5b15b9f54cc2818a5482994">More...</a><br /></td></tr>
@@ -334,12 +352,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa606c528c83756715ab608dd9ddba3e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa606c528c83756715ab608dd9ddba3e4">on_stage_instance_create</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1stage__instance__create__t.html">stage_instance_create_t</a> &amp;_event)&gt; _stage_instance_create)</td></tr>
 <tr class="memdesc:aa606c528c83756715ab608dd9ddba3e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new stage instance is created on a stage channel.  <a href="classdpp_1_1cluster.html#aa606c528c83756715ab608dd9ddba3e4">More...</a><br /></td></tr>
 <tr class="separator:aa606c528c83756715ab608dd9ddba3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48905d60b7f52386e061fdd850bf29e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a48905d60b7f52386e061fdd850bf29e8">on_stage_instance_update</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1stage__instance__update__t.html">stage_instance_update_t</a> &amp;_event)&gt; _stage_instance_update)</td></tr>
+<tr class="memdesc:a48905d60b7f52386e061fdd850bf29e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a stage instance is updated.  <a href="classdpp_1_1cluster.html#a48905d60b7f52386e061fdd850bf29e8">More...</a><br /></td></tr>
+<tr class="separator:a48905d60b7f52386e061fdd850bf29e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71427dc52a2edbd2ec497a4810e38c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa71427dc52a2edbd2ec497a4810e38c9">on_stage_instance_delete</a> (std::function&lt; void(const <a class="el" href="structdpp_1_1stage__instance__delete__t.html">stage_instance_delete_t</a> &amp;_event)&gt; _stage_instance_delete)</td></tr>
 <tr class="memdesc:aa71427dc52a2edbd2ec497a4810e38c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an existing stage instance is deleted from a stage channel.  <a href="classdpp_1_1cluster.html#aa71427dc52a2edbd2ec497a4810e38c9">More...</a><br /></td></tr>
 <tr class="separator:aa71427dc52a2edbd2ec497a4810e38c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b83ee3be02df68eb5e697ddc5efc0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a62b83ee3be02df68eb5e697ddc5efc0a">post_rest</a> (const std::string &amp;endpoint, const std::string &amp;major_parameters, const std::string &amp;parameters, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, const std::string &amp;postdata, <a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a> callback, const std::string &amp;filename=&quot;&quot;, const std::string &amp;filecontent=&quot;&quot;)</td></tr>
 <tr class="memdesc:a62b83ee3be02df68eb5e697ddc5efc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a REST request. Where possible use a helper method instead like message_create.  <a href="classdpp_1_1cluster.html#a62b83ee3be02df68eb5e697ddc5efc0a">More...</a><br /></td></tr>
 <tr class="separator:a62b83ee3be02df68eb5e697ddc5efc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156fe68358c421111e690f553c4e4f52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52">request</a> (const std::string &amp;url, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, <a class="el" href="namespacedpp.html#ae3249e99494d04bb4be50341f474621e">http_completion_event</a> callback, const std::string &amp;postdata=&quot;&quot;, const std::string &amp;mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;headers={})</td></tr>
+<tr class="memdesc:a156fe68358c421111e690f553c4e4f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a HTTP(S) request. For use when wanting asnyncronous access to HTTP APIs outside of Discord.  <a href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52">More...</a><br /></td></tr>
+<tr class="separator:a156fe68358c421111e690f553c4e4f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c92a68228fe9dcb96b1c7cb6b8ae795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a4c92a68228fe9dcb96b1c7cb6b8ae795">interaction_response_create</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> interaction_id, const std::string &amp;<a class="el" href="classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e">token</a>, const <a class="el" href="structdpp_1_1interaction__response.html">interaction_response</a> &amp;r, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a4c92a68228fe9dcb96b1c7cb6b8ae795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a slash command.  <a href="classdpp_1_1cluster.html#a4c92a68228fe9dcb96b1c7cb6b8ae795">More...</a><br /></td></tr>
 <tr class="separator:a4c92a68228fe9dcb96b1c7cb6b8ae795"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,11 +532,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99e8227f11ef33cd2d9cc3abef46adfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a99e8227f11ef33cd2d9cc3abef46adfd">guild_get_member</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a99e8227f11ef33cd2d9cc3abef46adfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a guild member.  <a href="classdpp_1_1cluster.html#a99e8227f11ef33cd2d9cc3abef46adfd">More...</a><br /></td></tr>
 <tr class="separator:a99e8227f11ef33cd2d9cc3abef46adfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0598354c7302d1243bea4148365927d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab0598354c7302d1243bea4148365927d">guild_get_members</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
-<tr class="memdesc:ab0598354c7302d1243bea4148365927d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all guild members.  <a href="classdpp_1_1cluster.html#ab0598354c7302d1243bea4148365927d">More...</a><br /></td></tr>
-<tr class="separator:ab0598354c7302d1243bea4148365927d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52cc92ce052d063854e0372539e4d9ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a52cc92ce052d063854e0372539e4d9ee">guild_search_members</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const std::string &amp;query, uint16_t limit, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:a52cc92ce052d063854e0372539e4d9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for guild members based on whether their username or nickname starts with the given string.  <a href="classdpp_1_1cluster.html#a52cc92ce052d063854e0372539e4d9ee">More...</a><br /></td></tr>
+<tr class="separator:a52cc92ce052d063854e0372539e4d9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b24baba4de9d38f7d9a7cea2f71a545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a6b24baba4de9d38f7d9a7cea2f71a545">guild_get_members</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, uint16_t limit, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> after, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:a6b24baba4de9d38f7d9a7cea2f71a545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all guild members.  <a href="classdpp_1_1cluster.html#a6b24baba4de9d38f7d9a7cea2f71a545">More...</a><br /></td></tr>
+<tr class="separator:a6b24baba4de9d38f7d9a7cea2f71a545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2937f10828bc3fbdeff87fc6b4463cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa2937f10828bc3fbdeff87fc6b4463cc">guild_add_member</a> (const <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm, const std::string &amp;access_token, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:aa2937f10828bc3fbdeff87fc6b4463cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add guild member. Needs a specific oauth2 scope, from which you get the access_token.  <a href="classdpp_1_1cluster.html#aa2937f10828bc3fbdeff87fc6b4463cc">More...</a><br /></td></tr>
 <tr class="separator:aa2937f10828bc3fbdeff87fc6b4463cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57a1957b81c9606850e730c477dd44aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a57a1957b81c9606850e730c477dd44aa">guild_edit_member</a> (const <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a57a1957b81c9606850e730c477dd44aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit the properties of an existing guild member.  <a href="classdpp_1_1cluster.html#a57a1957b81c9606850e730c477dd44aa">More...</a><br /></td></tr>
@@ -751,6 +777,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae64421a4b2402238feb0536639009c18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ae64421a4b2402238feb0536639009c18">sticker_packs_get</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:ae64421a4b2402238feb0536639009c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sticker packs.  <a href="classdpp_1_1cluster.html#ae64421a4b2402238feb0536639009c18">More...</a><br /></td></tr>
 <tr class="separator:ae64421a4b2402238feb0536639009c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe69055dc2ee16d08e693df11fec75a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a5fe69055dc2ee16d08e693df11fec75a">stage_instance_create</a> (const <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a> &amp;instance, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a5fe69055dc2ee16d08e693df11fec75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a stage instance on a stage channel.  <a href="classdpp_1_1cluster.html#a5fe69055dc2ee16d08e693df11fec75a">More...</a><br /></td></tr>
+<tr class="separator:a5fe69055dc2ee16d08e693df11fec75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1edd6ac5d8553b4823465bebadfaa9af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a1edd6ac5d8553b4823465bebadfaa9af">stage_instance_get</a> (const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:a1edd6ac5d8553b4823465bebadfaa9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stage instance associated with the channel id, if it exists.  <a href="classdpp_1_1cluster.html#a1edd6ac5d8553b4823465bebadfaa9af">More...</a><br /></td></tr>
+<tr class="separator:a1edd6ac5d8553b4823465bebadfaa9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e1b1edb3094c7d220a3a80323bbe17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af4e1b1edb3094c7d220a3a80323bbe17">stage_instance_edit</a> (const <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a> &amp;instance, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:af4e1b1edb3094c7d220a3a80323bbe17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a stage instance.  <a href="classdpp_1_1cluster.html#af4e1b1edb3094c7d220a3a80323bbe17">More...</a><br /></td></tr>
+<tr class="separator:af4e1b1edb3094c7d220a3a80323bbe17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8c2ba02d51ad166f90300ab5b53ecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a9f8c2ba02d51ad166f90300ab5b53ecb">stage_instance_delete</a> (const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a9f8c2ba02d51ad166f90300ab5b53ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a stage instance.  <a href="classdpp_1_1cluster.html#a9f8c2ba02d51ad166f90300ab5b53ecb">More...</a><br /></td></tr>
+<tr class="separator:a9f8c2ba02d51ad166f90300ab5b53ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc">get_voice_regions</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all voice regions.  <a href="classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc">More...</a><br /></td></tr>
 <tr class="separator:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -780,7 +818,11 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ad31317a40181f6864646c8758871b495"><td class="mdescLeft">&#160;</td><td class="mdescRight">The details of the bot user. This is assumed to be identical across all shards in the cluster. Each connecting shard updates this information.  <a href="classdpp_1_1cluster.html#ad31317a40181f6864646c8758871b495">More...</a><br /></td></tr>
 <tr class="separator:ad31317a40181f6864646c8758871b495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fae28f81712be86530fe3314d166ad3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1cache__policy__t.html">cache_policy_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a9fae28f81712be86530fe3314d166ad3">cache_policy</a></td></tr>
+<tr class="memdesc:a9fae28f81712be86530fe3314d166ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current cache policy for the cluster.  <a href="classdpp_1_1cluster.html#a9fae28f81712be86530fe3314d166ad3">More...</a><br /></td></tr>
 <tr class="separator:a9fae28f81712be86530fe3314d166ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10466db79966215a799fc2a30010551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55">websocket_protocol_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551">ws_mode</a></td></tr>
+<tr class="memdesc:ae10466db79966215a799fc2a30010551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Websocket mode for all shards in the cluster, either ws_json or ws_etf. Production bots should use ETF, while development bots should use JSON.  <a href="classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551">More...</a><br /></td></tr>
+<tr class="separator:ae10466db79966215a799fc2a30010551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The cluster class represents a group of shards and a command queue for sending and receiving commands from discord via HTTP. You should usually instantiate a cluster object at the very least to make use of the library. </p>
@@ -927,7 +969,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Destructor </p>
+
+<p>Destroy the cluster object. </p>
 
 </div>
 </div>
@@ -959,6 +1002,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a channel. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to create </td></tr>
@@ -996,6 +1040,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a channel. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel id to delete </td></tr>
@@ -1039,6 +1084,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove a permission from a channel. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to remove permission from </td></tr>
@@ -1077,6 +1123,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a channel. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to edit/update </td></tr>
@@ -1179,6 +1226,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a channel's position. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to change the position for </td></tr>
@@ -1303,6 +1351,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create invite for a channel. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to create an invite on </td></tr>
@@ -1422,6 +1471,29 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="af1e3f0868ece15373e81844dff719aa0" name="af1e3f0868ece15373e81844dff719aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e3f0868ece15373e81844dff719aa0">&#9670;&nbsp;</a></span>clear_audit_reason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp; dpp::cluster::clear_audit_reason </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the audit log reason for the next REST call to be made. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically. </p>
+<p >Example: </p><div class="fragment"><div class="line">bot.set_audit_reason(<span class="stringliteral">&quot;Won&#39;t be sent&quot;</span>)</div>
+<div class="line">   .clear_audit_reason()</div>
+<div class="line">   .channel_delete(my_channel_id);</div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>cluster&amp; Reference to self for chaining. </dd></dl>
 
 </div>
 </div>
@@ -2223,6 +2295,27 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab7a2958625740b4a6fde6643042c5f7e" name="ab7a2958625740b4a6fde6643042c5f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a2958625740b4a6fde6643042c5f7e">&#9670;&nbsp;</a></span>get_audit_reason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::cluster::get_audit_reason </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the audit reason set for the next REST call to be made on this thread. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically. </p>
+<dl class="section note"><dt>Note</dt><dd>This method call clears the audit reason when it returns it.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The audit reason to be used. </dd></dl>
+
+</div>
+</div>
 <a id="ae58b1f27711b42e9aa8a21e34147429f" name="ae58b1f27711b42e9aa8a21e34147429f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae58b1f27711b42e9aa8a21e34147429f">&#9670;&nbsp;</a></span>get_channel_webhooks()</h2>
 
@@ -2973,16 +3066,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">   @brief Add guild member. Needs a specific oauth2 scope, from which you get the access_token.
 
-<p>Add guild member. Needs a specific oauth2 scope, from which you get the access_token. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gm</td><td>Guild member to add </td></tr>
-    <tr><td class="paramname">access_token</td><td>Access token from Oauth2 scope </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
-  </table>
-  </dd>
-</dl>
+   @param gm Guild member to add
+   @param access_token Access token from Oauth2 scope
+   @param callback Function to call when the API call completes.
+</pre><p> x <br  />
+ </p>
 
 </div>
 </div>
@@ -3068,6 +3158,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add guild ban. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to add ban to </td></tr>
@@ -3114,6 +3205,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete guild ban. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to delete ban from </td></tr>
@@ -3158,6 +3250,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begin guild prune. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to prune </td></tr>
@@ -3577,6 +3670,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete guild integration. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to delete integration for </td></tr>
@@ -3615,6 +3709,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a guild. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>Guild to edit </td></tr>
@@ -3652,6 +3747,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit the properties of an existing guild member. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gm</td><td>Guild member to edit </td></tr>
@@ -3739,6 +3835,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create single emoji. You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to create emoji om </td></tr>
@@ -3783,6 +3880,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a guild emoji. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to delete emoji on </td></tr>
@@ -3827,6 +3925,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a single emoji. You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to edit emoji on </td></tr>
@@ -4118,8 +4217,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab0598354c7302d1243bea4148365927d" name="ab0598354c7302d1243bea4148365927d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0598354c7302d1243bea4148365927d">&#9670;&nbsp;</a></span>guild_get_members()</h2>
+<a id="a6b24baba4de9d38f7d9a7cea2f71a545" name="a6b24baba4de9d38f7d9a7cea2f71a545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b24baba4de9d38f7d9a7cea2f71a545">&#9670;&nbsp;</a></span>guild_get_members()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4129,6 +4228,18 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
           <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>after</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4148,6 +4259,8 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get all members for </td></tr>
+    <tr><td class="paramname">limit</td><td>max number of members to return (1-1000) </td></tr>
+    <tr><td class="paramname">after</td><td>the highest user id in the previous page </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
   </table>
   </dd>
@@ -4386,6 +4499,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add role to guild member. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to add a role to </td></tr>
@@ -4431,6 +4545,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove (kick) a guild member. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to kick member from </td></tr>
@@ -4481,6 +4596,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove role from guild member. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to remove role from user on </td></tr>
@@ -4577,10 +4693,62 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modify guild integration. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to modify integration for </td></tr>
     <tr><td class="paramname">i</td><td>Integration to modify </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a52cc92ce052d063854e0372539e4d9ee" name="a52cc92ce052d063854e0372539e4d9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52cc92ce052d063854e0372539e4d9ee">&#9670;&nbsp;</a></span>guild_search_members()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_search_members </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search for guild members based on whether their username or nickname starts with the given string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild ID to search in </td></tr>
+    <tr><td class="paramname">query</td><td>Query string to match username(s) and nickname(s) against </td></tr>
+    <tr><td class="paramname">limit</td><td>max number of members to return (1-1000) </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. </td></tr>
   </table>
   </dd>
@@ -4621,6 +4789,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Change current user nickname. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to change nickanem on </td></tr>
@@ -4659,6 +4828,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a sticker in a guild. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Sticker to create. Must have its guild ID set. </td></tr>
@@ -4702,6 +4872,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a sticker from a guild. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sticker_id</td><td>sticker ID to delete </td></tr>
@@ -4784,6 +4955,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modify a sticker in a guild. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Sticker to modify. Must have its guild ID and sticker ID set. </td></tr>
@@ -5524,6 +5696,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a message from a channel. The callback function is called when the message has been edited. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message ID to delete </td></tr>
@@ -5649,6 +5822,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Bulk delete messages from a channel. The callback function is called when the message has been edited. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_ids</td><td>List of message IDs to delete (maximum of 100 message IDs) </td></tr>
@@ -6210,6 +6384,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pin a message. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel id to pin message on </td></tr>
@@ -6254,6 +6429,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unpin a message. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel id to unpin message on </td></tr>
@@ -7537,6 +7713,32 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a48905d60b7f52386e061fdd850bf29e8" name="a48905d60b7f52386e061fdd850bf29e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48905d60b7f52386e061fdd850bf29e8">&#9670;&nbsp;</a></span>on_stage_instance_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_stage_instance_update </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1stage__instance__update__t.html">stage_instance_update_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_stage_instance_update</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a stage instance is updated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_stage_instance_update</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a090c58e8249813c550077c0fd569dbf1" name="a090c58e8249813c550077c0fd569dbf1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a090c58e8249813c550077c0fd569dbf1">&#9670;&nbsp;</a></span>on_thread_create()</h2>
 
@@ -7771,6 +7973,58 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad23fb971337e9ebf046d67e1c70d2ee2" name="ad23fb971337e9ebf046d67e1c70d2ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23fb971337e9ebf046d67e1c70d2ee2">&#9670;&nbsp;</a></span>on_voice_client_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_voice_client_disconnect </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1voice__client__disconnect__t.html">voice_client_disconnect_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_voice_client_disconnect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>on voice client disconnect event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_voice_client_disconnect</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1a6c34e0d882135ea2f362e76f1d1a6" name="af1a6c34e0d882135ea2f362e76f1d1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a6c34e0d882135ea2f362e76f1d1a6">&#9670;&nbsp;</a></span>on_voice_client_speaking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::on_voice_client_speaking </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="structdpp_1_1voice__client__speaking__t.html">voice_client_speaking_t</a> &amp;_event)&gt;&#160;</td>
+          <td class="paramname"><em>_voice_client_speaking</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>on voice client speaking event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_voice_client_speaking</td><td>User function to attach to event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac9795329c70bca7027829a94a6d25c47" name="ac9795329c70bca7027829a94a6d25c47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9795329c70bca7027829a94a6d25c47">&#9670;&nbsp;</a></span>on_voice_ready()</h2>
 
@@ -7813,8 +8067,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called when new audio data is received. </p>
-<dl class="section note"><dt>Note</dt><dd>Receiveing audio for bots is not supported or documented, so this endpoint will be triggered at the correct times but the audio buffer will always be null and size zero.</dd></dl>
+<p>Called when new audio data is received. Each separate user's audio from the voice channel will arrive tagged with their user id in the event, if a user can be attributed to the received audio. </p>
+<dl class="section note"><dt>Note</dt><dd>Receiveing audio for bots is not officially supported by discord.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_voice_receive</td><td>User function to attach to event </td></tr>
@@ -8070,6 +8324,71 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a156fe68358c421111e690f553c4e4f52" name="a156fe68358c421111e690f553c4e4f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156fe68358c421111e690f553c4e4f52">&#9670;&nbsp;</a></span>request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::request </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a>&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#ae3249e99494d04bb4be50341f474621e">http_completion_event</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>postdata</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>mimetype</em> = <code>&quot;text/plain&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::multimap&lt; std::string, std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>headers</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make a HTTP(S) request. For use when wanting asnyncronous access to HTTP APIs outside of Discord. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>Endpoint to post to, e.g. /api/guilds </td></tr>
+    <tr><td class="paramname">method</td><td>Method, e.g. GET, POST </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the HTTP call completes. No processing is done on the returned data. </td></tr>
+    <tr><td class="paramname">postdata</td><td>POST data </td></tr>
+    <tr><td class="paramname">mimetype</td><td>MIME type of POST data </td></tr>
+    <tr><td class="paramname">headers</td><td>Headers to send with the request </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab912eb28e9bb4df46954c7a9b93b283d" name="ab912eb28e9bb4df46954c7a9b93b283d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab912eb28e9bb4df46954c7a9b93b283d">&#9670;&nbsp;</a></span>role_create()</h2>
 
@@ -8097,6 +8416,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a role on a guild. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>Role to create (guild ID is encapsulated in the role object) </td></tr>
@@ -8140,6 +8460,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a role. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to delete the role on </td></tr>
@@ -8178,6 +8499,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a role on a guild. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>Role to edit </td></tr>
@@ -8215,6 +8537,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a role's position in a guild. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>Role to change position of </td></tr>
@@ -8259,6 +8582,35 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="adbcc02c388c197cf7050551ef89aeefe" name="adbcc02c388c197cf7050551ef89aeefe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbcc02c388c197cf7050551ef89aeefe">&#9670;&nbsp;</a></span>set_audit_reason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp; dpp::cluster::set_audit_reason </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>reason</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the audit log reason for the next REST call to be made. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically. </p>
+<p >Example: </p><div class="fragment"><div class="line">bot.set_audit_reason(<span class="stringliteral">&quot;Too much abusive content&quot;</span>)</div>
+<div class="line">   .channel_delete(my_channel_id);</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reason</td><td>The reason to set for the next REST call on this thread </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>cluster&amp; Reference to self for chaining. </dd></dl>
 
 </div>
 </div>
@@ -8322,6 +8674,187 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a056e4191c03dd210c2a410b6599a0bf9" name="a056e4191c03dd210c2a410b6599a0bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056e4191c03dd210c2a410b6599a0bf9">&#9670;&nbsp;</a></span>set_websocket_protocol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp; dpp::cluster::set_websocket_protocol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55">websocket_protocol_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the websocket protocol for all shards on this cluster. You should call this method before <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards. Returns once all shards are connected.">cluster::start</a>. Generally ws_etf is faster, but provides less facilities for debugging should something go wrong. It is recommended to use ETF in production and JSON in development. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>websocket protocol to use, either ws_json or ws_etf. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>cluster&amp; Reference to self for chaining. </dd></dl>
+
+</div>
+</div>
+<a id="a5fe69055dc2ee16d08e693df11fec75a" name="a5fe69055dc2ee16d08e693df11fec75a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe69055dc2ee16d08e693df11fec75a">&#9670;&nbsp;</a></span>stage_instance_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::stage_instance_create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a stage instance on a stage channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>ID of the associated channel </td></tr>
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Callback contains a <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a> object upon success. On failure, the value contained is undefined and is_error() returns true. </dd>
+<dd>
+This supports X-Audit-Log-Reason header. </dd></dl>
+
+</div>
+</div>
+<a id="a9f8c2ba02d51ad166f90300ab5b53ecb" name="a9f8c2ba02d51ad166f90300ab5b53ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8c2ba02d51ad166f90300ab5b53ecb">&#9670;&nbsp;</a></span>stage_instance_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::stage_instance_delete </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete a stage instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>ID of the associated channel </td></tr>
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This supports X-Audit-Log-Reason header. </dd></dl>
+
+</div>
+</div>
+<a id="af4e1b1edb3094c7d220a3a80323bbe17" name="af4e1b1edb3094c7d220a3a80323bbe17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e1b1edb3094c7d220a3a80323bbe17">&#9670;&nbsp;</a></span>stage_instance_edit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::stage_instance_edit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Edit a stage instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>ID of the associated channel </td></tr>
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This supports X-Audit-Log-Reason header. </dd></dl>
+
+</div>
+</div>
+<a id="a1edd6ac5d8553b4823465bebadfaa9af" name="a1edd6ac5d8553b4823465bebadfaa9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1edd6ac5d8553b4823465bebadfaa9af">&#9670;&nbsp;</a></span>stage_instance_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::stage_instance_get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the stage instance associated with the channel id, if it exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel_id</td><td>ID of the associated channel </td></tr>
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Callback contains a <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a> object upon success. On failure, the value contained is undefined and is_error() returns true. </dd></dl>
 
 </div>
 </div>
@@ -8459,6 +8992,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a thread. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
@@ -8517,6 +9051,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a thread with a message (Discord: ID of a thread is same as message ID) </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
@@ -8688,6 +9223,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Current cache policy for the cluster. </p>
+
 </div>
 </div>
 <a id="a5155862c1d7267c7f4ee8781ff3e8d7f" name="a5155862c1d7267c7f4ee8781ff3e8d7f"></a>
@@ -8822,6 +9359,22 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Current bot token for all shards on this cluster and all commands sent via HTTP </p>
+
+</div>
+</div>
+<a id="ae10466db79966215a799fc2a30010551" name="ae10466db79966215a799fc2a30010551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10466db79966215a799fc2a30010551">&#9670;&nbsp;</a></span>ws_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55">websocket_protocol_t</a> dpp::cluster::ws_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Websocket mode for all shards in the cluster, either ws_json or ws_etf. Production bots should use ETF, while development bots should use JSON. </p>
 
 </div>
 </div>

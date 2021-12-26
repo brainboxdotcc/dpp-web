@@ -7,7 +7,7 @@
     </briefdescription>
     <detaileddescription>
 <para>If you have many commands in your bot, and want to handle commands from multiple sources (for example modern slash commands, and more regular prefixed channel messages) you should consider instantiating a <ref refid="classdpp_1_1commandhandler" kindref="compound">dpp::commandhandler</ref> object. This object can be used to automatically route commands and their parameters to functions in your program. A simple example of using this object to route commands is shown below, and will route both the /ping (global slash command) and .ping (prefixed channel message command) to a lambda where a reply can be generated.</para>
-<para><simplesect kind="note"><para>This example automatically hooks the dpp::cluster::on_message and <ref refid="classdpp_1_1cluster_1ab17aa65a6835eca5a95036d6bf6f736c" kindref="member">dpp::cluster::on_interaction_create</ref> events. This can be overridden if needed to allow you to still make use of these functions for your own code, if you need to do this please see the constructor documentation for <ref refid="classdpp_1_1commandhandler" kindref="compound">dpp::commandhandler</ref>.</para>
+<para><simplesect kind="note"><para>This example automatically hooks the <ref refid="classdpp_1_1cluster_1a29140a7c0e1250fe2016dbe4ced56f95" kindref="member">dpp::cluster::on_message_create</ref> and <ref refid="classdpp_1_1cluster_1ab17aa65a6835eca5a95036d6bf6f736c" kindref="member">dpp::cluster::on_interaction_create</ref> events. This can be overridden if needed to allow you to still make use of these functions for your own code, if you need to do this please see the constructor documentation for <ref refid="classdpp_1_1commandhandler" kindref="compound">dpp::commandhandler</ref>.</para>
 </simplesect>
 Note that because the <ref refid="classdpp_1_1commandhandler_1a791ed0c75ef77306af84be30ded619f8" kindref="member">dpp::commandhandler::add_command</ref> method accepts a std::function as the command handler, you may point a command handler at a simple lambda (as shown in this example), a function pointer, or an instantiated class method of an object. This is extremely flexible and allows you to decide how and where commands should be routed, either to an object oriented system or to a lambda based system.</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -47,6 +47,12 @@ Note that because the <ref refid="classdpp_1_1commandhandler_1a791ed0c75ef77306a
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Guild<sp/>id<sp/>(omit<sp/>for<sp/>a<sp/>global<sp/>command)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>819556414099554344</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>NOTE:<sp/>We<sp/>must<sp/>call<sp/>this<sp/>to<sp/>ensure<sp/>slash<sp/>commands<sp/>are<sp/>registered.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>does<sp/>a<sp/>bulk<sp/>register,<sp/>which<sp/>will<sp/>replace<sp/>other<sp/>commands</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>that<sp/>are<sp/>registered<sp/>already!</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedpp_1a72a8ab3231965d0e361f305a7fe431f3" kindref="member">command_handler</ref>.register_commands();</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>

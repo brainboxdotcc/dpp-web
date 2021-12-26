@@ -153,6 +153,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ban class represents a ban on a guild.  <a href="classdpp_1_1ban.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1bucket__t.html">bucket_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A rate limit bucket. The library builds one of these for each endpoint.  <a href="structdpp_1_1bucket__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1button__click__t.html">button_click_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on button.  <a href="structdpp_1_1button__click__t.html#details">More...</a><br /></td></tr>
@@ -194,13 +195,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each command option is a command line parameter. It can have a type (see <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58" title="Represents command option types. These are the possible parameter value types.">dpp::command_option_type</a>), a name, a description, can be required or optional, and can have zero or more choices (for multiple choice), plus options. Adding options acts like sub-commands and can contain more options.  <a href="structdpp_1_1command__option.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__option__choice.html">command_option_choice</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct represents choices in a multiple choice option for a command parameter. It has both a string name, and a value parameter which is a variant, meaning it can hold different potential types (see <a class="el" href="namespacedpp.html#a210a8688d51d3b313d3959c6dd91c40b" title="This type is a variant that can hold any of the potential native data types represented by the enum a...">dpp::command_value</a>) that you can retrieve with std::get().  <a href="structdpp_1_1command__option__choice.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct represents choices in a multiple choice option for a command parameter. It has both a string name, and a value parameter which is a variant, meaning it can hold different potential types (see <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6" title="This type is a variant that can hold any of the potential native data types represented by the enum a...">dpp::command_value</a>) that you can retrieve with std::get().  <a href="structdpp_1_1command__option__choice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1command__permission.html">command_permission</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application command permissions allow you to enable or disable commands for specific users or roles within a guild.  <a href="classdpp_1_1command__permission.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__resolved.html">command_resolved</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved snowflake ids to usernames. TODO: Needs implementation. Not needed something that functions as we have cache.  <a href="structdpp_1_1command__resolved.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved snowflake ids to users, guild members, roles and channels.  <a href="structdpp_1_1command__resolved.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__source.html">command_source</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the sending source of a command. This is passed to any command handler and should be passed back to <a class="el" href="classdpp_1_1commandhandler.html#a09893dbf101b7d0082b0a13e801a9db9" title="Reply to a command. You should use this method rather than cluster::message_create as the way you rep...">commandhandler::reply()</a>, allowing the reply method to route any replies back to the origin, which may be a slash command or a message. Both require different response facilities but we want this to be transparent if you use the command handler class.  <a href="structdpp_1_1command__source.html#details">More...</a><br /></td></tr>
@@ -259,8 +260,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1error__info.html">error_info</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full details of an error from a REST response.  <a href="structdpp_1_1error__info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1etf__buffer.html">etf_buffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a buffer of bytes being encoded into ETF.  <a href="structdpp_1_1etf__buffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1etf__parser.html">etf_parser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1etf__parser.html" title="The etf_parser class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohma...">etf_parser</a> class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohmann::json object, so that layers above the websocket don't have to be any different for handling ETF.  <a href="classdpp_1_1etf__parser.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base event parameter struct.  <a href="structdpp_1_1event__dispatch__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1exception.html">exception</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a> class derives from std::exception and supports some other ways of passing in error details such as via std::string.  <a href="classdpp_1_1exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1gateway.html">gateway</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various information from the 'get gateway bot' api call.  <a href="structdpp_1_1gateway.html#details">More...</a><br /></td></tr>
@@ -315,6 +325,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1guild__role__update__t.html">guild_role_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guild role update.  <a href="structdpp_1_1guild__role__update__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1guild__stickers__update__t.html">guild_stickers_update_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update guild stickers.  <a href="structdpp_1_1guild__stickers__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1guild__update__t.html">guild_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guild update.  <a href="structdpp_1_1guild__update__t.html#details">More...</a><br /></td></tr>
@@ -393,6 +406,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__update__t.html">message_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message update.  <a href="structdpp_1_1message__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1opensslcontext.html">opensslcontext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1param__info.html">param_info</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Details of a command parameter used in registration. Note that for non-slash commands optional parameters can only be at the end of the list of parameters.  <a href="structdpp_1_1param__info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,6 +432,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> class manages rate limits and marshalls HTTP requests that have been built as <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> objects.  <a href="classdpp_1_1request__queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resolved__user.html">resolved_user</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdpp_1_1resolved__user.html" title="dpp::resolved_user contains both a dpp::guild_member and a dpp::user. The user can be used to obtain ...">dpp::resolved_user</a> contains both a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild.">dpp::guild_member</a> and a <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a>. The user can be used to obtain in-depth user details such as if they are nitro, and the guild member information to check their roles on a guild etc. The Discord API provides both if a parameter is a user ping, so we offer both in a combined structure.  <a href="structdpp_1_1resolved__user.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1resumed__t.html">resumed_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session resumed.  <a href="structdpp_1_1resumed__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,19 +455,27 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html">ssl_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a simple non-blocking SSL stream client.  <a href="classdpp_1_1ssl__client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1stage__instance__create__t.html">stage_instance_create_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create stage instance.  <a href="structdpp_1_1stage__instance__create__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1stage__instance__delete__t.html">stage_instance_delete_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete stage instance.  <a href="structdpp_1_1stage__instance__delete__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1stage__instance__update__t.html">stage_instance_update_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update stage instance.  <a href="structdpp_1_1stage__instance__update__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1sticker.html">sticker</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents stickers received in messages.  <a href="structdpp_1_1sticker.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1sticker__pack.html">sticker_pack</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__create__t.html">thread_create_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread Create.  <a href="structdpp_1_1thread__create__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__delete__t.html">thread_delete_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread Delete.  <a href="structdpp_1_1thread__delete__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__list__sync__t.html">thread_list_sync_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread List Sync.  <a href="structdpp_1_1thread__list__sync__t.html#details">More...</a><br /></td></tr>
@@ -469,6 +495,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1thread__update__t.html">thread_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread Update.  <a href="structdpp_1_1thread__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uniondpp_1_1type__punner.html">type_punner</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A horrible structure used within the ETF parser to convert uint64_t to double and back. This is horrible, but it is the official way erlang term format does this, so we can't really mess with it much.  <a href="uniondpp_1_1type__punner.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1typing__start__t.html">typing_start_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typing start.  <a href="structdpp_1_1typing__start__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,6 +508,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__buffer__send__t.html">voice_buffer_send_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">voice buffer send  <a href="structdpp_1_1voice__buffer__send__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__client__disconnect__t.html">voice_client_disconnect_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">voice client disconnect event  <a href="structdpp_1_1voice__client__disconnect__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__client__speaking__t.html">voice_client_speaking_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">voice client speaking event  <a href="structdpp_1_1voice__client__speaking__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__out__packet.html">voice_out_packet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__ready__t.html">voice_ready_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">voice user talking  <a href="structdpp_1_1voice__ready__t.html#details">More...</a><br /></td></tr>
@@ -516,6 +553,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1websocket__client.html">websocket_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a websocket client based on the SSL client.  <a href="classdpp_1_1websocket__client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1zlibcontext.html">zlibcontext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -535,23 +574,23 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a13c4d4e6238396245b349e6a637897e0"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint32_t, class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a13c4d4e6238396245b349e6a637897e0">shard_list</a></td></tr>
 <tr class="memdesc:a13c4d4e6238396245b349e6a637897e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of shards.  <a href="namespacedpp.html#a13c4d4e6238396245b349e6a637897e0">More...</a><br /></td></tr>
 <tr class="separator:a13c4d4e6238396245b349e6a637897e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb0d4cc5d0aee16141704924dfa197a"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; <a class="el" href="structdpp_1_1confirmation.html">confirmation</a>, <a class="el" href="structdpp_1_1message.html">message</a>, <a class="el" href="namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708">message_map</a>, <a class="el" href="classdpp_1_1user.html">user</a>, <a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a>, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a>, <a class="el" href="namespacedpp.html#a219aedbe5bf37835c4a65115fccba278">guild_member_map</a>, <a class="el" href="classdpp_1_1channel.html">channel</a>, <a class="el" href="namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30">channel_map</a>, <a class="el" href="namespacedpp.html#a57e84724c41fed341bee0d653a06076a">thread_member_map</a>, <a class="el" href="classdpp_1_1guild.html">guild</a>, <a class="el" href="namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7">guild_map</a>, <a class="el" href="classdpp_1_1role.html">role</a>, <a class="el" href="namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b">role_map</a>, <a class="el" href="classdpp_1_1invite.html">invite</a>, <a class="el" href="namespacedpp.html#aa85b043fd45cf24caa23ab6004a2415a">invite_map</a>, <a class="el" href="classdpp_1_1dtemplate.html">dtemplate</a>, <a class="el" href="namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6">dtemplate_map</a>, <a class="el" href="classdpp_1_1emoji.html">emoji</a>, <a class="el" href="namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9">emoji_map</a>, <a class="el" href="classdpp_1_1ban.html">ban</a>, <a class="el" href="namespacedpp.html#a52b195380df96e9c43f35fa2da82db14">ban_map</a>, <a class="el" href="classdpp_1_1voiceregion.html">voiceregion</a>, <a class="el" href="namespacedpp.html#ae90871830444cab0316109a1824fc0b8">voiceregion_map</a>, <a class="el" href="classdpp_1_1integration.html">integration</a>, <a class="el" href="namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a">integration_map</a>, <a class="el" href="classdpp_1_1webhook.html">webhook</a>, <a class="el" href="namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca">webhook_map</a>, <a class="el" href="structdpp_1_1prune.html">prune</a>, <a class="el" href="classdpp_1_1guild__widget.html">guild_widget</a>, <a class="el" href="structdpp_1_1gateway.html">gateway</a>, <a class="el" href="classdpp_1_1interaction.html">interaction</a>, <a class="el" href="structdpp_1_1interaction__response.html">interaction_response</a>, <a class="el" href="classdpp_1_1auditlog.html">auditlog</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a>, <a class="el" href="namespacedpp.html#acb9a69e08af58173ea9644999290416d">slashcommand_map</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a3fb0d4cc5d0aee16141704924dfa197a">confirmable_t</a></td></tr>
-<tr class="memdesc:a3fb0d4cc5d0aee16141704924dfa197a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for types that can be returned for a REST API call.  <a href="namespacedpp.html#a3fb0d4cc5d0aee16141704924dfa197a">More...</a><br /></td></tr>
-<tr class="separator:a3fb0d4cc5d0aee16141704924dfa197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acce615d2721b50de907ef1d2cfa1490b"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">command_completion_event_t</a></td></tr>
-<tr class="memdesc:acce615d2721b50de907ef1d2cfa1490b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback upon command completion.  <a href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">More...</a><br /></td></tr>
-<tr class="separator:acce615d2721b50de907ef1d2cfa1490b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927bdab169583369b18fe3335dacbea3"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; <a class="el" href="structdpp_1_1confirmation.html">confirmation</a>, <a class="el" href="structdpp_1_1message.html">message</a>, <a class="el" href="namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708">message_map</a>, <a class="el" href="classdpp_1_1user.html">user</a>, <a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a>, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a>, <a class="el" href="namespacedpp.html#a219aedbe5bf37835c4a65115fccba278">guild_member_map</a>, <a class="el" href="classdpp_1_1channel.html">channel</a>, <a class="el" href="namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30">channel_map</a>, <a class="el" href="namespacedpp.html#a57e84724c41fed341bee0d653a06076a">thread_member_map</a>, <a class="el" href="classdpp_1_1guild.html">guild</a>, <a class="el" href="namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7">guild_map</a>, <a class="el" href="classdpp_1_1role.html">role</a>, <a class="el" href="namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b">role_map</a>, <a class="el" href="classdpp_1_1invite.html">invite</a>, <a class="el" href="namespacedpp.html#aa85b043fd45cf24caa23ab6004a2415a">invite_map</a>, <a class="el" href="classdpp_1_1dtemplate.html">dtemplate</a>, <a class="el" href="namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6">dtemplate_map</a>, <a class="el" href="classdpp_1_1emoji.html">emoji</a>, <a class="el" href="namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9">emoji_map</a>, <a class="el" href="classdpp_1_1ban.html">ban</a>, <a class="el" href="namespacedpp.html#a52b195380df96e9c43f35fa2da82db14">ban_map</a>, <a class="el" href="classdpp_1_1voiceregion.html">voiceregion</a>, <a class="el" href="namespacedpp.html#ae90871830444cab0316109a1824fc0b8">voiceregion_map</a>, <a class="el" href="classdpp_1_1integration.html">integration</a>, <a class="el" href="namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a">integration_map</a>, <a class="el" href="classdpp_1_1webhook.html">webhook</a>, <a class="el" href="namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca">webhook_map</a>, <a class="el" href="structdpp_1_1prune.html">prune</a>, <a class="el" href="classdpp_1_1guild__widget.html">guild_widget</a>, <a class="el" href="structdpp_1_1gateway.html">gateway</a>, <a class="el" href="classdpp_1_1interaction.html">interaction</a>, <a class="el" href="structdpp_1_1interaction__response.html">interaction_response</a>, <a class="el" href="classdpp_1_1auditlog.html">auditlog</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a>, <a class="el" href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">slashcommand_map</a>, <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a>, <a class="el" href="structdpp_1_1sticker.html">sticker</a>, <a class="el" href="namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f">sticker_map</a>, <a class="el" href="structdpp_1_1sticker__pack.html">sticker_pack</a>, <a class="el" href="namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283">sticker_pack_map</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a927bdab169583369b18fe3335dacbea3">confirmable_t</a></td></tr>
+<tr class="memdesc:a927bdab169583369b18fe3335dacbea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for types that can be returned for a REST API call.  <a href="namespacedpp.html#a927bdab169583369b18fe3335dacbea3">More...</a><br /></td></tr>
+<tr class="separator:a927bdab169583369b18fe3335dacbea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022dce6b086ec4515384eaece59c84c3"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a></td></tr>
+<tr class="memdesc:a022dce6b086ec4515384eaece59c84c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback upon command completion.  <a href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">More...</a><br /></td></tr>
+<tr class="separator:a022dce6b086ec4515384eaece59c84c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc7fb6792b12d92c4e77b46d20924ee"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(<a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> &amp;, const <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a></td></tr>
 <tr class="memdesc:aafc7fb6792b12d92c4e77b46d20924ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically JSON encoded HTTP result.  <a href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">More...</a><br /></td></tr>
 <tr class="separator:aafc7fb6792b12d92c4e77b46d20924ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8e7d04227af92295494367dcec6a4d"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; std::string, <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <a class="el" href="classdpp_1_1user.html">dpp::user</a>, int32_t, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#abb8e7d04227af92295494367dcec6a4d">command_parameter</a></td></tr>
-<tr class="memdesc:abb8e7d04227af92295494367dcec6a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a received parameter. We use variant so that multiple non-related types can be contained within.  <a href="namespacedpp.html#abb8e7d04227af92295494367dcec6a4d">More...</a><br /></td></tr>
-<tr class="separator:abb8e7d04227af92295494367dcec6a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda63f2562bc6f52b50b793b70341abd"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; std::monostate, std::string, <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <a class="el" href="structdpp_1_1resolved__user.html">dpp::resolved_user</a>, int64_t, bool, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">command_parameter</a></td></tr>
+<tr class="memdesc:aeda63f2562bc6f52b50b793b70341abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a received parameter. We use variant so that multiple non-related types can be contained within.  <a href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">More...</a><br /></td></tr>
+<tr class="separator:aeda63f2562bc6f52b50b793b70341abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6daf230da747f01eeaa36fd3d5e51a65"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair&lt; std::string, <a class="el" href="structdpp_1_1param__info.html">param_info</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65">parameter_registration_t</a></td></tr>
 <tr class="memdesc:a6daf230da747f01eeaa36fd3d5e51a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter list used during registration. Note that use of vector/pair is important here to preserve parameter order, as opposed to unordered_map (which doesnt guarantee any order at all) and std::map, which reorders keys alphabetically.  <a href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65">More...</a><br /></td></tr>
 <tr class="separator:a6daf230da747f01eeaa36fd3d5e51a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632b6ae7b47a5feb95104644a487e4f1"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair&lt; std::string, <a class="el" href="namespacedpp.html#abb8e7d04227af92295494367dcec6a4d">command_parameter</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a></td></tr>
-<tr class="memdesc:a632b6ae7b47a5feb95104644a487e4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter list for a called command. See <a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65" title="Parameter list used during registration. Note that use of vector/pair is important here to preserve p...">dpp::parameter_registration_t</a> for an explaination as to why vector is used.  <a href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">More...</a><br /></td></tr>
+<tr class="memitem:a632b6ae7b47a5feb95104644a487e4f1"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair&lt; std::string, <a class="el" href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">command_parameter</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a></td></tr>
+<tr class="memdesc:a632b6ae7b47a5feb95104644a487e4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter list for a called command. See <a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65" title="Parameter list used during registration. Note that use of vector/pair is important here to preserve p...">dpp::parameter_registration_t</a> for an explanation as to why vector is used.  <a href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">More...</a><br /></td></tr>
 <tr class="separator:a632b6ae7b47a5feb95104644a487e4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a8ab3231965d0e361f305a7fe431f3"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const std::string &amp;, const <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a> &amp;, <a class="el" href="structdpp_1_1command__source.html">command_source</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">command_handler</a></td></tr>
 <tr class="memdesc:a72a8ab3231965d0e361f305a7fe431f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function definition for a command handler. Expects a command name string, and a list of command parameters.  <a href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">More...</a><br /></td></tr>
@@ -577,6 +616,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:aa85b043fd45cf24caa23ab6004a2415a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44d4dd39b5d7c24c5fe97a76a73cf708"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="structdpp_1_1message.html">message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708">message_map</a></td></tr>
 <tr class="separator:a44d4dd39b5d7c24c5fe97a76a73cf708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d09f413c01571a98b8ec9a267a0e48f"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="structdpp_1_1sticker.html">sticker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f">sticker_map</a></td></tr>
+<tr class="separator:a0d09f413c01571a98b8ec9a267a0e48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1d24fba1d0f9fbdbe054d31efe5283"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="structdpp_1_1sticker__pack.html">sticker_pack</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283">sticker_pack_map</a></td></tr>
+<tr class="separator:adc1d24fba1d0f9fbdbe054d31efe5283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a037f40c104056183a26a4b4dbdf76f4f"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; std::string, <a class="el" href="classdpp_1_1presence.html">presence</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f">presence_map</a></td></tr>
 <tr class="separator:a037f40c104056183a26a4b4dbdf76f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3249e99494d04bb4be50341f474621e"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae3249e99494d04bb4be50341f474621e">http_completion_event</a></td></tr>
@@ -584,12 +627,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:ae3249e99494d04bb4be50341f474621e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb1c0770936ed4ac64158cf9523e638b"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1role.html">role</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b">role_map</a></td></tr>
 <tr class="separator:adb1c0770936ed4ac64158cf9523e638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a210a8688d51d3b313d3959c6dd91c40b"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; std::string, int32_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a210a8688d51d3b313d3959c6dd91c40b">command_value</a></td></tr>
-<tr class="memdesc:a210a8688d51d3b313d3959c6dd91c40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is a variant that can hold any of the potential native data types represented by the enum above. It is used in interactions.  <a href="namespacedpp.html#a210a8688d51d3b313d3959c6dd91c40b">More...</a><br /></td></tr>
-<tr class="separator:a210a8688d51d3b313d3959c6dd91c40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb9a69e08af58173ea9644999290416d"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; std::string, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acb9a69e08af58173ea9644999290416d">slashcommand_map</a></td></tr>
-<tr class="memdesc:acb9a69e08af58173ea9644999290416d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of application slash commands.  <a href="namespacedpp.html#acb9a69e08af58173ea9644999290416d">More...</a><br /></td></tr>
-<tr class="separator:acb9a69e08af58173ea9644999290416d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710b32b577396ba92917d0578f0bedb6"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; std::monostate, std::string, int64_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a></td></tr>
+<tr class="memdesc:a710b32b577396ba92917d0578f0bedb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is a variant that can hold any of the potential native data types represented by the enum above. It is used in interactions.  <a href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">More...</a><br /></td></tr>
+<tr class="separator:a710b32b577396ba92917d0578f0bedb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfefe335636cdf5dbbba145a3828c554"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">slashcommand_map</a></td></tr>
+<tr class="memdesc:adfefe335636cdf5dbbba145a3828c554"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of application slash commands.  <a href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">More...</a><br /></td></tr>
+<tr class="separator:adfefe335636cdf5dbbba145a3828c554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51156024d6211aef2731770340cfe452"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">socket</a></td></tr>
+<tr class="separator:a51156024d6211aef2731770340cfe452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4073c92e19579c06591033a4a234e1"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1user.html">user</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a></td></tr>
 <tr class="separator:a1c4073c92e19579c06591033a4a234e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae90871830444cab0316109a1824fc0b8"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; std::string, <a class="el" href="classdpp_1_1voiceregion.html">voiceregion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae90871830444cab0316109a1824fc0b8">voiceregion_map</a></td></tr>
@@ -700,6 +745,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a65e5825b1a709ece15c7de9dd2b21bdf">pt_user</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270">pt_integer</a>
+, <a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a095d2a7bbe72af8c679d3f02f4395650">pt_double</a>
 , <a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864acdd3703d49822d51598fa8575ce7bbd9">pt_boolean</a>
 <br />
  }</td></tr>
@@ -723,13 +769,51 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a7d48d478ccc3bffb34637bdb48f629c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log levels.  <a href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">More...</a><br /></td></tr>
 <tr class="separator:a7d48d478ccc3bffb34637bdb48f629c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fbd576f42eaeb1c0d425b969de340b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8">emoji_flags</a> { <a class="el" href="namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8ad9baba8ca224a0acb80019fcd3a9a0cb">e_require_colons</a> = 0b00000001
-, <a class="el" href="namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8aa8e9ef37a91a1bbe4012548a0fd3bd82">e_managed</a> = 0b00000010
-, <a class="el" href="namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a9036ca4ebc156999b7efd35de1adb2f5">e_animated</a> = 0b00000100
-, <a class="el" href="namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a5acfa9eb7e214d29511692811b93890d">e_available</a> = 0b00001000
+<tr class="memitem:a79e9b19c1aa69ef048c79d37801b947c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c">emoji_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb">e_require_colons</a> = 0b00000001
+, <a class="el" href="namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947caa8e9ef37a91a1bbe4012548a0fd3bd82">e_managed</a> = 0b00000010
+, <a class="el" href="namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca9036ca4ebc156999b7efd35de1adb2f5">e_animated</a> = 0b00000100
+, <a class="el" href="namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d">e_available</a> = 0b00001000
  }</td></tr>
-<tr class="memdesc:a3fbd576f42eaeb1c0d425b969de340b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for <a class="el" href="classdpp_1_1emoji.html" title="Represents an emoji for a dpp::guild.">dpp::emoji</a>.  <a href="namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8">More...</a><br /></td></tr>
-<tr class="separator:a3fbd576f42eaeb1c0d425b969de340b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a79e9b19c1aa69ef048c79d37801b947c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for <a class="el" href="classdpp_1_1emoji.html" title="Represents an emoji for a dpp::guild.">dpp::emoji</a>.  <a href="namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c">More...</a><br /></td></tr>
+<tr class="separator:a79e9b19c1aa69ef048c79d37801b947c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad775fb0c6c9e6923fb562c95907d26c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2">etf_token_type</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1f73d99cedad0b2bef42243ab11a7fd5">ett_distribution</a> = 'D'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565">ett_new_float</a> = 'F'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6">ett_bit_binary</a> = 'M'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf">ett_compressed</a> = 'P'
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd">ett_smallint</a> = 'a'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948">ett_integer</a> = 'b'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf">ett_float</a> = 'c'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4">ett_atom</a> = 'd'
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5">ett_reference</a> = 'e'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db">ett_port</a> = 'f'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965">ett_pid</a> = 'g'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16">ett_small_tuple</a> = 'h'
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2">ett_large_tuple</a> = 'i'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9">ett_nil</a> = 'j'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381">ett_string</a> = 'k'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad">ett_list</a> = 'l'
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986">ett_binary</a> = 'm'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d">ett_bigint_small</a> = 'n'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557">ett_bigint_large</a> = 'o'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d">ett_new_function</a> = 'p'
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81">ett_export</a> = 'q'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e">ett_new_reference</a> = 'r'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905">ett_atom_small</a> = 's'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39">ett_map</a> = 't'
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147">ett_function</a> = 'u'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed">ett_atom_utf8</a> = 'v'
+, <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c">ett_atom_utf8_small</a> = 'w'
+<br />
+ }</td></tr>
+<tr class="memdesc:ad775fb0c6c9e6923fb562c95907d26c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a token which identifies the type of value which follows it in the ETF binary structure.  <a href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2">More...</a><br /></td></tr>
+<tr class="separator:ad775fb0c6c9e6923fb562c95907d26c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51891a9e382f9c396d378de00fa65099"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099">region</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313">r_brazil</a>
 , <a class="el" href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8">r_central_europe</a>
@@ -753,32 +837,33 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a51891a9e382f9c396d378de00fa65099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents voice regions for guilds and channels.  <a href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099">More...</a><br /></td></tr>
 <tr class="separator:a51891a9e382f9c396d378de00fa65099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94aba4d1f2669c7da3b676859d54602f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602f">guild_flags</a> { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b">g_large</a> = 0b000000000000000000001
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359">g_unavailable</a> = 0b000000000000000000010
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa95bab65c1394b0a2cbd23083a788be5c">g_widget_enabled</a> = 0b000000000000000000100
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa08b2f4c963b17f60801f9a2deb17ccd7">g_invite_splash</a> = 0b000000000000000001000
+&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b">g_large</a> = 0b0000000000000000000001
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359">g_unavailable</a> = 0b0000000000000000000010
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa95bab65c1394b0a2cbd23083a788be5c">g_widget_enabled</a> = 0b0000000000000000000100
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa08b2f4c963b17f60801f9a2deb17ccd7">g_invite_splash</a> = 0b0000000000000000001000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa5b7123fe609093340a16c80264d09172">g_vip_regions</a> = 0b000000000000000010000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf7bd4841ddff627c7aa89d2fb714a0fa">g_vanity_url</a> = 0b000000000000000100000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad0048575cf495f4069fbe6d885da6c25">g_verified</a> = 0b000000000000001000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa2475366e2137c374d70e109a4f558e67">g_partnered</a> = 0b000000000000010000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa5b7123fe609093340a16c80264d09172">g_vip_regions</a> = 0b0000000000000000010000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf7bd4841ddff627c7aa89d2fb714a0fa">g_vanity_url</a> = 0b0000000000000000100000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad0048575cf495f4069fbe6d885da6c25">g_verified</a> = 0b0000000000000001000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa2475366e2137c374d70e109a4f558e67">g_partnered</a> = 0b0000000000000010000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa07826673632e29a3f19ffb92f92de6b2">g_community</a> = 0b000000000000100000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa857663f1db666045ea04595a6168e02f">g_commerce</a> = 0b000000000001000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faeee130a9c893f8b40a40032cb1e103dd">g_news</a> = 0b000000000010000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fabc22c6fe89086b9a5e99134118d675af">g_discoverable</a> = 0b000000000100000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa07826673632e29a3f19ffb92f92de6b2">g_community</a> = 0b0000000000000100000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa857663f1db666045ea04595a6168e02f">g_commerce</a> = 0b0000000000001000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faeee130a9c893f8b40a40032cb1e103dd">g_news</a> = 0b0000000000010000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fabc22c6fe89086b9a5e99134118d675af">g_discoverable</a> = 0b0000000000100000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa1ac4e8b1bf2d97e934def6e656b6853b">g_featureable</a> = 0b000000001000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa41116ed045326dcffe6c89f69b8a16b4">g_animated_icon</a> = 0b000000010000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa2f620e3b0ccaf4c4e55fb83393f77ad6">g_banner</a> = 0b000000100000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa395413623895eaac5998ae8b4dc2031f">g_welcome_screen_enabled</a> = 0b000001000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa1ac4e8b1bf2d97e934def6e656b6853b">g_featureable</a> = 0b0000000001000000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa41116ed045326dcffe6c89f69b8a16b4">g_animated_icon</a> = 0b0000000010000000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa2f620e3b0ccaf4c4e55fb83393f77ad6">g_banner</a> = 0b0000000100000000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa395413623895eaac5998ae8b4dc2031f">g_welcome_screen_enabled</a> = 0b0000001000000000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faa013ed7a6d95dfe09ef48449204ee72d">g_member_verification_gate</a> = 0b000010000000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf3dd4637ed204605d0271d128ada7db8">g_preview_enabled</a> = 0b000100000000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faccb9055123427741b9d4b08c0f0342c8">g_no_join_notifications</a> = 0b001000000000000000000
-, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faeed2962f0767222fb28a046ee64fffaf">g_no_boost_notifications</a> = 0b010000000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faa013ed7a6d95dfe09ef48449204ee72d">g_member_verification_gate</a> = 0b0000010000000000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf3dd4637ed204605d0271d128ada7db8">g_preview_enabled</a> = 0b0000100000000000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faccb9055123427741b9d4b08c0f0342c8">g_no_join_notifications</a> = 0b0001000000000000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faeed2962f0767222fb28a046ee64fffaf">g_no_boost_notifications</a> = 0b0010000000000000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf86b8a8efaa0bd140bcf714d4a59f7c0">g_has_animated_icon</a> = 0b100000000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf86b8a8efaa0bd140bcf714d4a59f7c0">g_has_animated_icon</a> = 0b0100000000000000000000
+, <a class="el" href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa7886733c68622fb94d225d97b0f58d91">g_has_animated_banner</a> = 0b1000000000000000000000
 <br />
  }</td></tr>
 <tr class="memdesc:a94aba4d1f2669c7da3b676859d54602f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The various flags that represent the status of a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a> object.  <a href="namespacedpp.html#a94aba4d1f2669c7da3b676859d54602f">More...</a><br /></td></tr>
@@ -850,19 +935,24 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ad1aac955c38caa8b8581de35d6c432d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the style of a button.  <a href="namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5">More...</a><br /></td></tr>
 <tr class="separator:ad1aac955c38caa8b8581de35d6c432d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac21b1c79d9e30338aeafc83407c4e279"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac21b1c79d9e30338aeafc83407c4e279">sticker_type</a> { <a class="el" href="namespacedpp.html#ac21b1c79d9e30338aeafc83407c4e279ae178f6e5e73468d3a68fdff09cd3591d">sticker_png</a> = 1
-, <a class="el" href="namespacedpp.html#ac21b1c79d9e30338aeafc83407c4e279ab27a2373e4423840d583cc6fa2d534cd">sticker_apng</a> = 2
-, <a class="el" href="namespacedpp.html#ac21b1c79d9e30338aeafc83407c4e279ae7dad622eb0605d42aa316ae069ada5a">sticker_lottie</a> = 3
+<tr class="memitem:a1e48af4f3b8fd3f07ea0c2c55de99bff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bff">sticker_type</a> : uint8_t { <a class="el" href="namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca">st_standard</a> = 1
+, <a class="el" href="namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede">st_guild</a> = 2
  }</td></tr>
-<tr class="memdesc:ac21b1c79d9e30338aeafc83407c4e279"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file format (png, apng, lottie) of a sticker.  <a href="namespacedpp.html#ac21b1c79d9e30338aeafc83407c4e279">More...</a><br /></td></tr>
-<tr class="separator:ac21b1c79d9e30338aeafc83407c4e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a1e48af4f3b8fd3f07ea0c2c55de99bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ee458707682eabe7d539c9a13beac2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2">sticker_format</a> : uint8_t { <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484">sf_png</a> = 1
+, <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2">sf_apng</a> = 2
+, <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5">sf_lottie</a> = 3
+ }</td></tr>
+<tr class="memdesc:ae2ee458707682eabe7d539c9a13beac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file format (png, apng, lottie) of a sticker.  <a href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2">More...</a><br /></td></tr>
+<tr class="separator:ae2ee458707682eabe7d539c9a13beac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0157b2de9cc3cf2f819b8e4d969f84a8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8">message_flags</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aab96a9099e9e1de98d2e0270dae49851">m_crossposted</a> = 1 &lt;&lt; 0
 , <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d">m_is_crosspost</a> = 1 &lt;&lt; 1
-, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aac780581bacd412c2298fc2e73efcca9">m_supress_embeds</a> = 1 &lt;&lt; 2
+, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01">m_suppress_embeds</a> = 1 &lt;&lt; 2
 , <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d">m_source_message_deleted</a> = 1 &lt;&lt; 3
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7">m_urgent</a> = 1 &lt;&lt; 4
+, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1">m_has_thread</a> = 1 &lt;&lt; 5
 , <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf">m_ephemeral</a> = 1 &lt;&lt; 6
 , <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a347b30bfa696feef3b8948a5ea20127e">m_loading</a> = 1 &lt;&lt; 7
 <br />
@@ -897,9 +987,10 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f">mt_thread_starter_message</a> = 21
 , <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a">mt_guild_invite_reminder</a> = 22
+, <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe">mt_context_menu_command</a> = 23
 <br />
  }</td></tr>
-<tr class="memdesc:acd7f41dcc93c1cf48514d2b123e4d8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesage types for <a class="el" href="structdpp_1_1message.html#a2ed7eaf6f5ff69a94fcb4912c0c795c2">dpp::message::type</a>.  <a href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc">More...</a><br /></td></tr>
+<tr class="memdesc:acd7f41dcc93c1cf48514d2b123e4d8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message types for <a class="el" href="structdpp_1_1message.html#a2ed7eaf6f5ff69a94fcb4912c0c795c2">dpp::message::type</a>.  <a href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc">More...</a><br /></td></tr>
 <tr class="separator:acd7f41dcc93c1cf48514d2b123e4d8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace5c63d91b72c5bae7d8cf9d8f531e52"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52">cache_policy_setting_t</a> { <a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e">cp_aggressive</a> = 0
 , <a class="el" href="namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a055c40e9038f2345a5c1fb9a3d3d648c">cp_lazy</a> = 1
@@ -974,6 +1065,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449a65bb2cb9582bd3e13fc7704e36a5bf54">h_compression</a>
 <br />
  }</td></tr>
+<tr class="memdesc:ae525add0ec39d647375aabe5ce455449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error values. Don't change the order or add extra values here, as they map onto the error values of cpp-httplib.  <a href="namespacedpp.html#ae525add0ec39d647375aabe5ce455449">More...</a><br /></td></tr>
 <tr class="separator:ae525add0ec39d647375aabe5ce455449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a805ef1feb2862a208ec0e9d1be005c88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88a1c5397a2ab65a9b09e466d3e7cf5a82e">m_get</a>
@@ -985,12 +1077,12 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a805ef1feb2862a208ec0e9d1be005c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc77b8a509bf5337322d02e93e96c2e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2e">role_flags</a> { <a class="el" href="namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea28bd72d5ab200ddcdadd9759c84f2c2e">r_hoist</a> = 0b00000001
-, <a class="el" href="namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2eaed8ce041eb7cb3a5cf913de8efbbddc6">r_managed</a> = 0b00000010
-, <a class="el" href="namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea50fbd694d79806b3b099b76c36765b26">r_mentionable</a> = 0b00000100
-, <a class="el" href="namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2ea3db26ad1126a3dda385d750b0da11026">r_premium_subscriber</a> = 0b00001000
+<tr class="memitem:af803e69eddf23c5862947295f3df5d53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53">role_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e">r_hoist</a> = 0b00000001
+, <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6">r_managed</a> = 0b00000010
+, <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26">r_mentionable</a> = 0b00000100
+, <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026">r_premium_subscriber</a> = 0b00001000
  }</td></tr>
-<tr class="separator:a0dc77b8a509bf5337322d02e93e96c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af803e69eddf23c5862947295f3df5d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8b5573bf936e034d33a7238fe5604f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f">role_permissions</a> : uint64_t { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab">p_create_instant_invite</a> = 0x00000001
 , <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae57cb8bf1870f74f2820f84255ca8104">p_kick_members</a> = 0x00000002
@@ -1029,13 +1121,17 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa2fc44537c377d2b8f1d0038fb981d7b1">p_manage_roles</a> = 0x0010000000
 , <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa549b4abc6dada6f0bf90867796811022">p_manage_webhooks</a> = 0x0020000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa52ca744579742782d999f42f867cb061">p_manage_emojis</a> = 0x0040000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faa0864fd6d44071028ec1f35d09c355b7">p_use_slash_commands</a> = 0x0080000000
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad691e887806c25155195bee70d772311">p_manage_emojis_and_stickers</a> = 0x0040000000
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae628847e2db7d4b3d986d6546efde812">p_use_application_commands</a> = 0x0080000000
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa36d490ca8b4746a76b4982dfa03d7396">p_request_to_speak</a> = 0x0100000000
 , <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b">p_manage_threads</a> = 0x0400000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa8904936919c87a25e2e40c26e9b19d81">p_use_public_threads</a> = 0x0800000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5250139ae5b4f2ce5dae2e784e69212a">p_use_private_threads</a> = 0x1000000000
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa32c172d9953bb8cf72dea1a33762eddb">p_create_public_threads</a> = 0x0800000000
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34">p_create_private_threads</a> = 0x1000000000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3">p_use_external_stickers</a> = 0x2000000000
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937">p_send_messages_in_threads</a> = 0x4000000000
+, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa8b664cc72b2379ebe85894385e804e33">p_start_embedded_activities</a> = 0x8000000000
 <br />
  }</td></tr>
 <tr class="memdesc:a2b8b5573bf936e034d33a7238fe5604f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various discord permissions.  <a href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f">More...</a><br /></td></tr>
@@ -1050,17 +1146,20 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a5a2ea837ca5ec64e6385acf392cef1e2">co_user</a> = 6
 , <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a96f8ffcbd6b293e75a0500d729fc9b31">co_channel</a> = 7
 , <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a4476d79df02a4909cd7931d5a7e5f0ac">co_role</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a6104d8b3d8c608855ccf8eab2d60a821">co_mentionable</a> = 9
+, <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b">co_number</a> = 10
 <br />
  }</td></tr>
 <tr class="memdesc:abc401d86119c6443bf72d736857c1a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents command option types. These are the possible parameter value types.  <a href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58">More...</a><br /></td></tr>
 <tr class="separator:abc401d86119c6443bf72d736857c1a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83479ddaa45166def7719d5511b09d02"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02">interaction_response_type</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede">ir_pong</a> = 1
-, <a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02adedea5e5d6fb997f7ddaed5d59a55ea9">ir_acknowledge</a> = 2
-, <a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a55c989cea99cb8ce15439d19ee718619">ir_channel_message</a> = 3
 , <a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c">ir_channel_message_with_source</a> = 4
+, <a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294">ir_deferred_channel_message_with_source</a> = 5
+, <a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312">ir_deferred_update_message</a> = 6
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294">ir_deferred_channel_message_with_source</a> = 5
+&#160;&#160;<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847">ir_update_message</a> = 7
 <br />
  }</td></tr>
 <tr class="memdesc:a83479ddaa45166def7719d5511b09d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Response types when responding to an interaction within on_interaction_create. Do not use ir_acknowledge or ir::channel_message, as these are deprecated in the Discord API spec. They are listed in this enum for completeness.  <a href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02">More...</a><br /></td></tr>
@@ -1085,6 +1184,10 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a">ctxm_message</a> = 3
  }</td></tr>
 <tr class="separator:a3af415bd74cead2c665a6a507ce843fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29954c9dfc5a906346177226d036a418"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418">stage_privacy_level</a> : uint8_t { <a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed">sp_public</a> = 1
+, <a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d">sp_guild_only</a> = 2
+ }</td></tr>
+<tr class="separator:a29954c9dfc5a906346177226d036a418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace1318b24526febab72157cdd8b7b468"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ace1318b24526febab72157cdd8b7b468">user_flags</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#ace1318b24526febab72157cdd8b7b468a08571594b32cf14501db06b9a39c0d2b">u_bot</a> = 0b00000000000000000000001
 , <a class="el" href="namespacedpp.html#ace1318b24526febab72157cdd8b7b468ab798237a2b87e22960a9928fede47221">u_system</a> = 0b00000000000000000000010
@@ -1129,7 +1232,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a6a7cc94290184616d0267d751f02d53faa71e77d5dec0a32ba01779884f83cf3b">vs_self_stream</a> = 0b00010000
 , <a class="el" href="namespacedpp.html#a6a7cc94290184616d0267d751f02d53fa33cbc9aa408db6c7ee21d28dbbbdbe57">vs_self_video</a> = 0b00100000
-, <a class="el" href="namespacedpp.html#a6a7cc94290184616d0267d751f02d53faf1366589595934ba16d4451ff2a0f30d">vs_supress</a> = 0b01000000
+, <a class="el" href="namespacedpp.html#a6a7cc94290184616d0267d751f02d53fab6b112d9c3a80339f4c722d127c5e4d6">vs_suppress</a> = 0b01000000
 <br />
  }</td></tr>
 <tr class="memdesc:a6a7cc94290184616d0267d751f02d53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit mask flags relating to voice states.  <a href="namespacedpp.html#a6a7cc94290184616d0267d751f02d53f">More...</a><br /></td></tr>
@@ -1139,6 +1242,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a20f1f69fbf5558149824584aeab4ecc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines types of webhook.  <a href="namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0">More...</a><br /></td></tr>
 <tr class="separator:a20f1f69fbf5558149824584aeab4ecc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15fded6ab38b51e685f9ebd670d1f55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55">websocket_protocol_t</a> { <a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55abea765ef009bccd9080351f806bae437">ws_json</a> = 0
+, <a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55ac465dd3c03a072c41148d3562b6cbd64">ws_etf</a> = 1
+ }</td></tr>
+<tr class="separator:ac15fded6ab38b51e685f9ebd670d1f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e6c1fc5986facd4bb63a152ffa6057"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af0e6c1fc5986facd4bb63a152ffa6057">ws_state</a> { <a class="el" href="namespacedpp.html#af0e6c1fc5986facd4bb63a152ffa6057ac4e7462fef7673f64bf129dde58c9f70">HTTP_HEADERS</a>
 , <a class="el" href="namespacedpp.html#af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d">CONNECTED</a>
  }</td></tr>
@@ -1159,38 +1266,40 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a91d363ccdd28dc822536b6745f64ef12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a91d363ccdd28dc822536b6745f64ef12">garbage_collection</a> ()</td></tr>
-<tr class="separator:a91d363ccdd28dc822536b6745f64ef12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f57fb047d0aeabeb6401727d071a47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1user.html">user</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a03f57fb047d0aeabeb6401727d071a47">find_user</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
-<tr class="separator:a03f57fb047d0aeabeb6401727d071a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54bca9d470b5faecef77378221309c65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a54bca9d470b5faecef77378221309c65">get_user_cache</a> ()</td></tr>
-<tr class="separator:a54bca9d470b5faecef77378221309c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af774271529b8dd35ec580102f741b8ad"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af774271529b8dd35ec580102f741b8ad">get_user_count</a> ()</td></tr>
-<tr class="separator:af774271529b8dd35ec580102f741b8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04861bd69b697432e6c7b246747ad86c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1channel.html">channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a04861bd69b697432e6c7b246747ad86c">find_channel</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
-<tr class="separator:a04861bd69b697432e6c7b246747ad86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace0612ab2a3d27da79190d971743074d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ace0612ab2a3d27da79190d971743074d">get_channel_cache</a> ()</td></tr>
-<tr class="separator:ace0612ab2a3d27da79190d971743074d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70474b3e729b41bfc1c51fa628cba6a4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a70474b3e729b41bfc1c51fa628cba6a4">get_channel_count</a> ()</td></tr>
-<tr class="separator:a70474b3e729b41bfc1c51fa628cba6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b26ed01e9bb9ec98b942b452cf11295"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1role.html">role</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9b26ed01e9bb9ec98b942b452cf11295">find_role</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
-<tr class="separator:a9b26ed01e9bb9ec98b942b452cf11295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7e5b8ee0690b4bbeb4857f4faa6d2f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae7e5b8ee0690b4bbeb4857f4faa6d2f8">get_role_cache</a> ()</td></tr>
-<tr class="separator:ae7e5b8ee0690b4bbeb4857f4faa6d2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e18a9b1dc8cbededf3d8e800e00fd51"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6e18a9b1dc8cbededf3d8e800e00fd51">get_role_count</a> ()</td></tr>
-<tr class="separator:a6e18a9b1dc8cbededf3d8e800e00fd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6750ab645d45e0d71f8391b35257754"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1guild.html">guild</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae6750ab645d45e0d71f8391b35257754">find_guild</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
-<tr class="separator:ae6750ab645d45e0d71f8391b35257754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75368ba131feafab62f8468e183fdde4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a75368ba131feafab62f8468e183fdde4">get_guild_cache</a> ()</td></tr>
-<tr class="separator:a75368ba131feafab62f8468e183fdde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ca5ac5d924ef3178950365ac4be1bd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a95ca5ac5d924ef3178950365ac4be1bd">get_guild_count</a> ()</td></tr>
-<tr class="separator:a95ca5ac5d924ef3178950365ac4be1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3dc824db49f055b683526516e34f5f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1emoji.html">emoji</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad3dc824db49f055b683526516e34f5f4">find_emoji</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
-<tr class="separator:ad3dc824db49f055b683526516e34f5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a139e9e31a917d3ec43624cfb8ad86c96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a139e9e31a917d3ec43624cfb8ad86c96">get_emoji_cache</a> ()</td></tr>
-<tr class="separator:a139e9e31a917d3ec43624cfb8ad86c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efa72a90f8cb79e1632f2d3525fd5fe"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a8efa72a90f8cb79e1632f2d3525fd5fe">get_emoji_count</a> ()</td></tr>
-<tr class="separator:a8efa72a90f8cb79e1632f2d3525fd5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f0984484c2408f8bac07674720ef07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af9f0984484c2408f8bac07674720ef07">garbage_collection</a> ()</td></tr>
+<tr class="separator:af9f0984484c2408f8bac07674720ef07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368cff415172099d1d3c90e11721b37e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1user.html">user</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a368cff415172099d1d3c90e11721b37e">find_user</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
+<tr class="separator:a368cff415172099d1d3c90e11721b37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee10a38322b1addfbc92aca3e763d19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acee10a38322b1addfbc92aca3e763d19">get_user_cache</a> ()</td></tr>
+<tr class="separator:acee10a38322b1addfbc92aca3e763d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70a66ea50fff65140d1dfcb803289f4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad70a66ea50fff65140d1dfcb803289f4">get_user_count</a> ()</td></tr>
+<tr class="separator:ad70a66ea50fff65140d1dfcb803289f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430445c5a47943ca2d1422f1f45434ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1channel.html">channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a430445c5a47943ca2d1422f1f45434ab">find_channel</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
+<tr class="separator:a430445c5a47943ca2d1422f1f45434ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdbe795e93af8ae42508a9eb8845ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a3fdbe795e93af8ae42508a9eb8845ccd">get_channel_cache</a> ()</td></tr>
+<tr class="separator:a3fdbe795e93af8ae42508a9eb8845ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564bd51f9aaa38759d667dee4a0c8615"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a564bd51f9aaa38759d667dee4a0c8615">get_channel_count</a> ()</td></tr>
+<tr class="separator:a564bd51f9aaa38759d667dee4a0c8615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1583937bb5eb90f8090a2e6b6b77839"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1role.html">role</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ab1583937bb5eb90f8090a2e6b6b77839">find_role</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
+<tr class="separator:ab1583937bb5eb90f8090a2e6b6b77839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04446f6269f5ea06cd444c62eb04b80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af04446f6269f5ea06cd444c62eb04b80">get_role_cache</a> ()</td></tr>
+<tr class="separator:af04446f6269f5ea06cd444c62eb04b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350d31a987f01b3fe24d17bc59b1d9b1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a350d31a987f01b3fe24d17bc59b1d9b1">get_role_count</a> ()</td></tr>
+<tr class="separator:a350d31a987f01b3fe24d17bc59b1d9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a13097fcd3f19b409e2a15b9fa56f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1guild.html">guild</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a3a13097fcd3f19b409e2a15b9fa56f90">find_guild</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
+<tr class="separator:a3a13097fcd3f19b409e2a15b9fa56f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa525810bb08ad5c6a858951fd40d1596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa525810bb08ad5c6a858951fd40d1596">get_guild_cache</a> ()</td></tr>
+<tr class="separator:aa525810bb08ad5c6a858951fd40d1596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6641a19f8dc7eba625f27c8835bf31ca"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6641a19f8dc7eba625f27c8835bf31ca">get_guild_count</a> ()</td></tr>
+<tr class="separator:a6641a19f8dc7eba625f27c8835bf31ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595cb5fb51cb3bca106454502f654e03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1emoji.html">emoji</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a595cb5fb51cb3bca106454502f654e03">find_emoji</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> id)</td></tr>
+<tr class="separator:a595cb5fb51cb3bca106454502f654e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bf80aac0473a20777487bfd99cd1f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af7bf80aac0473a20777487bfd99cd1f5">get_emoji_cache</a> ()</td></tr>
+<tr class="separator:af7bf80aac0473a20777487bfd99cd1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1728693a6b7bc12f1bb05e113e5c0428"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1728693a6b7bc12f1bb05e113e5c0428">get_emoji_count</a> ()</td></tr>
+<tr class="separator:a1728693a6b7bc12f1bb05e113e5c0428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d77e1ffffe22979d93132a7acee1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a> &amp;tmdata)</td></tr>
+<tr class="separator:a77d77e1ffffe22979d93132a7acee1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82aba4478fa9f6b684d209af7a9eb754"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a82aba4478fa9f6b684d209af7a9eb754">SnowflakeNotNull</a> (const nlohmann::json *j, const char *keyname)</td></tr>
 <tr class="memdesc:a82aba4478fa9f6b684d209af7a9eb754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a snowflake id from a json field value, if defined, else returns 0.  <a href="namespacedpp.html#a82aba4478fa9f6b684d209af7a9eb754">More...</a><br /></td></tr>
 <tr class="separator:a82aba4478fa9f6b684d209af7a9eb754"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1245,9 +1354,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a177af60de5536cff95f417fce3d9487a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm)</td></tr>
 <tr class="memdesc:a177af60de5536cff95f417fce3d9487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild.">guild_member</a> from json  <a href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">More...</a><br /></td></tr>
 <tr class="separator:a177af60de5536cff95f417fce3d9487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c317c37b23dfe20a62f5b9453555e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7c317c37b23dfe20a62f5b9453555e10">populate_result</a> (const std::string &amp;url, const <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;rv, const httplib::Result &amp;res)</td></tr>
-<tr class="separator:a7c317c37b23dfe20a62f5b9453555e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd18d41e47000c592ab63b702335e184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acd18d41e47000c592ab63b702335e184">to_json</a> (<a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> &amp;j, const <a class="el" href="classdpp_1_1component.html">component</a> &amp;cp)</td></tr>
+<tr class="separator:acd18d41e47000c592ab63b702335e184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0e7257dbc68790bbaa6a34a20b776d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4d0e7257dbc68790bbaa6a34a20b776d">populate_result</a> (const std::string &amp;url, <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;rv, const httplib::Result &amp;res)</td></tr>
+<tr class="separator:a4d0e7257dbc68790bbaa6a34a20b776d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4">url_encode</a> (const std::string &amp;value)</td></tr>
+<tr class="memdesc:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a url parameter similar to php urlencode()  <a href="namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4">More...</a><br /></td></tr>
 <tr class="separator:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1command__option__choice.html">command_option_choice</a> &amp;choice)</td></tr>
 <tr class="memdesc:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to serialize a <a class="el" href="structdpp_1_1command__option__choice.html" title="This struct represents choices in a multiple choice option for a command parameter....">command_option_choice</a> to json  <a href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">More...</a><br /></td></tr>
@@ -1298,15 +1410,22 @@ Variables</h2></td></tr>
 <tr class="separator:a2bc14e10038152802645f051c747dc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2e114ba137f1f5bf6fd9782f41d2f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cache.html">cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a3d2e114ba137f1f5bf6fd9782f41d2f2">emoji_cache</a> = nullptr</td></tr>
 <tr class="separator:a3d2e114ba137f1f5bf6fd9782f41d2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6c27b0fbcc58fe84087382096dca98"><td class="memItemLeft" align="right" valign="top">thread_local std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98">audit_reason</a></td></tr>
+<tr class="memdesc:a9e6c27b0fbcc58fe84087382096dca98"><td class="mdescLeft">&#160;</td><td class="mdescRight">An audit reason for each thread. These are per-thread to make the cluster methods like <a class="el" href="classdpp_1_1cluster.html#ab7a2958625740b4a6fde6643042c5f7e" title="Get the audit reason set for the next REST call to be made on this thread. This is set per-thread,...">cluster::get_audit_reason</a> and <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason</a> thread safe across multiple threads. You must ensure you set the audit reason on the same thread that makes the request associated with it.  <a href="namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98">More...</a><br /></td></tr>
+<tr class="separator:a9e6c27b0fbcc58fe84087382096dca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac40602ddc592a7cfb7709375cfd8528e"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classdpp_1_1events_1_1event.html">dpp::events::event</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac40602ddc592a7cfb7709375cfd8528e">eventmap</a></td></tr>
 <tr class="separator:ac40602ddc592a7cfb7709375cfd8528e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d78d18a19b3fef2cf11ff545fee91c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c">external_ip</a></td></tr>
 <tr class="separator:af5d78d18a19b3fef2cf11ff545fee91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f29330ede66fa21fc47c361a9c51a7b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b">http_version</a> = &quot;DiscordBot (https://github.com/brainboxdotcc/DPP, &quot; + std::to_string(DPP_VERSION_MAJOR) + &quot;.&quot; + std::to_string(DPP_VERSION_MINOR) + &quot;.&quot; + std::to_string(DPP_VERSION_PATCH) + &quot;)&quot;</td></tr>
+<tr class="separator:a4f29330ede66fa21fc47c361a9c51a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27df95e52167e3d7020ee6ad7958eaa8"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a27df95e52167e3d7020ee6ad7958eaa8">DISCORD_HOST</a> = &quot;https://discord.com&quot;</td></tr>
+<tr class="separator:a27df95e52167e3d7020ee6ad7958eaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd1452ee8156729d4cb1ae5cbfdda87"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87">ERROR_STATUS</a> = -1</td></tr>
 <tr class="separator:a5dd1452ee8156729d4cb1ae5cbfdda87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f42fb08301629416cbca4d5412c0fd"><td class="memItemLeft" align="right" valign="top">const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd">WS_MASKBIT</a> = (1 &lt;&lt; 7)</td></tr>
+<tr class="memitem:ab5f42fb08301629416cbca4d5412c0fd"><td class="memItemLeft" align="right" valign="top">const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd">WS_MASKBIT</a> = (1u &lt;&lt; 7u)</td></tr>
 <tr class="separator:ab5f42fb08301629416cbca4d5412c0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1a62eaba2a019735abc7101cffee69"><td class="memItemLeft" align="right" valign="top">const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9f1a62eaba2a019735abc7101cffee69">WS_FINBIT</a> = (1 &lt;&lt; 7)</td></tr>
+<tr class="memitem:a9f1a62eaba2a019735abc7101cffee69"><td class="memItemLeft" align="right" valign="top">const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9f1a62eaba2a019735abc7101cffee69">WS_FINBIT</a> = (1u &lt;&lt; 7u)</td></tr>
 <tr class="separator:a9f1a62eaba2a019735abc7101cffee69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fd1619d39b4a2d583c09248f32cbe8"><td class="memItemLeft" align="right" valign="top">const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae6fd1619d39b4a2d583c09248f32cbe8">WS_PAYLOAD_LENGTH_MAGIC_LARGE</a> = 126</td></tr>
 <tr class="separator:ae6fd1619d39b4a2d583c09248f32cbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1318,6 +1437,10 @@ Variables</h2></td></tr>
 <tr class="separator:a657e035c24d7cdf888ba40868167f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeef0538fa45377c9b04fc944efec0f0c"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aeef0538fa45377c9b04fc944efec0f0c">MAXHEADERSIZE</a> = sizeof(uint64_t) + 2</td></tr>
 <tr class="separator:aeef0538fa45377c9b04fc944efec0f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9654800251161e0925af5d1ec1452f8"><td class="memItemLeft" align="right" valign="top">struct DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac9654800251161e0925af5d1ec1452f8">confirmation_callback_t</a></td></tr>
+<tr class="separator:ac9654800251161e0925af5d1ec1452f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af762f7c2f0c23de9fbba385e8f547d29"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29">FORMAT_VERSION</a> = 131</td></tr>
+<tr class="separator:af762f7c2f0c23de9fbba385e8f547d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The main namespace for D++ functions. classes and types. </p>
@@ -1369,14 +1492,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acce615d2721b50de907ef1d2cfa1490b" name="acce615d2721b50de907ef1d2cfa1490b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acce615d2721b50de907ef1d2cfa1490b">&#9670;&nbsp;</a></span>command_completion_event_t</h2>
+<a id="a022dce6b086ec4515384eaece59c84c3" name="a022dce6b086ec4515384eaece59c84c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022dce6b086ec4515384eaece59c84c3">&#9670;&nbsp;</a></span>command_completion_event_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void(const <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a>&amp;)&gt; <a class="el" href="namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b">dpp::command_completion_event_t</a></td>
+          <td class="memname">typedef std::function&lt; void(const <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &amp;)&gt; <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">dpp::command_completion_event_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1401,14 +1524,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abb8e7d04227af92295494367dcec6a4d" name="abb8e7d04227af92295494367dcec6a4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb8e7d04227af92295494367dcec6a4d">&#9670;&nbsp;</a></span>command_parameter</h2>
+<a id="aeda63f2562bc6f52b50b793b70341abd" name="aeda63f2562bc6f52b50b793b70341abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda63f2562bc6f52b50b793b70341abd">&#9670;&nbsp;</a></span>command_parameter</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::variant&lt;std::string, <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <a class="el" href="classdpp_1_1user.html">dpp::user</a>, int32_t, bool&gt; <a class="el" href="namespacedpp.html#abb8e7d04227af92295494367dcec6a4d">dpp::command_parameter</a></td>
+          <td class="memname">typedef std::variant&lt;std::monostate, std::string, <a class="el" href="classdpp_1_1role.html">dpp::role</a>, <a class="el" href="classdpp_1_1channel.html">dpp::channel</a>, <a class="el" href="structdpp_1_1resolved__user.html">dpp::resolved_user</a>, int64_t, bool, double&gt; <a class="el" href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">dpp::command_parameter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1417,30 +1540,31 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a210a8688d51d3b313d3959c6dd91c40b" name="a210a8688d51d3b313d3959c6dd91c40b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a210a8688d51d3b313d3959c6dd91c40b">&#9670;&nbsp;</a></span>command_value</h2>
+<a id="a710b32b577396ba92917d0578f0bedb6" name="a710b32b577396ba92917d0578f0bedb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a710b32b577396ba92917d0578f0bedb6">&#9670;&nbsp;</a></span>command_value</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::variant&lt;std::string, int32_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&gt; <a class="el" href="namespacedpp.html#a210a8688d51d3b313d3959c6dd91c40b">dpp::command_value</a></td>
+          <td class="memname">typedef std::variant&lt;std::monostate, std::string, int64_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, double&gt; <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">dpp::command_value</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>This type is a variant that can hold any of the potential native data types represented by the enum above. It is used in interactions. </p>
+<p >std::monostate indicates an invalid parameter value, e.g. an unfilled optional parameter. </p>
 
 </div>
 </div>
-<a id="a3fb0d4cc5d0aee16141704924dfa197a" name="a3fb0d4cc5d0aee16141704924dfa197a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb0d4cc5d0aee16141704924dfa197a">&#9670;&nbsp;</a></span>confirmable_t</h2>
+<a id="a927bdab169583369b18fe3335dacbea3" name="a927bdab169583369b18fe3335dacbea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927bdab169583369b18fe3335dacbea3">&#9670;&nbsp;</a></span>confirmable_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::variant&lt; <a class="el" href="structdpp_1_1confirmation.html">confirmation</a>, <a class="el" href="structdpp_1_1message.html">message</a>, <a class="el" href="namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708">message_map</a>, <a class="el" href="classdpp_1_1user.html">user</a>, <a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a>, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a>, <a class="el" href="namespacedpp.html#a219aedbe5bf37835c4a65115fccba278">guild_member_map</a>, <a class="el" href="classdpp_1_1channel.html">channel</a>, <a class="el" href="namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30">channel_map</a>, <a class="el" href="namespacedpp.html#a57e84724c41fed341bee0d653a06076a">thread_member_map</a>, <a class="el" href="classdpp_1_1guild.html">guild</a>, <a class="el" href="namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7">guild_map</a>, <a class="el" href="classdpp_1_1role.html">role</a>, <a class="el" href="namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b">role_map</a>, <a class="el" href="classdpp_1_1invite.html">invite</a>, <a class="el" href="namespacedpp.html#aa85b043fd45cf24caa23ab6004a2415a">invite_map</a>, <a class="el" href="classdpp_1_1dtemplate.html">dtemplate</a>, <a class="el" href="namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6">dtemplate_map</a>, <a class="el" href="classdpp_1_1emoji.html">emoji</a>, <a class="el" href="namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9">emoji_map</a>, <a class="el" href="classdpp_1_1ban.html">ban</a>, <a class="el" href="namespacedpp.html#a52b195380df96e9c43f35fa2da82db14">ban_map</a>, <a class="el" href="classdpp_1_1voiceregion.html">voiceregion</a>, <a class="el" href="namespacedpp.html#ae90871830444cab0316109a1824fc0b8">voiceregion_map</a>, <a class="el" href="classdpp_1_1integration.html">integration</a>, <a class="el" href="namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a">integration_map</a>, <a class="el" href="classdpp_1_1webhook.html">webhook</a>, <a class="el" href="namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca">webhook_map</a>, <a class="el" href="structdpp_1_1prune.html">prune</a>, <a class="el" href="classdpp_1_1guild__widget.html">guild_widget</a>, <a class="el" href="structdpp_1_1gateway.html">gateway</a>, <a class="el" href="classdpp_1_1interaction.html">interaction</a>, <a class="el" href="structdpp_1_1interaction__response.html">interaction_response</a>, <a class="el" href="classdpp_1_1auditlog.html">auditlog</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a>, <a class="el" href="namespacedpp.html#acb9a69e08af58173ea9644999290416d">slashcommand_map</a> &gt; <a class="el" href="namespacedpp.html#a3fb0d4cc5d0aee16141704924dfa197a">dpp::confirmable_t</a></td>
+          <td class="memname">typedef std::variant&lt; <a class="el" href="structdpp_1_1confirmation.html">confirmation</a>, <a class="el" href="structdpp_1_1message.html">message</a>, <a class="el" href="namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708">message_map</a>, <a class="el" href="classdpp_1_1user.html">user</a>, <a class="el" href="namespacedpp.html#a1c4073c92e19579c06591033a4a234e1">user_map</a>, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a>, <a class="el" href="namespacedpp.html#a219aedbe5bf37835c4a65115fccba278">guild_member_map</a>, <a class="el" href="classdpp_1_1channel.html">channel</a>, <a class="el" href="namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30">channel_map</a>, <a class="el" href="namespacedpp.html#a57e84724c41fed341bee0d653a06076a">thread_member_map</a>, <a class="el" href="classdpp_1_1guild.html">guild</a>, <a class="el" href="namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7">guild_map</a>, <a class="el" href="classdpp_1_1role.html">role</a>, <a class="el" href="namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b">role_map</a>, <a class="el" href="classdpp_1_1invite.html">invite</a>, <a class="el" href="namespacedpp.html#aa85b043fd45cf24caa23ab6004a2415a">invite_map</a>, <a class="el" href="classdpp_1_1dtemplate.html">dtemplate</a>, <a class="el" href="namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6">dtemplate_map</a>, <a class="el" href="classdpp_1_1emoji.html">emoji</a>, <a class="el" href="namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9">emoji_map</a>, <a class="el" href="classdpp_1_1ban.html">ban</a>, <a class="el" href="namespacedpp.html#a52b195380df96e9c43f35fa2da82db14">ban_map</a>, <a class="el" href="classdpp_1_1voiceregion.html">voiceregion</a>, <a class="el" href="namespacedpp.html#ae90871830444cab0316109a1824fc0b8">voiceregion_map</a>, <a class="el" href="classdpp_1_1integration.html">integration</a>, <a class="el" href="namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a">integration_map</a>, <a class="el" href="classdpp_1_1webhook.html">webhook</a>, <a class="el" href="namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca">webhook_map</a>, <a class="el" href="structdpp_1_1prune.html">prune</a>, <a class="el" href="classdpp_1_1guild__widget.html">guild_widget</a>, <a class="el" href="structdpp_1_1gateway.html">gateway</a>, <a class="el" href="classdpp_1_1interaction.html">interaction</a>, <a class="el" href="structdpp_1_1interaction__response.html">interaction_response</a>, <a class="el" href="classdpp_1_1auditlog.html">auditlog</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a>, <a class="el" href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">slashcommand_map</a>, <a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a>, <a class="el" href="structdpp_1_1sticker.html">sticker</a>, <a class="el" href="namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f">sticker_map</a>, <a class="el" href="structdpp_1_1sticker__pack.html">sticker_pack</a>, <a class="el" href="namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283">sticker_pack_map</a> &gt; <a class="el" href="namespacedpp.html#a927bdab169583369b18fe3335dacbea3">dpp::confirmable_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1625,12 +1749,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;std::pair&lt;std::string, <a class="el" href="namespacedpp.html#abb8e7d04227af92295494367dcec6a4d">command_parameter</a>&gt; &gt; <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">dpp::parameter_list_t</a></td>
+          <td class="memname">typedef std::vector&lt;std::pair&lt;std::string, <a class="el" href="namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd">command_parameter</a>&gt; &gt; <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">dpp::parameter_list_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parameter list for a called command. See <a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65" title="Parameter list used during registration. Note that use of vector/pair is important here to preserve p...">dpp::parameter_registration_t</a> for an explaination as to why vector is used. </p>
+<p>Parameter list for a called command. See <a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65" title="Parameter list used during registration. Note that use of vector/pair is important here to preserve p...">dpp::parameter_registration_t</a> for an explanation as to why vector is used. </p>
 
 </div>
 </div>
@@ -1696,14 +1820,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acb9a69e08af58173ea9644999290416d" name="acb9a69e08af58173ea9644999290416d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb9a69e08af58173ea9644999290416d">&#9670;&nbsp;</a></span>slashcommand_map</h2>
+<a id="adfefe335636cdf5dbbba145a3828c554" name="adfefe335636cdf5dbbba145a3828c554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfefe335636cdf5dbbba145a3828c554">&#9670;&nbsp;</a></span>slashcommand_map</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::unordered_map&lt;std::string, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a>&gt; <a class="el" href="namespacedpp.html#acb9a69e08af58173ea9644999290416d">dpp::slashcommand_map</a></td>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a>&gt; <a class="el" href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">dpp::slashcommand_map</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1725,6 +1849,50 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A 64 bit unsigned value representing many things on discord. Discord calls the value a 'snowflake' value. </p>
+
+</div>
+</div>
+<a id="a51156024d6211aef2731770340cfe452" name="a51156024d6211aef2731770340cfe452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51156024d6211aef2731770340cfe452">&#9670;&nbsp;</a></span>socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d09f413c01571a98b8ec9a267a0e48f" name="a0d09f413c01571a98b8ec9a267a0e48f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d09f413c01571a98b8ec9a267a0e48f">&#9670;&nbsp;</a></span>sticker_map</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="structdpp_1_1sticker.html">sticker</a>&gt; <a class="el" href="namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f">dpp::sticker_map</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >A group of stickers </p>
+
+</div>
+</div>
+<a id="adc1d24fba1d0f9fbdbe054d31efe5283" name="adc1d24fba1d0f9fbdbe054d31efe5283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc1d24fba1d0f9fbdbe054d31efe5283">&#9670;&nbsp;</a></span>sticker_pack_map</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="structdpp_1_1sticker__pack.html">sticker_pack</a>&gt; <a class="el" href="namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283">dpp::sticker_pack_map</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >A group of sticker packs </p>
 
 </div>
 </div>
@@ -2087,6 +2255,10 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="abc401d86119c6443bf72d736857c1a58a4476d79df02a4909cd7931d5a7e5f0ac" name="abc401d86119c6443bf72d736857c1a58a4476d79df02a4909cd7931d5a7e5f0ac"></a>co_role&#160;</td><td class="fielddoc"><p >A role snowflake id </p>
 </td></tr>
+<tr><td class="fieldname"><a id="abc401d86119c6443bf72d736857c1a58a6104d8b3d8c608855ccf8eab2d60a821" name="abc401d86119c6443bf72d736857c1a58a6104d8b3d8c608855ccf8eab2d60a821"></a>co_mentionable&#160;</td><td class="fielddoc"><p >A mentionable </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b" name="abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b"></a>co_number&#160;</td><td class="fielddoc"><p >Any double between -2^53 and 2^53 </p>
+</td></tr>
 </table>
 
 </div>
@@ -2181,27 +2353,99 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3fbd576f42eaeb1c0d425b969de340b8" name="a3fbd576f42eaeb1c0d425b969de340b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fbd576f42eaeb1c0d425b969de340b8">&#9670;&nbsp;</a></span>emoji_flags</h2>
+<a id="a79e9b19c1aa69ef048c79d37801b947c" name="a79e9b19c1aa69ef048c79d37801b947c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e9b19c1aa69ef048c79d37801b947c">&#9670;&nbsp;</a></span>emoji_flags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8">dpp::emoji_flags</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c">dpp::emoji_flags</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Flags for <a class="el" href="classdpp_1_1emoji.html" title="Represents an emoji for a dpp::guild.">dpp::emoji</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3fbd576f42eaeb1c0d425b969de340b8ad9baba8ca224a0acb80019fcd3a9a0cb" name="a3fbd576f42eaeb1c0d425b969de340b8ad9baba8ca224a0acb80019fcd3a9a0cb"></a>e_require_colons&#160;</td><td class="fielddoc"><p >Emoji requires colons. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb" name="a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb"></a>e_require_colons&#160;</td><td class="fielddoc"><p >Emoji requires colons. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3fbd576f42eaeb1c0d425b969de340b8aa8e9ef37a91a1bbe4012548a0fd3bd82" name="a3fbd576f42eaeb1c0d425b969de340b8aa8e9ef37a91a1bbe4012548a0fd3bd82"></a>e_managed&#160;</td><td class="fielddoc"><p >Managed (introduced by application) </p>
+<tr><td class="fieldname"><a id="a79e9b19c1aa69ef048c79d37801b947caa8e9ef37a91a1bbe4012548a0fd3bd82" name="a79e9b19c1aa69ef048c79d37801b947caa8e9ef37a91a1bbe4012548a0fd3bd82"></a>e_managed&#160;</td><td class="fielddoc"><p >Managed (introduced by application) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3fbd576f42eaeb1c0d425b969de340b8a9036ca4ebc156999b7efd35de1adb2f5" name="a3fbd576f42eaeb1c0d425b969de340b8a9036ca4ebc156999b7efd35de1adb2f5"></a>e_animated&#160;</td><td class="fielddoc"><p >Animated. </p>
+<tr><td class="fieldname"><a id="a79e9b19c1aa69ef048c79d37801b947ca9036ca4ebc156999b7efd35de1adb2f5" name="a79e9b19c1aa69ef048c79d37801b947ca9036ca4ebc156999b7efd35de1adb2f5"></a>e_animated&#160;</td><td class="fielddoc"><p >Animated. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3fbd576f42eaeb1c0d425b969de340b8a5acfa9eb7e214d29511692811b93890d" name="a3fbd576f42eaeb1c0d425b969de340b8a5acfa9eb7e214d29511692811b93890d"></a>e_available&#160;</td><td class="fielddoc"><p >Available (false if the guild doesn't meet boosting criteria, etc) </p>
+<tr><td class="fieldname"><a id="a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d" name="a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d"></a>e_available&#160;</td><td class="fielddoc"><p >Available (false if the guild doesn't meet boosting criteria, etc) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad775fb0c6c9e6923fb562c95907d26c2" name="ad775fb0c6c9e6923fb562c95907d26c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad775fb0c6c9e6923fb562c95907d26c2">&#9670;&nbsp;</a></span>etf_token_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2">dpp::etf_token_type</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents a token which identifies the type of value which follows it in the ETF binary structure. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a1f73d99cedad0b2bef42243ab11a7fd5" name="ad775fb0c6c9e6923fb562c95907d26c2a1f73d99cedad0b2bef42243ab11a7fd5"></a>ett_distribution&#160;</td><td class="fielddoc"><p >68 [Distribution header] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565" name="ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565"></a>ett_new_float&#160;</td><td class="fielddoc"><p >70 [Float64:IEEE float] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6" name="ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6"></a>ett_bit_binary&#160;</td><td class="fielddoc"><p >77 [UInt32:Len, UInt8:Bits, Len:Data] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf" name="ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf"></a>ett_compressed&#160;</td><td class="fielddoc"><p >80 [UInt4:UncompressedSize, N:ZlibCompressedData] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd" name="ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd"></a>ett_smallint&#160;</td><td class="fielddoc"><p >97 [UInt8:Int] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948" name="ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948"></a>ett_integer&#160;</td><td class="fielddoc"><p >98 [Int32:Int] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf" name="ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf"></a>ett_float&#160;</td><td class="fielddoc"><p >99 [31:Float String] Float in string format (formatted "%.20e", sscanf "%lf"). Superseded by ett_new_float </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4" name="ad775fb0c6c9e6923fb562c95907d26c2a580b992b7d9f3e298cf19ec34fc74aa4"></a>ett_atom&#160;</td><td class="fielddoc"><p >100 [UInt16:Len, Len:AtomName] max Len is 255 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5" name="ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5"></a>ett_reference&#160;</td><td class="fielddoc"><p >101 [atom:Node, UInt32:ID, UInt8:Creation] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db" name="ad775fb0c6c9e6923fb562c95907d26c2a2ef4fa472fdffdbea13b0dfcb80e16db"></a>ett_port&#160;</td><td class="fielddoc"><p >102 [atom:Node, UInt32:ID, UInt8:Creation] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965" name="ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965"></a>ett_pid&#160;</td><td class="fielddoc"><p >103 [atom:Node, UInt32:ID, UInt32:Serial, UInt8:Creation] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16" name="ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16"></a>ett_small_tuple&#160;</td><td class="fielddoc"><p >104 [UInt8:Arity, N:Elements] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2" name="ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2"></a>ett_large_tuple&#160;</td><td class="fielddoc"><p >105 [UInt32:Arity, N:Elements] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9" name="ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9"></a>ett_nil&#160;</td><td class="fielddoc"><p >106 empty list </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381" name="ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381"></a>ett_string&#160;</td><td class="fielddoc"><p >107 [UInt16:Len, Len:Characters] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad" name="ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad"></a>ett_list&#160;</td><td class="fielddoc"><p >108 [UInt32:Len, Elements, Tail] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986" name="ad775fb0c6c9e6923fb562c95907d26c2a6c8d2de13b77e4ec3db1c48b934f7986"></a>ett_binary&#160;</td><td class="fielddoc"><p >109 [UInt32:Len, Len:Data] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d" name="ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d"></a>ett_bigint_small&#160;</td><td class="fielddoc"><p >110 [UInt8:n, UInt8:Sign, n:nums] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557" name="ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557"></a>ett_bigint_large&#160;</td><td class="fielddoc"><p >111 [UInt32:n, UInt8:Sign, n:nums] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d" name="ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d"></a>ett_new_function&#160;</td><td class="fielddoc"><p >112 [UInt32:Size, UInt8:Arity, 16*Uint6-MD5:Uniq, UInt32:Index, UInt32:NumFree, atom:Module, int:OldIndex, int:OldUniq, pid:Pid, NunFree*ext:FreeVars] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81" name="ad775fb0c6c9e6923fb562c95907d26c2a842624fd67967024c1c735b6122e9d81"></a>ett_export&#160;</td><td class="fielddoc"><p >113 [atom:Module, atom:Function, smallint:Arity] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e" name="ad775fb0c6c9e6923fb562c95907d26c2ab5f84f9c81ca445439ec9e4091a0f37e"></a>ett_new_reference&#160;</td><td class="fielddoc"><p >114 [UInt16:Len, atom:Node, UInt8:Creation, Len*UInt32:ID] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905" name="ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905"></a>ett_atom_small&#160;</td><td class="fielddoc"><p >115 [UInt8:Len, Len:AtomName] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39" name="ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39"></a>ett_map&#160;</td><td class="fielddoc"><p >116 [UInt32:Airty, N:Pairs] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147" name="ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147"></a>ett_function&#160;</td><td class="fielddoc"><p >117 [UInt4:NumFree, pid:Pid, atom:Module, int:Index, int:Uniq, NumFree*ext:FreeVars] </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed" name="ad775fb0c6c9e6923fb562c95907d26c2ac7c37fe169d1e290a015840f3bfd29ed"></a>ett_atom_utf8&#160;</td><td class="fielddoc"><p >118 [UInt16:Len, Len:AtomName] max Len is 255 characters (up to 4 bytes per) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c" name="ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c"></a>ett_atom_utf8_small&#160;</td><td class="fielddoc"><p >119 [UInt8:Len, Len:AtomName] </p>
 </td></tr>
 </table>
 
@@ -2263,6 +2507,8 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602faf86b8a8efaa0bd140bcf714d4a59f7c0" name="a94aba4d1f2669c7da3b676859d54602faf86b8a8efaa0bd140bcf714d4a59f7c0"></a>g_has_animated_icon&#160;</td><td class="fielddoc"><p >Guild has an actual animated icon (set by the icon hash starting with 'a_') </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a94aba4d1f2669c7da3b676859d54602fa7886733c68622fb94d225d97b0f58d91" name="a94aba4d1f2669c7da3b676859d54602fa7886733c68622fb94d225d97b0f58d91"></a>g_has_animated_banner&#160;</td><td class="fielddoc"><p >Guild has an actual animated banner (set by the icon hash starting with 'a_') </p>
+</td></tr>
 </table>
 
 </div>
@@ -2302,7 +2548,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Error values. Don't change the order or add extra values here, as they map onto the error values of cpp-httplib </p>
+
+<p>Error values. Don't change the order or add extra values here, as they map onto the error values of cpp-httplib. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da" name="ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da"></a>h_success&#160;</td><td class="fielddoc"><p >Request successful. </p>
 </td></tr>
@@ -2506,13 +2753,13 @@ Variables</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede" name="a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede"></a>ir_pong&#160;</td><td class="fielddoc"><p >ACK a Ping. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a83479ddaa45166def7719d5511b09d02adedea5e5d6fb997f7ddaed5d59a55ea9" name="a83479ddaa45166def7719d5511b09d02adedea5e5d6fb997f7ddaed5d59a55ea9"></a>ir_acknowledge&#160;</td><td class="fielddoc"><p >DEPRECATED ACK a command without sending a message, eating the user's input. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a83479ddaa45166def7719d5511b09d02a55c989cea99cb8ce15439d19ee718619" name="a83479ddaa45166def7719d5511b09d02a55c989cea99cb8ce15439d19ee718619"></a>ir_channel_message&#160;</td><td class="fielddoc"><p >DEPRECATED respond with a message, eating the user's input. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c" name="a83479ddaa45166def7719d5511b09d02a5a9b185d739d649208ea5e903391901c"></a>ir_channel_message_with_source&#160;</td><td class="fielddoc"><p >respond to an interaction with a message </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294" name="a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294"></a>ir_deferred_channel_message_with_source&#160;</td><td class="fielddoc"><p >ACK an interaction and edit a response later, the user sees a loading state. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312" name="a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312"></a>ir_deferred_update_message&#160;</td><td class="fielddoc"><p >for components, ACK an interaction and edit the original message later; the user does not see a loading state </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847" name="a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847"></a>ir_update_message&#160;</td><td class="fielddoc"><p >for components, edit the message the component was attached to </p>
 </td></tr>
 </table>
 
@@ -2589,11 +2836,13 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d" name="a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d"></a>m_is_crosspost&#160;</td><td class="fielddoc"><p >this message originated from a message in another channel (via Channel Following) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8aac780581bacd412c2298fc2e73efcca9" name="a0157b2de9cc3cf2f819b8e4d969f84a8aac780581bacd412c2298fc2e73efcca9"></a>m_supress_embeds&#160;</td><td class="fielddoc"><p >do not include any embeds when serializing this message </p>
+<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01" name="a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01"></a>m_suppress_embeds&#160;</td><td class="fielddoc"><p >do not include any embeds when serializing this message </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d" name="a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d"></a>m_source_message_deleted&#160;</td><td class="fielddoc"><p >the source message for this crosspost has been deleted (via Channel Following) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7" name="a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7"></a>m_urgent&#160;</td><td class="fielddoc"><p >this message came from the urgent message system </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1" name="a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1"></a>m_has_thread&#160;</td><td class="fielddoc"><p >this message has an associated thread, with the same id as the message </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf" name="a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf"></a>m_ephemeral&#160;</td><td class="fielddoc"><p >this message is only visible to the user who invoked the Interaction </p>
 </td></tr>
@@ -2615,7 +2864,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Mesage types for <a class="el" href="structdpp_1_1message.html#a2ed7eaf6f5ff69a94fcb4912c0c795c2">dpp::message::type</a>. </p>
+<p>Message types for <a class="el" href="structdpp_1_1message.html#a2ed7eaf6f5ff69a94fcb4912c0c795c2">dpp::message::type</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152" name="acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152"></a>mt_default&#160;</td><td class="fielddoc"><p >Default. </p>
 </td></tr>
@@ -2660,6 +2909,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f" name="acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f"></a>mt_thread_starter_message&#160;</td><td class="fielddoc"><p >Thread starter message. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a" name="acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a"></a>mt_guild_invite_reminder&#160;</td><td class="fielddoc"><p >Invite reminder. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe" name="acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe"></a>mt_context_menu_command&#160;</td><td class="fielddoc"><p >Context Menu Command. </p>
 </td></tr>
 </table>
 
@@ -2709,7 +2960,9 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a9a2049904620e4f62b82f8dc818de864a65e5825b1a709ece15c7de9dd2b21bdf" name="a9a2049904620e4f62b82f8dc818de864a65e5825b1a709ece15c7de9dd2b21bdf"></a>pt_user&#160;</td><td class="fielddoc"><p >User object. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270" name="a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270"></a>pt_integer&#160;</td><td class="fielddoc"><p >32 bit signed integer </p>
+<tr><td class="fieldname"><a id="a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270" name="a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270"></a>pt_integer&#160;</td><td class="fielddoc"><p >64 bit signed integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9a2049904620e4f62b82f8dc818de864a095d2a7bbe72af8c679d3f02f4395650" name="a9a2049904620e4f62b82f8dc818de864a095d2a7bbe72af8c679d3f02f4395650"></a>pt_double&#160;</td><td class="fielddoc"><p >double floating point </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9a2049904620e4f62b82f8dc818de864acdd3703d49822d51598fa8575ce7bbd9" name="a9a2049904620e4f62b82f8dc818de864acdd3703d49822d51598fa8575ce7bbd9"></a>pt_boolean&#160;</td><td class="fielddoc"><p >boolean </p>
 </td></tr>
@@ -2832,26 +3085,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0dc77b8a509bf5337322d02e93e96c2e" name="a0dc77b8a509bf5337322d02e93e96c2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dc77b8a509bf5337322d02e93e96c2e">&#9670;&nbsp;</a></span>role_flags</h2>
+<a id="af803e69eddf23c5862947295f3df5d53" name="af803e69eddf23c5862947295f3df5d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af803e69eddf23c5862947295f3df5d53">&#9670;&nbsp;</a></span>role_flags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a0dc77b8a509bf5337322d02e93e96c2e">dpp::role_flags</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53">dpp::role_flags</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p >Various flags related to <a class="el" href="classdpp_1_1role.html" title="Represents a role within a dpp::guild.">dpp::role</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0dc77b8a509bf5337322d02e93e96c2ea28bd72d5ab200ddcdadd9759c84f2c2e" name="a0dc77b8a509bf5337322d02e93e96c2ea28bd72d5ab200ddcdadd9759c84f2c2e"></a>r_hoist&#160;</td><td class="fielddoc"><p >Hoisted role. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e" name="af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e"></a>r_hoist&#160;</td><td class="fielddoc"><p >Hoisted role. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dc77b8a509bf5337322d02e93e96c2eaed8ce041eb7cb3a5cf913de8efbbddc6" name="a0dc77b8a509bf5337322d02e93e96c2eaed8ce041eb7cb3a5cf913de8efbbddc6"></a>r_managed&#160;</td><td class="fielddoc"><p >Managed role (introduced by a bot or application) </p>
+<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6" name="af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6"></a>r_managed&#160;</td><td class="fielddoc"><p >Managed role (introduced by a bot or application) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dc77b8a509bf5337322d02e93e96c2ea50fbd694d79806b3b099b76c36765b26" name="a0dc77b8a509bf5337322d02e93e96c2ea50fbd694d79806b3b099b76c36765b26"></a>r_mentionable&#160;</td><td class="fielddoc"><p >Mentionable with an @ping. </p>
+<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26" name="af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26"></a>r_mentionable&#160;</td><td class="fielddoc"><p >Mentionable with a ping. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dc77b8a509bf5337322d02e93e96c2ea3db26ad1126a3dda385d750b0da11026" name="a0dc77b8a509bf5337322d02e93e96c2ea3db26ad1126a3dda385d750b0da11026"></a>r_premium_subscriber&#160;</td><td class="fielddoc"><p >This is set for the role given to nitro. </p>
+<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026" name="af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026"></a>r_premium_subscriber&#160;</td><td class="fielddoc"><p >This is set for the role given to nitro. </p>
 </td></tr>
 </table>
 
@@ -2905,7 +3158,7 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa808dee0401adefdb0ffcd0b5364f8369" name="a2b8b5573bf936e034d33a7238fe5604fa808dee0401adefdb0ffcd0b5364f8369"></a>p_read_message_history&#160;</td><td class="fielddoc"><p >allows for reading of message history </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa6d810371ed1b4b2ec4fd50e7e2210104" name="a2b8b5573bf936e034d33a7238fe5604fa6d810371ed1b4b2ec4fd50e7e2210104"></a>p_mention_everyone&#160;</td><td class="fielddoc"><p >allows for using the @everyone and the @here tag to notify users in a channel </p>
+<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa6d810371ed1b4b2ec4fd50e7e2210104" name="a2b8b5573bf936e034d33a7238fe5604fa6d810371ed1b4b2ec4fd50e7e2210104"></a>p_mention_everyone&#160;</td><td class="fielddoc"><p >allows for using the everyone and the here tag to notify users in a channel </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa65d4c2c30983c92fc6c47748b5d50261" name="a2b8b5573bf936e034d33a7238fe5604fa65d4c2c30983c92fc6c47748b5d50261"></a>p_use_external_emojis&#160;</td><td class="fielddoc"><p >allows the usage of custom emojis from other servers </p>
 </td></tr>
@@ -2931,17 +3184,23 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa549b4abc6dada6f0bf90867796811022" name="a2b8b5573bf936e034d33a7238fe5604fa549b4abc6dada6f0bf90867796811022"></a>p_manage_webhooks&#160;</td><td class="fielddoc"><p >allows management and editing of webhooks </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa52ca744579742782d999f42f867cb061" name="a2b8b5573bf936e034d33a7238fe5604fa52ca744579742782d999f42f867cb061"></a>p_manage_emojis&#160;</td><td class="fielddoc"><p >allows management and editing of emojis </p>
+<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fad691e887806c25155195bee70d772311" name="a2b8b5573bf936e034d33a7238fe5604fad691e887806c25155195bee70d772311"></a>p_manage_emojis_and_stickers&#160;</td><td class="fielddoc"><p >allows management and editing of emojis and stickers </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604faa0864fd6d44071028ec1f35d09c355b7" name="a2b8b5573bf936e034d33a7238fe5604faa0864fd6d44071028ec1f35d09c355b7"></a>p_use_slash_commands&#160;</td><td class="fielddoc"><p >allows members to use slash commands </p>
+<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fae628847e2db7d4b3d986d6546efde812" name="a2b8b5573bf936e034d33a7238fe5604fae628847e2db7d4b3d986d6546efde812"></a>p_use_application_commands&#160;</td><td class="fielddoc"><p >allows members to use application commands, including slash commands and context menus </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa36d490ca8b4746a76b4982dfa03d7396" name="a2b8b5573bf936e034d33a7238fe5604fa36d490ca8b4746a76b4982dfa03d7396"></a>p_request_to_speak&#160;</td><td class="fielddoc"><p >allows for requesting to speak in stage channels. (Discord: This permission is under active development and may be changed or removed.) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b" name="a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b"></a>p_manage_threads&#160;</td><td class="fielddoc"><p >allows for deleting and archiving threads, and viewing all private threads </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa8904936919c87a25e2e40c26e9b19d81" name="a2b8b5573bf936e034d33a7238fe5604fa8904936919c87a25e2e40c26e9b19d81"></a>p_use_public_threads&#160;</td><td class="fielddoc"><p >allows for creating and participating in thread </p>
+<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa32c172d9953bb8cf72dea1a33762eddb" name="a2b8b5573bf936e034d33a7238fe5604fa32c172d9953bb8cf72dea1a33762eddb"></a>p_create_public_threads&#160;</td><td class="fielddoc"><p >allows for creating threads </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa5250139ae5b4f2ce5dae2e784e69212a" name="a2b8b5573bf936e034d33a7238fe5604fa5250139ae5b4f2ce5dae2e784e69212a"></a>p_use_private_threads&#160;</td><td class="fielddoc"><p >allows for creating and participating in private thread </p>
+<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34" name="a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34"></a>p_create_private_threads&#160;</td><td class="fielddoc"><p >allows for creating private threads </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3" name="a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3"></a>p_use_external_stickers&#160;</td><td class="fielddoc"><p >allows the usage of custom stickers from other servers </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937" name="a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937"></a>p_send_messages_in_threads&#160;</td><td class="fielddoc"><p >allows for sending messages in threads </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa8b664cc72b2379ebe85894385e804e33" name="a2b8b5573bf936e034d33a7238fe5604fa8b664cc72b2379ebe85894385e804e33"></a>p_start_embedded_activities&#160;</td><td class="fielddoc"><p >allows for launching activities (applications with the EMBEDDED flag) in a voice channel </p>
 </td></tr>
 </table>
 
@@ -2970,25 +3229,61 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac21b1c79d9e30338aeafc83407c4e279" name="ac21b1c79d9e30338aeafc83407c4e279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac21b1c79d9e30338aeafc83407c4e279">&#9670;&nbsp;</a></span>sticker_type</h2>
+<a id="a29954c9dfc5a906346177226d036a418" name="a29954c9dfc5a906346177226d036a418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29954c9dfc5a906346177226d036a418">&#9670;&nbsp;</a></span>stage_privacy_level</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#ac21b1c79d9e30338aeafc83407c4e279">dpp::sticker_type</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a29954c9dfc5a906346177226d036a418">dpp::stage_privacy_level</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed" name="a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed"></a>sp_public&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d" name="a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d"></a>sp_guild_only&#160;</td><td class="fielddoc"><p >The Stage instance is visible publicly, such as on Stage Discovery. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae2ee458707682eabe7d539c9a13beac2" name="ae2ee458707682eabe7d539c9a13beac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ee458707682eabe7d539c9a13beac2">&#9670;&nbsp;</a></span>sticker_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2">dpp::sticker_format</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The file format (png, apng, lottie) of a sticker. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac21b1c79d9e30338aeafc83407c4e279ae178f6e5e73468d3a68fdff09cd3591d" name="ac21b1c79d9e30338aeafc83407c4e279ae178f6e5e73468d3a68fdff09cd3591d"></a>sticker_png&#160;</td><td class="fielddoc"><p >PNG sticker type. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484" name="ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484"></a>sf_png&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2" name="ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2"></a>sf_apng&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5" name="ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5"></a>sf_lottie&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1e48af4f3b8fd3f07ea0c2c55de99bff" name="a1e48af4f3b8fd3f07ea0c2c55de99bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e48af4f3b8fd3f07ea0c2c55de99bff">&#9670;&nbsp;</a></span>sticker_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bff">dpp::sticker_type</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca" name="a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca"></a>st_standard&#160;</td><td class="fielddoc"><p >Nitro pack sticker. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac21b1c79d9e30338aeafc83407c4e279ab27a2373e4423840d583cc6fa2d534cd" name="ac21b1c79d9e30338aeafc83407c4e279ab27a2373e4423840d583cc6fa2d534cd"></a>sticker_apng&#160;</td><td class="fielddoc"><p >APNG sticker type. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ac21b1c79d9e30338aeafc83407c4e279ae7dad622eb0605d42aa316ae069ada5a" name="ac21b1c79d9e30338aeafc83407c4e279ae7dad622eb0605d42aa316ae069ada5a"></a>sticker_lottie&#160;</td><td class="fielddoc"><p >LOTTIE sticker type. </p>
+<tr><td class="fieldname"><a id="a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede" name="a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede"></a>st_guild&#160;</td><td class="fielddoc"><p >Guild sticker. </p>
 </td></tr>
 </table>
 
@@ -3100,7 +3395,7 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a6a7cc94290184616d0267d751f02d53fa33cbc9aa408db6c7ee21d28dbbbdbe57" name="a6a7cc94290184616d0267d751f02d53fa33cbc9aa408db6c7ee21d28dbbbdbe57"></a>vs_self_video&#160;</td><td class="fielddoc"><p >Self Video. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6a7cc94290184616d0267d751f02d53faf1366589595934ba16d4451ff2a0f30d" name="a6a7cc94290184616d0267d751f02d53faf1366589595934ba16d4451ff2a0f30d"></a>vs_supress&#160;</td><td class="fielddoc"><p >Supression. </p>
+<tr><td class="fieldname"><a id="a6a7cc94290184616d0267d751f02d53fab6b112d9c3a80339f4c722d127c5e4d6" name="a6a7cc94290184616d0267d751f02d53fab6b112d9c3a80339f4c722d127c5e4d6"></a>vs_suppress&#160;</td><td class="fielddoc"><p >Suppression. </p>
 </td></tr>
 </table>
 
@@ -3124,6 +3419,24 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354" name="a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354"></a>w_channel_follower&#160;</td><td class="fielddoc"><p >Channel following webhook. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac15fded6ab38b51e685f9ebd670d1f55" name="ac15fded6ab38b51e685f9ebd670d1f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac15fded6ab38b51e685f9ebd670d1f55">&#9670;&nbsp;</a></span>websocket_protocol_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#ac15fded6ab38b51e685f9ebd670d1f55">dpp::websocket_protocol_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac15fded6ab38b51e685f9ebd670d1f55abea765ef009bccd9080351f806bae437" name="ac15fded6ab38b51e685f9ebd670d1f55abea765ef009bccd9080351f806bae437"></a>ws_json&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac15fded6ab38b51e685f9ebd670d1f55ac465dd3c03a072c41148d3562b6cbd64" name="ac15fded6ab38b51e685f9ebd670d1f55ac465dd3c03a072c41148d3562b6cbd64"></a>ws_etf&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -3172,9 +3485,9 @@ Variables</h2></td></tr>
 
 <p>Websocket connection status. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af0e6c1fc5986facd4bb63a152ffa6057ac4e7462fef7673f64bf129dde58c9f70" name="af0e6c1fc5986facd4bb63a152ffa6057ac4e7462fef7673f64bf129dde58c9f70"></a>HTTP_HEADERS&#160;</td><td class="fielddoc"><p >Sending/receiving HTTP headers prior to protocol switch </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af0e6c1fc5986facd4bb63a152ffa6057ac4e7462fef7673f64bf129dde58c9f70" name="af0e6c1fc5986facd4bb63a152ffa6057ac4e7462fef7673f64bf129dde58c9f70"></a>HTTP_HEADERS&#160;</td><td class="fielddoc"><p >Sending/receiving HTTP headers, acting as a standard HTTP connection. This is the state prior to receiving "HTTP/1.1 101 Switching Protocols" from the server side. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d" name="af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d"></a>CONNECTED&#160;</td><td class="fielddoc"><p >Connected, upgraded and sending/receiving frames </p>
+<tr><td class="fieldname"><a id="af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d" name="af0e6c1fc5986facd4bb63a152ffa6057ab21dc4f63ee869c75f21c77922769e6d"></a>CONNECTED&#160;</td><td class="fielddoc"><p >Connected as a websocket, and "upgraded". Now talking using binary frames. </p>
 </td></tr>
 </table>
 
@@ -3257,14 +3570,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a04861bd69b697432e6c7b246747ad86c" name="a04861bd69b697432e6c7b246747ad86c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04861bd69b697432e6c7b246747ad86c">&#9670;&nbsp;</a></span>find_channel()</h2>
+<a id="a430445c5a47943ca2d1422f1f45434ab" name="a430445c5a47943ca2d1422f1f45434ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430445c5a47943ca2d1422f1f45434ab">&#9670;&nbsp;</a></span>find_channel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1channel.html">channel</a> * dpp::find_channel </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1channel.html">channel</a> * dpp::find_channel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -3275,14 +3588,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad3dc824db49f055b683526516e34f5f4" name="ad3dc824db49f055b683526516e34f5f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3dc824db49f055b683526516e34f5f4">&#9670;&nbsp;</a></span>find_emoji()</h2>
+<a id="a595cb5fb51cb3bca106454502f654e03" name="a595cb5fb51cb3bca106454502f654e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595cb5fb51cb3bca106454502f654e03">&#9670;&nbsp;</a></span>find_emoji()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1emoji.html">emoji</a> * dpp::find_emoji </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1emoji.html">emoji</a> * dpp::find_emoji </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -3293,14 +3606,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6750ab645d45e0d71f8391b35257754" name="ae6750ab645d45e0d71f8391b35257754"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6750ab645d45e0d71f8391b35257754">&#9670;&nbsp;</a></span>find_guild()</h2>
+<a id="a3a13097fcd3f19b409e2a15b9fa56f90" name="a3a13097fcd3f19b409e2a15b9fa56f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a13097fcd3f19b409e2a15b9fa56f90">&#9670;&nbsp;</a></span>find_guild()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1guild.html">guild</a> * dpp::find_guild </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1guild.html">guild</a> * dpp::find_guild </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -3311,14 +3624,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b26ed01e9bb9ec98b942b452cf11295" name="a9b26ed01e9bb9ec98b942b452cf11295"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b26ed01e9bb9ec98b942b452cf11295">&#9670;&nbsp;</a></span>find_role()</h2>
+<a id="ab1583937bb5eb90f8090a2e6b6b77839" name="ab1583937bb5eb90f8090a2e6b6b77839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1583937bb5eb90f8090a2e6b6b77839">&#9670;&nbsp;</a></span>find_role()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1role.html">role</a> * dpp::find_role </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1role.html">role</a> * dpp::find_role </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -3329,14 +3642,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a03f57fb047d0aeabeb6401727d071a47" name="a03f57fb047d0aeabeb6401727d071a47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03f57fb047d0aeabeb6401727d071a47">&#9670;&nbsp;</a></span>find_user()</h2>
+<a id="a368cff415172099d1d3c90e11721b37e" name="a368cff415172099d1d3c90e11721b37e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a368cff415172099d1d3c90e11721b37e">&#9670;&nbsp;</a></span>find_user()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1user.html">user</a> * dpp::find_user </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1user.html">user</a> * dpp::find_user </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -3575,14 +3888,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a91d363ccdd28dc822536b6745f64ef12" name="a91d363ccdd28dc822536b6745f64ef12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91d363ccdd28dc822536b6745f64ef12">&#9670;&nbsp;</a></span>garbage_collection()</h2>
+<a id="af9f0984484c2408f8bac07674720ef07" name="af9f0984484c2408f8bac07674720ef07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f0984484c2408f8bac07674720ef07">&#9670;&nbsp;</a></span>garbage_collection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dpp::garbage_collection </td>
+          <td class="memname">void DPP_EXPORT dpp::garbage_collection </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3593,14 +3906,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ace0612ab2a3d27da79190d971743074d" name="ace0612ab2a3d27da79190d971743074d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace0612ab2a3d27da79190d971743074d">&#9670;&nbsp;</a></span>get_channel_cache()</h2>
+<a id="a3fdbe795e93af8ae42508a9eb8845ccd" name="a3fdbe795e93af8ae42508a9eb8845ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fdbe795e93af8ae42508a9eb8845ccd">&#9670;&nbsp;</a></span>get_channel_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_channel_cache </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_channel_cache </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3610,14 +3923,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a70474b3e729b41bfc1c51fa628cba6a4" name="a70474b3e729b41bfc1c51fa628cba6a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70474b3e729b41bfc1c51fa628cba6a4">&#9670;&nbsp;</a></span>get_channel_count()</h2>
+<a id="a564bd51f9aaa38759d667dee4a0c8615" name="a564bd51f9aaa38759d667dee4a0c8615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564bd51f9aaa38759d667dee4a0c8615">&#9670;&nbsp;</a></span>get_channel_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t dpp::get_channel_count </td>
+          <td class="memname">DPP_EXPORT uint64_t dpp::get_channel_count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3627,14 +3940,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a139e9e31a917d3ec43624cfb8ad86c96" name="a139e9e31a917d3ec43624cfb8ad86c96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a139e9e31a917d3ec43624cfb8ad86c96">&#9670;&nbsp;</a></span>get_emoji_cache()</h2>
+<a id="af7bf80aac0473a20777487bfd99cd1f5" name="af7bf80aac0473a20777487bfd99cd1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7bf80aac0473a20777487bfd99cd1f5">&#9670;&nbsp;</a></span>get_emoji_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_emoji_cache </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_emoji_cache </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3644,14 +3957,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8efa72a90f8cb79e1632f2d3525fd5fe" name="a8efa72a90f8cb79e1632f2d3525fd5fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8efa72a90f8cb79e1632f2d3525fd5fe">&#9670;&nbsp;</a></span>get_emoji_count()</h2>
+<a id="a1728693a6b7bc12f1bb05e113e5c0428" name="a1728693a6b7bc12f1bb05e113e5c0428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1728693a6b7bc12f1bb05e113e5c0428">&#9670;&nbsp;</a></span>get_emoji_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t dpp::get_emoji_count </td>
+          <td class="memname">DPP_EXPORT uint64_t dpp::get_emoji_count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3661,14 +3974,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a75368ba131feafab62f8468e183fdde4" name="a75368ba131feafab62f8468e183fdde4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75368ba131feafab62f8468e183fdde4">&#9670;&nbsp;</a></span>get_guild_cache()</h2>
+<a id="aa525810bb08ad5c6a858951fd40d1596" name="aa525810bb08ad5c6a858951fd40d1596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa525810bb08ad5c6a858951fd40d1596">&#9670;&nbsp;</a></span>get_guild_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_guild_cache </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_guild_cache </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3678,14 +3991,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a95ca5ac5d924ef3178950365ac4be1bd" name="a95ca5ac5d924ef3178950365ac4be1bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95ca5ac5d924ef3178950365ac4be1bd">&#9670;&nbsp;</a></span>get_guild_count()</h2>
+<a id="a6641a19f8dc7eba625f27c8835bf31ca" name="a6641a19f8dc7eba625f27c8835bf31ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6641a19f8dc7eba625f27c8835bf31ca">&#9670;&nbsp;</a></span>get_guild_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t dpp::get_guild_count </td>
+          <td class="memname">DPP_EXPORT uint64_t dpp::get_guild_count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3695,14 +4008,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7e5b8ee0690b4bbeb4857f4faa6d2f8" name="ae7e5b8ee0690b4bbeb4857f4faa6d2f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7e5b8ee0690b4bbeb4857f4faa6d2f8">&#9670;&nbsp;</a></span>get_role_cache()</h2>
+<a id="af04446f6269f5ea06cd444c62eb04b80" name="af04446f6269f5ea06cd444c62eb04b80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04446f6269f5ea06cd444c62eb04b80">&#9670;&nbsp;</a></span>get_role_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_role_cache </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_role_cache </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3712,14 +4025,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e18a9b1dc8cbededf3d8e800e00fd51" name="a6e18a9b1dc8cbededf3d8e800e00fd51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e18a9b1dc8cbededf3d8e800e00fd51">&#9670;&nbsp;</a></span>get_role_count()</h2>
+<a id="a350d31a987f01b3fe24d17bc59b1d9b1" name="a350d31a987f01b3fe24d17bc59b1d9b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350d31a987f01b3fe24d17bc59b1d9b1">&#9670;&nbsp;</a></span>get_role_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t dpp::get_role_count </td>
+          <td class="memname">DPP_EXPORT uint64_t dpp::get_role_count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3729,14 +4042,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a54bca9d470b5faecef77378221309c65" name="a54bca9d470b5faecef77378221309c65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54bca9d470b5faecef77378221309c65">&#9670;&nbsp;</a></span>get_user_cache()</h2>
+<a id="acee10a38322b1addfbc92aca3e763d19" name="acee10a38322b1addfbc92aca3e763d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee10a38322b1addfbc92aca3e763d19">&#9670;&nbsp;</a></span>get_user_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_user_cache </td>
+          <td class="memname">DPP_EXPORT <a class="el" href="classdpp_1_1cache.html">cache</a> * dpp::get_user_cache </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3746,14 +4059,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af774271529b8dd35ec580102f741b8ad" name="af774271529b8dd35ec580102f741b8ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af774271529b8dd35ec580102f741b8ad">&#9670;&nbsp;</a></span>get_user_count()</h2>
+<a id="ad70a66ea50fff65140d1dfcb803289f4" name="ad70a66ea50fff65140d1dfcb803289f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70a66ea50fff65140d1dfcb803289f4">&#9670;&nbsp;</a></span>get_user_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t dpp::get_user_count </td>
+          <td class="memname">DPP_EXPORT uint64_t dpp::get_user_count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3915,8 +4228,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c317c37b23dfe20a62f5b9453555e10" name="a7c317c37b23dfe20a62f5b9453555e10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c317c37b23dfe20a62f5b9453555e10">&#9670;&nbsp;</a></span>populate_result()</h2>
+<a id="a4d0e7257dbc68790bbaa6a34a20b776d" name="a4d0e7257dbc68790bbaa6a34a20b776d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d0e7257dbc68790bbaa6a34a20b776d">&#9670;&nbsp;</a></span>populate_result()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3930,7 +4243,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
           <td class="paramname"><em>owner</em>, </td>
         </tr>
         <tr>
@@ -4421,8 +4734,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="acd18d41e47000c592ab63b702335e184" name="acd18d41e47000c592ab63b702335e184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd18d41e47000c592ab63b702335e184">&#9670;&nbsp;</a></span>to_json() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::to_json </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdpp_1_1component.html">component</a> &amp;&#160;</td>
+          <td class="paramname"><em>cp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae6a96c54dc4f6dad8f8f6bbe05fea254" name="ae6a96c54dc4f6dad8f8f6bbe05fea254"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6a96c54dc4f6dad8f8f6bbe05fea254">&#9670;&nbsp;</a></span>to_json() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a96c54dc4f6dad8f8f6bbe05fea254">&#9670;&nbsp;</a></span>to_json() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4460,7 +4801,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ae5041ec3547b4d4b7bf3416eea9b6403" name="ae5041ec3547b4d4b7bf3416eea9b6403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5041ec3547b4d4b7bf3416eea9b6403">&#9670;&nbsp;</a></span>to_json() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5041ec3547b4d4b7bf3416eea9b6403">&#9670;&nbsp;</a></span>to_json() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4498,7 +4839,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a752b7140de023c34db60c92363aacf3f" name="a752b7140de023c34db60c92363aacf3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a752b7140de023c34db60c92363aacf3f">&#9670;&nbsp;</a></span>to_json() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a752b7140de023c34db60c92363aacf3f">&#9670;&nbsp;</a></span>to_json() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4536,7 +4877,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a735482218b54177427bc882605fa1e4a" name="a735482218b54177427bc882605fa1e4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a735482218b54177427bc882605fa1e4a">&#9670;&nbsp;</a></span>to_json() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a735482218b54177427bc882605fa1e4a">&#9670;&nbsp;</a></span>to_json() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4574,7 +4915,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a85aad7db48e1fc97a00f92044fa2c1c2" name="a85aad7db48e1fc97a00f92044fa2c1c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85aad7db48e1fc97a00f92044fa2c1c2">&#9670;&nbsp;</a></span>to_json() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a85aad7db48e1fc97a00f92044fa2c1c2">&#9670;&nbsp;</a></span>to_json() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4608,6 +4949,34 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a77d77e1ffffe22979d93132a7acee1d3" name="a77d77e1ffffe22979d93132a7acee1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d77e1ffffe22979d93132a7acee1d3">&#9670;&nbsp;</a></span>to_json() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::to_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -4654,11 +5023,35 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Encodes a url parameter similar to php urlencode() </p>
+
+<p>Encodes a url parameter similar to php urlencode() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>String to encode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>* std::string URL encoded string </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a9e6c27b0fbcc58fe84087382096dca98" name="a9e6c27b0fbcc58fe84087382096dca98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6c27b0fbcc58fe84087382096dca98">&#9670;&nbsp;</a></span>audit_reason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thread_local std::string dpp::audit_reason</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An audit reason for each thread. These are per-thread to make the cluster methods like <a class="el" href="classdpp_1_1cluster.html#ab7a2958625740b4a6fde6643042c5f7e" title="Get the audit reason set for the next REST call to be made on this thread. This is set per-thread,...">cluster::get_audit_reason</a> and <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason</a> thread safe across multiple threads. You must ensure you set the audit reason on the same thread that makes the request associated with it. </p>
+
+</div>
+</div>
 <a id="adf9c30193655252606a5db50aaf9cb98" name="adf9c30193655252606a5db50aaf9cb98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf9c30193655252606a5db50aaf9cb98">&#9670;&nbsp;</a></span>channel_cache</h2>
 
@@ -4667,6 +5060,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a>* dpp::channel_cache = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9654800251161e0925af5d1ec1452f8" name="ac9654800251161e0925af5d1ec1452f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9654800251161e0925af5d1ec1452f8">&#9670;&nbsp;</a></span>confirmation_callback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct DPP_EXPORT <a class="el" href="structdpp_1_1confirmation__callback__t.html">dpp::confirmation_callback_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4697,6 +5104,28 @@ Variables</h2></td></tr>
           <td class="memname">std::unordered_map&lt;<a class="el" href="classdpp_1_1managed.html">managed</a>*, time_t&gt; dpp::deletion_queue</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27df95e52167e3d7020ee6ad7958eaa8" name="a27df95e52167e3d7020ee6ad7958eaa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27df95e52167e3d7020ee6ad7958eaa8">&#9670;&nbsp;</a></span>DISCORD_HOST</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* dpp::DISCORD_HOST = &quot;https://discord.com&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -4757,6 +5186,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="af762f7c2f0c23de9fbba385e8f547d29" name="af762f7c2f0c23de9fbba385e8f547d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af762f7c2f0c23de9fbba385e8f547d29">&#9670;&nbsp;</a></span>FORMAT_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t dpp::FORMAT_VERSION = 131</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Current ETF format version in use </p>
+
+</div>
+</div>
 <a id="a2bc14e10038152802645f051c747dc2f" name="a2bc14e10038152802645f051c747dc2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bc14e10038152802645f051c747dc2f">&#9670;&nbsp;</a></span>guild_cache</h2>
 
@@ -4767,6 +5211,28 @@ Variables</h2></td></tr>
           <td class="memname"><a class="el" href="classdpp_1_1cache.html">cache</a>* dpp::guild_cache = nullptr</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f29330ede66fa21fc47c361a9c51a7b" name="a4f29330ede66fa21fc47c361a9c51a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f29330ede66fa21fc47c361a9c51a7b">&#9670;&nbsp;</a></span>http_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::http_version = &quot;DiscordBot (https://github.com/brainboxdotcc/DPP, &quot; + std::to_string(DPP_VERSION_MAJOR) + &quot;.&quot; + std::to_string(DPP_VERSION_MINOR) + &quot;.&quot; + std::to_string(DPP_VERSION_PATCH) + &quot;)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -4820,7 +5286,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const unsigned char dpp::WS_FINBIT = (1 &lt;&lt; 7)</td>
+          <td class="memname">const unsigned char dpp::WS_FINBIT = (1u &lt;&lt; 7u)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4834,7 +5300,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const unsigned char dpp::WS_MASKBIT = (1 &lt;&lt; 7)</td>
+          <td class="memname">const unsigned char dpp::WS_MASKBIT = (1u &lt;&lt; 7u)</td>
         </tr>
       </table>
 </div><div class="memdoc">

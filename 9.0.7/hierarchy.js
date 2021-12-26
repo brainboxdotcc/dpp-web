@@ -37,6 +37,8 @@ var hierarchy =
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
     [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
+    [ "dpp::etf_buffer", "structdpp_1_1etf__buffer.html", null ],
+    [ "dpp::etf_parser", "classdpp_1_1etf__parser.html", null ],
     [ "dpp::events::event", "classdpp_1_1events_1_1event.html", [
       [ "dpp::events::application_command_create", "classdpp_1_1events_1_1application__command__create.html", null ],
       [ "dpp::events::application_command_delete", "classdpp_1_1events_1_1application__command__delete.html", null ],
@@ -81,6 +83,7 @@ var hierarchy =
       [ "dpp::events::resumed", "classdpp_1_1events_1_1resumed.html", null ],
       [ "dpp::events::stage_instance_create", "classdpp_1_1events_1_1stage__instance__create.html", null ],
       [ "dpp::events::stage_instance_delete", "classdpp_1_1events_1_1stage__instance__delete.html", null ],
+      [ "dpp::events::stage_instance_update", "classdpp_1_1events_1_1stage__instance__update.html", null ],
       [ "dpp::events::thread_create", "classdpp_1_1events_1_1thread__create.html", null ],
       [ "dpp::events::thread_delete", "classdpp_1_1events_1_1thread__delete.html", null ],
       [ "dpp::events::thread_list_sync", "classdpp_1_1events_1_1thread__list__sync.html", null ],
@@ -140,6 +143,7 @@ var hierarchy =
       [ "dpp::resumed_t", "structdpp_1_1resumed__t.html", null ],
       [ "dpp::stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", null ],
       [ "dpp::stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", null ],
+      [ "dpp::stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", null ],
       [ "dpp::thread_create_t", "structdpp_1_1thread__create__t.html", null ],
       [ "dpp::thread_delete_t", "structdpp_1_1thread__delete__t.html", null ],
       [ "dpp::thread_list_sync_t", "structdpp_1_1thread__list__sync__t.html", null ],
@@ -213,10 +217,12 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
+    [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
     [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
+    [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],

@@ -9,6 +9,7 @@ var classdpp_1_1interaction =
     [ "id", "classdpp_1_1interaction.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "member", "classdpp_1_1interaction.html#a8d1cc9b3f5ccab6fc206c1adb864ac06", null ],
     [ "message_id", "classdpp_1_1interaction.html#a5101b493d82a15b9fa3aca68a6386e39", null ],
+    [ "resolved", "classdpp_1_1interaction.html#aaa88ba118d0a7b5b32090a844610d7e7", null ],
     [ "token", "classdpp_1_1interaction.html#a3d20499cf0b8b93c655b904847622085", null ],
     [ "type", "classdpp_1_1interaction.html#ae1df9ec5826bac923ee92e2037bf17cc", null ],
     [ "usr", "classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3", null ],

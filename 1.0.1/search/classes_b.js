@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['reaction_0',['reaction',['../structdpp_1_1reaction.html',1,'dpp']]],
-  ['ready_1',['ready',['../classdpp_1_1events_1_1ready.html',1,'dpp::events']]],
-  ['ready_5ft_2',['ready_t',['../structdpp_1_1ready__t.html',1,'dpp']]],
-  ['request_5fqueue_3',['request_queue',['../classdpp_1_1request__queue.html',1,'dpp']]],
-  ['resumed_4',['resumed',['../classdpp_1_1events_1_1resumed.html',1,'dpp::events']]],
-  ['resumed_5ft_5',['resumed_t',['../structdpp_1_1resumed__t.html',1,'dpp']]],
-  ['role_6',['role',['../classdpp_1_1role.html',1,'dpp']]],
-  ['rtp_5fheader_7',['rtp_header',['../structdpp_1_1rtp__header.html',1,'dpp']]]
+  ['opensslcontext_0',['opensslcontext',['../classdpp_1_1opensslcontext.html',1,'dpp']]],
+  ['opusdecoder_1',['OpusDecoder',['../struct_opus_decoder.html',1,'']]],
+  ['opusencoder_2',['OpusEncoder',['../struct_opus_encoder.html',1,'']]],
+  ['opusrepacketizer_3',['OpusRepacketizer',['../struct_opus_repacketizer.html',1,'']]]
 ];

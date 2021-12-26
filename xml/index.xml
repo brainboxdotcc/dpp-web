@@ -387,6 +387,7 @@
   </compound>
   <compound refid="classdpp_1_1cluster" kind="class"><name>dpp::cluster</name>
     <member refid="classdpp_1_1cluster_1ab0d2c95628830a28f9abb09441914e40" kind="friend"><name>discord_client</name></member>
+    <member refid="classdpp_1_1cluster_1abc4e53e79731117ca95bca977baef820" kind="friend"><name>discord_voice_client</name></member>
     <member refid="classdpp_1_1cluster_1a550e3f1bf003f129a04c6acc0fcaa914" kind="variable"><name>rest</name></member>
     <member refid="classdpp_1_1cluster_1a24896cc48e0c7bcafae0db762ea725d8" kind="variable"><name>raw_rest</name></member>
     <member refid="classdpp_1_1cluster_1a3334e0a3ee0cbf7e20a7a88e9b73f8df" kind="variable"><name>compressed</name></member>
@@ -839,6 +840,18 @@
     <member refid="classdpp_1_1discord__client_1af5314358ae06ff298fbe659984648c86" kind="friend"><name>dpp::events::voice_state_update</name></member>
     <member refid="classdpp_1_1discord__client_1a38bd58112bc810d3a3ac9d88a316d2e9" kind="friend"><name>dpp::events::guild_create</name></member>
     <member refid="classdpp_1_1discord__client_1a836b658e110edfcbb21ea88b2ad90e90" kind="friend"><name>dpp::cluster</name></member>
+    <member refid="classdpp_1_1discord__client_1af98b4e15c20b99374d7649e8b8186002" kind="variable"><name>terminating</name></member>
+    <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" kind="variable"><name>buffer</name></member>
+    <member refid="classdpp_1_1ssl__client_1a1f9600d4fd902c74c6d8b748c359eecc" kind="variable"><name>obuffer</name></member>
+    <member refid="classdpp_1_1ssl__client_1a1486b3df6780a842552442a25634fcc9" kind="variable"><name>nonblocking</name></member>
+    <member refid="classdpp_1_1ssl__client_1a423ca70d4046067ebe219f85c7baa540" kind="variable"><name>sfd</name></member>
+    <member refid="classdpp_1_1ssl__client_1a2398ebb5fe51346ca7e97ec162327c4e" kind="variable"><name>ssl</name></member>
+    <member refid="classdpp_1_1ssl__client_1a5fc2e7836da5485216419bbf17e49428" kind="variable"><name>cipher</name></member>
+    <member refid="classdpp_1_1ssl__client_1a61f0bbeefa25de686ac93887afa65895" kind="variable"><name>last_tick</name></member>
+    <member refid="classdpp_1_1ssl__client_1a9aab17086711ef6777a01ee0974b5ce8" kind="variable"><name>hostname</name></member>
+    <member refid="classdpp_1_1ssl__client_1a53cda56d5d61e3371bd7be2424e7ff07" kind="variable"><name>port</name></member>
+    <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" kind="variable"><name>bytes_out</name></member>
+    <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" kind="variable"><name>bytes_in</name></member>
     <member refid="classdpp_1_1discord__client_1aac742863ae29a76c2ef1a337c19c7b45" kind="variable"><name>queue_mutex</name></member>
     <member refid="classdpp_1_1discord__client_1a0c7eeee6642b74777eb48b90b5d5c3b4" kind="variable"><name>message_queue</name></member>
     <member refid="classdpp_1_1discord__client_1ae2b41454f50ff851430d2a2615336e63" kind="variable"><name>runner</name></member>
@@ -906,17 +919,6 @@
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" kind="function"><name>get_cipher</name></member>
     <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kind="function"><name>read_loop</name></member>
-    <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" kind="variable"><name>buffer</name></member>
-    <member refid="classdpp_1_1ssl__client_1a1f9600d4fd902c74c6d8b748c359eecc" kind="variable"><name>obuffer</name></member>
-    <member refid="classdpp_1_1ssl__client_1a1486b3df6780a842552442a25634fcc9" kind="variable"><name>nonblocking</name></member>
-    <member refid="classdpp_1_1ssl__client_1a423ca70d4046067ebe219f85c7baa540" kind="variable"><name>sfd</name></member>
-    <member refid="classdpp_1_1ssl__client_1a2398ebb5fe51346ca7e97ec162327c4e" kind="variable"><name>ssl</name></member>
-    <member refid="classdpp_1_1ssl__client_1a5fc2e7836da5485216419bbf17e49428" kind="variable"><name>cipher</name></member>
-    <member refid="classdpp_1_1ssl__client_1a61f0bbeefa25de686ac93887afa65895" kind="variable"><name>last_tick</name></member>
-    <member refid="classdpp_1_1ssl__client_1a9aab17086711ef6777a01ee0974b5ce8" kind="variable"><name>hostname</name></member>
-    <member refid="classdpp_1_1ssl__client_1a53cda56d5d61e3371bd7be2424e7ff07" kind="variable"><name>port</name></member>
-    <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" kind="variable"><name>bytes_out</name></member>
-    <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" kind="variable"><name>bytes_in</name></member>
   </compound>
   <compound refid="classdpp_1_1discord__voice__client" kind="class"><name>dpp::discord_voice_client</name>
     <member refid="classdpp_1_1discord__voice__client_1afe4e67fad90702358e32370a0aa4b0aa" kind="variable"><name>stream_mutex</name></member>
