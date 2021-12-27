@@ -17,21 +17,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="134" column="12" bodyfile="include/dpp/dispatcher.h" bodystart="134" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="167" column="12" bodyfile="include/dpp/dispatcher.h" bodystart="167" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::event_dispatch_t::raw_event</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string dpp::event_dispatch_t::raw_event</definition>
         <argsstring></argsstring>
         <name>raw_event</name>
         <briefdescription>
+<para>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </para>
         </briefdescription>
         <detaileddescription>
-<para>Raw event text </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="40" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="40" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="53" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
         <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
@@ -39,13 +39,13 @@
         <argsstring></argsstring>
         <name>from</name>
         <briefdescription>
+<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
         </briefdescription>
         <detaileddescription>
-<para>Shard the event came from </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="43" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="43" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="59" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -86,7 +86,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="132" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="97" bodyend="97"/>
+        <location file="include/dpp/dispatcher.h" line="165" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
+        <definition>const event_dispatch_t &amp; dpp::event_dispatch_t::cancel_event</definition>
+        <argsstring>() const</argsstring>
+        <name>cancel_event</name>
+        <briefdescription>
+<para>Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <computeroutput>const</computeroutput> during the event, and cannot itself contain the changeable state). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>&amp; reference to self for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="75" column="24" bodyfile="src/dpp/dispatcher.cpp" bodystart="42" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::event_dispatch_t::is_cancelled</definition>
+        <argsstring>() const</argsstring>
+        <name>is_cancelled</name>
+        <briefdescription>
+<para>Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <computeroutput>const</computeroutput> during the event, and cannot itself contain the changeable state). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the event is cancelled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="83" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="51" bodyend="54"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -107,9 +141,6 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9">
-        <label>SOCKET</label>
-      </node>
       <node id="11">
         <label>SSL *</label>
       </node>
@@ -119,16 +150,16 @@
       <node id="8">
         <label>bool</label>
       </node>
-      <node id="26">
+      <node id="27">
         <label>cache_policy_setting_t</label>
       </node>
       <node id="18">
         <label>double</label>
       </node>
-      <node id="25">
+      <node id="26">
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="26" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>emoji_policy</edgelabel>
           <edgelabel>role_policy</edgelabel>
           <edgelabel>user_policy</edgelabel>
@@ -155,11 +186,14 @@
         <childnode refid="19" relation="usage">
           <edgelabel>dispatch</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>me</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>cache_policy</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>ws_mode</edgelabel>
         </childnode>
       </node>
       <node id="5">
@@ -182,7 +216,7 @@
           <edgelabel>last_heartbeat</edgelabel>
           <edgelabel>last_heartbeat_ack</edgelabel>
         </childnode>
-        <childnode refid="27" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>thread_id</edgelabel>
         </childnode>
         <childnode refid="14" relation="usage">
@@ -192,7 +226,7 @@
           <edgelabel>sessionid</edgelabel>
           <edgelabel>token</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>voice_mutex</edgelabel>
         </childnode>
         <childnode refid="18" relation="usage">
@@ -201,24 +235,27 @@
         <childnode refid="8" relation="usage">
           <edgelabel>ready</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="28" relation="usage">
+          <edgelabel>protocol</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
           <edgelabel>connecting_voice_channels</edgelabel>
         </childnode>
       </node>
       <node id="19">
         <label>dpp::dispatcher</label>
         <link refid="classdpp_1_1dispatcher"/>
-        <childnode refid="15" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>application_command_create</edgelabel>
           <edgelabel>application_command_delete</edgelabel>
           <edgelabel>application_command_update</edgelabel>
+          <edgelabel>autocomplete</edgelabel>
           <edgelabel>button_click</edgelabel>
           <edgelabel>channel_create</edgelabel>
           <edgelabel>channel_delete</edgelabel>
           <edgelabel>channel_pins_update</edgelabel>
           <edgelabel>channel_update</edgelabel>
           <edgelabel>guild_ban_add</edgelabel>
-          <edgelabel>guild_ban_remove</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
       </node>
@@ -232,7 +269,7 @@
           <edgelabel>from</edgelabel>
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>dpp::managed</label>
         <link refid="classdpp_1_1managed"/>
         <childnode refid="14" relation="usage">
@@ -282,28 +319,28 @@
           <edgelabel>custom_writeable_ready</edgelabel>
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>dpp::user</label>
         <link refid="classdpp_1_1user"/>
-        <childnode refid="21" relation="public-inheritance">
+        <childnode refid="22" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>username</edgelabel>
         </childnode>
-        <childnode refid="22" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>discriminator</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="24" relation="usage">
           <edgelabel>avatar</edgelabel>
         </childnode>
         <childnode refid="17" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>refcount</edgelabel>
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>dpp::utility::iconhash</label>
         <link refid="structdpp_1_1utility_1_1iconhash"/>
         <childnode refid="14" relation="usage">
@@ -316,11 +353,11 @@
         <link refid="structdpp_1_1voice__state__update__t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="32" relation="usage">
           <edgelabel>state</edgelabel>
         </childnode>
       </node>
-      <node id="30">
+      <node id="32">
         <label>dpp::voicestate</label>
         <link refid="classdpp_1_1voicestate"/>
         <childnode refid="5" relation="usage">
@@ -334,7 +371,7 @@
         <childnode refid="3" relation="usage">
           <edgelabel>session_id</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
       </node>
@@ -344,13 +381,16 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="9">
+        <label>int</label>
+      </node>
       <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
       <node id="15">
         <label>function&lt;</label>
       </node>
-      <node id="28">
+      <node id="30">
         <label>std::mutex</label>
       </node>
       <node id="3">
@@ -358,16 +398,19 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="29">
         <label>native_handle_type</label>
       </node>
-      <node id="29">
+      <node id="31">
         <label>unordered_map&lt;</label>
+      </node>
+      <node id="20">
+        <label>vector&lt;</label>
       </node>
       <node id="13">
         <label>time_t</label>
       </node>
-      <node id="22">
+      <node id="23">
         <label>uint16_t</label>
       </node>
       <node id="17">
@@ -376,15 +419,20 @@
       <node id="14">
         <label>uint64_t</label>
       </node>
-      <node id="24">
+      <node id="25">
         <label>uint8_t</label>
       </node>
+      <node id="28">
+        <label>websocket_protocol_t</label>
+      </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="127" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="127" bodyend="135"/>
+    <location file="include/dpp/dispatcher.h" line="160" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="160" bodyend="168"/>
     <listofallmembers>
+      <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" virt="non-virtual"><scope>dpp::voice_state_update_t</scope><name>cancel_event</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::voice_state_update_t</scope><name>event_dispatch_t</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" virt="non-virtual"><scope>dpp::voice_state_update_t</scope><name>from</name></member>
-      <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" virt="non-virtual"><scope>dpp::voice_state_update_t</scope><name>raw_event</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" virt="non-virtual"><scope>dpp::voice_state_update_t</scope><name>is_cancelled</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" virt="non-virtual"><scope>dpp::voice_state_update_t</scope><name>raw_event</name></member>
       <member refid="structdpp_1_1voice__state__update__t_1a00fa332a89cc7839515806e58b8731a3" prot="public" virt="non-virtual"><scope>dpp::voice_state_update_t</scope><name>state</name></member>
       <member refid="structdpp_1_1voice__state__update__t_1a421fc199dfeb2542ad61248b3a600a79" prot="public" virt="non-virtual"><scope>dpp::voice_state_update_t</scope><name>voice_state_update_t</name></member>
     </listofallmembers>

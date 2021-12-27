@@ -129,19 +129,19 @@ Comments</h1>
 <p >All comments should be in <code>doxygen</code> format (similar to javadoc). Please see existing class definitions for an example. You should use doxygen style comments in a class definition inside a header file, and can use any other comment types within the .cpp file. Be liberal with comments, especially if your code makes any assumptions!</p>
 <h1><a class="anchor" id="autotoc_md50"></a>
 Symbol exporting</h1>
-<p >If you export a class which is to be accessible to users, be sure to prefix it with the <code>CoreExport</code> macro, for example:</p>
-<div class="fragment"><div class="line"><span class="keyword">class </span>CoreExport my_new_class {</div>
+<p >If you export a class which is to be accessible to users, be sure to prefix it with the <code>DPP_EXPORT</code> macro, for example:</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>DPP_EXPORT my_new_class {</div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="keywordtype">int</span> hats;</div>
 <div class="line">    <span class="keywordtype">int</span> clowns;</div>
 <div class="line">};</div>
-</div><!-- fragment --><p >The <code>CoreExport</code> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</p>
+</div><!-- fragment --><p >The <code>DPP_EXPORT</code> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</p>
 <h1><a class="anchor" id="autotoc_md51"></a>
 Public vs private vs protected</h1>
 <p >It is a design philosophy of D++ that everything possible in a class should be public, unless the user really does not need it (you should consider justifying in comments why) or user adjustment of the variable could badly break the functioning of the library. Avoid the use of accessors for setting/getting values in a class, except for bit fields, where you should provide accessors for setting and getting individual bits (for example, see <code>user.h</code>), or in the event you want to provide a "fluent" interface.</p>
 <h1><a class="anchor" id="autotoc_md52"></a>
-Inheritence</h1>
-<p >Keep levels of inheritence low. If you need to inherit more than 3 levels deep, it is probable that the design could be simplified. Remember that at scale, there can be tens of millions of certain classes and each level of virtual nesting adds to the <code>vtable</code> of that object's instance in RAM.</p>
+Inheritance</h1>
+<p >Keep levels of inheritance low. If you need to inherit more than 3 levels deep, it is probable that the design could be simplified. Remember that at scale, there can be tens of millions of certain classes and each level of virtual nesting adds to the <code>vtable</code> of that object's instance in RAM.</p>
 <h1><a class="anchor" id="autotoc_md53"></a>
 Bit field packing</h1>
 <p >Where discord provides boolean flags, if the user is expected to store many of the object in RAM, or in cache, you should pack all these booleans into bit fields (see <code>user.h</code> and <code>channel.h</code> for examples). In the event that the object is transient, such as an interaction or a message, packing the data into bit fields is counter intuitive. Remember that you should provide specific accessors for bit field values!</p>
@@ -160,7 +160,7 @@ Select the right size type for numeric types</h1>
 <h1><a class="anchor" id="autotoc_md58"></a>
 Fluent design</h1>
 <p >Where possible, if you are adding methods to a class you should consider fluent design. Fluent design is the use of class methods tha return a reference to self (via <code>return *this</code>), so that you can chain object method calls together (in the way <code><a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a></code> and <code><a class="el" href="structdpp_1_1embed.html" title="A rich embed for display within a dpp::message.">dpp::embed</a></code> do). For example:</p>
-<div class="fragment"><div class="line"><span class="keyword">class </span>CoreExport my_new_class {</div>
+<div class="fragment"><div class="line"><span class="keyword">class </span>DPP_EXPORT my_new_class {</div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="keywordtype">int</span> hats;</div>
 <div class="line">    <span class="keywordtype">int</span> clowns;</div>

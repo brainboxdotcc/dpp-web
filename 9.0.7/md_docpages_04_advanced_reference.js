@@ -15,7 +15,7 @@ var md_docpages_04_advanced_reference =
       [ "Comments", "coding-standards.html#autotoc_md49", null ],
       [ "Symbol exporting", "coding-standards.html#autotoc_md50", null ],
       [ "Public vs private vs protected", "coding-standards.html#autotoc_md51", null ],
-      [ "Inheritence", "coding-standards.html#autotoc_md52", null ],
+      [ "Inheritance", "coding-standards.html#autotoc_md52", null ],
       [ "Bit field packing", "coding-standards.html#autotoc_md53", null ],
       [ "Keep dependencies internal!", "coding-standards.html#autotoc_md54", null ],
       [ "API type names", "coding-standards.html#autotoc_md55", null ],

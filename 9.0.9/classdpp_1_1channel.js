@@ -19,6 +19,7 @@ var classdpp_1_1channel =
     [ "is_store_channel", "classdpp_1_1channel.html#a04256bb3015b9fa150d56a8025a6e1d0", null ],
     [ "is_text_channel", "classdpp_1_1channel.html#a7b9bfb2f922e7cfcbbb1d60f02e5a901", null ],
     [ "is_voice_channel", "classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916", null ],
+    [ "bitrate", "classdpp_1_1channel.html#ab32308d8281aef6bfe4d5a6538c6306e", null ],
     [ "flags", "classdpp_1_1channel.html#a709f24110a06b558170cae9231572bef", null ],
     [ "guild_id", "classdpp_1_1channel.html#a52a3d85468b8b6a1eb16c1bdb19cb499", null ],
     [ "id", "classdpp_1_1channel.html#a40bf0c6cc03909910512808fa6caa112", null ],

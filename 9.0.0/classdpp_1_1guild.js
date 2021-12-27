@@ -1,10 +1,12 @@
 var classdpp_1_1guild =
 [
     [ "guild", "classdpp_1_1guild.html#aeae6599054436a5a66e07683032089dc", null ],
+    [ "~guild", "classdpp_1_1guild.html#a7e494da5ab1aaaddae4d588849ea9f14", null ],
     [ "base_permissions", "classdpp_1_1guild.html#a0efc24108bb872be9be88cf26bc5af28", null ],
     [ "build_json", "classdpp_1_1guild.html#ac61dbbc6e4c64edd19a96a7ce44d9ab9", null ],
-    [ "ConnectMemberVoice", "classdpp_1_1guild.html#a09d9fdbfb0759d27f97f571dd046ebb5", null ],
+    [ "connect_member_voice", "classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e", null ],
     [ "fill_from_json", "classdpp_1_1guild.html#af180ee5682802b64c79d2dc8abc7c9cd", null ],
+    [ "has_animated_banner_icon_hash", "classdpp_1_1guild.html#a6e5dcd2c2d443d68e759897958b6c7da", null ],
     [ "has_animated_icon", "classdpp_1_1guild.html#a46cf6e3821d628027553641c0623df34", null ],
     [ "has_animated_icon_hash", "classdpp_1_1guild.html#a019d630e2b5aeb708b48d6f8fbb420de", null ],
     [ "has_banner", "classdpp_1_1guild.html#a6ec058ad4e9fde64b0a043287c3f6a73", null ],
@@ -58,5 +60,6 @@ var classdpp_1_1guild =
     [ "verification_level", "classdpp_1_1guild.html#a6132ae5944f766ade85c4fc4521180a5", null ],
     [ "voice_members", "classdpp_1_1guild.html#a42066fe3bbfb976ba27fbb9ca38b722f", null ],
     [ "voice_region", "classdpp_1_1guild.html#ab4e8470fb6d73ecc5cf60d952616fda6", null ],
+    [ "welcome_screen", "classdpp_1_1guild.html#a5a37b855f93b3fcd6ce083329dace4f1", null ],
     [ "widget_channel_id", "classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01", null ]
 ];

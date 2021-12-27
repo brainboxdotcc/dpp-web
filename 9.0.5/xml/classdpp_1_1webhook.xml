@@ -236,18 +236,23 @@
         </inbodydescription>
         <location file="include/dpp/webhook.h" line="75" column="13" bodyfile="src/dpp/webhook.cpp" bodystart="58" bodyend="76"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1webhook_1a32001586764985ccb69c26e47890028f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref> &amp;</type>
         <definition>webhook &amp; dpp::webhook::load_image</definition>
-        <argsstring>(const std::string &amp;image_blob, image_type type)</argsstring>
+        <argsstring>(const std::string &amp;image_blob, const image_type type, bool is_base64_encoded=false)</argsstring>
         <name>load_image</name>
         <param>
           <type>const std::string &amp;</type>
           <declname>image_blob</declname>
         </param>
         <param>
-          <type><ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <type>const <ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
           <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_base64_encoded</declname>
+          <defval>false</defval>
         </param>
         <briefdescription>
 <para>Base64 encode image data and allocate it to image_data. </para>
@@ -269,6 +274,14 @@
 <para>Image type </para>
 </parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_base64_encoded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the image data is already base64 encoded </para>
+</parameterdescription>
+</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>webhook&amp; Reference to self </para>
 </simplesect>
@@ -276,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/webhook.h" line="84" column="9" bodyfile="src/dpp/webhook.cpp" bodystart="78" bodyend="94"/>
+        <location file="include/dpp/webhook.h" line="85" column="9" bodyfile="src/dpp/webhook.cpp" bodystart="78" bodyend="93"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -340,7 +353,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/webhook.h" line="39" column="1" bodyfile="include/dpp/webhook.h" bodystart="39" bodyend="85"/>
+    <location file="include/dpp/webhook.h" line="39" column="1" bodyfile="include/dpp/webhook.h" bodystart="39" bodyend="86"/>
     <listofallmembers>
       <member refid="classdpp_1_1webhook_1af37345950a45e0b0b15b345625f26c85" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>application_id</name></member>
       <member refid="classdpp_1_1webhook_1a905a15aff7538542766b7f57a9dd7110" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>avatar</name></member>
@@ -350,7 +363,7 @@
       <member refid="classdpp_1_1webhook_1aeb4a3c383260167ef6a05fe2e31f2e75" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>guild_id</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>id</name></member>
       <member refid="classdpp_1_1webhook_1ade12623a3521f4d7d68f11c26ab79a5b" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>image_data</name></member>
-      <member refid="classdpp_1_1webhook_1a32001586764985ccb69c26e47890028f" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>load_image</name></member>
+      <member refid="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>load_image</name></member>
       <member refid="classdpp_1_1managed_1a3e2b7d69e7313d84aff23cadf9ba9a6a" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
       <member refid="classdpp_1_1webhook_1af982ac0a68dd3f81fcb267a713d338f3" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>name</name></member>
       <member refid="classdpp_1_1webhook_1a1500f11e74b9a859f0cd0c4cf9d135b0" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>token</name></member>

@@ -145,12 +145,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf454dbea724739e53540721af21b9a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3">route</a> (const struct <a class="el" href="structdpp_1_1interaction__create__t.html">interaction_create_t</a> &amp;event)</td></tr>
 <tr class="memdesc:acf454dbea724739e53540721af21b9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route a command from the on_interaction_create function. Call this method from your on_interaction_create with the received <a class="el" href="structdpp_1_1interaction__create__t.html" title="Create interaction.">dpp::interaction_create_t</a> object.  <a href="classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3">More...</a><br /></td></tr>
 <tr class="separator:acf454dbea724739e53540721af21b9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09893dbf101b7d0082b0a13e801a9db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a09893dbf101b7d0082b0a13e801a9db9">reply</a> (const <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;m, <a class="el" href="structdpp_1_1command__source.html">command_source</a> source)</td></tr>
-<tr class="memdesc:a09893dbf101b7d0082b0a13e801a9db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command. You should use this method rather than <a class="el" href="classdpp_1_1cluster.html#a080a8cefc6ceb0b882fdb6fe70c078a6" title="Send a message to a channel. The callback function is called when the message has been sent.">cluster::message_create</a> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="classdpp_1_1commandhandler.html#a09893dbf101b7d0082b0a13e801a9db9">More...</a><br /></td></tr>
-<tr class="separator:a09893dbf101b7d0082b0a13e801a9db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad7a740213d2daf06bf182ba1afc13e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a4ad7a740213d2daf06bf182ba1afc13e">thinking</a> (<a class="el" href="structdpp_1_1command__source.html">command_source</a> source)</td></tr>
-<tr class="memdesc:a4ad7a740213d2daf06bf182ba1afc13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command without a message, causing the discord client to display "Bot name is thinking...". The "thinking" message will persist for a maximum of 15 minutes. This counts as a reply for a slash command. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="classdpp_1_1commandhandler.html#a4ad7a740213d2daf06bf182ba1afc13e">More...</a><br /></td></tr>
-<tr class="separator:a4ad7a740213d2daf06bf182ba1afc13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e8e241a9208405bf05d7cf8806cd19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a50e8e241a9208405bf05d7cf8806cd19">reply</a> (const <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;m, <a class="el" href="structdpp_1_1command__source.html">command_source</a> source, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a50e8e241a9208405bf05d7cf8806cd19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command. You should use this method rather than <a class="el" href="classdpp_1_1cluster.html#a080a8cefc6ceb0b882fdb6fe70c078a6" title="Send a message to a channel. The callback function is called when the message has been sent.">cluster::message_create</a> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="classdpp_1_1commandhandler.html#a50e8e241a9208405bf05d7cf8806cd19">More...</a><br /></td></tr>
+<tr class="separator:a50e8e241a9208405bf05d7cf8806cd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ddef707401052283e69956feab5a5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#aa8ddef707401052283e69956feab5a5c">thinking</a> (<a class="el" href="structdpp_1_1command__source.html">command_source</a> source, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:aa8ddef707401052283e69956feab5a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command without a message, causing the discord client to display "Bot name is thinking...". The "thinking" message will persist for a maximum of 15 minutes. This counts as a reply for a slash command. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="classdpp_1_1commandhandler.html#aa8ddef707401052283e69956feab5a5c">More...</a><br /></td></tr>
+<tr class="separator:aa8ddef707401052283e69956feab5a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -351,8 +351,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a09893dbf101b7d0082b0a13e801a9db9" name="a09893dbf101b7d0082b0a13e801a9db9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09893dbf101b7d0082b0a13e801a9db9">&#9670;&nbsp;</a></span>reply()</h2>
+<a id="a50e8e241a9208405bf05d7cf8806cd19" name="a50e8e241a9208405bf05d7cf8806cd19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50e8e241a9208405bf05d7cf8806cd19">&#9670;&nbsp;</a></span>reply()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,7 +367,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structdpp_1_1command__source.html">command_source</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -382,6 +388,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">m</td><td>message to reply with. </td></tr>
     <tr><td class="paramname">source</td><td>source of the command </td></tr>
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -495,8 +502,8 @@ false string did not contain a prefix </dd></dl>
 
 </div>
 </div>
-<a id="a4ad7a740213d2daf06bf182ba1afc13e" name="a4ad7a740213d2daf06bf182ba1afc13e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ad7a740213d2daf06bf182ba1afc13e">&#9670;&nbsp;</a></span>thinking()</h2>
+<a id="aa8ddef707401052283e69956feab5a5c" name="aa8ddef707401052283e69956feab5a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ddef707401052283e69956feab5a5c">&#9670;&nbsp;</a></span>thinking()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,8 +512,18 @@ false string did not contain a prefix </dd></dl>
           <td class="memname">void dpp::commandhandler::thinking </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdpp_1_1command__source.html">command_source</a>&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -515,6 +532,7 @@ false string did not contain a prefix </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>source of the command </td></tr>
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes. </td></tr>
   </table>
   </dd>
 </dl>

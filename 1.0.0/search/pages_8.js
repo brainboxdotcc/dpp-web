@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['using_20slash_20commands_20and_20interactions_0',['Using Slash Commands and Interactions',['../slashcommands.html',1,'md_docpages_Z_04_EXAMPLE']]]
+  ['record_20yourself_20in_20a_20vc_0',['Record yourself in a VC',['../record-user.html',1,'md_docpages_03_example_programs']]]
 ];

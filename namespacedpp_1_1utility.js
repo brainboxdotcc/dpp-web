@@ -3,6 +3,7 @@ var namespacedpp_1_1utility =
     [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
     [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ],
     [ "cmd_result_t", "namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6", null ],
+    [ "avatar_size", "namespacedpp_1_1utility.html#ab1b9a9f3dbfb71cb8b8d223062e4cd62", null ],
     [ "bytes", "namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08", null ],
     [ "current_date_time", "namespacedpp_1_1utility.html#a1a9168eaaf347543e55e607858f24eb3", null ],
     [ "debug_dump", "namespacedpp_1_1utility.html#a02456e22a1d41893a9b321bf8ccaeec6", null ],
@@ -16,5 +17,6 @@ var namespacedpp_1_1utility =
     [ "timestamp", "namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5", null ],
     [ "utf8len", "namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231", null ],
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
-    [ "validate", "namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86", null ]
+    [ "validate", "namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86", null ],
+    [ "cdn_host", "namespacedpp_1_1utility.html#a8b2a5e26d9da867e836e75187c505443", null ]
 ];

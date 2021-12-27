@@ -42,22 +42,22 @@
 </sect1>
 <sect1 id="coding-standards_1autotoc_md50">
 <title>Symbol exporting</title>
-<para>If you export a class which is to be accessible to users, be sure to prefix it with the <computeroutput>CoreExport</computeroutput> macro, for example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoreExport<sp/>my_new_class<sp/>{</highlight></codeline>
+<para>If you export a class which is to be accessible to users, be sure to prefix it with the <computeroutput>DPP_EXPORT</computeroutput> macro, for example:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>
 <codeline><highlight class="normal">};</highlight></codeline>
 </programlisting></para>
-<para>The <computeroutput>CoreExport</computeroutput> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</para>
+<para>The <computeroutput>DPP_EXPORT</computeroutput> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</para>
 </sect1>
 <sect1 id="coding-standards_1autotoc_md51">
 <title>Public vs private vs protected</title>
 <para>It is a design philosophy of D++ that everything possible in a class should be public, unless the user really does not need it (you should consider justifying in comments why) or user adjustment of the variable could badly break the functioning of the library. Avoid the use of accessors for setting/getting values in a class, except for bit fields, where you should provide accessors for setting and getting individual bits (for example, see <computeroutput>user.h</computeroutput>), or in the event you want to provide a &quot;fluent&quot; interface.</para>
 </sect1>
 <sect1 id="coding-standards_1autotoc_md52">
-<title>Inheritence</title>
-<para>Keep levels of inheritence low. If you need to inherit more than 3 levels deep, it is probable that the design could be simplified. Remember that at scale, there can be tens of millions of certain classes and each level of virtual nesting adds to the <computeroutput>vtable</computeroutput> of that object&apos;s instance in RAM.</para>
+<title>Inheritance</title>
+<para>Keep levels of inheritance low. If you need to inherit more than 3 levels deep, it is probable that the design could be simplified. Remember that at scale, there can be tens of millions of certain classes and each level of virtual nesting adds to the <computeroutput>vtable</computeroutput> of that object&apos;s instance in RAM.</para>
 </sect1>
 <sect1 id="coding-standards_1autotoc_md53">
 <title>Bit field packing</title>
@@ -82,7 +82,7 @@
 <sect1 id="coding-standards_1autotoc_md58">
 <title>Fluent design</title>
 <para>Where possible, if you are adding methods to a class you should consider fluent design. Fluent design is the use of class methods tha return a reference to self (via <computeroutput>return *this</computeroutput>), so that you can chain object method calls together (in the way <computeroutput><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref></computeroutput> and <computeroutput><ref refid="structdpp_1_1embed" kindref="compound">dpp::embed</ref></computeroutput> do). For example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoreExport<sp/>my_new_class<sp/>{</highlight></codeline>
+<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>

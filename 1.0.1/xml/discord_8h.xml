@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="discord_8h" kind="file" language="C++">
     <compoundname>discord.h</compoundname>
+    <includes refid="export_8h" local="no">dpp/export.h</includes>
     <includes local="no">string</includes>
     <includes local="no">vector</includes>
     <includes local="no">unordered_map</includes>
@@ -23,7 +24,12 @@
     <includes refid="presence_8h" local="no">dpp/presence.h</includes>
     <includes refid="intents_8h" local="no">dpp/intents.h</includes>
     <includes refid="slashcommand_8h" local="no">dpp/slashcommand.h</includes>
+    <includes refid="stage__instance_8h" local="no">dpp/stage_instance.h</includes>
     <includes refid="auditlog_8h" local="no">dpp/auditlog.h</includes>
+    <includes refid="application_8h" local="no">dpp/application.h</includes>
+    <includedby refid="appcommand_8cpp" local="no">appcommand.cpp</includedby>
+    <includedby refid="application_8cpp" local="no">application.cpp</includedby>
+    <includedby refid="application_8h" local="no">application.h</includedby>
     <includedby refid="application__command__create_8cpp" local="no">application_command_create.cpp</includedby>
     <includedby refid="application__command__delete_8cpp" local="no">application_command_delete.cpp</includedby>
     <includedby refid="application__command__update_8cpp" local="no">application_command_update.cpp</includedby>
@@ -34,21 +40,31 @@
     <includedby refid="cache_8cpp" local="no">cache.cpp</includedby>
     <includedby refid="cache_8h" local="no">cache.h</includedby>
     <includedby refid="channel_8cpp" local="no">channel.cpp</includedby>
+    <includedby refid="cluster_2channel_8cpp" local="no">channel.cpp</includedby>
     <includedby refid="channel__create_8cpp" local="no">channel_create.cpp</includedby>
     <includedby refid="channel__delete_8cpp" local="no">channel_delete.cpp</includedby>
     <includedby refid="channel__pins__update_8cpp" local="no">channel_pins_update.cpp</includedby>
     <includedby refid="channel__update_8cpp" local="no">channel_update.cpp</includedby>
     <includedby refid="cluster_8cpp" local="no">cluster.cpp</includedby>
     <includedby refid="cluster_8h" local="no">cluster.h</includedby>
+    <includedby refid="commandhandler_8cpp" local="no">commandhandler.cpp</includedby>
+    <includedby refid="commandhandler_8h" local="no">commandhandler.h</includedby>
+    <includedby refid="confirmation_8cpp" local="no">confirmation.cpp</includedby>
     <includedby refid="discordevents_8cpp" local="no">discordevents.cpp</includedby>
     <includedby refid="dispatcher_8cpp" local="no">dispatcher.cpp</includedby>
     <includedby refid="dispatcher_8h" local="no">dispatcher.h</includedby>
+    <includedby refid="dm_8cpp" local="no">dm.cpp</includedby>
     <includedby refid="dpp_8h" local="no">dpp.h</includedby>
     <includedby refid="dtemplate_8h" local="no">dtemplate.h</includedby>
     <includedby refid="emoji_8cpp" local="no">emoji.cpp</includedby>
+    <includedby refid="cluster_2emoji_8cpp" local="no">emoji.cpp</includedby>
     <includedby refid="emoji_8h" local="no">emoji.h</includedby>
+    <includedby refid="etf_8cpp" local="no">etf.cpp</includedby>
+    <includedby refid="etf_8h" local="no">etf.h</includedby>
     <includedby refid="event_8h" local="no">event.h</includedby>
+    <includedby refid="gateway_8cpp" local="no">gateway.cpp</includedby>
     <includedby refid="guild_8cpp" local="no">guild.cpp</includedby>
+    <includedby refid="cluster_2guild_8cpp" local="no">guild.cpp</includedby>
     <includedby refid="guild__ban__add_8cpp" local="no">guild_ban_add.cpp</includedby>
     <includedby refid="guild__ban__remove_8cpp" local="no">guild_ban_remove.cpp</includedby>
     <includedby refid="guild__create_8cpp" local="no">guild_create.cpp</includedby>
@@ -56,6 +72,7 @@
     <includedby refid="guild__emojis__update_8cpp" local="no">guild_emojis_update.cpp</includedby>
     <includedby refid="guild__integrations__update_8cpp" local="no">guild_integrations_update.cpp</includedby>
     <includedby refid="guild__join__request__delete_8cpp" local="no">guild_join_request_delete.cpp</includedby>
+    <includedby refid="guild__member_8cpp" local="no">guild_member.cpp</includedby>
     <includedby refid="guild__member__add_8cpp" local="no">guild_member_add.cpp</includedby>
     <includedby refid="guild__member__remove_8cpp" local="no">guild_member_remove.cpp</includedby>
     <includedby refid="guild__member__update_8cpp" local="no">guild_member_update.cpp</includedby>
@@ -63,17 +80,20 @@
     <includedby refid="guild__role__create_8cpp" local="no">guild_role_create.cpp</includedby>
     <includedby refid="guild__role__delete_8cpp" local="no">guild_role_delete.cpp</includedby>
     <includedby refid="guild__role__update_8cpp" local="no">guild_role_update.cpp</includedby>
+    <includedby refid="guild__stickers__update_8cpp" local="no">guild_stickers_update.cpp</includedby>
     <includedby refid="guild__update_8cpp" local="no">guild_update.cpp</includedby>
     <includedby refid="integration_8cpp" local="no">integration.cpp</includedby>
     <includedby refid="integration__create_8cpp" local="no">integration_create.cpp</includedby>
     <includedby refid="integration__delete_8cpp" local="no">integration_delete.cpp</includedby>
     <includedby refid="integration__update_8cpp" local="no">integration_update.cpp</includedby>
     <includedby refid="interaction__create_8cpp" local="no">interaction_create.cpp</includedby>
+    <includedby refid="cluster_2invite_8cpp" local="no">invite.cpp</includedby>
     <includedby refid="invite_8h" local="no">invite.h</includedby>
     <includedby refid="invite__create_8cpp" local="no">invite_create.cpp</includedby>
     <includedby refid="invite__delete_8cpp" local="no">invite_delete.cpp</includedby>
     <includedby refid="logger_8cpp" local="no">logger.cpp</includedby>
     <includedby refid="managed_8cpp" local="no">managed.cpp</includedby>
+    <includedby refid="cluster_2message_8cpp" local="no">message.cpp</includedby>
     <includedby refid="message_8h" local="no">message.h</includedby>
     <includedby refid="message__create_8cpp" local="no">message_create.cpp</includedby>
     <includedby refid="message__delete_8cpp" local="no">message_delete.cpp</includedby>
@@ -88,45 +108,77 @@
     <includedby refid="prune_8h" local="no">prune.h</includedby>
     <includedby refid="ready_8cpp" local="no">ready.cpp</includedby>
     <includedby refid="resumed_8cpp" local="no">resumed.cpp</includedby>
+    <includedby refid="cluster_2role_8cpp" local="no">role.cpp</includedby>
     <includedby refid="role_8cpp" local="no">role.cpp</includedby>
     <includedby refid="slashcommand_8cpp" local="no">slashcommand.cpp</includedby>
     <includedby refid="slashcommand_8h" local="no">slashcommand.h</includedby>
     <includedby refid="sslclient_8cpp" local="no">sslclient.cpp</includedby>
     <includedby refid="sslclient_8h" local="no">sslclient.h</includedby>
+    <includedby refid="cluster_2stage__instance_8cpp" local="no">stage_instance.cpp</includedby>
+    <includedby refid="stage__instance_8cpp" local="no">stage_instance.cpp</includedby>
+    <includedby refid="stage__instance_8h" local="no">stage_instance.h</includedby>
     <includedby refid="stage__instance__create_8cpp" local="no">stage_instance_create.cpp</includedby>
     <includedby refid="stage__instance__delete_8cpp" local="no">stage_instance_delete.cpp</includedby>
+    <includedby refid="stage__instance__update_8cpp" local="no">stage_instance_update.cpp</includedby>
+    <includedby refid="sticker_8cpp" local="no">sticker.cpp</includedby>
+    <includedby refid="template_8cpp" local="no">template.cpp</includedby>
+    <includedby refid="thread_8cpp" local="no">thread.cpp</includedby>
+    <includedby refid="thread__create_8cpp" local="no">thread_create.cpp</includedby>
+    <includedby refid="thread__delete_8cpp" local="no">thread_delete.cpp</includedby>
+    <includedby refid="thread__list__sync_8cpp" local="no">thread_list_sync.cpp</includedby>
+    <includedby refid="thread__member__update_8cpp" local="no">thread_member_update.cpp</includedby>
+    <includedby refid="thread__members__update_8cpp" local="no">thread_members_update.cpp</includedby>
+    <includedby refid="thread__update_8cpp" local="no">thread_update.cpp</includedby>
     <includedby refid="typing__start_8cpp" local="no">typing_start.cpp</includedby>
     <includedby refid="user_8cpp" local="no">user.cpp</includedby>
+    <includedby refid="cluster_2user_8cpp" local="no">user.cpp</includedby>
     <includedby refid="user__update_8cpp" local="no">user_update.cpp</includedby>
     <includedby refid="utility_8cpp" local="no">utility.cpp</includedby>
+    <includedby refid="voice_8cpp" local="no">voice.cpp</includedby>
     <includedby refid="voice__server__update_8cpp" local="no">voice_server_update.cpp</includedby>
     <includedby refid="voice__state__update_8cpp" local="no">voice_state_update.cpp</includedby>
     <includedby refid="voiceregion_8cpp" local="no">voiceregion.cpp</includedby>
     <includedby refid="voiceregion_8h" local="no">voiceregion.h</includedby>
     <includedby refid="voicestate_8cpp" local="no">voicestate.cpp</includedby>
+    <includedby refid="cluster_2webhook_8cpp" local="no">webhook.cpp</includedby>
     <includedby refid="webhook_8cpp" local="no">webhook.cpp</includedby>
     <includedby refid="webhook_8h" local="no">webhook.h</includedby>
     <includedby refid="webhooks__update_8cpp" local="no">webhooks_update.cpp</includedby>
     <incdepgraph>
-      <node id="28">
+      <node id="31">
+        <label>dpp/application.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
         <label>dpp/auditlog.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
         <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>dpp/ban.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
         <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>dpp/channel.h</label>
-        <childnode refid="8" relation="include">
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -144,11 +196,247 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>dpp/dtemplate.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>dpp/emoji.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp/export.h</label>
+      </node>
+      <node id="13">
+        <label>dpp/guild.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>dpp/integration.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>dpp/intents.h</label>
+      </node>
+      <node id="15">
+        <label>dpp/invite.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>dpp/message.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>dpp/presence.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>dpp/prune.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dpp/role.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>dpp/slashcommand.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>dpp/stage_instance.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>dpp/user.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dpp/voiceregion.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dpp/voicestate.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>dpp/webhook.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dpp/json_fwd.hpp</label>
+      </node>
+      <node id="7">
+        <label>functional</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="14">
+        <label>mutex</label>
+      </node>
+      <node id="28">
+        <label>optional</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>unordered_map</label>
+      </node>
+      <node id="26">
+        <label>variant</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>application.h</label>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>auditlog.h</label>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ban.h</label>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cache.h</label>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -173,195 +461,6 @@
         <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>dpp/dtemplate.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>dpp/emoji.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>dpp/guild.h</label>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>dpp/integration.h</label>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="23">
-        <label>dpp/intents.h</label>
-      </node>
-      <node id="14">
-        <label>dpp/invite.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="26">
-        <label>dpp/message.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
-        <label>dpp/presence.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>dpp/prune.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>dpp/role.h</label>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="24">
-        <label>dpp/slashcommand.h</label>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>dpp/user.h</label>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>dpp/voiceregion.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>dpp/voicestate.h</label>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>dpp/webhook.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>dpp/json_fwd.hpp</label>
-      </node>
-      <node id="6">
-        <label>functional</label>
-      </node>
-      <node id="5">
-        <label>map</label>
-      </node>
-      <node id="13">
-        <label>mutex</label>
-      </node>
-      <node id="27">
-        <label>optional</label>
-      </node>
-      <node id="2">
-        <label>string</label>
-      </node>
-      <node id="4">
-        <label>unordered_map</label>
-      </node>
-      <node id="25">
-        <label>variant</label>
-      </node>
-      <node id="3">
-        <label>vector</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="6">
-        <label>auditlog.h</label>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="1" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>ban.h</label>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="1" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>cache.h</label>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
@@ -441,70 +540,21 @@
         </childnode>
         <childnode refid="64" relation="include">
         </childnode>
-      </node>
-      <node id="65">
-        <label>cluster.h</label>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="67" relation="include">
         </childnode>
         <childnode refid="68" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
         <childnode refid="69" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>discord.h</label>
-        <link refid="discord_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="65" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
         </childnode>
         <childnode refid="70" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
         <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
         </childnode>
         <childnode refid="73" relation="include">
         </childnode>
@@ -512,111 +562,52 @@
         </childnode>
         <childnode refid="75" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
-        </childnode>
-        <childnode refid="39" relation="include">
-        </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
         <childnode refid="76" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+      </node>
+      <node id="78">
+        <label>cluster.h</label>
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
-        <childnode refid="45" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="80" relation="include">
         </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
-        </childnode>
-        <childnode refid="51" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="53" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="55" relation="include">
-        </childnode>
-        <childnode refid="84" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="81" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
         </childnode>
         <childnode refid="87" relation="include">
         </childnode>
         <childnode refid="88" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="89" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="90" relation="include">
         </childnode>
         <childnode refid="91" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
-        </childnode>
         <childnode refid="92" relation="include">
-        </childnode>
-        <childnode refid="62" relation="include">
-        </childnode>
-        <childnode refid="63" relation="include">
         </childnode>
         <childnode refid="93" relation="include">
         </childnode>
@@ -628,16 +619,38 @@
         </childnode>
         <childnode refid="97" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="98" relation="include">
         </childnode>
       </node>
-      <node id="66">
-        <label>discordclient.h</label>
+      <node id="99">
+        <label>commandhandler.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>discord.h</label>
+        <link refid="discord_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -645,25 +658,240 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
         <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
         <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>discordclient.h</label>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
@@ -689,6 +917,8 @@
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
         <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
@@ -697,11 +927,11 @@
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
-        </childnode>
         <childnode refid="44" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
@@ -710,8 +940,6 @@
         <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="50" relation="include">
-        </childnode>
-        <childnode refid="51" relation="include">
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
@@ -739,16 +967,6 @@
         </childnode>
         <childnode refid="64" relation="include">
         </childnode>
-      </node>
-      <node id="67">
-        <label>discordvoiceclient.h</label>
-        <childnode refid="66" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-      </node>
-      <node id="70">
-        <label>dispatcher.h</label>
         <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
@@ -757,55 +975,104 @@
         </childnode>
         <childnode refid="68" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
+        <childnode refid="70" relation="include">
         </childnode>
-      </node>
-      <node id="20">
-        <label>dpp.h</label>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="71">
-        <label>dtemplate.h</label>
-        <childnode refid="1" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
         <childnode refid="72" relation="include">
         </childnode>
-      </node>
-      <node id="74">
-        <label>emoji.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
         <childnode refid="73" relation="include">
         </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
       </node>
-      <node id="75">
-        <label>event.h</label>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
+      <node id="81">
+        <label>discordvoiceclient.h</label>
+        <childnode refid="80" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
+      </node>
+      <node id="100">
+        <label>dispatcher.h</label>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
         <childnode refid="24" relation="include">
         </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>dpp.h</label>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+      </node>
+      <node id="106">
+        <label>dtemplate.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>emoji.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>etf.h</label>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>event.h</label>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
@@ -829,6 +1096,8 @@
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
         <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
@@ -837,11 +1106,11 @@
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
-        </childnode>
         <childnode refid="44" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
@@ -850,8 +1119,6 @@
         <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="50" relation="include">
-        </childnode>
-        <childnode refid="51" relation="include">
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
@@ -879,308 +1146,427 @@
         </childnode>
         <childnode refid="64" relation="include">
         </childnode>
-      </node>
-      <node id="76">
-        <label>invite.h</label>
-        <childnode refid="1" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
-        <childnode refid="77" relation="include">
-        </childnode>
-      </node>
-      <node id="79">
-        <label>message.h</label>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="70" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="80" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="82">
-        <label>presence.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="83" relation="include">
-        </childnode>
-      </node>
-      <node id="84">
-        <label>prune.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="85" relation="include">
-        </childnode>
-      </node>
-      <node id="80">
-        <label>slashcommand.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
-        </childnode>
-        <childnode refid="70" relation="include">
-        </childnode>
-        <childnode refid="81" relation="include">
-        </childnode>
-      </node>
-      <node id="88">
-        <label>sslclient.h</label>
-        <childnode refid="87" relation="include">
-        </childnode>
-        <childnode refid="89" relation="include">
-        </childnode>
-      </node>
-      <node id="94">
-        <label>voiceregion.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="93" relation="include">
-        </childnode>
-      </node>
-      <node id="97">
-        <label>webhook.h</label>
-        <childnode refid="1" relation="include">
-        </childnode>
-        <childnode refid="96" relation="include">
-        </childnode>
-      </node>
-      <node id="89">
-        <label>wsclient.h</label>
         <childnode refid="66" relation="include">
         </childnode>
         <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
         </childnode>
       </node>
-      <node id="5">
-        <label>auditlog.cpp</label>
+      <node id="111">
+        <label>invite.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
       </node>
-      <node id="7">
-        <label>ban.cpp</label>
+      <node id="114">
+        <label>message.h</label>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
       </node>
-      <node id="9">
-        <label>cache.cpp</label>
+      <node id="116">
+        <label>presence.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
       </node>
-      <node id="11">
-        <label>channel.cpp</label>
+      <node id="118">
+        <label>prune.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
       </node>
-      <node id="16">
-        <label>cluster.cpp</label>
+      <node id="115">
+        <label>slashcommand.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
       </node>
-      <node id="17">
-        <label>discordclient.cpp</label>
+      <node id="121">
+        <label>sslclient.h</label>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
       </node>
-      <node id="18">
-        <label>discordevents.cpp</label>
+      <node id="125">
+        <label>stage_instance.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
       </node>
-      <node id="19">
-        <label>discordvoiceclient.cpp</label>
+      <node id="129">
+        <label>voiceregion.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
       </node>
-      <node id="68">
-        <label>dispatcher.cpp</label>
+      <node id="131">
+        <label>webhook.h</label>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
       </node>
-      <node id="72">
-        <label>dtemplate.cpp</label>
-      </node>
-      <node id="73">
-        <label>emoji.cpp</label>
-      </node>
-      <node id="2">
-        <label>application_command_create.cpp</label>
+      <node id="122">
+        <label>wsclient.h</label>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
       </node>
       <node id="3">
-        <label>application_command_delete.cpp</label>
+        <label>application.cpp</label>
       </node>
-      <node id="4">
-        <label>application_command_update.cpp</label>
+      <node id="8">
+        <label>auditlog.cpp</label>
+      </node>
+      <node id="10">
+        <label>ban.cpp</label>
       </node>
       <node id="12">
-        <label>channel_create.cpp</label>
-      </node>
-      <node id="13">
-        <label>channel_delete.cpp</label>
+        <label>cache.cpp</label>
       </node>
       <node id="14">
-        <label>channel_pins_update.cpp</label>
+        <label>channel.cpp</label>
       </node>
-      <node id="15">
-        <label>channel_update.cpp</label>
+      <node id="19">
+        <label>cluster.cpp</label>
       </node>
-      <node id="23">
-        <label>guild_ban_add.cpp</label>
-      </node>
-      <node id="24">
-        <label>guild_ban_remove.cpp</label>
-      </node>
-      <node id="25">
-        <label>guild_create.cpp</label>
-      </node>
-      <node id="26">
-        <label>guild_delete.cpp</label>
-      </node>
-      <node id="27">
-        <label>guild_emojis_update.cpp</label>
-      </node>
-      <node id="28">
-        <label>guild_integrations_update.cpp</label>
-      </node>
-      <node id="29">
-        <label>guild_join_request_delete.cpp</label>
-      </node>
-      <node id="30">
-        <label>guild_member_add.cpp</label>
-      </node>
-      <node id="31">
-        <label>guild_member_remove.cpp</label>
-      </node>
-      <node id="32">
-        <label>guild_member_update.cpp</label>
-      </node>
-      <node id="33">
-        <label>guild_members_chunk.cpp</label>
-      </node>
-      <node id="34">
-        <label>guild_role_create.cpp</label>
-      </node>
-      <node id="35">
-        <label>guild_role_delete.cpp</label>
-      </node>
-      <node id="36">
-        <label>guild_role_update.cpp</label>
-      </node>
-      <node id="37">
-        <label>guild_update.cpp</label>
-      </node>
-      <node id="39">
-        <label>integration_create.cpp</label>
-      </node>
-      <node id="40">
-        <label>integration_delete.cpp</label>
-      </node>
-      <node id="41">
-        <label>integration_update.cpp</label>
-      </node>
-      <node id="42">
-        <label>interaction_create.cpp</label>
-      </node>
-      <node id="43">
-        <label>invite_create.cpp</label>
-      </node>
-      <node id="44">
-        <label>invite_delete.cpp</label>
-      </node>
-      <node id="45">
-        <label>logger.cpp</label>
-      </node>
-      <node id="47">
-        <label>message_create.cpp</label>
-      </node>
-      <node id="48">
-        <label>message_delete.cpp</label>
-      </node>
-      <node id="49">
-        <label>message_delete_bulk.cpp</label>
-      </node>
-      <node id="50">
-        <label>message_reaction_add.cpp</label>
-      </node>
-      <node id="51">
-        <label>message_reaction_remove.cpp</label>
-      </node>
-      <node id="52">
-        <label>message_reaction_remove_all.cpp</label>
-      </node>
-      <node id="53">
-        <label>message_reaction_remove_emoji.cpp</label>
-      </node>
-      <node id="54">
-        <label>message_update.cpp</label>
-      </node>
-      <node id="55">
-        <label>presence_update.cpp</label>
-      </node>
-      <node id="56">
-        <label>ready.cpp</label>
-      </node>
-      <node id="57">
-        <label>resumed.cpp</label>
-      </node>
-      <node id="58">
-        <label>stage_instance_create.cpp</label>
-      </node>
-      <node id="59">
-        <label>stage_instance_delete.cpp</label>
-      </node>
-      <node id="60">
-        <label>typing_start.cpp</label>
-      </node>
-      <node id="61">
-        <label>user_update.cpp</label>
-      </node>
-      <node id="62">
-        <label>voice_server_update.cpp</label>
-      </node>
-      <node id="63">
-        <label>voice_state_update.cpp</label>
-      </node>
-      <node id="64">
-        <label>webhooks_update.cpp</label>
-      </node>
-      <node id="22">
-        <label>guild.cpp</label>
-      </node>
-      <node id="38">
-        <label>integration.cpp</label>
+      <node id="2">
+        <label>appcommand.cpp</label>
       </node>
       <node id="77">
-        <label>invite.cpp</label>
+        <label>channel.cpp</label>
       </node>
-      <node id="78">
-        <label>managed.cpp</label>
-      </node>
-      <node id="46">
-        <label>message.cpp</label>
+      <node id="79">
+        <label>confirmation.cpp</label>
       </node>
       <node id="83">
-        <label>presence.cpp</label>
+        <label>dm.cpp</label>
+      </node>
+      <node id="84">
+        <label>emoji.cpp</label>
       </node>
       <node id="85">
-        <label>prune.cpp</label>
-      </node>
-      <node id="69">
-        <label>queues.cpp</label>
+        <label>gateway.cpp</label>
       </node>
       <node id="86">
-        <label>role.cpp</label>
-      </node>
-      <node id="81">
-        <label>slashcommand.cpp</label>
+        <label>guild.cpp</label>
       </node>
       <node id="87">
-        <label>sslclient.cpp</label>
+        <label>guild_member.cpp</label>
+      </node>
+      <node id="88">
+        <label>invite.cpp</label>
+      </node>
+      <node id="89">
+        <label>message.cpp</label>
       </node>
       <node id="91">
-        <label>user.cpp</label>
+        <label>role.cpp</label>
       </node>
       <node id="92">
-        <label>utility.cpp</label>
+        <label>stage_instance.cpp</label>
       </node>
       <node id="93">
-        <label>voiceregion.cpp</label>
+        <label>sticker.cpp</label>
+      </node>
+      <node id="94">
+        <label>template.cpp</label>
       </node>
       <node id="95">
-        <label>voicestate.cpp</label>
+        <label>thread.cpp</label>
       </node>
       <node id="96">
+        <label>user.cpp</label>
+      </node>
+      <node id="97">
+        <label>voice.cpp</label>
+      </node>
+      <node id="98">
         <label>webhook.cpp</label>
       </node>
-      <node id="90">
-        <label>wsclient.cpp</label>
+      <node id="20">
+        <label>commandhandler.cpp</label>
       </node>
       <node id="21">
+        <label>discordclient.cpp</label>
+      </node>
+      <node id="22">
+        <label>discordevents.cpp</label>
+      </node>
+      <node id="23">
+        <label>discordvoiceclient.cpp</label>
+      </node>
+      <node id="82">
+        <label>dispatcher.cpp</label>
+      </node>
+      <node id="107">
+        <label>dtemplate.cpp</label>
+      </node>
+      <node id="101">
+        <label>emoji.cpp</label>
+      </node>
+      <node id="102">
+        <label>etf.cpp</label>
+      </node>
+      <node id="5">
+        <label>application_command_create.cpp</label>
+      </node>
+      <node id="6">
+        <label>application_command_delete.cpp</label>
+      </node>
+      <node id="7">
+        <label>application_command_update.cpp</label>
+      </node>
+      <node id="15">
+        <label>channel_create.cpp</label>
+      </node>
+      <node id="16">
+        <label>channel_delete.cpp</label>
+      </node>
+      <node id="17">
+        <label>channel_pins_update.cpp</label>
+      </node>
+      <node id="18">
+        <label>channel_update.cpp</label>
+      </node>
+      <node id="27">
+        <label>guild_ban_add.cpp</label>
+      </node>
+      <node id="28">
+        <label>guild_ban_remove.cpp</label>
+      </node>
+      <node id="29">
+        <label>guild_create.cpp</label>
+      </node>
+      <node id="30">
+        <label>guild_delete.cpp</label>
+      </node>
+      <node id="31">
+        <label>guild_emojis_update.cpp</label>
+      </node>
+      <node id="32">
+        <label>guild_integrations_update.cpp</label>
+      </node>
+      <node id="33">
+        <label>guild_join_request_delete.cpp</label>
+      </node>
+      <node id="34">
+        <label>guild_member_add.cpp</label>
+      </node>
+      <node id="35">
+        <label>guild_member_remove.cpp</label>
+      </node>
+      <node id="36">
+        <label>guild_member_update.cpp</label>
+      </node>
+      <node id="37">
+        <label>guild_members_chunk.cpp</label>
+      </node>
+      <node id="38">
+        <label>guild_role_create.cpp</label>
+      </node>
+      <node id="39">
+        <label>guild_role_delete.cpp</label>
+      </node>
+      <node id="40">
+        <label>guild_role_update.cpp</label>
+      </node>
+      <node id="41">
+        <label>guild_stickers_update.cpp</label>
+      </node>
+      <node id="42">
+        <label>guild_update.cpp</label>
+      </node>
+      <node id="44">
+        <label>integration_create.cpp</label>
+      </node>
+      <node id="45">
+        <label>integration_delete.cpp</label>
+      </node>
+      <node id="46">
+        <label>integration_update.cpp</label>
+      </node>
+      <node id="47">
+        <label>interaction_create.cpp</label>
+      </node>
+      <node id="48">
+        <label>invite_create.cpp</label>
+      </node>
+      <node id="49">
+        <label>invite_delete.cpp</label>
+      </node>
+      <node id="50">
+        <label>logger.cpp</label>
+      </node>
+      <node id="52">
+        <label>message_create.cpp</label>
+      </node>
+      <node id="53">
+        <label>message_delete.cpp</label>
+      </node>
+      <node id="54">
+        <label>message_delete_bulk.cpp</label>
+      </node>
+      <node id="55">
+        <label>message_reaction_add.cpp</label>
+      </node>
+      <node id="56">
+        <label>message_reaction_remove.cpp</label>
+      </node>
+      <node id="57">
+        <label>message_reaction_remove_all.cpp</label>
+      </node>
+      <node id="58">
+        <label>message_reaction_remove_emoji.cpp</label>
+      </node>
+      <node id="59">
+        <label>message_update.cpp</label>
+      </node>
+      <node id="60">
+        <label>presence_update.cpp</label>
+      </node>
+      <node id="61">
+        <label>ready.cpp</label>
+      </node>
+      <node id="62">
+        <label>resumed.cpp</label>
+      </node>
+      <node id="63">
+        <label>stage_instance_create.cpp</label>
+      </node>
+      <node id="64">
+        <label>stage_instance_delete.cpp</label>
+      </node>
+      <node id="65">
+        <label>stage_instance_update.cpp</label>
+      </node>
+      <node id="66">
+        <label>thread_create.cpp</label>
+      </node>
+      <node id="67">
+        <label>thread_delete.cpp</label>
+      </node>
+      <node id="68">
+        <label>thread_list_sync.cpp</label>
+      </node>
+      <node id="69">
+        <label>thread_member_update.cpp</label>
+      </node>
+      <node id="70">
+        <label>thread_members_update.cpp</label>
+      </node>
+      <node id="71">
+        <label>thread_update.cpp</label>
+      </node>
+      <node id="72">
+        <label>typing_start.cpp</label>
+      </node>
+      <node id="73">
+        <label>user_update.cpp</label>
+      </node>
+      <node id="74">
+        <label>voice_server_update.cpp</label>
+      </node>
+      <node id="75">
+        <label>voice_state_update.cpp</label>
+      </node>
+      <node id="76">
+        <label>webhooks_update.cpp</label>
+      </node>
+      <node id="26">
+        <label>guild.cpp</label>
+      </node>
+      <node id="43">
+        <label>integration.cpp</label>
+      </node>
+      <node id="112">
+        <label>invite.cpp</label>
+      </node>
+      <node id="113">
+        <label>managed.cpp</label>
+      </node>
+      <node id="51">
+        <label>message.cpp</label>
+      </node>
+      <node id="117">
+        <label>presence.cpp</label>
+      </node>
+      <node id="119">
+        <label>prune.cpp</label>
+      </node>
+      <node id="90">
+        <label>queues.cpp</label>
+      </node>
+      <node id="120">
+        <label>role.cpp</label>
+      </node>
+      <node id="103">
+        <label>slashcommand.cpp</label>
+      </node>
+      <node id="104">
+        <label>sslclient.cpp</label>
+      </node>
+      <node id="124">
+        <label>stage_instance.cpp</label>
+      </node>
+      <node id="126">
+        <label>user.cpp</label>
+      </node>
+      <node id="127">
+        <label>utility.cpp</label>
+      </node>
+      <node id="128">
+        <label>voiceregion.cpp</label>
+      </node>
+      <node id="130">
+        <label>voicestate.cpp</label>
+      </node>
+      <node id="105">
+        <label>webhook.cpp</label>
+      </node>
+      <node id="123">
+        <label>wsclient.cpp</label>
+      </node>
+      <node id="25">
         <label>test.cpp</label>
       </node>
     </invincdepgraph>

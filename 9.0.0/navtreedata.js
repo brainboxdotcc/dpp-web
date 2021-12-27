@@ -25,10 +25,12 @@
 var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
-    [ "Welcome to the D++ developer wiki!", "index.html", "index" ],
+    [ "D++ Developer Documentation", "index.html", "index" ],
     [ "Building D++", "md_docpages_02_build.html", "md_docpages_02_build" ],
+    [ "Creating a Discord Bot", "md_docpages_02_building_a_bot.html", "md_docpages_02_building_a_bot" ],
     [ "Example Programs", "md_docpages_03_example_programs.html", "md_docpages_03_example_programs" ],
     [ "Advanced Reference", "md_docpages_04_advanced_reference.html", "md_docpages_04_advanced_reference" ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -48,7 +50,8 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]
@@ -57,23 +60,28 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1cluster.html#a32ce7fc13658a25e2faeadcd36282b0b",
-"classdpp_1_1cluster.html#ad2273fdee237880d5e6b948198ffae52",
-"classdpp_1_1discord__client.html#aca66e47e5e2d6fcd0bd17187465107db",
-"classdpp_1_1dispatcher.html#acff8bbb12c4d123fbd0b57fb3b48962a",
-"classdpp_1_1events_1_1stage__instance__create.html#a48650031a83d11f1f62de9e979f97b8e",
-"classdpp_1_1integration.html#a32fff1ec90aea8ce08d481c0f0957ebb",
-"classdpp_1_1role.html#af54ea9f64ea035675a26b0d8e8b356f5",
-"classdpp_1_1webhook.html#a2b988a9005bc38b8eebd99dabdf1ecbe",
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a311a6b6f7fc320d4c03ae72a851dce5c",
-"namespacedpp.html#a7e036e9909741e00af34e2505117218d",
-"namespacemembers_eval_m.html",
-"structdpp_1_1audit__entry.html#a0b6fcc890dfd0e55e68c39d2f88d268b",
-"structdpp_1_1embed.html#a431c219b7e195e151c19dfbebc09e13a",
-"structdpp_1_1guild__members__chunk__t.html",
-"structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283",
-"structdpp_1_1ready__t.html#ad031e4a6c0354ac8ad28b61045c2c09d",
-"structdpp_1_1user__update__t.html"
+"classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9",
+"classdpp_1_1cluster.html#a62516361826a0f9256d2ff79b93b9f86",
+"classdpp_1_1cluster.html#ad66ab98a72eb1ba8d2686fcaa1eb49db",
+"classdpp_1_1discord__client.html#a53cda56d5d61e3371bd7be2424e7ff07",
+"classdpp_1_1dispatcher.html#a1588d00ae704ab4b14eff4e596071b78",
+"classdpp_1_1events_1_1guild__member__remove.html",
+"classdpp_1_1guild.html#a9169668a25a134dc50bbdb6dd9ddd203",
+"classdpp_1_1invite.html#af48b1a919db49531f09a01f8e8115f64",
+"classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8",
+"classdpp_1_1websocket__client.html#a96a1c910426a6094a81f5bf26ce9119b",
+"namespacedpp.html#a037f40c104056183a26a4b4dbdf76f4f",
+"namespacedpp.html#a7e036e9909741e00af34e2505117218da5fdf0027681c83f79661940b012518e4",
+"namespacedpp.html#ae90871830444cab0316109a1824fc0b8",
+"structdetail_1_1chrono__formatter.html#af9e771f68673cbb4aa2202b928ab5ef1",
+"structdpp_1_1channel__pins__update__t.html#a91754873add345d5d4b3e12110394e23",
+"structdpp_1_1embed__footer.html#acd4f6ff772d3a9a791ce9aed724b82d7",
+"structdpp_1_1guild__role__create__t.html#a357873be4dd30eef7928ae5f7c13e7db",
+"structdpp_1_1message.html#a01de1e67af35ecb77549ccbe94ab7185",
+"structdpp_1_1message__reaction__remove__t.html",
+"structdpp_1_1stage__instance__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
+"structdpp_1_1user__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
+"subcommands.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

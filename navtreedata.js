@@ -74,16 +74,16 @@ var NAVTREEINDEX =
 "hierarchy.html",
 "namespacedpp.html#a368cff415172099d1d3c90e11721b37e",
 "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c",
-"namespacemembers_h.html",
-"structdpp_1_1attachment.html#ac8dfe8ccce296e4f30452ddbc5bded26",
-"structdpp_1_1command__option.html#a15b3a6c2a2a1d5f6e19956e2215e3f0d",
-"structdpp_1_1event__entities.html",
-"structdpp_1_1guild__role__create__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1interaction__create__t.html#ab0b360b2769c2e3be693aae2f0df27b6",
-"structdpp_1_1message_1_1message__ref.html",
-"structdpp_1_1resolved__user.html#a2637dfddc2584ff21d6772b9540818d4",
-"structdpp_1_1sticker.html#a6e76be43a608182d73ef15b4618afe7b",
-"structdpp_1_1utility_1_1uptime.html#a67e56c2d2f868f561a48b5c3b7d5777e"
+"namespacemembers_func.html",
+"structdpp_1_1attachment.html#ac3fa01bbb9915006c0a11db9ed386749",
+"structdpp_1_1command__option.html#a0ff9143e5346618336b14c78934208d7",
+"structdpp_1_1event__dispatch__t.html#aca2880114f69b7ba62eb5137824c1432",
+"structdpp_1_1guild__role__create__t.html#a2f07681bfc59700b451764013a9d4e13",
+"structdpp_1_1interaction__create__t.html#a9ed8c6f8eaf7862de50a30e9642fbc56",
+"structdpp_1_1message_1_1message__interaction__struct.html#a69bd295380f5f5395bdb0cb21dcf9111",
+"structdpp_1_1resolved__user.html",
+"structdpp_1_1sticker.html#a621d5047225fb02a39523d74ce7e9130",
+"structdpp_1_1utility_1_1uptime.html#a55841b3a9e3a53240184645d3af39eb4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

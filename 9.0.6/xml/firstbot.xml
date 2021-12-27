@@ -50,7 +50,7 @@
 </sect2>
 <sect2 id="firstbot_1autotoc_md35">
 <title>3. Attach to an event</title>
-<para>To have a bot that does something, you should attach to some events. Let&apos;s start by attaching to the <computeroutput>on_ready</computeroutput> event (<ref refid="classdpp_1_1cluster_1ad8170aef3ae244df66464b192e3e30e7" kindref="member">dpp::cluster::on_ready</ref>) which will notify your program when the bot is connected:</para>
+<para>To have a bot that does something, you should attach to some events. Let&apos;s start by attaching to the <computeroutput>on_ready</computeroutput> event (<ref refid="classdpp_1_1cluster_1a598c59a3848bf30d82938fdd7f5813a3" kindref="member">dpp::cluster::on_ready</ref>) which will notify your program when the bot is connected:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -67,7 +67,7 @@
 </sect2>
 <sect2 id="firstbot_1autotoc_md36">
 <title>4. Attach to another event to reveice messages</title>
-<para>If you want to receive messages, you should also attach your program to the <computeroutput>on_message_create</computeroutput> event (<ref refid="classdpp_1_1cluster_1a29140a7c0e1250fe2016dbe4ced56f95" kindref="member">dpp::cluster::on_message_create</ref>) which is the same as the Discord.js <computeroutput>message</computeroutput> event. You add this to your program after the <computeroutput>on_ready</computeroutput> event:</para>
+<para>If you want to receive messages, you should also attach your program to the <computeroutput>on_message_create</computeroutput> event (<ref refid="classdpp_1_1cluster_1aaaafcd2c26fe588021454ee3d0d0fec8" kindref="member">dpp::cluster::on_message_create</ref>) which is the same as the Discord.js <computeroutput>message</computeroutput> event. You add this to your program after the <computeroutput>on_ready</computeroutput> event:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -87,7 +87,7 @@
 </sect2>
 <sect2 id="firstbot_1autotoc_md37">
 <title>5 . Add some content to the events</title>
-<para>Attaching to an event is a good start, but to make a bot you should actually put some program code into the events. Lets add some simple things into the events. We will add some code to the <computeroutput>on_ready</computeroutput> event to output the bot&apos;s nickname (<ref refid="classdpp_1_1cluster_1ad31317a40181f6864646c8758871b495" kindref="member">dpp::cluster::me</ref>) and some code into the <computeroutput>on_message_create</computeroutput> to look for messages that are the text <computeroutput>!ping</computeroutput> and reply with <computeroutput>!pong</computeroutput>:</para>
+<para>Attaching to an event is a good start, but to make a bot you should actually put some program code into the events. We will add some code to the <computeroutput>on_ready</computeroutput> event to output the bot&apos;s nickname (<ref refid="classdpp_1_1cluster_1ad31317a40181f6864646c8758871b495" kindref="member">dpp::cluster::me</ref>) and some code into the <computeroutput>on_message_create</computeroutput> to look for messages that are the text <computeroutput>!ping</computeroutput> and reply with <computeroutput>!pong</computeroutput>:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
