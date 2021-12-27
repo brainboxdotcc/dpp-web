@@ -175,6 +175,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae78617d00003abcbfce5446cb6bdde41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#ae78617d00003abcbfce5446cb6bdde41">one_second_timer</a> ()</td></tr>
 <tr class="separator:ae78617d00003abcbfce5446cb6bdde41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d60fdbda3819c8e2c387b2d35b5e770"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a5d60fdbda3819c8e2c387b2d35b5e770">Connect</a> ()</td></tr>
+<tr class="memdesc:a5d60fdbda3819c8e2c387b2d35b5e770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start SSL connection and connect to TCP endpoint.  <a href="classdpp_1_1ssl__client.html#a5d60fdbda3819c8e2c387b2d35b5e770">More...</a><br /></td></tr>
 <tr class="separator:a5d60fdbda3819c8e2c387b2d35b5e770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -237,6 +238,12 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">_hostname</td><td>The hostname to connect to </td></tr>
     <tr><td class="paramname">_port</td><td>the Port number to connect to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>Failed to initialise connection </td></tr>
   </table>
   </dd>
 </dl>
@@ -322,7 +329,14 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Start connection </p>
+
+<p>Start SSL connection and connect to TCP endpoint. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>Failed to initialise connection </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplemented in <a class="el" href="classdpp_1_1websocket__client.html#ac7f26051b6ce8db8e57536ce4e035caf">dpp::websocket_client</a>.</p>
 
@@ -509,6 +523,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Nonblocking I/O loop. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td>Any std::exception (or derivative) thrown from <a class="el" href="classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2" title="Nonblocking I/O loop.">read_loop()</a> causes reconnection of the shard </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
