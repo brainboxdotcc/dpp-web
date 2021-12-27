@@ -852,6 +852,7 @@ var namespacedpp =
     [ "to_json", "namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403", null ],
     [ "to_json", "namespacedpp.html#a752b7140de023c34db60c92363aacf3f", null ],
     [ "to_json", "namespacedpp.html#a735482218b54177427bc882605fa1e4a", null ],
+    [ "to_json", "namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98", null ],
     [ "to_json", "namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2", null ],
     [ "to_json", "namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3", null ],
     [ "tokenize", "namespacedpp.html#a981df68922716d97ba921fd2027c3513", null ],

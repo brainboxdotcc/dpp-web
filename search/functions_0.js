@@ -5,7 +5,7 @@ var searchData=
   ['add_5fchannel_5ftype_2',['add_channel_type',['../structdpp_1_1command__option.html#a2ecddb11870c0c32a61be196f48c3ebf',1,'dpp::command_option']]],
   ['add_5fchoice_3',['add_choice',['../structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026',1,'dpp::command_option']]],
   ['add_5fcommand_4',['add_command',['../classdpp_1_1commandhandler.html#a791ed0c75ef77306af84be30ded619f8',1,'dpp::commandhandler']]],
-  ['add_5fcomponent_5',['add_component',['../classdpp_1_1component.html#a3707437be16cc7dfd5edcf321f8e842d',1,'dpp::component::add_component()'],['../structdpp_1_1message.html#a85dbf0b4a0b294eac34ec49feb1d4540',1,'dpp::message::add_component()'],['../structdpp_1_1interaction__modal__response.html#a0d65fe1381b216c4be6de01a4a522ef1',1,'dpp::interaction_modal_response::add_component()']]],
+  ['add_5fcomponent_5',['add_component',['../structdpp_1_1interaction__modal__response.html#a0d65fe1381b216c4be6de01a4a522ef1',1,'dpp::interaction_modal_response::add_component()'],['../classdpp_1_1component.html#a3707437be16cc7dfd5edcf321f8e842d',1,'dpp::component::add_component()'],['../structdpp_1_1message.html#a85dbf0b4a0b294eac34ec49feb1d4540',1,'dpp::message::add_component(const component &amp;c)']]],
   ['add_5fembed_6',['add_embed',['../structdpp_1_1message.html#a9ff92caceb655fa1f89710445a24c107',1,'dpp::message']]],
   ['add_5ffield_7',['add_field',['../structdpp_1_1embed.html#ab9c9deedd331451367aa561e6f9178d0',1,'dpp::embed']]],
   ['add_5foption_8',['add_option',['../structdpp_1_1command__option.html#aa5c54bbb1e3cf93a9e18ea21f789cf2c',1,'dpp::command_option::add_option()'],['../classdpp_1_1slashcommand.html#a3959f3f3b2709c56e03610e6f774e449',1,'dpp::slashcommand::add_option(const command_option &amp;o)']]],

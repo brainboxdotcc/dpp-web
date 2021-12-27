@@ -48,14 +48,14 @@ var searchData=
   ['user_5fupdate_45',['user_update',['../classdpp_1_1events_1_1user__update.html',1,'dpp::events']]],
   ['user_5fupdate_5ft_46',['user_update_t',['../structdpp_1_1user__update__t.html',1,'dpp::user_update_t'],['../structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e',1,'dpp::user_update_t::user_update_t()']]],
   ['username_47',['username',['../classdpp_1_1user.html#a4e72b2e5ac7d5539fdae64be6e01246c',1,'dpp::user']]],
-  ['users_48',['users',['../structdpp_1_1message_1_1allowed__ref.html#a8e22776356f1b3029224dae4679eff22',1,'dpp::message::allowed_ref::users()'],['../structdpp_1_1command__resolved.html#a253cd8cb71207dbdf0b8f687218f24e3',1,'dpp::command_resolved::users()']]],
+  ['users_48',['users',['../structdpp_1_1command__resolved.html#a253cd8cb71207dbdf0b8f687218f24e3',1,'dpp::command_resolved::users()'],['../structdpp_1_1message_1_1allowed__ref.html#a8e22776356f1b3029224dae4679eff22',1,'dpp::message::allowed_ref::users()']]],
   ['using_20a_20command_20handler_20object_49',['Using a command handler object',['../commandhandler.html',1,'md_docpages_03_example_programs']]],
   ['using_20component_20interactions_20_28advanced_29_50',['Using component interactions (advanced)',['../components2.html',1,'md_docpages_03_example_programs']]],
   ['using_20component_20interactions_20_28buttons_29_51',['Using component interactions (buttons)',['../components.html',1,'md_docpages_03_example_programs']]],
   ['using_20component_20interactions_20_28select_20menus_29_52',['Using component interactions (select menus)',['../components3.html',1,'md_docpages_03_example_programs']]],
   ['using_20slash_20commands_20and_20interactions_53',['Using Slash Commands and Interactions',['../slashcommands.html',1,'md_docpages_03_example_programs']]],
   ['using_20sub_2dcommands_20in_20slash_20commands_54',['Using sub-commands in slash commands',['../subcommands.html',1,'md_docpages_03_example_programs']]],
-  ['usr_55',['usr',['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()'],['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()']]],
+  ['usr_55',['usr',['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()'],['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()']]],
   ['utf8len_56',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
   ['utf8substr_57',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
 ];
