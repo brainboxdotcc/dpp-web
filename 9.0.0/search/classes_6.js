@@ -32,19 +32,7 @@ var searchData=
   ['guild_5frole_5fdelete_5ft_29',['guild_role_delete_t',['../structdpp_1_1guild__role__delete__t.html',1,'dpp']]],
   ['guild_5frole_5fupdate_30',['guild_role_update',['../classdpp_1_1events_1_1guild__role__update.html',1,'dpp::events']]],
   ['guild_5frole_5fupdate_5ft_31',['guild_role_update_t',['../structdpp_1_1guild__role__update__t.html',1,'dpp']]],
-  ['guild_5fscheduled_5fevent_5fcreate_32',['guild_scheduled_event_create',['../classdpp_1_1events_1_1guild__scheduled__event__create.html',1,'dpp::events']]],
-  ['guild_5fscheduled_5fevent_5fcreate_5ft_33',['guild_scheduled_event_create_t',['../structdpp_1_1guild__scheduled__event__create__t.html',1,'dpp']]],
-  ['guild_5fscheduled_5fevent_5fdelete_34',['guild_scheduled_event_delete',['../classdpp_1_1events_1_1guild__scheduled__event__delete.html',1,'dpp::events']]],
-  ['guild_5fscheduled_5fevent_5fdelete_5ft_35',['guild_scheduled_event_delete_t',['../structdpp_1_1guild__scheduled__event__delete__t.html',1,'dpp']]],
-  ['guild_5fscheduled_5fevent_5fupdate_36',['guild_scheduled_event_update',['../classdpp_1_1events_1_1guild__scheduled__event__update.html',1,'dpp::events']]],
-  ['guild_5fscheduled_5fevent_5fupdate_5ft_37',['guild_scheduled_event_update_t',['../structdpp_1_1guild__scheduled__event__update__t.html',1,'dpp']]],
-  ['guild_5fscheduled_5fevent_5fuser_5fadd_38',['guild_scheduled_event_user_add',['../classdpp_1_1events_1_1guild__scheduled__event__user__add.html',1,'dpp::events']]],
-  ['guild_5fscheduled_5fevent_5fuser_5fadd_5ft_39',['guild_scheduled_event_user_add_t',['../structdpp_1_1guild__scheduled__event__user__add__t.html',1,'dpp']]],
-  ['guild_5fscheduled_5fevent_5fuser_5fremove_40',['guild_scheduled_event_user_remove',['../classdpp_1_1events_1_1guild__scheduled__event__user__remove.html',1,'dpp::events']]],
-  ['guild_5fscheduled_5fevent_5fuser_5fremove_5ft_41',['guild_scheduled_event_user_remove_t',['../structdpp_1_1guild__scheduled__event__user__remove__t.html',1,'dpp']]],
-  ['guild_5fstickers_5fupdate_42',['guild_stickers_update',['../classdpp_1_1events_1_1guild__stickers__update.html',1,'dpp::events']]],
-  ['guild_5fstickers_5fupdate_5ft_43',['guild_stickers_update_t',['../structdpp_1_1guild__stickers__update__t.html',1,'dpp']]],
-  ['guild_5fupdate_44',['guild_update',['../classdpp_1_1events_1_1guild__update.html',1,'dpp::events']]],
-  ['guild_5fupdate_5ft_45',['guild_update_t',['../structdpp_1_1guild__update__t.html',1,'dpp']]],
-  ['guild_5fwidget_46',['guild_widget',['../classdpp_1_1guild__widget.html',1,'dpp']]]
+  ['guild_5fupdate_32',['guild_update',['../classdpp_1_1events_1_1guild__update.html',1,'dpp::events']]],
+  ['guild_5fupdate_5ft_33',['guild_update_t',['../structdpp_1_1guild__update__t.html',1,'dpp']]],
+  ['guild_5fwidget_34',['guild_widget',['../classdpp_1_1guild__widget.html',1,'dpp']]]
 ];

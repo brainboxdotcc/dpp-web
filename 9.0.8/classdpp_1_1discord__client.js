@@ -1,6 +1,6 @@
 var classdpp_1_1discord__client =
 [
-    [ "discord_client", "classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082", null ],
+    [ "discord_client", "classdpp_1_1discord__client.html#a26bc3c07e4b547d0d6e2c820d255fac7", null ],
     [ "~discord_client", "classdpp_1_1discord__client.html#ad7384d3ea3ee938b626e536f82a5f349", null ],
     [ "ClearQueue", "classdpp_1_1discord__client.html#a5b40c6db59e7aed95958e2fec5f6b8ba", null ],
     [ "close", "classdpp_1_1discord__client.html#a3398642150ca79c8f266de83ee93aa30", null ],
@@ -30,7 +30,6 @@ var classdpp_1_1discord__client =
     [ "read_loop", "classdpp_1_1discord__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
     [ "Run", "classdpp_1_1discord__client.html#ae768cabb169f9501bba20704867110e5", null ],
     [ "write", "classdpp_1_1discord__client.html#aac65765349cbd3e787c0fd2af576ec6d", null ],
-    [ "dpp::cluster", "classdpp_1_1discord__client.html#a836b658e110edfcbb21ea88b2ad90e90", null ],
     [ "dpp::events::voice_state_update", "classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86", null ],
     [ "buffer", "classdpp_1_1discord__client.html#ae0e5e0799448bf29506bfcc21168d3fa", null ],
     [ "bytes_in", "classdpp_1_1discord__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d", null ],
@@ -53,7 +52,6 @@ var classdpp_1_1discord__client =
     [ "nonblocking", "classdpp_1_1discord__client.html#a1486b3df6780a842552442a25634fcc9", null ],
     [ "obuffer", "classdpp_1_1discord__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
     [ "port", "classdpp_1_1discord__client.html#a53cda56d5d61e3371bd7be2424e7ff07", null ],
-    [ "protocol", "classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7", null ],
     [ "ready", "classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90", null ],
     [ "reconnects", "classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf", null ],
     [ "resumes", "classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6", null ],

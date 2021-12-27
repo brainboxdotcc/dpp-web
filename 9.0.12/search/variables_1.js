@@ -1,7 +1,7 @@
 var searchData=
 [
   ['banned_0',['banned',['../structdpp_1_1guild__ban__add__t.html#a66dadcaca1f356964834a9b981dcf1fb',1,'dpp::guild_ban_add_t']]],
-  ['banner_1',['banner',['../classdpp_1_1channel.html#a6df422541a4733f18a31a630b9e7cf3a',1,'dpp::channel::banner()'],['../classdpp_1_1guild.html#ad5736b31cf35641cb2c78f9353d3a8a5',1,'dpp::guild::banner()'],['../classdpp_1_1user__identified.html#a5b1955e6f623db547bcebccd8da5b1a0',1,'dpp::user_identified::banner()']]],
+  ['banner_1',['banner',['../classdpp_1_1guild.html#ad5736b31cf35641cb2c78f9353d3a8a5',1,'dpp::guild::banner()'],['../classdpp_1_1user__identified.html#a5b1955e6f623db547bcebccd8da5b1a0',1,'dpp::user_identified::banner()']]],
   ['banner_5fasset_5fid_2',['banner_asset_id',['../structdpp_1_1sticker__pack.html#a1f2430ab0a0bebabe48954017ef4a003',1,'dpp::sticker_pack']]],
   ['banning_5fguild_3',['banning_guild',['../structdpp_1_1guild__ban__add__t.html#a205babd5bfbb4ed9810d824d28711536',1,'dpp::guild_ban_add_t']]],
   ['bitrate_4',['bitrate',['../classdpp_1_1channel.html#ab32308d8281aef6bfe4d5a6538c6306e',1,'dpp::channel']]],

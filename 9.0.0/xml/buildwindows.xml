@@ -9,31 +9,33 @@
 <sect1 id="buildwindows_1autotoc_md7">
 <title>Building on Windows</title>
 <para>To build on windows follow these steps <emphasis>exactly</emphasis>. The build process depends on specific libraries being installed on your system in specific locations.</para>
-<para><simplesect kind="note"><para><bold>You do not need to build a copy from source</bold> <ndash/> we have done this for you. Unless you consider yourself an <bold>advanced user</bold> you should <ulink url="https://github.com/brainboxdotcc/windows-bot-template/">obtain a pre-made visual studio template containing the latest D++ build (for 32 and 64 bit, release and debug profiles) by clicking here</ulink> and completely skip this guide!</para>
+<para><simplesect kind="note"><para>You should not need to build a copy of the library for windows - DLL, LIB and EXP files for Windows and visual studio 2019 64-bit will be provided in the github version releases. Unless you wish to submit fixes and enhancements to the library itself you should use these releases instead.</para>
 </simplesect>
-<orderedlist>
-<listitem><para>Make sure you have Visual Studio 2019. The Community, Professional or Enterprise versions all work, however you will probably want to install Community. You do <bold>NOT</bold> want to use <emphasis>Visual Studio Code</emphasis> for this. You can <ulink url="https://visualstudio.microsoft.com/downloads/">download the correct version here</ulink>.</para>
-</listitem><listitem><para>Check out the DPP project source using git</para>
-</listitem><listitem><para>From within Visual Studio 2019, click the &quot;File&quot; menu, choose &quot;Open&quot; then &quot;CMake&quot;, and select the CMakeLists.txt within the project folder <image type="html" name="winbuild_1.png"></image>
- <image type="html" name="winbuild_2.png"></image>
-</para>
-</listitem><listitem><para>Go to the &quot;Build&quot; menu and choose &quot;Build all&quot; or just press F7 <image type="html" name="winbuild_3.png"></image>
-</para>
-</listitem><listitem><para>Check that compilation succeeded. You may now use the library in your projects! <image type="html" name="winbuild_4.png"></image>
-</para>
+<bold>Instructions here are subject to change!</bold></para>
+<para><orderedlist>
+<listitem><para>Make sure you have Visual Studio 2019 Community. <bold>NOT</bold> Visual Studio Code. You can <ulink url="https://visualstudio.microsoft.com/downloads/">download the correct version here</ulink>.</para>
+</listitem><listitem><para>Download and install cmake from <ulink url="https://cmake.org/download/">here</ulink> and install it to the system path.</para>
+</listitem><listitem><para>Download windows version of git <ulink url="https://git-scm.com/download/win">here</ulink> install it to your path.</para>
+</listitem><listitem><para><ulink url="https://docs.microsoft.com/en-us/cpp/build/install-vcpkg?view=msvc-160&amp;tabs=windows">Download and install vcpkg</ulink> to the default recommended path</para>
+</listitem><listitem><para>Open a command prompt window.</para>
+</listitem><listitem><para>Use the following command to install <computeroutput>openssl</computeroutput> and <computeroutput>zlib</computeroutput> via vcpkg: <computeroutput>c:\vckpg\vcpkg.exe install openssl:x64-windows zlib:x64-windows</computeroutput></para>
+</listitem><listitem><para>Change to the directory where you want to clone the sources.</para>
+</listitem><listitem><para>Issue the command: <computeroutput>git clone <ulink url="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</ulink></computeroutput></para>
+</listitem><listitem><para>Issue the command: <computeroutput>cd DPP</computeroutput></para>
+</listitem><listitem><para>Issue the command: <computeroutput>build.bat</computeroutput></para>
+</listitem><listitem><para>Build a <computeroutput>config.json</computeroutput> file in the directory above the <computeroutput>test.exe</computeroutput> containing a valid bot token and shard count.</para>
+</listitem><listitem><para>Start the test bot!</para>
 </listitem></orderedlist>
+</para>
+<para><image type="html" name="runbot.png"></image>
 </para>
 <sect2 id="buildwindows_1autotoc_md8">
 <title>Troubleshooting</title>
-<para><itemizedlist>
-<listitem><para>If you do not have an option to open the CMakeLists.txt, ensure that you have installed the C++ development portions of visual studio (not just web development portions) with at least the default options.</para>
-</listitem><listitem><para>If the project does not build, please ask for help on the <ulink url="https://discord.gg/dpp">official discord server</ulink>.</para>
-</listitem></itemizedlist>
-</para>
+<para>If the program fails to build, you may need to adjust build.bat to suit paths on your system, notably the path to msbuild.</para>
 </sect2>
 <sect2 id="buildwindows_1autotoc_md9">
 <title>After compiling</title>
-<para>After compilation you can directly reference the compiled project in your own CMakeLists.txt as a library or use the lib/dll/headers as you wish. Note that <computeroutput>openssl</computeroutput> and <computeroutput>zlib</computeroutput> will also be an indirect dependency of your program (as <computeroutput>DLL</computeroutput> files) and should be copied alongside <computeroutput>dpp.dll</computeroutput>. </para>
+<para>After compilation you can take the .dll, .lib, .pdb and .exp files and copy them into your project as needed. You can also just start changing test.cpp to suit your needs, and build the entire project around the code you cloned from git as a template. </para>
 </sect2>
 </sect1>
     </detaileddescription>

@@ -21,9 +21,9 @@
 </table>
 </para>
 <para>Let&apos;s break this program down step by step:</para>
-<sect2 id="firstbot_1autotoc_md33">
+<sect2 id="firstbot_1autotoc_md23">
 <title>1. Start with an empty C++ program</title>
-<para>Make sure to include the header file for the D++ library with the instruction #include <computeroutput>&lt;dpp/dpp.h&gt;</computeroutput>!</para>
+<para>Make sure to include the header file for the D++ library with the instruction <computeroutput>#include &lt;dpp/dpp.h&gt;</computeroutput>!</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -33,7 +33,7 @@
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="firstbot_1autotoc_md34">
+<sect2 id="firstbot_1autotoc_md24">
 <title>2. Create an instance of dpp::cluster</title>
 <para>To make use of the library you must create a <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> object. This object is the main object in your program like the <computeroutput>Discord.Client</computeroutput> object in Discord.js.</para>
 <para>You can instantiate this class as shown below. Remember to put your bot token in the code where it says <computeroutput>&quot;token&quot;</computeroutput>!</para>
@@ -48,9 +48,9 @@
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="firstbot_1autotoc_md35">
+<sect2 id="firstbot_1autotoc_md25">
 <title>3. Attach to an event</title>
-<para>To have a bot that does something, you should attach to some events. Let&apos;s start by attaching to the <computeroutput>on_ready</computeroutput> event (<ref refid="classdpp_1_1cluster_1a598c59a3848bf30d82938fdd7f5813a3" kindref="member">dpp::cluster::on_ready</ref>) which will notify your program when the bot is connected:</para>
+<para>To have a bot that does something, you should attach to some events. Let&apos;s start by attaching to the <computeroutput>on_ready</computeroutput> event (<ref refid="classdpp_1_1cluster_1ad8170aef3ae244df66464b192e3e30e7" kindref="member">dpp::cluster::on_ready</ref>) which will notify your program when the bot is connected:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -65,9 +65,9 @@
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="firstbot_1autotoc_md36">
+<sect2 id="firstbot_1autotoc_md26">
 <title>4. Attach to another event to reveice messages</title>
-<para>If you want to receive messages, you should also attach your program to the <computeroutput>on_message_create</computeroutput> event (<ref refid="classdpp_1_1cluster_1aaaafcd2c26fe588021454ee3d0d0fec8" kindref="member">dpp::cluster::on_message_create</ref>) which is the same as the Discord.js <computeroutput>message</computeroutput> event. You add this to your program after the <computeroutput>on_ready</computeroutput> event:</para>
+<para>If you want to receive messages, you should also attach your program to the <computeroutput>on_message_create</computeroutput> event (<ref refid="classdpp_1_1cluster_1a29140a7c0e1250fe2016dbe4ced56f95" kindref="member">dpp::cluster::on_message_create</ref>) which is the same as the Discord.js <computeroutput>message</computeroutput> event. You add this to your program after the <computeroutput>on_ready</computeroutput> event:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -85,9 +85,9 @@
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="firstbot_1autotoc_md37">
+<sect2 id="firstbot_1autotoc_md27">
 <title>5 . Add some content to the events</title>
-<para>Attaching to an event is a good start, but to make a bot you should actually put some program code into the events. We will add some code to the <computeroutput>on_ready</computeroutput> event to output the bot&apos;s nickname (<ref refid="classdpp_1_1cluster_1ad31317a40181f6864646c8758871b495" kindref="member">dpp::cluster::me</ref>) and some code into the <computeroutput>on_message_create</computeroutput> to look for messages that are the text <computeroutput>!ping</computeroutput> and reply with <computeroutput>!pong</computeroutput>:</para>
+<para>Attaching to an event is a good start, but to make a bot you should actually put some program code into the events. Lets add some simple things into the events. We will add some code to the <computeroutput>on_ready</computeroutput> event to output the bot&apos;s nickname (<ref refid="classdpp_1_1cluster_1ad31317a40181f6864646c8758871b495" kindref="member">dpp::cluster::me</ref>) and some code into the <computeroutput>on_message_create</computeroutput> to look for messages that are the text <computeroutput>!ping</computeroutput> and reply with <computeroutput>!pong</computeroutput>:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -122,7 +122,7 @@
 </listitem></itemizedlist>
 </para>
 </sect2>
-<sect2 id="firstbot_1autotoc_md38">
+<sect2 id="firstbot_1autotoc_md28">
 <title>6. Add code to start the bot!</title>
 <para>To make the bot start, we must call the cluster::start method, e.g. in our program by using <computeroutput>bot.start(false)</computeroutput>.</para>
 <para>The parameter which we set to false indicates if the function should return once all shards are created. Passing <computeroutput>false</computeroutput> here tells the program you do not need to do anything once <computeroutput>bot.start</computeroutput> is called, so the <computeroutput>return</computeroutput> statement directly afterwards is never reached:</para>
@@ -148,7 +148,7 @@
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="firstbot_1autotoc_md39">
+<sect2 id="firstbot_1autotoc_md29">
 <title>7. Run your bot</title>
 <para>Compile your bot using <computeroutput>cmake ..</computeroutput> and <computeroutput>make</computeroutput> from the build directory, and run it with <computeroutput>./test</computeroutput> - Congratulations, you now have a working bot written using the D++ library! </para>
 </sect2>

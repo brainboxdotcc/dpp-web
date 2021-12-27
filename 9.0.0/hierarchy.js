@@ -2,14 +2,11 @@ var hierarchy =
 [
     [ "dpp::activity", "classdpp_1_1activity.html", null ],
     [ "dpp::message::allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", null ],
-    [ "dpp::app_team", "classdpp_1_1app__team.html", null ],
-    [ "dpp::application", "classdpp_1_1application.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
     [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ],
-    [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
     [ "dpp::ban", "classdpp_1_1ban.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache", "classdpp_1_1cache.html", null ],
@@ -30,7 +27,6 @@ var hierarchy =
     [ "dpp::component_interaction", "structdpp_1_1component__interaction.html", null ],
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
-    [ "dpp::connection", "classdpp_1_1connection.html", null ],
     [ "dpp::dispatcher", "classdpp_1_1dispatcher.html", null ],
     [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
@@ -41,8 +37,6 @@ var hierarchy =
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
     [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
-    [ "dpp::etf_buffer", "structdpp_1_1etf__buffer.html", null ],
-    [ "dpp::etf_parser", "classdpp_1_1etf__parser.html", null ],
     [ "dpp::events::event", "classdpp_1_1events_1_1event.html", [
       [ "dpp::events::application_command_create", "classdpp_1_1events_1_1application__command__create.html", null ],
       [ "dpp::events::application_command_delete", "classdpp_1_1events_1_1application__command__delete.html", null ],
@@ -65,12 +59,6 @@ var hierarchy =
       [ "dpp::events::guild_role_create", "classdpp_1_1events_1_1guild__role__create.html", null ],
       [ "dpp::events::guild_role_delete", "classdpp_1_1events_1_1guild__role__delete.html", null ],
       [ "dpp::events::guild_role_update", "classdpp_1_1events_1_1guild__role__update.html", null ],
-      [ "dpp::events::guild_scheduled_event_create", "classdpp_1_1events_1_1guild__scheduled__event__create.html", null ],
-      [ "dpp::events::guild_scheduled_event_delete", "classdpp_1_1events_1_1guild__scheduled__event__delete.html", null ],
-      [ "dpp::events::guild_scheduled_event_update", "classdpp_1_1events_1_1guild__scheduled__event__update.html", null ],
-      [ "dpp::events::guild_scheduled_event_user_add", "classdpp_1_1events_1_1guild__scheduled__event__user__add.html", null ],
-      [ "dpp::events::guild_scheduled_event_user_remove", "classdpp_1_1events_1_1guild__scheduled__event__user__remove.html", null ],
-      [ "dpp::events::guild_stickers_update", "classdpp_1_1events_1_1guild__stickers__update.html", null ],
       [ "dpp::events::guild_update", "classdpp_1_1events_1_1guild__update.html", null ],
       [ "dpp::events::integration_create", "classdpp_1_1events_1_1integration__create.html", null ],
       [ "dpp::events::integration_delete", "classdpp_1_1events_1_1integration__delete.html", null ],
@@ -92,7 +80,6 @@ var hierarchy =
       [ "dpp::events::resumed", "classdpp_1_1events_1_1resumed.html", null ],
       [ "dpp::events::stage_instance_create", "classdpp_1_1events_1_1stage__instance__create.html", null ],
       [ "dpp::events::stage_instance_delete", "classdpp_1_1events_1_1stage__instance__delete.html", null ],
-      [ "dpp::events::stage_instance_update", "classdpp_1_1events_1_1stage__instance__update.html", null ],
       [ "dpp::events::thread_create", "classdpp_1_1events_1_1thread__create.html", null ],
       [ "dpp::events::thread_delete", "classdpp_1_1events_1_1thread__delete.html", null ],
       [ "dpp::events::thread_list_sync", "classdpp_1_1events_1_1thread__list__sync.html", null ],
@@ -127,18 +114,11 @@ var hierarchy =
       [ "dpp::guild_role_create_t", "structdpp_1_1guild__role__create__t.html", null ],
       [ "dpp::guild_role_delete_t", "structdpp_1_1guild__role__delete__t.html", null ],
       [ "dpp::guild_role_update_t", "structdpp_1_1guild__role__update__t.html", null ],
-      [ "dpp::guild_scheduled_event_create_t", "structdpp_1_1guild__scheduled__event__create__t.html", null ],
-      [ "dpp::guild_scheduled_event_delete_t", "structdpp_1_1guild__scheduled__event__delete__t.html", null ],
-      [ "dpp::guild_scheduled_event_update_t", "structdpp_1_1guild__scheduled__event__update__t.html", null ],
-      [ "dpp::guild_scheduled_event_user_add_t", "structdpp_1_1guild__scheduled__event__user__add__t.html", null ],
-      [ "dpp::guild_scheduled_event_user_remove_t", "structdpp_1_1guild__scheduled__event__user__remove__t.html", null ],
-      [ "dpp::guild_stickers_update_t", "structdpp_1_1guild__stickers__update__t.html", null ],
       [ "dpp::guild_update_t", "structdpp_1_1guild__update__t.html", null ],
       [ "dpp::integration_create_t", "structdpp_1_1integration__create__t.html", null ],
       [ "dpp::integration_delete_t", "structdpp_1_1integration__delete__t.html", null ],
       [ "dpp::integration_update_t", "structdpp_1_1integration__update__t.html", null ],
       [ "dpp::interaction_create_t", "structdpp_1_1interaction__create__t.html", [
-        [ "dpp::autocomplete_t", "structdpp_1_1autocomplete__t.html", null ],
         [ "dpp::button_click_t", "structdpp_1_1button__click__t.html", null ],
         [ "dpp::select_click_t", "structdpp_1_1select__click__t.html", null ]
       ] ],
@@ -158,7 +138,6 @@ var hierarchy =
       [ "dpp::resumed_t", "structdpp_1_1resumed__t.html", null ],
       [ "dpp::stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", null ],
       [ "dpp::stage_instance_delete_t", "structdpp_1_1stage__instance__delete__t.html", null ],
-      [ "dpp::stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", null ],
       [ "dpp::thread_create_t", "structdpp_1_1thread__create__t.html", null ],
       [ "dpp::thread_delete_t", "structdpp_1_1thread__delete__t.html", null ],
       [ "dpp::thread_list_sync_t", "structdpp_1_1thread__list__sync__t.html", null ],
@@ -168,8 +147,6 @@ var hierarchy =
       [ "dpp::typing_start_t", "structdpp_1_1typing__start__t.html", null ],
       [ "dpp::user_update_t", "structdpp_1_1user__update__t.html", null ],
       [ "dpp::voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", null ],
-      [ "dpp::voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", null ],
-      [ "dpp::voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", null ],
       [ "dpp::voice_ready_t", "structdpp_1_1voice__ready__t.html", null ],
       [ "dpp::voice_receive_t", "structdpp_1_1voice__receive__t.html", null ],
       [ "dpp::voice_server_update_t", "structdpp_1_1voice__server__update__t.html", null ],
@@ -177,10 +154,6 @@ var hierarchy =
       [ "dpp::voice_track_marker_t", "structdpp_1_1voice__track__marker__t.html", null ],
       [ "dpp::voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", null ],
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
-    ] ],
-    [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
-    [ "std::exception", null, [
-      [ "dpp::exception", "classdpp_1_1exception.html", null ]
     ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
@@ -201,36 +174,25 @@ var hierarchy =
     [ "detail::make_unsigned_or_unchanged< T, INTEGRAL >", "structdetail_1_1make__unsigned__or__unchanged.html", null ],
     [ "detail::make_unsigned_or_unchanged< T, true >", "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
-      [ "dpp::channel", "classdpp_1_1channel.html", [
-        [ "dpp::thread", "classdpp_1_1thread.html", null ]
-      ] ],
+      [ "dpp::channel", "classdpp_1_1channel.html", null ],
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ],
       [ "dpp::guild", "classdpp_1_1guild.html", null ],
       [ "dpp::integration", "classdpp_1_1integration.html", null ],
       [ "dpp::interaction", "classdpp_1_1interaction.html", null ],
       [ "dpp::role", "classdpp_1_1role.html", null ],
       [ "dpp::slashcommand", "classdpp_1_1slashcommand.html", null ],
-      [ "dpp::user", "classdpp_1_1user.html", [
-        [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
-      ] ],
+      [ "dpp::user", "classdpp_1_1user.html", null ],
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
     [ "dpp::message", "structdpp_1_1message.html", null ],
-    [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
-    [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
-    [ "OpusDecoder", "struct_opus_decoder.html", null ],
-    [ "OpusEncoder", "struct_opus_encoder.html", null ],
-    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
     [ "dpp::presence", "classdpp_1_1presence.html", null ],
     [ "dpp::prune", "structdpp_1_1prune.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
-    [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
-    [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [
@@ -238,20 +200,11 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
-    [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
-    [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
-    [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
-    [ "test_t", "structtest__t.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
-    [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
-    [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
-    [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
-    [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
-    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ],
-    [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
+    [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ]
 ];

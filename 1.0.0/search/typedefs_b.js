@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['rep_0',['rep',['../structdetail_1_1chrono__formatter.html#a2c6fb5bb3ba1229db77d88ed858a5194',1,'detail::chrono_formatter']]],
-  ['role_5fmap_1',['role_map',['../namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b',1,'dpp']]]
+  ['shard_5flist_0',['shard_list',['../namespacedpp.html#a93137fc59b3e4a03ee3250e6f5fad6e7',1,'dpp']]],
+  ['slashcommand_5fmap_1',['slashcommand_map',['../namespacedpp.html#acb9a69e08af58173ea9644999290416d',1,'dpp']]],
+  ['snowflake_2',['snowflake',['../namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475',1,'dpp']]]
 ];

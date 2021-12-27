@@ -18,5 +18,5 @@ var namespacedpp_1_1utility =
     [ "utf8len", "namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231", null ],
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
     [ "validate", "namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86", null ],
-    [ "cdn_host", "namespacedpp_1_1utility.html#a8b2a5e26d9da867e836e75187c505443", null ]
+    [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ]
 ];

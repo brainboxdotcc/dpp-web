@@ -8,9 +8,6 @@
     <detaileddescription>
 <sect1 id="buildlinux_1autotoc_md1">
 <title>Building on Linux</title>
-<para><simplesect kind="note"><para>You might not need to build a copy of the library for Linux - precompiled deb files for 64 bit and 32 bit Debian and Ubuntu are provided in the GitHub version releases. Unless you are on a different Linux distribution which does not support the installation of deb files, or wish to submit fixes and enhancements to the library itself you should have an easier time installing the precompiled version instead.</para>
-</simplesect>
-</para>
 <sect2 id="buildlinux_1autotoc_md2">
 <title>1. Build Source Code</title>
 <para><verbatim>mkdir build
@@ -21,7 +18,7 @@ make -j8
 </sect2>
 <sect2 id="buildlinux_1autotoc_md3">
 <title>2. Optional: Run test cases</title>
-<para>Run <computeroutput>./test</computeroutput> for unit test cases. You will need to create a <computeroutput>config.json</computeroutput> file in the directory above the executable file with a valid bot token in it. See the example file <computeroutput>config.example.json</computeroutput> for an example of the correct format.</para>
+<para>run <computeroutput>./test</computeroutput> for unit test cases. You will need to create a <computeroutput>config.json</computeroutput> file in the directory above the executable file with a valid bot token in it. See the example file <computeroutput>config.example.json</computeroutput> for an example of the correct format.</para>
 </sect2>
 <sect2 id="buildlinux_1autotoc_md4">
 <title>3. Install to /usr/local/include and /usr/local/lib</title>
@@ -35,18 +32,16 @@ make -j8
 </sect2>
 <sect2 id="buildlinux_1autotoc_md6">
 <title>5. Using the library</title>
-<para>Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp
+<para>Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>g++ -std=c++17 -ldpp -lfmt mydppbot.cpp -o dppbot
 </verbatim> The important flags in this command-line are:</para>
 <para><itemizedlist>
-<listitem><para><computeroutput>-std=c++17</computeroutput> - Required to compile the headers<itemizedlist>
-<listitem><para><computeroutput>mydppbot.cpp</computeroutput> - Your source code</para>
-</listitem></itemizedlist>
-</para>
+<listitem><para><computeroutput>-std=c++17</computeroutput> - Required to compile the headers</para>
+</listitem><listitem><para><computeroutput>-ldpp -lfmt</computeroutput> - Link to libdpp.so and its dependencies, also in /usr/local</para>
+</listitem><listitem><para><computeroutput>mydppbot.cpp</computeroutput> - Your source code</para>
 </listitem><listitem><para><computeroutput>dppbot</computeroutput> - The name of the executable to make</para>
 </listitem></itemizedlist>
 </para>
-<para>Of course, this is just a proof of concept — you should really use a more robust build system like GNU <computeroutput>make</computeroutput> or <ref refid="buildcmake" kindref="compound">`cmake`</ref>.</para>
-<para>If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template bot</ulink>.</para>
+<para>Of course, this is just a proof of concept - you should really use a more robust build system like GNU <computeroutput>make</computeroutput> or <ref refid="buildcmake" kindref="compound">`cmake`</ref>.</para>
 <para><bold>Have fun!</bold> </para>
 </sect2>
 </sect1>

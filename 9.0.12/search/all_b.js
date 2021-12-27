@@ -21,11 +21,10 @@ var searchData=
   ['locale_18',['locale',['../classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b',1,'dpp::user_identified']]],
   ['localtime_5fr_19',['localtime_r',['../namespacedetail.html#af0a05177ff15d17183395170cd81a3a0',1,'detail']]],
   ['localtime_5fs_20',['localtime_s',['../namespacedetail.html#acca4638afe6cbc4e38e3901cd0c16186',1,'detail']]],
-  ['location_21',['location',['../structdpp_1_1event__entities.html#a55ed07b7c6e84678dfee16c71973a3bb',1,'dpp::event_entities']]],
-  ['locked_22',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
-  ['log_23',['log',['../classdpp_1_1ssl__client.html#a6037b1a66cf83e022655bd47f0df61a5',1,'dpp::ssl_client::log()'],['../classdpp_1_1discord__voice__client.html#ac06f68e15b979b0590f09c9732548f16',1,'dpp::discord_voice_client::log()'],['../classdpp_1_1discord__client.html#a9880e3f13c00cd6e4397fe64ae23b4d0',1,'dpp::discord_client::log()'],['../classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0',1,'dpp::cluster::log()'],['../classdpp_1_1dispatcher.html#ade7ab56cf5c74ffed80fcee69a66c144',1,'dpp::dispatcher::log()']]],
-  ['log_5ft_24',['log_t',['../structdpp_1_1log__t.html',1,'dpp::log_t'],['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t::log_t()']]],
-  ['logger_25',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
-  ['loglevel_26',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045',1,'dpp::utility::loglevel()']]],
-  ['lossless_5fintegral_5fconversion_27',['lossless_integral_conversion',['../namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9',1,'safe_duration_cast']]]
+  ['locked_21',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
+  ['log_22',['log',['../classdpp_1_1ssl__client.html#a6037b1a66cf83e022655bd47f0df61a5',1,'dpp::ssl_client::log()'],['../classdpp_1_1discord__voice__client.html#ac06f68e15b979b0590f09c9732548f16',1,'dpp::discord_voice_client::log()'],['../classdpp_1_1discord__client.html#a9880e3f13c00cd6e4397fe64ae23b4d0',1,'dpp::discord_client::log()'],['../classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0',1,'dpp::cluster::log()'],['../classdpp_1_1dispatcher.html#ade7ab56cf5c74ffed80fcee69a66c144',1,'dpp::dispatcher::log()']]],
+  ['log_5ft_23',['log_t',['../structdpp_1_1log__t.html',1,'dpp::log_t'],['../structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b',1,'dpp::log_t::log_t()']]],
+  ['logger_24',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
+  ['loglevel_25',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045',1,'dpp::utility::loglevel()']]],
+  ['lossless_5fintegral_5fconversion_26',['lossless_integral_conversion',['../namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9',1,'safe_duration_cast']]]
 ];

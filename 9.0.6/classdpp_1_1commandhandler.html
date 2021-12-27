@@ -100,7 +100,6 @@ $(document).ready(function(){initNavTree('classdpp_1_1commandhandler.html',''); 
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdpp_1_1commandhandler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dpp::commandhandler Class Reference</div></div>
 </div><!--header-->
@@ -108,19 +107,9 @@ $(document).ready(function(){initNavTree('classdpp_1_1commandhandler.html',''); 
 
 <p>The commandhandler class represents a group of commands, prefixed or slash commands with handling functions.  
  <a href="classdpp_1_1commandhandler.html#details">More...</a></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::commandhandler:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdpp_1_1commandhandler__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a064419ada0fd30cee04faec9f75ba04d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d">string_has_prefix</a> (std::string &amp;str)</td></tr>
-<tr class="memdesc:a064419ada0fd30cee04faec9f75ba04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string has a known prefix on the start. Modifies string to remove prefix if it returns true.  <a href="classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d">More...</a><br /></td></tr>
-<tr class="separator:a064419ada0fd30cee04faec9f75ba04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7300779eb1aaf04041e48c756abafafb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a7300779eb1aaf04041e48c756abafafb">commandhandler</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *o, bool auto_hook_events=true, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> application_id=0)</td></tr>
 <tr class="memdesc:a7300779eb1aaf04041e48c756abafafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new commandhandler object.  <a href="classdpp_1_1commandhandler.html#a7300779eb1aaf04041e48c756abafafb">More...</a><br /></td></tr>
 <tr class="separator:a7300779eb1aaf04041e48c756abafafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,39 +125,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a791ed0c75ef77306af84be30ded619f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1commandhandler.html">commandhandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a791ed0c75ef77306af84be30ded619f8">add_command</a> (const std::string &amp;command, const <a class="el" href="namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65">parameter_registration_t</a> &amp;parameters, <a class="el" href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">command_handler</a> handler, const std::string &amp;description=&quot;&quot;, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id=0)</td></tr>
 <tr class="memdesc:a791ed0c75ef77306af84be30ded619f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a command to the command handler.  <a href="classdpp_1_1commandhandler.html#a791ed0c75ef77306af84be30ded619f8">More...</a><br /></td></tr>
 <tr class="separator:a791ed0c75ef77306af84be30ded619f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a208f3684f3987d87074824bd13699e42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1commandhandler.html">commandhandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a208f3684f3987d87074824bd13699e42">register_commands</a> ()</td></tr>
-<tr class="memdesc:a208f3684f3987d87074824bd13699e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register all slash commands with Discord This method must be called if you are using the "/" prefix to mark the end of commands being added to the handler. Note that this uses bulk registration and will replace any existing slash commands.  <a href="classdpp_1_1commandhandler.html#a208f3684f3987d87074824bd13699e42">More...</a><br /></td></tr>
-<tr class="separator:a208f3684f3987d87074824bd13699e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76d6c3790f9dd01cddaa4d521151c369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a76d6c3790f9dd01cddaa4d521151c369">route</a> (const <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;msg)</td></tr>
-<tr class="memdesc:a76d6c3790f9dd01cddaa4d521151c369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route a command from the on_message_create function. Call this method from within your on_message_create with the received <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a> object.  <a href="classdpp_1_1commandhandler.html#a76d6c3790f9dd01cddaa4d521151c369">More...</a><br /></td></tr>
-<tr class="separator:a76d6c3790f9dd01cddaa4d521151c369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf454dbea724739e53540721af21b9a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3">route</a> (const struct <a class="el" href="structdpp_1_1interaction__create__t.html">interaction_create_t</a> &amp;event)</td></tr>
-<tr class="memdesc:acf454dbea724739e53540721af21b9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route a command from the on_interaction_create function. Call this method from your on_interaction_create with the received <a class="el" href="structdpp_1_1interaction__create__t.html" title="Create interaction.">dpp::interaction_create_t</a> object.  <a href="classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3">More...</a><br /></td></tr>
-<tr class="separator:acf454dbea724739e53540721af21b9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e8e241a9208405bf05d7cf8806cd19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a50e8e241a9208405bf05d7cf8806cd19">reply</a> (const <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;m, <a class="el" href="structdpp_1_1command__source.html">command_source</a> source, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:a50e8e241a9208405bf05d7cf8806cd19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command. You should use this method rather than <a class="el" href="classdpp_1_1cluster.html#a080a8cefc6ceb0b882fdb6fe70c078a6" title="Send a message to a channel. The callback function is called when the message has been sent.">cluster::message_create</a> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="classdpp_1_1commandhandler.html#a50e8e241a9208405bf05d7cf8806cd19">More...</a><br /></td></tr>
-<tr class="separator:a50e8e241a9208405bf05d7cf8806cd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8ddef707401052283e69956feab5a5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#aa8ddef707401052283e69956feab5a5c">thinking</a> (<a class="el" href="structdpp_1_1command__source.html">command_source</a> source, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:aa8ddef707401052283e69956feab5a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command without a message, causing the discord client to display "Bot name is thinking...". The "thinking" message will persist for a maximum of 15 minutes. This counts as a reply for a slash command. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="classdpp_1_1commandhandler.html#aa8ddef707401052283e69956feab5a5c">More...</a><br /></td></tr>
-<tr class="separator:aa8ddef707401052283e69956feab5a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aaeb676a799cda302d4b08106f898a867"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="structdpp_1_1command__info__t.html">command_info_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#aaeb676a799cda302d4b08106f898a867">commands</a></td></tr>
-<tr class="memdesc:aaeb676a799cda302d4b08106f898a867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commands in the handler.  <a href="classdpp_1_1commandhandler.html#aaeb676a799cda302d4b08106f898a867">More...</a><br /></td></tr>
-<tr class="separator:aaeb676a799cda302d4b08106f898a867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbbac80b9d8fd5b3f82fd5bfc919f9bc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#acbbac80b9d8fd5b3f82fd5bfc919f9bc">prefixes</a></td></tr>
-<tr class="memdesc:acbbac80b9d8fd5b3f82fd5bfc919f9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid prefixes.  <a href="classdpp_1_1commandhandler.html#acbbac80b9d8fd5b3f82fd5bfc919f9bc">More...</a><br /></td></tr>
-<tr class="separator:acbbac80b9d8fd5b3f82fd5bfc919f9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e869380af75e438094960b2e66a898"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a29e869380af75e438094960b2e66a898">slash_commands_enabled</a></td></tr>
-<tr class="memdesc:a29e869380af75e438094960b2e66a898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true automatically if one of the prefixes added is "/".  <a href="classdpp_1_1commandhandler.html#a29e869380af75e438094960b2e66a898">More...</a><br /></td></tr>
-<tr class="separator:a29e869380af75e438094960b2e66a898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81203fb77ae98d8cfe81d95bf714fcf0"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a81203fb77ae98d8cfe81d95bf714fcf0">owner</a></td></tr>
-<tr class="memdesc:a81203fb77ae98d8cfe81d95bf714fcf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cluster we are attached to for issuing REST calls.  <a href="classdpp_1_1commandhandler.html#a81203fb77ae98d8cfe81d95bf714fcf0">More...</a><br /></td></tr>
-<tr class="separator:a81203fb77ae98d8cfe81d95bf714fcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa77b113d11ae040d9eb32a462bd88a7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#aa77b113d11ae040d9eb32a462bd88a7c">app_id</a></td></tr>
-<tr class="memdesc:aa77b113d11ae040d9eb32a462bd88a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application ID.  <a href="classdpp_1_1commandhandler.html#aa77b113d11ae040d9eb32a462bd88a7c">More...</a><br /></td></tr>
-<tr class="separator:aa77b113d11ae040d9eb32a462bd88a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecd44c69a7cee36d1d12aa5b0354d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#acecd44c69a7cee36d1d12aa5b0354d0d">route</a> (const class <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;msg)</td></tr>
+<tr class="memdesc:acecd44c69a7cee36d1d12aa5b0354d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route a command from the on_message_create function. Call this method from within your on_message_create with the received <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a> object.  <a href="classdpp_1_1commandhandler.html#acecd44c69a7cee36d1d12aa5b0354d0d">More...</a><br /></td></tr>
+<tr class="separator:acecd44c69a7cee36d1d12aa5b0354d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0438c6a4b44fe2e5101debe846cf0894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a0438c6a4b44fe2e5101debe846cf0894">route</a> (const class <a class="el" href="structdpp_1_1interaction__create__t.html">interaction_create_t</a> &amp;event)</td></tr>
+<tr class="memdesc:a0438c6a4b44fe2e5101debe846cf0894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route a command from the on_interaction_create function. Call this method from your on_interaction_create with the received <a class="el" href="structdpp_1_1interaction__create__t.html" title="Create interaction.">dpp::interaction_create_t</a> object.  <a href="classdpp_1_1commandhandler.html#a0438c6a4b44fe2e5101debe846cf0894">More...</a><br /></td></tr>
+<tr class="separator:a0438c6a4b44fe2e5101debe846cf0894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09893dbf101b7d0082b0a13e801a9db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a09893dbf101b7d0082b0a13e801a9db9">reply</a> (const <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;m, <a class="el" href="structdpp_1_1command__source.html">command_source</a> source)</td></tr>
+<tr class="memdesc:a09893dbf101b7d0082b0a13e801a9db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command. You should use this method rather than <a class="el" href="classdpp_1_1cluster.html#a080a8cefc6ceb0b882fdb6fe70c078a6" title="Send a message to a channel. The callback function is called when the message has been sent.">cluster::message_create</a> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="classdpp_1_1commandhandler.html#a09893dbf101b7d0082b0a13e801a9db9">More...</a><br /></td></tr>
+<tr class="separator:a09893dbf101b7d0082b0a13e801a9db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad7a740213d2daf06bf182ba1afc13e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html#a4ad7a740213d2daf06bf182ba1afc13e">thinking</a> (<a class="el" href="structdpp_1_1command__source.html">command_source</a> source)</td></tr>
+<tr class="memdesc:a4ad7a740213d2daf06bf182ba1afc13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reply to a command without a message, causing the discord client to display "Bot name is thinking...". The "thinking" message will persist for a maximum of 15 minutes. This counts as a reply for a slash command. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.  <a href="classdpp_1_1commandhandler.html#a4ad7a740213d2daf06bf182ba1afc13e">More...</a><br /></td></tr>
+<tr class="separator:a4ad7a740213d2daf06bf182ba1afc13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The commandhandler class represents a group of commands, prefixed or slash commands with handling functions. </p>
@@ -222,9 +190,6 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">dpp::commandhandler::~commandhandler </td>
@@ -233,11 +198,6 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Destroy the commandhandler object. </p>
@@ -301,12 +261,6 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>commandhandler&amp; reference to self </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1exception.html" title="The dpp::exception class derives from std::exception and supports some other ways of passing in error...">dpp::exception</a></td><td>if application ID cannot be determined </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -337,28 +291,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a208f3684f3987d87074824bd13699e42" name="a208f3684f3987d87074824bd13699e42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a208f3684f3987d87074824bd13699e42">&#9670;&nbsp;</a></span>register_commands()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1commandhandler.html">commandhandler</a> &amp; dpp::commandhandler::register_commands </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register all slash commands with Discord This method must be called if you are using the "/" prefix to mark the end of commands being added to the handler. Note that this uses bulk registration and will replace any existing slash commands. </p>
-<dl class="section return"><dt>Returns</dt><dd>commandhandler&amp; Reference to self for chaining method calls </dd></dl>
-
-</div>
-</div>
-<a id="a50e8e241a9208405bf05d7cf8806cd19" name="a50e8e241a9208405bf05d7cf8806cd19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50e8e241a9208405bf05d7cf8806cd19">&#9670;&nbsp;</a></span>reply()</h2>
+<a id="a09893dbf101b7d0082b0a13e801a9db9" name="a09893dbf101b7d0082b0a13e801a9db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09893dbf101b7d0082b0a13e801a9db9">&#9670;&nbsp;</a></span>reply()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,13 +307,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structdpp_1_1command__source.html">command_source</a>&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
-          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -394,15 +322,14 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">m</td><td>message to reply with. </td></tr>
     <tr><td class="paramname">source</td><td>source of the command </td></tr>
-    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a76d6c3790f9dd01cddaa4d521151c369" name="a76d6c3790f9dd01cddaa4d521151c369"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76d6c3790f9dd01cddaa4d521151c369">&#9670;&nbsp;</a></span>route() <span class="overload">[1/2]</span></h2>
+<a id="acecd44c69a7cee36d1d12aa5b0354d0d" name="acecd44c69a7cee36d1d12aa5b0354d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecd44c69a7cee36d1d12aa5b0354d0d">&#9670;&nbsp;</a></span>route() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -410,7 +337,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void dpp::commandhandler::route </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;&#160;</td>
+          <td class="paramtype">const class <a class="el" href="structdpp_1_1message.html">dpp::message</a> &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -427,8 +354,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acf454dbea724739e53540721af21b9a3" name="acf454dbea724739e53540721af21b9a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf454dbea724739e53540721af21b9a3">&#9670;&nbsp;</a></span>route() <span class="overload">[2/2]</span></h2>
+<a id="a0438c6a4b44fe2e5101debe846cf0894" name="a0438c6a4b44fe2e5101debe846cf0894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0438c6a4b44fe2e5101debe846cf0894">&#9670;&nbsp;</a></span>route() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,7 +363,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void dpp::commandhandler::route </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structdpp_1_1interaction__create__t.html">interaction_create_t</a> &amp;&#160;</td>
+          <td class="paramtype">const class <a class="el" href="structdpp_1_1interaction__create__t.html">interaction_create_t</a> &amp;&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
           <td></td>
         </tr>
@@ -479,37 +406,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a064419ada0fd30cee04faec9f75ba04d" name="a064419ada0fd30cee04faec9f75ba04d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a064419ada0fd30cee04faec9f75ba04d">&#9670;&nbsp;</a></span>string_has_prefix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dpp::commandhandler::string_has_prefix </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns true if the string has a known prefix on the start. Modifies string to remove prefix if it returns true. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>String to check and modify </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true string contained a prefix, prefix removed from string </dd>
-<dd>
-false string did not contain a prefix </dd></dl>
-
-</div>
-</div>
-<a id="aa8ddef707401052283e69956feab5a5c" name="aa8ddef707401052283e69956feab5a5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8ddef707401052283e69956feab5a5c">&#9670;&nbsp;</a></span>thinking()</h2>
+<a id="a4ad7a740213d2daf06bf182ba1afc13e" name="a4ad7a740213d2daf06bf182ba1afc13e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad7a740213d2daf06bf182ba1afc13e">&#9670;&nbsp;</a></span>thinking()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -518,18 +416,8 @@ false string did not contain a prefix </dd></dl>
           <td class="memname">void dpp::commandhandler::thinking </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdpp_1_1command__source.html">command_source</a>&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>source</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
-          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -538,91 +426,9 @@ false string did not contain a prefix </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>source of the command </td></tr>
-    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa77b113d11ae040d9eb32a462bd88a7c" name="aa77b113d11ae040d9eb32a462bd88a7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa77b113d11ae040d9eb32a462bd88a7c">&#9670;&nbsp;</a></span>app_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> dpp::commandhandler::app_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Application ID. </p>
-
-</div>
-</div>
-<a id="aaeb676a799cda302d4b08106f898a867" name="aaeb676a799cda302d4b08106f898a867"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeb676a799cda302d4b08106f898a867">&#9670;&nbsp;</a></span>commands</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="structdpp_1_1command__info__t.html">command_info_t</a>&gt; dpp::commandhandler::commands</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Commands in the handler. </p>
-
-</div>
-</div>
-<a id="a81203fb77ae98d8cfe81d95bf714fcf0" name="a81203fb77ae98d8cfe81d95bf714fcf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81203fb77ae98d8cfe81d95bf714fcf0">&#9670;&nbsp;</a></span>owner</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">class <a class="el" href="classdpp_1_1cluster.html">cluster</a>* dpp::commandhandler::owner</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cluster we are attached to for issuing REST calls. </p>
-
-</div>
-</div>
-<a id="acbbac80b9d8fd5b3f82fd5bfc919f9bc" name="acbbac80b9d8fd5b3f82fd5bfc919f9bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbbac80b9d8fd5b3f82fd5bfc919f9bc">&#9670;&nbsp;</a></span>prefixes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::string&gt; dpp::commandhandler::prefixes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Valid prefixes. </p>
-
-</div>
-</div>
-<a id="a29e869380af75e438094960b2e66a898" name="a29e869380af75e438094960b2e66a898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29e869380af75e438094960b2e66a898">&#9670;&nbsp;</a></span>slash_commands_enabled</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dpp::commandhandler::slash_commands_enabled</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set to true automatically if one of the prefixes added is "/". </p>
 
 </div>
 </div>

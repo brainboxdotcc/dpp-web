@@ -11,27 +11,26 @@
         <argsstring></argsstring>
         <name>msg</name>
         <briefdescription>
-<para>message that was created (sent). If you use any parts of this in another thread, take a copy! It doesn&apos;t stick around! </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1119" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="1119" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="686" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="686" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
-        <type>const std::string</type>
-        <definition>const std::string dpp::event_dispatch_t::raw_event</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::event_dispatch_t::raw_event</definition>
         <argsstring></argsstring>
         <name>raw_event</name>
         <briefdescription>
-<para>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </para>
         </briefdescription>
         <detaileddescription>
+<para>Raw event text </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="53" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="53" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="40" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
         <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
@@ -39,13 +38,13 @@
         <argsstring></argsstring>
         <name>from</name>
         <briefdescription>
-<para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
         </briefdescription>
         <detaileddescription>
+<para>Shard the event came from </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="59" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="59" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="43" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -86,299 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1114" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="207" bodyend="207"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1a3e23154de7f2cc2ac32d8f60efec0130" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::send</definition>
-        <argsstring>(const std::string &amp;m, command_completion_event_t callback={}) const</argsstring>
-        <name>send</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>m</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Send a text to the same channel as the channel_id in recieved event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>m</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Text to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1126" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="56" bodyend="59"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1af23cc09af5fd2b43b688188c7b29e14c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::send</definition>
-        <argsstring>(message &amp;msg, command_completion_event_t callback={}) const</argsstring>
-        <name>send</name>
-        <param>
-          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Send a message to the same channel as the channel_id in recieved event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1133" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="61" bodyend="65"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1ac74d055f8d63c5218e7bd0a1f811392f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::send</definition>
-        <argsstring>(message &amp;&amp;msg, command_completion_event_t callback={}) const</argsstring>
-        <name>send</name>
-        <param>
-          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;&amp;</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Send a message to the same channel as the channel_id in recieved event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1140" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="67" bodyend="71"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1a1bf81bd08594f66117fa35598b9fe2ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::reply</definition>
-        <argsstring>(const std::string &amp;m, command_completion_event_t callback={}) const</argsstring>
-        <name>reply</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>m</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Reply to the message recieved in the event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>m</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Text to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1147" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="73" bodyend="76"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1ad627e67c91b94bce752c5f0709cef4e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::reply</definition>
-        <argsstring>(message &amp;msg, command_completion_event_t callback={}) const</argsstring>
-        <name>reply</name>
-        <param>
-          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Reply to the message recieved in the event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to send as a reply. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1154" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="78" bodyend="83"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1a671ea184e3ce9e3566a96fa526c40e16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::reply</definition>
-        <argsstring>(message &amp;&amp;msg, command_completion_event_t callback={}) const</argsstring>
-        <name>reply</name>
-        <param>
-          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;&amp;</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Reply to the message recieved in the event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to send as a reply. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1161" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="85" bodyend="90"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
-        <definition>const event_dispatch_t &amp; dpp::event_dispatch_t::cancel_event</definition>
-        <argsstring>() const</argsstring>
-        <name>cancel_event</name>
-        <briefdescription>
-<para>Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <computeroutput>const</computeroutput> during the event, and cannot itself contain the changeable state). </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>&amp; reference to self for chaining </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="75" column="24" bodyfile="src/dpp/dispatcher.cpp" bodystart="42" bodyend="49"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::event_dispatch_t::is_cancelled</definition>
-        <argsstring>() const</argsstring>
-        <name>is_cancelled</name>
-        <briefdescription>
-<para>Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <computeroutput>const</computeroutput> during the event, and cannot itself contain the changeable state). </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true if the event is cancelled </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="83" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="51" bodyend="54"/>
+        <location file="include/dpp/dispatcher.h" line="685" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="134" bodyend="134"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -399,6 +106,9 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="9">
+        <label>SOCKET</label>
+      </node>
       <node id="11">
         <label>SSL *</label>
       </node>
@@ -408,16 +118,16 @@
       <node id="8">
         <label>bool</label>
       </node>
-      <node id="27">
+      <node id="25">
         <label>cache_policy_setting_t</label>
       </node>
-      <node id="18">
+      <node id="28">
         <label>double</label>
       </node>
-      <node id="26">
+      <node id="24">
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="27" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>emoji_policy</edgelabel>
           <edgelabel>role_policy</edgelabel>
           <edgelabel>user_policy</edgelabel>
@@ -439,19 +149,13 @@
           <edgelabel>numshards</edgelabel>
         </childnode>
         <childnode refid="18" relation="usage">
-          <edgelabel>rest_ping</edgelabel>
-        </childnode>
-        <childnode refid="19" relation="usage">
           <edgelabel>dispatch</edgelabel>
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>me</edgelabel>
         </childnode>
-        <childnode refid="26" relation="usage">
+        <childnode refid="24" relation="usage">
           <edgelabel>cache_policy</edgelabel>
-        </childnode>
-        <childnode refid="28" relation="usage">
-          <edgelabel>ws_mode</edgelabel>
         </childnode>
       </node>
       <node id="5">
@@ -474,7 +178,7 @@
           <edgelabel>last_heartbeat</edgelabel>
           <edgelabel>last_heartbeat_ack</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>thread_id</edgelabel>
         </childnode>
         <childnode refid="14" relation="usage">
@@ -484,36 +188,33 @@
           <edgelabel>sessionid</edgelabel>
           <edgelabel>token</edgelabel>
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>voice_mutex</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>websocket_ping</edgelabel>
         </childnode>
         <childnode refid="8" relation="usage">
           <edgelabel>ready</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
-          <edgelabel>protocol</edgelabel>
-        </childnode>
-        <childnode refid="31" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>connecting_voice_channels</edgelabel>
         </childnode>
       </node>
-      <node id="19">
+      <node id="18">
         <label>dpp::dispatcher</label>
         <link refid="classdpp_1_1dispatcher"/>
-        <childnode refid="20" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>application_command_create</edgelabel>
           <edgelabel>application_command_delete</edgelabel>
           <edgelabel>application_command_update</edgelabel>
-          <edgelabel>autocomplete</edgelabel>
           <edgelabel>button_click</edgelabel>
           <edgelabel>channel_create</edgelabel>
           <edgelabel>channel_delete</edgelabel>
           <edgelabel>channel_pins_update</edgelabel>
           <edgelabel>channel_update</edgelabel>
           <edgelabel>guild_ban_add</edgelabel>
+          <edgelabel>guild_ban_remove</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
       </node>
@@ -527,7 +228,7 @@
           <edgelabel>from</edgelabel>
         </childnode>
       </node>
-      <node id="33">
+      <node id="31">
         <label>dpp::guild_member</label>
         <link refid="classdpp_1_1guild__member"/>
         <childnode refid="3" relation="usage">
@@ -537,28 +238,25 @@
           <edgelabel>guild_id</edgelabel>
           <edgelabel>user_id</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="32" relation="usage">
           <edgelabel>roles</edgelabel>
         </childnode>
         <childnode refid="13" relation="usage">
           <edgelabel>joined_at</edgelabel>
           <edgelabel>premium_since</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
-          <edgelabel>avatar</edgelabel>
-        </childnode>
       </node>
-      <node id="22">
+      <node id="20">
         <label>dpp::managed</label>
         <link refid="classdpp_1_1managed"/>
         <childnode refid="14" relation="usage">
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
-      <node id="32">
+      <node id="30">
         <label>dpp::message</label>
         <link refid="structdpp_1_1message"/>
         <childnode refid="14" relation="usage">
@@ -567,11 +265,11 @@
           <edgelabel>id</edgelabel>
           <edgelabel>webhook_id</edgelabel>
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>author</edgelabel>
           <edgelabel>self_author</edgelabel>
         </childnode>
-        <childnode refid="33" relation="usage">
+        <childnode refid="31" relation="usage">
           <edgelabel>member</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
@@ -580,7 +278,7 @@
           <edgelabel>filename</edgelabel>
           <edgelabel>nonce</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="32" relation="usage">
           <edgelabel>attachments</edgelabel>
           <edgelabel>components</edgelabel>
           <edgelabel>embeds</edgelabel>
@@ -599,24 +297,21 @@
           <edgelabel>pinned</edgelabel>
           <edgelabel>tts</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>flags</edgelabel>
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="34" relation="usage">
+        <childnode refid="33" relation="usage">
           <edgelabel>message_reference</edgelabel>
         </childnode>
-        <childnode refid="35" relation="usage">
+        <childnode refid="34" relation="usage">
           <edgelabel>interaction</edgelabel>
         </childnode>
-        <childnode refid="36" relation="usage">
+        <childnode refid="35" relation="usage">
           <edgelabel>allowed_mentions</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
-          <edgelabel>owner</edgelabel>
-        </childnode>
       </node>
-      <node id="36">
+      <node id="35">
         <label>dpp::message::allowed_ref</label>
         <link refid="structdpp_1_1message_1_1allowed__ref"/>
         <childnode refid="8" relation="usage">
@@ -625,28 +320,28 @@
           <edgelabel>parse_users</edgelabel>
           <edgelabel>replied_user</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="32" relation="usage">
           <edgelabel>roles</edgelabel>
           <edgelabel>users</edgelabel>
         </childnode>
       </node>
-      <node id="35">
+      <node id="34">
         <label>dpp::message::message_interaction_struct</label>
         <link refid="structdpp_1_1message_1_1message__interaction__struct"/>
         <childnode refid="14" relation="usage">
           <edgelabel>id</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>usr</edgelabel>
         </childnode>
       </node>
-      <node id="34">
+      <node id="33">
         <label>dpp::message::message_ref</label>
         <link refid="structdpp_1_1message_1_1message__ref"/>
         <childnode refid="14" relation="usage">
@@ -663,7 +358,7 @@
         <link refid="structdpp_1_1message__create__t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="32" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>msg</edgelabel>
         </childnode>
       </node>
@@ -710,28 +405,28 @@
           <edgelabel>custom_writeable_ready</edgelabel>
         </childnode>
       </node>
-      <node id="21">
+      <node id="19">
         <label>dpp::user</label>
         <link refid="classdpp_1_1user"/>
-        <childnode refid="22" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>username</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>discriminator</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>avatar</edgelabel>
         </childnode>
         <childnode refid="17" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>refcount</edgelabel>
         </childnode>
       </node>
-      <node id="24">
+      <node id="22">
         <label>dpp::utility::iconhash</label>
         <link refid="structdpp_1_1utility_1_1iconhash"/>
         <childnode refid="14" relation="usage">
@@ -745,16 +440,13 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
-        <label>int</label>
-      </node>
       <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
       <node id="15">
         <label>function&lt;</label>
       </node>
-      <node id="30">
+      <node id="27">
         <label>std::mutex</label>
       </node>
       <node id="3">
@@ -762,19 +454,19 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="26">
         <label>native_handle_type</label>
       </node>
-      <node id="31">
+      <node id="29">
         <label>unordered_map&lt;</label>
       </node>
-      <node id="20">
+      <node id="32">
         <label>vector&lt;</label>
       </node>
       <node id="13">
         <label>time_t</label>
       </node>
-      <node id="23">
+      <node id="21">
         <label>uint16_t</label>
       </node>
       <node id="17">
@@ -783,28 +475,17 @@
       <node id="14">
         <label>uint64_t</label>
       </node>
-      <node id="25">
+      <node id="23">
         <label>uint8_t</label>
       </node>
-      <node id="28">
-        <label>websocket_protocol_t</label>
-      </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="1109" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="1109" bodyend="1162"/>
+    <location file="include/dpp/dispatcher.h" line="680" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="680" bodyend="687"/>
     <listofallmembers>
-      <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>cancel_event</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>event_dispatch_t</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>from</name></member>
-      <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>is_cancelled</name></member>
       <member refid="structdpp_1_1message__create__t_1ac92030b9e82742ab832f9a2e9d6cfc00" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>message_create_t</name></member>
       <member refid="structdpp_1_1message__create__t_1a93c10b3fce36e161eca41edcd32857d0" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>msg</name></member>
-      <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>raw_event</name></member>
-      <member refid="structdpp_1_1message__create__t_1a1bf81bd08594f66117fa35598b9fe2ec" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>reply</name></member>
-      <member refid="structdpp_1_1message__create__t_1ad627e67c91b94bce752c5f0709cef4e4" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>reply</name></member>
-      <member refid="structdpp_1_1message__create__t_1a671ea184e3ce9e3566a96fa526c40e16" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>reply</name></member>
-      <member refid="structdpp_1_1message__create__t_1a3e23154de7f2cc2ac32d8f60efec0130" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>send</name></member>
-      <member refid="structdpp_1_1message__create__t_1af23cc09af5fd2b43b688188c7b29e14c" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>send</name></member>
-      <member refid="structdpp_1_1message__create__t_1ac74d055f8d63c5218e7bd0a1f811392f" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>send</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>raw_event</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

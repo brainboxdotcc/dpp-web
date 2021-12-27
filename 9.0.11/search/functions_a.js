@@ -1,7 +1,7 @@
 var searchData=
 [
   ['managed_0',['managed',['../classdpp_1_1managed.html#a3e2b7d69e7313d84aff23cadf9ba9a6a',1,'dpp::managed']]],
-  ['message_1',['message',['../structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756',1,'dpp::message::message()'],['../structdpp_1_1message.html#a45a0883a10a19e933fbba682aba212f6',1,'dpp::message::message(const std::string &amp;content, message_type type=mt_default)'],['../structdpp_1_1message.html#a0e71afdc706c7ae83934ddfd8c2ffc38',1,'dpp::message::message(snowflake channel_id, const embed &amp;_embed)'],['../structdpp_1_1message.html#a21466e050ee9c0646392ccf5940bb62a',1,'dpp::message::message(snowflake channel_id, const std::string &amp;content, message_type type=mt_default)'],['../structdpp_1_1message.html#a656487248fe1e16ba79930a2078a964d',1,'dpp::message::message(class cluster *o)']]],
+  ['message_1',['message',['../structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756',1,'dpp::message::message()'],['../structdpp_1_1message.html#a45a0883a10a19e933fbba682aba212f6',1,'dpp::message::message(const std::string &amp;content, message_type type=mt_default)'],['../structdpp_1_1message.html#a0e71afdc706c7ae83934ddfd8c2ffc38',1,'dpp::message::message(snowflake channel_id, const embed &amp;_embed)'],['../structdpp_1_1message.html#a21466e050ee9c0646392ccf5940bb62a',1,'dpp::message::message(snowflake channel_id, const std::string &amp;content, message_type type=mt_default)']]],
   ['message_5fadd_5freaction_2',['message_add_reaction',['../classdpp_1_1cluster.html#a08eb4e0352a29a92587d677d4b5fd6a7',1,'dpp::cluster::message_add_reaction(const struct message &amp;m, const std::string &amp;reaction, command_completion_event_t callback={})'],['../classdpp_1_1cluster.html#a8c38aa5a7737577fbafcd67a783c60d1',1,'dpp::cluster::message_add_reaction(snowflake message_id, snowflake channel_id, const std::string &amp;reaction, command_completion_event_t callback={})']]],
   ['message_5fcreate_3',['message_create',['../classdpp_1_1cluster.html#a080a8cefc6ceb0b882fdb6fe70c078a6',1,'dpp::cluster']]],
   ['message_5fcreate_5ft_4',['message_create_t',['../structdpp_1_1message__create__t.html#ac92030b9e82742ab832f9a2e9d6cfc00',1,'dpp::message_create_t']]],
@@ -24,7 +24,7 @@ var searchData=
   ['message_5freaction_5fremove_5ft_21',['message_reaction_remove_t',['../structdpp_1_1message__reaction__remove__t.html#a4b140eb7ebf96cdca56377a932d10007',1,'dpp::message_reaction_remove_t']]],
   ['message_5funpin_22',['message_unpin',['../classdpp_1_1cluster.html#a454e53cea10416ca9d299855dbb08e0b',1,'dpp::cluster']]],
   ['message_5fupdate_5ft_23',['message_update_t',['../structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8',1,'dpp::message_update_t']]],
-  ['messages_5fget_24',['messages_get',['../classdpp_1_1cluster.html#a630d744322d1f570a63f33ae10b23ae9',1,'dpp::cluster']]],
+  ['messages_5fget_24',['messages_get',['../classdpp_1_1cluster.html#acb1a4777f0907ee6c841ba008a81f60b',1,'dpp::cluster']]],
   ['minute_25',['minute',['../structdetail_1_1chrono__formatter.html#aa294395578b71b34b117c394b24fd5f5',1,'detail::chrono_formatter']]],
   ['mobile_5fstatus_26',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]],
   ['mod_27',['mod',['../namespacedetail.html#ae7415818bbbc5e306422e8a341126ae1',1,'detail']]]

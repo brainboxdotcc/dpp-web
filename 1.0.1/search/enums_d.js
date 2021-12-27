@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['team_5fmember_5fstatus_0',['team_member_status',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4',1,'dpp']]]
+  ['webhook_5ftype_0',['webhook_type',['../namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0',1,'dpp']]],
+  ['wsstate_1',['WSState',['../namespacedpp.html#a3e85c4c9871cd06e41554d9130d17741',1,'dpp']]]
 ];

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1119" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="1119" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="1018" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="1018" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
         <type>const std::string</type>
@@ -86,265 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1114" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="207" bodyend="207"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1a3e23154de7f2cc2ac32d8f60efec0130" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::send</definition>
-        <argsstring>(const std::string &amp;m, command_completion_event_t callback={}) const</argsstring>
-        <name>send</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>m</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Send a text to the same channel as the channel_id in recieved event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>m</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Text to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1126" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="56" bodyend="59"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1af23cc09af5fd2b43b688188c7b29e14c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::send</definition>
-        <argsstring>(message &amp;msg, command_completion_event_t callback={}) const</argsstring>
-        <name>send</name>
-        <param>
-          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Send a message to the same channel as the channel_id in recieved event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1133" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="61" bodyend="65"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1ac74d055f8d63c5218e7bd0a1f811392f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::send</definition>
-        <argsstring>(message &amp;&amp;msg, command_completion_event_t callback={}) const</argsstring>
-        <name>send</name>
-        <param>
-          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;&amp;</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Send a message to the same channel as the channel_id in recieved event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1140" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="67" bodyend="71"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1a1bf81bd08594f66117fa35598b9fe2ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::reply</definition>
-        <argsstring>(const std::string &amp;m, command_completion_event_t callback={}) const</argsstring>
-        <name>reply</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>m</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Reply to the message recieved in the event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>m</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Text to send </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1147" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="73" bodyend="76"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1ad627e67c91b94bce752c5f0709cef4e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::reply</definition>
-        <argsstring>(message &amp;msg, command_completion_event_t callback={}) const</argsstring>
-        <name>reply</name>
-        <param>
-          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Reply to the message recieved in the event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to send as a reply. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1154" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="78" bodyend="83"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message__create__t_1a671ea184e3ce9e3566a96fa526c40e16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::message_create_t::reply</definition>
-        <argsstring>(message &amp;&amp;msg, command_completion_event_t callback={}) const</argsstring>
-        <name>reply</name>
-        <param>
-          <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;&amp;</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval>{}</defval>
-        </param>
-        <briefdescription>
-<para>Reply to the message recieved in the event. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to send as a reply. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User function to execute once the API call completes. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="note"><para><ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> contains a message object on success. On failure, value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> is true. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1161" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="85" bodyend="90"/>
+        <location file="include/dpp/dispatcher.h" line="1013" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="171" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
@@ -612,9 +354,6 @@
         <childnode refid="36" relation="usage">
           <edgelabel>allowed_mentions</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
-          <edgelabel>owner</edgelabel>
-        </childnode>
       </node>
       <node id="36">
         <label>dpp::message::allowed_ref</label>
@@ -790,7 +529,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="1109" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="1109" bodyend="1162"/>
+    <location file="include/dpp/dispatcher.h" line="1008" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="1008" bodyend="1019"/>
     <listofallmembers>
       <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>cancel_event</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>event_dispatch_t</name></member>
@@ -799,12 +538,6 @@
       <member refid="structdpp_1_1message__create__t_1ac92030b9e82742ab832f9a2e9d6cfc00" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>message_create_t</name></member>
       <member refid="structdpp_1_1message__create__t_1a93c10b3fce36e161eca41edcd32857d0" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>msg</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>raw_event</name></member>
-      <member refid="structdpp_1_1message__create__t_1a1bf81bd08594f66117fa35598b9fe2ec" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>reply</name></member>
-      <member refid="structdpp_1_1message__create__t_1ad627e67c91b94bce752c5f0709cef4e4" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>reply</name></member>
-      <member refid="structdpp_1_1message__create__t_1a671ea184e3ce9e3566a96fa526c40e16" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>reply</name></member>
-      <member refid="structdpp_1_1message__create__t_1a3e23154de7f2cc2ac32d8f60efec0130" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>send</name></member>
-      <member refid="structdpp_1_1message__create__t_1af23cc09af5fd2b43b688188c7b29e14c" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>send</name></member>
-      <member refid="structdpp_1_1message__create__t_1ac74d055f8d63c5218e7bd0a1f811392f" prot="public" virt="non-virtual"><scope>dpp::message_create_t</scope><name>send</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>
