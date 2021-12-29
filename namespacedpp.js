@@ -862,6 +862,7 @@ var namespacedpp =
     [ "__next_handle", "namespacedpp.html#a143b5e0c6905a9f223b8589729dff35a", null ],
     [ "audit_reason", "namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98", null ],
     [ "AUTOCOMPLETE_MAX_CHOICES", "namespacedpp.html#ade984eb788efb3e775c64760f2050755", null ],
+    [ "big_mm", "namespacedpp.html#a5b20a19e92b034905ee00c48310b4c41", null ],
     [ "channel_cache", "namespacedpp.html#a4ff3fe4a05ccf2ecb6f302d7e74413f0", null ],
     [ "deletion_mutex", "namespacedpp.html#ae611302ba7fc914d4732b65541132651", null ],
     [ "deletion_queue", "namespacedpp.html#aa72ed3236ea0ab73046304eba4fd4f9f", null ],

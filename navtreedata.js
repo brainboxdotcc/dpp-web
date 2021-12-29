@@ -62,7 +62,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "classdpp_1_1channel.html#ae1e877475ccc7113683382f787cfbc48",
 "classdpp_1_1cluster.html#a62128522527265f6844c4adf28989936",
-"classdpp_1_1cluster.html#ae6e937f48e410469c90f37368afa4cbe",
+"classdpp_1_1cluster.html#ae790b70aaecd9c42fe8a64c4c71a3d0c",
 "classdpp_1_1discord__client.html#a48586d5bfd6ce1e8f58770c7bfcc5c27",
 "classdpp_1_1dtemplate.html#a756fa7c16105d1ec41154b8ea8151ab6",
 "classdpp_1_1events_1_1presence__update.html",
@@ -73,17 +73,17 @@ var NAVTREEINDEX =
 "classdpp_1_1webhook.html",
 "hierarchy.html",
 "namespacedpp.html#a368cff415172099d1d3c90e11721b37e",
-"namespacedpp.html#abc401d86119c6443bf72d736857c1a58",
-"namespacemembers_f.html",
-"structdpp_1_1attachment.html#ac3fa01bbb9915006c0a11db9ed386749",
-"structdpp_1_1command__option.html#a0ff9143e5346618336b14c78934208d7",
-"structdpp_1_1event__dispatch__t.html#aca2880114f69b7ba62eb5137824c1432",
-"structdpp_1_1guild__role__create__t.html#a2f07681bfc59700b451764013a9d4e13",
-"structdpp_1_1interaction__create__t.html#a9ed8c6f8eaf7862de50a30e9642fbc56",
-"structdpp_1_1message_1_1message__interaction__struct.html#a69bd295380f5f5395bdb0cb21dcf9111",
-"structdpp_1_1resolved__user.html",
-"structdpp_1_1sticker.html#a621d5047225fb02a39523d74ce7e9130",
-"structdpp_1_1utility_1_1uptime.html#a55841b3a9e3a53240184645d3af39eb4"
+"namespacedpp.html#ab9dfb3756a165636d20f1fab3a623e76",
+"namespacemembers_eval_w.html",
+"structdpp_1_1attachment.html#ac20e7cdbbb8f1d79ffc04212efea4eb1",
+"structdpp_1_1command__option.html#a0f238f1e8bb393b2c37b47c6fb564952",
+"structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7",
+"structdpp_1_1guild__role__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
+"structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14",
+"structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525",
+"structdpp_1_1ready__t.html#aebf5fe086e4ee6921042fe798d58d72a",
+"structdpp_1_1sticker.html#a5d3b3f07c3a3ff4e9dc89887ee881d8c",
+"structdpp_1_1utility_1_1uptime.html#a4430115cf5a406ac9f6b4b9d3fa76f3d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
