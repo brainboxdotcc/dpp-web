@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structdpp_1_1utility_1_1uptime.html#a4430115cf5a406ac9f6b4b9d3fa76f3d":[6,0,1,1,1,1],
 "structdpp_1_1utility_1_1uptime.html#a4430115cf5a406ac9f6b4b9d3fa76f3d":[7,0,1,1,1,1],
 "structdpp_1_1utility_1_1uptime.html#a55841b3a9e3a53240184645d3af39eb4":[7,0,1,1,1,6],
 "structdpp_1_1utility_1_1uptime.html#a55841b3a9e3a53240184645d3af39eb4":[6,0,1,1,1,6],

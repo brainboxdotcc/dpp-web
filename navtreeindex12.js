@@ -1,15 +1,16 @@
 var NAVTREEINDEX12 =
 {
+"functions_~.html":[7,3,0,23],
 "hierarchy.html":[7,2],
 "index.html":[],
 "index.html":[0],
-"index.html#autotoc_md65":[0,0],
-"index.html#autotoc_md66":[0,1],
-"index.html#autotoc_md67":[0,2],
-"index.html#autotoc_md68":[0,3],
-"index.html#autotoc_md69":[0,4],
-"index.html#autotoc_md70":[0,5],
-"index.html#autotoc_md71":[0,6],
+"index.html#autotoc_md66":[0,0],
+"index.html#autotoc_md67":[0,1],
+"index.html#autotoc_md68":[0,2],
+"index.html#autotoc_md69":[0,3],
+"index.html#autotoc_md70":[0,4],
+"index.html#autotoc_md71":[0,5],
+"index.html#autotoc_md72":[0,6],
 "joinvc.html":[3,6],
 "lambdas-and-locals.html":[4,3],
 "md_docpages_02_build.html":[1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fafc617e73d51078781873de54d56f2a9a":[6,0,1,280,22],
 "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fafc77a3132f5a3f615ada9a19c486dec9":[6,0,1,280,9],
 "namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faff4b56b63ea738a7e62b3f7372662ff9":[6,0,1,280,8],
-"namespacedpp.html#a2dc2ae71be039ddc79338f59150fecac":[6,0,1,358],
-"namespacedpp.html#a350d31a987f01b3fe24d17bc59b1d9b1":[6,0,1,320]
+"namespacedpp.html#a2dc2ae71be039ddc79338f59150fecac":[6,0,1,358]
 };

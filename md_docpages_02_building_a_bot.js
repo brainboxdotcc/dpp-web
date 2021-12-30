@@ -8,5 +8,6 @@ var md_docpages_02_building_a_bot =
         [ "3. Configure CMake", "buildcmake.html#autotoc_md30", null ]
       ] ]
     ] ],
+    [ "Creating a Discord bot in Repl.it", "building-a-cpp-discord-bot-in-repl.html", null ],
     [ "Creating a Bot Account", "creating-a-bot-application.html", null ]
 ];
