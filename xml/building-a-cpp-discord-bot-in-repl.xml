@@ -6,7 +6,9 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>To build a D++ bot in a repl.it instance, follow these steps. These steps are slightly more convoluted than installing D++ into a standard container as we don&apos;t have access to root in the conventional way or write access to any files outside of our home directory in a repl. This guide sidesteps the issue by locally extracting a libdpp deb file installer, and referencing the local dependencies from the command-line.</para>
+<para><simplesect kind="note"><para>There is a premade repl, ready for use which was built using the steps above. If you wish to use this repl simply <ulink url="https://github.com/alanlichen/dpp-on-repl">visit this github repository</ulink> and click the &quot;Run on Replit&quot; button. Then, follow the steps in the README file.</para>
+</simplesect>
+To build a D++ bot in a repl.it instance, follow these steps. These steps are slightly more convoluted than installing D++ into a standard container as we don&apos;t have access to root in the conventional way or write access to any files outside of our home directory in a repl. This guide sidesteps the issue by locally extracting a libdpp deb file installer, and referencing the local dependencies from the command-line.</para>
 <para><orderedlist>
 <listitem><para>Use wget, or the upload button, to get the precompiled x64 release into your repl as a file, e.g. <computeroutput><ulink url="https://github.com/brainboxdotcc/DPP/releases/download/v9.0.16/libdpp-9.0.16-linux-x64.deb">https://github.com/brainboxdotcc/DPP/releases/download/v9.0.16/libdpp-9.0.16-linux-x64.deb</ulink></computeroutput></para>
 </listitem><listitem><para>Extract this deb file using <computeroutput>dpkg</computeroutput>: <programlisting><codeline><highlight class="normal">dpkg<sp/>-x<sp/>*.deb<sp/>.</highlight></codeline>
@@ -33,10 +35,6 @@
 </listitem></itemizedlist>
 </para>
 <para><image type="html" name="uptimerobot.png"></image>
-</para>
-<para><simplesect kind="note"><para>There is a premade repl, ready for use which was built using the steps above. If you wish to use this repl simply <ulink url="https://github.com/alanlichen/dpp-on-repl">visit this github repository</ulink> and click the &quot;Run on Replit&quot; button. Then, follow the steps in the README file.</para>
-</simplesect>
-<image type="html" name="repl.png"></image>
 </para>
 <sect2 id="building-a-cpp-discord-bot-in-repl_1autotoc_md34">
 <title>Troubleshooting</title>
