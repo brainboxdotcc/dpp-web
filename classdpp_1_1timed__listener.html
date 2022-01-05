@@ -187,7 +187,7 @@ template&lt;typename attached_event , class listening_function &gt; </div>
   <table class="params">
     <tr><td class="paramname">cl</td><td>Owning cluster </td></tr>
     <tr><td class="paramname">_duration</td><td>Duration of timed event in seconds </td></tr>
-    <tr><td class="paramname">event</td><td>Event to hook, e.g. cluster-&gt;dispatch.message_create </td></tr>
+    <tr><td class="paramname">event</td><td>Event to hook, e.g. <a class="el" href="classdpp_1_1cluster.html#a1a632b3c2c8d3ff3a47372ffa770acf5" title="Called when a new message arrives from discord. Note that D++ does not cache messages....">cluster.on_message_create</a> </td></tr>
     <tr><td class="paramname">on_end</td><td>An optional void() lambda to trigger when the <a class="el" href="classdpp_1_1timed__listener.html" title="A timed_listener is a way to temporarily attach to an event for a specific timeframe,...">timed_listener</a> times out. Calling the destructor before the timeout is reached does not call this lambda. </td></tr>
     <tr><td class="paramname">listener</td><td>Lambda to receive events. Type must match up properly with that passed into the 'event' parameter. </td></tr>
   </table>
