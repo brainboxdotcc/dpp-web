@@ -8257,7 +8257,9 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">user_identified</a> object is a subclass of <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a> which contains further details if you have the oauth2 identify or email scopes. If you do not have these scopes, these fields are empty. You can safely convert a <a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">user_identified</a> to user with <code>dynamic_cast</code>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">user_identified</a> object is a subclass of <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a> which contains further details if you have the oauth2 identify or email scopes. If you do not have these scopes, these fields are empty. You can safely convert a <a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">user_identified</a> to user with <code>dynamic_cast</code>. </dd>
+<dd>
+unless you want something special from <code><a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">dpp::user_identified</a></code> or you've turned off caching, you have no need to call this. Call <code><a class="el" href="namespacedpp.html#a368cff415172099d1d3c90e11721b37e">dpp::find_user</a></code> instead that looks up the user in the cache rather than a REST call. </dd></dl>
 
 </div>
 </div>
