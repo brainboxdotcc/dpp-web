@@ -330,9 +330,9 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="1059" column="12" bodyfile="include/dpp/message.h" bodystart="1059" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1message_1a2ed7eaf6f5ff69a94fcb4912c0c795c2" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::message::type</definition>
+      <memberdef kind="variable" id="structdpp_1_1message_1ad4aa6594661e1527815364ad5b33b96b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1acd7f41dcc93c1cf48514d2b123e4d8bc" kindref="member">message_type</ref></type>
+        <definition>message_type dpp::message::type</definition>
         <argsstring></argsstring>
         <name>type</name>
         <briefdescription>
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1062" column="8" bodyfile="include/dpp/message.h" bodystart="1062" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1062" column="14" bodyfile="include/dpp/message.h" bodystart="1062" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1adc283f0458df6fb0fc966c9f5040c19e" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structdpp_1_1message_1_1message__ref" kindref="compound">dpp::message::message_ref</ref></type>
@@ -1232,22 +1232,22 @@
       <node id="14">
         <label>bool</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>cache_policy_setting_t</label>
       </node>
-      <node id="19">
+      <node id="20">
         <label>double</label>
       </node>
-      <node id="20">
+      <node id="21">
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="21" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>emoji_policy</edgelabel>
           <edgelabel>role_policy</edgelabel>
           <edgelabel>user_policy</edgelabel>
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>dpp::cluster</label>
         <link refid="classdpp_1_1cluster"/>
         <childnode refid="5" relation="usage">
@@ -1262,19 +1262,19 @@
           <edgelabel>maxclusters</edgelabel>
           <edgelabel>numshards</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>rest_ping</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>me</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>cache_policy</edgelabel>
         </childnode>
-        <childnode refid="22" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>ws_mode</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="24" relation="usage">
           <edgelabel>on_application_command_create</edgelabel>
           <edgelabel>on_application_command_delete</edgelabel>
           <edgelabel>on_application_command_update</edgelabel>
@@ -1363,22 +1363,24 @@
         </childnode>
         <childnode refid="10" relation="usage">
           <edgelabel>flags</edgelabel>
-          <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="15" relation="usage">
-          <edgelabel>message_reference</edgelabel>
+          <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="16" relation="usage">
-          <edgelabel>interaction</edgelabel>
+          <edgelabel>message_reference</edgelabel>
         </childnode>
         <childnode refid="17" relation="usage">
-          <edgelabel>allowed_mentions</edgelabel>
+          <edgelabel>interaction</edgelabel>
         </childnode>
         <childnode refid="18" relation="usage">
+          <edgelabel>allowed_mentions</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
           <edgelabel>owner</edgelabel>
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>dpp::message::allowed_ref</label>
         <link refid="structdpp_1_1message_1_1allowed__ref"/>
         <childnode refid="14" relation="usage">
@@ -1392,7 +1394,7 @@
           <edgelabel>users</edgelabel>
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>dpp::message::message_interaction_struct</label>
         <link refid="structdpp_1_1message_1_1message__interaction__struct"/>
         <childnode refid="3" relation="usage">
@@ -1408,7 +1410,7 @@
           <edgelabel>usr</edgelabel>
         </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>dpp::message::message_ref</label>
         <link refid="structdpp_1_1message_1_1message__ref"/>
         <childnode refid="3" relation="usage">
@@ -1449,8 +1451,11 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>event_router_t&lt;</label>
+      </node>
+      <node id="15">
+        <label>message_type</label>
       </node>
       <node id="6">
         <label>std::basic_string&lt; Char &gt;</label>
@@ -1478,7 +1483,7 @@
       <node id="10">
         <label>uint8_t</label>
       </node>
-      <node id="22">
+      <node id="23">
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
@@ -1537,7 +1542,7 @@
       <member refid="structdpp_1_1message_1a8ab53932e4cf4fa00d021a5ca3f4b906" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>stickers</name></member>
       <member refid="structdpp_1_1message_1ae6f7c8c7061f1b53da8c43e59d79d040" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>suppress_embeds</name></member>
       <member refid="structdpp_1_1message_1a8f4ab5546606db3ea4bcdb41b60a5dba" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>tts</name></member>
-      <member refid="structdpp_1_1message_1a2ed7eaf6f5ff69a94fcb4912c0c795c2" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>type</name></member>
+      <member refid="structdpp_1_1message_1ad4aa6594661e1527815364ad5b33b96b" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>type</name></member>
       <member refid="structdpp_1_1message_1ad1033bc27c5c1436c2e321d1be1d65ed" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>webhook_id</name></member>
       <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::message</scope><name>~managed</name></member>
       <member refid="structdpp_1_1message_1a4b176cfde5ca415d09dedf3d6156ee97" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>~message</name></member>
