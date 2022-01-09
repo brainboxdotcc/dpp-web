@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad785209b6ad322555a800510a5b4356c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user's per-guild custom avatar is animated.  <a href="classdpp_1_1guild__member.html#ad785209b6ad322555a800510a5b4356c">More...</a><br /></td></tr>
 <tr class="separator:ad785209b6ad322555a800510a5b4356c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a849e4b4b20febc4bd1d32d8aaca11127"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild__member.html#a849e4b4b20febc4bd1d32d8aaca11127">get_avatar_url</a> (uint16_t size=0) const</td></tr>
-<tr class="memdesc:a849e4b4b20febc4bd1d32d8aaca11127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the members's per guild avatar if they have one, otherwise returns an empty string.  <a href="classdpp_1_1guild__member.html#a849e4b4b20febc4bd1d32d8aaca11127">More...</a><br /></td></tr>
+<tr class="memdesc:a849e4b4b20febc4bd1d32d8aaca11127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the members per guild avatar if they have one, otherwise returns an empty string.  <a href="classdpp_1_1guild__member.html#a849e4b4b20febc4bd1d32d8aaca11127">More...</a><br /></td></tr>
 <tr class="separator:a849e4b4b20febc4bd1d32d8aaca11127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf919401f5e69225fb9fee91de8b7983"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild__member.html#adf919401f5e69225fb9fee91de8b7983">set_nickname</a> (const std::string &amp;nick)</td></tr>
 <tr class="memdesc:adf919401f5e69225fb9fee91de8b7983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the nickname.  <a href="classdpp_1_1guild__member.html#adf919401f5e69225fb9fee91de8b7983">More...</a><br /></td></tr>
@@ -282,7 +282,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the members's per guild avatar if they have one, otherwise returns an empty string. </p>
+<p>Returns the members per guild avatar if they have one, otherwise returns an empty string. </p>
+<dl class="section note"><dt>Note</dt><dd>per-server avatar is a nitro only feature so it might be not set. If you need the real user avatar, use <a class="el" href="classdpp_1_1user.html#adddc16b840a409119b9bda1af4e39e42" title="Get the avatar url of the user object.">user::get_avatar_url</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>The size of the avatar in pixels. It can be any power of two between 16 and 4096. If not specified, the default sized avatar is returned. </td></tr>
