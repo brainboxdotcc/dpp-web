@@ -25,6 +25,7 @@ var searchData=
   ['eventmap_22',['eventmap',['../namespacedpp.html#a04b7d06f713536bf48333522c9a4264b',1,'dpp']]],
   ['executed_23',['executed',['../structtest__t.html#a337617aaab1f8f387723732467148792',1,'test_t']]],
   ['expire_5fgrace_5fperiod_24',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
-  ['explicit_5fcontent_5ffilter_25',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]],
-  ['external_5fip_26',['external_ip',['../namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c',1,'dpp']]]
+  ['expires_5fat_25',['expires_at',['../classdpp_1_1invite.html#a58eb1d4ad8f76fa8f21f00ab7b2e0253',1,'dpp::invite']]],
+  ['explicit_5fcontent_5ffilter_26',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]],
+  ['external_5fip_27',['external_ip',['../namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c',1,'dpp']]]
 ];

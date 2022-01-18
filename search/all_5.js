@@ -91,15 +91,16 @@ var searchData=
   ['event_5fstatus_88',['event_status',['../namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60',1,'dpp']]],
   ['eventmap_89',['eventmap',['../namespacedpp.html#a04b7d06f713536bf48333522c9a4264b',1,'dpp']]],
   ['example_20programs_90',['Example Programs',['../md_docpages_03_example_programs.html',1,'']]],
-  ['exception_91',['exception',['../classdpp_1_1exception.html',1,'dpp::exception'],['../classdpp_1_1exception.html#a369458d8db837316c84256bfed913426',1,'dpp::exception::exception(const char *what, size_t len)'],['../classdpp_1_1exception.html#a82a21aa6228b4c8e2ead7c45128cd9b7',1,'dpp::exception::exception()=default'],['../classdpp_1_1exception.html#ac2a498ef5a2deb592bd6dee52b4a1881',1,'dpp::exception::exception(const char *what)'],['../classdpp_1_1exception.html#aa59a84a3a233186cc130fc9e8ff8a271',1,'dpp::exception::exception(const std::string &amp;what)'],['../classdpp_1_1exception.html#a0365ae0f3b8cfbf193d08b427e79271f',1,'dpp::exception::exception(std::string &amp;&amp;what)'],['../classdpp_1_1exception.html#a1e8f1486c898e2ab6c513c7844221a9f',1,'dpp::exception::exception(const exception &amp;)=default'],['../classdpp_1_1exception.html#a269a23dc033395e0266a6c3c41b9ffb0',1,'dpp::exception::exception(exception &amp;&amp;)=default']]],
+  ['exception_91',['exception',['../classdpp_1_1exception.html',1,'dpp::exception'],['../classdpp_1_1exception.html#aa59a84a3a233186cc130fc9e8ff8a271',1,'dpp::exception::exception(const std::string &amp;what)'],['../classdpp_1_1exception.html#a82a21aa6228b4c8e2ead7c45128cd9b7',1,'dpp::exception::exception()=default'],['../classdpp_1_1exception.html#ac2a498ef5a2deb592bd6dee52b4a1881',1,'dpp::exception::exception(const char *what)'],['../classdpp_1_1exception.html#a369458d8db837316c84256bfed913426',1,'dpp::exception::exception(const char *what, size_t len)'],['../classdpp_1_1exception.html#a0365ae0f3b8cfbf193d08b427e79271f',1,'dpp::exception::exception(std::string &amp;&amp;what)'],['../classdpp_1_1exception.html#a1e8f1486c898e2ab6c513c7844221a9f',1,'dpp::exception::exception(const exception &amp;)=default'],['../classdpp_1_1exception.html#a269a23dc033395e0266a6c3c41b9ffb0',1,'dpp::exception::exception(exception &amp;&amp;)=default']]],
   ['exec_92',['exec',['../namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0',1,'dpp::utility']]],
   ['execute_5fwebhook_93',['execute_webhook',['../classdpp_1_1cluster.html#ad5e83314cede8b9277a01b7b173abbad',1,'dpp::cluster']]],
   ['executed_94',['executed',['../structtest__t.html#a337617aaab1f8f387723732467148792',1,'test_t']]],
   ['expire_5fgrace_5fperiod_95',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
-  ['expiry_5fkicks_5fuser_96',['expiry_kicks_user',['../classdpp_1_1integration.html#aa8c768b223e8eb219c7ffe99f13f0a07',1,'dpp::integration']]],
-  ['expl_5fall_5fmembers_97',['expl_all_members',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3',1,'dpp']]],
-  ['expl_5fdisabled_98',['expl_disabled',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479',1,'dpp']]],
-  ['expl_5fmembers_5fwithout_5froles_99',['expl_members_without_roles',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce',1,'dpp']]],
-  ['explicit_5fcontent_5ffilter_100',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]],
-  ['external_5fip_101',['external_ip',['../namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c',1,'dpp']]]
+  ['expires_5fat_96',['expires_at',['../classdpp_1_1invite.html#a58eb1d4ad8f76fa8f21f00ab7b2e0253',1,'dpp::invite']]],
+  ['expiry_5fkicks_5fuser_97',['expiry_kicks_user',['../classdpp_1_1integration.html#aa8c768b223e8eb219c7ffe99f13f0a07',1,'dpp::integration']]],
+  ['expl_5fall_5fmembers_98',['expl_all_members',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3',1,'dpp']]],
+  ['expl_5fdisabled_99',['expl_disabled',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479',1,'dpp']]],
+  ['expl_5fmembers_5fwithout_5froles_100',['expl_members_without_roles',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce',1,'dpp']]],
+  ['explicit_5fcontent_5ffilter_101',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]],
+  ['external_5fip_102',['external_ip',['../namespacedpp.html#af5d78d18a19b3fef2cf11ff545fee91c',1,'dpp']]]
 ];

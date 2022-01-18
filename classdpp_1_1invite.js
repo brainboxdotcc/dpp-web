@@ -8,6 +8,7 @@ var classdpp_1_1invite =
     [ "approximate_presence_count", "classdpp_1_1invite.html#a76dac8c741c2315e6be8733d12856b43", null ],
     [ "channel_id", "classdpp_1_1invite.html#aedc01d96281305a15b3d23a994927a5c", null ],
     [ "code", "classdpp_1_1invite.html#a26f76de18e3f4d24574d49ec96163170", null ],
+    [ "expires_at", "classdpp_1_1invite.html#a58eb1d4ad8f76fa8f21f00ab7b2e0253", null ],
     [ "guild_id", "classdpp_1_1invite.html#a3adbf1eb0e895b46bee120a1d4c24ab0", null ],
     [ "inviter_id", "classdpp_1_1invite.html#a6142074754432a855a7e37d731a52f88", null ],
     [ "max_age", "classdpp_1_1invite.html#af48b1a919db49531f09a01f8e8115f64", null ],
@@ -15,5 +16,6 @@ var classdpp_1_1invite =
     [ "target_user_id", "classdpp_1_1invite.html#ad9a3073a99b276032dce0e850b21a955", null ],
     [ "target_user_type", "classdpp_1_1invite.html#aaaf04b46e869c2f365051c81fd06dcf2", null ],
     [ "temporary", "classdpp_1_1invite.html#a3cbbaea6f39490617d8e6b2e452a4db5", null ],
-    [ "unique", "classdpp_1_1invite.html#a4d933ea3a2dc9a442ff711c63339bb1d", null ]
+    [ "unique", "classdpp_1_1invite.html#a4d933ea3a2dc9a442ff711c63339bb1d", null ],
+    [ "uses", "classdpp_1_1invite.html#a256cb8ecb38af03dcdfb7befe4b4f286", null ]
 ];
