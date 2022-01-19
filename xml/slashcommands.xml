@@ -59,7 +59,10 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting> </para>
+</programlisting></para>
+<para><simplesect kind="note"><para>For demonstration purposes this code is OK, but in the real world, it&apos;s not recommended to create slash commands in the <computeroutput>on_ready</computeroutput> event because it gets called often (discord forces reconnections and sometimes these do not resume). You could for example add a commandline parameter to your bot (<computeroutput>argc</computeroutput>, <computeroutput>argv</computeroutput>) so that if you want the bot to register commands it must be launched with a specific command line argument. </para>
+</simplesect>
+</para>
     </detaileddescription>
     <location file="docpages/03_example_programs.md"/>
   </compounddef>
