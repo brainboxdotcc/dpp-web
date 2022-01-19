@@ -19,5 +19,6 @@ var md_docpages_03_example_programs =
     [ "Attaching a file to a message", "attach-file.html", null ],
     [ "Caching Messages", "caching-messages.html", null ],
     [ "Collecting Reactions", "collecting-reactions.html", null ],
-    [ "Context Menus", "context-menu.html", null ]
+    [ "Context Menus", "context-menu.html", null ],
+    [ "Webhooks", "webhooks.html", null ]
 ];
