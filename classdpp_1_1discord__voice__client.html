@@ -194,13 +194,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a15ec0940d0a963dbb5e58d2eb895bcc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time remaining to send the audio output buffer in hours:minutes:seconds.  <a href="classdpp_1_1discord__voice__client.html#a15ec0940d0a963dbb5e58d2eb895bcc6">More...</a><br /></td></tr>
 <tr class="separator:a15ec0940d0a963dbb5e58d2eb895bcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84fc0cb1aaf9691aed818e18daea1b84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84">insert_marker</a> (const std::string &amp;metadata=&quot;&quot;)</td></tr>
-<tr class="memdesc:a84fc0cb1aaf9691aed818e18daea1b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer contents that indictes the end of some block of audio of significance to the sender. This may be a song from a streaming site, or some voice audio/speech, a sound effect, or whatever you choose. You can later skip to the next marker using the <a class="el" href="classdpp_1_1discord__voice__client.html#a8c30775fa7e4c8f82ff5531e4fae200f" title="Skip tp the next track marker, previously inserted by using the dpp::discord_voice_client::insert_mar...">dpp::discord_voice_client::skip_to_next_marker</a> function.  <a href="classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84">More...</a><br /></td></tr>
+<tr class="memdesc:a84fc0cb1aaf9691aed818e18daea1b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer contents that indicates the end of some block of audio of significance to the sender. This may be a song from a streaming site, or some voice audio/speech, a sound effect, or whatever you choose. You can later skip to the next marker using the <a class="el" href="classdpp_1_1discord__voice__client.html#a8c30775fa7e4c8f82ff5531e4fae200f" title="Skip tp the next track marker, previously inserted by using the dpp::discord_voice_client::insert_mar...">dpp::discord_voice_client::skip_to_next_marker</a> function.  <a href="classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84">More...</a><br /></td></tr>
 <tr class="separator:a84fc0cb1aaf9691aed818e18daea1b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c30775fa7e4c8f82ff5531e4fae200f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a8c30775fa7e4c8f82ff5531e4fae200f">skip_to_next_marker</a> ()</td></tr>
 <tr class="memdesc:a8c30775fa7e4c8f82ff5531e4fae200f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip tp the next track marker, previously inserted by using the <a class="el" href="classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84" title="Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer...">dpp::discord_voice_client::insert_marker</a> function. If there are no markers in the output buffer, then this skips to the end of the buffer and is equivalent to the <a class="el" href="classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d" title="Immediately stop all audio. Clears the packet queue.">dpp::discord_voice_client::stop_audio</a> function.  <a href="classdpp_1_1discord__voice__client.html#a8c30775fa7e4c8f82ff5531e4fae200f">More...</a><br /></td></tr>
 <tr class="separator:a8c30775fa7e4c8f82ff5531e4fae200f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69727c9ff92f6e86f4ee51260de3d111"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a69727c9ff92f6e86f4ee51260de3d111">get_marker_metadata</a> ()</td></tr>
-<tr class="memdesc:a69727c9ff92f6e86f4ee51260de3d111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the metdata string associated with each inserted marker.  <a href="classdpp_1_1discord__voice__client.html#a69727c9ff92f6e86f4ee51260de3d111">More...</a><br /></td></tr>
+<tr class="memdesc:a69727c9ff92f6e86f4ee51260de3d111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the metadata string associated with each inserted marker.  <a href="classdpp_1_1discord__voice__client.html#a69727c9ff92f6e86f4ee51260de3d111">More...</a><br /></td></tr>
 <tr class="separator:a69727c9ff92f6e86f4ee51260de3d111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef426df9775031fed6c6f50554573a0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#aef426df9775031fed6c6f50554573a0c">is_paused</a> ()</td></tr>
 <tr class="memdesc:aef426df9775031fed6c6f50554573a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the audio is paused. You can unpause with <a class="el" href="classdpp_1_1discord__voice__client.html#ad21c8743aef9a874ef53edfebd8ee2fb" title="Pause sending of audio.">dpp::discord_voice_client::pause_audio</a>.  <a href="classdpp_1_1discord__voice__client.html#aef426df9775031fed6c6f50554573a0c">More...</a><br /></td></tr>
@@ -601,7 +601,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the metdata string associated with each inserted marker. </p>
+<p>Get the metadata string associated with each inserted marker. </p>
 <dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;std::string&gt;&amp; list of metadata strings </dd></dl>
 
 </div>
@@ -825,7 +825,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer contents that indictes the end of some block of audio of significance to the sender. This may be a song from a streaming site, or some voice audio/speech, a sound effect, or whatever you choose. You can later skip to the next marker using the <a class="el" href="classdpp_1_1discord__voice__client.html#a8c30775fa7e4c8f82ff5531e4fae200f" title="Skip tp the next track marker, previously inserted by using the dpp::discord_voice_client::insert_mar...">dpp::discord_voice_client::skip_to_next_marker</a> function. </p>
+<p>Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer contents that indicates the end of some block of audio of significance to the sender. This may be a song from a streaming site, or some voice audio/speech, a sound effect, or whatever you choose. You can later skip to the next marker using the <a class="el" href="classdpp_1_1discord__voice__client.html#a8c30775fa7e4c8f82ff5531e4fae200f" title="Skip tp the next track marker, previously inserted by using the dpp::discord_voice_client::insert_mar...">dpp::discord_voice_client::skip_to_next_marker</a> function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">metadata</td><td>Arbitrary information related to this track </td></tr>
@@ -1210,7 +1210,7 @@ Protected Attributes</h2></td></tr>
 <p>The audio data should be 48000Hz signed 16 bit audio.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">length</td><td>The length of the audio data. The length should be a multiple of 4 (2x 16 bit stero channels) with a maximum length of 11520, which is a complete opus frame at highest quality.</td></tr>
+    <tr><td class="paramname">length</td><td>The length of the audio data. The length should be a multiple of 4 (2x 16 bit stereo channels) with a maximum length of 11520, which is a complete opus frame at highest quality.</td></tr>
   </table>
   </dd>
 </dl>

@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a667c18e57cc53f960d3467e84358a822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners.">event_router_t</a> object.  <a href="classdpp_1_1event__router__t.html#a667c18e57cc53f960d3467e84358a822">More...</a><br /></td></tr>
 <tr class="separator:a667c18e57cc53f960d3467e84358a822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3">call</a> (const T &amp;event) const</td></tr>
-<tr class="memdesc:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all attached listeners. Listenrs may cancel, by calling the event.cancel method.  <a href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3">More...</a><br /></td></tr>
+<tr class="memdesc:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all attached listeners. Listeners may cancel, by calling the event.cancel method.  <a href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3">More...</a><br /></td></tr>
 <tr class="separator:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abab35ab0fc1efe0057b69ff7bbd485ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab">empty</a> () const</td></tr>
 <tr class="memdesc:abab35ab0fc1efe0057b69ff7bbd485ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the container of listeners is empty, i.e. there is nothing listening for this event right now.  <a href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab">More...</a><br /></td></tr>
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
 class dpp::event_router_t&lt; T &gt;</div><p >Handles routing of an event to multiple listeners. </p>
 <p >Multiple listeners may attach to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners.">event_router_t</a> by means of operator(). Passing a lambda into operator() attaches to the event.</p>
-<p >Dispatchers of the event may call the <a class="el" href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3" title="Call all attached listeners. Listenrs may cancel, by calling the event.cancel method.">event_router_t::call()</a> method to cause all listeners to receive the event.</p>
+<p >Dispatchers of the event may call the <a class="el" href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3" title="Call all attached listeners. Listeners may cancel, by calling the event.cancel method.">event_router_t::call()</a> method to cause all listeners to receive the event.</p>
 <p >The <a class="el" href="classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab" title="Returns true if the container of listeners is empty, i.e. there is nothing listening for this event r...">event_router_t::empty()</a> method will return true if there are no listeners attached to the <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners.">event_router_t</a> (this can be used to save time by not constructing objects that nobody will ever see).</p>
 <p >The <a class="el" href="classdpp_1_1event__router__t.html#a6cb1a37fce0778d18db0104b2e61b9f4" title="Detach a listener from the event using a previously obtained ID.">event_router_t::detach()</a> method removes an existing listener from the event, using the event_handle ID returned by operator().</p>
 <p >This class is used by the library to route all websocket events to listening code.</p>
@@ -257,7 +257,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Call all attached listeners. Listenrs may cancel, by calling the event.cancel method. </p>
+<p>Call all attached listeners. Listeners may cancel, by calling the event.cancel method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Class to pass as parameter to all listeners. </td></tr>
