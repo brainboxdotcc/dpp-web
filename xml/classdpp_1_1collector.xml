@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3259" column="15" bodyfile="include/dpp/cluster.h" bodystart="3259" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3245" column="15" bodyfile="include/dpp/cluster.h" bodystart="3245" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3262" column="16" bodyfile="include/dpp/cluster.h" bodystart="3262" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3248" column="16" bodyfile="include/dpp/cluster.h" bodystart="3248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1collector_1aa1a02c2207aa69fd71be817382e6c957" prot="private" static="no" mutable="no">
         <type>std::vector&lt; C &gt;</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3264" column="13" bodyfile="include/dpp/cluster.h" bodystart="3264" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3250" column="13" bodyfile="include/dpp/cluster.h" bodystart="3250" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1collector_1a8a4b17c9a7360a9d77fbb6b983870847" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3266" column="6" bodyfile="include/dpp/cluster.h" bodystart="3266" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="3252" column="6" bodyfile="include/dpp/cluster.h" bodystart="3252" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3277" column="1" bodyfile="include/dpp/cluster.h" bodystart="3277" bodyend="3291"/>
+        <location file="include/dpp/cluster.h" line="3263" column="1" bodyfile="include/dpp/cluster.h" bodystart="3263" bodyend="3277"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3298" column="14"/>
+        <location file="include/dpp/cluster.h" line="3284" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1collector_1abe7a5ff238f82ee08003051468626c15" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>const C *</type>
@@ -175,11 +175,11 @@
 <para>Every time an event is fired on the collector, this method wil be called to determine if we should add an object to the list or not. This function can then process the <computeroutput>element</computeroutput> value, extract the parts which are to be saved to a list (e.g. a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> out of a <ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>) and return it as the return value. Returning a value of nullptr causes no object to be stored.</para>
 <para>Here is an example of how to filter messages which have specific text in them. This should be used with the specialised type <ref refid="classdpp_1_1message__collector" kindref="compound">dpp::message_collector</ref></para>
 <para><programlisting filename=".cpp"><codeline><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>*<sp/><ref refid="classdpp_1_1collector_1abe7a5ff238f82ee08003051468626c15" kindref="member">filter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>&amp;<sp/>m)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref>.find(</highlight><highlight class="stringliteral">&quot;something<sp/>i<sp/>want&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>;</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref>.find(</highlight><highlight class="stringliteral">&quot;something<sp/>i<sp/>want&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 <para><parameterlist kind="param"><parameteritem>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3326" column="17"/>
+        <location file="include/dpp/cluster.h" line="3312" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3337" column="14" bodyfile="include/dpp/cluster.h" bodystart="3337" bodyend="3340"/>
+        <location file="include/dpp/cluster.h" line="3323" column="14" bodyfile="include/dpp/cluster.h" bodystart="3323" bodyend="3326"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1collector_1a24ad57bf7d5c9b7ed7f18f51d01a7dcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3346" column="9" bodyfile="include/dpp/cluster.h" bodystart="3346" bodyend="3348"/>
+        <location file="include/dpp/cluster.h" line="3332" column="9" bodyfile="include/dpp/cluster.h" bodystart="3332" bodyend="3334"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -439,7 +439,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/cluster.h" line="3255" column="13" bodyfile="include/dpp/cluster.h" bodystart="3256" bodyend="3349"/>
+    <location file="include/dpp/cluster.h" line="3241" column="13" bodyfile="include/dpp/cluster.h" bodystart="3242" bodyend="3335"/>
     <listofallmembers>
       <member refid="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" virt="virtual"><scope>dpp::collector</scope><name>cancel</name></member>
       <member refid="classdpp_1_1collector_1a6b1ceac5e4c24685cc698702ef7be338" prot="public" virt="non-virtual"><scope>dpp::collector</scope><name>collector</name></member>

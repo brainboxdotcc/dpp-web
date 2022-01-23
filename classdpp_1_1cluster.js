@@ -144,7 +144,6 @@ var classdpp_1_1cluster =
     [ "messages_get", "classdpp_1_1cluster.html#aeb515b32911639cc22639f717090209a", null ],
     [ "nitro_sticker_get", "classdpp_1_1cluster.html#a115a49075ceb1817f1e81fc9388bf65e", null ],
     [ "post_rest", "classdpp_1_1cluster.html#a62b83ee3be02df68eb5e697ddc5efc0a", null ],
-    [ "post_rest_multipart", "classdpp_1_1cluster.html#a76d3e511ff73e2e152dd289919def380", null ],
     [ "request", "classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52", null ],
     [ "role_create", "classdpp_1_1cluster.html#ab912eb28e9bb4df46954c7a9b93b283d", null ],
     [ "role_delete", "classdpp_1_1cluster.html#a45414d0d189edd147c3d76b4480ec0b8", null ],
