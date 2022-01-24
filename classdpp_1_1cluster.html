@@ -177,6 +177,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62b83ee3be02df68eb5e697ddc5efc0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a62b83ee3be02df68eb5e697ddc5efc0a">post_rest</a> (const std::string &amp;endpoint, const std::string &amp;major_parameters, const std::string &amp;parameters, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, const std::string &amp;postdata, <a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a> callback, const std::string &amp;filename=&quot;&quot;, const std::string &amp;filecontent=&quot;&quot;)</td></tr>
 <tr class="memdesc:a62b83ee3be02df68eb5e697ddc5efc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a REST request. Where possible use a helper method instead like message_create.  <a href="classdpp_1_1cluster.html#a62b83ee3be02df68eb5e697ddc5efc0a">More...</a><br /></td></tr>
 <tr class="separator:a62b83ee3be02df68eb5e697ddc5efc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d3e511ff73e2e152dd289919def380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a76d3e511ff73e2e152dd289919def380">post_rest_multipart</a> (const std::string &amp;endpoint, const std::string &amp;major_parameters, const std::string &amp;parameters, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, const std::string &amp;postdata, <a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a> callback, const std::vector&lt; std::string &gt; &amp;filename={}, const std::vector&lt; std::string &gt; &amp;filecontent={})</td></tr>
+<tr class="memdesc:a76d3e511ff73e2e152dd289919def380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a multipart REST request. Where possible use a helper method instead like message_create.  <a href="classdpp_1_1cluster.html#a76d3e511ff73e2e152dd289919def380">More...</a><br /></td></tr>
+<tr class="separator:a76d3e511ff73e2e152dd289919def380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a156fe68358c421111e690f553c4e4f52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52">request</a> (const std::string &amp;url, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, <a class="el" href="namespacedpp.html#ae3249e99494d04bb4be50341f474621e">http_completion_event</a> callback, const std::string &amp;postdata=&quot;&quot;, const std::string &amp;mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;headers={})</td></tr>
 <tr class="memdesc:a156fe68358c421111e690f553c4e4f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a HTTP(S) request. For use when wanting asnyncronous access to HTTP APIs outside of Discord.  <a href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52">More...</a><br /></td></tr>
 <tr class="separator:a156fe68358c421111e690f553c4e4f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1660,8 +1663,8 @@ Friends</h2></td></tr>
 
 <p>Clear the audit log reason for the next REST call to be made. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically. </p>
 <p >Example: </p><div class="fragment"><div class="line">bot.set_audit_reason(<span class="stringliteral">&quot;Won&#39;t be sent&quot;</span>)</div>
-<div class="line">   .clear_audit_reason()</div>
-<div class="line">   .channel_delete(my_channel_id);</div>
+<div class="line"> .clear_audit_reason()</div>
+<div class="line"> .channel_delete(my_channel_id);</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>cluster&amp; Reference to self for chaining. </dd></dl>
 
 </div>
@@ -7009,6 +7012,85 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 </div>
 </div>
+<a id="a76d3e511ff73e2e152dd289919def380" name="a76d3e511ff73e2e152dd289919def380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76d3e511ff73e2e152dd289919def380">&#9670;&nbsp;</a></span>post_rest_multipart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::post_rest_multipart </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>major_parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a>&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>postdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filename</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filecontent</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Post a multipart REST request. Where possible use a helper method instead like message_create. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>Endpoint to post to, e.g. /api/guilds </td></tr>
+    <tr><td class="paramname">major_parameters</td><td>Major parameters for the endpoint e.g. a guild id </td></tr>
+    <tr><td class="paramname">parameters</td><td>Minor parameters for the API request </td></tr>
+    <tr><td class="paramname">method</td><td>Method, e.g. GET, POST </td></tr>
+    <tr><td class="paramname">postdata</td><td>Post data (usually JSON encoded) </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the HTTP call completes. The callback parameter will contain amongst other things, the decoded json. </td></tr>
+    <tr><td class="paramname">filename</td><td>List of filenames to post for POST requests (for uploading files) </td></tr>
+    <tr><td class="paramname">filecontent</td><td>List of file content to post for POST requests (for uploading files) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a156fe68358c421111e690f553c4e4f52" name="a156fe68358c421111e690f553c4e4f52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a156fe68358c421111e690f553c4e4f52">&#9670;&nbsp;</a></span>request()</h2>
 
@@ -7292,7 +7374,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Set the audit log reason for the next REST call to be made. This is set per-thread, so you must ensure that if you call this method, your request that is associated with the reason happens on the same thread where you set the reason. Once the next call is made, the audit log reason is cleared for this thread automatically. </p>
 <p >Example: </p><div class="fragment"><div class="line">bot.set_audit_reason(<span class="stringliteral">&quot;Too much abusive content&quot;</span>)</div>
-<div class="line">   .channel_delete(my_channel_id);</div>
+<div class="line"> .channel_delete(my_channel_id);</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reason</td><td>The reason to set for the next REST call on this thread </td></tr>
