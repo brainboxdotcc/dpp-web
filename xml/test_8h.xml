@@ -698,7 +698,7 @@
       <memberdef kind="define" id="test_8h_1a18108e10d28a932253d6f127d840b257" prot="public" static="no">
         <name>SAFE_GETENV</name>
         <param><defname>var</defname></param>
-        <initializer>(getenv(var) ? getenv(var) : &quot;0&quot;)</initializer>
+        <initializer>(getenv(var) &amp;&amp; *(getenv(var)) ? getenv(var) : &quot;0&quot;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
