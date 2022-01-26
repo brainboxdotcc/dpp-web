@@ -8,9 +8,6 @@ var annotated_dup =
     ] ],
     [ "dpp", "namespacedpp.html", [
       [ "events", "namespacedpp_1_1events.html", [
-        [ "application_command_create", "classdpp_1_1events_1_1application__command__create.html", "classdpp_1_1events_1_1application__command__create" ],
-        [ "application_command_delete", "classdpp_1_1events_1_1application__command__delete.html", "classdpp_1_1events_1_1application__command__delete" ],
-        [ "application_command_update", "classdpp_1_1events_1_1application__command__update.html", "classdpp_1_1events_1_1application__command__update" ],
         [ "channel_create", "classdpp_1_1events_1_1channel__create.html", "classdpp_1_1events_1_1channel__create" ],
         [ "channel_delete", "classdpp_1_1events_1_1channel__delete.html", "classdpp_1_1events_1_1channel__delete" ],
         [ "channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", "classdpp_1_1events_1_1channel__pins__update" ],
@@ -77,9 +74,6 @@ var annotated_dup =
       [ "activity", "classdpp_1_1activity.html", "classdpp_1_1activity" ],
       [ "app_team", "classdpp_1_1app__team.html", "classdpp_1_1app__team" ],
       [ "application", "classdpp_1_1application.html", "classdpp_1_1application" ],
-      [ "application_command_create_t", "structdpp_1_1application__command__create__t.html", "structdpp_1_1application__command__create__t" ],
-      [ "application_command_delete_t", "structdpp_1_1application__command__delete__t.html", "structdpp_1_1application__command__delete__t" ],
-      [ "application_command_update_t", "structdpp_1_1application__command__update__t.html", "structdpp_1_1application__command__update__t" ],
       [ "attachment", "structdpp_1_1attachment.html", "structdpp_1_1attachment" ],
       [ "audit_change", "structdpp_1_1audit__change.html", "structdpp_1_1audit__change" ],
       [ "audit_entry", "structdpp_1_1audit__entry.html", "structdpp_1_1audit__entry" ],

@@ -52,9 +52,6 @@ var hierarchy =
     [ "dpp::etf_buffer", "structdpp_1_1etf__buffer.html", null ],
     [ "dpp::etf_parser", "classdpp_1_1etf__parser.html", null ],
     [ "dpp::events::event", "classdpp_1_1events_1_1event.html", [
-      [ "dpp::events::application_command_create", "classdpp_1_1events_1_1application__command__create.html", null ],
-      [ "dpp::events::application_command_delete", "classdpp_1_1events_1_1application__command__delete.html", null ],
-      [ "dpp::events::application_command_update", "classdpp_1_1events_1_1application__command__update.html", null ],
       [ "dpp::events::channel_create", "classdpp_1_1events_1_1channel__create.html", null ],
       [ "dpp::events::channel_delete", "classdpp_1_1events_1_1channel__delete.html", null ],
       [ "dpp::events::channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", null ],
@@ -114,9 +111,6 @@ var hierarchy =
       [ "dpp::events::webhooks_update", "classdpp_1_1events_1_1webhooks__update.html", null ]
     ] ],
     [ "dpp::event_dispatch_t", "structdpp_1_1event__dispatch__t.html", [
-      [ "dpp::application_command_create_t", "structdpp_1_1application__command__create__t.html", null ],
-      [ "dpp::application_command_delete_t", "structdpp_1_1application__command__delete__t.html", null ],
-      [ "dpp::application_command_update_t", "structdpp_1_1application__command__update__t.html", null ],
       [ "dpp::channel_create_t", "structdpp_1_1channel__create__t.html", null ],
       [ "dpp::channel_delete_t", "structdpp_1_1channel__delete__t.html", null ],
       [ "dpp::channel_pins_update_t", "structdpp_1_1channel__pins__update__t.html", null ],

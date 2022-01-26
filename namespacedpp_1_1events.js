@@ -1,8 +1,5 @@
 var namespacedpp_1_1events =
 [
-    [ "application_command_create", "classdpp_1_1events_1_1application__command__create.html", "classdpp_1_1events_1_1application__command__create" ],
-    [ "application_command_delete", "classdpp_1_1events_1_1application__command__delete.html", "classdpp_1_1events_1_1application__command__delete" ],
-    [ "application_command_update", "classdpp_1_1events_1_1application__command__update.html", "classdpp_1_1events_1_1application__command__update" ],
     [ "channel_create", "classdpp_1_1events_1_1channel__create.html", "classdpp_1_1events_1_1channel__create" ],
     [ "channel_delete", "classdpp_1_1events_1_1channel__delete.html", "classdpp_1_1events_1_1channel__delete" ],
     [ "channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", "classdpp_1_1events_1_1channel__pins__update" ],
