@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cache_5fpolicy_0',['cache_policy',['../classdpp_1_1cluster.html#a9fae28f81712be86530fe3314d166ad3',1,'dpp::cluster']]],
+  ['cache_5fpolicy_0',['cache_policy',['../classdpp_1_1cluster.html#a9fae28f81712be86530fe3314d166ad3',1,'dpp::cluster::cache_policy()'],['../classdpp_1_1interaction.html#abc6027911679c409058e1ff4904154cc',1,'dpp::interaction::cache_policy()']]],
   ['cdn_5fhost_1',['cdn_host',['../namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6',1,'dpp::utility']]],
   ['changes_2',['changes',['../structdpp_1_1audit__entry.html#ab4c452b5018afcc42cd96f67b7ae75f9',1,'dpp::audit_entry']]],
   ['channel_5fcache_3',['channel_cache',['../namespacedpp.html#a4ff3fe4a05ccf2ecb6f302d7e74413f0',1,'dpp']]],

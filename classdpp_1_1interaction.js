@@ -4,6 +4,7 @@ var classdpp_1_1interaction =
     [ "fill_from_json", "classdpp_1_1interaction.html#a23ff816e36c44d2afa51c34a1121a124", null ],
     [ "get_creation_time", "classdpp_1_1interaction.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "application_id", "classdpp_1_1interaction.html#a2575444b8e918c947fb4ffc30c442201", null ],
+    [ "cache_policy", "classdpp_1_1interaction.html#abc6027911679c409058e1ff4904154cc", null ],
     [ "channel_id", "classdpp_1_1interaction.html#a8062f778758ef53d0ea4e40f62ff4015", null ],
     [ "data", "classdpp_1_1interaction.html#a04d74cfb07306fdf8bc540ee5a7e2f4e", null ],
     [ "guild_id", "classdpp_1_1interaction.html#a6301d14a86e9b51b656ef589c2e39009", null ],
