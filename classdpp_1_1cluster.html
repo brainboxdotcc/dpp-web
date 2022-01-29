@@ -519,9 +519,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24cc5286955e6641d574d232d8b47f55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a24cc5286955e6641d574d232d8b47f55">role_edit</a> (const class <a class="el" href="classdpp_1_1role.html">role</a> &amp;r, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a24cc5286955e6641d574d232d8b47f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a role on a guild.  <a href="classdpp_1_1cluster.html#a24cc5286955e6641d574d232d8b47f55">More...</a><br /></td></tr>
 <tr class="separator:a24cc5286955e6641d574d232d8b47f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77932ee797aeb44098c2013811b2887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac77932ee797aeb44098c2013811b2887">role_edit_position</a> (const class <a class="el" href="classdpp_1_1role.html">role</a> &amp;r, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:ac77932ee797aeb44098c2013811b2887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit a role's position in a guild.  <a href="classdpp_1_1cluster.html#ac77932ee797aeb44098c2013811b2887">More...</a><br /></td></tr>
-<tr class="separator:ac77932ee797aeb44098c2013811b2887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad79e8ba52e11abc9360bf06b15b2a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a1ad79e8ba52e11abc9360bf06b15b2a7">roles_edit_position</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const std::vector&lt; <a class="el" href="classdpp_1_1role.html">role</a> &gt; &amp;roles, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:a1ad79e8ba52e11abc9360bf06b15b2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit multiple role's position in a guild. Returns a list of all roles of the guild on success.  <a href="classdpp_1_1cluster.html#a1ad79e8ba52e11abc9360bf06b15b2a7">More...</a><br /></td></tr>
+<tr class="separator:a1ad79e8ba52e11abc9360bf06b15b2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45414d0d189edd147c3d76b4480ec0b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a45414d0d189edd147c3d76b4480ec0b8">role_delete</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> role_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a45414d0d189edd147c3d76b4480ec0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a role.  <a href="classdpp_1_1cluster.html#a45414d0d189edd147c3d76b4480ec0b8">More...</a><br /></td></tr>
 <tr class="separator:a45414d0d189edd147c3d76b4480ec0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7274,17 +7274,23 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 </div>
 </div>
-<a id="ac77932ee797aeb44098c2013811b2887" name="ac77932ee797aeb44098c2013811b2887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac77932ee797aeb44098c2013811b2887">&#9670;&nbsp;</a></span>role_edit_position()</h2>
+<a id="a1ad79e8ba52e11abc9360bf06b15b2a7" name="a1ad79e8ba52e11abc9360bf06b15b2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ad79e8ba52e11abc9360bf06b15b2a7">&#9670;&nbsp;</a></span>roles_edit_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dpp::cluster::role_edit_position </td>
+          <td class="memname">void dpp::cluster::roles_edit_position </td>
           <td>(</td>
-          <td class="paramtype">const class <a class="el" href="classdpp_1_1role.html">role</a> &amp;&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classdpp_1_1role.html">role</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>roles</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -7300,13 +7306,14 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
       </table>
 </div><div class="memdoc">
 
-<p>Edit a role's position in a guild. </p>
+<p>Edit multiple role's position in a guild. Returns a list of all roles of the guild on success. </p>
 <p >Modify the positions of a set of role objects for the guild. Requires the <code>MANAGE_ROLES</code> permission. Fires multiple <code>Guild Role Update</code> Gateway events.</p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">r</td><td>Role to change position of </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1role.html" title="Represents a role within a dpp::guild. Roles are combined via logical OR of the permission bitmasks,...">dpp::role</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">guild_id</td><td>Guild ID to change the roles position on </td></tr>
+    <tr><td class="paramname">roles</td><td>Vector of roles to change the positions of </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b">dpp::role_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>

@@ -149,7 +149,7 @@ var classdpp_1_1cluster =
     [ "role_create", "classdpp_1_1cluster.html#ab912eb28e9bb4df46954c7a9b93b283d", null ],
     [ "role_delete", "classdpp_1_1cluster.html#a45414d0d189edd147c3d76b4480ec0b8", null ],
     [ "role_edit", "classdpp_1_1cluster.html#a24cc5286955e6641d574d232d8b47f55", null ],
-    [ "role_edit_position", "classdpp_1_1cluster.html#ac77932ee797aeb44098c2013811b2887", null ],
+    [ "roles_edit_position", "classdpp_1_1cluster.html#a1ad79e8ba52e11abc9360bf06b15b2a7", null ],
     [ "roles_get", "classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219", null ],
     [ "set_audit_reason", "classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe", null ],
     [ "set_dm_channel", "classdpp_1_1cluster.html#a3fc501cc0ebb334d09a7f4bb1ea6b3e6", null ],

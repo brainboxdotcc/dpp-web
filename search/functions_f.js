@@ -21,7 +21,7 @@ var searchData=
   ['role_5fcreate_18',['role_create',['../classdpp_1_1cluster.html#ab912eb28e9bb4df46954c7a9b93b283d',1,'dpp::cluster']]],
   ['role_5fdelete_19',['role_delete',['../classdpp_1_1cluster.html#a45414d0d189edd147c3d76b4480ec0b8',1,'dpp::cluster']]],
   ['role_5fedit_20',['role_edit',['../classdpp_1_1cluster.html#a24cc5286955e6641d574d232d8b47f55',1,'dpp::cluster']]],
-  ['role_5fedit_5fposition_21',['role_edit_position',['../classdpp_1_1cluster.html#ac77932ee797aeb44098c2013811b2887',1,'dpp::cluster']]],
+  ['roles_5fedit_5fposition_21',['roles_edit_position',['../classdpp_1_1cluster.html#a1ad79e8ba52e11abc9360bf06b15b2a7',1,'dpp::cluster']]],
   ['roles_5fget_22',['roles_get',['../classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219',1,'dpp::cluster']]],
   ['route_23',['route',['../classdpp_1_1commandhandler.html#a76d6c3790f9dd01cddaa4d521151c369',1,'dpp::commandhandler::route(const dpp::message &amp;msg)'],['../classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3',1,'dpp::commandhandler::route(const struct interaction_create_t &amp;event)']]],
   ['rtp_5fheader_24',['rtp_header',['../structdpp_1_1rtp__header.html#acc1b39793e54cb2caf586cf65e2d42bd',1,'dpp::rtp_header']]],
