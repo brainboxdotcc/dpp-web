@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('namespacedpp_1_1utility.html',''); ini
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">dpp::utility Namespace Reference</div></div>
@@ -124,6 +125,22 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a36d13f96f86debc010768d4c812e3fa6"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const std::string &amp;output)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6">cmd_result_t</a></td></tr>
 <tr class="memdesc:a36d13f96f86debc010768d4c812e3fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for the results of a command executed via <a class="el" href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0" title="Run a commandline program asynchronously. The command line program is spawned in a separate std::thre...">dpp::utility::exec</a>.  <a href="namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6">More...</a><br /></td></tr>
 <tr class="separator:a36d13f96f86debc010768d4c812e3fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a097ec42bcbedfed6ab1e4f12bf84cab7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7">time_format</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a380a740f8843af94cd3007d7fdf3ce30">tf_long_date</a> = 'D'
+, <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a7bdb33c94eff8e026e6a864f217e33c5">tf_long_datetime</a> = 'F'
+, <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a7bdda189bfc4d124426d2da1dd6b9a50">tf_relative_time</a> = 'R'
+, <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a127a01b537d189262d40712fe8f09de7">tf_long_time</a> = 'T'
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a94843292417596c6d3de7680efc295bd">tf_short_date</a> = 'd'
+, <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a71dc667709d06a38a90007af294c8f42">tf_short_datetime</a> = 'f'
+, <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7aa9853ed46be939acd8aa01d0ee889afd">tf_short_time</a> = 't'
+<br />
+ }</td></tr>
+<tr class="memdesc:a097ec42bcbedfed6ab1e4f12bf84cab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp formats for <a class="el" href="namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5" title="Return a mentionable timestamp (used in a discord embed)">dpp::utility::timestamp()</a>  <a href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7">More...</a><br /></td></tr>
+<tr class="separator:a097ec42bcbedfed6ab1e4f12bf84cab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -166,7 +183,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a56f2d7d280f78b086037c44e4536ea86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86">validate</a> (const std::string &amp;value, size_t _min, size_t _max, const std::string &amp;exception_message)</td></tr>
 <tr class="memdesc:a56f2d7d280f78b086037c44e4536ea86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate a string value In the event the length of the string is less than _min, then an exception of type dpp:<a class="el" href="classdpp_1_1length__exception.html" title="Represents invalid length of argument being passed to a function.">length_exception</a> will be thrown. If the string is longer than _max UTF8 codepoints it will be truncated to fit.  <a href="namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86">More...</a><br /></td></tr>
 <tr class="separator:a56f2d7d280f78b086037c44e4536ea86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62891c981320f9cc4edfbbf9990428c5"><td class="memItemLeft" align="right" valign="top">std::string DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5">timestamp</a> (time_t ts, <a class="el" href="namespacedpp.html#ad4cdede378f95bd030412c254bd81302">time_format</a> tf)</td></tr>
+<tr class="memitem:a62891c981320f9cc4edfbbf9990428c5"><td class="memItemLeft" align="right" valign="top">std::string DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5">timestamp</a> (time_t ts, <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7">time_format</a> tf)</td></tr>
 <tr class="memdesc:a62891c981320f9cc4edfbbf9990428c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a mentionable timestamp (used in a discord embed)  <a href="namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5">More...</a><br /></td></tr>
 <tr class="separator:a62891c981320f9cc4edfbbf9990428c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b9a9f3dbfb71cb8b8d223062e4cd62"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#ab1b9a9f3dbfb71cb8b8d223062e4cd62">avatar_size</a> (uint32_t size)</td></tr>
@@ -195,6 +212,41 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback for the results of a command executed via <a class="el" href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0" title="Run a commandline program asynchronously. The command line program is spawned in a separate std::thre...">dpp::utility::exec</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a097ec42bcbedfed6ab1e4f12bf84cab7" name="a097ec42bcbedfed6ab1e4f12bf84cab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097ec42bcbedfed6ab1e4f12bf84cab7">&#9670;&nbsp;</a></span>time_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7">dpp::utility::time_format</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timestamp formats for <a class="el" href="namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5" title="Return a mentionable timestamp (used in a discord embed)">dpp::utility::timestamp()</a> </p>
+<dl class="section note"><dt>Note</dt><dd>These values are the actual character values specified by the Discord API and should not be changed unless the Discord API changes the specification! They have been sorted into numerical order of their ASCII value to keep C++ happy. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a097ec42bcbedfed6ab1e4f12bf84cab7a380a740f8843af94cd3007d7fdf3ce30" name="a097ec42bcbedfed6ab1e4f12bf84cab7a380a740f8843af94cd3007d7fdf3ce30"></a>tf_long_date&#160;</td><td class="fielddoc"><p >"20 April 2021" - Long Date </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a097ec42bcbedfed6ab1e4f12bf84cab7a7bdb33c94eff8e026e6a864f217e33c5" name="a097ec42bcbedfed6ab1e4f12bf84cab7a7bdb33c94eff8e026e6a864f217e33c5"></a>tf_long_datetime&#160;</td><td class="fielddoc"><p >"Tuesday, 20 April 2021 16:20" - Long Date/Time </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a097ec42bcbedfed6ab1e4f12bf84cab7a7bdda189bfc4d124426d2da1dd6b9a50" name="a097ec42bcbedfed6ab1e4f12bf84cab7a7bdda189bfc4d124426d2da1dd6b9a50"></a>tf_relative_time&#160;</td><td class="fielddoc"><p >"2 months ago" - Relative Time <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a097ec42bcbedfed6ab1e4f12bf84cab7a127a01b537d189262d40712fe8f09de7" name="a097ec42bcbedfed6ab1e4f12bf84cab7a127a01b537d189262d40712fe8f09de7"></a>tf_long_time&#160;</td><td class="fielddoc"><p >"16:20:30" - Long Time </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a097ec42bcbedfed6ab1e4f12bf84cab7a94843292417596c6d3de7680efc295bd" name="a097ec42bcbedfed6ab1e4f12bf84cab7a94843292417596c6d3de7680efc295bd"></a>tf_short_date&#160;</td><td class="fielddoc"><p >"20/04/2021" - Short Date </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a097ec42bcbedfed6ab1e4f12bf84cab7a71dc667709d06a38a90007af294c8f42" name="a097ec42bcbedfed6ab1e4f12bf84cab7a71dc667709d06a38a90007af294c8f42"></a>tf_short_datetime&#160;</td><td class="fielddoc"><p >"20 April 2021 16:20" - Short Date/Time </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a097ec42bcbedfed6ab1e4f12bf84cab7aa9853ed46be939acd8aa01d0ee889afd" name="a097ec42bcbedfed6ab1e4f12bf84cab7aa9853ed46be939acd8aa01d0ee889afd"></a>tf_short_time&#160;</td><td class="fielddoc"><p >"16:20" - Short Time </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -564,7 +616,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacedpp.html#ad4cdede378f95bd030412c254bd81302">time_format</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7">time_format</a>&#160;</td>
           <td class="paramname"><em>tf</em>&#160;</td>
         </tr>
         <tr>
@@ -579,7 +631,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ts</td><td>Time stamp to convert </td></tr>
-    <tr><td class="paramname">tf</td><td>Format of timestamp using dpp::utility::time_format </td></tr>
+    <tr><td class="paramname">tf</td><td>Format of timestamp using <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7" title="Timestamp formats for dpp::utility::timestamp()">dpp::utility::time_format</a> </td></tr>
   </table>
   </dd>
 </dl>

@@ -12,7 +12,7 @@ var searchData=
   ['bitrate_9',['bitrate',['../classdpp_1_1channel.html#ab32308d8281aef6bfe4d5a6538c6306e',1,'dpp::channel']]],
   ['body_10',['body',['../structdpp_1_1http__request__completion__t.html#ac14ffa7060df12797e238f2619153ef9',1,'dpp::http_request_completion_t']]],
   ['bool_5fnot_5fnull_11',['bool_not_null',['../namespacedpp.html#a0b572e3b9c9589abfda7c048782f1089',1,'dpp']]],
-  ['bot_12',['bot',['../structdpp_1_1integration__app.html#aca271fe17734a35346dc13a18034b5b8',1,'dpp::integration_app']]],
+  ['bot_12',['bot',['../structdpp_1_1integration__app.html#a7a5531daeeecde3267891e637b2a318f',1,'dpp::integration_app']]],
   ['bot_5fid_13',['bot_id',['../classdpp_1_1role.html#ada5cb5675b012b2cf55d285d5b233df3',1,'dpp::role']]],
   ['bot_5fpublic_14',['bot_public',['../classdpp_1_1application.html#a1724baabe72d957d04b0a30bc4604d8b',1,'dpp::application']]],
   ['bot_5frequire_5fcode_5fgrant_15',['bot_require_code_grant',['../classdpp_1_1application.html#a9942dd58f1ca9da0839f0a295612290c',1,'dpp::application']]],

@@ -3,6 +3,15 @@ var namespacedpp_1_1utility =
     [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
     [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ],
     [ "cmd_result_t", "namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6", null ],
+    [ "time_format", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7", [
+      [ "tf_long_date", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a380a740f8843af94cd3007d7fdf3ce30", null ],
+      [ "tf_long_datetime", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a7bdb33c94eff8e026e6a864f217e33c5", null ],
+      [ "tf_relative_time", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a7bdda189bfc4d124426d2da1dd6b9a50", null ],
+      [ "tf_long_time", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a127a01b537d189262d40712fe8f09de7", null ],
+      [ "tf_short_date", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a94843292417596c6d3de7680efc295bd", null ],
+      [ "tf_short_datetime", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a71dc667709d06a38a90007af294c8f42", null ],
+      [ "tf_short_time", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7aa9853ed46be939acd8aa01d0ee889afd", null ]
+    ] ],
     [ "avatar_size", "namespacedpp_1_1utility.html#ab1b9a9f3dbfb71cb8b8d223062e4cd62", null ],
     [ "bytes", "namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08", null ],
     [ "current_date_time", "namespacedpp_1_1utility.html#a1a9168eaaf347543e55e607858f24eb3", null ],
