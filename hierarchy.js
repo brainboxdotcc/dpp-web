@@ -1,6 +1,10 @@
 var hierarchy =
 [
     [ "dpp::activity", "classdpp_1_1activity.html", null ],
+    [ "dpp::activity_assets", "structdpp_1_1activity__assets.html", null ],
+    [ "dpp::activity_button", "structdpp_1_1activity__button.html", null ],
+    [ "dpp::activity_party", "structdpp_1_1activity__party.html", null ],
+    [ "dpp::activity_secrets", "structdpp_1_1activity__secrets.html", null ],
     [ "dpp::message::allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", null ],
     [ "dpp::app_team", "classdpp_1_1app__team.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],

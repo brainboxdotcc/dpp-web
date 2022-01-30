@@ -3,6 +3,10 @@ var namespacedpp =
     [ "events", "namespacedpp_1_1events.html", "namespacedpp_1_1events" ],
     [ "utility", "namespacedpp_1_1utility.html", "namespacedpp_1_1utility" ],
     [ "activity", "classdpp_1_1activity.html", "classdpp_1_1activity" ],
+    [ "activity_assets", "structdpp_1_1activity__assets.html", "structdpp_1_1activity__assets" ],
+    [ "activity_button", "structdpp_1_1activity__button.html", "structdpp_1_1activity__button" ],
+    [ "activity_party", "structdpp_1_1activity__party.html", "structdpp_1_1activity__party" ],
+    [ "activity_secrets", "structdpp_1_1activity__secrets.html", "structdpp_1_1activity__secrets" ],
     [ "app_team", "classdpp_1_1app__team.html", "classdpp_1_1app__team" ],
     [ "application", "classdpp_1_1application.html", "classdpp_1_1application" ],
     [ "attachment", "structdpp_1_1attachment.html", "structdpp_1_1attachment" ],
@@ -244,7 +248,10 @@ var namespacedpp =
       [ "af_spectate", "namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da6641e2affb027ec2ee799a06b388a2cd", null ],
       [ "af_join_request", "namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da0b89df17cf5e4e0632002adaeb9a6195", null ],
       [ "af_sync", "namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4dab869609c55109a542a9505cc75f2d93f", null ],
-      [ "af_play", "namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da0b2e1dc7c3c4dddcf91e1ded344a7119", null ]
+      [ "af_play", "namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da0b2e1dc7c3c4dddcf91e1ded344a7119", null ],
+      [ "af_party_privacy_friends", "namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da1bf2b8d30df38ad9ff0eb1a310f0f71a", null ],
+      [ "af_party_privacy_voice_channel", "namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da306112d9cff3d2a1192618089a500ed7", null ],
+      [ "af_embedded", "namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da16e5931af2a44fd1050f0f2d2950df48", null ]
     ] ],
     [ "activity_type", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2", [
       [ "at_game", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701", null ],

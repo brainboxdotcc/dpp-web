@@ -72,6 +72,10 @@ var annotated_dup =
         [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ]
       ] ],
       [ "activity", "classdpp_1_1activity.html", "classdpp_1_1activity" ],
+      [ "activity_assets", "structdpp_1_1activity__assets.html", "structdpp_1_1activity__assets" ],
+      [ "activity_button", "structdpp_1_1activity__button.html", "structdpp_1_1activity__button" ],
+      [ "activity_party", "structdpp_1_1activity__party.html", "structdpp_1_1activity__party" ],
+      [ "activity_secrets", "structdpp_1_1activity__secrets.html", "structdpp_1_1activity__secrets" ],
       [ "app_team", "classdpp_1_1app__team.html", "classdpp_1_1app__team" ],
       [ "application", "classdpp_1_1application.html", "classdpp_1_1application" ],
       [ "attachment", "structdpp_1_1attachment.html", "structdpp_1_1attachment" ],

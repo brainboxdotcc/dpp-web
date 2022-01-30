@@ -126,6 +126,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1activity.html">activity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An activity is a representation of what a user is doing. It might be a game, or a website, or a movie. Whatever.  <a href="classdpp_1_1activity.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1activity__assets.html">activity_assets</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An activity asset are the images and the hover text displayed in the rich presence.  <a href="structdpp_1_1activity__assets.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1activity__button.html">activity_button</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An activity button is a custom button shown in the rich presence. Can be to join a game or whatever.  <a href="structdpp_1_1activity__button.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1activity__party.html">activity_party</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information for the current party of the player.  <a href="structdpp_1_1activity__party.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1activity__secrets.html">activity_secrets</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Secrets for Rich Presence joining and spectating.  <a href="structdpp_1_1activity__secrets.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1app__team.html">app_team</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a team of users who maintain a bot/application.  <a href="classdpp_1_1app__team.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1352,13 +1364,17 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a1d07516cb637238ba721dc4d91ab6fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game types.  <a href="namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2">More...</a><br /></td></tr>
 <tr class="separator:a1d07516cb637238ba721dc4d91ab6fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7af4fdfe2315c48c3223b1dd6124d4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4d">activity_flags</a> { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da1ed1f728ed51babc825103062bf1b077">af_instance</a> = 0b00000001
-, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da9b8df9967d669188c072acbea0da5236">af_join</a> = 0b00000010
-, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da6641e2affb027ec2ee799a06b388a2cd">af_spectate</a> = 0b00000100
-, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da0b89df17cf5e4e0632002adaeb9a6195">af_join_request</a> = 0b00001000
+&#160;&#160;<a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da1ed1f728ed51babc825103062bf1b077">af_instance</a> = 0b000000001
+, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da9b8df9967d669188c072acbea0da5236">af_join</a> = 0b000000010
+, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da6641e2affb027ec2ee799a06b388a2cd">af_spectate</a> = 0b000000100
+, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da0b89df17cf5e4e0632002adaeb9a6195">af_join_request</a> = 0b000001000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4dab869609c55109a542a9505cc75f2d93f">af_sync</a> = 0b00010000
-, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da0b2e1dc7c3c4dddcf91e1ded344a7119">af_play</a> = 0b00100000
+&#160;&#160;<a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4dab869609c55109a542a9505cc75f2d93f">af_sync</a> = 0b000010000
+, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da0b2e1dc7c3c4dddcf91e1ded344a7119">af_play</a> = 0b000100000
+, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da1bf2b8d30df38ad9ff0eb1a310f0f71a">af_party_privacy_friends</a> = 0b001000000
+, <a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da306112d9cff3d2a1192618089a500ed7">af_party_privacy_voice_channel</a> = 0b010000000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da16e5931af2a44fd1050f0f2d2950df48">af_embedded</a> = 0b100000000
 <br />
  }</td></tr>
 <tr class="memdesc:af7af4fdfe2315c48c3223b1dd6124d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activity types for rich presence.  <a href="namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4d">More...</a><br /></td></tr>
@@ -2620,6 +2636,12 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="af7af4fdfe2315c48c3223b1dd6124d4dab869609c55109a542a9505cc75f2d93f" name="af7af4fdfe2315c48c3223b1dd6124d4dab869609c55109a542a9505cc75f2d93f"></a>af_sync&#160;</td><td class="fielddoc"><p >Synchronising. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af7af4fdfe2315c48c3223b1dd6124d4da0b2e1dc7c3c4dddcf91e1ded344a7119" name="af7af4fdfe2315c48c3223b1dd6124d4da0b2e1dc7c3c4dddcf91e1ded344a7119"></a>af_play&#160;</td><td class="fielddoc"><p >Playing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7af4fdfe2315c48c3223b1dd6124d4da1bf2b8d30df38ad9ff0eb1a310f0f71a" name="af7af4fdfe2315c48c3223b1dd6124d4da1bf2b8d30df38ad9ff0eb1a310f0f71a"></a>af_party_privacy_friends&#160;</td><td class="fielddoc"><p >Party privacy friends. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7af4fdfe2315c48c3223b1dd6124d4da306112d9cff3d2a1192618089a500ed7" name="af7af4fdfe2315c48c3223b1dd6124d4da306112d9cff3d2a1192618089a500ed7"></a>af_party_privacy_voice_channel&#160;</td><td class="fielddoc"><p >Party privacy voice channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7af4fdfe2315c48c3223b1dd6124d4da16e5931af2a44fd1050f0f2d2950df48" name="af7af4fdfe2315c48c3223b1dd6124d4da16e5931af2a44fd1050f0f2d2950df48"></a>af_embedded&#160;</td><td class="fielddoc"><p >Embedded. </p>
 </td></tr>
 </table>
 

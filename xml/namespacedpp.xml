@@ -3,6 +3,10 @@
   <compounddef id="namespacedpp" kind="namespace" language="C++">
     <compoundname>dpp</compoundname>
     <innerclass refid="classdpp_1_1activity" prot="public">dpp::activity</innerclass>
+    <innerclass refid="structdpp_1_1activity__assets" prot="public">dpp::activity_assets</innerclass>
+    <innerclass refid="structdpp_1_1activity__button" prot="public">dpp::activity_button</innerclass>
+    <innerclass refid="structdpp_1_1activity__party" prot="public">dpp::activity_party</innerclass>
+    <innerclass refid="structdpp_1_1activity__secrets" prot="public">dpp::activity_secrets</innerclass>
     <innerclass refid="classdpp_1_1app__team" prot="public">dpp::app_team</innerclass>
     <innerclass refid="classdpp_1_1application" prot="public">dpp::application</innerclass>
     <innerclass refid="structdpp_1_1attachment" prot="public">dpp::attachment</innerclass>
@@ -3409,7 +3413,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="32" column="1" bodyfile="include/dpp/presence.h" bodystart="32" bodyend="57"/>
+        <location file="include/dpp/presence.h" line="33" column="1" bodyfile="include/dpp/presence.h" bodystart="33" bodyend="58"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a172aa830689e55f4bba337de1592db96" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -3457,7 +3461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="62" column="1" bodyfile="include/dpp/presence.h" bodystart="62" bodyend="71"/>
+        <location file="include/dpp/presence.h" line="63" column="1" bodyfile="include/dpp/presence.h" bodystart="63" bodyend="72"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -3523,14 +3527,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="97" column="1" bodyfile="include/dpp/presence.h" bodystart="97" bodyend="110"/>
+        <location file="include/dpp/presence.h" line="98" column="1" bodyfile="include/dpp/presence.h" bodystart="98" bodyend="111"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4d" prot="public" static="no" strong="no">
         <type></type>
         <name>activity_flags</name>
         <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4da1ed1f728ed51babc825103062bf1b077" prot="public">
           <name>af_instance</name>
-          <initializer>= 0b00000001</initializer>
+          <initializer>= 0b000000001</initializer>
           <briefdescription>
 <para>In an instance. </para>
           </briefdescription>
@@ -3539,7 +3543,7 @@
         </enumvalue>
         <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4da9b8df9967d669188c072acbea0da5236" prot="public">
           <name>af_join</name>
-          <initializer>= 0b00000010</initializer>
+          <initializer>= 0b000000010</initializer>
           <briefdescription>
 <para>Joining. </para>
           </briefdescription>
@@ -3548,7 +3552,7 @@
         </enumvalue>
         <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4da6641e2affb027ec2ee799a06b388a2cd" prot="public">
           <name>af_spectate</name>
-          <initializer>= 0b00000100</initializer>
+          <initializer>= 0b000000100</initializer>
           <briefdescription>
 <para>Spectating. </para>
           </briefdescription>
@@ -3557,7 +3561,7 @@
         </enumvalue>
         <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4da0b89df17cf5e4e0632002adaeb9a6195" prot="public">
           <name>af_join_request</name>
-          <initializer>= 0b00001000</initializer>
+          <initializer>= 0b000001000</initializer>
           <briefdescription>
 <para>Sending join request. </para>
           </briefdescription>
@@ -3566,7 +3570,7 @@
         </enumvalue>
         <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4dab869609c55109a542a9505cc75f2d93f" prot="public">
           <name>af_sync</name>
-          <initializer>= 0b00010000</initializer>
+          <initializer>= 0b000010000</initializer>
           <briefdescription>
 <para>Synchronising. </para>
           </briefdescription>
@@ -3575,9 +3579,36 @@
         </enumvalue>
         <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4da0b2e1dc7c3c4dddcf91e1ded344a7119" prot="public">
           <name>af_play</name>
-          <initializer>= 0b00100000</initializer>
+          <initializer>= 0b000100000</initializer>
           <briefdescription>
 <para>Playing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4da1bf2b8d30df38ad9ff0eb1a310f0f71a" prot="public">
+          <name>af_party_privacy_friends</name>
+          <initializer>= 0b001000000</initializer>
+          <briefdescription>
+<para>Party privacy friends. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4da306112d9cff3d2a1192618089a500ed7" prot="public">
+          <name>af_party_privacy_voice_channel</name>
+          <initializer>= 0b010000000</initializer>
+          <briefdescription>
+<para>Party privacy voice channel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1af7af4fdfe2315c48c3223b1dd6124d4da16e5931af2a44fd1050f0f2d2950df48" prot="public">
+          <name>af_embedded</name>
+          <initializer>= 0b100000000</initializer>
+          <briefdescription>
+<para>Embedded. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -3589,7 +3620,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="115" column="1" bodyfile="include/dpp/presence.h" bodystart="115" bodyend="128"/>
+        <location file="include/dpp/presence.h" line="116" column="1" bodyfile="include/dpp/presence.h" bodystart="116" bodyend="135"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ae525add0ec39d647375aabe5ce455449" prot="public" static="no" strong="no">
         <type></type>
@@ -5303,7 +5334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="258" column="28" bodyfile="include/dpp/presence.h" bodystart="258" bodyend="-1"/>
+        <location file="include/dpp/presence.h" line="380" column="28" bodyfile="include/dpp/presence.h" bodystart="380" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ae3249e99494d04bb4be50341f474621e" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
