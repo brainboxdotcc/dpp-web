@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1param__info" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::param_info</compoundname>
+    <includes local="no">commandhandler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1param__info_1a8bed6e1abf73e436a781c6d39bc236ba" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a9a2049904620e4f62b82f8dc818de864" kindref="member">parameter_type</ref></type>
+        <definition>parameter_type dpp::param_info::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="89" column="16" bodyfile="include/dpp/commandhandler.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1param__info_1a9e834a2d46d81a2f57e88c59ca887f5f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::param_info::optional</definition>
+        <argsstring></argsstring>
+        <name>optional</name>
+        <briefdescription>
+<para>True if the parameter is optional. For non-slash commands optional parameters may only be on the end of the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="95" column="6" bodyfile="include/dpp/commandhandler.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1param__info_1a83b97805bed52aafbce70379a9e4cb18" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::param_info::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>Description of command. Displayed only for slash commands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="100" column="13" bodyfile="include/dpp/commandhandler.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1param__info_1a7ee6e520bba68abd58065863eb9bbac2" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; dpp::param_info::choices</definition>
+        <argsstring></argsstring>
+        <name>choices</name>
+        <briefdescription>
+<para>Allowed multiple choice options. The key name is the string passed to the command handler and the key value is its description displayed to the user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="107" column="10" bodyfile="include/dpp/commandhandler.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1param__info_1aa47a4f69b706710769204d4bcc4e63f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::param_info::param_info</definition>
+        <argsstring>(parameter_type t, bool o, const std::string &amp;description, const std::map&lt; std::string, std::string &gt; &amp;opts={})</argsstring>
+        <name>param_info</name>
+        <param>
+          <type><ref refid="namespacedpp_1a9a2049904620e4f62b82f8dc818de864" kindref="member">parameter_type</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; std::string, std::string &gt; &amp;</type>
+          <declname>opts</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="structdpp_1_1param__info" kindref="compound">param_info</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if parameter is optional </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameter description </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The options for a multiple choice parameter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="117" column="1" bodyfile="src/dpp/commandhandler.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Details of a command parameter used in registration. Note that for non-slash commands optional parameters can only be at the end of the list of parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>dpp::param_info</label>
+        <link refid="structdpp_1_1param__info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>optional</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>description</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>choices</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parameter_type</label>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="6">
+        <label>map&lt;</label>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/commandhandler.h" line="84" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="84" bodyend="118"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1param__info_1a7ee6e520bba68abd58065863eb9bbac2" prot="public" virt="non-virtual"><scope>dpp::param_info</scope><name>choices</name></member>
+      <member refid="structdpp_1_1param__info_1a83b97805bed52aafbce70379a9e4cb18" prot="public" virt="non-virtual"><scope>dpp::param_info</scope><name>description</name></member>
+      <member refid="structdpp_1_1param__info_1a9e834a2d46d81a2f57e88c59ca887f5f" prot="public" virt="non-virtual"><scope>dpp::param_info</scope><name>optional</name></member>
+      <member refid="structdpp_1_1param__info_1aa47a4f69b706710769204d4bcc4e63f8" prot="public" virt="non-virtual"><scope>dpp::param_info</scope><name>param_info</name></member>
+      <member refid="structdpp_1_1param__info_1a8bed6e1abf73e436a781c6d39bc236ba" prot="public" virt="non-virtual"><scope>dpp::param_info</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

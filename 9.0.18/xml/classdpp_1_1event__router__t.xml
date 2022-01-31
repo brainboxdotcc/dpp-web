@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1event__router__t" kind="class" language="C++" prot="public">
+    <compoundname>dpp::event_router_t</compoundname>
+    <includes local="no">cluster.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" prot="private" static="no" mutable="yes">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::event_router_t&lt; T &gt;::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <briefdescription>
+<para>Thread safety mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="289" column="27" bodyfile="include/dpp/cluster.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, std::function&lt; void(const T &amp;)&gt; &gt;</type>
+        <definition>std::map&lt;event_handle, std::function&lt;void(const T&amp;)&gt; &gt; dpp::event_router_t&lt; T &gt;::dispatch_container</definition>
+        <argsstring></argsstring>
+        <name>dispatch_container</name>
+        <briefdescription>
+<para>Container of event listeners keyed by handle, as handles are handed out sequentially they will always be called in they order they are bound to the event as std::map is an ordered container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="296" column="10" bodyfile="include/dpp/cluster.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a667c18e57cc53f960d3467e84358a822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_router_t&lt; T &gt;::event_router_t</definition>
+        <argsstring>()</argsstring>
+        <name>event_router_t</name>
+        <briefdescription>
+<para>Construct a new <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="301" column="1" bodyfile="include/dpp/cluster.h" bodystart="301" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::event_router_t&lt; T &gt;::call</definition>
+        <argsstring>(const T &amp;event) const</argsstring>
+        <name>call</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Call all attached listeners. Listeners may cancel, by calling the event.cancel method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Class to pass as parameter to all listeners. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="310" column="6" bodyfile="include/dpp/cluster.h" bodystart="310" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::event_router_t&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Returns true if the container of listeners is empty, i.e. there is nothing listening for this event right now. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if there are no listeners </para>
+</simplesect>
+<simplesect kind="return"><para>false if there are some listeners </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="326" column="6" bodyfile="include/dpp/cluster.h" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_router_t&lt; T &gt;::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>Returns true if any listeners are attached. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the boolean opposite of <ref refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" kindref="member">event_router_t::empty()</ref>. <simplesect kind="return"><para>true if listeners are attached </para>
+</simplesect>
+<simplesect kind="return"><para>false if no listeners are attached </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="338" column="1" bodyfile="include/dpp/cluster.h" bodystart="338" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::operator()</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; func)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function lambda to attach to event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>event_handle An event handle unique to this event, used to detach the listener from the event later if necessary. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="352" column="14" bodyfile="include/dpp/cluster.h" bodystart="352" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::attach</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; func)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function lambda to attach to event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>event_handle An event handle unique to this event, used to detach the listener from the event later if necessary. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="366" column="14" bodyfile="include/dpp/cluster.h" bodystart="366" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::event_router_t&lt; T &gt;::detach</definition>
+        <argsstring>(const event_handle &amp;handle)</argsstring>
+        <name>detach</name>
+        <param>
+          <type>const <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref> &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Detach a listener from the event using a previously obtained ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An ID obtained from event_router_t::operator() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true The event was successfully detached </para>
+</simplesect>
+<simplesect kind="return"><para>false The ID is invalid (possibly already detached, or does not exist) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="380" column="6" bodyfile="include/dpp/cluster.h" bodystart="380" bodyend="383"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Handles routing of an event to multiple listeners. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Multiple listeners may attach to the <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> by means of operator(). Passing a lambda into operator() attaches to the event.</para>
+<para>Dispatchers of the event may call the <ref refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" kindref="member">event_router_t::call()</ref> method to cause all listeners to receive the event.</para>
+<para>The <ref refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" kindref="member">event_router_t::empty()</ref> method will return true if there are no listeners attached to the <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> (this can be used to save time by not constructing objects that nobody will ever see).</para>
+<para>The <ref refid="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" kindref="member">event_router_t::detach()</ref> method removes an existing listener from the event, using the event_handle ID returned by operator().</para>
+<para>This class is used by the library to route all websocket events to listening code.</para>
+<para>Example:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Declare<sp/>an<sp/>event<sp/>that<sp/>takes<sp/>log_t<sp/>as<sp/>its<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">event_router_t&lt;log_t&gt;<sp/>my_event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Attach<sp/>a<sp/>listener<sp/>to<sp/>the<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>my_event([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>log_t&amp;<sp/>cc)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>cc.message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Construct<sp/>a<sp/>log_t<sp/>and<sp/>call<sp/>the<sp/>event<sp/>(listeners<sp/>will<sp/>receive<sp/>the<sp/>log_t<sp/>object)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">log_t<sp/>lt;</highlight></codeline>
+<codeline><highlight class="normal">lt.message<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;foo&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">my_event.call(lt);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Detach<sp/>from<sp/>an<sp/>event<sp/>using<sp/>the<sp/>handle<sp/>returned<sp/>by<sp/>operator()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">my_event.detach(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of single parameter passed to event lambda derived from <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="include/dpp/cluster.h" line="284" column="11" bodyfile="include/dpp/cluster.h" bodystart="284" bodyend="384"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach</name></member>
+      <member refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>call</name></member>
+      <member refid="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>detach</name></member>
+      <member refid="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>dispatch_container</name></member>
+      <member refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>empty</name></member>
+      <member refid="classdpp_1_1event__router__t_1a667c18e57cc53f960d3467e84358a822" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>event_router_t</name></member>
+      <member refid="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>lock</name></member>
+      <member refid="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator bool</name></member>
+      <member refid="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
