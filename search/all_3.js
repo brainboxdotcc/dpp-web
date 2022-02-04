@@ -55,7 +55,7 @@ var searchData=
   ['channels_52',['channels',['../classdpp_1_1guild.html#a0995288cfbf8ae64973bbf0181d1789a',1,'dpp::guild::channels()'],['../structdpp_1_1command__resolved.html#a5fc7b8909f13bc77e433fae06706253f',1,'dpp::command_resolved::channels()']]],
   ['channels_5fget_53',['channels_get',['../classdpp_1_1cluster.html#a24e67431b79cc2c3d0f12d59afd5a1c8',1,'dpp::cluster']]],
   ['char_5ftype_54',['char_type',['../structdetail_1_1chrono__formatter.html#aeba2fd9bee3839cba4d17879f9c1eb9d',1,'detail::chrono_formatter']]],
-  ['choices_55',['choices',['../structdpp_1_1command__option.html#a05f44f181203ed332696b789c4ef7c6f',1,'dpp::command_option::choices()'],['../structdpp_1_1param__info.html#a7ee6e520bba68abd58065863eb9bbac2',1,'dpp::param_info::choices()']]],
+  ['choices_55',['choices',['../structdpp_1_1command__option.html#a05f44f181203ed332696b789c4ef7c6f',1,'dpp::command_option::choices()'],['../structdpp_1_1param__info.html#ae0cf01d6b4b58624d16b3ab14fcbde2a',1,'dpp::param_info::choices()']]],
   ['chrono_5fformat_5fchecker_56',['chrono_format_checker',['../structdetail_1_1chrono__format__checker.html',1,'detail']]],
   ['chrono_5fformatter_57',['chrono_formatter',['../structdetail_1_1chrono__formatter.html#a72a55de74f10c6bb3a72c16025f6a853',1,'detail::chrono_formatter::chrono_formatter()'],['../structdetail_1_1chrono__formatter.html',1,'detail::chrono_formatter&lt; FormatContext, OutputIt, Rep, Period &gt;']]],
   ['cipher_58',['cipher',['../classdpp_1_1ssl__client.html#a5fc2e7836da5485216419bbf17e49428',1,'dpp::ssl_client']]],
