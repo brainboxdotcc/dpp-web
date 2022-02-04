@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"namespacedpp.html#afce43206033521b990e3a72bb87481b7":[6,0,1,252],
 "namespacedpp.html#afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b":[6,0,1,252,3],
 "namespacedpp.html#afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f":[6,0,1,252,2],
 "namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9":[6,0,1,252,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "structdetail_1_1chrono__formatter.html#af671b4ebeb476af2255cae8213504c1d":[6,0,0,1,46],
 "structdetail_1_1chrono__formatter.html#af9e771f68673cbb4aa2202b928ab5ef1":[6,0,0,1,16],
 "structdetail_1_1chrono__formatter.html#af9e771f68673cbb4aa2202b928ab5ef1":[7,0,0,1,16],
-"structdetail_1_1make__unsigned__or__unchanged.html":[7,0,0,2],
-"structdetail_1_1make__unsigned__or__unchanged.html":[6,0,0,2]
+"structdetail_1_1make__unsigned__or__unchanged.html":[7,0,0,2]
 };

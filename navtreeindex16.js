@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"structdetail_1_1make__unsigned__or__unchanged.html":[6,0,0,2],
 "structdetail_1_1make__unsigned__or__unchanged.html#a76f8c2352d357582a9521d3e3608bdaf":[7,0,0,2,0],
 "structdetail_1_1make__unsigned__or__unchanged.html#a76f8c2352d357582a9521d3e3608bdaf":[6,0,0,2,0],
 "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html":[6,0,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "structdpp_1_1channel__delete__t.html#afd170d6f5321097ef9c43561b9a8cf1f":[7,0,1,25,0],
 "structdpp_1_1channel__pins__update__t.html":[6,0,1,26],
 "structdpp_1_1channel__pins__update__t.html":[7,0,1,26],
-"structdpp_1_1channel__pins__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,26,6],
-"structdpp_1_1channel__pins__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,26,6]
+"structdpp_1_1channel__pins__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,26,6]
 };
