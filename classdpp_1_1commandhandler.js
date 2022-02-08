@@ -6,7 +6,7 @@ var classdpp_1_1commandhandler =
     [ "add_prefix", "classdpp_1_1commandhandler.html#a69ce2bb96adb1a658b3a29c37274f2bb", null ],
     [ "register_commands", "classdpp_1_1commandhandler.html#a208f3684f3987d87074824bd13699e42", null ],
     [ "reply", "classdpp_1_1commandhandler.html#a50e8e241a9208405bf05d7cf8806cd19", null ],
-    [ "route", "classdpp_1_1commandhandler.html#a76d6c3790f9dd01cddaa4d521151c369", null ],
+    [ "route", "classdpp_1_1commandhandler.html#a957dfe206c80cd7176e7ab663e9a1bf2", null ],
     [ "route", "classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3", null ],
     [ "set_owner", "classdpp_1_1commandhandler.html#a8640d327288a6dd1c5fdbde85726e7de", null ],
     [ "string_has_prefix", "classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d", null ],

@@ -16,13 +16,14 @@ var searchData=
   ['add_5fflag_13',['add_flag',['../classdpp_1_1channel.html#a189a5d675001b810199274201b15ea38',1,'dpp::channel']]],
   ['add_5foption_14',['add_option',['../structdpp_1_1command__option.html#aa5c54bbb1e3cf93a9e18ea21f789cf2c',1,'dpp::command_option::add_option()'],['../classdpp_1_1slashcommand.html#a3959f3f3b2709c56e03610e6f774e449',1,'dpp::slashcommand::add_option(const command_option &amp;o)']]],
   ['add_5fpermission_15',['add_permission',['../classdpp_1_1slashcommand.html#a35086350bd76709e6befeed71e2598ab',1,'dpp::slashcommand']]],
-  ['add_5fprefix_16',['add_prefix',['../classdpp_1_1commandhandler.html#a69ce2bb96adb1a658b3a29c37274f2bb',1,'dpp::commandhandler']]],
-  ['add_5frow_17',['add_row',['../structdpp_1_1interaction__modal__response.html#a64e2352d62d7e4a54f3171d5e3024830',1,'dpp::interaction_modal_response']]],
-  ['add_5fselect_5foption_18',['add_select_option',['../classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243',1,'dpp::component']]],
-  ['application_19',['application',['../classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044',1,'dpp::application']]],
-  ['attach_20',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
-  ['attachment_21',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
-  ['auditlog_22',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]],
-  ['autocomplete_5ft_23',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]],
-  ['avatar_5fsize_24',['avatar_size',['../namespacedpp_1_1utility.html#ab1b9a9f3dbfb71cb8b8d223062e4cd62',1,'dpp::utility']]]
+  ['add_5fpermission_5foverwrite_16',['add_permission_overwrite',['../classdpp_1_1channel.html#a3bf0a0d35c4aa4e40c6b2b71e9c97584',1,'dpp::channel']]],
+  ['add_5fprefix_17',['add_prefix',['../classdpp_1_1commandhandler.html#a69ce2bb96adb1a658b3a29c37274f2bb',1,'dpp::commandhandler']]],
+  ['add_5frow_18',['add_row',['../structdpp_1_1interaction__modal__response.html#a64e2352d62d7e4a54f3171d5e3024830',1,'dpp::interaction_modal_response']]],
+  ['add_5fselect_5foption_19',['add_select_option',['../classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243',1,'dpp::component']]],
+  ['application_20',['application',['../classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044',1,'dpp::application']]],
+  ['attach_21',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
+  ['attachment_22',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
+  ['auditlog_23',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]],
+  ['autocomplete_5ft_24',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]],
+  ['avatar_5fsize_25',['avatar_size',['../namespacedpp_1_1utility.html#ab1b9a9f3dbfb71cb8b8d223062e4cd62',1,'dpp::utility']]]
 ];

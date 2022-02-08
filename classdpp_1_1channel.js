@@ -3,6 +3,7 @@ var classdpp_1_1channel =
     [ "channel", "classdpp_1_1channel.html#a53bbf494148ceea48e3b78716d7a8b07", null ],
     [ "~channel", "classdpp_1_1channel.html#a51afd2284fe4ae3a6d1043c8f3ecf4f1", null ],
     [ "add_flag", "classdpp_1_1channel.html#a189a5d675001b810199274201b15ea38", null ],
+    [ "add_permission_overwrite", "classdpp_1_1channel.html#a3bf0a0d35c4aa4e40c6b2b71e9c97584", null ],
     [ "build_json", "classdpp_1_1channel.html#a2b818d100d7b40ee6b07d95ff3fcccb8", null ],
     [ "fill_from_json", "classdpp_1_1channel.html#a97c266efb07e429ecc1175207a409824", null ],
     [ "get_banner_url", "classdpp_1_1channel.html#a9b21f2eb844a745ba44fda7ca55aa40e", null ],

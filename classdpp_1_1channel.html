@@ -167,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a929b0d7a3eaed7ca144752196c2cf38f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1channel.html">channel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a929b0d7a3eaed7ca144752196c2cf38f">set_rate_limit_per_user</a> (const uint16_t <a class="el" href="classdpp_1_1channel.html#a2ec41d2c2a7d592c1a17888d3f401fd5">rate_limit_per_user</a>)</td></tr>
 <tr class="memdesc:a929b0d7a3eaed7ca144752196c2cf38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rate_limit_per_user of this channel object.  <a href="classdpp_1_1channel.html#a929b0d7a3eaed7ca144752196c2cf38f">More...</a><br /></td></tr>
 <tr class="separator:a929b0d7a3eaed7ca144752196c2cf38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf0a0d35c4aa4e40c6b2b71e9c97584"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1channel.html">channel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a3bf0a0d35c4aa4e40c6b2b71e9c97584">add_permission_overwrite</a> (const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> <a class="el" href="classdpp_1_1managed.html#a40bf0c6cc03909910512808fa6caa112">id</a>, const uint8_t type, const uint64_t allowed_permissions, const uint64_t denied_permissions)</td></tr>
+<tr class="memdesc:a3bf0a0d35c4aa4e40c6b2b71e9c97584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="structdpp_1_1permission__overwrite.html" title="channel permission overwrites">permission_overwrite</a> to this channel object.  <a href="classdpp_1_1channel.html#a3bf0a0d35c4aa4e40c6b2b71e9c97584">More...</a><br /></td></tr>
+<tr class="separator:a3bf0a0d35c4aa4e40c6b2b71e9c97584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a674755c169a3517361dc847511617"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a08a674755c169a3517361dc847511617">get_mention</a> () const</td></tr>
 <tr class="memdesc:a08a674755c169a3517361dc847511617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mention ping for the channel.  <a href="classdpp_1_1channel.html#a08a674755c169a3517361dc847511617">More...</a><br /></td></tr>
 <tr class="separator:a08a674755c169a3517361dc847511617"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,6 +334,58 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bf0a0d35c4aa4e40c6b2b71e9c97584" name="a3bf0a0d35c4aa4e40c6b2b71e9c97584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf0a0d35c4aa4e40c6b2b71e9c97584">&#9670;&nbsp;</a></span>add_permission_overwrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1channel.html">channel</a> &amp; dpp::channel::add_permission_overwrite </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>allowed_permissions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>denied_permissions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a <a class="el" href="structdpp_1_1permission__overwrite.html" title="channel permission overwrites">permission_overwrite</a> to this channel object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>ID of the role or the member you want to add overwrite for </td></tr>
+    <tr><td class="paramname">type</td><td>type of overwrite (0 for role, 1 for member) </td></tr>
+    <tr><td class="paramname">allowed_permissions</td><td>bitmask of allowed permissions (refer to enum role_permissions) for this user/role in this channel </td></tr>
+    <tr><td class="paramname">denied_permissions</td><td>bitmask of denied permissions (refer to enum role_permissions) for this user/role in this channel</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to self, so these method calls may be chained </dd></dl>
 
 </div>
 </div>
