@@ -20,21 +20,17 @@ make -j8
 </verbatim> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
 <sect2 id="buildlinux_1autotoc_md3">
-<title>2. Optional: Run test cases</title>
-<para>Run <computeroutput>./test</computeroutput> for unit test cases. You will need to create a <computeroutput>config.json</computeroutput> file in the directory above the executable file with a valid bot token in it. See the example file <computeroutput>config.example.json</computeroutput> for an example of the correct format.</para>
-</sect2>
-<sect2 id="buildlinux_1autotoc_md4">
-<title>3. Install to /usr/local/include and /usr/local/lib</title>
+<title>2. Install to /usr/local/include and /usr/local/lib</title>
 <para><verbatim>sudo make install
 </verbatim> </para>
 </sect2>
-<sect2 id="buildlinux_1autotoc_md5">
-<title>4. Installation to a different directory</title>
+<sect2 id="buildlinux_1autotoc_md4">
+<title>3. Installation to a different directory</title>
 <para>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>: <verbatim>cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </verbatim> Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
 </sect2>
-<sect2 id="buildlinux_1autotoc_md6">
-<title>5. Using the library</title>
+<sect2 id="buildlinux_1autotoc_md5">
+<title>4. Using the library</title>
 <para>Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp
 </verbatim> The important flags in this command-line are:</para>
 <para><itemizedlist>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"namespacedpp.html#af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26":[6,0,1,280,2],
 "namespacedpp.html#af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6":[6,0,1,280,1],
 "namespacedpp.html#af9f0984484c2408f8bac07674720ef07":[6,0,1,312],
 "namespacedpp.html#afb8eae726b5ea68baff8c48d7fb835af":[6,0,1,232],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "structdetail_1_1chrono__formatter.html#af09d672f8daee55e6987b9e444bcb7bd":[7,0,0,1,13],
 "structdetail_1_1chrono__formatter.html#af225ef12bd4e460a70c8e51efa1347b1":[6,0,0,1,34],
 "structdetail_1_1chrono__formatter.html#af225ef12bd4e460a70c8e51efa1347b1":[7,0,0,1,34],
-"structdetail_1_1chrono__formatter.html#af671b4ebeb476af2255cae8213504c1d":[7,0,0,1,46]
+"structdetail_1_1chrono__formatter.html#af671b4ebeb476af2255cae8213504c1d":[7,0,0,1,46],
+"structdetail_1_1chrono__formatter.html#af671b4ebeb476af2255cae8213504c1d":[6,0,0,1,46]
 };
