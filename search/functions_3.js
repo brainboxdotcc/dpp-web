@@ -16,6 +16,7 @@ var searchData=
   ['discord_5fclient_13',['discord_client',['../classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082',1,'dpp::discord_client']]],
   ['discord_5fvoice_5fclient_14',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#a5b344a5989d67f0f0caf5b52236055bf',1,'dpp::discord_voice_client']]],
   ['discover_5fip_15',['discover_ip',['../classdpp_1_1discord__voice__client.html#ae8e844ebb991eeb2d63771f6c5ea4938',1,'dpp::discord_voice_client']]],
-  ['download_16',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
-  ['dtemplate_17',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
+  ['double_5fnot_5fnull_16',['double_not_null',['../namespacedpp.html#a3dfc4f43c1a761c749d1feb894bd0372',1,'dpp']]],
+  ['download_17',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
+  ['dtemplate_18',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
 ];
