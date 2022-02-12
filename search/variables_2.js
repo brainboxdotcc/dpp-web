@@ -6,7 +6,7 @@ var searchData=
   ['banning_5fguild_3',['banning_guild',['../structdpp_1_1guild__ban__add__t.html#a205babd5bfbb4ed9810d824d28711536',1,'dpp::guild_ban_add_t']]],
   ['big_5fmm_4',['big_mm',['../namespacedpp.html#a5b20a19e92b034905ee00c48310b4c41',1,'dpp']]],
   ['bitrate_5',['bitrate',['../classdpp_1_1channel.html#ab32308d8281aef6bfe4d5a6538c6306e',1,'dpp::channel']]],
-  ['body_6',['body',['../structdpp_1_1http__request__completion__t.html#ac14ffa7060df12797e238f2619153ef9',1,'dpp::http_request_completion_t']]],
+  ['body_6',['body',['../structdpp_1_1multipart__content.html#a6d5baf3784c9574cba9d54cc18129294',1,'dpp::multipart_content::body()'],['../structdpp_1_1http__request__completion__t.html#ac14ffa7060df12797e238f2619153ef9',1,'dpp::http_request_completion_t::body()']]],
   ['bot_7',['bot',['../structdpp_1_1integration__app.html#a7a5531daeeecde3267891e637b2a318f',1,'dpp::integration_app']]],
   ['bot_5fid_8',['bot_id',['../classdpp_1_1role.html#ada5cb5675b012b2cf55d285d5b233df3',1,'dpp::role']]],
   ['bot_5fpublic_9',['bot_public',['../classdpp_1_1application.html#a1724baabe72d957d04b0a30bc4604d8b',1,'dpp::application']]],

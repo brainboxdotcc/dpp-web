@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classhttplib_1_1_thread_pool" kind="class" language="C++" prot="public">
+    <compoundname>httplib::ThreadPool</compoundname>
+    <basecompoundref refid="classhttplib_1_1_task_queue" prot="public" virt="non-virtual">httplib::TaskQueue</basecompoundref>
+    <includes local="no">httplib.h</includes>
+    <innerclass refid="structhttplib_1_1_thread_pool_1_1worker" prot="private">httplib::ThreadPool::worker</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classhttplib_1_1_thread_pool_1a145c4e203b787f9b561489eb2032edb3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct worker</definition>
+        <argsstring></argsstring>
+        <name>worker</name>
+        <param>
+          <type>worker</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="564" column="17" bodyfile="include/dpp/httplib.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhttplib_1_1_thread_pool_1ab387526d81649547c8cc80e8a2ed5262" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::thread &gt;</type>
+        <definition>std::vector&lt;std::thread&gt; httplib::ThreadPool::threads_</definition>
+        <argsstring></argsstring>
+        <name>threads_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="566" column="15" bodyfile="include/dpp/httplib.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_thread_pool_1a4d0f69e884aa51fb069949ab47cc3319" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::function&lt; void()&gt; &gt;</type>
+        <definition>std::list&lt;std::function&lt;void()&gt; &gt; httplib::ThreadPool::jobs_</definition>
+        <argsstring></argsstring>
+        <name>jobs_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="567" column="13" bodyfile="include/dpp/httplib.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_thread_pool_1ad147150e368881c6c813434e9e509cff" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool httplib::ThreadPool::shutdown_</definition>
+        <argsstring></argsstring>
+        <name>shutdown_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="569" column="8" bodyfile="include/dpp/httplib.h" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_thread_pool_1a047e7cd75e07a81c51f1c9376d5dd42f" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable httplib::ThreadPool::cond_</definition>
+        <argsstring></argsstring>
+        <name>cond_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="571" column="27" bodyfile="include/dpp/httplib.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_thread_pool_1af95720a7fe4254a7fca6b15451ed5d1e" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex httplib::ThreadPool::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="572" column="14" bodyfile="include/dpp/httplib.h" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhttplib_1_1_thread_pool_1a322937261ee5818426a3f09caa8f37ec" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>httplib::ThreadPool::ThreadPool</definition>
+        <argsstring>(size_t n)</argsstring>
+        <name>ThreadPool</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="507" column="12" bodyfile="include/dpp/httplib.h" bodystart="507" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_thread_pool_1aac78a365c5d7910e7367a83d21369ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>httplib::ThreadPool::ThreadPool</definition>
+        <argsstring>(const ThreadPool &amp;)=delete</argsstring>
+        <name>ThreadPool</name>
+        <param>
+          <type>const <ref refid="classhttplib_1_1_thread_pool" kindref="compound">ThreadPool</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="514" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_thread_pool_1ad0f2cf2a96d2b9bcad7183c467c84e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>httplib::ThreadPool::~ThreadPool</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~ThreadPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="515" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_thread_pool_1a0a1653126f41111579d17adc245b3ad1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void httplib::ThreadPool::enqueue</definition>
+        <argsstring>(std::function&lt; void()&gt; fn) override</argsstring>
+        <name>enqueue</name>
+        <reimplements refid="classhttplib_1_1_task_queue_1aa58eb792edcb3e4937e6846ccb6fe904">enqueue</reimplements>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="517" column="8" bodyfile="include/dpp/httplib.h" bodystart="517" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_thread_pool_1a9884cbaef9ed5f92152b82d2c93340ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void httplib::ThreadPool::shutdown</definition>
+        <argsstring>() override</argsstring>
+        <name>shutdown</name>
+        <reimplements refid="classhttplib_1_1_task_queue_1ae9f356217bd1ed1797426001070b316d">shutdown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="523" column="8" bodyfile="include/dpp/httplib.h" bodystart="523" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_task_queue_1a219e7364388477343f373c10db45333e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void httplib::TaskQueue::on_idle</definition>
+        <argsstring>()</argsstring>
+        <name>on_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="502" column="16" bodyfile="include/dpp/httplib.h" bodystart="502" bodyend="502"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>httplib::TaskQueue</label>
+        <link refid="classhttplib_1_1_task_queue"/>
+      </node>
+      <node id="1">
+        <label>httplib::ThreadPool</label>
+        <link refid="classhttplib_1_1_thread_pool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>httplib::TaskQueue</label>
+        <link refid="classhttplib_1_1_task_queue"/>
+      </node>
+      <node id="1">
+        <label>httplib::ThreadPool</label>
+        <link refid="classhttplib_1_1_thread_pool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/httplib.h" line="505" column="1" bodyfile="include/dpp/httplib.h" bodystart="505" bodyend="573"/>
+    <listofallmembers>
+      <member refid="classhttplib_1_1_thread_pool_1a047e7cd75e07a81c51f1c9376d5dd42f" prot="private" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>cond_</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1a0a1653126f41111579d17adc245b3ad1" prot="public" virt="virtual"><scope>httplib::ThreadPool</scope><name>enqueue</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1a4d0f69e884aa51fb069949ab47cc3319" prot="private" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>jobs_</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1af95720a7fe4254a7fca6b15451ed5d1e" prot="private" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>mutex_</name></member>
+      <member refid="classhttplib_1_1_task_queue_1a219e7364388477343f373c10db45333e" prot="public" virt="virtual"><scope>httplib::ThreadPool</scope><name>on_idle</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1a9884cbaef9ed5f92152b82d2c93340ea" prot="public" virt="virtual"><scope>httplib::ThreadPool</scope><name>shutdown</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1ad147150e368881c6c813434e9e509cff" prot="private" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>shutdown_</name></member>
+      <member refid="classhttplib_1_1_task_queue_1a86c1d663c1a733d703617737441cbdc0" prot="public" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>TaskQueue</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1a322937261ee5818426a3f09caa8f37ec" prot="public" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>ThreadPool</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1aac78a365c5d7910e7367a83d21369ed2" prot="public" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>ThreadPool</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1ab387526d81649547c8cc80e8a2ed5262" prot="private" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>threads_</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1a145c4e203b787f9b561489eb2032edb3" prot="private" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>worker</name></member>
+      <member refid="classhttplib_1_1_task_queue_1ac5c93354376774b4082bb40cef9ae63d" prot="public" virt="virtual"><scope>httplib::ThreadPool</scope><name>~TaskQueue</name></member>
+      <member refid="classhttplib_1_1_thread_pool_1ad0f2cf2a96d2b9bcad7183c467c84e50" prot="public" virt="non-virtual"><scope>httplib::ThreadPool</scope><name>~ThreadPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

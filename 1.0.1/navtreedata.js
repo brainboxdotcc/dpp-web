@@ -92,7 +92,10 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ]
+        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]
@@ -108,13 +111,17 @@ var NAVTREEINDEX =
 "classdpp_1_1guild.html#a02e42564118a777e6da228de14a0aae2",
 "classdpp_1_1invite.html#a1eeea3785ede65e9a93640352674a6c3",
 "classdpp_1_1user.html#af4a509ae622f1b4531a758524b34f47e",
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a4278f54e9f1f408d43be33f7e0beac88",
-"namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359",
-"structdpp_1_1audit__change.html#a025a06b03f1592b67bd59310bcadb946",
-"structdpp_1_1embed.html#abe6263ce0132837017e0aca16c6e299d",
-"structdpp_1_1http__request__completion__t.html#a060318a4877fff905907532077b5b6a6",
-"structdpp_1_1message__reaction__add__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1utility_1_1uptime.html#aff6d3ddd12cb12ebaed33231a2cfff3a"
+"classhttplib_1_1_client.html#ab8dbf72575b6f745efec170c0124f90b",
+"classhttplib_1_1_client_impl.html#ab2c2dae97d8672ed539a21cfe7477fed",
+"classhttplib_1_1_server.html#aae7a9a5c73dc8cd71003da7d5d1cbd7d",
+"functions_func_h.html",
+"namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba57a07827de1901dfbd7fa964bd9cdd43",
+"namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9",
+"structdpp_1_1audit__change.html#a7241b5b440781dccabfbc24c154de9cb",
+"structdpp_1_1embed.html#ac4579a586750009436c088f509438df1",
+"structdpp_1_1http__request__completion__t.html#a094ddd933ec9bc288812cead549bc39c",
+"structdpp_1_1message__reaction__add__t.html#a602fbba2e1729accb3a495bc5368450f",
+"structdpp_1_1voice__buffer__send__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

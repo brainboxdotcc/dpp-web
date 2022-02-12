@@ -25,5 +25,5 @@ var searchData=
   ['attachment_22',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
   ['auditlog_23',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]],
   ['autocomplete_5ft_24',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]],
-  ['avatar_5fsize_25',['avatar_size',['../namespacedpp_1_1utility.html#ab1b9a9f3dbfb71cb8b8d223062e4cd62',1,'dpp::utility']]]
+  ['avatar_5fsize_25',['avatar_size',['../namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc',1,'dpp::utility']]]
 ];

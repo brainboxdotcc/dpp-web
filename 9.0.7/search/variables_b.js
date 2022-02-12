@@ -10,6 +10,8 @@ var searchData=
   ['last_5ftick_7',['last_tick',['../classdpp_1_1ssl__client.html#a61f0bbeefa25de686ac93887afa65895',1,'dpp::ssl_client']]],
   ['latency_8',['latency',['../structdpp_1_1http__request__completion__t.html#aa39b263a9671e1b106429c6e440faaad',1,'dpp::http_request_completion_t']]],
   ['limit_9',['limit',['../structdpp_1_1bucket__t.html#a092991348f1588a752cae246db4b30f6',1,'dpp::bucket_t']]],
-  ['locked_10',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
-  ['log_11',['log',['../classdpp_1_1dispatcher.html#aa3e934f108231fa426cbcd1956e72b1c',1,'dpp::dispatcher']]]
+  ['location_10',['location',['../structhttplib_1_1_response.html#af827c5094e658e262c290dc7313a7db9',1,'httplib::Response']]],
+  ['locked_11',['locked',['../structdpp_1_1thread__metadata.html#add58e423f075a5167a4784dcf8b0aad4',1,'dpp::thread_metadata']]],
+  ['log_12',['log',['../classdpp_1_1dispatcher.html#aa3e934f108231fa426cbcd1956e72b1c',1,'dpp::dispatcher']]],
+  ['logger_5f_13',['logger_',['../classhttplib_1_1_client_impl.html#aaafda13c6544379ac485ae4639877fab',1,'httplib::ClientImpl']]]
 ];

@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classhttplib_1_1detail_1_1_s_s_l_socket_stream" kind="class" language="C++" prot="public">
+    <compoundname>httplib::detail::SSLSocketStream</compoundname>
+    <basecompoundref refid="classhttplib_1_1_stream" prot="public" virt="non-virtual">httplib::Stream</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1adae23a10055962333867b2f16e4c4a47" prot="private" static="no" mutable="no">
+        <type>socket_t</type>
+        <definition>socket_t httplib::detail::SSLSocketStream::sock_</definition>
+        <argsstring></argsstring>
+        <name>sock_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="546" column="12" bodyfile="src/dpp/httplib.cpp" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a16c7f097217053a1f89a24e601fb8c96" prot="private" static="no" mutable="no">
+        <type>SSL *</type>
+        <definition>SSL* httplib::detail::SSLSocketStream::ssl_</definition>
+        <argsstring></argsstring>
+        <name>ssl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="547" column="7" bodyfile="src/dpp/httplib.cpp" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a57eb9a73f0c0dd92d111400ccb6e16cc" prot="private" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::detail::SSLSocketStream::read_timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>read_timeout_sec_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="548" column="10" bodyfile="src/dpp/httplib.cpp" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a0aaa9973d9fc171f7710ca202ba246ee" prot="private" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::detail::SSLSocketStream::read_timeout_usec_</definition>
+        <argsstring></argsstring>
+        <name>read_timeout_usec_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="549" column="10" bodyfile="src/dpp/httplib.cpp" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1ac9ef9fb1af5f30d5a50e1271b4fb52a9" prot="private" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::detail::SSLSocketStream::write_timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>write_timeout_sec_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="550" column="10" bodyfile="src/dpp/httplib.cpp" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1ae3a4f8a1ada919bb65b4efda277028ff" prot="private" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t httplib::detail::SSLSocketStream::write_timeout_usec_</definition>
+        <argsstring></argsstring>
+        <name>write_timeout_usec_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="551" column="10" bodyfile="src/dpp/httplib.cpp" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1ac9e474205a580d9cd020b601bb0fdebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>httplib::detail::SSLSocketStream::SSLSocketStream</definition>
+        <argsstring>(socket_t sock, SSL *ssl, time_t read_timeout_sec, time_t read_timeout_usec, time_t write_timeout_sec, time_t write_timeout_usec)</argsstring>
+        <name>SSLSocketStream</name>
+        <param>
+          <type>socket_t</type>
+          <declname>sock</declname>
+        </param>
+        <param>
+          <type>SSL *</type>
+          <declname>ssl</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>read_timeout_sec</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>read_timeout_usec</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>write_timeout_sec</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>write_timeout_usec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="533" column="3" bodyfile="src/dpp/httplib.cpp" bodystart="5206" bodyend="5216"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a19185f15fd7b170191024719f4883d84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>httplib::detail::SSLSocketStream::~SSLSocketStream</definition>
+        <argsstring>() override</argsstring>
+        <name>~SSLSocketStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="536" column="3" bodyfile="src/dpp/httplib.cpp" bodystart="5218" bodyend="5218"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a45dc762510ad2df66d6c01746fa70872" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool httplib::detail::SSLSocketStream::is_readable</definition>
+        <argsstring>() const override</argsstring>
+        <name>is_readable</name>
+        <reimplements refid="classhttplib_1_1_stream_1af0a78453c54817f8fc0de91f8b02c12c">is_readable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="538" column="8" bodyfile="src/dpp/httplib.cpp" bodystart="5220" bodyend="5222"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a281d16b8ab06166d6aff4145fd13bbd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool httplib::detail::SSLSocketStream::is_writable</definition>
+        <argsstring>() const override</argsstring>
+        <name>is_writable</name>
+        <reimplements refid="classhttplib_1_1_stream_1ab10c55e43ccf0146c4d142e53a58a831">is_writable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="539" column="8" bodyfile="src/dpp/httplib.cpp" bodystart="5224" bodyend="5227"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a9520188ba7cb8210c356f0914ab80721" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::detail::SSLSocketStream::read</definition>
+        <argsstring>(char *ptr, size_t size) override</argsstring>
+        <name>read</name>
+        <reimplements refid="classhttplib_1_1_stream_1a58adfc27d0672f6a2f293168757861b2">read</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="540" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="5229" bodyend="5251"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a7e6cb30702f7f0d784f9122f4dffb2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::detail::SSLSocketStream::write</definition>
+        <argsstring>(const char *ptr, size_t size) override</argsstring>
+        <name>write</name>
+        <reimplements refid="classhttplib_1_1_stream_1a4b94583ae90065c9e4e33a7752d9976f">write</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="541" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="5253" bodyend="5256"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a35eeb6f96b9ca6c25068917124d36357" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void httplib::detail::SSLSocketStream::get_remote_ip_and_port</definition>
+        <argsstring>(std::string &amp;ip, int &amp;port) const override</argsstring>
+        <name>get_remote_ip_and_port</name>
+        <reimplements refid="classhttplib_1_1_stream_1a69c4c8a58c9e943fea94f01e6b7dd5ca">get_remote_ip_and_port</reimplements>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="542" column="8" bodyfile="src/dpp/httplib.cpp" bodystart="5258" bodyend="5261"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a38a7dd06242a297af3c008551c298b69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>socket_t</type>
+        <definition>socket_t httplib::detail::SSLSocketStream::socket</definition>
+        <argsstring>() const override</argsstring>
+        <name>socket</name>
+        <reimplements refid="classhttplib_1_1_stream_1ad2ea435dea23ee5f89b0792f4cb2d742">socket</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="543" column="12" bodyfile="src/dpp/httplib.cpp" bodystart="5263" bodyend="5263"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a1f8218941e7dac2dd5795e89e6e9607f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::Stream::write</definition>
+        <argsstring>(const char *ptr)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="500" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="2652" bodyend="2654"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a81b7ddb3a4c73f8e2fe1b3887f7346c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::Stream::write</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="501" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="2656" bodyend="2658"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a9892f60a65f59412ace397b7b6c4c93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::Stream::write_format</definition>
+        <argsstring>(const char *fmt, const Args &amp;...args)</argsstring>
+        <name>write_format</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>const Args &amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="499" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="2661" bodyend="2692"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>httplib::Stream</label>
+        <link refid="classhttplib_1_1_stream"/>
+      </node>
+      <node id="1">
+        <label>httplib::detail::SSLSocketStream</label>
+        <link refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>httplib::Stream</label>
+        <link refid="classhttplib_1_1_stream"/>
+      </node>
+      <node id="1">
+        <label>httplib::detail::SSLSocketStream</label>
+        <link refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/dpp/httplib.cpp" line="531" column="1" bodyfile="src/dpp/httplib.cpp" bodystart="531" bodyend="552"/>
+    <listofallmembers>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a35eeb6f96b9ca6c25068917124d36357" prot="public" virt="virtual"><scope>httplib::detail::SSLSocketStream</scope><name>get_remote_ip_and_port</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a45dc762510ad2df66d6c01746fa70872" prot="public" virt="virtual"><scope>httplib::detail::SSLSocketStream</scope><name>is_readable</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a281d16b8ab06166d6aff4145fd13bbd3" prot="public" virt="virtual"><scope>httplib::detail::SSLSocketStream</scope><name>is_writable</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a9520188ba7cb8210c356f0914ab80721" prot="public" virt="virtual"><scope>httplib::detail::SSLSocketStream</scope><name>read</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a57eb9a73f0c0dd92d111400ccb6e16cc" prot="private" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>read_timeout_sec_</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a0aaa9973d9fc171f7710ca202ba246ee" prot="private" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>read_timeout_usec_</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1adae23a10055962333867b2f16e4c4a47" prot="private" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>sock_</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a38a7dd06242a297af3c008551c298b69" prot="public" virt="virtual"><scope>httplib::detail::SSLSocketStream</scope><name>socket</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a16c7f097217053a1f89a24e601fb8c96" prot="private" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>ssl_</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1ac9e474205a580d9cd020b601bb0fdebe" prot="public" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>SSLSocketStream</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a7e6cb30702f7f0d784f9122f4dffb2a6" prot="public" virt="virtual"><scope>httplib::detail::SSLSocketStream</scope><name>write</name></member>
+      <member refid="classhttplib_1_1_stream_1a1f8218941e7dac2dd5795e89e6e9607f" prot="public" virt="non-virtual" ambiguityscope="httplib::Stream::"><scope>httplib::detail::SSLSocketStream</scope><name>write</name></member>
+      <member refid="classhttplib_1_1_stream_1a81b7ddb3a4c73f8e2fe1b3887f7346c9" prot="public" virt="non-virtual" ambiguityscope="httplib::Stream::"><scope>httplib::detail::SSLSocketStream</scope><name>write</name></member>
+      <member refid="classhttplib_1_1_stream_1a9892f60a65f59412ace397b7b6c4c93b" prot="public" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>write_format</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1ac9ef9fb1af5f30d5a50e1271b4fb52a9" prot="private" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>write_timeout_sec_</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1ae3a4f8a1ada919bb65b4efda277028ff" prot="private" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>write_timeout_usec_</name></member>
+      <member refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a19185f15fd7b170191024719f4883d84" prot="public" virt="non-virtual"><scope>httplib::detail::SSLSocketStream</scope><name>~SSLSocketStream</name></member>
+      <member refid="classhttplib_1_1_stream_1ad2ab38ab48ccc866169ae0f40f018702" prot="public" virt="virtual"><scope>httplib::detail::SSLSocketStream</scope><name>~Stream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

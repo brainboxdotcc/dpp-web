@@ -1,6 +1,6 @@
 var classdpp_1_1ssl__client =
 [
-    [ "ssl_client", "classdpp_1_1ssl__client.html#a67656fe3b8717d784ff0bdf02290a4f3", null ],
+    [ "ssl_client", "classdpp_1_1ssl__client.html#a5b4e115d8a21b01efe0678af9b2d03b7", null ],
     [ "~ssl_client", "classdpp_1_1ssl__client.html#ab805a3cc483018dbba6b745f7fa6ff24", null ],
     [ "close", "classdpp_1_1ssl__client.html#af20b792a7590e0b9457dec6cdb52568a", null ],
     [ "connect", "classdpp_1_1ssl__client.html#afa72c083a644eba592b5da9392ebc5bd", null ],
@@ -24,6 +24,7 @@ var classdpp_1_1ssl__client =
     [ "last_tick", "classdpp_1_1ssl__client.html#a61f0bbeefa25de686ac93887afa65895", null ],
     [ "nonblocking", "classdpp_1_1ssl__client.html#a1486b3df6780a842552442a25634fcc9", null ],
     [ "obuffer", "classdpp_1_1ssl__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
+    [ "plaintext", "classdpp_1_1ssl__client.html#aa735feca3545e156e0607c06d55288c4", null ],
     [ "port", "classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07", null ],
     [ "sfd", "classdpp_1_1ssl__client.html#a423ca70d4046067ebe219f85c7baa540", null ],
     [ "ssl", "classdpp_1_1ssl__client.html#a2398ebb5fe51346ca7e97ec162327c4e", null ]

@@ -1,17 +1,16 @@
 var searchData=
 [
-  ['scheduled_5fevent_0',['scheduled_event',['../structdpp_1_1scheduled__event.html',1,'dpp']]],
-  ['select_5fclick_5ft_1',['select_click_t',['../structdpp_1_1select__click__t.html',1,'dpp']]],
-  ['select_5foption_2',['select_option',['../structdpp_1_1select__option.html',1,'dpp']]],
-  ['slashcommand_3',['slashcommand',['../classdpp_1_1slashcommand.html',1,'dpp']]],
-  ['ssl_5fclient_4',['ssl_client',['../classdpp_1_1ssl__client.html',1,'dpp']]],
-  ['stage_5finstance_5',['stage_instance',['../structdpp_1_1stage__instance.html',1,'dpp']]],
-  ['stage_5finstance_5fcreate_6',['stage_instance_create',['../classdpp_1_1events_1_1stage__instance__create.html',1,'dpp::events']]],
-  ['stage_5finstance_5fcreate_5ft_7',['stage_instance_create_t',['../structdpp_1_1stage__instance__create__t.html',1,'dpp']]],
-  ['stage_5finstance_5fdelete_8',['stage_instance_delete',['../classdpp_1_1events_1_1stage__instance__delete.html',1,'dpp::events']]],
-  ['stage_5finstance_5fdelete_5ft_9',['stage_instance_delete_t',['../structdpp_1_1stage__instance__delete__t.html',1,'dpp']]],
-  ['stage_5finstance_5fupdate_10',['stage_instance_update',['../classdpp_1_1events_1_1stage__instance__update.html',1,'dpp::events']]],
-  ['stage_5finstance_5fupdate_5ft_11',['stage_instance_update_t',['../structdpp_1_1stage__instance__update__t.html',1,'dpp']]],
-  ['sticker_12',['sticker',['../structdpp_1_1sticker.html',1,'dpp']]],
-  ['sticker_5fpack_13',['sticker_pack',['../structdpp_1_1sticker__pack.html',1,'dpp']]]
+  ['reaction_0',['reaction',['../structdpp_1_1reaction.html',1,'dpp']]],
+  ['ready_1',['ready',['../classdpp_1_1events_1_1ready.html',1,'dpp::events']]],
+  ['ready_5ft_2',['ready_t',['../structdpp_1_1ready__t.html',1,'dpp']]],
+  ['request_3',['Request',['../structhttplib_1_1_request.html',1,'httplib']]],
+  ['request_5fqueue_4',['request_queue',['../classdpp_1_1request__queue.html',1,'dpp']]],
+  ['resolved_5fuser_5',['resolved_user',['../structdpp_1_1resolved__user.html',1,'dpp']]],
+  ['response_6',['Response',['../structhttplib_1_1_response.html',1,'httplib']]],
+  ['rest_5fexception_7',['rest_exception',['../classdpp_1_1rest__exception.html',1,'dpp']]],
+  ['result_8',['Result',['../classhttplib_1_1_result.html',1,'httplib']]],
+  ['resumed_9',['resumed',['../classdpp_1_1events_1_1resumed.html',1,'dpp::events']]],
+  ['resumed_5ft_10',['resumed_t',['../structdpp_1_1resumed__t.html',1,'dpp']]],
+  ['role_11',['role',['../classdpp_1_1role.html',1,'dpp']]],
+  ['rtp_5fheader_12',['rtp_header',['../structdpp_1_1rtp__header.html',1,'dpp']]]
 ];

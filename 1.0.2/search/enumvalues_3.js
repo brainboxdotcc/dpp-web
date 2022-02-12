@@ -1,27 +1,8 @@
 var searchData=
 [
-  ['g_5fanimated_5ficon_0',['g_animated_icon',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa41116ed045326dcffe6c89f69b8a16b4',1,'dpp']]],
-  ['g_5fbanner_1',['g_banner',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa2f620e3b0ccaf4c4e55fb83393f77ad6',1,'dpp']]],
-  ['g_5fcommerce_2',['g_commerce',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa857663f1db666045ea04595a6168e02f',1,'dpp']]],
-  ['g_5fcommunity_3',['g_community',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa07826673632e29a3f19ffb92f92de6b2',1,'dpp']]],
-  ['g_5fdiscoverable_4',['g_discoverable',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fabc22c6fe89086b9a5e99134118d675af',1,'dpp']]],
-  ['g_5ffeatureable_5',['g_featureable',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa1ac4e8b1bf2d97e934def6e656b6853b',1,'dpp']]],
-  ['g_5fhas_5fanimated_5ficon_6',['g_has_animated_icon',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf86b8a8efaa0bd140bcf714d4a59f7c0',1,'dpp']]],
-  ['g_5finvite_5fsplash_7',['g_invite_splash',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa08b2f4c963b17f60801f9a2deb17ccd7',1,'dpp']]],
-  ['g_5flarge_8',['g_large',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad6705273a057a9c7f7032a22f29e538b',1,'dpp']]],
-  ['g_5fmember_5fverification_5fgate_9',['g_member_verification_gate',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faa013ed7a6d95dfe09ef48449204ee72d',1,'dpp']]],
-  ['g_5fnews_10',['g_news',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faeee130a9c893f8b40a40032cb1e103dd',1,'dpp']]],
-  ['g_5fno_5fboost_5fnotifications_11',['g_no_boost_notifications',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faeed2962f0767222fb28a046ee64fffaf',1,'dpp']]],
-  ['g_5fno_5fjoin_5fnotifications_12',['g_no_join_notifications',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faccb9055123427741b9d4b08c0f0342c8',1,'dpp']]],
-  ['g_5fpartnered_13',['g_partnered',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa2475366e2137c374d70e109a4f558e67',1,'dpp']]],
-  ['g_5fpreview_5fenabled_14',['g_preview_enabled',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf3dd4637ed204605d0271d128ada7db8',1,'dpp']]],
-  ['g_5funavailable_15',['g_unavailable',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa6f5a2b3aa3e079cd62bb3ad595f04359',1,'dpp']]],
-  ['g_5fvanity_5furl_16',['g_vanity_url',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602faf7bd4841ddff627c7aa89d2fb714a0fa',1,'dpp']]],
-  ['g_5fverified_17',['g_verified',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad0048575cf495f4069fbe6d885da6c25',1,'dpp']]],
-  ['g_5fvip_5fregions_18',['g_vip_regions',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa5b7123fe609093340a16c80264d09172',1,'dpp']]],
-  ['g_5fwelcome_5fscreen_5fenabled_19',['g_welcome_screen_enabled',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa395413623895eaac5998ae8b4dc2031f',1,'dpp']]],
-  ['g_5fwidget_5fenabled_20',['g_widget_enabled',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa95bab65c1394b0a2cbd23083a788be5c',1,'dpp']]],
-  ['gm_5fdeaf_21',['gm_deaf',['../namespacedpp.html#a7e036e9909741e00af34e2505117218da966c5f8d7bd60e0daf9ceaafb556b4c4',1,'dpp']]],
-  ['gm_5fmute_22',['gm_mute',['../namespacedpp.html#a7e036e9909741e00af34e2505117218da557d08c731cb82cfd66915aaa0466a2f',1,'dpp']]],
-  ['gm_5fpending_23',['gm_pending',['../namespacedpp.html#a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41',1,'dpp']]]
+  ['e_5fanimated_0',['e_animated',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a9036ca4ebc156999b7efd35de1adb2f5',1,'dpp']]],
+  ['e_5favailable_1',['e_available',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a5acfa9eb7e214d29511692811b93890d',1,'dpp']]],
+  ['e_5fmanaged_2',['e_managed',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8aa8e9ef37a91a1bbe4012548a0fd3bd82',1,'dpp']]],
+  ['e_5frequire_5fcolons_3',['e_require_colons',['../namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8ad9baba8ca224a0acb80019fcd3a9a0cb',1,'dpp']]],
+  ['exceedredirectcount_4',['ExceedRedirectCount',['../namespacehttplib.html#a46ff5da925971ebebf2c5693e367f24aad6422afb361bc405f21b4c3b161c4af9',1,'httplib']]]
 ];

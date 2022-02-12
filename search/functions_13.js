@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['validate_0',['validate',['../namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86',1,'dpp::utility']]],
+  ['validate_0',['validate',['../namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad',1,'dpp::utility']]],
   ['vformat_1',['vformat',['../namespacedetail.html#a88bdf7763638196f86a29118fba9442e',1,'detail']]],
   ['voice_5fbuffer_5fsend_5ft_2',['voice_buffer_send_t',['../structdpp_1_1voice__buffer__send__t.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
   ['voice_5fclient_5fdisconnect_5ft_3',['voice_client_disconnect_t',['../structdpp_1_1voice__client__disconnect__t.html#afa8b1b2cf9a31e4c34acf1883f57ac12',1,'dpp::voice_client_disconnect_t']]],

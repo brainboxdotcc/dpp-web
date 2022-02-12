@@ -53,6 +53,7 @@ var classdpp_1_1discord__client =
     [ "max_shards", "classdpp_1_1discord__client.html#a7e8e56675006b1af1c09d8de1519f001", null ],
     [ "nonblocking", "classdpp_1_1discord__client.html#a1486b3df6780a842552442a25634fcc9", null ],
     [ "obuffer", "classdpp_1_1discord__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
+    [ "plaintext", "classdpp_1_1discord__client.html#aa735feca3545e156e0607c06d55288c4", null ],
     [ "port", "classdpp_1_1discord__client.html#a53cda56d5d61e3371bd7be2424e7ff07", null ],
     [ "protocol", "classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7", null ],
     [ "ready", "classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90", null ],

@@ -30,7 +30,7 @@ var searchData=
   ['to_5fnonnegative_5fint_27',['to_nonnegative_int',['../namespacedetail.html#a929bdeea8b3a0e09b5785f3d12540d58',1,'detail']]],
   ['to_5fsecs_28',['to_secs',['../structdpp_1_1utility_1_1uptime.html#a370b15ab34fe91d13ce6739ca18a7906',1,'dpp::utility::uptime']]],
   ['to_5fstring_29',['to_string',['../structdpp_1_1utility_1_1uptime.html#aa4907af9819765cf8c97ac56b82c37b2',1,'dpp::utility::uptime::to_string()'],['../structdpp_1_1utility_1_1iconhash.html#aeba3e70afad0497f8e9aa1493704a77b',1,'dpp::utility::iconhash::to_string()']]],
-  ['tokenize_30',['tokenize',['../namespacedpp.html#a981df68922716d97ba921fd2027c3513',1,'dpp']]],
+  ['tokenize_30',['tokenize',['../namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec',1,'dpp::utility']]],
   ['ts_5fnot_5fnull_31',['ts_not_null',['../namespacedpp.html#aa4ab356292d0e7b1ee074a8f4a08a9c9',1,'dpp']]],
   ['ts_5fto_5fstring_32',['ts_to_string',['../namespacedpp.html#aa5d1b14ba391c0e2c80da8104029e3e0',1,'dpp']]],
   ['typing_5fstart_5ft_33',['typing_start_t',['../structdpp_1_1typing__start__t.html#a806b74ba396ab577fb3b4268b169c9ad',1,'dpp::typing_start_t']]]

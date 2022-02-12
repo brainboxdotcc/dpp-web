@@ -54,6 +54,7 @@ var classdpp_1_1discord__voice__client =
     [ "last_tick", "classdpp_1_1discord__voice__client.html#a61f0bbeefa25de686ac93887afa65895", null ],
     [ "nonblocking", "classdpp_1_1discord__voice__client.html#a1486b3df6780a842552442a25634fcc9", null ],
     [ "obuffer", "classdpp_1_1discord__voice__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
+    [ "plaintext", "classdpp_1_1discord__voice__client.html#aa735feca3545e156e0607c06d55288c4", null ],
     [ "server_id", "classdpp_1_1discord__voice__client.html#ac1d99be8bb3a89a43e5f5b368fe63f7d", null ],
     [ "sessionid", "classdpp_1_1discord__voice__client.html#a8f011c857ff968e44a8e5ddf818a9160", null ],
     [ "sfd", "classdpp_1_1discord__voice__client.html#a423ca70d4046067ebe219f85c7baa540", null ],

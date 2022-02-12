@@ -93,7 +93,9 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]
@@ -109,14 +111,18 @@ var NAVTREEINDEX =
 "classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac",
 "classdpp_1_1role.html#a40bf0c6cc03909910512808fa6caa112",
 "classdpp_1_1voiceregion.html#a614f804edbabc1db7f69f55fa28f75f5",
-"md_docpages__z_02__b_u_i_l_d__l_i_n_u_x.html#autotoc_md30",
-"namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0",
-"namespacemembers_f.html",
-"structdpp_1_1audit__entry.html#a9c715dcbef3d08e2d5d7cc58d5be1ca3",
-"structdpp_1_1embed__author.html#a7b5bda59d7afeca91450d57c72b7c242",
-"structdpp_1_1http__request__completion__t.html#ac14ffa7060df12797e238f2619153ef9",
-"structdpp_1_1message__reaction__remove__all__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1voice__ready__t.html#a176e7a9e1db9780c0dbf9a801d86794e"
+"classhttplib_1_1_client.html#aa68471660716c8380ea501faa63894b8",
+"classhttplib_1_1_client_impl.html#aa4d412f05411638d9b4136ad25bc9339",
+"classhttplib_1_1_server.html#a910dd7da997c757262ab13239b0dd350",
+"components.html",
+"namespacedpp.html#a172aa830689e55f4bba337de1592db96ae068013241cf08d0f4dbdd161e89aa2e",
+"namespacedpp.html#ace1318b24526febab72157cdd8b7b468a05e7983fd9a8181c8d8e59faa6d43b79",
+"namespacemembers_i.html",
+"structdpp_1_1audit__entry.html#ab4c452b5018afcc42cd96f67b7ae75f9",
+"structdpp_1_1embed__author.html#a9c9cf267007ccdbee70fec2fd9591123",
+"structdpp_1_1http__request__completion__t.html#aca6bb7b51b265b5303d1ff9ad940b130",
+"structdpp_1_1message__reaction__remove__all__t.html#a4ea348517f397f86e94bbf6449a7f1aa",
+"structdpp_1_1voice__ready__t.html#a2d4777d1049d31ed943ecebfa2de7db9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

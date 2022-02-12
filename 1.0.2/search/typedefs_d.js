@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_5fmap_0',['user_map',['../namespacedpp.html#a1c4073c92e19579c06591033a4a234e1',1,'dpp']]]
+  ['type_0',['type',['../structdetail_1_1make__unsigned__or__unchanged.html#a76f8c2352d357582a9521d3e3608bdaf',1,'detail::make_unsigned_or_unchanged::type()'],['../structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html#a80c4e8ddfad700203b4dfbc1b624c928',1,'detail::make_unsigned_or_unchanged&lt; T, true &gt;::type()']]]
 ];

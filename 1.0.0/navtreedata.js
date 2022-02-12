@@ -92,7 +92,10 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ]
+        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]
@@ -108,12 +111,17 @@ var NAVTREEINDEX =
 "classdpp_1_1guild.html#a6ec058ad4e9fde64b0a043287c3f6a73",
 "classdpp_1_1presence.html#a63177953eddc1a1425721110a6469042",
 "classdpp_1_1voiceregion.html#ab08402a1538913ad465b2c36cd4dbf92",
-"namespacedpp.html#a0bb678a7eb060b6f35ad38e6f4ee0002a6c9849fc7380edaf4ab8f169c2f4cc82",
-"namespacedpp.html#acce615d2721b50de907ef1d2cfa1490b",
-"structdpp_1_1channel__pins__update__t.html#aa12098210e1061f1cad63a42b9cfa97a",
-"structdpp_1_1guild__emojis__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1log__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1resumed__t.html#a45aae55aee35f844ddf40cc9d98f7a78"
+"classhttplib_1_1_client.html#afd63d1b156fdda53ec5c0dede1332de2",
+"classhttplib_1_1_client_impl.html#afbe91bdb3eb3b30f37aad3c49ae3285d",
+"classhttplib_1_1_task_queue.html#ae9f356217bd1ed1797426001070b316d",
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a5cdd239960ca917f44bab7be89625ae6",
+"namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fad0048575cf495f4069fbe6d885da6c25",
+"namespacehttplib_1_1detail.html#aef894f1e166e16c38e91b750b805b619",
+"structdpp_1_1confirmation__callback__t.html#a8d84eec56c475c504c38213c0561a9fa",
+"structdpp_1_1guild__members__chunk__t.html#a6ede9c42c304da55461d6a7cbde4b0be",
+"structdpp_1_1message.html#afaaf4f44ce0631c49c15088b033d25e6",
+"structdpp_1_1user__update__t.html#a7571eaf81365a5980a4df0e588e85940",
+"structhttplib_1_1_response.html#a7a3edf2b6539d69361574820446aaa4c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

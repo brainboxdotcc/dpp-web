@@ -13,5 +13,8 @@ var searchData=
   ['h_5funknown_10',['h_unknown',['../namespacedpp.html#ae525add0ec39d647375aabe5ce455449ac4bebebf31327d34b0cef9846cf57d26',1,'dpp']]],
   ['h_5funsupported_5fmultipart_5fboundary_5fchars_11',['h_unsupported_multipart_boundary_chars',['../namespacedpp.html#ae525add0ec39d647375aabe5ce455449ab64dc04f299fcfd9b1f4750908eb0a2e',1,'dpp']]],
   ['h_5fwrite_12',['h_write',['../namespacedpp.html#ae525add0ec39d647375aabe5ce455449aa6d32000fe1b31898ed22b07cb59fd4f',1,'dpp']]],
-  ['http_5fheaders_13',['HTTP_HEADERS',['../namespacedpp.html#af3b7f3e861707f45beefa9449de70519ac4e7462fef7673f64bf129dde58c9f70',1,'dpp']]]
+  ['http_5fheaders_13',['HTTP_HEADERS',['../namespacedpp.html#af3b7f3e861707f45beefa9449de70519ac4e7462fef7673f64bf129dde58c9f70',1,'dpp']]],
+  ['https_5fcontent_14',['HTTPS_CONTENT',['../namespacedpp.html#aaaa159f13811e8d13973c2794e171091a1eab41dc1b7d4eb0e8f68217318f6068',1,'dpp']]],
+  ['https_5fdone_15',['HTTPS_DONE',['../namespacedpp.html#aaaa159f13811e8d13973c2794e171091aa4cbb0b5e2760ec5ab444e7b787f5a02',1,'dpp']]],
+  ['https_5fheaders_16',['HTTPS_HEADERS',['../namespacedpp.html#aaaa159f13811e8d13973c2794e171091a1cb90f896a57c9a108a44c99d84964ad',1,'dpp']]]
 ];

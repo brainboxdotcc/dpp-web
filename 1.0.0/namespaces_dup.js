@@ -1,4 +1,5 @@
 var namespaces_dup =
 [
-    [ "dpp", "namespacedpp.html", "namespacedpp" ]
+    [ "dpp", "namespacedpp.html", "namespacedpp" ],
+    [ "httplib", "namespacehttplib.html", "namespacehttplib" ]
 ];

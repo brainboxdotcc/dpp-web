@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespacehttplib" kind="namespace" language="C++">
+    <compoundname>httplib</compoundname>
+    <innerclass refid="classhttplib_1_1_client" prot="public">httplib::Client</innerclass>
+    <innerclass refid="classhttplib_1_1_client_impl" prot="public">httplib::ClientImpl</innerclass>
+    <innerclass refid="classhttplib_1_1_content_reader" prot="public">httplib::ContentReader</innerclass>
+    <innerclass refid="classhttplib_1_1_data_sink" prot="public">httplib::DataSink</innerclass>
+    <innerclass refid="structhttplib_1_1_multipart_form_data" prot="public">httplib::MultipartFormData</innerclass>
+    <innerclass refid="structhttplib_1_1_request" prot="public">httplib::Request</innerclass>
+    <innerclass refid="structhttplib_1_1_response" prot="public">httplib::Response</innerclass>
+    <innerclass refid="classhttplib_1_1_result" prot="public">httplib::Result</innerclass>
+    <innerclass refid="classhttplib_1_1_server" prot="public">httplib::Server</innerclass>
+    <innerclass refid="classhttplib_1_1_stream" prot="public">httplib::Stream</innerclass>
+    <innerclass refid="classhttplib_1_1_task_queue" prot="public">httplib::TaskQueue</innerclass>
+    <innerclass refid="classhttplib_1_1_thread_pool" prot="public">httplib::ThreadPool</innerclass>
+    <innernamespace refid="namespacehttplib_1_1detail">httplib::detail</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24a" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Error</name>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa505a83f220c02df2f85c3810cd9ceb38" prot="public">
+          <name>Success</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aac2cc7082a89c1ad6631a2f66af5f00c0" prot="public">
+          <name>Connection</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa5c6f2a10b9abceb7fbc51bbbc87ff3be" prot="public">
+          <name>BindIPAddress</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa7a1a5f3e79fdc91edf2f5ead9d66abb4" prot="public">
+          <name>Read</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa1129c0e4d43f2d121652a7302712cff6" prot="public">
+          <name>Write</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aad6422afb361bc405f21b4c3b161c4af9" prot="public">
+          <name>ExceedRedirectCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa0e22fe7d45f8e5632a4abf369b24e29c" prot="public">
+          <name>Canceled</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa9bb9fbee3e5c67350419bd204fa72ef9" prot="public">
+          <name>SSLConnection</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aae57c61ce09939265d2c53ef65a21d60f" prot="public">
+          <name>SSLLoadingCerts</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa28d1bff99746cf348566f0ba27209d64" prot="public">
+          <name>SSLServerVerification</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aae9bf6daa3624423795b289a290a59505" prot="public">
+          <name>UnsupportedMultipartBoundaryChars</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24aa82af841589057aa8922b1ac3bb4a28a4" prot="public">
+          <name>Compression</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="800" column="1" bodyfile="include/dpp/httplib.h" bodystart="800" bodyend="814"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacehttplib_1a6fb30cf4bb44485bee38481e46ab8dc5" prot="public" static="no">
+        <type>std::multimap&lt; std::string, std::string, <ref refid="structhttplib_1_1detail_1_1ci" kindref="compound">detail::ci</ref> &gt;</type>
+        <definition>using httplib::Headers = typedef std::multimap&lt;std::string, std::string, detail::ci&gt;</definition>
+        <argsstring></argsstring>
+        <name>Headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="292" column="1" bodyfile="include/dpp/httplib.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a51ce06867e711ba5095eff9d606e802e" prot="public" static="no">
+        <type>std::multimap&lt; std::string, std::string &gt;</type>
+        <definition>using httplib::Params = typedef std::multimap&lt;std::string, std::string&gt;</definition>
+        <argsstring></argsstring>
+        <name>Params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="294" column="1" bodyfile="include/dpp/httplib.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a33c72941ad79dac75b23f0d6b5f02571" prot="public" static="no">
+        <type>std::smatch</type>
+        <definition>using httplib::Match = typedef std::smatch</definition>
+        <argsstring></argsstring>
+        <name>Match</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="295" column="1" bodyfile="include/dpp/httplib.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1ac816c86c4eb6af0ee03fb35059631b3c" prot="public" static="no">
+        <type>std::function&lt; bool(uint64_t current, uint64_t total)&gt;</type>
+        <definition>using httplib::Progress = typedef std::function&lt;bool(uint64_t current, uint64_t total)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="297" column="1" bodyfile="include/dpp/httplib.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1ad81ce13409edba1589c0b076b2dfab74" prot="public" static="no">
+        <type>std::function&lt; bool(const <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;response)&gt;</type>
+        <definition>using httplib::ResponseHandler = typedef std::function&lt;bool(const Response &amp;response)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ResponseHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="300" column="1" bodyfile="include/dpp/httplib.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1aa11ee6a4c1dff67ab2a75631d9c43705" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="structhttplib_1_1_multipart_form_data" kindref="compound">MultipartFormData</ref> &gt;</type>
+        <definition>using httplib::MultipartFormDataItems = typedef std::vector&lt;MultipartFormData&gt;</definition>
+        <argsstring></argsstring>
+        <name>MultipartFormDataItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="308" column="1" bodyfile="include/dpp/httplib.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1ac3d29d4b3084ddc665b2a265ca9888e9" prot="public" static="no">
+        <type>std::multimap&lt; std::string, <ref refid="structhttplib_1_1_multipart_form_data" kindref="compound">MultipartFormData</ref> &gt;</type>
+        <definition>using httplib::MultipartFormDataMap = typedef std::multimap&lt;std::string, MultipartFormData&gt;</definition>
+        <argsstring></argsstring>
+        <name>MultipartFormDataMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="309" column="1" bodyfile="include/dpp/httplib.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1aa14ad56981e64fa7d4972a812866fa22" prot="public" static="no">
+        <type>std::function&lt; bool(size_t offset, size_t length, <ref refid="classhttplib_1_1_data_sink" kindref="compound">DataSink</ref> &amp;sink)&gt;</type>
+        <definition>using httplib::ContentProvider = typedef std::function&lt;bool(size_t offset, size_t length, DataSink &amp;sink)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ContentProvider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="343" column="1" bodyfile="include/dpp/httplib.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a42a80bc400ea2d522021461ca6df2fb6" prot="public" static="no">
+        <type>std::function&lt; bool(size_t offset, <ref refid="classhttplib_1_1_data_sink" kindref="compound">DataSink</ref> &amp;sink)&gt;</type>
+        <definition>using httplib::ContentProviderWithoutLength = typedef std::function&lt;bool(size_t offset, DataSink &amp;sink)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ContentProviderWithoutLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="346" column="1" bodyfile="include/dpp/httplib.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a14689d530e42fbb0d8d34b1b5a28c580" prot="public" static="no">
+        <type>std::function&lt; bool(const char *data, size_t data_length, uint64_t offset, uint64_t total_length)&gt;</type>
+        <definition>using httplib::ContentReceiverWithProgress = typedef std::function&lt;bool(const char *data, size_t data_length, uint64_t offset, uint64_t total_length)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ContentReceiverWithProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="349" column="1" bodyfile="include/dpp/httplib.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" prot="public" static="no">
+        <type>std::function&lt; bool(const char *data, size_t data_length)&gt;</type>
+        <definition>using httplib::ContentReceiver = typedef std::function&lt;bool(const char *data, size_t data_length)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ContentReceiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="353" column="1" bodyfile="include/dpp/httplib.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a252743256dcf78b19df63572307303da" prot="public" static="no">
+        <type>std::function&lt; bool(const <ref refid="structhttplib_1_1_multipart_form_data" kindref="compound">MultipartFormData</ref> &amp;file)&gt;</type>
+        <definition>using httplib::MultipartContentHeader = typedef std::function&lt;bool(const MultipartFormData &amp;file)&gt;</definition>
+        <argsstring></argsstring>
+        <name>MultipartContentHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="356" column="1" bodyfile="include/dpp/httplib.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a47159528bf61f6bd74065b3fcec21697" prot="public" static="no">
+        <type>std::pair&lt; ssize_t, ssize_t &gt;</type>
+        <definition>using httplib::Range = typedef std::pair&lt;ssize_t, ssize_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="382" column="1" bodyfile="include/dpp/httplib.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a3395bd4008ea82b092537f3084dddf5e" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="namespacehttplib_1a47159528bf61f6bd74065b3fcec21697" kindref="member">Range</ref> &gt;</type>
+        <definition>using httplib::Ranges = typedef std::vector&lt;Range&gt;</definition>
+        <argsstring></argsstring>
+        <name>Ranges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="383" column="1" bodyfile="include/dpp/httplib.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a45a8a23366055bec6273922974cff156" prot="public" static="no">
+        <type>std::function&lt; void(const <ref refid="structhttplib_1_1_request" kindref="compound">Request</ref> &amp;, const <ref refid="structhttplib_1_1_response" kindref="compound">Response</ref> &amp;)&gt;</type>
+        <definition>using httplib::Logger = typedef std::function&lt;void(const Request &amp;, const Response &amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="585" column="1" bodyfile="include/dpp/httplib.h" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehttplib_1a02305f842f48963eb2ed425ee5d1655d" prot="public" static="no">
+        <type>std::function&lt; void(socket_t sock)&gt;</type>
+        <definition>using httplib::SocketOptions = typedef std::function&lt;void(socket_t sock)&gt;</definition>
+        <argsstring></argsstring>
+        <name>SocketOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="587" column="1" bodyfile="include/dpp/httplib.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacehttplib_1a01bfe9dba7c203f1bb22ec29e2f3ede8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::string, std::string &gt;</type>
+        <definition>std::pair&lt; std::string, std::string &gt; httplib::make_range_header</definition>
+        <argsstring>(Ranges ranges)</argsstring>
+        <name>make_range_header</name>
+        <param>
+          <type><ref refid="namespacehttplib_1a3395bd4008ea82b092537f3084dddf5e" kindref="member">Ranges</ref></type>
+          <declname>ranges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="2442" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="2442" bodyend="2453"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehttplib_1a6b202b4fd91bd8e6a10a83dba358bc02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::string, std::string &gt;</type>
+        <definition>std::pair&lt; std::string, std::string &gt; httplib::make_basic_authentication_header</definition>
+        <argsstring>(const std::string &amp;username, const std::string &amp;password, bool is_proxy=false)</argsstring>
+        <name>make_basic_authentication_header</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_proxy</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="2456" column="1" bodyfile="src/dpp/httplib.cpp" bodystart="2456" bodyend="2462"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehttplib_1a98075992689c300834040c9c963b7251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::string, std::string &gt;</type>
+        <definition>std::pair&lt; std::string, std::string &gt; httplib::make_bearer_token_authentication_header</definition>
+        <argsstring>(const std::string &amp;token, bool is_proxy=false)</argsstring>
+        <name>make_bearer_token_authentication_header</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_proxy</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="2465" column="1" bodyfile="src/dpp/httplib.cpp" bodystart="2465" bodyend="2470"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehttplib_1aeaecacf2684b63127fa7d26d8e1a622d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::default_socket_options</definition>
+        <argsstring>(socket_t sock)</argsstring>
+        <name>default_socket_options</name>
+        <param>
+          <type>socket_t</type>
+          <declname>sock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="589" column="13" bodyfile="include/dpp/httplib.h" bodystart="589" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehttplib_1a0ab1237a982cc180ebe624cabf756e90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; httplib::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Error &amp;obj)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehttplib_1a46ff5da925971ebebf2c5693e367f24a" kindref="member">Error</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="816" column="8" bodyfile="include/dpp/httplib.h" bodystart="816" bodyend="820"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/dpp/httplib.cpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['safe_5fduration_5fcast_0',['safe_duration_cast',['../namespacesafe__duration__cast.html',1,'']]]
+  ['detail_0',['detail',['../namespacehttplib_1_1detail.html',1,'httplib']]],
+  ['httplib_1',['httplib',['../namespacehttplib.html',1,'']]],
+  ['udl_2',['udl',['../namespacehttplib_1_1detail_1_1udl.html',1,'httplib::detail']]]
 ];

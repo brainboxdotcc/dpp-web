@@ -11,9 +11,10 @@ var searchData=
   ['add_5fpermission_8',['add_permission',['../classdpp_1_1slashcommand.html#a35086350bd76709e6befeed71e2598ab',1,'dpp::slashcommand']]],
   ['add_5fprefix_9',['add_prefix',['../classdpp_1_1commandhandler.html#a69ce2bb96adb1a658b3a29c37274f2bb',1,'dpp::commandhandler']]],
   ['add_5fselect_5foption_10',['add_select_option',['../classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243',1,'dpp::component']]],
-  ['application_5fcommand_5fcreate_5ft_11',['application_command_create_t',['../structdpp_1_1application__command__create__t.html#a73cad13a340866e75c24e913c93a0fbe',1,'dpp::application_command_create_t']]],
-  ['application_5fcommand_5fdelete_5ft_12',['application_command_delete_t',['../structdpp_1_1application__command__delete__t.html#ab63f70622d0adf539d38913ddad28dd3',1,'dpp::application_command_delete_t']]],
-  ['application_5fcommand_5fupdate_5ft_13',['application_command_update_t',['../structdpp_1_1application__command__update__t.html#ab1b3a755a92dabe7f150ae66cb4b649c',1,'dpp::application_command_update_t']]],
-  ['attachment_14',['attachment',['../structdpp_1_1attachment.html#ad10a254f41a718652557c7f6605f5ecd',1,'dpp::attachment::attachment()'],['../structdpp_1_1attachment.html#a296b4131050f58216a9291df6f900e54',1,'dpp::attachment::attachment(nlohmann::json *j)']]],
-  ['auditlog_15',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]]
+  ['append_5fquery_5fparams_11',['append_query_params',['../namespacehttplib_1_1detail.html#a618e7d1cb008277255ee00e53b1c48e6',1,'httplib::detail']]],
+  ['application_5fcommand_5fcreate_5ft_12',['application_command_create_t',['../structdpp_1_1application__command__create__t.html#a73cad13a340866e75c24e913c93a0fbe',1,'dpp::application_command_create_t']]],
+  ['application_5fcommand_5fdelete_5ft_13',['application_command_delete_t',['../structdpp_1_1application__command__delete__t.html#ab63f70622d0adf539d38913ddad28dd3',1,'dpp::application_command_delete_t']]],
+  ['application_5fcommand_5fupdate_5ft_14',['application_command_update_t',['../structdpp_1_1application__command__update__t.html#ab1b3a755a92dabe7f150ae66cb4b649c',1,'dpp::application_command_update_t']]],
+  ['attachment_15',['attachment',['../structdpp_1_1attachment.html#ad10a254f41a718652557c7f6605f5ecd',1,'dpp::attachment::attachment()'],['../structdpp_1_1attachment.html#a296b4131050f58216a9291df6f900e54',1,'dpp::attachment::attachment(nlohmann::json *j)']]],
+  ['auditlog_16',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]]
 ];

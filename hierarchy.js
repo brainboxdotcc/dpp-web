@@ -208,6 +208,7 @@ var hierarchy =
     [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
     [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ],
+    [ "dpp::http_connect_info", "structdpp_1_1http__connect__info.html", null ],
     [ "dpp::http_request", "classdpp_1_1http__request.html", null ],
     [ "dpp::http_request_completion_t", "structdpp_1_1http__request__completion__t.html", null ],
     [ "dpp::utility::iconhash", "structdpp_1_1utility_1_1iconhash.html", null ],
@@ -245,6 +246,7 @@ var hierarchy =
     ] ],
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
+    [ "dpp::multipart_content", "structdpp_1_1multipart__content.html", null ],
     [ "dpp::oneshot_timer", "classdpp_1_1oneshot__timer.html", null ],
     [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
     [ "OpusDecoder", "struct_opus_decoder.html", null ],
@@ -260,6 +262,7 @@ var hierarchy =
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
+      [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [
         [ "dpp::discord_client", "classdpp_1_1discord__client.html", null ],
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]

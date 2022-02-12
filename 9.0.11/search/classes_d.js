@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['reaction_0',['reaction',['../structdpp_1_1reaction.html',1,'dpp']]],
-  ['ready_1',['ready',['../classdpp_1_1events_1_1ready.html',1,'dpp::events']]],
-  ['ready_5ft_2',['ready_t',['../structdpp_1_1ready__t.html',1,'dpp']]],
-  ['request_5fqueue_3',['request_queue',['../classdpp_1_1request__queue.html',1,'dpp']]],
-  ['resolved_5fuser_4',['resolved_user',['../structdpp_1_1resolved__user.html',1,'dpp']]],
-  ['resumed_5',['resumed',['../classdpp_1_1events_1_1resumed.html',1,'dpp::events']]],
-  ['resumed_5ft_6',['resumed_t',['../structdpp_1_1resumed__t.html',1,'dpp']]],
-  ['role_7',['role',['../classdpp_1_1role.html',1,'dpp']]],
-  ['rtp_5fheader_8',['rtp_header',['../structdpp_1_1rtp__header.html',1,'dpp']]]
+  ['param_5finfo_0',['param_info',['../structdpp_1_1param__info.html',1,'dpp']]],
+  ['permission_5foverwrite_1',['permission_overwrite',['../structdpp_1_1permission__overwrite.html',1,'dpp']]],
+  ['presence_2',['presence',['../classdpp_1_1presence.html',1,'dpp']]],
+  ['presence_5fupdate_3',['presence_update',['../classdpp_1_1events_1_1presence__update.html',1,'dpp::events']]],
+  ['presence_5fupdate_5ft_4',['presence_update_t',['../structdpp_1_1presence__update__t.html',1,'dpp']]],
+  ['prune_5',['prune',['../structdpp_1_1prune.html',1,'dpp']]]
 ];

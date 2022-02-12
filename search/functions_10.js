@@ -95,7 +95,7 @@ var searchData=
   ['slashcommand_92',['slashcommand',['../classdpp_1_1slashcommand.html#add0654f80f31c52fbbf7d1541653a7b0',1,'dpp::slashcommand']]],
   ['snowflake_5fnot_5fnull_93',['snowflake_not_null',['../namespacedpp.html#ae3adf3a9d45170342096a41c8f8a73c6',1,'dpp']]],
   ['speak_94',['speak',['../classdpp_1_1discord__voice__client.html#ae5456ed35a1a964a607e2abc8bd59691',1,'dpp::discord_voice_client']]],
-  ['ssl_5fclient_95',['ssl_client',['../classdpp_1_1ssl__client.html#a67656fe3b8717d784ff0bdf02290a4f3',1,'dpp::ssl_client']]],
+  ['ssl_5fclient_95',['ssl_client',['../classdpp_1_1ssl__client.html#a5b4e115d8a21b01efe0678af9b2d03b7',1,'dpp::ssl_client']]],
   ['stage_5finstance_96',['stage_instance',['../structdpp_1_1stage__instance.html#a5ef48a926a1e604a0bcf8f53d27521c3',1,'dpp::stage_instance']]],
   ['stage_5finstance_5fcreate_97',['stage_instance_create',['../classdpp_1_1cluster.html#a5fe69055dc2ee16d08e693df11fec75a',1,'dpp::cluster']]],
   ['stage_5finstance_5fcreate_5ft_98',['stage_instance_create_t',['../structdpp_1_1stage__instance__create__t.html#ab1c85a535ca71b29978703fa68952227',1,'dpp::stage_instance_create_t']]],

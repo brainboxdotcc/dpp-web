@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1ssl__client.html',''); ini
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1ssl__client__inherit__graph.svg" width="323" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1ssl__client__inherit__graph.svg" width="406" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -135,9 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa5d5654ce0b631d07045088ef347418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf247ed0871e89e6a319c95841a315bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#abf247ed0871e89e6a319c95841a315bd">get_cipher</a> ()</td></tr>
 <tr class="separator:abf247ed0871e89e6a319c95841a315bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67656fe3b8717d784ff0bdf02290a4f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a67656fe3b8717d784ff0bdf02290a4f3">ssl_client</a> (const std::string &amp;_hostname, const std::string &amp;_port=&quot;443&quot;)</td></tr>
-<tr class="memdesc:a67656fe3b8717d784ff0bdf02290a4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a specified host and port. Throws std::runtime_error on fatal error.  <a href="classdpp_1_1ssl__client.html#a67656fe3b8717d784ff0bdf02290a4f3">More...</a><br /></td></tr>
-<tr class="separator:a67656fe3b8717d784ff0bdf02290a4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4e115d8a21b01efe0678af9b2d03b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a5b4e115d8a21b01efe0678af9b2d03b7">ssl_client</a> (const std::string &amp;_hostname, const std::string &amp;_port=&quot;443&quot;, bool plaintext_downgrade=false)</td></tr>
+<tr class="memdesc:a5b4e115d8a21b01efe0678af9b2d03b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a specified host and port. Throws std::runtime_error on fatal error.  <a href="classdpp_1_1ssl__client.html#a5b4e115d8a21b01efe0678af9b2d03b7">More...</a><br /></td></tr>
+<tr class="separator:a5b4e115d8a21b01efe0678af9b2d03b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d4e73c74413a5a79a3859615f913e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2">read_loop</a> ()</td></tr>
 <tr class="memdesc:a17d4e73c74413a5a79a3859615f913e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nonblocking I/O loop.  <a href="classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2">More...</a><br /></td></tr>
 <tr class="separator:a17d4e73c74413a5a79a3859615f913e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,13 +204,15 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8022a8002cfc6f394016546168ef4085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d">bytes_in</a></td></tr>
 <tr class="separator:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa735feca3545e156e0607c06d55288c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#aa735feca3545e156e0607c06d55288c4">plaintext</a></td></tr>
+<tr class="separator:aa735feca3545e156e0607c06d55288c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implements a simple non-blocking SSL stream client. </p>
 <p >Note that although the design is non-blocking the run() method will execute in an infinite loop until the socket disconnects. This is intended to be run within a std::thread. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a67656fe3b8717d784ff0bdf02290a4f3" name="a67656fe3b8717d784ff0bdf02290a4f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67656fe3b8717d784ff0bdf02290a4f3">&#9670;&nbsp;</a></span>ssl_client()</h2>
+<a id="a5b4e115d8a21b01efe0678af9b2d03b7" name="a5b4e115d8a21b01efe0678af9b2d03b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b4e115d8a21b01efe0678af9b2d03b7">&#9670;&nbsp;</a></span>ssl_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +227,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>_port</em> = <code>&quot;443&quot;</code>&#160;</td>
+          <td class="paramname"><em>_port</em> = <code>&quot;443&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>plaintext_downgrade</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -240,6 +248,7 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">_hostname</td><td>The hostname to connect to </td></tr>
     <tr><td class="paramname">_port</td><td>the Port number to connect to </td></tr>
+    <tr><td class="paramname">plaintext_downgrade</td><td>Set to true to connect using plaintext only, without initialising SSL. Note that no Discord endpoints will function when downgraded. This option is provided only for connection to non-Discord addresses such as within <a class="el" href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52" title="Make a HTTP(S) request. For use when wanting asnyncronous access to HTTP APIs outside of Discord.">dpp::cluster::request()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -305,7 +314,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Close SSL connection. </p>
 
-<p>Reimplemented in <a class="el" href="classdpp_1_1websocket__client.html#a3398642150ca79c8f266de83ee93aa30">dpp::websocket_client</a>.</p>
+<p>Reimplemented in <a class="el" href="classdpp_1_1https__client.html#ad7950ce811dc619ab4956275651e0637">dpp::https_client</a>, and <a class="el" href="classdpp_1_1websocket__client.html#a3398642150ca79c8f266de83ee93aa30">dpp::websocket_client</a>.</p>
 
 </div>
 </div>
@@ -340,7 +349,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classdpp_1_1websocket__client.html#a055feb8555795bd25c3f98997af962ba">dpp::websocket_client</a>.</p>
+<p>Reimplemented in <a class="el" href="classdpp_1_1https__client.html#a42616cd36716baeff8e8b086f70b365f">dpp::https_client</a>, and <a class="el" href="classdpp_1_1websocket__client.html#a055feb8555795bd25c3f98997af962ba">dpp::websocket_client</a>.</p>
 
 </div>
 </div>
@@ -430,7 +439,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classdpp_1_1websocket__client.html#a96a1c910426a6094a81f5bf26ce9119b">dpp::websocket_client</a>.</p>
+<p>Reimplemented in <a class="el" href="classdpp_1_1https__client.html#a5dd64c8f3adb03956bacbc30841954f9">dpp::https_client</a>, and <a class="el" href="classdpp_1_1websocket__client.html#a96a1c910426a6094a81f5bf26ce9119b">dpp::websocket_client</a>.</p>
 
 </div>
 </div>
@@ -505,7 +514,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Called every second </p>
 
-<p>Reimplemented in <a class="el" href="classdpp_1_1discord__client.html#a8e90fb79f5686c73a2024ed6ba704c6b">dpp::discord_client</a>, <a class="el" href="classdpp_1_1discord__voice__client.html#a79b878e8bec47a04cb0132b34fe1f6f9">dpp::discord_voice_client</a>, and <a class="el" href="classdpp_1_1websocket__client.html#a113d7064f2d7f61ac7246850b6cd66cb">dpp::websocket_client</a>.</p>
+<p>Reimplemented in <a class="el" href="classdpp_1_1discord__client.html#a8e90fb79f5686c73a2024ed6ba704c6b">dpp::discord_client</a>, <a class="el" href="classdpp_1_1discord__voice__client.html#a79b878e8bec47a04cb0132b34fe1f6f9">dpp::discord_voice_client</a>, <a class="el" href="classdpp_1_1https__client.html#aa6195f58a7a4805e09ec3e56179056fe">dpp::https_client</a>, and <a class="el" href="classdpp_1_1websocket__client.html#a113d7064f2d7f61ac7246850b6cd66cb">dpp::websocket_client</a>.</p>
 
 </div>
 </div>
@@ -818,6 +827,28 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Output buffer for sending to openssl </p>
+
+</div>
+</div>
+<a id="aa735feca3545e156e0607c06d55288c4" name="aa735feca3545e156e0607c06d55288c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa735feca3545e156e0607c06d55288c4">&#9670;&nbsp;</a></span>plaintext</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::ssl_client::plaintext</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

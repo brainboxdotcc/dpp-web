@@ -1,11 +1,16 @@
 var searchData=
 [
-  ['uptime_0',['uptime',['../classdpp_1_1cluster.html#af12b5b33ea156bde9977796858066a6b',1,'dpp::cluster::uptime()'],['../structdpp_1_1utility_1_1uptime.html#a2ab9e8edf1a6ac715d86e532c335eaf9',1,'dpp::utility::uptime::uptime()'],['../structdpp_1_1utility_1_1uptime.html#a4430115cf5a406ac9f6b4b9d3fa76f3d',1,'dpp::utility::uptime::uptime(time_t diff)']]],
-  ['uptime_1',['Uptime',['../classdpp_1_1_discord_client.html#a67337758833bd3809344939f889ed795',1,'dpp::DiscordClient::Uptime()'],['../classdpp_1_1_discord_voice_client.html#ad5996e0b097f583e3f2eee2648a649db',1,'dpp::DiscordVoiceClient::Uptime()']]],
-  ['url_5fencode_2',['url_encode',['../namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4',1,'dpp']]],
-  ['user_3',['user',['../classdpp_1_1user.html#a10ae5c579f6d60370d825e71fdff697b',1,'dpp::user']]],
-  ['user_5fget_4',['user_get',['../classdpp_1_1cluster.html#a73483dbeb0f1946dc18b1d0a5331b0d0',1,'dpp::cluster']]],
-  ['user_5fupdate_5ft_5',['user_update_t',['../structdpp_1_1user__update__t.html#a7571eaf81365a5980a4df0e588e85940',1,'dpp::user_update_t']]],
-  ['utf8len_6',['utf8len',['../namespacedpp_1_1utility.html#a915b95a9f5efa3bcde16540cd3a08d3b',1,'dpp::utility']]],
-  ['utf8substr_7',['utf8substr',['../namespacedpp_1_1utility.html#a61d1cf45d36c302d245c05508ce83f84',1,'dpp::utility']]]
+  ['taskqueue_0',['TaskQueue',['../classhttplib_1_1_task_queue.html#a86c1d663c1a733d703617737441cbdc0',1,'httplib::TaskQueue']]],
+  ['template_5fget_1',['template_get',['../classdpp_1_1cluster.html#a52366e37144b166c6a2c773e14992b21',1,'dpp::cluster']]],
+  ['threadpool_2',['ThreadPool',['../classhttplib_1_1_thread_pool.html#a322937261ee5818426a3f09caa8f37ec',1,'httplib::ThreadPool::ThreadPool(size_t n)'],['../classhttplib_1_1_thread_pool.html#aac78a365c5d7910e7367a83d21369ed2',1,'httplib::ThreadPool::ThreadPool(const ThreadPool &amp;)=delete']]],
+  ['timestampnotnull_3',['TimestampNotNull',['../namespacedpp.html#a1dc7a4ac1e824d9ce581a044ec76b3cf',1,'dpp']]],
+  ['to_5flower_4',['to_lower',['../namespacehttplib_1_1detail.html#ab4e9ff501e78d30711d3f03bf8ccf932',1,'httplib::detail']]],
+  ['to_5fmsecs_5',['to_msecs',['../structdpp_1_1utility_1_1uptime.html#aff6d3ddd12cb12ebaed33231a2cfff3a',1,'dpp::utility::uptime']]],
+  ['to_5fsecs_6',['to_secs',['../structdpp_1_1utility_1_1uptime.html#a370b15ab34fe91d13ce6739ca18a7906',1,'dpp::utility::uptime']]],
+  ['to_5fstring_7',['to_string',['../structdpp_1_1utility_1_1iconhash.html#aeba3e70afad0497f8e9aa1493704a77b',1,'dpp::utility::iconhash::to_string()'],['../structdpp_1_1utility_1_1uptime.html#aa4907af9819765cf8c97ac56b82c37b2',1,'dpp::utility::uptime::to_string()']]],
+  ['to_5futf8_8',['to_utf8',['../namespacehttplib_1_1detail.html#a011d617356300d12aeb93d2dda1560b9',1,'httplib::detail']]],
+  ['tokenize_9',['tokenize',['../namespacedpp.html#a981df68922716d97ba921fd2027c3513',1,'dpp']]],
+  ['trim_10',['trim',['../namespacehttplib_1_1detail.html#aaf2601752b770a3ad3c6fbfc74f9e4cb',1,'httplib::detail']]],
+  ['trim_5fcopy_11',['trim_copy',['../namespacehttplib_1_1detail.html#a43195f9bc4116e2472476caa1c0fc062',1,'httplib::detail']]],
+  ['typing_5fstart_5ft_12',['typing_start_t',['../structdpp_1_1typing__start__t.html#ae8109662e4ea8e165eda6b5794545509',1,'dpp::typing_start_t']]]
 ];

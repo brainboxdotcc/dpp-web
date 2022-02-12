@@ -12,7 +12,7 @@ var namespacedpp_1_1utility =
       [ "tf_short_datetime", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a71dc667709d06a38a90007af294c8f42", null ],
       [ "tf_short_time", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7aa9853ed46be939acd8aa01d0ee889afd", null ]
     ] ],
-    [ "avatar_size", "namespacedpp_1_1utility.html#ab1b9a9f3dbfb71cb8b8d223062e4cd62", null ],
+    [ "avatar_size", "namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc", null ],
     [ "bytes", "namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08", null ],
     [ "current_date_time", "namespacedpp_1_1utility.html#a1a9168eaaf347543e55e607858f24eb3", null ],
     [ "debug_dump", "namespacedpp_1_1utility.html#a02456e22a1d41893a9b321bf8ccaeec6", null ],
@@ -24,8 +24,9 @@ var namespacedpp_1_1utility =
     [ "rgb", "namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb", null ],
     [ "time_f", "namespacedpp_1_1utility.html#a1184092d62c7ab561cb3f60a92f71b67", null ],
     [ "timestamp", "namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5", null ],
+    [ "tokenize", "namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec", null ],
     [ "utf8len", "namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231", null ],
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
-    [ "validate", "namespacedpp_1_1utility.html#a56f2d7d280f78b086037c44e4536ea86", null ],
+    [ "validate", "namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad", null ],
     [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ]
 ];

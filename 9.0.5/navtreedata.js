@@ -49,7 +49,9 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]
@@ -66,16 +68,21 @@ var NAVTREEINDEX =
 "classdpp_1_1guild__member.html#a1136b98c677fbbcbcc1291857cfe53ec",
 "classdpp_1_1role.html#a42f8b747f7a04cd1022ce3bc42e6a05b",
 "classdpp_1_1voiceconn.html#a7b0b033f371d814cf04e09ac7cf08ac1",
-"functions_n.html",
-"namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fafc77a3132f5a3f615ada9a19c486dec9",
-"namespacedpp.html#ace1318b24526febab72157cdd8b7b468a52e7662e76e7375fdb2b2df4d3780d70",
-"structdetail_1_1chrono__formatter.html#a8d9a34c1a10308e6f81e24e8f3328086",
-"structdpp_1_1command__info__t.html#a17285092877891df2580305980354f4d",
-"structdpp_1_1gateway.html#ada9225b2a8f91500e7b5d1107a0acd46",
-"structdpp_1_1integration__update__t.html#a990a83a76b94bdf823d04708b3b3e050",
-"structdpp_1_1message__delete__t.html#a9bbdf2268285285714ef5635d1ef4c04",
-"structdpp_1_1stage__instance__create__t.html#a32754597d464b1cdecf9b4f70ddb3fca",
-"structdpp_1_1utility_1_1uptime.html#adf60583f58dfe5cff52196b44c29f012"
+"classhttplib_1_1_client.html#a7bb8cf9f88dfcdb3b0e424f83e1d54dc",
+"classhttplib_1_1_client_impl.html#a8be6427e01060d8cfb785361576cf532",
+"classhttplib_1_1_server.html#a5fabd1ab73b311873c2e6d555d8ed6f8",
+"classhttplib_1_1detail_1_1compressor.html#a9d57e1a4cb9351bbb21ef1ba3ea9730d",
+"namespacedpp.html#a13c4d4e6238396245b349e6a637897e0",
+"namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa395413623895eaac5998ae8b4dc2031f",
+"namespacehttplib_1_1detail.html#a2d74473be3feaf34ea8f25d4e782dc1aa6adf97f83acf6453d4a6a4b1070f3754",
+"structdetail_1_1chrono__formatter.html#a8e9949f4ee62e704fd31b3c94bac603c",
+"structdpp_1_1command__info__t.html#ab5d9fb4cdeaf92805125f15a06459fe2",
+"structdpp_1_1guild__ban__add__t.html",
+"structdpp_1_1integration__update__t.html#ab7db601d6ece4dc115e4a4fce98eba94",
+"structdpp_1_1message__reaction__add__t.html",
+"structdpp_1_1stage__instance__create__t.html#a357873be4dd30eef7928ae5f7c13e7db",
+"structdpp_1_1utility_1_1uptime.html#aff6d3ddd12cb12ebaed33231a2cfff3a",
+"structhttplib_1_1_response.html#aed3a526fe753e1c86ca3a848ccb26564"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

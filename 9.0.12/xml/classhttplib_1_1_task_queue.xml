@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classhttplib_1_1_task_queue" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>httplib::TaskQueue</compoundname>
+    <derivedcompoundref refid="classhttplib_1_1_thread_pool" prot="public" virt="non-virtual">httplib::ThreadPool</derivedcompoundref>
+    <includes local="no">httplib.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhttplib_1_1_task_queue_1a86c1d663c1a733d703617737441cbdc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>httplib::TaskQueue::TaskQueue</definition>
+        <argsstring>()=default</argsstring>
+        <name>TaskQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="507" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_task_queue_1ac5c93354376774b4082bb40cef9ae63d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual httplib::TaskQueue::~TaskQueue</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TaskQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="508" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_task_queue_1aa58eb792edcb3e4937e6846ccb6fe904" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void httplib::TaskQueue::enqueue</definition>
+        <argsstring>(std::function&lt; void()&gt; fn)=0</argsstring>
+        <name>enqueue</name>
+        <reimplementedby refid="classhttplib_1_1_thread_pool_1a0a1653126f41111579d17adc245b3ad1">enqueue</reimplementedby>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="510" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_task_queue_1ae9f356217bd1ed1797426001070b316d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void httplib::TaskQueue::shutdown</definition>
+        <argsstring>()=0</argsstring>
+        <name>shutdown</name>
+        <reimplementedby refid="classhttplib_1_1_thread_pool_1a9884cbaef9ed5f92152b82d2c93340ea">shutdown</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="511" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_task_queue_1a219e7364388477343f373c10db45333e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void httplib::TaskQueue::on_idle</definition>
+        <argsstring>()</argsstring>
+        <name>on_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="513" column="16" bodyfile="include/dpp/httplib.h" bodystart="513" bodyend="513"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>httplib::TaskQueue</label>
+        <link refid="classhttplib_1_1_task_queue"/>
+      </node>
+      <node id="2">
+        <label>httplib::ThreadPool</label>
+        <link refid="classhttplib_1_1_thread_pool"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/dpp/httplib.h" line="505" column="1" bodyfile="include/dpp/httplib.h" bodystart="505" bodyend="514"/>
+    <listofallmembers>
+      <member refid="classhttplib_1_1_task_queue_1aa58eb792edcb3e4937e6846ccb6fe904" prot="public" virt="pure-virtual"><scope>httplib::TaskQueue</scope><name>enqueue</name></member>
+      <member refid="classhttplib_1_1_task_queue_1a219e7364388477343f373c10db45333e" prot="public" virt="virtual"><scope>httplib::TaskQueue</scope><name>on_idle</name></member>
+      <member refid="classhttplib_1_1_task_queue_1ae9f356217bd1ed1797426001070b316d" prot="public" virt="pure-virtual"><scope>httplib::TaskQueue</scope><name>shutdown</name></member>
+      <member refid="classhttplib_1_1_task_queue_1a86c1d663c1a733d703617737441cbdc0" prot="public" virt="non-virtual"><scope>httplib::TaskQueue</scope><name>TaskQueue</name></member>
+      <member refid="classhttplib_1_1_task_queue_1ac5c93354376774b4082bb40cef9ae63d" prot="public" virt="virtual"><scope>httplib::TaskQueue</scope><name>~TaskQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

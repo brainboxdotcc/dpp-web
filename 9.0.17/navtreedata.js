@@ -35,7 +35,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
-        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
@@ -51,6 +51,7 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
@@ -71,19 +72,24 @@ var NAVTREEINDEX =
 "classdpp_1_1role__collector.html#a711325fa9e73adc00e7fd470a666c59b",
 "classdpp_1_1thread__collector.html#aafd2c5685c5f06f974a7a9761b077e8b",
 "classdpp_1_1voicestate.html#adda1e3192a8dbe103f5b5c29b29ca74b",
-"functions_vars_t.html",
-"namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faf68496d326e48c4e8fb8396b56711650",
-"namespacedpp.html#aabc378142329f7d4fe1ac82c81027114",
-"namespacemembers_eval_p.html",
-"structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90",
-"structdpp_1_1command__option.html",
-"structdpp_1_1event__dispatch__t.html",
-"structdpp_1_1guild__members__chunk__t.html#aa40accc015feb69e1ef124daba2ecc2a",
-"structdpp_1_1interaction__create__t.html#a441c95afa84bb0bd08cba59ae4a41035",
-"structdpp_1_1message_1_1allowed__ref.html#ac1e1a5d7067854aefbf3033c7f0177fb",
-"structdpp_1_1ready__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1sticker.html#a2c42ec44209ccf454785b796250caa7f",
-"structdpp_1_1utility_1_1iconhash.html#aeba3e70afad0497f8e9aa1493704a77b"
+"classhttplib_1_1_client.html#ad4b733b5e39342fd14a263301eb2fd33",
+"classhttplib_1_1_client_impl.html#acb1d2a69c011f121430f818971316c4d",
+"classhttplib_1_1_server.html#ad56965be97a376db7f7c65429739accb",
+"components.html",
+"namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701",
+"namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede",
+"namespacedpp.html#ae1540b4171f114c35864c752ef00f94faddc9e2ea6cfa8e6a5163742056a7ccdf",
+"namespacemembers_eval_v.html",
+"structdpp_1_1attachment.html",
+"structdpp_1_1command__info__t.html#ab5d9fb4cdeaf92805125f15a06459fe2",
+"structdpp_1_1error__info.html#aa2fb364975f2c201cec668db8090d845",
+"structdpp_1_1guild__member__update__t.html#a923dc93f73d3a1b34b1ac1adfd8d29fe",
+"structdpp_1_1integration__update__t.html#a5afbcd36109734ad0fca14ec848b73b7",
+"structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7",
+"structdpp_1_1reaction.html#a7809f620d77f3da97ba34b65fd6b5a5d",
+"structdpp_1_1stage__instance__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
+"structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e",
+"structhttplib_1_1_multipart_form_data.html#a6e63b2db66d71724bec819265f56c7d6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

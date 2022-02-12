@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classhttplib_1_1_content_reader" kind="class" language="C++" prot="public">
+    <compoundname>httplib::ContentReader</compoundname>
+    <includes local="no">httplib.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classhttplib_1_1_content_reader_1abc8da0da3f914be4fb5cc3bb67d8c443" prot="public" static="no">
+        <type>std::function&lt; bool(<ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref> receiver)&gt;</type>
+        <definition>using httplib::ContentReader::Reader =  std::function&lt;bool(ContentReceiver receiver)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Reader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="362" column="3" bodyfile="include/dpp/httplib.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhttplib_1_1_content_reader_1a6239248caa23f835547b77fded674db6" prot="public" static="no">
+        <type>std::function&lt; bool(<ref refid="namespacehttplib_1a252743256dcf78b19df63572307303da" kindref="member">MultipartContentHeader</ref> header, <ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref> receiver)&gt;</type>
+        <definition>using httplib::ContentReader::MultipartReader =  std::function&lt;bool(MultipartContentHeader header, ContentReceiver receiver)&gt;</definition>
+        <argsstring></argsstring>
+        <name>MultipartReader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="363" column="3" bodyfile="include/dpp/httplib.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classhttplib_1_1_content_reader_1a1fb51ae3a8bc275f1ef81ab01e85d86b" prot="public" static="no" mutable="no">
+        <type><ref refid="classhttplib_1_1_content_reader_1abc8da0da3f914be4fb5cc3bb67d8c443" kindref="member">Reader</ref></type>
+        <definition>Reader httplib::ContentReader::reader_</definition>
+        <argsstring></argsstring>
+        <name>reader_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="379" column="10" bodyfile="include/dpp/httplib.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1_content_reader_1af47ff64635539ffefa4c0ffb46b0e140" prot="public" static="no" mutable="no">
+        <type><ref refid="classhttplib_1_1_content_reader_1a6239248caa23f835547b77fded674db6" kindref="member">MultipartReader</ref></type>
+        <definition>MultipartReader httplib::ContentReader::multipart_reader_</definition>
+        <argsstring></argsstring>
+        <name>multipart_reader_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="380" column="19" bodyfile="include/dpp/httplib.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhttplib_1_1_content_reader_1ad236fd49b84c9af66001deebe9d41e55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>httplib::ContentReader::ContentReader</definition>
+        <argsstring>(Reader reader, MultipartReader multipart_reader)</argsstring>
+        <name>ContentReader</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_content_reader_1abc8da0da3f914be4fb5cc3bb67d8c443" kindref="member">Reader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type><ref refid="classhttplib_1_1_content_reader_1a6239248caa23f835547b77fded674db6" kindref="member">MultipartReader</ref></type>
+          <declname>multipart_reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="366" column="3" bodyfile="include/dpp/httplib.h" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_content_reader_1a596c6d863a6de135905120f180490363" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::ContentReader::operator()</definition>
+        <argsstring>(MultipartContentHeader header, ContentReceiver receiver) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="namespacehttplib_1a252743256dcf78b19df63572307303da" kindref="member">MultipartContentHeader</ref></type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
+          <declname>receiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="370" column="8" bodyfile="include/dpp/httplib.h" bodystart="370" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_content_reader_1aa6f3ec4f7b8669f1f1249a5fba969d5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::ContentReader::operator()</definition>
+        <argsstring>(ContentReceiver receiver) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="namespacehttplib_1ad7425937de0bafb891b0b7cae87dc368" kindref="member">ContentReceiver</ref></type>
+          <declname>receiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="375" column="8" bodyfile="include/dpp/httplib.h" bodystart="375" bodyend="377"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>httplib::ContentReader</label>
+        <link refid="classhttplib_1_1_content_reader"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>reader_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>multipart_reader_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>function&lt; bool(ContentReceiver receiver)&gt;</label>
+      </node>
+      <node id="3">
+        <label>function&lt; bool(MultipartContentHeader header, ContentReceiver receiver)&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/httplib.h" line="360" column="1" bodyfile="include/dpp/httplib.h" bodystart="360" bodyend="381"/>
+    <listofallmembers>
+      <member refid="classhttplib_1_1_content_reader_1ad236fd49b84c9af66001deebe9d41e55" prot="public" virt="non-virtual"><scope>httplib::ContentReader</scope><name>ContentReader</name></member>
+      <member refid="classhttplib_1_1_content_reader_1af47ff64635539ffefa4c0ffb46b0e140" prot="public" virt="non-virtual"><scope>httplib::ContentReader</scope><name>multipart_reader_</name></member>
+      <member refid="classhttplib_1_1_content_reader_1a6239248caa23f835547b77fded674db6" prot="public" virt="non-virtual"><scope>httplib::ContentReader</scope><name>MultipartReader</name></member>
+      <member refid="classhttplib_1_1_content_reader_1a596c6d863a6de135905120f180490363" prot="public" virt="non-virtual"><scope>httplib::ContentReader</scope><name>operator()</name></member>
+      <member refid="classhttplib_1_1_content_reader_1aa6f3ec4f7b8669f1f1249a5fba969d5a" prot="public" virt="non-virtual"><scope>httplib::ContentReader</scope><name>operator()</name></member>
+      <member refid="classhttplib_1_1_content_reader_1abc8da0da3f914be4fb5cc3bb67d8c443" prot="public" virt="non-virtual"><scope>httplib::ContentReader</scope><name>Reader</name></member>
+      <member refid="classhttplib_1_1_content_reader_1a1fb51ae3a8bc275f1ef81ab01e85d86b" prot="public" virt="non-virtual"><scope>httplib::ContentReader</scope><name>reader_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

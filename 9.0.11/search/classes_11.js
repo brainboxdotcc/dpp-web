@@ -1,18 +1,7 @@
 var searchData=
 [
-  ['voice_5fbuffer_5fsend_5ft_0',['voice_buffer_send_t',['../structdpp_1_1voice__buffer__send__t.html',1,'dpp']]],
-  ['voice_5fclient_5fdisconnect_5ft_1',['voice_client_disconnect_t',['../structdpp_1_1voice__client__disconnect__t.html',1,'dpp']]],
-  ['voice_5fclient_5fspeaking_5ft_2',['voice_client_speaking_t',['../structdpp_1_1voice__client__speaking__t.html',1,'dpp']]],
-  ['voice_5fout_5fpacket_3',['voice_out_packet',['../structdpp_1_1voice__out__packet.html',1,'dpp']]],
-  ['voice_5fready_5ft_4',['voice_ready_t',['../structdpp_1_1voice__ready__t.html',1,'dpp']]],
-  ['voice_5freceive_5ft_5',['voice_receive_t',['../structdpp_1_1voice__receive__t.html',1,'dpp']]],
-  ['voice_5fserver_5fupdate_6',['voice_server_update',['../classdpp_1_1events_1_1voice__server__update.html',1,'dpp::events']]],
-  ['voice_5fserver_5fupdate_5ft_7',['voice_server_update_t',['../structdpp_1_1voice__server__update__t.html',1,'dpp']]],
-  ['voice_5fstate_5fupdate_8',['voice_state_update',['../classdpp_1_1events_1_1voice__state__update.html',1,'dpp::events']]],
-  ['voice_5fstate_5fupdate_5ft_9',['voice_state_update_t',['../structdpp_1_1voice__state__update__t.html',1,'dpp']]],
-  ['voice_5ftrack_5fmarker_5ft_10',['voice_track_marker_t',['../structdpp_1_1voice__track__marker__t.html',1,'dpp']]],
-  ['voice_5fuser_5ftalking_5ft_11',['voice_user_talking_t',['../structdpp_1_1voice__user__talking__t.html',1,'dpp']]],
-  ['voiceconn_12',['voiceconn',['../classdpp_1_1voiceconn.html',1,'dpp']]],
-  ['voiceregion_13',['voiceregion',['../classdpp_1_1voiceregion.html',1,'dpp']]],
-  ['voicestate_14',['voicestate',['../classdpp_1_1voicestate.html',1,'dpp']]]
+  ['uptime_0',['uptime',['../structdpp_1_1utility_1_1uptime.html',1,'dpp::utility']]],
+  ['user_1',['user',['../classdpp_1_1user.html',1,'dpp']]],
+  ['user_5fupdate_2',['user_update',['../classdpp_1_1events_1_1user__update.html',1,'dpp::events']]],
+  ['user_5fupdate_5ft_3',['user_update_t',['../structdpp_1_1user__update__t.html',1,'dpp']]]
 ];

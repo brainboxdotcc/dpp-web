@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classhttplib_1_1_stream" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>httplib::Stream</compoundname>
+    <derivedcompoundref refid="classhttplib_1_1detail_1_1_buffer_stream" prot="public" virt="non-virtual">httplib::detail::BufferStream</derivedcompoundref>
+    <derivedcompoundref refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream" prot="public" virt="non-virtual">httplib::detail::SSLSocketStream</derivedcompoundref>
+    <derivedcompoundref refid="classhttplib_1_1detail_1_1_socket_stream" prot="public" virt="non-virtual">httplib::detail::SocketStream</derivedcompoundref>
+    <includes local="no">httplib.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhttplib_1_1_stream_1ad2ab38ab48ccc866169ae0f40f018702" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual httplib::Stream::~Stream</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="479" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1af0a78453c54817f8fc0de91f8b02c12c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool httplib::Stream::is_readable</definition>
+        <argsstring>() const =0</argsstring>
+        <name>is_readable</name>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_socket_stream_1a54ef15b31ba398e33086574d412fb316">is_readable</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a45dc762510ad2df66d6c01746fa70872">is_readable</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_buffer_stream_1adb3eaa4fd33ef7d1d538bf014c30fc0a">is_readable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="481" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1ab10c55e43ccf0146c4d142e53a58a831" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool httplib::Stream::is_writable</definition>
+        <argsstring>() const =0</argsstring>
+        <name>is_writable</name>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_socket_stream_1aa5bf41c972f307030f34de1c7dbb25d9">is_writable</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a281d16b8ab06166d6aff4145fd13bbd3">is_writable</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_buffer_stream_1a7b8c6924fbb6bb51e7e21e364b62c7fb">is_writable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="482" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a58adfc27d0672f6a2f293168757861b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>ssize_t</type>
+        <definition>virtual ssize_t httplib::Stream::read</definition>
+        <argsstring>(char *ptr, size_t size)=0</argsstring>
+        <name>read</name>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_socket_stream_1a7fff1278536273efeb9c0e9adad57d62">read</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a9520188ba7cb8210c356f0914ab80721">read</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_buffer_stream_1af50ac3bf9b3b3dfd761c89f0f3f71578">read</reimplementedby>
+        <param>
+          <type>char *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="484" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a4b94583ae90065c9e4e33a7752d9976f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>ssize_t</type>
+        <definition>virtual ssize_t httplib::Stream::write</definition>
+        <argsstring>(const char *ptr, size_t size)=0</argsstring>
+        <name>write</name>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_socket_stream_1a5758d225d89517db2a637fac308f041a">write</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a7e6cb30702f7f0d784f9122f4dffb2a6">write</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_buffer_stream_1a60fc092c9899b822fe9defcf2ce4436d">write</reimplementedby>
+        <param>
+          <type>const char *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="485" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a69c4c8a58c9e943fea94f01e6b7dd5ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void httplib::Stream::get_remote_ip_and_port</definition>
+        <argsstring>(std::string &amp;ip, int &amp;port) const =0</argsstring>
+        <name>get_remote_ip_and_port</name>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_socket_stream_1a10edcbf718672c3be447eaffa5bb25df">get_remote_ip_and_port</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a35eeb6f96b9ca6c25068917124d36357">get_remote_ip_and_port</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_buffer_stream_1a537de183beb3358774c4d84f90275603">get_remote_ip_and_port</reimplementedby>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="486" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1ad2ea435dea23ee5f89b0792f4cb2d742" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>socket_t</type>
+        <definition>virtual socket_t httplib::Stream::socket</definition>
+        <argsstring>() const =0</argsstring>
+        <name>socket</name>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_socket_stream_1a1de284778b5558fbd7be59632bbaa85e">socket</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream_1a38a7dd06242a297af3c008551c298b69">socket</reimplementedby>
+        <reimplementedby refid="classhttplib_1_1detail_1_1_buffer_stream_1ac6cff4eeae8387ef99863719550c6ef0">socket</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="487" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a9892f60a65f59412ace397b7b6c4c93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::Stream::write_format</definition>
+        <argsstring>(const char *fmt, const Args &amp;...args)</argsstring>
+        <name>write_format</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>const Args &amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="490" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="2659" bodyend="2690"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a1f8218941e7dac2dd5795e89e6e9607f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::Stream::write</definition>
+        <argsstring>(const char *ptr)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="491" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="2650" bodyend="2652"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1_stream_1a81b7ddb3a4c73f8e2fe1b3887f7346c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t httplib::Stream::write</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httplib.h" line="492" column="11" bodyfile="src/dpp/httplib.cpp" bodystart="2654" bodyend="2656"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>httplib::Stream</label>
+        <link refid="classhttplib_1_1_stream"/>
+      </node>
+      <node id="2">
+        <label>httplib::detail::BufferStream</label>
+        <link refid="classhttplib_1_1detail_1_1_buffer_stream"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>httplib::detail::SSLSocketStream</label>
+        <link refid="classhttplib_1_1detail_1_1_s_s_l_socket_stream"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>httplib::detail::SocketStream</label>
+        <link refid="classhttplib_1_1detail_1_1_socket_stream"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/dpp/httplib.h" line="477" column="1" bodyfile="include/dpp/httplib.h" bodystart="477" bodyend="493"/>
+    <listofallmembers>
+      <member refid="classhttplib_1_1_stream_1a69c4c8a58c9e943fea94f01e6b7dd5ca" prot="public" virt="pure-virtual"><scope>httplib::Stream</scope><name>get_remote_ip_and_port</name></member>
+      <member refid="classhttplib_1_1_stream_1af0a78453c54817f8fc0de91f8b02c12c" prot="public" virt="pure-virtual"><scope>httplib::Stream</scope><name>is_readable</name></member>
+      <member refid="classhttplib_1_1_stream_1ab10c55e43ccf0146c4d142e53a58a831" prot="public" virt="pure-virtual"><scope>httplib::Stream</scope><name>is_writable</name></member>
+      <member refid="classhttplib_1_1_stream_1a58adfc27d0672f6a2f293168757861b2" prot="public" virt="pure-virtual"><scope>httplib::Stream</scope><name>read</name></member>
+      <member refid="classhttplib_1_1_stream_1ad2ea435dea23ee5f89b0792f4cb2d742" prot="public" virt="pure-virtual"><scope>httplib::Stream</scope><name>socket</name></member>
+      <member refid="classhttplib_1_1_stream_1a4b94583ae90065c9e4e33a7752d9976f" prot="public" virt="pure-virtual"><scope>httplib::Stream</scope><name>write</name></member>
+      <member refid="classhttplib_1_1_stream_1a1f8218941e7dac2dd5795e89e6e9607f" prot="public" virt="non-virtual"><scope>httplib::Stream</scope><name>write</name></member>
+      <member refid="classhttplib_1_1_stream_1a81b7ddb3a4c73f8e2fe1b3887f7346c9" prot="public" virt="non-virtual"><scope>httplib::Stream</scope><name>write</name></member>
+      <member refid="classhttplib_1_1_stream_1a9892f60a65f59412ace397b7b6c4c93b" prot="public" virt="non-virtual"><scope>httplib::Stream</scope><name>write_format</name></member>
+      <member refid="classhttplib_1_1_stream_1ad2ab38ab48ccc866169ae0f40f018702" prot="public" virt="virtual"><scope>httplib::Stream</scope><name>~Stream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

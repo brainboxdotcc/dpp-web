@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classhttplib_1_1detail_1_1stream__line__reader" kind="class" language="C++" prot="public">
+    <compoundname>httplib::detail::stream_line_reader</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1stream__line__reader_1a9bac9c2e59ee5c4db690f0248d998fc5" prot="private" static="no" mutable="no">
+        <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+        <definition>Stream&amp; httplib::detail::stream_line_reader::strm_</definition>
+        <argsstring></argsstring>
+        <name>strm_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="377" column="10" bodyfile="src/dpp/httplib.cpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1stream__line__reader_1ac2ff09c3c3e15f9011692f9a6477fc61" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* httplib::detail::stream_line_reader::fixed_buffer_</definition>
+        <argsstring></argsstring>
+        <name>fixed_buffer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="378" column="8" bodyfile="src/dpp/httplib.cpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1stream__line__reader_1ab8b323d46de054a35d90fbe8eece7d99" prot="private" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t httplib::detail::stream_line_reader::fixed_buffer_size_</definition>
+        <argsstring></argsstring>
+        <name>fixed_buffer_size_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="379" column="16" bodyfile="src/dpp/httplib.cpp" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1stream__line__reader_1afd79cba0f27f60c555779b2213e63fd4" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t httplib::detail::stream_line_reader::fixed_buffer_used_size_</definition>
+        <argsstring></argsstring>
+        <name>fixed_buffer_used_size_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="380" column="10" bodyfile="src/dpp/httplib.cpp" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhttplib_1_1detail_1_1stream__line__reader_1ae66d1d26ea37c7c4610552a721054dc8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string httplib::detail::stream_line_reader::glowable_buffer_</definition>
+        <argsstring></argsstring>
+        <name>glowable_buffer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="381" column="15" bodyfile="src/dpp/httplib.cpp" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1stream__line__reader_1a0dc4483bce6fd367b08a2ed96e3f048b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>httplib::detail::stream_line_reader::stream_line_reader</definition>
+        <argsstring>(Stream &amp;strm, char *fixed_buffer, size_t fixed_buffer_size)</argsstring>
+        <name>stream_line_reader</name>
+        <param>
+          <type><ref refid="classhttplib_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>fixed_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>fixed_buffer_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="312" column="3" bodyfile="src/dpp/httplib.cpp" bodystart="312" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1stream__line__reader_1ac1ea873b6559ff411cb777d2bbdba4cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * httplib::detail::stream_line_reader::ptr</definition>
+        <argsstring>() const</argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="316" column="14" bodyfile="src/dpp/httplib.cpp" bodystart="316" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1stream__line__reader_1abf2e2d85e7411c8af6e84109029b4d6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t httplib::detail::stream_line_reader::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="324" column="10" bodyfile="src/dpp/httplib.cpp" bodystart="324" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1stream__line__reader_1aa0776295bbb7bd734a00dd6ffc281c31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::detail::stream_line_reader::end_with_crlf</definition>
+        <argsstring>() const</argsstring>
+        <name>end_with_crlf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="332" column="8" bodyfile="src/dpp/httplib.cpp" bodystart="332" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1stream__line__reader_1a39b395742e14cc015a448f6ea4143d44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool httplib::detail::stream_line_reader::getline</definition>
+        <argsstring>()</argsstring>
+        <name>getline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="337" column="8" bodyfile="src/dpp/httplib.cpp" bodystart="337" bodyend="361"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhttplib_1_1detail_1_1stream__line__reader_1a983947ba51e1523ddd195dddfdd9bd26" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void httplib::detail::stream_line_reader::append</definition>
+        <argsstring>(char c)</argsstring>
+        <name>append</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/httplib.cpp" line="364" column="8" bodyfile="src/dpp/httplib.cpp" bodystart="364" bodyend="375"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/dpp/httplib.cpp" line="310" column="1" bodyfile="src/dpp/httplib.cpp" bodystart="310" bodyend="382"/>
+    <listofallmembers>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1a983947ba51e1523ddd195dddfdd9bd26" prot="private" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>append</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1aa0776295bbb7bd734a00dd6ffc281c31" prot="public" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>end_with_crlf</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1ac2ff09c3c3e15f9011692f9a6477fc61" prot="private" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>fixed_buffer_</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1ab8b323d46de054a35d90fbe8eece7d99" prot="private" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>fixed_buffer_size_</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1afd79cba0f27f60c555779b2213e63fd4" prot="private" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>fixed_buffer_used_size_</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1a39b395742e14cc015a448f6ea4143d44" prot="public" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>getline</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1ae66d1d26ea37c7c4610552a721054dc8" prot="private" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>glowable_buffer_</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1ac1ea873b6559ff411cb777d2bbdba4cc" prot="public" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>ptr</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1abf2e2d85e7411c8af6e84109029b4d6e" prot="public" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>size</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1a0dc4483bce6fd367b08a2ed96e3f048b" prot="public" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>stream_line_reader</name></member>
+      <member refid="classhttplib_1_1detail_1_1stream__line__reader_1a9bac9c2e59ee5c4db690f0248d998fc5" prot="private" virt="non-virtual"><scope>httplib::detail::stream_line_reader</scope><name>strm_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

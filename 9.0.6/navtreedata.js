@@ -51,6 +51,7 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
@@ -68,16 +69,21 @@ var NAVTREEINDEX =
 "classdpp_1_1guild.html#af9f1c71e0d491f2b34079888cadc9dcf",
 "classdpp_1_1role.html#a0be98542c2299aa41829d69bf348b54d",
 "classdpp_1_1user.html#ae9fecaa47d8ba5330c4cdda978ffe267",
-"functions_func_g.html",
-"namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa4ffb9d1a4e882b865dbde6f7b2c8f11b",
-"namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a",
-"structdetail_1_1chrono__formatter.html#a40ca3e085945aa66a6e2b499d4ef043b",
-"structdpp_1_1channel__pins__update__t.html#a91754873add345d5d4b3e12110394e23",
-"structdpp_1_1error__info.html",
-"structdpp_1_1integration__app.html#abe2f733166b76c0006eb124a90de10a6",
-"structdpp_1_1message__create__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1select__option.html#a87080e97f389b83a93c43198a1380f7b",
-"structdpp_1_1utility_1_1iconhash.html#a185b30a583970f0ba298ab0429e29d91"
+"classhttplib_1_1_client.html#a52e2eb9bfd98df07a3451f95c84518b9",
+"classhttplib_1_1_client_impl.html#a7beebef0adf8099f77b547cee5e50dd3",
+"classhttplib_1_1_server.html#a3fcd849f27f63fec7f62a6d8cc7d8435",
+"classhttplib_1_1detail_1_1_socket_stream.html#a47ee2245a68f78d1331c429d1b8cff14",
+"namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d",
+"namespacedpp.html#a83479ddaa45166def7719d5511b09d02a34942bb9774f88000998c9f0c62b1294",
+"namespacehttplib.html#a6fb30cf4bb44485bee38481e46ab8dc5",
+"structdetail_1_1chrono__formatter.html#a4e15d72aeac5faa85b21fbf66e42d8df",
+"structdpp_1_1channel__update__t.html",
+"structdpp_1_1error__info.html#abfe93b65ec981b72d3a05a60f03c4834",
+"structdpp_1_1integration__create__t.html",
+"structdpp_1_1message__create__t.html#ac92030b9e82742ab832f9a2e9d6cfc00",
+"structdpp_1_1select__option.html#a9b69bce92e58e606f37964d60c99c799",
+"structdpp_1_1utility_1_1iconhash.html#a9cc13a59cf1049a84cea6ee3405bd4ea",
+"structhttplib_1_1_response.html#a53a110a44d18a0d44d917ae3da225080"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
