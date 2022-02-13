@@ -13,6 +13,7 @@ var classdpp_1_1invite =
     [ "inviter_id", "classdpp_1_1invite.html#a6142074754432a855a7e37d731a52f88", null ],
     [ "max_age", "classdpp_1_1invite.html#af48b1a919db49531f09a01f8e8115f64", null ],
     [ "max_uses", "classdpp_1_1invite.html#a942cafe78963747660ed5309f6747787", null ],
+    [ "stage", "classdpp_1_1invite.html#a95bda6b60159f20163f6953806e06d08", null ],
     [ "target_user_id", "classdpp_1_1invite.html#ad9a3073a99b276032dce0e850b21a955", null ],
     [ "target_user_type", "classdpp_1_1invite.html#aaaf04b46e869c2f365051c81fd06dcf2", null ],
     [ "temporary", "classdpp_1_1invite.html#a3cbbaea6f39490617d8e6b2e452a4db5", null ],
