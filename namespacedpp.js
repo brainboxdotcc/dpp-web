@@ -369,7 +369,8 @@ var namespacedpp =
       [ "co_channel", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a96f8ffcbd6b293e75a0500d729fc9b31", null ],
       [ "co_role", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a4476d79df02a4909cd7931d5a7e5f0ac", null ],
       [ "co_mentionable", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a6104d8b3d8c608855ccf8eab2d60a821", null ],
-      [ "co_number", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b", null ]
+      [ "co_number", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b", null ],
+      [ "co_attachment", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a51165f79fe5d1c99da7b663042d8622a", null ]
     ] ],
     [ "command_permission_type", "namespacedpp.html#ac66e44bd22afee53242581010ddd3728", [
       [ "cpt_role", "namespacedpp.html#ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f", null ],
