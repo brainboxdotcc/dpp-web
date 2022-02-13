@@ -21,5 +21,6 @@ var md_docpages_03_example_programs =
     [ "Collecting Reactions", "collecting-reactions.html", null ],
     [ "Context Menus", "context-menu.html", null ],
     [ "Webhooks", "webhooks.html", null ],
-    [ "Making an eval command in C++", "cpp-eval-command-discord.html", null ]
+    [ "Making an eval command in C++", "cpp-eval-command-discord.html", null ],
+    [ "Using file parameters for application commands (slash commands)", "discord-application-command-file-upload.html", null ]
 ];

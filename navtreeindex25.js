@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"structdpp_1_1voice__buffer__send__t.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2":[7,0,1,172,0],
 "structdpp_1_1voice__buffer__send__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,1,172,2],
 "structdpp_1_1voice__buffer__send__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,172,2],
 "structdpp_1_1voice__client__disconnect__t.html":[7,0,1,173],

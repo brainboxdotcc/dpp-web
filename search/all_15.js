@@ -54,9 +54,10 @@ var searchData=
   ['using_20component_20interactions_20_28advanced_29_51',['Using component interactions (advanced)',['../components2.html',1,'md_docpages_03_example_programs']]],
   ['using_20component_20interactions_20_28buttons_29_52',['Using component interactions (buttons)',['../components.html',1,'md_docpages_03_example_programs']]],
   ['using_20component_20interactions_20_28select_20menus_29_53',['Using component interactions (select menus)',['../components3.html',1,'md_docpages_03_example_programs']]],
-  ['using_20slash_20commands_20and_20interactions_54',['Using Slash Commands and Interactions',['../slashcommands.html',1,'md_docpages_03_example_programs']]],
-  ['using_20sub_2dcommands_20in_20slash_20commands_55',['Using sub-commands in slash commands',['../subcommands.html',1,'md_docpages_03_example_programs']]],
-  ['usr_56',['usr',['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()'],['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()']]],
-  ['utf8len_57',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
-  ['utf8substr_58',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
+  ['using_20file_20parameters_20for_20application_20commands_20_28slash_20commands_29_54',['Using file parameters for application commands (slash commands)',['../discord-application-command-file-upload.html',1,'md_docpages_03_example_programs']]],
+  ['using_20slash_20commands_20and_20interactions_55',['Using Slash Commands and Interactions',['../slashcommands.html',1,'md_docpages_03_example_programs']]],
+  ['using_20sub_2dcommands_20in_20slash_20commands_56',['Using sub-commands in slash commands',['../subcommands.html',1,'md_docpages_03_example_programs']]],
+  ['usr_57',['usr',['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()'],['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()']]],
+  ['utf8len_58',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
+  ['utf8substr_59',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
 ];
