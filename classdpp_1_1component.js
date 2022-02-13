@@ -30,6 +30,7 @@ var classdpp_1_1component =
     [ "min_values", "classdpp_1_1component.html#a2278f6585edfa07f2b7711aaf31cf5a3", null ],
     [ "options", "classdpp_1_1component.html#ad4f47e82e57e28a1aac48027e43b2fd9", null ],
     [ "placeholder", "classdpp_1_1component.html#a4fe9d95b2fd61a38269c3368db4c17ce", null ],
+    [ "required", "classdpp_1_1component.html#a6a6312c0c598466aa87541745d2f7bff", null ],
     [ "style", "classdpp_1_1component.html#a114f858c5c2bcdc1067cb26a14e578af", null ],
     [ "text_style", "classdpp_1_1component.html#a69a2c73574bfb36961fee1df8f6ff771", null ],
     [ "type", "classdpp_1_1component.html#afdb70ec9968493ed54bab29135f8b8c6", null ],
