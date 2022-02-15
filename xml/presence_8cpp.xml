@@ -7,7 +7,7 @@
     <includes refid="utility_8h" local="no">dpp/utility.h</includes>
     <includes refid="emoji_8h" local="no">dpp/emoji.h</includes>
     <includes local="no">dpp/nlohmann/json.hpp</includes>
-    <includes local="no">dpp/fmt/format.h</includes>
+    <includes refid="fmt-minimal_8h" local="no">dpp/fmt-minimal.h</includes>
     <incdepgraph>
       <node id="13">
         <label>dpp/discordevents.h</label>
@@ -31,6 +31,24 @@
       </node>
       <node id="3">
         <label>dpp/export.h</label>
+      </node>
+      <node id="19">
+        <label>dpp/fmt-minimal.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dpp/fmt/core.h</label>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
       </node>
       <node id="9">
         <label>dpp/managed.h</label>
@@ -103,8 +121,11 @@
         <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="19">
-        <label>dpp/fmt/format.h</label>
+      <node id="21">
+        <label>cstdio</label>
+      </node>
+      <node id="22">
+        <label>cstring</label>
       </node>
       <node id="11">
         <label>dpp/json_fwd.hpp</label>
@@ -114,6 +135,9 @@
       </node>
       <node id="17">
         <label>functional</label>
+      </node>
+      <node id="23">
+        <label>iterator</label>
       </node>
       <node id="16">
         <label>map</label>
@@ -126,6 +150,9 @@
       </node>
       <node id="10">
         <label>string</label>
+      </node>
+      <node id="24">
+        <label>type_traits</label>
       </node>
       <node id="12">
         <label>unordered_map</label>

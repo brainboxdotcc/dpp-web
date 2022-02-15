@@ -7,10 +7,28 @@
     <includes local="no">fstream</includes>
     <includes refid="wsclient_8h" local="no">dpp/wsclient.h</includes>
     <includes refid="utility_8h" local="no">dpp/utility.h</includes>
-    <includes local="no">dpp/fmt/format.h</includes>
+    <includes refid="fmt-minimal_8h" local="no">dpp/fmt-minimal.h</includes>
     <incdepgraph>
       <node id="6">
         <label>dpp/export.h</label>
+      </node>
+      <node id="19">
+        <label>dpp/fmt-minimal.h</label>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dpp/fmt/core.h</label>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
       </node>
       <node id="11">
         <label>dpp/misc-enum.h</label>
@@ -92,8 +110,11 @@
         <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="19">
-        <label>dpp/fmt/format.h</label>
+      <node id="21">
+        <label>cstdio</label>
+      </node>
+      <node id="22">
+        <label>cstring</label>
       </node>
       <node id="4">
         <label>fstream</label>
@@ -103,6 +124,9 @@
       </node>
       <node id="3">
         <label>iostream</label>
+      </node>
+      <node id="23">
+        <label>iterator</label>
       </node>
       <node id="7">
         <label>map</label>
@@ -115,6 +139,9 @@
       </node>
       <node id="2">
         <label>string</label>
+      </node>
+      <node id="24">
+        <label>type_traits</label>
       </node>
       <node id="18">
         <label>unordered_map</label>
