@@ -553,6 +553,7 @@ var namespacedpp =
       [ "i_direct_messages", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5aaed663fb83df98a3b2797dbdffa1eec3", null ],
       [ "i_direct_message_reactions", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a5cdd239960ca917f44bab7be89625ae6", null ],
       [ "i_direct_message_typing", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a8a5fced64cc944ced2e4c69b877c45bf", null ],
+      [ "i_message_content", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414", null ],
       [ "i_guild_scheduled_events", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ae8e1fccd9f13d710f2221ad8064f45e2", null ],
       [ "i_default_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f", null ],
       [ "i_privileged_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ad4af85bb8ca011125370342f0961bf05", null ],
