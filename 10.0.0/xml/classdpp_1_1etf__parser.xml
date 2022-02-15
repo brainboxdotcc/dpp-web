@@ -1,0 +1,1974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1etf__parser" kind="class" language="C++" prot="public">
+    <compoundname>dpp::etf_parser</compoundname>
+    <includes local="no">etf.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1etf__parser_1a1d142726294e1b13238c8d5ada5d84d5" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t dpp::etf_parser::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Current size of binary data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="159" column="8" bodyfile="include/dpp/etf.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1etf__parser_1a0b80df35b6cd591a5e1d30269ef43d99" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t dpp::etf_parser::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para>Current offset into binary data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="164" column="8" bodyfile="include/dpp/etf.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1etf__parser_1a1b5969a81823b8938e860a0690685950" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* dpp::etf_parser::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Pointer to binary ETF data to be decoded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="169" column="9" bodyfile="include/dpp/etf.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1ad041ce7bfa3431a7aaf5dc17dbf055f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::inner_parse</definition>
+        <argsstring>()</argsstring>
+        <name>inner_parse</name>
+        <briefdescription>
+<para>Parse a single value, and if that value contains other values (e.g. an array or map) then call itself recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json JSON value from the ETF </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="177" column="16" bodyfile="src/dpp/etf.cpp" bodystart="572" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1ae62dbad0512e2bd5372f243ab81f82ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::etf_parser::read_8_bits</definition>
+        <argsstring>()</argsstring>
+        <name>read_8_bits</name>
+        <briefdescription>
+<para>Read 8 bits of data from the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint8_t data retrieved </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="185" column="9" bodyfile="src/dpp/etf.cpp" bodystart="225" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a407ca5ef650785330af6be9d1654d729" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::etf_parser::read_16_bits</definition>
+        <argsstring>()</argsstring>
+        <name>read_16_bits</name>
+        <briefdescription>
+<para>Read 16 bits of data from the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint16_t data retrieved </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="193" column="10" bodyfile="src/dpp/etf.cpp" bodystart="234" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a5c0388db5aef8f93c1a5d9e9b806dfa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::etf_parser::read_32_bits</definition>
+        <argsstring>()</argsstring>
+        <name>read_32_bits</name>
+        <briefdescription>
+<para>Read 32 bits of data from the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint32_t data retrieved </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="201" column="10" bodyfile="src/dpp/etf.cpp" bodystart="243" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a8ca03fce713d3cba5f8b32d83e3d61ea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::etf_parser::read_64_bits</definition>
+        <argsstring>()</argsstring>
+        <name>read_64_bits</name>
+        <briefdescription>
+<para>Read 64 bits of data from the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint64_t data retrieved </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="209" column="10" bodyfile="src/dpp/etf.cpp" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1ac83d5a9f6df2649b5aaf9fc3f91c1902" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * dpp::etf_parser::read_string</definition>
+        <argsstring>(uint32_t length)</argsstring>
+        <name>read_string</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Read string data from the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of string to retrieve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const char* data retrieved </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="218" column="12" bodyfile="src/dpp/etf.cpp" bodystart="261" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a3cda25969eda0ceff4cd292e90c5c4fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::process_atom</definition>
+        <argsstring>(const char *atom, uint16_t length)</argsstring>
+        <name>process_atom</name>
+        <param>
+          <type>const char *</type>
+          <declname>atom</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Process an &apos;atom&apos; value. An atom is a &quot;label&quot; or constant value within the data, such as a key name, nullptr, or false. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="228" column="16" bodyfile="src/dpp/etf.cpp" bodystart="271" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a747485967f92bab65bee8db90c3eda54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_atom</definition>
+        <argsstring>()</argsstring>
+        <name>decode_atom</name>
+        <briefdescription>
+<para>Decode an &apos;atom&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="236" column="16" bodyfile="src/dpp/etf.cpp" bodystart="299" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a4f46e6660f389b3cd1f9b1c45d03e809" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_small_atom</definition>
+        <argsstring>()</argsstring>
+        <name>decode_small_atom</name>
+        <briefdescription>
+<para>Decode a small &apos;atom&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="244" column="16" bodyfile="src/dpp/etf.cpp" bodystart="305" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a978d1edd1685405a7c6d10c840dbb4fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_small_integer</definition>
+        <argsstring>()</argsstring>
+        <name>decode_small_integer</name>
+        <briefdescription>
+<para>Decode a small integer value (0-255). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="252" column="16" bodyfile="src/dpp/etf.cpp" bodystart="311" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1aa649bdd2162396fe329a9b19f46b4254" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_integer</definition>
+        <argsstring>()</argsstring>
+        <name>decode_integer</name>
+        <briefdescription>
+<para>Decode an integer value (-MAXINT -&gt; MAXINT-1). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="260" column="16" bodyfile="src/dpp/etf.cpp" bodystart="317" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a18f60dde0715b34e6cb9504f233c3dd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_array</definition>
+        <argsstring>(uint32_t length)</argsstring>
+        <name>decode_array</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Decode an array of values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json values converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="268" column="16" bodyfile="src/dpp/etf.cpp" bodystart="323" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a79bb865d014dc48c9f84fe977960e2bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_list</definition>
+        <argsstring>()</argsstring>
+        <name>decode_list</name>
+        <briefdescription>
+<para>Decode a list of values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json values converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="276" column="16" bodyfile="src/dpp/etf.cpp" bodystart="331" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a4ef7545a9646952f50bce39868f2122d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_tuple</definition>
+        <argsstring>(uint32_t length)</argsstring>
+        <name>decode_tuple</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Decode a &apos;tuple&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="284" column="16" bodyfile="src/dpp/etf.cpp" bodystart="343" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a35e273d951a94d78d2ece636a61f9f12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_nil</definition>
+        <argsstring>()</argsstring>
+        <name>decode_nil</name>
+        <briefdescription>
+<para>Decode a nil &apos;atom&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="292" column="16" bodyfile="src/dpp/etf.cpp" bodystart="347" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1aa718d9cd0c2b578b612a9926f0fc52b6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_map</definition>
+        <argsstring>()</argsstring>
+        <name>decode_map</name>
+        <briefdescription>
+<para>Decode a map (object) value. Will recurse to evaluate each member variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json values converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="301" column="16" bodyfile="src/dpp/etf.cpp" bodystart="351" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a0c28839df67f0e60ea6e71696d508aa4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_float</definition>
+        <argsstring>()</argsstring>
+        <name>decode_float</name>
+        <briefdescription>
+<para>Decode a floating point numeric value. (depreciated in erlang but still expected to be supported) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="310" column="16" bodyfile="src/dpp/etf.cpp" bodystart="366" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a461839e26b19b5c4b5009784ee7c1a3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_new_float</definition>
+        <argsstring>()</argsstring>
+        <name>decode_new_float</name>
+        <briefdescription>
+<para>Decode a floating type numeric value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="318" column="16" bodyfile="src/dpp/etf.cpp" bodystart="390" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a7f869015e42c8987ae26a5febfb0092f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_bigint</definition>
+        <argsstring>(uint32_t digits)</argsstring>
+        <name>decode_bigint</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>digits</declname>
+        </param>
+        <briefdescription>
+<para>Decode a &apos;bigint&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="326" column="16" bodyfile="src/dpp/etf.cpp" bodystart="400" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a6a50437eb54bfa98bb07953a3a0fc7e8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_bigint_small</definition>
+        <argsstring>()</argsstring>
+        <name>decode_bigint_small</name>
+        <briefdescription>
+<para>Decode a small &apos;bigint&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="334" column="16" bodyfile="src/dpp/etf.cpp" bodystart="441" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a2566cff11f5b539ab11691f9cc4df2b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_bigint_large</definition>
+        <argsstring>()</argsstring>
+        <name>decode_bigint_large</name>
+        <briefdescription>
+<para>Decode a large &apos;bigint&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="342" column="16" bodyfile="src/dpp/etf.cpp" bodystart="446" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1affc11fe706d363dd29550b0dc2052b4b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_binary</definition>
+        <argsstring>()</argsstring>
+        <name>decode_binary</name>
+        <briefdescription>
+<para>Decode a binary value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="350" column="16" bodyfile="src/dpp/etf.cpp" bodystart="451" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1addfe7bab3d972ba803b2b27a98fbeba6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_string</definition>
+        <argsstring>()</argsstring>
+        <name>decode_string</name>
+        <briefdescription>
+<para>Decode a string value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="358" column="16" bodyfile="src/dpp/etf.cpp" bodystart="462" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a1c0c7b9a0602c1df208ca1d17a0a8385" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_string_as_list</definition>
+        <argsstring>()</argsstring>
+        <name>decode_string_as_list</name>
+        <briefdescription>
+<para>Decode a string list value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="366" column="16" bodyfile="src/dpp/etf.cpp" bodystart="472" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a4acd4adba92eacc16363f468cf28be02" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_tuple_small</definition>
+        <argsstring>()</argsstring>
+        <name>decode_tuple_small</name>
+        <briefdescription>
+<para>Decode a &apos;small tuple&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="374" column="16" bodyfile="src/dpp/etf.cpp" bodystart="484" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a9912918cdaaf14495c326be55ff58b58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_tuple_large</definition>
+        <argsstring>()</argsstring>
+        <name>decode_tuple_large</name>
+        <briefdescription>
+<para>Decode a &apos;large tuple&apos; value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="382" column="16" bodyfile="src/dpp/etf.cpp" bodystart="488" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1abf06e36d7b9021e890217e2785720922" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_compressed</definition>
+        <argsstring>()</argsstring>
+        <name>decode_compressed</name>
+        <briefdescription>
+<para>Decode a compressed value. This is a zlib-compressed binary blob which contains another ETF object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="392" column="16" bodyfile="src/dpp/etf.cpp" bodystart="492" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a00672ac9194dc1f8c507271f9b19bc3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_reference</definition>
+        <argsstring>()</argsstring>
+        <name>decode_reference</name>
+        <briefdescription>
+<para>Decode a &apos;reference&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="401" column="16" bodyfile="src/dpp/etf.cpp" bodystart="517" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a8bad87d12e83a76e2a248fa6f480bd4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_new_reference</definition>
+        <argsstring>()</argsstring>
+        <name>decode_new_reference</name>
+        <briefdescription>
+<para>Decode a &apos;new reference&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="410" column="16" bodyfile="src/dpp/etf.cpp" bodystart="531" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1acaa6dd830d69c03dcef1a0f9e35a85ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_port</definition>
+        <argsstring>()</argsstring>
+        <name>decode_port</name>
+        <briefdescription>
+<para>Decode a &apos;port&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="419" column="16" bodyfile="src/dpp/etf.cpp" bodystart="547" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a6903e4a9817c8bfd2521f20a18e9db7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_pid</definition>
+        <argsstring>()</argsstring>
+        <name>decode_pid</name>
+        <briefdescription>
+<para>Decode a &apos;PID&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="428" column="16" bodyfile="src/dpp/etf.cpp" bodystart="555" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a310c409349c82db897ac226ef04fd713" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::decode_export</definition>
+        <argsstring>()</argsstring>
+        <name>decode_export</name>
+        <briefdescription>
+<para>Decode an &apos;export&apos; value. Erlang expects this to be supported, in practice Discord doesn&apos;t send these right now. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nlohmann::json value converted to JSON </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data stream isn&apos;t long enough to fetch requested bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="437" column="16" bodyfile="src/dpp/etf.cpp" bodystart="564" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a95b0046624f88ae59d3f483728d9d0b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::buffer_write</definition>
+        <argsstring>(etf_buffer *pk, const char *bytes, size_t l)</argsstring>
+        <name>buffer_write</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>pk</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Write to output buffer for creation of ETF from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer struct </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>byte buffer to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="447" column="6" bodyfile="src/dpp/etf.cpp" bodystart="46" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1ae9beba8cfe1c35806f40dbdc7d190403" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_version</definition>
+        <argsstring>(etf_buffer *b)</argsstring>
+        <name>append_version</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Append version number to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="455" column="6" bodyfile="src/dpp/etf.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1ae278aba7de419601695c4e74826214d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_nil</definition>
+        <argsstring>(etf_buffer *b)</argsstring>
+        <name>append_nil</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Append nil value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="463" column="6" bodyfile="src/dpp/etf.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a6ba2c938440bbbfe2ca04a42b5d61f5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_false</definition>
+        <argsstring>(etf_buffer *b)</argsstring>
+        <name>append_false</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Append false value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="471" column="6" bodyfile="src/dpp/etf.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a4646ee5a5eec58c6dffe1b4d8a92eeb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_true</definition>
+        <argsstring>(etf_buffer *b)</argsstring>
+        <name>append_true</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Append true value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="479" column="6" bodyfile="src/dpp/etf.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1aa30fb150fa781c3d7dd9751a81f9b28d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_small_integer</definition>
+        <argsstring>(etf_buffer *b, unsigned char d)</argsstring>
+        <name>append_small_integer</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Append small integer value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>double to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="488" column="6" bodyfile="src/dpp/etf.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1adfb336ced272f026e931221ae1303126" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_integer</definition>
+        <argsstring>(etf_buffer *b, int32_t d)</argsstring>
+        <name>append_integer</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Append integer value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="497" column="6" bodyfile="src/dpp/etf.cpp" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1ac25fdf66bb5f7216cba9e70cabf8a484" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_unsigned_long_long</definition>
+        <argsstring>(etf_buffer *b, unsigned long long d)</argsstring>
+        <name>append_unsigned_long_long</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>unsigned long long</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Append 64 bit integer value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="506" column="6" bodyfile="src/dpp/etf.cpp" bodystart="89" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a9103fde0a34d053adad08974b1ee2e2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_long_long</definition>
+        <argsstring>(etf_buffer *b, long long d)</argsstring>
+        <name>append_long_long</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Append 64 bit integer value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="515" column="6" bodyfile="src/dpp/etf.cpp" bodystart="105" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1aad86d9ac2f2baf85bb0041631c549560" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_double</definition>
+        <argsstring>(etf_buffer *b, double f)</argsstring>
+        <name>append_double</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Append double value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>doule to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="524" column="6" bodyfile="src/dpp/etf.cpp" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a7c1c3f85a5e6d2d0c724c2d3fade22ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_atom</definition>
+        <argsstring>(etf_buffer *b, const char *bytes, size_t size)</argsstring>
+        <name>append_atom</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Append atom value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to string to append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of string to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="534" column="6" bodyfile="src/dpp/etf.cpp" bodystart="129" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1ab0d97b706d48a022101f734c0d4a979f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_atom_utf8</definition>
+        <argsstring>(etf_buffer *b, const char *bytes, size_t size)</argsstring>
+        <name>append_atom_utf8</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Append utf8 atom value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to string to append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of string to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="544" column="6" bodyfile="src/dpp/etf.cpp" bodystart="148" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1aba3d013ff4167fcb8989abf1eb081a23" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_binary</definition>
+        <argsstring>(etf_buffer *b, const char *bytes, size_t size)</argsstring>
+        <name>append_binary</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Append binary value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to string to append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of string to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="554" column="6" bodyfile="src/dpp/etf.cpp" bodystart="167" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a1774505ade9ddea5b194b631d43c5881" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_string</definition>
+        <argsstring>(etf_buffer *b, const char *bytes, size_t size)</argsstring>
+        <name>append_string</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Append string value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to string to append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of string to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="564" column="6" bodyfile="src/dpp/etf.cpp" bodystart="176" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a323f9f6be5a94b883dd3cc34b57e49b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_tuple_header</definition>
+        <argsstring>(etf_buffer *b, size_t size)</argsstring>
+        <name>append_tuple_header</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Append tuple value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of value to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="573" column="6" bodyfile="src/dpp/etf.cpp" bodystart="185" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a9105afad81f956d629555c0ccc9205bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_nil_ext</definition>
+        <argsstring>(etf_buffer *b)</argsstring>
+        <name>append_nil_ext</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Append list terminator to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="581" column="6" bodyfile="src/dpp/etf.cpp" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a61836185002e9119e02cf938a39d4c0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_list_header</definition>
+        <argsstring>(etf_buffer *b, size_t size)</argsstring>
+        <name>append_list_header</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Append a list header value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of values to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="590" column="6" bodyfile="src/dpp/etf.cpp" bodystart="204" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a27254eafc57ea2ef5bd6febb17e48e12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::append_map_header</definition>
+        <argsstring>(etf_buffer *b, size_t size)</argsstring>
+        <name>append_map_header</name>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Append a map header value to ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of values to append </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="599" column="6" bodyfile="src/dpp/etf.cpp" bodystart="211" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a59de2b005efa93b208b35cf4b5afaf5e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::etf_parser::inner_build</definition>
+        <argsstring>(const nlohmann::json *j, etf_buffer *b)</argsstring>
+        <name>inner_build</name>
+        <param>
+          <type>const nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="structdpp_1_1etf__buffer" kindref="compound">etf_buffer</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Build ETF buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON object to build from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to append to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer cannot be extended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="608" column="6" bodyfile="src/dpp/etf.cpp" bodystart="643" bodyend="713"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a1fda89db96ffa12c3f922ece4c099a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::etf_parser::etf_parser</definition>
+        <argsstring>()</argsstring>
+        <name>etf_parser</name>
+        <briefdescription>
+<para>Construct a new etf parser object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="614" column="1" bodyfile="src/dpp/etf.cpp" bodystart="218" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1abf03b044d5a883cac5816a4c93df3688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::etf_parser::~etf_parser</definition>
+        <argsstring>()</argsstring>
+        <name>~etf_parser</name>
+        <briefdescription>
+<para>Destroy the etf parser object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="619" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1etf__parser_1a16b91fa9e1e2024d5cb390b293c4238f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nlohmann::json</type>
+        <definition>json dpp::etf_parser::parse</definition>
+        <argsstring>(const std::string &amp;in)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Convert ETF binary content to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw binary ETF data (generally from a websocket) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nlohmann::json JSON data for use in the library </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Malformed or otherwise invalid ETF content </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/etf.h" line="628" column="16" bodyfile="src/dpp/etf.cpp" bodystart="630" bodyend="641"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classdpp_1_1etf__parser" kindref="compound">etf_parser</ref> class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohmann::json object, so that layers above the websocket don&apos;t have to be any different for handling ETF. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/etf.h" line="154" column="1" bodyfile="include/dpp/etf.h" bodystart="154" bodyend="640"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1etf__parser_1a7c1c3f85a5e6d2d0c724c2d3fade22ba" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_atom</name></member>
+      <member refid="classdpp_1_1etf__parser_1ab0d97b706d48a022101f734c0d4a979f" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_atom_utf8</name></member>
+      <member refid="classdpp_1_1etf__parser_1aba3d013ff4167fcb8989abf1eb081a23" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_binary</name></member>
+      <member refid="classdpp_1_1etf__parser_1aad86d9ac2f2baf85bb0041631c549560" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_double</name></member>
+      <member refid="classdpp_1_1etf__parser_1a6ba2c938440bbbfe2ca04a42b5d61f5f" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_false</name></member>
+      <member refid="classdpp_1_1etf__parser_1adfb336ced272f026e931221ae1303126" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_integer</name></member>
+      <member refid="classdpp_1_1etf__parser_1a61836185002e9119e02cf938a39d4c0f" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_list_header</name></member>
+      <member refid="classdpp_1_1etf__parser_1a9103fde0a34d053adad08974b1ee2e2c" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_long_long</name></member>
+      <member refid="classdpp_1_1etf__parser_1a27254eafc57ea2ef5bd6febb17e48e12" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_map_header</name></member>
+      <member refid="classdpp_1_1etf__parser_1ae278aba7de419601695c4e74826214d4" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_nil</name></member>
+      <member refid="classdpp_1_1etf__parser_1a9105afad81f956d629555c0ccc9205bb" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_nil_ext</name></member>
+      <member refid="classdpp_1_1etf__parser_1aa30fb150fa781c3d7dd9751a81f9b28d" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_small_integer</name></member>
+      <member refid="classdpp_1_1etf__parser_1a1774505ade9ddea5b194b631d43c5881" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_string</name></member>
+      <member refid="classdpp_1_1etf__parser_1a4646ee5a5eec58c6dffe1b4d8a92eeb4" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_true</name></member>
+      <member refid="classdpp_1_1etf__parser_1a323f9f6be5a94b883dd3cc34b57e49b4" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_tuple_header</name></member>
+      <member refid="classdpp_1_1etf__parser_1ac25fdf66bb5f7216cba9e70cabf8a484" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_unsigned_long_long</name></member>
+      <member refid="classdpp_1_1etf__parser_1ae9beba8cfe1c35806f40dbdc7d190403" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>append_version</name></member>
+      <member refid="classdpp_1_1etf__parser_1a95b0046624f88ae59d3f483728d9d0b5" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>buffer_write</name></member>
+      <member refid="classdpp_1_1etf__parser_1a1b5969a81823b8938e860a0690685950" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>data</name></member>
+      <member refid="classdpp_1_1etf__parser_1a18f60dde0715b34e6cb9504f233c3dd6" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_array</name></member>
+      <member refid="classdpp_1_1etf__parser_1a747485967f92bab65bee8db90c3eda54" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_atom</name></member>
+      <member refid="classdpp_1_1etf__parser_1a7f869015e42c8987ae26a5febfb0092f" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_bigint</name></member>
+      <member refid="classdpp_1_1etf__parser_1a2566cff11f5b539ab11691f9cc4df2b1" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_bigint_large</name></member>
+      <member refid="classdpp_1_1etf__parser_1a6a50437eb54bfa98bb07953a3a0fc7e8" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_bigint_small</name></member>
+      <member refid="classdpp_1_1etf__parser_1affc11fe706d363dd29550b0dc2052b4b" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_binary</name></member>
+      <member refid="classdpp_1_1etf__parser_1abf06e36d7b9021e890217e2785720922" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_compressed</name></member>
+      <member refid="classdpp_1_1etf__parser_1a310c409349c82db897ac226ef04fd713" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_export</name></member>
+      <member refid="classdpp_1_1etf__parser_1a0c28839df67f0e60ea6e71696d508aa4" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_float</name></member>
+      <member refid="classdpp_1_1etf__parser_1aa649bdd2162396fe329a9b19f46b4254" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_integer</name></member>
+      <member refid="classdpp_1_1etf__parser_1a79bb865d014dc48c9f84fe977960e2bd" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_list</name></member>
+      <member refid="classdpp_1_1etf__parser_1aa718d9cd0c2b578b612a9926f0fc52b6" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_map</name></member>
+      <member refid="classdpp_1_1etf__parser_1a461839e26b19b5c4b5009784ee7c1a3f" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_new_float</name></member>
+      <member refid="classdpp_1_1etf__parser_1a8bad87d12e83a76e2a248fa6f480bd4a" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_new_reference</name></member>
+      <member refid="classdpp_1_1etf__parser_1a35e273d951a94d78d2ece636a61f9f12" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_nil</name></member>
+      <member refid="classdpp_1_1etf__parser_1a6903e4a9817c8bfd2521f20a18e9db7c" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_pid</name></member>
+      <member refid="classdpp_1_1etf__parser_1acaa6dd830d69c03dcef1a0f9e35a85ce" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_port</name></member>
+      <member refid="classdpp_1_1etf__parser_1a00672ac9194dc1f8c507271f9b19bc3c" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_reference</name></member>
+      <member refid="classdpp_1_1etf__parser_1a4f46e6660f389b3cd1f9b1c45d03e809" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_small_atom</name></member>
+      <member refid="classdpp_1_1etf__parser_1a978d1edd1685405a7c6d10c840dbb4fe" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_small_integer</name></member>
+      <member refid="classdpp_1_1etf__parser_1addfe7bab3d972ba803b2b27a98fbeba6" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_string</name></member>
+      <member refid="classdpp_1_1etf__parser_1a1c0c7b9a0602c1df208ca1d17a0a8385" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_string_as_list</name></member>
+      <member refid="classdpp_1_1etf__parser_1a4ef7545a9646952f50bce39868f2122d" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_tuple</name></member>
+      <member refid="classdpp_1_1etf__parser_1a9912918cdaaf14495c326be55ff58b58" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_tuple_large</name></member>
+      <member refid="classdpp_1_1etf__parser_1a4acd4adba92eacc16363f468cf28be02" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>decode_tuple_small</name></member>
+      <member refid="classdpp_1_1etf__parser_1a1fda89db96ffa12c3f922ece4c099a92" prot="public" virt="non-virtual"><scope>dpp::etf_parser</scope><name>etf_parser</name></member>
+      <member refid="classdpp_1_1etf__parser_1a59de2b005efa93b208b35cf4b5afaf5e" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>inner_build</name></member>
+      <member refid="classdpp_1_1etf__parser_1ad041ce7bfa3431a7aaf5dc17dbf055f0" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>inner_parse</name></member>
+      <member refid="classdpp_1_1etf__parser_1a0b80df35b6cd591a5e1d30269ef43d99" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>offset</name></member>
+      <member refid="classdpp_1_1etf__parser_1a16b91fa9e1e2024d5cb390b293c4238f" prot="public" virt="non-virtual"><scope>dpp::etf_parser</scope><name>parse</name></member>
+      <member refid="classdpp_1_1etf__parser_1a3cda25969eda0ceff4cd292e90c5c4fb" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>process_atom</name></member>
+      <member refid="classdpp_1_1etf__parser_1a407ca5ef650785330af6be9d1654d729" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>read_16_bits</name></member>
+      <member refid="classdpp_1_1etf__parser_1a5c0388db5aef8f93c1a5d9e9b806dfa0" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>read_32_bits</name></member>
+      <member refid="classdpp_1_1etf__parser_1a8ca03fce713d3cba5f8b32d83e3d61ea" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>read_64_bits</name></member>
+      <member refid="classdpp_1_1etf__parser_1ae62dbad0512e2bd5372f243ab81f82ab" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>read_8_bits</name></member>
+      <member refid="classdpp_1_1etf__parser_1ac83d5a9f6df2649b5aaf9fc3f91c1902" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>read_string</name></member>
+      <member refid="classdpp_1_1etf__parser_1a1d142726294e1b13238c8d5ada5d84d5" prot="private" virt="non-virtual"><scope>dpp::etf_parser</scope><name>size</name></member>
+      <member refid="classdpp_1_1etf__parser_1abf03b044d5a883cac5816a4c93df3688" prot="public" virt="non-virtual"><scope>dpp::etf_parser</scope><name>~etf_parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
