@@ -45,7 +45,7 @@ var searchData=
   ['discovery_5fsplash_42',['discovery_splash',['../classdpp_1_1guild.html#a368ba3a6ae2e752a3f702dcba5eb5ce0',1,'dpp::guild']]],
   ['discriminator_43',['discriminator',['../classdpp_1_1user.html#afe658cc2d4adcf83a76f798dead3e5e6',1,'dpp::user']]],
   ['dm_44',['DM',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092aea2cd43492b5252e09a6c9b29c58d159',1,'dpp']]],
-  ['double_5fnot_5fnull_45',['double_not_null',['../namespacedpp.html#a3dfc4f43c1a761c749d1feb894bd0372',1,'dpp']]],
+  ['double_5fnot_5fnull_45',['double_not_null',['../namespacedpp.html#a7fd4373c8570f0cf6e3736e9cd1c4436',1,'dpp']]],
   ['download_46',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
   ['dpp_47',['dpp',['../namespacedpp.html',1,'']]],
   ['dtemplate_48',['dtemplate',['../classdpp_1_1dtemplate.html',1,'dpp::dtemplate'],['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate::dtemplate()']]],
