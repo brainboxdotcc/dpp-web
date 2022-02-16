@@ -13,10 +13,8 @@
 </para>
 <sect2 id="buildlinux_1autotoc_md2">
 <title>1. Build Source Code</title>
-<para><verbatim>mkdir build
-cd build
-cmake ..
-make -j8
+<para><verbatim>cmake -B ./build
+cmake --build ./build -j8
 </verbatim> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
 <sect2 id="buildlinux_1autotoc_md3">

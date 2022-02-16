@@ -19,21 +19,19 @@ var md_docpages_02_build =
         [ "1. Toolchain", "buildosx.html#autotoc_md10", null ],
         [ "2. Install External Dependencies", "buildosx.html#autotoc_md11", null ],
         [ "3. Build Source Code", "buildosx.html#autotoc_md12", null ],
-        [ "4. Optional: Run test cases", "buildosx.html#autotoc_md13", null ],
-        [ "5. Install globally", "buildosx.html#autotoc_md14", null ],
-        [ "6. Installation to a different directory", "buildosx.html#autotoc_md15", null ],
-        [ "7. Using the library", "buildosx.html#autotoc_md16", null ]
+        [ "4. Install globally", "buildosx.html#autotoc_md13", null ],
+        [ "5. Installation to a different directory", "buildosx.html#autotoc_md14", null ],
+        [ "6. Using the library", "buildosx.html#autotoc_md15", null ]
       ] ]
     ] ],
     [ "Building on FreeBSD", "buildfreebsd.html", [
-      [ "Building on FreeBSD", "buildfreebsd.html#autotoc_md17", [
-        [ "1. Toolchain", "buildfreebsd.html#autotoc_md18", null ],
-        [ "2. Install External Dependencies", "buildfreebsd.html#autotoc_md19", null ],
-        [ "3. Build Source Code", "buildfreebsd.html#autotoc_md20", null ],
-        [ "4. Optional: Run test cases", "buildfreebsd.html#autotoc_md21", null ],
-        [ "5. Install globally", "buildfreebsd.html#autotoc_md22", null ],
-        [ "6. Installation to a different directory", "buildfreebsd.html#autotoc_md23", null ],
-        [ "7. Using the library", "buildfreebsd.html#autotoc_md24", null ]
+      [ "Building on FreeBSD", "buildfreebsd.html#autotoc_md16", [
+        [ "1. Toolchain", "buildfreebsd.html#autotoc_md17", null ],
+        [ "2. Install External Dependencies", "buildfreebsd.html#autotoc_md18", null ],
+        [ "3. Build Source Code", "buildfreebsd.html#autotoc_md19", null ],
+        [ "4. Install globally", "buildfreebsd.html#autotoc_md20", null ],
+        [ "5. Installation to a different directory", "buildfreebsd.html#autotoc_md21", null ],
+        [ "7. Using the library", "buildfreebsd.html#autotoc_md22", null ]
       ] ]
     ] ]
 ];
