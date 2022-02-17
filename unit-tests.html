@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="D++ Developer Documentation - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Unit Tests - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="D++ Developer Documentation - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Unit Tests - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="D++ Developer Documentation - D++ - The lightweight C++ Discord API Library">
-<title>D++ Developer Documentation - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Unit Tests - D++ - The lightweight C++ Discord API Library">
+<title>Unit Tests - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('unit-tests.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,69 +98,36 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">D++ Developer Documentation </div></div>
+  <div class="headertitle"><div class="title">Unit Tests </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_docpages_INDEX"></a> </p>
-<h1><a class="anchor" id="autotoc_md69"></a>
-What is D++ (DPP)?</h1>
-<p >D++ is a lightweight and simple library for Discord written in modern C++. It is designed to cover as much of the API specification as possible and to have a incredibly small memory footprint, even when caching large amounts of data.</p>
-<p >It is created by the developer of <a href="https://triviabot.co.uk">TriviaBot</a> and contributed to by a dedicated team of developers.</p>
-<p ><em>This project is now in stable development and accepting PRs and feature requests — Don't be a stranger! If you want to contribute, just get in touch via <a href="https://github.com/brainboxdotcc/DPP">GitHub</a> or our official <a href="https://discord.gg/dpp">Discord server</a>!</em></p>
-<p ><img src="code_editor.png" alt="" style="margin-top: 2rem; margin-bottom: 2rem" class="inline"/><br  />
-</p>
-<h1><a class="anchor" id="autotoc_md70"></a>
-Downloads</h1>
-<p >You can download the latest releases and check out our source code from the <a href="https://github.com/brainboxdotcc/DPP/releases">GitHub Repository</a>.</p>
-<h1><a class="anchor" id="autotoc_md71"></a>
-Library features</h1>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md67"></a>
+Running Unit Tests</h1>
+<p >If you are adding functionality to DPP, make sure to run unit tests. This makes sure that the changes do not break anything. All pull requests must pass all unit tests before merging.</p>
+<p >Before running test cases, create a test server for your test bot. You should:</p>
 <ul>
-<li>Really small memory footprint</li>
-<li>Efficient caching system for guilds, channels, guild members, roles, users</li>
-<li>Sharding and clustering (Many shards, one process: specify the number of shards, or let the library decide)</li>
-<li>Highly optimised ETF (Erlang Term Format) support for very fast websocket throughput (<em>no other C++ Discord library has this!</em>)</li>
-<li><a href="https://dpp.dev/slashcommands.html">Slash Commands/Interactions support</a></li>
-<li><a href="https://dpp.dev/soundboard.html">Voice support</a> (sending <b>and</b> receiving audio)</li>
-<li>The entire Discord API is available for use in the library</li>
-<li>Stable <a href="https://dpp.dev/buildwindows.html">Windows support</a></li>
-<li>Ready-made compiled packages for Windows, Raspberry Pi (ARM64/ARM7/ARMv6), Debian x86/x64 and RPM based distributions</li>
+<li>Make sure that the server only has you and your test bot, and no one else</li>
+<li>Give your bot the administrator permission</li>
+<li>Enable community for the server</li>
+<li>Make an event</li>
+<li>Create at least one voice channel</li>
+<li>Create at least one text channel</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md72"></a>
-Supported Operating Systems</h1>
-<p >The library runs great on <b>Linux</b>. <b>Windows</b> is also supported and we offer ready made compiled DLL and LIB files for easy integration into any windows visual studio 2019/2022 project. <b>Mac OS X</b> and <b>FreeBSD</b> is also functional and stable, as is running your bot on a <b>Raspberry Pi</b> — we offer a prebuilt .deb for ARM64, ARMv6 and ARMv7 to save on having to wait for it to compile.</p>
-<p >The library may work fine in other operating systems too, if you run a D++ bot on something not listed here please let us know!</p>
-<h1><a class="anchor" id="autotoc_md73"></a>
-Getting started</h1>
-<ul>
-<li><a href="https://github.com/brainboxdotcc/DPP">GitHub Repository</a></li>
-<li><a href="https://discord.gg/dpp">Discord Server</a></li>
-<li><a class="el" href="frequently-asked-questions.html">Frequently Asked Questions</a></li>
-<li><a class="el" href="buildlinux.html">Building on Linux</a></li>
-<li><a class="el" href="buildwindows.html">Building on Windows</a></li>
-<li><a class="el" href="buildosx.html">Building on OSX</a></li>
-<li><a class="el" href="buildfreebsd.html">Building on FreeBSD</a></li>
-<li><a class="el" href="creating-a-bot-application.html">Creating a Bot Account</a></li>
-<li><a href="/md_docpages_03_example_programs.html">Example Programs</a></li>
-</ul>
-<h1><a class="anchor" id="autotoc_md74"></a>
-Architecture</h1>
-<ul>
-<li><a class="el" href="clusters-shards-guilds.html">Clusters, Shards and Guilds</a></li>
-<li><a class="el" href="thread-model.html">Thread Model</a></li>
-</ul>
-<h1><a class="anchor" id="autotoc_md75"></a>
-Learning Resources</h1>
-<ul>
-<li><a href="https://pawelgrzybek.com/cpp-for-javascript-developers/">C++ for JavaScript Developers</a></li>
-<li><a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y&amp;vl=en">C++ In Four Hours</a> </li>
-</ul>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+<p >Then, set the following variables to the appropriate values. (This uses a fake token, don't bother trying to use it.) </p><pre class="fragment">export DPP_UNIT_TEST_TOKEN="ODI2ZSQ4CFYyMzgxUzkzzACy.HPL5PA.9qKR4uh8po63-pjYVrPAvQQO4ln"
+export TEST_GUILD_ID="907951970017480704"
+export TEST_TEXT_CHANNEL_ID="907951970017480707"
+export TEST_VC_ID="907951970017480708"
+export TEST_USER_ID="826535422381391913"
+export TEST_EVENT_ID="909928577951203360"
+</pre><p> Then, after cloning and building DPP, run <code>./build/test</code> for unit test cases. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="md_docpages_04_advanced_reference.html">Advanced Reference</a></li>
   </ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

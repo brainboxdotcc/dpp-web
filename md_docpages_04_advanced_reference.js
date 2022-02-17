@@ -26,5 +26,8 @@ var md_docpages_04_advanced_reference =
       [ "Keep all D++ related types in the dpp namespace", "coding-standards.html#autotoc_md65", null ],
       [ "Commit messages and Git", "coding-standards.html#autotoc_md66", null ]
     ] ],
+    [ "Unit Tests", "unit-tests.html", [
+      [ "Running Unit Tests", "unit-tests.html#autotoc_md67", null ]
+    ] ],
     [ "Ownership of local variables and safely transferring into a lambda", "lambdas-and-locals.html", null ]
 ];
