@@ -116,15 +116,8 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line">            <span class="comment">// create a message</span></div>
 <div class="line">            dpp::message msg(event.msg.channel_id, <span class="stringliteral">&quot;Hey there, i&#39;ve got a new file!&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">            <span class="comment">// attach the file</span></div>
-<div class="line">            msg.set_file_content(dpp::utility::read_file(<span class="stringliteral">&quot;path_to_your_file.txt&quot;</span>));</div>
-<div class="line">            </div>
-<div class="line">            <span class="comment">/*</span></div>
-<div class="line"><span class="comment">             * alternatively, you can put any other name in here.</span></div>
-<div class="line"><span class="comment">             * This name doesn&#39;t have to be the same as the uploaded filename.</span></div>
-<div class="line"><span class="comment">             * But it should have the same file extension.</span></div>
-<div class="line"><span class="comment">             */</span></div>
-<div class="line">            msg.set_filename(<span class="stringliteral">&quot;file.txt&quot;</span>);</div>
+<div class="line">            <span class="comment">// attach the file to the message</span></div>
+<div class="line">            msg.add_file(<span class="stringliteral">&quot;foobar.txt&quot;</span>, dpp::utility::read_file(<span class="stringliteral">&quot;path_to_your_file.txt&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">// send the message</span></div>
 <div class="line">            bot.message_create(msg);</div>
@@ -157,8 +150,7 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line"> </div>
 <div class="line">                <span class="comment">// attach the image on success</span></div>
 <div class="line">                if (httpRequestCompletion.status == 200) {</div>
-<div class="line">                    msg.set_file_content(httpRequestCompletion.body);</div>
-<div class="line">                    msg.set_filename(<span class="stringliteral">&quot;example-image.png&quot;</span>); <span class="comment">// give the file a name</span></div>
+<div class="line">                    msg.add_file(<span class="stringliteral">&quot;logo.png&quot;</span>, httpRequestCompletion.body);</div>
 <div class="line">                }</div>
 <div class="line"> </div>
 <div class="line">                <span class="comment">// send the message</span></div>
@@ -183,9 +175,8 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line">            <span class="comment">// create a message</span></div>
 <div class="line">            dpp::message msg(event.msg.channel_id, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">            <span class="comment">// attach the file to the message</span></div>
-<div class="line">            msg.set_file_content(dpp::utility::read_file(<span class="stringliteral">&quot;path_to_your_image.jpg&quot;</span>));</div>
-<div class="line">            msg.set_filename(<span class="stringliteral">&quot;image.jpg&quot;</span>);</div>
+<div class="line">            <span class="comment">// attach the image to the message</span></div>
+<div class="line">            msg.add_file(<span class="stringliteral">&quot;image.jpg&quot;</span>, dpp::utility::read_file(<span class="stringliteral">&quot;path_to_your_image.jpg&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">            dpp::embed embed;</div>
 <div class="line">            embed.set_image(<span class="stringliteral">&quot;attachment://image.jpg&quot;</span>); <span class="comment">// reference to the attached file</span></div>
