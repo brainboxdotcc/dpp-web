@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"classdpp_1_1user__identified.html#a2a7d44696be1880931498dc48d4bb23c":[7,0,1,170,10],
 "classdpp_1_1user__identified.html#a2a7d44696be1880931498dc48d4bb23c":[6,0,1,170,10],
 "classdpp_1_1user__identified.html#a351cc6902117ad39c86539a41e1c23cd":[7,0,1,170,39],
 "classdpp_1_1user__identified.html#a351cc6902117ad39c86539a41e1c23cd":[6,0,1,170,39],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "classdpp_1_1websocket__client.html#abf247ed0871e89e6a319c95841a315bd":[6,0,1,188,7],
 "classdpp_1_1websocket__client.html#abf247ed0871e89e6a319c95841a315bd":[7,0,1,188,7],
 "classdpp_1_1websocket__client.html#ae0e5e0799448bf29506bfcc21168d3fa":[6,0,1,188,15],
-"classdpp_1_1websocket__client.html#ae0e5e0799448bf29506bfcc21168d3fa":[7,0,1,188,15],
-"classdpp_1_1websocket__client.html#aea281ac4eef3336e3b78227beb21e4ef":[7,0,1,188,1]
+"classdpp_1_1websocket__client.html#ae0e5e0799448bf29506bfcc21168d3fa":[7,0,1,188,15]
 };

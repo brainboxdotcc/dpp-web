@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Creating a Discord Bot - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Building a discord bot in Windows using WSL (Windows Subsystem for Linux) - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Creating a Discord Bot - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Building a discord bot in Windows using WSL (Windows Subsystem for Linux) - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Creating a Discord Bot - D++ - The lightweight C++ Discord API Library">
-<title>Creating a Discord Bot - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Building a discord bot in Windows using WSL (Windows Subsystem for Linux) - D++ - The lightweight C++ Discord API Library">
+<title>Building a discord bot in Windows using WSL (Windows Subsystem for Linux) - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_docpages_02_building_a_bot.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('build-a-discord-bot-windows-wsl.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,18 +98,28 @@ $(document).ready(function(){initNavTree('md_docpages_02_building_a_bot.html',''
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Creating a Discord Bot </div></div>
+  <div class="headertitle"><div class="title">Building a discord bot in Windows using WSL (Windows Subsystem for Linux) </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >If you are wanting to build a bot using C++, you're in the right place! The fast and easy tutorials below will guide you through how to build a bot using the D++ library on either a UNIX-like (e.g. Linux) system with CMake or with Windows using Visual Studio 2019.</p>
-<p >Click on a link below for a guide specifically for your system:</p>
-<ul>
-<li><a class="el" href="build-a-discord-bot-windows-visual-studio.html">Building a discord bot in Windows using Visual Studio</a></li>
-<li><a class="el" href="build-a-discord-bot-windows-wsl.html">Building a discord bot in Windows using WSL (Windows Subsystem for Linux)</a></li>
-<li><a class="el" href="buildcmake.html">Building a Discord Bot using CMake/UNIX</a></li>
-<li><a class="el" href="building-a-cpp-discord-bot-in-repl.html">Creating a Discord bot in Repl.it</a></li>
-<li><a class="el" href="creating-a-bot-application.html">Creating a Bot Account</a> </li>
-</ul>
+<div class="textblock"><p >This Tutorial teaches you how to create a lightweight environment for D++-development using <b>WSL</b> and <b>Visual Studio Code</b> </p><dl class="section note"><dt>Note</dt><dd>This Tutorial will use <b>WSL's default Ubuntu</b>! You might use other Distros if you prefer, but keep in mind the setup process might be different!</dd></dl>
+<ol type="1">
+<li>Make sure you have installed your WSL 2 environment properly using <a href="https://docs.microsoft.com/en-us/windows/wsl/install">this guide to setup up WSL</a> and <a href="https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode">this guide to connect to Visual Studio Code</a>.</li>
+<li>Now open PowerShell as an Admin and type <code>wsl</code> to start up your subsystem. <dl class="section note"><dt>Note</dt><dd>If you want to set up a CMake project (recommended for production bots) now, consider continuing your path of becoming the master of all Discord bots <a href="https://dpp.dev/buildcmake.html">here</a>, otherwise keep following this guide!</dd></dl>
+</li>
+<li>Go to your home directory using <code>cd ~</code></li>
+<li>Download the latest build for your Distro using <code>wget [url here]</code>. In this guide we will use the v10.0.0 build for Ubuntu x86-64: <code>wget <a href="https://github.com/brainboxdotcc/DPP/releases/download/v10.0.0/libdpp-10.0.0-linux-x64.deb">https://github.com/brainboxdotcc/DPP/releases/download/v10.0.0/libdpp-10.0.0-linux-x64.deb</a></code> <dl class="section note"><dt>Note</dt><dd>replace the highlighted filenames with the package you downloaded earlier if you are using a different OS</dd></dl>
+</li>
+<li>Finally install all required deps and the library using <code>sudo apt-get install libopus0 &amp;&amp; sudo apt-get install -y libopus-dev &amp;&amp; sudo apt-get install -y libsodium-dev &amp;&amp; sudo dpkg -i</code> <b>libdpp-10.0.0-linux-x64.deb</b> <code>&amp;&amp; rm</code> <b>libdpp-10.0.0-linux-x64.deb</b> </li>
+</ol>
+<h3><a class="anchor" id="autotoc_md29"></a>
+Congratulations, you've successfully installed all dependencies! Now comes the real fun: Setting up the environment! &lt;br/&gt; For this tutorial we'll use a as small as possible setup, so you might create a more advanced one for production bots.</h3>
+<ol type="1">
+<li>Navigate to a folder of your choice using <code>cd your/path/here</code> or create a new directory using <code>mkdir MyBot &amp;&amp; cd MyBot</code></li>
+<li>Now that you've a folder to work in type <code>&gt; mybot.cxx</code> to create a file you can work in!</li>
+<li>Now you can open this file in Visual Studio Code by pressing <code>CTRL+SHIFT+P</code> and typing <code>Remote-WSL: New WSL Window</code>. This will bring up a new window. In the new window, choose <code>open folder</code> and choose the folder you've created prior. Press OK and now you have your Folder opened as a Workspace!</li>
+<li>Add code to your CXX file and compile it by running <code>g++ -std=c++17 *.cxx -o bot -ldpp</code> in the same folder as your cxx file.</li>
+<li>start your bot by typing <code>./bot</code>! </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -117,6 +127,7 @@ $(document).ready(function(){initNavTree('md_docpages_02_building_a_bot.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="md_docpages_02_building_a_bot.html">Creating a Discord Bot</a></li>
   </ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

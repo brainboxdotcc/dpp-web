@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classdpp_1_1connection.html#a058f38e961e2225b0fcf6ea3e3bd5c41":[7,0,1,44,3],
 "classdpp_1_1connection.html#a058f38e961e2225b0fcf6ea3e3bd5c41":[6,0,1,44,3],
 "classdpp_1_1connection.html#a131edac1a872df01bea43ab8adf9ff63":[6,0,1,44,2],
 "classdpp_1_1connection.html#a131edac1a872df01bea43ab8adf9ff63":[7,0,1,44,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classdpp_1_1discord__voice__client.html#a9aab17086711ef6777a01ee0974b5ce8":[6,0,1,47,49],
 "classdpp_1_1discord__voice__client.html#a9aab17086711ef6777a01ee0974b5ce8":[7,0,1,47,49],
 "classdpp_1_1discord__voice__client.html#aa16ac9036cb13658289f58dc9035e395":[7,0,1,47,61],
-"classdpp_1_1discord__voice__client.html#aa16ac9036cb13658289f58dc9035e395":[6,0,1,47,61],
-"classdpp_1_1discord__voice__client.html#aa183564aac368ba97b653260ab5f5b6b":[7,0,1,47,43]
+"classdpp_1_1discord__voice__client.html#aa16ac9036cb13658289f58dc9035e395":[6,0,1,47,61]
 };

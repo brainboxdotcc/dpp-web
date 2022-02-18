@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"classdpp_1_1role.html#a1cd275ca1aa52763e05b78a8a3443476":[7,0,1,139,1],
 "classdpp_1_1role.html#a1cd275ca1aa52763e05b78a8a3443476":[6,0,1,139,1],
 "classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f":[7,0,1,139,51],
 "classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f":[6,0,1,139,51],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "classdpp_1_1ssl__client.html#aad4da6489c8f08030ca49c060a23740a":[6,0,1,147,5],
 "classdpp_1_1ssl__client.html#aad4da6489c8f08030ca49c060a23740a":[7,0,1,147,5],
 "classdpp_1_1ssl__client.html#ab805a3cc483018dbba6b745f7fa6ff24":[7,0,1,147,1],
-"classdpp_1_1ssl__client.html#ab805a3cc483018dbba6b745f7fa6ff24":[6,0,1,147,1],
-"classdpp_1_1ssl__client.html#abf247ed0871e89e6a319c95841a315bd":[6,0,1,147,6]
+"classdpp_1_1ssl__client.html#ab805a3cc483018dbba6b745f7fa6ff24":[6,0,1,147,1]
 };
