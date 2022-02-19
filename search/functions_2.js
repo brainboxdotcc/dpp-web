@@ -45,7 +45,7 @@ var searchData=
   ['connection_42',['connection',['../classdpp_1_1connection.html#a8011f7947197f36ed854a16ab0e63233',1,'dpp::connection']]],
   ['copy_5funit_43',['copy_unit',['../namespacedetail.html#adcecc40fe13a2b872de3b7fc8a871c87',1,'detail::copy_unit(string_view unit, OutputIt out, wchar_t)'],['../namespacedetail.html#a7594c0bc5a5dd12ad9d1804545f1c36f',1,'detail::copy_unit(string_view unit, OutputIt out, Char)']]],
   ['count_44',['count',['../classdpp_1_1cache.html#a63fb9389314371ca017647db2aad53f1',1,'dpp::cache']]],
-  ['cout_5flogger_45',['cout_logger',['../namespacedpp_1_1utility.html#aa0a02c16d644ae968fa7836f125fe2ca',1,'dpp::utility']]],
+  ['cout_5flogger_45',['cout_logger',['../namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277',1,'dpp::utility']]],
   ['create_5fdm_5fchannel_46',['create_dm_channel',['../classdpp_1_1cluster.html#a55c6a9bb92a500aefc65a953e419c27f',1,'dpp::cluster']]],
   ['create_5fwebhook_47',['create_webhook',['../classdpp_1_1cluster.html#a627510bf4f4d1c3a999ccb506c75ec47',1,'dpp::cluster']]],
   ['current_5fapplication_5fget_48',['current_application_get',['../classdpp_1_1cluster.html#ac3dc39069aaaa492727f39b35edd957e',1,'dpp::cluster']]],

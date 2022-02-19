@@ -144,7 +144,7 @@ var searchData=
   ['cotype_5fbutton_141',['cotype_button',['../namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e',1,'dpp']]],
   ['cotype_5fselect_142',['cotype_select',['../namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc',1,'dpp']]],
   ['count_143',['count',['../structdpp_1_1reaction.html#ac7e46baa7c5cd668e43198670579af6e',1,'dpp::reaction::count()'],['../classdpp_1_1cache.html#a63fb9389314371ca017647db2aad53f1',1,'dpp::cache::count()'],['../structdpp_1_1audit__extra.html#a47d8e8609aa44431176494ea7adb86ed',1,'dpp::audit_extra::count()']]],
-  ['cout_5flogger_144',['cout_logger',['../namespacedpp_1_1utility.html#aa0a02c16d644ae968fa7836f125fe2ca',1,'dpp::utility']]],
+  ['cout_5flogger_144',['cout_logger',['../namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277',1,'dpp::utility']]],
   ['cover_5fimage_145',['cover_image',['../classdpp_1_1application.html#a564b1a926e6890cb59db5130c5b3ac5d',1,'dpp::application']]],
   ['cover_5fsticker_5fid_146',['cover_sticker_id',['../structdpp_1_1sticker__pack.html#a49377b72f118dc19514f165d344a83d7',1,'dpp::sticker_pack']]],
   ['cp_5faggressive_147',['cp_aggressive',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e',1,'dpp']]],
