@@ -9,6 +9,8 @@ var structdpp_1_1form__submit__t =
     [ "get_original_response", "structdpp_1_1form__submit__t.html#ad106ea02219af2a9bc35519f3bde6b36", null ],
     [ "get_parameter", "structdpp_1_1form__submit__t.html#a7282fbf5ac16164b7274358c2c5c70bd", null ],
     [ "is_cancelled", "structdpp_1_1form__submit__t.html#aca2880114f69b7ba62eb5137824c1432", null ],
+    [ "reply", "structdpp_1_1form__submit__t.html#a18a85ecc48f009e2a3739a2ac8cd03ff", null ],
+    [ "reply", "structdpp_1_1form__submit__t.html#ababdebb3624fad0d632912dfcd4b38f5", null ],
     [ "reply", "structdpp_1_1form__submit__t.html#a897fc83f54829f32c2041b43fd2cebaa", null ],
     [ "reply", "structdpp_1_1form__submit__t.html#aba0415877754c69baea7de583ef9c6d1", null ],
     [ "thinking", "structdpp_1_1form__submit__t.html#af8a6206ac490ce5f3cf9a02c11fccccf", null ],

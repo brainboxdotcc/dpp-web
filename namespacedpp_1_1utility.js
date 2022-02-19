@@ -15,6 +15,7 @@ var namespacedpp_1_1utility =
     [ "avatar_size", "namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc", null ],
     [ "bot_invite_url", "namespacedpp_1_1utility.html#a4be90a8bb2dd9eecf61e934592656c39", null ],
     [ "bytes", "namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08", null ],
+    [ "cout_logger", "namespacedpp_1_1utility.html#aa0a02c16d644ae968fa7836f125fe2ca", null ],
     [ "current_date_time", "namespacedpp_1_1utility.html#a1a9168eaaf347543e55e607858f24eb3", null ],
     [ "debug_dump", "namespacedpp_1_1utility.html#a02456e22a1d41893a9b321bf8ccaeec6", null ],
     [ "exec", "namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0", null ],

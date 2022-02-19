@@ -2,6 +2,10 @@ var classdpp_1_1interaction =
 [
     [ "build_json", "classdpp_1_1interaction.html#a4ee649c8fe2a79e51fffd95315a0cae7", null ],
     [ "fill_from_json", "classdpp_1_1interaction.html#a23ff816e36c44d2afa51c34a1121a124", null ],
+    [ "get_autocomplete_interaction", "classdpp_1_1interaction.html#ae0c4f92722e07cf8815a8a899381e657", null ],
+    [ "get_command_interaction", "classdpp_1_1interaction.html#ad75f1efe3900962422b2bf643bd654f4", null ],
+    [ "get_command_name", "classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140", null ],
+    [ "get_component_interaction", "classdpp_1_1interaction.html#acb48f4602b96d1a2a289422ae1813753", null ],
     [ "get_creation_time", "classdpp_1_1interaction.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "application_id", "classdpp_1_1interaction.html#a2575444b8e918c947fb4ffc30c442201", null ],
     [ "cache_policy", "classdpp_1_1interaction.html#abc6027911679c409058e1ff4904154cc", null ],
