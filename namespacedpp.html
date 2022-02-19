@@ -1742,6 +1742,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a36d2c45cce93740da4da28ef18e90a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1user.html">user</a> &amp;u)</td></tr>
 <tr class="memdesc:a36d2c45cce93740da4da28ef18e90a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a user from json  <a href="namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52">More...</a><br /></td></tr>
 <tr class="separator:a36d2c45cce93740da4da28ef18e90a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da92d90e8b0847e2d8c2633aaf370f0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6da92d90e8b0847e2d8c2633aaf370f0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0">run_once</a> ()</td></tr>
+<tr class="memdesc:a6da92d90e8b0847e2d8c2633aaf370f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run some code within an if() statement only once.  <a href="namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0">More...</a><br /></td></tr>
+<tr class="separator:a6da92d90e8b0847e2d8c2633aaf370f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -5487,6 +5491,38 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6da92d90e8b0847e2d8c2633aaf370f0" name="a6da92d90e8b0847e2d8c2633aaf370f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da92d90e8b0847e2d8c2633aaf370f0">&#9670;&nbsp;</a></span>run_once()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto dpp::run_once </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run some code within an if() statement only once. </p>
+<p >Use this template like this:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">if</span> (dpp::run_once&lt;struct any_unique_name_you_like_here&gt;()) {</div>
+<div class="line">    <span class="comment">// Your code here</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>any unique 'tag' identifier name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>auto a true/false return to say if we should execute or not </dd></dl>
 
 </div>
 </div>

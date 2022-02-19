@@ -845,6 +845,7 @@ var namespacedpp =
     [ "int64_not_null", "namespacedpp.html#adfc76d21d5b4cc6a0ca57ce20720547d", null ],
     [ "int8_not_null", "namespacedpp.html#a37a59e37461d9f8668dd948f2635add6", null ],
     [ "populate_result", "namespacedpp.html#aad6090df4ddac62da6eaddf6ea3367e1", null ],
+    [ "run_once", "namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0", null ],
     [ "set_bool_not_null", "namespacedpp.html#ad1d0e1acb0698f7cb0f656ce2b19ff3e", null ],
     [ "set_double_not_null", "namespacedpp.html#a2d0d3c73e35b541ba1d95eedd79a13f9", null ],
     [ "set_int16_not_null", "namespacedpp.html#a6d37d9601d4975b6a5bf9dce560cd806", null ],
