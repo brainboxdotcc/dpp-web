@@ -8,10 +8,10 @@
     <detaileddescription>
 <sect2 id="cpp-eval-command-discord_1autotoc_md42">
 <title>What is an eval command anyway?</title>
-<para>Many times people will ask: &quot;how do i make a command like &apos;eval&apos; in C++&quot;. For the uninitiated, an <computeroutput>eval</computeroutput> command is a command often found in interpreted languages such as Javascript and Python, which allows the developer to pass in raw interpreter statements which are then executed within the context of the running program, without any sandboxing. Eval commands are plain <bold>evil</bold>.</para>
+<para>Many times people will ask: &quot;how do i make a command like &apos;eval&apos; in C++&quot;. For the uninitiated, an <computeroutput>eval</computeroutput> command is a command often found in interpreted languages such as Javascript and Python, which allows the developer to pass in raw interpreter statements which are then executed within the context of the running program, without any sandboxing. Eval commands are plain <bold>evil</bold>, if not properly coded in.</para>
 <para>Needless to say, this is very dangerous. If you are asking how to do this, and want to put this into your bot, we trust that you have a very good reason to do so and have considered alternatives before resorting to this. The code below is for educational purposes only and makes several assumptions:</para>
 <para><orderedlist>
-<listitem><para>This code will only operate on UNUX-like systems such as Linux</para>
+<listitem><para>This code will only operate on UNIX-like systems such as Linux (not <bold>Darwin</bold>)</para>
 </listitem><listitem><para>It assumes you use GCC, and have <computeroutput>g++</computeroutput> installed on your server and in your $PATH</para>
 </listitem><listitem><para>The program will attempt to write to the current directory</para>
 </listitem><listitem><para>No security checks will be done against the code, except for to check that it is being run by the bot&apos;s developer by snowflake id. It is entirely possible to send an <computeroutput>!eval exit(0);</computeroutput> and make the bot quit, for example, or delete files from the host operating system, if misused or misconfigured.</para>
@@ -23,7 +23,7 @@
 </sect2>
 <sect2 id="cpp-eval-command-discord_1autotoc_md43">
 <title>Implementation details</title>
-<para>This code operates by outputting your provided code to be evaluated into a simple boilerplate program which can be compiled to a shared object library (.so file). This .so file is then compiled with g++, using the <computeroutput>-shared</computeroutput> and <computeroutput>-fPIC</computeroutput> flags. If the program can be successfully compiled, it is then loaded using <computeroutput>dlopen()</computeroutput>, and the symbol <computeroutput>so_exec()</computeroutput> searched for within it, and called. This <computeroutput>so_exec()</computeroutput> function will contain the body of the code given to the eval command. Once this has been called and it has returned, the <computeroutput>dlclose()</computeroutput> function is called to unload the library, and finally any temporary files (such as the .so file and its corresponding .cpp file) are cleaned up.</para>
+<para>This code operates by outputting your provided code to be evaluated into a simple boilerplate program which can be compiled to a shared object library (.so file). This .so file is then compiled with g++, using the <computeroutput>-shared</computeroutput> and <computeroutput>-fPIC</computeroutput> flags. If the program can be successfully compiled, it is then loaded using <computeroutput>dlopen()</computeroutput>, and the symbol <computeroutput>so_exec()</computeroutput> searched for within it, and called. This <computeroutput>so_exec()</computeroutput> function will contain the body of the code given to the eval command. Once this has been called and it has returned, the <computeroutput>dlclose()</computeroutput> function is called to unload the library, and finally any temporary files (such as the .so file and its corresponding .cpp file) are cleaned up. Docker is definitely recommended if you code on Windows/Mac OS, because docker desktop still uses a linux VM, so your code can easily use <computeroutput>.so</computeroutput> file and your code runs the same on your vps (if it also uses Linux distro)</para>
 </sect2>
 <sect2 id="cpp-eval-command-discord_1autotoc_md44">
 <title>Source code</title>
@@ -71,7 +71,7 @@
 <codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Important:<sp/>This<sp/>code<sp/>is<sp/>for<sp/>UNIX-like<sp/>systems<sp/>only,<sp/>e.g.</highlight></codeline>
 <codeline><highlight class="comment"><sp/>*<sp/>Linux,<sp/>BSD,<sp/>OSX.<sp/>It<sp/>will<sp/>NOT<sp/>work<sp/>on<sp/>Windows!</highlight></codeline>
 <codeline><highlight class="comment"><sp/>*<sp/>Note<sp/>for<sp/>OSX<sp/>you&apos;ll<sp/>probably<sp/>have<sp/>to<sp/>change<sp/>all<sp/>references</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>to<sp/>.so<sp/>to<sp/>.dylib.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>from<sp/>.so<sp/>to<sp/>.dylib.</highlight></codeline>
 <codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>

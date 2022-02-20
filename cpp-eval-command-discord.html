@@ -103,10 +103,10 @@ $(document).ready(function(){initNavTree('cpp-eval-command-discord.html',''); in
 <div class="contents">
 <div class="textblock"><h2><a class="anchor" id="autotoc_md42"></a>
 What is an eval command anyway?</h2>
-<p >Many times people will ask: "how do i make a command like 'eval' in C++". For the uninitiated, an <code>eval</code> command is a command often found in interpreted languages such as Javascript and Python, which allows the developer to pass in raw interpreter statements which are then executed within the context of the running program, without any sandboxing. Eval commands are plain <b>evil</b>.</p>
+<p >Many times people will ask: "how do i make a command like 'eval' in C++". For the uninitiated, an <code>eval</code> command is a command often found in interpreted languages such as Javascript and Python, which allows the developer to pass in raw interpreter statements which are then executed within the context of the running program, without any sandboxing. Eval commands are plain <b>evil</b>, if not properly coded in.</p>
 <p >Needless to say, this is very dangerous. If you are asking how to do this, and want to put this into your bot, we trust that you have a very good reason to do so and have considered alternatives before resorting to this. The code below is for educational purposes only and makes several assumptions:</p>
 <ol type="1">
-<li>This code will only operate on UNUX-like systems such as Linux</li>
+<li>This code will only operate on UNIX-like systems such as Linux (not <b>Darwin</b>)</li>
 <li>It assumes you use GCC, and have <code>g++</code> installed on your server and in your $PATH</li>
 <li>The program will attempt to write to the current directory</li>
 <li>No security checks will be done against the code, except for to check that it is being run by the bot's developer by snowflake id. It is entirely possible to send an <code>!eval exit(0);</code> and make the bot quit, for example, or delete files from the host operating system, if misused or misconfigured.</li>
@@ -116,7 +116,7 @@ What is an eval command anyway?</h2>
 <p >The evaluated code will run within its own thread, so can execute for as long as it needs (but use common sense, don't go spawning a tight <code>while</code> loop that runs forever, you'll lock a thread at 100% CPU that won't ever end!).</p>
 <h2><a class="anchor" id="autotoc_md43"></a>
 Implementation details</h2>
-<p >This code operates by outputting your provided code to be evaluated into a simple boilerplate program which can be compiled to a shared object library (.so file). This .so file is then compiled with g++, using the <code>-shared</code> and <code>-fPIC</code> flags. If the program can be successfully compiled, it is then loaded using <code>dlopen()</code>, and the symbol <code>so_exec()</code> searched for within it, and called. This <code>so_exec()</code> function will contain the body of the code given to the eval command. Once this has been called and it has returned, the <code>dlclose()</code> function is called to unload the library, and finally any temporary files (such as the .so file and its corresponding .cpp file) are cleaned up.</p>
+<p >This code operates by outputting your provided code to be evaluated into a simple boilerplate program which can be compiled to a shared object library (.so file). This .so file is then compiled with g++, using the <code>-shared</code> and <code>-fPIC</code> flags. If the program can be successfully compiled, it is then loaded using <code>dlopen()</code>, and the symbol <code>so_exec()</code> searched for within it, and called. This <code>so_exec()</code> function will contain the body of the code given to the eval command. Once this has been called and it has returned, the <code>dlclose()</code> function is called to unload the library, and finally any temporary files (such as the .so file and its corresponding .cpp file) are cleaned up. Docker is definitely recommended if you code on Windows/Mac OS, because docker desktop still uses a linux VM, so your code can easily use <code>.so</code> file and your code runs the same on your vps (if it also uses Linux distro)</p>
 <h2><a class="anchor" id="autotoc_md44"></a>
 Source code</h2>
 <dl class="section warning"><dt>Warning</dt><dd>If you manage to get your system, network, or anything else harmed by use or misuse of this code, we are not responsible. Don't say we didn't warn you! Find another way to solve your problem!</dd></dl>
@@ -159,7 +159,7 @@ Source code</h2>
 <div class="line"><span class="comment">/* Important: This code is for UNIX-like systems only, e.g.</span></div>
 <div class="line"><span class="comment"> * Linux, BSD, OSX. It will NOT work on Windows!</span></div>
 <div class="line"><span class="comment"> * Note for OSX you&#39;ll probably have to change all references</span></div>
-<div class="line"><span class="comment"> * to .so to .dylib.</span></div>
+<div class="line"><span class="comment"> * from .so to .dylib.</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
