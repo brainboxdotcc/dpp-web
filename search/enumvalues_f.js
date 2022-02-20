@@ -8,7 +8,7 @@ var searchData=
   ['u_5fcertified_5fmoderator_5',['u_certified_moderator',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a05e7983fd9a8181c8d8e59faa6d43b79',1,'dpp']]],
   ['u_5fdiscord_5femployee_6',['u_discord_employee',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a4ba288ac839eaff56a3d46e373764d76',1,'dpp']]],
   ['u_5fearly_5fsupporter_7',['u_early_supporter',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aefb9e680096448b61609f13e1b23736a',1,'dpp']]],
-  ['u_5fhouse_5fbalanace_8',['u_house_balanace',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a3e99159c534d3cd8d2b62ddbb465a85a',1,'dpp']]],
+  ['u_5fhouse_5fbalance_8',['u_house_balance',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a4c69e902b98a57d17f7ef74552af2223',1,'dpp']]],
   ['u_5fhouse_5fbravery_9',['u_house_bravery',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a90aa6259394b0cc214042c0fa0ae5f36',1,'dpp']]],
   ['u_5fhouse_5fbrilliance_10',['u_house_brilliance',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a092724653fc653a65807a13740eaec91',1,'dpp']]],
   ['u_5fhypesquad_5fevents_11',['u_hypesquad_events',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad59de70fe3833bd7b46b134bd6a77eeb',1,'dpp']]],

@@ -760,7 +760,7 @@ var namespacedpp =
       [ "u_bughunter_1", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aff3f9dd3f4da4e8c47c3dad9b080264e", null ],
       [ "u_house_bravery", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a90aa6259394b0cc214042c0fa0ae5f36", null ],
       [ "u_house_brilliance", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a092724653fc653a65807a13740eaec91", null ],
-      [ "u_house_balanace", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a3e99159c534d3cd8d2b62ddbb465a85a", null ],
+      [ "u_house_balance", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a4c69e902b98a57d17f7ef74552af2223", null ],
       [ "u_early_supporter", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aefb9e680096448b61609f13e1b23736a", null ],
       [ "u_team_user", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad9e65390bac5097c18380407eeaa8891", null ],
       [ "u_bughunter_2", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a464829636537cdc63c5afae54f37f271", null ],

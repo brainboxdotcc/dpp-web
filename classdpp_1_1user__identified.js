@@ -19,7 +19,7 @@ var classdpp_1_1user__identified =
     [ "is_certified_moderator", "classdpp_1_1user__identified.html#a88d7f40223baa835b92f6aa54af42420", null ],
     [ "is_discord_employee", "classdpp_1_1user__identified.html#a5780e0142e20d952d348c33d51a4d926", null ],
     [ "is_early_supporter", "classdpp_1_1user__identified.html#a5768865659ca76eebc37a8f02b1b7b9b", null ],
-    [ "is_house_balanace", "classdpp_1_1user__identified.html#ae4fda64d92055ef9ddac0ce0109b8d94", null ],
+    [ "is_house_balance", "classdpp_1_1user__identified.html#a8babf64a69f0d7d8d80c24e29c4e146f", null ],
     [ "is_house_bravery", "classdpp_1_1user__identified.html#afe19328a79ed87eb25fcb9fbbd8da2b5", null ],
     [ "is_house_brilliance", "classdpp_1_1user__identified.html#af4a509ae622f1b4531a758524b34f47e", null ],
     [ "is_mfa_enabled", "classdpp_1_1user__identified.html#a08cd09a04a75493693d60a99e0123905", null ],

@@ -49,7 +49,7 @@ var searchData=
   ['is_5ffeatureable_46',['is_featureable',['../classdpp_1_1guild.html#ad8b3e4ddcc5fb4fbfd717ac275ffc2a3',1,'dpp::guild']]],
   ['is_5fgroup_5fdm_47',['is_group_dm',['../classdpp_1_1channel.html#a27a623072570b333f697bd01c3616208',1,'dpp::channel']]],
   ['is_5fhoisted_48',['is_hoisted',['../classdpp_1_1role.html#ae0cb040c022f08d210c885012bf47919',1,'dpp::role']]],
-  ['is_5fhouse_5fbalanace_49',['is_house_balanace',['../classdpp_1_1user.html#ae4fda64d92055ef9ddac0ce0109b8d94',1,'dpp::user']]],
+  ['is_5fhouse_5fbalance_49',['is_house_balance',['../classdpp_1_1user.html#a8babf64a69f0d7d8d80c24e29c4e146f',1,'dpp::user']]],
   ['is_5fhouse_5fbravery_50',['is_house_bravery',['../classdpp_1_1user.html#afe19328a79ed87eb25fcb9fbbd8da2b5',1,'dpp::user']]],
   ['is_5fhouse_5fbrilliance_51',['is_house_brilliance',['../classdpp_1_1user.html#af4a509ae622f1b4531a758524b34f47e',1,'dpp::user']]],
   ['is_5flarge_52',['is_large',['../classdpp_1_1guild.html#ab345901eb0418b58344b72dbe21d40a1',1,'dpp::guild']]],

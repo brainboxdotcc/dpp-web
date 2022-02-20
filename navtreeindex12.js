@@ -1,7 +1,7 @@
 var NAVTREEINDEX12 =
 {
-"classdpp_1_1websocket__client.html#aa1a9af1a95e1fb4ac1504de8d591b650":[6,0,1,188,22],
 "classdpp_1_1websocket__client.html#aa1a9af1a95e1fb4ac1504de8d591b650":[7,0,1,188,22],
+"classdpp_1_1websocket__client.html#aa1a9af1a95e1fb4ac1504de8d591b650":[6,0,1,188,22],
 "classdpp_1_1websocket__client.html#aa735feca3545e156e0607c06d55288c4":[7,0,1,188,27],
 "classdpp_1_1websocket__client.html#aa735feca3545e156e0607c06d55288c4":[6,0,1,188,27],
 "classdpp_1_1websocket__client.html#aac65765349cbd3e787c0fd2af576ec6d":[7,0,1,188,14],
