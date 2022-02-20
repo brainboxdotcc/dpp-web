@@ -76,6 +76,7 @@ var classdpp_1_1cluster =
     [ "guild_commands_get_permissions", "classdpp_1_1cluster.html#ab7e992a10e120846d39a7d7d3c048ef9", null ],
     [ "guild_create", "classdpp_1_1cluster.html#af327d6e65c703ce001d666ef2adc4b25", null ],
     [ "guild_create_from_template", "classdpp_1_1cluster.html#ad277277c10ccdaecc3869a23d9ecb94b", null ],
+    [ "guild_current_member_edit", "classdpp_1_1cluster.html#afcd8806dddfab9403f963f9c3cd16d96", null ],
     [ "guild_delete", "classdpp_1_1cluster.html#a8a78935110be8ea8bf5fdc4f0734fd28", null ],
     [ "guild_delete_integration", "classdpp_1_1cluster.html#a0db4a48d1ebc2133c30963a995e156e1", null ],
     [ "guild_edit", "classdpp_1_1cluster.html#a5b0ce3857773519ca2ed62b49c04f267", null ],

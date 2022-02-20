@@ -552,6 +552,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3dc39069aaaa492727f39b35edd957e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac3dc39069aaaa492727f39b35edd957e">current_application_get</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:ac3dc39069aaaa492727f39b35edd957e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current (bot) application.  <a href="classdpp_1_1cluster.html#ac3dc39069aaaa492727f39b35edd957e">More...</a><br /></td></tr>
 <tr class="separator:ac3dc39069aaaa492727f39b35edd957e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd8806dddfab9403f963f9c3cd16d96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#afcd8806dddfab9403f963f9c3cd16d96">guild_current_member_edit</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const std::string &amp;nickname, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
+<tr class="memdesc:afcd8806dddfab9403f963f9c3cd16d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify current member.  <a href="classdpp_1_1cluster.html#afcd8806dddfab9403f963f9c3cd16d96">More...</a><br /></td></tr>
+<tr class="separator:afcd8806dddfab9403f963f9c3cd16d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e1e5dd813d36fffd6b532ed1b31178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a75e1e5dd813d36fffd6b532ed1b31178">current_user_connections_get</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a75e1e5dd813d36fffd6b532ed1b31178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current user's connections (linked accounts, e.g. steam, xbox). This call requires the oauth2 <code>connections</code> scope and cannot be executed against a bot token.  <a href="classdpp_1_1cluster.html#a75e1e5dd813d36fffd6b532ed1b31178">More...</a><br /></td></tr>
 <tr class="separator:a75e1e5dd813d36fffd6b532ed1b31178"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3949,6 +3952,52 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="afcd8806dddfab9403f963f9c3cd16d96" name="afcd8806dddfab9403f963f9c3cd16d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd8806dddfab9403f963f9c3cd16d96">&#9670;&nbsp;</a></span>guild_current_member_edit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_current_member_edit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>nickname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modify current member. </p>
+<p >Modifies the current member in a guild. Fires a <code>Guild Member Update</code> Gateway event.</p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild ID to change on </td></tr>
+    <tr><td class="paramname">nickname</td><td>New nickname, or empty string to clear nickname </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request.">dpp::confirmation</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8a78935110be8ea8bf5fdc4f0734fd28" name="a8a78935110be8ea8bf5fdc4f0734fd28"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a78935110be8ea8bf5fdc4f0734fd28">&#9670;&nbsp;</a></span>guild_delete()</h2>
 
@@ -5462,7 +5511,7 @@ Friends</h2></td></tr>
 
 <p>Change current user nickname. </p>
 <p >Modifies the nickname of the current user in a guild. Fires a <code>Guild Member Update</code> Gateway event.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Deprecated in favor of Modify Current Member. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Deprecated in favor of Modify Current Member. Will be replaced by <a class="el" href="classdpp_1_1cluster.html#afcd8806dddfab9403f963f9c3cd16d96" title="Modify current member.">dpp::cluster::guild_current_member_edit</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
