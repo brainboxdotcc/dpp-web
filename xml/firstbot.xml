@@ -16,70 +16,51 @@
 <entry thead="no"><para></para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Be<sp/>sure<sp/>to<sp/>place<sp/>your<sp/>token<sp/>in<sp/>the<sp/>line<sp/>below.</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>Follow<sp/>steps<sp/>here<sp/>to<sp/>get<sp/>a<sp/>token:<sp/>https://dpp.dev/creating-a-bot-application.html</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>You<sp/>will<sp/>also<sp/>need<sp/>to<sp/>fill<sp/>in<sp/>your<sp/>guild<sp/>id.<sp/>When<sp/>you<sp/>invite<sp/>the<sp/>bot,<sp/>be<sp/>sure<sp/>to</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>invite<sp/>it<sp/>with<sp/>the<sp/>scopes<sp/>&apos;bot&apos;<sp/>and<sp/>&apos;applications.commands&apos;,<sp/>e.g.</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>https://discord.com/oauth2/authorize?client_id=940762342495518720&amp;scope=bot+applications.commands&amp;permissions=139586816064</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref><sp/>MY_GUILD_ID<sp/><sp/>=<sp/><sp/>825407338755653642;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
-<codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>bot<sp/>cluster<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(BOT_TOKEN);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Handle<sp/>slash<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_interaction_create([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">get_command_name</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ping&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(</highlight><highlight class="stringliteral">&quot;Pong!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Register<sp/>slash<sp/>command<sp/>here<sp/>in<sp/>on_ready<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wrap<sp/>command<sp/>registration<sp/>in<sp/>run_once<sp/>to<sp/>make<sp/>sure<sp/>it<sp/>doesnt<sp/>run<sp/>on<sp/>every<sp/>full<sp/>reconnection<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.guild_command_create(<ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref>(</highlight><highlight class="stringliteral">&quot;ping&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ping<sp/>pong!&quot;</highlight><highlight class="normal">,<sp/>bot.me.id),<sp/>MY_GUILD_ID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.guild_command_create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref>(</highlight><highlight class="stringliteral">&quot;ping&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ping<sp/>pong!&quot;</highlight><highlight class="normal">,<sp/>bot.me.id),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MY_GUILD_ID</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Output<sp/>simple<sp/>log<sp/>messages<sp/>to<sp/>stdout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>the<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 <para></para>
 </entry><entry thead="no"><para></para>
 <para><programlisting filename=".cpp"><codeline><highlight class="normal">let<sp/>Discord<sp/>=<sp/>require(</highlight><highlight class="stringliteral">&apos;discord.js&apos;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Be<sp/>sure<sp/>to<sp/>place<sp/>your<sp/>token<sp/>in<sp/>the<sp/>line<sp/>below.</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>Follow<sp/>steps<sp/>here<sp/>to<sp/>get<sp/>a<sp/>token:<sp/>https://dpp.dev/creating-a-bot-application.html</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>You<sp/>will<sp/>also<sp/>need<sp/>to<sp/>fill<sp/>in<sp/>your<sp/>guild<sp/>id.<sp/>When<sp/>you<sp/>invite<sp/>the<sp/>bot,<sp/>be<sp/>sure<sp/>to</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>invite<sp/>it<sp/>with<sp/>the<sp/>scopes<sp/>&apos;bot&apos;<sp/>and<sp/>&apos;applications.commands&apos;,<sp/>e.g.</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>https://discord.com/oauth2/authorize?client_id=940762342495518720&amp;scope=bot+applications.commands&amp;permissions=139586816064</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">let<sp/>BOT_TOKEN<sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;add<sp/>your<sp/>token<sp/>here&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal">let<sp/>MY_GUILD_ID<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;825407338755653642&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Create<sp/>bot<sp/>client<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">let<sp/>bot<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Discord.Client({<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5" kindref="member">intents</ref>:<sp/>[]<sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Handle<sp/>slash<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">bot.on(</highlight><highlight class="stringliteral">&apos;interactionCreate&apos;</highlight><highlight class="normal">,<sp/>(interaction)<sp/>=&gt;<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(interaction.isCommand()<sp/>&amp;&amp;<sp/>interaction.commandName<sp/>===<sp/></highlight><highlight class="stringliteral">&apos;ping&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interaction.reply({content:<sp/></highlight><highlight class="stringliteral">&apos;Pong!&apos;</highlight><highlight class="normal">});</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal">});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Register<sp/>slash<sp/>command<sp/>here<sp/>in<sp/>on_ready</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*<sp/>Uses<sp/>.once<sp/>to<sp/>make<sp/>sure<sp/>it<sp/>doesn&apos;t<sp/>run<sp/>on<sp/>every<sp/>full<sp/>reconnection</highlight></codeline>
-<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">bot.once(</highlight><highlight class="stringliteral">&apos;ready&apos;</highlight><highlight class="normal">,<sp/>async<sp/>()<sp/>=&gt;<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>let<sp/>guild<sp/>=<sp/>await<sp/>bot.guilds.fetch(MY_GUILD_ID);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>await<sp/>guild.commands.create({</highlight></codeline>
@@ -88,13 +69,8 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal">});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>no<sp/>default<sp/>logging<sp/>functionality<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Start<sp/>the<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal">bot.login(BOT_TOKEN);</highlight></codeline>
-<codeline><highlight class="normal">‍</highlight></codeline>
-<codeline><highlight class="normal">‍</highlight></codeline>
-<codeline><highlight class="normal">‍</highlight></codeline>
+<codeline><highlight class="normal">bot.login(BOT_TOKEN);‍</highlight></codeline>
 </programlisting></para>
 <para></para>
 </entry></row>

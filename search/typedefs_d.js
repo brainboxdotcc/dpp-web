@@ -7,5 +7,6 @@ var searchData=
   ['timer_5fcallback_5ft_4',['timer_callback_t',['../namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964',1,'dpp']]],
   ['timer_5fnext_5ft_5',['timer_next_t',['../namespacedpp.html#a408d79969007e9c450e186f5387df9e5',1,'dpp']]],
   ['timer_5freg_5ft_6',['timer_reg_t',['../namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455',1,'dpp']]],
-  ['type_7',['type',['../structdetail_1_1make__unsigned__or__unchanged.html#a76f8c2352d357582a9521d3e3608bdaf',1,'detail::make_unsigned_or_unchanged::type()'],['../structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html#a80c4e8ddfad700203b4dfbc1b624c928',1,'detail::make_unsigned_or_unchanged&lt; T, true &gt;::type()']]]
+  ['tm_5fwriter_5ftype_7',['tm_writer_type',['../structchrono__formatter.html#a09059647539ca59eec615bee24210c23',1,'chrono_formatter']]],
+  ['type_8',['type',['../structmake__unsigned__or__unchanged.html#a1cdb5264b3817c5a8b56d6609f2a66bd',1,'make_unsigned_or_unchanged::type()'],['../structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html#a09970eb9c095bb53611ceb6eb9422d27',1,'make_unsigned_or_unchanged&lt; T, true &gt;::type()']]]
 ];

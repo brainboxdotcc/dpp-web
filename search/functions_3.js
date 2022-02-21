@@ -16,7 +16,9 @@ var searchData=
   ['discord_5fclient_13',['discord_client',['../classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082',1,'dpp::discord_client']]],
   ['discord_5fvoice_5fclient_14',['discord_voice_client',['../classdpp_1_1discord__voice__client.html#a5b344a5989d67f0f0caf5b52236055bf',1,'dpp::discord_voice_client']]],
   ['discover_5fip_15',['discover_ip',['../classdpp_1_1discord__voice__client.html#ae8e844ebb991eeb2d63771f6c5ea4938',1,'dpp::discord_voice_client']]],
-  ['double_5fnot_5fnull_16',['double_not_null',['../namespacedpp.html#a7fd4373c8570f0cf6e3736e9cd1c4436',1,'dpp']]],
-  ['download_17',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
-  ['dtemplate_18',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
+  ['do_5fparse_16',['do_parse',['../structformatter_3_01std_1_1tm_00_01_char_01_4.html#af60061db23592a957a3b7ce4be308b46',1,'formatter&lt; std::tm, Char &gt;']]],
+  ['do_5fwrite_17',['do_write',['../namespacedetail.html#a5007cc441bd246a9096070c10d1ea683',1,'detail']]],
+  ['double_5fnot_5fnull_18',['double_not_null',['../namespacedpp.html#a7fd4373c8570f0cf6e3736e9cd1c4436',1,'dpp']]],
+  ['download_19',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
+  ['dtemplate_20',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
 ];

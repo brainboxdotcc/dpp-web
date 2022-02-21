@@ -19,7 +19,7 @@ var searchData=
   ['port_16',['port',['../classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07',1,'dpp::ssl_client::port()'],['../structdpp_1_1http__connect__info.html#a56064863ee0f0085cdd3c433ec719ac1',1,'dpp::http_connect_info::port()']]],
   ['position_17',['position',['../classdpp_1_1channel.html#a1f31178c9e86ad1490b8619cb9bdbde4',1,'dpp::channel::position()'],['../classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958',1,'dpp::role::position()']]],
   ['postdata_18',['postdata',['../classdpp_1_1http__request.html#adab1976475788ca96b5b52349367a322',1,'dpp::http_request']]],
-  ['precision_19',['precision',['../structdetail_1_1chrono__formatter.html#a60ef0d2708f1b5761f1c8a226c00b482',1,'detail::chrono_formatter']]],
+  ['precision_19',['precision',['../structchrono__formatter.html#ac5a9b30480e2e13d73dd73d244c69038',1,'chrono_formatter']]],
   ['prefixes_20',['prefixes',['../classdpp_1_1commandhandler.html#acbbac80b9d8fd5b3f82fd5bfc919f9bc',1,'dpp::commandhandler']]],
   ['premium_5fsince_21',['premium_since',['../classdpp_1_1guild__member.html#ae262a3f3d68a9728a92654e2f5b9c758',1,'dpp::guild_member']]],
   ['premium_5fsubscription_5fcount_22',['premium_subscription_count',['../classdpp_1_1guild.html#acd884a98bc58d26d29a6a5d2e249f1c9',1,'dpp::guild']]],

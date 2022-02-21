@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['make_5funsigned_5for_5funchanged_0',['make_unsigned_or_unchanged',['../structdetail_1_1make__unsigned__or__unchanged.html',1,'detail']]],
-  ['make_5funsigned_5for_5funchanged_3c_20t_2c_20true_20_3e_1',['make_unsigned_or_unchanged&lt; T, true &gt;',['../structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html',1,'detail']]],
+  ['make_5funsigned_5for_5funchanged_0',['make_unsigned_or_unchanged',['../structmake__unsigned__or__unchanged.html',1,'']]],
+  ['make_5funsigned_5for_5funchanged_3c_20t_2c_20true_20_3e_1',['make_unsigned_or_unchanged&lt; T, true &gt;',['../structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html',1,'']]],
   ['managed_2',['managed',['../classdpp_1_1managed.html',1,'dpp']]],
   ['message_3',['message',['../structdpp_1_1message.html',1,'dpp']]],
   ['message_5fcollector_4',['message_collector',['../classdpp_1_1message__collector.html',1,'dpp::message_collector'],['../classmessage__collector.html',1,'message_collector']]],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['scheduled_5fevent_5fcollector_5ft_0',['scheduled_event_collector_t',['../namespacedpp.html#a45736823a51be6eb7910f036b30397b2',1,'dpp']]],
   ['scheduled_5fevent_5fmap_1',['scheduled_event_map',['../namespacedpp.html#a1d8eeeaca0cdc14125cbf2f4f0722781',1,'dpp']]],
-  ['seconds_2',['seconds',['../structdetail_1_1chrono__formatter.html#a0f895aad24b30328cfe90511f47bc7c4',1,'detail::chrono_formatter']]],
+  ['seconds_2',['seconds',['../structchrono__formatter.html#a90f892651e579f73c47eb5647e8ef7df',1,'chrono_formatter']]],
   ['shard_5flist_3',['shard_list',['../namespacedpp.html#a13c4d4e6238396245b349e6a637897e0',1,'dpp']]],
   ['slashcommand_5fmap_4',['slashcommand_map',['../namespacedpp.html#adfefe335636cdf5dbbba145a3828c554',1,'dpp']]],
   ['snowflake_5',['snowflake',['../namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475',1,'dpp']]],

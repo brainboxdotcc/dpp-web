@@ -4,7 +4,7 @@ var searchData=
   ['safe_5ffloat_5fconversion_1',['safe_float_conversion',['../namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a',1,'safe_duration_cast']]],
   ['scheduled_5fevent_2',['scheduled_event',['../structdpp_1_1scheduled__event.html#a4b4a32d20426b9a559e4ec0b86e049d1',1,'dpp::scheduled_event']]],
   ['scheduled_5fevent_5fcollector_3',['scheduled_event_collector',['../classdpp_1_1scheduled__event__collector.html#ae5bb03a46650399458b31d27bcfe6bf9',1,'dpp::scheduled_event_collector']]],
-  ['second_4',['second',['../structdetail_1_1chrono__formatter.html#af225ef12bd4e460a70c8e51efa1347b1',1,'detail::chrono_formatter']]],
+  ['second_4',['second',['../structchrono__formatter.html#a806024ac1a6ef25971ca35ff7868079a',1,'chrono_formatter']]],
   ['select_5fclick_5ft_5',['select_click_t',['../structdpp_1_1select__click__t.html#adb17761e9ee06c77ae9daf0313c63913',1,'dpp::select_click_t']]],
   ['select_5foption_6',['select_option',['../structdpp_1_1select__option.html#afdd887738c88c21cee80ce2ddd6a0f84',1,'dpp::select_option::select_option(const std::string &amp;label, const std::string &amp;value, const std::string &amp;description=&quot;&quot;)'],['../structdpp_1_1select__option.html#aa6ca8ed29e8e1f81ab8ce82e2b9ed1fa',1,'dpp::select_option::select_option()']]],
   ['self_5fstream_7',['self_stream',['../classdpp_1_1voicestate.html#a5b0fa82d1d55249aeb96fd7119aac5c2',1,'dpp::voicestate']]],
@@ -60,7 +60,7 @@ var searchData=
   ['set_5fmin_5fvalue_57',['set_min_value',['../structdpp_1_1command__option.html#a0ff9143e5346618336b14c78934208d7',1,'dpp::command_option']]],
   ['set_5fmin_5fvalues_58',['set_min_values',['../classdpp_1_1component.html#a39de811904ed62eb0fa2d37be2918503',1,'dpp::component']]],
   ['set_5fmute_59',['set_mute',['../classdpp_1_1guild__member.html#a91cf849628af76ad3fb4c58c8d54efab',1,'dpp::guild_member']]],
-  ['set_5fname_60',['set_name',['../classdpp_1_1role.html#aecb03f1ceb58c646db0347ad8908b849',1,'dpp::role::set_name()'],['../structdpp_1_1scheduled__event.html#ae1608ca79998c00779c44ad6c3c0af97',1,'dpp::scheduled_event::set_name()'],['../classdpp_1_1guild.html#a2aa137d0bad0143fc22c0e9b45df2540',1,'dpp::guild::set_name()'],['../classdpp_1_1channel.html#a304e19817c6bf0e363daf497a3011f3a',1,'dpp::channel::set_name()'],['../classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353',1,'dpp::slashcommand::set_name()']]],
+  ['set_5fname_60',['set_name',['../classdpp_1_1guild.html#a2aa137d0bad0143fc22c0e9b45df2540',1,'dpp::guild::set_name()'],['../structdpp_1_1scheduled__event.html#ae1608ca79998c00779c44ad6c3c0af97',1,'dpp::scheduled_event::set_name()'],['../classdpp_1_1role.html#aecb03f1ceb58c646db0347ad8908b849',1,'dpp::role::set_name()'],['../classdpp_1_1channel.html#a304e19817c6bf0e363daf497a3011f3a',1,'dpp::channel::set_name()'],['../classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353',1,'dpp::slashcommand::set_name()']]],
   ['set_5fnickname_61',['set_nickname',['../classdpp_1_1guild__member.html#adf919401f5e69225fb9fee91de8b7983',1,'dpp::guild_member']]],
   ['set_5fnsfw_62',['set_nsfw',['../classdpp_1_1channel.html#a602852256a543a6901aa5c87520aeb63',1,'dpp::channel']]],
   ['set_5fowner_63',['set_owner',['../classdpp_1_1commandhandler.html#a8640d327288a6dd1c5fdbde85726e7de',1,'dpp::commandhandler']]],
@@ -92,7 +92,7 @@ var searchData=
   ['set_5fvideo_89',['set_video',['../structdpp_1_1embed.html#a74a1f20e719f0bd855a19ea47310e485',1,'dpp::embed']]],
   ['set_5fwebsocket_5fprotocol_90',['set_websocket_protocol',['../classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9',1,'dpp::cluster']]],
   ['skip_5fto_5fnext_5fmarker_91',['skip_to_next_marker',['../classdpp_1_1discord__voice__client.html#a8c30775fa7e4c8f82ff5531e4fae200f',1,'dpp::discord_voice_client']]],
-  ['slashcommand_92',['slashcommand',['../classdpp_1_1slashcommand.html#add0654f80f31c52fbbf7d1541653a7b0',1,'dpp::slashcommand::slashcommand()'],['../classdpp_1_1slashcommand.html#a7f64e4998a23592427069eae91df25be',1,'dpp::slashcommand::slashcommand(const std::string &amp;_name, const std::string &amp;_description, const dpp::snowflake _application_id)']]],
+  ['slashcommand_92',['slashcommand',['../classdpp_1_1slashcommand.html#a7f64e4998a23592427069eae91df25be',1,'dpp::slashcommand::slashcommand(const std::string &amp;_name, const std::string &amp;_description, const dpp::snowflake _application_id)'],['../classdpp_1_1slashcommand.html#add0654f80f31c52fbbf7d1541653a7b0',1,'dpp::slashcommand::slashcommand()']]],
   ['snowflake_5fnot_5fnull_93',['snowflake_not_null',['../namespacedpp.html#aab9892169cd091ab8292c29ec27d43a4',1,'dpp']]],
   ['speak_94',['speak',['../classdpp_1_1discord__voice__client.html#ae5456ed35a1a964a607e2abc8bd59691',1,'dpp::discord_voice_client']]],
   ['ssl_5fclient_95',['ssl_client',['../classdpp_1_1ssl__client.html#a5b4e115d8a21b01efe0678af9b2d03b7',1,'dpp::ssl_client']]],
@@ -113,8 +113,7 @@ var searchData=
   ['stop_5faudio_110',['stop_audio',['../classdpp_1_1discord__voice__client.html#acc63a25566f48bb68af74c43f2b4e41d',1,'dpp::discord_voice_client']]],
   ['stop_5ftimer_111',['stop_timer',['../classdpp_1_1cluster.html#a065dbc305d760d94f4ce0867f64777a3',1,'dpp::cluster']]],
   ['store_112',['store',['../classdpp_1_1cache.html#ab2aa9a2fbf0cb47d49d4bba05c2e2039',1,'dpp::cache']]],
-  ['strftime_113',['strftime',['../namespacedetail.html#a1f56278fd84d8bc33338c33694a87fb8',1,'detail::strftime(char *str, size_t count, const char *format, const std::tm *time)'],['../namespacedetail.html#aa394945bd077a30102ef2ca015a1540b',1,'detail::strftime(wchar_t *str, size_t count, const wchar_t *format, const std::tm *time)']]],
-  ['string_5fhas_5fprefix_114',['string_has_prefix',['../classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d',1,'dpp::commandhandler']]],
-  ['string_5fnot_5fnull_115',['string_not_null',['../namespacedpp.html#adf57d9793b70d4b4da431491ab263298',1,'dpp']]],
-  ['suppress_5fembeds_116',['suppress_embeds',['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message']]]
+  ['string_5fhas_5fprefix_113',['string_has_prefix',['../classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d',1,'dpp::commandhandler']]],
+  ['string_5fnot_5fnull_114',['string_not_null',['../namespacedpp.html#adf57d9793b70d4b4da431491ab263298',1,'dpp']]],
+  ['suppress_5fembeds_115',['suppress_embeds',['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message']]]
 ];

@@ -2,7 +2,7 @@ var searchData=
 [
   ['channel_5fcollector_5ft_0',['channel_collector_t',['../namespacedpp.html#a1b35f3248b32394ac9ecc8bbca668156',1,'dpp']]],
   ['channel_5fmap_1',['channel_map',['../namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30',1,'dpp']]],
-  ['char_5ftype_2',['char_type',['../structdetail_1_1chrono__formatter.html#aeba2fd9bee3839cba4d17879f9c1eb9d',1,'detail::chrono_formatter']]],
+  ['char_5ftype_2',['char_type',['../structchrono__formatter.html#a1b9bf84c559f6d52837a4bdb626542ee',1,'chrono_formatter']]],
   ['cmd_5fresult_5ft_3',['cmd_result_t',['../namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6',1,'dpp::utility']]],
   ['command_5fcompletion_5fevent_5ft_4',['command_completion_event_t',['../namespacedpp.html#a022dce6b086ec4515384eaece59c84c3',1,'dpp']]],
   ['command_5fhandler_5',['command_handler',['../namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3',1,'dpp']]],

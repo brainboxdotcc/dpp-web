@@ -14,12 +14,13 @@ var hierarchy =
     [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ],
     [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
     [ "dpp::ban", "classdpp_1_1ban.html", null ],
+    [ "bool_constant", "classbool__constant.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
-    [ "detail::chrono_format_checker", "structdetail_1_1chrono__format__checker.html", null ],
-    [ "detail::chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structdetail_1_1chrono__formatter.html", null ],
+    [ "chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structchrono__formatter.html", null ],
     [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
+    [ "detail::codecvt_result< CodeUnit >", "structdetail_1_1codecvt__result.html", null ],
     [ "dpp::collector< T, C >", "classdpp_1_1collector.html", [
       [ "dpp::channel_collector", "classdpp_1_1channel__collector.html", null ],
       [ "dpp::message_collector", "classdpp_1_1message__collector.html", [
@@ -200,14 +201,21 @@ var hierarchy =
         [ "dpp::voice_exception", "classdpp_1_1voice__exception.html", null ]
       ] ]
     ] ],
+    [ "std::false_type", null, [
+      [ "has_member_data_tm_gmtoff< T, typename >", "structhas__member__data__tm__gmtoff.html", null ],
+      [ "has_member_data_tm_zone< T, typename >", "structhas__member__data__tm__zone.html", null ]
+    ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
       [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", null ]
     ] ],
+    [ "formatter< weekday, Char >", "structformatter_3_01weekday_00_01_char_01_4.html", null ],
     [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
+    [ "get_locale", "classget__locale.html", null ],
     [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
     [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ],
+    [ "Handler", "class_handler.html", null ],
     [ "dpp::http_connect_info", "structdpp_1_1http__connect__info.html", null ],
     [ "dpp::http_request", "classdpp_1_1http__request.html", null ],
     [ "dpp::http_request_completion_t", "structdpp_1_1http__request__completion__t.html", null ],
@@ -219,8 +227,8 @@ var hierarchy =
       [ "dpp::interaction_modal_response", "structdpp_1_1interaction__modal__response.html", null ]
     ] ],
     [ "dpp::invite", "classdpp_1_1invite.html", null ],
-    [ "detail::make_unsigned_or_unchanged< T, INTEGRAL >", "structdetail_1_1make__unsigned__or__unchanged.html", null ],
-    [ "detail::make_unsigned_or_unchanged< T, true >", "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
+    [ "make_unsigned_or_unchanged< T, INTEGRAL >", "structmake__unsigned__or__unchanged.html", null ],
+    [ "make_unsigned_or_unchanged< T, true >", "structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ],
       [ "dpp::channel", "classdpp_1_1channel.html", [
@@ -247,6 +255,14 @@ var hierarchy =
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::multipart_content", "structdpp_1_1multipart__content.html", null ],
+    [ "detail::null< T >", "structdetail_1_1null.html", null ],
+    [ "null_chrono_spec_handler< Derived >", "structnull__chrono__spec__handler.html", null ],
+    [ "null_chrono_spec_handler< chrono_format_checker >", "structnull__chrono__spec__handler.html", [
+      [ "chrono_format_checker", "structchrono__format__checker.html", null ]
+    ] ],
+    [ "null_chrono_spec_handler< tm_format_checker >", "structnull__chrono__spec__handler.html", [
+      [ "tm_format_checker", "structtm__format__checker.html", null ]
+    ] ],
     [ "dpp::oneshot_timer", "classdpp_1_1oneshot__timer.html", null ],
     [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
     [ "OpusDecoder", "struct_opus_decoder.html", null ],
@@ -274,13 +290,24 @@ var hierarchy =
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::timed_listener< attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
     [ "dpp::timer_t", "structdpp_1_1timer__t.html", null ],
+    [ "tm_writer< OutputIt, Char >", "classtm__writer.html", null ],
+    [ "std::true_type", null, [
+      [ "has_member_data_tm_gmtoff< T, void_t< decltype(T::tm_gmtoff)> >", "structhas__member__data__tm__gmtoff_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__gmtoff_08_4_01_4.html", null ],
+      [ "has_member_data_tm_zone< T, void_t< decltype(T::tm_zone)> >", "structhas__member__data__tm__zone_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__zone_08_4_01_4.html", null ],
+      [ "is_char< char16_t >", "structis__char_3_01char16__t_01_4.html", null ],
+      [ "is_char< char32_t >", "structis__char_3_01char32__t_01_4.html", null ],
+      [ "is_char< detail::char8_type >", "structis__char_3_01detail_1_1char8__type_01_4.html", null ],
+      [ "is_char< wchar_t >", "structis__char_3_01wchar__t_01_4.html", null ]
+    ] ],
     [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
+    [ "weekday", "classweekday.html", null ],
     [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
     [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ],
+    [ "year_month_day", "classyear__month__day.html", null ],
     [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
 ];
