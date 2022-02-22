@@ -1,7 +1,7 @@
 var searchData=
 [
   ['web_5fstatus_0',['web_status',['../classdpp_1_1presence.html#a48277b458604de43ab9c4af7bbc3733d',1,'dpp::presence']]],
-  ['webhook_1',['webhook',['../classdpp_1_1webhook.html#a7144cd4b090eaa5a22687230cf2d6bd3',1,'dpp::webhook::webhook()'],['../classdpp_1_1webhook.html#a280330970fd051ae1bfd2cb494ed4012',1,'dpp::webhook::webhook(std::string webhook_url)'],['../classdpp_1_1webhook.html#aacd1675cec4ac85748aeeab02947cf12',1,'dpp::webhook::webhook(snowflake webhook_id, std::string webhook_token)']]],
+  ['webhook_1',['webhook',['../classdpp_1_1webhook.html#a7144cd4b090eaa5a22687230cf2d6bd3',1,'dpp::webhook::webhook()'],['../classdpp_1_1webhook.html#a50c826b1dfd536f839f2a71ddf60bedd',1,'dpp::webhook::webhook(const std::string &amp;webhook_url)'],['../classdpp_1_1webhook.html#a4e3d93a96dace41ced1a91474847403d',1,'dpp::webhook::webhook(const snowflake webhook_id, const std::string &amp;webhook_token)']]],
   ['webhooks_5fupdate_5ft_2',['webhooks_update_t',['../structdpp_1_1webhooks__update__t.html#aa070b1866b55bc3e6d2a7a8b698e8c1b',1,'dpp::webhooks_update_t']]],
   ['websocket_5fclient_3',['websocket_client',['../classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b',1,'dpp::websocket_client']]],
   ['weekday_4',['weekday',['../classweekday.html#a8d2218e729de0343e7bbaf436ea19220',1,'weekday::weekday()=default'],['../classweekday.html#a8984aa58bf28e7955439ec67b742af8a',1,'weekday::weekday(unsigned wd) noexcept']]],
