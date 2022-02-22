@@ -3,7 +3,7 @@ var searchData=
   ['w_5fchannel_5ffollower_0',['w_channel_follower',['../namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354',1,'dpp']]],
   ['w_5fincoming_1',['w_incoming',['../namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a',1,'dpp']]],
   ['web_5fstatus_2',['web_status',['../classdpp_1_1presence.html#a48277b458604de43ab9c4af7bbc3733d',1,'dpp::presence']]],
-  ['webhook_3',['webhook',['../classdpp_1_1webhook.html',1,'dpp::webhook'],['../classdpp_1_1webhook.html#a7144cd4b090eaa5a22687230cf2d6bd3',1,'dpp::webhook::webhook()']]],
+  ['webhook_3',['webhook',['../classdpp_1_1webhook.html',1,'dpp::webhook'],['../classdpp_1_1webhook.html#a7144cd4b090eaa5a22687230cf2d6bd3',1,'dpp::webhook::webhook()'],['../classdpp_1_1webhook.html#a280330970fd051ae1bfd2cb494ed4012',1,'dpp::webhook::webhook(std::string webhook_url)'],['../classdpp_1_1webhook.html#aacd1675cec4ac85748aeeab02947cf12',1,'dpp::webhook::webhook(snowflake webhook_id, std::string webhook_token)']]],
   ['webhook_5fchannel_4',['webhook_channel',['../structdpp_1_1webhooks__update__t.html#a39a25531b301ffc214ddd17a7b3475f3',1,'dpp::webhooks_update_t']]],
   ['webhook_5fguild_5',['webhook_guild',['../structdpp_1_1webhooks__update__t.html#ab4ff84fc65e90fe97fa0526d0976f7ae',1,'dpp::webhooks_update_t']]],
   ['webhook_5fid_6',['webhook_id',['../structdpp_1_1message.html#ad1033bc27c5c1436c2e321d1be1d65ed',1,'dpp::message']]],
