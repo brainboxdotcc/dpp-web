@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="build-a-discord-bot-windows-wsl" kind="page">
+    <compoundname>build-a-discord-bot-windows-wsl</compoundname>
+    <title>Building a discord bot in Windows using WSL (Windows Subsystem for Linux)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This Tutorial teaches you how to create a lightweight environment for D++-development using <bold>WSL</bold> and <bold>Visual Studio Code</bold> <simplesect kind="note"><para>This Tutorial will use <bold>WSL&apos;s default Ubuntu</bold>! You might use other Distros if you prefer, but keep in mind the setup process might be different!</para>
+</simplesect>
+<orderedlist>
+<listitem><para>Make sure you have installed your WSL 2 environment properly using <ulink url="https://docs.microsoft.com/en-us/windows/wsl/install">this guide to setup up WSL</ulink> and <ulink url="https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode">this guide to connect to Visual Studio Code</ulink>.</para>
+</listitem><listitem><para>Now open PowerShell as an Admin and type <computeroutput>wsl</computeroutput> to start up your subsystem. <simplesect kind="note"><para>If you want to set up a CMake project (recommended for production bots) now, consider continuing your path of becoming the master of all Discord bots <ulink url="https://dpp.dev/buildcmake.html">here</ulink>, otherwise keep following this guide!</para>
+</simplesect>
+</para>
+</listitem><listitem><para>Go to your home directory using <computeroutput>cd ~</computeroutput></para>
+</listitem><listitem><para>Download the latest build for your Distro using <computeroutput>wget [url here]</computeroutput>. In this guide we will use the v10.0.0 build for Ubuntu x86-64: <computeroutput>wget <ulink url="https://github.com/brainboxdotcc/DPP/releases/download/v10.0.0/libdpp-10.0.0-linux-x64.deb">https://github.com/brainboxdotcc/DPP/releases/download/v10.0.0/libdpp-10.0.0-linux-x64.deb</ulink></computeroutput> <simplesect kind="note"><para>replace the highlighted filenames with the package you downloaded earlier if you are using a different OS</para>
+</simplesect>
+</para>
+</listitem><listitem><para>Finally install all required deps and the library using <computeroutput>sudo apt-get install libopus0 &amp;&amp; sudo apt-get install -y libopus-dev &amp;&amp; sudo apt-get install -y libsodium-dev &amp;&amp; sudo dpkg -i</computeroutput> <bold>libdpp-10.0.0-linux-x64.deb</bold> <computeroutput>&amp;&amp; rm</computeroutput> <bold>libdpp-10.0.0-linux-x64.deb</bold> </para>
+</listitem></orderedlist>
+</para>
+<sect3 id="build-a-discord-bot-windows-wsl_1autotoc_md29">
+<title>Congratulations, you&apos;ve successfully installed all dependencies! Now comes the real fun: Setting up the environment! For this tutorial we&apos;ll use a as small as possible setup, so you might create a more advanced one for production bots.</title>
+<para><orderedlist>
+<listitem><para>Navigate to a folder of your choice using <computeroutput>cd your/path/here</computeroutput> or create a new directory using <computeroutput>mkdir MyBot &amp;&amp; cd MyBot</computeroutput></para>
+</listitem><listitem><para>Now that you&apos;ve a folder to work in type <computeroutput>&gt; mybot.cxx</computeroutput> to create a file you can work in!</para>
+</listitem><listitem><para>Now you can open this file in Visual Studio Code by pressing <computeroutput>CTRL+SHIFT+P</computeroutput> and typing <computeroutput>Remote-WSL: New WSL Window</computeroutput>. This will bring up a new window. In the new window, choose <computeroutput>open folder</computeroutput> and choose the folder you&apos;ve created prior. Press OK and now you have your Folder opened as a Workspace!</para>
+</listitem><listitem><para>Add code to your CXX file and compile it by running <computeroutput>g++ -std=c++17 *.cxx -o bot -ldpp</computeroutput> in the same folder as your cxx file.</para>
+</listitem><listitem><para>start your bot by typing <computeroutput>./bot</computeroutput>! </para>
+</listitem></orderedlist>
+</para>
+</sect3>
+    </detaileddescription>
+    <location file="docpages/02_building_a_bot.md"/>
+  </compounddef>
+</doxygen>

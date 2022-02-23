@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="buildosx" kind="page">
+    <compoundname>buildosx</compoundname>
+    <title>Building on OSX</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="buildosx_1autotoc_md9">
+<title>Building on macOS</title>
+<sect2 id="buildosx_1autotoc_md10">
+<title>1. Toolchain</title>
+<para>Before compiling make sure you have all the tools installed.</para>
+<para><orderedlist>
+<listitem><para>To install the dependencies, this guide will use homebrew which has <ulink url="https://brew.sh/">installation instructions on their project page</ulink>.</para>
+</listitem><listitem><para>This project uses CMake to generate the makefiles. Install it with <computeroutput>brew install cmake</computeroutput>.</para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="buildosx_1autotoc_md11">
+<title>2. Install External Dependencies</title>
+<para><verbatim>brew install openssl
+</verbatim> For voice support, additional dependencies are required: <verbatim>brew install libsodium opus
+</verbatim> </para>
+</sect2>
+<sect2 id="buildosx_1autotoc_md12">
+<title>3. Build Source Code</title>
+<para><verbatim>cmake -B ./build
+cmake --build ./build -j8
+</verbatim> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
+</sect2>
+<sect2 id="buildosx_1autotoc_md13">
+<title>4. Install globally</title>
+<para><verbatim>sudo make install
+</verbatim> </para>
+</sect2>
+<sect2 id="buildosx_1autotoc_md14">
+<title>5. Installation to a different directory</title>
+<para>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>: <verbatim>cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
+</verbatim> Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
+</sect2>
+<sect2 id="buildosx_1autotoc_md15">
+<title>6. Using the library</title>
+<para>Once installed, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
+</verbatim> The important flags in this command-line are:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>-std=c++17</computeroutput> - Required to compile the headers</para>
+</listitem><listitem><para><computeroutput>-ldpp</computeroutput> - Link to libdpp.dylib</para>
+</listitem><listitem><para><computeroutput>mydppbot.cpp</computeroutput> - Your source code</para>
+</listitem><listitem><para><computeroutput>dppbot</computeroutput> - The name of the executable to make</para>
+</listitem></itemizedlist>
+</para>
+<para>Of course, this is just a proof of concept - you should really use a more robust build system like GNU <computeroutput>make</computeroutput> or <ref refid="buildcmake" kindref="compound">`cmake`</ref>.</para>
+<para>If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template bot</ulink>.</para>
+<para><bold>Have fun!</bold> </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="docpages/02_build.md"/>
+  </compounddef>
+</doxygen>
