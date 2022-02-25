@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
-<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
+<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>, <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Message handler to look for a command called !file */</span></div>
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp;event) {</div>
@@ -162,12 +162,14 @@ $(document).ready(function(){initNavTree('attach-file.html',''); initResizable()
 <div class="line">    bot.start(<span class="keyword">false</span>);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="ttc" id="anamespacedpp_html_a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414"><div class="ttname"><a href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a></div><div class="ttdeci">@ i_message_content</div><div class="ttdoc">Intent for receipt of message content.</div><div class="ttdef"><b>Definition:</b> intents.h:64</div></div>
+<div class="ttc" id="anamespacedpp_html_a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f"><div class="ttname"><a href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a></div><div class="ttdeci">@ i_default_intents</div><div class="ttdoc">Default D++ intents (all non-privileged intents)</div><div class="ttdef"><b>Definition:</b> intents.h:68</div></div>
 </div><!-- fragment --><p >Here's another example of how to add a local image to an embed.</p>
 <p >Upload the image in the same message as the embed and then reference it in the embed.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
-<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
+<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>, <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Message handler to look for a command called !file */</span></div>
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp;event) {</div>

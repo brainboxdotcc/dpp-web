@@ -114,13 +114,15 @@ $(document).ready(function(){initNavTree('context-menu.html',''); initResizable(
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a> &amp;event) {</div>
-<div class="line">        <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> command;</div>
-<div class="line">        <span class="comment">/* Define a slash command */</span></div>
-<div class="line">        command.<a class="code hl_function" href="classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353">set_name</a>(<span class="stringliteral">&quot;High Five&quot;</span>)</div>
+<div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
+<div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> command;</div>
+<div class="line">            <span class="comment">/* Define a slash command */</span></div>
+<div class="line">            command.<a class="code hl_function" href="classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353">set_name</a>(<span class="stringliteral">&quot;High Five&quot;</span>)</div>
 <div class="line">                .set_type(<a class="code hl_enumvalue" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659">dpp::ctxm_user</a>)</div>
 <div class="line">                .set_application_id(bot.me.id);</div>
-<div class="line">        <span class="comment">/* Register the command */</span></div>
-<div class="line">        bot.guild_command_create(command, 857692897221033129); <span class="comment">// you need to put your guild-id in here</span></div>
+<div class="line">            <span class="comment">/* Register the command */</span></div>
+<div class="line">            bot.guild_command_create(command, 857692897221033129); <span class="comment">// you need to put your guild-id in here</span></div>
+<div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Use the on_interaction_create event to look for application commands */</span></div>
