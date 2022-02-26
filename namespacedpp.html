@@ -1635,6 +1635,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1permission__overwrite.html">permission_overwrite</a> &amp;po)</td></tr>
 <tr class="memdesc:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="structdpp_1_1permission__overwrite.html" title="channel permission overwrites">permission_overwrite</a> object to json.  <a href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">More...</a><br /></td></tr>
 <tr class="separator:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d4cb5137ec71576466cb66771e59ed"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a23d4cb5137ec71576466cb66771e59ed">make_intent_warning</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *cl, const <a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5">intents</a> required_intent, const std::string &amp;<a class="el" href="structdpp_1_1message.html">message</a>)</td></tr>
+<tr class="memdesc:a23d4cb5137ec71576466cb66771e59ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a warning lambda for missing message intents.  <a href="namespacedpp.html#a23d4cb5137ec71576466cb66771e59ed">More...</a><br /></td></tr>
+<tr class="separator:a23d4cb5137ec71576466cb66771e59ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a29c34fa2bce39d743860fb6fdb572"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572">ts_to_string</a> (time_t ts)</td></tr>
 <tr class="memdesc:a11a29c34fa2bce39d743860fb6fdb572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert time_t unix epoch to std::string ISO date/time.  <a href="namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572">More...</a><br /></td></tr>
 <tr class="separator:a11a29c34fa2bce39d743860fb6fdb572"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5458,6 +5461,51 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>found value </dd></dl>
+
+</div>
+</div>
+<a id="a23d4cb5137ec71576466cb66771e59ed" name="a23d4cb5137ec71576466cb66771e59ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d4cb5137ec71576466cb66771e59ed">&#9670;&nbsp;</a></span>make_intent_warning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; void()&gt; dpp::make_intent_warning </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
+          <td class="paramname"><em>cl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5">intents</a>&#160;</td>
+          <td class="paramname"><em>required_intent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make a warning lambda for missing message intents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cl</td><td>Creating cluster </td></tr>
+    <tr><td class="paramname">required_intent</td><td>Intent which is required </td></tr>
+    <tr><td class="paramname">message</td><td>Message to display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::function&lt;void()&gt; Returned lambda </dd></dl>
 
 </div>
 </div>
