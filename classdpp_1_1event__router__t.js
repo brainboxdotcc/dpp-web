@@ -7,5 +7,6 @@ var classdpp_1_1event__router__t =
     [ "empty", "classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab", null ],
     [ "operator bool", "classdpp_1_1event__router__t.html#a98f8bb07280138a21bbdd2348912da5b", null ],
     [ "operator()", "classdpp_1_1event__router__t.html#afde1df1dba72f9a6e35b676b89ebc8e0", null ],
-    [ "set_warning_callback", "classdpp_1_1event__router__t.html#a0a5cb425212a9b897a0dd38ab0a3ece5", null ]
+    [ "set_warning_callback", "classdpp_1_1event__router__t.html#a0a5cb425212a9b897a0dd38ab0a3ece5", null ],
+    [ "cluster", "classdpp_1_1event__router__t.html#a93941955d9d15030232a5aaa08bb9afa", null ]
 ];
