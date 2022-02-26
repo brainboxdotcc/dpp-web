@@ -13,6 +13,8 @@
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>a<sp/>new<sp/>global<sp/>command<sp/>once<sp/>on<sp/>ready<sp/>event<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -64,11 +66,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Simple<sp/>log<sp/>event<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1log__t" kindref="compound">dpp::log_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="namespacedpp_1_1utility_1acae9e089e4b7cfd9745235f86455c045" kindref="member">dpp::utility::loglevel</ref>(event.<ref refid="structdpp_1_1log__t_1ae1316a6ace98555175a4c1c70c9d0549" kindref="member">severity</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>

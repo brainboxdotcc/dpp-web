@@ -75,7 +75,9 @@
 <codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" kindref="member">dpp::i_default_intents</ref><sp/>|<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414" kindref="member">dpp::i_message_content</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>won&apos;t<sp/>work<sp/>in<sp/>a<sp/>slash<sp/>command<sp/>very<sp/>well<sp/>yet,<sp/>as<sp/>there<sp/>is<sp/>not<sp/>yet</highlight></codeline>
 <codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>a<sp/>multi-line<sp/>slash<sp/>command<sp/>input<sp/>type.</highlight></codeline>
@@ -203,13 +205,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>A<sp/>basic<sp/>logger<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1log__t" kindref="compound">dpp::log_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1log__t_1ae1316a6ace98555175a4c1c70c9d0549" kindref="member">severity</ref><sp/>&gt;<sp/><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a" kindref="member">dpp::ll_trace</ref>)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});<sp/></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>

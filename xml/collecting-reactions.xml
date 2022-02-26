@@ -31,10 +31,12 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" kindref="member">dpp::i_default_intents</ref><sp/>|<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414" kindref="member">dpp::i_message_content</ref>);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pointer<sp/>to<sp/>reaction<sp/>collector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>react_collector*<sp/>r<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Message<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_create([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref><sp/>&amp;event)<sp/>{</highlight></codeline>
