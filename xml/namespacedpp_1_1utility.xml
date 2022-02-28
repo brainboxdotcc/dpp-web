@@ -826,6 +826,53 @@
         </inbodydescription>
         <location file="src/dpp/utility.cpp" line="360" column="15" bodyfile="src/dpp/utility.cpp" bodystart="360" bodyend="366" declfile="include/dpp/dispatcher.h" declline="128" declcolumn="26"/>
       </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a2cd10adca7586a99a6fd350bb601f407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string DPP_EXPORT dpp::utility::markdown_escape</definition>
+        <argsstring>(const std::string &amp;text, bool escape_code_blocks=false)</argsstring>
+        <name>markdown_escape</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>escape_code_blocks</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Escapes markdown sequences in a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text to escape </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>escape_code_blocks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If set to false, then code blocks are not escaped. This means that you can still use a code block, and the text within will be left as-is. If set to true, code blocks will also be escaped so that ` symbol may be used as a normal character. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string escaped text </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Represents the current state of the finite state machine for the markdown_escape function.</para>
+<para>normal text</para>
+<para>a paragraph code block, represented by three backticks</para>
+<para>an inline code block, represented by one backtick</para>
+        </inbodydescription>
+        <location file="src/dpp/utility.cpp" line="368" column="13" bodyfile="src/dpp/utility.cpp" bodystart="368" bodyend="408" declfile="include/dpp/utility.h" declline="354" declcolumn="24"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Utility helper functions, generally for logging. </para>

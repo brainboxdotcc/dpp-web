@@ -198,6 +198,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8c2cc04bb80ffd287b376d5977899277"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <a class="el" href="structdpp_1_1log__t.html">dpp::log_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">cout_logger</a> ()</td></tr>
 <tr class="memdesc:a8c2cc04bb80ffd287b376d5977899277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a default logger that outputs to std::cout. e.g.  <a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">More...</a><br /></td></tr>
 <tr class="separator:a8c2cc04bb80ffd287b376d5977899277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd10adca7586a99a6fd350bb601f407"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407">markdown_escape</a> (const std::string &amp;text, bool escape_code_blocks=false)</td></tr>
+<tr class="memdesc:a2cd10adca7586a99a6fd350bb601f407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escapes markdown sequences in a string.  <a href="namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407">More...</a><br /></td></tr>
+<tr class="separator:a2cd10adca7586a99a6fd350bb601f407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -530,6 +533,48 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string string form of log level </dd></dl>
+
+</div>
+</div>
+<a id="a2cd10adca7586a99a6fd350bb601f407" name="a2cd10adca7586a99a6fd350bb601f407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd10adca7586a99a6fd350bb601f407">&#9670;&nbsp;</a></span>markdown_escape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DPP_EXPORT dpp::utility::markdown_escape </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>escape_code_blocks</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Escapes markdown sequences in a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Text to escape </td></tr>
+    <tr><td class="paramname">escape_code_blocks</td><td>If set to false, then code blocks are not escaped. This means that you can still use a code block, and the text within will be left as-is. If set to true, code blocks will also be escaped so that ` symbol may be used as a normal character. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string escaped text </dd></dl>
+<p >Represents the current state of the finite state machine for the markdown_escape function.</p>
+<p >normal text</p>
+<p >a paragraph code block, represented by three backticks</p>
+<p >an inline code block, represented by one backtick</p>
 
 </div>
 </div>

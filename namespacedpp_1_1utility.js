@@ -21,6 +21,7 @@ var namespacedpp_1_1utility =
     [ "exec", "namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0", null ],
     [ "has_voice", "namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4", null ],
     [ "loglevel", "namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045", null ],
+    [ "markdown_escape", "namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407", null ],
     [ "read_file", "namespacedpp_1_1utility.html#a4e85ceba20c4ed2bfda15d806890428b", null ],
     [ "rgb", "namespacedpp_1_1utility.html#a2ab5fc7a9fd0ac6358c3c7133b563362", null ],
     [ "rgb", "namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb", null ],
