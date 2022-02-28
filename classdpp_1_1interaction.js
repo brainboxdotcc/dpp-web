@@ -1,5 +1,6 @@
 var classdpp_1_1interaction =
 [
+    [ "interaction", "classdpp_1_1interaction.html#a633cfd684b67c14cbaf747b5ce181eda", null ],
     [ "build_json", "classdpp_1_1interaction.html#a4ee649c8fe2a79e51fffd95315a0cae7", null ],
     [ "fill_from_json", "classdpp_1_1interaction.html#a23ff816e36c44d2afa51c34a1121a124", null ],
     [ "get_autocomplete_interaction", "classdpp_1_1interaction.html#ae0c4f92722e07cf8815a8a899381e657", null ],
@@ -17,6 +18,7 @@ var classdpp_1_1interaction =
     [ "locale", "classdpp_1_1interaction.html#ae3578a171f1c351ccca8b178ec4a9314", null ],
     [ "member", "classdpp_1_1interaction.html#a8d1cc9b3f5ccab6fc206c1adb864ac06", null ],
     [ "message_id", "classdpp_1_1interaction.html#a5101b493d82a15b9fa3aca68a6386e39", null ],
+    [ "msg", "classdpp_1_1interaction.html#a41e250dd231a840c82276e14bc4ffb86", null ],
     [ "resolved", "classdpp_1_1interaction.html#aaa88ba118d0a7b5b32090a844610d7e7", null ],
     [ "token", "classdpp_1_1interaction.html#a3d20499cf0b8b93c655b904847622085", null ],
     [ "type", "classdpp_1_1interaction.html#ae1df9ec5826bac923ee92e2037bf17cc", null ],
