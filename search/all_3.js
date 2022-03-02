@@ -159,7 +159,7 @@ var searchData=
   ['created_5fat_156',['created_at',['../classdpp_1_1activity.html#a0f393e44d64caee04effbd9821f13635',1,'dpp::activity::created_at()'],['../classdpp_1_1dtemplate.html#a756fa7c16105d1ec41154b8ea8151ab6',1,'dpp::dtemplate::created_at()']]],
   ['created_5fintegration_157',['created_integration',['../structdpp_1_1integration__create__t.html#aed87baa097b6100796d1c1596ec4435a',1,'dpp::integration_create_t']]],
   ['created_5finvite_158',['created_invite',['../structdpp_1_1invite__create__t.html#a9bd5a89df4072bd9df4d2d78bc077890',1,'dpp::invite_create_t']]],
-  ['creating_20a_20bot_20account_159',['Creating a Bot Account',['../creating-a-bot-application.html',1,'md_docpages_02_building_a_bot']]],
+  ['creating_20a_20bot_20token_159',['Creating a Bot Token',['../creating-a-bot-application.html',1,'md_docpages_02_building_a_bot']]],
   ['creating_20a_20discord_20bot_160',['Creating a Discord Bot',['../md_docpages_02_building_a_bot.html',1,'']]],
   ['creating_20a_20discord_20bot_20in_20repl_2eit_161',['Creating a Discord bot in Repl.it',['../building-a-cpp-discord-bot-in-repl.html',1,'md_docpages_02_building_a_bot']]],
   ['creating_20a_20sound_20board_162',['Creating a Sound Board',['../soundboard.html',1,'md_docpages_03_example_programs']]],
