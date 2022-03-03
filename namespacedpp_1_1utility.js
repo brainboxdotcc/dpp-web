@@ -28,8 +28,10 @@ var namespacedpp_1_1utility =
     [ "time_f", "namespacedpp_1_1utility.html#a1184092d62c7ab561cb3f60a92f71b67", null ],
     [ "timestamp", "namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5", null ],
     [ "tokenize", "namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec", null ],
+    [ "url_encode", "namespacedpp_1_1utility.html#a30bfdbaa8e838cd2e725c10f956034f0", null ],
     [ "utf8len", "namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231", null ],
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
     [ "validate", "namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad", null ],
-    [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ]
+    [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ],
+    [ "hex", "namespacedpp_1_1utility.html#a3ad5a66f941e42982a8615279d61c600", null ]
 ];

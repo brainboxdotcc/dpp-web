@@ -35,5 +35,7 @@ var searchData=
   ['logger_32',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
   ['logic_5fexception_33',['logic_exception',['../classdpp_1_1logic__exception.html',1,'dpp']]],
   ['loglevel_34',['loglevel',['../namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2',1,'dpp::loglevel()'],['../namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045',1,'dpp::utility::loglevel()']]],
-  ['lossless_5fintegral_5fconversion_35',['lossless_integral_conversion',['../namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9',1,'safe_duration_cast']]]
+  ['lossless_5fintegral_5fconversion_35',['lossless_integral_conversion',['../namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9',1,'safe_duration_cast']]],
+  ['lowercase_36',['lowercase',['../namespacedpp.html#aa8227c717e1a550b3c3962cea1964d92',1,'dpp']]],
+  ['ltrim_37',['ltrim',['../namespacedpp.html#ac727bb2e0d0761aa5ee4396286530166',1,'dpp']]]
 ];

@@ -198,12 +198,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a8c2cc04bb80ffd287b376d5977899277"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <a class="el" href="structdpp_1_1log__t.html">dpp::log_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">cout_logger</a> ()</td></tr>
 <tr class="memdesc:a8c2cc04bb80ffd287b376d5977899277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a default logger that outputs to std::cout. e.g.  <a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">More...</a><br /></td></tr>
 <tr class="separator:a8c2cc04bb80ffd287b376d5977899277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30bfdbaa8e838cd2e725c10f956034f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a30bfdbaa8e838cd2e725c10f956034f0">url_encode</a> (const std::string &amp;value)</td></tr>
+<tr class="memdesc:a30bfdbaa8e838cd2e725c10f956034f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a url parameter similar to php urlencode()  <a href="namespacedpp_1_1utility.html#a30bfdbaa8e838cd2e725c10f956034f0">More...</a><br /></td></tr>
+<tr class="separator:a30bfdbaa8e838cd2e725c10f956034f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cd10adca7586a99a6fd350bb601f407"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407">markdown_escape</a> (const std::string &amp;text, bool escape_code_blocks=false)</td></tr>
 <tr class="memdesc:a2cd10adca7586a99a6fd350bb601f407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escapes markdown sequences in a string.  <a href="namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407">More...</a><br /></td></tr>
 <tr class="separator:a2cd10adca7586a99a6fd350bb601f407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a3ad5a66f941e42982a8615279d61c600"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a3ad5a66f941e42982a8615279d61c600">hex</a> = &quot;0123456789ABCDEF&quot;</td></tr>
+<tr class="separator:a3ad5a66f941e42982a8615279d61c600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf040349b0a45ef90863effb892ece6"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6">cdn_host</a> = &quot;https://cdn.discordapp.com&quot;</td></tr>
 <tr class="memdesc:a4cf040349b0a45ef90863effb892ece6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base URL for CDN content such as profile pictures and guild icons.  <a href="namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6">More...</a><br /></td></tr>
 <tr class="separator:a4cf040349b0a45ef90863effb892ece6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -798,6 +803,33 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a30bfdbaa8e838cd2e725c10f956034f0" name="a30bfdbaa8e838cd2e725c10f956034f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30bfdbaa8e838cd2e725c10f956034f0">&#9670;&nbsp;</a></span>url_encode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::utility::url_encode </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Encodes a url parameter similar to php urlencode() </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>String to encode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string URL encoded string </dd></dl>
+
+</div>
+</div>
 <a id="a62cc8fc3994f6b3d49cf4923b993c231" name="a62cc8fc3994f6b3d49cf4923b993c231"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62cc8fc3994f6b3d49cf4923b993c231">&#9670;&nbsp;</a></span>utf8len()</h2>
 
@@ -942,6 +974,28 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The base URL for CDN content such as profile pictures and guild icons. </p>
+
+</div>
+</div>
+<a id="a3ad5a66f941e42982a8615279d61c600" name="a3ad5a66f941e42982a8615279d61c600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad5a66f941e42982a8615279d61c600">&#9670;&nbsp;</a></span>hex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* dpp::utility::hex = &quot;0123456789ABCDEF&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
