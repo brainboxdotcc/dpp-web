@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#af60061db23592a957a3b7ce4be308b46":[7,0,6,1],
+"structformatter_3_01std_1_1tm_00_01_char_01_4.html":[7,0,7],
+"structformatter_3_01std_1_1tm_00_01_char_01_4.html#a0222d68c5e1ca97550eecb6cf60abed0":[7,0,7,1],
 "structformatter_3_01std_1_1tm_00_01_char_01_4.html#a9c8caf13b1795ab3974768dc5f98a0e9":[7,0,7,2],
 "structformatter_3_01std_1_1tm_00_01_char_01_4.html#af60061db23592a957a3b7ce4be308b46":[7,0,7,0],
 "structformatter_3_01weekday_00_01_char_01_4.html":[7,0,8],

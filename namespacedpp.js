@@ -859,6 +859,7 @@ var namespacedpp =
     [ "rest_request< message >", "namespacedpp.html#a173d2e6b113e7c675a2294e3eb7f8fd2", null ],
     [ "rest_request_list", "namespacedpp.html#a396beaf2087386cbd35654372fa0f78d", null ],
     [ "rest_request_list< invite >", "namespacedpp.html#a494de7d152ac533c1283a759f5e7e344", null ],
+    [ "rest_request_list< voiceregion >", "namespacedpp.html#a0fc24406b890d9d830e2b0fff9a9ced3", null ],
     [ "rtrim", "namespacedpp.html#a4f48d1973cbdbdde424016e641109c50", null ],
     [ "run_once", "namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0", null ],
     [ "set_bool_not_null", "namespacedpp.html#ad1d0e1acb0698f7cb0f656ce2b19ff3e", null ],
