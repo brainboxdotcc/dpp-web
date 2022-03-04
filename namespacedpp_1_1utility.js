@@ -21,6 +21,8 @@ var namespacedpp_1_1utility =
     [ "exec", "namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0", null ],
     [ "has_voice", "namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4", null ],
     [ "loglevel", "namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045", null ],
+    [ "make_url_parameters", "namespacedpp_1_1utility.html#a1d68e6151fe398398ec31305970419e3", null ],
+    [ "make_url_parameters", "namespacedpp_1_1utility.html#abd913ffc73d921f4ded794338ec62cd4", null ],
     [ "markdown_escape", "namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407", null ],
     [ "read_file", "namespacedpp_1_1utility.html#a4e85ceba20c4ed2bfda15d806890428b", null ],
     [ "rgb", "namespacedpp_1_1utility.html#a2ab5fc7a9fd0ac6358c3c7133b563362", null ],
@@ -32,6 +34,7 @@ var namespacedpp_1_1utility =
     [ "utf8len", "namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231", null ],
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
     [ "validate", "namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad", null ],
+    [ "version", "namespacedpp_1_1utility.html#a1cb30e93306604a6cf8eb93342b623c6", null ],
     [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ],
     [ "hex", "namespacedpp_1_1utility.html#a3ad5a66f941e42982a8615279d61c600", null ]
 ];

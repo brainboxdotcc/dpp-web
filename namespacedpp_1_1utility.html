@@ -201,9 +201,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a30bfdbaa8e838cd2e725c10f956034f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a30bfdbaa8e838cd2e725c10f956034f0">url_encode</a> (const std::string &amp;value)</td></tr>
 <tr class="memdesc:a30bfdbaa8e838cd2e725c10f956034f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a url parameter similar to php urlencode()  <a href="namespacedpp_1_1utility.html#a30bfdbaa8e838cd2e725c10f956034f0">More...</a><br /></td></tr>
 <tr class="separator:a30bfdbaa8e838cd2e725c10f956034f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d68e6151fe398398ec31305970419e3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a1d68e6151fe398398ec31305970419e3">make_url_parameters</a> (const std::map&lt; std::string, std::string &gt; &amp;parameters)</td></tr>
+<tr class="memdesc:a1d68e6151fe398398ec31305970419e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a URL parameter string e.g. "a=b&amp;c=d&amp;e=f" from a map of key/value pairs. Entries with empty key names or values are omitted.  <a href="namespacedpp_1_1utility.html#a1d68e6151fe398398ec31305970419e3">More...</a><br /></td></tr>
+<tr class="separator:a1d68e6151fe398398ec31305970419e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd913ffc73d921f4ded794338ec62cd4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#abd913ffc73d921f4ded794338ec62cd4">make_url_parameters</a> (const std::map&lt; std::string, uint64_t &gt; &amp;parameters)</td></tr>
+<tr class="memdesc:abd913ffc73d921f4ded794338ec62cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a URL parameter string e.g. "a=b&amp;c=d&amp;e=f" from a map of key/value pairs. Entries with empty key names or zero values are omitted.  <a href="namespacedpp_1_1utility.html#abd913ffc73d921f4ded794338ec62cd4">More...</a><br /></td></tr>
+<tr class="separator:abd913ffc73d921f4ded794338ec62cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cd10adca7586a99a6fd350bb601f407"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407">markdown_escape</a> (const std::string &amp;text, bool escape_code_blocks=false)</td></tr>
 <tr class="memdesc:a2cd10adca7586a99a6fd350bb601f407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escapes markdown sequences in a string.  <a href="namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407">More...</a><br /></td></tr>
 <tr class="separator:a2cd10adca7586a99a6fd350bb601f407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb30e93306604a6cf8eb93342b623c6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a1cb30e93306604a6cf8eb93342b623c6">version</a> ()</td></tr>
+<tr class="memdesc:a1cb30e93306604a6cf8eb93342b623c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the library's version string.  <a href="namespacedpp_1_1utility.html#a1cb30e93306604a6cf8eb93342b623c6">More...</a><br /></td></tr>
+<tr class="separator:a1cb30e93306604a6cf8eb93342b623c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -384,7 +393,7 @@ Variables</h2></td></tr>
 
 <p>Get a default logger that outputs to std::cout. e.g. </p>
 <div class="fragment"><div class="line">bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
-<div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div><div class="ttdef"><b>Definition:</b> utility.cpp:360</div></div>
+<div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div><div class="ttdef"><b>Definition:</b> utility.cpp:361</div></div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>A logger for attaching to on_log </dd></dl>
 
 </div>
@@ -482,7 +491,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a class="code hl_function" href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a>(<span class="stringliteral">&quot;/bin/ls&quot;</span>, {<span class="stringliteral">&quot;-al&quot;</span>}, [](<span class="keyword">const</span> std::string&amp; output) {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Output of &#39;ls -al&#39;: &quot;</span> &lt;&lt; output &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">});</div>
-<div class="ttc" id="anamespacedpp_1_1utility_html_ac7d516c03d572fe65d01c4ec5e92c6f0"><div class="ttname"><a href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a></div><div class="ttdeci">void exec(const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters, cmd_result_t callback)</div><div class="ttdoc">Run a commandline program asynchronously. The command line program is spawned in a separate std::thre...</div><div class="ttdef"><b>Definition:</b> utility.cpp:206</div></div>
+<div class="ttc" id="anamespacedpp_1_1utility_html_ac7d516c03d572fe65d01c4ec5e92c6f0"><div class="ttname"><a href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a></div><div class="ttdeci">void exec(const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters, cmd_result_t callback)</div><div class="ttdoc">Run a commandline program asynchronously. The command line program is spawned in a separate std::thre...</div><div class="ttdef"><b>Definition:</b> utility.cpp:207</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>The command to run. </td></tr>
@@ -538,6 +547,60 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string string form of log level </dd></dl>
+
+</div>
+</div>
+<a id="a1d68e6151fe398398ec31305970419e3" name="a1d68e6151fe398398ec31305970419e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d68e6151fe398398ec31305970419e3">&#9670;&nbsp;</a></span>make_url_parameters() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::utility::make_url_parameters </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; std::string, std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build a URL parameter string e.g. "a=b&amp;c=d&amp;e=f" from a map of key/value pairs. Entries with empty key names or values are omitted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>parameters to create a url query string for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string A correctly encoded url query string </dd></dl>
+
+</div>
+</div>
+<a id="abd913ffc73d921f4ded794338ec62cd4" name="abd913ffc73d921f4ded794338ec62cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd913ffc73d921f4ded794338ec62cd4">&#9670;&nbsp;</a></span>make_url_parameters() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::utility::make_url_parameters </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; std::string, uint64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build a URL parameter string e.g. "a=b&amp;c=d&amp;e=f" from a map of key/value pairs. Entries with empty key names or zero values are omitted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>parameters to create a url query string for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string A correctly encoded url query string </dd></dl>
 
 </div>
 </div>
@@ -957,6 +1020,26 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1cb30e93306604a6cf8eb93342b623c6" name="a1cb30e93306604a6cf8eb93342b623c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb30e93306604a6cf8eb93342b623c6">&#9670;&nbsp;</a></span>version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::utility::version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the library's version string. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string version </dd></dl>
 
 </div>
 </div>

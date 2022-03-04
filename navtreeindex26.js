@@ -1,5 +1,12 @@
 var NAVTREEINDEX26 =
 {
+"structhas__member__data__tm__gmtoff_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__gmtoff_08_4_01_4.html":[7,0,12],
+"structhas__member__data__tm__zone.html":[7,0,13],
+"structhas__member__data__tm__zone_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__zone_08_4_01_4.html":[7,0,14],
+"structis__char_3_01char16__t_01_4.html":[7,0,15],
+"structis__char_3_01char32__t_01_4.html":[7,0,16],
+"structis__char_3_01detail_1_1char8__type_01_4.html":[7,0,17],
+"structis__char_3_01wchar__t_01_4.html":[7,0,18],
 "structmake__unsigned__or__unchanged.html":[7,0,19],
 "structmake__unsigned__or__unchanged.html#a1cdb5264b3817c5a8b56d6609f2a66bd":[7,0,19,0],
 "structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html":[7,0,20],
@@ -87,12 +94,12 @@ var NAVTREEINDEX26 =
 "structtm__format__checker.html#affe3d622f05c5e3d940eaddebc1c31d3":[7,0,28,36],
 "subcommands.html":[3,13],
 "thread-model.html":[4,1],
-"uniondpp_1_1type__punner.html":[7,0,1,167],
 "uniondpp_1_1type__punner.html":[6,0,1,167],
-"uniondpp_1_1type__punner.html#a3e84c246810f34612b65b60ab78edd61":[7,0,1,167,0],
+"uniondpp_1_1type__punner.html":[7,0,1,167],
 "uniondpp_1_1type__punner.html#a3e84c246810f34612b65b60ab78edd61":[6,0,1,167,0],
-"uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[7,0,1,167,1],
+"uniondpp_1_1type__punner.html#a3e84c246810f34612b65b60ab78edd61":[7,0,1,167,0],
 "uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[6,0,1,167,1],
+"uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[7,0,1,167,1],
 "unit-tests.html":[4,3],
 "unit-tests.html#autotoc_md71":[4,3,0],
 "webhooks.html":[3,20]
