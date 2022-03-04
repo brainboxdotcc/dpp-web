@@ -1,5 +1,11 @@
 var NAVTREEINDEX26 =
 {
+"structformatter_3_01std_1_1tm_00_01_char_01_4.html#a9c8caf13b1795ab3974768dc5f98a0e9":[7,0,7,2],
+"structformatter_3_01std_1_1tm_00_01_char_01_4.html#af60061db23592a957a3b7ce4be308b46":[7,0,7,0],
+"structformatter_3_01weekday_00_01_char_01_4.html":[7,0,8],
+"structformatter_3_01weekday_00_01_char_01_4.html#a417dfc29121b956fa54c273edbac8ff9":[7,0,8,1],
+"structformatter_3_01weekday_00_01_char_01_4.html#acbaef9cf81c0318bc604deb3e15acf82":[7,0,8,0],
+"structhas__member__data__tm__gmtoff.html":[7,0,11],
 "structhas__member__data__tm__gmtoff_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__gmtoff_08_4_01_4.html":[7,0,12],
 "structhas__member__data__tm__zone.html":[7,0,13],
 "structhas__member__data__tm__zone_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__zone_08_4_01_4.html":[7,0,14],

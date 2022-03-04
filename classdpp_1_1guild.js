@@ -6,6 +6,7 @@ var classdpp_1_1guild =
     [ "build_json", "classdpp_1_1guild.html#ac61dbbc6e4c64edd19a96a7ce44d9ab9", null ],
     [ "connect_member_voice", "classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e", null ],
     [ "fill_from_json", "classdpp_1_1guild.html#af180ee5682802b64c79d2dc8abc7c9cd", null ],
+    [ "fill_from_json", "classdpp_1_1guild.html#a257144008f12ada874d0e608ddcddb73", null ],
     [ "get_banner_url", "classdpp_1_1guild.html#a67463e11c6c80915c0f678d19b1bdc58", null ],
     [ "get_creation_time", "classdpp_1_1guild.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "get_discovery_splash_url", "classdpp_1_1guild.html#ad475897bedffe54fa204d4d70559ba64", null ],
