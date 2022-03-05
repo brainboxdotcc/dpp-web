@@ -1,7 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#af60061db23592a957a3b7ce4be308b46":[7,0,6,1],
-"structformatter_3_01std_1_1tm_00_01_char_01_4.html":[7,0,7],
 "structformatter_3_01std_1_1tm_00_01_char_01_4.html#a0222d68c5e1ca97550eecb6cf60abed0":[7,0,7,1],
 "structformatter_3_01std_1_1tm_00_01_char_01_4.html#a9c8caf13b1795ab3974768dc5f98a0e9":[7,0,7,2],
 "structformatter_3_01std_1_1tm_00_01_char_01_4.html#af60061db23592a957a3b7ce4be308b46":[7,0,7,0],
@@ -103,10 +101,10 @@ var NAVTREEINDEX26 =
 "structtm__format__checker.html#affe3d622f05c5e3d940eaddebc1c31d3":[7,0,28,36],
 "subcommands.html":[3,13],
 "thread-model.html":[4,1],
-"uniondpp_1_1type__punner.html":[6,0,1,167],
 "uniondpp_1_1type__punner.html":[7,0,1,167],
-"uniondpp_1_1type__punner.html#a3e84c246810f34612b65b60ab78edd61":[6,0,1,167,0],
+"uniondpp_1_1type__punner.html":[6,0,1,167],
 "uniondpp_1_1type__punner.html#a3e84c246810f34612b65b60ab78edd61":[7,0,1,167,0],
+"uniondpp_1_1type__punner.html#a3e84c246810f34612b65b60ab78edd61":[6,0,1,167,0],
 "uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[6,0,1,167,1],
 "uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[7,0,1,167,1],
 "unit-tests.html":[4,3],
