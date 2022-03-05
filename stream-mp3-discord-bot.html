@@ -149,12 +149,12 @@ $(document).ready(function(){initNavTree('stream-mp3-discord-bot.html',''); init
 <div class="line">    mpg123_getformat(mh, &amp;rate, &amp;channels, &amp;encoding);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> counter = 0;</div>
-<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> totalBtyes = 0; mpg123_read(mh, buffer, buffer_size, &amp;done) == MPG123_OK; ) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> totalBytes = 0; mpg123_read(mh, buffer, buffer_size, &amp;done) == MPG123_OK; ) {</div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; buffer_size; i++) {</div>
 <div class="line">            pcmdata.push_back(buffer[i]);</div>
 <div class="line">        }</div>
 <div class="line">        counter += buffer_size;</div>
-<div class="line">        totalBtyes += done;</div>
+<div class="line">        totalBytes += done;</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keyword">delete</span> buffer;</div>
 <div class="line">    mpg123_close(mh);</div>
