@@ -590,10 +590,12 @@
     <innernamespace refid="namespacedpp">dpp</innernamespace>
     <innernamespace refid="namespacedpp_1_1events">dpp::events</innernamespace>
       <sectiondef kind="define">
-      <memberdef kind="define" id="event_8h_1ab8250a74fd95e614b26f28787a272022" prot="public" static="no">
+      <memberdef kind="define" id="event_8h_1a1d1d4dabab5d5d7c902a63a846365eb8" prot="public" static="no">
         <name>event_decl</name>
         <param><defname>x</defname></param>
-        <initializer>class x : public event { public: virtual void handle(<ref refid="classdpp_1_1discord__client" kindref="compound">dpp::discord_client</ref>* client, nlohmann::json &amp;j, const std::string &amp;raw); };</initializer>
+        <param><defname>wstype</defname></param>
+        <initializer>	/** @brief Internal event handler for wstype websocket events. Called for each websocket message of this type. @internal */ \
+	class x : public event { public: virtual void handle(<ref refid="classdpp_1_1discord__client" kindref="compound">dpp::discord_client</ref>* client, nlohmann::json &amp;j, const std::string &amp;raw); };</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

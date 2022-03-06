@@ -57,6 +57,5 @@ var namespacedpp_1_1events =
     [ "user_update", "classdpp_1_1events_1_1user__update.html", "classdpp_1_1events_1_1user__update" ],
     [ "voice_server_update", "classdpp_1_1events_1_1voice__server__update.html", "classdpp_1_1events_1_1voice__server__update" ],
     [ "voice_state_update", "classdpp_1_1events_1_1voice__state__update.html", "classdpp_1_1events_1_1voice__state__update" ],
-    [ "webhooks_update", "classdpp_1_1events_1_1webhooks__update.html", "classdpp_1_1events_1_1webhooks__update" ],
-    [ "protect_the_loot", "namespacedpp_1_1events.html#abb48b619aaa302ed2ab79d152146902e", null ]
+    [ "webhooks_update", "classdpp_1_1events_1_1webhooks__update.html", "classdpp_1_1events_1_1webhooks__update" ]
 ];
