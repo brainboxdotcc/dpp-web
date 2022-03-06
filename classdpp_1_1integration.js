@@ -2,7 +2,7 @@ var classdpp_1_1integration =
 [
     [ "integration", "classdpp_1_1integration.html#a20e94fa7dad14b30b905854379de1258", null ],
     [ "~integration", "classdpp_1_1integration.html#ac07d5279a573d7745536d367dbd2d5be", null ],
-    [ "build_json", "classdpp_1_1integration.html#a58b14af4b3090942d4c6f7d535d5b4fd", null ],
+    [ "build_json", "classdpp_1_1integration.html#a4b8b694a3a6198c098e02c9940aba46e", null ],
     [ "emoticons_enabled", "classdpp_1_1integration.html#a71c1fe98428f12efef492f8469c9c68c", null ],
     [ "expiry_kicks_user", "classdpp_1_1integration.html#aa8c768b223e8eb219c7ffe99f13f0a07", null ],
     [ "fill_from_json", "classdpp_1_1integration.html#a45139b5e2c08bab6e81c803b2cacb9fc", null ],
@@ -10,6 +10,7 @@ var classdpp_1_1integration =
     [ "is_enabled", "classdpp_1_1integration.html#aa326f15ba2eea7d29f9ab20945d1b56d", null ],
     [ "is_revoked", "classdpp_1_1integration.html#a71170ae6931ae33969ae9352be724778", null ],
     [ "is_syncing", "classdpp_1_1integration.html#a32fff1ec90aea8ce08d481c0f0957ebb", null ],
+    [ "parse_from_json", "classdpp_1_1integration.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "account_id", "classdpp_1_1integration.html#a94925ef08b5ab6fabc0ce318091cc9c3", null ],
     [ "account_name", "classdpp_1_1integration.html#a9f7392cfbcf7f9db2c4d0d4f4631909b", null ],
     [ "app", "classdpp_1_1integration.html#ab3283de104da19b3371cf86adecc4ebb", null ],

@@ -2,8 +2,9 @@ var classdpp_1_1dtemplate =
 [
     [ "dtemplate", "classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812", null ],
     [ "~dtemplate", "classdpp_1_1dtemplate.html#a1ae48c050ffc66f77f857f939cc66487", null ],
-    [ "build_json", "classdpp_1_1dtemplate.html#a9a66c26a3d79d74bf25ca4b320c97d55", null ],
+    [ "build_json", "classdpp_1_1dtemplate.html#ac60d38ff1b7d39663be298e95b888f82", null ],
     [ "fill_from_json", "classdpp_1_1dtemplate.html#abf354676c51ce89863c7e75493df2005", null ],
+    [ "parse_from_json", "classdpp_1_1dtemplate.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "code", "classdpp_1_1dtemplate.html#afd09c5cd9ada37b0b3dc4f8c4570d25e", null ],
     [ "created_at", "classdpp_1_1dtemplate.html#a756fa7c16105d1ec41154b8ea8151ab6", null ],
     [ "creator_id", "classdpp_1_1dtemplate.html#a88f8fea4271892bcf825fda8fbe3dba8", null ],

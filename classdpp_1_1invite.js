@@ -2,8 +2,9 @@ var classdpp_1_1invite =
 [
     [ "invite", "classdpp_1_1invite.html#ad3c1ed34b2256dcbf2dce82436071f8b", null ],
     [ "~invite", "classdpp_1_1invite.html#a93e926569d8c6df52006c07c427f1601", null ],
-    [ "build_json", "classdpp_1_1invite.html#ab2efea5e28b135bf39a6a65fac1a02ca", null ],
+    [ "build_json", "classdpp_1_1invite.html#ad8a1bdea120f37f0b459ed5b29151517", null ],
     [ "fill_from_json", "classdpp_1_1invite.html#a1b2060938ed618edb951114537269c14", null ],
+    [ "parse_from_json", "classdpp_1_1invite.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "approximate_member_count", "classdpp_1_1invite.html#a1eeea3785ede65e9a93640352674a6c3", null ],
     [ "approximate_presence_count", "classdpp_1_1invite.html#a76dac8c741c2315e6be8733d12856b43", null ],
     [ "channel_id", "classdpp_1_1invite.html#aedc01d96281305a15b3d23a994927a5c", null ],

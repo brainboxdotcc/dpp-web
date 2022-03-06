@@ -8,6 +8,7 @@ var classdpp_1_1webhook =
     [ "fill_from_json", "classdpp_1_1webhook.html#a4f1b04636a0847a3de8e0513d203f1f8", null ],
     [ "get_creation_time", "classdpp_1_1webhook.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "load_image", "classdpp_1_1webhook.html#ac170fa1d18eacf094fea2b8ad6c96e9b", null ],
+    [ "parse_from_json", "classdpp_1_1webhook.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "application_id", "classdpp_1_1webhook.html#af37345950a45e0b0b15b345625f26c85", null ],
     [ "avatar", "classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110", null ],
     [ "channel_id", "classdpp_1_1webhook.html#ae553e70e26e0062648d0280aa74eaed0", null ],

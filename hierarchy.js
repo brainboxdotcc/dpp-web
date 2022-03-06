@@ -11,9 +11,7 @@ var hierarchy =
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
-    [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ],
     [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
-    [ "dpp::ban", "classdpp_1_1ban.html", null ],
     [ "bool_constant", "classbool__constant.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
@@ -34,18 +32,13 @@ var hierarchy =
     [ "dpp::command_data_option", "structdpp_1_1command__data__option.html", null ],
     [ "dpp::command_info_t", "structdpp_1_1command__info__t.html", null ],
     [ "dpp::command_interaction", "structdpp_1_1command__interaction.html", null ],
-    [ "dpp::command_option", "structdpp_1_1command__option.html", null ],
-    [ "dpp::command_option_choice", "structdpp_1_1command__option__choice.html", null ],
-    [ "dpp::command_permission", "classdpp_1_1command__permission.html", null ],
     [ "dpp::command_resolved", "structdpp_1_1command__resolved.html", null ],
     [ "dpp::command_source", "structdpp_1_1command__source.html", null ],
     [ "dpp::commandhandler", "classdpp_1_1commandhandler.html", null ],
-    [ "dpp::component", "classdpp_1_1component.html", null ],
     [ "dpp::component_interaction", "structdpp_1_1component__interaction.html", null ],
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
     [ "dpp::connection", "classdpp_1_1connection.html", null ],
-    [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
     [ "dpp::embed_author", "structdpp_1_1embed__author.html", null ],
     [ "dpp::embed_field", "structdpp_1_1embed__field.html", null ],
@@ -212,7 +205,6 @@ var hierarchy =
     [ "formatter< weekday, Char >", "structformatter_3_01weekday_00_01_char_01_4.html", null ],
     [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
     [ "get_locale", "classget__locale.html", null ],
-    [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
     [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ],
     [ "Handler", "class_handler.html", null ],
@@ -223,17 +215,105 @@ var hierarchy =
     [ "dpp::component::inner_emoji", "structdpp_1_1component_1_1inner__emoji.html", null ],
     [ "dpp::select_option::inner_select_emoji", "structdpp_1_1select__option_1_1inner__select__emoji.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
-    [ "dpp::interaction_response", "structdpp_1_1interaction__response.html", [
+    [ "dpp::json_interface< T >", "structdpp_1_1json__interface.html", null ],
+    [ "dpp::json_interface< application >", "structdpp_1_1json__interface.html", [
+      [ "dpp::application", "classdpp_1_1application.html", null ]
+    ] ],
+    [ "dpp::json_interface< auditlog >", "structdpp_1_1json__interface.html", [
+      [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ]
+    ] ],
+    [ "dpp::json_interface< ban >", "structdpp_1_1json__interface.html", [
+      [ "dpp::ban", "classdpp_1_1ban.html", null ]
+    ] ],
+    [ "dpp::json_interface< channel >", "structdpp_1_1json__interface.html", [
+      [ "dpp::channel", "classdpp_1_1channel.html", [
+        [ "dpp::thread", "classdpp_1_1thread.html", null ]
+      ] ]
+    ] ],
+    [ "dpp::json_interface< command_option >", "structdpp_1_1json__interface.html", [
+      [ "dpp::command_option", "structdpp_1_1command__option.html", null ]
+    ] ],
+    [ "dpp::json_interface< command_option_choice >", "structdpp_1_1json__interface.html", [
+      [ "dpp::command_option_choice", "structdpp_1_1command__option__choice.html", null ]
+    ] ],
+    [ "dpp::json_interface< command_permission >", "structdpp_1_1json__interface.html", [
+      [ "dpp::command_permission", "classdpp_1_1command__permission.html", null ]
+    ] ],
+    [ "dpp::json_interface< component >", "structdpp_1_1json__interface.html", [
+      [ "dpp::component", "classdpp_1_1component.html", null ]
+    ] ],
+    [ "dpp::json_interface< dtemplate >", "structdpp_1_1json__interface.html", [
+      [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ]
+    ] ],
+    [ "dpp::json_interface< emoji >", "structdpp_1_1json__interface.html", [
+      [ "dpp::emoji", "classdpp_1_1emoji.html", null ]
+    ] ],
+    [ "dpp::json_interface< guild >", "structdpp_1_1json__interface.html", [
+      [ "dpp::guild", "classdpp_1_1guild.html", null ]
+    ] ],
+    [ "dpp::json_interface< guild_command_permissions >", "structdpp_1_1json__interface.html", [
+      [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ]
+    ] ],
+    [ "dpp::json_interface< integration >", "structdpp_1_1json__interface.html", [
+      [ "dpp::integration", "classdpp_1_1integration.html", null ]
+    ] ],
+    [ "dpp::json_interface< interaction >", "structdpp_1_1json__interface.html", [
+      [ "dpp::interaction", "classdpp_1_1interaction.html", null ]
+    ] ],
+    [ "dpp::json_interface< interaction_modal_response >", "structdpp_1_1json__interface.html", [
       [ "dpp::interaction_modal_response", "structdpp_1_1interaction__modal__response.html", null ]
     ] ],
-    [ "dpp::invite", "classdpp_1_1invite.html", null ],
+    [ "dpp::json_interface< interaction_response >", "structdpp_1_1json__interface.html", [
+      [ "dpp::interaction_response", "structdpp_1_1interaction__response.html", [
+        [ "dpp::interaction_modal_response", "structdpp_1_1interaction__modal__response.html", null ]
+      ] ]
+    ] ],
+    [ "dpp::json_interface< invite >", "structdpp_1_1json__interface.html", [
+      [ "dpp::invite", "classdpp_1_1invite.html", null ]
+    ] ],
+    [ "dpp::json_interface< presence >", "structdpp_1_1json__interface.html", [
+      [ "dpp::presence", "classdpp_1_1presence.html", null ]
+    ] ],
+    [ "dpp::json_interface< prune >", "structdpp_1_1json__interface.html", [
+      [ "dpp::prune", "structdpp_1_1prune.html", null ]
+    ] ],
+    [ "dpp::json_interface< role >", "structdpp_1_1json__interface.html", [
+      [ "dpp::role", "classdpp_1_1role.html", null ]
+    ] ],
+    [ "dpp::json_interface< slashcommand >", "structdpp_1_1json__interface.html", [
+      [ "dpp::slashcommand", "classdpp_1_1slashcommand.html", null ]
+    ] ],
+    [ "dpp::json_interface< stage_instance >", "structdpp_1_1json__interface.html", [
+      [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ]
+    ] ],
+    [ "dpp::json_interface< sticker >", "structdpp_1_1json__interface.html", [
+      [ "dpp::sticker", "structdpp_1_1sticker.html", null ]
+    ] ],
+    [ "dpp::json_interface< sticker_pack >", "structdpp_1_1json__interface.html", [
+      [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ]
+    ] ],
+    [ "dpp::json_interface< user >", "structdpp_1_1json__interface.html", [
+      [ "dpp::user", "classdpp_1_1user.html", [
+        [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
+      ] ]
+    ] ],
+    [ "dpp::json_interface< user_identified >", "structdpp_1_1json__interface.html", [
+      [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
+    ] ],
+    [ "dpp::json_interface< voiceregion >", "structdpp_1_1json__interface.html", [
+      [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ]
+    ] ],
+    [ "dpp::json_interface< voicestate >", "structdpp_1_1json__interface.html", [
+      [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ]
+    ] ],
+    [ "dpp::json_interface< webhook >", "structdpp_1_1json__interface.html", [
+      [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
+    ] ],
     [ "make_unsigned_or_unchanged< T, INTEGRAL >", "structmake__unsigned__or__unchanged.html", null ],
     [ "make_unsigned_or_unchanged< T, true >", "structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ],
-      [ "dpp::channel", "classdpp_1_1channel.html", [
-        [ "dpp::thread", "classdpp_1_1thread.html", null ]
-      ] ],
+      [ "dpp::channel", "classdpp_1_1channel.html", null ],
       [ "dpp::collected_reaction", "classdpp_1_1collected__reaction.html", null ],
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ],
       [ "dpp::guild", "classdpp_1_1guild.html", null ],
@@ -246,9 +326,7 @@ var hierarchy =
       [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
       [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
       [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
-      [ "dpp::user", "classdpp_1_1user.html", [
-        [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
-      ] ],
+      [ "dpp::user", "classdpp_1_1user.html", null ],
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ],
       [ "test_cached_object_t", "classtest__cached__object__t.html", null ]
     ] ],
@@ -270,8 +348,6 @@ var hierarchy =
     [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
-    [ "dpp::presence", "classdpp_1_1presence.html", null ],
-    [ "dpp::prune", "structdpp_1_1prune.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
@@ -303,8 +379,6 @@ var hierarchy =
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
-    [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
-    [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
     [ "weekday", "classweekday.html", null ],
     [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
     [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ],

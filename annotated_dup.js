@@ -176,6 +176,7 @@ var annotated_dup =
       [ "invite", "classdpp_1_1invite.html", "classdpp_1_1invite" ],
       [ "invite_create_t", "structdpp_1_1invite__create__t.html", "structdpp_1_1invite__create__t" ],
       [ "invite_delete_t", "structdpp_1_1invite__delete__t.html", "structdpp_1_1invite__delete__t" ],
+      [ "json_interface", "structdpp_1_1json__interface.html", "structdpp_1_1json__interface" ],
       [ "length_exception", "classdpp_1_1length__exception.html", "classdpp_1_1length__exception" ],
       [ "log_t", "structdpp_1_1log__t.html", "structdpp_1_1log__t" ],
       [ "logic_exception", "classdpp_1_1logic__exception.html", "classdpp_1_1logic__exception" ],

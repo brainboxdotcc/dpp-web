@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classdpp_1_1voiceregion" kind="class" language="C++" prot="public">
     <compoundname>dpp::voiceregion</compoundname>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; voiceregion &gt;</basecompoundref>
     <includes local="no">voiceregion.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1voiceregion_1a36b5334ed5fd4a4b2781140ca33ab543" prot="public" static="no" mutable="no">
@@ -16,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="46" column="13" bodyfile="include/dpp/voiceregion.h" bodystart="46" bodyend="-1"/>
+        <location file="include/dpp/voiceregion.h" line="47" column="13" bodyfile="include/dpp/voiceregion.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1voiceregion_1aeb615bf80ea5915481682e8fa01595b8" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -30,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="51" column="13" bodyfile="include/dpp/voiceregion.h" bodystart="51" bodyend="-1"/>
+        <location file="include/dpp/voiceregion.h" line="52" column="13" bodyfile="include/dpp/voiceregion.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1voiceregion_1af3068a533a8396614c48401c1049c374" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -44,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="56" column="9" bodyfile="include/dpp/voiceregion.h" bodystart="56" bodyend="-1"/>
+        <location file="include/dpp/voiceregion.h" line="57" column="9" bodyfile="include/dpp/voiceregion.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -60,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="61" column="1" bodyfile="src/dpp/voiceregion.cpp" bodystart="29" bodyend="31"/>
+        <location file="include/dpp/voiceregion.h" line="62" column="1" bodyfile="src/dpp/voiceregion.cpp" bodystart="29" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceregion_1ab08402a1538913ad465b2c36cd4dbf92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -74,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="66" column="1"/>
+        <location file="include/dpp/voiceregion.h" line="67" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceregion_1a60425fa948752520c12b420b4bb6636a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref> &amp;</type>
@@ -104,24 +105,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="74" column="14" bodyfile="src/dpp/voiceregion.cpp" bodystart="35" bodyend="47"/>
+        <location file="include/dpp/voiceregion.h" line="75" column="14" bodyfile="src/dpp/voiceregion.cpp" bodystart="35" bodyend="47"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1voiceregion_1a614f804edbabc1db7f69f55fa28f75f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1voiceregion_1ad45586d777a5474bc3e08f485167d752" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string dpp::voiceregion::build_json</definition>
-        <argsstring>() const</argsstring>
+        <argsstring>(bool with_id=false) const</argsstring>
         <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
         <briefdescription>
 <para>Build a json string for this object. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>std::string JSON string </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Add ID to output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string JSON string </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="81" column="13" bodyfile="src/dpp/voiceregion.cpp" bodystart="49" bodyend="58"/>
+        <location file="include/dpp/voiceregion.h" line="83" column="13" bodyfile="src/dpp/voiceregion.cpp" bodystart="49" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceregion_1ad8cc77b8def50a189e2b2c636fd6927e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -138,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="88" column="6" bodyfile="src/dpp/voiceregion.cpp" bodystart="60" bodyend="62"/>
+        <location file="include/dpp/voiceregion.h" line="90" column="6" bodyfile="src/dpp/voiceregion.cpp" bodystart="60" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceregion_1af29355f165f2ee1aeed095f79136c039" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -155,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="95" column="6" bodyfile="src/dpp/voiceregion.cpp" bodystart="64" bodyend="66"/>
+        <location file="include/dpp/voiceregion.h" line="97" column="6" bodyfile="src/dpp/voiceregion.cpp" bodystart="64" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceregion_1a2acea0a6fa26f8713e7ff712c21626b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -172,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="102" column="6" bodyfile="src/dpp/voiceregion.cpp" bodystart="68" bodyend="70"/>
+        <location file="include/dpp/voiceregion.h" line="104" column="6" bodyfile="src/dpp/voiceregion.cpp" bodystart="68" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceregion_1a2773af7f67f44b7c7cd45e04791c4d14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -189,7 +205,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/voiceregion.h" line="109" column="6" bodyfile="src/dpp/voiceregion.cpp" bodystart="72" bodyend="74"/>
+        <location file="include/dpp/voiceregion.h" line="111" column="6" bodyfile="src/dpp/voiceregion.cpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a2c9a2c965fd68714e9f8d163d4ea8d91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1voiceregion" kindref="compound">voiceregion</ref> &amp;</type>
+        <definition>voiceregion  &amp; dpp::json_interface&lt; voiceregion  &gt;::parse_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>parse_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="42" column="3" bodyfile="include/dpp/json_interface.h" bodystart="42" bodyend="44"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -197,33 +243,51 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::voiceregion</label>
+        <link refid="classdpp_1_1voiceregion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; voiceregion &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+    </inheritancegraph>
     <collaborationgraph>
       <node id="1">
         <label>dpp::voiceregion</label>
         <link refid="classdpp_1_1voiceregion"/>
-        <childnode refid="2" relation="usage">
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
           <edgelabel>id</edgelabel>
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
       </node>
-      <node id="3">
-        <label>std::basic_string&lt; Char &gt;</label>
-      </node>
       <node id="2">
-        <label>std::string</label>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
+        <label>dpp::json_interface&lt; voiceregion &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
       </node>
       <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/voiceregion.h" line="41" column="1" bodyfile="include/dpp/voiceregion.h" bodystart="41" bodyend="110"/>
+    <location file="include/dpp/voiceregion.h" line="42" column="1" bodyfile="include/dpp/voiceregion.h" bodystart="42" bodyend="112"/>
     <listofallmembers>
-      <member refid="classdpp_1_1voiceregion_1a614f804edbabc1db7f69f55fa28f75f5" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1voiceregion_1ad45586d777a5474bc3e08f485167d752" prot="public" virt="virtual"><scope>dpp::voiceregion</scope><name>build_json</name></member>
       <member refid="classdpp_1_1voiceregion_1a60425fa948752520c12b420b4bb6636a" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>fill_from_json</name></member>
       <member refid="classdpp_1_1voiceregion_1af3068a533a8396614c48401c1049c374" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>flags</name></member>
       <member refid="classdpp_1_1voiceregion_1a36b5334ed5fd4a4b2781140ca33ab543" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>id</name></member>
@@ -232,6 +296,7 @@
       <member refid="classdpp_1_1voiceregion_1ad8cc77b8def50a189e2b2c636fd6927e" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>is_optimal</name></member>
       <member refid="classdpp_1_1voiceregion_1a2773af7f67f44b7c7cd45e04791c4d14" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>is_vip</name></member>
       <member refid="classdpp_1_1voiceregion_1aeb615bf80ea5915481682e8fa01595b8" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>name</name></member>
+      <member refid="structdpp_1_1json__interface_1a2c9a2c965fd68714e9f8d163d4ea8d91" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>parse_from_json</name></member>
       <member refid="classdpp_1_1voiceregion_1aa49a3a3f843f2f97f27ad262dff11c5c" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>voiceregion</name></member>
       <member refid="classdpp_1_1voiceregion_1ab08402a1538913ad465b2c36cd4dbf92" prot="public" virt="non-virtual"><scope>dpp::voiceregion</scope><name>~voiceregion</name></member>
     </listofallmembers>

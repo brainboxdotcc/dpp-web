@@ -2,6 +2,7 @@ var classdpp_1_1user__identified =
 [
     [ "user_identified", "classdpp_1_1user__identified.html#ac66ddd9e773d41eaeb7fc2d6c5eac255", null ],
     [ "~user_identified", "classdpp_1_1user__identified.html#a9cb53a8e30f9782cd8efc882337e887b", null ],
+    [ "build_json", "classdpp_1_1user__identified.html#aa74c189a25cabca7136792c06916dc81", null ],
     [ "fill_from_json", "classdpp_1_1user__identified.html#a60735ed134723b215cb6920ad96e30cc", null ],
     [ "format_username", "classdpp_1_1user__identified.html#aa8e70346690b38db060af1d0f84ac1d7", null ],
     [ "get_avatar_url", "classdpp_1_1user__identified.html#adddc16b840a409119b9bda1af4e39e42", null ],
@@ -29,6 +30,8 @@ var classdpp_1_1user__identified =
     [ "is_verified", "classdpp_1_1user__identified.html#aa08cdd77402ef1d08b003e2e5342004a", null ],
     [ "is_verified_bot", "classdpp_1_1user__identified.html#a9aabc6989097e79dc8e3e8d00d7a0c5f", null ],
     [ "is_verified_bot_dev", "classdpp_1_1user__identified.html#abe54bbcf190f3aba2aeaf8c2d6287152", null ],
+    [ "parse_from_json", "classdpp_1_1user__identified.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
+    [ "parse_from_json", "classdpp_1_1user__identified.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "accent_color", "classdpp_1_1user__identified.html#a6cdebbe04c3a6a52a7148a21eea0613c", null ],
     [ "avatar", "classdpp_1_1user__identified.html#ae9d90b269f17fc2c5a0021dcb2b8dce3", null ],
     [ "banner", "classdpp_1_1user__identified.html#a5b1955e6f623db547bcebccd8da5b1a0", null ],

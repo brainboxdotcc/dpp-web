@@ -4,6 +4,7 @@ var structdpp_1_1sticker =
     [ "build_json", "structdpp_1_1sticker.html#a71a3c8c6aacbf611ecfa1a383c04e57f", null ],
     [ "fill_from_json", "structdpp_1_1sticker.html#a399c9ca40a5d08a9a59d66a0751c5087", null ],
     [ "get_creation_time", "structdpp_1_1sticker.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
+    [ "parse_from_json", "structdpp_1_1sticker.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "set_file_content", "structdpp_1_1sticker.html#ad8ab299b9bb4e5165acadda87f703a13", null ],
     [ "set_filename", "structdpp_1_1sticker.html#a3b3c4734bbc30064627f5dd036ca26f6", null ],
     [ "asset", "structdpp_1_1sticker.html#af01f4dd7249de7c69f0a08e5b0e27459", null ],

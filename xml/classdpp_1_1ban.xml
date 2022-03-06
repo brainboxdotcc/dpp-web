@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classdpp_1_1ban" kind="class" language="C++" prot="public">
     <compoundname>dpp::ban</compoundname>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; ban &gt;</basecompoundref>
     <includes local="no">ban.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1ban_1af3f56d08933ee4007f442b11c6b75c01" prot="public" static="no" mutable="no">
@@ -16,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/ban.h" line="37" column="13" bodyfile="include/dpp/ban.h" bodystart="37" bodyend="-1"/>
+        <location file="include/dpp/ban.h" line="38" column="13" bodyfile="include/dpp/ban.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ban_1aa4bfab1d617a8e41fe5353c210f7b7ea" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -30,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/ban.h" line="39" column="11" bodyfile="include/dpp/ban.h" bodystart="39" bodyend="-1"/>
+        <location file="include/dpp/ban.h" line="40" column="11" bodyfile="include/dpp/ban.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -46,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/ban.h" line="42" column="1" bodyfile="src/dpp/ban.cpp" bodystart="29" bodyend="31"/>
+        <location file="include/dpp/ban.h" line="43" column="1" bodyfile="src/dpp/ban.cpp" bodystart="29" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ban_1a975e673c3ea3c1a976397542fde9e379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -60,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/ban.h" line="45" column="1"/>
+        <location file="include/dpp/ban.h" line="46" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ban_1a87b3151fac55308a2f1c3b77f78aba36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1ban" kindref="compound">ban</ref> &amp;</type>
@@ -89,24 +90,69 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/ban.h" line="51" column="6" bodyfile="src/dpp/ban.cpp" bodystart="35" bodyend="42"/>
+        <location file="include/dpp/ban.h" line="52" column="6" bodyfile="src/dpp/ban.cpp" bodystart="35" bodyend="42"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1ban_1a43e09f38cd732a760b8e349cb948cfb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1ban_1a613ccbe35f91aea53e931df545efa1c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string dpp::ban::build_json</definition>
-        <argsstring>() const</argsstring>
+        <argsstring>(bool with_id=false) const</argsstring>
         <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
         <briefdescription>
 <para>Build json representation of a ban. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>std::string stringified json </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Include ID in json</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string stringified json </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/ban.h" line="58" column="13" bodyfile="src/dpp/ban.cpp" bodystart="44" bodyend="47"/>
+        <location file="include/dpp/ban.h" line="60" column="13" bodyfile="src/dpp/ban.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a2c9a2c965fd68714e9f8d163d4ea8d91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1ban" kindref="compound">ban</ref> &amp;</type>
+        <definition>ban  &amp; dpp::json_interface&lt; ban  &gt;::parse_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>parse_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="42" column="3" bodyfile="include/dpp/json_interface.h" bodystart="42" bodyend="44"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -114,34 +160,53 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::ban</label>
+        <link refid="classdpp_1_1ban"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; ban &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+    </inheritancegraph>
     <collaborationgraph>
       <node id="1">
         <label>dpp::ban</label>
         <link refid="classdpp_1_1ban"/>
-        <childnode refid="2" relation="usage">
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
           <edgelabel>reason</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>user_id</edgelabel>
         </childnode>
       </node>
-      <node id="3">
-        <label>std::basic_string&lt; Char &gt;</label>
-      </node>
       <node id="2">
-        <label>std::string</label>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
+        <label>dpp::json_interface&lt; ban &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
       </node>
       <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/ban.h" line="34" column="1" bodyfile="include/dpp/ban.h" bodystart="34" bodyend="59"/>
+    <location file="include/dpp/ban.h" line="35" column="1" bodyfile="include/dpp/ban.h" bodystart="35" bodyend="61"/>
     <listofallmembers>
       <member refid="classdpp_1_1ban_1ad892633726780283e88837a404953351" prot="public" virt="non-virtual"><scope>dpp::ban</scope><name>ban</name></member>
-      <member refid="classdpp_1_1ban_1a43e09f38cd732a760b8e349cb948cfb5" prot="public" virt="non-virtual"><scope>dpp::ban</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1ban_1a613ccbe35f91aea53e931df545efa1c7" prot="public" virt="virtual"><scope>dpp::ban</scope><name>build_json</name></member>
       <member refid="classdpp_1_1ban_1a87b3151fac55308a2f1c3b77f78aba36" prot="public" virt="non-virtual"><scope>dpp::ban</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1json__interface_1a2c9a2c965fd68714e9f8d163d4ea8d91" prot="public" virt="non-virtual"><scope>dpp::ban</scope><name>parse_from_json</name></member>
       <member refid="classdpp_1_1ban_1af3f56d08933ee4007f442b11c6b75c01" prot="public" virt="non-virtual"><scope>dpp::ban</scope><name>reason</name></member>
       <member refid="classdpp_1_1ban_1aa4bfab1d617a8e41fe5353c210f7b7ea" prot="public" virt="non-virtual"><scope>dpp::ban</scope><name>user_id</name></member>
       <member refid="classdpp_1_1ban_1a975e673c3ea3c1a976397542fde9e379" prot="public" virt="non-virtual"><scope>dpp::ban</scope><name>~ban</name></member>
