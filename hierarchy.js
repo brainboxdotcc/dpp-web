@@ -309,6 +309,7 @@ var hierarchy =
     [ "dpp::json_interface< webhook >", "structdpp_1_1json__interface.html", [
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
+    [ "dpp::keepalive_cache_t", "structdpp_1_1keepalive__cache__t.html", null ],
     [ "make_unsigned_or_unchanged< T, INTEGRAL >", "structmake__unsigned__or__unchanged.html", null ],
     [ "make_unsigned_or_unchanged< T, true >", "structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
     [ "dpp::managed", "classdpp_1_1managed.html", [

@@ -177,6 +177,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa1a9af1a95e1fb4ac1504de8d591b650"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e">socket_notification_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#aa1a9af1a95e1fb4ac1504de8d591b650">custom_writeable_ready</a></td></tr>
 <tr class="memdesc:aa1a9af1a95e1fb4ac1504de8d591b650"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event will be called when you can write to a custom fd.  <a href="classdpp_1_1ssl__client.html#aa1a9af1a95e1fb4ac1504de8d591b650">More...</a><br /></td></tr>
 <tr class="separator:aa1a9af1a95e1fb4ac1504de8d591b650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8997404ef91c501c3e8ae1079e89152"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#ac8997404ef91c501c3e8ae1079e89152">keepalive</a></td></tr>
+<tr class="memdesc:ac8997404ef91c501c3e8ae1079e89152"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we are keeping the connection alive after it has finished.  <a href="classdpp_1_1ssl__client.html#ac8997404ef91c501c3e8ae1079e89152">More...</a><br /></td></tr>
+<tr class="separator:ac8997404ef91c501c3e8ae1079e89152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -211,6 +214,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa735feca3545e156e0607c06d55288c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#aa735feca3545e156e0607c06d55288c4">plaintext</a></td></tr>
 <tr class="separator:aa735feca3545e156e0607c06d55288c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d17d6f3cb7781ecba40aaedf10ff598"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a6d17d6f3cb7781ecba40aaedf10ff598">make_new</a></td></tr>
+<tr class="memdesc:a6d17d6f3cb7781ecba40aaedf10ff598"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we are establishing a new connection, false if otherwise.  <a href="classdpp_1_1ssl__client.html#a6d17d6f3cb7781ecba40aaedf10ff598">More...</a><br /></td></tr>
+<tr class="separator:a6d17d6f3cb7781ecba40aaedf10ff598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implements a websocket client based on the SSL client. </p>
@@ -922,6 +928,30 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac8997404ef91c501c3e8ae1079e89152" name="ac8997404ef91c501c3e8ae1079e89152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8997404ef91c501c3e8ae1079e89152">&#9670;&nbsp;</a></span>keepalive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::ssl_client::keepalive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if we are keeping the connection alive after it has finished. </p>
+
+</div>
+</div>
 <a id="a61f0bbeefa25de686ac93887afa65895" name="a61f0bbeefa25de686ac93887afa65895"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61f0bbeefa25de686ac93887afa65895">&#9670;&nbsp;</a></span>last_tick</h2>
 
@@ -942,6 +972,30 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >For timers </p>
+
+</div>
+</div>
+<a id="a6d17d6f3cb7781ecba40aaedf10ff598" name="a6d17d6f3cb7781ecba40aaedf10ff598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d17d6f3cb7781ecba40aaedf10ff598">&#9670;&nbsp;</a></span>make_new</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::ssl_client::make_new</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if we are establishing a new connection, false if otherwise. </p>
 
 </div>
 </div>
@@ -1010,6 +1064,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >True for a plain text connection </p>
 
 </div>
 </div>

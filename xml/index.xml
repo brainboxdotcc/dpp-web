@@ -938,6 +938,7 @@
     <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" kind="variable"><name>bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" kind="variable"><name>bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" kind="variable"><name>plaintext</name></member>
+    <member refid="classdpp_1_1ssl__client_1a6d17d6f3cb7781ecba40aaedf10ff598" kind="variable"><name>make_new</name></member>
     <member refid="classdpp_1_1discord__client_1aac742863ae29a76c2ef1a337c19c7b45" kind="variable"><name>queue_mutex</name></member>
     <member refid="classdpp_1_1discord__client_1a0c7eeee6642b74777eb48b90b5d5c3b4" kind="variable"><name>message_queue</name></member>
     <member refid="classdpp_1_1discord__client_1ae2b41454f50ff851430d2a2615336e63" kind="variable"><name>runner</name></member>
@@ -971,6 +972,7 @@
     <member refid="classdpp_1_1ssl__client_1afa81c27a0b2fc2d68b3939e102bf2cbf" kind="variable"><name>custom_writeable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" kind="variable"><name>custom_readable_ready</name></member>
     <member refid="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" kind="variable"><name>custom_writeable_ready</name></member>
+    <member refid="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" kind="variable"><name>keepalive</name></member>
     <member refid="classdpp_1_1discord__client_1ad6720e53bbc68722cc807dbd05b5fb71" kind="function"><name>disconnect_voice_internal</name></member>
     <member refid="classdpp_1_1websocket__client_1a055feb8555795bd25c3f98997af962ba" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1websocket__client_1a70cd8db1b96a3a77b6342cd78153c827" kind="function"><name>get_state</name></member>
@@ -1048,6 +1050,7 @@
     <member refid="classdpp_1_1ssl__client_1afa81c27a0b2fc2d68b3939e102bf2cbf" kind="variable"><name>custom_writeable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" kind="variable"><name>custom_readable_ready</name></member>
     <member refid="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" kind="variable"><name>custom_writeable_ready</name></member>
+    <member refid="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" kind="variable"><name>keepalive</name></member>
     <member refid="classdpp_1_1discord__voice__client_1adfbadeaa50f485f0a0418c4570e1a4cd" kind="variable"><name>sodium_initialised</name></member>
     <member refid="classdpp_1_1discord__voice__client_1af8fde0bfc3281a40a8ea2939373e4195" kind="function"><name>thread_run</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a3af067458ec0133cb293e6d1e748295c" kind="function"><name>udp_send</name></member>
@@ -1109,6 +1112,7 @@
     <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" kind="variable"><name>bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" kind="variable"><name>bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" kind="variable"><name>plaintext</name></member>
+    <member refid="classdpp_1_1ssl__client_1a6d17d6f3cb7781ecba40aaedf10ff598" kind="variable"><name>make_new</name></member>
   </compound>
   <compound refid="classdpp_1_1dtemplate" kind="class"><name>dpp::dtemplate</name>
     <member refid="classdpp_1_1dtemplate_1afd09c5cd9ada37b0b3dc4f8c4570d25e" kind="variable"><name>code</name></member>
@@ -1846,7 +1850,12 @@
     <member refid="classdpp_1_1https__client_1a5a7a9866a0f7cb682256400cfebe6015" kind="variable"><name>request_headers</name></member>
     <member refid="classdpp_1_1https__client_1ad8d80fde390cd6307e0c5008c0ad45d5" kind="variable"><name>status</name></member>
     <member refid="classdpp_1_1https__client_1a1e85d7cad322c90c719f4434abfa1438" kind="variable"><name>timeout</name></member>
+    <member refid="classdpp_1_1https__client_1a463fe015fba652aa875a7d604413b8d2" kind="variable"><name>chunked</name></member>
+    <member refid="classdpp_1_1https__client_1a02e685149fc9c13447bca39cb4f43e9d" kind="variable"><name>waiting_end_marker</name></member>
+    <member refid="classdpp_1_1https__client_1ac3eb2f3a3d044fc3151dd43fdf883c3a" kind="variable"><name>chunk_size</name></member>
+    <member refid="classdpp_1_1https__client_1a7c1571db23c5f1c8b711a11edfd03c90" kind="variable"><name>chunk_receive</name></member>
     <member refid="classdpp_1_1https__client_1a84409f7ce50bbf17da89c2ab73b5ea42" kind="variable"><name>response_headers</name></member>
+    <member refid="classdpp_1_1https__client_1a45e64aadc54d356a6e9f7d0a64eb231e" kind="function"><name>do_buffer</name></member>
     <member refid="classdpp_1_1https__client_1a42616cd36716baeff8e8b086f70b365f" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1https__client_1af0b48879cca3f23df33cbad1cc73f7d2" kind="function"><name>get_state</name></member>
     <member refid="classdpp_1_1https__client_1a9ff312a1a5529495b77452e6bfe50fda" kind="function"><name>https_client</name></member>
@@ -1878,10 +1887,12 @@
     <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" kind="variable"><name>bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" kind="variable"><name>bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" kind="variable"><name>plaintext</name></member>
+    <member refid="classdpp_1_1ssl__client_1a6d17d6f3cb7781ecba40aaedf10ff598" kind="variable"><name>make_new</name></member>
     <member refid="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" kind="variable"><name>custom_readable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1afa81c27a0b2fc2d68b3939e102bf2cbf" kind="variable"><name>custom_writeable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" kind="variable"><name>custom_readable_ready</name></member>
     <member refid="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" kind="variable"><name>custom_writeable_ready</name></member>
+    <member refid="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" kind="variable"><name>keepalive</name></member>
   </compound>
   <compound refid="structdpp_1_1utility_1_1iconhash" kind="struct"><name>dpp::utility::iconhash</name>
     <member refid="structdpp_1_1utility_1_1iconhash_1a185b30a583970f0ba298ab0429e29d91" kind="variable"><name>first</name></member>
@@ -2107,6 +2118,10 @@
   <compound refid="structdpp_1_1json__interface" kind="struct"><name>dpp::json_interface</name>
     <member refid="structdpp_1_1json__interface_1a2c9a2c965fd68714e9f8d163d4ea8d91" kind="function"><name>parse_from_json</name></member>
     <member refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1" kind="function"><name>build_json</name></member>
+  </compound>
+  <compound refid="structdpp_1_1keepalive__cache__t" kind="struct"><name>dpp::keepalive_cache_t</name>
+    <member refid="structdpp_1_1keepalive__cache__t_1ad62ff27dfc3945728688ee4eb087803c" kind="variable"><name>ssl</name></member>
+    <member refid="structdpp_1_1keepalive__cache__t_1a217295318df9d1080c6a2bd4f6018622" kind="variable"><name>sfd</name></member>
   </compound>
   <compound refid="classdpp_1_1length__exception" kind="class"><name>dpp::length_exception</name>
     <member refid="classdpp_1_1exception_1ac033c933ff59daf22d4ea121303e11b9" kind="variable"><name>msg</name></member>
@@ -2761,16 +2776,18 @@
     <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" kind="variable"><name>bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" kind="variable"><name>bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" kind="variable"><name>plaintext</name></member>
+    <member refid="classdpp_1_1ssl__client_1a6d17d6f3cb7781ecba40aaedf10ff598" kind="variable"><name>make_new</name></member>
     <member refid="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" kind="variable"><name>custom_readable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1afa81c27a0b2fc2d68b3939e102bf2cbf" kind="variable"><name>custom_writeable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" kind="variable"><name>custom_readable_ready</name></member>
     <member refid="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" kind="variable"><name>custom_writeable_ready</name></member>
+    <member refid="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" kind="variable"><name>keepalive</name></member>
     <member refid="classdpp_1_1ssl__client_1ae78617d00003abcbfce5446cb6bdde41" kind="function"><name>one_second_timer</name></member>
     <member refid="classdpp_1_1ssl__client_1afa72c083a644eba592b5da9392ebc5bd" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" kind="function"><name>get_bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" kind="function"><name>get_cipher</name></member>
-    <member refid="classdpp_1_1ssl__client_1a5b4e115d8a21b01efe0678af9b2d03b7" kind="function"><name>ssl_client</name></member>
+    <member refid="classdpp_1_1ssl__client_1a53c006d94ef782a5e138accb669871e1" kind="function"><name>ssl_client</name></member>
     <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kind="function"><name>read_loop</name></member>
     <member refid="classdpp_1_1ssl__client_1ab805a3cc483018dbba6b745f7fa6ff24" kind="function"><name>~ssl_client</name></member>
     <member refid="classdpp_1_1ssl__client_1a17e09b948aa1c61cf8c5f73281dd07e6" kind="function"><name>handle_buffer</name></member>
@@ -3512,10 +3529,12 @@
     <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" kind="variable"><name>bytes_out</name></member>
     <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" kind="variable"><name>bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1aa735feca3545e156e0607c06d55288c4" kind="variable"><name>plaintext</name></member>
+    <member refid="classdpp_1_1ssl__client_1a6d17d6f3cb7781ecba40aaedf10ff598" kind="variable"><name>make_new</name></member>
     <member refid="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" kind="variable"><name>custom_readable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1afa81c27a0b2fc2d68b3939e102bf2cbf" kind="variable"><name>custom_writeable_fd</name></member>
     <member refid="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" kind="variable"><name>custom_readable_ready</name></member>
     <member refid="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" kind="variable"><name>custom_writeable_ready</name></member>
+    <member refid="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" kind="variable"><name>keepalive</name></member>
   </compound>
   <compound refid="classweekday" kind="class"><name>weekday</name>
     <member refid="classweekday_1a49a173628c70379aebdd676ff00310ab" kind="variable"><name>value</name></member>
@@ -3795,6 +3814,10 @@
     <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091a1cb90f896a57c9a108a44c99d84964ad" kind="enumvalue"><name>HTTPS_HEADERS</name></member>
     <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091a1eab41dc1b7d4eb0e8f68217318f6068" kind="enumvalue"><name>HTTPS_CONTENT</name></member>
     <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091aa4cbb0b5e2760ec5ab444e7b787f5a02" kind="enumvalue"><name>HTTPS_DONE</name></member>
+    <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091a61111f54baecc9385a8812cc8ebf4128" kind="enumvalue"><name>HTTPS_CHUNK_LEN</name></member>
+    <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091a14a882845dbc07216ce9093e6b8326a1" kind="enumvalue"><name>HTTPS_CHUNK_TRAILER</name></member>
+    <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091aae0ac9fd46782eff729f30165376b78d" kind="enumvalue"><name>HTTPS_CHUNK_LAST</name></member>
+    <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091af202968d765aaa0b2d9e262fbda347d7" kind="enumvalue"><name>HTTPS_CHUNK_CONTENT</name></member>
     <member refid="namespacedpp_1ae1540b4171f114c35864c752ef00f94f" kind="enum"><name>integration_type</name></member>
     <member refid="namespacedpp_1ae1540b4171f114c35864c752ef00f94faddc9e2ea6cfa8e6a5163742056a7ccdf" kind="enumvalue"><name>i_twitch</name></member>
     <member refid="namespacedpp_1ae1540b4171f114c35864c752ef00f94fa899faa63fdc7c1fc7f44b64c926b5f40" kind="enumvalue"><name>i_youtube</name></member>
@@ -4133,6 +4156,7 @@
     <member refid="namespacedpp_1aa54eb501e23564f837949f0f5a574abb" kind="variable"><name>stop_event</name></member>
     <member refid="namespacedpp_1a4f29330ede66fa21fc47c361a9c51a7b" kind="variable"><name>http_version</name></member>
     <member refid="namespacedpp_1a27df95e52167e3d7020ee6ad7958eaa8" kind="variable"><name>DISCORD_HOST</name></member>
+    <member refid="namespacedpp_1a07b7f88664195026b4434bdaab3dce5d" kind="variable"><name>keepalives</name></member>
     <member refid="namespacedpp_1a5dd1452ee8156729d4cb1ae5cbfdda87" kind="variable"><name>ERROR_STATUS</name></member>
     <member refid="namespacedpp_1aefdd77f67658f0ff12429f40d58b920b" kind="variable"><name>MAX_ICON_SIZE</name></member>
     <member refid="namespacedpp_1ab5f42fb08301629416cbca4d5412c0fd" kind="variable"><name>WS_MASKBIT</name></member>

@@ -135,9 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa5d5654ce0b631d07045088ef347418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf247ed0871e89e6a319c95841a315bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#abf247ed0871e89e6a319c95841a315bd">get_cipher</a> ()</td></tr>
 <tr class="separator:abf247ed0871e89e6a319c95841a315bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4e115d8a21b01efe0678af9b2d03b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a5b4e115d8a21b01efe0678af9b2d03b7">ssl_client</a> (const std::string &amp;_hostname, const std::string &amp;_port=&quot;443&quot;, bool plaintext_downgrade=false)</td></tr>
-<tr class="memdesc:a5b4e115d8a21b01efe0678af9b2d03b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a specified host and port. Throws std::runtime_error on fatal error.  <a href="classdpp_1_1ssl__client.html#a5b4e115d8a21b01efe0678af9b2d03b7">More...</a><br /></td></tr>
-<tr class="separator:a5b4e115d8a21b01efe0678af9b2d03b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c006d94ef782a5e138accb669871e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a53c006d94ef782a5e138accb669871e1">ssl_client</a> (const std::string &amp;_hostname, const std::string &amp;_port=&quot;443&quot;, bool plaintext_downgrade=false, bool reuse=false)</td></tr>
+<tr class="memdesc:a53c006d94ef782a5e138accb669871e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a specified host and port. Throws std::runtime_error on fatal error.  <a href="classdpp_1_1ssl__client.html#a53c006d94ef782a5e138accb669871e1">More...</a><br /></td></tr>
+<tr class="separator:a53c006d94ef782a5e138accb669871e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d4e73c74413a5a79a3859615f913e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2">read_loop</a> ()</td></tr>
 <tr class="memdesc:a17d4e73c74413a5a79a3859615f913e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nonblocking I/O loop.  <a href="classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2">More...</a><br /></td></tr>
 <tr class="separator:a17d4e73c74413a5a79a3859615f913e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +171,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa1a9af1a95e1fb4ac1504de8d591b650"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e">socket_notification_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#aa1a9af1a95e1fb4ac1504de8d591b650">custom_writeable_ready</a></td></tr>
 <tr class="memdesc:aa1a9af1a95e1fb4ac1504de8d591b650"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event will be called when you can write to a custom fd.  <a href="classdpp_1_1ssl__client.html#aa1a9af1a95e1fb4ac1504de8d591b650">More...</a><br /></td></tr>
 <tr class="separator:aa1a9af1a95e1fb4ac1504de8d591b650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8997404ef91c501c3e8ae1079e89152"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#ac8997404ef91c501c3e8ae1079e89152">keepalive</a></td></tr>
+<tr class="memdesc:ac8997404ef91c501c3e8ae1079e89152"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we are keeping the connection alive after it has finished.  <a href="classdpp_1_1ssl__client.html#ac8997404ef91c501c3e8ae1079e89152">More...</a><br /></td></tr>
+<tr class="separator:ac8997404ef91c501c3e8ae1079e89152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -206,13 +209,16 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa735feca3545e156e0607c06d55288c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#aa735feca3545e156e0607c06d55288c4">plaintext</a></td></tr>
 <tr class="separator:aa735feca3545e156e0607c06d55288c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d17d6f3cb7781ecba40aaedf10ff598"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a6d17d6f3cb7781ecba40aaedf10ff598">make_new</a></td></tr>
+<tr class="memdesc:a6d17d6f3cb7781ecba40aaedf10ff598"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we are establishing a new connection, false if otherwise.  <a href="classdpp_1_1ssl__client.html#a6d17d6f3cb7781ecba40aaedf10ff598">More...</a><br /></td></tr>
+<tr class="separator:a6d17d6f3cb7781ecba40aaedf10ff598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implements a simple non-blocking SSL stream client. </p>
 <p >Note that although the design is non-blocking the run() method will execute in an infinite loop until the socket disconnects. This is intended to be run within a std::thread. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5b4e115d8a21b01efe0678af9b2d03b7" name="a5b4e115d8a21b01efe0678af9b2d03b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b4e115d8a21b01efe0678af9b2d03b7">&#9670;&nbsp;</a></span>ssl_client()</h2>
+<a id="a53c006d94ef782a5e138accb669871e1" name="a53c006d94ef782a5e138accb669871e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c006d94ef782a5e138accb669871e1">&#9670;&nbsp;</a></span>ssl_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +239,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>plaintext_downgrade</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>plaintext_downgrade</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reuse</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -248,7 +260,8 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">_hostname</td><td>The hostname to connect to </td></tr>
     <tr><td class="paramname">_port</td><td>the Port number to connect to </td></tr>
-    <tr><td class="paramname">plaintext_downgrade</td><td>Set to true to connect using plaintext only, without initialising SSL. Note that no Discord endpoints will function when downgraded. This option is provided only for connection to non-Discord addresses such as within <a class="el" href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request()</a>. </td></tr>
+    <tr><td class="paramname">plaintext_downgrade</td><td>Set to true to connect using plaintext only, without initialising SSL. </td></tr>
+    <tr><td class="paramname">reuse</td><td>Attempt to reuse previous connections for this hostname and port, if available Note that no Discord endpoints will function when downgraded. This option is provided only for connection to non-Discord addresses such as within <a class="el" href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -761,6 +774,22 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac8997404ef91c501c3e8ae1079e89152" name="ac8997404ef91c501c3e8ae1079e89152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8997404ef91c501c3e8ae1079e89152">&#9670;&nbsp;</a></span>keepalive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::ssl_client::keepalive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True if we are keeping the connection alive after it has finished. </p>
+
+</div>
+</div>
 <a id="a61f0bbeefa25de686ac93887afa65895" name="a61f0bbeefa25de686ac93887afa65895"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61f0bbeefa25de686ac93887afa65895">&#9670;&nbsp;</a></span>last_tick</h2>
 
@@ -781,6 +810,30 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >For timers </p>
+
+</div>
+</div>
+<a id="a6d17d6f3cb7781ecba40aaedf10ff598" name="a6d17d6f3cb7781ecba40aaedf10ff598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d17d6f3cb7781ecba40aaedf10ff598">&#9670;&nbsp;</a></span>make_new</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::ssl_client::make_new</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if we are establishing a new connection, false if otherwise. </p>
 
 </div>
 </div>
@@ -849,6 +902,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >True for a plain text connection </p>
 
 </div>
 </div>

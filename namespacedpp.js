@@ -110,6 +110,7 @@ var namespacedpp =
     [ "invite_create_t", "structdpp_1_1invite__create__t.html", "structdpp_1_1invite__create__t" ],
     [ "invite_delete_t", "structdpp_1_1invite__delete__t.html", "structdpp_1_1invite__delete__t" ],
     [ "json_interface", "structdpp_1_1json__interface.html", "structdpp_1_1json__interface" ],
+    [ "keepalive_cache_t", "structdpp_1_1keepalive__cache__t.html", "structdpp_1_1keepalive__cache__t" ],
     [ "length_exception", "classdpp_1_1length__exception.html", "classdpp_1_1length__exception" ],
     [ "log_t", "structdpp_1_1log__t.html", "structdpp_1_1log__t" ],
     [ "logic_exception", "classdpp_1_1logic__exception.html", "classdpp_1_1logic__exception" ],
@@ -519,7 +520,11 @@ var namespacedpp =
     [ "http_state", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091", [
       [ "HTTPS_HEADERS", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091a1cb90f896a57c9a108a44c99d84964ad", null ],
       [ "HTTPS_CONTENT", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091a1eab41dc1b7d4eb0e8f68217318f6068", null ],
-      [ "HTTPS_DONE", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091aa4cbb0b5e2760ec5ab444e7b787f5a02", null ]
+      [ "HTTPS_DONE", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091aa4cbb0b5e2760ec5ab444e7b787f5a02", null ],
+      [ "HTTPS_CHUNK_LEN", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091a61111f54baecc9385a8812cc8ebf4128", null ],
+      [ "HTTPS_CHUNK_TRAILER", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091a14a882845dbc07216ce9093e6b8326a1", null ],
+      [ "HTTPS_CHUNK_LAST", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091aae0ac9fd46782eff729f30165376b78d", null ],
+      [ "HTTPS_CHUNK_CONTENT", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091af202968d765aaa0b2d9e262fbda347d7", null ]
     ] ],
     [ "image_type", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83", [
       [ "i_png", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7", null ],
@@ -900,6 +905,7 @@ var namespacedpp =
     [ "FORMAT_VERSION", "namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29", null ],
     [ "guild_cache", "namespacedpp.html#a0fd81363d06b016c25fc810632b5f0b0", null ],
     [ "http_version", "namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b", null ],
+    [ "keepalives", "namespacedpp.html#a07b7f88664195026b4434bdaab3dce5d", null ],
     [ "lasthandle", "namespacedpp.html#ae16796831ecce90e670d207b0d0e1dd8", null ],
     [ "MAX_ICON_SIZE", "namespacedpp.html#aefdd77f67658f0ff12429f40d58b920b", null ],
     [ "MAXHEADERSIZE", "namespacedpp.html#aeef0538fa45377c9b04fc944efec0f0c", null ],
