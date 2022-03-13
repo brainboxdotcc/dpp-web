@@ -1,6 +1,7 @@
 var classdpp_1_1interaction =
 [
     [ "interaction", "classdpp_1_1interaction.html#a633cfd684b67c14cbaf747b5ce181eda", null ],
+    [ "~interaction", "classdpp_1_1interaction.html#aded41ecda9d55bcaa1650f34068dada7", null ],
     [ "build_json", "classdpp_1_1interaction.html#a4ee649c8fe2a79e51fffd95315a0cae7", null ],
     [ "fill_from_json", "classdpp_1_1interaction.html#a23ff816e36c44d2afa51c34a1121a124", null ],
     [ "get_autocomplete_interaction", "classdpp_1_1interaction.html#ae0c4f92722e07cf8815a8a899381e657", null ],

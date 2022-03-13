@@ -2,7 +2,7 @@ var classdpp_1_1component =
 [
     [ "inner_emoji", "structdpp_1_1component_1_1inner__emoji.html", "structdpp_1_1component_1_1inner__emoji" ],
     [ "component", "classdpp_1_1component.html#a69b9e60742f6a1f1622b264cd7712660", null ],
-    [ "~component", "classdpp_1_1component.html#a7e04116e12fe1944c7c74d0760d6f1fd", null ],
+    [ "~component", "classdpp_1_1component.html#a790334ad68b127e95923c5f6cdb727a7", null ],
     [ "add_component", "classdpp_1_1component.html#a3707437be16cc7dfd5edcf321f8e842d", null ],
     [ "add_select_option", "classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243", null ],
     [ "build_json", "classdpp_1_1component.html#a287c22f692ee3d25b6f9b320ff35baa1", null ],

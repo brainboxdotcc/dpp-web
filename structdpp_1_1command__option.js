@@ -1,6 +1,7 @@
 var structdpp_1_1command__option =
 [
     [ "command_option", "structdpp_1_1command__option.html#a7b9a89420e48ccd85cfdc6deaae63e50", null ],
+    [ "~command_option", "structdpp_1_1command__option.html#a25237e95f4c70a653459a69b3d2aba4f", null ],
     [ "command_option", "structdpp_1_1command__option.html#a7059a6049828707b2eda2c5a649aeb79", null ],
     [ "add_channel_type", "structdpp_1_1command__option.html#a2ecddb11870c0c32a61be196f48c3ebf", null ],
     [ "add_choice", "structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026", null ],

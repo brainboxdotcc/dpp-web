@@ -1,6 +1,7 @@
 var classdpp_1_1command__permission =
 [
     [ "command_permission", "classdpp_1_1command__permission.html#abcf3d0fc98d8ed08a34fe3431ac5d13a", null ],
+    [ "~command_permission", "classdpp_1_1command__permission.html#ab872da56d3a015701ed516c217c693de", null ],
     [ "command_permission", "classdpp_1_1command__permission.html#a51bb356feece8315f1830e59fdf09492", null ],
     [ "build_json", "classdpp_1_1command__permission.html#a287c22f692ee3d25b6f9b320ff35baa1", null ],
     [ "fill_from_json", "classdpp_1_1command__permission.html#ab194d493321fc68d8cdd358618d35723", null ],
