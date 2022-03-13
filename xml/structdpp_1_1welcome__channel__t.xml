@@ -4,6 +4,34 @@
     <compoundname>dpp::welcome_channel_t</compoundname>
     <includes local="no">guild.h</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1welcome__channel__t_1a6f94e146d9ec55304467621f0cec33d9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::welcome_channel_t::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>the description shown for the channel </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="284" column="13" bodyfile="include/dpp/guild.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1welcome__channel__t_1a0c438231f38a9241838a42178bcbe57f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::welcome_channel_t::emoji_name</definition>
+        <argsstring></argsstring>
+        <name>emoji_name</name>
+        <briefdescription>
+<para>the emoji name if custom, the unicode character if standard, or null if no emoji is set </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="286" column="13" bodyfile="include/dpp/guild.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structdpp_1_1welcome__channel__t_1a594ffc9e11228502c0a68f19b3616220" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
         <definition>snowflake dpp::welcome_channel_t::channel_id</definition>
@@ -17,21 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="284" column="11" bodyfile="include/dpp/guild.h" bodystart="284" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1welcome__channel__t_1a6f94e146d9ec55304467621f0cec33d9" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::welcome_channel_t::description</definition>
-        <argsstring></argsstring>
-        <name>description</name>
-        <briefdescription>
-<para>the description shown for the channel </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="287" column="13" bodyfile="include/dpp/guild.h" bodystart="287" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="288" column="11" bodyfile="include/dpp/guild.h" bodystart="288" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1welcome__channel__t_1aebd3253cc04c7e251811d50ae18e58e5" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -48,20 +62,6 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="290" column="11" bodyfile="include/dpp/guild.h" bodystart="290" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1welcome__channel__t_1a0c438231f38a9241838a42178bcbe57f" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::welcome_channel_t::emoji_name</definition>
-        <argsstring></argsstring>
-        <name>emoji_name</name>
-        <briefdescription>
-<para>the emoji name if custom, the unicode character if standard, or null if no emoji is set </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="293" column="13" bodyfile="include/dpp/guild.h" bodystart="293" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Defines a channel on a server&apos;s welcome screen. </para>
@@ -73,27 +73,27 @@
         <label>dpp::welcome_channel_t</label>
         <link refid="structdpp_1_1welcome__channel__t"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>channel_id</edgelabel>
-          <edgelabel>emoji_id</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
           <edgelabel>description</edgelabel>
           <edgelabel>emoji_name</edgelabel>
         </childnode>
-      </node>
-      <node id="4">
-        <label>std::basic_string&lt; Char &gt;</label>
-      </node>
-      <node id="3">
-        <label>std::string</label>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="4" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+          <edgelabel>emoji_id</edgelabel>
         </childnode>
       </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
       <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/guild.h" line="282" column="1" bodyfile="include/dpp/guild.h" bodystart="282" bodyend="294"/>
+    <location file="include/dpp/guild.h" line="282" column="1" bodyfile="include/dpp/guild.h" bodystart="282" bodyend="291"/>
     <listofallmembers>
       <member refid="structdpp_1_1welcome__channel__t_1a594ffc9e11228502c0a68f19b3616220" prot="public" virt="non-virtual"><scope>dpp::welcome_channel_t</scope><name>channel_id</name></member>
       <member refid="structdpp_1_1welcome__channel__t_1a6f94e146d9ec55304467621f0cec33d9" prot="public" virt="non-virtual"><scope>dpp::welcome_channel_t</scope><name>description</name></member>

@@ -21,23 +21,6 @@
         </inbodydescription>
         <location file="include/dpp/user.h" line="85" column="13" bodyfile="include/dpp/user.h" bodystart="85" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1user_1afe658cc2d4adcf83a76f798dead3e5e6" prot="public" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::user::discriminator</definition>
-        <argsstring></argsstring>
-        <name>discriminator</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Discriminator (aka tag), 4 digits usually displayed with leading zeroes.</para>
-<para><simplesect kind="note"><para>To print the discriminator with leading zeroes, use something like <computeroutput>fmt::format(&quot;{:04d}&quot;, discriminator)</computeroutput> </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/user.h" line="90" column="10" bodyfile="include/dpp/user.h" bodystart="90" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1user_1ae9d90b269f17fc2c5a0021dcb2b8dce3" prot="public" static="no" mutable="no">
         <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
         <definition>utility::iconhash dpp::user::avatar</definition>
@@ -50,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/user.h" line="92" column="19" bodyfile="include/dpp/user.h" bodystart="92" bodyend="-1"/>
+        <location file="include/dpp/user.h" line="87" column="19" bodyfile="include/dpp/user.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1user_1aab86456a191f214b38277cf65bb6af05" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -61,6 +44,23 @@
         </briefdescription>
         <detaileddescription>
 <para>Flags built from a bitmask of values in <ref refid="namespacedpp_1a99a238db04976402abb94ea0c989d8c0" kindref="member">dpp::user_flags</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/user.h" line="89" column="10" bodyfile="include/dpp/user.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1user_1afe658cc2d4adcf83a76f798dead3e5e6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::user::discriminator</definition>
+        <argsstring></argsstring>
+        <name>discriminator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Discriminator (aka tag), 4 digits usually displayed with leading zeroes.</para>
+<para><simplesect kind="note"><para>To print the discriminator with leading zeroes, use something like <computeroutput>fmt::format(&quot;{:04d}&quot;, discriminator)</computeroutput> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -705,19 +705,19 @@
           <edgelabel>username</edgelabel>
         </childnode>
         <childnode refid="7" relation="usage">
-          <edgelabel>discriminator</edgelabel>
-        </childnode>
-        <childnode refid="8" relation="usage">
           <edgelabel>avatar</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>discriminator</edgelabel>
         </childnode>
         <childnode refid="10" relation="usage">
           <edgelabel>refcount</edgelabel>
         </childnode>
       </node>
-      <node id="8">
+      <node id="7">
         <label>dpp::utility::iconhash</label>
         <link refid="structdpp_1_1utility_1_1iconhash"/>
         <childnode refid="3" relation="usage">
@@ -737,10 +737,10 @@
         <childnode refid="6" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="9">
         <label>uint16_t</label>
       </node>
-      <node id="9">
+      <node id="8">
         <label>uint32_t</label>
       </node>
       <node id="3">

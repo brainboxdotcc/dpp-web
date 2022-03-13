@@ -7,48 +7,6 @@
     <derivedcompoundref refid="classdpp_1_1thread" prot="public" virt="non-virtual">dpp::thread</derivedcompoundref>
     <includes local="no">channel.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1channel_1a4468e3981302301886f649d14b7ddcf7" prot="public" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::channel::flags</definition>
-        <argsstring></argsstring>
-        <name>flags</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Flags bitmap </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="165" column="10" bodyfile="include/dpp/channel.h" bodystart="165" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1a52a3d85468b8b6a1eb16c1bdb19cb499" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::channel::guild_id</definition>
-        <argsstring></argsstring>
-        <name>guild_id</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Guild id of the guild that owns the channel </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="168" column="11" bodyfile="include/dpp/channel.h" bodystart="168" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1a1f31178c9e86ad1490b8619cb9bdbde4" prot="public" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::channel::position</definition>
-        <argsstring></argsstring>
-        <name>position</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Sorting position, lower number means higher up the list </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="171" column="10" bodyfile="include/dpp/channel.h" bodystart="171" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1channel_1a065d6fbd4e21759354c2516b074078a8" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::channel::name</definition>
@@ -61,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="174" column="13" bodyfile="include/dpp/channel.h" bodystart="174" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="165" column="13" bodyfile="include/dpp/channel.h" bodystart="165" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1channel_1a57864fde3659243453d1ad1c9bf60983" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -75,63 +33,77 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="177" column="13" bodyfile="include/dpp/channel.h" bodystart="177" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="168" column="13" bodyfile="include/dpp/channel.h" bodystart="168" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1aa510e7eb5e93c1c885392c7fcdf24779" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-        <definition>snowflake dpp::channel::last_message_id</definition>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a05f56fbd37e993e0fc36df06b3d65bad" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::channel::rtc_region</definition>
         <argsstring></argsstring>
-        <name>last_message_id</name>
+        <name>rtc_region</name>
         <briefdescription>
+<para>Voice region if set for voice channel, otherwise empty string. </para>
         </briefdescription>
         <detaileddescription>
-<para>ID of last message to be sent to the channel </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="180" column="11" bodyfile="include/dpp/channel.h" bodystart="180" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="173" column="13" bodyfile="include/dpp/channel.h" bodystart="173" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1a79251adb1bc9dc6780af2afd21499769" prot="public" static="no" mutable="no">
-        <type>uint8_t</type>
-        <definition>uint8_t dpp::channel::user_limit</definition>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a0d66636187a0382693d69c2ac2827e89" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
+        <definition>std::vector&lt;snowflake&gt; dpp::channel::recipients</definition>
         <argsstring></argsstring>
-        <name>user_limit</name>
+        <name>recipients</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Maximum user limit for voice channels (0-99) </para>
+<para>DM recipients </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="183" column="9" bodyfile="include/dpp/channel.h" bodystart="183" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="176" column="13" bodyfile="include/dpp/channel.h" bodystart="176" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1ab32308d8281aef6bfe4d5a6538c6306e" prot="public" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::channel::bitrate</definition>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a3eb698179af0d4c535cf5b7ed01b096e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1permission__overwrite" kindref="compound">permission_overwrite</ref> &gt;</type>
+        <definition>std::vector&lt;permission_overwrite&gt; dpp::channel::permission_overwrites</definition>
         <argsstring></argsstring>
-        <name>bitrate</name>
+        <name>permission_overwrites</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>the bitrate (in bits) of the voice channel </para>
+<para>Permission overwrites to apply to base permissions </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="186" column="10" bodyfile="include/dpp/channel.h" bodystart="186" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="179" column="13" bodyfile="include/dpp/channel.h" bodystart="179" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1a2ec41d2c2a7d592c1a17888d3f401fd5" prot="public" static="no" mutable="no">
-        <type>uint16_t</type>
-        <definition>uint16_t dpp::channel::rate_limit_per_user</definition>
+      <memberdef kind="variable" id="classdpp_1_1channel_1aad8f9892c2daba2f3215e751bfb3351d" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::channel::icon</definition>
         <argsstring></argsstring>
-        <name>rate_limit_per_user</name>
+        <name>icon</name>
         <briefdescription>
+<para>Channel icon (for group DMs) </para>
         </briefdescription>
         <detaileddescription>
-<para>amount of seconds a user has to wait before sending another message (0-21600); bots, as well as users with the permission manage_messages or manage_channel, are unaffected </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="189" column="10" bodyfile="include/dpp/channel.h" bodystart="189" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="184" column="19" bodyfile="include/dpp/channel.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a6df422541a4733f18a31a630b9e7cf3a" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::channel::banner</definition>
+        <argsstring></argsstring>
+        <name>banner</name>
+        <briefdescription>
+<para>Channel banner (boost level locked) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="189" column="19" bodyfile="include/dpp/channel.h" bodystart="189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1channel_1adb22659e9dc7fb8dd36d1c9f67eb7181" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -161,6 +133,34 @@
         </inbodydescription>
         <location file="include/dpp/channel.h" line="195" column="11" bodyfile="include/dpp/channel.h" bodystart="195" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a52a3d85468b8b6a1eb16c1bdb19cb499" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::channel::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guild id of the guild that owns the channel </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="198" column="11" bodyfile="include/dpp/channel.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1aa510e7eb5e93c1c885392c7fcdf24779" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::channel::last_message_id</definition>
+        <argsstring></argsstring>
+        <name>last_message_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID of last message to be sent to the channel </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="201" column="11" bodyfile="include/dpp/channel.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1channel_1ae33f863adef0f0cc89a7324cd93bc752" prot="public" static="no" mutable="no">
         <type>time_t</type>
         <definition>time_t dpp::channel::last_pin_timestamp</definition>
@@ -173,35 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="198" column="8" bodyfile="include/dpp/channel.h" bodystart="198" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1a0d66636187a0382693d69c2ac2827e89" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref> &gt;</type>
-        <definition>std::vector&lt;snowflake&gt; dpp::channel::recipients</definition>
-        <argsstring></argsstring>
-        <name>recipients</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>DM recipients </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="201" column="13" bodyfile="include/dpp/channel.h" bodystart="201" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1a3eb698179af0d4c535cf5b7ed01b096e" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structdpp_1_1permission__overwrite" kindref="compound">permission_overwrite</ref> &gt;</type>
-        <definition>std::vector&lt;permission_overwrite&gt; dpp::channel::permission_overwrites</definition>
-        <argsstring></argsstring>
-        <name>permission_overwrites</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Permission overwrites to apply to base permissions </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="204" column="13" bodyfile="include/dpp/channel.h" bodystart="204" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="204" column="8" bodyfile="include/dpp/channel.h" bodystart="204" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1channel_1ab04ddf442a472f1c0d9c1f50846348f8" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -217,47 +189,75 @@
         </inbodydescription>
         <location file="include/dpp/channel.h" line="212" column="10" bodyfile="include/dpp/channel.h" bodystart="212" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1a05f56fbd37e993e0fc36df06b3d65bad" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::channel::rtc_region</definition>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a4468e3981302301886f649d14b7ddcf7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::flags</definition>
         <argsstring></argsstring>
-        <name>rtc_region</name>
+        <name>flags</name>
         <briefdescription>
-<para>Voice region if set for voice channel, otherwise empty string. </para>
         </briefdescription>
         <detaileddescription>
+<para>Flags bitmap </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="217" column="13" bodyfile="include/dpp/channel.h" bodystart="217" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="215" column="10" bodyfile="include/dpp/channel.h" bodystart="215" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1aad8f9892c2daba2f3215e751bfb3351d" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
-        <definition>utility::iconhash dpp::channel::icon</definition>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a1f31178c9e86ad1490b8619cb9bdbde4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::position</definition>
         <argsstring></argsstring>
-        <name>icon</name>
+        <name>position</name>
         <briefdescription>
-<para>Channel icon (for group DMs) </para>
         </briefdescription>
         <detaileddescription>
+<para>Sorting position, lower number means higher up the list </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="222" column="19" bodyfile="include/dpp/channel.h" bodystart="222" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="218" column="10" bodyfile="include/dpp/channel.h" bodystart="218" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1channel_1a6df422541a4733f18a31a630b9e7cf3a" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
-        <definition>utility::iconhash dpp::channel::banner</definition>
+      <memberdef kind="variable" id="classdpp_1_1channel_1ab32308d8281aef6bfe4d5a6538c6306e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::bitrate</definition>
         <argsstring></argsstring>
-        <name>banner</name>
+        <name>bitrate</name>
         <briefdescription>
-<para>Channel banner (boost level locked) </para>
         </briefdescription>
         <detaileddescription>
+<para>the bitrate (in bits) of the voice channel </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="227" column="19" bodyfile="include/dpp/channel.h" bodystart="227" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="221" column="10" bodyfile="include/dpp/channel.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a2ec41d2c2a7d592c1a17888d3f401fd5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::rate_limit_per_user</definition>
+        <argsstring></argsstring>
+        <name>rate_limit_per_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>amount of seconds a user has to wait before sending another message (0-21600); bots, as well as users with the permission manage_messages or manage_channel, are unaffected </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="224" column="10" bodyfile="include/dpp/channel.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a79251adb1bc9dc6780af2afd21499769" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::channel::user_limit</definition>
+        <argsstring></argsstring>
+        <name>user_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum user limit for voice channels (0-99) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="227" column="9" bodyfile="include/dpp/channel.h" bodystart="227" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -1192,10 +1192,17 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
         <childnode refid="5" relation="usage">
-          <edgelabel>bitrate</edgelabel>
-          <edgelabel>flags</edgelabel>
-          <edgelabel>position</edgelabel>
-          <edgelabel>rate_limit_per_user</edgelabel>
+          <edgelabel>name</edgelabel>
+          <edgelabel>rtc_region</edgelabel>
+          <edgelabel>topic</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>permission_overwrites</edgelabel>
+          <edgelabel>recipients</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>banner</edgelabel>
+          <edgelabel>icon</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>guild_id</edgelabel>
@@ -1204,24 +1211,17 @@
           <edgelabel>parent_id</edgelabel>
           <edgelabel>permissions</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>name</edgelabel>
-          <edgelabel>rtc_region</edgelabel>
-          <edgelabel>topic</edgelabel>
-        </childnode>
-        <childnode refid="8" relation="usage">
-          <edgelabel>user_limit</edgelabel>
-        </childnode>
         <childnode refid="9" relation="usage">
           <edgelabel>last_pin_timestamp</edgelabel>
         </childnode>
         <childnode refid="10" relation="usage">
-          <edgelabel>permission_overwrites</edgelabel>
-          <edgelabel>recipients</edgelabel>
+          <edgelabel>bitrate</edgelabel>
+          <edgelabel>flags</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>rate_limit_per_user</edgelabel>
         </childnode>
         <childnode refid="11" relation="usage">
-          <edgelabel>banner</edgelabel>
-          <edgelabel>icon</edgelabel>
+          <edgelabel>user_limit</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -1231,7 +1231,7 @@
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
-      <node id="11">
+      <node id="8">
         <label>dpp::utility::iconhash</label>
         <link refid="structdpp_1_1utility_1_1iconhash"/>
         <childnode refid="3" relation="usage">
@@ -1243,27 +1243,27 @@
         <label>dpp::json_interface&lt; channel &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
-      <node id="7">
+      <node id="6">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="6">
+      <node id="5">
         <label>std::string</label>
-        <childnode refid="7" relation="public-inheritance">
+        <childnode refid="6" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="7">
         <label>vector&lt;</label>
       </node>
       <node id="9">
         <label>time_t</label>
       </node>
-      <node id="5">
+      <node id="10">
         <label>uint16_t</label>
       </node>
       <node id="3">
         <label>uint64_t</label>
       </node>
-      <node id="8">
+      <node id="11">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
