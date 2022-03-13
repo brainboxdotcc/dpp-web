@@ -20,6 +20,7 @@ var namespacedpp_1_1utility =
     [ "debug_dump", "namespacedpp_1_1utility.html#a02456e22a1d41893a9b321bf8ccaeec6", null ],
     [ "exec", "namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0", null ],
     [ "has_voice", "namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4", null ],
+    [ "log_error", "namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910", null ],
     [ "loglevel", "namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045", null ],
     [ "make_url_parameters", "namespacedpp_1_1utility.html#a1d68e6151fe398398ec31305970419e3", null ],
     [ "make_url_parameters", "namespacedpp_1_1utility.html#abd913ffc73d921f4ded794338ec62cd4", null ],

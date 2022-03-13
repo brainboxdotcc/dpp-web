@@ -1,9 +1,9 @@
 var searchData=
 [
   ['edit_5fresponse_0',['edit_response',['../structdpp_1_1interaction__create__t.html#a7201727cb2e7a6d327c7f778d335b6bd',1,'dpp::interaction_create_t::edit_response(const std::string &amp;mt, command_completion_event_t callback={}) const'],['../structdpp_1_1interaction__create__t.html#ace8c437a0c0e95590c9e59830743a1d2',1,'dpp::interaction_create_t::edit_response(const message &amp;m, command_completion_event_t callback={}) const']]],
-  ['edit_5fwebhook_1',['edit_webhook',['../classdpp_1_1cluster.html#af319c151f1b9b2b578d9303bab7ce5d0',1,'dpp::cluster']]],
-  ['edit_5fwebhook_5fmessage_2',['edit_webhook_message',['../classdpp_1_1cluster.html#a86a37684f9d12edd4ca7d00296a5443b',1,'dpp::cluster']]],
-  ['edit_5fwebhook_5fwith_5ftoken_3',['edit_webhook_with_token',['../classdpp_1_1cluster.html#a2bffc1fa43d6a78814f9ca0f378755c5',1,'dpp::cluster']]],
+  ['edit_5fwebhook_1',['edit_webhook',['../classdpp_1_1cluster.html#ad5039e83f20e5c321b78b319fe7608c0',1,'dpp::cluster']]],
+  ['edit_5fwebhook_5fmessage_2',['edit_webhook_message',['../classdpp_1_1cluster.html#a9aad7db0efb749f14c9ffd9b2292b7d6',1,'dpp::cluster']]],
+  ['edit_5fwebhook_5fwith_5ftoken_3',['edit_webhook_with_token',['../classdpp_1_1cluster.html#a40262f5c4ef4a56fe394e91faf0ac8e4',1,'dpp::cluster']]],
   ['embed_4',['embed',['../structdpp_1_1embed.html#a6f60eea0421da23a22032bd317dd9b10',1,'dpp::embed::embed()'],['../structdpp_1_1embed.html#a03bbf47ebfcdb5a267fae660232c9577',1,'dpp::embed::embed(nlohmann::json *j)']]],
   ['emoji_5',['emoji',['../classdpp_1_1emoji.html#aee6f71256204a1882749bf3f8939a2e9',1,'dpp::emoji::emoji()'],['../classdpp_1_1emoji.html#aaeb35bb6ddb0b46c4099386ba074a0d4',1,'dpp::emoji::emoji(const std::string n, const snowflake i=0, const uint8_t f=0)']]],
   ['emoticons_5fenabled_6',['emoticons_enabled',['../classdpp_1_1integration.html#a71c1fe98428f12efef492f8469c9c68c',1,'dpp::integration']]],
@@ -15,6 +15,6 @@ var searchData=
   ['event_5frouter_5ft_12',['event_router_t',['../classdpp_1_1event__router__t.html#a667c18e57cc53f960d3467e84358a822',1,'dpp::event_router_t']]],
   ['exception_13',['exception',['../classdpp_1_1exception.html#a82a21aa6228b4c8e2ead7c45128cd9b7',1,'dpp::exception::exception()=default'],['../classdpp_1_1exception.html#ac2a498ef5a2deb592bd6dee52b4a1881',1,'dpp::exception::exception(const char *what)'],['../classdpp_1_1exception.html#a369458d8db837316c84256bfed913426',1,'dpp::exception::exception(const char *what, size_t len)'],['../classdpp_1_1exception.html#aa59a84a3a233186cc130fc9e8ff8a271',1,'dpp::exception::exception(const std::string &amp;what)'],['../classdpp_1_1exception.html#a0365ae0f3b8cfbf193d08b427e79271f',1,'dpp::exception::exception(std::string &amp;&amp;what)'],['../classdpp_1_1exception.html#a1e8f1486c898e2ab6c513c7844221a9f',1,'dpp::exception::exception(const exception &amp;)=default'],['../classdpp_1_1exception.html#a269a23dc033395e0266a6c3c41b9ffb0',1,'dpp::exception::exception(exception &amp;&amp;)=default']]],
   ['exec_14',['exec',['../namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0',1,'dpp::utility']]],
-  ['execute_5fwebhook_15',['execute_webhook',['../classdpp_1_1cluster.html#ad5e83314cede8b9277a01b7b173abbad',1,'dpp::cluster']]],
+  ['execute_5fwebhook_15',['execute_webhook',['../classdpp_1_1cluster.html#af9fbb7174b1dd22e43ee3f4a1db9b63b',1,'dpp::cluster']]],
   ['expiry_5fkicks_5fuser_16',['expiry_kicks_user',['../classdpp_1_1integration.html#aa8c768b223e8eb219c7ffe99f13f0a07',1,'dpp::integration']]]
 ];
