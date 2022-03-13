@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4c92a68228fe9dcb96b1c7cb6b8ae795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a slash command.  <a href="classdpp_1_1cluster.html#a4c92a68228fe9dcb96b1c7cb6b8ae795">More...</a><br /></td></tr>
 <tr class="separator:a4c92a68228fe9dcb96b1c7cb6b8ae795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c9c18dd9185dfc2cc61b463ad7cf0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a41c9c18dd9185dfc2cc61b463ad7cf0f">interaction_response_edit</a> (const std::string &amp;<a class="el" href="classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e">token</a>, const <a class="el" href="structdpp_1_1message.html">message</a> &amp;r, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
-<tr class="memdesc:a41c9c18dd9185dfc2cc61b463ad7cf0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to a slash command.  <a href="classdpp_1_1cluster.html#a41c9c18dd9185dfc2cc61b463ad7cf0f">More...</a><br /></td></tr>
+<tr class="memdesc:a41c9c18dd9185dfc2cc61b463ad7cf0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit response to a slash command.  <a href="classdpp_1_1cluster.html#a41c9c18dd9185dfc2cc61b463ad7cf0f">More...</a><br /></td></tr>
 <tr class="separator:a41c9c18dd9185dfc2cc61b463ad7cf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a124b1a52ca2f5ae298f1bb99ca964dcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a124b1a52ca2f5ae298f1bb99ca964dcb">global_command_create</a> (const <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &amp;s, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback={})</td></tr>
 <tr class="memdesc:a124b1a52ca2f5ae298f1bb99ca964dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a global slash command (a bot can have a maximum of 100 of these).  <a href="classdpp_1_1cluster.html#a124b1a52ca2f5ae298f1bb99ca964dcb">More...</a><br /></td></tr>
@@ -643,7 +643,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9f8c2ba02d51ad166f90300ab5b53ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a stage instance.  <a href="classdpp_1_1cluster.html#a9f8c2ba02d51ad166f90300ab5b53ecb">More...</a><br /></td></tr>
 <tr class="separator:a9f8c2ba02d51ad166f90300ab5b53ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc">get_voice_regions</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
-<tr class="memdesc:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all voice regions.  <a href="classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc">More...</a><br /></td></tr>
+<tr class="memdesc:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all voice regions @See <a href="https://discord.com/developers/docs/resources/voice#list-voice-regions">https://discord.com/developers/docs/resources/voice#list-voice-regions</a>.  <a href="classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc">More...</a><br /></td></tr>
 <tr class="separator:af6d45a29b3976f7b623d92e70ab9a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68f16d04f100a0159683cba96e8c0a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a68f16d04f100a0159683cba96e8c0a6c">get_gateway_bot</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a68f16d04f100a0159683cba96e8c0a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gateway information for the bot using the token.  <a href="classdpp_1_1cluster.html#a68f16d04f100a0159683cba96e8c0a6c">More...</a><br /></td></tr>
@@ -1111,7 +1111,8 @@ Friends</h2></td></tr>
 <p>Create a channel. </p>
 <p >Create a new channel object for the guild. Requires the <code>MANAGE_CHANNELS</code> permission. If setting permission overwrites, only permissions your bot has in the guild can be allowed/denied. Setting <code>MANAGE_ROLES</code> permission in channels is only possible for guild administrators. Returns the new channel object on success. Fires a <code>Channel Create Gateway</code> event.</p>
 <p >All parameters to this endpoint are optional excluding <code>name</code></p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#create-channel">https://discord.com/developers/docs/resources/channel#create-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to create </td></tr>
@@ -1149,7 +1150,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a channel. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#deleteclose-channel">https://discord.com/developers/docs/resources/channel#deleteclose-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel id to delete </td></tr>
@@ -1193,7 +1195,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove a permission from a channel. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-channel-permission">https://discord.com/developers/docs/resources/channel#delete-channel-permission</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to remove permission from </td></tr>
@@ -1232,7 +1235,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a channel. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#modify-channel">https://discord.com/developers/docs/resources/channel#modify-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to edit/update </td></tr>
@@ -1294,6 +1298,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a channel's permissions. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#edit-channel-permissions">https://discord.com/developers/docs/resources/channel#edit-channel-permissions</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1360,6 +1365,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a channel's permissions. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#edit-channel-permissions">https://discord.com/developers/docs/resources/channel#edit-channel-permissions</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1403,7 +1409,8 @@ Friends</h2></td></tr>
 
 <p>Edit multiple channels positions. </p>
 <p >Modify the positions of a set of channel objects for the guild. Requires <code>MANAGE_CHANNELS</code> permission. Fires multiple <code>Channel Update Gateway</code> events. Only channels to be modified are required.</p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-channel-positions">https://discord.com/developers/docs/resources/guild#modify-guild-channel-positions</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to change the position for </td></tr>
@@ -1447,6 +1454,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Follow a news channel. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#follow-news-channel">https://discord.com/developers/docs/resources/channel#follow-news-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel id to follow </td></tr>
@@ -1485,6 +1493,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a channel. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-channel">https://discord.com/developers/docs/resources/channel#get-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel ID to retrieve </td></tr>
@@ -1528,7 +1537,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create invite for a channel. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#create-channel-invite">https://discord.com/developers/docs/resources/channel#create-channel-invite</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to create an invite on </td></tr>
@@ -1567,6 +1577,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get invites for a channel. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/invite#get-invites">https://discord.com/developers/docs/resources/invite#get-invites</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to get invites for </td></tr>
@@ -1604,6 +1615,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a channel's pins. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-pinned-messages">https://discord.com/developers/docs/resources/channel#get-pinned-messages</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel ID to get pins for </td></tr>
@@ -1641,6 +1653,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Trigger channel typing indicator. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#trigger-typing-indicator">https://discord.com/developers/docs/resources/channel#trigger-typing-indicator</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to set as typing on </td></tr>
@@ -1678,6 +1691,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Trigger channel typing indicator. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#trigger-typing-indicator">https://discord.com/developers/docs/resources/channel#trigger-typing-indicator</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cid</td><td>Channel ID to set as typing on </td></tr>
@@ -1715,6 +1729,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all channels for a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-channels">https://discord.com/developers/docs/resources/channel#get-channels</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to retrieve channels for </td></tr>
@@ -1775,6 +1790,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a dm channel. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/user#create-dm">https://discord.com/developers/docs/resources/user#create-dm</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>User ID to create DM channel with </td></tr>
@@ -1812,7 +1828,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a webhook. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#create-webhook">https://discord.com/developers/docs/resources/webhook#create-webhook</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">w</td><td>Webhook to create </td></tr>
@@ -1840,6 +1857,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get current (bot) application. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/oauth2#get-current-bot-application-information">https://discord.com/developers/docs/topics/oauth2#get-current-bot-application-information</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1application.html" title="The application class represents details of a bot application.">dpp::application</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -1866,6 +1884,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get current user's connections (linked accounts, e.g. steam, xbox). This call requires the oauth2 <code>connections</code> scope and cannot be executed against a bot token. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/user#get-user-connections">https://discord.com/developers/docs/resources/user#get-user-connections</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a">dpp::connection_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -1914,7 +1933,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit current (bot) user. </p>
-<p >Modifies the current member in a guild. Returns the updated <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> object on success. Fires a <code>Guild Member Update</code> Gateway event.</p>
+<p >Modifies the current member in a guild. Returns the updated <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> object on success. Fires a <code>Guild Member Update</code> Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/user#modify-current-user">https://discord.com/developers/docs/resources/user#modify-current-user</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nickname</td><td>Nickname to set </td></tr>
@@ -1950,6 +1969,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get current (bot) user. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/user#get-current-user">https://discord.com/developers/docs/resources/user#get-current-user</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">dpp::user_identified</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -2003,6 +2023,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get current (bot) user guilds. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/user#get-current-user-guilds">https://discord.com/developers/docs/resources/user#get-current-user-guilds</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#a0d9e1952e25391a3379ee3db2d930bf7">dpp::guild_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -2039,6 +2060,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Join a thread. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to join </td></tr>
@@ -2076,6 +2098,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Leave a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/user#leave-guild">https://discord.com/developers/docs/resources/user#leave-guild</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to leave </td></tr>
@@ -2113,6 +2136,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Leave a thread. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to leave </td></tr>
@@ -2171,14 +2195,13 @@ Friends</h2></td></tr>
 <p ><b>Caveats</b></p>
 <p >There are currently several caveats for this endpoint:</p>
 <ul>
-<li><code>channel_id</code> must currently point to a stage channel.<ul>
+<li><code>channel_id</code> must currently point to a stage channel.</li>
 <li>current user must already have joined <code>channel_id</code>.</li>
 <li>You must have the <code>MUTE_MEMBERS</code> permission to unsuppress yourself. You can always suppress yourself.</li>
 <li>You must have the <code>REQUEST_TO_SPEAK</code> permission to request to speak. You can always clear your own request to speak.</li>
 <li>You are able to set <code>request_to_speak_timestamp</code> to any present or future time.</li>
 </ul>
-</li>
-</ul>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-current-user-voice-state">https://discord.com/developers/docs/resources/guild#modify-current-user-voice-state</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to set voice state on </td></tr>
@@ -2225,7 +2248,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a webhook. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#delete-webhook">https://discord.com/developers/docs/resources/webhook#delete-webhook</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webhook_id</td><td>Webhook ID to delete </td></tr>
@@ -2269,6 +2293,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete webhook message. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#delete-webhook-message">https://discord.com/developers/docs/resources/webhook#delete-webhook-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wh</td><td>Webhook to delete message for </td></tr>
@@ -2313,6 +2338,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete webhook with token. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#delete-webhook-with-token">https://discord.com/developers/docs/resources/webhook#delete-webhook-with-token</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webhook_id</td><td>Webhook ID to delete </td></tr>
@@ -2357,6 +2383,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a direct message, also create the channel for the direct message if needed. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/user#create-dm">https://discord.com/developers/docs/resources/user#create-dm</a> </dd>
+<dd>
+<a href="https://discord.com/developers/docs/resources/channel#create-message">https://discord.com/developers/docs/resources/channel#create-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>User ID of user to send message to </td></tr>
@@ -2395,7 +2424,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit webhook. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#modify-webhook">https://discord.com/developers/docs/resources/webhook#modify-webhook</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wh</td><td>Webhook to edit </td></tr>
@@ -2439,6 +2469,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit webhook message. </p>
+<p >When the content field is edited, the mentions array in the message object will be reconstructed from scratch based on the new content. The allowed_mentions field of the edit request controls how this happens. If there is no explicit allowed_mentions in the edit request, the content will be parsed with default allowances, that is, without regard to whether or not an allowed_mentions was present in the request that originally created the message.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#edit-webhook-message">https://discord.com/developers/docs/resources/webhook#edit-webhook-message</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>the attachments array must contain all attachments that should be present after edit, including retained and new attachments provided in the request body. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wh</td><td>Webhook to edit message for </td></tr>
@@ -2477,6 +2510,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit webhook with token (token is encapsulated in the webhook object) </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#modify-webhook-with-token">https://discord.com/developers/docs/resources/webhook#modify-webhook-with-token</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wh</td><td>Webhook to edit (should include token) </td></tr>
@@ -2532,6 +2566,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Execute webhook. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#execute-webhook">https://discord.com/developers/docs/resources/webhook#execute-webhook</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wh</td><td>Webhook to execute </td></tr>
@@ -2590,6 +2625,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds a recipient to a Group DM using their access token. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#group-dm-add-recipient">https://discord.com/developers/docs/resources/channel#group-dm-add-recipient</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel id to add group DM recipients to </td></tr>
@@ -2636,6 +2672,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Removes a recipient from a Group DM. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#group-dm-remove-recipient">https://discord.com/developers/docs/resources/channel#group-dm-remove-recipient</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel ID of group DM </td></tr>
@@ -2695,6 +2732,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get channel webhooks. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#get-guild-webhooks">https://discord.com/developers/docs/resources/webhook#get-guild-webhooks</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel ID to get webhooks for </td></tr>
@@ -2749,6 +2787,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the gateway information for the bot using the token. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/gateway#get-gateway-bot">https://discord.com/developers/docs/topics/gateway#get-gateway-bot</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1gateway.html" title="Represents the various information from the &#39;get gateway bot&#39; api call.">dpp::gateway</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -2785,6 +2824,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild webhooks. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#get-guild-webhooks">https://discord.com/developers/docs/resources/webhook#get-guild-webhooks</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get webhooks for </td></tr>
@@ -2858,7 +2898,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get all voice regions. </p>
+<p>Get all voice regions @See <a href="https://discord.com/developers/docs/resources/voice#list-voice-regions">https://discord.com/developers/docs/resources/voice#list-voice-regions</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#ae90871830444cab0316109a1824fc0b8" title="A group of voice regions.">dpp::voiceregion_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -2895,6 +2935,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get webhook. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#get-webhook">https://discord.com/developers/docs/resources/webhook#get-webhook</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webhook_id</td><td>Webhook ID to get </td></tr>
@@ -2932,6 +2973,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get webhook message. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#get-webhook-message">https://discord.com/developers/docs/resources/webhook#get-webhook-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wh</td><td>Webhook to get the original message for </td></tr>
@@ -2975,6 +3017,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get webhook using token. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/webhook#get-webhook-with-token">https://discord.com/developers/docs/resources/webhook#get-webhook-with-token</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webhook_id</td><td>Webhook ID to retrieve </td></tr>
@@ -3014,6 +3057,7 @@ Friends</h2></td></tr>
 
 <p>Create/overwrite global slash commands. Any existing global slash commands will be deleted and replaced with these. </p>
 <dl class="section note"><dt>Note</dt><dd>Global commands are cached by discord server-side and can take up to an hour to be visible. For testing, you should use <a class="el" href="classdpp_1_1cluster.html#aa7aad2d123fe4d13cb880ff59d8048f5" title="Create/overwrite guild slash commands. Any existing guild slash commands on this guild will be delete...">cluster::guild_bulk_command_create</a> instead.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands">https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">commands</td><td>Vector of slash commands to create/update. overwriting existing commands that are registered globally for this application. Updates will be available in all guilds after 1 hour. Commands that do not already exist will count toward daily application command create limits. </td></tr>
@@ -3052,6 +3096,7 @@ Friends</h2></td></tr>
 
 <p>Create a global slash command (a bot can have a maximum of 100 of these). </p>
 <dl class="section note"><dt>Note</dt><dd>Global commands are cached by discord server-side and can take up to an hour to be visible. For testing, you should use <a class="el" href="classdpp_1_1cluster.html#a4c0ce1ad5256a252ab0ce43923a07ae3" title="Create a slash command local to a guild.">cluster::guild_command_create</a> instead.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#create-global-application-command">https://discord.com/developers/docs/interactions/application-commands#create-global-application-command</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Slash command to create </td></tr>
@@ -3089,6 +3134,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a global slash command (a bot can have a maximum of 100 of these) </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#delete-global-application-command">https://discord.com/developers/docs/interactions/application-commands#delete-global-application-command</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>Slash command to delete </td></tr>
@@ -3126,6 +3172,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a global slash command (a bot can have a maximum of 100 of these) </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#edit-global-application-command">https://discord.com/developers/docs/interactions/application-commands#edit-global-application-command</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Global commands are cached by discord server-side and can take up to an hour to be visible. For testing, you should use <a class="el" href="classdpp_1_1cluster.html#aa7aad2d123fe4d13cb880ff59d8048f5" title="Create/overwrite guild slash commands. Any existing guild slash commands on this guild will be delete...">cluster::guild_bulk_command_create</a> instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3164,6 +3211,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a global slash command. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#get-global-application-command">https://discord.com/developers/docs/interactions/application-commands#get-global-application-command</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>The ID of the slash command </td></tr>
@@ -3191,6 +3239,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the application's global slash commands. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#get-global-application-commands">https://discord.com/developers/docs/interactions/application-commands#get-global-application-commands</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554" title="A group of application slash commands.">dpp::slashcommand_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -3235,7 +3284,8 @@ Friends</h2></td></tr>
 <p>Add guild member. Needs a specific oauth2 scope, from which you get the access_token. </p>
 <p >Adds a user to the guild, provided you have a valid oauth2 access token for the user with the guilds.join scope. Returns the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a>, which is defaulted if the user is already a member of the guild. Fires a <code>Guild Member Add</code> Gateway event.</p>
 <p >For guilds with Membership Screening enabled, this endpoint will default to adding new members as pending in the guild member object. Members that are pending will have to complete membership screening before they become full members that can talk.</p>
-<dl class="section note"><dt>Note</dt><dd>All parameters to this endpoint except for access_token are optional. The bot must be a member of the guild with <code>CREATE_INSTANT_INVITE</code> permission.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>All parameters to this endpoint except for access_token are optional. The bot must be a member of the guild with <code>CREATE_INSTANT_INVITE</code> permission. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#add-guild-member">https://discord.com/developers/docs/resources/guild#add-guild-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gm</td><td>Guild member to add </td></tr>
@@ -3274,6 +3324,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the audit log for a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/audit-log#get-guild-audit-log">https://discord.com/developers/docs/resources/audit-log#get-guild-audit-log</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to get the audit log of </td></tr>
@@ -3329,7 +3380,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add guild ban. </p>
-<p >Create a guild ban, and optionally delete previous messages sent by the banned user. Requires the <code>BAN_MEMBERS</code> permission. Fires a <code>Guild Ban Add</code> Gateway event.</p>
+<p >Create a guild ban, and optionally delete previous messages sent by the banned user. Requires the <code>BAN_MEMBERS</code> permission. Fires a <code>Guild Ban Add</code> Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#create-guild-ban">https://discord.com/developers/docs/resources/guild#create-guild-ban</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3377,7 +3428,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete guild ban. </p>
-<p >Remove the ban for a user. Requires the <code>BAN_MEMBERS</code> permissions. Fires a Guild Ban Remove Gateway event.</p>
+<p >Remove the ban for a user. Requires the <code>BAN_MEMBERS</code> permissions. Fires a Guild Ban Remove Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#remove-guild-ban">https://discord.com/developers/docs/resources/guild#remove-guild-ban</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3424,6 +3475,7 @@ Friends</h2></td></tr>
 
 <p>Begin guild prune. </p>
 <p >Begin a prune operation. Requires the <code>KICK_MEMBERS</code> permission. Returns a prune object indicating the number of members that were removed in the prune operation. For large guilds it's recommended to set the <code>compute_prune_count</code> option to false, forcing 'pruned' to 0. Fires multiple <code>Guild Member Remove</code> Gateway events. By default, prune will not remove users with roles. You can optionally include specific roles in your prune by providing the <code>include_roles</code> parameter. Any inactive user that has a subset of the provided role(s) will be included in the prune and users with additional roles will not.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#begin-guild-prune">https://discord.com/developers/docs/resources/guild#begin-guild-prune</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3469,6 +3521,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create/overwrite guild slash commands. Any existing guild slash commands on this guild will be deleted and replaced with these. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-guild-application-commands">https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-guild-application-commands</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">commands</td><td>Vector of slash commands to create/update. New guild commands will be available in the guild immediately. If the command did not already exist, it will count toward daily application command create limits. </td></tr>
@@ -3514,6 +3567,7 @@ Friends</h2></td></tr>
 
 <p>Edit/Overwrite the permissions of all existing slash commands in a guild. </p>
 <dl class="section note"><dt>Note</dt><dd>You can only add up to 10 permission overwrites for a command</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#batch-edit-application-command-permissions">https://discord.com/developers/docs/interactions/application-commands#batch-edit-application-command-permissions</a> </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The endpoint will overwrite all existing permissions for all commands of the application in a guild, including slash commands, user commands, and message commands. Meaning that if you forgot to pass a slash command, the permissions of it might be removed. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3559,6 +3613,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a slash command local to a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#create-guild-application-command">https://discord.com/developers/docs/interactions/application-commands#create-guild-application-command</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Creating a command with the same name as an existing command for your application will overwrite the old command. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3604,6 +3659,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a slash command local to a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#delete-guild-application-command">https://discord.com/developers/docs/interactions/application-commands#delete-guild-application-command</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>Slash command to delete </td></tr>
@@ -3648,6 +3704,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a slash command local to a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#edit-guild-application-command">https://discord.com/developers/docs/interactions/application-commands#edit-guild-application-command</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Slash command to edit </td></tr>
@@ -3692,6 +3749,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit slash command permissions of a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#edit-application-command-permissions">https://discord.com/developers/docs/interactions/application-commands#edit-application-command-permissions</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>You can only add up to 10 permission overwrites for a command </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3737,6 +3795,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a slash command of a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#get-guild-application-command">https://discord.com/developers/docs/interactions/application-commands#get-guild-application-command</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The returned slash commands will not have permissions set, you need to use a permissions getter e.g. dpp::guild_commands_get_permissions to get the guild command permissions </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3782,6 +3841,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the permissions for a slash command of a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#get-application-command-permissions">https://discord.com/developers/docs/interactions/application-commands#get-application-command-permissions</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>The ID of the slash command to get the permissions for </td></tr>
@@ -3820,6 +3880,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the application's slash commands for a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#get-guild-application-commands">https://discord.com/developers/docs/interactions/application-commands#get-guild-application-commands</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The returned slash commands will not have permissions set, you need to use a permissions getter e.g. dpp::guild_commands_get_permissions to get the guild command permissions </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3858,6 +3919,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all slash command permissions of a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/application-commands#get-application-command-permissions">https://discord.com/developers/docs/interactions/application-commands#get-application-command-permissions</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get the slash commands permissions for </td></tr>
@@ -3897,7 +3959,8 @@ Friends</h2></td></tr>
 <p>Create a guild. </p>
 <p >Create a new guild. Returns a guild object on success. <code>Fires a Guild Create Gateway</code> event.</p>
 <p >When using the roles parameter, the first member of the array is used to change properties of the guild's everyone role. If you are trying to bootstrap a guild with additional roles, keep this in mind. The required id field within each role object is an integer placeholder, and will be replaced by the API upon consumption. Its purpose is to allow you to overwrite a role's permissions in a channel when also passing in channels with the channels array. When using the channels parameter, the position field is ignored, and none of the default channels are created. The id field within each channel object may be set to an integer placeholder, and will be replaced by the API upon consumption. Its purpose is to allow you to create <code>GUILD_CATEGORY</code> channels by setting the <code>parent_id</code> field on any children to the category's id field. Category channels must be listed before any children.</p>
-<dl class="section note"><dt>Note</dt><dd>The region field is deprecated and is replaced by <a class="el" href="classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad" title="Voice region if set for voice channel, otherwise empty string.">channel.rtc_region</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#create-guild">https://discord.com/developers/docs/resources/guild#create-guild</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The region field is deprecated and is replaced by <a class="el" href="classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad" title="Voice region if set for voice channel, otherwise empty string.">channel.rtc_region</a>. This endpoint can be used only by bots in less than 10 guilds. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>Guild to create </td></tr>
@@ -3941,6 +4004,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new guild based on a template. </p>
+<dl class="section note"><dt>Note</dt><dd>This endpoint can be used only by bots in less than 10 guilds. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-template#create-guild-from-guild-template">https://discord.com/developers/docs/resources/guild-template#create-guild-from-guild-template</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>Template code to create guild from </td></tr>
@@ -3986,7 +4051,8 @@ Friends</h2></td></tr>
 
 <p>Modify current member. </p>
 <p >Modifies the current member in a guild. Fires a <code>Guild Member Update</code> Gateway event.</p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-current-member">https://discord.com/developers/docs/resources/guild#modify-current-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to change on </td></tr>
@@ -4026,6 +4092,7 @@ Friends</h2></td></tr>
 
 <p>Delete a guild. </p>
 <p >Delete a guild permanently. User must be owner. Fires a <code>Guild Delete Gateway</code> event.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#delete-guild">https://discord.com/developers/docs/resources/guild#delete-guild</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to delete </td></tr>
@@ -4070,6 +4137,7 @@ Friends</h2></td></tr>
 
 <p>Delete guild integration. </p>
 <p >Delete the attached integration object for the guild. Deletes any associated webhooks and kicks the associated bot if there is one. Requires the <code>MANAGE_GUILD</code> permission. Fires a Guild Integrations Update Gateway event.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#delete-guild-integration">https://discord.com/developers/docs/resources/guild#delete-guild-integration</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4110,6 +4178,7 @@ Friends</h2></td></tr>
 
 <p>Edit a guild. </p>
 <p >Modify a guild's settings. Requires the <code>MANAGE_GUILD</code> permission. Returns the updated guild object on success. Fires a <code>Guild Update Gateway</code> event.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild">https://discord.com/developers/docs/resources/guild#modify-guild</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4148,7 +4217,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit the properties of an existing guild member. </p>
-<p >Modify attributes of a guild member. Returns the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a>. Fires a <code>Guild Member Update Gateway</code> event. If the <code>channel_id</code> is set to 0, this will force the target user to be disconnected from voice. To remove a timeout, set the <code>communication_disabled_until</code> to a non-zero time in the past, e.g. 1. When moving members to channels, the API user must have permissions to both connect to the channel and have the <code>MOVE_MEMBERS</code> permission.</p>
+<p >Modify attributes of a guild member. Returns the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a>. Fires a <code>Guild Member Update Gateway</code> event. If the <code>channel_id</code> is set to 0, this will force the target user to be disconnected from voice. To remove a timeout, set the <code>communication_disabled_until</code> to a non-zero time in the past, e.g. 1. When moving members to channels, the API user must have permissions to both connect to the channel and have the <code>MOVE_MEMBERS</code> permission. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4194,6 +4263,7 @@ Friends</h2></td></tr>
 
 <p>Edit guild widget. </p>
 <p >Requires the <code>MANAGE_GUILD</code> permission.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-widget">https://discord.com/developers/docs/resources/guild#modify-guild-widget</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4240,6 +4310,7 @@ Friends</h2></td></tr>
 
 <p>Create single emoji. You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method. </p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/emoji#create-guild-emoji">https://discord.com/developers/docs/resources/emoji#create-guild-emoji</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to create emoji om </td></tr>
@@ -4285,6 +4356,7 @@ Friends</h2></td></tr>
 
 <p>Delete a guild emoji. </p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/emoji#delete-guild-emoji">https://discord.com/developers/docs/resources/emoji#delete-guild-emoji</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to delete emoji on </td></tr>
@@ -4329,7 +4401,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit a single emoji. </p>
-<p >You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method.</p>
+<p >You must ensure that the emoji passed contained image data using the <a class="el" href="classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9" title="Load an image into the object as base64.">emoji::load_image()</a> method. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/emoji#get-guild-emoji">https://discord.com/developers/docs/resources/emoji#get-guild-emoji</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4375,6 +4447,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a single emoji. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/emoji#get-guild-emoji">https://discord.com/developers/docs/resources/emoji#get-guild-emoji</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get emoji for </td></tr>
@@ -4413,6 +4486,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all emojis for a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/emoji#get-guild-emojis">https://discord.com/developers/docs/resources/emoji#get-guild-emojis</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get emojis for </td></tr>
@@ -4450,6 +4524,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a scheduled event on a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-scheduled-event#create-guild-scheduled-event">https://discord.com/developers/docs/resources/guild-scheduled-event#create-guild-scheduled-event</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Event to create (guild ID must be populated) </td></tr>
@@ -4493,6 +4568,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a scheduled event from a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-scheduled-event#delete-guild-scheduled-event">https://discord.com/developers/docs/resources/guild-scheduled-event#delete-guild-scheduled-event</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event_id</td><td>Event ID to delete </td></tr>
@@ -4531,6 +4607,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit/modify a scheduled event on a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-scheduled-event#modify-guild-scheduled-event">https://discord.com/developers/docs/resources/guild-scheduled-event#modify-guild-scheduled-event</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Event to create (event ID and guild ID must be populated) </td></tr>
@@ -4574,6 +4651,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a scheduled event for a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-scheduled-event#get-guild-scheduled-event">https://discord.com/developers/docs/resources/guild-scheduled-event#get-guild-scheduled-event</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to get event for </td></tr>
@@ -4636,6 +4714,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get users RSVP'd to an event. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-scheduled-event#get-guild-scheduled-event-users">https://discord.com/developers/docs/resources/guild-scheduled-event#get-guild-scheduled-event-users</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to get user list for </td></tr>
@@ -4677,6 +4756,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all scheduled events for a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-scheduled-event#list-scheduled-events-for-guild">https://discord.com/developers/docs/resources/guild-scheduled-event#list-scheduled-events-for-guild</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to get events for </td></tr>
@@ -4714,7 +4794,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a guild. </p>
-<p >Returns the guild object for the given id. This endpoint will also return approximate_member_count and approximate_presence_count for the guild.</p>
+<p >Returns the guild object for the given id. This endpoint will also return approximate_member_count and approximate_presence_count for the guild. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild">https://discord.com/developers/docs/resources/guild#get-guild</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>Guild ID to retrieve </td></tr>
@@ -4758,7 +4838,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get single guild ban. </p>
-<p >Requires the <code>BAN_MEMBERS</code> permission.</p>
+<p >Requires the <code>BAN_MEMBERS</code> permission. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-ban">https://discord.com/developers/docs/resources/guild#get-guild-ban</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get ban for </td></tr>
@@ -4797,7 +4877,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild ban list. </p>
-<p >Requires the <code>BAN_MEMBERS</code> permission.</p>
+<p >Requires the <code>BAN_MEMBERS</code> permission. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-bans">https://discord.com/developers/docs/resources/guild#get-guild-bans</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get bans for </td></tr>
@@ -4836,6 +4916,7 @@ Friends</h2></td></tr>
 
 <p>Get guild integrations. </p>
 <p >Requires the <code>MANAGE_GUILD</code> permission.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-integrations">https://discord.com/developers/docs/resources/guild#get-guild-integrations</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get integrations for </td></tr>
@@ -4874,6 +4955,7 @@ Friends</h2></td></tr>
 
 <p>Get guild invites. </p>
 <p >Returns a list of invite objects (with invite metadata) for the guild. Requires the <code>MANAGE_GUILD</code> permission.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-invites">https://discord.com/developers/docs/resources/guild#get-guild-invites</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get invites for </td></tr>
@@ -4917,6 +4999,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a guild member. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-member">https://discord.com/developers/docs/resources/guild#get-guild-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get member for </td></tr>
@@ -4967,7 +5050,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all guild members. </p>
-<dl class="section note"><dt>Note</dt><dd>This endpoint is restricted according to whether the <code>GUILD_MEMBERS</code> Privileged Intent is enabled for your application.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This endpoint is restricted according to whether the <code>GUILD_MEMBERS</code> Privileged Intent is enabled for your application. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-members">https://discord.com/developers/docs/resources/guild#get-guild-members</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get all members for </td></tr>
@@ -5007,7 +5091,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a guild preview. Returns a guild object but only a subset of the fields will be populated. </p>
-<p >Returns the guild preview object for the given id <code>g</code>. If the user is not in the guild, then the guild must be lurkable (it must be Discoverable or have a live public stage).</p>
+<p >Returns the guild preview object for the given id <code>g</code>. If the user is not in the guild, then the guild must be lurkable (it must be Discoverable or have a live public stage). </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-preview">https://discord.com/developers/docs/resources/guild#get-guild-preview</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>Guild ID to retrieve </td></tr>
@@ -5052,6 +5136,7 @@ Friends</h2></td></tr>
 
 <p>Get prune counts. </p>
 <p >Returns a prune object indicating the number of members that would be removed in a prune operation. Requires the <code>KICK_MEMBERS</code> permission. By default, prune will not remove users with roles. You can optionally include specific roles in your prune by providing the include_roles parameter. Any inactive user that has a subset of the provided role(s) will be counted in the prune and users with additional roles will not.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-prune-count">https://discord.com/developers/docs/resources/guild#get-guild-prune-count</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to count for pruning </td></tr>
@@ -5090,7 +5175,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild vanity url, if enabled. </p>
-<p >Returns a partial <a class="el" href="classdpp_1_1invite.html" title="Represents an invite to a discord guild or channel.">dpp::invite</a> object for guilds with that feature enabled. Requires the <code>MANAGE_GUILD</code> permission. code will be null if a vanity url for the guild is not set.</p>
+<p >Returns a partial <a class="el" href="classdpp_1_1invite.html" title="Represents an invite to a discord guild or channel.">dpp::invite</a> object for guilds with that feature enabled. Requires the <code>MANAGE_GUILD</code> permission. code will be null if a vanity url for the guild is not set. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-vanity-url">https://discord.com/developers/docs/resources/guild#get-guild-vanity-url</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to get vanity URL for </td></tr>
@@ -5129,6 +5214,7 @@ Friends</h2></td></tr>
 
 <p>Get guild voice regions. </p>
 <p >Voice regions per guild are somewhat deprecated in preference of per-channel voice regions. Returns a list of voice region objects for the guild. Unlike the similar /voice route, this returns VIP servers when the guild is VIP-enabled.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-voice-regions">https://discord.com/developers/docs/resources/guild#get-guild-voice-regions</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get voice regions for </td></tr>
@@ -5167,6 +5253,7 @@ Friends</h2></td></tr>
 
 <p>Get guild widget. </p>
 <p >Requires the <code>MANAGE_GUILD</code> permission.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-widget">https://discord.com/developers/docs/resources/guild#get-guild-widget</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get widget for </td></tr>
@@ -5216,7 +5303,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add role to guild member. </p>
-<p >Adds a role to a guild member. Requires the <code>MANAGE_ROLES</code> permission. Fires a Guild Member Update Gateway event.</p>
+<p >Adds a role to a guild member. Requires the <code>MANAGE_ROLES</code> permission. Fires a Guild Member Update Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#add-guild-member-role">https://discord.com/developers/docs/resources/guild#add-guild-member-role</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5263,7 +5350,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove (kick) a guild member. </p>
-<p >Remove a member from a guild. Requires <code>KICK_MEMBERS</code> permission. Fires a <code>Guild Member Remove</code> Gateway event.</p>
+<p >Remove a member from a guild. Requires <code>KICK_MEMBERS</code> permission. Fires a <code>Guild Member Remove</code> Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#remove-guild-member">https://discord.com/developers/docs/resources/guild#remove-guild-member</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5315,7 +5402,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove role from guild member. </p>
-<p >Removes a role from a guild member. Requires the <code>MANAGE_ROLES</code> permission. Fires a <code>Guild Member Update</code> Gateway event.</p>
+<p >Removes a role from a guild member. Requires the <code>MANAGE_ROLES</code> permission. Fires a <code>Guild Member Update</code> Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#remove-guild-member-role">https://discord.com/developers/docs/resources/guild#remove-guild-member-role</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5368,6 +5455,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Moves the guild member to a other voice channel, if member is connected to one. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Id of the channel to which the user is used </td></tr>
@@ -5414,6 +5502,7 @@ Friends</h2></td></tr>
 
 <p>Modify guild integration. </p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-integration">https://discord.com/developers/docs/resources/guild#modify-guild-integration</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to modify integration for </td></tr>
@@ -5464,7 +5553,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Search for guild members based on whether their username or nickname starts with the given string. </p>
-<dl class="section note"><dt>Note</dt><dd>This endpoint is restricted according to whether the <code>GUILD_MEMBERS</code> Privileged Intent is enabled for your application.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This endpoint is restricted according to whether the <code>GUILD_MEMBERS</code> Privileged Intent is enabled for your application. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#search-guild-members">https://discord.com/developers/docs/resources/guild#search-guild-members</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to search in </td></tr>
@@ -5512,7 +5602,8 @@ Friends</h2></td></tr>
 <p>Change current user nickname. </p>
 <p >Modifies the nickname of the current user in a guild. Fires a <code>Guild Member Update</code> Gateway event.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Deprecated in favor of Modify Current Member. Will be replaced by <a class="el" href="classdpp_1_1cluster.html#afcd8806dddfab9403f963f9c3cd16d96" title="Modify current member.">dpp::cluster::guild_current_member_edit</a> </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-current-user-nick">https://discord.com/developers/docs/resources/guild#modify-current-user-nick</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to change nickname on </td></tr>
@@ -5551,7 +5642,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a sticker in a guild. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/sticker#create-guild-sticker">https://discord.com/developers/docs/resources/sticker#create-guild-sticker</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Sticker to create. Must have its guild ID set. </td></tr>
@@ -5595,7 +5687,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a sticker from a guild. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/sticker#delete-guild-sticker">https://discord.com/developers/docs/resources/sticker#delete-guild-sticker</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sticker_id</td><td>sticker ID to delete </td></tr>
@@ -5640,6 +5733,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a guild sticker. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/sticker#get-guild-sticker">https://discord.com/developers/docs/resources/sticker#get-guild-sticker</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>Id of sticker to get. </td></tr>
@@ -5678,7 +5772,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modify a sticker in a guild. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. @https://discord.com/developers/docs/resources/sticker#modify-guild-sticker </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Sticker to modify. Must have its guild ID and sticker ID set. </td></tr>
@@ -5716,6 +5810,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all guild stickers. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/sticker#get-guild-stickers">https://discord.com/developers/docs/resources/sticker#get-guild-stickers</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID of the guild where the sticker is </td></tr>
@@ -5759,6 +5854,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sync guild integration. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#sync-guild-integration">https://discord.com/developers/docs/resources/guild#sync-guild-integration</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to sync integration on </td></tr>
@@ -5809,6 +5905,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a template for the guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-template#create-guild-template">https://discord.com/developers/docs/resources/guild-template#create-guild-template</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to create template from </td></tr>
@@ -5854,6 +5951,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Deletes the template. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-template#delete-guild-template">https://discord.com/developers/docs/resources/guild-template#delete-guild-template</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID of template to delete </td></tr>
@@ -5910,6 +6008,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modifies the template's metadata. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-template#modify-guild-template">https://discord.com/developers/docs/resources/guild-template#modify-guild-template</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID of template to modify </td></tr>
@@ -5956,6 +6055,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Syncs the template to the guild's current state. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-template#sync-guild-template">https://discord.com/developers/docs/resources/guild-template#sync-guild-template</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to synchronise template for </td></tr>
@@ -5994,6 +6094,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get guild templates. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-template#get-guild-templates">https://discord.com/developers/docs/resources/guild-template#get-guild-templates</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get templates for </td></tr>
@@ -6043,6 +6144,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Respond to a slash command. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/receiving-and-responding#create-interaction-response">https://discord.com/developers/docs/interactions/receiving-and-responding#create-interaction-response</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interaction_id</td><td>Interaction id to respond to </td></tr>
@@ -6087,7 +6189,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Respond to a slash command. </p>
+<p>Edit response to a slash command. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/interactions/receiving-and-responding#edit-original-interaction-response">https://discord.com/developers/docs/interactions/receiving-and-responding#edit-original-interaction-response</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">token</td><td>Token for the interaction webhook </td></tr>
@@ -6126,6 +6229,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete an invite. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/invite#delete-invite">https://discord.com/developers/docs/resources/invite#delete-invite</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -6164,6 +6268,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get details about an invite. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/invite#get-invite">https://discord.com/developers/docs/resources/invite#get-invite</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">invite</td><td>Invite code to get information on </td></tr>
@@ -6244,6 +6349,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a reaction to a message. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#create-reaction">https://discord.com/developers/docs/resources/channel#create-reaction</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to add a reaction to </td></tr>
@@ -6294,6 +6400,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a reaction to a message by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/gateway#message-reaction-add">https://discord.com/developers/docs/topics/gateway#message-reaction-add</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message to add reactions to </td></tr>
@@ -6333,6 +6440,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send a message to a channel. The callback function is called when the message has been sent. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#create-message">https://discord.com/developers/docs/resources/channel#create-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to send </td></tr>
@@ -6376,6 +6484,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Crosspost a message. The callback function is called when the message has been sent. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#crosspost-message">https://discord.com/developers/docs/resources/channel#crosspost-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message to crosspost </td></tr>
@@ -6421,6 +6530,7 @@ Friends</h2></td></tr>
 
 <p>Delete a message from a channel. The callback function is called when the message has been edited. </p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-message">https://discord.com/developers/docs/resources/channel#delete-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message ID to delete </td></tr>
@@ -6459,6 +6569,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete all reactions on a message. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-all-reactions">https://discord.com/developers/docs/resources/channel#delete-all-reactions</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to delete reactions from </td></tr>
@@ -6502,6 +6613,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete all reactions on a message by id. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-all-reactions">https://discord.com/developers/docs/resources/channel#delete-all-reactions</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message to delete reactions from </td></tr>
@@ -6549,6 +6661,7 @@ Friends</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd>
 <dd>
 If any message provided older than 2 weeks or any duplicate message ID, it will fail.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#bulk-delete-messages">https://discord.com/developers/docs/resources/channel#bulk-delete-messages</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_ids</td><td>List of message IDs to delete (at least 2 and at most 100 message IDs) </td></tr>
@@ -6593,6 +6706,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Delete own reaction from a message. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-own-reaction">https://discord.com/developers/docs/resources/channel#delete-own-reaction</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to delete own reaction from </td></tr>
@@ -6643,6 +6757,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Delete own reaction from a message by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-own-reaction">https://discord.com/developers/docs/resources/channel#delete-own-reaction</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message to delete reactions from </td></tr>
@@ -6694,6 +6809,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Delete a user's reaction from a message. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-user-reaction">https://discord.com/developers/docs/resources/channel#delete-user-reaction</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to delete a user's reaction from </td></tr>
@@ -6751,6 +6867,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Delete a user's reaction from a message by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-user-reaction">https://discord.com/developers/docs/resources/channel#delete-user-reaction</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message to delete reactions from </td></tr>
@@ -6797,6 +6914,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Delete all reactions on a message using a particular emoji. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-all-reactions-for-emoji">https://discord.com/developers/docs/resources/channel#delete-all-reactions-for-emoji</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to delete reactions from </td></tr>
@@ -6847,6 +6965,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Delete all reactions on a message using a particular emoji by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#delete-all-reactions-for-emoji">https://discord.com/developers/docs/resources/channel#delete-all-reactions-for-emoji</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message to delete reactions from </td></tr>
@@ -6886,6 +7005,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Edit a message on a channel. The callback function is called when the message has been edited. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#edit-message">https://discord.com/developers/docs/resources/channel#edit-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to edit </td></tr>
@@ -6929,6 +7049,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get a message. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-channel-message">https://discord.com/developers/docs/resources/channel#get-channel-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message ID </td></tr>
@@ -6991,6 +7112,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get reactions on a message for a particular emoji. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-reactions">https://discord.com/developers/docs/resources/channel#get-reactions</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>Message to get reactions for </td></tr>
@@ -7062,6 +7184,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get reactions on a message for a particular emoji by id. The reaction string must be either an <code>emojiname:id</code> or a unicode character. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-reactions">https://discord.com/developers/docs/resources/channel#get-reactions</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message_id</td><td>Message to get reactions for </td></tr>
@@ -7110,7 +7233,8 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Pin a message. </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#pin-message">https://discord.com/developers/docs/resources/channel#pin-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel id to pin message on </td></tr>
@@ -7155,6 +7279,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Unpin a message. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#unpin-message">https://discord.com/developers/docs/resources/channel#unpin-message</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7219,6 +7344,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Get multiple messages. </p>
 <p >This function will attempt to fetch as many messages as possible using multiple API calls if needed.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-channel-messages">https://discord.com/developers/docs/resources/channel#get-channel-messages</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel ID to retrieve messages for </td></tr>
@@ -7260,6 +7386,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get a nitro sticker. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/sticker#get-sticker">https://discord.com/developers/docs/resources/sticker#get-sticker</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>Id of sticker to get. </td></tr>
@@ -7481,7 +7608,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 <p>Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">url</td><td>Endpoint to post to, e.g. /api/guilds </td></tr>
+    <tr><td class="paramname">url</td><td>Full URL to post to, e.g. <a href="https://api.somewhere.com/v1/foo/">https://api.somewhere.com/v1/foo/</a> </td></tr>
     <tr><td class="paramname">method</td><td>Method, e.g. GET, POST </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the HTTP call completes. No processing is done on the returned data. </td></tr>
     <tr><td class="paramname">postdata</td><td>POST data </td></tr>
@@ -7521,6 +7648,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Create a role on a guild. </p>
 <p >Create a new role for the guild. Requires the <code>MANAGE_ROLES</code> permission. Returns the new role object on success. Fires a <code>Guild Role Create</code> Gateway event.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#create-guild-role">https://discord.com/developers/docs/resources/guild#create-guild-role</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7566,6 +7694,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Delete a role. </p>
 <p >Requires the <code>MANAGE_ROLES</code> permission. Fires a <code>Guild Role Delete</code> Gateway event.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#delete-guild-role">https://discord.com/developers/docs/resources/guild#delete-guild-role</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7606,6 +7735,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Edit a role on a guild. </p>
 <p >Requires the <code>MANAGE_ROLES</code> permission. Returns the updated role on success. Fires a <code>Guild Role Update</code> Gateway event.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-role">https://discord.com/developers/docs/resources/guild#modify-guild-role</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7651,6 +7781,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Edit multiple role's position in a guild. Returns a list of all roles of the guild on success. </p>
 <p >Modify the positions of a set of role objects for the guild. Requires the <code>MANAGE_ROLES</code> permission. Fires multiple <code>Guild Role Update</code> Gateway events.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-role-positions">https://discord.com/developers/docs/resources/guild#modify-guild-role-positions</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7690,6 +7821,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get a role for a guild. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#get-guild-roles">https://discord.com/developers/docs/resources/guild#get-guild-roles</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild ID to get role for </td></tr>
@@ -7846,6 +7978,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Create a stage instance on a stage channel. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/stage-instance#create-stage-instance">https://discord.com/developers/docs/resources/stage-instance#create-stage-instance</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">instance</td><td>Stage instance to create </td></tr>
@@ -7884,6 +8017,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Delete a stage instance. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/stage-instance#delete-stage-instance">https://discord.com/developers/docs/resources/stage-instance#delete-stage-instance</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>ID of the associated channel </td></tr>
@@ -7922,6 +8056,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Edit a stage instance. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/stage-instance#modify-stage-instance">https://discord.com/developers/docs/resources/stage-instance#modify-stage-instance</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">instance</td><td>Stage instance to edit </td></tr>
@@ -7960,6 +8095,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get the stage instance associated with the channel id, if it exists. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/stage-instance#get-stage-instance">https://discord.com/developers/docs/resources/stage-instance#get-stage-instance</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>ID of the associated channel </td></tr>
@@ -8059,6 +8195,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get sticker packs. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/sticker#list-nitro-sticker-packs">https://discord.com/developers/docs/resources/sticker#list-nitro-sticker-packs</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283">dpp::sticker_pack_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -8123,6 +8260,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get a template. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild-template#get-guild-template">https://discord.com/developers/docs/resources/guild-template#get-guild-template</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>Template code </td></tr>
@@ -8191,6 +8329,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Create a thread. </p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#create-guild-channel">https://discord.com/developers/docs/resources/guild#create-guild-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
@@ -8257,7 +8396,8 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Create a thread with a message (Discord: ID of a thread is same as message ID) </p>
-<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
@@ -8305,6 +8445,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Add a member to a thread. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to add to </td></tr>
@@ -8349,6 +8490,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get a thread member. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread to get member for </td></tr>
@@ -8393,6 +8535,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Remove a member from a thread. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to remove from </td></tr>
@@ -8431,6 +8574,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get members of a thread. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread to get members for </td></tr>
@@ -8468,6 +8612,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get active threads in a channel (Sorted by ID in descending order) </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel to get active threads for </td></tr>
@@ -8517,6 +8662,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get private archived threads in a channel which current user has joined (Sorted by ID in descending order) </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
@@ -8568,6 +8714,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get private archived threads in a channel (Sorted by archive_timestamp in descending order) </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
@@ -8619,6 +8766,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get public archived threads in a channel (Sorted by archive_timestamp in descending order) </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/thread">https://discord.com/developers/docs/topics/thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
@@ -8678,6 +8826,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get a user by id. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/user#get-user">https://discord.com/developers/docs/resources/user#get-user</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>User ID to retrieve </td></tr>
@@ -8745,6 +8894,7 @@ unless you want something special from <code><a class="el" href="classdpp_1_1use
 <li>When unsuppressed, non-bot users will have their <code>request_to_speak_timestamp</code> set to the current time. Bot users will not.</li>
 <li>When suppressed, the user will have their <code>request_to_speak_timestamp</code> removed.</li>
 </ul>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-user-voice-state">https://discord.com/developers/docs/resources/guild#modify-user-voice-state</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>The user to set the voice state of </td></tr>
