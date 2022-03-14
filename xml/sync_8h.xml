@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="sync_8h" kind="file" language="C++">
+    <compoundname>sync.h</compoundname>
+    <includes refid="export_8h" local="no">dpp/export.h</includes>
+    <includes refid="snowflake_8h" local="no">dpp/snowflake.h</includes>
+    <includes local="no">chrono</includes>
+    <includedby refid="cluster_8cpp" local="no">cluster.cpp</includedby>
+    <includedby refid="dpp_8h" local="no">dpp.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>dpp/export.h</label>
+      </node>
+      <node id="3">
+        <label>dpp/snowflake.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sync.h</label>
+        <link refid="sync_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>chrono</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>dpp.h</label>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sync.h</label>
+        <link refid="sync_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cluster.cpp</label>
+      </node>
+      <node id="5">
+        <label>test.cpp</label>
+      </node>
+      <node id="4">
+        <label>test.h</label>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unittest.cpp</label>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacedpp">dpp</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sync_8h_1a66afd02e7392883496bf0346e1670368" prot="public" static="no">
+        <name>DPP_VA_COMMA</name>
+        <param><defname>...</defname></param>
+        <initializer>DPP_GET_LAST_ARG(,##__VA_ARGS__,DPP_COMMA,DPP_COMMA,DPP_COMMA,DPP_COMMA,DPP_COMMA,DPP_COMMA,DPP_COMMA,DPP_COMMA,)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sync.h" line="33" column="9" bodyfile="include/dpp/sync.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sync_8h_1acae3076e6dbcf97e7078cab55259d831" prot="public" static="no">
+        <name>DPP_GET_LAST_ARG</name>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <param><defname>a4</defname></param>
+        <param><defname>a5</defname></param>
+        <param><defname>a6</defname></param>
+        <param><defname>a7</defname></param>
+        <param><defname>a8</defname></param>
+        <param><defname>a9</defname></param>
+        <param><defname>a10</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>a10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sync.h" line="34" column="9" bodyfile="include/dpp/sync.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sync_8h_1a7f745550762ada7759bd3dea0d538504" prot="public" static="no">
+        <name>DPP_COMMA</name>
+        <initializer>,</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sync.h" line="35" column="9" bodyfile="include/dpp/sync.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sync_8h_1ab3f126de1c73c39c9131cfe3e109a2fd" prot="public" static="no">
+        <name>dpp_sync</name>
+        <param><defname>type</defname></param>
+        <param><defname>cluster</defname></param>
+        <param><defname>func</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>	([cluster]() -&gt; type { \
+		bool completed = false; \
+		bool except = false; \
+		std::string message; \
+		type _t = {}; \
+ 		(cluster)-&gt;func( __VA_ARGS__ DPP_VA_COMMA(__VA_ARGS__) [&amp;except, &amp;message, &amp;_t, &amp;completed](const auto&amp; cc) { \
+		 	if (cc.is_error()) { \
+				message = cc.get_error().message; \
+			 	except = true; \
+			} else { \
+				try { \
+					_t = std::get&lt;type&gt;(cc.value); \
+				} \
+				catch (const std::exception&amp; e) { \
+					message = e.what(); \
+					except = true; \
+				} \
+			} \
+			completed = true; \
+		}); \
+		do { \
+			std::this_thread::sleep_for(std::chrono::microseconds(10)); \
+		} while (!completed); \
+		if (except) { \
+			throw <ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref>(message); \
+		} \
+		return _t; \
+	})()</initializer>
+        <briefdescription>
+<para>Call a D++ REST function syncronously. Syncronously calling a REST function means IT WILL BLOCK. This is a Bad Thing™️ and strongly discouraged. There are very few circumstances you actually need this. If you do need to use this, you&apos;ll know it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of value to be returned from the REST call </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cluster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function in <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> to call </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any number of required parameters to the function, minus the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The returned data type </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Will throw on failure to complete the request. Exceptions are thrown in the thread which called dpp_sync(). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sync.h" line="49" column="9" bodyfile="include/dpp/sync.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/sync.h"/>
+  </compounddef>
+</doxygen>
