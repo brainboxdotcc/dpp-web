@@ -107,11 +107,17 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="32">
+        <label>K</label>
+      </node>
       <node id="10">
         <label>SSL *</label>
       </node>
       <node id="11">
         <label>SSL_CTX *</label>
+      </node>
+      <node id="33">
+        <label>T</label>
       </node>
       <node id="8">
         <label>bool</label>
@@ -300,7 +306,7 @@
         <childnode refid="29" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
-        <childnode refid="31" relation="usage">
+        <childnode refid="34" relation="usage">
           <edgelabel>voice_members</edgelabel>
         </childnode>
       </node>
@@ -382,7 +388,7 @@
       <node id="14">
         <label>function&lt;</label>
       </node>
-      <node id="31">
+      <node id="34">
         <label>map&lt;</label>
       </node>
       <node id="24">
@@ -395,6 +401,15 @@
       </node>
       <node id="23">
         <label>native_handle_type</label>
+      </node>
+      <node id="31">
+        <label>std::unordered_map&lt; K, T &gt;</label>
+        <childnode refid="32" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
       </node>
       <node id="25">
         <label>unordered_map&lt;</label>
@@ -424,6 +439,9 @@
         </childnode>
         <childnode refid="30" relation="usage">
           <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="template-instance">
+          <edgelabel>&lt; snowflake, class guild_member * &gt;</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

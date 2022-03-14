@@ -155,11 +155,17 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="39">
+        <label>K</label>
+      </node>
       <node id="11">
         <label>SSL *</label>
       </node>
       <node id="12">
         <label>SSL_CTX *</label>
+      </node>
+      <node id="40">
+        <label>T</label>
       </node>
       <node id="8">
         <label>bool</label>
@@ -179,7 +185,7 @@
           <edgelabel>user_policy</edgelabel>
         </childnode>
       </node>
-      <node id="41">
+      <node id="44">
         <label>dpp::channel</label>
         <link refid="classdpp_1_1channel"/>
         <childnode refid="22" relation="public-inheritance">
@@ -376,13 +382,13 @@
         <childnode refid="36" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
-        <childnode refid="38" relation="usage">
+        <childnode refid="41" relation="usage">
           <edgelabel>voice_members</edgelabel>
         </childnode>
-        <childnode refid="39" relation="usage">
+        <childnode refid="42" relation="usage">
           <edgelabel>welcome_screen</edgelabel>
         </childnode>
-        <childnode refid="40" relation="usage">
+        <childnode refid="43" relation="usage">
           <edgelabel>nsfw_level</edgelabel>
         </childnode>
       </node>
@@ -497,7 +503,7 @@
         <childnode refid="32" relation="usage">
           <edgelabel>webhook_guild</edgelabel>
         </childnode>
-        <childnode refid="41" relation="usage">
+        <childnode refid="44" relation="usage">
           <edgelabel>webhook_channel</edgelabel>
         </childnode>
       </node>
@@ -507,7 +513,7 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="39">
+      <node id="42">
         <label>dpp::welcome_screen_t</label>
         <link refid="structdpp_1_1welcome__screen__t"/>
         <childnode refid="3" relation="usage">
@@ -520,7 +526,7 @@
       <node id="34">
         <label>guild_explicit_content_t</label>
       </node>
-      <node id="40">
+      <node id="43">
         <label>guild_nsfw_level_t</label>
       </node>
       <node id="9">
@@ -535,7 +541,7 @@
       <node id="15">
         <label>function&lt;</label>
       </node>
-      <node id="38">
+      <node id="41">
         <label>map&lt;</label>
       </node>
       <node id="30">
@@ -548,6 +554,15 @@
       </node>
       <node id="29">
         <label>native_handle_type</label>
+      </node>
+      <node id="38">
+        <label>std::unordered_map&lt; K, T &gt;</label>
+        <childnode refid="39" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
       </node>
       <node id="31">
         <label>unordered_map&lt;</label>
@@ -577,6 +592,9 @@
         </childnode>
         <childnode refid="37" relation="usage">
           <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="template-instance">
+          <edgelabel>&lt; snowflake, guild_member &gt;</edgelabel>
         </childnode>
       </node>
       <node id="33">

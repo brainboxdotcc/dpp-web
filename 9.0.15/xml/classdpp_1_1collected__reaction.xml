@@ -127,7 +127,13 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="22">
+      <node id="20">
+        <label>K</label>
+      </node>
+      <node id="21">
+        <label>T</label>
+      </node>
+      <node id="25">
         <label>dpp::channel</label>
         <link refid="classdpp_1_1channel"/>
         <childnode refid="2" relation="public-inheritance">
@@ -179,14 +185,14 @@
         <childnode refid="17" relation="usage">
           <edgelabel>react_member</edgelabel>
         </childnode>
-        <childnode refid="22" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>react_channel</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>react_emoji</edgelabel>
         </childnode>
       </node>
-      <node id="23">
+      <node id="26">
         <label>dpp::emoji</label>
         <link refid="classdpp_1_1emoji"/>
         <childnode refid="2" relation="public-inheritance">
@@ -261,13 +267,13 @@
         <childnode refid="16" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>voice_members</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>welcome_screen</edgelabel>
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="24" relation="usage">
           <edgelabel>nsfw_level</edgelabel>
         </childnode>
       </node>
@@ -332,7 +338,7 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="20">
+      <node id="23">
         <label>dpp::welcome_screen_t</label>
         <link refid="structdpp_1_1welcome__screen__t"/>
         <childnode refid="5" relation="usage">
@@ -345,7 +351,7 @@
       <node id="13">
         <label>guild_explicit_content_t</label>
       </node>
-      <node id="21">
+      <node id="24">
         <label>guild_nsfw_level_t</label>
       </node>
       <node id="14">
@@ -354,12 +360,21 @@
       <node id="6">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="19">
+      <node id="22">
         <label>map&lt;</label>
       </node>
       <node id="5">
         <label>std::string</label>
         <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>std::unordered_map&lt; K, T &gt;</label>
+        <childnode refid="20" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
       <node id="15">
@@ -387,6 +402,9 @@
         </childnode>
         <childnode refid="17" relation="usage">
           <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="template-instance">
+          <edgelabel>&lt; snowflake, guild_member &gt;</edgelabel>
         </childnode>
       </node>
       <node id="12">

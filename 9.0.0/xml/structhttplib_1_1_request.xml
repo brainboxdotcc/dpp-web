@@ -505,13 +505,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="10">
+      <node id="6">
+        <label>K</label>
+      </node>
+      <node id="13">
         <label>Range</label>
       </node>
-      <node id="17">
+      <node id="7">
+        <label>T</label>
+      </node>
+      <node id="21">
         <label>bool</label>
       </node>
-      <node id="8">
+      <node id="11">
         <label>httplib::MultipartFormData</label>
         <link refid="structhttplib_1_1_multipart_form_data"/>
         <childnode refid="2" relation="usage">
@@ -535,59 +541,65 @@
         <childnode refid="4" relation="usage">
           <edgelabel>headers</edgelabel>
         </childnode>
-        <childnode refid="5" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>remote_port</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>params</edgelabel>
         </childnode>
-        <childnode refid="7" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>files</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>ranges</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>matches</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>response_handler</edgelabel>
         </childnode>
-        <childnode refid="13" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>content_receiver</edgelabel>
         </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="18" relation="usage">
           <edgelabel>progress</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>authorization_count_</edgelabel>
           <edgelabel>content_length_</edgelabel>
           <edgelabel>redirect_count_</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>content_provider_</edgelabel>
         </childnode>
-        <childnode refid="17" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>is_chunked_content_provider_</edgelabel>
         </childnode>
       </node>
-      <node id="5">
+      <node id="8">
         <label>int</label>
       </node>
-      <node id="7">
+      <node id="10">
         <label>std::multimap&lt; std::string, MultipartFormData &gt;</label>
         <childnode refid="2" relation="usage">
           <edgelabel>keys</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; std::string, MultipartFormData &gt;</edgelabel>
+        </childnode>
       </node>
-      <node id="6">
+      <node id="9">
         <label>std::multimap&lt; std::string, std::string &gt;</label>
         <childnode refid="2" relation="usage">
           <edgelabel>elements</edgelabel>
           <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; std::string, std::string &gt;</edgelabel>
         </childnode>
       </node>
       <node id="4">
@@ -596,26 +608,38 @@
           <edgelabel>elements</edgelabel>
           <edgelabel>keys</edgelabel>
         </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; std::string, std::string, detail::ci &gt;</edgelabel>
+        </childnode>
       </node>
-      <node id="15">
+      <node id="19">
         <label>size_t</label>
       </node>
       <node id="3">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="12">
+      <node id="16">
         <label>function&lt; bool(const Response &amp;response)&gt;</label>
       </node>
-      <node id="13">
+      <node id="17">
         <label>function&lt; bool(const char *data, size_t data_length, uint64_t offset, uint64_t total_length)&gt;</label>
       </node>
-      <node id="16">
+      <node id="20">
         <label>function&lt; bool(size_t offset, size_t length, DataSink &amp;sink)&gt;</label>
       </node>
-      <node id="14">
+      <node id="18">
         <label>function&lt; bool(uint64_t current, uint64_t total)&gt;</label>
       </node>
-      <node id="11">
+      <node id="5">
+        <label>std::multimap&lt; K, T &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
         <label>smatch</label>
       </node>
       <node id="2">
@@ -623,10 +647,19 @@
         <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
-        <label>std::vector&lt; Range &gt;</label>
-        <childnode refid="10" relation="usage">
+      <node id="14">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="7" relation="usage">
           <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>std::vector&lt; Range &gt;</label>
+        <childnode refid="13" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="template-instance">
+          <edgelabel>&lt; Range &gt;</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

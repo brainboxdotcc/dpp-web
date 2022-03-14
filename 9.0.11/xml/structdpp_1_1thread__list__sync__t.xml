@@ -170,11 +170,17 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="37">
+        <label>K</label>
+      </node>
       <node id="11">
         <label>SSL *</label>
       </node>
       <node id="12">
         <label>SSL_CTX *</label>
+      </node>
+      <node id="38">
+        <label>T</label>
       </node>
       <node id="8">
         <label>bool</label>
@@ -352,10 +358,10 @@
         <childnode refid="34" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
-        <childnode refid="36" relation="usage">
+        <childnode refid="39" relation="usage">
           <edgelabel>voice_members</edgelabel>
         </childnode>
-        <childnode refid="37" relation="usage">
+        <childnode refid="40" relation="usage">
           <edgelabel>welcome_screen</edgelabel>
         </childnode>
       </node>
@@ -481,7 +487,7 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="37">
+      <node id="40">
         <label>dpp::welcome_screen_t</label>
         <link refid="structdpp_1_1welcome__screen__t"/>
         <childnode refid="3" relation="usage">
@@ -503,7 +509,7 @@
       <node id="15">
         <label>function&lt;</label>
       </node>
-      <node id="36">
+      <node id="39">
         <label>map&lt;</label>
       </node>
       <node id="30">
@@ -516,6 +522,15 @@
       </node>
       <node id="29">
         <label>native_handle_type</label>
+      </node>
+      <node id="36">
+        <label>std::unordered_map&lt; K, T &gt;</label>
+        <childnode refid="37" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
       </node>
       <node id="31">
         <label>unordered_map&lt;</label>
@@ -545,6 +560,9 @@
         </childnode>
         <childnode refid="35" relation="usage">
           <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="template-instance">
+          <edgelabel>&lt; snowflake, guild_member &gt;</edgelabel>
         </childnode>
       </node>
       <node id="28">

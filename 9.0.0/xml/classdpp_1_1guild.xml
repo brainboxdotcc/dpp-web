@@ -965,6 +965,12 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="16">
+        <label>K</label>
+      </node>
+      <node id="17">
+        <label>T</label>
+      </node>
       <node id="1">
         <label>dpp::guild</label>
         <link refid="classdpp_1_1guild"/>
@@ -1019,7 +1025,7 @@
         <childnode refid="12" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
+        <childnode refid="18" relation="usage">
           <edgelabel>voice_members</edgelabel>
         </childnode>
       </node>
@@ -1065,12 +1071,21 @@
       <node id="7">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="15">
+      <node id="18">
         <label>map&lt;</label>
       </node>
       <node id="6">
         <label>std::string</label>
         <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>std::unordered_map&lt; K, T &gt;</label>
+        <childnode refid="16" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
       <node id="11">
@@ -1098,6 +1113,9 @@
         </childnode>
         <childnode refid="13" relation="usage">
           <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="template-instance">
+          <edgelabel>&lt; snowflake, guild_member &gt;</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

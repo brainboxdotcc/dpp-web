@@ -29,8 +29,9 @@
 <title>Source code</title>
 <para><simplesect kind="warning"><para>If you manage to get your system, network, or anything else harmed by use or misuse of this code, we are not responsible. Don&apos;t say we didn&apos;t warn you! Find another way to solve your problem!</para>
 </simplesect>
-<heading level="3">eval.h</heading>
 </para>
+<sect3 id="cpp-eval-command-discord_1autotoc_md45">
+<title>eval.h</title>
 <para>Remember that eval.h contains forward-declarations of any functions you want to expose to the eval command. It is included both by the bot itself, and by any shared object files compiled for evaluation.</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -47,8 +48,9 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_function();</highlight></codeline>
 </programlisting></para>
-<para><heading level="3">eval.cpp</heading>
-</para>
+</sect3>
+<sect3 id="cpp-eval-command-discord_1autotoc_md46">
+<title>eval.cpp</title>
 <para>This is the main body of the example program.</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -210,14 +212,15 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
+</sect3>
 </sect2>
-<sect2 id="cpp-eval-command-discord_1autotoc_md45">
+<sect2 id="cpp-eval-command-discord_1autotoc_md47">
 <title>Compilation</title>
 <para>To compile this program you must link against <computeroutput>libdl</computeroutput>. It is also critically important to include the <computeroutput>-rdynamic</computeroutput> flag. For example:</para>
 <para><programlisting><codeline><highlight class="normal">g++<sp/>-std=c++17<sp/>-rdynamic<sp/>-oeval<sp/>eval.cpp<sp/>-ldpp<sp/>-ldl</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="cpp-eval-command-discord_1autotoc_md46">
+<sect2 id="cpp-eval-command-discord_1autotoc_md48">
 <title>Example usage</title>
 <para><image type="html" name="eval_example.png"></image>
  </para>
