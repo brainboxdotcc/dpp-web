@@ -17,7 +17,7 @@ var searchData=
   ['make_5fnew_14',['make_new',['../classdpp_1_1ssl__client.html#a6d17d6f3cb7781ecba40aaedf10ff598',1,'dpp::ssl_client']]],
   ['make_5funsigned_5for_5funchanged_15',['make_unsigned_or_unchanged',['../structmake__unsigned__or__unchanged.html',1,'']]],
   ['make_5funsigned_5for_5funchanged_3c_20t_2c_20true_20_3e_16',['make_unsigned_or_unchanged&lt; T, true &gt;',['../structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html',1,'']]],
-  ['make_5furl_5fparameters_17',['make_url_parameters',['../namespacedpp_1_1utility.html#a1d68e6151fe398398ec31305970419e3',1,'dpp::utility::make_url_parameters(const std::map&lt; std::string, std::string &gt; &amp;parameters)'],['../namespacedpp_1_1utility.html#abd913ffc73d921f4ded794338ec62cd4',1,'dpp::utility::make_url_parameters(const std::map&lt; std::string, uint64_t &gt; &amp;parameters)']]],
+  ['make_5furl_5fparameters_17',['make_url_parameters',['../namespacedpp_1_1utility.html#aeada90d27918093d9fe6a53d1a245f50',1,'dpp::utility::make_url_parameters(const std::map&lt; std::string, std::string &gt; &amp;parameters)'],['../namespacedpp_1_1utility.html#ae97ccaf14820df924f86b32c6932d486',1,'dpp::utility::make_url_parameters(const std::map&lt; std::string, uint64_t &gt; &amp;parameters)']]],
   ['making_20an_20eval_20command_20in_20c_2b_2b_18',['Making an eval command in C++',['../cpp-eval-command-discord.html',1,'md_docpages_03_example_programs']]],
   ['managed_19',['managed',['../classdpp_1_1managed.html',1,'dpp::managed'],['../classdpp_1_1managed.html#a30e9c7c9cef4cd42487f0be61aa616d0',1,'dpp::managed::managed()']]],
   ['markdown_5fescape_20',['markdown_escape',['../namespacedpp_1_1utility.html#a2cd10adca7586a99a6fd350bb601f407',1,'dpp::utility']]],

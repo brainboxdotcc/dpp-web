@@ -1,7 +1,7 @@
 var searchData=
 [
   ['validate_0',['validate',['../namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad',1,'dpp::utility']]],
-  ['version_1',['version',['../namespacedpp_1_1utility.html#a1cb30e93306604a6cf8eb93342b623c6',1,'dpp::utility']]],
+  ['version_1',['version',['../namespacedpp_1_1utility.html#a7d10e878ab1347eaed727b2e528206ed',1,'dpp::utility']]],
   ['voice_5fbuffer_5fsend_5ft_2',['voice_buffer_send_t',['../structdpp_1_1voice__buffer__send__t.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
   ['voice_5fclient_5fdisconnect_5ft_3',['voice_client_disconnect_t',['../structdpp_1_1voice__client__disconnect__t.html#afa8b1b2cf9a31e4c34acf1883f57ac12',1,'dpp::voice_client_disconnect_t']]],
   ['voice_5fclient_5fspeaking_5ft_4',['voice_client_speaking_t',['../structdpp_1_1voice__client__speaking__t.html#a5160a6d4005ffd9a97c52442f3e2aecf',1,'dpp::voice_client_speaking_t']]],
