@@ -5105,7 +5105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="258" column="23" bodyfile="include/dpp/cluster.h" bodystart="258" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="265" column="23" bodyfile="include/dpp/cluster.h" bodystart="265" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
         <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
@@ -5119,7 +5119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="263" column="23" bodyfile="include/dpp/cluster.h" bodystart="263" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="270" column="23" bodyfile="include/dpp/cluster.h" bodystart="270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int64_t, bool, double &gt;</type>
@@ -5824,7 +5824,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cluster.cpp" line="47" column="14" bodyfile="src/dpp/cluster.cpp" bodystart="47" bodyend="-1" declfile="include/dpp/cluster.h" declline="265" declcolumn="32"/>
+        <location file="src/dpp/cluster.cpp" line="47" column="14" bodyfile="src/dpp/cluster.cpp" bodystart="47" bodyend="-1" declfile="include/dpp/cluster.h" declline="272" declcolumn="32"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1ae16796831ecce90e670d207b0d0e1dd8" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
@@ -9250,6 +9250,113 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/stringops.h" line="178" column="16" bodyfile="include/dpp/stringops.h" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a100ce0f06b9b5a77de9be04687f3cb0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T dpp::sync</definition>
+        <argsstring>(class cluster *c, F func, Ts... args)</argsstring>
+        <name>sync</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>Ts...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Call a D++ REST function synchronously. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronously calling a REST function means <emphasis>IT WILL BLOCK</emphasis> - This is a Bad Thing™ and strongly discouraged. There are very few circumstances you actually need this. If you do need to use this, you&apos;ll know it.</para>
+<para>Example:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref><sp/>m<sp/>=<sp/>dpp::sync&lt;dpp::message&gt;(&amp;bot,<sp/>&amp;<ref refid="classdpp_1_1cluster_1aa6ae3dc32ebc2dd14264962710d35af7" kindref="member">dpp::cluster::message_create</ref>,<sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(channel_id,<sp/></highlight><highlight class="stringliteral">&quot;moo.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="warning"><para>As previously mentioned, this template will block. It is ill-advised to call this outside of a separate thread and this should never be directly used in any event such as <ref refid="classdpp_1_1cluster_1aaaac4fce048efff1be42965c82235b3e" kindref="member">dpp::cluster::on_interaction_create</ref>! </para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of expected return value, should match up with the method called </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>F</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of class method in <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> to call. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Ts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function parameters in method call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to class method in <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> to call. This can call any <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> member function who&apos;s last parameter is a <ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">dpp::command_completion_event_t</ref> callback type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero or more arguments for the method call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An instantiated object of type T </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On failure of the method call, an exception is thrown </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sync.h" line="52" column="18" bodyfile="include/dpp/sync.h" bodystart="52" bodyend="91"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
