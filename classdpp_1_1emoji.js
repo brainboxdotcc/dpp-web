@@ -12,7 +12,6 @@ var classdpp_1_1emoji =
     [ "is_available", "classdpp_1_1emoji.html#aa9447aeb490efc316f85363bb2b60220", null ],
     [ "is_managed", "classdpp_1_1emoji.html#ae92572e9263cf62cc3e1cc826d98f5ad", null ],
     [ "load_image", "classdpp_1_1emoji.html#a33694c119238d58da105c55fdf9dbcd9", null ],
-    [ "parse_from_json", "classdpp_1_1emoji.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "requires_colons", "classdpp_1_1emoji.html#a8e664abe1d5e91ea6b34677cf2206fcc", null ],
     [ "flags", "classdpp_1_1emoji.html#aa022607f3828123364721c6420b57f2f", null ],
     [ "id", "classdpp_1_1emoji.html#a40bf0c6cc03909910512808fa6caa112", null ],

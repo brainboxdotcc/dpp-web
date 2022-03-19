@@ -9,7 +9,6 @@ var classdpp_1_1voicestate =
     [ "is_self_deaf", "classdpp_1_1voicestate.html#ac52f6bca0bf8feb50fc7c3ab9cdc57db", null ],
     [ "is_self_mute", "classdpp_1_1voicestate.html#a1ade333534ab9fe0cb18485269ced203", null ],
     [ "is_suppressed", "classdpp_1_1voicestate.html#a631921c8fd04d5b3c1989218b48ef4d3", null ],
-    [ "parse_from_json", "classdpp_1_1voicestate.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "self_stream", "classdpp_1_1voicestate.html#a5b0fa82d1d55249aeb96fd7119aac5c2", null ],
     [ "self_video", "classdpp_1_1voicestate.html#a6d2114f152b6170f039c096f8a200219", null ],
     [ "channel_id", "classdpp_1_1voicestate.html#a0ea73d3fd39463142c315005321e28f5", null ],

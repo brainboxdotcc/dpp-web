@@ -29,7 +29,6 @@ var classdpp_1_1user =
     [ "is_verified", "classdpp_1_1user.html#aa08cdd77402ef1d08b003e2e5342004a", null ],
     [ "is_verified_bot", "classdpp_1_1user.html#a9aabc6989097e79dc8e3e8d00d7a0c5f", null ],
     [ "is_verified_bot_dev", "classdpp_1_1user.html#abe54bbcf190f3aba2aeaf8c2d6287152", null ],
-    [ "parse_from_json", "classdpp_1_1user.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "avatar", "classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3", null ],
     [ "discriminator", "classdpp_1_1user.html#afe658cc2d4adcf83a76f798dead3e5e6", null ],
     [ "flags", "classdpp_1_1user.html#aab86456a191f214b38277cf65bb6af05", null ],

@@ -10,7 +10,6 @@ var classdpp_1_1integration =
     [ "is_enabled", "classdpp_1_1integration.html#aa326f15ba2eea7d29f9ab20945d1b56d", null ],
     [ "is_revoked", "classdpp_1_1integration.html#a71170ae6931ae33969ae9352be724778", null ],
     [ "is_syncing", "classdpp_1_1integration.html#a32fff1ec90aea8ce08d481c0f0957ebb", null ],
-    [ "parse_from_json", "classdpp_1_1integration.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "account_id", "classdpp_1_1integration.html#a94925ef08b5ab6fabc0ce318091cc9c3", null ],
     [ "account_name", "classdpp_1_1integration.html#a9f7392cfbcf7f9db2c4d0d4f4631909b", null ],
     [ "app", "classdpp_1_1integration.html#ab3283de104da19b3371cf86adecc4ebb", null ],

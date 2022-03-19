@@ -8,8 +8,6 @@ var structdpp_1_1interaction__modal__response =
     [ "add_row", "structdpp_1_1interaction__modal__response.html#a64e2352d62d7e4a54f3171d5e3024830", null ],
     [ "build_json", "structdpp_1_1interaction__modal__response.html#addfc4eea981f4cacbdb27b1872738796", null ],
     [ "fill_from_json", "structdpp_1_1interaction__modal__response.html#a992131d8ba15dd8ef96f35179ed2c1f9", null ],
-    [ "parse_from_json", "structdpp_1_1interaction__modal__response.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
-    [ "parse_from_json", "structdpp_1_1interaction__modal__response.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "set_custom_id", "structdpp_1_1interaction__modal__response.html#a4eafdde2472ba66f54455dedea51e95a", null ],
     [ "set_title", "structdpp_1_1interaction__modal__response.html#af95e00ba604fec0833bc27e363e43235", null ],
     [ "autocomplete_choices", "structdpp_1_1interaction__modal__response.html#abb21d304dedf4a9bef3e221d115209e1", null ],

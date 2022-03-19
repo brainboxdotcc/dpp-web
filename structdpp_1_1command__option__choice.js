@@ -5,7 +5,6 @@ var structdpp_1_1command__option__choice =
     [ "command_option_choice", "structdpp_1_1command__option__choice.html#a2bb4415c9d27246156e8cc368d131767", null ],
     [ "build_json", "structdpp_1_1command__option__choice.html#a287c22f692ee3d25b6f9b320ff35baa1", null ],
     [ "fill_from_json", "structdpp_1_1command__option__choice.html#a7e1d8587e1bf8dc8053213c49d51405e", null ],
-    [ "parse_from_json", "structdpp_1_1command__option__choice.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "name", "structdpp_1_1command__option__choice.html#a6e4ceb9707c454d74d25a49dbcdb25ee", null ],
     [ "value", "structdpp_1_1command__option__choice.html#a70021160d60b6403a353b302d97123ff", null ]
 ];

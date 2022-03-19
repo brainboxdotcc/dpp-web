@@ -5,7 +5,6 @@ var classdpp_1_1application =
     [ "build_json", "classdpp_1_1application.html#a287c22f692ee3d25b6f9b320ff35baa1", null ],
     [ "fill_from_json", "classdpp_1_1application.html#ad1fe25fde3ada9b7392c70f715a0e50d", null ],
     [ "get_creation_time", "classdpp_1_1application.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
-    [ "parse_from_json", "classdpp_1_1application.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "bot_public", "classdpp_1_1application.html#a1724baabe72d957d04b0a30bc4604d8b", null ],
     [ "bot_require_code_grant", "classdpp_1_1application.html#a9942dd58f1ca9da0839f0a295612290c", null ],
     [ "cover_image", "classdpp_1_1application.html#a564b1a926e6890cb59db5130c5b3ac5d", null ],

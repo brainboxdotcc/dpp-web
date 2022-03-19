@@ -7,7 +7,6 @@ var structdpp_1_1interaction__response =
     [ "add_autocomplete_choice", "structdpp_1_1interaction__response.html#aba47b23a0d825ab443c0f91711a94c9a", null ],
     [ "build_json", "structdpp_1_1interaction__response.html#a0e490809679ea6f609af3a232599f88f", null ],
     [ "fill_from_json", "structdpp_1_1interaction__response.html#ac7d7ddd127b1510ddfd2cb4a543699bb", null ],
-    [ "parse_from_json", "structdpp_1_1interaction__response.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "autocomplete_choices", "structdpp_1_1interaction__response.html#abb21d304dedf4a9bef3e221d115209e1", null ],
     [ "msg", "structdpp_1_1interaction__response.html#afa292ebb598e2ecbb1d8eb089f415493", null ],
     [ "type", "structdpp_1_1interaction__response.html#a7c06a118113d431b3725b70e12d92f19", null ]

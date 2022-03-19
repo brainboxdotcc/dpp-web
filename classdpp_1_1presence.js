@@ -8,7 +8,6 @@ var classdpp_1_1presence =
     [ "desktop_status", "classdpp_1_1presence.html#a63177953eddc1a1425721110a6469042", null ],
     [ "fill_from_json", "classdpp_1_1presence.html#ad074f1ca4904e9a109d1fd0cb7f096a9", null ],
     [ "mobile_status", "classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607", null ],
-    [ "parse_from_json", "classdpp_1_1presence.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "status", "classdpp_1_1presence.html#a3b1a81ea3d14f7507923ba37fa8e4961", null ],
     [ "web_status", "classdpp_1_1presence.html#a48277b458604de43ab9c4af7bbc3733d", null ],
     [ "activities", "classdpp_1_1presence.html#af59a01dbafdb477ec9adfc2a9b667f2d", null ],

@@ -7,7 +7,6 @@ var classdpp_1_1component =
     [ "add_select_option", "classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243", null ],
     [ "build_json", "classdpp_1_1component.html#a287c22f692ee3d25b6f9b320ff35baa1", null ],
     [ "fill_from_json", "classdpp_1_1component.html#a993d0a0c899aca38b3f12161484a9f13", null ],
-    [ "parse_from_json", "classdpp_1_1component.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "set_disabled", "classdpp_1_1component.html#a48a2ab72eaf6e58073a1f5dc936877a3", null ],
     [ "set_emoji", "classdpp_1_1component.html#a4fa1319e5119a258e3a80e028a4dff3c", null ],
     [ "set_id", "classdpp_1_1component.html#a1bf3798669b015711df5d2621ff92d73", null ],

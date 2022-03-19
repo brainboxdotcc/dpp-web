@@ -54,7 +54,6 @@ var classdpp_1_1role =
     [ "is_managed", "classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9", null ],
     [ "is_mentionable", "classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f", null ],
     [ "load_image", "classdpp_1_1role.html#a6d46d3e4a1b8e166f4a26da58bf119dc", null ],
-    [ "parse_from_json", "classdpp_1_1role.html#a2c9a2c965fd68714e9f8d163d4ea8d91", null ],
     [ "set_bot_id", "classdpp_1_1role.html#a50e37b69fd90533aae8d998c0dba3054", null ],
     [ "set_color", "classdpp_1_1role.html#acdf6e9513f3dffca42499ed9dcc255a9", null ],
     [ "set_colour", "classdpp_1_1role.html#ad5add725167aa1be8c43ec167ce14d4f", null ],
