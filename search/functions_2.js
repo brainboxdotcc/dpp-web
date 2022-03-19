@@ -68,7 +68,7 @@ var searchData=
   ['current_5fuser_5fconnections_5fget_65',['current_user_connections_get',['../classdpp_1_1cluster.html#a75e1e5dd813d36fffd6b532ed1b31178',1,'dpp::cluster']]],
   ['current_5fuser_5fconnections_5fget_5fsync_66',['current_user_connections_get_sync',['../classdpp_1_1cluster.html#a665a81f6488e96e4b9687cb41677407d',1,'dpp::cluster']]],
   ['current_5fuser_5fedit_67',['current_user_edit',['../classdpp_1_1cluster.html#a114d7930f0a219ef974143b65134a2f8',1,'dpp::cluster']]],
-  ['current_5fuser_5fedit_5fsync_68',['current_user_edit_sync',['../classdpp_1_1cluster.html#ab523e2b46f099658f320c1a027a63735',1,'dpp::cluster']]],
+  ['current_5fuser_5fedit_5fsync_68',['current_user_edit_sync',['../classdpp_1_1cluster.html#a5d353fda82f221d6b50c0382b81af2f7',1,'dpp::cluster']]],
   ['current_5fuser_5fget_69',['current_user_get',['../classdpp_1_1cluster.html#aad927e85ed6b99e9b05f4190f1b19cae',1,'dpp::cluster']]],
   ['current_5fuser_5fget_5fdms_70',['current_user_get_dms',['../classdpp_1_1cluster.html#a662fc0a998c62395f166da5e4a2acaf3',1,'dpp::cluster']]],
   ['current_5fuser_5fget_5fdms_5fsync_71',['current_user_get_dms_sync',['../classdpp_1_1cluster.html#a129f52484acb39470f73e22508104910',1,'dpp::cluster']]],
@@ -82,5 +82,5 @@ var searchData=
   ['current_5fuser_5fleave_5fthread_79',['current_user_leave_thread',['../classdpp_1_1cluster.html#a3a313be1a4fd6bde99606047761c4518',1,'dpp::cluster']]],
   ['current_5fuser_5fleave_5fthread_5fsync_80',['current_user_leave_thread_sync',['../classdpp_1_1cluster.html#acb305d660acf37bbccab5da34bb170b5',1,'dpp::cluster']]],
   ['current_5fuser_5fset_5fvoice_5fstate_81',['current_user_set_voice_state',['../classdpp_1_1cluster.html#ad611ecc2a6231c4bc100e74c1f28ee75',1,'dpp::cluster']]],
-  ['current_5fuser_5fset_5fvoice_5fstate_5fsync_82',['current_user_set_voice_state_sync',['../classdpp_1_1cluster.html#a519010bef221e57fb52915a060fe428d',1,'dpp::cluster']]]
+  ['current_5fuser_5fset_5fvoice_5fstate_5fsync_82',['current_user_set_voice_state_sync',['../classdpp_1_1cluster.html#af805ea7278c91a0e1d79b032f62548c6',1,'dpp::cluster']]]
 ];
