@@ -115,12 +115,7 @@ $(document).ready(function(){initNavTree('webhooks.html',''); initResizable(); }
 <div class="line">    <a class="code hl_class" href="classdpp_1_1webhook.html">dpp::webhook</a> wh(<span class="stringliteral">&quot;https://discord.com/api/webhooks/833047646548133537/ntCHEYYIoHSLy_GOxPx6pmM0sUoLbP101ct-WI6F-S4beAV2vaIcl_Id5loAMyQwxqhE&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* send a message with this webhook */</span></div>
-<div class="line">    bot.execute_webhook(wh, <a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(<span class="stringliteral">&quot;Have a great time here :smile:&quot;</span>));</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">/* Note: This is just to give the library time to deliver the webhook before it shuts down.</span></div>
-<div class="line"><span class="comment">     * You don&#39;t need this if this code is part of some other program.</span></div>
-<div class="line"><span class="comment">     */</span></div>
-<div class="line">    sleep(2);</div>
+<div class="line">    bot.execute_webhook_sync(wh, <a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(<span class="stringliteral">&quot;Have a great time here :smile:&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
