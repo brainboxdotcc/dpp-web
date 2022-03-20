@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="webhooks" kind="page">
+    <compoundname>webhooks</compoundname>
+    <title>Webhooks</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Webhooks are a simple way to post messages from other apps and websites into Discord. They allow getting automated messages and data updates sent to a text channel in your server. <ulink url="https://support.discord.com/hc/en-us/articles/228383668">Read more</ulink> in this article about Webhooks.</para>
+<para>The following code shows how to send messages in a channel using a webhook.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>normally,<sp/>you<sp/>put<sp/>your<sp/>bot<sp/>token<sp/>in<sp/>here.<sp/>But<sp/>to<sp/>just<sp/>run<sp/>a<sp/>webhook<sp/>its<sp/>not<sp/>required</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>construct<sp/>a<sp/>webhook<sp/>object<sp/>using<sp/>the<sp/>URL<sp/>you<sp/>got<sp/>from<sp/>Discord<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1webhook" kindref="compound">dpp::webhook</ref><sp/>wh(</highlight><highlight class="stringliteral">&quot;https://discord.com/api/webhooks/833047646548133537/ntCHEYYIoHSLy_GOxPx6pmM0sUoLbP101ct-WI6F-S4beAV2vaIcl_Id5loAMyQwxqhE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>send<sp/>a<sp/>message<sp/>with<sp/>this<sp/>webhook<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.execute_webhook(wh,<sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(</highlight><highlight class="stringliteral">&quot;Have<sp/>a<sp/>great<sp/>time<sp/>here<sp/>:smile:&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Note:<sp/>This<sp/>is<sp/>just<sp/>to<sp/>give<sp/>the<sp/>library<sp/>time<sp/>to<sp/>deliver<sp/>the<sp/>webhook<sp/>before<sp/>it<sp/>shuts<sp/>down.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>You<sp/>don&apos;t<sp/>need<sp/>this<sp/>if<sp/>this<sp/>code<sp/>is<sp/>part<sp/>of<sp/>some<sp/>other<sp/>program.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sleep(2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>The above is just a very simple example. You can also send embed messages. All you have to do is to add an embed to the message you want to send. If you want to, you can also send it into a thread. </para>
+    </detaileddescription>
+    <location file="docpages/03_example_programs.md"/>
+  </compounddef>
+</doxygen>
