@@ -16,6 +16,7 @@ var classdpp_1_1component =
     [ "set_min_length", "classdpp_1_1component.html#aa23287b8b438eb808b2106c50421235b", null ],
     [ "set_min_values", "classdpp_1_1component.html#a39de811904ed62eb0fa2d37be2918503", null ],
     [ "set_placeholder", "classdpp_1_1component.html#ae364c7cfdbf5422444a53b6d9789f772", null ],
+    [ "set_required", "classdpp_1_1component.html#ad75a96f7fb63cc2721a605e7d61cc477", null ],
     [ "set_style", "classdpp_1_1component.html#a19213be82f2cd18748f669e53e1348a8", null ],
     [ "set_text_style", "classdpp_1_1component.html#a4d2cd2b2c6169c31b4b3e41ce8698afe", null ],
     [ "set_type", "classdpp_1_1component.html#a281e39d6b8c65b1fd301d195a835e703", null ],

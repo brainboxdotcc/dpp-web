@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"structdpp_1_1activity__assets.html#a72e8ce0c8aa2157b8eb003f7e6df08fd":[6,0,1,3,2],
+"structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[7,0,1,3,0],
 "structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[6,0,1,3,0],
 "structdpp_1_1activity__button.html":[7,0,1,4],
 "structdpp_1_1activity__button.html":[6,0,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "structdpp_1_1channel__pins__update__t.html#a39a68c81854f61285159cef7f80c3cbd":[7,0,1,26,4],
 "structdpp_1_1channel__pins__update__t.html#a3adefc9d11d8264cb7a23201fdfb8690":[7,0,1,26,5],
 "structdpp_1_1channel__pins__update__t.html#a3adefc9d11d8264cb7a23201fdfb8690":[6,0,1,26,5],
-"structdpp_1_1channel__pins__update__t.html#a5afbcd36109734ad0fca14ec848b73b7":[7,0,1,26,1],
-"structdpp_1_1channel__pins__update__t.html#a5afbcd36109734ad0fca14ec848b73b7":[6,0,1,26,1],
-"structdpp_1_1channel__pins__update__t.html#a91754873add345d5d4b3e12110394e23":[7,0,1,26,0]
+"structdpp_1_1channel__pins__update__t.html#a5afbcd36109734ad0fca14ec848b73b7":[7,0,1,26,1]
 };

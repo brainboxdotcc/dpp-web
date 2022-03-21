@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"structdpp_1_1guild__update__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,91,2],
+"structdpp_1_1http__connect__info.html":[7,0,1,93],
 "structdpp_1_1http__connect__info.html":[6,0,1,93],
 "structdpp_1_1http__connect__info.html#a42d6c8a9a3402f4c454572bf5915d8d3":[7,0,1,93,0],
 "structdpp_1_1http__connect__info.html#a42d6c8a9a3402f4c454572bf5915d8d3":[6,0,1,93,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "structdpp_1_1message.html":[6,0,1,115],
 "structdpp_1_1message.html#a029932133e0a6aea2afdea5f2d98146e":[6,0,1,115,52],
 "structdpp_1_1message.html#a029932133e0a6aea2afdea5f2d98146e":[7,0,1,115,52],
-"structdpp_1_1message.html#a03ce860de6231985a823f8ce2dd2dd8d":[7,0,1,115,16],
-"structdpp_1_1message.html#a03ce860de6231985a823f8ce2dd2dd8d":[6,0,1,115,16],
-"structdpp_1_1message.html#a0e71afdc706c7ae83934ddfd8c2ffc38":[6,0,1,115,7]
+"structdpp_1_1message.html#a03ce860de6231985a823f8ce2dd2dd8d":[7,0,1,115,16]
 };
