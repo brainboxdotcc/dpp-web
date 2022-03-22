@@ -6,6 +6,8 @@ var structdpp_1_1stage__instance =
     [ "fill_from_json", "structdpp_1_1stage__instance.html#aa0f2f5070d37d060856eeb78ee06254b", null ],
     [ "fill_from_json", "structdpp_1_1stage__instance.html#ab47175b6c586e2fc901b1ff0182f16ea", null ],
     [ "get_creation_time", "structdpp_1_1stage__instance.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
+    [ "operator!=", "structdpp_1_1stage__instance.html#a9f086ed62419d373646e5d0e63667fd5", null ],
+    [ "operator==", "structdpp_1_1stage__instance.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
     [ "channel_id", "structdpp_1_1stage__instance.html#a21bda7ddd059504607abca421e747c94", null ],
     [ "discoverable_disabled", "structdpp_1_1stage__instance.html#aae76dc45493e1430bfdd6473d773de1f", null ],
     [ "guild_id", "structdpp_1_1stage__instance.html#ac78c5c60945f082d1b42ba3c81b43217", null ],

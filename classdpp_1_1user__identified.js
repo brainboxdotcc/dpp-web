@@ -30,6 +30,8 @@ var classdpp_1_1user__identified =
     [ "is_verified", "classdpp_1_1user__identified.html#aa08cdd77402ef1d08b003e2e5342004a", null ],
     [ "is_verified_bot", "classdpp_1_1user__identified.html#a9aabc6989097e79dc8e3e8d00d7a0c5f", null ],
     [ "is_verified_bot_dev", "classdpp_1_1user__identified.html#abe54bbcf190f3aba2aeaf8c2d6287152", null ],
+    [ "operator!=", "classdpp_1_1user__identified.html#a9f086ed62419d373646e5d0e63667fd5", null ],
+    [ "operator==", "classdpp_1_1user__identified.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
     [ "accent_color", "classdpp_1_1user__identified.html#a6cdebbe04c3a6a52a7148a21eea0613c", null ],
     [ "avatar", "classdpp_1_1user__identified.html#ae9d90b269f17fc2c5a0021dcb2b8dce3", null ],
     [ "banner", "classdpp_1_1user__identified.html#a5b1955e6f623db547bcebccd8da5b1a0", null ],

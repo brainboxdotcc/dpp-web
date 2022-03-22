@@ -39,6 +39,8 @@ var classdpp_1_1guild =
     [ "is_unavailable", "classdpp_1_1guild.html#ab7b956f6c07d48e1184cb4b6c727af21", null ],
     [ "is_verified", "classdpp_1_1guild.html#af79641512c0342d3082174afa2e636e8", null ],
     [ "is_welcome_screen_enabled", "classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e", null ],
+    [ "operator!=", "classdpp_1_1guild.html#a9f086ed62419d373646e5d0e63667fd5", null ],
+    [ "operator==", "classdpp_1_1guild.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
     [ "permission_overwrites", "classdpp_1_1guild.html#af9f1c71e0d491f2b34079888cadc9dcf", null ],
     [ "rehash_members", "classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac", null ],
     [ "set_name", "classdpp_1_1guild.html#a2aa137d0bad0143fc22c0e9b45df2540", null ],

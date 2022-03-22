@@ -22,6 +22,8 @@ var structdpp_1_1message =
     [ "is_loading", "structdpp_1_1message.html#a25d4b0fbfcc698a74fa4f2b71796e874", null ],
     [ "is_source_message_deleted", "structdpp_1_1message.html#a0f22f044046ebc8bdc7d35e950baca25", null ],
     [ "is_urgent", "structdpp_1_1message.html#ad164b78c5ee2dc8a8237d1ec7a0d863f", null ],
+    [ "operator!=", "structdpp_1_1message.html#a9f086ed62419d373646e5d0e63667fd5", null ],
+    [ "operator==", "structdpp_1_1message.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
     [ "set_allowed_mentions", "structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913", null ],
     [ "set_content", "structdpp_1_1message.html#a18a1ebb4b981a0ef46f78f147aa12b66", null ],
     [ "set_file_content", "structdpp_1_1message.html#a7063a512a6e7f078e2a81bad077dfcde", null ],

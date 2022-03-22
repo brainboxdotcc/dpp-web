@@ -1482,6 +1482,70 @@
         </inbodydescription>
         <location file="include/dpp/managed.h" line="55" column="8" bodyfile="src/dpp/discordevents.cpp" bodystart="48" bodyend="50"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::managed::operator==</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are not the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="64" column="6" bodyfile="src/dpp/managed.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="73" column="6" bodyfile="src/dpp/managed.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Represents a role within a <ref refid="classdpp_1_1guild" kindref="compound">dpp::guild</ref>. Roles are combined via logical OR of the permission bitmasks, then channel-specific overrides can be applied on top, deny types apply a logic NOT to the bit mask, and allows apply a logical OR. </para>
@@ -1654,6 +1718,8 @@
       <member refid="classdpp_1_1role_1a6d46d3e4a1b8e166f4a26da58bf119dc" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>load_image</name></member>
       <member refid="classdpp_1_1managed_1a30e9c7c9cef4cd42487f0be61aa616d0" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>managed</name></member>
       <member refid="classdpp_1_1role_1a6451e41576902faa14d0394d47d19934" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>name</name></member>
+      <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator!=</name></member>
+      <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator==</name></member>
       <member refid="classdpp_1_1role_1ad1d79b737f5e7d2cc71238068fc36ad4" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>permissions</name></member>
       <member refid="classdpp_1_1role_1a08996823fc9ba1eb8c95b1e2e855d958" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>position</name></member>
       <member refid="classdpp_1_1role_1aa23013a7a7d7c03c4ef44d6e6fc02baa" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>role</name></member>

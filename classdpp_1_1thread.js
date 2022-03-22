@@ -27,6 +27,8 @@ var classdpp_1_1thread =
     [ "is_video_720p", "classdpp_1_1thread.html#a311501db36692f1753254e1bf618e75d", null ],
     [ "is_video_auto", "classdpp_1_1thread.html#afb783f82a86a5ed6f247aaa213164854", null ],
     [ "is_voice_channel", "classdpp_1_1thread.html#a8ee69208f9cf16c18f2ceb460ada1916", null ],
+    [ "operator!=", "classdpp_1_1thread.html#a9f086ed62419d373646e5d0e63667fd5", null ],
+    [ "operator==", "classdpp_1_1thread.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
     [ "remove_flag", "classdpp_1_1thread.html#a20f076ea45f524f1673137d1b7817f6f", null ],
     [ "set_bitrate", "classdpp_1_1thread.html#ab6bc88cdee70038c6544c7f44a4584be", null ],
     [ "set_flags", "classdpp_1_1thread.html#a6cfbf057e2f2d3b5b2ee9b2f43d03288", null ],

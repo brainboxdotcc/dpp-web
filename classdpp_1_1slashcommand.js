@@ -9,6 +9,8 @@ var classdpp_1_1slashcommand =
     [ "disable_default_permissions", "classdpp_1_1slashcommand.html#af5e01640cbf5f00e74e7dd724e43d6f0", null ],
     [ "fill_from_json", "classdpp_1_1slashcommand.html#a2295a43bd5defc3a87afa5f0cc0c36af", null ],
     [ "get_creation_time", "classdpp_1_1slashcommand.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
+    [ "operator!=", "classdpp_1_1slashcommand.html#a9f086ed62419d373646e5d0e63667fd5", null ],
+    [ "operator==", "classdpp_1_1slashcommand.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
     [ "set_application_id", "classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92", null ],
     [ "set_description", "classdpp_1_1slashcommand.html#a50fc02275a4dcba70a5dacb4ecbd2085", null ],
     [ "set_name", "classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353", null ],

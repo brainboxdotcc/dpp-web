@@ -200,6 +200,8 @@ var classdpp_1_1cluster =
     [ "guild_member_delete_role", "classdpp_1_1cluster.html#a98e8223a62f31bb716c326ff59f67576", null ],
     [ "guild_member_delete_role_sync", "classdpp_1_1cluster.html#aa2e1667b47f46137b0abf1a994821da8", null ],
     [ "guild_member_delete_sync", "classdpp_1_1cluster.html#aa8221744be81a0696a8124467e6145a8", null ],
+    [ "guild_member_kick", "classdpp_1_1cluster.html#aeb67fdcb9cbc1c4fd468128da132efec", null ],
+    [ "guild_member_kick_sync", "classdpp_1_1cluster.html#a082717ec550e631d69f7842532717118", null ],
     [ "guild_member_move", "classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03", null ],
     [ "guild_member_move_sync", "classdpp_1_1cluster.html#abf8cf09e2e52018299f14f71ca1da5c0", null ],
     [ "guild_modify_integration", "classdpp_1_1cluster.html#a0cc29438d9f4a8a42e5f5d44ce44c6db", null ],
