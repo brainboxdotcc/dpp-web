@@ -1,5 +1,9 @@
 var NAVTREEINDEX14 =
 {
+"classweekday.html#abc92ed6b1ab0a8ff6aae9df37ea3598a":[7,0,30,2],
+"classyear__month__day.html":[7,0,31],
+"clusters-shards-guilds.html":[4,0],
+"clusters-shards-guilds.html#autotoc_md56":[4,0,0],
 "clusters-shards-guilds.html#autotoc_md57":[4,0,1],
 "clusters-shards-guilds.html#autotoc_md58":[4,0,2],
 "coding-standards.html":[4,2],
@@ -64,15 +68,15 @@ var NAVTREEINDEX14 =
 "frequently-asked-questions.html#autotoc_md97":[0,7,0,10],
 "frequently-asked-questions.html#autotoc_md98":[0,7,0,11],
 "frequently-asked-questions.html#autotoc_md99":[0,7,0,12],
-"functions.html":[7,3,0],
 "functions.html":[7,3,0,0],
+"functions.html":[7,3,0],
 "functions_b.html":[7,3,0,1],
 "functions_c.html":[7,3,0,2],
 "functions_d.html":[7,3,0,3],
 "functions_e.html":[7,3,0,4],
 "functions_f.html":[7,3,0,5],
-"functions_func.html":[7,3,1,0],
 "functions_func.html":[7,3,1],
+"functions_func.html":[7,3,1,0],
 "functions_func_b.html":[7,3,1,1],
 "functions_func_c.html":[7,3,1,2],
 "functions_func_d.html":[7,3,1,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX14 =
 "namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17":[6,0,1,316],
 "namespacedpp.html#a1c4073c92e19579c06591033a4a234e1":[6,0,1,245],
 "namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca":[6,0,1,248],
-"namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2":[6,0,1,250],
-"namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72":[6,0,1,250,5],
-"namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918":[6,0,1,250,1],
-"namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a41a48506f1fde615713f676016525d9b":[6,0,1,250,3],
-"namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701":[6,0,1,250,0]
+"namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2":[6,0,1,250]
 };

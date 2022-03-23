@@ -29,6 +29,7 @@ var classdpp_1_1channel =
     [ "remove_flag", "classdpp_1_1channel.html#a20f076ea45f524f1673137d1b7817f6f", null ],
     [ "set_bitrate", "classdpp_1_1channel.html#ab6bc88cdee70038c6544c7f44a4584be", null ],
     [ "set_flags", "classdpp_1_1channel.html#a6cfbf057e2f2d3b5b2ee9b2f43d03288", null ],
+    [ "set_guild_id", "classdpp_1_1channel.html#aa823c3a070bc37d70be28bd9b49820c5", null ],
     [ "set_name", "classdpp_1_1channel.html#a304e19817c6bf0e363daf497a3011f3a", null ],
     [ "set_nsfw", "classdpp_1_1channel.html#a602852256a543a6901aa5c87520aeb63", null ],
     [ "set_parent_id", "classdpp_1_1channel.html#a8b5cd8634b4c8873be389b3d747615d7", null ],
