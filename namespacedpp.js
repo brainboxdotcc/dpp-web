@@ -242,7 +242,7 @@ var namespacedpp =
     [ "thread_map", "namespacedpp.html#afb8eae726b5ea68baff8c48d7fb835af", null ],
     [ "thread_member_map", "namespacedpp.html#a57e84724c41fed341bee0d653a06076a", null ],
     [ "timer", "namespacedpp.html#a8b9ab0b8cf29978147a7df3947cd8f30", null ],
-    [ "timer_callback_t", "namespacedpp.html#a13d8465c3c643fdd87405fd115cd4964", null ],
+    [ "timer_callback_t", "namespacedpp.html#ad4658c417b9af90d3021253375580a61", null ],
     [ "timer_next_t", "namespacedpp.html#a408d79969007e9c450e186f5387df9e5", null ],
     [ "timer_reg_t", "namespacedpp.html#a81b406b8f9f9fa3da4b61fd006f13455", null ],
     [ "user_map", "namespacedpp.html#a1c4073c92e19579c06591033a4a234e1", null ],
