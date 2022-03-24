@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"classweekday.html#a8984aa58bf28e7955439ec67b742af8a":[7,0,30,1],
+"classweekday.html#a8d2218e729de0343e7bbaf436ea19220":[7,0,30,0],
 "classweekday.html#abc92ed6b1ab0a8ff6aae9df37ea3598a":[7,0,30,2],
 "classyear__month__day.html":[7,0,31],
 "clusters-shards-guilds.html":[4,0],
@@ -75,8 +77,8 @@ var NAVTREEINDEX14 =
 "functions_d.html":[7,3,0,3],
 "functions_e.html":[7,3,0,4],
 "functions_f.html":[7,3,0,5],
-"functions_func.html":[7,3,1],
 "functions_func.html":[7,3,1,0],
+"functions_func.html":[7,3,1],
 "functions_func_b.html":[7,3,1,1],
 "functions_func_c.html":[7,3,1,2],
 "functions_func_d.html":[7,3,1,3],
@@ -116,8 +118,8 @@ var NAVTREEINDEX14 =
 "functions_type.html":[7,3,3],
 "functions_u.html":[7,3,0,20],
 "functions_v.html":[7,3,0,21],
-"functions_vars.html":[7,3,2],
 "functions_vars.html":[7,3,2,0],
+"functions_vars.html":[7,3,2],
 "functions_vars_b.html":[7,3,2,1],
 "functions_vars_c.html":[7,3,2,2],
 "functions_vars_d.html":[7,3,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "namespacedpp.html#a1b146099de6ccbd7135ffba167aee39d":[6,0,1,321],
 "namespacedpp.html#a1b35f3248b32394ac9ecc8bbca668156":[6,0,1,196],
 "namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17":[6,0,1,316],
-"namespacedpp.html#a1c4073c92e19579c06591033a4a234e1":[6,0,1,245],
-"namespacedpp.html#a1cb0cc074a1653521bab47f83498e9ca":[6,0,1,248],
-"namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2":[6,0,1,250]
+"namespacedpp.html#a1c4073c92e19579c06591033a4a234e1":[6,0,1,245]
 };

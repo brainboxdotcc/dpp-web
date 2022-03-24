@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a8525587f75b2826d6a327a0a5b97a905":[6,0,1,262,22],
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a94655693c447cbe3350e03794e657147":[6,0,1,262,24],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a98358f51ddecfaca60dbe919a0dccfcf":[6,0,1,262,3],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aa4499dd74f76d02b7df9e036329ea05d":[6,0,1,262,19],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aa6d31eaec30ab5b342e7ea8bf0b02965":[6,0,1,262,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "structchrono__formatter.html#a2e610d61a4c3b717a99db1c55925bb64":[7,0,4,46],
 "structchrono__formatter.html#a308ae3404387de6c573e3a21588a22ec":[7,0,4,29],
 "structchrono__formatter.html#a44b0403d855f7902f0d9c1a1e9fbbec0":[7,0,4,14],
-"structchrono__formatter.html#a4ad0112ca9a084be9242d7481e3a4a00":[7,0,4,20],
-"structchrono__formatter.html#a4c08d0bec5d2e1dcf1c11d4f3382d2c3":[7,0,4,12],
-"structchrono__formatter.html#a5086b5fc5d58220ea7122150d18369df":[7,0,4,59]
+"structchrono__formatter.html#a4ad0112ca9a084be9242d7481e3a4a00":[7,0,4,20]
 };
