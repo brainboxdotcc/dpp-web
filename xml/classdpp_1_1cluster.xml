@@ -5957,7 +5957,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2197" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="115" bodyend="131"/>
+        <location file="include/dpp/cluster.h" line="2197" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="114" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6b24baba4de9d38f7d9a7cea2f71a545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6200,7 +6200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2259" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="103" bodyend="112"/>
+        <location file="include/dpp/cluster.h" line="2259" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="102" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4a8074b289fee0f43d7eafb2bc6ae5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6397,13 +6397,71 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2305" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="98" bodyend="100"/>
+        <location file="include/dpp/cluster.h" line="2305" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="97" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a40788ea66fddce18336fb53ff8a2a6b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::cluster::guild_member_delete</definition>
         <argsstring>(snowflake guild_id, snowflake user_id, command_completion_event_t callback=utility::log_error())</argsstring>
         <name>guild_member_delete</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>user_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+          <defval><ref refid="namespacedpp_1_1utility_1ad9fa7eaac8be5f51f52fcb5e53734910" kindref="member">utility::log_error</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Remove (kick) a guild member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a member from a guild. Requires <computeroutput>KICK_MEMBERS</computeroutput> permission. Fires a <computeroutput>Guild Member Remove</computeroutput> Gateway event. <simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#remove-guild-member">https://discord.com/developers/docs/resources/guild#remove-guild-member</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>This method supports audit log reasons set by the <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason()</ref> method. </para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000005"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by <ref refid="classdpp_1_1cluster_1a8d4b8738bf9ba45254582ce16d14e22d" kindref="member">dpp::cluster::guild_member_kick</ref> </para>
+</xrefdescription></xrefsect><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild ID to kick member from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User ID to kick </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="2320" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a8d4b8738bf9ba45254582ce16d14e22d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::guild_member_kick</definition>
+        <argsstring>(snowflake guild_id, snowflake user_id, command_completion_event_t callback=utility::log_error())</argsstring>
+        <name>guild_member_kick</name>
         <param>
           <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
           <declname>guild_id</declname>
@@ -6454,77 +6512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2319" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="75" bodyend="77"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1aeb67fdcb9cbc1c4fd468128da132efec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::cluster::guild_member_kick</definition>
-        <argsstring>(snowflake guild_id, snowflake user_id, const std::string &amp;reason=&quot;&quot;, command_completion_event_t callback=utility::log_error())</argsstring>
-        <name>guild_member_kick</name>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>guild_id</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>user_id</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>reason</declname>
-          <defval>&quot;&quot;</defval>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
-          <declname>callback</declname>
-          <defval><ref refid="namespacedpp_1_1utility_1ad9fa7eaac8be5f51f52fcb5e53734910" kindref="member">utility::log_error</ref>()</defval>
-        </param>
-        <briefdescription>
-<para>Remove (kick) a guild member with a reason. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Remove a member from a guild. Requires <computeroutput>KICK_MEMBERS</computeroutput> permission. Fires a <computeroutput>Guild Member Remove</computeroutput> Gateway event. <simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#remove-guild-member">https://discord.com/developers/docs/resources/guild#remove-guild-member</ulink> </para>
-</simplesect>
-<simplesect kind="note"><para>This method supports audit log reasons set by the <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason()</ref> method. </para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>guild_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Guild ID to kick member from </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>user_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>User ID to kick </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>reason</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Reason for kick </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>callback</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Function to call when the API call completes. On success the callback will contain a <ref refid="structdpp_1_1confirmation" kindref="compound">dpp::confirmation</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2334" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="80" bodyend="83"/>
+        <location file="include/dpp/cluster.h" line="2334" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="80" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9afda69f8c99365001ec349f8dc70388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6593,7 +6581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2348" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="86" bodyend="95"/>
+        <location file="include/dpp/cluster.h" line="2348" column="6" bodyfile="src/dpp/cluster/guild_member.cpp" bodystart="85" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abe40949503797960f2e899cdc3a4c228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14279,7 +14267,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Modifies the nickname of the current user in a guild. Fires a <computeroutput>Guild Member Update</computeroutput> Gateway event.</para>
-<para><xrefsect id="deprecated_1_deprecated000005"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated in favor of Modify Current Member. Will be replaced by <ref refid="classdpp_1_1cluster_1ab55ebdf053917a35368be4d86237af33" kindref="member">dpp::cluster::guild_current_member_edit</ref> </para>
+<para><xrefsect id="deprecated_1_deprecated000006"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Deprecated in favor of Modify Current Member. Will be replaced by <ref refid="classdpp_1_1cluster_1ab55ebdf053917a35368be4d86237af33" kindref="member">dpp::cluster::guild_current_member_edit</ref> </para>
 </xrefdescription></xrefsect><simplesect kind="note"><para>This method supports audit log reasons set by the <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason()</ref> method. </para>
 </simplesect>
 <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a4a8074b289fee0f43d7eafb2bc6ae5c7" kindref="member">dpp::cluster::guild_set_nickname</ref> </para>
@@ -14709,7 +14697,8 @@
 </simplesect>
 <simplesect kind="note"><para>This method supports audit log reasons set by the <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason()</ref> method. </para>
 </simplesect>
-<parameterlist kind="param"><parameteritem>
+<xrefsect id="deprecated_1_deprecated000007"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by <ref refid="classdpp_1_1cluster_1a8d4b8738bf9ba45254582ce16d14e22d" kindref="member">dpp::cluster::guild_member_kick</ref> </para>
+</xrefdescription></xrefsect><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>guild_id</parametername>
 </parameternamelist>
@@ -14743,12 +14732,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1080" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1080" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1081" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1081" declcolumn="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1a082717ec550e631d69f7842532717118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a20d3638fb222bd91aa9c2ad460b30b29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
         <definition>confirmation guild_member_kick_sync</definition>
-        <argsstring>(snowflake guild_id, snowflake user_id, const std::string &amp;reason=&quot;&quot;)</argsstring>
+        <argsstring>(snowflake guild_id, snowflake user_id)</argsstring>
         <name>guild_member_kick_sync</name>
         <param>
           <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -14758,16 +14747,11 @@
           <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
           <declname>user_id</declname>
         </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>reason</declname>
-          <defval>&quot;&quot;</defval>
-        </param>
         <briefdescription>
-<para>Remove (kick) a guild member with a reason. </para>
+<para>Remove (kick) a guild member. </para>
         </briefdescription>
         <detaileddescription>
-<para>Remove a member from a guild. Requires <computeroutput>KICK_MEMBERS</computeroutput> permission. Fires a <computeroutput>Guild Member Remove</computeroutput> Gateway event. <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1aeb67fdcb9cbc1c4fd468128da132efec" kindref="member">dpp::cluster::guild_member_kick</ref> </para>
+<para>Remove a member from a guild. Requires <computeroutput>KICK_MEMBERS</computeroutput> permission. Fires a <computeroutput>Guild Member Remove</computeroutput> Gateway event. <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a8d4b8738bf9ba45254582ce16d14e22d" kindref="member">dpp::cluster::guild_member_kick</ref> </para>
 </simplesect>
 <simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#remove-guild-member">https://discord.com/developers/docs/resources/guild#remove-guild-member</ulink> </para>
 </simplesect>
@@ -14787,14 +14771,6 @@
 </parameternamelist>
 <parameterdescription>
 <para>User ID to kick </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>reason</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Reason for kick </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -19443,8 +19419,8 @@
       <member refid="classdpp_1_1cluster_1a98e8223a62f31bb716c326ff59f67576" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_delete_role</name></member>
       <member refid="classdpp_1_1cluster_1aa2e1667b47f46137b0abf1a994821da8" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_delete_role_sync</name></member>
       <member refid="classdpp_1_1cluster_1aa8221744be81a0696a8124467e6145a8" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_delete_sync</name></member>
-      <member refid="classdpp_1_1cluster_1aeb67fdcb9cbc1c4fd468128da132efec" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_kick</name></member>
-      <member refid="classdpp_1_1cluster_1a082717ec550e631d69f7842532717118" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_kick_sync</name></member>
+      <member refid="classdpp_1_1cluster_1a8d4b8738bf9ba45254582ce16d14e22d" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_kick</name></member>
+      <member refid="classdpp_1_1cluster_1a20d3638fb222bd91aa9c2ad460b30b29" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_kick_sync</name></member>
       <member refid="classdpp_1_1cluster_1ac673fb500731954ad50e90de70b2fd03" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_move</name></member>
       <member refid="classdpp_1_1cluster_1abf8cf09e2e52018299f14f71ca1da5c0" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_move_sync</name></member>
       <member refid="classdpp_1_1cluster_1a9afda69f8c99365001ec349f8dc70388" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_timeout</name></member>
