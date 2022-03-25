@@ -873,6 +873,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a082717ec550e631d69f7842532717118"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a082717ec550e631d69f7842532717118">guild_member_kick_sync</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, const std::string &amp;reason=&quot;&quot;)</td></tr>
 <tr class="memdesc:a082717ec550e631d69f7842532717118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove (kick) a guild member with a reason.  <a href="classdpp_1_1cluster.html#a082717ec550e631d69f7842532717118">More...</a><br /></td></tr>
 <tr class="separator:a082717ec550e631d69f7842532717118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ce81e0f2204d4217ac284a9163b8a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a22ce81e0f2204d4217ac284a9163b8a2">guild_member_timeout_sync</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, time_t communication_disabled_until)</td></tr>
+<tr class="memdesc:a22ce81e0f2204d4217ac284a9163b8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout of a guild member.  <a href="classdpp_1_1cluster.html#a22ce81e0f2204d4217ac284a9163b8a2">More...</a><br /></td></tr>
+<tr class="separator:a22ce81e0f2204d4217ac284a9163b8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2e1667b47f46137b0abf1a994821da8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa2e1667b47f46137b0abf1a994821da8">guild_member_delete_role_sync</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> role_id)</td></tr>
 <tr class="memdesc:aa2e1667b47f46137b0abf1a994821da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove role from guild member.  <a href="classdpp_1_1cluster.html#aa2e1667b47f46137b0abf1a994821da8">More...</a><br /></td></tr>
 <tr class="separator:aa2e1667b47f46137b0abf1a994821da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7490,7 +7493,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Edit the properties of an existing guild member. </p>
-<p >Modify attributes of a guild member. Returns the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a>. Fires a <code>Guild Member Update Gateway</code> event. If the <code>channel_id</code> is set to 0, this will force the target user to be disconnected from voice. To remove a timeout, set the <code>communication_disabled_until</code> to a non-zero time in the past, e.g. 1. When moving members to channels, the API user must have permissions to both connect to the channel and have the <code>MOVE_MEMBERS</code> permission. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#ad793626d2733715381c3c5c440f31bd0" title="Edit the properties of an existing guild member.">dpp::cluster::guild_edit_member</a> </dd>
+<p >Modify attributes of a guild member. Returns the <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a>. Fires a <code>Guild Member Update</code> Gateway event. If the <code>channel_id</code> is set to 0, this will force the target user to be disconnected from voice. To remove a timeout, set the <code>communication_disabled_until</code> to a non-zero time in the past, e.g. 1. When moving members to channels, the API user must have permissions to both connect to the channel and have the <code>MOVE_MEMBERS</code> permission. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#ad793626d2733715381c3c5c440f31bd0" title="Edit the properties of an existing guild member.">dpp::cluster::guild_edit_member</a> </dd>
 <dd>
 <a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
@@ -9587,7 +9590,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add role to guild member. </p>
-<p >Adds a role to a guild member. Requires the <code>MANAGE_ROLES</code> permission. Fires a Guild Member Update Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#aeffb7f4f32ca342886a79692ed8fb416" title="Add role to guild member.">dpp::cluster::guild_member_add_role</a> </dd>
+<p >Adds a role to a guild member. Requires the <code>MANAGE_ROLES</code> permission. Fires a <code>Guild Member Update</code> Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#aeffb7f4f32ca342886a79692ed8fb416" title="Add role to guild member.">dpp::cluster::guild_member_add_role</a> </dd>
 <dd>
 <a href="https://discord.com/developers/docs/resources/guild#add-guild-member-role">https://discord.com/developers/docs/resources/guild#add-guild-member-role</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
@@ -10011,6 +10014,9 @@ This method supports audit log reasons set by the <a class="el" href="classdpp_1
 </div><div class="memdoc">
 
 <p>Moves the guild member to a other voice channel, if member is connected to one. </p>
+<p >Fires a <code>Guild Member Update</code> Gateway event. </p><dl class="section note"><dt>Note</dt><dd>When moving members to channels, the API user <b>must</b> have permissions to both connect to the channel and have the <code>MOVE_MEMBERS</code> permission. </dd>
+<dd>
+This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03" title="Moves the guild member to a other voice channel, if member is connected to one.">dpp::cluster::guild_member_move</a> </dd>
 <dd>
 <a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
@@ -10083,6 +10089,62 @@ This method supports audit log reasons set by the <a class="el" href="classdpp_1
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a22ce81e0f2204d4217ac284a9163b8a2" name="a22ce81e0f2204d4217ac284a9163b8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ce81e0f2204d4217ac284a9163b8a2">&#9670;&nbsp;</a></span>guild_member_timeout_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a> guild_member_timeout_sync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>communication_disabled_until</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the timeout of a guild member. </p>
+<p >Fires a <code>Guild Member Update</code> Gateway event. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#a9afda69f8c99365001ec349f8dc70388" title="Set the timeout of a guild member.">dpp::cluster::guild_member_timeout</a> </dd>
+<dd>
+<a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild ID to timeout the member in </td></tr>
+    <tr><td class="paramname">user_id</td><td>User ID to set the timeout for </td></tr>
+    <tr><td class="paramname">communication_disabled_until</td><td>The timestamp when the user's timeout will expire (up to 28 days in the future). Set to 0 to remove the timeout </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>confirmation returned object on completion</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1rest__exception.html" title="Represents an error on a REST API call, e.g. a HTTPS request.">dpp::rest_exception</a></td><td>upon failure to execute REST function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </dd></dl>
 
 </div>
 </div>
