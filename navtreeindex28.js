@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"structnull__chrono__spec__handler.html#ac06ed05e250d1122c0211712106544fd":[7,0,22,22],
+"structnull__chrono__spec__handler.html#ac1f6437c8b4acf48d3b6c46ac9d7b8e9":[7,0,22,15],
 "structnull__chrono__spec__handler.html#acfd849ee10727a6d494706e4b994e7a3":[7,0,22,7],
 "structnull__chrono__spec__handler.html#ad0d51aee9bd0e96b83ca44d609f51c22":[7,0,22,3],
 "structnull__chrono__spec__handler.html#ad81f884a693cc4d0140c886f25774082":[7,0,22,35],
@@ -60,6 +62,6 @@ var NAVTREEINDEX28 =
 "uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[6,0,1,169,1],
 "uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[7,0,1,169,1],
 "unit-tests.html":[4,3],
-"unit-tests.html#autotoc_md77":[4,3,0],
+"unit-tests.html#autotoc_md78":[4,3,0],
 "webhooks.html":[3,20]
 };

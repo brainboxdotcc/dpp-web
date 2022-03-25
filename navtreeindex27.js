@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structdpp_1_1utility_1_1uptime.html#adf60583f58dfe5cff52196b44c29f012":[6,0,1,1,1,9],
+"structdpp_1_1utility_1_1uptime.html#aff6d3ddd12cb12ebaed33231a2cfff3a":[6,0,1,1,1,3],
 "structdpp_1_1utility_1_1uptime.html#aff6d3ddd12cb12ebaed33231a2cfff3a":[7,0,1,1,1,3],
 "structdpp_1_1voice__buffer__send__t.html":[6,0,1,174],
 "structdpp_1_1voice__buffer__send__t.html":[7,0,1,174],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "structnull__chrono__spec__handler.html#aa6c25945b057dc858e71e9c4c5a843c5":[7,0,22,36],
 "structnull__chrono__spec__handler.html#aae2080b92bbc4101e6e2985c0af26279":[7,0,22,18],
 "structnull__chrono__spec__handler.html#aaf8943eaeeedc59172da99904d3f4853":[7,0,22,1],
-"structnull__chrono__spec__handler.html#ab8cac801545d557c8f185990320627a9":[7,0,22,26],
-"structnull__chrono__spec__handler.html#ac06ed05e250d1122c0211712106544fd":[7,0,22,22],
-"structnull__chrono__spec__handler.html#ac1f6437c8b4acf48d3b6c46ac9d7b8e9":[7,0,22,15]
+"structnull__chrono__spec__handler.html#ab8cac801545d557c8f185990320627a9":[7,0,22,26]
 };

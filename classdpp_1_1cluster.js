@@ -204,6 +204,7 @@ var classdpp_1_1cluster =
     [ "guild_member_kick_sync", "classdpp_1_1cluster.html#a082717ec550e631d69f7842532717118", null ],
     [ "guild_member_move", "classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03", null ],
     [ "guild_member_move_sync", "classdpp_1_1cluster.html#abf8cf09e2e52018299f14f71ca1da5c0", null ],
+    [ "guild_member_timeout", "classdpp_1_1cluster.html#a9afda69f8c99365001ec349f8dc70388", null ],
     [ "guild_modify_integration", "classdpp_1_1cluster.html#a0cc29438d9f4a8a42e5f5d44ce44c6db", null ],
     [ "guild_modify_integration_sync", "classdpp_1_1cluster.html#a88210140e34d8a771b95298179542a1d", null ],
     [ "guild_search_members", "classdpp_1_1cluster.html#a52cc92ce052d063854e0372539e4d9ee", null ],
