@@ -74,7 +74,7 @@ var searchData=
   ['permissions_71',['permissions',['../classdpp_1_1guild__command__permissions.html#adcd2d742e57c1645c51d206ddc4c350c',1,'dpp::guild_command_permissions::permissions()'],['../classdpp_1_1slashcommand.html#a63b80f4596de1e0906a5fc5d4bf5d4f0',1,'dpp::slashcommand::permissions()'],['../classdpp_1_1team__member.html#ab16e82943eb9dc4a2d314a25afff6402',1,'dpp::team_member::permissions()'],['../classdpp_1_1channel.html#ab04ddf442a472f1c0d9c1f50846348f8',1,'dpp::channel::permissions()'],['../classdpp_1_1role.html#ad1d79b737f5e7d2cc71238068fc36ad4',1,'dpp::role::permissions()']]],
   ['pin_5fchannel_72',['pin_channel',['../structdpp_1_1channel__pins__update__t.html#a39a68c81854f61285159cef7f80c3cbd',1,'dpp::channel_pins_update_t']]],
   ['pin_5fguild_73',['pin_guild',['../structdpp_1_1channel__pins__update__t.html#a3adefc9d11d8264cb7a23201fdfb8690',1,'dpp::channel_pins_update_t']]],
-  ['pink_74',['pink',['../namespacedpp_1_1colors.html#a494dae002b2a2b9119db8d72fb7314b5',1,'dpp::colors']]],
+  ['pink_74',['pink',['../namespacedpp_1_1colors.html#a9d03a54c266046d19fc3f6cb6f3a17dc',1,'dpp::colors']]],
   ['pinned_75',['pinned',['../structdpp_1_1message.html#a029932133e0a6aea2afdea5f2d98146e',1,'dpp::message']]],
   ['placeholder_76',['placeholder',['../classdpp_1_1component.html#a4fe9d95b2fd61a38269c3368db4c17ce',1,'dpp::component']]],
   ['plaintext_77',['plaintext',['../classdpp_1_1ssl__client.html#aa735feca3545e156e0607c06d55288c4',1,'dpp::ssl_client']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['tags_0',['tags',['../structdpp_1_1sticker.html#af0b92651f3d428ec8db4858133e826cd',1,'dpp::sticker']]],
-  ['tahiti_5fgold_1',['tahiti_gold',['../namespacedpp_1_1colors.html#a6b2c757320d61da031c61ceac7b9e0af',1,'dpp::colors']]],
+  ['tahiti_5fgold_1',['tahiti_gold',['../namespacedpp_1_1colors.html#adade2a4711583cd660a883f8e3b07143',1,'dpp::colors']]],
   ['talking_5fflags_2',['talking_flags',['../structdpp_1_1voice__user__talking__t.html#a9d52fb0412548166b6e54d81bdb8980b',1,'dpp::voice_user_talking_t']]],
   ['target_5fid_3',['target_id',['../structdpp_1_1audit__entry.html#a0b6fcc890dfd0e55e68c39d2f88d268b',1,'dpp::audit_entry::target_id()'],['../structdpp_1_1command__interaction.html#ad2d15a9d27143f74556eb34ddb2bf6ce',1,'dpp::command_interaction::target_id()']]],
   ['target_5fuser_5fid_4',['target_user_id',['../classdpp_1_1invite.html#ad9a3073a99b276032dce0e850b21a955',1,'dpp::invite']]],
