@@ -36,6 +36,7 @@ var namespacedpp =
       [ "red", "namespacedpp_1_1colors.html#afc7eaf251deb378cab526fee30720aaf", null ],
       [ "ruby", "namespacedpp_1_1colors.html#a92769a183510d727effe8d5f40f7b452", null ],
       [ "rust", "namespacedpp_1_1colors.html#a7c272c20f8ac469da51085778e540954", null ],
+      [ "scarlet_red", "namespacedpp_1_1colors.html#ad626454a3e015e944211c178761c0999", null ],
       [ "sea_green", "namespacedpp_1_1colors.html#a7fdb61376324888fddd7c973ecd1a1d3", null ],
       [ "sti_blue", "namespacedpp_1_1colors.html#a95f9ab31b0ec9110a6bab038a6a26756", null ],
       [ "submarine", "namespacedpp_1_1colors.html#aaa53dd1fba6c05dd1caaeac11b29b33e", null ],
