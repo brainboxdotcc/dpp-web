@@ -280,6 +280,9 @@ var hierarchy =
     [ "dpp::json_interface< role >", "structdpp_1_1json__interface.html", [
       [ "dpp::role", "classdpp_1_1role.html", null ]
     ] ],
+    [ "dpp::json_interface< select_option >", "structdpp_1_1json__interface.html", [
+      [ "dpp::select_option", "structdpp_1_1select__option.html", null ]
+    ] ],
     [ "dpp::json_interface< slashcommand >", "structdpp_1_1json__interface.html", [
       [ "dpp::slashcommand", "classdpp_1_1slashcommand.html", null ]
     ] ],
@@ -353,7 +356,6 @@ var hierarchy =
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
-    [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [

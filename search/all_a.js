@@ -28,13 +28,14 @@ var searchData=
   ['json_5finterface_3c_20presence_20_3e_25',['json_interface&lt; presence &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
   ['json_5finterface_3c_20prune_20_3e_26',['json_interface&lt; prune &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
   ['json_5finterface_3c_20role_20_3e_27',['json_interface&lt; role &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20slashcommand_20_3e_28',['json_interface&lt; slashcommand &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20stage_5finstance_20_3e_29',['json_interface&lt; stage_instance &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20sticker_20_3e_30',['json_interface&lt; sticker &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20sticker_5fpack_20_3e_31',['json_interface&lt; sticker_pack &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20user_20_3e_32',['json_interface&lt; user &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20user_5fidentified_20_3e_33',['json_interface&lt; user_identified &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20voiceregion_20_3e_34',['json_interface&lt; voiceregion &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20voicestate_20_3e_35',['json_interface&lt; voicestate &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
-  ['json_5finterface_3c_20webhook_20_3e_36',['json_interface&lt; webhook &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]]
+  ['json_5finterface_3c_20select_5foption_20_3e_28',['json_interface&lt; select_option &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20slashcommand_20_3e_29',['json_interface&lt; slashcommand &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20stage_5finstance_20_3e_30',['json_interface&lt; stage_instance &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20sticker_20_3e_31',['json_interface&lt; sticker &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20sticker_5fpack_20_3e_32',['json_interface&lt; sticker_pack &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20user_20_3e_33',['json_interface&lt; user &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20user_5fidentified_20_3e_34',['json_interface&lt; user_identified &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20voiceregion_20_3e_35',['json_interface&lt; voiceregion &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20voicestate_20_3e_36',['json_interface&lt; voicestate &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]],
+  ['json_5finterface_3c_20webhook_20_3e_37',['json_interface&lt; webhook &gt;',['../structdpp_1_1json__interface.html',1,'dpp']]]
 ];
