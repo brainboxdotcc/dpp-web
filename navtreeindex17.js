@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4a5576e1fa114561afa0c4b55be4ffcf":[6,0,1,263,6],
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd":[6,0,1,263,4],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4fecf0dff32cfdfcd7e50c63ee7f0948":[6,0,1,263,5],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a54033a22a349ecba43ec1f4cbb34013c":[6,0,1,263,26],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a573ee2bc05bae14a777128f2cca5bc0d":[6,0,1,263,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "spdlog.html":[3,7],
 "stream-mp3-discord-bot.html":[3,4],
 "struct_opus_decoder.html":[7,0,23],
-"struct_opus_encoder.html":[7,0,24],
-"struct_opus_repacketizer.html":[7,0,25],
-"structchrono__format__checker.html":[7,0,3]
+"struct_opus_encoder.html":[7,0,24]
 };
