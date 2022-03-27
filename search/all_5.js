@@ -4,7 +4,7 @@ var searchData=
   ['e_5favailable_1',['e_available',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d',1,'dpp']]],
   ['e_5fmanaged_2',['e_managed',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947caa8e9ef37a91a1bbe4012548a0fd3bd82',1,'dpp']]],
   ['e_5frequire_5fcolons_3',['e_require_colons',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb',1,'dpp']]],
-  ['edit_5fresponse_4',['edit_response',['../structdpp_1_1interaction__create__t.html#a7201727cb2e7a6d327c7f778d335b6bd',1,'dpp::interaction_create_t::edit_response(const std::string &amp;mt, command_completion_event_t callback={}) const'],['../structdpp_1_1interaction__create__t.html#ace8c437a0c0e95590c9e59830743a1d2',1,'dpp::interaction_create_t::edit_response(const message &amp;m, command_completion_event_t callback={}) const']]],
+  ['edit_5fresponse_4',['edit_response',['../structdpp_1_1interaction__create__t.html#aa65d3bc92cad7ef094e90ca05ba45859',1,'dpp::interaction_create_t::edit_response(const std::string &amp;mt, command_completion_event_t callback=utility::log_error()) const'],['../structdpp_1_1interaction__create__t.html#a274aaa562766588128c2e3699b515b41',1,'dpp::interaction_create_t::edit_response(const message &amp;m, command_completion_event_t callback=utility::log_error()) const']]],
   ['edit_5fwebhook_5',['edit_webhook',['../classdpp_1_1cluster.html#ad5039e83f20e5c321b78b319fe7608c0',1,'dpp::cluster']]],
   ['edit_5fwebhook_5fmessage_6',['edit_webhook_message',['../classdpp_1_1cluster.html#a9aad7db0efb749f14c9ffd9b2292b7d6',1,'dpp::cluster']]],
   ['edit_5fwebhook_5fmessage_5fsync_7',['edit_webhook_message_sync',['../classdpp_1_1cluster.html#a42e9d5875c6994bfdbec2bf3371b602d',1,'dpp::cluster']]],

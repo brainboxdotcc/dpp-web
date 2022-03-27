@@ -1,7 +1,7 @@
 var searchData=
 [
   ['debug_5fdump_0',['debug_dump',['../namespacedpp_1_1utility.html#a02456e22a1d41893a9b321bf8ccaeec6',1,'dpp::utility']]],
-  ['delete_5foriginal_5fresponse_1',['delete_original_response',['../structdpp_1_1interaction__create__t.html#ad5812c293c176f38988509d7dc8d3f8e',1,'dpp::interaction_create_t']]],
+  ['delete_5foriginal_5fresponse_1',['delete_original_response',['../structdpp_1_1interaction__create__t.html#a97f51e9e5a742c071244bbb60445c5c5',1,'dpp::interaction_create_t']]],
   ['delete_5fwebhook_2',['delete_webhook',['../classdpp_1_1cluster.html#aa2f345c51a6a933a29e2e86d50d6a20e',1,'dpp::cluster']]],
   ['delete_5fwebhook_5fmessage_3',['delete_webhook_message',['../classdpp_1_1cluster.html#abc7a868c350ca4c2b5222bba88144e31',1,'dpp::cluster']]],
   ['delete_5fwebhook_5fmessage_5fsync_4',['delete_webhook_message_sync',['../classdpp_1_1cluster.html#a8f5a8ccbcccc00dad67aed13283a996c',1,'dpp::cluster']]],
@@ -10,7 +10,7 @@ var searchData=
   ['delete_5fwebhook_5fwith_5ftoken_5fsync_7',['delete_webhook_with_token_sync',['../classdpp_1_1cluster.html#a171ed6000c31d17fee89633219cd5c0e',1,'dpp::cluster']]],
   ['desktop_5fstatus_8',['desktop_status',['../classdpp_1_1presence.html#a63177953eddc1a1425721110a6469042',1,'dpp::presence']]],
   ['detach_9',['detach',['../classdpp_1_1event__router__t.html#a6cb1a37fce0778d18db0104b2e61b9f4',1,'dpp::event_router_t']]],
-  ['dialog_10',['dialog',['../structdpp_1_1interaction__create__t.html#a441c95afa84bb0bd08cba59ae4a41035',1,'dpp::interaction_create_t']]],
+  ['dialog_10',['dialog',['../structdpp_1_1interaction__create__t.html#a63076b1d3b1fc2e1c3f97384f1fe8b4b',1,'dpp::interaction_create_t']]],
   ['direct_5fmessage_5fcreate_11',['direct_message_create',['../classdpp_1_1cluster.html#aa88bbdcc5005da82928497545e9455bc',1,'dpp::cluster']]],
   ['direct_5fmessage_5fcreate_5fsync_12',['direct_message_create_sync',['../classdpp_1_1cluster.html#a26bd2938ab89082fca3637b59a83d0c4',1,'dpp::cluster']]],
   ['disable_5fdefault_5fpermissions_13',['disable_default_permissions',['../classdpp_1_1slashcommand.html#af5e01640cbf5f00e74e7dd724e43d6f0',1,'dpp::slashcommand']]],
