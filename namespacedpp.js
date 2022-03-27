@@ -530,6 +530,9 @@ var namespacedpp =
       [ "g_ticketed_events", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa5fce362e803c63fe1ef9ebb2b06bb5a8", null ],
       [ "g_channel_banners", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa35aa6bdeb78a4e8c80b4896c6fde3965", null ]
     ] ],
+    [ "guild_flags_extra", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e", [
+      [ "g_premium_progress_bar_enabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e", null ]
+    ] ],
     [ "guild_member_flags", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30", [
       [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
       [ "gm_mute", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f", null ],

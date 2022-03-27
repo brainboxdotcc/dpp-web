@@ -1,5 +1,11 @@
 var NAVTREEINDEX22 =
 {
+"structdpp_1_1guild__role__delete__t.html#a5cc18df82815b4439b95b2c621e058ce":[7,0,1,83,0],
+"structdpp_1_1guild__role__delete__t.html#a5cc18df82815b4439b95b2c621e058ce":[6,0,1,84,0],
+"structdpp_1_1guild__role__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,1,83,2],
+"structdpp_1_1guild__role__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,84,2],
+"structdpp_1_1guild__role__delete__t.html#ad935f5cb6e5fd57a2e92564679dd74b9":[7,0,1,83,4],
+"structdpp_1_1guild__role__delete__t.html#ad935f5cb6e5fd57a2e92564679dd74b9":[6,0,1,84,4],
 "structdpp_1_1guild__role__update__t.html":[7,0,1,84],
 "structdpp_1_1guild__role__update__t.html":[6,0,1,85],
 "structdpp_1_1guild__role__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,84,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX22 =
 "structdpp_1_1interaction__create__t.html#ababdebb3624fad0d632912dfcd4b38f5":[7,0,1,103,11],
 "structdpp_1_1interaction__create__t.html#ababdebb3624fad0d632912dfcd4b38f5":[6,0,1,104,11],
 "structdpp_1_1interaction__create__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,1,103,9],
-"structdpp_1_1interaction__create__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,104,9],
-"structdpp_1_1interaction__create__t.html#ace8c437a0c0e95590c9e59830743a1d2":[7,0,1,103,5],
-"structdpp_1_1interaction__create__t.html#ace8c437a0c0e95590c9e59830743a1d2":[6,0,1,104,5],
-"structdpp_1_1interaction__create__t.html#ad106ea02219af2a9bc35519f3bde6b36":[6,0,1,104,7],
-"structdpp_1_1interaction__create__t.html#ad106ea02219af2a9bc35519f3bde6b36":[7,0,1,103,7],
-"structdpp_1_1interaction__create__t.html#ad5812c293c176f38988509d7dc8d3f8e":[7,0,1,103,3],
-"structdpp_1_1interaction__create__t.html#ad5812c293c176f38988509d7dc8d3f8e":[6,0,1,104,3]
+"structdpp_1_1interaction__create__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,104,9]
 };

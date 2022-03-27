@@ -1,5 +1,11 @@
 var NAVTREEINDEX18 =
 {
+"slashcommands.html":[3,1],
+"soundboard.html":[3,2],
+"spdlog.html":[3,7],
+"stream-mp3-discord-bot.html":[3,4],
+"struct_opus_decoder.html":[7,0,23],
+"struct_opus_encoder.html":[7,0,24],
 "struct_opus_repacketizer.html":[7,0,25],
 "structchrono__format__checker.html":[7,0,3],
 "structchrono__format__checker.html#a0014d1a6d4551fb9cb10dda3592fcae5":[7,0,3,8],
@@ -243,11 +249,5 @@ var NAVTREEINDEX18 =
 "structdpp_1_1autocomplete__t.html#a441c95afa84bb0bd08cba59ae4a41035":[6,0,1,16,3],
 "structdpp_1_1autocomplete__t.html#a441c95afa84bb0bd08cba59ae4a41035":[7,0,1,15,3],
 "structdpp_1_1autocomplete__t.html#a5afbcd36109734ad0fca14ec848b73b7":[7,0,1,15,1],
-"structdpp_1_1autocomplete__t.html#a5afbcd36109734ad0fca14ec848b73b7":[6,0,1,16,1],
-"structdpp_1_1autocomplete__t.html#a7201727cb2e7a6d327c7f778d335b6bd":[6,0,1,16,5],
-"structdpp_1_1autocomplete__t.html#a7201727cb2e7a6d327c7f778d335b6bd":[7,0,1,15,5],
-"structdpp_1_1autocomplete__t.html#a897fc83f54829f32c2041b43fd2cebaa":[6,0,1,16,11],
-"structdpp_1_1autocomplete__t.html#a897fc83f54829f32c2041b43fd2cebaa":[7,0,1,15,11],
-"structdpp_1_1autocomplete__t.html#a8b0c69c156a1e532507a918c13414f14":[6,0,1,16,14],
-"structdpp_1_1autocomplete__t.html#a8b0c69c156a1e532507a918c13414f14":[7,0,1,15,14]
+"structdpp_1_1autocomplete__t.html#a5afbcd36109734ad0fca14ec848b73b7":[6,0,1,16,1]
 };
