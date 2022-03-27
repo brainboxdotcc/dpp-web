@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structdpp_1_1typing__start__t.html#a806b74ba396ab577fb3b4268b169c9ad":[6,0,1,171,0],
+"structdpp_1_1typing__start__t.html#a806b74ba396ab577fb3b4268b169c9ad":[7,0,1,170,0],
 "structdpp_1_1typing__start__t.html#a9bd3028990dec19b65e046d918074676":[6,0,1,171,5],
 "structdpp_1_1typing__start__t.html#a9bd3028990dec19b65e046d918074676":[7,0,1,170,5],
 "structdpp_1_1typing__start__t.html#a9faffa3da5cb3907651ad92613a11a35":[7,0,1,170,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "structdpp_1_1welcome__screen__t.html#a494492d571a01542f4d73d488da2a01a":[7,0,1,192,0],
 "structdpp_1_1welcome__screen__t.html#a494492d571a01542f4d73d488da2a01a":[6,0,1,193,0],
 "structdpp_1_1welcome__screen__t.html#a637749ede2ba06e14052e21d5be26355":[7,0,1,192,1],
-"structdpp_1_1welcome__screen__t.html#a637749ede2ba06e14052e21d5be26355":[6,0,1,193,1],
-"structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html":[7,0,5],
-"structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a61336eae6a6e84dc63a367da3aaf91e8":[7,0,5,1]
+"structdpp_1_1welcome__screen__t.html#a637749ede2ba06e14052e21d5be26355":[6,0,1,193,1]
 };

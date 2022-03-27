@@ -406,6 +406,7 @@ var classdpp_1_1cluster =
     [ "on_voice_user_talking", "classdpp_1_1cluster.html#aec3fff428675781140071d95f06f1694", null ],
     [ "on_webhooks_update", "classdpp_1_1cluster.html#a45a46efdbb7a7b952bb113f8400ea110", null ],
     [ "rest_ping", "classdpp_1_1cluster.html#a6161f8d412b2e81a06594f727684a260", null ],
+    [ "terminating", "classdpp_1_1cluster.html#a43e11def2111a4fc38db65d4d0b104e6", null ],
     [ "token", "classdpp_1_1cluster.html#a644b186bc4b386a8313e3c5dce456c4e", null ],
     [ "ws_mode", "classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551", null ]
 ];

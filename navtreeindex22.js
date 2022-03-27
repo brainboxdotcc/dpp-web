@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"structdpp_1_1guild__role__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,84,4],
+"structdpp_1_1guild__role__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,85,4],
 "structdpp_1_1guild__role__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,1,84,3],
 "structdpp_1_1guild__role__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,1,85,3],
 "structdpp_1_1guild__role__update__t.html#a5afbcd36109734ad0fca14ec848b73b7":[7,0,1,84,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "structdpp_1_1interaction__create__t.html#ad5812c293c176f38988509d7dc8d3f8e":[7,0,1,103,3],
 "structdpp_1_1interaction__create__t.html#ad5812c293c176f38988509d7dc8d3f8e":[6,0,1,104,3],
 "structdpp_1_1interaction__create__t.html#af8a6206ac490ce5f3cf9a02c11fccccf":[6,0,1,104,14],
-"structdpp_1_1interaction__create__t.html#af8a6206ac490ce5f3cf9a02c11fccccf":[7,0,1,103,14],
-"structdpp_1_1interaction__modal__response.html":[6,0,1,105],
-"structdpp_1_1interaction__modal__response.html":[7,0,1,104]
+"structdpp_1_1interaction__create__t.html#af8a6206ac490ce5f3cf9a02c11fccccf":[7,0,1,103,14]
 };
