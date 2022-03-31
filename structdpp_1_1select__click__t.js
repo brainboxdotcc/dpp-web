@@ -2,8 +2,9 @@ var structdpp_1_1select__click__t =
 [
     [ "select_click_t", "structdpp_1_1select__click__t.html#adb17761e9ee06c77ae9daf0313c63913", null ],
     [ "cancel_event", "structdpp_1_1select__click__t.html#a5afbcd36109734ad0fca14ec848b73b7", null ],
-    [ "delete_original_response", "structdpp_1_1select__click__t.html#a97f51e9e5a742c071244bbb60445c5c5", null ],
+    [ "delete_original_response", "structdpp_1_1select__click__t.html#a42a7aada4ad321e9d8e3645b8b4abc97", null ],
     [ "dialog", "structdpp_1_1select__click__t.html#a63076b1d3b1fc2e1c3f97384f1fe8b4b", null ],
+    [ "edit_original_response", "structdpp_1_1select__click__t.html#a10553ebb8d10ba58595f825e0a89eb1b", null ],
     [ "edit_response", "structdpp_1_1select__click__t.html#a274aaa562766588128c2e3699b515b41", null ],
     [ "edit_response", "structdpp_1_1select__click__t.html#aa65d3bc92cad7ef094e90ca05ba45859", null ],
     [ "get_original_response", "structdpp_1_1select__click__t.html#ad106ea02219af2a9bc35519f3bde6b36", null ],
