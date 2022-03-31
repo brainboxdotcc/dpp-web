@@ -5807,7 +5807,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2167" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="86" bodyend="88"/>
+        <location file="include/dpp/cluster.h" line="2167" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="91" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3ecd82c6169107c9c944356f19abba9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5849,7 +5849,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2179" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="96" bodyend="98"/>
+        <location file="include/dpp/cluster.h" line="2179" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="101" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a99e8227f11ef33cd2d9cc3abef46adfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6273,7 +6273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2280" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="125" bodyend="128"/>
+        <location file="include/dpp/cluster.h" line="2280" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="130" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aeffb7f4f32ca342886a79692ed8fb416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6735,14 +6735,26 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="2383" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="47" bodyend="49"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1af9fffa4f080e0b5abab1417fa8eb1b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1ac7fe3385e506ea073076bc4fb57f06c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::cluster::guild_get_bans</definition>
-        <argsstring>(snowflake guild_id, command_completion_event_t callback)</argsstring>
+        <argsstring>(snowflake guild_id, snowflake before, snowflake after, snowflake limit, command_completion_event_t callback)</argsstring>
         <name>guild_get_bans</name>
         <param>
           <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
           <declname>guild_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>before</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>after</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>limit</declname>
         </param>
         <param>
           <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
@@ -6764,6 +6776,30 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
+<parametername>before</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, all bans for user ids before this user id will be returned up to the limit </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>after</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-zero, all bans for user ids after this user id will be returned up to the limit </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of bans to retrieve in this call up to a maximum of 1000 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
 <parametername>callback</parametername>
 </parameternamelist>
 <parameterdescription>
@@ -6775,7 +6811,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2394" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="81" bodyend="83"/>
+        <location file="include/dpp/cluster.h" line="2397" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="81" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad871d30ed11d0799da4a831ede8a7d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6829,7 +6865,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2406" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="76" bodyend="78"/>
+        <location file="include/dpp/cluster.h" line="2409" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="76" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a52366e37144b166c6a2c773e14992b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6871,7 +6907,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2415" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="59" bodyend="61"/>
+        <location file="include/dpp/cluster.h" line="2418" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="59" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3124bdcf2432f3880f78914037f9e87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6928,7 +6964,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2426" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="26" bodyend="29"/>
+        <location file="include/dpp/cluster.h" line="2429" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="26" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1faa321ede15b209c789ea1155a3d356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6970,7 +7006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2436" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="49" bodyend="51"/>
+        <location file="include/dpp/cluster.h" line="2439" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="49" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a38db2ce96431b742e98cabf8170a84d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7036,7 +7072,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2448" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="32" bodyend="35"/>
+        <location file="include/dpp/cluster.h" line="2451" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="32" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af115bd1c7fe12eba1c12d90d5971d10b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7091,7 +7127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2459" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="54" bodyend="56"/>
+        <location file="include/dpp/cluster.h" line="2462" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="54" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5db4327a5ad614adc419db6ff7b7bc17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7170,7 +7206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2472" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="43" bodyend="46"/>
+        <location file="include/dpp/cluster.h" line="2475" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="43" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8527d66d4e1b2996c495d1196c6af718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7225,7 +7261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2483" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="38" bodyend="40"/>
+        <location file="include/dpp/cluster.h" line="2486" column="6" bodyfile="src/dpp/cluster/template.cpp" bodystart="38" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8e7f40eadf7748bcf35f67d152c3462c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7272,7 +7308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2505" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="52" bodyend="54"/>
+        <location file="include/dpp/cluster.h" line="2508" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="52" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a54e2174822bb1796a541f849d568664c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7318,7 +7354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2519" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="66" bodyend="68"/>
+        <location file="include/dpp/cluster.h" line="2522" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="66" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9b0fccd64f8d21340fe20642d9fdb1e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7362,7 +7398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2531" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="57" bodyend="59"/>
+        <location file="include/dpp/cluster.h" line="2534" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="57" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad66ab98a72eb1ba8d2686fcaa1eb49db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7404,7 +7440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2541" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="41" bodyend="43"/>
+        <location file="include/dpp/cluster.h" line="2544" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="41" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ada721a222fb3a42a1a1bb6d93dfcc745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7458,7 +7494,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2552" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="37" bodyend="39"/>
+        <location file="include/dpp/cluster.h" line="2555" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="37" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8bea7e9ba3d487e9a6b2fe747c98e9e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7515,7 +7551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2565" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="25" bodyend="27"/>
+        <location file="include/dpp/cluster.h" line="2568" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="25" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7461e2fa96c4bf77468226ffb25744ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7572,7 +7608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2578" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="33" bodyend="35"/>
+        <location file="include/dpp/cluster.h" line="2581" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="33" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a55b6d9100c34ea5bbbe37d3ba5089be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7629,7 +7665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2590" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="29" bodyend="31"/>
+        <location file="include/dpp/cluster.h" line="2593" column="6" bodyfile="src/dpp/cluster/emoji.cpp" bodystart="29" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aad296f07bd5b9f900dcedbf88c464e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7684,7 +7720,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2606" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="116" bodyend="118"/>
+        <location file="include/dpp/cluster.h" line="2609" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="121" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a68d13c11179006d5271c1a398df58bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7742,7 +7778,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2624" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="120" bodyend="122"/>
+        <location file="include/dpp/cluster.h" line="2627" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="125" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae5556385a69a408a268332f774ba6c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7785,7 +7821,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2638" column="6" bodyfile="src/dpp/cluster/voice.cpp" bodystart="31" bodyend="33"/>
+        <location file="include/dpp/cluster.h" line="2641" column="6" bodyfile="src/dpp/cluster/voice.cpp" bodystart="31" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a93c0e07243611419141305da123c859a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7828,7 +7864,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2650" column="6" bodyfile="src/dpp/cluster/invite.cpp" bodystart="25" bodyend="27"/>
+        <location file="include/dpp/cluster.h" line="2653" column="6" bodyfile="src/dpp/cluster/invite.cpp" bodystart="25" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a43cba3bd187f9b28dcaed5b4f4ed5bda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7871,7 +7907,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2662" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="91" bodyend="93"/>
+        <location file="include/dpp/cluster.h" line="2665" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="96" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0cc29438d9f4a8a42e5f5d44ce44c6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7928,7 +7964,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2674" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="111" bodyend="113"/>
+        <location file="include/dpp/cluster.h" line="2677" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="116" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab4ed64619f058ac4b71a90066e7aac73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7986,7 +8022,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2689" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="62" bodyend="64"/>
+        <location file="include/dpp/cluster.h" line="2692" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="62" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4bef071b931d0ca71b45ee0d8bf3a96c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8041,7 +8077,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2700" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="131" bodyend="133"/>
+        <location file="include/dpp/cluster.h" line="2703" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="136" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a57626c7a0e06aee1c362b986e44030c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8084,7 +8120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2712" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="106" bodyend="108"/>
+        <location file="include/dpp/cluster.h" line="2715" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="111" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae97d98927594cee1821c4ff318eb9561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8142,7 +8178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2726" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="71" bodyend="73"/>
+        <location file="include/dpp/cluster.h" line="2729" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="71" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad1332e45cc89e871009e840c25145df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8184,7 +8220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2737" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="101" bodyend="103"/>
+        <location file="include/dpp/cluster.h" line="2740" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="106" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a634f650e53df2d3535131870985e0313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8229,7 +8265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2747" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="26" bodyend="28"/>
+        <location file="include/dpp/cluster.h" line="2750" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="26" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8d352afcbc0430ca11576386278da7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8271,7 +8307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2756" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="79" bodyend="81"/>
+        <location file="include/dpp/cluster.h" line="2759" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="79" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae58b1f27711b42e9aa8a21e34147429f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8313,7 +8349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2765" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="74" bodyend="76"/>
+        <location file="include/dpp/cluster.h" line="2768" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="74" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a40e140f1e2eda9632828bce461bc7338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8355,7 +8391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2774" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="84" bodyend="86"/>
+        <location file="include/dpp/cluster.h" line="2777" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="84" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a770526895ed13e2dfb746decc3f0be67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8409,7 +8445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2784" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="94" bodyend="96"/>
+        <location file="include/dpp/cluster.h" line="2787" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="94" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad5039e83f20e5c321b78b319fe7608c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8454,7 +8490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2794" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="46" bodyend="48"/>
+        <location file="include/dpp/cluster.h" line="2797" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="46" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a40262f5c4ef4a56fe394e91faf0ac8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8497,7 +8533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2803" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="56" bodyend="62"/>
+        <location file="include/dpp/cluster.h" line="2806" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="56" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa2f345c51a6a933a29e2e86d50d6a20e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8542,7 +8578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2813" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="31" bodyend="33"/>
+        <location file="include/dpp/cluster.h" line="2816" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="31" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4556a4647c5fd1468fe6918a2f637984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8597,7 +8633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2823" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="41" bodyend="43"/>
+        <location file="include/dpp/cluster.h" line="2826" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="41" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af9fbb7174b1dd22e43ee3f4a1db9b63b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8678,7 +8714,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2836" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="65" bodyend="71"/>
+        <location file="include/dpp/cluster.h" line="2839" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="65" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4efa6def2de6ac798f0c7a367d79a6ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8721,7 +8757,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2846" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="89" bodyend="91"/>
+        <location file="include/dpp/cluster.h" line="2849" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="89" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9aad7db0efb749f14c9ffd9b2292b7d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8779,7 +8815,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2863" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="51" bodyend="53"/>
+        <location file="include/dpp/cluster.h" line="2866" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="51" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abc7a868c350ca4c2b5222bba88144e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8834,7 +8870,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2874" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="36" bodyend="38"/>
+        <location file="include/dpp/cluster.h" line="2877" column="6" bodyfile="src/dpp/cluster/webhook.cpp" bodystart="36" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a884dbb70619fcf92b06577dea8093219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8876,7 +8912,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2884" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="49" bodyend="51"/>
+        <location file="include/dpp/cluster.h" line="2887" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="49" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a849017410297379997601daac5e99ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8922,7 +8958,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2898" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="26" bodyend="28"/>
+        <location file="include/dpp/cluster.h" line="2901" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="26" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab6bc6ef9b6f1ef9aa5b9c1391ccedbf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8968,7 +9004,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2911" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="34" bodyend="36"/>
+        <location file="include/dpp/cluster.h" line="2914" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="34" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3549d2ebe52210d7b98adeb766b968b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9026,7 +9062,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2926" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="38" bodyend="47"/>
+        <location file="include/dpp/cluster.h" line="2929" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="38" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6d4cdab9c22eefdeba0d28105c006b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9084,7 +9120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2940" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="30" bodyend="32"/>
+        <location file="include/dpp/cluster.h" line="2943" column="6" bodyfile="src/dpp/cluster/role.cpp" bodystart="30" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a73483dbeb0f1946dc18b1d0a5331b0d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9130,7 +9166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2954" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="90" bodyend="92"/>
+        <location file="include/dpp/cluster.h" line="2957" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="90" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aad927e85ed6b99e9b05f4190f1b19cae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9162,7 +9198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2965" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="50" bodyend="52"/>
+        <location file="include/dpp/cluster.h" line="2968" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="50" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac3dc39069aaaa492727f39b35edd957e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9192,7 +9228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2974" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="46" bodyend="48"/>
+        <location file="include/dpp/cluster.h" line="2977" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="46" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab55ebdf053917a35368be4d86237af33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9250,7 +9286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2989" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="25" bodyend="28"/>
+        <location file="include/dpp/cluster.h" line="2992" column="6" bodyfile="src/dpp/cluster/guild.cpp" bodystart="25" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a75e1e5dd813d36fffd6b532ed1b31178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9280,7 +9316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2999" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="78" bodyend="80"/>
+        <location file="include/dpp/cluster.h" line="3002" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="78" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a93c8fd5f22e0eae6bf357ad498b43f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9310,7 +9346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3007" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="82" bodyend="84"/>
+        <location file="include/dpp/cluster.h" line="3010" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="82" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a114d7930f0a219ef974143b65134a2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9388,7 +9424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3022" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="27" bodyend="44"/>
+        <location file="include/dpp/cluster.h" line="3025" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="27" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a662fc0a998c62395f166da5e4a2acaf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9416,7 +9452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3030" column="6" bodyfile="src/dpp/cluster/dm.cpp" bodystart="29" bodyend="31"/>
+        <location file="include/dpp/cluster.h" line="3033" column="6" bodyfile="src/dpp/cluster/dm.cpp" bodystart="29" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aab0538838d054a0c80c07cd0556a894c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9459,7 +9495,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3039" column="6" bodyfile="src/dpp/cluster/dm.cpp" bodystart="25" bodyend="27"/>
+        <location file="include/dpp/cluster.h" line="3042" column="6" bodyfile="src/dpp/cluster/dm.cpp" bodystart="25" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4fd6cc6c6635e6e0a9bdddcc6cda0e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9502,7 +9538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3048" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="86" bodyend="88"/>
+        <location file="include/dpp/cluster.h" line="3051" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="86" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0c41c2fada744b16b48d8a5538e19fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9607,7 +9643,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3064" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="70" bodyend="80"/>
+        <location file="include/dpp/cluster.h" line="3067" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="70" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adf113903aeca27e9994fb366486250d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9700,7 +9736,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3078" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="82" bodyend="90"/>
+        <location file="include/dpp/cluster.h" line="3081" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="82" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa62bc561994b7222712583e46cb68799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9743,7 +9779,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3087" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="26" bodyend="28"/>
+        <location file="include/dpp/cluster.h" line="3090" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="26" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3a313be1a4fd6bde99606047761c4518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9786,7 +9822,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3096" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="30" bodyend="32"/>
+        <location file="include/dpp/cluster.h" line="3099" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="30" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a905fa0c06477d9d9ecd4a536b54d21aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9841,7 +9877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3106" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="92" bodyend="94"/>
+        <location file="include/dpp/cluster.h" line="3109" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="92" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a754ae607b98b27d54f344db908836c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9896,7 +9932,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3116" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="96" bodyend="98"/>
+        <location file="include/dpp/cluster.h" line="3119" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="96" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad39edec2f1389d1aa5bb6c09e4318b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9950,7 +9986,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3126" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="62" bodyend="64"/>
+        <location file="include/dpp/cluster.h" line="3129" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="62" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a636b55f518a2e724eabf31453aa89abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9992,7 +10028,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3135" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="66" bodyend="68"/>
+        <location file="include/dpp/cluster.h" line="3138" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="66" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6825c29651e995f251e01f5a1f20122d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10034,7 +10070,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3144" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="34" bodyend="36"/>
+        <location file="include/dpp/cluster.h" line="3147" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="34" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2b93e8be30c7e954c27e19d8b7fa8170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10100,7 +10136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3155" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="54" bodyend="60"/>
+        <location file="include/dpp/cluster.h" line="3158" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="54" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae8336e48eaabaeb8df4d69a087982e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10166,7 +10202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3166" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="46" bodyend="52"/>
+        <location file="include/dpp/cluster.h" line="3169" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="46" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0d0c3894cd560fa7871f22d7cfb8f591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10232,7 +10268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3178" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="38" bodyend="44"/>
+        <location file="include/dpp/cluster.h" line="3181" column="6" bodyfile="src/dpp/cluster/thread.cpp" bodystart="38" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aeb8940333b26baa357441b969b625c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10277,7 +10313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3188" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="26" bodyend="32"/>
+        <location file="include/dpp/cluster.h" line="3191" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="26" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a581e2fbee09e76bf9bdbd81befd95c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10322,7 +10358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3198" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="42" bodyend="44"/>
+        <location file="include/dpp/cluster.h" line="3201" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="42" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa93a97a167922bb0a40c6489a928d4fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10379,7 +10415,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3209" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="34" bodyend="36"/>
+        <location file="include/dpp/cluster.h" line="3212" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="34" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a115a49075ceb1817f1e81fc9388bf65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10421,7 +10457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3218" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="50" bodyend="52"/>
+        <location file="include/dpp/cluster.h" line="3221" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="50" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac7a2d335385b4689e7489d0eaf4475fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10475,7 +10511,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3228" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="38" bodyend="40"/>
+        <location file="include/dpp/cluster.h" line="3231" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="38" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adccd1468d3f031c5bc786fdbd087d0a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10517,7 +10553,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3237" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="46" bodyend="48"/>
+        <location file="include/dpp/cluster.h" line="3240" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="46" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae64421a4b2402238feb0536639009c18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10547,7 +10583,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3245" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="54" bodyend="56"/>
+        <location file="include/dpp/cluster.h" line="3248" column="6" bodyfile="src/dpp/cluster/sticker.cpp" bodystart="54" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac62b4564e7512125f0b30377b5c7319a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10592,7 +10628,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3255" column="6" bodyfile="src/dpp/cluster/stage_instance.cpp" bodystart="26" bodyend="28"/>
+        <location file="include/dpp/cluster.h" line="3258" column="6" bodyfile="src/dpp/cluster/stage_instance.cpp" bodystart="26" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1edd6ac5d8553b4823465bebadfaa9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10634,7 +10670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3264" column="6" bodyfile="src/dpp/cluster/stage_instance.cpp" bodystart="30" bodyend="32"/>
+        <location file="include/dpp/cluster.h" line="3267" column="6" bodyfile="src/dpp/cluster/stage_instance.cpp" bodystart="30" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a720ea171f6c432a2ba0cc897fcc61475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10679,7 +10715,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3274" column="6" bodyfile="src/dpp/cluster/stage_instance.cpp" bodystart="34" bodyend="36"/>
+        <location file="include/dpp/cluster.h" line="3277" column="6" bodyfile="src/dpp/cluster/stage_instance.cpp" bodystart="34" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2b4391d87cad53c95e869400534fbd2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10724,7 +10760,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3284" column="6" bodyfile="src/dpp/cluster/stage_instance.cpp" bodystart="38" bodyend="40"/>
+        <location file="include/dpp/cluster.h" line="3287" column="6" bodyfile="src/dpp/cluster/stage_instance.cpp" bodystart="38" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af6d45a29b3976f7b623d92e70ab9a1bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10754,7 +10790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3292" column="6" bodyfile="src/dpp/cluster/voice.cpp" bodystart="26" bodyend="28"/>
+        <location file="include/dpp/cluster.h" line="3295" column="6" bodyfile="src/dpp/cluster/voice.cpp" bodystart="26" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a68f16d04f100a0159683cba96e8c0a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10784,7 +10820,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3300" column="6" bodyfile="src/dpp/cluster/gateway.cpp" bodystart="25" bodyend="27"/>
+        <location file="include/dpp/cluster.h" line="3303" column="6" bodyfile="src/dpp/cluster/gateway.cpp" bodystart="25" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae8554f93aed5fb84162af41c997fc1e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10826,7 +10862,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3309" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="26" bodyend="28"/>
+        <location file="include/dpp/cluster.h" line="3312" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="26" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a09f6a78b9b2ad6218ed1b8c7b044013a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10919,7 +10955,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3323" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="30" bodyend="53"/>
+        <location file="include/dpp/cluster.h" line="3326" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="30" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a360bf7b9dd6b27774be3706a1176f8f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10962,7 +10998,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3333" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="55" bodyend="57"/>
+        <location file="include/dpp/cluster.h" line="3336" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="55" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a513c773562fbd9997141c5b317be8087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11017,7 +11053,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3344" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="59" bodyend="61"/>
+        <location file="include/dpp/cluster.h" line="3347" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="59" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a338867a84983e985b77829f0d9ccb34c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11060,7 +11096,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3354" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="63" bodyend="65"/>
+        <location file="include/dpp/cluster.h" line="3357" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="63" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5b8c168682519ee125ed0a48239c08ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11114,7 +11150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3365" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="67" bodyend="69"/>
+        <location file="include/dpp/cluster.h" line="3368" column="6" bodyfile="src/dpp/cluster/scheduled_event.cpp" bodystart="67" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad611ecc2a6231c4bc100e74c1f28ee75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11214,7 +11250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3389" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="54" bodyend="68"/>
+        <location file="include/dpp/cluster.h" line="3392" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="54" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a66c65f30625391586fd4cf6614b6a1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11304,7 +11340,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3412" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="70" bodyend="76"/>
+        <location file="include/dpp/cluster.h" line="3415" column="6" bodyfile="src/dpp/cluster/user.cpp" bodystart="70" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1ac19d1cb177d67408309d0cdc35fedb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref></type>
@@ -13904,20 +13940,32 @@
         </inbodydescription>
         <location file="include/dpp/cluster_sync_calls.h" line="809" column="5" declfile="include/dpp/cluster_sync_calls.h" declline="809" declcolumn="5"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1a290d4443b911f5e127f9d6a044b39d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a7c9b4971f52b184c3604ea9e12943479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" kindref="member">ban_map</ref></type>
         <definition>ban_map guild_get_bans_sync</definition>
-        <argsstring>(snowflake guild_id)</argsstring>
+        <argsstring>(snowflake guild_id, snowflake before, snowflake after, snowflake limit)</argsstring>
         <name>guild_get_bans_sync</name>
         <param>
           <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
           <declname>guild_id</declname>
         </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>before</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>after</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>limit</declname>
+        </param>
         <briefdescription>
 <para>Get guild ban list. </para>
         </briefdescription>
         <detaileddescription>
-<para>Requires the <computeroutput>BAN_MEMBERS</computeroutput> permission. <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1af9fffa4f080e0b5abab1417fa8eb1b0f" kindref="member">dpp::cluster::guild_get_bans</ref> </para>
+<para>Requires the <computeroutput>BAN_MEMBERS</computeroutput> permission. <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1ac7fe3385e506ea073076bc4fb57f06c3" kindref="member">dpp::cluster::guild_get_bans</ref> </para>
 </simplesect>
 <simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#get-guild-bans">https://discord.com/developers/docs/resources/guild#get-guild-bans</ulink> </para>
 </simplesect>
@@ -13927,6 +13975,30 @@
 </parameternamelist>
 <parameterdescription>
 <para>Guild ID to get bans for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>before</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, all bans for user ids before this user id will be returned up to the limit </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>after</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-zero, all bans for user ids after this user id will be returned up to the limit </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of bans to retrieve in this call up to a maximum of 1000 </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -13947,7 +14019,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="824" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="824" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="827" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="827" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9eaa26f60bb494c8b7494b611f54dbae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" kindref="member">integration_map</ref></type>
@@ -13993,7 +14065,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="843" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="843" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="846" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="846" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac002c4fdeaeac6da804fcb8ec1b42811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref></type>
@@ -14038,7 +14110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="861" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="861" declcolumn="8"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="864" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="864" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a34bfc464bcb65b888bca02995c6daf1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref></type>
@@ -14084,7 +14156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="877" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="877" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="880" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="880" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a88210140e34d8a771b95298179542a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14143,7 +14215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="893" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="893" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="896" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="896" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6fef8b393d4a36c5415a4c36338d8489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1prune" kindref="compound">prune</ref></type>
@@ -14201,7 +14273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="913" column="7" declfile="include/dpp/cluster_sync_calls.h" declline="913" declcolumn="7"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="916" column="7" declfile="include/dpp/cluster_sync_calls.h" declline="916" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9199f4f2112559032957d59937a13544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1prune" kindref="compound">prune</ref></type>
@@ -14261,7 +14333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="935" column="7" declfile="include/dpp/cluster_sync_calls.h" declline="935" declcolumn="7"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="938" column="7" declfile="include/dpp/cluster_sync_calls.h" declline="938" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4f9206883af01ce3253b5909bf3153d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14322,7 +14394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="955" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="955" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="958" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="958" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a59b4ba9bc83e41b336b8e93f972d4cd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14379,7 +14451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="970" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="970" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="973" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="973" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4066c8f1e67919da1580a4c128032879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14440,7 +14512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="993" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="993" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="996" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="996" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5014eb727a1b771fb769a2e8fd42a225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
@@ -14487,7 +14559,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1012" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1012" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1015" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1015" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1f78587049cac058d4d4dcb63f8ab987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
@@ -14544,7 +14616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1026" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1026" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1029" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1029" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa94fc2c644808aa8ca570fbd24ffe209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref></type>
@@ -14615,7 +14687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1043" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1043" declcolumn="18"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1046" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1046" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a71e5cd442880ff73b4cc4bd4bf2ac346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14686,7 +14758,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1062" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1062" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1065" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1065" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa8221744be81a0696a8124467e6145a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14746,7 +14818,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1081" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1081" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1084" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1084" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a20d3638fb222bd91aa9c2ad460b30b29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14805,7 +14877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1099" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1099" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1102" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1102" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a22ce81e0f2204d4217ac284a9163b8a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14876,7 +14948,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1117" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1117" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1120" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1120" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa2e1667b47f46137b0abf1a994821da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -14947,7 +15019,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1136" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1136" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1139" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1139" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abf8cf09e2e52018299f14f71ca1da5c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
@@ -15020,7 +15092,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1155" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1155" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1158" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1158" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a33520747ebe8e62b47bbc177bc15d09d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref></type>
@@ -15091,7 +15163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1172" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1172" declcolumn="18"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1175" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1175" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7e224a9dbbb971e0e365db9428780881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref></type>
@@ -15137,7 +15209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1188" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1188" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1191" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1191" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a798ae7bfe0fe06d93a70fde240a52514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -15182,7 +15254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1208" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1208" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1211" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1211" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6e94df1c101df8ef23a83037a90aa9e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -15239,7 +15311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1223" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1223" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1226" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1226" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6c36ad5bd3b5ea099bd025e9ad09bda8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -15300,7 +15372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1241" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1241" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1244" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1244" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5883ba9a11a360bcd0e2b0e79f99a448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -15359,7 +15431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1257" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1257" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1260" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1260" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad6d12710877b058e6f159c53f3c34c49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -15404,7 +15476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1271" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1271" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1274" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1274" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adfd84a3dcf55fbbecf72fe0b412d7dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -15461,7 +15533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1286" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1286" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1289" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1289" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab25380f93d6a7f1c25b39b6f073639be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -15520,7 +15592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1301" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1301" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1304" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1304" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a795ac11245e689599fb24f9e5a6a060d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref></type>
@@ -15614,7 +15686,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1321" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1321" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1324" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1324" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab678ce2a5961a13562e37ff9d1ddc174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -15673,7 +15745,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1336" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1336" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1339" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1339" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6cfc3aa580dd523b6e357eebfd757159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref></type>
@@ -15718,7 +15790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1349" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1349" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1352" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1352" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8fa5c60e4a435244d30e2fea4bbc3dca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref></type>
@@ -15766,7 +15838,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1367" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1367" declcolumn="6"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1370" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1370" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab7fe97b155a1139d5cd93a473e03c3e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -15826,7 +15898,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1385" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1385" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1388" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1388" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a95decd52461e3be9c15d94d6ee5defbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref></type>
@@ -15874,7 +15946,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1402" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1402" declcolumn="6"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1405" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1405" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab4f1d985f90ff65362e687978abef6cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref></type>
@@ -15934,7 +16006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1421" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1421" declcolumn="10"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1424" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1424" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4e9bb5386f8edd51c6f8c34653d74ac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref></type>
@@ -15979,7 +16051,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1435" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1435" declcolumn="10"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1438" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1438" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aade42f057ced1493a3c7c59f39659844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kindref="member">scheduled_event_map</ref></type>
@@ -16024,7 +16096,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1448" column="21" declfile="include/dpp/cluster_sync_calls.h" declline="1448" declcolumn="21"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1451" column="21" declfile="include/dpp/cluster_sync_calls.h" declline="1451" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6d3a0ffeffd167c57099d98e202b6c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref></type>
@@ -16069,7 +16141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1462" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1462" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1465" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1465" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1748760125e3f9829f2d49e8e5c3f983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -16126,7 +16198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1477" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1477" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1480" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1480" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a964ab2b864033d0992f8fa01eb6603e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref></type>
@@ -16171,7 +16243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1491" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1491" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1494" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1494" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab71e5419bee86ee4afec0870e0ce8a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref></type>
@@ -16228,7 +16300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1506" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1506" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1509" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1509" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7620cfb5b51cf091b5c2d4ed6cc19884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref></type>
@@ -16273,7 +16345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1522" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="1522" declcolumn="16"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1525" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="1525" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3de0179783edd7785ee4a21d192571f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -16320,7 +16392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1539" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1539" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1542" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1542" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a572f7c4f7e8b002e0fa2a7751da230da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref></type>
@@ -16367,7 +16439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1553" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1553" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1556" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1556" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab054c959a6a0528d12380093fec98c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -16426,7 +16498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1568" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1568" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1571" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1571" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac116541a0983b35acf418bdd0086581d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref></type>
@@ -16483,7 +16555,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1582" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1582" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1585" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1585" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1afc714011eed1186b55c38942192a2c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref></type>
@@ -16530,7 +16602,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1596" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1596" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1599" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1599" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7665fd32a1c71218bd6fed3e69b3ad9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref></type>
@@ -16575,7 +16647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1609" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1609" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1612" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1612" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad5636998161cc4ebdf4b6fb5040f9e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref></type>
@@ -16620,7 +16692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1622" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1622" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1625" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1625" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a34eaca67acfb23c14ac444a83f1d47c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref></type>
@@ -16652,7 +16724,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1634" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1634" declcolumn="18"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1637" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1637" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abd034a34d7428cd43d6f3891cb8f828a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref></type>
@@ -16711,7 +16783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1649" column="7" declfile="include/dpp/cluster_sync_calls.h" declline="1649" declcolumn="7"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1652" column="7" declfile="include/dpp/cluster_sync_calls.h" declline="1652" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab6efbc6878f3e599de0ea4a60ffc6e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref></type>
@@ -16780,7 +16852,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1665" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1665" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1668" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1668" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acabbe3b11bfece6a47b95d375d721cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -16837,7 +16909,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1680" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1680" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1683" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1683" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a90f939be4b880a2ee5ff099aaa90cd72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref></type>
@@ -16918,7 +16990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1697" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1697" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1700" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1700" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acc12378fb3059bff6906c8be0bc1f10e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref></type>
@@ -16963,7 +17035,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1711" column="15" declfile="include/dpp/cluster_sync_calls.h" declline="1711" declcolumn="15"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1714" column="15" declfile="include/dpp/cluster_sync_calls.h" declline="1714" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4a07438d33153ee88588315cd4b1b838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref></type>
@@ -17020,7 +17092,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1726" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1726" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1729" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1729" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0c79f31f217eb4d22c2f5192d562c241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref></type>
@@ -17065,7 +17137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1739" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1739" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1742" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1742" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa03b55f7a28ea8d4d520c9d255c87e3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -17110,7 +17182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1752" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1752" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1755" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1755" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acb305d660acf37bbccab5da34bb170b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -17155,7 +17227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1765" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1765" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1768" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1768" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab12aa11ffa3cbad10c99be73f1ee1694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref></type>
@@ -17200,7 +17272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1778" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1778" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1781" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1781" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac14ada29643bb656707e563f4276d8f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref></type>
@@ -17269,7 +17341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1793" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1793" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1796" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1796" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9a2345e6409379314b17651e3d317433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref></type>
@@ -17338,7 +17410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1808" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1808" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1811" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1811" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8f2416efc41ff2d42e15a6436c892ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref></type>
@@ -17407,7 +17479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1823" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1823" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1826" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1826" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a847982d8771848b3320ae01dcf00613a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref></type>
@@ -17464,7 +17536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1837" column="15" declfile="include/dpp/cluster_sync_calls.h" declline="1837" declcolumn="15"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1840" column="15" declfile="include/dpp/cluster_sync_calls.h" declline="1840" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae202a0e3a374128dea543d389df3abc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref></type>
@@ -17509,7 +17581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1850" column="19" declfile="include/dpp/cluster_sync_calls.h" declline="1850" declcolumn="19"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1853" column="19" declfile="include/dpp/cluster_sync_calls.h" declline="1853" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9c9e0664dfa968c78d5032131fbd95d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1thread" kindref="compound">thread</ref></type>
@@ -17616,7 +17688,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1870" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="1870" declcolumn="8"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1873" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="1873" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aaabebadaa9d9e560130383f6c137fa20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1thread" kindref="compound">thread</ref></type>
@@ -17711,7 +17783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1888" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="1888" declcolumn="8"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1891" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="1891" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4d4f3a36cc48c7ba3a7cbd80faa4bad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -17768,7 +17840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1902" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1902" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1905" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1905" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a076937e5ba367efe37ad424d0eb607f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -17825,7 +17897,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1916" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1916" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1919" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1919" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5d353fda82f221d6b50c0382b81af2f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
@@ -17904,7 +17976,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1935" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1935" declcolumn="6"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1938" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1938" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9415ab3a369fec24966bbd78a0e8dad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1application" kindref="compound">application</ref></type>
@@ -17936,7 +18008,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1948" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1948" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1951" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1951" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ade2ed7a7dff856ad35728d7128da97b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref></type>
@@ -17970,7 +18042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1963" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1963" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1966" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1966" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af805ea7278c91a0e1d79b032f62548c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -18072,7 +18144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1991" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1991" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1994" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1994" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a07f42b39eeb853d35569e0404fe965a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -18165,7 +18237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2018" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2018" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2021" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2021" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a665a81f6488e96e4b9687cb41677407d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" kindref="member">connection_map</ref></type>
@@ -18197,7 +18269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2032" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="2032" declcolumn="16"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2035" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="2035" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acb1aafd9420be17385755602215212bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref></type>
@@ -18229,7 +18301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2044" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2044" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2047" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2047" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2471c9c6c18e0a1b195f089aa4ab8d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -18274,7 +18346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2057" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2057" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2060" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2060" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0cc14588d1827a4f770a28ab618f1f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref></type>
@@ -18323,7 +18395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2075" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2075" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2078" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2078" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a60e18320d10d3a2d589d89f2841da9bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref></type>
@@ -18355,7 +18427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2087" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2087" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2090" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2090" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab4655897576aaaa7e9b3804b39eefb84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref></type>
@@ -18401,7 +18473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2105" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2105" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2108" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2108" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4d4735fdf32903ae005f410bf9899f12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -18448,7 +18520,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2119" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2119" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2122" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2122" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa8f65945ec0cb6c01b8ac6e088aa88e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -18495,7 +18567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2133" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2133" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2136" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2136" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8f5a8ccbcccc00dad67aed13283a996c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -18552,7 +18624,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2148" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2148" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2151" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2151" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a171ed6000c31d17fee89633219cd5c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -18609,7 +18681,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2162" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2162" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2165" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2165" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a988f0b94132e9f604983f72d568aadd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -18656,7 +18728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2176" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2176" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2179" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2179" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a42e9d5875c6994bfdbec2bf3371b602d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -18716,7 +18788,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2197" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2197" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2200" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2200" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abf835cf724797a64550f2eaf58b8cb64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -18761,7 +18833,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2210" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2210" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2213" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2213" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae47be11b6f6184c2b47f52707332bd48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -18844,7 +18916,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2227" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2227" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2230" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2230" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a44e63c98f4a1e1ab8fd8f4d0a0b1ed81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref></type>
@@ -18889,7 +18961,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2240" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2240" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2243" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2243" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a36d081c165e94ddb85dd183e6157199b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref></type>
@@ -18934,7 +19006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2253" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2253" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2256" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2256" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae524a53b16e42816f94b2bee7ccdda18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -18979,7 +19051,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2266" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2266" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2269" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2269" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a09bbc39fbf490a7f14237228456de570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -19024,7 +19096,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2280" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2280" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2283" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2283" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae35b19024c40e544ba21edd4918a46c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -19081,7 +19153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2294" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2294" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2297" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2297" declcolumn="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -19231,7 +19303,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/cluster.h" line="447" column="1" bodyfile="include/dpp/cluster.h" bodystart="447" bodyend="3416"/>
+    <location file="include/dpp/cluster.h" line="447" column="1" bodyfile="include/dpp/cluster.h" bodystart="447" bodyend="3419"/>
     <listofallmembers>
       <member refid="classdpp_1_1cluster_1a9fae28f81712be86530fe3314d166ad3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>cache_policy</name></member>
       <member refid="classdpp_1_1cluster_1a66df9163f111cec5a180d642f521660a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channel_create</name></member>
@@ -19414,8 +19486,8 @@
       <member refid="classdpp_1_1cluster_1a6a003669770549d25a951810bff0153e" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get</name></member>
       <member refid="classdpp_1_1cluster_1ad871d30ed11d0799da4a831ede8a7d95" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_ban</name></member>
       <member refid="classdpp_1_1cluster_1a9810b52f5a6cdb45b3e8ba20066e4f08" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_ban_sync</name></member>
-      <member refid="classdpp_1_1cluster_1af9fffa4f080e0b5abab1417fa8eb1b0f" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_bans</name></member>
-      <member refid="classdpp_1_1cluster_1a290d4443b911f5e127f9d6a044b39d4c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_bans_sync</name></member>
+      <member refid="classdpp_1_1cluster_1ac7fe3385e506ea073076bc4fb57f06c3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_bans</name></member>
+      <member refid="classdpp_1_1cluster_1a7c9b4971f52b184c3604ea9e12943479" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_bans_sync</name></member>
       <member refid="classdpp_1_1cluster_1a43cba3bd187f9b28dcaed5b4f4ed5bda" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_integrations</name></member>
       <member refid="classdpp_1_1cluster_1a9eaa26f60bb494c8b7494b611f54dbae" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_integrations_sync</name></member>
       <member refid="classdpp_1_1cluster_1a93c0e07243611419141305da123c859a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_invites</name></member>
