@@ -1,5 +1,8 @@
 var NAVTREEINDEX18 =
 {
+"oggopus.html":[3,3],
+"pages.html":[],
+"record-user.html":[3,5],
 "slashcommands.html":[3,1],
 "soundboard.html":[3,2],
 "spdlog.html":[3,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX18 =
 "structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9":[7,0,1,15,0],
 "structdpp_1_1autocomplete__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,1,16,16],
 "structdpp_1_1autocomplete__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,1,15,16],
-"structdpp_1_1autocomplete__t.html#a3611e80443a208bc2e6b7c466ed1679d":[6,0,1,16,19],
-"structdpp_1_1autocomplete__t.html#a3611e80443a208bc2e6b7c466ed1679d":[7,0,1,15,19],
-"structdpp_1_1autocomplete__t.html#a42a7aada4ad321e9d8e3645b8b4abc97":[6,0,1,16,2],
-"structdpp_1_1autocomplete__t.html#a42a7aada4ad321e9d8e3645b8b4abc97":[7,0,1,15,2]
+"structdpp_1_1autocomplete__t.html#a3611e80443a208bc2e6b7c466ed1679d":[6,0,1,16,19]
 };
