@@ -40,12 +40,13 @@ var searchData=
   ['gm_5fpending_37',['gm_pending',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41',1,'dpp']]],
   ['group_5fdm_38',['GROUP_DM',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a0e46c57251ffbb0889dded66229de5e3',1,'dpp']]],
   ['guild_5fcategory_39',['GUILD_CATEGORY',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a385ba6f04f2c7bae9082cb497ce8973a',1,'dpp']]],
-  ['guild_5fnews_40',['GUILD_NEWS',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a95ccc888242d0550c14d86d5af499f6b',1,'dpp']]],
-  ['guild_5fnews_5fthread_41',['GUILD_NEWS_THREAD',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092ad6cedbe459b1e8cf4e8f5a25adbe5b20',1,'dpp']]],
-  ['guild_5fprivate_5fthread_42',['GUILD_PRIVATE_THREAD',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a65ea2f36cb5d2cf8b9ec3ad08645d207',1,'dpp']]],
-  ['guild_5fpublic_5fthread_43',['GUILD_PUBLIC_THREAD',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a2fb972e6997df3debf8089fcaa8000ee',1,'dpp']]],
-  ['guild_5fstage_44',['GUILD_STAGE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a2b8e9d25634f30006f16aa879c1da627',1,'dpp']]],
-  ['guild_5fstore_45',['GUILD_STORE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a6a57ffe1a9ec22c41c73780837432675',1,'dpp']]],
-  ['guild_5ftext_46',['GUILD_TEXT',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092ac240528d2f3f3a773b5e418c4f25d696',1,'dpp']]],
-  ['guild_5fvoice_47',['GUILD_VOICE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a444c8af4513fe76ab80cc00039ce8852',1,'dpp']]]
+  ['guild_5fdirectory_40',['GUILD_DIRECTORY',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092ab373f6cb0d869e8351139ca2bd7a4aff',1,'dpp']]],
+  ['guild_5fnews_41',['GUILD_NEWS',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a95ccc888242d0550c14d86d5af499f6b',1,'dpp']]],
+  ['guild_5fnews_5fthread_42',['GUILD_NEWS_THREAD',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092ad6cedbe459b1e8cf4e8f5a25adbe5b20',1,'dpp']]],
+  ['guild_5fprivate_5fthread_43',['GUILD_PRIVATE_THREAD',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a65ea2f36cb5d2cf8b9ec3ad08645d207',1,'dpp']]],
+  ['guild_5fpublic_5fthread_44',['GUILD_PUBLIC_THREAD',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a2fb972e6997df3debf8089fcaa8000ee',1,'dpp']]],
+  ['guild_5fstage_45',['GUILD_STAGE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a2b8e9d25634f30006f16aa879c1da627',1,'dpp']]],
+  ['guild_5fstore_46',['GUILD_STORE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a6a57ffe1a9ec22c41c73780837432675',1,'dpp']]],
+  ['guild_5ftext_47',['GUILD_TEXT',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092ac240528d2f3f3a773b5e418c4f25d696',1,'dpp']]],
+  ['guild_5fvoice_48',['GUILD_VOICE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a444c8af4513fe76ab80cc00039ce8852',1,'dpp']]]
 ];

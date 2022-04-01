@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structdpp_1_1autocomplete__t.html#a3611e80443a208bc2e6b7c466ed1679d":[6,0,1,16,19],
 "structdpp_1_1autocomplete__t.html#a3611e80443a208bc2e6b7c466ed1679d":[7,0,1,15,19],
 "structdpp_1_1autocomplete__t.html#a42a7aada4ad321e9d8e3645b8b4abc97":[6,0,1,16,2],
 "structdpp_1_1autocomplete__t.html#a42a7aada4ad321e9d8e3645b8b4abc97":[7,0,1,15,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "structdpp_1_1command__option__choice.html#a449db6e29c6b6cc272dfdd3e58dc68f4":[7,0,1,35,1],
 "structdpp_1_1command__option__choice.html#a449db6e29c6b6cc272dfdd3e58dc68f4":[6,0,1,36,1],
 "structdpp_1_1command__option__choice.html#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb":[7,0,1,35,0],
-"structdpp_1_1command__option__choice.html#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb":[6,0,1,36,0],
-"structdpp_1_1command__option__choice.html#a6e4ceb9707c454d74d25a49dbcdb25ee":[7,0,1,35,5]
+"structdpp_1_1command__option__choice.html#a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb":[6,0,1,36,0]
 };

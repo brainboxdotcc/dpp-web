@@ -406,7 +406,8 @@ var namespacedpp =
       [ "GUILD_NEWS_THREAD", "namespacedpp.html#a8af3a726df107c304139477dbfa42092ad6cedbe459b1e8cf4e8f5a25adbe5b20", null ],
       [ "GUILD_PUBLIC_THREAD", "namespacedpp.html#a8af3a726df107c304139477dbfa42092a2fb972e6997df3debf8089fcaa8000ee", null ],
       [ "GUILD_PRIVATE_THREAD", "namespacedpp.html#a8af3a726df107c304139477dbfa42092a65ea2f36cb5d2cf8b9ec3ad08645d207", null ],
-      [ "GUILD_STAGE", "namespacedpp.html#a8af3a726df107c304139477dbfa42092a2b8e9d25634f30006f16aa879c1da627", null ]
+      [ "GUILD_STAGE", "namespacedpp.html#a8af3a726df107c304139477dbfa42092a2b8e9d25634f30006f16aa879c1da627", null ],
+      [ "GUILD_DIRECTORY", "namespacedpp.html#a8af3a726df107c304139477dbfa42092ab373f6cb0d869e8351139ca2bd7a4aff", null ]
     ] ],
     [ "command_option_type", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58", [
       [ "co_sub_command", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c", null ],
