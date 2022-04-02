@@ -18,9 +18,9 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="243" column="15" bodyfile="include/dpp/queues.h" bodystart="243" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1aca09e205a264d822cc94c01b9dc057fc" prot="private" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::request_queue::in_mutex</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a9301b3efd7fbc1c876461af64fc3981d" prot="private" static="no" mutable="no">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::request_queue::in_mutex</definition>
         <argsstring></argsstring>
         <name>in_mutex</name>
         <briefdescription>
@@ -30,11 +30,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="246" column="12" bodyfile="include/dpp/queues.h" bodystart="246" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="246" column="19" bodyfile="include/dpp/queues.h" bodystart="246" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a752d76a042faea10a5cc080787e5d89f" prot="private" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::request_queue::out_mutex</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1a3e820d1ff86e88e36a07f859064a7fca" prot="private" static="no" mutable="no">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::request_queue::out_mutex</definition>
         <argsstring></argsstring>
         <name>out_mutex</name>
         <briefdescription>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="249" column="12" bodyfile="include/dpp/queues.h" bodystart="249" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="249" column="19" bodyfile="include/dpp/queues.h" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1aec6d4566eb6b683a13a87612b01fa6a3" prot="private" static="no" mutable="no">
         <type>std::thread *</type>
@@ -214,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="287" column="6" bodyfile="src/dpp/queues.cpp" bodystart="200" bodyend="298"/>
+        <location file="include/dpp/queues.h" line="287" column="6" bodyfile="src/dpp/queues.cpp" bodystart="200" bodyend="302"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1a63acf79e2ab7a915f3ba59f1bdebe758" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="292" column="6" bodyfile="src/dpp/queues.cpp" bodystart="300" bodyend="334"/>
+        <location file="include/dpp/queues.h" line="292" column="6" bodyfile="src/dpp/queues.cpp" bodystart="304" bodyend="340"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -299,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="312" column="6" bodyfile="src/dpp/queues.cpp" bodystart="337" bodyend="342"/>
+        <location file="include/dpp/queues.h" line="312" column="6" bodyfile="src/dpp/queues.cpp" bodystart="343" bodyend="348"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -317,11 +317,11 @@
       <member refid="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>globally_limited_for</name></member>
       <member refid="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>globally_ratelimited</name></member>
       <member refid="classdpp_1_1request__queue_1a88f8d5a05b3f235c07ccccd8bef10a2c" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>in_loop</name></member>
-      <member refid="classdpp_1_1request__queue_1aca09e205a264d822cc94c01b9dc057fc" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>in_mutex</name></member>
+      <member refid="classdpp_1_1request__queue_1a9301b3efd7fbc1c876461af64fc3981d" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>in_mutex</name></member>
       <member refid="classdpp_1_1request__queue_1abaeb87b838ae1e51cd289c374aa2c588" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>in_ready</name></member>
       <member refid="classdpp_1_1request__queue_1aec6d4566eb6b683a13a87612b01fa6a3" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>in_thread</name></member>
       <member refid="classdpp_1_1request__queue_1a63acf79e2ab7a915f3ba59f1bdebe758" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_loop</name></member>
-      <member refid="classdpp_1_1request__queue_1a752d76a042faea10a5cc080787e5d89f" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_mutex</name></member>
+      <member refid="classdpp_1_1request__queue_1a3e820d1ff86e88e36a07f859064a7fca" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_mutex</name></member>
       <member refid="classdpp_1_1request__queue_1a4e4ca349f25239201a985adb1db64353" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_ready</name></member>
       <member refid="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" prot="private" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_thread</name></member>
       <member refid="classdpp_1_1request__queue_1a59e2169cb34083a6de526d4eafb99fd0" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>post_request</name></member>
