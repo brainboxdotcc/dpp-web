@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="makedocs-gh_8php" kind="file" language="PHP">
+    <compoundname>makedocs-gh.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="makedocs-gh_8php_1a1d7a14d78675e08dc8e00d898ea740ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$nodeploy</definition>
+        <argsstring></argsstring>
+        <name>$nodeploy</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs-gh.php" line="3" column="1" bodyfile="docpages/makedocs-gh.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs-gh_8php_1a475a6a63b85186663d34151bcbd21590" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$tags</definition>
+        <argsstring></argsstring>
+        <name>$tags</name>
+        <initializer>= explode(&quot;\n&quot;, shell_exec(&quot;git tag&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs-gh.php" line="27" column="1" bodyfile="docpages/makedocs-gh.php" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs-gh_8php_1a2fce6a9b8be45967a21c53a89d006eaf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$opts</definition>
+        <argsstring></argsstring>
+        <name>$opts</name>
+        <initializer>= &quot;&lt;option value=&apos;/&apos;&gt;master&lt;/option&gt;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs-gh.php" line="34" column="1" bodyfile="docpages/makedocs-gh.php" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs-gh_8php_1af1a56f7923651ad710b7604de01bc31d" prot="public" static="no" mutable="no">
+        <type>foreach($tags as $tag)</type>
+        <definition>foreach ( $tags as $tag) $taglist</definition>
+        <argsstring></argsstring>
+        <name>$taglist</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs-gh.php" line="41" column="1" bodyfile="docpages/makedocs-gh.php" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs-gh_8php_1acab205064e5579a0432a1a7b3e0aec01" prot="public" static="no" mutable="no">
+        <type>foreach($tags as $tag)</type>
+        <definition>foreach ( $tags as $tag) $template</definition>
+        <argsstring></argsstring>
+        <name>$template</name>
+        <initializer>= file_get_contents(&quot;/home/runner/work/DPP/DPP/docpages/header.template.html&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs-gh.php" line="49" column="1" bodyfile="docpages/makedocs-gh.php" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs-gh_8php_1a4f44601f2b9dc8a1644bce53c94ce622" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$header</definition>
+        <argsstring></argsstring>
+        <name>$header</name>
+        <initializer>= str_replace(&quot;##VERSION_OPTIONS##&quot;, $opts, $template)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs-gh.php" line="50" column="1" bodyfile="docpages/makedocs-gh.php" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs-gh_8php_1abaa4216c852c51c380dd8f10d3cfe944" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$footer</definition>
+        <argsstring></argsstring>
+        <name>$footer</name>
+        <initializer>= file_get_contents(&quot;/home/runner/work/DPP/DPP/docpages/footer.template.html&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs-gh.php" line="52" column="1" bodyfile="docpages/makedocs-gh.php" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="makedocs-gh_8php_1a39981fe8269ad9ba0f2404c2a89349fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>foreach($tags as $tag)</definition>
+        <argsstring>( $tags as $tag)</argsstring>
+        <name>foreach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/makedocs-gh.php" line="75" column="1" bodyfile="docpages/makedocs-gh.php" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="docpages/makedocs-gh.php"/>
+  </compounddef>
+</doxygen>
