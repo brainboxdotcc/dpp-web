@@ -15,5 +15,6 @@ var classdpp_1_1http__request =
     [ "parameters", "classdpp_1_1http__request.html#a349ce3f41c300aeac915d38f8f1d8642", null ],
     [ "postdata", "classdpp_1_1http__request.html#adab1976475788ca96b5b52349367a322", null ],
     [ "reason", "classdpp_1_1http__request.html#a96bc944a868341d97772beca88f02ac0", null ],
-    [ "req_headers", "classdpp_1_1http__request.html#a7248f6e47440f670e2a9adbfb50022bc", null ]
+    [ "req_headers", "classdpp_1_1http__request.html#a7248f6e47440f670e2a9adbfb50022bc", null ],
+    [ "waiting", "classdpp_1_1http__request.html#ad504dae645a77b338bc6a14e5dd44a7d", null ]
 ];

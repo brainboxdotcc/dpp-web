@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"namespacesafe__duration__cast.html#a1b2f780f349d616fa841550dc49f59d0":[6,0,4,1],
+"namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a":[6,0,4,2],
 "namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9":[6,0,4,0],
 "oggopus.html":[3,3],
 "pages.html":[],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "structdpp_1_1autocomplete__t.html#a274aaa562766588128c2e3699b515b41":[6,0,1,16,5],
 "structdpp_1_1autocomplete__t.html#a274aaa562766588128c2e3699b515b41":[7,0,1,15,5],
 "structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9":[6,0,1,16,0],
-"structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9":[7,0,1,15,0],
-"structdpp_1_1autocomplete__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,1,16,16],
-"structdpp_1_1autocomplete__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,1,15,16]
+"structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9":[7,0,1,15,0]
 };
