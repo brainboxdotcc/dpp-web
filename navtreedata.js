@@ -60,7 +60,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1channel.html#a53bbf494148ceea48e3b78716d7a8b07",
+"classdpp_1_1channel.html#a57864fde3659243453d1ad1c9bf60983",
 "classdpp_1_1cluster.html#a3de0179783edd7785ee4a21d192571f4",
 "classdpp_1_1cluster.html#a83a297526f214d56547bf17e3ef0280e",
 "classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03",
@@ -74,20 +74,20 @@ var NAVTREEINDEX =
 "classdpp_1_1thread.html#a8b23ff4092db13a836895efbd5ede669",
 "classdpp_1_1voice__exception.html",
 "classtm__writer.html#a812ec4fcb5b30d7cf9b9126c73763a7f",
-"namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85",
-"namespacedpp.html#a75c3daf035b2a2d9a5e0fcc5f11c936f",
-"namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5aa62ddfb05e437c4d4bf7a3ef1b73752b",
-"namespacemembers_u.html",
-"structdpp_1_1autocomplete__t.html#a10553ebb8d10ba58595f825e0a89eb1b",
-"structdpp_1_1command__option__choice.html",
-"structdpp_1_1event__member.html#a87a64043879a5d82902e0e9c002a7b50",
-"structdpp_1_1guild__role__create__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1interaction__create__t.html#a42a7aada4ad321e9d8e3645b8b4abc97",
-"structdpp_1_1message.html#ada2f9404e7dbb12b3de0a382c3733587",
-"structdpp_1_1presence__update__t.html#aca2880114f69b7ba62eb5137824c1432",
-"structdpp_1_1stage__instance.html#aaae075e2919ee153d9c1ed34c41b8a33",
-"structdpp_1_1thread__update__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1voice__user__talking__t.html#aca2880114f69b7ba62eb5137824c1432"
+"namespacedpp.html#a143b5e0c6905a9f223b8589729dff35a",
+"namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c",
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a26c10fa455e8a6516ca6962cf65fd4d9",
+"slashcommands.html",
+"structdpp_1_1autocomplete__t.html#a56c5b18e31d5042ce01c814620013d2d",
+"structdpp_1_1command__option__choice.html#a7e1d8587e1bf8dc8053213c49d51405e",
+"structdpp_1_1form__submit__t.html#a553c0a40c9f66be372b6f8228fa22084",
+"structdpp_1_1guild__role__delete__t.html#a2ea6c85d5db71c5710a04339978b7db4",
+"structdpp_1_1interaction__create__t.html#a9ed8c6f8eaf7862de50a30e9642fbc56",
+"structdpp_1_1message.html#af6c6ea9f1319adde40d068a2e9b230e7",
+"structdpp_1_1reaction.html",
+"structdpp_1_1stage__instance__create__t.html#a11d50c4d4bdc7e078e095ec598684014",
+"structdpp_1_1timer__t.html#a4f1f9ed3d687cad53d683d017f0f21a6",
+"structdpp_1_1webhooks__update__t.html#aa070b1866b55bc3e6d2a7a8b698e8c1b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

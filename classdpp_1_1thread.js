@@ -43,7 +43,7 @@ var classdpp_1_1thread =
     [ "set_user_limit", "classdpp_1_1thread.html#aed49e707599019840d4715f6c2123a5f", null ],
     [ "banner", "classdpp_1_1thread.html#a6df422541a4733f18a31a630b9e7cf3a", null ],
     [ "bitrate", "classdpp_1_1thread.html#ab32308d8281aef6bfe4d5a6538c6306e", null ],
-    [ "flags", "classdpp_1_1thread.html#a4468e3981302301886f649d14b7ddcf7", null ],
+    [ "flags", "classdpp_1_1thread.html#a709f24110a06b558170cae9231572bef", null ],
     [ "guild_id", "classdpp_1_1thread.html#a52a3d85468b8b6a1eb16c1bdb19cb499", null ],
     [ "icon", "classdpp_1_1thread.html#aad8f9892c2daba2f3215e751bfb3351d", null ],
     [ "id", "classdpp_1_1thread.html#a40bf0c6cc03909910512808fa6caa112", null ],

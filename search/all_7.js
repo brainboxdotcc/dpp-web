@@ -133,7 +133,7 @@ var searchData=
   ['gray_130',['gray',['../namespacedpp_1_1colors.html#a043d4a6e48998bf30215f0590a1837e2',1,'dpp::colors']]],
   ['gray_5fchateau_131',['gray_chateau',['../namespacedpp_1_1colors.html#a08cf16fe416fe7f66f8c5636427fe096',1,'dpp::colors']]],
   ['green_132',['green',['../namespacedpp_1_1colors.html#a13a1c01036fece6e39ef4693f4d0781f',1,'dpp::colors']]],
-  ['group_5fdm_133',['GROUP_DM',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a0e46c57251ffbb0889dded66229de5e3',1,'dpp']]],
+  ['group_5fdm_133',['GROUP_DM',['../namespacedpp.html#a732e832861149a278f27ea7840b8e4caa0e46c57251ffbb0889dded66229de5e3',1,'dpp']]],
   ['guild_134',['guild',['../classdpp_1_1guild.html',1,'dpp::guild'],['../classdpp_1_1guild.html#aeae6599054436a5a66e07683032089dc',1,'dpp::guild::guild()']]],
   ['guild_5fadd_5fmember_135',['guild_add_member',['../classdpp_1_1cluster.html#a19819f7f2f2f3badecc1e29a928f2690',1,'dpp::cluster']]],
   ['guild_5fadd_5fmember_5fsync_136',['guild_add_member_sync',['../classdpp_1_1cluster.html#a4066c8f1e67919da1580a4c128032879',1,'dpp::cluster']]],
