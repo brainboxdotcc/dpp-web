@@ -15,6 +15,7 @@ var classdpp_1_1thread =
     [ "get_voice_members", "classdpp_1_1thread.html#a915cc4ba3ec7514a684315594255253a", null ],
     [ "is_category", "classdpp_1_1thread.html#a1b6b7a32e44eec70466a98b31252aa54", null ],
     [ "is_dm", "classdpp_1_1thread.html#a918afc6016a1114151a253e7caa35179", null ],
+    [ "is_forum", "classdpp_1_1thread.html#a469a04064c0d9455e8decca30010c0b4", null ],
     [ "is_group_dm", "classdpp_1_1thread.html#a27a623072570b333f697bd01c3616208", null ],
     [ "is_news_channel", "classdpp_1_1thread.html#a9fb22156c167cb2c334ec3388502fdff", null ],
     [ "is_news_thread", "classdpp_1_1thread.html#ab8a6fdcfef22b3aba9c41020e1811670", null ],
