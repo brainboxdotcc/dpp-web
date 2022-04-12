@@ -34,11 +34,56 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1a9cc13a59cf1049a84cea6ee3405bd4ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1a44663b1c989dd7256c09c62eff44ae41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::utility::iconhash::iconhash</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(uint64_t _first=0, uint64_t _second=0)</argsstring>
         <name>iconhash</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>_first</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>_second</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new iconhash object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Leftmost portion of the hash value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rightmost portion of the hash value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="130" column="1" bodyfile="src/dpp/utility.cpp" bodystart="123" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1a4bfd1ae9f381180d5c208bc258835c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::utility::iconhash::iconhash</definition>
+        <argsstring>(const iconhash &amp;)</argsstring>
+        <name>iconhash</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">iconhash</ref> &amp;</type>
+        </param>
         <briefdescription>
 <para>Construct a new iconhash object. </para>
         </briefdescription>
@@ -46,7 +91,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="128" column="1" bodyfile="src/dpp/utility.cpp" bodystart="123" bodyend="124"/>
+        <location file="include/dpp/utility.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1a6d951ec2eb1e26b7e27482629a26af0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::utility::iconhash::~iconhash</definition>
+        <argsstring>()</argsstring>
+        <name>~iconhash</name>
+        <briefdescription>
+<para>Destroy the iconhash object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="140" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1a409fbe2ae53e12f6a1517436494b96e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -83,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="139" column="1" bodyfile="src/dpp/utility.cpp" bodystart="144" bodyend="146"/>
+        <location file="include/dpp/utility.h" line="151" column="1" bodyfile="src/dpp/utility.cpp" bodystart="148" bodyend="150"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1aa341e55d1bb792a5a2592cc064cb91f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">iconhash</ref> &amp;</type>
@@ -120,7 +179,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="149" column="10" bodyfile="src/dpp/utility.cpp" bodystart="148" bodyend="151"/>
+        <location file="include/dpp/utility.h" line="161" column="10" bodyfile="src/dpp/utility.cpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1ac7ac80b0ab7bae2ea1117618c3ad9dda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::utility::iconhash::operator==</definition>
+        <argsstring>(const iconhash &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">iconhash</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Check if one iconhash is equal to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other iconhash to compare </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the iconhash objects match </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="169" column="6" bodyfile="src/dpp/utility.cpp" bodystart="157" bodyend="159"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1ac675809d00cef53ef6887ef7ffcd095c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -157,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="160" column="6" bodyfile="src/dpp/utility.cpp" bodystart="126" bodyend="142"/>
+        <location file="include/dpp/utility.h" line="180" column="6" bodyfile="src/dpp/utility.cpp" bodystart="130" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1iconhash_1aeba3e70afad0497f8e9aa1493704a77b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -174,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="168" column="13" bodyfile="src/dpp/utility.cpp" bodystart="153" bodyend="158"/>
+        <location file="include/dpp/utility.h" line="188" column="13" bodyfile="src/dpp/utility.cpp" bodystart="161" bodyend="166"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -195,15 +284,18 @@
         <label>uint64_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/utility.h" line="120" column="1" bodyfile="include/dpp/utility.h" bodystart="120" bodyend="169"/>
+    <location file="include/dpp/utility.h" line="120" column="1" bodyfile="include/dpp/utility.h" bodystart="120" bodyend="189"/>
     <listofallmembers>
       <member refid="structdpp_1_1utility_1_1iconhash_1a185b30a583970f0ba298ab0429e29d91" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>first</name></member>
-      <member refid="structdpp_1_1utility_1_1iconhash_1a9cc13a59cf1049a84cea6ee3405bd4ea" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>iconhash</name></member>
+      <member refid="structdpp_1_1utility_1_1iconhash_1a44663b1c989dd7256c09c62eff44ae41" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>iconhash</name></member>
+      <member refid="structdpp_1_1utility_1_1iconhash_1a4bfd1ae9f381180d5c208bc258835c1a" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>iconhash</name></member>
       <member refid="structdpp_1_1utility_1_1iconhash_1a409fbe2ae53e12f6a1517436494b96e4" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>iconhash</name></member>
       <member refid="structdpp_1_1utility_1_1iconhash_1aa341e55d1bb792a5a2592cc064cb91f3" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>operator=</name></member>
+      <member refid="structdpp_1_1utility_1_1iconhash_1ac7ac80b0ab7bae2ea1117618c3ad9dda" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>operator==</name></member>
       <member refid="structdpp_1_1utility_1_1iconhash_1ac78956497078b93d5510d493a4d23172" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>second</name></member>
       <member refid="structdpp_1_1utility_1_1iconhash_1ac675809d00cef53ef6887ef7ffcd095c" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>set</name></member>
       <member refid="structdpp_1_1utility_1_1iconhash_1aeba3e70afad0497f8e9aa1493704a77b" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>to_string</name></member>
+      <member refid="structdpp_1_1utility_1_1iconhash_1a6d951ec2eb1e26b7e27482629a26af0b" prot="public" virt="non-virtual"><scope>dpp::utility::iconhash</scope><name>~iconhash</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

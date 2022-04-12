@@ -21,7 +21,7 @@ var searchData=
   ['rest_5frequest_5flist_3c_20invite_20_3e_18',['rest_request_list&lt; invite &gt;',['../namespacedpp.html#a494de7d152ac533c1283a759f5e7e344',1,'dpp']]],
   ['rest_5frequest_5flist_3c_20voiceregion_20_3e_19',['rest_request_list&lt; voiceregion &gt;',['../namespacedpp.html#a0fc24406b890d9d830e2b0fff9a9ced3',1,'dpp']]],
   ['resumed_5ft_20',['resumed_t',['../structdpp_1_1resumed__t.html#a39a9ceb42b2608326c23e25412eb6967',1,'dpp::resumed_t']]],
-  ['rgb_21',['rgb',['../namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb',1,'dpp::utility::rgb(int red, int green, int blue)'],['../namespacedpp_1_1utility.html#a2ab5fc7a9fd0ac6358c3c7133b563362',1,'dpp::utility::rgb(float red, float green, float blue)']]],
+  ['rgb_21',['rgb',['../namespacedpp_1_1utility.html#a9876a6a9d06223cfb2bf8dc83e7c9783',1,'dpp::utility::rgb(int red, int green, int blue)'],['../namespacedpp_1_1utility.html#ad40571e78df220f4730418085d15ce4b',1,'dpp::utility::rgb(float red, float green, float blue)']]],
   ['role_22',['role',['../classdpp_1_1role.html#aa23013a7a7d7c03c4ef44d6e6fc02baa',1,'dpp::role']]],
   ['role_5fcollector_23',['role_collector',['../classdpp_1_1role__collector.html#a711325fa9e73adc00e7fd470a666c59b',1,'dpp::role_collector']]],
   ['role_5fcreate_24',['role_create',['../classdpp_1_1cluster.html#a849017410297379997601daac5e99ce1',1,'dpp::cluster']]],

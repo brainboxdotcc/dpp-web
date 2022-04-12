@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['iconhash_0',['iconhash',['../structdpp_1_1utility_1_1iconhash.html#a409fbe2ae53e12f6a1517436494b96e4',1,'dpp::utility::iconhash::iconhash(const std::string &amp;hash)'],['../structdpp_1_1utility_1_1iconhash.html#a9cc13a59cf1049a84cea6ee3405bd4ea',1,'dpp::utility::iconhash::iconhash()']]],
+  ['iconhash_0',['iconhash',['../structdpp_1_1utility_1_1iconhash.html#a4bfd1ae9f381180d5c208bc258835c1a',1,'dpp::utility::iconhash::iconhash(const iconhash &amp;)'],['../structdpp_1_1utility_1_1iconhash.html#a409fbe2ae53e12f6a1517436494b96e4',1,'dpp::utility::iconhash::iconhash(const std::string &amp;hash)'],['../structdpp_1_1utility_1_1iconhash.html#a44663b1c989dd7256c09c62eff44ae41',1,'dpp::utility::iconhash::iconhash(uint64_t _first=0, uint64_t _second=0)']]],
   ['in_5fthread_1',['in_thread',['../classdpp_1_1in__thread.html#a11da675f20802345c87836d17f74a6a5',1,'dpp::in_thread']]],
   ['insert_5fmarker_2',['insert_marker',['../classdpp_1_1discord__voice__client.html#a84fc0cb1aaf9691aed818e18daea1b84',1,'dpp::discord_voice_client']]],
   ['int16_5fnot_5fnull_3',['int16_not_null',['../namespacedpp.html#a35672e77d8d9d9f13627b41994f377a6',1,'dpp']]],

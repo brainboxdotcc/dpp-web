@@ -187,11 +187,12 @@ var hierarchy =
         [ "dpp::cache_exception", "classdpp_1_1cache__exception.html", null ],
         [ "dpp::connection_exception", "classdpp_1_1connection__exception.html", null ],
         [ "dpp::file_exception", "classdpp_1_1file__exception.html", null ],
-        [ "dpp::invalid_token_exception", "classdpp_1_1invalid__token__exception.html", null ],
         [ "dpp::length_exception", "classdpp_1_1length__exception.html", null ],
         [ "dpp::logic_exception", "classdpp_1_1logic__exception.html", null ],
         [ "dpp::parse_exception", "classdpp_1_1parse__exception.html", null ],
-        [ "dpp::rest_exception", "classdpp_1_1rest__exception.html", null ],
+        [ "dpp::rest_exception", "classdpp_1_1rest__exception.html", [
+          [ "dpp::invalid_token_exception", "classdpp_1_1invalid__token__exception.html", null ]
+        ] ],
         [ "dpp::voice_exception", "classdpp_1_1voice__exception.html", null ]
       ] ]
     ] ],
@@ -281,6 +282,9 @@ var hierarchy =
     ] ],
     [ "dpp::json_interface< role >", "structdpp_1_1json__interface.html", [
       [ "dpp::role", "classdpp_1_1role.html", null ]
+    ] ],
+    [ "dpp::json_interface< scheduled_event >", "structdpp_1_1json__interface.html", [
+      [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ]
     ] ],
     [ "dpp::json_interface< select_option >", "structdpp_1_1json__interface.html", [
       [ "dpp::select_option", "structdpp_1_1select__option.html", null ]

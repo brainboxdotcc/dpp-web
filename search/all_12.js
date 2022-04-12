@@ -91,7 +91,7 @@ var searchData=
   ['resumes_88',['resumes',['../classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6',1,'dpp::discord_client']]],
   ['retry_5fafter_89',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
   ['revoked_90',['revoked',['../classdpp_1_1connection.html#acd1b67d2114b91c2028ad7d21c224adf',1,'dpp::connection']]],
-  ['rgb_91',['rgb',['../namespacedpp_1_1utility.html#a2ab5fc7a9fd0ac6358c3c7133b563362',1,'dpp::utility::rgb(float red, float green, float blue)'],['../namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb',1,'dpp::utility::rgb(int red, int green, int blue)']]],
+  ['rgb_91',['rgb',['../namespacedpp_1_1utility.html#ad40571e78df220f4730418085d15ce4b',1,'dpp::utility::rgb(float red, float green, float blue)'],['../namespacedpp_1_1utility.html#a9876a6a9d06223cfb2bf8dc83e7c9783',1,'dpp::utility::rgb(int red, int green, int blue)']]],
   ['rich_5fpresence_92',['rich_presence',['../structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813',1,'dpp::presence_update_t']]],
   ['role_93',['role',['../classdpp_1_1role.html',1,'dpp::role'],['../classdpp_1_1role.html#aa23013a7a7d7c03c4ef44d6e6fc02baa',1,'dpp::role::role()']]],
   ['role_5fcache_94',['role_cache',['../namespacedpp.html#a74d591ac1d334f8a412f3f1c4f6d65ff',1,'dpp']]],

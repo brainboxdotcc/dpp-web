@@ -3,6 +3,7 @@
   <compounddef id="structdpp_1_1scheduled__event" kind="struct" language="C++" prot="public">
     <compoundname>dpp::scheduled_event</compoundname>
     <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; scheduled_event &gt;</basecompoundref>
     <includes local="no">scheduled_event.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1scheduled__event_1a5872e40ff1f2bf3599d5403ec6fe6599" prot="public" static="no" mutable="no">
@@ -593,13 +594,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/scheduled_event.h" line="202" column="18" bodyfile="src/dpp/scheduled_event.cpp" bodystart="112" bodyend="136"/>
+        <location file="include/dpp/scheduled_event.h" line="202" column="17" bodyfile="src/dpp/scheduled_event.cpp" bodystart="112" bodyend="136"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1scheduled__event_1a60b34edcea4ce3c783d57e9766f17a94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string const</type>
-        <definition>std::string const dpp::scheduled_event::build_json</definition>
+      <memberdef kind="function" id="structdpp_1_1scheduled__event_1ada41e25b4d3e381611b76e7704d724ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::scheduled_event::build_json</definition>
         <argsstring>(bool with_id=false) const</argsstring>
         <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
         <param>
           <type>bool</type>
           <declname>with_id</declname>
@@ -624,7 +626,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/scheduled_event.h" line="210" column="27" bodyfile="src/dpp/scheduled_event.cpp" bodystart="138" bodyend="183"/>
+        <location file="include/dpp/scheduled_event.h" line="210" column="21" bodyfile="src/dpp/scheduled_event.cpp" bodystart="138" bodyend="183"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -707,6 +709,36 @@
         </inbodydescription>
         <location file="include/dpp/managed.h" line="73" column="6" bodyfile="src/dpp/managed.cpp" bodystart="32" bodyend="34"/>
       </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ab47175b6c586e2fc901b1ff0182f16ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref> &amp;</type>
+        <definition>scheduled_event  &amp; dpp::json_interface&lt; scheduled_event  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="42" column="3" bodyfile="include/dpp/json_interface.h" bodystart="42" bodyend="44"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>A scheduled event. </para>
@@ -714,6 +746,10 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="4">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
       <node id="2">
         <label>dpp::managed</label>
         <link refid="classdpp_1_1managed"/>
@@ -723,17 +759,26 @@
         <link refid="structdpp_1_1scheduled__event"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; scheduled_event &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; scheduled_event &gt;</edgelabel>
+        </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="10">
+      <node id="12">
         <label>dpp::event_entities</label>
         <link refid="structdpp_1_1event__entities"/>
-        <childnode refid="4" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>location</edgelabel>
         </childnode>
       </node>
-      <node id="13">
+      <node id="5">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
@@ -749,64 +794,66 @@
         <link refid="structdpp_1_1scheduled__event"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>channel_id</edgelabel>
           <edgelabel>creator_id</edgelabel>
           <edgelabel>entity_id</edgelabel>
           <edgelabel>guild_id</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>description</edgelabel>
           <edgelabel>image</edgelabel>
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>scheduled_end_time</edgelabel>
           <edgelabel>scheduled_start_time</edgelabel>
         </childnode>
-        <childnode refid="7" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>privacy_level</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>status</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>entity_type</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>entity_metadata</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>creator</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>user_count</edgelabel>
         </childnode>
       </node>
-      <node id="11">
+      <node id="13">
         <label>dpp::user</label>
         <link refid="classdpp_1_1user"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="14" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>username</edgelabel>
         </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>avatar</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>discriminator</edgelabel>
         </childnode>
-        <childnode refid="17" relation="usage">
+        <childnode refid="18" relation="usage">
           <edgelabel>refcount</edgelabel>
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>dpp::utility::iconhash</label>
         <link refid="structdpp_1_1utility_1_1iconhash"/>
         <childnode refid="3" relation="usage">
@@ -814,49 +861,56 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="9">
+      <node id="11">
         <label>event_entity_type</label>
       </node>
-      <node id="7">
+      <node id="9">
         <label>event_privacy_level</label>
       </node>
-      <node id="8">
+      <node id="10">
         <label>event_status</label>
       </node>
-      <node id="12">
+      <node id="4">
+        <label>dpp::json_interface&lt; scheduled_event &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; scheduled_event &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
         <label>dpp::json_interface&lt; user &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="13" relation="template-instance">
+        <childnode refid="5" relation="template-instance">
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="5">
+      <node id="7">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="4">
+      <node id="6">
         <label>std::string</label>
-        <childnode refid="5" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6">
+      <node id="8">
         <label>time_t</label>
       </node>
-      <node id="16">
+      <node id="17">
         <label>uint16_t</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>uint32_t</label>
       </node>
       <node id="3">
         <label>uint64_t</label>
       </node>
-      <node id="17">
+      <node id="18">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
     <location file="include/dpp/scheduled_event.h" line="97" column="1" bodyfile="include/dpp/scheduled_event.h" bodystart="97" bodyend="211"/>
     <listofallmembers>
-      <member refid="structdpp_1_1scheduled__event_1a60b34edcea4ce3c783d57e9766f17a94" prot="public" virt="virtual"><scope>dpp::scheduled_event</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1scheduled__event_1ada41e25b4d3e381611b76e7704d724ee" prot="public" virt="virtual"><scope>dpp::scheduled_event</scope><name>build_json</name></member>
       <member refid="structdpp_1_1scheduled__event_1a5b6b7c91848c8723141950f370eec2ee" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>channel_id</name></member>
       <member refid="structdpp_1_1scheduled__event_1a9d315ff12641d8318989556769269c4a" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>clear_description</name></member>
       <member refid="structdpp_1_1scheduled__event_1a00779228a1511d4d256156c68fc058a5" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>creator</name></member>
@@ -866,6 +920,7 @@
       <member refid="structdpp_1_1scheduled__event_1aacfd8d3b0bb171ea11f6613a334d0a73" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>entity_metadata</name></member>
       <member refid="structdpp_1_1scheduled__event_1afd4d1b9be6926956b7631eba31ea81f7" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>entity_type</name></member>
       <member refid="structdpp_1_1scheduled__event_1a99bff586aef0ff58f4d16367f948e997" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1json__interface_1ab47175b6c586e2fc901b1ff0182f16ea" prot="public" virt="non-virtual" ambiguityscope="json_interface&lt; scheduled_event &gt;::"><scope>dpp::scheduled_event</scope><name>fill_from_json</name></member>
       <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>get_creation_time</name></member>
       <member refid="structdpp_1_1scheduled__event_1a5872e40ff1f2bf3599d5403ec6fe6599" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>guild_id</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::scheduled_event</scope><name>id</name></member>

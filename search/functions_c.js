@@ -45,7 +45,7 @@ var searchData=
   ['operator_22_22_5fformat_42',['operator&quot;&quot;_format',['../namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2',1,'operator&quot;&quot;_format():&#160;xchar.h'],['../namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2',1,'literals::operator&quot;&quot;_format()']]],
   ['operator_28_29_43',['operator()',['../classdpp_1_1event__router__t.html#afde1df1dba72f9a6e35b676b89ebc8e0',1,'dpp::event_router_t']]],
   ['operator_3d_44',['operator=',['../structdpp_1_1utility_1_1iconhash.html#aa341e55d1bb792a5a2592cc064cb91f3',1,'dpp::utility::iconhash']]],
-  ['operator_3d_3d_45',['operator==',['../classdpp_1_1managed.html#aaae075e2919ee153d9c1ed34c41b8a33',1,'dpp::managed']]],
+  ['operator_3d_3d_45',['operator==',['../classdpp_1_1managed.html#aaae075e2919ee153d9c1ed34c41b8a33',1,'dpp::managed::operator==()'],['../structdpp_1_1utility_1_1iconhash.html#ac7ac80b0ab7bae2ea1117618c3ad9dda',1,'dpp::utility::iconhash::operator==()']]],
   ['out_46',['out',['../classtm__writer.html#a7964cad83c9234f6037690f12c2401c6',1,'tm_writer']]],
   ['out_5floop_47',['out_loop',['../classdpp_1_1request__queue.html#a63acf79e2ab7a915f3ba59f1bdebe758',1,'dpp::request_queue']]]
 ];

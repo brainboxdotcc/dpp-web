@@ -87,7 +87,7 @@ var searchData=
   ['get_5fqueue_5fsize_84',['get_queue_size',['../classdpp_1_1discord__client.html#ab25ca466fa10477d1660d9afac0b5f28',1,'dpp::discord_client']]],
   ['get_5fraw_5frest_85',['get_raw_rest',['../classdpp_1_1cluster.html#aaf4dd99670856e7efed749e53e96fa7c',1,'dpp::cluster']]],
   ['get_5fremaining_86',['get_remaining',['../classdpp_1_1discord__voice__client.html#a15ec0940d0a963dbb5e58d2eb895bcc6',1,'dpp::discord_voice_client']]],
-  ['get_5frequest_5fthread_5fcount_87',['get_request_thread_count',['../classdpp_1_1request__queue.html#a0ac8eb85399c5219e8ea633504fef84b',1,'dpp::request_queue']]],
+  ['get_5frequest_5fthread_5fcount_87',['get_request_thread_count',['../classdpp_1_1request__queue.html#a6a734c3fc440847f02980be0e3df0c2b',1,'dpp::request_queue']]],
   ['get_5frest_88',['get_rest',['../classdpp_1_1cluster.html#a77a590b138e5a832faba65cc8de449c4',1,'dpp::cluster']]],
   ['get_5frole_5fcache_89',['get_role_cache',['../namespacedpp.html#ab13bee0a40c1f0e9c88f635b3bf113fd',1,'dpp']]],
   ['get_5frole_5fcount_90',['get_role_count',['../namespacedpp.html#a350d31a987f01b3fe24d17bc59b1d9b1',1,'dpp']]],
