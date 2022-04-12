@@ -410,6 +410,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html">https_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a HTTPS socket client based on the SSL client.  <a href="classdpp_1_1https__client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1in__thread.html">in_thread</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a thread in the thread pool handling requests to HTTP(S) servers. There are several of these, the total defined by a constant in queues.cpp, and each one will always receive requests for the same rate limit bucket based on its endpoint portion of the url. This makes rate limit handling reliable and easy to manage. Each of these also has its own mutex, so that requests are less likely to block while waiting for internal containers to be usable.  <a href="classdpp_1_1in__thread.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1integration.html">integration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an integration on a guild, e.g. a connection to twitch.  <a href="classdpp_1_1integration.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1438,6 +1441,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88a73688ae9310f5f6b452d1e5e0a09319f">m_delete</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a805ef1feb2862a208ec0e9d1be005c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various types of http method supported by the Discord API.  <a href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">More...</a><br /></td></tr>
 <tr class="separator:a805ef1feb2862a208ec0e9d1be005c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af803e69eddf23c5862947295f3df5d53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53">role_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e">r_hoist</a> = 0b00000001
 , <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6">r_managed</a> = 0b00000010
@@ -1716,6 +1720,8 @@ Functions</h2></td></tr>
 <tr class="separator:acd18d41e47000c592ab63b702335e184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad6090df4ddac62da6eaddf6ea3367e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aad6090df4ddac62da6eaddf6ea3367e1">populate_result</a> (const std::string &amp;url, <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;rv, const <a class="el" href="classdpp_1_1https__client.html">https_client</a> &amp;res)</td></tr>
 <tr class="separator:aad6090df4ddac62da6eaddf6ea3367e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac484e126123707976b1332664ac10b1d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac484e126123707976b1332664ac10b1d">hash</a> (const char *s)</td></tr>
+<tr class="separator:ac484e126123707976b1332664ac10b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1command__option__choice.html">command_option_choice</a> &amp;choice)</td></tr>
 <tr class="memdesc:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to serialize a <a class="el" href="structdpp_1_1command__option__choice.html" title="This struct represents choices in a multiple choice option for a command parameter....">command_option_choice</a> to json  <a href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">More...</a><br /></td></tr>
 <tr class="separator:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1863,6 +1869,8 @@ Variables</h2></td></tr>
 <tr class="separator:a4f29330ede66fa21fc47c361a9c51a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27df95e52167e3d7020ee6ad7958eaa8"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a27df95e52167e3d7020ee6ad7958eaa8">DISCORD_HOST</a> = &quot;https://discord.com&quot;</td></tr>
 <tr class="separator:a27df95e52167e3d7020ee6ad7958eaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53aa83b448b017eb9f3274393559e4ac"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a53aa83b448b017eb9f3274393559e4ac">in_thread_pool_size</a> = 8</td></tr>
+<tr class="separator:a53aa83b448b017eb9f3274393559e4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b7f88664195026b4434bdaab3dce5d"><td class="memItemLeft" align="right" valign="top">thread_local std::unordered_map&lt; std::string, <a class="el" href="structdpp_1_1keepalive__cache__t.html">keepalive_cache_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a07b7f88664195026b4434bdaab3dce5d">keepalives</a></td></tr>
 <tr class="separator:a07b7f88664195026b4434bdaab3dce5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd1452ee8156729d4cb1ae5cbfdda87"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87">ERROR_STATUS</a> = -1</td></tr>
@@ -3603,7 +3611,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Various types of http method supported by the Discord API </p>
+
+<p>Various types of http method supported by the Discord API. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a805ef1feb2862a208ec0e9d1be005c88a1c5397a2ab65a9b09e466d3e7cf5a82e" name="a805ef1feb2862a208ec0e9d1be005c88a1c5397a2ab65a9b09e466d3e7cf5a82e"></a>m_get&#160;</td><td class="fielddoc"><p >GET. </p>
 </td></tr>
@@ -5613,6 +5622,32 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac484e126123707976b1332664ac10b1d" name="ac484e126123707976b1332664ac10b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac484e126123707976b1332664ac10b1d">&#9670;&nbsp;</a></span>hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dpp::hash </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -7749,6 +7784,20 @@ template&lt;typename T &gt; </div>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53aa83b448b017eb9f3274393559e4ac" name="a53aa83b448b017eb9f3274393559e4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53aa83b448b017eb9f3274393559e4ac">&#9670;&nbsp;</a></span>in_thread_pool_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t dpp::in_thread_pool_size = 8</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

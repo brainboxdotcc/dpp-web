@@ -164,6 +164,7 @@ var annotated_dup =
       [ "http_request", "classdpp_1_1http__request.html", "classdpp_1_1http__request" ],
       [ "http_request_completion_t", "structdpp_1_1http__request__completion__t.html", "structdpp_1_1http__request__completion__t" ],
       [ "https_client", "classdpp_1_1https__client.html", "classdpp_1_1https__client" ],
+      [ "in_thread", "classdpp_1_1in__thread.html", "classdpp_1_1in__thread" ],
       [ "integration", "classdpp_1_1integration.html", "classdpp_1_1integration" ],
       [ "integration_app", "structdpp_1_1integration__app.html", "structdpp_1_1integration__app" ],
       [ "integration_create_t", "structdpp_1_1integration__create__t.html", "structdpp_1_1integration__create__t" ],

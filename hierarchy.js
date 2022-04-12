@@ -212,6 +212,7 @@ var hierarchy =
     [ "dpp::http_request", "classdpp_1_1http__request.html", null ],
     [ "dpp::http_request_completion_t", "structdpp_1_1http__request__completion__t.html", null ],
     [ "dpp::utility::iconhash", "structdpp_1_1utility_1_1iconhash.html", null ],
+    [ "dpp::in_thread", "classdpp_1_1in__thread.html", null ],
     [ "dpp::component::inner_emoji", "structdpp_1_1component_1_1inner__emoji.html", null ],
     [ "dpp::select_option::inner_select_emoji", "structdpp_1_1select__option_1_1inner__select__emoji.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],

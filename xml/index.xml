@@ -2062,6 +2062,20 @@
     <member refid="structdpp_1_1utility_1_1iconhash_1ac675809d00cef53ef6887ef7ffcd095c" kind="function"><name>set</name></member>
     <member refid="structdpp_1_1utility_1_1iconhash_1aeba3e70afad0497f8e9aa1493704a77b" kind="function"><name>to_string</name></member>
   </compound>
+  <compound refid="classdpp_1_1in__thread" kind="class"><name>dpp::in_thread</name>
+    <member refid="classdpp_1_1in__thread_1a0ed20354f9c47a238702477ad3870d62" kind="variable"><name>terminating</name></member>
+    <member refid="classdpp_1_1in__thread_1af879ab50fc6a4e0b584aa1af17700187" kind="variable"><name>requests</name></member>
+    <member refid="classdpp_1_1in__thread_1a5005687e4243b2d4c946f7adc1b36c34" kind="variable"><name>creator</name></member>
+    <member refid="classdpp_1_1in__thread_1a58d9d4390201fc8d4b6469f91ea2c2cf" kind="variable"><name>in_mutex</name></member>
+    <member refid="classdpp_1_1in__thread_1a5367c50def21f9ff755a1efe3d880408" kind="variable"><name>in_thr</name></member>
+    <member refid="classdpp_1_1in__thread_1ab43f5ed51219081d52143f7e3a32b6c7" kind="variable"><name>in_ready</name></member>
+    <member refid="classdpp_1_1in__thread_1a85e8e2af544c0a62c9f4fd4a576d9edf" kind="variable"><name>buckets</name></member>
+    <member refid="classdpp_1_1in__thread_1a983a491d310f4c73425c3df23d00e1e6" kind="variable"><name>requests_in</name></member>
+    <member refid="classdpp_1_1in__thread_1ada0fc8fb65bb5591664fe2299ba8a49d" kind="function"><name>in_loop</name></member>
+    <member refid="classdpp_1_1in__thread_1a11da675f20802345c87836d17f74a6a5" kind="function"><name>in_thread</name></member>
+    <member refid="classdpp_1_1in__thread_1a1d739e6980d29c21ec366d6723b3c7f5" kind="function"><name>~in_thread</name></member>
+    <member refid="classdpp_1_1in__thread_1aafd1339f015ed11175d0d01abe42031a" kind="function"><name>post_request</name></member>
+  </compound>
   <compound refid="structdpp_1_1component_1_1inner__emoji" kind="struct"><name>dpp::component::inner_emoji</name>
     <member refid="structdpp_1_1component_1_1inner__emoji_1a32179e3d0a3821773b3d1f506b250dd7" kind="variable"><name>name</name></member>
     <member refid="structdpp_1_1component_1_1inner__emoji_1a42d2f4c810e84f860113278c306548f5" kind="variable"><name>id</name></member>
@@ -2674,25 +2688,22 @@
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
   <compound refid="classdpp_1_1request__queue" kind="class"><name>dpp::request_queue</name>
+    <member refid="classdpp_1_1request__queue_1a7fc81bccd183cc7fe664c9a68dd08dd8" kind="friend"><name>in_thread</name></member>
     <member refid="classdpp_1_1request__queue_1afc5bd2c27798f38630d996d1666dbbca" kind="variable"><name>creator</name></member>
-    <member refid="classdpp_1_1request__queue_1a9301b3efd7fbc1c876461af64fc3981d" kind="variable"><name>in_mutex</name></member>
     <member refid="classdpp_1_1request__queue_1a3e820d1ff86e88e36a07f859064a7fca" kind="variable"><name>out_mutex</name></member>
-    <member refid="classdpp_1_1request__queue_1aec6d4566eb6b683a13a87612b01fa6a3" kind="variable"><name>in_thread</name></member>
     <member refid="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" kind="variable"><name>out_thread</name></member>
-    <member refid="classdpp_1_1request__queue_1abaeb87b838ae1e51cd289c374aa2c588" kind="variable"><name>in_ready</name></member>
     <member refid="classdpp_1_1request__queue_1a4e4ca349f25239201a985adb1db64353" kind="variable"><name>out_ready</name></member>
-    <member refid="classdpp_1_1request__queue_1adb1de27950315b417ca5369442982474" kind="variable"><name>buckets</name></member>
-    <member refid="classdpp_1_1request__queue_1af96e872986a6844f4735b0c2da1e43b1" kind="variable"><name>requests_in</name></member>
     <member refid="classdpp_1_1request__queue_1ade3ecfd45592dfcea06e6e9de9b70583" kind="variable"><name>responses_out</name></member>
+    <member refid="classdpp_1_1request__queue_1a55e16f17459875caa27c1e34d2d8ad1e" kind="variable"><name>requests_in</name></member>
     <member refid="classdpp_1_1request__queue_1a9f22c2c802a90fddf160d13ffd0020e9" kind="variable"><name>responses_to_delete</name></member>
     <member refid="classdpp_1_1request__queue_1a7fd6a3d04141f1d227d1253fa414b1fd" kind="variable"><name>terminating</name></member>
     <member refid="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" kind="variable"><name>globally_ratelimited</name></member>
     <member refid="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" kind="variable"><name>globally_limited_for</name></member>
-    <member refid="classdpp_1_1request__queue_1a88f8d5a05b3f235c07ccccd8bef10a2c" kind="function"><name>in_loop</name></member>
     <member refid="classdpp_1_1request__queue_1a63acf79e2ab7a915f3ba59f1bdebe758" kind="function"><name>out_loop</name></member>
     <member refid="classdpp_1_1request__queue_1ad2fd85ef74eb9f7cc91897ba2d3f6957" kind="function"><name>request_queue</name></member>
     <member refid="classdpp_1_1request__queue_1a5ccaae72d03d626852be0a0d3c6b86dd" kind="function"><name>~request_queue</name></member>
     <member refid="classdpp_1_1request__queue_1a59e2169cb34083a6de526d4eafb99fd0" kind="function"><name>post_request</name></member>
+    <member refid="classdpp_1_1request__queue_1adf8d6cdce3298446bc199d8a04a9d158" kind="function"><name>is_globally_ratelimited</name></member>
   </compound>
   <compound refid="structdpp_1_1resolved__user" kind="struct"><name>dpp::resolved_user</name>
     <member refid="structdpp_1_1resolved__user_1a2637dfddc2584ff21d6772b9540818d4" kind="variable"><name>user</name></member>
@@ -4334,6 +4345,7 @@
     <member refid="namespacedpp_1aa54eb501e23564f837949f0f5a574abb" kind="variable"><name>stop_event</name></member>
     <member refid="namespacedpp_1a4f29330ede66fa21fc47c361a9c51a7b" kind="variable"><name>http_version</name></member>
     <member refid="namespacedpp_1a27df95e52167e3d7020ee6ad7958eaa8" kind="variable"><name>DISCORD_HOST</name></member>
+    <member refid="namespacedpp_1a53aa83b448b017eb9f3274393559e4ac" kind="variable"><name>in_thread_pool_size</name></member>
     <member refid="namespacedpp_1a07b7f88664195026b4434bdaab3dce5d" kind="variable"><name>keepalives</name></member>
     <member refid="namespacedpp_1a5dd1452ee8156729d4cb1ae5cbfdda87" kind="variable"><name>ERROR_STATUS</name></member>
     <member refid="namespacedpp_1aefdd77f67658f0ff12429f40d58b920b" kind="variable"><name>MAX_ICON_SIZE</name></member>
@@ -4389,6 +4401,7 @@
     <member refid="namespacedpp_1a5492d13e01367c06d893f7f7e1b6e929" kind="function"><name>to_json</name></member>
     <member refid="namespacedpp_1acd18d41e47000c592ab63b702335e184" kind="function"><name>to_json</name></member>
     <member refid="namespacedpp_1aad6090df4ddac62da6eaddf6ea3367e1" kind="function"><name>populate_result</name></member>
+    <member refid="namespacedpp_1ac484e126123707976b1332664ac10b1d" kind="function"><name>hash</name></member>
     <member refid="namespacedpp_1ae5041ec3547b4d4b7bf3416eea9b6403" kind="function"><name>to_json</name></member>
     <member refid="namespacedpp_1ae6a96c54dc4f6dad8f8f6bbe05fea254" kind="function"><name>to_json</name></member>
     <member refid="namespacedpp_1a752b7140de023c34db60c92363aacf3f" kind="function"><name>to_json</name></member>
