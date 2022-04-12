@@ -950,7 +950,6 @@ var namespacedpp =
     [ "FORMAT_VERSION", "namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29", null ],
     [ "guild_cache", "namespacedpp.html#a0fd81363d06b016c25fc810632b5f0b0", null ],
     [ "http_version", "namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b", null ],
-    [ "in_thread_pool_size", "namespacedpp.html#a53aa83b448b017eb9f3274393559e4ac", null ],
     [ "keepalives", "namespacedpp.html#a07b7f88664195026b4434bdaab3dce5d", null ],
     [ "lasthandle", "namespacedpp.html#ae16796831ecce90e670d207b0d0e1dd8", null ],
     [ "MAX_ICON_SIZE", "namespacedpp.html#aefdd77f67658f0ff12429f40d58b920b", null ],

@@ -121,9 +121,15 @@ $(document).ready(function(){initNavTree('classdpp_1_1request__queue.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad2fd85ef74eb9f7cc91897ba2d3f6957"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#ad2fd85ef74eb9f7cc91897ba2d3f6957">request_queue</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner)</td></tr>
-<tr class="memdesc:ad2fd85ef74eb9f7cc91897ba2d3f6957"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="classdpp_1_1request__queue.html#ad2fd85ef74eb9f7cc91897ba2d3f6957">More...</a><br /></td></tr>
-<tr class="separator:ad2fd85ef74eb9f7cc91897ba2d3f6957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec7ef3d2deeef5687355cb1e6fb2eb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#afec7ef3d2deeef5687355cb1e6fb2eb3">request_queue</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, uint32_t request_threads=8)</td></tr>
+<tr class="memdesc:afec7ef3d2deeef5687355cb1e6fb2eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="classdpp_1_1request__queue.html#afec7ef3d2deeef5687355cb1e6fb2eb3">More...</a><br /></td></tr>
+<tr class="separator:afec7ef3d2deeef5687355cb1e6fb2eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe4dbbb7a405029a5e24905ae6c5ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#adfe4dbbb7a405029a5e24905ae6c5ea4">add_request_threads</a> (uint32_t request_threads)</td></tr>
+<tr class="memdesc:adfe4dbbb7a405029a5e24905ae6c5ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add more request threads to the library at runtime.  <a href="classdpp_1_1request__queue.html#adfe4dbbb7a405029a5e24905ae6c5ea4">More...</a><br /></td></tr>
+<tr class="separator:adfe4dbbb7a405029a5e24905ae6c5ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac8eb85399c5219e8ea633504fef84b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a0ac8eb85399c5219e8ea633504fef84b">get_request_thread_count</a> ()</td></tr>
+<tr class="memdesc:a0ac8eb85399c5219e8ea633504fef84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the request thread count.  <a href="classdpp_1_1request__queue.html#a0ac8eb85399c5219e8ea633504fef84b">More...</a><br /></td></tr>
+<tr class="separator:a0ac8eb85399c5219e8ea633504fef84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a5ccaae72d03d626852be0a0d3c6b86dd">~request_queue</a> ()</td></tr>
 <tr class="memdesc:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the request queue object. Side effects: Joins and deletes queue threads.  <a href="classdpp_1_1request__queue.html#a5ccaae72d03d626852be0a0d3c6b86dd">More...</a><br /></td></tr>
 <tr class="separator:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +178,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a4570a2b18fe55011495f956f807db8ef"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a4570a2b18fe55011495f956f807db8ef">globally_limited_for</a></td></tr>
 <tr class="memdesc:a4570a2b18fe55011495f956f807db8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many seconds we are globally rate limited for, if globally_ratelimited is true.  <a href="classdpp_1_1request__queue.html#a4570a2b18fe55011495f956f807db8ef">More...</a><br /></td></tr>
 <tr class="separator:a4570a2b18fe55011495f956f807db8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55eefe311c71c787c779eb035aa9daea"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a55eefe311c71c787c779eb035aa9daea">in_thread_pool_size</a></td></tr>
+<tr class="memdesc:a55eefe311c71c787c779eb035aa9daea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of request threads in the thread pool.  <a href="classdpp_1_1request__queue.html#a55eefe311c71c787c779eb035aa9daea">More...</a><br /></td></tr>
+<tr class="separator:a55eefe311c71c787c779eb035aa9daea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -185,8 +194,8 @@ Friends</h2></td></tr>
 <p >It will spawn two threads, one to make outbound HTTP requests and push the returned results into a queue, and the second to call the callback methods with these results. They are separated so that if the user decides to take a long time processing a reply in their callback it won't affect when other requests are sent, and if a HTTP request takes a long time due to latency, it won't hold up user processing.</p>
 <p >There are usually two <a class="el" href="classdpp_1_1request__queue.html" title="The request_queue class manages rate limits and marshalls HTTP requests that have been built as http_...">request_queue</a> objects in each <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a>, one of which is used internally for the various REST methods to Discord such as sending messages, and the other used to support user REST calls via <a class="el" href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request()</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad2fd85ef74eb9f7cc91897ba2d3f6957" name="ad2fd85ef74eb9f7cc91897ba2d3f6957"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2fd85ef74eb9f7cc91897ba2d3f6957">&#9670;&nbsp;</a></span>request_queue()</h2>
+<a id="afec7ef3d2deeef5687355cb1e6fb2eb3" name="afec7ef3d2deeef5687355cb1e6fb2eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec7ef3d2deeef5687355cb1e6fb2eb3">&#9670;&nbsp;</a></span>request_queue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,8 +204,18 @@ Friends</h2></td></tr>
           <td class="memname">dpp::request_queue::request_queue </td>
           <td>(</td>
           <td class="paramtype">class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *&#160;</td>
-          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>request_threads</em> = <code>8</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,7 +223,8 @@ Friends</h2></td></tr>
 <p>constructor </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">owner</td><td>The creating cluster. Side effects: Creates threads for the queue </td></tr>
+    <tr><td class="paramname">owner</td><td>The creating cluster. </td></tr>
+    <tr><td class="paramname">request_threads</td><td>The number of http request threads to allocate to the threadpool. By default eight threads are allocated. Side effects: Creates threads for the queue </td></tr>
   </table>
   </dd>
 </dl>
@@ -231,6 +251,53 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="adfe4dbbb7a405029a5e24905ae6c5ea4" name="adfe4dbbb7a405029a5e24905ae6c5ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe4dbbb7a405029a5e24905ae6c5ea4">&#9670;&nbsp;</a></span>add_request_threads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::request_queue::add_request_threads </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>request_threads</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add more request threads to the library at runtime. </p>
+<dl class="section note"><dt>Note</dt><dd>You should do this at a quiet time when there are few requests happening. This will reorganise the hashing used to place requests into the thread pool so if you do this while the bot is busy there is a small chance of receiving "429 rate limited" errors. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request_threads</td><td>Number of threads to add. It is not possible to scale down at runtime. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ac8eb85399c5219e8ea633504fef84b" name="a0ac8eb85399c5219e8ea633504fef84b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac8eb85399c5219e8ea633504fef84b">&#9670;&nbsp;</a></span>get_request_thread_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dpp::request_queue::get_request_thread_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the request thread count. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t number of request threads that are active </dd></dl>
+
+</div>
+</div>
 <a id="adf8d6cdce3298446bc199d8a04a9d158" name="adf8d6cdce3298446bc199d8a04a9d158"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf8d6cdce3298446bc199d8a04a9d158">&#9670;&nbsp;</a></span>is_globally_ratelimited()</h2>
 
@@ -400,6 +467,30 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>True if globally rate limited - makes the entire request thread wait. </p>
+
+</div>
+</div>
+<a id="a55eefe311c71c787c779eb035aa9daea" name="a55eefe311c71c787c779eb035aa9daea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55eefe311c71c787c779eb035aa9daea">&#9670;&nbsp;</a></span>in_thread_pool_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dpp::request_queue::in_thread_pool_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of request threads in the thread pool. </p>
 
 </div>
 </div>

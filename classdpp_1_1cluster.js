@@ -1,6 +1,6 @@
 var classdpp_1_1cluster =
 [
-    [ "cluster", "classdpp_1_1cluster.html#aac40e45e1ff8efb4e9ae75a7ecacc786", null ],
+    [ "cluster", "classdpp_1_1cluster.html#aad951146b60f8e82fb4aee6e487238a4", null ],
     [ "cluster", "classdpp_1_1cluster.html#a6b0b523f89559b4ce204ca9ed9693d79", null ],
     [ "cluster", "classdpp_1_1cluster.html#a2d957f52245734f6d44444af8380c952", null ],
     [ "~cluster", "classdpp_1_1cluster.html#a270be0ab59aff4f335ef3f4af7559d92", null ],
@@ -83,6 +83,8 @@ var classdpp_1_1cluster =
     [ "get_gateway_bot_sync", "classdpp_1_1cluster.html#a2686c9d5fb863f7c254e05c306d7d153", null ],
     [ "get_guild_webhooks", "classdpp_1_1cluster.html#a8d352afcbc0430ca11576386278da7d0", null ],
     [ "get_guild_webhooks_sync", "classdpp_1_1cluster.html#a36d081c165e94ddb85dd183e6157199b", null ],
+    [ "get_raw_rest", "classdpp_1_1cluster.html#aaf4dd99670856e7efed749e53e96fa7c", null ],
+    [ "get_rest", "classdpp_1_1cluster.html#a77a590b138e5a832faba65cc8de449c4", null ],
     [ "get_shard", "classdpp_1_1cluster.html#a5c677c0d5c059e87cc01ce598d49487d", null ],
     [ "get_shards", "classdpp_1_1cluster.html#af4d6195862e6d25c644902631a0b34d1", null ],
     [ "get_voice_regions", "classdpp_1_1cluster.html#af6d45a29b3976f7b623d92e70ab9a1bc", null ],
