@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1http__request" kind="class" language="C++" prot="public">
+    <compoundname>dpp::http_request</compoundname>
+    <includes local="no">queues.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a12922296092235b17ac7408824b87d8b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ae3249e99494d04bb4be50341f474621e" kindref="member">http_completion_event</ref></type>
+        <definition>http_completion_event dpp::http_request::complete_handler</definition>
+        <argsstring></argsstring>
+        <name>complete_handler</name>
+        <briefdescription>
+<para>Completion callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="132" column="23" bodyfile="include/dpp/queues.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a11692126b1bed5e583a8844007be7be4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::http_request::completed</definition>
+        <argsstring></argsstring>
+        <name>completed</name>
+        <briefdescription>
+<para>True if request has been made. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="134" column="6" bodyfile="include/dpp/queues.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a123a4de946395b4d21b57156269b23d3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::http_request::non_discord</definition>
+        <argsstring></argsstring>
+        <name>non_discord</name>
+        <briefdescription>
+<para>True for requests that are not going to discord (rate limits code skipped) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="136" column="6" bodyfile="include/dpp/queues.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a31cf6b360a893292435ea56b8d6a94c6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_request::endpoint</definition>
+        <argsstring></argsstring>
+        <name>endpoint</name>
+        <briefdescription>
+<para>Endpoint name e.g. /api/users. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="139" column="13" bodyfile="include/dpp/queues.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a349ce3f41c300aeac915d38f8f1d8642" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_request::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+<para>Major and minor parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="141" column="13" bodyfile="include/dpp/queues.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1adab1976475788ca96b5b52349367a322" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_request::postdata</definition>
+        <argsstring></argsstring>
+        <name>postdata</name>
+        <briefdescription>
+<para>Postdata for POST and PUT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="143" column="13" bodyfile="include/dpp/queues.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a6717d11da20292e2dc77826def3aaef3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">http_method</ref></type>
+        <definition>http_method dpp::http_request::method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+<para>HTTP method for request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="145" column="13" bodyfile="include/dpp/queues.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a96bc944a868341d97772beca88f02ac0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_request::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+<para>Audit log reason for Discord requests, if non-empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="147" column="13" bodyfile="include/dpp/queues.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a734b0df9c63a7b8298511504c64e6a1c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::http_request::file_name</definition>
+        <argsstring></argsstring>
+        <name>file_name</name>
+        <briefdescription>
+<para>Upload file name (server side) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="149" column="13" bodyfile="include/dpp/queues.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a9d1ca5488bf190a37a485a856b75fda9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::http_request::file_content</definition>
+        <argsstring></argsstring>
+        <name>file_content</name>
+        <briefdescription>
+<para>Upload file contents (binary) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="151" column="13" bodyfile="include/dpp/queues.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1aedac6464c95174507a322861191ccc02" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_request::mimetype</definition>
+        <argsstring></argsstring>
+        <name>mimetype</name>
+        <briefdescription>
+<para>Request mime type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="153" column="13" bodyfile="include/dpp/queues.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1a7248f6e47440f670e2a9adbfb50022bc" prot="public" static="no" mutable="no">
+        <type>std::multimap&lt; std::string, std::string &gt;</type>
+        <definition>std::multimap&lt;std::string, std::string&gt; dpp::http_request::req_headers</definition>
+        <argsstring></argsstring>
+        <name>req_headers</name>
+        <briefdescription>
+<para>Request headers (non-discord requests only) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="155" column="15" bodyfile="include/dpp/queues.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1http__request_1ad504dae645a77b338bc6a14e5dd44a7d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::http_request::waiting</definition>
+        <argsstring></argsstring>
+        <name>waiting</name>
+        <briefdescription>
+<para>Waiting for rate limit to expire. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="157" column="6" bodyfile="include/dpp/queues.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1http__request_1a07b3bbba903d3b5c4c489da6148b3ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::http_request::http_request</definition>
+        <argsstring>(const std::string &amp;_endpoint, const std::string &amp;_parameters, http_completion_event completion, const std::string &amp;_postdata=&quot;&quot;, http_method method=m_get, const std::string &amp;audit_reason=&quot;&quot;, const std::string &amp;filename=&quot;&quot;, const std::string &amp;filecontent=&quot;&quot;)</argsstring>
+        <name>http_request</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_endpoint</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_parameters</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1ae3249e99494d04bb4be50341f474621e" kindref="member">http_completion_event</ref></type>
+          <declname>completion</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_postdata</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">http_method</ref></type>
+          <declname>method</declname>
+          <defval><ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88a1c5397a2ab65a9b09e466d3e7cf5a82e" kindref="member">m_get</ref></defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>audit_reason</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filecontent</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. When constructing one of these objects it should be passed to <ref refid="classdpp_1_1request__queue_1a59e2169cb34083a6de526d4eafb99fd0" kindref="member">request_queue::post_request()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The API endpoint, e.g. /api/guilds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Major and minor parameters for the endpoint e.g. a user id or guild id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>completion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>completion event to call when done </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_postdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to send in POST and PUT requests </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP method to use from <ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">dpp::http_method</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>audit_reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Audit log reason to send, empty to send none </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filename (server side) of any uploaded file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filecontent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The binary content of any uploaded file for the request </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="170" column="1" bodyfile="src/dpp/queues.cpp" bodystart="38" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__request_1af04cdd9a2a57c9602335f9390caf1c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::http_request::http_request</definition>
+        <argsstring>(const std::string &amp;_endpoint, const std::string &amp;_parameters, http_completion_event completion, const std::string &amp;_postdata=&quot;&quot;, http_method method=m_get, const std::string &amp;audit_reason=&quot;&quot;, const std::vector&lt; std::string &gt; &amp;filename={}, const std::vector&lt; std::string &gt; &amp;filecontent={})</argsstring>
+        <name>http_request</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_endpoint</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_parameters</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1ae3249e99494d04bb4be50341f474621e" kindref="member">http_completion_event</ref></type>
+          <declname>completion</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_postdata</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">http_method</ref></type>
+          <declname>method</declname>
+          <defval><ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88a1c5397a2ab65a9b09e466d3e7cf5a82e" kindref="member">m_get</ref></defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>audit_reason</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>filename</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>filecontent</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. When constructing one of these objects it should be passed to <ref refid="classdpp_1_1request__queue_1a59e2169cb34083a6de526d4eafb99fd0" kindref="member">request_queue::post_request()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The API endpoint, e.g. /api/guilds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Major and minor parameters for the endpoint e.g. a user id or guild id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>completion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>completion event to call when done </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_postdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to send in POST and PUT requests </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP method to use from <ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">dpp::http_method</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>audit_reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Audit log reason to send, empty to send none </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filename (server side) of any uploaded file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filecontent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The binary content of any uploaded file for the request </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="183" column="1" bodyfile="src/dpp/queues.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__request_1a7a2134b1a466d6f523a37c5631376073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::http_request::http_request</definition>
+        <argsstring>(const std::string &amp;_url, http_completion_event completion, http_method method=m_get, const std::string &amp;_postdata=&quot;&quot;, const std::string &amp;_mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;_headers={})</argsstring>
+        <name>http_request</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_url</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1ae3249e99494d04bb4be50341f474621e" kindref="member">http_completion_event</ref></type>
+          <declname>completion</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">http_method</ref></type>
+          <declname>method</declname>
+          <defval><ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88a1c5397a2ab65a9b09e466d3e7cf5a82e" kindref="member">m_get</ref></defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_postdata</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_mimetype</declname>
+          <defval>&quot;text/plain&quot;</defval>
+        </param>
+        <param>
+          <type>const std::multimap&lt; std::string, std::string &gt; &amp;</type>
+          <declname>_headers</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. When constructing one of these objects it should be passed to <ref refid="classdpp_1_1request__queue_1a59e2169cb34083a6de526d4eafb99fd0" kindref="member">request_queue::post_request()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw HTTP url </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>completion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>completion event to call when done </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP method to use from <ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">dpp::http_method</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_postdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to send in POST and PUT requests </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_mimetype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POST data mime type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP headers to send </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="194" column="1" bodyfile="src/dpp/queues.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__request_1a94d82f10c9922b400b1dd5b8459a6691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::http_request::~http_request</definition>
+        <argsstring>()</argsstring>
+        <name>~http_request</name>
+        <briefdescription>
+<para>Destroy the http request object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__request_1a6f350d4340fe77e224783091607f63eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::http_request::complete</definition>
+        <argsstring>(const http_request_completion_t &amp;c)</argsstring>
+        <name>complete</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Call the completion callback, if the request is complete. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback to call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="205" column="6" bodyfile="src/dpp/queues.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__request_1a3693b97e3f58505fa4187a86eecaaa39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref></type>
+        <definition>http_request_completion_t dpp::http_request::run</definition>
+        <argsstring>(class cluster *owner)</argsstring>
+        <name>run</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+<para>Execute the HTTP request and mark the request complete. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>creating cluster </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="211" column="27" bodyfile="src/dpp/queues.cpp" bodystart="105" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1http__request_1ab5f1688d8b657f6d0f0a4dd8df7b8731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::http_request::is_completed</definition>
+        <argsstring>()</argsstring>
+        <name>is_completed</name>
+        <briefdescription>
+<para>Returns true if the request is complete. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="214" column="6" bodyfile="src/dpp/queues.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A HTTP request. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>You should instantiate one of these objects via its constructor, and pass a pointer to it into an instance of <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref>. Although you can directly call the <ref refid="classdpp_1_1http__request_1a3693b97e3f58505fa4187a86eecaaa39" kindref="member">run()</ref> method of the object and it will make a HTTP call, be aware that if you do this, it will be a <bold>BLOCKING call</bold> (not asynchronous) and will not respect rate limits, as both of these functions are managed by the <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> class. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>dpp::http_request</label>
+        <link refid="classdpp_1_1http__request"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>endpoint</edgelabel>
+          <edgelabel>mimetype</edgelabel>
+          <edgelabel>parameters</edgelabel>
+          <edgelabel>postdata</edgelabel>
+          <edgelabel>reason</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>method</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>file_content</edgelabel>
+          <edgelabel>file_name</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>req_headers</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>waiting</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>http_method</label>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="6">
+        <label>multimap&lt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector&lt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/queues.h" line="130" column="1" bodyfile="include/dpp/queues.h" bodystart="130" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1http__request_1a6f350d4340fe77e224783091607f63eb" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>complete</name></member>
+      <member refid="classdpp_1_1http__request_1a12922296092235b17ac7408824b87d8b" prot="private" virt="non-virtual"><scope>dpp::http_request</scope><name>complete_handler</name></member>
+      <member refid="classdpp_1_1http__request_1a11692126b1bed5e583a8844007be7be4" prot="private" virt="non-virtual"><scope>dpp::http_request</scope><name>completed</name></member>
+      <member refid="classdpp_1_1http__request_1a31cf6b360a893292435ea56b8d6a94c6" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>endpoint</name></member>
+      <member refid="classdpp_1_1http__request_1a9d1ca5488bf190a37a485a856b75fda9" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>file_content</name></member>
+      <member refid="classdpp_1_1http__request_1a734b0df9c63a7b8298511504c64e6a1c" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>file_name</name></member>
+      <member refid="classdpp_1_1http__request_1a07b3bbba903d3b5c4c489da6148b3ee4" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>http_request</name></member>
+      <member refid="classdpp_1_1http__request_1af04cdd9a2a57c9602335f9390caf1c6e" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>http_request</name></member>
+      <member refid="classdpp_1_1http__request_1a7a2134b1a466d6f523a37c5631376073" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>http_request</name></member>
+      <member refid="classdpp_1_1http__request_1ab5f1688d8b657f6d0f0a4dd8df7b8731" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>is_completed</name></member>
+      <member refid="classdpp_1_1http__request_1a6717d11da20292e2dc77826def3aaef3" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>method</name></member>
+      <member refid="classdpp_1_1http__request_1aedac6464c95174507a322861191ccc02" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>mimetype</name></member>
+      <member refid="classdpp_1_1http__request_1a123a4de946395b4d21b57156269b23d3" prot="private" virt="non-virtual"><scope>dpp::http_request</scope><name>non_discord</name></member>
+      <member refid="classdpp_1_1http__request_1a349ce3f41c300aeac915d38f8f1d8642" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>parameters</name></member>
+      <member refid="classdpp_1_1http__request_1adab1976475788ca96b5b52349367a322" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>postdata</name></member>
+      <member refid="classdpp_1_1http__request_1a96bc944a868341d97772beca88f02ac0" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>reason</name></member>
+      <member refid="classdpp_1_1http__request_1a7248f6e47440f670e2a9adbfb50022bc" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>req_headers</name></member>
+      <member refid="classdpp_1_1http__request_1a3693b97e3f58505fa4187a86eecaaa39" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>run</name></member>
+      <member refid="classdpp_1_1http__request_1ad504dae645a77b338bc6a14e5dd44a7d" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>waiting</name></member>
+      <member refid="classdpp_1_1http__request_1a94d82f10c9922b400b1dd5b8459a6691" prot="public" virt="non-virtual"><scope>dpp::http_request</scope><name>~http_request</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
