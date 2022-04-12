@@ -154,6 +154,7 @@ var namespacedpp =
     [ "interaction_create_t", "structdpp_1_1interaction__create__t.html", "structdpp_1_1interaction__create__t" ],
     [ "interaction_modal_response", "structdpp_1_1interaction__modal__response.html", "structdpp_1_1interaction__modal__response" ],
     [ "interaction_response", "structdpp_1_1interaction__response.html", "structdpp_1_1interaction__response" ],
+    [ "invalid_token_exception", "classdpp_1_1invalid__token__exception.html", "classdpp_1_1invalid__token__exception" ],
     [ "invite", "classdpp_1_1invite.html", "classdpp_1_1invite" ],
     [ "invite_create_t", "structdpp_1_1invite__create__t.html", "structdpp_1_1invite__create__t" ],
     [ "invite_delete_t", "structdpp_1_1invite__delete__t.html", "structdpp_1_1invite__delete__t" ],

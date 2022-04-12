@@ -17,13 +17,14 @@ var searchData=
   ['interaction_5fcreate_5ft_14',['interaction_create_t',['../structdpp_1_1interaction__create__t.html',1,'dpp']]],
   ['interaction_5fmodal_5fresponse_15',['interaction_modal_response',['../structdpp_1_1interaction__modal__response.html',1,'dpp']]],
   ['interaction_5fresponse_16',['interaction_response',['../structdpp_1_1interaction__response.html',1,'dpp']]],
-  ['invite_17',['invite',['../classdpp_1_1invite.html',1,'dpp']]],
-  ['invite_5fcreate_18',['invite_create',['../classdpp_1_1events_1_1invite__create.html',1,'dpp::events']]],
-  ['invite_5fcreate_5ft_19',['invite_create_t',['../structdpp_1_1invite__create__t.html',1,'dpp']]],
-  ['invite_5fdelete_20',['invite_delete',['../classdpp_1_1events_1_1invite__delete.html',1,'dpp::events']]],
-  ['invite_5fdelete_5ft_21',['invite_delete_t',['../structdpp_1_1invite__delete__t.html',1,'dpp']]],
-  ['is_5fchar_3c_20char16_5ft_20_3e_22',['is_char&lt; char16_t &gt;',['../structis__char_3_01char16__t_01_4.html',1,'']]],
-  ['is_5fchar_3c_20char32_5ft_20_3e_23',['is_char&lt; char32_t &gt;',['../structis__char_3_01char32__t_01_4.html',1,'']]],
-  ['is_5fchar_3c_20detail_3a_3achar8_5ftype_20_3e_24',['is_char&lt; detail::char8_type &gt;',['../structis__char_3_01detail_1_1char8__type_01_4.html',1,'']]],
-  ['is_5fchar_3c_20wchar_5ft_20_3e_25',['is_char&lt; wchar_t &gt;',['../structis__char_3_01wchar__t_01_4.html',1,'']]]
+  ['invalid_5ftoken_5fexception_17',['invalid_token_exception',['../classdpp_1_1invalid__token__exception.html',1,'dpp']]],
+  ['invite_18',['invite',['../classdpp_1_1invite.html',1,'dpp']]],
+  ['invite_5fcreate_19',['invite_create',['../classdpp_1_1events_1_1invite__create.html',1,'dpp::events']]],
+  ['invite_5fcreate_5ft_20',['invite_create_t',['../structdpp_1_1invite__create__t.html',1,'dpp']]],
+  ['invite_5fdelete_21',['invite_delete',['../classdpp_1_1events_1_1invite__delete.html',1,'dpp::events']]],
+  ['invite_5fdelete_5ft_22',['invite_delete_t',['../structdpp_1_1invite__delete__t.html',1,'dpp']]],
+  ['is_5fchar_3c_20char16_5ft_20_3e_23',['is_char&lt; char16_t &gt;',['../structis__char_3_01char16__t_01_4.html',1,'']]],
+  ['is_5fchar_3c_20char32_5ft_20_3e_24',['is_char&lt; char32_t &gt;',['../structis__char_3_01char32__t_01_4.html',1,'']]],
+  ['is_5fchar_3c_20detail_3a_3achar8_5ftype_20_3e_25',['is_char&lt; detail::char8_type &gt;',['../structis__char_3_01detail_1_1char8__type_01_4.html',1,'']]],
+  ['is_5fchar_3c_20wchar_5ft_20_3e_26',['is_char&lt; wchar_t &gt;',['../structis__char_3_01wchar__t_01_4.html',1,'']]]
 ];

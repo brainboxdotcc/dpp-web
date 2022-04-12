@@ -187,6 +187,7 @@ var hierarchy =
         [ "dpp::cache_exception", "classdpp_1_1cache__exception.html", null ],
         [ "dpp::connection_exception", "classdpp_1_1connection__exception.html", null ],
         [ "dpp::file_exception", "classdpp_1_1file__exception.html", null ],
+        [ "dpp::invalid_token_exception", "classdpp_1_1invalid__token__exception.html", null ],
         [ "dpp::length_exception", "classdpp_1_1length__exception.html", null ],
         [ "dpp::logic_exception", "classdpp_1_1logic__exception.html", null ],
         [ "dpp::parse_exception", "classdpp_1_1parse__exception.html", null ],
