@@ -143,6 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad7950ce811dc619ab4956275651e0637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close HTTPS socket.  <a href="classdpp_1_1https__client.html#ad7950ce811dc619ab4956275651e0637">More...</a><br /></td></tr>
 <tr class="separator:ad7950ce811dc619ab4956275651e0637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6195f58a7a4805e09ec3e56179056fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#aa6195f58a7a4805e09ec3e56179056fe">one_second_timer</a> ()</td></tr>
+<tr class="memdesc:aa6195f58a7a4805e09ec3e56179056fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fires every second from the underlying socket I/O loop, used for timeouts.  <a href="classdpp_1_1https__client.html#aa6195f58a7a4805e09ec3e56179056fe">More...</a><br /></td></tr>
 <tr class="separator:aa6195f58a7a4805e09ec3e56179056fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58d8ae5c9949d7b066dbbc6fb2c13a77"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#a58d8ae5c9949d7b066dbbc6fb2c13a77">get_header</a> (std::string header_name) const</td></tr>
 <tr class="memdesc:a58d8ae5c9949d7b066dbbc6fb2c13a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a HTTP response header.  <a href="classdpp_1_1https__client.html#a58d8ae5c9949d7b066dbbc6fb2c13a77">More...</a><br /></td></tr>
@@ -157,10 +158,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aad457d811e2b8655eef18d2f3b76e076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the response HTTP status, e.g. 200 for OK, 404 for not found, 429 for rate limited. A value of 0 indicates the request was not completed.  <a href="classdpp_1_1https__client.html#aad457d811e2b8655eef18d2f3b76e076">More...</a><br /></td></tr>
 <tr class="separator:aad457d811e2b8655eef18d2f3b76e076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad4da6489c8f08030ca49c060a23740a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#aad4da6489c8f08030ca49c060a23740a">get_bytes_out</a> ()</td></tr>
+<tr class="memdesc:aad4da6489c8f08030ca49c060a23740a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bytes out objectGet total bytes sent.  <a href="classdpp_1_1ssl__client.html#aad4da6489c8f08030ca49c060a23740a">More...</a><br /></td></tr>
 <tr class="separator:aad4da6489c8f08030ca49c060a23740a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa5d5654ce0b631d07045088ef347418"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#afa5d5654ce0b631d07045088ef347418">get_bytes_in</a> ()</td></tr>
+<tr class="memdesc:afa5d5654ce0b631d07045088ef347418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total bytes received.  <a href="classdpp_1_1ssl__client.html#afa5d5654ce0b631d07045088ef347418">More...</a><br /></td></tr>
 <tr class="separator:afa5d5654ce0b631d07045088ef347418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf247ed0871e89e6a319c95841a315bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#abf247ed0871e89e6a319c95841a315bd">get_cipher</a> ()</td></tr>
+<tr class="memdesc:abf247ed0871e89e6a319c95841a315bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SSL cipher name.  <a href="classdpp_1_1ssl__client.html#abf247ed0871e89e6a319c95841a315bd">More...</a><br /></td></tr>
 <tr class="separator:abf247ed0871e89e6a319c95841a315bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d4e73c74413a5a79a3859615f913e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2">read_loop</a> ()</td></tr>
 <tr class="memdesc:a17d4e73c74413a5a79a3859615f913e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nonblocking I/O loop.  <a href="classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2">More...</a><br /></td></tr>
@@ -211,28 +215,40 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ae0e5e0799448bf29506bfcc21168d3fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa">buffer</a></td></tr>
+<tr class="memdesc:ae0e5e0799448bf29506bfcc21168d3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input buffer received from socket.  <a href="classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa">More...</a><br /></td></tr>
 <tr class="separator:ae0e5e0799448bf29506bfcc21168d3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f9600d4fd902c74c6d8b748c359eecc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a1f9600d4fd902c74c6d8b748c359eecc">obuffer</a></td></tr>
+<tr class="memdesc:a1f9600d4fd902c74c6d8b748c359eecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output buffer for sending to socket.  <a href="classdpp_1_1ssl__client.html#a1f9600d4fd902c74c6d8b748c359eecc">More...</a><br /></td></tr>
 <tr class="separator:a1f9600d4fd902c74c6d8b748c359eecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1486b3df6780a842552442a25634fcc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a1486b3df6780a842552442a25634fcc9">nonblocking</a></td></tr>
+<tr class="memdesc:a1486b3df6780a842552442a25634fcc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if in nonblocking mode. The socket switches to nonblocking mode once ReadLoop is called.  <a href="classdpp_1_1ssl__client.html#a1486b3df6780a842552442a25634fcc9">More...</a><br /></td></tr>
 <tr class="separator:a1486b3df6780a842552442a25634fcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423ca70d4046067ebe219f85c7baa540"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a423ca70d4046067ebe219f85c7baa540">sfd</a></td></tr>
+<tr class="memdesc:a423ca70d4046067ebe219f85c7baa540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw file descriptor of connection.  <a href="classdpp_1_1ssl__client.html#a423ca70d4046067ebe219f85c7baa540">More...</a><br /></td></tr>
 <tr class="separator:a423ca70d4046067ebe219f85c7baa540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2398ebb5fe51346ca7e97ec162327c4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1opensslcontext.html">opensslcontext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a2398ebb5fe51346ca7e97ec162327c4e">ssl</a></td></tr>
-<tr class="separator:a2398ebb5fe51346ca7e97ec162327c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26db29793a38b8a9dad74581597b298a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1openssl__connection.html">openssl_connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a26db29793a38b8a9dad74581597b298a">ssl</a></td></tr>
+<tr class="memdesc:a26db29793a38b8a9dad74581597b298a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Openssl opaque contexts.  <a href="classdpp_1_1ssl__client.html#a26db29793a38b8a9dad74581597b298a">More...</a><br /></td></tr>
+<tr class="separator:a26db29793a38b8a9dad74581597b298a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fc2e7836da5485216419bbf17e49428"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a5fc2e7836da5485216419bbf17e49428">cipher</a></td></tr>
+<tr class="memdesc:a5fc2e7836da5485216419bbf17e49428"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL cipher in use.  <a href="classdpp_1_1ssl__client.html#a5fc2e7836da5485216419bbf17e49428">More...</a><br /></td></tr>
 <tr class="separator:a5fc2e7836da5485216419bbf17e49428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f0bbeefa25de686ac93887afa65895"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a61f0bbeefa25de686ac93887afa65895">last_tick</a></td></tr>
+<tr class="memdesc:a61f0bbeefa25de686ac93887afa65895"><td class="mdescLeft">&#160;</td><td class="mdescRight">For timers.  <a href="classdpp_1_1ssl__client.html#a61f0bbeefa25de686ac93887afa65895">More...</a><br /></td></tr>
 <tr class="separator:a61f0bbeefa25de686ac93887afa65895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aab17086711ef6777a01ee0974b5ce8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8">hostname</a></td></tr>
+<tr class="memdesc:a9aab17086711ef6777a01ee0974b5ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hostname connected to.  <a href="classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8">More...</a><br /></td></tr>
 <tr class="separator:a9aab17086711ef6777a01ee0974b5ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53cda56d5d61e3371bd7be2424e7ff07"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07">port</a></td></tr>
+<tr class="memdesc:a53cda56d5d61e3371bd7be2424e7ff07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port connected to.  <a href="classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07">More...</a><br /></td></tr>
 <tr class="separator:a53cda56d5d61e3371bd7be2424e7ff07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8022a8002cfc6f394016546168ef4085"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085">bytes_out</a></td></tr>
+<tr class="memdesc:a8022a8002cfc6f394016546168ef4085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes out.  <a href="classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085">More...</a><br /></td></tr>
 <tr class="separator:a8022a8002cfc6f394016546168ef4085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d">bytes_in</a></td></tr>
+<tr class="memdesc:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes in.  <a href="classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d">More...</a><br /></td></tr>
 <tr class="separator:a7b3bbb4e6a9e271c8f19736b36b71d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa735feca3545e156e0607c06d55288c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#aa735feca3545e156e0607c06d55288c4">plaintext</a></td></tr>
+<tr class="memdesc:aa735feca3545e156e0607c06d55288c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">True for a plain text connection.  <a href="classdpp_1_1ssl__client.html#aa735feca3545e156e0607c06d55288c4">More...</a><br /></td></tr>
 <tr class="separator:aa735feca3545e156e0607c06d55288c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d17d6f3cb7781ecba40aaedf10ff598"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a6d17d6f3cb7781ecba40aaedf10ff598">make_new</a></td></tr>
 <tr class="memdesc:a6d17d6f3cb7781ecba40aaedf10ff598"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we are establishing a new connection, false if otherwise.  <a href="classdpp_1_1ssl__client.html#a6d17d6f3cb7781ecba40aaedf10ff598">More...</a><br /></td></tr>
@@ -484,7 +500,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Get total bytes received </p>
+
+<p>Get total bytes received. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t bytes received </dd></dl>
 
 </div>
 </div>
@@ -510,7 +528,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Get total bytes sent </p>
+
+<p>Get the bytes out objectGet total bytes sent. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t bytes sent </dd></dl>
 
 </div>
 </div>
@@ -536,7 +556,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Get SSL cipher name </p>
+
+<p>Get SSL cipher name. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string ssl cipher name </dd></dl>
 
 </div>
 </div>
@@ -796,7 +818,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Fires every second from the underlying socket I/O loop, used for sending websocket pings </p>
+
+<p>Fires every second from the underlying socket I/O loop, used for timeouts. </p>
 
 <p>Reimplemented from <a class="el" href="classdpp_1_1ssl__client.html#ae78617d00003abcbfce5446cb6bdde41">dpp::ssl_client</a>.</p>
 
@@ -866,6 +889,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>The data may not be written immediately and may be written at a later time to the socket. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classdpp_1_1websocket__client.html#aac65765349cbd3e787c0fd2af576ec6d">dpp::websocket_client</a>.</p>
 
@@ -891,7 +915,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Input buffer received from openssl </p>
+
+<p>Input buffer received from socket. </p>
 
 </div>
 </div>
@@ -914,7 +939,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Bytes in </p>
+
+<p>Bytes in. </p>
 
 </div>
 </div>
@@ -937,7 +963,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Bytes out </p>
+
+<p>Bytes out. </p>
 
 </div>
 </div>
@@ -960,7 +987,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >SSL cipher in use </p>
+
+<p>SSL cipher in use. </p>
 
 </div>
 </div>
@@ -1081,7 +1109,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Hostname connected to </p>
+
+<p>Hostname connected to. </p>
 
 </div>
 </div>
@@ -1128,7 +1157,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >For timers </p>
+
+<p>For timers. </p>
 
 </div>
 </div>
@@ -1175,7 +1205,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >True if in nonblocking mode. The socket switches to nonblocking mode once ReadLoop is called. </p>
+
+<p>True if in nonblocking mode. The socket switches to nonblocking mode once ReadLoop is called. </p>
 
 </div>
 </div>
@@ -1198,7 +1229,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Output buffer for sending to openssl </p>
+
+<p>Output buffer for sending to socket. </p>
 
 </div>
 </div>
@@ -1221,7 +1253,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >True for a plain text connection </p>
+
+<p>True for a plain text connection. </p>
 
 </div>
 </div>
@@ -1244,7 +1277,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Port connected to </p>
+
+<p>Port connected to. </p>
 
 </div>
 </div>
@@ -1267,12 +1301,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Raw file descriptor of connection </p>
+
+<p>Raw file descriptor of connection. </p>
 
 </div>
 </div>
-<a id="a2398ebb5fe51346ca7e97ec162327c4e" name="a2398ebb5fe51346ca7e97ec162327c4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2398ebb5fe51346ca7e97ec162327c4e">&#9670;&nbsp;</a></span>ssl</h2>
+<a id="a26db29793a38b8a9dad74581597b298a" name="a26db29793a38b8a9dad74581597b298a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26db29793a38b8a9dad74581597b298a">&#9670;&nbsp;</a></span>ssl</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1281,7 +1316,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1opensslcontext.html">opensslcontext</a>* dpp::ssl_client::ssl</td>
+          <td class="memname"><a class="el" href="classdpp_1_1openssl__connection.html">openssl_connection</a>* dpp::ssl_client::ssl</td>
         </tr>
       </table>
   </td>
@@ -1290,7 +1325,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Openssl opaque contexts </p>
+
+<p>Openssl opaque contexts. </p>
 
 </div>
 </div>

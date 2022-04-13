@@ -456,6 +456,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an interface for an object that can optionally implement functions for converting to and from nlohmann::json. In the event either parse_from_json() or <a class="el" href="structdpp_1_1json__interface.html#a287c22f692ee3d25b6f9b320ff35baa1" title="Build JSON string from the object.">build_json()</a> are not implemented and are called, they will throw at runtime.  <a href="structdpp_1_1json__interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1keepalive__cache__t.html">keepalive_cache_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keepalive cache record.  <a href="structdpp_1_1keepalive__cache__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1length__exception.html">length_exception</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents invalid length of argument being passed to a function.  <a href="classdpp_1_1length__exception.html#details">More...</a><br /></td></tr>
@@ -505,8 +506,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1oneshot__timer.html">oneshot_timer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a timed event once. The provided callback is called only once.  <a href="classdpp_1_1oneshot__timer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1opensslcontext.html">opensslcontext</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an opaque class containing openssl library specific structures. We define it this way so that the public facing D++ library doesn't require the openssl headers be available to build against it.  <a href="classdpp_1_1opensslcontext.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1openssl__connection.html">openssl_connection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an opaque class containing openssl library specific structures. We define it this way so that the public facing D++ library doesn't require the openssl headers be available to build against it.  <a href="classdpp_1_1openssl__connection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1param__info.html">param_info</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Details of a command parameter used in registration. Note that for non-slash commands optional parameters can only be at the end of the list of parameters.  <a href="structdpp_1_1param__info.html#details">More...</a><br /></td></tr>
@@ -1589,6 +1590,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:af7cde3079d745428f44ef6231a2ac672"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af7cde3079d745428f44ef6231a2ac672">websocket_protocol_t</a> : uint8_t { <a class="el" href="namespacedpp.html#af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437">ws_json</a> = 0
 , <a class="el" href="namespacedpp.html#af7cde3079d745428f44ef6231a2ac672ac465dd3c03a072c41148d3562b6cbd64">ws_etf</a> = 1
  }</td></tr>
+<tr class="memdesc:af7cde3079d745428f44ef6231a2ac672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Websocket protocol types available on Discord.  <a href="namespacedpp.html#af7cde3079d745428f44ef6231a2ac672">More...</a><br /></td></tr>
 <tr class="separator:af7cde3079d745428f44ef6231a2ac672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3b7f3e861707f45beefa9449de70519"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af3b7f3e861707f45beefa9449de70519">ws_state</a> : uint8_t { <a class="el" href="namespacedpp.html#af3b7f3e861707f45beefa9449de70519ac4e7462fef7673f64bf129dde58c9f70">HTTP_HEADERS</a>
 , <a class="el" href="namespacedpp.html#af3b7f3e861707f45beefa9449de70519ab21dc4f63ee869c75f21c77922769e6d">CONNECTED</a>
@@ -1872,7 +1874,11 @@ Variables</h2></td></tr>
 <tr class="separator:a4f29330ede66fa21fc47c361a9c51a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27df95e52167e3d7020ee6ad7958eaa8"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a27df95e52167e3d7020ee6ad7958eaa8">DISCORD_HOST</a> = &quot;https://discord.com&quot;</td></tr>
 <tr class="separator:a27df95e52167e3d7020ee6ad7958eaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce99acce314ff1c5125d40f4ed6622b"><td class="memItemLeft" align="right" valign="top">thread_local SSL_CTX *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a8ce99acce314ff1c5125d40f4ed6622b">openssl_context</a> = nullptr</td></tr>
+<tr class="memdesc:a8ce99acce314ff1c5125d40f4ed6622b"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenSSL context.  <a href="namespacedpp.html#a8ce99acce314ff1c5125d40f4ed6622b">More...</a><br /></td></tr>
+<tr class="separator:a8ce99acce314ff1c5125d40f4ed6622b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b7f88664195026b4434bdaab3dce5d"><td class="memItemLeft" align="right" valign="top">thread_local std::unordered_map&lt; std::string, <a class="el" href="structdpp_1_1keepalive__cache__t.html">keepalive_cache_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a07b7f88664195026b4434bdaab3dce5d">keepalives</a></td></tr>
+<tr class="memdesc:a07b7f88664195026b4434bdaab3dce5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keepalive sessions, per-thread.  <a href="namespacedpp.html#a07b7f88664195026b4434bdaab3dce5d">More...</a><br /></td></tr>
 <tr class="separator:a07b7f88664195026b4434bdaab3dce5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd1452ee8156729d4cb1ae5cbfdda87"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a5dd1452ee8156729d4cb1ae5cbfdda87">ERROR_STATUS</a> = -1</td></tr>
 <tr class="separator:a5dd1452ee8156729d4cb1ae5cbfdda87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3650,10 +3656,14 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091aa4cbb0b5e2760ec5ab444e7b787f5a02" name="aaaa159f13811e8d13973c2794e171091aa4cbb0b5e2760ec5ab444e7b787f5a02"></a>HTTPS_DONE&#160;</td><td class="fielddoc"><p >Completed connection, as it was closed or the body is &gt;= Content-Length. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091a61111f54baecc9385a8812cc8ebf4128" name="aaaa159f13811e8d13973c2794e171091a61111f54baecc9385a8812cc8ebf4128"></a>HTTPS_CHUNK_LEN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091a14a882845dbc07216ce9093e6b8326a1" name="aaaa159f13811e8d13973c2794e171091a14a882845dbc07216ce9093e6b8326a1"></a>HTTPS_CHUNK_TRAILER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091aae0ac9fd46782eff729f30165376b78d" name="aaaa159f13811e8d13973c2794e171091aae0ac9fd46782eff729f30165376b78d"></a>HTTPS_CHUNK_LAST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091af202968d765aaa0b2d9e262fbda347d7" name="aaaa159f13811e8d13973c2794e171091af202968d765aaa0b2d9e262fbda347d7"></a>HTTPS_CHUNK_CONTENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091a61111f54baecc9385a8812cc8ebf4128" name="aaaa159f13811e8d13973c2794e171091a61111f54baecc9385a8812cc8ebf4128"></a>HTTPS_CHUNK_LEN&#160;</td><td class="fielddoc"><p >Received chunk length. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091a14a882845dbc07216ce9093e6b8326a1" name="aaaa159f13811e8d13973c2794e171091a14a882845dbc07216ce9093e6b8326a1"></a>HTTPS_CHUNK_TRAILER&#160;</td><td class="fielddoc"><p >Received chunk trailing CRLF. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091aae0ac9fd46782eff729f30165376b78d" name="aaaa159f13811e8d13973c2794e171091aae0ac9fd46782eff729f30165376b78d"></a>HTTPS_CHUNK_LAST&#160;</td><td class="fielddoc"><p >The last received chunk is the final chunk. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaaa159f13811e8d13973c2794e171091af202968d765aaa0b2d9e262fbda347d7" name="aaaa159f13811e8d13973c2794e171091af202968d765aaa0b2d9e262fbda347d7"></a>HTTPS_CHUNK_CONTENT&#160;</td><td class="fielddoc"><p >Receiving contents of a chunk. </p>
+</td></tr>
 </table>
 
 </div>
@@ -4606,9 +4616,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Websocket protocol types available on Discord. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437" name="af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437"></a>ws_json&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af7cde3079d745428f44ef6231a2ac672ac465dd3c03a072c41148d3562b6cbd64" name="af7cde3079d745428f44ef6231a2ac672ac465dd3c03a072c41148d3562b6cbd64"></a>ws_etf&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437" name="af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437"></a>ws_json&#160;</td><td class="fielddoc"><p >JSON data, text, UTF-8 character set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7cde3079d745428f44ef6231a2ac672ac465dd3c03a072c41148d3562b6cbd64" name="af7cde3079d745428f44ef6231a2ac672ac465dd3c03a072c41148d3562b6cbd64"></a>ws_etf&#160;</td><td class="fielddoc"><p >Erlang Term Format (ETF) binary protocol. </p>
+</td></tr>
 </table>
 
 </div>
@@ -7802,6 +7816,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Keepalive sessions, per-thread. </p>
+
 </div>
 </div>
 <a id="ae16796831ecce90e670d207b0d0e1dd8" name="ae16796831ecce90e670d207b0d0e1dd8"></a>
@@ -7843,6 +7859,22 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ce99acce314ff1c5125d40f4ed6622b" name="a8ce99acce314ff1c5125d40f4ed6622b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce99acce314ff1c5125d40f4ed6622b">&#9670;&nbsp;</a></span>openssl_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thread_local SSL_CTX* dpp::openssl_context = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OpenSSL context. </p>
 
 </div>
 </div>

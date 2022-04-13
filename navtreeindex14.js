@@ -1,12 +1,10 @@
 var NAVTREEINDEX14 =
 {
-"classdpp_1_1websocket__client.html#afa81c27a0b2fc2d68b3939e102bf2cbf":[6,0,1,193,21],
 "classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b":[7,0,1,192,0],
-"classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b":[6,0,1,193,0],
-"classdpp_1_1zlibcontext.html":[7,0,1,195],
 "classdpp_1_1zlibcontext.html":[6,0,1,196],
-"classdpp_1_1zlibcontext.html#a9d39a0ef94d09fc1f9eece55d1134f46":[6,0,1,196,0],
+"classdpp_1_1zlibcontext.html":[7,0,1,195],
 "classdpp_1_1zlibcontext.html#a9d39a0ef94d09fc1f9eece55d1134f46":[7,0,1,195,0],
+"classdpp_1_1zlibcontext.html#a9d39a0ef94d09fc1f9eece55d1134f46":[6,0,1,196,0],
 "classes.html":[7,1],
 "classget__locale.html":[7,0,9],
 "classget__locale.html#a1923441e90f9a83f1aff5c8819119af4":[7,0,9,0],
@@ -147,8 +145,8 @@ var NAVTREEINDEX14 =
 "functions_d.html":[7,3,0,3],
 "functions_e.html":[7,3,0,4],
 "functions_f.html":[7,3,0,5],
-"functions_func.html":[7,3,1,0],
 "functions_func.html":[7,3,1],
+"functions_func.html":[7,3,1,0],
 "functions_func_b.html":[7,3,1,1],
 "functions_func_c.html":[7,3,1,2],
 "functions_func_d.html":[7,3,1,3],
@@ -214,8 +212,8 @@ var NAVTREEINDEX14 =
 "functions_w.html":[7,3,0,22],
 "functions_~.html":[7,3,0,23],
 "hierarchy.html":[7,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md80":[0,0],
 "index.html#autotoc_md81":[0,1],
 "index.html#autotoc_md82":[0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX14 =
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a39ad4150b19142aad7ff4867e9ec9b69":[6,0,1,280,7],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a414f0f169996a09f8fd1d423517dc0d0":[6,0,1,280,1],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a4278f54e9f1f408d43be33f7e0beac88":[6,0,1,280,2],
-"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f":[6,0,1,280,17]
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f":[6,0,1,280,17],
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a5cdd239960ca917f44bab7be89625ae6":[6,0,1,280,13],
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a74dfa109a39b058dc814bed431911dcc":[6,0,1,280,9]
 };

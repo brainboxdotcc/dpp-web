@@ -14,11 +14,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="83" column="8" bodyfile="src/dpp/sslclient.cpp" bodystart="83" bodyend="-1"/>
+        <location file="src/dpp/sslclient.cpp" line="81" column="8" bodyfile="src/dpp/sslclient.cpp" bodystart="81" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1keepalive__cache__t_1ad62ff27dfc3945728688ee4eb087803c" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1opensslcontext" kindref="compound">opensslcontext</ref> *</type>
-        <definition>opensslcontext* dpp::keepalive_cache_t::ssl</definition>
+      <memberdef kind="variable" id="structdpp_1_1keepalive__cache__t_1a4177f5876b37e90db3437522405ec468" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1openssl__connection" kindref="compound">openssl_connection</ref> *</type>
+        <definition>openssl_connection* dpp::keepalive_cache_t::ssl</definition>
         <argsstring></argsstring>
         <name>ssl</name>
         <briefdescription>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="84" column="16" bodyfile="src/dpp/sslclient.cpp" bodystart="84" bodyend="-1"/>
+        <location file="src/dpp/sslclient.cpp" line="82" column="20" bodyfile="src/dpp/sslclient.cpp" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1keepalive__cache__t_1a217295318df9d1080c6a2bd4f6018622" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a51156024d6211aef2731770340cfe452" kindref="member">dpp::socket</ref></type>
@@ -40,19 +40,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="85" column="13" bodyfile="src/dpp/sslclient.cpp" bodystart="85" bodyend="-1"/>
+        <location file="src/dpp/sslclient.cpp" line="83" column="13" bodyfile="src/dpp/sslclient.cpp" bodystart="83" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Keepalive cache record. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
       <node id="4">
         <label>SSL *</label>
-      </node>
-      <node id="5">
-        <label>SSL_CTX *</label>
       </node>
       <node id="1">
         <label>dpp::keepalive_cache_t</label>
@@ -63,32 +61,29 @@
         <childnode refid="3" relation="usage">
           <edgelabel>ssl</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>sfd</edgelabel>
         </childnode>
       </node>
       <node id="3">
-        <label>dpp::opensslcontext</label>
-        <link refid="classdpp_1_1opensslcontext"/>
+        <label>dpp::openssl_connection</label>
+        <link refid="classdpp_1_1openssl__connection"/>
         <childnode refid="4" relation="usage">
           <edgelabel>ssl</edgelabel>
         </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>ctx</edgelabel>
-        </childnode>
       </node>
-      <node id="6">
+      <node id="5">
         <label>int</label>
       </node>
       <node id="2">
         <label>time_t</label>
       </node>
     </collaborationgraph>
-    <location file="src/dpp/sslclient.cpp" line="82" column="1" bodyfile="src/dpp/sslclient.cpp" bodystart="82" bodyend="86"/>
+    <location file="src/dpp/sslclient.cpp" line="80" column="1" bodyfile="src/dpp/sslclient.cpp" bodystart="80" bodyend="84"/>
     <listofallmembers>
       <member refid="structdpp_1_1keepalive__cache__t_1a47830011b17e53cc0f63023c149f21a4" prot="public" virt="non-virtual"><scope>dpp::keepalive_cache_t</scope><name>created</name></member>
       <member refid="structdpp_1_1keepalive__cache__t_1a217295318df9d1080c6a2bd4f6018622" prot="public" virt="non-virtual"><scope>dpp::keepalive_cache_t</scope><name>sfd</name></member>
-      <member refid="structdpp_1_1keepalive__cache__t_1ad62ff27dfc3945728688ee4eb087803c" prot="public" virt="non-virtual"><scope>dpp::keepalive_cache_t</scope><name>ssl</name></member>
+      <member refid="structdpp_1_1keepalive__cache__t_1a4177f5876b37e90db3437522405ec468" prot="public" virt="non-virtual"><scope>dpp::keepalive_cache_t</scope><name>ssl</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

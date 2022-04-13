@@ -2,11 +2,11 @@ var classdpp_1_1request__queue =
 [
     [ "request_queue", "classdpp_1_1request__queue.html#afec7ef3d2deeef5687355cb1e6fb2eb3", null ],
     [ "~request_queue", "classdpp_1_1request__queue.html#a5ccaae72d03d626852be0a0d3c6b86dd", null ],
-    [ "add_request_threads", "classdpp_1_1request__queue.html#adfe4dbbb7a405029a5e24905ae6c5ea4", null ],
+    [ "add_request_threads", "classdpp_1_1request__queue.html#a0d0783d9546803f568b1de48898c5c6e", null ],
     [ "get_request_thread_count", "classdpp_1_1request__queue.html#a6a734c3fc440847f02980be0e3df0c2b", null ],
     [ "is_globally_ratelimited", "classdpp_1_1request__queue.html#adf8d6cdce3298446bc199d8a04a9d158", null ],
     [ "out_loop", "classdpp_1_1request__queue.html#a63acf79e2ab7a915f3ba59f1bdebe758", null ],
-    [ "post_request", "classdpp_1_1request__queue.html#a59e2169cb34083a6de526d4eafb99fd0", null ],
+    [ "post_request", "classdpp_1_1request__queue.html#ad3d4e87d99ad8cfb4e262aa71147b8c5", null ],
     [ "in_thread", "classdpp_1_1request__queue.html#a7fc81bccd183cc7fe664c9a68dd08dd8", null ],
     [ "creator", "classdpp_1_1request__queue.html#afc5bd2c27798f38630d996d1666dbbca", null ],
     [ "globally_limited_for", "classdpp_1_1request__queue.html#a4570a2b18fe55011495f956f807db8ef", null ],

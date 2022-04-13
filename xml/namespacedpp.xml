@@ -129,7 +129,7 @@
     <innerclass refid="structdpp_1_1message__update__t" prot="public">dpp::message_update_t</innerclass>
     <innerclass refid="structdpp_1_1multipart__content" prot="public">dpp::multipart_content</innerclass>
     <innerclass refid="classdpp_1_1oneshot__timer" prot="public">dpp::oneshot_timer</innerclass>
-    <innerclass refid="classdpp_1_1opensslcontext" prot="public">dpp::opensslcontext</innerclass>
+    <innerclass refid="classdpp_1_1openssl__connection" prot="public">dpp::openssl_connection</innerclass>
     <innerclass refid="structdpp_1_1param__info" prot="public">dpp::param_info</innerclass>
     <innerclass refid="classdpp_1_1parse__exception" prot="public">dpp::parse_exception</innerclass>
     <innerclass refid="structdpp_1_1permission__overwrite" prot="public">dpp::permission_overwrite</innerclass>
@@ -2378,6 +2378,7 @@
         <enumvalue id="namespacedpp_1aaaa159f13811e8d13973c2794e171091a61111f54baecc9385a8812cc8ebf4128" prot="public">
           <name>HTTPS_CHUNK_LEN</name>
           <briefdescription>
+<para>Received chunk length. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -2385,6 +2386,7 @@
         <enumvalue id="namespacedpp_1aaaa159f13811e8d13973c2794e171091a14a882845dbc07216ce9093e6b8326a1" prot="public">
           <name>HTTPS_CHUNK_TRAILER</name>
           <briefdescription>
+<para>Received chunk trailing CRLF. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -2392,6 +2394,7 @@
         <enumvalue id="namespacedpp_1aaaa159f13811e8d13973c2794e171091aae0ac9fd46782eff729f30165376b78d" prot="public">
           <name>HTTPS_CHUNK_LAST</name>
           <briefdescription>
+<para>The last received chunk is the final chunk. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -2399,6 +2402,7 @@
         <enumvalue id="namespacedpp_1aaaa159f13811e8d13973c2794e171091af202968d765aaa0b2d9e262fbda347d7" prot="public">
           <name>HTTPS_CHUNK_CONTENT</name>
           <briefdescription>
+<para>Receiving contents of a chunk. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -2410,7 +2414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="35" column="1" bodyfile="include/dpp/httpsclient.h" bodystart="35" bodyend="59"/>
+        <location file="include/dpp/httpsclient.h" line="35" column="1" bodyfile="include/dpp/httpsclient.h" bodystart="35" bodyend="72"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ae1540b4171f114c35864c752ef00f94f" prot="public" static="no" strong="no">
         <type></type>
@@ -4754,6 +4758,7 @@
           <name>ws_json</name>
           <initializer>= 0</initializer>
           <briefdescription>
+<para>JSON data, text, UTF-8 character set. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -4762,17 +4767,19 @@
           <name>ws_etf</name>
           <initializer>= 1</initializer>
           <briefdescription>
+<para>Erlang Term Format (ETF) binary protocol. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Websocket protocol types available on Discord. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="32" column="1" bodyfile="include/dpp/wsclient.h" bodystart="32" bodyend="35"/>
+        <location file="include/dpp/wsclient.h" line="34" column="1" bodyfile="include/dpp/wsclient.h" bodystart="34" bodyend="43"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1af3b7f3e861707f45beefa9449de70519" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -4800,7 +4807,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="40" column="1" bodyfile="include/dpp/wsclient.h" bodystart="40" bodyend="52"/>
+        <location file="include/dpp/wsclient.h" line="48" column="1" bodyfile="include/dpp/wsclient.h" bodystart="48" bodyend="60"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1aa84690a0ba0251e8609440e93919da1c" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -4866,7 +4873,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="57" column="1" bodyfile="include/dpp/wsclient.h" bodystart="58" bodyend="65"/>
+        <location file="include/dpp/wsclient.h" line="65" column="1" bodyfile="include/dpp/wsclient.h" bodystart="66" bodyend="73"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -5291,7 +5298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="64" column="23" bodyfile="include/dpp/httpsclient.h" bodystart="64" bodyend="-1"/>
+        <location file="include/dpp/httpsclient.h" line="77" column="23" bodyfile="include/dpp/httpsclient.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aa13e2c5898009fad42ebe12fd5641d8a" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1integration" kindref="compound">integration</ref> &gt;</type>
@@ -5881,18 +5888,34 @@
         </inbodydescription>
         <location file="src/dpp/queues.cpp" line="36" column="19" bodyfile="src/dpp/queues.cpp" bodystart="36" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a8ce99acce314ff1c5125d40f4ed6622b" prot="public" static="no" mutable="no">
+        <type>thread_local SSL_CTX *</type>
+        <definition>thread_local SSL_CTX* dpp::openssl_context</definition>
+        <argsstring></argsstring>
+        <name>openssl_context</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>OpenSSL context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/sslclient.cpp" line="89" column="22" bodyfile="src/dpp/sslclient.cpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a07b7f88664195026b4434bdaab3dce5d" prot="public" static="no" mutable="no">
         <type>thread_local std::unordered_map&lt; std::string, <ref refid="structdpp_1_1keepalive__cache__t" kindref="compound">keepalive_cache_t</ref> &gt;</type>
         <definition>thread_local std::unordered_map&lt;std::string, keepalive_cache_t&gt; dpp::keepalives</definition>
         <argsstring></argsstring>
         <name>keepalives</name>
         <briefdescription>
+<para>Keepalive sessions, per-thread. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="88" column="33" bodyfile="src/dpp/sslclient.cpp" bodystart="88" bodyend="-1"/>
+        <location file="src/dpp/sslclient.cpp" line="94" column="33" bodyfile="src/dpp/sslclient.cpp" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a5dd1452ee8156729d4cb1ae5cbfdda87" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -5906,7 +5929,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="99" column="11" bodyfile="src/dpp/sslclient.cpp" bodystart="99" bodyend="-1"/>
+        <location file="src/dpp/sslclient.cpp" line="105" column="11" bodyfile="src/dpp/sslclient.cpp" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1aefdd77f67658f0ff12429f40d58b920b" prot="public" static="no" mutable="no">
         <type>const size_t</type>
@@ -7497,7 +7520,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="385" column="17" bodyfile="src/dpp/queues.cpp" bodystart="385" bodyend="391"/>
+        <location file="src/dpp/queues.cpp" line="386" column="17" bodyfile="src/dpp/queues.cpp" bodystart="386" bodyend="392"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ae5041ec3547b4d4b7bf3416eea9b6403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

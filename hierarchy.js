@@ -352,7 +352,7 @@ var hierarchy =
       [ "tm_format_checker", "structtm__format__checker.html", null ]
     ] ],
     [ "dpp::oneshot_timer", "classdpp_1_1oneshot__timer.html", null ],
-    [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
+    [ "dpp::openssl_connection", "classdpp_1_1openssl__connection.html", null ],
     [ "OpusDecoder", "struct_opus_decoder.html", null ],
     [ "OpusEncoder", "struct_opus_encoder.html", null ],
     [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],

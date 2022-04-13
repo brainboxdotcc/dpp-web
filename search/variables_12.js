@@ -36,7 +36,7 @@ var searchData=
   ['source_5fguild_5fid_33',['source_guild_id',['../classdpp_1_1dtemplate.html#a4ec6536f11f56d2cb001dc76e9bd9ceb',1,'dpp::dtemplate']]],
   ['spectate_34',['spectate',['../structdpp_1_1activity__secrets.html#ac3c02c43fa010cd4777e066ed83baadd',1,'dpp::activity_secrets']]],
   ['splash_35',['splash',['../classdpp_1_1guild.html#a45281957f5252467c6b620c61de4ca14',1,'dpp::guild']]],
-  ['ssl_36',['ssl',['../structdpp_1_1keepalive__cache__t.html#ad62ff27dfc3945728688ee4eb087803c',1,'dpp::keepalive_cache_t::ssl()'],['../classdpp_1_1ssl__client.html#a2398ebb5fe51346ca7e97ec162327c4e',1,'dpp::ssl_client::ssl()'],['../classdpp_1_1opensslcontext.html#a720f2e9de953471de4aeda813156ccc1',1,'dpp::opensslcontext::ssl()']]],
+  ['ssl_36',['ssl',['../structdpp_1_1keepalive__cache__t.html#a4177f5876b37e90db3437522405ec468',1,'dpp::keepalive_cache_t::ssl()'],['../classdpp_1_1ssl__client.html#a26db29793a38b8a9dad74581597b298a',1,'dpp::ssl_client::ssl()'],['../classdpp_1_1openssl__connection.html#a4260688f38e1344a2adaa2808a1f7a77',1,'dpp::openssl_connection::ssl()']]],
   ['ssrc_37',['ssrc',['../structdpp_1_1rtp__header.html#a86786b1a234f930d804d9f3895eca995',1,'dpp::rtp_header::ssrc()'],['../structdpp_1_1voice__client__speaking__t.html#a5835d5ddc60b1d06389d85c92e7d06be',1,'dpp::voice_client_speaking_t::ssrc()']]],
   ['stage_38',['stage',['../classdpp_1_1invite.html#a95bda6b60159f20163f6953806e06d08',1,'dpp::invite']]],
   ['stage_5finstances_39',['stage_instances',['../structdpp_1_1guild__create__t.html#a4d863193aa672a7d07b743d38eaf9fe8',1,'dpp::guild_create_t']]],
