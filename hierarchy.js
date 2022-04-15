@@ -386,6 +386,7 @@ var hierarchy =
     ] ],
     [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
+    [ "dpp::version_checker", "structdpp_1_1version__checker.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "weekday", "classweekday.html", null ],
