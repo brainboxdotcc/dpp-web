@@ -114,7 +114,7 @@ var searchData=
   ['set_5fuser_5flimit_111',['set_user_limit',['../classdpp_1_1channel.html#aed49e707599019840d4715f6c2123a5f',1,'dpp::channel']]],
   ['set_5fvalue_112',['set_value',['../structdpp_1_1select__option.html#a78df0a21b01447ffacefe4ee5d0a076a',1,'dpp::select_option']]],
   ['set_5fvideo_113',['set_video',['../structdpp_1_1embed.html#a74a1f20e719f0bd855a19ea47310e485',1,'dpp::embed']]],
-  ['set_5fwarning_5fcallback_114',['set_warning_callback',['../classdpp_1_1event__router__t.html#a0a5cb425212a9b897a0dd38ab0a3ece5',1,'dpp::event_router_t']]],
+  ['set_5fwarning_5fcallback_114',['set_warning_callback',['../classdpp_1_1event__router__t.html#a5a344ce973c4428d889d11c5f35bea74',1,'dpp::event_router_t']]],
   ['set_5fwebsocket_5fprotocol_115',['set_websocket_protocol',['../classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9',1,'dpp::cluster']]],
   ['severity_116',['severity',['../structdpp_1_1log__t.html#ae1316a6ace98555175a4c1c70c9d0549',1,'dpp::log_t']]],
   ['sf_5fapng_117',['sf_apng',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2',1,'dpp']]],

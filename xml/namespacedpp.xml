@@ -5766,20 +5766,6 @@
         </inbodydescription>
         <location file="src/dpp/channel.cpp" line="34" column="15" bodyfile="src/dpp/channel.cpp" bodystart="34" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a9e6c27b0fbcc58fe84087382096dca98" prot="public" static="no" mutable="no">
-        <type>thread_local std::string</type>
-        <definition>thread_local std::string dpp::audit_reason</definition>
-        <argsstring></argsstring>
-        <name>audit_reason</name>
-        <briefdescription>
-<para>An audit reason for each thread. These are per-thread to make the cluster methods like <ref refid="classdpp_1_1cluster_1ab7a2958625740b4a6fde6643042c5f7e" kindref="member">cluster::get_audit_reason</ref> and <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason</ref> thread safe across multiple threads. You must ensure you set the audit reason on the same thread that makes the request associated with it. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cluster.cpp" line="55" column="26" bodyfile="src/dpp/cluster.cpp" bodystart="55" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="namespacedpp_1a143b5e0c6905a9f223b8589729dff35a" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
         <definition>DPP_EXPORT event_handle dpp::__next_handle</definition>
@@ -5792,7 +5778,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cluster.cpp" line="57" column="14" bodyfile="src/dpp/cluster.cpp" bodystart="57" bodyend="-1" declfile="include/dpp/cluster.h" declline="296" declcolumn="32"/>
+        <location file="src/dpp/cluster.cpp" line="49" column="14" bodyfile="src/dpp/cluster.cpp" bodystart="49" bodyend="-1" declfile="include/dpp/cluster.h" declline="296" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a9e6c27b0fbcc58fe84087382096dca98" prot="public" static="no" mutable="no">
+        <type>thread_local std::string</type>
+        <definition>thread_local std::string dpp::audit_reason</definition>
+        <argsstring></argsstring>
+        <name>audit_reason</name>
+        <briefdescription>
+<para>An audit reason for each thread. These are per-thread to make the cluster methods like <ref refid="classdpp_1_1cluster_1ab7a2958625740b4a6fde6643042c5f7e" kindref="member">cluster::get_audit_reason</ref> and <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason</ref> thread safe across multiple threads. You must ensure you set the audit reason on the same thread that makes the request associated with it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/dpp/cluster.cpp" line="57" column="26" bodyfile="src/dpp/cluster.cpp" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1ae16796831ecce90e670d207b0d0e1dd8" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
@@ -6383,9 +6383,14 @@
         </inbodydescription>
         <location file="src/dpp/channel.cpp" line="51" column="6" bodyfile="src/dpp/channel.cpp" bodystart="51" bodyend="56" declfile="include/dpp/channel.h" declline="562" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a23d4cb5137ec71576466cb66771e59ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::function&lt; void()&gt;</type>
-        <definition>std::function&lt; void()&gt; dpp::make_intent_warning</definition>
+      <memberdef kind="function" id="namespacedpp_1ae349654a9b224581abbb20967e55e8af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::function&lt; void(const T &amp;)&gt;</type>
+        <definition>std::function&lt; void(const T &amp;)&gt; dpp::make_intent_warning</definition>
         <argsstring>(cluster *cl, const intents required_intent, const std::string &amp;message)</argsstring>
         <name>make_intent_warning</name>
         <param>
@@ -6404,7 +6409,16 @@
 <para>Make a warning lambda for missing message intents. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of parameter for the event in the router </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>cl</parametername>
 </parameternamelist>
@@ -6429,13 +6443,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>std::function&lt;void()&gt; Returned lambda </para>
+<simplesect kind="return"><para>std::function&lt;void(const T&amp;)&gt; Returned lambda </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cluster.cpp" line="67" column="15" bodyfile="src/dpp/cluster.cpp" bodystart="67" bodyend="73"/>
+        <location file="src/dpp/cluster.cpp" line="68" column="26" bodyfile="src/dpp/cluster.cpp" bodystart="68" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a11a29c34fa2bce39d743860fb6fdb572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
