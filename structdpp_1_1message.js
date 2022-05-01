@@ -18,6 +18,7 @@ var structdpp_1_1message =
     [ "has_thread", "structdpp_1_1message.html#a9b05e57f76d9c2e656d86f45bf8a5230", null ],
     [ "is_crosspost", "structdpp_1_1message.html#a03ce860de6231985a823f8ce2dd2dd8d", null ],
     [ "is_crossposted", "structdpp_1_1message.html#acd532877b68dcd3f1713fd6df9045ed2", null ],
+    [ "is_dm", "structdpp_1_1message.html#a96b7fd5ad473c2b4213bdbc541de2a0e", null ],
     [ "is_ephemeral", "structdpp_1_1message.html#a6d8e17c0e9066eb044b241355d0a3efb", null ],
     [ "is_loading", "structdpp_1_1message.html#a25d4b0fbfcc698a74fa4f2b71796e874", null ],
     [ "is_source_message_deleted", "structdpp_1_1message.html#a0f22f044046ebc8bdc7d35e950baca25", null ],

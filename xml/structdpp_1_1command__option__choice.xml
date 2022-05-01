@@ -33,6 +33,20 @@
         </inbodydescription>
         <location file="include/dpp/appcommand.h" line="91" column="15" bodyfile="include/dpp/appcommand.h" bodystart="91" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__option__choice_1aed622e9d49129719f72e4ab6a9622eff" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; dpp::command_option_choice::name_localizations</definition>
+        <argsstring></argsstring>
+        <name>name_localizations</name>
+        <briefdescription>
+<para>Localisations of command option name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="92" column="10" bodyfile="include/dpp/appcommand.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="structdpp_1_1command__option__choice_1a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -47,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="96" column="1"/>
+        <location file="include/dpp/appcommand.h" line="97" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1command__option__choice_1a449db6e29c6b6cc272dfdd3e58dc68f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -60,7 +74,51 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="98" column="9"/>
+        <location file="include/dpp/appcommand.h" line="99" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1command__option__choice_1a4ebf86e99143369ae8806009a2d9d55b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &amp;</type>
+        <definition>command_option_choice &amp; dpp::command_option_choice::add_localization</definition>
+        <argsstring>(const std::string &amp;language, const std::string &amp;_name)</argsstring>
+        <name>add_localization</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Add a localisation for this command option choice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/reference#locales">https://discord.com/developers/docs/reference#locales</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of language, see the list of locales linked to above. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of command option choice in the specified language </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref>&amp; reference to self for fluent chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="108" column="23" bodyfile="src/dpp/slashcommand.cpp" bodystart="447" bodyend="450"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1command__option__choice_1a2bb4415c9d27246156e8cc368d131767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -100,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="106" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="226" bodyend="228"/>
+        <location file="include/dpp/appcommand.h" line="116" column="1" bodyfile="src/dpp/slashcommand.cpp" bodystart="264" bodyend="266"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1command__option__choice_1a7e1d8587e1bf8dc8053213c49d51405e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &amp;</type>
@@ -130,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="114" column="23" bodyfile="src/dpp/slashcommand.cpp" bodystart="230" bodyend="245"/>
+        <location file="include/dpp/appcommand.h" line="124" column="23" bodyfile="src/dpp/slashcommand.cpp" bodystart="268" bodyend="288"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -200,6 +258,9 @@
         <childnode refid="6" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>name_localizations</edgelabel>
+        </childnode>
       </node>
       <node id="3">
         <label>dpp::json_interface&lt; T &gt;</label>
@@ -215,6 +276,9 @@
       <node id="5">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
+      <node id="7">
+        <label>map&lt;</label>
+      </node>
       <node id="4">
         <label>std::string</label>
         <childnode refid="5" relation="public-inheritance">
@@ -224,13 +288,15 @@
         <label>variant&lt; std::monostate, std::string, int64_t, bool, snowflake, double &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/appcommand.h" line="89" column="1" bodyfile="include/dpp/appcommand.h" bodystart="89" bodyend="115"/>
+    <location file="include/dpp/appcommand.h" line="89" column="1" bodyfile="include/dpp/appcommand.h" bodystart="89" bodyend="125"/>
     <listofallmembers>
+      <member refid="structdpp_1_1command__option__choice_1a4ebf86e99143369ae8806009a2d9d55b" prot="public" virt="non-virtual"><scope>dpp::command_option_choice</scope><name>add_localization</name></member>
       <member refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1" prot="public" virt="virtual"><scope>dpp::command_option_choice</scope><name>build_json</name></member>
       <member refid="structdpp_1_1command__option__choice_1a5f5fa1e9b1c1d2eb9a9480dfaa1fdedb" prot="public" virt="non-virtual"><scope>dpp::command_option_choice</scope><name>command_option_choice</name></member>
       <member refid="structdpp_1_1command__option__choice_1a2bb4415c9d27246156e8cc368d131767" prot="public" virt="non-virtual"><scope>dpp::command_option_choice</scope><name>command_option_choice</name></member>
       <member refid="structdpp_1_1command__option__choice_1a7e1d8587e1bf8dc8053213c49d51405e" prot="public" virt="non-virtual"><scope>dpp::command_option_choice</scope><name>fill_from_json</name></member>
       <member refid="structdpp_1_1command__option__choice_1a6e4ceb9707c454d74d25a49dbcdb25ee" prot="public" virt="non-virtual"><scope>dpp::command_option_choice</scope><name>name</name></member>
+      <member refid="structdpp_1_1command__option__choice_1aed622e9d49129719f72e4ab6a9622eff" prot="public" virt="non-virtual"><scope>dpp::command_option_choice</scope><name>name_localizations</name></member>
       <member refid="structdpp_1_1command__option__choice_1a70021160d60b6403a353b302d97123ff" prot="public" virt="non-virtual"><scope>dpp::command_option_choice</scope><name>value</name></member>
       <member refid="structdpp_1_1command__option__choice_1a449db6e29c6b6cc272dfdd3e58dc68f4" prot="public" virt="virtual"><scope>dpp::command_option_choice</scope><name>~command_option_choice</name></member>
     </listofallmembers>
