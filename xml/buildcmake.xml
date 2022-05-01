@@ -34,37 +34,35 @@ cmake version 3.20.4
 <codeline></codeline>
 <codeline><highlight class="normal">#<sp/>Add<sp/>DPP<sp/>as<sp/>dependency</highlight></codeline>
 <codeline><highlight class="normal">add_subdirectory(libs/DPP)</highlight></codeline>
-<codeline><highlight class="normal">add_subdirectory(libs/spdlog)<sp/>#<sp/>if<sp/>you<sp/>need<sp/>a<sp/>logger.<sp/>Don&apos;t<sp/>forget<sp/>to<sp/>clone<sp/>sources</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>in<sp/>the<sp/>`libs/`<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>You<sp/>can<sp/>also<sp/>add<sp/>any<sp/>other<sp/>libs<sp/>you<sp/>want<sp/>to<sp/>use</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">#<sp/>Create<sp/>an<sp/>executable</highlight></codeline>
 <codeline><highlight class="normal">add_executable(${PROJECT_NAME}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>src/main.cpp</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>your<sp/>others<sp/>files...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>your<sp/>other<sp/>files...</highlight></codeline>
 <codeline><highlight class="normal">)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">#<sp/>Linking<sp/>libraries</highlight></codeline>
 <codeline><highlight class="normal">target_link_libraries(${PROJECT_NAME}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dpp</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>spdlog<sp/>#<sp/>Like<sp/>before,<sp/>if<sp/>you<sp/>need<sp/>spdlog</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Add<sp/>any<sp/>other<sp/>libs<sp/>you<sp/>want<sp/>to<sp/>use<sp/>here</highlight></codeline>
 <codeline><highlight class="normal">)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">#<sp/>Specify<sp/>includes</highlight></codeline>
 <codeline><highlight class="normal">target_include_directories(${PROJECT_NAME}<sp/>PRIVATE</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>libs/DPP/include</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>libs/spdlog/include<sp/>#<sp/>Like<sp/>before,<sp/>if<sp/>you<sp/>need<sp/>spdlog</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Remember<sp/>to<sp/>add<sp/>the<sp/>include<sp/>directories<sp/>of<sp/>any<sp/>other<sp/>libraries<sp/>too</highlight></codeline>
 <codeline><highlight class="normal">)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">#<sp/>Set<sp/>C++<sp/>version</highlight></codeline>
 <codeline><highlight class="normal">set_target_properties(${PROJECT_NAME}<sp/>PROPERTIES</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD<sp/>17<sp/>#<sp/>or<sp/>20<sp/>if<sp/>you<sp/>want<sp/>something<sp/>more<sp/>recent</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD<sp/>17</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD_REQUIRED<sp/>ON</highlight></codeline>
 <codeline><highlight class="normal">)</highlight></codeline>
 </programlisting></para>
 <para>Your project directory should look like this: <verbatim>- your_project/
     |-- libs/
         |-- DPP
-        |-- spdlog # again, only if you need it
     |-- src/
         |-- main.cpp
     |-- CMakeLists.txt
