@@ -124,5 +124,5 @@ var searchData=
   ['string_5fhas_5fprefix_121',['string_has_prefix',['../classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d',1,'dpp::commandhandler']]],
   ['string_5fnot_5fnull_122',['string_not_null',['../namespacedpp.html#adf57d9793b70d4b4da431491ab263298',1,'dpp']]],
   ['suppress_5fembeds_123',['suppress_embeds',['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message']]],
-  ['sync_124',['sync',['../namespacedpp.html#a100ce0f06b9b5a77de9be04687f3cb0e',1,'dpp']]]
+  ['sync_124',['sync',['../namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330',1,'dpp']]]
 ];
