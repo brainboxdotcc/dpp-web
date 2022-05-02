@@ -132,6 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2c6ff89794c5d0e719b2742fcede3bc"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1button__click__t.html#af2c6ff89794c5d0e719b2742fcede3bc">get_parameter</a> (const std::string &amp;name) const</td></tr>
 <tr class="memdesc:af2c6ff89794c5d0e719b2742fcede3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a command line parameter.  <a href="structdpp_1_1button__click__t.html#af2c6ff89794c5d0e719b2742fcede3bc">More...</a><br /></td></tr>
 <tr class="separator:af2c6ff89794c5d0e719b2742fcede3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493">reply</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>()) const</td></tr>
+<tr class="memdesc:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acknowledge interaction without displaying a message to the user, for use with button and select menu components.  <a href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493">More...</a><br /></td></tr>
+<tr class="separator:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5fcd66cf01e5dbce8f5ec921a58db63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#aa5fcd66cf01e5dbce8f5ec921a58db63">reply</a> (<a class="el" href="namespacedpp.html#a83479ddaa45166def7719d5511b09d02">interaction_response_type</a> t, const <a class="el" href="structdpp_1_1message.html">message</a> &amp;m, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>()) const</td></tr>
 <tr class="memdesc:aa5fcd66cf01e5dbce8f5ec921a58db63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a reply for this interaction.  <a href="structdpp_1_1interaction__create__t.html#aa5fcd66cf01e5dbce8f5ec921a58db63">More...</a><br /></td></tr>
 <tr class="separator:aa5fcd66cf01e5dbce8f5ec921a58db63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -570,8 +573,42 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a34f374b358f8d2d49fa93bfe5a2c0493" name="a34f374b358f8d2d49fa93bfe5a2c0493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f374b358f8d2d49fa93bfe5a2c0493">&#9670;&nbsp;</a></span>reply() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::interaction_create_t::reply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code><a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>()</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Acknowledge interaction without displaying a message to the user, for use with button and select menu components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes. On success the callback will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request.">dpp::confirmation</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aebdd5a0cd0258a372dc1b55aa594a44a" name="aebdd5a0cd0258a372dc1b55aa594a44a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebdd5a0cd0258a372dc1b55aa594a44a">&#9670;&nbsp;</a></span>reply() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aebdd5a0cd0258a372dc1b55aa594a44a">&#9670;&nbsp;</a></span>reply() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -616,7 +653,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a56c5b18e31d5042ce01c814620013d2d" name="a56c5b18e31d5042ce01c814620013d2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56c5b18e31d5042ce01c814620013d2d">&#9670;&nbsp;</a></span>reply() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c5b18e31d5042ce01c814620013d2d">&#9670;&nbsp;</a></span>reply() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,7 +698,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aa5fcd66cf01e5dbce8f5ec921a58db63" name="aa5fcd66cf01e5dbce8f5ec921a58db63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5fcd66cf01e5dbce8f5ec921a58db63">&#9670;&nbsp;</a></span>reply() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5fcd66cf01e5dbce8f5ec921a58db63">&#9670;&nbsp;</a></span>reply() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,7 +750,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a946783aee86efa1f18c4d7ceb0e07313" name="a946783aee86efa1f18c4d7ceb0e07313"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a946783aee86efa1f18c4d7ceb0e07313">&#9670;&nbsp;</a></span>reply() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a946783aee86efa1f18c4d7ceb0e07313">&#9670;&nbsp;</a></span>reply() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
