@@ -33,5 +33,6 @@ var searchData=
   ['confirmation_30',['confirmation',['../structdpp_1_1confirmation.html',1,'dpp']]],
   ['confirmation_5fcallback_5ft_31',['confirmation_callback_t',['../structdpp_1_1confirmation__callback__t.html',1,'dpp']]],
   ['connection_32',['connection',['../classdpp_1_1connection.html',1,'dpp']]],
-  ['connection_5fexception_33',['connection_exception',['../classdpp_1_1connection__exception.html',1,'dpp']]]
+  ['connection_5fexception_33',['connection_exception',['../classdpp_1_1connection__exception.html',1,'dpp']]],
+  ['context_5fmenu_5ft_34',['context_menu_t',['../structdpp_1_1context__menu__t.html',1,'dpp']]]
 ];

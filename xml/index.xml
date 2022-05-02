@@ -479,6 +479,8 @@
     <member refid="classdpp_1_1cluster_1af9409347218d270da0aeb22b0a27c38d" kind="variable"><name>on_button_click</name></member>
     <member refid="classdpp_1_1cluster_1a101e35b584bd6979581f5df890215591" kind="variable"><name>on_autocomplete</name></member>
     <member refid="classdpp_1_1cluster_1a2b040265e217148f7dd9dbf36630e763" kind="variable"><name>on_select_click</name></member>
+    <member refid="classdpp_1_1cluster_1a7ac8efe14c2889c76b35df7f41f5a460" kind="variable"><name>on_message_context_menu</name></member>
+    <member refid="classdpp_1_1cluster_1a7798d46a55b89e79d7674430f76f1baa" kind="variable"><name>on_user_context_menu</name></member>
     <member refid="classdpp_1_1cluster_1ac8f54e4a67895d916c58bd277e486a64" kind="variable"><name>on_form_submit</name></member>
     <member refid="classdpp_1_1cluster_1a951fe0695fd7cb33e844ebe45f08f96a" kind="variable"><name>on_guild_delete</name></member>
     <member refid="classdpp_1_1cluster_1adcf4188adae294f4cb41c615e6329e3f" kind="variable"><name>on_channel_delete</name></member>
@@ -1092,6 +1094,27 @@
   <compound refid="classdpp_1_1connection__exception" kind="class"><name>dpp::connection_exception</name>
     <member refid="classdpp_1_1exception_1ac033c933ff59daf22d4ea121303e11b9" kind="variable"><name>msg</name></member>
     <member refid="classdpp_1_1exception_1a010588e4eec074c113ff36c82dde74f9" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="structdpp_1_1context__menu__t" kind="struct"><name>dpp::context_menu_t</name>
+    <member refid="structdpp_1_1context__menu__t_1aac1ac28d819a56ecbce35fd63317f961" kind="function"><name>context_menu_t</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aa5fcd66cf01e5dbce8f5ec921a58db63" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a946783aee86efa1f18c4d7ceb0e07313" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aebdd5a0cd0258a372dc1b55aa594a44a" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a56c5b18e31d5042ce01c814620013d2d" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a63076b1d3b1fc2e1c3f97384f1fe8b4b" kind="function"><name>dialog</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a274aaa562766588128c2e3699b515b41" kind="function"><name>edit_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aa65d3bc92cad7ef094e90ca05ba45859" kind="function"><name>edit_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1ab0c0133ac861e7752cd700903303b7fb" kind="function"><name>thinking</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1ad106ea02219af2a9bc35519f3bde6b36" kind="function"><name>get_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a10553ebb8d10ba58595f825e0a89eb1b" kind="function"><name>edit_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a42a7aada4ad321e9d8e3645b8b4abc97" kind="function"><name>delete_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a9ed8c6f8eaf7862de50a30e9642fbc56" kind="function"><name>get_parameter</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kind="variable"><name>command</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
   </compound>
   <compound refid="classdpp_1_1discord__client" kind="class"><name>dpp::discord_client</name>
     <member refid="classdpp_1_1discord__client_1af5314358ae06ff298fbe659984648c86" kind="friend"><name>dpp::events::voice_state_update</name></member>
@@ -2441,6 +2464,30 @@
     <member refid="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" kind="function"><name>cancel</name></member>
     <member refid="classdpp_1_1collector_1af7f9cfbcf647292a6eff59c63508171b" kind="variable"><name>owner</name></member>
   </compound>
+  <compound refid="structdpp_1_1message__context__menu__t" kind="struct"><name>dpp::message_context_menu_t</name>
+    <member refid="structdpp_1_1message__context__menu__t_1ab6d8cc57cdc54ecf6d64fe0f1886010e" kind="variable"><name>ctx_message</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kind="variable"><name>command</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
+    <member refid="structdpp_1_1message__context__menu__t_1a0800f4ff99c0f0f2fee1eaff1da373dd" kind="function"><name>message_context_menu_t</name></member>
+    <member refid="structdpp_1_1message__context__menu__t_1ab549c90e5119e55dc76834f8bfa4ad83" kind="function"><name>get_message</name></member>
+    <member refid="structdpp_1_1message__context__menu__t_1a8b39043188176b4c7ac471c7b9c90ebb" kind="function"><name>set_message</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aa5fcd66cf01e5dbce8f5ec921a58db63" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a946783aee86efa1f18c4d7ceb0e07313" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aebdd5a0cd0258a372dc1b55aa594a44a" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a56c5b18e31d5042ce01c814620013d2d" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a63076b1d3b1fc2e1c3f97384f1fe8b4b" kind="function"><name>dialog</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a274aaa562766588128c2e3699b515b41" kind="function"><name>edit_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aa65d3bc92cad7ef094e90ca05ba45859" kind="function"><name>edit_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1ab0c0133ac861e7752cd700903303b7fb" kind="function"><name>thinking</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1ad106ea02219af2a9bc35519f3bde6b36" kind="function"><name>get_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a10553ebb8d10ba58595f825e0a89eb1b" kind="function"><name>edit_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a42a7aada4ad321e9d8e3645b8b4abc97" kind="function"><name>delete_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a9ed8c6f8eaf7862de50a30e9642fbc56" kind="function"><name>get_parameter</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
+  </compound>
   <compound refid="classdpp_1_1events_1_1message__create" kind="class"><name>dpp::events::message_create</name>
     <member refid="classdpp_1_1events_1_1message__create_1a309d726ee14343ae5be473b2bdbb41c0" kind="function"><name>handle</name></member>
   </compound>
@@ -3488,6 +3535,30 @@
     <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" kind="function"><name>get_creation_time</name></member>
     <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" kind="function"><name>operator==</name></member>
     <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="structdpp_1_1user__context__menu__t" kind="struct"><name>dpp::user_context_menu_t</name>
+    <member refid="structdpp_1_1user__context__menu__t_1a87836d99d425ab961b11603853fb38e5" kind="variable"><name>ctx_user</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kind="variable"><name>command</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
+    <member refid="structdpp_1_1user__context__menu__t_1a0f828a8da53e52d6de61634d4ddf125f" kind="function"><name>user_context_menu_t</name></member>
+    <member refid="structdpp_1_1user__context__menu__t_1a73f0b2141c0577e0e9483c6b2863ac1c" kind="function"><name>get_user</name></member>
+    <member refid="structdpp_1_1user__context__menu__t_1a40a08e44ac648cee927fcc4f9dc7db7d" kind="function"><name>set_user</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aa5fcd66cf01e5dbce8f5ec921a58db63" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a946783aee86efa1f18c4d7ceb0e07313" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aebdd5a0cd0258a372dc1b55aa594a44a" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a56c5b18e31d5042ce01c814620013d2d" kind="function"><name>reply</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a63076b1d3b1fc2e1c3f97384f1fe8b4b" kind="function"><name>dialog</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a274aaa562766588128c2e3699b515b41" kind="function"><name>edit_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1aa65d3bc92cad7ef094e90ca05ba45859" kind="function"><name>edit_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1ab0c0133ac861e7752cd700903303b7fb" kind="function"><name>thinking</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1ad106ea02219af2a9bc35519f3bde6b36" kind="function"><name>get_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a10553ebb8d10ba58595f825e0a89eb1b" kind="function"><name>edit_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a42a7aada4ad321e9d8e3645b8b4abc97" kind="function"><name>delete_original_response</name></member>
+    <member refid="structdpp_1_1interaction__create__t_1a9ed8c6f8eaf7862de50a30e9642fbc56" kind="function"><name>get_parameter</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
   <compound refid="classdpp_1_1user__identified" kind="class"><name>dpp::user_identified</name>
     <member refid="classdpp_1_1user__identified_1a0198108a251db7e4d893d8ab39e8e18b" kind="variable"><name>locale</name></member>

@@ -1201,6 +1201,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2b040265e217148f7dd9dbf36630e763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1select__click__t.html">select_click_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2b040265e217148f7dd9dbf36630e763">on_select_click</a></td></tr>
 <tr class="memdesc:a2b040265e217148f7dd9dbf36630e763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a select menu is clicked attached to a message. Select menu clicks are triggered by discord when select menus are clicked which you have associated with a message using <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a>.  <a href="classdpp_1_1cluster.html#a2b040265e217148f7dd9dbf36630e763">More...</a><br /></td></tr>
 <tr class="separator:a2b040265e217148f7dd9dbf36630e763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac8efe14c2889c76b35df7f41f5a460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1message__context__menu__t.html">message_context_menu_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7ac8efe14c2889c76b35df7f41f5a460">on_message_context_menu</a></td></tr>
+<tr class="memdesc:a7ac8efe14c2889c76b35df7f41f5a460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a user right-clicks or long-presses on a message, where a slash command is bound to the ctxm_message command type.  <a href="classdpp_1_1cluster.html#a7ac8efe14c2889c76b35df7f41f5a460">More...</a><br /></td></tr>
+<tr class="separator:a7ac8efe14c2889c76b35df7f41f5a460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7798d46a55b89e79d7674430f76f1baa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1user__context__menu__t.html">user_context_menu_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7798d46a55b89e79d7674430f76f1baa">on_user_context_menu</a></td></tr>
+<tr class="memdesc:a7798d46a55b89e79d7674430f76f1baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a user right-clicks or long-presses on a user, where a slash command is bound to the ctxm_user command type.  <a href="classdpp_1_1cluster.html#a7798d46a55b89e79d7674430f76f1baa">More...</a><br /></td></tr>
+<tr class="separator:a7798d46a55b89e79d7674430f76f1baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f54e4a67895d916c58bd277e486a64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1form__submit__t.html">form_submit_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac8f54e4a67895d916c58bd277e486a64">on_form_submit</a></td></tr>
 <tr class="memdesc:ac8f54e4a67895d916c58bd277e486a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a modal dialog is submitted. Form submits are triggered by discord when modal dialogs are submitted which you have associated with a slash command using <a class="el" href="structdpp_1_1interaction__modal__response.html" title="Represents a modal dialog box response to an interaction.">dpp::interaction_modal_response</a>.  <a href="classdpp_1_1cluster.html#ac8f54e4a67895d916c58bd277e486a64">More...</a><br /></td></tr>
 <tr class="separator:ac8f54e4a67895d916c58bd277e486a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -17141,6 +17147,23 @@ unless you want something special from <code><a class="el" href="classdpp_1_1use
 
 </div>
 </div>
+<a id="a7ac8efe14c2889c76b35df7f41f5a460" name="a7ac8efe14c2889c76b35df7f41f5a460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac8efe14c2889c76b35df7f41f5a460">&#9670;&nbsp;</a></span>on_message_context_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt;<a class="el" href="structdpp_1_1message__context__menu__t.html">message_context_menu_t</a>&gt; dpp::cluster::on_message_context_menu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a user right-clicks or long-presses on a message, where a slash command is bound to the ctxm_message command type. </p>
+<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1select__click__t.html" title="Click on select.">select_click_t</a>&amp;, and returns void. </dd></dl>
+
+</div>
+</div>
 <a id="a1a632b3c2c8d3ff3a47372ffa770acf5" name="a1a632b3c2c8d3ff3a47372ffa770acf5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a632b3c2c8d3ff3a47372ffa770acf5">&#9670;&nbsp;</a></span>on_message_create</h2>
 
@@ -17512,6 +17535,23 @@ unless you want something special from <code><a class="el" href="classdpp_1_1use
 
 <p>Called when a user is typing on a channel. </p>
 <dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1typing__start__t.html" title="Typing start.">typing_start_t</a>&amp;, and returns void. </dd></dl>
+
+</div>
+</div>
+<a id="a7798d46a55b89e79d7674430f76f1baa" name="a7798d46a55b89e79d7674430f76f1baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7798d46a55b89e79d7674430f76f1baa">&#9670;&nbsp;</a></span>on_user_context_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt;<a class="el" href="structdpp_1_1user__context__menu__t.html">user_context_menu_t</a>&gt; dpp::cluster::on_user_context_menu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a user right-clicks or long-presses on a user, where a slash command is bound to the ctxm_user command type. </p>
+<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1select__click__t.html" title="Click on select.">select_click_t</a>&amp;, and returns void. </dd></dl>
 
 </div>
 </div>

@@ -140,6 +140,10 @@ var hierarchy =
       [ "dpp::interaction_create_t", "structdpp_1_1interaction__create__t.html", [
         [ "dpp::autocomplete_t", "structdpp_1_1autocomplete__t.html", null ],
         [ "dpp::button_click_t", "structdpp_1_1button__click__t.html", null ],
+        [ "dpp::context_menu_t", "structdpp_1_1context__menu__t.html", [
+          [ "dpp::message_context_menu_t", "structdpp_1_1message__context__menu__t.html", null ],
+          [ "dpp::user_context_menu_t", "structdpp_1_1user__context__menu__t.html", null ]
+        ] ],
         [ "dpp::form_submit_t", "structdpp_1_1form__submit__t.html", null ],
         [ "dpp::select_click_t", "structdpp_1_1select__click__t.html", null ]
       ] ],
