@@ -118,26 +118,40 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="classdpp_1_1in__thread_1ada0fc8fb65bb5591664fe2299ba8a49d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1in__thread_1aff13d6994c3024563743b77d9fc996fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::in_thread::in_loop</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(uint32_t index)</argsstring>
         <name>in_loop</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
         <briefdescription>
 <para>Inbound queue thread loop. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thread index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="288" column="6" bodyfile="src/dpp/queues.cpp" bodystart="231" bodyend="333"/>
+        <location file="include/dpp/queues.h" line="289" column="6" bodyfile="src/dpp/queues.cpp" bodystart="231" bodyend="334"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1in__thread_1a11da675f20802345c87836d17f74a6a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1in__thread_1aa3facf9b1775708af491a17bbc9ce627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::in_thread::in_thread</definition>
-        <argsstring>(class cluster *owner, class request_queue *req_q)</argsstring>
+        <argsstring>(class cluster *owner, class request_queue *req_q, uint32_t index)</argsstring>
         <name>in_thread</name>
         <param>
           <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
@@ -146,6 +160,10 @@
         <param>
           <type>class <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> *</type>
           <declname>req_q</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
         </param>
         <briefdescription>
 <para>Construct a new in thread object. </para>
@@ -167,12 +185,20 @@
 <para>Owning request queue </para>
 </parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thread index number </para>
+</parameterdescription>
+</parameteritem>
 </parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="296" column="1" bodyfile="src/dpp/queues.cpp" bodystart="207" bodyend="210"/>
+        <location file="include/dpp/queues.h" line="298" column="1" bodyfile="src/dpp/queues.cpp" bodystart="207" bodyend="210"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1in__thread_1a1d739e6980d29c21ec366d6723b3c7f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -186,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="302" column="1" bodyfile="src/dpp/queues.cpp" bodystart="212" bodyend="218"/>
+        <location file="include/dpp/queues.h" line="304" column="1" bodyfile="src/dpp/queues.cpp" bodystart="212" bodyend="218"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1in__thread_1aafd1339f015ed11175d0d01abe42031a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -214,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="310" column="6" bodyfile="src/dpp/queues.cpp" bodystart="370" bodyend="377"/>
+        <location file="include/dpp/queues.h" line="312" column="6" bodyfile="src/dpp/queues.cpp" bodystart="372" bodyend="379"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -222,15 +248,15 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/dpp/queues.h" line="243" column="1" bodyfile="include/dpp/queues.h" bodystart="243" bodyend="311"/>
+    <location file="include/dpp/queues.h" line="243" column="1" bodyfile="include/dpp/queues.h" bodystart="243" bodyend="313"/>
     <listofallmembers>
       <member refid="classdpp_1_1in__thread_1a85e8e2af544c0a62c9f4fd4a576d9edf" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>buckets</name></member>
       <member refid="classdpp_1_1in__thread_1a5005687e4243b2d4c946f7adc1b36c34" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>creator</name></member>
-      <member refid="classdpp_1_1in__thread_1ada0fc8fb65bb5591664fe2299ba8a49d" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_loop</name></member>
+      <member refid="classdpp_1_1in__thread_1aff13d6994c3024563743b77d9fc996fd" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_loop</name></member>
       <member refid="classdpp_1_1in__thread_1a58d9d4390201fc8d4b6469f91ea2c2cf" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_mutex</name></member>
       <member refid="classdpp_1_1in__thread_1ab43f5ed51219081d52143f7e3a32b6c7" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_ready</name></member>
       <member refid="classdpp_1_1in__thread_1a5367c50def21f9ff755a1efe3d880408" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_thr</name></member>
-      <member refid="classdpp_1_1in__thread_1a11da675f20802345c87836d17f74a6a5" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_thread</name></member>
+      <member refid="classdpp_1_1in__thread_1aa3facf9b1775708af491a17bbc9ce627" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_thread</name></member>
       <member refid="classdpp_1_1in__thread_1aafd1339f015ed11175d0d01abe42031a" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>post_request</name></member>
       <member refid="classdpp_1_1in__thread_1af879ab50fc6a4e0b584aa1af17700187" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>requests</name></member>
       <member refid="classdpp_1_1in__thread_1a983a491d310f4c73425c3df23d00e1e6" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>requests_in</name></member>

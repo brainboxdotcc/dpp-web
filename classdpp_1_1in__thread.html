@@ -110,9 +110,9 @@ $(document).ready(function(){initNavTree('classdpp_1_1in__thread.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11da675f20802345c87836d17f74a6a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1in__thread.html#a11da675f20802345c87836d17f74a6a5">in_thread</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, class <a class="el" href="classdpp_1_1request__queue.html">request_queue</a> *req_q)</td></tr>
-<tr class="memdesc:a11da675f20802345c87836d17f74a6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new in thread object.  <a href="classdpp_1_1in__thread.html#a11da675f20802345c87836d17f74a6a5">More...</a><br /></td></tr>
-<tr class="separator:a11da675f20802345c87836d17f74a6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3facf9b1775708af491a17bbc9ce627"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1in__thread.html#aa3facf9b1775708af491a17bbc9ce627">in_thread</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, class <a class="el" href="classdpp_1_1request__queue.html">request_queue</a> *req_q, uint32_t index)</td></tr>
+<tr class="memdesc:aa3facf9b1775708af491a17bbc9ce627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new in thread object.  <a href="classdpp_1_1in__thread.html#aa3facf9b1775708af491a17bbc9ce627">More...</a><br /></td></tr>
+<tr class="separator:aa3facf9b1775708af491a17bbc9ce627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d739e6980d29c21ec366d6723b3c7f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1in__thread.html#a1d739e6980d29c21ec366d6723b3c7f5">~in_thread</a> ()</td></tr>
 <tr class="memdesc:a1d739e6980d29c21ec366d6723b3c7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the in thread object This will end the thread that is owned by this object by joining it.  <a href="classdpp_1_1in__thread.html#a1d739e6980d29c21ec366d6723b3c7f5">More...</a><br /></td></tr>
 <tr class="separator:a1d739e6980d29c21ec366d6723b3c7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a thread in the thread pool handling requests to HTTP(S) servers. There are several of these, the total defined by a constant in queues.cpp, and each one will always receive requests for the same rate limit bucket based on its endpoint portion of the url. This makes rate limit handling reliable and easy to manage. Each of these also has its own mutex, so that requests are less likely to block while waiting for internal containers to be usable. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a11da675f20802345c87836d17f74a6a5" name="a11da675f20802345c87836d17f74a6a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11da675f20802345c87836d17f74a6a5">&#9670;&nbsp;</a></span>in_thread()</h2>
+<a id="aa3facf9b1775708af491a17bbc9ce627" name="aa3facf9b1775708af491a17bbc9ce627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3facf9b1775708af491a17bbc9ce627">&#9670;&nbsp;</a></span>in_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +139,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">class <a class="el" href="classdpp_1_1request__queue.html">request_queue</a> *&#160;</td>
-          <td class="paramname"><em>req_q</em>&#160;</td>
+          <td class="paramname"><em>req_q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -154,6 +160,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">owner</td><td>Owning cluster </td></tr>
     <tr><td class="paramname">req_q</td><td>Owning request queue </td></tr>
+    <tr><td class="paramname">index</td><td>Thread index number </td></tr>
   </table>
   </dd>
 </dl>

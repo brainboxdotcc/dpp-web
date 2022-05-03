@@ -28,6 +28,7 @@ var namespacedpp_1_1utility =
     [ "read_file", "namespacedpp_1_1utility.html#a4e85ceba20c4ed2bfda15d806890428b", null ],
     [ "rgb", "namespacedpp_1_1utility.html#ad40571e78df220f4730418085d15ce4b", null ],
     [ "rgb", "namespacedpp_1_1utility.html#a9876a6a9d06223cfb2bf8dc83e7c9783", null ],
+    [ "set_thread_name", "namespacedpp_1_1utility.html#ab8b9842a7d3645607bf57d6803ee9509", null ],
     [ "time_f", "namespacedpp_1_1utility.html#a1184092d62c7ab561cb3f60a92f71b67", null ],
     [ "timestamp", "namespacedpp_1_1utility.html#a62891c981320f9cc4edfbbf9990428c5", null ],
     [ "tokenize", "namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec", null ],

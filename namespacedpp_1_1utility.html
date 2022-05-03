@@ -216,6 +216,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7d10e878ab1347eaed727b2e528206ed"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a7d10e878ab1347eaed727b2e528206ed">version</a> ()</td></tr>
 <tr class="memdesc:a7d10e878ab1347eaed727b2e528206ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the library's version string.  <a href="namespacedpp_1_1utility.html#a7d10e878ab1347eaed727b2e528206ed">More...</a><br /></td></tr>
 <tr class="separator:a7d10e878ab1347eaed727b2e528206ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b9842a7d3645607bf57d6803ee9509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#ab8b9842a7d3645607bf57d6803ee9509">set_thread_name</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:ab8b9842a7d3645607bf57d6803ee9509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of the current thread for debugging and statistical reporting.  <a href="namespacedpp_1_1utility.html#ab8b9842a7d3645607bf57d6803ee9509">More...</a><br /></td></tr>
+<tr class="separator:ab8b9842a7d3645607bf57d6803ee9509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -396,7 +399,7 @@ Variables</h2></td></tr>
 
 <p>Get a default logger that outputs to std::cout. e.g. </p>
 <div class="fragment"><div class="line">bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
-<div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div><div class="ttdef"><b>Definition:</b> utility.cpp:370</div></div>
+<div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div><div class="ttdef"><b>Definition:</b> utility.cpp:379</div></div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>A logger for attaching to on_log </dd></dl>
 
 </div>
@@ -494,7 +497,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a class="code hl_function" href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a>(<span class="stringliteral">&quot;/bin/ls&quot;</span>, {<span class="stringliteral">&quot;-al&quot;</span>}, [](<span class="keyword">const</span> std::string&amp; output) {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Output of &#39;ls -al&#39;: &quot;</span> &lt;&lt; output &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">});</div>
-<div class="ttc" id="anamespacedpp_1_1utility_html_ac7d516c03d572fe65d01c4ec5e92c6f0"><div class="ttname"><a href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a></div><div class="ttdeci">void exec(const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters, cmd_result_t callback)</div><div class="ttdoc">Run a commandline program asynchronously. The command line program is spawned in a separate std::thre...</div><div class="ttdef"><b>Definition:</b> utility.cpp:216</div></div>
+<div class="ttc" id="anamespacedpp_1_1utility_html_ac7d516c03d572fe65d01c4ec5e92c6f0"><div class="ttname"><a href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">dpp::utility::exec</a></div><div class="ttdeci">void exec(const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters, cmd_result_t callback)</div><div class="ttdoc">Run a commandline program asynchronously. The command line program is spawned in a separate std::thre...</div><div class="ttdef"><b>Definition:</b> utility.cpp:224</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>The command to run. </td></tr>
@@ -790,6 +793,32 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t returned integer colour value </dd></dl>
+
+</div>
+</div>
+<a id="ab8b9842a7d3645607bf57d6803ee9509" name="ab8b9842a7d3645607bf57d6803ee9509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b9842a7d3645607bf57d6803ee9509">&#9670;&nbsp;</a></span>set_thread_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPP_EXPORT dpp::utility::set_thread_name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the name of the current thread for debugging and statistical reporting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>New name to set </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
