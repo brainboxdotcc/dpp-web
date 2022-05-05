@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaf9b4823dc5cfa358f1431dc0a13df6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad074f1ca4904e9a109d1fd0cb7f096a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1presence.html">presence</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1presence.html#ad074f1ca4904e9a109d1fd0cb7f096a9">fill_from_json</a> (nlohmann::json *j)</td></tr>
 <tr class="separator:ad074f1ca4904e9a109d1fd0cb7f096a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb33240188517c5f656099b88428b983"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1presence.html#adb33240188517c5f656099b88428b983">build_json</a> (bool with_id=false) const</td></tr>
+<tr class="memitem:adb33240188517c5f656099b88428b983"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1presence.html#adb33240188517c5f656099b88428b983">build_json</a> (bool with_id=false) const</td></tr>
 <tr class="separator:adb33240188517c5f656099b88428b983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63177953eddc1a1425721110a6469042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a172aa830689e55f4bba337de1592db96">presence_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1presence.html#a63177953eddc1a1425721110a6469042">desktop_status</a> () const</td></tr>
 <tr class="separator:a63177953eddc1a1425721110a6469042"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,6 +295,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string dpp::presence::build_json </td>
@@ -304,6 +307,11 @@ Public Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p >Build JSON from this object.</p>
 <p >Note: This excludes any part of the presence object that are not valid for websockets and bots, and includes websocket opcode 3. You will not get what you expect if you call this on a user's presence received from on_presence_update or on_guild_create!</p>
@@ -314,6 +322,8 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The JSON text of the presence </dd></dl>
+
+<p>Reimplemented from <a class="el" href="structdpp_1_1json__interface.html#a287c22f692ee3d25b6f9b320ff35baa1">dpp::json_interface&lt; presence &gt;</a>.</p>
 
 </div>
 </div>

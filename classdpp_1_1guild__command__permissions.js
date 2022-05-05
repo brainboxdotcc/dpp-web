@@ -2,7 +2,7 @@ var classdpp_1_1guild__command__permissions =
 [
     [ "guild_command_permissions", "classdpp_1_1guild__command__permissions.html#a2527f7a846b4a85e1b51e595a83818b7", null ],
     [ "~guild_command_permissions", "classdpp_1_1guild__command__permissions.html#a5c9007643cda1c8734ce8912e6bed023", null ],
-    [ "build_json", "classdpp_1_1guild__command__permissions.html#a0d25a82308c9b39590436b9cd3d14a5a", null ],
+    [ "build_json", "classdpp_1_1guild__command__permissions.html#a287c22f692ee3d25b6f9b320ff35baa1", null ],
     [ "fill_from_json", "classdpp_1_1guild__command__permissions.html#a784c456adbe4c058864804f5099c43fe", null ],
     [ "application_id", "classdpp_1_1guild__command__permissions.html#a50db0da47083c2f875ef797d6dd5effb", null ],
     [ "guild_id", "classdpp_1_1guild__command__permissions.html#a02844179d43ecf384ef67bc021cc6e6e", null ],

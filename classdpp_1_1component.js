@@ -5,7 +5,7 @@ var classdpp_1_1component =
     [ "~component", "classdpp_1_1component.html#a790334ad68b127e95923c5f6cdb727a7", null ],
     [ "add_component", "classdpp_1_1component.html#a3707437be16cc7dfd5edcf321f8e842d", null ],
     [ "add_select_option", "classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243", null ],
-    [ "build_json", "classdpp_1_1component.html#a0d25a82308c9b39590436b9cd3d14a5a", null ],
+    [ "build_json", "classdpp_1_1component.html#a287c22f692ee3d25b6f9b320ff35baa1", null ],
     [ "fill_from_json", "classdpp_1_1component.html#a993d0a0c899aca38b3f12161484a9f13", null ],
     [ "set_default_value", "classdpp_1_1component.html#a3dfa5aa884cf00962250401fb41995e5", null ],
     [ "set_disabled", "classdpp_1_1component.html#a48a2ab72eaf6e58073a1f5dc936877a3", null ],
