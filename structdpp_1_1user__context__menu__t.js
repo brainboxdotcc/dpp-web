@@ -9,7 +9,7 @@ var structdpp_1_1user__context__menu__t =
     [ "edit_response", "structdpp_1_1user__context__menu__t.html#aa65d3bc92cad7ef094e90ca05ba45859", null ],
     [ "get_original_response", "structdpp_1_1user__context__menu__t.html#ad106ea02219af2a9bc35519f3bde6b36", null ],
     [ "get_parameter", "structdpp_1_1user__context__menu__t.html#a9ed8c6f8eaf7862de50a30e9642fbc56", null ],
-    [ "get_user", "structdpp_1_1user__context__menu__t.html#a73f0b2141c0577e0e9483c6b2863ac1c", null ],
+    [ "get_user", "structdpp_1_1user__context__menu__t.html#aeb4e5a5eef9f2c8d2b25519a7120cf62", null ],
     [ "is_cancelled", "structdpp_1_1user__context__menu__t.html#aca2880114f69b7ba62eb5137824c1432", null ],
     [ "reply", "structdpp_1_1user__context__menu__t.html#a34f374b358f8d2d49fa93bfe5a2c0493", null ],
     [ "reply", "structdpp_1_1user__context__menu__t.html#aebdd5a0cd0258a372dc1b55aa594a44a", null ],
