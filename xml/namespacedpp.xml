@@ -201,6 +201,7 @@
     <innerclass refid="structdpp_1_1welcome__screen__t" prot="public">dpp::welcome_screen_t</innerclass>
     <innerclass refid="classdpp_1_1zlibcontext" prot="public">dpp::zlibcontext</innerclass>
     <innernamespace refid="namespacedpp_1_1colors">dpp::colors</innernamespace>
+    <innernamespace refid="namespacedpp_1_1embed__type">dpp::embed_type</innernamespace>
     <innernamespace refid="namespacedpp_1_1events">dpp::events</innernamespace>
     <innernamespace refid="namespacedpp_1_1utility">dpp::utility</innernamespace>
       <sectiondef kind="enum">
@@ -1095,6 +1096,50 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da26438fd0c3f4d16ad3e726965efe6b02" prot="public">
+          <name>ae_appcommand_permission_update</name>
+          <initializer>=	121</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3dadd3c2d91647e532762858af596a6e0a4" prot="public">
+          <name>ae_automod_rule_create</name>
+          <initializer>=	140</initializer>
+          <briefdescription>
+<para>Auto moderation rule creation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3dab01b988706b55396fadf3e29dc63422b" prot="public">
+          <name>ae_automod_rule_update</name>
+          <initializer>=	141</initializer>
+          <briefdescription>
+<para>Auto moderation rule update. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da0996d656b42d9eb138de550a4c963066" prot="public">
+          <name>ae_automod_rule_delete</name>
+          <initializer>=	142</initializer>
+          <briefdescription>
+<para>Auto moderation rule deletion. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a29a51ae6f6d959baee7d5e77d53d6c3da7196784b894f43b1c5a0d548a29e8775" prot="public">
+          <name>ae_automod_block_message</name>
+          <initializer>=	143</initializer>
+          <briefdescription>
+<para>Auto moderation block message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
 <para>Defines types of audit log entry. </para>
         </briefdescription>
@@ -1102,7 +1147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/auditlog.h" line="34" column="1" bodyfile="include/dpp/auditlog.h" bodystart="34" bodyend="129"/>
+        <location file="include/dpp/auditlog.h" line="34" column="1" bodyfile="include/dpp/auditlog.h" bodystart="34" bodyend="139"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a732e832861149a278f27ea7840b8e4ca" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2102,7 +2147,7 @@
         <name>guild_flags_extra</name>
         <enumvalue id="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e" prot="public">
           <name>g_premium_progress_bar_enabled</name>
-          <initializer>=		0b00000001</initializer>
+          <initializer>=	0b00000001</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -2118,6 +2163,15 @@
 <para>Guild can have an animated banner (doesn&apos;t mean it actually has one though) </para>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b" prot="public">
+          <name>g_auto_moderation</name>
+          <initializer>=			0b00000100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Guild has auto moderation </para>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
 <para>Additional boolean flag values for guild, as guild_flags is full. </para>
         </briefdescription>
@@ -2125,7 +2179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="130" column="1" bodyfile="include/dpp/guild.h" bodystart="130" bodyend="135"/>
+        <location file="include/dpp/guild.h" line="130" column="1" bodyfile="include/dpp/guild.h" bodystart="130" bodyend="137"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2173,7 +2227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="140" column="1" bodyfile="include/dpp/guild.h" bodystart="140" bodyend="149"/>
+        <location file="include/dpp/guild.h" line="142" column="1" bodyfile="include/dpp/guild.h" bodystart="142" bodyend="151"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1afd5e6717b5f1f374c5c29f91394aa591" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2224,7 +2278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="319" column="1" bodyfile="include/dpp/guild.h" bodystart="319" bodyend="328"/>
+        <location file="include/dpp/guild.h" line="321" column="1" bodyfile="include/dpp/guild.h" bodystart="321" bodyend="330"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a47f79e1142def583c59df70b1382319f" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2263,7 +2317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="335" column="1" bodyfile="include/dpp/guild.h" bodystart="335" bodyend="342"/>
+        <location file="include/dpp/guild.h" line="337" column="1" bodyfile="include/dpp/guild.h" bodystart="337" bodyend="344"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a99a41e59054cde79c2b893ddb9320e4a" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2293,7 +2347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="348" column="1" bodyfile="include/dpp/guild.h" bodystart="348" bodyend="353"/>
+        <location file="include/dpp/guild.h" line="350" column="1" bodyfile="include/dpp/guild.h" bodystart="350" bodyend="355"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a15724514db1d98eb10a8bd2d5ba44c85" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2350,7 +2404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="358" column="1" bodyfile="include/dpp/guild.h" bodystart="358" bodyend="369"/>
+        <location file="include/dpp/guild.h" line="360" column="1" bodyfile="include/dpp/guild.h" bodystart="360" bodyend="371"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1aaaa159f13811e8d13973c2794e171091" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -3197,6 +3251,15 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacedpp_1acd7f41dcc93c1cf48514d2b123e4d8bca0ae71382837674b43d0e443da0eed509" prot="public">
+          <name>mt_auto_moderation_action</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+<para>Auto moderation action. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
 <para>Message types for <ref refid="structdpp_1_1message_1ad4aa6594661e1527815364ad5b33b96b" kindref="member">dpp::message::type</ref>. </para>
         </briefdescription>
@@ -3204,7 +3267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="967" column="1" bodyfile="include/dpp/message.h" bodystart="967" bodyend="1014"/>
+        <location file="include/dpp/message.h" line="1003" column="1" bodyfile="include/dpp/message.h" bodystart="1003" bodyend="1052"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52" prot="public" static="no" strong="no">
         <type></type>
@@ -3243,7 +3306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1019" column="1" bodyfile="include/dpp/message.h" bodystart="1019" bodyend="1037"/>
+        <location file="include/dpp/message.h" line="1057" column="1" bodyfile="include/dpp/message.h" bodystart="1057" bodyend="1075"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" prot="public" static="no" strong="no">
         <type></type>
@@ -5260,7 +5323,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="373" column="28" bodyfile="include/dpp/guild.h" bodystart="373" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="375" column="28" bodyfile="include/dpp/guild.h" bodystart="375" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &gt;</type>
@@ -5274,7 +5337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="796" column="28" bodyfile="include/dpp/guild.h" bodystart="796" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="804" column="28" bodyfile="include/dpp/guild.h" bodystart="804" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt;</type>
@@ -5288,7 +5351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="846" column="28" bodyfile="include/dpp/guild.h" bodystart="846" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="854" column="28" bodyfile="include/dpp/guild.h" bodystart="854" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4dbbdf54366910bacd95554ccbc705a2" prot="public" static="no">
         <type>std::multimap&lt; std::string, std::string &gt;</type>
@@ -5358,7 +5421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1414" column="28" bodyfile="include/dpp/message.h" bodystart="1414" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1452" column="28" bodyfile="include/dpp/message.h" bodystart="1452" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
@@ -5372,7 +5435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1417" column="28" bodyfile="include/dpp/message.h" bodystart="1417" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1455" column="28" bodyfile="include/dpp/message.h" bodystart="1455" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref> &gt;</type>
@@ -5386,7 +5449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1420" column="28" bodyfile="include/dpp/message.h" bodystart="1420" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1458" column="28" bodyfile="include/dpp/message.h" bodystart="1458" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" prot="public" static="no">
         <type>size_t</type>
@@ -7412,7 +7475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/guild.cpp" line="134" column="6" bodyfile="src/dpp/guild.cpp" bodystart="134" bodyend="159" declfile="include/dpp/guild.h" declline="843" declcolumn="6"/>
+        <location file="src/dpp/guild.cpp" line="135" column="6" bodyfile="src/dpp/guild.cpp" bodystart="135" bodyend="160" declfile="include/dpp/guild.h" declline="851" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a239ce3fb8b4d9873dffeb5cb9b249f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
@@ -7463,7 +7526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/guild.cpp" line="684" column="14" bodyfile="src/dpp/guild.cpp" bodystart="684" bodyend="696" declfile="include/dpp/guild.h" declline="857" declcolumn="25"/>
+        <location file="src/dpp/guild.cpp" line="689" column="14" bodyfile="src/dpp/guild.cpp" bodystart="689" bodyend="701" declfile="include/dpp/guild.h" declline="865" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a5492d13e01367c06d893f7f7e1b6e929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

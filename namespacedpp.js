@@ -47,6 +47,15 @@ var namespacedpp =
       [ "wrx_blue", "namespacedpp_1_1colors.html#ab62fcafe0a6fdf4a995683942a301195", null ],
       [ "yellow", "namespacedpp_1_1colors.html#a0f96fc07b49cd37775c75b4289f9e796", null ]
     ] ],
+    [ "embed_type", "namespacedpp_1_1embed__type.html", [
+      [ "emt_article", "namespacedpp_1_1embed__type.html#a0dcbd746be0d87674f228c25d677afc4", null ],
+      [ "emt_automod", "namespacedpp_1_1embed__type.html#afd9b5dcc8b8a19bd15e10a9d6172583e", null ],
+      [ "emt_gifv", "namespacedpp_1_1embed__type.html#a7fdb5d16df353c6b49360312f55f2635", null ],
+      [ "emt_image", "namespacedpp_1_1embed__type.html#af29e7d824c439c942b1368dc062acb4c", null ],
+      [ "emt_link", "namespacedpp_1_1embed__type.html#a4ba6eefd11e5a71ba71cd88a2fbb6f11", null ],
+      [ "emt_rich", "namespacedpp_1_1embed__type.html#a3b4603837d99748accdf78eb8f5af513", null ],
+      [ "emt_video", "namespacedpp_1_1embed__type.html#ab52c3b0ffdd666989752dbc5d1085f55", null ]
+    ] ],
     [ "events", "namespacedpp_1_1events.html", "namespacedpp_1_1events" ],
     [ "utility", "namespacedpp_1_1utility.html", "namespacedpp_1_1utility" ],
     [ "activity", "classdpp_1_1activity.html", "classdpp_1_1activity" ],
@@ -378,7 +387,12 @@ var namespacedpp =
       [ "ae_guild_scheduled_event_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da93f74cc23f6c486d0062ce8ba8a76250", null ],
       [ "ae_thread_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7188e735c3ac8f7350187c7e43efa772", null ],
       [ "ae_thread_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da9c1afffc90d0adfdf5ce3ff3f6cfa7dc", null ],
-      [ "ae_thread_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da60c1a36d005177f08743aa2239bb09e1", null ]
+      [ "ae_thread_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da60c1a36d005177f08743aa2239bb09e1", null ],
+      [ "ae_appcommand_permission_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da26438fd0c3f4d16ad3e726965efe6b02", null ],
+      [ "ae_automod_rule_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dadd3c2d91647e532762858af596a6e0a4", null ],
+      [ "ae_automod_rule_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dab01b988706b55396fadf3e29dc63422b", null ],
+      [ "ae_automod_rule_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0996d656b42d9eb138de550a4c963066", null ],
+      [ "ae_automod_block_message", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7196784b894f43b1c5a0d548a29e8775", null ]
     ] ],
     [ "cache_policy_setting_t", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52", [
       [ "cp_aggressive", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e", null ],
@@ -528,7 +542,8 @@ var namespacedpp =
     ] ],
     [ "guild_flags_extra", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e", [
       [ "g_premium_progress_bar_enabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e", null ],
-      [ "g_animated_banner", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e", null ]
+      [ "g_animated_banner", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e", null ],
+      [ "g_auto_moderation", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b", null ]
     ] ],
     [ "guild_member_flags", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30", [
       [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
@@ -669,7 +684,8 @@ var namespacedpp =
       [ "mt_application_command", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac0bfbd92c02b3e5e0a74f2b949c321fa", null ],
       [ "mt_thread_starter_message", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f", null ],
       [ "mt_guild_invite_reminder", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a", null ],
-      [ "mt_context_menu_command", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe", null ]
+      [ "mt_context_menu_command", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe", null ],
+      [ "mt_auto_moderation_action", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca0ae71382837674b43d0e443da0eed509", null ]
     ] ],
     [ "mfa_level_t", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4a", [
       [ "mfa_none", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4aaca2f84896f4202cf23eaaba3c4c8ff5e", null ],

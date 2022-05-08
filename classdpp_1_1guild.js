@@ -16,6 +16,7 @@ var classdpp_1_1guild =
     [ "has_animated_banner_hash", "classdpp_1_1guild.html#a8791d8112a042ab32fd8b5a54cd8f607", null ],
     [ "has_animated_icon", "classdpp_1_1guild.html#a46cf6e3821d628027553641c0623df34", null ],
     [ "has_animated_icon_hash", "classdpp_1_1guild.html#a019d630e2b5aeb708b48d6f8fbb420de", null ],
+    [ "has_auto_moderation", "classdpp_1_1guild.html#a62a651b5bafb7757b20a6bb3303d3542", null ],
     [ "has_banner", "classdpp_1_1guild.html#a6ec058ad4e9fde64b0a043287c3f6a73", null ],
     [ "has_channel_banners", "classdpp_1_1guild.html#ac432abc8b361b3c7f20d74650a63f730", null ],
     [ "has_commerce", "classdpp_1_1guild.html#ae6f2d40220f771b4687ed7e175961591", null ],
