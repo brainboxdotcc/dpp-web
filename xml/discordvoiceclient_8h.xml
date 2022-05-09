@@ -29,6 +29,9 @@
     <includes local="no">thread</includes>
     <includes local="no">deque</includes>
     <includes local="no">mutex</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">future</includes>
+    <includes local="no">functional</includes>
     <includes local="no">chrono</includes>
     <includedby refid="discordclient_8h" local="no">discordclient.h</includedby>
     <includedby refid="discordvoiceclient_8cpp" local="no">discordvoiceclient.cpp</includedby>
@@ -283,6 +286,12 @@
         </childnode>
         <childnode refid="77" relation="include">
         </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
       </node>
       <node id="27">
         <label>dpp/dispatcher.h</label>
@@ -333,6 +342,8 @@
         <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="66">
@@ -729,7 +740,7 @@
       <node id="3">
         <label>cerrno</label>
       </node>
-      <node id="77">
+      <node id="78">
         <label>chrono</label>
       </node>
       <node id="53">
@@ -770,6 +781,9 @@
       </node>
       <node id="17">
         <label>map</label>
+      </node>
+      <node id="77">
+        <label>memory</label>
       </node>
       <node id="64">
         <label>mutex</label>
@@ -1328,6 +1342,10 @@
     </invincdepgraph>
     <innerclass refid="structdpp_1_1voice__out__packet" prot="public">dpp::voice_out_packet</innerclass>
     <innerclass refid="classdpp_1_1discord__voice__client" prot="public">dpp::discord_voice_client</innerclass>
+    <innerclass refid="structdpp_1_1discord__voice__client_1_1voice__payload" prot="private">dpp::discord_voice_client::voice_payload</innerclass>
+    <innerclass refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot" prot="private">dpp::discord_voice_client::voice_payload_parking_lot</innerclass>
+    <innerclass refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t" prot="public">dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</innerclass>
+    <innerclass refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t" prot="private">dpp::discord_voice_client::courier_shared_state_t</innerclass>
     <innernamespace refid="namespacedpp">dpp</innernamespace>
       <sectiondef kind="define">
       <memberdef kind="define" id="discordvoiceclient_8h_1a17649932abb607f8068a3b19c97ae76b" prot="public" static="no">
@@ -1339,7 +1357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="87" column="9" bodyfile="include/dpp/discordvoiceclient.h" bodystart="87" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="90" column="9" bodyfile="include/dpp/discordvoiceclient.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -1354,7 +1372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="61" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="61" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="64" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

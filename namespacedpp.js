@@ -977,6 +977,8 @@ var namespacedpp =
     [ "MAX_ICON_SIZE", "namespacedpp.html#aefdd77f67658f0ff12429f40d58b920b", null ],
     [ "MAXHEADERSIZE", "namespacedpp.html#aeef0538fa45377c9b04fc944efec0f0c", null ],
     [ "openssl_context", "namespacedpp.html#a8ce99acce314ff1c5125d40f4ed6622b", null ],
+    [ "opus_channel_count", "namespacedpp.html#a4382884d78d028b54f2eaf9ac5738313", null ],
+    [ "opus_sample_rate_hz", "namespacedpp.html#a864cd30661fc496fae896ddf311ccdb4", null ],
     [ "role_cache", "namespacedpp.html#a74d591ac1d334f8a412f3f1c4f6d65ff", null ],
     [ "stop_event", "namespacedpp.html#aa54eb501e23564f837949f0f5a574abb", null ],
     [ "timer_guard", "namespacedpp.html#a835efcb82cabe1ec8cd844ea070cc340", null ],

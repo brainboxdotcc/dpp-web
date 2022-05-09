@@ -1116,6 +1116,12 @@
     <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
   </compound>
+  <compound refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t" kind="struct"><name>dpp::discord_voice_client::courier_shared_state_t</name>
+    <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1af0b66712229abdd2b2ee1b286ddc2377" kind="variable"><name>mtx</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a5d39fe3b7cfd233b6483468df009c23c" kind="variable"><name>signal_iteration</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a66d5c3373a4638926842693d6a7c6c99" kind="variable"><name>parked_voice_payloads</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a9783df70463317618eb9e325d2cfb2b5" kind="variable"><name>terminating</name></member>
+  </compound>
   <compound refid="classdpp_1_1discord__client" kind="class"><name>dpp::discord_client</name>
     <member refid="classdpp_1_1discord__client_1af5314358ae06ff298fbe659984648c86" kind="friend"><name>dpp::events::voice_state_update</name></member>
     <member refid="classdpp_1_1discord__client_1a38bd58112bc810d3a3ac9d88a316d2e9" kind="friend"><name>dpp::events::guild_create</name></member>
@@ -1204,6 +1210,8 @@
     <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kind="function"><name>read_loop</name></member>
   </compound>
   <compound refid="classdpp_1_1discord__voice__client" kind="class"><name>dpp::discord_voice_client</name>
+    <member refid="classdpp_1_1discord__voice__client_1a35a16d67874752977e6a4ff2bd7325e3" kind="typedef"><name>rtp_seq_t</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a438b95ded97da933b2abcd13892a007d" kind="typedef"><name>rtp_timestamp_t</name></member>
     <member refid="classdpp_1_1discord__voice__client_1afe4e67fad90702358e32370a0aa4b0aa" kind="variable"><name>stream_mutex</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a87f2e1bb37a08913b483852ec728823f" kind="variable"><name>queue_mutex</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aa88ea27bc7f59500eb44486a782c5f49" kind="variable"><name>message_queue</name></member>
@@ -1215,10 +1223,10 @@
     <member refid="classdpp_1_1discord__voice__client_1a1ff3c6c8fe3650e5be8ddd268dcea6f6" kind="variable"><name>modes</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aa7026b375459775b76d5cec4206a9bde" kind="variable"><name>timescale</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a6439e7757480772486fe0d9397f580a2" kind="variable"><name>outbuf</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1ae238c9238103c027293dacce6a3275e2" kind="variable"><name>inbuf</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a29a53aaa7f907d61d8bf9cee05ce2160" kind="variable"><name>voice_courier</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a25c7eb5700b095d16791b905d7dfa173" kind="variable"><name>voice_courier_shared_state</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a99fb90437d53de82d76cff97c4faad54" kind="variable"><name>paused</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a98dc4764408e7bbf5a2eafff24391f9a" kind="variable"><name>encoder</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1a2b6de4642fabbb0a8e0eaf68a12b3ee1" kind="variable"><name>decoder</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a7a494f997253706683168470ab695802" kind="variable"><name>repacketizer</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ab35d726d6130295f1948cb5fbeace3b3" kind="variable"><name>fd</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a57f589cf310fd17106a587efb9231279" kind="variable"><name>servaddr</name></member>
@@ -1233,7 +1241,6 @@
     <member refid="classdpp_1_1discord__voice__client_1ad3f32f985611d9b7fb753b7ca0446f21" kind="variable"><name>encode_buffer</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a23cac9565c94195b8050df206d29d6b2" kind="variable"><name>creator</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a495139ab5289f6f7860177cf121ba2cb" kind="variable"><name>terminating</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1a0cbc6d6c87de6f7106c0054f0504d1c0" kind="variable"><name>decode_voice_recv</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a20ea071ce2429f0eaad5fff783fc7281" kind="variable"><name>heartbeat_interval</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a4517befd07e1179155ffafa8ba69b73f" kind="variable"><name>last_heartbeat</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aa16ac9036cb13658289f58dc9035e395" kind="variable"><name>thread_id</name></member>
@@ -1259,6 +1266,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a87b60251b68583d9307a4f72d3ce3249" kind="function"><name>clear_queue</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ac0be468508d5b5d2afedee7b242fd23a" kind="function"><name>get_queue_size</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aca97df078a5782b1ebd96287f4b2a0c8" kind="function"><name>encode</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a71663a58cfdc7041aa49b2654784737f" kind="function"><name>voice_courier_loop</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ac06f68e15b979b0590f09c9732548f16" kind="function"><name>log</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a79b878e8bec47a04cb0132b34fe1f6f9" kind="function"><name>one_second_timer</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aee5fcfe947f581ecce2c9096871f88a2" kind="function"><name>is_ready</name></member>
@@ -2985,6 +2993,12 @@
     <member refid="structdpp_1_1select__option_1a2b424cbf499552ae1cf852016766c1a4" kind="function"><name>fill_from_json</name></member>
     <member refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1" kind="function"><name>build_json</name></member>
   </compound>
+  <compound refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t" kind="struct"><name>dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t</name>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a8bdc4e658e02cd662cbe48650fdd1632" kind="variable"><name>min_seq</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a810e5e9a2ef3ccfd47c55202a8c5c120" kind="variable"><name>max_seq</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a6bc269dee0c9c71039a5c879a4e65ed8" kind="variable"><name>min_timestamp</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t_1a06d537d652c468f6843891d849818e5a" kind="variable"><name>max_timestamp</name></member>
+  </compound>
   <compound refid="classdpp_1_1slashcommand" kind="class"><name>dpp::slashcommand</name>
     <member refid="classdpp_1_1slashcommand_1a68823472ad357bc69759212f6ebe1a82" kind="variable"><name>application_id</name></member>
     <member refid="classdpp_1_1slashcommand_1a5c87c504512af7090f8f4c215184320a" kind="variable"><name>type</name></member>
@@ -3657,6 +3671,16 @@
     <member refid="structdpp_1_1voice__out__packet_1ae13a5a23e3d3205c48c53975f6d6272f" kind="variable"><name>packet</name></member>
     <member refid="structdpp_1_1voice__out__packet_1ac6d63ea4575aadec0fff0d966c2c3191" kind="variable"><name>duration</name></member>
   </compound>
+  <compound refid="structdpp_1_1discord__voice__client_1_1voice__payload" kind="struct"><name>dpp::discord_voice_client::voice_payload</name>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload_1a3c559dd04e7f4c802f67a1607a5faab3" kind="variable"><name>seq</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload_1ac8fbbeb9a6bc21014bf7e11cff436607" kind="variable"><name>timestamp</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload_1a0e0e08c9dc7a0b7f4625cc0575e1a3b9" kind="variable"><name>vr</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload_1a7dc8bb42cb13d4386d3ab554d07a36e0" kind="function"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot" kind="struct"><name>dpp::discord_voice_client::voice_payload_parking_lot</name>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1ae770b6b3f06389a844bc203e63cd6bd1" kind="variable"><name>range</name></member>
+    <member refid="structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1acb176698802c94628884cbf2dec9e8c4" kind="variable"><name>parked_payloads</name></member>
+  </compound>
   <compound refid="structdpp_1_1voice__ready__t" kind="struct"><name>dpp::voice_ready_t</name>
     <member refid="structdpp_1_1voice__ready__t_1a337e1cfce8608d18283913dd94a1cdba" kind="variable"><name>voice_client</name></member>
     <member refid="structdpp_1_1voice__ready__t_1a176e7a9e1db9780c0dbf9a801d86794e" kind="variable"><name>voice_channel_id</name></member>
@@ -3670,6 +3694,7 @@
     <member refid="structdpp_1_1voice__receive__t_1aa843a6b21c4dc8742960abec208e7fa5" kind="variable"><name>voice_client</name></member>
     <member refid="structdpp_1_1voice__receive__t_1abe0062119471690caacc95d849274413" kind="variable"><name>audio</name></member>
     <member refid="structdpp_1_1voice__receive__t_1abdc253b2799cb504caa9bd030838f668" kind="variable"><name>audio_size</name></member>
+    <member refid="structdpp_1_1voice__receive__t_1a6d6f1d1be9a65fa8b428fab5230dce6d" kind="variable"><name>audio_data</name></member>
     <member refid="structdpp_1_1voice__receive__t_1ae70014f7c00864c278df265da0967026" kind="variable"><name>user_id</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" kind="variable"><name>raw_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" kind="variable"><name>from</name></member>
@@ -4463,6 +4488,8 @@
     <member refid="namespacedpp_1ae16796831ecce90e670d207b0d0e1dd8" kind="variable"><name>lasthandle</name></member>
     <member refid="namespacedpp_1a835efcb82cabe1ec8cd844ea070cc340" kind="variable"><name>timer_guard</name></member>
     <member refid="namespacedpp_1a04b7d06f713536bf48333522c9a4264b" kind="variable"><name>eventmap</name></member>
+    <member refid="namespacedpp_1a864cd30661fc496fae896ddf311ccdb4" kind="variable"><name>opus_sample_rate_hz</name></member>
+    <member refid="namespacedpp_1a4382884d78d028b54f2eaf9ac5738313" kind="variable"><name>opus_channel_count</name></member>
     <member refid="namespacedpp_1af5d78d18a19b3fef2cf11ff545fee91c" kind="variable"><name>external_ip</name></member>
     <member refid="namespacedpp_1aa54eb501e23564f837949f0f5a574abb" kind="variable"><name>stop_event</name></member>
     <member refid="namespacedpp_1a4f29330ede66fa21fc47c361a9c51a7b" kind="variable"><name>http_version</name></member>

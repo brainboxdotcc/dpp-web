@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1discord__voice__client_1_1courier__shared__state__t" kind="struct" language="C++" prot="private">
+    <compoundname>dpp::discord_voice_client::courier_shared_state_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1af0b66712229abdd2b2ee1b286ddc2377" prot="public" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex dpp::discord_voice_client::courier_shared_state_t::mtx</definition>
+        <argsstring></argsstring>
+        <name>mtx</name>
+        <briefdescription>
+<para>Protects all following members. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="239" column="12" bodyfile="include/dpp/discordvoiceclient.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a5d39fe3b7cfd233b6483468df009c23c" prot="public" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable dpp::discord_voice_client::courier_shared_state_t::signal_iteration</definition>
+        <argsstring></argsstring>
+        <name>signal_iteration</name>
+        <briefdescription>
+<para>Signaled when there is a new payload to deliver or terminating state has changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="243" column="25" bodyfile="include/dpp/discordvoiceclient.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a66d5c3373a4638926842693d6a7c6c99" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, voice_payload_parking_lot &gt;</type>
+        <definition>std::map&lt;snowflake, voice_payload_parking_lot&gt; dpp::discord_voice_client::courier_shared_state_t::parked_voice_payloads</definition>
+        <argsstring></argsstring>
+        <name>parked_voice_payloads</name>
+        <briefdescription>
+<para>Voice buffers to be reported to handler, grouped by speaker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffers are parked here and flushed every 500ms. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="249" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a9783df70463317618eb9e325d2cfb2b5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::discord_voice_client::courier_shared_state_t::terminating</definition>
+        <argsstring></argsstring>
+        <name>terminating</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Used to signal termination. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Pending payloads are delivered first before termination. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="255" column="6" bodyfile="include/dpp/discordvoiceclient.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Shared state between this voice client and the courier thread. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>dpp::discord_voice_client::courier_shared_state_t</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mtx</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>signal_iteration</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>parked_voice_payloads</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>condition_variable</label>
+      </node>
+      <node id="4">
+        <label>map&lt;</label>
+      </node>
+      <node id="2">
+        <label>std::mutex</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/discordvoiceclient.h" line="235" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="235" bodyend="256"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1af0b66712229abdd2b2ee1b286ddc2377" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::courier_shared_state_t</scope><name>mtx</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a66d5c3373a4638926842693d6a7c6c99" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::courier_shared_state_t</scope><name>parked_voice_payloads</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a5d39fe3b7cfd233b6483468df009c23c" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::courier_shared_state_t</scope><name>signal_iteration</name></member>
+      <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a9783df70463317618eb9e325d2cfb2b5" prot="public" virt="non-virtual"><scope>dpp::discord_voice_client::courier_shared_state_t</scope><name>terminating</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

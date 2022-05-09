@@ -47,7 +47,6 @@ var classdpp_1_1discord__voice__client =
     [ "custom_readable_ready", "classdpp_1_1discord__voice__client.html#a47fa1e38d3b5d26b6913577ffe9c73cd", null ],
     [ "custom_writeable_fd", "classdpp_1_1discord__voice__client.html#afa81c27a0b2fc2d68b3939e102bf2cbf", null ],
     [ "custom_writeable_ready", "classdpp_1_1discord__voice__client.html#aa1a9af1a95e1fb4ac1504de8d591b650", null ],
-    [ "decode_voice_recv", "classdpp_1_1discord__voice__client.html#a0cbc6d6c87de6f7106c0054f0504d1c0", null ],
     [ "heartbeat_interval", "classdpp_1_1discord__voice__client.html#a20ea071ce2429f0eaad5fff783fc7281", null ],
     [ "hostname", "classdpp_1_1discord__voice__client.html#a9aab17086711ef6777a01ee0974b5ce8", null ],
     [ "keepalive", "classdpp_1_1discord__voice__client.html#ac8997404ef91c501c3e8ae1079e89152", null ],

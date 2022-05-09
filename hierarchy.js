@@ -366,6 +366,7 @@ var hierarchy =
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
+    [ "dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t", "structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [

@@ -66,16 +66,16 @@ var NAVTREEINDEX =
 "classdpp_1_1cluster.html#abf8cf09e2e52018299f14f71ca1da5c0",
 "classdpp_1_1commandhandler.html#a7300779eb1aaf04041e48c756abafafb",
 "classdpp_1_1discord__client.html#ade85ebcbf1a24079511436d504940fcf",
-"classdpp_1_1event__router__t.html#abab35ab0fc1efe0057b69ff7bbd485ab",
-"classdpp_1_1exception.html#a82a21aa6228b4c8e2ead7c45128cd9b7",
-"classdpp_1_1guild__member.html#af305ded317e0fb05fc67d15713549efa",
-"classdpp_1_1invite.html#a1b2060938ed618edb951114537269c14",
-"classdpp_1_1role.html#a600d347d4f491ba32969a76d9d0cf3c3",
-"classdpp_1_1ssl__client.html#ae78617d00003abcbfce5446cb6bdde41",
-"classdpp_1_1user__identified.html",
-"classdpp_1_1websocket__client.html#a61f0bbeefa25de686ac93887afa65895",
-"functions_~.html",
-"namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce",
+"classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c",
+"classdpp_1_1exception.html#aa59a84a3a233186cc130fc9e8ff8a271",
+"classdpp_1_1guild__member.html#afb9f40dbcd49dbf960d246582eaeca9b",
+"classdpp_1_1invite.html#a1eeea3785ede65e9a93640352674a6c3",
+"classdpp_1_1role.html#a60bd9c7e3901c18f5ec3c4f835e1c1de",
+"classdpp_1_1ssl__client.html#af20b792a7590e0b9457dec6cdb52568a",
+"classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b",
+"classdpp_1_1websocket__client.html#a6d17d6f3cb7781ecba40aaedf10ff598",
+"index.html",
+"namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479",
 "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a7e18bae49699df4948c28c12bfa8bd19",
 "namespacedpp_1_1colors.html#af7e7836be01f8c3f379b779ca7db4b82",
 "structdpp_1_1activity__party.html#a029b85cb9a791a89a9f63515ad70c274",
@@ -88,7 +88,7 @@ var NAVTREEINDEX =
 "structdpp_1_1resolved__user.html#a2637dfddc2584ff21d6772b9540818d4",
 "structdpp_1_1stage__instance__update__t.html#a2bc8c9b078e8739f12a2390ce57f6a66",
 "structdpp_1_1user__context__menu__t.html",
-"structdpp_1_1voice__user__talking__t.html#a22df2fa7e547eaefbd65e501d8bf67b7"
+"structdpp_1_1voice__user__talking__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
