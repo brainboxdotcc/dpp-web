@@ -881,6 +881,7 @@ var namespacedpp =
       [ "HTTP_HEADERS", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519ac4e7462fef7673f64bf129dde58c9f70", null ],
       [ "CONNECTED", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519ab21dc4f63ee869c75f21c77922769e6d", null ]
     ] ],
+    [ "audio_mix", "namespacedpp.html#a32cbf7f49e06eab7ed508e200682983e", null ],
     [ "base64_encode", "namespacedpp.html#a6115ff18830a756af0cc2dfd3ae1d763", null ],
     [ "bool_not_null", "namespacedpp.html#ae4fdd39d37228695bd6fa37b53046bbc", null ],
     [ "comma", "namespacedpp.html#a575bfa79c17aa90101ae8d3bf632e930", null ],

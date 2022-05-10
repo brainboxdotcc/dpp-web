@@ -1,5 +1,8 @@
 var NAVTREEINDEX29 =
 {
+"structdpp_1_1voice__track__marker__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,191,2],
+"structdpp_1_1voice__track__marker__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,1,189,2],
+"structdpp_1_1voice__user__talking__t.html":[6,0,1,192],
 "structdpp_1_1voice__user__talking__t.html":[7,0,1,190],
 "structdpp_1_1voice__user__talking__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,192,4],
 "structdpp_1_1voice__user__talking__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,190,4],
