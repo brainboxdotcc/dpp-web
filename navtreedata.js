@@ -77,7 +77,7 @@ var NAVTREEINDEX =
 "functions_~.html",
 "namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3",
 "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a5a2ea837ca5ec64e6385acf392cef1e2",
-"namespacedpp_1_1colors.html#ad960c46dab3aae133083ace9e323b3d5",
+"namespacedpp_1_1colors.html#adade2a4711583cd660a883f8e3b07143",
 "structdpp_1_1activity__party.html",
 "structdpp_1_1channel__pins__update__t.html#aa12098210e1061f1cad63a42b9cfa97a",
 "structdpp_1_1embed.html#a3bcc6f23d8d16c347139f624569e61e1",
