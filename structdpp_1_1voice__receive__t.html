@@ -101,6 +101,8 @@ $(document).ready(function(){initNavTree('structdpp_1_1voice__receive__t.html','
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="structdpp_1_1voice__receive__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dpp::voice_receive_t Struct Reference</div></div>
 </div><!--header-->
@@ -130,6 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17d45e43c72fbe78358be74146cbaee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__receive__t.html#a17d45e43c72fbe78358be74146cbaee5">voice_receive_t</a> (class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *client, const std::string &amp;raw)</td></tr>
 <tr class="memdesc:a17d45e43c72fbe78358be74146cbaee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="structdpp_1_1voice__receive__t.html#a17d45e43c72fbe78358be74146cbaee5">More...</a><br /></td></tr>
 <tr class="separator:a17d45e43c72fbe78358be74146cbaee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef86eafab8786cefeed105fae4a89d45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__receive__t.html#aef86eafab8786cefeed105fae4a89d45">voice_receive_t</a> (class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *client, const std::string &amp;raw, class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> *vc, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> _user_id, uint8_t *pcm, size_t length)</td></tr>
+<tr class="memdesc:aef86eafab8786cefeed105fae4a89d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new voice receive t object.  <a href="structdpp_1_1voice__receive__t.html#aef86eafab8786cefeed105fae4a89d45">More...</a><br /></td></tr>
+<tr class="separator:aef86eafab8786cefeed105fae4a89d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5afbcd36109734ad0fca14ec848b73b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">cancel_event</a> () const</td></tr>
 <tr class="memdesc:a5afbcd36109734ad0fca14ec848b73b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">More...</a><br /></td></tr>
 <tr class="separator:a5afbcd36109734ad0fca14ec848b73b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa843a6b21c4dc8742960abec208e7fa5"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__receive__t.html#aa843a6b21c4dc8742960abec208e7fa5">voice_client</a></td></tr>
+<tr class="memdesc:aa843a6b21c4dc8742960abec208e7fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voice client.  <a href="structdpp_1_1voice__receive__t.html#aa843a6b21c4dc8742960abec208e7fa5">More...</a><br /></td></tr>
 <tr class="separator:aa843a6b21c4dc8742960abec208e7fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe0062119471690caacc95d849274413"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413">audio</a> = nullptr</td></tr>
 <tr class="memdesc:abe0062119471690caacc95d849274413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio data, encoded as 48kHz stereo PCM or Opus,.  <a href="structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413">More...</a><br /></td></tr>
@@ -159,12 +165,23 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a357873be4dd30eef7928ae5f7c13e7db"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db">from</a></td></tr>
 <tr class="memdesc:a357873be4dd30eef7928ae5f7c13e7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shard the event came from. Note that for some events, notably voice events, this may be nullptr.  <a href="structdpp_1_1event__dispatch__t.html#a357873be4dd30eef7928ae5f7c13e7db">More...</a><br /></td></tr>
 <tr class="separator:a357873be4dd30eef7928ae5f7c13e7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8bf7a8c69603ffd25b30795e5f7ae87d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__receive__t.html#a8bf7a8c69603ffd25b30795e5f7ae87d">reassign</a> (class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> *vc, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> _user_id, uint8_t *pcm, size_t length)</td></tr>
+<tr class="memdesc:a8bf7a8c69603ffd25b30795e5f7ae87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reassign values outside of the constructor for use within <a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>.  <a href="structdpp_1_1voice__receive__t.html#a8bf7a8c69603ffd25b30795e5f7ae87d">More...</a><br /></td></tr>
+<tr class="separator:a8bf7a8c69603ffd25b30795e5f7ae87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:abc4e53e79731117ca95bca977baef820"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__receive__t.html#abc4e53e79731117ca95bca977baef820">discord_voice_client</a></td></tr>
+<tr class="separator:abc4e53e79731117ca95bca977baef820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >voice receive packet </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a17d45e43c72fbe78358be74146cbaee5" name="a17d45e43c72fbe78358be74146cbaee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17d45e43c72fbe78358be74146cbaee5">&#9670;&nbsp;</a></span>voice_receive_t()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d45e43c72fbe78358be74146cbaee5">&#9670;&nbsp;</a></span>voice_receive_t() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,6 +211,71 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">client</td><td>The shard the event originated on. WILL ALWAYS be NULL. </td></tr>
     <tr><td class="paramname">raw</td><td>Raw event text as UDP packet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef86eafab8786cefeed105fae4a89d45" name="aef86eafab8786cefeed105fae4a89d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef86eafab8786cefeed105fae4a89d45">&#9670;&nbsp;</a></span>voice_receive_t() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dpp::voice_receive_t::voice_receive_t </td>
+          <td>(</td>
+          <td class="paramtype">class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>raw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> *&#160;</td>
+          <td class="paramname"><em>vc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>_user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pcm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new voice receive t object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>The shard the event originated on. WILL ALWAYS be NULL. </td></tr>
+    <tr><td class="paramname">raw</td><td>Raw event text as UDP packet. </td></tr>
+    <tr><td class="paramname">vc</td><td>owning voice client pointer </td></tr>
+    <tr><td class="paramname">_user_id</td><td>user id who is speaking, 0 for a mix of all user audio </td></tr>
+    <tr><td class="paramname">pcm</td><td>user audio to set </td></tr>
+    <tr><td class="paramname">length</td><td>length of user audio in bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -254,6 +336,88 @@ Public Attributes</h2></td></tr>
 
 <p>Returns true if the event is cancelled. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state). </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the event is cancelled </dd></dl>
+
+</div>
+</div>
+<a id="a8bf7a8c69603ffd25b30795e5f7ae87d" name="a8bf7a8c69603ffd25b30795e5f7ae87d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf7a8c69603ffd25b30795e5f7ae87d">&#9670;&nbsp;</a></span>reassign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::voice_receive_t::reassign </td>
+          <td>(</td>
+          <td class="paramtype">class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> *&#160;</td>
+          <td class="paramname"><em>vc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>_user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pcm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reassign values outside of the constructor for use within <a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vc</td><td>owning voice client pointer </td></tr>
+    <tr><td class="paramname">_user_id</td><td>user id who is speaking, 0 for a mix of all user audio </td></tr>
+    <tr><td class="paramname">pcm</td><td>user audio to set </td></tr>
+    <tr><td class="paramname">length</td><td>length of user audio in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="abc4e53e79731117ca95bca977baef820" name="abc4e53e79731117ca95bca977baef820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc4e53e79731117ca95bca977baef820">&#9670;&nbsp;</a></span>discord_voice_client</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -383,6 +547,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Voice client. </p>
 
 </div>
 </div>

@@ -1736,8 +1736,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ae2ac378edc26d20fb0db2658b7da3502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae2ac378edc26d20fb0db2658b7da3502">set_ts_not_null</a> (const nlohmann::json *j, const char *keyname, time_t &amp;v)</td></tr>
 <tr class="memdesc:ae2ac378edc26d20fb0db2658b7da3502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an timestamp from a json field value containing an ISO8601 string, if defined, else does nothing.  <a href="namespacedpp.html#ae2ac378edc26d20fb0db2658b7da3502">More...</a><br /></td></tr>
 <tr class="separator:ae2ac378edc26d20fb0db2658b7da3502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32cbf7f49e06eab7ed508e200682983e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a32cbf7f49e06eab7ed508e200682983e">audio_mix</a> (int16_t *pcm_mix, int16_t *pcm, size_t park_count, int samples, int &amp;max_samples)</td></tr>
-<tr class="separator:a32cbf7f49e06eab7ed508e200682983e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09d7a54c6de6a75487951a322599b57"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac09d7a54c6de6a75487951a322599b57">audio_mix</a> (<a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> &amp;client, opus_int32 *pcm_mix, const opus_int16 *pcm, size_t park_count, int samples, int &amp;max_samples)</td></tr>
+<tr class="separator:ac09d7a54c6de6a75487951a322599b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177af60de5536cff95f417fce3d9487a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm)</td></tr>
 <tr class="memdesc:a177af60de5536cff95f417fce3d9487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> from json  <a href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">More...</a><br /></td></tr>
 <tr class="separator:a177af60de5536cff95f417fce3d9487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4724,8 +4724,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a32cbf7f49e06eab7ed508e200682983e" name="a32cbf7f49e06eab7ed508e200682983e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32cbf7f49e06eab7ed508e200682983e">&#9670;&nbsp;</a></span>audio_mix()</h2>
+<a id="ac09d7a54c6de6a75487951a322599b57" name="ac09d7a54c6de6a75487951a322599b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09d7a54c6de6a75487951a322599b57">&#9670;&nbsp;</a></span>audio_mix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4733,13 +4733,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">size_t dpp::audio_mix </td>
           <td>(</td>
-          <td class="paramtype">int16_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> &amp;&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">opus_int32 *&#160;</td>
           <td class="paramname"><em>pcm_mix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t *&#160;</td>
+          <td class="paramtype">const opus_int16 *&#160;</td>
           <td class="paramname"><em>pcm</em>, </td>
         </tr>
         <tr>

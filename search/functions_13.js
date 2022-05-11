@@ -7,7 +7,7 @@ var searchData=
   ['voice_5fclient_5fdisconnect_5ft_4',['voice_client_disconnect_t',['../structdpp_1_1voice__client__disconnect__t.html#afa8b1b2cf9a31e4c34acf1883f57ac12',1,'dpp::voice_client_disconnect_t']]],
   ['voice_5fclient_5fspeaking_5ft_5',['voice_client_speaking_t',['../structdpp_1_1voice__client__speaking__t.html#a5160a6d4005ffd9a97c52442f3e2aecf',1,'dpp::voice_client_speaking_t']]],
   ['voice_5fready_5ft_6',['voice_ready_t',['../structdpp_1_1voice__ready__t.html#afe0122cb6850df07ca84ba3592181490',1,'dpp::voice_ready_t']]],
-  ['voice_5freceive_5ft_7',['voice_receive_t',['../structdpp_1_1voice__receive__t.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t']]],
+  ['voice_5freceive_5ft_7',['voice_receive_t',['../structdpp_1_1voice__receive__t.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t::voice_receive_t(class discord_client *client, const std::string &amp;raw)'],['../structdpp_1_1voice__receive__t.html#aef86eafab8786cefeed105fae4a89d45',1,'dpp::voice_receive_t::voice_receive_t(class discord_client *client, const std::string &amp;raw, class discord_voice_client *vc, snowflake _user_id, uint8_t *pcm, size_t length)']]],
   ['voice_5fserver_5fupdate_5ft_8',['voice_server_update_t',['../structdpp_1_1voice__server__update__t.html#a818081c81337f241f2c7fdc2bf0be1bc',1,'dpp::voice_server_update_t']]],
   ['voice_5fstate_5fupdate_5ft_9',['voice_state_update_t',['../structdpp_1_1voice__state__update__t.html#a421fc199dfeb2542ad61248b3a600a79',1,'dpp::voice_state_update_t']]],
   ['voice_5ftrack_5fmarker_5ft_10',['voice_track_marker_t',['../structdpp_1_1voice__track__marker__t.html#ab3a8a8296e89fd188caed6d11c2d8c72',1,'dpp::voice_track_marker_t']]],

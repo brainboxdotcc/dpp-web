@@ -25,7 +25,7 @@ var searchData=
   ['application_22',['application',['../classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044',1,'dpp::application']]],
   ['attach_23',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
   ['attachment_24',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
-  ['audio_5fmix_25',['audio_mix',['../namespacedpp.html#a32cbf7f49e06eab7ed508e200682983e',1,'dpp']]],
+  ['audio_5fmix_25',['audio_mix',['../namespacedpp.html#ac09d7a54c6de6a75487951a322599b57',1,'dpp']]],
   ['auditlog_26',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]],
   ['autocomplete_5ft_27',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]],
   ['avatar_5fsize_28',['avatar_size',['../namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc',1,'dpp::utility']]]

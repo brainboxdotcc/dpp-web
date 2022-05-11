@@ -75,8 +75,8 @@ var NAVTREEINDEX =
 "classdpp_1_1user__identified.html",
 "classdpp_1_1websocket__client.html#a61f0bbeefa25de686ac93887afa65895",
 "functions_~.html",
-"namespacedpp.html#a47f79e1142def583c59df70b1382319f",
-"namespacedpp.html#abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b",
+"namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3",
+"namespacedpp.html#abc401d86119c6443bf72d736857c1a58a5a2ea837ca5ec64e6385acf392cef1e2",
 "namespacedpp_1_1colors.html#ad960c46dab3aae133083ace9e323b3d5",
 "structdpp_1_1activity__party.html",
 "structdpp_1_1channel__pins__update__t.html#aa12098210e1061f1cad63a42b9cfa97a",
@@ -88,7 +88,7 @@ var NAVTREEINDEX =
 "structdpp_1_1resolved__user.html",
 "structdpp_1_1stage__instance__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
 "structdpp_1_1typing__start__t.html#aca2880114f69b7ba62eb5137824c1432",
-"structdpp_1_1voice__track__marker__t.html#aca2880114f69b7ba62eb5137824c1432"
+"structdpp_1_1voice__track__marker__t.html#a357873be4dd30eef7928ae5f7c13e7db"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

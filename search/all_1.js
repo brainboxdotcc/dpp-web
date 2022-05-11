@@ -133,7 +133,7 @@ var searchData=
   ['attachments_130',['attachments',['../structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7',1,'dpp::message::attachments()'],['../structdpp_1_1command__resolved.html#adc6820ef10dcfbba1caa5aa60884aa63',1,'dpp::command_resolved::attachments()']]],
   ['audio_131',['audio',['../structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413',1,'dpp::voice_receive_t']]],
   ['audio_5fdata_132',['audio_data',['../structdpp_1_1voice__receive__t.html#a6d6f1d1be9a65fa8b428fab5230dce6d',1,'dpp::voice_receive_t']]],
-  ['audio_5fmix_133',['audio_mix',['../namespacedpp.html#a32cbf7f49e06eab7ed508e200682983e',1,'dpp']]],
+  ['audio_5fmix_133',['audio_mix',['../namespacedpp.html#ac09d7a54c6de6a75487951a322599b57',1,'dpp']]],
   ['audio_5fsize_134',['audio_size',['../structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668',1,'dpp::voice_receive_t']]],
   ['audit_5fchange_135',['audit_change',['../structdpp_1_1audit__change.html',1,'dpp']]],
   ['audit_5fentry_136',['audit_entry',['../structdpp_1_1audit__entry.html',1,'dpp']]],

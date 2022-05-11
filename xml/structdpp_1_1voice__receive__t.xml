@@ -4,6 +4,24 @@
     <compoundname>dpp::voice_receive_t</compoundname>
     <basecompoundref refid="structdpp_1_1event__dispatch__t" prot="public" virt="non-virtual">dpp::event_dispatch_t</basecompoundref>
     <includes local="no">dispatcher.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structdpp_1_1voice__receive__t_1abc4e53e79731117ca95bca977baef820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class discord_voice_client</definition>
+        <argsstring></argsstring>
+        <name>discord_voice_client</name>
+        <param>
+          <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1599" column="14" bodyfile="include/dpp/dispatcher.h" bodystart="1599" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1aa843a6b21c4dc8742960abec208e7fa5" prot="public" static="no" mutable="no">
         <type>class <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> *</type>
@@ -11,12 +29,13 @@
         <argsstring></argsstring>
         <name>voice_client</name>
         <briefdescription>
+<para>Voice client. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1605" column="28" bodyfile="include/dpp/dispatcher.h" bodystart="1605" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="1623" column="28" bodyfile="include/dpp/dispatcher.h" bodystart="1623" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1abe0062119471690caacc95d849274413" prot="public" static="no" mutable="no">
         <type>uint8_t *</type>
@@ -33,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1610" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="1610" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="1628" column="9" bodyfile="include/dpp/dispatcher.h" bodystart="1628" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1abdc253b2799cb504caa9bd030838f668" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -50,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1615" column="8" bodyfile="include/dpp/dispatcher.h" bodystart="1615" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="1633" column="8" bodyfile="include/dpp/dispatcher.h" bodystart="1633" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1a6d6f1d1be9a65fa8b428fab5230dce6d" prot="public" static="no" mutable="no">
         <type>std::basic_string&lt; uint8_t &gt;</type>
@@ -64,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1619" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="1619" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="1637" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="1637" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1voice__receive__t_1ae70014f7c00864c278df265da0967026" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
@@ -78,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1623" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="1623" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="1641" column="11" bodyfile="include/dpp/dispatcher.h" bodystart="1641" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
         <type>const std::string</type>
@@ -148,7 +167,95 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="1604" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="311" bodyend="311"/>
+        <location file="include/dpp/dispatcher.h" line="1607" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="328" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1voice__receive__t_1aef86eafab8786cefeed105fae4a89d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::voice_receive_t::voice_receive_t</definition>
+        <argsstring>(class discord_client *client, const std::string &amp;raw, class discord_voice_client *vc, snowflake _user_id, uint8_t *pcm, size_t length)</argsstring>
+        <name>voice_receive_t</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>raw</declname>
+        </param>
+        <param>
+          <type>class <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> *</type>
+          <declname>vc</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>_user_id</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pcm</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new voice receive t object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shard the event originated on. WILL ALWAYS be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw event text as UDP packet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>owning voice client pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user id who is speaking, 0 for a mix of all user audio </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pcm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user audio to set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of user audio in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1619" column="1" bodyfile="src/dpp/dispatcher.cpp" bodystart="252" bodyend="254"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
@@ -183,6 +290,72 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/dispatcher.h" line="100" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structdpp_1_1voice__receive__t_1a8bf7a8c69603ffd25b30795e5f7ae87d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::voice_receive_t::reassign</definition>
+        <argsstring>(class discord_voice_client *vc, snowflake _user_id, uint8_t *pcm, size_t length)</argsstring>
+        <name>reassign</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> *</type>
+          <declname>vc</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>_user_id</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pcm</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Reassign values outside of the constructor for use within <ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>owning voice client pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user id who is speaking, 0 for a mix of all user audio </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pcm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user audio to set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of user audio in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="1651" column="6" bodyfile="src/dpp/dispatcher.cpp" bodystart="256" bodyend="266"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -533,19 +706,22 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="1597" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="1597" bodyend="1624"/>
+    <location file="include/dpp/dispatcher.h" line="1597" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="1597" bodyend="1652"/>
     <listofallmembers>
       <member refid="structdpp_1_1voice__receive__t_1abe0062119471690caacc95d849274413" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>audio</name></member>
       <member refid="structdpp_1_1voice__receive__t_1a6d6f1d1be9a65fa8b428fab5230dce6d" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>audio_data</name></member>
       <member refid="structdpp_1_1voice__receive__t_1abdc253b2799cb504caa9bd030838f668" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>audio_size</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>cancel_event</name></member>
+      <member refid="structdpp_1_1voice__receive__t_1abc4e53e79731117ca95bca977baef820" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>discord_voice_client</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>event_dispatch_t</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>from</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>is_cancelled</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>raw_event</name></member>
+      <member refid="structdpp_1_1voice__receive__t_1a8bf7a8c69603ffd25b30795e5f7ae87d" prot="protected" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>reassign</name></member>
       <member refid="structdpp_1_1voice__receive__t_1ae70014f7c00864c278df265da0967026" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>user_id</name></member>
       <member refid="structdpp_1_1voice__receive__t_1aa843a6b21c4dc8742960abec208e7fa5" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>voice_client</name></member>
       <member refid="structdpp_1_1voice__receive__t_1a17d45e43c72fbe78358be74146cbaee5" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>voice_receive_t</name></member>
+      <member refid="structdpp_1_1voice__receive__t_1aef86eafab8786cefeed105fae4a89d45" prot="public" virt="non-virtual"><scope>dpp::voice_receive_t</scope><name>voice_receive_t</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>
