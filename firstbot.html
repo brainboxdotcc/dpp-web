@@ -197,18 +197,17 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
 3. Attach to an event</h2>
-<p >To have a bot that does something, you should attach to some events. Let's start by attaching to the <code>on_ready</code> event (<a class="el" href="classdpp_1_1cluster.html#aa006f45139c81be7705a4dc67e4da242" title="Called when a shard is connected and ready. A set of on_guild_create events will follow this event.">dpp::cluster::on_ready</a>) which will notify your program when the bot is connected. In this event, we will register a slash command called 'ping'. We register this slash command against a guild, as it takes an hour for global commands to appear. Note that we must wrap our registration of the command in a template called <code><a class="el" href="namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0" title="Run some code within an if() statement only once.">dpp::run_once</a></code> which prevents it from being re-run every time your bot does a full reconnection (e.g. if the connection fails).</p>
+<p >To have a bot that does something, you should attach to some events. Let's start by attaching to the <code>on_ready</code> event (<a class="el" href="classdpp_1_1cluster.html#aa006f45139c81be7705a4dc67e4da242" title="Called when a shard is connected and ready. A set of on_guild_create events will follow this event.">dpp::cluster::on_ready</a>) which will notify your program when the bot is connected. In this event, we will register a slash command called 'ping'. Note that we must wrap our registration of the command in a template called <code><a class="el" href="namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0" title="Run some code within an if() statement only once.">dpp::run_once</a></code> which prevents it from being re-run every time your bot does a full reconnection (e.g. if the connection fails).</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">const</span> std::string    BOT_TOKEN    = <span class="stringliteral">&quot;add your token here&quot;</span>;</div>
-<div class="line"><span class="keyword">const</span> <a class="code hl_typedef" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a> MY_GUILD_ID  =  825407338755653642;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(BOT_TOKEN);</div>
 <div class="line"> </div>
 <div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a>&amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
-<div class="line">            bot.guild_command_create(<a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a>(<span class="stringliteral">&quot;ping&quot;</span>, <span class="stringliteral">&quot;Ping pong!&quot;</span>, bot.me.id), MY_GUILD_ID);</div>
+<div class="line">            bot.global_command_create(<a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a>(<span class="stringliteral">&quot;ping&quot;</span>, <span class="stringliteral">&quot;Ping pong!&quot;</span>, bot.me.id));</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line">}</div>
