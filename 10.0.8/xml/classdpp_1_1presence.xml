@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1presence" kind="class" language="C++" prot="public">
+    <compoundname>dpp::presence</compoundname>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; presence &gt;</basecompoundref>
+    <includes local="no">presence.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1presence_1ad8c02207b48c891d1d98949f86c5b312" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::presence::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user the presence applies to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="309" column="10" bodyfile="include/dpp/presence.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1presence_1a7f015f7eabc016a1f5567ccbbf80db0d" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <definition>snowflake dpp::presence::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guild ID. Apparently, Discord supports this internally but the client doesn&apos;t... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="312" column="17" bodyfile="include/dpp/presence.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1presence_1ab29149dcde2872002715212b8a6ff951" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::presence::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags bitmask containing <ref refid="namespacedpp_1a953f1484a5140481ffab2b248618fb22" kindref="member">dpp::presence_flags</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="315" column="8" bodyfile="include/dpp/presence.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1presence_1af59a01dbafdb477ec9adfc2a9b667f2d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1activity" kindref="compound">activity</ref> &gt;</type>
+        <definition>std::vector&lt;activity&gt; dpp::presence::activities</definition>
+        <argsstring></argsstring>
+        <name>activities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of activities </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="318" column="13" bodyfile="include/dpp/presence.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1presence_1a48cd5e5ab349078d079d0d9f8098451b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::presence::presence</definition>
+        <argsstring>()</argsstring>
+        <name>presence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="321" column="1" bodyfile="src/dpp/presence.cpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1a98d7b61872c1f9a8f8cedcad3075c60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::presence::presence</definition>
+        <argsstring>(presence_status status, activity_type type, const std::string &amp;activity_description)</argsstring>
+        <name>presence</name>
+        <param>
+          <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2" kindref="member">activity_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>activity_description</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new presence object with some parameters for sending to a websocket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status of the activity </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of activity </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>activity_description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Description of the activity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="330" column="1" bodyfile="src/dpp/presence.cpp" bodystart="79" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1a7d1175469fac4cb4abe10b8afdc74e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::presence::presence</definition>
+        <argsstring>(presence_status status, const activity &amp;a)</argsstring>
+        <name>presence</name>
+        <param>
+          <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdpp_1_1activity" kindref="compound">activity</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new presence object with some parameters for sending to a websocket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status of the activity </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Activity itself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="338" column="1" bodyfile="src/dpp/presence.cpp" bodystart="94" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1aaf9b4823dc5cfa358f1431dc0a13df6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::presence::~presence</definition>
+        <argsstring>()</argsstring>
+        <name>~presence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="341" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1ad074f1ca4904e9a109d1fd0cb7f096a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1presence" kindref="compound">presence</ref> &amp;</type>
+        <definition>presence &amp; dpp::presence::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill this object from json. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON object to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="347" column="11" bodyfile="src/dpp/presence.cpp" bodystart="108" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1adb33240188517c5f656099b88428b983" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::presence::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build JSON from this object.</para>
+<para>Note: This excludes any part of the presence object that are not valid for websockets and bots, and includes websocket opcode 3. You will not get what you expect if you call this on a user&apos;s presence received from on_presence_update or on_guild_create!</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Add ID to output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The JSON text of the presence </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="358" column="21" bodyfile="src/dpp/presence.cpp" bodystart="237" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1a63177953eddc1a1425721110a6469042" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
+        <definition>presence_status dpp::presence::desktop_status</definition>
+        <argsstring>() const</argsstring>
+        <name>desktop_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The users status on desktop <simplesect kind="return"><para>The user&apos;s status on desktop </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="363" column="17" bodyfile="src/dpp/presence.cpp" bodystart="275" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1a48277b458604de43ab9c4af7bbc3733d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
+        <definition>presence_status dpp::presence::web_status</definition>
+        <argsstring>() const</argsstring>
+        <name>web_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user&apos;s status on web <simplesect kind="return"><para>The user&apos;s status on web </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="368" column="17" bodyfile="src/dpp/presence.cpp" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1abf5fafbf7c71764f540b1d26c03b0607" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
+        <definition>presence_status dpp::presence::mobile_status</definition>
+        <argsstring>() const</argsstring>
+        <name>mobile_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user&apos;s status on mobile <simplesect kind="return"><para>The user&apos;s status on mobile </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="373" column="17" bodyfile="src/dpp/presence.cpp" bodystart="283" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1presence_1a3b1a81ea3d14f7507923ba37fa8e4961" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96" kindref="member">presence_status</ref></type>
+        <definition>presence_status dpp::presence::status</definition>
+        <argsstring>() const</argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user&apos;s status as shown to other users <simplesect kind="return"><para>The user&apos;s status as shown to other users </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/presence.h" line="378" column="17" bodyfile="src/dpp/presence.cpp" bodystart="287" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents user presence, e.g. what game they are playing and if they are online. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="1">
+        <label>dpp::presence</label>
+        <link refid="classdpp_1_1presence"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; presence &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; presence &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="1">
+        <label>dpp::presence</label>
+        <link refid="classdpp_1_1presence"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>activities</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; presence &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; presence &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector&lt;</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
+      </node>
+      <node id="5">
+        <label>uint8_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/presence.h" line="306" column="1" bodyfile="include/dpp/presence.h" bodystart="306" bodyend="379"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1presence_1af59a01dbafdb477ec9adfc2a9b667f2d" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>activities</name></member>
+      <member refid="classdpp_1_1presence_1adb33240188517c5f656099b88428b983" prot="public" virt="virtual"><scope>dpp::presence</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1presence_1a63177953eddc1a1425721110a6469042" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>desktop_status</name></member>
+      <member refid="classdpp_1_1presence_1ad074f1ca4904e9a109d1fd0cb7f096a9" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>fill_from_json</name></member>
+      <member refid="classdpp_1_1presence_1ab29149dcde2872002715212b8a6ff951" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>flags</name></member>
+      <member refid="classdpp_1_1presence_1a7f015f7eabc016a1f5567ccbbf80db0d" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>guild_id</name></member>
+      <member refid="classdpp_1_1presence_1abf5fafbf7c71764f540b1d26c03b0607" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>mobile_status</name></member>
+      <member refid="classdpp_1_1presence_1a48cd5e5ab349078d079d0d9f8098451b" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>presence</name></member>
+      <member refid="classdpp_1_1presence_1a98d7b61872c1f9a8f8cedcad3075c60f" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>presence</name></member>
+      <member refid="classdpp_1_1presence_1a7d1175469fac4cb4abe10b8afdc74e83" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>presence</name></member>
+      <member refid="classdpp_1_1presence_1a3b1a81ea3d14f7507923ba37fa8e4961" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>status</name></member>
+      <member refid="classdpp_1_1presence_1ad8c02207b48c891d1d98949f86c5b312" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>user_id</name></member>
+      <member refid="classdpp_1_1presence_1a48277b458604de43ab9c4af7bbc3733d" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>web_status</name></member>
+      <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::presence</scope><name>~json_interface</name></member>
+      <member refid="classdpp_1_1presence_1aaf9b4823dc5cfa358f1431dc0a13df6b" prot="public" virt="non-virtual"><scope>dpp::presence</scope><name>~presence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
