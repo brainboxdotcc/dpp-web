@@ -131,6 +131,9 @@ $(document).ready(function(){initNavTree('classdpp_1_1discord__voice__client.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1790b206609d45aa1e124c701a4407f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a1790b206609d45aa1e124c701a4407f3">set_user_gain</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, float factor)</td></tr>
+<tr class="memdesc:a1790b206609d45aa1e124c701a4407f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the gain for the specified user.  <a href="classdpp_1_1discord__voice__client.html#a1790b206609d45aa1e124c701a4407f3">More...</a><br /></td></tr>
+<tr class="separator:a1790b206609d45aa1e124c701a4407f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac06f68e15b979b0590f09c9732548f16"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#ac06f68e15b979b0590f09c9732548f16">log</a> (<a class="el" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">dpp::loglevel</a> severity, const std::string &amp;msg) const</td></tr>
 <tr class="memdesc:ac06f68e15b979b0590f09c9732548f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message to whatever log the user is using. The logged message is passed up the chain to the on_log event in user code which can then do whatever it wants to do with it.  <a href="classdpp_1_1discord__voice__client.html#ac06f68e15b979b0590f09c9732548f16">More...</a><br /></td></tr>
 <tr class="separator:ac06f68e15b979b0590f09c9732548f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1341,6 +1344,46 @@ Protected Attributes</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classdpp_1_1voice__exception.html" title="Represents an error with voice processing.">dpp::voice_exception</a></td><td>If data length is invalid or voice support not compiled into D++ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1790b206609d45aa1e124c701a4407f3" name="a1790b206609d45aa1e124c701a4407f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1790b206609d45aa1e124c701a4407f3">&#9670;&nbsp;</a></span>set_user_gain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_voice_client::set_user_gain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the gain for the specified user. </p>
+<p >Similar to the User Volume slider, controls the listening volume per user. Uses native Opus gain control, so clients don't have to perform extra audio processing.</p>
+<p >The gain setting will affect the both individual and combined voice audio.</p>
+<p >The gain value can also be set even before the user connects to the voice channel.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user_id</td><td>The ID of the user where the gain is to be controlled. </td></tr>
+    <tr><td class="paramname">factor</td><td>Nonnegative factor to scale the amplitude by, where 1.f reverts to the default volume. </td></tr>
   </table>
   </dd>
 </dl>

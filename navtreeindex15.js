@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"functions_vars_w.html":[7,3,2,21],
+"functions_w.html":[7,3,0,22],
 "functions_~.html":[7,3,0,23],
 "hierarchy.html":[7,2],
 "index.html":[0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "namespacedpp.html#a408d79969007e9c450e186f5387df9e5":[6,0,1,251],
 "namespacedpp.html#a4382884d78d028b54f2eaf9ac5738313":[6,0,1,409],
 "namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708":[6,0,1,228],
-"namespacedpp.html#a45736823a51be6eb7910f036b30397b2":[6,0,1,235],
-"namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e":[6,0,1,215],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319f":[6,0,1,274]
+"namespacedpp.html#a45736823a51be6eb7910f036b30397b2":[6,0,1,235]
 };
