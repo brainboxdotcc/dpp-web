@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/application.h" line="112" column="1" bodyfile="src/dpp/application.cpp" bodystart="31" bodyend="33"/>
+        <location file="include/dpp/application.h" line="112" column="1" bodyfile="src/dpp/application.cpp" bodystart="32" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1application_1ae9c07959319bada770b8288157c319e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -317,7 +317,69 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/application.h" line="121" column="13" bodyfile="src/dpp/application.cpp" bodystart="37" bodyend="80"/>
+        <location file="include/dpp/application.h" line="121" column="13" bodyfile="src/dpp/application.cpp" bodystart="38" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1application_1adf128cc9b4b0656acbbbb93984b4e506" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::application::get_cover_image_url</definition>
+        <argsstring>(uint16_t size=0) const</argsstring>
+        <name>get_cover_image_url</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Get the applications cover image url if they have one, otherwise returns an empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the cover image in pixels. It can be any power of two between 16 and 4096. if not specified, the default sized cover image is returned. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string cover image url or empty string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="129" column="13" bodyfile="src/dpp/application.cpp" bodystart="83" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1application_1ac46c801533a9ce13dcada684b0e7cfe6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::application::get_icon_url</definition>
+        <argsstring>(uint16_t size=0) const</argsstring>
+        <name>get_icon_url</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Get the applications icon url if they have one, otherwise returns an empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the icon in pixels. It can be any power of two between 16 and 4096. if not specified, the default sized icon is returned. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string icon url or empty string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="137" column="13" bodyfile="src/dpp/application.cpp" bodystart="96" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -602,7 +664,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/application.h" line="91" column="1" bodyfile="include/dpp/application.h" bodystart="91" bodyend="122"/>
+    <location file="include/dpp/application.h" line="91" column="1" bodyfile="include/dpp/application.h" bodystart="91" bodyend="138"/>
     <listofallmembers>
       <member refid="classdpp_1_1application_1a20b27bd6cecfbff3ed083c65d4edf044" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>application</name></member>
       <member refid="classdpp_1_1application_1a1724baabe72d957d04b0a30bc4604d8b" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>bot_public</name></member>
@@ -612,7 +674,9 @@
       <member refid="classdpp_1_1application_1a6ddc12a2501ab7bd7b5d9ad3633cab9f" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>description</name></member>
       <member refid="classdpp_1_1application_1ad1fe25fde3ada9b7392c70f715a0e50d" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>fill_from_json</name></member>
       <member refid="classdpp_1_1application_1ad057bffc84c68adf36cf6532455a7f40" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>flags</name></member>
+      <member refid="classdpp_1_1application_1adf128cc9b4b0656acbbbb93984b4e506" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>get_cover_image_url</name></member>
       <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>get_creation_time</name></member>
+      <member refid="classdpp_1_1application_1ac46c801533a9ce13dcada684b0e7cfe6" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>get_icon_url</name></member>
       <member refid="classdpp_1_1application_1aff84fc8a95d5fe5aa88da545ebe5154c" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>guild_id</name></member>
       <member refid="classdpp_1_1application_1ac6e765f3953994066ba388d70f3f7ecb" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>icon</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::application</scope><name>id</name></member>
