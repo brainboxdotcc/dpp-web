@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line"> </div>
 <div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
 <div class="line"> </div>
-<div class="line">    bot.on_interaction_create([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1interaction__create__t.html">dpp::interaction_create_t</a>&amp; event) {</div>
+<div class="line">    bot.on_slashcommand([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line">         <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;ping&quot;</span>) {</div>
 <div class="line">            event.reply(<span class="stringliteral">&quot;Pong!&quot;</span>);</div>
 <div class="line">        }</div>
@@ -135,11 +135,11 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">}</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:467</div></div>
 <div class="ttc" id="aclassdpp_1_1interaction_html_aabbb8d58d708128098516ed443d5c140"><div class="ttname"><a href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">dpp::interaction::get_command_name</a></div><div class="ttdeci">std::string get_command_name() const</div><div class="ttdoc">Get the command name for a command interaction.</div><div class="ttdef"><b>Definition:</b> slashcommand.cpp:441</div></div>
-<div class="ttc" id="aclassdpp_1_1slashcommand_html"><div class="ttname"><a href="classdpp_1_1slashcommand.html">dpp::slashcommand</a></div><div class="ttdoc">Represents an application command, created by your bot either globally, or on a guild.</div><div class="ttdef"><b>Definition:</b> appcommand.h:807</div></div>
+<div class="ttc" id="aclassdpp_1_1slashcommand_html"><div class="ttname"><a href="classdpp_1_1slashcommand.html">dpp::slashcommand</a></div><div class="ttdoc">Represents an application command, created by your bot either globally, or on a guild.</div><div class="ttdef"><b>Definition:</b> appcommand.h:809</div></div>
 <div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div><div class="ttdef"><b>Definition:</b> utility.cpp:375</div></div>
-<div class="ttc" id="astructdpp_1_1interaction__create__t_html"><div class="ttname"><a href="structdpp_1_1interaction__create__t.html">dpp::interaction_create_t</a></div><div class="ttdoc">Create interaction.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:292</div></div>
 <div class="ttc" id="astructdpp_1_1interaction__create__t_html_a8b0c69c156a1e532507a918c13414f14"><div class="ttname"><a href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">dpp::interaction_create_t::command</a></div><div class="ttdeci">interaction command</div><div class="ttdoc">command interaction</div><div class="ttdef"><b>Definition:</b> dispatcher.h:423</div></div>
-<div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:706</div></div>
+<div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:715</div></div>
+<div class="ttc" id="astructdpp_1_1slashcommand__t_html"><div class="ttname"><a href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a></div><div class="ttdef"><b>Definition:</b> dispatcher.h:431</div></div>
 </div><!-- fragment --><p class="endtd"></p>
 </td><td><p class="starttd"></p>
 <div class="fragment"><div class="line">let Discord = require(<span class="stringliteral">&#39;discord.js&#39;</span>);</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
 4. Attach to another event to receive slash commands</h2>
-<p >If you want to handle a slash command, you should also attach your program to the <code>on_interaction_create</code> event (<a class="el" href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a>) which is the same as the Discord.js <code>interactionCreate</code> event. Lets add this to the program before the <code>on_ready</code> event:</p>
+<p >If you want to handle a slash command, you should also attach your program to the <code>on_slashcommand</code> event (<a class="el" href="classdpp_1_1cluster.html#a540047f8a4795e12c5468ce91ee121b6" title="Called when a slash command is issued. Only ctxm_chat_input types of interaction are routed to this e...">dpp::cluster::on_slashcommand</a>) which is the same as the Discord.js <code>interactionCreate</code> event. Lets add this to the program before the <code>on_ready</code> event:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">const</span> std::string    BOT_TOKEN    = <span class="stringliteral">&quot;add your token here&quot;</span>;</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(BOT_TOKEN);</div>
 <div class="line"> </div>
-<div class="line">    bot.on_interaction_create([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1interaction__create__t.html">dpp::interaction_create_t</a>&amp; event) {</div>
+<div class="line">    bot.on_slashcommand([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a>&amp; event) {</div>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md44"></a>
 5 . Add some content to the events</h2>
-<p >Attaching to an event is a good start, but to make a bot you should actually put some program code into the interaction event. We will add some code to the <code>on_interaction_create</code> to look for our slash command '/ping' and reply with <code>Pong!</code>:</p>
+<p >Attaching to an event is a good start, but to make a bot you should actually put some program code into the interaction event. We will add some code to the <code>on_slashcommand</code> to look for our slash command '/ping' and reply with <code>Pong!</code>:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">const</span> std::string    BOT_TOKEN    = <span class="stringliteral">&quot;add your token here&quot;</span>;</div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(BOT_TOKEN);</div>
 <div class="line"> </div>
-<div class="line">    bot.on_interaction_create([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1interaction__create__t.html">dpp::interaction_create_t</a>&amp; event) {</div>
+<div class="line">    bot.on_slashcommand([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line">         <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;ping&quot;</span>) {</div>
 <div class="line">            event.reply(<span class="stringliteral">&quot;Pong!&quot;</span>);</div>
 <div class="line">        }</div>
@@ -248,8 +248,8 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">}</div>
-</div><!-- fragment --><p >Let's break down the code in the <code>on_interaction_create</code> event so that we can discuss what it is doing:</p>
-<div class="fragment"><div class="line">bot.on_interaction_create([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1interaction__create__t.html">dpp::interaction_create_t</a>&amp; event) {</div>
+</div><!-- fragment --><p >Let's break down the code in the <code>on_slashcommand</code> event so that we can discuss what it is doing:</p>
+<div class="fragment"><div class="line">bot.on_slashcommand([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line">     <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;ping&quot;</span>) {</div>
 <div class="line">        event.reply(<span class="stringliteral">&quot;Pong!&quot;</span>);</div>
 <div class="line">    }</div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line"> </div>
 <div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
 <div class="line"> </div>
-<div class="line">    bot.on_interaction_create([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1interaction__create__t.html">dpp::interaction_create_t</a>&amp; event) {</div>
+<div class="line">    bot.on_slashcommand([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line">         <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;ping&quot;</span>) {</div>
 <div class="line">            event.reply(<span class="stringliteral">&quot;Pong!&quot;</span>);</div>
 <div class="line">        }</div>

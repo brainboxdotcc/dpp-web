@@ -220,6 +220,7 @@ var annotated_dup =
       [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
       [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
       [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
+      [ "slashcommand_t", "structdpp_1_1slashcommand__t.html", "structdpp_1_1slashcommand__t" ],
       [ "ssl_client", "classdpp_1_1ssl__client.html", "classdpp_1_1ssl__client" ],
       [ "stage_instance", "structdpp_1_1stage__instance.html", "structdpp_1_1stage__instance" ],
       [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],

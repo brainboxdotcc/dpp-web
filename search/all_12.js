@@ -115,7 +115,7 @@ var searchData=
   ['roles_5fedit_5fposition_5fsync_112',['roles_edit_position_sync',['../classdpp_1_1cluster.html#ab4f1d985f90ff65362e687978abef6cc',1,'dpp::cluster']]],
   ['roles_5fget_113',['roles_get',['../classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219',1,'dpp::cluster']]],
   ['roles_5fget_5fsync_114',['roles_get_sync',['../classdpp_1_1cluster.html#a4e9bb5386f8edd51c6f8c34653d74ac3',1,'dpp::cluster']]],
-  ['route_115',['route',['../classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3',1,'dpp::commandhandler::route(const struct interaction_create_t &amp;event)'],['../classdpp_1_1commandhandler.html#a957dfe206c80cd7176e7ab663e9a1bf2',1,'dpp::commandhandler::route(const struct dpp::message_create_t &amp;event)']]],
+  ['route_115',['route',['../classdpp_1_1commandhandler.html#a2a49a132a938c1952f77a31de8335cce',1,'dpp::commandhandler::route(const struct slashcommand_t &amp;event)'],['../classdpp_1_1commandhandler.html#a957dfe206c80cd7176e7ab663e9a1bf2',1,'dpp::commandhandler::route(const struct dpp::message_create_t &amp;event)']]],
   ['rpc_5forigins_116',['rpc_origins',['../classdpp_1_1application.html#ac80deaf158551887c9f4c0b4be7b6ec7',1,'dpp::application']]],
   ['rtc_5fregion_117',['rtc_region',['../classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad',1,'dpp::channel']]],
   ['rtp_5fheader_118',['rtp_header',['../structdpp_1_1rtp__header.html',1,'dpp::rtp_header'],['../structdpp_1_1rtp__header.html#acc1b39793e54cb2caf586cf65e2d42bd',1,'dpp::rtp_header::rtp_header()']]],

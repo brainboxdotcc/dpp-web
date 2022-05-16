@@ -145,7 +145,8 @@ var hierarchy =
           [ "dpp::user_context_menu_t", "structdpp_1_1user__context__menu__t.html", null ]
         ] ],
         [ "dpp::form_submit_t", "structdpp_1_1form__submit__t.html", null ],
-        [ "dpp::select_click_t", "structdpp_1_1select__click__t.html", null ]
+        [ "dpp::select_click_t", "structdpp_1_1select__click__t.html", null ],
+        [ "dpp::slashcommand_t", "structdpp_1_1slashcommand__t.html", null ]
       ] ],
       [ "dpp::invite_create_t", "structdpp_1_1invite__create__t.html", null ],
       [ "dpp::invite_delete_t", "structdpp_1_1invite__delete__t.html", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"namespacedpp_1_1colors.html#ab97be039f9ee4e259c368c13dbfb3fd6":[6,0,1,0,30],
+"namespacedpp_1_1colors.html#abb34cb3e20942bcbe2cfe5650170e42a":[6,0,1,0,25],
 "namespacedpp_1_1colors.html#ac9d616dd5c25d82057d6618f6b1dbf12":[6,0,1,0,42],
 "namespacedpp_1_1colors.html#aca0a7077bebf6fc0727a1821191481a8":[6,0,1,0,17],
 "namespacedpp_1_1colors.html#acb76e75d49a967db7525515b2c244a62":[6,0,1,0,15],
@@ -59,8 +61,8 @@ var NAVTREEINDEX18 =
 "namespacefmt.html":[6,0,2],
 "namespaceliterals.html":[6,0,3],
 "namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2":[6,0,3,0],
-"namespacemembers.html":[6,1,0],
 "namespacemembers.html":[6,1,0,0],
+"namespacemembers.html":[6,1,0],
 "namespacemembers_a.html":[6,1,0,1],
 "namespacemembers_b.html":[6,1,0,2],
 "namespacemembers_c.html":[6,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "structdpp_1_1activity__assets.html#a72e8ce0c8aa2157b8eb003f7e6df08fd":[6,0,1,5,2],
 "structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[6,0,1,5,0],
 "structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[7,0,1,3,0],
-"structdpp_1_1activity__button.html":[7,0,1,4],
-"structdpp_1_1activity__button.html":[6,0,1,6],
-"structdpp_1_1activity__button.html#a1c326370a806853a03a4d21a48aa8855":[7,0,1,4,0]
+"structdpp_1_1activity__button.html":[7,0,1,4]
 };

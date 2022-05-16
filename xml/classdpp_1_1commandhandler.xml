@@ -202,7 +202,7 @@
 <parametername>auto_hook_events</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Set to true to automatically hook the on_interaction_create and on_message events. You should not need to set this to false unless you have a specific use case, as D++ supports multiple listeners to an event, so will allow the commandhandler to hook to your command events without disrupting other uses for the events you may have. </para>
+<para>Set to true to automatically hook the on_slashcommand and on_message events. You should not need to set this to false unless you have a specific use case, as D++ supports multiple listeners to an event, so will allow the commandhandler to hook to your command events without disrupting other uses for the events you may have. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -427,17 +427,17 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="349" column="6" bodyfile="src/dpp/commandhandler.cpp" bodystart="183" bodyend="299"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1commandhandler_1acf454dbea724739e53540721af21b9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1commandhandler_1a2a49a132a938c1952f77a31de8335cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::commandhandler::route</definition>
-        <argsstring>(const struct interaction_create_t &amp;event)</argsstring>
+        <argsstring>(const struct slashcommand_t &amp;event)</argsstring>
         <name>route</name>
         <param>
-          <type>const struct <ref refid="structdpp_1_1interaction__create__t" kindref="compound">interaction_create_t</ref> &amp;</type>
+          <type>const struct <ref refid="structdpp_1_1slashcommand__t" kindref="compound">slashcommand_t</ref> &amp;</type>
           <declname>event</declname>
         </param>
         <briefdescription>
-<para>Route a command from the on_interaction_create function. Call this method from your on_interaction_create with the received <ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref> object if you have disabled automatic registration of events. </para>
+<para>Route a command from the on_slashcommand function. Call this method from your on_slashcommand with the received <ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref> object if you have disabled automatic registration of events. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -750,7 +750,7 @@
       <member refid="classdpp_1_1commandhandler_1a208f3684f3987d87074824bd13699e42" prot="public" virt="non-virtual"><scope>dpp::commandhandler</scope><name>register_commands</name></member>
       <member refid="classdpp_1_1commandhandler_1ad8ddefafe9e85a86829775f385fe5f23" prot="public" virt="non-virtual"><scope>dpp::commandhandler</scope><name>reply</name></member>
       <member refid="classdpp_1_1commandhandler_1a957dfe206c80cd7176e7ab663e9a1bf2" prot="public" virt="non-virtual"><scope>dpp::commandhandler</scope><name>route</name></member>
-      <member refid="classdpp_1_1commandhandler_1acf454dbea724739e53540721af21b9a3" prot="public" virt="non-virtual"><scope>dpp::commandhandler</scope><name>route</name></member>
+      <member refid="classdpp_1_1commandhandler_1a2a49a132a938c1952f77a31de8335cce" prot="public" virt="non-virtual"><scope>dpp::commandhandler</scope><name>route</name></member>
       <member refid="classdpp_1_1commandhandler_1a8640d327288a6dd1c5fdbde85726e7de" prot="public" virt="non-virtual"><scope>dpp::commandhandler</scope><name>set_owner</name></member>
       <member refid="classdpp_1_1commandhandler_1a29e869380af75e438094960b2e66a898" prot="public" virt="non-virtual"><scope>dpp::commandhandler</scope><name>slash_commands_enabled</name></member>
       <member refid="classdpp_1_1commandhandler_1a064419ada0fd30cee04faec9f75ba04d" prot="public" virt="non-virtual"><scope>dpp::commandhandler</scope><name>string_has_prefix</name></member>

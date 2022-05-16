@@ -1192,6 +1192,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aaaac4fce048efff1be42965c82235b3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1interaction__create__t.html">interaction_create_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e">on_interaction_create</a></td></tr>
 <tr class="memdesc:aaaac4fce048efff1be42965c82235b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new interaction is created. Interactions are created by discord when commands you have registered are issued by a user. For an example of this in action please see <a class="el" href="slashcommands.html">Using Slash Commands and Interactions</a>.  <a href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e">More...</a><br /></td></tr>
 <tr class="separator:aaaac4fce048efff1be42965c82235b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540047f8a4795e12c5468ce91ee121b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1slashcommand__t.html">slashcommand_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a540047f8a4795e12c5468ce91ee121b6">on_slashcommand</a></td></tr>
+<tr class="memdesc:a540047f8a4795e12c5468ce91ee121b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a slash command is issued. Only ctxm_chat_input types of interaction are routed to this event. For an example of this in action please see <a class="el" href="slashcommands.html">Using Slash Commands and Interactions</a>.  <a href="classdpp_1_1cluster.html#a540047f8a4795e12c5468ce91ee121b6">More...</a><br /></td></tr>
+<tr class="separator:a540047f8a4795e12c5468ce91ee121b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9409347218d270da0aeb22b0a27c38d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1button__click__t.html">button_click_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#af9409347218d270da0aeb22b0a27c38d">on_button_click</a></td></tr>
 <tr class="memdesc:af9409347218d270da0aeb22b0a27c38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a button is clicked attached to a message. Button clicks are triggered by discord when buttons are clicked which you have associated with a message using <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a>.  <a href="classdpp_1_1cluster.html#af9409347218d270da0aeb22b0a27c38d">More...</a><br /></td></tr>
 <tr class="separator:af9409347218d270da0aeb22b0a27c38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -17362,6 +17365,23 @@ unless you want something special from <code><a class="el" href="classdpp_1_1use
 
 <p>Called when a select menu is clicked attached to a message. Select menu clicks are triggered by discord when select menus are clicked which you have associated with a message using <a class="el" href="classdpp_1_1component.html" title="Represents the component object. A component is a clickable button or drop down list within a discord...">dpp::component</a>. </p>
 <dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1select__click__t.html" title="Click on select.">select_click_t</a>&amp;, and returns void. </dd></dl>
+
+</div>
+</div>
+<a id="a540047f8a4795e12c5468ce91ee121b6" name="a540047f8a4795e12c5468ce91ee121b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a540047f8a4795e12c5468ce91ee121b6">&#9670;&nbsp;</a></span>on_slashcommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt;<a class="el" href="structdpp_1_1slashcommand__t.html">slashcommand_t</a>&gt; dpp::cluster::on_slashcommand</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a slash command is issued. Only ctxm_chat_input types of interaction are routed to this event. For an example of this in action please see <a class="el" href="slashcommands.html">Using Slash Commands and Interactions</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1interaction__create__t.html" title="Create interaction.">interaction_create_t</a>&amp;, and returns void. </dd></dl>
 
 </div>
 </div>
