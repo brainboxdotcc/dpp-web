@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="context-menu" kind="page">
+    <compoundname>context-menu</compoundname>
+    <title>Context Menus</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Context menus are application commands that appear on the context menu (right click or tap) of users or messages to perform context-specific actions. They can be created using <computeroutput><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref></computeroutput>. Once you create a context menu, try right-clicking either a user or message to see it in your server!</para>
+<para><image type="html" name="context_menu_user_command.png"></image>
+</para>
+<para>The following example shows how to create and handle <bold>user context menus</bold>.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Register<sp/>the<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.guild_command_create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.set_type(<ref refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659" kindref="member">dpp::ctxm_user</ref>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.set_name(</highlight><highlight class="stringliteral">&quot;High<sp/>Five&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.set_application_id(bot.me.id),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>857692897221033129<sp/></highlight><highlight class="comment">//<sp/>you<sp/>need<sp/>to<sp/>put<sp/>your<sp/>guild-id<sp/>in<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Use<sp/>the<sp/>on_user_context_menu<sp/>event<sp/>to<sp/>look<sp/>for<sp/>user<sp/>context<sp/>menu<sp/>actions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_user_context_menu([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1user__context__menu__t" kindref="compound">dpp::user_context_menu_t</ref><sp/>&amp;event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>the<sp/>context<sp/>menu<sp/>name<sp/>is<sp/>High<sp/>Five<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">get_command_name</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;High<sp/>Five&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::user<sp/>user<sp/>=<sp/>event.get_user();<sp/></highlight><highlight class="comment">//<sp/>the<sp/>user<sp/>who<sp/>the<sp/>command<sp/>has<sp/>been<sp/>issued<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::user<sp/>author<sp/>=<sp/>event.command.usr;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>user<sp/>who<sp/>clicked<sp/>on<sp/>the<sp/>context<sp/>menu</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(author.get_mention()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>slapped<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>user.get_mention());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>It registers a guild command that can be called by right-click a user and click on the created menu.</para>
+<para><image type="html" name="context_menu_user_command_showcase.png"></image>
+ </para>
+    </detaileddescription>
+    <location file="docpages/03_example_programs.md"/>
+  </compounddef>
+</doxygen>
