@@ -402,7 +402,8 @@ var namespacedpp =
     ] ],
     [ "channel_flags", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7d", [
       [ "c_nsfw", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7da0b0d31477f484ddc8b5da869e8a020bd", null ],
-      [ "c_video_quality_720p", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7da76fb8f7043c63103db86dc0ef1f14fca", null ]
+      [ "c_video_quality_720p", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7da76fb8f7043c63103db86dc0ef1f14fca", null ],
+      [ "c_lock_permissions", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7da616b3dd8173ca7ca0d249d82c573e3c0", null ]
     ] ],
     [ "channel_type", "namespacedpp.html#a732e832861149a278f27ea7840b8e4ca", [
       [ "CHANNEL_TEXT", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caadee0dce423516e720f8ef4f77628428e", null ],

@@ -261,6 +261,7 @@
     <member refid="classdpp_1_1channel_1aed49e707599019840d4715f6c2123a5f" kind="function"><name>set_user_limit</name></member>
     <member refid="classdpp_1_1channel_1ab6bc88cdee70038c6544c7f44a4584be" kind="function"><name>set_bitrate</name></member>
     <member refid="classdpp_1_1channel_1a602852256a543a6901aa5c87520aeb63" kind="function"><name>set_nsfw</name></member>
+    <member refid="classdpp_1_1channel_1a8ee251e0b5faafd378b3fdabdf39a523" kind="function"><name>set_lock_permissions</name></member>
     <member refid="classdpp_1_1channel_1a929b0d7a3eaed7ca144752196c2cf38f" kind="function"><name>set_rate_limit_per_user</name></member>
     <member refid="classdpp_1_1channel_1a3bf0a0d35c4aa4e40c6b2b71e9c97584" kind="function"><name>add_permission_overwrite</name></member>
     <member refid="classdpp_1_1channel_1a08a674755c169a3517361dc847511617" kind="function"><name>get_mention</name></member>
@@ -270,6 +271,7 @@
     <member refid="classdpp_1_1channel_1a9b21f2eb844a745ba44fda7ca55aa40e" kind="function"><name>get_banner_url</name></member>
     <member refid="classdpp_1_1channel_1a97712454c654d4a4eede963a5307dfdc" kind="function"><name>get_icon_url</name></member>
     <member refid="classdpp_1_1channel_1a41631deb5f2cb740b4d124cde9f266d2" kind="function"><name>is_nsfw</name></member>
+    <member refid="classdpp_1_1channel_1ac8ce0b3fc552cfe96f46e6c55299a810" kind="function"><name>is_locked_permissions</name></member>
     <member refid="classdpp_1_1channel_1a7b9bfb2f922e7cfcbbb1d60f02e5a901" kind="function"><name>is_text_channel</name></member>
     <member refid="classdpp_1_1channel_1a918afc6016a1114151a253e7caa35179" kind="function"><name>is_dm</name></member>
     <member refid="classdpp_1_1channel_1a8ee69208f9cf16c18f2ceb460ada1916" kind="function"><name>is_voice_channel</name></member>
@@ -3259,6 +3261,7 @@
     <member refid="classdpp_1_1channel_1aed49e707599019840d4715f6c2123a5f" kind="function"><name>set_user_limit</name></member>
     <member refid="classdpp_1_1channel_1ab6bc88cdee70038c6544c7f44a4584be" kind="function"><name>set_bitrate</name></member>
     <member refid="classdpp_1_1channel_1a602852256a543a6901aa5c87520aeb63" kind="function"><name>set_nsfw</name></member>
+    <member refid="classdpp_1_1channel_1a8ee251e0b5faafd378b3fdabdf39a523" kind="function"><name>set_lock_permissions</name></member>
     <member refid="classdpp_1_1channel_1a929b0d7a3eaed7ca144752196c2cf38f" kind="function"><name>set_rate_limit_per_user</name></member>
     <member refid="classdpp_1_1channel_1a3bf0a0d35c4aa4e40c6b2b71e9c97584" kind="function"><name>add_permission_overwrite</name></member>
     <member refid="classdpp_1_1channel_1a08a674755c169a3517361dc847511617" kind="function"><name>get_mention</name></member>
@@ -3268,6 +3271,7 @@
     <member refid="classdpp_1_1channel_1a9b21f2eb844a745ba44fda7ca55aa40e" kind="function"><name>get_banner_url</name></member>
     <member refid="classdpp_1_1channel_1a97712454c654d4a4eede963a5307dfdc" kind="function"><name>get_icon_url</name></member>
     <member refid="classdpp_1_1channel_1a41631deb5f2cb740b4d124cde9f266d2" kind="function"><name>is_nsfw</name></member>
+    <member refid="classdpp_1_1channel_1ac8ce0b3fc552cfe96f46e6c55299a810" kind="function"><name>is_locked_permissions</name></member>
     <member refid="classdpp_1_1channel_1a7b9bfb2f922e7cfcbbb1d60f02e5a901" kind="function"><name>is_text_channel</name></member>
     <member refid="classdpp_1_1channel_1a918afc6016a1114151a253e7caa35179" kind="function"><name>is_dm</name></member>
     <member refid="classdpp_1_1channel_1a8ee69208f9cf16c18f2ceb460ada1916" kind="function"><name>is_voice_channel</name></member>
@@ -4056,6 +4060,7 @@
     <member refid="namespacedpp_1ab11f2d909f48313331797465e3fbba7d" kind="enum"><name>channel_flags</name></member>
     <member refid="namespacedpp_1ab11f2d909f48313331797465e3fbba7da0b0d31477f484ddc8b5da869e8a020bd" kind="enumvalue"><name>c_nsfw</name></member>
     <member refid="namespacedpp_1ab11f2d909f48313331797465e3fbba7da76fb8f7043c63103db86dc0ef1f14fca" kind="enumvalue"><name>c_video_quality_720p</name></member>
+    <member refid="namespacedpp_1ab11f2d909f48313331797465e3fbba7da616b3dd8173ca7ca0d249d82c573e3c0" kind="enumvalue"><name>c_lock_permissions</name></member>
     <member refid="namespacedpp_1a1111f17373e7a972e77ffc0a6e621522" kind="enum"><name>overwrite_type</name></member>
     <member refid="namespacedpp_1a1111f17373e7a972e77ffc0a6e621522ab1e3ea27fc98089b63c9e89fe7c44df5" kind="enumvalue"><name>ot_role</name></member>
     <member refid="namespacedpp_1a1111f17373e7a972e77ffc0a6e621522a55d9fc605a432262deb345fd89af929b" kind="enumvalue"><name>ot_member</name></member>
@@ -5051,14 +5056,14 @@
   <compound refid="cache_8cpp" kind="file"><name>cache.cpp</name>
     <member refid="cache_8cpp_1a0a2e8cf8c52b20ddc8cd63edbfd240e6" kind="define"><name>cache_helper</name></member>
   </compound>
+  <compound refid="cluster_8cpp" kind="file"><name>cluster.cpp</name>
+  </compound>
+  <compound refid="appcommand_8cpp" kind="file"><name>appcommand.cpp</name>
+  </compound>
   <compound refid="channel_8cpp" kind="file"><name>channel.cpp</name>
     <member refid="channel_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
   </compound>
   <compound refid="cluster_2channel_8cpp" kind="file"><name>cluster/channel.cpp</name>
-  </compound>
-  <compound refid="cluster_8cpp" kind="file"><name>cluster.cpp</name>
-  </compound>
-  <compound refid="appcommand_8cpp" kind="file"><name>appcommand.cpp</name>
   </compound>
   <compound refid="confirmation_8cpp" kind="file"><name>confirmation.cpp</name>
   </compound>
@@ -5070,6 +5075,10 @@
   </compound>
   <compound refid="json__interface_8cpp" kind="file"><name>json_interface.cpp</name>
   </compound>
+  <compound refid="cluster_2scheduled__event_8cpp" kind="file"><name>cluster/scheduled_event.cpp</name>
+  </compound>
+  <compound refid="scheduled__event_8cpp" kind="file"><name>scheduled_event.cpp</name>
+  </compound>
   <compound refid="sticker_8cpp" kind="file"><name>sticker.cpp</name>
   </compound>
   <compound refid="template_8cpp" kind="file"><name>template.cpp</name>
@@ -5079,6 +5088,10 @@
   <compound refid="timer_8cpp" kind="file"><name>timer.cpp</name>
   </compound>
   <compound refid="voice_8cpp" kind="file"><name>voice.cpp</name>
+  </compound>
+  <compound refid="cluster_2webhook_8cpp" kind="file"><name>cluster/webhook.cpp</name>
+  </compound>
+  <compound refid="webhook_8cpp" kind="file"><name>webhook.cpp</name>
   </compound>
   <compound refid="cluster__sync__calls_8cpp" kind="file"><name>cluster_sync_calls.cpp</name>
   </compound>
@@ -5315,10 +5328,6 @@
   <compound refid="role_8cpp" kind="file"><name>role.cpp</name>
     <member refid="role_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
   </compound>
-  <compound refid="cluster_2scheduled__event_8cpp" kind="file"><name>cluster/scheduled_event.cpp</name>
-  </compound>
-  <compound refid="scheduled__event_8cpp" kind="file"><name>scheduled_event.cpp</name>
-  </compound>
   <compound refid="slashcommand_8cpp" kind="file"><name>slashcommand.cpp</name>
   </compound>
   <compound refid="sslclient_8cpp" kind="file"><name>sslclient.cpp</name>
@@ -5342,10 +5351,6 @@
   </compound>
   <compound refid="voicestate_8cpp" kind="file"><name>voicestate.cpp</name>
     <member refid="voicestate_8cpp_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
-  </compound>
-  <compound refid="cluster_2webhook_8cpp" kind="file"><name>cluster/webhook.cpp</name>
-  </compound>
-  <compound refid="webhook_8cpp" kind="file"><name>webhook.cpp</name>
   </compound>
   <compound refid="wsclient_8cpp" kind="file"><name>wsclient.cpp</name>
   </compound>

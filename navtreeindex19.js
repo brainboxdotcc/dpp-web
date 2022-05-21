@@ -1,5 +1,14 @@
 var NAVTREEINDEX19 =
 {
+"structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[7,0,1,3,3],
+"structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[6,0,1,5,3],
+"structdpp_1_1activity__assets.html#a6baf7e3bc9fe1df2536c89f74201fe55":[7,0,1,3,1],
+"structdpp_1_1activity__assets.html#a6baf7e3bc9fe1df2536c89f74201fe55":[6,0,1,5,1],
+"structdpp_1_1activity__assets.html#a72e8ce0c8aa2157b8eb003f7e6df08fd":[7,0,1,3,2],
+"structdpp_1_1activity__assets.html#a72e8ce0c8aa2157b8eb003f7e6df08fd":[6,0,1,5,2],
+"structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[6,0,1,5,0],
+"structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[7,0,1,3,0],
+"structdpp_1_1activity__button.html":[7,0,1,4],
 "structdpp_1_1activity__button.html":[6,0,1,6],
 "structdpp_1_1activity__button.html#a1c326370a806853a03a4d21a48aa8855":[7,0,1,4,0],
 "structdpp_1_1activity__button.html#a1c326370a806853a03a4d21a48aa8855":[6,0,1,6,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX19 =
 "structdpp_1_1channel__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[6,0,1,27,2],
 "structdpp_1_1channel__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,1,25,2],
 "structdpp_1_1channel__delete__t.html#acfca1fcfe565e94a626d7b4a9cab1714":[6,0,1,27,3],
-"structdpp_1_1channel__delete__t.html#acfca1fcfe565e94a626d7b4a9cab1714":[7,0,1,25,3],
-"structdpp_1_1channel__delete__t.html#afd170d6f5321097ef9c43561b9a8cf1f":[6,0,1,27,0],
-"structdpp_1_1channel__delete__t.html#afd170d6f5321097ef9c43561b9a8cf1f":[7,0,1,25,0],
-"structdpp_1_1channel__pins__update__t.html":[6,0,1,28],
-"structdpp_1_1channel__pins__update__t.html":[7,0,1,26],
-"structdpp_1_1channel__pins__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,26,6],
-"structdpp_1_1channel__pins__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,28,6],
-"structdpp_1_1channel__pins__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,1,26,3],
-"structdpp_1_1channel__pins__update__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,1,28,3],
-"structdpp_1_1channel__pins__update__t.html#a39a68c81854f61285159cef7f80c3cbd":[6,0,1,28,4]
+"structdpp_1_1channel__delete__t.html#acfca1fcfe565e94a626d7b4a9cab1714":[7,0,1,25,3]
 };
