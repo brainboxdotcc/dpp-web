@@ -1,5 +1,11 @@
 var NAVTREEINDEX18 =
 {
+"namespacedpp_1_1colors.html#a6e796c43fe7ac16ad07b68799bbf73e7":[6,0,1,0,26],
+"namespacedpp_1_1colors.html#a79ea4166d5b5fde33dc6af4192081174":[6,0,1,0,1],
+"namespacedpp_1_1colors.html#a7c272c20f8ac469da51085778e540954":[6,0,1,0,34],
+"namespacedpp_1_1colors.html#a7fdb61376324888fddd7c973ecd1a1d3":[6,0,1,0,36],
+"namespacedpp_1_1colors.html#a8371389b428a9e19a213a1d6b877267e":[6,0,1,0,41],
+"namespacedpp_1_1colors.html#a864d7691d6d562a66200e01ef43e2ef9":[6,0,1,0,11],
 "namespacedpp_1_1colors.html#a8c841c7c3a097fa58a1445b75272a783":[6,0,1,0,16],
 "namespacedpp_1_1colors.html#a92769a183510d727effe8d5f40f7b452":[6,0,1,0,33],
 "namespacedpp_1_1colors.html#a95f9ab31b0ec9110a6bab038a6a26756":[6,0,1,0,37],
@@ -236,18 +242,12 @@ var NAVTREEINDEX18 =
 "structchrono__formatter.html#afd808e5eed54ab6f0acb149421a73dd9":[7,0,4,52],
 "structchrono__formatter.html#afef01a6c5bcc3ec8265c1c92625f4e57":[7,0,4,33],
 "structchrono__formatter.html#affba0b48d0655aedfb449264b125433e":[7,0,4,25],
-"structdetail_1_1codecvt__result.html":[7,0,0,0],
 "structdetail_1_1codecvt__result.html":[6,0,0,0],
+"structdetail_1_1codecvt__result.html":[7,0,0,0],
 "structdetail_1_1codecvt__result.html#a1301124445c89393c7e1461e4fa07ba6":[6,0,0,0,2],
 "structdetail_1_1codecvt__result.html#a1301124445c89393c7e1461e4fa07ba6":[7,0,0,0,2],
 "structdetail_1_1codecvt__result.html#a25929767603becedf453bbfc88c5fcc6":[7,0,0,0,1],
 "structdetail_1_1codecvt__result.html#a25929767603becedf453bbfc88c5fcc6":[6,0,0,0,1],
 "structdetail_1_1codecvt__result.html#a9114466ff04f03888fcb1f0e34adb1d7":[7,0,0,0,0],
-"structdetail_1_1codecvt__result.html#a9114466ff04f03888fcb1f0e34adb1d7":[6,0,0,0,0],
-"structdetail_1_1null.html":[6,0,0,1],
-"structdetail_1_1null.html":[7,0,0,1],
-"structdpp_1_1activity__assets.html":[6,0,1,5],
-"structdpp_1_1activity__assets.html":[7,0,1,3],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[7,0,1,3,4],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[6,0,1,5,4]
+"structdetail_1_1codecvt__result.html#a9114466ff04f03888fcb1f0e34adb1d7":[6,0,0,0,0]
 };

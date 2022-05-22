@@ -65,6 +65,7 @@ var namespacedpp =
     [ "activity_secrets", "structdpp_1_1activity__secrets.html", "structdpp_1_1activity__secrets" ],
     [ "app_team", "classdpp_1_1app__team.html", "classdpp_1_1app__team" ],
     [ "application", "classdpp_1_1application.html", "classdpp_1_1application" ],
+    [ "application_install_params", "structdpp_1_1application__install__params.html", "structdpp_1_1application__install__params" ],
     [ "attachment", "structdpp_1_1attachment.html", "structdpp_1_1attachment" ],
     [ "audit_change", "structdpp_1_1audit__change.html", "structdpp_1_1audit__change" ],
     [ "audit_entry", "structdpp_1_1audit__entry.html", "structdpp_1_1audit__entry" ],

@@ -7,6 +7,7 @@ var hierarchy =
     [ "dpp::activity_secrets", "structdpp_1_1activity__secrets.html", null ],
     [ "dpp::message::allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", null ],
     [ "dpp::app_team", "classdpp_1_1app__team.html", null ],
+    [ "dpp::application_install_params", "structdpp_1_1application__install__params.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],

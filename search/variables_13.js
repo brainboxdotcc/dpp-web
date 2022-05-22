@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tags_0',['tags',['../structdpp_1_1sticker.html#af0b92651f3d428ec8db4858133e826cd',1,'dpp::sticker']]],
+  ['tags_0',['tags',['../structdpp_1_1sticker.html#af0b92651f3d428ec8db4858133e826cd',1,'dpp::sticker::tags()'],['../classdpp_1_1application.html#abc6671becb10a6d81554c74e6e064a18',1,'dpp::application::tags()']]],
   ['tahiti_5fgold_1',['tahiti_gold',['../namespacedpp_1_1colors.html#adade2a4711583cd660a883f8e3b07143',1,'dpp::colors']]],
   ['talking_5fflags_2',['talking_flags',['../structdpp_1_1voice__user__talking__t.html#a9d52fb0412548166b6e54d81bdb8980b',1,'dpp::voice_user_talking_t']]],
   ['target_5fid_3',['target_id',['../structdpp_1_1audit__entry.html#a0b6fcc890dfd0e55e68c39d2f88d268b',1,'dpp::audit_entry::target_id()'],['../structdpp_1_1command__interaction.html#ad2d15a9d27143f74556eb34ddb2bf6ce',1,'dpp::command_interaction::target_id()']]],
