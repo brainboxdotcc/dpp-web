@@ -115,7 +115,7 @@
 </sect2>
 <sect2 id="firstbot_1autotoc_md43">
 <title>4. Attach to another event to receive slash commands</title>
-<para>If you want to handle a slash command, you should also attach your program to the <computeroutput>on_slashcommand</computeroutput> event (<ref refid="classdpp_1_1cluster_1a540047f8a4795e12c5468ce91ee121b6" kindref="member">dpp::cluster::on_slashcommand</ref>) which is the same as the Discord.js <computeroutput>interactionCreate</computeroutput> event. Lets add this to the program before the <computeroutput>on_ready</computeroutput> event:</para>
+<para>If you want to handle a slash command, you should also attach your program to the <computeroutput>on_slashcommand</computeroutput> event (<ref refid="classdpp_1_1cluster_1a540047f8a4795e12c5468ce91ee121b6" kindref="member">dpp::cluster::on_slashcommand</ref>) which is basically the same as the Discord.js <computeroutput>interactionCreate</computeroutput> event. Lets add this to the program before the <computeroutput>on_ready</computeroutput> event:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -166,7 +166,7 @@
 <codeline><highlight class="normal">});</highlight></codeline>
 </programlisting></para>
 <para>This code is simply comparing the command name <computeroutput>event.command.get_command_name()</computeroutput> (<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">dpp::interaction::get_command_name</ref>) against the value in a constant string value <computeroutput>&quot;ping&quot;</computeroutput>. If they match, then the <computeroutput>event.reply</computeroutput> method is called.</para>
-<para>The <computeroutput>event.reply</computeroutput> function (dpp::interaction_crete_t::reply) replies to a slash command with a message. There are many ways to call this function to send embed messages, upload files, and more, but for this simple demonstration we will just send some message text.</para>
+<para>The <computeroutput>event.reply</computeroutput> function (<ref refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kindref="member">dpp::slashcommand_t::reply</ref>) replies to a slash command with a message. There are many ways to call this function to send embed messages, upload files, and more, but for this simple demonstration we will just send some message text.</para>
 </sect2>
 <sect2 id="firstbot_1autotoc_md45">
 <title>6. Add code to start the bot!</title>

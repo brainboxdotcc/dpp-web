@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
 4. Attach to another event to receive slash commands</h2>
-<p >If you want to handle a slash command, you should also attach your program to the <code>on_slashcommand</code> event (<a class="el" href="classdpp_1_1cluster.html#a540047f8a4795e12c5468ce91ee121b6" title="Called when a slash command is issued. Only ctxm_chat_input types of interaction are routed to this e...">dpp::cluster::on_slashcommand</a>) which is the same as the Discord.js <code>interactionCreate</code> event. Lets add this to the program before the <code>on_ready</code> event:</p>
+<p >If you want to handle a slash command, you should also attach your program to the <code>on_slashcommand</code> event (<a class="el" href="classdpp_1_1cluster.html#a540047f8a4795e12c5468ce91ee121b6" title="Called when a slash command is issued. Only ctxm_chat_input types of interaction are routed to this e...">dpp::cluster::on_slashcommand</a>) which is basically the same as the Discord.js <code>interactionCreate</code> event. Lets add this to the program before the <code>on_ready</code> event:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">const</span> std::string    BOT_TOKEN    = <span class="stringliteral">&quot;add your token here&quot;</span>;</div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('firstbot.html',''); initResizable(); }
 <div class="line">    }</div>
 <div class="line">});</div>
 </div><!-- fragment --><p >This code is simply comparing the command name <code>event.command.get_command_name()</code> (<a class="el" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140" title="Get the command name for a command interaction.">dpp::interaction::get_command_name</a>) against the value in a constant string value <code>"ping"</code>. If they match, then the <code>event.reply</code> method is called.</p>
-<p >The <code>event.reply</code> function (dpp::interaction_crete_t::reply) replies to a slash command with a message. There are many ways to call this function to send embed messages, upload files, and more, but for this simple demonstration we will just send some message text.</p>
+<p >The <code>event.reply</code> function (<a class="el" href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493" title="Acknowledge interaction without displaying a message to the user, for use with button and select menu...">dpp::slashcommand_t::reply</a>) replies to a slash command with a message. There are many ways to call this function to send embed messages, upload files, and more, but for this simple demonstration we will just send some message text.</p>
 <h2><a class="anchor" id="autotoc_md45"></a>
 6. Add code to start the bot!</h2>
 <p >To make the bot start, we must call the cluster::start method, e.g. in our program by using <code>bot.start(false)</code>.</p>
