@@ -2,7 +2,7 @@ var searchData=
 [
   ['cluster_0',['cluster',['../classdpp_1_1discord__client.html#a836b658e110edfcbb21ea88b2ad90e90',1,'dpp::discord_client']]],
   ['colors_1',['colors',['../namespacedpp_1_1colors.html',1,'dpp']]],
-  ['d_2b_2b_20developer_20documentation_2',['D++ Developer Documentation',['../index.html',1,'']]],
+  ['d_2b_2b_3a_20a_20c_2b_2b_20discord_20api_20library_20for_20bots_2',['D++: A C++ Discord API Library for Bots',['../index.html',1,'']]],
   ['d_5fstream_3',['d_stream',['../classdpp_1_1zlibcontext.html#a9d39a0ef94d09fc1f9eece55d1134f46',1,'dpp::zlibcontext']]],
   ['dark_5fgoldenrod_4',['dark_goldenrod',['../namespacedpp_1_1colors.html#ab18db448d7caf2ea8233c8be58fc9943',1,'dpp::colors']]],
   ['dark_5fgray_5',['dark_gray',['../namespacedpp_1_1colors.html#a864d7691d6d562a66200e01ef43e2ef9',1,'dpp::colors']]],
