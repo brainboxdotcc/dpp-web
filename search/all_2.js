@@ -7,7 +7,7 @@ var searchData=
   ['banner_5fasset_5fid_4',['banner_asset_id',['../structdpp_1_1sticker__pack.html#a1f2430ab0a0bebabe48954017ef4a003',1,'dpp::sticker_pack']]],
   ['banning_5fguild_5',['banning_guild',['../structdpp_1_1guild__ban__add__t.html#a205babd5bfbb4ed9810d824d28711536',1,'dpp::guild_ban_add_t']]],
   ['base64_5fencode_6',['base64_encode',['../namespacedpp.html#a6115ff18830a756af0cc2dfd3ae1d763',1,'dpp']]],
-  ['base_5fpermissions_7',['base_permissions',['../classdpp_1_1guild.html#a0efc24108bb872be9be88cf26bc5af28',1,'dpp::guild']]],
+  ['base_5fpermissions_7',['base_permissions',['../classdpp_1_1guild.html#a869cc1997f9ed5da3368f790006eeba6',1,'dpp::guild']]],
   ['bismark_8',['bismark',['../namespacedpp_1_1colors.html#a79ea4166d5b5fde33dc6af4192081174',1,'dpp::colors']]],
   ['bitrate_9',['bitrate',['../classdpp_1_1channel.html#ab32308d8281aef6bfe4d5a6538c6306e',1,'dpp::channel']]],
   ['black_10',['black',['../namespacedpp_1_1colors.html#a659100c77ba5f4bf28c57a629d80e90f',1,'dpp::colors']]],

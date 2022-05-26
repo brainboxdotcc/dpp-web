@@ -202,6 +202,7 @@ var annotated_dup =
       [ "openssl_connection", "classdpp_1_1openssl__connection.html", "classdpp_1_1openssl__connection" ],
       [ "param_info", "structdpp_1_1param__info.html", "structdpp_1_1param__info" ],
       [ "parse_exception", "classdpp_1_1parse__exception.html", "classdpp_1_1parse__exception" ],
+      [ "permission", "classdpp_1_1permission.html", "classdpp_1_1permission" ],
       [ "permission_overwrite", "structdpp_1_1permission__overwrite.html", "structdpp_1_1permission__overwrite" ],
       [ "presence", "classdpp_1_1presence.html", "classdpp_1_1presence" ],
       [ "presence_update_t", "structdpp_1_1presence__update__t.html", "structdpp_1_1presence__update__t" ],

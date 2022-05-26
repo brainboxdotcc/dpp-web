@@ -2,7 +2,7 @@ var classdpp_1_1guild =
 [
     [ "guild", "classdpp_1_1guild.html#aeae6599054436a5a66e07683032089dc", null ],
     [ "~guild", "classdpp_1_1guild.html#a7e494da5ab1aaaddae4d588849ea9f14", null ],
-    [ "base_permissions", "classdpp_1_1guild.html#a0efc24108bb872be9be88cf26bc5af28", null ],
+    [ "base_permissions", "classdpp_1_1guild.html#a869cc1997f9ed5da3368f790006eeba6", null ],
     [ "build_json", "classdpp_1_1guild.html#ac61dbbc6e4c64edd19a96a7ce44d9ab9", null ],
     [ "connect_member_voice", "classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e", null ],
     [ "fill_from_json", "classdpp_1_1guild.html#af180ee5682802b64c79d2dc8abc7c9cd", null ],
@@ -44,7 +44,7 @@ var classdpp_1_1guild =
     [ "is_welcome_screen_enabled", "classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e", null ],
     [ "operator!=", "classdpp_1_1guild.html#a9f086ed62419d373646e5d0e63667fd5", null ],
     [ "operator==", "classdpp_1_1guild.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
-    [ "permission_overwrites", "classdpp_1_1guild.html#af9f1c71e0d491f2b34079888cadc9dcf", null ],
+    [ "permission_overwrites", "classdpp_1_1guild.html#a8b64413de941343cad6252226e3ba461", null ],
     [ "rehash_members", "classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac", null ],
     [ "set_name", "classdpp_1_1guild.html#a2aa137d0bad0143fc22c0e9b45df2540", null ],
     [ "widget_enabled", "classdpp_1_1guild.html#afdfe3c2bd4025d259b42dedddc2301a1", null ],

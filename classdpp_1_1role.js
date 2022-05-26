@@ -72,7 +72,7 @@ var classdpp_1_1role =
     [ "image_data", "classdpp_1_1role.html#ade838f66e78b524c5c14d30188e08281", null ],
     [ "integration_id", "classdpp_1_1role.html#aa44718ae47c00bcf2008366218646572", null ],
     [ "name", "classdpp_1_1role.html#a6451e41576902faa14d0394d47d19934", null ],
-    [ "permissions", "classdpp_1_1role.html#ad1d79b737f5e7d2cc71238068fc36ad4", null ],
+    [ "permissions", "classdpp_1_1role.html#ad6deb5559a2378196b92e496c4db501c", null ],
     [ "position", "classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958", null ],
     [ "unicode_emoji", "classdpp_1_1role.html#ad84006ea16f3dc59cfd67559a60c5d10", null ]
 ];

@@ -19,7 +19,7 @@ var classdpp_1_1slashcommand =
     [ "set_name", "classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353", null ],
     [ "set_type", "classdpp_1_1slashcommand.html#aa1095faeeacc9c711c9a1e93ff883bfe", null ],
     [ "application_id", "classdpp_1_1slashcommand.html#a68823472ad357bc69759212f6ebe1a82", null ],
-    [ "default_member_permissions", "classdpp_1_1slashcommand.html#a8d208b390809217a84b0e22ed0de2a4d", null ],
+    [ "default_member_permissions", "classdpp_1_1slashcommand.html#ab12b66d2e3c741f0c3e2798895a7aa64", null ],
     [ "default_permission", "classdpp_1_1slashcommand.html#a464b5758679dd76d9603cea18540021b", null ],
     [ "description", "classdpp_1_1slashcommand.html#a9bdfc4a4e6121349903f7ab28010691a", null ],
     [ "description_localizations", "classdpp_1_1slashcommand.html#aa8703ae685b1a155a53640bb51959eeb", null ],

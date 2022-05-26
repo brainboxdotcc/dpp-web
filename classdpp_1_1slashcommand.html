@@ -214,9 +214,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa8703ae685b1a155a53640bb51959eeb"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1slashcommand.html#aa8703ae685b1a155a53640bb51959eeb">description_localizations</a></td></tr>
 <tr class="memdesc:aa8703ae685b1a155a53640bb51959eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Localisations of command description.  <a href="classdpp_1_1slashcommand.html#aa8703ae685b1a155a53640bb51959eeb">More...</a><br /></td></tr>
 <tr class="separator:aa8703ae685b1a155a53640bb51959eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d208b390809217a84b0e22ed0de2a4d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1slashcommand.html#a8d208b390809217a84b0e22ed0de2a4d">default_member_permissions</a></td></tr>
-<tr class="memdesc:a8d208b390809217a84b0e22ed0de2a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default permissions of this command on a guild. D++ defaults this to p_use_application_commands.  <a href="classdpp_1_1slashcommand.html#a8d208b390809217a84b0e22ed0de2a4d">More...</a><br /></td></tr>
-<tr class="separator:a8d208b390809217a84b0e22ed0de2a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12b66d2e3c741f0c3e2798895a7aa64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1permission.html">permission</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1slashcommand.html#ab12b66d2e3c741f0c3e2798895a7aa64">default_member_permissions</a></td></tr>
+<tr class="memdesc:ab12b66d2e3c741f0c3e2798895a7aa64"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default permissions of this command on a guild. D++ defaults this to p_use_application_commands.  <a href="classdpp_1_1slashcommand.html#ab12b66d2e3c741f0c3e2798895a7aa64">More...</a><br /></td></tr>
+<tr class="separator:ab12b66d2e3c741f0c3e2798895a7aa64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2a49299f059be2a8c48250470462325"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1slashcommand.html#ad2a49299f059be2a8c48250470462325">dm_permission</a></td></tr>
 <tr class="memdesc:ad2a49299f059be2a8c48250470462325"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this command should be allowed in a DM D++ defaults this to false. Cannot be set to true in a guild command, only a global command.  <a href="classdpp_1_1slashcommand.html#ad2a49299f059be2a8c48250470462325">More...</a><br /></td></tr>
 <tr class="separator:ad2a49299f059be2a8c48250470462325"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -656,8 +656,13 @@ false objects are not the same id </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>You can set it to 0 to disable the command for everyone except admins by default </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>slashcommand&amp; reference to self </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You can set it to 0 to disable the command for everyone except admins by default</dd></dl>
+<p><b>Example:</b></p>
+<div class="fragment"><div class="line">command.set_default_permissions(<a class="code hl_enumvalue" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a2fc44537c377d2b8f1d0038fb981d7b1">dpp::p_manage_roles</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7af2cc3c251fd4d3a180b932220681c8c7">dpp::p_manage_nicknames</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a18b5244cfb592afca2659104e694aff4">dpp::p_manage_guild</a>);</div>
+<div class="ttc" id="anamespacedpp_html_a64f16cd622b3a09ae96803ba07fa75b7a18b5244cfb592afca2659104e694aff4"><div class="ttname"><a href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a18b5244cfb592afca2659104e694aff4">dpp::p_manage_guild</a></div><div class="ttdeci">@ p_manage_guild</div><div class="ttdoc">allows management and editing of the guild</div><div class="ttdef"><b>Definition:</b> permissions.h:35</div></div>
+<div class="ttc" id="anamespacedpp_html_a64f16cd622b3a09ae96803ba07fa75b7a2fc44537c377d2b8f1d0038fb981d7b1"><div class="ttname"><a href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a2fc44537c377d2b8f1d0038fb981d7b1">dpp::p_manage_roles</a></div><div class="ttdeci">@ p_manage_roles</div><div class="ttdoc">allows management and editing of roles</div><div class="ttdef"><b>Definition:</b> permissions.h:58</div></div>
+<div class="ttc" id="anamespacedpp_html_a64f16cd622b3a09ae96803ba07fa75b7af2cc3c251fd4d3a180b932220681c8c7"><div class="ttname"><a href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7af2cc3c251fd4d3a180b932220681c8c7">dpp::p_manage_nicknames</a></div><div class="ttdeci">@ p_manage_nicknames</div><div class="ttdoc">allows for modification of other users nicknames</div><div class="ttdef"><b>Definition:</b> permissions.h:57</div></div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>slashcommand&amp; reference to self </dd></dl>
 
 </div>
 </div>
@@ -789,14 +794,14 @@ false objects are not the same id </dd></dl>
 
 </div>
 </div>
-<a id="a8d208b390809217a84b0e22ed0de2a4d" name="a8d208b390809217a84b0e22ed0de2a4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d208b390809217a84b0e22ed0de2a4d">&#9670;&nbsp;</a></span>default_member_permissions</h2>
+<a id="ab12b66d2e3c741f0c3e2798895a7aa64" name="ab12b66d2e3c741f0c3e2798895a7aa64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12b66d2e3c741f0c3e2798895a7aa64">&#9670;&nbsp;</a></span>default_member_permissions</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t dpp::slashcommand::default_member_permissions</td>
+          <td class="memname"><a class="el" href="classdpp_1_1permission.html">permission</a> dpp::slashcommand::default_member_permissions</td>
         </tr>
       </table>
 </div><div class="memdoc">

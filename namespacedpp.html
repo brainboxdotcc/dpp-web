@@ -527,8 +527,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1parse__exception.html">parse_exception</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents inability to parse data, usually caused by malformed JSON or ETF.  <a href="classdpp_1_1parse__exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1permission.html">permission</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a permission bitmask (refer to enum <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>) which are hold in an uint64_t.  <a href="classdpp_1_1permission.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1permission__overwrite.html">permission_overwrite</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">channel permission overwrites  <a href="structdpp_1_1permission__overwrite.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel permission overwrites.  <a href="structdpp_1_1permission__overwrite.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1presence.html">presence</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents user presence, e.g. what game they are playing and if they are online.  <a href="classdpp_1_1presence.html#details">More...</a><br /></td></tr>
@@ -828,6 +831,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4641626be7775de0b8b63a6e68d0934e"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a></td></tr>
 <tr class="memdesc:a4641626be7775de0b8b63a6e68d0934e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A returned event handle for an event which was attached.  <a href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">More...</a><br /></td></tr>
 <tr class="separator:a4641626be7775de0b8b63a6e68d0934e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9fe4e502a90f9ffec8b90888a587e6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6d9fe4e502a90f9ffec8b90888a587e6">role_permissions</a> = <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7">permissions</a></td></tr>
+<tr class="memdesc:a6d9fe4e502a90f9ffec8b90888a587e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various discord permissions.  <a href="namespacedpp.html#a6d9fe4e502a90f9ffec8b90888a587e6">More...</a><br /></td></tr>
+<tr class="separator:a6d9fe4e502a90f9ffec8b90888a587e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71f7e347422516d1022707f1d3e5b1c"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, <a class="el" href="classdpp_1_1presence.html">presence</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa71f7e347422516d1022707f1d3e5b1c">presence_map</a></td></tr>
 <tr class="separator:aa71f7e347422516d1022707f1d3e5b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3249e99494d04bb4be50341f474621e"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae3249e99494d04bb4be50341f474621e">http_completion_event</a></td></tr>
@@ -1389,6 +1395,62 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a7d48d478ccc3bffb34637bdb48f629c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log levels.  <a href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">More...</a><br /></td></tr>
 <tr class="separator:a7d48d478ccc3bffb34637bdb48f629c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f16cd622b3a09ae96803ba07fa75b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7">permissions</a> : uint64_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a6a410bc90243712cf71cb8c39a11ebab">p_create_instant_invite</a> = 0x00000000001
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ae57cb8bf1870f74f2820f84255ca8104">p_kick_members</a> = 0x00000000002
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a6c9849fc7380edaf4ab8f169c2f4cc82">p_ban_members</a> = 0x00000000004
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a43f62c967b9b16b49c315a0b23f86039">p_administrator</a> = 0x00000000008
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7adc5505422542cd70bc9b77d8ac672fbc">p_manage_channels</a> = 0x00000000010
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a18b5244cfb592afca2659104e694aff4">p_manage_guild</a> = 0x00000000020
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7aef865fd4526947d2c9195386769a021c">p_add_reactions</a> = 0x00000000040
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1491e4917cb525e97df238b995cd57fc">p_view_audit_log</a> = 0x00000000080
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7aff4b56b63ea738a7e62b3f7372662ff9">p_priority_speaker</a> = 0x00000000100
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afc77a3132f5a3f615ada9a19c486dec9">p_stream</a> = 0x00000000200
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a5ca9e89b32af806f7c0c179c3bdfb1ad">p_view_channel</a> = 0x00000000400
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ad410586df8dba6f62b7770f1d08d3b79">p_send_messages</a> = 0x00000000800
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a3d621da851d24381179506bef573fae6">p_send_tts_messages</a> = 0x00000001000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7aefd6d8454b40cdaa9c01a86038559988">p_manage_messages</a> = 0x00000002000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1298ec58bdd34875c6ce723109637cf8">p_embed_links</a> = 0x00000004000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7af68496d326e48c4e8fb8396b56711650">p_attach_files</a> = 0x00000008000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a808dee0401adefdb0ffcd0b5364f8369">p_read_message_history</a> = 0x00000010000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a6d810371ed1b4b2ec4fd50e7e2210104">p_mention_everyone</a> = 0x00000020000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a65d4c2c30983c92fc6c47748b5d50261">p_use_external_emojis</a> = 0x00000040000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a4ffb9d1a4e882b865dbde6f7b2c8f11b">p_view_guild_insights</a> = 0x00000080000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7aa9d2af8bc1c498854bdd4a9f748d5dd5">p_connect</a> = 0x00000100000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a259ccc1aa795d6c3e91fd27ca26064e7">p_speak</a> = 0x00000200000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afc617e73d51078781873de54d56f2a9a">p_mute_members</a> = 0x00000400000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a10433f34ee13298e9c51f5e9b7024934">p_deafen_members</a> = 0x00000800000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a235c2b4cc39caac24ae439231e8575e2">p_move_members</a> = 0x00001000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7af51108cc668e552eadfa543d404904a8">p_use_vad</a> = 0x00002000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a61d9c9e5e9e0ce1808219c1bae1d501c">p_change_nickname</a> = 0x00004000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7af2cc3c251fd4d3a180b932220681c8c7">p_manage_nicknames</a> = 0x00008000000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a2fc44537c377d2b8f1d0038fb981d7b1">p_manage_roles</a> = 0x00010000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a549b4abc6dada6f0bf90867796811022">p_manage_webhooks</a> = 0x00020000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ad691e887806c25155195bee70d772311">p_manage_emojis_and_stickers</a> = 0x00040000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ae628847e2db7d4b3d986d6546efde812">p_use_application_commands</a> = 0x00080000000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a36d490ca8b4746a76b4982dfa03d7396">p_request_to_speak</a> = 0x00100000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a61f9317f8737db94a3dfaf0aedc0a5a4">p_manage_events</a> = 0x00200000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ad89dbe2fc4c28f357e8fe579a1ad962b">p_manage_threads</a> = 0x00400000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a32c172d9953bb8cf72dea1a33762eddb">p_create_public_threads</a> = 0x00800000000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a49988d7e19bd664514046a44ae8d6f34">p_create_private_threads</a> = 0x01000000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ac53f7e2ab8f8b46f48943d281bc6c5b3">p_use_external_stickers</a> = 0x02000000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a5fe142c8d6eacec5ce80b3b42476d937">p_send_messages_in_threads</a> = 0x04000000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a04df677383ab1edc2e224726c48a6f80">p_use_embedded_activities</a> = 0x08000000000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ae54b883c0448ef564f34ed1fcf50fdb2">p_moderate_members</a> = 0x10000000000
+<br />
+ }</td></tr>
+<tr class="memdesc:a64f16cd622b3a09ae96803ba07fa75b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various discord permissions.  <a href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7">More...</a><br /></td></tr>
+<tr class="separator:a64f16cd622b3a09ae96803ba07fa75b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a953f1484a5140481ffab2b248618fb22"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a953f1484a5140481ffab2b248618fb22">presence_flags</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a953f1484a5140481ffab2b248618fb22adbf7e907b0a558eafd5b8ecffa3923e0">p_desktop_online</a> = 0b00000001
 , <a class="el" href="namespacedpp.html#a953f1484a5140481ffab2b248618fb22a515104603cf3e7d2836adf89eb2750e4">p_desktop_dnd</a> = 0b00000010
@@ -1481,62 +1543,6 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026">r_premium_subscriber</a> = 0b00001000
  }</td></tr>
 <tr class="separator:af803e69eddf23c5862947295f3df5d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b8b5573bf936e034d33a7238fe5604f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f">role_permissions</a> : uint64_t { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab">p_create_instant_invite</a> = 0x00000000001
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae57cb8bf1870f74f2820f84255ca8104">p_kick_members</a> = 0x00000000002
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6c9849fc7380edaf4ab8f169c2f4cc82">p_ban_members</a> = 0x00000000004
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa43f62c967b9b16b49c315a0b23f86039">p_administrator</a> = 0x00000000008
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fadc5505422542cd70bc9b77d8ac672fbc">p_manage_channels</a> = 0x00000000010
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa18b5244cfb592afca2659104e694aff4">p_manage_guild</a> = 0x00000000020
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faef865fd4526947d2c9195386769a021c">p_add_reactions</a> = 0x00000000040
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa1491e4917cb525e97df238b995cd57fc">p_view_audit_log</a> = 0x00000000080
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faff4b56b63ea738a7e62b3f7372662ff9">p_priority_speaker</a> = 0x00000000100
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fafc77a3132f5a3f615ada9a19c486dec9">p_stream</a> = 0x00000000200
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5ca9e89b32af806f7c0c179c3bdfb1ad">p_view_channel</a> = 0x00000000400
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad410586df8dba6f62b7770f1d08d3b79">p_send_messages</a> = 0x00000000800
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa3d621da851d24381179506bef573fae6">p_send_tts_messages</a> = 0x00000001000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faefd6d8454b40cdaa9c01a86038559988">p_manage_messages</a> = 0x00000002000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa1298ec58bdd34875c6ce723109637cf8">p_embed_links</a> = 0x00000004000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faf68496d326e48c4e8fb8396b56711650">p_attach_files</a> = 0x00000008000
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa808dee0401adefdb0ffcd0b5364f8369">p_read_message_history</a> = 0x00000010000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa6d810371ed1b4b2ec4fd50e7e2210104">p_mention_everyone</a> = 0x00000020000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa65d4c2c30983c92fc6c47748b5d50261">p_use_external_emojis</a> = 0x00000040000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa4ffb9d1a4e882b865dbde6f7b2c8f11b">p_view_guild_insights</a> = 0x00000080000
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faa9d2af8bc1c498854bdd4a9f748d5dd5">p_connect</a> = 0x00000100000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa259ccc1aa795d6c3e91fd27ca26064e7">p_speak</a> = 0x00000200000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fafc617e73d51078781873de54d56f2a9a">p_mute_members</a> = 0x00000400000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa10433f34ee13298e9c51f5e9b7024934">p_deafen_members</a> = 0x00000800000
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa235c2b4cc39caac24ae439231e8575e2">p_move_members</a> = 0x00001000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faf51108cc668e552eadfa543d404904a8">p_use_vad</a> = 0x00002000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa61d9c9e5e9e0ce1808219c1bae1d501c">p_change_nickname</a> = 0x00004000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604faf2cc3c251fd4d3a180b932220681c8c7">p_manage_nicknames</a> = 0x00008000000
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa2fc44537c377d2b8f1d0038fb981d7b1">p_manage_roles</a> = 0x00010000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa549b4abc6dada6f0bf90867796811022">p_manage_webhooks</a> = 0x00020000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad691e887806c25155195bee70d772311">p_manage_emojis_and_stickers</a> = 0x00040000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae628847e2db7d4b3d986d6546efde812">p_use_application_commands</a> = 0x00080000000
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa36d490ca8b4746a76b4982dfa03d7396">p_request_to_speak</a> = 0x00100000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa61f9317f8737db94a3dfaf0aedc0a5a4">p_manage_events</a> = 0x00200000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b">p_manage_threads</a> = 0x00400000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa32c172d9953bb8cf72dea1a33762eddb">p_create_public_threads</a> = 0x00800000000
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34">p_create_private_threads</a> = 0x01000000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3">p_use_external_stickers</a> = 0x02000000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937">p_send_messages_in_threads</a> = 0x04000000000
-, <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fa04df677383ab1edc2e224726c48a6f80">p_use_embedded_activities</a> = 0x08000000000
-, <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fae54b883c0448ef564f34ed1fcf50fdb2">p_moderate_members</a> = 0x10000000000
-<br />
- }</td></tr>
-<tr class="memdesc:a2b8b5573bf936e034d33a7238fe5604f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various discord permissions.  <a href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f">More...</a><br /></td></tr>
-<tr class="separator:a2b8b5573bf936e034d33a7238fe5604f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6add40f37f2f043dede513edebaa67bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6add40f37f2f043dede513edebaa67bd">event_privacy_level</a> : uint8_t { <a class="el" href="namespacedpp.html#a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959">ep_guild_only</a> = 2
  }</td></tr>
 <tr class="memdesc:a6add40f37f2f043dede513edebaa67bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the privacy of an event.  <a href="namespacedpp.html#a6add40f37f2f043dede513edebaa67bd">More...</a><br /></td></tr>
@@ -1676,7 +1682,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a77d77e1ffffe22979d93132a7acee1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="structdpp_1_1thread__metadata.html" title="metadata for threads">thread_metadata</a> object to json.  <a href="namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3">More...</a><br /></td></tr>
 <tr class="separator:a77d77e1ffffe22979d93132a7acee1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1permission__overwrite.html">permission_overwrite</a> &amp;po)</td></tr>
-<tr class="memdesc:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="structdpp_1_1permission__overwrite.html" title="channel permission overwrites">permission_overwrite</a> object to json.  <a href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">More...</a><br /></td></tr>
+<tr class="memdesc:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="structdpp_1_1permission__overwrite.html" title="Channel permission overwrites.">permission_overwrite</a> object to json.  <a href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">More...</a><br /></td></tr>
 <tr class="separator:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae349654a9b224581abbb20967e55e8af"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae349654a9b224581abbb20967e55e8af"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; void(const T &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae349654a9b224581abbb20967e55e8af">make_intent_warning</a> (<a class="el" href="classdpp_1_1cluster.html">cluster</a> *cl, const <a class="el" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5">intents</a> required_intent, const std::string &amp;<a class="el" href="structdpp_1_1message.html">message</a>)</td></tr>
@@ -2032,7 +2038,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The function definition for a command handler. Expects a command name string, and a list of command parameters. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>commandhandler and message commands are deprecated and <a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild.">dpp::slashcommand</a> is encouraged as a replacement. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>commandhandler and message commands are deprecated and <a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild.">dpp::slashcommand</a> is encouraged as a replacement. </dd></dl>
 
 </div>
 </div>
@@ -2456,6 +2462,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >A group of roles </p>
+
+</div>
+</div>
+<a id="a6d9fe4e502a90f9ffec8b90888a587e6" name="a6d9fe4e502a90f9ffec8b90888a587e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9fe4e502a90f9ffec8b90888a587e6">&#9670;&nbsp;</a></span>role_permissions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7">dpp::role_permissions</a> = typedef <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7">permissions</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the various discord permissions. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -4117,6 +4140,106 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a64f16cd622b3a09ae96803ba07fa75b7" name="a64f16cd622b3a09ae96803ba07fa75b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f16cd622b3a09ae96803ba07fa75b7">&#9670;&nbsp;</a></span>permissions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7">dpp::permissions</a> : uint64_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the various discord permissions. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a6a410bc90243712cf71cb8c39a11ebab" name="a64f16cd622b3a09ae96803ba07fa75b7a6a410bc90243712cf71cb8c39a11ebab"></a>p_create_instant_invite&#160;</td><td class="fielddoc"><p >allows creation of instant invites </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7ae57cb8bf1870f74f2820f84255ca8104" name="a64f16cd622b3a09ae96803ba07fa75b7ae57cb8bf1870f74f2820f84255ca8104"></a>p_kick_members&#160;</td><td class="fielddoc"><p >allows kicking members </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a6c9849fc7380edaf4ab8f169c2f4cc82" name="a64f16cd622b3a09ae96803ba07fa75b7a6c9849fc7380edaf4ab8f169c2f4cc82"></a>p_ban_members&#160;</td><td class="fielddoc"><p >allows banning members </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a43f62c967b9b16b49c315a0b23f86039" name="a64f16cd622b3a09ae96803ba07fa75b7a43f62c967b9b16b49c315a0b23f86039"></a>p_administrator&#160;</td><td class="fielddoc"><p >allows all permissions and bypasses channel permission overwrites </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7adc5505422542cd70bc9b77d8ac672fbc" name="a64f16cd622b3a09ae96803ba07fa75b7adc5505422542cd70bc9b77d8ac672fbc"></a>p_manage_channels&#160;</td><td class="fielddoc"><p >allows management and editing of channels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a18b5244cfb592afca2659104e694aff4" name="a64f16cd622b3a09ae96803ba07fa75b7a18b5244cfb592afca2659104e694aff4"></a>p_manage_guild&#160;</td><td class="fielddoc"><p >allows management and editing of the guild </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7aef865fd4526947d2c9195386769a021c" name="a64f16cd622b3a09ae96803ba07fa75b7aef865fd4526947d2c9195386769a021c"></a>p_add_reactions&#160;</td><td class="fielddoc"><p >allows for the addition of reactions to messages </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a1491e4917cb525e97df238b995cd57fc" name="a64f16cd622b3a09ae96803ba07fa75b7a1491e4917cb525e97df238b995cd57fc"></a>p_view_audit_log&#160;</td><td class="fielddoc"><p >allows for viewing of audit logs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7aff4b56b63ea738a7e62b3f7372662ff9" name="a64f16cd622b3a09ae96803ba07fa75b7aff4b56b63ea738a7e62b3f7372662ff9"></a>p_priority_speaker&#160;</td><td class="fielddoc"><p >allows for using priority speaker in a voice channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7afc77a3132f5a3f615ada9a19c486dec9" name="a64f16cd622b3a09ae96803ba07fa75b7afc77a3132f5a3f615ada9a19c486dec9"></a>p_stream&#160;</td><td class="fielddoc"><p >allows the user to go live </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a5ca9e89b32af806f7c0c179c3bdfb1ad" name="a64f16cd622b3a09ae96803ba07fa75b7a5ca9e89b32af806f7c0c179c3bdfb1ad"></a>p_view_channel&#160;</td><td class="fielddoc"><p >allows guild members to view a channel, which includes reading messages in text channels and joining voice channels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7ad410586df8dba6f62b7770f1d08d3b79" name="a64f16cd622b3a09ae96803ba07fa75b7ad410586df8dba6f62b7770f1d08d3b79"></a>p_send_messages&#160;</td><td class="fielddoc"><p >allows for sending messages in a channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a3d621da851d24381179506bef573fae6" name="a64f16cd622b3a09ae96803ba07fa75b7a3d621da851d24381179506bef573fae6"></a>p_send_tts_messages&#160;</td><td class="fielddoc"><p >allows for sending of /tts messages </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7aefd6d8454b40cdaa9c01a86038559988" name="a64f16cd622b3a09ae96803ba07fa75b7aefd6d8454b40cdaa9c01a86038559988"></a>p_manage_messages&#160;</td><td class="fielddoc"><p >allows for deletion of other users messages </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a1298ec58bdd34875c6ce723109637cf8" name="a64f16cd622b3a09ae96803ba07fa75b7a1298ec58bdd34875c6ce723109637cf8"></a>p_embed_links&#160;</td><td class="fielddoc"><p >links sent by users with this permission will be auto-embedded </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7af68496d326e48c4e8fb8396b56711650" name="a64f16cd622b3a09ae96803ba07fa75b7af68496d326e48c4e8fb8396b56711650"></a>p_attach_files&#160;</td><td class="fielddoc"><p >allows for uploading images and files </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a808dee0401adefdb0ffcd0b5364f8369" name="a64f16cd622b3a09ae96803ba07fa75b7a808dee0401adefdb0ffcd0b5364f8369"></a>p_read_message_history&#160;</td><td class="fielddoc"><p >allows for reading of message history </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a6d810371ed1b4b2ec4fd50e7e2210104" name="a64f16cd622b3a09ae96803ba07fa75b7a6d810371ed1b4b2ec4fd50e7e2210104"></a>p_mention_everyone&#160;</td><td class="fielddoc"><p >allows for using the everyone and the here tag to notify users in a channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a65d4c2c30983c92fc6c47748b5d50261" name="a64f16cd622b3a09ae96803ba07fa75b7a65d4c2c30983c92fc6c47748b5d50261"></a>p_use_external_emojis&#160;</td><td class="fielddoc"><p >allows the usage of custom emojis from other servers </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a4ffb9d1a4e882b865dbde6f7b2c8f11b" name="a64f16cd622b3a09ae96803ba07fa75b7a4ffb9d1a4e882b865dbde6f7b2c8f11b"></a>p_view_guild_insights&#160;</td><td class="fielddoc"><p >allows for viewing guild insights </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7aa9d2af8bc1c498854bdd4a9f748d5dd5" name="a64f16cd622b3a09ae96803ba07fa75b7aa9d2af8bc1c498854bdd4a9f748d5dd5"></a>p_connect&#160;</td><td class="fielddoc"><p >allows for joining of a voice channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a259ccc1aa795d6c3e91fd27ca26064e7" name="a64f16cd622b3a09ae96803ba07fa75b7a259ccc1aa795d6c3e91fd27ca26064e7"></a>p_speak&#160;</td><td class="fielddoc"><p >allows for speaking in a voice channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7afc617e73d51078781873de54d56f2a9a" name="a64f16cd622b3a09ae96803ba07fa75b7afc617e73d51078781873de54d56f2a9a"></a>p_mute_members&#160;</td><td class="fielddoc"><p >allows for muting members in a voice channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a10433f34ee13298e9c51f5e9b7024934" name="a64f16cd622b3a09ae96803ba07fa75b7a10433f34ee13298e9c51f5e9b7024934"></a>p_deafen_members&#160;</td><td class="fielddoc"><p >allows for deafening of members in a voice channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a235c2b4cc39caac24ae439231e8575e2" name="a64f16cd622b3a09ae96803ba07fa75b7a235c2b4cc39caac24ae439231e8575e2"></a>p_move_members&#160;</td><td class="fielddoc"><p >allows for moving of members between voice channels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7af51108cc668e552eadfa543d404904a8" name="a64f16cd622b3a09ae96803ba07fa75b7af51108cc668e552eadfa543d404904a8"></a>p_use_vad&#160;</td><td class="fielddoc"><p >allows for using voice-activity-detection in a voice channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a61d9c9e5e9e0ce1808219c1bae1d501c" name="a64f16cd622b3a09ae96803ba07fa75b7a61d9c9e5e9e0ce1808219c1bae1d501c"></a>p_change_nickname&#160;</td><td class="fielddoc"><p >allows for modification of own nickname </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7af2cc3c251fd4d3a180b932220681c8c7" name="a64f16cd622b3a09ae96803ba07fa75b7af2cc3c251fd4d3a180b932220681c8c7"></a>p_manage_nicknames&#160;</td><td class="fielddoc"><p >allows for modification of other users nicknames </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a2fc44537c377d2b8f1d0038fb981d7b1" name="a64f16cd622b3a09ae96803ba07fa75b7a2fc44537c377d2b8f1d0038fb981d7b1"></a>p_manage_roles&#160;</td><td class="fielddoc"><p >allows management and editing of roles </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a549b4abc6dada6f0bf90867796811022" name="a64f16cd622b3a09ae96803ba07fa75b7a549b4abc6dada6f0bf90867796811022"></a>p_manage_webhooks&#160;</td><td class="fielddoc"><p >allows management and editing of webhooks </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7ad691e887806c25155195bee70d772311" name="a64f16cd622b3a09ae96803ba07fa75b7ad691e887806c25155195bee70d772311"></a>p_manage_emojis_and_stickers&#160;</td><td class="fielddoc"><p >allows management and editing of emojis and stickers </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7ae628847e2db7d4b3d986d6546efde812" name="a64f16cd622b3a09ae96803ba07fa75b7ae628847e2db7d4b3d986d6546efde812"></a>p_use_application_commands&#160;</td><td class="fielddoc"><p >allows members to use application commands, including slash commands and context menus </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a36d490ca8b4746a76b4982dfa03d7396" name="a64f16cd622b3a09ae96803ba07fa75b7a36d490ca8b4746a76b4982dfa03d7396"></a>p_request_to_speak&#160;</td><td class="fielddoc"><p >allows for requesting to speak in stage channels. (Discord: This permission is under active development and may be changed or removed.) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a61f9317f8737db94a3dfaf0aedc0a5a4" name="a64f16cd622b3a09ae96803ba07fa75b7a61f9317f8737db94a3dfaf0aedc0a5a4"></a>p_manage_events&#160;</td><td class="fielddoc"><p >allows for management (creation, updating, deleting, starting) of scheduled events </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7ad89dbe2fc4c28f357e8fe579a1ad962b" name="a64f16cd622b3a09ae96803ba07fa75b7ad89dbe2fc4c28f357e8fe579a1ad962b"></a>p_manage_threads&#160;</td><td class="fielddoc"><p >allows for deleting and archiving threads, and viewing all private threads </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a32c172d9953bb8cf72dea1a33762eddb" name="a64f16cd622b3a09ae96803ba07fa75b7a32c172d9953bb8cf72dea1a33762eddb"></a>p_create_public_threads&#160;</td><td class="fielddoc"><p >allows for creating public and announcement threads </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a49988d7e19bd664514046a44ae8d6f34" name="a64f16cd622b3a09ae96803ba07fa75b7a49988d7e19bd664514046a44ae8d6f34"></a>p_create_private_threads&#160;</td><td class="fielddoc"><p >allows for creating private threads </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7ac53f7e2ab8f8b46f48943d281bc6c5b3" name="a64f16cd622b3a09ae96803ba07fa75b7ac53f7e2ab8f8b46f48943d281bc6c5b3"></a>p_use_external_stickers&#160;</td><td class="fielddoc"><p >allows the usage of custom stickers from other servers </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a5fe142c8d6eacec5ce80b3b42476d937" name="a64f16cd622b3a09ae96803ba07fa75b7a5fe142c8d6eacec5ce80b3b42476d937"></a>p_send_messages_in_threads&#160;</td><td class="fielddoc"><p >allows for sending messages in threads </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a04df677383ab1edc2e224726c48a6f80" name="a64f16cd622b3a09ae96803ba07fa75b7a04df677383ab1edc2e224726c48a6f80"></a>p_use_embedded_activities&#160;</td><td class="fielddoc"><p >allows for using activities (applications with the EMBEDDED flag) in a voice channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7ae54b883c0448ef564f34ed1fcf50fdb2" name="a64f16cd622b3a09ae96803ba07fa75b7ae54b883c0448ef564f34ed1fcf50fdb2"></a>p_moderate_members&#160;</td><td class="fielddoc"><p >allows for timing out users to prevent them from sending or reacting to messages in chat and threads, and from speaking in voice and stage channels </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a953f1484a5140481ffab2b248618fb22" name="a953f1484a5140481ffab2b248618fb22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a953f1484a5140481ffab2b248618fb22">&#9670;&nbsp;</a></span>presence_flags</h2>
 
@@ -4198,7 +4321,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Represents voice regions for guilds and channels. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>Deprecated in favour of per-channel regions. Please use <a class="el" href="classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad" title="Voice region if set for voice channel, otherwise empty string.">channel::rtc_region</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>Deprecated in favour of per-channel regions. Please use <a class="el" href="classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad" title="Voice region if set for voice channel, otherwise empty string.">channel::rtc_region</a> instead. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313" name="a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313"></a>r_brazil&#160;</td><td class="fielddoc"><p >Brazil. </p>
 </td></tr>
@@ -4252,106 +4375,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26" name="af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26"></a>r_mentionable&#160;</td><td class="fielddoc"><p >Mentionable with a ping. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026" name="af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026"></a>r_premium_subscriber&#160;</td><td class="fielddoc"><p >This is set for the role given to nitro. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="a2b8b5573bf936e034d33a7238fe5604f" name="a2b8b5573bf936e034d33a7238fe5604f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b8b5573bf936e034d33a7238fe5604f">&#9670;&nbsp;</a></span>role_permissions</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604f">dpp::role_permissions</a> : uint64_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Represents the various discord permissions. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab" name="a2b8b5573bf936e034d33a7238fe5604fa6a410bc90243712cf71cb8c39a11ebab"></a>p_create_instant_invite&#160;</td><td class="fielddoc"><p >allows creation of instant invites </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fae57cb8bf1870f74f2820f84255ca8104" name="a2b8b5573bf936e034d33a7238fe5604fae57cb8bf1870f74f2820f84255ca8104"></a>p_kick_members&#160;</td><td class="fielddoc"><p >allows kicking members </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa6c9849fc7380edaf4ab8f169c2f4cc82" name="a2b8b5573bf936e034d33a7238fe5604fa6c9849fc7380edaf4ab8f169c2f4cc82"></a>p_ban_members&#160;</td><td class="fielddoc"><p >allows banning members </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa43f62c967b9b16b49c315a0b23f86039" name="a2b8b5573bf936e034d33a7238fe5604fa43f62c967b9b16b49c315a0b23f86039"></a>p_administrator&#160;</td><td class="fielddoc"><p >allows all permissions and bypasses channel permission overwrites </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fadc5505422542cd70bc9b77d8ac672fbc" name="a2b8b5573bf936e034d33a7238fe5604fadc5505422542cd70bc9b77d8ac672fbc"></a>p_manage_channels&#160;</td><td class="fielddoc"><p >allows management and editing of channels </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa18b5244cfb592afca2659104e694aff4" name="a2b8b5573bf936e034d33a7238fe5604fa18b5244cfb592afca2659104e694aff4"></a>p_manage_guild&#160;</td><td class="fielddoc"><p >allows management and editing of the guild </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604faef865fd4526947d2c9195386769a021c" name="a2b8b5573bf936e034d33a7238fe5604faef865fd4526947d2c9195386769a021c"></a>p_add_reactions&#160;</td><td class="fielddoc"><p >allows for the addition of reactions to messages </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa1491e4917cb525e97df238b995cd57fc" name="a2b8b5573bf936e034d33a7238fe5604fa1491e4917cb525e97df238b995cd57fc"></a>p_view_audit_log&#160;</td><td class="fielddoc"><p >allows for viewing of audit logs </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604faff4b56b63ea738a7e62b3f7372662ff9" name="a2b8b5573bf936e034d33a7238fe5604faff4b56b63ea738a7e62b3f7372662ff9"></a>p_priority_speaker&#160;</td><td class="fielddoc"><p >allows for using priority speaker in a voice channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fafc77a3132f5a3f615ada9a19c486dec9" name="a2b8b5573bf936e034d33a7238fe5604fafc77a3132f5a3f615ada9a19c486dec9"></a>p_stream&#160;</td><td class="fielddoc"><p >allows the user to go live </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa5ca9e89b32af806f7c0c179c3bdfb1ad" name="a2b8b5573bf936e034d33a7238fe5604fa5ca9e89b32af806f7c0c179c3bdfb1ad"></a>p_view_channel&#160;</td><td class="fielddoc"><p >allows guild members to view a channel, which includes reading messages in text channels and joining voice channels </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fad410586df8dba6f62b7770f1d08d3b79" name="a2b8b5573bf936e034d33a7238fe5604fad410586df8dba6f62b7770f1d08d3b79"></a>p_send_messages&#160;</td><td class="fielddoc"><p >allows for sending messages in a channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa3d621da851d24381179506bef573fae6" name="a2b8b5573bf936e034d33a7238fe5604fa3d621da851d24381179506bef573fae6"></a>p_send_tts_messages&#160;</td><td class="fielddoc"><p >allows for sending of /tts messages </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604faefd6d8454b40cdaa9c01a86038559988" name="a2b8b5573bf936e034d33a7238fe5604faefd6d8454b40cdaa9c01a86038559988"></a>p_manage_messages&#160;</td><td class="fielddoc"><p >allows for deletion of other users messages </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa1298ec58bdd34875c6ce723109637cf8" name="a2b8b5573bf936e034d33a7238fe5604fa1298ec58bdd34875c6ce723109637cf8"></a>p_embed_links&#160;</td><td class="fielddoc"><p >links sent by users with this permission will be auto-embedded </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604faf68496d326e48c4e8fb8396b56711650" name="a2b8b5573bf936e034d33a7238fe5604faf68496d326e48c4e8fb8396b56711650"></a>p_attach_files&#160;</td><td class="fielddoc"><p >allows for uploading images and files </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa808dee0401adefdb0ffcd0b5364f8369" name="a2b8b5573bf936e034d33a7238fe5604fa808dee0401adefdb0ffcd0b5364f8369"></a>p_read_message_history&#160;</td><td class="fielddoc"><p >allows for reading of message history </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa6d810371ed1b4b2ec4fd50e7e2210104" name="a2b8b5573bf936e034d33a7238fe5604fa6d810371ed1b4b2ec4fd50e7e2210104"></a>p_mention_everyone&#160;</td><td class="fielddoc"><p >allows for using the everyone and the here tag to notify users in a channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa65d4c2c30983c92fc6c47748b5d50261" name="a2b8b5573bf936e034d33a7238fe5604fa65d4c2c30983c92fc6c47748b5d50261"></a>p_use_external_emojis&#160;</td><td class="fielddoc"><p >allows the usage of custom emojis from other servers </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa4ffb9d1a4e882b865dbde6f7b2c8f11b" name="a2b8b5573bf936e034d33a7238fe5604fa4ffb9d1a4e882b865dbde6f7b2c8f11b"></a>p_view_guild_insights&#160;</td><td class="fielddoc"><p >allows for viewing guild insights </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604faa9d2af8bc1c498854bdd4a9f748d5dd5" name="a2b8b5573bf936e034d33a7238fe5604faa9d2af8bc1c498854bdd4a9f748d5dd5"></a>p_connect&#160;</td><td class="fielddoc"><p >allows for joining of a voice channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa259ccc1aa795d6c3e91fd27ca26064e7" name="a2b8b5573bf936e034d33a7238fe5604fa259ccc1aa795d6c3e91fd27ca26064e7"></a>p_speak&#160;</td><td class="fielddoc"><p >allows for speaking in a voice channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fafc617e73d51078781873de54d56f2a9a" name="a2b8b5573bf936e034d33a7238fe5604fafc617e73d51078781873de54d56f2a9a"></a>p_mute_members&#160;</td><td class="fielddoc"><p >allows for muting members in a voice channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa10433f34ee13298e9c51f5e9b7024934" name="a2b8b5573bf936e034d33a7238fe5604fa10433f34ee13298e9c51f5e9b7024934"></a>p_deafen_members&#160;</td><td class="fielddoc"><p >allows for deafening of members in a voice channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa235c2b4cc39caac24ae439231e8575e2" name="a2b8b5573bf936e034d33a7238fe5604fa235c2b4cc39caac24ae439231e8575e2"></a>p_move_members&#160;</td><td class="fielddoc"><p >allows for moving of members between voice channels </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604faf51108cc668e552eadfa543d404904a8" name="a2b8b5573bf936e034d33a7238fe5604faf51108cc668e552eadfa543d404904a8"></a>p_use_vad&#160;</td><td class="fielddoc"><p >allows for using voice-activity-detection in a voice channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa61d9c9e5e9e0ce1808219c1bae1d501c" name="a2b8b5573bf936e034d33a7238fe5604fa61d9c9e5e9e0ce1808219c1bae1d501c"></a>p_change_nickname&#160;</td><td class="fielddoc"><p >allows for modification of own nickname </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604faf2cc3c251fd4d3a180b932220681c8c7" name="a2b8b5573bf936e034d33a7238fe5604faf2cc3c251fd4d3a180b932220681c8c7"></a>p_manage_nicknames&#160;</td><td class="fielddoc"><p >allows for modification of other users nicknames </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa2fc44537c377d2b8f1d0038fb981d7b1" name="a2b8b5573bf936e034d33a7238fe5604fa2fc44537c377d2b8f1d0038fb981d7b1"></a>p_manage_roles&#160;</td><td class="fielddoc"><p >allows management and editing of roles </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa549b4abc6dada6f0bf90867796811022" name="a2b8b5573bf936e034d33a7238fe5604fa549b4abc6dada6f0bf90867796811022"></a>p_manage_webhooks&#160;</td><td class="fielddoc"><p >allows management and editing of webhooks </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fad691e887806c25155195bee70d772311" name="a2b8b5573bf936e034d33a7238fe5604fad691e887806c25155195bee70d772311"></a>p_manage_emojis_and_stickers&#160;</td><td class="fielddoc"><p >allows management and editing of emojis and stickers </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fae628847e2db7d4b3d986d6546efde812" name="a2b8b5573bf936e034d33a7238fe5604fae628847e2db7d4b3d986d6546efde812"></a>p_use_application_commands&#160;</td><td class="fielddoc"><p >allows members to use application commands, including slash commands and context menus </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa36d490ca8b4746a76b4982dfa03d7396" name="a2b8b5573bf936e034d33a7238fe5604fa36d490ca8b4746a76b4982dfa03d7396"></a>p_request_to_speak&#160;</td><td class="fielddoc"><p >allows for requesting to speak in stage channels. (Discord: This permission is under active development and may be changed or removed.) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa61f9317f8737db94a3dfaf0aedc0a5a4" name="a2b8b5573bf936e034d33a7238fe5604fa61f9317f8737db94a3dfaf0aedc0a5a4"></a>p_manage_events&#160;</td><td class="fielddoc"><p >allows for management (creation, updating, deleting, starting) of scheduled events </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b" name="a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b"></a>p_manage_threads&#160;</td><td class="fielddoc"><p >allows for deleting and archiving threads, and viewing all private threads </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa32c172d9953bb8cf72dea1a33762eddb" name="a2b8b5573bf936e034d33a7238fe5604fa32c172d9953bb8cf72dea1a33762eddb"></a>p_create_public_threads&#160;</td><td class="fielddoc"><p >allows for creating public and announcement threads </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34" name="a2b8b5573bf936e034d33a7238fe5604fa49988d7e19bd664514046a44ae8d6f34"></a>p_create_private_threads&#160;</td><td class="fielddoc"><p >allows for creating private threads </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3" name="a2b8b5573bf936e034d33a7238fe5604fac53f7e2ab8f8b46f48943d281bc6c5b3"></a>p_use_external_stickers&#160;</td><td class="fielddoc"><p >allows the usage of custom stickers from other servers </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937" name="a2b8b5573bf936e034d33a7238fe5604fa5fe142c8d6eacec5ce80b3b42476d937"></a>p_send_messages_in_threads&#160;</td><td class="fielddoc"><p >allows for sending messages in threads </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fa04df677383ab1edc2e224726c48a6f80" name="a2b8b5573bf936e034d33a7238fe5604fa04df677383ab1edc2e224726c48a6f80"></a>p_use_embedded_activities&#160;</td><td class="fielddoc"><p >allows for using activities (applications with the EMBEDDED flag) in a voice channel </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2b8b5573bf936e034d33a7238fe5604fae54b883c0448ef564f34ed1fcf50fdb2" name="a2b8b5573bf936e034d33a7238fe5604fae54b883c0448ef564f34ed1fcf50fdb2"></a>p_moderate_members&#160;</td><td class="fielddoc"><p >allows for timing out users to prevent them from sending or reacting to messages in chat and threads, and from speaking in voice and stage channels </p>
 </td></tr>
 </table>
 
@@ -7426,7 +7449,7 @@ template&lt;typename T , class F , class... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Serialize a <a class="el" href="structdpp_1_1permission__overwrite.html" title="channel permission overwrites">permission_overwrite</a> object to json. </p>
+<p>Serialize a <a class="el" href="structdpp_1_1permission__overwrite.html" title="Channel permission overwrites.">permission_overwrite</a> object to json. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">j</td><td>JSON object to serialize to </td></tr>

@@ -9,7 +9,7 @@ var searchData=
   ['adding_5fguild_6',['adding_guild',['../structdpp_1_1guild__member__add__t.html#adc73c832775296a7a50a3fec448db63d',1,'dpp::guild_member_add_t']]],
   ['afk_5fchannel_5fid_7',['afk_channel_id',['../classdpp_1_1guild.html#afe32f37c1ac7dcde9933ba48e7b27130',1,'dpp::guild']]],
   ['afk_5ftimeout_8',['afk_timeout',['../classdpp_1_1guild.html#a624cb68654a2d32be54f4203835b0722',1,'dpp::guild']]],
-  ['allow_9',['allow',['../structdpp_1_1permission__overwrite.html#a38e3d8e91284eba62a01f77a1c134e49',1,'dpp::permission_overwrite']]],
+  ['allow_9',['allow',['../structdpp_1_1permission__overwrite.html#aa28a69be69953bfd037117c8afb0b067',1,'dpp::permission_overwrite']]],
   ['allowed_5fmentions_10',['allowed_mentions',['../structdpp_1_1message.html#a389f295110a630b2e3f076013b617111',1,'dpp::message']]],
   ['animated_11',['animated',['../structdpp_1_1select__option_1_1inner__select__emoji.html#aa81fe14ecba46fc45bd9607d4c1ef95a',1,'dpp::select_option::inner_select_emoji::animated()'],['../structdpp_1_1component_1_1inner__emoji.html#a2e23c4214aeb04ee0a7e89ce352634ea',1,'dpp::component::inner_emoji::animated()']]],
   ['app_12',['app',['../classdpp_1_1integration.html#ab3283de104da19b3371cf86adecc4ebb',1,'dpp::integration']]],
