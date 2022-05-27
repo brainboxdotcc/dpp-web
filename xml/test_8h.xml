@@ -1069,7 +1069,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="58" column="9" bodyfile="src/test.h" bodystart="58" bodyend="-1"/>
+        <location file="src/test.h" line="67" column="9" bodyfile="src/test.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1aa18fe28e98d0e509b094253cd60760b1" prot="public" static="no">
         <name>singleparam_api_test</name>
@@ -1078,20 +1078,22 @@
         <param><defname>return_type</defname></param>
         <param><defname>testname</defname></param>
         <initializer>	set_test(testname, false); \
-	bot.func_name (param, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
-		if (!cc.is_error()) { \
-			return_type g = std::get&lt;return_type&gt;(cc.value); \
-			if (g.id == param) { \
-				set_test(testname, true); \
+	if (!offline) { \
+		bot.func_name (param, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
+			if (!cc.is_error()) { \
+				return_type g = std::get&lt;return_type&gt;(cc.value); \
+				if (g.id == param) { \
+					set_test(testname, true); \
+				} else { \
+					bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
+					set_test(testname, false); \
+				} \
 			} else { \
 				bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
 				set_test(testname, false); \
 			} \
-		} else { \
-			bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
-			set_test(testname, false); \
-		} \
-	});</initializer>
+		}); \
+	}</initializer>
         <briefdescription>
 <para>Perform a test of a REST base API call with one parameter. </para>
         </briefdescription>
@@ -1099,7 +1101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="70" column="9" bodyfile="src/test.h" bodystart="70" bodyend="-1"/>
+        <location file="src/test.h" line="82" column="9" bodyfile="src/test.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1a722b02fae7ce199de1185d02bdce7eab" prot="public" static="no">
         <name>twoparam_api_test</name>
@@ -1109,20 +1111,22 @@
         <param><defname>return_type</defname></param>
         <param><defname>testname</defname></param>
         <initializer>	set_test(testname, false); \
-	bot.func_name (param1, param2, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
-		if (!cc.is_error()) { \
-			return_type g = std::get&lt;return_type&gt;(cc.value); \
-			if (g.id &gt; 0) { \
-				set_test(testname, true); \
+	if (!offline) { \
+		bot.func_name (param1, param2, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
+			if (!cc.is_error()) { \
+				return_type g = std::get&lt;return_type&gt;(cc.value); \
+				if (g.id &gt; 0) { \
+					set_test(testname, true); \
+				} else { \
+					bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
+					set_test(testname, false); \
+				} \
 			} else { \
 				bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
 				set_test(testname, false); \
 			} \
-		} else { \
-			bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
-			set_test(testname, false); \
-		} \
-	});</initializer>
+		}); \
+	}</initializer>
         <briefdescription>
 <para>Perform a test of a REST base API call with one parameter. </para>
         </briefdescription>
@@ -1130,7 +1134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="90" column="9" bodyfile="src/test.h" bodystart="90" bodyend="-1"/>
+        <location file="src/test.h" line="104" column="9" bodyfile="src/test.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1a8f5ef4bc59689b2f802b1b712efc5e2d" prot="public" static="no">
         <name>singleparam_api_test_list</name>
@@ -1139,20 +1143,22 @@
         <param><defname>return_type</defname></param>
         <param><defname>testname</defname></param>
         <initializer>	set_test(testname, false); \
-	bot.func_name (param, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
-		if (!cc.is_error()) { \
-			return_type g = std::get&lt;return_type&gt;(cc.value); \
-			if (g.size() &gt; 0) { \
-				set_test(testname, true); \
+	if (!offline) { \
+		bot.func_name (param, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
+			if (!cc.is_error()) { \
+				return_type g = std::get&lt;return_type&gt;(cc.value); \
+				if (g.size() &gt; 0) { \
+					set_test(testname, true); \
+				} else { \
+					set_test(testname, false); \
+					bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
+				} \
 			} else { \
 				set_test(testname, false); \
 				bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
 			} \
-		} else { \
-			set_test(testname, false); \
-			bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
-		} \
-	});</initializer>
+		}); \
+	}</initializer>
         <briefdescription>
 <para>Perform a test of a REST base API call with one parameter that returns a list. </para>
         </briefdescription>
@@ -1160,7 +1166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="110" column="9" bodyfile="src/test.h" bodystart="110" bodyend="-1"/>
+        <location file="src/test.h" line="126" column="9" bodyfile="src/test.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1a52282bda55f15a31c1fd2c64047713bf" prot="public" static="no">
         <name>multiparam_api_test_list</name>
@@ -1169,20 +1175,22 @@
         <param><defname>return_type</defname></param>
         <param><defname>testname</defname></param>
         <initializer>	set_test(testname, false); \
-	bot.func_name (param, 0, 0, 1000, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
-		if (!cc.is_error()) { \
-			return_type g = std::get&lt;return_type&gt;(cc.value); \
-			if (g.size() &gt; 0) { \
-				set_test(testname, true); \
+	if (!offline) { \
+		bot.func_name (param, 0, 0, 1000, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
+			if (!cc.is_error()) { \
+				return_type g = std::get&lt;return_type&gt;(cc.value); \
+				if (g.size() &gt; 0) { \
+					set_test(testname, true); \
+				} else { \
+					set_test(testname, false); \
+					bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
+				} \
 			} else { \
 				set_test(testname, false); \
 				bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
 			} \
-		} else { \
-			set_test(testname, false); \
-			bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
-		} \
-	});</initializer>
+		}); \
+	}</initializer>
         <briefdescription>
 <para>Perform a test of a REST base API call with one parameter that returns a list. </para>
         </briefdescription>
@@ -1190,7 +1198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="130" column="9" bodyfile="src/test.h" bodystart="130" bodyend="-1"/>
+        <location file="src/test.h" line="148" column="9" bodyfile="src/test.h" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1a6b3beae0b7a5441d7ec9ebda2e75ce1e" prot="public" static="no">
         <name>twoparam_api_test_list</name>
@@ -1200,20 +1208,22 @@
         <param><defname>return_type</defname></param>
         <param><defname>testname</defname></param>
         <initializer>	set_test(testname, false); \
-	bot.func_name (param1, param2, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
-		if (!cc.is_error()) { \
-			return_type g = std::get&lt;return_type&gt;(cc.value); \
-			if (g.size() &gt; 0) { \
-				set_test(testname, true); \
+	if (!offline) { \
+		bot.func_name (param1, param2, [&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
+			if (!cc.is_error()) { \
+				return_type g = std::get&lt;return_type&gt;(cc.value); \
+				if (g.size() &gt; 0) { \
+					set_test(testname, true); \
+				} else { \
+					bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
+					set_test(testname, false); \
+				} \
 			} else { \
 				bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
 				set_test(testname, false); \
 			} \
-		} else { \
-			bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
-			set_test(testname, false); \
-		} \
-	});</initializer>
+		}); \
+	}</initializer>
         <briefdescription>
 <para>Perform a test of a REST base API call with two parameters. </para>
         </briefdescription>
@@ -1221,7 +1231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="150" column="9" bodyfile="src/test.h" bodystart="150" bodyend="-1"/>
+        <location file="src/test.h" line="170" column="9" bodyfile="src/test.h" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="test_8h_1a206ce9de3ecfb1220fa0d18c1022fdc1" prot="public" static="no">
         <name>noparam_api_test</name>
@@ -1229,15 +1239,17 @@
         <param><defname>return_type</defname></param>
         <param><defname>testname</defname></param>
         <initializer>	set_test(testname, false); \
-	bot.func_name ([&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
-		if (!cc.is_error()) { \
-			return_type g = std::get&lt;return_type&gt;(cc.value); \
-			set_test(testname, true); \
-		} else { \
-			bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
-			set_test(testname, false); \
-		} \
-	});</initializer>
+	if (!offline) { \
+		bot.func_name ([&amp;](const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">dpp::confirmation_callback_t</ref> &amp;cc) { \
+			if (!cc.is_error()) { \
+				return_type g = std::get&lt;return_type&gt;(cc.value); \
+				set_test(testname, true); \
+			} else { \
+				bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3" kindref="member">dpp::ll_debug</ref>, cc.http_info.body); \
+				set_test(testname, false); \
+			} \
+		}); \
+	}</initializer>
         <briefdescription>
 <para>Perform a test of a REST base API call with no parameters. </para>
         </briefdescription>
@@ -1245,7 +1257,34 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="171" column="9" bodyfile="src/test.h" bodystart="171" bodyend="-1"/>
+        <location file="src/test.h" line="193" column="9" bodyfile="src/test.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="test_8h_1a62f3ce7e2420e34c5c5d9a8d41307dc7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>test_type_t</name>
+        <enumvalue id="test_8h_1a62f3ce7e2420e34c5c5d9a8d41307dc7a334ddd03e7a861ea76bbe1727b4e2c0c" prot="public">
+          <name>tt_offline</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="test_8h_1a62f3ce7e2420e34c5c5d9a8d41307dc7abf961b4bea77203fd56628b89d374232" prot="public">
+          <name>tt_online</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="38" column="1" bodyfile="src/test.h" bodystart="38" bodyend="43"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -1276,7 +1315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="56" column="15" bodyfile="src/test.h" bodystart="56" bodyend="-1"/>
+        <location file="src/test.h" line="65" column="15" bodyfile="src/test.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="test_8h_1ace274193511296191bb8aa2019b20fbe" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
@@ -1289,7 +1328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="61" column="23" bodyfile="src/unittest.cpp" bodystart="86" bodyend="-1" declfile="src/test.h" declline="61" declcolumn="23"/>
+        <location file="src/test.h" line="70" column="23" bodyfile="src/unittest.cpp" bodystart="87" bodyend="-1" declfile="src/test.h" declline="70" declcolumn="23"/>
       </memberdef>
       <memberdef kind="variable" id="test_8h_1ab8305171e47ad0eacb21822cd8e2c0f2" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
@@ -1302,7 +1341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="62" column="23" bodyfile="src/unittest.cpp" bodystart="87" bodyend="-1" declfile="src/test.h" declline="62" declcolumn="23"/>
+        <location file="src/test.h" line="71" column="23" bodyfile="src/unittest.cpp" bodystart="88" bodyend="-1" declfile="src/test.h" declline="71" declcolumn="23"/>
       </memberdef>
       <memberdef kind="variable" id="test_8h_1a557d5cdee29931d70197d9a3190d219a" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
@@ -1315,7 +1354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="63" column="23" bodyfile="src/unittest.cpp" bodystart="88" bodyend="-1" declfile="src/test.h" declline="63" declcolumn="23"/>
+        <location file="src/test.h" line="72" column="23" bodyfile="src/unittest.cpp" bodystart="89" bodyend="-1" declfile="src/test.h" declline="72" declcolumn="23"/>
       </memberdef>
       <memberdef kind="variable" id="test_8h_1a5398837ed9e54a5da77701217c045288" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
@@ -1328,7 +1367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="64" column="23" bodyfile="src/unittest.cpp" bodystart="89" bodyend="-1" declfile="src/test.h" declline="64" declcolumn="23"/>
+        <location file="src/test.h" line="73" column="23" bodyfile="src/unittest.cpp" bodystart="90" bodyend="-1" declfile="src/test.h" declline="73" declcolumn="23"/>
       </memberdef>
       <memberdef kind="variable" id="test_8h_1ad3da66b778667aba8c2320661360c98f" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
@@ -1341,7 +1380,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="65" column="23" bodyfile="src/unittest.cpp" bodystart="90" bodyend="-1" declfile="src/test.h" declline="65" declcolumn="23"/>
+        <location file="src/test.h" line="74" column="23" bodyfile="src/unittest.cpp" bodystart="91" bodyend="-1" declfile="src/test.h" declline="74" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8h_1a2ff0c0c443c983737558f7b602185618" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool offline</definition>
+        <argsstring></argsstring>
+        <name>offline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test.h" line="77" column="13" bodyfile="src/unittest.cpp" bodystart="85" bodyend="-1" declfile="src/test.h" declline="77" declcolumn="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -1384,7 +1436,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="193" column="6" bodyfile="src/unittest.cpp" bodystart="92" bodyend="106" declfile="src/test.h" declline="193" declcolumn="6"/>
+        <location file="src/test.h" line="217" column="6" bodyfile="src/unittest.cpp" bodystart="93" bodyend="113" declfile="src/test.h" declline="217" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1ad9a56733d9249067ebac92700c32088a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1410,7 +1462,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="201" column="5" bodyfile="src/unittest.cpp" bodystart="116" bodyend="130" declfile="src/test.h" declline="201" declcolumn="5"/>
+        <location file="src/test.h" line="225" column="5" bodyfile="src/unittest.cpp" bodystart="123" bodyend="143" declfile="src/test.h" declline="225" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1a8c8b8c2c90a7f32d65b866b70d1facd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; uint8_t &gt;</type>
@@ -1427,7 +1479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="209" column="13" bodyfile="src/unittest.cpp" bodystart="132" bodyend="147" declfile="src/test.h" declline="209" declcolumn="13"/>
+        <location file="src/test.h" line="233" column="13" bodyfile="src/unittest.cpp" bodystart="145" bodyend="160" declfile="src/test.h" declline="233" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1a02f493a9f72e6a291ca66cf24d0a4b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1446,7 +1498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="217" column="13" bodyfile="src/unittest.cpp" bodystart="149" bodyend="161" declfile="src/test.h" declline="217" declcolumn="13"/>
+        <location file="src/test.h" line="241" column="13" bodyfile="src/unittest.cpp" bodystart="162" bodyend="174" declfile="src/test.h" declline="241" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1a0f2c6a8b44bbd5ff4e0c204e6fcd2a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1460,7 +1512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="222" column="6" bodyfile="src/unittest.cpp" bodystart="163" bodyend="179" declfile="src/test.h" declline="222" declcolumn="6"/>
+        <location file="src/test.h" line="246" column="6" bodyfile="src/unittest.cpp" bodystart="176" bodyend="196" declfile="src/test.h" declline="246" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1a742b96fd1e4453bd852af2fe6131fff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1477,7 +1529,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="229" column="8" bodyfile="src/unittest.cpp" bodystart="108" bodyend="110" declfile="src/test.h" declline="229" declcolumn="8"/>
+        <location file="src/test.h" line="253" column="8" bodyfile="src/unittest.cpp" bodystart="115" bodyend="117" declfile="src/test.h" declline="253" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="test_8h_1af7ab092ab10d65db3b9051a12420fa52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1494,7 +1546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/test.h" line="236" column="8" bodyfile="src/unittest.cpp" bodystart="112" bodyend="114" declfile="src/test.h" declline="236" declcolumn="8"/>
+        <location file="src/test.h" line="260" column="8" bodyfile="src/unittest.cpp" bodystart="119" bodyend="121" declfile="src/test.h" declline="260" declcolumn="8"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
