@@ -102,12 +102,12 @@ $(document).ready(function(){initNavTree('embed-message.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >You might have seen these special messages, often sent by bots. In this section, we will show how to create an embed.</p>
-<p >To make an embed use this.</p>
+<dl class="section note"><dt>Note</dt><dd>Because this example utilizes message content, it requires the message content privileged intent.</dd></dl>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <span class="comment">/* Setup the bot */</span></div>
-<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>, <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a>); <span class="comment">// Privileged intent required to receive message content</span></div>
+<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>, <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Message handler to look for a command called !embed */</span></div>
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp; event) {</div>
