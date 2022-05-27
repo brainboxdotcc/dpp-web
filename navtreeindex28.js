@@ -1,5 +1,9 @@
 var NAVTREEINDEX28 =
 {
+"structdpp_1_1thread__member.html#a1b8e07233ef58b4a0b765b0e1e54e000":[6,0,1,171,2],
+"structdpp_1_1thread__member.html#a55796d137409618f98c7710861568c4d":[6,0,1,171,0],
+"structdpp_1_1thread__member.html#a55796d137409618f98c7710861568c4d":[7,0,1,169,0],
+"structdpp_1_1thread__member.html#a5dbdfa69bced84ca047f45fa329904c5":[6,0,1,171,4],
 "structdpp_1_1thread__member.html#a5dbdfa69bced84ca047f45fa329904c5":[7,0,1,169,4],
 "structdpp_1_1thread__member.html#a840e99fdb640dfa0cda1d853360e1836":[7,0,1,169,1],
 "structdpp_1_1thread__member.html#a840e99fdb640dfa0cda1d853360e1836":[6,0,1,171,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX28 =
 "structdpp_1_1voice__client__speaking__t.html":[6,0,1,187],
 "structdpp_1_1voice__client__speaking__t.html#a067067bfde4be0fe5f022a338fab657e":[7,0,1,185,6],
 "structdpp_1_1voice__client__speaking__t.html#a067067bfde4be0fe5f022a338fab657e":[6,0,1,187,6],
-"structdpp_1_1voice__client__speaking__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,187,4],
-"structdpp_1_1voice__client__speaking__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,1,185,4],
-"structdpp_1_1voice__client__speaking__t.html#a2d58a4064ff41f7c2b4c51e9558eb13b":[6,0,1,187,7],
-"structdpp_1_1voice__client__speaking__t.html#a2d58a4064ff41f7c2b4c51e9558eb13b":[7,0,1,185,7],
-"structdpp_1_1voice__client__speaking__t.html#a357873be4dd30eef7928ae5f7c13e7db":[6,0,1,187,3]
+"structdpp_1_1voice__client__speaking__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[6,0,1,187,4]
 };
