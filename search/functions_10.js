@@ -13,7 +13,7 @@ var searchData=
   ['send_5faudio_5fopus_10',['send_audio_opus',['../classdpp_1_1discord__voice__client.html#ad58a06d5ad18e9feaef4c5e2993a5171',1,'dpp::discord_voice_client::send_audio_opus(uint8_t *opus_packet, const size_t length)'],['../classdpp_1_1discord__voice__client.html#a57dd66bc916543ce9ac2f809a7ba5251',1,'dpp::discord_voice_client::send_audio_opus(uint8_t *opus_packet, const size_t length, uint64_t duration)']]],
   ['send_5faudio_5fraw_11',['send_audio_raw',['../classdpp_1_1discord__voice__client.html#a6d52a32631231f3120ba9e5ebbe61a7a',1,'dpp::discord_voice_client']]],
   ['send_5fsilence_12',['send_silence',['../classdpp_1_1discord__voice__client.html#ac6d1422113278ad6049486d07ca06ae4',1,'dpp::discord_voice_client']]],
-  ['set_13',['set',['../classdpp_1_1permission.html#a691cc23babdcf1ac6cea2bbac3e9ed46',1,'dpp::permission::set()'],['../structdpp_1_1utility_1_1iconhash.html#ac675809d00cef53ef6887ef7ffcd095c',1,'dpp::utility::iconhash::set()']]],
+  ['set_13',['set',['../classdpp_1_1permission.html#adf735bcb50c46fcdfb7fd20c9c999f4e',1,'dpp::permission::set()'],['../structdpp_1_1utility_1_1iconhash.html#ac675809d00cef53ef6887ef7ffcd095c',1,'dpp::utility::iconhash::set()']]],
   ['set_5fallowed_5fmentions_14',['set_allowed_mentions',['../structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913',1,'dpp::message']]],
   ['set_5fanimated_15',['set_animated',['../structdpp_1_1select__option.html#a841099bce27c36f02c3edd204a334a68',1,'dpp::select_option']]],
   ['set_5fapplication_5fid_16',['set_application_id',['../classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92',1,'dpp::slashcommand']]],
