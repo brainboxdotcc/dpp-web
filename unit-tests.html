@@ -113,13 +113,14 @@ Running Unit Tests</h1>
 <li>Create at least one voice channel</li>
 <li>Create at least one text channel</li>
 </ul>
-<p >Then, set the following variables to the appropriate values. (This uses a fake token, don't bother trying to use it.) </p><pre class="fragment">export DPP_UNIT_TEST_TOKEN="ODI2ZSQ4CFYyMzgxUzkzzACy.HPL5PA.9qKR4uh8po63-pjYVrPAvQQO4ln"
+<p >Then, set the following variables to the appropriate values. (Below is a fake token, don't bother trying to use it) </p><pre class="fragment">export DPP_UNIT_TEST_TOKEN="ODI2ZSQ4CFYyMzgxUzkzzACy.HPL5PA.9qKR4uh8po63-pjYVrPAvQQO4ln"
 export TEST_GUILD_ID="907951970017480704"
 export TEST_TEXT_CHANNEL_ID="907951970017480707"
 export TEST_VC_ID="907951970017480708"
 export TEST_USER_ID="826535422381391913"
 export TEST_EVENT_ID="909928577951203360"
-</pre><p> Then, after cloning and building DPP, run <code>./build/test</code> for unit test cases. </p>
+</pre><p> Then, after cloning and building DPP, run <code>cd build &amp;&amp; ctest -VV</code> for unit test cases.</p>
+<p >If you do not specify the <code>DPP_UNIT_TEST_TOKEN</code> environment variable, a subset of the tests will run which do not require discord connectivity. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -19,13 +19,14 @@
 </listitem><listitem><para>Create at least one text channel</para>
 </listitem></itemizedlist>
 </para>
-<para>Then, set the following variables to the appropriate values. (This uses a fake token, don&apos;t bother trying to use it.) <verbatim>export DPP_UNIT_TEST_TOKEN=&quot;ODI2ZSQ4CFYyMzgxUzkzzACy.HPL5PA.9qKR4uh8po63-pjYVrPAvQQO4ln&quot;
+<para>Then, set the following variables to the appropriate values. (Below is a fake token, don&apos;t bother trying to use it) <verbatim>export DPP_UNIT_TEST_TOKEN=&quot;ODI2ZSQ4CFYyMzgxUzkzzACy.HPL5PA.9qKR4uh8po63-pjYVrPAvQQO4ln&quot;
 export TEST_GUILD_ID=&quot;907951970017480704&quot;
 export TEST_TEXT_CHANNEL_ID=&quot;907951970017480707&quot;
 export TEST_VC_ID=&quot;907951970017480708&quot;
 export TEST_USER_ID=&quot;826535422381391913&quot;
 export TEST_EVENT_ID=&quot;909928577951203360&quot;
-</verbatim> Then, after cloning and building DPP, run <computeroutput>./build/test</computeroutput> for unit test cases. </para>
+</verbatim> Then, after cloning and building DPP, run <computeroutput>cd build &amp;&amp; ctest -VV</computeroutput> for unit test cases.</para>
+<para>If you do not specify the <computeroutput>DPP_UNIT_TEST_TOKEN</computeroutput> environment variable, a subset of the tests will run which do not require discord connectivity. </para>
 </sect1>
     </detaileddescription>
     <location file="docpages/04_advanced_reference.md"/>
