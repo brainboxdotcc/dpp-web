@@ -5,7 +5,7 @@ var searchData=
   ['banned_2',['banned',['../structdpp_1_1guild__ban__add__t.html#a66dadcaca1f356964834a9b981dcf1fb',1,'dpp::guild_ban_add_t']]],
   ['banner_3',['banner',['../classdpp_1_1guild.html#ad5736b31cf35641cb2c78f9353d3a8a5',1,'dpp::guild']]],
   ['banning_5fguild_4',['banning_guild',['../structdpp_1_1guild__ban__add__t.html#a205babd5bfbb4ed9810d824d28711536',1,'dpp::guild_ban_add_t']]],
-  ['base64_5fencode_5',['base64_encode',['../namespacedpp.html#a81eeb32f4e67cd830f6bc5f52c006c9b',1,'dpp::base64_encode()'],['../namespacehttplib_1_1detail.html#a455e8db9d2cc4c24565af6d9b884eeaf',1,'httplib::detail::base64_encode()']]],
+  ['base64_5fencode_5',['base64_encode',['../namespacedpp.html#ae14a21eeaf5db9a458c3ea6acf5b36f2',1,'dpp::base64_encode()'],['../namespacehttplib_1_1detail.html#a455e8db9d2cc4c24565af6d9b884eeaf',1,'httplib::detail::base64_encode()']]],
   ['base_5fpermissions_6',['base_permissions',['../classdpp_1_1guild.html#a0efc24108bb872be9be88cf26bc5af28',1,'dpp::guild']]],
   ['basic_5fauth_5fpassword_5f_7',['basic_auth_password_',['../classhttplib_1_1_client_impl.html#a5da67860d3127963342200e6bb46b6f7',1,'httplib::ClientImpl']]],
   ['basic_5fauth_5fusername_5f_8',['basic_auth_username_',['../classhttplib_1_1_client_impl.html#af5a16149e2b0e9e004de9d652844d0be',1,'httplib::ClientImpl']]],

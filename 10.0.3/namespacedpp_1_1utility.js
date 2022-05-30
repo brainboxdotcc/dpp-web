@@ -35,6 +35,5 @@ var namespacedpp_1_1utility =
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
     [ "validate", "namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad", null ],
     [ "version", "namespacedpp_1_1utility.html#a1cb30e93306604a6cf8eb93342b623c6", null ],
-    [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ],
-    [ "hex", "namespacedpp_1_1utility.html#a3ad5a66f941e42982a8615279d61c600", null ]
+    [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ]
 ];

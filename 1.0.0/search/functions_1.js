@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ban_0',['ban',['../classdpp_1_1ban.html#ad892633726780283e88837a404953351',1,'dpp::ban']]],
-  ['base64_5fencode_1',['base64_encode',['../namespacedpp.html#a81eeb32f4e67cd830f6bc5f52c006c9b',1,'dpp::base64_encode()'],['../namespacehttplib_1_1detail.html#a455e8db9d2cc4c24565af6d9b884eeaf',1,'httplib::detail::base64_encode()']]],
+  ['base64_5fencode_1',['base64_encode',['../namespacedpp.html#ae14a21eeaf5db9a458c3ea6acf5b36f2',1,'dpp::base64_encode()'],['../namespacehttplib_1_1detail.html#a455e8db9d2cc4c24565af6d9b884eeaf',1,'httplib::detail::base64_encode()']]],
   ['base_5fpermissions_2',['base_permissions',['../classdpp_1_1guild.html#a0efc24108bb872be9be88cf26bc5af28',1,'dpp::guild']]],
   ['bind_5fip_5faddress_3',['bind_ip_address',['../namespacehttplib_1_1detail.html#a3c99670815bc5f1516efedc4c3e21bfb',1,'httplib::detail']]],
   ['bind_5fto_5fany_5fport_4',['bind_to_any_port',['../classhttplib_1_1_server.html#a0aa8209ee4fe36ffb42302836214d159',1,'httplib::Server']]],

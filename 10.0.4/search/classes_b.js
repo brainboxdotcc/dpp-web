@@ -1,7 +1,25 @@
 var searchData=
 [
-  ['length_5fexception_0',['length_exception',['../classdpp_1_1length__exception.html',1,'dpp']]],
-  ['log_5ft_1',['log_t',['../structdpp_1_1log__t.html',1,'dpp']]],
-  ['logger_2',['logger',['../classdpp_1_1events_1_1logger.html',1,'dpp::events']]],
-  ['logic_5fexception_3',['logic_exception',['../classdpp_1_1logic__exception.html',1,'dpp']]]
+  ['managed_0',['managed',['../classdpp_1_1managed.html',1,'dpp']]],
+  ['message_1',['message',['../structdpp_1_1message.html',1,'dpp']]],
+  ['message_5fcollector_2',['message_collector',['../classdpp_1_1message__collector.html',1,'dpp']]],
+  ['message_5fcreate_3',['message_create',['../classdpp_1_1events_1_1message__create.html',1,'dpp::events']]],
+  ['message_5fcreate_5ft_4',['message_create_t',['../structdpp_1_1message__create__t.html',1,'dpp']]],
+  ['message_5fdelete_5',['message_delete',['../classdpp_1_1events_1_1message__delete.html',1,'dpp::events']]],
+  ['message_5fdelete_5fbulk_6',['message_delete_bulk',['../classdpp_1_1events_1_1message__delete__bulk.html',1,'dpp::events']]],
+  ['message_5fdelete_5fbulk_5ft_7',['message_delete_bulk_t',['../structdpp_1_1message__delete__bulk__t.html',1,'dpp']]],
+  ['message_5fdelete_5ft_8',['message_delete_t',['../structdpp_1_1message__delete__t.html',1,'dpp']]],
+  ['message_5finteraction_5fstruct_9',['message_interaction_struct',['../structdpp_1_1message_1_1message__interaction__struct.html',1,'dpp::message']]],
+  ['message_5freaction_5fadd_10',['message_reaction_add',['../classdpp_1_1events_1_1message__reaction__add.html',1,'dpp::events']]],
+  ['message_5freaction_5fadd_5ft_11',['message_reaction_add_t',['../structdpp_1_1message__reaction__add__t.html',1,'dpp']]],
+  ['message_5freaction_5fremove_12',['message_reaction_remove',['../classdpp_1_1events_1_1message__reaction__remove.html',1,'dpp::events']]],
+  ['message_5freaction_5fremove_5fall_13',['message_reaction_remove_all',['../classdpp_1_1events_1_1message__reaction__remove__all.html',1,'dpp::events']]],
+  ['message_5freaction_5fremove_5fall_5ft_14',['message_reaction_remove_all_t',['../structdpp_1_1message__reaction__remove__all__t.html',1,'dpp']]],
+  ['message_5freaction_5fremove_5femoji_15',['message_reaction_remove_emoji',['../classdpp_1_1events_1_1message__reaction__remove__emoji.html',1,'dpp::events']]],
+  ['message_5freaction_5fremove_5femoji_5ft_16',['message_reaction_remove_emoji_t',['../structdpp_1_1message__reaction__remove__emoji__t.html',1,'dpp']]],
+  ['message_5freaction_5fremove_5ft_17',['message_reaction_remove_t',['../structdpp_1_1message__reaction__remove__t.html',1,'dpp']]],
+  ['message_5fref_18',['message_ref',['../structdpp_1_1message_1_1message__ref.html',1,'dpp::message']]],
+  ['message_5fupdate_19',['message_update',['../classdpp_1_1events_1_1message__update.html',1,'dpp::events']]],
+  ['message_5fupdate_5ft_20',['message_update_t',['../structdpp_1_1message__update__t.html',1,'dpp']]],
+  ['multipart_5fcontent_21',['multipart_content',['../structdpp_1_1multipart__content.html',1,'dpp']]]
 ];

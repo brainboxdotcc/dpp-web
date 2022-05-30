@@ -1,15 +1,15 @@
 var classdpp_1_1channel =
 [
     [ "channel", "classdpp_1_1channel.html#a53bbf494148ceea48e3b78716d7a8b07", null ],
-    [ "~channel", "classdpp_1_1channel.html#a51afd2284fe4ae3a6d1043c8f3ecf4f1", null ],
+    [ "~channel", "classdpp_1_1channel.html#a019dcc538ed619ab255f60e69f716ae3", null ],
     [ "add_flag", "classdpp_1_1channel.html#a189a5d675001b810199274201b15ea38", null ],
     [ "add_permission_overwrite", "classdpp_1_1channel.html#a3bf0a0d35c4aa4e40c6b2b71e9c97584", null ],
-    [ "build_json", "classdpp_1_1channel.html#a2b818d100d7b40ee6b07d95ff3fcccb8", null ],
+    [ "build_json", "classdpp_1_1channel.html#a18ee2ad56a96f574bde32d18c5fd51ab", null ],
     [ "fill_from_json", "classdpp_1_1channel.html#a97c266efb07e429ecc1175207a409824", null ],
     [ "get_banner_url", "classdpp_1_1channel.html#a9b21f2eb844a745ba44fda7ca55aa40e", null ],
     [ "get_creation_time", "classdpp_1_1channel.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "get_icon_url", "classdpp_1_1channel.html#a97712454c654d4a4eede963a5307dfdc", null ],
-    [ "get_members", "classdpp_1_1channel.html#ab817b065af6dab9a77e406908e368ae1", null ],
+    [ "get_members", "classdpp_1_1channel.html#a2618252ea6ca24673074b4ac8243798c", null ],
     [ "get_mention", "classdpp_1_1channel.html#a08a674755c169a3517361dc847511617", null ],
     [ "get_user_permissions", "classdpp_1_1channel.html#a86527c1fe86e93c66bf731c73ebcc0ac", null ],
     [ "get_voice_members", "classdpp_1_1channel.html#a915cc4ba3ec7514a684315594255253a", null ],

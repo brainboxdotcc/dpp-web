@@ -45,8 +45,5 @@ var namespacehttplib =
       [ "Compression", "namespacehttplib.html#a46ff5da925971ebebf2c5693e367f24aa82af841589057aa8922b1ac3bb4a28a4", null ]
     ] ],
     [ "default_socket_options", "namespacehttplib.html#aeaecacf2684b63127fa7d26d8e1a622d", null ],
-    [ "make_basic_authentication_header", "namespacehttplib.html#a6b202b4fd91bd8e6a10a83dba358bc02", null ],
-    [ "make_bearer_token_authentication_header", "namespacehttplib.html#a98075992689c300834040c9c963b7251", null ],
-    [ "make_range_header", "namespacehttplib.html#a01bfe9dba7c203f1bb22ec29e2f3ede8", null ],
     [ "operator<<", "namespacehttplib.html#a0ab1237a982cc180ebe624cabf756e90", null ]
 ];

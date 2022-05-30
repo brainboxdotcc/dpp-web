@@ -14,16 +14,13 @@ var hierarchy =
     [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ],
     [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
     [ "dpp::ban", "classdpp_1_1ban.html", null ],
-    [ "detail::basic_data< T >", "structdetail_1_1basic__data.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
     [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
     [ "dpp::collector< T, C >", "classdpp_1_1collector.html", [
       [ "dpp::channel_collector", "classdpp_1_1channel__collector.html", null ],
-      [ "dpp::message_collector", "classdpp_1_1message__collector.html", [
-        [ "message_collector", "classmessage__collector.html", null ]
-      ] ],
+      [ "dpp::message_collector", "classdpp_1_1message__collector.html", null ],
       [ "dpp::reaction_collector", "classdpp_1_1reaction__collector.html", null ],
       [ "dpp::role_collector", "classdpp_1_1role__collector.html", null ],
       [ "dpp::scheduled_event_collector", "classdpp_1_1scheduled__event__collector.html", null ],
@@ -234,17 +231,12 @@ var hierarchy =
       [ "dpp::user", "classdpp_1_1user.html", [
         [ "dpp::user_identified", "classdpp_1_1user__identified.html", null ]
       ] ],
-      [ "dpp::webhook", "classdpp_1_1webhook.html", null ],
-      [ "test_cached_object_t", "classtest__cached__object__t.html", null ]
+      [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::multipart_content", "structdpp_1_1multipart__content.html", null ],
     [ "dpp::oneshot_timer", "classdpp_1_1oneshot__timer.html", null ],
-    [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
-    [ "OpusDecoder", "struct_opus_decoder.html", null ],
-    [ "OpusEncoder", "struct_opus_encoder.html", null ],
-    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
     [ "dpp::presence", "classdpp_1_1presence.html", null ],
@@ -252,7 +244,6 @@ var hierarchy =
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
-    [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
@@ -262,7 +253,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
-    [ "test_t", "structtest__t.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::timed_listener< attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
@@ -274,6 +264,5 @@ var hierarchy =
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
     [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
-    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ],
-    [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
+    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ]
 ];

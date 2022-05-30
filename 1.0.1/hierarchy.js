@@ -20,15 +20,10 @@ var hierarchy =
     [ "dpp::command_option_choice", "structdpp_1_1command__option__choice.html", null ],
     [ "dpp::command_resolved", "structdpp_1_1command__resolved.html", null ],
     [ "dpp::component", "classdpp_1_1component.html", null ],
-    [ "httplib::detail::compressor", "classhttplib_1_1detail_1_1compressor.html", [
-      [ "httplib::detail::nocompressor", "classhttplib_1_1detail_1_1nocompressor.html", null ]
-    ] ],
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
-    [ "httplib::detail::ContentProviderAdapter", "classhttplib_1_1detail_1_1_content_provider_adapter.html", null ],
     [ "httplib::ContentReader", "classhttplib_1_1_content_reader.html", null ],
     [ "httplib::DataSink", "classhttplib_1_1_data_sink.html", null ],
-    [ "httplib::detail::decompressor", "classhttplib_1_1detail_1_1decompressor.html", null ],
     [ "dpp::dispatcher", "classdpp_1_1dispatcher.html", null ],
     [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
@@ -165,7 +160,6 @@ var hierarchy =
     ] ],
     [ "dpp::message", "structdpp_1_1message.html", null ],
     [ "httplib::MultipartFormData", "structhttplib_1_1_multipart_form_data.html", null ],
-    [ "httplib::detail::MultipartFormDataParser", "classhttplib_1_1detail_1_1_multipart_form_data_parser.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
     [ "dpp::presence", "classdpp_1_1presence.html", null ],
     [ "dpp::prune", "structdpp_1_1prune.html", null ],
@@ -174,7 +168,6 @@ var hierarchy =
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "httplib::Response", "structhttplib_1_1_response.html", null ],
     [ "httplib::Result", "classhttplib_1_1_result.html", null ],
-    [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "httplib::Server", "classhttplib_1_1_server.html", null ],
     [ "httplib::ClientImpl::Socket", "structhttplib_1_1_client_impl_1_1_socket.html", null ],
     [ "dpp::SSLClient", "classdpp_1_1_s_s_l_client.html", [
@@ -183,14 +176,7 @@ var hierarchy =
         [ "dpp::DiscordVoiceClient", "classdpp_1_1_discord_voice_client.html", null ]
       ] ]
     ] ],
-    [ "httplib::detail::SSLInit", "classhttplib_1_1detail_1_1_s_s_l_init.html", null ],
-    [ "httplib::detail::SSLThreadLocks", "classhttplib_1_1detail_1_1_s_s_l_thread_locks.html", null ],
-    [ "httplib::Stream", "classhttplib_1_1_stream.html", [
-      [ "httplib::detail::BufferStream", "classhttplib_1_1detail_1_1_buffer_stream.html", null ],
-      [ "httplib::detail::SSLSocketStream", "classhttplib_1_1detail_1_1_s_s_l_socket_stream.html", null ],
-      [ "httplib::detail::SocketStream", "classhttplib_1_1detail_1_1_socket_stream.html", null ]
-    ] ],
-    [ "httplib::detail::stream_line_reader", "classhttplib_1_1detail_1_1stream__line__reader.html", null ],
+    [ "httplib::Stream", "classhttplib_1_1_stream.html", null ],
     [ "httplib::TaskQueue", "classhttplib_1_1_task_queue.html", [
       [ "httplib::ThreadPool", "classhttplib_1_1_thread_pool.html", null ]
     ] ],

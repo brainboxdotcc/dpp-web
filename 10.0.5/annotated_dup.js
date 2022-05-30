@@ -1,8 +1,5 @@
 var annotated_dup =
 [
-    [ "detail", "namespacedetail.html", [
-      [ "basic_data", "structdetail_1_1basic__data.html", "structdetail_1_1basic__data" ]
-    ] ],
     [ "dpp", "namespacedpp.html", [
       [ "events", "namespacedpp_1_1events.html", [
         [ "channel_create", "classdpp_1_1events_1_1channel__create.html", "classdpp_1_1events_1_1channel__create" ],
@@ -176,7 +173,6 @@ var annotated_dup =
       [ "invite_create_t", "structdpp_1_1invite__create__t.html", "structdpp_1_1invite__create__t" ],
       [ "invite_delete_t", "structdpp_1_1invite__delete__t.html", "structdpp_1_1invite__delete__t" ],
       [ "json_interface", "structdpp_1_1json__interface.html", "structdpp_1_1json__interface" ],
-      [ "keepalive_cache_t", "structdpp_1_1keepalive__cache__t.html", "structdpp_1_1keepalive__cache__t" ],
       [ "length_exception", "classdpp_1_1length__exception.html", "classdpp_1_1length__exception" ],
       [ "log_t", "structdpp_1_1log__t.html", "structdpp_1_1log__t" ],
       [ "logic_exception", "classdpp_1_1logic__exception.html", "classdpp_1_1logic__exception" ],
@@ -193,7 +189,6 @@ var annotated_dup =
       [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
       [ "multipart_content", "structdpp_1_1multipart__content.html", "structdpp_1_1multipart__content" ],
       [ "oneshot_timer", "classdpp_1_1oneshot__timer.html", "classdpp_1_1oneshot__timer" ],
-      [ "opensslcontext", "classdpp_1_1opensslcontext.html", "classdpp_1_1opensslcontext" ],
       [ "param_info", "structdpp_1_1param__info.html", "structdpp_1_1param__info" ],
       [ "parse_exception", "classdpp_1_1parse__exception.html", "classdpp_1_1parse__exception" ],
       [ "permission_overwrite", "structdpp_1_1permission__overwrite.html", "structdpp_1_1permission__overwrite" ],
@@ -209,7 +204,6 @@ var annotated_dup =
       [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
       [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
       [ "role_collector", "classdpp_1_1role__collector.html", "classdpp_1_1role__collector" ],
-      [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
       [ "scheduled_event", "structdpp_1_1scheduled__event.html", "structdpp_1_1scheduled__event" ],
       [ "scheduled_event_collector", "classdpp_1_1scheduled__event__collector.html", "classdpp_1_1scheduled__event__collector" ],
       [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
@@ -258,13 +252,6 @@ var annotated_dup =
       [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
       [ "welcome_channel_t", "structdpp_1_1welcome__channel__t.html", "structdpp_1_1welcome__channel__t" ],
-      [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ],
-      [ "zlibcontext", "classdpp_1_1zlibcontext.html", "classdpp_1_1zlibcontext" ]
-    ] ],
-    [ "message_collector", "classmessage__collector.html", "classmessage__collector" ],
-    [ "OpusDecoder", "struct_opus_decoder.html", null ],
-    [ "OpusEncoder", "struct_opus_encoder.html", null ],
-    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
-    [ "test_cached_object_t", "classtest__cached__object__t.html", "classtest__cached__object__t" ],
-    [ "test_t", "structtest__t.html", "structtest__t" ]
+      [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ]
+    ] ]
 ];

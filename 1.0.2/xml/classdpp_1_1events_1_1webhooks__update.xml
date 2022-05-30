@@ -5,9 +5,9 @@
     <basecompoundref refid="classdpp_1_1events_1_1event" prot="public" virt="non-virtual">dpp::events::event</basecompoundref>
     <includes local="no">event.h</includes>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1events_1_1webhooks__update_1ac426527ed6dbb78142da1faa1556d6e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classdpp_1_1events_1_1webhooks__update_1a265c95221e6a0c10b0b5fb6c39e9bb73" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void dpp::events::webhooks_update::handle</definition>
+        <definition>virtual void dpp::events::webhooks_update::handle</definition>
         <argsstring>(dpp::discord_client *client, nlohmann::json &amp;j, const std::string &amp;raw)</argsstring>
         <name>handle</name>
         <reimplements refid="classdpp_1_1events_1_1event_1a03fd1d1321e3660f00c4a9e00da2aa81">handle</reimplements>
@@ -24,15 +24,14 @@
           <declname>raw</declname>
         </param>
         <briefdescription>
-<para>Handle event. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para>Pure virtual method for event handler code <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>client</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Websocket client (current shard) </para>
+<para>The creating shard </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -40,7 +39,7 @@
 <parametername>j</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>JSON data for the event </para>
+<para>The json data of the event </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -48,7 +47,7 @@
 <parametername>raw</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Raw JSON string </para>
+<para>The raw event json </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -56,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event.h" line="117" column="57" bodyfile="src/dpp/events/webhooks_update.cpp" bodystart="46" bodyend="54"/>
+        <location file="include/dpp/event.h" line="117" column="57"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -89,7 +88,7 @@
     </collaborationgraph>
     <location file="include/dpp/event.h" line="117" column="1" bodyfile="include/dpp/event.h" bodystart="117" bodyend="117"/>
     <listofallmembers>
-      <member refid="classdpp_1_1events_1_1webhooks__update_1ac426527ed6dbb78142da1faa1556d6e9" prot="public" virt="virtual"><scope>dpp::events::webhooks_update</scope><name>handle</name></member>
+      <member refid="classdpp_1_1events_1_1webhooks__update_1a265c95221e6a0c10b0b5fb6c39e9bb73" prot="public" virt="virtual"><scope>dpp::events::webhooks_update</scope><name>handle</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

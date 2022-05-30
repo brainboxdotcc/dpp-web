@@ -10,8 +10,8 @@ var searchData=
   ['_7ecluster_7',['~cluster',['../classdpp_1_1cluster.html#a270be0ab59aff4f335ef3f4af7559d92',1,'dpp::cluster']]],
   ['_7ecompressor_8',['~compressor',['../classhttplib_1_1detail_1_1compressor.html#a32ee63505c36702a72caa20cdf092cfb',1,'httplib::detail::compressor']]],
   ['_7edecompressor_9',['~decompressor',['../classhttplib_1_1detail_1_1decompressor.html#a94f437f38f134fdcaa331f0ed5163274',1,'httplib::detail::decompressor']]],
-  ['_7ediscordclient_10',['~DiscordClient',['../classdpp_1_1_discord_client.html#a21bc64e43bb96f358d0b41c756a54806',1,'dpp::DiscordClient']]],
-  ['_7ediscordvoiceclient_11',['~DiscordVoiceClient',['../classdpp_1_1_discord_voice_client.html#ae494966304a709385664192291739bcd',1,'dpp::DiscordVoiceClient']]],
+  ['_7ediscordclient_10',['~DiscordClient',['../classdpp_1_1_discord_client.html#af9f0acdb7643ae300eb9ec0a403a70fe',1,'dpp::DiscordClient']]],
+  ['_7ediscordvoiceclient_11',['~DiscordVoiceClient',['../classdpp_1_1_discord_voice_client.html#ad9d5036233ed1d786aa9c6a1f8d61957',1,'dpp::DiscordVoiceClient']]],
   ['_7edtemplate_12',['~dtemplate',['../classdpp_1_1dtemplate.html#a1ae48c050ffc66f77f857f939cc66487',1,'dpp::dtemplate']]],
   ['_7eembed_13',['~embed',['../structdpp_1_1embed.html#a9d43c2e1648e03cf5aa28825f600391f',1,'dpp::embed']]],
   ['_7eemoji_14',['~emoji',['../classdpp_1_1emoji.html#a0a25072ec7ccc6e5da014fa888c6d8e9',1,'dpp::emoji']]],
@@ -28,7 +28,7 @@ var searchData=
   ['_7eserver_25',['~Server',['../classhttplib_1_1_server.html#af115868f3665c97326770b7fa87c6cce',1,'httplib::Server']]],
   ['_7eslashcommand_26',['~slashcommand',['../classdpp_1_1slashcommand.html#aa6f13f22de1b2e26b2ca7976e42e5b67',1,'dpp::slashcommand']]],
   ['_7esocketstream_27',['~SocketStream',['../classhttplib_1_1detail_1_1_socket_stream.html#ad53aee236db4c02938706d7f8cfe089e',1,'httplib::detail::SocketStream']]],
-  ['_7esslclient_28',['~SSLClient',['../classdpp_1_1_s_s_l_client.html#afbbe7b650aaf7416e1f9e529930e19b7',1,'dpp::SSLClient']]],
+  ['_7esslclient_28',['~SSLClient',['../classdpp_1_1_s_s_l_client.html#a052b2f1c3b14e8ec067904b78b3e2ae7',1,'dpp::SSLClient']]],
   ['_7estream_29',['~Stream',['../classhttplib_1_1_stream.html#ad2ab38ab48ccc866169ae0f40f018702',1,'httplib::Stream']]],
   ['_7etaskqueue_30',['~TaskQueue',['../classhttplib_1_1_task_queue.html#ac5c93354376774b4082bb40cef9ae63d',1,'httplib::TaskQueue']]],
   ['_7ethreadpool_31',['~ThreadPool',['../classhttplib_1_1_thread_pool.html#ad0f2cf2a96d2b9bcad7183c467c84e50',1,'httplib::ThreadPool']]],
@@ -37,5 +37,5 @@ var searchData=
   ['_7evoiceregion_34',['~voiceregion',['../classdpp_1_1voiceregion.html#ab08402a1538913ad465b2c36cd4dbf92',1,'dpp::voiceregion']]],
   ['_7evoicestate_35',['~voicestate',['../classdpp_1_1voicestate.html#a29e5fdd1ec931b6ad1feed0094a1225f',1,'dpp::voicestate']]],
   ['_7ewebhook_36',['~webhook',['../classdpp_1_1webhook.html#aa5f6e90d2be315fd438b827e25447a36',1,'dpp::webhook']]],
-  ['_7ewsclient_37',['~WSClient',['../classdpp_1_1_w_s_client.html#ae5feb5400738360dc0e2cc1a11a4763d',1,'dpp::WSClient']]]
+  ['_7ewsclient_37',['~WSClient',['../classdpp_1_1_w_s_client.html#a9e570719ee8bdbc30b1262134542c5a7',1,'dpp::WSClient']]]
 ];

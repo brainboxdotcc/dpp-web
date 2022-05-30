@@ -33,6 +33,5 @@ var searchData=
   ['guild_5fstage_30',['GUILD_STAGE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a2b8e9d25634f30006f16aa879c1da627',1,'dpp']]],
   ['guild_5fstore_31',['GUILD_STORE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a6a57ffe1a9ec22c41c73780837432675',1,'dpp']]],
   ['guild_5ftext_32',['GUILD_TEXT',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092ac240528d2f3f3a773b5e418c4f25d696',1,'dpp']]],
-  ['guild_5fvoice_33',['GUILD_VOICE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a444c8af4513fe76ab80cc00039ce8852',1,'dpp']]],
-  ['gzip_34',['Gzip',['../namespacehttplib_1_1detail.html#a2d74473be3feaf34ea8f25d4e782dc1aa2548e50da66f41afea53de1cbbf3b30c',1,'httplib::detail']]]
+  ['guild_5fvoice_33',['GUILD_VOICE',['../namespacedpp.html#a8af3a726df107c304139477dbfa42092a444c8af4513fe76ab80cc00039ce8852',1,'dpp']]]
 ];

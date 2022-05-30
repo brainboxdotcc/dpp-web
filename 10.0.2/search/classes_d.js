@@ -10,6 +10,5 @@ var searchData=
   ['resumed_7',['resumed',['../classdpp_1_1events_1_1resumed.html',1,'dpp::events']]],
   ['resumed_5ft_8',['resumed_t',['../structdpp_1_1resumed__t.html',1,'dpp']]],
   ['role_9',['role',['../classdpp_1_1role.html',1,'dpp']]],
-  ['role_5fcollector_10',['role_collector',['../classdpp_1_1role__collector.html',1,'dpp']]],
-  ['rtp_5fheader_11',['rtp_header',['../structdpp_1_1rtp__header.html',1,'dpp']]]
+  ['role_5fcollector_10',['role_collector',['../classdpp_1_1role__collector.html',1,'dpp']]]
 ];

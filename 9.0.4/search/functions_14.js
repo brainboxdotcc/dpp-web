@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['value_0',['value',['../classhttplib_1_1_result.html#a548bafc2cbdf35eba042e18378921819',1,'httplib::Result::value() const'],['../classhttplib_1_1_result.html#a2f30c102a3e635beb7863113d9000b5b',1,'httplib::Result::value()']]],
-  ['vformat_5fto_1',['vformat_to',['../namespacedetail.html#ab60222a912202fa179149bc2a630e4ee',1,'detail::vformat_to(buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; format_str, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; Char &gt; &gt; &gt;, type_identity_t&lt; Char &gt; &gt; &gt; args)'],['../namespacedetail.html#ae732653a877af30fd393e774a72bebec',1,'detail::vformat_to(buffer&lt; char &gt; &amp;, string_view, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; char &gt; &gt; &gt;, type_identity_t&lt; char &gt; &gt; &gt;)']]],
-  ['voice_5fbuffer_5fsend_5ft_2',['voice_buffer_send_t',['../structdpp_1_1voice__buffer__send__t.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
-  ['voice_5fready_5ft_3',['voice_ready_t',['../structdpp_1_1voice__ready__t.html#afe0122cb6850df07ca84ba3592181490',1,'dpp::voice_ready_t']]],
-  ['voice_5freceive_5ft_4',['voice_receive_t',['../structdpp_1_1voice__receive__t.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t']]],
-  ['voice_5fserver_5fupdate_5ft_5',['voice_server_update_t',['../structdpp_1_1voice__server__update__t.html#a818081c81337f241f2c7fdc2bf0be1bc',1,'dpp::voice_server_update_t']]],
-  ['voice_5fstate_5fupdate_5ft_6',['voice_state_update_t',['../structdpp_1_1voice__state__update__t.html#a421fc199dfeb2542ad61248b3a600a79',1,'dpp::voice_state_update_t']]],
-  ['voice_5ftrack_5fmarker_5ft_7',['voice_track_marker_t',['../structdpp_1_1voice__track__marker__t.html#ab3a8a8296e89fd188caed6d11c2d8c72',1,'dpp::voice_track_marker_t']]],
-  ['voice_5fuser_5ftalking_5ft_8',['voice_user_talking_t',['../structdpp_1_1voice__user__talking__t.html#a364eafcc97db6de005b150f3a92ed634',1,'dpp::voice_user_talking_t']]],
-  ['voiceconn_9',['voiceconn',['../classdpp_1_1voiceconn.html#a2238afc107e4e97daa0693c81fe150fd',1,'dpp::voiceconn::voiceconn()=default'],['../classdpp_1_1voiceconn.html#a7b0b033f371d814cf04e09ac7cf08ac1',1,'dpp::voiceconn::voiceconn(class discord_client *o, snowflake _channel_id)']]],
-  ['voiceregion_10',['voiceregion',['../classdpp_1_1voiceregion.html#aa49a3a3f843f2f97f27ad262dff11c5c',1,'dpp::voiceregion']]],
-  ['voicestate_11',['voicestate',['../classdpp_1_1voicestate.html#a2cffc101e4bff3c2aa40f5efc9fee895',1,'dpp::voicestate']]]
+  ['web_5fstatus_0',['web_status',['../classdpp_1_1presence.html#a48277b458604de43ab9c4af7bbc3733d',1,'dpp::presence']]],
+  ['webhook_1',['webhook',['../classdpp_1_1webhook.html#a7144cd4b090eaa5a22687230cf2d6bd3',1,'dpp::webhook']]],
+  ['webhooks_5fupdate_5ft_2',['webhooks_update_t',['../structdpp_1_1webhooks__update__t.html#aa070b1866b55bc3e6d2a7a8b698e8c1b',1,'dpp::webhooks_update_t']]],
+  ['websocket_5fclient_3',['websocket_client',['../classdpp_1_1websocket__client.html#a809b342e343bd370141ba25a5e90cf64',1,'dpp::websocket_client']]],
+  ['what_4',['what',['../classdpp_1_1exception.html#a010588e4eec074c113ff36c82dde74f9',1,'dpp::exception']]],
+  ['widget_5fenabled_5',['widget_enabled',['../classdpp_1_1guild.html#afdfe3c2bd4025d259b42dedddc2301a1',1,'dpp::guild']]],
+  ['write_6',['write',['../classhttplib_1_1_stream.html#a4b94583ae90065c9e4e33a7752d9976f',1,'httplib::Stream::write(const char *ptr, size_t size)=0'],['../classhttplib_1_1_stream.html#a1f8218941e7dac2dd5795e89e6e9607f',1,'httplib::Stream::write(const char *ptr)'],['../classhttplib_1_1_stream.html#a81b7ddb3a4c73f8e2fe1b3887f7346c9',1,'httplib::Stream::write(const std::string &amp;s)'],['../classdpp_1_1ssl__client.html#acdfd527a84156e918dc93420ed0d45b8',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#a66ca960ed3dddc37340ecc5d32ff0e1c',1,'dpp::websocket_client::write()']]],
+  ['write_5fcontent_5fwith_5fprovider_7',['write_content_with_provider',['../classhttplib_1_1_client_impl.html#ac969a59de46fc276e56f9e453f675842',1,'httplib::ClientImpl']]],
+  ['write_5fformat_8',['write_format',['../classhttplib_1_1_stream.html#a9892f60a65f59412ace397b7b6c4c93b',1,'httplib::Stream']]]
 ];

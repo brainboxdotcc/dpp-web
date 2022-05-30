@@ -79,7 +79,6 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", "namespacemembers_eval" ]
@@ -104,7 +103,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdpp_1_1_s_s_l_client.html#a5a7c0ad6978157507c525d2076b97244",
+"classdpp_1_1_s_s_l_client.html#a59203374735f25a44c4cda1d35e04b94",
 "classdpp_1_1cluster.html#a108f6f06b43709c8d47df5f94a3ca0a5",
 "classdpp_1_1cluster.html#abd8ee0e654de56e39c418e83e1115af3",
 "classdpp_1_1dtemplate.html#a1ae48c050ffc66f77f857f939cc66487",
@@ -112,16 +111,15 @@ var NAVTREEINDEX =
 "classdpp_1_1invite.html#a1eeea3785ede65e9a93640352674a6c3",
 "classdpp_1_1user.html#af4a509ae622f1b4531a758524b34f47e",
 "classhttplib_1_1_client.html#ab8dbf72575b6f745efec170c0124f90b",
-"classhttplib_1_1_client_impl.html#ab2c2dae97d8672ed539a21cfe7477fed",
+"classhttplib_1_1_client_impl.html#aaf87765187adb847b44c102643704f3a",
 "classhttplib_1_1_server.html#aae7a9a5c73dc8cd71003da7d5d1cbd7d",
-"functions_func_h.html",
-"namespacedpp.html#a373a53f1340e01ad64bb89f82158f99ba57a07827de1901dfbd7fa964bd9cdd43",
-"namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9",
-"structdpp_1_1audit__change.html",
-"structdpp_1_1embed.html#abde15c192fcfa8b9418bfea4585e947e",
-"structdpp_1_1http__request__completion__t.html",
-"structdpp_1_1message__reaction__add__t.html#a20264319a0f8da84a8e832be40f7d82e",
-"structdpp_1_1utility_1_1uptime.html#adf60583f58dfe5cff52196b44c29f012"
+"namespacedpp.html#a0bb678a7eb060b6f35ad38e6f4ee0002",
+"namespacedpp.html#abc401d86119c6443bf72d736857c1a58a7e18bae49699df4948c28c12bfa8bd19",
+"structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b",
+"structdpp_1_1embed__author.html#a6897733c824f67472c50d2e63ffb2b2e",
+"structdpp_1_1http__request__completion__t.html#abc9d39c408cb5a3f43960854084d9165",
+"structdpp_1_1message__reaction__remove__all__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
+"structdpp_1_1voice__receive__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

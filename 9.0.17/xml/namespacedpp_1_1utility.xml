@@ -38,267 +38,8 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a1184092d62c7ab561cb3f60a92f71b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double DPP_EXPORT dpp::utility::time_f</definition>
-        <argsstring>()</argsstring>
-        <name>time_f</name>
-        <briefdescription>
-<para>Return the current time with fractions of seconds. This is a unix epoch time with the fractional seconds part after the decimal place. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>double time with fractional seconds </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="50" column="8" bodyfile="src/dpp/utility.cpp" bodystart="50" bodyend="55" declfile="include/dpp/discord.h" declline="236" declcolumn="19"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a9d70739d6485741d1617c359ec70d1f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool DPP_EXPORT dpp::utility::has_voice</definition>
-        <argsstring>()</argsstring>
-        <name>has_voice</name>
-        <briefdescription>
-<para>Returns true if D++ was built with voice support. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>bool True if voice support is compiled in (libsodium/libopus) </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="57" column="6" bodyfile="src/dpp/utility.cpp" bodystart="57" bodyend="63" declfile="include/dpp/discord.h" declline="243" declcolumn="17"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a1a9168eaaf347543e55e607858f24eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::current_date_time</definition>
-        <argsstring>()</argsstring>
-        <name>current_date_time</name>
-        <briefdescription>
-<para>Returns current date and time. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string Current date and time </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="65" column="13" bodyfile="src/dpp/utility.cpp" bodystart="65" bodyend="77" declfile="include/dpp/discord.h" declline="163" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1acae9e089e4b7cfd9745235f86455c045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::loglevel</definition>
-        <argsstring>(dpp::loglevel in)</argsstring>
-        <name>loglevel</name>
-        <param>
-          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
-          <declname>in</declname>
-        </param>
-        <briefdescription>
-<para>Convert a <ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref> enum value to a string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>in</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>log level to convert </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string string form of log level </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="79" column="13" bodyfile="src/dpp/utility.cpp" bodystart="79" bodyend="89" declfile="include/dpp/discord.h" declline="170" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a02456e22a1d41893a9b321bf8ccaeec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::debug_dump</definition>
-        <argsstring>(uint8_t *data, size_t length)</argsstring>
-        <name>debug_dump</name>
-        <param>
-          <type>uint8_t *</type>
-          <declname>data</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>length</declname>
-        </param>
-        <briefdescription>
-<para>Output hex values of a section of memory for debugging. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>data</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The start of the data to display </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>length</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The length of data to display </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="154" column="13" bodyfile="src/dpp/utility.cpp" bodystart="154" bodyend="177" declfile="include/dpp/discord.h" declline="324" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1af74cf004f32b11f0f804968c64bb3d08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::bytes</definition>
-        <argsstring>(uint64_t c)</argsstring>
-        <name>bytes</name>
-        <param>
-          <type>uint64_t</type>
-          <declname>c</declname>
-        </param>
-        <briefdescription>
-<para>Convert a byte count to display value. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>c</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>number of bytes </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string display value suffixed with M, G, T where necessary </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="179" column="13" bodyfile="src/dpp/utility.cpp" bodystart="179" bodyend="191" declfile="include/dpp/discord.h" declline="251" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a2ab5fc7a9fd0ac6358c3c7133b563362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::utility::rgb</definition>
-        <argsstring>(float red, float green, float blue)</argsstring>
-        <name>rgb</name>
-        <param>
-          <type>float</type>
-          <declname>red</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>green</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>blue</declname>
-        </param>
-        <briefdescription>
-<para>Convert floats to RGB for sending in embeds. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>red</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>red value, between 0 and 1 inclusive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>green</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>green value, between 0 and 1 inclusive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>blue</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>blue value, between 0 and 1 inclusive </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>uint32_t returned integer colour value </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="193" column="10" bodyfile="src/dpp/utility.cpp" bodystart="193" bodyend="195" declfile="include/dpp/discord.h" declline="306" declcolumn="10"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1ad5e546b73411540fa9541b25deccdacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::utility::rgb</definition>
-        <argsstring>(int red, int green, int blue)</argsstring>
-        <name>rgb</name>
-        <param>
-          <type>int</type>
-          <declname>red</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>green</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>blue</declname>
-        </param>
-        <briefdescription>
-<para>Convert ints to RGB for sending in embeds. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>red</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>red value, between 0 and 255 inclusive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>green</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>green value, between 0 and 255 inclusive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>blue</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>blue value, between 0 and 255 inclusive </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>uint32_t returned integer colour value </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="198" column="10" bodyfile="src/dpp/utility.cpp" bodystart="198" bodyend="200" declfile="include/dpp/discord.h" declline="316" declcolumn="10"/>
-      </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ac7d516c03d572fe65d01c4ec5e92c6f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::utility::exec</definition>
         <argsstring>(const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters={}, cmd_result_t callback={})</argsstring>
         <name>exec</name>
@@ -353,10 +94,311 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="202" column="6" bodyfile="src/dpp/utility.cpp" bodystart="202" bodyend="226" declfile="include/dpp/discord.h" declline="147" declcolumn="17"/>
+        <location file="include/dpp/discord.h" line="147" column="17" declfile="include/dpp/discord.h" declline="147" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a62891c981320f9cc4edfbbf9990428c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::timestamp</definition>
+        <argsstring>(time_t ts, time_format tf)</argsstring>
+        <name>timestamp</name>
+        <param>
+          <type>time_t</type>
+          <declname>ts</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1ad4cdede378f95bd030412c254bd81302" kindref="member">time_format</ref></type>
+          <declname>tf</declname>
+        </param>
+        <briefdescription>
+<para>Return a mentionable timestamp (used in a discord embed) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time stamp to convert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format of timestamp using dpp::utility::time_format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="156" column="24" declfile="include/dpp/discord.h" declline="156" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a1a9168eaaf347543e55e607858f24eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::current_date_time</definition>
+        <argsstring>()</argsstring>
+        <name>current_date_time</name>
+        <briefdescription>
+<para>Returns current date and time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string Current date and time </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="163" column="24" declfile="include/dpp/discord.h" declline="163" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1acae9e089e4b7cfd9745235f86455c045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::loglevel</definition>
+        <argsstring>(dpp::loglevel in)</argsstring>
+        <name>loglevel</name>
+        <param>
+          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Convert a <ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref> enum value to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>log level to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string string form of log level </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="170" column="24" declfile="include/dpp/discord.h" declline="170" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a1184092d62c7ab561cb3f60a92f71b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double DPP_EXPORT</type>
+        <definition>double DPP_EXPORT dpp::utility::time_f</definition>
+        <argsstring>()</argsstring>
+        <name>time_f</name>
+        <briefdescription>
+<para>Return the current time with fractions of seconds. This is a unix epoch time with the fractional seconds part after the decimal place. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double time with fractional seconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="236" column="19" declfile="include/dpp/discord.h" declline="236" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a9d70739d6485741d1617c359ec70d1f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool DPP_EXPORT</type>
+        <definition>bool DPP_EXPORT dpp::utility::has_voice</definition>
+        <argsstring>()</argsstring>
+        <name>has_voice</name>
+        <briefdescription>
+<para>Returns true if D++ was built with voice support. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool True if voice support is compiled in (libsodium/libopus) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="243" column="17" declfile="include/dpp/discord.h" declline="243" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1af74cf004f32b11f0f804968c64bb3d08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::bytes</definition>
+        <argsstring>(uint64_t c)</argsstring>
+        <name>bytes</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Convert a byte count to display value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string display value suffixed with M, G, T where necessary </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="251" column="24" declfile="include/dpp/discord.h" declline="251" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a2ab5fc7a9fd0ac6358c3c7133b563362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::utility::rgb</definition>
+        <argsstring>(float red, float green, float blue)</argsstring>
+        <name>rgb</name>
+        <param>
+          <type>float</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Convert floats to RGB for sending in embeds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>red value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>green value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>blue value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t returned integer colour value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="306" column="10" declfile="include/dpp/discord.h" declline="306" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1ad5e546b73411540fa9541b25deccdacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::utility::rgb</definition>
+        <argsstring>(int red, int green, int blue)</argsstring>
+        <name>rgb</name>
+        <param>
+          <type>int</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Convert ints to RGB for sending in embeds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>red value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>green value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>blue value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t returned integer colour value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="316" column="10" declfile="include/dpp/discord.h" declline="316" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a02456e22a1d41893a9b321bf8ccaeec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::debug_dump</definition>
+        <argsstring>(uint8_t *data, size_t length)</argsstring>
+        <name>debug_dump</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Output hex values of a section of memory for debugging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start of the data to display </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of data to display </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discord.h" line="324" column="24" declfile="include/dpp/discord.h" declline="324" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a62cc8fc3994f6b3d49cf4923b993c231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>size_t</type>
+        <type>size_t DPP_EXPORT</type>
         <definition>size_t DPP_EXPORT dpp::utility::utf8len</definition>
         <argsstring>(const std::string &amp;str)</argsstring>
         <name>utf8len</name>
@@ -383,10 +425,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="228" column="8" bodyfile="src/dpp/utility.cpp" bodystart="228" bodyend="264" declfile="include/dpp/discord.h" declline="332" declcolumn="19"/>
+        <location file="include/dpp/discord.h" line="332" column="19" declfile="include/dpp/discord.h" declline="332" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1afa6985aaa798fa30b73c1decc418cd32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::utf8substr</definition>
         <argsstring>(const std::string &amp;str, std::string::size_type start, std::string::size_type length)</argsstring>
         <name>utf8substr</name>
@@ -437,10 +479,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="266" column="13" bodyfile="src/dpp/utility.cpp" bodystart="266" bodyend="300" declfile="include/dpp/discord.h" declline="342" declcolumn="24"/>
+        <location file="include/dpp/discord.h" line="342" column="24" declfile="include/dpp/discord.h" declline="342" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a4e85ceba20c4ed2bfda15d806890428b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::read_file</definition>
         <argsstring>(const std::string &amp;filename)</argsstring>
         <name>read_file</name>
@@ -478,7 +520,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="302" column="13" bodyfile="src/dpp/utility.cpp" bodystart="302" bodyend="312" declfile="include/dpp/discord.h" declline="352" declcolumn="24"/>
+        <location file="include/dpp/discord.h" line="352" column="24" declfile="include/dpp/discord.h" declline="352" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a56f2d7d280f78b086037c44e4536ea86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -553,49 +595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="314" column="13" bodyfile="src/dpp/utility.cpp" bodystart="314" bodyend="321" declfile="include/dpp/discord.h" declline="366" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a62891c981320f9cc4edfbbf9990428c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string DPP_EXPORT</type>
-        <definition>std::string DPP_EXPORT dpp::utility::timestamp</definition>
-        <argsstring>(time_t ts, time_format tf)</argsstring>
-        <name>timestamp</name>
-        <param>
-          <type>time_t</type>
-          <declname>ts</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1ad4cdede378f95bd030412c254bd81302" kindref="member">time_format</ref></type>
-          <declname>tf</declname>
-        </param>
-        <briefdescription>
-<para>Return a mentionable timestamp (used in a discord embed) </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ts</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Time stamp to convert </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>tf</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Format of timestamp using dpp::utility::time_format </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="324" column="24" bodyfile="src/dpp/utility.cpp" bodystart="324" bodyend="327" declfile="include/dpp/discord.h" declline="156" declcolumn="24"/>
+        <location file="include/dpp/discord.h" line="366" column="13" declfile="include/dpp/discord.h" declline="366" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab1b9a9f3dbfb71cb8b8d223062e4cd62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -625,7 +625,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="329" column="13" bodyfile="src/dpp/utility.cpp" bodystart="329" bodyend="334" declfile="include/dpp/discord.h" declline="374" declcolumn="13"/>
+        <location file="include/dpp/discord.h" line="374" column="13" declfile="include/dpp/discord.h" declline="374" declcolumn="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -633,6 +633,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/dpp/utility.cpp" line="48" column="1"/>
+    <location file="include/dpp/discord.h" line="121" column="1"/>
   </compounddef>
 </doxygen>

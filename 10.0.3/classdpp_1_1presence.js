@@ -4,7 +4,7 @@ var classdpp_1_1presence =
     [ "presence", "classdpp_1_1presence.html#a98d7b61872c1f9a8f8cedcad3075c60f", null ],
     [ "presence", "classdpp_1_1presence.html#a7d1175469fac4cb4abe10b8afdc74e83", null ],
     [ "~presence", "classdpp_1_1presence.html#aaf9b4823dc5cfa358f1431dc0a13df6b", null ],
-    [ "build_json", "classdpp_1_1presence.html#adb33240188517c5f656099b88428b983", null ],
+    [ "build_json", "classdpp_1_1presence.html#ae55480b1271989b3d3a3096097bf0af9", null ],
     [ "desktop_status", "classdpp_1_1presence.html#a63177953eddc1a1425721110a6469042", null ],
     [ "fill_from_json", "classdpp_1_1presence.html#ad074f1ca4904e9a109d1fd0cb7f096a9", null ],
     [ "mobile_status", "classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607", null ],

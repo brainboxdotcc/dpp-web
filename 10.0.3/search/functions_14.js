@@ -6,5 +6,5 @@ var searchData=
   ['websocket_5fclient_3',['websocket_client',['../classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b',1,'dpp::websocket_client']]],
   ['what_4',['what',['../classdpp_1_1exception.html#a010588e4eec074c113ff36c82dde74f9',1,'dpp::exception']]],
   ['widget_5fenabled_5',['widget_enabled',['../classdpp_1_1guild.html#afdfe3c2bd4025d259b42dedddc2301a1',1,'dpp::guild']]],
-  ['write_6',['write',['../classdpp_1_1ssl__client.html#a4d9bde88c0c1926be915c6d232506176',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#aac65765349cbd3e787c0fd2af576ec6d',1,'dpp::websocket_client::write()']]]
+  ['write_6',['write',['../classdpp_1_1ssl__client.html#acdfd527a84156e918dc93420ed0d45b8',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#a66ca960ed3dddc37340ecc5d32ff0e1c',1,'dpp::websocket_client::write()']]]
 ];

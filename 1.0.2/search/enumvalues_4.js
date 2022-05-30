@@ -23,6 +23,5 @@ var searchData=
   ['g_5fwidget_5fenabled_20',['g_widget_enabled',['../namespacedpp.html#a94aba4d1f2669c7da3b676859d54602fa95bab65c1394b0a2cbd23083a788be5c',1,'dpp']]],
   ['gm_5fdeaf_21',['gm_deaf',['../namespacedpp.html#a7e036e9909741e00af34e2505117218da966c5f8d7bd60e0daf9ceaafb556b4c4',1,'dpp']]],
   ['gm_5fmute_22',['gm_mute',['../namespacedpp.html#a7e036e9909741e00af34e2505117218da557d08c731cb82cfd66915aaa0466a2f',1,'dpp']]],
-  ['gm_5fpending_23',['gm_pending',['../namespacedpp.html#a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41',1,'dpp']]],
-  ['gzip_24',['Gzip',['../namespacehttplib_1_1detail.html#a2d74473be3feaf34ea8f25d4e782dc1aa2548e50da66f41afea53de1cbbf3b30c',1,'httplib::detail']]]
+  ['gm_5fpending_23',['gm_pending',['../namespacedpp.html#a7e036e9909741e00af34e2505117218da0c44c916411b26b1b0a3b5288c346a41',1,'dpp']]]
 ];

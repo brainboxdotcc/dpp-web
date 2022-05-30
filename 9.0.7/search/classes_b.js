@@ -1,7 +1,14 @@
 var searchData=
 [
-  ['opensslcontext_0',['opensslcontext',['../classdpp_1_1opensslcontext.html',1,'dpp']]],
-  ['opusdecoder_1',['OpusDecoder',['../struct_opus_decoder.html',1,'']]],
-  ['opusencoder_2',['OpusEncoder',['../struct_opus_encoder.html',1,'']]],
-  ['opusrepacketizer_3',['OpusRepacketizer',['../struct_opus_repacketizer.html',1,'']]]
+  ['reaction_0',['reaction',['../structdpp_1_1reaction.html',1,'dpp']]],
+  ['ready_1',['ready',['../classdpp_1_1events_1_1ready.html',1,'dpp::events']]],
+  ['ready_5ft_2',['ready_t',['../structdpp_1_1ready__t.html',1,'dpp']]],
+  ['request_3',['Request',['../structhttplib_1_1_request.html',1,'httplib']]],
+  ['request_5fqueue_4',['request_queue',['../classdpp_1_1request__queue.html',1,'dpp']]],
+  ['resolved_5fuser_5',['resolved_user',['../structdpp_1_1resolved__user.html',1,'dpp']]],
+  ['response_6',['Response',['../structhttplib_1_1_response.html',1,'httplib']]],
+  ['result_7',['Result',['../classhttplib_1_1_result.html',1,'httplib']]],
+  ['resumed_8',['resumed',['../classdpp_1_1events_1_1resumed.html',1,'dpp::events']]],
+  ['resumed_5ft_9',['resumed_t',['../structdpp_1_1resumed__t.html',1,'dpp']]],
+  ['role_10',['role',['../classdpp_1_1role.html',1,'dpp']]]
 ];

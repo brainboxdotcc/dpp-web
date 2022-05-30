@@ -1,7 +1,5 @@
 var namespaces_dup =
 [
-    [ "anonymous_namespace{os.cpp}", "namespaceanonymous__namespace_02os_8cpp_03.html", null ],
-    [ "detail", "namespacedetail.html", "namespacedetail" ],
     [ "dpp", "namespacedpp.html", "namespacedpp" ],
     [ "nlohmann", "namespacenlohmann.html", [
       [ "json", "namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474", null ],

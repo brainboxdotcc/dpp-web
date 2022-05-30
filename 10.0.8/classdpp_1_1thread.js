@@ -1,7 +1,7 @@
 var classdpp_1_1thread =
 [
     [ "thread", "classdpp_1_1thread.html#aa013c0c3c26e9109488c8e2e83e9e36a", null ],
-    [ "~thread", "classdpp_1_1thread.html#a080515539a7f6e6f48bf097f119f51ac", null ],
+    [ "~thread", "classdpp_1_1thread.html#a65e98d334d6b6097c05590c03be772f8", null ],
     [ "add_flag", "classdpp_1_1thread.html#a189a5d675001b810199274201b15ea38", null ],
     [ "add_permission_overwrite", "classdpp_1_1thread.html#a3bf0a0d35c4aa4e40c6b2b71e9c97584", null ],
     [ "build_json", "classdpp_1_1thread.html#a3606d9b03710775529e277315afd8fb0", null ],
@@ -9,7 +9,7 @@ var classdpp_1_1thread =
     [ "get_banner_url", "classdpp_1_1thread.html#a9b21f2eb844a745ba44fda7ca55aa40e", null ],
     [ "get_creation_time", "classdpp_1_1thread.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "get_icon_url", "classdpp_1_1thread.html#a97712454c654d4a4eede963a5307dfdc", null ],
-    [ "get_members", "classdpp_1_1thread.html#ab817b065af6dab9a77e406908e368ae1", null ],
+    [ "get_members", "classdpp_1_1thread.html#a2618252ea6ca24673074b4ac8243798c", null ],
     [ "get_mention", "classdpp_1_1thread.html#a08a674755c169a3517361dc847511617", null ],
     [ "get_user_permissions", "classdpp_1_1thread.html#a86527c1fe86e93c66bf731c73ebcc0ac", null ],
     [ "get_voice_members", "classdpp_1_1thread.html#a915cc4ba3ec7514a684315594255253a", null ],

@@ -37,9 +37,8 @@ var searchData=
   ['resumes_34',['resumes',['../classdpp_1_1_discord_client.html#a5b17f9e6693d273925745b2d865e6392',1,'dpp::DiscordClient']]],
   ['retry_5fafter_35',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
   ['rich_5fpresence_36',['rich_presence',['../structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813',1,'dpp::presence_update_t']]],
-  ['role_5fcache_37',['role_cache',['../namespacedpp.html#a859e163ce0aca88e3d1f5379ee53ad3d',1,'dpp']]],
-  ['role_5fid_38',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
-  ['role_5fname_39',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
-  ['roles_40',['roles',['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()']]],
-  ['rules_5fchannel_5fid_41',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
+  ['role_5fid_37',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
+  ['role_5fname_38',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
+  ['roles_39',['roles',['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()']]],
+  ['rules_5fchannel_5fid_40',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
 ];

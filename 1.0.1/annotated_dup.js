@@ -147,7 +147,6 @@ var annotated_dup =
       [ "request_queue", "classdpp_1_1request__queue.html", "classdpp_1_1request__queue" ],
       [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
       [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
-      [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
       [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
       [ "SSLClient", "classdpp_1_1_s_s_l_client.html", "classdpp_1_1_s_s_l_client" ],
       [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],
@@ -171,18 +170,7 @@ var annotated_dup =
     ] ],
     [ "httplib", "namespacehttplib.html", [
       [ "detail", "namespacehttplib_1_1detail.html", [
-        [ "BufferStream", "classhttplib_1_1detail_1_1_buffer_stream.html", "classhttplib_1_1detail_1_1_buffer_stream" ],
-        [ "ci", "structhttplib_1_1detail_1_1ci.html", "structhttplib_1_1detail_1_1ci" ],
-        [ "compressor", "classhttplib_1_1detail_1_1compressor.html", "classhttplib_1_1detail_1_1compressor" ],
-        [ "ContentProviderAdapter", "classhttplib_1_1detail_1_1_content_provider_adapter.html", "classhttplib_1_1detail_1_1_content_provider_adapter" ],
-        [ "decompressor", "classhttplib_1_1detail_1_1decompressor.html", "classhttplib_1_1detail_1_1decompressor" ],
-        [ "MultipartFormDataParser", "classhttplib_1_1detail_1_1_multipart_form_data_parser.html", "classhttplib_1_1detail_1_1_multipart_form_data_parser" ],
-        [ "nocompressor", "classhttplib_1_1detail_1_1nocompressor.html", "classhttplib_1_1detail_1_1nocompressor" ],
-        [ "SocketStream", "classhttplib_1_1detail_1_1_socket_stream.html", "classhttplib_1_1detail_1_1_socket_stream" ],
-        [ "SSLInit", "classhttplib_1_1detail_1_1_s_s_l_init.html", "classhttplib_1_1detail_1_1_s_s_l_init" ],
-        [ "SSLSocketStream", "classhttplib_1_1detail_1_1_s_s_l_socket_stream.html", "classhttplib_1_1detail_1_1_s_s_l_socket_stream" ],
-        [ "SSLThreadLocks", "classhttplib_1_1detail_1_1_s_s_l_thread_locks.html", "classhttplib_1_1detail_1_1_s_s_l_thread_locks" ],
-        [ "stream_line_reader", "classhttplib_1_1detail_1_1stream__line__reader.html", "classhttplib_1_1detail_1_1stream__line__reader" ]
+        [ "ci", "structhttplib_1_1detail_1_1ci.html", "structhttplib_1_1detail_1_1ci" ]
       ] ],
       [ "Client", "classhttplib_1_1_client.html", "classhttplib_1_1_client" ],
       [ "ClientImpl", "classhttplib_1_1_client_impl.html", "classhttplib_1_1_client_impl" ],

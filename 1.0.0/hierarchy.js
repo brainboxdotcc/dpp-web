@@ -168,7 +168,6 @@ var hierarchy =
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "httplib::Response", "structhttplib_1_1_response.html", null ],
     [ "httplib::Result", "classhttplib_1_1_result.html", null ],
-    [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "httplib::Server", "classhttplib_1_1_server.html", null ],
     [ "httplib::ClientImpl::Socket", "structhttplib_1_1_client_impl_1_1_socket.html", null ],
     [ "dpp::SSLClient", "classdpp_1_1_s_s_l_client.html", [

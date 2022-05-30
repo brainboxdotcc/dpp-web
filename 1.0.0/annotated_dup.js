@@ -143,7 +143,6 @@ var annotated_dup =
       [ "request_queue", "classdpp_1_1request__queue.html", "classdpp_1_1request__queue" ],
       [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
       [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
-      [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
       [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
       [ "SSLClient", "classdpp_1_1_s_s_l_client.html", "classdpp_1_1_s_s_l_client" ],
       [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],

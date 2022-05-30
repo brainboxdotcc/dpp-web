@@ -12,13 +12,12 @@ var searchData=
   ['add_5fpermission_9',['add_permission',['../classdpp_1_1slashcommand.html#a35086350bd76709e6befeed71e2598ab',1,'dpp::slashcommand']]],
   ['add_5fprefix_10',['add_prefix',['../classdpp_1_1commandhandler.html#a69ce2bb96adb1a658b3a29c37274f2bb',1,'dpp::commandhandler']]],
   ['add_5fselect_5foption_11',['add_select_option',['../classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243',1,'dpp::component']]],
-  ['append_5fquery_5fparams_12',['append_query_params',['../namespacehttplib_1_1detail.html#a618e7d1cb008277255ee00e53b1c48e6',1,'httplib::detail']]],
-  ['application_13',['application',['../classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044',1,'dpp::application']]],
-  ['application_5fcommand_5fcreate_5ft_14',['application_command_create_t',['../structdpp_1_1application__command__create__t.html#a73cad13a340866e75c24e913c93a0fbe',1,'dpp::application_command_create_t']]],
-  ['application_5fcommand_5fdelete_5ft_15',['application_command_delete_t',['../structdpp_1_1application__command__delete__t.html#ab63f70622d0adf539d38913ddad28dd3',1,'dpp::application_command_delete_t']]],
-  ['application_5fcommand_5fupdate_5ft_16',['application_command_update_t',['../structdpp_1_1application__command__update__t.html#ab1b3a755a92dabe7f150ae66cb4b649c',1,'dpp::application_command_update_t']]],
-  ['attach_17',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
-  ['attachment_18',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
-  ['auditlog_19',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]],
-  ['autocomplete_5ft_20',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]]
+  ['application_12',['application',['../classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044',1,'dpp::application']]],
+  ['application_5fcommand_5fcreate_5ft_13',['application_command_create_t',['../structdpp_1_1application__command__create__t.html#a73cad13a340866e75c24e913c93a0fbe',1,'dpp::application_command_create_t']]],
+  ['application_5fcommand_5fdelete_5ft_14',['application_command_delete_t',['../structdpp_1_1application__command__delete__t.html#ab63f70622d0adf539d38913ddad28dd3',1,'dpp::application_command_delete_t']]],
+  ['application_5fcommand_5fupdate_5ft_15',['application_command_update_t',['../structdpp_1_1application__command__update__t.html#ab1b3a755a92dabe7f150ae66cb4b649c',1,'dpp::application_command_update_t']]],
+  ['attach_16',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
+  ['attachment_17',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
+  ['auditlog_18',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]],
+  ['autocomplete_5ft_19',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]]
 ];

@@ -2,7 +2,7 @@ var searchData=
 [
   ['managed_0',['managed',['../classdpp_1_1managed.html',1,'dpp']]],
   ['message_1',['message',['../structdpp_1_1message.html',1,'dpp']]],
-  ['message_5fcollector_2',['message_collector',['../classdpp_1_1message__collector.html',1,'dpp::message_collector'],['../classmessage__collector.html',1,'message_collector']]],
+  ['message_5fcollector_2',['message_collector',['../classdpp_1_1message__collector.html',1,'dpp']]],
   ['message_5fcreate_3',['message_create',['../classdpp_1_1events_1_1message__create.html',1,'dpp::events']]],
   ['message_5fcreate_5ft_4',['message_create_t',['../structdpp_1_1message__create__t.html',1,'dpp']]],
   ['message_5fdelete_5',['message_delete',['../classdpp_1_1events_1_1message__delete.html',1,'dpp::events']]],
@@ -21,6 +21,5 @@ var searchData=
   ['message_5fref_18',['message_ref',['../structdpp_1_1message_1_1message__ref.html',1,'dpp::message']]],
   ['message_5fupdate_19',['message_update',['../classdpp_1_1events_1_1message__update.html',1,'dpp::events']]],
   ['message_5fupdate_5ft_20',['message_update_t',['../structdpp_1_1message__update__t.html',1,'dpp']]],
-  ['multipartformdata_21',['MultipartFormData',['../structhttplib_1_1_multipart_form_data.html',1,'httplib']]],
-  ['multipartformdataparser_22',['MultipartFormDataParser',['../classhttplib_1_1detail_1_1_multipart_form_data_parser.html',1,'httplib::detail']]]
+  ['multipartformdata_21',['MultipartFormData',['../structhttplib_1_1_multipart_form_data.html',1,'httplib']]]
 ];

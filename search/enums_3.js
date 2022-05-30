@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['guild_5fexplicit_5fcontent_5ft_0',['guild_explicit_content_t',['../namespacedpp.html#a47f79e1142def583c59df70b1382319f',1,'dpp']]],
-  ['guild_5fflags_1',['guild_flags',['../namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383a',1,'dpp']]],
-  ['guild_5fflags_5fextra_2',['guild_flags_extra',['../namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e',1,'dpp']]],
-  ['guild_5fmember_5fflags_3',['guild_member_flags',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30',1,'dpp']]],
-  ['guild_5fnsfw_5flevel_5ft_4',['guild_nsfw_level_t',['../namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591',1,'dpp']]]
+  ['emoji_5fflags_0',['emoji_flags',['../namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c',1,'dpp']]],
+  ['etf_5ftoken_5ftype_1',['etf_token_type',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2',1,'dpp']]],
+  ['event_5fentity_5ftype_2',['event_entity_type',['../namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834',1,'dpp']]],
+  ['event_5fprivacy_5flevel_3',['event_privacy_level',['../namespacedpp.html#a6add40f37f2f043dede513edebaa67bd',1,'dpp']]],
+  ['event_5fstatus_4',['event_status',['../namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60',1,'dpp']]]
 ];

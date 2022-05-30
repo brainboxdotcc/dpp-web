@@ -23,17 +23,11 @@ var searchData=
   ['what_20',['what',['../classdpp_1_1exception.html#a010588e4eec074c113ff36c82dde74f9',1,'dpp::exception']]],
   ['widget_5fchannel_5fid_21',['widget_channel_id',['../classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01',1,'dpp::guild']]],
   ['widget_5fenabled_22',['widget_enabled',['../classdpp_1_1guild.html#afdfe3c2bd4025d259b42dedddc2301a1',1,'dpp::guild']]],
-  ['width_23',['width',['../structdpp_1_1embed__image.html#aa92eade95917fe8ebc72ec7f6e035767',1,'dpp::embed_image::width()'],['../structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5',1,'dpp::attachment::width()']]],
-  ['write_24',['write',['../classdpp_1_1websocket__client.html#aac65765349cbd3e787c0fd2af576ec6d',1,'dpp::websocket_client::write()'],['../classdpp_1_1ssl__client.html#a4d9bde88c0c1926be915c6d232506176',1,'dpp::ssl_client::write()']]],
+  ['width_23',['width',['../structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5',1,'dpp::attachment::width()'],['../structdpp_1_1embed__image.html#aa92eade95917fe8ebc72ec7f6e035767',1,'dpp::embed_image::width()']]],
+  ['write_24',['write',['../classdpp_1_1websocket__client.html#a66ca960ed3dddc37340ecc5d32ff0e1c',1,'dpp::websocket_client::write()'],['../classdpp_1_1ssl__client.html#acdfd527a84156e918dc93420ed0d45b8',1,'dpp::ssl_client::write()']]],
   ['ws_5fetf_25',['ws_etf',['../namespacedpp.html#af7cde3079d745428f44ef6231a2ac672ac465dd3c03a072c41148d3562b6cbd64',1,'dpp']]],
-  ['ws_5ffinbit_26',['WS_FINBIT',['../namespacedpp.html#a9f1a62eaba2a019735abc7101cffee69',1,'dpp']]],
-  ['ws_5fjson_27',['ws_json',['../namespacedpp.html#af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437',1,'dpp']]],
-  ['ws_5fmaskbit_28',['WS_MASKBIT',['../namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd',1,'dpp']]],
-  ['ws_5fmax_5fpayload_5flength_5flarge_29',['WS_MAX_PAYLOAD_LENGTH_LARGE',['../namespacedpp.html#a657e035c24d7cdf888ba40868167f098',1,'dpp']]],
-  ['ws_5fmax_5fpayload_5flength_5fsmall_30',['WS_MAX_PAYLOAD_LENGTH_SMALL',['../namespacedpp.html#a50b421a786601a401c22eccf3069d0f8',1,'dpp']]],
-  ['ws_5fmode_31',['ws_mode',['../classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551',1,'dpp::cluster']]],
-  ['ws_5fopcode_32',['ws_opcode',['../namespacedpp.html#aa84690a0ba0251e8609440e93919da1c',1,'dpp']]],
-  ['ws_5fpayload_5flength_5fmagic_5fhuge_33',['WS_PAYLOAD_LENGTH_MAGIC_HUGE',['../namespacedpp.html#ac49a4ce7276ce7386399c5cf020895f6',1,'dpp']]],
-  ['ws_5fpayload_5flength_5fmagic_5flarge_34',['WS_PAYLOAD_LENGTH_MAGIC_LARGE',['../namespacedpp.html#ae6fd1619d39b4a2d583c09248f32cbe8',1,'dpp']]],
-  ['ws_5fstate_35',['ws_state',['../namespacedpp.html#af3b7f3e861707f45beefa9449de70519',1,'dpp']]]
+  ['ws_5fjson_26',['ws_json',['../namespacedpp.html#af7cde3079d745428f44ef6231a2ac672abea765ef009bccd9080351f806bae437',1,'dpp']]],
+  ['ws_5fmode_27',['ws_mode',['../classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551',1,'dpp::cluster']]],
+  ['ws_5fopcode_28',['ws_opcode',['../namespacedpp.html#aa84690a0ba0251e8609440e93919da1c',1,'dpp']]],
+  ['ws_5fstate_29',['ws_state',['../namespacedpp.html#af3b7f3e861707f45beefa9449de70519',1,'dpp']]]
 ];

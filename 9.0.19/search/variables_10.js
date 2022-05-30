@@ -27,10 +27,9 @@ var searchData=
   ['primary_5fsku_5fid_24',['primary_sku_id',['../classdpp_1_1application.html#a7aa6f427a79d6efb30d22f34dbecae98',1,'dpp::application']]],
   ['privacy_5flevel_25',['privacy_level',['../structdpp_1_1scheduled__event.html#a52f6049445ba9debcbdb1ec896c0fcb1',1,'dpp::scheduled_event::privacy_level()'],['../structdpp_1_1stage__instance.html#ae198d6dba53766e0375c1705165ddca7',1,'dpp::stage_instance::privacy_level()']]],
   ['privacy_5fpolicy_5furl_26',['privacy_policy_url',['../classdpp_1_1application.html#a97b791c3e357fcdcea6306efffb9584e',1,'dpp::application']]],
-  ['protect_5fthe_5floot_27',['protect_the_loot',['../namespacedpp_1_1events.html#abb48b619aaa302ed2ab79d152146902e',1,'dpp::events']]],
-  ['protocol_28',['protocol',['../classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7',1,'dpp::discord_client']]],
-  ['provider_29',['provider',['../structdpp_1_1embed.html#a689c7c16c458de20b1998b532364be0d',1,'dpp::embed']]],
-  ['proxy_5ficon_5furl_30',['proxy_icon_url',['../structdpp_1_1embed__author.html#a7b5bda59d7afeca91450d57c72b7c242',1,'dpp::embed_author']]],
-  ['proxy_5furl_31',['proxy_url',['../structdpp_1_1embed__footer.html#aba53ba63861ea7dc412973c274923b6d',1,'dpp::embed_footer::proxy_url()'],['../structdpp_1_1embed__image.html#a156faedb90a1c9a6d9d10d7eb2d1000a',1,'dpp::embed_image::proxy_url()'],['../structdpp_1_1attachment.html#ac3fa01bbb9915006c0a11db9ed386749',1,'dpp::attachment::proxy_url()']]],
-  ['public_5fupdates_5fchannel_5fid_32',['public_updates_channel_id',['../classdpp_1_1guild.html#a10f966d4bc54c233a1ecd6a24ca80dc3',1,'dpp::guild']]]
+  ['protocol_27',['protocol',['../classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7',1,'dpp::discord_client']]],
+  ['provider_28',['provider',['../structdpp_1_1embed.html#a689c7c16c458de20b1998b532364be0d',1,'dpp::embed']]],
+  ['proxy_5ficon_5furl_29',['proxy_icon_url',['../structdpp_1_1embed__author.html#a7b5bda59d7afeca91450d57c72b7c242',1,'dpp::embed_author']]],
+  ['proxy_5furl_30',['proxy_url',['../structdpp_1_1embed__footer.html#aba53ba63861ea7dc412973c274923b6d',1,'dpp::embed_footer::proxy_url()'],['../structdpp_1_1embed__image.html#a156faedb90a1c9a6d9d10d7eb2d1000a',1,'dpp::embed_image::proxy_url()'],['../structdpp_1_1attachment.html#ac3fa01bbb9915006c0a11db9ed386749',1,'dpp::attachment::proxy_url()']]],
+  ['public_5fupdates_5fchannel_5fid_31',['public_updates_channel_id',['../classdpp_1_1guild.html#a10f966d4bc54c233a1ecd6a24ca80dc3',1,'dpp::guild']]]
 ];

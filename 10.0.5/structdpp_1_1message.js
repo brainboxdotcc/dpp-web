@@ -5,7 +5,7 @@ var structdpp_1_1message =
     [ "message_ref", "structdpp_1_1message_1_1message__ref.html", "structdpp_1_1message_1_1message__ref" ],
     [ "message", "structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756", null ],
     [ "message", "structdpp_1_1message.html#a656487248fe1e16ba79930a2078a964d", null ],
-    [ "~message", "structdpp_1_1message.html#a4b176cfde5ca415d09dedf3d6156ee97", null ],
+    [ "~message", "structdpp_1_1message.html#ae86c2685660a8367bdd02a6bb67e0b45", null ],
     [ "message", "structdpp_1_1message.html#a21466e050ee9c0646392ccf5940bb62a", null ],
     [ "message", "structdpp_1_1message.html#a0e71afdc706c7ae83934ddfd8c2ffc38", null ],
     [ "message", "structdpp_1_1message.html#a45a0883a10a19e933fbba682aba212f6", null ],

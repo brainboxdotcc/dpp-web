@@ -10,7 +10,7 @@ var classhttplib_1_1_server =
       [ "Unhandled", "classhttplib_1_1_server.html#a68cf8c175834bde61120ac4216ea943ba6fe9e16b804e1ce4ac5868be60615007", null ]
     ] ],
     [ "Server", "classhttplib_1_1_server.html#a55b2afc239586d61c9208039efd970ae", null ],
-    [ "~Server", "classhttplib_1_1_server.html#af115868f3665c97326770b7fa87c6cce", null ],
+    [ "~Server", "classhttplib_1_1_server.html#a5e58ae2731449737b4d01a40c9d3a293", null ],
     [ "bind_to_any_port", "classhttplib_1_1_server.html#a0aa8209ee4fe36ffb42302836214d159", null ],
     [ "bind_to_port", "classhttplib_1_1_server.html#acf36d16b4004a4a7deba69e695b1b48f", null ],
     [ "Delete", "classhttplib_1_1_server.html#a57f9e5b3cffa12d0a252d7b85b07bef4", null ],
@@ -20,7 +20,7 @@ var classhttplib_1_1_server =
     [ "Get", "classhttplib_1_1_server.html#ac989dfa5f91ca6a6a6fe05afbd5b1455", null ],
     [ "Get", "classhttplib_1_1_server.html#ad56965be97a376db7f7c65429739accb", null ],
     [ "is_running", "classhttplib_1_1_server.html#a93a632ffae8eea0380daaac719cba06c", null ],
-    [ "is_valid", "classhttplib_1_1_server.html#a4f02314a47adbae984a7483e8e820c05", null ],
+    [ "is_valid", "classhttplib_1_1_server.html#addd9edfcde3b07e4844ce81d2801a032", null ],
     [ "listen", "classhttplib_1_1_server.html#a8249e88ea3730e87ec8ed1f9a717220f", null ],
     [ "listen_after_bind", "classhttplib_1_1_server.html#a3e50f66dfe531fe18590aa421ef2595f", null ],
     [ "Options", "classhttplib_1_1_server.html#ad6c25614bab97b5165df8471bbe2fbd1", null ],

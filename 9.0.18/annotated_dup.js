@@ -185,7 +185,6 @@ var annotated_dup =
       [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
       [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
       [ "oneshot_timer", "classdpp_1_1oneshot__timer.html", "classdpp_1_1oneshot__timer" ],
-      [ "opensslcontext", "classdpp_1_1opensslcontext.html", "classdpp_1_1opensslcontext" ],
       [ "param_info", "structdpp_1_1param__info.html", "structdpp_1_1param__info" ],
       [ "parse_exception", "classdpp_1_1parse__exception.html", "classdpp_1_1parse__exception" ],
       [ "permission_overwrite", "structdpp_1_1permission__overwrite.html", "structdpp_1_1permission__overwrite" ],
@@ -201,7 +200,6 @@ var annotated_dup =
       [ "resumed_t", "structdpp_1_1resumed__t.html", "structdpp_1_1resumed__t" ],
       [ "role", "classdpp_1_1role.html", "classdpp_1_1role" ],
       [ "role_collector", "classdpp_1_1role__collector.html", "classdpp_1_1role__collector" ],
-      [ "rtp_header", "structdpp_1_1rtp__header.html", "structdpp_1_1rtp__header" ],
       [ "scheduled_event", "structdpp_1_1scheduled__event.html", "structdpp_1_1scheduled__event" ],
       [ "scheduled_event_collector", "classdpp_1_1scheduled__event__collector.html", "classdpp_1_1scheduled__event__collector" ],
       [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
@@ -250,23 +248,11 @@ var annotated_dup =
       [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
       [ "welcome_channel_t", "structdpp_1_1welcome__channel__t.html", "structdpp_1_1welcome__channel__t" ],
-      [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ],
-      [ "zlibcontext", "classdpp_1_1zlibcontext.html", "classdpp_1_1zlibcontext" ]
+      [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ]
     ] ],
     [ "httplib", "namespacehttplib.html", [
       [ "detail", "namespacehttplib_1_1detail.html", [
-        [ "BufferStream", "classhttplib_1_1detail_1_1_buffer_stream.html", "classhttplib_1_1detail_1_1_buffer_stream" ],
-        [ "ci", "structhttplib_1_1detail_1_1ci.html", "structhttplib_1_1detail_1_1ci" ],
-        [ "compressor", "classhttplib_1_1detail_1_1compressor.html", "classhttplib_1_1detail_1_1compressor" ],
-        [ "ContentProviderAdapter", "classhttplib_1_1detail_1_1_content_provider_adapter.html", "classhttplib_1_1detail_1_1_content_provider_adapter" ],
-        [ "decompressor", "classhttplib_1_1detail_1_1decompressor.html", "classhttplib_1_1detail_1_1decompressor" ],
-        [ "MultipartFormDataParser", "classhttplib_1_1detail_1_1_multipart_form_data_parser.html", "classhttplib_1_1detail_1_1_multipart_form_data_parser" ],
-        [ "nocompressor", "classhttplib_1_1detail_1_1nocompressor.html", "classhttplib_1_1detail_1_1nocompressor" ],
-        [ "SocketStream", "classhttplib_1_1detail_1_1_socket_stream.html", "classhttplib_1_1detail_1_1_socket_stream" ],
-        [ "SSLInit", "classhttplib_1_1detail_1_1_s_s_l_init.html", "classhttplib_1_1detail_1_1_s_s_l_init" ],
-        [ "SSLSocketStream", "classhttplib_1_1detail_1_1_s_s_l_socket_stream.html", "classhttplib_1_1detail_1_1_s_s_l_socket_stream" ],
-        [ "SSLThreadLocks", "classhttplib_1_1detail_1_1_s_s_l_thread_locks.html", "classhttplib_1_1detail_1_1_s_s_l_thread_locks" ],
-        [ "stream_line_reader", "classhttplib_1_1detail_1_1stream__line__reader.html", "classhttplib_1_1detail_1_1stream__line__reader" ]
+        [ "ci", "structhttplib_1_1detail_1_1ci.html", "structhttplib_1_1detail_1_1ci" ]
       ] ],
       [ "Client", "classhttplib_1_1_client.html", "classhttplib_1_1_client" ],
       [ "ClientImpl", "classhttplib_1_1_client_impl.html", "classhttplib_1_1_client_impl" ],
@@ -280,11 +266,5 @@ var annotated_dup =
       [ "Stream", "classhttplib_1_1_stream.html", "classhttplib_1_1_stream" ],
       [ "TaskQueue", "classhttplib_1_1_task_queue.html", "classhttplib_1_1_task_queue" ],
       [ "ThreadPool", "classhttplib_1_1_thread_pool.html", "classhttplib_1_1_thread_pool" ]
-    ] ],
-    [ "message_collector", "classmessage__collector.html", "classmessage__collector" ],
-    [ "OpusDecoder", "struct_opus_decoder.html", null ],
-    [ "OpusEncoder", "struct_opus_encoder.html", null ],
-    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
-    [ "test_cached_object_t", "classtest__cached__object__t.html", "classtest__cached__object__t" ],
-    [ "test_t", "structtest__t.html", "structtest__t" ]
+    ] ]
 ];

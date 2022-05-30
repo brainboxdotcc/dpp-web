@@ -23,8 +23,7 @@ var searchData=
   ['role_5fedit_20',['role_edit',['../classdpp_1_1cluster.html#a24cc5286955e6641d574d232d8b47f55',1,'dpp::cluster']]],
   ['roles_5fedit_5fposition_21',['roles_edit_position',['../classdpp_1_1cluster.html#a1ad79e8ba52e11abc9360bf06b15b2a7',1,'dpp::cluster']]],
   ['roles_5fget_22',['roles_get',['../classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219',1,'dpp::cluster']]],
-  ['route_23',['route',['../classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3',1,'dpp::commandhandler::route(const struct interaction_create_t &amp;event)'],['../classdpp_1_1commandhandler.html#a957dfe206c80cd7176e7ab663e9a1bf2',1,'dpp::commandhandler::route(const struct dpp::message_create_t &amp;event)']]],
-  ['rtp_5fheader_24',['rtp_header',['../structdpp_1_1rtp__header.html#acc1b39793e54cb2caf586cf65e2d42bd',1,'dpp::rtp_header']]],
-  ['run_25',['run',['../classdpp_1_1discord__voice__client.html#a418f98812e850eb963e4b3a2a4dc0c74',1,'dpp::discord_voice_client::run()'],['../classdpp_1_1http__request.html#a3693b97e3f58505fa4187a86eecaaa39',1,'dpp::http_request::run()'],['../classdpp_1_1discord__client.html#ae659e7343de4a120d14f1b81e9535ea0',1,'dpp::discord_client::run()']]],
-  ['run_5fonce_26',['run_once',['../namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0',1,'dpp']]]
+  ['route_23',['route',['../classdpp_1_1commandhandler.html#a957dfe206c80cd7176e7ab663e9a1bf2',1,'dpp::commandhandler::route(const struct dpp::message_create_t &amp;event)'],['../classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3',1,'dpp::commandhandler::route(const struct interaction_create_t &amp;event)']]],
+  ['run_24',['run',['../classdpp_1_1http__request.html#a3693b97e3f58505fa4187a86eecaaa39',1,'dpp::http_request::run()'],['../classdpp_1_1discord__voice__client.html#a418f98812e850eb963e4b3a2a4dc0c74',1,'dpp::discord_voice_client::run()'],['../classdpp_1_1discord__client.html#ae659e7343de4a120d14f1b81e9535ea0',1,'dpp::discord_client::run()']]],
+  ['run_5fonce_25',['run_once',['../namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0',1,'dpp']]]
 ];

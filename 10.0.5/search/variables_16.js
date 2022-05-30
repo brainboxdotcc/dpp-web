@@ -9,13 +9,7 @@ var searchData=
   ['welcome_5fscreen_6',['welcome_screen',['../classdpp_1_1guild.html#a5a37b855f93b3fcd6ce083329dace4f1',1,'dpp::guild']]],
   ['white_7',['white',['../namespacedpp_1_1colors.html#ac9d616dd5c25d82057d6618f6b1dbf12',1,'dpp::colors']]],
   ['widget_5fchannel_5fid_8',['widget_channel_id',['../classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01',1,'dpp::guild']]],
-  ['width_9',['width',['../structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5',1,'dpp::attachment::width()'],['../structdpp_1_1embed__image.html#aa92eade95917fe8ebc72ec7f6e035767',1,'dpp::embed_image::width()']]],
+  ['width_9',['width',['../structdpp_1_1embed__image.html#aa92eade95917fe8ebc72ec7f6e035767',1,'dpp::embed_image::width()'],['../structdpp_1_1attachment.html#a62039388d0f56e389a538b32716e44c5',1,'dpp::attachment::width()']]],
   ['wrx_5fblue_10',['wrx_blue',['../namespacedpp_1_1colors.html#ab62fcafe0a6fdf4a995683942a301195',1,'dpp::colors']]],
-  ['ws_5ffinbit_11',['WS_FINBIT',['../namespacedpp.html#a9f1a62eaba2a019735abc7101cffee69',1,'dpp']]],
-  ['ws_5fmaskbit_12',['WS_MASKBIT',['../namespacedpp.html#ab5f42fb08301629416cbca4d5412c0fd',1,'dpp']]],
-  ['ws_5fmax_5fpayload_5flength_5flarge_13',['WS_MAX_PAYLOAD_LENGTH_LARGE',['../namespacedpp.html#a657e035c24d7cdf888ba40868167f098',1,'dpp']]],
-  ['ws_5fmax_5fpayload_5flength_5fsmall_14',['WS_MAX_PAYLOAD_LENGTH_SMALL',['../namespacedpp.html#a50b421a786601a401c22eccf3069d0f8',1,'dpp']]],
-  ['ws_5fmode_15',['ws_mode',['../classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551',1,'dpp::cluster']]],
-  ['ws_5fpayload_5flength_5fmagic_5fhuge_16',['WS_PAYLOAD_LENGTH_MAGIC_HUGE',['../namespacedpp.html#ac49a4ce7276ce7386399c5cf020895f6',1,'dpp']]],
-  ['ws_5fpayload_5flength_5fmagic_5flarge_17',['WS_PAYLOAD_LENGTH_MAGIC_LARGE',['../namespacedpp.html#ae6fd1619d39b4a2d583c09248f32cbe8',1,'dpp']]]
+  ['ws_5fmode_11',['ws_mode',['../classdpp_1_1cluster.html#ae10466db79966215a799fc2a30010551',1,'dpp::cluster']]]
 ];

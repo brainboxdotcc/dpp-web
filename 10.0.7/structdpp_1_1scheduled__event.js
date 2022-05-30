@@ -2,7 +2,7 @@ var structdpp_1_1scheduled__event =
 [
     [ "scheduled_event", "structdpp_1_1scheduled__event.html#a4b4a32d20426b9a559e4ec0b86e049d1", null ],
     [ "~scheduled_event", "structdpp_1_1scheduled__event.html#ab23f053c09b3f8fcce9041073de156c2", null ],
-    [ "build_json", "structdpp_1_1scheduled__event.html#ada41e25b4d3e381611b76e7704d724ee", null ],
+    [ "build_json", "structdpp_1_1scheduled__event.html#ae5bc4ff201f857380ff01cbb2f4b4ddc", null ],
     [ "clear_description", "structdpp_1_1scheduled__event.html#a9d315ff12641d8318989556769269c4a", null ],
     [ "fill_from_json", "structdpp_1_1scheduled__event.html#a99bff586aef0ff58f4d16367f948e997", null ],
     [ "fill_from_json", "structdpp_1_1scheduled__event.html#ab47175b6c586e2fc901b1ff0182f16ea", null ],

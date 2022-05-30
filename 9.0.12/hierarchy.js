@@ -29,16 +29,11 @@ var hierarchy =
     [ "dpp::commandhandler", "classdpp_1_1commandhandler.html", null ],
     [ "dpp::component", "classdpp_1_1component.html", null ],
     [ "dpp::component_interaction", "structdpp_1_1component__interaction.html", null ],
-    [ "httplib::detail::compressor", "classhttplib_1_1detail_1_1compressor.html", [
-      [ "httplib::detail::nocompressor", "classhttplib_1_1detail_1_1nocompressor.html", null ]
-    ] ],
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
     [ "dpp::connection", "classdpp_1_1connection.html", null ],
-    [ "httplib::detail::ContentProviderAdapter", "classhttplib_1_1detail_1_1_content_provider_adapter.html", null ],
     [ "httplib::ContentReader", "classhttplib_1_1_content_reader.html", null ],
     [ "httplib::DataSink", "classhttplib_1_1_data_sink.html", null ],
-    [ "httplib::detail::decompressor", "classhttplib_1_1detail_1_1decompressor.html", null ],
     [ "dpp::dispatcher", "classdpp_1_1dispatcher.html", null ],
     [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
@@ -210,11 +205,6 @@ var hierarchy =
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "httplib::MultipartFormData", "structhttplib_1_1_multipart_form_data.html", null ],
-    [ "httplib::detail::MultipartFormDataParser", "classhttplib_1_1detail_1_1_multipart_form_data_parser.html", null ],
-    [ "dpp::opensslcontext", "classdpp_1_1opensslcontext.html", null ],
-    [ "OpusDecoder", "struct_opus_decoder.html", null ],
-    [ "OpusEncoder", "struct_opus_encoder.html", null ],
-    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
     [ "dpp::presence", "classdpp_1_1presence.html", null ],
@@ -225,7 +215,6 @@ var hierarchy =
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "httplib::Response", "structhttplib_1_1_response.html", null ],
     [ "httplib::Result", "classhttplib_1_1_result.html", null ],
-    [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "dpp::select_option", "structdpp_1_1select__option.html", null ],
     [ "httplib::Server", "classhttplib_1_1_server.html", null ],
     [ "httplib::ClientImpl::Socket", "structhttplib_1_1_client_impl_1_1_socket.html", null ],
@@ -235,22 +224,14 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
-    [ "httplib::detail::SSLInit", "classhttplib_1_1detail_1_1_s_s_l_init.html", null ],
-    [ "httplib::detail::SSLThreadLocks", "classhttplib_1_1detail_1_1_s_s_l_thread_locks.html", null ],
     [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
     [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
     [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
-    [ "httplib::Stream", "classhttplib_1_1_stream.html", [
-      [ "httplib::detail::BufferStream", "classhttplib_1_1detail_1_1_buffer_stream.html", null ],
-      [ "httplib::detail::SSLSocketStream", "classhttplib_1_1detail_1_1_s_s_l_socket_stream.html", null ],
-      [ "httplib::detail::SocketStream", "classhttplib_1_1detail_1_1_socket_stream.html", null ]
-    ] ],
-    [ "httplib::detail::stream_line_reader", "classhttplib_1_1detail_1_1stream__line__reader.html", null ],
+    [ "httplib::Stream", "classhttplib_1_1_stream.html", null ],
     [ "httplib::TaskQueue", "classhttplib_1_1_task_queue.html", [
       [ "httplib::ThreadPool", "classhttplib_1_1_thread_pool.html", null ]
     ] ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
-    [ "test_t", "structtest__t.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
@@ -260,6 +241,5 @@ var hierarchy =
     [ "dpp::voiceregion", "classdpp_1_1voiceregion.html", null ],
     [ "dpp::voicestate", "classdpp_1_1voicestate.html", null ],
     [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
-    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ],
-    [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
+    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ]
 ];

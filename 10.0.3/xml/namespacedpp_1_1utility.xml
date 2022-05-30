@@ -102,20 +102,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="namespacedpp_1_1utility_1a3ad5a66f941e42982a8615279d61c600" prot="public" static="yes" mutable="no">
-        <type>const char *</type>
-        <definition>const char* dpp::utility::hex</definition>
-        <argsstring></argsstring>
-        <name>hex</name>
-        <initializer>= &quot;0123456789ABCDEF&quot;</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="370" column="19" bodyfile="src/dpp/utility.cpp" bodystart="370" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="namespacedpp_1_1utility_1a4cf040349b0a45ef90863effb892ece6" prot="public" static="no" mutable="no">
         <type>const std::string</type>
         <definition>const std::string dpp::utility::cdn_host</definition>
@@ -133,267 +119,27 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a1184092d62c7ab561cb3f60a92f71b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double DPP_EXPORT dpp::utility::time_f</definition>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::function&lt; void(const <ref refid="structdpp_1_1log__t" kindref="compound">dpp::log_t</ref> &amp;)&gt; DPP_EXPORT</type>
+        <definition>std::function&lt; void(const dpp::log_t &amp;)&gt; DPP_EXPORT dpp::utility::cout_logger</definition>
         <argsstring>()</argsstring>
-        <name>time_f</name>
+        <name>cout_logger</name>
         <briefdescription>
-<para>Return the current time with fractions of seconds. This is a unix epoch time with the fractional seconds part after the decimal place. </para>
+<para>Get a default logger that outputs to std::cout. e.g. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>double time with fractional seconds </para>
+<para><programlisting><codeline><highlight class="normal">bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="return"><para>A logger for attaching to on_log </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="52" column="8" bodyfile="src/dpp/utility.cpp" bodystart="52" bodyend="57" declfile="include/dpp/utility.h" declline="178" declcolumn="19"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a9d70739d6485741d1617c359ec70d1f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool DPP_EXPORT dpp::utility::has_voice</definition>
-        <argsstring>()</argsstring>
-        <name>has_voice</name>
-        <briefdescription>
-<para>Returns true if D++ was built with voice support. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>bool True if voice support is compiled in (libsodium/libopus) </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="59" column="6" bodyfile="src/dpp/utility.cpp" bodystart="59" bodyend="65" declfile="include/dpp/utility.h" declline="185" declcolumn="17"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a1a9168eaaf347543e55e607858f24eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::current_date_time</definition>
-        <argsstring>()</argsstring>
-        <name>current_date_time</name>
-        <briefdescription>
-<para>Returns current date and time. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string Current date and time </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="67" column="13" bodyfile="src/dpp/utility.cpp" bodystart="67" bodyend="79" declfile="include/dpp/utility.h" declline="105" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1acae9e089e4b7cfd9745235f86455c045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::loglevel</definition>
-        <argsstring>(dpp::loglevel in)</argsstring>
-        <name>loglevel</name>
-        <param>
-          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
-          <declname>in</declname>
-        </param>
-        <briefdescription>
-<para>Convert a <ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref> enum value to a string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>in</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>log level to convert </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string string form of log level </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="81" column="13" bodyfile="src/dpp/utility.cpp" bodystart="81" bodyend="91" declfile="include/dpp/utility.h" declline="112" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a02456e22a1d41893a9b321bf8ccaeec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::debug_dump</definition>
-        <argsstring>(uint8_t *data, size_t length)</argsstring>
-        <name>debug_dump</name>
-        <param>
-          <type>uint8_t *</type>
-          <declname>data</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>length</declname>
-        </param>
-        <briefdescription>
-<para>Output hex values of a section of memory for debugging. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>data</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The start of the data to display </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>length</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The length of data to display </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="159" column="13" bodyfile="src/dpp/utility.cpp" bodystart="159" bodyend="182" declfile="include/dpp/utility.h" declline="273" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1af74cf004f32b11f0f804968c64bb3d08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::bytes</definition>
-        <argsstring>(uint64_t c)</argsstring>
-        <name>bytes</name>
-        <param>
-          <type>uint64_t</type>
-          <declname>c</declname>
-        </param>
-        <briefdescription>
-<para>Convert a byte count to display value. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>c</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>number of bytes </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string display value suffixed with M, G, T where necessary </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="184" column="13" bodyfile="src/dpp/utility.cpp" bodystart="184" bodyend="196" declfile="include/dpp/utility.h" declline="193" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a2ab5fc7a9fd0ac6358c3c7133b563362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::utility::rgb</definition>
-        <argsstring>(float red, float green, float blue)</argsstring>
-        <name>rgb</name>
-        <param>
-          <type>float</type>
-          <declname>red</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>green</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>blue</declname>
-        </param>
-        <briefdescription>
-<para>Convert floats to RGB for sending in embeds. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>red</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>red value, between 0 and 1 inclusive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>green</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>green value, between 0 and 1 inclusive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>blue</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>blue value, between 0 and 1 inclusive </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>uint32_t returned integer colour value </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="198" column="10" bodyfile="src/dpp/utility.cpp" bodystart="198" bodyend="200" declfile="include/dpp/utility.h" declline="255" declcolumn="10"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1ad5e546b73411540fa9541b25deccdacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::utility::rgb</definition>
-        <argsstring>(int red, int green, int blue)</argsstring>
-        <name>rgb</name>
-        <param>
-          <type>int</type>
-          <declname>red</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>green</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>blue</declname>
-        </param>
-        <briefdescription>
-<para>Convert ints to RGB for sending in embeds. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>red</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>red value, between 0 and 255 inclusive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>green</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>green value, between 0 and 255 inclusive </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>blue</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>blue value, between 0 and 255 inclusive </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>uint32_t returned integer colour value </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="203" column="10" bodyfile="src/dpp/utility.cpp" bodystart="203" bodyend="205" declfile="include/dpp/utility.h" declline="265" declcolumn="10"/>
+        <location file="include/dpp/dispatcher.h" line="128" column="26" declfile="include/dpp/dispatcher.h" declline="128" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ac7d516c03d572fe65d01c4ec5e92c6f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::utility::exec</definition>
         <argsstring>(const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters={}, cmd_result_t callback={})</argsstring>
         <name>exec</name>
@@ -448,10 +194,311 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="207" column="6" bodyfile="src/dpp/utility.cpp" bodystart="207" bodyend="231" declfile="include/dpp/utility.h" declline="89" declcolumn="17"/>
+        <location file="include/dpp/utility.h" line="89" column="17" declfile="include/dpp/utility.h" declline="89" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a62891c981320f9cc4edfbbf9990428c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::timestamp</definition>
+        <argsstring>(time_t ts, time_format tf)</argsstring>
+        <name>timestamp</name>
+        <param>
+          <type>time_t</type>
+          <declname>ts</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1_1utility_1a097ec42bcbedfed6ab1e4f12bf84cab7" kindref="member">time_format</ref></type>
+          <declname>tf</declname>
+        </param>
+        <briefdescription>
+<para>Return a mentionable timestamp (used in a discord embed). These timestamps will display the given timestamp in the user&apos;s timezone and locale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time stamp to convert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format of timestamp using <ref refid="namespacedpp_1_1utility_1a097ec42bcbedfed6ab1e4f12bf84cab7" kindref="member">dpp::utility::time_format</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string The formatted timestamp </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="98" column="24" declfile="include/dpp/utility.h" declline="98" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a1a9168eaaf347543e55e607858f24eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::current_date_time</definition>
+        <argsstring>()</argsstring>
+        <name>current_date_time</name>
+        <briefdescription>
+<para>Returns current date and time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string Current date and time </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="105" column="24" declfile="include/dpp/utility.h" declline="105" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1acae9e089e4b7cfd9745235f86455c045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::loglevel</definition>
+        <argsstring>(dpp::loglevel in)</argsstring>
+        <name>loglevel</name>
+        <param>
+          <type><ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref></type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Convert a <ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2" kindref="member">dpp::loglevel</ref> enum value to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>log level to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string string form of log level </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="112" column="24" declfile="include/dpp/utility.h" declline="112" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a1184092d62c7ab561cb3f60a92f71b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double DPP_EXPORT</type>
+        <definition>double DPP_EXPORT dpp::utility::time_f</definition>
+        <argsstring>()</argsstring>
+        <name>time_f</name>
+        <briefdescription>
+<para>Return the current time with fractions of seconds. This is a unix epoch time with the fractional seconds part after the decimal place. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double time with fractional seconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="178" column="19" declfile="include/dpp/utility.h" declline="178" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a9d70739d6485741d1617c359ec70d1f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool DPP_EXPORT</type>
+        <definition>bool DPP_EXPORT dpp::utility::has_voice</definition>
+        <argsstring>()</argsstring>
+        <name>has_voice</name>
+        <briefdescription>
+<para>Returns true if D++ was built with voice support. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool True if voice support is compiled in (libsodium/libopus) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="185" column="17" declfile="include/dpp/utility.h" declline="185" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1af74cf004f32b11f0f804968c64bb3d08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::bytes</definition>
+        <argsstring>(uint64_t c)</argsstring>
+        <name>bytes</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Convert a byte count to display value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string display value suffixed with M, G, T where necessary </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="193" column="24" declfile="include/dpp/utility.h" declline="193" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a2ab5fc7a9fd0ac6358c3c7133b563362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::utility::rgb</definition>
+        <argsstring>(float red, float green, float blue)</argsstring>
+        <name>rgb</name>
+        <param>
+          <type>float</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Convert floats to RGB for sending in embeds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>red value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>green value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>blue value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t returned integer colour value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="255" column="10" declfile="include/dpp/utility.h" declline="255" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1ad5e546b73411540fa9541b25deccdacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::utility::rgb</definition>
+        <argsstring>(int red, int green, int blue)</argsstring>
+        <name>rgb</name>
+        <param>
+          <type>int</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Convert ints to RGB for sending in embeds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>red value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>green value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>blue value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t returned integer colour value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="265" column="10" declfile="include/dpp/utility.h" declline="265" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a02456e22a1d41893a9b321bf8ccaeec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::debug_dump</definition>
+        <argsstring>(uint8_t *data, size_t length)</argsstring>
+        <name>debug_dump</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Output hex values of a section of memory for debugging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start of the data to display </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of data to display </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="273" column="24" declfile="include/dpp/utility.h" declline="273" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a62cc8fc3994f6b3d49cf4923b993c231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>size_t</type>
+        <type>size_t DPP_EXPORT</type>
         <definition>size_t DPP_EXPORT dpp::utility::utf8len</definition>
         <argsstring>(const std::string &amp;str)</argsstring>
         <name>utf8len</name>
@@ -478,10 +525,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="233" column="8" bodyfile="src/dpp/utility.cpp" bodystart="233" bodyend="269" declfile="include/dpp/utility.h" declline="281" declcolumn="19"/>
+        <location file="include/dpp/utility.h" line="281" column="19" declfile="include/dpp/utility.h" declline="281" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1afa6985aaa798fa30b73c1decc418cd32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::utf8substr</definition>
         <argsstring>(const std::string &amp;str, std::string::size_type start, std::string::size_type length)</argsstring>
         <name>utf8substr</name>
@@ -532,10 +579,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="271" column="13" bodyfile="src/dpp/utility.cpp" bodystart="271" bodyend="305" declfile="include/dpp/utility.h" declline="291" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="291" column="24" declfile="include/dpp/utility.h" declline="291" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a4e85ceba20c4ed2bfda15d806890428b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::read_file</definition>
         <argsstring>(const std::string &amp;filename)</argsstring>
         <name>read_file</name>
@@ -573,10 +620,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="307" column="13" bodyfile="src/dpp/utility.cpp" bodystart="307" bodyend="317" declfile="include/dpp/utility.h" declline="301" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="301" column="24" declfile="include/dpp/utility.h" declline="301" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a3da218e2645e8f07e3b83373505542ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::validate</definition>
         <argsstring>(const std::string &amp;value, size_t _min, size_t _max, const std::string &amp;exception_message)</argsstring>
         <name>validate</name>
@@ -648,52 +695,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="319" column="13" bodyfile="src/dpp/utility.cpp" bodystart="319" bodyend="326" declfile="include/dpp/utility.h" declline="315" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a62891c981320f9cc4edfbbf9990428c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::utility::timestamp</definition>
-        <argsstring>(time_t ts, time_format tf)</argsstring>
-        <name>timestamp</name>
-        <param>
-          <type>time_t</type>
-          <declname>ts</declname>
-        </param>
-        <param>
-          <type><ref refid="namespacedpp_1_1utility_1a097ec42bcbedfed6ab1e4f12bf84cab7" kindref="member">time_format</ref></type>
-          <declname>tf</declname>
-        </param>
-        <briefdescription>
-<para>Return a mentionable timestamp (used in a discord embed). These timestamps will display the given timestamp in the user&apos;s timezone and locale. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ts</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Time stamp to convert </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>tf</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Format of timestamp using <ref refid="namespacedpp_1_1utility_1a097ec42bcbedfed6ab1e4f12bf84cab7" kindref="member">dpp::utility::time_format</ref> </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string The formatted timestamp </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="329" column="13" bodyfile="src/dpp/utility.cpp" bodystart="329" bodyend="332" declfile="include/dpp/utility.h" declline="98" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="315" column="24" declfile="include/dpp/utility.h" declline="315" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a2e8cc2ce4c01244c9db877ab526ac9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::avatar_size</definition>
         <argsstring>(uint32_t size)</argsstring>
         <name>avatar_size</name>
@@ -720,10 +725,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="334" column="13" bodyfile="src/dpp/utility.cpp" bodystart="334" bodyend="339" declfile="include/dpp/utility.h" declline="323" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="323" column="24" declfile="include/dpp/utility.h" declline="323" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab65e758e198a195ad3fbcec3c534d2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
+        <type>std::vector&lt; std::string &gt; DPP_EXPORT</type>
         <definition>std::vector&lt; std::string &gt; DPP_EXPORT dpp::utility::tokenize</definition>
         <argsstring>(std::string const &amp;in, const char *sep=&quot;\r\n&quot;)</argsstring>
         <name>tokenize</name>
@@ -763,10 +768,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="341" column="13" bodyfile="src/dpp/utility.cpp" bodystart="341" bodyend="351" declfile="include/dpp/utility.h" declline="332" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="332" column="24" declfile="include/dpp/utility.h" declline="332" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a4be90a8bb2dd9eecf61e934592656c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::bot_invite_url</definition>
         <argsstring>(const snowflake bot_id, const uint64_t permissions=0, const std::vector&lt; std::string &gt; &amp;scopes={&quot;bot&quot;, &quot;applications.commands&quot;})</argsstring>
         <name>bot_invite_url</name>
@@ -819,119 +824,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="353" column="13" bodyfile="src/dpp/utility.cpp" bodystart="353" bodyend="359" declfile="include/dpp/utility.h" declline="342" declcolumn="24"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::function&lt; void(const <ref refid="structdpp_1_1log__t" kindref="compound">dpp::log_t</ref> &amp;)&gt;</type>
-        <definition>std::function&lt; void(const dpp::log_t &amp;)&gt; DPP_EXPORT dpp::utility::cout_logger</definition>
-        <argsstring>()</argsstring>
-        <name>cout_logger</name>
-        <briefdescription>
-<para>Get a default logger that outputs to std::cout. e.g. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><programlisting><codeline><highlight class="normal">bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="return"><para>A logger for attaching to on_log </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="361" column="15" bodyfile="src/dpp/utility.cpp" bodystart="361" bodyend="367" declfile="include/dpp/dispatcher.h" declline="128" declcolumn="26"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a30bfdbaa8e838cd2e725c10f956034f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::utility::url_encode</definition>
-        <argsstring>(const std::string &amp;value)</argsstring>
-        <name>url_encode</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-<para>Encodes a url parameter similar to php urlencode() </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>value</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>String to encode </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string URL encoded string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="372" column="13" bodyfile="src/dpp/utility.cpp" bodystart="372" bodyend="390" declfile="include/dpp/utility.h" declline="362" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a1d68e6151fe398398ec31305970419e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::utility::make_url_parameters</definition>
-        <argsstring>(const std::map&lt; std::string, std::string &gt; &amp;parameters)</argsstring>
-        <name>make_url_parameters</name>
-        <param>
-          <type>const std::map&lt; std::string, std::string &gt; &amp;</type>
-          <declname>parameters</declname>
-        </param>
-        <briefdescription>
-<para>Build a URL parameter string e.g. &quot;a=b&amp;c=d&amp;e=f&quot; from a map of key/value pairs. Entries with empty key names or values are omitted. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>parameters</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>parameters to create a url query string for </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string A correctly encoded url query string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="392" column="13" bodyfile="src/dpp/utility.cpp" bodystart="392" bodyend="403" declfile="include/dpp/utility.h" declline="378" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1abd913ffc73d921f4ded794338ec62cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::utility::make_url_parameters</definition>
-        <argsstring>(const std::map&lt; std::string, uint64_t &gt; &amp;parameters)</argsstring>
-        <name>make_url_parameters</name>
-        <param>
-          <type>const std::map&lt; std::string, uint64_t &gt; &amp;</type>
-          <declname>parameters</declname>
-        </param>
-        <briefdescription>
-<para>Build a URL parameter string e.g. &quot;a=b&amp;c=d&amp;e=f&quot; from a map of key/value pairs. Entries with empty key names or zero values are omitted. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>parameters</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>parameters to create a url query string for </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string A correctly encoded url query string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="405" column="13" bodyfile="src/dpp/utility.cpp" bodystart="405" bodyend="413" declfile="include/dpp/utility.h" declline="387" declcolumn="13"/>
+        <location file="include/dpp/utility.h" line="342" column="24" declfile="include/dpp/utility.h" declline="342" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a2cd10adca7586a99a6fd350bb601f407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::markdown_escape</definition>
         <argsstring>(const std::string &amp;text, bool escape_code_blocks=false)</argsstring>
         <name>markdown_escape</name>
@@ -970,12 +866,38 @@
 </para>
         </detaileddescription>
         <inbodydescription>
-<para>Represents the current state of the finite state machine for the markdown_escape function.</para>
-<para>normal text</para>
-<para>a paragraph code block, represented by three backticks</para>
-<para>an inline code block, represented by one backtick</para>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="415" column="13" bodyfile="src/dpp/utility.cpp" bodystart="415" bodyend="455" declfile="include/dpp/utility.h" declline="354" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="354" column="24" declfile="include/dpp/utility.h" declline="354" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a30bfdbaa8e838cd2e725c10f956034f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::utility::url_encode</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>url_encode</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Encodes a url parameter similar to php urlencode() </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to encode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string URL encoded string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="362" column="13" declfile="include/dpp/utility.h" declline="362" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a1cb30e93306604a6cf8eb93342b623c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -992,7 +914,67 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/utility.cpp" line="457" column="13" bodyfile="src/dpp/utility.cpp" bodystart="457" bodyend="459" declfile="include/dpp/utility.h" declline="369" declcolumn="13"/>
+        <location file="include/dpp/utility.h" line="369" column="13" declfile="include/dpp/utility.h" declline="369" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a1d68e6151fe398398ec31305970419e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::utility::make_url_parameters</definition>
+        <argsstring>(const std::map&lt; std::string, std::string &gt; &amp;parameters)</argsstring>
+        <name>make_url_parameters</name>
+        <param>
+          <type>const std::map&lt; std::string, std::string &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+<para>Build a URL parameter string e.g. &quot;a=b&amp;c=d&amp;e=f&quot; from a map of key/value pairs. Entries with empty key names or values are omitted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameters to create a url query string for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string A correctly encoded url query string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="378" column="13" declfile="include/dpp/utility.h" declline="378" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1abd913ffc73d921f4ded794338ec62cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::utility::make_url_parameters</definition>
+        <argsstring>(const std::map&lt; std::string, uint64_t &gt; &amp;parameters)</argsstring>
+        <name>make_url_parameters</name>
+        <param>
+          <type>const std::map&lt; std::string, uint64_t &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+<para>Build a URL parameter string e.g. &quot;a=b&amp;c=d&amp;e=f&quot; from a map of key/value pairs. Entries with empty key names or zero values are omitted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameters to create a url query string for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string A correctly encoded url query string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="387" column="13" declfile="include/dpp/utility.h" declline="387" declcolumn="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1000,6 +982,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/dpp/utility.cpp" line="50" column="1"/>
+    <location file="include/dpp/dispatcher.h" line="118" column="1"/>
   </compounddef>
 </doxygen>

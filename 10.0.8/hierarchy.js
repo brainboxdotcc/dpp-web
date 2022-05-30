@@ -12,16 +12,13 @@ var hierarchy =
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
     [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
-    [ "detail::basic_data< T >", "structdetail_1_1basic__data.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
     [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
     [ "dpp::collector< T, C >", "classdpp_1_1collector.html", [
       [ "dpp::channel_collector", "classdpp_1_1channel__collector.html", null ],
-      [ "dpp::message_collector", "classdpp_1_1message__collector.html", [
-        [ "message_collector", "classmessage__collector.html", null ]
-      ] ],
+      [ "dpp::message_collector", "classdpp_1_1message__collector.html", null ],
       [ "dpp::reaction_collector", "classdpp_1_1reaction__collector.html", null ],
       [ "dpp::role_collector", "classdpp_1_1role__collector.html", null ],
       [ "dpp::scheduled_event_collector", "classdpp_1_1scheduled__event__collector.html", null ],
@@ -309,7 +306,6 @@ var hierarchy =
     [ "dpp::json_interface< webhook >", "structdpp_1_1json__interface.html", [
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
-    [ "dpp::keepalive_cache_t", "structdpp_1_1keepalive__cache__t.html", null ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ],
       [ "dpp::channel", "classdpp_1_1channel.html", null ],
@@ -326,23 +322,17 @@ var hierarchy =
       [ "dpp::sticker", "structdpp_1_1sticker.html", null ],
       [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ],
       [ "dpp::user", "classdpp_1_1user.html", null ],
-      [ "dpp::webhook", "classdpp_1_1webhook.html", null ],
-      [ "test_cached_object_t", "classtest__cached__object__t.html", null ]
+      [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
     [ "dpp::multipart_content", "structdpp_1_1multipart__content.html", null ],
     [ "dpp::oneshot_timer", "classdpp_1_1oneshot__timer.html", null ],
-    [ "dpp::openssl_connection", "classdpp_1_1openssl__connection.html", null ],
-    [ "OpusDecoder", "struct_opus_decoder.html", null ],
-    [ "OpusEncoder", "struct_opus_encoder.html", null ],
-    [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
-    [ "dpp::rtp_header", "structdpp_1_1rtp__header.html", null ],
     [ "dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t", "structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
@@ -352,7 +342,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
-    [ "test_t", "structtest__t.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::timed_listener< attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
@@ -363,6 +352,5 @@ var hierarchy =
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
     [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
     [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
-    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ],
-    [ "dpp::zlibcontext", "classdpp_1_1zlibcontext.html", null ]
+    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ]
 ];

@@ -21,9 +21,7 @@ var searchData=
   ['command_5fresolved_18',['command_resolved',['../structdpp_1_1command__resolved.html',1,'dpp']]],
   ['commandhandler_19',['commandhandler',['../classdpp_1_1commandhandler.html',1,'dpp']]],
   ['component_20',['component',['../classdpp_1_1component.html',1,'dpp']]],
-  ['compressor_21',['compressor',['../classhttplib_1_1detail_1_1compressor.html',1,'httplib::detail']]],
-  ['confirmation_22',['confirmation',['../structdpp_1_1confirmation.html',1,'dpp']]],
-  ['confirmation_5fcallback_5ft_23',['confirmation_callback_t',['../structdpp_1_1confirmation__callback__t.html',1,'dpp']]],
-  ['contentprovideradapter_24',['ContentProviderAdapter',['../classhttplib_1_1detail_1_1_content_provider_adapter.html',1,'httplib::detail']]],
-  ['contentreader_25',['ContentReader',['../classhttplib_1_1_content_reader.html',1,'httplib']]]
+  ['confirmation_21',['confirmation',['../structdpp_1_1confirmation.html',1,'dpp']]],
+  ['confirmation_5fcallback_5ft_22',['confirmation_callback_t',['../structdpp_1_1confirmation__callback__t.html',1,'dpp']]],
+  ['contentreader_23',['ContentReader',['../classhttplib_1_1_content_reader.html',1,'httplib']]]
 ];

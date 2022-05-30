@@ -2,7 +2,7 @@ var searchData=
 [
   ['managed_0',['managed',['../classdpp_1_1managed.html',1,'dpp']]],
   ['message_1',['message',['../structdpp_1_1message.html',1,'dpp']]],
-  ['message_5fcollector_2',['message_collector',['../classdpp_1_1message__collector.html',1,'dpp::message_collector'],['../classmessage__collector.html',1,'message_collector']]],
+  ['message_5fcollector_2',['message_collector',['../classdpp_1_1message__collector.html',1,'dpp']]],
   ['message_5fcreate_3',['message_create',['../classdpp_1_1events_1_1message__create.html',1,'dpp::events']]],
   ['message_5fcreate_5ft_4',['message_create_t',['../structdpp_1_1message__create__t.html',1,'dpp']]],
   ['message_5fdelete_5',['message_delete',['../classdpp_1_1events_1_1message__delete.html',1,'dpp::events']]],

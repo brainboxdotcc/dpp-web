@@ -7,6 +7,5 @@ var searchData=
   ['host_5fand_5fport_5f_4',['host_and_port_',['../classhttplib_1_1_client_impl.html#a868454acc688c095b410f7fa8c936d53',1,'httplib::ClientImpl']]],
   ['hostname_5',['hostname',['../classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8',1,'dpp::ssl_client']]],
   ['hours_6',['hours',['../structdpp_1_1utility_1_1uptime.html#a55841b3a9e3a53240184645d3af39eb4',1,'dpp::utility::uptime']]],
-  ['http_5finfo_7',['http_info',['../structdpp_1_1confirmation__callback__t.html#a97669d491cc60a5e76a248bae9ad7633',1,'dpp::confirmation_callback_t']]],
-  ['http_5fversion_8',['http_version',['../namespacedpp.html#a4f29330ede66fa21fc47c361a9c51a7b',1,'dpp']]]
+  ['http_5finfo_7',['http_info',['../structdpp_1_1confirmation__callback__t.html#a97669d491cc60a5e76a248bae9ad7633',1,'dpp::confirmation_callback_t']]]
 ];

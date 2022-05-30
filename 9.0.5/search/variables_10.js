@@ -18,7 +18,7 @@ var searchData=
   ['read_5ftimeout_5fusec_5f_15',['read_timeout_usec_',['../classhttplib_1_1_server.html#a03a97129a6573eab65a00e5e190e2f7a',1,'httplib::Server::read_timeout_usec_()'],['../classhttplib_1_1_client_impl.html#a505650f012e277b9cd50631de01acaa5',1,'httplib::ClientImpl::read_timeout_usec_()']]],
   ['reader_5f_16',['reader_',['../classhttplib_1_1_content_reader.html#a1fb51ae3a8bc275f1ef81ab01e85d86b',1,'httplib::ContentReader']]],
   ['ready_17',['ready',['../classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90',1,'dpp::discord_client::ready()'],['../classdpp_1_1dispatcher.html#a65719ce2641b1ab281f499ea116bc137',1,'dpp::dispatcher::ready()']]],
-  ['reason_18',['reason',['../structhttplib_1_1_response.html#a97bb996b2982835236cddcd493277295',1,'httplib::Response::reason()'],['../structdpp_1_1error__detail.html#a8c674fce9f4c539e7347cb61880698dd',1,'dpp::error_detail::reason()'],['../structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b',1,'dpp::audit_entry::reason()'],['../classdpp_1_1ban.html#af3f56d08933ee4007f442b11c6b75c01',1,'dpp::ban::reason()']]],
+  ['reason_18',['reason',['../structhttplib_1_1_response.html#a97bb996b2982835236cddcd493277295',1,'httplib::Response::reason()'],['../classdpp_1_1ban.html#af3f56d08933ee4007f442b11c6b75c01',1,'dpp::ban::reason()'],['../structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b',1,'dpp::audit_entry::reason()'],['../structdpp_1_1error__detail.html#a8c674fce9f4c539e7347cb61880698dd',1,'dpp::error_detail::reason()']]],
   ['recipients_19',['recipients',['../classdpp_1_1channel.html#a0d66636187a0382693d69c2ac2827e89',1,'dpp::channel']]],
   ['reconnects_20',['reconnects',['../classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf',1,'dpp::discord_client']]],
   ['redirect_5fcount_5f_21',['redirect_count_',['../structhttplib_1_1_request.html#ad52fe030efab9b240ef3d8caeb2c6f7d',1,'httplib::Request']]],
@@ -40,10 +40,9 @@ var searchData=
   ['resumes_37',['resumes',['../classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6',1,'dpp::discord_client']]],
   ['retry_5fafter_38',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
   ['rich_5fpresence_39',['rich_presence',['../structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813',1,'dpp::presence_update_t']]],
-  ['role_5fcache_40',['role_cache',['../namespacedpp.html#a859e163ce0aca88e3d1f5379ee53ad3d',1,'dpp']]],
-  ['role_5fid_41',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
-  ['role_5fname_42',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
-  ['role_5fpolicy_43',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],
-  ['roles_44',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()'],['../structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc',1,'dpp::command_resolved::roles()']]],
-  ['rules_5fchannel_5fid_45',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
+  ['role_5fid_40',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
+  ['role_5fname_41',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
+  ['role_5fpolicy_42',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],
+  ['roles_43',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()'],['../structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc',1,'dpp::command_resolved::roles()']]],
+  ['rules_5fchannel_5fid_44',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
 ];

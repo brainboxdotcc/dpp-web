@@ -90,7 +90,6 @@
     <innerclass refid="classdpp_1_1request__queue" prot="public">dpp::request_queue</innerclass>
     <innerclass refid="structdpp_1_1resumed__t" prot="public">dpp::resumed_t</innerclass>
     <innerclass refid="classdpp_1_1role" prot="public">dpp::role</innerclass>
-    <innerclass refid="structdpp_1_1rtp__header" prot="public">dpp::rtp_header</innerclass>
     <innerclass refid="classdpp_1_1slashcommand" prot="public">dpp::slashcommand</innerclass>
     <innerclass refid="classdpp_1_1_s_s_l_client" prot="public">dpp::SSLClient</innerclass>
     <innerclass refid="structdpp_1_1stage__instance__create__t" prot="public">dpp::stage_instance_create_t</innerclass>
@@ -2732,19 +2731,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" prot="public" static="no">
-        <type><ref refid="namespacenlohmann_1a2bfd99e845a2e5cd90aeaf1b1431f474" kindref="member">nlohmann::json</ref></type>
-        <definition>typedef nlohmann::json dpp::json</definition>
-        <argsstring></argsstring>
-        <name>json</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/auditlog.cpp" line="28" column="1" bodyfile="src/dpp/auditlog.cpp" bodystart="28" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a52b195380df96e9c43f35fa2da82db14" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="classdpp_1_1ban" kindref="compound">ban</ref> &gt;</type>
         <definition>typedef std::unordered_map&lt;snowflake, ban&gt; dpp::ban_map</definition>
@@ -2830,7 +2816,7 @@
         <location file="include/dpp/cluster.h" line="143" column="23" bodyfile="include/dpp/cluster.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
-        <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
+        <type>std::function&lt; void(json &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
         <definition>typedef std::function&lt;void(json&amp;, const http_request_completion_t&amp;)&gt; dpp::json_encode_t</definition>
         <argsstring></argsstring>
         <name>json_encode_t</name>
@@ -3099,242 +3085,6 @@
         <location file="include/dpp/webhook.h" line="89" column="28" bodyfile="include/dpp/webhook.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="var">
-      <memberdef kind="variable" id="namespacedpp_1a04c02d7d0ead46eea16ed48015e82a99" prot="public" static="no" mutable="no">
-        <type>std::unordered_map&lt; <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> *, time_t &gt;</type>
-        <definition>std::unordered_map&lt;managed*, time_t&gt; dpp::deletion_queue</definition>
-        <argsstring></argsstring>
-        <name>deletion_queue</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="30" column="20" bodyfile="src/dpp/cache.cpp" bodystart="30" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a2630b73cc2ee72fec720c5324655f400" prot="public" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::deletion_mutex</definition>
-        <argsstring></argsstring>
-        <name>deletion_mutex</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="31" column="12" bodyfile="src/dpp/cache.cpp" bodystart="31" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a6ddd481a6548ebed807a5cebbd2fba79" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
-        <definition>cache* dpp::user_cache</definition>
-        <argsstring></argsstring>
-        <name>user_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="169" column="8" bodyfile="src/dpp/cache.cpp" bodystart="169" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1adf9c30193655252606a5db50aaf9cb98" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
-        <definition>cache* dpp::channel_cache</definition>
-        <argsstring></argsstring>
-        <name>channel_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="170" column="8" bodyfile="src/dpp/cache.cpp" bodystart="170" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a859e163ce0aca88e3d1f5379ee53ad3d" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
-        <definition>cache* dpp::role_cache</definition>
-        <argsstring></argsstring>
-        <name>role_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="171" column="8" bodyfile="src/dpp/cache.cpp" bodystart="171" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a2bc14e10038152802645f051c747dc2f" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
-        <definition>cache* dpp::guild_cache</definition>
-        <argsstring></argsstring>
-        <name>guild_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="172" column="8" bodyfile="src/dpp/cache.cpp" bodystart="172" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a3d2e114ba137f1f5bf6fd9782f41d2f2" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
-        <definition>cache* dpp::emoji_cache</definition>
-        <argsstring></argsstring>
-        <name>emoji_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="173" column="8" bodyfile="src/dpp/cache.cpp" bodystart="173" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ac40602ddc592a7cfb7709375cfd8528e" prot="public" static="no" mutable="no">
-        <type>std::map&lt; std::string, <ref refid="classdpp_1_1events_1_1event" kindref="compound">dpp::events::event</ref> * &gt;</type>
-        <definition>std::map&lt;std::string, dpp::events::event*&gt; dpp::eventmap</definition>
-        <argsstring></argsstring>
-        <name>eventmap</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="183" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="183" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1af5d78d18a19b3fef2cf11ff545fee91c" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::external_ip</definition>
-        <argsstring></argsstring>
-        <name>external_ip</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordvoiceclient.cpp" line="38" column="13" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="38" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a5dd1452ee8156729d4cb1ae5cbfdda87" prot="public" static="no" mutable="no">
-        <type>const int</type>
-        <definition>const int dpp::ERROR_STATUS</definition>
-        <argsstring></argsstring>
-        <name>ERROR_STATUS</name>
-        <initializer>= -1</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="60" column="11" bodyfile="src/dpp/sslclient.cpp" bodystart="60" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ab5f42fb08301629416cbca4d5412c0fd" prot="public" static="no" mutable="no">
-        <type>const unsigned char</type>
-        <definition>const unsigned char dpp::WS_MASKBIT</definition>
-        <argsstring></argsstring>
-        <name>WS_MASKBIT</name>
-        <initializer>= (1 &lt;&lt; 7)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="29" column="21" bodyfile="src/dpp/wsclient.cpp" bodystart="29" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a9f1a62eaba2a019735abc7101cffee69" prot="public" static="no" mutable="no">
-        <type>const unsigned char</type>
-        <definition>const unsigned char dpp::WS_FINBIT</definition>
-        <argsstring></argsstring>
-        <name>WS_FINBIT</name>
-        <initializer>= (1 &lt;&lt; 7)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="30" column="21" bodyfile="src/dpp/wsclient.cpp" bodystart="30" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ae6fd1619d39b4a2d583c09248f32cbe8" prot="public" static="no" mutable="no">
-        <type>const unsigned char</type>
-        <definition>const unsigned char dpp::WS_PAYLOAD_LENGTH_MAGIC_LARGE</definition>
-        <argsstring></argsstring>
-        <name>WS_PAYLOAD_LENGTH_MAGIC_LARGE</name>
-        <initializer>= 126</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="31" column="21" bodyfile="src/dpp/wsclient.cpp" bodystart="31" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ac49a4ce7276ce7386399c5cf020895f6" prot="public" static="no" mutable="no">
-        <type>const unsigned char</type>
-        <definition>const unsigned char dpp::WS_PAYLOAD_LENGTH_MAGIC_HUGE</definition>
-        <argsstring></argsstring>
-        <name>WS_PAYLOAD_LENGTH_MAGIC_HUGE</name>
-        <initializer>= 127</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="32" column="21" bodyfile="src/dpp/wsclient.cpp" bodystart="32" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a50b421a786601a401c22eccf3069d0f8" prot="public" static="no" mutable="no">
-        <type>const size_t</type>
-        <definition>const size_t dpp::WS_MAX_PAYLOAD_LENGTH_SMALL</definition>
-        <argsstring></argsstring>
-        <name>WS_MAX_PAYLOAD_LENGTH_SMALL</name>
-        <initializer>= 125</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="33" column="14" bodyfile="src/dpp/wsclient.cpp" bodystart="33" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a657e035c24d7cdf888ba40868167f098" prot="public" static="no" mutable="no">
-        <type>const size_t</type>
-        <definition>const size_t dpp::WS_MAX_PAYLOAD_LENGTH_LARGE</definition>
-        <argsstring></argsstring>
-        <name>WS_MAX_PAYLOAD_LENGTH_LARGE</name>
-        <initializer>= 65535</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="34" column="14" bodyfile="src/dpp/wsclient.cpp" bodystart="34" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1aeef0538fa45377c9b04fc944efec0f0c" prot="public" static="no" mutable="no">
-        <type>const size_t</type>
-        <definition>const size_t dpp::MAXHEADERSIZE</definition>
-        <argsstring></argsstring>
-        <name>MAXHEADERSIZE</name>
-        <initializer>= sizeof(uint64_t) + 2</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="35" column="14" bodyfile="src/dpp/wsclient.cpp" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespacedpp_1a91d363ccdd28dc822536b6745f64ef12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3348,7 +3098,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="53" column="6" bodyfile="src/dpp/cache.cpp" bodystart="53" bodyend="92" declfile="include/dpp/cache.h" declline="116" declcolumn="6"/>
+        <location file="include/dpp/cache.h" line="116" column="6" declfile="include/dpp/cache.h" declline="116" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a03f57fb047d0aeabeb6401727d071a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user" kindref="compound">user</ref> *</type>
@@ -3365,7 +3115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="169" column="31" bodyfile="src/dpp/cache.cpp" bodystart="169" bodyend="169" declfile="include/dpp/cache.h" declline="121" declcolumn="10"/>
+        <location file="include/dpp/cache.h" line="121" column="10" declfile="include/dpp/cache.h" declline="121" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a54bca9d470b5faecef77378221309c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
@@ -3378,7 +3128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="169" column="127" bodyfile="src/dpp/cache.cpp" bodystart="169" bodyend="169" declfile="include/dpp/cache.h" declline="121" declcolumn="31"/>
+        <location file="include/dpp/cache.h" line="121" column="31" declfile="include/dpp/cache.h" declline="121" declcolumn="31"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1af774271529b8dd35ec580102f741b8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -3391,93 +3141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="169" column="239" bodyfile="src/dpp/cache.cpp" bodystart="169" bodyend="169" declfile="include/dpp/cache.h" declline="121" declcolumn="58"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a04861bd69b697432e6c7b246747ad86c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> *</type>
-        <definition>channel * dpp::find_channel</definition>
-        <argsstring>(snowflake id)</argsstring>
-        <name>find_channel</name>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="170" column="37" bodyfile="src/dpp/cache.cpp" bodystart="170" bodyend="170" declfile="include/dpp/cache.h" declline="124" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ace0612ab2a3d27da79190d971743074d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
-        <definition>cache * dpp::get_channel_cache</definition>
-        <argsstring>()</argsstring>
-        <name>get_channel_cache</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="170" column="145" bodyfile="src/dpp/cache.cpp" bodystart="170" bodyend="170" declfile="include/dpp/cache.h" declline="124" declcolumn="37"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a70474b3e729b41bfc1c51fa628cba6a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::get_channel_count</definition>
-        <argsstring>()</argsstring>
-        <name>get_channel_count</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="170" column="269" bodyfile="src/dpp/cache.cpp" bodystart="170" bodyend="170" declfile="include/dpp/cache.h" declline="124" declcolumn="67"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a9b26ed01e9bb9ec98b942b452cf11295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> *</type>
-        <definition>role * dpp::find_role</definition>
-        <argsstring>(snowflake id)</argsstring>
-        <name>find_role</name>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="171" column="31" bodyfile="src/dpp/cache.cpp" bodystart="171" bodyend="171" declfile="include/dpp/cache.h" declline="123" declcolumn="10"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ae7e5b8ee0690b4bbeb4857f4faa6d2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
-        <definition>cache * dpp::get_role_cache</definition>
-        <argsstring>()</argsstring>
-        <name>get_role_cache</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="171" column="127" bodyfile="src/dpp/cache.cpp" bodystart="171" bodyend="171" declfile="include/dpp/cache.h" declline="123" declcolumn="31"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a6e18a9b1dc8cbededf3d8e800e00fd51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>uint64_t dpp::get_role_count</definition>
-        <argsstring>()</argsstring>
-        <name>get_role_count</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="171" column="239" bodyfile="src/dpp/cache.cpp" bodystart="171" bodyend="171" declfile="include/dpp/cache.h" declline="123" declcolumn="58"/>
+        <location file="include/dpp/cache.h" line="121" column="58" declfile="include/dpp/cache.h" declline="121" declcolumn="58"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ae6750ab645d45e0d71f8391b35257754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> *</type>
@@ -3494,7 +3158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="172" column="33" bodyfile="src/dpp/cache.cpp" bodystart="172" bodyend="172" declfile="include/dpp/cache.h" declline="122" declcolumn="11"/>
+        <location file="include/dpp/cache.h" line="122" column="11" declfile="include/dpp/cache.h" declline="122" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a75368ba131feafab62f8468e183fdde4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
@@ -3507,7 +3171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="172" column="133" bodyfile="src/dpp/cache.cpp" bodystart="172" bodyend="172" declfile="include/dpp/cache.h" declline="122" declcolumn="33"/>
+        <location file="include/dpp/cache.h" line="122" column="33" declfile="include/dpp/cache.h" declline="122" declcolumn="33"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a95ca5ac5d924ef3178950365ac4be1bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -3520,7 +3184,93 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="172" column="249" bodyfile="src/dpp/cache.cpp" bodystart="172" bodyend="172" declfile="include/dpp/cache.h" declline="122" declcolumn="61"/>
+        <location file="include/dpp/cache.h" line="122" column="61" declfile="include/dpp/cache.h" declline="122" declcolumn="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a9b26ed01e9bb9ec98b942b452cf11295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> *</type>
+        <definition>role * dpp::find_role</definition>
+        <argsstring>(snowflake id)</argsstring>
+        <name>find_role</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="123" column="10" declfile="include/dpp/cache.h" declline="123" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ae7e5b8ee0690b4bbeb4857f4faa6d2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
+        <definition>cache * dpp::get_role_cache</definition>
+        <argsstring>()</argsstring>
+        <name>get_role_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="123" column="31" declfile="include/dpp/cache.h" declline="123" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a6e18a9b1dc8cbededf3d8e800e00fd51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::get_role_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_role_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="123" column="58" declfile="include/dpp/cache.h" declline="123" declcolumn="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a04861bd69b697432e6c7b246747ad86c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> *</type>
+        <definition>channel * dpp::find_channel</definition>
+        <argsstring>(snowflake id)</argsstring>
+        <name>find_channel</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="124" column="13" declfile="include/dpp/cache.h" declline="124" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ace0612ab2a3d27da79190d971743074d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
+        <definition>cache * dpp::get_channel_cache</definition>
+        <argsstring>()</argsstring>
+        <name>get_channel_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="124" column="37" declfile="include/dpp/cache.h" declline="124" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a70474b3e729b41bfc1c51fa628cba6a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::get_channel_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_channel_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="124" column="67" declfile="include/dpp/cache.h" declline="124" declcolumn="67"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ad3dc824db49f055b683526516e34f5f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> *</type>
@@ -3537,7 +3287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="173" column="33" bodyfile="src/dpp/cache.cpp" bodystart="173" bodyend="173" declfile="include/dpp/cache.h" declline="125" declcolumn="11"/>
+        <location file="include/dpp/cache.h" line="125" column="11" declfile="include/dpp/cache.h" declline="125" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a139e9e31a917d3ec43624cfb8ad86c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref> *</type>
@@ -3550,7 +3300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="173" column="133" bodyfile="src/dpp/cache.cpp" bodystart="173" bodyend="173" declfile="include/dpp/cache.h" declline="125" declcolumn="33"/>
+        <location file="include/dpp/cache.h" line="125" column="33" declfile="include/dpp/cache.h" declline="125" declcolumn="33"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a8efa72a90f8cb79e1632f2d3525fd5fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -3563,7 +3313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="173" column="249" bodyfile="src/dpp/cache.cpp" bodystart="173" bodyend="173" declfile="include/dpp/cache.h" declline="125" declcolumn="61"/>
+        <location file="include/dpp/cache.h" line="125" column="61" declfile="include/dpp/cache.h" declline="125" declcolumn="61"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a5f78c16db857c80bdde49badff59d63d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -3603,7 +3353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="53" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="53" bodyend="68" declfile="include/dpp/discordevents.h" declline="31" declcolumn="10"/>
+        <location file="include/dpp/discordevents.h" line="31" column="10" declfile="include/dpp/discordevents.h" declline="31" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a4c5d1ed5f7455e590e1385f225e80c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -3643,7 +3393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="70" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="70" bodyend="79" declfile="include/dpp/discordevents.h" declline="37" declcolumn="13"/>
+        <location file="include/dpp/discordevents.h" line="37" column="13" declfile="include/dpp/discordevents.h" declline="37" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aabe176ef8fbf21e240fb599f3d436ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -3683,7 +3433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="81" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="81" bodyend="89" declfile="include/dpp/discordevents.h" declline="44" declcolumn="10"/>
+        <location file="include/dpp/discordevents.h" line="44" column="10" declfile="include/dpp/discordevents.h" declline="44" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a9af30b3d913ab9949f22bf5d73411871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -3723,7 +3473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="91" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="91" bodyend="99" declfile="include/dpp/discordevents.h" declline="50" declcolumn="10"/>
+        <location file="include/dpp/discordevents.h" line="50" column="10" declfile="include/dpp/discordevents.h" declline="50" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a38f701687371d61590fa3cc1a79ecc93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -3763,7 +3513,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="101" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="101" bodyend="109" declfile="include/dpp/discordevents.h" declline="56" declcolumn="10"/>
+        <location file="include/dpp/discordevents.h" line="56" column="10" declfile="include/dpp/discordevents.h" declline="56" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a815d200cc75a65ae12da8ebba23facf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -3803,7 +3553,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="111" column="9" bodyfile="src/dpp/discordevents.cpp" bodystart="111" bodyend="119" declfile="include/dpp/discordevents.h" declline="62" declcolumn="9"/>
+        <location file="include/dpp/discordevents.h" line="62" column="9" declfile="include/dpp/discordevents.h" declline="62" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aa32ae352c3d6852a05e20ff82a434029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -3843,47 +3593,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="121" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="121" bodyend="129" declfile="include/dpp/discordevents.h" declline="68" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a81eeb32f4e67cd830f6bc5f52c006c9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::base64_encode</definition>
-        <argsstring>(unsigned char const  *buf, unsigned int buffer_length)</argsstring>
-        <name>base64_encode</name>
-        <param>
-          <type>unsigned char const *</type>
-          <declname>buf</declname>
-        </param>
-        <param>
-          <type>unsigned int</type>
-          <declname>buffer_length</declname>
-        </param>
-        <briefdescription>
-<para>Base64 encode data. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>buf</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Raw buffer </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>buffer_length</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Buffer length to encode </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="131" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="131" bodyend="157" declfile="include/dpp/discordevents.h" declline="81" declcolumn="13"/>
+        <location file="include/dpp/discordevents.h" line="68" column="6" declfile="include/dpp/discordevents.h" declline="68" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a1dc7a4ac1e824d9ce581a044ec76b3cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>time_t</type>
@@ -3923,28 +3633,47 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="159" column="8" bodyfile="src/dpp/discordevents.cpp" bodystart="159" bodyend="181" declfile="include/dpp/discordevents.h" declline="75" declcolumn="8"/>
+        <location file="include/dpp/discordevents.h" line="75" column="8" declfile="include/dpp/discordevents.h" declline="75" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a27787ec18cd468e1d2a5a14cba92e89d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::populate_result</definition>
-        <argsstring>(http_request_completion_t &amp;rv, const httplib::Result &amp;res)</argsstring>
-        <name>populate_result</name>
+      <memberdef kind="function" id="namespacedpp_1ae14a21eeaf5db9a458c3ea6acf5b36f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::base64_encode</definition>
+        <argsstring>(unsigned char const *buf, unsigned int buffer_length)</argsstring>
+        <name>base64_encode</name>
         <param>
-          <type><ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;</type>
-          <declname>rv</declname>
+          <type>unsigned char const *</type>
+          <declname>buf</declname>
         </param>
         <param>
-          <type>const <ref refid="classhttplib_1_1_result" kindref="compound">httplib::Result</ref> &amp;</type>
-          <declname>res</declname>
+          <type>unsigned int</type>
+          <declname>buffer_length</declname>
         </param>
         <briefdescription>
+<para>Base64 encode data. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer length to encode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="65" column="6" bodyfile="src/dpp/queues.cpp" bodystart="65" bodyend="79"/>
+        <location file="include/dpp/discordevents.h" line="81" column="13" declfile="include/dpp/discordevents.h" declline="81" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a971c15a3dd2177d329cdef9c2cdc55f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -3962,29 +3691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="403" column="13" bodyfile="src/dpp/queues.cpp" bodystart="403" bodyend="424" declfile="include/dpp/queues.h" declline="34" declcolumn="13"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a981df68922716d97ba921fd2027c3513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
-        <definition>std::vector&lt; std::string &gt; dpp::tokenize</definition>
-        <argsstring>(std::string const &amp;in, const char *sep=&quot;\r\n&quot;)</argsstring>
-        <name>tokenize</name>
-        <param>
-          <type>std::string const &amp;</type>
-          <declname>in</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>sep</declname>
-          <defval>&quot;\r\n&quot;</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="126" column="13" bodyfile="src/dpp/wsclient.cpp" bodystart="126" bodyend="136"/>
+        <location file="include/dpp/queues.h" line="34" column="13" declfile="include/dpp/queues.h" declline="34" declcolumn="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -3992,6 +3699,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/dpp/auditlog.cpp" line="26" column="1"/>
+    <location file="include/dpp/auditlog.h" line="27" column="1"/>
   </compounddef>
 </doxygen>

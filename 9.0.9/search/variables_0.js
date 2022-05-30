@@ -26,10 +26,9 @@ var searchData=
   ['attachments_23',['attachments',['../structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7',1,'dpp::message']]],
   ['audio_24',['audio',['../structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413',1,'dpp::voice_receive_t']]],
   ['audio_5fsize_25',['audio_size',['../structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668',1,'dpp::voice_receive_t']]],
-  ['audit_5freason_26',['audit_reason',['../namespacedpp.html#a9e6c27b0fbcc58fe84087382096dca98',1,'dpp']]],
-  ['author_27',['author',['../structdpp_1_1embed.html#abe6263ce0132837017e0aca16c6e299d',1,'dpp::embed::author()'],['../structdpp_1_1message.html#a35c14f04382266b29c4ca076b4e0f9e0',1,'dpp::message::author()']]],
-  ['authorization_5fcount_5f_28',['authorization_count_',['../structhttplib_1_1_request.html#a95cf89390e33a408559331ff6aad2a53',1,'httplib::Request']]],
-  ['auto_5farchive_5fduration_29',['auto_archive_duration',['../structdpp_1_1thread__metadata.html#af45bbe4a17648d3becaa0aab698f3fb9',1,'dpp::thread_metadata']]],
-  ['available_30',['available',['../structdpp_1_1sticker.html#a2c42ec44209ccf454785b796250caa7f',1,'dpp::sticker']]],
-  ['avatar_31',['avatar',['../classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3',1,'dpp::user::avatar()'],['../classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110',1,'dpp::webhook::avatar()']]]
+  ['author_26',['author',['../structdpp_1_1embed.html#abe6263ce0132837017e0aca16c6e299d',1,'dpp::embed::author()'],['../structdpp_1_1message.html#a35c14f04382266b29c4ca076b4e0f9e0',1,'dpp::message::author()']]],
+  ['authorization_5fcount_5f_27',['authorization_count_',['../structhttplib_1_1_request.html#a95cf89390e33a408559331ff6aad2a53',1,'httplib::Request']]],
+  ['auto_5farchive_5fduration_28',['auto_archive_duration',['../structdpp_1_1thread__metadata.html#af45bbe4a17648d3becaa0aab698f3fb9',1,'dpp::thread_metadata']]],
+  ['available_29',['available',['../structdpp_1_1sticker.html#a2c42ec44209ccf454785b796250caa7f',1,'dpp::sticker']]],
+  ['avatar_30',['avatar',['../classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3',1,'dpp::user::avatar()'],['../classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110',1,'dpp::webhook::avatar()']]]
 ];

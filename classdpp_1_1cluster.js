@@ -3,7 +3,7 @@ var classdpp_1_1cluster =
     [ "cluster", "classdpp_1_1cluster.html#a7f60dc01ae86840b33cc3c144291bdeb", null ],
     [ "cluster", "classdpp_1_1cluster.html#a6b0b523f89559b4ce204ca9ed9693d79", null ],
     [ "cluster", "classdpp_1_1cluster.html#a2d957f52245734f6d44444af8380c952", null ],
-    [ "~cluster", "classdpp_1_1cluster.html#a270be0ab59aff4f335ef3f4af7559d92", null ],
+    [ "~cluster", "classdpp_1_1cluster.html#a6e6c0859b49fdb91edb74e6b16a87521", null ],
     [ "channel_create", "classdpp_1_1cluster.html#a66df9163f111cec5a180d642f521660a", null ],
     [ "channel_create_sync", "classdpp_1_1cluster.html#ac5703c22c4a8e033984d6aadd730486c", null ],
     [ "channel_delete", "classdpp_1_1cluster.html#a837aa702a92e98ef593381fb147d23fb", null ],

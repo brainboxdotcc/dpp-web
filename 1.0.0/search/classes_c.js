@@ -9,6 +9,5 @@ var searchData=
   ['result_6',['Result',['../classhttplib_1_1_result.html',1,'httplib']]],
   ['resumed_7',['resumed',['../classdpp_1_1events_1_1resumed.html',1,'dpp::events']]],
   ['resumed_5ft_8',['resumed_t',['../structdpp_1_1resumed__t.html',1,'dpp']]],
-  ['role_9',['role',['../classdpp_1_1role.html',1,'dpp']]],
-  ['rtp_5fheader_10',['rtp_header',['../structdpp_1_1rtp__header.html',1,'dpp']]]
+  ['role_9',['role',['../classdpp_1_1role.html',1,'dpp']]]
 ];

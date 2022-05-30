@@ -1,25 +1,8 @@
 var searchData=
 [
-  ['scheduled_5fevent_0',['scheduled_event',['../structdpp_1_1scheduled__event.html',1,'dpp']]],
-  ['select_5fclick_5ft_1',['select_click_t',['../structdpp_1_1select__click__t.html',1,'dpp']]],
-  ['select_5foption_2',['select_option',['../structdpp_1_1select__option.html',1,'dpp']]],
-  ['server_3',['Server',['../classhttplib_1_1_server.html',1,'httplib']]],
-  ['slashcommand_4',['slashcommand',['../classdpp_1_1slashcommand.html',1,'dpp']]],
-  ['socket_5',['Socket',['../structhttplib_1_1_client_impl_1_1_socket.html',1,'httplib::ClientImpl']]],
-  ['socketstream_6',['SocketStream',['../classhttplib_1_1detail_1_1_socket_stream.html',1,'httplib::detail']]],
-  ['ssl_5fclient_7',['ssl_client',['../classdpp_1_1ssl__client.html',1,'dpp']]],
-  ['sslinit_8',['SSLInit',['../classhttplib_1_1detail_1_1_s_s_l_init.html',1,'httplib::detail']]],
-  ['sslsocketstream_9',['SSLSocketStream',['../classhttplib_1_1detail_1_1_s_s_l_socket_stream.html',1,'httplib::detail']]],
-  ['sslthreadlocks_10',['SSLThreadLocks',['../classhttplib_1_1detail_1_1_s_s_l_thread_locks.html',1,'httplib::detail']]],
-  ['stage_5finstance_11',['stage_instance',['../structdpp_1_1stage__instance.html',1,'dpp']]],
-  ['stage_5finstance_5fcreate_12',['stage_instance_create',['../classdpp_1_1events_1_1stage__instance__create.html',1,'dpp::events']]],
-  ['stage_5finstance_5fcreate_5ft_13',['stage_instance_create_t',['../structdpp_1_1stage__instance__create__t.html',1,'dpp']]],
-  ['stage_5finstance_5fdelete_14',['stage_instance_delete',['../classdpp_1_1events_1_1stage__instance__delete.html',1,'dpp::events']]],
-  ['stage_5finstance_5fdelete_5ft_15',['stage_instance_delete_t',['../structdpp_1_1stage__instance__delete__t.html',1,'dpp']]],
-  ['stage_5finstance_5fupdate_16',['stage_instance_update',['../classdpp_1_1events_1_1stage__instance__update.html',1,'dpp::events']]],
-  ['stage_5finstance_5fupdate_5ft_17',['stage_instance_update_t',['../structdpp_1_1stage__instance__update__t.html',1,'dpp']]],
-  ['sticker_18',['sticker',['../structdpp_1_1sticker.html',1,'dpp']]],
-  ['sticker_5fpack_19',['sticker_pack',['../structdpp_1_1sticker__pack.html',1,'dpp']]],
-  ['stream_20',['Stream',['../classhttplib_1_1_stream.html',1,'httplib']]],
-  ['stream_5fline_5freader_21',['stream_line_reader',['../classhttplib_1_1detail_1_1stream__line__reader.html',1,'httplib::detail']]]
+  ['uptime_0',['uptime',['../structdpp_1_1utility_1_1uptime.html',1,'dpp::utility']]],
+  ['user_1',['user',['../classdpp_1_1user.html',1,'dpp']]],
+  ['user_5fidentified_2',['user_identified',['../classdpp_1_1user__identified.html',1,'dpp']]],
+  ['user_5fupdate_3',['user_update',['../classdpp_1_1events_1_1user__update.html',1,'dpp::events']]],
+  ['user_5fupdate_5ft_4',['user_update_t',['../structdpp_1_1user__update__t.html',1,'dpp']]]
 ];

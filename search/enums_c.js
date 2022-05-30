@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['team_5fmember_5fstatus_0',['team_member_status',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4',1,'dpp']]],
-  ['text_5fstyle_5ftype_1',['text_style_type',['../namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3',1,'dpp']]],
-  ['time_5fformat_2',['time_format',['../namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7',1,'dpp::utility']]]
+  ['slashcommand_5fcontextmenu_5ftype_0',['slashcommand_contextmenu_type',['../namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb',1,'dpp']]],
+  ['stage_5fprivacy_5flevel_1',['stage_privacy_level',['../namespacedpp.html#a29954c9dfc5a906346177226d036a418',1,'dpp']]],
+  ['sticker_5fformat_2',['sticker_format',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2',1,'dpp']]],
+  ['sticker_5ftype_3',['sticker_type',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bff',1,'dpp']]]
 ];

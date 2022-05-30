@@ -53,7 +53,7 @@ var searchData=
   ['on_5fvoice_5ftrack_5fmarker_50',['on_voice_track_marker',['../classdpp_1_1cluster.html#a588cb9aff5b15b9f54cc2818a5482994',1,'dpp::cluster']]],
   ['on_5fvoice_5fuser_5ftalking_51',['on_voice_user_talking',['../classdpp_1_1cluster.html#a7950429cb10fbe40acd4aef7bd6f6a67',1,'dpp::cluster']]],
   ['on_5fwebhooks_5fupdate_52',['on_webhooks_update',['../classdpp_1_1cluster.html#aca67bc20cb570e7563d157913066ad0b',1,'dpp::cluster']]],
-  ['onesecondtimer_53',['OneSecondTimer',['../classdpp_1_1_discord_client.html#aa2669c9fb6b3b3bb285fb77e1575e15c',1,'dpp::DiscordClient::OneSecondTimer()'],['../classdpp_1_1_discord_voice_client.html#ab67dcf5fb5f4afa394247d425027490e',1,'dpp::DiscordVoiceClient::OneSecondTimer()'],['../classdpp_1_1_s_s_l_client.html#a6efb69c408ef0bd8c4e36322a4a5bc4f',1,'dpp::SSLClient::OneSecondTimer()']]],
+  ['onesecondtimer_53',['OneSecondTimer',['../classdpp_1_1_discord_client.html#a71df9ed233125eaa8bec08b98b5ce47f',1,'dpp::DiscordClient::OneSecondTimer()'],['../classdpp_1_1_discord_voice_client.html#af165a831d056b17d423bca6ad195354e',1,'dpp::DiscordVoiceClient::OneSecondTimer()'],['../classdpp_1_1_s_s_l_client.html#a7cac59e2f5b38bb1acfd0c1fd0a7a0e9',1,'dpp::SSLClient::OneSecondTimer()']]],
   ['operator_20bool_54',['operator bool',['../classhttplib_1_1_result.html#ac6c15eebdaed35d1d667ca44a2401bb6',1,'httplib::Result']]],
   ['operator_21_3d_55',['operator!=',['../classhttplib_1_1_result.html#ab50071c2f593c8d3550efdae743f73c1',1,'httplib::Result']]],
   ['operator_22_22_5f_56',['operator&quot;&quot;_',['../namespacehttplib_1_1detail_1_1udl.html#a967a05bfd919e97544928a355a12fe2f',1,'httplib::detail::udl']]],

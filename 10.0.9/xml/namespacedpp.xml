@@ -113,7 +113,6 @@
     <innerclass refid="structdpp_1_1invite__create__t" prot="public">dpp::invite_create_t</innerclass>
     <innerclass refid="structdpp_1_1invite__delete__t" prot="public">dpp::invite_delete_t</innerclass>
     <innerclass refid="structdpp_1_1json__interface" prot="public">dpp::json_interface</innerclass>
-    <innerclass refid="structdpp_1_1keepalive__cache__t" prot="public">dpp::keepalive_cache_t</innerclass>
     <innerclass refid="classdpp_1_1length__exception" prot="public">dpp::length_exception</innerclass>
     <innerclass refid="structdpp_1_1log__t" prot="public">dpp::log_t</innerclass>
     <innerclass refid="classdpp_1_1logic__exception" prot="public">dpp::logic_exception</innerclass>
@@ -131,7 +130,6 @@
     <innerclass refid="structdpp_1_1message__update__t" prot="public">dpp::message_update_t</innerclass>
     <innerclass refid="structdpp_1_1multipart__content" prot="public">dpp::multipart_content</innerclass>
     <innerclass refid="classdpp_1_1oneshot__timer" prot="public">dpp::oneshot_timer</innerclass>
-    <innerclass refid="classdpp_1_1openssl__connection" prot="public">dpp::openssl_connection</innerclass>
     <innerclass refid="structdpp_1_1param__info" prot="public">dpp::param_info</innerclass>
     <innerclass refid="classdpp_1_1parse__exception" prot="public">dpp::parse_exception</innerclass>
     <innerclass refid="structdpp_1_1permission__overwrite" prot="public">dpp::permission_overwrite</innerclass>
@@ -147,7 +145,6 @@
     <innerclass refid="structdpp_1_1resumed__t" prot="public">dpp::resumed_t</innerclass>
     <innerclass refid="classdpp_1_1role" prot="public">dpp::role</innerclass>
     <innerclass refid="classdpp_1_1role__collector" prot="public">dpp::role_collector</innerclass>
-    <innerclass refid="structdpp_1_1rtp__header" prot="public">dpp::rtp_header</innerclass>
     <innerclass refid="structdpp_1_1scheduled__event" prot="public">dpp::scheduled_event</innerclass>
     <innerclass refid="classdpp_1_1scheduled__event__collector" prot="public">dpp::scheduled_event_collector</innerclass>
     <innerclass refid="structdpp_1_1select__click__t" prot="public">dpp::select_click_t</innerclass>
@@ -200,7 +197,6 @@
     <innerclass refid="classdpp_1_1websocket__client" prot="public">dpp::websocket_client</innerclass>
     <innerclass refid="structdpp_1_1welcome__channel__t" prot="public">dpp::welcome_channel_t</innerclass>
     <innerclass refid="structdpp_1_1welcome__screen__t" prot="public">dpp::welcome_screen_t</innerclass>
-    <innerclass refid="classdpp_1_1zlibcontext" prot="public">dpp::zlibcontext</innerclass>
     <innernamespace refid="namespacedpp_1_1colors">dpp::colors</innernamespace>
     <innernamespace refid="namespacedpp_1_1embed__type">dpp::embed_type</innernamespace>
     <innernamespace refid="namespacedpp_1_1events">dpp::events</innernamespace>
@@ -4945,19 +4941,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" prot="public" static="no">
-        <type>nlohmann::json</type>
-        <definition>typedef nlohmann::json dpp::json</definition>
-        <argsstring></argsstring>
-        <name>json</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/application.cpp" line="30" column="1" bodyfile="src/dpp/application.cpp" bodystart="30" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, int64_t, bool, <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, double &gt;</type>
         <definition>typedef std::variant&lt;std::monostate, std::string, int64_t, bool, snowflake, double&gt; dpp::command_value</definition>
@@ -5129,7 +5112,7 @@
         <location file="include/dpp/cluster.h" line="289" column="23" bodyfile="include/dpp/cluster.h" bodystart="289" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" prot="public" static="no">
-        <type>std::function&lt; void(<ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
+        <type>std::function&lt; void(json &amp;, const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;)&gt;</type>
         <definition>typedef std::function&lt;void(json&amp;, const http_request_completion_t&amp;)&gt; dpp::json_encode_t</definition>
         <argsstring></argsstring>
         <name>json_encode_t</name>
@@ -5723,9 +5706,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="namespacedpp_1aa72ed3236ea0ab73046304eba4fd4f9f" prot="public" static="no" mutable="no">
-        <type>std::unordered_map&lt; <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> *, time_t &gt;</type>
-        <definition>DPP_EXPORT std::unordered_map&lt; managed *, time_t &gt; dpp::deletion_queue</definition>
+      <memberdef kind="variable" id="namespacedpp_1a5609082c12782be33f82b955a5d07b4f" prot="public" static="no" mutable="no">
+        <type>DPP_EXPORT std::unordered_map&lt; <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> *, time_t &gt;</type>
+        <definition>DPP_EXPORT std::unordered_map&lt;managed*, time_t&gt; dpp::deletion_queue</definition>
         <argsstring></argsstring>
         <name>deletion_queue</name>
         <briefdescription>
@@ -5734,10 +5717,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="29" column="20" bodyfile="src/dpp/cache.cpp" bodystart="29" bodyend="-1" declfile="include/dpp/cache.h" declline="32" declcolumn="38"/>
+        <location file="include/dpp/cache.h" line="32" column="38" declfile="include/dpp/cache.h" declline="32" declcolumn="38"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1ae611302ba7fc914d4732b65541132651" prot="public" static="no" mutable="no">
-        <type>std::mutex</type>
+        <type>DPP_EXPORT std::mutex</type>
         <definition>DPP_EXPORT std::mutex dpp::deletion_mutex</definition>
         <argsstring></argsstring>
         <name>deletion_mutex</name>
@@ -5747,397 +5730,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="30" column="12" bodyfile="src/dpp/cache.cpp" bodystart="30" bodyend="-1" declfile="include/dpp/cache.h" declline="33" declcolumn="30"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ab9dfb3756a165636d20f1fab3a623e76" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1user" kindref="compound">user</ref> &gt; *</type>
-        <definition>cache&lt; user &gt;* dpp::user_cache</definition>
-        <argsstring></argsstring>
-        <name>user_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="80" column="8" bodyfile="src/dpp/cache.cpp" bodystart="80" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a4ff3fe4a05ccf2ecb6f302d7e74413f0" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &gt; *</type>
-        <definition>cache&lt; channel &gt;* dpp::channel_cache</definition>
-        <argsstring></argsstring>
-        <name>channel_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="81" column="8" bodyfile="src/dpp/cache.cpp" bodystart="81" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a74d591ac1d334f8a412f3f1c4f6d65ff" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1role" kindref="compound">role</ref> &gt; *</type>
-        <definition>cache&lt; role &gt;* dpp::role_cache</definition>
-        <argsstring></argsstring>
-        <name>role_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="82" column="8" bodyfile="src/dpp/cache.cpp" bodystart="82" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a0fd81363d06b016c25fc810632b5f0b0" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &gt; *</type>
-        <definition>cache&lt; guild &gt;* dpp::guild_cache</definition>
-        <argsstring></argsstring>
-        <name>guild_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="83" column="8" bodyfile="src/dpp/cache.cpp" bodystart="83" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a2dc2ae71be039ddc79338f59150fecac" prot="public" static="no" mutable="no">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> &gt; *</type>
-        <definition>cache&lt; emoji &gt;* dpp::emoji_cache</definition>
-        <argsstring></argsstring>
-        <name>emoji_cache</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="84" column="8" bodyfile="src/dpp/cache.cpp" bodystart="84" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a10b20f1a28e048d4fcc0c93a0768c24c" prot="public" static="no" mutable="no">
-        <type>const uint8_t</type>
-        <definition>const uint8_t dpp::CHANNEL_TYPE_MASK</definition>
-        <argsstring></argsstring>
-        <name>CHANNEL_TYPE_MASK</name>
-        <initializer>= 0b00001111</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/channel.cpp" line="34" column="15" bodyfile="src/dpp/channel.cpp" bodystart="34" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a143b5e0c6905a9f223b8589729dff35a" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
-        <definition>DPP_EXPORT event_handle dpp::__next_handle</definition>
-        <argsstring></argsstring>
-        <name>__next_handle</name>
-        <initializer>= 1</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cluster.cpp" line="49" column="14" bodyfile="src/dpp/cluster.cpp" bodystart="49" bodyend="-1" declfile="include/dpp/cluster.h" declline="296" declcolumn="32"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a9e6c27b0fbcc58fe84087382096dca98" prot="public" static="no" mutable="no">
-        <type>thread_local std::string</type>
-        <definition>thread_local std::string dpp::audit_reason</definition>
-        <argsstring></argsstring>
-        <name>audit_reason</name>
-        <briefdescription>
-<para>An audit reason for each thread. These are per-thread to make the cluster methods like <ref refid="classdpp_1_1cluster_1ab7a2958625740b4a6fde6643042c5f7e" kindref="member">cluster::get_audit_reason</ref> and <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason</ref> thread safe across multiple threads. You must ensure you set the audit reason on the same thread that makes the request associated with it. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cluster.cpp" line="57" column="26" bodyfile="src/dpp/cluster.cpp" bodystart="57" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ae16796831ecce90e670d207b0d0e1dd8" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
-        <definition>timer dpp::lasthandle</definition>
-        <argsstring></argsstring>
-        <name>lasthandle</name>
-        <initializer>= 1</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cluster/timer.cpp" line="27" column="7" bodyfile="src/dpp/cluster/timer.cpp" bodystart="27" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a835efcb82cabe1ec8cd844ea070cc340" prot="public" static="no" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex dpp::timer_guard</definition>
-        <argsstring></argsstring>
-        <name>timer_guard</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cluster/timer.cpp" line="28" column="12" bodyfile="src/dpp/cluster/timer.cpp" bodystart="28" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a04b7d06f713536bf48333522c9a4264b" prot="public" static="no" mutable="no">
-        <type>const std::map&lt; std::string, <ref refid="classdpp_1_1events_1_1event" kindref="compound">dpp::events::event</ref> * &gt;</type>
-        <definition>const std::map&lt;std::string, dpp::events::event*&gt; dpp::eventmap</definition>
-        <argsstring></argsstring>
-        <name>eventmap</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="282" column="16" bodyfile="src/dpp/discordevents.cpp" bodystart="282" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a864cd30661fc496fae896ddf311ccdb4" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr int32_t</type>
-        <definition>constexpr int32_t dpp::opus_sample_rate_hz</definition>
-        <argsstring></argsstring>
-        <name>opus_sample_rate_hz</name>
-        <initializer>= 48000</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordvoiceclient.cpp" line="51" column="19" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="51" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a4382884d78d028b54f2eaf9ac5738313" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr int32_t</type>
-        <definition>constexpr int32_t dpp::opus_channel_count</definition>
-        <argsstring></argsstring>
-        <name>opus_channel_count</name>
-        <initializer>= 2</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordvoiceclient.cpp" line="52" column="19" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="52" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1af5d78d18a19b3fef2cf11ff545fee91c" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::external_ip</definition>
-        <argsstring></argsstring>
-        <name>external_ip</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordvoiceclient.cpp" line="53" column="13" bodyfile="src/dpp/discordvoiceclient.cpp" bodystart="53" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1aa54eb501e23564f837949f0f5a574abb" prot="public" static="no" mutable="no">
-        <type>thread_local bool</type>
-        <definition>thread_local bool dpp::stop_event</definition>
-        <argsstring></argsstring>
-        <name>stop_event</name>
-        <initializer>= false</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/dispatcher.cpp" line="32" column="19" bodyfile="src/dpp/dispatcher.cpp" bodystart="32" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a4f29330ede66fa21fc47c361a9c51a7b" prot="public" static="yes" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::http_version</definition>
-        <argsstring></argsstring>
-        <name>http_version</name>
-        <initializer>= &quot;DiscordBot (https://github.com/brainboxdotcc/DPP, &quot; + std::to_string(DPP_VERSION_MAJOR) + &quot;.&quot; + std::to_string(DPP_VERSION_MINOR) + &quot;.&quot; + std::to_string(DPP_VERSION_PATCH) + &quot;)&quot;</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="35" column="20" bodyfile="src/dpp/queues.cpp" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a27df95e52167e3d7020ee6ad7958eaa8" prot="public" static="yes" mutable="no">
-        <type>const char *</type>
-        <definition>const char* dpp::DISCORD_HOST</definition>
-        <argsstring></argsstring>
-        <name>DISCORD_HOST</name>
-        <initializer>= &quot;https://discord.com&quot;</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="36" column="19" bodyfile="src/dpp/queues.cpp" bodystart="36" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a8ce99acce314ff1c5125d40f4ed6622b" prot="public" static="no" mutable="no">
-        <type>thread_local SSL_CTX *</type>
-        <definition>thread_local SSL_CTX* dpp::openssl_context</definition>
-        <argsstring></argsstring>
-        <name>openssl_context</name>
-        <initializer>= nullptr</initializer>
-        <briefdescription>
-<para>OpenSSL context. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="89" column="22" bodyfile="src/dpp/sslclient.cpp" bodystart="89" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a07b7f88664195026b4434bdaab3dce5d" prot="public" static="no" mutable="no">
-        <type>thread_local std::unordered_map&lt; std::string, <ref refid="structdpp_1_1keepalive__cache__t" kindref="compound">keepalive_cache_t</ref> &gt;</type>
-        <definition>thread_local std::unordered_map&lt;std::string, keepalive_cache_t&gt; dpp::keepalives</definition>
-        <argsstring></argsstring>
-        <name>keepalives</name>
-        <briefdescription>
-<para>Keepalive sessions, per-thread. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="94" column="33" bodyfile="src/dpp/sslclient.cpp" bodystart="94" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a5dd1452ee8156729d4cb1ae5cbfdda87" prot="public" static="no" mutable="no">
-        <type>const int</type>
-        <definition>const int dpp::ERROR_STATUS</definition>
-        <argsstring></argsstring>
-        <name>ERROR_STATUS</name>
-        <initializer>= -1</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/sslclient.cpp" line="105" column="11" bodyfile="src/dpp/sslclient.cpp" bodystart="105" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1aefdd77f67658f0ff12429f40d58b920b" prot="public" static="no" mutable="no">
-        <type>const size_t</type>
-        <definition>const size_t dpp::MAX_ICON_SIZE</definition>
-        <argsstring></argsstring>
-        <name>MAX_ICON_SIZE</name>
-        <initializer>= 256 * 1024</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/webhook.cpp" line="30" column="14" bodyfile="src/dpp/webhook.cpp" bodystart="30" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ab5f42fb08301629416cbca4d5412c0fd" prot="public" static="no" mutable="no">
-        <type>const unsigned char</type>
-        <definition>const unsigned char dpp::WS_MASKBIT</definition>
-        <argsstring></argsstring>
-        <name>WS_MASKBIT</name>
-        <initializer>= (1u &lt;&lt; 7u)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="30" column="21" bodyfile="src/dpp/wsclient.cpp" bodystart="30" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a9f1a62eaba2a019735abc7101cffee69" prot="public" static="no" mutable="no">
-        <type>const unsigned char</type>
-        <definition>const unsigned char dpp::WS_FINBIT</definition>
-        <argsstring></argsstring>
-        <name>WS_FINBIT</name>
-        <initializer>= (1u &lt;&lt; 7u)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="31" column="21" bodyfile="src/dpp/wsclient.cpp" bodystart="31" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ae6fd1619d39b4a2d583c09248f32cbe8" prot="public" static="no" mutable="no">
-        <type>const unsigned char</type>
-        <definition>const unsigned char dpp::WS_PAYLOAD_LENGTH_MAGIC_LARGE</definition>
-        <argsstring></argsstring>
-        <name>WS_PAYLOAD_LENGTH_MAGIC_LARGE</name>
-        <initializer>= 126</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="32" column="21" bodyfile="src/dpp/wsclient.cpp" bodystart="32" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1ac49a4ce7276ce7386399c5cf020895f6" prot="public" static="no" mutable="no">
-        <type>const unsigned char</type>
-        <definition>const unsigned char dpp::WS_PAYLOAD_LENGTH_MAGIC_HUGE</definition>
-        <argsstring></argsstring>
-        <name>WS_PAYLOAD_LENGTH_MAGIC_HUGE</name>
-        <initializer>= 127</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="33" column="21" bodyfile="src/dpp/wsclient.cpp" bodystart="33" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a50b421a786601a401c22eccf3069d0f8" prot="public" static="no" mutable="no">
-        <type>const size_t</type>
-        <definition>const size_t dpp::WS_MAX_PAYLOAD_LENGTH_SMALL</definition>
-        <argsstring></argsstring>
-        <name>WS_MAX_PAYLOAD_LENGTH_SMALL</name>
-        <initializer>= 125</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="34" column="14" bodyfile="src/dpp/wsclient.cpp" bodystart="34" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1a657e035c24d7cdf888ba40868167f098" prot="public" static="no" mutable="no">
-        <type>const size_t</type>
-        <definition>const size_t dpp::WS_MAX_PAYLOAD_LENGTH_LARGE</definition>
-        <argsstring></argsstring>
-        <name>WS_MAX_PAYLOAD_LENGTH_LARGE</name>
-        <initializer>= 65535</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="35" column="14" bodyfile="src/dpp/wsclient.cpp" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1aeef0538fa45377c9b04fc944efec0f0c" prot="public" static="no" mutable="no">
-        <type>const size_t</type>
-        <definition>const size_t dpp::MAXHEADERSIZE</definition>
-        <argsstring></argsstring>
-        <name>MAXHEADERSIZE</name>
-        <initializer>= sizeof(uint64_t) + 2</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/wsclient.cpp" line="36" column="14" bodyfile="src/dpp/wsclient.cpp" bodystart="36" bodyend="-1"/>
+        <location file="include/dpp/cache.h" line="33" column="30" declfile="include/dpp/cache.h" declline="33" declcolumn="30"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1aefb3da6503cb501b9d2a0376663dbc6e" prot="public" static="yes" mutable="no">
         <type><ref refid="structdpp_1_1version__checker" kindref="compound">version_checker</ref></type>
@@ -6151,6 +5744,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="71" column="24" bodyfile="include/dpp/cluster.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a143b5e0c6905a9f223b8589729dff35a" prot="public" static="no" mutable="no">
+        <type>DPP_EXPORT <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>DPP_EXPORT event_handle dpp::__next_handle</definition>
+        <argsstring></argsstring>
+        <name>__next_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="296" column="32" declfile="include/dpp/cluster.h" declline="296" declcolumn="32"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1af762f7c2f0c23de9fbba385e8f547d29" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -6169,8 +5775,428 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="namespacedpp_1af9f0984484c2408f8bac07674720ef07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1ae5041ec3547b4d4b7bf3416eea9b6403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
+        <definition>void dpp::to_json</definition>
+        <argsstring>(nlohmann::json &amp;j, const command_option_choice &amp;choice)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &amp;</type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+<para>helper function to serialize a <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> to json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>choice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> to be serialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="135" column="6" declfile="include/dpp/appcommand.h" declline="135" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ae6a96c54dc4f6dad8f8f6bbe05fea254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::to_json</definition>
+        <argsstring>(nlohmann::json &amp;j, const command_option &amp;opt)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> &amp;</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+<para>helper function to serialize a <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> to json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> to be serialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="264" column="6" declfile="include/dpp/appcommand.h" declline="264" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ac2ac98206ba62a7ddba95355743a9e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;j, command_data_option &amp;cdo)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="structdpp_1_1command__data__option" kindref="compound">command_data_option</ref> &amp;</type>
+          <declname>cdo</declname>
+        </param>
+        <briefdescription>
+<para>helper function to deserialize a <ref refid="structdpp_1_1command__data__option" kindref="compound">command_data_option</ref> from json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structdpp_1_1command__data__option" kindref="compound">command_data_option</ref> to be deserialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="511" column="6" declfile="include/dpp/appcommand.h" declline="511" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a1bfffa121ee7a78fe2c0e4d4a9a7fa17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;j, command_interaction &amp;ci)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref> &amp;</type>
+          <declname>ci</declname>
+        </param>
+        <briefdescription>
+<para>helper function to deserialize a <ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref> from json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ci</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref> to be deserialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="554" column="6" declfile="include/dpp/appcommand.h" declline="554" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1aabc378142329f7d4fe1ac82c81027114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;j, component_interaction &amp;bi)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref> &amp;</type>
+          <declname>bi</declname>
+        </param>
+        <briefdescription>
+<para>helper function to deserialize a <ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref> from json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>button_interaction to be deserialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="602" column="6" declfile="include/dpp/appcommand.h" declline="602" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a965939ea98a0cc2a038250fc73bd6e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;j, autocomplete_interaction &amp;ai)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> &amp;</type>
+          <declname>ai</declname>
+        </param>
+        <briefdescription>
+<para>helper function to deserialize an <ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> from json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ai</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> to be deserialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="612" column="6" declfile="include/dpp/appcommand.h" declline="612" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a1d5a166cc8328a1d2728e9e451c966f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;j, interaction &amp;i)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>helper function to deserialize an interaction from json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interaction to be deserialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="705" column="6" declfile="include/dpp/appcommand.h" declline="705" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a752b7140de023c34db60c92363aacf3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::to_json</definition>
+        <argsstring>(nlohmann::json &amp;j, const command_permission &amp;cp)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> &amp;</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para>helper function to serialize a <ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> to json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> to be serialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="766" column="6" declfile="include/dpp/appcommand.h" declline="766" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a735482218b54177427bc882605fa1e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::to_json</definition>
+        <argsstring>(nlohmann::json &amp;j, const guild_command_permissions &amp;gcp)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> &amp;</type>
+          <declname>gcp</declname>
+        </param>
+        <briefdescription>
+<para>helper function to serialize a <ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> to json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gcp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> to be serialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="803" column="6" declfile="include/dpp/appcommand.h" declline="803" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a85aad7db48e1fc97a00f92044fa2c1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::to_json</definition>
+        <argsstring>(nlohmann::json &amp;j, const slashcommand &amp;cmd)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+<para>helper function to serialize a slashcommand to json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slashcommand to be serialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1011" column="6" declfile="include/dpp/appcommand.h" declline="1011" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1af9f0984484c2408f8bac07674720ef07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::garbage_collection</definition>
         <argsstring>()</argsstring>
         <name>garbage_collection</name>
@@ -6181,10 +6207,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="52" column="6" bodyfile="src/dpp/cache.cpp" bodystart="52" bodyend="77" declfile="include/dpp/cache.h" declline="260" declcolumn="17"/>
+        <location file="include/dpp/cache.h" line="260" column="17" declfile="include/dpp/cache.h" declline="260" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aafb458435d5650149340555ecd43f93f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref> *</type>
+        <type>DPP_EXPORT class <ref refid="classdpp_1_1user" kindref="compound">user</ref> *</type>
         <definition>DPP_EXPORT class user * dpp::find_user</definition>
         <argsstring>(snowflake id)</argsstring>
         <name>find_user</name>
@@ -6198,10 +6224,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="80" column="31" bodyfile="src/dpp/cache.cpp" bodystart="80" bodyend="80" declfile="include/dpp/cache.h" declline="265" declcolumn="25"/>
+        <location file="include/dpp/cache.h" line="265" column="25" declfile="include/dpp/cache.h" declline="265" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ac31437cc3d797fa49c910653d887fe7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1user" kindref="compound">user</ref> &gt; *</type>
+        <type>DPP_EXPORT <ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; class <ref refid="classdpp_1_1user" kindref="compound">user</ref> &gt; *</type>
         <definition>DPP_EXPORT cache&lt; class user &gt; * dpp::get_user_cache</definition>
         <argsstring>()</argsstring>
         <name>get_user_cache</name>
@@ -6211,10 +6237,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="80" column="127" bodyfile="src/dpp/cache.cpp" bodystart="80" bodyend="80" declfile="include/dpp/cache.h" declline="265" declcolumn="57"/>
+        <location file="include/dpp/cache.h" line="265" column="57" declfile="include/dpp/cache.h" declline="265" declcolumn="57"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ad70a66ea50fff65140d1dfcb803289f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
+        <type>DPP_EXPORT uint64_t</type>
         <definition>DPP_EXPORT uint64_t dpp::get_user_count</definition>
         <argsstring>()</argsstring>
         <name>get_user_count</name>
@@ -6224,96 +6250,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="80" column="246" bodyfile="src/dpp/cache.cpp" bodystart="80" bodyend="80" declfile="include/dpp/cache.h" declline="265" declcolumn="95"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a165978ef81875d2798e78c6eaf4eeafd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> *</type>
-        <definition>DPP_EXPORT class channel * dpp::find_channel</definition>
-        <argsstring>(snowflake id)</argsstring>
-        <name>find_channel</name>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="81" column="37" bodyfile="src/dpp/cache.cpp" bodystart="81" bodyend="81" declfile="include/dpp/cache.h" declline="268" declcolumn="28"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a6b3878dda912f5f69b8140fe233e4c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &gt; *</type>
-        <definition>DPP_EXPORT cache&lt; class channel &gt; * dpp::get_channel_cache</definition>
-        <argsstring>()</argsstring>
-        <name>get_channel_cache</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="81" column="145" bodyfile="src/dpp/cache.cpp" bodystart="81" bodyend="81" declfile="include/dpp/cache.h" declline="268" declcolumn="63"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a564bd51f9aaa38759d667dee4a0c8615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>DPP_EXPORT uint64_t dpp::get_channel_count</definition>
-        <argsstring>()</argsstring>
-        <name>get_channel_count</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="81" column="279" bodyfile="src/dpp/cache.cpp" bodystart="81" bodyend="81" declfile="include/dpp/cache.h" declline="268" declcolumn="104"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a608a89c45f1a0d89535b9165a1225ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> *</type>
-        <definition>DPP_EXPORT class role * dpp::find_role</definition>
-        <argsstring>(snowflake id)</argsstring>
-        <name>find_role</name>
-        <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="82" column="31" bodyfile="src/dpp/cache.cpp" bodystart="82" bodyend="82" declfile="include/dpp/cache.h" declline="267" declcolumn="25"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ab13bee0a40c1f0e9c88f635b3bf113fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1role" kindref="compound">role</ref> &gt; *</type>
-        <definition>DPP_EXPORT cache&lt; class role &gt; * dpp::get_role_cache</definition>
-        <argsstring>()</argsstring>
-        <name>get_role_cache</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="82" column="127" bodyfile="src/dpp/cache.cpp" bodystart="82" bodyend="82" declfile="include/dpp/cache.h" declline="267" declcolumn="57"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a350d31a987f01b3fe24d17bc59b1d9b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
-        <definition>DPP_EXPORT uint64_t dpp::get_role_count</definition>
-        <argsstring>()</argsstring>
-        <name>get_role_count</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="82" column="246" bodyfile="src/dpp/cache.cpp" bodystart="82" bodyend="82" declfile="include/dpp/cache.h" declline="267" declcolumn="95"/>
+        <location file="include/dpp/cache.h" line="265" column="95" declfile="include/dpp/cache.h" declline="265" declcolumn="95"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ac702a9b30627be07d4f23bf0ad14afcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref> *</type>
+        <type>DPP_EXPORT class <ref refid="classdpp_1_1guild" kindref="compound">guild</ref> *</type>
         <definition>DPP_EXPORT class guild * dpp::find_guild</definition>
         <argsstring>(snowflake id)</argsstring>
         <name>find_guild</name>
@@ -6327,10 +6267,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="83" column="33" bodyfile="src/dpp/cache.cpp" bodystart="83" bodyend="83" declfile="include/dpp/cache.h" declline="266" declcolumn="26"/>
+        <location file="include/dpp/cache.h" line="266" column="26" declfile="include/dpp/cache.h" declline="266" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a5ae7c530cff1cae7200e136bf8c1bf83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &gt; *</type>
+        <type>DPP_EXPORT <ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; class <ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &gt; *</type>
         <definition>DPP_EXPORT cache&lt; class guild &gt; * dpp::get_guild_cache</definition>
         <argsstring>()</argsstring>
         <name>get_guild_cache</name>
@@ -6340,10 +6280,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="83" column="133" bodyfile="src/dpp/cache.cpp" bodystart="83" bodyend="83" declfile="include/dpp/cache.h" declline="266" declcolumn="59"/>
+        <location file="include/dpp/cache.h" line="266" column="59" declfile="include/dpp/cache.h" declline="266" declcolumn="59"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a6641a19f8dc7eba625f27c8835bf31ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
+        <type>DPP_EXPORT uint64_t</type>
         <definition>DPP_EXPORT uint64_t dpp::get_guild_count</definition>
         <argsstring>()</argsstring>
         <name>get_guild_count</name>
@@ -6353,10 +6293,96 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="83" column="257" bodyfile="src/dpp/cache.cpp" bodystart="83" bodyend="83" declfile="include/dpp/cache.h" declline="266" declcolumn="98"/>
+        <location file="include/dpp/cache.h" line="266" column="98" declfile="include/dpp/cache.h" declline="266" declcolumn="98"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a608a89c45f1a0d89535b9165a1225ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT class <ref refid="classdpp_1_1role" kindref="compound">role</ref> *</type>
+        <definition>DPP_EXPORT class role * dpp::find_role</definition>
+        <argsstring>(snowflake id)</argsstring>
+        <name>find_role</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="267" column="25" declfile="include/dpp/cache.h" declline="267" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ab13bee0a40c1f0e9c88f635b3bf113fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT <ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; class <ref refid="classdpp_1_1role" kindref="compound">role</ref> &gt; *</type>
+        <definition>DPP_EXPORT cache&lt; class role &gt; * dpp::get_role_cache</definition>
+        <argsstring>()</argsstring>
+        <name>get_role_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="267" column="57" declfile="include/dpp/cache.h" declline="267" declcolumn="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a350d31a987f01b3fe24d17bc59b1d9b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT uint64_t</type>
+        <definition>DPP_EXPORT uint64_t dpp::get_role_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_role_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="267" column="95" declfile="include/dpp/cache.h" declline="267" declcolumn="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a165978ef81875d2798e78c6eaf4eeafd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT class <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> *</type>
+        <definition>DPP_EXPORT class channel * dpp::find_channel</definition>
+        <argsstring>(snowflake id)</argsstring>
+        <name>find_channel</name>
+        <param>
+          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="268" column="28" declfile="include/dpp/cache.h" declline="268" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a6b3878dda912f5f69b8140fe233e4c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT <ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; class <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &gt; *</type>
+        <definition>DPP_EXPORT cache&lt; class channel &gt; * dpp::get_channel_cache</definition>
+        <argsstring>()</argsstring>
+        <name>get_channel_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="268" column="63" declfile="include/dpp/cache.h" declline="268" declcolumn="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a564bd51f9aaa38759d667dee4a0c8615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPP_EXPORT uint64_t</type>
+        <definition>DPP_EXPORT uint64_t dpp::get_channel_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_channel_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cache.h" line="268" column="104" declfile="include/dpp/cache.h" declline="268" declcolumn="104"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ae8d93509900eb7e29e07170369f79a3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> *</type>
+        <type>DPP_EXPORT class <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> *</type>
         <definition>DPP_EXPORT class emoji * dpp::find_emoji</definition>
         <argsstring>(snowflake id)</argsstring>
         <name>find_emoji</name>
@@ -6370,10 +6396,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="84" column="33" bodyfile="src/dpp/cache.cpp" bodystart="84" bodyend="84" declfile="include/dpp/cache.h" declline="269" declcolumn="26"/>
+        <location file="include/dpp/cache.h" line="269" column="26" declfile="include/dpp/cache.h" declline="269" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ad1383a88d06493bd0a9ab3fba5e11d22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> &gt; *</type>
+        <type>DPP_EXPORT <ref refid="classdpp_1_1cache" kindref="compound">cache</ref>&lt; class <ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> &gt; *</type>
         <definition>DPP_EXPORT cache&lt; class emoji &gt; * dpp::get_emoji_cache</definition>
         <argsstring>()</argsstring>
         <name>get_emoji_cache</name>
@@ -6383,10 +6409,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="84" column="133" bodyfile="src/dpp/cache.cpp" bodystart="84" bodyend="84" declfile="include/dpp/cache.h" declline="269" declcolumn="59"/>
+        <location file="include/dpp/cache.h" line="269" column="59" declfile="include/dpp/cache.h" declline="269" declcolumn="59"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a1728693a6b7bc12f1bb05e113e5c0428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
+        <type>DPP_EXPORT uint64_t</type>
         <definition>DPP_EXPORT uint64_t dpp::get_emoji_count</definition>
         <argsstring>()</argsstring>
         <name>get_emoji_count</name>
@@ -6396,7 +6422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/cache.cpp" line="84" column="257" bodyfile="src/dpp/cache.cpp" bodystart="84" bodyend="84" declfile="include/dpp/cache.h" declline="269" declcolumn="98"/>
+        <location file="include/dpp/cache.h" line="269" column="98" declfile="include/dpp/cache.h" declline="269" declcolumn="98"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a77d77e1ffffe22979d93132a7acee1d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6436,7 +6462,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/channel.cpp" line="44" column="6" bodyfile="src/dpp/channel.cpp" bodystart="44" bodyend="49" declfile="include/dpp/channel.h" declline="554" declcolumn="6"/>
+        <location file="include/dpp/channel.h" line="554" column="6" declfile="include/dpp/channel.h" declline="554" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a7b4c7cea42e58d376ea1f7aa6d630c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6476,108 +6502,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/channel.cpp" line="51" column="6" bodyfile="src/dpp/channel.cpp" bodystart="51" bodyend="56" declfile="include/dpp/channel.h" declline="562" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ae349654a9b224581abbb20967e55e8af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
-        <type>std::function&lt; void(const T &amp;)&gt;</type>
-        <definition>std::function&lt; void(const T &amp;)&gt; dpp::make_intent_warning</definition>
-        <argsstring>(cluster *cl, const intents required_intent, const std::string &amp;message)</argsstring>
-        <name>make_intent_warning</name>
-        <param>
-          <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
-          <declname>cl</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5" kindref="member">intents</ref></type>
-          <declname>required_intent</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>message</declname>
-        </param>
-        <briefdescription>
-<para>Make a warning lambda for missing message intents. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>type of parameter for the event in the router </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>cl</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Creating cluster </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>required_intent</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Intent which is required </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>message</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Message to display </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::function&lt;void(const T&amp;)&gt; Returned lambda </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/cluster.cpp" line="68" column="26" bodyfile="src/dpp/cluster.cpp" bodystart="68" bodyend="74"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a11a29c34fa2bce39d743860fb6fdb572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::ts_to_string</definition>
-        <argsstring>(time_t ts)</argsstring>
-        <name>ts_to_string</name>
-        <param>
-          <type>time_t</type>
-          <declname>ts</declname>
-        </param>
-        <briefdescription>
-<para>Convert time_t unix epoch to std::string ISO date/time. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ts</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Timestamp to convert </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string Converted time/date string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="55" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="55" bodyend="65" declfile="include/dpp/discordevents.h" declline="169" declcolumn="24"/>
+        <location file="include/dpp/channel.h" line="562" column="6" declfile="include/dpp/channel.h" declline="562" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aab9892169cd091ab8292c29ec27d43a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
+        <type>uint64_t DPP_EXPORT</type>
         <definition>uint64_t DPP_EXPORT dpp::snowflake_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>snowflake_not_null</name>
@@ -6616,10 +6544,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="67" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="67" bodyend="80" declfile="include/dpp/discordevents.h" declline="33" declcolumn="21"/>
+        <location file="include/dpp/discordevents.h" line="33" column="21" declfile="include/dpp/discordevents.h" declline="33" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ae445f4eb0bd2357dec87d33b8825ba31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_snowflake_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint64_t &amp;v)</argsstring>
         <name>set_snowflake_not_null</name>
@@ -6668,10 +6596,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="82" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="82" bodyend="87" declfile="include/dpp/discordevents.h" declline="40" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="40" column="17" declfile="include/dpp/discordevents.h" declline="40" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1adf57d9793b70d4b4da431491ab263298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
+        <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::string_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>string_not_null</name>
@@ -6710,10 +6638,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="90" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="90" bodyend="98" declfile="include/dpp/discordevents.h" declline="47" declcolumn="24"/>
+        <location file="include/dpp/discordevents.h" line="47" column="24" declfile="include/dpp/discordevents.h" declline="47" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a2bea4039b904a51aeb3261a1a5d3fcaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_string_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, std::string &amp;v)</argsstring>
         <name>set_string_not_null</name>
@@ -6762,10 +6690,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="100" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="100" bodyend="106" declfile="include/dpp/discordevents.h" declline="54" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="54" column="17" declfile="include/dpp/discordevents.h" declline="54" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a7fd4373c8570f0cf6e3736e9cd1c4436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type>double DPP_EXPORT</type>
         <definition>double DPP_EXPORT dpp::double_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>double_not_null</name>
@@ -6804,10 +6732,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="108" column="8" bodyfile="src/dpp/discordevents.cpp" bodystart="108" bodyend="115" declfile="include/dpp/discordevents.h" declline="61" declcolumn="19"/>
+        <location file="include/dpp/discordevents.h" line="61" column="19" declfile="include/dpp/discordevents.h" declline="61" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a2d0d3c73e35b541ba1d95eedd79a13f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_double_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, double &amp;v)</argsstring>
         <name>set_double_not_null</name>
@@ -6856,10 +6784,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="117" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="117" bodyend="122" declfile="include/dpp/discordevents.h" declline="68" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="68" column="17" declfile="include/dpp/discordevents.h" declline="68" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1adfc76d21d5b4cc6a0ca57ce20720547d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint64_t</type>
+        <type>uint64_t DPP_EXPORT</type>
         <definition>uint64_t DPP_EXPORT dpp::int64_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>int64_not_null</name>
@@ -6898,10 +6826,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="124" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="124" bodyend="131" declfile="include/dpp/discordevents.h" declline="76" declcolumn="21"/>
+        <location file="include/dpp/discordevents.h" line="76" column="21" declfile="include/dpp/discordevents.h" declline="76" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aef513c496a461641781a63de18d2d9ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_int64_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint64_t &amp;v)</argsstring>
         <name>set_int64_not_null</name>
@@ -6950,10 +6878,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="133" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="133" bodyend="138" declfile="include/dpp/discordevents.h" declline="83" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="83" column="17" declfile="include/dpp/discordevents.h" declline="83" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ab8335dd15cf1c72ce6ff068a019c1e53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint32_t</type>
+        <type>uint32_t DPP_EXPORT</type>
         <definition>uint32_t DPP_EXPORT dpp::int32_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>int32_not_null</name>
@@ -6992,10 +6920,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="141" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="141" bodyend="148" declfile="include/dpp/discordevents.h" declline="90" declcolumn="21"/>
+        <location file="include/dpp/discordevents.h" line="90" column="21" declfile="include/dpp/discordevents.h" declline="90" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a1e73af079b857e690895e0a5bde2589f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_int32_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint32_t &amp;v)</argsstring>
         <name>set_int32_not_null</name>
@@ -7044,10 +6972,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="150" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="150" bodyend="155" declfile="include/dpp/discordevents.h" declline="97" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="97" column="17" declfile="include/dpp/discordevents.h" declline="97" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a35672e77d8d9d9f13627b41994f377a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint16_t</type>
+        <type>uint16_t DPP_EXPORT</type>
         <definition>uint16_t DPP_EXPORT dpp::int16_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>int16_not_null</name>
@@ -7086,10 +7014,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="157" column="10" bodyfile="src/dpp/discordevents.cpp" bodystart="157" bodyend="164" declfile="include/dpp/discordevents.h" declline="104" declcolumn="21"/>
+        <location file="include/dpp/discordevents.h" line="104" column="21" declfile="include/dpp/discordevents.h" declline="104" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a6d37d9601d4975b6a5bf9dce560cd806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_int16_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint16_t &amp;v)</argsstring>
         <name>set_int16_not_null</name>
@@ -7138,10 +7066,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="166" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="166" bodyend="171" declfile="include/dpp/discordevents.h" declline="111" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="111" column="17" declfile="include/dpp/discordevents.h" declline="111" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a37a59e37461d9f8668dd948f2635add6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>uint8_t</type>
+        <type>uint8_t DPP_EXPORT</type>
         <definition>uint8_t DPP_EXPORT dpp::int8_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>int8_not_null</name>
@@ -7180,10 +7108,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="173" column="9" bodyfile="src/dpp/discordevents.cpp" bodystart="173" bodyend="180" declfile="include/dpp/discordevents.h" declline="118" declcolumn="20"/>
+        <location file="include/dpp/discordevents.h" line="118" column="20" declfile="include/dpp/discordevents.h" declline="118" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ae344a3bd067a818390e2d748176cd775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_int8_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, uint8_t &amp;v)</argsstring>
         <name>set_int8_not_null</name>
@@ -7232,10 +7160,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="182" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="182" bodyend="187" declfile="include/dpp/discordevents.h" declline="125" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="125" column="17" declfile="include/dpp/discordevents.h" declline="125" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ae4fdd39d37228695bd6fa37b53046bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type>bool DPP_EXPORT</type>
         <definition>bool DPP_EXPORT dpp::bool_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>bool_not_null</name>
@@ -7274,10 +7202,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="189" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="189" bodyend="196" declfile="include/dpp/discordevents.h" declline="132" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="132" column="17" declfile="include/dpp/discordevents.h" declline="132" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ad1d0e1acb0698f7cb0f656ce2b19ff3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_bool_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, bool &amp;v)</argsstring>
         <name>set_bool_not_null</name>
@@ -7326,52 +7254,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="198" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="198" bodyend="203" declfile="include/dpp/discordevents.h" declline="139" declcolumn="17"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a6115ff18830a756af0cc2dfd3ae1d763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string DPP_EXPORT dpp::base64_encode</definition>
-        <argsstring>(unsigned char const  *buf, unsigned int buffer_length)</argsstring>
-        <name>base64_encode</name>
-        <param>
-          <type>unsigned char const *</type>
-          <declname>buf</declname>
-        </param>
-        <param>
-          <type>unsigned int</type>
-          <declname>buffer_length</declname>
-        </param>
-        <briefdescription>
-<para>Base64 encode data into a string. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>buf</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Raw binary buffer </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>buffer_length</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Buffer length to encode </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>The base64 encoded string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="205" column="13" bodyfile="src/dpp/discordevents.cpp" bodystart="205" bodyend="230" declfile="include/dpp/discordevents.h" declline="161" declcolumn="24"/>
+        <location file="include/dpp/discordevents.h" line="139" column="17" declfile="include/dpp/discordevents.h" declline="139" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a90fa4e4bbd6aaf8884f3588f096ab251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>time_t</type>
+        <type>time_t DPP_EXPORT</type>
         <definition>time_t DPP_EXPORT dpp::ts_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname)</argsstring>
         <name>ts_not_null</name>
@@ -7410,10 +7296,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="232" column="8" bodyfile="src/dpp/discordevents.cpp" bodystart="232" bodyend="255" declfile="include/dpp/discordevents.h" declline="147" declcolumn="19"/>
+        <location file="include/dpp/discordevents.h" line="147" column="19" declfile="include/dpp/discordevents.h" declline="147" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ae2ac378edc26d20fb0db2658b7da3502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type>void DPP_EXPORT</type>
         <definition>void DPP_EXPORT dpp::set_ts_not_null</definition>
         <argsstring>(const nlohmann::json *j, const char *keyname, time_t &amp;v)</argsstring>
         <name>set_ts_not_null</name>
@@ -7462,7 +7348,79 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/discordevents.cpp" line="257" column="6" bodyfile="src/dpp/discordevents.cpp" bodystart="257" bodyend="280" declfile="include/dpp/discordevents.h" declline="154" declcolumn="17"/>
+        <location file="include/dpp/discordevents.h" line="154" column="17" declfile="include/dpp/discordevents.h" declline="154" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a89cd418696847bc940940dd84163d482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::base64_encode</definition>
+        <argsstring>(unsigned char const *buf, unsigned int buffer_length)</argsstring>
+        <name>base64_encode</name>
+        <param>
+          <type>unsigned char const *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>buffer_length</declname>
+        </param>
+        <briefdescription>
+<para>Base64 encode data into a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw binary buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer length to encode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The base64 encoded string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordevents.h" line="161" column="24" declfile="include/dpp/discordevents.h" declline="161" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a11a29c34fa2bce39d743860fb6fdb572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::ts_to_string</definition>
+        <argsstring>(time_t ts)</argsstring>
+        <name>ts_to_string</name>
+        <param>
+          <type>time_t</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+<para>Convert time_t unix epoch to std::string ISO date/time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timestamp to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string Converted time/date string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordevents.h" line="169" column="24" declfile="include/dpp/discordevents.h" declline="169" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a177af60de5536cff95f417fce3d9487a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7504,10 +7462,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/guild.cpp" line="135" column="6" bodyfile="src/dpp/guild.cpp" bodystart="135" bodyend="160" declfile="include/dpp/guild.h" declline="851" declcolumn="6"/>
+        <location file="include/dpp/guild.h" line="851" column="6" declfile="include/dpp/guild.h" declline="851" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a239ce3fb8b4d9873dffeb5cb9b249f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> DPP_EXPORT</type>
         <definition>guild_member DPP_EXPORT dpp::find_guild_member</definition>
         <argsstring>(const snowflake guild_id, const snowflake user_id)</argsstring>
         <name>find_guild_member</name>
@@ -7555,599 +7513,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/dpp/guild.cpp" line="689" column="14" bodyfile="src/dpp/guild.cpp" bodystart="689" bodyend="701" declfile="include/dpp/guild.h" declline="865" declcolumn="25"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a5492d13e01367c06d893f7f7e1b6e929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::to_json</definition>
-        <argsstring>(json &amp;j, const attachment &amp;a)</argsstring>
-        <name>to_json</name>
-        <param>
-          <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structdpp_1_1attachment" kindref="compound">attachment</ref> &amp;</type>
-          <declname>a</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/message.cpp" line="210" column="6" bodyfile="src/dpp/message.cpp" bodystart="210" bodyend="224"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1acd18d41e47000c592ab63b702335e184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::to_json</definition>
-        <argsstring>(json &amp;j, const component &amp;cp)</argsstring>
-        <name>to_json</name>
-        <param>
-          <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref> &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>const <ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
-          <declname>cp</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/message.cpp" line="226" column="6" bodyfile="src/dpp/message.cpp" bodystart="226" bodyend="312" declfile="src/dpp/slashcommand.cpp" declline="734" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1aad6090df4ddac62da6eaddf6ea3367e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::populate_result</definition>
-        <argsstring>(const std::string &amp;url, cluster *owner, http_request_completion_t &amp;rv, const https_client &amp;res)</argsstring>
-        <name>populate_result</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>url</declname>
-        </param>
-        <param>
-          <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
-          <declname>owner</declname>
-        </param>
-        <param>
-          <type><ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;</type>
-          <declname>rv</declname>
-        </param>
-        <param>
-          <type>const <ref refid="classdpp_1_1https__client" kindref="compound">https_client</ref> &amp;</type>
-          <declname>res</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="67" column="6" bodyfile="src/dpp/queues.cpp" bodystart="67" bodyend="96"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ac484e126123707976b1332664ac10b1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>uint32_t</type>
-        <definition>uint32_t dpp::hash</definition>
-        <argsstring>(const char *s)</argsstring>
-        <name>hash</name>
-        <param>
-          <type>const char *</type>
-          <declname>s</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/queues.cpp" line="390" column="17" bodyfile="src/dpp/queues.cpp" bodystart="390" bodyend="396"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ae5041ec3547b4d4b7bf3416eea9b6403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::to_json</definition>
-        <argsstring>(nlohmann::json &amp;j, const command_option_choice &amp;choice)</argsstring>
-        <name>to_json</name>
-        <param>
-          <type>nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &amp;</type>
-          <declname>choice</declname>
-        </param>
-        <briefdescription>
-<para>helper function to serialize a <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> to json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>choice</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> to be serialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="76" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="76" bodyend="95" declfile="include/dpp/appcommand.h" declline="135" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ae6a96c54dc4f6dad8f8f6bbe05fea254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::to_json</definition>
-        <argsstring>(nlohmann::json &amp;j, const command_option &amp;opt)</argsstring>
-        <name>to_json</name>
-        <param>
-          <type>nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> &amp;</type>
-          <declname>opt</declname>
-        </param>
-        <briefdescription>
-<para>helper function to serialize a <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> to json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>opt</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> to be serialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="107" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="107" bodyend="168" declfile="include/dpp/appcommand.h" declline="264" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a752b7140de023c34db60c92363aacf3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::to_json</definition>
-        <argsstring>(nlohmann::json &amp;j, const command_permission &amp;cp)</argsstring>
-        <name>to_json</name>
-        <param>
-          <type>nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>const <ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> &amp;</type>
-          <declname>cp</declname>
-        </param>
-        <briefdescription>
-<para>helper function to serialize a <ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> to json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>cp</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> to be serialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="170" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="170" bodyend="174" declfile="include/dpp/appcommand.h" declline="766" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a735482218b54177427bc882605fa1e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::to_json</definition>
-        <argsstring>(nlohmann::json &amp;j, const guild_command_permissions &amp;gcp)</argsstring>
-        <name>to_json</name>
-        <param>
-          <type>nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>const <ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> &amp;</type>
-          <declname>gcp</declname>
-        </param>
-        <briefdescription>
-<para>helper function to serialize a <ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> to json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>gcp</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> to be serialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="176" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="176" bodyend="181" declfile="include/dpp/appcommand.h" declline="803" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a85aad7db48e1fc97a00f92044fa2c1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::to_json</definition>
-        <argsstring>(nlohmann::json &amp;j, const slashcommand &amp;cmd)</argsstring>
-        <name>to_json</name>
-        <param>
-          <type>nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>const <ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
-          <declname>cmd</declname>
-        </param>
-        <briefdescription>
-<para>helper function to serialize a slashcommand to json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>cmd</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>slashcommand to be serialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="183" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="183" bodyend="234" declfile="include/dpp/appcommand.h" declline="1011" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1ac2ac98206ba62a7ddba95355743a9e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::from_json</definition>
-        <argsstring>(const nlohmann::json &amp;j, command_data_option &amp;cdo)</argsstring>
-        <name>from_json</name>
-        <param>
-          <type>const nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type><ref refid="structdpp_1_1command__data__option" kindref="compound">command_data_option</ref> &amp;</type>
-          <declname>cdo</declname>
-        </param>
-        <briefdescription>
-<para>helper function to deserialize a <ref refid="structdpp_1_1command__data__option" kindref="compound">command_data_option</ref> from json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>cdo</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="structdpp_1_1command__data__option" kindref="compound">command_data_option</ref> to be deserialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="477" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="477" bodyend="518" declfile="include/dpp/appcommand.h" declline="511" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a1bfffa121ee7a78fe2c0e4d4a9a7fa17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::from_json</definition>
-        <argsstring>(const nlohmann::json &amp;j, command_interaction &amp;ci)</argsstring>
-        <name>from_json</name>
-        <param>
-          <type>const nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type><ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref> &amp;</type>
-          <declname>ci</declname>
-        </param>
-        <briefdescription>
-<para>helper function to deserialize a <ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref> from json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>ci</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="structdpp_1_1command__interaction" kindref="compound">command_interaction</ref> to be deserialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="520" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="520" bodyend="529" declfile="include/dpp/appcommand.h" declline="554" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1aabc378142329f7d4fe1ac82c81027114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::from_json</definition>
-        <argsstring>(const nlohmann::json &amp;j, component_interaction &amp;bi)</argsstring>
-        <name>from_json</name>
-        <param>
-          <type>const nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type><ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref> &amp;</type>
-          <declname>bi</declname>
-        </param>
-        <briefdescription>
-<para>helper function to deserialize a <ref refid="structdpp_1_1component__interaction" kindref="compound">component_interaction</ref> from json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>bi</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>button_interaction to be deserialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="531" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="531" bodyend="540" declfile="include/dpp/appcommand.h" declline="602" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a965939ea98a0cc2a038250fc73bd6e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::from_json</definition>
-        <argsstring>(const nlohmann::json &amp;j, autocomplete_interaction &amp;ai)</argsstring>
-        <name>from_json</name>
-        <param>
-          <type>const nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type><ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> &amp;</type>
-          <declname>ai</declname>
-        </param>
-        <briefdescription>
-<para>helper function to deserialize an <ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> from json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>ai</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="structdpp_1_1autocomplete__interaction" kindref="compound">autocomplete_interaction</ref> to be deserialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="542" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="542" bodyend="544" declfile="include/dpp/appcommand.h" declline="612" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a1d5a166cc8328a1d2728e9e451c966f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::from_json</definition>
-        <argsstring>(const nlohmann::json &amp;j, interaction &amp;i)</argsstring>
-        <name>from_json</name>
-        <param>
-          <type>const nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type><ref refid="classdpp_1_1interaction" kindref="compound">interaction</ref> &amp;</type>
-          <declname>i</declname>
-        </param>
-        <briefdescription>
-<para>helper function to deserialize an interaction from json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>i</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>interaction to be deserialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/slashcommand.cpp" line="546" column="6" bodyfile="src/dpp/slashcommand.cpp" bodystart="546" bodyend="664" declfile="include/dpp/appcommand.h" declline="705" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a1b146099de6ccbd7135ffba167aee39d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::from_json</definition>
-        <argsstring>(const nlohmann::json &amp;j, user_identified &amp;u)</argsstring>
-        <name>from_json</name>
-        <param>
-          <type>const nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type><ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref> &amp;</type>
-          <declname>u</declname>
-        </param>
-        <briefdescription>
-<para>helper function to deserialize a <ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref> from json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>u</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>user to be deserialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/user.cpp" line="217" column="6" bodyfile="src/dpp/user.cpp" bodystart="217" bodyend="228" declfile="include/dpp/user.h" declline="342" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacedpp_1a36d2c45cce93740da4da28ef18e90a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::from_json</definition>
-        <argsstring>(const nlohmann::json &amp;j, user &amp;u)</argsstring>
-        <name>from_json</name>
-        <param>
-          <type>const nlohmann::json &amp;</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type><ref refid="classdpp_1_1user" kindref="compound">user</ref> &amp;</type>
-          <declname>u</declname>
-        </param>
-        <briefdescription>
-<para>helper function to deserialize a user from json </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>output json object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>u</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>user to be deserialized </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/dpp/user.cpp" line="230" column="6" bodyfile="src/dpp/user.cpp" bodystart="230" bodyend="256" declfile="include/dpp/user.h" declline="332" declcolumn="6"/>
+        <location file="include/dpp/guild.h" line="865" column="25" declfile="include/dpp/guild.h" declline="865" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a6da92d90e8b0847e2d8c2633aaf370f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -9481,6 +8847,90 @@
         </inbodydescription>
         <location file="include/dpp/sync.h" line="54" column="22" bodyfile="include/dpp/sync.h" bodystart="54" bodyend="78"/>
       </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a36d2c45cce93740da4da28ef18e90a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;j, user &amp;u)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1user" kindref="compound">user</ref> &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>helper function to deserialize a user from json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user to be deserialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/user.h" line="332" column="6" declfile="include/dpp/user.h" declline="332" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a1b146099de6ccbd7135ffba167aee39d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;j, user_identified &amp;u)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref> &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>helper function to deserialize a <ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref> from json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user to be deserialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/user.h" line="342" column="6" declfile="include/dpp/user.h" declline="342" declcolumn="6"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>The main namespace for D++ functions. classes and types. </para>
@@ -9488,6 +8938,6 @@
     <detaileddescription>
 <para>The main namespace for D++ functions, classes and types. </para>
     </detaileddescription>
-    <location file="src/dpp/application.cpp" line="28" column="1"/>
+    <location file="include/dpp/appcommand.h" line="33" column="1"/>
   </compounddef>
 </doxygen>

@@ -1,10 +1,10 @@
 var classdpp_1_1channel =
 [
     [ "channel", "classdpp_1_1channel.html#a53bbf494148ceea48e3b78716d7a8b07", null ],
-    [ "~channel", "classdpp_1_1channel.html#a51afd2284fe4ae3a6d1043c8f3ecf4f1", null ],
+    [ "~channel", "classdpp_1_1channel.html#a019dcc538ed619ab255f60e69f716ae3", null ],
     [ "build_json", "classdpp_1_1channel.html#a2b818d100d7b40ee6b07d95ff3fcccb8", null ],
     [ "fill_from_json", "classdpp_1_1channel.html#a97c266efb07e429ecc1175207a409824", null ],
-    [ "get_members", "classdpp_1_1channel.html#ab817b065af6dab9a77e406908e368ae1", null ],
+    [ "get_members", "classdpp_1_1channel.html#a2618252ea6ca24673074b4ac8243798c", null ],
     [ "get_user_permissions", "classdpp_1_1channel.html#a86527c1fe86e93c66bf731c73ebcc0ac", null ],
     [ "get_voice_members", "classdpp_1_1channel.html#a915cc4ba3ec7514a684315594255253a", null ],
     [ "is_category", "classdpp_1_1channel.html#a1b6b7a32e44eec70466a98b31252aa54", null ],

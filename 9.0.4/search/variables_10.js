@@ -39,10 +39,9 @@ var searchData=
   ['resumes_36',['resumes',['../classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6',1,'dpp::discord_client']]],
   ['retry_5fafter_37',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
   ['rich_5fpresence_38',['rich_presence',['../structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813',1,'dpp::presence_update_t']]],
-  ['role_5fcache_39',['role_cache',['../namespacedpp.html#a859e163ce0aca88e3d1f5379ee53ad3d',1,'dpp']]],
-  ['role_5fid_40',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
-  ['role_5fname_41',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
-  ['role_5fpolicy_42',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],
-  ['roles_43',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()'],['../structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc',1,'dpp::command_resolved::roles()']]],
-  ['rules_5fchannel_5fid_44',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
+  ['role_5fid_39',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
+  ['role_5fname_40',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
+  ['role_5fpolicy_41',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],
+  ['roles_42',['roles',['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()'],['../structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc',1,'dpp::command_resolved::roles()']]],
+  ['rules_5fchannel_5fid_43',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
 ];

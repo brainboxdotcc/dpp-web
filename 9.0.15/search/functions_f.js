@@ -1,4 +1,31 @@
 var searchData=
 [
-  ['queue_5fmessage_0',['queue_message',['../classdpp_1_1discord__client.html#a123f98e2faef134f6954d9a91346fb8d',1,'dpp::discord_client']]]
+  ['reaction_0',['reaction',['../structdpp_1_1reaction.html#ae9d457d1976ecdcb04cc4ccced45084e',1,'dpp::reaction::reaction(nlohmann::json *j)'],['../structdpp_1_1reaction.html#a7809f620d77f3da97ba34b65fd6b5a5d',1,'dpp::reaction::reaction()']]],
+  ['reaction_5fcollector_1',['reaction_collector',['../classdpp_1_1reaction__collector.html#a9ef1a149fb0b26f7a03f136730bd663c',1,'dpp::reaction_collector']]],
+  ['read_2',['read',['../classhttplib_1_1_stream.html#a58adfc27d0672f6a2f293168757861b2',1,'httplib::Stream']]],
+  ['read_5ffile_3',['read_file',['../namespacedpp_1_1utility.html#a4e85ceba20c4ed2bfda15d806890428b',1,'dpp::utility']]],
+  ['read_5floop_4',['read_loop',['../classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2',1,'dpp::ssl_client']]],
+  ['ready_5ft_5',['ready_t',['../structdpp_1_1ready__t.html#aebf5fe086e4ee6921042fe798d58d72a',1,'dpp::ready_t']]],
+  ['register_5fcommands_6',['register_commands',['../classdpp_1_1commandhandler.html#a208f3684f3987d87074824bd13699e42',1,'dpp::commandhandler']]],
+  ['rehash_7',['rehash',['../classdpp_1_1cache.html#af1c53b4d84ae2d1c1fbf8d540d884034',1,'dpp::cache']]],
+  ['rehash_5fmembers_8',['rehash_members',['../classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac',1,'dpp::guild']]],
+  ['remove_9',['remove',['../classdpp_1_1cache.html#a4994e44f3ec37d08acc8c064c95746ad',1,'dpp::cache']]],
+  ['remove_5fmount_5fpoint_10',['remove_mount_point',['../classhttplib_1_1_server.html#aeb6dd931cac3055c6296d9f7499d270b',1,'httplib::Server']]],
+  ['reply_11',['reply',['../structdpp_1_1interaction__create__t.html#aba0415877754c69baea7de583ef9c6d1',1,'dpp::interaction_create_t::reply()'],['../structdpp_1_1message__create__t.html#a5f543dbee15af272e96ba1d79d1153ee',1,'dpp::message_create_t::reply(message &amp;&amp;msg, bool mention_replied_user=false, command_completion_event_t callback={}) const'],['../structdpp_1_1message__create__t.html#a13c6960d29ec39052a2c08cb639a4a6a',1,'dpp::message_create_t::reply(message &amp;msg, bool mention_replied_user=false, command_completion_event_t callback={}) const'],['../structdpp_1_1message__create__t.html#ab5b387aaa55b287f61fa03ee2b403684',1,'dpp::message_create_t::reply(const std::string &amp;m, bool mention_replied_user=false, command_completion_event_t callback={}) const'],['../structdpp_1_1interaction__create__t.html#a897fc83f54829f32c2041b43fd2cebaa',1,'dpp::interaction_create_t::reply()'],['../classdpp_1_1commandhandler.html#a50e8e241a9208405bf05d7cf8806cd19',1,'dpp::commandhandler::reply()']]],
+  ['request_12',['request',['../classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52',1,'dpp::cluster']]],
+  ['request_5fqueue_13',['request_queue',['../classdpp_1_1request__queue.html#ad2fd85ef74eb9f7cc91897ba2d3f6957',1,'dpp::request_queue']]],
+  ['requires_5fcolons_14',['requires_colons',['../classdpp_1_1emoji.html#a8e664abe1d5e91ea6b34677cf2206fcc',1,'dpp::emoji']]],
+  ['response_15',['Response',['../structhttplib_1_1_response.html#a42df6b67dcf32c2cd4bc732c52d49b3e',1,'httplib::Response::Response()=default'],['../structhttplib_1_1_response.html#aed3a526fe753e1c86ca3a848ccb26564',1,'httplib::Response::Response(Response &amp;&amp;)=default'],['../structhttplib_1_1_response.html#ae5f48d4c40fe15b19032e77a3da32de7',1,'httplib::Response::Response(const Response &amp;)=default']]],
+  ['result_16',['Result',['../classhttplib_1_1_result.html#aa6badab908c06e5da630a303de27fedf',1,'httplib::Result']]],
+  ['resumed_5ft_17',['resumed_t',['../structdpp_1_1resumed__t.html#a39a9ceb42b2608326c23e25412eb6967',1,'dpp::resumed_t']]],
+  ['rgb_18',['rgb',['../namespacedpp_1_1utility.html#ad5e546b73411540fa9541b25deccdacb',1,'dpp::utility::rgb(int red, int green, int blue)'],['../namespacedpp_1_1utility.html#a2ab5fc7a9fd0ac6358c3c7133b563362',1,'dpp::utility::rgb(float red, float green, float blue)']]],
+  ['role_19',['role',['../classdpp_1_1role.html#aa23013a7a7d7c03c4ef44d6e6fc02baa',1,'dpp::role']]],
+  ['role_5fcollector_20',['role_collector',['../classdpp_1_1role__collector.html#a711325fa9e73adc00e7fd470a666c59b',1,'dpp::role_collector']]],
+  ['role_5fcreate_21',['role_create',['../classdpp_1_1cluster.html#ab912eb28e9bb4df46954c7a9b93b283d',1,'dpp::cluster']]],
+  ['role_5fdelete_22',['role_delete',['../classdpp_1_1cluster.html#a45414d0d189edd147c3d76b4480ec0b8',1,'dpp::cluster']]],
+  ['role_5fedit_23',['role_edit',['../classdpp_1_1cluster.html#a24cc5286955e6641d574d232d8b47f55',1,'dpp::cluster']]],
+  ['role_5fedit_5fposition_24',['role_edit_position',['../classdpp_1_1cluster.html#ac77932ee797aeb44098c2013811b2887',1,'dpp::cluster']]],
+  ['roles_5fget_25',['roles_get',['../classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219',1,'dpp::cluster']]],
+  ['route_26',['route',['../classdpp_1_1commandhandler.html#a76d6c3790f9dd01cddaa4d521151c369',1,'dpp::commandhandler::route(const dpp::message &amp;msg)'],['../classdpp_1_1commandhandler.html#acf454dbea724739e53540721af21b9a3',1,'dpp::commandhandler::route(const struct interaction_create_t &amp;event)']]],
+  ['run_27',['run',['../classdpp_1_1discord__client.html#ae659e7343de4a120d14f1b81e9535ea0',1,'dpp::discord_client::run()'],['../classdpp_1_1discord__voice__client.html#a418f98812e850eb963e4b3a2a4dc0c74',1,'dpp::discord_voice_client::run()'],['../classdpp_1_1http__request.html#a3693b97e3f58505fa4187a86eecaaa39',1,'dpp::http_request::run()']]]
 ];

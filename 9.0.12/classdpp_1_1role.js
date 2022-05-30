@@ -1,7 +1,7 @@
 var classdpp_1_1role =
 [
     [ "role", "classdpp_1_1role.html#aa23013a7a7d7c03c4ef44d6e6fc02baa", null ],
-    [ "~role", "classdpp_1_1role.html#a1cd275ca1aa52763e05b78a8a3443476", null ],
+    [ "~role", "classdpp_1_1role.html#afa628827db6ddae3e60d7e74e6653aab", null ],
     [ "build_json", "classdpp_1_1role.html#a704dd3aee9a7b3687f1556442144f62b", null ],
     [ "fill_from_json", "classdpp_1_1role.html#a5352cd2a40c1c2c430ec9448bd45723f", null ],
     [ "get_members", "classdpp_1_1role.html#a60bd9c7e3901c18f5ec3c4f835e1c1de", null ],

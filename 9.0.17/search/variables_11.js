@@ -48,12 +48,11 @@ var searchData=
   ['retry_5fafter_45',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
   ['revoked_46',['revoked',['../classdpp_1_1connection.html#acd1b67d2114b91c2028ad7d21c224adf',1,'dpp::connection']]],
   ['rich_5fpresence_47',['rich_presence',['../structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813',1,'dpp::presence_update_t']]],
-  ['role_5fcache_48',['role_cache',['../namespacedpp.html#a74d591ac1d334f8a412f3f1c4f6d65ff',1,'dpp']]],
-  ['role_5fid_49',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
-  ['role_5fname_50',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
-  ['role_5fpolicy_51',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],
-  ['roles_52',['roles',['../structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc',1,'dpp::command_resolved::roles()'],['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()']]],
-  ['rpc_5forigins_53',['rpc_origins',['../classdpp_1_1application.html#ac80deaf158551887c9f4c0b4be7b6ec7',1,'dpp::application']]],
-  ['rtc_5fregion_54',['rtc_region',['../classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad',1,'dpp::channel']]],
-  ['rules_5fchannel_5fid_55',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
+  ['role_5fid_48',['role_id',['../classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927',1,'dpp::integration']]],
+  ['role_5fname_49',['role_name',['../structdpp_1_1audit__extra.html#a3f9b69d1fada4e5ba0a488dded858288',1,'dpp::audit_extra']]],
+  ['role_5fpolicy_50',['role_policy',['../structdpp_1_1cache__policy__t.html#ab4068b588e7268978fd28299e6538739',1,'dpp::cache_policy_t']]],
+  ['roles_51',['roles',['../structdpp_1_1command__resolved.html#a6f354275ab39eb9b0771a167fd7af7fc',1,'dpp::command_resolved::roles()'],['../classdpp_1_1guild__member.html#ae9419048b9b5a143f1b705e4dff83a93',1,'dpp::guild_member::roles()'],['../classdpp_1_1guild.html#a08c72430a41c55914776f3d82e45235c',1,'dpp::guild::roles()'],['../structdpp_1_1message_1_1allowed__ref.html#a87a12ac285f15e43bf0933d33fe4aad3',1,'dpp::message::allowed_ref::roles()']]],
+  ['rpc_5forigins_52',['rpc_origins',['../classdpp_1_1application.html#ac80deaf158551887c9f4c0b4be7b6ec7',1,'dpp::application']]],
+  ['rtc_5fregion_53',['rtc_region',['../classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad',1,'dpp::channel']]],
+  ['rules_5fchannel_5fid_54',['rules_channel_id',['../classdpp_1_1guild.html#a860098b080bc3bf11c1c44bb77edda09',1,'dpp::guild']]]
 ];
