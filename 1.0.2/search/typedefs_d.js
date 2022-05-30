@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['type_0',['type',['../structdetail_1_1make__unsigned__or__unchanged.html#a76f8c2352d357582a9521d3e3608bdaf',1,'detail::make_unsigned_or_unchanged::type()'],['../structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html#a80c4e8ddfad700203b4dfbc1b624c928',1,'detail::make_unsigned_or_unchanged&lt; T, true &gt;::type()']]]
+  ['shard_5flist_0',['shard_list',['../namespacedpp.html#a13c4d4e6238396245b349e6a637897e0',1,'dpp']]],
+  ['slashcommand_5fmap_1',['slashcommand_map',['../namespacedpp.html#acb9a69e08af58173ea9644999290416d',1,'dpp']]],
+  ['snowflake_2',['snowflake',['../namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475',1,'dpp']]],
+  ['socketoptions_3',['SocketOptions',['../namespacehttplib.html#a02305f842f48963eb2ed425ee5d1655d',1,'httplib']]]
 ];

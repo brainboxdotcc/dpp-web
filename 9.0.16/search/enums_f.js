@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['verification_5flevel_5ft_0',['verification_level_t',['../namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85',1,'dpp']]],
-  ['voiceregion_5fflags_1',['voiceregion_flags',['../namespacedpp.html#a03f707e068e2f7e7c7277094af901813',1,'dpp']]],
-  ['voicestate_5fflags_2',['voicestate_flags',['../namespacedpp.html#a6a7cc94290184616d0267d751f02d53f',1,'dpp']]]
+  ['webhook_5ftype_0',['webhook_type',['../namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0',1,'dpp']]],
+  ['websocket_5fprotocol_5ft_1',['websocket_protocol_t',['../namespacedpp.html#af7cde3079d745428f44ef6231a2ac672',1,'dpp']]],
+  ['ws_5fopcode_2',['ws_opcode',['../namespacedpp.html#aa84690a0ba0251e8609440e93919da1c',1,'dpp']]],
+  ['ws_5fstate_3',['ws_state',['../namespacedpp.html#af3b7f3e861707f45beefa9449de70519',1,'dpp']]]
 ];

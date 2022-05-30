@@ -41,10 +41,9 @@ var searchData=
   ['af_5fplay_38',['af_play',['../namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da0b2e1dc7c3c4dddcf91e1ded344a7119',1,'dpp']]],
   ['af_5fspectate_39',['af_spectate',['../namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da6641e2affb027ec2ee799a06b388a2cd',1,'dpp']]],
   ['af_5fsync_40',['af_sync',['../namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4dab869609c55109a542a9505cc75f2d93f',1,'dpp']]],
-  ['alternative_41',['alternative',['../namespacedetail.html#a4938659a89541ba388c06c6a33e0c8adaa04fe4e390a7c7d5d4583f85d24e164d',1,'detail']]],
-  ['at_5fcompeting_42',['at_competing',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72',1,'dpp']]],
-  ['at_5fcustom_43',['at_custom',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400',1,'dpp']]],
-  ['at_5fgame_44',['at_game',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701',1,'dpp']]],
-  ['at_5flistening_45',['at_listening',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6',1,'dpp']]],
-  ['at_5fstreaming_46',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]]
+  ['at_5fcompeting_41',['at_competing',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72',1,'dpp']]],
+  ['at_5fcustom_42',['at_custom',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400',1,'dpp']]],
+  ['at_5fgame_43',['at_game',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701',1,'dpp']]],
+  ['at_5flistening_44',['at_listening',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6',1,'dpp']]],
+  ['at_5fstreaming_45',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]]
 ];

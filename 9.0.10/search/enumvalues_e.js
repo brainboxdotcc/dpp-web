@@ -10,6 +10,5 @@ var searchData=
   ['sslserververification_7',['SSLServerVerification',['../namespacehttplib.html#a46ff5da925971ebebf2c5693e367f24aa28d1bff99746cf348566f0ba27209d64',1,'httplib']]],
   ['st_5fguild_8',['st_guild',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede',1,'dpp']]],
   ['st_5fstandard_9',['st_standard',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca',1,'dpp']]],
-  ['standard_10',['standard',['../namespacedetail.html#a4938659a89541ba388c06c6a33e0c8adac00f0c4675b91fb8b918e4079a0b1bac',1,'detail']]],
-  ['success_11',['Success',['../namespacehttplib.html#a46ff5da925971ebebf2c5693e367f24aa505a83f220c02df2f85c3810cd9ceb38',1,'httplib']]]
+  ['success_10',['Success',['../namespacehttplib.html#a46ff5da925971ebebf2c5693e367f24aa505a83f220c02df2f85c3810cd9ceb38',1,'httplib']]]
 ];

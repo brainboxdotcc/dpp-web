@@ -16,7 +16,7 @@ var searchData=
   ['bot_5fpublic_13',['bot_public',['../classdpp_1_1application.html#a1724baabe72d957d04b0a30bc4604d8b',1,'dpp::application']]],
   ['bot_5frequire_5fcode_5fgrant_14',['bot_require_code_grant',['../classdpp_1_1application.html#a9942dd58f1ca9da0839f0a295612290c',1,'dpp::application']]],
   ['brown_15',['brown',['../namespacedpp_1_1colors.html#a488a8962138a45b06f6f1448cbec2930',1,'dpp::colors']]],
-  ['buf_16',['buf',['../structdetail_1_1codecvt__result.html#a9114466ff04f03888fcb1f0e34adb1d7',1,'detail::codecvt_result::buf()'],['../structdpp_1_1etf__buffer.html#a43b8f9084fb86968add81fbf3de15f85',1,'dpp::etf_buffer::buf()']]],
+  ['buf_16',['buf',['../structdpp_1_1etf__buffer.html#a43b8f9084fb86968add81fbf3de15f85',1,'dpp::etf_buffer']]],
   ['buffer_17',['buffer',['../classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa',1,'dpp::ssl_client']]],
   ['buffer_5fsize_18',['buffer_size',['../structdpp_1_1voice__buffer__send__t.html#a2dca750294ff5b2e4e08fc3b759dd84c',1,'dpp::voice_buffer_send_t']]],
   ['buttons_19',['buttons',['../classdpp_1_1activity.html#a65cb680cfef51d6b3d1796682c9c93c5',1,'dpp::activity']]],

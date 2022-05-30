@@ -71,16 +71,15 @@ var NAVTREEINDEX =
 "classhttplib_1_1_client_impl.html#adb81f18287fc15afae42574b8964ae6f",
 "classhttplib_1_1_server.html#af115868f3665c97326770b7fa87c6cce",
 "functions_func_q.html",
-"namespacedpp.html#a2b8b5573bf936e034d33a7238fe5604fad89dbe2fc4c28f357e8fe579a1ad962b",
-"namespacedpp.html#ace1318b24526febab72157cdd8b7b468a08571594b32cf14501db06b9a39c0d2b",
-"namespacemembers_eval_s.html",
-"structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b",
-"structdpp_1_1embed.html#a4aee84626ea24406ff68caeea1e43b08",
-"structdpp_1_1guild__members__chunk__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1message.html#a8ab53932e4cf4fa00d021a5ca3f4b906",
-"structdpp_1_1ready__t.html#aebf5fe086e4ee6921042fe798d58d72a",
-"structdpp_1_1user__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structhttplib_1_1_response.html#a3267e0d9ac015692fd86041f923da294"
+"namespacedpp.html#a3fbd576f42eaeb1c0d425b969de340b8a9036ca4ebc156999b7efd35de1adb2f5",
+"namespacedpp.html#ae1540b4171f114c35864c752ef00f94faddc9e2ea6cfa8e6a5163742056a7ccdf",
+"structdpp_1_1application__command__create__t.html#a73cad13a340866e75c24e913c93a0fbe",
+"structdpp_1_1command__source.html#a98d2f56173783173717ee1ef90f6e424",
+"structdpp_1_1guild__integrations__update__t.html#a357873be4dd30eef7928ae5f7c13e7db",
+"structdpp_1_1message.html#a029932133e0a6aea2afdea5f2d98146e",
+"structdpp_1_1permission__overwrite.html#a61b144231337c0e10ad11dd693c152c3",
+"structdpp_1_1thread__members__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
+"structhttplib_1_1_request.html#aa93ed08a330f298aa1c595df66e90b16"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

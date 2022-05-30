@@ -17,8 +17,6 @@ var hierarchy =
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
-    [ "detail::chrono_format_checker", "structdetail_1_1chrono__format__checker.html", null ],
-    [ "detail::chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structdetail_1_1chrono__formatter.html", null ],
     [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
     [ "dpp::collector< T, C >", "classdpp_1_1collector.html", [
       [ "dpp::channel_collector", "classdpp_1_1channel__collector.html", null ],
@@ -200,10 +198,6 @@ var hierarchy =
         [ "dpp::voice_exception", "classdpp_1_1voice__exception.html", null ]
       ] ]
     ] ],
-    [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
-    [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
-      [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", null ]
-    ] ],
     [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
     [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
@@ -219,8 +213,6 @@ var hierarchy =
       [ "dpp::interaction_modal_response", "structdpp_1_1interaction__modal__response.html", null ]
     ] ],
     [ "dpp::invite", "classdpp_1_1invite.html", null ],
-    [ "detail::make_unsigned_or_unchanged< T, INTEGRAL >", "structdetail_1_1make__unsigned__or__unchanged.html", null ],
-    [ "detail::make_unsigned_or_unchanged< T, true >", "structdetail_1_1make__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ],
       [ "dpp::channel", "classdpp_1_1channel.html", [

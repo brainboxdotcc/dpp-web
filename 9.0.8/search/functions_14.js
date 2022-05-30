@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['value_0',['value',['../classhttplib_1_1_result.html#a548bafc2cbdf35eba042e18378921819',1,'httplib::Result::value() const'],['../classhttplib_1_1_result.html#a2f30c102a3e635beb7863113d9000b5b',1,'httplib::Result::value()']]],
-  ['vformat_1',['vformat',['../namespacedetail.html#a88bdf7763638196f86a29118fba9442e',1,'detail']]],
+  ['value_0',['value',['../classhttplib_1_1_result.html#a2f30c102a3e635beb7863113d9000b5b',1,'httplib::Result::value()'],['../classhttplib_1_1_result.html#a548bafc2cbdf35eba042e18378921819',1,'httplib::Result::value() const']]],
+  ['vformat_5fto_1',['vformat_to',['../namespacedetail.html#ae732653a877af30fd393e774a72bebec',1,'detail::vformat_to(buffer&lt; char &gt; &amp;, string_view, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; char &gt; &gt; &gt;, type_identity_t&lt; char &gt; &gt; &gt;)'],['../namespacedetail.html#ab60222a912202fa179149bc2a630e4ee',1,'detail::vformat_to(buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; format_str, basic_format_args&lt; basic_format_context&lt; std::back_insert_iterator&lt; buffer&lt; type_identity_t&lt; Char &gt; &gt; &gt;, type_identity_t&lt; Char &gt; &gt; &gt; args)']]],
   ['voice_5fbuffer_5fsend_5ft_2',['voice_buffer_send_t',['../structdpp_1_1voice__buffer__send__t.html#a75a9ca3edffe2bb3dae1e7a1ff0bd8e2',1,'dpp::voice_buffer_send_t']]],
   ['voice_5fclient_5fdisconnect_5ft_3',['voice_client_disconnect_t',['../structdpp_1_1voice__client__disconnect__t.html#afa8b1b2cf9a31e4c34acf1883f57ac12',1,'dpp::voice_client_disconnect_t']]],
   ['voice_5fclient_5fspeaking_5ft_4',['voice_client_speaking_t',['../structdpp_1_1voice__client__speaking__t.html#a5160a6d4005ffd9a97c52442f3e2aecf',1,'dpp::voice_client_speaking_t']]],

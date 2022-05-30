@@ -28,6 +28,5 @@ var searchData=
   ['message_5funpin_25',['message_unpin',['../classdpp_1_1cluster.html#a454e53cea10416ca9d299855dbb08e0b',1,'dpp::cluster']]],
   ['message_5fupdate_5ft_26',['message_update_t',['../structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8',1,'dpp::message_update_t']]],
   ['messages_5fget_27',['messages_get',['../classdpp_1_1cluster.html#aeb515b32911639cc22639f717090209a',1,'dpp::cluster']]],
-  ['minute_28',['minute',['../structchrono__formatter.html#abc98e4c115e7d607ae08cb1e59480a73',1,'chrono_formatter']]],
-  ['mobile_5fstatus_29',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]]
+  ['mobile_5fstatus_28',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]]
 ];

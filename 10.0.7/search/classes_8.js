@@ -22,9 +22,5 @@ var searchData=
   ['invite_5fcreate_19',['invite_create',['../classdpp_1_1events_1_1invite__create.html',1,'dpp::events']]],
   ['invite_5fcreate_5ft_20',['invite_create_t',['../structdpp_1_1invite__create__t.html',1,'dpp']]],
   ['invite_5fdelete_21',['invite_delete',['../classdpp_1_1events_1_1invite__delete.html',1,'dpp::events']]],
-  ['invite_5fdelete_5ft_22',['invite_delete_t',['../structdpp_1_1invite__delete__t.html',1,'dpp']]],
-  ['is_5fchar_3c_20char16_5ft_20_3e_23',['is_char&lt; char16_t &gt;',['../structis__char_3_01char16__t_01_4.html',1,'']]],
-  ['is_5fchar_3c_20char32_5ft_20_3e_24',['is_char&lt; char32_t &gt;',['../structis__char_3_01char32__t_01_4.html',1,'']]],
-  ['is_5fchar_3c_20detail_3a_3achar8_5ftype_20_3e_25',['is_char&lt; detail::char8_type &gt;',['../structis__char_3_01detail_1_1char8__type_01_4.html',1,'']]],
-  ['is_5fchar_3c_20wchar_5ft_20_3e_26',['is_char&lt; wchar_t &gt;',['../structis__char_3_01wchar__t_01_4.html',1,'']]]
+  ['invite_5fdelete_5ft_22',['invite_delete_t',['../structdpp_1_1invite__delete__t.html',1,'dpp']]]
 ];

@@ -11,8 +11,8 @@ var searchData=
   ['integration_5fdelete_5ft_8',['integration_delete_t',['../structdpp_1_1integration__delete__t.html#a10e6ef2e6d352e1a9f810acb95769164',1,'dpp::integration_delete_t']]],
   ['integration_5fupdate_5ft_9',['integration_update_t',['../structdpp_1_1integration__update__t.html#ab7db601d6ece4dc115e4a4fce98eba94',1,'dpp::integration_update_t']]],
   ['interaction_5fcreate_5ft_10',['interaction_create_t',['../structdpp_1_1interaction__create__t.html#ab0b360b2769c2e3be693aae2f0df27b6',1,'dpp::interaction_create_t']]],
-  ['interaction_5fmodal_5fresponse_11',['interaction_modal_response',['../structdpp_1_1interaction__modal__response.html#aa7474d9c22a43b75d92a18b40d6fa42d',1,'dpp::interaction_modal_response::interaction_modal_response(const std::string &amp;_custom_id, const std::string &amp;_title, const std::vector&lt; component &gt; _components={})'],['../structdpp_1_1interaction__modal__response.html#aa9b6ffe9f81f1a7c80366951dbd0e883',1,'dpp::interaction_modal_response::interaction_modal_response()']]],
-  ['interaction_5fresponse_12',['interaction_response',['../structdpp_1_1interaction__response.html#a50e33b74f32d9e100db207c1ae5f3b9c',1,'dpp::interaction_response::interaction_response(interaction_response_type t, const struct message &amp;m)'],['../structdpp_1_1interaction__response.html#a074094acbb739670f92520011cdcff09',1,'dpp::interaction_response::interaction_response()'],['../structdpp_1_1interaction__response.html#a09635e2f99305125f42a926f1813a9bb',1,'dpp::interaction_response::interaction_response(interaction_response_type t)']]],
+  ['interaction_5fmodal_5fresponse_11',['interaction_modal_response',['../structdpp_1_1interaction__modal__response.html#aa9b6ffe9f81f1a7c80366951dbd0e883',1,'dpp::interaction_modal_response::interaction_modal_response()'],['../structdpp_1_1interaction__modal__response.html#aa7474d9c22a43b75d92a18b40d6fa42d',1,'dpp::interaction_modal_response::interaction_modal_response(const std::string &amp;_custom_id, const std::string &amp;_title, const std::vector&lt; component &gt; _components={})']]],
+  ['interaction_5fresponse_12',['interaction_response',['../structdpp_1_1interaction__response.html#a074094acbb739670f92520011cdcff09',1,'dpp::interaction_response::interaction_response()'],['../structdpp_1_1interaction__response.html#a50e33b74f32d9e100db207c1ae5f3b9c',1,'dpp::interaction_response::interaction_response(interaction_response_type t, const struct message &amp;m)'],['../structdpp_1_1interaction__response.html#a09635e2f99305125f42a926f1813a9bb',1,'dpp::interaction_response::interaction_response(interaction_response_type t)']]],
   ['interaction_5fresponse_5fcreate_13',['interaction_response_create',['../classdpp_1_1cluster.html#a4c92a68228fe9dcb96b1c7cb6b8ae795',1,'dpp::cluster']]],
   ['interaction_5fresponse_5fedit_14',['interaction_response_edit',['../classdpp_1_1cluster.html#a41c9c18dd9185dfc2cc61b463ad7cf0f',1,'dpp::cluster']]],
   ['invite_15',['invite',['../classdpp_1_1invite.html#ad3c1ed34b2256dcbf2dce82436071f8b',1,'dpp::invite']]],
@@ -71,7 +71,7 @@ var searchData=
   ['is_5fpreview_5fenabled_68',['is_preview_enabled',['../classdpp_1_1guild.html#a6415e9e4dec10710bd3486c1dae76fdf',1,'dpp::guild']]],
   ['is_5fprivate_5fthread_69',['is_private_thread',['../classdpp_1_1thread.html#a8b23ff4092db13a836895efbd5ede669',1,'dpp::thread']]],
   ['is_5fpublic_5fthread_70',['is_public_thread',['../classdpp_1_1thread.html#af7e19705c6040c7593eb6a582fa017c1',1,'dpp::thread']]],
-  ['is_5fready_71',['is_ready',['../classdpp_1_1voiceconn.html#a7dd6504b406b5e08f9fd9337a275568d',1,'dpp::voiceconn::is_ready()'],['../classdpp_1_1discord__voice__client.html#aee5fcfe947f581ecce2c9096871f88a2',1,'dpp::discord_voice_client::is_ready()']]],
+  ['is_5fready_71',['is_ready',['../classdpp_1_1discord__voice__client.html#aee5fcfe947f581ecce2c9096871f88a2',1,'dpp::discord_voice_client::is_ready()'],['../classdpp_1_1voiceconn.html#a7dd6504b406b5e08f9fd9337a275568d',1,'dpp::voiceconn::is_ready()']]],
   ['is_5frevoked_72',['is_revoked',['../classdpp_1_1integration.html#a71170ae6931ae33969ae9352be724778',1,'dpp::integration']]],
   ['is_5fself_5fdeaf_73',['is_self_deaf',['../classdpp_1_1voicestate.html#ac52f6bca0bf8feb50fc7c3ab9cdc57db',1,'dpp::voicestate']]],
   ['is_5fself_5fmute_74',['is_self_mute',['../classdpp_1_1voicestate.html#a1ade333534ab9fe0cb18485269ced203',1,'dpp::voicestate']]],
@@ -92,7 +92,5 @@ var searchData=
   ['is_5fvideo_5fauto_89',['is_video_auto',['../classdpp_1_1channel.html#afb783f82a86a5ed6f247aaa213164854',1,'dpp::channel']]],
   ['is_5fvip_90',['is_vip',['../classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14',1,'dpp::voiceregion']]],
   ['is_5fvoice_5fchannel_91',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
-  ['is_5fwelcome_5fscreen_5fenabled_92',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]],
-  ['isfinite_93',['isfinite',['../namespacedetail.html#ab69f2583a2a167ea0b0e4c333448b113',1,'detail']]],
-  ['isnan_94',['isnan',['../namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841',1,'detail']]]
+  ['is_5fwelcome_5fscreen_5fenabled_92',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]]
 ];

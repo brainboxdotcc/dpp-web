@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['seconds_0',['seconds',['../structdetail_1_1chrono__formatter.html#a0f895aad24b30328cfe90511f47bc7c4',1,'detail::chrono_formatter']]],
-  ['shard_5flist_1',['shard_list',['../namespacedpp.html#a13c4d4e6238396245b349e6a637897e0',1,'dpp']]],
-  ['slashcommand_5fmap_2',['slashcommand_map',['../namespacedpp.html#adfefe335636cdf5dbbba145a3828c554',1,'dpp']]],
-  ['snowflake_3',['snowflake',['../namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475',1,'dpp']]],
-  ['socketoptions_4',['SocketOptions',['../namespacehttplib.html#a02305f842f48963eb2ed425ee5d1655d',1,'httplib']]],
-  ['sticker_5fmap_5',['sticker_map',['../namespacedpp.html#a0d09f413c01571a98b8ec9a267a0e48f',1,'dpp']]],
-  ['sticker_5fpack_5fmap_6',['sticker_pack_map',['../namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283',1,'dpp']]]
+  ['range_0',['Range',['../namespacehttplib.html#a47159528bf61f6bd74065b3fcec21697',1,'httplib']]],
+  ['ranges_1',['Ranges',['../namespacehttplib.html#a3395bd4008ea82b092537f3084dddf5e',1,'httplib']]],
+  ['reader_2',['Reader',['../classhttplib_1_1_content_reader.html#abc8da0da3f914be4fb5cc3bb67d8c443',1,'httplib::ContentReader']]],
+  ['responsehandler_3',['ResponseHandler',['../namespacehttplib.html#ad81ce13409edba1589c0b076b2dfab74',1,'httplib']]],
+  ['role_5fmap_4',['role_map',['../namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b',1,'dpp']]]
 ];

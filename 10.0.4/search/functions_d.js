@@ -1,7 +1,7 @@
 var searchData=
 [
   ['param_5finfo_0',['param_info',['../structdpp_1_1param__info.html#a89bfff8ee4b0412447ab95d11f5640ef',1,'dpp::param_info']]],
-  ['parse_1',['parse',['../classdpp_1_1etf__parser.html#a16b91fa9e1e2024d5cb390b293c4238f',1,'dpp::etf_parser::parse()'],['../structformatter_3_01weekday_00_01_char_01_4.html#a417dfc29121b956fa54c273edbac8ff9',1,'formatter&lt; weekday, Char &gt;::parse()'],['../structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a61336eae6a6e84dc63a367da3aaf91e8',1,'formatter&lt; std::chrono::duration&lt; Rep, Period &gt;, Char &gt;::parse()'],['../structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html#a77575b6aa0596de28a0ed1518ca1721b',1,'formatter&lt; std::chrono::time_point&lt; std::chrono::system_clock, Duration &gt;, Char &gt;::parse()'],['../structformatter_3_01std_1_1tm_00_01_char_01_4.html#a9c8caf13b1795ab3974768dc5f98a0e9',1,'formatter&lt; std::tm, Char &gt;::parse()']]],
+  ['parse_1',['parse',['../classdpp_1_1etf__parser.html#a16b91fa9e1e2024d5cb390b293c4238f',1,'dpp::etf_parser']]],
   ['pause_5faudio_2',['pause_audio',['../classdpp_1_1discord__voice__client.html#ad21c8743aef9a874ef53edfebd8ee2fb',1,'dpp::discord_voice_client']]],
   ['permission_5foverwrites_3',['permission_overwrites',['../classdpp_1_1guild.html#af9f1c71e0d491f2b34079888cadc9dcf',1,'dpp::guild']]],
   ['populate_5fresult_4',['populate_result',['../namespacedpp.html#aad6090df4ddac62da6eaddf6ea3367e1',1,'dpp']]],

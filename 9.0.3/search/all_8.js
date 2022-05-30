@@ -147,7 +147,7 @@ var searchData=
   ['is_5frunning_144',['is_running',['../classhttplib_1_1_server.html#a93a632ffae8eea0380daaac719cba06c',1,'httplib::Server']]],
   ['is_5fself_5fdeaf_145',['is_self_deaf',['../classdpp_1_1voicestate.html#ac52f6bca0bf8feb50fc7c3ab9cdc57db',1,'dpp::voicestate']]],
   ['is_5fself_5fmute_146',['is_self_mute',['../classdpp_1_1voicestate.html#a1ade333534ab9fe0cb18485269ced203',1,'dpp::voicestate']]],
-  ['is_5fsocket_5fopen_147',['is_socket_open',['../classhttplib_1_1_client.html#a957657b5e4eed5143bc9e864c85f4e49',1,'httplib::Client::is_socket_open()'],['../classhttplib_1_1_client_impl.html#adb81f18287fc15afae42574b8964ae6f',1,'httplib::ClientImpl::is_socket_open()']]],
+  ['is_5fsocket_5fopen_147',['is_socket_open',['../classhttplib_1_1_client_impl.html#adb81f18287fc15afae42574b8964ae6f',1,'httplib::ClientImpl::is_socket_open()'],['../classhttplib_1_1_client.html#a957657b5e4eed5143bc9e864c85f4e49',1,'httplib::Client::is_socket_open()']]],
   ['is_5fsource_5fmessage_5fdeleted_148',['is_source_message_deleted',['../structdpp_1_1message.html#a0f22f044046ebc8bdc7d35e950baca25',1,'dpp::message']]],
   ['is_5fspace_5for_5ftab_149',['is_space_or_tab',['../namespacehttplib_1_1detail.html#a516825616cd42123cbe974a9f42718aa',1,'httplib::detail']]],
   ['is_5fstage_5fchannel_150',['is_stage_channel',['../classdpp_1_1channel.html#ae95ae73f17ff4badd2001bcc07940709',1,'dpp::channel']]],
@@ -167,11 +167,9 @@ var searchData=
   ['is_5fvip_164',['is_vip',['../classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14',1,'dpp::voiceregion']]],
   ['is_5fvoice_5fchannel_165',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
   ['is_5fwelcome_5fscreen_5fenabled_166',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]],
-  ['is_5fwritable_167',['is_writable',['../classhttplib_1_1detail_1_1_socket_stream.html#aa5bf41c972f307030f34de1c7dbb25d9',1,'httplib::detail::SocketStream::is_writable()'],['../classhttplib_1_1_data_sink.html#ac5459d89772abb4593d3f5af52319704',1,'httplib::DataSink::is_writable()'],['../classhttplib_1_1detail_1_1_s_s_l_socket_stream.html#a281d16b8ab06166d6aff4145fd13bbd3',1,'httplib::detail::SSLSocketStream::is_writable()'],['../classhttplib_1_1detail_1_1_buffer_stream.html#a7b8c6924fbb6bb51e7e21e364b62c7fb',1,'httplib::detail::BufferStream::is_writable()'],['../classhttplib_1_1_stream.html#ab10c55e43ccf0146c4d142e53a58a831',1,'httplib::Stream::is_writable()']]],
-  ['isfinite_168',['isfinite',['../namespacedetail.html#ab69f2583a2a167ea0b0e4c333448b113',1,'detail']]],
-  ['isnan_169',['isnan',['../namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841',1,'detail']]],
-  ['issuer_170',['issuer',['../structdpp_1_1command__source.html#ad81aa8dca95492d9e26488cb22d4df45',1,'dpp::command_source']]],
-  ['it_5fapplication_5fcommand_171',['it_application_command',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0',1,'dpp']]],
-  ['it_5fcomponent_5fbutton_172',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
-  ['it_5fping_173',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]]
+  ['is_5fwritable_167',['is_writable',['../classhttplib_1_1detail_1_1_s_s_l_socket_stream.html#a281d16b8ab06166d6aff4145fd13bbd3',1,'httplib::detail::SSLSocketStream::is_writable()'],['../classhttplib_1_1detail_1_1_socket_stream.html#aa5bf41c972f307030f34de1c7dbb25d9',1,'httplib::detail::SocketStream::is_writable()'],['../classhttplib_1_1detail_1_1_buffer_stream.html#a7b8c6924fbb6bb51e7e21e364b62c7fb',1,'httplib::detail::BufferStream::is_writable()'],['../classhttplib_1_1_stream.html#ab10c55e43ccf0146c4d142e53a58a831',1,'httplib::Stream::is_writable()'],['../classhttplib_1_1_data_sink.html#ac5459d89772abb4593d3f5af52319704',1,'httplib::DataSink::is_writable()']]],
+  ['issuer_168',['issuer',['../structdpp_1_1command__source.html#ad81aa8dca95492d9e26488cb22d4df45',1,'dpp::command_source']]],
+  ['it_5fapplication_5fcommand_169',['it_application_command',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0',1,'dpp']]],
+  ['it_5fcomponent_5fbutton_170',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
+  ['it_5fping_171',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]]
 ];

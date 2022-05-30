@@ -36,8 +36,6 @@ var searchData=
   ['message_5funpin_33',['message_unpin',['../classdpp_1_1cluster.html#a454e53cea10416ca9d299855dbb08e0b',1,'dpp::cluster']]],
   ['message_5fupdate_5ft_34',['message_update_t',['../structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8',1,'dpp::message_update_t']]],
   ['messages_5fget_35',['messages_get',['../classdpp_1_1cluster.html#aeb515b32911639cc22639f717090209a',1,'dpp::cluster']]],
-  ['minute_36',['minute',['../structdetail_1_1chrono__formatter.html#aa294395578b71b34b117c394b24fd5f5',1,'detail::chrono_formatter']]],
-  ['mobile_5fstatus_37',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]],
-  ['mod_38',['mod',['../namespacedetail.html#ae7415818bbbc5e306422e8a341126ae1',1,'detail']]],
-  ['multipartformdataparser_39',['MultipartFormDataParser',['../classhttplib_1_1detail_1_1_multipart_form_data_parser.html#a5cdcac92f56081240ccf892edce3ad3f',1,'httplib::detail::MultipartFormDataParser']]]
+  ['mobile_5fstatus_36',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]],
+  ['multipartformdataparser_37',['MultipartFormDataParser',['../classhttplib_1_1detail_1_1_multipart_form_data_parser.html#a5cdcac92f56081240ccf892edce3ad3f',1,'httplib::detail::MultipartFormDataParser']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['literals_0',['literals',['../namespaceliterals.html',1,'']]]
+  ['nlohmann_0',['nlohmann',['../namespacenlohmann.html',1,'']]]
 ];

@@ -10,7 +10,7 @@ var searchData=
   ['make_5funique_7',['make_unique',['../namespacehttplib_1_1detail.html#a5c881a9e1290dee8ec75fff73976bbdc',1,'httplib::detail::make_unique(Args &amp;&amp;...args)'],['../namespacehttplib_1_1detail.html#aad476144b9f04e958db83514b8b130ed',1,'httplib::detail::make_unique(std::size_t n)']]],
   ['managed_8',['managed',['../classdpp_1_1managed.html#a31ef760e6aff5631cdaf8425daaf7e6a',1,'dpp::managed']]],
   ['md5_9',['MD5',['../namespacehttplib_1_1detail.html#ae7c54c35fecc2c3043459ae4a3fb1d1f',1,'httplib::detail']]],
-  ['message_10',['message',['../structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756',1,'dpp::message::message()'],['../structdpp_1_1message.html#a21466e050ee9c0646392ccf5940bb62a',1,'dpp::message::message(snowflake channel_id, const std::string &amp;content, message_type type=mt_default)'],['../structdpp_1_1message.html#a0e71afdc706c7ae83934ddfd8c2ffc38',1,'dpp::message::message(snowflake channel_id, const embed &amp;_embed)'],['../structdpp_1_1message.html#a45a0883a10a19e933fbba682aba212f6',1,'dpp::message::message(const std::string &amp;content, message_type type=mt_default)']]],
+  ['message_10',['message',['../structdpp_1_1message.html#a717067505cfc5f5dcf05459c216c9756',1,'dpp::message::message()'],['../structdpp_1_1message.html#a45a0883a10a19e933fbba682aba212f6',1,'dpp::message::message(const std::string &amp;content, message_type type=mt_default)'],['../structdpp_1_1message.html#a0e71afdc706c7ae83934ddfd8c2ffc38',1,'dpp::message::message(snowflake channel_id, const embed &amp;_embed)'],['../structdpp_1_1message.html#a21466e050ee9c0646392ccf5940bb62a',1,'dpp::message::message(snowflake channel_id, const std::string &amp;content, message_type type=mt_default)']]],
   ['message_5fadd_5freaction_11',['message_add_reaction',['../classdpp_1_1cluster.html#a08eb4e0352a29a92587d677d4b5fd6a7',1,'dpp::cluster']]],
   ['message_5fcreate_12',['message_create',['../classdpp_1_1cluster.html#a080a8cefc6ceb0b882fdb6fe70c078a6',1,'dpp::cluster']]],
   ['message_5fcreate_5ft_13',['message_create_t',['../structdpp_1_1message__create__t.html#ac92030b9e82742ab832f9a2e9d6cfc00',1,'dpp::message_create_t']]],
@@ -35,8 +35,6 @@ var searchData=
   ['message_5funpin_32',['message_unpin',['../classdpp_1_1cluster.html#a454e53cea10416ca9d299855dbb08e0b',1,'dpp::cluster']]],
   ['message_5fupdate_5ft_33',['message_update_t',['../structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8',1,'dpp::message_update_t']]],
   ['messages_5fget_34',['messages_get',['../classdpp_1_1cluster.html#acb1a4777f0907ee6c841ba008a81f60b',1,'dpp::cluster']]],
-  ['minute_35',['minute',['../structdetail_1_1chrono__formatter.html#aa294395578b71b34b117c394b24fd5f5',1,'detail::chrono_formatter']]],
-  ['mobile_5fstatus_36',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]],
-  ['mod_37',['mod',['../namespacedetail.html#ae7415818bbbc5e306422e8a341126ae1',1,'detail']]],
-  ['multipartformdataparser_38',['MultipartFormDataParser',['../classhttplib_1_1detail_1_1_multipart_form_data_parser.html#a5cdcac92f56081240ccf892edce3ad3f',1,'httplib::detail::MultipartFormDataParser']]]
+  ['mobile_5fstatus_35',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]],
+  ['multipartformdataparser_36',['MultipartFormDataParser',['../classhttplib_1_1detail_1_1_multipart_form_data_parser.html#a5cdcac92f56081240ccf892edce3ad3f',1,'httplib::detail::MultipartFormDataParser']]]
 ];

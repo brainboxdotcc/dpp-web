@@ -38,6 +38,5 @@ var searchData=
   ['message_5fupdate_5ft_35',['message_update_t',['../structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8',1,'dpp::message_update_t']]],
   ['messages_5fget_36',['messages_get',['../classdpp_1_1cluster.html#ad471be0405745e32f130a2bfcd371c73',1,'dpp::cluster']]],
   ['messages_5fget_5fsync_37',['messages_get_sync',['../classdpp_1_1cluster.html#a795ac11245e689599fb24f9e5a6a060d',1,'dpp::cluster']]],
-  ['minute_38',['minute',['../structchrono__formatter.html#abc98e4c115e7d607ae08cb1e59480a73',1,'chrono_formatter']]],
-  ['mobile_5fstatus_39',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]]
+  ['mobile_5fstatus_38',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]]
 ];

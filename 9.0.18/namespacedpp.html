@@ -295,7 +295,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a buffer of bytes being encoded into ETF.  <a href="structdpp_1_1etf__buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1etf__parser.html">etf_parser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1etf__parser.html" title="The etf_parser class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohma...">etf_parser</a> class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohmann::json object, so that layers above the websocket don't have to be any different for handling ETF.  <a href="classdpp_1_1etf__parser.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classdpp_1_1etf__parser.html" title="The etf_parser class can serialise and deserialise ETF (Erlang Term Format) into and out of an nlohma...">etf_parser</a> class can serialise and deserialise ETF (Erlang Term Format) into and out of an <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> object, so that layers above the websocket don't have to be any different for handling ETF.  <a href="classdpp_1_1etf__parser.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base event parameter struct. Each event you receive from the library will have its parameter derived from this class. The class contains the raw event data, and a pointer to the current shard's <a class="el" href="classdpp_1_1discord__client.html" title="Implements a discord client. Each discord_client connects to one shard and derives from a websocket c...">dpp::discord_client</a> object. You can also use this object to cancel the current event, meaning that any listeners after yours do not get notified of the current event if you call it.  <a href="structdpp_1_1event__dispatch__t.html#details">More...</a><br /></td></tr>
@@ -686,7 +686,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae9134a9d8edf8adcb87e979bb7a7343e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> = nlohmann::json</td></tr>
+<tr class="memitem:ae9134a9d8edf8adcb87e979bb7a7343e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a> = <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></td></tr>
 <tr class="separator:ae9134a9d8edf8adcb87e979bb7a7343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a710b32b577396ba92917d0578f0bedb6"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; std::monostate, std::string, int64_t, bool, <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a></td></tr>
 <tr class="memdesc:a710b32b577396ba92917d0578f0bedb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is a variant that can hold any of the potential native data types represented by the enum above. It is used in interactions.  <a href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">More...</a><br /></td></tr>
@@ -1606,65 +1606,65 @@ Functions</h2></td></tr>
 <tr class="separator:ad1383a88d06493bd0a9ab3fba5e11d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1728693a6b7bc12f1bb05e113e5c0428"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1728693a6b7bc12f1bb05e113e5c0428">get_emoji_count</a> ()</td></tr>
 <tr class="separator:a1728693a6b7bc12f1bb05e113e5c0428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d77e1ffffe22979d93132a7acee1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a> &amp;tmdata)</td></tr>
+<tr class="memitem:a77d77e1ffffe22979d93132a7acee1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3">to_json</a> (<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, const <a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a> &amp;tmdata)</td></tr>
 <tr class="separator:a77d77e1ffffe22979d93132a7acee1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1permission__overwrite.html">permission_overwrite</a> &amp;po)</td></tr>
+<tr class="memitem:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">to_json</a> (<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, const <a class="el" href="structdpp_1_1permission__overwrite.html">permission_overwrite</a> &amp;po)</td></tr>
 <tr class="separator:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5d1b14ba391c0e2c80da8104029e3e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa5d1b14ba391c0e2c80da8104029e3e0">ts_to_string</a> (time_t ts)</td></tr>
 <tr class="memdesc:aa5d1b14ba391c0e2c80da8104029e3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert time_t unix epoch to std::string ISO date/time.  <a href="namespacedpp.html#aa5d1b14ba391c0e2c80da8104029e3e0">More...</a><br /></td></tr>
 <tr class="separator:aa5d1b14ba391c0e2c80da8104029e3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3adf3a9d45170342096a41c8f8a73c6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae3adf3a9d45170342096a41c8f8a73c6">snowflake_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
+<tr class="memitem:ae3adf3a9d45170342096a41c8f8a73c6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae3adf3a9d45170342096a41c8f8a73c6">snowflake_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname)</td></tr>
 <tr class="memdesc:ae3adf3a9d45170342096a41c8f8a73c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a snowflake id from a json field value, if defined, else returns 0.  <a href="namespacedpp.html#ae3adf3a9d45170342096a41c8f8a73c6">More...</a><br /></td></tr>
 <tr class="separator:ae3adf3a9d45170342096a41c8f8a73c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb72b0665329d21e979e60be8239a962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adb72b0665329d21e979e60be8239a962">set_snowflake_not_null</a> (const nlohmann::json *j, const char *keyname, uint64_t &amp;v)</td></tr>
+<tr class="memitem:adb72b0665329d21e979e60be8239a962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adb72b0665329d21e979e60be8239a962">set_snowflake_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname, uint64_t &amp;v)</td></tr>
 <tr class="memdesc:adb72b0665329d21e979e60be8239a962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a snowflake id from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#adb72b0665329d21e979e60be8239a962">More...</a><br /></td></tr>
 <tr class="separator:adb72b0665329d21e979e60be8239a962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff1b41932df1203db7b45eb24c9ec297"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aff1b41932df1203db7b45eb24c9ec297">string_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
+<tr class="memitem:aff1b41932df1203db7b45eb24c9ec297"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aff1b41932df1203db7b45eb24c9ec297">string_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname)</td></tr>
 <tr class="memdesc:aff1b41932df1203db7b45eb24c9ec297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string from a json field value, if defined, else returns an empty string.  <a href="namespacedpp.html#aff1b41932df1203db7b45eb24c9ec297">More...</a><br /></td></tr>
 <tr class="separator:aff1b41932df1203db7b45eb24c9ec297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3688ca52199826cb1ac394fb5d1116e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af3688ca52199826cb1ac394fb5d1116e">set_string_not_null</a> (const nlohmann::json *j, const char *keyname, std::string &amp;v)</td></tr>
+<tr class="memitem:af3688ca52199826cb1ac394fb5d1116e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af3688ca52199826cb1ac394fb5d1116e">set_string_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname, std::string &amp;v)</td></tr>
 <tr class="memdesc:af3688ca52199826cb1ac394fb5d1116e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a string from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#af3688ca52199826cb1ac394fb5d1116e">More...</a><br /></td></tr>
 <tr class="separator:af3688ca52199826cb1ac394fb5d1116e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d2af8b0b8a7a17835b306d44e5e872"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a48d2af8b0b8a7a17835b306d44e5e872">int64_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
+<tr class="memitem:a48d2af8b0b8a7a17835b306d44e5e872"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a48d2af8b0b8a7a17835b306d44e5e872">int64_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname)</td></tr>
 <tr class="memdesc:a48d2af8b0b8a7a17835b306d44e5e872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 64 bit unsigned integer from a json field value, if defined, else returns 0. DO NOT use this for snowflakes, as usually snowflakes are wrapped in a string!  <a href="namespacedpp.html#a48d2af8b0b8a7a17835b306d44e5e872">More...</a><br /></td></tr>
 <tr class="separator:a48d2af8b0b8a7a17835b306d44e5e872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad700ccb42655b4b1001340160bdb2068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad700ccb42655b4b1001340160bdb2068">set_int64_not_null</a> (const nlohmann::json *j, const char *keyname, uint64_t &amp;v)</td></tr>
+<tr class="memitem:ad700ccb42655b4b1001340160bdb2068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad700ccb42655b4b1001340160bdb2068">set_int64_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname, uint64_t &amp;v)</td></tr>
 <tr class="memdesc:ad700ccb42655b4b1001340160bdb2068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an unsigned 64 bit integer from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#ad700ccb42655b4b1001340160bdb2068">More...</a><br /></td></tr>
 <tr class="separator:ad700ccb42655b4b1001340160bdb2068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60433ef687fe69d1771739ae6313edc0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a60433ef687fe69d1771739ae6313edc0">int32_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
+<tr class="memitem:a60433ef687fe69d1771739ae6313edc0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a60433ef687fe69d1771739ae6313edc0">int32_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname)</td></tr>
 <tr class="memdesc:a60433ef687fe69d1771739ae6313edc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 32 bit unsigned integer from a json field value, if defined, else returns 0.  <a href="namespacedpp.html#a60433ef687fe69d1771739ae6313edc0">More...</a><br /></td></tr>
 <tr class="separator:a60433ef687fe69d1771739ae6313edc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14347ab13e156a95f1ab83991ddd3dc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a14347ab13e156a95f1ab83991ddd3dc2">set_int32_not_null</a> (const nlohmann::json *j, const char *keyname, uint32_t &amp;v)</td></tr>
+<tr class="memitem:a14347ab13e156a95f1ab83991ddd3dc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a14347ab13e156a95f1ab83991ddd3dc2">set_int32_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname, uint32_t &amp;v)</td></tr>
 <tr class="memdesc:a14347ab13e156a95f1ab83991ddd3dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an unsigned 32 bit integer from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#a14347ab13e156a95f1ab83991ddd3dc2">More...</a><br /></td></tr>
 <tr class="separator:a14347ab13e156a95f1ab83991ddd3dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af661e9d3c9ba050db0a1cf8a74d519ad"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af661e9d3c9ba050db0a1cf8a74d519ad">int16_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
+<tr class="memitem:af661e9d3c9ba050db0a1cf8a74d519ad"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af661e9d3c9ba050db0a1cf8a74d519ad">int16_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname)</td></tr>
 <tr class="memdesc:af661e9d3c9ba050db0a1cf8a74d519ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 16 bit unsigned integer from a json field value, if defined, else returns 0.  <a href="namespacedpp.html#af661e9d3c9ba050db0a1cf8a74d519ad">More...</a><br /></td></tr>
 <tr class="separator:af661e9d3c9ba050db0a1cf8a74d519ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d2f9cffa7858b142252ed828135031b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9d2f9cffa7858b142252ed828135031b">set_int16_not_null</a> (const nlohmann::json *j, const char *keyname, uint16_t &amp;v)</td></tr>
+<tr class="memitem:a9d2f9cffa7858b142252ed828135031b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9d2f9cffa7858b142252ed828135031b">set_int16_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname, uint16_t &amp;v)</td></tr>
 <tr class="memdesc:a9d2f9cffa7858b142252ed828135031b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an unsigned 16 bit integer from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#a9d2f9cffa7858b142252ed828135031b">More...</a><br /></td></tr>
 <tr class="separator:a9d2f9cffa7858b142252ed828135031b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e158129906c5ea85d850f204dbc7d32"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7e158129906c5ea85d850f204dbc7d32">int8_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
+<tr class="memitem:a7e158129906c5ea85d850f204dbc7d32"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7e158129906c5ea85d850f204dbc7d32">int8_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname)</td></tr>
 <tr class="memdesc:a7e158129906c5ea85d850f204dbc7d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an 8 bit unsigned integer from a json field value, if defined, else returns 0.  <a href="namespacedpp.html#a7e158129906c5ea85d850f204dbc7d32">More...</a><br /></td></tr>
 <tr class="separator:a7e158129906c5ea85d850f204dbc7d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81be2f1016248ed7e697a7a50fb9586f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a81be2f1016248ed7e697a7a50fb9586f">set_int8_not_null</a> (const nlohmann::json *j, const char *keyname, uint8_t &amp;v)</td></tr>
+<tr class="memitem:a81be2f1016248ed7e697a7a50fb9586f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a81be2f1016248ed7e697a7a50fb9586f">set_int8_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname, uint8_t &amp;v)</td></tr>
 <tr class="memdesc:a81be2f1016248ed7e697a7a50fb9586f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an unsigned 8 bit integer from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#a81be2f1016248ed7e697a7a50fb9586f">More...</a><br /></td></tr>
 <tr class="separator:a81be2f1016248ed7e697a7a50fb9586f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b572e3b9c9589abfda7c048782f1089"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0b572e3b9c9589abfda7c048782f1089">bool_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
+<tr class="memitem:a0b572e3b9c9589abfda7c048782f1089"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0b572e3b9c9589abfda7c048782f1089">bool_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname)</td></tr>
 <tr class="memdesc:a0b572e3b9c9589abfda7c048782f1089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a boolean value from a json field value, if defined, else returns false.  <a href="namespacedpp.html#a0b572e3b9c9589abfda7c048782f1089">More...</a><br /></td></tr>
 <tr class="separator:a0b572e3b9c9589abfda7c048782f1089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d859699fdaf24be9eb952c925e0f4e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1d859699fdaf24be9eb952c925e0f4e3">set_bool_not_null</a> (const nlohmann::json *j, const char *keyname, bool &amp;v)</td></tr>
+<tr class="memitem:a1d859699fdaf24be9eb952c925e0f4e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1d859699fdaf24be9eb952c925e0f4e3">set_bool_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname, bool &amp;v)</td></tr>
 <tr class="memdesc:a1d859699fdaf24be9eb952c925e0f4e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a boolean from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#a1d859699fdaf24be9eb952c925e0f4e3">More...</a><br /></td></tr>
 <tr class="separator:a1d859699fdaf24be9eb952c925e0f4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81eeb32f4e67cd830f6bc5f52c006c9b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a81eeb32f4e67cd830f6bc5f52c006c9b">base64_encode</a> (unsigned char const  *buf, unsigned int buffer_length)</td></tr>
 <tr class="memdesc:a81eeb32f4e67cd830f6bc5f52c006c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base64 encode data into a string.  <a href="namespacedpp.html#a81eeb32f4e67cd830f6bc5f52c006c9b">More...</a><br /></td></tr>
 <tr class="separator:a81eeb32f4e67cd830f6bc5f52c006c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4ab356292d0e7b1ee074a8f4a08a9c9"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa4ab356292d0e7b1ee074a8f4a08a9c9">ts_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
+<tr class="memitem:aa4ab356292d0e7b1ee074a8f4a08a9c9"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa4ab356292d0e7b1ee074a8f4a08a9c9">ts_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname)</td></tr>
 <tr class="memdesc:aa4ab356292d0e7b1ee074a8f4a08a9c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a time_t from an ISO8601 timestamp field in a json value, if defined, else returns epoch value of 0.  <a href="namespacedpp.html#aa4ab356292d0e7b1ee074a8f4a08a9c9">More...</a><br /></td></tr>
 <tr class="separator:aa4ab356292d0e7b1ee074a8f4a08a9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a53fcf964c451a36d8970d7e73cad10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0a53fcf964c451a36d8970d7e73cad10">set_ts_not_null</a> (const nlohmann::json *j, const char *keyname, time_t &amp;v)</td></tr>
+<tr class="memitem:a0a53fcf964c451a36d8970d7e73cad10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0a53fcf964c451a36d8970d7e73cad10">set_ts_not_null</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *j, const char *keyname, time_t &amp;v)</td></tr>
 <tr class="memdesc:a0a53fcf964c451a36d8970d7e73cad10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an timestamp from a json field value containing an ISO8601 string, if defined, else does nothing.  <a href="namespacedpp.html#a0a53fcf964c451a36d8970d7e73cad10">More...</a><br /></td></tr>
 <tr class="separator:a0a53fcf964c451a36d8970d7e73cad10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177af60de5536cff95f417fce3d9487a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm)</td></tr>
+<tr class="memitem:a177af60de5536cff95f417fce3d9487a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm)</td></tr>
 <tr class="memdesc:a177af60de5536cff95f417fce3d9487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> from json  <a href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">More...</a><br /></td></tr>
 <tr class="separator:a177af60de5536cff95f417fce3d9487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239ce3fb8b4d9873dffeb5cb9b249f5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1guild__member.html">guild_member</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a239ce3fb8b4d9873dffeb5cb9b249f5d">find_guild_member</a> (const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id)</td></tr>
@@ -1677,40 +1677,40 @@ Functions</h2></td></tr>
 <tr class="memitem:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4">url_encode</a> (const std::string &amp;value)</td></tr>
 <tr class="memdesc:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a url parameter similar to php urlencode()  <a href="namespacedpp.html#a971c15a3dd2177d329cdef9c2cdc55f4">More...</a><br /></td></tr>
 <tr class="separator:a971c15a3dd2177d329cdef9c2cdc55f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1command__option__choice.html">command_option_choice</a> &amp;choice)</td></tr>
+<tr class="memitem:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">to_json</a> (<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, const <a class="el" href="structdpp_1_1command__option__choice.html">command_option_choice</a> &amp;choice)</td></tr>
 <tr class="memdesc:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to serialize a <a class="el" href="structdpp_1_1command__option__choice.html" title="This struct represents choices in a multiple choice option for a command parameter....">command_option_choice</a> to json  <a href="namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403">More...</a><br /></td></tr>
 <tr class="separator:ae5041ec3547b4d4b7bf3416eea9b6403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a96c54dc4f6dad8f8f6bbe05fea254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae6a96c54dc4f6dad8f8f6bbe05fea254">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1command__option.html">command_option</a> &amp;opt)</td></tr>
+<tr class="memitem:ae6a96c54dc4f6dad8f8f6bbe05fea254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae6a96c54dc4f6dad8f8f6bbe05fea254">to_json</a> (<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, const <a class="el" href="structdpp_1_1command__option.html">command_option</a> &amp;opt)</td></tr>
 <tr class="memdesc:ae6a96c54dc4f6dad8f8f6bbe05fea254"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to serialize a <a class="el" href="structdpp_1_1command__option.html" title="Each command option is a command line parameter. It can have a type (see dpp::command_option_type),...">command_option</a> to json  <a href="namespacedpp.html#ae6a96c54dc4f6dad8f8f6bbe05fea254">More...</a><br /></td></tr>
 <tr class="separator:ae6a96c54dc4f6dad8f8f6bbe05fea254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a752b7140de023c34db60c92363aacf3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a752b7140de023c34db60c92363aacf3f">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="classdpp_1_1command__permission.html">command_permission</a> &amp;cp)</td></tr>
+<tr class="memitem:a752b7140de023c34db60c92363aacf3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a752b7140de023c34db60c92363aacf3f">to_json</a> (<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, const <a class="el" href="classdpp_1_1command__permission.html">command_permission</a> &amp;cp)</td></tr>
 <tr class="memdesc:a752b7140de023c34db60c92363aacf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to serialize a <a class="el" href="classdpp_1_1command__permission.html" title="Application command permissions allow you to enable or disable commands for specific users or roles w...">command_permission</a> to json  <a href="namespacedpp.html#a752b7140de023c34db60c92363aacf3f">More...</a><br /></td></tr>
 <tr class="separator:a752b7140de023c34db60c92363aacf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a735482218b54177427bc882605fa1e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a735482218b54177427bc882605fa1e4a">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="classdpp_1_1guild__command__permissions.html">guild_command_permissions</a> &amp;gcp)</td></tr>
+<tr class="memitem:a735482218b54177427bc882605fa1e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a735482218b54177427bc882605fa1e4a">to_json</a> (<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, const <a class="el" href="classdpp_1_1guild__command__permissions.html">guild_command_permissions</a> &amp;gcp)</td></tr>
 <tr class="memdesc:a735482218b54177427bc882605fa1e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to serialize a <a class="el" href="classdpp_1_1guild__command__permissions.html" title="Returned when fetching the permissions for a command in a guild.">guild_command_permissions</a> to json  <a href="namespacedpp.html#a735482218b54177427bc882605fa1e4a">More...</a><br /></td></tr>
 <tr class="separator:a735482218b54177427bc882605fa1e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85aad7db48e1fc97a00f92044fa2c1c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &amp;cmd)</td></tr>
+<tr class="memitem:a85aad7db48e1fc97a00f92044fa2c1c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2">to_json</a> (<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, const <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &amp;cmd)</td></tr>
 <tr class="memdesc:a85aad7db48e1fc97a00f92044fa2c1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to serialize a slashcommand to json  <a href="namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2">More...</a><br /></td></tr>
 <tr class="separator:a85aad7db48e1fc97a00f92044fa2c1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ac98206ba62a7ddba95355743a9e07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac2ac98206ba62a7ddba95355743a9e07">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="structdpp_1_1command__data__option.html">command_data_option</a> &amp;cdo)</td></tr>
+<tr class="memitem:ac2ac98206ba62a7ddba95355743a9e07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac2ac98206ba62a7ddba95355743a9e07">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="structdpp_1_1command__data__option.html">command_data_option</a> &amp;cdo)</td></tr>
 <tr class="memdesc:ac2ac98206ba62a7ddba95355743a9e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="structdpp_1_1command__data__option.html" title="Values in the command interaction. These are the values specified by the user when actually issuing t...">command_data_option</a> from json  <a href="namespacedpp.html#ac2ac98206ba62a7ddba95355743a9e07">More...</a><br /></td></tr>
 <tr class="separator:ac2ac98206ba62a7ddba95355743a9e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bfffa121ee7a78fe2c0e4d4a9a7fa17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="structdpp_1_1command__interaction.html">command_interaction</a> &amp;ci)</td></tr>
+<tr class="memitem:a1bfffa121ee7a78fe2c0e4d4a9a7fa17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="structdpp_1_1command__interaction.html">command_interaction</a> &amp;ci)</td></tr>
 <tr class="memdesc:a1bfffa121ee7a78fe2c0e4d4a9a7fa17"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="structdpp_1_1command__interaction.html" title="Details of a command within an interaction. This subobject represents the application command associa...">command_interaction</a> from json  <a href="namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17">More...</a><br /></td></tr>
 <tr class="separator:a1bfffa121ee7a78fe2c0e4d4a9a7fa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabc378142329f7d4fe1ac82c81027114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aabc378142329f7d4fe1ac82c81027114">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="structdpp_1_1component__interaction.html">component_interaction</a> &amp;bi)</td></tr>
+<tr class="memitem:aabc378142329f7d4fe1ac82c81027114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aabc378142329f7d4fe1ac82c81027114">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="structdpp_1_1component__interaction.html">component_interaction</a> &amp;bi)</td></tr>
 <tr class="memdesc:aabc378142329f7d4fe1ac82c81027114"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="structdpp_1_1component__interaction.html" title="A button click for a button component.">component_interaction</a> from json  <a href="namespacedpp.html#aabc378142329f7d4fe1ac82c81027114">More...</a><br /></td></tr>
 <tr class="separator:aabc378142329f7d4fe1ac82c81027114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a965939ea98a0cc2a038250fc73bd6e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a965939ea98a0cc2a038250fc73bd6e10">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="structdpp_1_1autocomplete__interaction.html">autocomplete_interaction</a> &amp;ai)</td></tr>
+<tr class="memitem:a965939ea98a0cc2a038250fc73bd6e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a965939ea98a0cc2a038250fc73bd6e10">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="structdpp_1_1autocomplete__interaction.html">autocomplete_interaction</a> &amp;ai)</td></tr>
 <tr class="memdesc:a965939ea98a0cc2a038250fc73bd6e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize an <a class="el" href="structdpp_1_1autocomplete__interaction.html" title="An auto complete interaction.">autocomplete_interaction</a> from json  <a href="namespacedpp.html#a965939ea98a0cc2a038250fc73bd6e10">More...</a><br /></td></tr>
 <tr class="separator:a965939ea98a0cc2a038250fc73bd6e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d5a166cc8328a1d2728e9e451c966f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1d5a166cc8328a1d2728e9e451c966f5">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1interaction.html">interaction</a> &amp;i)</td></tr>
+<tr class="memitem:a1d5a166cc8328a1d2728e9e451c966f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1d5a166cc8328a1d2728e9e451c966f5">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="classdpp_1_1interaction.html">interaction</a> &amp;i)</td></tr>
 <tr class="memdesc:a1d5a166cc8328a1d2728e9e451c966f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize an interaction from json  <a href="namespacedpp.html#a1d5a166cc8328a1d2728e9e451c966f5">More...</a><br /></td></tr>
 <tr class="separator:a1d5a166cc8328a1d2728e9e451c966f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b146099de6ccbd7135ffba167aee39d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1b146099de6ccbd7135ffba167aee39d">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1user__identified.html">user_identified</a> &amp;u)</td></tr>
+<tr class="memitem:a1b146099de6ccbd7135ffba167aee39d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1b146099de6ccbd7135ffba167aee39d">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="classdpp_1_1user__identified.html">user_identified</a> &amp;u)</td></tr>
 <tr class="memdesc:a1b146099de6ccbd7135ffba167aee39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="classdpp_1_1user__identified.html" title="A user with additional fields only available via the oauth2 identify scope. These are not included in...">user_identified</a> from json  <a href="namespacedpp.html#a1b146099de6ccbd7135ffba167aee39d">More...</a><br /></td></tr>
 <tr class="separator:a1b146099de6ccbd7135ffba167aee39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36d2c45cce93740da4da28ef18e90a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1user.html">user</a> &amp;u)</td></tr>
+<tr class="memitem:a36d2c45cce93740da4da28ef18e90a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52">from_json</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j, <a class="el" href="classdpp_1_1user.html">user</a> &amp;u)</td></tr>
 <tr class="memdesc:a36d2c45cce93740da4da28ef18e90a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a user from json  <a href="namespacedpp.html#a36d2c45cce93740da4da28ef18e90a52">More...</a><br /></td></tr>
 <tr class="separator:a36d2c45cce93740da4da28ef18e90a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981df68922716d97ba921fd2027c3513"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a981df68922716d97ba921fd2027c3513">tokenize</a> (std::string const &amp;in, const char *sep=&quot;\r\n&quot;)</td></tr>
@@ -2099,7 +2099,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef nlohmann::json <a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">dpp::json</a></td>
+          <td class="memname">typedef <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> <a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">dpp::json</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4518,7 +4518,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool dpp::bool_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -4538,7 +4538,7 @@ Variables</h2></td></tr>
 <p>Returns a boolean value from a json field value, if defined, else returns false. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
   </table>
   </dd>
@@ -4690,7 +4690,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::from_json </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -4728,7 +4728,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::from_json </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -4766,7 +4766,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::from_json </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -4804,7 +4804,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::from_json </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -4842,7 +4842,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::from_json </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -4880,7 +4880,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::from_json </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -4918,7 +4918,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::from_json </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -4956,7 +4956,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::from_json </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5182,7 +5182,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">uint16_t dpp::int16_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5202,7 +5202,7 @@ Variables</h2></td></tr>
 <p>Returns a 16 bit unsigned integer from a json field value, if defined, else returns 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
   </table>
   </dd>
@@ -5220,7 +5220,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">uint32_t dpp::int32_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5240,7 +5240,7 @@ Variables</h2></td></tr>
 <p>Returns a 32 bit unsigned integer from a json field value, if defined, else returns 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
   </table>
   </dd>
@@ -5258,7 +5258,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">uint64_t dpp::int64_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5278,7 +5278,7 @@ Variables</h2></td></tr>
 <p>Returns a 64 bit unsigned integer from a json field value, if defined, else returns 0. DO NOT use this for snowflakes, as usually snowflakes are wrapped in a string! </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
   </table>
   </dd>
@@ -5296,7 +5296,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">uint8_t dpp::int8_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5316,7 +5316,7 @@ Variables</h2></td></tr>
 <p>Returns an 8 bit unsigned integer from a json field value, if defined, else returns 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
   </table>
   </dd>
@@ -5374,7 +5374,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::set_bool_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5400,7 +5400,7 @@ Variables</h2></td></tr>
 <p>Sets a boolean from a json field value, if defined, else does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
   </table>
@@ -5418,7 +5418,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::set_int16_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5444,7 +5444,7 @@ Variables</h2></td></tr>
 <p>Sets an unsigned 16 bit integer from a json field value, if defined, else does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
   </table>
@@ -5462,7 +5462,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::set_int32_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5488,7 +5488,7 @@ Variables</h2></td></tr>
 <p>Sets an unsigned 32 bit integer from a json field value, if defined, else does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
   </table>
@@ -5506,7 +5506,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::set_int64_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5532,7 +5532,7 @@ Variables</h2></td></tr>
 <p>Sets an unsigned 64 bit integer from a json field value, if defined, else does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
   </table>
@@ -5550,7 +5550,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::set_int8_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5576,7 +5576,7 @@ Variables</h2></td></tr>
 <p>Sets an unsigned 8 bit integer from a json field value, if defined, else does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
   </table>
@@ -5594,7 +5594,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::set_snowflake_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5620,7 +5620,7 @@ Variables</h2></td></tr>
 <p>Sets a snowflake id from a json field value, if defined, else does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
   </table>
@@ -5638,7 +5638,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::set_string_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5664,7 +5664,7 @@ Variables</h2></td></tr>
 <p>Sets a string from a json field value, if defined, else does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
   </table>
@@ -5682,7 +5682,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::set_ts_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5708,7 +5708,7 @@ Variables</h2></td></tr>
 <p>Sets an timestamp from a json field value containing an ISO8601 string, if defined, else does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
     <tr><td class="paramname">v</td><td>Value to change </td></tr>
   </table>
@@ -5726,7 +5726,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">uint64_t dpp::snowflake_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5746,7 +5746,7 @@ Variables</h2></td></tr>
 <p>Returns a snowflake id from a json field value, if defined, else returns 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
   </table>
   </dd>
@@ -5764,7 +5764,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">std::string dpp::string_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5784,7 +5784,7 @@ Variables</h2></td></tr>
 <p>Returns a string from a json field value, if defined, else returns an empty string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
   </table>
   </dd>
@@ -5830,7 +5830,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::to_json </td>
           <td>(</td>
-          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5868,7 +5868,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::to_json </td>
           <td>(</td>
-          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5906,7 +5906,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::to_json </td>
           <td>(</td>
-          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5944,7 +5944,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::to_json </td>
           <td>(</td>
-          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -5982,7 +5982,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::to_json </td>
           <td>(</td>
-          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -6010,7 +6010,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::to_json </td>
           <td>(</td>
-          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -6048,7 +6048,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void dpp::to_json </td>
           <td>(</td>
-          <td class="paramtype">nlohmann::json &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -6104,7 +6104,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">time_t dpp::ts_not_null </td>
           <td>(</td>
-          <td class="paramtype">const nlohmann::json *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
         </tr>
         <tr>
@@ -6124,7 +6124,7 @@ Variables</h2></td></tr>
 <p>Returns a time_t from an ISO8601 timestamp field in a json value, if defined, else returns epoch value of 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">j</td><td><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474" title="default JSON class">nlohmann::json</a> instance to retrieve value from </td></tr>
     <tr><td class="paramname">keyname</td><td>key name to check for a value </td></tr>
   </table>
   </dd>

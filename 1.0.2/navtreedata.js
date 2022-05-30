@@ -115,14 +115,14 @@ var NAVTREEINDEX =
 "classhttplib_1_1_client_impl.html#aa4d412f05411638d9b4136ad25bc9339",
 "classhttplib_1_1_server.html#a910dd7da997c757262ab13239b0dd350",
 "components.html",
-"namespacedpp.html#a172aa830689e55f4bba337de1592db96ae068013241cf08d0f4dbdd161e89aa2e",
-"namespacedpp.html#ace1318b24526febab72157cdd8b7b468a05e7983fd9a8181c8d8e59faa6d43b79",
-"namespacemembers_i.html",
-"structdpp_1_1audit__entry.html#ab4c452b5018afcc42cd96f67b7ae75f9",
-"structdpp_1_1embed__author.html#a9c9cf267007ccdbee70fec2fd9591123",
-"structdpp_1_1http__request__completion__t.html#aca6bb7b51b265b5303d1ff9ad940b130",
-"structdpp_1_1message__reaction__remove__all__t.html#a4ea348517f397f86e94bbf6449a7f1aa",
-"structdpp_1_1voice__ready__t.html#a2d4777d1049d31ed943ecebfa2de7db9"
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da4381582918c56da2ce630bb91c755f81",
+"namespacedpp.html#ae525add0ec39d647375aabe5ce455449a0d1c6efb2738ae30a285d275d4a8c344",
+"structdpp_1_1application__command__delete__t.html#ab63f70622d0adf539d38913ddad28dd3",
+"structdpp_1_1embed.html#a3bcc6f23d8d16c347139f624569e61e1",
+"structdpp_1_1guild__role__delete__t.html",
+"structdpp_1_1message__create__t.html#a93c10b3fce36e161eca41edcd32857d0",
+"structdpp_1_1user__update__t.html#af1c7fead05e205e59144bd402448857e",
+"structhttplib_1_1_response.html#a7d1fb9a55621d693251a0d0011e63974"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,8 +1,7 @@
 var annotated_dup =
 [
     [ "detail", "namespacedetail.html", [
-      [ "codecvt_result", "structdetail_1_1codecvt__result.html", "structdetail_1_1codecvt__result" ],
-      [ "null", "structdetail_1_1null.html", null ]
+      [ "basic_data", "structdetail_1_1basic__data.html", "structdetail_1_1basic__data" ]
     ] ],
     [ "dpp", "namespacedpp.html", [
       [ "events", "namespacedpp_1_1events.html", [
@@ -268,34 +267,10 @@ var annotated_dup =
       [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ],
       [ "zlibcontext", "classdpp_1_1zlibcontext.html", "classdpp_1_1zlibcontext" ]
     ] ],
-    [ "bool_constant", "classbool__constant.html", null ],
-    [ "chrono_format_checker", "structchrono__format__checker.html", "structchrono__format__checker" ],
-    [ "chrono_formatter", "structchrono__formatter.html", "structchrono__formatter" ],
-    [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4" ],
-    [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4" ],
-    [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", "structformatter_3_01std_1_1tm_00_01_char_01_4" ],
-    [ "formatter< weekday, Char >", "structformatter_3_01weekday_00_01_char_01_4.html", "structformatter_3_01weekday_00_01_char_01_4" ],
-    [ "get_locale", "classget__locale.html", "classget__locale" ],
-    [ "Handler", "class_handler.html", null ],
-    [ "has_member_data_tm_gmtoff", "structhas__member__data__tm__gmtoff.html", null ],
-    [ "has_member_data_tm_gmtoff< T, void_t< decltype(T::tm_gmtoff)> >", "structhas__member__data__tm__gmtoff_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__gmtoff_08_4_01_4.html", null ],
-    [ "has_member_data_tm_zone", "structhas__member__data__tm__zone.html", null ],
-    [ "has_member_data_tm_zone< T, void_t< decltype(T::tm_zone)> >", "structhas__member__data__tm__zone_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__zone_08_4_01_4.html", null ],
-    [ "is_char< char16_t >", "structis__char_3_01char16__t_01_4.html", null ],
-    [ "is_char< char32_t >", "structis__char_3_01char32__t_01_4.html", null ],
-    [ "is_char< detail::char8_type >", "structis__char_3_01detail_1_1char8__type_01_4.html", null ],
-    [ "is_char< wchar_t >", "structis__char_3_01wchar__t_01_4.html", null ],
-    [ "make_unsigned_or_unchanged", "structmake__unsigned__or__unchanged.html", "structmake__unsigned__or__unchanged" ],
-    [ "make_unsigned_or_unchanged< T, true >", "structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", "structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4" ],
     [ "message_collector", "classmessage__collector.html", "classmessage__collector" ],
-    [ "null_chrono_spec_handler", "structnull__chrono__spec__handler.html", "structnull__chrono__spec__handler" ],
     [ "OpusDecoder", "struct_opus_decoder.html", null ],
     [ "OpusEncoder", "struct_opus_encoder.html", null ],
     [ "OpusRepacketizer", "struct_opus_repacketizer.html", null ],
     [ "test_cached_object_t", "classtest__cached__object__t.html", "classtest__cached__object__t" ],
-    [ "test_t", "structtest__t.html", "structtest__t" ],
-    [ "tm_format_checker", "structtm__format__checker.html", "structtm__format__checker" ],
-    [ "tm_writer", "classtm__writer.html", "classtm__writer" ],
-    [ "weekday", "classweekday.html", "classweekday" ],
-    [ "year_month_day", "classyear__month__day.html", null ]
+    [ "test_t", "structtest__t.html", "structtest__t" ]
 ];
