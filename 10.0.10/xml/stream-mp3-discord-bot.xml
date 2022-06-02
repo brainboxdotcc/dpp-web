@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="stream-mp3-discord-bot" kind="page">
+    <compoundname>stream-mp3-discord-bot</compoundname>
+    <title>Streaming MP3 files</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To stream MP3 files via D++ you need to link an additional dependency to your bot, namely <computeroutput>libmpg123</computeroutput>. It is relatively simple when linking this library to your bot to then decode audio to PCM and send it to the <ref refid="classdpp_1_1discord__voice__client_1a6d52a32631231f3120ba9e5ebbe61a7a" kindref="member">dpp::discord_voice_client::send_audio_raw</ref> function as shown below:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/nlohmann/json.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/fmt/format.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mpg123.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;out123.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>For<sp/>an<sp/>example<sp/>we<sp/>will<sp/>hardcode<sp/>a<sp/>path<sp/>to<sp/>some<sp/>awesome<sp/>music<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MUSIC_FILE<sp/>&quot;/media/music/Rick<sp/>Astley/Whenever<sp/>You<sp/>Need<sp/>Somebody/Never<sp/>Gonna<sp/>Give<sp/>You<sp/>Up.mp3&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>will<sp/>hold<sp/>the<sp/>decoded<sp/>MP3.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>The<sp/>D++<sp/>library<sp/>expects<sp/>PCM<sp/>format,<sp/>which<sp/>are<sp/>raw<sp/>sound</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>data,<sp/>2<sp/>channel<sp/>stereo,<sp/>16<sp/>bit<sp/>signed<sp/>48000Hz.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;uint8_t&gt;<sp/>pcmdata;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mpg123_init();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buffer_size,<sp/>done;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channels,<sp/>encoding;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>rate;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Note<sp/>it<sp/>is<sp/>important<sp/>to<sp/>force<sp/>the<sp/>frequency<sp/>to<sp/>48000<sp/>for<sp/>Discord<sp/>compatibility<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mpg123_handle<sp/>*mh<sp/>=<sp/>mpg123_new(NULL,<sp/>&amp;err);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mpg123_param(mh,<sp/>MPG123_FORCE_RATE,<sp/>48000,<sp/>48000.0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Decode<sp/>entire<sp/>file<sp/>into<sp/>a<sp/>vector.<sp/>You<sp/>could<sp/>do<sp/>this<sp/>on<sp/>the<sp/>fly,<sp/>but<sp/>if<sp/>you<sp/>do<sp/>that</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>you<sp/>may<sp/>get<sp/>timing<sp/>issues<sp/>if<sp/>your<sp/>CPU<sp/>is<sp/>busy<sp/>at<sp/>the<sp/>time<sp/>and<sp/>you<sp/>are<sp/>streaming<sp/>to</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>a<sp/>lot<sp/>of<sp/>channels/guilds.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>buffer_size<sp/>=<sp/>mpg123_outblock(mh);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>buffer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[buffer_size];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Note:<sp/>In<sp/>a<sp/>real<sp/>world<sp/>bot,<sp/>this<sp/>should<sp/>have<sp/>some<sp/>error<sp/>logging<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mpg123_open(mh,<sp/>MUSIC_FILE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mpg123_getformat(mh,<sp/>&amp;rate,<sp/>&amp;channels,<sp/>&amp;encoding);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>totalBytes<sp/>=<sp/>0;<sp/>mpg123_read(mh,<sp/>buffer,<sp/>buffer_size,<sp/>&amp;done)<sp/>==<sp/>MPG123_OK;<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>buffer_size;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pcmdata.push_back(buffer[i]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>counter<sp/>+=<sp/>buffer_size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>totalBytes<sp/>+=<sp/>done;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>buffer;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mpg123_close(mh);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mpg123_delete(mh);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Setup<sp/>the<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" kindref="member">dpp::i_default_intents</ref><sp/>|<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414" kindref="member">dpp::i_message_content</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Use<sp/>the<sp/>on_message_create<sp/>event<sp/>to<sp/>look<sp/>for<sp/>commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_create([&amp;bot,<sp/>&amp;pcmdata](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss(event.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>command;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&gt;&gt;<sp/>command;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tell<sp/>the<sp/>bot<sp/>to<sp/>join<sp/>the<sp/>discord<sp/>voice<sp/>channel<sp/>the<sp/>user<sp/>is<sp/>on.<sp/>Syntax:<sp/>.join<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(command<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;.join&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1guild" kindref="compound">dpp::guild</ref><sp/>*<sp/>g<sp/>=<sp/><ref refid="namespacedpp_1ac702a9b30627be07d4f23bf0ad14afcb" kindref="member">dpp::find_guild</ref>(event.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1a5e75f7cd8a7e952e6621c520627d5b84" kindref="member">guild_id</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!g-&gt;<ref refid="classdpp_1_1guild_1a0d5e43e678d6a0448930bd31620d979e" kindref="member">connect_member_voice</ref>(event.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1a52a72433af88991ef84af21f0dfeba29" kindref="member">author</ref>.<ref refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kindref="member">id</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(<ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(event.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1adceaf61877eede79f0ebeb14efa74b5e" kindref="member">channel_id</ref>,<sp/></highlight><highlight class="stringliteral">&quot;You<sp/>don&apos;t<sp/>seem<sp/>to<sp/>be<sp/>on<sp/>a<sp/>voice<sp/>channel!<sp/>:(&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tell<sp/>the<sp/>bot<sp/>to<sp/>play<sp/>the<sp/>mp3<sp/>file.<sp/>Syntax:<sp/>.mp3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(command<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;.mp3&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1voiceconn" kindref="compound">dpp::voiceconn</ref>*<sp/>v<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.from-&gt;get_voice(event.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1a5e75f7cd8a7e952e6621c520627d5b84" kindref="member">guild_id</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v<sp/>&amp;&amp;<sp/>v-&gt;<ref refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" kindref="member">voiceclient</ref><sp/>&amp;&amp;<sp/>v-&gt;<ref refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" kindref="member">voiceclient</ref>-&gt;<ref refid="classdpp_1_1discord__voice__client_1aee5fcfe947f581ecce2c9096871f88a2" kindref="member">is_ready</ref>())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Stream<sp/>the<sp/>already<sp/>decoded<sp/>MP3<sp/>file.<sp/>This<sp/>passes<sp/>the<sp/>PCM<sp/>data<sp/>to<sp/>the<sp/>library<sp/>to<sp/>be<sp/>encoded<sp/>to<sp/>OPUS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v-&gt;<ref refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" kindref="member">voiceclient</ref>-&gt;<ref refid="classdpp_1_1discord__voice__client_1a6d52a32631231f3120ba9e5ebbe61a7a" kindref="member">send_audio_raw</ref>((uint16_t*)pcmdata.data(),<sp/>pcmdata.size());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clean<sp/>up<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mpg123_exit();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>To compile this program you must remember to specify <computeroutput>libmpg123</computeroutput> alongside <computeroutput>libdpp</computeroutput> in the build command, for example:</para>
+<para><computeroutput>g++ -std=c++17 -o musictest musictest.cpp -lmpg123 -ldpp</computeroutput> </para>
+    </detaileddescription>
+    <location file="docpages/03_example_programs.md"/>
+  </compounddef>
+</doxygen>
