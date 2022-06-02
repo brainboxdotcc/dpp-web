@@ -956,7 +956,7 @@ var namespacedpp =
     [ "ts_not_null", "namespacedpp.html#a90fa4e4bbd6aaf8884f3588f096ab251", null ],
     [ "ts_to_string", "namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572", null ],
     [ "uppercase", "namespacedpp.html#a81749d69bd220d0579617cb188e44e5a", null ],
-    [ "__next_handle", "namespacedpp.html#a143b5e0c6905a9f223b8589729dff35a", null ],
+    [ "_next_handle", "namespacedpp.html#a241ab62439c5d665c825771976cad034", null ],
     [ "deletion_mutex", "namespacedpp.html#ae611302ba7fc914d4732b65541132651", null ],
     [ "deletion_queue", "namespacedpp.html#a5609082c12782be33f82b955a5d07b4f", null ],
     [ "dpp_vc", "namespacedpp.html#aefb3da6503cb501b9d2a0376663dbc6e", null ],
