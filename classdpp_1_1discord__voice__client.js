@@ -1,5 +1,9 @@
 var classdpp_1_1discord__voice__client =
 [
+    [ "send_audio_type_t", "classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34", [
+      [ "satype_recorded_audio", "classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483", null ],
+      [ "satype_live_audio", "classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219", null ]
+    ] ],
     [ "discord_voice_client", "classdpp_1_1discord__voice__client.html#a5b344a5989d67f0f0caf5b52236055bf", null ],
     [ "~discord_voice_client", "classdpp_1_1discord__voice__client.html#a9248839dac635139fecaeceb903d8276", null ],
     [ "close", "classdpp_1_1discord__voice__client.html#a1f21cc8fce27ad72e9414dc9d0acd4d0", null ],
@@ -32,6 +36,7 @@ var classdpp_1_1discord__voice__client =
     [ "send_audio_opus", "classdpp_1_1discord__voice__client.html#a57dd66bc916543ce9ac2f809a7ba5251", null ],
     [ "send_audio_raw", "classdpp_1_1discord__voice__client.html#a6d52a32631231f3120ba9e5ebbe61a7a", null ],
     [ "send_silence", "classdpp_1_1discord__voice__client.html#ac6d1422113278ad6049486d07ca06ae4", null ],
+    [ "set_send_audio_type", "classdpp_1_1discord__voice__client.html#a6404396de8a2641fcb3890658ce0e054", null ],
     [ "set_timescale", "classdpp_1_1discord__voice__client.html#a067cdfaf8a84c2bdf09febe974eb4730", null ],
     [ "set_user_gain", "classdpp_1_1discord__voice__client.html#a1790b206609d45aa1e124c701a4407f3", null ],
     [ "skip_to_next_marker", "classdpp_1_1discord__voice__client.html#a6c45a33336db010eedf8853af16b94c8", null ],
@@ -57,6 +62,7 @@ var classdpp_1_1discord__voice__client =
     [ "nonblocking", "classdpp_1_1discord__voice__client.html#a1486b3df6780a842552442a25634fcc9", null ],
     [ "obuffer", "classdpp_1_1discord__voice__client.html#a1f9600d4fd902c74c6d8b748c359eecc", null ],
     [ "plaintext", "classdpp_1_1discord__voice__client.html#aa735feca3545e156e0607c06d55288c4", null ],
+    [ "send_audio_type", "classdpp_1_1discord__voice__client.html#aeb92c5a0a80eb5f0e4d4e987ec11432d", null ],
     [ "server_id", "classdpp_1_1discord__voice__client.html#ac1d99be8bb3a89a43e5f5b368fe63f7d", null ],
     [ "sessionid", "classdpp_1_1discord__voice__client.html#a8f011c857ff968e44a8e5ddf818a9160", null ],
     [ "sfd", "classdpp_1_1discord__voice__client.html#a423ca70d4046067ebe219f85c7baa540", null ],
