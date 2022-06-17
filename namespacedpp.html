@@ -1186,10 +1186,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aef5a99cfd5c5e87f039782311d2f2f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional boolean flag values for guild, as guild_flags is full.  <a href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e">More...</a><br /></td></tr>
 <tr class="separator:aef5a99cfd5c5e87f039782311d2f2f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4ffb1848bf700da25bc187e38054a30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30">guild_member_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4">gm_deaf</a> = 0b00001
+<tr class="memitem:aa4ffb1848bf700da25bc187e38054a30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30">guild_member_flags</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4">gm_deaf</a> = 0b00001
 , <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f">gm_mute</a> = 0b00010
 , <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41">gm_pending</a> = 0b00100
 , <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4">gm_animated_avatar</a> = 0b01000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a932d7b56679a161e1af9020570e0810d">gm_voice_action</a> = 0b10000
+<br />
  }</td></tr>
 <tr class="memdesc:aa4ffb1848bf700da25bc187e38054a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various flags that can be used to indicate the status of a guild member.  <a href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30">More...</a><br /></td></tr>
 <tr class="separator:aa4ffb1848bf700da25bc187e38054a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3527,6 +3531,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Various flags that can be used to indicate the status of a guild member. </p>
+<dl class="section note"><dt>Note</dt><dd>Use set_mute and set_deaf member functions and do not toggle the bits yourself. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4" name="aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4"></a>gm_deaf&#160;</td><td class="fielddoc"><p >Member deafened in voice channels </p>
 </td></tr>
@@ -3535,6 +3540,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41" name="aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41"></a>gm_pending&#160;</td><td class="fielddoc"><p >Member pending verification by membership screening </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4" name="aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4"></a>gm_animated_avatar&#160;</td><td class="fielddoc"><p >Member has animated guild-specific avatar </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa4ffb1848bf700da25bc187e38054a30a932d7b56679a161e1af9020570e0810d" name="aa4ffb1848bf700da25bc187e38054a30a932d7b56679a161e1af9020570e0810d"></a>gm_voice_action&#160;</td><td class="fielddoc"><p >gm_deaf or gm_mute has been toggled </p>
 </td></tr>
 </table>
 

@@ -553,7 +553,8 @@ var namespacedpp =
       [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
       [ "gm_mute", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f", null ],
       [ "gm_pending", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41", null ],
-      [ "gm_animated_avatar", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4", null ]
+      [ "gm_animated_avatar", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4", null ],
+      [ "gm_voice_action", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a932d7b56679a161e1af9020570e0810d", null ]
     ] ],
     [ "guild_nsfw_level_t", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591", [
       [ "nsfw_default", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa", null ],

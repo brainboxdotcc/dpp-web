@@ -39,5 +39,6 @@ var searchData=
   ['gm_5fdeaf_36',['gm_deaf',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4',1,'dpp']]],
   ['gm_5fmute_37',['gm_mute',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f',1,'dpp']]],
   ['gm_5fpending_38',['gm_pending',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41',1,'dpp']]],
-  ['group_5fdm_39',['GROUP_DM',['../namespacedpp.html#a732e832861149a278f27ea7840b8e4caa0e46c57251ffbb0889dded66229de5e3',1,'dpp']]]
+  ['gm_5fvoice_5faction_39',['gm_voice_action',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a932d7b56679a161e1af9020570e0810d',1,'dpp']]],
+  ['group_5fdm_40',['GROUP_DM',['../namespacedpp.html#a732e832861149a278f27ea7840b8e4caa0e46c57251ffbb0889dded66229de5e3',1,'dpp']]]
 ];
