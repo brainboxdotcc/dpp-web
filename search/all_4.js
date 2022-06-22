@@ -22,7 +22,7 @@ var searchData=
   ['delete_5fwebhook_5fsync_19',['delete_webhook_sync',['../classdpp_1_1cluster.html#aa8f65945ec0cb6c01b8ac6e088aa88e4',1,'dpp::cluster']]],
   ['delete_5fwebhook_5fwith_5ftoken_20',['delete_webhook_with_token',['../classdpp_1_1cluster.html#a4556a4647c5fd1468fe6918a2f637984',1,'dpp::cluster']]],
   ['delete_5fwebhook_5fwith_5ftoken_5fsync_21',['delete_webhook_with_token_sync',['../classdpp_1_1cluster.html#a171ed6000c31d17fee89633219cd5c0e',1,'dpp::cluster']]],
-  ['deleted_22',['deleted',['../structdpp_1_1guild__delete__t.html#a9067e4a557c9e1f2f50997b4762e9dc1',1,'dpp::guild_delete_t::deleted()'],['../structdpp_1_1thread__delete__t.html#af238563412c7807524d7604461de89df',1,'dpp::thread_delete_t::deleted()'],['../structdpp_1_1guild__role__delete__t.html#a2ea6c85d5db71c5710a04339978b7db4',1,'dpp::guild_role_delete_t::deleted()'],['../structdpp_1_1message__delete__bulk__t.html#a34eaf5cc7e14267633070399ece6c235',1,'dpp::message_delete_bulk_t::deleted()'],['../structdpp_1_1channel__delete__t.html#acfca1fcfe565e94a626d7b4a9cab1714',1,'dpp::channel_delete_t::deleted()'],['../structdpp_1_1guild__scheduled__event__delete__t.html#ab8f9b72d296c25ac68f2e3698403812b',1,'dpp::guild_scheduled_event_delete_t::deleted()'],['../structdpp_1_1message__delete__t.html#a9bbdf2268285285714ef5635d1ef4c04',1,'dpp::message_delete_t::deleted()'],['../structdpp_1_1stage__instance__delete__t.html#aafbbb340b715691333b305555e06fb54',1,'dpp::stage_instance_delete_t::deleted()']]],
+  ['deleted_22',['deleted',['../structdpp_1_1stage__instance__delete__t.html#aafbbb340b715691333b305555e06fb54',1,'dpp::stage_instance_delete_t::deleted()'],['../structdpp_1_1thread__delete__t.html#af238563412c7807524d7604461de89df',1,'dpp::thread_delete_t::deleted()'],['../structdpp_1_1guild__role__delete__t.html#a2ea6c85d5db71c5710a04339978b7db4',1,'dpp::guild_role_delete_t::deleted()'],['../structdpp_1_1message__delete__bulk__t.html#a34eaf5cc7e14267633070399ece6c235',1,'dpp::message_delete_bulk_t::deleted()'],['../structdpp_1_1channel__delete__t.html#acfca1fcfe565e94a626d7b4a9cab1714',1,'dpp::channel_delete_t::deleted()'],['../structdpp_1_1guild__delete__t.html#a9067e4a557c9e1f2f50997b4762e9dc1',1,'dpp::guild_delete_t::deleted()'],['../structdpp_1_1guild__scheduled__event__delete__t.html#ab8f9b72d296c25ac68f2e3698403812b',1,'dpp::guild_scheduled_event_delete_t::deleted()'],['../structdpp_1_1message__delete__t.html#a9bbdf2268285285714ef5635d1ef4c04',1,'dpp::message_delete_t::deleted()'],['../structdpp_1_1automod__rule__delete__t.html#a48e11522c1eb92b6bbea1cc0fb68dddc',1,'dpp::automod_rule_delete_t::deleted()']]],
   ['deleted_5fintegration_23',['deleted_integration',['../structdpp_1_1integration__delete__t.html#a1a29b8f92d060f66b09d0b8e2a4afed2',1,'dpp::integration_delete_t']]],
   ['deleted_5finvite_24',['deleted_invite',['../structdpp_1_1invite__delete__t.html#a47871a82a55c589964aeca15393fbe79',1,'dpp::invite_delete_t']]],
   ['deleting_5fchannel_25',['deleting_channel',['../structdpp_1_1message__delete__bulk__t.html#a26ba3d82ef9ea2a0b5f4cc6c7332f0df',1,'dpp::message_delete_bulk_t']]],
@@ -64,9 +64,10 @@ var searchData=
   ['dtemplate_61',['dtemplate',['../classdpp_1_1dtemplate.html',1,'dpp::dtemplate'],['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate::dtemplate()']]],
   ['dtemplate_5fmap_62',['dtemplate_map',['../namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6',1,'dpp']]],
   ['duration_63',['duration',['../structdpp_1_1voice__out__packet.html#ac6d63ea4575aadec0fff0d966c2c3191',1,'dpp::voice_out_packet']]],
-  ['embed_5ftype_64',['embed_type',['../namespacedpp_1_1embed__type.html',1,'dpp']]],
-  ['events_65',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
-  ['guild_5fcreate_66',['guild_create',['../classdpp_1_1discord__client.html#a38bd58112bc810d3a3ac9d88a316d2e9',1,'dpp::discord_client']]],
-  ['utility_67',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]],
-  ['voice_5fstate_5fupdate_68',['voice_state_update',['../classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86',1,'dpp::discord_client']]]
+  ['duration_5fseconds_64',['duration_seconds',['../structdpp_1_1automod__action.html#a7b1be65c07451ca71e2c1e9d579b2fbe',1,'dpp::automod_action']]],
+  ['embed_5ftype_65',['embed_type',['../namespacedpp_1_1embed__type.html',1,'dpp']]],
+  ['events_66',['events',['../namespacedpp_1_1events.html',1,'dpp']]],
+  ['guild_5fcreate_67',['guild_create',['../classdpp_1_1discord__client.html#a38bd58112bc810d3a3ac9d88a316d2e9',1,'dpp::discord_client']]],
+  ['utility_68',['utility',['../namespacedpp_1_1utility.html',1,'dpp']]],
+  ['voice_5fstate_5fupdate_69',['voice_state_update',['../classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86',1,'dpp::discord_client']]]
 ];

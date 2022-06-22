@@ -73,6 +73,13 @@ var namespacedpp =
     [ "auditlog", "classdpp_1_1auditlog.html", "classdpp_1_1auditlog" ],
     [ "autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
     [ "autocomplete_t", "structdpp_1_1autocomplete__t.html", "structdpp_1_1autocomplete__t" ],
+    [ "automod_action", "structdpp_1_1automod__action.html", "structdpp_1_1automod__action" ],
+    [ "automod_metadata", "structdpp_1_1automod__metadata.html", "structdpp_1_1automod__metadata" ],
+    [ "automod_rule", "classdpp_1_1automod__rule.html", "classdpp_1_1automod__rule" ],
+    [ "automod_rule_create_t", "structdpp_1_1automod__rule__create__t.html", "structdpp_1_1automod__rule__create__t" ],
+    [ "automod_rule_delete_t", "structdpp_1_1automod__rule__delete__t.html", "structdpp_1_1automod__rule__delete__t" ],
+    [ "automod_rule_execute_t", "structdpp_1_1automod__rule__execute__t.html", "structdpp_1_1automod__rule__execute__t" ],
+    [ "automod_rule_update_t", "structdpp_1_1automod__rule__update__t.html", "structdpp_1_1automod__rule__update__t" ],
     [ "ban", "classdpp_1_1ban.html", "classdpp_1_1ban" ],
     [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
     [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],
@@ -256,6 +263,7 @@ var namespacedpp =
     [ "welcome_channel_t", "structdpp_1_1welcome__channel__t.html", "structdpp_1_1welcome__channel__t" ],
     [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ],
     [ "application_map", "namespacedpp.html#a9cd9f77c18810c3ad68e06b0625099bd", null ],
+    [ "automod_rule_map", "namespacedpp.html#a9933dc4fb55fa0e30b939b905b9b0df6", null ],
     [ "ban_map", "namespacedpp.html#a52b195380df96e9c43f35fa2da82db14", null ],
     [ "channel_collector_t", "namespacedpp.html#a1b35f3248b32394ac9ecc8bbca668156", null ],
     [ "channel_map", "namespacedpp.html#a7c77c4dd9434985643b2f1993b227f30", null ],
@@ -264,7 +272,7 @@ var namespacedpp =
     [ "command_option_range", "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#acee7b25a3cbe891ecb0b4e1458cfecbe", null ],
+    [ "confirmable_t", "namespacedpp.html#a81dbdaf135761d889b66c534ed8713d0", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
@@ -392,6 +400,25 @@ var namespacedpp =
       [ "ae_automod_rule_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dab01b988706b55396fadf3e29dc63422b", null ],
       [ "ae_automod_rule_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0996d656b42d9eb138de550a4c963066", null ],
       [ "ae_automod_block_message", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7196784b894f43b1c5a0d548a29e8775", null ]
+    ] ],
+    [ "automod_action_type", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14c", [
+      [ "amod_action_block_message", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14ca1a78446ae2f6da41fb144c25e2b53e56", null ],
+      [ "amod_action_send_alert", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14caccf0e42b2f286ea0631e4a427662425c", null ],
+      [ "amod_action_timeout", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14ca8c7c0985bb106bc4da6690a0c1693fd8", null ]
+    ] ],
+    [ "automod_event_type", "namespacedpp.html#a397e69e257d7cb9733f1449317e27d90", [
+      [ "amod_message_send", "namespacedpp.html#a397e69e257d7cb9733f1449317e27d90a24fd461c263fecbfc3291b29b44e9338", null ]
+    ] ],
+    [ "automod_preset_type", "namespacedpp.html#a8d92860238000a25eeff7eed29ec1067", [
+      [ "amod_preset_profanity", "namespacedpp.html#a8d92860238000a25eeff7eed29ec1067ae3d6e7a290032b8571d00acdc92ccc85", null ],
+      [ "amod_preset_sexual_content", "namespacedpp.html#a8d92860238000a25eeff7eed29ec1067a5d0f5f57914890b3f60fa03059ccfa63", null ],
+      [ "amod_preset_slurs", "namespacedpp.html#a8d92860238000a25eeff7eed29ec1067ae05d576d5de5ddb272392fe7c5471e00", null ]
+    ] ],
+    [ "automod_trigger_type", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6", [
+      [ "amod_type_keyword", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292", null ],
+      [ "amod_type_harmful_link", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a66616e096af7b4299ae5d013de686d57", null ],
+      [ "amod_type_spam", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a5ab9fd884c477842d67045e962097fa2", null ],
+      [ "amod_type_keyword_preset", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05", null ]
     ] ],
     [ "cache_policy_setting_t", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52", [
       [ "cp_aggressive", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e", null ],
@@ -628,6 +655,8 @@ var namespacedpp =
       [ "i_direct_message_typing", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a8a5fced64cc944ced2e4c69b877c45bf", null ],
       [ "i_message_content", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414", null ],
       [ "i_guild_scheduled_events", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ae8e1fccd9f13d710f2221ad8064f45e2", null ],
+      [ "i_auto_moderation_configuration", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5af495c258f332d75a27b64cc5a9b7d302", null ],
+      [ "i_auto_moderation_execution", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5abbd9494f63b45f5d7a0723cf18ad65cb", null ],
       [ "i_default_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f", null ],
       [ "i_privileged_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ad4af85bb8ca011125370342f0961bf05", null ],
       [ "i_all_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a76061cf60f9d06cf58ca38ddee1b825d", null ]

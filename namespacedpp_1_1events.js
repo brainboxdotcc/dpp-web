@@ -1,5 +1,9 @@
 var namespacedpp_1_1events =
 [
+    [ "automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", "classdpp_1_1events_1_1automod__rule__create" ],
+    [ "automod_rule_delete", "classdpp_1_1events_1_1automod__rule__delete.html", "classdpp_1_1events_1_1automod__rule__delete" ],
+    [ "automod_rule_execute", "classdpp_1_1events_1_1automod__rule__execute.html", "classdpp_1_1events_1_1automod__rule__execute" ],
+    [ "automod_rule_update", "classdpp_1_1events_1_1automod__rule__update.html", "classdpp_1_1events_1_1automod__rule__update" ],
     [ "channel_create", "classdpp_1_1events_1_1channel__create.html", "classdpp_1_1events_1_1channel__create" ],
     [ "channel_delete", "classdpp_1_1events_1_1channel__delete.html", "classdpp_1_1events_1_1channel__delete" ],
     [ "channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", "classdpp_1_1events_1_1channel__pins__update" ],

@@ -46,6 +46,10 @@ var hierarchy =
     [ "dpp::etf_buffer", "structdpp_1_1etf__buffer.html", null ],
     [ "dpp::etf_parser", "classdpp_1_1etf__parser.html", null ],
     [ "dpp::events::event", "classdpp_1_1events_1_1event.html", [
+      [ "dpp::events::automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", null ],
+      [ "dpp::events::automod_rule_delete", "classdpp_1_1events_1_1automod__rule__delete.html", null ],
+      [ "dpp::events::automod_rule_execute", "classdpp_1_1events_1_1automod__rule__execute.html", null ],
+      [ "dpp::events::automod_rule_update", "classdpp_1_1events_1_1automod__rule__update.html", null ],
       [ "dpp::events::channel_create", "classdpp_1_1events_1_1channel__create.html", null ],
       [ "dpp::events::channel_delete", "classdpp_1_1events_1_1channel__delete.html", null ],
       [ "dpp::events::channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", null ],
@@ -105,6 +109,10 @@ var hierarchy =
       [ "dpp::events::webhooks_update", "classdpp_1_1events_1_1webhooks__update.html", null ]
     ] ],
     [ "dpp::event_dispatch_t", "structdpp_1_1event__dispatch__t.html", [
+      [ "dpp::automod_rule_create_t", "structdpp_1_1automod__rule__create__t.html", null ],
+      [ "dpp::automod_rule_delete_t", "structdpp_1_1automod__rule__delete__t.html", null ],
+      [ "dpp::automod_rule_execute_t", "structdpp_1_1automod__rule__execute__t.html", null ],
+      [ "dpp::automod_rule_update_t", "structdpp_1_1automod__rule__update__t.html", null ],
       [ "dpp::channel_create_t", "structdpp_1_1channel__create__t.html", null ],
       [ "dpp::channel_delete_t", "structdpp_1_1channel__delete__t.html", null ],
       [ "dpp::channel_pins_update_t", "structdpp_1_1channel__pins__update__t.html", null ],
@@ -215,6 +223,15 @@ var hierarchy =
     [ "dpp::json_interface< auditlog >", "structdpp_1_1json__interface.html", [
       [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ]
     ] ],
+    [ "dpp::json_interface< automod_action >", "structdpp_1_1json__interface.html", [
+      [ "dpp::automod_action", "structdpp_1_1automod__action.html", null ]
+    ] ],
+    [ "dpp::json_interface< automod_metadata >", "structdpp_1_1json__interface.html", [
+      [ "dpp::automod_metadata", "structdpp_1_1automod__metadata.html", null ]
+    ] ],
+    [ "dpp::json_interface< automod_rule >", "structdpp_1_1json__interface.html", [
+      [ "dpp::automod_rule", "classdpp_1_1automod__rule.html", null ]
+    ] ],
     [ "dpp::json_interface< ban >", "structdpp_1_1json__interface.html", [
       [ "dpp::ban", "classdpp_1_1ban.html", null ]
     ] ],
@@ -310,6 +327,7 @@ var hierarchy =
     ] ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ],
+      [ "dpp::automod_rule", "classdpp_1_1automod__rule.html", null ],
       [ "dpp::channel", "classdpp_1_1channel.html", null ],
       [ "dpp::collected_reaction", "classdpp_1_1collected__reaction.html", null ],
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ],

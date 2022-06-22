@@ -2,6 +2,10 @@ var annotated_dup =
 [
     [ "dpp", "namespacedpp.html", [
       [ "events", "namespacedpp_1_1events.html", [
+        [ "automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", "classdpp_1_1events_1_1automod__rule__create" ],
+        [ "automod_rule_delete", "classdpp_1_1events_1_1automod__rule__delete.html", "classdpp_1_1events_1_1automod__rule__delete" ],
+        [ "automod_rule_execute", "classdpp_1_1events_1_1automod__rule__execute.html", "classdpp_1_1events_1_1automod__rule__execute" ],
+        [ "automod_rule_update", "classdpp_1_1events_1_1automod__rule__update.html", "classdpp_1_1events_1_1automod__rule__update" ],
         [ "channel_create", "classdpp_1_1events_1_1channel__create.html", "classdpp_1_1events_1_1channel__create" ],
         [ "channel_delete", "classdpp_1_1events_1_1channel__delete.html", "classdpp_1_1events_1_1channel__delete" ],
         [ "channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", "classdpp_1_1events_1_1channel__pins__update" ],
@@ -80,6 +84,13 @@ var annotated_dup =
       [ "auditlog", "classdpp_1_1auditlog.html", "classdpp_1_1auditlog" ],
       [ "autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
       [ "autocomplete_t", "structdpp_1_1autocomplete__t.html", "structdpp_1_1autocomplete__t" ],
+      [ "automod_action", "structdpp_1_1automod__action.html", "structdpp_1_1automod__action" ],
+      [ "automod_metadata", "structdpp_1_1automod__metadata.html", "structdpp_1_1automod__metadata" ],
+      [ "automod_rule", "classdpp_1_1automod__rule.html", "classdpp_1_1automod__rule" ],
+      [ "automod_rule_create_t", "structdpp_1_1automod__rule__create__t.html", "structdpp_1_1automod__rule__create__t" ],
+      [ "automod_rule_delete_t", "structdpp_1_1automod__rule__delete__t.html", "structdpp_1_1automod__rule__delete__t" ],
+      [ "automod_rule_execute_t", "structdpp_1_1automod__rule__execute__t.html", "structdpp_1_1automod__rule__execute__t" ],
+      [ "automod_rule_update_t", "structdpp_1_1automod__rule__update__t.html", "structdpp_1_1automod__rule__update__t" ],
       [ "ban", "classdpp_1_1ban.html", "classdpp_1_1ban" ],
       [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
       [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],
