@@ -192,9 +192,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08a674755c169a3517361dc847511617"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a08a674755c169a3517361dc847511617">get_mention</a> () const</td></tr>
 <tr class="memdesc:a08a674755c169a3517361dc847511617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mention ping for the channel.  <a href="classdpp_1_1channel.html#a08a674755c169a3517361dc847511617">More...</a><br /></td></tr>
 <tr class="separator:a08a674755c169a3517361dc847511617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56cd87333507f18465a204b4fcbeb9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1permission.html">permission</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#aa56cd87333507f18465a204b4fcbeb9a">get_user_permissions</a> (const class <a class="el" href="classdpp_1_1user.html">user</a> *<a class="el" href="classdpp_1_1thread.html#ab78142eef6bd03926469a118778507da">member</a>) const</td></tr>
-<tr class="memdesc:aa56cd87333507f18465a204b4fcbeb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user permissions for a user on this channel.  <a href="classdpp_1_1channel.html#aa56cd87333507f18465a204b4fcbeb9a">More...</a><br /></td></tr>
-<tr class="separator:aa56cd87333507f18465a204b4fcbeb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb656e912fba27c809ab8754e2855b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1permission.html">permission</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#adfb656e912fba27c809ab8754e2855b5">get_user_permissions</a> (const class <a class="el" href="classdpp_1_1user.html">user</a> *<a class="el" href="classdpp_1_1user.html">user</a>) const</td></tr>
+<tr class="memdesc:adfb656e912fba27c809ab8754e2855b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user overall permissions for a member on this channel, including channel overwrites.  <a href="classdpp_1_1channel.html#adfb656e912fba27c809ab8754e2855b5">More...</a><br /></td></tr>
+<tr class="separator:adfb656e912fba27c809ab8754e2855b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff4cb376ed32919b1ee6a7246d36019"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1permission.html">permission</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a0ff4cb376ed32919b1ee6a7246d36019">get_user_permissions</a> (const class <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;<a class="el" href="classdpp_1_1thread.html#ab78142eef6bd03926469a118778507da">member</a>) const</td></tr>
+<tr class="memdesc:a0ff4cb376ed32919b1ee6a7246d36019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the overall user permissions for a member on this channel, including channel overwrites.  <a href="classdpp_1_1channel.html#a0ff4cb376ed32919b1ee6a7246d36019">More...</a><br /></td></tr>
+<tr class="separator:a0ff4cb376ed32919b1ee6a7246d36019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2618252ea6ca24673074b4ac8243798c"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a>, class <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a2618252ea6ca24673074b4ac8243798c">get_members</a> ()</td></tr>
 <tr class="memdesc:a2618252ea6ca24673074b4ac8243798c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a map of members on the channel, built from the guild's member list based on which members have the VIEW_CHANNEL permission. Does not return reliable information for voice channels, use <a class="el" href="classdpp_1_1channel.html#a915cc4ba3ec7514a684315594255253a" title="Get a map of members in this channel, if it is a voice channel. The map is keyed by snowflake id of t...">dpp::channel::get_voice_members()</a> instead for this.  <a href="classdpp_1_1channel.html#a2618252ea6ca24673074b4ac8243798c">More...</a><br /></td></tr>
 <tr class="separator:a2618252ea6ca24673074b4ac8243798c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -644,6 +647,7 @@ Public Attributes</h2></td></tr>
 
 <p>Return a map of members on the channel, built from the guild's member list based on which members have the VIEW_CHANNEL permission. Does not return reliable information for voice channels, use <a class="el" href="classdpp_1_1channel.html#a915cc4ba3ec7514a684315594255253a" title="Get a map of members in this channel, if it is a voice channel. The map is keyed by snowflake id of t...">dpp::channel::get_voice_members()</a> instead for this. </p>
 <dl class="section return"><dt>Returns</dt><dd>A map of guild members keyed by user id. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the guild this channel belongs to is not in the cache, the function will always return 0. </dd></dl>
 
 </div>
 </div>
@@ -675,8 +679,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa56cd87333507f18465a204b4fcbeb9a" name="aa56cd87333507f18465a204b4fcbeb9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa56cd87333507f18465a204b4fcbeb9a">&#9670;&nbsp;</a></span>get_user_permissions()</h2>
+<a id="a0ff4cb376ed32919b1ee6a7246d36019" name="a0ff4cb376ed32919b1ee6a7246d36019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff4cb376ed32919b1ee6a7246d36019">&#9670;&nbsp;</a></span>get_user_permissions() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -687,7 +691,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdpp_1_1permission.html">permission</a> dpp::channel::get_user_permissions </td>
           <td>(</td>
-          <td class="paramtype">const class <a class="el" href="classdpp_1_1user.html">user</a> *&#160;</td>
+          <td class="paramtype">const class <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;&#160;</td>
           <td class="paramname"><em>member</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -699,14 +703,53 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the user permissions for a user on this channel. </p>
+<p>Get the overall user permissions for a member on this channel, including channel overwrites. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">member</td><td>The user to resolve the permissions for </td></tr>
+    <tr><td class="paramname">member</td><td>The member to resolve the permissions for </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>permission Permissions bitmask made of bits in <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>. Note that if the user is not on the channel or the guild is not in the cache, the function will always return 0. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The permission overwrites for the member. Made of bits in <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Requires role cache to be enabled (it's enabled by default). </dd></dl>
+
+</div>
+</div>
+<a id="adfb656e912fba27c809ab8754e2855b5" name="adfb656e912fba27c809ab8754e2855b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb656e912fba27c809ab8754e2855b5">&#9670;&nbsp;</a></span>get_user_permissions() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1permission.html">permission</a> dpp::channel::get_user_permissions </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="classdpp_1_1user.html">user</a> *&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the user overall permissions for a member on this channel, including channel overwrites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>The user to resolve the permissions for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>permission Permissions bitmask made of bits in <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Requires role cache to be enabled (it's enabled by default).</dd>
+<dd>
+The method will search for the guild member in the cache by the users id. If the guild member is not in cache, the method will always return 0. </dd></dl>
 
 </div>
 </div>
