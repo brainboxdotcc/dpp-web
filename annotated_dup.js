@@ -124,6 +124,7 @@ var annotated_dup =
       [ "context_menu_t", "structdpp_1_1context__menu__t.html", "structdpp_1_1context__menu__t" ],
       [ "discord_client", "classdpp_1_1discord__client.html", "classdpp_1_1discord__client" ],
       [ "discord_voice_client", "classdpp_1_1discord__voice__client.html", "classdpp_1_1discord__voice__client" ],
+      [ "dns_cache_entry", "structdpp_1_1dns__cache__entry.html", "structdpp_1_1dns__cache__entry" ],
       [ "dtemplate", "classdpp_1_1dtemplate.html", "classdpp_1_1dtemplate" ],
       [ "embed", "structdpp_1_1embed.html", "structdpp_1_1embed" ],
       [ "embed_author", "structdpp_1_1embed__author.html", "structdpp_1_1embed__author" ],

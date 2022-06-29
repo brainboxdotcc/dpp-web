@@ -57,6 +57,7 @@
     <innerclass refid="structdpp_1_1context__menu__t" prot="public">dpp::context_menu_t</innerclass>
     <innerclass refid="classdpp_1_1discord__client" prot="public">dpp::discord_client</innerclass>
     <innerclass refid="classdpp_1_1discord__voice__client" prot="public">dpp::discord_voice_client</innerclass>
+    <innerclass refid="structdpp_1_1dns__cache__entry" prot="public">dpp::dns_cache_entry</innerclass>
     <innerclass refid="classdpp_1_1dtemplate" prot="public">dpp::dtemplate</innerclass>
     <innerclass refid="structdpp_1_1embed" prot="public">dpp::embed</innerclass>
     <innerclass refid="structdpp_1_1embed__author" prot="public">dpp::embed_author</innerclass>
@@ -5428,6 +5429,20 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="192" column="23" bodyfile="include/dpp/commandhandler.h" bodystart="192" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1ad4c862611232b317153bcfc106534292" prot="public" static="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="structdpp_1_1dns__cache__entry" kindref="compound">dns_cache_entry</ref> * &gt;</type>
+        <definition>using dpp::dns_cache_t = typedef std::unordered_map&lt;std::string, dns_cache_entry*&gt;</definition>
+        <argsstring></argsstring>
+        <name>dns_cache_t</name>
+        <briefdescription>
+<para>Cache container type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="65" column="1" bodyfile="include/dpp/dns.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a1b35f3248b32394ac9ecc8bbca668156" prot="public" static="no">
         <type><ref refid="classdpp_1_1collector" kindref="compound">dpp::collector</ref>&lt; <ref refid="structdpp_1_1channel__create__t" kindref="compound">dpp::channel_create_t</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref> &gt;</type>
         <definition>typedef dpp::collector&lt;dpp::channel_create_t, dpp::channel&gt; dpp::channel_collector_t</definition>
@@ -7682,6 +7697,57 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/discordevents.h" line="169" column="24" declfile="include/dpp/discordevents.h" declline="169" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a343a3d4c3226818f6a0242d02245014f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structdpp_1_1dns__cache__entry" kindref="compound">dns_cache_entry</ref> *DPP_EXPORT</type>
+        <definition>const dns_cache_entry *DPP_EXPORT dpp::resolve_hostname</definition>
+        <argsstring>(const std::string &amp;hostname, const std::string &amp;port)</argsstring>
+        <name>resolve_hostname</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>hostname</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Resolve a hostname to an addrinfo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hostname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hostname to resolve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A port number or named service, e.g. &quot;80&quot; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>addrinfo First IP address associated with the hostname DNS record </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1connection__exception" kindref="compound">dpp::connection_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On failure to resolve hostname </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="75" column="34" declfile="include/dpp/dns.h" declline="75" declcolumn="34"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a177af60de5536cff95f417fce3d9487a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

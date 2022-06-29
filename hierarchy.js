@@ -35,6 +35,7 @@ var hierarchy =
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
     [ "dpp::connection", "classdpp_1_1connection.html", null ],
+    [ "dpp::dns_cache_entry", "structdpp_1_1dns__cache__entry.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
     [ "dpp::embed_author", "structdpp_1_1embed__author.html", null ],
     [ "dpp::embed_field", "structdpp_1_1embed__field.html", null ],
