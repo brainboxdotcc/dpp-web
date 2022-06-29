@@ -74,7 +74,7 @@ var searchData=
   ['required_71',['required',['../structdpp_1_1command__option.html#ad203ab30a75ce7508f565f5821301bdb',1,'dpp::command_option::required()'],['../classdpp_1_1component.html#a6a6312c0c598466aa87541745d2f7bff',1,'dpp::component::required()']]],
   ['requires_5fcolons_72',['requires_colons',['../classdpp_1_1emoji.html#a8e664abe1d5e91ea6b34677cf2206fcc',1,'dpp::emoji']]],
   ['reset_5fafter_73',['reset_after',['../structdpp_1_1bucket__t.html#a69e733a2599fa42777c7cd302219d1ab',1,'dpp::bucket_t']]],
-  ['resolve_5fhostname_74',['resolve_hostname',['../namespacedpp.html#a343a3d4c3226818f6a0242d02245014f',1,'dpp']]],
+  ['resolve_5fhostname_74',['resolve_hostname',['../namespacedpp.html#a7c64da3e6d42da998ed877c18025afa0',1,'dpp']]],
   ['resolved_75',['resolved',['../classdpp_1_1interaction.html#aaa88ba118d0a7b5b32090a844610d7e7',1,'dpp::interaction']]],
   ['resolved_5fuser_76',['resolved_user',['../structdpp_1_1resolved__user.html',1,'dpp']]],
   ['responses_5fout_77',['responses_out',['../classdpp_1_1request__queue.html#ade3ecfd45592dfcea06e6e9de9b70583',1,'dpp::request_queue']]],

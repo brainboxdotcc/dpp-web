@@ -957,7 +957,7 @@ var namespacedpp =
     [ "int8_not_null", "namespacedpp.html#a37a59e37461d9f8668dd948f2635add6", null ],
     [ "lowercase", "namespacedpp.html#aa8227c717e1a550b3c3962cea1964d92", null ],
     [ "ltrim", "namespacedpp.html#ac727bb2e0d0761aa5ee4396286530166", null ],
-    [ "resolve_hostname", "namespacedpp.html#a343a3d4c3226818f6a0242d02245014f", null ],
+    [ "resolve_hostname", "namespacedpp.html#a7c64da3e6d42da998ed877c18025afa0", null ],
     [ "rest_request", "namespacedpp.html#a07d625a4a90ad893e7443aac721cf9a4", null ],
     [ "rest_request< confirmation >", "namespacedpp.html#a63fe6eabce56fea9bf6192649e47f374", null ],
     [ "rest_request< message >", "namespacedpp.html#a173d2e6b113e7c675a2294e3eb7f8fd2", null ],

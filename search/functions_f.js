@@ -15,7 +15,7 @@ var searchData=
   ['request_12',['request',['../classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52',1,'dpp::cluster']]],
   ['request_5fqueue_13',['request_queue',['../classdpp_1_1request__queue.html#afec7ef3d2deeef5687355cb1e6fb2eb3',1,'dpp::request_queue']]],
   ['requires_5fcolons_14',['requires_colons',['../classdpp_1_1emoji.html#a8e664abe1d5e91ea6b34677cf2206fcc',1,'dpp::emoji']]],
-  ['resolve_5fhostname_15',['resolve_hostname',['../namespacedpp.html#a343a3d4c3226818f6a0242d02245014f',1,'dpp']]],
+  ['resolve_5fhostname_15',['resolve_hostname',['../namespacedpp.html#a7c64da3e6d42da998ed877c18025afa0',1,'dpp']]],
   ['rest_5frequest_16',['rest_request',['../namespacedpp.html#a07d625a4a90ad893e7443aac721cf9a4',1,'dpp']]],
   ['rest_5frequest_3c_20confirmation_20_3e_17',['rest_request&lt; confirmation &gt;',['../namespacedpp.html#a63fe6eabce56fea9bf6192649e47f374',1,'dpp']]],
   ['rest_5frequest_3c_20message_20_3e_18',['rest_request&lt; message &gt;',['../namespacedpp.html#a173d2e6b113e7c675a2294e3eb7f8fd2',1,'dpp']]],
