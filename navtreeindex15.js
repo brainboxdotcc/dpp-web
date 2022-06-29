@@ -1,9 +1,11 @@
 var NAVTREEINDEX15 =
 {
+"frequently-asked-questions.html#autotoc_md96":[0,7,0,9],
+"frequently-asked-questions.html#autotoc_md97":[0,7,0,10],
 "frequently-asked-questions.html#autotoc_md98":[0,7,0,11],
 "frequently-asked-questions.html#autotoc_md99":[0,7,0,12],
-"functions.html":[7,3,0],
 "functions.html":[7,3,0,0],
+"functions.html":[7,3,0],
 "functions_b.html":[7,3,0,1],
 "functions_c.html":[7,3,0,2],
 "functions_d.html":[7,3,0,3],
@@ -77,8 +79,8 @@ var NAVTREEINDEX15 =
 "functions_w.html":[7,3,0,22],
 "functions_~.html":[7,3,0,23],
 "hierarchy.html":[7,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md79":[0,0],
 "index.html#autotoc_md80":[0,1],
 "index.html#autotoc_md81":[0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dad8095b6ef3fecf9dc09d96b8a4c76ac0":[6,0,0,269,36],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dadd3c2d91647e532762858af596a6e0a4":[6,0,0,269,48],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dadf8ff382b3914c72666efe22941cb812":[6,0,0,269,4],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daec4460e6b6145b142fd15abbd8ab2f40":[6,0,0,269,20],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daf62cf0f28c5c9dc6814f06357bd890b8":[6,0,0,269,32],
-"namespacedpp.html#a2bea4039b904a51aeb3261a1a5d3fcaf":[6,0,0,383]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daec4460e6b6145b142fd15abbd8ab2f40":[6,0,0,269,20]
 };

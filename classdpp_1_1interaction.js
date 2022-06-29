@@ -11,6 +11,7 @@ var classdpp_1_1interaction =
     [ "get_creation_time", "classdpp_1_1interaction.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "operator!=", "classdpp_1_1interaction.html#a9f086ed62419d373646e5d0e63667fd5", null ],
     [ "operator==", "classdpp_1_1interaction.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
+    [ "app_permissions", "classdpp_1_1interaction.html#a1a91af243ab4d765ecadc025958a8a85", null ],
     [ "application_id", "classdpp_1_1interaction.html#a2575444b8e918c947fb4ffc30c442201", null ],
     [ "cache_policy", "classdpp_1_1interaction.html#abc6027911679c409058e1ff4904154cc", null ],
     [ "channel_id", "classdpp_1_1interaction.html#a8062f778758ef53d0ea4e40f62ff4015", null ],
