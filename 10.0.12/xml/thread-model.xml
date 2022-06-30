@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="thread-model" kind="page">
+    <compoundname>thread-model</compoundname>
+    <title>Thread Model</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><dot>
+digraph &quot;Thread Model&quot; {
+    graph [ranksep=1];
+    &quot;Discord Events&quot; -&gt; &quot;Your Program&quot;
+
+    &quot;Your Program&quot; [style=filled, color=yellow, shape=rect]
+    &quot;Cluster&quot; [style=filled, color=yellow, shape=rect]
+
+    subgraph cluster_4 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled,color=lightblue]
+        &quot;Your Program&quot;
+        &quot;Cluster&quot;
+        label = &quot;User Code&quot;;
+    }
+
+    subgraph cluster_0 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled,color=lightblue]
+        &quot;Shard 1&quot; [style=filled, color=lightblue]
+        &quot;Shard 2&quot;
+        &quot;Shard 3...&quot;
+        label = &quot;Shards (Each is a thread, one per 2500 discord guilds)&quot;;
+    }
+
+    subgraph cluster_1 {
+        style=filled
+        color=lightgrey
+        node [style=filled,color=lightblue]
+        &quot;REST Requests&quot;
+        &quot;Request In Queue 1&quot;
+        &quot;Request In Queue 2&quot;
+        &quot;Request In Queue 3...&quot;
+        &quot;Request Out Queue&quot;
+        label = &quot;REST Requests (Each in queue, and the out queue, are threads)&quot;
+    }
+
+    subgraph cluster_3 {
+        style=filled
+        color=lightgrey
+        node [style=filled,color=lightblue]
+        &quot;Discord Events&quot; [style=filled,color=lightblue]
+        &quot;User Callback Functions&quot;
+        label = &quot;Events and Callbacks&quot;
+    }
+
+    &quot;Cluster&quot; [shape=rect]
+    &quot;REST Requests&quot; [shape=rect]
+    &quot;Request In Queue 1&quot; [shape=rect]
+    &quot;Request In Queue 2&quot; [shape=rect]
+    &quot;Request In Queue 3...&quot; [shape=rect]
+    &quot;Shard 1&quot; [shape=rect]
+    &quot;Shard 2&quot; [shape=rect]
+    &quot;Shard 3...&quot; [shape=rect]
+    &quot;Request Out Queue&quot; [shape=rect]
+    &quot;Discord Events&quot; [shape=rect]
+    &quot;User Callback Functions&quot; [shape=rect]
+
+    &quot;Cluster&quot; -&gt; &quot;REST Requests&quot;
+    &quot;Shard 1&quot; -&gt; &quot;Discord Events&quot;
+    &quot;Shard 2&quot; -&gt; &quot;Discord Events&quot;
+    &quot;Shard 3...&quot; -&gt; &quot;Discord Events&quot;
+    &quot;Your Program&quot; -&gt; &quot;Cluster&quot;
+    &quot;Cluster&quot; -&gt; &quot;Shard 1&quot;
+    &quot;Cluster&quot; -&gt; &quot;Shard 2&quot;
+    &quot;Cluster&quot; -&gt; &quot;Shard 3...&quot;
+    &quot;REST Requests&quot; -&gt; &quot;Request In Queue 1&quot;
+    &quot;REST Requests&quot; -&gt; &quot;Request In Queue 2&quot;
+    &quot;REST Requests&quot; -&gt; &quot;Request In Queue 3...&quot;
+    &quot;Request In Queue 1&quot; -&gt; &quot;Request Out Queue&quot;
+    &quot;Request In Queue 2&quot; -&gt; &quot;Request Out Queue&quot;
+    &quot;Request In Queue 3...&quot; -&gt; &quot;Request Out Queue&quot;
+    &quot;Request Out Queue&quot; -&gt; &quot;User Callback Functions&quot;
+    &quot;User Callback Functions&quot; -&gt; &quot;Your Program&quot;
+}
+</dot>
+ </para>
+    </detaileddescription>
+    <location file="docpages/04_advanced_reference.md"/>
+  </compounddef>
+</doxygen>

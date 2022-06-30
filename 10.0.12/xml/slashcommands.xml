@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="slashcommands" kind="page">
+    <compoundname>slashcommands</compoundname>
+    <title>Using Slash Commands and Interactions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Slash commands and interactions are a newer feature of Discord which allow bot&apos;s commands to be registered centrally within the system and for users to easily explore and get help with available commands through the client itself.</para>
+<para>To add a slash command you should use the <ref refid="classdpp_1_1cluster_1a11bccddf1068abb215bd6e69ba30b76b" kindref="member">dpp::cluster::global_command_create</ref> method for global commands (available to all guilds) or <ref refid="classdpp_1_1cluster_1a6e4a1a241299bcd1b5f6bfd69ae1ead9" kindref="member">dpp::cluster::guild_command_create</ref> to create a local command (available only to one guild).</para>
+<para>When a user issues these commands the reply will arrive via the <computeroutput>on_slashcommand</computeroutput> event which you can hook, and take action when you see your commands. It is possible to reply to an interaction by using either the <ref refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kindref="member">dpp::interaction_create_t::reply</ref> method, or by manually instantiating an object of type <ref refid="structdpp_1_1interaction__response" kindref="compound">dpp::interaction_response</ref> and attaching a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> object to it.</para>
+<para><ref refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kindref="member">dpp::interaction_create_t::reply</ref> has two overloaded versions of the method, one of which accepts simple std::string replies, for basic text-only messages (if your message is &apos;ephemeral&apos; you must use this) and one which accepts a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> for more advanced replies. Please note that at present, Discord only supports a small subset of message and embed features within an interaction response object.</para>
+<para><simplesect kind="note"><para>You can also use the unified command handler, which lets you combine channel based message commands and slash commands under the same lambda with the same code like they were one and the same. Note that after August of 2022 Discord will be discouraging bots from using commands that are prefixed messages via means of a privileged message intent. It is advised that you exclusively use slash commands, or the unified handler with only a prefix of &quot;/&quot; going forward for any new bots you create and look to migrating existing bots to this setup.</para>
+</simplesect>
+<programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/fmt/format.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>event<sp/>is<sp/>fired<sp/>when<sp/>someone<sp/>issues<sp/>your<sp/>commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_slashcommand([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1slashcommand__t" kindref="compound">dpp::slashcommand_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>which<sp/>command<sp/>they<sp/>ran<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">get_command_name</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;blep&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fetch<sp/>a<sp/>parameter<sp/>value<sp/>from<sp/>the<sp/>command<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>animal<sp/>=<sp/>std::get&lt;std::string&gt;(event.get_parameter(</highlight><highlight class="stringliteral">&quot;animal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reply<sp/>to<sp/>the<sp/>command.<sp/>There<sp/>is<sp/>an<sp/>overloaded<sp/>version<sp/>of<sp/>this</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>call<sp/>that<sp/>accepts<sp/>a<sp/>dpp::message<sp/>so<sp/>you<sp/>can<sp/>send<sp/>embeds.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(fmt::format(</highlight><highlight class="stringliteral">&quot;Blep!<sp/>You<sp/>chose<sp/>{}&quot;</highlight><highlight class="normal">,<sp/>animal));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>a<sp/>new<sp/>global<sp/>command<sp/>on<sp/>ready<sp/>event<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref><sp/>newcommand(</highlight><highlight class="stringliteral">&quot;blep&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Send<sp/>a<sp/>random<sp/>adorable<sp/>animal<sp/>photo&quot;</highlight><highlight class="normal">,<sp/>bot.me.id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newcommand.add_option(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedpp" kindref="compound">dpp</ref>::command_option(<ref refid="namespacedpp" kindref="compound">dpp</ref>::co_string,<sp/>&quot;animal&quot;,<sp/>&quot;The<sp/>type<sp/>of<sp/>animal&quot;,<sp/>true).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add_choice(<ref refid="namespacedpp" kindref="compound">dpp</ref>::command_option_choice(&quot;Dog&quot;,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(&quot;animal_dog&quot;))).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add_choice(<ref refid="namespacedpp" kindref="compound">dpp</ref>::command_option_choice(&quot;Cat&quot;,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(&quot;animal_cat&quot;))).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add_choice(<ref refid="namespacedpp" kindref="compound">dpp</ref>::command_option_choice(&quot;Penguin&quot;,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(&quot;animal_penguin&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Register<sp/>the<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_command_create(newcommand);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(false);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="note"><para>For demonstration purposes this code is OK, but in the real world, it&apos;s not recommended to create slash commands in the <computeroutput>on_ready</computeroutput> event because it gets called often (discord forces reconnections and sometimes these do not resume). You could for example add a commandline parameter to your bot (<computeroutput>argc</computeroutput>, <computeroutput>argv</computeroutput>) so that if you want the bot to register commands it must be launched with a specific command line argument. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="docpages/03_example_programs.md"/>
+  </compounddef>
+</doxygen>
