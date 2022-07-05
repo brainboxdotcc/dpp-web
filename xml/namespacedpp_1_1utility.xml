@@ -73,7 +73,7 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para>Timestamp formats for <ref refid="namespacedpp_1_1utility_1a62891c981320f9cc4edfbbf9990428c5" kindref="member">dpp::utility::timestamp()</ref> </para>
+<para>Timestamp formats for <ref refid="namespacedpp_1_1utility_1a177699d063618dd535764c81736a7a58" kindref="member">dpp::utility::timestamp()</ref> </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="note"><para>These values are the actual character values specified by the Discord API and should not be changed unless the Discord API changes the specification! They have been sorted into numerical order of their ASCII value to keep C++ happy. </para>
@@ -213,10 +213,10 @@
         </inbodydescription>
         <location file="include/dpp/utility.h" line="89" column="17" declfile="include/dpp/utility.h" declline="89" declcolumn="17"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a62891c981320f9cc4edfbbf9990428c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a177699d063618dd535764c81736a7a58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::timestamp</definition>
-        <argsstring>(time_t ts, time_format tf)</argsstring>
+        <argsstring>(time_t ts, time_format tf=tf_short_datetime)</argsstring>
         <name>timestamp</name>
         <param>
           <type>time_t</type>
@@ -225,9 +225,10 @@
         <param>
           <type><ref refid="namespacedpp_1_1utility_1a097ec42bcbedfed6ab1e4f12bf84cab7" kindref="member">time_format</ref></type>
           <declname>tf</declname>
+          <defval><ref refid="namespacedpp_1_1utility_1a097ec42bcbedfed6ab1e4f12bf84cab7a71dc667709d06a38a90007af294c8f42" kindref="member">tf_short_datetime</ref></defval>
         </param>
         <briefdescription>
-<para>Return a mentionable timestamp (used in a discord embed). These timestamps will display the given timestamp in the user&apos;s timezone and locale. </para>
+<para>Return a mentionable timestamp (used in a message). These timestamps will display the given timestamp in the user&apos;s timezone and locale. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -264,7 +265,7 @@
 <para>Returns current date and time. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>std::string Current date and time </para>
+<para><simplesect kind="return"><para>std::string Current date and time in &quot;Y-m-d H:M:S&quot; format </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -858,7 +859,7 @@
           <defval>false</defval>
         </param>
         <briefdescription>
-<para>Escapes markdown sequences in a string. </para>
+<para>Escapes Discord&apos;s markdown sequences in a string. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -878,7 +879,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>std::string escaped text </para>
+<simplesect kind="return"><para>std::string The text with the markdown special characters escaped with a backslash </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -896,7 +897,7 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Encodes a url parameter similar to php urlencode() </para>
+<para>Encodes a url parameter similar to <ulink url="https://www.php.net/manual/en/function.urlencode.php">php urlencode()</ulink> </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -943,7 +944,7 @@
           <declname>parameters</declname>
         </param>
         <briefdescription>
-<para>Build a URL parameter string e.g. &quot;a=b&amp;c=d&amp;e=f&quot; from a map of key/value pairs. Entries with empty key names or values are omitted. </para>
+<para>Build a URL parameter string e.g. &quot;?a=b&amp;c=d&amp;e=f&quot; from a map of key/value pairs. Entries with empty key names or values are omitted. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -973,7 +974,7 @@
           <declname>parameters</declname>
         </param>
         <briefdescription>
-<para>Build a URL parameter string e.g. &quot;a=b&amp;c=d&amp;e=f&quot; from a map of key/value pairs. Entries with empty key names or zero values are omitted. </para>
+<para>Build a URL parameter string e.g. &quot;?a=b&amp;c=d&amp;e=f&quot; from a map of key/value pairs. Entries with empty key names or zero values are omitted. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>

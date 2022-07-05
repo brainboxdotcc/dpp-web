@@ -140,7 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:add05f221746c0ea2b3136b53498d0cf6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6">keywords</a></td></tr>
-<tr class="memdesc:add05f221746c0ea2b3136b53498d0cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keywords to moderate.  <a href="structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6">More...</a><br /></td></tr>
+<tr class="memdesc:add05f221746c0ea2b3136b53498d0cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keywords to moderate. A keyword can be a phrase which contains multiple words. All keywords are case insensitive. <code>*</code> can be used to customize how each keyword will be matched.  <a href="structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6">More...</a><br /></td></tr>
 <tr class="separator:add05f221746c0ea2b3136b53498d0cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f0712c30a208c77283481868994d89"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedpp.html#a8d92860238000a25eeff7eed29ec1067">automod_preset_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89">presets</a></td></tr>
 <tr class="memdesc:a45f0712c30a208c77283481868994d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preset keyword list types to moderate.  <a href="structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89">More...</a><br /></td></tr>
@@ -248,7 +248,44 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Keywords to moderate. </p>
+<p>Keywords to moderate. A keyword can be a phrase which contains multiple words. All keywords are case insensitive. <code>*</code> can be used to customize how each keyword will be matched. </p>
+<p ><b>Examples for the <code>*</code> wildcard symbol:</b></p>
+<p >Prefix - word must start with the keyword</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">keyword   </th><th class="markdownTableHeadNone">matches    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cat*   </td><td class="markdownTableBodyNone"><u><b>cat</b></u>ch, <u><b>Cat</b></u>apult, <u><b>CAt</b></u>tLE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">the mat*   </td><td class="markdownTableBodyNone"><u><b>the mat</b></u>rix   </td></tr>
+</table>
+<p >Suffix - word must end with the keyword</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">keyword   </th><th class="markdownTableHeadNone">matches    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">*cat   </td><td class="markdownTableBodyNone">wild<u><b>cat</b></u>, copy<u><b>Cat</b></u>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">*the mat   </td><td class="markdownTableBodyNone">brea<u><b>the mat</b></u>   </td></tr>
+</table>
+<p >Anywhere - keyword can appear anywhere in the content</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">keyword   </th><th class="markdownTableHeadNone">matches    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">*cat*   </td><td class="markdownTableBodyNone">lo<u><b>cat</b></u>ion, edu<u><b>Cat</b></u>ion    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">*the mat*   </td><td class="markdownTableBodyNone">brea<u><b>the mat</b></u>ter   </td></tr>
+</table>
+<p >Whole Word - keyword is a full word or phrase and must be surrounded by whitespace at the beginning and end</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">keyword   </th><th class="markdownTableHeadNone">matches    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cat   </td><td class="markdownTableBodyNone"><u><b>Cat</b></u>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">the mat   </td><td class="markdownTableBodyNone"><u><b>the mat</b></u>   </td></tr>
+</table>
 
 </div>
 </div>

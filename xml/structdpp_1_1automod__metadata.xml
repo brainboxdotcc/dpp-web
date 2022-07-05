@@ -11,13 +11,74 @@
         <argsstring></argsstring>
         <name>keywords</name>
         <briefdescription>
-<para>Keywords to moderate. </para>
+<para>Keywords to moderate. A keyword can be a phrase which contains multiple words. All keywords are case insensitive. <computeroutput>*</computeroutput> can be used to customize how each keyword will be matched. </para>
         </briefdescription>
         <detaileddescription>
+<para><bold>Examples for the <computeroutput>*</computeroutput> wildcard symbol:</bold></para>
+<para>Prefix - word must start with the keyword</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>cat*   </para>
+</entry><entry thead="no"><para><underline><bold>cat</bold></underline>ch, <underline><bold>Cat</bold></underline>apult, <underline><bold>CAt</bold></underline>tLE    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>the mat*   </para>
+</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>rix   </para>
+</entry></row>
+</table>
+</para>
+<para>Suffix - word must end with the keyword</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*cat   </para>
+</entry><entry thead="no"><para>wild<underline><bold>cat</bold></underline>, copy<underline><bold>Cat</bold></underline>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*the mat   </para>
+</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>   </para>
+</entry></row>
+</table>
+</para>
+<para>Anywhere - keyword can appear anywhere in the content</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*cat*   </para>
+</entry><entry thead="no"><para>lo<underline><bold>cat</bold></underline>ion, edu<underline><bold>Cat</bold></underline>ion    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*the mat*   </para>
+</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>ter   </para>
+</entry></row>
+</table>
+</para>
+<para>Whole Word - keyword is a full word or phrase and must be surrounded by whitespace at the beginning and end</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>cat   </para>
+</entry><entry thead="no"><para><underline><bold>Cat</bold></underline>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>the mat   </para>
+</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>   </para>
+</entry></row>
+</table>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="107" column="13" bodyfile="include/dpp/automod.h" bodystart="107" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="139" column="13" bodyfile="include/dpp/automod.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> &gt;</type>
@@ -34,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="112" column="13" bodyfile="include/dpp/automod.h" bodystart="112" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="144" column="13" bodyfile="include/dpp/automod.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -50,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="117" column="9"/>
+        <location file="include/dpp/automod.h" line="149" column="9"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1automod__metadata" kindref="compound">automod_metadata</ref> &amp;</type>
@@ -80,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="125" column="18"/>
+        <location file="include/dpp/automod.h" line="157" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -103,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="132" column="21"/>
+        <location file="include/dpp/automod.h" line="164" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -156,7 +217,7 @@
         <label>vector&lt;</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/automod.h" line="103" column="1" bodyfile="include/dpp/automod.h" bodystart="103" bodyend="134"/>
+    <location file="include/dpp/automod.h" line="103" column="1" bodyfile="include/dpp/automod.h" bodystart="103" bodyend="166"/>
     <listofallmembers>
       <member refid="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" virt="virtual"><scope>dpp::automod_metadata</scope><name>build_json</name></member>
       <member refid="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>fill_from_json</name></member>
