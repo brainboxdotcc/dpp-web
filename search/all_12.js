@@ -51,7 +51,7 @@ var searchData=
   ['reassign_48',['reassign',['../structdpp_1_1voice__receive__t.html#a8bf7a8c69603ffd25b30795e5f7ae87d',1,'dpp::voice_receive_t']]],
   ['recipients_49',['recipients',['../classdpp_1_1channel.html#a0d66636187a0382693d69c2ac2827e89',1,'dpp::channel']]],
   ['reconnects_50',['reconnects',['../classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf',1,'dpp::discord_client']]],
-  ['record_20yourself_20in_20a_20vc_51',['Record yourself in a VC',['../record-user.html',1,'md_docpages_03_example_programs']]],
+  ['record_20yourself_20in_20a_20vc_51',['Record yourself in a VC',['../record-user.html',1,'music-and-audio']]],
   ['red_52',['red',['../namespacedpp_1_1colors.html#afc7eaf251deb378cab526fee30720aaf',1,'dpp::colors']]],
   ['refcount_53',['refcount',['../classdpp_1_1user.html#a68d336b1fc0b592ea970c11eaf9f2048',1,'dpp::user']]],
   ['region_54',['region',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099',1,'dpp']]],
