@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1dns__cache__entry" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::dns_cache_entry</compoundname>
+    <includes local="no">dns.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1dns__cache__entry_1a720c4119d31abe7ca9d27ee003f5509d" prot="public" static="no" mutable="no">
+        <type>addrinfo</type>
+        <definition>addrinfo dpp::dns_cache_entry::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>Resolved address information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="45" column="10" bodyfile="include/dpp/dns.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1dns__cache__entry_1aaee5b7324a9d02c19725c795b56feddf" prot="public" static="no" mutable="no">
+        <type>sockaddr_storage</type>
+        <definition>sockaddr_storage dpp::dns_cache_entry::ai_addr</definition>
+        <argsstring></argsstring>
+        <name>ai_addr</name>
+        <briefdescription>
+<para>Socket address. Discord only supports ipv4, but sockaddr_in6 is larger than sockaddr_in, sockaddr_storage will hold either. This means that if discord ever do support ipv6 we just flip one value in dns.cpp and that should be all that is needed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="54" column="18" bodyfile="include/dpp/dns.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1dns__cache__entry_1accaac1bd8043c6166599c28066f209fe" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::dns_cache_entry::expire_timestamp</definition>
+        <argsstring></argsstring>
+        <name>expire_timestamp</name>
+        <briefdescription>
+<para>Time at which this cache entry is invalidated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="59" column="8" bodyfile="include/dpp/dns.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a cached DNS result. Used by the <ref refid="classdpp_1_1ssl__client" kindref="compound">ssl_client</ref> class to store cached copies of dns lookups. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>addrinfo</label>
+      </node>
+      <node id="1">
+        <label>dpp::dns_cache_entry</label>
+        <link refid="structdpp_1_1dns__cache__entry"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ai_addr</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>expire_timestamp</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sockaddr_storage</label>
+      </node>
+      <node id="4">
+        <label>time_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/dns.h" line="41" column="1" bodyfile="include/dpp/dns.h" bodystart="41" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1dns__cache__entry_1a720c4119d31abe7ca9d27ee003f5509d" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>addr</name></member>
+      <member refid="structdpp_1_1dns__cache__entry_1aaee5b7324a9d02c19725c795b56feddf" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>ai_addr</name></member>
+      <member refid="structdpp_1_1dns__cache__entry_1accaac1bd8043c6166599c28066f209fe" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>expire_timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
