@@ -142,7 +142,7 @@ eval.cpp</h4>
 <p >This is the main body of the example program.</p>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;dpp/fmt/format.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;fmt/format.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="comment">/* We have to define this to make certain functions visible */</span></div>
@@ -191,7 +191,7 @@ eval.cpp</h4>
 <div class="line"><span class="stringliteral">                #include &lt;stdint.h&gt;\n\</span></div>
 <div class="line"><span class="stringliteral">                #include &lt;dpp/dpp.h&gt;\n\</span></div>
 <div class="line"><span class="stringliteral">                #include &lt;dpp/nlohmann/json.hpp&gt;\n\</span></div>
-<div class="line"><span class="stringliteral">                #include &lt;dpp/fmt/format.h&gt;\n\</span></div>
+<div class="line"><span class="stringliteral">                #include &lt;fmt/format.h&gt;\n\</span></div>
 <div class="line"><span class="stringliteral">                #include \&quot;eval.h\&quot;\n\</span></div>
 <div class="line"><span class="stringliteral">                extern \&quot;C\&quot; void so_exec(dpp::cluster&amp; bot, dpp::message_create_t event) {\n\</span></div>
 <div class="line"><span class="stringliteral">                    &quot;</span> + <a class="code hl_function" href="namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32">dpp::utility::utf8substr</a>(</div>
@@ -206,7 +206,7 @@ eval.cpp</h4>
 <div class="line"><span class="comment">             * This code assumes the current directory is writeable. The file will have a</span></div>
 <div class="line"><span class="comment">             * unique name made from the user&#39;s id and the message id.</span></div>
 <div class="line"><span class="comment">             */</span></div>
-<div class="line">                std::string source_filename = fmt::format(<span class="stringliteral">&quot;{}_{}.cpp&quot;</span>, event.msg.author.id, event.msg.id);</div>
+<div class="line">                std::string source_filename = std::to_string(event.msg.author.id) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(event.msg.id) + <span class="stringliteral">&quot;.cpp&quot;</span>;</div>
 <div class="line">            std::fstream code_file(source_filename, std::fstream::binary | std::fstream::out);</div>
 <div class="line">            <span class="keywordflow">if</span> (!code_file.is_open()) {</div>
 <div class="line">                bot.message_create(dpp::message(event.msg.channel_id, <span class="stringliteral">&quot;Unable to create source file for `eval`&quot;</span>));</div>
@@ -223,8 +223,8 @@ eval.cpp</h4>
 <div class="line">                <span class="stringliteral">&quot;-std=c++17&quot;</span>,</div>
 <div class="line">                <span class="stringliteral">&quot;-shared&quot;</span>,  <span class="comment">/* Build the output as a .so file */</span></div>
 <div class="line">                <span class="stringliteral">&quot;-fPIC&quot;</span>,</div>
-<div class="line">                fmt::format(<span class="stringliteral">&quot;-o{}_{}.so&quot;</span>, event.msg.author.id, event.msg.id),</div>
-<div class="line">                fmt::format(<span class="stringliteral">&quot;{}_{}.cpp&quot;</span>, event.msg.author.id, event.msg.id),</div>
+<div class="line">                std::string(<span class="stringliteral">&quot;-o&quot;</span>) + std::to_string(event.msg.author.id) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(event.msg.id) + <span class="stringliteral">&quot;.so&quot;</span>,</div>
+<div class="line">                std::to_string(event.msg.author.id) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(event.msg.id) + <span class="stringliteral">&quot;.cpp&quot;</span>,</div>
 <div class="line">                <span class="stringliteral">&quot;-ldpp&quot;</span>,</div>
 <div class="line">                <span class="stringliteral">&quot;-ldl&quot;</span></div>
 <div class="line">            }, [event, &amp;bot, source_filename, compile_start](<span class="keyword">const</span> std::string &amp;output) {</div>
@@ -233,7 +233,8 @@ eval.cpp</h4>
 <div class="line">                double compile_time = dpp::utility::time_f() - compile_start;</div>
 <div class="line"> </div>
 <div class="line">                <span class="comment">/* Delete our cpp file, we don&#39;t need it any more */</span></div>
-<div class="line">                unlink(fmt::format(<span class="stringliteral">&quot;{}/{}_{}.cpp&quot;</span>, getenv(<span class="stringliteral">&quot;PWD&quot;</span>), event.msg.author.id, event.msg.id).c_str());</div>
+<div class="line">                std::string del_file = std::string(getenv(<span class="stringliteral">&quot;PWD&quot;</span>)) + std::to_string(event.msg.author.id) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(event.msg.id) + <span class="stringliteral">&quot;.cpp&quot;</span>;</div>
+<div class="line">                unlink(del_file.c_str());</div>
 <div class="line"> </div>
 <div class="line">                <span class="comment">/* On successful compilation g++ outputs nothing, so any output here is error output */</span></div>
 <div class="line">                if (output.length()) {</div>
@@ -246,7 +247,8 @@ eval.cpp</h4>
 <div class="line"><span class="comment">                     * the shared object could not be loaded. The user probably</span></div>
 <div class="line"><span class="comment">                     * did something odd with the symbols inside their eval.</span></div>
 <div class="line"><span class="comment">                     */</span></div>
-<div class="line">                    auto shared_object_handle = dlopen(fmt::format(<span class="stringliteral">&quot;{}/{}_{}.so&quot;</span>, getenv(<span class="stringliteral">&quot;PWD&quot;</span>), event.msg.author.id, event.msg.id).c_str(), RTLD_NOW);</div>
+<div class="line">                    std::string dl = std::string(getenv(<span class="stringliteral">&quot;PWD&quot;</span>)) + std::to_string(event.msg.author.id) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(event.msg.id) + <span class="stringliteral">&quot;.so&quot;</span>,</div>
+<div class="line">                    auto shared_object_handle = dlopen(dl.c_str(), RTLD_NOW);</div>
 <div class="line">                    if (!shared_object_handle) {</div>
 <div class="line">                        const char *dlsym_error = dlerror();</div>
 <div class="line">                        bot.message_create(dpp::message(event.msg.channel_id, <span class="stringliteral">&quot;Shared object load error: ```\n&quot;</span> +</div>
@@ -287,10 +289,12 @@ eval.cpp</h4>
 <div class="line">                    dlclose(shared_object_handle);</div>
 <div class="line"> </div>
 <div class="line">                    <span class="comment">/* We are now done with the compiled code too */</span></div>
-<div class="line">                    unlink(fmt::format(<span class="stringliteral">&quot;{}/{}_{}.so&quot;</span>, getenv(<span class="stringliteral">&quot;PWD&quot;</span>), event.msg.author.id, event.msg.id).c_str());</div>
+<div class="line">                    unlink(dl.c_str());</div>
 <div class="line"> </div>
 <div class="line">                    <span class="comment">/* Output some statistics */</span></div>
-<div class="line">                    bot.message_create(<a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(event.msg.channel_id, fmt::format(<span class="stringliteral">&quot;Execution completed. Compile time: {0:.03f}s, execution time {1:.03f}s&quot;</span>, compile_time, run_time)));</div>
+<div class="line">                    bot.message_create(<a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(event.msg.channel_id,</div>
+<div class="line">                        <span class="stringliteral">&quot;Execution completed. Compile time: &quot;</span> + std::to_string(compile_time) +</div>
+<div class="line">                        <span class="stringliteral">&quot;s, execution time &quot;</span> + std::to_string(run_time) + <span class="stringliteral">&quot;s&quot;</span>));</div>
 <div class="line">                }</div>
 <div class="line">            });</div>
 <div class="line">        }</div>

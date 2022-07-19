@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('subcommands.html',''); initResizable()
 <div class="contents">
 <div class="textblock"><p >This is how to use Subcommands within your Slash Commands for your bots.</p>
 <p >To make a subcomamnd within your command use this </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;dpp/fmt/format.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;fmt/format.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('subcommands.html',''); initResizable()
 <div class="line">                <span class="keywordflow">if</span> (cmd_data.<a class="code hl_variable" href="structdpp_1_1command__interaction.html#a1888851c94c4f2316b20c019c171121b">options</a>[0].options.size() &gt; 0) {</div>
 <div class="line">                    <span class="comment">/* Get the user option as a snowflake. */</span></div>
 <div class="line">                    <a class="code hl_typedef" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a> user = std::get&lt;dpp::snowflake&gt;(cmd_data.<a class="code hl_variable" href="structdpp_1_1command__interaction.html#a1888851c94c4f2316b20c019c171121b">options</a>[0].options[0].value);</div>
-<div class="line">                    <span class="keyword">event</span>.reply(fmt::format(<span class="stringliteral">&quot;&lt;@{}&gt; has now been turned into a dog.&quot;</span>, user)); </div>
+<div class="line">                    <span class="keyword">event</span>.reply(<span class="stringliteral">&quot;&lt;@&quot;</span> + std::to_string(user) + <span class="stringliteral">&quot;&gt; has now been turned into a dog.&quot;</span>)); </div>
 <div class="line">                } <span class="keywordflow">else</span> {</div>
 <div class="line">                    <span class="comment">/* Reply if there were no options.. */</span></div>
 <div class="line">                    <span class="keyword">event</span>.reply(<span class="stringliteral">&quot;&lt;A picture of a dog.&gt;&quot;</span>);</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('subcommands.html',''); initResizable()
 <div class="line">                <span class="keywordflow">if</span> (cmd_data.<a class="code hl_variable" href="structdpp_1_1command__interaction.html#a1888851c94c4f2316b20c019c171121b">options</a>[0].options.size() &gt; 0) {</div>
 <div class="line">                    <span class="comment">/* Get the user option as a snowflake. */</span></div>
 <div class="line">                    <a class="code hl_typedef" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">dpp::snowflake</a> user = std::get&lt;dpp::snowflake&gt;(cmd_data.<a class="code hl_variable" href="structdpp_1_1command__interaction.html#a1888851c94c4f2316b20c019c171121b">options</a>[0].options[0].value);</div>
-<div class="line">                    <span class="keyword">event</span>.reply(fmt::format(<span class="stringliteral">&quot;&lt;@{}&gt; has now been turned into a cat.&quot;</span>, user));</div>
+<div class="line">                    <span class="keyword">event</span>.reply(<span class="stringliteral">&quot;&lt;@&quot;</span> + std::to_string(user) + <span class="stringliteral">&quot;&gt; has now been turned into acat.&quot;</span>)); </div>
 <div class="line">                } <span class="keywordflow">else</span> {</div>
 <div class="line">                    <span class="comment">/* Reply if there were no options.. */</span></div>
 <div class="line">                    <span class="keyword">event</span>.reply(<span class="stringliteral">&quot;&lt;A picture of a cat.&gt;&quot;</span>);</div>
