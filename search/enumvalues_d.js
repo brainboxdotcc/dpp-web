@@ -8,5 +8,7 @@ var searchData=
   ['sp_5fguild_5fonly_5',['sp_guild_only',['../namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d',1,'dpp']]],
   ['sp_5fpublic_6',['sp_public',['../namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed',1,'dpp']]],
   ['st_5fguild_7',['st_guild',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede',1,'dpp']]],
-  ['st_5fstandard_8',['st_standard',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca',1,'dpp']]]
+  ['st_5freturn_8',['st_return',['../namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e',1,'dpp']]],
+  ['st_5fstandard_9',['st_standard',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca',1,'dpp']]],
+  ['st_5fwait_10',['st_wait',['../namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726',1,'dpp']]]
 ];

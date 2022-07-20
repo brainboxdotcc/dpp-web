@@ -1108,6 +1108,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a1111f17373e7a972e77ffc0a6e621522"><td class="mdescLeft">&#160;</td><td class="mdescRight">channel permission overwrite types  <a href="namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522">More...</a><br /></td></tr>
 <tr class="separator:a1111f17373e7a972e77ffc0a6e621522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af447e04d0490cd4a9de085e4a758faa4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4">start_type</a> : bool { <a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">st_wait</a> = false
+, <a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e">st_return</a> = true
+ }</td></tr>
+<tr class="memdesc:af447e04d0490cd4a9de085e4a758faa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of startup for cluster::start()  <a href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4">More...</a><br /></td></tr>
+<tr class="separator:af447e04d0490cd4a9de085e4a758faa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2049904620e4f62b82f8dc818de864"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864">parameter_type</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a36958c192951cad2ae2b921de3db644a">pt_string</a>
 , <a class="el" href="namespacedpp.html#a9a2049904620e4f62b82f8dc818de864a44145f9f2768b2c9419f3e56b03691d9">pt_role</a>
@@ -1903,6 +1908,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a37230f39cac8fb1e6a978570be65b5be"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a37230f39cac8fb1e6a978570be65b5be">from_string</a> (const std::string &amp;s)</td></tr>
 <tr class="memdesc:a37230f39cac8fb1e6a978570be65b5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialised conversion of int from string.  <a href="namespacedpp.html#a37230f39cac8fb1e6a978570be65b5be">More...</a><br /></td></tr>
 <tr class="separator:a37230f39cac8fb1e6a978570be65b5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ecb05a32cc064043248ce28a9643b7c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2ecb05a32cc064043248ce28a9643b7c"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2ecb05a32cc064043248ce28a9643b7c">to_hex</a> (T i)</td></tr>
+<tr class="memdesc:a2ecb05a32cc064043248ce28a9643b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert any numeric value type to hex string.  <a href="namespacedpp.html#a2ecb05a32cc064043248ce28a9643b7c">More...</a><br /></td></tr>
+<tr class="separator:a2ecb05a32cc064043248ce28a9643b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="memTemplParams" colspan="2">template&lt;typename T , class F , class... Ts&gt; </td></tr>
 <tr class="memitem:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330">sync</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *c, F func, Ts &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a D++ REST function synchronously.  <a href="namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330">More...</a><br /></td></tr>
@@ -4548,6 +4557,28 @@ Variables</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed" name="a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed"></a>sp_public&#160;</td><td class="fielddoc"><p >The Stage instance is visible publicly, such as on Stage Discovery. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d" name="a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d"></a>sp_guild_only&#160;</td><td class="fielddoc"><p >The Stage instance is visible to only guild members. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af447e04d0490cd4a9de085e4a758faa4" name="af447e04d0490cd4a9de085e4a758faa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af447e04d0490cd4a9de085e4a758faa4">&#9670;&nbsp;</a></span>start_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4">dpp::start_type</a> : bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Types of startup for <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start()</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" name="af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"></a>st_wait&#160;</td><td class="fielddoc"><p >Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will not return in normal operation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e" name="af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e"></a>st_return&#160;</td><td class="fielddoc"><p >Return immediately after starting shard threads. If you set the parameter of <a class="el" href="classdpp_1_1cluster.html#a40e99d13e1380eccd30d13123014594f" title="Start the cluster, connecting all its shards.">cluster::start()</a> to this value, you will have to manage the lifetime and scope of your cluster object yourself. Taking it out of scope or deleting its pointer will terminate the bot. </p>
 </td></tr>
 </table>
 
@@ -7262,6 +7293,41 @@ template&lt;typename T , class F , class... Ts&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a2ecb05a32cc064043248ce28a9643b7c" name="a2ecb05a32cc064043248ce28a9643b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ecb05a32cc064043248ce28a9643b7c">&#9670;&nbsp;</a></span>to_hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::to_hex </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert any numeric value type to hex string. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>numeric printable type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>numeric printable value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string hex string will be 2 times the size of the type in length, e.g. a 32 bit value will be an 8 character string. </dd></dl>
 
 </div>
 </div>
