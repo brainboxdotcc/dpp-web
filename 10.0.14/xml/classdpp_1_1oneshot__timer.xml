@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1oneshot__timer" kind="class" language="C++" prot="public">
+    <compoundname>dpp::oneshot_timer</compoundname>
+    <includes local="no">timer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1oneshot__timer_1a2b899772b0a8d96cfc6e71805315bf7a" prot="private" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <definition>class cluster* dpp::oneshot_timer::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+<para>Owning cluster. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="89" column="15" bodyfile="include/dpp/timer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1oneshot__timer_1a04fc142bb1afa816f6870be595560e0e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
+        <definition>timer dpp::oneshot_timer::th</definition>
+        <argsstring></argsstring>
+        <name>th</name>
+        <briefdescription>
+<para>Timer handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="91" column="7" bodyfile="include/dpp/timer.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1oneshot__timer_1a03200477c086ef1c32409ed27e80358d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::oneshot_timer::oneshot_timer</definition>
+        <argsstring>(class cluster *cl, uint64_t duration, timer_callback_t callback)</argsstring>
+        <name>oneshot_timer</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1ad4658c417b9af90d3021253375580a61" kindref="member">timer_callback_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new oneshot timer object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cluster owner </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>duration before firing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback to call on firing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1oneshot__timer_1a9b47894517c3a62b3fd97013bc3c01c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
+        <definition>timer dpp::oneshot_timer::get_handle</definition>
+        <argsstring>()</argsstring>
+        <name>get_handle</name>
+        <briefdescription>
+<para>Get the handle for the created one-shot timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>timer handle for use with stop_timer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="107" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1oneshot__timer_1a084107aff1b71f0776a501527d3e14ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::oneshot_timer::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Cancel the one shot timer immediately. Callback function is not called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="113" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1oneshot__timer_1a0b71b2e8722aa503a79a4c56325232ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::oneshot_timer::~oneshot_timer</definition>
+        <argsstring>()</argsstring>
+        <name>~oneshot_timer</name>
+        <briefdescription>
+<para>Destroy the oneshot timer object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="118" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Trigger a timed event once. The provided callback is called only once. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/timer.h" line="85" column="1" bodyfile="include/dpp/timer.h" bodystart="86" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1oneshot__timer_1a084107aff1b71f0776a501527d3e14ef" prot="public" virt="non-virtual"><scope>dpp::oneshot_timer</scope><name>cancel</name></member>
+      <member refid="classdpp_1_1oneshot__timer_1a9b47894517c3a62b3fd97013bc3c01c0" prot="public" virt="non-virtual"><scope>dpp::oneshot_timer</scope><name>get_handle</name></member>
+      <member refid="classdpp_1_1oneshot__timer_1a03200477c086ef1c32409ed27e80358d" prot="public" virt="non-virtual"><scope>dpp::oneshot_timer</scope><name>oneshot_timer</name></member>
+      <member refid="classdpp_1_1oneshot__timer_1a2b899772b0a8d96cfc6e71805315bf7a" prot="private" virt="non-virtual"><scope>dpp::oneshot_timer</scope><name>owner</name></member>
+      <member refid="classdpp_1_1oneshot__timer_1a04fc142bb1afa816f6870be595560e0e" prot="private" virt="non-virtual"><scope>dpp::oneshot_timer</scope><name>th</name></member>
+      <member refid="classdpp_1_1oneshot__timer_1a0b71b2e8722aa503a79a4c56325232ba" prot="public" virt="non-virtual"><scope>dpp::oneshot_timer</scope><name>~oneshot_timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
