@@ -314,6 +314,7 @@ var classdpp_1_1cluster =
     [ "set_dm_channel", "classdpp_1_1cluster.html#a3fc501cc0ebb334d09a7f4bb1ea6b3e6", null ],
     [ "set_presence", "classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9", null ],
     [ "set_websocket_protocol", "classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9", null ],
+    [ "shutdown", "classdpp_1_1cluster.html#a3ace7f63d2a8571b6f586e2ac1ac3d0c", null ],
     [ "stage_instance_create", "classdpp_1_1cluster.html#ac62b4564e7512125f0b30377b5c7319a", null ],
     [ "stage_instance_delete", "classdpp_1_1cluster.html#a2b4391d87cad53c95e869400534fbd2e", null ],
     [ "stage_instance_delete_sync", "classdpp_1_1cluster.html#a3de0179783edd7785ee4a21d192571f4", null ],

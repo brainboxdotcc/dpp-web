@@ -29,6 +29,7 @@ var classdpp_1_1discord__client =
     [ "queue_message", "classdpp_1_1discord__client.html#a123f98e2faef134f6954d9a91346fb8d", null ],
     [ "read_loop", "classdpp_1_1discord__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
     [ "run", "classdpp_1_1discord__client.html#ae659e7343de4a120d14f1b81e9535ea0", null ],
+    [ "send_close_packet", "classdpp_1_1discord__client.html#a2613fa8b73b1e7960c62bfe8cdef1dd7", null ],
     [ "write", "classdpp_1_1discord__client.html#a66ca960ed3dddc37340ecc5d32ff0e1c", null ],
     [ "dpp::cluster", "classdpp_1_1discord__client.html#a836b658e110edfcbb21ea88b2ad90e90", null ],
     [ "dpp::events::guild_create", "classdpp_1_1discord__client.html#a38bd58112bc810d3a3ac9d88a316d2e9", null ],

@@ -14,6 +14,7 @@ var classdpp_1_1websocket__client =
     [ "log", "classdpp_1_1websocket__client.html#a945ccd04f376174a64c0cceffca3bbcd", null ],
     [ "one_second_timer", "classdpp_1_1websocket__client.html#a07ad6e7b32cfe760976d90409d5c47ae", null ],
     [ "read_loop", "classdpp_1_1websocket__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
+    [ "send_close_packet", "classdpp_1_1websocket__client.html#a2613fa8b73b1e7960c62bfe8cdef1dd7", null ],
     [ "write", "classdpp_1_1websocket__client.html#a66ca960ed3dddc37340ecc5d32ff0e1c", null ],
     [ "buffer", "classdpp_1_1websocket__client.html#ae0e5e0799448bf29506bfcc21168d3fa", null ],
     [ "bytes_in", "classdpp_1_1websocket__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d", null ],
