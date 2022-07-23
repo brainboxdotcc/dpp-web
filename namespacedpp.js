@@ -982,7 +982,6 @@ var namespacedpp =
     [ "snowflake_not_null", "namespacedpp.html#aab9892169cd091ab8292c29ec27d43a4", null ],
     [ "string_not_null", "namespacedpp.html#adf57d9793b70d4b4da431491ab263298", null ],
     [ "sync", "namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330", null ],
-    [ "to_hex", "namespacedpp.html#a2ecb05a32cc064043248ce28a9643b7c", null ],
     [ "to_json", "namespacedpp.html#ae6a96c54dc4f6dad8f8f6bbe05fea254", null ],
     [ "to_json", "namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403", null ],
     [ "to_json", "namespacedpp.html#a752b7140de023c34db60c92363aacf3f", null ],
