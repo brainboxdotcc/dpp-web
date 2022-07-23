@@ -408,7 +408,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad793626d2733715381c3c5c440f31bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edit the properties of an existing guild member.  <a href="classdpp_1_1cluster.html#ad793626d2733715381c3c5c440f31bd0">More...</a><br /></td></tr>
 <tr class="separator:ad793626d2733715381c3c5c440f31bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac673fb500731954ad50e90de70b2fd03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03">guild_member_move</a> (const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> channel_id, const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const <a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> user_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
-<tr class="memdesc:ac673fb500731954ad50e90de70b2fd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the guild member to a other voice channel, if member is connected to one.  <a href="classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03">More...</a><br /></td></tr>
+<tr class="memdesc:ac673fb500731954ad50e90de70b2fd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the guild member to a other voice channel, if member is connected to one. Set the <code>channel_id</code> to <code>0</code> to disconnect the user.  <a href="classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03">More...</a><br /></td></tr>
 <tr class="separator:ac673fb500731954ad50e90de70b2fd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8074b289fee0f43d7eafb2bc6ae5c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a4a8074b289fee0f43d7eafb2bc6ae5c7">guild_set_nickname</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id, const std::string &amp;nickname, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a4a8074b289fee0f43d7eafb2bc6ae5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change current user nickname.  <a href="classdpp_1_1cluster.html#a4a8074b289fee0f43d7eafb2bc6ae5c7">More...</a><br /></td></tr>
@@ -10639,14 +10639,14 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Moves the guild member to a other voice channel, if member is connected to one. </p>
+<p>Moves the guild member to a other voice channel, if member is connected to one. Set the <code>channel_id</code> to <code>0</code> to disconnect the user. </p>
 <p >Fires a <code>Guild Member Update</code> Gateway event. </p><dl class="section note"><dt>Note</dt><dd>When moving members to channels, the API user <b>must</b> have permissions to both connect to the channel and have the <code>MOVE_MEMBERS</code> permission. </dd>
 <dd>
 This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">channel_id</td><td>Id of the channel to which the user is used </td></tr>
+    <tr><td class="paramname">channel_id</td><td>Id of the channel to which the user is used. Set to <code>0</code> to disconnect the user </td></tr>
     <tr><td class="paramname">guild_id</td><td>Guild id to which the user is connected </td></tr>
     <tr><td class="paramname">user_id</td><td>User id, who should be moved </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">dpp::guild_member</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
@@ -10692,7 +10692,7 @@ This method supports audit log reasons set by the <a class="el" href="classdpp_1
 <p >Fires a <code>Guild Member Update</code> Gateway event. </p><dl class="section note"><dt>Note</dt><dd>When moving members to channels, the API user <b>must</b> have permissions to both connect to the channel and have the <code>MOVE_MEMBERS</code> permission. </dd>
 <dd>
 This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03" title="Moves the guild member to a other voice channel, if member is connected to one.">dpp::cluster::guild_member_move</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#ac673fb500731954ad50e90de70b2fd03" title="Moves the guild member to a other voice channel, if member is connected to one. Set the channel_id to...">dpp::cluster::guild_member_move</a> </dd>
 <dd>
 <a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
