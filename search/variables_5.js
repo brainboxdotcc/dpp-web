@@ -26,13 +26,13 @@ var searchData=
   ['ephemeral_23',['ephemeral',['../structdpp_1_1attachment.html#a453d43c1a5bb073038cc2a0890cfdbec',1,'dpp::attachment']]],
   ['error_24',['error',['../structdpp_1_1http__request__completion__t.html#a6e8e54c80c5b439ddfd0ddb6f9e4039b',1,'dpp::http_request_completion_t']]],
   ['errors_25',['errors',['../structdpp_1_1error__info.html#ac84fd7b6e0344c9b282b13a43dfc40a0',1,'dpp::error_info']]],
-  ['event_26',['event',['../structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b',1,'dpp::audit_entry']]],
-  ['event_5fid_27',['event_id',['../structdpp_1_1guild__scheduled__event__user__remove__t.html#a6a30b55dde5f359ff5fdae1714477e26',1,'dpp::guild_scheduled_event_user_remove_t::event_id()'],['../structdpp_1_1guild__scheduled__event__user__add__t.html#a340444fbb5e027722de705f27ad101ea',1,'dpp::guild_scheduled_event_user_add_t::event_id()']]],
-  ['event_5ftype_28',['event_type',['../classdpp_1_1automod__rule.html#a48453f7108212b762a37280640079ae4',1,'dpp::automod_rule']]],
-  ['exempt_5fchannels_29',['exempt_channels',['../classdpp_1_1automod__rule.html#a53d470a64f437aeb038c5e122fccded5',1,'dpp::automod_rule']]],
-  ['exempt_5froles_30',['exempt_roles',['../classdpp_1_1automod__rule.html#a5f1eedc34c9a8d99202508fd161b1777',1,'dpp::automod_rule']]],
-  ['expire_5fgrace_5fperiod_31',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
-  ['expire_5ftimestamp_32',['expire_timestamp',['../structdpp_1_1dns__cache__entry.html#accaac1bd8043c6166599c28066f209fe',1,'dpp::dns_cache_entry']]],
-  ['expires_5fat_33',['expires_at',['../classdpp_1_1invite.html#a58eb1d4ad8f76fa8f21f00ab7b2e0253',1,'dpp::invite']]],
-  ['explicit_5fcontent_5ffilter_34',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]]
+  ['event_5fid_26',['event_id',['../structdpp_1_1guild__scheduled__event__user__add__t.html#a340444fbb5e027722de705f27ad101ea',1,'dpp::guild_scheduled_event_user_add_t::event_id()'],['../structdpp_1_1guild__scheduled__event__user__remove__t.html#a6a30b55dde5f359ff5fdae1714477e26',1,'dpp::guild_scheduled_event_user_remove_t::event_id()']]],
+  ['event_5ftype_27',['event_type',['../classdpp_1_1automod__rule.html#a48453f7108212b762a37280640079ae4',1,'dpp::automod_rule']]],
+  ['exempt_5fchannels_28',['exempt_channels',['../classdpp_1_1automod__rule.html#a53d470a64f437aeb038c5e122fccded5',1,'dpp::automod_rule']]],
+  ['exempt_5froles_29',['exempt_roles',['../classdpp_1_1automod__rule.html#a5f1eedc34c9a8d99202508fd161b1777',1,'dpp::automod_rule']]],
+  ['expire_5fgrace_5fperiod_30',['expire_grace_period',['../classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850',1,'dpp::integration']]],
+  ['expire_5ftimestamp_31',['expire_timestamp',['../structdpp_1_1dns__cache__entry.html#accaac1bd8043c6166599c28066f209fe',1,'dpp::dns_cache_entry']]],
+  ['expires_5fat_32',['expires_at',['../classdpp_1_1invite.html#a58eb1d4ad8f76fa8f21f00ab7b2e0253',1,'dpp::invite']]],
+  ['explicit_5fcontent_5ffilter_33',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]],
+  ['extra_34',['extra',['../structdpp_1_1audit__entry.html#abb76c66e3a5d4fa79d1753221119ab24',1,'dpp::audit_entry']]]
 ];

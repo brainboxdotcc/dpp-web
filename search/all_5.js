@@ -88,12 +88,12 @@ var searchData=
   ['ett_5fsmall_5ftuple_85',['ett_small_tuple',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16',1,'dpp']]],
   ['ett_5fsmallint_86',['ett_smallint',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a4acfaee981ed2e5388421872e9bfc6fd',1,'dpp']]],
   ['ett_5fstring_87',['ett_string',['../namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1edbdd50825e2b684a846b1a4de88381',1,'dpp']]],
-  ['event_88',['event',['../classdpp_1_1events_1_1event.html',1,'dpp::events::event'],['../structdpp_1_1audit__entry.html#a3abfeeaa8c3662ee181190575da51b8b',1,'dpp::audit_entry::event()']]],
+  ['event_88',['event',['../classdpp_1_1events_1_1event.html',1,'dpp::events']]],
   ['event_5fdispatch_5ft_89',['event_dispatch_t',['../structdpp_1_1event__dispatch__t.html',1,'dpp::event_dispatch_t'],['../structdpp_1_1event__dispatch__t.html#a4ac4d287ca94f2389cf68e2534d9e1b0',1,'dpp::event_dispatch_t::event_dispatch_t()']]],
   ['event_5fentities_90',['event_entities',['../structdpp_1_1event__entities.html',1,'dpp']]],
   ['event_5fentity_5ftype_91',['event_entity_type',['../namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834',1,'dpp']]],
   ['event_5fhandle_92',['event_handle',['../namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e',1,'dpp']]],
-  ['event_5fid_93',['event_id',['../structdpp_1_1guild__scheduled__event__user__add__t.html#a340444fbb5e027722de705f27ad101ea',1,'dpp::guild_scheduled_event_user_add_t::event_id()'],['../structdpp_1_1guild__scheduled__event__user__remove__t.html#a6a30b55dde5f359ff5fdae1714477e26',1,'dpp::guild_scheduled_event_user_remove_t::event_id()']]],
+  ['event_5fid_93',['event_id',['../structdpp_1_1guild__scheduled__event__user__remove__t.html#a6a30b55dde5f359ff5fdae1714477e26',1,'dpp::guild_scheduled_event_user_remove_t::event_id()'],['../structdpp_1_1guild__scheduled__event__user__add__t.html#a340444fbb5e027722de705f27ad101ea',1,'dpp::guild_scheduled_event_user_add_t::event_id()']]],
   ['event_5fmember_94',['event_member',['../structdpp_1_1event__member.html',1,'dpp']]],
   ['event_5fmember_5fmap_95',['event_member_map',['../namespacedpp.html#a912d2a5c3a763ffc462dfb7c4c7a0562',1,'dpp']]],
   ['event_5fprivacy_5flevel_96',['event_privacy_level',['../namespacedpp.html#a6add40f37f2f043dede513edebaa67bd',1,'dpp']]],
@@ -114,5 +114,6 @@ var searchData=
   ['expl_5fall_5fmembers_111',['expl_all_members',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa4a5d95e0b883b55ab4320e985be7d9c3',1,'dpp']]],
   ['expl_5fdisabled_112',['expl_disabled',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479',1,'dpp']]],
   ['expl_5fmembers_5fwithout_5froles_113',['expl_members_without_roles',['../namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce',1,'dpp']]],
-  ['explicit_5fcontent_5ffilter_114',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]]
+  ['explicit_5fcontent_5ffilter_114',['explicit_content_filter',['../classdpp_1_1guild.html#a1c6074e2abbc246282edbd786347b00d',1,'dpp::guild']]],
+  ['extra_115',['extra',['../structdpp_1_1audit__entry.html#abb76c66e3a5d4fa79d1753221119ab24',1,'dpp::audit_entry']]]
 ];

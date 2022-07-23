@@ -10,7 +10,7 @@
         <argsstring></argsstring>
         <name>new_value</name>
         <briefdescription>
-<para>Optional: Serialised new value of the key. </para>
+<para>Optional: Serialised new value of the change, e.g. for nicknames, the new nickname. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -24,7 +24,7 @@
         <argsstring></argsstring>
         <name>old_value</name>
         <briefdescription>
-<para>Optional: Serialised old value of the key. </para>
+<para>Optional: Serialised old value of the change, e.g. for nicknames, the old nickname. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -38,13 +38,15 @@
         <argsstring></argsstring>
         <name>key</name>
         <briefdescription>
-<para>name of audit log change key </para>
         </briefdescription>
         <detaileddescription>
+<para>The property name that was changed, e.g. <computeroutput>nick</computeroutput> for nickname changes <simplesect kind="note"><para>For dpp::audit_type::aut_appcommand_permission_update updates the key is the id of the user, channel, role, or a permission constant that was updated instead of an actual property name </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/auditlog.h" line="150" column="12" bodyfile="include/dpp/auditlog.h" bodystart="150" bodyend="-1"/>
+        <location file="include/dpp/auditlog.h" line="153" column="12" bodyfile="include/dpp/auditlog.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -71,7 +73,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/auditlog.h" line="144" column="1" bodyfile="include/dpp/auditlog.h" bodystart="144" bodyend="151"/>
+    <location file="include/dpp/auditlog.h" line="144" column="1" bodyfile="include/dpp/auditlog.h" bodystart="144" bodyend="154"/>
     <listofallmembers>
       <member refid="structdpp_1_1audit__change_1abb0f7485a2d413476f1f8663fe1a8014" prot="public" virt="non-virtual"><scope>dpp::audit_change</scope><name>key</name></member>
       <member refid="structdpp_1_1audit__change_1a7241b5b440781dccabfbc24c154de9cb" prot="public" virt="non-virtual"><scope>dpp::audit_change</scope><name>new_value</name></member>

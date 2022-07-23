@@ -1,5 +1,6 @@
 var structdpp_1_1audit__extra =
 [
+    [ "application_id", "structdpp_1_1audit__extra.html#affdebde09b496d47a29ed3db62ad89ec", null ],
     [ "channel_id", "structdpp_1_1audit__extra.html#a9821254451dc82c5308243e44ee02ef3", null ],
     [ "count", "structdpp_1_1audit__extra.html#a47d8e8609aa44431176494ea7adb86ed", null ],
     [ "delete_member_days", "structdpp_1_1audit__extra.html#aae4e14638f648029aad67dbbab0300f1", null ],

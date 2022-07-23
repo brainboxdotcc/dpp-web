@@ -119,13 +119,12 @@ $(document).ready(function(){initNavTree('structdpp_1_1audit__change.html',''); 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7241b5b440781dccabfbc24c154de9cb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1audit__change.html#a7241b5b440781dccabfbc24c154de9cb">new_value</a></td></tr>
-<tr class="memdesc:a7241b5b440781dccabfbc24c154de9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional: Serialised new value of the key.  <a href="structdpp_1_1audit__change.html#a7241b5b440781dccabfbc24c154de9cb">More...</a><br /></td></tr>
+<tr class="memdesc:a7241b5b440781dccabfbc24c154de9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional: Serialised new value of the change, e.g. for nicknames, the new nickname.  <a href="structdpp_1_1audit__change.html#a7241b5b440781dccabfbc24c154de9cb">More...</a><br /></td></tr>
 <tr class="separator:a7241b5b440781dccabfbc24c154de9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a025a06b03f1592b67bd59310bcadb946"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1audit__change.html#a025a06b03f1592b67bd59310bcadb946">old_value</a></td></tr>
-<tr class="memdesc:a025a06b03f1592b67bd59310bcadb946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional: Serialised old value of the key.  <a href="structdpp_1_1audit__change.html#a025a06b03f1592b67bd59310bcadb946">More...</a><br /></td></tr>
+<tr class="memdesc:a025a06b03f1592b67bd59310bcadb946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional: Serialised old value of the change, e.g. for nicknames, the old nickname.  <a href="structdpp_1_1audit__change.html#a025a06b03f1592b67bd59310bcadb946">More...</a><br /></td></tr>
 <tr class="separator:a025a06b03f1592b67bd59310bcadb946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb0f7485a2d413476f1f8663fe1a8014"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1audit__change.html#abb0f7485a2d413476f1f8663fe1a8014">key</a></td></tr>
-<tr class="memdesc:abb0f7485a2d413476f1f8663fe1a8014"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of audit log change key  <a href="structdpp_1_1audit__change.html#abb0f7485a2d413476f1f8663fe1a8014">More...</a><br /></td></tr>
 <tr class="separator:abb0f7485a2d413476f1f8663fe1a8014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -142,8 +141,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>name of audit log change key </p>
+<p >The property name that was changed, e.g. <code>nick</code> for nickname changes </p><dl class="section note"><dt>Note</dt><dd>For dpp::audit_type::aut_appcommand_permission_update updates the key is the id of the user, channel, role, or a permission constant that was updated instead of an actual property name </dd></dl>
 
 </div>
 </div>
@@ -159,7 +157,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Optional: Serialised new value of the key. </p>
+<p>Optional: Serialised new value of the change, e.g. for nicknames, the new nickname. </p>
 
 </div>
 </div>
@@ -175,7 +173,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Optional: Serialised old value of the key. </p>
+<p>Optional: Serialised old value of the change, e.g. for nicknames, the old nickname. </p>
 
 </div>
 </div>
