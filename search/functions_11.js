@@ -34,13 +34,14 @@ var searchData=
   ['time_5ff_31',['time_f',['../namespacedpp_1_1utility.html#a1184092d62c7ab561cb3f60a92f71b67',1,'dpp::utility']]],
   ['timed_5flistener_32',['timed_listener',['../classdpp_1_1timed__listener.html#a8557fea6b073b1cce59dae3582b8cdba',1,'dpp::timed_listener']]],
   ['timestamp_33',['timestamp',['../namespacedpp_1_1utility.html#a177699d063618dd535764c81736a7a58',1,'dpp::utility']]],
-  ['to_5fjson_34',['to_json',['../namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98',1,'dpp::to_json(nlohmann::json &amp;j, const permission_overwrite &amp;po)'],['../namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3',1,'dpp::to_json(nlohmann::json &amp;j, const thread_metadata &amp;tmdata)'],['../namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2',1,'dpp::to_json(nlohmann::json &amp;j, const slashcommand &amp;cmd)'],['../namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403',1,'dpp::to_json(nlohmann::json &amp;j, const command_option_choice &amp;choice)'],['../namespacedpp.html#ae6a96c54dc4f6dad8f8f6bbe05fea254',1,'dpp::to_json(nlohmann::json &amp;j, const command_option &amp;opt)'],['../namespacedpp.html#a752b7140de023c34db60c92363aacf3f',1,'dpp::to_json(nlohmann::json &amp;j, const command_permission &amp;cp)'],['../namespacedpp.html#a735482218b54177427bc882605fa1e4a',1,'dpp::to_json(nlohmann::json &amp;j, const guild_command_permissions &amp;gcp)']]],
-  ['to_5fmsecs_35',['to_msecs',['../structdpp_1_1utility_1_1uptime.html#aba6dc2cde034d52477684cea020c0b91',1,'dpp::utility::uptime']]],
-  ['to_5fsecs_36',['to_secs',['../structdpp_1_1utility_1_1uptime.html#a8966c7200b4dbda85df6a933329701c0',1,'dpp::utility::uptime']]],
-  ['to_5fstring_37',['to_string',['../structdpp_1_1utility_1_1uptime.html#ada638f6c5a9b7b45242d66e0d244b07d',1,'dpp::utility::uptime::to_string()'],['../structdpp_1_1utility_1_1iconhash.html#aeba3e70afad0497f8e9aa1493704a77b',1,'dpp::utility::iconhash::to_string()']]],
-  ['tokenize_38',['tokenize',['../namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec',1,'dpp::utility']]],
-  ['trim_39',['trim',['../namespacedpp.html#a9bffa8a03ffbd0896356233cc9ea1ae6',1,'dpp']]],
-  ['ts_5fnot_5fnull_40',['ts_not_null',['../namespacedpp.html#a90fa4e4bbd6aaf8884f3588f096ab251',1,'dpp']]],
-  ['ts_5fto_5fstring_41',['ts_to_string',['../namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572',1,'dpp']]],
-  ['typing_5fstart_5ft_42',['typing_start_t',['../structdpp_1_1typing__start__t.html#a806b74ba396ab577fb3b4268b169c9ad',1,'dpp::typing_start_t']]]
+  ['to_5fhex_34',['to_hex',['../namespacedpp.html#a2ecb05a32cc064043248ce28a9643b7c',1,'dpp']]],
+  ['to_5fjson_35',['to_json',['../namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98',1,'dpp::to_json(nlohmann::json &amp;j, const permission_overwrite &amp;po)'],['../namespacedpp.html#a77d77e1ffffe22979d93132a7acee1d3',1,'dpp::to_json(nlohmann::json &amp;j, const thread_metadata &amp;tmdata)'],['../namespacedpp.html#ae5041ec3547b4d4b7bf3416eea9b6403',1,'dpp::to_json(nlohmann::json &amp;j, const command_option_choice &amp;choice)'],['../namespacedpp.html#ae6a96c54dc4f6dad8f8f6bbe05fea254',1,'dpp::to_json(nlohmann::json &amp;j, const command_option &amp;opt)'],['../namespacedpp.html#a752b7140de023c34db60c92363aacf3f',1,'dpp::to_json(nlohmann::json &amp;j, const command_permission &amp;cp)'],['../namespacedpp.html#a735482218b54177427bc882605fa1e4a',1,'dpp::to_json(nlohmann::json &amp;j, const guild_command_permissions &amp;gcp)'],['../namespacedpp.html#a85aad7db48e1fc97a00f92044fa2c1c2',1,'dpp::to_json(nlohmann::json &amp;j, const slashcommand &amp;cmd)']]],
+  ['to_5fmsecs_36',['to_msecs',['../structdpp_1_1utility_1_1uptime.html#aba6dc2cde034d52477684cea020c0b91',1,'dpp::utility::uptime']]],
+  ['to_5fsecs_37',['to_secs',['../structdpp_1_1utility_1_1uptime.html#a8966c7200b4dbda85df6a933329701c0',1,'dpp::utility::uptime']]],
+  ['to_5fstring_38',['to_string',['../structdpp_1_1utility_1_1uptime.html#ada638f6c5a9b7b45242d66e0d244b07d',1,'dpp::utility::uptime::to_string()'],['../structdpp_1_1utility_1_1iconhash.html#aeba3e70afad0497f8e9aa1493704a77b',1,'dpp::utility::iconhash::to_string()']]],
+  ['tokenize_39',['tokenize',['../namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec',1,'dpp::utility']]],
+  ['trim_40',['trim',['../namespacedpp.html#a9bffa8a03ffbd0896356233cc9ea1ae6',1,'dpp']]],
+  ['ts_5fnot_5fnull_41',['ts_not_null',['../namespacedpp.html#a90fa4e4bbd6aaf8884f3588f096ab251',1,'dpp']]],
+  ['ts_5fto_5fstring_42',['ts_to_string',['../namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572',1,'dpp']]],
+  ['typing_5fstart_5ft_43',['typing_start_t',['../structdpp_1_1typing__start__t.html#a806b74ba396ab577fb3b4268b169c9ad',1,'dpp::typing_start_t']]]
 ];

@@ -1908,6 +1908,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a37230f39cac8fb1e6a978570be65b5be"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a37230f39cac8fb1e6a978570be65b5be">from_string</a> (const std::string &amp;s)</td></tr>
 <tr class="memdesc:a37230f39cac8fb1e6a978570be65b5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialised conversion of int from string.  <a href="namespacedpp.html#a37230f39cac8fb1e6a978570be65b5be">More...</a><br /></td></tr>
 <tr class="separator:a37230f39cac8fb1e6a978570be65b5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ecb05a32cc064043248ce28a9643b7c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2ecb05a32cc064043248ce28a9643b7c"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2ecb05a32cc064043248ce28a9643b7c">to_hex</a> (T i)</td></tr>
+<tr class="memdesc:a2ecb05a32cc064043248ce28a9643b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a numeric value to hex.  <a href="namespacedpp.html#a2ecb05a32cc064043248ce28a9643b7c">More...</a><br /></td></tr>
+<tr class="separator:a2ecb05a32cc064043248ce28a9643b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239ea76cdedff39d6bc8104dadb77ec4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a239ea76cdedff39d6bc8104dadb77ec4"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a239ea76cdedff39d6bc8104dadb77ec4">leading_zeroes</a> (T i, size_t width)</td></tr>
+<tr class="memdesc:a239ea76cdedff39d6bc8104dadb77ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a numeric type as a string with leading zeroes.  <a href="namespacedpp.html#a239ea76cdedff39d6bc8104dadb77ec4">More...</a><br /></td></tr>
+<tr class="separator:a239ea76cdedff39d6bc8104dadb77ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="memTemplParams" colspan="2">template&lt;typename T , class F , class... Ts&gt; </td></tr>
 <tr class="memitem:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330">sync</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *c, F func, Ts &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a6de81ad1777ea865ffb7bc2f91a4e330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a D++ REST function synchronously.  <a href="namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330">More...</a><br /></td></tr>
@@ -6020,6 +6028,52 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a239ea76cdedff39d6bc8104dadb77ec4" name="a239ea76cdedff39d6bc8104dadb77ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239ea76cdedff39d6bc8104dadb77ec4">&#9670;&nbsp;</a></span>leading_zeroes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::leading_zeroes </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Format a numeric type as a string with leading zeroes. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>numeric type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>numeric value </td></tr>
+    <tr><td class="paramname">width</td><td>width of type including the leading zeroes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string resultant string with leading zeroes </dd></dl>
+
+</div>
+</div>
 <a id="aa8227c717e1a550b3c3962cea1964d92" name="aa8227c717e1a550b3c3962cea1964d92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8227c717e1a550b3c3962cea1964d92">&#9670;&nbsp;</a></span>lowercase()</h2>
 
@@ -7289,6 +7343,41 @@ template&lt;typename T , class F , class... Ts&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a2ecb05a32cc064043248ce28a9643b7c" name="a2ecb05a32cc064043248ce28a9643b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ecb05a32cc064043248ce28a9643b7c">&#9670;&nbsp;</a></span>to_hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::to_hex </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a numeric value to hex. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>numeric type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>numeric value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string value in hex, the length will be 2* the raw size of the type </dd></dl>
 
 </div>
 </div>
