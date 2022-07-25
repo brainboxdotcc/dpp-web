@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1command__data__option" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::command_data_option</compoundname>
+    <includes local="no">appcommand.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1command__data__option_1a0c3bbf03c956d22fc1ecf677c1476ac7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::command_data_option::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>the name of the parameter </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="512" column="13" bodyfile="include/dpp/appcommand.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__data__option_1a3e664aff9bad6fffbd521d0dcc1d2299" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58" kindref="member">command_option_type</ref></type>
+        <definition>command_option_type dpp::command_data_option::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>value of ApplicationCommandOptionType </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="513" column="21" bodyfile="include/dpp/appcommand.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__data__option_1a576bda8a063f9b1d1aa4b931973e4587" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kindref="member">command_value</ref></type>
+        <definition>command_value dpp::command_data_option::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>Optional: the value of the pair. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="514" column="15" bodyfile="include/dpp/appcommand.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__data__option_1aa26028641de473d1486d26e8048340b4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1command__data__option" kindref="compound">command_data_option</ref> &gt;</type>
+        <definition>std::vector&lt;command_data_option&gt; dpp::command_data_option::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+<para>Optional: present if this option is a group or subcommand. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="515" column="13" bodyfile="include/dpp/appcommand.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1command__data__option_1af19a9794fcddefce4f97a8f65a52d53a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::command_data_option::focused</definition>
+        <argsstring></argsstring>
+        <name>focused</name>
+        <briefdescription>
+<para>Optional: true if this option is the currently focused option for autocomplete. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="516" column="6" bodyfile="include/dpp/appcommand.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Values in the command interaction. These are the values specified by the user when actually issuing the command on a channel or in DM. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>bool</label>
+      </node>
+      <node id="4">
+        <label>command_option_type</label>
+      </node>
+      <node id="1">
+        <label>dpp::command_data_option</label>
+        <link refid="structdpp_1_1command__data__option"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>options</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>focused</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>variant&lt; std::monostate, std::string, int64_t, bool, snowflake, double &gt;</label>
+      </node>
+      <node id="6">
+        <label>vector&lt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/appcommand.h" line="511" column="1" bodyfile="include/dpp/appcommand.h" bodystart="511" bodyend="517"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1command__data__option_1af19a9794fcddefce4f97a8f65a52d53a" prot="public" virt="non-virtual"><scope>dpp::command_data_option</scope><name>focused</name></member>
+      <member refid="structdpp_1_1command__data__option_1a0c3bbf03c956d22fc1ecf677c1476ac7" prot="public" virt="non-virtual"><scope>dpp::command_data_option</scope><name>name</name></member>
+      <member refid="structdpp_1_1command__data__option_1aa26028641de473d1486d26e8048340b4" prot="public" virt="non-virtual"><scope>dpp::command_data_option</scope><name>options</name></member>
+      <member refid="structdpp_1_1command__data__option_1a3e664aff9bad6fffbd521d0dcc1d2299" prot="public" virt="non-virtual"><scope>dpp::command_data_option</scope><name>type</name></member>
+      <member refid="structdpp_1_1command__data__option_1a576bda8a063f9b1d1aa4b931973e4587" prot="public" virt="non-virtual"><scope>dpp::command_data_option</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
