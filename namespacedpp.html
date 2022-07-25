@@ -1867,6 +1867,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a0fc24406b890d9d830e2b0fff9a9ced3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0fc24406b890d9d830e2b0fff9a9ced3">rest_request_list&lt; voiceregion &gt;</a> (<a class="el" href="classdpp_1_1cluster.html">dpp::cluster</a> *c, const char *basepath, const std::string &amp;major, const std::string &amp;minor, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, const std::string &amp;postdata, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback, const std::string &amp;key)</td></tr>
 <tr class="memdesc:a0fc24406b890d9d830e2b0fff9a9ced3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Templated REST request helper to save on typing (for returned lists, specialised for voiceregions)  <a href="namespacedpp.html#a0fc24406b890d9d830e2b0fff9a9ced3">More...</a><br /></td></tr>
 <tr class="separator:a0fc24406b890d9d830e2b0fff9a9ced3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2aee5f8caf98a0dbebd4f1abb464dc00">close_socket</a> (<a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a> sfd)</td></tr>
+<tr class="memdesc:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a socket.  <a href="namespacedpp.html#a2aee5f8caf98a0dbebd4f1abb464dc00">More...</a><br /></td></tr>
+<tr class="separator:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3">set_nonblocking</a> (<a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a> sockfd, bool non_blocking)</td></tr>
+<tr class="memdesc:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a socket to blocking or non-blocking IO.  <a href="namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3">More...</a><br /></td></tr>
+<tr class="separator:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8227c717e1a550b3c3962cea1964d92"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa8227c717e1a550b3c3962cea1964d92"><td class="memTemplItemLeft" align="right" valign="top">std::basic_string&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa8227c717e1a550b3c3962cea1964d92">lowercase</a> (const std::basic_string&lt; T &gt; &amp;s)</td></tr>
 <tr class="memdesc:aa8227c717e1a550b3c3962cea1964d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to lowercase using tolower()  <a href="namespacedpp.html#aa8227c717e1a550b3c3962cea1964d92">More...</a><br /></td></tr>
@@ -4990,6 +4996,33 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a2aee5f8caf98a0dbebd4f1abb464dc00" name="a2aee5f8caf98a0dbebd4f1abb464dc00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aee5f8caf98a0dbebd4f1abb464dc00">&#9670;&nbsp;</a></span>close_socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::close_socket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a>&#160;</td>
+          <td class="paramname"><em>sfd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close a socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sfd</td><td>Socket to close </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false on error, true on success </dd></dl>
+
+</div>
+</div>
 <a id="a575bfa79c17aa90101ae8d3bf632e930" name="a575bfa79c17aa90101ae8d3bf632e930"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a575bfa79c17aa90101ae8d3bf632e930">&#9670;&nbsp;</a></span>comma()</h2>
 
@@ -7068,6 +7101,43 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0c5e194a6e6cb7d653d73b19b5348dc3" name="a0c5e194a6e6cb7d653d73b19b5348dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5e194a6e6cb7d653d73b19b5348dc3">&#9670;&nbsp;</a></span>set_nonblocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::set_nonblocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a>&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>non_blocking</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a socket to blocking or non-blocking IO. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sockfd</td><td>socket to act upon </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false on error, true on success </dd></dl>
 
 </div>
 </div>
