@@ -65,7 +65,7 @@ var NAVTREE =
       [ "Why do the \"get\" functions like \"messages_get\" return void rather than what I'm after?", "md_docpages_01_frequently_asked_questions.html#autotoc_md28", null ],
       [ "Can i use a user token with this library (as opposed to a bot token)?", "md_docpages_01_frequently_asked_questions.html#autotoc_md29", null ]
     ] ],
-    [ "Building D++", "md_docpages_02_build.html", "md_docpages_02_build" ],
+    [ "Installing D++", "md_docpages_01_installing.html", "md_docpages_01_installing" ],
     [ "Creating a Discord Bot", "md_docpages_02_building_a_bot.html", "md_docpages_02_building_a_bot" ],
     [ "Example Programs", "md_docpages_03_example_programs.html", "md_docpages_03_example_programs" ],
     [ "Advanced Reference", "md_docpages_04_advanced_reference.html", "md_docpages_04_advanced_reference" ],
@@ -115,20 +115,20 @@ var NAVTREEINDEX =
 "classdpp_1_1thread.html#ace7afa978603442b3a4c0cbf366fdf6e",
 "classdpp_1_1voiceregion.html#a36b5334ed5fd4a4b2781140ca33ab543",
 "functions_vars_t.html",
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099a406609dc4e2712b0abc9ca72bf57e390",
-"namespacedpp.html#aa84690a0ba0251e8609440e93919da1c",
-"namespacedpp_1_1colors.html#a52a736518934534db1bade1beaba2fc2",
-"structdpp_1_1autocomplete__interaction.html",
-"structdpp_1_1channel__pins__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
-"structdpp_1_1context__menu__t.html#aca2880114f69b7ba62eb5137824c1432",
-"structdpp_1_1guild__ban__add__t.html#a66dadcaca1f356964834a9b981dcf1fb",
-"structdpp_1_1guild__scheduled__event__update__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1interaction__response.html#a50e33b74f32d9e100db207c1ae5f3b9c",
-"structdpp_1_1message__context__menu__t.html#a8b0c69c156a1e532507a918c13414f14",
-"structdpp_1_1reaction.html#ac7e46baa7c5cd668e43198670579af6e",
-"structdpp_1_1stage__instance.html#a9f086ed62419d373646e5d0e63667fd5",
-"structdpp_1_1thread__update__t.html",
-"structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413"
+"namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479",
+"namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41",
+"namespacedpp_1_1colors.html#a13a1c01036fece6e39ef4693f4d0781f",
+"structdpp_1_1audit__extra.html#a9821254451dc82c5308243e44ee02ef3",
+"structdpp_1_1channel__delete__t.html#aca2880114f69b7ba62eb5137824c1432",
+"structdpp_1_1context__menu__t.html#aa5fcd66cf01e5dbce8f5ec921a58db63",
+"structdpp_1_1guild__ban__add__t.html#a205babd5bfbb4ed9810d824d28711536",
+"structdpp_1_1guild__scheduled__event__delete__t.html#ab8f9b72d296c25ac68f2e3698403812b",
+"structdpp_1_1interaction__response.html",
+"structdpp_1_1message__context__menu__t.html#a56c5b18e31d5042ce01c814620013d2d",
+"structdpp_1_1reaction.html#a33c3c809d9d08afb794be04f573c3d59",
+"structdpp_1_1stage__instance.html#a40bf0c6cc03909910512808fa6caa112",
+"structdpp_1_1thread__metadata.html#aacd872999ff72501feadb8069e0243fd",
+"structdpp_1_1voice__receive__t.html#a8bf7a8c69603ffd25b30795e5f7ae87d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
