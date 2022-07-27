@@ -101,7 +101,24 @@ $(document).ready(function(){initNavTree('install-xmake.html',''); initResizable
   <div class="headertitle"><div class="title">Installing from xmake </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >(This page coming soon) </p>
+<div class="textblock"><p >To install D++ on a project from XMake:</p>
+<ul>
+<li>Ensure XMake <a href="https://xmake.io/#/guide/installation">is correctly installed</a></li>
+<li>Create a new xmake project if you haven't already one, using <code>xmake init &lt;project_name&gt;</code></li>
+<li>Update the <code>xmake.lua</code> file by adding the <code>dpp</code> package, below the minimum configuration:</li>
+</ul>
+<div class="fragment"><div class="line">add_rules(&quot;mode.debug&quot;, &quot;mode.release&quot;)</div>
+<div class="line"> </div>
+<div class="line">+ add_requires(&quot;dpp&quot;)</div>
+<div class="line"> </div>
+<div class="line">target(&quot;test-bot&quot;)</div>
+<div class="line">    set_kind(&quot;binary&quot;)</div>
+<div class="line">    add_files(&quot;src/*.cpp&quot;)</div>
+<div class="line"> </div>
+<div class="line">+    add_packages(&quot;dpp&quot;)</div>
+</div><!-- fragment --><ul>
+<li>Finally, run <code>xmake build</code> to download dependencies and build the project </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

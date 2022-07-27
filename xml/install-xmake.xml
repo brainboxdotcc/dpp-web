@@ -6,7 +6,27 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>(This page coming soon) </para>
+<para>To install D++ on a project from XMake:</para>
+<para><itemizedlist>
+<listitem><para>Ensure XMake <ulink url="https://xmake.io/#/guide/installation">is correctly installed</ulink></para>
+</listitem><listitem><para>Create a new xmake project if you haven&apos;t already one, using <computeroutput>xmake init &lt;project_name&gt;</computeroutput></para>
+</listitem><listitem><para>Update the <computeroutput>xmake.lua</computeroutput> file by adding the <computeroutput>dpp</computeroutput> package, below the minimum configuration:</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting filename=".diff"><codeline><highlight class="normal">add_rules(&quot;mode.debug&quot;,<sp/>&quot;mode.release&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">+<sp/>add_requires(&quot;dpp&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">target(&quot;test-bot&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>set_kind(&quot;binary&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>add_files(&quot;src/*.cpp&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">+<sp/><sp/><sp/><sp/>add_packages(&quot;dpp&quot;)</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>Finally, run <computeroutput>xmake build</computeroutput> to download dependencies and build the project </para>
+</listitem></itemizedlist>
+</para>
     </detaileddescription>
     <location file="docpages/install/install-xmake.md"/>
   </compounddef>
