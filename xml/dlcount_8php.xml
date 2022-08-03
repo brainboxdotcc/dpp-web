@@ -3,14 +3,38 @@
   <compounddef id="dlcount_8php" kind="file" language="PHP">
     <compoundname>dlcount.php</compoundname>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="dlcount_8php_1aa1e74d3789fb23d945dc44ccdde7b17d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="dlcount_8php_1a9a1e67b1c8bdf638913df354fcb10413" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>$REPO_WHITELIST</definition>
+        <definition>$githubApi</definition>
         <argsstring></argsstring>
-        <name>$REPO_WHITELIST</name>
-        <initializer>= array(
-	&quot;brainboxdotcc/dpp&quot;,
-	&quot;brainboxdotcc/windows-bot-template&quot;,
+        <name>$githubApi</name>
+        <initializer>= &quot;https://api.github.com/repos/brainboxdotcc/dpp/releases&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/dlcount.php" line="2" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dlcount_8php_1acedd13b51401130848ce18f4d5c52605" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$json</definition>
+        <argsstring></argsstring>
+        <name>$json</name>
+        <initializer>= json_decode(
+	file_get_contents(
+		$githubApi,
+		false,
+		stream_context_create(
+			[
+				&quot;http&quot; =&gt; [
+					&quot;method&quot; =&gt; &quot;GET&quot;,
+					&quot;header&quot; =&gt; &quot;User-Agent: DPP/Website&quot;
+				]	
+			]
+		)
+	)
 )</initializer>
         <briefdescription>
         </briefdescription>
@@ -18,72 +42,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="docpages/dl.dpp.dev/dlcount.php" line="28" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="28" bodyend="-1"/>
+        <location file="docpages/dl.dpp.dev/dlcount.php" line="3" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="3" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="dlcount_8php_1a582ed6e0b35fd0e23961867d2c93f5b6" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="dlcount_8php_1a83c15e7230e881b7964da6eaa18bd1e3" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>$SVG_IMG</definition>
+        <definition>$downloads</definition>
         <argsstring></argsstring>
-        <name>$SVG_IMG</name>
-        <initializer>=</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/dl.dpp.dev/dlcount.php" line="34" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="34" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="dlcount_8php_1a49c7011be9c979d9174c52a8b83e5d8e" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>$config</definition>
-        <argsstring></argsstring>
-        <name>$config</name>
-        <initializer>= array(
-	&quot;only-total&quot; =&gt; false,
-	&quot;generate-image&quot; =&gt; false
-)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/dl.dpp.dev/dlcount.php" line="38" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="38" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="dlcount_8php_1ab87574651d84a5085465af04f3a636c2" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>$to_set</definition>
-        <argsstring></argsstring>
-        <name>$to_set</name>
-        <initializer>= &quot;&quot;</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/dl.dpp.dev/dlcount.php" line="42" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="42" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="dlcount_8php_1a8d8f4d2608731c9eea2f5691ed858578" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>$repos</definition>
-        <argsstring></argsstring>
-        <name>$repos</name>
-        <initializer>= array()</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/dl.dpp.dev/dlcount.php" line="43" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="43" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="dlcount_8php_1a1432a0322ba161ea6bf81ba414083606" prot="public" static="no" mutable="no">
-        <type>if(isset($argv)) if(isset( $_REQUEST[&quot;repo&quot;])) if(empty($repos) &amp;&amp; $config[&quot;generate-image&quot;])</type>
-        <definition>if(isset( $argv)) if(isset($_REQUEST[&quot;repo&quot;])) if (empty( $repos) &amp;&amp;$config[&quot;generate-image&quot;]) $dl_cnt</definition>
-        <argsstring></argsstring>
-        <name>$dl_cnt</name>
+        <name>$downloads</name>
         <initializer>= 0</initializer>
         <briefdescription>
         </briefdescription>
@@ -91,43 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="docpages/dl.dpp.dev/dlcount.php" line="81" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="81" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="dlcount_8php_1aa3dc80d859814c68d9e6ff07c5f47973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>foreach($repos as $repo) if( $config[&quot;generate-image&quot;])</type>
-        <definition>foreach( $repos as $repo) if($config[&quot;generate-image&quot;]) printout</definition>
-        <argsstring>($string)</argsstring>
-        <name>printout</name>
-        <param>
-          <declname>$string</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Prints something to the standard output, only if the program is not started from an HTTP request </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/dl.dpp.dev/dlcount.php" line="122" column="10" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="122" bodyend="128"/>
-      </memberdef>
-      <memberdef kind="function" id="dlcount_8php_1aaf2f75796b87b4afd5a3d8a59eb00d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>get_ssl_page</definition>
-        <argsstring>($url)</argsstring>
-        <name>get_ssl_page</name>
-        <param>
-          <declname>$url</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Crude way of getting an <ulink url="https://">https://</ulink> URL </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="docpages/dl.dpp.dev/dlcount.php" line="133" column="10" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="133" bodyend="146"/>
+        <location file="docpages/dl.dpp.dev/dlcount.php" line="17" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="17" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
