@@ -1,7 +1,7 @@
 var classdpp_1_1voiceregion =
 [
     [ "voiceregion", "classdpp_1_1voiceregion.html#aa49a3a3f843f2f97f27ad262dff11c5c", null ],
-    [ "~voiceregion", "classdpp_1_1voiceregion.html#ab08402a1538913ad465b2c36cd4dbf92", null ],
+    [ "~voiceregion", "classdpp_1_1voiceregion.html#a9617792a8ad16a03a2ce0d8c281c048f", null ],
     [ "build_json", "classdpp_1_1voiceregion.html#aea73fd0baaf94781d2ac9a9433685ff8", null ],
     [ "fill_from_json", "classdpp_1_1voiceregion.html#a60425fa948752520c12b420b4bb6636a", null ],
     [ "is_custom", "classdpp_1_1voiceregion.html#a2acea0a6fa26f8713e7ff712c21626b4", null ],

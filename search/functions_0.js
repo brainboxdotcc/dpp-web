@@ -26,7 +26,7 @@ var searchData=
   ['application_23',['application',['../classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044',1,'dpp::application']]],
   ['attach_24',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
   ['attachment_25',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
-  ['auditlog_26',['auditlog',['../classdpp_1_1auditlog.html#aa1aeb75a27474dc9323c3e5c012199d9',1,'dpp::auditlog']]],
+  ['auditlog_26',['auditlog',['../classdpp_1_1auditlog.html#a1846ff8bb9925a207d1465789996020f',1,'dpp::auditlog']]],
   ['autocomplete_5ft_27',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]],
   ['automod_5faction_28',['automod_action',['../structdpp_1_1automod__action.html#ac2a996f644692f79ea0bd8bb2b840d5c',1,'dpp::automod_action']]],
   ['automod_5frule_29',['automod_rule',['../classdpp_1_1automod__rule.html#a10845bc9238341fd681979b158d8d875',1,'dpp::automod_rule']]],

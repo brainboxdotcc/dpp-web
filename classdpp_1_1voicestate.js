@@ -1,7 +1,7 @@
 var classdpp_1_1voicestate =
 [
     [ "voicestate", "classdpp_1_1voicestate.html#a2cffc101e4bff3c2aa40f5efc9fee895", null ],
-    [ "~voicestate", "classdpp_1_1voicestate.html#a29e5fdd1ec931b6ad1feed0094a1225f", null ],
+    [ "~voicestate", "classdpp_1_1voicestate.html#ad71f9fced773219271db94a9f77712d6", null ],
     [ "build_json", "classdpp_1_1voicestate.html#a98cbf2fd643a50da9506d2ea7b25c8e4", null ],
     [ "fill_from_json", "classdpp_1_1voicestate.html#a24cf57b27275f7e5c650f581da9c469d", null ],
     [ "is_deaf", "classdpp_1_1voicestate.html#a307d3a8776385f6ab468e838c97099ed", null ],

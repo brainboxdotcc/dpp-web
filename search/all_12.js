@@ -47,7 +47,7 @@ var searchData=
   ['read_5floop_44',['read_loop',['../classdpp_1_1ssl__client.html#a17d4e73c74413a5a79a3859615f913e2',1,'dpp::ssl_client']]],
   ['ready_45',['ready',['../classdpp_1_1events_1_1ready.html',1,'dpp::events::ready'],['../classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90',1,'dpp::discord_client::ready()']]],
   ['ready_5ft_46',['ready_t',['../structdpp_1_1ready__t.html',1,'dpp::ready_t'],['../structdpp_1_1ready__t.html#aebf5fe086e4ee6921042fe798d58d72a',1,'dpp::ready_t::ready_t()']]],
-  ['reason_47',['reason',['../classdpp_1_1http__request.html#a96bc944a868341d97772beca88f02ac0',1,'dpp::http_request::reason()'],['../structdpp_1_1error__detail.html#a8c674fce9f4c539e7347cb61880698dd',1,'dpp::error_detail::reason()'],['../classdpp_1_1ban.html#af3f56d08933ee4007f442b11c6b75c01',1,'dpp::ban::reason()'],['../structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b',1,'dpp::audit_entry::reason()']]],
+  ['reason_47',['reason',['../structdpp_1_1error__detail.html#a8c674fce9f4c539e7347cb61880698dd',1,'dpp::error_detail::reason()'],['../classdpp_1_1http__request.html#a96bc944a868341d97772beca88f02ac0',1,'dpp::http_request::reason()'],['../classdpp_1_1ban.html#af3f56d08933ee4007f442b11c6b75c01',1,'dpp::ban::reason()'],['../structdpp_1_1audit__entry.html#a9681924b6d2256345a7c5579a34f3f7b',1,'dpp::audit_entry::reason()']]],
   ['reassign_48',['reassign',['../structdpp_1_1voice__receive__t.html#a8bf7a8c69603ffd25b30795e5f7ae87d',1,'dpp::voice_receive_t']]],
   ['recipients_49',['recipients',['../classdpp_1_1channel.html#a0d66636187a0382693d69c2ac2827e89',1,'dpp::channel']]],
   ['reconnects_50',['reconnects',['../classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf',1,'dpp::discord_client']]],

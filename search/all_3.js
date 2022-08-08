@@ -89,7 +89,7 @@ var searchData=
   ['co_5fsub_5fcommand_86',['co_sub_command',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c',1,'dpp']]],
   ['co_5fsub_5fcommand_5fgroup_87',['co_sub_command_group',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58aaf7efc648d35b8a702480f916c904547',1,'dpp']]],
   ['co_5fuser_88',['co_user',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58a5a2ea837ca5ec64e6385acf392cef1e2',1,'dpp']]],
-  ['code_89',['code',['../structdpp_1_1error__detail.html#a2b30982693fdd737d114fa4344a5c537',1,'dpp::error_detail::code()'],['../classdpp_1_1invite.html#a26f76de18e3f4d24574d49ec96163170',1,'dpp::invite::code()'],['../classdpp_1_1dtemplate.html#afd09c5cd9ada37b0b3dc4f8c4570d25e',1,'dpp::dtemplate::code()'],['../structdpp_1_1error__info.html#abfe93b65ec981b72d3a05a60f03c4834',1,'dpp::error_info::code()']]],
+  ['code_89',['code',['../classdpp_1_1dtemplate.html#afd09c5cd9ada37b0b3dc4f8c4570d25e',1,'dpp::dtemplate::code()'],['../structdpp_1_1error__info.html#abfe93b65ec981b72d3a05a60f03c4834',1,'dpp::error_info::code()'],['../structdpp_1_1error__detail.html#a2b30982693fdd737d114fa4344a5c537',1,'dpp::error_detail::code()'],['../classdpp_1_1invite.html#a26f76de18e3f4d24574d49ec96163170',1,'dpp::invite::code()']]],
   ['coding_20style_20standards_90',['Coding Style Standards',['../coding-standards.html',1,'md_docpages_04_advanced_reference']]],
   ['collected_5freaction_91',['collected_reaction',['../classdpp_1_1collected__reaction.html',1,'dpp']]],
   ['collecting_20reactions_92',['Collecting Reactions',['../collecting-reactions.html',1,'misc']]],
