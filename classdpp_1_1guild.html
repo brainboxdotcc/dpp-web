@@ -549,6 +549,7 @@ The method will search for the guild member in the cache by the users id. If the
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the user specified is in a vc, false if they aren't </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is NOT a synchronous blocking call! The bot isn't instantly ready to send or listen for audio, as we have to wait for the connection to the voice server to be established! e.g. wait for <a class="el" href="classdpp_1_1cluster.html#a8f2f865ac3492196a8167a319261ffb6" title="Called when a voice channel is connected and ready to send audio. Note that this is not directly atta...">dpp::cluster::on_voice_ready</a> event, and then send the audio within that event. </dd></dl>
 
 </div>
 </div>

@@ -204,7 +204,7 @@
           <declname>guild_id</declname>
         </param>
         <briefdescription>
-<para>Create websocket object and connect it. Needs hosname, token and session_id to be set or does nothing. </para>
+<para>Create websocket object and connect it. Needs hostname, token and session_id to be set or does nothing. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -218,11 +218,13 @@
 </parameterlist>
 <simplesect kind="return"><para>reference to self </para>
 </simplesect>
+<simplesect kind="note"><para>It can spawn a thread to establish the connection, so this is NOT a synchronous blocking call! You shouldn&apos;t call this directly. Use a wrapper function instead. e.g. <ref refid="classdpp_1_1guild_1a0d5e43e678d6a0448930bd31620d979e" kindref="member">dpp::guild::connect_member_voice</ref> </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="129" column="11"/>
+        <location file="include/dpp/discordclient.h" line="131" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceconn_1a05b4745343840f96e585ece0456bd831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> &amp;</type>
@@ -239,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="135" column="11"/>
+        <location file="include/dpp/discordclient.h" line="137" column="11"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -502,7 +504,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/discordclient.h" line="58" column="1" bodyfile="include/dpp/discordclient.h" bodystart="58" bodyend="136"/>
+    <location file="include/dpp/discordclient.h" line="58" column="1" bodyfile="include/dpp/discordclient.h" bodystart="58" bodyend="138"/>
     <listofallmembers>
       <member refid="classdpp_1_1voiceconn_1a9ae04af7ba5f3ed36e248ece6f2ad25b" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>channel_id</name></member>
       <member refid="classdpp_1_1voiceconn_1ae8751945fb4ef1938e4b45f119aa49c3" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>connect</name></member>

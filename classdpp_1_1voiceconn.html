@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8bb23d980d80e0d61c1cadc61bacf278"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if the connection is active (websocket exists)  <a href="classdpp_1_1voiceconn.html#a8bb23d980d80e0d61c1cadc61bacf278">More...</a><br /></td></tr>
 <tr class="separator:a8bb23d980d80e0d61c1cadc61bacf278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8751945fb4ef1938e4b45f119aa49c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1voiceconn.html">voiceconn</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1voiceconn.html#ae8751945fb4ef1938e4b45f119aa49c3">connect</a> (<a class="el" href="namespacedpp.html#a0dec2a52b080906aebfd3e1b3db02475">snowflake</a> guild_id)</td></tr>
-<tr class="memdesc:ae8751945fb4ef1938e4b45f119aa49c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create websocket object and connect it. Needs hosname, token and session_id to be set or does nothing.  <a href="classdpp_1_1voiceconn.html#ae8751945fb4ef1938e4b45f119aa49c3">More...</a><br /></td></tr>
+<tr class="memdesc:ae8751945fb4ef1938e4b45f119aa49c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create websocket object and connect it. Needs hostname, token and session_id to be set or does nothing.  <a href="classdpp_1_1voiceconn.html#ae8751945fb4ef1938e4b45f119aa49c3">More...</a><br /></td></tr>
 <tr class="separator:ae8751945fb4ef1938e4b45f119aa49c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b4745343840f96e585ece0456bd831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1voiceconn.html">voiceconn</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1voiceconn.html#a05b4745343840f96e585ece0456bd831">disconnect</a> ()</td></tr>
 <tr class="memdesc:a05b4745343840f96e585ece0456bd831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the currently connected voice channel.  <a href="classdpp_1_1voiceconn.html#a05b4745343840f96e585ece0456bd831">More...</a><br /></td></tr>
@@ -262,7 +262,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create websocket object and connect it. Needs hosname, token and session_id to be set or does nothing. </p>
+<p>Create websocket object and connect it. Needs hostname, token and session_id to be set or does nothing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to connect to the voice channel on </td></tr>
@@ -270,6 +270,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference to self </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It can spawn a thread to establish the connection, so this is NOT a synchronous blocking call! You shouldn't call this directly. Use a wrapper function instead. e.g. <a class="el" href="classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e" title="Connect to a voice channel another guild member is in.">dpp::guild::connect_member_voice</a> </dd></dl>
 
 </div>
 </div>
