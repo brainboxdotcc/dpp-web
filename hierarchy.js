@@ -12,7 +12,6 @@ var hierarchy =
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
-    [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
@@ -27,7 +26,9 @@ var hierarchy =
     ] ],
     [ "dpp::command_data_option", "structdpp_1_1command__data__option.html", null ],
     [ "dpp::command_info_t", "structdpp_1_1command__info__t.html", null ],
-    [ "dpp::command_interaction", "structdpp_1_1command__interaction.html", null ],
+    [ "dpp::command_interaction", "structdpp_1_1command__interaction.html", [
+      [ "dpp::autocomplete_interaction", "structdpp_1_1autocomplete__interaction.html", null ]
+    ] ],
     [ "dpp::command_resolved", "structdpp_1_1command__resolved.html", null ],
     [ "dpp::command_source", "structdpp_1_1command__source.html", null ],
     [ "dpp::commandhandler", "classdpp_1_1commandhandler.html", null ],
