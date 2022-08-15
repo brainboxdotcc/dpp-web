@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"functions_vars_o.html":[8,3,2,14],
+"functions_vars_p.html":[8,3,2,15],
 "functions_vars_r.html":[8,3,2,16],
 "functions_vars_s.html":[8,3,2,17],
 "functions_vars_t.html":[8,3,2,18],
@@ -9,8 +11,8 @@ var NAVTREEINDEX15 =
 "functions_w.html":[8,3,0,22],
 "functions_~.html":[8,3,0,23],
 "hierarchy.html":[8,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md93":[0,0],
 "index.html#autotoc_md94":[0,1],
 "index.html#autotoc_md95":[0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba":[7,0,0,216],
 "namespacedpp.html#a408d79969007e9c450e186f5387df9e5":[7,0,0,260],
 "namespacedpp.html#a44d4dd39b5d7c24c5fe97a76a73cf708":[7,0,0,236],
-"namespacedpp.html#a45736823a51be6eb7910f036b30397b2":[7,0,0,244],
-"namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e":[7,0,0,224],
-"namespacedpp.html#a47f79e1142def583c59df70b1382319f":[7,0,0,288]
+"namespacedpp.html#a45736823a51be6eb7910f036b30397b2":[7,0,0,244]
 };

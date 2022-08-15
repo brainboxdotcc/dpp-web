@@ -61,6 +61,7 @@ var classdpp_1_1discord__client =
     [ "protocol", "classdpp_1_1discord__client.html#afde2bb2612e474fbfda2d7312e2bc5e7", null ],
     [ "ready", "classdpp_1_1discord__client.html#a03ffb74d2fa81b0e6f0864848151fa90", null ],
     [ "reconnects", "classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf", null ],
+    [ "resume_gateway_url", "classdpp_1_1discord__client.html#afcf709e96bb43c26953eabb2ac0227fd", null ],
     [ "resumes", "classdpp_1_1discord__client.html#a575bb766c7c9e8ea510392265c0abba6", null ],
     [ "sessionid", "classdpp_1_1discord__client.html#a66922f8fbb2df8c1c92744f4eb524a52", null ],
     [ "sfd", "classdpp_1_1discord__client.html#a423ca70d4046067ebe219f85c7baa540", null ],
