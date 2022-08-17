@@ -7,7 +7,7 @@
     <includes local="no">message.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1sticker__pack_1a0eda149feeaa0abeba5842f4d8c18e46" prot="public" static="no" mutable="no">
-        <type>std::map&lt; <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
+        <type>std::map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
         <definition>std::map&lt;snowflake, sticker&gt; dpp::sticker_pack::stickers</definition>
         <argsstring></argsstring>
         <name>stickers</name>
@@ -35,7 +35,7 @@
         <location file="include/dpp/message.h" line="907" column="13" bodyfile="include/dpp/message.h" bodystart="907" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1sticker__pack_1ac9ee077be2df50175a2e9b9c99ec35d3" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::sticker_pack::sku_id</definition>
         <argsstring></argsstring>
         <name>sku_id</name>
@@ -49,7 +49,7 @@
         <location file="include/dpp/message.h" line="909" column="13" bodyfile="include/dpp/message.h" bodystart="909" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1sticker__pack_1a49377b72f118dc19514f165d344a83d7" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::sticker_pack::cover_sticker_id</definition>
         <argsstring></argsstring>
         <name>cover_sticker_id</name>
@@ -77,7 +77,7 @@
         <location file="include/dpp/message.h" line="913" column="13" bodyfile="include/dpp/message.h" bodystart="913" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1sticker__pack_1a1f2430ab0a0bebabe48954017ef4a003" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::sticker_pack::banner_asset_id</definition>
         <argsstring></argsstring>
         <name>banner_asset_id</name>
@@ -91,7 +91,7 @@
         <location file="include/dpp/message.h" line="915" column="13" bodyfile="include/dpp/message.h" bodystart="915" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::managed::id</definition>
         <argsstring></argsstring>
         <name>id</name>
@@ -306,7 +306,7 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5">
+      <node id="6">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
@@ -317,17 +317,24 @@
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
+      <node id="3">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
       <node id="1">
         <label>dpp::sticker_pack</label>
         <link refid="structdpp_1_1sticker__pack"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>stickers</edgelabel>
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
         <childnode refid="7" relation="usage">
+          <edgelabel>stickers</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
           <edgelabel>description</edgelabel>
           <edgelabel>name</edgelabel>
         </childnode>
@@ -337,25 +344,25 @@
           <edgelabel>sku_id</edgelabel>
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>dpp::json_interface&lt; sticker_pack &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="5" relation="template-instance">
+        <childnode refid="6" relation="template-instance">
           <edgelabel>&lt; sticker_pack &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="6">
+      <node id="7">
         <label>map&lt;</label>
       </node>
-      <node id="7">
+      <node id="8">
         <label>std::string</label>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>

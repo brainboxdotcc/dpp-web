@@ -5,7 +5,7 @@
     <includes local="no">auditlog.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1audit__entry_1ae52ad0499e9492694af8bfc66de01255" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::audit_entry::id</definition>
         <argsstring></argsstring>
         <name>id</name>
@@ -19,7 +19,7 @@
         <location file="include/dpp/auditlog.h" line="175" column="10" bodyfile="include/dpp/auditlog.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1audit__entry_1a0b6fcc890dfd0e55e68c39d2f88d268b" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::audit_entry::target_id</definition>
         <argsstring></argsstring>
         <name>target_id</name>
@@ -49,7 +49,7 @@
         <location file="include/dpp/auditlog.h" line="181" column="12" bodyfile="include/dpp/auditlog.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1audit__entry_1a4c44d24615548cc33303082104b24b05" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::audit_entry::user_id</definition>
         <argsstring></argsstring>
         <name>user_id</name>
@@ -111,7 +111,7 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="4">
+      <node id="5">
         <label>audit_type</label>
       </node>
       <node id="1">
@@ -122,34 +122,41 @@
           <edgelabel>target_id</edgelabel>
           <edgelabel>user_id</edgelabel>
         </childnode>
-        <childnode refid="3" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>changes</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="5" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>extra</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>reason</edgelabel>
         </childnode>
       </node>
-      <node id="7">
-        <label>std::basic_string&lt; Char &gt;</label>
-      </node>
-      <node id="5">
-        <label>optional&lt;</label>
-      </node>
-      <node id="6">
-        <label>std::string</label>
-        <childnode refid="7" relation="public-inheritance">
+      <node id="2">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
         </childnode>
       </node>
-      <node id="3">
+      <node id="8">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="6">
+        <label>optional&lt;</label>
+      </node>
+      <node id="7">
+        <label>std::string</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
         <label>vector&lt;</label>
       </node>
-      <node id="2">
+      <node id="3">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>

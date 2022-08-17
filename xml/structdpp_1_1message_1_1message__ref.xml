@@ -5,7 +5,7 @@
     <includes local="no">message.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1a0f2a2c6c106eea456bfc14ab354faa02" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::message::message_ref::message_id</definition>
         <argsstring></argsstring>
         <name>message_id</name>
@@ -19,7 +19,7 @@
         <location file="include/dpp/message.h" line="1162" column="11" bodyfile="include/dpp/message.h" bodystart="1162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1ad00fb23855b0cfd3210e6211efc5be4f" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::message::message_ref::channel_id</definition>
         <argsstring></argsstring>
         <name>channel_id</name>
@@ -33,7 +33,7 @@
         <location file="include/dpp/message.h" line="1164" column="11" bodyfile="include/dpp/message.h" bodystart="1164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1message_1_1message__ref_1a37a6962e6a12721f65c3e7226aecd77b" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::message::message_ref::guild_id</definition>
         <argsstring></argsstring>
         <name>guild_id</name>
@@ -67,7 +67,7 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="3">
+      <node id="4">
         <label>bool</label>
       </node>
       <node id="1">
@@ -78,11 +78,18 @@
           <edgelabel>guild_id</edgelabel>
           <edgelabel>message_id</edgelabel>
         </childnode>
-        <childnode refid="3" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>fail_if_not_exists</edgelabel>
         </childnode>
       </node>
       <node id="2">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>

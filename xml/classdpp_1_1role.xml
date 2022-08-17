@@ -21,7 +21,7 @@
         <location file="include/dpp/role.h" line="53" column="13" bodyfile="include/dpp/role.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1role_1ab831d734d6cfe3a88c54bb91b0f578ea" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::role::guild_id</definition>
         <argsstring></argsstring>
         <name>guild_id</name>
@@ -91,7 +91,7 @@
         <location file="include/dpp/role.h" line="69" column="9" bodyfile="include/dpp/role.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1role_1aa44718ae47c00bcf2008366218646572" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::role::integration_id</definition>
         <argsstring></argsstring>
         <name>integration_id</name>
@@ -105,7 +105,7 @@
         <location file="include/dpp/role.h" line="71" column="11" bodyfile="include/dpp/role.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1role_1ada5cb5675b012b2cf55d285d5b233df3" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::role::bot_id</definition>
         <argsstring></argsstring>
         <name>bot_id</name>
@@ -161,7 +161,7 @@
         <location file="include/dpp/role.h" line="79" column="13" bodyfile="include/dpp/role.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::managed::id</definition>
         <argsstring></argsstring>
         <name>id</name>
@@ -343,7 +343,7 @@
         <argsstring>(snowflake i)</argsstring>
         <name>set_integration_id</name>
         <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>i</declname>
         </param>
         <briefdescription>
@@ -373,7 +373,7 @@
         <argsstring>(snowflake b)</argsstring>
         <name>set_bot_id</name>
         <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>b</declname>
         </param>
         <briefdescription>
@@ -403,7 +403,7 @@
         <argsstring>(snowflake gid)</argsstring>
         <name>set_guild_id</name>
         <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>gid</declname>
         </param>
         <briefdescription>
@@ -463,7 +463,7 @@
         <argsstring>(snowflake guild_id, nlohmann::json *j)</argsstring>
         <name>fill_from_json</name>
         <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>guild_id</declname>
         </param>
         <param>
@@ -1581,7 +1581,7 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5">
+      <node id="6">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
@@ -1592,10 +1592,10 @@
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>dpp::permission</label>
         <link refid="classdpp_1_1permission"/>
-        <childnode refid="3" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
@@ -1604,9 +1604,9 @@
         <link refid="classdpp_1_1role"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>image_data</edgelabel>
           <edgelabel>name</edgelabel>
           <edgelabel>unicode_emoji</edgelabel>
@@ -1616,50 +1616,57 @@
           <edgelabel>guild_id</edgelabel>
           <edgelabel>integration_id</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>colour</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>flags</edgelabel>
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>permissions</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>icon</edgelabel>
         </childnode>
       </node>
-      <node id="11">
+      <node id="3">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
         <label>dpp::utility::iconhash</label>
         <link refid="structdpp_1_1utility_1_1iconhash"/>
-        <childnode refid="3" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>first</edgelabel>
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>dpp::json_interface&lt; role &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="5" relation="template-instance">
+        <childnode refid="6" relation="template-instance">
           <edgelabel>&lt; role &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="6">
+      <node id="7">
         <label>std::string</label>
-        <childnode refid="7" relation="public-inheritance">
+        <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>uint32_t</label>
       </node>
-      <node id="3">
+      <node id="4">
         <label>uint64_t</label>
       </node>
-      <node id="9">
+      <node id="10">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>

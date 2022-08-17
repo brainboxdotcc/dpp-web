@@ -59,7 +59,7 @@ var searchData=
   ['get_5fcontainer_56',['get_container',['../classdpp_1_1cache.html#ab7647df5af8f7bf01826bf650b157aa4',1,'dpp::cache']]],
   ['get_5fcontent_57',['get_content',['../classdpp_1_1https__client.html#affac629e0843afcdc9a77351a550d6be',1,'dpp::https_client']]],
   ['get_5fcover_5fimage_5furl_58',['get_cover_image_url',['../classdpp_1_1application.html#adf128cc9b4b0656acbbbb93984b4e506',1,'dpp::application']]],
-  ['get_5fcreation_5ftime_59',['get_creation_time',['../classdpp_1_1managed.html#aa66e351fb6573a9d262ffdb2f47681b7',1,'dpp::managed']]],
+  ['get_5fcreation_5ftime_59',['get_creation_time',['../classdpp_1_1managed.html#aa66e351fb6573a9d262ffdb2f47681b7',1,'dpp::managed::get_creation_time()'],['../classdpp_1_1snowflake.html#a6c066cdd0d18ebdf97a9f7ca3837b307',1,'dpp::snowflake::get_creation_time()']]],
   ['get_5fdecompressed_5fbytes_5fin_60',['get_decompressed_bytes_in',['../classdpp_1_1discord__client.html#ade85ebcbf1a24079511436d504940fcf',1,'dpp::discord_client']]],
   ['get_5fdiscovery_5fsplash_5furl_61',['get_discovery_splash_url',['../classdpp_1_1guild.html#ad475897bedffe54fa204d4d70559ba64',1,'dpp::guild']]],
   ['get_5fdm_5fchannel_62',['get_dm_channel',['../classdpp_1_1cluster.html#ae6164d5543b7594731a980da9b0b2088',1,'dpp::cluster']]],

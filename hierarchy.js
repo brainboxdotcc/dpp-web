@@ -210,6 +210,7 @@ var hierarchy =
     [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
     [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ],
+    [ "std::hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", null ],
     [ "dpp::http_connect_info", "structdpp_1_1http__connect__info.html", null ],
     [ "dpp::http_request", "classdpp_1_1http__request.html", null ],
     [ "dpp::http_request_completion_t", "structdpp_1_1http__request__completion__t.html", null ],
@@ -357,6 +358,7 @@ var hierarchy =
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
     [ "dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t", "structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html", null ],
+    [ "dpp::snowflake", "classdpp_1_1snowflake.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
       [ "dpp::https_client", "classdpp_1_1https__client.html", null ],
       [ "dpp::websocket_client", "classdpp_1_1websocket__client.html", [

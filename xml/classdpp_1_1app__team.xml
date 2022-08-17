@@ -19,7 +19,7 @@
         <location file="include/dpp/application.h" line="90" column="18" bodyfile="include/dpp/application.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1app__team_1abdf2db17660f1fece856c5714b60bc5b" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::app_team::id</definition>
         <argsstring></argsstring>
         <name>id</name>
@@ -61,7 +61,7 @@
         <location file="include/dpp/application.h" line="93" column="12" bodyfile="include/dpp/application.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1app__team_1aa8e196c3e03a80cab577c39ee446a98e" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::app_team::owner_user_id</definition>
         <argsstring></argsstring>
         <name>owner_user_id</name>
@@ -87,15 +87,22 @@
         <childnode refid="2" relation="usage">
           <edgelabel>icon</edgelabel>
         </childnode>
-        <childnode refid="3" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>id</edgelabel>
           <edgelabel>owner_user_id</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
-        <childnode refid="5" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -106,15 +113,15 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="5">
+      <node id="6">
         <label>std::string</label>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>vector&lt;</label>
       </node>
       <node id="3">

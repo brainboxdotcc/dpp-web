@@ -228,6 +228,7 @@ var annotated_dup =
       [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
       [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
       [ "slashcommand_t", "structdpp_1_1slashcommand__t.html", "structdpp_1_1slashcommand__t" ],
+      [ "snowflake", "classdpp_1_1snowflake.html", "classdpp_1_1snowflake" ],
       [ "ssl_client", "classdpp_1_1ssl__client.html", "classdpp_1_1ssl__client" ],
       [ "stage_instance", "structdpp_1_1stage__instance.html", "structdpp_1_1stage__instance" ],
       [ "stage_instance_create_t", "structdpp_1_1stage__instance__create__t.html", "structdpp_1_1stage__instance__create__t" ],
@@ -274,5 +275,8 @@ var annotated_dup =
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
       [ "welcome_channel_t", "structdpp_1_1welcome__channel__t.html", "structdpp_1_1welcome__channel__t" ],
       [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ]
+    ] ],
+    [ "std", null, [
+      [ "hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4" ]
     ] ]
 ];

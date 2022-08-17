@@ -21,7 +21,7 @@
         <location file="include/dpp/webhook.h" line="45" column="9" bodyfile="include/dpp/webhook.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1webhook_1aeb4a3c383260167ef6a05fe2e31f2e75" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::webhook::guild_id</definition>
         <argsstring></argsstring>
         <name>guild_id</name>
@@ -35,7 +35,7 @@
         <location file="include/dpp/webhook.h" line="46" column="11" bodyfile="include/dpp/webhook.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1webhook_1ae553e70e26e0062648d0280aa74eaed0" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::webhook::channel_id</definition>
         <argsstring></argsstring>
         <name>channel_id</name>
@@ -49,7 +49,7 @@
         <location file="include/dpp/webhook.h" line="47" column="11" bodyfile="include/dpp/webhook.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1webhook_1ad83876476eeaec943e4abf3411dfb840" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::webhook::user_id</definition>
         <argsstring></argsstring>
         <name>user_id</name>
@@ -105,7 +105,7 @@
         <location file="include/dpp/webhook.h" line="51" column="13" bodyfile="include/dpp/webhook.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1webhook_1af37345950a45e0b0b15b345625f26c85" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::webhook::application_id</definition>
         <argsstring></argsstring>
         <name>application_id</name>
@@ -133,7 +133,7 @@
         <location file="include/dpp/webhook.h" line="53" column="13" bodyfile="include/dpp/webhook.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::managed::id</definition>
         <argsstring></argsstring>
         <name>id</name>
@@ -196,7 +196,7 @@
         <argsstring>(const snowflake webhook_id, const std::string &amp;webhook_token)</argsstring>
         <name>webhook</name>
         <param>
-          <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>webhook_id</declname>
         </param>
         <param>
@@ -483,7 +483,7 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5">
+      <node id="6">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
@@ -494,14 +494,21 @@
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
+      <node id="3">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
       <node id="1">
         <label>dpp::webhook</label>
         <link refid="classdpp_1_1webhook"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
@@ -510,32 +517,32 @@
           <edgelabel>guild_id</edgelabel>
           <edgelabel>user_id</edgelabel>
         </childnode>
-        <childnode refid="7" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>avatar</edgelabel>
           <edgelabel>image_data</edgelabel>
           <edgelabel>name</edgelabel>
           <edgelabel>token</edgelabel>
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>dpp::json_interface&lt; webhook &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="5" relation="template-instance">
+        <childnode refid="6" relation="template-instance">
           <edgelabel>&lt; webhook &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="7">
+      <node id="8">
         <label>std::string</label>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>uint64_t</label>
       </node>
-      <node id="6">
+      <node id="7">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>

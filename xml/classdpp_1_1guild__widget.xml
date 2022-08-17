@@ -5,7 +5,7 @@
     <includes local="no">guild.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1guild__widget_1aef9e534b3727d4a2b972e3fd64c54e29" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::guild_widget::channel_id</definition>
         <argsstring></argsstring>
         <name>channel_id</name>
@@ -116,7 +116,7 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="3">
+      <node id="4">
         <label>bool</label>
       </node>
       <node id="1">
@@ -125,11 +125,18 @@
         <childnode refid="2" relation="usage">
           <edgelabel>channel_id</edgelabel>
         </childnode>
-        <childnode refid="3" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>enabled</edgelabel>
         </childnode>
       </node>
       <node id="2">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>

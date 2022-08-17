@@ -34,7 +34,7 @@
         <location file="include/dpp/invite.h" line="41" column="8" bodyfile="include/dpp/invite.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1a3adbf1eb0e895b46bee120a1d4c24ab0" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::invite::guild_id</definition>
         <argsstring></argsstring>
         <name>guild_id</name>
@@ -48,7 +48,7 @@
         <location file="include/dpp/invite.h" line="44" column="11" bodyfile="include/dpp/invite.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1aedc01d96281305a15b3d23a994927a5c" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::invite::channel_id</definition>
         <argsstring></argsstring>
         <name>channel_id</name>
@@ -62,7 +62,7 @@
         <location file="include/dpp/invite.h" line="47" column="11" bodyfile="include/dpp/invite.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1a6142074754432a855a7e37d731a52f88" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::invite::inviter_id</definition>
         <argsstring></argsstring>
         <name>inviter_id</name>
@@ -76,7 +76,7 @@
         <location file="include/dpp/invite.h" line="50" column="11" bodyfile="include/dpp/invite.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1invite_1ad9a3073a99b276032dce0e850b21a955" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::invite::target_user_id</definition>
         <argsstring></argsstring>
         <name>target_user_id</name>
@@ -335,7 +335,7 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="10">
+      <node id="11">
         <label>bool</label>
       </node>
       <node id="1">
@@ -355,21 +355,21 @@
           <edgelabel>inviter_id</edgelabel>
           <edgelabel>target_user_id</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>target_user_type</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>approximate_member_count</edgelabel>
           <edgelabel>approximate_presence_count</edgelabel>
           <edgelabel>max_age</edgelabel>
           <edgelabel>max_uses</edgelabel>
           <edgelabel>uses</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>temporary</edgelabel>
           <edgelabel>unique</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>stage</edgelabel>
         </childnode>
       </node>
@@ -377,19 +377,26 @@
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
-      <node id="12">
+      <node id="13">
         <label>dpp::managed</label>
         <link refid="classdpp_1_1managed"/>
         <childnode refid="7" relation="usage">
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
-      <node id="11">
+      <node id="7">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
         <label>dpp::stage_instance</label>
         <link refid="structdpp_1_1stage__instance"/>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
         <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
         </childnode>
         <childnode refid="7" relation="usage">
           <edgelabel>channel_id</edgelabel>
@@ -398,10 +405,10 @@
         <childnode refid="4" relation="usage">
           <edgelabel>topic</edgelabel>
         </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>privacy_level</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>discoverable_disabled</edgelabel>
         </childnode>
       </node>
@@ -412,14 +419,14 @@
           <edgelabel>&lt; invite &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>dpp::json_interface&lt; stage_instance &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
         <childnode refid="3" relation="template-instance">
           <edgelabel>&lt; stage_instance &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>stage_privacy_level</label>
       </node>
       <node id="5">
@@ -433,13 +440,13 @@
       <node id="6">
         <label>time_t</label>
       </node>
-      <node id="9">
+      <node id="10">
         <label>uint32_t</label>
       </node>
-      <node id="7">
+      <node id="8">
         <label>uint64_t</label>
       </node>
-      <node id="8">
+      <node id="9">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>

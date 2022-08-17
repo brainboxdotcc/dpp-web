@@ -7,7 +7,7 @@
     <includes local="no">appcommand.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1slashcommand_1a68823472ad357bc69759212f6ebe1a82" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::slashcommand::application_id</definition>
         <argsstring></argsstring>
         <name>application_id</name>
@@ -109,7 +109,7 @@
         <location file="include/dpp/appcommand.h" line="864" column="13" bodyfile="include/dpp/appcommand.h" bodystart="864" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1slashcommand_1a945310d52b555f3d04b13ca04bd532b4" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::slashcommand::version</definition>
         <argsstring></argsstring>
         <name>version</name>
@@ -182,7 +182,7 @@
         <location file="include/dpp/appcommand.h" line="893" column="6" bodyfile="include/dpp/appcommand.h" bodystart="893" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::managed::id</definition>
         <argsstring></argsstring>
         <name>id</name>
@@ -225,7 +225,7 @@
           <declname>_description</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">dpp::snowflake</ref></type>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref></type>
           <declname>_application_id</declname>
         </param>
         <briefdescription>
@@ -527,7 +527,7 @@
         <argsstring>(snowflake i)</argsstring>
         <name>set_application_id</name>
         <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>i</declname>
         </param>
         <briefdescription>
@@ -775,10 +775,10 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="10">
+      <node id="11">
         <label>bool</label>
       </node>
-      <node id="5">
+      <node id="6">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
       </node>
@@ -789,10 +789,10 @@
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>dpp::permission</label>
         <link refid="classdpp_1_1permission"/>
-        <childnode refid="3" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
@@ -801,60 +801,67 @@
         <link refid="classdpp_1_1slashcommand"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>application_id</edgelabel>
           <edgelabel>version</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="7" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>description</edgelabel>
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>options</edgelabel>
           <edgelabel>permissions</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>default_permission</edgelabel>
           <edgelabel>dm_permission</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>description_localizations</edgelabel>
           <edgelabel>name_localizations</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>default_member_permissions</edgelabel>
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
         <label>dpp::json_interface&lt; slashcommand &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
-        <childnode refid="5" relation="template-instance">
+        <childnode refid="6" relation="template-instance">
           <edgelabel>&lt; slashcommand &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>slashcommand_contextmenu_type</label>
       </node>
-      <node id="8">
+      <node id="9">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>map&lt;</label>
       </node>
-      <node id="7">
+      <node id="8">
         <label>std::string</label>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>vector&lt;</label>
       </node>
-      <node id="3">
+      <node id="4">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>

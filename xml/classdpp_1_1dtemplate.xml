@@ -62,7 +62,7 @@
         <location file="include/dpp/dtemplate.h" line="50" column="10" bodyfile="include/dpp/dtemplate.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1dtemplate_1a88f8fea4271892bcf825fda8fbe3dba8" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::dtemplate::creator_id</definition>
         <argsstring></argsstring>
         <name>creator_id</name>
@@ -104,7 +104,7 @@
         <location file="include/dpp/dtemplate.h" line="63" column="8" bodyfile="include/dpp/dtemplate.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1dtemplate_1a4ec6536f11f56d2cb001dc76e9bd9ceb" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::dtemplate::source_guild_id</definition>
         <argsstring></argsstring>
         <name>source_guild_id</name>
@@ -248,7 +248,7 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9">
+      <node id="10">
         <label>bool</label>
       </node>
       <node id="1">
@@ -268,17 +268,24 @@
           <edgelabel>creator_id</edgelabel>
           <edgelabel>source_guild_id</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>created_at</edgelabel>
           <edgelabel>updated_at</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>is_dirty</edgelabel>
         </childnode>
       </node>
       <node id="3">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="7">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
       </node>
       <node id="2">
         <label>dpp::json_interface&lt; dtemplate &gt;</label>
@@ -295,13 +302,13 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>time_t</label>
       </node>
       <node id="6">
         <label>uint32_t</label>
       </node>
-      <node id="7">
+      <node id="8">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>

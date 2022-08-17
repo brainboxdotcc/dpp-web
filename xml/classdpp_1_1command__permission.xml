@@ -6,7 +6,7 @@
     <includes local="no">appcommand.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1command__permission_1aa26cdca3e946fc0af7d4267355283d50" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::command_permission::id</definition>
         <argsstring></argsstring>
         <name>id</name>
@@ -82,7 +82,7 @@
         <argsstring>(snowflake id, const command_permission_type t, bool permission)</argsstring>
         <name>command_permission</name>
         <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>id</declname>
         </param>
         <param>
@@ -215,10 +215,10 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6">
+      <node id="7">
         <label>bool</label>
       </node>
-      <node id="5">
+      <node id="6">
         <label>command_permission_type</label>
       </node>
       <node id="1">
@@ -229,16 +229,23 @@
         <childnode refid="4" relation="usage">
           <edgelabel>id</edgelabel>
         </childnode>
-        <childnode refid="5" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>permission</edgelabel>
         </childnode>
       </node>
       <node id="3">
         <label>dpp::json_interface&lt; T &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="4">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
       </node>
       <node id="2">
         <label>dpp::json_interface&lt; command_permission &gt;</label>
@@ -247,7 +254,7 @@
           <edgelabel>&lt; command_permission &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>uint64_t</label>
       </node>
     </collaborationgraph>

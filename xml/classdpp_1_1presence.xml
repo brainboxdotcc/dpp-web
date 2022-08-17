@@ -6,7 +6,7 @@
     <includes local="no">presence.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdpp_1_1presence_1ad8c02207b48c891d1d98949f86c5b312" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::presence::user_id</definition>
         <argsstring></argsstring>
         <name>user_id</name>
@@ -20,7 +20,7 @@
         <location file="include/dpp/presence.h" line="309" column="10" bodyfile="include/dpp/presence.h" bodystart="309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1presence_1a7f015f7eabc016a1f5567ccbbf80db0d" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::presence::guild_id</definition>
         <argsstring></argsstring>
         <name>guild_id</name>
@@ -348,11 +348,18 @@
           <edgelabel>guild_id</edgelabel>
           <edgelabel>user_id</edgelabel>
         </childnode>
-        <childnode refid="5" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>activities</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -362,13 +369,13 @@
           <edgelabel>&lt; presence &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>vector&lt;</label>
       </node>
-      <node id="4">
+      <node id="5">
         <label>uint64_t</label>
       </node>
-      <node id="5">
+      <node id="6">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>

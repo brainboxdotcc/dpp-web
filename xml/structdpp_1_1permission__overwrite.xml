@@ -5,7 +5,7 @@
     <includes local="no">channel.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1permission__overwrite_1a802c7e289221f1609c8ce90b0afb6ac2" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
         <definition>snowflake dpp::permission_overwrite::id</definition>
         <argsstring></argsstring>
         <name>id</name>
@@ -82,7 +82,7 @@
         <argsstring>(snowflake id, uint64_t allow, uint64_t deny, overwrite_type type)</argsstring>
         <name>permission_overwrite</name>
         <param>
-          <type><ref refid="namespacedpp_1a0dec2a52b080906aebfd3e1b3db02475" kindref="member">snowflake</ref></type>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>id</declname>
         </param>
         <param>
@@ -147,10 +147,10 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="3">
+      <node id="4">
         <label>dpp::permission</label>
         <link refid="classdpp_1_1permission"/>
-        <childnode refid="2" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
@@ -160,18 +160,25 @@
         <childnode refid="2" relation="usage">
           <edgelabel>id</edgelabel>
         </childnode>
-        <childnode refid="3" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>allow</edgelabel>
           <edgelabel>deny</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
       </node>
       <node id="2">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
         <label>uint64_t</label>
       </node>
-      <node id="4">
+      <node id="5">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
