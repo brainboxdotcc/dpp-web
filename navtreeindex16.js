@@ -1,12 +1,14 @@
 var NAVTREEINDEX16 =
 {
+"classdpp_1_1websocket__client.html#aee1812f852a44ee1dc00e66477ffbfab":[8,0,0,205,3],
+"classdpp_1_1websocket__client.html#af199b9a67d71397879d85c69f680a61a":[7,0,0,207,1],
 "classdpp_1_1websocket__client.html#af199b9a67d71397879d85c69f680a61a":[8,0,0,205,1],
-"classdpp_1_1websocket__client.html#afa5d5654ce0b631d07045088ef347418":[8,0,0,205,5],
 "classdpp_1_1websocket__client.html#afa5d5654ce0b631d07045088ef347418":[7,0,0,207,5],
+"classdpp_1_1websocket__client.html#afa5d5654ce0b631d07045088ef347418":[8,0,0,205,5],
 "classdpp_1_1websocket__client.html#afa81c27a0b2fc2d68b3939e102bf2cbf":[7,0,0,207,22],
 "classdpp_1_1websocket__client.html#afa81c27a0b2fc2d68b3939e102bf2cbf":[8,0,0,205,22],
-"classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b":[7,0,0,207,0],
 "classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b":[8,0,0,205,0],
+"classdpp_1_1websocket__client.html#afb654507dbe469ad4f0f3f242769692b":[7,0,0,207,0],
 "classes.html":[8,1],
 "clusters-shards-guilds.html":[5,0],
 "coding-standards.html":[5,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0":[7,0,0,324],
 "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0aa051294204db430ee0ec49c4bbd6be7a":[7,0,0,324,0],
 "namespacedpp.html#a20f1f69fbf5558149824584aeab4ecc0acc388c1bea88aabf998bae9889bdf354":[7,0,0,324,1],
-"namespacedpp.html#a219aedbe5bf37835c4a65115fccba278":[7,0,0,229],
-"namespacedpp.html#a2345d59ec5b1bbd3b61694965f5e020e":[7,0,0,351],
-"namespacedpp.html#a239ce3fb8b4d9873dffeb5cb9b249f5d":[7,0,0,336]
+"namespacedpp.html#a219aedbe5bf37835c4a65115fccba278":[7,0,0,229]
 };
