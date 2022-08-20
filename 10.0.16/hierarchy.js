@@ -12,6 +12,7 @@ var hierarchy =
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
+    [ "dpp::awaitable< T >", "structdpp_1_1awaitable.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
@@ -353,6 +354,7 @@ var hierarchy =
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission", "classdpp_1_1permission.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
+    [ "dpp::promise", "structdpp_1_1promise.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
@@ -364,6 +366,7 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
+    [ "dpp::task", "structdpp_1_1task.html", null ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],

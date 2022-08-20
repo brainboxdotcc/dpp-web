@@ -24,7 +24,7 @@ var searchData=
   ['add_5frow_21',['add_row',['../structdpp_1_1interaction__modal__response.html#a64e2352d62d7e4a54f3171d5e3024830',1,'dpp::interaction_modal_response']]],
   ['add_5fselect_5foption_22',['add_select_option',['../classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243',1,'dpp::component']]],
   ['application_23',['application',['../classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044',1,'dpp::application']]],
-  ['attach_24',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
+  ['attach_24',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t::attach(std::function&lt; void(const T &amp;)&gt; func)'],['../classdpp_1_1event__router__t.html#a02d0066788552b191413d201d2ef5997',1,'dpp::event_router_t::attach(std::function&lt; dpp::task(const T &amp;)&gt; func)']]],
   ['attachment_25',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
   ['auditlog_26',['auditlog',['../classdpp_1_1auditlog.html#a1846ff8bb9925a207d1465789996020f',1,'dpp::auditlog']]],
   ['autocomplete_5ft_27',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]],
@@ -44,5 +44,9 @@ var searchData=
   ['automod_5frule_5fupdate_5ft_41',['automod_rule_update_t',['../structdpp_1_1automod__rule__update__t.html#a2e8f10ec04006d1b992a3a34aa0abcc5',1,'dpp::automod_rule_update_t']]],
   ['automod_5frules_5fget_42',['automod_rules_get',['../classdpp_1_1cluster.html#af88b9b913287a87b2d69cf26ebcf6394',1,'dpp::cluster']]],
   ['automod_5frules_5fget_5fsync_43',['automod_rules_get_sync',['../classdpp_1_1cluster.html#aac149559dd761ce056088787ed177d13',1,'dpp::cluster']]],
-  ['avatar_5fsize_44',['avatar_size',['../namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc',1,'dpp::utility']]]
+  ['avatar_5fsize_44',['avatar_size',['../namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc',1,'dpp::utility']]],
+  ['await_5fready_45',['await_ready',['../structdpp_1_1awaitable.html#a8979bd87023b643a023823b07a973640',1,'dpp::awaitable']]],
+  ['await_5fresume_46',['await_resume',['../structdpp_1_1awaitable.html#af63e82f01c9d79bd1f442a0780281f68',1,'dpp::awaitable']]],
+  ['await_5fsuspend_47',['await_suspend',['../structdpp_1_1awaitable.html#ac5592ff1e76d87ed6eb48318bfa86a3a',1,'dpp::awaitable']]],
+  ['awaitable_48',['awaitable',['../structdpp_1_1awaitable.html#a4e460170b9be9a970c63e54cf98a92c0',1,'dpp::awaitable']]]
 ];
