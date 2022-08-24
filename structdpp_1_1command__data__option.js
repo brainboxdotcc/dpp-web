@@ -1,5 +1,6 @@
 var structdpp_1_1command__data__option =
 [
+    [ "get_value", "structdpp_1_1command__data__option.html#a497ea357c2b896a7bf08bcd75e981400", null ],
     [ "focused", "structdpp_1_1command__data__option.html#af19a9794fcddefce4f97a8f65a52d53a", null ],
     [ "name", "structdpp_1_1command__data__option.html#a0c3bbf03c956d22fc1ecf677c1476ac7", null ],
     [ "options", "structdpp_1_1command__data__option.html#aa26028641de473d1486d26e8048340b4", null ],
