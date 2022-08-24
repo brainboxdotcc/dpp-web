@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1snowflake.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>A container for a 64 bit unsigned value representing many things on discord. Discord calls the value a 'snowflake' value.  
+<p>A container for a 64 bit unsigned value representing many things on discord. This value is known in distributed computing as a snowflak value.  
  <a href="classdpp_1_1snowflake.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for dpp::snowflake:</div>
@@ -156,6 +156,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c066cdd0d18ebdf97a9f7ca3837b307"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1snowflake.html#a6c066cdd0d18ebdf97a9f7ca3837b307">get_creation_time</a> () const</td></tr>
 <tr class="memdesc:a6c066cdd0d18ebdf97a9f7ca3837b307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the creation time of this snowflake according to Discord.  <a href="classdpp_1_1snowflake.html#a6c066cdd0d18ebdf97a9f7ca3837b307">More...</a><br /></td></tr>
 <tr class="separator:a6c066cdd0d18ebdf97a9f7ca3837b307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c90adba78537b18d999883f0e4027b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1snowflake.html#ac4c90adba78537b18d999883f0e4027b">get_worker_id</a> () const</td></tr>
+<tr class="memdesc:ac4c90adba78537b18d999883f0e4027b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the worker id that produced this snowflake value.  <a href="classdpp_1_1snowflake.html#ac4c90adba78537b18d999883f0e4027b">More...</a><br /></td></tr>
+<tr class="separator:ac4c90adba78537b18d999883f0e4027b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214f6b51b189d1cab1bdd8f479f9c6a8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1snowflake.html#a214f6b51b189d1cab1bdd8f479f9c6a8">get_process_id</a> () const</td></tr>
+<tr class="memdesc:a214f6b51b189d1cab1bdd8f479f9c6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process id that produced this snowflake value.  <a href="classdpp_1_1snowflake.html#a214f6b51b189d1cab1bdd8f479f9c6a8">More...</a><br /></td></tr>
+<tr class="separator:a214f6b51b189d1cab1bdd8f479f9c6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524a53421d78d1c4ab5477dcb0bd1d3a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1snowflake.html#a524a53421d78d1c4ab5477dcb0bd1d3a">get_increment</a> () const</td></tr>
+<tr class="memdesc:a524a53421d78d1c4ab5477dcb0bd1d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the increment, which is incremented for every snowflake created over the one millisecond resolution in the timestamp.  <a href="classdpp_1_1snowflake.html#a524a53421d78d1c4ab5477dcb0bd1d3a">More...</a><br /></td></tr>
+<tr class="separator:a524a53421d78d1c4ab5477dcb0bd1d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -172,7 +181,19 @@ Friends</h2></td></tr>
 <tr class="separator:acd08a4c6ffde4619bbaad03426797d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A container for a 64 bit unsigned value representing many things on discord. Discord calls the value a 'snowflake' value. </p>
+<div class="textblock"><p >A container for a 64 bit unsigned value representing many things on discord. This value is known in distributed computing as a snowflak value. </p>
+<p >Snowflakes are:</p>
+<ul>
+<li>Performant (very fast to generate at source and to compare in code)</li>
+<li>Uncoordinated (allowing high availability across clusters, data centres etc)</li>
+<li>Time ordered (newer snowflakes have higher IDs)</li>
+<li>Directly Sortable (due to time ordering)</li>
+<li>Compact (64 bit numbers, not 128 bit, or string)</li>
+</ul>
+<p >An identical format of snowflake is used by Twitter, Instagram and several other platforms.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://en.wikipedia.org/wiki/Snowflake_ID">https://en.wikipedia.org/wiki/Snowflake_ID</a> </dd>
+<dd>
+<a href="https://github.com/twitter-archive/snowflake/tree/b3f6a3c6ca8e1b6847baa6ff42bf72201e2c2231">https://github.com/twitter-archive/snowflake/tree/b3f6a3c6ca8e1b6847baa6ff42bf72201e2c2231</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0bf1ac1eea215b6bbe20540ed33ce41b" name="a0bf1ac1eea215b6bbe20540ed33ce41b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0bf1ac1eea215b6bbe20540ed33ce41b">&#9670;&nbsp;</a></span>snowflake() <span class="overload">[1/3]</span></h2>
@@ -318,6 +339,66 @@ Friends</h2></td></tr>
 
 <p>Get the creation time of this snowflake according to Discord. </p>
 <dl class="section return"><dt>Returns</dt><dd>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </dd></dl>
+
+</div>
+</div>
+<a id="a524a53421d78d1c4ab5477dcb0bd1d3a" name="a524a53421d78d1c4ab5477dcb0bd1d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a524a53421d78d1c4ab5477dcb0bd1d3a">&#9670;&nbsp;</a></span>get_increment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t dpp::snowflake::get_increment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the increment, which is incremented for every snowflake created over the one millisecond resolution in the timestamp. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t millisecond increment </dd></dl>
+
+</div>
+</div>
+<a id="a214f6b51b189d1cab1bdd8f479f9c6a8" name="a214f6b51b189d1cab1bdd8f479f9c6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a214f6b51b189d1cab1bdd8f479f9c6a8">&#9670;&nbsp;</a></span>get_process_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t dpp::snowflake::get_process_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the process id that produced this snowflake value. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t process id </dd></dl>
+
+</div>
+</div>
+<a id="ac4c90adba78537b18d999883f0e4027b" name="ac4c90adba78537b18d999883f0e4027b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c90adba78537b18d999883f0e4027b">&#9670;&nbsp;</a></span>get_worker_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t dpp::snowflake::get_worker_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the worker id that produced this snowflake value. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t worker id </dd></dl>
 
 </div>
 </div>
