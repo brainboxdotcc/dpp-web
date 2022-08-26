@@ -5,6 +5,7 @@ var structdpp_1_1attachment =
     [ "~attachment", "structdpp_1_1attachment.html#a0911f0f41b456e42ec31615b24042d63", null ],
     [ "download", "structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1", null ],
     [ "content_type", "structdpp_1_1attachment.html#a57c192b2925012e1d06913da80f1bafd", null ],
+    [ "description", "structdpp_1_1attachment.html#a0b7feae87c4a22fcfa660b922f7d6ceb", null ],
     [ "ephemeral", "structdpp_1_1attachment.html#a453d43c1a5bb073038cc2a0890cfdbec", null ],
     [ "filename", "structdpp_1_1attachment.html#a37ae8a828923ad5184133f486241000c", null ],
     [ "height", "structdpp_1_1attachment.html#a448f0ad9591bb19788cd595ace201ce3", null ],
