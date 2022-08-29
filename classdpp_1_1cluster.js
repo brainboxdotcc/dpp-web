@@ -1,6 +1,6 @@
 var classdpp_1_1cluster =
 [
-    [ "cluster", "classdpp_1_1cluster.html#ad8ae8d359f3b61b8f36596f4d130c3ee", null ],
+    [ "cluster", "classdpp_1_1cluster.html#aeff8657c528ce2d97f698054cb9ae493", null ],
     [ "cluster", "classdpp_1_1cluster.html#a6b0b523f89559b4ce204ca9ed9693d79", null ],
     [ "cluster", "classdpp_1_1cluster.html#a2d957f52245734f6d44444af8380c952", null ],
     [ "~cluster", "classdpp_1_1cluster.html#a6e6c0859b49fdb91edb74e6b16a87521", null ],
@@ -464,6 +464,7 @@ var classdpp_1_1cluster =
     [ "roles_get", "classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219", null ],
     [ "roles_get_sync", "classdpp_1_1cluster.html#a4e9bb5386f8edd51c6f8c34653d74ac3", null ],
     [ "set_audit_reason", "classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe", null ],
+    [ "set_default_gateway", "classdpp_1_1cluster.html#af675c512fd018d72b6c96a042acb542f", null ],
     [ "set_dm_channel", "classdpp_1_1cluster.html#a3fc501cc0ebb334d09a7f4bb1ea6b3e6", null ],
     [ "set_presence", "classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9", null ],
     [ "set_websocket_protocol", "classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9", null ],
