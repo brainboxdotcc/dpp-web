@@ -1,6 +1,6 @@
 var classdpp_1_1cluster =
 [
-    [ "cluster", "classdpp_1_1cluster.html#a7f60dc01ae86840b33cc3c144291bdeb", null ],
+    [ "cluster", "classdpp_1_1cluster.html#adb23e5be77f38045ca6ad9b607966f5f", null ],
     [ "cluster", "classdpp_1_1cluster.html#a6b0b523f89559b4ce204ca9ed9693d79", null ],
     [ "cluster", "classdpp_1_1cluster.html#a2d957f52245734f6d44444af8380c952", null ],
     [ "~cluster", "classdpp_1_1cluster.html#a6e6c0859b49fdb91edb74e6b16a87521", null ],
