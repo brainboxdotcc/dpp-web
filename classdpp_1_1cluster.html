@@ -375,7 +375,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac335bec6c58c7161348b521aad154431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a permission from a channel.  <a href="classdpp_1_1cluster.html#ac335bec6c58c7161348b521aad154431">More...</a><br /></td></tr>
 <tr class="separator:ac335bec6c58c7161348b521aad154431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83fa90627b403c4489320b64d6e31c8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a83fa90627b403c4489320b64d6e31c8c">channel_follow_news</a> (const class <a class="el" href="classdpp_1_1channel.html">channel</a> &amp;c, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> target_channel_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
-<tr class="memdesc:a83fa90627b403c4489320b64d6e31c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Follow a news channel.  <a href="classdpp_1_1cluster.html#a83fa90627b403c4489320b64d6e31c8c">More...</a><br /></td></tr>
+<tr class="memdesc:a83fa90627b403c4489320b64d6e31c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Follow an announcement (news) channel.  <a href="classdpp_1_1cluster.html#a83fa90627b403c4489320b64d6e31c8c">More...</a><br /></td></tr>
 <tr class="separator:a83fa90627b403c4489320b64d6e31c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff1ad5764f2878eec2e7cbed3a231bbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aff1ad5764f2878eec2e7cbed3a231bbe">channel_typing</a> (const class <a class="el" href="classdpp_1_1channel.html">channel</a> &amp;c, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
 <tr class="memdesc:aff1ad5764f2878eec2e7cbed3a231bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger channel typing indicator.  <a href="classdpp_1_1cluster.html#aff1ad5764f2878eec2e7cbed3a231bbe">More...</a><br /></td></tr>
@@ -3089,7 +3089,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Follow a news channel. </p>
+<p>Follow an announcement (news) channel. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#follow-news-channel">https://discord.com/developers/docs/resources/channel#follow-news-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3129,7 +3129,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Follow a news channel. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#a83fa90627b403c4489320b64d6e31c8c" title="Follow a news channel.">dpp::cluster::channel_follow_news</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#a83fa90627b403c4489320b64d6e31c8c" title="Follow an announcement (news) channel.">dpp::cluster::channel_follow_news</a> </dd>
 <dd>
 <a href="https://discord.com/developers/docs/resources/channel#follow-news-channel">https://discord.com/developers/docs/resources/channel#follow-news-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -4106,7 +4106,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Follow a news channel. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#a83fa90627b403c4489320b64d6e31c8c" title="Follow a news channel.">dpp::cluster::channel_follow_news</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#a83fa90627b403c4489320b64d6e31c8c" title="Follow an announcement (news) channel.">dpp::cluster::channel_follow_news</a> </dd>
 <dd>
 <a href="https://discord.com/developers/docs/resources/channel#follow-news-channel">https://discord.com/developers/docs/resources/channel#follow-news-channel</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -23501,7 +23501,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
     <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
     <tr><td class="paramname">channel_id</td><td>Channel in which thread to create </td></tr>
     <tr><td class="paramname">auto_archive_duration</td><td>Duration after which thread auto-archives. Can be set to - 60, 1440 (for boosted guilds can also be: 4320, 10080) </td></tr>
-    <tr><td class="paramname">thread_type</td><td>Type of thread - GUILD_PUBLIC_THREAD, GUILD_NEWS_THREAD, GUILD_PRIVATE_THREAD </td></tr>
+    <tr><td class="paramname">thread_type</td><td>Type of thread - CHANNEL_PUBLIC_THREAD, CHANNEL_ANNOUNCEMENT_THREAD, CHANNEL_PRIVATE_THREAD </td></tr>
     <tr><td class="paramname">invitable</td><td>whether non-moderators can add other non-moderators to a thread; only available when creating a private thread </td></tr>
     <tr><td class="paramname">rate_limit_per_user</td><td>amount of seconds a user has to wait before sending another message (0-21600); bots, as well as users with the permission manage_messages, manage_thread, or manage_channel, are unaffected </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1thread.html" title="A definition of a discord thread. A thread is a superset of a channel. Not to be confused with std::t...">dpp::thread</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>

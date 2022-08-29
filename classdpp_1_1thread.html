@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa013c0c3c26e9109488c8e2e83e9e36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new thread object.  <a href="classdpp_1_1thread.html#aa013c0c3c26e9109488c8e2e83e9e36a">More...</a><br /></td></tr>
 <tr class="separator:aa013c0c3c26e9109488c8e2e83e9e36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8a6fdcfef22b3aba9c41020e1811670"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#ab8a6fdcfef22b3aba9c41020e1811670">is_news_thread</a> () const</td></tr>
-<tr class="memdesc:ab8a6fdcfef22b3aba9c41020e1811670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a news thread.  <a href="classdpp_1_1thread.html#ab8a6fdcfef22b3aba9c41020e1811670">More...</a><br /></td></tr>
+<tr class="memdesc:ab8a6fdcfef22b3aba9c41020e1811670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the thread is within an announcement channel.  <a href="classdpp_1_1thread.html#ab8a6fdcfef22b3aba9c41020e1811670">More...</a><br /></td></tr>
 <tr class="separator:ab8a6fdcfef22b3aba9c41020e1811670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e19705c6040c7593eb6a582fa017c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#af7e19705c6040c7593eb6a582fa017c1">is_public_thread</a> () const</td></tr>
 <tr class="memdesc:af7e19705c6040c7593eb6a582fa017c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a public thread.  <a href="classdpp_1_1thread.html#af7e19705c6040c7593eb6a582fa017c1">More...</a><br /></td></tr>
@@ -235,7 +235,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a469a04064c0d9455e8decca30010c0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a forum.  <a href="classdpp_1_1channel.html#a469a04064c0d9455e8decca30010c0b4">More...</a><br /></td></tr>
 <tr class="separator:a469a04064c0d9455e8decca30010c0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb22156c167cb2c334ec3388502fdff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a9fb22156c167cb2c334ec3388502fdff">is_news_channel</a> () const</td></tr>
-<tr class="memdesc:a9fb22156c167cb2c334ec3388502fdff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a news channel.  <a href="classdpp_1_1channel.html#a9fb22156c167cb2c334ec3388502fdff">More...</a><br /></td></tr>
+<tr class="memdesc:a9fb22156c167cb2c334ec3388502fdff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is an announcement channel.  <a href="classdpp_1_1channel.html#a9fb22156c167cb2c334ec3388502fdff">More...</a><br /></td></tr>
 <tr class="separator:a9fb22156c167cb2c334ec3388502fdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04256bb3015b9fa150d56a8025a6e1d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a04256bb3015b9fa150d56a8025a6e1d0">is_store_channel</a> () const</td></tr>
 <tr class="memdesc:a04256bb3015b9fa150d56a8025a6e1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a store channel.  <a href="classdpp_1_1channel.html#a04256bb3015b9fa150d56a8025a6e1d0">More...</a><br /></td></tr>
@@ -394,7 +394,7 @@ Public Attributes</h2></td></tr>
 <p>Add (bitwise OR) a flag to this channel object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flag</td><td>Flag bit to set </td></tr>
+    <tr><td class="paramname">flag</td><td>Flag bit to add from <a class="el" href="namespacedpp.html#ab11f2d909f48313331797465e3fbba7d" title="Our flags as stored in the object.">dpp::channel_flags</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -945,8 +945,8 @@ The method will search for the guild member in the cache by the users id. If the
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the channel is a news channel. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if news channel </dd></dl>
+<p>Returns true if the channel is an announcement channel. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if announcement channel </dd></dl>
 
 </div>
 </div>
@@ -965,8 +965,8 @@ The method will search for the guild member in the cache by the users id. If the
       </table>
 </div><div class="memdoc">
 
-<p>Returns true if the channel is a news thread. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if news thread </dd></dl>
+<p>Returns true if the thread is within an announcement channel. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if announcement thread </dd></dl>
 
 </div>
 </div>
@@ -1336,7 +1336,7 @@ false objects are not the same id </dd></dl>
 <p>Remove (bitwise NOT AND) a flag from this channel object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flag</td><td>Flag bit to set </td></tr>
+    <tr><td class="paramname">flag</td><td>Flag bit to remove from <a class="el" href="namespacedpp.html#ab11f2d909f48313331797465e3fbba7d" title="Our flags as stored in the object.">dpp::channel_flags</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1406,7 +1406,7 @@ false objects are not the same id </dd></dl>
 <p>Set flags for this channel object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flags</td><td>Flag bitmask to set </td></tr>
+    <tr><td class="paramname">flags</td><td>Flag bitmask to set from <a class="el" href="namespacedpp.html#ab11f2d909f48313331797465e3fbba7d" title="Our flags as stored in the object.">dpp::channel_flags</a> </td></tr>
   </table>
   </dd>
 </dl>
