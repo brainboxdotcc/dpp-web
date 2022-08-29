@@ -351,7 +351,8 @@ var namespacedpp =
       [ "apf_verification_pending_guild_limit", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a8e2969052ac05d4aac4c7c1ad1ad8546", null ],
       [ "apf_embedded", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72aa84f5e794fef323f94d4824d7c133033", null ],
       [ "apf_gateway_message_content", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a33aabc481930927e85b7a410bd456379", null ],
-      [ "apf_gateway_message_content_limited", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a4d794600b5fa9f1479b0f43af7e31888", null ]
+      [ "apf_gateway_message_content_limited", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a4d794600b5fa9f1479b0f43af7e31888", null ],
+      [ "apf_application_command_badge", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a401e761d72bd0b9bc94b95e4d2271d4e", null ]
     ] ],
     [ "audit_type", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3d", [
       [ "aut_guild_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dac44ff864aff617a63ebd9601246d7742", null ],
@@ -424,7 +425,8 @@ var namespacedpp =
       [ "amod_type_keyword", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292", null ],
       [ "amod_type_harmful_link", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a66616e096af7b4299ae5d013de686d57", null ],
       [ "amod_type_spam", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a5ab9fd884c477842d67045e962097fa2", null ],
-      [ "amod_type_keyword_preset", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05", null ]
+      [ "amod_type_keyword_preset", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05", null ],
+      [ "amod_type_mention_spam", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7", null ]
     ] ],
     [ "cache_policy_setting_t", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52", [
       [ "cp_aggressive", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e", null ],
