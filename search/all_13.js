@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['hash_3c_20dpp_3a_3asnowflake_20_3e_0',['hash&lt; dpp::snowflake &gt;',['../classdpp_1_1snowflake.html#a972e2ae58649a85e22640468fe5f705e',1,'dpp::snowflake']]],
+  ['hash_3c_20dpp_3a_3asnowflake_20_3e_0',['hash&lt; dpp::snowflake &gt;',['../classdpp_1_1snowflake.html#a06018349562d2b923dd95302f909ac61',1,'dpp::snowflake']]],
   ['satype_5flive_5faudio_1',['satype_live_audio',['../classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219',1,'dpp::discord_voice_client']]],
   ['satype_5frecorded_5faudio_2',['satype_recorded_audio',['../classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483',1,'dpp::discord_voice_client']]],
   ['scarlet_5fred_3',['scarlet_red',['../namespacedpp_1_1colors.html#ad626454a3e015e944211c178761c0999',1,'dpp::colors']]],
@@ -69,7 +69,7 @@ var searchData=
   ['set_5fend_5ftime_66',['set_end_time',['../structdpp_1_1scheduled__event.html#aacb90a20a3a486118dbed4a3da70cfb1',1,'dpp::scheduled_event']]],
   ['set_5ffile_5fcontent_67',['set_file_content',['../structdpp_1_1sticker.html#ad8ab299b9bb4e5165acadda87f703a13',1,'dpp::sticker::set_file_content()'],['../structdpp_1_1message.html#a7063a512a6e7f078e2a81bad077dfcde',1,'dpp::message::set_file_content()']]],
   ['set_5ffilename_68',['set_filename',['../structdpp_1_1sticker.html#a3b3c4734bbc30064627f5dd036ca26f6',1,'dpp::sticker::set_filename()'],['../structdpp_1_1message.html#a95675acbf18ed30c5141d3180842611f',1,'dpp::message::set_filename()']]],
-  ['set_5fflags_69',['set_flags',['../classdpp_1_1channel.html#a6cfbf057e2f2d3b5b2ee9b2f43d03288',1,'dpp::channel::set_flags()'],['../structdpp_1_1message.html#a3895655222ad8f3b9d9b96c47afb2454',1,'dpp::message::set_flags()'],['../classdpp_1_1role.html#a8d710124a87c30664e1e0f6507a9ebe3',1,'dpp::role::set_flags()']]],
+  ['set_5fflags_69',['set_flags',['../classdpp_1_1channel.html#aa34745a2d91a26dc3e93eb8b0e52c615',1,'dpp::channel::set_flags()'],['../structdpp_1_1message.html#a3895655222ad8f3b9d9b96c47afb2454',1,'dpp::message::set_flags()'],['../classdpp_1_1role.html#a8d710124a87c30664e1e0f6507a9ebe3',1,'dpp::role::set_flags()']]],
   ['set_5ffooter_70',['set_footer',['../structdpp_1_1embed.html#acfdeb54fd78b9c3b3e969e4d553f373e',1,'dpp::embed::set_footer(const embed_footer &amp;f)'],['../structdpp_1_1embed.html#a756371c3c3985a12f23119cde0a58254',1,'dpp::embed::set_footer(const std::string &amp;text, const std::string &amp;icon_url)']]],
   ['set_5fguild_5fid_71',['set_guild_id',['../classdpp_1_1channel.html#aa823c3a070bc37d70be28bd9b49820c5',1,'dpp::channel::set_guild_id()'],['../structdpp_1_1message.html#aedfe51cc0ce0cc38a3b8e0dbeb530964',1,'dpp::message::set_guild_id()'],['../classdpp_1_1role.html#aca74c158ab06219bbf3a0c61d96e2043',1,'dpp::role::set_guild_id()']]],
   ['set_5ficon_72',['set_icon',['../structdpp_1_1embed__footer.html#a467e1104693b9e5aaf89b3d4ab75f6d4',1,'dpp::embed_footer']]],

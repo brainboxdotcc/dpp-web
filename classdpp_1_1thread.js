@@ -35,7 +35,7 @@ var classdpp_1_1thread =
     [ "operator==", "classdpp_1_1thread.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
     [ "remove_flag", "classdpp_1_1thread.html#a20f076ea45f524f1673137d1b7817f6f", null ],
     [ "set_bitrate", "classdpp_1_1thread.html#ab6bc88cdee70038c6544c7f44a4584be", null ],
-    [ "set_flags", "classdpp_1_1thread.html#a6cfbf057e2f2d3b5b2ee9b2f43d03288", null ],
+    [ "set_flags", "classdpp_1_1thread.html#aa34745a2d91a26dc3e93eb8b0e52c615", null ],
     [ "set_guild_id", "classdpp_1_1thread.html#aa823c3a070bc37d70be28bd9b49820c5", null ],
     [ "set_lock_permissions", "classdpp_1_1thread.html#a8ee251e0b5faafd378b3fdabdf39a523", null ],
     [ "set_name", "classdpp_1_1thread.html#a304e19817c6bf0e363daf497a3011f3a", null ],
