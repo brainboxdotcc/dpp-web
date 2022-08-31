@@ -274,7 +274,7 @@ var classdpp_1_1cluster =
     [ "guild_add_member_sync", "classdpp_1_1cluster.html#a4066c8f1e67919da1580a4c128032879", null ],
     [ "guild_auditlog_get", "classdpp_1_1cluster.html#ab5e8bc1e30122a5ff3f19f901ec38857", null ],
     [ "guild_auditlog_get_sync", "classdpp_1_1cluster.html#a213dc0e62ace75781436aa253abd07ed", null ],
-    [ "guild_ban_add", "classdpp_1_1cluster.html#ac8d0b0069e6236e0e67e80649ba3dd38", null ],
+    [ "guild_ban_add", "classdpp_1_1cluster.html#a00fe9bf79228a671d618e9fb27b5684a", null ],
     [ "guild_ban_add_sync", "classdpp_1_1cluster.html#a005d2601526e2fd1c6633930024ad3a6", null ],
     [ "guild_ban_delete", "classdpp_1_1cluster.html#a77f277230e3cd4d34eac3d2d9838f6d7", null ],
     [ "guild_ban_delete_sync", "classdpp_1_1cluster.html#a381e6103f73e667bd42fc7b8f01117f3", null ],

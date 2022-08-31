@@ -7209,10 +7209,10 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="2344" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1ac8d0b0069e6236e0e67e80649ba3dd38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a00fe9bf79228a671d618e9fb27b5684a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::cluster::guild_ban_add</definition>
-        <argsstring>(snowflake guild_id, snowflake user_id, uint32_t delete_message_days=0, command_completion_event_t callback=utility::log_error())</argsstring>
+        <argsstring>(snowflake guild_id, snowflake user_id, uint32_t delete_message_seconds=0, command_completion_event_t callback=utility::log_error())</argsstring>
         <name>guild_ban_add</name>
         <param>
           <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -7224,7 +7224,7 @@
         </param>
         <param>
           <type>uint32_t</type>
-          <declname>delete_message_days</declname>
+          <declname>delete_message_seconds</declname>
           <defval>0</defval>
         </param>
         <param>
@@ -7258,10 +7258,10 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>delete_message_days</parametername>
+<parametername>delete_message_seconds</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>How many days of their user&apos;s messages to also delete (0-7). Defaults to 0 </para>
+<para>How many seconds to delete messages for, between 0 and 604800 (7 days). Defaults to 0 </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -14408,7 +14408,7 @@
 <para>Add guild ban. </para>
         </briefdescription>
         <detaileddescription>
-<para>Create a guild ban, and optionally delete previous messages sent by the banned user. Requires the <computeroutput>BAN_MEMBERS</computeroutput> permission. Fires a <computeroutput>Guild Ban Add</computeroutput> Gateway event. <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1ac8d0b0069e6236e0e67e80649ba3dd38" kindref="member">dpp::cluster::guild_ban_add</ref> </para>
+<para>Create a guild ban, and optionally delete previous messages sent by the banned user. Requires the <computeroutput>BAN_MEMBERS</computeroutput> permission. Fires a <computeroutput>Guild Ban Add</computeroutput> Gateway event. <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a00fe9bf79228a671d618e9fb27b5684a" kindref="member">dpp::cluster::guild_ban_add</ref> </para>
 </simplesect>
 <simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#create-guild-ban">https://discord.com/developers/docs/resources/guild#create-guild-ban</ulink> </para>
 </simplesect>
@@ -21769,7 +21769,7 @@
 <para>Add guild ban. </para>
         </briefdescription>
         <detaileddescription>
-<para>Create a guild ban, and optionally delete previous messages sent by the banned user. Requires the <computeroutput>BAN_MEMBERS</computeroutput> permission. Fires a <computeroutput>Guild Ban Add</computeroutput> Gateway event. <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1ac8d0b0069e6236e0e67e80649ba3dd38" kindref="member">dpp::cluster::guild_ban_add</ref> </para>
+<para>Create a guild ban, and optionally delete previous messages sent by the banned user. Requires the <computeroutput>BAN_MEMBERS</computeroutput> permission. Fires a <computeroutput>Guild Ban Add</computeroutput> Gateway event. <simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a00fe9bf79228a671d618e9fb27b5684a" kindref="member">dpp::cluster::guild_ban_add</ref> </para>
 </simplesect>
 <simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#create-guild-ban">https://discord.com/developers/docs/resources/guild#create-guild-ban</ulink> </para>
 </simplesect>
@@ -27991,7 +27991,7 @@
       <member refid="classdpp_1_1cluster_1a4066c8f1e67919da1580a4c128032879" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_add_member_sync</name></member>
       <member refid="classdpp_1_1cluster_1ab5e8bc1e30122a5ff3f19f901ec38857" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_auditlog_get</name></member>
       <member refid="classdpp_1_1cluster_1a213dc0e62ace75781436aa253abd07ed" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_auditlog_get_sync</name></member>
-      <member refid="classdpp_1_1cluster_1ac8d0b0069e6236e0e67e80649ba3dd38" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_add</name></member>
+      <member refid="classdpp_1_1cluster_1a00fe9bf79228a671d618e9fb27b5684a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_add</name></member>
       <member refid="classdpp_1_1cluster_1a005d2601526e2fd1c6633930024ad3a6" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_add_sync</name></member>
       <member refid="classdpp_1_1cluster_1a77f277230e3cd4d34eac3d2d9838f6d7" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_delete</name></member>
       <member refid="classdpp_1_1cluster_1a381e6103f73e667bd42fc7b8f01117f3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_delete_sync</name></member>
