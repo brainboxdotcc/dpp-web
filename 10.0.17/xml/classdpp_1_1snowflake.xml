@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1snowflake" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>dpp::snowflake</compoundname>
+    <includes local="no">snowflake.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1snowflake_1a06018349562d2b923dd95302f909ac61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct std::hash&lt; dpp::snowflake &gt;</definition>
+        <argsstring></argsstring>
+        <name>std::hash&lt; dpp::snowflake &gt;</name>
+        <param>
+          <type>std::hash&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="48" column="17" bodyfile="include/dpp/snowflake.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdpp_1_1snowflake_1acd08a4c6ffde4619bbaad03426797d11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(const snowflake &amp;lhs, const snowflake &amp;rhs)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Operator less than, used for maps/unordered maps when the snowflake is a key value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fist snowflake to compare </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second snowflake to compare </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if lhs is less than rhs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="103" column="15" bodyfile="include/dpp/snowflake.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdpp_1_1snowflake_1a6e8a05841062cbf9a9d8a639898ca09f" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::snowflake::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>The snowflake value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="54" column="10" bodyfile="include/dpp/snowflake.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a0bf1ac1eea215b6bbe20540ed33ce41b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::snowflake::snowflake</definition>
+        <argsstring>(const uint64_t &amp;value)</argsstring>
+        <name>snowflake</name>
+        <param>
+          <type>const uint64_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct a snowflake object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A snowflake value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a3a102b7b7e73b28b368f325d8f6bba53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::snowflake::snowflake</definition>
+        <argsstring>(const std::string &amp;string_value)</argsstring>
+        <name>snowflake</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>string_value</declname>
+        </param>
+        <briefdescription>
+<para>Construct a snowflake object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A snowflake value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a804d31b172dc04831d8b701c37447290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::snowflake::snowflake</definition>
+        <argsstring>()</argsstring>
+        <name>snowflake</name>
+        <briefdescription>
+<para>Construct a snowflake object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1afe03098c6ea2c54d26bf6be3a93d3fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::snowflake::~snowflake</definition>
+        <argsstring>()=default</argsstring>
+        <name>~snowflake</name>
+        <briefdescription>
+<para>Destroy the snowflake object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a32f3fa0f33d8abac70bd08530ad6194a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::snowflake::operator uint64_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator uint64_t</name>
+        <briefdescription>
+<para>For acting like an integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The snowflake value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a5a0fa467bb7b98b13e22aa5bb1b56553" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::snowflake::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Returns true if the snowflake holds an empty value (is 0) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if empty (zero) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="90" column="13" bodyfile="include/dpp/snowflake.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1af6830a9be19cf499f40187149bc02425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &amp;</type>
+        <definition>snowflake &amp; dpp::snowflake::operator=</definition>
+        <argsstring>(const std::string &amp;snowflake_val)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>snowflake_val</declname>
+        </param>
+        <briefdescription>
+<para>Assign from std::string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>snowflake_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to assign from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="113" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1adc6ab7800af7a2d5e3625b3473a2117a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &amp;</type>
+        <definition>snowflake &amp; dpp::snowflake::operator=</definition>
+        <argsstring>(const uint64_t &amp;snowflake_val)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const uint64_t &amp;</type>
+          <declname>snowflake_val</declname>
+        </param>
+        <briefdescription>
+<para>Assign from std::string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>snowflake_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to assign from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="120" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1ae55ca91d85b55a72005183bd1d3c747a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::snowflake::operator==</definition>
+        <argsstring>(const snowflake &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Check if one snowflake value is equal to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other snowflake to compare </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the snowflake objects match </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="128" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a9d62bbd69c6c36128d37365d0e63a1ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::snowflake::operator==</definition>
+        <argsstring>(const uint64_t &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const uint64_t &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Check if one snowflake value is equal to a uint64_t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other snowflake to compare </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the snowflake objects match </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="136" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a555a2ecf228c3759bb6abee615d13e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::snowflake::operator uint64_t &amp;</definition>
+        <argsstring>()</argsstring>
+        <name>operator uint64_t &amp;</name>
+        <briefdescription>
+<para>For acting like an integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A reference to the snowflake value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a6c066cdd0d18ebdf97a9f7ca3837b307" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double dpp::snowflake::get_creation_time</definition>
+        <argsstring>() const</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this snowflake according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="156" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1ac4c90adba78537b18d999883f0e4027b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::snowflake::get_worker_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_worker_id</name>
+        <briefdescription>
+<para>Get the worker id that produced this snowflake value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint8_t worker id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="163" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a214f6b51b189d1cab1bdd8f479f9c6a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::snowflake::get_process_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_process_id</name>
+        <briefdescription>
+<para>Get the process id that produced this snowflake value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint8_t process id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="170" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1snowflake_1a524a53421d78d1c4ab5477dcb0bd1d3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::snowflake::get_increment</definition>
+        <argsstring>() const</argsstring>
+        <name>get_increment</name>
+        <briefdescription>
+<para>Get the increment, which is incremented for every snowflake created over the one millisecond resolution in the timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint64_t millisecond increment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/snowflake.h" line="178" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A container for a 64 bit unsigned value representing many things on discord. This value is known in distributed computing as a snowflak value. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Snowflakes are:</para>
+<para><itemizedlist>
+<listitem><para>Performant (very fast to generate at source and to compare in code)</para>
+</listitem><listitem><para>Uncoordinated (allowing high availability across clusters, data centres etc)</para>
+</listitem><listitem><para>Time ordered (newer snowflakes have higher IDs)</para>
+</listitem><listitem><para>Directly Sortable (due to time ordering)</para>
+</listitem><listitem><para>Compact (64 bit numbers, not 128 bit, or string)</para>
+</listitem></itemizedlist>
+</para>
+<para>An identical format of snowflake is used by Twitter, Instagram and several other platforms.</para>
+<para><simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Snowflake_ID">https://en.wikipedia.org/wiki/Snowflake_ID</ulink> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://github.com/twitter-archive/snowflake/tree/b3f6a3c6ca8e1b6847baa6ff42bf72201e2c2231">https://github.com/twitter-archive/snowflake/tree/b3f6a3c6ca8e1b6847baa6ff42bf72201e2c2231</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/snowflake.h" line="48" column="1" bodyfile="include/dpp/snowflake.h" bodystart="48" bodyend="179"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1snowflake_1a5a0fa467bb7b98b13e22aa5bb1b56553" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>empty</name></member>
+      <member refid="classdpp_1_1snowflake_1a6c066cdd0d18ebdf97a9f7ca3837b307" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>get_creation_time</name></member>
+      <member refid="classdpp_1_1snowflake_1a524a53421d78d1c4ab5477dcb0bd1d3a" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>get_increment</name></member>
+      <member refid="classdpp_1_1snowflake_1a214f6b51b189d1cab1bdd8f479f9c6a8" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>get_process_id</name></member>
+      <member refid="classdpp_1_1snowflake_1ac4c90adba78537b18d999883f0e4027b" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>get_worker_id</name></member>
+      <member refid="classdpp_1_1snowflake_1a32f3fa0f33d8abac70bd08530ad6194a" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>operator uint64_t</name></member>
+      <member refid="classdpp_1_1snowflake_1a555a2ecf228c3759bb6abee615d13e59" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>operator uint64_t &amp;</name></member>
+      <member refid="classdpp_1_1snowflake_1acd08a4c6ffde4619bbaad03426797d11" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>operator&lt;</name></member>
+      <member refid="classdpp_1_1snowflake_1af6830a9be19cf499f40187149bc02425" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1snowflake_1adc6ab7800af7a2d5e3625b3473a2117a" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1snowflake_1ae55ca91d85b55a72005183bd1d3c747a" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1snowflake_1a9d62bbd69c6c36128d37365d0e63a1ad" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1snowflake_1a0bf1ac1eea215b6bbe20540ed33ce41b" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>snowflake</name></member>
+      <member refid="classdpp_1_1snowflake_1a3a102b7b7e73b28b368f325d8f6bba53" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>snowflake</name></member>
+      <member refid="classdpp_1_1snowflake_1a804d31b172dc04831d8b701c37447290" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>snowflake</name></member>
+      <member refid="classdpp_1_1snowflake_1a06018349562d2b923dd95302f909ac61" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>std::hash&lt; dpp::snowflake &gt;</name></member>
+      <member refid="classdpp_1_1snowflake_1a6e8a05841062cbf9a9d8a639898ca09f" prot="protected" virt="non-virtual"><scope>dpp::snowflake</scope><name>value</name></member>
+      <member refid="classdpp_1_1snowflake_1afe03098c6ea2c54d26bf6be3a93d3fd3" prot="public" virt="non-virtual"><scope>dpp::snowflake</scope><name>~snowflake</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
