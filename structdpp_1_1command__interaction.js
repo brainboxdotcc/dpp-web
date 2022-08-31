@@ -1,5 +1,6 @@
 var structdpp_1_1command__interaction =
 [
+    [ "get_mention", "structdpp_1_1command__interaction.html#a52a8e3ebf0b6fafffe920b52b56e840f", null ],
     [ "get_value", "structdpp_1_1command__interaction.html#a23a82b95593d4f06b8819773c65454d6", null ],
     [ "id", "structdpp_1_1command__interaction.html#a6e1ddf18af43a38f4385ed418e5bfa7f", null ],
     [ "name", "structdpp_1_1command__interaction.html#a526dfc98a7e142fc8c28a870e6981853", null ],
