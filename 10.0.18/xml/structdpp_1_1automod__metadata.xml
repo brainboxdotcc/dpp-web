@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1automod__metadata" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::automod_metadata</compoundname>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; automod_metadata &gt;</basecompoundref>
+    <includes local="no">automod.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1add05f221746c0ea2b3136b53498d0cf6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::keywords</definition>
+        <argsstring></argsstring>
+        <name>keywords</name>
+        <briefdescription>
+<para>Substrings which will be searched for in content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive.</para>
+<para>Wildcard symbols (<computeroutput>*</computeroutput>) can be used to customize how each keyword will be matched.</para>
+<para><bold>Examples for the <computeroutput>*</computeroutput> wildcard symbol:</bold></para>
+<para>Prefix - word must start with the keyword</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>cat*   </para>
+</entry><entry thead="no"><para><underline><bold>cat</bold></underline>ch, <underline><bold>Cat</bold></underline>apult, <underline><bold>CAt</bold></underline>tLE    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>the mat*   </para>
+</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>rix   </para>
+</entry></row>
+</table>
+</para>
+<para>Suffix - word must end with the keyword</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*cat   </para>
+</entry><entry thead="no"><para>wild<underline><bold>cat</bold></underline>, copy<underline><bold>Cat</bold></underline>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*the mat   </para>
+</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>   </para>
+</entry></row>
+</table>
+</para>
+<para>Anywhere - keyword can appear anywhere in the content</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*cat*   </para>
+</entry><entry thead="no"><para>lo<underline><bold>cat</bold></underline>ion, edu<underline><bold>Cat</bold></underline>ion    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*the mat*   </para>
+</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>ter   </para>
+</entry></row>
+</table>
+</para>
+<para>Whole Word - keyword is a full word or phrase and must be surrounded by whitespace at the beginning and end</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>cat   </para>
+</entry><entry thead="no"><para><underline><bold>Cat</bold></underline>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>the mat   </para>
+</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>   </para>
+</entry></row>
+</table>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="147" column="13" bodyfile="include/dpp/automod.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> &gt;</type>
+        <definition>std::vector&lt;automod_preset_type&gt; dpp::automod_metadata::presets</definition>
+        <argsstring></argsstring>
+        <name>presets</name>
+        <briefdescription>
+<para>Preset keyword list types to moderate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="153" column="13" bodyfile="include/dpp/automod.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::allow_list</definition>
+        <argsstring></argsstring>
+        <name>allow_list</name>
+        <briefdescription>
+<para>Substrings which will be exempt from triggering the <ref refid="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" kindref="member">automod_metadata::presets</ref> trigger type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="160" column="13" bodyfile="include/dpp/automod.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::automod_metadata::mention_total_limit</definition>
+        <argsstring></argsstring>
+        <name>mention_total_limit</name>
+        <briefdescription>
+<para>Total number of mentions (role &amp; user) allowed per message (Maximum of 50) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="165" column="9" bodyfile="include/dpp/automod.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1automod__metadata_1a1d341f6dd7507da28acf9c9add164803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::automod_metadata::automod_metadata</definition>
+        <argsstring>()</argsstring>
+        <name>automod_metadata</name>
+        <briefdescription>
+<para>Construct a new automod metadata object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1automod__metadata_1a2671a8e5afaf01085b585ed350376809" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual dpp::automod_metadata::~automod_metadata</definition>
+        <argsstring>()</argsstring>
+        <name>~automod_metadata</name>
+        <briefdescription>
+<para>Destroy the automod metadata object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="175" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1automod__metadata" kindref="compound">automod_metadata</ref> &amp;</type>
+        <definition>automod_metadata &amp; dpp::automod_metadata::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Fill object properties from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1automod__metadata" kindref="compound">automod_metadata</ref>&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="183" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string dpp::automod_metadata::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build a json string for this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string JSON string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="190" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Metadata associated with an automod action. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::automod_metadata</label>
+        <link refid="structdpp_1_1automod__metadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; automod_metadata &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; automod_metadata &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::automod_metadata</label>
+        <link refid="structdpp_1_1automod__metadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>allow_list</edgelabel>
+          <edgelabel>keywords</edgelabel>
+          <edgelabel>presets</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mention_total_limit</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; automod_metadata &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; automod_metadata &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt;</label>
+      </node>
+      <node id="5">
+        <label>uint8_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/automod.h" line="108" column="1" bodyfile="include/dpp/automod.h" bodystart="108" bodyend="192"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>allow_list</name></member>
+      <member refid="structdpp_1_1automod__metadata_1a1d341f6dd7507da28acf9c9add164803" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>automod_metadata</name></member>
+      <member refid="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" virt="virtual"><scope>dpp::automod_metadata</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1automod__metadata_1add05f221746c0ea2b3136b53498d0cf6" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>keywords</name></member>
+      <member refid="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>mention_total_limit</name></member>
+      <member refid="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>presets</name></member>
+      <member refid="structdpp_1_1automod__metadata_1a2671a8e5afaf01085b585ed350376809" prot="public" virt="virtual"><scope>dpp::automod_metadata</scope><name>~automod_metadata</name></member>
+      <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>~json_interface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="collecting-reactions" kind="page">
+    <compoundname>collecting-reactions</compoundname>
+    <title>Collecting Reactions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>D++ comes with many useful helper classes, but amongst these is something called <ref refid="classdpp_1_1collector" kindref="compound">dpp::collector</ref>. Collector is a template which can be specialised to automatically collect objects of a pre-determined type from events for a specific interval of time. Once this time period is up, or the class is otherwise signalled, a method is called with the complete set of collected objects.</para>
+<para>In the example below we will use it to collect all reactions on a message.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>To<sp/>create<sp/>a<sp/>collector<sp/>we<sp/>must<sp/>derive<sp/>from<sp/>dpp::collector.<sp/>As<sp/>dpp::collector<sp/>is<sp/>a<sp/>complicated<sp/>template,</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>various<sp/>pre-made<sp/>forms<sp/>exist<sp/>such<sp/>as<sp/>this<sp/>one,<sp/>reaction_collector.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">react_collector<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdpp_1_1reaction__collector" kindref="compound">dpp::reaction_collector</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Collector<sp/>will<sp/>run<sp/>for<sp/>20<sp/>seconds<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>react_collector(<ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref>*<sp/>cl,<sp/>snowflake<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>:<sp/><ref refid="namespacedpp" kindref="compound">dpp</ref>::message_collector(cl,<sp/>20,<sp/>id)<sp/>{<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>On<sp/>completion<sp/>just<sp/>output<sp/>number<sp/>of<sp/>collected<sp/>reactions<sp/>to<sp/>as<sp/>a<sp/>message.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdpp_1_1reaction__collector_1ae3260eec0d96bc11bf3bd4a17f402c3f" kindref="member">completed</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dpp::collected_reaction&gt;&amp;<sp/>list)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(list.size())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>owner-&gt;message_create(<ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(list[0].channel_id,<sp/></highlight><highlight class="stringliteral">&quot;I<sp/>collected<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(list.size())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>reactions!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>owner-&gt;message_create(<ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(</highlight><highlight class="stringliteral">&quot;...<sp/>I<sp/>got<sp/>nothin&apos;.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" kindref="member">dpp::i_default_intents</ref><sp/>|<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414" kindref="member">dpp::i_message_content</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pointer<sp/>to<sp/>reaction<sp/>collector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>react_collector*<sp/>r<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Message<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_create([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref><sp/>&amp;event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>someone<sp/>sends<sp/>a<sp/>message<sp/>that<sp/>has<sp/>the<sp/>text<sp/>&apos;collect<sp/>reactions!&apos;<sp/>start<sp/>a<sp/>reaction<sp/>collector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;collect<sp/>reactions!&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>r<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>a<sp/>new<sp/>reaction<sp/>collector<sp/>to<sp/>collect<sp/>reactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>new<sp/>react_collector(&amp;bot,<sp/>event.msg.id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="docpages/example_programs/misc/collect_reactions.md"/>
+  </compounddef>
+</doxygen>
