@@ -14387,10 +14387,10 @@
         </inbodydescription>
         <location file="include/dpp/cluster_coro_calls.h" line="731" column="13" bodyfile="include/dpp/cluster_coro_calls.h" bodystart="731" bodyend="733"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1a1236376941817a16e6b5536f0edd4496" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a32b032ef722c9cbd24dfad0bedbdc525" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto co_guild_ban_add</definition>
-        <argsstring>(snowflake guild_id, snowflake user_id, uint32_t delete_message_days)</argsstring>
+        <argsstring>(snowflake guild_id, snowflake user_id, uint32_t delete_message_seconds)</argsstring>
         <name>co_guild_ban_add</name>
         <param>
           <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -14402,7 +14402,7 @@
         </param>
         <param>
           <type>uint32_t</type>
-          <declname>delete_message_days</declname>
+          <declname>delete_message_seconds</declname>
         </param>
         <briefdescription>
 <para>Add guild ban. </para>
@@ -14432,10 +14432,10 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>delete_message_days</parametername>
+<parametername>delete_message_seconds</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>How many days of their user&apos;s messages to also delete (0-7). Defaults to 0 </para>
+<para>How many seconds to delete messages for, between 0 and 604800 (7 days). Defaults to 0 </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -21747,10 +21747,10 @@
         </inbodydescription>
         <location file="include/dpp/cluster_sync_calls.h" line="784" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="784" declcolumn="10"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1cluster_1a005d2601526e2fd1c6633930024ad3a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a5b5e472841d9122aa7ac8373ecd02e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
         <definition>confirmation guild_ban_add_sync</definition>
-        <argsstring>(snowflake guild_id, snowflake user_id, uint32_t delete_message_days=0)</argsstring>
+        <argsstring>(snowflake guild_id, snowflake user_id, uint32_t delete_message_seconds=0)</argsstring>
         <name>guild_ban_add_sync</name>
         <param>
           <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -21762,7 +21762,7 @@
         </param>
         <param>
           <type>uint32_t</type>
-          <declname>delete_message_days</declname>
+          <declname>delete_message_seconds</declname>
           <defval>0</defval>
         </param>
         <briefdescription>
@@ -21793,10 +21793,10 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>delete_message_days</parametername>
+<parametername>delete_message_seconds</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>How many days of their user&apos;s messages to also delete (0-7). Defaults to 0 </para>
+<para>How many seconds to delete messages for, between 0 and 604800 (7 days). Defaults to 0 </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -27805,7 +27805,7 @@
       <member refid="classdpp_1_1cluster_1a9e21547c2e9254264a7b17a1bdcd06e5" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_global_commands_get</name></member>
       <member refid="classdpp_1_1cluster_1a0d54139d213ea2cbf121a9313834b893" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_add_member</name></member>
       <member refid="classdpp_1_1cluster_1aa01c6d360d2613f3cf3a66ef4f2ca141" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_auditlog_get</name></member>
-      <member refid="classdpp_1_1cluster_1a1236376941817a16e6b5536f0edd4496" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_ban_add</name></member>
+      <member refid="classdpp_1_1cluster_1a32b032ef722c9cbd24dfad0bedbdc525" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_ban_add</name></member>
       <member refid="classdpp_1_1cluster_1ae54a141e45b6d9f606c05bc6027d08bf" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_ban_delete</name></member>
       <member refid="classdpp_1_1cluster_1ab0b9f049433388c6345ae8ea0b2befb7" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_begin_prune</name></member>
       <member refid="classdpp_1_1cluster_1a94c53c9af9dd47cc805c86dd9a0e4489" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_bulk_command_create</name></member>
@@ -27992,7 +27992,7 @@
       <member refid="classdpp_1_1cluster_1ab5e8bc1e30122a5ff3f19f901ec38857" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_auditlog_get</name></member>
       <member refid="classdpp_1_1cluster_1a213dc0e62ace75781436aa253abd07ed" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_auditlog_get_sync</name></member>
       <member refid="classdpp_1_1cluster_1a00fe9bf79228a671d618e9fb27b5684a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_add</name></member>
-      <member refid="classdpp_1_1cluster_1a005d2601526e2fd1c6633930024ad3a6" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_add_sync</name></member>
+      <member refid="classdpp_1_1cluster_1a5b5e472841d9122aa7ac8373ecd02e45" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_add_sync</name></member>
       <member refid="classdpp_1_1cluster_1a77f277230e3cd4d34eac3d2d9838f6d7" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_delete</name></member>
       <member refid="classdpp_1_1cluster_1a381e6103f73e667bd42fc7b8f01117f3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_ban_delete_sync</name></member>
       <member refid="classdpp_1_1cluster_1a68d13c11179006d5271c1a398df58bc2" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_begin_prune</name></member>

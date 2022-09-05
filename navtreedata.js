@@ -102,8 +102,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classdpp_1_1channel.html#a27a623072570b333f697bd01c3616208",
-"classdpp_1_1cluster.html#a1f78587049cac058d4d4dcb63f8ab987",
-"classdpp_1_1cluster.html#a569b9b46ab3783060e766e3fec8ee988",
+"classdpp_1_1cluster.html#a20d3638fb222bd91aa9c2ad460b30b29",
+"classdpp_1_1cluster.html#a5704ecc3212ed418b36d6f4fa8b4ab02",
 "classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219",
 "classdpp_1_1cluster.html#ab67f05b1b4b4bd3ea97a6bafc3b7151d",
 "classdpp_1_1cluster.html#af0bd069670dc9c7a2fd87591a02d6434",

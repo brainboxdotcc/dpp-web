@@ -163,7 +163,7 @@ var searchData=
   ['guild_5fauditlog_5fget_160',['guild_auditlog_get',['../classdpp_1_1cluster.html#ab5e8bc1e30122a5ff3f19f901ec38857',1,'dpp::cluster']]],
   ['guild_5fauditlog_5fget_5fsync_161',['guild_auditlog_get_sync',['../classdpp_1_1cluster.html#a213dc0e62ace75781436aa253abd07ed',1,'dpp::cluster']]],
   ['guild_5fban_5fadd_162',['guild_ban_add',['../classdpp_1_1events_1_1guild__ban__add.html',1,'dpp::events::guild_ban_add'],['../classdpp_1_1cluster.html#a00fe9bf79228a671d618e9fb27b5684a',1,'dpp::cluster::guild_ban_add(snowflake guild_id, snowflake user_id, uint32_t delete_message_seconds=0, command_completion_event_t callback=utility::log_error())']]],
-  ['guild_5fban_5fadd_5fsync_163',['guild_ban_add_sync',['../classdpp_1_1cluster.html#a005d2601526e2fd1c6633930024ad3a6',1,'dpp::cluster']]],
+  ['guild_5fban_5fadd_5fsync_163',['guild_ban_add_sync',['../classdpp_1_1cluster.html#a5b5e472841d9122aa7ac8373ecd02e45',1,'dpp::cluster']]],
   ['guild_5fban_5fadd_5ft_164',['guild_ban_add_t',['../structdpp_1_1guild__ban__add__t.html',1,'dpp::guild_ban_add_t'],['../structdpp_1_1guild__ban__add__t.html#af49f1d4297fe7bd25a8f8938ce00e21b',1,'dpp::guild_ban_add_t::guild_ban_add_t()']]],
   ['guild_5fban_5fdelete_165',['guild_ban_delete',['../classdpp_1_1cluster.html#a77f277230e3cd4d34eac3d2d9838f6d7',1,'dpp::cluster']]],
   ['guild_5fban_5fdelete_5fsync_166',['guild_ban_delete_sync',['../classdpp_1_1cluster.html#a381e6103f73e667bd42fc7b8f01117f3',1,'dpp::cluster']]],
