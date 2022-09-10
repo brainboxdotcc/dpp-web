@@ -145,10 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad7e3b4418671873df7f59fccfc49dec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the base permissions for a member on this guild, before channel overwrites are applied. This method takes into consideration the following cases:  <a href="classdpp_1_1guild.html#ad7e3b4418671873df7f59fccfc49dec4">More...</a><br /></td></tr>
 <tr class="separator:ad7e3b4418671873df7f59fccfc49dec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33639446c930d418139a976c9c1a071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1permission.html">permission</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild.html#ad33639446c930d418139a976c9c1a071">permission_overwrites</a> (const uint64_t <a class="el" href="classdpp_1_1guild.html#abd799f5cbe1907c46b86937bda124bee">base_permissions</a>, const <a class="el" href="classdpp_1_1user.html">user</a> *<a class="el" href="classdpp_1_1user.html">user</a>, const <a class="el" href="classdpp_1_1channel.html">channel</a> *<a class="el" href="classdpp_1_1channel.html">channel</a>) const</td></tr>
-<tr class="memdesc:ad33639446c930d418139a976c9c1a071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the permission overwrites for a member in a channel, including base permissions.  <a href="classdpp_1_1guild.html#ad33639446c930d418139a976c9c1a071">More...</a><br /></td></tr>
+<tr class="memdesc:ad33639446c930d418139a976c9c1a071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges.  <a href="classdpp_1_1guild.html#ad33639446c930d418139a976c9c1a071">More...</a><br /></td></tr>
 <tr class="separator:ad33639446c930d418139a976c9c1a071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9688339669113aae291c5987beee9f24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1permission.html">permission</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild.html#a9688339669113aae291c5987beee9f24">permission_overwrites</a> (const <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;member, const <a class="el" href="classdpp_1_1channel.html">channel</a> &amp;<a class="el" href="classdpp_1_1channel.html">channel</a>) const</td></tr>
-<tr class="memdesc:a9688339669113aae291c5987beee9f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the permission overwrites for a member in a channel, including base permissions.  <a href="classdpp_1_1guild.html#a9688339669113aae291c5987beee9f24">More...</a><br /></td></tr>
+<tr class="memdesc:a9688339669113aae291c5987beee9f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges.  <a href="classdpp_1_1guild.html#a9688339669113aae291c5987beee9f24">More...</a><br /></td></tr>
 <tr class="separator:a9688339669113aae291c5987beee9f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeed0e3f51cc2ce2a6752be2ba7b6f8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac">rehash_members</a> ()</td></tr>
 <tr class="memdesc:aeed0e3f51cc2ce2a6752be2ba7b6f8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rehash members map.  <a href="classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac">More...</a><br /></td></tr>
@@ -1451,15 +1451,15 @@ false objects are not the same id </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the permission overwrites for a member in a channel, including base permissions. </p>
+<p>Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">member</td><td>Member to resolve the permissions for </td></tr>
+    <tr><td class="paramname">member</td><td>The member to resolve the permissions for </td></tr>
     <tr><td class="paramname">channel</td><td>Channel to compute permission overwrites for </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>permission Merged permissions bitmask of overwrites. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>permission Permission overwrites for the member. Made of bits in <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Requires role cache to be enabled (it's enabled by default). </dd></dl>
 
 </div>
@@ -1496,19 +1496,18 @@ false objects are not the same id </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the permission overwrites for a member in a channel, including base permissions. </p>
+<p>Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">base_permissions</td><td>base permissions before overwrites, from channel::base_permissions </td></tr>
-    <tr><td class="paramname">user</td><td>User to resolve the permissions for </td></tr>
+    <tr><td class="paramname">user</td><td>The user to resolve the permissions for </td></tr>
     <tr><td class="paramname">channel</td><td>Channel to compute permission overwrites for </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>permission Merged permissions bitmask of overwrites. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Requires role cache to be enabled (it's enabled by default).</dd>
-<dd>
-The method will search for the guild member in the cache by the users id. If the guild member is not in cache, the method will always return 0. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>permission Permission overwrites for the member. Made of bits in <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Requires role cache to be enabled (it's enabled by default).</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The method will search for the guild member in the cache by the users id. If the guild member is not in cache, the method will always return 0. </dd></dl>
 
 </div>
 </div>

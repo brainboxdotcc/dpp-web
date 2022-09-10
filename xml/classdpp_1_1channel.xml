@@ -861,7 +861,7 @@
           <declname>user</declname>
         </param>
         <briefdescription>
-<para>Get the user overall permissions for a member on this channel, including channel overwrites. </para>
+<para>Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -873,17 +873,19 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>permission Permissions bitmask made of bits in <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>. </para>
+<simplesect kind="return"><para>permission Permission overwrites for the member. Made of bits in <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>. </para>
 </simplesect>
 <simplesect kind="note"><para>Requires role cache to be enabled (it&apos;s enabled by default).</para>
 </simplesect>
-<simplesect kind="note"><para>The method will search for the guild member in the cache by the users id. If the guild member is not in cache, the method will always return 0. </para>
+<simplesect kind="note"><para>This is an alias for <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">guild::permission_overwrites</ref> and searches for the guild in the cache, so consider using <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">guild::permission_overwrites</ref> if you already have the guild object.</para>
+</simplesect>
+<simplesect kind="warning"><para>The method will search for the guild member in the cache by the users id. If the guild member is not in cache, the method will always return 0. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="395" column="12"/>
+        <location file="include/dpp/channel.h" line="398" column="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a0ff4cb376ed32919b1ee6a7246d36019" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1permission" kindref="compound">permission</ref></type>
@@ -895,7 +897,7 @@
           <declname>member</declname>
         </param>
         <briefdescription>
-<para>Get the overall user permissions for a member on this channel, including channel overwrites. </para>
+<para>Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -907,15 +909,17 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The permission overwrites for the member. Made of bits in <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>. </para>
+<simplesect kind="return"><para>permission Permission overwrites for the member. Made of bits in <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>. </para>
 </simplesect>
-<simplesect kind="note"><para>Requires role cache to be enabled (it&apos;s enabled by default). </para>
+<simplesect kind="note"><para>Requires role cache to be enabled (it&apos;s enabled by default).</para>
+</simplesect>
+<simplesect kind="note"><para>This is an alias for <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">guild::permission_overwrites</ref> and searches for the guild in the cache, so consider using <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">guild::permission_overwrites</ref> if you already have the guild object. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="404" column="12"/>
+        <location file="include/dpp/channel.h" line="410" column="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a2618252ea6ca24673074b4ac8243798c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, class <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> * &gt;</type>
@@ -934,7 +938,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="414" column="10"/>
+        <location file="include/dpp/channel.h" line="420" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a915cc4ba3ec7514a684315594255253a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1voicestate" kindref="compound">voicestate</ref> &gt;</type>
@@ -951,7 +955,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="422" column="10"/>
+        <location file="include/dpp/channel.h" line="428" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a9b21f2eb844a745ba44fda7ca55aa40e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -982,7 +986,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="430" column="13"/>
+        <location file="include/dpp/channel.h" line="436" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a97712454c654d4a4eede963a5307dfdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1013,7 +1017,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="438" column="13"/>
+        <location file="include/dpp/channel.h" line="444" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a41631deb5f2cb740b4d124cde9f266d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1030,7 +1034,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="445" column="6"/>
+        <location file="include/dpp/channel.h" line="451" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1ac8ce0b3fc552cfe96f46e6c55299a810" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1047,7 +1051,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="453" column="6"/>
+        <location file="include/dpp/channel.h" line="459" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a7b9bfb2f922e7cfcbbb1d60f02e5a901" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1064,7 +1068,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="460" column="6"/>
+        <location file="include/dpp/channel.h" line="466" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a918afc6016a1114151a253e7caa35179" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1081,7 +1085,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="467" column="6"/>
+        <location file="include/dpp/channel.h" line="473" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a8ee69208f9cf16c18f2ceb460ada1916" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1098,7 +1102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="474" column="6"/>
+        <location file="include/dpp/channel.h" line="480" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a27a623072570b333f697bd01c3616208" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1115,7 +1119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="481" column="6"/>
+        <location file="include/dpp/channel.h" line="487" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a1b6b7a32e44eec70466a98b31252aa54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1132,7 +1136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="488" column="6"/>
+        <location file="include/dpp/channel.h" line="494" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a469a04064c0d9455e8decca30010c0b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1151,7 +1155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="496" column="6"/>
+        <location file="include/dpp/channel.h" line="502" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a9fb22156c167cb2c334ec3388502fdff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1168,7 +1172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="503" column="6"/>
+        <location file="include/dpp/channel.h" line="509" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a04256bb3015b9fa150d56a8025a6e1d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1187,7 +1191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="511" column="6"/>
+        <location file="include/dpp/channel.h" line="517" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1ae95ae73f17ff4badd2001bcc07940709" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1204,7 +1208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="518" column="6"/>
+        <location file="include/dpp/channel.h" line="524" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1afb783f82a86a5ed6f247aaa213164854" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1221,7 +1225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="525" column="6"/>
+        <location file="include/dpp/channel.h" line="531" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a311501db36692f1753254e1bf618e75d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1238,7 +1242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="532" column="6"/>
+        <location file="include/dpp/channel.h" line="538" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1ad82aae3ca0ba7d93669851fa0a720870" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1255,7 +1259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="539" column="6"/>
+        <location file="include/dpp/channel.h" line="545" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1482,7 +1486,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/channel.h" line="169" column="1" bodyfile="include/dpp/channel.h" bodystart="169" bodyend="541"/>
+    <location file="include/dpp/channel.h" line="169" column="1" bodyfile="include/dpp/channel.h" bodystart="169" bodyend="547"/>
     <listofallmembers>
       <member refid="classdpp_1_1channel_1a189a5d675001b810199274201b15ea38" prot="public" virt="non-virtual"><scope>dpp::channel</scope><name>add_flag</name></member>
       <member refid="classdpp_1_1channel_1a3e16faee1b6acad30b403dc1dc1d0b47" prot="public" virt="non-virtual"><scope>dpp::channel</scope><name>add_permission_overwrite</name></member>

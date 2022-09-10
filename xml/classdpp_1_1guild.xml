@@ -755,7 +755,7 @@
           <declname>channel</declname>
         </param>
         <briefdescription>
-<para>Compute the permission overwrites for a member in a channel, including base permissions. </para>
+<para>Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -771,7 +771,7 @@
 <parametername>user</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>User to resolve the permissions for </para>
+<para>The user to resolve the permissions for </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -783,11 +783,11 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>permission Merged permissions bitmask of overwrites. </para>
+<simplesect kind="return"><para>permission Permission overwrites for the member. Made of bits in <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>. </para>
 </simplesect>
 <simplesect kind="note"><para>Requires role cache to be enabled (it&apos;s enabled by default).</para>
 </simplesect>
-<simplesect kind="note"><para>The method will search for the guild member in the cache by the users id. If the guild member is not in cache, the method will always return 0. </para>
+<simplesect kind="warning"><para>The method will search for the guild member in the cache by the users id. If the guild member is not in cache, the method will always return 0. </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -809,7 +809,7 @@
           <declname>channel</declname>
         </param>
         <briefdescription>
-<para>Compute the permission overwrites for a member in a channel, including base permissions. </para>
+<para>Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -817,7 +817,7 @@
 <parametername>member</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Member to resolve the permissions for </para>
+<para>The member to resolve the permissions for </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -829,7 +829,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>permission Merged permissions bitmask of overwrites. </para>
+<simplesect kind="return"><para>permission Permission overwrites for the member. Made of bits in <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>. </para>
 </simplesect>
 <simplesect kind="note"><para>Requires role cache to be enabled (it&apos;s enabled by default). </para>
 </simplesect>
