@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1app__team" kind="class" language="C++" prot="public">
+    <compoundname>dpp::app_team</compoundname>
+    <includes local="no">application.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1app__team_1a37f6b11c2645ac81c5305b993c09de52" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::app_team::icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <briefdescription>
+<para>a hash of the image of the team&apos;s icon (may be empty) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="92" column="18" bodyfile="include/dpp/application.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1app__team_1abdf2db17660f1fece856c5714b60bc5b" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::app_team::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>the unique id of the team </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="93" column="10" bodyfile="include/dpp/application.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1app__team_1a43c902b68afac4de62244606c4f9598a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1team__member" kindref="compound">team_member</ref> &gt;</type>
+        <definition>std::vector&lt;team_member&gt; dpp::app_team::members</definition>
+        <argsstring></argsstring>
+        <name>members</name>
+        <briefdescription>
+<para>the members of the team </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="94" column="12" bodyfile="include/dpp/application.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1app__team_1aceb5cb22db89df8e20bb5c7b303d7575" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::app_team::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>the name of the team </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="95" column="12" bodyfile="include/dpp/application.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1app__team_1aa8e196c3e03a80cab577c39ee446a98e" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::app_team::owner_user_id</definition>
+        <argsstring></argsstring>
+        <name>owner_user_id</name>
+        <briefdescription>
+<para>the user id of the current team owner </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/application.h" line="96" column="10" bodyfile="include/dpp/application.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a team of users who maintain a bot/application. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::app_team</label>
+        <link refid="classdpp_1_1app__team"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>icon</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>id</edgelabel>
+          <edgelabel>owner_user_id</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>members</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="6">
+        <label>std::string</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector&lt;</label>
+      </node>
+      <node id="3">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/application.h" line="90" column="1" bodyfile="include/dpp/application.h" bodystart="90" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1app__team_1a37f6b11c2645ac81c5305b993c09de52" prot="public" virt="non-virtual"><scope>dpp::app_team</scope><name>icon</name></member>
+      <member refid="classdpp_1_1app__team_1abdf2db17660f1fece856c5714b60bc5b" prot="public" virt="non-virtual"><scope>dpp::app_team</scope><name>id</name></member>
+      <member refid="classdpp_1_1app__team_1a43c902b68afac4de62244606c4f9598a" prot="public" virt="non-virtual"><scope>dpp::app_team</scope><name>members</name></member>
+      <member refid="classdpp_1_1app__team_1aceb5cb22db89df8e20bb5c7b303d7575" prot="public" virt="non-virtual"><scope>dpp::app_team</scope><name>name</name></member>
+      <member refid="classdpp_1_1app__team_1aa8e196c3e03a80cab577c39ee446a98e" prot="public" virt="non-virtual"><scope>dpp::app_team</scope><name>owner_user_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
