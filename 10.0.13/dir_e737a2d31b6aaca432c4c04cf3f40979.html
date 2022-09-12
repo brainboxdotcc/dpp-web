@@ -136,6 +136,12 @@ $(document).ready(function(){initNavTree('dir_e737a2d31b6aaca432c4c04cf3f40979.h
 			hljs.initLineNumbersOnLoad(node);  
 		});
 		$(".fragment").parent().parent().parent().parent().removeClass('doxtable');
+		setTimeout(function() {
+			const $utterances = $(".utterances").prop('outerHTML');
+			const $doc = $("#doc-content");
+			$(".utterances").remove();
+			$doc.html($doc.html() + $utterances);
+		}, 50);
 	});
 </script>
 <style>

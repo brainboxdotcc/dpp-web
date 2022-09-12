@@ -196,6 +196,12 @@ When compiling with voice support, i get an error: "No rule to make target 'sodi
 			hljs.initLineNumbersOnLoad(node);  
 		});
 		$(".fragment").parent().parent().parent().parent().removeClass('doxtable');
+		setTimeout(function() {
+			const $utterances = $(".utterances").prop('outerHTML');
+			const $doc = $("#doc-content");
+			$(".utterances").remove();
+			$doc.html($doc.html() + $utterances);
+		}, 50);
 	});
 </script>
 <style>

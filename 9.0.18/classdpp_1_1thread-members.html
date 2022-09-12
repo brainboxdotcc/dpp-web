@@ -201,6 +201,12 @@ $(document).ready(function(){initNavTree('classdpp_1_1thread.html',''); initResi
 			hljs.initLineNumbersOnLoad(node);  
 		});
 		$(".fragment").parent().parent().parent().parent().removeClass('doxtable');
+		setTimeout(function() {
+			const $utterances = $(".utterances").prop('outerHTML');
+			const $doc = $("#doc-content");
+			$(".utterances").remove();
+			$doc.html($doc.html() + $utterances);
+		}, 50);
 	});
 </script>
 <style>

@@ -144,6 +144,12 @@ $(document).ready(function(){initNavTree('md_docpages__z_04__e_x_a_m_p_l_e.html'
 			hljs.initLineNumbersOnLoad(node);  
 		});
 		$(".fragment").parent().parent().parent().parent().removeClass('doxtable');
+		setTimeout(function() {
+			const $utterances = $(".utterances").prop('outerHTML');
+			const $doc = $("#doc-content");
+			$(".utterances").remove();
+			$doc.html($doc.html() + $utterances);
+		}, 50);
 	});
 </script>
 <style>
