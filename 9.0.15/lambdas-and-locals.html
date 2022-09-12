@@ -144,11 +144,9 @@ $(document).ready(function(){initNavTree('lambdas-and-locals.html',''); initResi
 <p>Similarly, and important to note, your program <b>will not wait for bot.message_create to send its message and call its lambda</b> before continuing on to print <code>here</code>. It will instantly insert the request into its queue and bail straight back out (see the steps above) and immediately print the text.</p>
 <p >If you do want to get variables out of your lambda, create a class, or call a separate function, and pass what you need into that funtion from the lambda <b>by value</b> or alternatively, you can use <code>std::bind</code> to bind a lambda directly to an object's method instead (this is great for modular bots).</p>
 <p >If you are stuck, as this is a complex subject please do feel free to ask on the <a href="https://discord.gg/dpp">official support server</a>! </p>
-</div></div><!-- contents -->
+</div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<!-- utteranc.es -->
-<script src="https://utteranc.es/client.js" repo="brainboxdotcc/dpp-comments" issue-term="pathname" theme="preferred-color-scheme" crossorigin="anonymous" async></script>
 <div id="nav-path" class="navpath">
 	<ul>
 		<li class="navelem"><a class="el" href="md_docpages_04_advanced_reference.html">Advanced Reference</a></li>
@@ -180,12 +178,6 @@ $(document).ready(function(){initNavTree('lambdas-and-locals.html',''); initResi
 			hljs.initLineNumbersOnLoad(node);  
 		});
 		$(".fragment").parent().parent().parent().parent().removeClass('doxtable');
-		setTimeout(function() {
-			const $utterances = $(".utterances").prop('outerHTML');
-			const $doc = $("#doc-content");
-			$(".utterances").remove();
-			$doc.html($doc.html() + $utterances);
-		}, 50);
 	});
 </script>
 <style>
