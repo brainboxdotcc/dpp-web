@@ -200,15 +200,13 @@ Public Attributes</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacedpp.html">dpp</a></li><li class="navelem"><a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a></li>
-  </ul>
-</div>
 <!-- utteranc.es -->
-<script src="https://utteranc.es/client.js"                                                           repo="brainboxdotcc/dpp-comments"                                                             issue-term="pathname"                                                                         theme="preferred-color-scheme"
-        crossorigin="anonymous"                                                                       async>                                                                                </script>
+<script src="https://utteranc.es/client.js" repo="brainboxdotcc/dpp-comments" issue-term="pathname" theme="preferred-color-scheme" crossorigin="anonymous" async></script>
+<div id="nav-path" class="navpath">
+	<ul>
+		<li class="navelem"><a class="el" href="namespacedpp.html">dpp</a></li><li class="navelem"><a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a></li>
+	</ul>
+</div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTH6YHBNG5"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
@@ -226,13 +224,15 @@ Public Attributes</h2></td></tr>
 		$(".fragment").each(function(i,node) {
 			var $node = $(node);
 			$node.children(":not(.line)").remove();
-			$node.html("<pre><code class='stan'>" + $node.text().trim().replaceAll("\<", "&lt;").replaceAll("\>", "&gt;") + "</code></pre>");
+			$node.html("<pre><code class='stan'>" + $node.text().trim().replaceAll("<", "&lt;").replaceAll(">", "&gt;") + "</code></pre>");
 			hljs.configure({
 				languages: ['cpp','diff','cmake','bash','sh','text'],
+				ignoreUnescapedHTML: true
 			});
 			hljs.highlightAll(node);
 			hljs.initLineNumbersOnLoad(node);  
 		});
+		$(".fragment").parent().parent().parent().parent().removeClass('doxtable');
 	});
 </script>
 <style>
@@ -250,6 +250,10 @@ Public Attributes</h2></td></tr>
 	.hljs-ln-n::before {
 		content: attr(data-line-number);
 		padding-right: 1rem !important;
+	}
+	table.markdownTable code td, table.markdownTable code th, table.fieldtable code td, table.fieldtable code th, table.doxtable code td, table.doxtable code th {
+		border: 0 !important;
+		padding: 0 !important;
 	}	
 </style>
 <div style="z-index: -9999; position: absolute; right: 0; top: 0; font-size: 0.0001rem;color:transparent;background:none">
