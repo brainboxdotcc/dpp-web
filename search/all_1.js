@@ -99,7 +99,7 @@ var searchData=
   ['at_5flistening_96',['at_listening',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6',1,'dpp']]],
   ['at_5fstreaming_97',['at_streaming',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a2f8895bec6d58b1319a41255239d0918',1,'dpp']]],
   ['at_5fwatching_98',['at_watching',['../namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a41a48506f1fde615713f676016525d9b',1,'dpp']]],
-  ['attach_99',['attach',['../classdpp_1_1event__router__t.html#a02d0066788552b191413d201d2ef5997',1,'dpp::event_router_t::attach(std::function&lt; dpp::task(const T &amp;)&gt; func)'],['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t::attach(std::function&lt; void(const T &amp;)&gt; func)']]],
+  ['attach_99',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
   ['attaching_20a_20file_20to_20a_20message_100',['Attaching a file to a message',['../attach-file.html',1,'the-basics']]],
   ['attachment_101',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)'],['../structdpp_1_1attachment.html',1,'dpp::attachment']]],
   ['attachments_102',['attachments',['../structdpp_1_1command__resolved.html#adc6820ef10dcfbba1caa5aa60884aa63',1,'dpp::command_resolved::attachments()'],['../structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7',1,'dpp::message::attachments()']]],

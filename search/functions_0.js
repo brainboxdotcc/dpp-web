@@ -24,7 +24,7 @@ var searchData=
   ['add_5frow_21',['add_row',['../structdpp_1_1interaction__modal__response.html#a64e2352d62d7e4a54f3171d5e3024830',1,'dpp::interaction_modal_response']]],
   ['add_5fselect_5foption_22',['add_select_option',['../classdpp_1_1component.html#ad39a99a7bb31f43bf3d2764aa3c24243',1,'dpp::component']]],
   ['application_23',['application',['../classdpp_1_1application.html#a20b27bd6cecfbff3ed083c65d4edf044',1,'dpp::application']]],
-  ['attach_24',['attach',['../classdpp_1_1event__router__t.html#a02d0066788552b191413d201d2ef5997',1,'dpp::event_router_t::attach(std::function&lt; dpp::task(const T &amp;)&gt; func)'],['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t::attach(std::function&lt; void(const T &amp;)&gt; func)']]],
+  ['attach_24',['attach',['../classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c',1,'dpp::event_router_t']]],
   ['attachment_25',['attachment',['../structdpp_1_1attachment.html#a7282fea4a14c84993155771cc0922b90',1,'dpp::attachment::attachment(struct message *o)'],['../structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f',1,'dpp::attachment::attachment(struct message *o, nlohmann::json *j)']]],
   ['auditlog_26',['auditlog',['../classdpp_1_1auditlog.html#a1846ff8bb9925a207d1465789996020f',1,'dpp::auditlog']]],
   ['autocomplete_5ft_27',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t']]],

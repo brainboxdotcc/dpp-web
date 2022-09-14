@@ -55,9 +55,9 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="111" column="10" bodyfile="include/dpp/cluster.h" bodystart="111" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1event__router__t_1ad00756f778117f6f358f9d97ba4047be" prot="private" static="no" mutable="no">
-        <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, std::function&lt; void(const T)&gt; &gt;</type>
-        <definition>std::map&lt;event_handle, std::function&lt;void(const T)&gt; &gt; dpp::event_router_t&lt; T &gt;::coroutine_container</definition>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a176a88a4835f22aa23713e8034d7880f" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, std::function&lt; <ref refid="structdpp_1_1task" kindref="compound">dpp::task</ref>(T)&gt; &gt;</type>
+        <definition>std::map&lt;event_handle, std::function&lt;dpp::task(T)&gt; &gt; dpp::event_router_t&lt; T &gt;::coroutine_container</definition>
         <argsstring></argsstring>
         <name>coroutine_container</name>
         <briefdescription>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="124" column="15" bodyfile="include/dpp/cluster.h" bodystart="124" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="130" column="15" bodyfile="include/dpp/cluster.h" bodystart="130" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -111,14 +111,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="134" column="6" bodyfile="include/dpp/cluster.h" bodystart="134" bodyend="136"/>
+        <location file="include/dpp/cluster.h" line="140" column="6" bodyfile="include/dpp/cluster.h" bodystart="140" bodyend="142"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1event__router__t_1a667c18e57cc53f960d3467e84358a822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a5ead27e7e608a86b4622021fddb384c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::event_router_t&lt; T &gt;::event_router_t</definition>
-        <argsstring>()</argsstring>
+        <argsstring>()=default</argsstring>
         <name>event_router_t</name>
         <briefdescription>
 <para>Construct a new <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> object. </para>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="142" column="1" bodyfile="include/dpp/cluster.h" bodystart="142" bodyend="143"/>
+        <location file="include/dpp/cluster.h" line="148" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="151" column="6" bodyfile="include/dpp/cluster.h" bodystart="151" bodyend="168"/>
+        <location file="include/dpp/cluster.h" line="156" column="6" bodyfile="include/dpp/cluster.h" bodystart="156" bodyend="173"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="177" column="6" bodyfile="include/dpp/cluster.h" bodystart="177" bodyend="180"/>
+        <location file="include/dpp/cluster.h" line="182" column="6" bodyfile="include/dpp/cluster.h" bodystart="182" bodyend="185"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="189" column="1" bodyfile="include/dpp/cluster.h" bodystart="189" bodyend="191"/>
+        <location file="include/dpp/cluster.h" line="194" column="1" bodyfile="include/dpp/cluster.h" bodystart="194" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="203" column="14" bodyfile="include/dpp/cluster.h" bodystart="203" bodyend="205"/>
+        <location file="include/dpp/cluster.h" line="208" column="14" bodyfile="include/dpp/cluster.h" bodystart="208" bodyend="210"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
@@ -253,15 +253,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="217" column="14" bodyfile="include/dpp/cluster.h" bodystart="217" bodyend="222"/>
+        <location file="include/dpp/cluster.h" line="222" column="14" bodyfile="include/dpp/cluster.h" bodystart="222" bodyend="227"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1event__router__t_1a02d0066788552b191413d201d2ef5997" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a2344d67111010777d10459e6b65bf2aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
-        <definition>event_handle dpp::event_router_t&lt; T &gt;::attach</definition>
-        <argsstring>(std::function&lt; dpp::task(const T &amp;)&gt; func)</argsstring>
-        <name>attach</name>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::co_attach</definition>
+        <argsstring>(std::function&lt; dpp::task(T)&gt; func)</argsstring>
+        <name>co_attach</name>
         <param>
-          <type>std::function&lt; <ref refid="structdpp_1_1task" kindref="compound">dpp::task</ref>(const T &amp;)&gt;</type>
+          <type>std::function&lt; <ref refid="structdpp_1_1task" kindref="compound">dpp::task</ref>(T)&gt;</type>
           <declname>func</declname>
         </param>
         <briefdescription>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="225" column="14" bodyfile="include/dpp/cluster.h" bodystart="225" bodyend="230"/>
+        <location file="include/dpp/cluster.h" line="230" column="14" bodyfile="include/dpp/cluster.h" bodystart="230" bodyend="235"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="239" column="6" bodyfile="include/dpp/cluster.h" bodystart="239" bodyend="242"/>
+        <location file="include/dpp/cluster.h" line="244" column="6" bodyfile="include/dpp/cluster.h" bodystart="244" bodyend="247"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -342,17 +342,17 @@
 </parameterlist>
 </para>
     </detaileddescription>
-    <location file="include/dpp/cluster.h" line="97" column="11" bodyfile="include/dpp/cluster.h" bodystart="97" bodyend="243"/>
+    <location file="include/dpp/cluster.h" line="97" column="11" bodyfile="include/dpp/cluster.h" bodystart="97" bodyend="248"/>
     <listofallmembers>
       <member refid="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach</name></member>
-      <member refid="classdpp_1_1event__router__t_1a02d0066788552b191413d201d2ef5997" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach</name></member>
       <member refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>call</name></member>
       <member refid="classdpp_1_1event__router__t_1a93941955d9d15030232a5aaa08bb9afa" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>cluster</name></member>
-      <member refid="classdpp_1_1event__router__t_1ad00756f778117f6f358f9d97ba4047be" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>coroutine_container</name></member>
+      <member refid="classdpp_1_1event__router__t_1a2344d67111010777d10459e6b65bf2aa" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>co_attach</name></member>
+      <member refid="classdpp_1_1event__router__t_1a176a88a4835f22aa23713e8034d7880f" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>coroutine_container</name></member>
       <member refid="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>detach</name></member>
       <member refid="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>dispatch_container</name></member>
       <member refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>empty</name></member>
-      <member refid="classdpp_1_1event__router__t_1a667c18e57cc53f960d3467e84358a822" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>event_router_t</name></member>
+      <member refid="classdpp_1_1event__router__t_1a5ead27e7e608a86b4622021fddb384c3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>event_router_t</name></member>
       <member refid="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>lock</name></member>
       <member refid="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator bool</name></member>
       <member refid="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator()</name></member>

@@ -1,12 +1,12 @@
 var NAVTREEINDEX9 =
 {
-"classdpp_1_1events_1_1guild__scheduled__event__user__add.html":[7,0,0,2,26],
-"classdpp_1_1events_1_1guild__scheduled__event__user__add.html#ac9f1bdde2278ab4a9e1bb95718c8b322":[7,0,0,2,26,0],
+"classdpp_1_1events_1_1guild__scheduled__event__user__add.html":[8,0,0,0,26],
 "classdpp_1_1events_1_1guild__scheduled__event__user__add.html#ac9f1bdde2278ab4a9e1bb95718c8b322":[8,0,0,0,26,0],
+"classdpp_1_1events_1_1guild__scheduled__event__user__add.html#ac9f1bdde2278ab4a9e1bb95718c8b322":[7,0,0,2,26,0],
 "classdpp_1_1events_1_1guild__scheduled__event__user__remove.html":[7,0,0,2,27],
 "classdpp_1_1events_1_1guild__scheduled__event__user__remove.html":[8,0,0,0,27],
-"classdpp_1_1events_1_1guild__scheduled__event__user__remove.html#abcf24bac4d27c9a44bc97f76ffa31a28":[7,0,0,2,27,0],
 "classdpp_1_1events_1_1guild__scheduled__event__user__remove.html#abcf24bac4d27c9a44bc97f76ffa31a28":[8,0,0,0,27,0],
+"classdpp_1_1events_1_1guild__scheduled__event__user__remove.html#abcf24bac4d27c9a44bc97f76ffa31a28":[7,0,0,2,27,0],
 "classdpp_1_1events_1_1guild__stickers__update.html":[7,0,0,2,28],
 "classdpp_1_1events_1_1guild__stickers__update.html":[8,0,0,0,28],
 "classdpp_1_1events_1_1guild__stickers__update.html#ac96cb0a87f3c0df3d70e87612a45c633":[7,0,0,2,28,0],
