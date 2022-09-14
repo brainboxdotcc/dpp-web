@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"namespacemembers_func.html":[7,1,1],
 "namespacemembers_g.html":[7,1,0,7],
 "namespacemembers_h.html":[7,1,0,8],
 "namespacemembers_i.html":[7,1,0,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structdpp_1_1automod__rule__create__t.html":[7,0,0,22],
 "structdpp_1_1automod__rule__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,0,22,5],
 "structdpp_1_1automod__rule__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[8,0,0,20,5],
-"structdpp_1_1automod__rule__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,0,22,4],
-"structdpp_1_1automod__rule__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[8,0,0,20,4]
+"structdpp_1_1automod__rule__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,0,22,4]
 };

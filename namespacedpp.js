@@ -667,7 +667,8 @@ var namespacedpp =
       [ "i_auto_moderation_execution", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5abbd9494f63b45f5d7a0723cf18ad65cb", null ],
       [ "i_default_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f", null ],
       [ "i_privileged_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ad4af85bb8ca011125370342f0961bf05", null ],
-      [ "i_all_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a76061cf60f9d06cf58ca38ddee1b825d", null ]
+      [ "i_all_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a76061cf60f9d06cf58ca38ddee1b825d", null ],
+      [ "i_unverified_default_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a78fe83dd74ee3a92448dc0142c168220", null ]
     ] ],
     [ "interaction_response_type", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02", [
       [ "ir_pong", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede", null ],
