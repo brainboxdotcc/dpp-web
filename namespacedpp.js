@@ -406,7 +406,9 @@ var namespacedpp =
       [ "aut_automod_rule_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dacfd1f4fd1d1faeb63dac7abfba4f4a48", null ],
       [ "aut_automod_rule_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da58a25fdc42553b266fabb6789c7581c1", null ],
       [ "aut_automod_rule_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daacd059685b2f4ea31f0737f8fbad79be", null ],
-      [ "aut_automod_block_message", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7e0e253d58c1eeebf4d8c3a65d08975d", null ]
+      [ "aut_automod_block_message", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7e0e253d58c1eeebf4d8c3a65d08975d", null ],
+      [ "aut_automod_flag_to_channel", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7", null ],
+      [ "aut_automod_user_communication_disabled", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da57a1690ffdfea4c9082a539aa966212b", null ]
     ] ],
     [ "automod_action_type", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14c", [
       [ "amod_action_block_message", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14ca1a78446ae2f6da41fb144c25e2b53e56", null ],
@@ -488,6 +490,10 @@ var namespacedpp =
       [ "cotype_button", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e", null ],
       [ "cotype_select", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc", null ]
     ] ],
+    [ "default_message_notification_t", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13", [
+      [ "dmn_all", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13ac05d61f047e3b275d068f6d53d00a51e", null ],
+      [ "dmn_only_mentions", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13a5fa1b59a563d5f28705eab0f2b112821", null ]
+    ] ],
     [ "discord_channel_flags", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480", [
       [ "dc_pinned_thread", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d", null ]
     ] ],
@@ -540,6 +546,14 @@ var namespacedpp =
       [ "es_completed", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc", null ],
       [ "es_cancelled", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03", null ]
     ] ],
+    [ "guild_afk_timeout_t", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9b", [
+      [ "afk_off", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9ba0f8f2ce101e751132131dc1053d22e17", null ],
+      [ "afk_60", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9babfb2b47382085d68d09188b6579a8d00", null ],
+      [ "afk_300", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9baf43e8954a3e455ee603ef58c1588ccfa", null ],
+      [ "afk_900", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9ba6710063e434ccecc53279d3270ce901a", null ],
+      [ "afk_1800", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9baed62c4ee1f1048a19d2db0604866a07b", null ],
+      [ "afk_3600", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9bae3e1cecae1718a6b28505f32a92efdec", null ]
+    ] ],
     [ "guild_explicit_content_t", "namespacedpp.html#a47f79e1142def583c59df70b1382319f", [
       [ "expl_disabled", "namespacedpp.html#a47f79e1142def583c59df70b1382319fa96ac568d12de35d133472107513a1479", null ],
       [ "expl_members_without_roles", "namespacedpp.html#a47f79e1142def583c59df70b1382319fa57b0f622812998eaab7b0e2c98c537ce", null ],
@@ -582,7 +596,8 @@ var namespacedpp =
     [ "guild_flags_extra", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e", [
       [ "g_premium_progress_bar_enabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e", null ],
       [ "g_animated_banner", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e", null ],
-      [ "g_auto_moderation", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b", null ]
+      [ "g_auto_moderation", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b", null ],
+      [ "g_invites_disabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eabc65e4309cc670db60917406e82b981a", null ]
     ] ],
     [ "guild_member_flags", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30", [
       [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
@@ -596,6 +611,12 @@ var namespacedpp =
       [ "nsfw_explicit", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a874c549de86f7e835ef471d6c9f05b35", null ],
       [ "nsfw_safe", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a5b915fea251bc3a57ff13b40b4eeeef9", null ],
       [ "nsfw_age_restricted", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a50782d1bfac8ee3e7c44afabe1ce8113", null ]
+    ] ],
+    [ "guild_premium_tier_t", "namespacedpp.html#ab7f40af8c547f08790e620708879fcba", [
+      [ "tier_none", "namespacedpp.html#ab7f40af8c547f08790e620708879fcbaaa99f6b37813bbe811aa62973aa794874", null ],
+      [ "tier_1", "namespacedpp.html#ab7f40af8c547f08790e620708879fcbaad417497864f8554fccd1b45a00f5e42d", null ],
+      [ "tier_2", "namespacedpp.html#ab7f40af8c547f08790e620708879fcbaa13f2b83dc517dcd8a6284d69a4b537b1", null ],
+      [ "tier_3", "namespacedpp.html#ab7f40af8c547f08790e620708879fcbaa1c2ba6f22c52d59c46886bb81aa20780", null ]
     ] ],
     [ "http_error", "namespacedpp.html#ae525add0ec39d647375aabe5ce455449", [
       [ "h_success", "namespacedpp.html#ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da", null ],

@@ -24,7 +24,7 @@ var searchData=
   ['prefixes_21',['prefixes',['../classdpp_1_1commandhandler.html#acbbac80b9d8fd5b3f82fd5bfc919f9bc',1,'dpp::commandhandler']]],
   ['premium_5fsince_22',['premium_since',['../classdpp_1_1guild__member.html#ae262a3f3d68a9728a92654e2f5b9c758',1,'dpp::guild_member']]],
   ['premium_5fsubscription_5fcount_23',['premium_subscription_count',['../classdpp_1_1guild.html#acd884a98bc58d26d29a6a5d2e249f1c9',1,'dpp::guild']]],
-  ['premium_5ftier_24',['premium_tier',['../classdpp_1_1guild.html#a164e4d1c99fcce1bed5a72d3bb5e493e',1,'dpp::guild']]],
+  ['premium_5ftier_24',['premium_tier',['../classdpp_1_1guild.html#ae86fad1b4f155d8ede1bd4c9cedb8b0f',1,'dpp::guild']]],
   ['presences_25',['presences',['../structdpp_1_1guild__create__t.html#aeabaca1f244d5cacf74f163fbd7ae403',1,'dpp::guild_create_t']]],
   ['presets_26',['presets',['../structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89',1,'dpp::automod_metadata']]],
   ['primary_5fsku_5fid_27',['primary_sku_id',['../classdpp_1_1application.html#a7aa6f427a79d6efb30d22f34dbecae98',1,'dpp::application']]],

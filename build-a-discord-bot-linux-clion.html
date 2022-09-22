@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('build-a-discord-bot-linux-clion.html',
 <div class="textblock"><p >This tutorial teaches you how to create a <em>working skeleton project you can build upon</em>, using the JetBrains-IDE <b><a href="https://www.jetbrains.com/clion/">CLion</a></b>.</p>
 <dl class="section note"><dt>Note</dt><dd>This tutorial will use <b>Ubuntu</b>! You might use other Distros if you prefer, but keep in mind the setup process might be different!</dd></dl>
 <p>Make sure you have CLion installed and works fine (run a <em>hello-world program</em>). You can <a href="https://www.jetbrains.com/de-de/clion/download/">download CLion here</a>.</p>
-<h2><a class="anchor" id="autotoc_md101"></a>
+<h2><a class="anchor" id="autotoc_md106"></a>
 Setup a project</h2>
 <p >Create a new project. Select C++17 as the Language standard, or C++20 if you want something more recent.</p>
 <p >We'll use the following file structure as a <em>skeleton project you can build upon</em>: </p><pre class="fragment">- your_project/
@@ -118,7 +118,7 @@ Setup a project</h2>
 <div class="image">
 <img src="build-clion-project-structure.png" alt=""/>
 </div>
-<h3><a class="anchor" id="autotoc_md102"></a>
+<h3><a class="anchor" id="autotoc_md107"></a>
 Configure CMake file</h3>
 <p >Paste this CMake configuration in the <code>CMakeLists.txt</code> and adapt it according to your needs:</p>
 <div class="fragment"><div class="line"># minimum CMake version required</div>
@@ -158,7 +158,7 @@ Configure CMake file</h3>
 <div class="image">
 <img src="build-clion-reload-cmake-project.png" alt=""/>
 </div>
-<h3><a class="anchor" id="autotoc_md103"></a>
+<h3><a class="anchor" id="autotoc_md108"></a>
 Add an example program</h3>
 <p >The next step is to write the bot. Copy and paste the following <a href="https://dpp.dev/firstbot.html">example program</a> in the <code>main.cpp</code> and set your bot token (see <a href="https://dpp.dev/creating-a-bot-application.html">Creating a Bot Token</a>) and guild ID to the example program:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
@@ -188,7 +188,7 @@ Add an example program</h3>
 <div class="line">}</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:276</div></div>
 <div class="ttc" id="aclassdpp_1_1interaction_html_aabbb8d58d708128098516ed443d5c140"><div class="ttname"><a href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">dpp::interaction::get_command_name</a></div><div class="ttdeci">std::string get_command_name() const</div><div class="ttdoc">Get the command name for a command interaction.</div></div>
-<div class="ttc" id="aclassdpp_1_1slashcommand_html"><div class="ttname"><a href="classdpp_1_1slashcommand.html">dpp::slashcommand</a></div><div class="ttdoc">Represents an application command, created by your bot either globally, or on a guild.</div><div class="ttdef"><b>Definition:</b> appcommand.h:987</div></div>
+<div class="ttc" id="aclassdpp_1_1slashcommand_html"><div class="ttname"><a href="classdpp_1_1slashcommand.html">dpp::slashcommand</a></div><div class="ttdoc">Represents an application command, created by your bot either globally, or on a guild.</div><div class="ttdef"><b>Definition:</b> appcommand.h:988</div></div>
 <div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; DPP_EXPORT cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div></div>
 <div class="ttc" id="anamespacedpp_html_af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"><div class="ttname"><a href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a></div><div class="ttdeci">@ st_wait</div><div class="ttdoc">Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will ...</div><div class="ttdef"><b>Definition:</b> cluster.h:259</div></div>
 <div class="ttc" id="astructdpp_1_1interaction__create__t_html_a8b0c69c156a1e532507a918c13414f14"><div class="ttname"><a href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">dpp::interaction_create_t::command</a></div><div class="ttdeci">interaction command</div><div class="ttdoc">command interaction</div><div class="ttdef"><b>Definition:</b> dispatcher.h:488</div></div>
@@ -196,7 +196,7 @@ Add an example program</h3>
 <div class="ttc" id="astructdpp_1_1slashcommand__t_html"><div class="ttname"><a href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a></div><div class="ttdoc">User has issued a slash command.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:499</div></div>
 </div><!-- fragment --><p >Hit the green "Run" button in the top-right to run the bot.</p>
 <p ><b>Congratulations, you've successfully set up a bot!</b></p>
-<h2><a class="anchor" id="autotoc_md104"></a>
+<h2><a class="anchor" id="autotoc_md109"></a>
 Troubleshooting</h2>
 <ul>
 <li>Stuck? You can find us on the <a href="https://discord.gg/dpp">official discord server</a> - ask away! We don't bite! </li>

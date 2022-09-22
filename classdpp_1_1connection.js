@@ -8,6 +8,7 @@ var classdpp_1_1connection =
     [ "name", "classdpp_1_1connection.html#a5973d4b0b93d6eb4e6035d31f05733d3", null ],
     [ "revoked", "classdpp_1_1connection.html#acd1b67d2114b91c2028ad7d21c224adf", null ],
     [ "show_activity", "classdpp_1_1connection.html#a2e9d5e0b9290006858d94018dfb71e5e", null ],
+    [ "two_way_link", "classdpp_1_1connection.html#a4c8173e9c96ceb7335460dfc52abb2de", null ],
     [ "type", "classdpp_1_1connection.html#a17e5272ec12e4772ae9cc94580542af6", null ],
     [ "verified", "classdpp_1_1connection.html#af5e6f1f0d16ad70243f750c9feb22a9a", null ],
     [ "visible", "classdpp_1_1connection.html#aac95d3131d2975510b155b2a067c2740", null ]

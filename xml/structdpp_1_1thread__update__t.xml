@@ -168,6 +168,9 @@
       <node id="27">
         <label>cache_policy_setting_t</label>
       </node>
+      <node id="45">
+        <label>default_message_notification_t</label>
+      </node>
       <node id="17">
         <label>double</label>
       </node>
@@ -180,12 +183,12 @@
           <edgelabel>user_policy</edgelabel>
         </childnode>
       </node>
-      <node id="49">
+      <node id="52">
         <label>dpp::channel</label>
         <link refid="classdpp_1_1channel"/>
         <childnode refid="19" relation="public-inheritance">
         </childnode>
-        <childnode refid="50" relation="public-inheritance">
+        <childnode refid="53" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>name</edgelabel>
@@ -209,7 +212,7 @@
         <childnode refid="11" relation="usage">
           <edgelabel>last_pin_timestamp</edgelabel>
         </childnode>
-        <childnode refid="51" relation="usage">
+        <childnode refid="54" relation="usage">
           <edgelabel>permissions</edgelabel>
         </childnode>
         <childnode refid="24" relation="usage">
@@ -373,26 +376,32 @@
           <edgelabel>member_count</edgelabel>
         </childnode>
         <childnode refid="24" relation="usage">
-          <edgelabel>max_video_channel_users</edgelabel>
           <edgelabel>premium_subscription_count</edgelabel>
           <edgelabel>shard_id</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
-          <edgelabel>afk_timeout</edgelabel>
-          <edgelabel>default_message_notifications</edgelabel>
-          <edgelabel>flags_extra</edgelabel>
-          <edgelabel>premium_tier</edgelabel>
-        </childnode>
         <childnode refid="44" relation="usage">
-          <edgelabel>verification_level</edgelabel>
+          <edgelabel>afk_timeout</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>flags_extra</edgelabel>
+          <edgelabel>max_video_channel_users</edgelabel>
         </childnode>
         <childnode refid="45" relation="usage">
-          <edgelabel>explicit_content_filter</edgelabel>
+          <edgelabel>default_message_notifications</edgelabel>
         </childnode>
         <childnode refid="46" relation="usage">
-          <edgelabel>mfa_level</edgelabel>
+          <edgelabel>premium_tier</edgelabel>
         </childnode>
         <childnode refid="47" relation="usage">
+          <edgelabel>verification_level</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>explicit_content_filter</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>mfa_level</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
           <edgelabel>nsfw_level</edgelabel>
         </childnode>
       </node>
@@ -432,7 +441,7 @@
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
-      <node id="51">
+      <node id="54">
         <label>dpp::permission</label>
         <link refid="classdpp_1_1permission"/>
         <childnode refid="12" relation="usage">
@@ -484,15 +493,15 @@
           <edgelabel>custom_writeable_ready</edgelabel>
         </childnode>
       </node>
-      <node id="48">
+      <node id="51">
         <label>dpp::thread</label>
         <link refid="classdpp_1_1thread"/>
-        <childnode refid="49" relation="public-inheritance">
+        <childnode refid="52" relation="public-inheritance">
         </childnode>
-        <childnode refid="52" relation="usage">
+        <childnode refid="55" relation="usage">
           <edgelabel>member</edgelabel>
         </childnode>
-        <childnode refid="53" relation="usage">
+        <childnode refid="56" relation="usage">
           <edgelabel>metadata</edgelabel>
         </childnode>
         <childnode refid="25" relation="usage">
@@ -500,7 +509,7 @@
           <edgelabel>message_count</edgelabel>
         </childnode>
       </node>
-      <node id="52">
+      <node id="55">
         <label>dpp::thread_member</label>
         <link refid="structdpp_1_1thread__member"/>
         <childnode refid="20" relation="usage">
@@ -514,7 +523,7 @@
           <edgelabel>flags</edgelabel>
         </childnode>
       </node>
-      <node id="53">
+      <node id="56">
         <label>dpp::thread_metadata</label>
         <link refid="structdpp_1_1thread__metadata"/>
         <childnode refid="11" relation="usage">
@@ -537,7 +546,7 @@
         <childnode refid="34" relation="usage">
           <edgelabel>updating_guild</edgelabel>
         </childnode>
-        <childnode refid="48" relation="usage">
+        <childnode refid="51" relation="usage">
           <edgelabel>updated</edgelabel>
         </childnode>
       </node>
@@ -591,16 +600,22 @@
       <node id="30">
         <label>event_router_t&lt;</label>
       </node>
-      <node id="45">
+      <node id="44">
+        <label>guild_afk_timeout_t</label>
+      </node>
+      <node id="48">
         <label>guild_explicit_content_t</label>
       </node>
-      <node id="47">
+      <node id="50">
         <label>guild_nsfw_level_t</label>
+      </node>
+      <node id="46">
+        <label>guild_premium_tier_t</label>
       </node>
       <node id="9">
         <label>int</label>
       </node>
-      <node id="50">
+      <node id="53">
         <label>dpp::json_interface&lt; channel &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
         <childnode refid="22" relation="template-instance">
@@ -621,7 +636,7 @@
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="46">
+      <node id="49">
         <label>mfa_level_t</label>
       </node>
       <node id="10">
@@ -695,7 +710,7 @@
           <edgelabel>&lt; snowflake, guild_member &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="44">
+      <node id="47">
         <label>verification_level_t</label>
       </node>
       <node id="28">

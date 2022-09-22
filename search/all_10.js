@@ -88,7 +88,7 @@ var searchData=
   ['prefixes_85',['prefixes',['../classdpp_1_1commandhandler.html#acbbac80b9d8fd5b3f82fd5bfc919f9bc',1,'dpp::commandhandler']]],
   ['premium_5fsince_86',['premium_since',['../classdpp_1_1guild__member.html#ae262a3f3d68a9728a92654e2f5b9c758',1,'dpp::guild_member']]],
   ['premium_5fsubscription_5fcount_87',['premium_subscription_count',['../classdpp_1_1guild.html#acd884a98bc58d26d29a6a5d2e249f1c9',1,'dpp::guild']]],
-  ['premium_5ftier_88',['premium_tier',['../classdpp_1_1guild.html#a164e4d1c99fcce1bed5a72d3bb5e493e',1,'dpp::guild']]],
+  ['premium_5ftier_88',['premium_tier',['../classdpp_1_1guild.html#ae86fad1b4f155d8ede1bd4c9cedb8b0f',1,'dpp::guild']]],
   ['presence_89',['presence',['../classdpp_1_1presence.html',1,'dpp::presence'],['../classdpp_1_1presence.html#a7d1175469fac4cb4abe10b8afdc74e83',1,'dpp::presence::presence(presence_status status, const activity &amp;a)'],['../classdpp_1_1presence.html#a98d7b61872c1f9a8f8cedcad3075c60f',1,'dpp::presence::presence(presence_status status, activity_type type, const std::string &amp;activity_description)'],['../classdpp_1_1presence.html#a48cd5e5ab349078d079d0d9f8098451b',1,'dpp::presence::presence()']]],
   ['presence_5fflags_90',['presence_flags',['../namespacedpp.html#a953f1484a5140481ffab2b248618fb22',1,'dpp']]],
   ['presence_5fmap_91',['presence_map',['../namespacedpp.html#aa71f7e347422516d1022707f1d3e5b1c',1,'dpp']]],
