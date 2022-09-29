@@ -235,8 +235,8 @@
 <para>A response to an interaction, used to reply to a command and initiate a message, which can be hidden from others (ephemeral) or visible to all. </para>
     </briefdescription>
     <detaileddescription>
-<para>The <ref refid="structdpp_1_1interaction__response" kindref="compound">dpp::interaction_response</ref> object wraps a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> object. To set the message as &apos;ephemeral&apos; (e.g. only the command issuer can see it) you should add the <ref refid="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf" kindref="member">dpp::m_ephemeral</ref> flag to the <ref refid="structdpp_1_1message_1a16fca6ff4595e0fcab2305205eb54626" kindref="member">dpp::message::flags</ref> field. e.g.:</para>
-<para><computeroutput>mymessage.flags |= <ref refid="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf" kindref="member">dpp::m_ephemeral</ref>;</computeroutput> </para>
+<para>The <ref refid="structdpp_1_1interaction__response" kindref="compound">dpp::interaction_response</ref> object wraps a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> object. To set the message as &apos;ephemeral&apos; (e.g. only the command issuer can see it) you should add the <ref refid="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf" kindref="member">dpp::m_ephemeral</ref> flag to the <ref refid="structdpp_1_1message_1ad2a0d774c691424e802f7f108d7c04c2" kindref="member">dpp::message::flags</ref> field. e.g.:</para>
+<para><computeroutput>mymessage.flags |= <ref refid="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf" kindref="member">dpp::m_ephemeral</ref>;</computeroutput> </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="4">
@@ -264,25 +264,25 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="20">
+      <node id="21">
         <label>bool</label>
       </node>
-      <node id="28">
+      <node id="27">
         <label>cache_policy_setting_t</label>
       </node>
-      <node id="26">
+      <node id="25">
         <label>double</label>
       </node>
-      <node id="27">
+      <node id="26">
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="28" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>emoji_policy</edgelabel>
           <edgelabel>role_policy</edgelabel>
           <edgelabel>user_policy</edgelabel>
         </childnode>
       </node>
-      <node id="25">
+      <node id="24">
         <label>dpp::cluster</label>
         <link refid="classdpp_1_1cluster"/>
         <childnode refid="11" relation="usage">
@@ -297,22 +297,22 @@
           <edgelabel>maxclusters</edgelabel>
           <edgelabel>numshards</edgelabel>
         </childnode>
-        <childnode refid="26" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>rest_ping</edgelabel>
         </childnode>
         <childnode refid="9" relation="usage">
           <edgelabel>me</edgelabel>
         </childnode>
-        <childnode refid="27" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>cache_policy</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>ws_mode</edgelabel>
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>terminating</edgelabel>
         </childnode>
-        <childnode refid="31" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>on_autocomplete</edgelabel>
           <edgelabel>on_automod_rule_create</edgelabel>
           <edgelabel>on_automod_rule_delete</edgelabel>
@@ -415,33 +415,33 @@
           <edgelabel>sent</edgelabel>
         </childnode>
         <childnode refid="20" relation="usage">
+          <edgelabel>message_reference</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>interaction</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>allowed_mentions</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
           <edgelabel>mention_everyone</edgelabel>
           <edgelabel>pinned</edgelabel>
           <edgelabel>tts</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
-          <edgelabel>flags</edgelabel>
-        </childnode>
-        <childnode refid="21" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="22" relation="usage">
-          <edgelabel>message_reference</edgelabel>
-        </childnode>
-        <childnode refid="23" relation="usage">
-          <edgelabel>interaction</edgelabel>
-        </childnode>
-        <childnode refid="24" relation="usage">
-          <edgelabel>allowed_mentions</edgelabel>
-        </childnode>
-        <childnode refid="25" relation="usage">
-          <edgelabel>owner</edgelabel>
-        </childnode>
       </node>
-      <node id="24">
+      <node id="23">
         <label>dpp::message::allowed_ref</label>
         <link refid="structdpp_1_1message_1_1allowed__ref"/>
-        <childnode refid="20" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>parse_everyone</edgelabel>
           <edgelabel>parse_roles</edgelabel>
           <edgelabel>parse_users</edgelabel>
@@ -452,7 +452,7 @@
           <edgelabel>users</edgelabel>
         </childnode>
       </node>
-      <node id="23">
+      <node id="22">
         <label>dpp::message::message_interaction_struct</label>
         <link refid="structdpp_1_1message_1_1message__interaction__struct"/>
         <childnode refid="7" relation="usage">
@@ -468,7 +468,7 @@
           <edgelabel>usr</edgelabel>
         </childnode>
       </node>
-      <node id="22">
+      <node id="20">
         <label>dpp::message::message_ref</label>
         <link refid="structdpp_1_1message_1_1message__ref"/>
         <childnode refid="7" relation="usage">
@@ -476,7 +476,7 @@
           <edgelabel>guild_id</edgelabel>
           <edgelabel>message_id</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>fail_if_not_exists</edgelabel>
         </childnode>
       </node>
@@ -518,7 +518,7 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="31">
+      <node id="30">
         <label>event_router_t&lt;</label>
       </node>
       <node id="4">
@@ -538,13 +538,13 @@
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="21">
+      <node id="31">
         <label>message_type</label>
       </node>
       <node id="12">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="30">
+      <node id="29">
         <label>condition_variable</label>
       </node>
       <node id="11">
@@ -570,7 +570,7 @@
       <node id="16">
         <label>uint8_t</label>
       </node>
-      <node id="29">
+      <node id="28">
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>

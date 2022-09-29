@@ -78,6 +78,7 @@
     <innerclass refid="classdpp_1_1exception" prot="public">dpp::exception</innerclass>
     <innerclass refid="classdpp_1_1file__exception" prot="public">dpp::file_exception</innerclass>
     <innerclass refid="structdpp_1_1form__submit__t" prot="public">dpp::form_submit_t</innerclass>
+    <innerclass refid="structdpp_1_1forum__tag" prot="public">dpp::forum_tag</innerclass>
     <innerclass refid="structdpp_1_1gateway" prot="public">dpp::gateway</innerclass>
     <innerclass refid="classdpp_1_1guild" prot="public">dpp::guild</innerclass>
     <innerclass refid="structdpp_1_1guild__ban__add__t" prot="public">dpp::guild_ban_add_t</innerclass>
@@ -1477,7 +1478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="36" column="1" bodyfile="include/dpp/channel.h" bodystart="36" bodyend="58"/>
+        <location file="include/dpp/channel.h" line="38" column="1" bodyfile="include/dpp/channel.h" bodystart="38" bodyend="60"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ab11f2d909f48313331797465e3fbba7d" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -1528,16 +1529,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="65" column="1" bodyfile="include/dpp/channel.h" bodystart="65" bodyend="74"/>
+        <location file="include/dpp/channel.h" line="67" column="1" bodyfile="include/dpp/channel.h" bodystart="67" bodyend="76"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480" prot="public" static="no" strong="no">
         <type>uint8_t</type>
         <name>discord_channel_flags</name>
         <enumvalue id="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d" prot="public">
           <name>dc_pinned_thread</name>
-          <initializer>= 0b00000001</initializer>
+          <initializer>= 1 &lt;&lt; 1</initializer>
           <briefdescription>
 <para>Thread pinned in a forum (type 15) channel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d" prot="public">
+          <name>dc_require_tag</name>
+          <initializer>=   1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>whether a tag is required to be specified when creating a thread in a forum channel. Tags are specified in the <ref refid="classdpp_1_1thread_1a8ab5e0ee2b50f2bab43090312749ce3d" kindref="member">thread::applied_tags</ref> field. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1549,7 +1559,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="79" column="1" bodyfile="include/dpp/channel.h" bodystart="79" bodyend="82"/>
+        <location file="include/dpp/channel.h" line="81" column="1" bodyfile="include/dpp/channel.h" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>default_forum_sort_order_t</name>
+        <enumvalue id="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f" prot="public">
+          <name>so_latest_activity</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Sort forum posts by activity (default) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06a51f6e6db5517bae1664dd2c9407eb8ee" prot="public">
+          <name>so_creation_date</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Sort forum posts by creation time (from most recent to oldest) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types for sort posts in a forum channel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="91" column="1" bodyfile="include/dpp/channel.h" bodystart="91" bodyend="96"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a1111f17373e7a972e77ffc0a6e621522" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -1579,7 +1619,55 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="87" column="1" bodyfile="include/dpp/channel.h" bodystart="87" bodyend="92"/>
+        <location file="include/dpp/channel.h" line="101" column="1" bodyfile="include/dpp/channel.h" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a9ea85c1ebdea9ba69a289c812bd630f8" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>auto_archive_duration_t</name>
+        <enumvalue id="namespacedpp_1a9ea85c1ebdea9ba69a289c812bd630f8a3c1c9e404925889813eb8d6af391fbab" prot="public">
+          <name>arc_1_hour</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Auto archive duration of 1 hour. (60 minutes) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a" prot="public">
+          <name>arc_1_day</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Auto archive duration of 1 day. (1440 minutes) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ea85c1ebdea9ba69a289c812bd630f8a3078b5981fc57205ef537a51998ad9aa" prot="public">
+          <name>arc_3_days</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Auto archive duration of 3 days. (4320 minutes) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a9ea85c1ebdea9ba69a289c812bd630f8a4f3c0a59162c2c11a368ba9bdcbeb452" prot="public">
+          <name>arc_1_week</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Auto archive duration of 1 week. (10080 minutes) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Auto archive duration of threads which will stop showing in the channel list after the specified period of inactivity. Defined as an enum to fit into 1 byte. Internally it&apos;ll be translated to minutes to match the API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="157" column="1" bodyfile="include/dpp/channel.h" bodystart="157" bodyend="166"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4" prot="public" static="no" strong="no">
         <type>bool</type>
@@ -3415,10 +3503,10 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="812" column="1" bodyfile="include/dpp/message.h" bodystart="812" bodyend="816"/>
       </memberdef>
-      <memberdef kind="enum" id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8" prot="public" static="no" strong="no">
-        <type></type>
+      <memberdef kind="enum" id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107" prot="public" static="no" strong="no">
+        <type>uint16_t</type>
         <name>message_flags</name>
-        <enumvalue id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8aab96a9099e9e1de98d2e0270dae49851" prot="public">
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107aab96a9099e9e1de98d2e0270dae49851" prot="public">
           <name>m_crossposted</name>
           <initializer>= 1 &lt;&lt; 0</initializer>
           <briefdescription>
@@ -3427,7 +3515,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d" prot="public">
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107ac60e9e9a6e22730c20443715ab88c04d" prot="public">
           <name>m_is_crosspost</name>
           <initializer>=  1 &lt;&lt; 1</initializer>
           <briefdescription>
@@ -3436,7 +3524,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01" prot="public">
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107a3146754ba261ee065671c1e6876e1d01" prot="public">
           <name>m_suppress_embeds</name>
           <initializer>= 1 &lt;&lt; 2</initializer>
           <briefdescription>
@@ -3445,7 +3533,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d" prot="public">
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107ad4f634843bd43c8f59a78cbea112024d" prot="public">
           <name>m_source_message_deleted</name>
           <initializer>= 1 &lt;&lt; 3</initializer>
           <briefdescription>
@@ -3454,7 +3542,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7" prot="public">
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107aa36edb052b986802f865dc32fe8e1ff7" prot="public">
           <name>m_urgent</name>
           <initializer>= 1 &lt;&lt; 4</initializer>
           <briefdescription>
@@ -3463,7 +3551,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1" prot="public">
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107a61709e40d160eb84fbd38ea63c01d4c1" prot="public">
           <name>m_has_thread</name>
           <initializer>= 1 &lt;&lt; 5</initializer>
           <briefdescription>
@@ -3472,7 +3560,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf" prot="public">
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf" prot="public">
           <name>m_ephemeral</name>
           <initializer>= 1 &lt;&lt; 6</initializer>
           <briefdescription>
@@ -3481,11 +3569,20 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1a0157b2de9cc3cf2f819b8e4d969f84a8a347b30bfa696feef3b8948a5ea20127e" prot="public">
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107a347b30bfa696feef3b8948a5ea20127e" prot="public">
           <name>m_loading</name>
           <initializer>= 1 &lt;&lt; 7</initializer>
           <briefdescription>
 <para>this message is an Interaction Response and the bot is &quot;thinking&quot; </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746" prot="public">
+          <name>m_thread_mention_failed</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+<para>this message failed to mention some roles and add their members to the thread </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -3497,7 +3594,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="943" column="1" bodyfile="include/dpp/message.h" bodystart="943" bodyend="960"/>
+        <location file="include/dpp/message.h" line="943" column="1" bodyfile="include/dpp/message.h" bodystart="943" bodyend="962"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1acd7f41dcc93c1cf48514d2b123e4d8bc" prot="public" static="no" strong="no">
         <type></type>
@@ -3725,7 +3822,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1001" column="1" bodyfile="include/dpp/message.h" bodystart="1001" bodyend="1050"/>
+        <location file="include/dpp/message.h" line="1003" column="1" bodyfile="include/dpp/message.h" bodystart="1003" bodyend="1052"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52" prot="public" static="no" strong="no">
         <type></type>
@@ -3764,7 +3861,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1055" column="1" bodyfile="include/dpp/message.h" bodystart="1055" bodyend="1073"/>
+        <location file="include/dpp/message.h" line="1057" column="1" bodyfile="include/dpp/message.h" bodystart="1057" bodyend="1075"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" prot="public" static="no" strong="no">
         <type></type>
@@ -5514,7 +5611,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="162" column="28" bodyfile="include/dpp/channel.h" bodystart="162" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="234" column="28" bodyfile="include/dpp/channel.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &gt;</type>
@@ -5528,7 +5625,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="639" column="28" bodyfile="include/dpp/channel.h" bodystart="639" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="740" column="28" bodyfile="include/dpp/channel.h" bodystart="740" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1thread" kindref="compound">thread</ref> &gt;</type>
@@ -5542,7 +5639,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="644" column="28" bodyfile="include/dpp/channel.h" bodystart="644" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="745" column="28" bodyfile="include/dpp/channel.h" bodystart="745" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aeda63f2562bc6f52b50b793b70341abd" prot="public" static="no">
         <type>std::variant&lt; std::monostate, std::string, <ref refid="classdpp_1_1role" kindref="compound">dpp::role</ref>, <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref>, <ref refid="structdpp_1_1resolved__user" kindref="compound">dpp::resolved_user</ref>, int64_t, bool, double &gt;</type>
@@ -5867,7 +5964,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1452" column="28" bodyfile="include/dpp/message.h" bodystart="1452" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1463" column="28" bodyfile="include/dpp/message.h" bodystart="1463" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
@@ -5881,7 +5978,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1455" column="28" bodyfile="include/dpp/message.h" bodystart="1455" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1466" column="28" bodyfile="include/dpp/message.h" bodystart="1466" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref> &gt;</type>
@@ -5895,7 +5992,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1458" column="28" bodyfile="include/dpp/message.h" bodystart="1458" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="1469" column="28" bodyfile="include/dpp/message.h" bodystart="1469" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" prot="public" static="no">
         <type>size_t</type>
@@ -6955,7 +7052,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="626" column="6" declfile="include/dpp/channel.h" declline="626" declcolumn="6"/>
+        <location file="include/dpp/channel.h" line="727" column="6" declfile="include/dpp/channel.h" declline="727" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a7b4c7cea42e58d376ea1f7aa6d630c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6995,7 +7092,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="634" column="6" declfile="include/dpp/channel.h" declline="634" declcolumn="6"/>
+        <location file="include/dpp/channel.h" line="735" column="6" declfile="include/dpp/channel.h" declline="735" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1ad0e413ad8ebc843b00dd129f1c70da54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref> DPP_EXPORT</type>

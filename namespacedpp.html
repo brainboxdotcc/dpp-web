@@ -217,7 +217,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the caching policy of the cluster.  <a href="structdpp_1_1cache__policy__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html">channel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A definition of a discord channel There are one of these for every channel type except threads. Threads are special snowflakes. Get it? A Discord pun. Hahaha. .... I'll get my coat.  <a href="classdpp_1_1channel.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A definition of a discord channel. There are one of these for every channel type except threads. Threads are special snowflakes. Get it? A Discord pun. Hahaha. .... I'll get my coat.  <a href="classdpp_1_1channel.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel__collector.html">channel_collector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel collector. Collects channels during a set timeframe and returns them in a list via the <a class="el" href="classdpp_1_1channel__collector.html#aac2027a7fa0c1f07dd1239ad93be7abc" title="Return the completed collection.">completed()</a> method.  <a href="classdpp_1_1channel__collector.html#details">More...</a><br /></td></tr>
@@ -355,6 +355,9 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an error reading or writing to a file.  <a href="classdpp_1_1file__exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1form__submit__t.html">form_submit_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1forum__tag.html">forum_tag</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a tag that is able to be applied to a thread in a forum channel.  <a href="structdpp_1_1forum__tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1gateway.html">gateway</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various information from the 'get gateway bot' api call.  <a href="structdpp_1_1gateway.html#details">More...</a><br /></td></tr>
@@ -1120,15 +1123,28 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ab11f2d909f48313331797465e3fbba7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our flags as stored in the object.  <a href="namespacedpp.html#ab11f2d909f48313331797465e3fbba7d">More...</a><br /></td></tr>
 <tr class="separator:ab11f2d909f48313331797465e3fbba7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a3c6f970a9ba600ecf7c8e16f6ec480"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480">discord_channel_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d">dc_pinned_thread</a> = 0b00000001
+<tr class="memitem:a1a3c6f970a9ba600ecf7c8e16f6ec480"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480">discord_channel_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d">dc_pinned_thread</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d">dc_require_tag</a> = 1 &lt;&lt; 4
  }</td></tr>
 <tr class="memdesc:a1a3c6f970a9ba600ecf7c8e16f6ec480"><td class="mdescLeft">&#160;</td><td class="mdescRight">The flags in discord channel's raw "flags" field. We use these for serialisation only, right now. Might be better to create a new field than to make the existing channel::flags from uint8_t to uint16_t, if discord adds more flags in future.  <a href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480">More...</a><br /></td></tr>
 <tr class="separator:a1a3c6f970a9ba600ecf7c8e16f6ec480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8154fdded2c361ae6c91397cd3e4f06"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06">default_forum_sort_order_t</a> : uint8_t { <a class="el" href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f">so_latest_activity</a> = 0
+, <a class="el" href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06a51f6e6db5517bae1664dd2c9407eb8ee">so_creation_date</a> = 1
+ }</td></tr>
+<tr class="memdesc:ab8154fdded2c361ae6c91397cd3e4f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types for sort posts in a forum channel.  <a href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06">More...</a><br /></td></tr>
+<tr class="separator:ab8154fdded2c361ae6c91397cd3e4f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1111f17373e7a972e77ffc0a6e621522"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522">overwrite_type</a> : uint8_t { <a class="el" href="namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522ab1e3ea27fc98089b63c9e89fe7c44df5">ot_role</a> = 0
 , <a class="el" href="namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522a55d9fc605a432262deb345fd89af929b">ot_member</a> = 1
  }</td></tr>
 <tr class="memdesc:a1111f17373e7a972e77ffc0a6e621522"><td class="mdescLeft">&#160;</td><td class="mdescRight">channel permission overwrite types  <a href="namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522">More...</a><br /></td></tr>
 <tr class="separator:a1111f17373e7a972e77ffc0a6e621522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea85c1ebdea9ba69a289c812bd630f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8">auto_archive_duration_t</a> : uint8_t { <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8a3c1c9e404925889813eb8d6af391fbab">arc_1_hour</a> = 1
+, <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a">arc_1_day</a> = 2
+, <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8a3078b5981fc57205ef537a51998ad9aa">arc_3_days</a> = 3
+, <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8a4f3c0a59162c2c11a368ba9bdcbeb452">arc_1_week</a> = 4
+ }</td></tr>
+<tr class="memdesc:a9ea85c1ebdea9ba69a289c812bd630f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto archive duration of threads which will stop showing in the channel list after the specified period of inactivity. Defined as an enum to fit into 1 byte. Internally it'll be translated to minutes to match the API.  <a href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8">More...</a><br /></td></tr>
+<tr class="separator:a9ea85c1ebdea9ba69a289c812bd630f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af447e04d0490cd4a9de085e4a758faa4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4">start_type</a> : bool { <a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">st_wait</a> = false
 , <a class="el" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e">st_return</a> = true
  }</td></tr>
@@ -1426,20 +1442,22 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ae2ee458707682eabe7d539c9a13beac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file format (png, apng, lottie) of a sticker.  <a href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2">More...</a><br /></td></tr>
 <tr class="separator:ae2ee458707682eabe7d539c9a13beac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0157b2de9cc3cf2f819b8e4d969f84a8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8">message_flags</a> { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aab96a9099e9e1de98d2e0270dae49851">m_crossposted</a> = 1 &lt;&lt; 0
-, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d">m_is_crosspost</a> = 1 &lt;&lt; 1
-, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01">m_suppress_embeds</a> = 1 &lt;&lt; 2
-, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d">m_source_message_deleted</a> = 1 &lt;&lt; 3
+<tr class="memitem:ad0f89d72815d4d483f689baa5cca5107"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107">message_flags</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107aab96a9099e9e1de98d2e0270dae49851">m_crossposted</a> = 1 &lt;&lt; 0
+, <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ac60e9e9a6e22730c20443715ab88c04d">m_is_crosspost</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a3146754ba261ee065671c1e6876e1d01">m_suppress_embeds</a> = 1 &lt;&lt; 2
+, <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ad4f634843bd43c8f59a78cbea112024d">m_source_message_deleted</a> = 1 &lt;&lt; 3
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7">m_urgent</a> = 1 &lt;&lt; 4
-, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1">m_has_thread</a> = 1 &lt;&lt; 5
-, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf">m_ephemeral</a> = 1 &lt;&lt; 6
-, <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a347b30bfa696feef3b8948a5ea20127e">m_loading</a> = 1 &lt;&lt; 7
+&#160;&#160;<a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107aa36edb052b986802f865dc32fe8e1ff7">m_urgent</a> = 1 &lt;&lt; 4
+, <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a61709e40d160eb84fbd38ea63c01d4c1">m_has_thread</a> = 1 &lt;&lt; 5
+, <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf">m_ephemeral</a> = 1 &lt;&lt; 6
+, <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a347b30bfa696feef3b8948a5ea20127e">m_loading</a> = 1 &lt;&lt; 7
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746">m_thread_mention_failed</a> = 1 &lt;&lt; 8
 <br />
  }</td></tr>
-<tr class="memdesc:a0157b2de9cc3cf2f819b8e4d969f84a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmask flags for a <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a>.  <a href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8">More...</a><br /></td></tr>
-<tr class="separator:a0157b2de9cc3cf2f819b8e4d969f84a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ad0f89d72815d4d483f689baa5cca5107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmask flags for a <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a>.  <a href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107">More...</a><br /></td></tr>
+<tr class="separator:ad0f89d72815d4d483f689baa5cca5107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd7f41dcc93c1cf48514d2b123e4d8bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc">message_type</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152">mt_default</a> = 0
 , <a class="el" href="namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcae8c521e0821e3ce39219566726f46df3">mt_recipient_add</a> = 1
@@ -3127,6 +3145,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a9ea85c1ebdea9ba69a289c812bd630f8" name="a9ea85c1ebdea9ba69a289c812bd630f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea85c1ebdea9ba69a289c812bd630f8">&#9670;&nbsp;</a></span>auto_archive_duration_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8">dpp::auto_archive_duration_t</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Auto archive duration of threads which will stop showing in the channel list after the specified period of inactivity. Defined as an enum to fit into 1 byte. Internally it'll be translated to minutes to match the API. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9ea85c1ebdea9ba69a289c812bd630f8a3c1c9e404925889813eb8d6af391fbab" name="a9ea85c1ebdea9ba69a289c812bd630f8a3c1c9e404925889813eb8d6af391fbab"></a>arc_1_hour&#160;</td><td class="fielddoc"><p >Auto archive duration of 1 hour. (60 minutes) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a" name="a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a"></a>arc_1_day&#160;</td><td class="fielddoc"><p >Auto archive duration of 1 day. (1440 minutes) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9ea85c1ebdea9ba69a289c812bd630f8a3078b5981fc57205ef537a51998ad9aa" name="a9ea85c1ebdea9ba69a289c812bd630f8a3078b5981fc57205ef537a51998ad9aa"></a>arc_3_days&#160;</td><td class="fielddoc"><p >Auto archive duration of 3 days. (4320 minutes) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9ea85c1ebdea9ba69a289c812bd630f8a4f3c0a59162c2c11a368ba9bdcbeb452" name="a9ea85c1ebdea9ba69a289c812bd630f8a4f3c0a59162c2c11a368ba9bdcbeb452"></a>arc_1_week&#160;</td><td class="fielddoc"><p >Auto archive duration of 1 week. (10080 minutes) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a3ad85ab5a039a0c7f46107a02440a14c" name="a3ad85ab5a039a0c7f46107a02440a14c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ad85ab5a039a0c7f46107a02440a14c">&#9670;&nbsp;</a></span>automod_action_type</h2>
 
@@ -3459,6 +3503,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ab8154fdded2c361ae6c91397cd3e4f06" name="ab8154fdded2c361ae6c91397cd3e4f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8154fdded2c361ae6c91397cd3e4f06">&#9670;&nbsp;</a></span>default_forum_sort_order_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06">dpp::default_forum_sort_order_t</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Types for sort posts in a forum channel. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f" name="ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f"></a>so_latest_activity&#160;</td><td class="fielddoc"><p >Sort forum posts by activity (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab8154fdded2c361ae6c91397cd3e4f06a51f6e6db5517bae1664dd2c9407eb8ee" name="ab8154fdded2c361ae6c91397cd3e4f06a51f6e6db5517bae1664dd2c9407eb8ee"></a>so_creation_date&#160;</td><td class="fielddoc"><p >Sort forum posts by creation time (from most recent to oldest) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a3be39a31818d9499750c3efd43281d13" name="a3be39a31818d9499750c3efd43281d13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3be39a31818d9499750c3efd43281d13">&#9670;&nbsp;</a></span>default_message_notification_t</h2>
 
@@ -3496,6 +3562,8 @@ Variables</h2></td></tr>
 <p>The flags in discord channel's raw "flags" field. We use these for serialisation only, right now. Might be better to create a new field than to make the existing <a class="el" href="classdpp_1_1channel.html#a709f24110a06b558170cae9231572bef">channel::flags</a> from uint8_t to uint16_t, if discord adds more flags in future. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d" name="a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d"></a>dc_pinned_thread&#160;</td><td class="fielddoc"><p >Thread pinned in a forum (type 15) channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d" name="a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d"></a>dc_require_tag&#160;</td><td class="fielddoc"><p >whether a tag is required to be specified when creating a thread in a forum channel. Tags are specified in the <a class="el" href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">thread::applied_tags</a> field. </p>
 </td></tr>
 </table>
 
@@ -4247,35 +4315,37 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0157b2de9cc3cf2f819b8e4d969f84a8" name="a0157b2de9cc3cf2f819b8e4d969f84a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0157b2de9cc3cf2f819b8e4d969f84a8">&#9670;&nbsp;</a></span>message_flags</h2>
+<a id="ad0f89d72815d4d483f689baa5cca5107" name="ad0f89d72815d4d483f689baa5cca5107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f89d72815d4d483f689baa5cca5107">&#9670;&nbsp;</a></span>message_flags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8">dpp::message_flags</a></td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107">dpp::message_flags</a> : uint16_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Bitmask flags for a <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8aab96a9099e9e1de98d2e0270dae49851" name="a0157b2de9cc3cf2f819b8e4d969f84a8aab96a9099e9e1de98d2e0270dae49851"></a>m_crossposted&#160;</td><td class="fielddoc"><p >this message has been published to subscribed channels (via Channel Following) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107aab96a9099e9e1de98d2e0270dae49851" name="ad0f89d72815d4d483f689baa5cca5107aab96a9099e9e1de98d2e0270dae49851"></a>m_crossposted&#160;</td><td class="fielddoc"><p >this message has been published to subscribed channels (via Channel Following) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d" name="a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d"></a>m_is_crosspost&#160;</td><td class="fielddoc"><p >this message originated from a message in another channel (via Channel Following) </p>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107ac60e9e9a6e22730c20443715ab88c04d" name="ad0f89d72815d4d483f689baa5cca5107ac60e9e9a6e22730c20443715ab88c04d"></a>m_is_crosspost&#160;</td><td class="fielddoc"><p >this message originated from a message in another channel (via Channel Following) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01" name="a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01"></a>m_suppress_embeds&#160;</td><td class="fielddoc"><p >do not include any embeds when serializing this message </p>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107a3146754ba261ee065671c1e6876e1d01" name="ad0f89d72815d4d483f689baa5cca5107a3146754ba261ee065671c1e6876e1d01"></a>m_suppress_embeds&#160;</td><td class="fielddoc"><p >do not include any embeds when serializing this message </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d" name="a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d"></a>m_source_message_deleted&#160;</td><td class="fielddoc"><p >the source message for this crosspost has been deleted (via Channel Following) </p>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107ad4f634843bd43c8f59a78cbea112024d" name="ad0f89d72815d4d483f689baa5cca5107ad4f634843bd43c8f59a78cbea112024d"></a>m_source_message_deleted&#160;</td><td class="fielddoc"><p >the source message for this crosspost has been deleted (via Channel Following) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7" name="a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7"></a>m_urgent&#160;</td><td class="fielddoc"><p >this message came from the urgent message system </p>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107aa36edb052b986802f865dc32fe8e1ff7" name="ad0f89d72815d4d483f689baa5cca5107aa36edb052b986802f865dc32fe8e1ff7"></a>m_urgent&#160;</td><td class="fielddoc"><p >this message came from the urgent message system </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1" name="a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1"></a>m_has_thread&#160;</td><td class="fielddoc"><p >this message has an associated thread, with the same id as the message </p>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107a61709e40d160eb84fbd38ea63c01d4c1" name="ad0f89d72815d4d483f689baa5cca5107a61709e40d160eb84fbd38ea63c01d4c1"></a>m_has_thread&#160;</td><td class="fielddoc"><p >this message has an associated thread, with the same id as the message </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf" name="a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf"></a>m_ephemeral&#160;</td><td class="fielddoc"><p >this message is only visible to the user who invoked the Interaction </p>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf" name="ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf"></a>m_ephemeral&#160;</td><td class="fielddoc"><p >this message is only visible to the user who invoked the Interaction </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0157b2de9cc3cf2f819b8e4d969f84a8a347b30bfa696feef3b8948a5ea20127e" name="a0157b2de9cc3cf2f819b8e4d969f84a8a347b30bfa696feef3b8948a5ea20127e"></a>m_loading&#160;</td><td class="fielddoc"><p >this message is an Interaction Response and the bot is "thinking" </p>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107a347b30bfa696feef3b8948a5ea20127e" name="ad0f89d72815d4d483f689baa5cca5107a347b30bfa696feef3b8948a5ea20127e"></a>m_loading&#160;</td><td class="fielddoc"><p >this message is an Interaction Response and the bot is "thinking" </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746" name="ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746"></a>m_thread_mention_failed&#160;</td><td class="fielddoc"><p >this message failed to mention some roles and add their members to the thread </p>
 </td></tr>
 </table>
 
@@ -7544,7 +7614,7 @@ template&lt;typename T , class F , class... Ts&gt; </div>
 <p >Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a> m = dpp::sync&lt;dpp::message&gt;(&amp;bot, &amp;<a class="code hl_function" href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a>, <a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(channel_id, <span class="stringliteral">&quot;moo.&quot;</span>));</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html_aa6ae3dc32ebc2dd14264962710d35af7"><div class="ttname"><a href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a></div><div class="ttdeci">void message_create(const struct message &amp;m, command_completion_event_t callback=utility::log_error())</div><div class="ttdoc">Send a message to a channel. The callback function is called when the message has been sent.</div></div>
-<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1105</div></div>
+<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1107</div></div>
 </div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>As previously mentioned, this template will block. It is ill-advised to call this outside of a separate thread and this should never be directly used in any event such as <a class="el" href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a>! </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">

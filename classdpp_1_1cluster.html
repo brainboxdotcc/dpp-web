@@ -610,6 +610,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4fd6cc6c6635e6e0a9bdddcc6cda0e97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a4fd6cc6c6635e6e0a9bdddcc6cda0e97">current_user_leave_guild</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a4fd6cc6c6635e6e0a9bdddcc6cda0e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leave a guild.  <a href="classdpp_1_1cluster.html#a4fd6cc6c6635e6e0a9bdddcc6cda0e97">More...</a><br /></td></tr>
 <tr class="separator:a4fd6cc6c6635e6e0a9bdddcc6cda0e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec00b0371e7b282c1a3a6bb7a6de613d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aec00b0371e7b282c1a3a6bb7a6de613d">thread_create_in_forum</a> (const std::string &amp;thread_name, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, <a class="el" href="structdpp_1_1message.html">message</a> &amp;msg, <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8">auto_archive_duration_t</a> auto_archive_duration, uint16_t rate_limit_per_user, std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; applied_tags={}, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
+<tr class="memdesc:aec00b0371e7b282c1a3a6bb7a6de613d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread in forum channel.  <a href="classdpp_1_1cluster.html#aec00b0371e7b282c1a3a6bb7a6de613d">More...</a><br /></td></tr>
+<tr class="separator:aec00b0371e7b282c1a3a6bb7a6de613d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c41c2fada744b16b48d8a5538e19fc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a0c41c2fada744b16b48d8a5538e19fc5">thread_create</a> (const std::string &amp;thread_name, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, uint16_t auto_archive_duration, <a class="el" href="namespacedpp.html#a732e832861149a278f27ea7840b8e4ca">channel_type</a> thread_type, bool invitable, uint16_t rate_limit_per_user, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a0c41c2fada744b16b48d8a5538e19fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread.  <a href="classdpp_1_1cluster.html#a0c41c2fada744b16b48d8a5538e19fc5">More...</a><br /></td></tr>
 <tr class="separator:a0c41c2fada744b16b48d8a5538e19fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2552,7 +2555,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to create </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel. There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2803,7 +2806,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel to edit/update </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel. There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3183,7 +3186,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Channel ID to retrieve </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel. There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -10791,7 +10794,7 @@ unless you want something special from <code><a class="el" href="classdpp_1_1use
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>User ID to create DM channel with </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1channel.html" title="A definition of a discord channel. There are one of these for every channel type except threads....">dpp::channel</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -23506,6 +23509,80 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
     <tr><td class="paramname">thread_type</td><td>Type of thread - CHANNEL_PUBLIC_THREAD, CHANNEL_ANNOUNCEMENT_THREAD, CHANNEL_PRIVATE_THREAD </td></tr>
     <tr><td class="paramname">invitable</td><td>whether non-moderators can add other non-moderators to a thread; only available when creating a private thread </td></tr>
     <tr><td class="paramname">rate_limit_per_user</td><td>amount of seconds a user has to wait before sending another message (0-21600); bots, as well as users with the permission manage_messages, manage_thread, or manage_channel, are unaffected </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1thread.html" title="A definition of a discord thread. A thread is a superset of a channel. Not to be confused with std::t...">dpp::thread</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec00b0371e7b282c1a3a6bb7a6de613d" name="aec00b0371e7b282c1a3a6bb7a6de613d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec00b0371e7b282c1a3a6bb7a6de613d">&#9670;&nbsp;</a></span>thread_create_in_forum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::thread_create_in_forum </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>thread_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8">auto_archive_duration_t</a>&#160;</td>
+          <td class="paramname"><em>auto_archive_duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>rate_limit_per_user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt;&#160;</td>
+          <td class="paramname"><em>applied_tags</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code><a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a thread in forum channel. </p>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#start-thread-in-forum-channel">https://discord.com/developers/docs/resources/channel#start-thread-in-forum-channel</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_name</td><td>Name of the forum thread </td></tr>
+    <tr><td class="paramname">channel_id</td><td>Forum channel in which thread to create </td></tr>
+    <tr><td class="paramname">msg</td><td>The message to start the thread with </td></tr>
+    <tr><td class="paramname">auto_archive_duration</td><td>Duration to automatically archive the thread after recent activity </td></tr>
+    <tr><td class="paramname">rate_limit_per_user</td><td>amount of seconds a user has to wait before sending another message (0-21600); bots, as well as users with the permission manage_messages, manage_thread, or manage_channel, are unaffected </td></tr>
+    <tr><td class="paramname">applied_tags</td><td>List of IDs of forum tags (<a class="el" href="structdpp_1_1forum__tag.html" title="Represents a tag that is able to be applied to a thread in a forum channel.">dpp::forum_tag</a>) to apply to this thread </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1thread.html" title="A definition of a discord thread. A thread is a superset of a channel. Not to be confused with std::t...">dpp::thread</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>

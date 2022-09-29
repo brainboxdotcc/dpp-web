@@ -203,11 +203,17 @@
       <node id="42">
         <label>T</label>
       </node>
+      <node id="55">
+        <label>auto_archive_duration_t</label>
+      </node>
       <node id="8">
         <label>bool</label>
       </node>
       <node id="27">
         <label>cache_policy_setting_t</label>
+      </node>
+      <node id="56">
+        <label>default_forum_sort_order_t</label>
       </node>
       <node id="45">
         <label>default_message_notification_t</label>
@@ -237,11 +243,14 @@
           <edgelabel>topic</edgelabel>
         </childnode>
         <childnode refid="36" relation="usage">
+          <edgelabel>available_tags</edgelabel>
           <edgelabel>permission_overwrites</edgelabel>
           <edgelabel>recipients</edgelabel>
         </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>default_reaction</edgelabel>
+        </childnode>
         <childnode refid="23" relation="usage">
-          <edgelabel>banner</edgelabel>
           <edgelabel>icon</edgelabel>
         </childnode>
         <childnode refid="20" relation="usage">
@@ -253,13 +262,20 @@
         <childnode refid="11" relation="usage">
           <edgelabel>last_pin_timestamp</edgelabel>
         </childnode>
-        <childnode refid="53" relation="usage">
+        <childnode refid="54" relation="usage">
           <edgelabel>permissions</edgelabel>
         </childnode>
         <childnode refid="24" relation="usage">
           <edgelabel>bitrate</edgelabel>
+          <edgelabel>default_thread_rate_limit_per_user</edgelabel>
           <edgelabel>position</edgelabel>
           <edgelabel>rate_limit_per_user</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>default_auto_archive_duration</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>default_sort_order</edgelabel>
         </childnode>
         <childnode refid="25" relation="usage">
           <edgelabel>flags</edgelabel>
@@ -358,12 +374,12 @@
           <edgelabel>connecting_voice_channels</edgelabel>
         </childnode>
       </node>
-      <node id="54">
+      <node id="57">
         <label>dpp::emoji</label>
         <link refid="classdpp_1_1emoji"/>
         <childnode refid="19" relation="public-inheritance">
         </childnode>
-        <childnode refid="55" relation="public-inheritance">
+        <childnode refid="58" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>image_data</edgelabel>
@@ -515,11 +531,11 @@
         <childnode refid="51" relation="usage">
           <edgelabel>reacting_channel</edgelabel>
         </childnode>
-        <childnode refid="54" relation="usage">
+        <childnode refid="57" relation="usage">
           <edgelabel>reacting_emoji</edgelabel>
         </childnode>
       </node>
-      <node id="53">
+      <node id="54">
         <label>dpp::permission</label>
         <link refid="classdpp_1_1permission"/>
         <childnode refid="12" relation="usage">
@@ -643,7 +659,7 @@
           <edgelabel>&lt; channel &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="55">
+      <node id="58">
         <label>dpp::json_interface&lt; emoji &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
         <childnode refid="22" relation="template-instance">
@@ -707,6 +723,9 @@
       </node>
       <node id="33">
         <label>unordered_map&lt;</label>
+      </node>
+      <node id="53">
+        <label>variant&lt;</label>
       </node>
       <node id="36">
         <label>vector&lt;</label>

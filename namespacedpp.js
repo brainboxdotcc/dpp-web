@@ -134,6 +134,7 @@ var namespacedpp =
     [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
     [ "file_exception", "classdpp_1_1file__exception.html", "classdpp_1_1file__exception" ],
     [ "form_submit_t", "structdpp_1_1form__submit__t.html", "structdpp_1_1form__submit__t" ],
+    [ "forum_tag", "structdpp_1_1forum__tag.html", "structdpp_1_1forum__tag" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
     [ "guild", "classdpp_1_1guild.html", "classdpp_1_1guild" ],
     [ "guild_ban_add_t", "structdpp_1_1guild__ban__add__t.html", "structdpp_1_1guild__ban__add__t" ],
@@ -410,6 +411,12 @@ var namespacedpp =
       [ "aut_automod_flag_to_channel", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7", null ],
       [ "aut_automod_user_communication_disabled", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da57a1690ffdfea4c9082a539aa966212b", null ]
     ] ],
+    [ "auto_archive_duration_t", "namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8", [
+      [ "arc_1_hour", "namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8a3c1c9e404925889813eb8d6af391fbab", null ],
+      [ "arc_1_day", "namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a", null ],
+      [ "arc_3_days", "namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8a3078b5981fc57205ef537a51998ad9aa", null ],
+      [ "arc_1_week", "namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8a4f3c0a59162c2c11a368ba9bdcbeb452", null ]
+    ] ],
     [ "automod_action_type", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14c", [
       [ "amod_action_block_message", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14ca1a78446ae2f6da41fb144c25e2b53e56", null ],
       [ "amod_action_send_alert", "namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14caccf0e42b2f286ea0631e4a427662425c", null ],
@@ -490,12 +497,17 @@ var namespacedpp =
       [ "cotype_button", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e", null ],
       [ "cotype_select", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc", null ]
     ] ],
+    [ "default_forum_sort_order_t", "namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06", [
+      [ "so_latest_activity", "namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f", null ],
+      [ "so_creation_date", "namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06a51f6e6db5517bae1664dd2c9407eb8ee", null ]
+    ] ],
     [ "default_message_notification_t", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13", [
       [ "dmn_all", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13ac05d61f047e3b275d068f6d53d00a51e", null ],
       [ "dmn_only_mentions", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13a5fa1b59a563d5f28705eab0f2b112821", null ]
     ] ],
     [ "discord_channel_flags", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480", [
-      [ "dc_pinned_thread", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d", null ]
+      [ "dc_pinned_thread", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d", null ],
+      [ "dc_require_tag", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d", null ]
     ] ],
     [ "emoji_flags", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c", [
       [ "e_require_colons", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb", null ],
@@ -715,15 +727,16 @@ var namespacedpp =
       [ "ll_error", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2a1c28cc5cd17d2f6f959988ae3d54b9e7", null ],
       [ "ll_critical", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aba578d32adc07ba8723784d8810cb57a", null ]
     ] ],
-    [ "message_flags", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8", [
-      [ "m_crossposted", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aab96a9099e9e1de98d2e0270dae49851", null ],
-      [ "m_is_crosspost", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ac60e9e9a6e22730c20443715ab88c04d", null ],
-      [ "m_suppress_embeds", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a3146754ba261ee065671c1e6876e1d01", null ],
-      [ "m_source_message_deleted", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8ad4f634843bd43c8f59a78cbea112024d", null ],
-      [ "m_urgent", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8aa36edb052b986802f865dc32fe8e1ff7", null ],
-      [ "m_has_thread", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a61709e40d160eb84fbd38ea63c01d4c1", null ],
-      [ "m_ephemeral", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a31f151a1f4b4763df16059ff4d88aeaf", null ],
-      [ "m_loading", "namespacedpp.html#a0157b2de9cc3cf2f819b8e4d969f84a8a347b30bfa696feef3b8948a5ea20127e", null ]
+    [ "message_flags", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107", [
+      [ "m_crossposted", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107aab96a9099e9e1de98d2e0270dae49851", null ],
+      [ "m_is_crosspost", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ac60e9e9a6e22730c20443715ab88c04d", null ],
+      [ "m_suppress_embeds", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a3146754ba261ee065671c1e6876e1d01", null ],
+      [ "m_source_message_deleted", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ad4f634843bd43c8f59a78cbea112024d", null ],
+      [ "m_urgent", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107aa36edb052b986802f865dc32fe8e1ff7", null ],
+      [ "m_has_thread", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a61709e40d160eb84fbd38ea63c01d4c1", null ],
+      [ "m_ephemeral", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf", null ],
+      [ "m_loading", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a347b30bfa696feef3b8948a5ea20127e", null ],
+      [ "m_thread_mention_failed", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746", null ]
     ] ],
     [ "message_type", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc", [
       [ "mt_default", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152", null ],

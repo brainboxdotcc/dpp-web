@@ -162,11 +162,17 @@
       <node id="42">
         <label>T</label>
       </node>
+      <node id="56">
+        <label>auto_archive_duration_t</label>
+      </node>
       <node id="8">
         <label>bool</label>
       </node>
       <node id="27">
         <label>cache_policy_setting_t</label>
+      </node>
+      <node id="57">
+        <label>default_forum_sort_order_t</label>
       </node>
       <node id="45">
         <label>default_message_notification_t</label>
@@ -196,11 +202,14 @@
           <edgelabel>topic</edgelabel>
         </childnode>
         <childnode refid="36" relation="usage">
+          <edgelabel>available_tags</edgelabel>
           <edgelabel>permission_overwrites</edgelabel>
           <edgelabel>recipients</edgelabel>
         </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>default_reaction</edgelabel>
+        </childnode>
         <childnode refid="23" relation="usage">
-          <edgelabel>banner</edgelabel>
           <edgelabel>icon</edgelabel>
         </childnode>
         <childnode refid="20" relation="usage">
@@ -212,13 +221,20 @@
         <childnode refid="11" relation="usage">
           <edgelabel>last_pin_timestamp</edgelabel>
         </childnode>
-        <childnode refid="54" relation="usage">
+        <childnode refid="55" relation="usage">
           <edgelabel>permissions</edgelabel>
         </childnode>
         <childnode refid="24" relation="usage">
           <edgelabel>bitrate</edgelabel>
+          <edgelabel>default_thread_rate_limit_per_user</edgelabel>
           <edgelabel>position</edgelabel>
           <edgelabel>rate_limit_per_user</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>default_auto_archive_duration</edgelabel>
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>default_sort_order</edgelabel>
         </childnode>
         <childnode refid="25" relation="usage">
           <edgelabel>flags</edgelabel>
@@ -441,7 +457,110 @@
           <edgelabel>id</edgelabel>
         </childnode>
       </node>
-      <node id="54">
+      <node id="60">
+        <label>dpp::message</label>
+        <link refid="structdpp_1_1message"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>webhook_id</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>author</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>member</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>content</edgelabel>
+          <edgelabel>nonce</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>attachments</edgelabel>
+          <edgelabel>components</edgelabel>
+          <edgelabel>embeds</edgelabel>
+          <edgelabel>filecontent</edgelabel>
+          <edgelabel>filename</edgelabel>
+          <edgelabel>mention_channels</edgelabel>
+          <edgelabel>mention_roles</edgelabel>
+          <edgelabel>mentions</edgelabel>
+          <edgelabel>reactions</edgelabel>
+          <edgelabel>stickers</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>edited</edgelabel>
+          <edgelabel>sent</edgelabel>
+        </childnode>
+        <childnode refid="61" relation="usage">
+          <edgelabel>message_reference</edgelabel>
+        </childnode>
+        <childnode refid="62" relation="usage">
+          <edgelabel>interaction</edgelabel>
+        </childnode>
+        <childnode refid="63" relation="usage">
+          <edgelabel>allowed_mentions</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+        <childnode refid="64" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mention_everyone</edgelabel>
+          <edgelabel>pinned</edgelabel>
+          <edgelabel>tts</edgelabel>
+        </childnode>
+      </node>
+      <node id="63">
+        <label>dpp::message::allowed_ref</label>
+        <link refid="structdpp_1_1message_1_1allowed__ref"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>parse_everyone</edgelabel>
+          <edgelabel>parse_roles</edgelabel>
+          <edgelabel>parse_users</edgelabel>
+          <edgelabel>replied_user</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>roles</edgelabel>
+          <edgelabel>users</edgelabel>
+        </childnode>
+      </node>
+      <node id="62">
+        <label>dpp::message::message_interaction_struct</label>
+        <link refid="structdpp_1_1message_1_1message__interaction__struct"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>usr</edgelabel>
+        </childnode>
+      </node>
+      <node id="61">
+        <label>dpp::message::message_ref</label>
+        <link refid="structdpp_1_1message_1_1message__ref"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>message_id</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>fail_if_not_exists</edgelabel>
+        </childnode>
+      </node>
+      <node id="55">
         <label>dpp::permission</label>
         <link refid="classdpp_1_1permission"/>
         <childnode refid="12" relation="usage">
@@ -498,11 +617,20 @@
         <link refid="classdpp_1_1thread"/>
         <childnode refid="52" relation="public-inheritance">
         </childnode>
-        <childnode refid="55" relation="usage">
+        <childnode refid="58" relation="usage">
           <edgelabel>member</edgelabel>
         </childnode>
-        <childnode refid="56" relation="usage">
+        <childnode refid="59" relation="usage">
           <edgelabel>metadata</edgelabel>
+        </childnode>
+        <childnode refid="60" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>applied_tags</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>total_messages_sent</edgelabel>
         </childnode>
         <childnode refid="25" relation="usage">
           <edgelabel>member_count</edgelabel>
@@ -521,7 +649,7 @@
           <edgelabel>created</edgelabel>
         </childnode>
       </node>
-      <node id="55">
+      <node id="58">
         <label>dpp::thread_member</label>
         <link refid="structdpp_1_1thread__member"/>
         <childnode refid="20" relation="usage">
@@ -535,7 +663,7 @@
           <edgelabel>flags</edgelabel>
         </childnode>
       </node>
-      <node id="56">
+      <node id="59">
         <label>dpp::thread_metadata</label>
         <link refid="structdpp_1_1thread__metadata"/>
         <childnode refid="11" relation="usage">
@@ -636,6 +764,9 @@
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
+      <node id="64">
+        <label>message_type</label>
+      </node>
       <node id="49">
         <label>mfa_level_t</label>
       </node>
@@ -679,6 +810,9 @@
       </node>
       <node id="33">
         <label>unordered_map&lt;</label>
+      </node>
+      <node id="54">
+        <label>variant&lt;</label>
       </node>
       <node id="36">
         <label>vector&lt;</label>

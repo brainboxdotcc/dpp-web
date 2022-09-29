@@ -145,6 +145,7 @@ var annotated_dup =
       [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
       [ "file_exception", "classdpp_1_1file__exception.html", "classdpp_1_1file__exception" ],
       [ "form_submit_t", "structdpp_1_1form__submit__t.html", "structdpp_1_1form__submit__t" ],
+      [ "forum_tag", "structdpp_1_1forum__tag.html", "structdpp_1_1forum__tag" ],
       [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
       [ "guild", "classdpp_1_1guild.html", "classdpp_1_1guild" ],
       [ "guild_ban_add_t", "structdpp_1_1guild__ban__add__t.html", "structdpp_1_1guild__ban__add__t" ],

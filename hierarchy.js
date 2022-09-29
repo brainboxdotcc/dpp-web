@@ -335,6 +335,7 @@ var hierarchy =
       [ "dpp::channel", "classdpp_1_1channel.html", null ],
       [ "dpp::collected_reaction", "classdpp_1_1collected__reaction.html", null ],
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ],
+      [ "dpp::forum_tag", "structdpp_1_1forum__tag.html", null ],
       [ "dpp::guild", "classdpp_1_1guild.html", null ],
       [ "dpp::integration", "classdpp_1_1integration.html", null ],
       [ "dpp::interaction", "classdpp_1_1interaction.html", null ],
