@@ -29,7 +29,7 @@ var searchData=
   ['format_5ftype_26',['format_type',['../structdpp_1_1sticker.html#ad7972e12390ac0eea0027794e0c0fca6',1,'dpp::sticker']]],
   ['format_5fusername_27',['format_username',['../classdpp_1_1user.html#aa8e70346690b38db060af1d0f84ac1d7',1,'dpp::user']]],
   ['format_5fversion_28',['FORMAT_VERSION',['../namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29',1,'dpp']]],
-  ['forum_5ftag_29',['forum_tag',['../structdpp_1_1forum__tag.html',1,'dpp::forum_tag'],['../structdpp_1_1forum__tag.html#a8af4e2edccd078821e4f5fb818fd3e4c',1,'dpp::forum_tag::forum_tag()']]],
+  ['forum_5ftag_29',['forum_tag',['../structdpp_1_1forum__tag.html',1,'dpp::forum_tag'],['../structdpp_1_1forum__tag.html#a10049e89419dc0635955699779d7b530',1,'dpp::forum_tag::forum_tag(const std::string &amp;name)'],['../structdpp_1_1forum__tag.html#a8af4e2edccd078821e4f5fb818fd3e4c',1,'dpp::forum_tag::forum_tag()']]],
   ['frequency_30',['frequency',['../structdpp_1_1timer__t.html#a6f7bb27bdbd5454dde61d6c9371d7c74',1,'dpp::timer_t']]],
   ['frequently_20asked_20questions_20_28faq_29_31',['Frequently Asked Questions (FAQ)',['../md_docpages_01_frequently_asked_questions.html',1,'']]],
   ['friend_5fsync_32',['friend_sync',['../classdpp_1_1connection.html#a131edac1a872df01bea43ab8adf9ff63',1,'dpp::connection']]],

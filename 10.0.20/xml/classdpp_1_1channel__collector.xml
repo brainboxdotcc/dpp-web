@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1channel__collector" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dpp::channel_collector</compoundname>
+    <basecompoundref refid="classdpp_1_1collector" prot="public" virt="non-virtual">dpp::collector&lt; T, C &gt;</basecompoundref>
+    <includes local="no">dpp.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1channel__collector_1a371b2baa1fa6a3bfaba6057247baa8cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::channel_collector::channel_collector</definition>
+        <argsstring>(cluster *cl, uint64_t duration)</argsstring>
+        <name>channel_collector</name>
+        <param>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new channel collector object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cluster to associate the collector with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration of time to run the collector for in seconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dpp.h" line="226" column="1" bodyfile="include/dpp/dpp.h" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel__collector_1aac2027a7fa0c1f07dd1239ad93be7abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dpp::channel_collector::completed</definition>
+        <argsstring>(const std::vector&lt; dpp::channel &gt; &amp;list)=0</argsstring>
+        <name>completed</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref> &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Return the completed collection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>items collected during the timeframe specified </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dpp.h" line="233" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel__collector_1ac048b6f35cb511cc9b8d46b1591b243e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="classdpp_1_1channel" kindref="compound">dpp::channel</ref> *</type>
+        <definition>virtual const dpp::channel * dpp::channel_collector::filter</definition>
+        <argsstring>(const dpp::channel_create_t &amp;element)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1channel__create__t" kindref="compound">dpp::channel_create_t</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Select and filter the items which are to appear in the list This is called every time a new event is fired, to filter the event and determine which of the items is sent to the list. Returning nullptr excludes the item from the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element to filter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returned item to add to the list, or nullptr to skip adding this element </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dpp.h" line="243" column="28" bodyfile="include/dpp/dpp.h" bodystart="243" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel__collector_1a4f861f292f5f844328405d3300f122ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual dpp::channel_collector::~channel_collector</definition>
+        <argsstring>()=default</argsstring>
+        <name>~channel_collector</name>
+        <briefdescription>
+<para>Destroy the channel collector object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dpp.h" line="248" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dpp::collector&lt; T, C &gt;::completed</definition>
+        <argsstring>(const std::vector&lt; C &gt; &amp;list)=0</argsstring>
+        <name>completed</name>
+        <param>
+          <type>const std::vector&lt; C &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>You must implement this function to receive the completed list of captured objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of captured objects in captured order </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3619" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1collector_1abe7a5ff238f82ee08003051468626c15" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const C *</type>
+        <definition>virtual const C * dpp::collector&lt; T, C &gt;::filter</definition>
+        <argsstring>(const T &amp;element)=0</argsstring>
+        <name>filter</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Filter the list of elements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Every time an event is fired on the collector, this method wil be called to determine if we should add an object to the list or not. This function can then process the <computeroutput>element</computeroutput> value, extract the parts which are to be saved to a list (e.g. a <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> out of a <ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>) and return it as the return value. Returning a value of nullptr causes no object to be stored.</para>
+<para>Here is an example of how to filter messages which have specific text in them. This should be used with the specialised type <ref refid="classdpp_1_1message__collector" kindref="compound">dpp::message_collector</ref></para>
+<para><programlisting filename=".cpp"><codeline><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>*<sp/><ref refid="classdpp_1_1collector_1abe7a5ff238f82ee08003051468626c15" kindref="member">filter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>&amp;<sp/>m)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref>.find(</highlight><highlight class="stringliteral">&quot;something<sp/>i<sp/>want&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data to filter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const C* Returned object or nullptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3647" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dpp::collector&lt; T, C &gt;::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Immediately cancels the collector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this if you have met the conditions for which you are collecting objects early, e.g. you were watching for a message containing &apos;yes&apos; or &apos;no&apos; and have received it before the time is up.</para>
+<para><simplesect kind="note"><para>Causes calling of the <ref refid="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" kindref="member">completed()</ref> method if it has not yet been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3658" column="14" bodyfile="include/dpp/cluster.h" bodystart="3658" bodyend="3661"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdpp_1_1collector_1af7f9cfbcf647292a6eff59c63508171b" prot="protected" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <definition>class cluster* dpp::collector&lt; T, C &gt;::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+<para>Owning cluster. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3581" column="15" bodyfile="include/dpp/cluster.h" bodystart="3581" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Channel collector. Collects channels during a set timeframe and returns them in a list via the <ref refid="classdpp_1_1channel__collector_1aac2027a7fa0c1f07dd1239ad93be7abc" kindref="member">completed()</ref> method. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>channel_collector_t</label>
+        <link refid="classdpp_1_1collector"/>
+      </node>
+      <node id="1">
+        <label>dpp::channel_collector</label>
+        <link refid="classdpp_1_1channel__collector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>cache_policy_setting_t</label>
+      </node>
+      <node id="2">
+        <label>channel_collector_t</label>
+        <link refid="classdpp_1_1collector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>double</label>
+      </node>
+      <node id="18">
+        <label>dpp::cache_policy_t</label>
+        <link refid="structdpp_1_1cache__policy__t"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>role_policy</edgelabel>
+          <edgelabel>user_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::channel_collector</label>
+        <link refid="classdpp_1_1channel__collector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::cluster</label>
+        <link refid="classdpp_1_1cluster"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>last_identify</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>cluster_id</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>maxclusters</edgelabel>
+          <edgelabel>numshards</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>rest_ping</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>me</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>cache_policy</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>ws_mode</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>on_autocomplete</edgelabel>
+          <edgelabel>on_automod_rule_create</edgelabel>
+          <edgelabel>on_automod_rule_delete</edgelabel>
+          <edgelabel>on_automod_rule_execute</edgelabel>
+          <edgelabel>on_automod_rule_update</edgelabel>
+          <edgelabel>on_button_click</edgelabel>
+          <edgelabel>on_channel_create</edgelabel>
+          <edgelabel>on_channel_delete</edgelabel>
+          <edgelabel>on_channel_pins_update</edgelabel>
+          <edgelabel>on_channel_update</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="10">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>event_router_t&lt;</label>
+      </node>
+      <node id="13">
+        <label>dpp::json_interface&lt; user &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="14" relation="template-instance">
+          <edgelabel>&lt; user &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="21">
+        <label>condition_variable</label>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>time_t</label>
+      </node>
+      <node id="16">
+        <label>uint16_t</label>
+      </node>
+      <node id="7">
+        <label>uint32_t</label>
+      </node>
+      <node id="12">
+        <label>uint64_t</label>
+      </node>
+      <node id="17">
+        <label>uint8_t</label>
+      </node>
+      <node id="20">
+        <label>websocket_protocol_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/dpp.h" line="218" column="1" bodyfile="include/dpp/dpp.h" bodystart="218" bodyend="249"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1collector_1aaaff21b83581001598be2610469ccd4b" prot="public" virt="virtual"><scope>dpp::channel_collector</scope><name>cancel</name></member>
+      <member refid="classdpp_1_1channel__collector_1a371b2baa1fa6a3bfaba6057247baa8cd" prot="public" virt="non-virtual"><scope>dpp::channel_collector</scope><name>channel_collector</name></member>
+      <member refid="classdpp_1_1collector_1a6b1ceac5e4c24685cc698702ef7be338" prot="public" virt="non-virtual"><scope>dpp::channel_collector</scope><name>collector</name></member>
+      <member refid="classdpp_1_1channel__collector_1aac2027a7fa0c1f07dd1239ad93be7abc" prot="public" virt="pure-virtual"><scope>dpp::channel_collector</scope><name>completed</name></member>
+      <member refid="classdpp_1_1collector_1ad6172faa2391a90cfaa11ca76ec95258" prot="public" virt="pure-virtual" ambiguityscope="dpp::collector::"><scope>dpp::channel_collector</scope><name>completed</name></member>
+      <member refid="classdpp_1_1channel__collector_1ac048b6f35cb511cc9b8d46b1591b243e" prot="public" virt="virtual"><scope>dpp::channel_collector</scope><name>filter</name></member>
+      <member refid="classdpp_1_1collector_1abe7a5ff238f82ee08003051468626c15" prot="public" virt="pure-virtual" ambiguityscope="dpp::collector::"><scope>dpp::channel_collector</scope><name>filter</name></member>
+      <member refid="classdpp_1_1collector_1af7f9cfbcf647292a6eff59c63508171b" prot="protected" virt="non-virtual"><scope>dpp::channel_collector</scope><name>owner</name></member>
+      <member refid="classdpp_1_1channel__collector_1a4f861f292f5f844328405d3300f122ca" prot="public" virt="virtual"><scope>dpp::channel_collector</scope><name>~channel_collector</name></member>
+      <member refid="classdpp_1_1collector_1a24ad57bf7d5c9b7ed7f18f51d01a7dcd" prot="public" virt="virtual"><scope>dpp::channel_collector</scope><name>~collector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
