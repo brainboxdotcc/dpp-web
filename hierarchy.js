@@ -193,7 +193,6 @@ var hierarchy =
     ] ],
     [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
     [ "dpp::event_member", "structdpp_1_1event__member.html", null ],
-    [ "dpp::event_router_t< T >", "classdpp_1_1event__router__t.html", null ],
     [ "std::exception", null, [
       [ "dpp::exception", "classdpp_1_1exception.html", [
         [ "dpp::cache_exception", "classdpp_1_1cache__exception.html", null ],

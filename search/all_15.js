@@ -29,7 +29,7 @@ var searchData=
   ['voice_5fclient_5fspeaking_5ft_26',['voice_client_speaking_t',['../structdpp_1_1voice__client__speaking__t.html',1,'dpp::voice_client_speaking_t'],['../structdpp_1_1voice__client__speaking__t.html#a5160a6d4005ffd9a97c52442f3e2aecf',1,'dpp::voice_client_speaking_t::voice_client_speaking_t()']]],
   ['voice_5fexception_27',['voice_exception',['../classdpp_1_1voice__exception.html',1,'dpp']]],
   ['voice_5fmembers_28',['voice_members',['../classdpp_1_1guild.html#a42066fe3bbfb976ba27fbb9ca38b722f',1,'dpp::guild']]],
-  ['voice_5fmutex_29',['voice_mutex',['../classdpp_1_1discord__client.html#a4ef561c63eecce36ba9384bbb70e8f19',1,'dpp::discord_client']]],
+  ['voice_5fmutex_29',['voice_mutex',['../classdpp_1_1discord__client.html#ac0f38f917182d7b847c8cabeed029e42',1,'dpp::discord_client']]],
   ['voice_5fout_5fpacket_30',['voice_out_packet',['../structdpp_1_1voice__out__packet.html',1,'dpp']]],
   ['voice_5fready_5ft_31',['voice_ready_t',['../structdpp_1_1voice__ready__t.html',1,'dpp::voice_ready_t'],['../structdpp_1_1voice__ready__t.html#afe0122cb6850df07ca84ba3592181490',1,'dpp::voice_ready_t::voice_ready_t()']]],
   ['voice_5freceive_5ft_32',['voice_receive_t',['../structdpp_1_1voice__receive__t.html',1,'dpp::voice_receive_t'],['../structdpp_1_1voice__receive__t.html#aef86eafab8786cefeed105fae4a89d45',1,'dpp::voice_receive_t::voice_receive_t(class discord_client *client, const std::string &amp;raw, class discord_voice_client *vc, snowflake _user_id, uint8_t *pcm, size_t length)'],['../structdpp_1_1voice__receive__t.html#a17d45e43c72fbe78358be74146cbaee5',1,'dpp::voice_receive_t::voice_receive_t(class discord_client *client, const std::string &amp;raw)']]],

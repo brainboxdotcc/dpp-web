@@ -70,6 +70,6 @@ var classdpp_1_1discord__client =
     [ "terminating", "classdpp_1_1discord__client.html#af98b4e15c20b99374d7649e8b8186002", null ],
     [ "thread_id", "classdpp_1_1discord__client.html#a48586d5bfd6ce1e8f58770c7bfcc5c27", null ],
     [ "token", "classdpp_1_1discord__client.html#ac6f6acb88970deecd85236fc0df8be78", null ],
-    [ "voice_mutex", "classdpp_1_1discord__client.html#a4ef561c63eecce36ba9384bbb70e8f19", null ],
+    [ "voice_mutex", "classdpp_1_1discord__client.html#ac0f38f917182d7b847c8cabeed029e42", null ],
     [ "websocket_ping", "classdpp_1_1discord__client.html#a5e39136f09297f7ba0ab6a449e435f3d", null ]
 ];

@@ -141,7 +141,6 @@ var annotated_dup =
       [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
       [ "event_entities", "structdpp_1_1event__entities.html", "structdpp_1_1event__entities" ],
       [ "event_member", "structdpp_1_1event__member.html", "structdpp_1_1event__member" ],
-      [ "event_router_t", "classdpp_1_1event__router__t.html", "classdpp_1_1event__router__t" ],
       [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
       [ "file_exception", "classdpp_1_1file__exception.html", "classdpp_1_1file__exception" ],
       [ "form_submit_t", "structdpp_1_1form__submit__t.html", "structdpp_1_1form__submit__t" ],
