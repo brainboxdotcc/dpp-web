@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1event__router__t.html','')
 <p>Handles routing of an event to multiple listeners.  
  <a href="classdpp_1_1event__router__t.html#details">More...</a></p>
 
-<p><code>#include &lt;cluster.h&gt;</code></p>
+<p><code>#include &lt;event_router.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5a344ce973c4428d889d11c5f35bea74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a5a344ce973c4428d889d11c5f35bea74">set_warning_callback</a> (std::function&lt; void(const T &amp;)&gt; warning_function)</td></tr>
-<tr class="memdesc:a5a344ce973c4428d889d11c5f35bea74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the warning callback object used to check that this event is capable of running properly.  <a href="classdpp_1_1event__router__t.html#a5a344ce973c4428d889d11c5f35bea74">More...</a><br /></td></tr>
+<tr class="memdesc:a5a344ce973c4428d889d11c5f35bea74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next handle to be given out by the event router.  <a href="classdpp_1_1event__router__t.html#a5a344ce973c4428d889d11c5f35bea74">More...</a><br /></td></tr>
 <tr class="separator:a5a344ce973c4428d889d11c5f35bea74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -173,7 +173,7 @@ class dpp::event_router_t&lt; T &gt;</div><p >Handles routing of an event to mul
 <div class="line"> </div>
 <div class="line"><span class="comment">// Detach from an event using the handle returned by operator()</span></div>
 <div class="line">my_event.detach(<span class="keywordtype">id</span>);</div>
-<div class="ttc" id="anamespacedpp_html_a4641626be7775de0b8b63a6e68d0934e"><div class="ttname"><a href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">dpp::event_handle</a></div><div class="ttdeci">size_t event_handle</div><div class="ttdoc">A returned event handle for an event which was attached.</div><div class="ttdef"><b>Definition:</b> misc-enum.h:56</div></div>
+<div class="ttc" id="anamespacedpp_html_a4641626be7775de0b8b63a6e68d0934e"><div class="ttname"><a href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">dpp::event_handle</a></div><div class="ttdeci">size_t event_handle</div><div class="ttdoc">A returned event handle for an event which was attached.</div><div class="ttdef"><b>Definition:</b> event_router.h:44</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>type of single parameter passed to event lambda derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a> </td></tr>
@@ -478,7 +478,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set the warning callback object used to check that this event is capable of running properly. </p>
+<p>Next handle to be given out by the event router. </p>
+<p >Set the warning callback object used to check that this event is capable of running properly</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">warning_function</td><td>A checking function to call </td></tr>

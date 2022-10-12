@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classdpp_1_1event__router__t" kind="class" language="C++" prot="public">
     <compoundname>dpp::event_router_t</compoundname>
-    <includes local="no">cluster.h</includes>
+    <includes local="no">event_router.h</includes>
     <templateparamlist>
       <param>
         <type>class T</type>
@@ -23,10 +23,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="99" column="14" bodyfile="include/dpp/cluster.h" bodystart="99" bodyend="-1"/>
+        <location file="include/dpp/event_router.h" line="95" column="14" bodyfile="include/dpp/event_router.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a7e4d0ac65ba190ca17f545145aa1848f" prot="private" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1event__handle__allocator__t" kindref="compound">event_handle_allocator_t</ref></type>
+        <definition>event_handle_allocator_t dpp::event_router_t&lt; T &gt;::handle_allocator</definition>
+        <argsstring></argsstring>
+        <name>handle_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="97" column="26" bodyfile="include/dpp/event_router.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" prot="private" static="no" mutable="yes">
         <type>std::shared_mutex</type>
         <definition>std::shared_mutex dpp::event_router_t&lt; T &gt;::lock</definition>
@@ -39,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="104" column="27" bodyfile="include/dpp/cluster.h" bodystart="104" bodyend="-1"/>
+        <location file="include/dpp/event_router.h" line="102" column="27" bodyfile="include/dpp/event_router.h" bodystart="102" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, std::function&lt; void(const T &amp;)&gt; &gt;</type>
@@ -53,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="111" column="10" bodyfile="include/dpp/cluster.h" bodystart="111" bodyend="-1"/>
+        <location file="include/dpp/event_router.h" line="109" column="10" bodyfile="include/dpp/event_router.h" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1a176a88a4835f22aa23713e8034d7880f" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, std::function&lt; <ref refid="structdpp_1_1task" kindref="compound">dpp::task</ref>(T)&gt; &gt;</type>
@@ -67,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="117" column="10" bodyfile="include/dpp/cluster.h" bodystart="117" bodyend="-1"/>
+        <location file="include/dpp/event_router.h" line="116" column="10" bodyfile="include/dpp/event_router.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1a671901d510d29b517a62afd31c582a1b" prot="private" static="no" mutable="no">
         <type>std::function&lt; void(const T &amp;)&gt;</type>
@@ -81,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="130" column="15" bodyfile="include/dpp/cluster.h" bodystart="130" bodyend="-1"/>
+        <location file="include/dpp/event_router.h" line="129" column="15" bodyfile="include/dpp/event_router.h" bodystart="129" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -95,9 +108,10 @@
           <declname>warning_function</declname>
         </param>
         <briefdescription>
-<para>Set the warning callback object used to check that this event is capable of running properly. </para>
+<para>Next handle to be given out by the event router. </para>
         </briefdescription>
         <detaileddescription>
+<para>Set the warning callback object used to check that this event is capable of running properly</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>warning_function</parametername>
@@ -111,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="140" column="6" bodyfile="include/dpp/cluster.h" bodystart="140" bodyend="142"/>
+        <location file="include/dpp/event_router.h" line="143" column="6" bodyfile="include/dpp/event_router.h" bodystart="143" bodyend="145"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -127,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="148" column="1"/>
+        <location file="include/dpp/event_router.h" line="151" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -155,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="156" column="6" bodyfile="include/dpp/cluster.h" bodystart="156" bodyend="173"/>
+        <location file="include/dpp/event_router.h" line="159" column="6" bodyfile="include/dpp/event_router.h" bodystart="159" bodyend="176"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -174,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="182" column="6" bodyfile="include/dpp/cluster.h" bodystart="182" bodyend="185"/>
+        <location file="include/dpp/event_router.h" line="185" column="6" bodyfile="include/dpp/event_router.h" bodystart="185" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -193,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="194" column="1" bodyfile="include/dpp/cluster.h" bodystart="194" bodyend="196"/>
+        <location file="include/dpp/event_router.h" line="197" column="1" bodyfile="include/dpp/event_router.h" bodystart="197" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
@@ -223,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="208" column="14" bodyfile="include/dpp/cluster.h" bodystart="208" bodyend="210"/>
+        <location file="include/dpp/event_router.h" line="211" column="14" bodyfile="include/dpp/event_router.h" bodystart="211" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
@@ -253,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="222" column="14" bodyfile="include/dpp/cluster.h" bodystart="222" bodyend="227"/>
+        <location file="include/dpp/event_router.h" line="225" column="14" bodyfile="include/dpp/event_router.h" bodystart="225" bodyend="230"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a2344d67111010777d10459e6b65bf2aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
@@ -270,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="230" column="14" bodyfile="include/dpp/cluster.h" bodystart="230" bodyend="235"/>
+        <location file="include/dpp/event_router.h" line="233" column="14" bodyfile="include/dpp/event_router.h" bodystart="233" bodyend="238"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -302,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="244" column="6" bodyfile="include/dpp/cluster.h" bodystart="244" bodyend="247"/>
+        <location file="include/dpp/event_router.h" line="247" column="6" bodyfile="include/dpp/event_router.h" bodystart="247" bodyend="250"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -342,7 +356,7 @@
 </parameterlist>
 </para>
     </detaileddescription>
-    <location file="include/dpp/cluster.h" line="97" column="11" bodyfile="include/dpp/cluster.h" bodystart="97" bodyend="248"/>
+    <location file="include/dpp/event_router.h" line="93" column="11" bodyfile="include/dpp/event_router.h" bodystart="93" bodyend="251"/>
     <listofallmembers>
       <member refid="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach</name></member>
       <member refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>call</name></member>
@@ -353,6 +367,7 @@
       <member refid="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>dispatch_container</name></member>
       <member refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>empty</name></member>
       <member refid="classdpp_1_1event__router__t_1a5ead27e7e608a86b4622021fddb384c3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>event_router_t</name></member>
+      <member refid="classdpp_1_1event__router__t_1a7e4d0ac65ba190ca17f545145aa1848f" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>handle_allocator</name></member>
       <member refid="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>lock</name></member>
       <member refid="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator bool</name></member>
       <member refid="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator()</name></member>
