@@ -192,7 +192,6 @@ var hierarchy =
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
     [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],
-    [ "dpp::event_handle_allocator_t", "structdpp_1_1event__handle__allocator__t.html", null ],
     [ "dpp::event_member", "structdpp_1_1event__member.html", null ],
     [ "dpp::event_router_t< T >", "classdpp_1_1event__router__t.html", null ],
     [ "std::exception", null, [

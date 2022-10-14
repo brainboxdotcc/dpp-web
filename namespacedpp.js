@@ -129,7 +129,6 @@ var namespacedpp =
     [ "etf_parser", "classdpp_1_1etf__parser.html", "classdpp_1_1etf__parser" ],
     [ "event_dispatch_t", "structdpp_1_1event__dispatch__t.html", "structdpp_1_1event__dispatch__t" ],
     [ "event_entities", "structdpp_1_1event__entities.html", "structdpp_1_1event__entities" ],
-    [ "event_handle_allocator_t", "structdpp_1_1event__handle__allocator__t.html", "structdpp_1_1event__handle__allocator__t" ],
     [ "event_member", "structdpp_1_1event__member.html", "structdpp_1_1event__member" ],
     [ "event_router_t", "classdpp_1_1event__router__t.html", "classdpp_1_1event__router__t" ],
     [ "exception", "classdpp_1_1exception.html", "classdpp_1_1exception" ],
