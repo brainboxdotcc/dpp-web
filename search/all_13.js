@@ -36,7 +36,7 @@ var searchData=
   ['thread_5fcollector_5ft_33',['thread_collector_t',['../namespacedpp.html#af373a94850580f1756dbee039b64a311',1,'dpp']]],
   ['thread_5fcreate_34',['thread_create',['../classdpp_1_1events_1_1thread__create.html',1,'dpp::events::thread_create'],['../classdpp_1_1cluster.html#a0c41c2fada744b16b48d8a5538e19fc5',1,'dpp::cluster::thread_create(const std::string &amp;thread_name, snowflake channel_id, uint16_t auto_archive_duration, channel_type thread_type, bool invitable, uint16_t rate_limit_per_user, command_completion_event_t callback=utility::log_error())']]],
   ['thread_5fcreate_5fin_5fforum_35',['thread_create_in_forum',['../classdpp_1_1cluster.html#ad96d8fcec4c69d82fd4f2fb85ddfa2bf',1,'dpp::cluster']]],
-  ['thread_5fcreate_5fin_5fforum_5fsync_36',['thread_create_in_forum_sync',['../classdpp_1_1cluster.html#a3081ee94fa0e5f079c6e895a2939c9cb',1,'dpp::cluster']]],
+  ['thread_5fcreate_5fin_5fforum_5fsync_36',['thread_create_in_forum_sync',['../classdpp_1_1cluster.html#a5e026f9b934b8715d2d0fcd42026b1ed',1,'dpp::cluster']]],
   ['thread_5fcreate_5fsync_37',['thread_create_sync',['../classdpp_1_1cluster.html#a9c9e0664dfa968c78d5032131fbd95d4',1,'dpp::cluster']]],
   ['thread_5fcreate_5ft_38',['thread_create_t',['../structdpp_1_1thread__create__t.html',1,'dpp::thread_create_t'],['../structdpp_1_1thread__create__t.html#a23487c60d75274fdca7eb8beedd29a70',1,'dpp::thread_create_t::thread_create_t()']]],
   ['thread_5fcreate_5fwith_5fmessage_39',['thread_create_with_message',['../classdpp_1_1cluster.html#adf113903aeca27e9994fb366486250d1',1,'dpp::cluster']]],
