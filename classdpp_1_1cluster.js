@@ -483,7 +483,7 @@ var classdpp_1_1cluster =
     [ "template_get", "classdpp_1_1cluster.html#a52366e37144b166c6a2c773e14992b21", null ],
     [ "template_get_sync", "classdpp_1_1cluster.html#a0c79f31f217eb4d22c2f5192d562c241", null ],
     [ "thread_create", "classdpp_1_1cluster.html#a0c41c2fada744b16b48d8a5538e19fc5", null ],
-    [ "thread_create_in_forum", "classdpp_1_1cluster.html#aec00b0371e7b282c1a3a6bb7a6de613d", null ],
+    [ "thread_create_in_forum", "classdpp_1_1cluster.html#ad96d8fcec4c69d82fd4f2fb85ddfa2bf", null ],
     [ "thread_create_in_forum_sync", "classdpp_1_1cluster.html#a3081ee94fa0e5f079c6e895a2939c9cb", null ],
     [ "thread_create_sync", "classdpp_1_1cluster.html#a9c9e0664dfa968c78d5032131fbd95d4", null ],
     [ "thread_create_with_message", "classdpp_1_1cluster.html#adf113903aeca27e9994fb366486250d1", null ],
