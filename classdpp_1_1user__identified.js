@@ -11,6 +11,7 @@ var classdpp_1_1user__identified =
     [ "get_mention", "classdpp_1_1user__identified.html#a09743ef07e78406808e74a8bd7b5d658", null ],
     [ "has_animated_icon", "classdpp_1_1user__identified.html#a51c599c37ab5ccc1b770084c937abe98", null ],
     [ "has_hypesquad_events", "classdpp_1_1user__identified.html#aaaa1239fe84eb4d3c88b8812a14c598b", null ],
+    [ "has_nitro_basic", "classdpp_1_1user__identified.html#ae7a663b3c8412a0c7efb119ee32e1eae", null ],
     [ "has_nitro_classic", "classdpp_1_1user__identified.html#a2a7d44696be1880931498dc48d4bb23c", null ],
     [ "has_nitro_full", "classdpp_1_1user__identified.html#a9c4116cc16eb91d0a1e3b3803c618395", null ],
     [ "is_bot", "classdpp_1_1user__identified.html#aeb219805eb74e76d7814ba671de31a21", null ],

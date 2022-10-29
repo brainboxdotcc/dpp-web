@@ -13,12 +13,13 @@ var searchData=
   ['u_5fhouse_5fbrilliance_10',['u_house_brilliance',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a092724653fc653a65807a13740eaec91',1,'dpp']]],
   ['u_5fhypesquad_5fevents_11',['u_hypesquad_events',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad59de70fe3833bd7b46b134bd6a77eeb',1,'dpp']]],
   ['u_5fmfa_5fenabled_12',['u_mfa_enabled',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a77ba30113792b4046dce41d9e0d3e092',1,'dpp']]],
-  ['u_5fnitro_5fclassic_13',['u_nitro_classic',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0afe08f965f264db94c343e1cb6ed2ba76',1,'dpp']]],
-  ['u_5fnitro_5ffull_14',['u_nitro_full',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a224c3134630104447a7d739f37f5f6f0',1,'dpp']]],
-  ['u_5fpartnered_5fowner_15',['u_partnered_owner',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a666e085f0d2ba3edbd420f36d68a5e7e',1,'dpp']]],
-  ['u_5fsystem_16',['u_system',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ab798237a2b87e22960a9928fede47221',1,'dpp']]],
-  ['u_5fteam_5fuser_17',['u_team_user',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad9e65390bac5097c18380407eeaa8891',1,'dpp']]],
-  ['u_5fverified_18',['u_verified',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a8055b637db4c88b54da2c3157ebb7f74',1,'dpp']]],
-  ['u_5fverified_5fbot_19',['u_verified_bot',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aa07166e5a0e4e1e29a43e924b9c6d41f',1,'dpp']]],
-  ['u_5fverified_5fbot_5fdev_20',['u_verified_bot_dev',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a52e7662e76e7375fdb2b2df4d3780d70',1,'dpp']]]
+  ['u_5fnitro_5fbasic_13',['u_nitro_basic',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a020a705d33b314e1999ab52ffe4b82ad',1,'dpp']]],
+  ['u_5fnitro_5fclassic_14',['u_nitro_classic',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0afe08f965f264db94c343e1cb6ed2ba76',1,'dpp']]],
+  ['u_5fnitro_5ffull_15',['u_nitro_full',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a224c3134630104447a7d739f37f5f6f0',1,'dpp']]],
+  ['u_5fpartnered_5fowner_16',['u_partnered_owner',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a666e085f0d2ba3edbd420f36d68a5e7e',1,'dpp']]],
+  ['u_5fsystem_17',['u_system',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ab798237a2b87e22960a9928fede47221',1,'dpp']]],
+  ['u_5fteam_5fuser_18',['u_team_user',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad9e65390bac5097c18380407eeaa8891',1,'dpp']]],
+  ['u_5fverified_19',['u_verified',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a8055b637db4c88b54da2c3157ebb7f74',1,'dpp']]],
+  ['u_5fverified_5fbot_20',['u_verified_bot',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aa07166e5a0e4e1e29a43e924b9c6d41f',1,'dpp']]],
+  ['u_5fverified_5fbot_5fdev_21',['u_verified_bot_dev',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a52e7662e76e7375fdb2b2df4d3780d70',1,'dpp']]]
 ];
