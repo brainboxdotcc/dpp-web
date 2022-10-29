@@ -31,6 +31,7 @@ var classdpp_1_1guild =
     [ "has_private_threads", "classdpp_1_1guild.html#a49c65ccddd2a1ec96ae82b1148f5de1f", null ],
     [ "has_role_icons", "classdpp_1_1guild.html#a73a3dcb37facc18aecdb78393bf96206", null ],
     [ "has_seven_day_thread_archive", "classdpp_1_1guild.html#ac98d9e2481862ca19ba7c2115e5f0b2c", null ],
+    [ "has_support_server", "classdpp_1_1guild.html#a7e36811aef081391cfed101eaad2328e", null ],
     [ "has_three_day_thread_archive", "classdpp_1_1guild.html#a9be0dcb6ed82faac52d0072aed61b69c", null ],
     [ "has_ticketed_events", "classdpp_1_1guild.html#a5b436fb2cc0bbb1a2e9c4c86b483949c", null ],
     [ "has_vanity_url", "classdpp_1_1guild.html#ac57481c6e6036db6545fcd5a592abee4", null ],

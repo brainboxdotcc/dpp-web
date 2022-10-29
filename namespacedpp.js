@@ -609,7 +609,8 @@ var namespacedpp =
       [ "g_premium_progress_bar_enabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e", null ],
       [ "g_animated_banner", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e", null ],
       [ "g_auto_moderation", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b", null ],
-      [ "g_invites_disabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eabc65e4309cc670db60917406e82b981a", null ]
+      [ "g_invites_disabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eabc65e4309cc670db60917406e82b981a", null ],
+      [ "g_developer_support_server", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea477c960c0a00b66cc0e69ec2ae4a25c4", null ]
     ] ],
     [ "guild_member_flags", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30", [
       [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
