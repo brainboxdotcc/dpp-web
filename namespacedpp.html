@@ -965,11 +965,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a3af415bd74cead2c665a6a507ce843fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-click context menu types.  <a href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb">More...</a><br /></td></tr>
 <tr class="separator:a3af415bd74cead2c665a6a507ce843fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63342923617f0829b64c53cd02fafd1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1b">component_type_t</a> { <a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e">cotype_button</a> = 2
-, <a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc">cotype_select</a> = 3
- }</td></tr>
-<tr class="memdesc:a63342923617f0829b64c53cd02fafd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Component type, either button or select.  <a href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1b">More...</a><br /></td></tr>
-<tr class="separator:a63342923617f0829b64c53cd02fafd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66e44bd22afee53242581010ddd3728"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac66e44bd22afee53242581010ddd3728">command_permission_type</a> { <a class="el" href="namespacedpp.html#ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f">cpt_role</a> = 1
 , <a class="el" href="namespacedpp.html#ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d">cpt_user</a> = 2
  }</td></tr>
@@ -1408,10 +1403,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a0042c0fc8164da4239b977d5be8e2ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">intents are a bitmask of allowed events on your websocket.  <a href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5">More...</a><br /></td></tr>
 <tr class="separator:a0042c0fc8164da4239b977d5be8e2ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce43206033521b990e3a72bb87481b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7">component_type</a> : uint8_t { <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8">cot_action_row</a> = 1
+<tr class="memitem:afce43206033521b990e3a72bb87481b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7">component_type</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8">cot_action_row</a> = 1
 , <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9">cot_button</a> = 2
 , <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f">cot_selectmenu</a> = 3
 , <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b">cot_text</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a701efb58e000f58c5bedaf12170dc3ff">cot_user_selectmenu</a> = 5
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a67095762bbcce1930f5751e24a6ce26a">cot_role_selectmenu</a> = 6
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a3348650cc3c6324111def4ce383809e3">cot_mentionable_selectmenu</a> = 7
+, <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e">cot_channel_selectmenu</a> = 8
+<br />
  }</td></tr>
 <tr class="memdesc:afce43206033521b990e3a72bb87481b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the type of a component.  <a href="namespacedpp.html#afce43206033521b990e3a72bb87481b7">More...</a><br /></td></tr>
 <tr class="separator:afce43206033521b990e3a72bb87481b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3471,31 +3473,17 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" name="afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9"></a>cot_button&#160;</td><td class="fielddoc"><p >Clickable button. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f" name="afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f"></a>cot_selectmenu&#160;</td><td class="fielddoc"><p >Select menu. </p>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f" name="afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f"></a>cot_selectmenu&#160;</td><td class="fielddoc"><p >Select menu for picking from defined text options. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b" name="afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b"></a>cot_text&#160;</td><td class="fielddoc"><p >Text input. </p>
 </td></tr>
-</table>
-
-</div>
-</div>
-<a id="a63342923617f0829b64c53cd02fafd1b" name="a63342923617f0829b64c53cd02fafd1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63342923617f0829b64c53cd02fafd1b">&#9670;&nbsp;</a></span>component_type_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a63342923617f0829b64c53cd02fafd1b">dpp::component_type_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Component type, either button or select. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e" name="a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e"></a>cotype_button&#160;</td><td class="fielddoc"><p >Button. </p>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a701efb58e000f58c5bedaf12170dc3ff" name="afce43206033521b990e3a72bb87481b7a701efb58e000f58c5bedaf12170dc3ff"></a>cot_user_selectmenu&#160;</td><td class="fielddoc"><p >Select menu for users. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc" name="a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc"></a>cotype_select&#160;</td><td class="fielddoc"><p >Option select list (drop-down) </p>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a67095762bbcce1930f5751e24a6ce26a" name="afce43206033521b990e3a72bb87481b7a67095762bbcce1930f5751e24a6ce26a"></a>cot_role_selectmenu&#160;</td><td class="fielddoc"><p >Select menu for roles. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a3348650cc3c6324111def4ce383809e3" name="afce43206033521b990e3a72bb87481b7a3348650cc3c6324111def4ce383809e3"></a>cot_mentionable_selectmenu&#160;</td><td class="fielddoc"><p >Select menu for mentionables (users and roles) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e" name="afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e"></a>cot_channel_selectmenu&#160;</td><td class="fielddoc"><p >Select menu for channels. </p>
 </td></tr>
 </table>
 
@@ -4273,7 +4261,7 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0" name="a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0"></a>it_application_command&#160;</td><td class="fielddoc"><p >application command (slash command) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1" name="a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1"></a>it_component_button&#160;</td><td class="fielddoc"><p >button click (component interaction) </p>
+<tr><td class="fieldname"><a id="a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1" name="a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1"></a>it_component_button&#160;</td><td class="fielddoc"><p >button click or select menu chosen (component interaction) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4" name="a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4"></a>it_autocomplete&#160;</td><td class="fielddoc"><p >Autocomplete interaction. </p>
 </td></tr>
@@ -7595,7 +7583,7 @@ template&lt;typename T , class F , class... Ts&gt; </div>
 <p >Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a> m = dpp::sync&lt;dpp::message&gt;(&amp;bot, &amp;<a class="code hl_function" href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a>, <a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(channel_id, <span class="stringliteral">&quot;moo.&quot;</span>));</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html_aa6ae3dc32ebc2dd14264962710d35af7"><div class="ttname"><a href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a></div><div class="ttdeci">void message_create(const struct message &amp;m, command_completion_event_t callback=utility::log_error())</div><div class="ttdoc">Send a message to a channel. The callback function is called when the message has been sent.</div></div>
-<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1107</div></div>
+<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1127</div></div>
 </div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>As previously mentioned, this template will block. It is ill-advised to call this outside of a separate thread and this should never be directly used in any event such as <a class="el" href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a>! </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">

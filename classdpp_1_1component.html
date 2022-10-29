@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a69b9e60742f6a1f1622b264cd7712660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a790334ad68b127e95923c5f6cdb727a7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html#a790334ad68b127e95923c5f6cdb727a7">~component</a> ()=default</td></tr>
 <tr class="separator:a790334ad68b127e95923c5f6cdb727a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83f1098e87ce1dd11e475dfd4740b16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1component.html">component</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html#af83f1098e87ce1dd11e475dfd4740b16">add_channel_type</a> (uint8_t ct)</td></tr>
+<tr class="memdesc:af83f1098e87ce1dd11e475dfd4740b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a channel type to include in the channel select component (<a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e" title="Select menu for channels.">dpp::cot_channel_selectmenu</a>)  <a href="classdpp_1_1component.html#af83f1098e87ce1dd11e475dfd4740b16">More...</a><br /></td></tr>
+<tr class="separator:af83f1098e87ce1dd11e475dfd4740b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a281e39d6b8c65b1fd301d195a835e703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1component.html">component</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html#a281e39d6b8c65b1fd301d195a835e703">set_type</a> (<a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7">component_type</a> ct)</td></tr>
 <tr class="memdesc:a281e39d6b8c65b1fd301d195a835e703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of the component. Button components (type <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" title="Clickable button.">dpp::cot_button</a>) should always be contained within an action row (type <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8" title="Action row, a container for other components.">dpp::cot_action_row</a>). As described below, many of the other methods automatically set this to the correct type so usually you should not need to manually call <a class="el" href="classdpp_1_1component.html#a281e39d6b8c65b1fd301d195a835e703" title="Set the type of the component. Button components (type dpp::cot_button) should always be contained wi...">component::set_type()</a>.  <a href="classdpp_1_1component.html#a281e39d6b8c65b1fd301d195a835e703">More...</a><br /></td></tr>
 <tr class="separator:a281e39d6b8c65b1fd301d195a835e703"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +228,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa0a71bbf2f4cac7d87a53ad1ec89da37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f47e82e57e28a1aac48027e43b2fd9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdpp_1_1select__option.html">select_option</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html#ad4f47e82e57e28a1aac48027e43b2fd9">options</a></td></tr>
 <tr class="separator:ad4f47e82e57e28a1aac48027e43b2fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acea6badb01425ea51dc50f0c8ab87c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html#a8acea6badb01425ea51dc50f0c8ab87c">channel_types</a></td></tr>
+<tr class="separator:a8acea6badb01425ea51dc50f0c8ab87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad364b789494d7888666173079bdb48ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html#ad364b789494d7888666173079bdb48ad">disabled</a></td></tr>
 <tr class="separator:ad364b789494d7888666173079bdb48ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6312c0c598466aa87541745d2f7bff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html#a6a6312c0c598466aa87541745d2f7bff">required</a></td></tr>
@@ -283,6 +288,33 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af83f1098e87ce1dd11e475dfd4740b16" name="af83f1098e87ce1dd11e475dfd4740b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af83f1098e87ce1dd11e475dfd4740b16">&#9670;&nbsp;</a></span>add_channel_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1component.html">component</a> &amp; dpp::component::add_channel_type </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a channel type to include in the channel select component (<a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e" title="Select menu for channels.">dpp::cot_channel_selectmenu</a>) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ct</td><td>The <a class="el" href="namespacedpp.html#a732e832861149a278f27ea7840b8e4ca" title="Flag integers as received from and sent to discord.">dpp::channel_type</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>component&amp; reference to self </dd></dl>
+
+</div>
+</div>
 <a id="a3707437be16cc7dfd5edcf321f8e842d" name="a3707437be16cc7dfd5edcf321f8e842d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3707437be16cc7dfd5edcf321f8e842d">&#9670;&nbsp;</a></span>add_component()</h2>
 
@@ -597,7 +629,7 @@ Public Attributes</h2></td></tr>
 <p>Set the max value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">max_values</td><td>max value to set </td></tr>
+    <tr><td class="paramname">max_values</td><td>max value to set (0 - 25) </td></tr>
   </table>
   </dd>
 </dl>
@@ -624,7 +656,7 @@ Public Attributes</h2></td></tr>
 <p>Set the min length of text input. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">min_l</td><td>min value to set </td></tr>
+    <tr><td class="paramname">min_l</td><td>min value to set (0 - 25) </td></tr>
   </table>
   </dd>
 </dl>
@@ -823,6 +855,21 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8acea6badb01425ea51dc50f0c8ab87c" name="a8acea6badb01425ea51dc50f0c8ab87c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8acea6badb01425ea51dc50f0c8ab87c">&#9670;&nbsp;</a></span>channel_types</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint8_t&gt; dpp::component::channel_types</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >List of channel types (<a class="el" href="namespacedpp.html#a732e832861149a278f27ea7840b8e4ca" title="Flag integers as received from and sent to discord.">dpp::channel_type</a>) to include in the channel select component (<a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e" title="Select menu for channels.">dpp::cot_channel_selectmenu</a>) </p>
+
+</div>
+</div>
 <a id="a51efd287b483b485f7019fb8263465ed" name="a51efd287b483b485f7019fb8263465ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51efd287b483b485f7019fb8263465ed">&#9670;&nbsp;</a></span>components</h2>
 
@@ -923,7 +970,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Maximum number of selectable values for a select menu. -1 to not set this. </p>
+<p >Maximum number of items that can be chosen for a select menu. Default is -1 to not set this </p>
 
 </div>
 </div>
@@ -953,7 +1000,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Minimum number of selectable values for a select menu. -1 to not set this </p>
+<p >Minimum number of items that must be chosen for a select menu. Default is -1 to not set this </p>
 
 </div>
 </div>
@@ -968,7 +1015,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Select options for select menus </p>
+<p >Select options for select menus. Only required and available for select menus of type <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f" title="Select menu for picking from defined text options.">dpp::cot_selectmenu</a> </p>
 
 </div>
 </div>

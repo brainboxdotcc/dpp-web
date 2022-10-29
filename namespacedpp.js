@@ -491,11 +491,11 @@ var namespacedpp =
       [ "cot_action_row", "namespacedpp.html#afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8", null ],
       [ "cot_button", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9", null ],
       [ "cot_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a952fb985d83755e2b9a415814c9edd8f", null ],
-      [ "cot_text", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b", null ]
-    ] ],
-    [ "component_type_t", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1b", [
-      [ "cotype_button", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1baad47b544b108daba6abab7fd9f91a51e", null ],
-      [ "cotype_select", "namespacedpp.html#a63342923617f0829b64c53cd02fafd1ba6e7793ef67aa0c149233df8719f579cc", null ]
+      [ "cot_text", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a8fdd4137c3888268fad7cab29c7b765b", null ],
+      [ "cot_user_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a701efb58e000f58c5bedaf12170dc3ff", null ],
+      [ "cot_role_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a67095762bbcce1930f5751e24a6ce26a", null ],
+      [ "cot_mentionable_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a3348650cc3c6324111def4ce383809e3", null ],
+      [ "cot_channel_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e", null ]
     ] ],
     [ "default_forum_sort_order_t", "namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06", [
       [ "so_latest_activity", "namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f", null ],
