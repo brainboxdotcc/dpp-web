@@ -442,11 +442,12 @@ var namespacedpp =
       [ "cp_lazy", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a055c40e9038f2345a5c1fb9a3d3d648c", null ],
       [ "cp_none", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a68e2695356af38492410341873083c49", null ]
     ] ],
-    [ "channel_flags", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7d", [
-      [ "c_nsfw", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7da0b0d31477f484ddc8b5da869e8a020bd", null ],
-      [ "c_video_quality_720p", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7da76fb8f7043c63103db86dc0ef1f14fca", null ],
-      [ "c_lock_permissions", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7da616b3dd8173ca7ca0d249d82c573e3c0", null ],
-      [ "c_pinned_thread", "namespacedpp.html#ab11f2d909f48313331797465e3fbba7da9d8e493824376dc1bfe241597e27fa89", null ]
+    [ "channel_flags", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9", [
+      [ "c_nsfw", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a0b0d31477f484ddc8b5da869e8a020bd", null ],
+      [ "c_video_quality_720p", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a76fb8f7043c63103db86dc0ef1f14fca", null ],
+      [ "c_lock_permissions", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a616b3dd8173ca7ca0d249d82c573e3c0", null ],
+      [ "c_pinned_thread", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89", null ],
+      [ "c_require_tag", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9", null ]
     ] ],
     [ "channel_type", "namespacedpp.html#a732e832861149a278f27ea7840b8e4ca", [
       [ "CHANNEL_TEXT", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caadee0dce423516e720f8ef4f77628428e", null ],
