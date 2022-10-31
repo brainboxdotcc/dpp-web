@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"namespacedpp_1_1colors.html#abb34cb3e20942bcbe2cfe5650170e42a":[7,0,0,0,25],
 "namespacedpp_1_1colors.html#ac9d616dd5c25d82057d6618f6b1dbf12":[7,0,0,0,42],
 "namespacedpp_1_1colors.html#aca0a7077bebf6fc0727a1821191481a8":[7,0,0,0,17],
 "namespacedpp_1_1colors.html#acb76e75d49a967db7525515b2c244a62":[7,0,0,0,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structdpp_1_1autocomplete__interaction.html#a52a8e3ebf0b6fafffe920b52b56e840f":[7,0,0,17,0],
 "structdpp_1_1autocomplete__interaction.html#a52a8e3ebf0b6fafffe920b52b56e840f":[8,0,0,15,0],
 "structdpp_1_1autocomplete__interaction.html#a6e1ddf18af43a38f4385ed418e5bfa7f":[8,0,0,15,2],
-"structdpp_1_1autocomplete__interaction.html#a6e1ddf18af43a38f4385ed418e5bfa7f":[7,0,0,17,2],
-"structdpp_1_1autocomplete__interaction.html#a7974cc6a20dcd24f8c25f1bdba549812":[8,0,0,15,6]
+"structdpp_1_1autocomplete__interaction.html#a6e1ddf18af43a38f4385ed418e5bfa7f":[7,0,0,17,2]
 };

@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Creating a Bot Token - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Build a Discord Bot using Meson - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Creating a Bot Token - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Build a Discord Bot using Meson - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Creating a Bot Token - D++ - The lightweight C++ Discord API Library">
-<title>Creating a Bot Token - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Build a Discord Bot using Meson - D++ - The lightweight C++ Discord API Library">
+<title>Build a Discord Bot using Meson - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('creating-a-bot-application.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('buildmeson.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,53 +98,40 @@ $(document).ready(function(){initNavTree('creating-a-bot-application.html',''); 
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Creating a Bot Token </div></div>
+  <div class="headertitle"><div class="title">Build a Discord Bot using Meson </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >Before you start coding, you need to create and register your bot in the Discord developer portal. You can then add this bot to your Discord-server.</p>
-<h2><a class="anchor" id="autotoc_md118"></a>
-Creating a new bot</h2>
-<p >To create a new application, take the steps as follows:</p>
-<ol type="1">
-<li>Sign in to the <a href="https://discord.com/developers/applications">Discord developer portal</a> and click on "New Application" on the top right.</li>
-<li>Next, enter a name for the application in the pop-up and press the "Create" button. <div class="image">
-<img src="create_application_confirm_popup.png" alt=""/>
-</div>
- In this example we named it "D++ Test Bot".</li>
-<li>Move on by click the "Bot" tab in the left-hand side of the screen. Now click the "Add Bot" button on the right and confirm that you want to add the bot to your application.</li>
-</ol>
-<div class="image">
-<img src="create_application_add_bot.png" alt=""/>
-</div>
-<p >On the resulting screen, you’ll note a page with information regarding your new bot. You can edit your bot name, description, and avatar here if you want to. If you wish to read the message content from messages, you need to enable the message content intent in the "Privileged Gateway Intents" section.</p>
-<div class="image">
-<img src="create_application_bot_overview.png" alt=""/>
-</div>
-<p >In this panel, you can get your bot token by clicking "Reset Token". A bot token looks like this: <code>OTAyOTMxODU1NTU1MzE3ODUw.YXlm0g.9oYCt-XHXVH_z9qAytzmVRzKWTg</code></p>
-<dl class="section warning"><dt>Warning</dt><dd><b>Do not share this token</b> with anybody! If you ever somehow compromise your current bot token or see your bot in danger, you can regenerate the token in the panel.</dd></dl>
-<h2><a class="anchor" id="autotoc_md119"></a>
-Adding the bot to your server</h2>
-<p >Once you've created your bot in the discord developer portal, you may wonder: </p><blockquote class="doxtable">
-<p >Where is my bot now, I can't see him on my server?! </p>
-</blockquote>
-<p>That's because you've created a bot application, but it's not on any server right now. So, to invite the bot to your server, you must create an invitation URL.</p>
-<ol type="1">
-<li>go again into the <a href="https://discord.com/developers/applications">Applications page</a> and click on your bot.</li>
-<li>Go to the "OAuth2" tab and click on the subpage "URL Generator". <div class="image">
-<img src="create_application_navigate_to_url_generator.png" alt=""/>
-</div>
-</li>
-<li>Select the <code>bot</code> scope. If your bot uses slash commands, also select <code>applications.commands</code>. You can read more about scopes and which you need for your application <a href="https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes">here</a>.</li>
-<li>Choose the permissions required for your bot to function in the "Bot Permissions" section.</li>
-<li>Copy and paste the resulting URL in your browser. Choose a server to invite the bot to, and click "Authorize".</li>
-</ol>
-<dl class="section note"><dt>Note</dt><dd>For bots with elevated permissions, Discord enforces two-factor authentication on the bot owner's account when added to servers that have server-wide 2FA enabled.</dd></dl>
-<h2><a class="anchor" id="autotoc_md120"></a>
-Troubleshooting</h2>
-<ul>
-<li>Stuck? You can find us on the <a href="https://discord.gg/dpp">official discord server</a> - ask away! We don't bite! </li>
-</ul>
-</div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md113"></a>
+1. Toolchain</h2>
+<p >Before compiling, you will need to install <code>meson</code> on your system. To be sure that <code>meson</code> is installed, you can type the following command: </p><pre class="fragment">$ meson --version
+0.63.2
+</pre> <h2><a class="anchor" id="autotoc_md114"></a>
+2. Create a Meson project</h2>
+<p >In an empty directory. </p><pre class="fragment">- your project/
+</pre><p> run the command </p><pre class="fragment">$ meson init -l cpp
+</pre> <h2><a class="anchor" id="autotoc_md115"></a>
+3. Configuring your Meson project</h2>
+<p >add the following line after the project() line in your meson.build file. </p><pre class="fragment">dpp = dependency('dpp')
+</pre><p> add the following line in the executable section of your meson.build file. </p><pre class="fragment">dependencies: [dpp]
+</pre><p> change the cpp_std value in the project() to c++17</p>
+<p >your meson.build should look like this. </p><div class="fragment"><div class="line">project(&#39;discord-bot&#39;, &#39;cpp&#39;,</div>
+<div class="line">  version : &#39;0.1&#39;,</div>
+<div class="line">  default_options : [&#39;warning_level=3&#39;,</div>
+<div class="line">                     &#39;cpp_std=c++14&#39;])</div>
+<div class="line"> </div>
+<div class="line">dpp = dependency(&#39;dpp&#39;)</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">exe = executable(&#39;discord&#39;, &#39;discord_bot.cpp&#39;,</div>
+<div class="line">  install : true, dependencies: [dpp])</div>
+<div class="line"> </div>
+<div class="line">test(&#39;basic&#39;, exe)</div>
+</div><!-- fragment --><p >Meson automatically generates a cpp for your project. And a test suite.</p>
+<h2><a class="anchor" id="autotoc_md116"></a>
+4. Building</h2>
+<p >To build a meson project run </p><pre class="fragment">$ meson setup builddir
+$ meson compile -C builddir
+</pre> </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">

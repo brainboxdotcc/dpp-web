@@ -127,8 +127,20 @@ $(document).ready(function(){initNavTree('modal-dialog-interactions.html',''); i
 <div class="line">            <span class="comment">/* Add a text component */</span></div>
 <div class="line">            modal.add_component(</div>
 <div class="line">                dpp::component().</div>
-<div class="line">                set_label(<span class="stringliteral">&quot;Type rammel&quot;</span>).</div>
+<div class="line">                set_label(<span class="stringliteral">&quot;Short type rammel&quot;</span>).</div>
 <div class="line">                set_id(<span class="stringliteral">&quot;field_id&quot;</span>).</div>
+<div class="line">                set_type(dpp::cot_text).</div>
+<div class="line">                set_placeholder(<span class="stringliteral">&quot;gumd&quot;</span>).</div>
+<div class="line">                set_min_length(5).</div>
+<div class="line">                set_max_length(50).</div>
+<div class="line">                set_text_style(dpp::text_short)</div>
+<div class="line">            );</div>
+<div class="line">            <span class="comment">/* Add another text component in the next row, as required by Discord */</span></div>
+<div class="line">            modal.add_row();</div>
+<div class="line">            modal.add_component(</div>
+<div class="line">                dpp::component().</div>
+<div class="line">                set_label(<span class="stringliteral">&quot;Type rammel&quot;</span>).</div>
+<div class="line">                set_id(<span class="stringliteral">&quot;field_id2&quot;</span>).</div>
 <div class="line">                set_type(dpp::cot_text).</div>
 <div class="line">                set_placeholder(<span class="stringliteral">&quot;gumf&quot;</span>).</div>
 <div class="line">                set_min_length(1).</div>

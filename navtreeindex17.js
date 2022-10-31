@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"misc.html":[4,3],
 "modal-dialog-interactions.html":[4,1,6],
 "music-and-audio.html":[4,2],
 "namespacedpp.html":[7,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a32c172d9953bb8cf72dea1a33762eddb":[7,0,0,317,35],
 "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a36d490ca8b4746a76b4982dfa03d7396":[7,0,0,317,32],
 "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a3d621da851d24381179506bef573fae6":[7,0,0,317,12],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a43f62c967b9b16b49c315a0b23f86039":[7,0,0,317,3],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a49988d7e19bd664514046a44ae8d6f34":[7,0,0,317,36]
+"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a43f62c967b9b16b49c315a0b23f86039":[7,0,0,317,3]
 };
