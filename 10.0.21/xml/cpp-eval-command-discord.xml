@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="cpp-eval-command-discord" kind="page">
+    <compoundname>cpp-eval-command-discord</compoundname>
+    <title>Making an eval command in C++</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect3 id="cpp-eval-command-discord_1autotoc_md77">
+<title>What is an eval command anyway?</title>
+<para>Many times people will ask: &quot;how do i make a command like &apos;eval&apos; in C++&quot;. For the uninitiated, an <computeroutput>eval</computeroutput> command is a command often found in interpreted languages such as Javascript and Python, which allows the developer to pass in raw interpreter statements which are then executed within the context of the running program, without any sandboxing. Eval commands are plain <bold>evil</bold>, if not properly coded in.</para>
+<para>Needless to say, this is very dangerous. If you are asking how to do this, and want to put this into your bot, we trust that you have a very good reason to do so and have considered alternatives before resorting to this. The code below is for educational purposes only and makes several assumptions:</para>
+<para><orderedlist>
+<listitem><para>This code will only operate on UNIX-like systems such as Linux (not <bold>Darwin</bold>)</para>
+</listitem><listitem><para>It assumes you use GCC, and have <computeroutput>g++</computeroutput> installed on your server and in your $PATH</para>
+</listitem><listitem><para>The program will attempt to write to the current directory</para>
+</listitem><listitem><para>No security checks will be done against the code, except for to check that it is being run by the bot&apos;s developer by snowflake id. It is entirely possible to send an <computeroutput>!eval exit(0);</computeroutput> and make the bot quit, for example, or delete files from the host operating system, if misused or misconfigured.</para>
+</listitem><listitem><para>You&apos;re willing to wait a few seconds for compilation before your evaluated code runs. There isn&apos;t a way around this, as C++ is a compiled language.</para>
+</listitem></orderedlist>
+</para>
+<para>To create this program you must create two files, <computeroutput>eval.h</computeroutput> and <computeroutput>eval.cpp</computeroutput>. The header file lists forward declarations of functions that you will be able to use directly within your <computeroutput>eval</computeroutput> code. As well as this the entire of D++ will be available to the eval command via the local variable <computeroutput>bot</computeroutput>, and the entire <computeroutput>on_message_create</computeroutput> event variable via a local variable called <computeroutput>event</computeroutput>.</para>
+<para>The evaluated code will run within its own thread, so can execute for as long as it needs (but use common sense, don&apos;t go spawning a tight <computeroutput>while</computeroutput> loop that runs forever, you&apos;ll lock a thread at 100% CPU that won&apos;t ever end!).</para>
+</sect3>
+<sect3 id="cpp-eval-command-discord_1autotoc_md78">
+<title>Implementation details</title>
+<para>This code operates by outputting your provided code to be evaluated into a simple boilerplate program which can be compiled to a shared object library (.so file). This .so file is then compiled with g++, using the <computeroutput>-shared</computeroutput> and <computeroutput>-fPIC</computeroutput> flags. If the program can be successfully compiled, it is then loaded using <computeroutput>dlopen()</computeroutput>, and the symbol <computeroutput>so_exec()</computeroutput> searched for within it, and called. This <computeroutput>so_exec()</computeroutput> function will contain the body of the code given to the eval command. Once this has been called and it has returned, the <computeroutput>dlclose()</computeroutput> function is called to unload the library, and finally any temporary files (such as the .so file and its corresponding .cpp file) are cleaned up. Docker is definitely recommended if you code on Windows/Mac OS, because docker desktop still uses a linux VM, so your code can easily use <computeroutput>.so</computeroutput> file and your code runs the same on your vps (if it also uses Linux distro)</para>
+</sect3>
+<sect3 id="cpp-eval-command-discord_1autotoc_md79">
+<title>Source code</title>
+<para><simplesect kind="warning"><para>If you manage to get your system, network, or anything else harmed by use or misuse of this code, we are not responsible. Don&apos;t say we didn&apos;t warn you! Find another way to solve your problem!</para>
+</simplesect>
+</para>
+<sect4 id="cpp-eval-command-discord_1autotoc_md80">
+<title>eval.h</title>
+<para>Remember that eval.h contains forward-declarations of any functions you want to expose to the eval command. It is included both by the bot itself, and by any shared object files compiled for evaluation.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>the<sp/>snowflake<sp/>ID<sp/>of<sp/>the<sp/>bot&apos;s<sp/>developer.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>The<sp/>eval<sp/>command<sp/>will<sp/>be<sp/>restricted<sp/>to<sp/>this<sp/>user.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MY_DEVELOPER<sp/>189759562910400512</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Any<sp/>functions<sp/>you<sp/>want<sp/>to<sp/>be<sp/>usable<sp/>from<sp/>within<sp/>an<sp/>eval,</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>that<sp/>are<sp/>not<sp/>part<sp/>of<sp/>D++<sp/>itself<sp/>or<sp/>the<sp/>message<sp/>event,<sp/>you</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>can<sp/>put<sp/>here<sp/>as<sp/>forward<sp/>declarations.<sp/>The<sp/>test_function()</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>serves<sp/>as<sp/>an<sp/>example.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_function();</highlight></codeline>
+</programlisting></para>
+</sect4>
+<sect4 id="cpp-eval-command-discord_1autotoc_md81">
+<title>eval.cpp</title>
+<para>This is the main body of the example program.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fmt/format.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>We<sp/>have<sp/>to<sp/>define<sp/>this<sp/>to<sp/>make<sp/>certain<sp/>functions<sp/>visible<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_GNU_SOURCE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_GNU_SOURCE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;link.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dlfcn.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;eval.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>an<sp/>example<sp/>function<sp/>you<sp/>can<sp/>expose<sp/>to<sp/>your<sp/>eval<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_function()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>42;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Important:<sp/>This<sp/>code<sp/>is<sp/>for<sp/>UNIX-like<sp/>systems<sp/>only,<sp/>e.g.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>Linux,<sp/>BSD,<sp/>OSX.<sp/>It<sp/>will<sp/>NOT<sp/>work<sp/>on<sp/>Windows!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>Note<sp/>for<sp/>OSX<sp/>you&apos;ll<sp/>probably<sp/>have<sp/>to<sp/>change<sp/>all<sp/>references</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>from<sp/>.so<sp/>to<sp/>.dylib.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" kindref="member">dpp::i_default_intents</ref><sp/>|<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414" kindref="member">dpp::i_message_content</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>won&apos;t<sp/>work<sp/>in<sp/>a<sp/>slash<sp/>command<sp/>very<sp/>well<sp/>yet,<sp/>as<sp/>there<sp/>is<sp/>not<sp/>yet</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>a<sp/>multi-line<sp/>slash<sp/>command<sp/>input<sp/>type.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_create([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacedpp_1_1utility_1afa6985aaa798fa30b73c1decc418cd32" kindref="member">dpp::utility::utf8substr</ref>(event.msg.content,<sp/>0,<sp/>5)<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;!eval&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(event.msg.author.id<sp/>!=<sp/>MY_DEVELOPER)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(dpp::message(event.msg.channel_id,<sp/></highlight><highlight class="stringliteral">&quot;On<sp/>the<sp/>day<sp/>i<sp/>do<sp/>this<sp/>for<sp/>you,<sp/>Satan<sp/>will<sp/>be<sp/>ice<sp/>skating<sp/>to<sp/>work.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>start<sp/>by<sp/>creating<sp/>a<sp/>string<sp/>that<sp/>contains<sp/>a<sp/>cpp<sp/>program<sp/>for<sp/>a<sp/>simple<sp/>library.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>library<sp/>will<sp/>contain<sp/>one<sp/>exported<sp/>function<sp/>called<sp/>so_exec()<sp/>that<sp/>is<sp/>called</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>containing<sp/>the<sp/>raw<sp/>C++<sp/>code<sp/>to<sp/>eval.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>code<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#include<sp/>&lt;iostream&gt;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;string&gt;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;map&gt;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;unordered_map&gt;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;stdint.h&gt;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;dpp/dpp.h&gt;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;dpp/nlohmann/json.hpp&gt;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;fmt/format.h&gt;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>\&quot;eval.h\&quot;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extern<sp/>\&quot;C\&quot;<sp/>void<sp/>so_exec(dpp::cluster&amp;<sp/>bot,<sp/>dpp::message_create_t<sp/>event)<sp/>{\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="namespacedpp_1_1utility_1afa6985aaa798fa30b73c1decc418cd32" kindref="member">dpp::utility::utf8substr</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.msg.content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedpp_1_1utility_1a62cc8fc3994f6b3d49cf4923b993c231" kindref="member">dpp::utility::utf8len</ref>(event.msg.content)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;\n\</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Next<sp/>we<sp/>output<sp/>this<sp/>string<sp/>full<sp/>of<sp/>C++<sp/>to<sp/>a<sp/>cpp<sp/>file<sp/>on<sp/>disk.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>code<sp/>assumes<sp/>the<sp/>current<sp/>directory<sp/>is<sp/>writeable.<sp/>The<sp/>file<sp/>will<sp/>have<sp/>a</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>unique<sp/>name<sp/>made<sp/>from<sp/>the<sp/>user&apos;s<sp/>id<sp/>and<sp/>the<sp/>message<sp/>id.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>source_filename<sp/>=<sp/>std::to_string(event.msg.author.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(event.msg.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.cpp&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::fstream<sp/>code_file(source_filename,<sp/>std::fstream::binary<sp/>|<sp/>std::fstream::out);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!code_file.is_open())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(dpp::message(event.msg.channel_id,<sp/></highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>create<sp/>source<sp/>file<sp/>for<sp/>`eval`&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>code_file<sp/>&lt;&lt;<sp/>code;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>code_file.close();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Now<sp/>to<sp/>actually<sp/>compile<sp/>the<sp/>file.<sp/>We<sp/>use<sp/>dpp::utility::exec<sp/>to</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>invoke<sp/>a<sp/>compiler.<sp/>This<sp/>assumes<sp/>you<sp/>are<sp/>using<sp/>g++,<sp/>and<sp/>it<sp/>is<sp/>in<sp/>your<sp/>path.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>compile_start<sp/>=<sp/><ref refid="namespacedpp_1_1utility_1a1184092d62c7ab561cb3f60a92f71b67" kindref="member">dpp::utility::time_f</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedpp_1_1utility_1ac7d516c03d572fe65d01c4ec5e92c6f0" kindref="member">dpp::utility::exec</ref>(</highlight><highlight class="stringliteral">&quot;g++&quot;</highlight><highlight class="normal">,<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-std=c++17&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-shared&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">/*<sp/>Build<sp/>the<sp/>output<sp/>as<sp/>a<sp/>.so<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-fPIC&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string(</highlight><highlight class="stringliteral">&quot;-o&quot;</highlight><highlight class="normal">)<sp/>+<sp/>std::to_string(event.msg.author.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(event.msg.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.so&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::to_string(event.msg.author.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(event.msg.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.cpp&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-ldpp&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-ldl&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>[event,<sp/>&amp;bot,<sp/>source_filename,<sp/>compile_start](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;output)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>After<sp/>g++<sp/>is<sp/>ran<sp/>we<sp/>end<sp/>up<sp/>inside<sp/>this<sp/>lambda<sp/>with<sp/>the<sp/>output<sp/>as<sp/>a<sp/>string<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>compile_time<sp/>=<sp/>dpp::utility::time_f()<sp/>-<sp/>compile_start;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Delete<sp/>our<sp/>cpp<sp/>file,<sp/>we<sp/>don&apos;t<sp/>need<sp/>it<sp/>any<sp/>more<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>del_file<sp/>=<sp/>std::string(getenv(</highlight><highlight class="stringliteral">&quot;PWD&quot;</highlight><highlight class="normal">))<sp/>+<sp/>std::to_string(event.msg.author.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(event.msg.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.cpp&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unlink(del_file.c_str());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>On<sp/>successful<sp/>compilation<sp/>g++<sp/>outputs<sp/>nothing,<sp/>so<sp/>any<sp/>output<sp/>here<sp/>is<sp/>error<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(output.length())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(dpp::message(event.msg.channel_id,<sp/></highlight><highlight class="stringliteral">&quot;Compile<sp/>error:<sp/>```\n&quot;</highlight><highlight class="normal"><sp/>+<sp/>output<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n```&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Now<sp/>for<sp/>the<sp/>meat<sp/>of<sp/>the<sp/>function.<sp/>To<sp/>actually<sp/>load</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>our<sp/>shared<sp/>object<sp/>we<sp/>use<sp/>dlopen()<sp/>to<sp/>load<sp/>it<sp/>into<sp/>the</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>memory<sp/>space<sp/>of<sp/>our<sp/>bot.<sp/>If<sp/>dlopen()<sp/>returns<sp/>a<sp/>nullptr,</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>shared<sp/>object<sp/>could<sp/>not<sp/>be<sp/>loaded.<sp/>The<sp/>user<sp/>probably</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>did<sp/>something<sp/>odd<sp/>with<sp/>the<sp/>symbols<sp/>inside<sp/>their<sp/>eval.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>dl<sp/>=<sp/>std::string(getenv(</highlight><highlight class="stringliteral">&quot;PWD&quot;</highlight><highlight class="normal">))<sp/>+<sp/>std::to_string(event.msg.author.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(event.msg.id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.so&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>shared_object_handle<sp/>=<sp/>dlopen(dl.c_str(),<sp/>RTLD_NOW);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!shared_object_handle)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>char<sp/>*dlsym_error<sp/>=<sp/>dlerror();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(dpp::message(event.msg.channel_id,<sp/></highlight><highlight class="stringliteral">&quot;Shared<sp/>object<sp/>load<sp/>error:<sp/>```\n&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string(dlsym_error<sp/>?<sp/>dlsym_error<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>error&quot;</highlight><highlight class="normal">)<sp/>+</highlight><highlight class="stringliteral">&quot;\n```&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>type<sp/>represents<sp/>the<sp/>&quot;void<sp/>so_exec()&quot;<sp/>function<sp/>inside</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>shared<sp/>object<sp/>library<sp/>file.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>function_pointer<sp/>=<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(*)(<ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref>&amp;,<sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Attempt<sp/>to<sp/>find<sp/>the<sp/>function<sp/>called<sp/>so_exec()<sp/>inside<sp/>the</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>library<sp/>we<sp/>just<sp/>loaded.<sp/>If<sp/>we<sp/>can&apos;t<sp/>find<sp/>it,<sp/>then<sp/>the<sp/>user</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>did<sp/>something<sp/>really<sp/>strange<sp/>in<sp/>their<sp/>eval.<sp/>Also<sp/>note<sp/>it&apos;s</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>important<sp/>we<sp/>call<sp/>dlerror()<sp/>here<sp/>to<sp/>reset<sp/>it<sp/>before<sp/>trying</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>to<sp/>use<sp/>it<sp/>a<sp/>second<sp/>time.<sp/>It&apos;s<sp/>weird-ass<sp/>C<sp/>code<sp/>and<sp/>is<sp/>just</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>like<sp/>that.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dlerror();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>function_pointer<sp/>exec_run<sp/>=<sp/>(function_pointer)dlsym(shared_object_handle,<sp/></highlight><highlight class="stringliteral">&quot;so_exec&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dlsym_error<sp/>=<sp/>dlerror();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dlsym_error)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(<ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(event.msg.channel_id,<sp/></highlight><highlight class="stringliteral">&quot;Shared<sp/>object<sp/>load<sp/>error:<sp/>```\n&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::string(dlsym_error)<sp/>+</highlight><highlight class="stringliteral">&quot;\n```&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dlclose(shared_object_handle);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Now<sp/>we<sp/>have<sp/>a<sp/>function<sp/>pointer<sp/>to<sp/>our<sp/>actual<sp/>exec<sp/>code<sp/>in</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>&apos;exec_run&apos;,<sp/>so<sp/>lets<sp/>call<sp/>it,<sp/>and<sp/>pass<sp/>it<sp/>a<sp/>reference<sp/>to</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>cluster,<sp/>and<sp/>also<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>message_create_t.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>run_start<sp/>=<sp/><ref refid="namespacedpp_1_1utility_1a1184092d62c7ab561cb3f60a92f71b67" kindref="member">dpp::utility::time_f</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exec_run(bot,<sp/>event);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>run_time<sp/>=<sp/><ref refid="namespacedpp_1_1utility_1a1184092d62c7ab561cb3f60a92f71b67" kindref="member">dpp::utility::time_f</ref>()<sp/>-<sp/>run_start;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>When<sp/>we&apos;re<sp/>done<sp/>with<sp/>a<sp/>.so<sp/>file<sp/>we<sp/>must<sp/>always<sp/>dlclose()<sp/>it<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dlclose(shared_object_handle);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>are<sp/>now<sp/>done<sp/>with<sp/>the<sp/>compiled<sp/>code<sp/>too<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unlink(dl.c_str());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Output<sp/>some<sp/>statistics<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(<ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>(event.msg.channel_id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Execution<sp/>completed.<sp/>Compile<sp/>time:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(compile_time)<sp/>+</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;s,<sp/>execution<sp/>time<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(run_time)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;s&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect4>
+</sect3>
+<sect3 id="cpp-eval-command-discord_1autotoc_md82">
+<title>Compilation</title>
+<para>To compile this program you must link against <computeroutput>libdl</computeroutput>. It is also critically important to include the <computeroutput>-rdynamic</computeroutput> flag. For example:</para>
+<para><programlisting><codeline><highlight class="normal">g++<sp/>-std=c++17<sp/>-rdynamic<sp/>-oeval<sp/>eval.cpp<sp/>-ldpp<sp/>-ldl</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="cpp-eval-command-discord_1autotoc_md83">
+<title>Example usage</title>
+<para><image type="html" name="eval_example.png"></image>
+ </para>
+</sect3>
+    </detaileddescription>
+    <location file="docpages/example_programs/misc/eval.md"/>
+  </compounddef>
+</doxygen>
