@@ -11,10 +11,10 @@
         <argsstring></argsstring>
         <name>keywords</name>
         <briefdescription>
-<para>Substrings which will be searched for in content. </para>
+<para>Substrings which will be searched for in content (Maximum of 1000). </para>
         </briefdescription>
         <detaileddescription>
-<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive.</para>
+<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive and can be up to 30 characters.</para>
 <para>Wildcard symbols (<computeroutput>*</computeroutput>) can be used to customize how each keyword will be matched.</para>
 <para><bold>Examples for the <computeroutput>*</computeroutput> wildcard symbol:</bold></para>
 <para>Prefix - word must start with the keyword</para>
@@ -80,7 +80,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="147" column="13" bodyfile="include/dpp/automod.h" bodystart="147" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="148" column="13" bodyfile="include/dpp/automod.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a855c12dbe234d7cd0365256ac6db4dbe" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dpp::automod_metadata::regex_patterns</definition>
+        <argsstring></argsstring>
+        <name>regex_patterns</name>
+        <briefdescription>
+<para>Regular expression patterns which will be matched against content (Maximum of 10). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only Rust flavored regex is currently supported, which can be tested in online editors such as <ulink url="https://rustexp.lpil.uk/">Rustexp</ulink>. Each regex pattern must be 75 characters or less. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="156" column="13" bodyfile="include/dpp/automod.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="namespacedpp_1a8d92860238000a25eeff7eed29ec1067" kindref="member">automod_preset_type</ref> &gt;</type>
@@ -97,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="153" column="13" bodyfile="include/dpp/automod.h" bodystart="153" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="162" column="13" bodyfile="include/dpp/automod.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -112,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="160" column="13" bodyfile="include/dpp/automod.h" bodystart="160" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="169" column="13" bodyfile="include/dpp/automod.h" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -126,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="165" column="9" bodyfile="include/dpp/automod.h" bodystart="165" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="174" column="9" bodyfile="include/dpp/automod.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -142,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="170" column="1"/>
+        <location file="include/dpp/automod.h" line="179" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a2671a8e5afaf01085b585ed350376809" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -156,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="175" column="9"/>
+        <location file="include/dpp/automod.h" line="184" column="9"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1automod__metadata" kindref="compound">automod_metadata</ref> &amp;</type>
@@ -186,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="183" column="18"/>
+        <location file="include/dpp/automod.h" line="192" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -209,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="190" column="21"/>
+        <location file="include/dpp/automod.h" line="199" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -246,6 +261,7 @@
           <edgelabel>allow_list</edgelabel>
           <edgelabel>keywords</edgelabel>
           <edgelabel>presets</edgelabel>
+          <edgelabel>regex_patterns</edgelabel>
         </childnode>
         <childnode refid="5" relation="usage">
           <edgelabel>mention_total_limit</edgelabel>
@@ -269,7 +285,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/automod.h" line="108" column="1" bodyfile="include/dpp/automod.h" bodystart="108" bodyend="192"/>
+    <location file="include/dpp/automod.h" line="108" column="1" bodyfile="include/dpp/automod.h" bodystart="108" bodyend="201"/>
     <listofallmembers>
       <member refid="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>allow_list</name></member>
       <member refid="structdpp_1_1automod__metadata_1a1d341f6dd7507da28acf9c9add164803" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>automod_metadata</name></member>
@@ -278,6 +294,7 @@
       <member refid="structdpp_1_1automod__metadata_1add05f221746c0ea2b3136b53498d0cf6" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>keywords</name></member>
       <member refid="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>mention_total_limit</name></member>
       <member refid="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>presets</name></member>
+      <member refid="structdpp_1_1automod__metadata_1a855c12dbe234d7cd0365256ac6db4dbe" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>regex_patterns</name></member>
       <member refid="structdpp_1_1automod__metadata_1a2671a8e5afaf01085b585ed350376809" prot="public" virt="virtual"><scope>dpp::automod_metadata</scope><name>~automod_metadata</name></member>
       <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>~json_interface</name></member>
     </listofallmembers>

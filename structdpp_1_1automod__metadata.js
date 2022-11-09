@@ -7,5 +7,6 @@ var structdpp_1_1automod__metadata =
     [ "allow_list", "structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d", null ],
     [ "keywords", "structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6", null ],
     [ "mention_total_limit", "structdpp_1_1automod__metadata.html#a411294739bcfaee90bdc36009ee92f4b", null ],
-    [ "presets", "structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89", null ]
+    [ "presets", "structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89", null ],
+    [ "regex_patterns", "structdpp_1_1automod__metadata.html#a855c12dbe234d7cd0365256ac6db4dbe", null ]
 ];

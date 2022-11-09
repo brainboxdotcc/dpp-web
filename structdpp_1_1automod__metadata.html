@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('structdpp_1_1automod__metadata.html','
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structdpp_1_1automod__metadata__coll__graph.svg" width="476" height="260"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structdpp_1_1automod__metadata__coll__graph.svg" width="514" height="275"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -145,8 +145,11 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:add05f221746c0ea2b3136b53498d0cf6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6">keywords</a></td></tr>
-<tr class="memdesc:add05f221746c0ea2b3136b53498d0cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substrings which will be searched for in content.  <a href="structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6">More...</a><br /></td></tr>
+<tr class="memdesc:add05f221746c0ea2b3136b53498d0cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substrings which will be searched for in content (Maximum of 1000).  <a href="structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6">More...</a><br /></td></tr>
 <tr class="separator:add05f221746c0ea2b3136b53498d0cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855c12dbe234d7cd0365256ac6db4dbe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#a855c12dbe234d7cd0365256ac6db4dbe">regex_patterns</a></td></tr>
+<tr class="memdesc:a855c12dbe234d7cd0365256ac6db4dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular expression patterns which will be matched against content (Maximum of 10).  <a href="structdpp_1_1automod__metadata.html#a855c12dbe234d7cd0365256ac6db4dbe">More...</a><br /></td></tr>
+<tr class="separator:a855c12dbe234d7cd0365256ac6db4dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f0712c30a208c77283481868994d89"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedpp.html#a8d92860238000a25eeff7eed29ec1067">automod_preset_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89">presets</a></td></tr>
 <tr class="memdesc:a45f0712c30a208c77283481868994d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preset keyword list types to moderate.  <a href="structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89">More...</a><br /></td></tr>
 <tr class="separator:a45f0712c30a208c77283481868994d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,8 +298,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Substrings which will be searched for in content. </p>
-<p >Each keyword can be a phrase which contains multiple words. All keywords are case insensitive.</p>
+<p>Substrings which will be searched for in content (Maximum of 1000). </p>
+<p >Each keyword can be a phrase which contains multiple words. All keywords are case insensitive and can be up to 30 characters.</p>
 <p >Wildcard symbols (<code>*</code>) can be used to customize how each keyword will be matched.</p>
 <p ><b>Examples for the <code>*</code> wildcard symbol:</b></p>
 <p >Prefix - word must start with the keyword</p>
@@ -368,6 +371,23 @@ Public Attributes</h2></td></tr>
 
 <p>Preset keyword list types to moderate. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacedpp.html#a8d92860238000a25eeff7eed29ec1067" title="Possible types of preset filter lists.">automod_preset_type</a> </dd></dl>
+
+</div>
+</div>
+<a id="a855c12dbe234d7cd0365256ac6db4dbe" name="a855c12dbe234d7cd0365256ac6db4dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a855c12dbe234d7cd0365256ac6db4dbe">&#9670;&nbsp;</a></span>regex_patterns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; dpp::automod_metadata::regex_patterns</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regular expression patterns which will be matched against content (Maximum of 10). </p>
+<p >Only Rust flavored regex is currently supported, which can be tested in online editors such as <a href="https://rustexp.lpil.uk/">Rustexp</a>. Each regex pattern must be 75 characters or less. </p>
 
 </div>
 </div>
