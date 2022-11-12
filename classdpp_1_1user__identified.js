@@ -14,6 +14,7 @@ var classdpp_1_1user__identified =
     [ "has_nitro_basic", "classdpp_1_1user__identified.html#ae7a663b3c8412a0c7efb119ee32e1eae", null ],
     [ "has_nitro_classic", "classdpp_1_1user__identified.html#a2a7d44696be1880931498dc48d4bb23c", null ],
     [ "has_nitro_full", "classdpp_1_1user__identified.html#a9c4116cc16eb91d0a1e3b3803c618395", null ],
+    [ "is_active_developer", "classdpp_1_1user__identified.html#a737412febf0a7b7d6221e1ea8feac66a", null ],
     [ "is_bot", "classdpp_1_1user__identified.html#aeb219805eb74e76d7814ba671de31a21", null ],
     [ "is_bot_http_interactions", "classdpp_1_1user__identified.html#a897b8816c44f11d99ad54b4f87521a20", null ],
     [ "is_bughunter_1", "classdpp_1_1user__identified.html#afeb70e25be8585ff557b51dd99bb7f99", null ],

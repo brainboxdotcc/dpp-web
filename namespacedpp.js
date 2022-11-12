@@ -921,7 +921,8 @@ var namespacedpp =
       [ "u_animated_icon", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a2aef392b3338053d54a8e2bc0a3a465f", null ],
       [ "u_certified_moderator", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a05e7983fd9a8181c8d8e59faa6d43b79", null ],
       [ "u_bot_http_interactions", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a87c2acb3a9ffda46076dd46150c02c30", null ],
-      [ "u_nitro_basic", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a020a705d33b314e1999ab52ffe4b82ad", null ]
+      [ "u_nitro_basic", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a020a705d33b314e1999ab52ffe4b82ad", null ],
+      [ "u_active_developer", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0af832ea39b6e24dd9e1633e3e8bf6b4b1", null ]
     ] ],
     [ "verification_level_t", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85", [
       [ "ver_none", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a40641216d07d139fe3c2744f2318f75f", null ],
