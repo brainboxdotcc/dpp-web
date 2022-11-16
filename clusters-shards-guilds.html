@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('clusters-shards-guilds.html',''); init
 <div class="contents">
 <div class="textblock"><p >D++ takes a three-tiered highly scalable approach to bots, with three levels known as Clusters, Shards and Guilds as documented below.</p>
 <div class="dotgraph">
-</div>
+<iframe scrolling="no" frameborder="0" src="dot_inline_dotgraph_1.svg" width="1523" height="452"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <h2><a class="anchor" id="autotoc_md34"></a>
 Clusters</h2>
 <p >A bot may be made of one or more clusters. Each cluster maintains a queue of commands waiting to be sent to Discord, a queue of replies from Discord for all commands executed, and zero or more <b>shards</b>. Usually, each process has one cluster, but the D++ library does not enforce this as a restriction. Small bots will require just one cluster. Clusters will split the required number of shards equally across themselves. There is no communication between clusters unless you add some yourself, they all remain independent without any central "controller" process. This ensures that there is no single point of failure in the design. Whenever you instantiate the library, you generally instantiate a cluster:</p>
