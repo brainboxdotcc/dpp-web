@@ -1,0 +1,18 @@
+digraph "dpp::permission_overwrite"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="dpp::permission_overwrite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Channel permission overwrites."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id" ,fontname="Helvetica"];
+  Node2 [label="dpp::snowflake",height=0.2,width=0.4,color="black",URL="$classdpp_1_1snowflake.html",tooltip="A container for a 64 bit unsigned value representing many things on discord. This value is known in d..."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" value" ,fontname="Helvetica"];
+  Node3 [label="uint64_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" allow\ndeny" ,fontname="Helvetica"];
+  Node4 [label="dpp::permission",height=0.2,width=0.4,color="black",URL="$classdpp_1_1permission.html",tooltip="Represents a permission bitmask (refer to enum dpp::permissions) which are hold in an uint64_t."];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" value" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" type" ,fontname="Helvetica"];
+  Node5 [label="uint8_t",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}
