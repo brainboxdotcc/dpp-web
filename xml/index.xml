@@ -1424,6 +1424,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a6eb4a952b8451906316fcdb746c2bd34" kind="enum"><name>send_audio_type_t</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483" kind="enumvalue"><name>satype_recorded_audio</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219" kind="enumvalue"><name>satype_live_audio</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a6eb4a952b8451906316fcdb746c2bd34a1d950a0e94c2adf54d55d9ddf1332b4a" kind="enumvalue"><name>satype_overlap_audio</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a35a16d67874752977e6a4ff2bd7325e3" kind="typedef"><name>rtp_seq_t</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a438b95ded97da933b2abcd13892a007d" kind="typedef"><name>rtp_timestamp_t</name></member>
     <member refid="classdpp_1_1discord__voice__client_1afe4e67fad90702358e32370a0aa4b0aa" kind="variable"><name>stream_mutex</name></member>
@@ -1447,6 +1448,7 @@
     <member refid="classdpp_1_1discord__voice__client_1aecd8c23811fac92dda3980af6dafacf4" kind="variable"><name>sequence</name></member>
     <member refid="classdpp_1_1discord__voice__client_1accaef35c6259256403921302747be7b7" kind="variable"><name>timestamp</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a6a9412b209fb4b40a0842fad31997b2d" kind="variable"><name>last_timestamp</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1ad5b391badaa5a55ed2f0ebff043e93c2" kind="variable"><name>last_sleep_remainder</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ab161d873ad8d72027d799f72d7adcd8a" kind="variable"><name>ssrc_map</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ad7f590f55089547625a67aa6ef15a2a3" kind="variable"><name>sending</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a2d072b4db0ec647bc5d9c9be99926781" kind="variable"><name>tracks</name></member>
@@ -4977,6 +4979,7 @@
   </compound>
   <compound refid="discordvoiceclient_8h" kind="file"><name>discordvoiceclient.h</name>
     <member refid="discordvoiceclient_8h_1a17649932abb607f8068a3b19c97ae76b" kind="define"><name>AUDIO_TRACK_MARKER</name></member>
+    <member refid="discordvoiceclient_8h_1af2e084c16bb48d63b992ff2ab7413162" kind="define"><name>AUDIO_OVERLAP_SLEEP_SAMPLES</name></member>
     <member refid="discordvoiceclient_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
   </compound>
   <compound refid="dispatcher_8h" kind="file"><name>dispatcher.h</name>

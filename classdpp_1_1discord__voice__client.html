@@ -136,6 +136,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1discord__voice__client.htm
 Public Types</h2></td></tr>
 <tr class="memitem:a6eb4a952b8451906316fcdb746c2bd34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34">send_audio_type_t</a> { <a class="el" href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483">satype_recorded_audio</a>
 , <a class="el" href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219">satype_live_audio</a>
+, <a class="el" href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a1d950a0e94c2adf54d55d9ddf1332b4a">satype_overlap_audio</a>
  }</td></tr>
 <tr class="memdesc:a6eb4a952b8451906316fcdb746c2bd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">The audio type to be sent. The default type is recorded audio.  <a href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34">More...</a><br /></td></tr>
 <tr class="separator:a6eb4a952b8451906316fcdb746c2bd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,10 +378,12 @@ Protected Attributes</h2></td></tr>
 <p >Discord voice engine is expecting audio data as if they were from some audio device, e.g. microphone, where the data become available as they get captured from the audio device.</p>
 <p >In case of recorded audio, unlike from a device, the audio data are usually instantly available in large chunks. Throttling is needed to simulate audio data coming from an audio device. In case of live audio, the throttling is by nature, so no extra throttling is needed.</p>
 <p >Using live audio mode for recorded audio can cause Discord to skip audio data because Discord does not expect to receive, say, 3 minutes' worth of audio data in 1 second.</p>
+<p >There are some inaccuracies in the throttling method used by the recorded audio mode on some systems (mainly Windows) which causes gaps and stutters in the resulting audio stream. The overlap audio mode provides a different implementation that fixes the issue. This method is slightly more CPU intensive, and should only be used if you encounter issues with recorded audio on your system.</p>
 <p >Use <a class="el" href="classdpp_1_1discord__voice__client.html#a6404396de8a2641fcb3890658ce0e054" title="Sets the audio type that will be sent with send_audio_* methods.">discord_voice_client::set_send_audio_type</a> to change this value as it ensures thread safety. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483" name="a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483"></a>satype_recorded_audio&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219" name="a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219"></a>satype_live_audio&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6eb4a952b8451906316fcdb746c2bd34a1d950a0e94c2adf54d55d9ddf1332b4a" name="a6eb4a952b8451906316fcdb746c2bd34a1d950a0e94c2adf54d55d9ddf1332b4a"></a>satype_overlap_audio&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

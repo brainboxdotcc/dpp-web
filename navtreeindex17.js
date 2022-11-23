@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"md_docpages_01_frequently_asked_questions.html#autotoc_md8":[1,7],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md9":[1,8],
 "md_docpages_01_installing.html":[2],
 "md_docpages_02_building_a_bot.html":[3],
 "md_docpages_03_example_programs.html":[4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1298ec58bdd34875c6ce723109637cf8":[7,0,0,317,14],
 "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1491e4917cb525e97df238b995cd57fc":[7,0,0,317,7],
 "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a18b5244cfb592afca2659104e694aff4":[7,0,0,317,5],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a235c2b4cc39caac24ae439231e8575e2":[7,0,0,317,24],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a259ccc1aa795d6c3e91fd27ca26064e7":[7,0,0,317,21],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a2fc44537c377d2b8f1d0038fb981d7b1":[7,0,0,317,28]
+"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a235c2b4cc39caac24ae439231e8575e2":[7,0,0,317,24]
 };
