@@ -247,7 +247,7 @@ eval.cpp</h4>
 <div class="line"><span class="comment">                     * the shared object could not be loaded. The user probably</span></div>
 <div class="line"><span class="comment">                     * did something odd with the symbols inside their eval.</span></div>
 <div class="line"><span class="comment">                     */</span></div>
-<div class="line">                    std::string dl = std::string(getenv(<span class="stringliteral">&quot;PWD&quot;</span>)) + std::to_string(event.msg.author.id) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(event.msg.id) + <span class="stringliteral">&quot;.so&quot;</span>,</div>
+<div class="line">                    std::string dl = std::string(getenv(<span class="stringliteral">&quot;PWD&quot;</span>)) + std::to_string(event.msg.author.id) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(event.msg.id) + <span class="stringliteral">&quot;.so&quot;</span>;</div>
 <div class="line">                    auto shared_object_handle = dlopen(dl.c_str(), RTLD_NOW);</div>
 <div class="line">                    if (!shared_object_handle) {</div>
 <div class="line">                        const char *dlsym_error = dlerror();</div>
