@@ -91,7 +91,7 @@
 <para>Regular expression patterns which will be matched against content (Maximum of 10). </para>
         </briefdescription>
         <detaileddescription>
-<para>Only Rust flavored regex is currently supported, which can be tested in online editors such as <ulink url="https://rustexp.lpil.uk/">Rustexp</ulink>. Each regex pattern must be 75 characters or less. </para>
+<para>Only Rust flavored regex is currently supported, which can be tested in online editors such as <ulink url="https://rustexp.lpil.uk/">Rustexp</ulink>. Each regex pattern can be up to 260 characters. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -120,14 +120,76 @@
         <argsstring></argsstring>
         <name>allow_list</name>
         <briefdescription>
-<para>Substrings which will be exempt from triggering the <ref refid="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" kindref="member">automod_metadata::presets</ref> trigger type. </para>
+<para>Substrings which should not trigger the rule. </para>
         </briefdescription>
         <detaileddescription>
-<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive. </para>
+<para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive and can be up to 30 characters.</para>
+<para>Wildcard symbols (<computeroutput>*</computeroutput>) can be used to customize how each keyword will be matched.</para>
+<para><bold>Examples for the <computeroutput>*</computeroutput> wildcard symbol:</bold></para>
+<para>Prefix - word must start with the keyword</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>cat*   </para>
+</entry><entry thead="no"><para><underline><bold>cat</bold></underline>ch, <underline><bold>Cat</bold></underline>apult, <underline><bold>CAt</bold></underline>tLE    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>the mat*   </para>
+</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>rix   </para>
+</entry></row>
+</table>
+</para>
+<para>Suffix - word must end with the keyword</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*cat   </para>
+</entry><entry thead="no"><para>wild<underline><bold>cat</bold></underline>, copy<underline><bold>Cat</bold></underline>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*the mat   </para>
+</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>   </para>
+</entry></row>
+</table>
+</para>
+<para>Anywhere - keyword can appear anywhere in the content</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*cat*   </para>
+</entry><entry thead="no"><para>lo<underline><bold>cat</bold></underline>ion, edu<underline><bold>Cat</bold></underline>ion    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>*the mat*   </para>
+</entry><entry thead="no"><para>brea<underline><bold>the mat</bold></underline>ter   </para>
+</entry></row>
+</table>
+</para>
+<para>Whole Word - keyword is a full word or phrase and must be surrounded by whitespace at the beginning and end</para>
+<para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>keyword   </para>
+</entry><entry thead="yes"><para>matches    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>cat   </para>
+</entry><entry thead="no"><para><underline><bold>Cat</bold></underline>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>the mat   </para>
+</entry><entry thead="no"><para><underline><bold>the mat</bold></underline>   </para>
+</entry></row>
+</table>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="169" column="13" bodyfile="include/dpp/automod.h" bodystart="169" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="203" column="13" bodyfile="include/dpp/automod.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -141,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="174" column="9" bodyfile="include/dpp/automod.h" bodystart="174" bodyend="-1"/>
+        <location file="include/dpp/automod.h" line="208" column="9" bodyfile="include/dpp/automod.h" bodystart="208" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -157,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="179" column="1"/>
+        <location file="include/dpp/automod.h" line="213" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a2671a8e5afaf01085b585ed350376809" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -171,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="184" column="9"/>
+        <location file="include/dpp/automod.h" line="218" column="9"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1automod__metadata" kindref="compound">automod_metadata</ref> &amp;</type>
@@ -201,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="192" column="18"/>
+        <location file="include/dpp/automod.h" line="226" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -224,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="199" column="21"/>
+        <location file="include/dpp/automod.h" line="233" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -285,7 +347,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/automod.h" line="108" column="1" bodyfile="include/dpp/automod.h" bodystart="108" bodyend="201"/>
+    <location file="include/dpp/automod.h" line="108" column="1" bodyfile="include/dpp/automod.h" bodystart="108" bodyend="235"/>
     <listofallmembers>
       <member refid="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>allow_list</name></member>
       <member refid="structdpp_1_1automod__metadata_1a1d341f6dd7507da28acf9c9add164803" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>automod_metadata</name></member>

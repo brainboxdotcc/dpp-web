@@ -154,7 +154,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a45f0712c30a208c77283481868994d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preset keyword list types to moderate.  <a href="structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89">More...</a><br /></td></tr>
 <tr class="separator:a45f0712c30a208c77283481868994d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6bdcf68e58d87cb7d03b97ad25de82d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d">allow_list</a></td></tr>
-<tr class="memdesc:ae6bdcf68e58d87cb7d03b97ad25de82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substrings which will be exempt from triggering the <a class="el" href="structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89" title="Preset keyword list types to moderate.">automod_metadata::presets</a> trigger type.  <a href="structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d">More...</a><br /></td></tr>
+<tr class="memdesc:ae6bdcf68e58d87cb7d03b97ad25de82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substrings which should not trigger the rule.  <a href="structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d">More...</a><br /></td></tr>
 <tr class="separator:ae6bdcf68e58d87cb7d03b97ad25de82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411294739bcfaee90bdc36009ee92f4b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#a411294739bcfaee90bdc36009ee92f4b">mention_total_limit</a></td></tr>
 <tr class="memdesc:a411294739bcfaee90bdc36009ee92f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of unique role and user mentions allowed per message (Maximum of 50)  <a href="structdpp_1_1automod__metadata.html#a411294739bcfaee90bdc36009ee92f4b">More...</a><br /></td></tr>
@@ -281,8 +281,46 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Substrings which will be exempt from triggering the <a class="el" href="structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89" title="Preset keyword list types to moderate.">automod_metadata::presets</a> trigger type. </p>
-<p >Each keyword can be a phrase which contains multiple words. All keywords are case insensitive. </p>
+<p>Substrings which should not trigger the rule. </p>
+<p >Each keyword can be a phrase which contains multiple words. All keywords are case insensitive and can be up to 30 characters.</p>
+<p >Wildcard symbols (<code>*</code>) can be used to customize how each keyword will be matched.</p>
+<p ><b>Examples for the <code>*</code> wildcard symbol:</b></p>
+<p >Prefix - word must start with the keyword</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">keyword   </th><th class="markdownTableHeadNone">matches    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cat*   </td><td class="markdownTableBodyNone"><u><b>cat</b></u>ch, <u><b>Cat</b></u>apult, <u><b>CAt</b></u>tLE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">the mat*   </td><td class="markdownTableBodyNone"><u><b>the mat</b></u>rix   </td></tr>
+</table>
+<p >Suffix - word must end with the keyword</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">keyword   </th><th class="markdownTableHeadNone">matches    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">*cat   </td><td class="markdownTableBodyNone">wild<u><b>cat</b></u>, copy<u><b>Cat</b></u>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">*the mat   </td><td class="markdownTableBodyNone">brea<u><b>the mat</b></u>   </td></tr>
+</table>
+<p >Anywhere - keyword can appear anywhere in the content</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">keyword   </th><th class="markdownTableHeadNone">matches    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">*cat*   </td><td class="markdownTableBodyNone">lo<u><b>cat</b></u>ion, edu<u><b>Cat</b></u>ion    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">*the mat*   </td><td class="markdownTableBodyNone">brea<u><b>the mat</b></u>ter   </td></tr>
+</table>
+<p >Whole Word - keyword is a full word or phrase and must be surrounded by whitespace at the beginning and end</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">keyword   </th><th class="markdownTableHeadNone">matches    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cat   </td><td class="markdownTableBodyNone"><u><b>Cat</b></u>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">the mat   </td><td class="markdownTableBodyNone"><u><b>the mat</b></u>   </td></tr>
+</table>
 
 </div>
 </div>
@@ -387,7 +425,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Regular expression patterns which will be matched against content (Maximum of 10). </p>
-<p >Only Rust flavored regex is currently supported, which can be tested in online editors such as <a href="https://rustexp.lpil.uk/">Rustexp</a>. Each regex pattern must be 75 characters or less. </p>
+<p >Only Rust flavored regex is currently supported, which can be tested in online editors such as <a href="https://rustexp.lpil.uk/">Rustexp</a>. Each regex pattern can be up to 260 characters. </p>
 
 </div>
 </div>
