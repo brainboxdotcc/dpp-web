@@ -10,6 +10,7 @@ var classdpp_1_1thread =
     [ "get_icon_url", "classdpp_1_1thread.html#a97712454c654d4a4eede963a5307dfdc", null ],
     [ "get_members", "classdpp_1_1thread.html#a2618252ea6ca24673074b4ac8243798c", null ],
     [ "get_mention", "classdpp_1_1thread.html#a08a674755c169a3517361dc847511617", null ],
+    [ "get_mention", "classdpp_1_1thread.html#a753a482bd7d99544684b49b6b46bbcb4", null ],
     [ "get_type", "classdpp_1_1thread.html#a8095c887b1cb49c81b9d3044da51955c", null ],
     [ "get_user_permissions", "classdpp_1_1thread.html#a0ff4cb376ed32919b1ee6a7246d36019", null ],
     [ "get_user_permissions", "classdpp_1_1thread.html#adfb656e912fba27c809ab8754e2855b5", null ],

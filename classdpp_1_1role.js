@@ -9,6 +9,7 @@ var classdpp_1_1role =
     [ "get_icon_url", "classdpp_1_1role.html#a5ce1695745201d6c2914c9d818119078", null ],
     [ "get_members", "classdpp_1_1role.html#a60bd9c7e3901c18f5ec3c4f835e1c1de", null ],
     [ "get_mention", "classdpp_1_1role.html#a82eb1c7df3ee72db92cf502bb575e799", null ],
+    [ "get_mention", "classdpp_1_1role.html#aa43b2369719812a849c83c52e044127b", null ],
     [ "has_add_reactions", "classdpp_1_1role.html#a0e2683fd21c1743132eb29f8155c12a2", null ],
     [ "has_administrator", "classdpp_1_1role.html#a3ffcaced8369d47cc3f954fa0978c40c", null ],
     [ "has_attach_files", "classdpp_1_1role.html#a848a39ba5ff6b5c42c3246d041582d00", null ],
