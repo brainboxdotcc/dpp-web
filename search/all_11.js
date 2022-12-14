@@ -95,7 +95,7 @@ var searchData=
   ['retry_5fafter_92',['retry_after',['../structdpp_1_1bucket__t.html#a459a7edb477440e6ad2c9d42cc30f71c',1,'dpp::bucket_t']]],
   ['return_5fvoid_93',['return_void',['../structdpp_1_1promise.html#ad396e69656a668a6c424116d7386ca98',1,'dpp::promise']]],
   ['revoked_94',['revoked',['../classdpp_1_1connection.html#acd1b67d2114b91c2028ad7d21c224adf',1,'dpp::connection']]],
-  ['rgb_95',['rgb',['../namespacedpp_1_1utility.html#a9876a6a9d06223cfb2bf8dc83e7c9783',1,'dpp::utility::rgb(int red, int green, int blue)'],['../namespacedpp_1_1utility.html#ad40571e78df220f4730418085d15ce4b',1,'dpp::utility::rgb(float red, float green, float blue)']]],
+  ['rgb_95',['rgb',['../namespacedpp_1_1utility.html#a9876a6a9d06223cfb2bf8dc83e7c9783',1,'dpp::utility::rgb(int red, int green, int blue)'],['../namespacedpp_1_1utility.html#adb9dcc9f23b8da7836aca978eea7c9d9',1,'dpp::utility::rgb(double red, double green, double blue)']]],
   ['rich_5fpresence_96',['rich_presence',['../structdpp_1_1presence__update__t.html#ac71a4f4b0110e3d6c51525242abb9813',1,'dpp::presence_update_t']]],
   ['role_97',['role',['../classdpp_1_1role.html',1,'dpp::role'],['../classdpp_1_1role.html#aa23013a7a7d7c03c4ef44d6e6fc02baa',1,'dpp::role::role()']]],
   ['role_5fcollector_98',['role_collector',['../classdpp_1_1role__collector.html',1,'dpp::role_collector'],['../classdpp_1_1role__collector.html#a711325fa9e73adc00e7fd470a666c59b',1,'dpp::role_collector::role_collector()']]],

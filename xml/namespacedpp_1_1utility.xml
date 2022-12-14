@@ -367,25 +367,25 @@
         </inbodydescription>
         <location file="include/dpp/utility.h" line="212" column="24" declfile="include/dpp/utility.h" declline="212" declcolumn="24"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1ad40571e78df220f4730418085d15ce4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1_1utility_1adb9dcc9f23b8da7836aca978eea7c9d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t DPP_EXPORT</type>
         <definition>uint32_t DPP_EXPORT dpp::utility::rgb</definition>
-        <argsstring>(float red, float green, float blue)</argsstring>
+        <argsstring>(double red, double green, double blue)</argsstring>
         <name>rgb</name>
         <param>
-          <type>float</type>
+          <type>double</type>
           <declname>red</declname>
         </param>
         <param>
-          <type>float</type>
+          <type>double</type>
           <declname>green</declname>
         </param>
         <param>
-          <type>float</type>
+          <type>double</type>
           <declname>blue</declname>
         </param>
         <briefdescription>
-<para>Convert floats to RGB for sending in embeds. </para>
+<para>Convert doubles to RGB for sending in embeds. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -475,6 +475,138 @@
         </inbodydescription>
         <location file="include/dpp/utility.h" line="284" column="21" declfile="include/dpp/utility.h" declline="284" declcolumn="21"/>
       </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1af247cf657d20138e2e364712176810f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t DPP_EXPORT</type>
+        <definition>uint32_t DPP_EXPORT dpp::utility::cmyk</definition>
+        <argsstring>(double c, double m, double y, double k)</argsstring>
+        <name>cmyk</name>
+        <param>
+          <type>double</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Convert doubles to CMYK for sending in embeds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cyan value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>magenta value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>yellow value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key (black) value, between 0 and 1 inclusive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t returned integer colour value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="295" column="21" declfile="include/dpp/utility.h" declline="295" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1acfa947bc1c2e1863791a7ad60fe6cda7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t DPP_EXPORT</type>
+        <definition>uint32_t DPP_EXPORT dpp::utility::cmyk</definition>
+        <argsstring>(int c, int m, int y, int k)</argsstring>
+        <name>cmyk</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Convert ints to CMYK for sending in embeds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cyan value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>magenta value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>yellow value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key (black) value, between 0 and 255 inclusive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t returned integer colour value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="306" column="21" declfile="include/dpp/utility.h" declline="306" declcolumn="21"/>
+      </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a02456e22a1d41893a9b321bf8ccaeec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::debug_dump</definition>
@@ -513,7 +645,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="292" column="24" declfile="include/dpp/utility.h" declline="292" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="314" column="24" declfile="include/dpp/utility.h" declline="314" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a62cc8fc3994f6b3d49cf4923b993c231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t DPP_EXPORT</type>
@@ -543,7 +675,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="300" column="19" declfile="include/dpp/utility.h" declline="300" declcolumn="19"/>
+        <location file="include/dpp/utility.h" line="322" column="19" declfile="include/dpp/utility.h" declline="322" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1afa6985aaa798fa30b73c1decc418cd32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -597,7 +729,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="310" column="24" declfile="include/dpp/utility.h" declline="310" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="332" column="24" declfile="include/dpp/utility.h" declline="332" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a4e85ceba20c4ed2bfda15d806890428b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -638,7 +770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="320" column="24" declfile="include/dpp/utility.h" declline="320" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="342" column="24" declfile="include/dpp/utility.h" declline="342" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a3da218e2645e8f07e3b83373505542ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -713,7 +845,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="334" column="24" declfile="include/dpp/utility.h" declline="334" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="356" column="24" declfile="include/dpp/utility.h" declline="356" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a2e8cc2ce4c01244c9db877ab526ac9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -743,7 +875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="342" column="24" declfile="include/dpp/utility.h" declline="342" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="364" column="24" declfile="include/dpp/utility.h" declline="364" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab65e758e198a195ad3fbcec3c534d2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::string &gt; DPP_EXPORT</type>
@@ -786,7 +918,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="351" column="24" declfile="include/dpp/utility.h" declline="351" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="373" column="24" declfile="include/dpp/utility.h" declline="373" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a4be90a8bb2dd9eecf61e934592656c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -842,7 +974,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="361" column="24" declfile="include/dpp/utility.h" declline="361" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="383" column="24" declfile="include/dpp/utility.h" declline="383" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a2cd10adca7586a99a6fd350bb601f407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -885,7 +1017,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="373" column="24" declfile="include/dpp/utility.h" declline="373" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="395" column="24" declfile="include/dpp/utility.h" declline="395" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab1cc19c7021a057083658d7e2cca1013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -915,7 +1047,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="381" column="24" declfile="include/dpp/utility.h" declline="381" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="403" column="24" declfile="include/dpp/utility.h" declline="403" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab5e15dbccb96fdcd2ac075bf530290e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -970,7 +1102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="390" column="24" declfile="include/dpp/utility.h" declline="390" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="412" column="24" declfile="include/dpp/utility.h" declline="412" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ad9ab04ef6d30a614f608364cb5751e56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1036,7 +1168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="400" column="24" declfile="include/dpp/utility.h" declline="400" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="422" column="24" declfile="include/dpp/utility.h" declline="422" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a00f8e4bb0915722be20973c9cf356f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1066,7 +1198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="407" column="24" declfile="include/dpp/utility.h" declline="407" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="429" column="24" declfile="include/dpp/utility.h" declline="429" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a7fc46cb2a13a958d7361ba96bb416edc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1096,7 +1228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="414" column="24" declfile="include/dpp/utility.h" declline="414" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="436" column="24" declfile="include/dpp/utility.h" declline="436" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a2e47c004a5f0d6ee78819935d681a947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1151,7 +1283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="423" column="24" declfile="include/dpp/utility.h" declline="423" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="445" column="24" declfile="include/dpp/utility.h" declline="445" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab7c346258eedffe57cff07d0b8b26c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1181,7 +1313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="430" column="24" declfile="include/dpp/utility.h" declline="430" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="452" column="24" declfile="include/dpp/utility.h" declline="452" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a7d10e878ab1347eaed727b2e528206ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1198,7 +1330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="437" column="24" declfile="include/dpp/utility.h" declline="437" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="459" column="24" declfile="include/dpp/utility.h" declline="459" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1aeada90d27918093d9fe6a53d1a245f50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1228,7 +1360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="446" column="24" declfile="include/dpp/utility.h" declline="446" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="468" column="24" declfile="include/dpp/utility.h" declline="468" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ae97ccaf14820df924f86b32c6932d486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1258,7 +1390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="455" column="24" declfile="include/dpp/utility.h" declline="455" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="477" column="24" declfile="include/dpp/utility.h" declline="477" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab8b9842a7d3645607bf57d6803ee9509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void DPP_EXPORT</type>
@@ -1286,7 +1418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="462" column="17" declfile="include/dpp/utility.h" declline="462" declcolumn="17"/>
+        <location file="include/dpp/utility.h" line="484" column="17" declfile="include/dpp/utility.h" declline="484" declcolumn="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
