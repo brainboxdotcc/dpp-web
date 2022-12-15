@@ -15,7 +15,6 @@ var classdpp_1_1guild__member =
     [ "set_deaf", "classdpp_1_1guild__member.html#a51764b5c1960619ddc073224d2791ad3", null ],
     [ "set_mute", "classdpp_1_1guild__member.html#a91cf849628af76ad3fb4c58c8d54efab", null ],
     [ "set_nickname", "classdpp_1_1guild__member.html#adf919401f5e69225fb9fee91de8b7983", null ],
-    [ "set_pending", "classdpp_1_1guild__member.html#a1b3c2be4ac0844df08fecae49259d804", null ],
     [ "avatar", "classdpp_1_1guild__member.html#aeb9413ebe5540ebd625a35166f5ad799", null ],
     [ "communication_disabled_until", "classdpp_1_1guild__member.html#a6bf5f4ec4e76b15734782ff2fdd51170", null ],
     [ "flags", "classdpp_1_1guild__member.html#a11636d9baaca59361c22ac163b09fd7c", null ],
