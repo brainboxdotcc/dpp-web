@@ -559,6 +559,11 @@ var namespacedpp =
       [ "es_completed", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60aa235d17c1a6acc75d2b65ba3b82887dc", null ],
       [ "es_cancelled", "namespacedpp.html#a07ffd72c4bfd503c9c5980202c354e60a906d0907b74f3cb4cc0f9971c5644d03", null ]
     ] ],
+    [ "forum_layout_type", "namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bc", [
+      [ "fl_not_set", "namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcadcc413fd0eba14440a29f3a3d748f187", null ],
+      [ "fl_list_view", "namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcaa5334b0ac4307ad529b69e1379690726", null ],
+      [ "fl_gallery_view", "namespacedpp.html#a4659a9179785f523733a6a0ceeaa97bcad45bc2cdf8f7f4fc2cc8235e57413659", null ]
+    ] ],
     [ "guild_afk_timeout_t", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9b", [
       [ "afk_off", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9ba0f8f2ce101e751132131dc1053d22e17", null ],
       [ "afk_60", "namespacedpp.html#ad195bc4d4cd3a639ac2090b69997fc9babfb2b47382085d68d09188b6579a8d00", null ],

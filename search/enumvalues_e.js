@@ -1,18 +1,17 @@
 var searchData=
 [
-  ['text_5fparagraph_0',['text_paragraph',['../namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3af6a87598b5d0eeb4d0fda285b6b8af30',1,'dpp']]],
-  ['text_5fshort_1',['text_short',['../namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3ae35e0964ac06220055227ed1176a1bd8',1,'dpp']]],
-  ['tf_5flong_5fdate_2',['tf_long_date',['../namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a380a740f8843af94cd3007d7fdf3ce30',1,'dpp::utility']]],
-  ['tf_5flong_5fdatetime_3',['tf_long_datetime',['../namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a7bdb33c94eff8e026e6a864f217e33c5',1,'dpp::utility']]],
-  ['tf_5flong_5ftime_4',['tf_long_time',['../namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a127a01b537d189262d40712fe8f09de7',1,'dpp::utility']]],
-  ['tf_5frelative_5ftime_5',['tf_relative_time',['../namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a7bdda189bfc4d124426d2da1dd6b9a50',1,'dpp::utility']]],
-  ['tf_5fshort_5fdate_6',['tf_short_date',['../namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a94843292417596c6d3de7680efc295bd',1,'dpp::utility']]],
-  ['tf_5fshort_5fdatetime_7',['tf_short_datetime',['../namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a71dc667709d06a38a90007af294c8f42',1,'dpp::utility']]],
-  ['tf_5fshort_5ftime_8',['tf_short_time',['../namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7aa9853ed46be939acd8aa01d0ee889afd',1,'dpp::utility']]],
-  ['tier_5f1_9',['tier_1',['../namespacedpp.html#ab7f40af8c547f08790e620708879fcbaad417497864f8554fccd1b45a00f5e42d',1,'dpp']]],
-  ['tier_5f2_10',['tier_2',['../namespacedpp.html#ab7f40af8c547f08790e620708879fcbaa13f2b83dc517dcd8a6284d69a4b537b1',1,'dpp']]],
-  ['tier_5f3_11',['tier_3',['../namespacedpp.html#ab7f40af8c547f08790e620708879fcbaa1c2ba6f22c52d59c46886bb81aa20780',1,'dpp']]],
-  ['tier_5fnone_12',['tier_none',['../namespacedpp.html#ab7f40af8c547f08790e620708879fcbaaa99f6b37813bbe811aa62973aa794874',1,'dpp']]],
-  ['tms_5faccepted_13',['tms_accepted',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31',1,'dpp']]],
-  ['tms_5finvited_14',['tms_invited',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230',1,'dpp']]]
+  ['satype_5flive_5faudio_0',['satype_live_audio',['../classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219',1,'dpp::discord_voice_client']]],
+  ['satype_5foverlap_5faudio_1',['satype_overlap_audio',['../classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a1d950a0e94c2adf54d55d9ddf1332b4a',1,'dpp::discord_voice_client']]],
+  ['satype_5frecorded_5faudio_2',['satype_recorded_audio',['../classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483',1,'dpp::discord_voice_client']]],
+  ['sf_5fapng_3',['sf_apng',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2',1,'dpp']]],
+  ['sf_5flottie_4',['sf_lottie',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5',1,'dpp']]],
+  ['sf_5fpng_5',['sf_png',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484',1,'dpp']]],
+  ['so_5fcreation_5fdate_6',['so_creation_date',['../namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06a51f6e6db5517bae1664dd2c9407eb8ee',1,'dpp']]],
+  ['so_5flatest_5factivity_7',['so_latest_activity',['../namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f',1,'dpp']]],
+  ['sp_5fguild_5fonly_8',['sp_guild_only',['../namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d',1,'dpp']]],
+  ['sp_5fpublic_9',['sp_public',['../namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed',1,'dpp']]],
+  ['st_5fguild_10',['st_guild',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede',1,'dpp']]],
+  ['st_5freturn_11',['st_return',['../namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e',1,'dpp']]],
+  ['st_5fstandard_12',['st_standard',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca',1,'dpp']]],
+  ['st_5fwait_13',['st_wait',['../namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726',1,'dpp']]]
 ];
