@@ -17,5 +17,13 @@ var searchData=
   ['r_5fus_5feast_14',['r_us_east',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a64b0c58ed6fc338811fa50e4001c739b',1,'dpp']]],
   ['r_5fus_5fsouth_15',['r_us_south',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a406609dc4e2712b0abc9ca72bf57e390',1,'dpp']]],
   ['r_5fus_5fwest_16',['r_us_west',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a6c27cbd85161eb3666d8f136391a5f58',1,'dpp']]],
-  ['r_5fwestern_5feurope_17',['r_western_europe',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a8d6403af9f4d5b0b849c3f883d0e49e8',1,'dpp']]]
+  ['r_5fwestern_5feurope_17',['r_western_europe',['../namespacedpp.html#a51891a9e382f9c396d378de00fa65099a8d6403af9f4d5b0b849c3f883d0e49e8',1,'dpp']]],
+  ['rc_5fboolean_5fequal_18',['rc_boolean_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33aebb4a6b85656856fd57d8677352e777c',1,'dpp']]],
+  ['rc_5fboolean_5fnot_5fequal_19',['rc_boolean_not_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33aca798c914217731ff40bb3567955e590',1,'dpp']]],
+  ['rc_5fdatetime_5fgreater_5fthan_5for_5fequal_20',['rc_datetime_greater_than_or_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33ada7964ebcb6355596a9c1e6f427f9f3f',1,'dpp']]],
+  ['rc_5fdatetime_5fless_5fthan_5for_5fequal_21',['rc_datetime_less_than_or_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a25b4d25d1f3aba6dbac10dd1edb004fa',1,'dpp']]],
+  ['rc_5finteger_5fequal_22',['rc_integer_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a7f8c92abaca4bc994cfe690cfd514244',1,'dpp']]],
+  ['rc_5finteger_5fgreater_5fthan_5for_5fequal_23',['rc_integer_greater_than_or_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a3a89fd8df0e8705bf8123663bfe78f9e',1,'dpp']]],
+  ['rc_5finteger_5fless_5fthan_5for_5fequal_24',['rc_integer_less_than_or_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a2bbd23aeabfa38d2010c61d4dc099e5a',1,'dpp']]],
+  ['rc_5finteger_5fnot_5fequal_25',['rc_integer_not_equal',['../namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a1702fd60f2aa9084fa2bebe1ee3cd2b2',1,'dpp']]]
 ];

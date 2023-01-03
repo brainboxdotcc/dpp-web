@@ -82,6 +82,7 @@
     <member refid="classdpp_1_1application_1abc6671becb10a6d81554c74e6e064a18" kind="variable"><name>tags</name></member>
     <member refid="classdpp_1_1application_1a3d59f66fb7f7132320c3b3c37013729a" kind="variable"><name>install_params</name></member>
     <member refid="classdpp_1_1application_1ab375815dd2f6d026efb2da64f9443574" kind="variable"><name>custom_install_url</name></member>
+    <member refid="classdpp_1_1application_1a2912fbfc670f3ff3785bab13ae39bcfb" kind="variable"><name>role_connections_verification_url</name></member>
     <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
     <member refid="classdpp_1_1application_1a20b27bd6cecfbff3ed083c65d4edf044" kind="function"><name>application</name></member>
     <member refid="classdpp_1_1application_1ae9c07959319bada770b8288157c319e6" kind="function"><name>~application</name></member>
@@ -96,6 +97,27 @@
   <compound refid="structdpp_1_1application__install__params" kind="struct"><name>dpp::application_install_params</name>
     <member refid="structdpp_1_1application__install__params_1a819cb30a0d85eeafbfbb3a38a4f175d0" kind="variable"><name>permissions</name></member>
     <member refid="structdpp_1_1application__install__params_1a12aa83c573e799a12f0f00cadf9101f4" kind="variable"><name>scopes</name></member>
+  </compound>
+  <compound refid="classdpp_1_1application__role__connection" kind="class"><name>dpp::application_role_connection</name>
+    <member refid="classdpp_1_1application__role__connection_1a0da4ab8bb3564b082aefe594008b10d2" kind="variable"><name>platform_name</name></member>
+    <member refid="classdpp_1_1application__role__connection_1a3d8c94731b2a1cc78cc92e8d7f2c80f6" kind="variable"><name>platform_username</name></member>
+    <member refid="classdpp_1_1application__role__connection_1a27e88916a483d1317e22133493503b01" kind="variable"><name>metadata</name></member>
+    <member refid="classdpp_1_1application__role__connection_1ad81f13b2023441af698313b3b469f847" kind="function"><name>application_role_connection</name></member>
+    <member refid="classdpp_1_1application__role__connection_1a7453a35d845a0e799a499faa7c98f319" kind="function"><name>~application_role_connection</name></member>
+    <member refid="classdpp_1_1application__role__connection_1aa0bafd9e57e54a0e6e4e11f85a3ca999" kind="function"><name>fill_from_json</name></member>
+    <member refid="classdpp_1_1application__role__connection_1aae90e82cb965212072dfee9f25492c49" kind="function"><name>build_json</name></member>
+  </compound>
+  <compound refid="classdpp_1_1application__role__connection__metadata" kind="class"><name>dpp::application_role_connection_metadata</name>
+    <member refid="classdpp_1_1application__role__connection__metadata_1a7fa4354cd4dab877e07354d074b3c2d3" kind="variable"><name>type</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1a89e105ed4039b790f6e92cb3953961d3" kind="variable"><name>key</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1acba81bc1c46b708b015e4bfaf3f06c5e" kind="variable"><name>name</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1a83aad419fc426f822245126aa49cdf05" kind="variable"><name>name_localizations</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1a040a8d4627541b61164e247325458b60" kind="variable"><name>description</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1a1bfc800bccc5ae5bb164c70c1706b3bd" kind="variable"><name>description_localizations</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1ab76742865aa3007525012f161d700fab" kind="function"><name>application_role_connection_metadata</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1a60353e0ca9b810b2fe375d9d8c88b424" kind="function"><name>~application_role_connection_metadata</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1a99629646787ba6387fd278842925b57e" kind="function"><name>fill_from_json</name></member>
+    <member refid="classdpp_1_1application__role__connection__metadata_1a41cb0c2f567326f17644e0917a964bef" kind="function"><name>build_json</name></member>
   </compound>
   <compound refid="structdpp_1_1attachment" kind="struct"><name>dpp::attachment</name>
     <member refid="structdpp_1_1attachment_1a78fa9315fae4737d760e0b19cc9597cf" kind="variable"><name>id</name></member>
@@ -731,6 +753,10 @@
     <member refid="classdpp_1_1cluster_1ab6bc6ef9b6f1ef9aa5b9c1391ccedbf5" kind="function"><name>role_edit</name></member>
     <member refid="classdpp_1_1cluster_1a3549d2ebe52210d7b98adeb766b968b1" kind="function"><name>roles_edit_position</name></member>
     <member refid="classdpp_1_1cluster_1a6d4cdab9c22eefdeba0d28105c006b2b" kind="function"><name>role_delete</name></member>
+    <member refid="classdpp_1_1cluster_1ae66aa8feb8759ff76301aac34c97cc7e" kind="function"><name>application_role_connection_get</name></member>
+    <member refid="classdpp_1_1cluster_1afa094e7895245b07195a3b4ec013af0b" kind="function"><name>application_role_connection_update</name></member>
+    <member refid="classdpp_1_1cluster_1a3f3fc4fdfc918f7383773bda717134bd" kind="function"><name>user_application_role_connection_get</name></member>
+    <member refid="classdpp_1_1cluster_1ac6426506b0175419913b157ad9f10f71" kind="function"><name>user_application_role_connection_update</name></member>
     <member refid="classdpp_1_1cluster_1a73483dbeb0f1946dc18b1d0a5331b0d0" kind="function"><name>user_get</name></member>
     <member refid="classdpp_1_1cluster_1aad927e85ed6b99e9b05f4190f1b19cae" kind="function"><name>current_user_get</name></member>
     <member refid="classdpp_1_1cluster_1ac3dc39069aaaa492727f39b35edd957e" kind="function"><name>current_application_get</name></member>
@@ -4483,6 +4509,15 @@
     <member refid="namespacedpp_1af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6" kind="enumvalue"><name>r_managed</name></member>
     <member refid="namespacedpp_1af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26" kind="enumvalue"><name>r_mentionable</name></member>
     <member refid="namespacedpp_1af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026" kind="enumvalue"><name>r_premium_subscriber</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33" kind="enum"><name>application_role_connection_metadata_type</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33a2bbd23aeabfa38d2010c61d4dc099e5a" kind="enumvalue"><name>rc_integer_less_than_or_equal</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33a3a89fd8df0e8705bf8123663bfe78f9e" kind="enumvalue"><name>rc_integer_greater_than_or_equal</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33a7f8c92abaca4bc994cfe690cfd514244" kind="enumvalue"><name>rc_integer_equal</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33a1702fd60f2aa9084fa2bebe1ee3cd2b2" kind="enumvalue"><name>rc_integer_not_equal</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33a25b4d25d1f3aba6dbac10dd1edb004fa" kind="enumvalue"><name>rc_datetime_less_than_or_equal</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33ada7964ebcb6355596a9c1e6f427f9f3f" kind="enumvalue"><name>rc_datetime_greater_than_or_equal</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33aebb4a6b85656856fd57d8677352e777c" kind="enumvalue"><name>rc_boolean_equal</name></member>
+    <member refid="namespacedpp_1a9f181ce9f4b3bc1ac51bc499b5938b33aca798c914217731ff40bb3567955e590" kind="enumvalue"><name>rc_boolean_not_equal</name></member>
     <member refid="namespacedpp_1a6add40f37f2f043dede513edebaa67bd" kind="enum"><name>event_privacy_level</name></member>
     <member refid="namespacedpp_1a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959" kind="enumvalue"><name>ep_guild_only</name></member>
     <member refid="namespacedpp_1a7d65d1ee306708cb7f7307502aaa1834" kind="enum"><name>event_entity_type</name></member>
@@ -4590,9 +4625,10 @@
     <member refid="namespacedpp_1aa71f7e347422516d1022707f1d3e5b1c" kind="typedef"><name>presence_map</name></member>
     <member refid="namespacedpp_1ae3249e99494d04bb4be50341f474621e" kind="typedef"><name>http_completion_event</name></member>
     <member refid="namespacedpp_1a13c4d4e6238396245b349e6a637897e0" kind="typedef"><name>shard_list</name></member>
-    <member refid="namespacedpp_1a81dbdaf135761d889b66c534ed8713d0" kind="typedef"><name>confirmable_t</name></member>
+    <member refid="namespacedpp_1a35a3f509a970694041c0e06684d29ea0" kind="typedef"><name>confirmable_t</name></member>
     <member refid="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" kind="typedef"><name>json_encode_t</name></member>
     <member refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kind="typedef"><name>role_map</name></member>
+    <member refid="namespacedpp_1a91276efac2bca1f8fe69b27a3bbc821f" kind="typedef"><name>application_role_connection_metadata_list</name></member>
     <member refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kind="typedef"><name>scheduled_event_map</name></member>
     <member refid="namespacedpp_1a912d2a5c3a763ffc462dfb7c4c7a0562" kind="typedef"><name>event_member_map</name></member>
     <member refid="namespacedpp_1a51156024d6211aef2731770340cfe452" kind="typedef"><name>socket</name></member>
@@ -4669,6 +4705,7 @@
     <member refid="namespacedpp_1a396beaf2087386cbd35654372fa0f78d" kind="function"><name>rest_request_list</name></member>
     <member refid="namespacedpp_1a494de7d152ac533c1283a759f5e7e344" kind="function"><name>rest_request_list&lt; invite &gt;</name></member>
     <member refid="namespacedpp_1a0fc24406b890d9d830e2b0fff9a9ced3" kind="function"><name>rest_request_list&lt; voiceregion &gt;</name></member>
+    <member refid="namespacedpp_1a94b9083871fc849024b4f4d2641320c0" kind="function"><name>rest_request_vector</name></member>
     <member refid="namespacedpp_1a2aee5f8caf98a0dbebd4f1abb464dc00" kind="function"><name>close_socket</name></member>
     <member refid="namespacedpp_1a0c5e194a6e6cb7d653d73b19b5348dc3" kind="function"><name>set_nonblocking</name></member>
     <member refid="namespacedpp_1aa8227c717e1a550b3c3962cea1964d92" kind="function"><name>lowercase</name></member>

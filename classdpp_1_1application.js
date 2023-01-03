@@ -23,6 +23,7 @@ var classdpp_1_1application =
     [ "owner", "classdpp_1_1application.html#a5af52bd0ba8718a8bea8cd0c8898f1b6", null ],
     [ "primary_sku_id", "classdpp_1_1application.html#a7aa6f427a79d6efb30d22f34dbecae98", null ],
     [ "privacy_policy_url", "classdpp_1_1application.html#a97b791c3e357fcdcea6306efffb9584e", null ],
+    [ "role_connections_verification_url", "classdpp_1_1application.html#a2912fbfc670f3ff3785bab13ae39bcfb", null ],
     [ "rpc_origins", "classdpp_1_1application.html#ac80deaf158551887c9f4c0b4be7b6ec7", null ],
     [ "slug", "classdpp_1_1application.html#af6ae37d7a50f84f688abc53b47655797", null ],
     [ "summary", "classdpp_1_1application.html#a2989a857540c3d20b96b3722a8c9aaf1", null ],

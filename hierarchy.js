@@ -224,6 +224,12 @@ var hierarchy =
     [ "dpp::json_interface< application >", "structdpp_1_1json__interface.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ]
     ] ],
+    [ "dpp::json_interface< application_role_connection >", "structdpp_1_1json__interface.html", [
+      [ "dpp::application_role_connection", "classdpp_1_1application__role__connection.html", null ]
+    ] ],
+    [ "dpp::json_interface< application_role_connection_metadata >", "structdpp_1_1json__interface.html", [
+      [ "dpp::application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html", null ]
+    ] ],
     [ "dpp::json_interface< auditlog >", "structdpp_1_1json__interface.html", [
       [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ]
     ] ],

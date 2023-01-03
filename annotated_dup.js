@@ -77,6 +77,8 @@ var annotated_dup =
       [ "app_team", "classdpp_1_1app__team.html", "classdpp_1_1app__team" ],
       [ "application", "classdpp_1_1application.html", "classdpp_1_1application" ],
       [ "application_install_params", "structdpp_1_1application__install__params.html", "structdpp_1_1application__install__params" ],
+      [ "application_role_connection", "classdpp_1_1application__role__connection.html", "classdpp_1_1application__role__connection" ],
+      [ "application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html", "classdpp_1_1application__role__connection__metadata" ],
       [ "attachment", "structdpp_1_1attachment.html", "structdpp_1_1attachment" ],
       [ "audit_change", "structdpp_1_1audit__change.html", "structdpp_1_1audit__change" ],
       [ "audit_entry", "structdpp_1_1audit__entry.html", "structdpp_1_1audit__entry" ],
