@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1guild__widget" kind="class" language="C++" prot="public">
+    <compoundname>dpp::guild_widget</compoundname>
+    <includes local="no">guild.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1guild__widget_1aef9e534b3727d4a2b972e3fd64c54e29" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::guild_widget::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+<para>Channel widget points to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="927" column="11" bodyfile="include/dpp/guild.h" bodystart="927" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__widget_1aedf956fc1f600b82020271b411eb86c8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::guild_widget::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+<para>True if enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="932" column="6" bodyfile="include/dpp/guild.h" bodystart="932" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1guild__widget_1af862be6e098acb507a306bc37b6e4ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::guild_widget::guild_widget</definition>
+        <argsstring>()</argsstring>
+        <name>guild_widget</name>
+        <briefdescription>
+<para>Construct a new guild widget object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="937" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__widget_1a2adf7cbd5445c59c17224828bab0f4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref> &amp;</type>
+        <definition>guild_widget &amp; dpp::guild_widget::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Build a guild widget from json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>json to build from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__widget" kindref="compound">guild_widget</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="945" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__widget_1a0fc8bc99dacb826e2d799df312eb1d28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::guild_widget::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build json for a guild widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Add ID to output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string guild widget stringified json </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="953" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a guild widget, simple web widget of member list. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>dpp::guild_widget</label>
+        <link refid="classdpp_1_1guild__widget"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>enabled</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/guild.h" line="922" column="1" bodyfile="include/dpp/guild.h" bodystart="922" bodyend="954"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1guild__widget_1a0fc8bc99dacb826e2d799df312eb1d28" prot="public" virt="non-virtual"><scope>dpp::guild_widget</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1guild__widget_1aef9e534b3727d4a2b972e3fd64c54e29" prot="public" virt="non-virtual"><scope>dpp::guild_widget</scope><name>channel_id</name></member>
+      <member refid="classdpp_1_1guild__widget_1aedf956fc1f600b82020271b411eb86c8" prot="public" virt="non-virtual"><scope>dpp::guild_widget</scope><name>enabled</name></member>
+      <member refid="classdpp_1_1guild__widget_1a2adf7cbd5445c59c17224828bab0f4c4" prot="public" virt="non-virtual"><scope>dpp::guild_widget</scope><name>fill_from_json</name></member>
+      <member refid="classdpp_1_1guild__widget_1af862be6e098acb507a306bc37b6e4ad9" prot="public" virt="non-virtual"><scope>dpp::guild_widget</scope><name>guild_widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

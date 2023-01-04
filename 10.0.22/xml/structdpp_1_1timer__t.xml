@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1timer__t" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::timer_t</compoundname>
+    <includes local="no">timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1timer__t_1a4f1f9ed3d687cad53d683d017f0f21a6" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
+        <definition>timer dpp::timer_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+<para>Timer handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="52" column="7" bodyfile="include/dpp/timer.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1timer__t_1a44c96ea920324eda48be7a60a387ae38" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::timer_t::next_tick</definition>
+        <argsstring></argsstring>
+        <name>next_tick</name>
+        <briefdescription>
+<para>Next timer tick as unix epoch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="56" column="8" bodyfile="include/dpp/timer.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1timer__t_1a6f7bb27bdbd5454dde61d6c9371d7c74" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::timer_t::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <briefdescription>
+<para>Frequency between ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="60" column="10" bodyfile="include/dpp/timer.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1timer__t_1a96482c45a29a4de6189dc7e7311e8cc3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ad4658c417b9af90d3021253375580a61" kindref="member">timer_callback_t</ref></type>
+        <definition>timer_callback_t dpp::timer_t::on_tick</definition>
+        <argsstring></argsstring>
+        <name>on_tick</name>
+        <briefdescription>
+<para>Lambda to call on tick. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="64" column="18" bodyfile="include/dpp/timer.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1timer__t_1a6c91c4a974b88a9ea378e1dfc4c839b1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ad4658c417b9af90d3021253375580a61" kindref="member">timer_callback_t</ref></type>
+        <definition>timer_callback_t dpp::timer_t::on_stop</definition>
+        <argsstring></argsstring>
+        <name>on_stop</name>
+        <briefdescription>
+<para>Lambda to call on stop (optional) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timer.h" line="68" column="18" bodyfile="include/dpp/timer.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used internally to store state of active timers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::timer_t</label>
+        <link refid="structdpp_1_1timer__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>handle</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>next_tick</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>frequency</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>on_stop</edgelabel>
+          <edgelabel>on_tick</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>size_t</label>
+      </node>
+      <node id="5">
+        <label>function&lt; void(timer)&gt;</label>
+      </node>
+      <node id="3">
+        <label>time_t</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/timer.h" line="48" column="1" bodyfile="include/dpp/timer.h" bodystart="48" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1timer__t_1a6f7bb27bdbd5454dde61d6c9371d7c74" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>frequency</name></member>
+      <member refid="structdpp_1_1timer__t_1a4f1f9ed3d687cad53d683d017f0f21a6" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>handle</name></member>
+      <member refid="structdpp_1_1timer__t_1a44c96ea920324eda48be7a60a387ae38" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>next_tick</name></member>
+      <member refid="structdpp_1_1timer__t_1a6c91c4a974b88a9ea378e1dfc4c839b1" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>on_stop</name></member>
+      <member refid="structdpp_1_1timer__t_1a96482c45a29a4de6189dc7e7311e8cc3" prot="public" virt="non-virtual"><scope>dpp::timer_t</scope><name>on_tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
