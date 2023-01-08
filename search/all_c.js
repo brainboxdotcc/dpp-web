@@ -140,12 +140,13 @@ var searchData=
   ['mt_5frecipient_5fadd_137',['mt_recipient_add',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcae8c521e0821e3ce39219566726f46df3',1,'dpp']]],
   ['mt_5frecipient_5fremove_138',['mt_recipient_remove',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca2e93d061d961d64a50310ac4e5444c3b',1,'dpp']]],
   ['mt_5freply_139',['mt_reply',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca13c1c1a4ead0ba6bfaca3c8e0fa53c7c',1,'dpp']]],
-  ['mt_5fthread_5fcreated_140',['mt_thread_created',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca08b27991fef9b0c79308f33f29cffc88',1,'dpp']]],
-  ['mt_5fthread_5fstarter_5fmessage_141',['mt_thread_starter_message',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f',1,'dpp']]],
-  ['mt_5fuser_5fpremium_5fguild_5fsubscription_142',['mt_user_premium_guild_subscription',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcabac2f050715993fd79a820d2e04c8572',1,'dpp']]],
-  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f1_143',['mt_user_premium_guild_subscription_tier_1',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcacf707cbe6c016d2661c0375bb021c554',1,'dpp']]],
-  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f2_144',['mt_user_premium_guild_subscription_tier_2',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca1efe7500d0c09339b36e12249bd94b25',1,'dpp']]],
-  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f3_145',['mt_user_premium_guild_subscription_tier_3',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787',1,'dpp']]],
-  ['multipart_5fcontent_146',['multipart_content',['../structdpp_1_1multipart__content.html',1,'dpp']]],
-  ['music_20and_20audio_147',['Music and Audio',['../music-and-audio.html',1,'md_docpages_03_example_programs']]]
+  ['mt_5frole_5fsubscription_5fpurchase_140',['mt_role_subscription_purchase',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca7d0619d8752ba2c87bd838fb2f9e4c5f',1,'dpp']]],
+  ['mt_5fthread_5fcreated_141',['mt_thread_created',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca08b27991fef9b0c79308f33f29cffc88',1,'dpp']]],
+  ['mt_5fthread_5fstarter_5fmessage_142',['mt_thread_starter_message',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f',1,'dpp']]],
+  ['mt_5fuser_5fpremium_5fguild_5fsubscription_143',['mt_user_premium_guild_subscription',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcabac2f050715993fd79a820d2e04c8572',1,'dpp']]],
+  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f1_144',['mt_user_premium_guild_subscription_tier_1',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcacf707cbe6c016d2661c0375bb021c554',1,'dpp']]],
+  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f2_145',['mt_user_premium_guild_subscription_tier_2',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca1efe7500d0c09339b36e12249bd94b25',1,'dpp']]],
+  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f3_146',['mt_user_premium_guild_subscription_tier_3',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787',1,'dpp']]],
+  ['multipart_5fcontent_147',['multipart_content',['../structdpp_1_1multipart__content.html',1,'dpp']]],
+  ['music_20and_20audio_148',['Music and Audio',['../music-and-audio.html',1,'md_docpages_03_example_programs']]]
 ];
