@@ -36,6 +36,7 @@ var classdpp_1_1channel =
     [ "remove_flag", "classdpp_1_1channel.html#a20f076ea45f524f1673137d1b7817f6f", null ],
     [ "set_bitrate", "classdpp_1_1channel.html#ab6bc88cdee70038c6544c7f44a4584be", null ],
     [ "set_default_forum_layout", "classdpp_1_1channel.html#a5fa998ba750cd4f77321c0dfce0c10f4", null ],
+    [ "set_default_sort_order", "classdpp_1_1channel.html#adebc78b5bf833c8e5c42f8f6c156cdf8", null ],
     [ "set_flags", "classdpp_1_1channel.html#a6cfbf057e2f2d3b5b2ee9b2f43d03288", null ],
     [ "set_guild_id", "classdpp_1_1channel.html#aa823c3a070bc37d70be28bd9b49820c5", null ],
     [ "set_lock_permissions", "classdpp_1_1channel.html#a8ee251e0b5faafd378b3fdabdf39a523", null ],
