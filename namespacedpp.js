@@ -684,7 +684,8 @@ var namespacedpp =
     [ "image_type", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83", [
       [ "i_png", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7", null ],
       [ "i_jpg", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a29ece0fa9be4b57cbd1a5a9213f5a930", null ],
-      [ "i_gif", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a366092ea3e4a9f5a1c1c4962094d3b9f", null ]
+      [ "i_gif", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a366092ea3e4a9f5a1c1c4962094d3b9f", null ],
+      [ "i_webp", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a629c56aafbf3660b0814a743bf9f3458", null ]
     ] ],
     [ "integration_flags", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0", [
       [ "if_enabled", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187", null ],
@@ -904,7 +905,8 @@ var namespacedpp =
     [ "sticker_format", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2", [
       [ "sf_png", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484", null ],
       [ "sf_apng", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2", null ],
-      [ "sf_lottie", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5", null ]
+      [ "sf_lottie", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5", null ],
+      [ "sf_gif", "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a1eda394123de2355ba83675ebd905a76", null ]
     ] ],
     [ "sticker_type", "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bff", [
       [ "st_standard", "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca", null ],
@@ -941,7 +943,8 @@ var namespacedpp =
       [ "u_certified_moderator", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a05e7983fd9a8181c8d8e59faa6d43b79", null ],
       [ "u_bot_http_interactions", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a87c2acb3a9ffda46076dd46150c02c30", null ],
       [ "u_nitro_basic", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a020a705d33b314e1999ab52ffe4b82ad", null ],
-      [ "u_active_developer", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0af832ea39b6e24dd9e1633e3e8bf6b4b1", null ]
+      [ "u_active_developer", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0af832ea39b6e24dd9e1633e3e8bf6b4b1", null ],
+      [ "u_animated_banner", "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a5bb6ef9bed1db97142e8edeb1e23cd8b", null ]
     ] ],
     [ "verification_level_t", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85", [
       [ "ver_none", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a40641216d07d139fe3c2744f2318f75f", null ],

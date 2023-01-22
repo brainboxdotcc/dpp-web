@@ -2,8 +2,8 @@ var classdpp_1_1activity =
 [
     [ "activity", "classdpp_1_1activity.html#a2515a27d5242d6b4f5ea6a835545c52c", null ],
     [ "activity", "classdpp_1_1activity.html#a05dd85de62a60b6dc2dbce16583f8be4", null ],
-    [ "get_large_asset_url", "classdpp_1_1activity.html#a9fe2f4b60a25cbe83d9577e470df0021", null ],
-    [ "get_small_asset_url", "classdpp_1_1activity.html#ad25e351312b7ab1f14775fda17039fd0", null ],
+    [ "get_large_asset_url", "classdpp_1_1activity.html#a955b1ab2b2c3cbec1bfabb4253d9e94d", null ],
+    [ "get_small_asset_url", "classdpp_1_1activity.html#ad30bd6ec17eda7ad7dc450a0e3c77d52", null ],
     [ "application_id", "classdpp_1_1activity.html#aba3ef035ea27dde96a5d45a97a80a29b", null ],
     [ "assets", "classdpp_1_1activity.html#a5499464a59f18a8d098f4d7bab610691", null ],
     [ "buttons", "classdpp_1_1activity.html#a65cb680cfef51d6b3d1796682c9c93c5", null ],

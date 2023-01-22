@@ -8,7 +8,7 @@ var classdpp_1_1thread =
     [ "fill_from_json", "classdpp_1_1thread.html#a21cde7487e3bb861e5e7136470b57a21", null ],
     [ "get_creation_time", "classdpp_1_1thread.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
     [ "get_default_forum_layout", "classdpp_1_1thread.html#ae124cf9b7ab7c4dea5996f7259d52028", null ],
-    [ "get_icon_url", "classdpp_1_1thread.html#a97712454c654d4a4eede963a5307dfdc", null ],
+    [ "get_icon_url", "classdpp_1_1thread.html#a698e4379b6d4db96d16036ea5a78835a", null ],
     [ "get_members", "classdpp_1_1thread.html#a2618252ea6ca24673074b4ac8243798c", null ],
     [ "get_mention", "classdpp_1_1thread.html#a08a674755c169a3517361dc847511617", null ],
     [ "get_mention", "classdpp_1_1thread.html#a753a482bd7d99544684b49b6b46bbcb4", null ],

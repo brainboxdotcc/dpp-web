@@ -3,7 +3,7 @@ var classdpp_1_1guild__member =
     [ "guild_member", "classdpp_1_1guild__member.html#a22fc1a4cacec96dafe98277604823be0", null ],
     [ "build_json", "classdpp_1_1guild__member.html#a7495a6d80ae68d276344d015c9345206", null ],
     [ "fill_from_json", "classdpp_1_1guild__member.html#a8388b6feb3be3972fa50d4665b461611", null ],
-    [ "get_avatar_url", "classdpp_1_1guild__member.html#a849e4b4b20febc4bd1d32d8aaca11127", null ],
+    [ "get_avatar_url", "classdpp_1_1guild__member.html#a6cb57dec0819d8224b1acab674f3a4fe", null ],
     [ "get_mention", "classdpp_1_1guild__member.html#afb9f40dbcd49dbf960d246582eaeca9b", null ],
     [ "get_user", "classdpp_1_1guild__member.html#a8aa4c6d15ce3753f15f78b6388b64ee4", null ],
     [ "has_animated_guild_avatar", "classdpp_1_1guild__member.html#ad785209b6ad322555a800510a5b4356c", null ],

@@ -325,38 +325,64 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="248" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1guild__member_1a849e4b4b20febc4bd1d32d8aaca11127" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a6cb57dec0819d8224b1acab674f3a4fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string dpp::guild_member::get_avatar_url</definition>
-        <argsstring>(uint16_t size=0) const</argsstring>
+        <argsstring>(uint16_t size=0, const image_type format=i_png, bool prefer_animated=true) const</argsstring>
         <name>get_avatar_url</name>
         <param>
           <type>uint16_t</type>
           <declname>size</declname>
           <defval>0</defval>
         </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>format</declname>
+          <defval><ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7" kindref="member">i_png</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>prefer_animated</declname>
+          <defval>true</defval>
+        </param>
         <briefdescription>
-<para>Returns the members per guild avatar if they have one, otherwise returns an empty string. </para>
+<para>Returns the member&apos;s per guild avatar url if they have one, otherwise returns an empty string. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>per-server avatar is a nitro only feature so it might be not set. If you need the real user avatar, use <ref refid="classdpp_1_1user_1adddc16b840a409119b9bda1af4e39e42" kindref="member">user::get_avatar_url</ref>.</para>
+<para><simplesect kind="note"><para>per-server avatar is a nitro only feature so it might be not set. If you need the user avatar, use <ref refid="classdpp_1_1user_1a915b13d1b1729780e8670cbfecd75d21" kindref="member">user::get_avatar_url</ref>.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The size of the avatar in pixels. It can be any power of two between 16 and 4096. If not specified, the default sized avatar is returned. </para>
+<para>The size of the avatar in pixels. It can be any power of two between 16 and 4096, otherwise the default sized avatar is returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format to use for the avatar. It can be one of <computeroutput>i_webp</computeroutput>, <computeroutput>i_jpg</computeroutput>, <computeroutput>i_png</computeroutput> or <computeroutput>i_gif</computeroutput>. Passing <computeroutput>i_gif</computeroutput> might result in an invalid url for non-animated images. Consider using the <computeroutput>prefer_animated</computeroutput> parameter instead. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefer_animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether you prefer gif format. If true, it&apos;ll return gif format whenever the image is available as animated. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>std::string avatar url or empty string </para>
+<simplesect kind="return"><para>std::string avatar url or an empty string, if required attributes are missing or an invalid format was passed </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="258" column="13"/>
+        <location file="include/dpp/guild.h" line="263" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1adf919401f5e69225fb9fee91de8b7983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
@@ -386,7 +412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="267" column="14"/>
+        <location file="include/dpp/guild.h" line="272" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1a8aa4c6d15ce3753f15f78b6388b64ee4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref> *</type>
@@ -403,7 +429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="275" column="11"/>
+        <location file="include/dpp/guild.h" line="280" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1a91cf849628af76ad3fb4c58c8d54efab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
@@ -433,7 +459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="284" column="14"/>
+        <location file="include/dpp/guild.h" line="289" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1a51764b5c1960619ddc073224d2791ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
@@ -463,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="293" column="14"/>
+        <location file="include/dpp/guild.h" line="298" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1a5f8cb5390378a011a1d7fe36f5ab3441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
@@ -493,7 +519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="302" column="14"/>
+        <location file="include/dpp/guild.h" line="307" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1guild__member_1afb9f40dbcd49dbf960d246582eaeca9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -510,7 +536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="309" column="13"/>
+        <location file="include/dpp/guild.h" line="314" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -580,14 +606,14 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/guild.h" line="170" column="1" bodyfile="include/dpp/guild.h" bodystart="170" bodyend="310"/>
+    <location file="include/dpp/guild.h" line="170" column="1" bodyfile="include/dpp/guild.h" bodystart="170" bodyend="315"/>
     <listofallmembers>
       <member refid="classdpp_1_1guild__member_1aeb9413ebe5540ebd625a35166f5ad799" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>avatar</name></member>
       <member refid="classdpp_1_1guild__member_1a7495a6d80ae68d276344d015c9345206" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>build_json</name></member>
       <member refid="classdpp_1_1guild__member_1a6bf5f4ec4e76b15734782ff2fdd51170" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>communication_disabled_until</name></member>
       <member refid="classdpp_1_1guild__member_1a8388b6feb3be3972fa50d4665b461611" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>fill_from_json</name></member>
       <member refid="classdpp_1_1guild__member_1a11636d9baaca59361c22ac163b09fd7c" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>flags</name></member>
-      <member refid="classdpp_1_1guild__member_1a849e4b4b20febc4bd1d32d8aaca11127" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_avatar_url</name></member>
+      <member refid="classdpp_1_1guild__member_1a6cb57dec0819d8224b1acab674f3a4fe" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_avatar_url</name></member>
       <member refid="classdpp_1_1guild__member_1afb9f40dbcd49dbf960d246582eaeca9b" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_mention</name></member>
       <member refid="classdpp_1_1guild__member_1a8aa4c6d15ce3753f15f78b6388b64ee4" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_user</name></member>
       <member refid="classdpp_1_1guild__member_1abc1c9039f54691ae4e8938c2768ccf84" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>guild_id</name></member>

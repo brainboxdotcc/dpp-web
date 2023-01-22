@@ -230,67 +230,97 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1activity_1a9fe2f4b60a25cbe83d9577e470df0021" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1activity_1a955b1ab2b2c3cbec1bfabb4253d9e94d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string dpp::activity::get_large_asset_url</definition>
-        <argsstring>(uint16_t size=0) const</argsstring>
+        <argsstring>(uint16_t size=0, const image_type format=i_png) const</argsstring>
         <name>get_large_asset_url</name>
         <param>
           <type>uint16_t</type>
           <declname>size</declname>
           <defval>0</defval>
         </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>format</declname>
+          <defval><ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7" kindref="member">i_png</ref></defval>
+        </param>
         <briefdescription>
 <para>Get the assets large image url if they have one, otherwise returns an empty string. In case of prefixed image IDs (mp:{image_id}) it returns an empty string. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#activity-object-activity-asset-image">https://discord.com/developers/docs/topics/gateway-events#activity-object-activity-asset-image</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The size of the image in pixels. It can be any power of two between 16 and 4096. if not specified, the default sized image is returned. </para>
+<para>The size of the image in pixels. It can be any power of two between 16 and 4096, otherwise the default sized image is returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format to use for the avatar. It can be one of <computeroutput>i_webp</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>image url or empty string </para>
+<simplesect kind="return"><para>std::string image url or an empty string, if required attributes are missing or an invalid format was passed </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="280" column="13"/>
+        <location file="include/dpp/presence.h" line="284" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1activity_1ad25e351312b7ab1f14775fda17039fd0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1activity_1ad30bd6ec17eda7ad7dc450a0e3c77d52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string dpp::activity::get_small_asset_url</definition>
-        <argsstring>(uint16_t size=0) const</argsstring>
+        <argsstring>(uint16_t size=0, const image_type format=i_png) const</argsstring>
         <name>get_small_asset_url</name>
         <param>
           <type>uint16_t</type>
           <declname>size</declname>
           <defval>0</defval>
         </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>format</declname>
+          <defval><ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7" kindref="member">i_png</ref></defval>
+        </param>
         <briefdescription>
 <para>Get the assets small image url if they have one, otherwise returns an empty string. In case of prefixed image IDs (mp:{image_id}) it returns an empty string. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#activity-object-activity-asset-image">https://discord.com/developers/docs/topics/gateway-events#activity-object-activity-asset-image</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The size of the image in pixels. It can be any power of two between 16 and 4096. if not specified, the default sized image is returned. </para>
+<para>The size of the image in pixels. It can be any power of two between 16 and 4096, otherwise the default sized image is returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format to use for the avatar. It can be one of <computeroutput>i_webp</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>image url or empty string </para>
+<simplesect kind="return"><para>std::string image url or an empty string, if required attributes are missing or an invalid format was passed </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="288" column="13"/>
+        <location file="include/dpp/presence.h" line="296" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1activity_1a2515a27d5242d6b4f5ea6a835545c52c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -303,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="290" column="1"/>
+        <location file="include/dpp/presence.h" line="298" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1activity_1a05dd85de62a60b6dc2dbce16583f8be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -367,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/presence.h" line="300" column="1"/>
+        <location file="include/dpp/presence.h" line="308" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -521,7 +551,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/presence.h" line="219" column="1" bodyfile="include/dpp/presence.h" bodystart="219" bodyend="301"/>
+    <location file="include/dpp/presence.h" line="219" column="1" bodyfile="include/dpp/presence.h" bodystart="219" bodyend="309"/>
     <listofallmembers>
       <member refid="classdpp_1_1activity_1a2515a27d5242d6b4f5ea6a835545c52c" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>activity</name></member>
       <member refid="classdpp_1_1activity_1a05dd85de62a60b6dc2dbce16583f8be4" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>activity</name></member>
@@ -533,8 +563,8 @@
       <member refid="classdpp_1_1activity_1a4d73d6ac68ba16822b3c67554e24f3b1" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>emoji</name></member>
       <member refid="classdpp_1_1activity_1a54cf821d1e457ca1834e53a7bf8de774" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>end</name></member>
       <member refid="classdpp_1_1activity_1a6bd675ea3efb05b3d3906f1df87fd5c8" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>flags</name></member>
-      <member refid="classdpp_1_1activity_1a9fe2f4b60a25cbe83d9577e470df0021" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>get_large_asset_url</name></member>
-      <member refid="classdpp_1_1activity_1ad25e351312b7ab1f14775fda17039fd0" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>get_small_asset_url</name></member>
+      <member refid="classdpp_1_1activity_1a955b1ab2b2c3cbec1bfabb4253d9e94d" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>get_large_asset_url</name></member>
+      <member refid="classdpp_1_1activity_1ad30bd6ec17eda7ad7dc450a0e3c77d52" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>get_small_asset_url</name></member>
       <member refid="classdpp_1_1activity_1a18eb699c08cd16cf4d1c90118a95ad6f" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>is_instance</name></member>
       <member refid="classdpp_1_1activity_1a1bc7b3fbd7cbf6ef7d520ef80ca223b1" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>name</name></member>
       <member refid="classdpp_1_1activity_1a7d76284f4a09615e6b93f97852420fca" prot="public" virt="non-virtual"><scope>dpp::activity</scope><name>party</name></member>

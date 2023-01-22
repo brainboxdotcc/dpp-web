@@ -199,7 +199,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3da218e2645e8f07e3b83373505542ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate a string value In the event the length of the string is less than _min, then an exception of type dpp:<a class="el" href="classdpp_1_1length__exception.html" title="Represents invalid length of argument being passed to a function.">length_exception</a> will be thrown. If the string is longer than _max UTF8 codepoints it will be truncated to fit.  <a href="namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad">More...</a><br /></td></tr>
 <tr class="separator:a3da218e2645e8f07e3b83373505542ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e8cc2ce4c01244c9db877ab526ac9cc"><td class="memItemLeft" align="right" valign="top">std::string DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc">avatar_size</a> (uint32_t size)</td></tr>
-<tr class="memdesc:a2e8cc2ce4c01244c9db877ab526ac9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the url parameter for an avatar size, or empty if the size is 0.  <a href="namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc">More...</a><br /></td></tr>
+<tr class="memdesc:a2e8cc2ce4c01244c9db877ab526ac9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the url query parameter for the cdn endpoint. Internally used to build url getters.  <a href="namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc">More...</a><br /></td></tr>
 <tr class="separator:a2e8cc2ce4c01244c9db877ab526ac9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab65e758e198a195ad3fbcec3c534d2ec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec">tokenize</a> (std::string const &amp;in, const char *sep=&quot;\r\n&quot;)</td></tr>
 <tr class="memdesc:ab65e758e198a195ad3fbcec3c534d2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split (tokenize) a string into a vector, using the given separators.  <a href="namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec">More...</a><br /></td></tr>
@@ -321,14 +321,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the url parameter for an avatar size, or empty if the size is 0. </p>
+<p>Get the url query parameter for the cdn endpoint. Internally used to build url getters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>size to generate url parameter for </td></tr>
+    <tr><td class="paramname">size</td><td>size to generate url parameter for. Must be any power of two between 16 and 4096 (inclusive) or it'll return an empty string. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string url parameter </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string url query parameter e.g. <code>?size=128</code>, or an empty string </dd></dl>
 
 </div>
 </div>

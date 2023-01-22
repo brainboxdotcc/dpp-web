@@ -1463,6 +1463,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ae2ee458707682eabe7d539c9a13beac2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2">sticker_format</a> : uint8_t { <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484">sf_png</a> = 1
 , <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2">sf_apng</a> = 2
 , <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5">sf_lottie</a> = 3
+, <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a1eda394123de2355ba83675ebd905a76">sf_gif</a> = 4
  }</td></tr>
 <tr class="memdesc:ae2ee458707682eabe7d539c9a13beac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file format (png, apng, lottie) of a sticker.  <a href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2">More...</a><br /></td></tr>
 <tr class="separator:ae2ee458707682eabe7d539c9a13beac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1527,8 +1528,9 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a7d622bf5ff000e82a44af1a8ac794e83"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> { <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7">i_png</a>
 , <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a29ece0fa9be4b57cbd1a5a9213f5a930">i_jpg</a>
 , <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a366092ea3e4a9f5a1c1c4962094d3b9f">i_gif</a>
+, <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a629c56aafbf3660b0814a743bf9f3458">i_webp</a>
  }</td></tr>
-<tr class="memdesc:a7d622bf5ff000e82a44af1a8ac794e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported image types for profile pictures.  <a href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">More...</a><br /></td></tr>
+<tr class="memdesc:a7d622bf5ff000e82a44af1a8ac794e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported image types for profile pictures and CDN endpoints.  <a href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">More...</a><br /></td></tr>
 <tr class="separator:a7d622bf5ff000e82a44af1a8ac794e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d48d478ccc3bffb34637bdb48f629c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2">loglevel</a> { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a">ll_trace</a> = 0
@@ -1727,34 +1729,35 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a29954c9dfc5a906346177226d036a418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the privacy of a stage instance.  <a href="namespacedpp.html#a29954c9dfc5a906346177226d036a418">More...</a><br /></td></tr>
 <tr class="separator:a29954c9dfc5a906346177226d036a418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a238db04976402abb94ea0c989d8c0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0">user_flags</a> : uint32_t { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a08571594b32cf14501db06b9a39c0d2b">u_bot</a> = 0b00000000000000000000001
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ab798237a2b87e22960a9928fede47221">u_system</a> = 0b00000000000000000000010
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a77ba30113792b4046dce41d9e0d3e092">u_mfa_enabled</a> = 0b00000000000000000000100
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a8055b637db4c88b54da2c3157ebb7f74">u_verified</a> = 0b00000000000000000001000
+&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a08571594b32cf14501db06b9a39c0d2b">u_bot</a> = 0b00000000000000000000000000000001
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ab798237a2b87e22960a9928fede47221">u_system</a> = 0b00000000000000000000000000000010
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a77ba30113792b4046dce41d9e0d3e092">u_mfa_enabled</a> = 0b00000000000000000000000000000100
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a8055b637db4c88b54da2c3157ebb7f74">u_verified</a> = 0b00000000000000000000000000001000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a224c3134630104447a7d739f37f5f6f0">u_nitro_full</a> = 0b00000000000000000010000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0afe08f965f264db94c343e1cb6ed2ba76">u_nitro_classic</a> = 0b00000000000000000100000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a4ba288ac839eaff56a3d46e373764d76">u_discord_employee</a> = 0b00000000000000001000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a666e085f0d2ba3edbd420f36d68a5e7e">u_partnered_owner</a> = 0b00000000000000010000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a224c3134630104447a7d739f37f5f6f0">u_nitro_full</a> = 0b00000000000000000000000000010000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0afe08f965f264db94c343e1cb6ed2ba76">u_nitro_classic</a> = 0b00000000000000000000000000100000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a4ba288ac839eaff56a3d46e373764d76">u_discord_employee</a> = 0b00000000000000000000000001000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a666e085f0d2ba3edbd420f36d68a5e7e">u_partnered_owner</a> = 0b00000000000000000000000010000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad59de70fe3833bd7b46b134bd6a77eeb">u_hypesquad_events</a> = 0b00000000000000100000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aff3f9dd3f4da4e8c47c3dad9b080264e">u_bughunter_1</a> = 0b00000000000001000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a90aa6259394b0cc214042c0fa0ae5f36">u_house_bravery</a> = 0b00000000000010000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a092724653fc653a65807a13740eaec91">u_house_brilliance</a> = 0b00000000000100000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad59de70fe3833bd7b46b134bd6a77eeb">u_hypesquad_events</a> = 0b00000000000000000000000100000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aff3f9dd3f4da4e8c47c3dad9b080264e">u_bughunter_1</a> = 0b00000000000000000000001000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a90aa6259394b0cc214042c0fa0ae5f36">u_house_bravery</a> = 0b00000000000000000000010000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a092724653fc653a65807a13740eaec91">u_house_brilliance</a> = 0b00000000000000000000100000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a4c69e902b98a57d17f7ef74552af2223">u_house_balance</a> = 0b00000000001000000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aefb9e680096448b61609f13e1b23736a">u_early_supporter</a> = 0b00000000010000000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad9e65390bac5097c18380407eeaa8891">u_team_user</a> = 0b00000000100000000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a464829636537cdc63c5afae54f37f271">u_bughunter_2</a> = 0b00000001000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a4c69e902b98a57d17f7ef74552af2223">u_house_balance</a> = 0b00000000000000000001000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aefb9e680096448b61609f13e1b23736a">u_early_supporter</a> = 0b00000000000000000010000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0ad9e65390bac5097c18380407eeaa8891">u_team_user</a> = 0b00000000000000000100000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a464829636537cdc63c5afae54f37f271">u_bughunter_2</a> = 0b00000000000000001000000000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aa07166e5a0e4e1e29a43e924b9c6d41f">u_verified_bot</a> = 0b00000010000000000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a52e7662e76e7375fdb2b2df4d3780d70">u_verified_bot_dev</a> = 0b00000100000000000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a2aef392b3338053d54a8e2bc0a3a465f">u_animated_icon</a> = 0b00001000000000000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a05e7983fd9a8181c8d8e59faa6d43b79">u_certified_moderator</a> = 0b00010000000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aa07166e5a0e4e1e29a43e924b9c6d41f">u_verified_bot</a> = 0b00000000000000010000000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a52e7662e76e7375fdb2b2df4d3780d70">u_verified_bot_dev</a> = 0b00000000000000100000000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a2aef392b3338053d54a8e2bc0a3a465f">u_animated_icon</a> = 0b00000000000001000000000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a05e7983fd9a8181c8d8e59faa6d43b79">u_certified_moderator</a> = 0b00000000000010000000000000000000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a87c2acb3a9ffda46076dd46150c02c30">u_bot_http_interactions</a> = 0b00100000000000000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a020a705d33b314e1999ab52ffe4b82ad">u_nitro_basic</a> = 0b01000000000000000000000
-, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0af832ea39b6e24dd9e1633e3e8bf6b4b1">u_active_developer</a> = 0b10000000000000000000000
+&#160;&#160;<a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a87c2acb3a9ffda46076dd46150c02c30">u_bot_http_interactions</a> = 0b00000000000100000000000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a020a705d33b314e1999ab52ffe4b82ad">u_nitro_basic</a> = 0b00000000001000000000000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0af832ea39b6e24dd9e1633e3e8bf6b4b1">u_active_developer</a> = 0b00000000010000000000000000000000
+, <a class="el" href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a5bb6ef9bed1db97142e8edeb1e23cd8b">u_animated_banner</a> = 0b00000000100000000000000000000000
 <br />
  }</td></tr>
 <tr class="memdesc:a99a238db04976402abb94ea0c989d8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various bitmask flags used to represent information about a <a class="el" href="classdpp_1_1user.html" title="Represents a user on discord. May or may not be a member of a dpp::guild.">dpp::user</a>.  <a href="namespacedpp.html#a99a238db04976402abb94ea0c989d8c0">More...</a><br /></td></tr>
@@ -4205,13 +4208,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Supported image types for profile pictures. </p>
+<p>Supported image types for profile pictures and CDN endpoints. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7" name="a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7"></a>i_png&#160;</td><td class="fielddoc"><p >image/png </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7d622bf5ff000e82a44af1a8ac794e83a29ece0fa9be4b57cbd1a5a9213f5a930" name="a7d622bf5ff000e82a44af1a8ac794e83a29ece0fa9be4b57cbd1a5a9213f5a930"></a>i_jpg&#160;</td><td class="fielddoc"><p >image/jpeg </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7d622bf5ff000e82a44af1a8ac794e83a366092ea3e4a9f5a1c1c4962094d3b9f" name="a7d622bf5ff000e82a44af1a8ac794e83a366092ea3e4a9f5a1c1c4962094d3b9f"></a>i_gif&#160;</td><td class="fielddoc"><p >image/gif </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7d622bf5ff000e82a44af1a8ac794e83a629c56aafbf3660b0814a743bf9f3458" name="a7d622bf5ff000e82a44af1a8ac794e83a629c56aafbf3660b0814a743bf9f3458"></a>i_webp&#160;</td><td class="fielddoc"><p >WebP. </p>
 </td></tr>
 </table>
 
@@ -4930,6 +4935,7 @@ Variables</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484" name="ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484"></a>sf_png&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2" name="ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2"></a>sf_apng&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5" name="ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5"></a>sf_lottie&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2ee458707682eabe7d539c9a13beac2a1eda394123de2355ba83675ebd905a76" name="ae2ee458707682eabe7d539c9a13beac2a1eda394123de2355ba83675ebd905a76"></a>sf_gif&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -5059,6 +5065,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a99a238db04976402abb94ea0c989d8c0a020a705d33b314e1999ab52ffe4b82ad" name="a99a238db04976402abb94ea0c989d8c0a020a705d33b314e1999ab52ffe4b82ad"></a>u_nitro_basic&#160;</td><td class="fielddoc"><p >User has nitro basic. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a99a238db04976402abb94ea0c989d8c0af832ea39b6e24dd9e1633e3e8bf6b4b1" name="a99a238db04976402abb94ea0c989d8c0af832ea39b6e24dd9e1633e3e8bf6b4b1"></a>u_active_developer&#160;</td><td class="fielddoc"><p >User has the active developer badge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99a238db04976402abb94ea0c989d8c0a5bb6ef9bed1db97142e8edeb1e23cd8b" name="a99a238db04976402abb94ea0c989d8c0a5bb6ef9bed1db97142e8edeb1e23cd8b"></a>u_animated_banner&#160;</td><td class="fielddoc"><p >User's banner is animated. </p>
 </td></tr>
 </table>
 

@@ -211,9 +211,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a915cc4ba3ec7514a684315594255253a"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="classdpp_1_1voicestate.html">voicestate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a915cc4ba3ec7514a684315594255253a">get_voice_members</a> ()</td></tr>
 <tr class="memdesc:a915cc4ba3ec7514a684315594255253a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a map of members in this channel, if it is a voice channel. The map is keyed by snowflake id of the user.  <a href="classdpp_1_1channel.html#a915cc4ba3ec7514a684315594255253a">More...</a><br /></td></tr>
 <tr class="separator:a915cc4ba3ec7514a684315594255253a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97712454c654d4a4eede963a5307dfdc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a97712454c654d4a4eede963a5307dfdc">get_icon_url</a> (uint16_t size=0) const</td></tr>
-<tr class="memdesc:a97712454c654d4a4eede963a5307dfdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the channel's icon url (if its a group DM), otherwise returns an empty string.  <a href="classdpp_1_1channel.html#a97712454c654d4a4eede963a5307dfdc">More...</a><br /></td></tr>
-<tr class="separator:a97712454c654d4a4eede963a5307dfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698e4379b6d4db96d16036ea5a78835a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a698e4379b6d4db96d16036ea5a78835a">get_icon_url</a> (uint16_t size=0, const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> format=<a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7">i_png</a>) const</td></tr>
+<tr class="memdesc:a698e4379b6d4db96d16036ea5a78835a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the channel's icon url (if its a group DM), otherwise returns an empty string.  <a href="classdpp_1_1channel.html#a698e4379b6d4db96d16036ea5a78835a">More...</a><br /></td></tr>
+<tr class="separator:a698e4379b6d4db96d16036ea5a78835a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41631deb5f2cb740b4d124cde9f266d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a41631deb5f2cb740b4d124cde9f266d2">is_nsfw</a> () const</td></tr>
 <tr class="memdesc:a41631deb5f2cb740b4d124cde9f266d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is NSFW gated.  <a href="classdpp_1_1channel.html#a41631deb5f2cb740b4d124cde9f266d2">More...</a><br /></td></tr>
 <tr class="separator:a41631deb5f2cb740b4d124cde9f266d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -569,8 +569,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a97712454c654d4a4eede963a5307dfdc" name="a97712454c654d4a4eede963a5307dfdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97712454c654d4a4eede963a5307dfdc">&#9670;&nbsp;</a></span>get_icon_url()</h2>
+<a id="a698e4379b6d4db96d16036ea5a78835a" name="a698e4379b6d4db96d16036ea5a78835a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698e4379b6d4db96d16036ea5a78835a">&#9670;&nbsp;</a></span>get_icon_url()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -579,8 +579,18 @@ Public Attributes</h2></td></tr>
           <td class="memname">std::string dpp::channel::get_icon_url </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>size</em> = <code>0</code></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>size</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a>&#160;</td>
+          <td class="paramname"><em>format</em> = <code><a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7">i_png</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -588,11 +598,12 @@ Public Attributes</h2></td></tr>
 <p>Get the channel's icon url (if its a group DM), otherwise returns an empty string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>The size of the icon in pixels. It can be any power of two between 16 and 4096. if not specified, the default sized icon is returned. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the icon in pixels. It can be any power of two between 16 and 4096, otherwise the default sized icon is returned. </td></tr>
+    <tr><td class="paramname">format</td><td>The format to use for the avatar. It can be one of <code>i_webp</code>, <code>i_jpg</code> or <code>i_png</code>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string icon url or empty string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string icon url or an empty string, if required attributes are missing or an invalid format was passed </dd></dl>
 
 </div>
 </div>

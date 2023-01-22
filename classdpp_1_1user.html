@@ -141,9 +141,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99f8a16addc4254a51bae13aae574641"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1user.html#a99f8a16addc4254a51bae13aae574641">build_json</a> (bool with_id=true) const</td></tr>
 <tr class="memdesc:a99f8a16addc4254a51bae13aae574641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to JSON string.  <a href="classdpp_1_1user.html#a99f8a16addc4254a51bae13aae574641">More...</a><br /></td></tr>
 <tr class="separator:a99f8a16addc4254a51bae13aae574641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adddc16b840a409119b9bda1af4e39e42"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1user.html#adddc16b840a409119b9bda1af4e39e42">get_avatar_url</a> (uint16_t size=0) const</td></tr>
-<tr class="memdesc:adddc16b840a409119b9bda1af4e39e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the avatar url of the user object.  <a href="classdpp_1_1user.html#adddc16b840a409119b9bda1af4e39e42">More...</a><br /></td></tr>
-<tr class="separator:adddc16b840a409119b9bda1af4e39e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915b13d1b1729780e8670cbfecd75d21"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1user.html#a915b13d1b1729780e8670cbfecd75d21">get_avatar_url</a> (uint16_t size=0, const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> format=<a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7">i_png</a>, bool prefer_animated=true) const</td></tr>
+<tr class="memdesc:a915b13d1b1729780e8670cbfecd75d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the avatar url of the user.  <a href="classdpp_1_1user.html#a915b13d1b1729780e8670cbfecd75d21">More...</a><br /></td></tr>
+<tr class="separator:a915b13d1b1729780e8670cbfecd75d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993443fdaf58cb3a58a2e3008af47b54"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1user.html#a993443fdaf58cb3a58a2e3008af47b54">get_default_avatar_url</a> () const</td></tr>
+<tr class="memdesc:a993443fdaf58cb3a58a2e3008af47b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default avatar url of the user. This is calculated by the discriminator.  <a href="classdpp_1_1user.html#a993443fdaf58cb3a58a2e3008af47b54">More...</a><br /></td></tr>
+<tr class="separator:a993443fdaf58cb3a58a2e3008af47b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09743ef07e78406808e74a8bd7b5d658"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1user.html#a09743ef07e78406808e74a8bd7b5d658">get_mention</a> () const</td></tr>
 <tr class="memdesc:a09743ef07e78406808e74a8bd7b5d658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a ping/mention for the user.  <a href="classdpp_1_1user.html#a09743ef07e78406808e74a8bd7b5d658">More...</a><br /></td></tr>
 <tr class="separator:a09743ef07e78406808e74a8bd7b5d658"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,8 +389,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adddc16b840a409119b9bda1af4e39e42" name="adddc16b840a409119b9bda1af4e39e42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adddc16b840a409119b9bda1af4e39e42">&#9670;&nbsp;</a></span>get_avatar_url()</h2>
+<a id="a915b13d1b1729780e8670cbfecd75d21" name="a915b13d1b1729780e8670cbfecd75d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a915b13d1b1729780e8670cbfecd75d21">&#9670;&nbsp;</a></span>get_avatar_url()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,20 +399,39 @@ Public Attributes</h2></td></tr>
           <td class="memname">std::string dpp::user::get_avatar_url </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>size</em> = <code>0</code></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>size</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a>&#160;</td>
+          <td class="paramname"><em>format</em> = <code><a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7">i_png</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>prefer_animated</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the avatar url of the user object. </p>
+<p>Get the avatar url of the user. </p>
+<dl class="section note"><dt>Note</dt><dd>If the user doesn't have an avatar, the default user avatar url is returned which is always in <code>png</code> format!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>The size of the avatar in pixels. It can be any power of two between 16 and 4096. if not specified, the default sized avatar is returned. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the avatar in pixels. It can be any power of two between 16 and 4096, otherwise the default sized avatar is returned. </td></tr>
+    <tr><td class="paramname">format</td><td>The format to use for the avatar. It can be one of <code>i_webp</code>, <code>i_jpg</code>, <code>i_png</code> or <code>i_gif</code>. Passing <code>i_gif</code> might result in an invalid url for non-animated images. Consider using the <code>prefer_animated</code> parameter instead. </td></tr>
+    <tr><td class="paramname">prefer_animated</td><td>Whether you prefer gif format. If true, it'll return gif format whenever the image is available as animated. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string avatar url. If the user doesn't have an avatar, the default user avatar url is returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string avatar url or an empty string, if required attributes are missing or an invalid format was passed </dd></dl>
 
 </div>
 </div>
@@ -438,6 +460,26 @@ Public Attributes</h2></td></tr>
 
 <p>Get the creation time of this object according to Discord. </p>
 <dl class="section return"><dt>Returns</dt><dd>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </dd></dl>
+
+</div>
+</div>
+<a id="a993443fdaf58cb3a58a2e3008af47b54" name="a993443fdaf58cb3a58a2e3008af47b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993443fdaf58cb3a58a2e3008af47b54">&#9670;&nbsp;</a></span>get_default_avatar_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::user::get_default_avatar_url </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default avatar url of the user. This is calculated by the discriminator. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string avatar url or an empty string, if the discriminator is empty </dd></dl>
 
 </div>
 </div>

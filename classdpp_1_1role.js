@@ -6,7 +6,7 @@ var classdpp_1_1role =
     [ "fill_from_json", "classdpp_1_1role.html#ab5465666f311744f5bcaf1361a1ba51c", null ],
     [ "fill_from_json", "classdpp_1_1role.html#a5352cd2a40c1c2c430ec9448bd45723f", null ],
     [ "get_creation_time", "classdpp_1_1role.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
-    [ "get_icon_url", "classdpp_1_1role.html#a5ce1695745201d6c2914c9d818119078", null ],
+    [ "get_icon_url", "classdpp_1_1role.html#a492aa7a36a4ef0e0cad8e33f8f386ea8", null ],
     [ "get_members", "classdpp_1_1role.html#a60bd9c7e3901c18f5ec3c4f835e1c1de", null ],
     [ "get_mention", "classdpp_1_1role.html#a82eb1c7df3ee72db92cf502bb575e799", null ],
     [ "get_mention", "classdpp_1_1role.html#aa43b2369719812a849c83c52e044127b", null ],
