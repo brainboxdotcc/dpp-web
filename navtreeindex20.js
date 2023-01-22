@@ -231,8 +231,8 @@ var NAVTREEINDEX20 =
 "soundboard.html":[4,2,0],
 "spdlog.html":[4,3,1],
 "stream-mp3-discord-bot.html":[4,2,2],
-"structdpp_1_1activity__assets.html":[7,0,0,5],
 "structdpp_1_1activity__assets.html":[8,0,0,3],
+"structdpp_1_1activity__assets.html":[7,0,0,5],
 "structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[7,0,0,5,4],
 "structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[8,0,0,3,4],
 "structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[7,0,0,5,3],
@@ -247,7 +247,7 @@ var NAVTREEINDEX20 =
 "structdpp_1_1activity__button.html":[8,0,0,4],
 "structdpp_1_1activity__button.html#a1c326370a806853a03a4d21a48aa8855":[7,0,0,6,0],
 "structdpp_1_1activity__button.html#a1c326370a806853a03a4d21a48aa8855":[8,0,0,4,0],
-"structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d":[7,0,0,6,1],
 "structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d":[8,0,0,4,1],
-"structdpp_1_1activity__button.html#ace694224cbf3fedf76c3914b3ac88d0c":[7,0,0,6,2]
+"structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d":[7,0,0,6,1],
+"structdpp_1_1activity__button.html#ace694224cbf3fedf76c3914b3ac88d0c":[8,0,0,4,2]
 };
