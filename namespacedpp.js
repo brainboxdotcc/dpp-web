@@ -784,7 +784,9 @@ var namespacedpp =
       [ "mt_guild_invite_reminder", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca316506608264a2b1546fd7b71c82748a", null ],
       [ "mt_context_menu_command", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca79aa113309ce945bd954058449e0f9fe", null ],
       [ "mt_auto_moderation_action", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca0ae71382837674b43d0e443da0eed509", null ],
-      [ "mt_role_subscription_purchase", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca7d0619d8752ba2c87bd838fb2f9e4c5f", null ]
+      [ "mt_role_subscription_purchase", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca7d0619d8752ba2c87bd838fb2f9e4c5f", null ],
+      [ "mt_interaction_premium_upsell", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca5498258270a5478dbd76a7607a3a263d", null ],
+      [ "mt_application_premium_subscription", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaede2ca9c4344d39cbddfca73d7d60ee8", null ]
     ] ],
     [ "mfa_level_t", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4a", [
       [ "mfa_none", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4aaca2f84896f4202cf23eaaba3c4c8ff5e", null ],

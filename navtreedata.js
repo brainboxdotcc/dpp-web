@@ -126,19 +126,19 @@ var NAVTREEINDEX =
 "functions_r.html",
 "namespacedpp.html#a350d31a987f01b3fe24d17bc59b1d9b1",
 "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a4ba288ac839eaff56a3d46e373764d76",
-"namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5",
-"structdpp_1_1activity__button.html#ace694224cbf3fedf76c3914b3ac88d0c",
-"structdpp_1_1automod__rule__execute__t.html#a5afbcd36109734ad0fca14ec848b73b7",
-"structdpp_1_1command__option.html#a9c8f811314c21730e267269b74479f1b",
-"structdpp_1_1embed__footer.html#a05db5bbbe47df842045ce91234cec716",
-"structdpp_1_1guild__emojis__update__t.html#a7d95cfe4bea653efceb7311699be645b",
-"structdpp_1_1guild__update__t.html#a5afbcd36109734ad0fca14ec848b73b7",
-"structdpp_1_1message.html",
-"structdpp_1_1message__delete__bulk__t.html#aca2880114f69b7ba62eb5137824c1432",
-"structdpp_1_1scheduled__event.html#a00779228a1511d4d256156c68fc058a5",
-"structdpp_1_1stage__instance__update__t.html",
-"structdpp_1_1typing__start__t.html#a806b74ba396ab577fb3b4268b169c9ad",
-"structdpp_1_1voice__track__marker__t.html#a09cf903ff8f180dc53a844b99bd2bdbd"
+"namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2",
+"structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d",
+"structdpp_1_1automod__rule__execute__t.html#a40053b5c622fcba9288b4850e35a8c11",
+"structdpp_1_1command__option.html#a82debcf96e4265cf7d8ea6b2aa47e481",
+"structdpp_1_1embed__footer.html",
+"structdpp_1_1guild__emojis__update__t.html#a5afbcd36109734ad0fca14ec848b73b7",
+"structdpp_1_1guild__update__t.html#a357873be4dd30eef7928ae5f7c13e7db",
+"structdpp_1_1log__t.html#af5ba0a481ddc4381df21ad7b1e4efe7b",
+"structdpp_1_1message__delete__bulk__t.html#aa8fb42cb1b7f751bcbad1964d48cb759",
+"structdpp_1_1scheduled__event.html",
+"structdpp_1_1stage__instance__delete__t.html#ad9815ab643039f8346df3c6bb97ddc20",
+"structdpp_1_1typing__start__t.html#a5afbcd36109734ad0fca14ec848b73b7",
+"structdpp_1_1voice__track__marker__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

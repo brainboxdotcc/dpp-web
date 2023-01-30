@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2":[7,0,0,330],
+"namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a1eda394123de2355ba83675ebd905a76":[7,0,0,330,3],
 "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5":[7,0,0,330,2],
 "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2":[7,0,0,330,1],
 "namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2ad24e2db4ccb23d8fcedc1f5be8458484":[7,0,0,330,0],
@@ -176,8 +178,8 @@ var NAVTREEINDEX20 =
 "namespacedpp_1_1utility.html#af247cf657d20138e2e364712176810f8":[7,0,0,3,8],
 "namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08":[7,0,0,3,6],
 "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32":[7,0,0,3,34],
-"namespacemembers.html":[7,1,0],
 "namespacemembers.html":[7,1,0,0],
+"namespacemembers.html":[7,1,0],
 "namespacemembers_b.html":[7,1,0,1],
 "namespacemembers_c.html":[7,1,0,2],
 "namespacemembers_d.html":[7,1,0,3],
@@ -231,8 +233,8 @@ var NAVTREEINDEX20 =
 "soundboard.html":[4,2,0],
 "spdlog.html":[4,3,1],
 "stream-mp3-discord-bot.html":[4,2,2],
-"structdpp_1_1activity__assets.html":[8,0,0,3],
 "structdpp_1_1activity__assets.html":[7,0,0,5],
+"structdpp_1_1activity__assets.html":[8,0,0,3],
 "structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[7,0,0,5,4],
 "structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[8,0,0,3,4],
 "structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[7,0,0,5,3],
@@ -241,13 +243,11 @@ var NAVTREEINDEX20 =
 "structdpp_1_1activity__assets.html#a6baf7e3bc9fe1df2536c89f74201fe55":[8,0,0,3,1],
 "structdpp_1_1activity__assets.html#a72e8ce0c8aa2157b8eb003f7e6df08fd":[7,0,0,5,2],
 "structdpp_1_1activity__assets.html#a72e8ce0c8aa2157b8eb003f7e6df08fd":[8,0,0,3,2],
-"structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[7,0,0,5,0],
 "structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[8,0,0,3,0],
-"structdpp_1_1activity__button.html":[7,0,0,6],
+"structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f":[7,0,0,5,0],
 "structdpp_1_1activity__button.html":[8,0,0,4],
-"structdpp_1_1activity__button.html#a1c326370a806853a03a4d21a48aa8855":[7,0,0,6,0],
+"structdpp_1_1activity__button.html":[7,0,0,6],
 "structdpp_1_1activity__button.html#a1c326370a806853a03a4d21a48aa8855":[8,0,0,4,0],
-"structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d":[8,0,0,4,1],
-"structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d":[7,0,0,6,1],
-"structdpp_1_1activity__button.html#ace694224cbf3fedf76c3914b3ac88d0c":[8,0,0,4,2]
+"structdpp_1_1activity__button.html#a1c326370a806853a03a4d21a48aa8855":[7,0,0,6,0],
+"structdpp_1_1activity__button.html#a5bfdb500d81dfe5db8680cb623a4ba0d":[8,0,0,4,1]
 };
