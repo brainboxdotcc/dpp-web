@@ -109,7 +109,7 @@ var searchData=
   ['slashcommand_106',['slashcommand',['../classdpp_1_1slashcommand.html#a7f64e4998a23592427069eae91df25be',1,'dpp::slashcommand::slashcommand(const std::string &amp;_name, const std::string &amp;_description, const dpp::snowflake _application_id)'],['../classdpp_1_1slashcommand.html#add0654f80f31c52fbbf7d1541653a7b0',1,'dpp::slashcommand::slashcommand()']]],
   ['slashcommand_5fmention_107',['slashcommand_mention',['../namespacedpp_1_1utility.html#ab5e15dbccb96fdcd2ac075bf530290e1',1,'dpp::utility::slashcommand_mention(snowflake command_id, const std::string &amp;command_name, const std::string &amp;subcommand=&quot;&quot;)'],['../namespacedpp_1_1utility.html#ad9ab04ef6d30a614f608364cb5751e56',1,'dpp::utility::slashcommand_mention(snowflake command_id, const std::string &amp;command_name, const std::string &amp;subcommand_group, const std::string &amp;subcommand)']]],
   ['slashcommand_5ft_108',['slashcommand_t',['../structdpp_1_1slashcommand__t.html#a857969c6629ac70a4599b4b0de5f2e76',1,'dpp::slashcommand_t']]],
-  ['snowflake_109',['snowflake',['../classdpp_1_1snowflake.html#a0bf1ac1eea215b6bbe20540ed33ce41b',1,'dpp::snowflake::snowflake(const uint64_t &amp;value)'],['../classdpp_1_1snowflake.html#a3a102b7b7e73b28b368f325d8f6bba53',1,'dpp::snowflake::snowflake(const std::string &amp;string_value)'],['../classdpp_1_1snowflake.html#a804d31b172dc04831d8b701c37447290',1,'dpp::snowflake::snowflake()']]],
+  ['snowflake_109',['snowflake',['../classdpp_1_1snowflake.html#a3a102b7b7e73b28b368f325d8f6bba53',1,'dpp::snowflake::snowflake(const std::string &amp;string_value)'],['../classdpp_1_1snowflake.html#a0bf1ac1eea215b6bbe20540ed33ce41b',1,'dpp::snowflake::snowflake(const uint64_t &amp;value)'],['../classdpp_1_1snowflake.html#a804d31b172dc04831d8b701c37447290',1,'dpp::snowflake::snowflake()']]],
   ['snowflake_5fnot_5fnull_110',['snowflake_not_null',['../namespacedpp.html#aab9892169cd091ab8292c29ec27d43a4',1,'dpp']]],
   ['speak_111',['speak',['../classdpp_1_1discord__voice__client.html#ae5456ed35a1a964a607e2abc8bd59691',1,'dpp::discord_voice_client']]],
   ['ssl_5fclient_112',['ssl_client',['../classdpp_1_1ssl__client.html#a53c006d94ef782a5e138accb669871e1',1,'dpp::ssl_client']]],
@@ -136,5 +136,6 @@ var searchData=
   ['string_5fhas_5fprefix_133',['string_has_prefix',['../classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d',1,'dpp::commandhandler']]],
   ['string_5fnot_5fnull_134',['string_not_null',['../namespacedpp.html#adf57d9793b70d4b4da431491ab263298',1,'dpp']]],
   ['suppress_5fembeds_135',['suppress_embeds',['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message']]],
-  ['sync_136',['sync',['../namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330',1,'dpp']]]
+  ['suppress_5fnotifications_136',['suppress_notifications',['../structdpp_1_1message.html#ae65726dbbd34f0b70c7b63116d7a7c5c',1,'dpp::message']]],
+  ['sync_137',['sync',['../namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330',1,'dpp']]]
 ];

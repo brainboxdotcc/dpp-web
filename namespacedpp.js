@@ -760,7 +760,8 @@ var namespacedpp =
       [ "m_has_thread", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a61709e40d160eb84fbd38ea63c01d4c1", null ],
       [ "m_ephemeral", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf", null ],
       [ "m_loading", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a347b30bfa696feef3b8948a5ea20127e", null ],
-      [ "m_thread_mention_failed", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746", null ]
+      [ "m_thread_mention_failed", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746", null ],
+      [ "m_suppress_notifications", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ab7f84fff84d4ee39e23ae36371b5a757", null ]
     ] ],
     [ "message_type", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc", [
       [ "mt_default", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152", null ],

@@ -126,19 +126,19 @@ var NAVTREEINDEX =
 "functions_p.html",
 "namespacedpp.html#a2d0d3c73e35b541ba1d95eedd79a13f9",
 "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a2aef392b3338053d54a8e2bc0a3a465f",
-"namespacedpp.html#ae1540b4171f114c35864c752ef00f94faddc9e2ea6cfa8e6a5163742056a7ccdf",
-"structdpp_1_1activity__button.html",
-"structdpp_1_1automod__rule__execute__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026",
-"structdpp_1_1embed__field.html#aa0e68561b1cbfcd78cdc6dbf67c0ed60",
-"structdpp_1_1guild__emojis__update__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1guild__update__t.html",
-"structdpp_1_1log__t.html#ae1316a6ace98555175a4c1c70c9d0549",
-"structdpp_1_1message__delete__bulk__t.html#a5afbcd36109734ad0fca14ec848b73b7",
-"structdpp_1_1resumed__t.html#a6427ec22c7567f5b39db9777d114dac7",
-"structdpp_1_1stage__instance__delete__t.html#aafbbb340b715691333b305555e06fb54",
-"structdpp_1_1typing__start__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1voice__state__update__t.html#a5afbcd36109734ad0fca14ec848b73b7"
+"namespacedpp.html#ae1540b4171f114c35864c752ef00f94fab9837432650669ee78368c2ef5d45ffe",
+"structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f",
+"structdpp_1_1automod__rule__execute__t.html#a27bd80bc2e23695ca02a05f5daa74df9",
+"structdpp_1_1command__option.html#a7555f4a8cc883bdaa08053f4513262a9",
+"structdpp_1_1embed__field.html#a7c79073fef1c97bd8489975224ccfd04",
+"structdpp_1_1guild__emojis__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
+"structdpp_1_1guild__stickers__update__t.html#aefdc969a94cdbb6d91c7123bd820d8ff",
+"structdpp_1_1log__t.html#aca2880114f69b7ba62eb5137824c1432",
+"structdpp_1_1message__delete__bulk__t.html#a34eaf5cc7e14267633070399ece6c235",
+"structdpp_1_1resumed__t.html#a39a9ceb42b2608326c23e25412eb6967",
+"structdpp_1_1stage__instance__delete__t.html#a357873be4dd30eef7928ae5f7c13e7db",
+"structdpp_1_1typing__start__t.html#a1af4c9392721323617f909e2d74d85cb",
+"structdpp_1_1voice__state__update__t.html#a357873be4dd30eef7928ae5f7c13e7db"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

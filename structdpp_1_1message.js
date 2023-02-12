@@ -36,6 +36,7 @@ var structdpp_1_1message =
     [ "set_reference", "structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283", null ],
     [ "set_type", "structdpp_1_1message.html#ada2f9404e7dbb12b3de0a382c3733587", null ],
     [ "suppress_embeds", "structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040", null ],
+    [ "suppress_notifications", "structdpp_1_1message.html#ae65726dbbd34f0b70c7b63116d7a7c5c", null ],
     [ "allowed_mentions", "structdpp_1_1message.html#a389f295110a630b2e3f076013b617111", null ],
     [ "attachments", "structdpp_1_1message.html#aa59a613a4ee0bab7f9a5ea18fe7edea7", null ],
     [ "author", "structdpp_1_1message.html#a52a72433af88991ef84af21f0dfeba29", null ],
