@@ -790,6 +790,10 @@ var namespacedpp =
       [ "mt_auto_moderation_action", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca0ae71382837674b43d0e443da0eed509", null ],
       [ "mt_role_subscription_purchase", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca7d0619d8752ba2c87bd838fb2f9e4c5f", null ],
       [ "mt_interaction_premium_upsell", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca5498258270a5478dbd76a7607a3a263d", null ],
+      [ "mt_stage_start", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca6b15e76e3432267f6eae17d2048c07cc", null ],
+      [ "mt_stage_end", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcadb58ce86bf80b21531f74b83e6fe7afd", null ],
+      [ "mt_stage_speaker", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca50d33a9d260edf3a45963b7e13b6a589", null ],
+      [ "mt_stage_topic", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcacfd8dacbc3b7d79fdeb205b970639bb4", null ],
       [ "mt_application_premium_subscription", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaede2ca9c4344d39cbddfca73d7d60ee8", null ]
     ] ],
     [ "mfa_level_t", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4a", [

@@ -126,19 +126,19 @@ var NAVTREEINDEX =
 "functions_p.html",
 "namespacedpp.html#a2d0d3c73e35b541ba1d95eedd79a13f9",
 "namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a2aef392b3338053d54a8e2bc0a3a465f",
-"namespacedpp.html#ae1540b4171f114c35864c752ef00f94fab9837432650669ee78368c2ef5d45ffe",
-"structdpp_1_1activity__assets.html#a74d7474cb0649c8a12358f952704a46f",
-"structdpp_1_1automod__rule__execute__t.html#a27bd80bc2e23695ca02a05f5daa74df9",
-"structdpp_1_1command__option.html#a7555f4a8cc883bdaa08053f4513262a9",
-"structdpp_1_1embed__field.html#a7c79073fef1c97bd8489975224ccfd04",
-"structdpp_1_1guild__emojis__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
-"structdpp_1_1guild__stickers__update__t.html#aefdc969a94cdbb6d91c7123bd820d8ff",
-"structdpp_1_1log__t.html#aca2880114f69b7ba62eb5137824c1432",
-"structdpp_1_1message__delete__bulk__t.html#a34eaf5cc7e14267633070399ece6c235",
-"structdpp_1_1resumed__t.html#a39a9ceb42b2608326c23e25412eb6967",
-"structdpp_1_1stage__instance__delete__t.html#a357873be4dd30eef7928ae5f7c13e7db",
-"structdpp_1_1typing__start__t.html#a1af4c9392721323617f909e2d74d85cb",
-"structdpp_1_1voice__state__update__t.html#a357873be4dd30eef7928ae5f7c13e7db"
+"namespacedpp.html#adfc76d21d5b4cc6a0ca57ce20720547d",
+"structdpp_1_1activity__assets.html#a6baf7e3bc9fe1df2536c89f74201fe55",
+"structdpp_1_1automod__rule__execute__t.html#a1f953bb35d94f5749676a660dc06d363",
+"structdpp_1_1command__option.html#a63a65559288daaa416ff642b3bf08ef6",
+"structdpp_1_1embed__author.html#a9c9cf267007ccdbee70fec2fd9591123",
+"structdpp_1_1guild__delete__t.html#af8c8addd685e8c939cce01f8deaf1c6d",
+"structdpp_1_1guild__stickers__update__t.html#ab79bd932dcd8a9b8280276e2f228784f",
+"structdpp_1_1log__t.html#a357873be4dd30eef7928ae5f7c13e7db",
+"structdpp_1_1message__delete__bulk__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
+"structdpp_1_1resumed__t.html#a22df2fa7e547eaefbd65e501d8bf67b7",
+"structdpp_1_1stage__instance__delete__t.html",
+"structdpp_1_1typing__start__t.html",
+"structdpp_1_1voice__state__update__t.html#a00fa332a89cc7839515806e58b8731a3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

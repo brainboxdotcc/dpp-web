@@ -38,10 +38,14 @@ var searchData=
   ['mt_5frecipient_5fremove_35',['mt_recipient_remove',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca2e93d061d961d64a50310ac4e5444c3b',1,'dpp']]],
   ['mt_5freply_36',['mt_reply',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca13c1c1a4ead0ba6bfaca3c8e0fa53c7c',1,'dpp']]],
   ['mt_5frole_5fsubscription_5fpurchase_37',['mt_role_subscription_purchase',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca7d0619d8752ba2c87bd838fb2f9e4c5f',1,'dpp']]],
-  ['mt_5fthread_5fcreated_38',['mt_thread_created',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca08b27991fef9b0c79308f33f29cffc88',1,'dpp']]],
-  ['mt_5fthread_5fstarter_5fmessage_39',['mt_thread_starter_message',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f',1,'dpp']]],
-  ['mt_5fuser_5fpremium_5fguild_5fsubscription_40',['mt_user_premium_guild_subscription',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcabac2f050715993fd79a820d2e04c8572',1,'dpp']]],
-  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f1_41',['mt_user_premium_guild_subscription_tier_1',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcacf707cbe6c016d2661c0375bb021c554',1,'dpp']]],
-  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f2_42',['mt_user_premium_guild_subscription_tier_2',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca1efe7500d0c09339b36e12249bd94b25',1,'dpp']]],
-  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f3_43',['mt_user_premium_guild_subscription_tier_3',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787',1,'dpp']]]
+  ['mt_5fstage_5fend_38',['mt_stage_end',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcadb58ce86bf80b21531f74b83e6fe7afd',1,'dpp']]],
+  ['mt_5fstage_5fspeaker_39',['mt_stage_speaker',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca50d33a9d260edf3a45963b7e13b6a589',1,'dpp']]],
+  ['mt_5fstage_5fstart_40',['mt_stage_start',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca6b15e76e3432267f6eae17d2048c07cc',1,'dpp']]],
+  ['mt_5fstage_5ftopic_41',['mt_stage_topic',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcacfd8dacbc3b7d79fdeb205b970639bb4',1,'dpp']]],
+  ['mt_5fthread_5fcreated_42',['mt_thread_created',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca08b27991fef9b0c79308f33f29cffc88',1,'dpp']]],
+  ['mt_5fthread_5fstarter_5fmessage_43',['mt_thread_starter_message',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcaca707ebc93c56257189a2d10ae6f550f',1,'dpp']]],
+  ['mt_5fuser_5fpremium_5fguild_5fsubscription_44',['mt_user_premium_guild_subscription',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcabac2f050715993fd79a820d2e04c8572',1,'dpp']]],
+  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f1_45',['mt_user_premium_guild_subscription_tier_1',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcacf707cbe6c016d2661c0375bb021c554',1,'dpp']]],
+  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f2_46',['mt_user_premium_guild_subscription_tier_2',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca1efe7500d0c09339b36e12249bd94b25',1,'dpp']]],
+  ['mt_5fuser_5fpremium_5fguild_5fsubscription_5ftier_5f3_47',['mt_user_premium_guild_subscription_tier_3',['../namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bca01435a57a373ce70598dabdb6d330787',1,'dpp']]]
 ];
