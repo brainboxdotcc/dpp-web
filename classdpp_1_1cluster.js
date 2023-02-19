@@ -512,6 +512,8 @@ var classdpp_1_1cluster =
     [ "user_application_role_connection_update", "classdpp_1_1cluster.html#ac6426506b0175419913b157ad9f10f71", null ],
     [ "user_application_role_connection_update_sync", "classdpp_1_1cluster.html#a2ef2ef7842ed20dee035d2179e53ab3c", null ],
     [ "user_get", "classdpp_1_1cluster.html#a73483dbeb0f1946dc18b1d0a5331b0d0", null ],
+    [ "user_get_cached", "classdpp_1_1cluster.html#a00caec14273460343d60830dcb6bea9f", null ],
+    [ "user_get_cached_sync", "classdpp_1_1cluster.html#a7b7e09ffc12f96e5e30d55278912a7dc", null ],
     [ "user_get_sync", "classdpp_1_1cluster.html#a0cc14588d1827a4f770a28ab618f1f55", null ],
     [ "user_set_voice_state", "classdpp_1_1cluster.html#a66c65f30625391586fd4cf6614b6a1df", null ],
     [ "user_set_voice_state_sync", "classdpp_1_1cluster.html#a07f42b39eeb853d35569e0404fe965a1", null ],

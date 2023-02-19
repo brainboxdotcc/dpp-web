@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5":[7,0,0,295,8],
+"namespacedpp.html#adb1c0770936ed4ac64158cf9523e638b":[7,0,0,251],
+"namespacedpp.html#adc1d24fba1d0f9fbdbe054d31efe5283":[7,0,0,262],
+"namespacedpp.html#adf57d9793b70d4b4da431491ab263298":[7,0,0,405],
 "namespacedpp.html#adfc76d21d5b4cc6a0ca57ce20720547d":[7,0,0,379],
 "namespacedpp.html#adfefe335636cdf5dbbba145a3828c554":[7,0,0,256],
 "namespacedpp.html#ae1540b4171f114c35864c752ef00f94f":[7,0,0,312],
@@ -188,15 +192,15 @@ var NAVTREEINDEX20 =
 "namespacedpp_1_1utility.html#af247cf657d20138e2e364712176810f8":[7,0,0,3,8],
 "namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08":[7,0,0,3,6],
 "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32":[7,0,0,3,34],
-"namespacemembers.html":[7,1,0,0],
 "namespacemembers.html":[7,1,0],
+"namespacemembers.html":[7,1,0,0],
 "namespacemembers_b.html":[7,1,0,1],
 "namespacemembers_c.html":[7,1,0,2],
 "namespacemembers_d.html":[7,1,0,3],
 "namespacemembers_e.html":[7,1,0,4],
 "namespacemembers_enum.html":[7,1,4],
-"namespacemembers_eval.html":[7,1,5,0],
 "namespacemembers_eval.html":[7,1,5],
+"namespacemembers_eval.html":[7,1,5,0],
 "namespacemembers_eval_c.html":[7,1,5,1],
 "namespacemembers_eval_d.html":[7,1,5,2],
 "namespacemembers_eval_e.html":[7,1,5,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX20 =
 "stream-mp3-discord-bot.html":[4,2,2],
 "structdpp_1_1activity__assets.html":[8,0,0,3],
 "structdpp_1_1activity__assets.html":[7,0,0,5],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[8,0,0,3,4],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[7,0,0,5,4],
-"structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[8,0,0,3,3],
-"structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[7,0,0,5,3],
-"structdpp_1_1activity__assets.html#a6baf7e3bc9fe1df2536c89f74201fe55":[8,0,0,3,1]
+"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[7,0,0,5,4]
 };
