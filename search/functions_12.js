@@ -14,7 +14,7 @@ var searchData=
   ['user_5fget_5fcached_11',['user_get_cached',['../classdpp_1_1cluster.html#a00caec14273460343d60830dcb6bea9f',1,'dpp::cluster']]],
   ['user_5fget_5fcached_5fsync_12',['user_get_cached_sync',['../classdpp_1_1cluster.html#a7b7e09ffc12f96e5e30d55278912a7dc',1,'dpp::cluster']]],
   ['user_5fget_5fsync_13',['user_get_sync',['../classdpp_1_1cluster.html#a0cc14588d1827a4f770a28ab618f1f55',1,'dpp::cluster']]],
-  ['user_5fidentified_14',['user_identified',['../classdpp_1_1user__identified.html#ac66ddd9e773d41eaeb7fc2d6c5eac255',1,'dpp::user_identified']]],
+  ['user_5fidentified_14',['user_identified',['../classdpp_1_1user__identified.html#ac66ddd9e773d41eaeb7fc2d6c5eac255',1,'dpp::user_identified::user_identified()'],['../classdpp_1_1user__identified.html#a1ceaae69857a8459a1a170313e214252',1,'dpp::user_identified::user_identified(const user &amp;u)']]],
   ['user_5fmention_15',['user_mention',['../namespacedpp_1_1utility.html#a00f8e4bb0915722be20973c9cf356f38',1,'dpp::utility']]],
   ['user_5fset_5fvoice_5fstate_16',['user_set_voice_state',['../classdpp_1_1cluster.html#a66c65f30625391586fd4cf6614b6a1df',1,'dpp::cluster']]],
   ['user_5fset_5fvoice_5fstate_5fsync_17',['user_set_voice_state_sync',['../classdpp_1_1cluster.html#a07f42b39eeb853d35569e0404fe965a1',1,'dpp::cluster']]],
