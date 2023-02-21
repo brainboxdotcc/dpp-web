@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad":[7,0,0,295,15],
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6":[7,0,0,295,2],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ae7ee9228d42ffcd2f35564a1dee46d16":[7,0,0,295,11],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aec729b9fd2ca1ef89e1f39000094ae39":[7,0,0,295,23],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2aedad025b362501ebe380dd4af18b2ff5":[7,0,0,295,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "record-user.html":[4,2,3],
 "slashcommands.html":[4,1,0],
 "soundboard.html":[4,2,0],
-"spdlog.html":[4,3,1],
-"stream-mp3-discord-bot.html":[4,2,2],
-"structdpp_1_1activity__assets.html":[8,0,0,3]
+"spdlog.html":[4,3,1]
 };
