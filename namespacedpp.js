@@ -296,6 +296,7 @@ var namespacedpp =
     [ "http_headers", "namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2", null ],
     [ "integration_map", "namespacedpp.html#aa13e2c5898009fad42ebe12fd5641d8a", null ],
     [ "invite_map", "namespacedpp.html#aa85b043fd45cf24caa23ab6004a2415a", null ],
+    [ "json", "namespacedpp.html#ac9bbee1d54eee87b23834b8a92632f97", null ],
     [ "json_encode_t", "namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee", null ],
     [ "members_container", "namespacedpp.html#a674dfd30e37779538e80d95fcb13770f", null ],
     [ "message_collector_t", "namespacedpp.html#a51b63457959e1729f307f1e943ebf00d", null ],
