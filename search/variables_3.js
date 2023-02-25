@@ -36,5 +36,5 @@ var searchData=
   ['dm_5fpermission_33',['dm_permission',['../classdpp_1_1slashcommand.html#ad2a49299f059be2a8c48250470462325',1,'dpp::slashcommand']]],
   ['dpp_5fvc_34',['dpp_vc',['../namespacedpp.html#aefb3da6503cb501b9d2a0376663dbc6e',1,'dpp']]],
   ['duration_35',['duration',['../structdpp_1_1voice__out__packet.html#ac6d63ea4575aadec0fff0d966c2c3191',1,'dpp::voice_out_packet']]],
-  ['duration_5fseconds_36',['duration_seconds',['../structdpp_1_1automod__action.html#a7b1be65c07451ca71e2c1e9d579b2fbe',1,'dpp::automod_action']]]
+  ['duration_5fseconds_36',['duration_seconds',['../structdpp_1_1automod__action.html#a5bb873fd4283bdd83be46440b3105fea',1,'dpp::automod_action']]]
 ];
