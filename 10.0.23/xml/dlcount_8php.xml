@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dlcount_8php" kind="file" language="PHP">
+    <compoundname>dlcount.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dlcount_8php_1a9a1e67b1c8bdf638913df354fcb10413" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$githubApi</definition>
+        <argsstring></argsstring>
+        <name>$githubApi</name>
+        <initializer>= &quot;https://api.github.com/repos/brainboxdotcc/dpp/releases&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/dlcount.php" line="2" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dlcount_8php_1acedd13b51401130848ce18f4d5c52605" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$json</definition>
+        <argsstring></argsstring>
+        <name>$json</name>
+        <initializer>= json_decode(
+	file_get_contents(
+		$githubApi,
+		false,
+		stream_context_create(
+			[
+				&quot;http&quot; =&gt; [
+					&quot;method&quot; =&gt; &quot;GET&quot;,
+					&quot;header&quot; =&gt; &quot;User-Agent: DPP/Website&quot;
+				]	
+			]
+		)
+	)
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/dlcount.php" line="3" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dlcount_8php_1a83c15e7230e881b7964da6eaa18bd1e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$downloads</definition>
+        <argsstring></argsstring>
+        <name>$downloads</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/dlcount.php" line="17" column="1" bodyfile="docpages/dl.dpp.dev/dlcount.php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="docpages/dl.dpp.dev/dlcount.php"/>
+  </compounddef>
+</doxygen>
