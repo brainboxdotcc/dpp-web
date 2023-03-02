@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2ac90c9dde063b58dd2fd74db7cdf2bff2":[7,0,0,296,12],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2adc24520fc22044d022fe85d31ed1d557":[7,0,0,296,18],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2add4a9d5b29063cae17049c9d042e7cad":[7,0,0,296,15],
 "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2addfd91f61e4526b26ed57eca79068bd6":[7,0,0,296,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "oggopus.html":[4,2,1],
 "pages.html":[],
 "record-user.html":[4,2,3],
-"slashcommands.html":[4,1,0],
-"soundboard.html":[4,2,0]
+"slashcommands.html":[4,1,0]
 };

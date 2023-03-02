@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"soundboard.html":[4,2,0],
 "spdlog.html":[4,3,1],
 "stream-mp3-discord-bot.html":[4,2,2],
 "structdpp_1_1activity__assets.html":[8,0,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "structdpp_1_1automod__rule__delete__t.html#a357873be4dd30eef7928ae5f7c13e7db":[8,0,0,23,4],
 "structdpp_1_1automod__rule__delete__t.html#a48e11522c1eb92b6bbea1cc0fb68dddc":[7,0,0,25,3],
 "structdpp_1_1automod__rule__delete__t.html#a48e11522c1eb92b6bbea1cc0fb68dddc":[8,0,0,23,3],
-"structdpp_1_1automod__rule__delete__t.html#a5afbcd36109734ad0fca14ec848b73b7":[7,0,0,25,1],
-"structdpp_1_1automod__rule__delete__t.html#a5afbcd36109734ad0fca14ec848b73b7":[8,0,0,23,1]
+"structdpp_1_1automod__rule__delete__t.html#a5afbcd36109734ad0fca14ec848b73b7":[7,0,0,25,1]
 };

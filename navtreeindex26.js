@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structdpp_1_1guild__scheduled__event__user__remove__t.html#afb7df9e7e9d1b6ff1d13496dceac8d3f":[8,0,0,103,0],
 "structdpp_1_1guild__stickers__update__t.html":[8,0,0,104],
 "structdpp_1_1guild__stickers__update__t.html":[7,0,0,106],
 "structdpp_1_1guild__stickers__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[8,0,0,104,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structdpp_1_1invite__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[8,0,0,124,2],
 "structdpp_1_1json__interface.html":[7,0,0,127],
 "structdpp_1_1json__interface.html":[8,0,0,125],
-"structdpp_1_1json__interface.html#a287c22f692ee3d25b6f9b320ff35baa1":[7,0,0,127,1],
-"structdpp_1_1json__interface.html#a287c22f692ee3d25b6f9b320ff35baa1":[8,0,0,125,1]
+"structdpp_1_1json__interface.html#a287c22f692ee3d25b6f9b320ff35baa1":[7,0,0,127,1]
 };

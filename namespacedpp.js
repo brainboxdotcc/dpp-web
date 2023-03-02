@@ -875,7 +875,8 @@ var namespacedpp =
       [ "ps_offline", "namespacedpp.html#a172aa830689e55f4bba337de1592db96a8d6db63cf4c29add56dbc76d58ea1677", null ],
       [ "ps_online", "namespacedpp.html#a172aa830689e55f4bba337de1592db96ae068013241cf08d0f4dbdd161e89aa2e", null ],
       [ "ps_dnd", "namespacedpp.html#a172aa830689e55f4bba337de1592db96a611b4149b435ab53bcba953a7818a760", null ],
-      [ "ps_idle", "namespacedpp.html#a172aa830689e55f4bba337de1592db96ac85606cb4be43da0a426d80f6ad2c90f", null ]
+      [ "ps_idle", "namespacedpp.html#a172aa830689e55f4bba337de1592db96ac85606cb4be43da0a426d80f6ad2c90f", null ],
+      [ "ps_invisible", "namespacedpp.html#a172aa830689e55f4bba337de1592db96a623817baffee92df76b071dca8f49db2", null ]
     ] ],
     [ "region", "namespacedpp.html#a51891a9e382f9c396d378de00fa65099", [
       [ "r_brazil", "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313", null ],
