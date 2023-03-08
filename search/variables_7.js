@@ -1,10 +1,22 @@
 var searchData=
 [
-  ['handle_0',['handle',['../structdpp_1_1timer__t.html#a4f1f9ed3d687cad53d683d017f0f21a6',1,'dpp::timer_t']]],
-  ['headers_1',['headers',['../structdpp_1_1http__request__completion__t.html#aca6bb7b51b265b5303d1ff9ad940b130',1,'dpp::http_request_completion_t']]],
-  ['heartbeat_5finterval_2',['heartbeat_interval',['../classdpp_1_1discord__client.html#a62f72c7433043cbb61fe1917efabd2f7',1,'dpp::discord_client::heartbeat_interval()'],['../classdpp_1_1discord__voice__client.html#a20ea071ce2429f0eaad5fff783fc7281',1,'dpp::discord_voice_client::heartbeat_interval()']]],
-  ['height_3',['height',['../structdpp_1_1embed__image.html#a3b7a8bc11894f4ce4fed111219cd9d93',1,'dpp::embed_image::height()'],['../structdpp_1_1attachment.html#a448f0ad9591bb19788cd595ace201ce3',1,'dpp::attachment::height()']]],
-  ['hostname_4',['hostname',['../structdpp_1_1http__connect__info.html#a42d6c8a9a3402f4c454572bf5915d8d3',1,'dpp::http_connect_info::hostname()'],['../classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8',1,'dpp::ssl_client::hostname()']]],
-  ['hours_5',['hours',['../structdpp_1_1utility_1_1uptime.html#a55841b3a9e3a53240184645d3af39eb4',1,'dpp::utility::uptime']]],
-  ['http_5finfo_6',['http_info',['../structdpp_1_1confirmation__callback__t.html#a97669d491cc60a5e76a248bae9ad7633',1,'dpp::confirmation_callback_t']]]
+  ['half_5fwhite_0',['half_white',['../namespacedpp_1_1colors.html#a588048bbee34f3bc1082a5b4662bc623',1,'dpp::colors']]],
+  ['halloween_5forange_1',['halloween_orange',['../namespacedpp_1_1colors.html#a2209ed28b602634fe57c459bdfcab215',1,'dpp::colors']]],
+  ['handle_2',['handle',['../structdpp_1_1timer__t.html#a4f1f9ed3d687cad53d683d017f0f21a6',1,'dpp::timer_t']]],
+  ['harvest_5fgold_3',['harvest_gold',['../namespacedpp_1_1colors.html#a57cd0278ac3b3905a4184b1d1e1a799c',1,'dpp::colors']]],
+  ['hazel_4',['hazel',['../namespacedpp_1_1colors.html#ab4c09ec924b8709b511b3c417e759d4a',1,'dpp::colors']]],
+  ['hazel_5fgreen_5',['hazel_green',['../namespacedpp_1_1colors.html#a3cd80ea0502bfcbebd268ba2aca1cf23',1,'dpp::colors']]],
+  ['headers_6',['headers',['../structdpp_1_1http__request__completion__t.html#aca6bb7b51b265b5303d1ff9ad940b130',1,'dpp::http_request_completion_t']]],
+  ['heartbeat_5finterval_7',['heartbeat_interval',['../classdpp_1_1discord__voice__client.html#a20ea071ce2429f0eaad5fff783fc7281',1,'dpp::discord_voice_client::heartbeat_interval()'],['../classdpp_1_1discord__client.html#a62f72c7433043cbb61fe1917efabd2f7',1,'dpp::discord_client::heartbeat_interval()']]],
+  ['heavenly_5fblue_8',['heavenly_blue',['../namespacedpp_1_1colors.html#a7721857a3262c8af69680633f26e24ca',1,'dpp::colors']]],
+  ['height_9',['height',['../structdpp_1_1attachment.html#a448f0ad9591bb19788cd595ace201ce3',1,'dpp::attachment::height()'],['../structdpp_1_1embed__image.html#a3b7a8bc11894f4ce4fed111219cd9d93',1,'dpp::embed_image::height()']]],
+  ['heliotrope_5fpurple_10',['heliotrope_purple',['../namespacedpp_1_1colors.html#aa002ffd528d9ca80449ae298622cac4e',1,'dpp::colors']]],
+  ['honeydew_11',['honeydew',['../namespacedpp_1_1colors.html#a490cbd791d4a1b18e976885e33657253',1,'dpp::colors']]],
+  ['hostname_12',['hostname',['../classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8',1,'dpp::ssl_client::hostname()'],['../structdpp_1_1http__connect__info.html#a42d6c8a9a3402f4c454572bf5915d8d3',1,'dpp::http_connect_info::hostname()']]],
+  ['hot_5fdeep_5fpink_13',['hot_deep_pink',['../namespacedpp_1_1colors.html#a0317c2fdd3dec9e5d8c20f68f1f93b58',1,'dpp::colors']]],
+  ['hot_5fpink_14',['hot_pink',['../namespacedpp_1_1colors.html#a2e26f46ba673e00f9afb2b72c56b1dc2',1,'dpp::colors']]],
+  ['hours_15',['hours',['../structdpp_1_1utility_1_1uptime.html#a55841b3a9e3a53240184645d3af39eb4',1,'dpp::utility::uptime']]],
+  ['http_5finfo_16',['http_info',['../structdpp_1_1confirmation__callback__t.html#a97669d491cc60a5e76a248bae9ad7633',1,'dpp::confirmation_callback_t']]],
+  ['hummingbird_5fgreen_17',['hummingbird_green',['../namespacedpp_1_1colors.html#a6987468c0cbc12a6df83f76c603ea7ec',1,'dpp::colors']]],
+  ['hunter_5fgreen_18',['hunter_green',['../namespacedpp_1_1colors.html#a759eb5930125c0e38e33064bd6c1192b',1,'dpp::colors']]]
 ];

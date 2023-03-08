@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yellow_0',['yellow',['../namespacedpp_1_1colors.html#a0f96fc07b49cd37775c75b4289f9e796',1,'dpp::colors']]]
+  ['zombie_5fgreen_0',['zombie_green',['../namespacedpp_1_1colors.html#a9786cfa44906aa349ed3c66fceece1c5',1,'dpp::colors']]]
 ];
