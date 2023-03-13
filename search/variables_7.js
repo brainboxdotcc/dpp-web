@@ -6,7 +6,7 @@ var searchData=
   ['harvest_5fgold_3',['harvest_gold',['../namespacedpp_1_1colors.html#a57cd0278ac3b3905a4184b1d1e1a799c',1,'dpp::colors']]],
   ['hazel_4',['hazel',['../namespacedpp_1_1colors.html#ab4c09ec924b8709b511b3c417e759d4a',1,'dpp::colors']]],
   ['hazel_5fgreen_5',['hazel_green',['../namespacedpp_1_1colors.html#a3cd80ea0502bfcbebd268ba2aca1cf23',1,'dpp::colors']]],
-  ['headers_6',['headers',['../structdpp_1_1http__request__completion__t.html#aca6bb7b51b265b5303d1ff9ad940b130',1,'dpp::http_request_completion_t']]],
+  ['headers_6',['headers',['../structdpp_1_1http__request__completion__t.html#a0336558684d62229a7ea5d1a9aae6251',1,'dpp::http_request_completion_t']]],
   ['heartbeat_5finterval_7',['heartbeat_interval',['../classdpp_1_1discord__voice__client.html#a20ea071ce2429f0eaad5fff783fc7281',1,'dpp::discord_voice_client::heartbeat_interval()'],['../classdpp_1_1discord__client.html#a62f72c7433043cbb61fe1917efabd2f7',1,'dpp::discord_client::heartbeat_interval()']]],
   ['heavenly_5fblue_8',['heavenly_blue',['../namespacedpp_1_1colors.html#a7721857a3262c8af69680633f26e24ca',1,'dpp::colors']]],
   ['height_9',['height',['../structdpp_1_1attachment.html#a448f0ad9591bb19788cd595ace201ce3',1,'dpp::attachment::height()'],['../structdpp_1_1embed__image.html#a3b7a8bc11894f4ce4fed111219cd9d93',1,'dpp::embed_image::height()']]],

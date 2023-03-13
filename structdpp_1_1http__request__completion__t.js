@@ -2,7 +2,7 @@ var structdpp_1_1http__request__completion__t =
 [
     [ "body", "structdpp_1_1http__request__completion__t.html#ac14ffa7060df12797e238f2619153ef9", null ],
     [ "error", "structdpp_1_1http__request__completion__t.html#a6e8e54c80c5b439ddfd0ddb6f9e4039b", null ],
-    [ "headers", "structdpp_1_1http__request__completion__t.html#aca6bb7b51b265b5303d1ff9ad940b130", null ],
+    [ "headers", "structdpp_1_1http__request__completion__t.html#a0336558684d62229a7ea5d1a9aae6251", null ],
     [ "latency", "structdpp_1_1http__request__completion__t.html#aa39b263a9671e1b106429c6e440faaad", null ],
     [ "ratelimit_bucket", "structdpp_1_1http__request__completion__t.html#abc9d39c408cb5a3f43960854084d9165", null ],
     [ "ratelimit_global", "structdpp_1_1http__request__completion__t.html#a56ffdd4e2660564d3360e28d34bccc64", null ],

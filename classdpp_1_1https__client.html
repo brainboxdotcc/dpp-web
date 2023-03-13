@@ -150,9 +150,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58d8ae5c9949d7b066dbbc6fb2c13a77"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#a58d8ae5c9949d7b066dbbc6fb2c13a77">get_header</a> (std::string header_name) const</td></tr>
 <tr class="memdesc:a58d8ae5c9949d7b066dbbc6fb2c13a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a HTTP response header.  <a href="classdpp_1_1https__client.html#a58d8ae5c9949d7b066dbbc6fb2c13a77">More...</a><br /></td></tr>
 <tr class="separator:a58d8ae5c9949d7b066dbbc6fb2c13a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a0beebe74e26071a726aa8a9e347cd"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#ae9a0beebe74e26071a726aa8a9e347cd">get_headers</a> () const</td></tr>
-<tr class="memdesc:ae9a0beebe74e26071a726aa8a9e347cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all HTTP response headers.  <a href="classdpp_1_1https__client.html#ae9a0beebe74e26071a726aa8a9e347cd">More...</a><br /></td></tr>
-<tr class="separator:ae9a0beebe74e26071a726aa8a9e347cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c19fdc08d1d8cedcdd357af3f23e790"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#a0c19fdc08d1d8cedcdd357af3f23e790">get_header_count</a> (std::string header_name) const</td></tr>
+<tr class="memdesc:a0c19fdc08d1d8cedcdd357af3f23e790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of headers with the same header name.  <a href="classdpp_1_1https__client.html#a0c19fdc08d1d8cedcdd357af3f23e790">More...</a><br /></td></tr>
+<tr class="separator:a0c19fdc08d1d8cedcdd357af3f23e790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b018960ad5f7687b48ee3a6bc99bb8"><td class="memItemLeft" align="right" valign="top">const std::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#ad9b018960ad5f7687b48ee3a6bc99bb8">get_header_list</a> (std::string header_name) const</td></tr>
+<tr class="memdesc:ad9b018960ad5f7687b48ee3a6bc99bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a set of HTTP response headers with a common name.  <a href="classdpp_1_1https__client.html#ad9b018960ad5f7687b48ee3a6bc99bb8">More...</a><br /></td></tr>
+<tr class="separator:ad9b018960ad5f7687b48ee3a6bc99bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecf3bc12787b4115de00a4977d86c90"><td class="memItemLeft" align="right" valign="top">const std::multimap&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#acecf3bc12787b4115de00a4977d86c90">get_headers</a> () const</td></tr>
+<tr class="memdesc:acecf3bc12787b4115de00a4977d86c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all HTTP response headers.  <a href="classdpp_1_1https__client.html#acecf3bc12787b4115de00a4977d86c90">More...</a><br /></td></tr>
+<tr class="separator:acecf3bc12787b4115de00a4977d86c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affac629e0843afcdc9a77351a550d6be"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#affac629e0843afcdc9a77351a550d6be">get_content</a> () const</td></tr>
 <tr class="memdesc:affac629e0843afcdc9a77351a550d6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the response content.  <a href="classdpp_1_1https__client.html#affac629e0843afcdc9a77351a550d6be">More...</a><br /></td></tr>
 <tr class="separator:affac629e0843afcdc9a77351a550d6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -607,18 +613,75 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Header content or empty string if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Header content or empty string if not found. If multiple values have the same header_name, this will return one of them. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1https__client.html#a0c19fdc08d1d8cedcdd357af3f23e790" title="Get the number of headers with the same header name.">get_header_count</a> to determine if multiple are present </dd>
+<dd>
+<a class="el" href="classdpp_1_1https__client.html#ad9b018960ad5f7687b48ee3a6bc99bb8" title="Get a set of HTTP response headers with a common name.">get_header_list</a> to retrieve all entries of the same header_name </dd></dl>
 
 </div>
 </div>
-<a id="ae9a0beebe74e26071a726aa8a9e347cd" name="ae9a0beebe74e26071a726aa8a9e347cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9a0beebe74e26071a726aa8a9e347cd">&#9670;&nbsp;</a></span>get_headers()</h2>
+<a id="a0c19fdc08d1d8cedcdd357af3f23e790" name="a0c19fdc08d1d8cedcdd357af3f23e790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c19fdc08d1d8cedcdd357af3f23e790">&#9670;&nbsp;</a></span>get_header_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::map&lt; std::string, std::string &gt; dpp::https_client::get_headers </td>
+          <td class="memname">size_t dpp::https_client::get_header_count </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>header_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of headers with the same header name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">header_name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of headers with this count </dd></dl>
+
+</div>
+</div>
+<a id="ad9b018960ad5f7687b48ee3a6bc99bb8" name="ad9b018960ad5f7687b48ee3a6bc99bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b018960ad5f7687b48ee3a6bc99bb8">&#9670;&nbsp;</a></span>get_header_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::list&lt; std::string &gt; dpp::https_client::get_header_list </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>header_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a set of HTTP response headers with a common name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">header_name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A list of headers with the same name, or an empty list if not found </dd></dl>
+
+</div>
+</div>
+<a id="acecf3bc12787b4115de00a4977d86c90" name="acecf3bc12787b4115de00a4977d86c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecf3bc12787b4115de00a4977d86c90">&#9670;&nbsp;</a></span>get_headers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::multimap&lt; std::string, std::string &gt; dpp::https_client::get_headers </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
