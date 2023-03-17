@@ -653,7 +653,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a636b55f518a2e724eabf31453aa89abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get members of a thread.  <a href="classdpp_1_1cluster.html#a636b55f518a2e724eabf31453aa89abe">More...</a><br /></td></tr>
 <tr class="separator:a636b55f518a2e724eabf31453aa89abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa49b6113343575dbc9dd2e40112847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847">threads_get_active</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
-<tr class="memdesc:aefa49b6113343575dbc9dd2e40112847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get active threads in a guild (Sorted by ID in descending order)  <a href="classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847">More...</a><br /></td></tr>
+<tr class="memdesc:aefa49b6113343575dbc9dd2e40112847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all active threads in the guild, including public and private threads. Threads are ordered by their id, in descending order.  <a href="classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847">More...</a><br /></td></tr>
 <tr class="separator:aefa49b6113343575dbc9dd2e40112847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b93e8be30c7e954c27e19d8b7fa8170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2b93e8be30c7e954c27e19d8b7fa8170">threads_get_public_archived</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, time_t before_timestamp, uint16_t limit, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a2b93e8be30c7e954c27e19d8b7fa8170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get public archived threads in a channel (Sorted by archive_timestamp in descending order)  <a href="classdpp_1_1cluster.html#a2b93e8be30c7e954c27e19d8b7fa8170">More...</a><br /></td></tr>
@@ -10582,7 +10582,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get active threads in a channel (Sorted by ID in descending order) </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847" title="Get active threads in a guild (Sorted by ID in descending order)">dpp::cluster::threads_get_active</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847" title="Get all active threads in the guild, including public and private threads. Threads are ordered by the...">dpp::cluster::threads_get_active</a> </dd>
 <dd>
 <a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -11457,7 +11457,7 @@ unless you want something special from <code><a class="el" href="classdpp_1_1use
 </div><div class="memdoc">
 
 <p>Join a thread. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#join-thread">https://discord.com/developers/docs/resources/channel#join-thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to join </td></tr>
@@ -11607,7 +11607,7 @@ unless you want something special from <code><a class="el" href="classdpp_1_1use
 </div><div class="memdoc">
 
 <p>Leave a thread. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#leave-thread">https://discord.com/developers/docs/resources/channel#leave-thread</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to leave </td></tr>
@@ -23634,7 +23634,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Create a thread. </p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#create-guild-channel">https://discord.com/developers/docs/resources/guild#create-guild-channel</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#start-thread-without-message">https://discord.com/developers/docs/resources/channel#start-thread-without-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
@@ -23930,7 +23930,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 <p>Create a thread with a message (Discord: ID of a thread is same as message ID) </p>
 <dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#start-thread-from-message">https://discord.com/developers/docs/resources/channel#start-thread-from-message</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_name</td><td>Name of the thread </td></tr>
@@ -24048,7 +24048,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Add a member to a thread. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#add-thread-member">https://discord.com/developers/docs/resources/channel#add-thread-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to add to </td></tr>
@@ -24141,7 +24141,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get a thread member. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#get-thread-member">https://discord.com/developers/docs/resources/channel#get-thread-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread to get member for </td></tr>
@@ -24234,7 +24234,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Remove a member from a thread. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#remove-thread-member">https://discord.com/developers/docs/resources/channel#remove-thread-member</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread ID to remove from </td></tr>
@@ -24321,11 +24321,11 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get members of a thread. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#list-thread-members">https://discord.com/developers/docs/resources/channel#list-thread-members</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_id</td><td>Thread to get members for </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes On success the callback will contain a <a class="el" href="namespacedpp.html#a57e84724c41fed341bee0d653a06076a" title="A group of thread member objects.">dpp::thread_member_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes On success the callback will contain a <a class="el" href="namespacedpp.html#a57e84724c41fed341bee0d653a06076a" title="A group of thread member objects. the key is the thread_id of the dpp::thread_member.">dpp::thread_member_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -24395,12 +24395,12 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
       </table>
 </div><div class="memdoc">
 
-<p>Get active threads in a guild (Sorted by ID in descending order) </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<p>Get all active threads in the guild, including public and private threads. Threads are ordered by their id, in descending order. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#list-active-guild-threads">https://discord.com/developers/docs/resources/guild#list-active-guild-threads</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guild_id</td><td>Guild to get active threads for </td></tr>
-    <tr><td class="paramname">callback</td><td>Function to call when the API call completes On success the callback will contain a <a class="el" href="namespacedpp.html#afb8eae726b5ea68baff8c48d7fb835af" title="A group of threads.">dpp::thread_map</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes On success the callback will contain a <a class="el" href="structdpp_1_1active__threads.html" title="A group of threads and thread_members. returned from the cluster::threads_get_active method.">dpp::active_threads</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -24424,7 +24424,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get active threads in a guild (Sorted by ID in descending order) </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847" title="Get active threads in a guild (Sorted by ID in descending order)">dpp::cluster::threads_get_active</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847" title="Get all active threads in the guild, including public and private threads. Threads are ordered by the...">dpp::cluster::threads_get_active</a> </dd>
 <dd>
 <a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -24483,7 +24483,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get private archived threads in a channel which current user has joined (Sorted by ID in descending order) </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#list-joined-private-archived-threads">https://discord.com/developers/docs/resources/channel#list-joined-private-archived-threads</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
@@ -24590,7 +24590,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get private archived threads in a channel (Sorted by archive_timestamp in descending order) </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#list-private-archived-threads">https://discord.com/developers/docs/resources/channel#list-private-archived-threads</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>
@@ -24697,7 +24697,7 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 </div><div class="memdoc">
 
 <p>Get public archived threads in a channel (Sorted by archive_timestamp in descending order) </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/threads">https://discord.com/developers/docs/topics/threads</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/channel#list-public-archived-threads">https://discord.com/developers/docs/resources/channel#list-public-archived-threads</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel_id</td><td>Channel to get public archived threads for </td></tr>

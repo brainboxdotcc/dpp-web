@@ -69,6 +69,7 @@ var annotated_dup =
         [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
         [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ]
       ] ],
+      [ "active_threads", "structdpp_1_1active__threads.html", "structdpp_1_1active__threads" ],
       [ "activity", "classdpp_1_1activity.html", "classdpp_1_1activity" ],
       [ "activity_assets", "structdpp_1_1activity__assets.html", "structdpp_1_1activity__assets" ],
       [ "activity_button", "structdpp_1_1activity__button.html", "structdpp_1_1activity__button" ],

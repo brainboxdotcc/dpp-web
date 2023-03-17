@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "dpp::active_threads", "structdpp_1_1active__threads.html", null ],
     [ "dpp::activity", "classdpp_1_1activity.html", null ],
     [ "dpp::activity_assets", "structdpp_1_1activity__assets.html", null ],
     [ "dpp::activity_button", "structdpp_1_1activity__button.html", null ],
