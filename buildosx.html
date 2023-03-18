@@ -101,30 +101,30 @@ $(document).ready(function(){initNavTree('buildosx.html',''); initResizable(); }
   <div class="headertitle"><div class="title">Building on OSX </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md67"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md68"></a>
 1. Toolchain</h2>
 <p >Before compiling make sure you have all the tools installed.</p>
 <ol type="1">
 <li>To install the dependencies, this guide will use homebrew which has <a href="https://brew.sh/">installation instructions on their project page</a>.</li>
 <li>This project uses CMake to generate the makefiles. Install it with <code>brew install cmake</code>.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md69"></a>
 2. Install External Dependencies</h2>
 <pre class="fragment">brew install openssl
 </pre><p> For voice support, additional dependencies are required: </p><pre class="fragment">brew install libsodium opus
-</pre> <h2><a class="anchor" id="autotoc_md69"></a>
+</pre> <h2><a class="anchor" id="autotoc_md70"></a>
 3. Build Source Code</h2>
 <pre class="fragment">cmake -B ./build
 cmake --build ./build -j8
 </pre><p> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
-<h2><a class="anchor" id="autotoc_md70"></a>
+<h2><a class="anchor" id="autotoc_md71"></a>
 4. Install globally</h2>
 <pre class="fragment">cd build; sudo make install
-</pre> <h2><a class="anchor" id="autotoc_md71"></a>
+</pre> <h2><a class="anchor" id="autotoc_md72"></a>
 5. Installation to a different directory</h2>
 <p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </pre><p> Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
-<h2><a class="anchor" id="autotoc_md72"></a>
+<h2><a class="anchor" id="autotoc_md73"></a>
 6. Using the library</h2>
 <p >Once installed, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
 </pre><p> The important flags in this command-line are:</p>
