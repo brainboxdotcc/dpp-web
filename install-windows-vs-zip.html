@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Installing D++ - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Installing from zip (Windows) for Visual Studio - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Installing D++ - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Installing from zip (Windows) for Visual Studio - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Installing D++ - D++ - The lightweight C++ Discord API Library">
-<title>Installing D++ - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Installing from zip (Windows) for Visual Studio - D++ - The lightweight C++ Discord API Library">
+<title>Installing from zip (Windows) for Visual Studio - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_docpages_01_installing.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,25 +98,85 @@ $(document).ready(function(){initNavTree('md_docpages_01_installing.html',''); i
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Installing D++ </div></div>
+  <div class="headertitle"><div class="title">Installing from zip (Windows) for Visual Studio </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >There are many ways to install D++, either from a package manager, or from source. Please choose your desired option from the list below:</p>
+<div class="textblock"><p >To add D++ to a Visual Studio project, using <b>Visual Studio 2019</b> or <b>Visual Studio 2022</b>, follow the steps below. The steps below assume an empty project, if you are adding to an existing project simply skip steps 1 through 4, and step 13.</p>
+<dl class="section note"><dt>Note</dt><dd>It is possible to skip this entire tutorial, and obtain a <a href="https://github.com/brainboxdotcc/windows-bot-template/">pre-made visual studio template containing the latest D++ build (for 32 and 64 bit, release and debug profiles) by clicking here</a>.</dd></dl>
+<ol type="1">
+<li>Make sure you have Visual Studio 2019 or 2022. Community, Professional or Enterprise work fine. These instructions are not for Visual Studio Code. You can <a href="https://visualstudio.microsoft.com/downloads/">download the correct version here</a>. Note that older versions of Visual Studio will not work as they do not support enough of the C++17 standard.</li>
+<li>Start visual studio and choose to create a new project <div class="image">
+<img src="zip_vsproj_1.png" alt=""/>
+</div>
+</li>
+<li>Choose the project type "Console Project" and click next <div class="image">
+<img src="zip_vsproj_2.png" alt=""/>
+</div>
+</li>
+<li>Name your bot project. In this example i just chose the name 'MyBot'. You can have any name you like here. <div class="image">
+<img src="zip_vsproj_3.png" alt=""/>
+</div>
+</li>
+<li>Open the zip file you downloaded which contains the D++ dlls, include files and lib file. Drag and drop this to your local machine and make note of where you placed it. This location will be important in later steps. <div class="image">
+<img src="zip_vsproj_4.png" alt=""/>
+</div>
+</li>
+<li>Back inside visual studio, right click on the project (not solution!) in the tree in your visual studio window. choose 'Properties'. <div class="image">
+<img src="zip_vsproj_5.png" alt=""/>
+</div>
+</li>
+<li>The next step is to populate the include directories and library directories sections with the paths to the D++ library and include files. The next steps will guide you through how to do this. <div class="image">
+<img src="zip_vsproj_6.png" alt=""/>
+</div>
+</li>
+<li>Click 'edit' when prompted to edit the include paths section. Add the path to the include folder you extracted to your machine, which we took note of earlier. Note that it is important to add the dpp-10.0 folder, not any other folder, to this list: <div class="image">
+<img src="zip_vsproj_7.png" alt=""/>
+</div>
+</li>
+<li>Going back to the previous window, now edit the library paths. Again click 'edit' when prompted to edit the library paths section. Add the path to the library folder you extracted to your machine, which we took note of earlier. Note that once more it is important to add the dpp-9.0 folder within it, not any other folder, to this list. Also be aware this is a <b>different folder</b> than the one you just added for includes! <div class="image">
+<img src="zip_vsproj_8.png" alt=""/>
+</div>
+</li>
+<li>Double check at this point that all the directories are filled in correctly. They should look generally like the ones in the screenshot below: <div class="image">
+<img src="zip_vsproj_9.png" alt=""/>
+</div>
+</li>
+<li>Go to the general section in the same window now, and look for the drop down list laballed "C++ Language Standard". Make sure the selected option is <b>C++17 Standard (/std:c++17)</b> <div class="image">
+<img src="zip_vsproj_10.png" alt=""/>
+</div>
+</li>
+<li>Again within the same window, go to the input section, under the linker category, and add '<b>dpp.lib;</b>' to the start of the libraries to include, as shown below: <div class="image">
+<img src="zip_vsproj_11.png" alt=""/>
+</div>
+</li>
+<li>Now you can paste some code into the editor, completely replacing the 'hello world' application that visual studio made for you. The example code here is the basic bot from the first example on this site. You should at this point also double check that the architecture you have selected (in this case x86) matches the version of the dll/lib files you downloaded from the website. This is <b>important</b> as if you mismatch them the compilation will just fail. <div class="image">
+<img src="zip_vsproj_12.png" alt=""/>
+</div>
+</li>
+<li>Go to the build menu and choose Build Solution (A handy shortcut for this is to just press <b>F7</b>): <div class="image">
+<img src="zip_vsproj_13.png" alt=""/>
+</div>
+</li>
+<li>Observe the build output. There may be warnings, but so long as the build output ends with "1 succeeded" then the process has worked. You may now run your bot! <div class="image">
+<img src="zip_vsproj_14.png" alt=""/>
+</div>
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md107"></a>
+Troubleshooting</h2>
 <ul>
-<li><a class="el" href="install-linux-deb.html">Installing from a .deb file (Debian, Ubuntu, Derivatives)</a></li>
-<li><a class="el" href="install-linux-rpm.html">Installing from a .rpm file (RedHat, CentOS and derivatives)</a></li>
-<li><a class="el" href="install-vcpkg.html">Installing from VCPKG (Windows, Linux, OSX)</a></li>
-<li><a class="el" href="install-arch-aur.html">Installing from AUR (Arch Linux)</a></li>
-<li><a class="el" href="install-windows-vs-zip.html">Installing from zip (Windows) for Visual Studio</a></li>
-<li><a class="el" href="install-windows-clion-vcpkg.html">Installing from vcpkg for CLion</a></li>
-<li><a class="el" href="install-xmake.html">Installing from xmake</a></li>
-<li><a class="el" href="install-from-source.html">Building D++ From Source</a> </li>
+<li>If you get an error that a dll is missing (e.g. <code>dpp.dll</code> or <code>opus.dll</code>) when starting your bot, then simply copy all dlls from the <b>bin</b> directory of where you extracted the DPP zip file to, into the same directory where your bot's executable is. You only need to do this once. There should be several of these dll files: <code>dpp.dll</code>, <code>zlib.dll</code>, <code>openssl.dll</code> and <code>libcrypto.dll</code> (or similarly named SSL related files), <code>libsodium.dll</code> and <code>opus.dll</code>.</li>
+<li>Please note that if you change the architecture (step 13) you must reconfigure all of steps 7 through 12 again as these configurations are specific to each architecture. This is to allow for different sets of precompiled libs, e.g. for <code>x86</code>, <code>x64</code>, etc.</li>
+<li>You should run your bot from a command prompt. If you do not, and it exits, you will not be able to see any output as the window will immediately close.</li>
+<li>If you need to update the <code>opus.dll</code> or <code>zlib.dll</code> (or any other prebuilt dll) these can be obtained by requesting them to be installed via <code>vcpkg</code> then copying the dlls, libraries and headers from the vcpkg <code>install</code> folder.</li>
+<li>Stuck? You can find us on the <a href="https://discord.gg/dpp">official discord server</a> - ask away! We don't bite! </li>
 </ul>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
+		<li class="navelem"><a class="el" href="md_docpages_01_installing.html">Installing D++</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

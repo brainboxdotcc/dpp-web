@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Installing D++ - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Installing from vcpkg for CLion - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Installing D++ - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Installing from vcpkg for CLion - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Installing D++ - D++ - The lightweight C++ Discord API Library">
-<title>Installing D++ - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Installing from vcpkg for CLion - D++ - The lightweight C++ Discord API Library">
+<title>Installing from vcpkg for CLion - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_docpages_01_installing.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('install-windows-clion-vcpkg.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,25 +98,35 @@ $(document).ready(function(){initNavTree('md_docpages_01_installing.html',''); i
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Installing D++ </div></div>
+  <div class="headertitle"><div class="title">Installing from vcpkg for CLion </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >There are many ways to install D++, either from a package manager, or from source. Please choose your desired option from the list below:</p>
-<ul>
-<li><a class="el" href="install-linux-deb.html">Installing from a .deb file (Debian, Ubuntu, Derivatives)</a></li>
-<li><a class="el" href="install-linux-rpm.html">Installing from a .rpm file (RedHat, CentOS and derivatives)</a></li>
-<li><a class="el" href="install-vcpkg.html">Installing from VCPKG (Windows, Linux, OSX)</a></li>
-<li><a class="el" href="install-arch-aur.html">Installing from AUR (Arch Linux)</a></li>
-<li><a class="el" href="install-windows-vs-zip.html">Installing from zip (Windows) for Visual Studio</a></li>
-<li><a class="el" href="install-windows-clion-vcpkg.html">Installing from vcpkg for CLion</a></li>
-<li><a class="el" href="install-xmake.html">Installing from xmake</a></li>
-<li><a class="el" href="install-from-source.html">Building D++ From Source</a> </li>
-</ul>
+<div class="textblock"><p >To add D++ to a CLion project, you need obtain the library through vcpkg and then configure your CLion project and <code>CMakeLists.txt</code>.</p>
+<ol type="1">
+<li>Build <a href="https://vcpkg.io/">vcpkg</a> on your system (skip if you already have it).</li>
+<li>Run <code>vcpkg install dpp:x64-windows</code> (replace x64-windows with whichever OS and architecture you want the library to be built for).</li>
+<li>vcpkg will install the library along with the dependencies for you.</li>
+<li>Now check if dpp has been installed using <code>vcpkg list dpp</code>. <div class="fragment"><div class="line">C:/vcpkg&gt;vcpkg list dpp</div>
+<div class="line">dpp:x64-windows     10.0.23     D++ Extremely Lightweight C++ Discord Library.</div>
+</div><!-- fragment --></li>
+<li>To use vcpkg in CLion, add the following line to your CMake options in the settings (Located under Settings &gt; Build, Execution, Deployment &gt; CMake) <div class="fragment"><div class="line">-DCMAKE_TOOLCHAIN_FILE=path_to_vcpkg_root_folder/scripts/buildsystems/vcpkg.cmake</div>
+</div><!-- fragment --> For example, if your root folder is <code>C:/vcpkg/</code> then the CMake option will be: <div class="fragment"><div class="line">-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake</div>
+</div><!-- fragment --></li>
+<li>Now proceed to add the following lines to your <code>CMakeLists.txt</code>: <div class="fragment"><div class="line">find_package(dpp CONFIG REQUIRED)</div>
+<div class="line">target_link_libraries(main PRIVATE dpp::dpp)</div>
+<div class="line">target_include_directories(main PRIVATE path_to_vcpkg_root_folder/installed/architecture-os/include)</div>
+</div><!-- fragment --> For example, if built for x64-windows and vcpkg root is <code>C:/vcpkg/</code> then your <code>CMakeLists.txt</code> should look like this: <div class="fragment"><div class="line">find_package(dpp CONFIG REQUIRED)</div>
+<div class="line">target_link_libraries(main PRIVATE dpp::dpp)</div>
+<div class="line">target_include_directories(main PRIVATE C:/vcpkg/installed/x64-windows/include)</div>
+</div><!-- fragment --></li>
+<li>Congratulations! Now try to build a test program to see if the installation succeeded. If you get stuck somewhere, feel free to ask us on the D++ <a href="https://discord.gg/dpp">discord server</a>. </li>
+</ol>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
+		<li class="navelem"><a class="el" href="md_docpages_01_installing.html">Installing D++</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
