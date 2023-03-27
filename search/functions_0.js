@@ -15,7 +15,7 @@ var searchData=
   ['add_5ffield_12',['add_field',['../structdpp_1_1embed.html#ab9c9deedd331451367aa561e6f9178d0',1,'dpp::embed']]],
   ['add_5ffile_13',['add_file',['../structdpp_1_1message.html#a83dbb41eeb48ea63d6b346e7ad1bab8a',1,'dpp::message']]],
   ['add_5fflag_14',['add_flag',['../classdpp_1_1channel.html#a189a5d675001b810199274201b15ea38',1,'dpp::channel']]],
-  ['add_5flocalization_15',['add_localization',['../structdpp_1_1command__option__choice.html#a4ebf86e99143369ae8806009a2d9d55b',1,'dpp::command_option_choice::add_localization()'],['../structdpp_1_1command__option.html#a9c8f811314c21730e267269b74479f1b',1,'dpp::command_option::add_localization()'],['../classdpp_1_1slashcommand.html#af2ff1a4451887ac03e9082d03b3b1d5d',1,'dpp::slashcommand::add_localization()']]],
+  ['add_5flocalization_15',['add_localization',['../structdpp_1_1command__option__choice.html#a4ebf86e99143369ae8806009a2d9d55b',1,'dpp::command_option_choice::add_localization()'],['../structdpp_1_1command__option.html#abe4a00e59738602758eb418536781261',1,'dpp::command_option::add_localization()'],['../classdpp_1_1slashcommand.html#af2e10e78a1a517f3e6d6b85bbc6fd2f8',1,'dpp::slashcommand::add_localization()']]],
   ['add_5foption_16',['add_option',['../structdpp_1_1command__option.html#aa5c54bbb1e3cf93a9e18ea21f789cf2c',1,'dpp::command_option::add_option()'],['../classdpp_1_1slashcommand.html#a3959f3f3b2709c56e03610e6f774e449',1,'dpp::slashcommand::add_option(const command_option &amp;o)']]],
   ['add_5fpermission_17',['add_permission',['../classdpp_1_1slashcommand.html#a35086350bd76709e6befeed71e2598ab',1,'dpp::slashcommand']]],
   ['add_5fpermission_5foverwrite_18',['add_permission_overwrite',['../classdpp_1_1channel.html#a3e16faee1b6acad30b403dc1dc1d0b47',1,'dpp::channel']]],

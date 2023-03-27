@@ -5,7 +5,7 @@ var structdpp_1_1command__option =
     [ "command_option", "structdpp_1_1command__option.html#a7059a6049828707b2eda2c5a649aeb79", null ],
     [ "add_channel_type", "structdpp_1_1command__option.html#a2ecddb11870c0c32a61be196f48c3ebf", null ],
     [ "add_choice", "structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026", null ],
-    [ "add_localization", "structdpp_1_1command__option.html#a9c8f811314c21730e267269b74479f1b", null ],
+    [ "add_localization", "structdpp_1_1command__option.html#abe4a00e59738602758eb418536781261", null ],
     [ "add_option", "structdpp_1_1command__option.html#aa5c54bbb1e3cf93a9e18ea21f789cf2c", null ],
     [ "build_json", "structdpp_1_1command__option.html#a287c22f692ee3d25b6f9b320ff35baa1", null ],
     [ "fill_from_json", "structdpp_1_1command__option.html#ad80d37679b970a5d56e043641834573d", null ],

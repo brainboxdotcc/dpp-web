@@ -131,6 +131,9 @@ $(document).ready(function(){initNavTree('structdpp_1_1slashcommand__t.html','')
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a857969c6629ac70a4599b4b0de5f2e76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1slashcommand__t.html#a857969c6629ac70a4599b4b0de5f2e76">slashcommand_t</a> (class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *client, const std::string &amp;raw)</td></tr>
 <tr class="separator:a857969c6629ac70a4599b4b0de5f2e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6694d7d623e63430040e0ca6dbad2090"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1slashcommand__t.html#a6694d7d623e63430040e0ca6dbad2090">get_parameter</a> (const std::string &amp;name) const</td></tr>
+<tr class="memdesc:a6694d7d623e63430040e0ca6dbad2090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a command line parameter.  <a href="structdpp_1_1slashcommand__t.html#a6694d7d623e63430040e0ca6dbad2090">More...</a><br /></td></tr>
+<tr class="separator:a6694d7d623e63430040e0ca6dbad2090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493">reply</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>()) const</td></tr>
 <tr class="memdesc:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acknowledge interaction without displaying a message to the user, for use with button and select menu components.  <a href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493">More...</a><br /></td></tr>
 <tr class="separator:a34f374b358f8d2d49fa93bfe5a2c0493"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,9 +170,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42a7aada4ad321e9d8e3645b8b4abc97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a42a7aada4ad321e9d8e3645b8b4abc97">delete_original_response</a> (<a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>()) const</td></tr>
 <tr class="memdesc:a42a7aada4ad321e9d8e3645b8b4abc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete original response message for this interaction. This cannot be used on an ephemeral interaction response.  <a href="structdpp_1_1interaction__create__t.html#a42a7aada4ad321e9d8e3645b8b4abc97">More...</a><br /></td></tr>
 <tr class="separator:a42a7aada4ad321e9d8e3645b8b4abc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec1865c0ed66497a3820268f41d1192"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a7ec1865c0ed66497a3820268f41d1192">get_parameter</a> (const std::string &amp;name) const</td></tr>
-<tr class="memdesc:a7ec1865c0ed66497a3820268f41d1192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a command line parameter.  <a href="structdpp_1_1interaction__create__t.html#a7ec1865c0ed66497a3820268f41d1192">More...</a><br /></td></tr>
-<tr class="separator:a7ec1865c0ed66497a3820268f41d1192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5afbcd36109734ad0fca14ec848b73b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">cancel_event</a> () const</td></tr>
 <tr class="memdesc:a5afbcd36109734ad0fca14ec848b73b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">More...</a><br /></td></tr>
 <tr class="separator:a5afbcd36109734ad0fca14ec848b73b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -504,8 +504,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ec1865c0ed66497a3820268f41d1192" name="a7ec1865c0ed66497a3820268f41d1192"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec1865c0ed66497a3820268f41d1192">&#9670;&nbsp;</a></span>get_parameter()</h2>
+<a id="a6694d7d623e63430040e0ca6dbad2090" name="a6694d7d623e63430040e0ca6dbad2090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6694d7d623e63430040e0ca6dbad2090">&#9670;&nbsp;</a></span>get_parameter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,7 +514,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a> &amp; dpp::interaction_create_t::get_parameter </td>
+          <td class="memname">virtual const <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a> &amp; dpp::slashcommand_t::get_parameter </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -523,7 +523,7 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -532,7 +532,7 @@ Public Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Doesn't work on subcommands. If you want to get a parameter from a subcommand, you have to loop through the options by yourself.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The command line parameter to retrieve </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the command line parameter to retrieve the value for </td></tr>
   </table>
   </dd>
 </dl>
