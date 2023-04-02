@@ -1009,6 +1009,7 @@ var namespacedpp =
       [ "at_competing", "namespacedpp.html#a1d07516cb637238ba721dc4d91ab6fc2a093f8e827c5107ecc2cabe0647233d72", null ]
     ] ],
     [ "application_flags", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72", [
+      [ "apf_application_automod_rule_create_badge", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72aac315e0a3d5cef3e57756789179aa2c7", null ],
       [ "apf_gateway_presence", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a08dc8a2e3715e84bb24a63c7d158202a", null ],
       [ "apf_gateway_presence_limited", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a1455a34f5d35a17d88b671560f4a2822", null ],
       [ "apf_gateway_guild_members", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a6797cde1207f7f9e2ad8ecb2a3c477f6", null ],
@@ -1515,7 +1516,9 @@ var namespacedpp =
       [ "p_use_external_stickers", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ac53f7e2ab8f8b46f48943d281bc6c5b3", null ],
       [ "p_send_messages_in_threads", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a5fe142c8d6eacec5ce80b3b42476d937", null ],
       [ "p_use_embedded_activities", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a04df677383ab1edc2e224726c48a6f80", null ],
-      [ "p_moderate_members", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ae54b883c0448ef564f34ed1fcf50fdb2", null ]
+      [ "p_moderate_members", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ae54b883c0448ef564f34ed1fcf50fdb2", null ],
+      [ "p_view_creator_monetization_analytics", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a573c46111c1c7d34c36cec125b56b422", null ],
+      [ "p_use_soundboard", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4", null ]
     ] ],
     [ "presence_flags", "namespacedpp.html#a953f1484a5140481ffab2b248618fb22", [
       [ "p_desktop_online", "namespacedpp.html#a953f1484a5140481ffab2b248618fb22adbf7e907b0a558eafd5b8ecffa3923e0", null ],

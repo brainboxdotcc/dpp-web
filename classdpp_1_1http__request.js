@@ -1,7 +1,7 @@
 var classdpp_1_1http__request =
 [
-    [ "http_request", "classdpp_1_1http__request.html#a07b3bbba903d3b5c4c489da6148b3ee4", null ],
-    [ "http_request", "classdpp_1_1http__request.html#af04cdd9a2a57c9602335f9390caf1c6e", null ],
+    [ "http_request", "classdpp_1_1http__request.html#a661d748321234dfbc089924f4c8a7a36", null ],
+    [ "http_request", "classdpp_1_1http__request.html#acaed6f0fa5c2cb24c84230c09dd776f8", null ],
     [ "http_request", "classdpp_1_1http__request.html#a7a2134b1a466d6f523a37c5631376073", null ],
     [ "~http_request", "classdpp_1_1http__request.html#a94d82f10c9922b400b1dd5b8459a6691", null ],
     [ "complete", "classdpp_1_1http__request.html#a6f350d4340fe77e224783091607f63eb", null ],
@@ -9,6 +9,7 @@ var classdpp_1_1http__request =
     [ "run", "classdpp_1_1http__request.html#a3693b97e3f58505fa4187a86eecaaa39", null ],
     [ "endpoint", "classdpp_1_1http__request.html#a31cf6b360a893292435ea56b8d6a94c6", null ],
     [ "file_content", "classdpp_1_1http__request.html#a9d1ca5488bf190a37a485a856b75fda9", null ],
+    [ "file_mimetypes", "classdpp_1_1http__request.html#ad4e814071e0b9e7483976b5283aca161", null ],
     [ "file_name", "classdpp_1_1http__request.html#a734b0df9c63a7b8298511504c64e6a1c", null ],
     [ "method", "classdpp_1_1http__request.html#a6717d11da20292e2dc77826def3aaef3", null ],
     [ "mimetype", "classdpp_1_1http__request.html#aedac6464c95174507a322861191ccc02", null ],

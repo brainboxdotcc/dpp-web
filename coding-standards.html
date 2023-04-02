@@ -161,9 +161,12 @@ API type names</h2>
 Don't introduce any platform-specific code</h2>
 <p >Do not introduce platform specific (e.g. windows only) code or libc functions. If you really must use these functions safely wrap them e.g. in <code>#ifdef _WIN32</code> and provide a cross-platform alternative so that it works for everyone.</p>
 <h2><a class="anchor" id="autotoc_md53"></a>
+C++ version</h2>
+<p >The code must work with the C++17 standard.</p>
+<h2><a class="anchor" id="autotoc_md54"></a>
 Select the right size type for numeric types</h2>
 <p >If a value will only hold values up to 255, use <code>uint8_t</code>. If a value cannot hold over 65536, use <code>uint16_t</code>. These types can help use a lot less ram at scale.</p>
-<h2><a class="anchor" id="autotoc_md54"></a>
+<h2><a class="anchor" id="autotoc_md55"></a>
 Fluent design</h2>
 <p >Where possible, if you are adding methods to a class you should consider fluent design. Fluent design is the use of class methods tha return a reference to self (via <code>return *this</code>), so that you can chain object method calls together (in the way <code><a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a></code> and <code><a class="el" href="structdpp_1_1embed.html" title="A rich embed for display within a dpp::message.">dpp::embed</a></code> do). For example:</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>DPP_EXPORT my_new_class {</div>
@@ -187,12 +190,17 @@ Fluent design</h2>
 </div><!-- fragment --><p >This would allow the user to do this:</p>
 <div class="fragment"><div class="line">dpp::my_new_class nc;</div>
 <div class="line">nc.set_hats(3).set_clowns(9001);</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md55"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md56"></a>
 Keep all D++ related types in the dpp namespace</h2>
 <p >All types for the library should be within the <code>dpp</code> namespace. There are a couple of additional namespaces, e.g. <code><a class="el" href="namespacedpp_1_1utility.html" title="Utility helper functions, generally for logging, running programs, time/date manipulation,...">dpp::utility</a></code> for static standalone helper functions and helper classes, and <code><a class="el" href="namespacedpp_1_1events.html" title="The events namespace holds the internal event handlers for each websocket event. These are handled in...">dpp::events</a></code> for internal websocket event handlers.</p>
-<h2><a class="anchor" id="autotoc_md56"></a>
+<h2><a class="anchor" id="autotoc_md57"></a>
 Commit messages and Git</h2>
-<p >All pull requests ("PRs") should be submitted against the <code>dev</code> branch in GitHub. It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your commit or the PR Created. Read <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.3/">conventional commits</a> for information on how we like to format commit messages.</p>
+<p >All pull requests ("PRs") should be submitted against the <code>dev</code> branch in GitHub.</p>
+<h3><a class="anchor" id="autotoc_md58"></a>
+Naming conventions</h3>
+<p >It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your commit or the PR Created. Commits must be prefixed with a type, which consists of a noun, <code>feat</code>, <code>fix</code>, etc., followed by a colon and a space. Other commit types can be <code>breaking</code>, <code>docs</code>, <code>refactor</code>, <code>deprecate</code>, <code>perf</code>, <code>test</code>, <code>chore</code> and <code>misc</code>. Read <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.3/">conventional commits</a> for more information on how we like to format commit messages.</p>
+<h3><a class="anchor" id="autotoc_md59"></a>
+GitHub Actions</h3>
 <p >All PRs must pass the <a href="https://github.com/brainboxdotcc/DPP/actions">GitHub Actions</a> tests before being allowed to be merged. This is to ensure that no code committed into the project fails to compile on any of our officially supported platforms or architectures. </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
