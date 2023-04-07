@@ -170,6 +170,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99295cd531165826282fed0b1f547c8b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a99295cd531165826282fed0b1f547c8b">~interaction_create_t</a> ()=default</td></tr>
 <tr class="memdesc:a99295cd531165826282fed0b1f547c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy this object.  <a href="structdpp_1_1interaction__create__t.html#a99295cd531165826282fed0b1f547c8b">More...</a><br /></td></tr>
 <tr class="separator:a99295cd531165826282fed0b1f547c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec1865c0ed66497a3820268f41d1192"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1interaction__create__t.html#a7ec1865c0ed66497a3820268f41d1192">get_parameter</a> (const std::string &amp;name) const</td></tr>
+<tr class="memdesc:a7ec1865c0ed66497a3820268f41d1192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a slashcommand parameter.  <a href="structdpp_1_1interaction__create__t.html#a7ec1865c0ed66497a3820268f41d1192">More...</a><br /></td></tr>
+<tr class="separator:a7ec1865c0ed66497a3820268f41d1192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5afbcd36109734ad0fca14ec848b73b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1event__dispatch__t.html">event_dispatch_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">cancel_event</a> () const</td></tr>
 <tr class="memdesc:a5afbcd36109734ad0fca14ec848b73b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <code>const</code> during the event, and cannot itself contain the changeable state).  <a href="structdpp_1_1event__dispatch__t.html#a5afbcd36109734ad0fca14ec848b73b7">More...</a><br /></td></tr>
 <tr class="separator:a5afbcd36109734ad0fca14ec848b73b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,6 +480,47 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ec1865c0ed66497a3820268f41d1192" name="a7ec1865c0ed66497a3820268f41d1192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec1865c0ed66497a3820268f41d1192">&#9670;&nbsp;</a></span>get_parameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a> &amp; dpp::interaction_create_t::get_parameter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a slashcommand parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the command line parameter to retrieve the value for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const command_value&amp; Returns the value of the first option that matches the given name. If no matches are found, an empty variant is returned.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1logic__exception.html" title="Represents an error in logic, e.g. you asked the library to do something the Discord API does not sup...">dpp::logic_exception</a></td><td>if the interaction is not for a command </td></tr>
   </table>
   </dd>
 </dl>
