@@ -1710,6 +1710,7 @@ var namespacedpp =
     [ "rest_request< confirmation >", "namespacedpp.html#a63fe6eabce56fea9bf6192649e47f374", null ],
     [ "rest_request< message >", "namespacedpp.html#a173d2e6b113e7c675a2294e3eb7f8fd2", null ],
     [ "rest_request_list", "namespacedpp.html#a396beaf2087386cbd35654372fa0f78d", null ],
+    [ "rest_request_list< ban >", "namespacedpp.html#aa4e981e6b454756d9265524ed97d4681", null ],
     [ "rest_request_list< invite >", "namespacedpp.html#a494de7d152ac533c1283a759f5e7e344", null ],
     [ "rest_request_list< voiceregion >", "namespacedpp.html#a0fc24406b890d9d830e2b0fff9a9ced3", null ],
     [ "rest_request_vector", "namespacedpp.html#a94b9083871fc849024b4f4d2641320c0", null ],

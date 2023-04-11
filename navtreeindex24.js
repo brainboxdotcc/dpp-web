@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structdpp_1_1activity__secrets.html#aff32b69012cb609cb1fa2f083d7e3288":[7,0,0,9,0],
 "structdpp_1_1application__install__params.html":[7,0,0,12],
 "structdpp_1_1application__install__params.html":[8,0,0,10],
 "structdpp_1_1application__install__params.html#a12aa83c573e799a12f0f00cadf9101f4":[8,0,0,10,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "structdpp_1_1automod__rule__execute__t.html#afb80aeb2f486dfa796c3e7c88dd09228":[8,0,0,25,10],
 "structdpp_1_1automod__rule__update__t.html":[8,0,0,26],
 "structdpp_1_1automod__rule__update__t.html":[7,0,0,28],
-"structdpp_1_1automod__rule__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[8,0,0,26,4],
-"structdpp_1_1automod__rule__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,0,28,4]
+"structdpp_1_1automod__rule__update__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[8,0,0,26,4]
 };
