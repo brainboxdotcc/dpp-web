@@ -1489,6 +1489,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746">m_thread_mention_failed</a> = 1 &lt;&lt; 8
 , <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ab7f84fff84d4ee39e23ae36371b5a757">m_suppress_notifications</a> = 1 &lt;&lt; 12
+, <a class="el" href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107aa2b117657202caa65c504797d83cbcf8">m_is_voice_message</a> = 1 &lt;&lt; 13
 <br />
  }</td></tr>
 <tr class="memdesc:ad0f89d72815d4d483f689baa5cca5107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmask flags for a <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a>.  <a href="namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107">More...</a><br /></td></tr>
@@ -1615,6 +1616,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ae54b883c0448ef564f34ed1fcf50fdb2">p_moderate_members</a> = 0x10000000000
 , <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a573c46111c1c7d34c36cec125b56b422">p_view_creator_monetization_analytics</a> = 0x20000000000
 , <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4">p_use_soundboard</a> = 0x40000000000
+, <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9">p_send_voice_messages</a> = 0x0000400000000000
 <br />
  }</td></tr>
 <tr class="memdesc:a64f16cd622b3a09ae96803ba07fa75b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various discord permissions.  <a href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7">More...</a><br /></td></tr>
@@ -4512,6 +4514,8 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107ab7f84fff84d4ee39e23ae36371b5a757" name="ad0f89d72815d4d483f689baa5cca5107ab7f84fff84d4ee39e23ae36371b5a757"></a>m_suppress_notifications&#160;</td><td class="fielddoc"><p >this message will not trigger push and desktop notifications </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ad0f89d72815d4d483f689baa5cca5107aa2b117657202caa65c504797d83cbcf8" name="ad0f89d72815d4d483f689baa5cca5107aa2b117657202caa65c504797d83cbcf8"></a>m_is_voice_message&#160;</td><td class="fielddoc"><p >this message is a voice message </p>
+</td></tr>
 </table>
 
 </div>
@@ -4771,6 +4775,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a573c46111c1c7d34c36cec125b56b422" name="a64f16cd622b3a09ae96803ba07fa75b7a573c46111c1c7d34c36cec125b56b422"></a>p_view_creator_monetization_analytics&#160;</td><td class="fielddoc"><p >allows for viewing role subscription insights </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4" name="a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4"></a>p_use_soundboard&#160;</td><td class="fielddoc"><p >allows for using soundboard in a voice channel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9" name="a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9"></a>p_send_voice_messages&#160;</td><td class="fielddoc"><p >allows sending voice messages </p>
 </td></tr>
 </table>
 
@@ -7984,7 +7990,7 @@ template&lt;typename T , class F , class... Ts&gt; </div>
 <p >Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a> m = dpp::sync&lt;dpp::message&gt;(&amp;bot, &amp;<a class="code hl_function" href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a>, <a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(channel_id, <span class="stringliteral">&quot;moo.&quot;</span>));</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html_aa6ae3dc32ebc2dd14264962710d35af7"><div class="ttname"><a href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a></div><div class="ttdeci">void message_create(const struct message &amp;m, command_completion_event_t callback=utility::log_error())</div><div class="ttdoc">Send a message to a channel. The callback function is called when the message has been sent.</div></div>
-<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1143</div></div>
+<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1149</div></div>
 </div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>As previously mentioned, this template will block. It is ill-advised to call this outside of a separate thread and this should never be directly used in any event such as <a class="el" href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a>! </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">

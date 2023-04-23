@@ -24,6 +24,7 @@ var structdpp_1_1message =
     [ "is_source_message_deleted", "structdpp_1_1message.html#a0f22f044046ebc8bdc7d35e950baca25", null ],
     [ "is_thread_mention_failed", "structdpp_1_1message.html#ae9536a55dec58329df2dc83ac29c242e", null ],
     [ "is_urgent", "structdpp_1_1message.html#ad164b78c5ee2dc8a8237d1ec7a0d863f", null ],
+    [ "is_voice_message", "structdpp_1_1message.html#aa7d2ee420f88841ef69410fc02a2f90f", null ],
     [ "operator!=", "structdpp_1_1message.html#a9f086ed62419d373646e5d0e63667fd5", null ],
     [ "operator==", "structdpp_1_1message.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
     [ "set_allowed_mentions", "structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913", null ],

@@ -73,7 +73,7 @@ var searchData=
   ['is_5flarge_70',['is_large',['../classdpp_1_1guild.html#ab345901eb0418b58344b72dbe21d40a1',1,'dpp::guild']]],
   ['is_5floading_71',['is_loading',['../structdpp_1_1message.html#a25d4b0fbfcc698a74fa4f2b71796e874',1,'dpp::message']]],
   ['is_5flocked_5fpermissions_72',['is_locked_permissions',['../classdpp_1_1channel.html#ac8ce0b3fc552cfe96f46e6c55299a810',1,'dpp::channel']]],
-  ['is_5fmanaged_73',['is_managed',['../classdpp_1_1emoji.html#ae92572e9263cf62cc3e1cc826d98f5ad',1,'dpp::emoji::is_managed()'],['../classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9',1,'dpp::role::is_managed() const']]],
+  ['is_5fmanaged_73',['is_managed',['../classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9',1,'dpp::role::is_managed()'],['../classdpp_1_1emoji.html#ae92572e9263cf62cc3e1cc826d98f5ad',1,'dpp::emoji::is_managed()']]],
   ['is_5fmentionable_74',['is_mentionable',['../classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f',1,'dpp::role']]],
   ['is_5fmfa_5fenabled_75',['is_mfa_enabled',['../classdpp_1_1user.html#a08cd09a04a75493693d60a99e0123905',1,'dpp::user']]],
   ['is_5fmute_76',['is_mute',['../classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d',1,'dpp::voicestate']]],
@@ -114,5 +114,6 @@ var searchData=
   ['is_5fvideo_5fauto_111',['is_video_auto',['../classdpp_1_1channel.html#afb783f82a86a5ed6f247aaa213164854',1,'dpp::channel']]],
   ['is_5fvip_112',['is_vip',['../classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14',1,'dpp::voiceregion']]],
   ['is_5fvoice_5fchannel_113',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
-  ['is_5fwelcome_5fscreen_5fenabled_114',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]]
+  ['is_5fvoice_5fmessage_114',['is_voice_message',['../structdpp_1_1message.html#aa7d2ee420f88841ef69410fc02a2f90f',1,'dpp::message']]],
+  ['is_5fwelcome_5fscreen_5fenabled_115',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]]
 ];

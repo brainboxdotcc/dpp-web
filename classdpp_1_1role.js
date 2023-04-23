@@ -41,6 +41,7 @@ var classdpp_1_1role =
     [ "has_send_messages", "classdpp_1_1role.html#a31d923d5f1020215b836db355991870b", null ],
     [ "has_send_messages_in_threads", "classdpp_1_1role.html#ae7e42a98476a40201e9bce274f748954", null ],
     [ "has_send_tts_messages", "classdpp_1_1role.html#af54ea9f64ea035675a26b0d8e8b356f5", null ],
+    [ "has_send_voice_messages", "classdpp_1_1role.html#a49b93d4629f889d1e35b5927c6e1854d", null ],
     [ "has_speak", "classdpp_1_1role.html#a92ce258f420bce887cc9c92ad006fe06", null ],
     [ "has_stream", "classdpp_1_1role.html#ae6173507d17a12012cf46da70929a49e", null ],
     [ "has_use_application_commands", "classdpp_1_1role.html#ac19332b3de93ecf0a38d0f07589fd6c5", null ],

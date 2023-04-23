@@ -1423,7 +1423,8 @@ var namespacedpp =
       [ "m_ephemeral", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a31f151a1f4b4763df16059ff4d88aeaf", null ],
       [ "m_loading", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a347b30bfa696feef3b8948a5ea20127e", null ],
       [ "m_thread_mention_failed", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107a7d137ac1c65c3f6282670aabaac99746", null ],
-      [ "m_suppress_notifications", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ab7f84fff84d4ee39e23ae36371b5a757", null ]
+      [ "m_suppress_notifications", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107ab7f84fff84d4ee39e23ae36371b5a757", null ],
+      [ "m_is_voice_message", "namespacedpp.html#ad0f89d72815d4d483f689baa5cca5107aa2b117657202caa65c504797d83cbcf8", null ]
     ] ],
     [ "message_type", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bc", [
       [ "mt_default", "namespacedpp.html#acd7f41dcc93c1cf48514d2b123e4d8bcac7573c73d464b30ffd2fee74f8618152", null ],
@@ -1518,7 +1519,8 @@ var namespacedpp =
       [ "p_use_embedded_activities", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a04df677383ab1edc2e224726c48a6f80", null ],
       [ "p_moderate_members", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ae54b883c0448ef564f34ed1fcf50fdb2", null ],
       [ "p_view_creator_monetization_analytics", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a573c46111c1c7d34c36cec125b56b422", null ],
-      [ "p_use_soundboard", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4", null ]
+      [ "p_use_soundboard", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4", null ],
+      [ "p_send_voice_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9", null ]
     ] ],
     [ "presence_flags", "namespacedpp.html#a953f1484a5140481ffab2b248618fb22", [
       [ "p_desktop_online", "namespacedpp.html#a953f1484a5140481ffab2b248618fb22adbf7e907b0a558eafd5b8ecffa3923e0", null ],
