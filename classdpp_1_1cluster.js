@@ -499,7 +499,7 @@ var classdpp_1_1cluster =
     [ "thread_members_get", "classdpp_1_1cluster.html#a636b55f518a2e724eabf31453aa89abe", null ],
     [ "thread_members_get_sync", "classdpp_1_1cluster.html#ae202a0e3a374128dea543d389df3abc3", null ],
     [ "threads_get_active", "classdpp_1_1cluster.html#aefa49b6113343575dbc9dd2e40112847", null ],
-    [ "threads_get_active_sync", "classdpp_1_1cluster.html#a58ae45ea26b50b46568b1676e9ebd4db", null ],
+    [ "threads_get_active_sync", "classdpp_1_1cluster.html#a475723bbcca444b9de7ddee04a202617", null ],
     [ "threads_get_joined_private_archived", "classdpp_1_1cluster.html#a0d0c3894cd560fa7871f22d7cfb8f591", null ],
     [ "threads_get_joined_private_archived_sync", "classdpp_1_1cluster.html#ac14ada29643bb656707e563f4276d8f6", null ],
     [ "threads_get_private_archived", "classdpp_1_1cluster.html#ae8336e48eaabaeb8df4d69a087982e82", null ],
