@@ -187,7 +187,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an automod action.  <a href="structdpp_1_1automod__action.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html">automod_metadata</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata associated with an automod action.  <a href="structdpp_1_1automod__metadata.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata associated with an automod action. Different fields are relevant based on the value of <a class="el" href="classdpp_1_1automod__rule.html#a63b4e5f3a00d26c67914afdf051a5ab4" title="The rule trigger type.">dpp::automod_rule::trigger_type</a>.  <a href="structdpp_1_1automod__metadata.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1automod__rule.html">automod_rule</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an automod rule.  <a href="classdpp_1_1automod__rule.html#details">More...</a><br /></td></tr>
@@ -773,7 +773,7 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a710b32b577396ba92917d0578f0bedb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is a variant that can hold any of the potential native data types represented by the enum <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58" title="Represents command option types. These are the possible parameter value types.">dpp::command_option_type</a>. It is used in interactions.  <a href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">More...</a><br /></td></tr>
 <tr class="separator:a710b32b577396ba92917d0578f0bedb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e80cf6b8ecad18c951fec28be2377ba"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; std::monostate, int64_t, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba">command_option_range</a></td></tr>
-<tr class="memdesc:a3e80cf6b8ecad18c951fec28be2377ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">A minimum or maximum value for co_number and co_integer <a class="el" href="structdpp_1_1command__option.html" title="Each command option is a command line parameter. It can have a type (see dpp::command_option_type),...">dpp::command_option</a> types.  <a href="namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba">More...</a><br /></td></tr>
+<tr class="memdesc:a3e80cf6b8ecad18c951fec28be2377ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">A minimum or maximum value/length for <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b">dpp::co_number</a>, <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a7e18bae49699df4948c28c12bfa8bd19">dpp::co_integer</a> and <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58acd751201efe224973dfe952d8658a384">dpp::co_string</a> types of a <a class="el" href="structdpp_1_1command__option.html" title="Each command option is a command line parameter. It can have a type (see dpp::command_option_type),...">dpp::command_option</a>. The <code>int64_t</code> is for the integer range or string length that can be entered. The <code>double</code> is for the decimal range that can be entered.  <a href="namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba">More...</a><br /></td></tr>
 <tr class="separator:a3e80cf6b8ecad18c951fec28be2377ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfefe335636cdf5dbbba145a3828c554"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="classdpp_1_1slashcommand.html">slashcommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">slashcommand_map</a></td></tr>
 <tr class="memdesc:adfefe335636cdf5dbbba145a3828c554"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of application slash commands.  <a href="namespacedpp.html#adfefe335636cdf5dbbba145a3828c554">More...</a><br /></td></tr>
@@ -1293,20 +1293,22 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ace5fc4a0db4c08d37d3a1b8e7e22383a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The various flags that represent the status of a <a class="el" href="classdpp_1_1guild.html" title="Represents a guild on Discord (AKA a server)">dpp::guild</a> object.  <a href="namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383a">More...</a><br /></td></tr>
 <tr class="separator:ace5fc4a0db4c08d37d3a1b8e7e22383a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef5a99cfd5c5e87f039782311d2f2f4e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e">guild_flags_extra</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e">g_premium_progress_bar_enabled</a> = 0b00000001
-, <a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e">g_animated_banner</a> = 0b00000010
-, <a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b">g_auto_moderation</a> = 0b00000100
-, <a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eabc65e4309cc670db60917406e82b981a">g_invites_disabled</a> = 0b00001000
+<tr class="memitem:ad5440c062424f43282b804b7b7de31c9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9">guild_flags_extra</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a6fb4a086c12954347ccb438b53f8997e">g_premium_progress_bar_enabled</a> = 0b0000000000000001
+, <a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9ab63667e028c002ffc28b39a53a62cb0e">g_animated_banner</a> = 0b0000000000000010
+, <a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9ade43e3e0128402f02a12a5bd4971f73b">g_auto_moderation</a> = 0b0000000000000100
+, <a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9abc65e4309cc670db60917406e82b981a">g_invites_disabled</a> = 0b0000000000001000
 , <br />
-&#160;&#160;<a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea477c960c0a00b66cc0e69ec2ae4a25c4">g_developer_support_server</a> = 0b00010000
-, <a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eae894768490e68946428bfc53a78ad257">g_no_role_subscription_notifications</a> = 0b00100000
-, <a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eac0dc8cfe46586bc920c20a943bf4a434">g_no_role_subscription_notification_replies</a> = 0b01000000
-, <a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea5ba131da25d7cbac62c1e5475ebd2ad1">g_role_subscriptions_available_for_purchase</a> = 0b10000000
+&#160;&#160;<a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a477c960c0a00b66cc0e69ec2ae4a25c4">g_developer_support_server</a> = 0b0000000000010000
+, <a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9ae894768490e68946428bfc53a78ad257">g_no_role_subscription_notifications</a> = 0b0000000000100000
+, <a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9ac0dc8cfe46586bc920c20a943bf4a434">g_no_role_subscription_notification_replies</a> = 0b0000000001000000
+, <a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a5ba131da25d7cbac62c1e5475ebd2ad1">g_role_subscriptions_available_for_purchase</a> = 0b0000000010000000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a4e2eea7fdcda8cc71f12241444933143">g_raid_alerts_disabled</a> = 0b0000000100000000
 <br />
  }</td></tr>
-<tr class="memdesc:aef5a99cfd5c5e87f039782311d2f2f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional boolean flag values for guild, as guild_flags is full.  <a href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e">More...</a><br /></td></tr>
-<tr class="separator:aef5a99cfd5c5e87f039782311d2f2f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ad5440c062424f43282b804b7b7de31c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional boolean flag values for guild, as guild_flags is full.  <a href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9">More...</a><br /></td></tr>
+<tr class="separator:ad5440c062424f43282b804b7b7de31c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ffb1848bf700da25bc187e38054a30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30">guild_member_flags</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4">gm_deaf</a> = 0b00000001
 , <a class="el" href="namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f">gm_mute</a> = 0b00000010
@@ -2229,7 +2231,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A minimum or maximum value for co_number and co_integer <a class="el" href="structdpp_1_1command__option.html" title="Each command option is a command line parameter. It can have a type (see dpp::command_option_type),...">dpp::command_option</a> types. </p>
+<p>A minimum or maximum value/length for <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a516b70c3a0d502aeb6af3530c831e86b">dpp::co_number</a>, <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a7e18bae49699df4948c28c12bfa8bd19">dpp::co_integer</a> and <a class="el" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58acd751201efe224973dfe952d8658a384">dpp::co_string</a> types of a <a class="el" href="structdpp_1_1command__option.html" title="Each command option is a command line parameter. It can have a type (see dpp::command_option_type),...">dpp::command_option</a>. The <code>int64_t</code> is for the integer range or string length that can be entered. The <code>double</code> is for the decimal range that can be entered. </p>
 
 </div>
 </div>
@@ -3332,7 +3334,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a3ad85ab5a039a0c7f46107a02440a14caccf0e42b2f286ea0631e4a427662425c" name="a3ad85ab5a039a0c7f46107a02440a14caccf0e42b2f286ea0631e4a427662425c"></a>amod_action_send_alert&#160;</td><td class="fielddoc"><p >Send an alert to a given channel. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3ad85ab5a039a0c7f46107a02440a14ca8c7c0985bb106bc4da6690a0c1693fd8" name="a3ad85ab5a039a0c7f46107a02440a14ca8c7c0985bb106bc4da6690a0c1693fd8"></a>amod_action_timeout&#160;</td><td class="fielddoc"><p >timeout the user </p>
-<dl class="section note"><dt>Note</dt><dd>Can only be set up for rules with trigger types of <a class="el" href="namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292" title="Check if content contains words from a user defined list of keywords.">dpp::amod_type_keyword</a> and <a class="el" href="namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7" title="Check if content contains more mentions than allowed.">dpp::amod_type_mention_spam</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Can only be set up for rules with trigger types of <a class="el" href="namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292" title="Check if content contains words from a user defined list of keywords (max 6 of this type per guild)">dpp::amod_type_keyword</a> and <a class="el" href="namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7" title="Check if content contains more mentions than allowed (max 1 of this type per guild)">dpp::amod_type_mention_spam</a> </dd></dl>
 </td></tr>
 </table>
 
@@ -3396,16 +3398,16 @@ Variables</h2></td></tr>
 
 <p>Types of moderation to trigger. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292" name="a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292"></a>amod_type_keyword&#160;</td><td class="fielddoc"><p >Check if content contains words from a user defined list of keywords. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292" name="a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292"></a>amod_type_keyword&#160;</td><td class="fielddoc"><p >Check if content contains words from a user defined list of keywords (max 6 of this type per guild) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6a66616e096af7b4299ae5d013de686d57" name="a6c4401c19cd7e8b05ba2c066f1fdddb6a66616e096af7b4299ae5d013de686d57"></a>amod_type_harmful_link&#160;</td><td class="fielddoc"><p >Harmful/malware links. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Removed by Discord </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6a5ab9fd884c477842d67045e962097fa2" name="a6c4401c19cd7e8b05ba2c066f1fdddb6a5ab9fd884c477842d67045e962097fa2"></a>amod_type_spam&#160;</td><td class="fielddoc"><p >Check if content represents generic spam. </p>
+<tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6a5ab9fd884c477842d67045e962097fa2" name="a6c4401c19cd7e8b05ba2c066f1fdddb6a5ab9fd884c477842d67045e962097fa2"></a>amod_type_spam&#160;</td><td class="fielddoc"><p >Check if content represents generic spam (max 1 of this type per guild) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05" name="a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05"></a>amod_type_keyword_preset&#160;</td><td class="fielddoc"><p >Check if content contains words from discord pre-defined wordsets. </p>
+<tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05" name="a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05"></a>amod_type_keyword_preset&#160;</td><td class="fielddoc"><p >Check if content contains words from discord pre-defined wordsets (max 1 of this type per guild) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7" name="a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7"></a>amod_type_mention_spam&#160;</td><td class="fielddoc"><p >Check if content contains more mentions than allowed. </p>
+<tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7" name="a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7"></a>amod_type_mention_spam&#160;</td><td class="fielddoc"><p >Check if content contains more mentions than allowed (max 1 of this type per guild) </p>
 </td></tr>
 </table>
 
@@ -4028,35 +4030,37 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aef5a99cfd5c5e87f039782311d2f2f4e" name="aef5a99cfd5c5e87f039782311d2f2f4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef5a99cfd5c5e87f039782311d2f2f4e">&#9670;&nbsp;</a></span>guild_flags_extra</h2>
+<a id="ad5440c062424f43282b804b7b7de31c9" name="ad5440c062424f43282b804b7b7de31c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5440c062424f43282b804b7b7de31c9">&#9670;&nbsp;</a></span>guild_flags_extra</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e">dpp::guild_flags_extra</a> : uint8_t</td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#ad5440c062424f43282b804b7b7de31c9">dpp::guild_flags_extra</a> : uint16_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Additional boolean flag values for guild, as guild_flags is full. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e" name="aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e"></a>g_premium_progress_bar_enabled&#160;</td><td class="fielddoc"><p >Guild has premium progress bar enabled </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9a6fb4a086c12954347ccb438b53f8997e" name="ad5440c062424f43282b804b7b7de31c9a6fb4a086c12954347ccb438b53f8997e"></a>g_premium_progress_bar_enabled&#160;</td><td class="fielddoc"><p >Guild has premium progress bar enabled </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e" name="aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e"></a>g_animated_banner&#160;</td><td class="fielddoc"><p >Guild can have an animated banner (doesn't mean it actually has one though) </p>
+<tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9ab63667e028c002ffc28b39a53a62cb0e" name="ad5440c062424f43282b804b7b7de31c9ab63667e028c002ffc28b39a53a62cb0e"></a>g_animated_banner&#160;</td><td class="fielddoc"><p >Guild can have an animated banner (doesn't mean it actually has one though) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b" name="aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b"></a>g_auto_moderation&#160;</td><td class="fielddoc"><p >Guild has auto moderation </p>
+<tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9ade43e3e0128402f02a12a5bd4971f73b" name="ad5440c062424f43282b804b7b7de31c9ade43e3e0128402f02a12a5bd4971f73b"></a>g_auto_moderation&#160;</td><td class="fielddoc"><p >Guild has auto moderation </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aef5a99cfd5c5e87f039782311d2f2f4eabc65e4309cc670db60917406e82b981a" name="aef5a99cfd5c5e87f039782311d2f2f4eabc65e4309cc670db60917406e82b981a"></a>g_invites_disabled&#160;</td><td class="fielddoc"><p >Guild has paused invites, preventing new users from joining </p>
+<tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9abc65e4309cc670db60917406e82b981a" name="ad5440c062424f43282b804b7b7de31c9abc65e4309cc670db60917406e82b981a"></a>g_invites_disabled&#160;</td><td class="fielddoc"><p >Guild has paused invites, preventing new users from joining </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aef5a99cfd5c5e87f039782311d2f2f4ea477c960c0a00b66cc0e69ec2ae4a25c4" name="aef5a99cfd5c5e87f039782311d2f2f4ea477c960c0a00b66cc0e69ec2ae4a25c4"></a>g_developer_support_server&#160;</td><td class="fielddoc"><p >Guild has been set as support server of an app in the App Directory </p>
+<tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9a477c960c0a00b66cc0e69ec2ae4a25c4" name="ad5440c062424f43282b804b7b7de31c9a477c960c0a00b66cc0e69ec2ae4a25c4"></a>g_developer_support_server&#160;</td><td class="fielddoc"><p >Guild has been set as support server of an app in the App Directory </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aef5a99cfd5c5e87f039782311d2f2f4eae894768490e68946428bfc53a78ad257" name="aef5a99cfd5c5e87f039782311d2f2f4eae894768490e68946428bfc53a78ad257"></a>g_no_role_subscription_notifications&#160;</td><td class="fielddoc"><p >Guild role subscription purchase and renewal notifications are off </p>
+<tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9ae894768490e68946428bfc53a78ad257" name="ad5440c062424f43282b804b7b7de31c9ae894768490e68946428bfc53a78ad257"></a>g_no_role_subscription_notifications&#160;</td><td class="fielddoc"><p >Guild role subscription purchase and renewal notifications are off </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aef5a99cfd5c5e87f039782311d2f2f4eac0dc8cfe46586bc920c20a943bf4a434" name="aef5a99cfd5c5e87f039782311d2f2f4eac0dc8cfe46586bc920c20a943bf4a434"></a>g_no_role_subscription_notification_replies&#160;</td><td class="fielddoc"><p >Guild role subscription sticker reply buttons are off </p>
+<tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9ac0dc8cfe46586bc920c20a943bf4a434" name="ad5440c062424f43282b804b7b7de31c9ac0dc8cfe46586bc920c20a943bf4a434"></a>g_no_role_subscription_notification_replies&#160;</td><td class="fielddoc"><p >Guild role subscription sticker reply buttons are off </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aef5a99cfd5c5e87f039782311d2f2f4ea5ba131da25d7cbac62c1e5475ebd2ad1" name="aef5a99cfd5c5e87f039782311d2f2f4ea5ba131da25d7cbac62c1e5475ebd2ad1"></a>g_role_subscriptions_available_for_purchase&#160;</td><td class="fielddoc"><p >Guild has role subscriptions that can be purchased </p>
+<tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9a5ba131da25d7cbac62c1e5475ebd2ad1" name="ad5440c062424f43282b804b7b7de31c9a5ba131da25d7cbac62c1e5475ebd2ad1"></a>g_role_subscriptions_available_for_purchase&#160;</td><td class="fielddoc"><p >Guild has role subscriptions that can be purchased </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5440c062424f43282b804b7b7de31c9a4e2eea7fdcda8cc71f12241444933143" name="ad5440c062424f43282b804b7b7de31c9a4e2eea7fdcda8cc71f12241444933143"></a>g_raid_alerts_disabled&#160;</td><td class="fielddoc"><p >Guild has disabled alerts for join raids in the configured safety alerts channel </p>
 </td></tr>
 </table>
 

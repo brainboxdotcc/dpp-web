@@ -120,7 +120,7 @@
         <argsstring></argsstring>
         <name>allow_list</name>
         <briefdescription>
-<para>Substrings which should not trigger the rule. </para>
+<para>Substrings which should not trigger the rule (Maximum of 100 for the trigger type <ref refid="namespacedpp_1a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292" kindref="member">dpp::amod_type_keyword</ref>, Maximum of 1000 for the trigger type <ref refid="namespacedpp_1a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05" kindref="member">dpp::amod_type_keyword_preset</ref>). </para>
         </briefdescription>
         <detaileddescription>
 <para>Each keyword can be a phrase which contains multiple words. All keywords are case insensitive and can be up to 60 characters.</para>
@@ -205,6 +205,20 @@
         </inbodydescription>
         <location file="include/dpp/automod.h" line="210" column="9" bodyfile="include/dpp/automod.h" bodystart="210" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1automod__metadata_1a7529859f52dd6c49cdb7e1f58e8f9127" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::automod_metadata::mention_raid_protection_enabled</definition>
+        <argsstring></argsstring>
+        <name>mention_raid_protection_enabled</name>
+        <briefdescription>
+<para>Whether to automatically detect mention raids. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/automod.h" line="215" column="6" bodyfile="include/dpp/automod.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a1d341f6dd7507da28acf9c9add164803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -219,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="215" column="1"/>
+        <location file="include/dpp/automod.h" line="220" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a2671a8e5afaf01085b585ed350376809" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -233,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="220" column="9"/>
+        <location file="include/dpp/automod.h" line="225" column="9"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1automod__metadata" kindref="compound">automod_metadata</ref> &amp;</type>
@@ -263,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="228" column="18"/>
+        <location file="include/dpp/automod.h" line="233" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -286,11 +300,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/automod.h" line="235" column="21"/>
+        <location file="include/dpp/automod.h" line="240" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Metadata associated with an automod action. </para>
+<para>Metadata associated with an automod action. Different fields are relevant based on the value of <ref refid="classdpp_1_1automod__rule_1a63b4e5f3a00d26c67914afdf051a5ab4" kindref="member">dpp::automod_rule::trigger_type</ref>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -314,6 +328,9 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="6">
+        <label>bool</label>
+      </node>
       <node id="1">
         <label>dpp::automod_metadata</label>
         <link refid="structdpp_1_1automod__metadata"/>
@@ -327,6 +344,9 @@
         </childnode>
         <childnode refid="5" relation="usage">
           <edgelabel>mention_total_limit</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mention_raid_protection_enabled</edgelabel>
         </childnode>
       </node>
       <node id="3">
@@ -347,13 +367,14 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/automod.h" line="110" column="1" bodyfile="include/dpp/automod.h" bodystart="110" bodyend="237"/>
+    <location file="include/dpp/automod.h" line="110" column="1" bodyfile="include/dpp/automod.h" bodystart="110" bodyend="242"/>
     <listofallmembers>
       <member refid="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>allow_list</name></member>
       <member refid="structdpp_1_1automod__metadata_1a1d341f6dd7507da28acf9c9add164803" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>automod_metadata</name></member>
       <member refid="structdpp_1_1automod__metadata_1a76291c89955400cce516951847d1668e" prot="public" virt="virtual"><scope>dpp::automod_metadata</scope><name>build_json</name></member>
       <member refid="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>fill_from_json</name></member>
       <member refid="structdpp_1_1automod__metadata_1add05f221746c0ea2b3136b53498d0cf6" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>keywords</name></member>
+      <member refid="structdpp_1_1automod__metadata_1a7529859f52dd6c49cdb7e1f58e8f9127" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>mention_raid_protection_enabled</name></member>
       <member refid="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>mention_total_limit</name></member>
       <member refid="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>presets</name></member>
       <member refid="structdpp_1_1automod__metadata_1a855c12dbe234d7cd0365256ac6db4dbe" prot="public" virt="non-virtual"><scope>dpp::automod_metadata</scope><name>regex_patterns</name></member>

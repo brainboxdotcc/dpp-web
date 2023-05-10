@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('structdpp_1_1automod__metadata.html','
 </div><!--header-->
 <div class="contents">
 
-<p>Metadata associated with an automod action.  
+<p>Metadata associated with an automod action. Different fields are relevant based on the value of <a class="el" href="classdpp_1_1automod__rule.html#a63b4e5f3a00d26c67914afdf051a5ab4" title="The rule trigger type.">dpp::automod_rule::trigger_type</a>.  
  <a href="structdpp_1_1automod__metadata.html#details">More...</a></p>
 
 <p><code>#include &lt;automod.h&gt;</code></p>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('structdpp_1_1automod__metadata.html','
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structdpp_1_1automod__metadata__coll__graph.svg" width="514" height="275"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structdpp_1_1automod__metadata__coll__graph.svg" width="100%" height="506"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -154,14 +154,17 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a45f0712c30a208c77283481868994d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preset keyword list types to moderate.  <a href="structdpp_1_1automod__metadata.html#a45f0712c30a208c77283481868994d89">More...</a><br /></td></tr>
 <tr class="separator:a45f0712c30a208c77283481868994d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6bdcf68e58d87cb7d03b97ad25de82d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d">allow_list</a></td></tr>
-<tr class="memdesc:ae6bdcf68e58d87cb7d03b97ad25de82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substrings which should not trigger the rule.  <a href="structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d">More...</a><br /></td></tr>
+<tr class="memdesc:ae6bdcf68e58d87cb7d03b97ad25de82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substrings which should not trigger the rule (Maximum of 100 for the trigger type <a class="el" href="namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292" title="Check if content contains words from a user defined list of keywords (max 6 of this type per guild)">dpp::amod_type_keyword</a>, Maximum of 1000 for the trigger type <a class="el" href="namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05" title="Check if content contains words from discord pre-defined wordsets (max 1 of this type per guild)">dpp::amod_type_keyword_preset</a>).  <a href="structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d">More...</a><br /></td></tr>
 <tr class="separator:ae6bdcf68e58d87cb7d03b97ad25de82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411294739bcfaee90bdc36009ee92f4b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#a411294739bcfaee90bdc36009ee92f4b">mention_total_limit</a></td></tr>
 <tr class="memdesc:a411294739bcfaee90bdc36009ee92f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of unique role and user mentions allowed per message (Maximum of 50)  <a href="structdpp_1_1automod__metadata.html#a411294739bcfaee90bdc36009ee92f4b">More...</a><br /></td></tr>
 <tr class="separator:a411294739bcfaee90bdc36009ee92f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7529859f52dd6c49cdb7e1f58e8f9127"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__metadata.html#a7529859f52dd6c49cdb7e1f58e8f9127">mention_raid_protection_enabled</a></td></tr>
+<tr class="memdesc:a7529859f52dd6c49cdb7e1f58e8f9127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to automatically detect mention raids.  <a href="structdpp_1_1automod__metadata.html#a7529859f52dd6c49cdb7e1f58e8f9127">More...</a><br /></td></tr>
+<tr class="separator:a7529859f52dd6c49cdb7e1f58e8f9127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Metadata associated with an automod action. </p>
+<div class="textblock"><p >Metadata associated with an automod action. Different fields are relevant based on the value of <a class="el" href="classdpp_1_1automod__rule.html#a63b4e5f3a00d26c67914afdf051a5ab4" title="The rule trigger type.">dpp::automod_rule::trigger_type</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1d341f6dd7507da28acf9c9add164803" name="a1d341f6dd7507da28acf9c9add164803"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d341f6dd7507da28acf9c9add164803">&#9670;&nbsp;</a></span>automod_metadata()</h2>
@@ -264,7 +267,7 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structdpp_1_1automod__metadata.html" title="Metadata associated with an automod action.">automod_metadata</a>&amp; Reference to self </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structdpp_1_1automod__metadata.html" title="Metadata associated with an automod action. Different fields are relevant based on the value of dpp::...">automod_metadata</a>&amp; Reference to self </dd></dl>
 
 </div>
 </div>
@@ -281,7 +284,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Substrings which should not trigger the rule. </p>
+<p>Substrings which should not trigger the rule (Maximum of 100 for the trigger type <a class="el" href="namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a648f271e93317f37a59fa53ae8bcf292" title="Check if content contains words from a user defined list of keywords (max 6 of this type per guild)">dpp::amod_type_keyword</a>, Maximum of 1000 for the trigger type <a class="el" href="namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05" title="Check if content contains words from discord pre-defined wordsets (max 1 of this type per guild)">dpp::amod_type_keyword_preset</a>). </p>
 <p >Each keyword can be a phrase which contains multiple words. All keywords are case insensitive and can be up to 60 characters.</p>
 <p >Wildcard symbols (<code>*</code>) can be used to customize how each keyword will be matched.</p>
 <p ><b>Examples for the <code>*</code> wildcard symbol:</b></p>
@@ -376,6 +379,22 @@ Public Attributes</h2></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">the mat   </td><td class="markdownTableBodyNone"><u><b>the mat</b></u>   </td></tr>
 </table>
+
+</div>
+</div>
+<a id="a7529859f52dd6c49cdb7e1f58e8f9127" name="a7529859f52dd6c49cdb7e1f58e8f9127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7529859f52dd6c49cdb7e1f58e8f9127">&#9670;&nbsp;</a></span>mention_raid_protection_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::automod_metadata::mention_raid_protection_enabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to automatically detect mention raids. </p>
 
 </div>
 </div>

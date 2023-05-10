@@ -225,6 +225,7 @@
     <member refid="structdpp_1_1automod__metadata_1a45f0712c30a208c77283481868994d89" kind="variable"><name>presets</name></member>
     <member refid="structdpp_1_1automod__metadata_1ae6bdcf68e58d87cb7d03b97ad25de82d" kind="variable"><name>allow_list</name></member>
     <member refid="structdpp_1_1automod__metadata_1a411294739bcfaee90bdc36009ee92f4b" kind="variable"><name>mention_total_limit</name></member>
+    <member refid="structdpp_1_1automod__metadata_1a7529859f52dd6c49cdb7e1f58e8f9127" kind="variable"><name>mention_raid_protection_enabled</name></member>
     <member refid="structdpp_1_1automod__metadata_1a1d341f6dd7507da28acf9c9add164803" kind="function"><name>automod_metadata</name></member>
     <member refid="structdpp_1_1automod__metadata_1a2671a8e5afaf01085b585ed350376809" kind="function"><name>~automod_metadata</name></member>
     <member refid="structdpp_1_1automod__metadata_1a6df2aca1f4ae15a39012df0acfcd43ec" kind="function"><name>fill_from_json</name></member>
@@ -1881,10 +1882,12 @@
     <member refid="classdpp_1_1guild_1a860098b080bc3bf11c1c44bb77edda09" kind="variable"><name>rules_channel_id</name></member>
     <member refid="classdpp_1_1guild_1a10f966d4bc54c233a1ecd6a24ca80dc3" kind="variable"><name>public_updates_channel_id</name></member>
     <member refid="classdpp_1_1guild_1ad456524472a24e2592560a4a497c4b01" kind="variable"><name>widget_channel_id</name></member>
+    <member refid="classdpp_1_1guild_1aa201619649888056df9a0149455b33f6" kind="variable"><name>safety_alerts_channel_id</name></member>
     <member refid="classdpp_1_1guild_1a8c861567b28347debc48618653a0cf1e" kind="variable"><name>member_count</name></member>
     <member refid="classdpp_1_1guild_1a0525bf0e263ae902a4d6fb295691cb34" kind="variable"><name>flags</name></member>
     <member refid="classdpp_1_1guild_1ae5071e531ebbf2b8ae42dfbf409af494" kind="variable"><name>max_presences</name></member>
     <member refid="classdpp_1_1guild_1a32e894208805a5326e7a506c73425854" kind="variable"><name>max_members</name></member>
+    <member refid="classdpp_1_1guild_1af09066eb2f5988e268b5fe05b138ab5a" kind="variable"><name>flags_extra</name></member>
     <member refid="classdpp_1_1guild_1a80181fee5f66b2dd6f24bad72226bf7c" kind="variable"><name>shard_id</name></member>
     <member refid="classdpp_1_1guild_1acd884a98bc58d26d29a6a5d2e249f1c9" kind="variable"><name>premium_subscription_count</name></member>
     <member refid="classdpp_1_1guild_1ad10c23d452ceab28023eace3bc072ad2" kind="variable"><name>afk_timeout</name></member>
@@ -1895,7 +1898,6 @@
     <member refid="classdpp_1_1guild_1a1c6074e2abbc246282edbd786347b00d" kind="variable"><name>explicit_content_filter</name></member>
     <member refid="classdpp_1_1guild_1a8a37aaf8be3dadbcba87269bd8405946" kind="variable"><name>mfa_level</name></member>
     <member refid="classdpp_1_1guild_1a6520b72031ed26371bb23dc9c23b60c0" kind="variable"><name>nsfw_level</name></member>
-    <member refid="classdpp_1_1guild_1a2829f3bf9ffbed2e0ad5988a8b94574b" kind="variable"><name>flags_extra</name></member>
     <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
     <member refid="classdpp_1_1guild_1aeae6599054436a5a66e07683032089dc" kind="function"><name>guild</name></member>
     <member refid="classdpp_1_1guild_1a7e494da5ab1aaaddae4d588849ea9f14" kind="function"><name>~guild</name></member>
@@ -1930,6 +1932,7 @@
     <member refid="classdpp_1_1guild_1a62a651b5bafb7757b20a6bb3303d3542" kind="function"><name>has_auto_moderation</name></member>
     <member refid="classdpp_1_1guild_1a7e36811aef081391cfed101eaad2328e" kind="function"><name>has_support_server</name></member>
     <member refid="classdpp_1_1guild_1ad769b8ca16e90bd837b52bd155086bb1" kind="function"><name>has_role_subscriptions_available_for_purchase</name></member>
+    <member refid="classdpp_1_1guild_1a8aaa556870af360ec85ba05ac680098b" kind="function"><name>has_raid_alerts_disabled</name></member>
     <member refid="classdpp_1_1guild_1a46cf6e3821d628027553641c0623df34" kind="function"><name>has_animated_icon</name></member>
     <member refid="classdpp_1_1guild_1a6ec058ad4e9fde64b0a043287c3f6a73" kind="function"><name>has_banner</name></member>
     <member refid="classdpp_1_1guild_1a7d1ad4ac2b329f47948c91fe4277932e" kind="function"><name>is_welcome_screen_enabled</name></member>
@@ -4276,15 +4279,16 @@
     <member refid="namespacedpp_1ace5fc4a0db4c08d37d3a1b8e7e22383aa58c9c9013412ff54052a11bae62d48fb" kind="enumvalue"><name>g_three_day_thread_archive</name></member>
     <member refid="namespacedpp_1ace5fc4a0db4c08d37d3a1b8e7e22383aa5fce362e803c63fe1ef9ebb2b06bb5a8" kind="enumvalue"><name>g_ticketed_events</name></member>
     <member refid="namespacedpp_1ace5fc4a0db4c08d37d3a1b8e7e22383aa35aa6bdeb78a4e8c80b4896c6fde3965" kind="enumvalue"><name>g_channel_banners</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4e" kind="enum"><name>guild_flags_extra</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e" kind="enumvalue"><name>g_premium_progress_bar_enabled</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e" kind="enumvalue"><name>g_animated_banner</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b" kind="enumvalue"><name>g_auto_moderation</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4eabc65e4309cc670db60917406e82b981a" kind="enumvalue"><name>g_invites_disabled</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4ea477c960c0a00b66cc0e69ec2ae4a25c4" kind="enumvalue"><name>g_developer_support_server</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4eae894768490e68946428bfc53a78ad257" kind="enumvalue"><name>g_no_role_subscription_notifications</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4eac0dc8cfe46586bc920c20a943bf4a434" kind="enumvalue"><name>g_no_role_subscription_notification_replies</name></member>
-    <member refid="namespacedpp_1aef5a99cfd5c5e87f039782311d2f2f4ea5ba131da25d7cbac62c1e5475ebd2ad1" kind="enumvalue"><name>g_role_subscriptions_available_for_purchase</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9" kind="enum"><name>guild_flags_extra</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9a6fb4a086c12954347ccb438b53f8997e" kind="enumvalue"><name>g_premium_progress_bar_enabled</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9ab63667e028c002ffc28b39a53a62cb0e" kind="enumvalue"><name>g_animated_banner</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9ade43e3e0128402f02a12a5bd4971f73b" kind="enumvalue"><name>g_auto_moderation</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9abc65e4309cc670db60917406e82b981a" kind="enumvalue"><name>g_invites_disabled</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9a477c960c0a00b66cc0e69ec2ae4a25c4" kind="enumvalue"><name>g_developer_support_server</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9ae894768490e68946428bfc53a78ad257" kind="enumvalue"><name>g_no_role_subscription_notifications</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9ac0dc8cfe46586bc920c20a943bf4a434" kind="enumvalue"><name>g_no_role_subscription_notification_replies</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9a5ba131da25d7cbac62c1e5475ebd2ad1" kind="enumvalue"><name>g_role_subscriptions_available_for_purchase</name></member>
+    <member refid="namespacedpp_1ad5440c062424f43282b804b7b7de31c9a4e2eea7fdcda8cc71f12241444933143" kind="enumvalue"><name>g_raid_alerts_disabled</name></member>
     <member refid="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30" kind="enum"><name>guild_member_flags</name></member>
     <member refid="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4" kind="enumvalue"><name>gm_deaf</name></member>
     <member refid="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f" kind="enumvalue"><name>gm_mute</name></member>

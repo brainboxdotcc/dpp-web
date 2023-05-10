@@ -1286,15 +1286,16 @@ var namespacedpp =
       [ "g_ticketed_events", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa5fce362e803c63fe1ef9ebb2b06bb5a8", null ],
       [ "g_channel_banners", "namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa35aa6bdeb78a4e8c80b4896c6fde3965", null ]
     ] ],
-    [ "guild_flags_extra", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4e", [
-      [ "g_premium_progress_bar_enabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea6fb4a086c12954347ccb438b53f8997e", null ],
-      [ "g_animated_banner", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eab63667e028c002ffc28b39a53a62cb0e", null ],
-      [ "g_auto_moderation", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eade43e3e0128402f02a12a5bd4971f73b", null ],
-      [ "g_invites_disabled", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eabc65e4309cc670db60917406e82b981a", null ],
-      [ "g_developer_support_server", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea477c960c0a00b66cc0e69ec2ae4a25c4", null ],
-      [ "g_no_role_subscription_notifications", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eae894768490e68946428bfc53a78ad257", null ],
-      [ "g_no_role_subscription_notification_replies", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4eac0dc8cfe46586bc920c20a943bf4a434", null ],
-      [ "g_role_subscriptions_available_for_purchase", "namespacedpp.html#aef5a99cfd5c5e87f039782311d2f2f4ea5ba131da25d7cbac62c1e5475ebd2ad1", null ]
+    [ "guild_flags_extra", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9", [
+      [ "g_premium_progress_bar_enabled", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a6fb4a086c12954347ccb438b53f8997e", null ],
+      [ "g_animated_banner", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9ab63667e028c002ffc28b39a53a62cb0e", null ],
+      [ "g_auto_moderation", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9ade43e3e0128402f02a12a5bd4971f73b", null ],
+      [ "g_invites_disabled", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9abc65e4309cc670db60917406e82b981a", null ],
+      [ "g_developer_support_server", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a477c960c0a00b66cc0e69ec2ae4a25c4", null ],
+      [ "g_no_role_subscription_notifications", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9ae894768490e68946428bfc53a78ad257", null ],
+      [ "g_no_role_subscription_notification_replies", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9ac0dc8cfe46586bc920c20a943bf4a434", null ],
+      [ "g_role_subscriptions_available_for_purchase", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a5ba131da25d7cbac62c1e5475ebd2ad1", null ],
+      [ "g_raid_alerts_disabled", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a4e2eea7fdcda8cc71f12241444933143", null ]
     ] ],
     [ "guild_member_flags", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30", [
       [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
