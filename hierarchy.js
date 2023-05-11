@@ -11,7 +11,6 @@ var hierarchy =
     [ "dpp::application_install_params", "structdpp_1_1application__install__params.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
-    [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
     [ "dpp::awaitable< T >", "structdpp_1_1awaitable.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
@@ -58,6 +57,7 @@ var hierarchy =
       [ "dpp::events::channel_delete", "classdpp_1_1events_1_1channel__delete.html", null ],
       [ "dpp::events::channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", null ],
       [ "dpp::events::channel_update", "classdpp_1_1events_1_1channel__update.html", null ],
+      [ "dpp::events::guild_audit_log_entry_create", "classdpp_1_1events_1_1guild__audit__log__entry__create.html", null ],
       [ "dpp::events::guild_ban_add", "classdpp_1_1events_1_1guild__ban__add.html", null ],
       [ "dpp::events::guild_ban_remove", "classdpp_1_1events_1_1guild__ban__remove.html", null ],
       [ "dpp::events::guild_create", "classdpp_1_1events_1_1guild__create.html", null ],
@@ -121,6 +121,7 @@ var hierarchy =
       [ "dpp::channel_delete_t", "structdpp_1_1channel__delete__t.html", null ],
       [ "dpp::channel_pins_update_t", "structdpp_1_1channel__pins__update__t.html", null ],
       [ "dpp::channel_update_t", "structdpp_1_1channel__update__t.html", null ],
+      [ "dpp::guild_audit_log_entry_create_t", "structdpp_1_1guild__audit__log__entry__create__t.html", null ],
       [ "dpp::guild_ban_add_t", "structdpp_1_1guild__ban__add__t.html", null ],
       [ "dpp::guild_ban_remove_t", "structdpp_1_1guild__ban__remove__t.html", null ],
       [ "dpp::guild_create_t", "structdpp_1_1guild__create__t.html", null ],
@@ -230,6 +231,9 @@ var hierarchy =
     ] ],
     [ "dpp::json_interface< application_role_connection_metadata >", "structdpp_1_1json__interface.html", [
       [ "dpp::application_role_connection_metadata", "classdpp_1_1application__role__connection__metadata.html", null ]
+    ] ],
+    [ "dpp::json_interface< audit_entry >", "structdpp_1_1json__interface.html", [
+      [ "dpp::audit_entry", "structdpp_1_1audit__entry.html", null ]
     ] ],
     [ "dpp::json_interface< auditlog >", "structdpp_1_1json__interface.html", [
       [ "dpp::auditlog", "classdpp_1_1auditlog.html", null ]

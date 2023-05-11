@@ -799,6 +799,7 @@ var namespacedpp =
     [ "forum_tag", "structdpp_1_1forum__tag.html", "structdpp_1_1forum__tag" ],
     [ "gateway", "structdpp_1_1gateway.html", "structdpp_1_1gateway" ],
     [ "guild", "classdpp_1_1guild.html", "classdpp_1_1guild" ],
+    [ "guild_audit_log_entry_create_t", "structdpp_1_1guild__audit__log__entry__create__t.html", "structdpp_1_1guild__audit__log__entry__create__t" ],
     [ "guild_ban_add_t", "structdpp_1_1guild__ban__add__t.html", "structdpp_1_1guild__ban__add__t" ],
     [ "guild_ban_remove_t", "structdpp_1_1guild__ban__remove__t.html", "structdpp_1_1guild__ban__remove__t" ],
     [ "guild_command_permissions", "classdpp_1_1guild__command__permissions.html", "classdpp_1_1guild__command__permissions" ],

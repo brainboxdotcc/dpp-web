@@ -9,6 +9,7 @@ var namespacedpp_1_1events =
     [ "channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", "classdpp_1_1events_1_1channel__pins__update" ],
     [ "channel_update", "classdpp_1_1events_1_1channel__update.html", "classdpp_1_1events_1_1channel__update" ],
     [ "event", "classdpp_1_1events_1_1event.html", "classdpp_1_1events_1_1event" ],
+    [ "guild_audit_log_entry_create", "classdpp_1_1events_1_1guild__audit__log__entry__create.html", "classdpp_1_1events_1_1guild__audit__log__entry__create" ],
     [ "guild_ban_add", "classdpp_1_1events_1_1guild__ban__add.html", "classdpp_1_1events_1_1guild__ban__add" ],
     [ "guild_ban_remove", "classdpp_1_1events_1_1guild__ban__remove.html", "classdpp_1_1events_1_1guild__ban__remove" ],
     [ "guild_create", "classdpp_1_1events_1_1guild__create.html", "classdpp_1_1events_1_1guild__create" ],

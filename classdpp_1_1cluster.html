@@ -1861,6 +1861,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1a632b3c2c8d3ff3a47372ffa770acf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1message__create__t.html">message_create_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a1a632b3c2c8d3ff3a47372ffa770acf5">on_message_create</a></td></tr>
 <tr class="memdesc:a1a632b3c2c8d3ff3a47372ffa770acf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new message arrives from discord. Note that D++ does not cache messages. If you want to cache these objects you should create something yourself within your bot. Caching of messages is not on the roadmap to be supported as it consumes excessive amounts of RAM. For an example for caching of messages, please see <a class="el" href="caching-messages.html">Caching Messages</a>.  <a href="classdpp_1_1cluster.html#a1a632b3c2c8d3ff3a47372ffa770acf5">More...</a><br /></td></tr>
 <tr class="separator:a1a632b3c2c8d3ff3a47372ffa770acf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcbe6998c78bb1e88c76adc8b1cf0dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1guild__audit__log__entry__create__t.html">guild_audit_log_entry_create_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aadcbe6998c78bb1e88c76adc8b1cf0dd">on_guild_audit_log_entry_create</a></td></tr>
+<tr class="memdesc:aadcbe6998c78bb1e88c76adc8b1cf0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a guild audit log entry is created.  <a href="classdpp_1_1cluster.html#aadcbe6998c78bb1e88c76adc8b1cf0dd">More...</a><br /></td></tr>
+<tr class="separator:aadcbe6998c78bb1e88c76adc8b1cf0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc62294deed1a73261ba43400f942380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1guild__ban__add__t.html">guild_ban_add_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#adc62294deed1a73261ba43400f942380">on_guild_ban_add</a></td></tr>
 <tr class="memdesc:adc62294deed1a73261ba43400f942380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a ban is added to a guild.  <a href="classdpp_1_1cluster.html#adc62294deed1a73261ba43400f942380">More...</a><br /></td></tr>
 <tr class="separator:adc62294deed1a73261ba43400f942380"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -25645,6 +25648,24 @@ unless you want something special from <code><a class="el" href="classdpp_1_1use
 
 <p>Called when a modal dialog is submitted. Form submits are triggered by discord when modal dialogs are submitted which you have associated with a slash command using <a class="el" href="structdpp_1_1interaction__modal__response.html" title="Represents a modal dialog box response to an interaction.">dpp::interaction_modal_response</a>. </p>
 <dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1form__submit__t.html">form_submit_t</a>&amp;, and returns void. </dd></dl>
+
+</div>
+</div>
+<a id="aadcbe6998c78bb1e88c76adc8b1cf0dd" name="aadcbe6998c78bb1e88c76adc8b1cf0dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadcbe6998c78bb1e88c76adc8b1cf0dd">&#9670;&nbsp;</a></span>on_guild_audit_log_entry_create</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt;<a class="el" href="structdpp_1_1guild__audit__log__entry__create__t.html">guild_audit_log_entry_create_t</a>&gt; dpp::cluster::on_guild_audit_log_entry_create</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a guild audit log entry is created. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/topics/gateway-events#guild-audit-log-entry-create">https://discord.com/developers/docs/topics/gateway-events#guild-audit-log-entry-create</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1guild__audit__log__entry__create__t.html" title="Guild audit log entry create.">guild_audit_log_entry_create_t</a>&amp;, and returns void. </dd></dl>
 
 </div>
 </div>
