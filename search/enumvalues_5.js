@@ -41,10 +41,14 @@ var searchData=
   ['g_5fvip_5fregions_38',['g_vip_regions',['../namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa5b7123fe609093340a16c80264d09172',1,'dpp']]],
   ['g_5fwelcome_5fscreen_5fenabled_39',['g_welcome_screen_enabled',['../namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa395413623895eaac5998ae8b4dc2031f',1,'dpp']]],
   ['g_5fwidget_5fenabled_40',['g_widget_enabled',['../namespacedpp.html#ace5fc4a0db4c08d37d3a1b8e7e22383aa95bab65c1394b0a2cbd23083a788be5c',1,'dpp']]],
-  ['gm_5fanimated_5favatar_41',['gm_animated_avatar',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4',1,'dpp']]],
-  ['gm_5fdeaf_42',['gm_deaf',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4',1,'dpp']]],
-  ['gm_5fmute_43',['gm_mute',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f',1,'dpp']]],
-  ['gm_5fpending_44',['gm_pending',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41',1,'dpp']]],
-  ['gm_5fvoice_5faction_45',['gm_voice_action',['../namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a932d7b56679a161e1af9020570e0810d',1,'dpp']]],
-  ['group_5fdm_46',['GROUP_DM',['../namespacedpp.html#a732e832861149a278f27ea7840b8e4caa0e46c57251ffbb0889dded66229de5e3',1,'dpp']]]
+  ['gm_5fanimated_5favatar_41',['gm_animated_avatar',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a5fdf0027681c83f79661940b012518e4',1,'dpp']]],
+  ['gm_5fbypasses_5fverification_42',['gm_bypasses_verification',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a1eb08ea12396d0f9c4384b3625bccc95',1,'dpp']]],
+  ['gm_5fcompleted_5fonboarding_43',['gm_completed_onboarding',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a4d5bcd349947a93cbb6699ca019d935b',1,'dpp']]],
+  ['gm_5fdeaf_44',['gm_deaf',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a966c5f8d7bd60e0daf9ceaafb556b4c4',1,'dpp']]],
+  ['gm_5fdid_5frejoin_45',['gm_did_rejoin',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a063bf801100f55dd689128ea1fd6ed45',1,'dpp']]],
+  ['gm_5fmute_46',['gm_mute',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a557d08c731cb82cfd66915aaa0466a2f',1,'dpp']]],
+  ['gm_5fpending_47',['gm_pending',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a0c44c916411b26b1b0a3b5288c346a41',1,'dpp']]],
+  ['gm_5fstarted_5fonboarding_48',['gm_started_onboarding',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a598ddbf3ac6ff21d3d16d995b4f7816e',1,'dpp']]],
+  ['gm_5fvoice_5faction_49',['gm_voice_action',['../namespacedpp.html#acd31b462e01d313c84ec3e7261168277a932d7b56679a161e1af9020570e0810d',1,'dpp']]],
+  ['group_5fdm_50',['GROUP_DM',['../namespacedpp.html#a732e832861149a278f27ea7840b8e4caa0e46c57251ffbb0889dded66229de5e3',1,'dpp']]]
 ];

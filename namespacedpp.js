@@ -1298,12 +1298,16 @@ var namespacedpp =
       [ "g_role_subscriptions_available_for_purchase", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a5ba131da25d7cbac62c1e5475ebd2ad1", null ],
       [ "g_raid_alerts_disabled", "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a4e2eea7fdcda8cc71f12241444933143", null ]
     ] ],
-    [ "guild_member_flags", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30", [
-      [ "gm_deaf", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
-      [ "gm_mute", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f", null ],
-      [ "gm_pending", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41", null ],
-      [ "gm_animated_avatar", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4", null ],
-      [ "gm_voice_action", "namespacedpp.html#aa4ffb1848bf700da25bc187e38054a30a932d7b56679a161e1af9020570e0810d", null ]
+    [ "guild_member_flags", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277", [
+      [ "gm_deaf", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a966c5f8d7bd60e0daf9ceaafb556b4c4", null ],
+      [ "gm_mute", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a557d08c731cb82cfd66915aaa0466a2f", null ],
+      [ "gm_pending", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a0c44c916411b26b1b0a3b5288c346a41", null ],
+      [ "gm_animated_avatar", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a5fdf0027681c83f79661940b012518e4", null ],
+      [ "gm_voice_action", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a932d7b56679a161e1af9020570e0810d", null ],
+      [ "gm_did_rejoin", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a063bf801100f55dd689128ea1fd6ed45", null ],
+      [ "gm_completed_onboarding", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a4d5bcd349947a93cbb6699ca019d935b", null ],
+      [ "gm_bypasses_verification", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a1eb08ea12396d0f9c4384b3625bccc95", null ],
+      [ "gm_started_onboarding", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a598ddbf3ac6ff21d3d16d995b4f7816e", null ]
     ] ],
     [ "guild_nsfw_level_t", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591", [
       [ "nsfw_default", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa", null ],

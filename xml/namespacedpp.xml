@@ -2626,65 +2626,101 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="138" column="1" bodyfile="include/dpp/guild.h" bodystart="138" bodyend="157"/>
       </memberdef>
-      <memberdef kind="enum" id="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30" prot="public" static="no" strong="no">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="namespacedpp_1acd31b462e01d313c84ec3e7261168277" prot="public" static="no" strong="no">
+        <type>uint16_t</type>
         <name>guild_member_flags</name>
-        <enumvalue id="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30a966c5f8d7bd60e0daf9ceaafb556b4c4" prot="public">
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a966c5f8d7bd60e0daf9ceaafb556b4c4" prot="public">
           <name>gm_deaf</name>
-          <initializer>=		0b00000001</initializer>
+          <initializer>=		0b0000000000000001</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>Member deafened in voice channels </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30a557d08c731cb82cfd66915aaa0466a2f" prot="public">
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a557d08c731cb82cfd66915aaa0466a2f" prot="public">
           <name>gm_mute</name>
-          <initializer>=		0b00000010</initializer>
+          <initializer>=		0b0000000000000010</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>Member muted in voice channels </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30a0c44c916411b26b1b0a3b5288c346a41" prot="public">
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a0c44c916411b26b1b0a3b5288c346a41" prot="public">
           <name>gm_pending</name>
-          <initializer>=		0b00000100</initializer>
+          <initializer>=		0b0000000000000100</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>Member pending verification by membership screening </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30a5fdf0027681c83f79661940b012518e4" prot="public">
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a5fdf0027681c83f79661940b012518e4" prot="public">
           <name>gm_animated_avatar</name>
-          <initializer>= 	0b00001000</initializer>
+          <initializer>= 	0b0000000000001000</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>Member has animated guild-specific avatar </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1aa4ffb1848bf700da25bc187e38054a30a932d7b56679a161e1af9020570e0810d" prot="public">
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a932d7b56679a161e1af9020570e0810d" prot="public">
           <name>gm_voice_action</name>
-          <initializer>= 		0b00010000</initializer>
+          <initializer>= 		0b0000000000010000</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>gm_deaf or gm_mute has been toggled </para>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a063bf801100f55dd689128ea1fd6ed45" prot="public">
+          <name>gm_did_rejoin</name>
+          <initializer>= 0b0000000000100000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Member has left and rejoined the guild </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a4d5bcd349947a93cbb6699ca019d935b" prot="public">
+          <name>gm_completed_onboarding</name>
+          <initializer>= 0b0000000001000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Member has completed onboarding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a1eb08ea12396d0f9c4384b3625bccc95" prot="public">
+          <name>gm_bypasses_verification</name>
+          <initializer>= 0b0000000010000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Member is exempt from guild verification requirements </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1acd31b462e01d313c84ec3e7261168277a598ddbf3ac6ff21d3d16d995b4f7816e" prot="public">
+          <name>gm_started_onboarding</name>
+          <initializer>= 0b0000000100000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Member has started onboarding </para>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
 <para>Various flags that can be used to indicate the status of a guild member. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Use set_mute and set_deaf member functions and do not toggle the bits yourself. </para>
+<para><simplesect kind="note"><para>Use the setter functions in <ref refid="classdpp_1_1guild__member" kindref="compound">dpp::guild_member</ref> and do not toggle the bits yourself. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="163" column="1" bodyfile="include/dpp/guild.h" bodystart="163" bodyend="174"/>
+        <location file="include/dpp/guild.h" line="163" column="1" bodyfile="include/dpp/guild.h" bodystart="163" bodyend="182"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1afd5e6717b5f1f374c5c29f91394aa591" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2735,7 +2771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="363" column="1" bodyfile="include/dpp/guild.h" bodystart="363" bodyend="372"/>
+        <location file="include/dpp/guild.h" line="412" column="1" bodyfile="include/dpp/guild.h" bodystart="412" bodyend="421"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a47f79e1142def583c59df70b1382319f" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2774,7 +2810,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="379" column="1" bodyfile="include/dpp/guild.h" bodystart="379" bodyend="386"/>
+        <location file="include/dpp/guild.h" line="428" column="1" bodyfile="include/dpp/guild.h" bodystart="428" bodyend="435"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a99a41e59054cde79c2b893ddb9320e4a" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2804,7 +2840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="392" column="1" bodyfile="include/dpp/guild.h" bodystart="392" bodyend="397"/>
+        <location file="include/dpp/guild.h" line="441" column="1" bodyfile="include/dpp/guild.h" bodystart="441" bodyend="446"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a15724514db1d98eb10a8bd2d5ba44c85" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2861,7 +2897,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="402" column="1" bodyfile="include/dpp/guild.h" bodystart="402" bodyend="413"/>
+        <location file="include/dpp/guild.h" line="451" column="1" bodyfile="include/dpp/guild.h" bodystart="451" bodyend="462"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a3be39a31818d9499750c3efd43281d13" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2891,7 +2927,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="418" column="1" bodyfile="include/dpp/guild.h" bodystart="418" bodyend="423"/>
+        <location file="include/dpp/guild.h" line="467" column="1" bodyfile="include/dpp/guild.h" bodystart="467" bodyend="472"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ab7f40af8c547f08790e620708879fcba" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2939,7 +2975,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="428" column="1" bodyfile="include/dpp/guild.h" bodystart="428" bodyend="437"/>
+        <location file="include/dpp/guild.h" line="477" column="1" bodyfile="include/dpp/guild.h" bodystart="477" bodyend="486"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ad195bc4d4cd3a639ac2090b69997fc9b" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2999,7 +3035,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="442" column="1" bodyfile="include/dpp/guild.h" bodystart="442" bodyend="455"/>
+        <location file="include/dpp/guild.h" line="491" column="1" bodyfile="include/dpp/guild.h" bodystart="491" bodyend="504"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1aaaa159f13811e8d13973c2794e171091" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6257,7 +6293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="459" column="28" bodyfile="include/dpp/guild.h" bodystart="459" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="508" column="28" bodyfile="include/dpp/guild.h" bodystart="508" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1guild" kindref="compound">guild</ref> &gt;</type>
@@ -6271,7 +6307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="968" column="28" bodyfile="include/dpp/guild.h" bodystart="968" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="1017" column="28" bodyfile="include/dpp/guild.h" bodystart="1017" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt;</type>
@@ -6285,7 +6321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1018" column="28" bodyfile="include/dpp/guild.h" bodystart="1018" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="1067" column="28" bodyfile="include/dpp/guild.h" bodystart="1067" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4dbbdf54366910bacd95554ccbc705a2" prot="public" static="no">
         <type>std::multimap&lt; std::string, std::string &gt;</type>
@@ -8514,7 +8550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1015" column="6" declfile="include/dpp/guild.h" declline="1015" declcolumn="6"/>
+        <location file="include/dpp/guild.h" line="1064" column="6" declfile="include/dpp/guild.h" declline="1064" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a239ce3fb8b4d9873dffeb5cb9b249f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> DPP_EXPORT</type>
@@ -8565,7 +8601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1029" column="25" declfile="include/dpp/guild.h" declline="1029" declcolumn="25"/>
+        <location file="include/dpp/guild.h" line="1078" column="25" declfile="include/dpp/guild.h" declline="1078" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a6da92d90e8b0847e2d8c2633aaf370f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
