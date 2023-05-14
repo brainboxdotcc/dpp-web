@@ -656,9 +656,9 @@
         </inbodydescription>
         <location file="include/dpp/discordclient.h" line="358" column="22" bodyfile="include/dpp/discordclient.h" bodystart="358" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1discord__client_1ad474846a37755a4b1064a5c3a3480fbc" prot="public" static="no" mutable="no">
-        <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> * &gt;</type>
-        <definition>std::unordered_map&lt;snowflake, voiceconn*&gt; dpp::discord_client::connecting_voice_channels</definition>
+      <memberdef kind="variable" id="classdpp_1_1discord__client_1ac254a3401c868ed2ad29adebab0ecf3c" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, std::unique_ptr&lt; <ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;snowflake, std::unique_ptr&lt;voiceconn&gt; &gt; dpp::discord_client::connecting_voice_channels</definition>
         <argsstring></argsstring>
         <name>connecting_voice_channels</name>
         <briefdescription>
@@ -2029,7 +2029,7 @@
       <member refid="classdpp_1_1websocket__client_1aee1812f852a44ee1dc00e66477ffbfab" prot="protected" virt="virtual"><scope>dpp::discord_client</scope><name>connect</name></member>
       <member refid="classdpp_1_1discord__client_1ad5b9759853019efe55112f13d589b0e1" prot="private" virt="non-virtual"><scope>dpp::discord_client</scope><name>connect_time</name></member>
       <member refid="classdpp_1_1discord__client_1ae3875af4631a5d4f0718163184108649" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>connect_voice</name></member>
-      <member refid="classdpp_1_1discord__client_1ad474846a37755a4b1064a5c3a3480fbc" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>connecting_voice_channels</name></member>
+      <member refid="classdpp_1_1discord__client_1ac254a3401c868ed2ad29adebab0ecf3c" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>connecting_voice_channels</name></member>
       <member refid="classdpp_1_1discord__client_1afed78d2e1b09e006ede8b4690895a866" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>creator</name></member>
       <member refid="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>custom_readable_fd</name></member>
       <member refid="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>custom_readable_ready</name></member>

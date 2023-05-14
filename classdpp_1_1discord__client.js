@@ -38,7 +38,7 @@ var classdpp_1_1discord__client =
     [ "bytes_in", "classdpp_1_1discord__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d", null ],
     [ "bytes_out", "classdpp_1_1discord__client.html#a8022a8002cfc6f394016546168ef4085", null ],
     [ "cipher", "classdpp_1_1discord__client.html#a5fc2e7836da5485216419bbf17e49428", null ],
-    [ "connecting_voice_channels", "classdpp_1_1discord__client.html#ad474846a37755a4b1064a5c3a3480fbc", null ],
+    [ "connecting_voice_channels", "classdpp_1_1discord__client.html#ac254a3401c868ed2ad29adebab0ecf3c", null ],
     [ "creator", "classdpp_1_1discord__client.html#afed78d2e1b09e006ede8b4690895a866", null ],
     [ "custom_readable_fd", "classdpp_1_1discord__client.html#aa183564aac368ba97b653260ab5f5b6b", null ],
     [ "custom_readable_ready", "classdpp_1_1discord__client.html#a47fa1e38d3b5d26b6913577ffe9c73cd", null ],

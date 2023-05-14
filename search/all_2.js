@@ -332,7 +332,7 @@ var searchData=
   ['connect_5fmember_5fvoice_329',['connect_member_voice',['../classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e',1,'dpp::guild']]],
   ['connect_5fvoice_330',['connect_voice',['../classdpp_1_1discord__client.html#ae3875af4631a5d4f0718163184108649',1,'dpp::discord_client']]],
   ['connected_331',['CONNECTED',['../namespacedpp.html#af3b7f3e861707f45beefa9449de70519ab21dc4f63ee869c75f21c77922769e6d',1,'dpp']]],
-  ['connecting_5fvoice_5fchannels_332',['connecting_voice_channels',['../classdpp_1_1discord__client.html#ad474846a37755a4b1064a5c3a3480fbc',1,'dpp::discord_client']]],
+  ['connecting_5fvoice_5fchannels_332',['connecting_voice_channels',['../classdpp_1_1discord__client.html#ac254a3401c868ed2ad29adebab0ecf3c',1,'dpp::discord_client']]],
   ['connection_333',['connection',['../classdpp_1_1connection.html#a8011f7947197f36ed854a16ab0e63233',1,'dpp::connection::connection()'],['../classdpp_1_1connection.html',1,'dpp::connection']]],
   ['connection_5fexception_334',['connection_exception',['../classdpp_1_1connection__exception.html',1,'dpp']]],
   ['connection_5fmap_335',['connection_map',['../namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a',1,'dpp']]],
