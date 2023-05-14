@@ -166,6 +166,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a772e74a4a2e929d7ccc4c242f932a8af"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1emoji.html#a772e74a4a2e929d7ccc4c242f932a8af">get_mention</a> () const</td></tr>
 <tr class="memdesc:a772e74a4a2e929d7ccc4c242f932a8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mention/ping for the emoji.  <a href="classdpp_1_1emoji.html#a772e74a4a2e929d7ccc4c242f932a8af">More...</a><br /></td></tr>
 <tr class="separator:a772e74a4a2e929d7ccc4c242f932a8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb06ea76e01f0ed0f83a2ccd62534fc3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1emoji.html#aeb06ea76e01f0ed0f83a2ccd62534fc3">get_url</a> (uint16_t size=0, const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> <a class="el" href="classdpp_1_1emoji.html#a180ce7e313d6ac86277798012e3b7ece">format</a>=<a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7">i_png</a>, bool prefer_animated=true) const</td></tr>
+<tr class="memdesc:aeb06ea76e01f0ed0f83a2ccd62534fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the custom emoji url.  <a href="classdpp_1_1emoji.html#aeb06ea76e01f0ed0f83a2ccd62534fc3">More...</a><br /></td></tr>
+<tr class="separator:aeb06ea76e01f0ed0f83a2ccd62534fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa66e351fb6573a9d262ffdb2f47681b7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1managed.html#aa66e351fb6573a9d262ffdb2f47681b7">get_creation_time</a> () const</td></tr>
 <tr class="memdesc:aa66e351fb6573a9d262ffdb2f47681b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the creation time of this object according to Discord.  <a href="classdpp_1_1managed.html#aa66e351fb6573a9d262ffdb2f47681b7">More...</a><br /></td></tr>
 <tr class="separator:aa66e351fb6573a9d262ffdb2f47681b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -476,6 +479,51 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The formatted mention of the emoji. </dd></dl>
+
+</div>
+</div>
+<a id="aeb06ea76e01f0ed0f83a2ccd62534fc3" name="aeb06ea76e01f0ed0f83a2ccd62534fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb06ea76e01f0ed0f83a2ccd62534fc3">&#9670;&nbsp;</a></span>get_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::emoji::get_url </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>size</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a>&#160;</td>
+          <td class="paramname"><em>format</em> = <code><a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7">i_png</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>prefer_animated</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the custom emoji url. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size of the emoji in pixels. It can be any power of two between 16 and 4096, otherwise the default sized emoji is returned. </td></tr>
+    <tr><td class="paramname">format</td><td>The format to use for the emoji. It can be one of <code>i_webp</code>, <code>i_jpg</code>, <code>i_png</code> or <code>i_gif</code>. Passing <code>i_gif</code> might result in an invalid url for non-animated emojis. Consider using the <code>prefer_animated</code> parameter instead. </td></tr>
+    <tr><td class="paramname">prefer_animated</td><td>Whether you prefer gif format. If true, it'll return gif format whenever the emoji is available as animated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string emoji url or an empty string, if the id is not set </dd></dl>
 
 </div>
 </div>

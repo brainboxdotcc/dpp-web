@@ -1,9 +1,11 @@
 var NAVTREEINDEX28 =
 {
-"structdpp_1_1guild__create__t.html#a603cd7283124f0673e3779bc11d417a6":[7,0,0,90,10],
+"structdpp_1_1guild__create__t.html#a5afbcd36109734ad0fca14ec848b73b7":[8,0,0,88,1],
+"structdpp_1_1guild__create__t.html#a5afbcd36109734ad0fca14ec848b73b7":[7,0,0,90,1],
 "structdpp_1_1guild__create__t.html#a603cd7283124f0673e3779bc11d417a6":[8,0,0,88,10],
-"structdpp_1_1guild__create__t.html#a6a266af2a91170b3cccdb543040fef8e":[8,0,0,88,7],
+"structdpp_1_1guild__create__t.html#a603cd7283124f0673e3779bc11d417a6":[7,0,0,90,10],
 "structdpp_1_1guild__create__t.html#a6a266af2a91170b3cccdb543040fef8e":[7,0,0,90,7],
+"structdpp_1_1guild__create__t.html#a6a266af2a91170b3cccdb543040fef8e":[8,0,0,88,7],
 "structdpp_1_1guild__create__t.html#aa01c8bb6c3624eeb4d3de063623ec6cb":[8,0,0,88,0],
 "structdpp_1_1guild__create__t.html#aa01c8bb6c3624eeb4d3de063623ec6cb":[7,0,0,90,0],
 "structdpp_1_1guild__create__t.html#abb3c477c6ae0c204c48ff21c4f582771":[8,0,0,88,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "structdpp_1_1guild__scheduled__event__user__add__t.html#aca2880114f69b7ba62eb5137824c1432":[7,0,0,106,2],
 "structdpp_1_1guild__scheduled__event__user__add__t.html#aca2880114f69b7ba62eb5137824c1432":[8,0,0,104,2],
 "structdpp_1_1guild__scheduled__event__user__remove__t.html":[8,0,0,105],
-"structdpp_1_1guild__scheduled__event__user__remove__t.html":[7,0,0,107],
-"structdpp_1_1guild__scheduled__event__user__remove__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,0,107,6],
-"structdpp_1_1guild__scheduled__event__user__remove__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[8,0,0,105,6]
+"structdpp_1_1guild__scheduled__event__user__remove__t.html":[7,0,0,107]
 };
