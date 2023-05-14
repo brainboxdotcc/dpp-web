@@ -21,7 +21,7 @@ var searchData=
   ['handle_5fframe_18',['handle_frame',['../classdpp_1_1websocket__client.html#a066fe44ec020e9f2ab26b58a3d015bdf',1,'dpp::websocket_client::handle_frame()'],['../classdpp_1_1discord__voice__client.html#a96d7c274062a8ed210bf15bdddaa3a71',1,'dpp::discord_voice_client::handle_frame()'],['../classdpp_1_1discord__client.html#a2cb9540221a39c9050a2036928c7b7b4',1,'dpp::discord_client::handle_frame()']]],
   ['handle_5ftype_19',['handle_type',['../namespacedpp.html#a4f13c6a68b674ab0b3e55f6df38b46a2',1,'dpp']]],
   ['harvest_5fgold_20',['harvest_gold',['../namespacedpp_1_1colors.html#a57cd0278ac3b3905a4184b1d1e1a799c',1,'dpp::colors']]],
-  ['has_21',['has',['../classdpp_1_1permission.html#a349f7b93214a0dd1fbf35f7d0135e649',1,'dpp::permission']]],
+  ['has_21',['has',['../classdpp_1_1permission.html#a02df5786b6ca1d11bbd24a175e3e28c4',1,'dpp::permission']]],
   ['has_5fadd_5freactions_22',['has_add_reactions',['../classdpp_1_1role.html#a0e2683fd21c1743132eb29f8155c12a2',1,'dpp::role']]],
   ['has_5fadministrator_23',['has_administrator',['../classdpp_1_1role.html#a3ffcaced8369d47cc3f954fa0978c40c',1,'dpp::role']]],
   ['has_5fanimated_5fbanner_24',['has_animated_banner',['../classdpp_1_1user__identified.html#a4b6f839d06a71e77094a432fe665c1f9',1,'dpp::user_identified::has_animated_banner()'],['../classdpp_1_1guild.html#a5e06bd5f262e0a321bb959f25a7dddf0',1,'dpp::guild::has_animated_banner() const']]],
