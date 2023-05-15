@@ -353,9 +353,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a837aa702a92e98ef593381fb147d23fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a837aa702a92e98ef593381fb147d23fb">channel_delete</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a837aa702a92e98ef593381fb147d23fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a channel.  <a href="classdpp_1_1cluster.html#a837aa702a92e98ef593381fb147d23fb">More...</a><br /></td></tr>
 <tr class="separator:a837aa702a92e98ef593381fb147d23fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a4d4220a93d6ba8c72d5472fd6718d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a4a4d4220a93d6ba8c72d5472fd6718d0">invite_get</a> (const std::string &amp;<a class="el" href="classdpp_1_1invite.html">invite</a>, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
-<tr class="memdesc:a4a4d4220a93d6ba8c72d5472fd6718d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get details about an invite.  <a href="classdpp_1_1cluster.html#a4a4d4220a93d6ba8c72d5472fd6718d0">More...</a><br /></td></tr>
-<tr class="separator:a4a4d4220a93d6ba8c72d5472fd6718d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbddcf4f753ced02d8ec693dcaf583c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a6dbddcf4f753ced02d8ec693dcaf583c">invite_get</a> (const std::string &amp;invite_code, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
+<tr class="memdesc:a6dbddcf4f753ced02d8ec693dcaf583c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get details about an invite.  <a href="classdpp_1_1cluster.html#a6dbddcf4f753ced02d8ec693dcaf583c">More...</a><br /></td></tr>
+<tr class="separator:a6dbddcf4f753ced02d8ec693dcaf583c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1279fd6e3b1bd609c4dc85b6c3fc3631"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a1279fd6e3b1bd609c4dc85b6c3fc3631">invite_delete</a> (const std::string &amp;<a class="el" href="classdpp_1_1invite.html">invite</a>, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a1279fd6e3b1bd609c4dc85b6c3fc3631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an invite.  <a href="classdpp_1_1cluster.html#a1279fd6e3b1bd609c4dc85b6c3fc3631">More...</a><br /></td></tr>
 <tr class="separator:a1279fd6e3b1bd609c4dc85b6c3fc3631"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -20699,8 +20699,8 @@ This method supports audit log reasons set by the <a class="el" href="classdpp_1
 
 </div>
 </div>
-<a id="a4a4d4220a93d6ba8c72d5472fd6718d0" name="a4a4d4220a93d6ba8c72d5472fd6718d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a4d4220a93d6ba8c72d5472fd6718d0">&#9670;&nbsp;</a></span>invite_get()</h2>
+<a id="a6dbddcf4f753ced02d8ec693dcaf583c" name="a6dbddcf4f753ced02d8ec693dcaf583c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dbddcf4f753ced02d8ec693dcaf583c">&#9670;&nbsp;</a></span>invite_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -20709,7 +20709,7 @@ This method supports audit log reasons set by the <a class="el" href="classdpp_1
           <td class="memname">void dpp::cluster::invite_get </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>invite</em>, </td>
+          <td class="paramname"><em>invite_code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -20729,7 +20729,7 @@ This method supports audit log reasons set by the <a class="el" href="classdpp_1
 <dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/invite#get-invite">https://discord.com/developers/docs/resources/invite#get-invite</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">invite</td><td>Invite code to get information on </td></tr>
+    <tr><td class="paramname">invite_code</td><td>Invite code to get information on </td></tr>
     <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="classdpp_1_1invite.html" title="Represents an invite to a discord guild or channel.">dpp::invite</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
   </table>
   </dd>

@@ -150,6 +150,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad9fa7eaac8be5f51f52fcb5e53734910"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <a class="el" href="structdpp_1_1confirmation__callback__t.html">dpp::confirmation_callback_t</a> &amp;detail)&gt; DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">log_error</a> ()</td></tr>
 <tr class="memdesc:ad9fa7eaac8be5f51f52fcb5e53734910"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default callback handler for API calls. on error, sends the error to the logger.  <a href="namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910">More...</a><br /></td></tr>
 <tr class="separator:ad9fa7eaac8be5f51f52fcb5e53734910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45546416b15c5878b38ce6e5da50d92"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#aa45546416b15c5878b38ce6e5da50d92">cdn_endpoint_url</a> (const std::vector&lt; <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> &gt; &amp;allowed_formats, const std::string &amp;path_without_extension, const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">dpp::image_type</a> format, uint16_t size, bool prefer_animated=false, bool is_animated=false)</td></tr>
+<tr class="separator:aa45546416b15c5878b38ce6e5da50d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cca3973610c9149d9361f29f4888fe5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a3cca3973610c9149d9361f29f4888fe5">cdn_endpoint_url_hash</a> (const std::vector&lt; <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> &gt; &amp;allowed_formats, const std::string &amp;path_without_extension, const std::string &amp;hash, const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">dpp::image_type</a> format, uint16_t size, bool prefer_animated=false, bool is_animated=false)</td></tr>
+<tr class="separator:a3cca3973610c9149d9361f29f4888fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997bfb6a27ff8f66642b28d0d6b3e8e4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a997bfb6a27ff8f66642b28d0d6b3e8e4">cdn_endpoint_url_sticker</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> sticker_id, <a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2">sticker_format</a> format)</td></tr>
+<tr class="separator:a997bfb6a27ff8f66642b28d0d6b3e8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7d516c03d572fe65d01c4ec5e92c6f0"><td class="memItemLeft" align="right" valign="top">void DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">exec</a> (const std::string &amp;cmd, std::vector&lt; std::string &gt; parameters={}, <a class="el" href="namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6">cmd_result_t</a> callback={})</td></tr>
 <tr class="memdesc:ac7d516c03d572fe65d01c4ec5e92c6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a commandline program asynchronously. The command line program is spawned in a separate std::thread, and when complete, its output from stdout is passed to the callback function in its string parameter. For example.  <a href="namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0">More...</a><br /></td></tr>
 <tr class="separator:ac7d516c03d572fe65d01c4ec5e92c6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,6 +407,180 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string display value suffixed with M, G, T where necessary </dd></dl>
+
+</div>
+</div>
+<a id="aa45546416b15c5878b38ce6e5da50d92" name="aa45546416b15c5878b38ce6e5da50d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45546416b15c5878b38ce6e5da50d92">&#9670;&nbsp;</a></span>cdn_endpoint_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::utility::cdn_endpoint_url </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>allowed_formats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path_without_extension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">dpp::image_type</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>prefer_animated</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_animated</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >For internal use only. Helper function to easily create discord's cdn endpoint urls </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/reference#image-formatting-cdn-endpoints">https://discord.com/developers/docs/reference#image-formatting-cdn-endpoints</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">allowed_formats</td><td>A vector of supported formats for the endpoint from the discord docs </td></tr>
+    <tr><td class="paramname">path_without_extension</td><td>The path for the endpoint (without the extension e.g. <code>.png</code>) </td></tr>
+    <tr><td class="paramname">format</td><td>the wished format to return. Must be one of the formats passed in <code>allowed_formats</code>, otherwise it returns an empty string </td></tr>
+    <tr><td class="paramname">size</td><td>the image size which will be appended as a querystring to the url. It must be any power of two between 16 and 4096, otherwise no querystring will be appended (discord then returns the image as their default size) </td></tr>
+    <tr><td class="paramname">prefer_animated</td><td>Whether the user prefers gif format. If true, it'll return gif format whenever the emoji is available as animated. In this case, the <code>format</code>-parameter is only used for non-animated images. </td></tr>
+    <tr><td class="paramname">is_animated</td><td>Whether the image is actually animated or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string endpoint url or empty string </dd></dl>
+
+</div>
+</div>
+<a id="a3cca3973610c9149d9361f29f4888fe5" name="a3cca3973610c9149d9361f29f4888fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cca3973610c9149d9361f29f4888fe5">&#9670;&nbsp;</a></span>cdn_endpoint_url_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::utility::cdn_endpoint_url_hash </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>allowed_formats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path_without_extension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">dpp::image_type</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>prefer_animated</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_animated</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >For internal use only. Helper function to easily create discord's cdn endpoint urls </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/reference#image-formatting-cdn-endpoints">https://discord.com/developers/docs/reference#image-formatting-cdn-endpoints</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">allowed_formats</td><td>A vector of supported formats for the endpoint from the discord docs </td></tr>
+    <tr><td class="paramname">path_without_extension</td><td>The path for the endpoint (without the extension e.g. <code>.png</code>) </td></tr>
+    <tr><td class="paramname">hash</td><td>The hash (optional). If passed, it will be prefixed with <code>a_</code> for animated images (<code>is_animated</code>=true) </td></tr>
+    <tr><td class="paramname">format</td><td>the wished format to return. Must be one of the formats passed in <code>allowed_formats</code>, otherwise it returns an empty string </td></tr>
+    <tr><td class="paramname">size</td><td>the image size which will be appended as a querystring to the url. It must be any power of two between 16 and 4096, otherwise no querystring will be appended (discord then returns the image as their default size) </td></tr>
+    <tr><td class="paramname">prefer_animated</td><td>Whether the user prefers gif format. If true, it'll return gif format whenever the emoji is available as animated. In this case, the <code>format</code>-parameter is only used for non-animated images. </td></tr>
+    <tr><td class="paramname">is_animated</td><td>Whether the image is actually animated or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string endpoint url or empty string </dd></dl>
+
+</div>
+</div>
+<a id="a997bfb6a27ff8f66642b28d0d6b3e8e4" name="a997bfb6a27ff8f66642b28d0d6b3e8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997bfb6a27ff8f66642b28d0d6b3e8e4">&#9670;&nbsp;</a></span>cdn_endpoint_url_sticker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dpp::utility::cdn_endpoint_url_sticker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>sticker_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2">sticker_format</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >For internal use only. Helper function to easily create discord's cdn endpoint urls (specialised for stickers) </p><dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/reference#image-formatting-cdn-endpoints">https://discord.com/developers/docs/reference#image-formatting-cdn-endpoints</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sticker_id</td><td>The sticker ID. Returns empty string if 0 </td></tr>
+    <tr><td class="paramname">format</td><td>The format type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string endpoint url or empty string </dd></dl>
 
 </div>
 </div>

@@ -418,7 +418,7 @@ var classdpp_1_1cluster =
     [ "interaction_response_edit", "classdpp_1_1cluster.html#a983ac4283ea7ee5261475ec232a2c1bf", null ],
     [ "interaction_response_edit_sync", "classdpp_1_1cluster.html#a6701dcaad8e58149e44fc6555b1124d0", null ],
     [ "invite_delete", "classdpp_1_1cluster.html#a1279fd6e3b1bd609c4dc85b6c3fc3631", null ],
-    [ "invite_get", "classdpp_1_1cluster.html#a4a4d4220a93d6ba8c72d5472fd6718d0", null ],
+    [ "invite_get", "classdpp_1_1cluster.html#a6dbddcf4f753ced02d8ec693dcaf583c", null ],
     [ "log", "classdpp_1_1cluster.html#a13689440c9cc80279d415c563a6363c0", null ],
     [ "message_add_reaction", "classdpp_1_1cluster.html#adbee89fb3c2967fe5df3deee7876199c", null ],
     [ "message_add_reaction", "classdpp_1_1cluster.html#a189db8e638496e15542de95d747b1cf8", null ],
