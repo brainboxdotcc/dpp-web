@@ -1368,7 +1368,8 @@ var namespacedpp =
     [ "integration_type", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94f", [
       [ "i_twitch", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94faddc9e2ea6cfa8e6a5163742056a7ccdf", null ],
       [ "i_youtube", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94fa899faa63fdc7c1fc7f44b64c926b5f40", null ],
-      [ "i_discord", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94fab9837432650669ee78368c2ef5d45ffe", null ]
+      [ "i_discord", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94fab9837432650669ee78368c2ef5d45ffe", null ],
+      [ "i_guild_subscription", "namespacedpp.html#ae1540b4171f114c35864c752ef00f94fab8f7613bad83ab3cfaf534e3805f40fd", null ]
     ] ],
     [ "intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5", [
       [ "i_guilds", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5afdc0ced010f66a5c3a0c818ec5975359", null ],
