@@ -1,5 +1,15 @@
 var NAVTREEINDEX22 =
 {
+"namespacedpp_1_1colors.html#a77e19f621aa87a1ea6285872e8834a19":[7,0,0,0,517],
+"namespacedpp_1_1colors.html#a77e8c09562ffc29c81a29f3fd3705ad1":[7,0,0,0,277],
+"namespacedpp_1_1colors.html#a77fb77a8d57b3b2e828250097e3ec7a4":[7,0,0,0,268],
+"namespacedpp_1_1colors.html#a783f35f22612ac8598643cdf50a91a43":[7,0,0,0,502],
+"namespacedpp_1_1colors.html#a78e5e24170891da0c2065d43cbb178d3":[7,0,0,0,98],
+"namespacedpp_1_1colors.html#a793764e38c031a4bd4edaf419c320bc5":[7,0,0,0,504],
+"namespacedpp_1_1colors.html#a79b393ca3ee5740ed956004320a5fd03":[7,0,0,0,132],
+"namespacedpp_1_1colors.html#a79ea4166d5b5fde33dc6af4192081174":[7,0,0,0,36],
+"namespacedpp_1_1colors.html#a7a495ffa13600c944033bc4c7695e9aa":[7,0,0,0,171],
+"namespacedpp_1_1colors.html#a7b30b20fc15507e7fe580db0aed93515":[7,0,0,0,511],
 "namespacedpp_1_1colors.html#a7b3985834271dc53a853843c166873de":[7,0,0,0,85],
 "namespacedpp_1_1colors.html#a7b51cb3b0a2d3156fd75f18380bc5acb":[7,0,0,0,658],
 "namespacedpp_1_1colors.html#a7bc529d8f113cd9cb044836d3dc02e5d":[7,0,0,0,417],
@@ -239,15 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp_1_1colors.html#acf1ea11f601b82bb54b73e52aa3371ad":[7,0,0,0,12],
 "namespacedpp_1_1colors.html#acf2f0878716c42759af122c5227795f5":[7,0,0,0,671],
 "namespacedpp_1_1colors.html#acf9d219c7032cb7037dfc18bff0f7b88":[7,0,0,0,243],
-"namespacedpp_1_1colors.html#ad0030759828582ad2b43aacac68b286a":[7,0,0,0,16],
-"namespacedpp_1_1colors.html#ad05e547a41c96222b3e74407064646b0":[7,0,0,0,208],
-"namespacedpp_1_1colors.html#ad06876e4b21d4acc940b3968f577c89e":[7,0,0,0,212],
-"namespacedpp_1_1colors.html#ad0e57001ab64c9c7ed9c346bda1dbfa3":[7,0,0,0,394],
-"namespacedpp_1_1colors.html#ad12827bae59107bd17d27d978cb711ae":[7,0,0,0,34],
-"namespacedpp_1_1colors.html#ad1a05387c70e71028be5ac22f25c7b46":[7,0,0,0,596],
-"namespacedpp_1_1colors.html#ad2bb43d237d6b1e4563523a7b0623ca0":[7,0,0,0,637],
-"namespacedpp_1_1colors.html#ad34563e25b737a2a36decaac1e512d98":[7,0,0,0,167],
-"namespacedpp_1_1colors.html#ad47f1a00f9c46ac19b4938313e2b8538":[7,0,0,0,444],
-"namespacedpp_1_1colors.html#ad4d1db70d8bd2cd88e031e7cd3687762":[7,0,0,0,9],
-"namespacedpp_1_1colors.html#ad4e2607b4936130c8484bae7e1d85105":[7,0,0,0,551]
+"namespacedpp_1_1colors.html#ad0030759828582ad2b43aacac68b286a":[7,0,0,0,16]
 };

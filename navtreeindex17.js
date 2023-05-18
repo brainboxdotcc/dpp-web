@@ -1,5 +1,13 @@
 var NAVTREEINDEX17 =
 {
+"commandhandler.html":[4,1,7],
+"components.html":[4,1,3],
+"components2.html":[4,1,5],
+"components3.html":[4,1,4],
+"context-menu.html":[4,1,1],
+"cpp-eval-command-discord.html":[4,3,4],
+"creating-a-bot-application.html":[3,0],
+"deprecated.html":[6],
 "discord-application-command-file-upload.html":[4,1,9],
 "embed-message.html":[4,0,1],
 "firstbot.html":[4,0,0],
@@ -79,8 +87,8 @@ var NAVTREEINDEX17 =
 "functions_w.html":[8,3,0,22],
 "functions_~.html":[8,3,0,23],
 "hierarchy.html":[8,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md100":[0,2],
 "index.html#autotoc_md101":[0,3],
 "index.html#autotoc_md102":[0,3,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX17 =
 "namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed":[7,0,0,331,0],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3d":[7,0,0,281],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0669793c484cf708f689aa9fcc94f7b3":[7,0,0,281,29],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7":[7,0,0,281,52],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da094813c7b248e43b3cdac6efe5d2da19":[7,0,0,281,37],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0a052b5ae2a48cf79545b5eb4634ec1e":[7,0,0,281,22],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0c82a5ff83035e5fb41f03c3bc9d31e1":[7,0,0,281,20],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0cbd9fbee92211f6766fbbccc9e6ebd2":[7,0,0,281,7],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da126ed4119f99b4b03778bd1b5028d7e6":[7,0,0,281,31],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1900d5cc6e660c81cf8c5cc6879aa3e8":[7,0,0,281,30],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1aaffaee656b387059cfe3f85f50c60f":[7,0,0,281,11],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da1e7d9bea51966ca345af284095ab5987":[7,0,0,281,12]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7":[7,0,0,281,52]
 };

@@ -1722,10 +1722,15 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a805ef1feb2862a208ec0e9d1be005c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various types of http method supported by the Discord API.  <a href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">More...</a><br /></td></tr>
 <tr class="separator:a805ef1feb2862a208ec0e9d1be005c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af803e69eddf23c5862947295f3df5d53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53">role_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e">r_hoist</a> = 0b00000001
+<tr class="memitem:af803e69eddf23c5862947295f3df5d53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53">role_flags</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e">r_hoist</a> = 0b00000001
 , <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6">r_managed</a> = 0b00000010
 , <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26">r_mentionable</a> = 0b00000100
 , <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026">r_premium_subscriber</a> = 0b00001000
+, <br />
+&#160;&#160;<a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53a22c2e6a46fdcf723ec23d217ffc79bb6">r_available_for_purchase</a> = 0b00010000
+, <a class="el" href="namespacedpp.html#af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171">r_guild_connections</a> = 0b00100000
+<br />
  }</td></tr>
 <tr class="separator:af803e69eddf23c5862947295f3df5d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f181ce9f4b3bc1ac51bc499b5938b33"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33">application_role_connection_metadata_type</a> : uint8_t { <br />
@@ -4935,13 +4940,17 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p >Various flags related to <a class="el" href="classdpp_1_1role.html" title="Represents a role within a dpp::guild. Roles are combined via logical OR of the permission bitmasks,...">dpp::role</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e" name="af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e"></a>r_hoist&#160;</td><td class="fielddoc"><p >Hoisted role. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e" name="af803e69eddf23c5862947295f3df5d53a28bd72d5ab200ddcdadd9759c84f2c2e"></a>r_hoist&#160;</td><td class="fielddoc"><p >Hoisted role (if the role is pinned in the user listing) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6" name="af803e69eddf23c5862947295f3df5d53aed8ce041eb7cb3a5cf913de8efbbddc6"></a>r_managed&#160;</td><td class="fielddoc"><p >Managed role (introduced by a bot or application) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26" name="af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26"></a>r_mentionable&#160;</td><td class="fielddoc"><p >Mentionable with a ping. </p>
+<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26" name="af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26"></a>r_mentionable&#160;</td><td class="fielddoc"><p >Whether this role is mentionable with a ping. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026" name="af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026"></a>r_premium_subscriber&#160;</td><td class="fielddoc"><p >This is set for the role given to nitro. </p>
+<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026" name="af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026"></a>r_premium_subscriber&#160;</td><td class="fielddoc"><p >Whether this is the guild's booster role. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53a22c2e6a46fdcf723ec23d217ffc79bb6" name="af803e69eddf23c5862947295f3df5d53a22c2e6a46fdcf723ec23d217ffc79bb6"></a>r_available_for_purchase&#160;</td><td class="fielddoc"><p >Whether the role is available for purchase. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171" name="af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171"></a>r_guild_connections&#160;</td><td class="fielddoc"><p >Whether the role is a guild's linked role. </p>
 </td></tr>
 </table>
 

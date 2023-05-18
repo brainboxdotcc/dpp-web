@@ -1,5 +1,15 @@
 var NAVTREEINDEX23 =
 {
+"namespacedpp_1_1colors.html#ad05e547a41c96222b3e74407064646b0":[7,0,0,0,208],
+"namespacedpp_1_1colors.html#ad06876e4b21d4acc940b3968f577c89e":[7,0,0,0,212],
+"namespacedpp_1_1colors.html#ad0e57001ab64c9c7ed9c346bda1dbfa3":[7,0,0,0,394],
+"namespacedpp_1_1colors.html#ad12827bae59107bd17d27d978cb711ae":[7,0,0,0,34],
+"namespacedpp_1_1colors.html#ad1a05387c70e71028be5ac22f25c7b46":[7,0,0,0,596],
+"namespacedpp_1_1colors.html#ad2bb43d237d6b1e4563523a7b0623ca0":[7,0,0,0,637],
+"namespacedpp_1_1colors.html#ad34563e25b737a2a36decaac1e512d98":[7,0,0,0,167],
+"namespacedpp_1_1colors.html#ad47f1a00f9c46ac19b4938313e2b8538":[7,0,0,0,444],
+"namespacedpp_1_1colors.html#ad4d1db70d8bd2cd88e031e7cd3687762":[7,0,0,0,9],
+"namespacedpp_1_1colors.html#ad4e2607b4936130c8484bae7e1d85105":[7,0,0,0,551],
 "namespacedpp_1_1colors.html#ad5d57468c2ffa6bb80fbb3f0d37e0b76":[7,0,0,0,301],
 "namespacedpp_1_1colors.html#ad5e3c921e524109ca36e2bedb24b4190":[7,0,0,0,71],
 "namespacedpp_1_1colors.html#ad60dd2ace1018c13ff9eb6680992f41f":[7,0,0,0,393],
@@ -239,15 +249,5 @@ var NAVTREEINDEX23 =
 "slashcommands.html":[4,1,0],
 "soundboard.html":[4,2,0],
 "spdlog.html":[4,3,1],
-"stream-mp3-discord-bot.html":[4,2,2],
-"structdpp_1_1active__threads.html":[8,0,0,2],
-"structdpp_1_1active__threads.html":[7,0,0,4],
-"structdpp_1_1active__threads.html#a5de98090c083c2c7c715ec20f7de008d":[8,0,0,2,0],
-"structdpp_1_1active__threads.html#a5de98090c083c2c7c715ec20f7de008d":[7,0,0,4,0],
-"structdpp_1_1active__threads.html#add54f7da9c6cb7fecd19d416a0308928":[8,0,0,2,1],
-"structdpp_1_1active__threads.html#add54f7da9c6cb7fecd19d416a0308928":[7,0,0,4,1],
-"structdpp_1_1activity__assets.html":[8,0,0,4],
-"structdpp_1_1activity__assets.html":[7,0,0,6],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[8,0,0,4,4],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[7,0,0,6,4]
+"stream-mp3-discord-bot.html":[4,2,2]
 };

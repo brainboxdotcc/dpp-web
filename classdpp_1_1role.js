@@ -54,9 +54,12 @@ var classdpp_1_1role =
     [ "has_view_channel", "classdpp_1_1role.html#acbe56d5d1d54e9fea3a6b7acd66ef888", null ],
     [ "has_view_creator_monetization_analytics", "classdpp_1_1role.html#af5de498bfe90e5b390d9a367a0afe0a8", null ],
     [ "has_view_guild_insights", "classdpp_1_1role.html#ac71887da3f920e070d1fa743ea000d1c", null ],
+    [ "is_available_for_purchase", "classdpp_1_1role.html#a2a45972a178c1cb6873335969eadef6e", null ],
     [ "is_hoisted", "classdpp_1_1role.html#ae0cb040c022f08d210c885012bf47919", null ],
+    [ "is_linked", "classdpp_1_1role.html#a960be31089b54b425089ce212ce69963", null ],
     [ "is_managed", "classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9", null ],
     [ "is_mentionable", "classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f", null ],
+    [ "is_premium_subscription", "classdpp_1_1role.html#aaad43ed43cbb071feb42763ad922f9a5", null ],
     [ "load_image", "classdpp_1_1role.html#a6d46d3e4a1b8e166f4a26da58bf119dc", null ],
     [ "operator!=", "classdpp_1_1role.html#a9f086ed62419d373646e5d0e63667fd5", null ],
     [ "operator!=", "classdpp_1_1role.html#a923f1020ad9e4076252e3ce1dce4bb3a", null ],
@@ -82,5 +85,6 @@ var classdpp_1_1role =
     [ "name", "classdpp_1_1role.html#a6451e41576902faa14d0394d47d19934", null ],
     [ "permissions", "classdpp_1_1role.html#ad6deb5559a2378196b92e496c4db501c", null ],
     [ "position", "classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958", null ],
+    [ "subscription_listing_id", "classdpp_1_1role.html#a41c75bd2ab4e4d6caac220e9bcd47a07", null ],
     [ "unicode_emoji", "classdpp_1_1role.html#ad84006ea16f3dc59cfd67559a60c5d10", null ]
 ];
