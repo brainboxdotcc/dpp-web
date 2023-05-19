@@ -59,7 +59,7 @@ var classdpp_1_1role =
     [ "is_linked", "classdpp_1_1role.html#a960be31089b54b425089ce212ce69963", null ],
     [ "is_managed", "classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9", null ],
     [ "is_mentionable", "classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f", null ],
-    [ "is_premium_subscription", "classdpp_1_1role.html#aaad43ed43cbb071feb42763ad922f9a5", null ],
+    [ "is_premium_subscriber", "classdpp_1_1role.html#a3992fa5ec4a368f71e65be75704c6c33", null ],
     [ "load_image", "classdpp_1_1role.html#a6d46d3e4a1b8e166f4a26da58bf119dc", null ],
     [ "operator!=", "classdpp_1_1role.html#a9f086ed62419d373646e5d0e63667fd5", null ],
     [ "operator!=", "classdpp_1_1role.html#a923f1020ad9e4076252e3ce1dce4bb3a", null ],
