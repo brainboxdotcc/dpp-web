@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"namespacedpp_1_1colors.html#acf9d219c7032cb7037dfc18bff0f7b88":[7,0,0,0,243],
+"namespacedpp_1_1colors.html#ad0030759828582ad2b43aacac68b286a":[7,0,0,0,16],
 "namespacedpp_1_1colors.html#ad05e547a41c96222b3e74407064646b0":[7,0,0,0,208],
 "namespacedpp_1_1colors.html#ad06876e4b21d4acc940b3968f577c89e":[7,0,0,0,212],
 "namespacedpp_1_1colors.html#ad0e57001ab64c9c7ed9c346bda1dbfa3":[7,0,0,0,394],
@@ -169,8 +171,8 @@ var NAVTREEINDEX23 =
 "namespacedpp_1_1utility.html#af247cf657d20138e2e364712176810f8":[7,0,0,3,11],
 "namespacedpp_1_1utility.html#af74cf004f32b11f0f804968c64bb3d08":[7,0,0,3,6],
 "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32":[7,0,0,3,37],
-"namespacemembers.html":[7,1,0,0],
 "namespacemembers.html":[7,1,0],
+"namespacemembers.html":[7,1,0,0],
 "namespacemembers_b.html":[7,1,0,1],
 "namespacemembers_c.html":[7,1,0,2],
 "namespacemembers_d.html":[7,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "pages.html":[],
 "record-user.html":[4,2,3],
 "slashcommands.html":[4,1,0],
-"soundboard.html":[4,2,0],
-"spdlog.html":[4,3,1],
-"stream-mp3-discord-bot.html":[4,2,2]
+"soundboard.html":[4,2,0]
 };

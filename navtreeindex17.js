@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"coding-standards.html":[5,2],
+"collecting-reactions.html":[4,3,3],
 "commandhandler.html":[4,1,7],
 "components.html":[4,1,3],
 "components2.html":[4,1,5],
@@ -11,8 +13,8 @@ var NAVTREEINDEX17 =
 "discord-application-command-file-upload.html":[4,1,9],
 "embed-message.html":[4,0,1],
 "firstbot.html":[4,0,0],
-"functions.html":[8,3,0,0],
 "functions.html":[8,3,0],
+"functions.html":[8,3,0,0],
 "functions_b.html":[8,3,0,1],
 "functions_c.html":[8,3,0,2],
 "functions_d.html":[8,3,0,3],
@@ -61,8 +63,8 @@ var NAVTREEINDEX17 =
 "functions_type.html":[8,3,3],
 "functions_u.html":[8,3,0,20],
 "functions_v.html":[8,3,0,21],
-"functions_vars.html":[8,3,2,0],
 "functions_vars.html":[8,3,2],
+"functions_vars.html":[8,3,2,0],
 "functions_vars_b.html":[8,3,2,1],
 "functions_vars_c.html":[8,3,2,2],
 "functions_vars_d.html":[8,3,2,3],
@@ -87,8 +89,8 @@ var NAVTREEINDEX17 =
 "functions_w.html":[8,3,0,22],
 "functions_~.html":[8,3,0,23],
 "hierarchy.html":[8,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md100":[0,2],
 "index.html#autotoc_md101":[0,3],
 "index.html#autotoc_md102":[0,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "namespacedpp.html#a29954c9dfc5a906346177226d036a418":[7,0,0,331],
 "namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d":[7,0,0,331,1],
 "namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed":[7,0,0,331,0],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3d":[7,0,0,281],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0669793c484cf708f689aa9fcc94f7b3":[7,0,0,281,29],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7":[7,0,0,281,52]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3d":[7,0,0,281]
 };

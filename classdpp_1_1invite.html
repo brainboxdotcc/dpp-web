@@ -152,8 +152,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6142074754432a855a7e37d731a52f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9a3073a99b276032dce0e850b21a955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1invite.html#ad9a3073a99b276032dce0e850b21a955">target_user_id</a></td></tr>
 <tr class="separator:ad9a3073a99b276032dce0e850b21a955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf04b46e869c2f365051c81fd06dcf2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1invite.html#aaaf04b46e869c2f365051c81fd06dcf2">target_user_type</a></td></tr>
-<tr class="separator:aaaf04b46e869c2f365051c81fd06dcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540307e24d187c0c88e54ed53fcb8fe5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1invite.html#a540307e24d187c0c88e54ed53fcb8fe5">target_type</a></td></tr>
+<tr class="separator:a540307e24d187c0c88e54ed53fcb8fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76dac8c741c2315e6be8733d12856b43"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1invite.html#a76dac8c741c2315e6be8733d12856b43">approximate_presence_count</a></td></tr>
 <tr class="separator:a76dac8c741c2315e6be8733d12856b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eeea3785ede65e9a93640352674a6c3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1invite.html#a1eeea3785ede65e9a93640352674a6c3">approximate_member_count</a></td></tr>
@@ -170,6 +170,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a256cb8ecb38af03dcdfb7befe4b4f286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95bda6b60159f20163f6953806e06d08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1stage__instance.html">stage_instance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1invite.html#a95bda6b60159f20163f6953806e06d08">stage</a></td></tr>
 <tr class="separator:a95bda6b60159f20163f6953806e06d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad079d418c2ad52e5d1e980c3e3fc66a5"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1invite.html#ad079d418c2ad52e5d1e980c3e3fc66a5">created_at</a></td></tr>
+<tr class="separator:ad079d418c2ad52e5d1e980c3e3fc66a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents an invite to a discord guild or channel. </p>
@@ -291,7 +293,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Approximate total users online and offline </p>
+<p >Approximate number of total users online and offline </p><dl class="section note"><dt>Note</dt><dd>Only returned from <a class="el" href="classdpp_1_1cluster.html#a6dbddcf4f753ced02d8ec693dcaf583c" title="Get details about an invite.">cluster::invite_get</a> </dd></dl>
 
 </div>
 </div>
@@ -306,7 +308,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Approximate number of online users </p>
+<p >Approximate number of online users </p><dl class="section note"><dt>Note</dt><dd>Only returned from <a class="el" href="classdpp_1_1cluster.html#a6dbddcf4f753ced02d8ec693dcaf583c" title="Get details about an invite.">cluster::invite_get</a> </dd></dl>
 
 </div>
 </div>
@@ -321,7 +323,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Channel id for invite </p>
+<p >Channel ID this invite is for </p>
 
 </div>
 </div>
@@ -340,6 +342,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad079d418c2ad52e5d1e980c3e3fc66a5" name="ad079d418c2ad52e5d1e980c3e3fc66a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad079d418c2ad52e5d1e980c3e3fc66a5">&#9670;&nbsp;</a></span>created_at</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t dpp::invite::created_at</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Timestamp at which the invite was created </p>
+
+</div>
+</div>
 <a id="a58eb1d4ad8f76fa8f21f00ab7b2e0253" name="a58eb1d4ad8f76fa8f21f00ab7b2e0253"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58eb1d4ad8f76fa8f21f00ab7b2e0253">&#9670;&nbsp;</a></span>expires_at</h2>
 
@@ -351,7 +368,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Readonly expiration timestamp of this invite or 0 if the invite doesn't expire </p>
+<p >Readonly expiration timestamp of this invite or 0 if the invite doesn't expire </p><dl class="section note"><dt>Note</dt><dd>Only returned from <a class="el" href="classdpp_1_1cluster.html#a6dbddcf4f753ced02d8ec693dcaf583c" title="Get details about an invite.">cluster::invite_get</a> </dd></dl>
 
 </div>
 </div>
@@ -366,7 +383,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Guild for the invite </p>
+<p >Guild ID this invite is for </p>
 
 </div>
 </div>
@@ -381,7 +398,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >User ID of invite creator </p>
+<p >User ID who created this invite </p>
 
 </div>
 </div>
@@ -396,7 +413,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Maximum age (in seconds) of invite </p>
+<p >Duration (in seconds) after which the invite expires, or 0 for no expiration. Must be between 0 and 604800 (7 days). Defaults to 86400 (1 day) </p>
 
 </div>
 </div>
@@ -411,7 +428,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Maximum number of uses </p>
+<p >Maximum number of uses, or 0 for unlimited. Must be between 0 and 100. Defaults to 0 </p>
 
 </div>
 </div>
@@ -430,6 +447,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a540307e24d187c0c88e54ed53fcb8fe5" name="a540307e24d187c0c88e54ed53fcb8fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a540307e24d187c0c88e54ed53fcb8fe5">&#9670;&nbsp;</a></span>target_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t dpp::invite::target_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Target type </p>
+
+</div>
+</div>
 <a id="ad9a3073a99b276032dce0e850b21a955" name="ad9a3073a99b276032dce0e850b21a955"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9a3073a99b276032dce0e850b21a955">&#9670;&nbsp;</a></span>target_user_id</h2>
 
@@ -441,22 +473,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Target user ID of invite, for invites sent via DM </p>
-
-</div>
-</div>
-<a id="aaaf04b46e869c2f365051c81fd06dcf2" name="aaaf04b46e869c2f365051c81fd06dcf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaf04b46e869c2f365051c81fd06dcf2">&#9670;&nbsp;</a></span>target_user_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t dpp::invite::target_user_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Target user type (generally this is always 1, "stream") </p>
+<p >The user ID whose stream to display for this voice channel stream invite </p>
 
 </div>
 </div>
@@ -471,7 +488,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >True if a temporary invite which grants access for a limited time </p>
+<p >Whether this invite only grants temporary membership </p>
 
 </div>
 </div>
@@ -501,8 +518,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >How many times this invite has been used</p>
-<dl class="section note"><dt>Note</dt><dd>Only set when using <a class="el" href="classdpp_1_1cluster.html#aa03a0da5c8e6801dc56bda258265da04" title="Get invites for a channel.">cluster::channel_invites_get</a> </dd></dl>
+<p >How many times this invite has been used </p>
 
 </div>
 </div>

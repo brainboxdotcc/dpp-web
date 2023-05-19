@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"spdlog.html":[4,3,1],
+"stream-mp3-discord-bot.html":[4,2,2],
 "structdpp_1_1active__threads.html":[8,0,0,2],
 "structdpp_1_1active__threads.html":[7,0,0,4],
 "structdpp_1_1active__threads.html#a5de98090c083c2c7c715ec20f7de008d":[8,0,0,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "structdpp_1_1automod__rule__create__t.html":[8,0,0,23],
 "structdpp_1_1automod__rule__create__t.html":[7,0,0,25],
 "structdpp_1_1automod__rule__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[7,0,0,25,5],
-"structdpp_1_1automod__rule__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[8,0,0,23,5],
-"structdpp_1_1automod__rule__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[7,0,0,25,4],
-"structdpp_1_1automod__rule__create__t.html#a357873be4dd30eef7928ae5f7c13e7db":[8,0,0,23,4]
+"structdpp_1_1automod__rule__create__t.html#a22df2fa7e547eaefbd65e501d8bf67b7":[8,0,0,23,5]
 };
