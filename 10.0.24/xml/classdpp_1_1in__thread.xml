@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1in__thread" kind="class" language="C++" prot="public">
+    <compoundname>dpp::in_thread</compoundname>
+    <includes local="no">queues.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1a0ed20354f9c47a238702477ad3870d62" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::in_thread::terminating</definition>
+        <argsstring></argsstring>
+        <name>terminating</name>
+        <briefdescription>
+<para>True if ending. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="252" column="6" bodyfile="include/dpp/queues.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1af879ab50fc6a4e0b584aa1af17700187" prot="private" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> *</type>
+        <definition>class request_queue* dpp::in_thread::requests</definition>
+        <argsstring></argsstring>
+        <name>requests</name>
+        <briefdescription>
+<para>Request queue that owns this <ref refid="classdpp_1_1in__thread" kindref="compound">in_thread</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="257" column="21" bodyfile="include/dpp/queues.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1a5005687e4243b2d4c946f7adc1b36c34" prot="private" static="no" mutable="no">
+        <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <definition>class cluster* dpp::in_thread::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <briefdescription>
+<para>The cluster that owns this <ref refid="classdpp_1_1in__thread" kindref="compound">in_thread</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="262" column="15" bodyfile="include/dpp/queues.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1a58d9d4390201fc8d4b6469f91ea2c2cf" prot="private" static="no" mutable="no">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::in_thread::in_mutex</definition>
+        <argsstring></argsstring>
+        <name>in_mutex</name>
+        <briefdescription>
+<para>Inbound queue mutex thread safety. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="267" column="19" bodyfile="include/dpp/queues.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1a5367c50def21f9ff755a1efe3d880408" prot="private" static="no" mutable="no">
+        <type>std::thread *</type>
+        <definition>std::thread* dpp::in_thread::in_thr</definition>
+        <argsstring></argsstring>
+        <name>in_thr</name>
+        <briefdescription>
+<para>Inbound queue thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="272" column="13" bodyfile="include/dpp/queues.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1ab43f5ed51219081d52143f7e3a32b6c7" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable dpp::in_thread::in_ready</definition>
+        <argsstring></argsstring>
+        <name>in_ready</name>
+        <briefdescription>
+<para>Inbound queue condition, signalled when there are requests to fulfill. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="277" column="25" bodyfile="include/dpp/queues.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1a85e8e2af544c0a62c9f4fd4a576d9edf" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="structdpp_1_1bucket__t" kindref="compound">bucket_t</ref> &gt;</type>
+        <definition>std::map&lt;std::string, bucket_t&gt; dpp::in_thread::buckets</definition>
+        <argsstring></argsstring>
+        <name>buckets</name>
+        <briefdescription>
+<para>Ratelimit bucket counters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="282" column="10" bodyfile="include/dpp/queues.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1a983a491d310f4c73425c3df23d00e1e6" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> * &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;http_request*&gt; &gt; dpp::in_thread::requests_in</definition>
+        <argsstring></argsstring>
+        <name>requests_in</name>
+        <briefdescription>
+<para>Queue of requests to be made. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="287" column="10" bodyfile="include/dpp/queues.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdpp_1_1in__thread_1aff13d6994c3024563743b77d9fc996fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::in_thread::in_loop</definition>
+        <argsstring>(uint32_t index)</argsstring>
+        <name>in_loop</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Inbound queue thread loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thread index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="293" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1in__thread_1aa3facf9b1775708af491a17bbc9ce627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::in_thread::in_thread</definition>
+        <argsstring>(class cluster *owner, class request_queue *req_q, uint32_t index)</argsstring>
+        <name>in_thread</name>
+        <param>
+          <type>class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>class <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> *</type>
+          <declname>req_q</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new in thread object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Owning cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>req_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Owning request queue </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thread index number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1in__thread_1a1d739e6980d29c21ec366d6723b3c7f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::in_thread::~in_thread</definition>
+        <argsstring>()</argsstring>
+        <name>~in_thread</name>
+        <briefdescription>
+<para>Destroy the in thread object This will end the thread that is owned by this object by joining it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="308" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1in__thread_1aafd1339f015ed11175d0d01abe42031a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::in_thread::post_request</definition>
+        <argsstring>(http_request *req)</argsstring>
+        <name>post_request</name>
+        <param>
+          <type><ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+<para>Post a <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> to this thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> to post. The pointer will be freed when it has been executed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="316" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a thread in the thread pool handling requests to HTTP(S) servers. There are several of these, the total defined by a constant in queues.cpp, and each one will always receive requests for the same rate limit bucket based on its endpoint portion of the url. This makes rate limit handling reliable and easy to manage. Each of these also has its own mutex, so that requests are less likely to block while waiting for internal containers to be usable. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/queues.h" line="247" column="1" bodyfile="include/dpp/queues.h" bodystart="247" bodyend="317"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1in__thread_1a85e8e2af544c0a62c9f4fd4a576d9edf" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>buckets</name></member>
+      <member refid="classdpp_1_1in__thread_1a5005687e4243b2d4c946f7adc1b36c34" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>creator</name></member>
+      <member refid="classdpp_1_1in__thread_1aff13d6994c3024563743b77d9fc996fd" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_loop</name></member>
+      <member refid="classdpp_1_1in__thread_1a58d9d4390201fc8d4b6469f91ea2c2cf" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_mutex</name></member>
+      <member refid="classdpp_1_1in__thread_1ab43f5ed51219081d52143f7e3a32b6c7" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_ready</name></member>
+      <member refid="classdpp_1_1in__thread_1a5367c50def21f9ff755a1efe3d880408" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_thr</name></member>
+      <member refid="classdpp_1_1in__thread_1aa3facf9b1775708af491a17bbc9ce627" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_thread</name></member>
+      <member refid="classdpp_1_1in__thread_1aafd1339f015ed11175d0d01abe42031a" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>post_request</name></member>
+      <member refid="classdpp_1_1in__thread_1af879ab50fc6a4e0b584aa1af17700187" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>requests</name></member>
+      <member refid="classdpp_1_1in__thread_1a983a491d310f4c73425c3df23d00e1e6" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>requests_in</name></member>
+      <member refid="classdpp_1_1in__thread_1a0ed20354f9c47a238702477ad3870d62" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>terminating</name></member>
+      <member refid="classdpp_1_1in__thread_1a1d739e6980d29c21ec366d6723b3c7f5" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>~in_thread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

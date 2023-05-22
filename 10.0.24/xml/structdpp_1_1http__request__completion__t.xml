@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1http__request__completion__t" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::http_request_completion_t</compoundname>
+    <includes local="no">queues.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a0336558684d62229a7ea5d1a9aae6251" prot="public" static="no" mutable="no">
+        <type>std::multimap&lt; std::string, std::string &gt;</type>
+        <definition>std::multimap&lt;std::string, std::string&gt; dpp::http_request_completion_t::headers</definition>
+        <argsstring></argsstring>
+        <name>headers</name>
+        <briefdescription>
+<para>HTTP headers of response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="73" column="15" bodyfile="include/dpp/queues.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a43d0cd80d26f3e1aa23c5539e4f984e0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::http_request_completion_t::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>HTTP status, e.g. 200 = OK, 404 = Not found, 429 = Rate limited. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="75" column="10" bodyfile="include/dpp/queues.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a6e8e54c80c5b439ddfd0ddb6f9e4039b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ae525add0ec39d647375aabe5ce455449" kindref="member">http_error</ref></type>
+        <definition>http_error dpp::http_request_completion_t::error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <initializer>= <ref refid="namespacedpp_1ae525add0ec39d647375aabe5ce455449ab072c2cf95f4a567183c1d9fb0e6f3da" kindref="member">h_success</ref></initializer>
+        <briefdescription>
+<para>Error status (e.g. if the request could not connect at all) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="77" column="12" bodyfile="include/dpp/queues.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1abc9d39c408cb5a3f43960854084d9165" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_request_completion_t::ratelimit_bucket</definition>
+        <argsstring></argsstring>
+        <name>ratelimit_bucket</name>
+        <briefdescription>
+<para>Ratelimit bucket. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="79" column="13" bodyfile="include/dpp/queues.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a75ce533196be655ba6b95fac23122a41" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::http_request_completion_t::ratelimit_limit</definition>
+        <argsstring></argsstring>
+        <name>ratelimit_limit</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Ratelimit limit of requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="81" column="10" bodyfile="include/dpp/queues.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a0d11ccc783c204f117a4000bac3b1988" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::http_request_completion_t::ratelimit_remaining</definition>
+        <argsstring></argsstring>
+        <name>ratelimit_remaining</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Ratelimit remaining requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="83" column="10" bodyfile="include/dpp/queues.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a060318a4877fff905907532077b5b6a6" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::http_request_completion_t::ratelimit_reset_after</definition>
+        <argsstring></argsstring>
+        <name>ratelimit_reset_after</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Ratelimit reset after (seconds) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="85" column="10" bodyfile="include/dpp/queues.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a094ddd933ec9bc288812cead549bc39c" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dpp::http_request_completion_t::ratelimit_retry_after</definition>
+        <argsstring></argsstring>
+        <name>ratelimit_retry_after</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Ratelimit retry after (seconds) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="87" column="10" bodyfile="include/dpp/queues.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1a56ffdd4e2660564d3360e28d34bccc64" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::http_request_completion_t::ratelimit_global</definition>
+        <argsstring></argsstring>
+        <name>ratelimit_global</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>True if this request has caused us to be globally rate limited. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="89" column="6" bodyfile="include/dpp/queues.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1ac14ffa7060df12797e238f2619153ef9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::http_request_completion_t::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+<para>Reply body. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="91" column="13" bodyfile="include/dpp/queues.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1http__request__completion__t_1aa39b263a9671e1b106429c6e440faaad" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double dpp::http_request_completion_t::latency</definition>
+        <argsstring></argsstring>
+        <name>latency</name>
+        <briefdescription>
+<para>Ping latency. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="93" column="8" bodyfile="include/dpp/queues.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The result of any HTTP request. Contains the headers, vital rate limit figures, and returned request body. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>bool</label>
+      </node>
+      <node id="9">
+        <label>double</label>
+      </node>
+      <node id="1">
+        <label>dpp::http_request_completion_t</label>
+        <link refid="structdpp_1_1http__request__completion__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>headers</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>error</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>ratelimit_bucket</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ratelimit_limit</edgelabel>
+          <edgelabel>ratelimit_remaining</edgelabel>
+          <edgelabel>ratelimit_reset_after</edgelabel>
+          <edgelabel>ratelimit_retry_after</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ratelimit_global</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>latency</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>http_error</label>
+      </node>
+      <node id="6">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>multimap&lt;</label>
+      </node>
+      <node id="5">
+        <label>std::string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>uint16_t</label>
+      </node>
+      <node id="7">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/queues.h" line="71" column="1" bodyfile="include/dpp/queues.h" bodystart="71" bodyend="94"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1http__request__completion__t_1ac14ffa7060df12797e238f2619153ef9" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>body</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1a6e8e54c80c5b439ddfd0ddb6f9e4039b" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>error</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1a0336558684d62229a7ea5d1a9aae6251" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>headers</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1aa39b263a9671e1b106429c6e440faaad" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>latency</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1abc9d39c408cb5a3f43960854084d9165" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>ratelimit_bucket</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1a56ffdd4e2660564d3360e28d34bccc64" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>ratelimit_global</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1a75ce533196be655ba6b95fac23122a41" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>ratelimit_limit</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1a0d11ccc783c204f117a4000bac3b1988" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>ratelimit_remaining</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1a060318a4877fff905907532077b5b6a6" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>ratelimit_reset_after</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1a094ddd933ec9bc288812cead549bc39c" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>ratelimit_retry_after</name></member>
+      <member refid="structdpp_1_1http__request__completion__t_1a43d0cd80d26f3e1aa23c5539e4f984e0" prot="public" virt="non-virtual"><scope>dpp::http_request_completion_t</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

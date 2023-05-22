@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1slashcommand" kind="class" language="C++" prot="public">
+    <compoundname>dpp::slashcommand</compoundname>
+    <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; slashcommand &gt;</basecompoundref>
+    <includes local="no">appcommand.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1a68823472ad357bc69759212f6ebe1a82" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::slashcommand::application_id</definition>
+        <argsstring></argsstring>
+        <name>application_id</name>
+        <briefdescription>
+<para>Application id (usually matches your bots id) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="990" column="11" bodyfile="include/dpp/appcommand.h" bodystart="990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1a5c87c504512af7090f8f4c215184320a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fb" kindref="member">slashcommand_contextmenu_type</ref></type>
+        <definition>slashcommand_contextmenu_type dpp::slashcommand::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Context menu type, defaults to <ref refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a" kindref="member">dpp::ctxm_chat_input</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="995" column="31" bodyfile="include/dpp/appcommand.h" bodystart="995" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1aba1bc2d7cb8d9f67071aab5c16df964b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::slashcommand::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>Command name (1-32 chars) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1000" column="13" bodyfile="include/dpp/appcommand.h" bodystart="1000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1a9bdfc4a4e6121349903f7ab28010691a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::slashcommand::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>Command description (1-100 chars) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1005" column="13" bodyfile="include/dpp/appcommand.h" bodystart="1005" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1ad7bf348ca0d07ccd3416656f023d913e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> &gt;</type>
+        <definition>std::vector&lt;command_option&gt; dpp::slashcommand::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+<para>Command options (parameters) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1010" column="13" bodyfile="include/dpp/appcommand.h" bodystart="1010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1a464b5758679dd76d9603cea18540021b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::slashcommand::default_permission</definition>
+        <argsstring></argsstring>
+        <name>default_permission</name>
+        <briefdescription>
+<para>Whether the command is enabled by default when the app is added to a guild. This has no effect as the default_member_permissions value is used instead. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Discord discourage use of this value and instead you should use <ref refid="classdpp_1_1slashcommand_1ab12b66d2e3c741f0c3e2798895a7aa64" kindref="member">slashcommand::default_member_permissions</ref>. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1017" column="6" bodyfile="include/dpp/appcommand.h" bodystart="1017" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1a63b80f4596de1e0906a5fc5d4bf5d4f0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> &gt;</type>
+        <definition>std::vector&lt;command_permission&gt; dpp::slashcommand::permissions</definition>
+        <argsstring></argsstring>
+        <name>permissions</name>
+        <briefdescription>
+<para>command permissions </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Discord discourage use of this value and instead you should use default_member_permissions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1023" column="13" bodyfile="include/dpp/appcommand.h" bodystart="1023" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1a945310d52b555f3d04b13ca04bd532b4" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::slashcommand::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>autoincrementing version identifier updated during substantial record changes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1028" column="11" bodyfile="include/dpp/appcommand.h" bodystart="1028" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1a2b4b3b44ab92817d96ee07095e20d277" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; dpp::slashcommand::name_localizations</definition>
+        <argsstring></argsstring>
+        <name>name_localizations</name>
+        <briefdescription>
+<para>Localisations of command name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1033" column="10" bodyfile="include/dpp/appcommand.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1aa8703ae685b1a155a53640bb51959eeb" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; dpp::slashcommand::description_localizations</definition>
+        <argsstring></argsstring>
+        <name>description_localizations</name>
+        <briefdescription>
+<para>Localisations of command description. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1038" column="10" bodyfile="include/dpp/appcommand.h" bodystart="1038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1ab12b66d2e3c741f0c3e2798895a7aa64" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1permission" kindref="compound">permission</ref></type>
+        <definition>permission dpp::slashcommand::default_member_permissions</definition>
+        <argsstring></argsstring>
+        <name>default_member_permissions</name>
+        <briefdescription>
+<para>The default permissions of this command on a guild. D++ defaults this to <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7ae628847e2db7d4b3d986d6546efde812" kindref="member">dpp::p_use_application_commands</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>You can set it to 0 to disable the command for everyone except admins by default </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1045" column="12" bodyfile="include/dpp/appcommand.h" bodystart="1045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1ad2a49299f059be2a8c48250470462325" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::slashcommand::dm_permission</definition>
+        <argsstring></argsstring>
+        <name>dm_permission</name>
+        <briefdescription>
+<para>True if this command should be allowed in a DM D++ defaults this to false. Cannot be set to true in a guild command, only a global command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1052" column="6" bodyfile="include/dpp/appcommand.h" bodystart="1052" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1slashcommand_1ad42d0df8b2d634ab02b0235c21c53df2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::slashcommand::nsfw</definition>
+        <argsstring></argsstring>
+        <name>nsfw</name>
+        <briefdescription>
+<para>Indicates whether the command is <ulink url="https://discord.com/developers/docs/interactions/application-commands#agerestricted-commands">age-restricted</ulink>. Defaults to false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1058" column="6" bodyfile="include/dpp/appcommand.h" bodystart="1058" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="38" column="11" bodyfile="include/dpp/managed.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1add0654f80f31c52fbbf7d1541653a7b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::slashcommand::slashcommand</definition>
+        <argsstring>()</argsstring>
+        <name>slashcommand</name>
+        <briefdescription>
+<para>Construct a new slashcommand object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1063" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a7f64e4998a23592427069eae91df25be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::slashcommand::slashcommand</definition>
+        <argsstring>(const std::string &amp;_name, const std::string &amp;_description, const dpp::snowflake _application_id)</argsstring>
+        <name>slashcommand</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_description</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref></type>
+          <declname>_application_id</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new slashcommand object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Command name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Command description </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_application_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application id (usually the bot&apos;s user id) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1072" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1ac0b2c4131b2483f4b168acbd6d292fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual dpp::slashcommand::~slashcommand</definition>
+        <argsstring>()</argsstring>
+        <name>~slashcommand</name>
+        <briefdescription>
+<para>Destroy the slashcommand object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1077" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1af2e10e78a1a517f3e6d6b85bbc6fd2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::add_localization</definition>
+        <argsstring>(const std::string &amp;language, const std::string &amp;_name, const std::string &amp;_description=&quot;&quot;)</argsstring>
+        <name>add_localization</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Add a localisation for this slash command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/reference#locales">https://discord.com/developers/docs/reference#locales</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of language, see the list of locales linked to above </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of slash command in the specified language </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>description of slash command in the specified language (optional) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1087" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1acb868504a7b3b7d5cdaf6848ae785ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_dm_permission</definition>
+        <argsstring>(bool dm)</argsstring>
+        <name>set_dm_permission</name>
+        <param>
+          <type>bool</type>
+          <declname>dm</declname>
+        </param>
+        <briefdescription>
+<para>Set the dm permission for the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to allow this command in dms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1095" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a2b923f92b445d62757c8bfc690258fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_nsfw</definition>
+        <argsstring>(bool is_nsfw)</argsstring>
+        <name>set_nsfw</name>
+        <param>
+          <type>bool</type>
+          <declname>is_nsfw</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the command should be age-restricted or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_nsfw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the command should be age-restricted </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1103" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a51084be92893e21d13ffe320a2b77e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_default_permissions</definition>
+        <argsstring>(uint64_t defaults)</argsstring>
+        <name>set_default_permissions</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>defaults</declname>
+        </param>
+        <briefdescription>
+<para>Set the default permissions of the slash command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>defaults</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default permissions to set. This is a permission bitmask of bits from <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>You can set it to 0 to disable the command for everyone except admins by default</para>
+</simplesect>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1113" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a3959f3f3b2709c56e03610e6f774e449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::add_option</definition>
+        <argsstring>(const command_option &amp;o)</argsstring>
+        <name>add_option</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1command__option" kindref="compound">command_option</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Add an option (parameter) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option (parameter) to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1121" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1aa1095faeeacc9c711c9a1e93ff883bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_type</definition>
+        <argsstring>(slashcommand_contextmenu_type _type)</argsstring>
+        <name>set_type</name>
+        <param>
+          <type><ref refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fb" kindref="member">slashcommand_contextmenu_type</ref></type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+<para>Set the type of the slash command (only for context menu entries) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of context menu entry this command represents </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If the type is <ref refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a" kindref="member">dpp::ctxm_chat_input</ref>, the command name will be set to lowercase. </para>
+</simplesect>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1130" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1aba074557679db547ec1a7ae955cd8353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_name</definition>
+        <argsstring>(const std::string &amp;n)</argsstring>
+        <name>set_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Set the name of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of command </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The maximum length of a command name is 32 UTF-8 codepoints. If your command name is longer than this, it will be truncated. The command name will be set to lowercase when the type is the default <ref refid="namespacedpp_1a3af415bd74cead2c665a6a507ce843fba09b58fe33a8d8a5587a8e3676371151a" kindref="member">dpp::ctxm_chat_input</ref>. </para>
+</simplesect>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1141" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a50fc02275a4dcba70a5dacb4ecbd2085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_description</definition>
+        <argsstring>(const std::string &amp;d)</argsstring>
+        <name>set_description</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Set the description of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The maximum length of a command description is 100 UTF-8 codepoints. If your command description is longer than this, it will be truncated. </para>
+</simplesect>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1151" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a0b5e048d0df9f02f09ab1117328e0c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::set_application_id</definition>
+        <argsstring>(snowflake i)</argsstring>
+        <name>set_application_id</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Set the application id of the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>application id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1159" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a35086350bd76709e6befeed71e2598ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::add_permission</definition>
+        <argsstring>(const command_permission &amp;p)</argsstring>
+        <name>add_permission</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1command__permission" kindref="compound">command_permission</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Adds a permission to the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>permission to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000003"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Discord discourage use of this value and instead you should use default_member_permissions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1168" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1af5e01640cbf5f00e74e7dd724e43d6f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::disable_default_permissions</definition>
+        <argsstring>()</argsstring>
+        <name>disable_default_permissions</name>
+        <briefdescription>
+<para>Disable default permissions, command will be unusable unless permissions are overridden with add_permission and dpp::guild_command_edit_permissions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>slashcommand&amp; reference to self for chaining of calls </para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Discord discourage use of this value and instead you should use default_member_permissions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1178" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a664dafac57ad95dad3accf6914a3c419" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::slashcommand::get_mention</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mention</name>
+        <briefdescription>
+<para>Return a ping/mention for the slash command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string mention. e.g. <computeroutput>&lt;/airhorn:816437322781949972&gt;</computeroutput> </para>
+</simplesect>
+<simplesect kind="note"><para>If you want a mention for a subcommand or subcommand group, you can use <ref refid="namespacedpp_1_1utility_1ab5e15dbccb96fdcd2ac075bf530290e1" kindref="member">dpp::utility::slashcommand_mention</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1186" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a2295a43bd5defc3a87afa5f0cc0c36af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1slashcommand" kindref="compound">slashcommand</ref> &amp;</type>
+        <definition>slashcommand &amp; dpp::slashcommand::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Fill object properties from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>slashcommand&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1194" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1slashcommand_1a540339915ce149aa7631d3977ea1882a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::slashcommand::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build a json string for this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if to include the ID in the JSON </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string JSON string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="1202" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double dpp::managed::get_creation_time</definition>
+        <argsstring>() const</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="55" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::managed::operator==</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are not the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="64" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="73" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an application command, created by your bot either globally, or on a guild. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+      </node>
+      <node id="1">
+        <label>dpp::slashcommand</label>
+        <link refid="classdpp_1_1slashcommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; slashcommand &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; slashcommand &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>bool</label>
+      </node>
+      <node id="6">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dpp::permission</label>
+        <link refid="classdpp_1_1permission"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::slashcommand</label>
+        <link refid="classdpp_1_1slashcommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>application_id</edgelabel>
+          <edgelabel>version</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>description</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>options</edgelabel>
+          <edgelabel>permissions</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>default_permission</edgelabel>
+          <edgelabel>dm_permission</edgelabel>
+          <edgelabel>nsfw</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>description_localizations</edgelabel>
+          <edgelabel>name_localizations</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>default_member_permissions</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dpp::json_interface&lt; slashcommand &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; slashcommand &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>slashcommand_contextmenu_type</label>
+      </node>
+      <node id="9">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="12">
+        <label>map&lt;</label>
+      </node>
+      <node id="8">
+        <label>std::string</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector&lt;</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/appcommand.h" line="985" column="1" bodyfile="include/dpp/appcommand.h" bodystart="985" bodyend="1203"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1slashcommand_1af2e10e78a1a517f3e6d6b85bbc6fd2f8" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>add_localization</name></member>
+      <member refid="classdpp_1_1slashcommand_1a3959f3f3b2709c56e03610e6f774e449" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>add_option</name></member>
+      <member refid="classdpp_1_1slashcommand_1a35086350bd76709e6befeed71e2598ab" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>add_permission</name></member>
+      <member refid="classdpp_1_1slashcommand_1a68823472ad357bc69759212f6ebe1a82" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>application_id</name></member>
+      <member refid="classdpp_1_1slashcommand_1a540339915ce149aa7631d3977ea1882a" prot="public" virt="virtual"><scope>dpp::slashcommand</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1slashcommand_1ab12b66d2e3c741f0c3e2798895a7aa64" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>default_member_permissions</name></member>
+      <member refid="classdpp_1_1slashcommand_1a464b5758679dd76d9603cea18540021b" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>default_permission</name></member>
+      <member refid="classdpp_1_1slashcommand_1a9bdfc4a4e6121349903f7ab28010691a" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>description</name></member>
+      <member refid="classdpp_1_1slashcommand_1aa8703ae685b1a155a53640bb51959eeb" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>description_localizations</name></member>
+      <member refid="classdpp_1_1slashcommand_1af5e01640cbf5f00e74e7dd724e43d6f0" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>disable_default_permissions</name></member>
+      <member refid="classdpp_1_1slashcommand_1ad2a49299f059be2a8c48250470462325" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>dm_permission</name></member>
+      <member refid="classdpp_1_1slashcommand_1a2295a43bd5defc3a87afa5f0cc0c36af" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>fill_from_json</name></member>
+      <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>get_creation_time</name></member>
+      <member refid="classdpp_1_1slashcommand_1a664dafac57ad95dad3accf6914a3c419" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>get_mention</name></member>
+      <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>id</name></member>
+      <member refid="classdpp_1_1managed_1a30e9c7c9cef4cd42487f0be61aa616d0" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>managed</name></member>
+      <member refid="classdpp_1_1slashcommand_1aba1bc2d7cb8d9f67071aab5c16df964b" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>name</name></member>
+      <member refid="classdpp_1_1slashcommand_1a2b4b3b44ab92817d96ee07095e20d277" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>name_localizations</name></member>
+      <member refid="classdpp_1_1slashcommand_1ad42d0df8b2d634ab02b0235c21c53df2" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>nsfw</name></member>
+      <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>operator!=</name></member>
+      <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1slashcommand_1ad7bf348ca0d07ccd3416656f023d913e" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>options</name></member>
+      <member refid="classdpp_1_1slashcommand_1a63b80f4596de1e0906a5fc5d4bf5d4f0" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>permissions</name></member>
+      <member refid="classdpp_1_1slashcommand_1a0b5e048d0df9f02f09ab1117328e0c92" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>set_application_id</name></member>
+      <member refid="classdpp_1_1slashcommand_1a51084be92893e21d13ffe320a2b77e8a" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>set_default_permissions</name></member>
+      <member refid="classdpp_1_1slashcommand_1a50fc02275a4dcba70a5dacb4ecbd2085" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>set_description</name></member>
+      <member refid="classdpp_1_1slashcommand_1acb868504a7b3b7d5cdaf6848ae785ad6" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>set_dm_permission</name></member>
+      <member refid="classdpp_1_1slashcommand_1aba074557679db547ec1a7ae955cd8353" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>set_name</name></member>
+      <member refid="classdpp_1_1slashcommand_1a2b923f92b445d62757c8bfc690258fb1" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>set_nsfw</name></member>
+      <member refid="classdpp_1_1slashcommand_1aa1095faeeacc9c711c9a1e93ff883bfe" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>set_type</name></member>
+      <member refid="classdpp_1_1slashcommand_1add0654f80f31c52fbbf7d1541653a7b0" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>slashcommand</name></member>
+      <member refid="classdpp_1_1slashcommand_1a7f64e4998a23592427069eae91df25be" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>slashcommand</name></member>
+      <member refid="classdpp_1_1slashcommand_1a5c87c504512af7090f8f4c215184320a" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>type</name></member>
+      <member refid="classdpp_1_1slashcommand_1a945310d52b555f3d04b13ca04bd532b4" prot="public" virt="non-virtual"><scope>dpp::slashcommand</scope><name>version</name></member>
+      <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::slashcommand</scope><name>~json_interface</name></member>
+      <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::slashcommand</scope><name>~managed</name></member>
+      <member refid="classdpp_1_1slashcommand_1ac0b2c4131b2483f4b168acbd6d292fd1" prot="public" virt="virtual"><scope>dpp::slashcommand</scope><name>~slashcommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

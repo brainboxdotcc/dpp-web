@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="install-windows-clion-vcpkg" kind="page">
+    <compoundname>install-windows-clion-vcpkg</compoundname>
+    <title>Installing from vcpkg for CLion</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To add D++ to a CLion project, you need obtain the library through vcpkg and then configure your CLion project and <computeroutput>CMakeLists.txt</computeroutput>.</para>
+<para><orderedlist>
+<listitem><para>Build <ulink url="https://vcpkg.io/">vcpkg</ulink> on your system (skip if you already have it).</para>
+</listitem><listitem><para>Run <computeroutput>vcpkg install dpp:x64-windows</computeroutput> (replace x64-windows with whichever OS and architecture you want the library to be built for).</para>
+</listitem><listitem><para>vcpkg will install the library along with the dependencies for you.</para>
+</listitem><listitem><para>Now check if dpp has been installed using <computeroutput>vcpkg list dpp</computeroutput>. <programlisting><codeline><highlight class="normal">C:/vcpkg&gt;vcpkg<sp/>list<sp/>dpp</highlight></codeline>
+<codeline><highlight class="normal">dpp:x64-windows<sp/><sp/><sp/><sp/><sp/>10.0.23<sp/><sp/><sp/><sp/><sp/>D++<sp/>Extremely<sp/>Lightweight<sp/>C++<sp/>Discord<sp/>Library.</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>To use vcpkg in CLion, add the following line to your CMake options in the settings (Located under Settings &gt; Build, Execution, Deployment &gt; CMake) <programlisting><codeline><highlight class="normal">-DCMAKE_TOOLCHAIN_FILE=path_to_vcpkg_root_folder/scripts/buildsystems/vcpkg.cmake</highlight></codeline>
+</programlisting> For example, if your root folder is <computeroutput>C:/vcpkg/</computeroutput> then the CMake option will be: <programlisting><codeline><highlight class="normal">-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>Now proceed to add the following lines to your <computeroutput>CMakeLists.txt</computeroutput>: <programlisting filename=".cmake"><codeline><highlight class="normal">find_package(dpp<sp/>CONFIG<sp/>REQUIRED)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(main<sp/>PRIVATE<sp/>dpp::dpp)</highlight></codeline>
+<codeline><highlight class="normal">target_include_directories(main<sp/>PRIVATE<sp/>path_to_vcpkg_root_folder/installed/architecture-os/include)</highlight></codeline>
+</programlisting> For example, if built for x64-windows and vcpkg root is <computeroutput>C:/vcpkg/</computeroutput> then your <computeroutput>CMakeLists.txt</computeroutput> should look like this: <programlisting filename=".cmake"><codeline><highlight class="normal">find_package(dpp<sp/>CONFIG<sp/>REQUIRED)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(main<sp/>PRIVATE<sp/>dpp::dpp)</highlight></codeline>
+<codeline><highlight class="normal">target_include_directories(main<sp/>PRIVATE<sp/>C:/vcpkg/installed/x64-windows/include)</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>Congratulations! Now try to build a test program to see if the installation succeeded. If you get stuck somewhere, feel free to ask us on the D++ <ulink url="https://discord.gg/dpp">discord server</ulink>. </para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+    <location file="docpages/install/install-windows-clion-vcpkg.md"/>
+  </compounddef>
+</doxygen>

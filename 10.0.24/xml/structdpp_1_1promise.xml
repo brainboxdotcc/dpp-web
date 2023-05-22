@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1promise" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::promise</compoundname>
+    <includes local="no">coro.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1promise_1aaddd2e7301e00813104af3f11354c225" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <definition>cluster* dpp::promise::bot</definition>
+        <argsstring></argsstring>
+        <name>bot</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>A pointer to the cluster making the requests in the coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="32" column="9" bodyfile="include/dpp/coro.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1promise_1a5cb0ab5b83870cbf4817b10076b86e81" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref></type>
+        <definition>confirmation_callback_t dpp::promise::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+<para>The result of the last co_await-ed function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="37" column="25" bodyfile="include/dpp/coro.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1promise_1a2e7f1e7ed76bf6e139dc97d739d8be68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::promise::promise</definition>
+        <argsstring>()=default</argsstring>
+        <name>promise</name>
+        <briefdescription>
+<para>Construct a new promise object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1promise_1a2ec5aa6a369eebe00cc132d47b7a82c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::promise::promise</definition>
+        <argsstring>(const dpp::event_dispatch_t &amp;ev)</argsstring>
+        <name>promise</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">dpp::event_dispatch_t</ref> &amp;</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new promise object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Base type of all events, only used to get the <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="49" column="1" bodyfile="include/dpp/coro.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1promise_1a83bd5561846db091231756ed58fef015" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1task" kindref="compound">task</ref></type>
+        <definition>task dpp::promise::get_return_object</definition>
+        <argsstring>()</argsstring>
+        <name>get_return_object</name>
+        <briefdescription>
+<para>Get the return object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>task <ref refid="structdpp_1_1task" kindref="compound">dpp::task</ref> type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="56" column="6" bodyfile="include/dpp/coro.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1promise_1a78a5eaa14024940669c13f531283141b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::suspend_never</type>
+        <definition>std::suspend_never dpp::promise::initial_suspend</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>initial_suspend</name>
+        <briefdescription>
+<para>Function called when the coroutine is first suspended, never suspends. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::suspend_never Never suspend this coroutine at the first suspend point </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="65" column="20" bodyfile="include/dpp/coro.h" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1promise_1a84c616d67a9c09bc71f77d6c006d697e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::suspend_never</type>
+        <definition>std::suspend_never dpp::promise::final_suspend</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>final_suspend</name>
+        <briefdescription>
+<para>Function called when the coroutine reaches its last suspension point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::suspend_never Never suspend this coroutine at the final suspend point </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="74" column="20" bodyfile="include/dpp/coro.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1promise_1ad396e69656a668a6c424116d7386ca98" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::promise::return_void</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>return_void</name>
+        <briefdescription>
+<para>Function called when the coroutine returns nothing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="81" column="6" bodyfile="include/dpp/coro.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1promise_1a4e700ae9254be134e6ef6dc217001140" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::promise::unhandled_exception</definition>
+        <argsstring>()</argsstring>
+        <name>unhandled_exception</name>
+        <briefdescription>
+<para>Function called when coroutine throws a un-catch-ed exception. Does nothing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="86" column="6" bodyfile="include/dpp/coro.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementation of promise_type for dpp&apos;s coroutines. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="26">
+        <label>bool</label>
+      </node>
+      <node id="18">
+        <label>cache_policy_setting_t</label>
+      </node>
+      <node id="7">
+        <label>double</label>
+      </node>
+      <node id="17">
+        <label>dpp::cache_policy_t</label>
+        <link refid="structdpp_1_1cache__policy__t"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>role_policy</edgelabel>
+          <edgelabel>user_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::cluster</label>
+        <link refid="classdpp_1_1cluster"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>last_identify</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>cluster_id</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>maxclusters</edgelabel>
+          <edgelabel>numshards</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>rest_ping</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>me</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>cache_policy</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>ws_mode</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>on_autocomplete</edgelabel>
+          <edgelabel>on_automod_rule_create</edgelabel>
+          <edgelabel>on_automod_rule_delete</edgelabel>
+          <edgelabel>on_automod_rule_execute</edgelabel>
+          <edgelabel>on_automod_rule_update</edgelabel>
+          <edgelabel>on_button_click</edgelabel>
+          <edgelabel>on_channel_create</edgelabel>
+          <edgelabel>on_channel_delete</edgelabel>
+          <edgelabel>on_channel_pins_update</edgelabel>
+          <edgelabel>on_channel_update</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>dpp::confirmation_callback_t</label>
+        <link refid="structdpp_1_1confirmation__callback__t"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>http_info</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>bot</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>dpp::http_request_completion_t</label>
+        <link refid="structdpp_1_1http__request__completion__t"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>headers</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>error</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>ratelimit_bucket</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ratelimit_limit</edgelabel>
+          <edgelabel>ratelimit_remaining</edgelabel>
+          <edgelabel>ratelimit_reset_after</edgelabel>
+          <edgelabel>ratelimit_retry_after</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>ratelimit_global</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>latency</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="9">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::promise</label>
+        <link refid="structdpp_1_1promise"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>bot</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>callback</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>event_router_t&lt;</label>
+      </node>
+      <node id="25">
+        <label>http_error</label>
+      </node>
+      <node id="12">
+        <label>dpp::json_interface&lt; user &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="13" relation="template-instance">
+          <edgelabel>&lt; user &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="20">
+        <label>condition_variable</label>
+      </node>
+      <node id="24">
+        <label>multimap&lt;</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>variant&lt; active_threads, application_role_connection, application_role_connection_metadata_list, confirmation, message, message_map, user, user_identified, user_map, guild_member, guild_member_map, channel, channel_map, thread_member, thread_member_map, guild, guild_map, guild_command_permissions, guild_command_permissions_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog, slashcommand, slashcommand_map, stage_instance, sticker, sticker_map, sticker_pack, sticker_pack_map, application, application_map, connection, connection_map, thread, thread_map, scheduled_event, scheduled_event_map, event_member, event_member_map, automod_rule, automod_rule_map &gt;</label>
+      </node>
+      <node id="5">
+        <label>time_t</label>
+      </node>
+      <node id="15">
+        <label>uint16_t</label>
+      </node>
+      <node id="6">
+        <label>uint32_t</label>
+      </node>
+      <node id="11">
+        <label>uint64_t</label>
+      </node>
+      <node id="16">
+        <label>uint8_t</label>
+      </node>
+      <node id="19">
+        <label>websocket_protocol_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro.h" line="28" column="1" bodyfile="include/dpp/coro.h" bodystart="28" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1promise_1aaddd2e7301e00813104af3f11354c225" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>bot</name></member>
+      <member refid="structdpp_1_1promise_1a5cb0ab5b83870cbf4817b10076b86e81" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>callback</name></member>
+      <member refid="structdpp_1_1promise_1a84c616d67a9c09bc71f77d6c006d697e" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>final_suspend</name></member>
+      <member refid="structdpp_1_1promise_1a83bd5561846db091231756ed58fef015" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>get_return_object</name></member>
+      <member refid="structdpp_1_1promise_1a78a5eaa14024940669c13f531283141b" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>initial_suspend</name></member>
+      <member refid="structdpp_1_1promise_1a2e7f1e7ed76bf6e139dc97d739d8be68" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>promise</name></member>
+      <member refid="structdpp_1_1promise_1a2ec5aa6a369eebe00cc132d47b7a82c8" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>promise</name></member>
+      <member refid="structdpp_1_1promise_1ad396e69656a668a6c424116d7386ca98" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>return_void</name></member>
+      <member refid="structdpp_1_1promise_1a4e700ae9254be134e6ef6dc217001140" prot="public" virt="non-virtual"><scope>dpp::promise</scope><name>unhandled_exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

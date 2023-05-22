@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="buildcmake" kind="page">
+    <compoundname>buildcmake</compoundname>
+    <title>Building a Discord Bot using CMake/UNIX</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect2 id="buildcmake_1autotoc_md115">
+<title>1. Toolchain</title>
+<para>Before compiling, you will need to install <computeroutput>cmake</computeroutput> on your system. To be sure that <computeroutput>cmake</computeroutput> is installed, you can type the following command: <verbatim>$ cmake --version
+cmake version 3.20.4
+</verbatim></para>
+</sect2>
+<sect2 id="buildcmake_1autotoc_md116">
+<title>2. Create a CMake project</title>
+<para>In an empty directory, create the following files and directories: <verbatim>- your_project/
+    |-- libs/
+    |-- src/
+        |-- main.cpp
+    |-- CMakeLists.txt
+</verbatim></para>
+<para>In the <computeroutput>libs/</computeroutput> directory, clone D++ with: <computeroutput>git clone <ulink url="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</ulink></computeroutput></para>
+</sect2>
+<sect2 id="buildcmake_1autotoc_md117">
+<title>3. Configure CMake</title>
+<para>Here is an example CMake configuration, adapt it according to your needs:</para>
+<para><programlisting filename=".cmake"><codeline><highlight class="normal">#<sp/>minimum<sp/>CMake<sp/>version<sp/>required</highlight></codeline>
+<codeline><highlight class="normal">cmake_minimum_required(VERSION<sp/>3.15)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Project<sp/>name,<sp/>version<sp/>and<sp/>description</highlight></codeline>
+<codeline><highlight class="normal">project(discord-bot<sp/>VERSION<sp/>1.0<sp/>DESCRIPTION<sp/>&quot;A<sp/>discord<sp/>bot&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Add<sp/>DPP<sp/>as<sp/>dependency</highlight></codeline>
+<codeline><highlight class="normal">add_subdirectory(libs/DPP)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>You<sp/>can<sp/>also<sp/>add<sp/>any<sp/>other<sp/>libs<sp/>you<sp/>want<sp/>to<sp/>use</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Create<sp/>an<sp/>executable</highlight></codeline>
+<codeline><highlight class="normal">add_executable(${PROJECT_NAME}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>src/main.cpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>your<sp/>other<sp/>files...</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Linking<sp/>libraries</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(${PROJECT_NAME}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Add<sp/>any<sp/>other<sp/>libs<sp/>you<sp/>want<sp/>to<sp/>use<sp/>here</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Specify<sp/>includes</highlight></codeline>
+<codeline><highlight class="normal">target_include_directories(${PROJECT_NAME}<sp/>PRIVATE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>libs/DPP/include</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Remember<sp/>to<sp/>add<sp/>the<sp/>include<sp/>directories<sp/>of<sp/>any<sp/>other<sp/>libraries<sp/>too</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>C++<sp/>version</highlight></codeline>
+<codeline><highlight class="normal">set_target_properties(${PROJECT_NAME}<sp/>PROPERTIES</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD<sp/>17</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD_REQUIRED<sp/>ON</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+</programlisting></para>
+<para>Your project directory should look like this: <verbatim>- your_project/
+    |-- libs/
+        |-- DPP
+    |-- src/
+        |-- main.cpp
+    |-- CMakeLists.txt
+</verbatim></para>
+<para><bold>Have fun!</bold> </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/make_a_bot/cmake.md"/>
+  </compounddef>
+</doxygen>
