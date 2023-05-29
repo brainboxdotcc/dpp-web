@@ -466,7 +466,7 @@ Variables</h2></td></tr>
     <tr><td class="paramname">path_without_extension</td><td>The path for the endpoint (without the extension e.g. <code>.png</code>) </td></tr>
     <tr><td class="paramname">format</td><td>the wished format to return. Must be one of the formats passed in <code>allowed_formats</code>, otherwise it returns an empty string </td></tr>
     <tr><td class="paramname">size</td><td>the image size which will be appended as a querystring to the url. It must be any power of two between 16 and 4096, otherwise no querystring will be appended (discord then returns the image as their default size) </td></tr>
-    <tr><td class="paramname">prefer_animated</td><td>Whether the user prefers gif format. If true, it'll return gif format whenever the emoji is available as animated. In this case, the <code>format</code>-parameter is only used for non-animated images. </td></tr>
+    <tr><td class="paramname">prefer_animated</td><td>Whether the user prefers gif format. If true, it'll return gif format whenever the image is available as animated. In this case, the <code>format</code>-parameter is only used for non-animated images. </td></tr>
     <tr><td class="paramname">is_animated</td><td>Whether the image is actually animated or not </td></tr>
   </table>
   </dd>
@@ -535,10 +535,10 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">allowed_formats</td><td>A vector of supported formats for the endpoint from the discord docs </td></tr>
     <tr><td class="paramname">path_without_extension</td><td>The path for the endpoint (without the extension e.g. <code>.png</code>) </td></tr>
-    <tr><td class="paramname">hash</td><td>The hash (optional). If passed, it will be prefixed with <code>a_</code> for animated images (<code>is_animated</code>=true) </td></tr>
+    <tr><td class="paramname">hash</td><td>The hash (optional). If not empty, it will be prefixed with <code>a_</code> for animated images (<code>is_animated</code>=true) </td></tr>
     <tr><td class="paramname">format</td><td>the wished format to return. Must be one of the formats passed in <code>allowed_formats</code>, otherwise it returns an empty string </td></tr>
     <tr><td class="paramname">size</td><td>the image size which will be appended as a querystring to the url. It must be any power of two between 16 and 4096, otherwise no querystring will be appended (discord then returns the image as their default size) </td></tr>
-    <tr><td class="paramname">prefer_animated</td><td>Whether the user prefers gif format. If true, it'll return gif format whenever the emoji is available as animated. In this case, the <code>format</code>-parameter is only used for non-animated images. </td></tr>
+    <tr><td class="paramname">prefer_animated</td><td>Whether the user prefers gif format. If true, it'll return gif format whenever the image is available as animated. In this case, the <code>format</code>-parameter is only used for non-animated images. </td></tr>
     <tr><td class="paramname">is_animated</td><td>Whether the image is actually animated or not </td></tr>
   </table>
   </dd>

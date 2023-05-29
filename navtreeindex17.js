@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"classes.html":[8,1],
+"clusters-shards-guilds.html":[5,0],
 "coding-standards.html":[5,2],
 "collecting-reactions.html":[4,3,3],
 "commandhandler.html":[4,1,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3ae35e0964ac06220055227ed1176a1bd8":[7,0,0,336,0],
 "namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3af6a87598b5d0eeb4d0fda285b6b8af30":[7,0,0,336,1],
 "namespacedpp.html#a29954c9dfc5a906346177226d036a418":[7,0,0,331],
-"namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d":[7,0,0,331,1],
-"namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed":[7,0,0,331,0],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3d":[7,0,0,281]
+"namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d":[7,0,0,331,1]
 };

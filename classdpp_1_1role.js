@@ -47,6 +47,7 @@ var classdpp_1_1role =
     [ "has_use_application_commands", "classdpp_1_1role.html#ac19332b3de93ecf0a38d0f07589fd6c5", null ],
     [ "has_use_embedded_activities", "classdpp_1_1role.html#a15be7092d8c6843c387d4811c8b4ac2b", null ],
     [ "has_use_external_emojis", "classdpp_1_1role.html#a363303c06726e049586b8ae4f3f6375e", null ],
+    [ "has_use_external_sounds", "classdpp_1_1role.html#a2fbc05580870a68ced13f6ba657181c9", null ],
     [ "has_use_external_stickers", "classdpp_1_1role.html#a3ec1376d0b72ba7d42b3b0167daef425", null ],
     [ "has_use_soundboard", "classdpp_1_1role.html#af47897c84d878c1b494160ac14b0e449", null ],
     [ "has_use_vad", "classdpp_1_1role.html#a9ffd7c58994f9c3e0a38245462eb6766", null ],
