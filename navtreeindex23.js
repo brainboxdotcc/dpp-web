@@ -1,5 +1,13 @@
 var NAVTREEINDEX23 =
 {
+"namespacedpp_1_1colors.html#accee564d725c50aeba86f2878a514d35":[7,0,0,0,370],
+"namespacedpp_1_1colors.html#acd0ac99d37fc8d8d3a5ddad1c9637702":[7,0,0,0,348],
+"namespacedpp_1_1colors.html#acd179f82e7df74d7919e6ccbe88bf248":[7,0,0,0,13],
+"namespacedpp_1_1colors.html#acdc815bd0188adcd24531bd980a14ad9":[7,0,0,0,516],
+"namespacedpp_1_1colors.html#acded9779f9edd203d8b8e733151c10ad":[7,0,0,0,514],
+"namespacedpp_1_1colors.html#ace6a3098002e2e781452a1590c323716":[7,0,0,0,10],
+"namespacedpp_1_1colors.html#ace80098571a8b76a605ffbf943c7a39b":[7,0,0,0,535],
+"namespacedpp_1_1colors.html#acee68c266135b32291538b29e577fe51":[7,0,0,0,287],
 "namespacedpp_1_1colors.html#acf09d558df848b10b6da89dfd75c6833":[7,0,0,0,288],
 "namespacedpp_1_1colors.html#acf1ea11f601b82bb54b73e52aa3371ad":[7,0,0,0,12],
 "namespacedpp_1_1colors.html#acf2f0878716c42759af122c5227795f5":[7,0,0,0,671],
@@ -181,8 +189,8 @@ var NAVTREEINDEX23 =
 "namespacemembers_d.html":[7,1,0,3],
 "namespacemembers_e.html":[7,1,0,4],
 "namespacemembers_enum.html":[7,1,4],
-"namespacemembers_eval.html":[7,1,5,0],
 "namespacemembers_eval.html":[7,1,5],
+"namespacemembers_eval.html":[7,1,5,0],
 "namespacemembers_eval_c.html":[7,1,5,1],
 "namespacemembers_eval_d.html":[7,1,5,2],
 "namespacemembers_eval_e.html":[7,1,5,3],
@@ -219,8 +227,8 @@ var NAVTREEINDEX23 =
 "namespacemembers_type.html":[7,1,3],
 "namespacemembers_u.html":[7,1,0,19],
 "namespacemembers_v.html":[7,1,0,20],
-"namespacemembers_vars.html":[7,1,2],
 "namespacemembers_vars.html":[7,1,2,0],
+"namespacemembers_vars.html":[7,1,2],
 "namespacemembers_vars_b.html":[7,1,2,1],
 "namespacemembers_vars_c.html":[7,1,2,2],
 "namespacemembers_vars_d.html":[7,1,2,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX23 =
 "namespacemembers_vars_t.html":[7,1,2,18],
 "namespacemembers_vars_u.html":[7,1,2,19],
 "namespacemembers_vars_v.html":[7,1,2,20],
-"namespacemembers_vars_w.html":[7,1,2,21],
-"namespacemembers_vars_y.html":[7,1,2,22],
-"namespacemembers_vars_z.html":[7,1,2,23],
-"namespacemembers_w.html":[7,1,0,21],
-"namespacemembers_y.html":[7,1,0,22],
-"namespacemembers_z.html":[7,1,0,23],
-"namespaces.html":[7,0],
-"oggopus.html":[4,2,1],
-"pages.html":[]
+"namespacemembers_vars_w.html":[7,1,2,21]
 };

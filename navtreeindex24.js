@@ -1,5 +1,13 @@
 var NAVTREEINDEX24 =
 {
+"namespacemembers_vars_y.html":[7,1,2,22],
+"namespacemembers_vars_z.html":[7,1,2,23],
+"namespacemembers_w.html":[7,1,0,21],
+"namespacemembers_y.html":[7,1,0,22],
+"namespacemembers_z.html":[7,1,0,23],
+"namespaces.html":[7,0],
+"oggopus.html":[4,2,1],
+"pages.html":[],
 "record-user.html":[4,2,3],
 "slashcommands.html":[4,1,0],
 "soundboard.html":[4,2,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX24 =
 "structdpp_1_1automod__metadata.html#a6df2aca1f4ae15a39012df0acfcd43ec":[8,0,0,21,3],
 "structdpp_1_1automod__metadata.html#a7529859f52dd6c49cdb7e1f58e8f9127":[7,0,0,23,6],
 "structdpp_1_1automod__metadata.html#a7529859f52dd6c49cdb7e1f58e8f9127":[8,0,0,21,6],
-"structdpp_1_1automod__metadata.html#a76291c89955400cce516951847d1668e":[7,0,0,23,2],
-"structdpp_1_1automod__metadata.html#a76291c89955400cce516951847d1668e":[8,0,0,21,2],
-"structdpp_1_1automod__metadata.html#a855c12dbe234d7cd0365256ac6db4dbe":[8,0,0,21,9],
-"structdpp_1_1automod__metadata.html#a855c12dbe234d7cd0365256ac6db4dbe":[7,0,0,23,9],
-"structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6":[7,0,0,23,5],
-"structdpp_1_1automod__metadata.html#add05f221746c0ea2b3136b53498d0cf6":[8,0,0,21,5],
-"structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d":[8,0,0,21,4],
-"structdpp_1_1automod__metadata.html#ae6bdcf68e58d87cb7d03b97ad25de82d":[7,0,0,23,4],
-"structdpp_1_1automod__rule__create__t.html":[8,0,0,23]
+"structdpp_1_1automod__metadata.html#a76291c89955400cce516951847d1668e":[7,0,0,23,2]
 };
