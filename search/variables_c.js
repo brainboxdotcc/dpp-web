@@ -22,7 +22,7 @@ var searchData=
   ['max_5fseq_19',['max_seq',['../structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html#a810e5e9a2ef3ccfd47c55202a8c5c120',1,'dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t']]],
   ['max_5fshards_20',['max_shards',['../classdpp_1_1discord__client.html#a7e8e56675006b1af1c09d8de1519f001',1,'dpp::discord_client']]],
   ['max_5ftimestamp_21',['max_timestamp',['../structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html#a06d537d652c468f6843891d849818e5a',1,'dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t']]],
-  ['max_5fuses_22',['max_uses',['../classdpp_1_1invite.html#a942cafe78963747660ed5309f6747787',1,'dpp::invite']]],
+  ['max_5fuses_22',['max_uses',['../classdpp_1_1invite.html#a52eec4facac2e63d9f46d783d763f066',1,'dpp::invite']]],
   ['max_5fvalue_23',['max_value',['../structdpp_1_1command__option.html#a1a658b6e5472c0f41543addccc14a7e4',1,'dpp::command_option']]],
   ['max_5fvalues_24',['max_values',['../classdpp_1_1component.html#a35895913793b44ca33d039e4042afc25',1,'dpp::component']]],
   ['max_5fvideo_5fchannel_5fusers_25',['max_video_channel_users',['../classdpp_1_1guild.html#a76661c06c1ee85a3377db6fdd2b2c2c1',1,'dpp::guild']]],

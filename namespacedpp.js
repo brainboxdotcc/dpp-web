@@ -1412,6 +1412,11 @@ var namespacedpp =
       [ "it_autocomplete", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4", null ],
       [ "it_modal_submit", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a2260f71b08edd3a605b6bc6c49c0659b", null ]
     ] ],
+    [ "invite_target_t", "namespacedpp.html#a7744393c99f4267d89195749406eed3b", [
+      [ "itt_none", "namespacedpp.html#a7744393c99f4267d89195749406eed3baaeef0e66699afa934ed716404a31ae06", null ],
+      [ "itt_stream", "namespacedpp.html#a7744393c99f4267d89195749406eed3ba96dc2021651edfef0a9154744e386a8e", null ],
+      [ "itt_embedded_application", "namespacedpp.html#a7744393c99f4267d89195749406eed3ba5a920f5e05cfec0e34fba45ceebc3bcf", null ]
+    ] ],
     [ "loglevel", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2", [
       [ "ll_trace", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2aa46236c8641ec518b2a441a8d3fe8e6a", null ],
       [ "ll_debug", "namespacedpp.html#a7d48d478ccc3bffb34637bdb48f629c2a97dc4e31999535da7d8f2279d3b926e3", null ],
