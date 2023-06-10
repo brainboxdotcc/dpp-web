@@ -1,5 +1,17 @@
 var NAVTREEINDEX18 =
 {
+"md_docpages_01_frequently_asked_questions.html#autotoc_md26":[1,25],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md27":[1,26],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md28":[1,27],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md29":[1,28],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md3":[1,2],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md4":[1,3],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md5":[1,4],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md6":[1,5],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md7":[1,6],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md8":[1,7],
+"md_docpages_01_frequently_asked_questions.html#autotoc_md9":[1,8],
+"md_docpages_01_installing.html":[2],
 "md_docpages_02_building_a_bot.html":[3],
 "md_docpages_03_example_programs.html":[4],
 "md_docpages_04_advanced_reference.html":[5],
@@ -237,17 +249,5 @@ var NAVTREEINDEX18 =
 "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11":[7,0,0,314,1],
 "namespacedpp.html#a5ccea9f895c3e902f58f5d61ff748bf5":[7,0,0,365],
 "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9":[7,0,0,288],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a0b0d31477f484ddc8b5da869e8a020bd":[7,0,0,288,0],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9":[7,0,0,288,4],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a616b3dd8173ca7ca0d249d82c573e3c0":[7,0,0,288,2],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a76fb8f7043c63103db86dc0ef1f14fca":[7,0,0,288,1],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89":[7,0,0,288,3],
-"namespacedpp.html#a608a89c45f1a0d89535b9165a1225ada":[7,0,0,355],
-"namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1":[7,0,0,249],
-"namespacedpp.html#a63fe6eabce56fea9bf6192649e47f374":[7,0,0,390],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7":[7,0,0,326],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a04df677383ab1edc2e224726c48a6f80":[7,0,0,326,39],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a10433f34ee13298e9c51f5e9b7024934":[7,0,0,326,23],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9":[7,0,0,326,44],
-"namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1298ec58bdd34875c6ce723109637cf8":[7,0,0,326,14]
+"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a0b0d31477f484ddc8b5da869e8a020bd":[7,0,0,288,0]
 };
