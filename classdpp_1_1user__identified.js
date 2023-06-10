@@ -44,6 +44,7 @@ var classdpp_1_1user__identified =
     [ "discriminator", "classdpp_1_1user__identified.html#afe658cc2d4adcf83a76f798dead3e5e6", null ],
     [ "email", "classdpp_1_1user__identified.html#a9636dd7572180e536bb6d96fc9721197", null ],
     [ "flags", "classdpp_1_1user__identified.html#aab86456a191f214b38277cf65bb6af05", null ],
+    [ "global_name", "classdpp_1_1user__identified.html#a2411b17e9e910111283c405d78bb25f9", null ],
     [ "id", "classdpp_1_1user__identified.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "locale", "classdpp_1_1user__identified.html#a0198108a251db7e4d893d8ab39e8e18b", null ],
     [ "refcount", "classdpp_1_1user__identified.html#a68d336b1fc0b592ea970c11eaf9f2048", null ],

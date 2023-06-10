@@ -38,6 +38,7 @@ var classdpp_1_1user =
     [ "avatar", "classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3", null ],
     [ "discriminator", "classdpp_1_1user.html#afe658cc2d4adcf83a76f798dead3e5e6", null ],
     [ "flags", "classdpp_1_1user.html#aab86456a191f214b38277cf65bb6af05", null ],
+    [ "global_name", "classdpp_1_1user.html#a2411b17e9e910111283c405d78bb25f9", null ],
     [ "id", "classdpp_1_1user.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "refcount", "classdpp_1_1user.html#a68d336b1fc0b592ea970c11eaf9f2048", null ],
     [ "username", "classdpp_1_1user.html#a4e72b2e5ac7d5539fdae64be6e01246c", null ]
