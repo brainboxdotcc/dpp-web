@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['active_5fthreads_0',['active_threads',['../structdpp_1_1active__threads.html',1,'dpp']]],
+  ['active_5fthread_5finfo_0',['active_thread_info',['../structdpp_1_1active__thread__info.html',1,'dpp']]],
   ['activity_1',['activity',['../classdpp_1_1activity.html',1,'dpp']]],
   ['activity_5fassets_2',['activity_assets',['../structdpp_1_1activity__assets.html',1,'dpp']]],
   ['activity_5fbutton_3',['activity_button',['../structdpp_1_1activity__button.html',1,'dpp']]],
