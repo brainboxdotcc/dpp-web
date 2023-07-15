@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d":[8,0,0,210,5],
+"classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d":[7,0,0,213,5],
 "classdpp_1_1voicestate.html#a631921c8fd04d5b3c1989218b48ef4d3":[8,0,0,210,8],
 "classdpp_1_1voicestate.html#a631921c8fd04d5b3c1989218b48ef4d3":[7,0,0,213,8],
 "classdpp_1_1voicestate.html#a6d2114f152b6170f039c096f8a200219":[8,0,0,210,10],
@@ -197,8 +199,8 @@ var NAVTREEINDEX17 =
 "functions_type.html":[8,3,3],
 "functions_u.html":[8,3,0,20],
 "functions_v.html":[8,3,0,21],
-"functions_vars.html":[8,3,2],
 "functions_vars.html":[8,3,2,0],
+"functions_vars.html":[8,3,2],
 "functions_vars_b.html":[8,3,2,1],
 "functions_vars_c.html":[8,3,2,2],
 "functions_vars_d.html":[8,3,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "install-xmake.html":[2,6],
 "interactions-and-components.html":[4,1],
 "joinvc.html":[4,2,4],
-"lambdas-and-locals.html":[5,4],
-"making_a_http_request.html":[4,3,0],
-"md_docpages_01_frequently_asked_questions.html":[1]
+"lambdas-and-locals.html":[5,4]
 };

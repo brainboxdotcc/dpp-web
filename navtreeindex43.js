@@ -1,5 +1,7 @@
 var NAVTREEINDEX43 =
 {
+"namespacedpp_1_1unicode__emoji.html#ade42324f25609cd628a88be0e9169256":[7,0,0,3,3411],
+"namespacedpp_1_1unicode__emoji.html#ade42b1192e9478132a11f600c65399d4":[7,0,0,3,4836],
 "namespacedpp_1_1unicode__emoji.html#ade60030e042efd899f4293e50b022e29":[7,0,0,3,661],
 "namespacedpp_1_1unicode__emoji.html#ade629c9272b1b4f2ffd4bfa8579ef388":[7,0,0,3,1672],
 "namespacedpp_1_1unicode__emoji.html#ade683aa8e35675742f48b110aed19088":[7,0,0,3,3960],
@@ -247,7 +249,5 @@ var NAVTREEINDEX43 =
 "namespacedpp_1_1unicode__emoji.html#ae9fb99afd5df32b9d8ffd5ebc787a9e4":[7,0,0,3,2390],
 "namespacedpp_1_1unicode__emoji.html#aea04be0737e1618e95ef9c7b91848a79":[7,0,0,3,4565],
 "namespacedpp_1_1unicode__emoji.html#aea10803928fcee2cf2bb4c3dc50b9e56":[7,0,0,3,5452],
-"namespacedpp_1_1unicode__emoji.html#aea236b243d8f93b4430026ba0d6f20d1":[7,0,0,3,2529],
-"namespacedpp_1_1unicode__emoji.html#aea311339c72f1ecc7c5a3160649c2176":[7,0,0,3,4604],
-"namespacedpp_1_1unicode__emoji.html#aea43627190161f8aa45a01908d28c6b1":[7,0,0,3,3414]
+"namespacedpp_1_1unicode__emoji.html#aea236b243d8f93b4430026ba0d6f20d1":[7,0,0,3,2529]
 };
