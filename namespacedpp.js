@@ -6549,7 +6549,9 @@ var namespacedpp =
       [ "aut_automod_rule_delete", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daacd059685b2f4ea31f0737f8fbad79be", null ],
       [ "aut_automod_block_message", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da7e0e253d58c1eeebf4d8c3a65d08975d", null ],
       [ "aut_automod_flag_to_channel", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7", null ],
-      [ "aut_automod_user_communication_disabled", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da57a1690ffdfea4c9082a539aa966212b", null ]
+      [ "aut_automod_user_communication_disabled", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da57a1690ffdfea4c9082a539aa966212b", null ],
+      [ "aut_creator_monetization_request_created", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da78d843d0a72104b82e07ffed4b18da78", null ],
+      [ "aut_creator_monetization_terms_accepted", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da32315caa0ddc14fe99052eaffe8baeb5", null ]
     ] ],
     [ "auto_archive_duration_t", "namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8", [
       [ "arc_1_hour", "namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8a3c1c9e404925889813eb8d6af391fbab", null ],
