@@ -27,6 +27,7 @@ var namespacedpp_1_1utility =
     [ "emoji_mention", "namespacedpp_1_1utility.html#a2e47c004a5f0d6ee78819935d681a947", null ],
     [ "exec", "namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0", null ],
     [ "has_voice", "namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4", null ],
+    [ "is_coro_enabled", "namespacedpp_1_1utility.html#a282afa80feeda7760345275546ca8a76", null ],
     [ "log_error", "namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910", null ],
     [ "loglevel", "namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045", null ],
     [ "make_url_parameters", "namespacedpp_1_1utility.html#aeada90d27918093d9fe6a53d1a245f50", null ],
