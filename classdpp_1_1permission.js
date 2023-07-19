@@ -4,6 +4,7 @@ var classdpp_1_1permission =
     [ "permission", "classdpp_1_1permission.html#a75b4a65df5c6f817bd64d81d6856a39e", null ],
     [ "add", "classdpp_1_1permission.html#abc2e0b7597ec5b049c0e6a78e1fdab42", null ],
     [ "has", "classdpp_1_1permission.html#a02df5786b6ca1d11bbd24a175e3e28c4", null ],
+    [ "has_any", "classdpp_1_1permission.html#ab1485fc23cfccaabefa7117f10487a40", null ],
     [ "operator uint64_t", "classdpp_1_1permission.html#a441f6fda65df915de06aee70859e427c", null ],
     [ "operator uint64_t &", "classdpp_1_1permission.html#a295aacfb3002689570ee95f608229fa3", null ],
     [ "remove", "classdpp_1_1permission.html#af1e419249eb0f34d9fd0f57883493f1d", null ],

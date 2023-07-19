@@ -6494,6 +6494,9 @@ var namespacedpp =
       [ "rc_boolean_equal", "namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33aebb4a6b85656856fd57d8677352e777c", null ],
       [ "rc_boolean_not_equal", "namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33aca798c914217731ff40bb3567955e590", null ]
     ] ],
+    [ "attachment_flags", "namespacedpp.html#a9ead2d4ab4b3a6035a7940e65027da1d", [
+      [ "a_is_remix", "namespacedpp.html#a9ead2d4ab4b3a6035a7940e65027da1da51410217c0113152a312da176d376e91", null ]
+    ] ],
     [ "audit_type", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3d", [
       [ "aut_guild_update", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dac44ff864aff617a63ebd9601246d7742", null ],
       [ "aut_channel_create", "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8711f028368cf6df76e56b687d675006", null ],
