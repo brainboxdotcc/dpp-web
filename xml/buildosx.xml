@@ -6,7 +6,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect2 id="buildosx_1autotoc_md74">
+<sect2 id="buildosx_1autotoc_md75">
 <title>1. Toolchain</title>
 <para>Before compiling make sure you have all the tools installed.</para>
 <para><orderedlist>
@@ -15,29 +15,29 @@
 </listitem></orderedlist>
 </para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md75">
+<sect2 id="buildosx_1autotoc_md76">
 <title>2. Install External Dependencies</title>
 <para><verbatim>brew install openssl
 </verbatim> For voice support, additional dependencies are required: <verbatim>brew install libsodium opus
 </verbatim> </para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md76">
+<sect2 id="buildosx_1autotoc_md77">
 <title>3. Build Source Code</title>
 <para><verbatim>cmake -B ./build
 cmake --build ./build -j8
 </verbatim> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md77">
+<sect2 id="buildosx_1autotoc_md78">
 <title>4. Install globally</title>
 <para><verbatim>cd build; sudo make install
 </verbatim> </para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md78">
+<sect2 id="buildosx_1autotoc_md79">
 <title>5. Installation to a different directory</title>
 <para>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>: <verbatim>cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </verbatim> Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md79">
+<sect2 id="buildosx_1autotoc_md80">
 <title>6. Using the library</title>
 <para>Once installed, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
 </verbatim> The important flags in this command-line are:</para>

@@ -101,26 +101,26 @@ $(document).ready(function(){initNavTree('buildfreebsd.html',''); initResizable(
   <div class="headertitle"><div class="title">Building on FreeBSD </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md64"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md65"></a>
 1. Toolchain</h2>
 <p >This project uses CMake. Install it with <code>pkg install cmake</code></p>
-<h2><a class="anchor" id="autotoc_md65"></a>
+<h2><a class="anchor" id="autotoc_md66"></a>
 2. Install External Dependencies</h2>
 <p >Your FreeBSD base system should have all the required dependencies installed by default.</p>
 <p >For voice support, additional dependencies are required </p><pre class="fragment">pkg install libsodium opus pkgconf
-</pre> <h2><a class="anchor" id="autotoc_md66"></a>
+</pre> <h2><a class="anchor" id="autotoc_md67"></a>
 3. Build Source Code</h2>
 <pre class="fragment">cmake -B ./build
 cmake --build ./build -j8
 </pre><p> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
-<h2><a class="anchor" id="autotoc_md67"></a>
+<h2><a class="anchor" id="autotoc_md68"></a>
 4. Install globally</h2>
 <pre class="fragment">cd build; make install
-</pre> <h2><a class="anchor" id="autotoc_md68"></a>
+</pre> <h2><a class="anchor" id="autotoc_md69"></a>
 5. Installation to a different directory</h2>
 <p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </pre><p> Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md70"></a>
 7. Using the library</h2>
 <p >Once installed, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
 </pre><p> The important flags in this command-line are:</p>
