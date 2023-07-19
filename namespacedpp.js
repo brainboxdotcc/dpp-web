@@ -7043,7 +7043,8 @@ var namespacedpp =
       [ "r_mentionable", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a50fbd694d79806b3b099b76c36765b26", null ],
       [ "r_premium_subscriber", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a3db26ad1126a3dda385d750b0da11026", null ],
       [ "r_available_for_purchase", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a22c2e6a46fdcf723ec23d217ffc79bb6", null ],
-      [ "r_guild_connections", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171", null ]
+      [ "r_guild_connections", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171", null ],
+      [ "r_in_prompt", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a786fbc4937255fa344ceef44b6de3de6", null ]
     ] ],
     [ "slashcommand_contextmenu_type", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb", [
       [ "ctxm_none", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824", null ],
