@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1awaitable" kind="class" language="C++" prot="public">
+    <compoundname>dpp::awaitable</compoundname>
+    <includes local="no">coro.h</includes>
+    <innerclass refid="structdpp_1_1awaitable_1_1shared__callback" prot="private">dpp::awaitable::shared_callback</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename ReturnType</type>
+        <defval><ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1awaitable_1aca822290d583fef54f589d40542dc3df" prot="private" static="no" mutable="no">
+        <type>shared_callback</type>
+        <definition>shared_callback dpp::awaitable&lt; ReturnType &gt;::api_callback</definition>
+        <argsstring></argsstring>
+        <name>api_callback</name>
+        <briefdescription>
+<para>Shared state of the awaitable and its callback, to be used across threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="570" column="17" bodyfile="include/dpp/coro.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a294dab9c2eb65270a8c2e09141a1ea96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Obj</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dpp::awaitable&lt; ReturnType &gt;::awaitable</definition>
+        <argsstring>(Obj &amp;&amp;obj, Fun &amp;&amp;fun, Args &amp;&amp;... args)</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type>Obj &amp;&amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>Fun &amp;&amp;</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Construct an awaitable wrapping an object method, the call is made immediately by forwarding to <ulink url="https://en.cppreference.com/w/cpp/utility/functional/invoke">std::invoke</ulink> and can be awaited later to retrieve the result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to call the method on </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The method of the object to call. Its last parameter must be a callback taking a parameter of type ReturnType </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters to pass to the method, excluding the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="584" column="1" bodyfile="include/dpp/coro.h" bodystart="584" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1aa35374e710653ba83c3b44bf03bd886c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dpp::awaitable&lt; ReturnType &gt;::awaitable</definition>
+        <argsstring>(Fun &amp;&amp;fun, Args &amp;&amp;... args)</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type>Fun &amp;&amp;</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Construct an awaitable wrapping an invokeable object, the call is made immediately by forwarding to <ulink url="https://en.cppreference.com/w/cpp/utility/functional/invoke">std::invoke</ulink> and can be awaited later to retrieve the result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to call using <ulink url="https://en.cppreference.com/w/cpp/utility/functional/invoke">std::invoke</ulink>. Its last parameter must be a callable taking a parameter of type ReturnType </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters to pass to the object, excluding the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="598" column="1" bodyfile="include/dpp/coro.h" bodystart="598" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1abbcddcd65b8370402c465304e2cfcceb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::awaitable&lt; ReturnType &gt;::~awaitable</definition>
+        <argsstring>()</argsstring>
+        <name>~awaitable</name>
+        <briefdescription>
+<para>Destructor. If any callback is pending it will be aborted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="606" column="1" bodyfile="include/dpp/coro.h" bodystart="606" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a3b8a88d013d3d2533b4cf35fd3bc2b8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::awaitable&lt; ReturnType &gt;::awaitable</definition>
+        <argsstring>(const awaitable &amp;)=delete</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor is disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="613" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a0cc1b5b98e2344f5c28ac612b3221733" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::awaitable&lt; ReturnType &gt;::awaitable</definition>
+        <argsstring>(awaitable &amp;&amp;other) noexcept=default</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Despite being marked noexcept, this function uses std::lock_guard which may throw. The implementation assumes this can never happen, hence noexcept. Report it if it does, as that would be a bug.</para>
+<para><simplesect kind="remark"><para>Using the moved-from awaitable after this function is undefined behavior. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The awaitable object to move the data from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="623" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1ac3753e0c7e1cdc3e21d7cff642bbed0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        <definition>awaitable &amp; dpp::awaitable&lt; ReturnType &gt;::operator=</definition>
+        <argsstring>(const awaitable &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy assignment is disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="628" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1ab174309a6afa4ad7d8a39c27acee03c7" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        <definition>awaitable &amp; dpp::awaitable&lt; ReturnType &gt;::operator=</definition>
+        <argsstring>(awaitable &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Despite being marked noexcept, this function uses std::lock_guard which may throw. The implementation assumes this can never happen, hence noexcept. Report it if it does, as that would be a bug.</para>
+<para><simplesect kind="remark"><para>Using the moved-from awaitable after this function is undefined behavior. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The awaitable object to move the data from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="638" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1aff79debddad081e298405bccfc8b7ce5" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::awaitable&lt; ReturnType &gt;::await_ready</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>First function called by the standard library when the object is co-awaited. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether we already have the result of the API call and don&apos;t need to suspend the caller.</para>
+<para><simplesect kind="remark"><para>Do not call this manually, use the co_await keyword instead. </para>
+</simplesect>
+<simplesect kind="return"><para>bool Whether we already have the result of the API call or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="648" column="6" bodyfile="include/dpp/coro.h" bodystart="648" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a347828356f1db1408a49042c08f8614d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool dpp::awaitable&lt; ReturnType &gt;::await_suspend</definition>
+        <argsstring>(detail::task_handle&lt; T &gt; handle)</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type><ref refid="namespacedpp_1_1detail_1a5cc8642d79d28ea2cac1825b42685dfa" kindref="member">detail::task_handle</ref>&lt; T &gt;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Second function called by the standard library when the object is co-awaited, if await_ready returned false. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks again for the presence of the result, if absent, signals to suspend and keep track of the calling coroutine for the callback to resume.</para>
+<para><simplesect kind="remark"><para>Do not call this manually, use the co_await keyword instead. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the coroutine co_await-ing and being suspended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="663" column="6" bodyfile="include/dpp/coro.h" bodystart="663" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1awaitable_1a3aed5f3052537ea7ba38e74b489c5f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ReturnType</type>
+        <definition>ReturnType dpp::awaitable&lt; ReturnType &gt;::await_resume</definition>
+        <argsstring>()</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Function called by the standard library when the awaitable is resumed. Its return value is what the whole co_await expression evaluates to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Do not call this manually, use the co_await keyword instead. </para>
+</simplesect>
+<simplesect kind="return"><para>ReturnType The result of the API call. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="679" column="12" bodyfile="include/dpp/coro.h" bodystart="679" bodyend="681"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A co_await-able object handling an API call. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is the return type of the dpp::cluster::co_* methods, but it can also be created manually to wrap any async call.</para>
+<para><simplesect kind="remark"><para>- This object&apos;s methods, other than constructors and operators, should not be called directly. It is designed to be used with coroutine keywords such as co_await. </para>
+</simplesect>
+<simplesect kind="remark"><para>- This object must not be co_await-ed more than once. </para>
+</simplesect>
+<simplesect kind="remark"><para>- The coroutine may be resumed in another thread, do not rely on thread_local variables. </para>
+</simplesect>
+<simplesect kind="warning"><para>This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <ulink url="https://github.com/brainboxdotcc/DPP/issues">GitHub issues</ulink> or to the <ulink url="https://discord.gg/dpp">D++ Discord server</ulink>. </para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ReturnType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The return type of the API call. Defaults to <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="include/dpp/coro.h" line="417" column="1" bodyfile="include/dpp/coro.h" bodystart="417" bodyend="682"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1awaitable_1aca822290d583fef54f589d40542dc3df" prot="private" virt="non-virtual"><scope>dpp::awaitable</scope><name>api_callback</name></member>
+      <member refid="classdpp_1_1awaitable_1aff79debddad081e298405bccfc8b7ce5" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>await_ready</name></member>
+      <member refid="classdpp_1_1awaitable_1a3aed5f3052537ea7ba38e74b489c5f1a" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>await_resume</name></member>
+      <member refid="classdpp_1_1awaitable_1a347828356f1db1408a49042c08f8614d" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>await_suspend</name></member>
+      <member refid="classdpp_1_1awaitable_1a294dab9c2eb65270a8c2e09141a1ea96" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1awaitable_1aa35374e710653ba83c3b44bf03bd886c" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1awaitable_1a3b8a88d013d3d2533b4cf35fd3bc2b8d" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1awaitable_1a0cc1b5b98e2344f5c28ac612b3221733" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1awaitable_1ac3753e0c7e1cdc3e21d7cff642bbed0a" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1awaitable_1ab174309a6afa4ad7d8a39c27acee03c7" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1awaitable_1abbcddcd65b8370402c465304e2cfcceb" prot="public" virt="non-virtual"><scope>dpp::awaitable</scope><name>~awaitable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

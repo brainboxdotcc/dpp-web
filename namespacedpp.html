@@ -117,6 +117,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedpp_1_1colors"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1colors.html">colors</a></td></tr>
 <tr class="memdesc:namespacedpp_1_1colors"><td class="mdescLeft">&#160;</td><td class="mdescRight">predefined color constants <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacedpp_1_1detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html">detail</a></td></tr>
+<tr class="memdesc:namespacedpp_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details for internal use only. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedpp_1_1embed__type"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1embed__type.html">embed_type</a></td></tr>
 <tr class="memdesc:namespacedpp_1_1embed__type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents possible values for the <a class="el" href="structdpp_1_1embed.html" title="A rich embed for display within a dpp::message.">dpp::embed</a> type field. These are loosely defined by the API docs and do not influence how the client renders embeds. The only type a bot can send is <a class="el" href="namespacedpp_1_1embed__type.html#a3b4603837d99748accdf78eb8f5af513" title="Rich text.">dpp::embed_type::emt_rich</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,8 +209,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__rule__update__t.html">automod_rule_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update automod rule.  <a href="structdpp_1_1automod__rule__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1awaitable.html">awaitable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A co_await-able struct which returns the result of stored api call when co_await-ed. Meant to be opaque to the user.  <a href="structdpp_1_1awaitable.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html">awaitable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A co_await-able object handling an API call.  <a href="classdpp_1_1awaitable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ban.html">ban</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ban class represents a ban on a guild.  <a href="classdpp_1_1ban.html#details">More...</a><br /></td></tr>
@@ -577,9 +580,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1presence__update__t.html">presence_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presence update.  <a href="structdpp_1_1presence__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1promise.html">promise</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of promise_type for dpp's coroutines.  <a href="structdpp_1_1promise.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1prune.html">prune</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a request to count prunable users, or start a prune operation.  <a href="structdpp_1_1prune.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -652,8 +652,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1sticker__pack.html">sticker_pack</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a sticker pack (the built in groups of stickers that all nitro users get to use)  <a href="structdpp_1_1sticker__pack.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1task.html">task</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for coroutines.  <a href="structdpp_1_1task.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1task.html">task</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A coroutine task. It can be co_awaited to make nested coroutines.  <a href="classdpp_1_1task.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1team__member.html">team_member</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a team member on a team who maintain a bot/application.  <a href="classdpp_1_1team__member.html#details">More...</a><br /></td></tr>
@@ -836,9 +836,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a72a8ab3231965d0e361f305a7fe431f3"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const std::string &amp;, const <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a> &amp;, <a class="el" href="structdpp_1_1command__source.html">command_source</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">command_handler</a></td></tr>
 <tr class="memdesc:a72a8ab3231965d0e361f305a7fe431f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function definition for a command handler. Expects a command name string, and a list of command parameters.  <a href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">More...</a><br /></td></tr>
 <tr class="separator:a72a8ab3231965d0e361f305a7fe431f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f13c6a68b674ab0b3e55f6df38b46a2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4f13c6a68b674ab0b3e55f6df38b46a2">handle_type</a> = std::coroutine_handle&lt; struct <a class="el" href="structdpp_1_1promise.html">promise</a> &gt;</td></tr>
-<tr class="memdesc:a4f13c6a68b674ab0b3e55f6df38b46a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for the coroutine handle's type.  <a href="namespacedpp.html#a4f13c6a68b674ab0b3e55f6df38b46a2">More...</a><br /></td></tr>
-<tr class="separator:a4f13c6a68b674ab0b3e55f6df38b46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a022dce6b086ec4515384eaece59c84c3"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a></td></tr>
 <tr class="memdesc:a022dce6b086ec4515384eaece59c84c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function used as a callback for any REST based command.  <a href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">More...</a><br /></td></tr>
 <tr class="separator:a022dce6b086ec4515384eaece59c84c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2467,22 +2464,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >A container of guild members </p>
-
-</div>
-</div>
-<a id="a4f13c6a68b674ab0b3e55f6df38b46a2" name="a4f13c6a68b674ab0b3e55f6df38b46a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f13c6a68b674ab0b3e55f6df38b46a2">&#9670;&nbsp;</a></span>handle_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacedpp.html#a4f13c6a68b674ab0b3e55f6df38b46a2">dpp::handle_type</a> = typedef std::coroutine_handle&lt;struct <a class="el" href="structdpp_1_1promise.html">promise</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shorthand for the coroutine handle's type. </p>
 
 </div>
 </div>

@@ -4,5 +4,6 @@ var searchData=
   ['discord_5fclient_1',['discord_client',['../classdpp_1_1cluster.html#ab0d2c95628830a28f9abb09441914e40',1,'dpp::cluster']]],
   ['discord_5fvoice_5fclient_2',['discord_voice_client',['../classdpp_1_1cluster.html#abc4e53e79731117ca95bca977baef820',1,'dpp::cluster::discord_voice_client()'],['../structdpp_1_1voice__receive__t.html#abc4e53e79731117ca95bca977baef820',1,'dpp::voice_receive_t::discord_voice_client()']]],
   ['guild_5fcreate_3',['guild_create',['../classdpp_1_1discord__client.html#a38bd58112bc810d3a3ac9d88a316d2e9',1,'dpp::discord_client']]],
-  ['voice_5fstate_5fupdate_4',['voice_state_update',['../classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86',1,'dpp::discord_client']]]
+  ['task_5fpromise_3c_20returntype_20_3e_4',['task_promise&lt; ReturnType &gt;',['../classdpp_1_1task.html#aa66c9f331b5fb399c633fc89de53fb59',1,'dpp::task']]],
+  ['voice_5fstate_5fupdate_5',['voice_state_update',['../classdpp_1_1discord__client.html#af5314358ae06ff298fbe659984648c86',1,'dpp::discord_client']]]
 ];

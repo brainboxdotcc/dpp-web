@@ -1,6 +1,15 @@
 var annotated_dup =
 [
     [ "dpp", "namespacedpp.html", [
+      [ "detail", "namespacedpp_1_1detail.html", [
+        [ "std_coroutine", "namespacedpp_1_1detail_1_1std__coroutine.html", [
+          [ "coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4" ]
+        ] ],
+        [ "task_chain_final_awaiter", "structdpp_1_1detail_1_1task__chain__final__awaiter.html", "structdpp_1_1detail_1_1task__chain__final__awaiter" ],
+        [ "task_promise", "structdpp_1_1detail_1_1task__promise.html", "structdpp_1_1detail_1_1task__promise" ],
+        [ "task_promise< void >", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html", "structdpp_1_1detail_1_1task__promise_3_01void_01_4" ],
+        [ "task_promise_base", "structdpp_1_1detail_1_1task__promise__base.html", "structdpp_1_1detail_1_1task__promise__base" ]
+      ] ],
       [ "events", "namespacedpp_1_1events.html", [
         [ "automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", "classdpp_1_1events_1_1automod__rule__create" ],
         [ "automod_rule_delete", "classdpp_1_1events_1_1automod__rule__delete.html", "classdpp_1_1events_1_1automod__rule__delete" ],
@@ -95,7 +104,7 @@ var annotated_dup =
       [ "automod_rule_delete_t", "structdpp_1_1automod__rule__delete__t.html", "structdpp_1_1automod__rule__delete__t" ],
       [ "automod_rule_execute_t", "structdpp_1_1automod__rule__execute__t.html", "structdpp_1_1automod__rule__execute__t" ],
       [ "automod_rule_update_t", "structdpp_1_1automod__rule__update__t.html", "structdpp_1_1automod__rule__update__t" ],
-      [ "awaitable", "structdpp_1_1awaitable.html", "structdpp_1_1awaitable" ],
+      [ "awaitable", "classdpp_1_1awaitable.html", "classdpp_1_1awaitable" ],
       [ "ban", "classdpp_1_1ban.html", "classdpp_1_1ban" ],
       [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
       [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],
@@ -219,7 +228,6 @@ var annotated_dup =
       [ "permission_overwrite", "structdpp_1_1permission__overwrite.html", "structdpp_1_1permission__overwrite" ],
       [ "presence", "classdpp_1_1presence.html", "classdpp_1_1presence" ],
       [ "presence_update_t", "structdpp_1_1presence__update__t.html", "structdpp_1_1presence__update__t" ],
-      [ "promise", "structdpp_1_1promise.html", "structdpp_1_1promise" ],
       [ "prune", "structdpp_1_1prune.html", "structdpp_1_1prune" ],
       [ "reaction", "structdpp_1_1reaction.html", "structdpp_1_1reaction" ],
       [ "reaction_collector", "classdpp_1_1reaction__collector.html", "classdpp_1_1reaction__collector" ],
@@ -244,7 +252,7 @@ var annotated_dup =
       [ "stage_instance_update_t", "structdpp_1_1stage__instance__update__t.html", "structdpp_1_1stage__instance__update__t" ],
       [ "sticker", "structdpp_1_1sticker.html", "structdpp_1_1sticker" ],
       [ "sticker_pack", "structdpp_1_1sticker__pack.html", "structdpp_1_1sticker__pack" ],
-      [ "task", "structdpp_1_1task.html", "structdpp_1_1task" ],
+      [ "task", "classdpp_1_1task.html", "classdpp_1_1task" ],
       [ "team_member", "classdpp_1_1team__member.html", "classdpp_1_1team__member" ],
       [ "thread", "classdpp_1_1thread.html", "classdpp_1_1thread" ],
       [ "thread_collector", "classdpp_1_1thread__collector.html", "classdpp_1_1thread__collector" ],

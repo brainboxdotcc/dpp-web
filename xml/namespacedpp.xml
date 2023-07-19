@@ -27,7 +27,7 @@
     <innerclass refid="structdpp_1_1automod__rule__delete__t" prot="public">dpp::automod_rule_delete_t</innerclass>
     <innerclass refid="structdpp_1_1automod__rule__execute__t" prot="public">dpp::automod_rule_execute_t</innerclass>
     <innerclass refid="structdpp_1_1automod__rule__update__t" prot="public">dpp::automod_rule_update_t</innerclass>
-    <innerclass refid="structdpp_1_1awaitable" prot="public">dpp::awaitable</innerclass>
+    <innerclass refid="classdpp_1_1awaitable" prot="public">dpp::awaitable</innerclass>
     <innerclass refid="classdpp_1_1ban" prot="public">dpp::ban</innerclass>
     <innerclass refid="structdpp_1_1bucket__t" prot="public">dpp::bucket_t</innerclass>
     <innerclass refid="structdpp_1_1button__click__t" prot="public">dpp::button_click_t</innerclass>
@@ -151,7 +151,6 @@
     <innerclass refid="structdpp_1_1permission__overwrite" prot="public">dpp::permission_overwrite</innerclass>
     <innerclass refid="classdpp_1_1presence" prot="public">dpp::presence</innerclass>
     <innerclass refid="structdpp_1_1presence__update__t" prot="public">dpp::presence_update_t</innerclass>
-    <innerclass refid="structdpp_1_1promise" prot="public">dpp::promise</innerclass>
     <innerclass refid="structdpp_1_1prune" prot="public">dpp::prune</innerclass>
     <innerclass refid="structdpp_1_1reaction" prot="public">dpp::reaction</innerclass>
     <innerclass refid="classdpp_1_1reaction__collector" prot="public">dpp::reaction_collector</innerclass>
@@ -176,7 +175,7 @@
     <innerclass refid="structdpp_1_1stage__instance__update__t" prot="public">dpp::stage_instance_update_t</innerclass>
     <innerclass refid="structdpp_1_1sticker" prot="public">dpp::sticker</innerclass>
     <innerclass refid="structdpp_1_1sticker__pack" prot="public">dpp::sticker_pack</innerclass>
-    <innerclass refid="structdpp_1_1task" prot="public">dpp::task</innerclass>
+    <innerclass refid="classdpp_1_1task" prot="public">dpp::task</innerclass>
     <innerclass refid="classdpp_1_1team__member" prot="public">dpp::team_member</innerclass>
     <innerclass refid="classdpp_1_1thread" prot="public">dpp::thread</innerclass>
     <innerclass refid="classdpp_1_1thread__collector" prot="public">dpp::thread_collector</innerclass>
@@ -217,6 +216,7 @@
     <innerclass refid="structdpp_1_1welcome__channel__t" prot="public">dpp::welcome_channel_t</innerclass>
     <innerclass refid="structdpp_1_1welcome__screen__t" prot="public">dpp::welcome_screen_t</innerclass>
     <innernamespace refid="namespacedpp_1_1colors">dpp::colors</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail">dpp::detail</innernamespace>
     <innernamespace refid="namespacedpp_1_1embed__type">dpp::embed_type</innernamespace>
     <innernamespace refid="namespacedpp_1_1events">dpp::events</innernamespace>
     <innernamespace refid="namespacedpp_1_1unicode__emoji">dpp::unicode_emoji</innernamespace>
@@ -6303,20 +6303,6 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="193" column="23" bodyfile="include/dpp/commandhandler.h" bodystart="193" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1a4f13c6a68b674ab0b3e55f6df38b46a2" prot="public" static="no">
-        <type>std::coroutine_handle&lt; struct <ref refid="structdpp_1_1promise" kindref="compound">promise</ref> &gt;</type>
-        <definition>using dpp::handle_type = typedef std::coroutine_handle&lt;struct promise&gt;</definition>
-        <argsstring></argsstring>
-        <name>handle_type</name>
-        <briefdescription>
-<para>Shorthand for the coroutine handle&apos;s type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro.h" line="11" column="1" bodyfile="include/dpp/coro.h" bodystart="11" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &amp;)&gt;</type>
         <definition>typedef std::function&lt; void(const confirmation_callback_t &amp;)&gt; dpp::command_completion_event_t</definition>
@@ -6330,7 +6316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="58" column="23" bodyfile="include/dpp/dispatcher.h" bodystart="53" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="62" column="23" bodyfile="include/dpp/dispatcher.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ad4c862611232b317153bcfc106534292" prot="public" static="no">
         <type>std::unordered_map&lt; std::string, <ref refid="structdpp_1_1dns__cache__entry" kindref="compound">dns_cache_entry</ref> * &gt;</type>

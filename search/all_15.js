@@ -44,7 +44,7 @@ var searchData=
   ['unbanning_5fguild_41',['unbanning_guild',['../structdpp_1_1guild__ban__remove__t.html#a36e11ccbbeb7a605d1b8360769c71f7c',1,'dpp::guild_ban_remove_t']]],
   ['unbleached_5fsilk_42',['unbleached_silk',['../namespacedpp_1_1colors.html#a66ec7260feb777853c5193f87d6b205e',1,'dpp::colors']]],
   ['underage_43',['underage',['../namespacedpp_1_1unicode__emoji.html#a941fc1817282bcf53d23dac3c2b1bf31',1,'dpp::unicode_emoji']]],
-  ['unhandled_5fexception_44',['unhandled_exception',['../structdpp_1_1promise.html#a4e700ae9254be134e6ef6dc217001140',1,'dpp::promise']]],
+  ['unhandled_5fexception_44',['unhandled_exception',['../structdpp_1_1detail_1_1task__promise__base.html#af015d8af8e261d051216d5ab291a935a',1,'dpp::detail::task_promise_base']]],
   ['unicode_5femoji_45',['unicode_emoji',['../classdpp_1_1role.html#ad84006ea16f3dc59cfd67559a60c5d10',1,'dpp::role']]],
   ['unicorn_46',['unicorn',['../namespacedpp_1_1unicode__emoji.html#a1bd97569b47a1be21fbcf741f4d1c262',1,'dpp::unicode_emoji']]],
   ['unicorn_5fface_47',['unicorn_face',['../namespacedpp_1_1unicode__emoji.html#a6266c77cb232cb45056b72c657a1431f',1,'dpp::unicode_emoji']]],

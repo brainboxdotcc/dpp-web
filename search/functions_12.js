@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unhandled_5fexception_0',['unhandled_exception',['../structdpp_1_1promise.html#a4e700ae9254be134e6ef6dc217001140',1,'dpp::promise']]],
+  ['unhandled_5fexception_0',['unhandled_exception',['../structdpp_1_1detail_1_1task__promise__base.html#af015d8af8e261d051216d5ab291a935a',1,'dpp::detail::task_promise_base']]],
   ['uppercase_1',['uppercase',['../namespacedpp.html#a81749d69bd220d0579617cb188e44e5a',1,'dpp']]],
   ['uptime_2',['uptime',['../classdpp_1_1cluster.html#af12b5b33ea156bde9977796858066a6b',1,'dpp::cluster::uptime()'],['../structdpp_1_1utility_1_1uptime.html#a2ab9e8edf1a6ac715d86e532c335eaf9',1,'dpp::utility::uptime::uptime()'],['../structdpp_1_1utility_1_1uptime.html#a4430115cf5a406ac9f6b4b9d3fa76f3d',1,'dpp::utility::uptime::uptime(time_t diff)'],['../structdpp_1_1utility_1_1uptime.html#abc6ecb387789c08dc864d7990956ed45',1,'dpp::utility::uptime::uptime(double diff)']]],
   ['url_5fencode_3',['url_encode',['../namespacedpp_1_1utility.html#ab1cc19c7021a057083658d7e2cca1013',1,'dpp::utility']]],

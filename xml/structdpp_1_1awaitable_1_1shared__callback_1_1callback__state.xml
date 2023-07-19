@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::awaitable::shared_callback::callback_state</compoundname>
+    <includes local="no">coro.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91" prot="public" static="no" strong="no">
+        <type></type>
+        <name>state_t</name>
+        <enumvalue id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91aecaad3d44084d3ac384c621b13931aa4" prot="public">
+          <name>waiting</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91a31ce834a1a494f3efc4a63c8170150b5" prot="public">
+          <name>done</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91accfa7f6b937f52abb096c06bdb53b3b7" prot="public">
+          <name>dangling</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="426" column="1" bodyfile="include/dpp/coro.h" bodystart="426" bodyend="430"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4a954d9798897cae5dc675e04f3eccfe" prot="public" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex dpp::awaitable&lt; ReturnType &gt;::shared_callback::callback_state::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Mutex to ensure the API result isn&apos;t set at the same time the coroutine is awaited and its value is checked, or the awaitable is destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="435" column="12" bodyfile="include/dpp/coro.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1ae0e7325bae815b1381e7dbc97122bef2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dpp::awaitable&lt; ReturnType &gt;::shared_callback::callback_state::ref_count</definition>
+        <argsstring></argsstring>
+        <name>ref_count</name>
+        <briefdescription>
+<para>Number of references to this callback state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="440" column="5" bodyfile="include/dpp/coro.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1aa785bb1b4a7b8621fbcb65b69f7d87d4" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91" kindref="member">state_t</ref></type>
+        <definition>state_t dpp::awaitable&lt; ReturnType &gt;::shared_callback::callback_state::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>= <ref refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91aecaad3d44084d3ac384c621b13931aa4" kindref="member">waiting</ref></initializer>
+        <briefdescription>
+<para>State of the awaitable and the API callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="445" column="9" bodyfile="include/dpp/coro.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1aa6d4cdf589969c3980f60ce1c53dc335" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; ReturnType &gt;</type>
+        <definition>std::optional&lt;ReturnType&gt; dpp::awaitable&lt; ReturnType &gt;::shared_callback::callback_state::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <initializer>= std::nullopt</initializer>
+        <briefdescription>
+<para>The stored result of the API call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="450" column="15" bodyfile="include/dpp/coro.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a249cb15f943e8539e707b734cef26aae" prot="public" static="no" mutable="no">
+        <type>std::coroutine_handle</type>
+        <definition>std::coroutine_handle dpp::awaitable&lt; ReturnType &gt;::shared_callback::callback_state::coro_handle</definition>
+        <argsstring></argsstring>
+        <name>coro_handle</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Handle to the coroutine co_await-ing on this API call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://en.cppreference.com/w/cpp/coroutine/coroutine_handle">std::coroutine_handle</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro.h" line="457" column="2" bodyfile="include/dpp/coro.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>State of the awaitable and its callback. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::awaitable&lt; ReturnType &gt;::shared_callback::callback_state</label>
+        <link refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mutex</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ref_count</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>result</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>coro_handle</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>int</label>
+      </node>
+      <node id="4">
+        <label>state_t</label>
+      </node>
+      <node id="6">
+        <label>coroutine_handle</label>
+      </node>
+      <node id="2">
+        <label>std::mutex</label>
+      </node>
+      <node id="5">
+        <label>optional&lt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro.h" line="425" column="1" bodyfile="include/dpp/coro.h" bodystart="425" bodyend="458"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a249cb15f943e8539e707b734cef26aae" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>coro_handle</name></member>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91accfa7f6b937f52abb096c06bdb53b3b7" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>dangling</name></member>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91a31ce834a1a494f3efc4a63c8170150b5" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>done</name></member>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4a954d9798897cae5dc675e04f3eccfe" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>mutex</name></member>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1ae0e7325bae815b1381e7dbc97122bef2" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>ref_count</name></member>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1aa6d4cdf589969c3980f60ce1c53dc335" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>result</name></member>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1aa785bb1b4a7b8621fbcb65b69f7d87d4" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>state</name></member>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>state_t</name></member>
+      <member refid="structdpp_1_1awaitable_1_1shared__callback_1_1callback__state_1a4ba93f3dd0fd1c5d540c2a980c572b91aecaad3d44084d3ac384c621b13931aa4" prot="public" virt="non-virtual"><scope>dpp::awaitable::shared_callback::callback_state</scope><name>waiting</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
