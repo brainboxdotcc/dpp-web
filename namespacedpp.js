@@ -6323,6 +6323,9 @@ var namespacedpp =
     [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
     [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
     [ "multipart_content", "structdpp_1_1multipart__content.html", "structdpp_1_1multipart__content" ],
+    [ "onboarding", "structdpp_1_1onboarding.html", "structdpp_1_1onboarding" ],
+    [ "onboarding_prompt", "structdpp_1_1onboarding__prompt.html", "structdpp_1_1onboarding__prompt" ],
+    [ "onboarding_prompt_option", "structdpp_1_1onboarding__prompt__option.html", "structdpp_1_1onboarding__prompt__option" ],
     [ "oneshot_timer", "classdpp_1_1oneshot__timer.html", "classdpp_1_1oneshot__timer" ],
     [ "param_info", "structdpp_1_1param__info.html", "structdpp_1_1param__info" ],
     [ "parse_exception", "classdpp_1_1parse__exception.html", "classdpp_1_1parse__exception" ],
@@ -6392,8 +6395,8 @@ var namespacedpp =
     [ "webhook", "classdpp_1_1webhook.html", "classdpp_1_1webhook" ],
     [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
     [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
-    [ "welcome_channel_t", "structdpp_1_1welcome__channel__t.html", "structdpp_1_1welcome__channel__t" ],
-    [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ],
+    [ "welcome_channel", "structdpp_1_1welcome__channel.html", "structdpp_1_1welcome__channel" ],
+    [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ],
     [ "active_threads", "namespacedpp.html#a161fc59985e2e2f32d24f72397002e46", null ],
     [ "application_map", "namespacedpp.html#a9cd9f77c18810c3ad68e06b0625099bd", null ],
     [ "application_role_connection_metadata_list", "namespacedpp.html#a91276efac2bca1f8fe69b27a3bbc821f", null ],
@@ -6406,7 +6409,7 @@ var namespacedpp =
     [ "command_option_range", "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#ae1f2c1e72053f2c18735a632af027f91", null ],
+    [ "confirmable_t", "namespacedpp.html#a7135567d4a562ebf847599d51f58a218", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dns_cache_t", "namespacedpp.html#ad4c862611232b317153bcfc106534292", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
@@ -6942,6 +6945,19 @@ var namespacedpp =
     [ "mfa_level_t", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4a", [
       [ "mfa_none", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4aaca2f84896f4202cf23eaaba3c4c8ff5e", null ],
       [ "mfa_elevated", "namespacedpp.html#a99a41e59054cde79c2b893ddb9320e4aaf85178c8a67b9194513ebe7c9507914f", null ]
+    ] ],
+    [ "onboarding_mode", "namespacedpp.html#a33441226d2ef32001d99891aa9ed5a20", [
+      [ "gom_default", "namespacedpp.html#a33441226d2ef32001d99891aa9ed5a20a54d375e5d80311d2811110872d30cf2b", null ],
+      [ "gom_advanced", "namespacedpp.html#a33441226d2ef32001d99891aa9ed5a20a6164ab9836dd470082ae99a4ba4adb83", null ]
+    ] ],
+    [ "onboarding_prompt_flags", "namespacedpp.html#ae5c7aefdfff498b6e84e9f8f69d640e2", [
+      [ "opf_single_select", "namespacedpp.html#ae5c7aefdfff498b6e84e9f8f69d640e2a3b5eb33edbcc340a7a7a7bc3a67e8f62", null ],
+      [ "opf_required", "namespacedpp.html#ae5c7aefdfff498b6e84e9f8f69d640e2ab48c70ab162b52df9cd6f96297d0c5e7", null ],
+      [ "opf_in_onboarding", "namespacedpp.html#ae5c7aefdfff498b6e84e9f8f69d640e2a6eece83fb2f45550e01aa53e0bbf8ba8", null ]
+    ] ],
+    [ "onboarding_prompt_type", "namespacedpp.html#a8dac0d2a3e96824942b7c700dc4a526b", [
+      [ "opt_multiple_choice", "namespacedpp.html#a8dac0d2a3e96824942b7c700dc4a526badff342a91c37241c494103778a299720", null ],
+      [ "opt_dropdown", "namespacedpp.html#a8dac0d2a3e96824942b7c700dc4a526ba99517c617d9509fc2600da2a65a34835", null ]
     ] ],
     [ "overwrite_type", "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522", [
       [ "ot_role", "namespacedpp.html#a1111f17373e7a972e77ffc0a6e621522ab1e3ea27fc98089b63c9e89fe7c44df5", null ],

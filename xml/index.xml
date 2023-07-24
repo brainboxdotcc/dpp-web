@@ -795,6 +795,10 @@
     <member refid="classdpp_1_1cluster_1a57626c7a0e06aee1c362b986e44030c2" kind="function"><name>guild_get_widget</name></member>
     <member refid="classdpp_1_1cluster_1ae97d98927594cee1821c4ff318eb9561" kind="function"><name>guild_edit_widget</name></member>
     <member refid="classdpp_1_1cluster_1ad1332e45cc89e871009e840c25145df5" kind="function"><name>guild_get_vanity</name></member>
+    <member refid="classdpp_1_1cluster_1a7a6352ff9824bf2a5fdd3e41b8da8155" kind="function"><name>guild_get_onboarding</name></member>
+    <member refid="classdpp_1_1cluster_1aa31987df09d132a45b2d0f5b719df9e8" kind="function"><name>guild_edit_onboarding</name></member>
+    <member refid="classdpp_1_1cluster_1a864553916e3ddee27517b092de35fd12" kind="function"><name>guild_get_welcome_screen</name></member>
+    <member refid="classdpp_1_1cluster_1a077a0f54778632d4a76794f53075b341" kind="function"><name>guild_edit_welcome_screen</name></member>
     <member refid="classdpp_1_1cluster_1a634f650e53df2d3535131870985e0313" kind="function"><name>create_webhook</name></member>
     <member refid="classdpp_1_1cluster_1a8d352afcbc0430ca11576386278da7d0" kind="function"><name>get_guild_webhooks</name></member>
     <member refid="classdpp_1_1cluster_1ae58b1f27711b42e9aa8a21e34147429f" kind="function"><name>get_channel_webhooks</name></member>
@@ -2000,7 +2004,7 @@
     <member refid="classdpp_1_1guild_1a9169668a25a134dc50bbdb6dd9ddd203" kind="variable"><name>emojis</name></member>
     <member refid="classdpp_1_1guild_1a42066fe3bbfb976ba27fbb9ca38b722f" kind="variable"><name>voice_members</name></member>
     <member refid="classdpp_1_1guild_1a65c77ce1a6155bc6e7fd6f8937bd1385" kind="variable"><name>members</name></member>
-    <member refid="classdpp_1_1guild_1a5a37b855f93b3fcd6ce083329dace4f1" kind="variable"><name>welcome_screen</name></member>
+    <member refid="classdpp_1_1guild_1a79fe96096a15805c1d8c6f977e2e1119" kind="variable"><name>welcome_screen</name></member>
     <member refid="classdpp_1_1guild_1ab0ad04559371a5e732dd1574622ab28d" kind="variable"><name>icon</name></member>
     <member refid="classdpp_1_1guild_1a45281957f5252467c6b620c61de4ca14" kind="variable"><name>splash</name></member>
     <member refid="classdpp_1_1guild_1a368ba3a6ae2e752a3f702dcba5eb5ce0" kind="variable"><name>discovery_splash</name></member>
@@ -3046,6 +3050,57 @@
   <compound refid="structdpp_1_1multipart__content" kind="struct"><name>dpp::multipart_content</name>
     <member refid="structdpp_1_1multipart__content_1a6d5baf3784c9574cba9d54cc18129294" kind="variable"><name>body</name></member>
     <member refid="structdpp_1_1multipart__content_1a657b1ba7e904ac9d37de2f4d9f762260" kind="variable"><name>mimetype</name></member>
+  </compound>
+  <compound refid="structdpp_1_1onboarding" kind="struct"><name>dpp::onboarding</name>
+    <member refid="structdpp_1_1onboarding_1a97bfd107f1a88e30349357f67da8aa7e" kind="variable"><name>guild_id</name></member>
+    <member refid="structdpp_1_1onboarding_1a85cfd0e143a04b9e8de2bbb9dbbaac7a" kind="variable"><name>prompts</name></member>
+    <member refid="structdpp_1_1onboarding_1ab6c12c371f98f4fedb7eff02b9a2a5b7" kind="variable"><name>default_channel_ids</name></member>
+    <member refid="structdpp_1_1onboarding_1ae3d9e7cc64867f0b586fc157c37aaeb5" kind="variable"><name>mode</name></member>
+    <member refid="structdpp_1_1onboarding_1aa93c4e0e285417bea2a430be79894044" kind="variable"><name>enabled</name></member>
+    <member refid="structdpp_1_1onboarding_1a9b582f07cc56795deac91093a559a9be" kind="function"><name>onboarding</name></member>
+    <member refid="structdpp_1_1onboarding_1a5a4688b856b7b078071baf1378010841" kind="function"><name>~onboarding</name></member>
+    <member refid="structdpp_1_1onboarding_1a24790118801c1852865fb381fae1f3f0" kind="function"><name>fill_from_json</name></member>
+    <member refid="structdpp_1_1onboarding_1a686d81a899cb8e4d38c60285bbcdf6fc" kind="function"><name>build_json</name></member>
+    <member refid="structdpp_1_1onboarding_1a3ed0704a28c75b1d5527c95ace0203b7" kind="function"><name>set_guild_id</name></member>
+    <member refid="structdpp_1_1onboarding_1a3bad9082e8ffb79595f40072ef32108c" kind="function"><name>set_mode</name></member>
+    <member refid="structdpp_1_1onboarding_1a6b81ac0ced323104c0e5d2bc6bb04590" kind="function"><name>set_enabled</name></member>
+  </compound>
+  <compound refid="structdpp_1_1onboarding__prompt" kind="struct"><name>dpp::onboarding_prompt</name>
+    <member refid="structdpp_1_1onboarding__prompt_1aa913a93da27a19663dba76038bab9421" kind="variable"><name>type</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1abc8535769c7cf1aa6f7936a5b91fab31" kind="variable"><name>options</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1a956ac1e6031677ece4c1851b58c0a93a" kind="variable"><name>title</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1a955c3dbca47ff4ee36cf4928f1f63ca3" kind="variable"><name>flags</name></member>
+    <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1ab0b368934284f3e53b6d0075b08d1aef" kind="function"><name>onboarding_prompt</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1a7b020212b3e5a0a0d44af92b23fe8f25" kind="function"><name>~onboarding_prompt</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1a07a56d96616cd51d75109c07ffd1eb1b" kind="function"><name>fill_from_json</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1a023a8fd69a2f6840a79d7eeb047db005" kind="function"><name>build_json</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1a62f4c3f50f2864615e69fb3b7941b242" kind="function"><name>set_type</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1ad897aaf73145730034f54ba43df12284" kind="function"><name>set_title</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1ab2af3d91d49bf80c5f910ddabbf7a975" kind="function"><name>is_single_select</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1a11ab4a7c249a70780683584cab7f6ba3" kind="function"><name>is_required</name></member>
+    <member refid="structdpp_1_1onboarding__prompt_1a0679e6cb0cb2d39d794f3058960ea325" kind="function"><name>is_in_onboarding</name></member>
+    <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" kind="function"><name>get_creation_time</name></member>
+    <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" kind="function"><name>operator==</name></member>
+    <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="structdpp_1_1onboarding__prompt__option" kind="struct"><name>dpp::onboarding_prompt_option</name>
+    <member refid="structdpp_1_1onboarding__prompt__option_1aae276e6bf8c43a6240c11b768c03e080" kind="variable"><name>channel_ids</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a753c0dd9b6835475b05049ce8ff8d1fb" kind="variable"><name>role_ids</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a9b0afd5c2176427e00697569284d4a80" kind="variable"><name>emoji</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a7b607513968309a2ba602b9407f8644e" kind="variable"><name>title</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a3b75e42816decb04f2922bc680dcae6c" kind="variable"><name>description</name></member>
+    <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a722f6331a6baebf7d60f0bf417029c4e" kind="function"><name>onboarding_prompt_option</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1aab7cb4ae17caf4a2cc17cb674aac2de3" kind="function"><name>~onboarding_prompt_option</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a1b4870073fcaef3d7103e46be196b192" kind="function"><name>fill_from_json</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a7d6ca5ed70c7557506031b34a53cc9c2" kind="function"><name>build_json</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a07d25cb709af3a1df0383aa8c543122b" kind="function"><name>set_emoji</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a471ee3f008293accd00867bfd03e0e85" kind="function"><name>set_title</name></member>
+    <member refid="structdpp_1_1onboarding__prompt__option_1a2e10271b8b3cb8d261b1cc6ce2d67299" kind="function"><name>set_description</name></member>
+    <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" kind="function"><name>get_creation_time</name></member>
+    <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" kind="function"><name>operator==</name></member>
+    <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="classdpp_1_1oneshot__timer" kind="class"><name>dpp::oneshot_timer</name>
     <member refid="classdpp_1_1oneshot__timer_1a2b899772b0a8d96cfc6e71805315bf7a" kind="variable"><name>owner</name></member>
@@ -4306,15 +4361,26 @@
     <member refid="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" kind="variable"><name>custom_writeable_ready</name></member>
     <member refid="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" kind="variable"><name>keepalive</name></member>
   </compound>
-  <compound refid="structdpp_1_1welcome__channel__t" kind="struct"><name>dpp::welcome_channel_t</name>
-    <member refid="structdpp_1_1welcome__channel__t_1a6f94e146d9ec55304467621f0cec33d9" kind="variable"><name>description</name></member>
-    <member refid="structdpp_1_1welcome__channel__t_1a0c438231f38a9241838a42178bcbe57f" kind="variable"><name>emoji_name</name></member>
-    <member refid="structdpp_1_1welcome__channel__t_1a594ffc9e11228502c0a68f19b3616220" kind="variable"><name>channel_id</name></member>
-    <member refid="structdpp_1_1welcome__channel__t_1aebd3253cc04c7e251811d50ae18e58e5" kind="variable"><name>emoji_id</name></member>
+  <compound refid="structdpp_1_1welcome__channel" kind="struct"><name>dpp::welcome_channel</name>
+    <member refid="structdpp_1_1welcome__channel_1a1bf6060401b61b022e0141bac0930e90" kind="variable"><name>description</name></member>
+    <member refid="structdpp_1_1welcome__channel_1a12be2fe79425adc835689feecfa65009" kind="variable"><name>emoji_name</name></member>
+    <member refid="structdpp_1_1welcome__channel_1a2483b713066063625a9906d14b4be646" kind="variable"><name>channel_id</name></member>
+    <member refid="structdpp_1_1welcome__channel_1a425043d875a90151082c78f96c239f07" kind="variable"><name>emoji_id</name></member>
+    <member refid="structdpp_1_1welcome__channel_1a1bf46e62ef14590bcb116991406e7d41" kind="function"><name>welcome_channel</name></member>
+    <member refid="structdpp_1_1welcome__channel_1a61b137ecb835591f27cbd3667c72d4fe" kind="function"><name>~welcome_channel</name></member>
+    <member refid="structdpp_1_1welcome__channel_1a5463d7699a713f9a353883dc4e60bd91" kind="function"><name>fill_from_json</name></member>
+    <member refid="structdpp_1_1welcome__channel_1ae46339e6b8445b3dafc1debe51b40505" kind="function"><name>build_json</name></member>
+    <member refid="structdpp_1_1welcome__channel_1a1debc4c9a4d60fdad52e9cac2f3cdd43" kind="function"><name>set_channel_id</name></member>
+    <member refid="structdpp_1_1welcome__channel_1aa5a2a4bc4c182354acf792d5230a905d" kind="function"><name>set_description</name></member>
   </compound>
-  <compound refid="structdpp_1_1welcome__screen__t" kind="struct"><name>dpp::welcome_screen_t</name>
-    <member refid="structdpp_1_1welcome__screen__t_1a494492d571a01542f4d73d488da2a01a" kind="variable"><name>description</name></member>
-    <member refid="structdpp_1_1welcome__screen__t_1a637749ede2ba06e14052e21d5be26355" kind="variable"><name>welcome_channels</name></member>
+  <compound refid="structdpp_1_1welcome__screen" kind="struct"><name>dpp::welcome_screen</name>
+    <member refid="structdpp_1_1welcome__screen_1a770643a1cbb15d2a3ce7ed241c4b3415" kind="variable"><name>description</name></member>
+    <member refid="structdpp_1_1welcome__screen_1a28e29ac75cc36beb4d0d740bd49ab0e4" kind="variable"><name>welcome_channels</name></member>
+    <member refid="structdpp_1_1welcome__screen_1aa1389a45fb5894bcdfa79d9976ab5ee2" kind="function"><name>welcome_screen</name></member>
+    <member refid="structdpp_1_1welcome__screen_1a3816482fdccc1630b4e21f3765c6c344" kind="function"><name>~welcome_screen</name></member>
+    <member refid="structdpp_1_1welcome__screen_1ad8b87d22f1423d0d72e556cbbf6bdeb5" kind="function"><name>fill_from_json</name></member>
+    <member refid="structdpp_1_1welcome__screen_1a50f5358a6dec53a6cd505a89f614e68a" kind="function"><name>build_json</name></member>
+    <member refid="structdpp_1_1welcome__screen_1a0fd948515dcc032354a4bec5ee8f709b" kind="function"><name>set_description</name></member>
   </compound>
   <compound refid="namespacedpp" kind="namespace"><name>dpp</name>
     <member refid="namespacedpp_1abc401d86119c6443bf72d736857c1a58" kind="enum"><name>command_option_type</name></member>
@@ -4621,6 +4687,16 @@
     <member refid="namespacedpp_1ad195bc4d4cd3a639ac2090b69997fc9ba6710063e434ccecc53279d3270ce901a" kind="enumvalue"><name>afk_900</name></member>
     <member refid="namespacedpp_1ad195bc4d4cd3a639ac2090b69997fc9baed62c4ee1f1048a19d2db0604866a07b" kind="enumvalue"><name>afk_1800</name></member>
     <member refid="namespacedpp_1ad195bc4d4cd3a639ac2090b69997fc9bae3e1cecae1718a6b28505f32a92efdec" kind="enumvalue"><name>afk_3600</name></member>
+    <member refid="namespacedpp_1a33441226d2ef32001d99891aa9ed5a20" kind="enum"><name>onboarding_mode</name></member>
+    <member refid="namespacedpp_1a33441226d2ef32001d99891aa9ed5a20a54d375e5d80311d2811110872d30cf2b" kind="enumvalue"><name>gom_default</name></member>
+    <member refid="namespacedpp_1a33441226d2ef32001d99891aa9ed5a20a6164ab9836dd470082ae99a4ba4adb83" kind="enumvalue"><name>gom_advanced</name></member>
+    <member refid="namespacedpp_1a8dac0d2a3e96824942b7c700dc4a526b" kind="enum"><name>onboarding_prompt_type</name></member>
+    <member refid="namespacedpp_1a8dac0d2a3e96824942b7c700dc4a526badff342a91c37241c494103778a299720" kind="enumvalue"><name>opt_multiple_choice</name></member>
+    <member refid="namespacedpp_1a8dac0d2a3e96824942b7c700dc4a526ba99517c617d9509fc2600da2a65a34835" kind="enumvalue"><name>opt_dropdown</name></member>
+    <member refid="namespacedpp_1ae5c7aefdfff498b6e84e9f8f69d640e2" kind="enum"><name>onboarding_prompt_flags</name></member>
+    <member refid="namespacedpp_1ae5c7aefdfff498b6e84e9f8f69d640e2a3b5eb33edbcc340a7a7a7bc3a67e8f62" kind="enumvalue"><name>opf_single_select</name></member>
+    <member refid="namespacedpp_1ae5c7aefdfff498b6e84e9f8f69d640e2ab48c70ab162b52df9cd6f96297d0c5e7" kind="enumvalue"><name>opf_required</name></member>
+    <member refid="namespacedpp_1ae5c7aefdfff498b6e84e9f8f69d640e2a6eece83fb2f45550e01aa53e0bbf8ba8" kind="enumvalue"><name>opf_in_onboarding</name></member>
     <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091" kind="enum"><name>http_state</name></member>
     <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091a1cb90f896a57c9a108a44c99d84964ad" kind="enumvalue"><name>HTTPS_HEADERS</name></member>
     <member refid="namespacedpp_1aaaa159f13811e8d13973c2794e171091a1eab41dc1b7d4eb0e8f68217318f6068" kind="enumvalue"><name>HTTPS_CONTENT</name></member>
@@ -4984,7 +5060,7 @@
     <member refid="namespacedpp_1aa71f7e347422516d1022707f1d3e5b1c" kind="typedef"><name>presence_map</name></member>
     <member refid="namespacedpp_1ae3249e99494d04bb4be50341f474621e" kind="typedef"><name>http_completion_event</name></member>
     <member refid="namespacedpp_1a13c4d4e6238396245b349e6a637897e0" kind="typedef"><name>shard_list</name></member>
-    <member refid="namespacedpp_1ae1f2c1e72053f2c18735a632af027f91" kind="typedef"><name>confirmable_t</name></member>
+    <member refid="namespacedpp_1a7135567d4a562ebf847599d51f58a218" kind="typedef"><name>confirmable_t</name></member>
     <member refid="namespacedpp_1aafc7fb6792b12d92c4e77b46d20924ee" kind="typedef"><name>json_encode_t</name></member>
     <member refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kind="typedef"><name>role_map</name></member>
     <member refid="namespacedpp_1a91276efac2bca1f8fe69b27a3bbc821f" kind="typedef"><name>application_role_connection_metadata_list</name></member>

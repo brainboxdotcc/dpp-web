@@ -221,6 +221,9 @@ var annotated_dup =
       [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
       [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
       [ "multipart_content", "structdpp_1_1multipart__content.html", "structdpp_1_1multipart__content" ],
+      [ "onboarding", "structdpp_1_1onboarding.html", "structdpp_1_1onboarding" ],
+      [ "onboarding_prompt", "structdpp_1_1onboarding__prompt.html", "structdpp_1_1onboarding__prompt" ],
+      [ "onboarding_prompt_option", "structdpp_1_1onboarding__prompt__option.html", "structdpp_1_1onboarding__prompt__option" ],
       [ "oneshot_timer", "classdpp_1_1oneshot__timer.html", "classdpp_1_1oneshot__timer" ],
       [ "param_info", "structdpp_1_1param__info.html", "structdpp_1_1param__info" ],
       [ "parse_exception", "classdpp_1_1parse__exception.html", "classdpp_1_1parse__exception" ],
@@ -290,8 +293,8 @@ var annotated_dup =
       [ "webhook", "classdpp_1_1webhook.html", "classdpp_1_1webhook" ],
       [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
-      [ "welcome_channel_t", "structdpp_1_1welcome__channel__t.html", "structdpp_1_1welcome__channel__t" ],
-      [ "welcome_screen_t", "structdpp_1_1welcome__screen__t.html", "structdpp_1_1welcome__screen__t" ]
+      [ "welcome_channel", "structdpp_1_1welcome__channel.html", "structdpp_1_1welcome__channel" ],
+      [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ]
     ] ],
     [ "std", null, [
       [ "hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4" ]

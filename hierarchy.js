@@ -298,6 +298,15 @@ var hierarchy =
     [ "dpp::json_interface< invite >", "structdpp_1_1json__interface.html", [
       [ "dpp::invite", "classdpp_1_1invite.html", null ]
     ] ],
+    [ "dpp::json_interface< onboarding >", "structdpp_1_1json__interface.html", [
+      [ "dpp::onboarding", "structdpp_1_1onboarding.html", null ]
+    ] ],
+    [ "dpp::json_interface< onboarding_prompt >", "structdpp_1_1json__interface.html", [
+      [ "dpp::onboarding_prompt", "structdpp_1_1onboarding__prompt.html", null ]
+    ] ],
+    [ "dpp::json_interface< onboarding_prompt_option >", "structdpp_1_1json__interface.html", [
+      [ "dpp::onboarding_prompt_option", "structdpp_1_1onboarding__prompt__option.html", null ]
+    ] ],
     [ "dpp::json_interface< presence >", "structdpp_1_1json__interface.html", [
       [ "dpp::presence", "classdpp_1_1presence.html", null ]
     ] ],
@@ -342,6 +351,12 @@ var hierarchy =
     [ "dpp::json_interface< webhook >", "structdpp_1_1json__interface.html", [
       [ "dpp::webhook", "classdpp_1_1webhook.html", null ]
     ] ],
+    [ "dpp::json_interface< welcome_channel >", "structdpp_1_1json__interface.html", [
+      [ "dpp::welcome_channel", "structdpp_1_1welcome__channel.html", null ]
+    ] ],
+    [ "dpp::json_interface< welcome_screen >", "structdpp_1_1json__interface.html", [
+      [ "dpp::welcome_screen", "structdpp_1_1welcome__screen.html", null ]
+    ] ],
     [ "dpp::managed", "classdpp_1_1managed.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ],
       [ "dpp::automod_rule", "classdpp_1_1automod__rule.html", null ],
@@ -353,6 +368,8 @@ var hierarchy =
       [ "dpp::integration", "classdpp_1_1integration.html", null ],
       [ "dpp::interaction", "classdpp_1_1interaction.html", null ],
       [ "dpp::message", "structdpp_1_1message.html", null ],
+      [ "dpp::onboarding_prompt", "structdpp_1_1onboarding__prompt.html", null ],
+      [ "dpp::onboarding_prompt_option", "structdpp_1_1onboarding__prompt__option.html", null ],
       [ "dpp::role", "classdpp_1_1role.html", null ],
       [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ],
       [ "dpp::slashcommand", "classdpp_1_1slashcommand.html", null ],
@@ -396,7 +413,5 @@ var hierarchy =
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::version_checker", "structdpp_1_1version__checker.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
-    [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
-    [ "dpp::welcome_channel_t", "structdpp_1_1welcome__channel__t.html", null ],
-    [ "dpp::welcome_screen_t", "structdpp_1_1welcome__screen__t.html", null ]
+    [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ]
 ];

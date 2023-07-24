@@ -90,6 +90,6 @@ var classdpp_1_1guild =
     [ "vanity_url_code", "classdpp_1_1guild.html#ad858d700638f1785f2338e8ec667c74f", null ],
     [ "verification_level", "classdpp_1_1guild.html#ad0ab37f1e5665f2563f476073005930e", null ],
     [ "voice_members", "classdpp_1_1guild.html#a42066fe3bbfb976ba27fbb9ca38b722f", null ],
-    [ "welcome_screen", "classdpp_1_1guild.html#a5a37b855f93b3fcd6ce083329dace4f1", null ],
+    [ "welcome_screen", "classdpp_1_1guild.html#a79fe96096a15805c1d8c6f977e2e1119", null ],
     [ "widget_channel_id", "classdpp_1_1guild.html#ad456524472a24e2592560a4a497c4b01", null ]
 ];
