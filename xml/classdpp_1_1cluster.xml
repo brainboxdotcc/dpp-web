@@ -16395,6 +16395,173 @@
         </inbodydescription>
         <location file="include/dpp/cluster_coro_calls.h" line="983" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="983" declcolumn="11"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a9811e93acdba4ad5556fa9d4210b0bf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
+        <definition>awaitable&lt; confirmation_callback_t &gt; co_guild_get_onboarding</definition>
+        <argsstring>(snowflake guild_id)</argsstring>
+        <name>co_guild_get_onboarding</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <briefdescription>
+<para>Get the guild&apos;s onboarding configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a7a6352ff9824bf2a5fdd3e41b8da8155" kindref="member">dpp::cluster::guild_get_onboarding</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#get-guild-onboarding">https://discord.com/developers/docs/resources/guild#get-guild-onboarding</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The onboarding object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>onboarding returned object on completion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_coro_calls.h" line="994" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="994" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a899928a78d812597ff074778825d1479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
+        <definition>awaitable&lt; confirmation_callback_t &gt; co_guild_edit_onboarding</definition>
+        <argsstring>(const struct onboarding &amp;o)</argsstring>
+        <name>co_guild_edit_onboarding</name>
+        <param>
+          <type>const struct <ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Edit the guild&apos;s onboarding configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires the <computeroutput>MANAGE_GUILD</computeroutput> and <computeroutput>MANAGE_ROLES</computeroutput> permissions.</para>
+<para><simplesect kind="note"><para>Onboarding enforces constraints when enabled. These constraints are that there must be at least 7 Default Channels and at least 5 of them must allow sending messages to the @everyone role. The <computeroutput><ref refid="structdpp_1_1onboarding_1ae3d9e7cc64867f0b586fc157c37aaeb5" kindref="member">onboarding::mode</ref></computeroutput> field modifies what is considered when enforcing these constraints.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1aa31987df09d132a45b2d0f5b719df9e8" kindref="member">dpp::cluster::guild_edit_onboarding</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#modify-guild-onboarding">https://discord.com/developers/docs/resources/guild#modify-guild-onboarding</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>This method supports audit log reasons set by the <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason()</ref> method. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The onboarding object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>onboarding returned object on completion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_coro_calls.h" line="1010" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1010" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a69e54603df498e3c1de5cdd41b419b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
+        <definition>awaitable&lt; confirmation_callback_t &gt; co_guild_get_welcome_screen</definition>
+        <argsstring>(snowflake guild_id)</argsstring>
+        <name>co_guild_get_welcome_screen</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <briefdescription>
+<para>Get the guild&apos;s welcome screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the welcome screen is not enabled, the <computeroutput>MANAGE_GUILD</computeroutput> permission is required.</para>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a864553916e3ddee27517b092de35fd12" kindref="member">dpp::cluster::guild_get_welcome_screen</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#get-guild-welcome-screen">https://discord.com/developers/docs/resources/guild#get-guild-welcome-screen</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The guild ID to get the welcome screen from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1welcome__screen" kindref="compound">dpp::welcome_screen</ref> returned object on completion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_coro_calls.h" line="1023" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1023" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a1c68803d0123c6ad6dec4b8afae00cd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
+        <definition>awaitable&lt; confirmation_callback_t &gt; co_guild_edit_welcome_screen</definition>
+        <argsstring>(snowflake guild_id, const struct welcome_screen &amp;welcome_screen, bool enabled)</argsstring>
+        <name>co_guild_edit_welcome_screen</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &amp;</type>
+          <declname>welcome_screen</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Edit the guild&apos;s welcome screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires the <computeroutput>MANAGE_GUILD</computeroutput> permission. May fire a <computeroutput>Guild Update</computeroutput> Gateway event.</para>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a077a0f54778632d4a76794f53075b341" kindref="member">dpp::cluster::guild_edit_welcome_screen</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#modify-guild-welcome-screen">https://discord.com/developers/docs/resources/guild#modify-guild-welcome-screen</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The guild ID to edit the welcome screen for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The welcome screen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the welcome screen should be enabled or disabled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1welcome__screen" kindref="compound">dpp::welcome_screen</ref> returned object on completion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_coro_calls.h" line="1038" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1038" declcolumn="11"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7af9c5a35c4faf307b9ca4bb001bad87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
         <definition>awaitable&lt; confirmation_callback_t &gt; co_guild_add_member</definition>
@@ -16443,7 +16610,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1003" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1003" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1058" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1058" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adcccf40ee4aeb39dcf4ee0765c1e4d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16479,7 +16646,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1019" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1019" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1074" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1074" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a04d7d1474da9860f018ffeb7abcfd31a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16525,7 +16692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1030" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1030" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1085" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1085" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a973b99098d6807b866a0fa7260c3c220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16585,7 +16752,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1044" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1044" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1099" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1099" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af6cdfdea95858f70fe56b55629fd9ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16645,7 +16812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1060" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1060" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1115" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1115" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa5947a5b7b311082de51a248a97b3591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16694,7 +16861,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1076" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1076" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1131" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1131" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a68138c54275b590f6dfad79fdeaef964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16742,7 +16909,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1091" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1091" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1146" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1146" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab6e3d63a44789e2b1392d357c692cf68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16802,7 +16969,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1106" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1106" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1161" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1161" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a83b0dbbb6994ca586fe76aee76f11650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16863,7 +17030,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1123" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1123" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1178" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1178" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a692250eb6f2683231f30106d5c5c9f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16923,7 +17090,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1139" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1139" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1194" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1194" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2f9de745cb4626743be456e679c9605e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -16985,7 +17152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1156" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1156" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1211" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1211" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6a918f8cc63649a3fe34ca12b00dbf3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17045,7 +17212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1170" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1170" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1225" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1225" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab4ce86cea8f4f3721b77a885113963d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17080,7 +17247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1183" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1183" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1238" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1238" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7481a6b344d1a4659807500b063b4d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17114,7 +17281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1197" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1197" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1252" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1252" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2f40afbd84951f1fc89a8407e3017ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17160,7 +17327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1209" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1209" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1264" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1264" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a43c84acc5594e7c23ec450e70aa11e37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17218,7 +17385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1222" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1222" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1277" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1277" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa6041b9baf575400ca52aef867b93a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17252,7 +17419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1233" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1233" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1288" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1288" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3a4c7ceb661a485b4dcf6be3ca50943e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17298,7 +17465,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1245" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1245" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1300" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1300" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af8610381bdc97e7e5d9088b1b713937a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17332,7 +17499,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1256" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1256" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1311" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1311" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2d27056946fdf3bedf6fde0a1eae7439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17378,7 +17545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1268" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1268" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1323" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1323" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4547bac6a152b913be21af1224fa29ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17428,7 +17595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1283" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1283" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1338" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1338" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aba98ec9477de510390ae81e9fb32ccd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17476,7 +17643,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1296" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1296" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1351" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1351" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa2bb4b42f5c185e6822a208c395c43a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17522,7 +17689,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1308" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1308" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1363" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1363" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a502f1180406380365f8627acde57dbf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17580,7 +17747,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1321" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1321" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1376" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1376" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a31143bde21a8e50d076f21cbb68325ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17638,7 +17805,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1334" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1334" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1389" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1389" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac3f1ed8e8893aa6f7624f0b955a7ad6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17708,7 +17875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1348" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1348" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1403" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1403" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7f598838a90be816742ecba9e32e5978" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17754,7 +17921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1360" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1360" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1415" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1415" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a60af3f228ade8d9ce5c94fab795071d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17812,7 +17979,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1373" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1373" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1428" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1428" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acb1a6810e460099266c7bc728672dad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17846,7 +18013,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1384" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1384" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1439" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1439" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9fc487e998568f2762015f7c249a2a31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17892,7 +18059,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1396" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1396" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1451" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1451" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a218cff737725e59c1b330c413626f80f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -17974,7 +18141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1411" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1411" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1466" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1466" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adcb35c9151d47bebe7fe7615de2d0b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18068,7 +18235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1427" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1427" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1482" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1482" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a31d99104a8159bf02e3f78821478ffe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18116,7 +18283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1439" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1439" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1494" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1494" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5fefb1fcc8bdc5835b70011d99c0f26b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18199,7 +18366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1456" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1456" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1511" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1511" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae46de2dfd2221e907fdd02c376ea1936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18247,7 +18414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1468" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1468" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1523" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1523" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a276bf675a04a3d68340d1237e26d26ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18281,7 +18448,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1478" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1478" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1533" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1533" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a91403e8ff4bb19703ea90881aea33f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18318,7 +18485,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1493" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1493" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1548" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1548" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acdd4bfeef316ba4091f89e45951ed9b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18367,7 +18534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1508" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1508" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1563" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1563" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a438ffd0893aeffd29f281cd37a3d58a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18404,7 +18571,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1522" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1522" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1577" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1577" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af42407befad7db7accfd68c12eb9f0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18453,7 +18620,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1538" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1538" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1593" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1593" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5c8aa05723d155bc32bdfaceede8e9c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18487,7 +18654,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1549" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1549" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1604" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1604" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af56d1ebbfcf95a68e04fd555a2d6893a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18521,7 +18688,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1560" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1560" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1615" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1615" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7964954c59c9ff16c3cc754c8df13654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18569,7 +18736,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1573" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1573" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1628" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1628" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a00a136cc343e5a6433206a81cbd245a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18603,7 +18770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1584" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1584" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1639" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1639" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2b94f760e0e17aa892d53791da0fb745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18649,7 +18816,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1596" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1596" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1651" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1651" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af6f431e089516139bbd37d51266a94c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18683,7 +18850,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1606" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1606" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1661" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1661" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac0c23dac03d0e9e432d168b6d30570fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18717,7 +18884,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1617" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1617" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1672" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1672" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a93b7976691db9fbb95096fff5174142a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18763,7 +18930,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1629" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1629" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1684" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1684" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa6338ab6fb77d90f0f81a0e06876d255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18797,7 +18964,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1640" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1640" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1695" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1695" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aab2db5f397979a5fc829d7b97d9435a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18843,7 +19010,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1652" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1652" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1707" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1707" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3a55092ddc6b9809e229d392399d028f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18877,7 +19044,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1665" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1665" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1720" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1720" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae802e64786d76e31d025f4b525e20d4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18913,7 +19080,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1679" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1679" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1734" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1734" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aebe0af09e402fcb458e16f249a456510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18949,7 +19116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1690" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1690" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1745" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1745" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a754431313589612cfef7fe9913630881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -18997,7 +19164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1702" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1702" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1757" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1757" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa0938e78d49ee37fac4c941d36d5340a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19043,7 +19210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1713" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1713" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1768" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1768" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a09096a1e64a8a65e252cf82bca6cf9c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19079,7 +19246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1724" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1724" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1779" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1779" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4aa7b931fe8b51e3fff7c8dd99127d04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19113,7 +19280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1734" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1734" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1789" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1789" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae63f56804a04842a4425366000fcd1a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19147,7 +19314,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1744" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1744" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1799" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1799" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9db44d1476af5f1c6fe5aa9d339e1a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19168,7 +19335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1753" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1753" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1808" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1808" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9ff86431988ad035c57d9ff6fb4421db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19216,7 +19383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1765" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1765" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1820" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1820" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a00e525ab0c1c0c2e081bc07e97f4d3e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19274,7 +19441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1778" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1778" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1833" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1833" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a877e8bde7726e46c92434b707b8075ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19320,7 +19487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1790" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1790" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1845" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1845" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af77ce297949a8b5c88c27b516ad3b603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19390,7 +19557,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1804" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1804" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1859" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1859" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a32eb52b6cfba9ac8f9a002d626ec68f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19424,7 +19591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1815" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1815" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1870" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1870" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a49fb3d81acccab73ea7a47b81aa4df72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19470,7 +19637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1827" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1827" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1882" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1882" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9643e03e2c6f4bfec90a747fcfad1a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19504,7 +19671,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1837" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1837" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1892" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1892" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a01c863a4db61cef2c5aa64bc80dea4ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19538,7 +19705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1847" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1847" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1902" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1902" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2756174ce4a7bd239ff65f4400ad93aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19572,7 +19739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1857" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1857" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1912" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1912" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa208651a257ad3fc00d80b5627bc44a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19606,7 +19773,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1867" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1867" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1922" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1922" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a903862975d7eb2f5c34e73f9c217e209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19664,7 +19831,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1879" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1879" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1934" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1934" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a38355d5331f5de6ef7ca8b838f973e2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19704,7 +19871,7 @@
 <parametername>before_timestamp</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Get threads before this timestamp </para>
+<para>Get threads archived before this timestamp </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -19722,7 +19889,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1891" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1891" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1946" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1946" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae74fe9bfa69e9b9d8c8156184bbee2c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19762,7 +19929,7 @@
 <parametername>before_timestamp</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Get threads before this timestamp </para>
+<para>Get threads archived before this timestamp </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -19780,7 +19947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1903" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1903" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1958" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1958" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af6a037664b27943bcdf81ec5f59c50fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19826,7 +19993,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1914" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1914" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1969" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1969" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adffe97ce6d4366bb0c207eef74db3ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19860,7 +20027,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1924" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1924" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1979" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1979" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa9012e209deef193f901837b88e77305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -19957,7 +20124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1941" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1941" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="1996" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1996" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a242b69d092828258aaaf10f4c37de341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20053,7 +20220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1958" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1958" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2013" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2013" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a002c64fa94daddf55f21fd4e8c2b9083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20089,7 +20256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1970" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1970" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2025" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2025" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a183ed55425838883b0e64ad49a88303b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20173,7 +20340,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1985" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1985" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2040" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2040" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac9acc21c299b403f2ad5de18871ade79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20219,7 +20386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="1996" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="1996" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2051" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2051" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af2a7c02f96eb3bf285ed0cc0a8e5a279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20265,7 +20432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2007" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2007" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2062" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2062" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acd99030f680b154ecf7211a8201ab9fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20334,7 +20501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2023" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2023" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2078" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2078" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a58e5bb06aa36a51e989146824f03b8c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20355,7 +20522,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2033" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2033" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2088" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2088" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa0df5c912edca3e29703267b92b9f87f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20378,7 +20545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2045" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2045" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2100" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2100" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae3ec2ca6d9a68b646cefd1806ef7104d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20470,7 +20637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2070" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2070" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2125" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2125" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac167b4f31c27473a23bcef70a0a6c1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20552,7 +20719,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2094" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2094" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2149" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2149" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1b46b01354f91225de6f822e54923484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20573,7 +20740,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2105" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2105" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2160" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2160" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aefa83eecb05a0f88807db1ee3d00cbf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20594,7 +20761,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2114" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2114" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2169" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2169" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6dbd82e3405f71e4df53cc411835c0c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20628,7 +20795,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2124" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2124" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2179" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2179" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acdaa4519469c74e7552850c84797fb12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20666,7 +20833,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2139" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2139" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2194" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2194" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a24d6fb21101c211803b246609bda62b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20704,7 +20871,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2154" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2154" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2209" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2209" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a31bbb4ae46f5a78702ab3ea2f9542289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20725,7 +20892,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2163" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2163" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2218" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2218" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aed2f5b0c429659c7e0e3071eba214dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20760,7 +20927,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2178" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2178" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2233" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2233" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9c4c992f2a3b84a344f9b6df10350c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20796,7 +20963,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2189" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2189" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2244" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2244" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0d8a52c68052f8142b383b5fa972d812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20832,7 +20999,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2200" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2200" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2255" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2255" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aecd2a7337e7b79330452b98305b04187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20891,7 +21058,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2213" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2213" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2268" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2268" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac29438fddcd32e870ff8642140ee60e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20937,7 +21104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2224" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2224" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2279" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2279" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1afe6c3195eb31508b0b94589ec36d69a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -20973,7 +21140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2235" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2235" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2290" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2290" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a911ee19ed4bd31239d02c2a4338edb9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21035,7 +21202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2254" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2254" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2309" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2309" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad10c38ee44234ababf024770e0f529c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21069,7 +21236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2264" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2264" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2319" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2319" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a235555912466f487c150f2bbe49ec317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21156,7 +21323,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2280" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2280" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2335" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2335" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a276a2b46e1bfa75f6dd5bf6824fb1557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21190,7 +21357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2290" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2290" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2345" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2345" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa2342da557cde9bf6ec290a0542c215a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21224,7 +21391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2300" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2300" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2355" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2355" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7f1c4fd61788755293be897c838669c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21258,7 +21425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2310" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2310" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2365" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2365" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a33fef9ffd75b0d1c7893397b91bfe6f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21317,7 +21484,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2323" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2323" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2378" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2378" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa2601d68b1c42c950373224c96a3847e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1awaitable" kindref="compound">awaitable</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21363,7 +21530,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2334" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2334" declcolumn="11"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2389" column="11" declfile="include/dpp/cluster_coro_calls.h" declline="2389" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1ac19d1cb177d67408309d0cdc35fedb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kindref="member">slashcommand_map</ref></type>
@@ -25418,6 +25585,217 @@
         </inbodydescription>
         <location file="include/dpp/cluster_sync_calls.h" line="1205" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1205" declcolumn="14"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a56260b496f9653e5e46ce16f0143bc2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref></type>
+        <definition>onboarding guild_get_onboarding_sync</definition>
+        <argsstring>(snowflake guild_id)</argsstring>
+        <name>guild_get_onboarding_sync</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <briefdescription>
+<para>Get the guild&apos;s onboarding configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a7a6352ff9824bf2a5fdd3e41b8da8155" kindref="member">dpp::cluster::guild_get_onboarding</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#get-guild-onboarding">https://discord.com/developers/docs/resources/guild#get-guild-onboarding</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The onboarding object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>onboarding returned object on completion</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upon failure to execute REST function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_sync_calls.h" line="1219" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1219" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a6bc508cf375c7375cf53262982dc46bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref></type>
+        <definition>onboarding guild_edit_onboarding_sync</definition>
+        <argsstring>(const struct onboarding &amp;o)</argsstring>
+        <name>guild_edit_onboarding_sync</name>
+        <param>
+          <type>const struct <ref refid="structdpp_1_1onboarding" kindref="compound">onboarding</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Edit the guild&apos;s onboarding configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires the <computeroutput>MANAGE_GUILD</computeroutput> and <computeroutput>MANAGE_ROLES</computeroutput> permissions.</para>
+<para><simplesect kind="note"><para>Onboarding enforces constraints when enabled. These constraints are that there must be at least 7 Default Channels and at least 5 of them must allow sending messages to the @everyone role. The <computeroutput><ref refid="structdpp_1_1onboarding_1ae3d9e7cc64867f0b586fc157c37aaeb5" kindref="member">onboarding::mode</ref></computeroutput> field modifies what is considered when enforcing these constraints.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1aa31987df09d132a45b2d0f5b719df9e8" kindref="member">dpp::cluster::guild_edit_onboarding</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#modify-guild-onboarding">https://discord.com/developers/docs/resources/guild#modify-guild-onboarding</ulink> </para>
+</simplesect>
+<simplesect kind="note"><para>This method supports audit log reasons set by the <ref refid="classdpp_1_1cluster_1adbcc02c388c197cf7050551ef89aeefe" kindref="member">cluster::set_audit_reason()</ref> method. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The onboarding object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>onboarding returned object on completion</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upon failure to execute REST function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_sync_calls.h" line="1238" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1238" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a525a3d910d58fea05286438857cfa00d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1welcome__screen" kindref="compound">dpp::welcome_screen</ref></type>
+        <definition>dpp::welcome_screen guild_get_welcome_screen_sync</definition>
+        <argsstring>(snowflake guild_id)</argsstring>
+        <name>guild_get_welcome_screen_sync</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <briefdescription>
+<para>Get the guild&apos;s welcome screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the welcome screen is not enabled, the <computeroutput>MANAGE_GUILD</computeroutput> permission is required.</para>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a864553916e3ddee27517b092de35fd12" kindref="member">dpp::cluster::guild_get_welcome_screen</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#get-guild-welcome-screen">https://discord.com/developers/docs/resources/guild#get-guild-welcome-screen</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The guild ID to get the welcome screen from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1welcome__screen" kindref="compound">dpp::welcome_screen</ref> returned object on completion</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upon failure to execute REST function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_sync_calls.h" line="1254" column="21" declfile="include/dpp/cluster_sync_calls.h" declline="1254" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a15a6633362b4d0c9da740cea46df4ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1welcome__screen" kindref="compound">dpp::welcome_screen</ref></type>
+        <definition>dpp::welcome_screen guild_edit_welcome_screen_sync</definition>
+        <argsstring>(snowflake guild_id, const struct welcome_screen &amp;welcome_screen, bool enabled)</argsstring>
+        <name>guild_edit_welcome_screen_sync</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &amp;</type>
+          <declname>welcome_screen</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Edit the guild&apos;s welcome screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires the <computeroutput>MANAGE_GUILD</computeroutput> permission. May fire a <computeroutput>Guild Update</computeroutput> Gateway event.</para>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a077a0f54778632d4a76794f53075b341" kindref="member">dpp::cluster::guild_edit_welcome_screen</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/guild#modify-guild-welcome-screen">https://discord.com/developers/docs/resources/guild#modify-guild-welcome-screen</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The guild ID to edit the welcome screen for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The welcome screen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the welcome screen should be enabled or disabled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1welcome__screen" kindref="compound">dpp::welcome_screen</ref> returned object on completion</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upon failure to execute REST function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_sync_calls.h" line="1272" column="21" declfile="include/dpp/cluster_sync_calls.h" declline="1272" declcolumn="21"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4066c8f1e67919da1580a4c128032879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
         <definition>confirmation guild_add_member_sync</definition>
@@ -25477,7 +25855,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1228" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1228" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1295" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1295" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5014eb727a1b771fb769a2e8fd42a225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
@@ -25524,7 +25902,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1247" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1247" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1314" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1314" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1f78587049cac058d4d4dcb63f8ab987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
@@ -25581,7 +25959,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1261" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1261" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1328" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1328" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa94fc2c644808aa8ca570fbd24ffe209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref></type>
@@ -25652,7 +26030,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1278" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1278" declcolumn="18"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1345" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1345" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a71e5cd442880ff73b4cc4bd4bf2ac346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -25723,7 +26101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1297" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1297" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1364" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1364" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa8221744be81a0696a8124467e6145a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -25783,7 +26161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1316" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1316" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1383" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1383" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a20d3638fb222bd91aa9c2ad460b30b29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -25842,7 +26220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1334" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1334" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1401" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1401" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a22ce81e0f2204d4217ac284a9163b8a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -25913,7 +26291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1352" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1352" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1419" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1419" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa2e1667b47f46137b0abf1a994821da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -25985,7 +26363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1372" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1372" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1439" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1439" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0393db5997c2d6acd5e7de306e5ace09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26056,7 +26434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1391" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1391" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1458" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1458" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abf8cf09e2e52018299f14f71ca1da5c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref></type>
@@ -26129,7 +26507,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1411" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1411" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1478" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1478" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a33520747ebe8e62b47bbc177bc15d09d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" kindref="member">guild_member_map</ref></type>
@@ -26200,7 +26578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1428" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1428" declcolumn="18"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1495" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="1495" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7e224a9dbbb971e0e365db9428780881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kindref="member">invite_map</ref></type>
@@ -26246,7 +26624,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1444" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1444" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1511" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="1511" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7d80b50f5803c20d1163226dcda05427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1invite" kindref="compound">invite</ref></type>
@@ -26291,7 +26669,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1461" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="1461" declcolumn="8"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1528" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="1528" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7b6a92b9a8937b5f4e8974ad3b82940a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26348,7 +26726,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1476" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1476" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1543" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1543" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa451af6e4bfb6cb6864e7225c788a3ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26417,7 +26795,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1492" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1492" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1559" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1559" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a798ae7bfe0fe06d93a70fde240a52514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -26462,7 +26840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1506" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1506" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1573" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1573" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6e94df1c101df8ef23a83037a90aa9e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -26519,7 +26897,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1521" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1521" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1588" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1588" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a66d92a3e0e148a66c0522d3c29c94776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26564,7 +26942,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1535" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1535" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1602" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1602" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abf713b9478f3d256d3a113721e3bb218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26621,7 +26999,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1550" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1550" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1617" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1617" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6c36ad5bd3b5ea099bd025e9ad09bda8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26682,7 +27060,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1568" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1568" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1635" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1635" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5883ba9a11a360bcd0e2b0e79f99a448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26741,7 +27119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1584" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1584" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1651" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1651" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad2d0a0325976bc550d0ffe69c49d6dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26798,7 +27176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1599" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1599" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1666" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1666" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aebf1364bb0f89ca44471879815a3894d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26867,7 +27245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1615" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1615" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1682" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1682" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a115c405b3cfd386bb376ae7e000e6b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -26936,7 +27314,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1631" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1631" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1698" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1698" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a175f2bcebce29c907d7fb4018bec6b06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -27017,7 +27395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1648" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1648" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1715" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1715" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa9e800a8a24b01122f8a6443c0bd213f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -27074,7 +27452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1663" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1663" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1730" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1730" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae0d344a190676f6dfd2f9e724396a1a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -27143,7 +27521,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1679" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1679" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1746" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1746" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad6d12710877b058e6f159c53f3c34c49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -27188,7 +27566,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1693" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1693" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1760" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1760" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adfd84a3dcf55fbbecf72fe0b412d7dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -27245,7 +27623,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1708" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1708" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1775" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="1775" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad2fcdba22e610a3eb35f95fff3a257c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a1c4073c92e19579c06591033a4a234e1" kindref="member">user_map</ref></type>
@@ -27338,7 +27716,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1726" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1726" declcolumn="10"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1793" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1793" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa066a0654588a9bec98e81e268641212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a58e2720e1ccc11d2b3b1be2e18df79d9" kindref="member">emoji_map</ref></type>
@@ -27443,7 +27821,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1745" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1745" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1812" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="1812" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab25380f93d6a7f1c25b39b6f073639be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -27502,7 +27880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1760" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1760" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1827" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1827" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a795ac11245e689599fb24f9e5a6a060d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref></type>
@@ -27596,7 +27974,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1780" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1780" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1847" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1847" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab678ce2a5961a13562e37ff9d1ddc174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -27655,7 +28033,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1795" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1795" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1862" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1862" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6cfc3aa580dd523b6e357eebfd757159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kindref="member">message_map</ref></type>
@@ -27700,7 +28078,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1808" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1808" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1875" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="1875" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8fa5c60e4a435244d30e2fea4bbc3dca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref></type>
@@ -27748,7 +28126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1826" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1826" declcolumn="6"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1893" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1893" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab7fe97b155a1139d5cd93a473e03c3e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -27808,7 +28186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1844" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1844" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1911" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1911" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a95decd52461e3be9c15d94d6ee5defbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref></type>
@@ -27856,7 +28234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1861" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1861" declcolumn="6"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1928" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="1928" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab4f1d985f90ff65362e687978abef6cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref></type>
@@ -27916,7 +28294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1880" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1880" declcolumn="10"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1947" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1947" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4e9bb5386f8edd51c6f8c34653d74ac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1adb1c0770936ed4ac64158cf9523e638b" kindref="member">role_map</ref></type>
@@ -27961,7 +28339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1894" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1894" declcolumn="10"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1961" column="10" declfile="include/dpp/cluster_sync_calls.h" declline="1961" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a86b195c135689a71983f79400e106b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1application__role__connection" kindref="compound">application_role_connection</ref></type>
@@ -28006,7 +28384,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1908" column="29" declfile="include/dpp/cluster_sync_calls.h" declline="1908" declcolumn="29"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1975" column="29" declfile="include/dpp/cluster_sync_calls.h" declline="1975" declcolumn="29"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8f45c36a65e041ccb567999ba3e48d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1application__role__connection" kindref="compound">application_role_connection</ref></type>
@@ -28065,7 +28443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1924" column="29" declfile="include/dpp/cluster_sync_calls.h" declline="1924" declcolumn="29"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="1991" column="29" declfile="include/dpp/cluster_sync_calls.h" declline="1991" declcolumn="29"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8deaf03e2a8577c6083bb6fc09887c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1application__role__connection" kindref="compound">application_role_connection</ref></type>
@@ -28110,7 +28488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1938" column="29" declfile="include/dpp/cluster_sync_calls.h" declline="1938" declcolumn="29"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2005" column="29" declfile="include/dpp/cluster_sync_calls.h" declline="2005" declcolumn="29"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2ef2ef7842ed20dee035d2179e53ab3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1application__role__connection" kindref="compound">application_role_connection</ref></type>
@@ -28167,7 +28545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1953" column="29" declfile="include/dpp/cluster_sync_calls.h" declline="1953" declcolumn="29"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2020" column="29" declfile="include/dpp/cluster_sync_calls.h" declline="2020" declcolumn="29"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aade42f057ced1493a3c7c59f39659844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a1d8eeeaca0cdc14125cbf2f4f0722781" kindref="member">scheduled_event_map</ref></type>
@@ -28212,7 +28590,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1966" column="21" declfile="include/dpp/cluster_sync_calls.h" declline="1966" declcolumn="21"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2033" column="21" declfile="include/dpp/cluster_sync_calls.h" declline="2033" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6d3a0ffeffd167c57099d98e202b6c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref></type>
@@ -28257,7 +28635,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1980" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="1980" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2047" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2047" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1748760125e3f9829f2d49e8e5c3f983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -28314,7 +28692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="1995" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="1995" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2062" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2062" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a964ab2b864033d0992f8fa01eb6603e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref></type>
@@ -28359,7 +28737,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2009" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2009" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2076" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2076" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab71e5419bee86ee4afec0870e0ce8a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1scheduled__event" kindref="compound">scheduled_event</ref></type>
@@ -28416,7 +28794,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2024" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2024" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2091" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2091" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7620cfb5b51cf091b5c2d4ed6cc19884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1stage__instance" kindref="compound">stage_instance</ref></type>
@@ -28461,7 +28839,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2040" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="2040" declcolumn="16"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2107" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="2107" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3de0179783edd7785ee4a21d192571f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -28508,7 +28886,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2057" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2057" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2124" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2124" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a572f7c4f7e8b002e0fa2a7751da230da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref></type>
@@ -28555,7 +28933,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2071" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2071" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2138" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2138" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab054c959a6a0528d12380093fec98c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -28614,7 +28992,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2086" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2086" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2153" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2153" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac116541a0983b35acf418bdd0086581d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref></type>
@@ -28671,7 +29049,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2100" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2100" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2167" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2167" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1afc714011eed1186b55c38942192a2c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref></type>
@@ -28718,7 +29096,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2114" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2114" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2181" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2181" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7665fd32a1c71218bd6fed3e69b3ad9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kindref="member">sticker_map</ref></type>
@@ -28763,7 +29141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2127" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2127" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2194" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2194" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad5636998161cc4ebdf4b6fb5040f9e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref></type>
@@ -28808,7 +29186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2140" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2140" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2207" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2207" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a34eaca67acfb23c14ac444a83f1d47c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kindref="member">sticker_pack_map</ref></type>
@@ -28840,7 +29218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2152" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="2152" declcolumn="18"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2219" column="18" declfile="include/dpp/cluster_sync_calls.h" declline="2219" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abd034a34d7428cd43d6f3891cb8f828a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref></type>
@@ -28899,7 +29277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2167" column="7" declfile="include/dpp/cluster_sync_calls.h" declline="2167" declcolumn="7"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2234" column="7" declfile="include/dpp/cluster_sync_calls.h" declline="2234" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab6efbc6878f3e599de0ea4a60ffc6e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref></type>
@@ -28968,7 +29346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2183" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2183" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2250" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2250" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acabbe3b11bfece6a47b95d375d721cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -29025,7 +29403,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2198" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2198" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2265" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2265" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a90f939be4b880a2ee5ff099aaa90cd72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref></type>
@@ -29106,7 +29484,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2215" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2215" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2282" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2282" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acc12378fb3059bff6906c8be0bc1f10e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kindref="member">dtemplate_map</ref></type>
@@ -29151,7 +29529,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2229" column="15" declfile="include/dpp/cluster_sync_calls.h" declline="2229" declcolumn="15"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2296" column="15" declfile="include/dpp/cluster_sync_calls.h" declline="2296" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4a07438d33153ee88588315cd4b1b838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref></type>
@@ -29208,7 +29586,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2244" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2244" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2311" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2311" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0c79f31f217eb4d22c2f5192d562c241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1dtemplate" kindref="compound">dtemplate</ref></type>
@@ -29253,7 +29631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2257" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2257" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2324" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2324" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa03b55f7a28ea8d4d520c9d255c87e3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -29298,7 +29676,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2270" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2270" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2337" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2337" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acb305d660acf37bbccab5da34bb170b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -29343,7 +29721,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2283" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2283" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2350" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2350" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a475723bbcca444b9de7ddee04a202617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a161fc59985e2e2f32d24f72397002e46" kindref="member">active_threads</ref></type>
@@ -29388,7 +29766,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2296" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="2296" declcolumn="16"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2363" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="2363" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac14ada29643bb656707e563f4276d8f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref></type>
@@ -29457,7 +29835,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2311" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="2311" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2378" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="2378" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9a2345e6409379314b17651e3d317433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref></type>
@@ -29497,7 +29875,7 @@
 <parametername>before_timestamp</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Get threads before this timestamp </para>
+<para>Get threads archived before this timestamp </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -29526,7 +29904,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2326" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="2326" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2393" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="2393" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8f2416efc41ff2d42e15a6436c892ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" kindref="member">thread_map</ref></type>
@@ -29566,7 +29944,7 @@
 <parametername>before_timestamp</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Get threads before this timestamp </para>
+<para>Get threads archived before this timestamp </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -29595,7 +29973,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2341" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="2341" declcolumn="12"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2408" column="12" declfile="include/dpp/cluster_sync_calls.h" declline="2408" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a847982d8771848b3320ae01dcf00613a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref></type>
@@ -29652,7 +30030,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2355" column="15" declfile="include/dpp/cluster_sync_calls.h" declline="2355" declcolumn="15"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2422" column="15" declfile="include/dpp/cluster_sync_calls.h" declline="2422" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae202a0e3a374128dea543d389df3abc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a57e84724c41fed341bee0d653a06076a" kindref="member">thread_member_map</ref></type>
@@ -29697,7 +30075,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2368" column="19" declfile="include/dpp/cluster_sync_calls.h" declline="2368" declcolumn="19"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2435" column="19" declfile="include/dpp/cluster_sync_calls.h" declline="2435" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5e026f9b934b8715d2d0fcd42026b1ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1thread" kindref="compound">thread</ref></type>
@@ -29805,7 +30183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2388" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="2388" declcolumn="8"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2455" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="2455" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9c9e0664dfa968c78d5032131fbd95d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1thread" kindref="compound">thread</ref></type>
@@ -29912,7 +30290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2408" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="2408" declcolumn="8"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2475" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="2475" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0c99c8acdf8c222f8447849b110c2991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1thread" kindref="compound">thread</ref></type>
@@ -29959,7 +30337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2423" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="2423" declcolumn="8"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2490" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="2490" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aaabebadaa9d9e560130383f6c137fa20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1thread" kindref="compound">thread</ref></type>
@@ -30054,7 +30432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2441" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="2441" declcolumn="8"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2508" column="8" declfile="include/dpp/cluster_sync_calls.h" declline="2508" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4d4f3a36cc48c7ba3a7cbd80faa4bad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -30111,7 +30489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2455" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2455" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2522" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2522" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a076937e5ba367efe37ad424d0eb607f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -30168,7 +30546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2469" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2469" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2536" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2536" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5d353fda82f221d6b50c0382b81af2f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
@@ -30247,7 +30625,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2488" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="2488" declcolumn="6"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2555" column="6" declfile="include/dpp/cluster_sync_calls.h" declline="2555" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9415ab3a369fec24966bbd78a0e8dad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1application" kindref="compound">application</ref></type>
@@ -30279,7 +30657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2501" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2501" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2568" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2568" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ade2ed7a7dff856ad35728d7128da97b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref></type>
@@ -30313,7 +30691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2516" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2516" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2583" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2583" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af805ea7278c91a0e1d79b032f62548c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -30415,7 +30793,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2544" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2544" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2611" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2611" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a07f42b39eeb853d35569e0404fe965a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -30508,7 +30886,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2571" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2571" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2638" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2638" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a665a81f6488e96e4b9687cb41677407d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" kindref="member">connection_map</ref></type>
@@ -30540,7 +30918,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2585" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="2585" declcolumn="16"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2652" column="16" declfile="include/dpp/cluster_sync_calls.h" declline="2652" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acb1aafd9420be17385755602215212bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a0d9e1952e25391a3379ee3db2d930bf7" kindref="member">guild_map</ref></type>
@@ -30572,7 +30950,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2597" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2597" declcolumn="11"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2664" column="11" declfile="include/dpp/cluster_sync_calls.h" declline="2664" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2471c9c6c18e0a1b195f089aa4ab8d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -30617,7 +30995,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2610" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2610" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2677" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2677" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0cc14588d1827a4f770a28ab618f1f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref></type>
@@ -30666,7 +31044,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2628" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2628" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2695" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2695" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7b7e09ffc12f96e5e30d55278912a7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1user__identified" kindref="compound">user_identified</ref></type>
@@ -30715,7 +31093,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2646" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2646" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2713" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2713" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a60e18320d10d3a2d589d89f2841da9bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref></type>
@@ -30747,7 +31125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2658" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2658" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2725" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2725" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab4655897576aaaa7e9b3804b39eefb84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1ae90871830444cab0316109a1824fc0b8" kindref="member">voiceregion_map</ref></type>
@@ -30793,7 +31171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2676" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2676" declcolumn="17"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2743" column="17" declfile="include/dpp/cluster_sync_calls.h" declline="2743" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4d4735fdf32903ae005f410bf9899f12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -30840,7 +31218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2690" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2690" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2757" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2757" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa8f65945ec0cb6c01b8ac6e088aa88e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -30887,7 +31265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2704" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2704" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2771" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2771" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af85d62cde3f92fb06a225a7ffe43a8d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -30957,7 +31335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2720" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2720" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2787" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2787" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a171ed6000c31d17fee89633219cd5c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1confirmation" kindref="compound">confirmation</ref></type>
@@ -31014,7 +31392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2734" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2734" declcolumn="14"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2801" column="14" declfile="include/dpp/cluster_sync_calls.h" declline="2801" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a988f0b94132e9f604983f72d568aadd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -31061,7 +31439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2748" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2748" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2815" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2815" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad685e01bc28959f770522db54d7b1f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -31134,7 +31512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2770" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2770" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2837" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2837" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abf835cf724797a64550f2eaf58b8cb64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -31179,7 +31557,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2783" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2783" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2850" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2850" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a183ecf130a9c135b2c7e19ad5f9f6a3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -31277,7 +31655,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2802" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2802" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2869" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2869" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a44e63c98f4a1e1ab8fd8f4d0a0b1ed81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref></type>
@@ -31322,7 +31700,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2815" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2815" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2882" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2882" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a36d081c165e94ddb85dd183e6157199b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kindref="member">webhook_map</ref></type>
@@ -31367,7 +31745,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2828" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2828" declcolumn="13"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2895" column="13" declfile="include/dpp/cluster_sync_calls.h" declline="2895" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae524a53b16e42816f94b2bee7ccdda18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -31412,7 +31790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2841" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2841" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2908" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2908" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a486f9206456b95f36c8229c10893e05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -31482,7 +31860,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2857" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2857" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2924" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2924" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae35b19024c40e544ba21edd4918a46c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref></type>
@@ -31539,7 +31917,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="2871" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2871" declcolumn="9"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="2938" column="9" declfile="include/dpp/cluster_sync_calls.h" declline="2938" declcolumn="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -31828,6 +32206,8 @@
       <member refid="classdpp_1_1cluster_1ae9a905bb53b7271d53145846b5ff8ec4" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_delete_integration</name></member>
       <member refid="classdpp_1_1cluster_1a7196d90a43bd2eb2598c057c8ce2e69b" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_edit</name></member>
       <member refid="classdpp_1_1cluster_1adcccf40ee4aeb39dcf4ee0765c1e4d01" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_edit_member</name></member>
+      <member refid="classdpp_1_1cluster_1a899928a78d812597ff074778825d1479" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_edit_onboarding</name></member>
+      <member refid="classdpp_1_1cluster_1a1c68803d0123c6ad6dec4b8afae00cd3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_edit_welcome_screen</name></member>
       <member refid="classdpp_1_1cluster_1a788acfe8b869ae3b8d272f7b38f21f2a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_edit_widget</name></member>
       <member refid="classdpp_1_1cluster_1ab8e3cb3622b194daeec2b3481c074a0d" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_emoji_create</name></member>
       <member refid="classdpp_1_1cluster_1aaae63113b7eff926a0724bcf48e80105" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_emoji_delete</name></member>
@@ -31845,9 +32225,11 @@
       <member refid="classdpp_1_1cluster_1ab4ce86cea8f4f3721b77a885113963d5" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_invites</name></member>
       <member refid="classdpp_1_1cluster_1a04d7d1474da9860f018ffeb7abcfd31a" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_member</name></member>
       <member refid="classdpp_1_1cluster_1a973b99098d6807b866a0fa7260c3c220" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_members</name></member>
+      <member refid="classdpp_1_1cluster_1a9811e93acdba4ad5556fa9d4210b0bf4" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_onboarding</name></member>
       <member refid="classdpp_1_1cluster_1a9315ed58f70c0ca1ed83554b034bc6c5" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_prune_counts</name></member>
       <member refid="classdpp_1_1cluster_1a21dd7dca5f9301bc4b1ed1cda1de7502" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_vanity</name></member>
       <member refid="classdpp_1_1cluster_1aed2f5b0c429659c7e0e3071eba214dd4" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_voice_regions</name></member>
+      <member refid="classdpp_1_1cluster_1a69e54603df498e3c1de5cdd41b419b4f" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_welcome_screen</name></member>
       <member refid="classdpp_1_1cluster_1abf9f49f1b31ddce21df4576331b07d99" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_get_widget</name></member>
       <member refid="classdpp_1_1cluster_1af6cdfdea95858f70fe56b55629fd9ec7" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_member_add_role</name></member>
       <member refid="classdpp_1_1cluster_1aa5947a5b7b311082de51a248a97b3591" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_guild_member_delete</name></member>
@@ -32055,8 +32437,10 @@
       <member refid="classdpp_1_1cluster_1ad793626d2733715381c3c5c440f31bd0" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_member</name></member>
       <member refid="classdpp_1_1cluster_1a5014eb727a1b771fb769a2e8fd42a225" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_member_sync</name></member>
       <member refid="classdpp_1_1cluster_1aa31987df09d132a45b2d0f5b719df9e8" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_onboarding</name></member>
+      <member refid="classdpp_1_1cluster_1a6bc508cf375c7375cf53262982dc46bb" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_onboarding_sync</name></member>
       <member refid="classdpp_1_1cluster_1ab0a20f6a371ed8915654c50de208162b" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_sync</name></member>
       <member refid="classdpp_1_1cluster_1a077a0f54778632d4a76794f53075b341" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_welcome_screen</name></member>
+      <member refid="classdpp_1_1cluster_1a15a6633362b4d0c9da740cea46df4ec3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_welcome_screen_sync</name></member>
       <member refid="classdpp_1_1cluster_1ae97d98927594cee1821c4ff318eb9561" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_widget</name></member>
       <member refid="classdpp_1_1cluster_1a649e4c0a19992e9c3f6ff297ed006911" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_edit_widget_sync</name></member>
       <member refid="classdpp_1_1cluster_1a8bea7e9ba3d487e9a6b2fe747c98e9e1" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_emoji_create</name></member>
@@ -32094,6 +32478,7 @@
       <member refid="classdpp_1_1cluster_1a6b24baba4de9d38f7d9a7cea2f71a545" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_members</name></member>
       <member refid="classdpp_1_1cluster_1aa94fc2c644808aa8ca570fbd24ffe209" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_members_sync</name></member>
       <member refid="classdpp_1_1cluster_1a7a6352ff9824bf2a5fdd3e41b8da8155" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_onboarding</name></member>
+      <member refid="classdpp_1_1cluster_1a56260b496f9653e5e46ce16f0143bc2c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_onboarding_sync</name></member>
       <member refid="classdpp_1_1cluster_1a3ecd82c6169107c9c944356f19abba9e" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_preview</name></member>
       <member refid="classdpp_1_1cluster_1aad296f07bd5b9f900dcedbf88c464e09" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_prune_counts</name></member>
       <member refid="classdpp_1_1cluster_1a6fef8b393d4a36c5415a4c36338d8489" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_prune_counts_sync</name></member>
@@ -32102,6 +32487,7 @@
       <member refid="classdpp_1_1cluster_1ae5556385a69a408a268332f774ba6c3c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_voice_regions</name></member>
       <member refid="classdpp_1_1cluster_1ab4655897576aaaa7e9b3804b39eefb84" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_voice_regions_sync</name></member>
       <member refid="classdpp_1_1cluster_1a864553916e3ddee27517b092de35fd12" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_welcome_screen</name></member>
+      <member refid="classdpp_1_1cluster_1a525a3d910d58fea05286438857cfa00d" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_welcome_screen_sync</name></member>
       <member refid="classdpp_1_1cluster_1a57626c7a0e06aee1c362b986e44030c2" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_widget</name></member>
       <member refid="classdpp_1_1cluster_1a34bfc464bcb65b888bca02995c6daf1c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_get_widget_sync</name></member>
       <member refid="classdpp_1_1cluster_1aeffb7f4f32ca342886a79692ed8fb416" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>guild_member_add_role</name></member>
