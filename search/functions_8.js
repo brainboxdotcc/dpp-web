@@ -2,7 +2,7 @@ var searchData=
 [
   ['iconhash_0',['iconhash',['../structdpp_1_1utility_1_1iconhash.html#a4bfd1ae9f381180d5c208bc258835c1a',1,'dpp::utility::iconhash::iconhash(const iconhash &amp;)'],['../structdpp_1_1utility_1_1iconhash.html#a409fbe2ae53e12f6a1517436494b96e4',1,'dpp::utility::iconhash::iconhash(const std::string &amp;hash)'],['../structdpp_1_1utility_1_1iconhash.html#a44663b1c989dd7256c09c62eff44ae41',1,'dpp::utility::iconhash::iconhash(uint64_t _first=0, uint64_t _second=0)']]],
   ['in_5fthread_1',['in_thread',['../classdpp_1_1in__thread.html#aa3facf9b1775708af491a17bbc9ce627',1,'dpp::in_thread']]],
-  ['initial_5fsuspend_2',['initial_suspend',['../structdpp_1_1detail_1_1task__promise__base.html#a5ddf35f5913c5bf1ed127344ce1e36c6',1,'dpp::detail::task_promise_base']]],
+  ['initial_5fsuspend_2',['initial_suspend',['../structdpp_1_1detail_1_1task__promise__base.html#a06b70f31b07ef6337c2fffdc00a79a1a',1,'dpp::detail::task_promise_base']]],
   ['insert_5fmarker_3',['insert_marker',['../classdpp_1_1discord__voice__client.html#afe1408c1ad305aebedc7e99ba2128aa8',1,'dpp::discord_voice_client']]],
   ['int16_5fnot_5fnull_4',['int16_not_null',['../namespacedpp.html#a35672e77d8d9d9f13627b41994f377a6',1,'dpp']]],
   ['int32_5fnot_5fnull_5',['int32_not_null',['../namespacedpp.html#ab8335dd15cf1c72ce6ff068a019c1e53',1,'dpp']]],

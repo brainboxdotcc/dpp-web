@@ -567,7 +567,7 @@ var searchData=
   ['corn_5fyellow_564',['corn_yellow',['../namespacedpp_1_1colors.html#a6db80063569d208e4dce76a0a8522cb4',1,'dpp::colors']]],
   ['cornflower_5fblue_565',['cornflower_blue',['../namespacedpp_1_1colors.html#a8f8e3cebfa4ec1bce34fded4a11baaf9',1,'dpp::colors']]],
   ['cornsilk_566',['cornsilk',['../namespacedpp_1_1colors.html#ae8a28572facb526edd79fac36b047fb8',1,'dpp::colors']]],
-  ['coro_5fhandle_567',['coro_handle',['../structdpp_1_1awaitable_1_1shared__callback_1_1callback__state.html#a249cb15f943e8539e707b734cef26aae',1,'dpp::awaitable::shared_callback::callback_state']]],
+  ['coro_5fhandle_567',['coro_handle',['../structdpp_1_1awaitable_1_1shared__callback_1_1callback__state.html#ad634a4c12c8543420e984f016d4e5d3d',1,'dpp::awaitable::shared_callback::callback_state']]],
   ['coroutine_5ftraits_3c_20dpp_3a_3atask_3c_20t_20_3e_2c_20args_2e_2e_2e_20_3e_568',['coroutine_traits&lt; dpp::task&lt; T &gt;, Args... &gt;',['../structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html',1,'dpp::detail::std_coroutine']]],
   ['cos_5fdanger_569',['cos_danger',['../namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5aa62ddfb05e437c4d4bf7a3ef1b73752b',1,'dpp']]],
   ['cos_5flink_570',['cos_link',['../namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6',1,'dpp']]],

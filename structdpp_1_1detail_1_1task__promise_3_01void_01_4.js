@@ -2,7 +2,7 @@ var structdpp_1_1detail_1_1task__promise_3_01void_01_4 =
 [
     [ "final_suspend", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a4b22c2e0635db825be57158fa5a8c827", null ],
     [ "get_return_object", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a5eeb701548382ea1902410a7642aa0f0", null ],
-    [ "initial_suspend", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a5ddf35f5913c5bf1ed127344ce1e36c6", null ],
+    [ "initial_suspend", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a06b70f31b07ef6337c2fffdc00a79a1a", null ],
     [ "return_void", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a2def1cff0be909658ebcbcd38edb2ca0", null ],
     [ "unhandled_exception", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#af015d8af8e261d051216d5ab291a935a", null ],
     [ "destroy", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a4b8ec65467650319e96a7dfd8910cfc4", null ],

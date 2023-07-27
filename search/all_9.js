@@ -79,7 +79,7 @@ var searchData=
   ['information_5fdesk_5fperson_5ftone4_76',['information_desk_person_tone4',['../namespacedpp_1_1unicode__emoji.html#ade1f8a0d623b92893295c7bc202646df',1,'dpp::unicode_emoji']]],
   ['information_5fdesk_5fperson_5ftone5_77',['information_desk_person_tone5',['../namespacedpp_1_1unicode__emoji.html#a772979aea2d1f16dca1265808d9693be',1,'dpp::unicode_emoji']]],
   ['information_5fsource_78',['information_source',['../namespacedpp_1_1unicode__emoji.html#a8711248665e06e5e8ad94f2e0aceb8d1',1,'dpp::unicode_emoji']]],
-  ['initial_5fsuspend_79',['initial_suspend',['../structdpp_1_1detail_1_1task__promise__base.html#a5ddf35f5913c5bf1ed127344ce1e36c6',1,'dpp::detail::task_promise_base']]],
+  ['initial_5fsuspend_79',['initial_suspend',['../structdpp_1_1detail_1_1task__promise__base.html#a06b70f31b07ef6337c2fffdc00a79a1a',1,'dpp::detail::task_promise_base']]],
   ['inner_5femoji_80',['inner_emoji',['../structdpp_1_1component_1_1inner__emoji.html',1,'dpp::component']]],
   ['inner_5fselect_5femoji_81',['inner_select_emoji',['../structdpp_1_1select__option_1_1inner__select__emoji.html',1,'dpp::select_option']]],
   ['innocent_82',['innocent',['../namespacedpp_1_1unicode__emoji.html#acb07c373105624cedb202a39f72083c2',1,'dpp::unicode_emoji']]],
