@@ -308,6 +308,7 @@ var searchData=
   ['butterfly_305',['butterfly',['../namespacedpp_1_1unicode__emoji.html#abaf36204fd40a863e418d78788fa96a0',1,'dpp::unicode_emoji']]],
   ['butterfly_5fblue_306',['butterfly_blue',['../namespacedpp_1_1colors.html#abe718bb2edc0bf55ebb9e91b8020f642',1,'dpp::colors']]],
   ['buttons_307',['buttons',['../classdpp_1_1activity.html#a65cb680cfef51d6b3d1796682c9c93c5',1,'dpp::activity']]],
-  ['bytes_5fin_308',['bytes_in',['../classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d',1,'dpp::ssl_client']]],
-  ['bytes_5fout_309',['bytes_out',['../classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085',1,'dpp::ssl_client']]]
+  ['byte_5fblocks_5fper_5fregister_308',['byte_blocks_per_register',['../classdpp_1_1audio__mixer.html#a06bd9a06d40e70f1bd72ab4740285d3d',1,'dpp::audio_mixer']]],
+  ['bytes_5fin_309',['bytes_in',['../classdpp_1_1ssl__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d',1,'dpp::ssl_client']]],
+  ['bytes_5fout_310',['bytes_out',['../classdpp_1_1ssl__client.html#a8022a8002cfc6f394016546168ef4085',1,'dpp::ssl_client']]]
 ];

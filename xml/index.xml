@@ -144,6 +144,11 @@
     <member refid="structdpp_1_1attachment_1a2f1e46240f30afbcfc6e51bb49b7ebc1" kind="function"><name>download</name></member>
     <member refid="structdpp_1_1attachment_1a24633e1ddba574692b949632b8b985e8" kind="function"><name>is_remix</name></member>
   </compound>
+  <compound refid="classdpp_1_1audio__mixer" kind="class"><name>dpp::audio_mixer</name>
+    <member refid="classdpp_1_1audio__mixer_1a06bd9a06d40e70f1bd72ab4740285d3d" kind="variable"><name>byte_blocks_per_register</name></member>
+    <member refid="classdpp_1_1audio__mixer_1ad8b242dd3ceb5e7f0c9bbf6a2451c3e1" kind="function"><name>collect_single_register</name></member>
+    <member refid="classdpp_1_1audio__mixer_1a5c7ba9e4399ca8aead97382bcf68b0f3" kind="function"><name>combine_samples</name></member>
+  </compound>
   <compound refid="structdpp_1_1audit__change" kind="struct"><name>dpp::audit_change</name>
     <member refid="structdpp_1_1audit__change_1a7241b5b440781dccabfbc24c154de9cb" kind="variable"><name>new_value</name></member>
     <member refid="structdpp_1_1audit__change_1a025a06b03f1592b67bd59310bcadb946" kind="variable"><name>old_value</name></member>
@@ -1627,12 +1632,16 @@
     <member refid="classdpp_1_1discord__voice__client_1ad3f32f985611d9b7fb753b7ca0446f21" kind="variable"><name>encode_buffer</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a23cac9565c94195b8050df206d29d6b2" kind="variable"><name>creator</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a495139ab5289f6f7860177cf121ba2cb" kind="variable"><name>terminating</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a69388fa61302df65a43777bf472e8a92" kind="variable"><name>end_gain</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1ab39e60b88eecc2a4a5173d1786f418bd" kind="variable"><name>current_gain</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a5877d601964f10d987a288aae85574b3" kind="variable"><name>increment</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a20ea071ce2429f0eaad5fff783fc7281" kind="variable"><name>heartbeat_interval</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a4517befd07e1179155ffafa8ba69b73f" kind="variable"><name>last_heartbeat</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aa16ac9036cb13658289f58dc9035e395" kind="variable"><name>thread_id</name></member>
     <member refid="classdpp_1_1discord__voice__client_1afe7ab5918062b643245db8247f4cb70c" kind="variable"><name>token</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a8f011c857ff968e44a8e5ddf818a9160" kind="variable"><name>sessionid</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ac1d99be8bb3a89a43e5f5b368fe63f7d" kind="variable"><name>server_id</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1ae177808f7232ce1b5bbea5a0f8ce2d82" kind="variable"><name>moving_average</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a4b8de633c5944659288af217e309b2f0" kind="variable"><name>channel_id</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aeb92c5a0a80eb5f0e4d4e987ec11432d" kind="variable"><name>send_audio_type</name></member>
     <member refid="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" kind="variable"><name>custom_readable_fd</name></member>
@@ -3054,6 +3063,14 @@
     <member refid="structdpp_1_1message__update__t_1a5a45121e28e907254438e5854c90a2f8" kind="function"><name>message_update_t</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
+  </compound>
+  <compound refid="structdpp_1_1moving__averager" kind="struct"><name>dpp::moving_averager</name>
+    <member refid="structdpp_1_1moving__averager_1a3f20966b34be603037fd986a38ed6940" kind="variable"><name>values</name></member>
+    <member refid="structdpp_1_1moving__averager_1aa1064802dd80e7d21e0f3fe23187a986" kind="variable"><name>collectionCount</name></member>
+    <member refid="structdpp_1_1moving__averager_1ac16f2efcf49a02eaa1d6299625da123b" kind="function"><name>moving_averager</name></member>
+    <member refid="structdpp_1_1moving__averager_1ab0ffd433db14d324bc6b7a327d3a2eba" kind="function"><name>moving_averager</name></member>
+    <member refid="structdpp_1_1moving__averager_1ac8e37b422de94f793a34e09c0cfb0594" kind="function"><name>operator+=</name></member>
+    <member refid="structdpp_1_1moving__averager_1a1d606a75b5f2c933a31742d0691caf8a" kind="function"><name>operator float</name></member>
   </compound>
   <compound refid="structdpp_1_1multipart__content" kind="struct"><name>dpp::multipart_content</name>
     <member refid="structdpp_1_1multipart__content_1a6d5baf3784c9574cba9d54cc18129294" kind="variable"><name>body</name></member>
@@ -11654,6 +11671,8 @@
   <compound refid="intents_8h" kind="file"><name>intents.h</name>
   </compound>
   <compound refid="invite_8h" kind="file"><name>invite.h</name>
+  </compound>
+  <compound refid="isa__detection_8h" kind="file"><name>isa_detection.h</name>
   </compound>
   <compound refid="json_8h" kind="file"><name>json.h</name>
   </compound>

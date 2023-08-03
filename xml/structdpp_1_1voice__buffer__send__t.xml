@@ -278,6 +278,11 @@
           <edgelabel>sodium_initialised</edgelabel>
           <edgelabel>terminating</edgelabel>
         </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>current_gain</edgelabel>
+          <edgelabel>end_gain</edgelabel>
+          <edgelabel>increment</edgelabel>
+        </childnode>
         <childnode refid="16" relation="usage">
           <edgelabel>heartbeat_interval</edgelabel>
         </childnode>
@@ -295,7 +300,10 @@
           <edgelabel>channel_id</edgelabel>
           <edgelabel>server_id</edgelabel>
         </childnode>
-        <childnode refid="35" relation="usage">
+        <childnode refid="36" relation="usage">
+          <edgelabel>moving_average</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
           <edgelabel>send_audio_type</edgelabel>
         </childnode>
       </node>
@@ -318,6 +326,16 @@
         <link refid="classdpp_1_1managed"/>
         <childnode refid="20" relation="usage">
           <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>dpp::moving_averager</label>
+        <link refid="structdpp_1_1moving__averager"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>values</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>collectionCount</edgelabel>
         </childnode>
       </node>
       <node id="20">
@@ -415,11 +433,14 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="38">
         <label>send_audio_type_t</label>
       </node>
       <node id="30">
         <label>event_router_t&lt;</label>
+      </node>
+      <node id="35">
+        <label>float</label>
       </node>
       <node id="9">
         <label>int</label>
@@ -439,6 +460,9 @@
       </node>
       <node id="29">
         <label>condition_variable</label>
+      </node>
+      <node id="37">
+        <label>deque&lt;</label>
       </node>
       <node id="13">
         <label>function&lt; dpp::socket()&gt;</label>
