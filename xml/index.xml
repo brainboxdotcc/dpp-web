@@ -488,6 +488,7 @@
     <member refid="classdpp_1_1channel_1a27a623072570b333f697bd01c3616208" kind="function"><name>is_group_dm</name></member>
     <member refid="classdpp_1_1channel_1a1b6b7a32e44eec70466a98b31252aa54" kind="function"><name>is_category</name></member>
     <member refid="classdpp_1_1channel_1a469a04064c0d9455e8decca30010c0b4" kind="function"><name>is_forum</name></member>
+    <member refid="classdpp_1_1channel_1a3a970dbb51cd4270f2acceed77787e13" kind="function"><name>is_media_channel</name></member>
     <member refid="classdpp_1_1channel_1a9fb22156c167cb2c334ec3388502fdff" kind="function"><name>is_news_channel</name></member>
     <member refid="classdpp_1_1channel_1a04256bb3015b9fa150d56a8025a6e1d0" kind="function"><name>is_store_channel</name></member>
     <member refid="classdpp_1_1channel_1ae95ae73f17ff4badd2001bcc07940709" kind="function"><name>is_stage_channel</name></member>
@@ -495,6 +496,7 @@
     <member refid="classdpp_1_1channel_1a311501db36692f1753254e1bf618e75d" kind="function"><name>is_video_720p</name></member>
     <member refid="classdpp_1_1channel_1ad82aae3ca0ba7d93669851fa0a720870" kind="function"><name>is_pinned_thread</name></member>
     <member refid="classdpp_1_1channel_1ad33f11beae3555c835b805a7f6869063" kind="function"><name>is_tag_required</name></member>
+    <member refid="classdpp_1_1channel_1ab797470989fe7a1eac86eef4eef73551" kind="function"><name>is_download_options_hidden</name></member>
     <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" kind="function"><name>get_creation_time</name></member>
     <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" kind="function"><name>operator==</name></member>
     <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" kind="function"><name>operator!=</name></member>
@@ -3842,6 +3844,7 @@
     <member refid="classdpp_1_1channel_1a27a623072570b333f697bd01c3616208" kind="function"><name>is_group_dm</name></member>
     <member refid="classdpp_1_1channel_1a1b6b7a32e44eec70466a98b31252aa54" kind="function"><name>is_category</name></member>
     <member refid="classdpp_1_1channel_1a469a04064c0d9455e8decca30010c0b4" kind="function"><name>is_forum</name></member>
+    <member refid="classdpp_1_1channel_1a3a970dbb51cd4270f2acceed77787e13" kind="function"><name>is_media_channel</name></member>
     <member refid="classdpp_1_1channel_1a9fb22156c167cb2c334ec3388502fdff" kind="function"><name>is_news_channel</name></member>
     <member refid="classdpp_1_1channel_1a04256bb3015b9fa150d56a8025a6e1d0" kind="function"><name>is_store_channel</name></member>
     <member refid="classdpp_1_1channel_1ae95ae73f17ff4badd2001bcc07940709" kind="function"><name>is_stage_channel</name></member>
@@ -3849,6 +3852,7 @@
     <member refid="classdpp_1_1channel_1a311501db36692f1753254e1bf618e75d" kind="function"><name>is_video_720p</name></member>
     <member refid="classdpp_1_1channel_1ad82aae3ca0ba7d93669851fa0a720870" kind="function"><name>is_pinned_thread</name></member>
     <member refid="classdpp_1_1channel_1ad33f11beae3555c835b805a7f6869063" kind="function"><name>is_tag_required</name></member>
+    <member refid="classdpp_1_1channel_1ab797470989fe7a1eac86eef4eef73551" kind="function"><name>is_download_options_hidden</name></member>
     <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" kind="function"><name>get_creation_time</name></member>
     <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" kind="function"><name>operator==</name></member>
     <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" kind="function"><name>operator!=</name></member>
@@ -4544,15 +4548,14 @@
     <member refid="namespacedpp_1a732e832861149a278f27ea7840b8e4caa6aeb82d5948ce154bf6db5c43efdca4b" kind="enumvalue"><name>CHANNEL_STAGE</name></member>
     <member refid="namespacedpp_1a732e832861149a278f27ea7840b8e4caa9cf6db4c566fd0b5e3d3042612036a2e" kind="enumvalue"><name>CHANNEL_DIRECTORY</name></member>
     <member refid="namespacedpp_1a732e832861149a278f27ea7840b8e4caadefa4b5b2fdae86eda8f8e90807ec922" kind="enumvalue"><name>CHANNEL_FORUM</name></member>
+    <member refid="namespacedpp_1a732e832861149a278f27ea7840b8e4caa37ad4ff1eb103f9f918ede8baf7c65cd" kind="enumvalue"><name>CHANNEL_MEDIA</name></member>
     <member refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9" kind="enum"><name>channel_flags</name></member>
     <member refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9a0b0d31477f484ddc8b5da869e8a020bd" kind="enumvalue"><name>c_nsfw</name></member>
     <member refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9a76fb8f7043c63103db86dc0ef1f14fca" kind="enumvalue"><name>c_video_quality_720p</name></member>
     <member refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9a616b3dd8173ca7ca0d249d82c573e3c0" kind="enumvalue"><name>c_lock_permissions</name></member>
     <member refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89" kind="enumvalue"><name>c_pinned_thread</name></member>
     <member refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9" kind="enumvalue"><name>c_require_tag</name></member>
-    <member refid="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480" kind="enum"><name>discord_channel_flags</name></member>
-    <member refid="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d" kind="enumvalue"><name>dc_pinned_thread</name></member>
-    <member refid="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d" kind="enumvalue"><name>dc_require_tag</name></member>
+    <member refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9a67f2e40744142ab1b837aacdf2025b84" kind="enumvalue"><name>c_hide_media_download_options</name></member>
     <member refid="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06" kind="enum"><name>default_forum_sort_order_t</name></member>
     <member refid="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f" kind="enumvalue"><name>so_latest_activity</name></member>
     <member refid="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06a51f6e6db5517bae1664dd2c9407eb8ee" kind="enumvalue"><name>so_creation_date</name></member>

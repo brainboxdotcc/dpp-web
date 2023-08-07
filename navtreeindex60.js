@@ -1,5 +1,12 @@
 var NAVTREEINDEX60 =
 {
+"structdpp_1_1welcome__screen.html#ad8b87d22f1423d0d72e556cbbf6bdeb5":[8,0,0,223,3],
+"structdpp_1_1welcome__screen.html#ad8b87d22f1423d0d72e556cbbf6bdeb5":[9,0,0,220,3],
+"structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[9,0,1,0],
+"structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[8,0,1,0],
+"structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html#a862f06ae744297479158a438b219cb05":[9,0,1,0,0],
+"structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html#a862f06ae744297479158a438b219cb05":[8,0,1,0,0],
+"subcommands.html":[4,1,2],
 "the-basics.html":[4,0],
 "thread-model.html":[5,1],
 "todo.html":[7],

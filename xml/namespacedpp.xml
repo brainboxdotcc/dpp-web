@@ -1481,6 +1481,15 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacedpp_1a732e832861149a278f27ea7840b8e4caa37ad4ff1eb103f9f918ede8baf7c65cd" prot="public">
+          <name>CHANNEL_MEDIA</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+<para>Media channel that can only contain threads, similar to forum channels. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
 <para>Flag integers as received from and sent to discord. </para>
         </briefdescription>
@@ -1488,7 +1497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="38" column="1" bodyfile="include/dpp/channel.h" bodystart="38" bodyend="60"/>
+        <location file="include/dpp/channel.h" line="38" column="1" bodyfile="include/dpp/channel.h" bodystart="38" bodyend="61"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9" prot="public" static="no" strong="no">
         <type>uint16_t</type>
@@ -1524,7 +1533,7 @@
           <name>c_pinned_thread</name>
           <initializer>=	0b0000000010000000</initializer>
           <briefdescription>
-<para>Thread is pinned to the top of its parent forum channel. </para>
+<para>Thread is pinned to the top of its parent forum or media channel. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1533,7 +1542,16 @@
           <name>c_require_tag</name>
           <initializer>=		0b0000000100000000</initializer>
           <briefdescription>
-<para>Whether a tag is required to be specified when creating a thread in a forum channel. Tags are specified in the <ref refid="classdpp_1_1thread_1a8ab5e0ee2b50f2bab43090312749ce3d" kindref="member">thread::applied_tags</ref> field. </para>
+<para>Whether a tag is required to be specified when creating a thread in a forum or a media channel. Tags are specified in the <ref refid="classdpp_1_1thread_1a8ab5e0ee2b50f2bab43090312749ce3d" kindref="member">thread::applied_tags</ref> field. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9a67f2e40744142ab1b837aacdf2025b84" prot="public">
+          <name>c_hide_media_download_options</name>
+          <initializer>= 0b0001000000000000</initializer>
+          <briefdescription>
+<para>When set hides the embedded media download options. Available only for media channels. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -1548,37 +1566,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="67" column="1" bodyfile="include/dpp/channel.h" bodystart="67" bodyend="79"/>
-      </memberdef>
-      <memberdef kind="enum" id="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480" prot="public" static="no" strong="no">
-        <type>uint8_t</type>
-        <name>discord_channel_flags</name>
-        <enumvalue id="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d" prot="public">
-          <name>dc_pinned_thread</name>
-          <initializer>= 1 &lt;&lt; 1</initializer>
-          <briefdescription>
-<para>Thread is pinned to the top of its parent forum channel. </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="namespacedpp_1a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d" prot="public">
-          <name>dc_require_tag</name>
-          <initializer>=   1 &lt;&lt; 4</initializer>
-          <briefdescription>
-<para>Whether a tag is required to be specified when creating a thread in a forum channel. Tags are specified in the <ref refid="classdpp_1_1thread_1a8ab5e0ee2b50f2bab43090312749ce3d" kindref="member">thread::applied_tags</ref> field. </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <briefdescription>
-<para>The flags in discord channel&apos;s raw &quot;flags&quot; field. We use these for serialisation only, right now. Might be better to create a new field than to make the existing <ref refid="classdpp_1_1channel_1a4468e3981302301886f649d14b7ddcf7" kindref="member">channel::flags</ref> from uint8_t to uint16_t, if discord adds more flags in future. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="84" column="1" bodyfile="include/dpp/channel.h" bodystart="84" bodyend="89"/>
+        <location file="include/dpp/channel.h" line="68" column="1" bodyfile="include/dpp/channel.h" bodystart="68" bodyend="83"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -1608,7 +1596,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="94" column="1" bodyfile="include/dpp/channel.h" bodystart="94" bodyend="99"/>
+        <location file="include/dpp/channel.h" line="88" column="1" bodyfile="include/dpp/channel.h" bodystart="88" bodyend="93"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a4659a9179785f523733a6a0ceeaa97bc" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -1647,7 +1635,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="104" column="1" bodyfile="include/dpp/channel.h" bodystart="104" bodyend="108"/>
+        <location file="include/dpp/channel.h" line="98" column="1" bodyfile="include/dpp/channel.h" bodystart="98" bodyend="102"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a1111f17373e7a972e77ffc0a6e621522" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -1677,7 +1665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="113" column="1" bodyfile="include/dpp/channel.h" bodystart="113" bodyend="118"/>
+        <location file="include/dpp/channel.h" line="107" column="1" bodyfile="include/dpp/channel.h" bodystart="107" bodyend="112"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a9ea85c1ebdea9ba69a289c812bd630f8" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -1725,7 +1713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="169" column="1" bodyfile="include/dpp/channel.h" bodystart="169" bodyend="178"/>
+        <location file="include/dpp/channel.h" line="163" column="1" bodyfile="include/dpp/channel.h" bodystart="163" bodyend="172"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4" prot="public" static="no" strong="no">
         <type>bool</type>
@@ -6238,7 +6226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="255" column="28" bodyfile="include/dpp/channel.h" bodystart="255" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="249" column="28" bodyfile="include/dpp/channel.h" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a7c77c4dd9434985643b2f1993b227f30" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &gt;</type>
@@ -6252,7 +6240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="830" column="28" bodyfile="include/dpp/channel.h" bodystart="830" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="838" column="28" bodyfile="include/dpp/channel.h" bodystart="838" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1afb8eae726b5ea68baff8c48d7fb835af" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1thread" kindref="compound">thread</ref> &gt;</type>
@@ -6266,7 +6254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="835" column="28" bodyfile="include/dpp/channel.h" bodystart="835" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="843" column="28" bodyfile="include/dpp/channel.h" bodystart="843" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a161fc59985e2e2f32d24f72397002e46" prot="public" static="no">
         <type>std::map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1active__thread__info" kindref="compound">active_thread_info</ref> &gt;</type>
@@ -6280,7 +6268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="855" column="1" bodyfile="include/dpp/channel.h" bodystart="855" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="863" column="1" bodyfile="include/dpp/channel.h" bodystart="863" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" prot="public" static="no">
         <type>nlohmann::json</type>
@@ -7726,7 +7714,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="817" column="6" declfile="include/dpp/channel.h" declline="817" declcolumn="6"/>
+        <location file="include/dpp/channel.h" line="825" column="6" declfile="include/dpp/channel.h" declline="825" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a7b4c7cea42e58d376ea1f7aa6d630c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7766,7 +7754,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="825" column="6" declfile="include/dpp/channel.h" declline="825" declcolumn="6"/>
+        <location file="include/dpp/channel.h" line="833" column="6" declfile="include/dpp/channel.h" declline="833" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aab9892169cd091ab8292c29ec27d43a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t DPP_EXPORT</type>

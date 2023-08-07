@@ -6596,7 +6596,8 @@ var namespacedpp =
       [ "c_video_quality_720p", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a76fb8f7043c63103db86dc0ef1f14fca", null ],
       [ "c_lock_permissions", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a616b3dd8173ca7ca0d249d82c573e3c0", null ],
       [ "c_pinned_thread", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89", null ],
-      [ "c_require_tag", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9", null ]
+      [ "c_require_tag", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9", null ],
+      [ "c_hide_media_download_options", "namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a67f2e40744142ab1b837aacdf2025b84", null ]
     ] ],
     [ "channel_type", "namespacedpp.html#a732e832861149a278f27ea7840b8e4ca", [
       [ "CHANNEL_TEXT", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caadee0dce423516e720f8ef4f77628428e", null ],
@@ -6611,7 +6612,8 @@ var namespacedpp =
       [ "CHANNEL_PRIVATE_THREAD", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caae7eb62155b17af4f21bd92aab3970b77", null ],
       [ "CHANNEL_STAGE", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caa6aeb82d5948ce154bf6db5c43efdca4b", null ],
       [ "CHANNEL_DIRECTORY", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caa9cf6db4c566fd0b5e3d3042612036a2e", null ],
-      [ "CHANNEL_FORUM", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caadefa4b5b2fdae86eda8f8e90807ec922", null ]
+      [ "CHANNEL_FORUM", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caadefa4b5b2fdae86eda8f8e90807ec922", null ],
+      [ "CHANNEL_MEDIA", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caa37ad4ff1eb103f9f918ede8baf7c65cd", null ]
     ] ],
     [ "command_option_type", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58", [
       [ "co_sub_command", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c", null ],
@@ -6654,10 +6656,6 @@ var namespacedpp =
     [ "default_message_notification_t", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13", [
       [ "dmn_all", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13ac05d61f047e3b275d068f6d53d00a51e", null ],
       [ "dmn_only_mentions", "namespacedpp.html#a3be39a31818d9499750c3efd43281d13a5fa1b59a563d5f28705eab0f2b112821", null ]
-    ] ],
-    [ "discord_channel_flags", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480", [
-      [ "dc_pinned_thread", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d", null ],
-      [ "dc_require_tag", "namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d", null ]
     ] ],
     [ "emoji_flags", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947c", [
       [ "e_require_colons", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb", null ],

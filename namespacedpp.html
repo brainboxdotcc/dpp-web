@@ -374,7 +374,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1form__submit__t.html">form_submit_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1forum__tag.html">forum_tag</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a tag that is able to be applied to a thread in a forum channel.  <a href="structdpp_1_1forum__tag.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a tag that is able to be applied to a thread in a forum or media channel.  <a href="structdpp_1_1forum__tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1gateway.html">gateway</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the various information from the 'get gateway bot' api call.  <a href="structdpp_1_1gateway.html#details">More...</a><br /></td></tr>
@@ -1142,6 +1142,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#a732e832861149a278f27ea7840b8e4caa9cf6db4c566fd0b5e3d3042612036a2e">CHANNEL_DIRECTORY</a> = 14
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a732e832861149a278f27ea7840b8e4caadefa4b5b2fdae86eda8f8e90807ec922">CHANNEL_FORUM</a> = 15
+, <a class="el" href="namespacedpp.html#a732e832861149a278f27ea7840b8e4caa37ad4ff1eb103f9f918ede8baf7c65cd">CHANNEL_MEDIA</a> = 16
 <br />
  }</td></tr>
 <tr class="memdesc:a732e832861149a278f27ea7840b8e4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag integers as received from and sent to discord.  <a href="namespacedpp.html#a732e832861149a278f27ea7840b8e4ca">More...</a><br /></td></tr>
@@ -1153,15 +1154,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89">c_pinned_thread</a> = 0b0000000010000000
 , <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9">c_require_tag</a> = 0b0000000100000000
+, <a class="el" href="namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a67f2e40744142ab1b837aacdf2025b84">c_hide_media_download_options</a> = 0b0001000000000000
 <br />
  }</td></tr>
 <tr class="memdesc:a5ec9c45c4c6519489736761391fe9dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our flags as stored in the object.  <a href="namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9">More...</a><br /></td></tr>
 <tr class="separator:a5ec9c45c4c6519489736761391fe9dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a3c6f970a9ba600ecf7c8e16f6ec480"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480">discord_channel_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d">dc_pinned_thread</a> = 1 &lt;&lt; 1
-, <a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d">dc_require_tag</a> = 1 &lt;&lt; 4
- }</td></tr>
-<tr class="memdesc:a1a3c6f970a9ba600ecf7c8e16f6ec480"><td class="mdescLeft">&#160;</td><td class="mdescRight">The flags in discord channel's raw "flags" field. We use these for serialisation only, right now. Might be better to create a new field than to make the existing channel::flags from uint8_t to uint16_t, if discord adds more flags in future.  <a href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480">More...</a><br /></td></tr>
-<tr class="separator:a1a3c6f970a9ba600ecf7c8e16f6ec480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8154fdded2c361ae6c91397cd3e4f06"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06">default_forum_sort_order_t</a> : uint8_t { <a class="el" href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f">so_latest_activity</a> = 0
 , <a class="el" href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06a51f6e6db5517bae1664dd2c9407eb8ee">so_creation_date</a> = 1
  }</td></tr>
@@ -3543,9 +3540,11 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a5ec9c45c4c6519489736761391fe9dd9a616b3dd8173ca7ca0d249d82c573e3c0" name="a5ec9c45c4c6519489736761391fe9dd9a616b3dd8173ca7ca0d249d82c573e3c0"></a>c_lock_permissions&#160;</td><td class="fielddoc"><p >Lock permissions (only used when updating channel positions) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89" name="a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89"></a>c_pinned_thread&#160;</td><td class="fielddoc"><p >Thread is pinned to the top of its parent forum channel. </p>
+<tr><td class="fieldname"><a id="a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89" name="a5ec9c45c4c6519489736761391fe9dd9a9d8e493824376dc1bfe241597e27fa89"></a>c_pinned_thread&#160;</td><td class="fielddoc"><p >Thread is pinned to the top of its parent forum or media channel. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9" name="a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9"></a>c_require_tag&#160;</td><td class="fielddoc"><p >Whether a tag is required to be specified when creating a thread in a forum channel. Tags are specified in the <a class="el" href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">thread::applied_tags</a> field. </p>
+<tr><td class="fieldname"><a id="a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9" name="a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9"></a>c_require_tag&#160;</td><td class="fielddoc"><p >Whether a tag is required to be specified when creating a thread in a forum or a media channel. Tags are specified in the <a class="el" href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">thread::applied_tags</a> field. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ec9c45c4c6519489736761391fe9dd9a67f2e40744142ab1b837aacdf2025b84" name="a5ec9c45c4c6519489736761391fe9dd9a67f2e40744142ab1b837aacdf2025b84"></a>c_hide_media_download_options&#160;</td><td class="fielddoc"><p >When set hides the embedded media download options. Available only for media channels. </p>
 </td></tr>
 </table>
 
@@ -3592,6 +3591,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a732e832861149a278f27ea7840b8e4caa9cf6db4c566fd0b5e3d3042612036a2e" name="a732e832861149a278f27ea7840b8e4caa9cf6db4c566fd0b5e3d3042612036a2e"></a>CHANNEL_DIRECTORY&#160;</td><td class="fielddoc"><p >the channel in a <a href="https://support.discord.com/hc/en-us/articles/4406046651927-Discord-Student-Hubs-FAQ">hub</a> containing the listed servers </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a732e832861149a278f27ea7840b8e4caadefa4b5b2fdae86eda8f8e90807ec922" name="a732e832861149a278f27ea7840b8e4caadefa4b5b2fdae86eda8f8e90807ec922"></a>CHANNEL_FORUM&#160;</td><td class="fielddoc"><p >forum channel that can only contain threads </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a732e832861149a278f27ea7840b8e4caa37ad4ff1eb103f9f918ede8baf7c65cd" name="a732e832861149a278f27ea7840b8e4caa37ad4ff1eb103f9f918ede8baf7c65cd"></a>CHANNEL_MEDIA&#160;</td><td class="fielddoc"><p >Media channel that can only contain threads, similar to forum channels. </p>
 </td></tr>
 </table>
 
@@ -3760,28 +3761,6 @@ Variables</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3be39a31818d9499750c3efd43281d13ac05d61f047e3b275d068f6d53d00a51e" name="a3be39a31818d9499750c3efd43281d13ac05d61f047e3b275d068f6d53d00a51e"></a>dmn_all&#160;</td><td class="fielddoc"><p >members will receive notifications for all messages by default </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3be39a31818d9499750c3efd43281d13a5fa1b59a563d5f28705eab0f2b112821" name="a3be39a31818d9499750c3efd43281d13a5fa1b59a563d5f28705eab0f2b112821"></a>dmn_only_mentions&#160;</td><td class="fielddoc"><p >members will receive notifications only for messages that @mention them by default </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="a1a3c6f970a9ba600ecf7c8e16f6ec480" name="a1a3c6f970a9ba600ecf7c8e16f6ec480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a3c6f970a9ba600ecf7c8e16f6ec480">&#9670;&nbsp;</a></span>discord_channel_flags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a1a3c6f970a9ba600ecf7c8e16f6ec480">dpp::discord_channel_flags</a> : uint8_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The flags in discord channel's raw "flags" field. We use these for serialisation only, right now. Might be better to create a new field than to make the existing <a class="el" href="classdpp_1_1channel.html#a4468e3981302301886f649d14b7ddcf7">channel::flags</a> from uint8_t to uint16_t, if discord adds more flags in future. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d" name="a1a3c6f970a9ba600ecf7c8e16f6ec480afb0426619d0a2959643cb47e23f9813d"></a>dc_pinned_thread&#160;</td><td class="fielddoc"><p >Thread is pinned to the top of its parent forum channel. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d" name="a1a3c6f970a9ba600ecf7c8e16f6ec480a44ed89a3873a10219db7f4b9b41bbd9d"></a>dc_require_tag&#160;</td><td class="fielddoc"><p >Whether a tag is required to be specified when creating a thread in a forum channel. Tags are specified in the <a class="el" href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">thread::applied_tags</a> field. </p>
 </td></tr>
 </table>
 
