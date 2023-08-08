@@ -276,6 +276,9 @@ var hierarchy =
     [ "dpp::json_interface< emoji >", "structdpp_1_1json__interface.html", [
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ]
     ] ],
+    [ "dpp::json_interface< forum_tag >", "structdpp_1_1json__interface.html", [
+      [ "dpp::forum_tag", "structdpp_1_1forum__tag.html", null ]
+    ] ],
     [ "dpp::json_interface< guild >", "structdpp_1_1json__interface.html", [
       [ "dpp::guild", "classdpp_1_1guild.html", null ]
     ] ],

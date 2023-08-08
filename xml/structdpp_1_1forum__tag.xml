@@ -3,6 +3,7 @@
   <compounddef id="structdpp_1_1forum__tag" kind="struct" language="C++" prot="public">
     <compoundname>dpp::forum_tag</compoundname>
     <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; forum_tag &gt;</basecompoundref>
     <includes local="no">channel.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1forum__tag_1a8bbde0d80e3da450a6e20373d9a092ca" prot="public" static="no" mutable="no">
@@ -149,11 +150,12 @@
         </inbodydescription>
         <location file="include/dpp/channel.h" line="225" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1forum__tag_1a181707a141a20342d7e3d3378fa09fc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1forum__tag_1a181707a141a20342d7e3d3378fa09fc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string dpp::forum_tag::build_json</definition>
         <argsstring>(bool with_id=false) const</argsstring>
         <name>build_json</name>
+        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
         <param>
           <type>bool</type>
           <declname>with_id</declname>
@@ -305,14 +307,27 @@
         <link refid="structdpp_1_1forum__tag"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
       </node>
       <node id="2">
         <label>dpp::managed</label>
         <link refid="classdpp_1_1managed"/>
       </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; forum_tag &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; forum_tag &gt;</edgelabel>
+        </childnode>
+      </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="8">
+      <node id="10">
         <label>bool</label>
       </node>
       <node id="1">
@@ -320,15 +335,21 @@
         <link refid="structdpp_1_1forum__tag"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>name</edgelabel>
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
         <childnode refid="7" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
           <edgelabel>emoji</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>moderated</edgelabel>
         </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
       </node>
       <node id="2">
         <label>dpp::managed</label>
@@ -344,15 +365,22 @@
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
-      <node id="6">
-        <label>std::basic_string&lt; Char &gt;</label>
-      </node>
       <node id="5">
-        <label>std::string</label>
-        <childnode refid="6" relation="public-inheritance">
+        <label>dpp::json_interface&lt; forum_tag &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; forum_tag &gt;</edgelabel>
         </childnode>
       </node>
+      <node id="8">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
       <node id="7">
+        <label>std::string</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
         <label>variant&lt;</label>
       </node>
       <node id="4">
@@ -361,7 +389,7 @@
     </collaborationgraph>
     <location file="include/dpp/channel.h" line="199" column="1" bodyfile="include/dpp/channel.h" bodystart="199" bodyend="244"/>
     <listofallmembers>
-      <member refid="structdpp_1_1forum__tag_1a181707a141a20342d7e3d3378fa09fc8" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1forum__tag_1a181707a141a20342d7e3d3378fa09fc8" prot="public" virt="virtual"><scope>dpp::forum_tag</scope><name>build_json</name></member>
       <member refid="structdpp_1_1forum__tag_1a46a1b609377b1443a31df24e18d20cf1" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>emoji</name></member>
       <member refid="structdpp_1_1forum__tag_1a9ff8f47d0bc94fa3c42bd3557a1f45dc" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>fill_from_json</name></member>
       <member refid="structdpp_1_1forum__tag_1a8af4e2edccd078821e4f5fb818fd3e4c" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>forum_tag</name></member>
@@ -375,6 +403,7 @@
       <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>operator==</name></member>
       <member refid="structdpp_1_1forum__tag_1a5179430d74c31b0e7366edd4f39036aa" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>set_name</name></member>
       <member refid="structdpp_1_1forum__tag_1ace3c79ee8ef6950f21cc172ae161c6c5" prot="public" virt="virtual"><scope>dpp::forum_tag</scope><name>~forum_tag</name></member>
+      <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::forum_tag</scope><name>~json_interface</name></member>
       <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::forum_tag</scope><name>~managed</name></member>
     </listofallmembers>
   </compounddef>

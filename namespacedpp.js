@@ -7225,6 +7225,8 @@ var namespacedpp =
     [ "set_int64_not_null", "namespacedpp.html#aef513c496a461641781a63de18d2d9ec", null ],
     [ "set_int8_not_null", "namespacedpp.html#ae344a3bd067a818390e2d748176cd775", null ],
     [ "set_nonblocking", "namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3", null ],
+    [ "set_object_array_not_null", "namespacedpp.html#aed1ec265a224edde190f89f1946ee13b", null ],
+    [ "set_snowflake_array_not_null", "namespacedpp.html#ac680cc6f997c9acf358c3355c0e985c5", null ],
     [ "set_snowflake_not_null", "namespacedpp.html#ae445f4eb0bd2357dec87d33b8825ba31", null ],
     [ "set_string_not_null", "namespacedpp.html#a2bea4039b904a51aeb3261a1a5d3fcaf", null ],
     [ "set_ts_not_null", "namespacedpp.html#ae2ac378edc26d20fb0db2658b7da3502", null ],

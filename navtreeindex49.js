@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"structdpp_1_1command__data__option.html#af19a9794fcddefce4f97a8f65a52d53a":[8,0,0,48,2],
+"structdpp_1_1command__data__option.html#af19a9794fcddefce4f97a8f65a52d53a":[9,0,0,45,2],
 "structdpp_1_1command__info__t.html":[8,0,0,49],
 "structdpp_1_1command__info__t.html":[9,0,0,46],
 "structdpp_1_1command__info__t.html#a17285092877891df2580305980354f4d":[9,0,0,46,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html#abb16e87ae8eaf729fc5059d9a23b98ca":[9,0,0,0,0,0,0],
 "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html#abb16e87ae8eaf729fc5059d9a23b98ca":[8,0,0,1,0,0,0],
 "structdpp_1_1detail_1_1task__chain__final__awaiter.html":[9,0,0,0,1],
-"structdpp_1_1detail_1_1task__chain__final__awaiter.html":[8,0,0,1,1],
-"structdpp_1_1detail_1_1task__chain__final__awaiter.html#a5869244dfa577d83897be57693875279":[9,0,0,0,1,0],
-"structdpp_1_1detail_1_1task__chain__final__awaiter.html#a5869244dfa577d83897be57693875279":[8,0,0,1,1,0]
+"structdpp_1_1detail_1_1task__chain__final__awaiter.html":[8,0,0,1,1]
 };
