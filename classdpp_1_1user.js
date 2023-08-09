@@ -1,7 +1,7 @@
 var classdpp_1_1user =
 [
     [ "user", "classdpp_1_1user.html#a10ae5c579f6d60370d825e71fdff697b", null ],
-    [ "~user", "classdpp_1_1user.html#a95440675fb84b84e8ff2b004ab7f5818", null ],
+    [ "~user", "classdpp_1_1user.html#ab10c88f47447a074038417d2a8867288", null ],
     [ "build_json", "classdpp_1_1user.html#a99f8a16addc4254a51bae13aae574641", null ],
     [ "fill_from_json", "classdpp_1_1user.html#ae9fecaa47d8ba5330c4cdda978ffe267", null ],
     [ "format_username", "classdpp_1_1user.html#aa8e70346690b38db060af1d0f84ac1d7", null ],

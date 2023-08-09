@@ -2,7 +2,7 @@ var classdpp_1_1slashcommand =
 [
     [ "slashcommand", "classdpp_1_1slashcommand.html#add0654f80f31c52fbbf7d1541653a7b0", null ],
     [ "slashcommand", "classdpp_1_1slashcommand.html#a7f64e4998a23592427069eae91df25be", null ],
-    [ "~slashcommand", "classdpp_1_1slashcommand.html#ac0b2c4131b2483f4b168acbd6d292fd1", null ],
+    [ "~slashcommand", "classdpp_1_1slashcommand.html#af9b1e4bd5318905d499b318789a41587", null ],
     [ "add_localization", "classdpp_1_1slashcommand.html#af2e10e78a1a517f3e6d6b85bbc6fd2f8", null ],
     [ "add_option", "classdpp_1_1slashcommand.html#a3959f3f3b2709c56e03610e6f774e449", null ],
     [ "add_permission", "classdpp_1_1slashcommand.html#a35086350bd76709e6befeed71e2598ab", null ],

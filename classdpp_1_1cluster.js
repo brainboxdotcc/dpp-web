@@ -514,6 +514,8 @@ var classdpp_1_1cluster =
     [ "messages_get_sync", "classdpp_1_1cluster.html#a795ac11245e689599fb24f9e5a6a060d", null ],
     [ "nitro_sticker_get", "classdpp_1_1cluster.html#a115a49075ceb1817f1e81fc9388bf65e", null ],
     [ "nitro_sticker_get_sync", "classdpp_1_1cluster.html#ad5636998161cc4ebdf4b6fb5040f9e7f", null ],
+    [ "operator=", "classdpp_1_1cluster.html#a17780ca53ef05b8d66df90185eb51a04", null ],
+    [ "operator=", "classdpp_1_1cluster.html#adfece237b42b8a0ab4d81c000e159fd6", null ],
     [ "post_rest", "classdpp_1_1cluster.html#aebf7330c120e96cbcefe304572c65c30", null ],
     [ "post_rest_multipart", "classdpp_1_1cluster.html#a3c540c26342e8238a76b8ac252f7f262", null ],
     [ "request", "classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52", null ],

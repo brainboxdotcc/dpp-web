@@ -1,7 +1,7 @@
 var classdpp_1_1https__client =
 [
     [ "https_client", "classdpp_1_1https__client.html#a9ff312a1a5529495b77452e6bfe50fda", null ],
-    [ "~https_client", "classdpp_1_1https__client.html#a0a204c887a2807dab58a87eebc199661", null ],
+    [ "~https_client", "classdpp_1_1https__client.html#ab2d6c00ba8ed56c1e06a42563d1b7026", null ],
     [ "build_multipart", "classdpp_1_1https__client.html#aa4e20ece223207e62c1006dcadfbe2a9", null ],
     [ "close", "classdpp_1_1https__client.html#a4f0f5052e8c71e201e6537f7ce82d5ef", null ],
     [ "connect", "classdpp_1_1https__client.html#aac9563bccd8ba5f153d9a8fd7834bc34", null ],
