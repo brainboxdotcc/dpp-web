@@ -26,19 +26,19 @@ var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
     [ "D++: A C++ Discord API Library for Bots", "index.html", [
-      [ "What is D++ (DPP)?", "index.html#autotoc_md106", null ],
-      [ "Downloads", "index.html#autotoc_md107", null ],
-      [ "Library features", "index.html#autotoc_md108", null ],
-      [ "Supported Operating Systems", "index.html#autotoc_md109", [
-        [ "Linux", "index.html#autotoc_md110", null ],
-        [ "Mac OS X and FreeBSD", "index.html#autotoc_md111", null ],
-        [ "Raspberry Pi", "index.html#autotoc_md112", null ],
-        [ "Windows", "index.html#autotoc_md113", null ],
-        [ "Other OS", "index.html#autotoc_md114", null ]
+      [ "What is D++ (DPP)?", "index.html#autotoc_md107", null ],
+      [ "Downloads", "index.html#autotoc_md108", null ],
+      [ "Library features", "index.html#autotoc_md109", null ],
+      [ "Supported Operating Systems", "index.html#autotoc_md110", [
+        [ "Linux", "index.html#autotoc_md111", null ],
+        [ "Mac OS X and FreeBSD", "index.html#autotoc_md112", null ],
+        [ "Raspberry Pi", "index.html#autotoc_md113", null ],
+        [ "Windows", "index.html#autotoc_md114", null ],
+        [ "Other OS", "index.html#autotoc_md115", null ]
       ] ],
-      [ "Getting started", "index.html#autotoc_md115", null ],
-      [ "Architecture", "index.html#autotoc_md116", null ],
-      [ "Learning Resources", "index.html#autotoc_md117", null ]
+      [ "Getting started", "index.html#autotoc_md116", null ],
+      [ "Architecture", "index.html#autotoc_md117", null ],
+      [ "Learning Resources", "index.html#autotoc_md118", null ]
     ] ],
     [ "Frequently Asked Questions (FAQ)", "md_docpages_01_frequently_asked_questions.html", [
       [ "Is this library in production use?", "md_docpages_01_frequently_asked_questions.html#autotoc_md1", null ],

@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('coroutines.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section warning"><dt>Warning</dt><dd>D++ Coroutines are a very new feature and are currently only supported by D++ on g++ 13.1 and MSVC 19.37, and the CMake option DPP_CORO must be enabled. They are experimental and may have bugs or even crashes, please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</a> or to our <a href="https://discord.gg/dpp">Discord Server</a>.</dd></dl>
-<h3><a class="anchor" id="autotoc_md61"></a>
+<h3><a class="anchor" id="autotoc_md62"></a>
 What is a coroutine?</h3>
 <p >Introduced in C++20, coroutines are the solution to the impracticality of callbacks. In short, a coroutine is a function that can be paused and resumed later : they are an extremely powerful alternative to callbacks for asynchronous APIs in particular, as the function can be paused when waiting for an API response, and resumed when it is received.</p>
 <p >Let's revisit <a href="/attach-file.html">attaching a downloaded file</a>, but this time with a coroutine :</p>
@@ -153,7 +153,7 @@ What is a coroutine?</h3>
 <p >When an awaitable is <code>co_await</code>-ed, the coroutine suspends (pauses) and returns back to its caller : in other words, the program is free to go and do other things while the data is being retrieved, D++ will resume your coroutine when it has the data you need which will be returned from the <code>co_await</code> expression.</p>
 <p >Inside of a <code><a class="el" href="classdpp_1_1task.html" title="A coroutine task. It can be co_awaited to make nested coroutines.">dpp::task</a></code>, someone can use <code>co_return</code> in place of <code>return</code>.</p>
 <dl class="section attention"><dt>Attention</dt><dd>As a rule of thumb when making <a class="el" href="classdpp_1_1task.html" title="A coroutine task. It can be co_awaited to make nested coroutines.">dpp::task</a> objects and in general coroutines, always prefer taking parameters by value and avoid capture : this may be confusing but a coroutine is <em>not</em> the lambda creating it, the captures are not bound to it and the code isn't ran inside the lambda. The lambda that returns a <a class="el" href="classdpp_1_1task.html" title="A coroutine task. It can be co_awaited to make nested coroutines.">dpp::task</a> simply returns a task object containing the code, which goes on to live on its own, separate from the lambda. Similarly, with reference parameters, the object they reference to might be destroyed while the coroutine is suspended and resumed in another thread, which is why you want to pass by value. See also <a href="/lambdas-and-locals.html">lambdas and locals</a> except this also applies to parameters in the case of coroutines.</dd></dl>
-<h3><a class="anchor" id="autotoc_md62"></a>
+<h3><a class="anchor" id="autotoc_md63"></a>
 Several steps in one</h3>
 <dl class="section note"><dt>Note</dt><dd>The next example assumes you are already familiar with how to use <a href="/firstbot.html">slash commands</a>, <a href="/slashcommands.html">parameters</a>, and <a href="/discord-application-command-file-upload.html">sending files through a command</a>.</dd></dl>
 <p>Coroutines allow to write asynchronous functions almost as if they were executed synchronously, without the need for callbacks, which can save a lot of pain with keeping track of different data. Here is another example of what is made easier with coroutines : an "addemoji" command taking a file and a name as a parameter. This means downloading the emoji, submitting it to Discord, and finally replying, with some error handling along the way.</p>
@@ -233,7 +233,7 @@ Several steps in one</h3>
 <div class="ttc" id="astructdpp_1_1interaction__create__t_html_a8b0c69c156a1e532507a918c13414f14"><div class="ttname"><a href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">dpp::interaction_create_t::command</a></div><div class="ttdeci">interaction command</div><div class="ttdoc">command interaction</div><div class="ttdef"><b>Definition:</b> dispatcher.h:585</div></div>
 <div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:877</div></div>
 <div class="ttc" id="astructdpp_1_1slashcommand__t_html"><div class="ttname"><a href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a></div><div class="ttdoc">User has issued a slash command.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:607</div></div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md63"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md64"></a>
 I heard you liked tasks</h3>
 <dl class="section note"><dt>Note</dt><dd>This next example is fairly advanced and makes use of many of both C++ and D++'s advanced features.</dd></dl>
 <p>Lastly, <code><a class="el" href="classdpp_1_1task.html" title="A coroutine task. It can be co_awaited to make nested coroutines.">dpp::task</a></code> takes its return type as a template parameter, which allows you to use tasks inside tasks and return a result from them.</p>
