@@ -1,5 +1,6 @@
 var NAVTREEINDEX46 =
 {
+"namespacedpp_1_1unicode__emoji.html#afb4fbe9c4742204fb7f650ea7d5c4f52":[8,0,0,4,994],
 "namespacedpp_1_1unicode__emoji.html#afb580a6f37a42005294c107a580f617e":[8,0,0,4,299],
 "namespacedpp_1_1unicode__emoji.html#afb613cec9afb980f93d10bc37ef09f74":[8,0,0,4,277],
 "namespacedpp_1_1unicode__emoji.html#afb654f122b18725c6a48cbc9fe6d9370":[8,0,0,4,896],
@@ -161,8 +162,8 @@ var NAVTREEINDEX46 =
 "namespacemembers_d.html":[8,1,0,4],
 "namespacemembers_e.html":[8,1,0,5],
 "namespacemembers_enum.html":[8,1,4],
-"namespacemembers_eval.html":[8,1,5,0],
 "namespacemembers_eval.html":[8,1,5],
+"namespacemembers_eval.html":[8,1,5,0],
 "namespacemembers_eval_c.html":[8,1,5,1],
 "namespacemembers_eval_d.html":[8,1,5,2],
 "namespacemembers_eval_e.html":[8,1,5,3],
@@ -200,8 +201,8 @@ var NAVTREEINDEX46 =
 "namespacemembers_type.html":[8,1,3],
 "namespacemembers_u.html":[8,1,0,21],
 "namespacemembers_v.html":[8,1,0,22],
-"namespacemembers_vars.html":[8,1,2],
 "namespacemembers_vars.html":[8,1,2,0],
+"namespacemembers_vars.html":[8,1,2],
 "namespacemembers_vars_a.html":[8,1,2,1],
 "namespacemembers_vars_b.html":[8,1,2,2],
 "namespacemembers_vars_c.html":[8,1,2,3],
@@ -236,6 +237,8 @@ var NAVTREEINDEX46 =
 "oggopus.html":[4,2,1],
 "pages.html":[],
 "record-user.html":[4,2,3],
+"roadmap.html":[5,7],
+"security.html":[5,8],
 "slashcommands.html":[4,1,0],
 "soundboard.html":[4,2,0],
 "spdlog.html":[4,3,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX46 =
 "structdpp_1_1active__thread__info.html#a6b19f9963eb6f6174ef6b65a5920cdcf":[8,0,0,6,0],
 "structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[9,0,0,3,1],
 "structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[8,0,0,6,1],
-"structdpp_1_1activity__assets.html":[8,0,0,8],
-"structdpp_1_1activity__assets.html":[9,0,0,5],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[9,0,0,5,4],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[8,0,0,8,4]
+"structdpp_1_1activity__assets.html":[9,0,0,5]
 };

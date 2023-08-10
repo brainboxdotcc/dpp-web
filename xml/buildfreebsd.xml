@@ -6,33 +6,33 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect2 id="buildfreebsd_1autotoc_md65">
+<sect2 id="buildfreebsd_1autotoc_md69">
 <title>1. Toolchain</title>
 <para>This project uses CMake. Install it with <computeroutput>pkg install cmake</computeroutput></para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md66">
+<sect2 id="buildfreebsd_1autotoc_md70">
 <title>2. Install External Dependencies</title>
 <para>Your FreeBSD base system should have all the required dependencies installed by default.</para>
 <para>For voice support, additional dependencies are required <verbatim>pkg install libsodium opus pkgconf
 </verbatim> </para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md67">
+<sect2 id="buildfreebsd_1autotoc_md71">
 <title>3. Build Source Code</title>
 <para><verbatim>cmake -B ./build
 cmake --build ./build -j8
 </verbatim> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md68">
+<sect2 id="buildfreebsd_1autotoc_md72">
 <title>4. Install globally</title>
 <para><verbatim>cd build; make install
 </verbatim> </para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md69">
+<sect2 id="buildfreebsd_1autotoc_md73">
 <title>5. Installation to a different directory</title>
 <para>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>: <verbatim>cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </verbatim> Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md70">
+<sect2 id="buildfreebsd_1autotoc_md74">
 <title>7. Using the library</title>
 <para>Once installed, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
 </verbatim> The important flags in this command-line are:</para>
