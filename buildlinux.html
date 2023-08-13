@@ -102,19 +102,19 @@ $(document).ready(function(){initNavTree('buildlinux.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section note"><dt>Note</dt><dd>You might not need to build a copy of the library for Linux - precompiled deb files for 64 bit and 32 bit Debian and Ubuntu are provided in the GitHub version releases. Unless you are on a different Linux distribution which does not support the installation of deb files, or wish to submit fixes and enhancements to the library itself you should have an easier time installing the precompiled version instead.</dd></dl>
-<h2><a class="anchor" id="autotoc_md76"></a>
+<h2><a class="anchor" id="autotoc_md78"></a>
 1. Build Source Code</h2>
 <pre class="fragment">cmake -B ./build
 cmake --build ./build -j8
 </pre><p> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
-<h2><a class="anchor" id="autotoc_md77"></a>
+<h2><a class="anchor" id="autotoc_md79"></a>
 2. Install to /usr/local/include and /usr/local/lib</h2>
 <pre class="fragment">cd build; sudo make install
-</pre> <h2><a class="anchor" id="autotoc_md78"></a>
+</pre> <h2><a class="anchor" id="autotoc_md80"></a>
 3. Installation to a different directory</h2>
 <p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </pre><p> Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
-<h2><a class="anchor" id="autotoc_md79"></a>
+<h2><a class="anchor" id="autotoc_md81"></a>
 4. Using the library</h2>
 <p >Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp
 </pre><p> The important flags in this command-line are:</p>

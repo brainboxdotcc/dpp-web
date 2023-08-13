@@ -5,7 +5,7 @@ var interactions_and_components =
     [ "Using sub-commands in slash commands", "subcommands.html", null ],
     [ "Using button components", "components.html", null ],
     [ "Using select menu components", "components3.html", null ],
-    [ "Advanced components", "components2.html", null ],
+    [ "Advanced button components", "components2.html", null ],
     [ "Modal Dialog Interactions", "modal-dialog-interactions.html", null ],
     [ "Using a command handler object", "commandhandler.html", null ],
     [ "Slash command auto completion", "application-command-autocomplete.html", null ],
