@@ -115,18 +115,22 @@ $(document).ready(function(){initNavTree('joinvc.html',''); initResizable(); });
 <div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* The event is fired when someone issues your commands */</span></div>
-<div class="line">    bot.on_slashcommand([&amp;bot, &amp;fd](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
+<div class="line">    bot.on_slashcommand([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">/* Check which command they ran */</span></div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;join&quot;</span>) {</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">/* Get the guild */</span></div>
 <div class="line">            dpp::guild* g = dpp::find_guild(event.command.guild_id);</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">/* Get the voice channel that the bot is currently in from this server (will return nullptr if we&#39;re not in a voice channel!) */</span></div>
 <div class="line">            auto current_vc = event.from-&gt;get_voice(event.command.guild_id);</div>
 <div class="line"> </div>
 <div class="line">            bool join_vc = true;</div>
 <div class="line"> </div>
-<div class="line">            if (!current_vc) {</div>
+<div class="line">            <span class="comment">/* Are we in a voice channel? If so, let&#39;s see if we&#39;re in the right channel. */</span></div>
+<div class="line">            if (current_vc) {</div>
+<div class="line">                <span class="comment">/* Find the channel id that the user is currently in */</span></div>
 <div class="line">                auto users_vc = g-&gt;voice_members.find(event.command.get_issuing_user().id);</div>
 <div class="line">                </div>
 <div class="line">                if (users_vc != g-&gt;voice_members.end() &amp;&amp; current_vc-&gt;channel_id == users_vc-&gt;second.channel_id) {</div>
@@ -137,10 +141,10 @@ $(document).ready(function(){initNavTree('joinvc.html',''); initResizable(); });
 <div class="line"><span class="comment">                     * current_vc-&gt;send_audio_raw(...)</span></div>
 <div class="line"><span class="comment">                     */</span></div>
 <div class="line">                } else {</div>
-<div class="line">                    <span class="comment">/* We are on a different voice channel. Leave it, then join the new one </span></div>
+<div class="line">                    <span class="comment">/* We are on a different voice channel. We should leave it, then join the new one </span></div>
 <div class="line"><span class="comment">                     * by falling through to the join_vc branch below.</span></div>
 <div class="line"><span class="comment">                     */</span></div>
-<div class="line">                    event.from-&gt;disconnect_voice(event.channel.guild_id);</div>
+<div class="line">                    event.from-&gt;disconnect_voice(event.command.guild_id);</div>
 <div class="line"> </div>
 <div class="line">                    join_vc = true;</div>
 <div class="line">                }</div>
@@ -149,6 +153,8 @@ $(document).ready(function(){initNavTree('joinvc.html',''); initResizable(); });
 <div class="line">            <span class="comment">/* If we need to join a vc at all, join it here if join_vc == true */</span></div>
 <div class="line">            <span class="keywordflow">if</span>(join_vc) {</div>
 <div class="line">                <span class="comment">/* Attempt to connect to a voice channel, returns false if we fail to connect. */</span></div>
+<div class="line"> </div>
+<div class="line">                <span class="comment">/* The user issuing the command is not on any voice channel, we can&#39;t do anything */</span></div>
 <div class="line">                if (!g-&gt;connect_member_voice(event.command.get_issuing_user().id)) {</div>
 <div class="line">                    event.reply(<span class="stringliteral">&quot;You don&#39;t seem to be in a voice channel!&quot;</span>);</div>
 <div class="line">                    return;</div>

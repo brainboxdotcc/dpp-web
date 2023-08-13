@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('context-menu.html',''); initResizable(
 <div class="image">
 <img src="context_menu_user_command.png" alt=""/>
 </div>
-<dl class="section note"><dt>Note</dt><dd>This example sets the command as the type <a class="el" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659" title="Add command to user context menu.">dpp::ctxm_user</a> which can only be used by right clicking on a user. To make it appear on a message, you'll want to switch the type to <a class="el" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a" title="Add command to message context menu.">dpp::ctxm_message</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This example sets the command as the type <a class="el" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659" title="Add command to user context menu.">dpp::ctxm_user</a> which can only be used by right clicking on a user. To make it appear on a message, you'll want to switch the type to <a class="el" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbae5b2d37ae0e714e18602cbc2475ce88a" title="Add command to message context menu.">dpp::ctxm_message</a> and listen for the on_message_context_menu (<a class="el" href="structdpp_1_1message__context__menu__t.html" title="Event parameter for context menu interactions for messages.">dpp::message_context_menu_t</a>) event.</dd></dl>
 <p>The following example shows how to create and handle <b>user context menus</b> for message context menus, read the notice above.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -120,12 +120,13 @@ $(document).ready(function(){initNavTree('context-menu.html',''); initResizable(
 <div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">/* Create the command */</span></div>
-<div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> command(<span class="stringliteral">&quot;High Five&quot;</span>, <span class="stringliteral">&quot;Send a High Five!&quot;</span>, bot.me.id);</div>
-<div class="line">                </div>
-<div class="line">            command.set_type(<a class="code hl_enumvalue" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659">dpp::ctxm_user</a>);</div>
+<div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> command;</div>
+<div class="line">            command.<a class="code hl_function" href="classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353">set_name</a>(<span class="stringliteral">&quot;High Five&quot;</span>);</div>
+<div class="line">            command.<a class="code hl_function" href="classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92">set_application_id</a>(bot.me.id); </div>
+<div class="line">            command.<a class="code hl_function" href="classdpp_1_1slashcommand.html#aa1095faeeacc9c711c9a1e93ff883bfe">set_type</a>(<a class="code hl_enumvalue" href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659">dpp::ctxm_user</a>);</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">/* Register the command */</span></div>
-<div class="line">            bot.guild_command_create(command, guild_id);</div>
+<div class="line">            bot.guild_command_create(command, 857692897221033129); <span class="comment">/* Replace this with the guild id you want */</span></div>
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
@@ -133,9 +134,9 @@ $(document).ready(function(){initNavTree('context-menu.html',''); initResizable(
 <div class="line">    bot.on_user_context_menu([&amp;](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1user__context__menu__t.html">dpp::user_context_menu_t</a>&amp; event) {</div>
 <div class="line">         <span class="comment">/* check if the context menu name is High Five */</span></div>
 <div class="line">         <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;high five&quot;</span>) {</div>
-<div class="line">             <a class="code hl_class" href="classdpp_1_1user.html">dpp::user</a> user = <span class="keyword">event</span>.get_user(); <span class="comment">// the user who the command has been issued on</span></div>
-<div class="line">             <a class="code hl_class" href="classdpp_1_1user.html">dpp::user</a> author = <span class="keyword">event</span>.command.get_issuing_user(); <span class="comment">// the user who clicked on the context menu</span></div>
-<div class="line">             <span class="keyword">event</span>.reply(author.<a class="code hl_function" href="classdpp_1_1user.html#a8c8092cca81a161d7ae9aa3a5f3dde3f">get_mention</a>() + <span class="stringliteral">&quot; slapped &quot;</span> + user.<a class="code hl_function" href="classdpp_1_1user.html#a8c8092cca81a161d7ae9aa3a5f3dde3f">get_mention</a>());</div>
+<div class="line">             dpp::user user = event.get_user(); <span class="comment">// the user who the command has been issued on</span></div>
+<div class="line">             dpp::user author = event.command.get_issuing_user(); <span class="comment">// the user who clicked on the context menu</span></div>
+<div class="line">             event.reply(author.get_mention() + <span class="stringliteral">&quot; slapped &quot;</span> + user.get_mention());</div>
 <div class="line">         }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
@@ -147,8 +148,9 @@ $(document).ready(function(){initNavTree('context-menu.html',''); initResizable(
 <div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:84</div></div>
 <div class="ttc" id="aclassdpp_1_1interaction_html_aabbb8d58d708128098516ed443d5c140"><div class="ttname"><a href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">dpp::interaction::get_command_name</a></div><div class="ttdeci">std::string get_command_name() const</div><div class="ttdoc">Get the command name for a command interaction.</div></div>
 <div class="ttc" id="aclassdpp_1_1slashcommand_html"><div class="ttname"><a href="classdpp_1_1slashcommand.html">dpp::slashcommand</a></div><div class="ttdoc">Represents an application command, created by your bot either globally, or on a guild.</div><div class="ttdef"><b>Definition:</b> appcommand.h:992</div></div>
-<div class="ttc" id="aclassdpp_1_1user_html"><div class="ttname"><a href="classdpp_1_1user.html">dpp::user</a></div><div class="ttdoc">Represents a user on discord. May or may not be a member of a dpp::guild.</div><div class="ttdef"><b>Definition:</b> user.h:88</div></div>
-<div class="ttc" id="aclassdpp_1_1user_html_a8c8092cca81a161d7ae9aa3a5f3dde3f"><div class="ttname"><a href="classdpp_1_1user.html#a8c8092cca81a161d7ae9aa3a5f3dde3f">dpp::user::get_mention</a></div><div class="ttdeci">static std::string get_mention(const snowflake &amp;id)</div><div class="ttdoc">Create a mentionable user.</div></div>
+<div class="ttc" id="aclassdpp_1_1slashcommand_html_a0b5e048d0df9f02f09ab1117328e0c92"><div class="ttname"><a href="classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92">dpp::slashcommand::set_application_id</a></div><div class="ttdeci">slashcommand &amp; set_application_id(snowflake i)</div><div class="ttdoc">Set the application id of the command.</div></div>
+<div class="ttc" id="aclassdpp_1_1slashcommand_html_aa1095faeeacc9c711c9a1e93ff883bfe"><div class="ttname"><a href="classdpp_1_1slashcommand.html#aa1095faeeacc9c711c9a1e93ff883bfe">dpp::slashcommand::set_type</a></div><div class="ttdeci">slashcommand &amp; set_type(slashcommand_contextmenu_type _type)</div><div class="ttdoc">Set the type of the slash command (only for context menu entries)</div></div>
+<div class="ttc" id="aclassdpp_1_1slashcommand_html_aba074557679db547ec1a7ae955cd8353"><div class="ttname"><a href="classdpp_1_1slashcommand.html#aba074557679db547ec1a7ae955cd8353">dpp::slashcommand::set_name</a></div><div class="ttdeci">slashcommand &amp; set_name(const std::string &amp;n)</div><div class="ttdoc">Set the name of the command.</div></div>
 <div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; DPP_EXPORT cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div></div>
 <div class="ttc" id="anamespacedpp_html_a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659"><div class="ttname"><a href="namespacedpp.html#a3af415bd74cead2c665a6a507ce843fbaea38e9fafe712b690fe8db15c0eac659">dpp::ctxm_user</a></div><div class="ttdeci">@ ctxm_user</div><div class="ttdoc">Add command to user context menu.</div><div class="ttdef"><b>Definition:</b> appcommand.h:575</div></div>
 <div class="ttc" id="anamespacedpp_html_af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"><div class="ttname"><a href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a></div><div class="ttdeci">@ st_wait</div><div class="ttdoc">Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will ...</div><div class="ttdef"><b>Definition:</b> cluster.h:67</div></div>
