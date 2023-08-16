@@ -25,7 +25,7 @@ var searchData=
   ['_7ediscord_5fvoice_5fclient_22',['~discord_voice_client',['../classdpp_1_1discord__voice__client.html#a9248839dac635139fecaeceb903d8276',1,'dpp::discord_voice_client']]],
   ['_7edtemplate_23',['~dtemplate',['../classdpp_1_1dtemplate.html#a2d9d0617218d8be51ca2a6e67ee940fd',1,'dpp::dtemplate']]],
   ['_7eembed_24',['~embed',['../structdpp_1_1embed.html#a9d43c2e1648e03cf5aa28825f600391f',1,'dpp::embed']]],
-  ['_7eemoji_25',['~emoji',['../classdpp_1_1emoji.html#a59e50dcd809eff6f4becb5ad3abfb31c',1,'dpp::emoji']]],
+  ['_7eemoji_25',['~emoji',['../classdpp_1_1emoji.html#a3915efb5902bf48e25ece566ae089292',1,'dpp::emoji']]],
   ['_7eetf_5fbuffer_26',['~etf_buffer',['../structdpp_1_1etf__buffer.html#a70486adb573cacfd4158cac6271a71bb',1,'dpp::etf_buffer']]],
   ['_7eetf_5fparser_27',['~etf_parser',['../classdpp_1_1etf__parser.html#abf03b044d5a883cac5816a4c93df3688',1,'dpp::etf_parser']]],
   ['_7eexception_28',['~exception',['../classdpp_1_1exception.html#afe7dc4002e1d4c812192f5afb4bed1d7',1,'dpp::exception']]],

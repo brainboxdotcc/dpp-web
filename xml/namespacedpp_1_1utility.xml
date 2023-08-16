@@ -1488,17 +1488,17 @@
         </inbodydescription>
         <location file="include/dpp/utility.h" line="494" column="24" declfile="include/dpp/utility.h" declline="494" declcolumn="24"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a2e47c004a5f0d6ee78819935d681a947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1_1utility_1ab8933e9c5ee35036923cc73fbd54a4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::emoji_mention</definition>
-        <argsstring>(const std::string &amp;name, const snowflake &amp;id, bool is_animated=false)</argsstring>
+        <argsstring>(std::string_view name, snowflake id, bool is_animated=false)</argsstring>
         <name>emoji_mention</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>name</declname>
         </param>
         <param>
-          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &amp;</type>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>id</declname>
         </param>
         <param>
@@ -1573,6 +1573,126 @@
         </inbodydescription>
         <location file="include/dpp/utility.h" line="510" column="24" declfile="include/dpp/utility.h" declline="510" declcolumn="24"/>
       </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a3c2eaf5d14e3c80965b990119dd6c624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::mime_type</definition>
+        <argsstring>(image_type type)</argsstring>
+        <name>mime_type</name>
+        <param>
+          <type><ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Get the mime type for an image type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string The mime type for this image type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="518" column="24" declfile="include/dpp/utility.h" declline="518" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1abb150a54408656bf3660c950c08ec9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::mime_type</definition>
+        <argsstring>(sticker_format format)</argsstring>
+        <name>mime_type</name>
+        <param>
+          <type><ref refid="namespacedpp_1ae2ee458707682eabe7d539c9a13beac2" kindref="member">sticker_format</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Get the mime type for a sticker format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sticker format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string The mime type for this sticker format </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="525" column="24" declfile="include/dpp/utility.h" declline="525" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1ada68aa2fde414885eec777031c5cf768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::file_extension</definition>
+        <argsstring>(image_type type)</argsstring>
+        <name>file_extension</name>
+        <param>
+          <type><ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Get the file extension for an image type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string The file extension (e.g. &quot;.png&quot;) for this image type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="532" column="24" declfile="include/dpp/utility.h" declline="532" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1ae3096353914033c06d4c9e1ae9f2f518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::file_extension</definition>
+        <argsstring>(sticker_format format)</argsstring>
+        <name>file_extension</name>
+        <param>
+          <type><ref refid="namespacedpp_1ae2ee458707682eabe7d539c9a13beac2" kindref="member">sticker_format</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Get the file extension for a sticker format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sticker format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string The file extension (e.g. &quot;.png&quot;) for this sticker format </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="539" column="24" declfile="include/dpp/utility.h" declline="539" declcolumn="24"/>
+      </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a7d10e878ab1347eaed727b2e528206ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
         <definition>std::string DPP_EXPORT dpp::utility::version</definition>
@@ -1588,7 +1708,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="517" column="24" declfile="include/dpp/utility.h" declline="517" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="579" column="24" declfile="include/dpp/utility.h" declline="579" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1aeada90d27918093d9fe6a53d1a245f50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1618,7 +1738,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="526" column="24" declfile="include/dpp/utility.h" declline="526" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="588" column="24" declfile="include/dpp/utility.h" declline="588" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ae97ccaf14820df924f86b32c6932d486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1648,7 +1768,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="535" column="24" declfile="include/dpp/utility.h" declline="535" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="597" column="24" declfile="include/dpp/utility.h" declline="597" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab8b9842a7d3645607bf57d6803ee9509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void DPP_EXPORT</type>
@@ -1676,7 +1796,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="542" column="17" declfile="include/dpp/utility.h" declline="542" declcolumn="17"/>
+        <location file="include/dpp/utility.h" line="604" column="17" declfile="include/dpp/utility.h" declline="604" declcolumn="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

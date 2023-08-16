@@ -1,5 +1,13 @@
 var NAVTREEINDEX18 =
 {
+"classes.html":[10,1],
+"clusters-shards-guilds.html":[5,0],
+"coding-standards.html":[5,2],
+"collecting-reactions.html":[4,3,3],
+"commandhandler.html":[4,1,7],
+"components.html":[4,1,3],
+"components2.html":[4,1,5],
+"components3.html":[4,1,4],
 "context-menu.html":[4,1,1],
 "coroutines.html":[5,5],
 "cpp-eval-command-discord.html":[4,3,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX18 =
 "namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3":[9,0,0,346],
 "namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3ae35e0964ac06220055227ed1176a1bd8":[9,0,0,346,0],
 "namespacedpp.html#a284d405e6b10bc80ec459ff2505edbb3af6a87598b5d0eeb4d0fda285b6b8af30":[9,0,0,346,1],
-"namespacedpp.html#a29954c9dfc5a906346177226d036a418":[9,0,0,341],
-"namespacedpp.html#a29954c9dfc5a906346177226d036a418aaff1c1f715ad735085ee6012c321012d":[9,0,0,341,1],
-"namespacedpp.html#a29954c9dfc5a906346177226d036a418ac442bedd28b30019b266b47b051250ed":[9,0,0,341,0],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3d":[9,0,0,288],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0669793c484cf708f689aa9fcc94f7b3":[9,0,0,288,29],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da072a4f02429a92e83acbd6502fe383e7":[9,0,0,288,52],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da094813c7b248e43b3cdac6efe5d2da19":[9,0,0,288,37],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0a052b5ae2a48cf79545b5eb4634ec1e":[9,0,0,288,22],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0c82a5ff83035e5fb41f03c3bc9d31e1":[9,0,0,288,20]
+"namespacedpp.html#a29954c9dfc5a906346177226d036a418":[9,0,0,341]
 };
