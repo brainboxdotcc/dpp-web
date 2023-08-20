@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"structdpp_1_1welcome__channel.html#a1bf6060401b61b022e0141bac0930e90":[10,0,0,219,7],
 "structdpp_1_1welcome__channel.html#a1bf6060401b61b022e0141bac0930e90":[9,0,0,222,7],
 "structdpp_1_1welcome__channel.html#a1debc4c9a4d60fdad52e9cac2f3cdd43":[9,0,0,222,4],
 "structdpp_1_1welcome__channel.html#a1debc4c9a4d60fdad52e9cac2f3cdd43":[10,0,0,219,4],
@@ -35,9 +36,9 @@ var NAVTREEINDEX60 =
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[9,0,1,0],
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html#a862f06ae744297479158a438b219cb05":[10,0,1,0,0],
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html#a862f06ae744297479158a438b219cb05":[9,0,1,0,0],
-"subcommands.html":[4,1,2],
-"the-basics.html":[4,0],
-"thread-model.html":[5,1],
+"subcommands.html":[5,1,2],
+"the-basics.html":[5,0],
+"thread-model.html":[6,1],
 "todo.html":[8],
 "uniondpp_1_1type__punner.html":[10,0,0,195],
 "uniondpp_1_1type__punner.html":[9,0,0,198],
@@ -45,7 +46,7 @@ var NAVTREEINDEX60 =
 "uniondpp_1_1type__punner.html#a3e84c246810f34612b65b60ab78edd61":[9,0,0,198,0],
 "uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[9,0,0,198,1],
 "uniondpp_1_1type__punner.html#a4b3bceccd17314133e9e3c2568dd7235":[10,0,0,195,1],
-"unit-tests.html":[5,3],
-"webhooks.html":[4,0,3],
+"unit-tests.html":[6,3],
+"webhooks.html":[5,0,3],
 "":[9,0,1]
 };

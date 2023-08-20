@@ -209,7 +209,7 @@ var searchData=
   ['gom_5fadvanced_206',['gom_advanced',['../namespacedpp.html#a33441226d2ef32001d99891aa9ed5a20a6164ab9836dd470082ae99a4ba4adb83',1,'dpp']]],
   ['gom_5fdefault_207',['gom_default',['../namespacedpp.html#a33441226d2ef32001d99891aa9ed5a20a54d375e5d80311d2811110872d30cf2b',1,'dpp']]],
   ['gorilla_208',['gorilla',['../namespacedpp_1_1unicode__emoji.html#aab6ba118c399468724f5007f77c63d27',1,'dpp::unicode_emoji']]],
-  ['governance_20and_20project_20development_20structure_209',['Governance and Project Development Structure',['../governance.html',1,'md_docpages_04_advanced_reference']]],
+  ['governance_20and_20project_20development_20structure_209',['Governance and Project Development Structure',['../governance.html',1,'md_docpages_06_advanced_reference']]],
   ['grandma_210',['grandma',['../namespacedpp_1_1unicode__emoji.html#a33209fa846cd06d0d15205edcd8fdfca',1,'dpp::unicode_emoji']]],
   ['grandma_5ftone1_211',['grandma_tone1',['../namespacedpp_1_1unicode__emoji.html#af30a81e06fe7419d62dce5dfd0a2e7fe',1,'dpp::unicode_emoji']]],
   ['grandma_5ftone2_212',['grandma_tone2',['../namespacedpp_1_1unicode__emoji.html#ac950eddfa81f4ffcc00f5d0fac6553e5',1,'dpp::unicode_emoji']]],

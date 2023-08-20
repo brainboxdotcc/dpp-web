@@ -90,7 +90,7 @@ digraph &quot;Clusters, Shards and Guilds&quot; {
 }
 </dot>
 </para>
-<sect2 id="clusters-shards-guilds_1autotoc_md40">
+<sect2 id="clusters-shards-guilds_1autotoc_md42">
 <title>Clusters</title>
 <para>A bot may be made of one or more clusters. Each cluster maintains a queue of commands waiting to be sent to Discord, a queue of replies from Discord for all commands executed, and zero or more <bold>shards</bold>. Usually, each process has one cluster, but the D++ library does not enforce this as a restriction. Small bots will require just one cluster. Clusters will split the required number of shards equally across themselves. There is no communication between clusters unless you add some yourself, they all remain independent without any central &quot;controller&quot; process. This ensures that there is no single point of failure in the design. Whenever you instantiate the library, you generally instantiate a cluster:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -102,7 +102,7 @@ digraph &quot;Clusters, Shards and Guilds&quot; {
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="clusters-shards-guilds_1autotoc_md41">
+<sect2 id="clusters-shards-guilds_1autotoc_md43">
 <title>Shards</title>
 <para>A cluster contains zero or more shards. Each shard maintains a persistent websocket connection to Discord via a websocket, which receives all events the bot is made aware of, e.g. messages, channel edits, etc. Requests to the API on the other hand go out to Discord as separate HTTP requests.</para>
 <para>Small bots will require only one shard and this is the default when you instantiate a cluster. The library will automatically determine and create the correct number of shards needed, if you do not configure it by hand. If you do want to specify a number of shards, you can specify this when creating a cluster:</para>
@@ -165,12 +165,12 @@ digraph &quot;Clusters, Shards and Guilds&quot; {
 </programlisting></para>
 </simplesect>
 </para>
-<sect3 id="clusters-shards-guilds_1autotoc_md42">
+<sect3 id="clusters-shards-guilds_1autotoc_md44">
 <title>Large Bot Sharding</title>
 <para>Discord restricts how many shards you can connect to at any one time to one per five seconds, unless your bot is in at least 150,000 guilds. Once you reach 150,000 guilds, Discord allow your bot to connect to more guilds concurrently, and your number of shards must divide cleanly into this value. By default, at 150,000 guilds this concurrency value is 16 meaning D++ will attempt to connect 16 shards in parallel, then wait for all these to connect and then connect another 16, until all shards are connected. In practice, this means a large bot with many shards (read: hundreds!) will connect significantly faster after a full restart. <bold>You do not need to manually configure large bot sharding and connection concurrency, the D++ library will handle this for you if you are able to use it</bold>.</para>
 </sect3>
 </sect2>
-<sect2 id="clusters-shards-guilds_1autotoc_md43">
+<sect2 id="clusters-shards-guilds_1autotoc_md45">
 <title>Guilds</title>
 <para>Guilds are what servers are known as to the Discord API. There can be up to <bold>2500</bold> of these per shard. Once you reach 2500 guilds on your bot, Discord force your bot to shard, the D++ library will automatically create additional shards to accomodate if not explicitly configured with a larger number. Discord <emphasis>does not restrict sharding</emphasis> to bots on 2500 guilds or above. You can shard at any size of bot, although it would be a waste of resources to do so unless it is required. </para>
 </sect2>

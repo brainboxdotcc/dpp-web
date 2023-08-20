@@ -220,7 +220,7 @@ var searchData=
   ['owner_217',['owner',['../classdpp_1_1application.html#a5af52bd0ba8718a8bea8cd0c8898f1b6',1,'dpp::application::owner()'],['../classdpp_1_1collector.html#af7f9cfbcf647292a6eff59c63508171b',1,'dpp::collector::owner()'],['../classdpp_1_1commandhandler.html#a81203fb77ae98d8cfe81d95bf714fcf0',1,'dpp::commandhandler::owner()'],['../structdpp_1_1attachment.html#ac20e7cdbbb8f1d79ffc04212efea4eb1',1,'dpp::attachment::owner()'],['../structdpp_1_1message.html#a832bbd66e9a0caeaa003c119c9c91d29',1,'dpp::message::owner()']]],
   ['owner_5fid_218',['owner_id',['../classdpp_1_1guild.html#a4f608587f82bc3deab0974aeb30b2f24',1,'dpp::guild::owner_id()'],['../classdpp_1_1channel.html#adb22659e9dc7fb8dd36d1c9f67eb7181',1,'dpp::channel::owner_id()']]],
   ['owner_5fuser_5fid_219',['owner_user_id',['../classdpp_1_1app__team.html#aa8e196c3e03a80cab577c39ee446a98e',1,'dpp::app_team']]],
-  ['ownership_20of_20local_20variables_20and_20safely_20transferring_20into_20a_20lambda_220',['Ownership of local variables and safely transferring into a lambda',['../lambdas-and-locals.html',1,'md_docpages_04_advanced_reference']]],
+  ['ownership_20of_20local_20variables_20and_20safely_20transferring_20into_20a_20lambda_220',['Ownership of local variables and safely transferring into a lambda',['../lambdas-and-locals.html',1,'md_docpages_06_advanced_reference']]],
   ['ox_221',['ox',['../namespacedpp_1_1unicode__emoji.html#ab6f3838b3e5c3b1be700bdd7c984c46b',1,'dpp::unicode_emoji']]],
   ['oyster_222',['oyster',['../namespacedpp_1_1unicode__emoji.html#aea7b3d33f01a4b826c12a04570112ee7',1,'dpp::unicode_emoji']]]
 ];
