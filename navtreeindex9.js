@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"classdpp_1_1discord__voice__client.html#a769b1674cf88dc4f53d7609fc24b7961":[10,0,0,62,6],
 "classdpp_1_1discord__voice__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d":[10,0,0,62,42],
 "classdpp_1_1discord__voice__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d":[9,0,0,65,42],
 "classdpp_1_1discord__voice__client.html#a8022a8002cfc6f394016546168ef4085":[10,0,0,62,43],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "classdpp_1_1events_1_1guild__join__request__delete.html#a7adf444dbc3fa0a08732cbf989869075":[9,0,0,3,16,0],
 "classdpp_1_1events_1_1guild__member__add.html":[9,0,0,3,17],
 "classdpp_1_1events_1_1guild__member__add.html":[10,0,0,1,17],
-"classdpp_1_1events_1_1guild__member__add.html#a837c0e6531133057fc009be95f805160":[10,0,0,1,17,0],
-"classdpp_1_1events_1_1guild__member__add.html#a837c0e6531133057fc009be95f805160":[9,0,0,3,17,0]
+"classdpp_1_1events_1_1guild__member__add.html#a837c0e6531133057fc009be95f805160":[10,0,0,1,17,0]
 };

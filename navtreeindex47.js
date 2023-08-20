@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"namespacemembers_z.html":[9,1,0,26],
 "namespaces.html":[9,0],
 "oggopus.html":[4,2,1],
 "pages.html":[],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "structdpp_1_1automod__action.html#a1e305859aa57284d91dffbd2f2a64cd2":[9,0,0,25,5],
 "structdpp_1_1automod__action.html#a2ba5d6d68adc00b34c7d85d5880aca4d":[10,0,0,22,4],
 "structdpp_1_1automod__action.html#a2ba5d6d68adc00b34c7d85d5880aca4d":[9,0,0,25,4],
-"structdpp_1_1automod__action.html#a5bb873fd4283bdd83be46440b3105fea":[10,0,0,22,6],
-"structdpp_1_1automod__action.html#a5bb873fd4283bdd83be46440b3105fea":[9,0,0,25,6]
+"structdpp_1_1automod__action.html#a5bb873fd4283bdd83be46440b3105fea":[10,0,0,22,6]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"classdpp_1_1invalid__token__exception.html#ac033c933ff59daf22d4ea121303e11b9":[9,0,0,128,1],
 "classdpp_1_1invite.html":[10,0,0,126],
 "classdpp_1_1invite.html":[9,0,0,129],
 "classdpp_1_1invite.html#a158f07d5fc6eaaeebabb7d7bb22b0998":[9,0,0,129,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "classdpp_1_1role.html#a032ce15247e135d733e6879bed928e7e":[10,0,0,165,29],
 "classdpp_1_1role.html#a04025962b533f09ea8a55d3c2815a442":[9,0,0,168,24],
 "classdpp_1_1role.html#a04025962b533f09ea8a55d3c2815a442":[10,0,0,165,24],
-"classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958":[9,0,0,168,86],
-"classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958":[10,0,0,165,86]
+"classdpp_1_1role.html#a08996823fc9ba1eb8c95b1e2e855d958":[9,0,0,168,86]
 };

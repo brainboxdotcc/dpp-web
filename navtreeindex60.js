@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"structdpp_1_1welcome__channel.html#a1bf6060401b61b022e0141bac0930e90":[9,0,0,222,7],
 "structdpp_1_1welcome__channel.html#a1debc4c9a4d60fdad52e9cac2f3cdd43":[9,0,0,222,4],
 "structdpp_1_1welcome__channel.html#a1debc4c9a4d60fdad52e9cac2f3cdd43":[10,0,0,219,4],
 "structdpp_1_1welcome__channel.html#a2483b713066063625a9906d14b4be646":[9,0,0,222,6],

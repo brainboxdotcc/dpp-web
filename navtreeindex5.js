@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classdpp_1_1cluster.html#a973b99098d6807b866a0fa7260c3c220":[9,0,0,45,146],
 "classdpp_1_1cluster.html#a9810b52f5a6cdb45b3e8ba20066e4f08":[10,0,0,42,382],
 "classdpp_1_1cluster.html#a9810b52f5a6cdb45b3e8ba20066e4f08":[9,0,0,45,382],
 "classdpp_1_1cluster.html#a9811e93acdba4ad5556fa9d4210b0bf4":[9,0,0,45,147],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classdpp_1_1cluster.html#ac167b4f31c27473a23bcef70a0a6c1f7":[10,0,0,42,232],
 "classdpp_1_1cluster.html#ac20fa35c137c48987aceb48f023e3e2e":[10,0,0,42,342],
 "classdpp_1_1cluster.html#ac20fa35c137c48987aceb48f023e3e2e":[9,0,0,45,342],
-"classdpp_1_1cluster.html#ac29438fddcd32e870ff8642140ee60e0":[10,0,0,42,85],
-"classdpp_1_1cluster.html#ac29438fddcd32e870ff8642140ee60e0":[9,0,0,45,85]
+"classdpp_1_1cluster.html#ac29438fddcd32e870ff8642140ee60e0":[10,0,0,42,85]
 };

@@ -8,5 +8,6 @@ var md_docpages_04_advanced_reference =
     [ "Advanced commands with coroutines", "coroutines.html", null ],
     [ "Governance and Project Development Structure", "governance.html", null ],
     [ "Development Roadmap", "roadmap.html", null ],
-    [ "Project Security Design", "security.html", null ]
+    [ "Project Security Design", "security.html", null ],
+    [ "Automating your bot with Jenkins", "automating-with-jenkins.html", null ]
 ];
