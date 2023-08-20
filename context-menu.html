@@ -116,6 +116,17 @@ $(document).ready(function(){initNavTree('context-menu.html',''); initResizable(
 <div class="line"> </div>
 <div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
 <div class="line"> </div>
+<div class="line">    <span class="comment">/* Use the on_user_context_menu event to look for user context menu actions */</span></div>
+<div class="line">    bot.on_user_context_menu([&amp;](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1user__context__menu__t.html">dpp::user_context_menu_t</a>&amp; event) {</div>
+<div class="line"> </div>
+<div class="line">         <span class="comment">/* check if the context menu name is High Five */</span></div>
+<div class="line">         <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;high five&quot;</span>) {</div>
+<div class="line">             dpp::user user = event.get_user(); <span class="comment">// the user who the command has been issued on</span></div>
+<div class="line">             dpp::user author = event.command.get_issuing_user(); <span class="comment">// the user who clicked on the context menu</span></div>
+<div class="line">             event.reply(author.get_mention() + <span class="stringliteral">&quot; slapped &quot;</span> + user.get_mention());</div>
+<div class="line">         }</div>
+<div class="line">    });</div>
+<div class="line"> </div>
 <div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a> &amp;event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
 <div class="line"> </div>
@@ -128,16 +139,6 @@ $(document).ready(function(){initNavTree('context-menu.html',''); initResizable(
 <div class="line">            <span class="comment">/* Register the command */</span></div>
 <div class="line">            bot.guild_command_create(command, 857692897221033129); <span class="comment">/* Replace this with the guild id you want */</span></div>
 <div class="line">        }</div>
-<div class="line">    });</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">/* Use the on_user_context_menu event to look for user context menu actions */</span></div>
-<div class="line">    bot.on_user_context_menu([&amp;](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1user__context__menu__t.html">dpp::user_context_menu_t</a>&amp; event) {</div>
-<div class="line">         <span class="comment">/* check if the context menu name is High Five */</span></div>
-<div class="line">         <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;high five&quot;</span>) {</div>
-<div class="line">             dpp::user user = event.get_user(); <span class="comment">// the user who the command has been issued on</span></div>
-<div class="line">             dpp::user author = event.command.get_issuing_user(); <span class="comment">// the user who clicked on the context menu</span></div>
-<div class="line">             event.reply(author.get_mention() + <span class="stringliteral">&quot; slapped &quot;</span> + user.get_mention());</div>
-<div class="line">         }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Start bot */</span></div>
