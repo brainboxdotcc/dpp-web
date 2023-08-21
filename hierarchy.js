@@ -9,15 +9,17 @@ var hierarchy =
     [ "dpp::message::allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", null ],
     [ "dpp::app_team", "classdpp_1_1app__team.html", null ],
     [ "dpp::application_install_params", "structdpp_1_1application__install__params.html", null ],
+    [ "dpp::detail::async_base< R >", "classdpp_1_1detail_1_1async__base.html", [
+      [ "dpp::async< R >", "classdpp_1_1async.html", null ]
+    ] ],
+    [ "dpp::detail::async_callback_data< R >", "structdpp_1_1detail_1_1async__callback__data.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audio_mixer", "classdpp_1_1audio__mixer.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
-    [ "dpp::awaitable< ReturnType >", "classdpp_1_1awaitable.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
-    [ "dpp::awaitable< ReturnType >::shared_callback::callback_state", "structdpp_1_1awaitable_1_1shared__callback_1_1callback__state.html", null ],
     [ "dpp::cluster", "classdpp_1_1cluster.html", null ],
     [ "dpp::collector< T, C >", "classdpp_1_1collector.html", [
       [ "dpp::channel_collector", "classdpp_1_1channel__collector.html", null ],
@@ -39,6 +41,14 @@ var hierarchy =
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
     [ "dpp::connection", "classdpp_1_1connection.html", null ],
+    [ "dpp::detail::coroutine_base< R >", "classdpp_1_1detail_1_1coroutine__base.html", [
+      [ "dpp::coroutine< R >", "classdpp_1_1coroutine.html", null ]
+    ] ],
+    [ "dpp::detail::coroutine_final_awaiter< R >", "structdpp_1_1detail_1_1coroutine__final__awaiter.html", null ],
+    [ "dpp::detail::coroutine_promise< R >", "structdpp_1_1detail_1_1coroutine__promise.html", null ],
+    [ "dpp::detail::coroutine_promise< void >", "structdpp_1_1detail_1_1coroutine__promise_3_01void_01_4.html", null ],
+    [ "dpp::detail::std_coroutine::coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", null ],
+    [ "dpp::detail::std_coroutine::coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::dns_cache_entry", "structdpp_1_1dns__cache__entry.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
@@ -47,6 +57,7 @@ var hierarchy =
     [ "dpp::embed_footer", "structdpp_1_1embed__footer.html", null ],
     [ "dpp::embed_image", "structdpp_1_1embed__image.html", null ],
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
+    [ "dpp::detail::empty_tag_t", "structdpp_1_1detail_1_1empty__tag__t.html", null ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
     [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
     [ "dpp::etf_buffer", "structdpp_1_1etf__buffer.html", null ],
@@ -210,6 +221,7 @@ var hierarchy =
         [ "dpp::rest_exception", "classdpp_1_1rest__exception.html", [
           [ "dpp::invalid_token_exception", "classdpp_1_1invalid__token__exception.html", null ]
         ] ],
+        [ "dpp::task_cancelled_exception", "classdpp_1_1task__cancelled__exception.html", null ],
         [ "dpp::voice_exception", "classdpp_1_1voice__exception.html", null ]
       ] ]
     ] ],
@@ -225,6 +237,8 @@ var hierarchy =
     [ "dpp::component::inner_emoji", "structdpp_1_1component_1_1inner__emoji.html", null ],
     [ "dpp::select_option::inner_select_emoji", "structdpp_1_1select__option_1_1inner__select__emoji.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
+    [ "dpp::job", "structdpp_1_1job.html", null ],
+    [ "dpp::detail::job_promise< Args >", "structdpp_1_1detail_1_1job__promise.html", null ],
     [ "dpp::json_interface< T >", "structdpp_1_1json__interface.html", null ],
     [ "dpp::json_interface< application >", "structdpp_1_1json__interface.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ]
@@ -391,6 +405,7 @@ var hierarchy =
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission", "classdpp_1_1permission.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
+    [ "dpp::detail::task_promise_base::proxy_awaiter< A >", "structdpp_1_1detail_1_1task__promise__base_1_1proxy__awaiter.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
@@ -403,10 +418,12 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
-    [ "dpp::task< ReturnType >", "classdpp_1_1task.html", null ],
-    [ "dpp::detail::task_chain_final_awaiter< ReturnType >", "structdpp_1_1detail_1_1task__chain__final__awaiter.html", null ],
+    [ "dpp::detail::task_base< R >", "classdpp_1_1detail_1_1task__base.html", [
+      [ "dpp::task< R >", "classdpp_1_1task.html", null ]
+    ] ],
+    [ "dpp::detail::task_chain_final_awaiter< R >", "structdpp_1_1detail_1_1task__chain__final__awaiter.html", null ],
     [ "dpp::detail::task_promise_base", "structdpp_1_1detail_1_1task__promise__base.html", [
-      [ "dpp::detail::task_promise< ReturnType >", "structdpp_1_1detail_1_1task__promise.html", null ],
+      [ "dpp::detail::task_promise< R >", "structdpp_1_1detail_1_1task__promise.html", null ],
       [ "dpp::detail::task_promise< void >", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html", null ]
     ] ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],

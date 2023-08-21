@@ -2,17 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="structdpp_1_1detail_1_1task__chain__final__awaiter" kind="struct" language="C++" prot="public">
     <compoundname>dpp::detail::task_chain_final_awaiter</compoundname>
-    <includes local="no">coro.h</includes>
+    <includes local="no">task.h</includes>
     <templateparamlist>
       <param>
-        <type>typename ReturnType</type>
+        <type>typename R</type>
       </param>
     </templateparamlist>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structdpp_1_1detail_1_1task__chain__final__awaiter_1a5869244dfa577d83897be57693875279" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task__chain__final__awaiter_1a83ae32d8b73800d6fd3d534ffe218bef" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::detail::task_chain_final_awaiter&lt; ReturnType &gt;::await_ready</definition>
-        <argsstring>() noexcept</argsstring>
+        <definition>bool dpp::detail::task_chain_final_awaiter&lt; R &gt;::await_ready</definition>
+        <argsstring>() const noexcept</argsstring>
         <name>await_ready</name>
         <briefdescription>
 <para>Always suspend at the end of the task. This allows us to clean up and resume the parent. </para>
@@ -21,15 +21,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro.h" line="241" column="6" bodyfile="include/dpp/coro.h" bodystart="241" bodyend="243"/>
+        <location file="include/dpp/coro/task.h" line="463" column="6" bodyfile="include/dpp/coro/task.h" bodystart="463" bodyend="465"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1detail_1_1task__chain__final__awaiter_1a995cf8648c21c8a822a9e4e79edcefa6" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void dpp::detail::task_chain_final_awaiter&lt; ReturnType &gt;::await_suspend</definition>
-        <argsstring>(detail::task_handle&lt; ReturnType &gt; handle) noexcept</argsstring>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task__chain__final__awaiter_1af6907b3b7a4c3123f4b2d5104aa703d7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std_coroutine::coroutine_handle</type>
+        <definition>std_coroutine::coroutine_handle dpp::detail::task_chain_final_awaiter&lt; R &gt;::await_suspend</definition>
+        <argsstring>(detail::task_handle&lt; R &gt; handle) const noexcept</argsstring>
         <name>await_suspend</name>
         <param>
-          <type><ref refid="namespacedpp_1_1detail_1a5cc8642d79d28ea2cac1825b42685dfa" kindref="member">detail::task_handle</ref>&lt; ReturnType &gt;</type>
+          <type><ref refid="namespacedpp_1_1detail_1a1974b691b8f794108af6b50381ee3075" kindref="member">detail::task_handle</ref>&lt; R &gt;</type>
           <declname>handle</declname>
         </param>
         <briefdescription>
@@ -38,12 +38,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro.h" line="250" column="6" bodyfile="include/dpp/coro.h" bodystart="388" bodyend="406"/>
+        <location file="include/dpp/coro/task.h" line="473" column="2" bodyfile="include/dpp/coro/task.h" bodystart="667" bodyend="685"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1detail_1_1task__chain__final__awaiter_1ad283115fd3719b4d70178ee66e5d0bda" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task__chain__final__awaiter_1a7325d3b31c0d06524f36b1aaca4a45b0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void dpp::detail::task_chain_final_awaiter&lt; ReturnType &gt;::await_resume</definition>
-        <argsstring>() noexcept</argsstring>
+        <definition>void dpp::detail::task_chain_final_awaiter&lt; R &gt;::await_resume</definition>
+        <argsstring>() const noexcept</argsstring>
         <name>await_resume</name>
         <briefdescription>
         </briefdescription>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro.h" line="255" column="6" bodyfile="include/dpp/coro.h" bodystart="255" bodyend="255"/>
+        <location file="include/dpp/coro/task.h" line="478" column="6" bodyfile="include/dpp/coro/task.h" bodystart="478" bodyend="478"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -60,11 +60,11 @@
     <detaileddescription>
 <para>Awaitable returned from <ref refid="structdpp_1_1detail_1_1task__promise" kindref="compound">task_promise</ref>&apos;s final_suspend. Resumes the parent and cleans up its handle if needed. </para>
     </detaileddescription>
-    <location file="include/dpp/coro.h" line="237" column="1" bodyfile="include/dpp/coro.h" bodystart="237" bodyend="256"/>
+    <location file="include/dpp/coro/task.h" line="459" column="1" bodyfile="include/dpp/coro/task.h" bodystart="459" bodyend="479"/>
     <listofallmembers>
-      <member refid="structdpp_1_1detail_1_1task__chain__final__awaiter_1a5869244dfa577d83897be57693875279" prot="public" virt="non-virtual"><scope>dpp::detail::task_chain_final_awaiter</scope><name>await_ready</name></member>
-      <member refid="structdpp_1_1detail_1_1task__chain__final__awaiter_1ad283115fd3719b4d70178ee66e5d0bda" prot="public" virt="non-virtual"><scope>dpp::detail::task_chain_final_awaiter</scope><name>await_resume</name></member>
-      <member refid="structdpp_1_1detail_1_1task__chain__final__awaiter_1a995cf8648c21c8a822a9e4e79edcefa6" prot="public" virt="non-virtual"><scope>dpp::detail::task_chain_final_awaiter</scope><name>await_suspend</name></member>
+      <member refid="structdpp_1_1detail_1_1task__chain__final__awaiter_1a83ae32d8b73800d6fd3d534ffe218bef" prot="public" virt="non-virtual"><scope>dpp::detail::task_chain_final_awaiter</scope><name>await_ready</name></member>
+      <member refid="structdpp_1_1detail_1_1task__chain__final__awaiter_1a7325d3b31c0d06524f36b1aaca4a45b0" prot="public" virt="non-virtual"><scope>dpp::detail::task_chain_final_awaiter</scope><name>await_resume</name></member>
+      <member refid="structdpp_1_1detail_1_1task__chain__final__awaiter_1af6907b3b7a4c3123f4b2d5104aa703d7" prot="public" virt="non-virtual"><scope>dpp::detail::task_chain_final_awaiter</scope><name>await_suspend</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

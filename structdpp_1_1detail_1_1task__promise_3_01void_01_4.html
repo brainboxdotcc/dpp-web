@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('structdpp_1_1detail_1_1task__promise_3
 <p>Implementation of <a class="el" href="structdpp_1_1detail_1_1task__promise.html" title="A task&#39;s promise type, with special logic for handling nested tasks.">task_promise</a> for void return type.  
  <a href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#details">More...</a></p>
 
-<p><code>#include &lt;coro.h&gt;</code></p>
+<p><code>#include &lt;task.h&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for dpp::detail::task_promise&lt; void &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -123,51 +123,76 @@ $(document).ready(function(){initNavTree('structdpp_1_1detail_1_1task__promise_3
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structdpp_1_1detail_1_1task__promise_3_01void_01_4__coll__graph.svg" width="508" height="232"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structdpp_1_1detail_1_1task__promise_3_01void_01_4__coll__graph.svg" width="324" height="247"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2def1cff0be909658ebcbcd38edb2ca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a2def1cff0be909658ebcbcd38edb2ca0">return_void</a> ()</td></tr>
-<tr class="memdesc:a2def1cff0be909658ebcbcd38edb2ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when the coroutine co_returns.  <a href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a2def1cff0be909658ebcbcd38edb2ca0">More...</a><br /></td></tr>
-<tr class="separator:a2def1cff0be909658ebcbcd38edb2ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eeb701548382ea1902410a7642aa0f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1task.html">task</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a5eeb701548382ea1902410a7642aa0f0">get_return_object</a> ()</td></tr>
-<tr class="memdesc:a5eeb701548382ea1902410a7642aa0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when the coroutine is created.  <a href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a5eeb701548382ea1902410a7642aa0f0">More...</a><br /></td></tr>
-<tr class="separator:a5eeb701548382ea1902410a7642aa0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b22c2e0635db825be57158fa5a8c827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1detail_1_1task__chain__final__awaiter.html">task_chain_final_awaiter</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a4b22c2e0635db825be57158fa5a8c827">final_suspend</a> () noexcept</td></tr>
-<tr class="memdesc:a4b22c2e0635db825be57158fa5a8c827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when the coroutine reaches its last suspension point.  <a href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a4b22c2e0635db825be57158fa5a8c827">More...</a><br /></td></tr>
-<tr class="separator:a4b22c2e0635db825be57158fa5a8c827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b70f31b07ef6337c2fffdc00a79a1a"><td class="memItemLeft" align="right" valign="top">std_coroutine::suspend_never&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#a06b70f31b07ef6337c2fffdc00a79a1a">initial_suspend</a> () noexcept</td></tr>
-<tr class="memdesc:a06b70f31b07ef6337c2fffdc00a79a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when the coroutine is created.  <a href="structdpp_1_1detail_1_1task__promise__base.html#a06b70f31b07ef6337c2fffdc00a79a1a">More...</a><br /></td></tr>
-<tr class="separator:a06b70f31b07ef6337c2fffdc00a79a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dfe907c6cf2eaae2b34302c361a4dfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a9dfe907c6cf2eaae2b34302c361a4dfa">return_void</a> () const noexcept</td></tr>
+<tr class="memdesc:a9dfe907c6cf2eaae2b34302c361a4dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when the coroutine co_returns.  <a href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a9dfe907c6cf2eaae2b34302c361a4dfa">More...</a><br /></td></tr>
+<tr class="separator:a9dfe907c6cf2eaae2b34302c361a4dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac918771dc4be868ea885374136733c34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1task.html">task</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#ac918771dc4be868ea885374136733c34">get_return_object</a> () noexcept</td></tr>
+<tr class="memdesc:ac918771dc4be868ea885374136733c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when the coroutine is created.  <a href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#ac918771dc4be868ea885374136733c34">More...</a><br /></td></tr>
+<tr class="separator:ac918771dc4be868ea885374136733c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d92229bf6eee7dd49c1f824f912e3a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1detail_1_1task__chain__final__awaiter.html">task_chain_final_awaiter</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a9d92229bf6eee7dd49c1f824f912e3a6">final_suspend</a> () const noexcept</td></tr>
+<tr class="memdesc:a9d92229bf6eee7dd49c1f824f912e3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when the coroutine reaches its last suspension point.  <a href="structdpp_1_1detail_1_1task__promise_3_01void_01_4.html#a9d92229bf6eee7dd49c1f824f912e3a6">More...</a><br /></td></tr>
+<tr class="separator:a9d92229bf6eee7dd49c1f824f912e3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34db20615e74c9f48b27fdb3e55a99ef"><td class="memItemLeft" align="right" valign="top">std_coroutine::suspend_never&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#a34db20615e74c9f48b27fdb3e55a99ef">initial_suspend</a> () const noexcept</td></tr>
+<tr class="memdesc:a34db20615e74c9f48b27fdb3e55a99ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when the coroutine is created.  <a href="structdpp_1_1detail_1_1task__promise__base.html#a34db20615e74c9f48b27fdb3e55a99ef">More...</a><br /></td></tr>
+<tr class="separator:a34db20615e74c9f48b27fdb3e55a99ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af015d8af8e261d051216d5ab291a935a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#af015d8af8e261d051216d5ab291a935a">unhandled_exception</a> ()</td></tr>
 <tr class="memdesc:af015d8af8e261d051216d5ab291a935a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the standard library when an exception is thrown and not caught in the coroutine.  <a href="structdpp_1_1detail_1_1task__promise__base.html#af015d8af8e261d051216d5ab291a935a">More...</a><br /></td></tr>
 <tr class="separator:af015d8af8e261d051216d5ab291a935a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68de48510b48e50a620c9875a553344e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a68de48510b48e50a620c9875a553344e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#a68de48510b48e50a620c9875a553344e">await_transform</a> (T &amp;&amp;expr) const noexcept(noexcept(<a class="el" href="namespacedpp_1_1detail.html#a63c76824ad809907fbd7fd5f714ad45d">co_await_resolve</a>(std::forward&lt; T &gt;(expr))))</td></tr>
+<tr class="separator:a68de48510b48e50a620c9875a553344e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3a1bbef802c522da04647c803885444a"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#a3a1bbef802c522da04647c803885444a">mutex</a> {}</td></tr>
-<tr class="memdesc:a3a1bbef802c522da04647c803885444a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for async task destruction.  <a href="structdpp_1_1detail_1_1task__promise__base.html#a3a1bbef802c522da04647c803885444a">More...</a><br /></td></tr>
-<tr class="separator:a3a1bbef802c522da04647c803885444a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcd8284a6a4820706fda882d4df3a1d"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; <a class="el" href="namespacedpp_1_1detail.html#a55d58fcb55862a7ad5ef0dac76500c36">task_state_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#acfcd8284a6a4820706fda882d4df3a1d">state</a> = <a class="el" href="namespacedpp_1_1detail.html#a55d58fcb55862a7ad5ef0dac76500c36a3bebb2f89180b03fa5ae736665f648d9">task_state_t::started</a></td></tr>
+<tr class="memdesc:acfcd8284a6a4820706fda882d4df3a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the task, used to keep track of lifetime and status.  <a href="structdpp_1_1detail_1_1task__promise__base.html#acfcd8284a6a4820706fda882d4df3a1d">More...</a><br /></td></tr>
+<tr class="separator:acfcd8284a6a4820706fda882d4df3a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8842c427d4015c8a54434f5f94593f44"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#a8842c427d4015c8a54434f5f94593f44">cancelled</a> = false</td></tr>
+<tr class="memdesc:a8842c427d4015c8a54434f5f94593f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the task is cancelled or not.  <a href="structdpp_1_1detail_1_1task__promise__base.html#a8842c427d4015c8a54434f5f94593f44">More...</a><br /></td></tr>
+<tr class="separator:a8842c427d4015c8a54434f5f94593f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03690dffabdfa0772ed0f27be5465354"><td class="memItemLeft" align="right" valign="top">detail::std_coroutine::coroutine_handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#a03690dffabdfa0772ed0f27be5465354">parent</a> = nullptr</td></tr>
 <tr class="memdesc:a03690dffabdfa0772ed0f27be5465354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent coroutine to return to for nested coroutines.  <a href="structdpp_1_1detail_1_1task__promise__base.html#a03690dffabdfa0772ed0f27be5465354">More...</a><br /></td></tr>
 <tr class="separator:a03690dffabdfa0772ed0f27be5465354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab018754f2033fbb47fe0fc5ae6c2e34a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#ab018754f2033fbb47fe0fc5ae6c2e34a">is_sync</a> = true</td></tr>
-<tr class="memdesc:ab018754f2033fbb47fe0fc5ae6c2e34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the coroutine has async calls or not.  <a href="structdpp_1_1detail_1_1task__promise__base.html#ab018754f2033fbb47fe0fc5ae6c2e34a">More...</a><br /></td></tr>
-<tr class="separator:ab018754f2033fbb47fe0fc5ae6c2e34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b8ec65467650319e96a7dfd8910cfc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#a4b8ec65467650319e96a7dfd8910cfc4">destroy</a> = false</td></tr>
-<tr class="memdesc:a4b8ec65467650319e96a7dfd8910cfc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether either the task object or the promise is gone and the next one to end will clean up.  <a href="structdpp_1_1detail_1_1task__promise__base.html#a4b8ec65467650319e96a7dfd8910cfc4">More...</a><br /></td></tr>
-<tr class="separator:a4b8ec65467650319e96a7dfd8910cfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac451b7ef5be63bb5463d4e7e832d6a50"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(std::exception_ptr)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task__promise__base.html#ac451b7ef5be63bb5463d4e7e832d6a50">exception_handler</a> = nullptr</td></tr>
-<tr class="memdesc:ac451b7ef5be63bb5463d4e7e832d6a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object called when an exception is thrown from a coroutine.  <a href="structdpp_1_1detail_1_1task__promise__base.html#ac451b7ef5be63bb5463d4e7e832d6a50">More...</a><br /></td></tr>
-<tr class="separator:ac451b7ef5be63bb5463d4e7e832d6a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implementation of <a class="el" href="structdpp_1_1detail_1_1task__promise.html" title="A task&#39;s promise type, with special logic for handling nested tasks.">task_promise</a> for void return type. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4b22c2e0635db825be57158fa5a8c827" name="a4b22c2e0635db825be57158fa5a8c827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b22c2e0635db825be57158fa5a8c827">&#9670;&nbsp;</a></span>final_suspend()</h2>
+<a id="a68de48510b48e50a620c9875a553344e" name="a68de48510b48e50a620c9875a553344e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68de48510b48e50a620c9875a553344e">&#9670;&nbsp;</a></span>await_transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto dpp::detail::task_promise_base::await_transform </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d92229bf6eee7dd49c1f824f912e3a6" name="a9d92229bf6eee7dd49c1f824f912e3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d92229bf6eee7dd49c1f824f912e3a6">&#9670;&nbsp;</a></span>final_suspend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +204,7 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="structdpp_1_1detail_1_1task__chain__final__awaiter.html">task_chain_final_awaiter</a>&lt; void &gt; <a class="el" href="structdpp_1_1detail_1_1task__promise.html">dpp::detail::task_promise</a>&lt; void &gt;::final_suspend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -194,8 +219,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5eeb701548382ea1902410a7642aa0f0" name="a5eeb701548382ea1902410a7642aa0f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5eeb701548382ea1902410a7642aa0f0">&#9670;&nbsp;</a></span>get_return_object()</h2>
+<a id="ac918771dc4be868ea885374136733c34" name="ac918771dc4be868ea885374136733c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac918771dc4be868ea885374136733c34">&#9670;&nbsp;</a></span>get_return_object()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +237,7 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -222,8 +247,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a06b70f31b07ef6337c2fffdc00a79a1a" name="a06b70f31b07ef6337c2fffdc00a79a1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06b70f31b07ef6337c2fffdc00a79a1a">&#9670;&nbsp;</a></span>initial_suspend()</h2>
+<a id="a34db20615e74c9f48b27fdb3e55a99ef" name="a34db20615e74c9f48b27fdb3e55a99ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34db20615e74c9f48b27fdb3e55a99ef">&#9670;&nbsp;</a></span>initial_suspend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +260,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">std_coroutine::suspend_never dpp::detail::task_promise_base::initial_suspend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -250,8 +275,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2def1cff0be909658ebcbcd38edb2ca0" name="a2def1cff0be909658ebcbcd38edb2ca0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2def1cff0be909658ebcbcd38edb2ca0">&#9670;&nbsp;</a></span>return_void()</h2>
+<a id="a9dfe907c6cf2eaae2b34302c361a4dfa" name="a9dfe907c6cf2eaae2b34302c361a4dfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dfe907c6cf2eaae2b34302c361a4dfa">&#9670;&nbsp;</a></span>return_void()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,12 +288,12 @@ Public Attributes</h2></td></tr>
           <td class="memname">void <a class="el" href="structdpp_1_1detail_1_1task__promise.html">dpp::detail::task_promise</a>&lt; void &gt;::return_void </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -302,13 +327,13 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function called by the standard library when an exception is thrown and not caught in the coroutine. </p>
-<p >Stores the exception pointer to rethrow later </p>
+<p >Stores the exception pointer to rethrow on co_await. If the task object is destroyed and was not cancelled, throw instead </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4b8ec65467650319e96a7dfd8910cfc4" name="a4b8ec65467650319e96a7dfd8910cfc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b8ec65467650319e96a7dfd8910cfc4">&#9670;&nbsp;</a></span>destroy</h2>
+<a id="a8842c427d4015c8a54434f5f94593f44" name="a8842c427d4015c8a54434f5f94593f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8842c427d4015c8a54434f5f94593f44">&#9670;&nbsp;</a></span>cancelled</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +342,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool dpp::detail::task_promise_base::destroy = false</td>
+          <td class="memname">std::atomic&lt;bool&gt; dpp::detail::task_promise_base::cancelled = false</td>
         </tr>
       </table>
   </td>
@@ -327,80 +352,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Whether either the task object or the promise is gone and the next one to end will clean up. </p>
-
-</div>
-</div>
-<a id="ac451b7ef5be63bb5463d4e7e832d6a50" name="ac451b7ef5be63bb5463d4e7e832d6a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac451b7ef5be63bb5463d4e7e832d6a50">&#9670;&nbsp;</a></span>exception_handler</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(std::exception_ptr)&gt; dpp::detail::task_promise_base::exception_handler = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Function object called when an exception is thrown from a coroutine. </p>
-
-</div>
-</div>
-<a id="ab018754f2033fbb47fe0fc5ae6c2e34a" name="ab018754f2033fbb47fe0fc5ae6c2e34a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab018754f2033fbb47fe0fc5ae6c2e34a">&#9670;&nbsp;</a></span>is_sync</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dpp::detail::task_promise_base::is_sync = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Whether the coroutine has async calls or not. </p>
-<p >Will only ever change on the calling thread while callback mutex guards the async thread </p>
-
-</div>
-</div>
-<a id="a3a1bbef802c522da04647c803885444a" name="a3a1bbef802c522da04647c803885444a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a1bbef802c522da04647c803885444a">&#9670;&nbsp;</a></span>mutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::mutex dpp::detail::task_promise_base::mutex {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mutex for async task destruction. </p>
+<p>Whether the task is cancelled or not. </p>
 
 </div>
 </div>
@@ -425,6 +377,30 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parent coroutine to return to for nested coroutines. </p>
+
+</div>
+</div>
+<a id="acfcd8284a6a4820706fda882d4df3a1d" name="acfcd8284a6a4820706fda882d4df3a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfcd8284a6a4820706fda882d4df3a1d">&#9670;&nbsp;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;<a class="el" href="namespacedpp_1_1detail.html#a55d58fcb55862a7ad5ef0dac76500c36">task_state_t</a>&gt; dpp::detail::task_promise_base::state = <a class="el" href="namespacedpp_1_1detail.html#a55d58fcb55862a7ad5ef0dac76500c36a3bebb2f89180b03fa5ae736665f648d9">task_state_t::started</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>State of the task, used to keep track of lifetime and status. </p>
 
 </div>
 </div>

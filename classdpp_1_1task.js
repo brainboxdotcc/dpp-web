@@ -1,15 +1,16 @@
 var classdpp_1_1task =
 [
-    [ "task", "classdpp_1_1task.html#ac2dec3b626f2f0c53e99c369a521e5e6", null ],
-    [ "task", "classdpp_1_1task.html#aad974d1b2888b39f925c3c7b6ee1c5e0", null ],
-    [ "task", "classdpp_1_1task.html#a8c1aebce72b47527077bbc8fe410c109", null ],
-    [ "~task", "classdpp_1_1task.html#a68c90a8b7d8c12866470f07f33db01d2", null ],
-    [ "await_ready", "classdpp_1_1task.html#a2afca77e73d5d807edb7e7a93903baba", null ],
-    [ "await_resume", "classdpp_1_1task.html#a6b9a67a1d4a88e7a450b8324eeb06384", null ],
-    [ "await_suspend", "classdpp_1_1task.html#ab807be2c4376a5649a30d2b957b4ece9", null ],
-    [ "done", "classdpp_1_1task.html#a502c9b8f9fe6942b1b30202180e05846", null ],
-    [ "on_exception", "classdpp_1_1task.html#a0dfb338a4174b0407af9e66a3e7a9007", null ],
-    [ "operator=", "classdpp_1_1task.html#ac20634212c487779f3e87ee4863095cb", null ],
-    [ "operator=", "classdpp_1_1task.html#adc98271fd812e2a51a22d13498d7c2ca", null ],
-    [ "detail::task_promise< ReturnType >", "classdpp_1_1task.html#aa66c9f331b5fb399c633fc89de53fb59", null ]
+    [ "task", "classdpp_1_1task.html#abaeb36ad1e3c3d0e4ce53d46a47d61b5", null ],
+    [ "task", "classdpp_1_1task.html#a04a2870d55bb2fb942ae1e9e072efe9f", null ],
+    [ "task", "classdpp_1_1task.html#aa074990f5d5c24b11787d0fc7d385202", null ],
+    [ "~task", "classdpp_1_1task.html#a23ee3394a7c7eee5d8c2fee6f829cb9e", null ],
+    [ "await_ready", "classdpp_1_1task.html#a3b11a1b3ed125c88ccfa24722fb2f3eb", null ],
+    [ "cancel", "classdpp_1_1task.html#a2787e1f8313004716ac12a78be8ed50d", null ],
+    [ "done", "classdpp_1_1task.html#ac030b9e766ceb3b427e88e926b92b81b", null ],
+    [ "operator co_await", "classdpp_1_1task.html#a22cf3d2c69226edfbb1585072ec25086", null ],
+    [ "operator co_await", "classdpp_1_1task.html#a007da70a7593ce74603ae96af1c381c7", null ],
+    [ "operator co_await", "classdpp_1_1task.html#aa410dbfe84a7281dafbe563b1d224123", null ],
+    [ "operator=", "classdpp_1_1task.html#a1f532c5ceff4fadc0fa9174e80ff183c", null ],
+    [ "operator=", "classdpp_1_1task.html#af56fcd28c94944982bd585dd44bef472", null ],
+    [ "detail::task_base< R >", "classdpp_1_1task.html#a03beaf1a2a2842fd34b8cfd8ee47ace1", null ]
 ];

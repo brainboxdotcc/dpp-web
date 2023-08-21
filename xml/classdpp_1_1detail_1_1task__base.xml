@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1detail_1_1task__base" kind="class" language="C++" prot="public">
+    <compoundname>dpp::detail::task_base</compoundname>
+    <derivedcompoundref refid="classdpp_1_1task" prot="private" virt="non-virtual">dpp::task&lt; R &gt;</derivedcompoundref>
+    <includes local="no">task.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1task__base_1ae5ecef67cba1e051a5371785a93c4d4a" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1_1detail_1a1974b691b8f794108af6b50381ee3075" kindref="member">detail::task_handle</ref>&lt; R &gt;</type>
+        <definition>detail::task_handle&lt;R&gt; dpp::detail::task_base&lt; R &gt;::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+<para>The coroutine handle of this task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="82" column="21" bodyfile="include/dpp/coro/task.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1detail_1_1task__base_1a41139be52cbaf0a345cb70543a6d00ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct detail::task_promise&lt; R &gt;</definition>
+        <argsstring></argsstring>
+        <name>detail::task_promise&lt; R &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1detail_1_1task__promise" kindref="compound">detail::task_promise</ref>&lt; R &gt;</type>
+        </param>
+        <briefdescription>
+<para>Promise type of this coroutine. For internal use only, do not use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="82" column="21" bodyfile="include/dpp/coro/task.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a960ee489b2999761658680a53d0101d7" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::task_base&lt; R &gt;::task_base</definition>
+        <argsstring>(detail::task_handle&lt; R &gt; handle_)</argsstring>
+        <name>task_base</name>
+        <param>
+          <type><ref refid="namespacedpp_1_1detail_1a1974b691b8f794108af6b50381ee3075" kindref="member">detail::task_handle</ref>&lt; R &gt;</type>
+          <declname>handle_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a coroutine handle. Internal use only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="93" column="10" bodyfile="include/dpp/coro/task.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1aff1200b1a6a7a1457ad5e05224158386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::task_base&lt; R &gt;::task_base</definition>
+        <argsstring>()=default</argsstring>
+        <name>task_base</name>
+        <briefdescription>
+<para>Default constructor, creates a task not bound to a coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a1ffad4b8786fc816395422b7951da525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::task_base&lt; R &gt;::task_base</definition>
+        <argsstring>(const task_base &amp;)=delete</argsstring>
+        <name>task_base</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1detail_1_1task__base" kindref="compound">task_base</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor is disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a034a7275027cab1a40cb1310a915ab2d" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::task_base&lt; R &gt;::task_base</definition>
+        <argsstring>(task_base &amp;&amp;other) noexcept</argsstring>
+        <name>task_base</name>
+        <param>
+          <type><ref refid="classdpp_1_1detail_1_1task__base" kindref="compound">task_base</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor, grabs another task&apos;s coroutine handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Task to move the handle from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="111" column="1" bodyfile="include/dpp/coro/task.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a342d91f6819dad2d3bc229a72061a335" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::task_base&lt; R &gt;::~task_base</definition>
+        <argsstring>()</argsstring>
+        <name>~task_base</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys the handle. <simplesect kind="warning"><para>The coroutine must be finished before this is called, otherwise it runs the risk of being resumed after it is destroyed, resuming in use-after-free undefined behavior. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="119" column="1" bodyfile="include/dpp/coro/task.h" bodystart="119" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1aa53db78881ff6d8d950f722c75fe8bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1detail_1_1task__base" kindref="compound">task_base</ref> &amp;</type>
+        <definition>task_base &amp; dpp::detail::task_base&lt; R &gt;::operator=</definition>
+        <argsstring>(const task_base &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1detail_1_1task__base" kindref="compound">task_base</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy assignment is disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="134" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1ae66b2b8d62ac1be5ae3adf1e8d0a9d0b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1detail_1_1task__base" kindref="compound">task_base</ref> &amp;</type>
+        <definition>task_base &amp; dpp::detail::task_base&lt; R &gt;::operator=</definition>
+        <argsstring>(task_base &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdpp_1_1detail_1_1task__base" kindref="compound">task_base</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment, grabs another task&apos;s coroutine handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Task to move the handle from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="141" column="11" bodyfile="include/dpp/coro/task.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a9c1b44f2d784db520040d6a5ad88d8f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::detail::task_base&lt; R &gt;::await_ready</definition>
+        <argsstring>() const</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>Check whether or not a call to co_await will suspend the caller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called by the standard library as a first step when using co_await. If it returns true then the caller is not suspended. <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the task is empty. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Whether not to suspend the caller or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="153" column="6" bodyfile="include/dpp/coro/task.h" bodystart="153" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a667a169c956ce8e011274f22a8b50268" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::detail::task_base&lt; R &gt;::await_suspend</definition>
+        <argsstring>(detail::std_coroutine::coroutine_handle&lt;&gt; caller)</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type>detail::std_coroutine::coroutine_handle&lt;&gt;</type>
+          <declname>caller</declname>
+        </param>
+        <briefdescription>
+<para>Second function called by the standard library when the task is co_await-ed, if await_ready returned false. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stores the calling coroutine in the promise to resume when this task suspends.</para>
+<para><simplesect kind="remark"><para>Do not call this manually, use the co_await keyword instead. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>caller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The calling coroutine, now suspended </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Whether to suspend the caller or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="168" column="6" bodyfile="include/dpp/coro/task.h" bodystart="168" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a4bc3b78d1db82b1f3930cccc891551a0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::detail::task_base&lt; R &gt;::done</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>done</name>
+        <briefdescription>
+<para>Function to check if the task has finished its execution entirely. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool Whether the task is finished. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="184" column="7" bodyfile="include/dpp/coro/task.h" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a3b60880ce8829c5c4878044ca7074cf9" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1task" kindref="compound">dpp::task</ref>&lt; R &gt; &amp;</type>
+        <definition>dpp::task&lt; R &gt; &amp; dpp::detail::task_base&lt; R &gt;::cancel</definition>
+        <argsstring>() &amp;noexcept</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="191" column="11" bodyfile="include/dpp/coro/task.h" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a3544f0862f76b808e1226b7d137ca8f0" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1task" kindref="compound">dpp::task</ref>&lt; R &gt; &amp;&amp;</type>
+        <definition>dpp::task&lt; R &gt; &amp;&amp; dpp::detail::task_base&lt; R &gt;::cancel</definition>
+        <argsstring>() &amp;&amp;noexcept</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="199" column="11" bodyfile="include/dpp/coro/task.h" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a6ef9ca37a834ce6aa52bcc399fbfd003" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type>decltype(auto)</type>
+        <definition>decltype(auto) dpp::detail::task_base&lt; R &gt;::await_resume</definition>
+        <argsstring>() &amp;</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Function called by the standard library when resuming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>R&amp; Return value of the coroutine, handed to the caller of co_await. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="209" column="10" bodyfile="include/dpp/coro/task.h" bodystart="209" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a46b7a90e4deca71d4f700ca0946a3fae" prot="public" static="no" const="yes" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type>decltype(auto)</type>
+        <definition>decltype(auto) dpp::detail::task_base&lt; R &gt;::await_resume</definition>
+        <argsstring>() const &amp;</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Function called by the standard library when resuming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const R&amp; Return value of the coroutine, handed to the caller of co_await. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="218" column="10" bodyfile="include/dpp/coro/task.h" bodystart="218" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a1862bdffb3c7f31bda663d61467eaa8b" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" virt="non-virtual">
+        <type>decltype(auto)</type>
+        <definition>decltype(auto) dpp::detail::task_base&lt; R &gt;::await_resume</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Function called by the standard library when resuming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>R&amp;&amp; Return value of the coroutine, handed to the caller of co_await. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="227" column="10" bodyfile="include/dpp/coro/task.h" bodystart="227" bodyend="229"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class of dpp::task&lt;R&gt;. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="warning"><para>This class should not be used directly by a user, use dpp::task&lt;R&gt; instead. </para>
+</simplesect>
+<simplesect kind="note"><para>This class contains all the functions used internally by co_await. It is intentionally opaque and a private base of dpp::task&lt;R&gt; so a user cannot call await_suspend and await_resume directly. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::detail::task_base&lt; R &gt;</label>
+        <link refid="classdpp_1_1detail_1_1task__base"/>
+      </node>
+      <node id="2">
+        <label>dpp::task&lt; R &gt;</label>
+        <link refid="classdpp_1_1task"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>task_handle&lt;</label>
+      </node>
+      <node id="1">
+        <label>dpp::detail::task_base&lt; R &gt;</label>
+        <link refid="classdpp_1_1detail_1_1task__base"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>handle</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/task.h" line="77" column="1" bodyfile="include/dpp/coro/task.h" bodystart="77" bodyend="230"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1detail_1_1task__base_1a9c1b44f2d784db520040d6a5ad88d8f6" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>await_ready</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a6ef9ca37a834ce6aa52bcc399fbfd003" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>await_resume</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a46b7a90e4deca71d4f700ca0946a3fae" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>await_resume</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a1862bdffb3c7f31bda663d61467eaa8b" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>await_resume</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a667a169c956ce8e011274f22a8b50268" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>await_suspend</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a3b60880ce8829c5c4878044ca7074cf9" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>cancel</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a3544f0862f76b808e1226b7d137ca8f0" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>cancel</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a41139be52cbaf0a345cb70543a6d00ea" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>detail::task_promise&lt; R &gt;</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a4bc3b78d1db82b1f3930cccc891551a0" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>done</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1ae5ecef67cba1e051a5371785a93c4d4a" prot="protected" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>handle</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1aa53db78881ff6d8d950f722c75fe8bae" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1ae66b2b8d62ac1be5ae3adf1e8d0a9d0b" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a960ee489b2999761658680a53d0101d7" prot="private" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>task_base</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1aff1200b1a6a7a1457ad5e05224158386" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>task_base</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a1ffad4b8786fc816395422b7951da525" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>task_base</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a034a7275027cab1a40cb1310a915ab2d" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>task_base</name></member>
+      <member refid="classdpp_1_1detail_1_1task__base_1a342d91f6819dad2d3bc229a72061a335" prot="public" virt="non-virtual"><scope>dpp::detail::task_base</scope><name>~task_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

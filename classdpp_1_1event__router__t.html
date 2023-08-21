@@ -132,9 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6af4a0b09bba980a625beb49a16590c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c">attach</a> (std::function&lt; void(const T &amp;)&gt; func)</td></tr>
 <tr class="memdesc:ad6af4a0b09bba980a625beb49a16590c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>.  <a href="classdpp_1_1event__router__t.html#ad6af4a0b09bba980a625beb49a16590c">More...</a><br /></td></tr>
 <tr class="separator:ad6af4a0b09bba980a625beb49a16590c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a322bf588a24aeb2e76c1458885fa7704"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a322bf588a24aeb2e76c1458885fa7704">co_attach</a> (std::function&lt; <a class="el" href="classdpp_1_1task.html">dpp::task</a>&lt; void &gt;(T)&gt; func)</td></tr>
-<tr class="memdesc:a322bf588a24aeb2e76c1458885fa7704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a coroutine task to the event, adding a listener. The coroutine should follow the signature specified when declaring the event object and should take exactly one parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>.  <a href="classdpp_1_1event__router__t.html#a322bf588a24aeb2e76c1458885fa7704">More...</a><br /></td></tr>
-<tr class="separator:a322bf588a24aeb2e76c1458885fa7704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576e1cf507ebe0347bd112f1a2bcfb7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a576e1cf507ebe0347bd112f1a2bcfb7e">co_attach</a> (std::function&lt; <a class="el" href="structdpp_1_1job.html">job</a>(T)&gt; func)</td></tr>
+<tr class="memdesc:a576e1cf507ebe0347bd112f1a2bcfb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a coroutine task to the event, adding a listener. The coroutine should follow the signature specified when declaring the event object and should take exactly one parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>.  <a href="classdpp_1_1event__router__t.html#a576e1cf507ebe0347bd112f1a2bcfb7e">More...</a><br /></td></tr>
+<tr class="separator:a576e1cf507ebe0347bd112f1a2bcfb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cb1a37fce0778d18db0104b2e61b9f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a6cb1a37fce0778d18db0104b2e61b9f4">detach</a> (const <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> &amp;handle)</td></tr>
 <tr class="memdesc:a6cb1a37fce0778d18db0104b2e61b9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach a listener from the event using a previously obtained ID.  <a href="classdpp_1_1event__router__t.html#a6cb1a37fce0778d18db0104b2e61b9f4">More...</a><br /></td></tr>
 <tr class="separator:a6cb1a37fce0778d18db0104b2e61b9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,8 +285,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a322bf588a24aeb2e76c1458885fa7704" name="a322bf588a24aeb2e76c1458885fa7704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a322bf588a24aeb2e76c1458885fa7704">&#9670;&nbsp;</a></span>co_attach()</h2>
+<a id="a576e1cf507ebe0347bd112f1a2bcfb7e" name="a576e1cf507ebe0347bd112f1a2bcfb7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576e1cf507ebe0347bd112f1a2bcfb7e">&#9670;&nbsp;</a></span>co_attach()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +299,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> <a class="el" href="classdpp_1_1event__router__t.html">dpp::event_router_t</a>&lt; T &gt;::co_attach </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; <a class="el" href="classdpp_1_1task.html">dpp::task</a>&lt; void &gt;(T)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="structdpp_1_1job.html">job</a>(T)&gt;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -314,7 +314,7 @@ template&lt;class T &gt; </div>
 <p>Attach a coroutine task to the event, adding a listener. The coroutine should follow the signature specified when declaring the event object and should take exactly one parameter derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">func</td><td>Coroutine task to attack to the event </td></tr>
+    <tr><td class="paramname">func</td><td>Coroutine task to attack to the event. <b>It MUST take the event by value.</b> </td></tr>
   </table>
   </dd>
 </dl>

@@ -45,7 +45,7 @@ var searchData=
   ['install_5fparams_42',['install_params',['../classdpp_1_1application.html#a3d59f66fb7f7132320c3b3c37013729a',1,'dpp::application']]],
   ['integration_5fid_43',['integration_id',['../classdpp_1_1role.html#aa44718ae47c00bcf2008366218646572',1,'dpp::role']]],
   ['integrations_44',['integrations',['../classdpp_1_1connection.html#a63ab2a0f3859c1654bc90ec320df0e41',1,'dpp::connection']]],
-  ['intents_45',['intents',['../classdpp_1_1cluster.html#a239af1e13449c85658fb37e6589745a0',1,'dpp::cluster::intents()'],['../classdpp_1_1discord__client.html#acdea0fb06605d44be0161991c5d68e58',1,'dpp::discord_client::intents()']]],
+  ['intents_45',['intents',['../classdpp_1_1discord__client.html#acdea0fb06605d44be0161991c5d68e58',1,'dpp::discord_client::intents()'],['../classdpp_1_1cluster.html#a239af1e13449c85658fb37e6589745a0',1,'dpp::cluster::intents()']]],
   ['interaction_46',['interaction',['../structdpp_1_1message.html#ab61c894afe6b0f7655b3908217878e68',1,'dpp::message']]],
   ['interaction_5fevent_47',['interaction_event',['../structdpp_1_1command__source.html#acca58c533acf792deaccfa959665d06e',1,'dpp::command_source']]],
   ['interactions_48',['interactions',['../classdpp_1_1commandhandler.html#af8ca0a5c050b1774794de79e221a4b4e',1,'dpp::commandhandler']]],
@@ -63,9 +63,8 @@ var searchData=
   ['is_5finline_60',['is_inline',['../structdpp_1_1embed__field.html#a7c79073fef1c97bd8489975224ccfd04',1,'dpp::embed_field']]],
   ['is_5finstance_61',['is_instance',['../classdpp_1_1activity.html#a18eb699c08cd16cf4d1c90118a95ad6f',1,'dpp::activity']]],
   ['is_5fssl_62',['is_ssl',['../structdpp_1_1http__connect__info.html#af475152cfa55207e24970de5b89802d4',1,'dpp::http_connect_info']]],
-  ['is_5fsync_63',['is_sync',['../structdpp_1_1detail_1_1task__promise__base.html#ab018754f2033fbb47fe0fc5ae6c2e34a',1,'dpp::detail::task_promise_base']]],
-  ['island_64',['island',['../namespacedpp_1_1unicode__emoji.html#a408fb6b842f93a894b6bf9c3952134ba',1,'dpp::unicode_emoji']]],
-  ['issuer_65',['issuer',['../structdpp_1_1command__source.html#a04e791e7954c95ac7c3b6880760e297e',1,'dpp::command_source']]],
-  ['ivory_66',['ivory',['../namespacedpp_1_1colors.html#ab9d16d50348ea1c32901c4f7817f2b46',1,'dpp::colors']]],
-  ['izakaya_5flantern_67',['izakaya_lantern',['../namespacedpp_1_1unicode__emoji.html#a52ee3acc5059a132d0c48aa84db05fcf',1,'dpp::unicode_emoji']]]
+  ['island_63',['island',['../namespacedpp_1_1unicode__emoji.html#a408fb6b842f93a894b6bf9c3952134ba',1,'dpp::unicode_emoji']]],
+  ['issuer_64',['issuer',['../structdpp_1_1command__source.html#a04e791e7954c95ac7c3b6880760e297e',1,'dpp::command_source']]],
+  ['ivory_65',['ivory',['../namespacedpp_1_1colors.html#ab9d16d50348ea1c32901c4f7817f2b46',1,'dpp::colors']]],
+  ['izakaya_5flantern_66',['izakaya_lantern',['../namespacedpp_1_1unicode__emoji.html#a52ee3acc5059a132d0c48aa84db05fcf',1,'dpp::unicode_emoji']]]
 ];
