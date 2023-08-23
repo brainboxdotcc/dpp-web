@@ -11,10 +11,10 @@
 </para>
 <sect3 id="automating-with-jenkins_1autotoc_md37">
 <title>Getting started</title>
-<para>First of all, you&apos;ll want to create your project. For this, we&apos;ll use a Freestyle project as we&apos;re just going to be calling some bash commands to tell CMake to build. We&apos;ll be calling this &quot;DiscordBot&quot; but you can name is whatever you want (I would advise against non-ascii characters).</para>
+<para>First of all, you&apos;ll want to create your project. For this, we&apos;ll use a &quot;Freestyle project&quot; as we&apos;re just going to be calling some bash commands to tell CMake to build. We&apos;ll be calling this &quot;DiscordBot&quot; but you can name it whatever you want (I would advise against non-ascii characters).</para>
 <para><image type="html" name="jenkinsproject.png"></image>
 </para>
-<para>From here, just hit <computeroutput>Ok</computeroutput> and you&apos;ve created your Jenkins project, Well done! From here you can add a description, change the security policy (if your jenkins is public) and whatnot.</para>
+<para>From here, just hit <computeroutput>Ok</computeroutput> and now you&apos;ve created your Jenkins project, Well done! From here you can add a description, change the security policy (if your jenkins is public), really whatever your heart desires.</para>
 </sect3>
 <sect3 id="automating-with-jenkins_1autotoc_md38">
 <title>Automating the building process.</title>
@@ -34,7 +34,9 @@
 <codeline><highlight class="normal">#<sp/>Commence<sp/>build.</highlight></codeline>
 <codeline><highlight class="normal">cmake<sp/>--build<sp/>build/</highlight></codeline>
 </programlisting></para>
-<para>This script will build your project for you and also setup CMake if you&apos;ve deleted the build directory. You can change this to a build parameter if you want, meaning you can hit <computeroutput>Build with Parameters</computeroutput> and state what you&apos;d like to do.</para>
+<para><simplesect kind="note"><para>This script does not make use of multiple threads. If you know how to do this and you would like to use threads, then feel free to. However, I would be careful not to use all your threads as Jenkins may dislike this.</para>
+</simplesect>
+This script will build your project for you and also setup CMake if you&apos;ve deleted the build directory, allowing you to easily refresh CMake. You can change this to a build parameter if you want, meaning you can hit <computeroutput>Build with Parameters</computeroutput> and state what you&apos;d like to do (This would require the script to be changed so only do that if you know what you&apos;re doing)!</para>
 <para><image type="html" name="shelljenkins.png"></image>
 </para>
 <para>Now you can hit save!</para>
@@ -50,8 +52,10 @@
 <sect3 id="automating-with-jenkins_1autotoc_md40">
 <title>Running the build</title>
 <para>Running the builds is the same as any other time, but we&apos;ll still cover it! However, we won&apos;t cover running it in background and whatnot, that part is completely down to you.</para>
-<para>First, you need to get into the jenkins user. If you&apos;re like me and don&apos;t have the Jenkins user password, you can login with your normal login (that has sudo perms) and do <computeroutput>sudo su - jenkins</computeroutput>. Once logged in, you&apos;ll be in <computeroutput>/var/lib/jenkins/</computeroutput>. From here, you&apos;ll want to do <computeroutput>cd workspace/DiscordBot</computeroutput> (make sure to replace &quot;DiscordBot&quot; with your bot&apos;s name. Remember, you can tab-complete this) and then <computeroutput>cd build</computeroutput>. Now, you can simply do <computeroutput>./DiscordBot</computeroutput>!</para>
-<para>That&apos;s it! Enjoy your automated builds!</para>
+<para>First, you need to get into the jenkins user. If you&apos;re like me and don&apos;t have the Jenkins user password, you can login with your normal login (that has sudo perms) and do <computeroutput>sudo su - jenkins</computeroutput>. Once logged in, you&apos;ll be in <computeroutput>/var/lib/jenkins/</computeroutput>. From here, you&apos;ll want to do <computeroutput>cd workspace/DiscordBot/</computeroutput> (make sure to replace &quot;DiscordBot&quot; with your bot&apos;s name. Remember, you can tab-complete this) and then <computeroutput>cd build</computeroutput>. Now, you can simply do <computeroutput>./DiscordBot</computeroutput>!</para>
+<para><simplesect kind="warning"><para>If you are going to be running the bot at the same time as builds, I would heavily advise that you copy the bot (if it&apos;s not statically linked, then copy the entire build directory) to a different location. This is so you can pick and choose when the bot gets updated (and even means you can run experimental builds as opposed to stable builds) but also means you avoid any risk of the bot crashing during build (as jenkins will be overwriting your executable and libraries).</para>
+</simplesect>
+Once you&apos;re happy with everything, then you&apos;re good to go! Enjoy your automated builds!</para>
 </sect3>
 <sect3 id="automating-with-jenkins_1autotoc_md41">
 <title>Possible permission issues</title>
