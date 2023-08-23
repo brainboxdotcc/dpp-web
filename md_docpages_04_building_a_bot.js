@@ -6,5 +6,5 @@ var md_docpages_04_building_a_bot =
     [ "Building a discord bot in Linux using CLion", "build-a-discord-bot-linux-clion.html", null ],
     [ "Building a Discord Bot using CMake/UNIX", "buildcmake.html", null ],
     [ "Build a Discord Bot using Meson", "buildmeson.html", null ],
-    [ "Creating a Discord bot in Repl.it", "building-a-cpp-discord-bot-in-repl.html", null ]
+    [ "Creating a Discord bot in Replit", "building-a-cpp-discord-bot-in-repl.html", null ]
 ];

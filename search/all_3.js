@@ -843,7 +843,7 @@ var searchData=
   ['created_5finvite_840',['created_invite',['../structdpp_1_1invite__create__t.html#a9bd5a89df4072bd9df4d2d78bc077890',1,'dpp::invite_create_t']]],
   ['creating_20a_20bot_20token_841',['Creating a Bot Token',['../creating-a-bot-application.html',1,'md_docpages_04_building_a_bot']]],
   ['creating_20a_20discord_20bot_842',['Creating a Discord Bot',['../md_docpages_04_building_a_bot.html',1,'']]],
-  ['creating_20a_20discord_20bot_20in_20repl_2eit_843',['Creating a Discord bot in Repl.it',['../building-a-cpp-discord-bot-in-repl.html',1,'md_docpages_04_building_a_bot']]],
+  ['creating_20a_20discord_20bot_20in_20replit_843',['Creating a Discord bot in Replit',['../building-a-cpp-discord-bot-in-repl.html',1,'md_docpages_04_building_a_bot']]],
   ['creating_20a_20sound_20board_844',['Creating a Sound Board',['../soundboard.html',1,'music-and-audio']]],
   ['creating_20your_20first_20bot_845',['Creating Your First Bot',['../firstbot.html',1,'the-basics']]],
   ['creating_5fguild_846',['creating_guild',['../structdpp_1_1guild__role__create__t.html#abf1677c16593fd8c6c8f9914d8c2292d',1,'dpp::guild_role_create_t::creating_guild()'],['../structdpp_1_1channel__create__t.html#a8c8f9f215eed9b1e99adc12eafdee945',1,'dpp::channel_create_t::creating_guild()'],['../structdpp_1_1thread__create__t.html#a096df9aa1bb92c18a69edcf2daee29db',1,'dpp::thread_create_t::creating_guild()']]],

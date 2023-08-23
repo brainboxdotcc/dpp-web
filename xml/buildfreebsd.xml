@@ -20,7 +20,7 @@
 <title>3. Build Source Code</title>
 <para><verbatim>cmake -B ./build
 cmake --build ./build -j8
-</verbatim> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
+</verbatim> Replace the number after <computeroutput>-j</computeroutput> with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
 <sect2 id="buildfreebsd_1autotoc_md82">
 <title>4. Install globally</title>
@@ -33,7 +33,7 @@ cmake --build ./build -j8
 </verbatim> Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
 </sect2>
 <sect2 id="buildfreebsd_1autotoc_md84">
-<title>7. Using the library</title>
+<title>6. Using the library</title>
 <para>Once installed, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
 </verbatim> The important flags in this command-line are:</para>
 <para><itemizedlist>

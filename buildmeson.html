@@ -111,13 +111,13 @@ $(document).ready(function(){initNavTree('buildmeson.html',''); initResizable();
 </pre><p> run the command </p><pre class="fragment">$ meson init -l cpp
 </pre> <h2><a class="anchor" id="autotoc_md143"></a>
 3. Configuring your Meson project</h2>
-<p >add the following line after the project() line in your meson.build file. </p><pre class="fragment">dpp = dependency('dpp')
-</pre><p> add the following line in the executable section of your meson.build file. </p><pre class="fragment">dependencies: [dpp]
-</pre><p> change the cpp_std value in the project() to c++17</p>
+<p >add the following line after the <code>project()</code> line in your <code>meson.build</code> file. </p><pre class="fragment">dpp = dependency('dpp')
+</pre><p> add the following line in the executable section of your <code>meson.build</code> file. </p><pre class="fragment">dependencies: [dpp]
+</pre><p> change the <code>cpp_std</code> value in the <code>project()</code> to <code>c++17</code></p>
 <p >your meson.build should look like this. </p><div class="fragment"><div class="line">project(&#39;discord-bot&#39;, &#39;cpp&#39;,</div>
 <div class="line">  version : &#39;0.1&#39;,</div>
 <div class="line">  default_options : [&#39;warning_level=3&#39;,</div>
-<div class="line">                     &#39;cpp_std=c++14&#39;])</div>
+<div class="line">                     &#39;cpp_std=c++17&#39;])</div>
 <div class="line"> </div>
 <div class="line">dpp = dependency(&#39;dpp&#39;)</div>
 <div class="line"> </div>

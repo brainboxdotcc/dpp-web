@@ -8,7 +8,7 @@ var searchData=
   ['context_20menus_5',['Context Menus',['../context-menu.html',1,'interactions-and-components']]],
   ['creating_20a_20bot_20token_6',['Creating a Bot Token',['../creating-a-bot-application.html',1,'md_docpages_04_building_a_bot']]],
   ['creating_20a_20discord_20bot_7',['Creating a Discord Bot',['../md_docpages_04_building_a_bot.html',1,'']]],
-  ['creating_20a_20discord_20bot_20in_20repl_2eit_8',['Creating a Discord bot in Repl.it',['../building-a-cpp-discord-bot-in-repl.html',1,'md_docpages_04_building_a_bot']]],
+  ['creating_20a_20discord_20bot_20in_20replit_8',['Creating a Discord bot in Replit',['../building-a-cpp-discord-bot-in-repl.html',1,'md_docpages_04_building_a_bot']]],
   ['creating_20a_20sound_20board_9',['Creating a Sound Board',['../soundboard.html',1,'music-and-audio']]],
   ['creating_20your_20first_20bot_10',['Creating Your First Bot',['../firstbot.html',1,'the-basics']]]
 ];

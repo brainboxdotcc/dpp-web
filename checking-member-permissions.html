@@ -154,7 +154,7 @@ Checking permissions on your own</h3>
 <h3><a class="anchor" id="autotoc_md110"></a>
 From Parameters</h3>
 <p >The resolved set also contains the permissions of members from command parameters.</p>
-<p >For example let's say you want to prohibit people from banning server admins with your ban command.</p>
+<p >For example, let's say you want to prohibit people from banning server admins with your ban command.</p>
 <p >Get the user ID from the parameters and pass it to the <code>get_resolved_permission</code> method:</p>
 <div class="fragment"><div class="line">bot.on_interaction_create([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1interaction__create__t.html">dpp::interaction_create_t</a>&amp; event) {</div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1snowflake.html">dpp::snowflake</a> user_id = std::get&lt;dpp::snowflake&gt;(event.<a class="code hl_function" href="structdpp_1_1interaction__create__t.html#ae89b601e82f534d5d87135b82a6f0491">get_parameter</a>(<span class="stringliteral">&quot;user&quot;</span>));</div>

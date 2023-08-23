@@ -51,7 +51,7 @@
 <sect3 id="checking-member-permissions_1autotoc_md110">
 <title>From Parameters</title>
 <para>The resolved set also contains the permissions of members from command parameters.</para>
-<para>For example let&apos;s say you want to prohibit people from banning server admins with your ban command.</para>
+<para>For example, let&apos;s say you want to prohibit people from banning server admins with your ban command.</para>
 <para>Get the user ID from the parameters and pass it to the <computeroutput>get_resolved_permission</computeroutput> method:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="normal">bot.on_interaction_create([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref><sp/>user_id<sp/>=<sp/>std::get&lt;dpp::snowflake&gt;(event.<ref refid="structdpp_1_1interaction__create__t_1ae89b601e82f534d5d87135b82a6f0491" kindref="member">get_parameter</ref>(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">));</highlight></codeline>

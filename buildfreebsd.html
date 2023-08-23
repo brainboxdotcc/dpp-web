@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('buildfreebsd.html',''); initResizable(
 3. Build Source Code</h2>
 <pre class="fragment">cmake -B ./build
 cmake --build ./build -j8
-</pre><p> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
+</pre><p> Replace the number after <code>-j</code> with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
 <h2><a class="anchor" id="autotoc_md82"></a>
 4. Install globally</h2>
 <pre class="fragment">cd build; make install
@@ -121,7 +121,7 @@ cmake --build ./build -j8
 <p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
 </pre><p> Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
 <h2><a class="anchor" id="autotoc_md84"></a>
-7. Using the library</h2>
+6. Using the library</h2>
 <p >Once installed, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
 </pre><p> The important flags in this command-line are:</p>
 <ul>

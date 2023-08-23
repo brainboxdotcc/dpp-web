@@ -13,7 +13,7 @@
 <title>1. Build Source Code</title>
 <para><verbatim>cmake -B ./build
 cmake --build ./build -j8
-</verbatim> Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
+</verbatim> Replace the number after <computeroutput>-j</computeroutput> with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
 <sect2 id="buildlinux_1autotoc_md86">
 <title>2. Install to /usr/local/include and /usr/local/lib</title>
@@ -27,7 +27,7 @@ cmake --build ./build -j8
 </sect2>
 <sect2 id="buildlinux_1autotoc_md88">
 <title>4. Using the library</title>
-<para>Once installed to the /usr/local directory, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp
+<para>Once installed to the <computeroutput>/usr/local</computeroutput> directory, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp
 </verbatim> The important flags in this command-line are:</para>
 <para><itemizedlist>
 <listitem><para><computeroutput>-std=c++17</computeroutput> - Required to compile the headers<itemizedlist>
