@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['record_20yourself_20in_20a_20vc_0',['Record yourself in a VC',['../record-user.html',1,'music-and-audio']]]
+  ['project_20security_20design_0',['Project Security Design',['../security.html',1,'md_docpages_06_advanced_reference']]]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"structdpp_1_1welcome__channel.html#a425043d875a90151082c78f96c239f07":[9,0,0,225,8],
 "structdpp_1_1welcome__channel.html#a425043d875a90151082c78f96c239f07":[10,0,0,222,8],
 "structdpp_1_1welcome__channel.html#a5463d7699a713f9a353883dc4e60bd91":[10,0,0,222,3],
 "structdpp_1_1welcome__channel.html#a5463d7699a713f9a353883dc4e60bd91":[9,0,0,225,3],
@@ -29,7 +30,7 @@ var NAVTREEINDEX61 =
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[9,0,1,0],
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html#a862f06ae744297479158a438b219cb05":[9,0,1,0,0],
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html#a862f06ae744297479158a438b219cb05":[10,0,1,0,0],
-"subcommands.html":[5,1,2],
+"subcommands.html":[5,1,1],
 "the-basics.html":[5,0],
 "thread-model.html":[6,1],
 "todo.html":[8],

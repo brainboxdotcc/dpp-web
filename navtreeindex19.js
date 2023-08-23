@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"interactions-and-components.html":[5,1],
 "joinvc.html":[5,2,4],
 "lambdas-and-locals.html":[6,4],
 "making_a_http_request.html":[5,3,0],
@@ -39,7 +40,7 @@ var NAVTREEINDEX19 =
 "md_docpages_05_example_programs.html":[5],
 "md_docpages_06_advanced_reference.html":[6],
 "misc.html":[5,3],
-"modal-dialog-interactions.html":[5,1,6],
+"modal-dialog-interactions.html":[5,1,7],
 "music-and-audio.html":[5,2],
 "namespacedpp.html":[9,0,0],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5":[9,0,0,325],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099aa9cf62c258d60209c8cded95f3bdda5f":[9,0,0,341,7],
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8":[9,0,0,341,1],
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099aaf3dc305ad57fce93bd2ffedfda56c9e":[9,0,0,341,4],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099aba9d0404b39ea6672b3bcf52feae17b1":[9,0,0,341,6],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099add96d40dff33aeaa90caa7979c469da3":[9,0,0,341,5]
+"namespacedpp.html#a51891a9e382f9c396d378de00fa65099aba9d0404b39ea6672b3bcf52feae17b1":[9,0,0,341,6]
 };

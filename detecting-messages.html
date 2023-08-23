@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Interactions And Components - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Listening to messages - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Interactions And Components - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Listening to messages - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Interactions And Components - D++ - The lightweight C++ Discord API Library">
-<title>Interactions And Components - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Listening to messages - D++ - The lightweight C++ Discord API Library">
+<title>Listening to messages - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('interactions-and-components.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('detecting-messages.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,29 +98,53 @@ $(document).ready(function(){initNavTree('interactions-and-components.html','');
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Interactions And Components </div></div>
+  <div class="headertitle"><div class="title">Listening to messages </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >The example programs listed here demonstrate lots of things to do with interactions, application commands (slash commands) and message components. If you're looking to make your bot <b>modern and user friendly</b> these examples are what you need.</p>
-<ul>
-<li><a class="el" href="slashcommands.html">Using Slash Commands and Interactions</a></li>
-<li><a class="el" href="subcommands.html">Slash command sub-commands</a></li>
-<li><a class="el" href="components.html">Using button components</a></li>
-<li><a class="el" href="components2.html">Advanced button components</a></li>
-<li><a class="el" href="components3.html">Using select menu components</a></li>
-<li><a class="el" href="detecting-messages.html">Listening to messages</a></li>
-<li><a class="el" href="context-menu.html">Context Menus</a></li>
-<li><a class="el" href="modal-dialog-interactions.html">Modal Dialogs</a></li>
-<li><a class="el" href="commandhandler.html">Unified message/slash command handler</a></li>
-<li><a class="el" href="application-command-autocomplete.html">Slash command auto completion</a></li>
-<li><a class="el" href="discord-application-command-file-upload.html">Using file parameters in slash commands</a> </li>
-</ul>
-</div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
+<div class="textblock"><p >Sometimes, you may want to listen out for a message, rather than a command. This could be used for many cases like a spam filter, a bot that would respond to movie quotes with gifs, or a chat bot! However, in this page, we'll be using this to create a moderation filter (detect bad words).</p>
+<dl class="section warning"><dt>Warning</dt><dd>As of August 30th, 2022, Discord made Message Content a privileged intent. Whilst this means you can still use prefixed messages as commands, Discord does not encourage this and heavily suggests you use <a href="/slashcommands.html">slash commands</a>. If you wish to create commands, use <a href="/slashcommands.html">slash commands</a>, not messages.</dd></dl>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">/* Create the bot, but with our intents so we can use messages. */</span></div>
+<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>, <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a>);</div>
+<div class="line"> </div>
+<div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/* The event is fired when the bot detects a message in any server and any channel it has access to. */</span></div>
+<div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a>&amp; event) {</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* See if the message contains the phrase we want to check for.</span></div>
+<div class="line"><span class="comment">         * If there&#39;s at least a single match, we reply and say it&#39;s not allowed.</span></div>
+<div class="line"><span class="comment">         */</span></div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">msg</a>.<a class="code hl_variable" href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">content</a>.find(<span class="stringliteral">&quot;bad word&quot;</span>) != std::string::npos) {</div>
+<div class="line">            event.reply(<span class="stringliteral">&quot;That is not allowed here. Please, mind your language!&quot;</span>, true);</div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    bot.start(<a class="code hl_enumvalue" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:82</div></div>
+<div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; DPP_EXPORT cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div></div>
+<div class="ttc" id="anamespacedpp_html_a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414"><div class="ttname"><a href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a></div><div class="ttdeci">@ i_message_content</div><div class="ttdoc">Intent for receipt of message content.</div><div class="ttdef"><b>Definition:</b> intents.h:65</div></div>
+<div class="ttc" id="anamespacedpp_html_a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f"><div class="ttname"><a href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a></div><div class="ttdeci">@ i_default_intents</div><div class="ttdoc">Default D++ intents (all non-privileged intents)</div><div class="ttdef"><b>Definition:</b> intents.h:73</div></div>
+<div class="ttc" id="anamespacedpp_html_af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"><div class="ttname"><a href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a></div><div class="ttdeci">@ st_wait</div><div class="ttdoc">Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will ...</div><div class="ttdef"><b>Definition:</b> cluster.h:65</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html"><div class="ttname"><a href="structdpp_1_1message__create__t.html">dpp::message_create_t</a></div><div class="ttdoc">Create message.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1476</div></div>
+<div class="ttc" id="astructdpp_1_1message__create__t_html_a02298492087c0ba68eeb4ea8e42833b4"><div class="ttname"><a href="structdpp_1_1message__create__t.html#a02298492087c0ba68eeb4ea8e42833b4">dpp::message_create_t::msg</a></div><div class="ttdeci">message msg</div><div class="ttdoc">message that was created (sent).</div><div class="ttdef"><b>Definition:</b> dispatcher.h:1485</div></div>
+<div class="ttc" id="astructdpp_1_1message_html_acb17877db423d2ac4b103a67e1ae2ff6"><div class="ttname"><a href="structdpp_1_1message.html#acb17877db423d2ac4b103a67e1ae2ff6">dpp::message::content</a></div><div class="ttdeci">std::string content</div><div class="ttdef"><b>Definition:</b> message.h:1182</div></div>
+</div><!-- fragment --><p >If all went well, you should have something like this!</p>
+<div class="image">
+<img src="badwordfilter.png" alt=""/>
+</div>
+ </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
-		<li class="navelem"><a class="el" href="md_docpages_05_example_programs.html">Example Programs</a></li>
+		<li class="navelem"><a class="el" href="md_docpages_05_example_programs.html">Example Programs</a></li><li class="navelem"><a class="el" href="interactions-and-components.html">Interactions And Components</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

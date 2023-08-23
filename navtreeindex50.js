@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"structdpp_1_1command__option.html#adbb960edfa14ae19545d64397a785ab3":[9,0,0,51,26],
 "structdpp_1_1command__option.html#adbb960edfa14ae19545d64397a785ab3":[10,0,0,48,26],
 "structdpp_1_1command__option.html#af1908a38a09a68eb25c118f694c6cc40":[9,0,0,51,12],
 "structdpp_1_1command__option.html#af1908a38a09a68eb25c118f694c6cc40":[10,0,0,48,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html":[10,0,0,0,0,1],
 "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html":[9,0,0,1,0,1],
 "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html#a48d4378bbf99392a48028c4f089ec9ce":[10,0,0,0,0,1,0],
-"structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html#a48d4378bbf99392a48028c4f089ec9ce":[9,0,0,1,0,1,0],
-"structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html":[9,0,0,1,0,2]
+"structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html#a48d4378bbf99392a48028c4f089ec9ce":[9,0,0,1,0,1,0]
 };
