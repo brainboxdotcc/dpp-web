@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"install-windows-vs-zip.html":[3,4],
+"install-xmake.html":[3,6],
 "interactions-and-components.html":[5,1],
 "joinvc.html":[5,2,4],
 "lambdas-and-locals.html":[6,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a8d6403af9f4d5b0b849c3f883d0e49e8":[9,0,0,341,13],
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313":[9,0,0,341,0],
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099aa9cf62c258d60209c8cded95f3bdda5f":[9,0,0,341,7],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8":[9,0,0,341,1],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099aaf3dc305ad57fce93bd2ffedfda56c9e":[9,0,0,341,4],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099aba9d0404b39ea6672b3bcf52feae17b1":[9,0,0,341,6]
+"namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8":[9,0,0,341,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"classdpp_1_1voicestate.html#a5b0fa82d1d55249aeb96fd7119aac5c2":[10,0,0,218,9],
+"classdpp_1_1voicestate.html#a5b0fa82d1d55249aeb96fd7119aac5c2":[9,0,0,221,9],
 "classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d":[10,0,0,218,5],
 "classdpp_1_1voicestate.html#a5b42b2ae9e76fe86bdf73eac208d953d":[9,0,0,221,5],
 "classdpp_1_1voicestate.html#a631921c8fd04d5b3c1989218b48ef4d3":[10,0,0,218,8],
@@ -228,8 +230,8 @@ var NAVTREEINDEX18 =
 "functions_~.html":[10,3,0,23],
 "governance.html":[6,6],
 "hierarchy.html":[10,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md121":[0,0],
 "index.html#autotoc_md122":[0,1],
 "index.html#autotoc_md123":[0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "install-linux-deb.html":[3,0],
 "install-linux-rpm.html":[3,1],
 "install-vcpkg.html":[3,2],
-"install-windows-clion-vcpkg.html":[3,5],
-"install-windows-vs-zip.html":[3,4],
-"install-xmake.html":[3,6]
+"install-windows-clion-vcpkg.html":[3,5]
 };
