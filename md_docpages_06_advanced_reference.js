@@ -9,5 +9,6 @@ var md_docpages_06_advanced_reference =
     [ "Governance and Project Development Structure", "governance.html", null ],
     [ "Development Roadmap", "roadmap.html", null ],
     [ "Project Security Design", "security.html", null ],
-    [ "Automating your bot with Jenkins", "automating-with-jenkins.html", null ]
+    [ "Automating your bot with Jenkins", "automating-with-jenkins.html", null ],
+    [ "Separating events into new classes", "separate-events.html", null ]
 ];

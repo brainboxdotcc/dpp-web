@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="separate-events" kind="page">
+    <compoundname>separate-events</compoundname>
+    <title>Separating events into new classes</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>If you&apos;re someone that loves file organisation (or you hate how cluttered your <computeroutput>main.cpp</computeroutput> has become) then you may be interested in moving events into separate classes outside of the <computeroutput>main.cpp</computeroutput> file. This is a great way to improve readability and can be helpful in many cases! For example, you can have two classes on the same event, except one could be reading messages for spam and one could be reading messages for bad words!</para>
+<para>In this tutorial, we&apos;ll be taking the <ulink url="/detecting-messages.html">Listening to messages</ulink> example and moving the <computeroutput>on_message_create</computeroutput> event into a different class.</para>
+<para>To get started, you can create a folder called <computeroutput>listeners</computeroutput> inside <computeroutput>src</computeroutput> (where your <computeroutput>main.cpp</computeroutput> is) if you&apos;d like to put it there! We&apos;ll be doing exactly that so, if you&apos;d like to stick along with the tutorial, get creating that folder!</para>
+<para>Now, you can create a new header and cpp file in this folder! For this tutorial, we&apos;ll be naming both these files <computeroutput>message_listener</computeroutput>!</para>
+<para>If you&apos;re using CMake, you&apos;ll need to add this to your <computeroutput>CMakeLists.txt</computeroutput>. Some IDEs automatically do this but it&apos;s always worth double-checking!</para>
+<para>Once that&apos;s done, it should look similar to this (this screenshot has more files in, so it won&apos;t be identical!):</para>
+<para><image type="html" name="file_example_listeners.png"></image>
+</para>
+<para>First, we need to define the function that will be called when the event fires. We do this in the <computeroutput>message_listener.h</computeroutput>, like so:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">message_listener<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>a<sp/>static<sp/>function<sp/>that<sp/>can<sp/>be<sp/>called<sp/>anywhere.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_message_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>&amp;<sp/>event);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para>
+<para>Then we need to add our code for what should happen when this event fires. We do this in the <computeroutput>message_listener.cpp</computeroutput>, like so:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&quot;message_listener.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>message_listener::on_message_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref><sp/>&amp;event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>See<sp/>if<sp/>the<sp/>message<sp/>contains<sp/>the<sp/>phrase<sp/>we<sp/>want<sp/>to<sp/>check<sp/>for.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>If<sp/>there&apos;s<sp/>at<sp/>least<sp/>a<sp/>single<sp/>match,<sp/>we<sp/>reply<sp/>and<sp/>say<sp/>it&apos;s<sp/>not<sp/>allowed.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref>.find(</highlight><highlight class="stringliteral">&quot;bad<sp/>word&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.reply(</highlight><highlight class="stringliteral">&quot;That<sp/>is<sp/>not<sp/>allowed<sp/>here.<sp/>Please,<sp/>mind<sp/>your<sp/>language!&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Now, you&apos;ll have a nice area where you can easily see the code, without scrolling through all of your <computeroutput>main.cpp</computeroutput> file just to get to this event!</para>
+<para>However, we&apos;ve not finished yet! If you thought &quot;How does the `main.cpp` file actually know to call this?&quot; then, 10 points to you! It doesn&apos;t know! We need to go do that now. So, let&apos;s do exactly that.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;listeners/message_listener.h&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>the<sp/>bot,<sp/>but<sp/>with<sp/>our<sp/>intents<sp/>so<sp/>we<sp/>can<sp/>use<sp/>messages.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" kindref="member">dpp::i_default_intents</ref><sp/>|<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414" kindref="member">dpp::i_message_content</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fires<sp/>our<sp/>event<sp/>that<sp/>is<sp/>located<sp/>in<sp/>MessageListener<sp/>when<sp/>the<sp/>bot<sp/>detects<sp/>a<sp/>message<sp/>in<sp/>any<sp/>server<sp/>and<sp/>any<sp/>channel<sp/>it<sp/>has<sp/>access<sp/>to.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_create(&amp;message_listener::on_message_create);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>And there we go! How tidy is that?</para>
+<para>Now, the possibilities to this are not limited. If you wish to do this twice (as I explained at first), you can simply have another class and just copy the <computeroutput>bot.on_message_create</computeroutput> line below in the <computeroutput>main.cpp</computeroutput> file and then you can change it to reference the second class, meaning you have two message events firing in two separate classes! </para>
+    </detaileddescription>
+    <location file="docpages/advanced_reference/separate-events.md"/>
+  </compounddef>
+</doxygen>
