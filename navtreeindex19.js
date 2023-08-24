@@ -42,7 +42,7 @@ var NAVTREEINDEX19 =
 "md_docpages_05_example_programs.html":[5],
 "md_docpages_06_advanced_reference.html":[6],
 "misc.html":[5,3],
-"modal-dialog-interactions.html":[5,1,7],
+"modal-dialog-interactions.html":[5,1,8],
 "music-and-audio.html":[5,2],
 "namespacedpp.html":[9,0,0],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5":[9,0,0,325],
