@@ -7092,6 +7092,12 @@ var namespacedpp =
       [ "st_standard", "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca", null ],
       [ "st_guild", "namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffab02bd29c3f40a3228fd1630d34882ede", null ]
     ] ],
+    [ "team_member_role_t", "namespacedpp.html#ae60308dde60edf7ca382321550e11a14", [
+      [ "tmr_owner", "namespacedpp.html#ae60308dde60edf7ca382321550e11a14ac61717273cccbf361c596f37a2ceea90", null ],
+      [ "tmr_admin", "namespacedpp.html#ae60308dde60edf7ca382321550e11a14a05d4cb92d2058ffac608b114b843f7ca", null ],
+      [ "tmr_developer", "namespacedpp.html#ae60308dde60edf7ca382321550e11a14a46dc1ddd8086fc89bdd4031b1d3cafc0", null ],
+      [ "tmr_readonly", "namespacedpp.html#ae60308dde60edf7ca382321550e11a14afed0524f2d52cd5363af9c928013a3c4", null ]
+    ] ],
     [ "team_member_status", "namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4", [
       [ "tms_invited", "namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230", null ],
       [ "tms_accepted", "namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31", null ]

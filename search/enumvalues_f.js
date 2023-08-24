@@ -13,6 +13,10 @@ var searchData=
   ['tier_5f2_10',['tier_2',['../namespacedpp.html#ab7f40af8c547f08790e620708879fcbaa13f2b83dc517dcd8a6284d69a4b537b1',1,'dpp']]],
   ['tier_5f3_11',['tier_3',['../namespacedpp.html#ab7f40af8c547f08790e620708879fcbaa1c2ba6f22c52d59c46886bb81aa20780',1,'dpp']]],
   ['tier_5fnone_12',['tier_none',['../namespacedpp.html#ab7f40af8c547f08790e620708879fcbaaa99f6b37813bbe811aa62973aa794874',1,'dpp']]],
-  ['tms_5faccepted_13',['tms_accepted',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31',1,'dpp']]],
-  ['tms_5finvited_14',['tms_invited',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230',1,'dpp']]]
+  ['tmr_5fadmin_13',['tmr_admin',['../namespacedpp.html#ae60308dde60edf7ca382321550e11a14a05d4cb92d2058ffac608b114b843f7ca',1,'dpp']]],
+  ['tmr_5fdeveloper_14',['tmr_developer',['../namespacedpp.html#ae60308dde60edf7ca382321550e11a14a46dc1ddd8086fc89bdd4031b1d3cafc0',1,'dpp']]],
+  ['tmr_5fowner_15',['tmr_owner',['../namespacedpp.html#ae60308dde60edf7ca382321550e11a14ac61717273cccbf361c596f37a2ceea90',1,'dpp']]],
+  ['tmr_5freadonly_16',['tmr_readonly',['../namespacedpp.html#ae60308dde60edf7ca382321550e11a14afed0524f2d52cd5363af9c928013a3c4',1,'dpp']]],
+  ['tms_5faccepted_17',['tms_accepted',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31',1,'dpp']]],
+  ['tms_5finvited_18',['tms_invited',['../namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230',1,'dpp']]]
 ];
