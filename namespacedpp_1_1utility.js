@@ -3,6 +3,11 @@ var namespacedpp_1_1utility =
     [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
     [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ],
     [ "cmd_result_t", "namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6", null ],
+    [ "guild_navigation_type", "namespacedpp_1_1utility.html#aeba8b1b32778b3f59bc9d18d8a1ddd5d", [
+      [ "gnt_customize", "namespacedpp_1_1utility.html#aeba8b1b32778b3f59bc9d18d8a1ddd5daa5d69979f1346e5d4b0372d658b1fddb", null ],
+      [ "gnt_browse", "namespacedpp_1_1utility.html#aeba8b1b32778b3f59bc9d18d8a1ddd5dab9443e580111a0db8d0522dd3bbe6d3a", null ],
+      [ "gnt_guide", "namespacedpp_1_1utility.html#aeba8b1b32778b3f59bc9d18d8a1ddd5da3d74707694a974d60641ce19970e9ba8", null ]
+    ] ],
     [ "time_format", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7", [
       [ "tf_long_date", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a380a740f8843af94cd3007d7fdf3ce30", null ],
       [ "tf_long_datetime", "namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a7bdb33c94eff8e026e6a864f217e33c5", null ],
@@ -28,6 +33,7 @@ var namespacedpp_1_1utility =
     [ "exec", "namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0", null ],
     [ "file_extension", "namespacedpp_1_1utility.html#ada68aa2fde414885eec777031c5cf768", null ],
     [ "file_extension", "namespacedpp_1_1utility.html#ae3096353914033c06d4c9e1ae9f2f518", null ],
+    [ "guild_navigation", "namespacedpp_1_1utility.html#aaee05a9f5f440d06434de11804879479", null ],
     [ "has_voice", "namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4", null ],
     [ "is_coro_enabled", "namespacedpp_1_1utility.html#a282afa80feeda7760345275546ca8a76", null ],
     [ "log_error", "namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910", null ],

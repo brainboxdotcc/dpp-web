@@ -249,5 +249,5 @@ var NAVTREEINDEX46 =
 "namespacedpp_1_1unicode__emoji.html#affd1eea19455d6d0b337ddbe8c774539":[9,0,0,4,5141],
 "namespacedpp_1_1unicode__emoji.html#affd5c107bbb4347f25bbe2be9dab12c0":[9,0,0,4,4206],
 "namespacedpp_1_1utility.html":[9,0,0,5],
-"namespacedpp_1_1utility.html#a00f8e4bb0915722be20973c9cf356f38":[9,0,0,5,40]
+"namespacedpp_1_1utility.html#a00f8e4bb0915722be20973c9cf356f38":[9,0,0,5,42]
 };
