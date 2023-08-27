@@ -9,10 +9,10 @@
 <para><simplesect kind="warning"><para>D++ Coroutines are a very new feature and are currently only supported by D++ on g++ 11, clang/LLVM 14, and MSVC 19.37 or above. Additionally, D++ must be built with the CMake option DPP_CORO, and your program must both define the macro DPP_CORO and use C++20 or above. The feature is experimental and may have bugs or even crashes, please report any to <ulink url="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</ulink> or to our <ulink url="https://discord.gg/dpp">Discord Server</ulink>.</para>
 </simplesect>
 </para>
-<sect3 id="coroutines_1autotoc_md71">
+<sect3 id="coroutines_1autotoc_md65">
 <title>What is a coroutine?</title>
 <para>Introduced in C++20, coroutines are the solution to the impracticality of callbacks. In short, a coroutine is a function that can be paused and resumed later. They are an extremely powerful alternative to callbacks for asynchronous APIs in particular, as the function can be paused when waiting for an API response, and resumed when it is received.</para>
-<para>Let&apos;s revisit <ulink url="/attach-file.html">attaching a downloaded file</ulink>, but this time with a coroutine:</para>
+<para>Let&apos;s revisit <ref refid="attach-file" kindref="compound">attaching a downloaded file</ref>, but this time with a coroutine:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
@@ -49,13 +49,13 @@
 <para>Coroutines can make commands simpler by eliminating callbacks, which can be very handy in the case of complex commands that rely on a lot of different data or steps.</para>
 <para>In order to be a coroutine, a function has to return a special type with special functions; D++ offers <ref refid="structdpp_1_1job" kindref="compound">dpp::job</ref>, dpp::task&lt;R&gt;, and dpp::coroutine&lt;R&gt;, which are designed to work seamlessly with asynchronous calls through <ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref>, which all the functions starting with <computeroutput>co_</computeroutput> such as <ref refid="classdpp_1_1cluster_1ab9ad0d98f81e30ba95dd39729a2ce818" kindref="member">dpp::cluster::co_message_create</ref> return. Event routers can have a <ref refid="structdpp_1_1job" kindref="compound">dpp::job</ref> attached to them, as this object allows to create coroutines that can execute on their own, asynchronously. More on that and the difference between it and the other two types later. To turn a function into a coroutine, simply make it return <ref refid="structdpp_1_1job" kindref="compound">dpp::job</ref> as seen in the example at line 10, then use <computeroutput>co_await</computeroutput> on awaitable types or <computeroutput>co_return</computeroutput>. The moment the execution encounters one of these two keywords, the function is transformed into a coroutine.</para>
 <para>When using a <computeroutput>co_*</computeroutput> function such as <computeroutput>co_message_create</computeroutput>, the request is sent immediately and the returned <ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref> can be <computeroutput>co_await</computeroutput>-ed, at which point the coroutine suspends (pauses) and returns back to its caller; in other words, the program is free to go and do other things while the data is being retrieved and D++ will resume your coroutine when it has the data you need, which will be returned from the <computeroutput>co_await</computeroutput> expression.</para>
-<para><simplesect kind="attention"><para>You may hear that coroutines are &quot;writing async code as if it was sync&quot;, while this is sort of correct, it may limit your understanding and especially the dangers of coroutines. I find <bold>they are best thought of as a shortcut for a state machine</bold>. If you&apos;ve ever written one, you know what this means. Think of the lambda as <emphasis>its constructor</emphasis>, in which captures are variable parameters. Think of the parameters passed to your lambda as data members in your state machine. References are kept as references, and by the time the state machine is resumed, the reference may be dangling : <ulink url="/lambdas-and-locals.html">this is not good</ulink>! As a rule of thumb when making coroutines, <bold>always prefer taking parameters by value and avoid lambda capture</bold>.</para>
+<para><simplesect kind="attention"><para>You may hear that coroutines are &quot;writing async code as if it was sync&quot;, while this is sort of correct, it may limit your understanding and especially the dangers of coroutines. I find <bold>they are best thought of as a shortcut for a state machine</bold>. If you&apos;ve ever written one, you know what this means. Think of the lambda as <emphasis>its constructor</emphasis>, in which captures are variable parameters. Think of the parameters passed to your lambda as data members in your state machine. References are kept as references, and by the time the state machine is resumed, the reference may be dangling : <ref refid="lambdas-and-locals" kindref="compound">this is not good</ref>! As a rule of thumb when making coroutines, <bold>always prefer taking parameters by value and avoid lambda capture</bold>.</para>
 </simplesect>
 </para>
 </sect3>
-<sect3 id="coroutines_1autotoc_md72">
+<sect3 id="coroutines_1autotoc_md66">
 <title>Several steps in one</title>
-<para><simplesect kind="note"><para>The next example assumes you are already familiar with how to use <ulink url="/firstbot.html">slash commands</ulink>, <ulink url="/slashcommands.html">parameters</ulink>, and <ulink url="/discord-application-command-file-upload.html">sending files through a command</ulink>.</para>
+<para><simplesect kind="note"><para>The next example assumes you are already familiar with how to use <ref refid="firstbot" kindref="compound">slash commands</ref>, <ref refid="slashcommands" kindref="compound">parameters</ref>, and <ref refid="discord-application-command-file-upload" kindref="compound">sending files through a command</ref>.</para>
 </simplesect>
 Here is another example of what is made easier with coroutines, an &quot;addemoji&quot; command taking a file and a name as a parameter. This means downloading the emoji, submitting it to Discord, and finally replying, with some error handling along the way. Normally we would have to use callbacks and some sort of object keeping track of our state, but with coroutines, it becomes much simpler:</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -124,7 +124,7 @@ Here is another example of what is made easier with coroutines, an &quot;addemoj
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 </sect3>
-<sect3 id="coroutines_1autotoc_md73">
+<sect3 id="coroutines_1autotoc_md67">
 <title>I heard you liked tasks</title>
 <para><simplesect kind="note"><para>This next example is fairly advanced and makes use of many of both C++ and D++&apos;s advanced features.</para>
 </simplesect>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['a_0',['a',['../namespacedpp_1_1unicode__emoji.html#adb8f039e0646872c820d838144af8432',1,'dpp::unicode_emoji']]],
-  ['a_20glossary_20of_20common_20discord_20terms_1',['A Glossary of Common Discord Terms',['../md_docpages_02_disdppgloss.html',1,'']]],
+  ['a_20glossary_20of_20common_20discord_20terms_1',['A Glossary of Common Discord Terms',['../glossary-of-common-discord-terms.html',1,'']]],
   ['a_5fis_5fremix_2',['a_is_remix',['../namespacedpp.html#a9ead2d4ab4b3a6035a7940e65027da1da51410217c0113152a312da176d376e91',1,'dpp']]],
   ['ab_3',['ab',['../namespacedpp_1_1unicode__emoji.html#aa70bb884dc499d140d61461b1765175c',1,'dpp::unicode_emoji']]],
   ['abacus_4',['abacus',['../namespacedpp_1_1unicode__emoji.html#aa75647eb8cbe9c3df4e3c4d63b298072',1,'dpp::unicode_emoji']]],
@@ -62,8 +62,8 @@ var searchData=
   ['adult_5ftone4_59',['adult_tone4',['../namespacedpp_1_1unicode__emoji.html#a15cb91ed24302a9ee1a004daeb1518bf',1,'dpp::unicode_emoji']]],
   ['adult_5ftone5_60',['adult_tone5',['../namespacedpp_1_1unicode__emoji.html#ae813b3e971c18cffef08445a27d82bff',1,'dpp::unicode_emoji']]],
   ['advanced_20button_20components_61',['Advanced button components',['../components2.html',1,'interactions-and-components']]],
-  ['advanced_20commands_20with_20coroutines_62',['Advanced commands with coroutines',['../coroutines.html',1,'md_docpages_06_advanced_reference']]],
-  ['advanced_20reference_63',['Advanced Reference',['../md_docpages_06_advanced_reference.html',1,'']]],
+  ['advanced_20commands_20with_20coroutines_62',['Advanced commands with coroutines',['../coroutines.html',1,'advanced-reference']]],
+  ['advanced_20reference_63',['Advanced Reference',['../advanced-reference.html',1,'']]],
   ['aerial_5ftramway_64',['aerial_tramway',['../namespacedpp_1_1unicode__emoji.html#ade76dce47a6fbb08be527edc05c2997c',1,'dpp::unicode_emoji']]],
   ['af_5fembedded_65',['af_embedded',['../namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da16e5931af2a44fd1050f0f2d2950df48',1,'dpp']]],
   ['af_5finstance_66',['af_instance',['../namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da1ed1f728ed51babc825103062bf1b077',1,'dpp']]],
@@ -319,7 +319,7 @@ var searchData=
   ['autocomplete_5fchoices_316',['autocomplete_choices',['../structdpp_1_1interaction__response.html#abb21d304dedf4a9bef3e221d115209e1',1,'dpp::interaction_response']]],
   ['autocomplete_5finteraction_317',['autocomplete_interaction',['../structdpp_1_1autocomplete__interaction.html',1,'dpp']]],
   ['autocomplete_5ft_318',['autocomplete_t',['../structdpp_1_1autocomplete__t.html#a2ccc278a70570af25f9fa7b245a120b9',1,'dpp::autocomplete_t::autocomplete_t()'],['../structdpp_1_1autocomplete__t.html',1,'dpp::autocomplete_t']]],
-  ['automating_20your_20bot_20with_20jenkins_319',['Automating your bot with Jenkins',['../automating-with-jenkins.html',1,'md_docpages_06_advanced_reference']]],
+  ['automating_20your_20bot_20with_20jenkins_319',['Automating your bot with Jenkins',['../automating-with-jenkins.html',1,'advanced-reference']]],
   ['automod_5faction_320',['automod_action',['../structdpp_1_1automod__action.html#ac2a996f644692f79ea0bd8bb2b840d5c',1,'dpp::automod_action::automod_action()'],['../structdpp_1_1automod__action.html',1,'dpp::automod_action']]],
   ['automod_5faction_5ftype_321',['automod_action_type',['../namespacedpp.html#a3ad85ab5a039a0c7f46107a02440a14c',1,'dpp']]],
   ['automod_5fevent_5ftype_322',['automod_event_type',['../namespacedpp.html#a397e69e257d7cb9733f1449317e27d90',1,'dpp']]],

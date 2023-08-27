@@ -113,7 +113,7 @@ var searchData=
   ['send_5fsilence_110',['send_silence',['../classdpp_1_1discord__voice__client.html#ac6d1422113278ad6049486d07ca06ae4',1,'dpp::discord_voice_client']]],
   ['sending_20embeds_111',['Sending Embeds',['../embed-message.html',1,'the-basics']]],
   ['sent_112',['sent',['../structdpp_1_1message.html#a9991c58453a1deb7b785a6b7457372f2',1,'dpp::message::sent()'],['../namespacedpp_1_1detail.html#ab8f8992a67c42dc3b707c8397c3e669ca789183b7e98646c11d5f0544c8f3c4c9',1,'dpp::detail::sent()']]],
-  ['separating_20events_20into_20new_20classes_113',['Separating events into new classes',['../separate-events.html',1,'md_docpages_06_advanced_reference']]],
+  ['separating_20events_20into_20new_20classes_113',['Separating events into new classes',['../separate-events.html',1,'advanced-reference']]],
   ['sepia_114',['sepia',['../namespacedpp_1_1colors.html#adb0b094f8b8ab112a81662b1c9661bf2',1,'dpp::colors']]],
   ['sepia_5fbrown_115',['sepia_brown',['../namespacedpp_1_1colors.html#a447df360b3f27e5d194833b31db93b49',1,'dpp::colors']]],
   ['seq_5frange_5ft_116',['seq_range_t',['../structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html',1,'dpp::discord_voice_client::voice_payload_parking_lot']]],

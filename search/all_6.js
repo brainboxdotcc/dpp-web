@@ -488,7 +488,7 @@ var searchData=
   ['french_5fbread_485',['french_bread',['../namespacedpp_1_1unicode__emoji.html#a422f54643ce53597bbed4c9622bbb801',1,'dpp::unicode_emoji']]],
   ['french_5flilac_486',['french_lilac',['../namespacedpp_1_1colors.html#ad6f1ab3b17e1de9f5c044b904075ead1',1,'dpp::colors']]],
   ['frequency_487',['frequency',['../structdpp_1_1timer__t.html#a6f7bb27bdbd5454dde61d6c9371d7c74',1,'dpp::timer_t']]],
-  ['frequently_20asked_20questions_20_28faq_29_488',['Frequently Asked Questions (FAQ)',['../md_docpages_01_frequently_asked_questions.html',1,'']]],
+  ['frequently_20asked_20questions_20_28faq_29_488',['Frequently Asked Questions (FAQ)',['../frequently-asked-questions.html',1,'']]],
   ['fried_5fshrimp_489',['fried_shrimp',['../namespacedpp_1_1unicode__emoji.html#a2d3d66216cf6f53ca6785d094b53923e',1,'dpp::unicode_emoji']]],
   ['friend_5fsync_490',['friend_sync',['../classdpp_1_1connection.html#a131edac1a872df01bea43ab8adf9ff63',1,'dpp::connection']]],
   ['fries_491',['fries',['../namespacedpp_1_1unicode__emoji.html#a189ebcacf1174ce77502c8a8dbec8d3d',1,'dpp::unicode_emoji']]],
