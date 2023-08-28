@@ -5,5 +5,6 @@ var searchData=
   ['webhooks_5fupdate_5ft_2',['webhooks_update_t',['../structdpp_1_1webhooks__update__t.html',1,'dpp']]],
   ['websocket_5fclient_3',['websocket_client',['../classdpp_1_1websocket__client.html',1,'dpp']]],
   ['welcome_5fchannel_4',['welcome_channel',['../structdpp_1_1welcome__channel.html',1,'dpp']]],
-  ['welcome_5fscreen_5',['welcome_screen',['../structdpp_1_1welcome__screen.html',1,'dpp']]]
+  ['welcome_5fscreen_5',['welcome_screen',['../structdpp_1_1welcome__screen.html',1,'dpp']]],
+  ['when_5fany_6',['when_any',['../classdpp_1_1when__any.html',1,'dpp']]]
 ];

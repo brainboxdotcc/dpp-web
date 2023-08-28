@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/job.h" line="80" column="30" bodyfile="include/dpp/coro/job.h" bodystart="80" bodyend="82"/>
+        <location file="include/dpp/coro/job.h" line="83" column="30" bodyfile="include/dpp/coro/job.h" bodystart="83" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1job__promise_1a7c352c75773b64512f5f396ce77ad66d" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>std_coroutine::suspend_never</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/job.h" line="89" column="30" bodyfile="include/dpp/coro/job.h" bodystart="89" bodyend="91"/>
+        <location file="include/dpp/coro/job.h" line="92" column="30" bodyfile="include/dpp/coro/job.h" bodystart="92" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1job__promise_1ac8e5f6447d9598dd9c0ba3eb8b2c8810" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type><ref refid="structdpp_1_1job" kindref="compound">dpp::job</ref></type>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/job.h" line="98" column="10" bodyfile="include/dpp/coro/job.h" bodystart="98" bodyend="100"/>
+        <location file="include/dpp/coro/job.h" line="101" column="10" bodyfile="include/dpp/coro/job.h" bodystart="101" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1job__promise_1aa81f12cad733254432860b448440fd5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/job.h" line="107" column="6" bodyfile="include/dpp/coro/job.h" bodystart="107" bodyend="109"/>
+        <location file="include/dpp/coro/job.h" line="110" column="6" bodyfile="include/dpp/coro/job.h" bodystart="110" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1job__promise_1a074e4cf022b0722cb25f0f5a57514427" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>void</type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/job.h" line="114" column="6" bodyfile="include/dpp/coro/job.h" bodystart="114" bodyend="114"/>
+        <location file="include/dpp/coro/job.h" line="117" column="6" bodyfile="include/dpp/coro/job.h" bodystart="117" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1job__promise_1aa4a8809d9fd13c9c30204783a5929e61" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <templateparamlist>
@@ -114,7 +114,7 @@
 <para><computeroutput>job</computeroutput> is extremely efficient as a coroutine but this comes with drawbacks : It cannot be co_awaited, which means the second it co_awaits something, the program jumps back to the calling function, which continues executing. At this point, if the function returns, every object declared in the function including its parameters are destroyed, which causes dangling references. This is exactly the same problem as references in lambdas : <ulink url="https://dpp.dev/lambdas-and-locals.html">https://dpp.dev/lambdas-and-locals.html</ulink>.</para>
 <para>If you must pass a reference, pass it as a pointer or with std::ref, but you must fully understand the reason behind this warning, and what to avoid. If you prefer a safer type, use <computeroutput>coroutine</computeroutput> for synchronous execution, or <computeroutput>task</computeroutput> for parallel tasks, and co_await them.</para>
         </inbodydescription>
-        <location file="include/dpp/coro/job.h" line="117" column="3" bodyfile="include/dpp/coro/job.h" bodystart="117" bodyend="130"/>
+        <location file="include/dpp/coro/job.h" line="120" column="3" bodyfile="include/dpp/coro/job.h" bodystart="120" bodyend="133"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -122,7 +122,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/dpp/coro/job.h" line="63" column="1" bodyfile="include/dpp/coro/job.h" bodystart="63" bodyend="131"/>
+    <location file="include/dpp/coro/job.h" line="66" column="1" bodyfile="include/dpp/coro/job.h" bodystart="66" bodyend="134"/>
     <listofallmembers>
       <member refid="structdpp_1_1detail_1_1job__promise_1aa4a8809d9fd13c9c30204783a5929e61" prot="public" virt="non-virtual"><scope>dpp::detail::job_promise</scope><name>await_transform</name></member>
       <member refid="structdpp_1_1detail_1_1job__promise_1a756bf9d4ffbd294c2c97a2b3c1f200b2" prot="public" virt="non-virtual"><scope>dpp::detail::job_promise</scope><name>final_suspend</name></member>

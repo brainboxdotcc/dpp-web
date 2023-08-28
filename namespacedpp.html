@@ -794,6 +794,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1welcome__screen.html">welcome_screen</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a server's welcome screen.  <a href="structdpp_1_1welcome__screen.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html">when_any</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <code>result</code> object that contains the index of the awaitable that finished first. A user can call <code>get&lt;N&gt;()</code> on the result object to get the result, similar to std::variant.  <a href="classdpp_1_1when__any.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -1981,6 +1984,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1permission__overwrite.html">permission_overwrite</a> &amp;po)</td></tr>
 <tr class="memdesc:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="structdpp_1_1permission__overwrite.html" title="Channel permission overwrites.">permission_overwrite</a> object to json.  <a href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">More...</a><br /></td></tr>
 <tr class="separator:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec042312c305da2b49380300bde130b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:adec042312c305da2b49380300bde130b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adec042312c305da2b49380300bde130b">when_any</a> (Args...) -&gt; <a class="el" href="classdpp_1_1when__any.html">when_any</a>&lt; <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#ab93577972e3b54b64b033d6816f1e0d3">detail::when_any::awaitable_type</a>&lt; Args &gt;... &gt;</td></tr>
+<tr class="separator:adec042312c305da2b49380300bde130b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab9892169cd091ab8292c29ec27d43a4"><td class="memItemLeft" align="right" valign="top">uint64_t DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aab9892169cd091ab8292c29ec27d43a4">snowflake_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
 <tr class="memdesc:aab9892169cd091ab8292c29ec27d43a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a snowflake id from a json field value, if defined, else returns 0.  <a href="namespacedpp.html#aab9892169cd091ab8292c29ec27d43a4">More...</a><br /></td></tr>
 <tr class="separator:aab9892169cd091ab8292c29ec27d43a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8873,6 +8879,26 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::basic_string&lt;T&gt; uppercased string </dd></dl>
+
+</div>
+</div>
+<a id="adec042312c305da2b49380300bde130b" name="adec042312c305da2b49380300bde130b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec042312c305da2b49380300bde130b">&#9670;&nbsp;</a></span>when_any()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1when__any.html">dpp::when_any</a> </td>
+          <td>(</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  <a class="el" href="classdpp_1_1when__any.html">when_any</a>&lt; <a class="el" href="namespacedpp_1_1detail_1_1when__any.html#ab93577972e3b54b64b033d6816f1e0d3">detail::when_any::awaitable_type</a>&lt; Args &gt;... &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

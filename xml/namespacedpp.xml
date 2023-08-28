@@ -223,6 +223,7 @@
     <innerclass refid="classdpp_1_1websocket__client" prot="public">dpp::websocket_client</innerclass>
     <innerclass refid="structdpp_1_1welcome__channel" prot="public">dpp::welcome_channel</innerclass>
     <innerclass refid="structdpp_1_1welcome__screen" prot="public">dpp::welcome_screen</innerclass>
+    <innerclass refid="classdpp_1_1when__any" prot="public">dpp::when_any</innerclass>
     <innernamespace refid="namespacedpp_1_1colors">dpp::colors</innernamespace>
     <innernamespace refid="namespacedpp_1_1detail">dpp::detail</innernamespace>
     <innernamespace refid="namespacedpp_1_1embed__type">dpp::embed_type</innernamespace>
@@ -6542,7 +6543,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="44" column="16" bodyfile="include/dpp/event_router.h" bodystart="44" bodyend="-1"/>
+        <location file="include/dpp/event_router.h" line="160" column="16" bodyfile="include/dpp/event_router.h" bodystart="160" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a674dfd30e37779538e80d95fcb13770f" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt;</type>
@@ -7803,6 +7804,29 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/channel.h" line="834" column="6" declfile="include/dpp/channel.h" declline="834" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1adec042312c305da2b49380300bde130b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dpp::when_any</definition>
+        <argsstring>(Args...) -&gt; when_any&lt; detail::when_any::awaitable_type&lt; Args &gt;... &gt;</argsstring>
+        <name>when_any</name>
+        <param>
+          <type>Args...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="461" column="1" declfile="include/dpp/coro/when_any.h" declline="461" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aab9892169cd091ab8292c29ec27d43a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t DPP_EXPORT</type>

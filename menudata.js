@@ -72,7 +72,8 @@ var menudata={children:[
 {text:"s",url:"namespacemembers_func.html#index_s"},
 {text:"t",url:"namespacemembers_func.html#index_t"},
 {text:"u",url:"namespacemembers_func.html#index_u"},
-{text:"v",url:"namespacemembers_func.html#index_v"}]},
+{text:"v",url:"namespacemembers_func.html#index_v"},
+{text:"w",url:"namespacemembers_func.html#index_w"}]},
 {text:"Variables",url:"namespacemembers_vars.html",children:[
 {text:"_",url:"namespacemembers_vars.html#index__5F"},
 {text:"a",url:"namespacemembers_vars_a.html#index_a"},
@@ -158,6 +159,7 @@ var menudata={children:[
 {text:"u",url:"namespacemembers_eval_u.html#index_u"},
 {text:"v",url:"namespacemembers_eval_v.html#index_v"},
 {text:"w",url:"namespacemembers_eval_w.html#index_w"}]}]}]},
+{text:"Concepts",url:"concepts.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},

@@ -9,6 +9,8 @@ var hierarchy =
     [ "dpp::message::allowed_ref", "structdpp_1_1message_1_1allowed__ref.html", null ],
     [ "dpp::app_team", "classdpp_1_1app__team.html", null ],
     [ "dpp::application_install_params", "structdpp_1_1application__install__params.html", null ],
+    [ "dpp::detail::when_any::arg_helper_s< T >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", null ],
+    [ "dpp::detail::when_any::arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", null ],
     [ "dpp::detail::async_base< R >", "classdpp_1_1detail_1_1async__base.html", [
       [ "dpp::async< R >", "classdpp_1_1async.html", null ]
     ] ],
@@ -17,6 +19,8 @@ var hierarchy =
     [ "dpp::audio_mixer", "classdpp_1_1audio__mixer.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
+    [ "dpp::detail::event_router::awaitable< T >", "classdpp_1_1detail_1_1event__router_1_1awaitable.html", null ],
+    [ "dpp::when_any< Args >::awaiter", "structdpp_1_1when__any_1_1awaiter.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],
@@ -51,12 +55,14 @@ var hierarchy =
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::dns_cache_entry", "structdpp_1_1dns__cache__entry.html", null ],
+    [ "dpp::utility::dummy< T >", "structdpp_1_1utility_1_1dummy.html", null ],
     [ "dpp::embed", "structdpp_1_1embed.html", null ],
     [ "dpp::embed_author", "structdpp_1_1embed__author.html", null ],
     [ "dpp::embed_field", "structdpp_1_1embed__field.html", null ],
     [ "dpp::embed_footer", "structdpp_1_1embed__footer.html", null ],
     [ "dpp::embed_image", "structdpp_1_1embed__image.html", null ],
     [ "dpp::embed_provider", "structdpp_1_1embed__provider.html", null ],
+    [ "dpp::detail::when_any::empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ],
     [ "dpp::detail::empty_tag_t", "structdpp_1_1detail_1_1empty__tag__t.html", null ],
     [ "dpp::error_detail", "structdpp_1_1error__detail.html", null ],
     [ "dpp::error_info", "structdpp_1_1error__info.html", null ],
@@ -409,6 +415,7 @@ var hierarchy =
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
+    [ "dpp::when_any< Args >::result", "classdpp_1_1when__any_1_1result.html", null ],
     [ "dpp::discord_voice_client::voice_payload_parking_lot::seq_range_t", "structdpp_1_1discord__voice__client_1_1voice__payload__parking__lot_1_1seq__range__t.html", null ],
     [ "dpp::snowflake", "classdpp_1_1snowflake.html", null ],
     [ "dpp::ssl_client", "classdpp_1_1ssl__client.html", [
@@ -435,5 +442,6 @@ var hierarchy =
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::version_checker", "structdpp_1_1version__checker.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],
-    [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ]
+    [ "dpp::voiceconn", "classdpp_1_1voiceconn.html", null ],
+    [ "dpp::when_any< Args >", "classdpp_1_1when__any.html", null ]
 ];

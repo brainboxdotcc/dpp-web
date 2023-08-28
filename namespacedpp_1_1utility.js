@@ -1,5 +1,6 @@
 var namespacedpp_1_1utility =
 [
+    [ "dummy", "structdpp_1_1utility_1_1dummy.html", "structdpp_1_1utility_1_1dummy" ],
     [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
     [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ],
     [ "cmd_result_t", "namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6", null ],

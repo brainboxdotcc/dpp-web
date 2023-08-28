@@ -114,8 +114,14 @@ $(document).ready(function(){initNavTree('namespacedpp_1_1detail.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacedpp_1_1detail_1_1event__router"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail_1_1event__router.html">event_router</a></td></tr>
+<tr class="memdesc:namespacedpp_1_1detail_1_1event__router"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal cogwheels for <a class="el" href="classdpp_1_1event__router__t.html" title="Handles routing of an event to multiple listeners.">dpp::event_router_t</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedpp_1_1detail_1_1std__coroutine"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail_1_1std__coroutine.html">std_coroutine</a></td></tr>
 <tr class="memdesc:namespacedpp_1_1detail_1_1std__coroutine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for either std or std::experimental depending on compiler and library. Used by coroutine implementation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacedpp_1_1detail_1_1when__any"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail_1_1when__any.html">when_any</a></td></tr>
+<tr class="memdesc:namespacedpp_1_1detail_1_1when__any"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal cogwheels for <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">dpp::when_any</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -162,6 +168,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:afb0a0bcfb46ac28d58102ed8bb9c7e16"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afb0a0bcfb46ac28d58102ed8bb9c7e16"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#afb0a0bcfb46ac28d58102ed8bb9c7e16">awaitable_result</a> = decltype(<a class="el" href="namespacedpp_1_1detail.html#a63c76824ad809907fbd7fd5f714ad45d">co_await_resolve</a>(std::declval&lt; T &gt;()).await_resume())</td></tr>
+<tr class="memdesc:afb0a0bcfb46ac28d58102ed8bb9c7e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience alias for the result of a certain awaitable's await_resume.  <a href="namespacedpp_1_1detail.html#afb0a0bcfb46ac28d58102ed8bb9c7e16">More...</a><br /></td></tr>
+<tr class="separator:afb0a0bcfb46ac28d58102ed8bb9c7e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2754d5a7f48a947b5743b12236bab7a3"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
 <tr class="memitem:a2754d5a7f48a947b5743b12236bab7a3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#a2754d5a7f48a947b5743b12236bab7a3">coroutine_handle</a> = std_coroutine::coroutine_handle&lt; <a class="el" href="structdpp_1_1detail_1_1coroutine__promise.html">coroutine_promise</a>&lt; R &gt; &gt;</td></tr>
 <tr class="memdesc:a2754d5a7f48a947b5743b12236bab7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for the coroutine_handle of a coroutine.  <a href="namespacedpp_1_1detail.html#a2754d5a7f48a947b5743b12236bab7a3">More...</a><br /></td></tr>
@@ -207,17 +217,35 @@ Variables</h2></td></tr>
 <tr class="memitem:a01c89d41f1416ccc2d5be103e22cd5a7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#a01c89d41f1416ccc2d5be103e22cd5a7">has_await_members</a></td></tr>
 <tr class="memdesc:a01c89d41f1416ccc2d5be103e22cd5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept to check if a type has useable <code>await_ready()</code>, <code>await_suspend()</code> and <code>await_resume()</code> member functions.  <a href="namespacedpp_1_1detail.html#a01c89d41f1416ccc2d5be103e22cd5a7">More...</a><br /></td></tr>
 <tr class="separator:a01c89d41f1416ccc2d5be103e22cd5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29173f137a5316d91d1646c38955495b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a29173f137a5316d91d1646c38955495b"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#a29173f137a5316d91d1646c38955495b">coroutine_has_ref_params_v</a> = (std::is_reference_v&lt;Args&gt; || ... || false)</td></tr>
-<tr class="separator:a29173f137a5316d91d1646c38955495b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaee2f3d353fc2f04b7ba37ac88e2310"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:acaee2f3d353fc2f04b7ba37ac88e2310"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#acaee2f3d353fc2f04b7ba37ac88e2310">coroutine_has_ref_params_v&lt; T, Args... &gt;</a> = (std::is_reference_v&lt;Args&gt; || ... || (std::is_reference_v&lt;T&gt; &amp;&amp; !std::is_invocable_v&lt;T, Args...&gt;))</td></tr>
-<tr class="separator:acaee2f3d353fc2f04b7ba37ac88e2310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b850e8a3317577a179eb38c72ecf888"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a9b850e8a3317577a179eb38c72ecf888"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#a9b850e8a3317577a179eb38c72ecf888">coroutine_has_no_ref_params_v</a> = false</td></tr>
+<tr class="separator:a9b850e8a3317577a179eb38c72ecf888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac241fd887d3073868a7851d873d8f16a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:ac241fd887d3073868a7851d873d8f16a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail.html#ac241fd887d3073868a7851d873d8f16a">coroutine_has_no_ref_params_v&lt; T, Args... &gt;</a> = (std::is_invocable_v&lt;T, Args...&gt; || !std::is_reference_v&lt;T&gt;) &amp;&amp; (!std::is_reference_v&lt;Args&gt; &amp;&amp; ... &amp;&amp; true)</td></tr>
+<tr class="separator:ac241fd887d3073868a7851d873d8f16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implementation details for internal use only. </p>
 <dl class="section attention"><dt>Attention</dt><dd>This is only meant to be used by D++ internally. Support will not be given regarding the facilities in this namespace. </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="afb0a0bcfb46ac28d58102ed8bb9c7e16" name="afb0a0bcfb46ac28d58102ed8bb9c7e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0a0bcfb46ac28d58102ed8bb9c7e16">&#9670;&nbsp;</a></span>awaitable_result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedpp_1_1detail.html#afb0a0bcfb46ac28d58102ed8bb9c7e16">dpp::detail::awaitable_result</a> = typedef decltype(<a class="el" href="namespacedpp_1_1detail.html#a63c76824ad809907fbd7fd5f714ad45d">co_await_resolve</a>(std::declval&lt;T&gt;()).await_resume())</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convenience alias for the result of a certain awaitable's await_resume. </p>
+
+</div>
+</div>
 <a id="a2754d5a7f48a947b5743b12236bab7a3" name="a2754d5a7f48a947b5743b12236bab7a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2754d5a7f48a947b5743b12236bab7a3">&#9670;&nbsp;</a></span>coroutine_handle</h2>
 
@@ -340,8 +368,8 @@ template&lt;typename R &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a29173f137a5316d91d1646c38955495b" name="a29173f137a5316d91d1646c38955495b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29173f137a5316d91d1646c38955495b">&#9670;&nbsp;</a></span>coroutine_has_ref_params_v</h2>
+<a id="a9b850e8a3317577a179eb38c72ecf888" name="a9b850e8a3317577a179eb38c72ecf888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b850e8a3317577a179eb38c72ecf888">&#9670;&nbsp;</a></span>coroutine_has_no_ref_params_v</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +380,7 @@ template&lt;typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool dpp::detail::coroutine_has_ref_params_v = (std::is_reference_v&lt;Args&gt; || ... || false)</td>
+          <td class="memname">constexpr bool dpp::detail::coroutine_has_no_ref_params_v = false</td>
         </tr>
       </table>
   </td>
@@ -364,8 +392,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="acaee2f3d353fc2f04b7ba37ac88e2310" name="acaee2f3d353fc2f04b7ba37ac88e2310"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaee2f3d353fc2f04b7ba37ac88e2310">&#9670;&nbsp;</a></span>coroutine_has_ref_params_v&lt; T, Args... &gt;</h2>
+<a id="ac241fd887d3073868a7851d873d8f16a" name="ac241fd887d3073868a7851d873d8f16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac241fd887d3073868a7851d873d8f16a">&#9670;&nbsp;</a></span>coroutine_has_no_ref_params_v&lt; T, Args... &gt;</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,7 +404,7 @@ template&lt;typename T , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool <a class="el" href="namespacedpp_1_1detail.html#a29173f137a5316d91d1646c38955495b">dpp::detail::coroutine_has_ref_params_v</a>&lt; T, Args... &gt; = (std::is_reference_v&lt;Args&gt; || ... || (std::is_reference_v&lt;T&gt; &amp;&amp; !std::is_invocable_v&lt;T, Args...&gt;))</td>
+          <td class="memname">constexpr bool <a class="el" href="namespacedpp_1_1detail.html#a9b850e8a3317577a179eb38c72ecf888">dpp::detail::coroutine_has_no_ref_params_v</a>&lt; T, Args... &gt; = (std::is_invocable_v&lt;T, Args...&gt; || !std::is_reference_v&lt;T&gt;) &amp;&amp; (!std::is_reference_v&lt;Args&gt; &amp;&amp; ... &amp;&amp; true)</td>
         </tr>
       </table>
   </td>

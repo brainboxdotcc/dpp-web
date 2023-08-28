@@ -2,10 +2,18 @@ var annotated_dup =
 [
     [ "dpp", "namespacedpp.html", [
       [ "detail", "namespacedpp_1_1detail.html", [
+        [ "event_router", "namespacedpp_1_1detail_1_1event__router.html", [
+          [ "awaitable", "classdpp_1_1detail_1_1event__router_1_1awaitable.html", "classdpp_1_1detail_1_1event__router_1_1awaitable" ]
+        ] ],
         [ "std_coroutine", "namespacedpp_1_1detail_1_1std__coroutine.html", [
           [ "coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4" ],
           [ "coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4" ],
           [ "coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4" ]
+        ] ],
+        [ "when_any", "namespacedpp_1_1detail_1_1when__any.html", [
+          [ "arg_helper_s", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s" ],
+          [ "arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4" ],
+          [ "empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ]
         ] ],
         [ "async_base", "classdpp_1_1detail_1_1async__base.html", "classdpp_1_1detail_1_1async__base" ],
         [ "async_callback_data", "structdpp_1_1detail_1_1async__callback__data.html", "structdpp_1_1detail_1_1async__callback__data" ],
@@ -87,6 +95,7 @@ var annotated_dup =
         [ "webhooks_update", "classdpp_1_1events_1_1webhooks__update.html", "classdpp_1_1events_1_1webhooks__update" ]
       ] ],
       [ "utility", "namespacedpp_1_1utility.html", [
+        [ "dummy", "structdpp_1_1utility_1_1dummy.html", "structdpp_1_1utility_1_1dummy" ],
         [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
         [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ]
       ] ],
@@ -310,7 +319,8 @@ var annotated_dup =
       [ "webhooks_update_t", "structdpp_1_1webhooks__update__t.html", "structdpp_1_1webhooks__update__t" ],
       [ "websocket_client", "classdpp_1_1websocket__client.html", "classdpp_1_1websocket__client" ],
       [ "welcome_channel", "structdpp_1_1welcome__channel.html", "structdpp_1_1welcome__channel" ],
-      [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ]
+      [ "welcome_screen", "structdpp_1_1welcome__screen.html", "structdpp_1_1welcome__screen" ],
+      [ "when_any", "classdpp_1_1when__any.html", "classdpp_1_1when__any" ]
     ] ],
     [ "std", null, [
       [ "hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4" ]
