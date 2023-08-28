@@ -1,7 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"index.html#autotoc_md126":[0,6],
-"install-arch-aur.html":[3,3],
 "install-from-source.html":[3,7],
 "install-linux-deb.html":[3,0],
 "install-linux-rpm.html":[3,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX19 =
 "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0ac954473822136b410364f0e57b2f317f":[9,0,0,323,2],
 "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187":[9,0,0,323,0],
 "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11":[9,0,0,323,1],
-"namespacedpp.html#a5ccea9f895c3e902f58f5d61ff748bf5":[9,0,0,378]
+"namespacedpp.html#a5ccea9f895c3e902f58f5d61ff748bf5":[9,0,0,378],
+"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9":[9,0,0,298],
+"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a0b0d31477f484ddc8b5da869e8a020bd":[9,0,0,298,0]
 };

@@ -279,6 +279,10 @@ Variables</h2></td></tr>
 <tr class="memitem:a4cf040349b0a45ef90863effb892ece6"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6">cdn_host</a> = &quot;https://cdn.discordapp.com&quot;</td></tr>
 <tr class="memdesc:a4cf040349b0a45ef90863effb892ece6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base URL for CDN content such as profile pictures and guild icons.  <a href="namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6">More...</a><br /></td></tr>
 <tr class="separator:a4cf040349b0a45ef90863effb892ece6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6297e977d48c670302c77e435bbd0f"><td class="memTemplParams" colspan="2">template&lt;typename F , typename R , typename... Args&gt; </td></tr>
+<tr class="memitem:aae6297e977d48c670302c77e435bbd0f"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#aae6297e977d48c670302c77e435bbd0f">callable_returns_v</a> = std::is_convertible_v&lt;std::invoke_result_t&lt;F, Args...&gt;, R&gt;</td></tr>
+<tr class="memdesc:aae6297e977d48c670302c77e435bbd0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type trait to check if a callable F can be called using the arguments Args, and that its return value is convertible to R.  <a href="namespacedpp_1_1utility.html#aae6297e977d48c670302c77e435bbd0f">More...</a><br /></td></tr>
+<tr class="separator:aae6297e977d48c670302c77e435bbd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Utility helper functions, generally for logging, running programs, time/date manipulation, etc. </p>
@@ -1835,6 +1839,41 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="aae6297e977d48c670302c77e435bbd0f" name="aae6297e977d48c670302c77e435bbd0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6297e977d48c670302c77e435bbd0f">&#9670;&nbsp;</a></span>callable_returns_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename R , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool dpp::utility::callable_returns_v = std::is_convertible_v&lt;std::invoke_result_t&lt;F, Args...&gt;, R&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Type trait to check if a callable F can be called using the arguments Args, and that its return value is convertible to R. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">F</td><td>Callable object </td></tr>
+    <tr><td class="paramname">R</td><td>Return type to check for convertibility to </td></tr>
+    <tr><td class="paramname">Args...</td><td>Arguments to use to resolve the overload </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the expression <code>F(Args...)</code> is convertible to R </dd></dl>
+
+</div>
+</div>
 <a id="a4cf040349b0a45ef90863effb892ece6" name="a4cf040349b0a45ef90863effb892ece6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cf040349b0a45ef90863effb892ece6">&#9670;&nbsp;</a></span>cdn_host</h2>
 

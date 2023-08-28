@@ -1,7 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"classdpp_1_1voicestate.html#a2cffc101e4bff3c2aa40f5efc9fee895":[10,0,0,218,0],
-"classdpp_1_1voicestate.html#a307d3a8776385f6ab468e838c97099ed":[10,0,0,218,4],
 "classdpp_1_1voicestate.html#a307d3a8776385f6ab468e838c97099ed":[9,0,0,221,4],
 "classdpp_1_1voicestate.html#a5b0fa82d1d55249aeb96fd7119aac5c2":[10,0,0,218,9],
 "classdpp_1_1voicestate.html#a5b0fa82d1d55249aeb96fd7119aac5c2":[9,0,0,221,9],
@@ -237,8 +235,8 @@ var NAVTREEINDEX18 =
 "glossary-of-common-discord-terms.html":[2],
 "governance.html":[6,6],
 "hierarchy.html":[10,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md115":[0,0],
 "index.html#autotoc_md116":[0,1],
 "index.html#autotoc_md117":[0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX18 =
 "index.html#autotoc_md122":[0,3,3],
 "index.html#autotoc_md123":[0,3,4],
 "index.html#autotoc_md124":[0,4],
-"index.html#autotoc_md125":[0,5]
+"index.html#autotoc_md125":[0,5],
+"index.html#autotoc_md126":[0,6],
+"install-arch-aur.html":[3,3]
 };

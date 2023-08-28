@@ -59,5 +59,6 @@ var namespacedpp_1_1utility =
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
     [ "validate", "namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad", null ],
     [ "version", "namespacedpp_1_1utility.html#a7d10e878ab1347eaed727b2e528206ed", null ],
+    [ "callable_returns_v", "namespacedpp_1_1utility.html#aae6297e977d48c670302c77e435bbd0f", null ],
     [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ]
 ];

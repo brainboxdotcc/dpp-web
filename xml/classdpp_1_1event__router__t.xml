@@ -67,22 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="102" column="10" bodyfile="include/dpp/event_router.h" bodystart="102" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a1ae03fca9da2c009d859dfdfbf8a77b9" prot="private" static="no" mutable="no">
-        <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, std::function&lt; <ref refid="structdpp_1_1job" kindref="compound">dpp::job</ref>(const T &amp;)&gt; &gt;</type>
-        <definition>std::map&lt;event_handle, std::function&lt;dpp::job(const T&amp;)&gt; &gt; dpp::event_router_t&lt; T &gt;::coroutine_container</definition>
-        <argsstring></argsstring>
-        <name>coroutine_container</name>
-        <briefdescription>
-<para>Container for event listeners (coroutines only) </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Note: keep a listener&apos;s parameter as a value type, the event passed can die while a coroutine is suspended </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="111" column="10" bodyfile="include/dpp/event_router.h" bodystart="111" bodyend="-1"/>
+        <location file="include/dpp/event_router.h" line="103" column="10" bodyfile="include/dpp/event_router.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1event__router__t_1a671901d510d29b517a62afd31c582a1b" prot="private" static="no" mutable="no">
         <type>std::function&lt; void(const T &amp;)&gt;</type>
@@ -96,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="126" column="15" bodyfile="include/dpp/event_router.h" bodystart="126" bodyend="-1"/>
+        <location file="include/dpp/event_router.h" line="109" column="15" bodyfile="include/dpp/event_router.h" bodystart="109" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -127,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="140" column="6" bodyfile="include/dpp/event_router.h" bodystart="140" bodyend="142"/>
+        <location file="include/dpp/event_router.h" line="123" column="6" bodyfile="include/dpp/event_router.h" bodystart="123" bodyend="125"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -143,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="148" column="1"/>
+        <location file="include/dpp/event_router.h" line="131" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -171,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="156" column="6" bodyfile="include/dpp/event_router.h" bodystart="156" bodyend="173"/>
+        <location file="include/dpp/event_router.h" line="139" column="6" bodyfile="include/dpp/event_router.h" bodystart="139" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -190,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="182" column="6" bodyfile="include/dpp/event_router.h" bodystart="182" bodyend="189"/>
+        <location file="include/dpp/event_router.h" line="158" column="6" bodyfile="include/dpp/event_router.h" bodystart="158" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -209,27 +194,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="198" column="1" bodyfile="include/dpp/event_router.h" bodystart="198" bodyend="200"/>
+        <location file="include/dpp/event_router.h" line="170" column="1" bodyfile="include/dpp/event_router.h" bodystart="170" bodyend="172"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a1abf0dab2344fad5d1ce20d79c87dac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
         <definition>event_handle dpp::event_router_t&lt; T &gt;::operator()</definition>
-        <argsstring>(std::function&lt; void(const T &amp;)&gt; func)</argsstring>
+        <argsstring>(F &amp;&amp;fun)</argsstring>
         <name>operator()</name>
         <param>
-          <type>std::function&lt; void(const T &amp;)&gt;</type>
-          <declname>func</declname>
+          <type>F &amp;&amp;</type>
+          <declname>fun</declname>
         </param>
         <briefdescription>
-<para>Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>. </para>
+<para>Attach a callable to the event, adding a listener. The callable should either be of the form <computeroutput>void(const T &amp;)</computeroutput> or <computeroutput><ref refid="structdpp_1_1job" kindref="compound">dpp::job(T)</ref></computeroutput> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para>This has the exact same behavior as using attach.</para>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" kindref="member">attach</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>func</parametername>
+<parametername>fun</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Function lambda to attach to event </para>
+<para>Callable to attach to event </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -239,27 +232,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="212" column="14" bodyfile="include/dpp/event_router.h" bodystart="212" bodyend="214"/>
+        <location file="include/dpp/event_router.h" line="189" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
         <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
         <definition>event_handle dpp::event_router_t&lt; T &gt;::attach</definition>
-        <argsstring>(std::function&lt; void(const T &amp;)&gt; func)</argsstring>
+        <argsstring>(F &amp;&amp;fun)</argsstring>
         <name>attach</name>
         <param>
-          <type>std::function&lt; void(const T &amp;)&gt;</type>
-          <declname>func</declname>
+          <type>F &amp;&amp;</type>
+          <declname>fun</declname>
         </param>
         <briefdescription>
-<para>Attach a lambda to the event, adding a listener. The lambda should follow the signature specified when declaring the event object and should take exactly one parameter derived from <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>. </para>
+<para>Attach a callable to the event, adding a listener. The callable should either be of the form <computeroutput>void(const T &amp;)</computeroutput> or <computeroutput><ref refid="structdpp_1_1job" kindref="compound">dpp::job(T)</ref></computeroutput> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>func</parametername>
+<parametername>fun</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Function lambda to attach to event </para>
+<para>Callable to attach to event </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -269,37 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="226" column="14" bodyfile="include/dpp/event_router.h" bodystart="226" bodyend="231"/>
-      </memberdef>
-      <memberdef kind="function" id="classdpp_1_1event__router__t_1a576e1cf507ebe0347bd112f1a2bcfb7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
-        <definition>event_handle dpp::event_router_t&lt; T &gt;::co_attach</definition>
-        <argsstring>(std::function&lt; job(T)&gt; func)</argsstring>
-        <name>co_attach</name>
-        <param>
-          <type>std::function&lt; <ref refid="structdpp_1_1job" kindref="compound">job</ref>(T)&gt;</type>
-          <declname>func</declname>
-        </param>
-        <briefdescription>
-<para>Attach a coroutine task to the event, adding a listener. The coroutine should follow the signature specified when declaring the event object and should take exactly one parameter derived from <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>func</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Coroutine task to attack to the event. <bold>It MUST take the event by value.</bold> </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>event_handle An event handle unique to this event, used to detach the listener from the event later if necessary. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/event_router.h" line="244" column="14" bodyfile="include/dpp/event_router.h" bodystart="244" bodyend="249"/>
+        <location file="include/dpp/event_router.h" line="202" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -331,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/event_router.h" line="258" column="6" bodyfile="include/dpp/event_router.h" bodystart="258" bodyend="265"/>
+        <location file="include/dpp/event_router.h" line="277" column="6" bodyfile="include/dpp/event_router.h" bodystart="277" bodyend="280"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -371,13 +339,11 @@
 </parameterlist>
 </para>
     </detaileddescription>
-    <location file="include/dpp/event_router.h" line="86" column="11" bodyfile="include/dpp/event_router.h" bodystart="86" bodyend="266"/>
+    <location file="include/dpp/event_router.h" line="86" column="11" bodyfile="include/dpp/event_router.h" bodystart="86" bodyend="281"/>
     <listofallmembers>
-      <member refid="classdpp_1_1event__router__t_1ad6af4a0b09bba980a625beb49a16590c" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach</name></member>
+      <member refid="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach</name></member>
       <member refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>call</name></member>
       <member refid="classdpp_1_1event__router__t_1a93941955d9d15030232a5aaa08bb9afa" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>cluster</name></member>
-      <member refid="classdpp_1_1event__router__t_1a576e1cf507ebe0347bd112f1a2bcfb7e" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>co_attach</name></member>
-      <member refid="classdpp_1_1event__router__t_1a1ae03fca9da2c009d859dfdfbf8a77b9" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>coroutine_container</name></member>
       <member refid="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>detach</name></member>
       <member refid="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>dispatch_container</name></member>
       <member refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>empty</name></member>
@@ -385,7 +351,7 @@
       <member refid="classdpp_1_1event__router__t_1aa12eca3adefbda4c7a13e25e20b514cd" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>lock</name></member>
       <member refid="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>next_handle</name></member>
       <member refid="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator bool</name></member>
-      <member refid="classdpp_1_1event__router__t_1afde1df1dba72f9a6e35b676b89ebc8e0" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator()</name></member>
+      <member refid="classdpp_1_1event__router__t_1a1abf0dab2344fad5d1ce20d79c87dac0" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator()</name></member>
       <member refid="classdpp_1_1event__router__t_1a5a344ce973c4428d889d11c5f35bea74" prot="protected" virt="non-virtual"><scope>dpp::event_router_t</scope><name>set_warning_callback</name></member>
       <member refid="classdpp_1_1event__router__t_1a671901d510d29b517a62afd31c582a1b" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>warning</name></member>
     </listofallmembers>

@@ -153,6 +153,62 @@
         </inbodydescription>
         <location file="include/dpp/utility.h" line="130" column="26" bodyfile="include/dpp/utility.h" bodystart="130" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1_1utility_1aae6297e977d48c670302c77e435bbd0f" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::utility::callable_returns_v</definition>
+        <argsstring></argsstring>
+        <name>callable_returns_v</name>
+        <initializer>= std::is_convertible_v&lt;std::invoke_result_t&lt;F, Args...&gt;, R&gt;</initializer>
+        <briefdescription>
+<para>Type trait to check if a callable F can be called using the arguments Args, and that its return value is convertible to R. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>F</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callable object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return type to check for convertibility to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Args...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments to use to resolve the overload </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the expression <computeroutput>F(Args...)</computeroutput> is convertible to R </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="660" column="23" bodyfile="include/dpp/utility.h" bodystart="660" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
