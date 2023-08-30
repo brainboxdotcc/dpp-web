@@ -12,5 +12,5 @@ var classdpp_1_1async =
     [ "operator co_await", "classdpp_1_1async.html#ac2a2d25431b7ef48a10a2e5872dc1ec0", null ],
     [ "operator=", "classdpp_1_1async.html#aa0ed0b75c888274ec2b2414b3289f7ba", null ],
     [ "operator=", "classdpp_1_1async.html#a8c382ce9ce0062b160934c9c16be09d3", null ],
-    [ "detail::async_base< R >", "classdpp_1_1async.html#a89d4ecc1d49389e5a10d54fa21c0a463", null ]
+    [ "detail::async::async_base< R >", "classdpp_1_1async.html#aa0a1550bb11ddf526579d1c10ab9a793", null ]
 ];

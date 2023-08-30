@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classdpp_1_1when__any" kind="class" language="C++" prot="public">
     <compoundname>dpp::when_any</compoundname>
-    <includes local="no">when_any.h</includes>
+    <includes local="no">coro/when_any.h</includes>
     <innerclass refid="structdpp_1_1when__any_1_1awaiter" prot="public">dpp::when_any::awaiter</innerclass>
     <innerclass refid="classdpp_1_1when__any_1_1result" prot="public">dpp::when_any::result</innerclass>
     <innerclass refid="structdpp_1_1when__any_1_1state__t" prot="private">dpp::when_any::state_t</innerclass>
@@ -107,14 +107,14 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1job" kindref="compound">dpp::job</ref> Job handling the Nth argument </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
-<para>Try co_await. Catch <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>, set cancelled bitmask, resume and rethrow if all tasks were cancelled. Any exceptions from the awaitable&apos;s await_suspend should be thrown to the caller (the coroutine creating the <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> object)</para>
-<para>If the co_await passes, and it is the first one to complete, try construct the result, catch any exceptions to rethrow at resumption, and resume.</para>
-<para>The structure of this function isn&apos;t ideal, but this is the best I&apos;ve found do deal with concurrency and scope.</para>
+<para>Any exceptions from the awaitable&apos;s await_suspend should be thrown to the caller (the coroutine creating the <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> object) If the co_await passes, and it is the first one to complete, try construct the result, catch any exceptions to rethrow at resumption, and resume.</para>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="193" column="17" bodyfile="include/dpp/coro/when_any.h" bodystart="193" bodyend="235"/>
+        <location file="include/dpp/coro/when_any.h" line="194" column="17" bodyfile="include/dpp/coro/when_any.h" bodystart="194" bodyend="236"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="240" column="6" bodyfile="include/dpp/coro/when_any.h" bodystart="240" bodyend="244"/>
+        <location file="include/dpp/coro/when_any.h" line="241" column="6" bodyfile="include/dpp/coro/when_any.h" bodystart="241" bodyend="245"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="384" column="1"/>
+        <location file="include/dpp/coro/when_any.h" line="398" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1when__any_1a86200684f682373def017f5fa0358da4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -170,16 +170,16 @@
         <detaileddescription>
 <para><parameterlist kind="exception"><parameteritem>
 <parameternamelist>
-<parametername>Any</parametername>
+<parametername>???</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>exception thrown by the start of each awaitable will propagate to the caller. </para>
+<para>Any exception thrown by the start of each awaitable will propagate to the caller. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>args...</parametername>
+<parametername>args</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Arguments to construct each awaitable from. The <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> object will construct an awaitable for each, it is recommended to pass rvalues or std::move. </para>
@@ -190,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="396" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="396" bodyend="398"/>
+        <location file="include/dpp/coro/when_any.h" line="410" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="410" bodyend="412"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1when__any_1a6579037dad6b5cbb02bcda852fb31142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -207,12 +207,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="401" column="1"/>
+        <location file="include/dpp/coro/when_any.h" line="415" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1when__any_1af4ae0103e044ca579fc7551240352f19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1when__any_1a10d02683e3c556b9f9b051ccdf679ea0" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
         <definition>dpp::when_any&lt; Args &gt;::when_any</definition>
-        <argsstring>(when_any &amp;&amp;)=default</argsstring>
+        <argsstring>(when_any &amp;&amp;) noexcept=default</argsstring>
         <name>when_any</name>
         <param>
           <type><ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> &amp;&amp;</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="404" column="1"/>
+        <location file="include/dpp/coro/when_any.h" line="418" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1when__any_1afd5177c85419c2cb85458f83d8281862" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -232,7 +232,7 @@
         <argsstring>()</argsstring>
         <name>~when_any</name>
         <briefdescription>
-<para>On destruction the <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> will try to call <computeroutput>cancel()</computeroutput> on each of its awaitable if they have such a method. </para>
+<para>On destruction the <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> will try to call <ref refid="classdpp_1_1task_1a2787e1f8313004716ac12a78be8ed50d" kindref="member">dpp::task::cancel()</ref> cancel() on each of its awaitable if they have such a method. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="note"><para>If you are looking to use a custom type with <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> and want it to cancel on its destruction, make sure it has a cancel() method, which will trigger an await_resume() throwing a <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. This object will swallow the exception and return cleanly. Any other exception will be thrown back to the resumer. </para>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="413" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="413" bodyend="428"/>
+        <location file="include/dpp/coro/when_any.h" line="427" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="427" bodyend="445"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1when__any_1afe81a061837c21c396822990e9f64816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> &amp;</type>
@@ -252,47 +252,49 @@
           <type>const <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> &amp;</type>
         </param>
         <briefdescription>
+<para>This object is not copyable. </para>
         </briefdescription>
         <detaileddescription>
-<para>This object is not copyable. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="431" column="10"/>
+        <location file="include/dpp/coro/when_any.h" line="448" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1when__any_1a84d407a62745a959cf94e28074d9b1bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1when__any_1aa4f062352fa189569d89862e3d3615b3" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> &amp;</type>
         <definition>when_any &amp; dpp::when_any&lt; Args &gt;::operator=</definition>
-        <argsstring>(when_any &amp;&amp;)=default</argsstring>
+        <argsstring>(when_any &amp;&amp;) noexcept=default</argsstring>
         <name>operator=</name>
         <param>
           <type><ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> &amp;&amp;</type>
         </param>
         <briefdescription>
+<para>Move assignment operator. </para>
         </briefdescription>
         <detaileddescription>
-<para>Move assignment operator. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="434" column="10"/>
+        <location file="include/dpp/coro/when_any.h" line="451" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1when__any_1a244e88d901f7a5ab8037494ae5d5bb66" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1when__any_1a01071c5b9cbcdd6063ca222cffeba423" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool dpp::when_any&lt; Args &gt;::is_ready</definition>
+        <definition>bool dpp::when_any&lt; Args &gt;::await_ready</definition>
         <argsstring>() const noexcept</argsstring>
-        <name>is_ready</name>
+        <name>await_ready</name>
         <briefdescription>
 <para>Check whether a call to co_await would suspend. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="note"><para>This can change from false to true at any point, but not the other way around. </para>
 </simplesect>
+<simplesect kind="return"><para>bool Whether co_await would suspend </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="441" column="6" bodyfile="include/dpp/coro/when_any.h" bodystart="441" bodyend="443"/>
+        <location file="include/dpp/coro/when_any.h" line="459" column="7" bodyfile="include/dpp/coro/when_any.h" bodystart="459" bodyend="461"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1when__any_1a92c4350528299dbe000badca9a3fc9a7" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type><ref refid="structdpp_1_1when__any_1_1awaiter" kindref="compound">awaiter</ref></type>
@@ -307,10 +309,10 @@
 </simplesect>
 <parameterlist kind="exception"><parameteritem>
 <parameternamelist>
-<parametername>On</parametername>
+<parametername>???</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>resumption, throws any exception caused by the construction of the result. </para>
+<para>On resumption, throws any exception caused by the construction of the result. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -320,11 +322,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/when_any.h" line="452" column="9" bodyfile="include/dpp/coro/when_any.h" bodystart="452" bodyend="454"/>
+        <location file="include/dpp/coro/when_any.h" line="470" column="10" bodyfile="include/dpp/coro/when_any.h" bodystart="470" bodyend="472"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <computeroutput>result</computeroutput> object that contains the index of the awaitable that finished first. A user can call <computeroutput>get&lt;N&gt;()</computeroutput> on the result object to get the result, similar to std::variant. </para>
+<para>Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <ref refid="classdpp_1_1when__any_1_1result" kindref="compound">result</ref> object that contains the index of the awaitable that finished first. A user can call <ref refid="classdpp_1_1when__any_1_1result_1ade4152f18a2f3c48fddd69c5946fcdf9" kindref="member">result::index()</ref> and <ref refid="classdpp_1_1when__any_1_1result_1a17e2a5a81f2e8c7c399fef1e1fd2a1f1" kindref="member">result::get&lt;N&gt;()</ref> on the result object to get the result, similar to std::variant. </para>
     </briefdescription>
     <detaileddescription>
 <para><simplesect kind="see"><para><ref refid="classdpp_1_1when__any_1_1result" kindref="compound">when_any::result</ref> </para>
@@ -340,21 +342,21 @@
 </parameterlist>
 </para>
     </detaileddescription>
-    <location file="include/dpp/coro/when_any.h" line="132" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="132" bodyend="455"/>
+    <location file="include/dpp/coro/when_any.h" line="132" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="132" bodyend="473"/>
     <listofallmembers>
-      <member refid="classdpp_1_1when__any_1a244e88d901f7a5ab8037494ae5d5bb66" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>is_ready</name></member>
+      <member refid="classdpp_1_1when__any_1a01071c5b9cbcdd6063ca222cffeba423" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>await_ready</name></member>
       <member refid="classdpp_1_1when__any_1ab2ff88c71427703578cf5db61a027af5" prot="private" virt="non-virtual"><scope>dpp::when_any</scope><name>make_job</name></member>
       <member refid="classdpp_1_1when__any_1a7294914142b2295dc67ff2b9a9f5f6e3" prot="private" virt="non-virtual"><scope>dpp::when_any</scope><name>make_jobs</name></member>
       <member refid="classdpp_1_1when__any_1a9c64c3617e46c7d72365a67ee92a9827" prot="private" virt="non-virtual"><scope>dpp::when_any</scope><name>my_state</name></member>
       <member refid="classdpp_1_1when__any_1a92c4350528299dbe000badca9a3fc9a7" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>operator co_await</name></member>
       <member refid="classdpp_1_1when__any_1afe81a061837c21c396822990e9f64816" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>operator=</name></member>
-      <member refid="classdpp_1_1when__any_1a84d407a62745a959cf94e28074d9b1bf" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1when__any_1aa4f062352fa189569d89862e3d3615b3" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>operator=</name></member>
       <member refid="classdpp_1_1when__any_1a24732d6b492c8750451dd066aa84ea57" prot="private" virt="non-virtual"><scope>dpp::when_any</scope><name>result_t</name></member>
       <member refid="classdpp_1_1when__any_1aeb978e1130778fc620abea221fcafd62" prot="private" virt="non-virtual"><scope>dpp::when_any</scope><name>variant_type</name></member>
       <member refid="classdpp_1_1when__any_1ac39aad6084441a5d4b07388923a1ecc2" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>when_any</name></member>
       <member refid="classdpp_1_1when__any_1a86200684f682373def017f5fa0358da4" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>when_any</name></member>
       <member refid="classdpp_1_1when__any_1a6579037dad6b5cbb02bcda852fb31142" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>when_any</name></member>
-      <member refid="classdpp_1_1when__any_1af4ae0103e044ca579fc7551240352f19" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>when_any</name></member>
+      <member refid="classdpp_1_1when__any_1a10d02683e3c556b9f9b051ccdf679ea0" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>when_any</name></member>
       <member refid="classdpp_1_1when__any_1afd5177c85419c2cb85458f83d8281862" prot="public" virt="non-virtual"><scope>dpp::when_any</scope><name>~when_any</name></member>
     </listofallmembers>
   </compounddef>

@@ -33,11 +33,8 @@ var searchData=
   ['connection_5fexception_30',['connection_exception',['../classdpp_1_1connection__exception.html',1,'dpp']]],
   ['context_5fmenu_5ft_31',['context_menu_t',['../structdpp_1_1context__menu__t.html',1,'dpp']]],
   ['coroutine_32',['coroutine',['../classdpp_1_1coroutine.html',1,'dpp']]],
-  ['coroutine_5fbase_33',['coroutine_base',['../classdpp_1_1detail_1_1coroutine__base.html',1,'dpp::detail']]],
-  ['coroutine_5ffinal_5fawaiter_34',['coroutine_final_awaiter',['../structdpp_1_1detail_1_1coroutine__final__awaiter.html',1,'dpp::detail']]],
-  ['coroutine_5fpromise_35',['coroutine_promise',['../structdpp_1_1detail_1_1coroutine__promise.html',1,'dpp::detail']]],
-  ['coroutine_5fpromise_3c_20void_20_3e_36',['coroutine_promise&lt; void &gt;',['../structdpp_1_1detail_1_1coroutine__promise_3_01void_01_4.html',1,'dpp::detail']]],
-  ['coroutine_5ftraits_3c_20dpp_3a_3acoroutine_3c_20r_20_3e_2c_20args_2e_2e_2e_20_3e_37',['coroutine_traits&lt; dpp::coroutine&lt; R &gt;, Args... &gt;',['../structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html',1,'dpp::detail::std_coroutine']]],
-  ['coroutine_5ftraits_3c_20dpp_3a_3ajob_2c_20args_2e_2e_2e_20_3e_38',['coroutine_traits&lt; dpp::job, Args... &gt;',['../structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html',1,'dpp::detail::std_coroutine']]],
-  ['coroutine_5ftraits_3c_20dpp_3a_3atask_3c_20t_20_3e_2c_20args_2e_2e_2e_20_3e_39',['coroutine_traits&lt; dpp::task&lt; T &gt;, Args... &gt;',['../structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html',1,'dpp::detail::std_coroutine']]]
+  ['coroutine_5fbase_33',['coroutine_base',['../classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html',1,'dpp::detail::coroutine']]],
+  ['coroutine_5ftraits_3c_20dpp_3a_3acoroutine_3c_20r_20_3e_2c_20args_2e_2e_2e_20_3e_34',['coroutine_traits&lt; dpp::coroutine&lt; R &gt;, Args... &gt;',['../structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html',1,'dpp::detail::std_coroutine']]],
+  ['coroutine_5ftraits_3c_20dpp_3a_3ajob_2c_20args_2e_2e_2e_20_3e_35',['coroutine_traits&lt; dpp::job, Args... &gt;',['../structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html',1,'dpp::detail::std_coroutine']]],
+  ['coroutine_5ftraits_3c_20dpp_3a_3atask_3c_20t_20_3e_2c_20args_2e_2e_2e_20_3e_36',['coroutine_traits&lt; dpp::task&lt; T &gt;, Args... &gt;',['../structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html',1,'dpp::detail::std_coroutine']]]
 ];

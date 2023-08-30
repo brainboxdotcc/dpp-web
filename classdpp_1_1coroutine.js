@@ -10,5 +10,5 @@ var classdpp_1_1coroutine =
     [ "operator co_await", "classdpp_1_1coroutine.html#ad69f7a9508e8ac7564b5f9a76d71d194", null ],
     [ "operator=", "classdpp_1_1coroutine.html#a20dfc8dee1ad0b747e100f81ca5af25f", null ],
     [ "operator=", "classdpp_1_1coroutine.html#a4f05b00fa8cdea3cbc13b4e2c21c5839", null ],
-    [ "detail::coroutine_base< R >", "classdpp_1_1coroutine.html#a2965bbab21ad6c08322d0e57e7e9e786", null ]
+    [ "detail::coroutine::coroutine_base< R >", "classdpp_1_1coroutine.html#a71ef57b8cec960304e5b815975c1764b", null ]
 ];

@@ -1,4 +1,4 @@
 var structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4 =
 [
-    [ "promise_type", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html#a48d4378bbf99392a48028c4f089ec9ce", null ]
+    [ "promise_type", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html#ac6d62c0e9d9688f7d2b96fdac02af405", null ]
 ];

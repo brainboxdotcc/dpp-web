@@ -109,13 +109,13 @@ $(document).ready(function(){initNavTree('classdpp_1_1coroutine.html',''); initR
 <p>Base type for a coroutine, starts on co_await.  
  <a href="classdpp_1_1coroutine.html#details">More...</a></p>
 
-<p><code>#include &lt;coroutine.h&gt;</code></p>
+<p><code>#include &lt;coro/coroutine.h&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for dpp::coroutine&lt; R &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1coroutine__inherit__graph.svg" width="171" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1coroutine__inherit__graph.svg" width="179" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1coroutine.html',''); initR
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1coroutine__coll__graph.svg" width="171" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1coroutine__coll__graph.svg" width="179" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -162,14 +162,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a2965bbab21ad6c08322d0e57e7e9e786"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1coroutine.html#a2965bbab21ad6c08322d0e57e7e9e786">detail::coroutine_base&lt; R &gt;</a></td></tr>
-<tr class="memdesc:a2965bbab21ad6c08322d0e57e7e9e786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal use only base class containing common logic between coroutine&lt;R&gt; and coroutine&lt;void&gt;. It also serves to prevent await_suspend and await_resume from being used directly.  <a href="classdpp_1_1coroutine.html#a2965bbab21ad6c08322d0e57e7e9e786">More...</a><br /></td></tr>
-<tr class="separator:a2965bbab21ad6c08322d0e57e7e9e786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ef57b8cec960304e5b815975c1764b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1coroutine.html#a71ef57b8cec960304e5b815975c1764b">detail::coroutine::coroutine_base&lt; R &gt;</a></td></tr>
+<tr class="memdesc:a71ef57b8cec960304e5b815975c1764b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal use only base class containing common logic between coroutine&lt;R&gt; and coroutine&lt;void&gt;. It also serves to prevent await_suspend and await_resume from being used directly.  <a href="classdpp_1_1coroutine.html#a71ef57b8cec960304e5b815975c1764b">More...</a><br /></td></tr>
+<tr class="separator:a71ef57b8cec960304e5b815975c1764b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename R&gt;<br />
 class dpp::coroutine&lt; R &gt;</div><p >Base type for a coroutine, starts on co_await. </p>
-<dl class="section warning"><dt>Warning</dt><dd>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub issues</a> or to the <a href="https://discord.gg/dpp">D++ Discord server</a>. </dd>
+<dl class="section warning"><dt>Warning</dt><dd>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</a> or to our <a href="https://discord.gg/dpp">Discord Server</a>. </dd>
 <dd>
 - Using co_await on this object more than once is undefined behavior. </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -357,7 +357,7 @@ template&lt;typename R &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>R&amp;&amp; On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </dd></dl>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ template&lt;typename R &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>R&amp; On resumption, this expression evaluates to the result object of type R, as a reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as a reference. </dd></dl>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ template&lt;typename R &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>const R&amp; On resumption, this expression evaluates to the result object of type R, as a const reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as a const reference. </dd></dl>
 
 </div>
 </div>
@@ -500,8 +500,8 @@ template&lt;typename R &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a2965bbab21ad6c08322d0e57e7e9e786" name="a2965bbab21ad6c08322d0e57e7e9e786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2965bbab21ad6c08322d0e57e7e9e786">&#9670;&nbsp;</a></span>detail::coroutine_base&lt; R &gt;</h2>
+<a id="a71ef57b8cec960304e5b815975c1764b" name="a71ef57b8cec960304e5b815975c1764b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ef57b8cec960304e5b815975c1764b">&#9670;&nbsp;</a></span>detail::coroutine::coroutine_base&lt; R &gt;</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,7 +512,7 @@ template&lt;typename R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classdpp_1_1detail_1_1coroutine__base.html">detail::coroutine_base</a>&lt; R &gt;</td>
+          <td class="memname">friend class <a class="el" href="classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html">detail::coroutine::coroutine_base</a>&lt; R &gt;</td>
         </tr>
       </table>
   </td>

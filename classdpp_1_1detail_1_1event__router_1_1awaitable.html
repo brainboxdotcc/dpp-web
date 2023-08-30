@@ -225,7 +225,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>First function called by the standard library when awaiting this object. Returns true if we need to suspend. </p>
-<dl class="section return"><dt>Returns</dt><dd>false always. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">false</td><td>always. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -246,11 +251,11 @@ template&lt;typename T &gt; </div>
 <p>Third and final function called by the standard library, called when resuming the coroutine. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1task__cancelled__exception.html" title="Represents the cancellation of a task. Will be thrown to the awaiter of a cancelled task.">dpp::task_cancelled_exception</a></td><td>if <a class="el" href="classdpp_1_1detail_1_1event__router_1_1awaitable.html#a11157ce2665d9472b3242fb76d064609" title="Request cancellation. This will detach this object from the event router and resume the awaiter,...">cancel()</a> has been called </td></tr>
+    <tr><td class="paramname"></td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>const T&amp; <b>Reference</b> to the event that matched </dd></dl>
+<p>ref <a class="el" href="classdpp_1_1task__cancelled__exception.html" title="Represents the cancellation of a task. Will be thrown to the awaiter of a cancelled task.">task_cancelled_exception</a> if <a class="el" href="classdpp_1_1detail_1_1event__router_1_1awaitable.html#a11157ce2665d9472b3242fb76d064609" title="Request cancellation. This will detach this object from the event router and resume the awaiter,...">cancel()</a> has been called </p><dl class="section return"><dt>Returns</dt><dd>const T&amp; <b>Reference</b> to the event that matched </dd></dl>
 
 </div>
 </div>
@@ -294,7 +299,7 @@ template&lt;typename T &gt; </div>
 <p>Request cancellation. This will detach this object from the event router and resume the awaiter, which will be thrown dpp::task_cancelled::exception. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">As</td><td>this resumes the coroutine, it may throw any exceptions at the caller. </td></tr>
+    <tr><td class="paramname">???</td><td>As this resumes the coroutine, it may throw any exceptions at the caller. </td></tr>
   </table>
   </dd>
 </dl>

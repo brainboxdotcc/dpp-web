@@ -1,4 +1,4 @@
 var structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4 =
 [
-    [ "promise_type", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html#ab538a1492b3169810e9cf49439245200", null ]
+    [ "promise_type", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html#a76fc8cf9460688748433a5d0391ec5fc", null ]
 ];

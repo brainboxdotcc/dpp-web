@@ -109,13 +109,13 @@ $(document).ready(function(){initNavTree('classdpp_1_1async.html',''); initResiz
 <p>A co_await-able object handling an API call in parallel with the caller.  
  <a href="classdpp_1_1async.html#details">More...</a></p>
 
-<p><code>#include &lt;async.h&gt;</code></p>
+<p><code>#include &lt;coro/async.h&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for dpp::async&lt; R &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1async__inherit__graph.svg" width="148" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1async__inherit__graph.svg" width="156" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1async.html',''); initResiz
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1async__coll__graph.svg" width="148" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1async__coll__graph.svg" width="156" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -170,9 +170,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a89d4ecc1d49389e5a10d54fa21c0a463"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#a89d4ecc1d49389e5a10d54fa21c0a463">detail::async_base&lt; R &gt;</a></td></tr>
-<tr class="memdesc:a89d4ecc1d49389e5a10d54fa21c0a463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal use only base class. It serves to prevent await_suspend and await_resume from being used directly.  <a href="classdpp_1_1async.html#a89d4ecc1d49389e5a10d54fa21c0a463">More...</a><br /></td></tr>
-<tr class="separator:a89d4ecc1d49389e5a10d54fa21c0a463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a1550bb11ddf526579d1c10ab9a793"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#aa0a1550bb11ddf526579d1c10ab9a793">detail::async::async_base&lt; R &gt;</a></td></tr>
+<tr class="memdesc:aa0a1550bb11ddf526579d1c10ab9a793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal use only base class. It serves to prevent await_suspend and await_resume from being used directly.  <a href="classdpp_1_1async.html#aa0a1550bb11ddf526579d1c10ab9a793">More...</a><br /></td></tr>
+<tr class="separator:aa0a1550bb11ddf526579d1c10ab9a793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename R&gt;<br />
@@ -459,7 +459,7 @@ template&lt;typename R &gt; </div>
 </div><div class="memdoc">
 
 <p>Suspend the caller until the request completes. </p>
-<dl class="section return"><dt>Returns</dt><dd>R&amp;&amp; On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </dd></dl>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ template&lt;typename R &gt; </div>
 </div><div class="memdoc">
 
 <p>Suspend the caller until the request completes. </p>
-<dl class="section return"><dt>Returns</dt><dd>R&amp; On resumption, this expression evaluates to the result object of type R, as a reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as a reference. </dd></dl>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ template&lt;typename R &gt; </div>
 </div><div class="memdoc">
 
 <p>Suspend the caller until the request completes. </p>
-<dl class="section return"><dt>Returns</dt><dd>const R&amp; On resumption, this expression evaluates to the result object of type R, as a const reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as a const reference. </dd></dl>
 
 </div>
 </div>
@@ -592,8 +592,8 @@ template&lt;typename R &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a89d4ecc1d49389e5a10d54fa21c0a463" name="a89d4ecc1d49389e5a10d54fa21c0a463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89d4ecc1d49389e5a10d54fa21c0a463">&#9670;&nbsp;</a></span>detail::async_base&lt; R &gt;</h2>
+<a id="aa0a1550bb11ddf526579d1c10ab9a793" name="aa0a1550bb11ddf526579d1c10ab9a793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a1550bb11ddf526579d1c10ab9a793">&#9670;&nbsp;</a></span>detail::async::async_base&lt; R &gt;</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -604,7 +604,7 @@ template&lt;typename R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classdpp_1_1detail_1_1async__base.html">detail::async_base</a>&lt; R &gt;</td>
+          <td class="memname">friend class <a class="el" href="classdpp_1_1detail_1_1async_1_1async__base.html">detail::async::async_base</a>&lt; R &gt;</td>
         </tr>
       </table>
   </td>

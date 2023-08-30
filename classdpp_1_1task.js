@@ -12,5 +12,5 @@ var classdpp_1_1task =
     [ "operator co_await", "classdpp_1_1task.html#aa410dbfe84a7281dafbe563b1d224123", null ],
     [ "operator=", "classdpp_1_1task.html#a1f532c5ceff4fadc0fa9174e80ff183c", null ],
     [ "operator=", "classdpp_1_1task.html#af56fcd28c94944982bd585dd44bef472", null ],
-    [ "detail::task_base< R >", "classdpp_1_1task.html#a03beaf1a2a2842fd34b8cfd8ee47ace1", null ]
+    [ "detail::task::task_base< R >", "classdpp_1_1task.html#ad0f512b321bc4024c16624781a67d578", null ]
 ];

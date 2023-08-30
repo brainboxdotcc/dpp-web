@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1when__any_1_1result.html',
 </div><!--header-->
 <div class="contents">
 
-<p>Object returned by <code>operator co_await</code> on resumption. Can be moved but not copied.  
+<p>Object returned by <a class="el" href="classdpp_1_1when__any.html#a92c4350528299dbe000badca9a3fc9a7">operator co_await()</a> on resumption. Can be moved but not copied.  
  <a href="classdpp_1_1when__any_1_1result.html#details">More...</a></p>
 
 <p><code>#include &lt;when_any.h&gt;</code></p>
@@ -156,7 +156,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
-class dpp::when_any&lt; Args &gt;::result</div><p >Object returned by <code>operator co_await</code> on resumption. Can be moved but not copied. </p>
+class dpp::when_any&lt; Args &gt;::result</div><p >Object returned by <a class="el" href="classdpp_1_1when__any.html#a92c4350528299dbe000badca9a3fc9a7">operator co_await()</a> on resumption. Can be moved but not copied. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adcc8fe2ce406b5dedaeaa75524bf6c61" name="adcc8fe2ce406b5dedaeaa75524bf6c61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcc8fe2ce406b5dedaeaa75524bf6c61">&#9670;&nbsp;</a></span>result() <span class="overload">[1/2]</span></h2>
@@ -255,11 +255,11 @@ template&lt;size_t N&gt; </div>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">Throws</td><td>any exception triggered at construction, or std::bad_variant_access if N does not correspond to <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9" title="Retrieve the index of the awaitable that finished first.">index()</a> </td></tr>
+    <tr><td class="paramname">???</td><td>Throws any exception triggered at construction, or std::bad_variant_access if N does not correspond to <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9" title="Retrieve the index of the awaitable that finished first.">index()</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>result_t&lt;N&gt;&amp; Result of the awaitable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Result of the awaitable as a reference. </dd></dl>
 
 </div>
 </div>
@@ -299,11 +299,11 @@ template&lt;size_t N&gt; </div>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">Throws</td><td>any exception triggered at construction, or std::bad_variant_access if N does not correspond to <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9" title="Retrieve the index of the awaitable that finished first.">index()</a> </td></tr>
+    <tr><td class="paramname">???</td><td>Throws any exception triggered at construction, or std::bad_variant_access if N does not correspond to <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9" title="Retrieve the index of the awaitable that finished first.">index()</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>result_t&lt;N&gt;&amp;&amp; Result of the awaitable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Result of the awaitable as an rvalue reference. </dd></dl>
 
 </div>
 </div>
@@ -343,11 +343,11 @@ template&lt;size_t N&gt; </div>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">Throws</td><td>any exception triggered at construction, or std::bad_variant_access if N does not correspond to <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9" title="Retrieve the index of the awaitable that finished first.">index()</a> </td></tr>
+    <tr><td class="paramname">???</td><td>Throws any exception triggered at construction, or std::bad_variant_access if N does not correspond to <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9" title="Retrieve the index of the awaitable that finished first.">index()</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>const result_t&lt;N&gt;&amp; Result of the awaitable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Result of the awaitable as a cpnst reference. </dd></dl>
 
 </div>
 </div>
@@ -439,6 +439,7 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Checks whether the return of the first awaitable triggered an exception, that is, a call to <a class="el" href="classdpp_1_1when__any_1_1result.html#a17e2a5a81f2e8c7c399fef1e1fd2a1f1" title="Cannot retrieve a void result.">get()</a> will rethrow. </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the result is an exception </dd></dl>
 
 </div>
 </div>

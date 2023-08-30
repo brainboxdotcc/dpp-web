@@ -45,7 +45,7 @@ var searchData=
   ['handball_5ftone3_42',['handball_tone3',['../namespacedpp_1_1unicode__emoji.html#a36f7d9d3119d0860788e2492d7ef1f0d',1,'dpp::unicode_emoji']]],
   ['handball_5ftone4_43',['handball_tone4',['../namespacedpp_1_1unicode__emoji.html#ad0c94870b36944c167dbc39335f91ee6',1,'dpp::unicode_emoji']]],
   ['handball_5ftone5_44',['handball_tone5',['../namespacedpp_1_1unicode__emoji.html#a594cfaf172bc79672da0fb0fb0c3e5fc',1,'dpp::unicode_emoji']]],
-  ['handle_45',['handle',['../classdpp_1_1detail_1_1task__base.html#ae5ecef67cba1e051a5371785a93c4d4a',1,'dpp::detail::task_base::handle()'],['../classdpp_1_1detail_1_1coroutine__base.html#a707058022071856cfa6dd4b04b19ffb5',1,'dpp::detail::coroutine_base::handle()'],['../structdpp_1_1timer__t.html#a4f1f9ed3d687cad53d683d017f0f21a6',1,'dpp::timer_t::handle()']]],
+  ['handle_45',['handle',['../classdpp_1_1detail_1_1task_1_1task__base.html#ac6a6c07f2aa9ca8dcbd299b20148ad6e',1,'dpp::detail::task::task_base::handle()'],['../classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html#affcd44a3307517d7917953bd0b07572a',1,'dpp::detail::coroutine::coroutine_base::handle()'],['../structdpp_1_1timer__t.html#a4f1f9ed3d687cad53d683d017f0f21a6',1,'dpp::timer_t::handle()']]],
   ['handshake_46',['handshake',['../namespacedpp_1_1unicode__emoji.html#ab55775c475105c66af2c9ac9eba73c2a',1,'dpp::unicode_emoji']]],
   ['handshake_5fdark_5fskin_5ftone_47',['handshake_dark_skin_tone',['../namespacedpp_1_1unicode__emoji.html#a35373f461ced39a7c05207a33186ebda',1,'dpp::unicode_emoji']]],
   ['handshake_5fdark_5fskin_5ftone_5flight_5fskin_5ftone_48',['handshake_dark_skin_tone_light_skin_tone',['../namespacedpp_1_1unicode__emoji.html#a2fe8047915ef0b3dfa854df2f5edcfca',1,'dpp::unicode_emoji']]],

@@ -106,18 +106,18 @@ $(document).ready(function(){initNavTree('classdpp_1_1when__any.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <code>result</code> object that contains the index of the awaitable that finished first. A user can call <code>get&lt;N&gt;()</code> on the result object to get the result, similar to std::variant.  
+<p>Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <a class="el" href="classdpp_1_1when__any_1_1result.html">result</a> object that contains the index of the awaitable that finished first. A user can call <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9">result::index()</a> and <a class="el" href="classdpp_1_1when__any_1_1result.html#a17e2a5a81f2e8c7c399fef1e1fd2a1f1">result::get&lt;N&gt;()</a> on the result object to get the result, similar to std::variant.  
  <a href="classdpp_1_1when__any.html#details">More...</a></p>
 
-<p><code>#include &lt;when_any.h&gt;</code></p>
+<p><code>#include &lt;coro/when_any.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1when__any_1_1awaiter.html">awaiter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object returned by <code>operator co_await()</code>. Meant to be used by the standard library, not by a user.  <a href="structdpp_1_1when__any_1_1awaiter.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object returned by <a class="el" href="classdpp_1_1when__any.html#a92c4350528299dbe000badca9a3fc9a7">operator co_await()</a>. Meant to be used by the standard library, not by a user.  <a href="structdpp_1_1when__any_1_1awaiter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any_1_1result.html">result</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object returned by <code>operator co_await</code> on resumption. Can be moved but not copied.  <a href="classdpp_1_1when__any_1_1result.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object returned by <a class="el" href="classdpp_1_1when__any.html#a92c4350528299dbe000badca9a3fc9a7">operator co_await()</a> on resumption. Can be moved but not copied.  <a href="classdpp_1_1when__any_1_1result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -132,27 +132,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6579037dad6b5cbb02bcda852fb31142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#a6579037dad6b5cbb02bcda852fb31142">when_any</a> (const <a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a6579037dad6b5cbb02bcda852fb31142"><td class="mdescLeft">&#160;</td><td class="mdescRight">This object is not copyable.  <a href="classdpp_1_1when__any.html#a6579037dad6b5cbb02bcda852fb31142">More...</a><br /></td></tr>
 <tr class="separator:a6579037dad6b5cbb02bcda852fb31142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ae0103e044ca579fc7551240352f19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#af4ae0103e044ca579fc7551240352f19">when_any</a> (<a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;&amp;)=default</td></tr>
-<tr class="memdesc:af4ae0103e044ca579fc7551240352f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="classdpp_1_1when__any.html#af4ae0103e044ca579fc7551240352f19">More...</a><br /></td></tr>
-<tr class="separator:af4ae0103e044ca579fc7551240352f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d02683e3c556b9f9b051ccdf679ea0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#a10d02683e3c556b9f9b051ccdf679ea0">when_any</a> (<a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:a10d02683e3c556b9f9b051ccdf679ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="classdpp_1_1when__any.html#a10d02683e3c556b9f9b051ccdf679ea0">More...</a><br /></td></tr>
+<tr class="separator:a10d02683e3c556b9f9b051ccdf679ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5177c85419c2cb85458f83d8281862"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#afd5177c85419c2cb85458f83d8281862">~when_any</a> ()</td></tr>
-<tr class="memdesc:afd5177c85419c2cb85458f83d8281862"><td class="mdescLeft">&#160;</td><td class="mdescRight">On destruction the <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">when_any</a> will try to call <code>cancel()</code> on each of its awaitable if they have such a method.  <a href="classdpp_1_1when__any.html#afd5177c85419c2cb85458f83d8281862">More...</a><br /></td></tr>
+<tr class="memdesc:afd5177c85419c2cb85458f83d8281862"><td class="mdescLeft">&#160;</td><td class="mdescRight">On destruction the <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">when_any</a> will try to call <a class="el" href="classdpp_1_1task.html#a2787e1f8313004716ac12a78be8ed50d">dpp::task::cancel()</a> cancel() on each of its awaitable if they have such a method.  <a href="classdpp_1_1when__any.html#afd5177c85419c2cb85458f83d8281862">More...</a><br /></td></tr>
 <tr class="separator:afd5177c85419c2cb85458f83d8281862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe81a061837c21c396822990e9f64816"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#afe81a061837c21c396822990e9f64816">operator=</a> (const <a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;)=delete</td></tr>
+<tr class="memdesc:afe81a061837c21c396822990e9f64816"><td class="mdescLeft">&#160;</td><td class="mdescRight">This object is not copyable.  <a href="classdpp_1_1when__any.html#afe81a061837c21c396822990e9f64816">More...</a><br /></td></tr>
 <tr class="separator:afe81a061837c21c396822990e9f64816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84d407a62745a959cf94e28074d9b1bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#a84d407a62745a959cf94e28074d9b1bf">operator=</a> (<a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a84d407a62745a959cf94e28074d9b1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244e88d901f7a5ab8037494ae5d5bb66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#a244e88d901f7a5ab8037494ae5d5bb66">is_ready</a> () const noexcept</td></tr>
-<tr class="memdesc:a244e88d901f7a5ab8037494ae5d5bb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a call to co_await would suspend.  <a href="classdpp_1_1when__any.html#a244e88d901f7a5ab8037494ae5d5bb66">More...</a><br /></td></tr>
-<tr class="separator:a244e88d901f7a5ab8037494ae5d5bb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f062352fa189569d89862e3d3615b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#aa4f062352fa189569d89862e3d3615b3">operator=</a> (<a class="el" href="classdpp_1_1when__any.html">when_any</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:aa4f062352fa189569d89862e3d3615b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="classdpp_1_1when__any.html#aa4f062352fa189569d89862e3d3615b3">More...</a><br /></td></tr>
+<tr class="separator:aa4f062352fa189569d89862e3d3615b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01071c5b9cbcdd6063ca222cffeba423"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#a01071c5b9cbcdd6063ca222cffeba423">await_ready</a> () const noexcept</td></tr>
+<tr class="memdesc:a01071c5b9cbcdd6063ca222cffeba423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a call to co_await would suspend.  <a href="classdpp_1_1when__any.html#a01071c5b9cbcdd6063ca222cffeba423">More...</a><br /></td></tr>
+<tr class="separator:a01071c5b9cbcdd6063ca222cffeba423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92c4350528299dbe000badca9a3fc9a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1when__any_1_1awaiter.html">awaiter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1when__any.html#a92c4350528299dbe000badca9a3fc9a7">operator co_await</a> () noexcept</td></tr>
 <tr class="memdesc:a92c4350528299dbe000badca9a3fc9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend the caller until any of the awaitables completes.  <a href="classdpp_1_1when__any.html#a92c4350528299dbe000badca9a3fc9a7">More...</a><br /></td></tr>
 <tr class="separator:a92c4350528299dbe000badca9a3fc9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
-class dpp::when_any&lt; Args &gt;</div><p >Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <code>result</code> object that contains the index of the awaitable that finished first. A user can call <code>get&lt;N&gt;()</code> on the result object to get the result, similar to std::variant. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1when__any_1_1result.html" title="Object returned by operator co_await on resumption. Can be moved but not copied.">when_any::result</a> </dd></dl>
+class dpp::when_any&lt; Args &gt;</div><p >Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <a class="el" href="classdpp_1_1when__any_1_1result.html">result</a> object that contains the index of the awaitable that finished first. A user can call <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9">result::index()</a> and <a class="el" href="classdpp_1_1when__any_1_1result.html#a17e2a5a81f2e8c7c399fef1e1fd2a1f1">result::get&lt;N&gt;()</a> on the result object to get the result, similar to std::variant. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1when__any_1_1result.html" title="Object returned by operator co_await() on resumption. Can be moved but not copied.">when_any::result</a> </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Args...</td><td>Type of each awaitable to await on </td></tr>
@@ -220,13 +222,13 @@ template&lt;typename... Args_&gt; </div>
 <p>Constructor from awaitable objects. Each awaitable is executed immediately and the <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">when_any</a> object can then be co_await-ed later. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">Any</td><td>exception thrown by the start of each awaitable will propagate to the caller. </td></tr>
+    <tr><td class="paramname">???</td><td>Any exception thrown by the start of each awaitable will propagate to the caller. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">args...</td><td>Arguments to construct each awaitable from. The <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">when_any</a> object will construct an awaitable for each, it is recommended to pass rvalues or std::move. </td></tr>
+    <tr><td class="paramname">args</td><td>Arguments to construct each awaitable from. The <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">when_any</a> object will construct an awaitable for each, it is recommended to pass rvalues or std::move. </td></tr>
   </table>
   </dd>
 </dl>
@@ -263,8 +265,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="af4ae0103e044ca579fc7551240352f19" name="af4ae0103e044ca579fc7551240352f19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ae0103e044ca579fc7551240352f19">&#9670;&nbsp;</a></span>when_any() <span class="overload">[4/4]</span></h2>
+<a id="a10d02683e3c556b9f9b051ccdf679ea0" name="a10d02683e3c556b9f9b051ccdf679ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d02683e3c556b9f9b051ccdf679ea0">&#9670;&nbsp;</a></span>when_any() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +286,7 @@ template&lt;typename... Args&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -318,14 +320,14 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>On destruction the <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">when_any</a> will try to call <code>cancel()</code> on each of its awaitable if they have such a method. </p>
+<p>On destruction the <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">when_any</a> will try to call <a class="el" href="classdpp_1_1task.html#a2787e1f8313004716ac12a78be8ed50d">dpp::task::cancel()</a> cancel() on each of its awaitable if they have such a method. </p>
 <dl class="section note"><dt>Note</dt><dd>If you are looking to use a custom type with <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">when_any</a> and want it to cancel on its destruction, make sure it has a cancel() method, which will trigger an await_resume() throwing a <a class="el" href="classdpp_1_1task__cancelled__exception.html" title="Represents the cancellation of a task. Will be thrown to the awaiter of a cancelled task.">dpp::task_cancelled_exception</a>. This object will swallow the exception and return cleanly. Any other exception will be thrown back to the resumer. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a244e88d901f7a5ab8037494ae5d5bb66" name="a244e88d901f7a5ab8037494ae5d5bb66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a244e88d901f7a5ab8037494ae5d5bb66">&#9670;&nbsp;</a></span>is_ready()</h2>
+<a id="a01071c5b9cbcdd6063ca222cffeba423" name="a01071c5b9cbcdd6063ca222cffeba423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01071c5b9cbcdd6063ca222cffeba423">&#9670;&nbsp;</a></span>await_ready()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +338,7 @@ template&lt;typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classdpp_1_1when__any.html">dpp::when_any</a>&lt; Args &gt;::is_ready </td>
+          <td class="memname">bool <a class="el" href="classdpp_1_1when__any.html">dpp::when_any</a>&lt; Args &gt;::await_ready </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -351,6 +353,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Check whether a call to co_await would suspend. </p>
 <dl class="section note"><dt>Note</dt><dd>This can change from false to true at any point, but not the other way around. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Whether co_await would suspend </dd></dl>
 
 </div>
 </div>
@@ -380,10 +383,10 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Suspend the caller until any of the awaitables completes. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1when__any_1_1result.html" title="Object returned by operator co_await on resumption. Can be moved but not copied.">result</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1when__any_1_1result.html" title="Object returned by operator co_await() on resumption. Can be moved but not copied.">result</a> </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">On</td><td>resumption, throws any exception caused by the construction of the result. </td></tr>
+    <tr><td class="paramname">???</td><td>On resumption, throws any exception caused by the construction of the result. </td></tr>
   </table>
   </dd>
 </dl>
@@ -416,12 +419,13 @@ template&lt;typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >This object is not copyable. </p>
+
+<p>This object is not copyable. </p>
 
 </div>
 </div>
-<a id="a84d407a62745a959cf94e28074d9b1bf" name="a84d407a62745a959cf94e28074d9b1bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84d407a62745a959cf94e28074d9b1bf">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="aa4f062352fa189569d89862e3d3615b3" name="aa4f062352fa189569d89862e3d3615b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f062352fa189569d89862e3d3615b3">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,11 +445,12 @@ template&lt;typename... Args&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Move assignment operator. </p>
+
+<p>Move assignment operator. </p>
 
 </div>
 </div>

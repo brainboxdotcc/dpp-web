@@ -2,21 +2,21 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classdpp_1_1task" kind="class" language="C++" prot="public">
     <compoundname>dpp::task</compoundname>
-    <basecompoundref refid="classdpp_1_1detail_1_1task__base" prot="private" virt="non-virtual">dpp::detail::task_base&lt; R &gt;</basecompoundref>
-    <includes local="no">task.h</includes>
+    <basecompoundref refid="classdpp_1_1detail_1_1task_1_1task__base" prot="private" virt="non-virtual">dpp::detail::task::task_base&lt; R &gt;</basecompoundref>
+    <includes local="no">coro/task.h</includes>
     <templateparamlist>
       <param>
         <type>typename R</type>
       </param>
     </templateparamlist>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdpp_1_1task_1a03beaf1a2a2842fd34b8cfd8ee47ace1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="friend" id="classdpp_1_1task_1ad0f512b321bc4024c16624781a67d578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>class</type>
-        <definition>friend class detail::task_base&lt; R &gt;</definition>
+        <definition>friend class detail::task::task_base&lt; R &gt;</definition>
         <argsstring></argsstring>
-        <name>detail::task_base&lt; R &gt;</name>
+        <name>detail::task::task_base&lt; R &gt;</name>
         <param>
-          <type><ref refid="classdpp_1_1detail_1_1task__base" kindref="compound">detail::task_base</ref>&lt; R &gt;</type>
+          <type><ref refid="classdpp_1_1detail_1_1task_1_1task__base" kindref="compound">detail::task::task_base</ref>&lt; R &gt;</type>
         </param>
         <briefdescription>
 <para>Internal use only base class containing common logic between task&lt;R&gt; and task&lt;void&gt;. It also serves to prevent await_suspend and await_resume from being used directly. </para>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="227" column="10" bodyfile="include/dpp/coro/task.h" bodystart="253" bodyend="-1"/>
+        <location file="include/dpp/coro/task.h" line="245" column="10" bodyfile="include/dpp/coro/task.h" bodystart="272" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -52,13 +52,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>R&amp; The result of the coroutine. This is returned to the awaiter as the result of co_await </para>
+<simplesect kind="return"><para>The result of the coroutine. This is returned to the awaiter as the result of co_await </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="261" column="3" bodyfile="include/dpp/coro/task.h" bodystart="261" bodyend="266"/>
+        <location file="include/dpp/coro/task.h" line="280" column="3" bodyfile="include/dpp/coro/task.h" bodystart="280" bodyend="286"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1aae8e3758fa7338ba689835e0f2f986bf" prot="private" static="no" const="yes" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
         <type>const R &amp;</type>
@@ -78,13 +78,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>const R&amp; The result of the coroutine. This is returned to the awaiter as the result of co_await </para>
+<simplesect kind="return"><para>The result of the coroutine. This is returned to the awaiter as the result of co_await </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="274" column="9" bodyfile="include/dpp/coro/task.h" bodystart="274" bodyend="279"/>
+        <location file="include/dpp/coro/task.h" line="294" column="9" bodyfile="include/dpp/coro/task.h" bodystart="294" bodyend="300"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1ad00222aadcbce97374b1254740d80305" prot="private" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" virt="non-virtual">
         <type>R &amp;&amp;</type>
@@ -104,27 +104,30 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>R&amp;&amp; The result of the coroutine. This is returned to the awaiter as the result of co_await </para>
+<simplesect kind="return"><para>The result of the coroutine. This is returned to the awaiter as the result of co_await </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="287" column="3" bodyfile="include/dpp/coro/task.h" bodystart="287" bodyend="292"/>
+        <location file="include/dpp/coro/task.h" line="308" column="3" bodyfile="include/dpp/coro/task.h" bodystart="308" bodyend="314"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1detail_1_1task__base_1a3544f0862f76b808e1226b7d137ca8f0" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1detail_1_1task_1_1task__base_1ac237a01125844a384c5a34e6d4928b08" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" noexcept="yes" virt="non-virtual">
         <type><ref refid="classdpp_1_1task" kindref="compound">dpp::task</ref>&lt; R &gt; &amp;&amp;</type>
-        <definition>dpp::task&lt; R &gt; &amp;&amp; dpp::detail::task_base&lt; R &gt;::cancel</definition>
+        <definition>dpp::task&lt; R &gt; &amp;&amp; dpp::detail::task::task_base&lt; R &gt;::cancel</definition>
         <argsstring>() &amp;&amp;noexcept</argsstring>
         <name>cancel</name>
         <briefdescription>
 <para>Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>*this </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="199" column="11" bodyfile="include/dpp/coro/task.h" bodystart="199" bodyend="202"/>
+        <location file="include/dpp/coro/task.h" line="217" column="11" bodyfile="include/dpp/coro/task.h" bodystart="217" bodyend="220"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -140,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="299" column="1"/>
+        <location file="include/dpp/coro/task.h" line="321" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1a04a2870d55bb2fb942ae1e9e072efe9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -157,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="304" column="1"/>
+        <location file="include/dpp/coro/task.h" line="326" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1aa074990f5d5c24b11787d0fc7d385202" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -185,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="311" column="1"/>
+        <location file="include/dpp/coro/task.h" line="333" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1a23ee3394a7c7eee5d8c2fee6f829cb9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -202,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="319" column="1"/>
+        <location file="include/dpp/coro/task.h" line="341" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1a1f532c5ceff4fadc0fa9174e80ff183c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1task" kindref="compound">task</ref> &amp;</type>
@@ -219,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="324" column="6"/>
+        <location file="include/dpp/coro/task.h" line="346" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1af56fcd28c94944982bd585dd44bef472" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classdpp_1_1task" kindref="compound">task</ref> &amp;</type>
@@ -247,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="331" column="6"/>
+        <location file="include/dpp/coro/task.h" line="353" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1ac030b9e766ceb3b427e88e926b92b81b" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -264,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="338" column="7"/>
+        <location file="include/dpp/coro/task.h" line="360" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1a2787e1f8313004716ac12a78be8ed50d" prot="public" static="no" const="no" explicit="no" inline="no" refqual="lvalue" noexcept="yes" virt="non-virtual">
         <type><ref refid="classdpp_1_1task" kindref="compound">dpp::task</ref>&lt; R &gt; &amp;</type>
@@ -278,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="343" column="11"/>
+        <location file="include/dpp/coro/task.h" line="365" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1a3b11a1b3ed125c88ccfa24722fb2f3eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -304,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="352" column="6"/>
+        <location file="include/dpp/coro/task.h" line="374" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1a007da70a7593ce74603ae96af1c381c7" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" noexcept="yes" virt="non-virtual">
         <type>auto &amp;</type>
@@ -324,13 +327,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>R&amp; On resumption, this expression evaluates to the result object of type R, as a reference. </para>
+<simplesect kind="return"><para>On resumption, this expression evaluates to the result object of type R, as a reference. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="367" column="6" bodyfile="include/dpp/coro/task.h" bodystart="367" bodyend="369"/>
+        <location file="include/dpp/coro/task.h" line="389" column="7" bodyfile="include/dpp/coro/task.h" bodystart="389" bodyend="391"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1aa410dbfe84a7281dafbe563b1d224123" prot="public" static="no" const="yes" explicit="no" inline="yes" refqual="lvalue" noexcept="yes" virt="non-virtual">
         <type>const auto &amp;</type>
@@ -350,13 +353,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>const R&amp; On resumption, this expression evaluates to the result object of type R, as a const reference. </para>
+<simplesect kind="return"><para>On resumption, this expression evaluates to the result object of type R, as a const reference. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="377" column="12" bodyfile="include/dpp/coro/task.h" bodystart="377" bodyend="379"/>
+        <location file="include/dpp/coro/task.h" line="399" column="13" bodyfile="include/dpp/coro/task.h" bodystart="399" bodyend="401"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1task_1a22cf3d2c69226edfbb1585072ec25086" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" noexcept="yes" virt="non-virtual">
         <type>auto &amp;&amp;</type>
@@ -376,28 +379,27 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>R&amp;&amp; On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </para>
+<simplesect kind="return"><para>On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="387" column="6" bodyfile="include/dpp/coro/task.h" bodystart="387" bodyend="389"/>
+        <location file="include/dpp/coro/task.h" line="409" column="7" bodyfile="include/dpp/coro/task.h" bodystart="409" bodyend="411"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>A coroutine task. It starts immediately on construction and can be co_await-ed, making it perfect for parallel coroutines returning a value. </para>
     </briefdescription>
     <detaileddescription>
-<para>Can be used in conjunction with coroutine events via dpp::event_router_t::co_attach, or on its own.</para>
-<para><simplesect kind="warning"><para>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <ulink url="https://github.com/brainboxdotcc/DPP/issues">GitHub issues</ulink> or to the <ulink url="https://discord.gg/dpp">D++ Discord server</ulink>. </para>
+<para><simplesect kind="warning"><para>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <ulink url="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</ulink> or to our <ulink url="https://discord.gg/dpp">Discord Server</ulink>. </para>
 </simplesect>
 <parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>R</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Return type of the coroutine. Cannot be a reference, can be void. </para>
+<para>Return type of the task. Cannot be a reference but can be void. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -405,8 +407,8 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="2">
-        <label>dpp::detail::task_base&lt; R &gt;</label>
-        <link refid="classdpp_1_1detail_1_1task__base"/>
+        <label>dpp::detail::task::task_base&lt; R &gt;</label>
+        <link refid="classdpp_1_1detail_1_1task_1_1task__base"/>
       </node>
       <node id="1">
         <label>dpp::task&lt; R &gt;</label>
@@ -417,11 +419,11 @@
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>task_handle&lt;</label>
+        <label>handle_t&lt;</label>
       </node>
       <node id="2">
-        <label>dpp::detail::task_base&lt; R &gt;</label>
-        <link refid="classdpp_1_1detail_1_1task__base"/>
+        <label>dpp::detail::task::task_base&lt; R &gt;</label>
+        <link refid="classdpp_1_1detail_1_1task_1_1task__base"/>
         <childnode refid="3" relation="usage">
           <edgelabel>handle</edgelabel>
         </childnode>
@@ -433,23 +435,23 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/coro/task.h" line="246" column="1" bodyfile="include/dpp/coro/task.h" bodystart="246" bodyend="390"/>
+    <location file="include/dpp/coro/task.h" line="254" column="1" bodyfile="include/dpp/coro/task.h" bodystart="265" bodyend="412"/>
     <listofallmembers>
       <member refid="classdpp_1_1task_1a3b11a1b3ed125c88ccfa24722fb2f3eb" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>await_ready</name></member>
       <member refid="classdpp_1_1task_1aafdfb5c1f013eac8d7395e860e015b8a" prot="private" virt="non-virtual"><scope>dpp::task</scope><name>await_resume_impl</name></member>
       <member refid="classdpp_1_1task_1aae8e3758fa7338ba689835e0f2f986bf" prot="private" virt="non-virtual"><scope>dpp::task</scope><name>await_resume_impl</name></member>
       <member refid="classdpp_1_1task_1ad00222aadcbce97374b1254740d80305" prot="private" virt="non-virtual"><scope>dpp::task</scope><name>await_resume_impl</name></member>
       <member refid="classdpp_1_1task_1a2787e1f8313004716ac12a78be8ed50d" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>cancel</name></member>
-      <member refid="classdpp_1_1detail_1_1task__base_1a3544f0862f76b808e1226b7d137ca8f0" prot="private" virt="non-virtual" ambiguityscope="dpp::detail::task_base::"><scope>dpp::task</scope><name>cancel</name></member>
-      <member refid="classdpp_1_1task_1a03beaf1a2a2842fd34b8cfd8ee47ace1" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>detail::task_base&lt; R &gt;</name></member>
+      <member refid="classdpp_1_1detail_1_1task_1_1task__base_1ac237a01125844a384c5a34e6d4928b08" prot="private" virt="non-virtual" ambiguityscope="dpp::detail::task::task_base::"><scope>dpp::task</scope><name>cancel</name></member>
+      <member refid="classdpp_1_1task_1ad0f512b321bc4024c16624781a67d578" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>detail::task::task_base&lt; R &gt;</name></member>
       <member refid="classdpp_1_1task_1ac030b9e766ceb3b427e88e926b92b81b" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>done</name></member>
       <member refid="classdpp_1_1task_1a007da70a7593ce74603ae96af1c381c7" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>operator co_await</name></member>
       <member refid="classdpp_1_1task_1aa410dbfe84a7281dafbe563b1d224123" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>operator co_await</name></member>
       <member refid="classdpp_1_1task_1a22cf3d2c69226edfbb1585072ec25086" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>operator co_await</name></member>
       <member refid="classdpp_1_1task_1a1f532c5ceff4fadc0fa9174e80ff183c" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>operator=</name></member>
       <member refid="classdpp_1_1task_1af56fcd28c94944982bd585dd44bef472" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>operator=</name></member>
-      <member refid="classdpp_1_1detail_1_1task__base_1aa53db78881ff6d8d950f722c75fe8bae" prot="private" virt="non-virtual" ambiguityscope="dpp::detail::task_base::"><scope>dpp::task</scope><name>operator=</name></member>
-      <member refid="classdpp_1_1detail_1_1task__base_1ae66b2b8d62ac1be5ae3adf1e8d0a9d0b" prot="private" virt="non-virtual" ambiguityscope="dpp::detail::task_base::"><scope>dpp::task</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1task_1_1task__base_1a9c826dcdc70f0bc1a9c59312b2382fbd" prot="private" virt="non-virtual" ambiguityscope="dpp::detail::task::task_base::"><scope>dpp::task</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1task_1_1task__base_1a024c00707ba4017f55d0222b676441f3" prot="private" virt="non-virtual" ambiguityscope="dpp::detail::task::task_base::"><scope>dpp::task</scope><name>operator=</name></member>
       <member refid="classdpp_1_1task_1abaeb36ad1e3c3d0e4ce53d46a47d61b5" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>task</name></member>
       <member refid="classdpp_1_1task_1a04a2870d55bb2fb942ae1e9e072efe9f" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>task</name></member>
       <member refid="classdpp_1_1task_1aa074990f5d5c24b11787d0fc7d385202" prot="public" virt="non-virtual"><scope>dpp::task</scope><name>task</name></member>

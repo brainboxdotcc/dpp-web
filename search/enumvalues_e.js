@@ -3,7 +3,7 @@ var searchData=
   ['satype_5flive_5faudio_0',['satype_live_audio',['../classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a4506440a2c61f352bba696bf9e806219',1,'dpp::discord_voice_client']]],
   ['satype_5foverlap_5faudio_1',['satype_overlap_audio',['../classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34a1d950a0e94c2adf54d55d9ddf1332b4a',1,'dpp::discord_voice_client']]],
   ['satype_5frecorded_5faudio_2',['satype_recorded_audio',['../classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483',1,'dpp::discord_voice_client']]],
-  ['sent_3',['sent',['../namespacedpp_1_1detail.html#ab8f8992a67c42dc3b707c8397c3e669ca789183b7e98646c11d5f0544c8f3c4c9',1,'dpp::detail']]],
+  ['sent_3',['sent',['../namespacedpp_1_1detail_1_1async.html#a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9',1,'dpp::detail::async']]],
   ['sf_5fapng_4',['sf_apng',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2',1,'dpp']]],
   ['sf_5fgif_5',['sf_gif',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a1eda394123de2355ba83675ebd905a76',1,'dpp']]],
   ['sf_5flottie_6',['sf_lottie',['../namespacedpp.html#ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5',1,'dpp']]],
@@ -16,5 +16,5 @@ var searchData=
   ['st_5freturn_13',['st_return',['../namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4ad7671c39cba8f6577475ce3cc8ac1f5e',1,'dpp']]],
   ['st_5fstandard_14',['st_standard',['../namespacedpp.html#a1e48af4f3b8fd3f07ea0c2c55de99bffa8c6ea2a04a08ddefbb5af1d65fd522ca',1,'dpp']]],
   ['st_5fwait_15',['st_wait',['../namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726',1,'dpp']]],
-  ['started_16',['started',['../namespacedpp_1_1detail.html#a55d58fcb55862a7ad5ef0dac76500c36a3bebb2f89180b03fa5ae736665f648d9',1,'dpp::detail::started()'],['../namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1a3bebb2f89180b03fa5ae736665f648d9',1,'dpp::detail::when_any::started()']]]
+  ['started_16',['started',['../namespacedpp_1_1detail_1_1task.html#a6f686ce679d1979c011b31e1e6a9bb1da3bebb2f89180b03fa5ae736665f648d9',1,'dpp::detail::task::started()'],['../namespacedpp_1_1detail_1_1when__any.html#a2e21fb5fc3cc30494804672faf85f3c1a3bebb2f89180b03fa5ae736665f648d9',1,'dpp::detail::when_any::started()']]]
 ];

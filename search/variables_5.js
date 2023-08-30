@@ -89,7 +89,7 @@ var searchData=
   ['event_5fid_86',['event_id',['../structdpp_1_1guild__scheduled__event__user__add__t.html#a340444fbb5e027722de705f27ad101ea',1,'dpp::guild_scheduled_event_user_add_t::event_id()'],['../structdpp_1_1guild__scheduled__event__user__remove__t.html#a6a30b55dde5f359ff5fdae1714477e26',1,'dpp::guild_scheduled_event_user_remove_t::event_id()']]],
   ['event_5ftype_87',['event_type',['../classdpp_1_1automod__rule.html#a48453f7108212b762a37280640079ae4',1,'dpp::automod_rule']]],
   ['evergreen_5ftree_88',['evergreen_tree',['../namespacedpp_1_1unicode__emoji.html#a833e8319e9b8a14585756e6ac40772fb',1,'dpp::unicode_emoji']]],
-  ['exception_89',['exception',['../structdpp_1_1detail_1_1coroutine__promise_3_01void_01_4.html#a782652f27e661fde8c2c8d6389438168',1,'dpp::detail::coroutine_promise&lt; void &gt;::exception()'],['../structdpp_1_1detail_1_1coroutine__promise.html#a958c9d10930d6ef6fe0e18d34f880e0e',1,'dpp::detail::coroutine_promise::exception()']]],
+  ['exception_89',['exception',['../structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html#a8b41556f8399485887c3b9c145299c51',1,'dpp::detail::coroutine::promise_t&lt; void &gt;::exception()'],['../structdpp_1_1detail_1_1coroutine_1_1promise__t.html#abdbb1af1207eb5e00f81f019d19666de',1,'dpp::detail::coroutine::promise_t::exception()']]],
   ['exclamation_90',['exclamation',['../namespacedpp_1_1unicode__emoji.html#a07e0ce7245ff82b41f58cc7be1104547',1,'dpp::unicode_emoji']]],
   ['exempt_5fchannels_91',['exempt_channels',['../classdpp_1_1automod__rule.html#a53d470a64f437aeb038c5e122fccded5',1,'dpp::automod_rule']]],
   ['exempt_5froles_92',['exempt_roles',['../classdpp_1_1automod__rule.html#a5f1eedc34c9a8d99202508fd161b1777',1,'dpp::automod_rule']]],

@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('classdpp_1_1task.html',''); initResiza
 <p>A coroutine task. It starts immediately on construction and can be co_await-ed, making it perfect for parallel coroutines returning a value.  
  <a href="classdpp_1_1task.html#details">More...</a></p>
 
-<p><code>#include &lt;task.h&gt;</code></p>
+<p><code>#include &lt;coro/task.h&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for dpp::task&lt; R &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1task__inherit__graph.svg" width="215" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1task__inherit__graph.svg" width="146" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1task.html',''); initResiza
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1task__coll__graph.svg" width="215" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1task__coll__graph.svg" width="146" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -169,24 +169,23 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a3544f0862f76b808e1226b7d137ca8f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1task.html">dpp::task</a>&lt; R &gt; &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1detail_1_1task__base.html#a3544f0862f76b808e1226b7d137ca8f0">cancel</a> () &amp;&amp;noexcept</td></tr>
-<tr class="memdesc:a3544f0862f76b808e1226b7d137ca8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <a class="el" href="classdpp_1_1task__cancelled__exception.html" title="Represents the cancellation of a task. Will be thrown to the awaiter of a cancelled task.">dpp::task_cancelled_exception</a>.  <a href="classdpp_1_1detail_1_1task__base.html#a3544f0862f76b808e1226b7d137ca8f0">More...</a><br /></td></tr>
-<tr class="separator:a3544f0862f76b808e1226b7d137ca8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac237a01125844a384c5a34e6d4928b08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1task.html">dpp::task</a>&lt; R &gt; &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1detail_1_1task_1_1task__base.html#ac237a01125844a384c5a34e6d4928b08">cancel</a> () &amp;&amp;noexcept</td></tr>
+<tr class="memdesc:ac237a01125844a384c5a34e6d4928b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel the task, it will stop the next time it uses co_await. On co_await-ing this task, throws <a class="el" href="classdpp_1_1task__cancelled__exception.html" title="Represents the cancellation of a task. Will be thrown to the awaiter of a cancelled task.">dpp::task_cancelled_exception</a>.  <a href="classdpp_1_1detail_1_1task_1_1task__base.html#ac237a01125844a384c5a34e6d4928b08">More...</a><br /></td></tr>
+<tr class="separator:ac237a01125844a384c5a34e6d4928b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a03beaf1a2a2842fd34b8cfd8ee47ace1"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1task.html#a03beaf1a2a2842fd34b8cfd8ee47ace1">detail::task_base&lt; R &gt;</a></td></tr>
-<tr class="memdesc:a03beaf1a2a2842fd34b8cfd8ee47ace1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal use only base class containing common logic between task&lt;R&gt; and task&lt;void&gt;. It also serves to prevent await_suspend and await_resume from being used directly.  <a href="classdpp_1_1task.html#a03beaf1a2a2842fd34b8cfd8ee47ace1">More...</a><br /></td></tr>
-<tr class="separator:a03beaf1a2a2842fd34b8cfd8ee47ace1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f512b321bc4024c16624781a67d578"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1task.html#ad0f512b321bc4024c16624781a67d578">detail::task::task_base&lt; R &gt;</a></td></tr>
+<tr class="memdesc:ad0f512b321bc4024c16624781a67d578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal use only base class containing common logic between task&lt;R&gt; and task&lt;void&gt;. It also serves to prevent await_suspend and await_resume from being used directly.  <a href="classdpp_1_1task.html#ad0f512b321bc4024c16624781a67d578">More...</a><br /></td></tr>
+<tr class="separator:ad0f512b321bc4024c16624781a67d578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename R&gt;<br />
 class dpp::task&lt; R &gt;</div><p >A coroutine task. It starts immediately on construction and can be co_await-ed, making it perfect for parallel coroutines returning a value. </p>
-<p >Can be used in conjunction with coroutine events via dpp::event_router_t::co_attach, or on its own.</p>
-<dl class="section warning"><dt>Warning</dt><dd>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub issues</a> or to the <a href="https://discord.gg/dpp">D++ Discord server</a>. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</a> or to our <a href="https://discord.gg/dpp">Discord Server</a>. </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">R</td><td>Return type of the coroutine. Cannot be a reference, can be void. </td></tr>
+    <tr><td class="paramname">R</td><td>Return type of the task. Cannot be a reference but can be void. </td></tr>
   </table>
   </dd>
 </dl>
@@ -428,7 +427,7 @@ template&lt;typename R &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>R&amp;&amp; On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </dd></dl>
 
 </div>
 </div>
@@ -464,7 +463,7 @@ template&lt;typename R &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>R&amp; On resumption, this expression evaluates to the result object of type R, as a reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as a reference. </dd></dl>
 
 </div>
 </div>
@@ -500,7 +499,7 @@ template&lt;typename R &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>const R&amp; On resumption, this expression evaluates to the result object of type R, as a const reference. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as a const reference. </dd></dl>
 
 </div>
 </div>
@@ -571,8 +570,8 @@ template&lt;typename R &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a03beaf1a2a2842fd34b8cfd8ee47ace1" name="a03beaf1a2a2842fd34b8cfd8ee47ace1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03beaf1a2a2842fd34b8cfd8ee47ace1">&#9670;&nbsp;</a></span>detail::task_base&lt; R &gt;</h2>
+<a id="ad0f512b321bc4024c16624781a67d578" name="ad0f512b321bc4024c16624781a67d578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f512b321bc4024c16624781a67d578">&#9670;&nbsp;</a></span>detail::task::task_base&lt; R &gt;</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,7 +582,7 @@ template&lt;typename R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classdpp_1_1detail_1_1task__base.html">detail::task_base</a>&lt; R &gt;</td>
+          <td class="memname">friend class <a class="el" href="classdpp_1_1detail_1_1task_1_1task__base.html">detail::task::task_base</a>&lt; R &gt;</td>
         </tr>
       </table>
   </td>

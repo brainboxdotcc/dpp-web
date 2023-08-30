@@ -160,7 +160,7 @@ var searchData=
   ['avatar_157',['avatar',['../classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110',1,'dpp::webhook::avatar()'],['../classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3',1,'dpp::user::avatar()'],['../classdpp_1_1guild__member.html#aeb9413ebe5540ebd625a35166f5ad799',1,'dpp::guild_member::avatar()']]],
   ['avocado_158',['avocado',['../namespacedpp_1_1unicode__emoji.html#ae0badf3a7ce27ceb424a0467ddc274e4',1,'dpp::unicode_emoji']]],
   ['avocado_5fgreen_159',['avocado_green',['../namespacedpp_1_1colors.html#aaff3a071c1fb3bb12b94017c03937949',1,'dpp::colors']]],
-  ['awaitable_160',['awaitable',['../structdpp_1_1detail_1_1task__promise__base_1_1proxy__awaiter.html#ac722262df5c146a2a150fe4ace6a2c17',1,'dpp::detail::task_promise_base::proxy_awaiter']]],
+  ['awaitable_160',['awaitable',['../structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a7b736cf8304ba64062dbf372f70c9650',1,'dpp::detail::task::promise_base::proxy_awaiter']]],
   ['axe_161',['axe',['../namespacedpp_1_1unicode__emoji.html#ad915aa145a602603ee6bd6dba5b576c0',1,'dpp::unicode_emoji']]],
   ['aztech_5fpurple_162',['aztech_purple',['../namespacedpp_1_1colors.html#a7f74f143570dfb4e9b33e4710966d69a',1,'dpp::colors']]],
   ['azure_163',['azure',['../namespacedpp_1_1colors.html#a670dfea0a8a4a4f823cf7d5b586cd5d3',1,'dpp::colors']]],

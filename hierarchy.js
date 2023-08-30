@@ -11,10 +11,10 @@ var hierarchy =
     [ "dpp::application_install_params", "structdpp_1_1application__install__params.html", null ],
     [ "dpp::detail::when_any::arg_helper_s< T >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", null ],
     [ "dpp::detail::when_any::arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", null ],
-    [ "dpp::detail::async_base< R >", "classdpp_1_1detail_1_1async__base.html", [
+    [ "dpp::detail::async::async_base< R >", "classdpp_1_1detail_1_1async_1_1async__base.html", [
       [ "dpp::async< R >", "classdpp_1_1async.html", null ]
     ] ],
-    [ "dpp::detail::async_callback_data< R >", "structdpp_1_1detail_1_1async__callback__data.html", null ],
+    [ "dpp::detail::async::async_callback_data< R >", "structdpp_1_1detail_1_1async_1_1async__callback__data.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audio_mixer", "classdpp_1_1audio__mixer.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
@@ -45,12 +45,9 @@ var hierarchy =
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
     [ "dpp::connection", "classdpp_1_1connection.html", null ],
-    [ "dpp::detail::coroutine_base< R >", "classdpp_1_1detail_1_1coroutine__base.html", [
+    [ "dpp::detail::coroutine::coroutine_base< R >", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html", [
       [ "dpp::coroutine< R >", "classdpp_1_1coroutine.html", null ]
     ] ],
-    [ "dpp::detail::coroutine_final_awaiter< R >", "structdpp_1_1detail_1_1coroutine__final__awaiter.html", null ],
-    [ "dpp::detail::coroutine_promise< R >", "structdpp_1_1detail_1_1coroutine__promise.html", null ],
-    [ "dpp::detail::coroutine_promise< void >", "structdpp_1_1detail_1_1coroutine__promise_3_01void_01_4.html", null ],
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", null ],
@@ -231,6 +228,8 @@ var hierarchy =
         [ "dpp::voice_exception", "classdpp_1_1voice__exception.html", null ]
       ] ]
     ] ],
+    [ "dpp::detail::coroutine::final_awaiter< R >", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html", null ],
+    [ "dpp::detail::task::final_awaiter< R >", "structdpp_1_1detail_1_1task_1_1final__awaiter.html", null ],
     [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
     [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
     [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ],
@@ -244,7 +243,6 @@ var hierarchy =
     [ "dpp::select_option::inner_select_emoji", "structdpp_1_1select__option_1_1inner__select__emoji.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
     [ "dpp::job", "structdpp_1_1job.html", null ],
-    [ "dpp::detail::job_promise< Args >", "structdpp_1_1detail_1_1job__promise.html", null ],
     [ "dpp::json_interface< T >", "structdpp_1_1json__interface.html", null ],
     [ "dpp::json_interface< application >", "structdpp_1_1json__interface.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ]
@@ -411,7 +409,14 @@ var hierarchy =
     [ "dpp::param_info", "structdpp_1_1param__info.html", null ],
     [ "dpp::permission", "classdpp_1_1permission.html", null ],
     [ "dpp::permission_overwrite", "structdpp_1_1permission__overwrite.html", null ],
-    [ "dpp::detail::task_promise_base::proxy_awaiter< A >", "structdpp_1_1detail_1_1task__promise__base_1_1proxy__awaiter.html", null ],
+    [ "dpp::detail::job::promise< Args >", "structdpp_1_1detail_1_1job_1_1promise.html", null ],
+    [ "dpp::detail::task::promise_base", "structdpp_1_1detail_1_1task_1_1promise__base.html", [
+      [ "dpp::detail::task::promise_t< R >", "structdpp_1_1detail_1_1task_1_1promise__t.html", null ],
+      [ "dpp::detail::task::promise_t< void >", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html", null ]
+    ] ],
+    [ "dpp::detail::coroutine::promise_t< R >", "structdpp_1_1detail_1_1coroutine_1_1promise__t.html", null ],
+    [ "dpp::detail::coroutine::promise_t< void >", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html", null ],
+    [ "dpp::detail::task::promise_base::proxy_awaiter< A >", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html", null ],
     [ "dpp::reaction", "structdpp_1_1reaction.html", null ],
     [ "dpp::request_queue", "classdpp_1_1request__queue.html", null ],
     [ "dpp::resolved_user", "structdpp_1_1resolved__user.html", null ],
@@ -425,13 +430,8 @@ var hierarchy =
         [ "dpp::discord_voice_client", "classdpp_1_1discord__voice__client.html", null ]
       ] ]
     ] ],
-    [ "dpp::detail::task_base< R >", "classdpp_1_1detail_1_1task__base.html", [
+    [ "dpp::detail::task::task_base< R >", "classdpp_1_1detail_1_1task_1_1task__base.html", [
       [ "dpp::task< R >", "classdpp_1_1task.html", null ]
-    ] ],
-    [ "dpp::detail::task_chain_final_awaiter< R >", "structdpp_1_1detail_1_1task__chain__final__awaiter.html", null ],
-    [ "dpp::detail::task_promise_base", "structdpp_1_1detail_1_1task__promise__base.html", [
-      [ "dpp::detail::task_promise< R >", "structdpp_1_1detail_1_1task__promise.html", null ],
-      [ "dpp::detail::task_promise< void >", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html", null ]
     ] ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
     [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],

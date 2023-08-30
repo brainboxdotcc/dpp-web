@@ -104,5 +104,5 @@ var searchData=
   ['aut_5fwebhook_5fcreate_101',['aut_webhook_create',['../namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da0a052b5ae2a48cf79545b5eb4634ec1e',1,'dpp']]],
   ['aut_5fwebhook_5fdelete_102',['aut_webhook_delete',['../namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da4d3b487279abd6baf5fc4330c6e7cd80',1,'dpp']]],
   ['aut_5fwebhook_5fupdate_103',['aut_webhook_update',['../namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8b0e4c2c57f07363bb91decc933a4e16',1,'dpp']]],
-  ['awaited_104',['awaited',['../namespacedpp_1_1detail.html#a55d58fcb55862a7ad5ef0dac76500c36a23a13b01435cba85c0a5ea07c8b5b37e',1,'dpp::detail']]]
+  ['awaited_104',['awaited',['../namespacedpp_1_1detail_1_1task.html#a6f686ce679d1979c011b31e1e6a9bb1da23a13b01435cba85c0a5ea07c8b5b37e',1,'dpp::detail::task']]]
 ];

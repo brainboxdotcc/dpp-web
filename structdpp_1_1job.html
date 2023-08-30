@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="dpp::job Struct Reference - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="dpp::job Class Reference - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="dpp::job Struct Reference - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="dpp::job Class Reference - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="dpp::job Struct Reference - D++ - The lightweight C++ Discord API Library">
-<title>dpp::job Struct Reference - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="dpp::job Class Reference - D++ - The lightweight C++ Discord API Library">
+<title>dpp::job Class Reference - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,20 +98,20 @@ $(document).ready(function(){initNavTree('structdpp_1_1job.html',''); initResiza
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">dpp::job Struct Reference</div></div>
+  <div class="headertitle"><div class="title">dpp::job Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Extremely light coroutine object designed to send off a coroutine to execute on its own. It can be attached to an event router using dpp::event_router_t::co_attach.  
+<p>Extremely light coroutine object designed to send off a coroutine to execute on its own. Can be used in conjunction with coroutine events via <a class="el" href="classdpp_1_1event__router__t.html#a1abf0dab2344fad5d1ce20d79c87dac0">event routers</a>, or on its own.  
  <a href="structdpp_1_1job.html#details">More...</a></p>
 
-<p><code>#include &lt;job.h&gt;</code></p>
+<p><code>#include &lt;coro/job.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Extremely light coroutine object designed to send off a coroutine to execute on its own. It can be attached to an event router using dpp::event_router_t::co_attach. </p>
+<div class="textblock"><p >Extremely light coroutine object designed to send off a coroutine to execute on its own. Can be used in conjunction with coroutine events via <a class="el" href="classdpp_1_1event__router__t.html#a1abf0dab2344fad5d1ce20d79c87dac0">event routers</a>, or on its own. </p>
 <p >This object stores no state and is the recommended way to use coroutines if you do not need to co_await the result.</p>
-<dl class="section warning"><dt>Warning</dt><dd>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub issues</a> or to the <a href="https://discord.gg/dpp">D++ Discord server</a>. </dd>
+<dl class="section warning"><dt>Warning</dt><dd>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</a> or to our <a href="https://discord.gg/dpp">Discord Server</a>. </dd>
 <dd>
-- It cannot be co_awaited, which means the second it co_awaits something, the program jumps back to the calling function, which continues executing. At this point, if the function returns, every object declared in the function including its parameters are destroyed, which causes dangling references. This is exactly the same problem as references in lambdas : <a href="https://dpp.dev/lambdas-and-locals.html">https://dpp.dev/lambdas-and-locals.html</a>. For this reason, <code>co_await</code> will error if any parameters are passed by reference. If you must pass a reference, pass it as a pointer or with std::ref, but you must fully understand the reason behind this warning, and what to avoid. If you prefer a safer type, use <code>coroutine</code> for synchronous execution, or <code>task</code> for parallel tasks, and co_await them. </dd></dl>
+- It cannot be co_awaited, which means the second it co_awaits something, the program jumps back to the calling function, which continues executing. At this point, if the function returns, every object declared in the function including its parameters are destroyed, which causes <a class="el" href="lambdas-and-locals.html">dangling references</a>. For this reason, <code>co_await</code> will error if any parameters are passed by reference. If you must pass a reference, pass it as a pointer or with std::ref, but you must fully understand the reason behind this warning, and what to avoid. If you prefer a safer type, use <code>coroutine</code> for synchronous execution, or <code>task</code> for parallel tasks, and co_await them. </dd></dl>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">

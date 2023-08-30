@@ -2,32 +2,40 @@ var annotated_dup =
 [
     [ "dpp", "namespacedpp.html", [
       [ "detail", "namespacedpp_1_1detail.html", [
+        [ "async", "namespacedpp_1_1detail_1_1async.html", [
+          [ "async_base", "classdpp_1_1detail_1_1async_1_1async__base.html", "classdpp_1_1detail_1_1async_1_1async__base" ],
+          [ "async_callback_data", "structdpp_1_1detail_1_1async_1_1async__callback__data.html", "structdpp_1_1detail_1_1async_1_1async__callback__data" ]
+        ] ],
+        [ "coroutine", "namespacedpp_1_1detail_1_1coroutine.html", [
+          [ "coroutine_base", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base" ],
+          [ "final_awaiter", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter" ],
+          [ "promise_t", "structdpp_1_1detail_1_1coroutine_1_1promise__t.html", "structdpp_1_1detail_1_1coroutine_1_1promise__t" ],
+          [ "promise_t< void >", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4" ]
+        ] ],
         [ "event_router", "namespacedpp_1_1detail_1_1event__router.html", [
           [ "awaitable", "classdpp_1_1detail_1_1event__router_1_1awaitable.html", "classdpp_1_1detail_1_1event__router_1_1awaitable" ]
+        ] ],
+        [ "job", "namespacedpp_1_1detail_1_1job.html", [
+          [ "promise", "structdpp_1_1detail_1_1job_1_1promise.html", "structdpp_1_1detail_1_1job_1_1promise" ]
         ] ],
         [ "std_coroutine", "namespacedpp_1_1detail_1_1std__coroutine.html", [
           [ "coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4" ],
           [ "coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4" ],
           [ "coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4" ]
         ] ],
+        [ "task", "namespacedpp_1_1detail_1_1task.html", [
+          [ "final_awaiter", "structdpp_1_1detail_1_1task_1_1final__awaiter.html", "structdpp_1_1detail_1_1task_1_1final__awaiter" ],
+          [ "promise_base", "structdpp_1_1detail_1_1task_1_1promise__base.html", "structdpp_1_1detail_1_1task_1_1promise__base" ],
+          [ "promise_t", "structdpp_1_1detail_1_1task_1_1promise__t.html", "structdpp_1_1detail_1_1task_1_1promise__t" ],
+          [ "promise_t< void >", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4" ],
+          [ "task_base", "classdpp_1_1detail_1_1task_1_1task__base.html", "classdpp_1_1detail_1_1task_1_1task__base" ]
+        ] ],
         [ "when_any", "namespacedpp_1_1detail_1_1when__any.html", [
           [ "arg_helper_s", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s" ],
           [ "arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4" ],
           [ "empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ]
         ] ],
-        [ "async_base", "classdpp_1_1detail_1_1async__base.html", "classdpp_1_1detail_1_1async__base" ],
-        [ "async_callback_data", "structdpp_1_1detail_1_1async__callback__data.html", "structdpp_1_1detail_1_1async__callback__data" ],
-        [ "coroutine_base", "classdpp_1_1detail_1_1coroutine__base.html", "classdpp_1_1detail_1_1coroutine__base" ],
-        [ "coroutine_final_awaiter", "structdpp_1_1detail_1_1coroutine__final__awaiter.html", "structdpp_1_1detail_1_1coroutine__final__awaiter" ],
-        [ "coroutine_promise", "structdpp_1_1detail_1_1coroutine__promise.html", "structdpp_1_1detail_1_1coroutine__promise" ],
-        [ "coroutine_promise< void >", "structdpp_1_1detail_1_1coroutine__promise_3_01void_01_4.html", "structdpp_1_1detail_1_1coroutine__promise_3_01void_01_4" ],
-        [ "empty_tag_t", "structdpp_1_1detail_1_1empty__tag__t.html", null ],
-        [ "job_promise", "structdpp_1_1detail_1_1job__promise.html", "structdpp_1_1detail_1_1job__promise" ],
-        [ "task_base", "classdpp_1_1detail_1_1task__base.html", "classdpp_1_1detail_1_1task__base" ],
-        [ "task_chain_final_awaiter", "structdpp_1_1detail_1_1task__chain__final__awaiter.html", "structdpp_1_1detail_1_1task__chain__final__awaiter" ],
-        [ "task_promise", "structdpp_1_1detail_1_1task__promise.html", "structdpp_1_1detail_1_1task__promise" ],
-        [ "task_promise< void >", "structdpp_1_1detail_1_1task__promise_3_01void_01_4.html", "structdpp_1_1detail_1_1task__promise_3_01void_01_4" ],
-        [ "task_promise_base", "structdpp_1_1detail_1_1task__promise__base.html", "structdpp_1_1detail_1_1task__promise__base" ]
+        [ "empty_tag_t", "structdpp_1_1detail_1_1empty__tag__t.html", null ]
       ] ],
       [ "events", "namespacedpp_1_1events.html", [
         [ "automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", "classdpp_1_1events_1_1automod__rule__create" ],

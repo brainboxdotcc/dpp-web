@@ -9,6 +9,5 @@ var searchData=
   ['command_5fparameter_6',['command_parameter',['../namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd',1,'dpp']]],
   ['command_5fvalue_7',['command_value',['../namespacedpp.html#a710b32b577396ba92917d0578f0bedb6',1,'dpp']]],
   ['confirmable_5ft_8',['confirmable_t',['../namespacedpp.html#a7135567d4a562ebf847599d51f58a218',1,'dpp']]],
-  ['connection_5fmap_9',['connection_map',['../namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a',1,'dpp']]],
-  ['coroutine_5fhandle_10',['coroutine_handle',['../namespacedpp_1_1detail.html#a2754d5a7f48a947b5743b12236bab7a3',1,'dpp::detail']]]
+  ['connection_5fmap_9',['connection_map',['../namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a',1,'dpp']]]
 ];

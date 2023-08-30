@@ -2,107 +2,14 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="namespacedpp_1_1detail" kind="namespace" language="C++">
     <compoundname>dpp::detail</compoundname>
-    <innerclass refid="classdpp_1_1detail_1_1async__base" prot="public">dpp::detail::async_base</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1async__callback__data" prot="public">dpp::detail::async_callback_data</innerclass>
-    <innerclass refid="classdpp_1_1detail_1_1coroutine__base" prot="public">dpp::detail::coroutine_base</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1coroutine__final__awaiter" prot="public">dpp::detail::coroutine_final_awaiter</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1coroutine__promise" prot="public">dpp::detail::coroutine_promise</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1coroutine__promise_3_01void_01_4" prot="public">dpp::detail::coroutine_promise&lt; void &gt;</innerclass>
     <innerclass refid="structdpp_1_1detail_1_1empty__tag__t" prot="public">dpp::detail::empty_tag_t</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1job__promise" prot="public">dpp::detail::job_promise</innerclass>
-    <innerclass refid="classdpp_1_1detail_1_1task__base" prot="public">dpp::detail::task_base</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1task__chain__final__awaiter" prot="public">dpp::detail::task_chain_final_awaiter</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1task__promise" prot="public">dpp::detail::task_promise</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1task__promise_3_01void_01_4" prot="public">dpp::detail::task_promise&lt; void &gt;</innerclass>
-    <innerclass refid="structdpp_1_1detail_1_1task__promise__base" prot="public">dpp::detail::task_promise_base</innerclass>
+    <innernamespace refid="namespacedpp_1_1detail_1_1async">dpp::detail::async</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1coroutine">dpp::detail::coroutine</innernamespace>
     <innernamespace refid="namespacedpp_1_1detail_1_1event__router">dpp::detail::event_router</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1job">dpp::detail::job</innernamespace>
     <innernamespace refid="namespacedpp_1_1detail_1_1std__coroutine">dpp::detail::std_coroutine</innernamespace>
+    <innernamespace refid="namespacedpp_1_1detail_1_1task">dpp::detail::task</innernamespace>
     <innernamespace refid="namespacedpp_1_1detail_1_1when__any">dpp::detail::when_any</innernamespace>
-      <sectiondef kind="enum">
-      <memberdef kind="enum" id="namespacedpp_1_1detail_1ab8f8992a67c42dc3b707c8397c3e669c" prot="public" static="no" strong="yes">
-        <type></type>
-        <name>async_state_t</name>
-        <enumvalue id="namespacedpp_1_1detail_1ab8f8992a67c42dc3b707c8397c3e669ca789183b7e98646c11d5f0544c8f3c4c9" prot="public">
-          <name>sent</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="namespacedpp_1_1detail_1ab8f8992a67c42dc3b707c8397c3e669cacb05cab65afefab8fd3831d92cfc68be" prot="public">
-          <name>waiting</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="namespacedpp_1_1detail_1ab8f8992a67c42dc3b707c8397c3e669ca6b2ded51d81a4403d8a4bd25fa1e57ee" prot="public">
-          <name>done</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="namespacedpp_1_1detail_1ab8f8992a67c42dc3b707c8397c3e669ca4930128e58930768b1c1c75026ebc649" prot="public">
-          <name>dangling</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <briefdescription>
-<para>Represents the step an std::async is at. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/async.h" line="46" column="1" bodyfile="include/dpp/coro/async.h" bodystart="46" bodyend="51"/>
-      </memberdef>
-      <memberdef kind="enum" id="namespacedpp_1_1detail_1a55d58fcb55862a7ad5ef0dac76500c36" prot="public" static="no" strong="yes">
-        <type></type>
-        <name>task_state_t</name>
-        <enumvalue id="namespacedpp_1_1detail_1a55d58fcb55862a7ad5ef0dac76500c36a3bebb2f89180b03fa5ae736665f648d9" prot="public">
-          <name>started</name>
-          <briefdescription>
-<para>Task was started but never co_await-ed. </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="namespacedpp_1_1detail_1a55d58fcb55862a7ad5ef0dac76500c36a23a13b01435cba85c0a5ea07c8b5b37e" prot="public">
-          <name>awaited</name>
-          <briefdescription>
-<para>Task was co_await-ed and is pending completion. </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="namespacedpp_1_1detail_1a55d58fcb55862a7ad5ef0dac76500c36a6b2ded51d81a4403d8a4bd25fa1e57ee" prot="public">
-          <name>done</name>
-          <briefdescription>
-<para>Task is completed. </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="namespacedpp_1_1detail_1a55d58fcb55862a7ad5ef0dac76500c36a4930128e58930768b1c1c75026ebc649" prot="public">
-          <name>dangling</name>
-          <briefdescription>
-<para>Task is still running but the actual <ref refid="classdpp_1_1task" kindref="compound">dpp::task</ref> object is destroyed. </para>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="41" column="1" bodyfile="include/dpp/coro/task.h" bodystart="41" bodyend="50"/>
-      </memberdef>
-      </sectiondef>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="namespacedpp_1_1detail_1afb0a0bcfb46ac28d58102ed8bb9c7e16" prot="public" static="no">
         <templateparamlist>
@@ -122,44 +29,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/coro.h" line="153" column="1" bodyfile="include/dpp/coro/coro.h" bodystart="153" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1_1detail_1a2754d5a7f48a947b5743b12236bab7a3" prot="public" static="no">
-        <templateparamlist>
-          <param>
-            <type>typename R</type>
-          </param>
-        </templateparamlist>
-        <type>std_coroutine::coroutine_handle&lt; <ref refid="structdpp_1_1detail_1_1coroutine__promise" kindref="compound">coroutine_promise</ref>&lt; R &gt; &gt;</type>
-        <definition>using dpp::detail::coroutine_handle = typedef std_coroutine::coroutine_handle&lt;coroutine_promise&lt;R&gt; &gt;</definition>
-        <argsstring></argsstring>
-        <name>coroutine_handle</name>
-        <briefdescription>
-<para>Alias for the coroutine_handle of a coroutine. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/coroutine.h" line="44" column="1" bodyfile="include/dpp/coro/coroutine.h" bodystart="44" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespacedpp_1_1detail_1a1974b691b8f794108af6b50381ee3075" prot="public" static="no">
-        <templateparamlist>
-          <param>
-            <type>typename R</type>
-          </param>
-        </templateparamlist>
-        <type>detail::std_coroutine::coroutine_handle&lt; <ref refid="structdpp_1_1detail_1_1task__promise" kindref="compound">detail::task_promise</ref>&lt; R &gt; &gt;</type>
-        <definition>using dpp::detail::task_handle = typedef detail::std_coroutine::coroutine_handle&lt;detail::task_promise&lt;R&gt; &gt;</definition>
-        <argsstring></argsstring>
-        <name>task_handle</name>
-        <briefdescription>
-<para>Alias for <ulink url="https://en.cppreference.com/w/cpp/coroutine/coroutine_handle">std::coroutine_handle</ulink> for a <ref refid="structdpp_1_1detail_1_1task__promise" kindref="compound">task_promise</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="68" column="1" bodyfile="include/dpp/coro/task.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -228,51 +97,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/coro/coro.h" line="139" column="6" bodyfile="include/dpp/coro/coro.h" bodystart="139" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1_1detail_1a9b850e8a3317577a179eb38c72ecf888" prot="public" static="no" constexpr="yes" mutable="no">
-        <templateparamlist>
-          <param>
-            <type>typename...</type>
-            <declname>Args</declname>
-            <defname>Args</defname>
-          </param>
-        </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool dpp::detail::coroutine_has_no_ref_params_v</definition>
-        <argsstring></argsstring>
-        <name>coroutine_has_no_ref_params_v</name>
-        <initializer>= false</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/job.h" line="50" column="23" bodyfile="include/dpp/coro/job.h" bodystart="50" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacedpp_1_1detail_1ac241fd887d3073868a7851d873d8f16a" prot="public" static="no" constexpr="yes" mutable="no">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-          <param>
-            <type>typename...</type>
-            <declname>Args</declname>
-            <defname>Args</defname>
-          </param>
-        </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool dpp::detail::coroutine_has_no_ref_params_v&lt; T, Args... &gt;</definition>
-        <argsstring></argsstring>
-        <name>coroutine_has_no_ref_params_v&lt; T, Args... &gt;</name>
-        <initializer>= (std::is_invocable_v&lt;T, Args...&gt; || !std::is_reference_v&lt;T&gt;) &amp;&amp; (!std::is_reference_v&lt;Args&gt; &amp;&amp; ... &amp;&amp; true)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/job.h" line="56" column="18" bodyfile="include/dpp/coro/job.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">

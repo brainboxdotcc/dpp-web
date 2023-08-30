@@ -13,7 +13,7 @@ var classdpp_1_1event__router__t =
     [ "operator()", "classdpp_1_1event__router__t.html#a1abf0dab2344fad5d1ce20d79c87dac0", null ],
     [ "resume_awaiters", "classdpp_1_1event__router__t.html#a67fa825b406bca67e2f7972f1428c597", null ],
     [ "set_warning_callback", "classdpp_1_1event__router__t.html#a5a344ce973c4428d889d11c5f35bea74", null ],
-    [ "when", "classdpp_1_1event__router__t.html#a4ced8a7bc8d483529a581616d14eae6e", null ],
+    [ "when", "classdpp_1_1event__router__t.html#a16c2527f66c8b74e5c0678ace4fa549e", null ],
     [ "cluster", "classdpp_1_1event__router__t.html#a93941955d9d15030232a5aaa08bb9afa", null ],
     [ "detail::event_router::awaitable< T >", "classdpp_1_1event__router__t.html#a4e278a27ba250ce3f647b2a695c01335", null ]
 ];
