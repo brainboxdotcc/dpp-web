@@ -19,7 +19,12 @@
 <listitem><para><ref refid="coro-introduction" kindref="compound">Introduction to coroutines</ref></para>
 </listitem><listitem><para><ref refid="coro-simple-commands" kindref="compound">Making simple commands</ref></para>
 </listitem><listitem><para><ref refid="awaiting-events" kindref="compound">Waiting for events</ref></para>
-</listitem><listitem><para><ref refid="expiring-buttons" kindref="compound">Making expiring buttons with when_any</ref> </para>
+</listitem><listitem><para><ref refid="expiring-buttons" kindref="compound">Making expiring buttons with when_any</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>Coroutines are currently disabled by default; to use them you will need to build D++ <ref refid="install-from-source" kindref="compound">from source</ref> and use the option <computeroutput>-DDPP_CORO=on</computeroutput> in your CMake command. Your application also needs to enable C++20 and define DPP_CORO, by using:<itemizedlist>
+<listitem><para><computeroutput>-std=c++20 -DDPP_CORO</computeroutput> in your build command if building manually, or</para>
+</listitem><listitem><para>if using CMake, add <computeroutput>target_compile_definitions(my_program PUBLIC DPP_CORO)</computeroutput> and <computeroutput>target_compile_features(my_program PUBLIC cxx_std_20)</computeroutput>. </para>
 </listitem></itemizedlist>
 </para>
     </detaileddescription>

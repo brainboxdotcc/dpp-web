@@ -108,7 +108,11 @@ $(document).ready(function(){initNavTree('using-coroutines.html',''); initResiza
 <li><a class="el" href="coro-introduction.html">Introduction to coroutines</a></li>
 <li><a class="el" href="coro-simple-commands.html">Making simple commands</a></li>
 <li><a class="el" href="awaiting-events.html">Waiting for events</a></li>
-<li><a class="el" href="expiring-buttons.html">Making expiring buttons with when_any</a> </li>
+<li><a class="el" href="expiring-buttons.html">Making expiring buttons with when_any</a></li>
+</ul>
+<p >Coroutines are currently disabled by default; to use them you will need to build D++ <a class="el" href="install-from-source.html">from source</a> and use the option <code>-DDPP_CORO=on</code> in your CMake command. Your application also needs to enable C++20 and define DPP_CORO, by using:</p><ul>
+<li><code>-std=c++20 -DDPP_CORO</code> in your build command if building manually, or</li>
+<li>if using CMake, add <code>target_compile_definitions(my_program PUBLIC DPP_CORO)</code> and <code>target_compile_features(my_program PUBLIC cxx_std_20)</code>. </li>
 </ul>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
