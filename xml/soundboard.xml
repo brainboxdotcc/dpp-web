@@ -24,12 +24,12 @@
 <codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>example<sp/>purposes,<sp/>a<sp/>raw<sp/>PCM<sp/>will<sp/>suffice.<sp/>This<sp/>PCM<sp/>file<sp/>can</highlight></codeline>
 <codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>be<sp/>found<sp/>within<sp/>the<sp/>bot&apos;s<sp/>github<sp/>repo.</highlight></codeline>
 <codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/><ref refid="namespacedpp_1_1unicode__emoji_1a1076725a4be735e9ca3059cb90ce1d98" kindref="member">robot</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/><ref refid="namespacedpp_1_1unicode__emoji_1a34df2fb13c1b0c55b8be4cd9248d29f0" kindref="member">robot</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>robot_size<sp/>=<sp/>0;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>input<sp/>(</highlight><highlight class="stringliteral">&quot;../testdata/Robot.pcm&quot;</highlight><highlight class="normal">,<sp/>std::ios::in|std::ios::binary|std::ios::ate);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(input.is_open())<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot_size<sp/>=<sp/>input.tellg();</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedpp_1_1unicode__emoji_1a1076725a4be735e9ca3059cb90ce1d98" kindref="member">robot</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>uint8_t[robot_size];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedpp_1_1unicode__emoji_1a34df2fb13c1b0c55b8be4cd9248d29f0" kindref="member">robot</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>uint8_t[robot_size];</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input.seekg<sp/>(0,<sp/>std::ios::beg);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input.read<sp/>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)robot,<sp/>robot_size);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input.close();</highlight></codeline>
@@ -69,7 +69,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tell<sp/>the<sp/>bot<sp/>to<sp/>play<sp/>the<sp/>sound<sp/>file<sp/>&apos;Robot.pcm&apos;<sp/>in<sp/>the<sp/>current<sp/>voice<sp/>channel.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedpp_1_1unicode__emoji_1aa75d08fb452b62d323686a9c550cc27e" kindref="member">v</ref>-&gt;voiceclient-&gt;send_audio_raw((uint16_t*)robot,<sp/>robot_size);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedpp_1_1unicode__emoji_1a3fce26009bc5e6eee94433c5c30c180b" kindref="member">v</ref>-&gt;voiceclient-&gt;send_audio_raw((uint16_t*)robot,<sp/>robot_size);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.<ref refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kindref="member">reply</ref>(</highlight><highlight class="stringliteral">&quot;Played<sp/>robot.&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
