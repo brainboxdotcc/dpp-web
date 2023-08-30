@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1audio__mixer" kind="class" language="C++" prot="public">
+    <compoundname>dpp::audio_mixer</compoundname>
+    <includes local="no">isa_detection.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdpp_1_1audio__mixer_1a06bd9a06d40e70f1bd72ab4740285d3d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int32_t</type>
+        <definition>constexpr int32_t dpp::audio_mixer::byte_blocks_per_register</definition>
+        <argsstring></argsstring>
+        <name>byte_blocks_per_register</name>
+        <initializer>{ 2 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/isa_detection.h" line="358" column="33" bodyfile="include/dpp/isa_detection.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdpp_1_1audio__mixer_1ad8b242dd3ceb5e7f0c9bbf6a2451c3e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dpp::audio_mixer::collect_single_register</definition>
+        <argsstring>(int32_t *data_in, int16_t *data_out, float current_gain, float increment)</argsstring>
+        <name>collect_single_register</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data_in</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>data_out</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>current_gain</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>increment</declname>
+        </param>
+        <briefdescription>
+<para>Collect a single register worth of data from data_in, apply gain and increment, and store the result in data_out. This version uses x64 instructions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the input array of int32_t values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the output array of int16_t values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>current_gain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gain to be applied to the elements. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>increment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The increment value to be added to each element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/isa_detection.h" line="369" column="20" bodyfile="include/dpp/isa_detection.h" bodystart="369" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1audio__mixer_1a5c7ba9e4399ca8aead97382bcf68b0f3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dpp::audio_mixer::combine_samples</definition>
+        <argsstring>(int32_t *up_sampled_vector, const int16_t *decoded_data)</argsstring>
+        <name>combine_samples</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>up_sampled_vector</declname>
+        </param>
+        <param>
+          <type>const int16_t *</type>
+          <declname>decoded_data</declname>
+        </param>
+        <briefdescription>
+<para>Combine a register worth of elements from decoded_data and store the result in up_sampled_vector. This version uses instructions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>up_sampled_vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the array of int32_t values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decoded_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the array of int16_t values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/isa_detection.h" line="391" column="20" bodyfile="include/dpp/isa_detection.h" bodystart="391" bodyend="396"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class for audio mixing operations using AVX instructions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::audio_mixer</label>
+        <link refid="classdpp_1_1audio__mixer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>byte_blocks_per_register</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>int32_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/isa_detection.h" line="353" column="1" bodyfile="include/dpp/isa_detection.h" bodystart="353" bodyend="397"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1audio__mixer_1a06bd9a06d40e70f1bd72ab4740285d3d" prot="public" virt="non-virtual"><scope>dpp::audio_mixer</scope><name>byte_blocks_per_register</name></member>
+      <member refid="classdpp_1_1audio__mixer_1ad8b242dd3ceb5e7f0c9bbf6a2451c3e1" prot="public" virt="non-virtual"><scope>dpp::audio_mixer</scope><name>collect_single_register</name></member>
+      <member refid="classdpp_1_1audio__mixer_1a5c7ba9e4399ca8aead97382bcf68b0f3" prot="public" virt="non-virtual"><scope>dpp::audio_mixer</scope><name>combine_samples</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

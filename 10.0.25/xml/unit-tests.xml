@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="unit-tests" kind="page">
+    <compoundname>unit-tests</compoundname>
+    <title>Unit Tests</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect2 id="unit-tests_1autotoc_md69">
+<title>Running Unit Tests</title>
+<para>If you are adding functionality to DPP, make sure to run unit tests. This makes sure that the changes do not break anything. All pull requests must pass all unit tests before merging.</para>
+<para>Before running test cases, create a test server for your test bot. You should:</para>
+<para><itemizedlist>
+<listitem><para>Make sure that the server only has you and your test bot, and no one else</para>
+</listitem><listitem><para>Give your bot the administrator permission</para>
+</listitem><listitem><para>Enable community for the server</para>
+</listitem><listitem><para>Make an event</para>
+</listitem><listitem><para>Create at least one voice channel</para>
+</listitem><listitem><para>Create at least one text channel</para>
+</listitem></itemizedlist>
+</para>
+<para>Then, set the following variables to the appropriate values. (Below is a fake token, don&apos;t bother trying to use it) <verbatim>export DPP_UNIT_TEST_TOKEN=&quot;ODI2ZSQ4CFYyMzgxUzkzzACy.HPL5PA.9qKR4uh8po63-pjYVrPAvQQO4ln&quot;
+export TEST_GUILD_ID=&quot;907951970017480704&quot;
+export TEST_TEXT_CHANNEL_ID=&quot;907951970017480707&quot;
+export TEST_VC_ID=&quot;907951970017480708&quot;
+export TEST_USER_ID=&quot;826535422381391913&quot;
+export TEST_EVENT_ID=&quot;909928577951203360&quot;
+</verbatim> Then, after cloning and building DPP, run <computeroutput>cd build &amp;&amp; ctest -VV</computeroutput> for unit test cases.</para>
+<para>If you do not specify the <computeroutput>DPP_UNIT_TEST_TOKEN</computeroutput> environment variable, a subset of the tests will run which do not require discord connectivity. </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/advanced_reference/unit_tests.md"/>
+  </compounddef>
+</doxygen>

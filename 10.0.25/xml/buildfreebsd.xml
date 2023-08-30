@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="buildfreebsd" kind="page">
+    <compoundname>buildfreebsd</compoundname>
+    <title>Building on FreeBSD</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect2 id="buildfreebsd_1autotoc_md70">
+<title>1. Toolchain</title>
+<para>This project uses CMake. Install it with <computeroutput>pkg install cmake</computeroutput></para>
+</sect2>
+<sect2 id="buildfreebsd_1autotoc_md71">
+<title>2. Install External Dependencies</title>
+<para>Your FreeBSD base system should have all the required dependencies installed by default.</para>
+<para>For voice support, additional dependencies are required <verbatim>pkg install libsodium opus pkgconf
+</verbatim> </para>
+</sect2>
+<sect2 id="buildfreebsd_1autotoc_md72">
+<title>3. Build Source Code</title>
+<para><verbatim>cmake -B ./build
+cmake --build ./build -j8
+</verbatim> Replace the number after <computeroutput>-j</computeroutput> with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
+</sect2>
+<sect2 id="buildfreebsd_1autotoc_md73">
+<title>4. Install globally</title>
+<para><verbatim>cd build; make install
+</verbatim> </para>
+</sect2>
+<sect2 id="buildfreebsd_1autotoc_md74">
+<title>5. Installation to a different directory</title>
+<para>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>: <verbatim>cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
+</verbatim> Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
+</sect2>
+<sect2 id="buildfreebsd_1autotoc_md75">
+<title>6. Using the library</title>
+<para>Once installed, you can make use of the library in standalone programs simply by including it and linking to it: <verbatim>clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot
+</verbatim> The important flags in this command-line are:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>-std=c++17</computeroutput> - Required to compile the headers</para>
+</listitem><listitem><para><computeroutput>-ldpp</computeroutput> - Link to libdpp.dylib</para>
+</listitem><listitem><para><computeroutput>mydppbot.cpp</computeroutput> - Your source code</para>
+</listitem><listitem><para><computeroutput>dppbot</computeroutput> - The name of the executable to make</para>
+</listitem></itemizedlist>
+</para>
+<para>Of course, this is just a proof of concept - you should really use a more robust build system like <ref refid="buildcmake" kindref="compound">`cmake`</ref>.</para>
+<para>If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template bot</ulink>.</para>
+<para><bold>Have fun!</bold> </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/building/freebsd.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1confirmation__callback__t" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::confirmation_callback_t</compoundname>
+    <includes local="no">restresults.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1a97669d491cc60a5e76a248bae9ad7633" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref></type>
+        <definition>http_request_completion_t dpp::confirmation_callback_t::http_info</definition>
+        <argsstring></argsstring>
+        <name>http_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information about the HTTP call used to make the request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="245" column="27" bodyfile="include/dpp/restresults.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a7135567d4a562ebf847599d51f58a218" kindref="member">confirmable_t</ref></type>
+        <definition>confirmable_t dpp::confirmation_callback_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value returned, wrapped in variant </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="248" column="15" bodyfile="include/dpp/restresults.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1confirmation__callback__t_1ae90323b1bfa637fefbc3fcd95acb1700" prot="public" static="no" mutable="no">
+        <type>const class <ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <definition>const class cluster* dpp::confirmation_callback_t::bot</definition>
+        <argsstring></argsstring>
+        <name>bot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Owner/creator of the callback object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="251" column="21" bodyfile="include/dpp/restresults.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1abd8da2773d1de150b26f3d9187fe1e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::confirmation_callback_t::confirmation_callback_t</definition>
+        <argsstring>()=default</argsstring>
+        <name>confirmation_callback_t</name>
+        <briefdescription>
+<para>Construct a new confirmation callback t object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a1e036e4895447b9b8d2a3b94659e3b70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::confirmation_callback_t::confirmation_callback_t</definition>
+        <argsstring>(cluster *creator)</argsstring>
+        <name>confirmation_callback_t</name>
+        <param>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new confirmation callback t object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>owning cluster object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a6ad609db2f9d8d3d3aadd74cc09c7da3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::confirmation_callback_t::confirmation_callback_t</definition>
+        <argsstring>(const http_request_completion_t &amp;_http)</argsstring>
+        <name>confirmation_callback_t</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;</type>
+          <declname>_http</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new confirmation callback object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_http</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP metadata from the REST call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a08168bec9fd7e2c1b5e62d8ff232b26c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::confirmation_callback_t::confirmation_callback_t</definition>
+        <argsstring>(cluster *creator, const confirmable_t &amp;_value, const http_request_completion_t &amp;_http)</argsstring>
+        <name>confirmation_callback_t</name>
+        <param>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a7135567d4a562ebf847599d51f58a218" kindref="member">confirmable_t</ref> &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdpp_1_1http__request__completion__t" kindref="compound">http_request_completion_t</ref> &amp;</type>
+          <declname>_http</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new confirmation callback object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>owning cluster object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to encapsulate in the confirmable_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_http</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP metadata from the REST call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="279" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::confirmation_callback_t::is_error</definition>
+        <argsstring>() const</argsstring>
+        <name>is_error</name>
+        <briefdescription>
+<para>Returns true if the call resulted in an error rather than a legitimate value in the <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref> member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true There was an error who&apos;s details can be obtained by <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">get_error()</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>false There was no error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="288" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref></type>
+        <definition>error_info dpp::confirmation_callback_t::get_error</definition>
+        <argsstring>() const</argsstring>
+        <name>get_error</name>
+        <briefdescription>
+<para>Get the <ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> object. The <ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> object contains the details of any REST error, if there is an error (to find out if there is an error check <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="structdpp_1_1error__info" kindref="compound">error_info</ref> The details of the error message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="297" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1confirmation__callback__t_1ac32b677abe27aa496063ee34a4ae1fbd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T dpp::confirmation_callback_t::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>Get the stored value via std::get. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>stored value as type T </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restresults.h" line="305" column="3" bodyfile="include/dpp/restresults.h" bodystart="305" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The results of a REST call wrapped in a convenient struct. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>bool</label>
+      </node>
+      <node id="23">
+        <label>cache_policy_setting_t</label>
+      </node>
+      <node id="10">
+        <label>double</label>
+      </node>
+      <node id="22">
+        <label>dpp::cache_policy_t</label>
+        <link refid="structdpp_1_1cache__policy__t"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>role_policy</edgelabel>
+          <edgelabel>user_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>dpp::cluster</label>
+        <link refid="classdpp_1_1cluster"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>last_identify</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>cluster_id</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>maxclusters</edgelabel>
+          <edgelabel>numshards</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>rest_ping</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>me</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>cache_policy</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ws_mode</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>on_autocomplete</edgelabel>
+          <edgelabel>on_automod_rule_create</edgelabel>
+          <edgelabel>on_automod_rule_delete</edgelabel>
+          <edgelabel>on_automod_rule_execute</edgelabel>
+          <edgelabel>on_automod_rule_update</edgelabel>
+          <edgelabel>on_button_click</edgelabel>
+          <edgelabel>on_channel_create</edgelabel>
+          <edgelabel>on_channel_delete</edgelabel>
+          <edgelabel>on_channel_pins_update</edgelabel>
+          <edgelabel>on_channel_update</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::confirmation_callback_t</label>
+        <link refid="structdpp_1_1confirmation__callback__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>http_info</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>bot</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::http_request_completion_t</label>
+        <link refid="structdpp_1_1http__request__completion__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>headers</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>error</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>ratelimit_bucket</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ratelimit_limit</edgelabel>
+          <edgelabel>ratelimit_remaining</edgelabel>
+          <edgelabel>ratelimit_reset_after</edgelabel>
+          <edgelabel>ratelimit_retry_after</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ratelimit_global</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>latency</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="16">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>global_name</edgelabel>
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>event_router_t&lt;</label>
+      </node>
+      <node id="5">
+        <label>http_error</label>
+      </node>
+      <node id="18">
+        <label>dpp::json_interface&lt; user &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="19" relation="template-instance">
+          <edgelabel>&lt; user &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="25">
+        <label>condition_variable</label>
+      </node>
+      <node id="3">
+        <label>multimap&lt;</label>
+      </node>
+      <node id="6">
+        <label>std::string</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>variant&lt; active_threads, application_role_connection, application_role_connection_metadata_list, confirmation, message, message_map, user, user_identified, user_map, guild_member, guild_member_map, channel, channel_map, thread_member, thread_member_map, guild, guild_map, guild_command_permissions, guild_command_permissions_map, role, role_map, invite, invite_map, dtemplate, dtemplate_map, emoji, emoji_map, ban, ban_map, voiceregion, voiceregion_map, integration, integration_map, webhook, webhook_map, prune, guild_widget, gateway, interaction, interaction_response, auditlog, slashcommand, slashcommand_map, stage_instance, sticker, sticker_map, sticker_pack, sticker_pack_map, application, application_map, connection, connection_map, thread, thread_map, scheduled_event, scheduled_event_map, event_member, event_member_map, automod_rule, automod_rule_map, onboarding, welcome_screen &gt;</label>
+      </node>
+      <node id="13">
+        <label>time_t</label>
+      </node>
+      <node id="4">
+        <label>uint16_t</label>
+      </node>
+      <node id="14">
+        <label>uint32_t</label>
+      </node>
+      <node id="8">
+        <label>uint64_t</label>
+      </node>
+      <node id="21">
+        <label>uint8_t</label>
+      </node>
+      <node id="24">
+        <label>websocket_protocol_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/restresults.h" line="243" column="1" bodyfile="include/dpp/restresults.h" bodystart="243" bodyend="308"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1confirmation__callback__t_1ae90323b1bfa637fefbc3fcd95acb1700" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>bot</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1abd8da2773d1de150b26f3d9187fe1e44" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>confirmation_callback_t</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a1e036e4895447b9b8d2a3b94659e3b70" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>confirmation_callback_t</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a6ad609db2f9d8d3d3aadd74cc09c7da3" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>confirmation_callback_t</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a08168bec9fd7e2c1b5e62d8ff232b26c" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>confirmation_callback_t</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1ac32b677abe27aa496063ee34a4ae1fbd" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>get</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>get_error</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a97669d491cc60a5e76a248bae9ad7633" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>http_info</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>is_error</name></member>
+      <member refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" prot="public" virt="non-virtual"><scope>dpp::confirmation_callback_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

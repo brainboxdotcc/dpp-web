@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1when__any_1_1state__t" kind="struct" language="C++" prot="private">
+    <compoundname>dpp::when_any::state_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1when__any_1_1state__t_1a0974a2bc51fd68bef2b6ffba7c921161" prot="public" static="no" mutable="no">
+        <type>std::tuple&lt; Args... &gt;</type>
+        <definition>std::tuple&lt;Args...&gt; dpp::when_any&lt; Args &gt;::state_t::awaitables</definition>
+        <argsstring></argsstring>
+        <name>awaitables</name>
+        <briefdescription>
+<para>Awaitable objects to handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="157" column="12" bodyfile="include/dpp/coro/when_any.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1when__any_1_1state__t_1a7fbf06e80a9d251fca7c07daed80768b" prot="public" static="no" mutable="no">
+        <type>variant_type</type>
+        <definition>variant_type dpp::when_any&lt; Args &gt;::state_t::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Result or exception, as a variant. This will contain the result of the first awaitable to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="162" column="14" bodyfile="include/dpp/coro/when_any.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1when__any_1_1state__t_1ab1cf58eacde1bc05625fbbcec6b943dc" prot="public" static="no" mutable="no">
+        <type>detail::std_coroutine::coroutine_handle</type>
+        <definition>detail::std_coroutine::coroutine_handle dpp::when_any&lt; Args &gt;::state_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Coroutine handle to resume after finishing an awaitable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="167" column="2" bodyfile="include/dpp/coro/when_any.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1when__any_1_1state__t_1a82ea502fd84a0b2036d3b2c97d5c1aa3" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t dpp::when_any&lt; Args &gt;::state_t::index_finished</definition>
+        <argsstring></argsstring>
+        <name>index_finished</name>
+        <initializer>= std::numeric_limits&lt;std::size_t&gt;::max()</initializer>
+        <briefdescription>
+<para>Index of the awaitable that finished. Initialized to the maximum value of std::size_t. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="172" column="8" bodyfile="include/dpp/coro/when_any.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1when__any_1_1state__t_1af42a113734bc022192c275d97d517828" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; <ref refid="namespacedpp_1_1detail_1_1when__any_1a2e21fb5fc3cc30494804672faf85f3c1" kindref="member">detail::when_any::await_state</ref> &gt;</type>
+        <definition>std::atomic&lt;detail::when_any::await_state&gt; dpp::when_any&lt; Args &gt;::state_t::owner_state</definition>
+        <argsstring></argsstring>
+        <name>owner_state</name>
+        <initializer>{<ref refid="namespacedpp_1_1detail_1_1when__any_1a2e21fb5fc3cc30494804672faf85f3c1a3bebb2f89180b03fa5ae736665f648d9" kindref="member">detail::when_any::await_state::started</ref>}</initializer>
+        <briefdescription>
+<para>State of the <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacedpp_1_1detail_1_1when__any_1a2e21fb5fc3cc30494804672faf85f3c1" kindref="member">detail::when_any::await_state</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="179" column="13" bodyfile="include/dpp/coro/when_any.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1when__any_1_1state__t_1a7cfd9a8cd8b267f98a64754bf8591e0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args_</declname>
+            <defname>Args_</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dpp::when_any&lt; Args &gt;::state_t::state_t</definition>
+        <argsstring>(Args_ &amp;&amp;... args)</argsstring>
+        <name>state_t</name>
+        <param>
+          <type>Args_ &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the internal state. Its arguments are used to construct each awaitable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="152" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="152" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>State shared between all the jobs to spawn. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>coroutine_handle</label>
+      </node>
+      <node id="1">
+        <label>dpp::when_any&lt; Args &gt;::state_t</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>awaitables</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>result</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>handle</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>index_finished</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>owner_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>size_t</label>
+      </node>
+      <node id="6">
+        <label>atomic&lt;</label>
+      </node>
+      <node id="2">
+        <label>tuple&lt;</label>
+      </node>
+      <node id="3">
+        <label>variant&lt; std::exception_ptr, std::remove_cvref_t&lt; detail::when_any::storage_type&lt; detail::awaitable_result&lt; Args &gt; &gt; &gt;... &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/when_any.h" line="147" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="147" bodyend="180"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1when__any_1_1state__t_1a0974a2bc51fd68bef2b6ffba7c921161" prot="public" virt="non-virtual"><scope>dpp::when_any::state_t</scope><name>awaitables</name></member>
+      <member refid="structdpp_1_1when__any_1_1state__t_1ab1cf58eacde1bc05625fbbcec6b943dc" prot="public" virt="non-virtual"><scope>dpp::when_any::state_t</scope><name>handle</name></member>
+      <member refid="structdpp_1_1when__any_1_1state__t_1a82ea502fd84a0b2036d3b2c97d5c1aa3" prot="public" virt="non-virtual"><scope>dpp::when_any::state_t</scope><name>index_finished</name></member>
+      <member refid="structdpp_1_1when__any_1_1state__t_1af42a113734bc022192c275d97d517828" prot="public" virt="non-virtual"><scope>dpp::when_any::state_t</scope><name>owner_state</name></member>
+      <member refid="structdpp_1_1when__any_1_1state__t_1a7fbf06e80a9d251fca7c07daed80768b" prot="public" virt="non-virtual"><scope>dpp::when_any::state_t</scope><name>result</name></member>
+      <member refid="structdpp_1_1when__any_1_1state__t_1a7cfd9a8cd8b267f98a64754bf8591e0a" prot="public" virt="non-virtual"><scope>dpp::when_any::state_t</scope><name>state_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
