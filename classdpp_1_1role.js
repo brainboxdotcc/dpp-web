@@ -45,6 +45,7 @@ var classdpp_1_1role =
     [ "has_speak", "classdpp_1_1role.html#a92ce258f420bce887cc9c92ad006fe06", null ],
     [ "has_stream", "classdpp_1_1role.html#ae6173507d17a12012cf46da70929a49e", null ],
     [ "has_use_application_commands", "classdpp_1_1role.html#ac19332b3de93ecf0a38d0f07589fd6c5", null ],
+    [ "has_use_clyde_ai", "classdpp_1_1role.html#ab45dcfc76c222f721ff8d1a903fe7e4b", null ],
     [ "has_use_embedded_activities", "classdpp_1_1role.html#a15be7092d8c6843c387d4811c8b4ac2b", null ],
     [ "has_use_external_emojis", "classdpp_1_1role.html#a363303c06726e049586b8ae4f3f6375e", null ],
     [ "has_use_external_sounds", "classdpp_1_1role.html#a2fbc05580870a68ced13f6ba657181c9", null ],

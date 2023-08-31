@@ -7027,7 +7027,8 @@ var namespacedpp =
       [ "p_view_creator_monetization_analytics", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a573c46111c1c7d34c36cec125b56b422", null ],
       [ "p_use_soundboard", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7afb1911727fa67fd2972912029008e1b4", null ],
       [ "p_use_external_sounds", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7ac6404354f63e4d854be8f2cd1022ff36", null ],
-      [ "p_send_voice_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9", null ]
+      [ "p_send_voice_messages", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a1264974222c3e676048d2fb7a9901af9", null ],
+      [ "p_use_clyde_ai", "namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7a58a2cb2685cbf2c752f5b1f66468adb2", null ]
     ] ],
     [ "presence_flags", "namespacedpp.html#a953f1484a5140481ffab2b248618fb22", [
       [ "p_desktop_online", "namespacedpp.html#a953f1484a5140481ffab2b248618fb22adbf7e907b0a558eafd5b8ecffa3923e0", null ],
