@@ -92,12 +92,13 @@ var searchData=
   ['uses_89',['uses',['../classdpp_1_1invite.html#a256cb8ecb38af03dcdfb7befe4b4f286',1,'dpp::invite']]],
   ['using_20a_20command_20handler_20object_90',['Using a command handler object',['../commandhandler.html',1,'interactions-and-components']]],
   ['using_20button_20components_91',['Using button components',['../components.html',1,'interactions-and-components']]],
-  ['using_20coroutines_92',['Using Coroutines',['../using-coroutines.html',1,'example-programs']]],
-  ['using_20file_20parameters_20for_20application_20commands_20_28slash_20commands_29_93',['Using file parameters for application commands (slash commands)',['../discord-application-command-file-upload.html',1,'interactions-and-components']]],
-  ['using_20select_20menu_20components_94',['Using select menu components',['../components3.html',1,'interactions-and-components']]],
-  ['using_20slash_20commands_20and_20interactions_95',['Using Slash Commands and Interactions',['../slashcommands.html',1,'interactions-and-components']]],
-  ['using_20sub_2dcommands_20in_20slash_20commands_96',['Using sub-commands in slash commands',['../subcommands.html',1,'interactions-and-components']]],
-  ['usr_97',['usr',['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()'],['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()']]],
-  ['utf8len_98',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
-  ['utf8substr_99',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
+  ['using_20callback_20functions_92',['Using Callback Functions',['../callback-functions.html',1,'the-basics']]],
+  ['using_20coroutines_93',['Using Coroutines',['../using-coroutines.html',1,'example-programs']]],
+  ['using_20file_20parameters_20for_20application_20commands_20_28slash_20commands_29_94',['Using file parameters for application commands (slash commands)',['../discord-application-command-file-upload.html',1,'interactions-and-components']]],
+  ['using_20select_20menu_20components_95',['Using select menu components',['../components3.html',1,'interactions-and-components']]],
+  ['using_20slash_20commands_20and_20interactions_96',['Using Slash Commands and Interactions',['../slashcommands.html',1,'interactions-and-components']]],
+  ['using_20sub_2dcommands_20in_20slash_20commands_97',['Using sub-commands in slash commands',['../subcommands.html',1,'interactions-and-components']]],
+  ['usr_98',['usr',['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()'],['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()']]],
+  ['utf8len_99',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
+  ['utf8substr_100',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
 ];

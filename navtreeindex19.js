@@ -1,9 +1,10 @@
 var NAVTREEINDEX19 =
 {
+"functions_enum.html":[11,3,4],
 "functions_eval.html":[11,3,5],
 "functions_f.html":[11,3,0,5],
-"functions_func.html":[11,3,1,0],
 "functions_func.html":[11,3,1],
+"functions_func.html":[11,3,1,0],
 "functions_func_b.html":[11,3,1,1],
 "functions_func_c.html":[11,3,1,2],
 "functions_func_d.html":[11,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dad710b805e2cffdee0acc3978471531c7":[9,0,0,292,19],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dae8d03182e83800e29678ebfb04f1df94":[9,0,0,292,6],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daeae4705b887e90b3c3edea529244a444":[9,0,0,292,44],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daeb04a4f9a9f3116846fd645fc606973b":[9,0,0,292,38],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daf5cd56aa01c56ae4c268c872bfed4b26":[9,0,0,292,35]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daeb04a4f9a9f3116846fd645fc606973b":[9,0,0,292,38]
 };
