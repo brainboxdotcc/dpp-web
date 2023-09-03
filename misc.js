@@ -5,5 +5,6 @@ var misc =
     [ "Caching Messages", "caching-messages.html", null ],
     [ "Collecting Reactions", "collecting-reactions.html", null ],
     [ "Making an eval command in C++", "cpp-eval-command-discord.html", null ],
-    [ "Checking permissions", "checking-member-permissions.html", null ]
+    [ "Checking permissions", "checking-member-permissions.html", null ],
+    [ "Setting the bot's status", "setting_status.html", null ]
 ];
