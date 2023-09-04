@@ -11,5 +11,6 @@ var interactions_and_components =
     [ "Modal Dialog Interactions", "modal-dialog-interactions.html", null ],
     [ "Using a command handler object", "commandhandler.html", null ],
     [ "Slash command auto completion", "application-command-autocomplete.html", null ],
-    [ "Using file parameters for application commands (slash commands)", "discord-application-command-file-upload.html", null ]
+    [ "Using file parameters for application commands (slash commands)", "discord-application-command-file-upload.html", null ],
+    [ "Sending private messages", "private-messaging.html", null ]
 ];

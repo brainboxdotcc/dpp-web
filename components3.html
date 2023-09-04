@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('components3.html',''); initResizable()
 <div class="contents">
 <div class="textblock"><p >This example demonstrates creating a select menu, receiving select menu clicks and sending a response message.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;dpp/unicode_emoji.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line"> </div>
@@ -125,8 +126,8 @@ $(document).ready(function(){initNavTree('components3.html',''); initResizable()
 <div class="line">                    dpp::component().</div>
 <div class="line">                    set_type(dpp::cot_selectmenu).</div>
 <div class="line">                    set_placeholder(<span class="stringliteral">&quot;Pick something&quot;</span>).</div>
-<div class="line">                    add_select_option(dpp::select_option(<span class="stringliteral">&quot;label1&quot;</span>,<span class="stringliteral">&quot;value1&quot;</span>,<span class="stringliteral">&quot;description1&quot;</span>).set_emoji(u8<span class="stringliteral">&quot;😄&quot;</span>)).</div>
-<div class="line">                    add_select_option(dpp::select_option(<span class="stringliteral">&quot;label2&quot;</span>,<span class="stringliteral">&quot;value2&quot;</span>,<span class="stringliteral">&quot;description2&quot;</span>).set_emoji(u8<span class="stringliteral">&quot;🙂&quot;</span>)).</div>
+<div class="line">                    add_select_option(dpp::select_option(<span class="stringliteral">&quot;label1&quot;</span>,<span class="stringliteral">&quot;value1&quot;</span>,<span class="stringliteral">&quot;description1&quot;</span>).set_emoji(dpp::unicode_emoji::smile)).</div>
+<div class="line">                    add_select_option(dpp::select_option(<span class="stringliteral">&quot;label2&quot;</span>,<span class="stringliteral">&quot;value2&quot;</span>,<span class="stringliteral">&quot;description2&quot;</span>).set_emoji(dpp::unicode_emoji::slight_smile)).</div>
 <div class="line">                    set_id(<span class="stringliteral">&quot;myselectid&quot;</span>)</div>
 <div class="line">                )</div>
 <div class="line">            );</div>
