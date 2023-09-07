@@ -1319,7 +1319,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send raw audio to the voice channel. </p>
-<p >You should send an audio packet of 11520 bytes. Note that this function can be costly as it has to opus encode the PCM audio on the fly, and also encrypt it with libsodium.</p>
+<p >You should send an audio packet of <code>send_audio_raw_max_length</code> (11520) bytes. Note that this function can be costly as it has to opus encode the PCM audio on the fly, and also encrypt it with libsodium.</p>
 <dl class="section note"><dt>Note</dt><dd>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once (unless you have set use_opus to false). Constantly calling this from the dpp::on_voice_buffer_send callback can and will eat a TON of cpu!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1330,10 +1330,11 @@ Protected Attributes</h2></td></tr>
 <p>The audio data should be 48000Hz signed 16 bit audio.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">length</td><td>The length of the audio data. The length should be a multiple of 4 (2x 16 bit stereo channels) with a maximum length of 11520, which is a complete opus frame at highest quality.</td></tr>
+    <tr><td class="paramname">length</td><td>The length of the audio data. The length should be a multiple of 4 (2x 16 bit stereo channels) with a maximum length of <code>send_audio_raw_max_length</code>, which is a complete opus frame at highest quality.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Generally when you're streaming and you know there will be more packet to come you should always provide packet data with length of <code>send_audio_raw_max_length</code>. Silence packet will be appended if length is less than <code>send_audio_raw_max_length</code> as discord expects to receive such specific packet size. This can cause gaps in your stream resulting in distorted audio if you have more packet to send later on.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classdpp_1_1discord__voice__client.html" title="Implements a discord voice connection. Each discord_voice_client connects to one voice channel and de...">discord_voice_client</a>&amp; Reference to self</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">

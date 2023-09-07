@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"oggopus.html":[5,2,1],
 "pages.html":[],
 "private-messaging.html":[5,1,12],
 "record-user.html":[5,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "structdpp_1_1automod__action.html#a1e305859aa57284d91dffbd2f2a64cd2":[9,0,0,26,5],
 "structdpp_1_1automod__action.html#a1e305859aa57284d91dffbd2f2a64cd2":[11,0,0,23,5],
 "structdpp_1_1automod__action.html#a2ba5d6d68adc00b34c7d85d5880aca4d":[11,0,0,23,4],
-"structdpp_1_1automod__action.html#a2ba5d6d68adc00b34c7d85d5880aca4d":[9,0,0,26,4],
-"structdpp_1_1automod__action.html#a5bb873fd4283bdd83be46440b3105fea":[11,0,0,23,6]
+"structdpp_1_1automod__action.html#a2ba5d6d68adc00b34c7d85d5880aca4d":[9,0,0,26,4]
 };
