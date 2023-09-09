@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Installing from VCPKG (Windows, Linux, OSX) - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Installing from VCPKG (Windows) - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Installing from VCPKG (Windows, Linux, OSX) - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Installing from VCPKG (Windows) - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Installing from VCPKG (Windows, Linux, OSX) - D++ - The lightweight C++ Discord API Library">
-<title>Installing from VCPKG (Windows, Linux, OSX) - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Installing from VCPKG (Windows) - D++ - The lightweight C++ Discord API Library">
+<title>Installing from VCPKG (Windows) - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,19 +98,22 @@ $(document).ready(function(){initNavTree('install-vcpkg.html',''); initResizable
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Installing from VCPKG (Windows, Linux, OSX) </div></div>
+  <div class="headertitle"><div class="title">Installing from VCPKG (Windows) </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >To install D++ on a system from VCPKG:</p>
+<div class="textblock"><dl class="section warning"><dt>Warning</dt><dd><b>We do not support VCPKG for any platform that isn't Windows. This does not mean VCPKG doesn't work, it just means we do not test it.</b> If you are using other platforms then please look towards our other pages. We also advise that you use the <a href="https://github.com/brainboxdotcc/windows-bot-template/">pre-made Visual Studio template</a> on Windows, as VCPKG takes longer to receive updates.</dd></dl>
+<p>To install D++ on a system with VCPKG:</p>
 <ul>
-<li>Ensure VCPKG is correctly installed, and run <code>vcpkg integrate install</code> to integrate it with your preferred IDE. This has been reported to work with Visual Studio, vscode, and JetBrains CLion.</li>
-<li>From a command line, type <code>vcpkg install dpp:x64-windows</code> (replace <code>x64-windows</code> with whichever OS and architecture you want the library to be built for) <div class="image">
+<li>Ensure VCPKG is correctly installed, and run <code>vcpkg integrate install</code> to integrate it with your preferred IDE. This has been reported to work with Visual Studio, VSCode, and JetBrains CLion.</li>
+<li>From a command line, type <code>vcpkg install dpp:x64-windows</code></li>
+</ul>
+<div class="image">
 <img src="vcpkg.png" alt=""/>
 </div>
-</li>
-<li>VCPKG will install the library and dependencies for you! Once completed you will receive a message indicating success:</li>
-<li>Use <code>vcpkg list dpp</code> to check that the package is installed: <div class="fragment"><div class="line">c:\vcpkg&gt;vcpkg list dpp</div>
-<div class="line">dpp:x64-windows                                    10.0.15          D++ Extremely Lightweight C++ Discord Library.</div>
+<ul>
+<li>VCPKG will install the library, and dependencies, for you! Once completed, you will receive a message, indicating that dpp successfully installed!</li>
+<li>Use <code>vcpkg list dpp</code> to check that the package is installed, as so: <div class="fragment"><div class="line">c:\vcpkg&gt;vcpkg list dpp</div>
+<div class="line">dpp:x64-windows                                    10.0.24          D++ Extremely Lightweight C++ Discord Library.</div>
 </div><!-- fragment --></li>
 <li>You may now use the library within a <code>CMake</code> based project by adding instructions such as these to your <code>CMakeLists.txt</code>: <div class="fragment"><div class="line">find_package(dpp CONFIG REQUIRED)</div>
 <div class="line">target_link_libraries(your_target_name PRIVATE dpp::dpp)</div>
