@@ -100,6 +100,7 @@ var NAVTREEINDEX19 =
 "joinvc.html":[5,2,4],
 "lambdas-and-locals.html":[6,4],
 "making_a_http_request.html":[5,4,0],
+"making_threads.html":[5,1,13],
 "misc.html":[5,4],
 "modal-dialog-interactions.html":[5,1,8],
 "music-and-audio.html":[5,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dacff873b5a978ed870f527fecaa81737c":[9,0,0,292,39],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dad068bbed29517768ba7aff817cf5fd77":[9,0,0,292,28],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dad710b805e2cffdee0acc3978471531c7":[9,0,0,292,19],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dae8d03182e83800e29678ebfb04f1df94":[9,0,0,292,6],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daeae4705b887e90b3c3edea529244a444":[9,0,0,292,44]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dae8d03182e83800e29678ebfb04f1df94":[9,0,0,292,6]
 };
