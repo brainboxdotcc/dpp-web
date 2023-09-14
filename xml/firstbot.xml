@@ -14,7 +14,7 @@
 </entry></row>
 <row>
 <entry thead="no"><para></para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="firstbot.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -42,30 +42,30 @@
 </programlisting></para>
 <para></para>
 </entry><entry thead="no"><para></para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal">let<sp/>Discord<sp/>=<sp/>require(</highlight><highlight class="stringliteral">&apos;discord.js&apos;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal">let<sp/>BOT_TOKEN<sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;add<sp/>your<sp/>token<sp/>here&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal">let<sp/>bot<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Discord.Client({<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5" kindref="member">intents</ref>:<sp/>[]<sp/>});</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal">bot.on(</highlight><highlight class="stringliteral">&apos;interactionCreate&apos;</highlight><highlight class="normal">,<sp/>(interaction)<sp/>=&gt;<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(interaction.isCommand()<sp/>&amp;&amp;<sp/>interaction.commandName<sp/>===<sp/></highlight><highlight class="stringliteral">&apos;ping&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interaction.reply({content:<sp/></highlight><highlight class="stringliteral">&apos;Pong!&apos;</highlight><highlight class="normal">});</highlight></codeline>
+<para><programlisting filename=".js"><codeline><highlight class="normal">let<sp/>Discord<sp/>=<sp/>require(&apos;discord.js&apos;);</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">let<sp/>BOT_TOKEN<sp/><sp/><sp/>=<sp/>&apos;add<sp/>your<sp/>token<sp/>here&apos;;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">let<sp/>bot<sp/>=<sp/>new<sp/>Discord.Client({<sp/>intents:<sp/>[]<sp/>});</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">bot.on(&apos;interactionCreate&apos;,<sp/>(interaction)<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(interaction.isCommand()<sp/>&amp;&amp;<sp/>interaction.commandName<sp/>===<sp/>&apos;ping&apos;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interaction.reply({content:<sp/>&apos;Pong!&apos;});</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal">});</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal">bot.once(</highlight><highlight class="stringliteral">&apos;ready&apos;</highlight><highlight class="normal">,<sp/>async<sp/>()<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">bot.once(&apos;ready&apos;,<sp/>async<sp/>()<sp/>=&gt;<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>await<sp/>client.commands.create({</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name:<sp/></highlight><highlight class="stringliteral">&apos;ping&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description:<sp/></highlight><highlight class="stringliteral">&quot;Ping<sp/>pong!&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name:<sp/>&apos;ping&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description:<sp/>&quot;Ping<sp/>pong!&quot;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal">});</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">bot.login(BOT_TOKEN);‍</highlight></codeline>
 </programlisting></para>
 <para></para>
@@ -76,7 +76,7 @@
 <sect3 id="firstbot_1autotoc_md104">
 <title>1. Start with an empty C++ program</title>
 <para>Make sure to include the header file for the D++ library with the instruction #include <computeroutput>&lt;dpp/dpp.h&gt;</computeroutput>!</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="firstbot1.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
@@ -86,7 +86,7 @@
 <title>2. Create an instance of dpp::cluster</title>
 <para>To make use of the library you must create a <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> object. This object is the main object in your program like the <computeroutput>Discord.Client</computeroutput> object in Discord.js.</para>
 <para>You can instantiate this class as shown below. Remember to put your bot token in the constant!</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="firstbot2.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -98,7 +98,7 @@
 <sect3 id="firstbot_1autotoc_md106">
 <title>3. Attach to an event</title>
 <para>To have a bot that does something, you should attach to some events. Let&apos;s start by attaching to the <computeroutput>on_ready</computeroutput> event (<ref refid="classdpp_1_1cluster_1aa006f45139c81be7705a4dc67e4da242" kindref="member">dpp::cluster::on_ready</ref>) which will notify your program when the bot is connected. In this event, we will register a slash command called &apos;ping&apos;. Note that we must wrap our registration of the command in a template called <ref refid="namespacedpp_1a6da92d90e8b0847e2d8c2633aaf370f0" kindref="member">dpp::run_once</ref> which prevents it from being re-run every time your bot does a full reconnection (e.g. if the connection fails).</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="firstbot3.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -116,7 +116,7 @@
 <sect3 id="firstbot_1autotoc_md107">
 <title>4. Attach to another event to receive slash commands</title>
 <para>If you want to handle a slash command, you should also attach your program to the <computeroutput>on_slashcommand</computeroutput> event (<ref refid="classdpp_1_1cluster_1a540047f8a4795e12c5468ce91ee121b6" kindref="member">dpp::cluster::on_slashcommand</ref>) which is basically the same as the Discord.js <computeroutput>interactionCreate</computeroutput> event. Lets add this to the program before the <computeroutput>on_ready</computeroutput> event:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="firstbot4.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -137,7 +137,7 @@
 <sect3 id="firstbot_1autotoc_md108">
 <title>5 . Add some content to the events</title>
 <para>Attaching to an event is a good start, but to make a bot you should actually put some program code into the interaction event. We will add some code to the <computeroutput>on_slashcommand</computeroutput> to look for our slash command &apos;/ping&apos; and reply with <computeroutput>Pong!</computeroutput>:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="firstbot5.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -173,7 +173,7 @@
 <para>To make the bot start, we must call the <ref refid="classdpp_1_1cluster_1a40e99d13e1380eccd30d13123014594f" kindref="member">dpp::cluster::start</ref> method, e.g. in our program by using <computeroutput>bot.start(dpp::st_wait)</computeroutput>.</para>
 <para>We also add a line to tell the library to output all its log information to the console, <computeroutput>bot.on_log(dpp::utility::cout_logger());</computeroutput> - if you wanted to do something more advanced, you can replace this parameter with a lambda just like all other events.</para>
 <para>The parameter which we set to false indicates if the function should return once all shards are created. Passing <computeroutput>false</computeroutput> here tells the program you do not need to do anything once <computeroutput>bot.start</computeroutput> is called.</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="firstbot6.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>

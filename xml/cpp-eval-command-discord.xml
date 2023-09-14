@@ -33,12 +33,12 @@
 <sect4 id="cpp-eval-command-discord_1autotoc_md94">
 <title>eval.h</title>
 <para>Remember that <computeroutput>eval.h</computeroutput> contains forward-declarations of any functions you want to expose to the eval command. It is included both by the bot itself, and by any shared object files compiled for evaluation.</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="eval.h"><codeline><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>the<sp/>snowflake<sp/>ID<sp/>of<sp/>the<sp/>bot&apos;s<sp/>developer.</highlight></codeline>
 <codeline><highlight class="comment"><sp/>*<sp/>The<sp/>eval<sp/>command<sp/>will<sp/>be<sp/>restricted<sp/>to<sp/>this<sp/>user.</highlight></codeline>
 <codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MY_DEVELOPER<sp/>189759562910400512</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MY_DEVELOPER<sp/>189759562910400512ULL</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Any<sp/>functions<sp/>you<sp/>want<sp/>to<sp/>be<sp/>usable<sp/>from<sp/>within<sp/>an<sp/>eval,</highlight></codeline>
 <codeline><highlight class="comment"><sp/>*<sp/>that<sp/>are<sp/>not<sp/>part<sp/>of<sp/>D++<sp/>itself<sp/>or<sp/>the<sp/>message<sp/>event,<sp/>you</highlight></codeline>
@@ -52,7 +52,7 @@
 <sect4 id="cpp-eval-command-discord_1autotoc_md95">
 <title>eval.cpp</title>
 <para>This is the main body of the example program.</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="eval.cpp"><codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fmt/format.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -87,7 +87,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_create([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacedpp_1_1utility_1afa6985aaa798fa30b73c1decc418cd32" kindref="member">dpp::utility::utf8substr</ref>(event.msg.content,<sp/>0,<sp/>5)<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;!eval&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(event.msg.author.id<sp/>!=<sp/>MY_DEVELOPER)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(event.msg.author.id<sp/>!=<sp/>dpp::snowflake(MY_DEVELOPER))<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.message_create(dpp::message(event.msg.channel_id,<sp/></highlight><highlight class="stringliteral">&quot;On<sp/>the<sp/>day<sp/>i<sp/>do<sp/>this<sp/>for<sp/>you,<sp/>Satan<sp/>will<sp/>be<sp/>ice<sp/>skating<sp/>to<sp/>work.&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>

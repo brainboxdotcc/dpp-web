@@ -128,7 +128,7 @@ eval.h</h4>
 <div class="line"><span class="comment">/* This is the snowflake ID of the bot&#39;s developer.</span></div>
 <div class="line"><span class="comment"> * The eval command will be restricted to this user.</span></div>
 <div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="preprocessor">#define MY_DEVELOPER 189759562910400512</span></div>
+<div class="line"><span class="preprocessor">#define MY_DEVELOPER 189759562910400512ULL</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* Any functions you want to be usable from within an eval,</span></div>
 <div class="line"><span class="comment"> * that are not part of D++ itself or the message event, you</span></div>
@@ -175,7 +175,7 @@ eval.cpp</h4>
 <div class="line">    bot.on_message_create([&amp;bot](<span class="keyword">const</span> <span class="keyword">auto</span> &amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32">dpp::utility::utf8substr</a>(event.msg.content, 0, 5) == <span class="stringliteral">&quot;!eval&quot;</span>) {</div>
 <div class="line"> </div>
-<div class="line">            if (event.msg.author.id != MY_DEVELOPER) {</div>
+<div class="line">            if (event.msg.author.id != dpp::snowflake(MY_DEVELOPER)) {</div>
 <div class="line">                bot.message_create(dpp::message(event.msg.channel_id, <span class="stringliteral">&quot;On the day i do this for you, Satan will be ice skating to work.&quot;</span>));</div>
 <div class="line">                return;</div>
 <div class="line">            }</div>

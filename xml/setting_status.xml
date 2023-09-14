@@ -8,7 +8,7 @@
     <detaileddescription>
 <para>A bot status is pretty cool, and it&apos;d be cooler if you knew how to do it! This tutorial will cover how to set the bot status to say <computeroutput>Playing games!</computeroutput>, as well as covering how to set the status to the amount of guilds every two minutes.</para>
 <para>First, we&apos;ll cover setting the bot status to <computeroutput>Playing games!</computeroutput>.</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="setting_status1.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
@@ -21,7 +21,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>don&apos;t<sp/>need<sp/>the<sp/>run_once<sp/>here<sp/>as<sp/>we&apos;re<sp/>not<sp/>registering<sp/>commands!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>bot<sp/>presence<sp/>as<sp/>online<sp/>and<sp/>&quot;Playing...&quot;!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.set_presence(<ref refid="classdpp_1_1presence" kindref="compound">dpp::presence</ref>(dpp::presence_status::ps_online,<sp/>dpp::activity_type::at_game,<sp/></highlight><highlight class="stringliteral">&quot;games!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.set_presence(<ref refid="classdpp_1_1presence" kindref="compound">dpp::presence</ref>(<ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96ae068013241cf08d0f4dbdd161e89aa2e" kindref="member">dpp::ps_online</ref>,<sp/><ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701" kindref="member">dpp::at_game</ref>,<sp/></highlight><highlight class="stringliteral">&quot;games!&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
@@ -33,7 +33,7 @@
 <para><image type="html" name="botonlinestatus.png"></image>
 </para>
 <para>Now, let&apos;s cover setting the bot status to say <computeroutput>Playing with x guilds!</computeroutput> every two minutes.</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><programlisting filename="setting_status2.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>

@@ -12,7 +12,7 @@
 Note that because the <ref refid="classdpp_1_1commandhandler_1a791ed0c75ef77306af84be30ded619f8" kindref="member">dpp::commandhandler::add_command</ref> method accepts a <computeroutput>std::function</computeroutput> as the command handler, you may point a command handler at a simple lambda (as shown in this example), a function pointer, or an instantiated class method of an object. This is extremely flexible and allows you to decide how and where commands should be routed, either to an object oriented system or to a lambda based system.</para>
 <para><simplesect kind="warning"><para>As of <ulink url="https://support-dev.discord.com/hc/en-us/articles/6025578854295-Why-We-Moved-to-Slash-Commands">August 30th, 2022</ulink>, you are advised to only be using slash commands, not messages for commands. To prevent the command handler from handling commands with messages, you should only use the &quot;/&quot; prefix. If you wish to still use messages for commands, this tutorial will still cover it but, again, it is discouraged by Discord.</para>
 </simplesect>
-<programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<programlisting filename="commandhandler.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>

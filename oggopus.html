@@ -335,7 +335,7 @@ Using liboggz</h2>
 <div class="line">        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;play&quot;</span>) {</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">/* Get the voice channel the bot is in, in this current guild. */</span></div>
-<div class="line">            dpp::voiceconn* v = event.from-&gt;get_voice(event.channel.guild_id);</div>
+<div class="line">            dpp::voiceconn* v = event.from-&gt;get_voice(event.command.guild_id);</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">/* If the voice channel was invalid, or there is an issue with it, then tell the user. */</span></div>
 <div class="line">            if (!v || !v-&gt;voiceclient || !v-&gt;voiceclient-&gt;is_ready()) {</div>
