@@ -15,9 +15,9 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//...</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
-<sect2 id="checking-member-permissions_1autotoc_md98">
+<sect2 id="checking-member-permissions_1autotoc_md99">
 <title>Permissions in Interaction events</title>
-<sect3 id="checking-member-permissions_1autotoc_md99">
+<sect3 id="checking-member-permissions_1autotoc_md100">
 <title>Default Command Permissions</title>
 <para>Discord&apos;s intended way to manage permissions for commands is through default member permissions. You set them using <ref refid="classdpp_1_1slashcommand_1a51084be92893e21d13ffe320a2b77e8a" kindref="member">dpp::slashcommand::set_default_permissions</ref> when creating or updating a command to set the default permissions a user must have to use it. However, Server-Admins can then overwrite these permissions by their own restrictions.</para>
 <para>The corresponding code to create a command with default permissions would look something like this:</para>
@@ -31,7 +31,7 @@
 <codeline><highlight class="normal">bot.global_command_create(command);</highlight></codeline>
 </programlisting></para>
 </sect3>
-<sect3 id="checking-member-permissions_1autotoc_md100">
+<sect3 id="checking-member-permissions_1autotoc_md101">
 <title>Checking permissions on your own</title>
 <para>If you want to check permissions on your own, the easiest way to check if a member has certain permissions in interaction events is by using the <ref refid="classdpp_1_1interaction_1a89ef384ef9f2c2f7bf99c2b5ba0844c3" kindref="member">dpp::interaction::get_resolved_permission</ref> function. The resolved list contains associated structures for the command and does not use the cache or require any extra API calls. Note that the permissions in the resolved set are pre-calculated by discord and taking into account channel overwrites, roles and admin privileges. So no need to loop through roles or stuff like that.</para>
 <para>Let&apos;s imagine the following scenario:</para>
@@ -48,7 +48,7 @@
 </simplesect>
 </para>
 </sect3>
-<sect3 id="checking-member-permissions_1autotoc_md101">
+<sect3 id="checking-member-permissions_1autotoc_md102">
 <title>From Parameters</title>
 <para>The resolved set also contains the permissions of members from command parameters.</para>
 <para>For example, let&apos;s say you want to prohibit people from banning server admins with your ban command.</para>
@@ -63,7 +63,7 @@
 <codeline><highlight class="normal">});</highlight></codeline>
 </programlisting></para>
 </sect3>
-<sect3 id="checking-member-permissions_1autotoc_md102">
+<sect3 id="checking-member-permissions_1autotoc_md103">
 <title>The Bot&apos;s permissions</title>
 <para>You also might want to check if the bot itself has the ban permission before processing the command further. You can access the bot&apos;s permissions in the <ref refid="classdpp_1_1interaction_1a1a91af243ab4d765ecadc025958a8a85" kindref="member">dpp::interaction::app_permissions</ref> field.</para>
 <para><programlisting filename=".cpp"><codeline><highlight class="normal">bot.on_interaction_create([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
