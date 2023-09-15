@@ -1,5 +1,13 @@
 var NAVTREEINDEX22 =
 {
+"namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6":[9,0,0,303,4],
+"namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5aa62ddfb05e437c4d4bf7a3ef1b73752b":[9,0,0,303,3],
+"namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5aab0deba2352e4cf8e36af9389dfef612":[9,0,0,303,1],
+"namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5ad29e42f919f0ba23aff73e3ea6ac1f5c":[9,0,0,303,0],
+"namespacedpp.html#ad1d0e1acb0698f7cb0f656ce2b19ff3e":[9,0,0,414],
+"namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4":[9,0,0,350],
+"namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230":[9,0,0,350,0],
+"namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31":[9,0,0,350,1],
 "namespacedpp.html#ad4658c417b9af90d3021253375580a61":[9,0,0,280],
 "namespacedpp.html#ad4c862611232b317153bcfc106534292":[9,0,0,242],
 "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9":[9,0,0,316],
@@ -241,13 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp_1_1colors.html#a1fcf305393d4468af38d679efcfa9fba":[9,0,0,0,303],
 "namespacedpp_1_1colors.html#a202177fcd85f2b6f97927cbdac3e5522":[9,0,0,0,493],
 "namespacedpp_1_1colors.html#a20ee9b361d3669a6331821e0f584fda0":[9,0,0,0,90],
-"namespacedpp_1_1colors.html#a20f7d2174154a1f9d6cf5fd8fa51e7a4":[9,0,0,0,586],
-"namespacedpp_1_1colors.html#a211d733d6cd2b1da6542d56baa7ddaae":[9,0,0,0,79],
-"namespacedpp_1_1colors.html#a21ab326b611d6a7645104a685397cb1a":[9,0,0,0,474],
-"namespacedpp_1_1colors.html#a21cc6e8af9a53f40b65efb3d441b6deb":[9,0,0,0,198],
-"namespacedpp_1_1colors.html#a21dfeb202f4ace3ff89d65ff46f58126":[9,0,0,0,389],
-"namespacedpp_1_1colors.html#a21f2609f9e884bd63ec311b29be3eb44":[9,0,0,0,576],
-"namespacedpp_1_1colors.html#a2209ed28b602634fe57c459bdfcab215":[9,0,0,0,317],
-"namespacedpp_1_1colors.html#a228570abaa45717b75dd61966baa4962":[9,0,0,0,199],
-"namespacedpp_1_1colors.html#a22b7eb9714c626a04deb17eaccf60265":[9,0,0,0,295]
+"namespacedpp_1_1colors.html#a20f7d2174154a1f9d6cf5fd8fa51e7a4":[9,0,0,0,586]
 };

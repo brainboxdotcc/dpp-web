@@ -1,5 +1,13 @@
 var NAVTREEINDEX46 =
 {
+"namespacedpp_1_1unicode__emoji.html#aee6dc359b520d6b3baa8d851402c7387":[9,0,0,4,3610],
+"namespacedpp_1_1unicode__emoji.html#aee7c3efb993ae5021e5de6b1ce49ae54":[9,0,0,4,1399],
+"namespacedpp_1_1unicode__emoji.html#aee9106c1ed19b7ad62449d3dbee822bc":[9,0,0,4,1023],
+"namespacedpp_1_1unicode__emoji.html#aee972de4572d9e55f8b99954621ad0bc":[9,0,0,4,866],
+"namespacedpp_1_1unicode__emoji.html#aeeaaa2d62ec5c55565c143f4eb70baba":[9,0,0,4,2472],
+"namespacedpp_1_1unicode__emoji.html#aeeaef2daa00517e9d321449420440f4b":[9,0,0,4,500],
+"namespacedpp_1_1unicode__emoji.html#aeebca1eddfd8f019f9246652f362db2c":[9,0,0,4,1666],
+"namespacedpp_1_1unicode__emoji.html#aeecee8ef3c6ad5efdbbbcea7261cdd3a":[9,0,0,4,4951],
 "namespacedpp_1_1unicode__emoji.html#aeee601d9088ab3cda5e47ee19feb4ed9":[9,0,0,4,5291],
 "namespacedpp_1_1unicode__emoji.html#aeefc288ebf48b0fb9bd71caeb2da90f1":[9,0,0,4,4431],
 "namespacedpp_1_1unicode__emoji.html#aef133c25b1944a217b133bf22a944644":[9,0,0,4,4252],
@@ -241,13 +249,5 @@ var NAVTREEINDEX46 =
 "namespacedpp_1_1unicode__emoji.html#afaeb30be9fbc25216edd66d96f7d2c1e":[9,0,0,4,1187],
 "namespacedpp_1_1unicode__emoji.html#afaf990c8af2aa3fc7c04e181e07e37f1":[9,0,0,4,627],
 "namespacedpp_1_1unicode__emoji.html#afb16941e3a2c6ad635668e7232766ab4":[9,0,0,4,2551],
-"namespacedpp_1_1unicode__emoji.html#afb28afdf58344cf7f5f351194e441cc7":[9,0,0,4,163],
-"namespacedpp_1_1unicode__emoji.html#afb2e281a66fcd914999b016b14bbc846":[9,0,0,4,783],
-"namespacedpp_1_1unicode__emoji.html#afb4755efa9f651d88604a402e973ca42":[9,0,0,4,289],
-"namespacedpp_1_1unicode__emoji.html#afb4955eb92b7c7d39c00011e2c28ca5f":[9,0,0,4,4835],
-"namespacedpp_1_1unicode__emoji.html#afb4cb97fb0155e69cb4c99522c0f038d":[9,0,0,4,1149],
-"namespacedpp_1_1unicode__emoji.html#afb509eaeabf943f4b64ed4c3db37fe52":[9,0,0,4,228],
-"namespacedpp_1_1unicode__emoji.html#afb5e727e00d0e24291365cb90dd63f5c":[9,0,0,4,2208],
-"namespacedpp_1_1unicode__emoji.html#afb7658d56aec46c22ed4b8340f0d6b01":[9,0,0,4,4402],
-"namespacedpp_1_1unicode__emoji.html#afb7b489eb4a018464ed4c7b87d855f39":[9,0,0,4,3792]
+"namespacedpp_1_1unicode__emoji.html#afb28afdf58344cf7f5f351194e441cc7":[9,0,0,4,163]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"expiring-buttons.html":[5,3,3],
+"firstbot.html":[5,0,0],
+"frequently-asked-questions.html":[1],
+"functions.html":[11,3,0],
+"functions.html":[11,3,0,0],
+"functions_b.html":[11,3,0,1],
+"functions_c.html":[11,3,0,2],
+"functions_d.html":[11,3,0,3],
 "functions_e.html":[11,3,0,4],
 "functions_enum.html":[11,3,4],
 "functions_eval.html":[11,3,5],
@@ -73,8 +81,8 @@ var NAVTREEINDEX19 =
 "glossary-of-common-discord-terms.html":[2],
 "governance.html":[6,5],
 "hierarchy.html":[11,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md115":[0,0],
 "index.html#autotoc_md116":[0,1],
 "index.html#autotoc_md117":[0,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX19 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dac03cfeefcc8d3d3d5c56e984e7aa88af":[9,0,0,292,10],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dac44ff864aff617a63ebd9601246d7742":[9,0,0,292,0],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dac983ab780a007d389a64e470818da24b":[9,0,0,292,17],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dac99002cba341e114b90c3ff37bbd9398":[9,0,0,292,36],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dacb72e0c3920bd76726937e5c92ee0acd":[9,0,0,292,4],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dacd9b4a98d27e94387b7f53a3b432f3ab":[9,0,0,292,2],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daceb20282697c73e1d5b1eef3ac45e19c":[9,0,0,292,27],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dacfd1f4fd1d1faeb63dac7abfba4f4a48":[9,0,0,292,48],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dacff873b5a978ed870f527fecaa81737c":[9,0,0,292,39],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dad068bbed29517768ba7aff817cf5fd77":[9,0,0,292,28],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dad710b805e2cffdee0acc3978471531c7":[9,0,0,292,19],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dae8d03182e83800e29678ebfb04f1df94":[9,0,0,292,6]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3dac99002cba341e114b90c3ff37bbd9398":[9,0,0,292,36]
 };

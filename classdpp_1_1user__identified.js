@@ -12,6 +12,7 @@ var classdpp_1_1user__identified =
     [ "get_default_avatar_url", "classdpp_1_1user__identified.html#a993443fdaf58cb3a58a2e3008af47b54", null ],
     [ "get_mention", "classdpp_1_1user__identified.html#a09743ef07e78406808e74a8bd7b5d658", null ],
     [ "get_mention", "classdpp_1_1user__identified.html#a8c8092cca81a161d7ae9aa3a5f3dde3f", null ],
+    [ "get_url", "classdpp_1_1user__identified.html#ac7e937788cc694a951f3135563678bbf", null ],
     [ "has_animated_banner", "classdpp_1_1user__identified.html#a4b6f839d06a71e77094a432fe665c1f9", null ],
     [ "has_animated_icon", "classdpp_1_1user__identified.html#a51c599c37ab5ccc1b770084c937abe98", null ],
     [ "has_hypesquad_events", "classdpp_1_1user__identified.html#aaaa1239fe84eb4d3c88b8812a14c598b", null ],

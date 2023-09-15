@@ -42,9 +42,10 @@ var searchData=
   ['message_5funpin_39',['message_unpin',['../classdpp_1_1cluster.html#aaf055f95bc7ce80ff06cff9956bddca5',1,'dpp::cluster']]],
   ['message_5funpin_5fsync_40',['message_unpin_sync',['../classdpp_1_1cluster.html#ab678ce2a5961a13562e37ff9d1ddc174',1,'dpp::cluster']]],
   ['message_5fupdate_5ft_41',['message_update_t',['../structdpp_1_1message__update__t.html#a5a45121e28e907254438e5854c90a2f8',1,'dpp::message_update_t']]],
-  ['messages_5fget_42',['messages_get',['../classdpp_1_1cluster.html#ad471be0405745e32f130a2bfcd371c73',1,'dpp::cluster']]],
-  ['messages_5fget_5fsync_43',['messages_get_sync',['../classdpp_1_1cluster.html#a795ac11245e689599fb24f9e5a6a060d',1,'dpp::cluster']]],
-  ['mime_5ftype_44',['mime_type',['../namespacedpp_1_1utility.html#a3c2eaf5d14e3c80965b990119dd6c624',1,'dpp::utility::mime_type(image_type type)'],['../namespacedpp_1_1utility.html#abb150a54408656bf3660c950c08ec9d1',1,'dpp::utility::mime_type(sticker_format format)']]],
-  ['mobile_5fstatus_45',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]],
-  ['moving_5faverager_46',['moving_averager',['../structdpp_1_1moving__averager.html#ac16f2efcf49a02eaa1d6299625da123b',1,'dpp::moving_averager::moving_averager()=default'],['../structdpp_1_1moving__averager.html#ab0ffd433db14d324bc6b7a327d3a2eba',1,'dpp::moving_averager::moving_averager(uint64_t collection_count_new)']]]
+  ['message_5furl_42',['message_url',['../namespacedpp_1_1utility.html#a5549deccff07d29af834b310f1400495',1,'dpp::utility']]],
+  ['messages_5fget_43',['messages_get',['../classdpp_1_1cluster.html#ad471be0405745e32f130a2bfcd371c73',1,'dpp::cluster']]],
+  ['messages_5fget_5fsync_44',['messages_get_sync',['../classdpp_1_1cluster.html#a795ac11245e689599fb24f9e5a6a060d',1,'dpp::cluster']]],
+  ['mime_5ftype_45',['mime_type',['../namespacedpp_1_1utility.html#a3c2eaf5d14e3c80965b990119dd6c624',1,'dpp::utility::mime_type(image_type type)'],['../namespacedpp_1_1utility.html#abb150a54408656bf3660c950c08ec9d1',1,'dpp::utility::mime_type(sticker_format format)']]],
+  ['mobile_5fstatus_46',['mobile_status',['../classdpp_1_1presence.html#abf5fafbf7c71764f540b1d26c03b0607',1,'dpp::presence']]],
+  ['moving_5faverager_47',['moving_averager',['../structdpp_1_1moving__averager.html#ac16f2efcf49a02eaa1d6299625da123b',1,'dpp::moving_averager::moving_averager()=default'],['../structdpp_1_1moving__averager.html#ab0ffd433db14d324bc6b7a327d3a2eba',1,'dpp::moving_averager::moving_averager(uint64_t collection_count_new)']]]
 ];

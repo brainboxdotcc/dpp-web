@@ -15,6 +15,7 @@ var structdpp_1_1message =
     [ "build_json", "structdpp_1_1message.html#aabab0f2eff8f3dc4460fc1292ce53208", null ],
     [ "fill_from_json", "structdpp_1_1message.html#a7e15337119679e582768d794b409cffb", null ],
     [ "get_creation_time", "structdpp_1_1message.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
+    [ "get_url", "structdpp_1_1message.html#ab1f065195992aad72a8645376aa35104", null ],
     [ "has_remix_attachment", "structdpp_1_1message.html#abf316357d0fb594c6785f753daa182aa", null ],
     [ "has_thread", "structdpp_1_1message.html#a9b05e57f76d9c2e656d86f45bf8a5230", null ],
     [ "is_crosspost", "structdpp_1_1message.html#a03ce860de6231985a823f8ce2dd2dd8d", null ],
