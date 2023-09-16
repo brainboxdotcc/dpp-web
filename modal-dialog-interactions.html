@@ -150,10 +150,10 @@ $(document).ready(function(){initNavTree('modal-dialog-interactions.html',''); i
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* This event handles form submission for the modal dialog we create above */</span></div>
-<div class="line">    bot.on_form_submit([&amp;](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1form__submit__t.html">dpp::form_submit_t</a> &amp; event) {</div>
+<div class="line">    bot.on_form_submit([](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1form__submit__t.html">dpp::form_submit_t</a> &amp; event) {</div>
 <div class="line">        </div>
-<div class="line">        <span class="comment">/* For this simple example we know the first element of the first row ([0][0]) is value type string.</span></div>
-<div class="line"><span class="comment">         * In the real world it may not be safe to make such assumptions!</span></div>
+<div class="line">        <span class="comment">/* For this simple example, we know the first element of the first row ([0][0]) is value type string.</span></div>
+<div class="line"><span class="comment">         * In the real world, it may not be safe to make such assumptions!</span></div>
 <div class="line"><span class="comment">         */</span></div>
 <div class="line">        std::string <a class="code hl_variable" href="namespacedpp_1_1unicode__emoji.html#a3fce26009bc5e6eee94433c5c30c180b">v</a> = std::get&lt;std::string&gt;(event.<a class="code hl_variable" href="structdpp_1_1form__submit__t.html#a95c70d776a5aa714d372d0fd3029dd02">components</a>[0].components[0].value);</div>
 <div class="line"> </div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('modal-dialog-interactions.html',''); i
 <div class="line">        <span class="keyword">event</span>.reply(m);</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    bot.on_ready([&amp;](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a> &amp; event) {</div>
+<div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a> &amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
 <div class="line">            <span class="comment">/* Create a slash command and register it as a global command */</span></div>
 <div class="line">            bot.global_command_create(<a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a>(<span class="stringliteral">&quot;dialog&quot;</span>, <span class="stringliteral">&quot;Make a modal dialog box&quot;</span>, bot.me.id));</div>

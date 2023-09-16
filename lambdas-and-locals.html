@@ -102,11 +102,11 @@ $(document).ready(function(){initNavTree('lambdas-and-locals.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >If you are reading this page, you have likely been sent here by someone helping you diagnose why your bot is crashing or why seemingly invalid values are being passed into lambdas within your program that uses D++.</p>
-<p >It is important to remember that when you put a lambda callback onto a function in D++, that this lambda will execute at some point in the <b>future</b>. As with all things in the future and as 80s Sci-Fi movies will tell you, when you reach the future things may well have changed!</p>
+<p >It is important to remember that when you put a lambda callback onto a function in D++, that this lambda will execute at some point in the <b>future</b>. As with all things in the future and as 80s Sci-Fi movies will tell you, when you reach the future, things may well have changed!</p>
 <div class="image">
 <img src="delorean-time-travel.gif" alt=""/>
 </div>
-<p >To explain this situation and how it causes issues I'd like you to imagine the age old magic trick, where a magician sets a fine table full of cutlery, pots, pans and wine. He indicates to the audience that this is authentic, then with a whip of his wrist, he whips the tablecloth away, leaving the cutlery and other tableware in place (if he is any good as a magician!)</p>
+<p >To explain this situation and how it causes issues, I'd like you to imagine the age-old magic trick, where a magician sets a fine table full of cutlery, pots, pans and wine. He indicates to the audience that this is authentic, then with a whip of his wrist, he whips the tablecloth away, leaving the cutlery and other tableware in place (if he is any good as a magician!)</p>
 <p >Now imagine the following code scenario. We will describe this code scenario as the magic trick above, in the steps below:</p>
 <div class="fragment"><div class="line">bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp; event) {</div>
 <div class="line">    <span class="keywordtype">int</span> myvar = 0;</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('lambdas-and-locals.html',''); initResi
 <li>Best case scenario: you access invalid RAM no longer owned by your program by trying to write to <code>myvar</code>, and <a href="https://www.youtube.com/watch?v=sm8qb2kP-fQ">your bot outright crashes horribly</a>!</li>
 <li>Worse case scenario: you silently corrupt ram and end up spending days trying to track down a bug that subtly breaks your bot...</li>
 </ul>
-<p >The situation I am trying to describe here is one of object and variable ownership. When you call a lambda, <b>always assume that every non-global reference outside of that lambda will be invalid when the lambda is called</b>! For any non-global variable always take a <b>copy</b> of the variable (not reference, or pointer). Global variables or those declared directly in <code>main()</code> are safe to pass as references.</p>
+<p >The situation I am trying to describe here is one of object and variable ownership. When you call a lambda, <b>always assume that every non-global reference outside of that lambda will be invalid when the lambda is called</b>! For any non-global variable, always take a <b>copy</b> of the variable (not reference, or pointer). Global variables or those declared directly in <code>main()</code> are safe to pass as references.</p>
 <p >For example, if we were to fix the broken code above, we could rewrite it like this:</p>
 <div class="fragment"><div class="line">bot.on_message_create([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1message__create__t.html">dpp::message_create_t</a> &amp; event) {</div>
 <div class="line">    <span class="keywordtype">int</span> myvar = 0;</div>
@@ -139,11 +139,11 @@ $(document).ready(function(){initNavTree('lambdas-and-locals.html',''); initResi
 <div class="line">    });</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;here\n&quot;</span>;</div>
 <div class="line">});</div>
-</div><!-- fragment --><p >Note, however that when you set <code>myvar</code> within the inner lambda, this does <b>not effect</b> the value of the var outside it. Lambdas should be considered self-contained silos, and as they execute in other threads should not be relied upon to set anything that exists <b>outside of that lambda</b>.</p>
+</div><!-- fragment --><p >Note, however that when you set <code>myvar</code> within the inner lambda, this does <b>not affect</b> the value of the var outside it. Lambdas should be considered self-contained silos, and as they execute in other threads should not be relied upon to set anything that exists <b>outside of that lambda</b>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Always avoid just using <code>[&amp;]</code> in a lambda to access all in the scope above. It is unlikely that half of this scope will still even be valid by the time you get a look at it!</dd></dl>
 <p>Similarly, and important to note, your program <b>will not wait for bot.message_create to send its message and call its lambda</b> before continuing on to print <code>here</code>. It will instantly insert the request into its queue and bail straight back out (see the steps above) and immediately print the text.</p>
 <p >If you do want to get variables out of your lambda, create a class, or call a separate function, and pass what you need into that function from the lambda <b>by value</b> or alternatively, you can use <code>std::bind</code> to bind a lambda directly to an object's method instead (this is great for modular bots).</p>
-<p >If you are stuck, as this is a complex subject please do feel free to ask on the <a href="https://discord.gg/dpp">official support server</a>! </p>
+<p >If you are stuck, as this is a complex subject, please do feel free to ask on the <a href="https://discord.gg/dpp">official support server</a>! </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
