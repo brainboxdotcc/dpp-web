@@ -131,6 +131,13 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a560add0e60d96d64a558e6d6a786e699"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699">avx_type_t</a> : uint8_t { <a class="el" href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699a091f6842f03d9340757282ee583069e2">avx_none</a>
+, <a class="el" href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699a9a1bf7ba550ed1de2a7aca70b311c752">avx_1</a>
+, <a class="el" href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699a8acf3eca4a4af634ad7d7fd9ed231d61">avx_2</a>
+, <a class="el" href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699a7534f92261aa107ae165b097cff2b58e">avx_512</a>
+ }</td></tr>
+<tr class="memdesc:a560add0e60d96d64a558e6d6a786e699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported AVX instruction set type for audio mixing.  <a href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699">More...</a><br /></td></tr>
+<tr class="separator:a560add0e60d96d64a558e6d6a786e699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a097ec42bcbedfed6ab1e4f12bf84cab7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7">time_format</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a380a740f8843af94cd3007d7fdf3ce30">tf_long_date</a> = 'D'
 , <a class="el" href="namespacedpp_1_1utility.html#a097ec42bcbedfed6ab1e4f12bf84cab7a7bdb33c94eff8e026e6a864f217e33c5">tf_long_datetime</a> = 'F'
@@ -186,6 +193,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d70739d6485741d1617c359ec70d1f4"><td class="memItemLeft" align="right" valign="top">bool DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4">has_voice</a> ()</td></tr>
 <tr class="memdesc:a9d70739d6485741d1617c359ec70d1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if D++ was built with voice support.  <a href="namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4">More...</a><br /></td></tr>
 <tr class="separator:a9d70739d6485741d1617c359ec70d1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae6b21e1ff4b4f698b5064495e04590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699">avx_type_t</a> DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a8ae6b21e1ff4b4f698b5064495e04590">voice_avx</a> ()</td></tr>
+<tr class="memdesc:a8ae6b21e1ff4b4f698b5064495e04590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an enum value indicating which AVX instruction set is used for mixing received voice data, if any.  <a href="namespacedpp_1_1utility.html#a8ae6b21e1ff4b4f698b5064495e04590">More...</a><br /></td></tr>
+<tr class="separator:a8ae6b21e1ff4b4f698b5064495e04590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a282afa80feeda7760345275546ca8a76"><td class="memItemLeft" align="right" valign="top">bool DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a282afa80feeda7760345275546ca8a76">is_coro_enabled</a> ()</td></tr>
 <tr class="memdesc:a282afa80feeda7760345275546ca8a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if D++ was built with coroutine support.  <a href="namespacedpp_1_1utility.html#a282afa80feeda7760345275546ca8a76">More...</a><br /></td></tr>
 <tr class="separator:a282afa80feeda7760345275546ca8a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,6 +332,32 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a560add0e60d96d64a558e6d6a786e699" name="a560add0e60d96d64a558e6d6a786e699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560add0e60d96d64a558e6d6a786e699">&#9670;&nbsp;</a></span>avx_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699">dpp::utility::avx_type_t</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supported AVX instruction set type for audio mixing. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a560add0e60d96d64a558e6d6a786e699a091f6842f03d9340757282ee583069e2" name="a560add0e60d96d64a558e6d6a786e699a091f6842f03d9340757282ee583069e2"></a>avx_none&#160;</td><td class="fielddoc"><p >No AVX Support. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a560add0e60d96d64a558e6d6a786e699a9a1bf7ba550ed1de2a7aca70b311c752" name="a560add0e60d96d64a558e6d6a786e699a9a1bf7ba550ed1de2a7aca70b311c752"></a>avx_1&#160;</td><td class="fielddoc"><p >AVX support. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a560add0e60d96d64a558e6d6a786e699a8acf3eca4a4af634ad7d7fd9ed231d61" name="a560add0e60d96d64a558e6d6a786e699a8acf3eca4a4af634ad7d7fd9ed231d61"></a>avx_2&#160;</td><td class="fielddoc"><p >AVX2 support. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a560add0e60d96d64a558e6d6a786e699a7534f92261aa107ae165b097cff2b58e" name="a560add0e60d96d64a558e6d6a786e699a7534f92261aa107ae165b097cff2b58e"></a>avx_512&#160;</td><td class="fielddoc"><p >AVX512 support. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="aeba8b1b32778b3f59bc9d18d8a1ddd5d" name="aeba8b1b32778b3f59bc9d18d8a1ddd5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeba8b1b32778b3f59bc9d18d8a1ddd5d">&#9670;&nbsp;</a></span>guild_navigation_type</h2>
 
@@ -2001,6 +2037,26 @@ Variables</h2></td></tr>
 
 <p>Returns the library's version string. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::string version </dd></dl>
+
+</div>
+</div>
+<a id="a8ae6b21e1ff4b4f698b5064495e04590" name="a8ae6b21e1ff4b4f698b5064495e04590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae6b21e1ff4b4f698b5064495e04590">&#9670;&nbsp;</a></span>voice_avx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699">avx_type_t</a> DPP_EXPORT dpp::utility::voice_avx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an enum value indicating which AVX instruction set is used for mixing received voice data, if any. </p>
+<dl class="section return"><dt>Returns</dt><dd>avx_type_t AVX type </dd></dl>
 
 </div>
 </div>

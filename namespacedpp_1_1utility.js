@@ -4,6 +4,12 @@ var namespacedpp_1_1utility =
     [ "iconhash", "structdpp_1_1utility_1_1iconhash.html", "structdpp_1_1utility_1_1iconhash" ],
     [ "uptime", "structdpp_1_1utility_1_1uptime.html", "structdpp_1_1utility_1_1uptime" ],
     [ "cmd_result_t", "namespacedpp_1_1utility.html#a36d13f96f86debc010768d4c812e3fa6", null ],
+    [ "avx_type_t", "namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699", [
+      [ "avx_none", "namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699a091f6842f03d9340757282ee583069e2", null ],
+      [ "avx_1", "namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699a9a1bf7ba550ed1de2a7aca70b311c752", null ],
+      [ "avx_2", "namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699a8acf3eca4a4af634ad7d7fd9ed231d61", null ],
+      [ "avx_512", "namespacedpp_1_1utility.html#a560add0e60d96d64a558e6d6a786e699a7534f92261aa107ae165b097cff2b58e", null ]
+    ] ],
     [ "guild_navigation_type", "namespacedpp_1_1utility.html#aeba8b1b32778b3f59bc9d18d8a1ddd5d", [
       [ "gnt_customize", "namespacedpp_1_1utility.html#aeba8b1b32778b3f59bc9d18d8a1ddd5daa5d69979f1346e5d4b0372d658b1fddb", null ],
       [ "gnt_browse", "namespacedpp_1_1utility.html#aeba8b1b32778b3f59bc9d18d8a1ddd5dab9443e580111a0db8d0522dd3bbe6d3a", null ],
@@ -64,6 +70,7 @@ var namespacedpp_1_1utility =
     [ "utf8substr", "namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32", null ],
     [ "validate", "namespacedpp_1_1utility.html#a3da218e2645e8f07e3b83373505542ad", null ],
     [ "version", "namespacedpp_1_1utility.html#a7d10e878ab1347eaed727b2e528206ed", null ],
+    [ "voice_avx", "namespacedpp_1_1utility.html#a8ae6b21e1ff4b4f698b5064495e04590", null ],
     [ "callable_returns_v", "namespacedpp_1_1utility.html#aae6297e977d48c670302c77e435bbd0f", null ],
     [ "cdn_host", "namespacedpp_1_1utility.html#a4cf040349b0a45ef90863effb892ece6", null ],
     [ "url_host", "namespacedpp_1_1utility.html#aca584abb7a9cddef381eaa768ad66478", null ]
