@@ -1523,7 +1523,7 @@
         </briefdescription>
         <detaileddescription>
 <para>You should send an audio packet of <computeroutput>send_audio_raw_max_length</computeroutput> (11520) bytes. Note that this function can be costly as it has to opus encode the PCM audio on the fly, and also encrypt it with libsodium.</para>
-<para><simplesect kind="note"><para>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once (unless you have set use_opus to false). Constantly calling this from the dpp::on_voice_buffer_send callback can and will eat a TON of cpu!</para>
+<para><simplesect kind="note"><para>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once (unless you have set use_opus to false). <bold>Constantly calling this from <ref refid="classdpp_1_1cluster_1a4b702b26b73692e0aab0743f4ed07ef9" kindref="member">dpp::cluster::on_voice_buffer_send</ref> can, and will, eat a TON of cpu!</bold></para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1534,8 +1534,9 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-The audio data should be 48000Hz signed 16 bit audio.</para>
-<para><parameterlist kind="param"><parameteritem>
+<simplesect kind="warning"><para><bold>The audio data needs to be 48000Hz signed 16 bit audio, otherwise, the audio will come through incorrectly!</bold></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>length</parametername>
 </parameternamelist>

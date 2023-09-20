@@ -1320,14 +1320,14 @@ Protected Attributes</h2></td></tr>
 
 <p>Send raw audio to the voice channel. </p>
 <p >You should send an audio packet of <code>send_audio_raw_max_length</code> (11520) bytes. Note that this function can be costly as it has to opus encode the PCM audio on the fly, and also encrypt it with libsodium.</p>
-<dl class="section note"><dt>Note</dt><dd>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once (unless you have set use_opus to false). Constantly calling this from the dpp::on_voice_buffer_send callback can and will eat a TON of cpu!</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once (unless you have set use_opus to false). <b>Constantly calling this from <a class="el" href="classdpp_1_1cluster.html#a4b702b26b73692e0aab0743f4ed07ef9" title="Called when packets are sent from the voice buffer. The voice buffer contains packets that are alread...">dpp::cluster::on_voice_buffer_send</a> can, and will, eat a TON of cpu!</b></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">audio_data</td><td>Raw PCM audio data. Channels are interleaved, with each channel's amplitude being a 16 bit value.</td></tr>
   </table>
   </dd>
 </dl>
-<p>The audio data should be 48000Hz signed 16 bit audio.</p>
+<dl class="section warning"><dt>Warning</dt><dd><b>The audio data needs to be 48000Hz signed 16 bit audio, otherwise, the audio will come through incorrectly!</b></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">length</td><td>The length of the audio data. The length should be a multiple of 4 (2x 16 bit stereo channels) with a maximum length of <code>send_audio_raw_max_length</code>, which is a complete opus frame at highest quality.</td></tr>
