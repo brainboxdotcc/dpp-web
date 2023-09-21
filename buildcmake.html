@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Building a Discord Bot using CMake/UNIX - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Building a Discord Bot Using CMake (UNIX) - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Building a Discord Bot using CMake/UNIX - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Building a Discord Bot Using CMake (UNIX) - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Building a Discord Bot using CMake/UNIX - D++ - The lightweight C++ Discord API Library">
-<title>Building a Discord Bot using CMake/UNIX - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Building a Discord Bot Using CMake (UNIX) - D++ - The lightweight C++ Discord API Library">
+<title>Building a Discord Bot Using CMake (UNIX) - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,49 +98,48 @@ $(document).ready(function(){initNavTree('buildcmake.html',''); initResizable();
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Building a Discord Bot using CMake/UNIX </div></div>
+  <div class="headertitle"><div class="title">Building a Discord Bot Using CMake (UNIX) </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md132"></a>
+<div class="textblock"><dl class="section warning"><dt>Warning</dt><dd><b>This tutorial will assume that you have already installed DPP.</b> If you haven't, please head over to <a class="el" href="install-linux-deb.html">this page</a>, or any install page that matches your OS. If you want to use source, then continue your journey over at <a class="el" href="buildlinux.html">this page</a> for a full explanation into using CMake with source.</dd></dl>
+<h2><a class="anchor" id="autotoc_md132"></a>
 1. Toolchain</h2>
-<p >Before compiling, you will need to install <code>cmake</code> on your system. To be sure that <code>cmake</code> is installed, you can type the following command: </p><pre class="fragment">$ cmake --version
-cmake version 3.20.4
-</pre><h2><a class="anchor" id="autotoc_md133"></a>
+<p >Before continuing, you will need to install <code>cmake</code> on your system. To be sure that <code>cmake</code> is installed, you can type the following command:</p>
+<div class="fragment"><div class="line">$ cmake --version</div>
+<div class="line">cmake version 3.22.1</div>
+</div><!-- fragment --><p >If your CMake version is not as shown above then don't worry! You can still follow along, even if you're ahead or behind!</p>
+<h2><a class="anchor" id="autotoc_md133"></a>
 2. Create a CMake project</h2>
-<p >In an empty directory, create the following files and directories: </p><pre class="fragment">- your_project/
-    |-- libs/
-    |-- src/
-        |-- main.cpp
-    |-- CMakeLists.txt
-</pre><p >In the <code>libs/</code> directory, clone D++ with: <code>git clone <a href="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</a></code></p>
+<p >In an empty directory, create the following files and directories:</p>
+<div class="dotgraph">
+<iframe scrolling="no" frameborder="0" src="dot_inline_dotgraph_3.svg" width="839" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <h2><a class="anchor" id="autotoc_md134"></a>
 3. Configure CMake</h2>
-<p >Here is an example CMake configuration, adapt it according to your needs:</p>
-<div class="fragment"><div class="line"># minimum CMake version required</div>
-<div class="line">cmake_minimum_required(VERSION 3.15)</div>
+<p >You'll need to modify the <code>CMakeLists.txt</code> to tell CMake what it's looking for, and other information.</p>
+<p >Here is an example CMake configuration, you can adapt it according to your needs:</p>
+<div class="fragment"><div class="line"># Minimum CMake version required, we&#39;ll just use the latest version.</div>
+<div class="line">cmake_minimum_required(VERSION 3.22)</div>
 <div class="line"># Project name, version and description</div>
 <div class="line">project(discord-bot VERSION 1.0 DESCRIPTION &quot;A discord bot&quot;)</div>
 <div class="line"> </div>
-<div class="line"># Add DPP as dependency</div>
-<div class="line">add_subdirectory(libs/DPP)</div>
-<div class="line"># You can also add any other libs you want to use</div>
+<div class="line">list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)</div>
 <div class="line"> </div>
 <div class="line"># Create an executable</div>
 <div class="line">add_executable(${PROJECT_NAME}</div>
 <div class="line">    src/main.cpp</div>
-<div class="line">    # your other files...</div>
 <div class="line">)</div>
 <div class="line"> </div>
-<div class="line"># Linking libraries</div>
-<div class="line">target_link_libraries(${PROJECT_NAME}</div>
-<div class="line">    dpp</div>
-<div class="line">    # Add any other libs you want to use here</div>
+<div class="line"># Find our pre-installed DPP package (using FindDPP.cmake).</div>
+<div class="line">find_package(DPP REQUIRED)</div>
+<div class="line"> </div>
+<div class="line"># Link the pre-installed DPP package.</div>
+<div class="line">target_link_libraries(${PROJECT_NAME} </div>
+<div class="line">    ${DPP_LIBRARIES}</div>
 <div class="line">)</div>
 <div class="line"> </div>
-<div class="line"># Specify includes</div>
+<div class="line"># Include the DPP directories.</div>
 <div class="line">target_include_directories(${PROJECT_NAME} PRIVATE</div>
-<div class="line">    libs/DPP/include</div>
-<div class="line">    # Remember to add the include directories of any other libraries too</div>
+<div class="line">    ${DPP_INCLUDE_DIR}</div>
 <div class="line">)</div>
 <div class="line"> </div>
 <div class="line"># Set C++ version</div>
@@ -148,13 +147,21 @@ cmake version 3.20.4
 <div class="line">    CXX_STANDARD 17</div>
 <div class="line">    CXX_STANDARD_REQUIRED ON</div>
 <div class="line">)</div>
-</div><!-- fragment --><p >Your project directory should look like this: </p><pre class="fragment">- your_project/
-    |-- libs/
-        |-- DPP
-    |-- src/
-        |-- main.cpp
-    |-- CMakeLists.txt
-</pre><p ><b>Have fun!</b> </p>
+</div><!-- fragment --><p >We'll also need to populate our <code>FindDPP.cmake</code> file, inside the <code>cmake</code> directory!</p>
+<p >Here's what you should use:</p>
+<div class="fragment"><div class="line">find_path(DPP_INCLUDE_DIR NAMES dpp/dpp.h HINTS ${DPP_ROOT_DIR})</div>
+<div class="line"> </div>
+<div class="line">find_library(DPP_LIBRARIES NAMES dpp &quot;libdpp.a&quot; HINTS ${DPP_ROOT_DIR})</div>
+<div class="line"> </div>
+<div class="line">include(FindPackageHandleStandardArgs)</div>
+<div class="line"> </div>
+<div class="line">find_package_handle_standard_args(DPP DEFAULT_MSG DPP_LIBRARIES DPP_INCLUDE_DIR)</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md135"></a>
+4. Build the bot.</h2>
+<p >Now that we have our all our cmake stuff setup and we've got our code in place, we can initalise CMake. You'll want to go inside the <code>build/</code> directory and do <code>cmake ..</code>.</p>
+<p >Once that's completed, you'll want to head back to your up-most folder (where all the folders are for your bot) and run <code>cmake --build build/ -j4</code> (replace -j4 with however many threads you want to use). This will start compiling your bot and creating the executable.</p>
+<p >After that has finished, you can head into <code>build/</code> and run your bot by doing <code>./discord-bot</code>! If everything went well, you should see your bot come online!</p>
+<p ><b>Have fun!</b> </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
