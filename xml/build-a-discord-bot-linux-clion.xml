@@ -2,73 +2,18 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="build-a-discord-bot-linux-clion" kind="page">
     <compoundname>build-a-discord-bot-linux-clion</compoundname>
-    <title>Building a discord bot in Linux using CLion</title>
+    <title>Building a Discord Bot using CLion (Linux)</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This tutorial teaches you how to create a <emphasis>working skeleton project you can build upon</emphasis>, using the JetBrains-IDE <bold><ulink url="https://www.jetbrains.com/clion/">CLion</ulink></bold>.</para>
-<para><simplesect kind="note"><para>This tutorial will use <bold>Ubuntu</bold>! You might use other Distros if you prefer, but keep in mind the setup process might be different!</para>
+<para><simplesect kind="warning"><para><bold>This tutorial assumes you are using Ubuntu</bold>. You might use other distros if you prefer, but keep in mind the setup process might be different! This tutorial also teaches you how to use DPP with CMake, using the JetBrains IDE <bold><ulink url="https://www.jetbrains.com/clion/">CLion</ulink></bold>. If you have not installed CLion, You can <ulink url="https://www.jetbrains.com/de-de/clion/download/">download CLion here</ulink>. If you do not have DPP installed, visit <ref refid="buildcmake" kindref="compound">this page</ref> on how to setup the project using a precompiled version of DPP. If you want to use source and haven&apos;t set that up, look towards <ref refid="buildlinux" kindref="compound">this page</ref> on how to do so. <bold>This tutorial will not teach you how to setup CMake and will assume you have already done so</bold>.</para>
 </simplesect>
-Make sure you have CLion installed and works fine (run a <emphasis>hello-world program</emphasis>). You can <ulink url="https://www.jetbrains.com/de-de/clion/download/">download CLion here</ulink>.</para>
-<sect2 id="build-a-discord-bot-linux-clion_1autotoc_md128">
-<title>Setup a project</title>
-<para>Create a new project. Select C++17 as the Language standard, or C++20 if you want something more recent.</para>
-<para>We&apos;ll use the following file structure as a <emphasis>skeleton project you can build upon</emphasis>: <verbatim>- your_project/
-    |-- libs/
-    |-- src/
-        |-- main.cpp
-    |-- CMakeLists.txt
-</verbatim></para>
-<para>Create the directories in your project and move the by CLion generated <emphasis>hello-world main.cpp</emphasis> in the <computeroutput>src/</computeroutput> directory.</para>
-<para>In the <computeroutput>libs/</computeroutput> directory, clone D++ with: <computeroutput>git clone <ulink url="https://github.com/brainboxdotcc/DPP.git">https://github.com/brainboxdotcc/DPP.git</ulink></computeroutput>. You can also clone <ulink url="https://github.com/gabime/spdlog">spdlog</ulink> into it if you need a logger.</para>
-<para>Your project directory should look like this:</para>
-<para><image type="html" name="build-clion-project-structure.png"></image>
 </para>
-<sect3 id="build-a-discord-bot-linux-clion_1autotoc_md129">
-<title>Configure CMake file</title>
-<para>Paste this CMake configuration in the <computeroutput>CMakeLists.txt</computeroutput> and adapt it according to your needs:</para>
-<para><programlisting filename=".cmake"><codeline><highlight class="normal">#<sp/>minimum<sp/>CMake<sp/>version<sp/>required</highlight></codeline>
-<codeline><highlight class="normal">cmake_minimum_required(VERSION<sp/>3.15)</highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Project<sp/>name,<sp/>version<sp/>and<sp/>description</highlight></codeline>
-<codeline><highlight class="normal">project(discord-bot<sp/>VERSION<sp/>1.0<sp/>DESCRIPTION<sp/>&quot;A<sp/>discord<sp/>bot&quot;)</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">#<sp/>Add<sp/>DPP<sp/>as<sp/>dependency</highlight></codeline>
-<codeline><highlight class="normal">add_subdirectory(libs/DPP)</highlight></codeline>
-<codeline><highlight class="normal">add_subdirectory(libs/spdlog)<sp/>#<sp/>if<sp/>you<sp/>need<sp/>a<sp/>logger.<sp/>Don&apos;t<sp/>forget<sp/>to<sp/>clone<sp/>sources</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>in<sp/>the<sp/>`libs/`<sp/>directory</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">#<sp/>Create<sp/>an<sp/>executable</highlight></codeline>
-<codeline><highlight class="normal">add_executable(${PROJECT_NAME}</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>src/main.cpp</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>your<sp/>others<sp/>files...</highlight></codeline>
-<codeline><highlight class="normal">)</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">#<sp/>Linking<sp/>libraries</highlight></codeline>
-<codeline><highlight class="normal">target_link_libraries(${PROJECT_NAME}</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dpp</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>spdlog<sp/>#<sp/>Like<sp/>before,<sp/>if<sp/>you<sp/>need<sp/>spdlog</highlight></codeline>
-<codeline><highlight class="normal">)</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">#<sp/>Specify<sp/>includes</highlight></codeline>
-<codeline><highlight class="normal">target_include_directories(${PROJECT_NAME}<sp/>PRIVATE</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>libs/DPP/include</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>libs/spdlog/include<sp/>#<sp/>Like<sp/>before,<sp/>if<sp/>you<sp/>need<sp/>spdlog</highlight></codeline>
-<codeline><highlight class="normal">)</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">#<sp/>Set<sp/>C++<sp/>version</highlight></codeline>
-<codeline><highlight class="normal">set_target_properties(${PROJECT_NAME}<sp/>PROPERTIES</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD<sp/>17<sp/>#<sp/>or<sp/>20<sp/>if<sp/>you<sp/>want<sp/>something<sp/>more<sp/>recent</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD_REQUIRED<sp/>ON</highlight></codeline>
-<codeline><highlight class="normal">)</highlight></codeline>
-</programlisting></para>
-<para>Then open the &quot;File&quot; menu and click on &quot;Reload CMake Project&quot; to reload the CMake configuration.</para>
-<para><image type="html" name="build-clion-reload-cmake-project.png"></image>
-</para>
-</sect3>
-<sect3 id="build-a-discord-bot-linux-clion_1autotoc_md130">
+<sect3 id="build-a-discord-bot-linux-clion_1autotoc_md128">
 <title>Add an example program</title>
-<para>The next step is to write the bot. Copy and paste the following <ref refid="firstbot" kindref="compound">example program</ref> in the <computeroutput>main.cpp</computeroutput> and set your bot token (see <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref>):</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para>Open up CLion and open the folder for your bot. You may notice that CLion will start doing the whole CMake process and it will create a folder called <computeroutput>cmake-build-debug</computeroutput>, this is normal so don&apos;t be alarmed! It is just CLion registering all the CMake stuff so it can build and give you auto-suggestions.</para>
+<para>Now, you can open your <computeroutput>main.cpp</computeroutput> file. If you have code there, then you&apos;re one step ahead! If not, copy and paste the following <ref refid="firstbot" kindref="compound">example program</ref> in the <computeroutput>main.cpp</computeroutput> and set your bot token (see <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref>). Here&apos;s how your <computeroutput>main.cpp</computeroutput> file should look:</para>
+<para><programlisting filename="firstbot.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><sp/><sp/><sp/>BOT_TOKEN<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -94,17 +39,10 @@ Make sure you have CLion installed and works fine (run a <emphasis>hello-world p
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
-<para>Hit the green &quot;Run&quot; button in the top-right to run the bot.</para>
+<para>Now, you can go ahead and hit the green &quot;Run&quot; button in the top-right to run the bot.</para>
 <para><bold>Congratulations, you&apos;ve successfully set up a bot!</bold></para>
+<para>If you&apos;re stuck, come find us on the <ulink url="https://discord.gg/dpp">official discord server</ulink>! Ask away! We don&apos;t bite! </para>
 </sect3>
-</sect2>
-<sect2 id="build-a-discord-bot-linux-clion_1autotoc_md131">
-<title>Troubleshooting</title>
-<para><itemizedlist>
-<listitem><para>Stuck? You can find us on the <ulink url="https://discord.gg/dpp">official discord server</ulink> - ask away! We don&apos;t bite! </para>
-</listitem></itemizedlist>
-</para>
-</sect2>
     </detaileddescription>
     <location file="docpages/make_a_bot/clion.md"/>
   </compounddef>
