@@ -237,7 +237,7 @@ var NAVTREEINDEX18 =
 "classdpp_1_1when__any_1_1result.html#aed1762a4eb6128fba265982a4bded407":[9,0,0,227,1,9],
 "classes.html":[11,1],
 "clusters-shards-guilds.html":[6,0],
-"coding-standards.html":[6,2],
+"coding-standards.html":[6,3],
 "collecting-reactions.html":[5,4,3],
 "commandhandler.html":[5,1,9],
 "components.html":[5,1,3],
