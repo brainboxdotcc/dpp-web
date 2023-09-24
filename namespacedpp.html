@@ -2151,10 +2151,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a37230f39cac8fb1e6a978570be65b5be"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a37230f39cac8fb1e6a978570be65b5be">from_string</a> (const std::string &amp;s)</td></tr>
 <tr class="memdesc:a37230f39cac8fb1e6a978570be65b5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialised conversion of int from string.  <a href="namespacedpp.html#a37230f39cac8fb1e6a978570be65b5be">More...</a><br /></td></tr>
 <tr class="separator:a37230f39cac8fb1e6a978570be65b5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ecb05a32cc064043248ce28a9643b7c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2ecb05a32cc064043248ce28a9643b7c"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2ecb05a32cc064043248ce28a9643b7c">to_hex</a> (T i)</td></tr>
-<tr class="memdesc:a2ecb05a32cc064043248ce28a9643b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a numeric value to hex.  <a href="namespacedpp.html#a2ecb05a32cc064043248ce28a9643b7c">More...</a><br /></td></tr>
-<tr class="separator:a2ecb05a32cc064043248ce28a9643b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c36c34216e24fa7c008164b669e5bd6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3c36c34216e24fa7c008164b669e5bd6"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">to_hex</a> (T i, bool <a class="el" href="namespacedpp.html#a239ea76cdedff39d6bc8104dadb77ec4">leading_zeroes</a>=true)</td></tr>
+<tr class="memdesc:a3c36c34216e24fa7c008164b669e5bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a numeric value to hex.  <a href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">More...</a><br /></td></tr>
+<tr class="separator:a3c36c34216e24fa7c008164b669e5bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239ea76cdedff39d6bc8104dadb77ec4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a239ea76cdedff39d6bc8104dadb77ec4"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a239ea76cdedff39d6bc8104dadb77ec4">leading_zeroes</a> (T i, size_t width)</td></tr>
 <tr class="memdesc:a239ea76cdedff39d6bc8104dadb77ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a numeric type as a string with leading zeroes.  <a href="namespacedpp.html#a239ea76cdedff39d6bc8104dadb77ec4">More...</a><br /></td></tr>
@@ -8453,8 +8453,8 @@ template&lt;typename T , class F , class... Ts&gt; </div>
 
 </div>
 </div>
-<a id="a2ecb05a32cc064043248ce28a9643b7c" name="a2ecb05a32cc064043248ce28a9643b7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ecb05a32cc064043248ce28a9643b7c">&#9670;&nbsp;</a></span>to_hex()</h2>
+<a id="a3c36c34216e24fa7c008164b669e5bd6" name="a3c36c34216e24fa7c008164b669e5bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c36c34216e24fa7c008164b669e5bd6">&#9670;&nbsp;</a></span>to_hex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8465,8 +8465,18 @@ template&lt;typename T &gt; </div>
           <td class="memname">std::string dpp::to_hex </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>leading_zeroes</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -8481,6 +8491,7 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>numeric value </td></tr>
+    <tr><td class="paramname">leading_zeroes</td><td>set to false if you don't want the leading zeroes in the output </td></tr>
   </table>
   </dd>
 </dl>
