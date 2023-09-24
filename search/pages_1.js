@@ -8,6 +8,7 @@ var searchData=
   ['building_20d_2b_2b_20from_20source_5',['Building D++ From Source',['../install-from-source.html',1,'installing']]],
   ['building_20on_20freebsd_6',['Building on FreeBSD',['../buildfreebsd.html',1,'install-from-source']]],
   ['building_20on_20linux_7',['Building on Linux',['../buildlinux.html',1,'install-from-source']]],
-  ['building_20on_20osx_8',['Building on OSX',['../buildosx.html',1,'install-from-source']]],
-  ['building_20on_20windows_9',['Building on Windows',['../buildwindows.html',1,'install-from-source']]]
+  ['building_20on_20openbsd_8',['Building on OpenBSD',['../buildopenbsd.html',1,'install-from-source']]],
+  ['building_20on_20osx_9',['Building on OSX',['../buildosx.html',1,'install-from-source']]],
+  ['building_20on_20windows_10',['Building on Windows',['../buildwindows.html',1,'install-from-source']]]
 ];

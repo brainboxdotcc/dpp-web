@@ -101,15 +101,15 @@ $(document).ready(function(){initNavTree('buildmeson.html',''); initResizable();
   <div class="headertitle"><div class="title">Build a Discord Bot using Meson </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md133"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md139"></a>
 1. Toolchain</h2>
 <p >Before compiling, you will need to install <code>meson</code> on your system. To be sure that <code>meson</code> is installed, you can type the following command: </p><pre class="fragment">$ meson --version
 0.63.2
-</pre> <h2><a class="anchor" id="autotoc_md134"></a>
+</pre> <h2><a class="anchor" id="autotoc_md140"></a>
 2. Create a Meson project</h2>
 <p >In an empty directory. </p><pre class="fragment">- your project/
 </pre><p> run the command </p><pre class="fragment">$ meson init -l cpp
-</pre> <h2><a class="anchor" id="autotoc_md135"></a>
+</pre> <h2><a class="anchor" id="autotoc_md141"></a>
 3. Configuring your Meson project</h2>
 <p >add the following line after the <code>project()</code> line in your <code>meson.build</code> file. </p><pre class="fragment">dpp = dependency('dpp')
 </pre><p> add the following line in the executable section of your <code>meson.build</code> file. </p><pre class="fragment">dependencies: [dpp]
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('buildmeson.html',''); initResizable();
 <div class="line"> </div>
 <div class="line">test(&#39;basic&#39;, exe)</div>
 </div><!-- fragment --><p >Meson automatically generates a cpp for your project. And a test suite.</p>
-<h2><a class="anchor" id="autotoc_md136"></a>
+<h2><a class="anchor" id="autotoc_md142"></a>
 4. Building</h2>
 <p >To build a meson project run </p><pre class="fragment">$ meson setup builddir
 $ meson compile -C builddir

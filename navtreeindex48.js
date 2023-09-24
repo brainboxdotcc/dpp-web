@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"namespacemembers_vars_b.html":[9,1,2,2],
 "namespacemembers_vars_c.html":[9,1,2,3],
 "namespacemembers_vars_d.html":[9,1,2,4],
 "namespacemembers_vars_e.html":[9,1,2,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "structdpp_1_1autocomplete__t.html#a914fd9aeb7c024b64ea14ba242bab7b3":[9,0,0,25,5],
 "structdpp_1_1autocomplete__t.html#a914fd9aeb7c024b64ea14ba242bab7b3":[11,0,0,22,5],
 "structdpp_1_1autocomplete__t.html#a946783aee86efa1f18c4d7ceb0e07313":[9,0,0,25,25],
-"structdpp_1_1autocomplete__t.html#a946783aee86efa1f18c4d7ceb0e07313":[11,0,0,22,25],
-"structdpp_1_1autocomplete__t.html#a9a1be45450a5bd7699b6f5799850721c":[11,0,0,22,29]
+"structdpp_1_1autocomplete__t.html#a946783aee86efa1f18c4d7ceb0e07313":[11,0,0,22,25]
 };
