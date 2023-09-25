@@ -10,6 +10,7 @@
     <includes local="no">iostream</includes>
     <includes local="no">charconv</includes>
     <includedby refid="dpp_8h" local="no">dpp.h</includedby>
+    <includedby refid="httpsclient_8h" local="no">httpsclient.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>stringops.h</label>
@@ -55,10 +56,17 @@
       <node id="2">
         <label>dpp.h</label>
       </node>
+      <node id="3">
+        <label>httpsclient.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>stringops.h</label>
         <link refid="stringops_8h"/>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

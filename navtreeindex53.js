@@ -1,5 +1,7 @@
 var NAVTREEINDEX53 =
 {
+"structdpp_1_1forum__tag.html#aaae075e2919ee153d9c1ed34c41b8a33":[11,0,0,84,7],
+"structdpp_1_1forum__tag.html#aaae075e2919ee153d9c1ed34c41b8a33":[9,0,0,87,7],
 "structdpp_1_1gateway.html":[11,0,0,85],
 "structdpp_1_1gateway.html":[9,0,0,88],
 "structdpp_1_1gateway.html#a34dcabe707a6ba554176fb80124962e9":[11,0,0,85,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX53 =
 "structdpp_1_1guild__role__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[11,0,0,102,2],
 "structdpp_1_1guild__role__delete__t.html#aca2880114f69b7ba62eb5137824c1432":[9,0,0,105,2],
 "structdpp_1_1guild__role__delete__t.html#ad935f5cb6e5fd57a2e92564679dd74b9":[11,0,0,102,4],
-"structdpp_1_1guild__role__delete__t.html#ad935f5cb6e5fd57a2e92564679dd74b9":[9,0,0,105,4],
-"structdpp_1_1guild__role__update__t.html":[9,0,0,106],
-"structdpp_1_1guild__role__update__t.html":[11,0,0,103]
+"structdpp_1_1guild__role__delete__t.html#ad935f5cb6e5fd57a2e92564679dd74b9":[9,0,0,105,4]
 };

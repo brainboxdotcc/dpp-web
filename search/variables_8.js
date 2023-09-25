@@ -192,10 +192,11 @@ var searchData=
   ['house_5fbuildings_189',['house_buildings',['../namespacedpp_1_1unicode__emoji.html#ae5d3d7e41495e9abf9730246cb62e2a0',1,'dpp::unicode_emoji']]],
   ['house_5fwith_5fgarden_190',['house_with_garden',['../namespacedpp_1_1unicode__emoji.html#a64f60d2e21059cf0c13b7ae203d7b4b1',1,'dpp::unicode_emoji']]],
   ['http_5finfo_191',['http_info',['../structdpp_1_1confirmation__callback__t.html#a97669d491cc60a5e76a248bae9ad7633',1,'dpp::confirmation_callback_t']]],
-  ['hugging_192',['hugging',['../namespacedpp_1_1unicode__emoji.html#ad5af1983b21d0695a5c6ee18c75ea278',1,'dpp::unicode_emoji']]],
-  ['hugging_5fface_193',['hugging_face',['../namespacedpp_1_1unicode__emoji.html#a5267d7ac9b08839f26c88013283ed99d',1,'dpp::unicode_emoji']]],
-  ['hummingbird_5fgreen_194',['hummingbird_green',['../namespacedpp_1_1colors.html#a6987468c0cbc12a6df83f76c603ea7ec',1,'dpp::colors']]],
-  ['hunter_5fgreen_195',['hunter_green',['../namespacedpp_1_1colors.html#a759eb5930125c0e38e33064bd6c1192b',1,'dpp::colors']]],
-  ['hushed_196',['hushed',['../namespacedpp_1_1unicode__emoji.html#a54c4226f168173fe595f037ca8478895',1,'dpp::unicode_emoji']]],
-  ['hut_197',['hut',['../namespacedpp_1_1unicode__emoji.html#a718f733b89f12c7cb716fbe00f5f60a7',1,'dpp::unicode_emoji']]]
+  ['http_5fversion_192',['http_version',['../namespacedpp.html#a03c3e59edb221a7d235cc9fda57a7d34',1,'dpp']]],
+  ['hugging_193',['hugging',['../namespacedpp_1_1unicode__emoji.html#ad5af1983b21d0695a5c6ee18c75ea278',1,'dpp::unicode_emoji']]],
+  ['hugging_5fface_194',['hugging_face',['../namespacedpp_1_1unicode__emoji.html#a5267d7ac9b08839f26c88013283ed99d',1,'dpp::unicode_emoji']]],
+  ['hummingbird_5fgreen_195',['hummingbird_green',['../namespacedpp_1_1colors.html#a6987468c0cbc12a6df83f76c603ea7ec',1,'dpp::colors']]],
+  ['hunter_5fgreen_196',['hunter_green',['../namespacedpp_1_1colors.html#a759eb5930125c0e38e33064bd6c1192b',1,'dpp::colors']]],
+  ['hushed_197',['hushed',['../namespacedpp_1_1unicode__emoji.html#a54c4226f168173fe595f037ca8478895',1,'dpp::unicode_emoji']]],
+  ['hut_198',['hut',['../namespacedpp_1_1unicode__emoji.html#a718f733b89f12c7cb716fbe00f5f60a7',1,'dpp::unicode_emoji']]]
 ];

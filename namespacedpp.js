@@ -7266,7 +7266,9 @@ var namespacedpp =
     [ "when_any", "namespacedpp.html#adec042312c305da2b49380300bde130b", null ],
     [ "deletion_mutex", "namespacedpp.html#ae611302ba7fc914d4732b65541132651", null ],
     [ "deletion_queue", "namespacedpp.html#a5609082c12782be33f82b955a5d07b4f", null ],
+    [ "DISCORD_HOST", "namespacedpp.html#a243e725d7b20f89395b3cce1215421ea", null ],
     [ "dpp_vc", "namespacedpp.html#aefb3da6503cb501b9d2a0376663dbc6e", null ],
     [ "FORMAT_VERSION", "namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29", null ],
+    [ "http_version", "namespacedpp.html#a03c3e59edb221a7d235cc9fda57a7d34", null ],
     [ "send_audio_raw_max_length", "namespacedpp.html#af9ada17b1b7470c57690031929bb7cff", null ]
 ];
