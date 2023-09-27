@@ -6382,7 +6382,6 @@ var namespacedpp =
     [ "thread_update_t", "structdpp_1_1thread__update__t.html", "structdpp_1_1thread__update__t" ],
     [ "timed_listener", "classdpp_1_1timed__listener.html", "classdpp_1_1timed__listener" ],
     [ "timer_t", "structdpp_1_1timer__t.html", "structdpp_1_1timer__t" ],
-    [ "type_punner", "uniondpp_1_1type__punner.html", "uniondpp_1_1type__punner" ],
     [ "typing_start_t", "structdpp_1_1typing__start__t.html", "structdpp_1_1typing__start__t" ],
     [ "user", "classdpp_1_1user.html", "classdpp_1_1user" ],
     [ "user_context_menu_t", "structdpp_1_1user__context__menu__t.html", "structdpp_1_1user__context__menu__t" ],

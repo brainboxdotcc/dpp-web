@@ -249,5 +249,5 @@ var NAVTREEINDEX47 =
 "namespacemembers_type.html":[9,1,3],
 "namespacemembers_u.html":[9,1,0,21],
 "namespacemembers_v.html":[9,1,0,22],
-"namespacemembers_vars.html":[9,1,2]
+"namespacemembers_vars.html":[9,1,2,0]
 };

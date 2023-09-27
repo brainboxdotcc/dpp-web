@@ -438,7 +438,6 @@ var hierarchy =
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::timed_listener< attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
     [ "dpp::timer_t", "structdpp_1_1timer__t.html", null ],
-    [ "dpp::type_punner", "uniondpp_1_1type__punner.html", null ],
     [ "dpp::utility::uptime", "structdpp_1_1utility_1_1uptime.html", null ],
     [ "dpp::version_checker", "structdpp_1_1version__checker.html", null ],
     [ "dpp::voice_out_packet", "structdpp_1_1voice__out__packet.html", null ],

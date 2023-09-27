@@ -22,7 +22,6 @@ var searchData=
   ['thread_5fupdate_5ft_19',['thread_update_t',['../structdpp_1_1thread__update__t.html',1,'dpp']]],
   ['timed_5flistener_20',['timed_listener',['../classdpp_1_1timed__listener.html',1,'dpp']]],
   ['timer_5ft_21',['timer_t',['../structdpp_1_1timer__t.html',1,'dpp']]],
-  ['type_5fpunner_22',['type_punner',['../uniondpp_1_1type__punner.html',1,'dpp']]],
-  ['typing_5fstart_23',['typing_start',['../classdpp_1_1events_1_1typing__start.html',1,'dpp::events']]],
-  ['typing_5fstart_5ft_24',['typing_start_t',['../structdpp_1_1typing__start__t.html',1,'dpp']]]
+  ['typing_5fstart_22',['typing_start',['../classdpp_1_1events_1_1typing__start.html',1,'dpp::events']]],
+  ['typing_5fstart_5ft_23',['typing_start_t',['../structdpp_1_1typing__start__t.html',1,'dpp']]]
 ];
