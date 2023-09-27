@@ -798,7 +798,9 @@
 <para>Called when a new guild is created. D++ will request members for the guild for its cache using guild_members_chunk. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-create">https://discord.com/developers/docs/topics/gateway-events#guild-create</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer in this event will become invalid after the event ends. You should make a copy of any data you wish to preserve beyond this.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-create">https://discord.com/developers/docs/topics/gateway-events#guild-create</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__create__t" kindref="compound">guild_create_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -806,7 +808,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="703" column="16" bodyfile="include/dpp/cluster.h" bodystart="703" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="706" column="16" bodyfile="include/dpp/cluster.h" bodystart="706" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a486fb3aa72ebe2784c514af965681516" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1channel__create__t" kindref="compound">channel_create_t</ref> &gt;</type>
@@ -817,7 +819,9 @@
 <para>Called when a new channel is created on a guild. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#channel-create">https://discord.com/developers/docs/topics/gateway-events#channel-create</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled channel caching, the pointer in this event will become invalid after the event ends. You should make a copy of any data you wish to preserve beyond this.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#channel-create">https://discord.com/developers/docs/topics/gateway-events#channel-create</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1channel__create__t" kindref="compound">channel_create_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -825,7 +829,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="713" column="16" bodyfile="include/dpp/cluster.h" bodystart="713" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="719" column="16" bodyfile="include/dpp/cluster.h" bodystart="719" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1af66effcc6ea9bbb1c1f489a98f332cb0" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1message__reaction__remove__emoji__t" kindref="compound">message_reaction_remove_emoji_t</ref> &gt;</type>
@@ -844,7 +848,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="723" column="16" bodyfile="include/dpp/cluster.h" bodystart="723" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="729" column="16" bodyfile="include/dpp/cluster.h" bodystart="729" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a9f1c5e2c3426315e5460bdb93d188ef8" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1message__delete__bulk__t" kindref="compound">message_delete_bulk_t</ref> &gt;</type>
@@ -863,7 +867,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="733" column="16" bodyfile="include/dpp/cluster.h" bodystart="733" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="739" column="16" bodyfile="include/dpp/cluster.h" bodystart="739" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a2bbda872563869ac5f7635ac92455139" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__role__update__t" kindref="compound">guild_role_update_t</ref> &gt;</type>
@@ -874,7 +878,9 @@
 <para>Called when an existing role is updated on a guild. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-role-update">https://discord.com/developers/docs/topics/gateway-events#guild-role-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-role-update">https://discord.com/developers/docs/topics/gateway-events#guild-role-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__role__update__t" kindref="compound">guild_role_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -882,7 +888,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="743" column="16" bodyfile="include/dpp/cluster.h" bodystart="743" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="751" column="16" bodyfile="include/dpp/cluster.h" bodystart="751" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a09f109e81abcecc3d2d5b4b82d025167" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__role__delete__t" kindref="compound">guild_role_delete_t</ref> &gt;</type>
@@ -893,7 +899,9 @@
 <para>Called when a role is deleted in a guild. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-role-delete">https://discord.com/developers/docs/topics/gateway-events#guild-role-delete</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-role-delete">https://discord.com/developers/docs/topics/gateway-events#guild-role-delete</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__role__delete__t" kindref="compound">guild_role_delete_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -901,7 +909,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="753" column="16" bodyfile="include/dpp/cluster.h" bodystart="753" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="763" column="16" bodyfile="include/dpp/cluster.h" bodystart="763" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a730da835772cd7b6e638cd359e86209d" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1channel__pins__update__t" kindref="compound">channel_pins_update_t</ref> &gt;</type>
@@ -920,7 +928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="765" column="16" bodyfile="include/dpp/cluster.h" bodystart="765" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="775" column="16" bodyfile="include/dpp/cluster.h" bodystart="775" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1ae305ae4ce622f6120692aa07d5ae9da9" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1message__reaction__remove__all__t" kindref="compound">message_reaction_remove_all_t</ref> &gt;</type>
@@ -939,7 +947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="775" column="16" bodyfile="include/dpp/cluster.h" bodystart="775" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="785" column="16" bodyfile="include/dpp/cluster.h" bodystart="785" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a1b1388af7672f9eb4ad12de0419204fd" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1voice__server__update__t" kindref="compound">voice_server_update_t</ref> &gt;</type>
@@ -950,13 +958,15 @@
 <para>Called when we are told which voice server we can use. This will be sent either when we establish a new voice channel connection, or as discord rearrange their infrastructure. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1voice__server__update__t" kindref="compound">voice_server_update_t</ref>&amp;, and returns void. </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1voice__server__update__t" kindref="compound">voice_server_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="786" column="16" bodyfile="include/dpp/cluster.h" bodystart="786" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="798" column="16" bodyfile="include/dpp/cluster.h" bodystart="798" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1ac488322b8dddd93bdedbd9a402f9ed48" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__emojis__update__t" kindref="compound">guild_emojis_update_t</ref> &gt;</type>
@@ -967,7 +977,9 @@
 <para>Called when new emojis are added to a guild. The complete set of emojis is sent every time. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-emojis-update">https://discord.com/developers/docs/topics/gateway-events#guild-emojis-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-emojis-update">https://discord.com/developers/docs/topics/gateway-events#guild-emojis-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__emojis__update__t" kindref="compound">guild_emojis_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -975,7 +987,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="797" column="16" bodyfile="include/dpp/cluster.h" bodystart="797" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="811" column="16" bodyfile="include/dpp/cluster.h" bodystart="811" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a30c43c83869e2323a22ce6cce800d86b" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__stickers__update__t" kindref="compound">guild_stickers_update_t</ref> &gt;</type>
@@ -986,7 +998,9 @@
 <para>Called when new stickers are added to a guild. The complete set of stickers is sent every time. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-stickers-update">https://discord.com/developers/docs/topics/gateway-events#guild-stickers-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-stickers-update">https://discord.com/developers/docs/topics/gateway-events#guild-stickers-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__stickers__update__t" kindref="compound">guild_stickers_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -994,7 +1008,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="808" column="16" bodyfile="include/dpp/cluster.h" bodystart="808" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="824" column="16" bodyfile="include/dpp/cluster.h" bodystart="824" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a8d818aab0b0355256b5ade9fb221cade" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1presence__update__t" kindref="compound">presence_update_t</ref> &gt;</type>
@@ -1013,7 +1027,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="822" column="16" bodyfile="include/dpp/cluster.h" bodystart="822" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="838" column="16" bodyfile="include/dpp/cluster.h" bodystart="838" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a45a46efdbb7a7b952bb113f8400ea110" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1webhooks__update__t" kindref="compound">webhooks_update_t</ref> &gt;</type>
@@ -1032,7 +1046,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="832" column="16" bodyfile="include/dpp/cluster.h" bodystart="832" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="848" column="16" bodyfile="include/dpp/cluster.h" bodystart="848" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a9990d03329fdf86d06d3c02dd7811abd" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1automod__rule__create__t" kindref="compound">automod_rule_create_t</ref> &gt;</type>
@@ -1051,7 +1065,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="841" column="16" bodyfile="include/dpp/cluster.h" bodystart="841" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="857" column="16" bodyfile="include/dpp/cluster.h" bodystart="857" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a341edb94f9eab763c6375f94a4fd22f7" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1automod__rule__update__t" kindref="compound">automod_rule_update_t</ref> &gt;</type>
@@ -1070,7 +1084,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="851" column="16" bodyfile="include/dpp/cluster.h" bodystart="851" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="867" column="16" bodyfile="include/dpp/cluster.h" bodystart="867" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a9fb807aef20371e52faee77b90f613b7" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1automod__rule__delete__t" kindref="compound">automod_rule_delete_t</ref> &gt;</type>
@@ -1089,7 +1103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="860" column="16" bodyfile="include/dpp/cluster.h" bodystart="860" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="876" column="16" bodyfile="include/dpp/cluster.h" bodystart="876" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a7928124576bd703870f2e5ffd0ac54ca" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1automod__rule__execute__t" kindref="compound">automod_rule_execute_t</ref> &gt;</type>
@@ -1108,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="869" column="16" bodyfile="include/dpp/cluster.h" bodystart="869" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="885" column="16" bodyfile="include/dpp/cluster.h" bodystart="885" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a569b9b46ab3783060e766e3fec8ee988" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__member__add__t" kindref="compound">guild_member_add_t</ref> &gt;</type>
@@ -1119,7 +1133,9 @@
 <para>Called when a new member joins a guild. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-member-add">https://discord.com/developers/docs/topics/gateway-events#guild-member-add</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-member-add">https://discord.com/developers/docs/topics/gateway-events#guild-member-add</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__member__add__t" kindref="compound">guild_member_add_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1127,7 +1143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="878" column="16" bodyfile="include/dpp/cluster.h" bodystart="878" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="896" column="16" bodyfile="include/dpp/cluster.h" bodystart="896" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a94f440b6655ecbb126b336449cc5fedf" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1invite__delete__t" kindref="compound">invite_delete_t</ref> &gt;</type>
@@ -1146,7 +1162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="888" column="16" bodyfile="include/dpp/cluster.h" bodystart="888" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="906" column="16" bodyfile="include/dpp/cluster.h" bodystart="906" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1adc23584464efef5b50e2abdbe2624268" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__update__t" kindref="compound">guild_update_t</ref> &gt;</type>
@@ -1157,7 +1173,9 @@
 <para>Called when details of a guild are updated. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-update">https://discord.com/developers/docs/topics/gateway-events#guild-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer in this event will become invalid after the event ends. You should make a copy of any data you wish to preserve beyond this. If the guild cache is disabled, only changed elements in the updated guild object will be set. all other values will be empty or defaults.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-update">https://discord.com/developers/docs/topics/gateway-events#guild-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__update__t" kindref="compound">guild_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1165,7 +1183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="898" column="16" bodyfile="include/dpp/cluster.h" bodystart="898" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="920" column="16" bodyfile="include/dpp/cluster.h" bodystart="920" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a4b5b51f674af02f3267f9b5e2289384d" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__integrations__update__t" kindref="compound">guild_integrations_update_t</ref> &gt;</type>
@@ -1176,7 +1194,9 @@
 <para>Called when an integration is updated for a guild. This returns the complete list. An integration is a connection to a guild of a user&apos;s associated accounts, e.g. youtube or twitch, for automatic assignment of roles etc. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-integrations-update">https://discord.com/developers/docs/topics/gateway-events#guild-integrations-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-integrations-update">https://discord.com/developers/docs/topics/gateway-events#guild-integrations-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__integrations__update__t" kindref="compound">guild_integrations_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1184,7 +1204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="911" column="16" bodyfile="include/dpp/cluster.h" bodystart="911" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="935" column="16" bodyfile="include/dpp/cluster.h" bodystart="935" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1aec757095f2c6cde6289b54ca34aef590" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__member__update__t" kindref="compound">guild_member_update_t</ref> &gt;</type>
@@ -1195,7 +1215,9 @@
 <para>Called when details of a guild member (e.g. their roles or nickname) are updated. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-member-update">https://discord.com/developers/docs/topics/gateway-events#guild-member-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-member-update">https://discord.com/developers/docs/topics/gateway-events#guild-member-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__member__update__t" kindref="compound">guild_member_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1203,7 +1225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="921" column="16" bodyfile="include/dpp/cluster.h" bodystart="921" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="947" column="16" bodyfile="include/dpp/cluster.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a827a4da0154d6d94dc85da5f2e87f40c" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1invite__create__t" kindref="compound">invite_create_t</ref> &gt;</type>
@@ -1214,7 +1236,9 @@
 <para>Called when a new invite is created for a guild. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#invite-create">https://discord.com/developers/docs/topics/gateway-events#invite-create</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#invite-create">https://discord.com/developers/docs/topics/gateway-events#invite-create</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1invite__create__t" kindref="compound">invite_create_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1222,7 +1246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="931" column="16" bodyfile="include/dpp/cluster.h" bodystart="931" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="959" column="16" bodyfile="include/dpp/cluster.h" bodystart="959" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a9a5f587275c656d4f76b52161bba5ec9" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1message__update__t" kindref="compound">message_update_t</ref> &gt;</type>
@@ -1241,7 +1265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="941" column="16" bodyfile="include/dpp/cluster.h" bodystart="941" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="969" column="16" bodyfile="include/dpp/cluster.h" bodystart="969" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a832e978df105033f7d3ea8ca0d0573cb" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1user__update__t" kindref="compound">user_update_t</ref> &gt;</type>
@@ -1260,7 +1284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="953" column="16" bodyfile="include/dpp/cluster.h" bodystart="953" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="981" column="16" bodyfile="include/dpp/cluster.h" bodystart="981" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a1a632b3c2c8d3ff3a47372ffa770acf5" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1message__create__t" kindref="compound">message_create_t</ref> &gt;</type>
@@ -1279,7 +1303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="967" column="16" bodyfile="include/dpp/cluster.h" bodystart="967" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="995" column="16" bodyfile="include/dpp/cluster.h" bodystart="995" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1aadcbe6998c78bb1e88c76adc8b1cf0dd" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__audit__log__entry__create__t" kindref="compound">guild_audit_log_entry_create_t</ref> &gt;</type>
@@ -1298,7 +1322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="976" column="16" bodyfile="include/dpp/cluster.h" bodystart="976" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1004" column="16" bodyfile="include/dpp/cluster.h" bodystart="1004" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1adc62294deed1a73261ba43400f942380" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__ban__add__t" kindref="compound">guild_ban_add_t</ref> &gt;</type>
@@ -1309,7 +1333,9 @@
 <para>Called when a ban is added to a guild. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-ban-add">https://discord.com/developers/docs/topics/gateway-events#guild-ban-add</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-ban-add">https://discord.com/developers/docs/topics/gateway-events#guild-ban-add</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__ban__add__t" kindref="compound">guild_ban_add_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1317,7 +1343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="985" column="16" bodyfile="include/dpp/cluster.h" bodystart="985" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1015" column="16" bodyfile="include/dpp/cluster.h" bodystart="1015" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1ae5f02344b6d8d4cc56ff45ecc0a7602b" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__ban__remove__t" kindref="compound">guild_ban_remove_t</ref> &gt;</type>
@@ -1328,7 +1354,9 @@
 <para>Called when a ban is removed from a guild. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-ban-remove">https://discord.com/developers/docs/topics/gateway-events#guild-ban-remove</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-ban-remove">https://discord.com/developers/docs/topics/gateway-events#guild-ban-remove</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__ban__remove__t" kindref="compound">guild_ban_remove_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1336,7 +1364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="995" column="16" bodyfile="include/dpp/cluster.h" bodystart="995" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1027" column="16" bodyfile="include/dpp/cluster.h" bodystart="1027" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1ab6c7d069cb8dfc85a8709193df28c967" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1integration__create__t" kindref="compound">integration_create_t</ref> &gt;</type>
@@ -1347,7 +1375,9 @@
 <para>Called when a new integration is attached to a guild by a user. An integration is a connection to a guild of a user&apos;s associated accounts, e.g. youtube or twitch, for automatic assignment of roles etc. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#integration-create">https://discord.com/developers/docs/topics/gateway-events#integration-create</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#integration-create">https://discord.com/developers/docs/topics/gateway-events#integration-create</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1integration__create__t" kindref="compound">integration_create_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1355,7 +1385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1007" column="16" bodyfile="include/dpp/cluster.h" bodystart="1007" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1041" column="16" bodyfile="include/dpp/cluster.h" bodystart="1041" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1adfb0f58a46e4826be34a472af902df37" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1integration__update__t" kindref="compound">integration_update_t</ref> &gt;</type>
@@ -1366,7 +1396,9 @@
 <para>Called when an integration is updated by a user. This returns details of just the single integration that has changed. An integration is a connection to a guild of a user&apos;s associated accounts, e.g. youtube or twitch, for automatic assignment of roles etc. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#integration-update">https://discord.com/developers/docs/topics/gateway-events#integration-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#integration-update">https://discord.com/developers/docs/topics/gateway-events#integration-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1integration__update__t" kindref="compound">integration_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1374,7 +1406,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1020" column="16" bodyfile="include/dpp/cluster.h" bodystart="1020" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1056" column="16" bodyfile="include/dpp/cluster.h" bodystart="1056" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a01164d68b98b1d36f35dc7c4407a4a5e" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1integration__delete__t" kindref="compound">integration_delete_t</ref> &gt;</type>
@@ -1385,7 +1417,9 @@
 <para>Called when an integration is removed by a user. An integration is a connection to a guild of a user&apos;s associated accounts, e.g. youtube or twitch, for automatic assignment of roles etc. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#integration-delete">https://discord.com/developers/docs/topics/gateway-events#integration-delete</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#integration-delete">https://discord.com/developers/docs/topics/gateway-events#integration-delete</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1integration__delete__t" kindref="compound">integration_delete_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1393,7 +1427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1032" column="16" bodyfile="include/dpp/cluster.h" bodystart="1032" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1070" column="16" bodyfile="include/dpp/cluster.h" bodystart="1070" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1ae3f2d6cbe1aa08646e2a336cee5fc4d8" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1thread__create__t" kindref="compound">thread_create_t</ref> &gt;</type>
@@ -1404,7 +1438,9 @@
 <para>Called when a thread is created. Note that threads are not cached by D++, but a list of thread IDs is accessible in a guild object. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-create">https://discord.com/developers/docs/topics/gateway-events#thread-create</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-create">https://discord.com/developers/docs/topics/gateway-events#thread-create</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1thread__create__t" kindref="compound">thread_create_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1412,7 +1448,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1043" column="16" bodyfile="include/dpp/cluster.h" bodystart="1043" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1083" column="16" bodyfile="include/dpp/cluster.h" bodystart="1083" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1ab0dc630ee245e508e520376ee24dfd70" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1thread__update__t" kindref="compound">thread_update_t</ref> &gt;</type>
@@ -1423,7 +1459,9 @@
 <para>Called when a thread is updated. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-update">https://discord.com/developers/docs/topics/gateway-events#thread-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-update">https://discord.com/developers/docs/topics/gateway-events#thread-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1thread__update__t" kindref="compound">thread_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1431,7 +1469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1053" column="16" bodyfile="include/dpp/cluster.h" bodystart="1053" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1095" column="16" bodyfile="include/dpp/cluster.h" bodystart="1095" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1ac70d87fd2bb537704eb4b1fbfb8f4917" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1thread__delete__t" kindref="compound">thread_delete_t</ref> &gt;</type>
@@ -1442,7 +1480,9 @@
 <para>Called when a thread is deleted. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-delete">https://discord.com/developers/docs/topics/gateway-events#thread-delete</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-delete">https://discord.com/developers/docs/topics/gateway-events#thread-delete</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1thread__delete__t" kindref="compound">thread_delete_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1450,7 +1490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1063" column="16" bodyfile="include/dpp/cluster.h" bodystart="1063" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1107" column="16" bodyfile="include/dpp/cluster.h" bodystart="1107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a8b3ebda7442ce09c4e02f1afe3147d0f" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1thread__list__sync__t" kindref="compound">thread_list_sync_t</ref> &gt;</type>
@@ -1461,7 +1501,9 @@
 <para>Called when thread list is synced (upon gaining access to a channel). Note that threads are not cached by D++, but a list of thread IDs is accessible in a guild object. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-list-sync">https://discord.com/developers/docs/topics/gateway-events#thread-list-sync</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-list-sync">https://discord.com/developers/docs/topics/gateway-events#thread-list-sync</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1thread__list__sync__t" kindref="compound">thread_list_sync_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1469,7 +1511,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1074" column="16" bodyfile="include/dpp/cluster.h" bodystart="1074" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1120" column="16" bodyfile="include/dpp/cluster.h" bodystart="1120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a24a275e75860e6f8e5cd1eeda30d273b" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1thread__member__update__t" kindref="compound">thread_member_update_t</ref> &gt;</type>
@@ -1480,7 +1522,9 @@
 <para>Called when current user&apos;s thread member object is updated. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-member-update">https://discord.com/developers/docs/topics/gateway-events#thread-member-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-member-update">https://discord.com/developers/docs/topics/gateway-events#thread-member-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1thread__member__update__t" kindref="compound">thread_member_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1488,7 +1532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1084" column="16" bodyfile="include/dpp/cluster.h" bodystart="1084" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1132" column="16" bodyfile="include/dpp/cluster.h" bodystart="1132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1aff3be9ba4b94fecb564e9843f82a9486" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1thread__members__update__t" kindref="compound">thread_members_update_t</ref> &gt;</type>
@@ -1499,7 +1543,9 @@
 <para>Called when a thread&apos;s member list is updated (without GUILD_MEMBERS intent, is only called for current user) </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-members-update">https://discord.com/developers/docs/topics/gateway-events#thread-members-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#thread-members-update">https://discord.com/developers/docs/topics/gateway-events#thread-members-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1thread__members__update__t" kindref="compound">thread_members_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1507,7 +1553,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1094" column="16" bodyfile="include/dpp/cluster.h" bodystart="1094" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1144" column="16" bodyfile="include/dpp/cluster.h" bodystart="1144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a03466c9bfef2755e7b21080262c55a31" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__scheduled__event__create__t" kindref="compound">guild_scheduled_event_create_t</ref> &gt;</type>
@@ -1518,7 +1564,9 @@
 <para>Called when a new scheduled event is created. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-create">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-create</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-create">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-create</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__scheduled__event__create__t" kindref="compound">guild_scheduled_event_create_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1526,7 +1574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1104" column="16" bodyfile="include/dpp/cluster.h" bodystart="1104" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1156" column="16" bodyfile="include/dpp/cluster.h" bodystart="1156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a791e9056b3a582028acd2428ef927f54" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__scheduled__event__update__t" kindref="compound">guild_scheduled_event_update_t</ref> &gt;</type>
@@ -1537,7 +1585,9 @@
 <para>Called when a new scheduled event is updated. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-update">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-update">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__scheduled__event__update__t" kindref="compound">guild_scheduled_event_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1545,7 +1595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1114" column="16" bodyfile="include/dpp/cluster.h" bodystart="1114" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1168" column="16" bodyfile="include/dpp/cluster.h" bodystart="1168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a34d7f734fcd46ca75540f2415f87a120" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__scheduled__event__delete__t" kindref="compound">guild_scheduled_event_delete_t</ref> &gt;</type>
@@ -1556,7 +1606,9 @@
 <para>Called when a new scheduled event is deleted. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-delete">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-delete</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-delete">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-delete</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__scheduled__event__delete__t" kindref="compound">guild_scheduled_event_delete_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1564,7 +1616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1124" column="16" bodyfile="include/dpp/cluster.h" bodystart="1124" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1180" column="16" bodyfile="include/dpp/cluster.h" bodystart="1180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1ab55ea1d5f856ada2e80b024d8fc24385" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__scheduled__event__user__add__t" kindref="compound">guild_scheduled_event_user_add_t</ref> &gt;</type>
@@ -1575,7 +1627,9 @@
 <para>Called when a user is added to a scheduled event. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-add">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-add</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-add">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-add</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__scheduled__event__user__add__t" kindref="compound">guild_scheduled_event_user_add_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1583,7 +1637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1134" column="16" bodyfile="include/dpp/cluster.h" bodystart="1134" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1192" column="16" bodyfile="include/dpp/cluster.h" bodystart="1192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a44af186f16be598e2c00b33c820ae408" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1guild__scheduled__event__user__remove__t" kindref="compound">guild_scheduled_event_user_remove_t</ref> &gt;</type>
@@ -1591,10 +1645,12 @@
         <argsstring></argsstring>
         <name>on_guild_scheduled_event_user_remove</name>
         <briefdescription>
-<para>Called when a user is removed to a scheduled event. </para>
+<para>Called when a user is removed from a scheduled event. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-remove">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-remove</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-remove">https://discord.com/developers/docs/topics/gateway-events#guild-scheduled-event-user-remove</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1guild__scheduled__event__user__remove__t" kindref="compound">guild_scheduled_event_user_remove_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1602,7 +1658,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1144" column="16" bodyfile="include/dpp/cluster.h" bodystart="1144" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1204" column="16" bodyfile="include/dpp/cluster.h" bodystart="1204" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a4b702b26b73692e0aab0743f4ed07ef9" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1voice__buffer__send__t" kindref="compound">voice_buffer_send_t</ref> &gt;</type>
@@ -1613,13 +1669,15 @@
 <para>Called when packets are sent from the voice buffer. The voice buffer contains packets that are already encoded with Opus and encrypted with Sodium, and merged into packets by the repacketizer, which is done in the dpp::discord_voice_client::send_audio method. You should use the buffer size properties of <ref refid="structdpp_1_1voice__buffer__send__t" kindref="compound">dpp::voice_buffer_send_t</ref> to determine if you should fill the buffer with more content. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1voice__buffer__send__t" kindref="compound">voice_buffer_send_t</ref>&amp;, and returns void. </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1voice__buffer__send__t" kindref="compound">voice_buffer_send_t</ref>&amp;, and returns void. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1158" column="16" bodyfile="include/dpp/cluster.h" bodystart="1158" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1220" column="16" bodyfile="include/dpp/cluster.h" bodystart="1220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1aec3fff428675781140071d95f06f1694" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1voice__user__talking__t" kindref="compound">voice_user_talking_t</ref> &gt;</type>
@@ -1630,13 +1688,15 @@
 <para>Called when a user is talking on a voice channel. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1voice__user__talking__t" kindref="compound">voice_user_talking_t</ref>&amp;, and returns void. </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1voice__user__talking__t" kindref="compound">voice_user_talking_t</ref>&amp;, and returns void. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1167" column="16" bodyfile="include/dpp/cluster.h" bodystart="1167" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1231" column="16" bodyfile="include/dpp/cluster.h" bodystart="1231" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a8f2f865ac3492196a8167a319261ffb6" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1voice__ready__t" kindref="compound">voice_ready_t</ref> &gt;</type>
@@ -1647,13 +1707,15 @@
 <para>Called when a voice channel is connected and ready to send audio. Note that this is not directly attached to the READY event of the websocket, as there is further connection that needs to be done before audio is ready to send. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1voice__ready__t" kindref="compound">voice_ready_t</ref>&amp;, and returns void. </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1voice__ready__t" kindref="compound">voice_ready_t</ref>&amp;, and returns void. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1178" column="16" bodyfile="include/dpp/cluster.h" bodystart="1178" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1244" column="16" bodyfile="include/dpp/cluster.h" bodystart="1244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a67227dd1f0d393d8a43c8b481c1fbbbe" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1voice__receive__t" kindref="compound">voice_receive_t</ref> &gt;</type>
@@ -1672,7 +1734,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1191" column="16" bodyfile="include/dpp/cluster.h" bodystart="1191" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1257" column="16" bodyfile="include/dpp/cluster.h" bodystart="1257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1aece6405e1cde23b7dcf3a9043e477f91" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1voice__receive__t" kindref="compound">voice_receive_t</ref> &gt;</type>
@@ -1691,7 +1753,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1201" column="16" bodyfile="include/dpp/cluster.h" bodystart="1201" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1267" column="16" bodyfile="include/dpp/cluster.h" bodystart="1267" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1adaad9d9e5d575b9d68eea94f5fcf0245" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1voice__track__marker__t" kindref="compound">voice_track_marker_t</ref> &gt;</type>
@@ -1708,7 +1770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1213" column="16" bodyfile="include/dpp/cluster.h" bodystart="1213" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1279" column="16" bodyfile="include/dpp/cluster.h" bodystart="1279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a420f1cfb65bb234cc7f616b35420cad1" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1stage__instance__create__t" kindref="compound">stage_instance_create_t</ref> &gt;</type>
@@ -1719,7 +1781,9 @@
 <para>Called when a new stage instance is created on a stage channel. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#stage-instance-create">https://discord.com/developers/docs/topics/gateway-events#stage-instance-create</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#stage-instance-create">https://discord.com/developers/docs/topics/gateway-events#stage-instance-create</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1stage__instance__create__t" kindref="compound">stage_instance_create_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1727,7 +1791,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1223" column="16" bodyfile="include/dpp/cluster.h" bodystart="1223" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1291" column="16" bodyfile="include/dpp/cluster.h" bodystart="1291" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a446a90c6c006fb9da1e30af7f5d81a89" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1stage__instance__update__t" kindref="compound">stage_instance_update_t</ref> &gt;</type>
@@ -1738,7 +1802,9 @@
 <para>Called when a stage instance is updated. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#stage-instance-update">https://discord.com/developers/docs/topics/gateway-events#stage-instance-update</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#stage-instance-update">https://discord.com/developers/docs/topics/gateway-events#stage-instance-update</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1stage__instance__update__t" kindref="compound">stage_instance_update_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1746,7 +1812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1233" column="16" bodyfile="include/dpp/cluster.h" bodystart="1233" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1303" column="16" bodyfile="include/dpp/cluster.h" bodystart="1303" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1cluster_1a609fe17e552b68a35c3c61423c9f3b58" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; <ref refid="structdpp_1_1stage__instance__delete__t" kindref="compound">stage_instance_delete_t</ref> &gt;</type>
@@ -1757,7 +1823,9 @@
 <para>Called when an existing stage instance is deleted from a stage channel. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#stage-instance-delete">https://discord.com/developers/docs/topics/gateway-events#stage-instance-delete</ulink> </para>
+<para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/topics/gateway-events#stage-instance-delete">https://discord.com/developers/docs/topics/gateway-events#stage-instance-delete</ulink> </para>
 </simplesect>
 <simplesect kind="note"><para>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <computeroutput>const</computeroutput> reference of type <ref refid="structdpp_1_1stage__instance__delete__t" kindref="compound">stage_instance_delete_t</ref>&amp;, and returns void. </para>
 </simplesect>
@@ -1765,7 +1833,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1243" column="16" bodyfile="include/dpp/cluster.h" bodystart="1243" bodyend="-1"/>
+        <location file="include/dpp/cluster.h" line="1315" column="16" bodyfile="include/dpp/cluster.h" bodystart="1315" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1813,10 +1881,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1cluster_1aeff8657c528ce2d97f698054cb9ae493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1cluster_1a50b5bea83641d9542df5c0ec7fa5b43c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::cluster::cluster</definition>
-        <argsstring>(const std::string &amp;token, uint32_t intents=i_default_intents, uint32_t shards=0, uint32_t cluster_id=0, uint32_t maxclusters=1, bool compressed=true, cache_policy_t policy={ cp_aggressive, cp_aggressive, cp_aggressive }, uint32_t request_threads=12, uint32_t request_threads_raw=1)</argsstring>
+        <argsstring>(const std::string &amp;token, uint32_t intents=i_default_intents, uint32_t shards=0, uint32_t cluster_id=0, uint32_t maxclusters=1, bool compressed=true, cache_policy_t policy=cache_policy::cpol_default, uint32_t request_threads=12, uint32_t request_threads_raw=1)</argsstring>
         <name>cluster</name>
         <param>
           <type>const std::string &amp;</type>
@@ -1850,7 +1918,7 @@
         <param>
           <type><ref refid="structdpp_1_1cache__policy__t" kindref="compound">cache_policy_t</ref></type>
           <declname>policy</declname>
-          <defval>{ <ref refid="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e" kindref="member">cp_aggressive</ref>, <ref refid="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e" kindref="member">cp_aggressive</ref>, <ref refid="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e" kindref="member">cp_aggressive</ref> }</defval>
+          <defval><ref refid="namespacedpp_1_1cache__policy_1a851fe024df39295092817467cee45abe" kindref="member">cache_policy::cpol_default</ref></defval>
         </param>
         <param>
           <type>uint32_t</type>
@@ -1919,7 +1987,7 @@
 <parametername>policy</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Set the user caching policy for the cluster, either lazy (only cache users/members when they message the bot) or aggressive (request whole member lists on seeing new guilds too) </para>
+<para>Set the caching policy for the cluster, either lazy (only cache users/members when they message the bot) or aggressive (request whole member lists on seeing new guilds too) </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -2691,7 +2759,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1259" column="6"/>
+        <location file="include/dpp/cluster.h" line="1331" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3c540c26342e8238a76b8ac252f7f262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2818,7 +2886,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1274" column="6"/>
+        <location file="include/dpp/cluster.h" line="1346" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a156fe68358c421111e690f553c4e4f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2909,7 +2977,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1286" column="6"/>
+        <location file="include/dpp/cluster.h" line="1358" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a61e03d7c6a19f6a652d3a80b1a8157ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2976,7 +3044,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1298" column="6"/>
+        <location file="include/dpp/cluster.h" line="1370" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a983ac4283ea7ee5261475ec232a2c1bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3031,7 +3099,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1309" column="6"/>
+        <location file="include/dpp/cluster.h" line="1381" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7c1ab9427b77d2a251f8ce0dda1596d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3074,7 +3142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1319" column="6"/>
+        <location file="include/dpp/cluster.h" line="1391" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a90096bfbf3b4469eb51f35f74604e902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3128,7 +3196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1330" column="6"/>
+        <location file="include/dpp/cluster.h" line="1402" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae26c81bfce6baf63926232c81e89db9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3183,7 +3251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1342" column="6"/>
+        <location file="include/dpp/cluster.h" line="1414" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab0877de7e9587e932b4655681ca634db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3226,7 +3294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1352" column="6"/>
+        <location file="include/dpp/cluster.h" line="1424" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4038261414555dcebc8b78e96b121265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3281,7 +3349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1364" column="6"/>
+        <location file="include/dpp/cluster.h" line="1436" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af92385c3dff6752ecdac1126b67c2f4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3335,7 +3403,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1375" column="6"/>
+        <location file="include/dpp/cluster.h" line="1447" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae3edfe1883e2fe2cd1bcfeab28e5124e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3378,7 +3446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1386" column="6"/>
+        <location file="include/dpp/cluster.h" line="1458" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a11bccddf1068abb215bd6e69ba30b76b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3421,7 +3489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1396" column="6"/>
+        <location file="include/dpp/cluster.h" line="1468" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a398a2b72a5cc084333e3fb5ce1f83727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3464,7 +3532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1406" column="6"/>
+        <location file="include/dpp/cluster.h" line="1478" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aac1d1a95eac3a6c38370083abbba9d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3566,7 +3634,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1421" column="6"/>
+        <location file="include/dpp/cluster.h" line="1493" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6e4a1a241299bcd1b5f6bfd69ae1ead9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3623,7 +3691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1433" column="6"/>
+        <location file="include/dpp/cluster.h" line="1505" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a392bb1f732d92fe4b9d8eacdbf4d3ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3678,7 +3746,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1447" column="6"/>
+        <location file="include/dpp/cluster.h" line="1519" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6bbdec2006aa6a44a6448986a32f0dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3721,7 +3789,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1460" column="6"/>
+        <location file="include/dpp/cluster.h" line="1532" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a53e89466c1d02fd7f350bca69bf03d59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3764,7 +3832,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1470" column="6"/>
+        <location file="include/dpp/cluster.h" line="1542" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad33f299b64e188e935184a32ab8515f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3821,7 +3889,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1482" column="6"/>
+        <location file="include/dpp/cluster.h" line="1554" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1afbf6872567ddc76148f8537e5b53c192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3876,7 +3944,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1493" column="6"/>
+        <location file="include/dpp/cluster.h" line="1565" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af7c607ba6c25317d4cf86fea933259ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3933,7 +4001,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1505" column="6"/>
+        <location file="include/dpp/cluster.h" line="1577" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a69ebf194c8bb078ce6998080b552c9ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3988,7 +4056,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1516" column="6"/>
+        <location file="include/dpp/cluster.h" line="1588" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0dcccabdbf1b3fb41e29145f80aaecb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4048,7 +4116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1531" column="6"/>
+        <location file="include/dpp/cluster.h" line="1603" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6efaf2b6ce4557b5a7b039d89f956e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4091,7 +4159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1541" column="6"/>
+        <location file="include/dpp/cluster.h" line="1613" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a210e7585068339c47e71b8ff3d219958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4146,7 +4214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1552" column="6"/>
+        <location file="include/dpp/cluster.h" line="1624" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a01623d7535dc359905990e710ae3b5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4190,7 +4258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1563" column="6"/>
+        <location file="include/dpp/cluster.h" line="1635" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab7e992a10e120846d39a7d7d3c048ef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4232,7 +4300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1573" column="6"/>
+        <location file="include/dpp/cluster.h" line="1645" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8a8cadcdde42fcfa8d29c0c4fd0bec5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4262,7 +4330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1582" column="6"/>
+        <location file="include/dpp/cluster.h" line="1654" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa88bbdcc5005da82928497545e9455bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4319,7 +4387,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1594" column="6"/>
+        <location file="include/dpp/cluster.h" line="1666" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9d3b0f7c3dae4ecb1980cabe8f10ccd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4373,7 +4441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1605" column="6"/>
+        <location file="include/dpp/cluster.h" line="1677" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad471be0405745e32f130a2bfcd371c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4464,7 +4532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1621" column="6"/>
+        <location file="include/dpp/cluster.h" line="1693" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa6ae3dc32ebc2dd14264962710d35af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4507,7 +4575,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1631" column="6"/>
+        <location file="include/dpp/cluster.h" line="1703" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab67f05b1b4b4bd3ea97a6bafc3b7151d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4562,7 +4630,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1642" column="6"/>
+        <location file="include/dpp/cluster.h" line="1714" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a173ff389feb4f48ac67a8c037081b2d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4605,7 +4673,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1652" column="6"/>
+        <location file="include/dpp/cluster.h" line="1724" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adbee89fb3c2967fe5df3deee7876199c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4660,7 +4728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1663" column="6"/>
+        <location file="include/dpp/cluster.h" line="1735" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aee40a0e598714c898630c65119003d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4715,7 +4783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1674" column="6"/>
+        <location file="include/dpp/cluster.h" line="1746" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae30a16651849e78cee9030ceb07f9f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4782,7 +4850,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1686" column="6"/>
+        <location file="include/dpp/cluster.h" line="1758" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab05fea3d6c298d5f2371704084383f8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4872,7 +4940,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1700" column="6"/>
+        <location file="include/dpp/cluster.h" line="1772" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8bab4c3df83ddf8a7c81504a2107afe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4915,7 +4983,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1710" column="6"/>
+        <location file="include/dpp/cluster.h" line="1782" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9879e447c31abfd6672b31e752b159ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4970,7 +5038,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1721" column="6"/>
+        <location file="include/dpp/cluster.h" line="1793" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a189db8e638496e15542de95d747b1cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5037,7 +5105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1733" column="6"/>
+        <location file="include/dpp/cluster.h" line="1805" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8883a23158a30995acd4f95a955ebd07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5104,7 +5172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1745" column="6"/>
+        <location file="include/dpp/cluster.h" line="1817" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4dba919144ae71cc32653ec19283c935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5183,7 +5251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1758" column="6"/>
+        <location file="include/dpp/cluster.h" line="1830" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a06083a6cacaf7c4e41884cfb2a1078ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5285,7 +5353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1773" column="6"/>
+        <location file="include/dpp/cluster.h" line="1845" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a91fd6f5978046b8fae78a11ddb7137c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5340,7 +5408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1784" column="6"/>
+        <location file="include/dpp/cluster.h" line="1856" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a36fc5115ae69378547f38f04ae435fc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5407,7 +5475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1796" column="6"/>
+        <location file="include/dpp/cluster.h" line="1868" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3aa3ef912199ea0ebac49dfe1cf5cd2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5464,7 +5532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1808" column="6"/>
+        <location file="include/dpp/cluster.h" line="1880" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a945ff67bd26bdb38e74192389a660cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5523,7 +5591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1822" column="6"/>
+        <location file="include/dpp/cluster.h" line="1894" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a108f6f06b43709c8d47df5f94a3ca0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5565,7 +5633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1832" column="6"/>
+        <location file="include/dpp/cluster.h" line="1904" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a24e67431b79cc2c3d0f12d59afd5a1c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5607,7 +5675,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1842" column="6"/>
+        <location file="include/dpp/cluster.h" line="1914" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a66df9163f111cec5a180d642f521660a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5654,7 +5722,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1859" column="6"/>
+        <location file="include/dpp/cluster.h" line="1931" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8ca7054e8447493eb1136f4972053b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5699,7 +5767,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1869" column="6"/>
+        <location file="include/dpp/cluster.h" line="1941" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa005ff4940e700f034b01e197670837b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5743,7 +5811,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1883" column="6"/>
+        <location file="include/dpp/cluster.h" line="1955" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a55c02ced51fff33b7b8c4832a9857e1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5836,7 +5904,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1898" column="6"/>
+        <location file="include/dpp/cluster.h" line="1970" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a96e656be4a8ea8e87a3a4133dd3a07dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5929,7 +5997,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1913" column="6"/>
+        <location file="include/dpp/cluster.h" line="1985" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a837aa702a92e98ef593381fb147d23fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5974,7 +6042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1923" column="6"/>
+        <location file="include/dpp/cluster.h" line="1995" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6dbddcf4f753ced02d8ec693dcaf583c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6016,7 +6084,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1933" column="6"/>
+        <location file="include/dpp/cluster.h" line="2005" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1279fd6e3b1bd609c4dc85b6c3fc3631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6061,7 +6129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1944" column="6"/>
+        <location file="include/dpp/cluster.h" line="2016" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa03a0da5c8e6801dc56bda258265da04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6103,7 +6171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1954" column="6"/>
+        <location file="include/dpp/cluster.h" line="2026" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5e3f97577e5948896b38836fd293cefd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6160,7 +6228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1965" column="6"/>
+        <location file="include/dpp/cluster.h" line="2037" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a553bfda3b4f1671e75c5713275b781bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6202,7 +6270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1974" column="6"/>
+        <location file="include/dpp/cluster.h" line="2046" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab9aec491f4116fa33aeabf1e614051f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6281,7 +6349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1986" column="6"/>
+        <location file="include/dpp/cluster.h" line="2058" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0d130c81079f3b55c440710f5ea0470e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6336,7 +6404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="1996" column="6"/>
+        <location file="include/dpp/cluster.h" line="2068" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac335bec6c58c7161348b521aad154431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6393,7 +6461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2007" column="6"/>
+        <location file="include/dpp/cluster.h" line="2079" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a83fa90627b403c4489320b64d6e31c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6448,7 +6516,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2017" column="6"/>
+        <location file="include/dpp/cluster.h" line="2089" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aff1ad5764f2878eec2e7cbed3a231bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6491,7 +6559,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2026" column="6"/>
+        <location file="include/dpp/cluster.h" line="2098" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aac0f01d11e06168e68b0e798ef7ce61b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6534,7 +6602,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2035" column="6"/>
+        <location file="include/dpp/cluster.h" line="2107" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0530fdfa85085ad367a6666386968ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6591,7 +6659,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2046" column="6"/>
+        <location file="include/dpp/cluster.h" line="2118" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aaf055f95bc7ce80ff06cff9956bddca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6648,7 +6716,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2057" column="6"/>
+        <location file="include/dpp/cluster.h" line="2129" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6a003669770549d25a951810bff0153e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6690,7 +6758,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2069" column="6"/>
+        <location file="include/dpp/cluster.h" line="2141" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3ecd82c6169107c9c944356f19abba9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6732,7 +6800,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2081" column="6"/>
+        <location file="include/dpp/cluster.h" line="2153" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a99e8227f11ef33cd2d9cc3abef46adfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6786,7 +6854,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2091" column="6"/>
+        <location file="include/dpp/cluster.h" line="2163" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a52cc92ce052d063854e0372539e4d9ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6854,7 +6922,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2104" column="6"/>
+        <location file="include/dpp/cluster.h" line="2176" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6b24baba4de9d38f7d9a7cea2f71a545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6922,7 +6990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2117" column="6"/>
+        <location file="include/dpp/cluster.h" line="2189" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a19819f7f2f2f3badecc1e29a928f2690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6981,7 +7049,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2136" column="6"/>
+        <location file="include/dpp/cluster.h" line="2208" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad793626d2733715381c3c5c440f31bd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7026,7 +7094,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2151" column="6"/>
+        <location file="include/dpp/cluster.h" line="2223" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac673fb500731954ad50e90de70b2fd03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7097,7 +7165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2167" column="6"/>
+        <location file="include/dpp/cluster.h" line="2239" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4a8074b289fee0f43d7eafb2bc6ae5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7156,7 +7224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2183" column="6"/>
+        <location file="include/dpp/cluster.h" line="2255" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aeffb7f4f32ca342886a79692ed8fb416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7225,7 +7293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2198" column="6"/>
+        <location file="include/dpp/cluster.h" line="2270" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a98e8223a62f31bb716c326ff59f67576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7295,7 +7363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2214" column="6"/>
+        <location file="include/dpp/cluster.h" line="2286" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4e310334b84b6711119fe20a340ddc85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7364,7 +7432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2229" column="6"/>
+        <location file="include/dpp/cluster.h" line="2301" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a40788ea66fddce18336fb53ff8a2a6b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7422,7 +7490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2244" column="6"/>
+        <location file="include/dpp/cluster.h" line="2316" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8d4b8738bf9ba45254582ce16d14e22d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7479,7 +7547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2258" column="6"/>
+        <location file="include/dpp/cluster.h" line="2330" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9afda69f8c99365001ec349f8dc70388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7548,7 +7616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2272" column="6"/>
+        <location file="include/dpp/cluster.h" line="2344" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a00fe9bf79228a671d618e9fb27b5684a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7618,7 +7686,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2287" column="6"/>
+        <location file="include/dpp/cluster.h" line="2359" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a77f277230e3cd4d34eac3d2d9838f6d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7675,7 +7743,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2301" column="6"/>
+        <location file="include/dpp/cluster.h" line="2373" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac7fe3385e506ea073076bc4fb57f06c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7755,7 +7823,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2316" column="6"/>
+        <location file="include/dpp/cluster.h" line="2388" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad871d30ed11d0799da4a831ede8a7d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7809,7 +7877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2328" column="6"/>
+        <location file="include/dpp/cluster.h" line="2400" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a52366e37144b166c6a2c773e14992b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7851,7 +7919,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2337" column="6"/>
+        <location file="include/dpp/cluster.h" line="2409" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3124bdcf2432f3880f78914037f9e87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7908,7 +7976,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2348" column="6"/>
+        <location file="include/dpp/cluster.h" line="2420" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1faa321ede15b209c789ea1155a3d356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7950,7 +8018,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2358" column="6"/>
+        <location file="include/dpp/cluster.h" line="2430" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a38db2ce96431b742e98cabf8170a84d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8016,7 +8084,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2370" column="6"/>
+        <location file="include/dpp/cluster.h" line="2442" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af115bd1c7fe12eba1c12d90d5971d10b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8071,7 +8139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2381" column="6"/>
+        <location file="include/dpp/cluster.h" line="2453" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5db4327a5ad614adc419db6ff7b7bc17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8150,7 +8218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2394" column="6"/>
+        <location file="include/dpp/cluster.h" line="2466" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8527d66d4e1b2996c495d1196c6af718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8205,7 +8273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2405" column="6"/>
+        <location file="include/dpp/cluster.h" line="2477" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8e7f40eadf7748bcf35f67d152c3462c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8252,7 +8320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2427" column="6"/>
+        <location file="include/dpp/cluster.h" line="2499" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a54e2174822bb1796a541f849d568664c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8298,7 +8366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2441" column="6"/>
+        <location file="include/dpp/cluster.h" line="2513" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9b0fccd64f8d21340fe20642d9fdb1e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8342,7 +8410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2453" column="6"/>
+        <location file="include/dpp/cluster.h" line="2525" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad66ab98a72eb1ba8d2686fcaa1eb49db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8384,7 +8452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2463" column="6"/>
+        <location file="include/dpp/cluster.h" line="2535" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ada721a222fb3a42a1a1bb6d93dfcc745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8438,7 +8506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2474" column="6"/>
+        <location file="include/dpp/cluster.h" line="2546" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8bea7e9ba3d487e9a6b2fe747c98e9e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8495,7 +8563,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2487" column="6"/>
+        <location file="include/dpp/cluster.h" line="2559" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7461e2fa96c4bf77468226ffb25744ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8552,7 +8620,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2500" column="6"/>
+        <location file="include/dpp/cluster.h" line="2572" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a55b6d9100c34ea5bbbe37d3ba5089be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8609,7 +8677,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2512" column="6"/>
+        <location file="include/dpp/cluster.h" line="2584" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aad296f07bd5b9f900dcedbf88c464e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8664,7 +8732,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2528" column="6"/>
+        <location file="include/dpp/cluster.h" line="2600" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a68d13c11179006d5271c1a398df58bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8722,7 +8790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2546" column="6"/>
+        <location file="include/dpp/cluster.h" line="2618" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae5556385a69a408a268332f774ba6c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8765,7 +8833,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2560" column="6"/>
+        <location file="include/dpp/cluster.h" line="2632" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a93c0e07243611419141305da123c859a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8808,7 +8876,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2572" column="6"/>
+        <location file="include/dpp/cluster.h" line="2644" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a43cba3bd187f9b28dcaed5b4f4ed5bda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8853,7 +8921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2586" column="6"/>
+        <location file="include/dpp/cluster.h" line="2658" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0cc29438d9f4a8a42e5f5d44ce44c6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8910,7 +8978,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2598" column="6"/>
+        <location file="include/dpp/cluster.h" line="2670" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab4ed64619f058ac4b71a90066e7aac73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8968,7 +9036,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2613" column="6"/>
+        <location file="include/dpp/cluster.h" line="2685" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4bef071b931d0ca71b45ee0d8bf3a96c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9023,7 +9091,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2624" column="6"/>
+        <location file="include/dpp/cluster.h" line="2696" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a57626c7a0e06aee1c362b986e44030c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9066,7 +9134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2636" column="6"/>
+        <location file="include/dpp/cluster.h" line="2708" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae97d98927594cee1821c4ff318eb9561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9124,7 +9192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2650" column="6"/>
+        <location file="include/dpp/cluster.h" line="2722" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad1332e45cc89e871009e840c25145df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9166,7 +9234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2661" column="6"/>
+        <location file="include/dpp/cluster.h" line="2733" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a7a6352ff9824bf2a5fdd3e41b8da8155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9208,7 +9276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2671" column="6"/>
+        <location file="include/dpp/cluster.h" line="2743" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa31987df09d132a45b2d0f5b719df9e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9256,7 +9324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2686" column="6"/>
+        <location file="include/dpp/cluster.h" line="2758" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a864553916e3ddee27517b092de35fd12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9299,7 +9367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2698" column="6"/>
+        <location file="include/dpp/cluster.h" line="2770" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a077a0f54778632d4a76794f53075b341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9367,7 +9435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2712" column="6"/>
+        <location file="include/dpp/cluster.h" line="2784" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a634f650e53df2d3535131870985e0313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9412,7 +9480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2722" column="6"/>
+        <location file="include/dpp/cluster.h" line="2794" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8d352afcbc0430ca11576386278da7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9454,7 +9522,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2731" column="6"/>
+        <location file="include/dpp/cluster.h" line="2803" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae58b1f27711b42e9aa8a21e34147429f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9496,7 +9564,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2740" column="6"/>
+        <location file="include/dpp/cluster.h" line="2812" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a40e140f1e2eda9632828bce461bc7338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9538,7 +9606,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2749" column="6"/>
+        <location file="include/dpp/cluster.h" line="2821" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a770526895ed13e2dfb746decc3f0be67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9592,7 +9660,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2759" column="6"/>
+        <location file="include/dpp/cluster.h" line="2831" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad5039e83f20e5c321b78b319fe7608c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9637,7 +9705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2769" column="6"/>
+        <location file="include/dpp/cluster.h" line="2841" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a40262f5c4ef4a56fe394e91faf0ac8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9680,7 +9748,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2778" column="6"/>
+        <location file="include/dpp/cluster.h" line="2850" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa2f345c51a6a933a29e2e86d50d6a20e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9725,7 +9793,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2788" column="6"/>
+        <location file="include/dpp/cluster.h" line="2860" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4556a4647c5fd1468fe6918a2f637984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9780,7 +9848,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2798" column="6"/>
+        <location file="include/dpp/cluster.h" line="2870" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0417d872a41150d122901fd300a89190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9876,7 +9944,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2813" column="6"/>
+        <location file="include/dpp/cluster.h" line="2885" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8ff6d3aec04b3bc1ce06a3d077495994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9944,7 +10012,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2825" column="6"/>
+        <location file="include/dpp/cluster.h" line="2897" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a006039f6dfb56c6b49a9c9baec463563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10015,7 +10083,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2843" column="6"/>
+        <location file="include/dpp/cluster.h" line="2915" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5d415cd3438b7d505415a8c183d57adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10083,7 +10151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2855" column="6"/>
+        <location file="include/dpp/cluster.h" line="2927" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a884dbb70619fcf92b06577dea8093219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10125,7 +10193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2866" column="6"/>
+        <location file="include/dpp/cluster.h" line="2938" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a849017410297379997601daac5e99ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10171,7 +10239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2880" column="6"/>
+        <location file="include/dpp/cluster.h" line="2952" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab6bc6ef9b6f1ef9aa5b9c1391ccedbf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10217,7 +10285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2893" column="6"/>
+        <location file="include/dpp/cluster.h" line="2965" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3549d2ebe52210d7b98adeb766b968b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10275,7 +10343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2908" column="6"/>
+        <location file="include/dpp/cluster.h" line="2980" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6d4cdab9c22eefdeba0d28105c006b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10333,7 +10401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2922" column="6"/>
+        <location file="include/dpp/cluster.h" line="2994" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae66aa8feb8759ff76301aac34c97cc7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10375,7 +10443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2932" column="6"/>
+        <location file="include/dpp/cluster.h" line="3004" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1afa094e7895245b07195a3b4ec013af0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10432,7 +10500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2944" column="6"/>
+        <location file="include/dpp/cluster.h" line="3016" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3f3fc4fdfc918f7383773bda717134bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10474,7 +10542,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2954" column="6"/>
+        <location file="include/dpp/cluster.h" line="3026" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac6426506b0175419913b157ad9f10f71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10529,7 +10597,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2965" column="6"/>
+        <location file="include/dpp/cluster.h" line="3037" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a73483dbeb0f1946dc18b1d0a5331b0d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10575,7 +10643,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2979" column="6"/>
+        <location file="include/dpp/cluster.h" line="3051" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a00caec14273460343d60830dcb6bea9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10621,7 +10689,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="2993" column="6"/>
+        <location file="include/dpp/cluster.h" line="3065" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aad927e85ed6b99e9b05f4190f1b19cae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10653,7 +10721,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3004" column="6"/>
+        <location file="include/dpp/cluster.h" line="3076" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac3dc39069aaaa492727f39b35edd957e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10683,7 +10751,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3013" column="6"/>
+        <location file="include/dpp/cluster.h" line="3085" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ab55ebdf053917a35368be4d86237af33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10741,7 +10809,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3028" column="6"/>
+        <location file="include/dpp/cluster.h" line="3100" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a75e1e5dd813d36fffd6b532ed1b31178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10771,7 +10839,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3038" column="6"/>
+        <location file="include/dpp/cluster.h" line="3110" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a93c8fd5f22e0eae6bf357ad498b43f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10801,7 +10869,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3046" column="6"/>
+        <location file="include/dpp/cluster.h" line="3118" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a114d7930f0a219ef974143b65134a2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10879,7 +10947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3061" column="6"/>
+        <location file="include/dpp/cluster.h" line="3133" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a662fc0a998c62395f166da5e4a2acaf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10907,7 +10975,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3069" column="6"/>
+        <location file="include/dpp/cluster.h" line="3141" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aab0538838d054a0c80c07cd0556a894c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10950,7 +11018,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3078" column="6"/>
+        <location file="include/dpp/cluster.h" line="3150" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4fd6cc6c6635e6e0a9bdddcc6cda0e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10993,7 +11061,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3087" column="6"/>
+        <location file="include/dpp/cluster.h" line="3159" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad96d8fcec4c69d82fd4f2fb85ddfa2bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11099,7 +11167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3103" column="6"/>
+        <location file="include/dpp/cluster.h" line="3175" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0c41c2fada744b16b48d8a5538e19fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11204,7 +11272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3119" column="6"/>
+        <location file="include/dpp/cluster.h" line="3191" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2986f2f79b812b0a6d579f557d459aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11249,7 +11317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3130" column="6"/>
+        <location file="include/dpp/cluster.h" line="3202" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adf113903aeca27e9994fb366486250d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11342,7 +11410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3144" column="6"/>
+        <location file="include/dpp/cluster.h" line="3216" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa62bc561994b7222712583e46cb68799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11385,7 +11453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3153" column="6"/>
+        <location file="include/dpp/cluster.h" line="3225" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3a313be1a4fd6bde99606047761c4518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11428,7 +11496,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3162" column="6"/>
+        <location file="include/dpp/cluster.h" line="3234" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a905fa0c06477d9d9ecd4a536b54d21aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11483,7 +11551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3172" column="6"/>
+        <location file="include/dpp/cluster.h" line="3244" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a754ae607b98b27d54f344db908836c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11538,7 +11606,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3182" column="6"/>
+        <location file="include/dpp/cluster.h" line="3254" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad39edec2f1389d1aa5bb6c09e4318b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11592,7 +11660,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3192" column="6"/>
+        <location file="include/dpp/cluster.h" line="3264" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a636b55f518a2e724eabf31453aa89abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11634,7 +11702,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3201" column="6"/>
+        <location file="include/dpp/cluster.h" line="3273" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aefa49b6113343575dbc9dd2e40112847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11676,7 +11744,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3210" column="6"/>
+        <location file="include/dpp/cluster.h" line="3282" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2b93e8be30c7e954c27e19d8b7fa8170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11742,7 +11810,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3221" column="6"/>
+        <location file="include/dpp/cluster.h" line="3293" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae8336e48eaabaeb8df4d69a087982e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11808,7 +11876,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3232" column="6"/>
+        <location file="include/dpp/cluster.h" line="3304" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a0d0c3894cd560fa7871f22d7cfb8f591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11874,7 +11942,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3243" column="6"/>
+        <location file="include/dpp/cluster.h" line="3315" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae09c9ae57529d89455ed7f3481d629cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11919,7 +11987,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3253" column="6"/>
+        <location file="include/dpp/cluster.h" line="3325" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1686a4d8a5a9b01f58c4768b33145b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -11964,7 +12032,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3263" column="6"/>
+        <location file="include/dpp/cluster.h" line="3335" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa93a97a167922bb0a40c6489a928d4fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12021,7 +12089,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3274" column="6"/>
+        <location file="include/dpp/cluster.h" line="3346" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a115a49075ceb1817f1e81fc9388bf65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12063,7 +12131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3283" column="6"/>
+        <location file="include/dpp/cluster.h" line="3355" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac7a2d335385b4689e7489d0eaf4475fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12117,7 +12185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3293" column="6"/>
+        <location file="include/dpp/cluster.h" line="3365" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1adccd1468d3f031c5bc786fdbd087d0a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12159,7 +12227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3302" column="6"/>
+        <location file="include/dpp/cluster.h" line="3374" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae64421a4b2402238feb0536639009c18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12189,7 +12257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3310" column="6"/>
+        <location file="include/dpp/cluster.h" line="3382" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac62b4564e7512125f0b30377b5c7319a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12234,7 +12302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3320" column="6"/>
+        <location file="include/dpp/cluster.h" line="3392" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1edd6ac5d8553b4823465bebadfaa9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12276,7 +12344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3329" column="6"/>
+        <location file="include/dpp/cluster.h" line="3401" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a720ea171f6c432a2ba0cc897fcc61475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12321,7 +12389,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3339" column="6"/>
+        <location file="include/dpp/cluster.h" line="3411" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a2b4391d87cad53c95e869400534fbd2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12366,7 +12434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3349" column="6"/>
+        <location file="include/dpp/cluster.h" line="3421" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af6d45a29b3976f7b623d92e70ab9a1bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12396,7 +12464,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3357" column="6"/>
+        <location file="include/dpp/cluster.h" line="3429" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a68f16d04f100a0159683cba96e8c0a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12426,7 +12494,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3365" column="6"/>
+        <location file="include/dpp/cluster.h" line="3437" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ae8554f93aed5fb84162af41c997fc1e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12468,7 +12536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3374" column="6"/>
+        <location file="include/dpp/cluster.h" line="3446" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a09f6a78b9b2ad6218ed1b8c7b044013a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12561,7 +12629,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3388" column="6"/>
+        <location file="include/dpp/cluster.h" line="3460" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a360bf7b9dd6b27774be3706a1176f8f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12604,7 +12672,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3398" column="6"/>
+        <location file="include/dpp/cluster.h" line="3470" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a513c773562fbd9997141c5b317be8087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12659,7 +12727,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3409" column="6"/>
+        <location file="include/dpp/cluster.h" line="3481" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a338867a84983e985b77829f0d9ccb34c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12702,7 +12770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3419" column="6"/>
+        <location file="include/dpp/cluster.h" line="3491" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5b8c168682519ee125ed0a48239c08ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12756,7 +12824,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3430" column="6"/>
+        <location file="include/dpp/cluster.h" line="3502" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad611ecc2a6231c4bc100e74c1f28ee75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12856,7 +12924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3454" column="6"/>
+        <location file="include/dpp/cluster.h" line="3526" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a66c65f30625391586fd4cf6614b6a1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12946,7 +13014,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3477" column="6"/>
+        <location file="include/dpp/cluster.h" line="3549" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af88b9b913287a87b2d69cf26ebcf6394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12986,7 +13054,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3486" column="6"/>
+        <location file="include/dpp/cluster.h" line="3558" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acb7e0e57232db6fa8365443d5868bec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -13038,7 +13106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3496" column="6"/>
+        <location file="include/dpp/cluster.h" line="3568" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac7d1f2dbbddfde9f7e7c06270c3e744f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -13091,7 +13159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3506" column="6"/>
+        <location file="include/dpp/cluster.h" line="3578" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aafe2796940cd1429cab5471c168ef010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -13144,7 +13212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3516" column="6"/>
+        <location file="include/dpp/cluster.h" line="3588" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a39fb700f0bbc716f63d03aa50783759b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -13197,7 +13265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3526" column="6"/>
+        <location file="include/dpp/cluster.h" line="3598" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a336233c9d572ff34612fad878a741509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -31979,7 +32047,9 @@
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
         <childnode refid="17" relation="usage">
+          <edgelabel>channel_policy</edgelabel>
           <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>guild_policy</edgelabel>
           <edgelabel>role_policy</edgelabel>
           <edgelabel>user_policy</edgelabel>
         </childnode>
@@ -32119,7 +32189,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/cluster.h" line="82" column="1" bodyfile="include/dpp/cluster.h" bodystart="82" bodyend="3533"/>
+    <location file="include/dpp/cluster.h" line="82" column="1" bodyfile="include/dpp/cluster.h" bodystart="82" bodyend="3605"/>
     <listofallmembers>
       <member refid="classdpp_1_1cluster_1ae66aa8feb8759ff76301aac34c97cc7e" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>application_role_connection_get</name></member>
       <member refid="classdpp_1_1cluster_1a86b195c135689a71983f79400e106b15" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>application_role_connection_get_sync</name></member>
@@ -32167,7 +32237,7 @@
       <member refid="classdpp_1_1cluster_1a24e67431b79cc2c3d0f12d59afd5a1c8" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channels_get</name></member>
       <member refid="classdpp_1_1cluster_1a041620de1941bc984992d390815cf927" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>channels_get_sync</name></member>
       <member refid="classdpp_1_1cluster_1af1e3f0868ece15373e81844dff719aa0" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>clear_audit_reason</name></member>
-      <member refid="classdpp_1_1cluster_1aeff8657c528ce2d97f698054cb9ae493" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>cluster</name></member>
+      <member refid="classdpp_1_1cluster_1a50b5bea83641d9542df5c0ec7fa5b43c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>cluster</name></member>
       <member refid="classdpp_1_1cluster_1a6b0b523f89559b4ce204ca9ed9693d79" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>cluster</name></member>
       <member refid="classdpp_1_1cluster_1a2d957f52245734f6d44444af8380c952" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>cluster</name></member>
       <member refid="classdpp_1_1cluster_1a5155862c1d7267c7f4ee8781ff3e8d7f" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>cluster_id</name></member>

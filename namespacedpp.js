@@ -1,5 +1,10 @@
 var namespacedpp =
 [
+    [ "cache_policy", "namespacedpp_1_1cache__policy.html", [
+      [ "cpol_balanced", "namespacedpp_1_1cache__policy.html#aa946ffa75d7ea53f0f66fbd7b360c549", null ],
+      [ "cpol_default", "namespacedpp_1_1cache__policy.html#a851fe024df39295092817467cee45abe", null ],
+      [ "cpol_none", "namespacedpp_1_1cache__policy.html#a97535f77959aa149e9f3eee7b5b63551", null ]
+    ] ],
     [ "colors", "namespacedpp_1_1colors.html", [
       [ "acid_green", "namespacedpp_1_1colors.html#a5c453c3673a2ebcb180a7e7c32d2197e", null ],
       [ "algae_green", "namespacedpp_1_1colors.html#a69ee818fae122bf56670e3a3cedda128", null ],

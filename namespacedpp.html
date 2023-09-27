@@ -114,6 +114,9 @@ $(document).ready(function(){initNavTree('namespacedpp.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacedpp_1_1cache__policy"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1cache__policy.html">cache_policy</a></td></tr>
+<tr class="memdesc:namespacedpp_1_1cache__policy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a set of predefined cache policies for use when constructing a <a class="el" href="classdpp_1_1cluster.html" title="The cluster class represents a group of shards and a command queue for sending and receiving commands...">dpp::cluster</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedpp_1_1colors"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1colors.html">colors</a></td></tr>
 <tr class="memdesc:namespacedpp_1_1colors"><td class="mdescLeft">&#160;</td><td class="mdescRight">predefined color constants <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8426,7 +8429,7 @@ template&lt;typename T , class F , class... Ts&gt; </div>
 <p >Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a> m = dpp::sync&lt;dpp::message&gt;(&amp;bot, &amp;<a class="code hl_function" href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a>, <a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(channel_id, <span class="stringliteral">&quot;moo.&quot;</span>));</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html_aa6ae3dc32ebc2dd14264962710d35af7"><div class="ttname"><a href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a></div><div class="ttdeci">void message_create(const struct message &amp;m, command_completion_event_t callback=utility::log_error())</div><div class="ttdoc">Send a message to a channel. The callback function is called when the message has been sent.</div></div>
-<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1180</div></div>
+<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1212</div></div>
 </div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>As previously mentioned, this template will block. It is ill-advised to call this outside of a separate thread and this should never be directly used in any event such as <a class="el" href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a>! </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
