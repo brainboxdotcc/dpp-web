@@ -381,8 +381,9 @@ Using liboggz</h2>
 <div class="line">                <span class="keyword">const</span> <span class="keywordtype">long</span> read_bytes = oggz_read(track_og, CHUNK_READ);</div>
 <div class="line"> </div>
 <div class="line">                <span class="comment">// break on eof</span></div>
-<div class="line">                <span class="keywordflow">if</span> (!read_bytes)</div>
+<div class="line">                <span class="keywordflow">if</span> (!read_bytes) {</div>
 <div class="line">                    <span class="keywordflow">break</span>;</div>
+<div class="line">                }</div>
 <div class="line">            }</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">// don&#39;t forget to free the memory</span></div>

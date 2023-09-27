@@ -213,8 +213,9 @@ I heard you liked tasks</h3>
 <div class="line"> </div>
 <div class="line">                <span class="comment">// If we have the guild member in the command&#39;s resolved data, return it</span></div>
 <div class="line">                const auto &amp;member_map = event.command.resolved.members;</div>
-<div class="line">                if (auto member = member_map.find(user_id); member != member_map.end())</div>
+<div class="line">                if (auto member = member_map.find(user_id); member != member_map.end()) {</div>
 <div class="line">                    co_return member-&gt;second;</div>
+<div class="line">                }</div>
 <div class="line">                <span class="comment">// Try looking in guild cache</span></div>
 <div class="line">                dpp::guild *guild = dpp::find_guild(event.command.guild_id);</div>
 <div class="line">                if (guild) {</div>
