@@ -1210,10 +1210,12 @@
           <declname>filename</declname>
         </param>
         <briefdescription>
-<para>Read a whole file into a std::string. Be sure you have enough memory to read the file, if you are reading a large file. </para>
+<para>Read a whole file into a std::string. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Be aware this function can block! If you are regularly reading large files, consider caching them. </para>
+<para><simplesect kind="note"><para>This function can take a while if this is a large file, causing events to not reply and also taking up a lot of memory. Make sure you have enough memory, and use <ref refid="structdpp_1_1interaction__create__t_1ab0c0133ac861e7752cd700903303b7fb" kindref="member">dpp::interaction_create_t::thinking</ref> in events where you call this function on big files. </para>
+</simplesect>
+<simplesect kind="warning"><para>Be aware this function can block! If you are regularly reading large files, consider caching them. </para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
