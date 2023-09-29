@@ -10,6 +10,7 @@
         <definition>scheduled_event dpp::guild_scheduled_event_create_t::created</definition>
         <argsstring></argsstring>
         <name>created</name>
+        <initializer>= {}</initializer>
         <briefdescription>
 <para>created event </para>
         </briefdescription>
@@ -17,13 +18,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="210" column="17" bodyfile="include/dpp/dispatcher.h" bodystart="210" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="261" column="17" bodyfile="include/dpp/dispatcher.h" bodystart="261" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" static="no" mutable="no">
-        <type>const std::string</type>
-        <definition>const std::string dpp::event_dispatch_t::raw_event</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::event_dispatch_t::raw_event</definition>
         <argsstring></argsstring>
         <name>raw_event</name>
+        <initializer>= {}</initializer>
         <briefdescription>
 <para>Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data. </para>
         </briefdescription>
@@ -31,13 +33,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="77" column="19" bodyfile="include/dpp/dispatcher.h" bodystart="77" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="82" column="13" bodyfile="include/dpp/dispatcher.h" bodystart="82" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" static="no" mutable="no">
-        <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-        <definition>class discord_client* dpp::event_dispatch_t::from</definition>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a9ef98cebb9c0a5ab75a4362d1b40fb71" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+        <definition>discord_client* dpp::event_dispatch_t::from</definition>
         <argsstring></argsstring>
         <name>from</name>
+        <initializer>= nullptr</initializer>
         <briefdescription>
 <para>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </para>
         </briefdescription>
@@ -45,40 +48,58 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="83" column="22" bodyfile="include/dpp/dispatcher.h" bodystart="83" bodyend="-1"/>
+        <location file="include/dpp/dispatcher.h" line="88" column="16" bodyfile="include/dpp/dispatcher.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" prot="public" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool dpp::event_dispatch_t::cancelled</definition>
+        <argsstring></argsstring>
+        <name>cancelled</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether the event was cancelled using <ref refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kindref="member">cancel_event()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="93" column="14" bodyfile="include/dpp/dispatcher.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structdpp_1_1guild__scheduled__event__create__t_1a637e11632f215c29c16e0de28f1e5eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1guild__scheduled__event__create__t_1ad761e8dec36073665f520aaa13fbe6dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>dpp::guild_scheduled_event_create_t::guild_scheduled_event_create_t</definition>
-        <argsstring>(class discord_client *client, const std::string &amp;raw)</argsstring>
-        <name>guild_scheduled_event_create_t</name>
-        <param>
-          <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
-          <declname>client</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>raw</declname>
-        </param>
+        <definition>dpp::event_dispatch_t::event_dispatch_t</definition>
+        <argsstring>()=default</argsstring>
+        <name>event_dispatch_t</name>
         <briefdescription>
+<para>Construct a new <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object. </para>
         </briefdescription>
         <detaileddescription>
-<para>Constructor <parameterlist kind="param"><parameteritem>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1guild__scheduled__event__create__t_1ae250d3a1ee0ad2e90ad075e1aead5478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_dispatch_t::event_dispatch_t</definition>
+        <argsstring>(const event_dispatch_t &amp;rhs)=default</argsstring>
+        <name>event_dispatch_t</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>client</parametername>
+<parametername>rhs</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The shard the event originated on. CAN BE NULL for log events originating from the cluster object </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>raw</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Raw event text as JSON </para>
+<para><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object to copy from </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -86,7 +107,171 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="206" column="1"/>
+        <location file="include/dpp/dispatcher.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1guild__scheduled__event__create__t_1aae35038ecb874c46e355fac3863615d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_dispatch_t::event_dispatch_t</definition>
+        <argsstring>(event_dispatch_t &amp;&amp;rhs)=default</argsstring>
+        <name>event_dispatch_t</name>
+        <param>
+          <type><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object to move from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1guild__scheduled__event__create__t_1af32126d4ed56366b4413c84b272383b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_dispatch_t::event_dispatch_t</definition>
+        <argsstring>(discord_client *client, const std::string &amp;raw)</argsstring>
+        <name>event_dispatch_t</name>
+        <param>
+          <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>raw</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shard the event originated on. May be a nullptr, e.g. for voice events </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw event data as JSON or ETF </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1guild__scheduled__event__create__t_1a4d5c139c862c5ed02227b1e9ffc38095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_dispatch_t::event_dispatch_t</definition>
+        <argsstring>(discord_client *client, std::string &amp;&amp;raw)</argsstring>
+        <name>event_dispatch_t</name>
+        <param>
+          <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>raw</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shard the event originated on. May be a nullptr, e.g. for voice events </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw event data as JSON or ETF </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1guild__scheduled__event__create__t_1a2500c6d9987fbfc509fd0a960b1968e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
+        <definition>event_dispatch_t &amp; dpp::event_dispatch_t::operator=</definition>
+        <argsstring>(const event_dispatch_t &amp;rhs)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy another <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event to copy from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1guild__scheduled__event__create__t_1a4645c2cc7dfe1def0b936d5726f7b8db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
+        <definition>event_dispatch_t &amp; dpp::event_dispatch_t::operator=</definition>
+        <argsstring>(event_dispatch_t &amp;&amp;rhs)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Move from another <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event to move from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="256" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
@@ -94,16 +279,37 @@
         <argsstring>() const</argsstring>
         <name>cancel_event</name>
         <briefdescription>
-<para>Cancels the event in progress. Any other attached lambdas for this event after this one are not called. Note that event cancellation is a thread local state, and not stored in the object (because object which can be cancelled is <computeroutput>const</computeroutput> during the event, and cannot itself contain the changeable state). </para>
+<para>Cancels the event in progress. Any other attached lambdas for this event after this one are not called. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>&amp; reference to self for chaining </para>
+<para><simplesect kind="warning"><para>This will modify the event object in a non-thread-safe manner. </para>
+</simplesect>
+<simplesect kind="return"><para>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>&amp; reference to self for chaining </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="99" column="24"/>
+        <location file="include/dpp/dispatcher.h" line="159" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> &amp;</type>
+        <definition>event_dispatch_t &amp; dpp::event_dispatch_t::cancel_event</definition>
+        <argsstring>()</argsstring>
+        <name>cancel_event</name>
+        <briefdescription>
+<para>Cancels the event in progress. Any other attached lambdas for this event after this one are not called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This will modify the event object in a non-thread-safe manner. </para>
+</simplesect>
+<simplesect kind="return"><para>const <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref>&amp; reference to self for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="167" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -120,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/dispatcher.h" line="107" column="6"/>
+        <location file="include/dpp/dispatcher.h" line="175" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -261,6 +467,9 @@
         </childnode>
         <childnode refid="5" relation="usage">
           <edgelabel>from</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>cancelled</edgelabel>
         </childnode>
       </node>
       <node id="39">
@@ -492,15 +701,23 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/dispatcher.h" line="200" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="200" bodyend="211"/>
+    <location file="include/dpp/dispatcher.h" line="254" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="254" bodyend="262"/>
     <listofallmembers>
       <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>cancel_event</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>cancel_event</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>cancelled</name></member>
       <member refid="structdpp_1_1guild__scheduled__event__create__t_1ad562dc29296798a4d58002fc2e0f4078" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>created</name></member>
-      <member refid="structdpp_1_1event__dispatch__t_1a4ac4d287ca94f2389cf68e2534d9e1b0" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>event_dispatch_t</name></member>
-      <member refid="structdpp_1_1event__dispatch__t_1a357873be4dd30eef7928ae5f7c13e7db" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>from</name></member>
-      <member refid="structdpp_1_1guild__scheduled__event__create__t_1a637e11632f215c29c16e0de28f1e5eaa" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>guild_scheduled_event_create_t</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__create__t_1ad761e8dec36073665f520aaa13fbe6dc" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__create__t_1ae250d3a1ee0ad2e90ad075e1aead5478" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__create__t_1aae35038ecb874c46e355fac3863615d0" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__create__t_1af32126d4ed56366b4413c84b272383b7" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__create__t_1a4d5c139c862c5ed02227b1e9ffc38095" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>event_dispatch_t</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a9ef98cebb9c0a5ab75a4362d1b40fb71" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>from</name></member>
       <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>is_cancelled</name></member>
-      <member refid="structdpp_1_1event__dispatch__t_1a22df2fa7e547eaefbd65e501d8bf67b7" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>raw_event</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__create__t_1a2500c6d9987fbfc509fd0a960b1968e9" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>operator=</name></member>
+      <member refid="structdpp_1_1guild__scheduled__event__create__t_1a4645c2cc7dfe1def0b936d5726f7b8db" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>operator=</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" prot="public" virt="non-virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>raw_event</name></member>
+      <member refid="structdpp_1_1event__dispatch__t_1a2bed0468ebf80c46bf6ee2407afa2cfd" prot="public" virt="virtual"><scope>dpp::guild_scheduled_event_create_t</scope><name>~event_dispatch_t</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

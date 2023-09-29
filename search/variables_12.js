@@ -67,7 +67,7 @@ var searchData=
   ['ratelimit_5fremaining_64',['ratelimit_remaining',['../structdpp_1_1http__request__completion__t.html#a0d11ccc783c204f117a4000bac3b1988',1,'dpp::http_request_completion_t']]],
   ['ratelimit_5freset_5fafter_65',['ratelimit_reset_after',['../structdpp_1_1http__request__completion__t.html#a060318a4877fff905907532077b5b6a6',1,'dpp::http_request_completion_t']]],
   ['ratelimit_5fretry_5fafter_66',['ratelimit_retry_after',['../structdpp_1_1http__request__completion__t.html#a094ddd933ec9bc288812cead549bc39c',1,'dpp::http_request_completion_t']]],
-  ['raw_5fevent_67',['raw_event',['../structdpp_1_1event__dispatch__t.html#a22df2fa7e547eaefbd65e501d8bf67b7',1,'dpp::event_dispatch_t']]],
+  ['raw_5fevent_67',['raw_event',['../structdpp_1_1event__dispatch__t.html#a2d4777d1049d31ed943ecebfa2de7db9',1,'dpp::event_dispatch_t']]],
   ['razor_68',['razor',['../namespacedpp_1_1unicode__emoji.html#a7e4fd61be1e2c85ad516ea4541b3a83b',1,'dpp::unicode_emoji']]],
   ['react_5fchannel_69',['react_channel',['../classdpp_1_1collected__reaction.html#ac920db9b2df7abae4ea577fa32dd496d',1,'dpp::collected_reaction']]],
   ['react_5femoji_70',['react_emoji',['../classdpp_1_1collected__reaction.html#ab8412dec9261cea0a20cc58c21a087ca',1,'dpp::collected_reaction']]],

@@ -44,7 +44,7 @@ var namespacedpp_1_1utility =
     [ "guild_navigation", "namespacedpp_1_1utility.html#aaee05a9f5f440d06434de11804879479", null ],
     [ "has_voice", "namespacedpp_1_1utility.html#a9d70739d6485741d1617c359ec70d1f4", null ],
     [ "is_coro_enabled", "namespacedpp_1_1utility.html#a282afa80feeda7760345275546ca8a76", null ],
-    [ "log_error", "namespacedpp_1_1utility.html#ad9fa7eaac8be5f51f52fcb5e53734910", null ],
+    [ "log_error", "namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e", null ],
     [ "loglevel", "namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045", null ],
     [ "make_url_parameters", "namespacedpp_1_1utility.html#aeada90d27918093d9fe6a53d1a245f50", null ],
     [ "make_url_parameters", "namespacedpp_1_1utility.html#ae97ccaf14820df924f86b32c6932d486", null ],
