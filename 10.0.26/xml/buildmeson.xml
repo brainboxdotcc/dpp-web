@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="buildmeson" kind="page">
+    <compoundname>buildmeson</compoundname>
+    <title>Build a Discord Bot using Meson</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect2 id="buildmeson_1autotoc_md139">
+<title>1. Toolchain</title>
+<para>Before compiling, you will need to install <computeroutput>meson</computeroutput> on your system. To be sure that <computeroutput>meson</computeroutput> is installed, you can type the following command: <verbatim>$ meson --version
+0.63.2
+</verbatim> </para>
+</sect2>
+<sect2 id="buildmeson_1autotoc_md140">
+<title>2. Create a Meson project</title>
+<para>In an empty directory. <verbatim>- your project/
+</verbatim> run the command <verbatim>$ meson init -l cpp
+</verbatim> </para>
+</sect2>
+<sect2 id="buildmeson_1autotoc_md141">
+<title>3. Configuring your Meson project</title>
+<para>add the following line after the <computeroutput>project()</computeroutput> line in your <computeroutput>meson.build</computeroutput> file. <verbatim>dpp = dependency(&apos;dpp&apos;)
+</verbatim> add the following line in the executable section of your <computeroutput>meson.build</computeroutput> file. <verbatim>dependencies: [dpp]
+</verbatim> change the <computeroutput>cpp_std</computeroutput> value in the <computeroutput>project()</computeroutput> to <computeroutput>c++17</computeroutput></para>
+<para>your meson.build should look like this. <programlisting><codeline><highlight class="normal">project(&apos;discord-bot&apos;,<sp/>&apos;cpp&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>version<sp/>:<sp/>&apos;0.1&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>default_options<sp/>:<sp/>[&apos;warning_level=3&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;cpp_std=c++17&apos;])</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">dpp<sp/>=<sp/>dependency(&apos;dpp&apos;)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">exe<sp/>=<sp/>executable(&apos;discord&apos;,<sp/>&apos;discord_bot.cpp&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>install<sp/>:<sp/>true,<sp/>dependencies:<sp/>[dpp])</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">test(&apos;basic&apos;,<sp/>exe)</highlight></codeline>
+</programlisting></para>
+<para>Meson automatically generates a cpp for your project. And a test suite.</para>
+</sect2>
+<sect2 id="buildmeson_1autotoc_md142">
+<title>4. Building</title>
+<para>To build a meson project run <verbatim>$ meson setup builddir
+$ meson compile -C builddir
+</verbatim> </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/make_a_bot/meson.md"/>
+  </compounddef>
+</doxygen>

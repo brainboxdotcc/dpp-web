@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="detecting-messages" kind="page">
+    <compoundname>detecting-messages</compoundname>
+    <title>Listening to messages</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Sometimes, you may want to listen out for a message, rather than a command. This could be used for many cases like a spam filter, a bot that would respond to movie quotes with gifs, or a chat bot! However, in this page, we&apos;ll be using this to create a moderation filter (detect bad words).</para>
+<para><simplesect kind="warning"><para>As of August 30th, 2022, Discord made Message Content a privileged intent. Whilst this means you can still use prefixed messages as commands, Discord does not encourage this and heavily suggests you use <ref refid="slashcommands" kindref="compound">slash commands</ref>. If you wish to create commands, use <ref refid="slashcommands" kindref="compound">slash commands</ref>, not messages.</para>
+</simplesect>
+<programlisting filename="detecting_messages.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>the<sp/>bot,<sp/>but<sp/>with<sp/>our<sp/>intents<sp/>so<sp/>we<sp/>can<sp/>use<sp/>messages.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" kindref="member">dpp::i_default_intents</ref><sp/>|<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414" kindref="member">dpp::i_message_content</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>event<sp/>is<sp/>fired<sp/>when<sp/>the<sp/>bot<sp/>detects<sp/>a<sp/>message<sp/>in<sp/>any<sp/>server<sp/>and<sp/>any<sp/>channel<sp/>it<sp/>has<sp/>access<sp/>to.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_create([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__create__t" kindref="compound">dpp::message_create_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>See<sp/>if<sp/>the<sp/>message<sp/>contains<sp/>the<sp/>phrase<sp/>we<sp/>want<sp/>to<sp/>check<sp/>for.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>If<sp/>there&apos;s<sp/>at<sp/>least<sp/>a<sp/>single<sp/>match,<sp/>we<sp/>reply<sp/>and<sp/>say<sp/>it&apos;s<sp/>not<sp/>allowed.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1message__create__t_1a02298492087c0ba68eeb4ea8e42833b4" kindref="member">msg</ref>.<ref refid="structdpp_1_1message_1acb17877db423d2ac4b103a67e1ae2ff6" kindref="member">content</ref>.find(</highlight><highlight class="stringliteral">&quot;bad<sp/>word&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(</highlight><highlight class="stringliteral">&quot;That<sp/>is<sp/>not<sp/>allowed<sp/>here.<sp/>Please,<sp/>mind<sp/>your<sp/>language!&quot;</highlight><highlight class="normal">,<sp/>true);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>If all went well, you should have something like this!</para>
+<para><image type="html" name="badwordfilter.png"></image>
+ </para>
+    </detaileddescription>
+    <location file="docpages/example_programs/interactions_and_components/detecting-messages.md"/>
+  </compounddef>
+</doxygen>

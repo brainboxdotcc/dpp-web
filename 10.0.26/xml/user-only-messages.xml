@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="user-only-messages" kind="page">
+    <compoundname>user-only-messages</compoundname>
+    <title>Ephemeral replies (&apos;Only you can see this&apos; replies)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>If you&apos;ve used a discord bot, there&apos;s a chance that you&apos;ve encountered a message from one that said &quot;Only you can see this&quot; after you interacted with it (or executed a command). These messages are pretty helpful and can be used in many instances where you&apos;d only like the user that&apos;s interacting to see what&apos;s going on.</para>
+<para>Here&apos;s how you can do exactly that!</para>
+<para><programlisting filename="ephemeral.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>the<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>event<sp/>is<sp/>fired<sp/>when<sp/>someone<sp/>issues<sp/>your<sp/>commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_slashcommand([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1slashcommand__t" kindref="compound">dpp::slashcommand_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>which<sp/>command<sp/>they<sp/>ran<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">get_command_name</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;hello&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reply<sp/>to<sp/>the<sp/>user,<sp/>but<sp/>only<sp/>let<sp/>them<sp/>see<sp/>the<sp/>response.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(dpp::message(</highlight><highlight class="stringliteral">&quot;Hello!<sp/>How<sp/>are<sp/>you<sp/>today?&quot;</highlight><highlight class="normal">).set_flags(dpp::m_ephemeral));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>and<sp/>Register<sp/>the<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_command_create(<ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref>(</highlight><highlight class="stringliteral">&quot;hello&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Hello<sp/>there!&quot;</highlight><highlight class="normal">,<sp/>bot.me.id));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>That&apos;s it! If everything went well, it should look like this:</para>
+<para><image type="html" name="user_only_messages_image.png"></image>
+ </para>
+    </detaileddescription>
+    <location file="docpages/example_programs/interactions_and_components/user-only-messages.md"/>
+  </compounddef>
+</doxygen>

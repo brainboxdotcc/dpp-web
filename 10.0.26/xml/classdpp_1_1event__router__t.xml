@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1event__router__t" kind="class" language="C++" prot="public">
+    <compoundname>dpp::event_router_t</compoundname>
+    <includes local="no">event_router.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1event__router__t_1a93941955d9d15030232a5aaa08bb9afa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cluster</definition>
+        <argsstring></argsstring>
+        <name>cluster</name>
+        <param>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="203" column="14" bodyfile="include/dpp/event_router.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdpp_1_1event__router__t_1a4e278a27ba250ce3f647b2a695c01335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class detail::event_router::awaitable&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>detail::event_router::awaitable&lt; T &gt;</name>
+        <param>
+          <type><ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">detail::event_router::awaitable</ref>&lt; T &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="203" column="14" bodyfile="include/dpp/event_router.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::next_handle</definition>
+        <argsstring></argsstring>
+        <name>next_handle</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="209" column="14" bodyfile="include/dpp/event_router.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a9c7ea2aa22b81b8e44712e78959ee367" prot="private" static="no" mutable="yes">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::event_router_t&lt; T &gt;::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <briefdescription>
+<para>Thread safety mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="214" column="27" bodyfile="include/dpp/event_router.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref>, std::function&lt; void(const T &amp;)&gt; &gt;</type>
+        <definition>std::map&lt;event_handle, std::function&lt;void(const T&amp;)&gt; &gt; dpp::event_router_t&lt; T &gt;::dispatch_container</definition>
+        <argsstring></argsstring>
+        <name>dispatch_container</name>
+        <briefdescription>
+<para>Container of event listeners keyed by handle, as handles are handed out sequentially they will always be called in they order they are bound to the event as std::map is an ordered container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="222" column="10" bodyfile="include/dpp/event_router.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a271c8f75b9e62eec183aa1504b79cf4c" prot="private" static="no" mutable="yes">
+        <type>std::shared_mutex</type>
+        <definition>std::shared_mutex dpp::event_router_t&lt; T &gt;::coro_mutex</definition>
+        <argsstring></argsstring>
+        <name>coro_mutex</name>
+        <briefdescription>
+<para>Mutex for messing with coro_awaiters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="228" column="27" bodyfile="include/dpp/event_router.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a5c5ae452ad768011f34e295bb23d7fc5" prot="private" static="no" mutable="yes">
+        <type>std::vector&lt; <ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">detail::event_router::awaitable</ref>&lt; T &gt; * &gt;</type>
+        <definition>std::vector&lt;detail::event_router::awaitable&lt;T&gt; *&gt; dpp::event_router_t&lt; T &gt;::coro_awaiters</definition>
+        <argsstring></argsstring>
+        <name>coro_awaiters</name>
+        <briefdescription>
+<para>Vector containing the awaitables currently being awaited on for this event router. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="233" column="21" bodyfile="include/dpp/event_router.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1event__router__t_1a671901d510d29b517a62afd31c582a1b" prot="private" static="no" mutable="no">
+        <type>std::function&lt; void(const T &amp;)&gt;</type>
+        <definition>std::function&lt;void(const T&amp;)&gt; dpp::event_router_t&lt; T &gt;::warning</definition>
+        <argsstring></argsstring>
+        <name>warning</name>
+        <briefdescription>
+<para>A function to be called whenever the method is called, to check some condition that is required for this event to trigger correctly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="250" column="15" bodyfile="include/dpp/event_router.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a5a344ce973c4428d889d11c5f35bea74" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::event_router_t&lt; T &gt;::set_warning_callback</definition>
+        <argsstring>(std::function&lt; void(const T &amp;)&gt; warning_function)</argsstring>
+        <name>set_warning_callback</name>
+        <param>
+          <type>std::function&lt; void(const T &amp;)&gt;</type>
+          <declname>warning_function</declname>
+        </param>
+        <briefdescription>
+<para>Next handle to be given out by the event router. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the warning callback object used to check that this event is capable of running properly</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>warning_function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A checking function to call </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="264" column="6" bodyfile="include/dpp/event_router.h" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1ae83e7b537ef2c5a087e13257aac4e73d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::event_router_t&lt; T &gt;::attach_awaiter</definition>
+        <argsstring>(detail::event_router::awaitable&lt; T &gt; *awaiter)</argsstring>
+        <name>attach_awaiter</name>
+        <param>
+          <type><ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">detail::event_router::awaitable</ref>&lt; T &gt; *</type>
+          <declname>awaiter</declname>
+        </param>
+        <briefdescription>
+<para>Attach a suspended coroutine to this event router via <ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">detail::event_router::awaitable</ref>. It will be resumed and detached when an event satisfying its condition completes, or it is cancelled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is for internal usage only, the user way to do this is to co_await it (which will call this when suspending) This guarantees that the coroutine is indeed suspended and thus can be resumed at any time</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>awaiter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Awaiter to attach </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="278" column="6" bodyfile="include/dpp/event_router.h" bodystart="278" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a11d4ed56a2b579428a26ae77ac418854" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::event_router_t&lt; T &gt;::detach_coro</definition>
+        <argsstring>(void *handle)</argsstring>
+        <name>detach_coro</name>
+        <param>
+          <type>void *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Detach an awaiting coroutine handle from this event router. This is mostly called when a <ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">detail::event_router::awaitable</ref> is cancelled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coroutine handle to find in the attached coroutines </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="290" column="6" bodyfile="include/dpp/event_router.h" bodystart="290" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a67fa825b406bca67e2f7972f1428c597" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::event_router_t&lt; T &gt;::resume_awaiters</definition>
+        <argsstring>(const T &amp;event) const</argsstring>
+        <name>resume_awaiters</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Resume any awaiter whose predicate matches this event, or is null. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event to compare and pass to accepting awaiters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>If state == none (was never awaited), do nothing If state == waiting, prevent resumption, resume on our end If state == resuming || cancelling, ignore</para>
+<para>Technically only cancelling || waiting should be possible here We do this by trying to exchange &quot;waiting&quot; with &quot;resuming&quot;. If that returns false, this is presumed to be &quot;cancelling&quot;</para>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="301" column="6" bodyfile="include/dpp/event_router.h" bodystart="301" bodyend="336"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a5ead27e7e608a86b4622021fddb384c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_router_t&lt; T &gt;::event_router_t</definition>
+        <argsstring>()=default</argsstring>
+        <name>event_router_t</name>
+        <briefdescription>
+<para>Construct a new <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a17b89d58a79e87083b060a9c0800a8c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_router_t&lt; T &gt;::~event_router_t</definition>
+        <argsstring>()</argsstring>
+        <name>~event_router_t</name>
+        <briefdescription>
+<para>Destructor. Will cancel any coroutine awaiting on events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>!</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cancelling a coroutine will throw a <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref> to it. This will be caught in this destructor, however, make sure no other exceptions are thrown in the coroutine after that or it will terminate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="351" column="1" bodyfile="include/dpp/event_router.h" bodystart="351" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::event_router_t&lt; T &gt;::call</definition>
+        <argsstring>(const T &amp;event) const</argsstring>
+        <name>call</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Call all attached listeners. Listeners may cancel, by calling the event.cancel method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Class to pass as parameter to all listeners. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="375" column="6" bodyfile="include/dpp/event_router.h" bodystart="375" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a16c2527f66c8b74e5c0678ace4fa549e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Predicate</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto dpp::event_router_t&lt; T &gt;::when</definition>
+        <argsstring>(Predicate &amp;&amp;pred)</argsstring>
+        <name>when</name>
+        <param>
+          <type>Predicate &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>Obtain an awaitable object that refers to an event with a certain condition. It can be co_await-ed to wait for the next event that satisfies this condition. On resumption the awaiter will be given <bold>a reference</bold> to the event, saving it in a variable is recommended to avoid variable lifetime issues. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Example: <programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="structdpp_1_1job" kindref="compound">dpp::job</ref><sp/>my_handler(<ref refid="structdpp_1_1slashcommand__t" kindref="compound">dpp::slashcommand_t</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">co_await</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.co_reply(<ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>().add_component(<ref refid="classdpp_1_1component" kindref="compound">dpp::component</ref>().add_component().set_label(</highlight><highlight class="stringliteral">&quot;click<sp/>me!&quot;</highlight><highlight class="normal">).set_id(</highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="structdpp_1_1button__click__t" kindref="compound">dpp::button_click_t</ref><sp/><ref refid="namespacedpp_1_1unicode__emoji_1a1121b729a73cc36fb0bf2b8e3d7dc979" kindref="member">b</ref><sp/>=<sp/></highlight><highlight class="keyword">co_await</highlight><highlight class="normal"><sp/>c-&gt;on_button_click.with([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1button__click__t" kindref="compound">dpp::button_click_t</ref><sp/>&amp;event){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.custom_id<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal">;<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something<sp/>on<sp/>button<sp/>click</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>This can be combined with <ref refid="classdpp_1_1when__any" kindref="compound">dpp::when_any</ref> and other awaitables, for example <ref refid="classdpp_1_1cluster_1ab960df57796742a4013c7a492f782ed8" kindref="member">dpp::cluster::co_sleep</ref> to create <ref refid="expiring-buttons" kindref="compound">expiring buttons</ref>.</para>
+<para><simplesect kind="warning"><para>On resumption the awaiter will be given <bold>a reference</bold> to the event. This means that variable may become dangling at the next co_await, be careful and save it in a variable if you need to. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pred</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Predicate to check the event against. This should be a callable of the form <computeroutput>bool(const T&amp;)</computeroutput> where T is the event type, returning true if the event is to match. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>awaitable An awaitable object that can be co_await-ed to await an event matching the condition. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="422" column="6" bodyfile="include/dpp/event_router.h" bodystart="422" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a2223cf644fac6d4ab67b59236af4e63c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::event_router_t&lt; T &gt;::operator co_await</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>operator co_await</name>
+        <briefdescription>
+<para>Obtain an awaitable object that refers to any event. It can be co_await-ed to wait for the next event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Example:</para>
+<para>Example: <programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="structdpp_1_1job" kindref="compound">dpp::job</ref><sp/>my_handler(<ref refid="structdpp_1_1slashcommand__t" kindref="compound">dpp::slashcommand_t</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">co_await</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.co_reply(<ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref>().add_component(<ref refid="classdpp_1_1component" kindref="compound">dpp::component</ref>().add_component().set_label(</highlight><highlight class="stringliteral">&quot;click<sp/>me!&quot;</highlight><highlight class="normal">).set_id(</highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="structdpp_1_1button__click__t" kindref="compound">dpp::button_click_t</ref><sp/><ref refid="namespacedpp_1_1unicode__emoji_1a1121b729a73cc36fb0bf2b8e3d7dc979" kindref="member">b</ref><sp/>=<sp/></highlight><highlight class="keyword">co_await</highlight><highlight class="normal"><sp/>c-&gt;on_message_create;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something<sp/>on<sp/>button<sp/>click</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>This can be combined with <ref refid="classdpp_1_1when__any" kindref="compound">dpp::when_any</ref> and other awaitables, for example <ref refid="classdpp_1_1cluster_1ab960df57796742a4013c7a492f782ed8" kindref="member">dpp::cluster::co_sleep</ref> to create expiring buttons.</para>
+<para><simplesect kind="warning"><para>On resumption the awaiter will be given <bold>a reference</bold> to the event. This means that variable may become dangling at the next co_await, be careful and save it in a variable if you need to. </para>
+</simplesect>
+<simplesect kind="return"><para>awaitable An awaitable object that can be co_await-ed to await an event matching the condition. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="452" column="7" bodyfile="include/dpp/event_router.h" bodystart="452" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::event_router_t&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Returns true if the container of listeners is empty, i.e. there is nothing listening for this event right now. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there are no listeners </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there are some listeners </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="464" column="7" bodyfile="include/dpp/event_router.h" bodystart="464" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::event_router_t&lt; T &gt;::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>Returns true if any listeners are attached. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the boolean opposite of <ref refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" kindref="member">event_router_t::empty()</ref>. <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if listeners are attached </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if no listeners are attached </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="484" column="1" bodyfile="include/dpp/event_router.h" bodystart="484" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a1abf0dab2344fad5d1ce20d79c87dac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::operator()</definition>
+        <argsstring>(F &amp;&amp;fun)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+<para>Attach a callable to the event, adding a listener. The callable should either be of the form <computeroutput>void(const T &amp;)</computeroutput> or <computeroutput><ref refid="structdpp_1_1job" kindref="compound">dpp::job(T)</ref></computeroutput> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This has the exact same behavior as using <ref refid="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" kindref="member">attach</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" kindref="member">attach</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callable to attach to event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>event_handle An event handle unique to this event, used to detach the listener from the event later if necessary. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="503" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::event_router_t&lt; T &gt;::attach</definition>
+        <argsstring>(F &amp;&amp;fun)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+<para>Attach a callable to the event, adding a listener. The callable should either be of the form <computeroutput>void(const T &amp;)</computeroutput> or <computeroutput><ref refid="structdpp_1_1job" kindref="compound">dpp::job(T)</ref></computeroutput> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callable to attach to event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>event_handle An event handle unique to this event, used to detach the listener from the event later if necessary. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="516" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::event_router_t&lt; T &gt;::detach</definition>
+        <argsstring>(const event_handle &amp;handle)</argsstring>
+        <name>detach</name>
+        <param>
+          <type>const <ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref> &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Detach a listener from the event using a previously obtained ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>You cannot call this within an event handler.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An ID obtained from operator() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event was successfully detached </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID is invalid (possibly already detached, or does not exist) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="595" column="7" bodyfile="include/dpp/event_router.h" bodystart="595" bodyend="598"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Handles routing of an event to multiple listeners. Multiple listeners may attach to the <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> by means of <ref refid="classdpp_1_1event__router__t_1a1abf0dab2344fad5d1ce20d79c87dac0" kindref="member">operator()</ref>. Passing a lambda into <ref refid="classdpp_1_1event__router__t_1a1abf0dab2344fad5d1ce20d79c87dac0" kindref="member">operator()</ref> attaches to the event. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Dispatchers of the event may call the <ref refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" kindref="member">call()</ref> method to cause all listeners to receive the event.</para>
+<para>The <ref refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" kindref="member">empty()</ref> method will return true if there are no listeners attached to the <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> (this can be used to save time by not constructing objects that nobody will ever see).</para>
+<para>The <ref refid="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" kindref="member">detach()</ref> method removes an existing listener from the event, using the event_handle ID returned by <ref refid="classdpp_1_1event__router__t_1a1abf0dab2344fad5d1ce20d79c87dac0" kindref="member">operator()</ref>.</para>
+<para>This class is used by the library to route all websocket events to listening code.</para>
+<para>Example:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Declare<sp/>an<sp/>event<sp/>that<sp/>takes<sp/>log_t<sp/>as<sp/>its<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">event_router_t&lt;log_t&gt;<sp/>my_event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Attach<sp/>a<sp/>listener<sp/>to<sp/>the<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>my_event([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>log_t&amp;<sp/>cc)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>cc.message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Construct<sp/>a<sp/>log_t<sp/>and<sp/>call<sp/>the<sp/>event<sp/>(listeners<sp/>will<sp/>receive<sp/>the<sp/>log_t<sp/>object)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">log_t<sp/>lt;</highlight></codeline>
+<codeline><highlight class="normal">lt.message<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;foo&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">my_event.call(lt);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Detach<sp/>from<sp/>an<sp/>event<sp/>using<sp/>the<sp/>handle<sp/>returned<sp/>by<sp/>operator()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">my_event.detach(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of single parameter passed to event lambda derived from <ref refid="structdpp_1_1event__dispatch__t" kindref="compound">event_dispatch_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="include/dpp/event_router.h" line="201" column="11" bodyfile="include/dpp/event_router.h" bodystart="201" bodyend="599"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1event__router__t_1a636ce010bc662fd3d8c93a538786fc07" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach</name></member>
+      <member refid="classdpp_1_1event__router__t_1ae83e7b537ef2c5a087e13257aac4e73d" prot="protected" virt="non-virtual"><scope>dpp::event_router_t</scope><name>attach_awaiter</name></member>
+      <member refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>call</name></member>
+      <member refid="classdpp_1_1event__router__t_1a93941955d9d15030232a5aaa08bb9afa" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>cluster</name></member>
+      <member refid="classdpp_1_1event__router__t_1a5c5ae452ad768011f34e295bb23d7fc5" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>coro_awaiters</name></member>
+      <member refid="classdpp_1_1event__router__t_1a271c8f75b9e62eec183aa1504b79cf4c" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>coro_mutex</name></member>
+      <member refid="classdpp_1_1event__router__t_1a6cb1a37fce0778d18db0104b2e61b9f4" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>detach</name></member>
+      <member refid="classdpp_1_1event__router__t_1a11d4ed56a2b579428a26ae77ac418854" prot="protected" virt="non-virtual"><scope>dpp::event_router_t</scope><name>detach_coro</name></member>
+      <member refid="classdpp_1_1event__router__t_1a4e278a27ba250ce3f647b2a695c01335" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>detail::event_router::awaitable&lt; T &gt;</name></member>
+      <member refid="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>dispatch_container</name></member>
+      <member refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>empty</name></member>
+      <member refid="classdpp_1_1event__router__t_1a5ead27e7e608a86b4622021fddb384c3" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>event_router_t</name></member>
+      <member refid="classdpp_1_1event__router__t_1a9c7ea2aa22b81b8e44712e78959ee367" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>mutex</name></member>
+      <member refid="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>next_handle</name></member>
+      <member refid="classdpp_1_1event__router__t_1a98f8bb07280138a21bbdd2348912da5b" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator bool</name></member>
+      <member refid="classdpp_1_1event__router__t_1a2223cf644fac6d4ab67b59236af4e63c" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator co_await</name></member>
+      <member refid="classdpp_1_1event__router__t_1a1abf0dab2344fad5d1ce20d79c87dac0" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>operator()</name></member>
+      <member refid="classdpp_1_1event__router__t_1a67fa825b406bca67e2f7972f1428c597" prot="protected" virt="non-virtual"><scope>dpp::event_router_t</scope><name>resume_awaiters</name></member>
+      <member refid="classdpp_1_1event__router__t_1a5a344ce973c4428d889d11c5f35bea74" prot="protected" virt="non-virtual"><scope>dpp::event_router_t</scope><name>set_warning_callback</name></member>
+      <member refid="classdpp_1_1event__router__t_1a671901d510d29b517a62afd31c582a1b" prot="private" virt="non-virtual"><scope>dpp::event_router_t</scope><name>warning</name></member>
+      <member refid="classdpp_1_1event__router__t_1a16c2527f66c8b74e5c0678ace4fa549e" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>when</name></member>
+      <member refid="classdpp_1_1event__router__t_1a17b89d58a79e87083b060a9c0800a8c5" prot="public" virt="non-virtual"><scope>dpp::event_router_t</scope><name>~event_router_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
