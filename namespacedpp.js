@@ -6792,7 +6792,9 @@ var namespacedpp =
       [ "gm_did_rejoin", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a063bf801100f55dd689128ea1fd6ed45", null ],
       [ "gm_completed_onboarding", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a4d5bcd349947a93cbb6699ca019d935b", null ],
       [ "gm_bypasses_verification", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a1eb08ea12396d0f9c4384b3625bccc95", null ],
-      [ "gm_started_onboarding", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a598ddbf3ac6ff21d3d16d995b4f7816e", null ]
+      [ "gm_started_onboarding", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a598ddbf3ac6ff21d3d16d995b4f7816e", null ],
+      [ "gm_roles_action", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277ae80c079a4f8d2c2767f2511aa0b82d64", null ],
+      [ "gm_nickname_action", "namespacedpp.html#acd31b462e01d313c84ec3e7261168277a4e266ecccaa2d72369a1728230fbd6ae", null ]
     ] ],
     [ "guild_nsfw_level_t", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591", [
       [ "nsfw_default", "namespacedpp.html#afd5e6717b5f1f374c5c29f91394aa591a02ef7539f34acc2c71e80b9d5513e0fa", null ],
