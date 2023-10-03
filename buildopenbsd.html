@@ -101,7 +101,8 @@ $(document).ready(function(){initNavTree('buildopenbsd.html',''); initResizable(
   <div class="headertitle"><div class="title">Building on OpenBSD </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md81"></a>
+<div class="textblock"><dl class="section note"><dt>Note</dt><dd>This page assumes you are the root user. If you are not, start the package install commands with <code>doas</code>, along with <code>make install</code>.</dd></dl>
+<h2><a class="anchor" id="autotoc_md81"></a>
 1. Toolchain</h2>
 <p >Since the project uses <code>CMake</code>, you'll need to install it! If you don't have it, you can do the following:</p>
 <div class="fragment"><div class="line">pkg_add cmake</div>
@@ -115,26 +116,16 @@ $(document).ready(function(){initNavTree('buildopenbsd.html',''); initResizable(
 <div class="line">cmake --build ./build -j8</div>
 </div><!-- fragment --><p >Replace the number after <code>-j</code> with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
 <h2><a class="anchor" id="autotoc_md84"></a>
-2. Install globally</h2>
-<div class="fragment"><div class="line">cd build; sudo make install</div>
+4. Install Globally</h2>
+<div class="fragment"><div class="line">cd build; make install</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md85"></a>
-3. Installation to a different directory</h2>
+5. Installation to a Different Directory</h2>
 <p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>:</p>
 <div class="fragment"><div class="line">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</div>
 </div><!-- fragment --><p >Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
 <h2><a class="anchor" id="autotoc_md86"></a>
-4. Using the library</h2>
-<p >Once installed to the <code>/usr/local</code> directory, you can make use of the library in standalone programs simply by including it and linking to it:</p>
-<div class="fragment"><div class="line">clang++ -std=c++17 mydppbot.cpp -o dppbot -ldpp</div>
-</div><!-- fragment --><p >The important flags in this command-line are:</p>
-<ul>
-<li><code>-std=c++17</code> - Required to compile the headers</li>
-<li><code>-ldpp</code> - Link to libdpp.dylib</li>
-<li><code>mydppbot.cpp</code> - Your source code</li>
-<li><code>dppbot</code> - The name of the executable to make</li>
-</ul>
-<p ><dl class="section note"><dt>Note</dt><dd>Compiling your bot with a raw <code>g++</code> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <a class="el" href="buildcmake.html">Building a Discord Bot Using CMake (UNIX)</a> or if you have not yet created a token for your bot, <a class="el" href="creating-a-bot-application.html">Creating a Bot Token</a> - If you are having trouble setting up CMake, you can try <a href="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</a>.</dd></dl>
-</p>
+6. Using the Library</h2>
+<p >Once installed to the <code>/usr/local</code> directory, you can make use of the library in CMake, without linking to a folder! You can't use this with <code>clang++</code>, nor <code>g++</code>, as OpenBSD seems to be broken on this end, so your only option from here is to use CMake. This isn't a bad thing, as we recommend people to use CMake anyways!</p>
 <p ><b>Have fun!</b> </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->

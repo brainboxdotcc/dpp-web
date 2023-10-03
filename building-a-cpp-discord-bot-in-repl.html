@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Creating a Discord bot in Replit - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Creating a Discord Bot in Replit - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Creating a Discord bot in Replit - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Creating a Discord Bot in Replit - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Creating a Discord bot in Replit - D++ - The lightweight C++ Discord API Library">
-<title>Creating a Discord bot in Replit - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Creating a Discord Bot in Replit - D++ - The lightweight C++ Discord API Library">
+<title>Creating a Discord Bot in Replit - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,13 +98,14 @@ $(document).ready(function(){initNavTree('building-a-cpp-discord-bot-in-repl.htm
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Creating a Discord bot in Replit </div></div>
+  <div class="headertitle"><div class="title">Creating a Discord Bot in Replit </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section note"><dt>Note</dt><dd>There is a premade repl, ready for use which was built using the steps above. If you wish to use this repl simply <a href="https://github.com/alanlichen/dpp-on-repl">visit this github repository</a> and click the "Run on Replit" button. Then, follow the steps in the README file.</dd></dl>
-<p>To build a D++ bot in a Replit instance, follow these steps. These steps are slightly more convoluted than installing D++ into a standard container as we don't have access to root in the conventional way or write access to any files outside of our home directory in a repl. This guide sidesteps the issue by locally extracting a libdpp deb file installer, and referencing the local dependencies from the command-line.</p>
+<div class="textblock"><dl class="section warning"><dt>Warning</dt><dd>Be aware, Replit changes frequently, meaning DPP may not always work. It is out of our control and you simply have to hope that they change it again. If this is an inconvenience, we recommend you obtain some affordable non-free hosting.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>There is a premade repl, ready for use, which was built using the steps below. If you wish to use this repl simply <a href="https://github.com/alanlichen/dpp-on-repl">visit this GitHub repository</a> and click the "Run on Replit" button. Then, follow the steps in the README file.</dd></dl>
+<p>To build a D++ bot in a Replit instance, follow these steps. These steps are slightly more convoluted than installing D++ into a standard container as we don't have access to root in the conventional way or write access to any files outside of our home directory in a repl. This guide sidesteps the issue by locally extracting a <code>libdpp</code> deb file installer, and referencing the local dependencies from the command-line.</p>
 <ol type="1">
-<li>Use wget, or the upload button, to get the precompiled x64 release into your repl as a file, e.g. <code>wget -O libdpp.deb <a href="https://dl.dpp.dev/latest">https://dl.dpp.dev/latest</a></code></li>
+<li>Use wget, or the upload button, to get the precompiled x64 release into your repl as a file, e.g. <code>wget -O libdpp.deb <a href="https://dl.dpp.dev/latest">https://dl.dpp.dev/latest</a></code>,</li>
 <li>Extract this deb file using <code>dpkg</code>: <div class="fragment"><div class="line">dpkg -x libdpp.deb .</div>
 </div><!-- fragment --></li>
 <li>Compile your bot, note that you should be sure to include the <code>pthread</code> library explicitly and reference the extracted dpp installation you just put into the repl: <div class="fragment"><div class="line">g++ -o bot main.cpp -ldpp -lpthread -L./usr/lib -I./usr/include -std=c++17</div>
@@ -123,16 +124,19 @@ $(document).ready(function(){initNavTree('building-a-cpp-discord-bot-in-repl.htm
 <ul>
 <li>For Monitor Type, select "HTTP(s)"</li>
 <li>In Friendly Name, put the name of your bot</li>
-<li>For your url, copy the url of the new website that repl is serving for you</li>
-<li>Select any alert contacts you want, then click "Create Monitor" Here is an example of a possible uptimerobot configuration:</li>
+<li>For your URL, copy the URL of the new website that repl is serving for you</li>
+<li>Select any alert contacts you want, then click "Create Monitor"</li>
 </ul>
+<p >Here is an example of a possible uptimerobot configuration:</p>
 <div class="image">
 <img src="uptimerobot.png" alt=""/>
 </div>
 <h2><a class="anchor" id="autotoc_md143"></a>
 Troubleshooting</h2>
-<p >If the bot fails to start and instead you receive an error message about being banned from the Discord API, there is little to be done about this. These bans are temporary but because Replit is a shared platform, you share an IP address with many thousands of bots, some abusive and some badly written. This will happen often and is outside of the control of yourself and us. However, you can try to migitate this by typing <code>kill 1</code> in the shell. This is not guaranteed to work, and you might need to try it a few times. If it still does not work, then we recommend instead you obtain some affordable non-free hosting instead.</p>
-<p >If your bot continues to fall asleep even though you have a server, we advise you to double check that no errors are happening, and if the server is being pinged. If that still does not work, we again recommend you to obtain some affordable non-free hosting. </p>
+<ul>
+<li>If the bot fails to start and instead you receive an error message about being banned from the Discord API, there is little to be done about this. These bans are temporary but because Replit is a shared platform, you share an IP address with many thousands of bots, some abusive and some badly written. This will happen often and is outside of the control of yourself and us. However, you can try to mitigate this by typing <code>kill 1</code> in the shell. This is not guaranteed to work, and you might need to try it a few times. If it still does not work, then we recommend you obtain some affordable non-free hosting instead.</li>
+<li>If your bot continues to fall asleep even though you have a server, we advise you to double check that no errors are happening, and if the server is being pinged. If that still does not work then, again, we recommend you obtain some affordable non-free hosting. </li>
+</ul>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
