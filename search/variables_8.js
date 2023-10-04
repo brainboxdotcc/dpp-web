@@ -45,7 +45,7 @@ var searchData=
   ['handball_5ftone3_42',['handball_tone3',['../namespacedpp_1_1unicode__emoji.html#a36f7d9d3119d0860788e2492d7ef1f0d',1,'dpp::unicode_emoji']]],
   ['handball_5ftone4_43',['handball_tone4',['../namespacedpp_1_1unicode__emoji.html#ad0c94870b36944c167dbc39335f91ee6',1,'dpp::unicode_emoji']]],
   ['handball_5ftone5_44',['handball_tone5',['../namespacedpp_1_1unicode__emoji.html#a594cfaf172bc79672da0fb0fb0c3e5fc',1,'dpp::unicode_emoji']]],
-  ['handle_45',['handle',['../classdpp_1_1detail_1_1task_1_1task__base.html#ac6a6c07f2aa9ca8dcbd299b20148ad6e',1,'dpp::detail::task::task_base::handle()'],['../classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html#affcd44a3307517d7917953bd0b07572a',1,'dpp::detail::coroutine::coroutine_base::handle()'],['../structdpp_1_1timer__t.html#a4f1f9ed3d687cad53d683d017f0f21a6',1,'dpp::timer_t::handle()']]],
+  ['handle_45',['handle',['../classdpp_1_1detail_1_1task_1_1task__base.html#ac6a6c07f2aa9ca8dcbd299b20148ad6e',1,'dpp::detail::task::task_base::handle()'],['../structdpp_1_1timer__t.html#a4f1f9ed3d687cad53d683d017f0f21a6',1,'dpp::timer_t::handle()'],['../classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html#affcd44a3307517d7917953bd0b07572a',1,'dpp::detail::coroutine::coroutine_base::handle()']]],
   ['handshake_46',['handshake',['../namespacedpp_1_1unicode__emoji.html#ab55775c475105c66af2c9ac9eba73c2a',1,'dpp::unicode_emoji']]],
   ['handshake_5fdark_5fskin_5ftone_47',['handshake_dark_skin_tone',['../namespacedpp_1_1unicode__emoji.html#a35373f461ced39a7c05207a33186ebda',1,'dpp::unicode_emoji']]],
   ['handshake_5fdark_5fskin_5ftone_5flight_5fskin_5ftone_48',['handshake_dark_skin_tone_light_skin_tone',['../namespacedpp_1_1unicode__emoji.html#a2fe8047915ef0b3dfa854df2f5edcfca',1,'dpp::unicode_emoji']]],
@@ -136,7 +136,7 @@ var searchData=
   ['heart_5fhands_5ftone5_133',['heart_hands_tone5',['../namespacedpp_1_1unicode__emoji.html#a6232e6b44b30a17cdf695acddd3bbd78',1,'dpp::unicode_emoji']]],
   ['heart_5fon_5ffire_134',['heart_on_fire',['../namespacedpp_1_1unicode__emoji.html#a9ad656bbc46a13ef614f2d724734480b',1,'dpp::unicode_emoji']]],
   ['heartbeat_135',['heartbeat',['../namespacedpp_1_1unicode__emoji.html#a7bf337701df4dc164f3bd39f81bc4bc0',1,'dpp::unicode_emoji']]],
-  ['heartbeat_5finterval_136',['heartbeat_interval',['../classdpp_1_1discord__client.html#a62f72c7433043cbb61fe1917efabd2f7',1,'dpp::discord_client::heartbeat_interval()'],['../classdpp_1_1discord__voice__client.html#a20ea071ce2429f0eaad5fff783fc7281',1,'dpp::discord_voice_client::heartbeat_interval()']]],
+  ['heartbeat_5finterval_136',['heartbeat_interval',['../classdpp_1_1discord__voice__client.html#a20ea071ce2429f0eaad5fff783fc7281',1,'dpp::discord_voice_client::heartbeat_interval()'],['../classdpp_1_1discord__client.html#a62f72c7433043cbb61fe1917efabd2f7',1,'dpp::discord_client::heartbeat_interval()']]],
   ['heartpulse_137',['heartpulse',['../namespacedpp_1_1unicode__emoji.html#a63f06f5ad8cc84f52fdff1b3967a3f4f',1,'dpp::unicode_emoji']]],
   ['hearts_138',['hearts',['../namespacedpp_1_1unicode__emoji.html#a0bf75de1d00f634a1732095b1ca96885',1,'dpp::unicode_emoji']]],
   ['heavenly_5fblue_139',['heavenly_blue',['../namespacedpp_1_1colors.html#a7721857a3262c8af69680633f26e24ca',1,'dpp::colors']]],
@@ -195,8 +195,9 @@ var searchData=
   ['http_5fversion_192',['http_version',['../namespacedpp.html#a03c3e59edb221a7d235cc9fda57a7d34',1,'dpp']]],
   ['hugging_193',['hugging',['../namespacedpp_1_1unicode__emoji.html#ad5af1983b21d0695a5c6ee18c75ea278',1,'dpp::unicode_emoji']]],
   ['hugging_5fface_194',['hugging_face',['../namespacedpp_1_1unicode__emoji.html#a5267d7ac9b08839f26c88013283ed99d',1,'dpp::unicode_emoji']]],
-  ['hummingbird_5fgreen_195',['hummingbird_green',['../namespacedpp_1_1colors.html#a6987468c0cbc12a6df83f76c603ea7ec',1,'dpp::colors']]],
-  ['hunter_5fgreen_196',['hunter_green',['../namespacedpp_1_1colors.html#a759eb5930125c0e38e33064bd6c1192b',1,'dpp::colors']]],
-  ['hushed_197',['hushed',['../namespacedpp_1_1unicode__emoji.html#a54c4226f168173fe595f037ca8478895',1,'dpp::unicode_emoji']]],
-  ['hut_198',['hut',['../namespacedpp_1_1unicode__emoji.html#a718f733b89f12c7cb716fbe00f5f60a7',1,'dpp::unicode_emoji']]]
+  ['human_5freadable_195',['human_readable',['../structdpp_1_1error__info.html#af84a556aca00ab462f4ad33a7f1a1346',1,'dpp::error_info']]],
+  ['hummingbird_5fgreen_196',['hummingbird_green',['../namespacedpp_1_1colors.html#a6987468c0cbc12a6df83f76c603ea7ec',1,'dpp::colors']]],
+  ['hunter_5fgreen_197',['hunter_green',['../namespacedpp_1_1colors.html#a759eb5930125c0e38e33064bd6c1192b',1,'dpp::colors']]],
+  ['hushed_198',['hushed',['../namespacedpp_1_1unicode__emoji.html#a54c4226f168173fe595f037ca8478895',1,'dpp::unicode_emoji']]],
+  ['hut_199',['hut',['../namespacedpp_1_1unicode__emoji.html#a718f733b89f12c7cb716fbe00f5f60a7',1,'dpp::unicode_emoji']]]
 ];
