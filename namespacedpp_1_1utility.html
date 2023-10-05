@@ -214,6 +214,12 @@ Functions</h2></td></tr>
 <tr class="memitem:acfa947bc1c2e1863791a7ad60fe6cda7"><td class="memItemLeft" align="right" valign="top">uint32_t DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#acfa947bc1c2e1863791a7ad60fe6cda7">cmyk</a> (int c, int m, int y, int k)</td></tr>
 <tr class="memdesc:acfa947bc1c2e1863791a7ad60fe6cda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert ints to CMYK for sending in embeds.  <a href="namespacedpp_1_1utility.html#acfa947bc1c2e1863791a7ad60fe6cda7">More...</a><br /></td></tr>
 <tr class="separator:acfa947bc1c2e1863791a7ad60fe6cda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c85e81902aeadc32adbef539356e84"><td class="memItemLeft" align="right" valign="top">uint32_t DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#af8c85e81902aeadc32adbef539356e84">hsl</a> (double h, double s, double l)</td></tr>
+<tr class="memdesc:af8c85e81902aeadc32adbef539356e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert doubles to HSL for sending in embeds.  <a href="namespacedpp_1_1utility.html#af8c85e81902aeadc32adbef539356e84">More...</a><br /></td></tr>
+<tr class="separator:af8c85e81902aeadc32adbef539356e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c53029f0f43d875974b98d346a14ac"><td class="memItemLeft" align="right" valign="top">uint32_t DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a39c53029f0f43d875974b98d346a14ac">hsl</a> (int h, int s, int l)</td></tr>
+<tr class="memdesc:a39c53029f0f43d875974b98d346a14ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert ints to HSL for sending in embeds.  <a href="namespacedpp_1_1utility.html#a39c53029f0f43d875974b98d346a14ac">More...</a><br /></td></tr>
+<tr class="separator:a39c53029f0f43d875974b98d346a14ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02456e22a1d41893a9b321bf8ccaeec6"><td class="memItemLeft" align="right" valign="top">std::string DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1utility.html#a02456e22a1d41893a9b321bf8ccaeec6">debug_dump</a> (uint8_t *data, size_t length)</td></tr>
 <tr class="memdesc:a02456e22a1d41893a9b321bf8ccaeec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output hex values of a section of memory for debugging.  <a href="namespacedpp_1_1utility.html#a02456e22a1d41893a9b321bf8ccaeec6">More...</a><br /></td></tr>
 <tr class="separator:a02456e22a1d41893a9b321bf8ccaeec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1140,6 +1146,96 @@ Variables</h2></td></tr>
 
 <p>Returns true if D++ was built with voice support. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool True if voice support is compiled in (libsodium/libopus) </dd></dl>
+
+</div>
+</div>
+<a id="af8c85e81902aeadc32adbef539356e84" name="af8c85e81902aeadc32adbef539356e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c85e81902aeadc32adbef539356e84">&#9670;&nbsp;</a></span>hsl() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t DPP_EXPORT dpp::utility::hsl </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert doubles to HSL for sending in embeds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>hue value, between 0 and 1 inclusive </td></tr>
+    <tr><td class="paramname">s</td><td>saturation value in percentage, between 0 and 1 inclusive </td></tr>
+    <tr><td class="paramname">l</td><td>lightness value in percentage, between 0 and 1 inclusive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t returned integer colour value </dd></dl>
+
+</div>
+</div>
+<a id="a39c53029f0f43d875974b98d346a14ac" name="a39c53029f0f43d875974b98d346a14ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c53029f0f43d875974b98d346a14ac">&#9670;&nbsp;</a></span>hsl() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t DPP_EXPORT dpp::utility::hsl </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert ints to HSL for sending in embeds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>hue value, between 0 and 360 inclusive </td></tr>
+    <tr><td class="paramname">s</td><td>saturation value in percentage, between 0 and 100 inclusive </td></tr>
+    <tr><td class="paramname">l</td><td>lightness value in percentage, between 0 and 100 inclusive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t returned integer colour value </dd></dl>
 
 </div>
 </div>

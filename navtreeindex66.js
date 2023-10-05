@@ -1,5 +1,7 @@
 var NAVTREEINDEX66 =
 {
+"structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668":[11,0,0,210,16],
+"structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668":[9,0,0,214,16],
 "structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413":[11,0,0,210,14],
 "structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413":[9,0,0,214,14],
 "structdpp_1_1voice__receive__t.html#abe1ef957914a53b8fb970d25a8b79d50":[11,0,0,210,0],
