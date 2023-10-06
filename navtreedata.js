@@ -90,7 +90,7 @@ var NAVTREEINDEX =
 "classdpp_1_1connection.html#a058f38e961e2225b0fcf6ea3e3bd5c41",
 "classdpp_1_1discord__client.html#aac9224e26db7b8589fcf9ba312752ca8",
 "classdpp_1_1emoji.html#a2fb4faa1f825d684682415e2d632c83b",
-"classdpp_1_1events_1_1message__delete__bulk.html#af490e20825c0e1f17654b3c7a96ffd9d",
+"classdpp_1_1events_1_1message__delete__bulk.html#afbdeff222bc6251ed65b10a5c32af179",
 "classdpp_1_1guild.html#ab7b956f6c07d48e1184cb4b6c727af21",
 "classdpp_1_1https__client.html#ab78d925b79646c8d0f2aa76065cd1397",
 "classdpp_1_1managed.html#a9f086ed62419d373646e5d0e63667fd5",
