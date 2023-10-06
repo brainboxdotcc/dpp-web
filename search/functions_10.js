@@ -74,7 +74,7 @@ var searchData=
   ['set_5fnickname_71',['set_nickname',['../classdpp_1_1guild__member.html#adf919401f5e69225fb9fee91de8b7983',1,'dpp::guild_member']]],
   ['set_5fnonblocking_72',['set_nonblocking',['../namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3',1,'dpp']]],
   ['set_5fnsfw_73',['set_nsfw',['../classdpp_1_1channel.html#a602852256a543a6901aa5c87520aeb63',1,'dpp::channel::set_nsfw()'],['../classdpp_1_1slashcommand.html#a2b923f92b445d62757c8bfc690258fb1',1,'dpp::slashcommand::set_nsfw()']]],
-  ['set_5fobject_5farray_5fnot_5fnull_74',['set_object_array_not_null',['../namespacedpp.html#aed1ec265a224edde190f89f1946ee13b',1,'dpp']]],
+  ['set_5fobject_5farray_5fnot_5fnull_74',['set_object_array_not_null',['../namespacedpp.html#a40017b1fc8a8c0ae1a11971ea164305a',1,'dpp']]],
   ['set_5fowner_75',['set_owner',['../classdpp_1_1commandhandler.html#a8640d327288a6dd1c5fdbde85726e7de',1,'dpp::commandhandler']]],
   ['set_5fparent_5fid_76',['set_parent_id',['../classdpp_1_1channel.html#a8b5cd8634b4c8873be389b3d747615d7',1,'dpp::channel']]],
   ['set_5fpermission_5foverwrite_77',['set_permission_overwrite',['../classdpp_1_1channel.html#ab706e02060df6f3ee63a76833f98558e',1,'dpp::channel']]],

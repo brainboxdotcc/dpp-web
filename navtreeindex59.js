@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525":[9,0,0,140,1,3],
 "structdpp_1_1message_1_1message__interaction__struct.html#a69bd295380f5f5395bdb0cb21dcf9111":[11,0,0,136,1,2],
 "structdpp_1_1message_1_1message__interaction__struct.html#a69bd295380f5f5395bdb0cb21dcf9111":[9,0,0,140,1,2],
 "structdpp_1_1message_1_1message__ref.html":[11,0,0,136,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "structdpp_1_1message__reaction__add__t.html#aea2cff2ccbbbaf2a7510e8285884f6dc":[9,0,0,146,17],
 "structdpp_1_1message__reaction__add__t.html#af32126d4ed56366b4413c84b272383b7":[11,0,0,142,4],
 "structdpp_1_1message__reaction__add__t.html#af32126d4ed56366b4413c84b272383b7":[9,0,0,146,4],
-"structdpp_1_1message__reaction__remove__all__t.html":[9,0,0,147],
-"structdpp_1_1message__reaction__remove__all__t.html":[11,0,0,143]
+"structdpp_1_1message__reaction__remove__all__t.html":[9,0,0,147]
 };

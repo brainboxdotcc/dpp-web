@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"namespacedpp_1_1unicode__emoji.html#af9aefb69c4e5c86c130465abda110f3c":[9,0,0,5,101],
 "namespacedpp_1_1unicode__emoji.html#af9bf6afcbc2625f3d178ee201521f32e":[9,0,0,5,1265],
 "namespacedpp_1_1unicode__emoji.html#af9c52fe2be9427e8d5fbd7df3b6fde35":[9,0,0,5,5417],
 "namespacedpp_1_1unicode__emoji.html#af9c6e5234a7651e29658e0ca17b2cc02":[9,0,0,5,3638],
@@ -230,8 +231,8 @@ var NAVTREEINDEX47 =
 "namespacemembers_d.html":[9,1,0,4],
 "namespacemembers_e.html":[9,1,0,5],
 "namespacemembers_enum.html":[9,1,4],
-"namespacemembers_eval.html":[9,1,5],
 "namespacemembers_eval.html":[9,1,5,0],
+"namespacemembers_eval.html":[9,1,5],
 "namespacemembers_eval_c.html":[9,1,5,1],
 "namespacemembers_eval_d.html":[9,1,5,2],
 "namespacemembers_eval_e.html":[9,1,5,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "namespacemembers_eval_s.html":[9,1,5,14],
 "namespacemembers_eval_t.html":[9,1,5,15],
 "namespacemembers_eval_u.html":[9,1,5,16],
-"namespacemembers_eval_v.html":[9,1,5,17],
-"namespacemembers_eval_w.html":[9,1,5,18]
+"namespacemembers_eval_v.html":[9,1,5,17]
 };

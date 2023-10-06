@@ -1999,10 +1999,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ac680cc6f997c9acf358c3355c0e985c5"><td class="memItemLeft" align="right" valign="top">void DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac680cc6f997c9acf358c3355c0e985c5">set_snowflake_array_not_null</a> (const nlohmann::json *j, const char *keyname, std::vector&lt; class <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; &amp;v)</td></tr>
 <tr class="memdesc:ac680cc6f997c9acf358c3355c0e985c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an array of snowflakes from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#ac680cc6f997c9acf358c3355c0e985c5">More...</a><br /></td></tr>
 <tr class="separator:ac680cc6f997c9acf358c3355c0e985c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed1ec265a224edde190f89f1946ee13b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aed1ec265a224edde190f89f1946ee13b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_base_of_v&lt; <a class="el" href="structdpp_1_1json__interface.html">json_interface</a>&lt; T &gt;, T &gt;, void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aed1ec265a224edde190f89f1946ee13b">set_object_array_not_null</a> (nlohmann::json *j, const char *keyname, std::vector&lt; T &gt; &amp;v)</td></tr>
-<tr class="memdesc:aed1ec265a224edde190f89f1946ee13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an array of objects from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#aed1ec265a224edde190f89f1946ee13b">More...</a><br /></td></tr>
-<tr class="separator:aed1ec265a224edde190f89f1946ee13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2483e17cd4de135cbb939c89c48ecd1"><td class="memItemLeft" align="right" valign="top">void DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af2483e17cd4de135cbb939c89c48ecd1">for_each_json</a> (nlohmann::json *parent, std::string_view key, std::function&lt; void(const nlohmann::json *)&gt; fn)</td></tr>
+<tr class="memdesc:af2483e17cd4de135cbb939c89c48ecd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each element of a json array.  <a href="namespacedpp.html#af2483e17cd4de135cbb939c89c48ecd1">More...</a><br /></td></tr>
+<tr class="separator:af2483e17cd4de135cbb939c89c48ecd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40017b1fc8a8c0ae1a11971ea164305a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a40017b1fc8a8c0ae1a11971ea164305a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a40017b1fc8a8c0ae1a11971ea164305a">set_object_array_not_null</a> (nlohmann::json *j, std::string_view key, std::vector&lt; T &gt; &amp;v)</td></tr>
+<tr class="memdesc:a40017b1fc8a8c0ae1a11971ea164305a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an array of objects from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#a40017b1fc8a8c0ae1a11971ea164305a">More...</a><br /></td></tr>
+<tr class="separator:a40017b1fc8a8c0ae1a11971ea164305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf57d9793b70d4b4da431491ab263298"><td class="memItemLeft" align="right" valign="top">std::string DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#adf57d9793b70d4b4da431491ab263298">string_not_null</a> (const nlohmann::json *j, const char *keyname)</td></tr>
 <tr class="memdesc:adf57d9793b70d4b4da431491ab263298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string from a json field value, if defined, else returns an empty string.  <a href="namespacedpp.html#adf57d9793b70d4b4da431491ab263298">More...</a><br /></td></tr>
 <tr class="separator:adf57d9793b70d4b4da431491ab263298"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5893,6 +5896,50 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="af2483e17cd4de135cbb939c89c48ecd1" name="af2483e17cd4de135cbb939c89c48ecd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2483e17cd4de135cbb939c89c48ecd1">&#9670;&nbsp;</a></span>for_each_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPP_EXPORT dpp::for_each_json </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(const nlohmann::json *)&gt;&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies a function to each element of a json array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td>nlohmann::json instance to retrieve value from </td></tr>
+    <tr><td class="paramname">key</td><td>key name to check for the values </td></tr>
+    <tr><td class="paramname">fn</td><td>function to apply to each element </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a965939ea98a0cc2a038250fc73bd6e10" name="a965939ea98a0cc2a038250fc73bd6e10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a965939ea98a0cc2a038250fc73bd6e10">&#9670;&nbsp;</a></span>from_json() <span class="overload">[1/8]</span></h2>
 
@@ -8090,8 +8137,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aed1ec265a224edde190f89f1946ee13b" name="aed1ec265a224edde190f89f1946ee13b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed1ec265a224edde190f89f1946ee13b">&#9670;&nbsp;</a></span>set_object_array_not_null()</h2>
+<a id="a40017b1fc8a8c0ae1a11971ea164305a" name="a40017b1fc8a8c0ae1a11971ea164305a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40017b1fc8a8c0ae1a11971ea164305a">&#9670;&nbsp;</a></span>set_object_array_not_null()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8099,7 +8146,7 @@ template&lt;typename T &gt; </div>
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if_t&lt; std::is_base_of_v&lt; <a class="el" href="structdpp_1_1json__interface.html">json_interface</a>&lt; T &gt;, T &gt;, void &gt; dpp::set_object_array_not_null </td>
+          <td class="memname">void dpp::set_object_array_not_null </td>
           <td>(</td>
           <td class="paramtype">nlohmann::json *&#160;</td>
           <td class="paramname"><em>j</em>, </td>
@@ -8107,8 +8154,8 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>keyname</em>, </td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
