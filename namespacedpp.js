@@ -7199,7 +7199,7 @@ var namespacedpp =
     [ "find_guild_member", "namespacedpp.html#a239ce3fb8b4d9873dffeb5cb9b249f5d", null ],
     [ "find_role", "namespacedpp.html#a608a89c45f1a0d89535b9165a1225ada", null ],
     [ "find_user", "namespacedpp.html#aafb458435d5650149340555ecd43f93f", null ],
-    [ "for_each_json", "namespacedpp.html#af2483e17cd4de135cbb939c89c48ecd1", null ],
+    [ "for_each_json", "namespacedpp.html#a385bc0f4ac8bbaabbd5e804dc58e8926", null ],
     [ "from_json", "namespacedpp.html#a965939ea98a0cc2a038250fc73bd6e10", null ],
     [ "from_json", "namespacedpp.html#ac2ac98206ba62a7ddba95355743a9e07", null ],
     [ "from_json", "namespacedpp.html#a1bfffa121ee7a78fe2c0e4d4a9a7fa17", null ],

@@ -1999,9 +1999,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac680cc6f997c9acf358c3355c0e985c5"><td class="memItemLeft" align="right" valign="top">void DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ac680cc6f997c9acf358c3355c0e985c5">set_snowflake_array_not_null</a> (const nlohmann::json *j, const char *keyname, std::vector&lt; class <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; &amp;v)</td></tr>
 <tr class="memdesc:ac680cc6f997c9acf358c3355c0e985c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an array of snowflakes from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#ac680cc6f997c9acf358c3355c0e985c5">More...</a><br /></td></tr>
 <tr class="separator:ac680cc6f997c9acf358c3355c0e985c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2483e17cd4de135cbb939c89c48ecd1"><td class="memItemLeft" align="right" valign="top">void DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af2483e17cd4de135cbb939c89c48ecd1">for_each_json</a> (nlohmann::json *parent, std::string_view key, std::function&lt; void(const nlohmann::json *)&gt; fn)</td></tr>
-<tr class="memdesc:af2483e17cd4de135cbb939c89c48ecd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each element of a json array.  <a href="namespacedpp.html#af2483e17cd4de135cbb939c89c48ecd1">More...</a><br /></td></tr>
-<tr class="separator:af2483e17cd4de135cbb939c89c48ecd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385bc0f4ac8bbaabbd5e804dc58e8926"><td class="memItemLeft" align="right" valign="top">void DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a385bc0f4ac8bbaabbd5e804dc58e8926">for_each_json</a> (nlohmann::json *parent, std::string_view key, const std::function&lt; void(nlohmann::json *)&gt; &amp;fn)</td></tr>
+<tr class="memdesc:a385bc0f4ac8bbaabbd5e804dc58e8926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each element of a json array.  <a href="namespacedpp.html#a385bc0f4ac8bbaabbd5e804dc58e8926">More...</a><br /></td></tr>
+<tr class="separator:a385bc0f4ac8bbaabbd5e804dc58e8926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40017b1fc8a8c0ae1a11971ea164305a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a40017b1fc8a8c0ae1a11971ea164305a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a40017b1fc8a8c0ae1a11971ea164305a">set_object_array_not_null</a> (nlohmann::json *j, std::string_view key, std::vector&lt; T &gt; &amp;v)</td></tr>
 <tr class="memdesc:a40017b1fc8a8c0ae1a11971ea164305a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an array of objects from a json field value, if defined, else does nothing.  <a href="namespacedpp.html#a40017b1fc8a8c0ae1a11971ea164305a">More...</a><br /></td></tr>
@@ -5896,8 +5896,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="af2483e17cd4de135cbb939c89c48ecd1" name="af2483e17cd4de135cbb939c89c48ecd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2483e17cd4de135cbb939c89c48ecd1">&#9670;&nbsp;</a></span>for_each_json()</h2>
+<a id="a385bc0f4ac8bbaabbd5e804dc58e8926" name="a385bc0f4ac8bbaabbd5e804dc58e8926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385bc0f4ac8bbaabbd5e804dc58e8926">&#9670;&nbsp;</a></span>for_each_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5917,7 +5917,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(const nlohmann::json *)&gt;&#160;</td>
+          <td class="paramtype">const std::function&lt; void(nlohmann::json *)&gt; &amp;&#160;</td>
           <td class="paramname"><em>fn</em>&#160;</td>
         </tr>
         <tr>
