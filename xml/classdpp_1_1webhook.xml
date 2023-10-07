@@ -137,6 +137,7 @@
         <definition>snowflake dpp::managed::id</definition>
         <argsstring></argsstring>
         <name>id</name>
+        <initializer>= {}</initializer>
         <briefdescription>
 <para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
         </briefdescription>
@@ -379,10 +380,10 @@
         </inbodydescription>
         <location file="include/dpp/webhook.h" line="107" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double dpp::managed::get_creation_time</definition>
-        <argsstring>() const</argsstring>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
         <name>get_creation_time</name>
         <briefdescription>
 <para>Get the creation time of this object according to Discord. </para>
@@ -394,11 +395,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="56" column="8"/>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::managed::operator==</definition>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator==</definition>
         <argsstring>(const managed &amp;other) const noexcept</argsstring>
         <name>operator==</name>
         <param>
@@ -426,11 +427,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="65" column="6"/>
+        <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::managed::operator!=</definition>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
         <argsstring>(const managed &amp;other) const noexcept</argsstring>
         <name>operator!=</name>
         <param>
@@ -458,7 +459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="74" column="6"/>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -562,15 +563,20 @@
       <member refid="classdpp_1_1webhook_1ac1f29716c2c816be5b33595c096c82c7" prot="public" virt="virtual"><scope>dpp::webhook</scope><name>build_json</name></member>
       <member refid="classdpp_1_1webhook_1ae553e70e26e0062648d0280aa74eaed0" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>channel_id</name></member>
       <member refid="classdpp_1_1webhook_1a4f1b04636a0847a3de8e0513d203f1f8" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>fill_from_json</name></member>
-      <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>get_creation_time</name></member>
+      <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>get_creation_time</name></member>
       <member refid="classdpp_1_1webhook_1aeb4a3c383260167ef6a05fe2e31f2e75" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>guild_id</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>id</name></member>
       <member refid="classdpp_1_1webhook_1ade12623a3521f4d7d68f11c26ab79a5b" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>image_data</name></member>
       <member refid="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>load_image</name></member>
-      <member refid="classdpp_1_1managed_1a30e9c7c9cef4cd42487f0be61aa616d0" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a46f260c92af75ade75fede7cd3d25f37" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a01f791997df9e69e7edcd769881db094" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1abacb65cc2cf478541618fedae5250f0e" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a20c5eb20346bf7e7b4970f62e00d9b0f" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
       <member refid="classdpp_1_1webhook_1af982ac0a68dd3f81fcb267a713d338f3" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>name</name></member>
-      <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator!=</name></member>
-      <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator!=</name></member>
+      <member refid="classdpp_1_1managed_1a6a038662365a651079a1e8d46bcf90f0" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1ab44dbed273c2fb3a8e5d66e76e7e0eae" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator==</name></member>
       <member refid="classdpp_1_1webhook_1a1500f11e74b9a859f0cd0c4cf9d135b0" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>token</name></member>
       <member refid="classdpp_1_1webhook_1a2b988a9005bc38b8eebd99dabdf1ecbe" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>type</name></member>
       <member refid="classdpp_1_1webhook_1ad83876476eeaec943e4abf3411dfb840" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>user_id</name></member>
@@ -578,7 +584,7 @@
       <member refid="classdpp_1_1webhook_1a50c826b1dfd536f839f2a71ddf60bedd" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>webhook</name></member>
       <member refid="classdpp_1_1webhook_1a4e3d93a96dace41ced1a91474847403d" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>webhook</name></member>
       <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::webhook</scope><name>~json_interface</name></member>
-      <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::webhook</scope><name>~managed</name></member>
+      <member refid="classdpp_1_1managed_1aa2a41ada5edd0625331162f05e1a4f43" prot="public" virt="virtual"><scope>dpp::webhook</scope><name>~managed</name></member>
       <member refid="classdpp_1_1webhook_1aa5f6e90d2be315fd438b827e25447a36" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>~webhook</name></member>
     </listofallmembers>
   </compounddef>

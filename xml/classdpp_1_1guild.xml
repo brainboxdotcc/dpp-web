@@ -535,6 +535,7 @@
         <definition>snowflake dpp::managed::id</definition>
         <argsstring></argsstring>
         <name>id</name>
+        <initializer>= {}</initializer>
         <briefdescription>
 <para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
         </briefdescription>
@@ -1764,10 +1765,10 @@
         </inbodydescription>
         <location file="include/dpp/guild.h" line="1143" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double dpp::managed::get_creation_time</definition>
-        <argsstring>() const</argsstring>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
         <name>get_creation_time</name>
         <briefdescription>
 <para>Get the creation time of this object according to Discord. </para>
@@ -1779,11 +1780,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="56" column="8"/>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::managed::operator==</definition>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator==</definition>
         <argsstring>(const managed &amp;other) const noexcept</argsstring>
         <name>operator==</name>
         <param>
@@ -1811,11 +1812,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="65" column="6"/>
+        <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool dpp::managed::operator!=</definition>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
         <argsstring>(const managed &amp;other) const noexcept</argsstring>
         <name>operator!=</name>
         <param>
@@ -1843,7 +1844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/managed.h" line="74" column="6"/>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2132,7 +2133,7 @@
       <member refid="classdpp_1_1guild_1a0525bf0e263ae902a4d6fb295691cb34" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>flags</name></member>
       <member refid="classdpp_1_1guild_1af09066eb2f5988e268b5fe05b138ab5a" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>flags_extra</name></member>
       <member refid="classdpp_1_1guild_1a480e1091c2a035c99643ae9ebf5d38d0" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>get_banner_url</name></member>
-      <member refid="classdpp_1_1managed_1aa66e351fb6573a9d262ffdb2f47681b7" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>get_creation_time</name></member>
+      <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>get_creation_time</name></member>
       <member refid="classdpp_1_1guild_1a93d1d4faed6aaa0a13455a8a29c09542" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>get_discovery_splash_url</name></member>
       <member refid="classdpp_1_1guild_1ae4ec3933e358da2036b547952b6758c8" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>get_icon_url</name></member>
       <member refid="classdpp_1_1guild_1aa9e79b8daf552f520262339d60df9a2c" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>get_splash_url</name></member>
@@ -2173,7 +2174,10 @@
       <member refid="classdpp_1_1guild_1ab7b956f6c07d48e1184cb4b6c727af21" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>is_unavailable</name></member>
       <member refid="classdpp_1_1guild_1af79641512c0342d3082174afa2e636e8" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>is_verified</name></member>
       <member refid="classdpp_1_1guild_1a7d1ad4ac2b329f47948c91fe4277932e" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>is_welcome_screen_enabled</name></member>
-      <member refid="classdpp_1_1managed_1a30e9c7c9cef4cd42487f0be61aa616d0" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a46f260c92af75ade75fede7cd3d25f37" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a01f791997df9e69e7edcd769881db094" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1abacb65cc2cf478541618fedae5250f0e" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a20c5eb20346bf7e7b4970f62e00d9b0f" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>managed</name></member>
       <member refid="classdpp_1_1guild_1a32e894208805a5326e7a506c73425854" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>max_members</name></member>
       <member refid="classdpp_1_1guild_1ae5071e531ebbf2b8ae42dfbf409af494" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>max_presences</name></member>
       <member refid="classdpp_1_1guild_1a76661c06c1ee85a3377db6fdd2b2c2c1" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>max_video_channel_users</name></member>
@@ -2182,8 +2186,10 @@
       <member refid="classdpp_1_1guild_1a8a37aaf8be3dadbcba87269bd8405946" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>mfa_level</name></member>
       <member refid="classdpp_1_1guild_1ab39f33c8525ab7f7a02f8e88b0448c1f" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>name</name></member>
       <member refid="classdpp_1_1guild_1a6520b72031ed26371bb23dc9c23b60c0" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>nsfw_level</name></member>
-      <member refid="classdpp_1_1managed_1a9f086ed62419d373646e5d0e63667fd5" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>operator!=</name></member>
-      <member refid="classdpp_1_1managed_1aaae075e2919ee153d9c1ed34c41b8a33" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>operator!=</name></member>
+      <member refid="classdpp_1_1managed_1a6a038662365a651079a1e8d46bcf90f0" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1ab44dbed273c2fb3a8e5d66e76e7e0eae" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>operator==</name></member>
       <member refid="classdpp_1_1guild_1a4f608587f82bc3deab0974aeb30b2f24" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>owner_id</name></member>
       <member refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>permission_overwrites</name></member>
       <member refid="classdpp_1_1guild_1a9688339669113aae291c5987beee9f24" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>permission_overwrites</name></member>
@@ -2207,7 +2213,7 @@
       <member refid="classdpp_1_1guild_1afdfe3c2bd4025d259b42dedddc2301a1" prot="public" virt="non-virtual"><scope>dpp::guild</scope><name>widget_enabled</name></member>
       <member refid="classdpp_1_1guild_1a7e494da5ab1aaaddae4d588849ea9f14" prot="public" virt="virtual"><scope>dpp::guild</scope><name>~guild</name></member>
       <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::guild</scope><name>~json_interface</name></member>
-      <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::guild</scope><name>~managed</name></member>
+      <member refid="classdpp_1_1managed_1aa2a41ada5edd0625331162f05e1a4f43" prot="public" virt="virtual"><scope>dpp::guild</scope><name>~managed</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

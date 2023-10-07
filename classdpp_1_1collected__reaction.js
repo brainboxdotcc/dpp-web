@@ -1,8 +1,8 @@
 var classdpp_1_1collected__reaction =
 [
-    [ "get_creation_time", "classdpp_1_1collected__reaction.html#aa66e351fb6573a9d262ffdb2f47681b7", null ],
-    [ "operator!=", "classdpp_1_1collected__reaction.html#a9f086ed62419d373646e5d0e63667fd5", null ],
-    [ "operator==", "classdpp_1_1collected__reaction.html#aaae075e2919ee153d9c1ed34c41b8a33", null ],
+    [ "get_creation_time", "classdpp_1_1collected__reaction.html#a38d7b0a8ddf537cb9668c3c0ff202940", null ],
+    [ "operator!=", "classdpp_1_1collected__reaction.html#a337e3e4ac1fd30d77279dc41ceba3995", null ],
+    [ "operator==", "classdpp_1_1collected__reaction.html#a9d1b5a4d84b9c7938825c659813bf100", null ],
     [ "id", "classdpp_1_1collected__reaction.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "message_author_id", "classdpp_1_1collected__reaction.html#a3ba3260f707ff5862d1661f4f722c8a2", null ],
     [ "react_channel", "classdpp_1_1collected__reaction.html#ac920db9b2df7abae4ea577fa32dd496d", null ],
