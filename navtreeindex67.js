@@ -1,5 +1,6 @@
 var NAVTREEINDEX67 =
 {
+"structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html#a66dafb3f4078fbcd59a42106a2ff16eb":[11,0,1,0,0],
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html#a66dafb3f4078fbcd59a42106a2ff16eb":[9,0,1,0,0],
 "subcommands.html":[5,1,1],
 "the-basics.html":[5,0],
