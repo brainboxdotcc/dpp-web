@@ -849,7 +849,7 @@ var searchData=
   ['creating_20a_20discord_20bot_846',['Creating a Discord Bot',['../creating-a-discord-bot.html',1,'']]],
   ['creating_20a_20discord_20bot_20in_20replit_847',['Creating a Discord Bot in Replit',['../building-a-cpp-discord-bot-in-repl.html',1,'creating-a-discord-bot']]],
   ['creating_20a_20sound_20board_848',['Creating a Sound Board',['../soundboard.html',1,'music-and-audio']]],
-  ['creating_20and_20talking_20in_20a_20thread_849',['Creating and talking in a thread',['../making_threads.html',1,'interactions-and-components']]],
+  ['creating_20and_20interacting_20with_20threads_849',['Creating and interacting with threads',['../making_threads.html',1,'interactions-and-components']]],
   ['creating_20your_20first_20bot_850',['Creating Your First Bot',['../firstbot.html',1,'the-basics']]],
   ['creating_5fguild_851',['creating_guild',['../structdpp_1_1guild__role__create__t.html#abf1677c16593fd8c6c8f9914d8c2292d',1,'dpp::guild_role_create_t::creating_guild()'],['../structdpp_1_1channel__create__t.html#a8c8f9f215eed9b1e99adc12eafdee945',1,'dpp::channel_create_t::creating_guild()'],['../structdpp_1_1thread__create__t.html#a096df9aa1bb92c18a69edcf2daee29db',1,'dpp::thread_create_t::creating_guild()']]],
   ['creator_852',['creator',['../classdpp_1_1discord__client.html#afed78d2e1b09e006ede8b4690895a866',1,'dpp::discord_client::creator()'],['../classdpp_1_1discord__voice__client.html#a23cac9565c94195b8050df206d29d6b2',1,'dpp::discord_voice_client::creator()'],['../classdpp_1_1request__queue.html#afc5bd2c27798f38630d996d1666dbbca',1,'dpp::request_queue::creator()'],['../structdpp_1_1scheduled__event.html#a00779228a1511d4d256156c68fc058a5',1,'dpp::scheduled_event::creator()']]],

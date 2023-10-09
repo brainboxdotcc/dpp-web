@@ -13,6 +13,6 @@ var interactions_and_components =
     [ "Slash command auto completion", "application-command-autocomplete.html", null ],
     [ "Using file parameters for application commands (slash commands)", "discord-application-command-file-upload.html", null ],
     [ "Sending private messages", "private-messaging.html", null ],
-    [ "Creating and talking in a thread", "making_threads.html", null ],
+    [ "Creating and interacting with threads", "making_threads.html", null ],
     [ "Using Resolved Objects", "resolved-objects.html", null ]
 ];
