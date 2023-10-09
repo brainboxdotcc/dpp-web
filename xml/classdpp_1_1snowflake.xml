@@ -96,7 +96,7 @@
           </param>
           <param>
             <type>typename</type>
-            <defval>std::enable_if_t&lt;std::is_integral_v&lt;T&gt;&gt;</defval>
+            <defval>std::enable_if_t&lt;std::is_integral_v&lt;T&gt; &amp;&amp; !std::is_same_v&lt;T, bool&gt;&gt;</defval>
           </param>
         </templateparamlist>
         <type>constexpr</type>

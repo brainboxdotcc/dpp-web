@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5dea3adfe24a33bcfcd1cdf0de9e86ac"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1snowflake.html#a5dea3adfe24a33bcfcd1cdf0de9e86ac">snowflake</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &amp;&amp;rhs) noexcept=default</td></tr>
 <tr class="memdesc:a5dea3adfe24a33bcfcd1cdf0de9e86ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a snowflake object.  <a href="classdpp_1_1snowflake.html#a5dea3adfe24a33bcfcd1cdf0de9e86ac">More...</a><br /></td></tr>
 <tr class="separator:a5dea3adfe24a33bcfcd1cdf0de9e86ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c3c6bcc9d08ce01e0aff0246f228e47"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_integral_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a6c3c6bcc9d08ce01e0aff0246f228e47"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_integral_v&lt;T&gt; &amp;&amp; !std::is_same_v&lt;T, bool&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a6c3c6bcc9d08ce01e0aff0246f228e47"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1snowflake.html#a6c3c6bcc9d08ce01e0aff0246f228e47">snowflake</a> (T snowflake_val) noexcept(std::is_unsigned_v&lt; T &gt;)</td></tr>
 <tr class="memdesc:a6c3c6bcc9d08ce01e0aff0246f228e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a snowflake from an integer value.  <a href="classdpp_1_1snowflake.html#a6c3c6bcc9d08ce01e0aff0246f228e47">More...</a><br /></td></tr>
 <tr class="separator:a6c3c6bcc9d08ce01e0aff0246f228e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,7 +309,7 @@ Friends</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename  = std::enable_if_t&lt;std::is_integral_v&lt;T&gt;&gt;&gt; </div>
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_integral_v&lt;T&gt; &amp;&amp; !std::is_same_v&lt;T, bool&gt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
