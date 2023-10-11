@@ -22,6 +22,7 @@ var classdpp_1_1snowflake =
     [ "operator==", "classdpp_1_1snowflake.html#ae60017d05e0579a6415bf5454b3db850", null ],
     [ "operator==", "classdpp_1_1snowflake.html#aa0d9444c001286e2355aaa17532e0950", null ],
     [ "str", "classdpp_1_1snowflake.html#a6231d024d2ab5d3123d456a90bb24b33", null ],
+    [ "format_as", "classdpp_1_1snowflake.html#ab6136f2bd9710d7842a8a5f3803da7bb", null ],
     [ "std::hash< dpp::snowflake >", "classdpp_1_1snowflake.html#a06018349562d2b923dd95302f909ac61", null ],
     [ "value", "classdpp_1_1snowflake.html#a6e8a05841062cbf9a9d8a639898ca09f", null ]
 ];
