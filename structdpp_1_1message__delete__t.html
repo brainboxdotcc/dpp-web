@@ -162,9 +162,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9bbdf2268285285714ef5635d1ef4c04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__delete__t.html#a9bbdf2268285285714ef5635d1ef4c04">deleted</a> = nullptr</td></tr>
-<tr class="memdesc:a9bbdf2268285285714ef5635d1ef4c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">message being deleted  <a href="structdpp_1_1message__delete__t.html#a9bbdf2268285285714ef5635d1ef4c04">More...</a><br /></td></tr>
-<tr class="separator:a9bbdf2268285285714ef5635d1ef4c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c7c00044d072524ed35b3734323afc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__delete__t.html#af8c7c00044d072524ed35b3734323afc">id</a> {0}</td></tr>
+<tr class="memdesc:af8c7c00044d072524ed35b3734323afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">message being deleted  <a href="structdpp_1_1message__delete__t.html#af8c7c00044d072524ed35b3734323afc">More...</a><br /></td></tr>
+<tr class="separator:af8c7c00044d072524ed35b3734323afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab006c406da3efad59b0df18c47491989"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__delete__t.html#ab006c406da3efad59b0df18c47491989">channel_id</a> {0}</td></tr>
+<tr class="memdesc:ab006c406da3efad59b0df18c47491989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel the message was deleted on.  <a href="structdpp_1_1message__delete__t.html#ab006c406da3efad59b0df18c47491989">More...</a><br /></td></tr>
+<tr class="separator:ab006c406da3efad59b0df18c47491989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510625aa2693ef7332970f557e72381c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__delete__t.html#a510625aa2693ef7332970f557e72381c">guild_id</a> {0}</td></tr>
+<tr class="memdesc:a510625aa2693ef7332970f557e72381c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guild the message was deleted on.  <a href="structdpp_1_1message__delete__t.html#a510625aa2693ef7332970f557e72381c">More...</a><br /></td></tr>
+<tr class="separator:a510625aa2693ef7332970f557e72381c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4777d1049d31ed943ecebfa2de7db9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1event__dispatch__t.html#a2d4777d1049d31ed943ecebfa2de7db9">raw_event</a> = {}</td></tr>
 <tr class="memdesc:a2d4777d1049d31ed943ecebfa2de7db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw event data. If you are using json on your websocket, this will contain json, and if you are using ETF as your websocket protocol, it will contain raw ETF data.  <a href="structdpp_1_1event__dispatch__t.html#a2d4777d1049d31ed943ecebfa2de7db9">More...</a><br /></td></tr>
 <tr class="separator:a2d4777d1049d31ed943ecebfa2de7db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,19 +532,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9bbdf2268285285714ef5635d1ef4c04" name="a9bbdf2268285285714ef5635d1ef4c04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bbdf2268285285714ef5635d1ef4c04">&#9670;&nbsp;</a></span>deleted</h2>
+<a id="ab006c406da3efad59b0df18c47491989" name="ab006c406da3efad59b0df18c47491989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab006c406da3efad59b0df18c47491989">&#9670;&nbsp;</a></span>channel_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdpp_1_1message.html">message</a>* dpp::message_delete_t::deleted = nullptr</td>
+          <td class="memname"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a> dpp::message_delete_t::channel_id {0}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>message being deleted </p>
+<p>Channel the message was deleted on. </p>
 
 </div>
 </div>
@@ -563,6 +569,38 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Shard the event came from. Note that for some events, notably voice events, this may be nullptr. </p>
+
+</div>
+</div>
+<a id="a510625aa2693ef7332970f557e72381c" name="a510625aa2693ef7332970f557e72381c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a510625aa2693ef7332970f557e72381c">&#9670;&nbsp;</a></span>guild_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a> dpp::message_delete_t::guild_id {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Guild the message was deleted on. </p>
+
+</div>
+</div>
+<a id="af8c7c00044d072524ed35b3734323afc" name="af8c7c00044d072524ed35b3734323afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c7c00044d072524ed35b3734323afc">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a> dpp::message_delete_t::id {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>message being deleted </p>
 
 </div>
 </div>

@@ -135,7 +135,7 @@ var searchData=
   ['relieved_132',['relieved',['../namespacedpp_1_1unicode__emoji.html#a4f5a5592964c026ed73710bf80a275b9',1,'dpp::unicode_emoji']]],
   ['remaining_133',['remaining',['../structdpp_1_1bucket__t.html#ae8f8eca07afcc928040496878a4c2281',1,'dpp::bucket_t']]],
   ['reminder_5fribbon_134',['reminder_ribbon',['../namespacedpp_1_1unicode__emoji.html#a94041baf319d92e289e59e706e889d16',1,'dpp::unicode_emoji']]],
-  ['removed_135',['removed',['../structdpp_1_1guild__member__remove__t.html#a3b83576117dbcfad3dd2de0e93b0057c',1,'dpp::guild_member_remove_t']]],
+  ['removed_135',['removed',['../structdpp_1_1guild__member__remove__t.html#acd44cd60efc3b79409e850b0dee5b8de',1,'dpp::guild_member_remove_t']]],
   ['removed_5fids_136',['removed_ids',['../structdpp_1_1thread__members__update__t.html#a23811d6e8ff4b461e8905a890d3f2285',1,'dpp::thread_members_update_t']]],
   ['removing_5fguild_137',['removing_guild',['../structdpp_1_1guild__member__remove__t.html#aad078018917f530f80d3e554ad37760e',1,'dpp::guild_member_remove_t']]],
   ['repeat_138',['repeat',['../namespacedpp_1_1unicode__emoji.html#a0737cc01a32e35c1e8b1248adbc86c65',1,'dpp::unicode_emoji']]],
