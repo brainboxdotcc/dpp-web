@@ -1,6 +1,7 @@
 var interactions_and_components =
 [
     [ "Using Slash Commands and Interactions", "slashcommands.html", null ],
+    [ "Clearing registered commands", "clearing_slashcommands.html", null ],
     [ "Using sub-commands in slash commands", "subcommands.html", null ],
     [ "Ephemeral replies ('Only you can see this' replies)", "user-only-messages.html", null ],
     [ "Using button components", "components.html", null ],

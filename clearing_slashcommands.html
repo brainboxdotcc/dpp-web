@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Interactions And Components - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Clearing registered commands - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Interactions And Components - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Clearing registered commands - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Interactions And Components - D++ - The lightweight C++ Discord API Library">
-<title>Interactions And Components - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Clearing registered commands - D++ - The lightweight C++ Discord API Library">
+<title>Clearing registered commands - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('interactions-and-components.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('clearing_slashcommands.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,34 +98,46 @@ $(document).ready(function(){initNavTree('interactions-and-components.html','');
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Interactions And Components </div></div>
+  <div class="headertitle"><div class="title">Clearing registered commands </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >The example programs listed here demonstrate lots of things to do with interactions, application commands (slash commands) and message components. If you're looking to make your bot <b>modern and user friendly</b> these examples are what you need.</p>
-<ul>
-<li><a class="el" href="slashcommands.html">Using Slash Commands and Interactions</a></li>
-<li><a class="el" href="clearing_slashcommands.html">Clearing registered commands</a></li>
-<li><a class="el" href="subcommands.html">Slash command sub-commands</a></li>
-<li><a class="el" href="user-only-messages.html">Ephemeral replies ('Only you can see this' replies)</a></li>
-<li><a class="el" href="components.html">Using button components</a></li>
-<li><a class="el" href="components2.html">Advanced button components</a></li>
-<li><a class="el" href="components3.html">Using select menu components</a></li>
-<li><a class="el" href="detecting-messages.html">Listening to messages</a></li>
-<li><a class="el" href="context-menu.html">Context Menus</a></li>
-<li><a class="el" href="modal-dialog-interactions.html">Modal Dialogs</a></li>
-<li><a class="el" href="commandhandler.html">Unified message/slash command handler</a></li>
-<li><a class="el" href="application-command-autocomplete.html">Slash command auto completion</a></li>
-<li><a class="el" href="discord-application-command-file-upload.html">Using file parameters in slash commands</a></li>
-<li><a class="el" href="private-messaging.html">Sending private messages</a></li>
-<li><a class="el" href="making_threads.html">Creating and interacting with threads</a></li>
-<li><a class="el" href="resolved-objects.html">Using Resolved Objects</a> </li>
-</ul>
-</div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
+<div class="textblock"><p >After a while of creating commands, you may start to wonder "hm, how can I clear these?". Well, this tutorial covers it! All you have to do is simply call <a class="el" href="classdpp_1_1cluster.html#a7f38a6bbcec3107036217ae3de730c04" title="Delete all existing global slash commands.">dpp::cluster::global_bulk_command_delete</a> or <a class="el" href="classdpp_1_1cluster.html#aaaf5e026f04f080021382bd73ffd424a" title="Delete all existing guild slash commands.">dpp::cluster::guild_bulk_command_delete</a>.</p>
+<dl class="section note"><dt>Note</dt><dd>Clearing <b>global commands</b> will only clear commands that were <b>made globally</b>, same goes for the opposite way round. The example will demonstrate using both functions.</dd></dl>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/* We won&#39;t be performing any commands, so we don&#39;t need to add the event here! */</span></div>
+<div class="line"> </div>
+<div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a> &amp; event) {</div>
+<div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct clear_bot_commands&gt;()) {</div>
+<div class="line">            <span class="comment">/* Now, we&#39;re going to wipe our commands */</span></div>
+<div class="line">            bot.global_bulk_command_delete();</div>
+<div class="line">            <span class="comment">/* This one requires a guild id, otherwise it won&#39;t what guild&#39;s commands it needs to wipe! */</span></div>
+<div class="line">            bot.guild_bulk_command_delete(857692897221033129);</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Because the run_once above uses a &#39;clear_bot_commands&#39; struct, you can continue to register commands below! */</span></div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    bot.start(<a class="code hl_enumvalue" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:80</div></div>
+<div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; DPP_EXPORT cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div></div>
+<div class="ttc" id="anamespacedpp_html_af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"><div class="ttname"><a href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a></div><div class="ttdeci">@ st_wait</div><div class="ttdoc">Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will ...</div><div class="ttdef"><b>Definition:</b> cluster.h:63</div></div>
+<div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:898</div></div>
+</div><!-- fragment --> </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
-		<li class="navelem"><a class="el" href="example-programs.html">Example Programs</a></li>
+		<li class="navelem"><a class="el" href="example-programs.html">Example Programs</a></li><li class="navelem"><a class="el" href="interactions-and-components.html">Interactions And Components</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
