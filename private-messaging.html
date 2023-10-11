@@ -105,8 +105,7 @@ $(document).ready(function(){initNavTree('private-messaging.html',''); initResiz
 <dl class="section note"><dt>Note</dt><dd>This tutorial makes use of callbacks. For more information about that, visit <a class="el" href="callback-functions.html">Using Callback Functions</a>.</dd></dl>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <span class="comment">/* Create the bot */</span></div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
 <div class="line"> </div>
@@ -114,10 +113,8 @@ $(document).ready(function(){initNavTree('private-messaging.html',''); initResiz
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* The event is fired when someone issues your commands */</span></div>
 <div class="line">    bot.on_slashcommand([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a> &amp; event) {</div>
-<div class="line"> </div>
 <div class="line">        <span class="comment">/* Check which command they ran */</span></div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;pm&quot;</span>) {</div>
-<div class="line"> </div>
 <div class="line">            dpp::snowflake user;</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">/* If there was no specified user, we set the &quot;user&quot; variable to the command author (issuing user). */</span></div>
@@ -153,7 +150,6 @@ $(document).ready(function(){initNavTree('private-messaging.html',''); initResiz
 <div class="line"> </div>
 <div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a>&amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
-<div class="line"> </div>
 <div class="line">            <span class="comment">/* Register the command */</span></div>
 <div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> command(<span class="stringliteral">&quot;pm&quot;</span>, <span class="stringliteral">&quot;Send a private message.&quot;</span>, bot.me.id);</div>
 <div class="line"> </div>

@@ -107,17 +107,17 @@ $(document).ready(function(){initNavTree('commandhandler.html',''); initResizabl
 <dl class="section warning"><dt>Warning</dt><dd>As of <a href="https://support-dev.discord.com/hc/en-us/articles/6025578854295-Why-We-Moved-to-Slash-Commands">August 30th, 2022</a>, you are advised to only be using slash commands, not messages for commands. To prevent the command handler from handling commands with messages, you should only use the "/" prefix. If you wish to still use messages for commands, this tutorial will still cover it but, again, it is discouraged by Discord.</dd></dl>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <span class="comment">/* If your bot only uses the &quot;/&quot; prefix, you can remove the intents here. */</span></div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>, <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a>);</div>
 <div class="line"> </div>
-<div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
+<div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>()); </div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Create command handler, and specify prefixes */</span></div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1commandhandler.html">dpp::commandhandler</a> <a class="code hl_typedef" href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">command_handler</a>(&amp;bot);</div>
 <div class="line">    <span class="comment">/* Specifying a prefix of &quot;/&quot; tells the command handler it should also expect slash commands. Remove the .add_prefix(&quot;.&quot;) if you wish to only make it a slash command */</span></div>
-<div class="line">    <a class="code hl_typedef" href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">command_handler</a>.add_prefix(<span class="stringliteral">&quot;.&quot;</span>).add_prefix(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line">    <a class="code hl_typedef" href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">command_handler</a>.add_prefix(<span class="stringliteral">&quot;.&quot;</span>)</div>
+<div class="line">        .add_prefix(<span class="stringliteral">&quot;/&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    bot.on_ready([&amp;command_handler](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a> &amp;event) {</div>
 <div class="line"> </div>

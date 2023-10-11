@@ -163,8 +163,7 @@ eval.cpp</h4>
 <div class="line"><span class="comment"> * Note for OSX you&#39;ll probably have to change all references</span></div>
 <div class="line"><span class="comment"> * from .so to .dylib.</span></div>
 <div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>, <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f">dpp::i_default_intents</a> | <a class="code hl_enumvalue" href="namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414">dpp::i_message_content</a>);</div>
 <div class="line"> </div>
 <div class="line">        bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
@@ -190,7 +189,7 @@ eval.cpp</h4>
 <div class="line"><span class="stringliteral">                #include &lt;unordered_map&gt;\n\</span></div>
 <div class="line"><span class="stringliteral">                #include &lt;stdint.h&gt;\n\</span></div>
 <div class="line"><span class="stringliteral">                #include &lt;dpp/dpp.h&gt;\n\</span></div>
-<div class="line"><span class="stringliteral">                #include &lt;nlohmann/json.hpp&gt;\n\</span></div>
+<div class="line"><span class="stringliteral">                #include &lt;dpp/nlohmann/json.hpp&gt;\n\</span></div>
 <div class="line"><span class="stringliteral">                #include &lt;fmt/format.h&gt;\n\</span></div>
 <div class="line"><span class="stringliteral">                #include \&quot;eval.h\&quot;\n\</span></div>
 <div class="line"><span class="stringliteral">                extern \&quot;C\&quot; void so_exec(dpp::cluster&amp; bot, dpp::message_create_t event) {\n\</span></div>
@@ -301,6 +300,7 @@ eval.cpp</h4>
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">    bot.start(<a class="code hl_enumvalue" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a>);</div>
+<div class="line">    </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:80</div></div>

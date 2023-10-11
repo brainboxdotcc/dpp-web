@@ -117,12 +117,19 @@ $(document).ready(function(){initNavTree('expiring-buttons.html',''); initResiza
 <div class="line">            dpp::message m{<span class="stringliteral">&quot;Test&quot;</span>};</div>
 <div class="line">            std::string <span class="keywordtype">id</span>{event.command.id.str()};</div>
 <div class="line">            <a class="code hl_variable" href="namespacedpp_1_1unicode__emoji.html#a24ac871c89f4e1779cfeda23077faeac">m</a>.add_component(</div>
-<div class="line">                <a class="code hl_class" href="classdpp_1_1component.html">dpp::component</a>{}.<a class="code hl_function" href="classdpp_1_1component.html#a3707437be16cc7dfd5edcf321f8e842d">add_component</a>(<a class="code hl_class" href="classdpp_1_1component.html">dpp::component</a>{}.<a class="code hl_function" href="classdpp_1_1component.html#a281e39d6b8c65b1fd301d195a835e703">set_type</a>(<a class="code hl_enumvalue" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9">dpp::cot_button</a>).<a class="code hl_function" href="classdpp_1_1component.html#a23955055e9d77383fca2a5738ae3a30f">set_label</a>(<span class="stringliteral">&quot;Click me!&quot;</span>).<a class="code hl_function" href="classdpp_1_1component.html#a1bf3798669b015711df5d2621ff92d73">set_id</a>(<span class="keywordtype">id</span>))</div>
+<div class="line">                <a class="code hl_class" href="classdpp_1_1component.html">dpp::component</a>{}.<a class="code hl_function" href="classdpp_1_1component.html#a3707437be16cc7dfd5edcf321f8e842d">add_component</a>(</div>
+<div class="line">                    <a class="code hl_class" href="classdpp_1_1component.html">dpp::component</a>{}</div>
+<div class="line">                        .<a class="code hl_function" href="classdpp_1_1component.html#a281e39d6b8c65b1fd301d195a835e703">set_type</a>(<a class="code hl_enumvalue" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9">dpp::cot_button</a>)</div>
+<div class="line">                        .<a class="code hl_function" href="classdpp_1_1component.html#a23955055e9d77383fca2a5738ae3a30f">set_label</a>(<span class="stringliteral">&quot;Click me!&quot;</span>)</div>
+<div class="line">                        .<a class="code hl_function" href="classdpp_1_1component.html#a1bf3798669b015711df5d2621ff92d73">set_id</a>(<span class="keywordtype">id</span>)</div>
+<div class="line">                )</div>
 <div class="line">            );</div>
 <div class="line">            <span class="keyword">co_await</span> event.<a class="code hl_function" href="structdpp_1_1interaction__create__t.html#aef38626cd24d2212b00ab866509b4d59">co_reply</a>(m);</div>
 <div class="line"> </div>
 <div class="line">            <span class="keyword">auto</span> result = <span class="keyword">co_await</span> <a class="code hl_class" href="classdpp_1_1when__any.html">dpp::when_any</a>{ <span class="comment">// Whichever completes first...</span></div>
-<div class="line">                event.from-&gt;creator-&gt;on_button_click.when([&amp;id](const dpp::button_click_t &amp;b) { return b.custom_id == id; }), <span class="comment">// Button clicked</span></div>
+<div class="line">                event.from-&gt;creator-&gt;on_button_click.when([&amp;id](const dpp::button_click_t &amp;b) { <span class="comment">// Button clicked</span></div>
+<div class="line">                    return b.custom_id == id;</div>
+<div class="line">                }),</div>
 <div class="line">                <span class="keyword">event</span>.from-&gt;creator-&gt;co_sleep(5) <span class="comment">// Or sleep 5 seconds</span></div>
 <div class="line">            };</div>
 <div class="line">            <span class="comment">// Note!! Due to a bug in g++11 and g++12, id must be captured as a reference above or the compiler will destroy it twice. This is fixed in g++13</span></div>
@@ -146,6 +153,8 @@ $(document).ready(function(){initNavTree('expiring-buttons.html',''); initResiza
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">    bot.start(<a class="code hl_enumvalue" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:80</div></div>
 <div class="ttc" id="aclassdpp_1_1cluster_html_ab840686c7cd2e15f4a66ab64f62e106b"><div class="ttname"><a href="classdpp_1_1cluster.html#ab840686c7cd2e15f4a66ab64f62e106b">dpp::cluster::on_log</a></div><div class="ttdeci">event_router_t&lt; log_t &gt; on_log</div><div class="ttdoc">Called when a log message is to be written to the log. You can attach any logging system here you wis...</div><div class="ttdef"><b>Definition:</b> cluster.h:462</div></div>

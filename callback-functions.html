@@ -111,12 +111,12 @@ $(document).ready(function(){initNavTree('callback-functions.html',''); initResi
 <div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* The event is fired when someone issues your commands */</span></div>
-<div class="line">    bot.on_slashcommand([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line">    bot.on_slashcommand([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;msgs-get&quot;</span>) {</div>
 <div class="line">            int64_t limit = std::get&lt;int64_t&gt;(event.get_parameter(<span class="stringliteral">&quot;quantity&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">            <span class="comment">/* get messages using ID of the channel the command was issued in */</span></div>
-<div class="line">            bot.messages_get(event.command.channel_id, 0, 0, 0, limit, [event](const dpp::confirmation_callback_t&amp; callback) -&gt; void {</div>
+<div class="line">            bot.messages_get(event.command.channel_id, 0, 0, 0, limit, [event](const dpp::confirmation_callback_t&amp; callback) {</div>
 <div class="line">                if (callback.is_error()) { <span class="comment">/* catching an error to log it */</span></div>
 <div class="line">                    std::cout &lt;&lt; callback.get_error().message &lt;&lt; std::endl;</div>
 <div class="line">                    return;</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('callback-functions.html',''); initResi
 <div class="line"> </div>
 <div class="line">                auto messages = callback.get&lt;dpp::message_map&gt;();</div>
 <div class="line">                <span class="comment">/* std::get&lt;dpp::message_map&gt;(callback.value) would give the same result */</span></div>
-<div class="line">                </div>
+<div class="line"> </div>
 <div class="line">                std::string contents;</div>
 <div class="line">                for (const auto&amp; x : messages) { <span class="comment">/* here we iterate through the dpp::message_map we got from callback... */</span></div>
 <div class="line">                    contents += x.second.content + <span class="stringliteral">&#39;\n&#39;</span>; <span class="comment">/* ...where x.first is ID of the current message and x.second is the message itself. */</span></div>
@@ -176,8 +176,8 @@ $(document).ready(function(){initNavTree('callback-functions.html',''); initResi
 <div class="line"> </div>
 <div class="line">            msgs_get.add_option(</div>
 <div class="line">                <a class="code hl_struct" href="structdpp_1_1command__option.html">dpp::command_option</a>(<a class="code hl_enumvalue" href="namespacedpp.html#abc401d86119c6443bf72d736857c1a58a7e18bae49699df4948c28c12bfa8bd19">dpp::co_integer</a>, <span class="stringliteral">&quot;quantity&quot;</span>, <span class="stringliteral">&quot;Quantity of messages to get. Max - 100.&quot;</span>)</div>
-<div class="line">                .set_min_value(min_val)</div>
-<div class="line">                .set_max_value(max_val)</div>
+<div class="line">                    .set_min_value(min_val)</div>
+<div class="line">                    .set_max_value(max_val)</div>
 <div class="line">            );</div>
 <div class="line"> </div>
 <div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> channel_create(<span class="stringliteral">&quot;channel-create&quot;</span>, <span class="stringliteral">&quot;Create a channel&quot;</span>, bot.me.id);</div>
@@ -188,6 +188,7 @@ $(document).ready(function(){initNavTree('callback-functions.html',''); initResi
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="line">    bot.start(<a class="code hl_enumvalue" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a>);</div>
+<div class="line">    </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassdpp_1_1channel_html"><div class="ttname"><a href="classdpp_1_1channel.html">dpp::channel</a></div><div class="ttdoc">A definition of a discord channel. There are one of these for every channel type except threads....</div><div class="ttdef"><b>Definition:</b> channel.h:257</div></div>

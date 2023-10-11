@@ -107,8 +107,7 @@ $(document).ready(function(){initNavTree('record-user.html',''); initResizable()
 <div class="line"><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> <span class="keyword">const</span> *argv[])</div>
-<div class="line">{</div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <span class="comment">/* Example to record a user in a VC</span></div>
 <div class="line"><span class="comment">    * </span></div>
 <div class="line"><span class="comment">    * Recording is output as &#39;./me.pcm&#39; and you can play it via the soundboard example</span></div>
@@ -128,10 +127,8 @@ $(document).ready(function(){initNavTree('record-user.html',''); initResizable()
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* The event is fired when someone issues your commands */</span></div>
 <div class="line">    bot.on_slashcommand([&amp;bot, &amp;fd](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
-<div class="line"> </div>
 <div class="line">        <span class="comment">/* Check which command they ran */</span></div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;record&quot;</span>) {</div>
-<div class="line"> </div>
 <div class="line">            <span class="comment">/* Get the guild */</span></div>
 <div class="line">            dpp::guild* g = dpp::find_guild(event.command.guild_id);</div>
 <div class="line"> </div>
@@ -144,7 +141,6 @@ $(document).ready(function(){initNavTree('record-user.html',''); initResizable()
 <div class="line">            <span class="comment">/* Tell the user we joined their channel. */</span></div>
 <div class="line">            event.<a class="code hl_function" href="structdpp_1_1interaction__create__t.html#a34f374b358f8d2d49fa93bfe5a2c0493">reply</a>(<span class="stringliteral">&quot;Joined your channel, now recording!&quot;</span>);</div>
 <div class="line">        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;stop&quot;</span>) {</div>
-<div class="line"> </div>
 <div class="line">            event.from-&gt;disconnect_voice(event.command.guild_id);</div>
 <div class="line">            fclose(fd);</div>
 <div class="line"> </div>
@@ -160,13 +156,11 @@ $(document).ready(function(){initNavTree('record-user.html',''); initResizable()
 <div class="line"> </div>
 <div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a> &amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
-<div class="line"> </div>
 <div class="line">            <span class="comment">/* Create a new command. */</span></div>
 <div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> recordcommand(<span class="stringliteral">&quot;record&quot;</span>, <span class="stringliteral">&quot;Joins your voice channel and records you.&quot;</span>, bot.me.id);</div>
-<div class="line"> </div>
 <div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> stopcommand(<span class="stringliteral">&quot;stop&quot;</span>, <span class="stringliteral">&quot;Stops recording you.&quot;</span>, bot.me.id);</div>
 <div class="line"> </div>
-<div class="line">            bot.global_bulk_command_create({recordcommand, stopcommand});</div>
+<div class="line">            bot.global_bulk_command_create({ recordcommand, stopcommand });</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line"> </div>

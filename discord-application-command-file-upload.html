@@ -105,18 +105,15 @@ $(document).ready(function(){initNavTree('discord-application-command-file-uploa
 <p >The file is uploaded to Discord's CDN so if you need it locally you should fetch the <code>.url</code> value, e.g. by using something like <a class="el" href="classdpp_1_1cluster.html#a156fe68358c421111e690f553c4e4f52" title="Make a HTTP(S) request. For use when wanting asynchronous access to HTTP APIs outside of Discord.">dpp::cluster::request()</a>.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* The event is fired when someone issues your commands */</span></div>
 <div class="line">    bot.on_slashcommand([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
-<div class="line"> </div>
 <div class="line">        <span class="comment">/* Check which command they ran */</span></div>
 <div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;show&quot;</span>) {</div>
-<div class="line"> </div>
 <div class="line">            <span class="comment">/* Get the file id from the parameter attachment. */</span></div>
 <div class="line">            dpp::snowflake file_id = std::get&lt;dpp::snowflake&gt;(event.get_parameter(<span class="stringliteral">&quot;file&quot;</span>));</div>
 <div class="line"> </div>
@@ -130,7 +127,6 @@ $(document).ready(function(){initNavTree('discord-application-command-file-uploa
 <div class="line"> </div>
 <div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a> &amp; event) {</div>
 <div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
-<div class="line"> </div>
 <div class="line">            <span class="comment">/* Create a new command. */</span></div>
 <div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> newcommand(<span class="stringliteral">&quot;show&quot;</span>, <span class="stringliteral">&quot;Show an uploaded file&quot;</span>, bot.me.id);</div>
 <div class="line"> </div>

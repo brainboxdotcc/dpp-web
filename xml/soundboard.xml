@@ -11,8 +11,7 @@
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
-<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Load<sp/>a<sp/>sound<sp/>file<sp/>called<sp/>Robot.pcm<sp/>into<sp/>memory.</highlight></codeline>
 <codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>bot<sp/>expects<sp/>PCM<sp/>format,<sp/>which<sp/>are<sp/>raw<sp/>sound<sp/>data,</highlight></codeline>
 <codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>2<sp/>channel<sp/>stereo,<sp/>16<sp/>bit<sp/>signed<sp/>48000Hz.</highlight></codeline>
@@ -42,10 +41,8 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>event<sp/>is<sp/>fired<sp/>when<sp/>someone<sp/>issues<sp/>your<sp/>commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_slashcommand([&amp;bot,<sp/>robot,<sp/>robot_size](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1slashcommand__t" kindref="compound">dpp::slashcommand_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>which<sp/>command<sp/>they<sp/>ran<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">get_command_name</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;join&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>guild<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::guild*<sp/>g<sp/>=<sp/>dpp::find_guild(event.command.guild_id);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -58,7 +55,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tell<sp/>the<sp/>user<sp/>we<sp/>joined<sp/>their<sp/>channel.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.<ref refid="structdpp_1_1interaction__create__t_1a34f374b358f8d2d49fa93bfe5a2c0493" kindref="member">reply</ref>(</highlight><highlight class="stringliteral">&quot;Joined<sp/>your<sp/>channel!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">get_command_name</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;robot&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>voice<sp/>channel<sp/>the<sp/>bot<sp/>is<sp/>in,<sp/>in<sp/>this<sp/>current<sp/>guild.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dpp::voiceconn*<sp/>v<sp/>=<sp/>event.from-&gt;get_voice(event.command.guild_id);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -77,13 +73,12 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>a<sp/>new<sp/>command.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref><sp/>joincommand(</highlight><highlight class="stringliteral">&quot;join&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Joins<sp/>your<sp/>voice<sp/>channel.&quot;</highlight><highlight class="normal">,<sp/>bot.me.id);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref><sp/>robotcommand(</highlight><highlight class="stringliteral">&quot;robot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Plays<sp/>a<sp/>robot<sp/>noise<sp/>in<sp/>your<sp/>voice<sp/>channel.&quot;</highlight><highlight class="normal">,<sp/>bot.me.id);</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_bulk_command_create({joincommand,<sp/>robotcommand});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_bulk_command_create({<sp/>joincommand,<sp/>robotcommand<sp/>});</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
