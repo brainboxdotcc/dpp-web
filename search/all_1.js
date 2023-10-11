@@ -62,7 +62,7 @@ var searchData=
   ['adult_5ftone3_59',['adult_tone3',['../namespacedpp_1_1unicode__emoji.html#a5e4eff9a7476c4a7168f9f1b39770179',1,'dpp::unicode_emoji']]],
   ['adult_5ftone4_60',['adult_tone4',['../namespacedpp_1_1unicode__emoji.html#ab1fe6dfbb8c69cbd69542f2c16945196',1,'dpp::unicode_emoji']]],
   ['adult_5ftone5_61',['adult_tone5',['../namespacedpp_1_1unicode__emoji.html#acb132732aab759d8da05e38ad7f5a46a',1,'dpp::unicode_emoji']]],
-  ['advanced_20button_20components_62',['Advanced button components',['../components2.html',1,'interactions-and-components']]],
+  ['advanced_20button_20components_62',['Advanced button components',['../components2.html',1,'components-menu']]],
   ['advanced_20reference_63',['Advanced Reference',['../advanced-reference.html',1,'']]],
   ['aerial_5ftramway_64',['aerial_tramway',['../namespacedpp_1_1unicode__emoji.html#a0b1ebeddc6dbcb006dc5246d7c00af5d',1,'dpp::unicode_emoji']]],
   ['af_5fembedded_65',['af_embedded',['../namespacedpp.html#af7af4fdfe2315c48c3223b1dd6124d4da16e5931af2a44fd1050f0f2d2950df48',1,'dpp']]],

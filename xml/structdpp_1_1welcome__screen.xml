@@ -4,6 +4,24 @@
     <compoundname>dpp::welcome_screen</compoundname>
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; welcome_screen &gt;</basecompoundref>
     <includes local="no">guild.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structdpp_1_1welcome__screen_1a620f81c84b8afbd54d548346645f446e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; welcome_screen &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; welcome_screen &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="497" column="17" bodyfile="include/dpp/guild.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1welcome__screen_1a770643a1cbb15d2a3ce7ed241c4b3415" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -17,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="498" column="13" bodyfile="include/dpp/guild.h" bodystart="498" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="526" column="13" bodyfile="include/dpp/guild.h" bodystart="526" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1welcome__screen_1a28e29ac75cc36beb4d0d740bd49ab0e4" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1welcome__channel" kindref="compound">welcome_channel</ref> &gt;</type>
@@ -31,43 +49,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="500" column="13" bodyfile="include/dpp/guild.h" bodystart="500" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="528" column="13" bodyfile="include/dpp/guild.h" bodystart="528" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="public-func">
-      <memberdef kind="function" id="structdpp_1_1welcome__screen_1aa1389a45fb5894bcdfa79d9976ab5ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>dpp::welcome_screen::welcome_screen</definition>
-        <argsstring>()=default</argsstring>
-        <name>welcome_screen</name>
-        <briefdescription>
-<para>Construct a new welcome screen object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="505" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1welcome__screen_1a3816482fdccc1630b4e21f3765c6c344" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type></type>
-        <definition>virtual dpp::welcome_screen::~welcome_screen</definition>
-        <argsstring>()=default</argsstring>
-        <name>~welcome_screen</name>
-        <briefdescription>
-<para>Destroy the welcome screen object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/guild.h" line="510" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1welcome__screen_1ad8b87d22f1423d0d72e556cbbf6bdeb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structdpp_1_1welcome__screen_1a49f8c636f26b3f73b4e2bdcdc1dfd4d8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &amp;</type>
-        <definition>welcome_screen &amp; dpp::welcome_screen::fill_from_json</definition>
+        <definition>welcome_screen &amp; dpp::welcome_screen::fill_from_json_impl</definition>
         <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
+        <name>fill_from_json_impl</name>
         <param>
           <type>nlohmann::json *</type>
           <declname>j</declname>
@@ -91,14 +81,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="518" column="16"/>
+        <location file="include/dpp/guild.h" line="514" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1welcome__screen_1a50f5358a6dec53a6cd505a89f614e68a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::welcome_screen::build_json</definition>
+      <memberdef kind="function" id="structdpp_1_1welcome__screen_1a9e5060318661179f38fccbd3b5e4b37f" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
+        <definition>json dpp::welcome_screen::to_json_impl</definition>
         <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
+        <name>to_json_impl</name>
         <param>
           <type>bool</type>
           <declname>with_id</declname>
@@ -123,7 +112,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="526" column="13"/>
+        <location file="include/dpp/guild.h" line="522" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1welcome__screen_1aa1389a45fb5894bcdfa79d9976ab5ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::welcome_screen::welcome_screen</definition>
+        <argsstring>()=default</argsstring>
+        <name>welcome_screen</name>
+        <briefdescription>
+<para>Construct a new welcome screen object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="533" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1welcome__screen_1a3816482fdccc1630b4e21f3765c6c344" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual dpp::welcome_screen::~welcome_screen</definition>
+        <argsstring>()=default</argsstring>
+        <name>~welcome_screen</name>
+        <briefdescription>
+<para>Destroy the welcome screen object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="538" column="9"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1welcome__screen_1a0fd948515dcc032354a4bec5ee8f709b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &amp;</type>
@@ -153,7 +172,103 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="534" column="16"/>
+        <location file="include/dpp/guild.h" line="546" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1welcome__screen" kindref="compound">welcome_screen</ref> &amp;</type>
+        <definition>welcome_screen  &amp; dpp::json_interface&lt; welcome_screen  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; welcome_screen  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="55" column="6" bodyfile="include/dpp/json_interface.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; welcome_screen  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -216,15 +331,18 @@
         <label>vector&lt;</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/guild.h" line="496" column="1" bodyfile="include/dpp/guild.h" bodystart="496" bodyend="535"/>
+    <location file="include/dpp/guild.h" line="504" column="1" bodyfile="include/dpp/guild.h" bodystart="504" bodyend="547"/>
     <listofallmembers>
-      <member refid="structdpp_1_1welcome__screen_1a50f5358a6dec53a6cd505a89f614e68a" prot="public" virt="virtual"><scope>dpp::welcome_screen</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>build_json</name></member>
       <member refid="structdpp_1_1welcome__screen_1a770643a1cbb15d2a3ce7ed241c4b3415" prot="public" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>description</name></member>
-      <member refid="structdpp_1_1welcome__screen_1ad8b87d22f1423d0d72e556cbbf6bdeb5" prot="public" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1welcome__screen_1a49f8c636f26b3f73b4e2bdcdc1dfd4d8" prot="protected" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>fill_from_json_impl</name></member>
+      <member refid="structdpp_1_1welcome__screen_1a620f81c84b8afbd54d548346645f446e" prot="protected" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>json_interface&lt; welcome_screen &gt;</name></member>
       <member refid="structdpp_1_1welcome__screen_1a0fd948515dcc032354a4bec5ee8f709b" prot="public" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>set_description</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>to_json</name></member>
+      <member refid="structdpp_1_1welcome__screen_1a9e5060318661179f38fccbd3b5e4b37f" prot="protected" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>to_json_impl</name></member>
       <member refid="structdpp_1_1welcome__screen_1a28e29ac75cc36beb4d0d740bd49ab0e4" prot="public" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>welcome_channels</name></member>
       <member refid="structdpp_1_1welcome__screen_1aa1389a45fb5894bcdfa79d9976ab5ee2" prot="public" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>welcome_screen</name></member>
-      <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::welcome_screen</scope><name>~json_interface</name></member>
       <member refid="structdpp_1_1welcome__screen_1a3816482fdccc1630b4e21f3765c6c344" prot="public" virt="virtual"><scope>dpp::welcome_screen</scope><name>~welcome_screen</name></member>
     </listofallmembers>
   </compounddef>

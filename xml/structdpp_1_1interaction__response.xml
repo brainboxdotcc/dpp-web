@@ -5,6 +5,24 @@
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; interaction_response &gt;</basecompoundref>
     <derivedcompoundref refid="structdpp_1_1interaction__modal__response" prot="public" virt="non-virtual">dpp::interaction_modal_response</derivedcompoundref>
     <includes local="no">appcommand.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structdpp_1_1interaction__response_1ae38b23a00f83035b9c5b20147b22cf8f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; interaction_response &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; interaction_response &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="283" column="16" bodyfile="include/dpp/appcommand.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a83479ddaa45166def7719d5511b09d02" kindref="member">interaction_response_type</ref></type>
@@ -19,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="318" column="27" bodyfile="include/dpp/appcommand.h" bodystart="318" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="344" column="27" bodyfile="include/dpp/appcommand.h" bodystart="344" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1interaction__response_1a9cdbf5c9505ebc1f7f4f7c5b9f5793c5" prot="public" static="no" mutable="no">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
@@ -34,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="323" column="9" bodyfile="include/dpp/appcommand.h" bodystart="323" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="349" column="9" bodyfile="include/dpp/appcommand.h" bodystart="349" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1interaction__response_1abb21d304dedf4a9bef3e221d115209e1" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1command__option__choice" kindref="compound">command_option_choice</ref> &gt;</type>
@@ -49,7 +67,61 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="328" column="13" bodyfile="include/dpp/appcommand.h" bodystart="328" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="354" column="13" bodyfile="include/dpp/appcommand.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1a0cd3565d8f4f88b02dc85cee253c0f53" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
+        <definition>interaction_response &amp; dpp::interaction_response::fill_from_json_impl</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json_impl</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Fill object properties from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON to fill from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="329" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1interaction__response_1aa4dbf7f5a3b82e81d45119e24c35e781" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
+        <definition>json dpp::interaction_response::to_json_impl</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build json for this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>json JSON object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/appcommand.h" line="336" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -65,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="333" column="1"/>
+        <location file="include/dpp/appcommand.h" line="359" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1a09635e2f99305125f42a926f1813a9bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -93,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="340" column="1"/>
+        <location file="include/dpp/appcommand.h" line="366" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1a88bf6253f023a585179c3f3059a70ad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -133,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="348" column="1"/>
+        <location file="include/dpp/appcommand.h" line="374" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1a64ad37a7f7e619c0419f36889d0f5c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -173,61 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="356" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
-        <definition>interaction_response &amp; dpp::interaction_response::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Fill object properties from JSON. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>JSON to fill from </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref>&amp; Reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="364" column="22"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1interaction__response_1a3c7f8c051a6c85c63dab1b4534b27c89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>virtual std::string dpp::interaction_response::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
-        <reimplementedby refid="structdpp_1_1interaction__modal__response_1addfc4eea981f4cacbdb27b1872738796">build_json</reimplementedby>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Build a json string for this object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>std::string JSON string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="371" column="21"/>
+        <location file="include/dpp/appcommand.h" line="382" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1aba47b23a0d825ab443c0f91711a94c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
@@ -257,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="379" column="22"/>
+        <location file="include/dpp/appcommand.h" line="390" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1interaction__response_1a0a0bfea074ef88cd0a7cb641cd573a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -271,7 +289,103 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="384" column="9"/>
+        <location file="include/dpp/appcommand.h" line="395" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1interaction__response" kindref="compound">interaction_response</ref> &amp;</type>
+        <definition>interaction_response  &amp; dpp::json_interface&lt; interaction_response  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; interaction_response  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="55" column="6" bodyfile="include/dpp/json_interface.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; interaction_response  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -307,19 +421,19 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="21">
+      <node id="23">
         <label>bool</label>
       </node>
-      <node id="27">
+      <node id="29">
         <label>cache_policy_setting_t</label>
       </node>
-      <node id="25">
+      <node id="27">
         <label>double</label>
       </node>
-      <node id="26">
+      <node id="28">
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="27" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>channel_policy</edgelabel>
           <edgelabel>emoji_policy</edgelabel>
           <edgelabel>guild_policy</edgelabel>
@@ -327,37 +441,37 @@
           <edgelabel>user_policy</edgelabel>
         </childnode>
       </node>
-      <node id="24">
+      <node id="26">
         <label>dpp::cluster</label>
         <link refid="classdpp_1_1cluster"/>
-        <childnode refid="11" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>token</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>last_identify</edgelabel>
         </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>cluster_id</edgelabel>
           <edgelabel>intents</edgelabel>
           <edgelabel>maxclusters</edgelabel>
           <edgelabel>numshards</edgelabel>
         </childnode>
-        <childnode refid="25" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>rest_ping</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>me</edgelabel>
         </childnode>
-        <childnode refid="26" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>cache_policy</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>ws_mode</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="31" relation="usage">
           <edgelabel>terminating</edgelabel>
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="32" relation="usage">
           <edgelabel>on_autocomplete</edgelabel>
           <edgelabel>on_automod_rule_create</edgelabel>
           <edgelabel>on_automod_rule_delete</edgelabel>
@@ -371,26 +485,28 @@
           <edgelabel>...</edgelabel>
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>dpp::guild_member</label>
         <link refid="classdpp_1_1guild__member"/>
-        <childnode refid="11" relation="usage">
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
           <edgelabel>nickname</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>roles</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
         <childnode refid="7" relation="usage">
           <edgelabel>guild_id</edgelabel>
           <edgelabel>user_id</edgelabel>
         </childnode>
-        <childnode refid="13" relation="usage">
+        <childnode refid="14" relation="usage">
           <edgelabel>avatar</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>communication_disabled_until</edgelabel>
           <edgelabel>joined_at</edgelabel>
           <edgelabel>premium_since</edgelabel>
@@ -407,7 +523,7 @@
         <childnode refid="5" relation="usage">
           <edgelabel>msg</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>autocomplete_choices</edgelabel>
         </childnode>
       </node>
@@ -427,22 +543,24 @@
         <link refid="structdpp_1_1message"/>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
         <childnode refid="7" relation="usage">
           <edgelabel>channel_id</edgelabel>
           <edgelabel>guild_id</edgelabel>
           <edgelabel>webhook_id</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>author</edgelabel>
         </childnode>
-        <childnode refid="17" relation="usage">
+        <childnode refid="18" relation="usage">
           <edgelabel>member</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>content</edgelabel>
           <edgelabel>nonce</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>attachments</edgelabel>
           <edgelabel>components</edgelabel>
           <edgelabel>embeds</edgelabel>
@@ -455,65 +573,65 @@
           <edgelabel>reactions</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>edited</edgelabel>
           <edgelabel>sent</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>message_reference</edgelabel>
         </childnode>
-        <childnode refid="22" relation="usage">
+        <childnode refid="24" relation="usage">
           <edgelabel>interaction</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>allowed_mentions</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>owner</edgelabel>
         </childnode>
-        <childnode refid="31" relation="usage">
+        <childnode refid="33" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>mention_everyone</edgelabel>
           <edgelabel>pinned</edgelabel>
           <edgelabel>tts</edgelabel>
         </childnode>
       </node>
-      <node id="23">
+      <node id="25">
         <label>dpp::message::allowed_ref</label>
         <link refid="structdpp_1_1message_1_1allowed__ref"/>
-        <childnode refid="21" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>parse_everyone</edgelabel>
           <edgelabel>parse_roles</edgelabel>
           <edgelabel>parse_users</edgelabel>
           <edgelabel>replied_user</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>roles</edgelabel>
           <edgelabel>users</edgelabel>
         </childnode>
       </node>
-      <node id="22">
+      <node id="24">
         <label>dpp::message::message_interaction_struct</label>
         <link refid="structdpp_1_1message_1_1message__interaction__struct"/>
         <childnode refid="7" relation="usage">
           <edgelabel>id</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>usr</edgelabel>
         </childnode>
       </node>
-      <node id="20">
+      <node id="22">
         <label>dpp::message::message_ref</label>
         <link refid="structdpp_1_1message_1_1message__ref"/>
         <childnode refid="7" relation="usage">
@@ -521,7 +639,7 @@
           <edgelabel>guild_id</edgelabel>
           <edgelabel>message_id</edgelabel>
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>fail_if_not_exists</edgelabel>
         </childnode>
       </node>
@@ -532,32 +650,32 @@
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>dpp::user</label>
         <link refid="classdpp_1_1user"/>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="11" relation="public-inheritance">
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>global_name</edgelabel>
           <edgelabel>username</edgelabel>
         </childnode>
-        <childnode refid="13" relation="usage">
+        <childnode refid="14" relation="usage">
           <edgelabel>avatar</edgelabel>
           <edgelabel>avatar_decoration</edgelabel>
         </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>discriminator</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>refcount</edgelabel>
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>dpp::utility::iconhash</label>
         <link refid="structdpp_1_1utility_1_1iconhash"/>
         <childnode refid="8" relation="usage">
@@ -565,11 +683,18 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="30">
+      <node id="32">
         <label>event_router_t&lt;</label>
       </node>
       <node id="4">
         <label>interaction_response_type</label>
+      </node>
+      <node id="19">
+        <label>dpp::json_interface&lt; guild_member &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; guild_member &gt;</edgelabel>
+        </childnode>
       </node>
       <node id="2">
         <label>dpp::json_interface&lt; interaction_response &gt;</label>
@@ -578,63 +703,73 @@
           <edgelabel>&lt; interaction_response &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="10">
+      <node id="9">
+        <label>dpp::json_interface&lt; message &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; message &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
         <label>dpp::json_interface&lt; user &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
         <childnode refid="3" relation="template-instance">
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="31">
+      <node id="33">
         <label>message_type</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="29">
+      <node id="31">
         <label>condition_variable</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>std::string</label>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="18">
+      <node id="20">
         <label>vector&lt;</label>
       </node>
-      <node id="19">
+      <node id="21">
         <label>time_t</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>uint16_t</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>uint32_t</label>
       </node>
       <node id="8">
         <label>uint64_t</label>
       </node>
-      <node id="16">
+      <node id="17">
         <label>uint8_t</label>
       </node>
-      <node id="28">
+      <node id="30">
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/appcommand.h" line="311" column="1" bodyfile="include/dpp/appcommand.h" bodystart="311" bodyend="386"/>
+    <location file="include/dpp/appcommand.h" line="319" column="1" bodyfile="include/dpp/appcommand.h" bodystart="319" bodyend="397"/>
     <listofallmembers>
       <member refid="structdpp_1_1interaction__response_1aba47b23a0d825ab443c0f91711a94c9a" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>add_autocomplete_choice</name></member>
       <member refid="structdpp_1_1interaction__response_1abb21d304dedf4a9bef3e221d115209e1" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>autocomplete_choices</name></member>
-      <member refid="structdpp_1_1interaction__response_1a3c7f8c051a6c85c63dab1b4534b27c89" prot="public" virt="virtual"><scope>dpp::interaction_response</scope><name>build_json</name></member>
-      <member refid="structdpp_1_1interaction__response_1ac7d7ddd127b1510ddfd2cb4a543699bb" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1interaction__response_1a0cd3565d8f4f88b02dc85cee253c0f53" prot="protected" virt="non-virtual"><scope>dpp::interaction_response</scope><name>fill_from_json_impl</name></member>
       <member refid="structdpp_1_1interaction__response_1ac124e95ab792e5bba3f44325dfd3d633" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>interaction_response</name></member>
       <member refid="structdpp_1_1interaction__response_1a09635e2f99305125f42a926f1813a9bb" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>interaction_response</name></member>
       <member refid="structdpp_1_1interaction__response_1a88bf6253f023a585179c3f3059a70ad8" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>interaction_response</name></member>
       <member refid="structdpp_1_1interaction__response_1a64ad37a7f7e619c0419f36889d0f5c00" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>interaction_response</name></member>
+      <member refid="structdpp_1_1interaction__response_1ae38b23a00f83035b9c5b20147b22cf8f" prot="protected" virt="non-virtual"><scope>dpp::interaction_response</scope><name>json_interface&lt; interaction_response &gt;</name></member>
       <member refid="structdpp_1_1interaction__response_1a9cdbf5c9505ebc1f7f4f7c5b9f5793c5" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>msg</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>to_json</name></member>
+      <member refid="structdpp_1_1interaction__response_1aa4dbf7f5a3b82e81d45119e24c35e781" prot="protected" virt="non-virtual"><scope>dpp::interaction_response</scope><name>to_json_impl</name></member>
       <member refid="structdpp_1_1interaction__response_1a7c06a118113d431b3725b70e12d92f19" prot="public" virt="non-virtual"><scope>dpp::interaction_response</scope><name>type</name></member>
       <member refid="structdpp_1_1interaction__response_1a0a0bfea074ef88cd0a7cb641cd573a97" prot="public" virt="virtual"><scope>dpp::interaction_response</scope><name>~interaction_response</name></member>
-      <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::interaction_response</scope><name>~json_interface</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

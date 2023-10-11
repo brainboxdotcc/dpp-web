@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['promise_5ft_3c_20r_20_3e_0',['promise_t&lt; R &gt;',['../classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html#a3103504fe8b2834f40d0cbbfe0fde3f7',1,'dpp::detail::coroutine::coroutine_base::promise_t&lt; R &gt;()'],['../classdpp_1_1detail_1_1task_1_1task__base.html#a3103504fe8b2834f40d0cbbfe0fde3f7',1,'dpp::detail::task::task_base::promise_t&lt; R &gt;()']]]
+  ['operator_3c_0',['operator&lt;',['../classdpp_1_1role.html#a01e2b587ca511c7fa2b32306aa633b3a',1,'dpp::role']]],
+  ['operator_3e_1',['operator&gt;',['../classdpp_1_1role.html#a9f67634c6559af28e6a11d446aa052e8',1,'dpp::role']]]
 ];

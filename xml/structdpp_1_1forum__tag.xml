@@ -5,6 +5,24 @@
     <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
     <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; forum_tag &gt;</basecompoundref>
     <includes local="no">channel.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structdpp_1_1forum__tag_1ac6c70c84b88c7a8a271fd2483c2288bd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; forum_tag &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; forum_tag &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="197" column="10" bodyfile="include/dpp/channel.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdpp_1_1forum__tag_1a8bbde0d80e3da450a6e20373d9a092ca" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -18,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="202" column="13" bodyfile="include/dpp/channel.h" bodystart="202" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="224" column="13" bodyfile="include/dpp/channel.h" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1forum__tag_1a46a1b609377b1443a31df24e18d20cf1" prot="public" static="no" mutable="no">
         <type>std::variant&lt; std::monostate, <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, std::string &gt;</type>
@@ -32,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="204" column="14" bodyfile="include/dpp/channel.h" bodystart="204" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="226" column="14" bodyfile="include/dpp/channel.h" bodystart="226" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdpp_1_1forum__tag_1a7972bcf99906645f329540f8e09ccf45" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -46,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="206" column="6" bodyfile="include/dpp/channel.h" bodystart="206" bodyend="-1"/>
+        <location file="include/dpp/channel.h" line="228" column="6" bodyfile="include/dpp/channel.h" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -64,6 +82,69 @@
         <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structdpp_1_1forum__tag_1ab59817051b2837c7e3c0d70c26ab3986" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &amp;</type>
+        <definition>forum_tag &amp; dpp::forum_tag::fill_from_json_impl</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json_impl</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Read struct values from a json object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>json to read values from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="212" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1forum__tag_1a06b4445a0a92fed6541fe3628d400524" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
+        <definition>json dpp::forum_tag::to_json_impl</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build json for this <ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>include the ID in the json </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>json JSON object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="220" column="6"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="structdpp_1_1forum__tag_1a8af4e2edccd078821e4f5fb818fd3e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -77,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="209" column="1"/>
+        <location file="include/dpp/channel.h" line="231" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1forum__tag_1a10049e89419dc0635955699779d7b530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -105,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="216" column="1"/>
+        <location file="include/dpp/channel.h" line="238" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1forum__tag_1a792557eef74925dcef618d4e0886a418" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -119,69 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="219" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1forum__tag_1a9ff8f47d0bc94fa3c42bd3557a1f45dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &amp;</type>
-        <definition>forum_tag &amp; dpp::forum_tag::fill_from_json</definition>
-        <argsstring>(nlohmann::json *j)</argsstring>
-        <name>fill_from_json</name>
-        <param>
-          <type>nlohmann::json *</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Read struct values from a json object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>json to read values from </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A reference to self </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="226" column="11"/>
-      </memberdef>
-      <memberdef kind="function" id="structdpp_1_1forum__tag_1a181707a141a20342d7e3d3378fa09fc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>std::string dpp::forum_tag::build_json</definition>
-        <argsstring>(bool with_id=false) const</argsstring>
-        <name>build_json</name>
-        <reimplements refid="structdpp_1_1json__interface_1a287c22f692ee3d25b6f9b320ff35baa1">build_json</reimplements>
-        <param>
-          <type>bool</type>
-          <declname>with_id</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Build json for this <ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>with_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>include the ID in the json </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>std::string JSON string </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/channel.h" line="234" column="13"/>
+        <location file="include/dpp/channel.h" line="241" column="9"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1forum__tag_1a5179430d74c31b0e7366edd4f39036aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &amp;</type>
@@ -213,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/channel.h" line="244" column="11"/>
+        <location file="include/dpp/channel.h" line="251" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr double</type>
@@ -295,6 +314,102 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &amp;</type>
+        <definition>forum_tag  &amp; dpp::json_interface&lt; forum_tag  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="43" column="3" bodyfile="include/dpp/json_interface.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; forum_tag  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="55" column="6" bodyfile="include/dpp/json_interface.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; forum_tag  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="67" column="13" bodyfile="include/dpp/json_interface.h" bodystart="67" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -388,15 +503,17 @@
         <label>uint64_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/channel.h" line="200" column="1" bodyfile="include/dpp/channel.h" bodystart="200" bodyend="245"/>
+    <location file="include/dpp/channel.h" line="203" column="1" bodyfile="include/dpp/channel.h" bodystart="203" bodyend="252"/>
     <listofallmembers>
-      <member refid="structdpp_1_1forum__tag_1a181707a141a20342d7e3d3378fa09fc8" prot="public" virt="virtual"><scope>dpp::forum_tag</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>build_json</name></member>
       <member refid="structdpp_1_1forum__tag_1a46a1b609377b1443a31df24e18d20cf1" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>emoji</name></member>
-      <member refid="structdpp_1_1forum__tag_1a9ff8f47d0bc94fa3c42bd3557a1f45dc" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1forum__tag_1ab59817051b2837c7e3c0d70c26ab3986" prot="protected" virt="non-virtual"><scope>dpp::forum_tag</scope><name>fill_from_json_impl</name></member>
       <member refid="structdpp_1_1forum__tag_1a8af4e2edccd078821e4f5fb818fd3e4c" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>forum_tag</name></member>
       <member refid="structdpp_1_1forum__tag_1a10049e89419dc0635955699779d7b530" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>forum_tag</name></member>
       <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>get_creation_time</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>id</name></member>
+      <member refid="structdpp_1_1forum__tag_1ac6c70c84b88c7a8a271fd2483c2288bd" prot="protected" virt="non-virtual"><scope>dpp::forum_tag</scope><name>json_interface&lt; forum_tag &gt;</name></member>
       <member refid="classdpp_1_1managed_1a49ce0d7fdbeab770ec46be27771c2285" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>managed</name></member>
       <member refid="classdpp_1_1managed_1aa3ee436836ab0e2bf4f842c2c2bc3b52" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>managed</name></member>
       <member refid="classdpp_1_1managed_1a198b514f7e6a2b26734fd2dad85f481d" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>managed</name></member>
@@ -408,8 +525,9 @@
       <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>operator=</name></member>
       <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>operator==</name></member>
       <member refid="structdpp_1_1forum__tag_1a5179430d74c31b0e7366edd4f39036aa" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>set_name</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::forum_tag</scope><name>to_json</name></member>
+      <member refid="structdpp_1_1forum__tag_1a06b4445a0a92fed6541fe3628d400524" prot="protected" virt="non-virtual"><scope>dpp::forum_tag</scope><name>to_json_impl</name></member>
       <member refid="structdpp_1_1forum__tag_1a792557eef74925dcef618d4e0886a418" prot="public" virt="virtual"><scope>dpp::forum_tag</scope><name>~forum_tag</name></member>
-      <member refid="structdpp_1_1json__interface_1a8fea07be649b8bb166c28c5a7daccf53" prot="protected" virt="non-virtual"><scope>dpp::forum_tag</scope><name>~json_interface</name></member>
       <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::forum_tag</scope><name>~managed</name></member>
     </listofallmembers>
   </compounddef>

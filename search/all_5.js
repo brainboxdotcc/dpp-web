@@ -38,7 +38,7 @@ var searchData=
   ['edit_5fwebhook_5fwith_5ftoken_35',['edit_webhook_with_token',['../classdpp_1_1cluster.html#a40262f5c4ef4a56fe394e91faf0ac8e4',1,'dpp::cluster']]],
   ['edit_5fwebhook_5fwith_5ftoken_5fsync_36',['edit_webhook_with_token_sync',['../classdpp_1_1cluster.html#abf835cf724797a64550f2eaf58b8cb64',1,'dpp::cluster']]],
   ['edited_37',['edited',['../structdpp_1_1message.html#a94f1f6750ca95e4bb66f069d9b4b3a54',1,'dpp::message']]],
-  ['editing_20channels_20and_20messages_38',['Editing Channels and Messages',['../editing-channels-and-messages.html',1,'the-basics']]],
+  ['editing_20channels_20and_20messages_38',['Editing Channels and Messages',['../editing-channels-and-messages.html',1,'misc']]],
   ['eet_5fexternal_39',['eet_external',['../namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834aa1781d7fd2101cb41e44c77eb9a47a52',1,'dpp']]],
   ['eet_5fstage_5finstance_40',['eet_stage_instance',['../namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834acbbd006b9987090f39355d7621754456',1,'dpp']]],
   ['eet_5fvoice_41',['eet_voice',['../namespacedpp.html#a7d65d1ee306708cb7f7307502aaa1834a2c27a34dda63c3e5380b4fc2fd85bb59',1,'dpp']]],

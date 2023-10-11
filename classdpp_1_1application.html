@@ -101,6 +101,8 @@ $(document).ready(function(){initNavTree('classdpp_1_1application.html',''); ini
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classdpp_1_1application-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dpp::application Class Reference</div></div>
 </div><!--header-->
@@ -133,8 +135,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a20b27bd6cecfbff3ed083c65d4edf044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c07959319bada770b8288157c319e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1application.html#ae9c07959319bada770b8288157c319e6">~application</a> ()</td></tr>
 <tr class="separator:ae9c07959319bada770b8288157c319e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1fe25fde3ada9b7392c70f715a0e50d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1application.html">application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1application.html#ad1fe25fde3ada9b7392c70f715a0e50d">fill_from_json</a> (nlohmann::json *j)</td></tr>
-<tr class="separator:ad1fe25fde3ada9b7392c70f715a0e50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0138647efb49da85a0fc3c03f650bbd5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1application.html#a0138647efb49da85a0fc3c03f650bbd5">get_cover_image_url</a> (uint16_t size=0, const <a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83">image_type</a> format=<a class="el" href="namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7">i_png</a>) const</td></tr>
 <tr class="memdesc:a0138647efb49da85a0fc3c03f650bbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the application's cover image url if they have one, otherwise returns an empty string.  <a href="classdpp_1_1application.html#a0138647efb49da85a0fc3c03f650bbd5">More...</a><br /></td></tr>
 <tr class="separator:a0138647efb49da85a0fc3c03f650bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,9 +150,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a337e3e4ac1fd30d77279dc41ceba3995"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1managed.html#a337e3e4ac1fd30d77279dc41ceba3995">operator!=</a> (const <a class="el" href="classdpp_1_1managed.html">managed</a> &amp;other) const noexcept</td></tr>
 <tr class="memdesc:a337e3e4ac1fd30d77279dc41ceba3995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator for comparing two managed objects by id.  <a href="classdpp_1_1managed.html#a337e3e4ac1fd30d77279dc41ceba3995">More...</a><br /></td></tr>
 <tr class="separator:a337e3e4ac1fd30d77279dc41ceba3995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287c22f692ee3d25b6f9b320ff35baa1"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1json__interface.html#a287c22f692ee3d25b6f9b320ff35baa1">build_json</a> (bool with_id=false) const</td></tr>
-<tr class="memdesc:a287c22f692ee3d25b6f9b320ff35baa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build JSON string from the object.  <a href="structdpp_1_1json__interface.html#a287c22f692ee3d25b6f9b320ff35baa1">More...</a><br /></td></tr>
-<tr class="separator:a287c22f692ee3d25b6f9b320ff35baa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96011fc1c0d56e194f83c79d40c439c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1application.html">application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1json__interface.html#a96011fc1c0d56e194f83c79d40c439c6">fill_from_json</a> (nlohmann::json *j)</td></tr>
+<tr class="memdesc:a96011fc1c0d56e194f83c79d40c439c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert object from nlohmann::json.  <a href="structdpp_1_1json__interface.html#a96011fc1c0d56e194f83c79d40c439c6">More...</a><br /></td></tr>
+<tr class="separator:a96011fc1c0d56e194f83c79d40c439c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae169e4231b77955fc1b43a3b7be9770c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1json__interface.html#ae169e4231b77955fc1b43a3b7be9770c">to_json</a> (bool with_id=false) const</td></tr>
+<tr class="memdesc:ae169e4231b77955fc1b43a3b7be9770c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert object to nlohmann::json.  <a href="structdpp_1_1json__interface.html#ae169e4231b77955fc1b43a3b7be9770c">More...</a><br /></td></tr>
+<tr class="separator:ae169e4231b77955fc1b43a3b7be9770c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad615544432a8a6da87f3bd70d6f6b92c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1json__interface.html#ad615544432a8a6da87f3bd70d6f6b92c">build_json</a> (bool with_id=false) const</td></tr>
+<tr class="memdesc:ad615544432a8a6da87f3bd70d6f6b92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert object to json string.  <a href="structdpp_1_1json__interface.html#ad615544432a8a6da87f3bd70d6f6b92c">More...</a><br /></td></tr>
+<tr class="separator:ad615544432a8a6da87f3bd70d6f6b92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -222,6 +228,16 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a40bf0c6cc03909910512808fa6caa112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1managed.html#a40bf0c6cc03909910512808fa6caa112">id</a> = {}</td></tr>
 <tr class="memdesc:a40bf0c6cc03909910512808fa6caa112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata.  <a href="classdpp_1_1managed.html#a40bf0c6cc03909910512808fa6caa112">More...</a><br /></td></tr>
 <tr class="separator:a40bf0c6cc03909910512808fa6caa112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3bb5c744a5dc43f844edfe8c80fda1f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1application.html">application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1application.html#a3bb5c744a5dc43f844edfe8c80fda1f2">fill_from_json_impl</a> (nlohmann::json *j)</td></tr>
+<tr class="separator:a3bb5c744a5dc43f844edfe8c80fda1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ab2d4a8b5319f1eda8661de4f0c95bb12"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1application.html#ab2d4a8b5319f1eda8661de4f0c95bb12">json_interface&lt; application &gt;</a></td></tr>
+<tr class="separator:ab2d4a8b5319f1eda8661de4f0c95bb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The application class represents details of a bot application. </p>
@@ -263,8 +279,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a287c22f692ee3d25b6f9b320ff35baa1" name="a287c22f692ee3d25b6f9b320ff35baa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a287c22f692ee3d25b6f9b320ff35baa1">&#9670;&nbsp;</a></span>build_json()</h2>
+<a id="ad615544432a8a6da87f3bd70d6f6b92c" name="ad615544432a8a6da87f3bd70d6f6b92c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad615544432a8a6da87f3bd70d6f6b92c">&#9670;&nbsp;</a></span>build_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +289,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string <a class="el" href="structdpp_1_1json__interface.html">dpp::json_interface</a>&lt; <a class="el" href="classdpp_1_1application.html">application</a>  &gt;::build_json </td>
+          <td class="memname">std::string <a class="el" href="structdpp_1_1json__interface.html">dpp::json_interface</a>&lt; <a class="el" href="classdpp_1_1application.html">application</a>  &gt;::build_json </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>with_id</em> = <code>false</code></td><td>)</td>
@@ -282,36 +298,80 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Build JSON string from the object. </p>
+<p>Convert object to json string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">with_id</td><td>Include the ID in the JSON </td></tr>
+    <tr><td class="paramname">with_id</td><td>Whether to include the ID or not </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string JSON string version of object </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Some fields are conditionally filled, do not rely on all fields being present </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string Json built from the structure </dd></dl>
 
 </div>
 </div>
-<a id="ad1fe25fde3ada9b7392c70f715a0e50d" name="ad1fe25fde3ada9b7392c70f715a0e50d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1fe25fde3ada9b7392c70f715a0e50d">&#9670;&nbsp;</a></span>fill_from_json()</h2>
+<a id="a96011fc1c0d56e194f83c79d40c439c6" name="a96011fc1c0d56e194f83c79d40c439c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96011fc1c0d56e194f83c79d40c439c6">&#9670;&nbsp;</a></span>fill_from_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1application.html">application</a> &amp; dpp::application::fill_from_json </td>
+          <td class="memname"><a class="el" href="classdpp_1_1application.html">application</a>  &amp; <a class="el" href="structdpp_1_1json__interface.html">dpp::json_interface</a>&lt; <a class="el" href="classdpp_1_1application.html">application</a>  &gt;::fill_from_json </td>
           <td>(</td>
           <td class="paramtype">nlohmann::json *&#160;</td>
           <td class="paramname"><em>j</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert object from nlohmann::json. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td>nlohmann::json object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>T&amp; Reference to self for fluent calling </dd></dl>
+
+</div>
+</div>
+<a id="a3bb5c744a5dc43f844edfe8c80fda1f2" name="a3bb5c744a5dc43f844edfe8c80fda1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb5c744a5dc43f844edfe8c80fda1f2">&#9670;&nbsp;</a></span>fill_from_json_impl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1application.html">application</a> &amp; dpp::application::fill_from_json_impl </td>
+          <td>(</td>
+          <td class="paramtype">nlohmann::json *&#160;</td>
+          <td class="paramname"><em>j</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p >Read class values from json object </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -498,6 +558,65 @@ false objects are the same id </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true objects are the same id </dd>
 <dd>
 false objects are not the same id </dd></dl>
+
+</div>
+</div>
+<a id="ae169e4231b77955fc1b43a3b7be9770c" name="ae169e4231b77955fc1b43a3b7be9770c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae169e4231b77955fc1b43a3b7be9770c">&#9670;&nbsp;</a></span>to_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="structdpp_1_1json__interface.html">dpp::json_interface</a>&lt; <a class="el" href="classdpp_1_1application.html">application</a>  &gt;::to_json </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_id</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert object to nlohmann::json. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">with_id</td><td>Whether to include the ID or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Some fields are conditionally filled, do not rely on all fields being present </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>json Json built from the structure </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="ab2d4a8b5319f1eda8661de4f0c95bb12" name="ab2d4a8b5319f1eda8661de4f0c95bb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d4a8b5319f1eda8661de4f0c95bb12">&#9670;&nbsp;</a></span>json_interface&lt; application &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct <a class="el" href="structdpp_1_1json__interface.html">json_interface</a>&lt; <a class="el" href="classdpp_1_1application.html">application</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

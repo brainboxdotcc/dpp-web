@@ -44,7 +44,6 @@ var hierarchy =
     [ "dpp::component_interaction", "structdpp_1_1component__interaction.html", null ],
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],
-    [ "dpp::connection", "classdpp_1_1connection.html", null ],
     [ "dpp::detail::coroutine::coroutine_base< R >", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html", [
       [ "dpp::coroutine< R >", "classdpp_1_1coroutine.html", null ]
     ] ],
@@ -230,9 +229,6 @@ var hierarchy =
     ] ],
     [ "dpp::detail::coroutine::final_awaiter< R >", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html", null ],
     [ "dpp::detail::task::final_awaiter< R >", "structdpp_1_1detail_1_1task_1_1final__awaiter.html", null ],
-    [ "dpp::gateway", "structdpp_1_1gateway.html", null ],
-    [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ],
-    [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ],
     [ "std::hash< dpp::snowflake >", "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html", null ],
     [ "dpp::http_connect_info", "structdpp_1_1http__connect__info.html", null ],
     [ "dpp::http_request", "classdpp_1_1http__request.html", null ],
@@ -288,6 +284,9 @@ var hierarchy =
     [ "dpp::json_interface< component >", "structdpp_1_1json__interface.html", [
       [ "dpp::component", "classdpp_1_1component.html", null ]
     ] ],
+    [ "dpp::json_interface< connection >", "structdpp_1_1json__interface.html", [
+      [ "dpp::connection", "classdpp_1_1connection.html", null ]
+    ] ],
     [ "dpp::json_interface< dtemplate >", "structdpp_1_1json__interface.html", [
       [ "dpp::dtemplate", "classdpp_1_1dtemplate.html", null ]
     ] ],
@@ -297,11 +296,20 @@ var hierarchy =
     [ "dpp::json_interface< forum_tag >", "structdpp_1_1json__interface.html", [
       [ "dpp::forum_tag", "structdpp_1_1forum__tag.html", null ]
     ] ],
+    [ "dpp::json_interface< gateway >", "structdpp_1_1json__interface.html", [
+      [ "dpp::gateway", "structdpp_1_1gateway.html", null ]
+    ] ],
     [ "dpp::json_interface< guild >", "structdpp_1_1json__interface.html", [
       [ "dpp::guild", "classdpp_1_1guild.html", null ]
     ] ],
     [ "dpp::json_interface< guild_command_permissions >", "structdpp_1_1json__interface.html", [
       [ "dpp::guild_command_permissions", "classdpp_1_1guild__command__permissions.html", null ]
+    ] ],
+    [ "dpp::json_interface< guild_member >", "structdpp_1_1json__interface.html", [
+      [ "dpp::guild_member", "classdpp_1_1guild__member.html", null ]
+    ] ],
+    [ "dpp::json_interface< guild_widget >", "structdpp_1_1json__interface.html", [
+      [ "dpp::guild_widget", "classdpp_1_1guild__widget.html", null ]
     ] ],
     [ "dpp::json_interface< integration >", "structdpp_1_1json__interface.html", [
       [ "dpp::integration", "classdpp_1_1integration.html", null ]
@@ -319,6 +327,9 @@ var hierarchy =
     ] ],
     [ "dpp::json_interface< invite >", "structdpp_1_1json__interface.html", [
       [ "dpp::invite", "classdpp_1_1invite.html", null ]
+    ] ],
+    [ "dpp::json_interface< message >", "structdpp_1_1json__interface.html", [
+      [ "dpp::message", "structdpp_1_1message.html", null ]
     ] ],
     [ "dpp::json_interface< onboarding >", "structdpp_1_1json__interface.html", [
       [ "dpp::onboarding", "structdpp_1_1onboarding.html", null ]
@@ -355,6 +366,12 @@ var hierarchy =
     ] ],
     [ "dpp::json_interface< sticker_pack >", "structdpp_1_1json__interface.html", [
       [ "dpp::sticker_pack", "structdpp_1_1sticker__pack.html", null ]
+    ] ],
+    [ "dpp::json_interface< thread >", "structdpp_1_1json__interface.html", [
+      [ "dpp::thread", "classdpp_1_1thread.html", null ]
+    ] ],
+    [ "dpp::json_interface< thread_member >", "structdpp_1_1json__interface.html", [
+      [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ]
     ] ],
     [ "dpp::json_interface< user >", "structdpp_1_1json__interface.html", [
       [ "dpp::user", "classdpp_1_1user.html", [
@@ -434,7 +451,6 @@ var hierarchy =
       [ "dpp::task< R >", "classdpp_1_1task.html", null ]
     ] ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
-    [ "dpp::thread_member", "structdpp_1_1thread__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::timed_listener< attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
     [ "dpp::timer_t", "structdpp_1_1timer__t.html", null ],
