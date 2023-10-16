@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"namespacedpp_1_1colors.html#ac041cfcb385dc121e7284fc0642e9c89":[9,0,0,1,598],
+"namespacedpp_1_1colors.html#ac06bf8c5990350a63d4943de182b6b6e":[9,0,0,1,578],
+"namespacedpp_1_1colors.html#ac07e3ffa1b77edf3edff7319668f0fad":[9,0,0,1,254],
+"namespacedpp_1_1colors.html#ac12ba403bb455e517288eb877140a4e4":[9,0,0,1,144],
+"namespacedpp_1_1colors.html#ac1558d65870346b67f8597b81c114a62":[9,0,0,1,544],
+"namespacedpp_1_1colors.html#ac25529f8fe97b3fe0811a408d9d247a7":[9,0,0,1,427],
+"namespacedpp_1_1colors.html#ac2e78618972e3a3eee8e6cf7553336b9":[9,0,0,1,426],
+"namespacedpp_1_1colors.html#ac2f00c167a9e30eb4aeace79e749097c":[9,0,0,1,368],
 "namespacedpp_1_1colors.html#ac30569c8ab96c7e26b15a3f9c83fb9d6":[9,0,0,1,395],
 "namespacedpp_1_1colors.html#ac3606649e7b72dcc52061ea3d9bb077a":[9,0,0,1,191],
 "namespacedpp_1_1colors.html#ac39f88e34e90d814bcd8efb0ae3b7a73":[9,0,0,1,117],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "namespacedpp_1_1unicode__emoji.html#a01c6c42eadd373e6b56e78aae6567549":[9,0,0,5,2529],
 "namespacedpp_1_1unicode__emoji.html#a01c9d7165df3666cba6060b5f51ccc8f":[9,0,0,5,885],
 "namespacedpp_1_1unicode__emoji.html#a01d0c2bf182c6df37fd04a21ad8b6546":[9,0,0,5,4788],
-"namespacedpp_1_1unicode__emoji.html#a01d1cfb4096680bbb516b0acefd41092":[9,0,0,5,2600],
-"namespacedpp_1_1unicode__emoji.html#a01d4341956b5913f5fbc1414d27c03e8":[9,0,0,5,750],
-"namespacedpp_1_1unicode__emoji.html#a01db0f624adbdbac3dedeaad7d672550":[9,0,0,5,2071],
-"namespacedpp_1_1unicode__emoji.html#a01ea44cc545816c1f9c867ab10b4b5a3":[9,0,0,5,1004],
-"namespacedpp_1_1unicode__emoji.html#a01f9e79d4349a4e28b92a9bb3e59c2ed":[9,0,0,5,3523],
-"namespacedpp_1_1unicode__emoji.html#a01fa2ebc38878e04dd01d7b6c4ad1e1d":[9,0,0,5,5385],
-"namespacedpp_1_1unicode__emoji.html#a0202d22fab4803bee40943d93ab83a44":[9,0,0,5,5425],
-"namespacedpp_1_1unicode__emoji.html#a020d6186ce605ba6f317e1a4f3054afb":[9,0,0,5,875],
-"namespacedpp_1_1unicode__emoji.html#a020d7413d2d09afa8f224f0131315076":[9,0,0,5,1756]
+"namespacedpp_1_1unicode__emoji.html#a01d1cfb4096680bbb516b0acefd41092":[9,0,0,5,2600]
 };

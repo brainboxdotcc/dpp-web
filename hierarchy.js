@@ -41,6 +41,7 @@ var hierarchy =
     [ "dpp::command_resolved", "structdpp_1_1command__resolved.html", null ],
     [ "dpp::command_source", "structdpp_1_1command__source.html", null ],
     [ "dpp::commandhandler", "classdpp_1_1commandhandler.html", null ],
+    [ "dpp::component_default_value", "structdpp_1_1component__default__value.html", null ],
     [ "dpp::component_interaction", "structdpp_1_1component__interaction.html", null ],
     [ "dpp::confirmation", "structdpp_1_1confirmation.html", null ],
     [ "dpp::confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", null ],

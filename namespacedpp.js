@@ -6244,6 +6244,7 @@ var namespacedpp =
     [ "command_source", "structdpp_1_1command__source.html", "structdpp_1_1command__source" ],
     [ "commandhandler", "classdpp_1_1commandhandler.html", "classdpp_1_1commandhandler" ],
     [ "component", "classdpp_1_1component.html", "classdpp_1_1component" ],
+    [ "component_default_value", "structdpp_1_1component__default__value.html", "structdpp_1_1component__default__value" ],
     [ "component_interaction", "structdpp_1_1component__interaction.html", "structdpp_1_1component__interaction" ],
     [ "confirmation", "structdpp_1_1confirmation.html", "structdpp_1_1confirmation" ],
     [ "confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", "structdpp_1_1confirmation__callback__t" ],
@@ -6645,6 +6646,11 @@ var namespacedpp =
     [ "command_permission_type", "namespacedpp.html#ac66e44bd22afee53242581010ddd3728", [
       [ "cpt_role", "namespacedpp.html#ac66e44bd22afee53242581010ddd3728ad60a51c5528e7aaaddaa6b7d9209b49f", null ],
       [ "cpt_user", "namespacedpp.html#ac66e44bd22afee53242581010ddd3728af54d0925e774551ebc092ada807b349d", null ]
+    ] ],
+    [ "component_default_value_type", "namespacedpp.html#a33007c1e6a21d250b7682025ebce9cdd", [
+      [ "cdt_user", "namespacedpp.html#a33007c1e6a21d250b7682025ebce9cddaf145155227f63dbc216a5c3490ba8d84", null ],
+      [ "cdt_role", "namespacedpp.html#a33007c1e6a21d250b7682025ebce9cdda157683237b263be6ad02c0ecadccc3e8", null ],
+      [ "cdt_channel", "namespacedpp.html#a33007c1e6a21d250b7682025ebce9cdda5a6bb44a6821ca206c4f94c8cbd8c1b7", null ]
     ] ],
     [ "component_style", "namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5", [
       [ "cos_primary", "namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5ad29e42f919f0ba23aff73e3ea6ac1f5c", null ],
