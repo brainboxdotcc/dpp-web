@@ -132,9 +132,9 @@ $(document).ready(function(){initNavTree('classdpp_1_1https__client.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9ff312a1a5529495b77452e6bfe50fda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#a9ff312a1a5529495b77452e6bfe50fda">https_client</a> (const std::string &amp;<a class="el" href="classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8">hostname</a>, uint16_t <a class="el" href="classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07">port</a>=443, const std::string &amp;urlpath=&quot;/&quot;, const std::string &amp;verb=&quot;GET&quot;, const std::string &amp;req_body=&quot;&quot;, const <a class="el" href="namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2">http_headers</a> &amp;extra_headers={}, bool plaintext_connection=false, uint16_t request_timeout=5)</td></tr>
-<tr class="memdesc:a9ff312a1a5529495b77452e6bfe50fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a specific HTTP(S) server and complete a request.  <a href="classdpp_1_1https__client.html#a9ff312a1a5529495b77452e6bfe50fda">More...</a><br /></td></tr>
-<tr class="separator:a9ff312a1a5529495b77452e6bfe50fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b94d6e93aea8897af5599e9ce8f302b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#a5b94d6e93aea8897af5599e9ce8f302b">https_client</a> (const std::string &amp;<a class="el" href="classdpp_1_1ssl__client.html#a9aab17086711ef6777a01ee0974b5ce8">hostname</a>, uint16_t <a class="el" href="classdpp_1_1ssl__client.html#a53cda56d5d61e3371bd7be2424e7ff07">port</a>=443, const std::string &amp;urlpath=&quot;/&quot;, const std::string &amp;verb=&quot;GET&quot;, const std::string &amp;req_body=&quot;&quot;, const <a class="el" href="namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2">http_headers</a> &amp;extra_headers={}, bool plaintext_connection=false, uint16_t request_timeout=5, const std::string &amp;protocol=&quot;1.1&quot;)</td></tr>
+<tr class="memdesc:a5b94d6e93aea8897af5599e9ce8f302b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a specific HTTP(S) server and complete a request.  <a href="classdpp_1_1https__client.html#a5b94d6e93aea8897af5599e9ce8f302b">More...</a><br /></td></tr>
+<tr class="separator:a5b94d6e93aea8897af5599e9ce8f302b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2d6c00ba8ed56c1e06a42563d1b7026"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1https__client.html#ab2d6c00ba8ed56c1e06a42563d1b7026">~https_client</a> ()=default</td></tr>
 <tr class="memdesc:ab2d6c00ba8ed56c1e06a42563d1b7026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the https client object.  <a href="classdpp_1_1https__client.html#ab2d6c00ba8ed56c1e06a42563d1b7026">More...</a><br /></td></tr>
 <tr class="separator:ab2d6c00ba8ed56c1e06a42563d1b7026"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,8 +266,8 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p >Implements a HTTPS socket client based on the SSL client. </p>
 <dl class="section note"><dt>Note</dt><dd>plaintext HTTP without SSL is also supported via a "downgrade" setting </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9ff312a1a5529495b77452e6bfe50fda" name="a9ff312a1a5529495b77452e6bfe50fda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ff312a1a5529495b77452e6bfe50fda">&#9670;&nbsp;</a></span>https_client()</h2>
+<a id="a5b94d6e93aea8897af5599e9ce8f302b" name="a5b94d6e93aea8897af5599e9ce8f302b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b94d6e93aea8897af5599e9ce8f302b">&#9670;&nbsp;</a></span>https_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +318,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>request_timeout</em> = <code>5</code>&#160;</td>
+          <td class="paramname"><em>request_timeout</em> = <code>5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>protocol</em> = <code>&quot;1.1&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -341,6 +347,7 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">extra_headers</td><td>Additional request headers, e.g. user-agent, authorization, etc </td></tr>
     <tr><td class="paramname">plaintext_connection</td><td>Set to true to make the connection plaintext (turns off SSL) </td></tr>
     <tr><td class="paramname">request_timeout</td><td>How many seconds before the connection is considered failed if not finished </td></tr>
+    <tr><td class="paramname">http_protocol</td><td>Request HTTP protocol </td></tr>
   </table>
   </dd>
 </dl>
