@@ -7251,6 +7251,7 @@ var namespacedpp =
     [ "run_once", "namespacedpp.html#a6da92d90e8b0847e2d8c2633aaf370f0", null ],
     [ "set_bool_not_null", "namespacedpp.html#ad1d0e1acb0698f7cb0f656ce2b19ff3e", null ],
     [ "set_double_not_null", "namespacedpp.html#a2d0d3c73e35b541ba1d95eedd79a13f9", null ],
+    [ "set_iconhash_not_null", "namespacedpp.html#ad979b59c913c3a93dab0b2fea6ab47a4", null ],
     [ "set_int16_not_null", "namespacedpp.html#a6d37d9601d4975b6a5bf9dce560cd806", null ],
     [ "set_int32_not_null", "namespacedpp.html#a1e73af079b857e690895e0a5bde2589f", null ],
     [ "set_int64_not_null", "namespacedpp.html#aef513c496a461641781a63de18d2d9ec", null ],
