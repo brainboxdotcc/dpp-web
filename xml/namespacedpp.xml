@@ -118,6 +118,7 @@
     <innerclass refid="classdpp_1_1https__client" prot="public">dpp::https_client</innerclass>
     <innerclass refid="classdpp_1_1in__thread" prot="public">dpp::in_thread</innerclass>
     <innerclass refid="classdpp_1_1integration" prot="public">dpp::integration</innerclass>
+    <innerclass refid="structdpp_1_1integration__account" prot="public">dpp::integration_account</innerclass>
     <innerclass refid="structdpp_1_1integration__app" prot="public">dpp::integration_app</innerclass>
     <innerclass refid="structdpp_1_1integration__create__t" prot="public">dpp::integration_create_t</innerclass>
     <innerclass refid="structdpp_1_1integration__delete__t" prot="public">dpp::integration_delete_t</innerclass>
@@ -3324,54 +3325,66 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/integration.h" line="35" column="1" bodyfile="include/dpp/integration.h" bodystart="35" bodyend="44"/>
+        <location file="include/dpp/integration.h" line="36" column="1" bodyfile="include/dpp/integration.h" bodystart="36" bodyend="45"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a5ca6af921218321ff8f2f8640f5b2dd0" prot="public" static="no" strong="no">
         <type></type>
         <name>integration_flags</name>
         <enumvalue id="namespacedpp_1a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187" prot="public">
           <name>if_enabled</name>
-          <initializer>=     0b00000001</initializer>
+          <initializer>=	0b00000001</initializer>
           <briefdescription>
-<para>Integration enabled. </para>
+<para>is this integration enabled </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="namespacedpp_1a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11" prot="public">
           <name>if_syncing</name>
-          <initializer>=     0b00000010</initializer>
+          <initializer>=	0b00000010</initializer>
           <briefdescription>
-<para>Integration syncing. </para>
+<para>is this integration syncing </para>
           </briefdescription>
           <detaileddescription>
+<para><simplesect kind="warning"><para>This is not provided for discord bot integrations. </para>
+</simplesect>
+</para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="namespacedpp_1a5ca6af921218321ff8f2f8640f5b2dd0ac954473822136b410364f0e57b2f317f" prot="public">
           <name>if_emoticons</name>
-          <initializer>=   0b00000100</initializer>
+          <initializer>=	0b00000100</initializer>
           <briefdescription>
-<para>Emoji integration. </para>
+<para>whether emoticons should be synced for this integration (twitch only currently) </para>
           </briefdescription>
           <detaileddescription>
+<para><simplesect kind="warning"><para>This is not provided for discord bot integrations. </para>
+</simplesect>
+</para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="namespacedpp_1a5ca6af921218321ff8f2f8640f5b2dd0a29bde3bb98405da55ed02463ca320ef1" prot="public">
           <name>if_revoked</name>
-          <initializer>=     0b00001000</initializer>
+          <initializer>=	0b00001000</initializer>
           <briefdescription>
-<para>Integration revoked. </para>
+<para>has this integration been revoked </para>
           </briefdescription>
           <detaileddescription>
+<para><simplesect kind="warning"><para>This is not provided for discord bot integrations. </para>
+</simplesect>
+</para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="namespacedpp_1a5ca6af921218321ff8f2f8640f5b2dd0a8fa6e6961f9500c23086730960c35bad" prot="public">
           <name>if_expire_kick</name>
-          <initializer>= 0b00010000</initializer>
+          <initializer>= 	0b00010000</initializer>
           <briefdescription>
-<para>Kick users when their subscription expires. </para>
+<para>kick user when their subscription expires, otherwise only remove the role that is specified by <computeroutput>role_id</computeroutput>. </para>
           </briefdescription>
           <detaileddescription>
+<para><simplesect kind="warning"><para>This is not provided for discord bot integrations. </para>
+</simplesect>
+</para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
@@ -3381,7 +3394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/integration.h" line="49" column="1" bodyfile="include/dpp/integration.h" bodystart="49" bodyend="60"/>
+        <location file="include/dpp/integration.h" line="50" column="1" bodyfile="include/dpp/integration.h" bodystart="50" bodyend="56"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5" prot="public" static="no" strong="no">
         <type></type>
@@ -6665,7 +6678,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/integration.h" line="173" column="28" bodyfile="include/dpp/integration.h" bodystart="173" bodyend="-1"/>
+        <location file="include/dpp/integration.h" line="179" column="28" bodyfile="include/dpp/integration.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1connection" kindref="compound">connection</ref> &gt;</type>
@@ -6679,7 +6692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/integration.h" line="176" column="28" bodyfile="include/dpp/integration.h" bodystart="176" bodyend="-1"/>
+        <location file="include/dpp/integration.h" line="182" column="28" bodyfile="include/dpp/integration.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" prot="public" static="no">
         <type>std::unordered_map&lt; std::string, <ref refid="classdpp_1_1invite" kindref="compound">invite</ref> &gt;</type>
@@ -6759,7 +6772,7 @@
 <para>Represents the various discord permissions. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000041"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> instead. </para>
+<para><xrefsect id="deprecated_1_deprecated000040"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> instead. </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>

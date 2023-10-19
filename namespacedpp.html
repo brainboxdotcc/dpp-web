@@ -484,6 +484,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1integration.html">integration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an integration on a guild, e.g. a connection to twitch.  <a href="classdpp_1_1integration.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1integration__account.html">integration_account</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The account information for an integration.  <a href="structdpp_1_1integration__account.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1integration__app.html">integration_app</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An application that has been integrated.  <a href="structdpp_1_1integration__app.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2802,7 +2805,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Represents the various discord permissions. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>Use <a class="el" href="namespacedpp.html#a64f16cd622b3a09ae96803ba07fa75b7" title="Represents the various discord permissions.">dpp::permissions</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -4443,15 +4446,19 @@ Variables</h2></td></tr>
 
 <p>Integration flags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187" name="a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187"></a>if_enabled&#160;</td><td class="fielddoc"><p >Integration enabled. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187" name="a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187"></a>if_enabled&#160;</td><td class="fielddoc"><p >is this integration enabled </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11" name="a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11"></a>if_syncing&#160;</td><td class="fielddoc"><p >Integration syncing. </p>
+<tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11" name="a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11"></a>if_syncing&#160;</td><td class="fielddoc"><p >is this integration syncing </p>
+<dl class="section warning"><dt>Warning</dt><dd>This is not provided for discord bot integrations. </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0ac954473822136b410364f0e57b2f317f" name="a5ca6af921218321ff8f2f8640f5b2dd0ac954473822136b410364f0e57b2f317f"></a>if_emoticons&#160;</td><td class="fielddoc"><p >Emoji integration. </p>
+<tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0ac954473822136b410364f0e57b2f317f" name="a5ca6af921218321ff8f2f8640f5b2dd0ac954473822136b410364f0e57b2f317f"></a>if_emoticons&#160;</td><td class="fielddoc"><p >whether emoticons should be synced for this integration (twitch only currently) </p>
+<dl class="section warning"><dt>Warning</dt><dd>This is not provided for discord bot integrations. </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0a29bde3bb98405da55ed02463ca320ef1" name="a5ca6af921218321ff8f2f8640f5b2dd0a29bde3bb98405da55ed02463ca320ef1"></a>if_revoked&#160;</td><td class="fielddoc"><p >Integration revoked. </p>
+<tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0a29bde3bb98405da55ed02463ca320ef1" name="a5ca6af921218321ff8f2f8640f5b2dd0a29bde3bb98405da55ed02463ca320ef1"></a>if_revoked&#160;</td><td class="fielddoc"><p >has this integration been revoked </p>
+<dl class="section warning"><dt>Warning</dt><dd>This is not provided for discord bot integrations. </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0a8fa6e6961f9500c23086730960c35bad" name="a5ca6af921218321ff8f2f8640f5b2dd0a8fa6e6961f9500c23086730960c35bad"></a>if_expire_kick&#160;</td><td class="fielddoc"><p >Kick users when their subscription expires. </p>
+<tr><td class="fieldname"><a id="a5ca6af921218321ff8f2f8640f5b2dd0a8fa6e6961f9500c23086730960c35bad" name="a5ca6af921218321ff8f2f8640f5b2dd0a8fa6e6961f9500c23086730960c35bad"></a>if_expire_kick&#160;</td><td class="fielddoc"><p >kick user when their subscription expires, otherwise only remove the role that is specified by <code>role_id</code>. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This is not provided for discord bot integrations. </dd></dl>
 </td></tr>
 </table>
 

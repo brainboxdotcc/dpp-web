@@ -16,16 +16,16 @@ var classdpp_1_1integration =
     [ "to_json", "classdpp_1_1integration.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "to_json_impl", "classdpp_1_1integration.html#a1a8c2849892bb9b48db2f874ad2596e3", null ],
     [ "json_interface< integration >", "classdpp_1_1integration.html#ae8710261ae5df4827289269059d710a5", null ],
-    [ "account_id", "classdpp_1_1integration.html#a94925ef08b5ab6fabc0ce318091cc9c3", null ],
-    [ "account_name", "classdpp_1_1integration.html#a9f7392cfbcf7f9db2c4d0d4f4631909b", null ],
+    [ "account", "classdpp_1_1integration.html#a35e765183c8a9dca7e4dc6e6067c9efc", null ],
     [ "app", "classdpp_1_1integration.html#ab3283de104da19b3371cf86adecc4ebb", null ],
     [ "expire_grace_period", "classdpp_1_1integration.html#ab2e8e43972c73f7fcebf0040b6f81850", null ],
     [ "flags", "classdpp_1_1integration.html#a7c893562842d2b67762bb44d7879d18a", null ],
     [ "id", "classdpp_1_1integration.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "name", "classdpp_1_1integration.html#ad8d55dcc91a62699c28d81b6f9c177f0", null ],
     [ "role_id", "classdpp_1_1integration.html#a9039b472313750dc5700680fc98f8927", null ],
+    [ "scopes", "classdpp_1_1integration.html#af0c9dcf0b64b1c11aa2f21e14dd24a17", null ],
     [ "subscriber_count", "classdpp_1_1integration.html#a6226522574b38e03a4cb2df9ddc7dbba", null ],
     [ "synced_at", "classdpp_1_1integration.html#adc4d5078e65f35a398d4d43c88870812", null ],
     [ "type", "classdpp_1_1integration.html#ad2ddea4d9651a07beb959ee745d43db1", null ],
-    [ "user_id", "classdpp_1_1integration.html#a21cc087eef1cc39176c2a3ddc3203815", null ]
+    [ "user_obj", "classdpp_1_1integration.html#a83ac415b6591535fa85a37ddb2397baa", null ]
 ];
