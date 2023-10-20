@@ -7,7 +7,9 @@
     </briefdescription>
     <detaileddescription>
 <para>A bot status is pretty cool, and it&apos;d be cooler if you knew how to do it! This tutorial will cover how to set the bot status to say <computeroutput>Playing games!</computeroutput>, as well as covering how to set the status to the amount of guilds every two minutes.</para>
-<para>First, we&apos;ll cover setting the bot status to <computeroutput>Playing games!</computeroutput>.</para>
+<para><simplesect kind="note"><para><ref refid="namespacedpp_1a5ae7c530cff1cae7200e136bf8c1bf83" kindref="member">dpp::get_guild_cache</ref> requires the bot to have the guild cache enabled, if your bot has this disabled then you can&apos;t use that. Instead, you should look to use <ref refid="classdpp_1_1cluster_1ac3dc39069aaaa492727f39b35edd957e" kindref="member">dpp::cluster::current_application_get</ref> and get the <computeroutput>approximate_guild_count</computeroutput> from <ref refid="classdpp_1_1application" kindref="compound">dpp::application</ref> in the callback.</para>
+</simplesect>
+First, we&apos;ll cover setting the bot status to <computeroutput>Playing games!</computeroutput>.</para>
 <para><programlisting filename="setting_status1.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>

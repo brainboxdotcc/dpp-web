@@ -102,7 +102,8 @@ $(document).ready(function(){initNavTree('setting_status.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >A bot status is pretty cool, and it'd be cooler if you knew how to do it! This tutorial will cover how to set the bot status to say <code>Playing games!</code>, as well as covering how to set the status to the amount of guilds every two minutes.</p>
-<p >First, we'll cover setting the bot status to <code>Playing games!</code>.</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="namespacedpp.html#a5ae7c530cff1cae7200e136bf8c1bf83">dpp::get_guild_cache</a> requires the bot to have the guild cache enabled, if your bot has this disabled then you can't use that. Instead, you should look to use <a class="el" href="classdpp_1_1cluster.html#ac3dc39069aaaa492727f39b35edd957e" title="Get current (bot) application.">dpp::cluster::current_application_get</a> and get the <code>approximate_guild_count</code> from <a class="el" href="classdpp_1_1application.html" title="The application class represents details of a bot application.">dpp::application</a> in the callback.</dd></dl>
+<p>First, we'll cover setting the bot status to <code>Playing games!</code>.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
