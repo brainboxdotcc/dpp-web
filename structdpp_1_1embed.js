@@ -19,7 +19,7 @@ var structdpp_1_1embed =
     [ "set_url", "structdpp_1_1embed.html#a02bd8a6c9c248b8155d630fb8cd865b3", null ],
     [ "set_video", "structdpp_1_1embed.html#a74a1f20e719f0bd855a19ea47310e485", null ],
     [ "author", "structdpp_1_1embed.html#abe6263ce0132837017e0aca16c6e299d", null ],
-    [ "color", "structdpp_1_1embed.html#a882b7b909e6e90b5ac91fbb9d5f84f04", null ],
+    [ "color", "structdpp_1_1embed.html#af561b6b706e22ac955aaeaf8aaef34e7", null ],
     [ "description", "structdpp_1_1embed.html#ac9d64f935df99fc11ac960a29529f37c", null ],
     [ "fields", "structdpp_1_1embed.html#a51999ed159b5d326b0117604bb8dc4ee", null ],
     [ "footer", "structdpp_1_1embed.html#a431c219b7e195e151c19dfbebc09e13a", null ],

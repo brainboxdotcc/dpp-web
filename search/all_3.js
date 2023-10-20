@@ -485,7 +485,7 @@ var searchData=
   ['collecting_20reactions_482',['Collecting Reactions',['../collecting-reactions.html',1,'misc']]],
   ['collectioncount_483',['collectionCount',['../structdpp_1_1moving__averager.html#aa1064802dd80e7d21e0f3fe23187a986',1,'dpp::moving_averager']]],
   ['collector_484',['collector',['../classdpp_1_1collector.html#a6b1ceac5e4c24685cc698702ef7be338',1,'dpp::collector::collector()'],['../classdpp_1_1collector.html',1,'dpp::collector&lt; T, C &gt;']]],
-  ['color_485',['color',['../structdpp_1_1embed.html#a882b7b909e6e90b5ac91fbb9d5f84f04',1,'dpp::embed']]],
+  ['color_485',['color',['../structdpp_1_1embed.html#af561b6b706e22ac955aaeaf8aaef34e7',1,'dpp::embed']]],
   ['colour_486',['colour',['../classdpp_1_1role.html#a42f8b747f7a04cd1022ce3bc42e6a05b',1,'dpp::role']]],
   ['columbia_5fblue_487',['columbia_blue',['../namespacedpp_1_1colors.html#a45a1295075834a10684f8a8c516ffb4d',1,'dpp::colors']]],
   ['combine_5fsamples_488',['combine_samples',['../classdpp_1_1audio__mixer.html#a5c7ba9e4399ca8aead97382bcf68b0f3',1,'dpp::audio_mixer']]],
