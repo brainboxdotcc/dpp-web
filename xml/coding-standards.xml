@@ -21,7 +21,7 @@
 <sect3 id="coding-standards_1autotoc_md43">
 <title>Curly Braces</title>
 <para>Curly Braces should be on the same line as the keyword, for example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>foo()<sp/>{</highlight></codeline>
+<para><programlisting filename="coding_style_standards/curly_braces.cpp"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>foo()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>==<sp/>b)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c();</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
@@ -47,7 +47,7 @@
 <sect3 id="coding-standards_1autotoc_md44">
 <title>Lists</title>
 <para>Lists should have a space after the comma in parameter lists, and after opening brackets and before closing brackets except when calling a function, for example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal">std::vector&lt;std::string&gt;<sp/>clowns<sp/>=<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;pennywise&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bobo&quot;</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<para><programlisting filename="coding_style_standards/lists.cpp"><codeline><highlight class="normal">std::vector&lt;std::string&gt;<sp/>clowns<sp/>=<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;pennywise&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bobo&quot;</highlight><highlight class="normal"><sp/>};</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">evaluate_clown(clowns[0],<sp/>evilness(2.5,<sp/>factor));</highlight></codeline>
 </programlisting></para>
@@ -56,9 +56,11 @@
 <sect2 id="coding-standards_1autotoc_md45">
 <title>Dot (.) Notation</title>
 <para>When using the dot notation repeatedly (For example, creating an embed.), you should start each <computeroutput>.function()</computeroutput> on a new line, as such:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal">stuff{}</highlight></codeline>
+<para><programlisting filename="coding_style_standards/dot_notation.cpp"><codeline><highlight class="normal">stuff{}</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.add_stuff()</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.add_stuff();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">event</highlight><highlight class="normal">.reply(</highlight><highlight class="stringliteral">&quot;This<sp/>reply<sp/>function<sp/>isn&apos;t<sp/>indented!&quot;</highlight><highlight class="normal">);</highlight></codeline>
 </programlisting></para>
 </sect2>
 <sect2 id="coding-standards_1autotoc_md46">
@@ -71,7 +73,37 @@
 </sect2>
 <sect2 id="coding-standards_1autotoc_md48">
 <title>Comments</title>
-<para>All comments should be in <computeroutput>doxygen</computeroutput> format (similar to javadoc). Please see existing class definitions for an example. You should use doxygen style comments in a class definition inside a header file, and can use any other comment types within the .cpp file. Be liberal with comments, especially if your code makes any assumptions!</para>
+<para>All comments should be in <computeroutput>doxygen</computeroutput> format (similar to javadoc). Please see existing class definitions for an example. You should use doxygen style comments in a class definition inside a header file. Be liberal with comments, especially if your code makes any assumptions! Comments should follow the format below:</para>
+<para><simplesect kind="note"><para>Comments that contain doxygen stuff need to use two stars at the beginning (/**). This example doesn&apos;t because doxygen gets confused and doesn&apos;t show the comments.</para>
+</simplesect>
+<programlisting filename="coding_style_standards/comments.cpp"><codeline><highlight class="comment">/*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@brief<sp/>This<sp/>is<sp/>a<sp/>function<sp/>that<sp/>does<sp/>some<sp/>cool<sp/>stuff.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>More<sp/>stuff<sp/>here<sp/>will<sp/>still<sp/>go<sp/>in<sp/>brief!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@warning<sp/>This<sp/>does<sp/>nothing!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">func_name();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@brief<sp/>This<sp/>turns<sp/>a<sp/>name<sp/>into<sp/>a<sp/>meme<sp/>name!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@param<sp/>name<sp/>The<sp/>name<sp/>of<sp/>the<sp/>user<sp/>that<sp/>you<sp/>want<sp/>to<sp/>meme-ify.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@return<sp/>a<sp/>meme<sp/>name!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">std::string<sp/>name_to_meme(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>--------------------<sp/>.cpp<sp/>file<sp/>--------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>are<sp/>now<sp/>going<sp/>to<sp/>do<sp/>some<sp/>cool<sp/>stuff.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>func_name();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Going<sp/>to<sp/>turn<sp/>brain<sp/>into<sp/>a<sp/>meme<sp/>name.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Why?</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Because<sp/>why<sp/>not.<sp/>That&apos;s<sp/>why.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>name_to_meme(</highlight><highlight class="stringliteral">&quot;Brain&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
 </sect2>
 <sect2 id="coding-standards_1autotoc_md49">
 <title>Spell Checks</title>
@@ -80,7 +112,7 @@
 <sect2 id="coding-standards_1autotoc_md50">
 <title>Symbol Exporting</title>
 <para>If you export a class which is to be accessible to users, be sure to prefix it with the <computeroutput>DPP_EXPORT</computeroutput> macro, for example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
+<para><programlisting filename="coding_style_standards/symbol_exporting.cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>
@@ -127,7 +159,7 @@
 <sect2 id="coding-standards_1autotoc_md60">
 <title>Fluent Design</title>
 <para>Where possible, if you are adding methods to a class you should consider fluent design. Fluent design is the use of class methods that return a reference to self (via <computeroutput>return *this</computeroutput>), so that you can chain object method calls together (in the way <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> and <ref refid="structdpp_1_1embed" kindref="compound">dpp::embed</ref> do). For example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
+<para><programlisting filename="coding_style_standards/fluent_design.cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>
@@ -147,7 +179,7 @@
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
 <para>This would allow the user to do this:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal">dpp::my_new_class<sp/>nc;</highlight></codeline>
+<para><programlisting filename="coding_style_standards/fluent_design2.cpp"><codeline><highlight class="normal">dpp::my_new_class<sp/>nc;</highlight></codeline>
 <codeline><highlight class="normal">nc.set_hats(3).set_clowns(9001);</highlight></codeline>
 </programlisting></para>
 </sect2>

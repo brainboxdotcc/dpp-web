@@ -29,5 +29,6 @@ var classdpp_1_1emoji =
     [ "id", "classdpp_1_1emoji.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "image_data", "classdpp_1_1emoji.html#aa67cddbafe111c20f8d2810b3a837417", null ],
     [ "name", "classdpp_1_1emoji.html#a54f464b7094256975294cfd3ed9efcc1", null ],
+    [ "roles", "classdpp_1_1emoji.html#a6f59861790097073536480f3806d5a90", null ],
     [ "user_id", "classdpp_1_1emoji.html#a9032a433eae36211c7d3730543dea0db", null ]
 ];

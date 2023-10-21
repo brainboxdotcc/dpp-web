@@ -147,6 +147,8 @@ Dot (.) Notation</h2>
 <div class="fragment"><div class="line">stuff{}</div>
 <div class="line">    .add_stuff()</div>
 <div class="line">    .add_stuff();</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">event</span>.reply(<span class="stringliteral">&quot;This reply function isn&#39;t indented!&quot;</span>);</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md46"></a>
 Indentation</h2>
 <p >Indentation should always be tab characters. It is up to you how wide you set tab characters in your editor for your personal tastes. All code blocks delimited within curly braces should be indented neatly and uniformly.</p>
@@ -155,8 +157,36 @@ Constants and #define Macros</h2>
 <p >Constants and macros should be all <code>UPPERCASE</code> with <code>SNAKE_CASE</code> to separate words. Macros should not have any unexpected side effects.</p>
 <h2><a class="anchor" id="autotoc_md48"></a>
 Comments</h2>
-<p >All comments should be in <code>doxygen</code> format (similar to javadoc). Please see existing class definitions for an example. You should use doxygen style comments in a class definition inside a header file, and can use any other comment types within the .cpp file. Be liberal with comments, especially if your code makes any assumptions!</p>
-<h2><a class="anchor" id="autotoc_md49"></a>
+<p >All comments should be in <code>doxygen</code> format (similar to javadoc). Please see existing class definitions for an example. You should use doxygen style comments in a class definition inside a header file. Be liberal with comments, especially if your code makes any assumptions! Comments should follow the format below:</p>
+<dl class="section note"><dt>Note</dt><dd>Comments that contain doxygen stuff need to use two stars at the beginning (/**). This example doesn't because doxygen gets confused and doesn't show the comments.</dd></dl>
+<div class="fragment"><div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * @brief This is a function that does some cool stuff.</span></div>
+<div class="line"><span class="comment"> * More stuff here will still go in brief!</span></div>
+<div class="line"><span class="comment"> * @warning This does nothing!</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line">func_name();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * @brief This turns a name into a meme name!</span></div>
+<div class="line"><span class="comment"> *</span></div>
+<div class="line"><span class="comment"> * @param name The name of the user that you want to meme-ify.</span></div>
+<div class="line"><span class="comment"> * @return a meme name!</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line">std::string name_to_meme(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* -------------------- .cpp file -------------------- */</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <span class="comment">/* We are now going to do some cool stuff. */</span></div>
+<div class="line">    func_name();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/* Going to turn brain into a meme name.</span></div>
+<div class="line"><span class="comment">     * Why?</span></div>
+<div class="line"><span class="comment">     * Because why not. That&#39;s why.</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    std::cout &lt;&lt; name_to_meme(<span class="stringliteral">&quot;Brain&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md49"></a>
 Spell Checks</h2>
 <p >To prevent typos, a GitHub-Action checks the documentation. If it fails for a word that was falsely flagged, you can add them to <code>.cspell.json</code>.</p>
 <h2><a class="anchor" id="autotoc_md50"></a>

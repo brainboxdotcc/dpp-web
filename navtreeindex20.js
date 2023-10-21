@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classdpp_1_1websocket__client.html#abd1b3d59beb6a505e81e2bf3374e2532":[11,0,0,222,4],
+"classdpp_1_1websocket__client.html#abd1b3d59beb6a505e81e2bf3374e2532":[9,0,0,226,4],
 "classdpp_1_1websocket__client.html#abf247ed0871e89e6a319c95841a315bd":[11,0,0,222,7],
 "classdpp_1_1websocket__client.html#abf247ed0871e89e6a319c95841a315bd":[9,0,0,226,7],
 "classdpp_1_1websocket__client.html#ac8997404ef91c501c3e8ae1079e89152":[9,0,0,226,25],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85":[9,0,0,356],
 "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a40641216d07d139fe3c2744f2318f75f":[9,0,0,356,0],
 "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a637cb88d1e072ae739f24ea01982c456":[9,0,0,356,3],
-"namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a838e511c735776d803d52c7c7b0d38c3":[9,0,0,356,1],
-"namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85aba06f9c0033583341762686e4e76679b":[9,0,0,356,4],
-"namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85abfd923a1a12342f4b61722cdeefdac99":[9,0,0,356,2]
+"namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a838e511c735776d803d52c7c7b0d38c3":[9,0,0,356,1]
 };
