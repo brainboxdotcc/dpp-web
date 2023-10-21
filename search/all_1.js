@@ -352,7 +352,7 @@ var searchData=
   ['automod_5ftrigger_5ftype_349',['automod_trigger_type',['../namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6',1,'dpp']]],
   ['available_350',['available',['../structdpp_1_1sticker.html#a2c42ec44209ccf454785b796250caa7f',1,'dpp::sticker']]],
   ['available_5ftags_351',['available_tags',['../classdpp_1_1channel.html#a39f17a9a627d819d89e124fb944ad5c2',1,'dpp::channel']]],
-  ['avatar_352',['avatar',['../classdpp_1_1guild__member.html#aeb9413ebe5540ebd625a35166f5ad799',1,'dpp::guild_member::avatar()'],['../classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110',1,'dpp::webhook::avatar()'],['../classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3',1,'dpp::user::avatar()']]],
+  ['avatar_352',['avatar',['../classdpp_1_1guild__member.html#aeb9413ebe5540ebd625a35166f5ad799',1,'dpp::guild_member::avatar()'],['../classdpp_1_1webhook.html#aa9b4dd133a65bc6d575f749a58fd77d9',1,'dpp::webhook::avatar()'],['../classdpp_1_1user.html#ae9d90b269f17fc2c5a0021dcb2b8dce3',1,'dpp::user::avatar()']]],
   ['avatar_5fdecoration_353',['avatar_decoration',['../classdpp_1_1user.html#a4fe4eb724f86c429ebc64e230441b8fe',1,'dpp::user']]],
   ['avatar_5fsize_354',['avatar_size',['../namespacedpp_1_1utility.html#a2e8cc2ce4c01244c9db877ab526ac9cc',1,'dpp::utility']]],
   ['avocado_355',['avocado',['../namespacedpp_1_1unicode__emoji.html#ae0badf3a7ce27ceb424a0467ddc274e4',1,'dpp::unicode_emoji']]],

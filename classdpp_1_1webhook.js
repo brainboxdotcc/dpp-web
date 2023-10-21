@@ -3,7 +3,6 @@ var classdpp_1_1webhook =
     [ "webhook", "classdpp_1_1webhook.html#a7144cd4b090eaa5a22687230cf2d6bd3", null ],
     [ "webhook", "classdpp_1_1webhook.html#a50c826b1dfd536f839f2a71ddf60bedd", null ],
     [ "webhook", "classdpp_1_1webhook.html#a4e3d93a96dace41ced1a91474847403d", null ],
-    [ "~webhook", "classdpp_1_1webhook.html#aa5f6e90d2be315fd438b827e25447a36", null ],
     [ "build_json", "classdpp_1_1webhook.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "classdpp_1_1webhook.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "classdpp_1_1webhook.html#abb5ebdf5fbd976d5b8e329a2554193ea", null ],
@@ -15,13 +14,16 @@ var classdpp_1_1webhook =
     [ "to_json_impl", "classdpp_1_1webhook.html#af20171d6423f311c5fe9aeccbb672cc7", null ],
     [ "json_interface< webhook >", "classdpp_1_1webhook.html#a99a6a96973afd054fc8632fc84970f15", null ],
     [ "application_id", "classdpp_1_1webhook.html#af37345950a45e0b0b15b345625f26c85", null ],
-    [ "avatar", "classdpp_1_1webhook.html#a905a15aff7538542766b7f57a9dd7110", null ],
+    [ "avatar", "classdpp_1_1webhook.html#aa9b4dd133a65bc6d575f749a58fd77d9", null ],
     [ "channel_id", "classdpp_1_1webhook.html#ae553e70e26e0062648d0280aa74eaed0", null ],
     [ "guild_id", "classdpp_1_1webhook.html#aeb4a3c383260167ef6a05fe2e31f2e75", null ],
     [ "id", "classdpp_1_1webhook.html#a40bf0c6cc03909910512808fa6caa112", null ],
-    [ "image_data", "classdpp_1_1webhook.html#ade12623a3521f4d7d68f11c26ab79a5b", null ],
+    [ "image_data", "classdpp_1_1webhook.html#a67866c51ecb586471139d5539ce9c835", null ],
     [ "name", "classdpp_1_1webhook.html#af982ac0a68dd3f81fcb267a713d338f3", null ],
+    [ "source_channel", "classdpp_1_1webhook.html#ad02d00ed53119e5f4c622f793fe35d49", null ],
+    [ "source_guild", "classdpp_1_1webhook.html#a8a56d2b84cddfeb2f2d707a869e2b6f2", null ],
     [ "token", "classdpp_1_1webhook.html#a1500f11e74b9a859f0cd0c4cf9d135b0", null ],
     [ "type", "classdpp_1_1webhook.html#a2b988a9005bc38b8eebd99dabdf1ecbe", null ],
-    [ "user_id", "classdpp_1_1webhook.html#ad83876476eeaec943e4abf3411dfb840", null ]
+    [ "url", "classdpp_1_1webhook.html#add569486c4ad5f4cf7880ef164b9298a", null ],
+    [ "user_obj", "classdpp_1_1webhook.html#ad4c5750fd7038864b04a8c3daf2efa16", null ]
 ];
