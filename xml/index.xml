@@ -201,6 +201,9 @@
     <member refid="structdpp_1_1detail_1_1async_1_1async__callback__data_1ac1b36f1c29879e9b4419edc51fce224e" kind="function"><name>construct_result</name></member>
     <member refid="structdpp_1_1detail_1_1async_1_1async__callback__data_1aaa10d635f06a10ade6c9961330b0aae2" kind="function"><name>~async_callback_data</name></member>
   </compound>
+  <compound refid="structdpp_1_1async__dummy" kind="struct"><name>dpp::async_dummy</name>
+    <member refid="structdpp_1_1async__dummy_1a33c158f8bdd883d5265ea46da948f62a" kind="variable"><name>dummy_shared_state</name></member>
+  </compound>
   <compound refid="structdpp_1_1attachment" kind="struct"><name>dpp::attachment</name>
     <member refid="structdpp_1_1attachment_1a78fa9315fae4737d760e0b19cc9597cf" kind="variable"><name>id</name></member>
     <member refid="structdpp_1_1attachment_1a899697fe4fea962a9a81f0cae66e86f5" kind="variable"><name>size</name></member>
@@ -1756,6 +1759,9 @@
     <member refid="classdpp_1_1detail_1_1coroutine_1_1coroutine__base_1a4176f65261061d42db916a5263e4c9c5" kind="function"><name>await_resume</name></member>
     <member refid="classdpp_1_1detail_1_1coroutine_1_1coroutine__base_1afeaea1a4f7219b8a1797dc9705aa27ef" kind="function"><name>await_resume</name></member>
   </compound>
+  <compound refid="structdpp_1_1coroutine__dummy" kind="struct"><name>dpp::coroutine_dummy</name>
+    <member refid="structdpp_1_1coroutine__dummy_1a214eeabc68839ec22347514c81035f28" kind="variable"><name>handle_dummy</name></member>
+  </compound>
   <compound refid="structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4" kind="struct"><name>dpp::detail::std_coroutine::coroutine_traits&lt; dpp::coroutine&lt; R &gt;, Args... &gt;</name>
     <member refid="structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4_1a76fc8cf9460688748433a5d0391ec5fc" kind="typedef"><name>promise_type</name></member>
   </compound>
@@ -2216,21 +2222,28 @@
     <member refid="structdpp_1_1event__member_1a57942084a5ec9b93d47d8856f27531c1" kind="variable"><name>member</name></member>
   </compound>
   <compound refid="classdpp_1_1event__router__t" kind="class"><name>dpp::event_router_t</name>
+    <member refid="classdpp_1_1event__router__t_1a098dd28774c2d35f85abd3de89fa8576" kind="typedef"><name>regular_handler_t</name></member>
+    <member refid="classdpp_1_1event__router__t_1a1107be84d807d1289234c33da3eb93e9" kind="typedef"><name>event_handler_abi_t</name></member>
+    <member refid="classdpp_1_1event__router__t_1a388065d4c74935e8bfc2634633339119" kind="typedef"><name>task_handler_t</name></member>
+    <member refid="classdpp_1_1event__router__t_1aecfb2ae531c9da6a8002f8c7cfda25fb" kind="typedef"><name>event_handler_t</name></member>
     <member refid="classdpp_1_1event__router__t_1a93941955d9d15030232a5aaa08bb9afa" kind="friend"><name>cluster</name></member>
     <member refid="classdpp_1_1event__router__t_1a4e278a27ba250ce3f647b2a695c01335" kind="friend"><name>detail::event_router::awaitable&lt; T &gt;</name></member>
-    <member refid="classdpp_1_1event__router__t_1a6e5c036e8182e65a1f4ff9862984f9bf" kind="variable"><name>next_handle</name></member>
     <member refid="classdpp_1_1event__router__t_1a9c7ea2aa22b81b8e44712e78959ee367" kind="variable"><name>mutex</name></member>
-    <member refid="classdpp_1_1event__router__t_1a944ed6529ba7f6bf7e2d3d9ded04f9a3" kind="variable"><name>dispatch_container</name></member>
+    <member refid="classdpp_1_1event__router__t_1a26ba91e351b05c8723fce841c4419ab6" kind="variable"><name>dispatch_container</name></member>
     <member refid="classdpp_1_1event__router__t_1a271c8f75b9e62eec183aa1504b79cf4c" kind="variable"><name>coro_mutex</name></member>
     <member refid="classdpp_1_1event__router__t_1a5c5ae452ad768011f34e295bb23d7fc5" kind="variable"><name>coro_awaiters</name></member>
     <member refid="classdpp_1_1event__router__t_1a671901d510d29b517a62afd31c582a1b" kind="variable"><name>warning</name></member>
+    <member refid="classdpp_1_1event__router__t_1a8980ee5f4caf999005ac4dcb8c4c6df0" kind="function"><name>DPP_CHECK_ABI_COMPAT</name></member>
     <member refid="classdpp_1_1event__router__t_1a5a344ce973c4428d889d11c5f35bea74" kind="function"><name>set_warning_callback</name></member>
+    <member refid="classdpp_1_1event__router__t_1a493534366b5897f60f37c61b9faf454e" kind="function"><name>handle</name></member>
+    <member refid="classdpp_1_1event__router__t_1a7870d7eac66020245fa0b35b12852147" kind="function"><name>handle_coro</name></member>
     <member refid="classdpp_1_1event__router__t_1ae83e7b537ef2c5a087e13257aac4e73d" kind="function"><name>attach_awaiter</name></member>
     <member refid="classdpp_1_1event__router__t_1a11d4ed56a2b579428a26ae77ac418854" kind="function"><name>detach_coro</name></member>
     <member refid="classdpp_1_1event__router__t_1a67fa825b406bca67e2f7972f1428c597" kind="function"><name>resume_awaiters</name></member>
     <member refid="classdpp_1_1event__router__t_1a5ead27e7e608a86b4622021fddb384c3" kind="function"><name>event_router_t</name></member>
     <member refid="classdpp_1_1event__router__t_1a17b89d58a79e87083b060a9c0800a8c5" kind="function"><name>~event_router_t</name></member>
     <member refid="classdpp_1_1event__router__t_1a8099d8f317b52a9e9a2e5c6b248a73a3" kind="function"><name>call</name></member>
+    <member refid="classdpp_1_1event__router__t_1a36d1120fa6ea95b44bd34cdf8cdcf9d4" kind="function"><name>call</name></member>
     <member refid="classdpp_1_1event__router__t_1a16c2527f66c8b74e5c0678ace4fa549e" kind="function"><name>when</name></member>
     <member refid="classdpp_1_1event__router__t_1a2223cf644fac6d4ab67b59236af4e63c" kind="function"><name>operator co_await</name></member>
     <member refid="classdpp_1_1event__router__t_1abab35ab0fc1efe0057b69ff7bbd485ab" kind="function"><name>empty</name></member>
@@ -3397,6 +3410,8 @@
   </compound>
   <compound refid="structdpp_1_1job" kind="class"><name>dpp::job</name>
   </compound>
+  <compound refid="structdpp_1_1job__dummy" kind="struct"><name>dpp::job_dummy</name>
+  </compound>
   <compound refid="structdpp_1_1json__interface" kind="struct"><name>dpp::json_interface</name>
     <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" kind="function"><name>fill_from_json</name></member>
     <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" kind="function"><name>to_json</name></member>
@@ -3926,7 +3941,6 @@
     <member refid="structdpp_1_1detail_1_1job_1_1promise_1a46428baad4bd8c953a21d673006be6ba" kind="function"><name>get_return_object</name></member>
     <member refid="structdpp_1_1detail_1_1job_1_1promise_1a3c7c522ce5a0e5a6231970100b6be4fd" kind="function"><name>unhandled_exception</name></member>
     <member refid="structdpp_1_1detail_1_1job_1_1promise_1a476acfe7b61939075765730961ba71c2" kind="function"><name>return_void</name></member>
-    <member refid="structdpp_1_1detail_1_1job_1_1promise_1aaf0c7d20d6260f1a47564511821e5d23" kind="function"><name>await_transform</name></member>
   </compound>
   <compound refid="structdpp_1_1detail_1_1task_1_1promise__base" kind="struct"><name>dpp::detail::task::promise_base</name>
     <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1a5d41e402e3fe4e9bdba72a7f1e617d9b" kind="variable"><name>state</name></member>
@@ -4669,6 +4683,9 @@
   <compound refid="classdpp_1_1task__cancelled__exception" kind="class"><name>dpp::task_cancelled_exception</name>
     <member refid="classdpp_1_1exception_1ac033c933ff59daf22d4ea121303e11b9" kind="variable"><name>msg</name></member>
     <member refid="classdpp_1_1exception_1a010588e4eec074c113ff36c82dde74f9" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="structdpp_1_1task__dummy" kind="struct"><name>dpp::task_dummy</name>
+    <member refid="structdpp_1_1task__dummy_1a7e1ec7577f7b2a4c585259d33996a86f" kind="variable"><name>handle_dummy</name></member>
   </compound>
   <compound refid="classdpp_1_1team__member" kind="class"><name>dpp::team_member</name>
     <member refid="classdpp_1_1team__member_1ac01c919406ebaeba9ce8ed08eaff9eaa" kind="variable"><name>membership_state</name></member>
@@ -6278,6 +6295,9 @@
     <member refid="namespacedpp_1a1728693a6b7bc12f1bb05e113e5c0428" kind="function"><name>get_emoji_count</name></member>
     <member refid="namespacedpp_1a77d77e1ffffe22979d93132a7acee1d3" kind="function"><name>to_json</name></member>
     <member refid="namespacedpp_1a7b4c7cea42e58d376ea1f7aa6d630c98" kind="function"><name>to_json</name></member>
+    <member refid="namespacedpp_1a617b87100a40cead8c87add5e6adf4de" kind="function"><name>DPP_CHECK_ABI_COMPAT</name></member>
+    <member refid="namespacedpp_1a702b8ec12c8abc77c264d5a6876ac62c" kind="function"><name>DPP_CHECK_ABI_COMPAT</name></member>
+    <member refid="namespacedpp_1a4788a37ace2799b30444c02f55110b78" kind="function"><name>DPP_CHECK_ABI_COMPAT</name></member>
     <member refid="namespacedpp_1adec042312c305da2b49380300bde130b" kind="function"><name>when_any</name></member>
     <member refid="namespacedpp_1aab9892169cd091ab8292c29ec27d43a4" kind="function"><name>snowflake_not_null</name></member>
     <member refid="namespacedpp_1ae445f4eb0bd2357dec87d33b8825ba31" kind="function"><name>set_snowflake_not_null</name></member>
@@ -7071,8 +7091,6 @@
     <member refid="namespacedpp_1_1detail_1_1event__router_1af9ce1f09309e4ce5bd9a1fa5efa6e252a8339f8ec4341bf798354a91fcec3c92d" kind="enumvalue"><name>cancelling</name></member>
   </compound>
   <compound refid="namespacedpp_1_1detail_1_1job" kind="namespace"><name>dpp::detail::job</name>
-    <member refid="namespacedpp_1_1detail_1_1job_1a1fd25db290174c445c4e400e8d9d0e76" kind="variable"><name>coroutine_has_no_ref_params_v</name></member>
-    <member refid="namespacedpp_1_1detail_1_1job_1ac10c7fe3783a54b6d57f62ac50282c3b" kind="variable"><name>coroutine_has_no_ref_params_v&lt; T, Args... &gt;</name></member>
   </compound>
   <compound refid="namespacedpp_1_1detail_1_1std__coroutine" kind="namespace"><name>dpp::detail::std_coroutine</name>
   </compound>
@@ -12951,6 +12969,7 @@
   <compound refid="export_8h" kind="file"><name>export.h</name>
     <member refid="export_8h_1a43e929611b99bb940721a7347cf8dd4a" kind="define"><name>DPP_EXPORT</name></member>
     <member refid="export_8h_1aff55fe551a9992a54ec54621c524d0a4" kind="define"><name>SOCKET</name></member>
+    <member refid="export_8h_1ab7a28f2a89adc3c5a559478c36d38533" kind="define"><name>DPP_DEPRECATED</name></member>
   </compound>
   <compound refid="guild_8h" kind="file"><name>guild.h</name>
   </compound>
@@ -13044,6 +13063,7 @@
   <compound refid="user_8h" kind="file"><name>user.h</name>
   </compound>
   <compound refid="utility_8h" kind="file"><name>utility.h</name>
+    <member refid="utility_8h_1ab8ce2191b24ed59ae4807ee29ea43601" kind="define"><name>DPP_CHECK_ABI_COMPAT</name></member>
   </compound>
   <compound refid="version_8h" kind="file"><name>version.h</name>
     <member refid="version_8h_1aaa38857abb0d8db9208ebf531e109b8d" kind="define"><name>DPP_VERSION_LONG</name></member>

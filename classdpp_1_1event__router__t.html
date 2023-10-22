@@ -123,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3">call</a> (const T &amp;event) const</td></tr>
 <tr class="memdesc:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all attached listeners. Listeners may cancel, by calling the event.cancel method.  <a href="classdpp_1_1event__router__t.html#a8099d8f317b52a9e9a2e5c6b248a73a3">More...</a><br /></td></tr>
 <tr class="separator:a8099d8f317b52a9e9a2e5c6b248a73a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d1120fa6ea95b44bd34cdf8cdcf9d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a36d1120fa6ea95b44bd34cdf8cdcf9d4">call</a> (T &amp;&amp;event) const</td></tr>
+<tr class="memdesc:a36d1120fa6ea95b44bd34cdf8cdcf9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call all attached listeners. Listeners may cancel, by calling the event.cancel method.  <a href="classdpp_1_1event__router__t.html#a36d1120fa6ea95b44bd34cdf8cdcf9d4">More...</a><br /></td></tr>
+<tr class="separator:a36d1120fa6ea95b44bd34cdf8cdcf9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16c2527f66c8b74e5c0678ace4fa549e"><td class="memTemplParams" colspan="2">template&lt;typename Predicate &gt; </td></tr>
 <tr class="memitem:a16c2527f66c8b74e5c0678ace4fa549e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a16c2527f66c8b74e5c0678ace4fa549e">when</a> (Predicate &amp;&amp;pred)</td></tr>
 <tr class="memdesc:a16c2527f66c8b74e5c0678ace4fa549e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain an awaitable object that refers to an event with a certain condition. It can be co_await-ed to wait for the next event that satisfies this condition. On resumption the awaiter will be given <b>a reference</b> to the event, saving it in a variable is recommended to avoid variable lifetime issues.  <a href="classdpp_1_1event__router__t.html#a16c2527f66c8b74e5c0678ace4fa549e">More...</a><br /></td></tr>
@@ -138,13 +141,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a98f8bb07280138a21bbdd2348912da5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1abf0dab2344fad5d1ce20d79c87dac0"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a1abf0dab2344fad5d1ce20d79c87dac0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a1abf0dab2344fad5d1ce20d79c87dac0">operator()</a> (F &amp;&amp;fun)</td></tr>
-<tr class="memdesc:a1abf0dab2344fad5d1ce20d79c87dac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a callable to the event, adding a listener. The callable should either be of the form <code>void(const T &amp;)</code> or <code><a class="el" href="structdpp_1_1job.html" title="Extremely light coroutine object designed to send off a coroutine to execute on its own....">dpp::job(T)</a></code> (the latter requires DPP_CORO to be defined), where T is the event type for this event router.  <a href="classdpp_1_1event__router__t.html#a1abf0dab2344fad5d1ce20d79c87dac0">More...</a><br /></td></tr>
+<tr class="memdesc:a1abf0dab2344fad5d1ce20d79c87dac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a callable to the event, adding a listener. The callable should either be of the form <code>void(const T&amp;)</code> or <code><a class="el" href="classdpp_1_1task.html" title="A coroutine task. It starts immediately on construction and can be co_await-ed, making it perfect for...">dpp::task</a>&lt;void&gt;(const T&amp;)</code> (the latter requires DPP_CORO to be defined), where T is the event type for this event router.  <a href="classdpp_1_1event__router__t.html#a1abf0dab2344fad5d1ce20d79c87dac0">More...</a><br /></td></tr>
 <tr class="separator:a1abf0dab2344fad5d1ce20d79c87dac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a636ce010bc662fd3d8c93a538786fc07"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a636ce010bc662fd3d8c93a538786fc07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a636ce010bc662fd3d8c93a538786fc07">attach</a> (F &amp;&amp;fun)</td></tr>
-<tr class="memdesc:a636ce010bc662fd3d8c93a538786fc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a callable to the event, adding a listener. The callable should either be of the form <code>void(const T &amp;)</code> or <code><a class="el" href="structdpp_1_1job.html" title="Extremely light coroutine object designed to send off a coroutine to execute on its own....">dpp::job(T)</a></code> (the latter requires DPP_CORO to be defined), where T is the event type for this event router.  <a href="classdpp_1_1event__router__t.html#a636ce010bc662fd3d8c93a538786fc07">More...</a><br /></td></tr>
+<tr class="memdesc:a636ce010bc662fd3d8c93a538786fc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a callable to the event, adding a listener. The callable should either be of the form <code>void(const T&amp;)</code> or <code><a class="el" href="classdpp_1_1task.html" title="A coroutine task. It starts immediately on construction and can be co_await-ed, making it perfect for...">dpp::task</a>&lt;void&gt;(const T&amp;)</code> (the latter requires DPP_CORO to be defined), where T is the event type for this event router.  <a href="classdpp_1_1event__router__t.html#a636ce010bc662fd3d8c93a538786fc07">More...</a><br /></td></tr>
 <tr class="separator:a636ce010bc662fd3d8c93a538786fc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb1a37fce0778d18db0104b2e61b9f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a6cb1a37fce0778d18db0104b2e61b9f4">detach</a> (const <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> &amp;handle)</td></tr>
+<tr class="memitem:a6cb1a37fce0778d18db0104b2e61b9f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a6cb1a37fce0778d18db0104b2e61b9f4">detach</a> (const <a class="el" href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">event_handle</a> &amp;<a class="el" href="classdpp_1_1event__router__t.html#a493534366b5897f60f37c61b9faf454e">handle</a>)</td></tr>
 <tr class="memdesc:a6cb1a37fce0778d18db0104b2e61b9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach a listener from the event using a previously obtained ID.  <a href="classdpp_1_1event__router__t.html#a6cb1a37fce0778d18db0104b2e61b9f4">More...</a><br /></td></tr>
 <tr class="separator:a6cb1a37fce0778d18db0104b2e61b9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -153,10 +156,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5a344ce973c4428d889d11c5f35bea74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a5a344ce973c4428d889d11c5f35bea74">set_warning_callback</a> (std::function&lt; void(const T &amp;)&gt; warning_function)</td></tr>
 <tr class="memdesc:a5a344ce973c4428d889d11c5f35bea74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next handle to be given out by the event router.  <a href="classdpp_1_1event__router__t.html#a5a344ce973c4428d889d11c5f35bea74">More...</a><br /></td></tr>
 <tr class="separator:a5a344ce973c4428d889d11c5f35bea74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493534366b5897f60f37c61b9faf454e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a493534366b5897f60f37c61b9faf454e">handle</a> (const T &amp;event) const</td></tr>
+<tr class="memdesc:a493534366b5897f60f37c61b9faf454e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle an event. This function should only be used without coro enabled, otherwise use handle_coro.  <a href="classdpp_1_1event__router__t.html#a493534366b5897f60f37c61b9faf454e">More...</a><br /></td></tr>
+<tr class="separator:a493534366b5897f60f37c61b9faf454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7870d7eac66020245fa0b35b12852147"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1job.html">dpp::job</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a7870d7eac66020245fa0b35b12852147">handle_coro</a> (T event) const</td></tr>
+<tr class="memdesc:a7870d7eac66020245fa0b35b12852147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle an event as a coroutine, ensuring the lifetime of the event object.  <a href="classdpp_1_1event__router__t.html#a7870d7eac66020245fa0b35b12852147">More...</a><br /></td></tr>
+<tr class="separator:a7870d7eac66020245fa0b35b12852147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae83e7b537ef2c5a087e13257aac4e73d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#ae83e7b537ef2c5a087e13257aac4e73d">attach_awaiter</a> (<a class="el" href="classdpp_1_1detail_1_1event__router_1_1awaitable.html">detail::event_router::awaitable</a>&lt; T &gt; *awaiter)</td></tr>
 <tr class="memdesc:ae83e7b537ef2c5a087e13257aac4e73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a suspended coroutine to this event router via <a class="el" href="classdpp_1_1detail_1_1event__router_1_1awaitable.html" title="Awaitable object representing an event. A user can co_await on this object to resume the next time th...">detail::event_router::awaitable</a>. It will be resumed and detached when an event satisfying its condition completes, or it is cancelled.  <a href="classdpp_1_1event__router__t.html#ae83e7b537ef2c5a087e13257aac4e73d">More...</a><br /></td></tr>
 <tr class="separator:ae83e7b537ef2c5a087e13257aac4e73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d4ed56a2b579428a26ae77ac418854"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a11d4ed56a2b579428a26ae77ac418854">detach_coro</a> (void *handle)</td></tr>
+<tr class="memitem:a11d4ed56a2b579428a26ae77ac418854"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a11d4ed56a2b579428a26ae77ac418854">detach_coro</a> (void *<a class="el" href="classdpp_1_1event__router__t.html#a493534366b5897f60f37c61b9faf454e">handle</a>)</td></tr>
 <tr class="memdesc:a11d4ed56a2b579428a26ae77ac418854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach an awaiting coroutine handle from this event router. This is mostly called when a <a class="el" href="classdpp_1_1detail_1_1event__router_1_1awaitable.html" title="Awaitable object representing an event. A user can co_await on this object to resume the next time th...">detail::event_router::awaitable</a> is cancelled.  <a href="classdpp_1_1event__router__t.html#a11d4ed56a2b579428a26ae77ac418854">More...</a><br /></td></tr>
 <tr class="separator:a11d4ed56a2b579428a26ae77ac418854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67fa825b406bca67e2f7972f1428c597"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1event__router__t.html#a67fa825b406bca67e2f7972f1428c597">resume_awaiters</a> (const T &amp;event) const</td></tr>
@@ -193,7 +202,7 @@ class dpp::event_router_t&lt; T &gt;</div><p >Handles routing of an event to mul
 <div class="line"> </div>
 <div class="line"><span class="comment">// Detach from an event using the handle returned by operator()</span></div>
 <div class="line">my_event.detach(<span class="keywordtype">id</span>);</div>
-<div class="ttc" id="anamespacedpp_html_a4641626be7775de0b8b63a6e68d0934e"><div class="ttname"><a href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">dpp::event_handle</a></div><div class="ttdeci">size_t event_handle</div><div class="ttdoc">A returned event handle for an event which was attached.</div><div class="ttdef"><b>Definition:</b> event_router.h:158</div></div>
+<div class="ttc" id="anamespacedpp_html_a4641626be7775de0b8b63a6e68d0934e"><div class="ttname"><a href="namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e">dpp::event_handle</a></div><div class="ttdeci">size_t event_handle</div><div class="ttdoc">A returned event handle for an event which was attached.</div><div class="ttdef"><b>Definition:</b> event_router.h:159</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>type of single parameter passed to event lambda derived from <a class="el" href="structdpp_1_1event__dispatch__t.html" title="Base event parameter struct. Each event you receive from the library will have its parameter derived ...">event_dispatch_t</a> </td></tr>
@@ -286,7 +295,7 @@ template&lt;typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Attach a callable to the event, adding a listener. The callable should either be of the form <code>void(const T &amp;)</code> or <code><a class="el" href="structdpp_1_1job.html" title="Extremely light coroutine object designed to send off a coroutine to execute on its own....">dpp::job(T)</a></code> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </p>
+<p>Attach a callable to the event, adding a listener. The callable should either be of the form <code>void(const T&amp;)</code> or <code><a class="el" href="classdpp_1_1task.html" title="A coroutine task. It starts immediately on construction and can be co_await-ed, making it perfect for...">dpp::task</a>&lt;void&gt;(const T&amp;)</code> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fun</td><td>Callable to attach to event </td></tr>
@@ -335,7 +344,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a8099d8f317b52a9e9a2e5c6b248a73a3" name="a8099d8f317b52a9e9a2e5c6b248a73a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8099d8f317b52a9e9a2e5c6b248a73a3">&#9670;&nbsp;</a></span>call()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8099d8f317b52a9e9a2e5c6b248a73a3">&#9670;&nbsp;</a></span>call() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,6 +358,42 @@ template&lt;class T &gt; </div>
           <td class="memname">void <a class="el" href="classdpp_1_1event__router__t.html">dpp::event_router_t</a>&lt; T &gt;::call </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call all attached listeners. Listeners may cancel, by calling the event.cancel method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Class to pass as parameter to all listeners. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a36d1120fa6ea95b44bd34cdf8cdcf9d4" name="a36d1120fa6ea95b44bd34cdf8cdcf9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d1120fa6ea95b44bd34cdf8cdcf9d4">&#9670;&nbsp;</a></span>call() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdpp_1_1event__router__t.html">dpp::event_router_t</a>&lt; T &gt;::call </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -486,6 +531,66 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a493534366b5897f60f37c61b9faf454e" name="a493534366b5897f60f37c61b9faf454e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493534366b5897f60f37c61b9faf454e">&#9670;&nbsp;</a></span>handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdpp_1_1event__router__t.html">dpp::event_router_t</a>&lt; T &gt;::handle </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handle an event. This function should only be used without coro enabled, otherwise use handle_coro. </p>
+
+</div>
+</div>
+<a id="a7870d7eac66020245fa0b35b12852147" name="a7870d7eac66020245fa0b35b12852147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7870d7eac66020245fa0b35b12852147">&#9670;&nbsp;</a></span>handle_coro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdpp_1_1job.html">dpp::job</a> <a class="el" href="classdpp_1_1event__router__t.html">dpp::event_router_t</a>&lt; T &gt;::handle_coro </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handle an event as a coroutine, ensuring the lifetime of the event object. </p>
+
+</div>
+</div>
 <a id="a98f8bb07280138a21bbdd2348912da5b" name="a98f8bb07280138a21bbdd2348912da5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a98f8bb07280138a21bbdd2348912da5b">&#9670;&nbsp;</a></span>operator bool()</h2>
 
@@ -559,7 +664,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="aclassdpp_1_1component_html"><div class="ttname"><a href="classdpp_1_1component.html">dpp::component</a></div><div class="ttdoc">Represents the component object. A component is a clickable button or drop down list within a discord...</div><div class="ttdef"><b>Definition:</b> message.h:250</div></div>
 <div class="ttc" id="anamespacedpp_1_1unicode__emoji_html_a1121b729a73cc36fb0bf2b8e3d7dc979"><div class="ttname"><a href="namespacedpp_1_1unicode__emoji.html#a1121b729a73cc36fb0bf2b8e3d7dc979">dpp::unicode_emoji::b</a></div><div class="ttdeci">constexpr const char b[]</div><div class="ttdef"><b>Definition:</b> unicode_emoji.h:5073</div></div>
 <div class="ttc" id="astructdpp_1_1button__click__t_html"><div class="ttname"><a href="structdpp_1_1button__click__t.html">dpp::button_click_t</a></div><div class="ttdoc">Click on button.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:668</div></div>
-<div class="ttc" id="astructdpp_1_1job_html"><div class="ttname"><a href="structdpp_1_1job.html">dpp::job</a></div><div class="ttdoc">Extremely light coroutine object designed to send off a coroutine to execute on its own....</div><div class="ttdef"><b>Definition:</b> job.h:46</div></div>
+<div class="ttc" id="astructdpp_1_1job_html"><div class="ttname"><a href="structdpp_1_1job.html">dpp::job</a></div><div class="ttdoc">Extremely light coroutine object designed to send off a coroutine to execute on its own....</div><div class="ttdef"><b>Definition:</b> job.h:55</div></div>
 <div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:1265</div></div>
 <div class="ttc" id="astructdpp_1_1slashcommand__t_html"><div class="ttname"><a href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a></div><div class="ttdoc">User has issued a slash command.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:660</div></div>
 </div><!-- fragment --><p >This can be combined with <a class="el" href="classdpp_1_1when__any.html" title="Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes...">dpp::when_any</a> and other awaitables, for example <a class="el" href="classdpp_1_1cluster.html#ab960df57796742a4013c7a492f782ed8" title="Get an awaitable to wait a certain amount of seconds. Use the co_await keyword on its return value to...">dpp::cluster::co_sleep</a> to create expiring buttons.</p>
@@ -588,7 +693,7 @@ template&lt;typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Attach a callable to the event, adding a listener. The callable should either be of the form <code>void(const T &amp;)</code> or <code><a class="el" href="structdpp_1_1job.html" title="Extremely light coroutine object designed to send off a coroutine to execute on its own....">dpp::job(T)</a></code> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </p>
+<p>Attach a callable to the event, adding a listener. The callable should either be of the form <code>void(const T&amp;)</code> or <code><a class="el" href="classdpp_1_1task.html" title="A coroutine task. It starts immediately on construction and can be co_await-ed, making it perfect for...">dpp::task</a>&lt;void&gt;(const T&amp;)</code> (the latter requires DPP_CORO to be defined), where T is the event type for this event router. </p>
 <p >This has the exact same behavior as using <a class="el" href="classdpp_1_1event__router__t.html#a636ce010bc662fd3d8c93a538786fc07">attach</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1event__router__t.html#a636ce010bc662fd3d8c93a538786fc07" title="Attach a callable to the event, adding a listener. The callable should either be of the form void(con...">attach</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>

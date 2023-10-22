@@ -125,49 +125,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a476acfe7b61939075765730961ba71c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1job_1_1promise.html#a476acfe7b61939075765730961ba71c2">return_void</a> () const noexcept</td></tr>
 <tr class="memdesc:a476acfe7b61939075765730961ba71c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when the job returns. Does nothing.  <a href="structdpp_1_1detail_1_1job_1_1promise.html#a476acfe7b61939075765730961ba71c2">More...</a><br /></td></tr>
 <tr class="separator:a476acfe7b61939075765730961ba71c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf0c7d20d6260f1a47564511821e5d23"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aaf0c7d20d6260f1a47564511821e5d23"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1job_1_1promise.html#aaf0c7d20d6260f1a47564511821e5d23">await_transform</a> (T &amp;&amp;expr) const noexcept</td></tr>
-<tr class="memdesc:aaf0c7d20d6260f1a47564511821e5d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that will wrap every co_await inside of the job.  <a href="structdpp_1_1detail_1_1job_1_1promise.html#aaf0c7d20d6260f1a47564511821e5d23">More...</a><br /></td></tr>
-<tr class="separator:aaf0c7d20d6260f1a47564511821e5d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
 struct dpp::detail::job::promise&lt; Args &gt;</div><p >Coroutine promise type for a job. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aaf0c7d20d6260f1a47564511821e5d23" name="aaf0c7d20d6260f1a47564511821e5d23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf0c7d20d6260f1a47564511821e5d23">&#9670;&nbsp;</a></span>await_transform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="structdpp_1_1detail_1_1job_1_1promise.html">dpp::detail::job::promise</a>&lt; Args &gt;::await_transform </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&amp;&#160;</td>
-          <td class="paramname"><em>expr</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Function that will wrap every co_await inside of the job. </p>
-<p ><code>job</code> is extremely efficient as a coroutine but this comes with drawbacks : It cannot be co_awaited, which means the second it co_awaits something, the program jumps back to the calling function, which continues executing. At this point, if the function returns, every object declared in the function including its parameters are destroyed, which causes dangling references. This is exactly the same problem as references in lambdas : <a href="https://dpp.dev/lambdas-and-locals.html">https://dpp.dev/lambdas-and-locals.html</a>.</p>
-<p >If you must pass a reference, pass it as a pointer or with std::ref, but you must fully understand the reason behind this warning, and what to avoid. If you prefer a safer type, use <code>coroutine</code> for synchronous execution, or <code>task</code> for parallel tasks, and co_await them.</p>
-
-</div>
-</div>
 <a id="ac560471aad076b0ca26eb866f3f7201f" name="ac560471aad076b0ca26eb866f3f7201f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac560471aad076b0ca26eb866f3f7201f">&#9670;&nbsp;</a></span>final_suspend()</h2>
 

@@ -15,6 +15,7 @@ var hierarchy =
       [ "dpp::async< R >", "classdpp_1_1async.html", null ]
     ] ],
     [ "dpp::detail::async::async_callback_data< R >", "structdpp_1_1detail_1_1async_1_1async__callback__data.html", null ],
+    [ "dpp::async_dummy", "structdpp_1_1async__dummy.html", null ],
     [ "dpp::attachment", "structdpp_1_1attachment.html", null ],
     [ "dpp::audio_mixer", "classdpp_1_1audio__mixer.html", null ],
     [ "dpp::audit_change", "structdpp_1_1audit__change.html", null ],
@@ -48,6 +49,7 @@ var hierarchy =
     [ "dpp::detail::coroutine::coroutine_base< R >", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html", [
       [ "dpp::coroutine< R >", "classdpp_1_1coroutine.html", null ]
     ] ],
+    [ "dpp::coroutine_dummy", "structdpp_1_1coroutine__dummy.html", null ],
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", null ],
     [ "dpp::detail::std_coroutine::coroutine_traits< dpp::task< T >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1task_3_01_t_01_4_00_01_args_8_8_8_01_4.html", null ],
@@ -241,6 +243,7 @@ var hierarchy =
     [ "dpp::integration_account", "structdpp_1_1integration__account.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
     [ "dpp::job", "structdpp_1_1job.html", null ],
+    [ "dpp::job_dummy", "structdpp_1_1job__dummy.html", null ],
     [ "dpp::json_interface< T >", "structdpp_1_1json__interface.html", null ],
     [ "dpp::json_interface< application >", "structdpp_1_1json__interface.html", [
       [ "dpp::application", "classdpp_1_1application.html", null ]
@@ -452,6 +455,7 @@ var hierarchy =
     [ "dpp::detail::task::task_base< R >", "classdpp_1_1detail_1_1task_1_1task__base.html", [
       [ "dpp::task< R >", "classdpp_1_1task.html", null ]
     ] ],
+    [ "dpp::task_dummy", "structdpp_1_1task__dummy.html", null ],
     [ "dpp::team_member", "classdpp_1_1team__member.html", null ],
     [ "dpp::thread_metadata", "structdpp_1_1thread__metadata.html", null ],
     [ "dpp::timed_listener< attached_event, listening_function >", "classdpp_1_1timed__listener.html", null ],
