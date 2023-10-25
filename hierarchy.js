@@ -76,6 +76,9 @@ var hierarchy =
       [ "dpp::events::channel_delete", "classdpp_1_1events_1_1channel__delete.html", null ],
       [ "dpp::events::channel_pins_update", "classdpp_1_1events_1_1channel__pins__update.html", null ],
       [ "dpp::events::channel_update", "classdpp_1_1events_1_1channel__update.html", null ],
+      [ "dpp::events::entitlement_create", "classdpp_1_1events_1_1entitlement__create.html", null ],
+      [ "dpp::events::entitlement_delete", "classdpp_1_1events_1_1entitlement__delete.html", null ],
+      [ "dpp::events::entitlement_update", "classdpp_1_1events_1_1entitlement__update.html", null ],
       [ "dpp::events::guild_audit_log_entry_create", "classdpp_1_1events_1_1guild__audit__log__entry__create.html", null ],
       [ "dpp::events::guild_ban_add", "classdpp_1_1events_1_1guild__ban__add.html", null ],
       [ "dpp::events::guild_ban_remove", "classdpp_1_1events_1_1guild__ban__remove.html", null ],
@@ -140,6 +143,9 @@ var hierarchy =
       [ "dpp::channel_delete_t", "structdpp_1_1channel__delete__t.html", null ],
       [ "dpp::channel_pins_update_t", "structdpp_1_1channel__pins__update__t.html", null ],
       [ "dpp::channel_update_t", "structdpp_1_1channel__update__t.html", null ],
+      [ "dpp::entitlement_create_t", "structdpp_1_1entitlement__create__t.html", null ],
+      [ "dpp::entitlement_delete_t", "structdpp_1_1entitlement__delete__t.html", null ],
+      [ "dpp::entitlement_update_t", "structdpp_1_1entitlement__update__t.html", null ],
       [ "dpp::guild_audit_log_entry_create_t", "structdpp_1_1guild__audit__log__entry__create__t.html", null ],
       [ "dpp::guild_ban_add_t", "structdpp_1_1guild__ban__add__t.html", null ],
       [ "dpp::guild_ban_remove_t", "structdpp_1_1guild__ban__remove__t.html", null ],
@@ -298,6 +304,9 @@ var hierarchy =
     [ "dpp::json_interface< emoji >", "structdpp_1_1json__interface.html", [
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ]
     ] ],
+    [ "dpp::json_interface< entitlement >", "structdpp_1_1json__interface.html", [
+      [ "dpp::entitlement", "classdpp_1_1entitlement.html", null ]
+    ] ],
     [ "dpp::json_interface< forum_tag >", "structdpp_1_1json__interface.html", [
       [ "dpp::forum_tag", "structdpp_1_1forum__tag.html", null ]
     ] ],
@@ -360,6 +369,9 @@ var hierarchy =
     [ "dpp::json_interface< select_option >", "structdpp_1_1json__interface.html", [
       [ "dpp::select_option", "structdpp_1_1select__option.html", null ]
     ] ],
+    [ "dpp::json_interface< sku >", "structdpp_1_1json__interface.html", [
+      [ "dpp::sku", "classdpp_1_1sku.html", null ]
+    ] ],
     [ "dpp::json_interface< slashcommand >", "structdpp_1_1json__interface.html", [
       [ "dpp::slashcommand", "classdpp_1_1slashcommand.html", null ]
     ] ],
@@ -407,6 +419,7 @@ var hierarchy =
       [ "dpp::channel", "classdpp_1_1channel.html", null ],
       [ "dpp::collected_reaction", "classdpp_1_1collected__reaction.html", null ],
       [ "dpp::emoji", "classdpp_1_1emoji.html", null ],
+      [ "dpp::entitlement", "classdpp_1_1entitlement.html", null ],
       [ "dpp::forum_tag", "structdpp_1_1forum__tag.html", null ],
       [ "dpp::guild", "classdpp_1_1guild.html", null ],
       [ "dpp::integration", "classdpp_1_1integration.html", null ],
@@ -416,6 +429,7 @@ var hierarchy =
       [ "dpp::onboarding_prompt_option", "structdpp_1_1onboarding__prompt__option.html", null ],
       [ "dpp::role", "classdpp_1_1role.html", null ],
       [ "dpp::scheduled_event", "structdpp_1_1scheduled__event.html", null ],
+      [ "dpp::sku", "classdpp_1_1sku.html", null ],
       [ "dpp::slashcommand", "classdpp_1_1slashcommand.html", null ],
       [ "dpp::stage_instance", "structdpp_1_1stage__instance.html", null ],
       [ "dpp::sticker", "structdpp_1_1sticker.html", null ],

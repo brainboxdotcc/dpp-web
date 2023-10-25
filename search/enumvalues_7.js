@@ -42,13 +42,14 @@ var searchData=
   ['ir_5fdeferred_5fupdate_5fmessage_39',['ir_deferred_update_message',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312',1,'dpp']]],
   ['ir_5fmodal_5fdialog_40',['ir_modal_dialog',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a85b5ff6f0109f5832f7d70a998ed50f5',1,'dpp']]],
   ['ir_5fpong_41',['ir_pong',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede',1,'dpp']]],
-  ['ir_5fupdate_5fmessage_42',['ir_update_message',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847',1,'dpp']]],
-  ['it_5fapplication_5fcommand_43',['it_application_command',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0',1,'dpp']]],
-  ['it_5fautocomplete_44',['it_autocomplete',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4',1,'dpp']]],
-  ['it_5fcomponent_5fbutton_45',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
-  ['it_5fmodal_5fsubmit_46',['it_modal_submit',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a2260f71b08edd3a605b6bc6c49c0659b',1,'dpp']]],
-  ['it_5fping_47',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]],
-  ['itt_5fembedded_5fapplication_48',['itt_embedded_application',['../namespacedpp.html#a7744393c99f4267d89195749406eed3ba5a920f5e05cfec0e34fba45ceebc3bcf',1,'dpp']]],
-  ['itt_5fnone_49',['itt_none',['../namespacedpp.html#a7744393c99f4267d89195749406eed3baaeef0e66699afa934ed716404a31ae06',1,'dpp']]],
-  ['itt_5fstream_50',['itt_stream',['../namespacedpp.html#a7744393c99f4267d89195749406eed3ba96dc2021651edfef0a9154744e386a8e',1,'dpp']]]
+  ['ir_5fpremium_5frequired_42',['ir_premium_required',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a65c4de2b1578c42fa1bb318c74cb05d3',1,'dpp']]],
+  ['ir_5fupdate_5fmessage_43',['ir_update_message',['../namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847',1,'dpp']]],
+  ['it_5fapplication_5fcommand_44',['it_application_command',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0',1,'dpp']]],
+  ['it_5fautocomplete_45',['it_autocomplete',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4',1,'dpp']]],
+  ['it_5fcomponent_5fbutton_46',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
+  ['it_5fmodal_5fsubmit_47',['it_modal_submit',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a2260f71b08edd3a605b6bc6c49c0659b',1,'dpp']]],
+  ['it_5fping_48',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]],
+  ['itt_5fembedded_5fapplication_49',['itt_embedded_application',['../namespacedpp.html#a7744393c99f4267d89195749406eed3ba5a920f5e05cfec0e34fba45ceebc3bcf',1,'dpp']]],
+  ['itt_5fnone_50',['itt_none',['../namespacedpp.html#a7744393c99f4267d89195749406eed3baaeef0e66699afa934ed716404a31ae06',1,'dpp']]],
+  ['itt_5fstream_51',['itt_stream',['../namespacedpp.html#a7744393c99f4267d89195749406eed3ba96dc2021651edfef0a9154744e386a8e',1,'dpp']]]
 ];

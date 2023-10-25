@@ -33,6 +33,7 @@ var classdpp_1_1interaction =
     [ "channel", "classdpp_1_1interaction.html#a40bc62124a16f911fe27ac2a010f73fa", null ],
     [ "channel_id", "classdpp_1_1interaction.html#a8062f778758ef53d0ea4e40f62ff4015", null ],
     [ "data", "classdpp_1_1interaction.html#a04d74cfb07306fdf8bc540ee5a7e2f4e", null ],
+    [ "entitlements", "classdpp_1_1interaction.html#ae92d06d5b72c45b6b5029b684c1b5326", null ],
     [ "guild_id", "classdpp_1_1interaction.html#a6301d14a86e9b51b656ef589c2e39009", null ],
     [ "guild_locale", "classdpp_1_1interaction.html#af73bc2d172724c5fe2ce9b3dc34c4eb8", null ],
     [ "id", "classdpp_1_1interaction.html#a40bf0c6cc03909910512808fa6caa112", null ],

@@ -6265,6 +6265,10 @@ var namespacedpp =
     [ "embed_image", "structdpp_1_1embed__image.html", "structdpp_1_1embed__image" ],
     [ "embed_provider", "structdpp_1_1embed__provider.html", "structdpp_1_1embed__provider" ],
     [ "emoji", "classdpp_1_1emoji.html", "classdpp_1_1emoji" ],
+    [ "entitlement", "classdpp_1_1entitlement.html", "classdpp_1_1entitlement" ],
+    [ "entitlement_create_t", "structdpp_1_1entitlement__create__t.html", "structdpp_1_1entitlement__create__t" ],
+    [ "entitlement_delete_t", "structdpp_1_1entitlement__delete__t.html", "structdpp_1_1entitlement__delete__t" ],
+    [ "entitlement_update_t", "structdpp_1_1entitlement__update__t.html", "structdpp_1_1entitlement__update__t" ],
     [ "error_detail", "structdpp_1_1error__detail.html", "structdpp_1_1error__detail" ],
     [ "error_info", "structdpp_1_1error__info.html", "structdpp_1_1error__info" ],
     [ "etf_buffer", "structdpp_1_1etf__buffer.html", "structdpp_1_1etf__buffer" ],
@@ -6367,6 +6371,7 @@ var namespacedpp =
     [ "scheduled_event_collector", "classdpp_1_1scheduled__event__collector.html", "classdpp_1_1scheduled__event__collector" ],
     [ "select_click_t", "structdpp_1_1select__click__t.html", "structdpp_1_1select__click__t" ],
     [ "select_option", "structdpp_1_1select__option.html", "structdpp_1_1select__option" ],
+    [ "sku", "classdpp_1_1sku.html", "classdpp_1_1sku" ],
     [ "slashcommand", "classdpp_1_1slashcommand.html", "classdpp_1_1slashcommand" ],
     [ "slashcommand_t", "structdpp_1_1slashcommand__t.html", "structdpp_1_1slashcommand__t" ],
     [ "snowflake", "classdpp_1_1snowflake.html", "classdpp_1_1snowflake" ],
@@ -6431,11 +6436,12 @@ var namespacedpp =
     [ "command_option_range", "namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba", null ],
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
-    [ "confirmable_t", "namespacedpp.html#a7135567d4a562ebf847599d51f58a218", null ],
+    [ "confirmable_t", "namespacedpp.html#a903ce3a37a8a89102ca5dba5ebab3031", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dns_cache_t", "namespacedpp.html#ad4c862611232b317153bcfc106534292", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
     [ "emoji_map", "namespacedpp.html#a58e2720e1ccc11d2b3b1be2e18df79d9", null ],
+    [ "entitlement_map", "namespacedpp.html#a6a417d5030786dd8921fa3a480ddac25", null ],
     [ "event_handle", "namespacedpp.html#a4641626be7775de0b8b63a6e68d0934e", null ],
     [ "event_member_map", "namespacedpp.html#a912d2a5c3a763ffc462dfb7c4c7a0562", null ],
     [ "guild_command_permissions_map", "namespacedpp.html#a855d4fbe3b9026d08b31561a61a82e92", null ],
@@ -6460,6 +6466,7 @@ var namespacedpp =
     [ "scheduled_event_collector_t", "namespacedpp.html#a45736823a51be6eb7910f036b30397b2", null ],
     [ "scheduled_event_map", "namespacedpp.html#a1d8eeeaca0cdc14125cbf2f4f0722781", null ],
     [ "shard_list", "namespacedpp.html#a13c4d4e6238396245b349e6a637897e0", null ],
+    [ "sku_map", "namespacedpp.html#a20f4dcbbb36ff72bc8e725a36bcb45c1", null ],
     [ "slashcommand_map", "namespacedpp.html#adfefe335636cdf5dbbba145a3828c554", null ],
     [ "socket", "namespacedpp.html#a51156024d6211aef2731770340cfe452", null ],
     [ "socket_callback_t", "namespacedpp.html#a982a3efeac04ddb820bbe87b08155640", null ],
@@ -6688,6 +6695,14 @@ var namespacedpp =
       [ "e_animated", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca9036ca4ebc156999b7efd35de1adb2f5", null ],
       [ "e_available", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d", null ]
     ] ],
+    [ "entitlement_flags", "namespacedpp.html#a2670a84fd3284e5aea4295855744073f", [
+      [ "ent_deleted", "namespacedpp.html#a2670a84fd3284e5aea4295855744073fa845d1b83ac87a5215ae45fb733323aae", null ]
+    ] ],
+    [ "entitlement_type", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0", [
+      [ "GUILD_SUBSCRIPTION", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a953e4ad383b8da9c60310ecf55eb47e0", null ],
+      [ "USER_SUBSCRIPTION", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a80e7ab8ef8ff1a2b757ca3260423ac32", null ],
+      [ "APPLICATION_SUBSCRIPTION", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0acbd9a23f03d32ab29b17375310df98ad", null ]
+    ] ],
     [ "etf_token_type", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2", [
       [ "ett_distribution", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1f73d99cedad0b2bef42243ab11a7fd5", null ],
       [ "ett_new_float", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565", null ],
@@ -6901,7 +6916,8 @@ var namespacedpp =
       [ "ir_deferred_update_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a8f370bb2d780a47b45846bf92b099312", null ],
       [ "ir_update_message", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a9a0239abd933c1bdf511e1c8285f0847", null ],
       [ "ir_autocomplete_reply", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a78d890228291650cd463e3fd43b1c075", null ],
-      [ "ir_modal_dialog", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a85b5ff6f0109f5832f7d70a998ed50f5", null ]
+      [ "ir_modal_dialog", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a85b5ff6f0109f5832f7d70a998ed50f5", null ],
+      [ "ir_premium_required", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a65c4de2b1578c42fa1bb318c74cb05d3", null ]
     ] ],
     [ "interaction_type", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96", [
       [ "it_ping", "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275", null ],
@@ -7092,6 +7108,15 @@ var namespacedpp =
       [ "r_available_for_purchase", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a22c2e6a46fdcf723ec23d217ffc79bb6", null ],
       [ "r_guild_connections", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53ae4ed66b3c3babac0f4e670d1923dd171", null ],
       [ "r_in_prompt", "namespacedpp.html#af803e69eddf23c5862947295f3df5d53a786fbc4937255fa344ceef44b6de3de6", null ]
+    ] ],
+    [ "sku_flags", "namespacedpp.html#a8976e5ec3bb1e3550f315a6472fa45d1", [
+      [ "sku_available", "namespacedpp.html#a8976e5ec3bb1e3550f315a6472fa45d1a82284f96fa3e5c749661c2a7af28b239", null ],
+      [ "sku_guild_subscription", "namespacedpp.html#a8976e5ec3bb1e3550f315a6472fa45d1adbf042201ef693694854e921653ca50b", null ],
+      [ "sku_user_subscription", "namespacedpp.html#a8976e5ec3bb1e3550f315a6472fa45d1a64b2d06297f2dca6284880357be33a53", null ]
+    ] ],
+    [ "sku_type", "namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63", [
+      [ "SUBSCRIPTION", "namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a3599f6e905c15cd919b5e9d256f0e9a7", null ],
+      [ "SUBSCRIPTION_GROUP", "namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a79367d62208b5cc4be64107fe5e8a200", null ]
     ] ],
     [ "slashcommand_contextmenu_type", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fb", [
       [ "ctxm_none", "namespacedpp.html#a3af415bd74cead2c665a6a507ce843fba0de83a85048f2d44b3d70161de9e1824", null ],
