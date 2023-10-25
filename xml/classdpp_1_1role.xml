@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="719" column="21" bodyfile="include/dpp/role.h" bodystart="54" bodyend="-1"/>
+        <location file="include/dpp/role.h" line="754" column="21" bodyfile="include/dpp/role.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classdpp_1_1role_1a01e2b587ca511c7fa2b32306aa633b3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="228" column="15" bodyfile="include/dpp/role.h" bodystart="228" bodyend="231"/>
+        <location file="include/dpp/role.h" line="263" column="15" bodyfile="include/dpp/role.h" bodystart="263" bodyend="266"/>
       </memberdef>
       <memberdef kind="friend" id="classdpp_1_1role_1a9f67634c6559af28e6a11d446aa052e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="240" column="20" bodyfile="include/dpp/role.h" bodystart="240" bodyend="243"/>
+        <location file="include/dpp/role.h" line="275" column="20" bodyfile="include/dpp/role.h" bodystart="275" bodyend="278"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -113,6 +113,7 @@
         <definition>std::string dpp::role::name</definition>
         <argsstring></argsstring>
         <name>name</name>
+        <initializer>{}</initializer>
         <briefdescription>
 <para>Role name Between 1 and 100 characters. </para>
         </briefdescription>
@@ -127,6 +128,7 @@
         <definition>snowflake dpp::role::guild_id</definition>
         <argsstring></argsstring>
         <name>guild_id</name>
+        <initializer>{0}</initializer>
         <briefdescription>
 <para>Guild ID. </para>
         </briefdescription>
@@ -141,6 +143,7 @@
         <definition>uint32_t dpp::role::colour</definition>
         <argsstring></argsstring>
         <name>colour</name>
+        <initializer>{0}</initializer>
         <briefdescription>
 <para>Role colour. A colour of 0 means no colour. If you want a black role, you must use the value 0x000001. </para>
         </briefdescription>
@@ -155,6 +158,7 @@
         <definition>uint8_t dpp::role::position</definition>
         <argsstring></argsstring>
         <name>position</name>
+        <initializer>{0}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -169,6 +173,7 @@
         <definition>permission dpp::role::permissions</definition>
         <argsstring></argsstring>
         <name>permissions</name>
+        <initializer>{}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -183,6 +188,7 @@
         <definition>uint8_t dpp::role::flags</definition>
         <argsstring></argsstring>
         <name>flags</name>
+        <initializer>{0}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -197,6 +203,7 @@
         <definition>snowflake dpp::role::integration_id</definition>
         <argsstring></argsstring>
         <name>integration_id</name>
+        <initializer>{}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -211,6 +218,7 @@
         <definition>snowflake dpp::role::bot_id</definition>
         <argsstring></argsstring>
         <name>bot_id</name>
+        <initializer>{}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -225,6 +233,7 @@
         <definition>snowflake dpp::role::subscription_listing_id</definition>
         <argsstring></argsstring>
         <name>subscription_listing_id</name>
+        <initializer>{}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -239,6 +248,7 @@
         <definition>std::string dpp::role::unicode_emoji</definition>
         <argsstring></argsstring>
         <name>unicode_emoji</name>
+        <initializer>{}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -248,33 +258,20 @@
         </inbodydescription>
         <location file="include/dpp/role.h" line="101" column="13" bodyfile="include/dpp/role.h" bodystart="101" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1role_1a4cca9d86bb489189d5938102fc52905f" prot="public" static="no" mutable="no">
-        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
-        <definition>utility::iconhash dpp::role::icon</definition>
+      <memberdef kind="variable" id="classdpp_1_1role_1a9647a12d7cb2eed2746cc09f06c5c9c9" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1icon" kindref="compound">utility::icon</ref></type>
+        <definition>utility::icon dpp::role::icon</definition>
         <argsstring></argsstring>
         <name>icon</name>
+        <initializer>{}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>The role icon hash, can be an empty string </para>
+<para>The role icon </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="103" column="19" bodyfile="include/dpp/role.h" bodystart="103" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1role_1ade838f66e78b524c5c14d30188e08281" prot="public" static="no" mutable="no">
-        <type>std::string *</type>
-        <definition>std::string* dpp::role::image_data</definition>
-        <argsstring></argsstring>
-        <name>image_data</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Image data for the role icon (if any) </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/role.h" line="105" column="13" bodyfile="include/dpp/role.h" bodystart="105" bodyend="-1"/>
+        <location file="include/dpp/role.h" line="103" column="15" bodyfile="include/dpp/role.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -356,10 +353,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classdpp_1_1role_1aa23013a7a7d7c03c4ef44d6e6fc02baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a29cb3b0ae37af81ffec2ad50bda8ac94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::role::role</definition>
-        <argsstring>()</argsstring>
+        <argsstring>()=default</argsstring>
         <name>role</name>
         <briefdescription>
 <para>Construct a new role object. </para>
@@ -368,12 +365,124 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="110" column="1"/>
+        <location file="include/dpp/role.h" line="108" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1afa628827db6ddae3e60d7e74e6653aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1a4a8dc930d217a3e33d75e0767d427548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::role::role</definition>
+        <argsstring>(const role &amp;rhs)=default</argsstring>
+        <name>role</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new role object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role object to copy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a6728977a7b358f99d64756a2ead50de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::role::role</definition>
+        <argsstring>(role &amp;&amp;rhs)=default</argsstring>
+        <name>role</name>
+        <param>
+          <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new role object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role object to move </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a1ad528ff033da65ce622d3b05c730d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
+        <definition>role &amp; dpp::role::operator=</definition>
+        <argsstring>(const role &amp;rhs)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy another role object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role object to copy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="129" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a4d724e631e0c7c2c3565c86750e0cfe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
+        <definition>role &amp; dpp::role::operator=</definition>
+        <argsstring>(role &amp;&amp;rhs)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Move from another role object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role object to copy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="136" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1acb81ebcbb734da1bfc84d0f52586028a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
         <definition>virtual dpp::role::~role</definition>
-        <argsstring>()</argsstring>
+        <argsstring>()=default</argsstring>
         <name>~role</name>
         <briefdescription>
 <para>Destroy the role object. </para>
@@ -382,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="115" column="9"/>
+        <location file="include/dpp/role.h" line="141" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1aecb03f1ceb58c646db0347ad8908b849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -421,7 +530,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="132" column="6"/>
+        <location file="include/dpp/role.h" line="158" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ad5add725167aa1be8c43ec167ce14d4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -453,7 +562,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="141" column="6"/>
+        <location file="include/dpp/role.h" line="167" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1acdf6e9513f3dffca42499ed9dcc255a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -485,7 +594,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="150" column="6"/>
+        <location file="include/dpp/role.h" line="176" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a8d710124a87c30664e1e0f6507a9ebe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -515,7 +624,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="158" column="6"/>
+        <location file="include/dpp/role.h" line="184" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a4eab09f700a66b003adfd9adfd3cd5d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -545,7 +654,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="166" column="6"/>
+        <location file="include/dpp/role.h" line="192" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a50e37b69fd90533aae8d998c0dba3054" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -575,7 +684,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="174" column="6"/>
+        <location file="include/dpp/role.h" line="200" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1aca74c158ab06219bbf3a0c61d96e2043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -605,7 +714,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="182" column="6"/>
+        <location file="include/dpp/role.h" line="208" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a5352cd2a40c1c2c430ec9448bd45723f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
@@ -647,7 +756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="193" column="6"/>
+        <location file="include/dpp/role.h" line="219" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a82eb1c7df3ee72db92cf502bb575e799" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -664,7 +773,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="200" column="13"/>
+        <location file="include/dpp/role.h" line="226" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a492aa7a36a4ef0e0cad8e33f8f386ea8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -708,15 +817,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="210" column="13"/>
+        <location file="include/dpp/role.h" line="236" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1role_1a6d46d3e4a1b8e166f4a26da58bf119dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1role_1aa62b1a1265f5f486331446af4ccc7524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
         <definition>role &amp; dpp::role::load_image</definition>
-        <argsstring>(const std::string &amp;image_blob, const image_type type)</argsstring>
+        <argsstring>(std::string_view image_blob, const image_type type)</argsstring>
         <name>load_image</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>image_blob</declname>
         </param>
         <param>
@@ -724,7 +833,7 @@
           <declname>type</declname>
         </param>
         <briefdescription>
-<para>Load an image into the object as base64. </para>
+<para>Load a role icon. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -750,7 +859,53 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="219" column="6"/>
+        <location file="include/dpp/role.h" line="245" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1role_1a14485e59c67c899826ed27d29017bcfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1role" kindref="compound">role</ref> &amp;</type>
+        <definition>role &amp; dpp::role::load_image</definition>
+        <argsstring>(const std::byte *data, uint32_t size, const image_type type)</argsstring>
+        <name>load_image</name>
+        <param>
+          <type>const std::byte *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load a role icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_blob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image binary data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of image. It can be one of <computeroutput>i_gif</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>emoji&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/role.h" line="254" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a630f1f8f442b987743143e3749bf3944" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -780,7 +935,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="251" column="13" bodyfile="include/dpp/role.h" bodystart="251" bodyend="254"/>
+        <location file="include/dpp/role.h" line="286" column="13" bodyfile="include/dpp/role.h" bodystart="286" bodyend="289"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a923f1020ad9e4076252e3ce1dce4bb3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -810,7 +965,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="262" column="13" bodyfile="include/dpp/role.h" bodystart="262" bodyend="265"/>
+        <location file="include/dpp/role.h" line="297" column="13" bodyfile="include/dpp/role.h" bodystart="297" bodyend="300"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ae0cb040c022f08d210c885012bf47919" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -827,7 +982,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="271" column="6"/>
+        <location file="include/dpp/role.h" line="306" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a1d5a026fa3773f52b9c2cee6c590509f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -844,7 +999,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="276" column="6"/>
+        <location file="include/dpp/role.h" line="311" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a479bc27fe486bb70dd3fc1376df3c5b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -861,7 +1016,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="281" column="6"/>
+        <location file="include/dpp/role.h" line="316" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a3992fa5ec4a368f71e65be75704c6c33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -878,7 +1033,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="286" column="6"/>
+        <location file="include/dpp/role.h" line="321" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a2a45972a178c1cb6873335969eadef6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -895,7 +1050,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="291" column="6"/>
+        <location file="include/dpp/role.h" line="326" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a960be31089b54b425089ce212ce69963" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -912,7 +1067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="296" column="6"/>
+        <location file="include/dpp/role.h" line="331" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1aeac5902a95f0a278c8e248e1f4b964b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -929,7 +1084,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="301" column="6"/>
+        <location file="include/dpp/role.h" line="336" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a7005a2a951c2917edb6f5ce189093234" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -948,7 +1103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="308" column="6"/>
+        <location file="include/dpp/role.h" line="343" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a7b76518e70c32391bbae2c80439a2a76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -967,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="315" column="6"/>
+        <location file="include/dpp/role.h" line="350" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ac8eaec9aac9633c7d05cb208da7fc4d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -986,7 +1141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="322" column="6"/>
+        <location file="include/dpp/role.h" line="357" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a3ffcaced8369d47cc3f954fa0978c40c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1005,7 +1160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="329" column="6"/>
+        <location file="include/dpp/role.h" line="364" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a9630315e9c31cb53335e077140497ad7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1024,7 +1179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="336" column="6"/>
+        <location file="include/dpp/role.h" line="371" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ad1de8e0ce44138225e9e7620b0834cb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1043,7 +1198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="343" column="6"/>
+        <location file="include/dpp/role.h" line="378" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a0e2683fd21c1743132eb29f8155c12a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1062,7 +1217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="350" column="6"/>
+        <location file="include/dpp/role.h" line="385" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a600d347d4f491ba32969a76d9d0cf3c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1081,7 +1236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="357" column="6"/>
+        <location file="include/dpp/role.h" line="392" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a640358a9aa6e34c0e0b16020af176e55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1100,7 +1255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="364" column="6"/>
+        <location file="include/dpp/role.h" line="399" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ae6173507d17a12012cf46da70929a49e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1119,7 +1274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="371" column="6"/>
+        <location file="include/dpp/role.h" line="406" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1acbe56d5d1d54e9fea3a6b7acd66ef888" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1138,7 +1293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="378" column="6"/>
+        <location file="include/dpp/role.h" line="413" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a31d923d5f1020215b836db355991870b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1157,7 +1312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="385" column="6"/>
+        <location file="include/dpp/role.h" line="420" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1af54ea9f64ea035675a26b0d8e8b356f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1176,7 +1331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="392" column="6"/>
+        <location file="include/dpp/role.h" line="427" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a1a28c7f8685b1c0287067665aecf6efb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1195,7 +1350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="399" column="6"/>
+        <location file="include/dpp/role.h" line="434" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ae1dc87323b6ab2e499fee7c8bfa69d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1214,7 +1369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="406" column="6"/>
+        <location file="include/dpp/role.h" line="441" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a848a39ba5ff6b5c42c3246d041582d00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1233,7 +1388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="413" column="6"/>
+        <location file="include/dpp/role.h" line="448" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ac5f664643c59d7e24271bb790735c68f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1252,7 +1407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="420" column="6"/>
+        <location file="include/dpp/role.h" line="455" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1aed437137a98c1f99d28942070c8ccf0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1271,7 +1426,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="427" column="6"/>
+        <location file="include/dpp/role.h" line="462" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a363303c06726e049586b8ae4f3f6375e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1290,7 +1445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="434" column="6"/>
+        <location file="include/dpp/role.h" line="469" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ac71887da3f920e070d1fa743ea000d1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1309,7 +1464,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="441" column="6"/>
+        <location file="include/dpp/role.h" line="476" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a0be98542c2299aa41829d69bf348b54d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1328,7 +1483,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="448" column="6"/>
+        <location file="include/dpp/role.h" line="483" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a92ce258f420bce887cc9c92ad006fe06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1347,7 +1502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="455" column="6"/>
+        <location file="include/dpp/role.h" line="490" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a504ae68edc2bfe1c21ffdb6745c1194c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1366,7 +1521,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="462" column="6"/>
+        <location file="include/dpp/role.h" line="497" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a0a197983ea6fc5047c7873d804f7646a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1385,7 +1540,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="469" column="6"/>
+        <location file="include/dpp/role.h" line="504" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ac9605d0d14e4fff0c0848e08682c6da5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1404,7 +1559,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="476" column="6"/>
+        <location file="include/dpp/role.h" line="511" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a9ffd7c58994f9c3e0a38245462eb6766" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1418,7 +1573,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="478" column="6"/>
+        <location file="include/dpp/role.h" line="513" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a2b158e7e37bb66c17a4ed412a71f7222" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1437,7 +1592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="485" column="6"/>
+        <location file="include/dpp/role.h" line="520" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a80c8b573fc16edfd685294e0326b38d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1456,7 +1611,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="492" column="6"/>
+        <location file="include/dpp/role.h" line="527" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a0b2cf553aab82c6a6a388c3f6e3c240d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1475,7 +1630,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="499" column="6"/>
+        <location file="include/dpp/role.h" line="534" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a9ac39f8c39f870603f0e9d9760159ef9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1494,7 +1649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="506" column="6"/>
+        <location file="include/dpp/role.h" line="541" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a6d9b1dd5f966530c162b85409b00561c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1513,7 +1668,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="513" column="6"/>
+        <location file="include/dpp/role.h" line="548" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ac19332b3de93ecf0a38d0f07589fd6c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1532,7 +1687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="520" column="6"/>
+        <location file="include/dpp/role.h" line="555" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a84cfa9cd3dc9526f3a6a04ae25d3c775" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1551,7 +1706,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="527" column="6"/>
+        <location file="include/dpp/role.h" line="562" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a032ce15247e135d733e6879bed928e7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1570,7 +1725,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="534" column="6"/>
+        <location file="include/dpp/role.h" line="569" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ad593d01c7a2fac0413c939c80d81c590" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1589,7 +1744,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="541" column="6"/>
+        <location file="include/dpp/role.h" line="576" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1aa3127166dafb6cd4685a1e84b80a7e86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1608,7 +1763,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="548" column="6"/>
+        <location file="include/dpp/role.h" line="583" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a3ec1376d0b72ba7d42b3b0167daef425" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1627,7 +1782,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="555" column="6"/>
+        <location file="include/dpp/role.h" line="590" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ae7e42a98476a40201e9bce274f748954" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1646,7 +1801,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="562" column="6"/>
+        <location file="include/dpp/role.h" line="597" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a15be7092d8c6843c387d4811c8b4ac2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1665,7 +1820,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="569" column="6"/>
+        <location file="include/dpp/role.h" line="604" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a04025962b533f09ea8a55d3c2815a442" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1684,7 +1839,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="576" column="6"/>
+        <location file="include/dpp/role.h" line="611" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a12d4fba5e5a0a02425c923234dd486bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1703,7 +1858,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="583" column="6"/>
+        <location file="include/dpp/role.h" line="618" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1af5de498bfe90e5b390d9a367a0afe0a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1722,7 +1877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="590" column="6"/>
+        <location file="include/dpp/role.h" line="625" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1af47897c84d878c1b494160ac14b0e449" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1741,7 +1896,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="597" column="6"/>
+        <location file="include/dpp/role.h" line="632" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a2fbc05580870a68ced13f6ba657181c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1760,7 +1915,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="604" column="6"/>
+        <location file="include/dpp/role.h" line="639" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a49b93d4629f889d1e35b5927c6e1854d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1779,7 +1934,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="611" column="6"/>
+        <location file="include/dpp/role.h" line="646" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1ab45dcfc76c222f721ff8d1a903fe7e4b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1798,7 +1953,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="618" column="6"/>
+        <location file="include/dpp/role.h" line="653" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1role_1a60bd9c7e3901c18f5ec3c4f835e1c1de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a674dfd30e37779538e80d95fcb13770f" kindref="member">members_container</ref></type>
@@ -1817,7 +1972,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="625" column="19"/>
+        <location file="include/dpp/role.h" line="660" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr double</type>
@@ -2026,7 +2181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/role.h" line="122" column="20"/>
+        <location file="include/dpp/role.h" line="148" column="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2089,7 +2244,6 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
         <childnode refid="7" relation="usage">
-          <edgelabel>image_data</edgelabel>
           <edgelabel>name</edgelabel>
           <edgelabel>unicode_emoji</edgelabel>
         </childnode>
@@ -2121,11 +2275,10 @@
         </childnode>
       </node>
       <node id="12">
-        <label>dpp::utility::iconhash</label>
-        <link refid="structdpp_1_1utility_1_1iconhash"/>
-        <childnode refid="4" relation="usage">
-          <edgelabel>first</edgelabel>
-          <edgelabel>second</edgelabel>
+        <label>dpp::utility::icon</label>
+        <link refid="structdpp_1_1utility_1_1icon"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>hash_or_data</edgelabel>
         </childnode>
       </node>
       <node id="5">
@@ -2143,6 +2296,9 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="13">
+        <label>variant&lt;</label>
+      </node>
       <node id="9">
         <label>uint32_t</label>
       </node>
@@ -2153,7 +2309,7 @@
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/role.h" line="52" column="1" bodyfile="include/dpp/role.h" bodystart="52" bodyend="626"/>
+    <location file="include/dpp/role.h" line="52" column="1" bodyfile="include/dpp/role.h" bodystart="52" bodyend="661"/>
     <listofallmembers>
       <member refid="classdpp_1_1role_1ada5cb5675b012b2cf55d285d5b233df3" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>bot_id</name></member>
       <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>build_json</name></member>
@@ -2214,9 +2370,8 @@
       <member refid="classdpp_1_1role_1acbe56d5d1d54e9fea3a6b7acd66ef888" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>has_view_channel</name></member>
       <member refid="classdpp_1_1role_1af5de498bfe90e5b390d9a367a0afe0a8" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>has_view_creator_monetization_analytics</name></member>
       <member refid="classdpp_1_1role_1ac71887da3f920e070d1fa743ea000d1c" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>has_view_guild_insights</name></member>
-      <member refid="classdpp_1_1role_1a4cca9d86bb489189d5938102fc52905f" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>icon</name></member>
+      <member refid="classdpp_1_1role_1a9647a12d7cb2eed2746cc09f06c5c9c9" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>icon</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>id</name></member>
-      <member refid="classdpp_1_1role_1ade838f66e78b524c5c14d30188e08281" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>image_data</name></member>
       <member refid="classdpp_1_1role_1aa44718ae47c00bcf2008366218646572" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>integration_id</name></member>
       <member refid="classdpp_1_1role_1a2a45972a178c1cb6873335969eadef6e" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>is_available_for_purchase</name></member>
       <member refid="classdpp_1_1role_1ae0cb040c022f08d210c885012bf47919" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>is_hoisted</name></member>
@@ -2226,7 +2381,8 @@
       <member refid="classdpp_1_1role_1a3992fa5ec4a368f71e65be75704c6c33" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>is_premium_subscriber</name></member>
       <member refid="classdpp_1_1role_1aeac5902a95f0a278c8e248e1f4b964b4" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>is_selectable_in_prompt</name></member>
       <member refid="classdpp_1_1role_1ae11eb9dd97cb82714a8c094a9e735ee0" prot="protected" virt="non-virtual"><scope>dpp::role</scope><name>json_interface&lt; role &gt;</name></member>
-      <member refid="classdpp_1_1role_1a6d46d3e4a1b8e166f4a26da58bf119dc" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>load_image</name></member>
+      <member refid="classdpp_1_1role_1aa62b1a1265f5f486331446af4ccc7524" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>load_image</name></member>
+      <member refid="classdpp_1_1role_1a14485e59c67c899826ed27d29017bcfa" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>load_image</name></member>
       <member refid="classdpp_1_1managed_1a49ce0d7fdbeab770ec46be27771c2285" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>managed</name></member>
       <member refid="classdpp_1_1managed_1aa3ee436836ab0e2bf4f842c2c2bc3b52" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>managed</name></member>
       <member refid="classdpp_1_1managed_1a198b514f7e6a2b26734fd2dad85f481d" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>managed</name></member>
@@ -2235,14 +2391,18 @@
       <member refid="classdpp_1_1role_1a923f1020ad9e4076252e3ce1dce4bb3a" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator!=</name></member>
       <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual" ambiguityscope="dpp::managed::"><scope>dpp::role</scope><name>operator!=</name></member>
       <member refid="classdpp_1_1role_1a01e2b587ca511c7fa2b32306aa633b3a" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator&lt;</name></member>
-      <member refid="classdpp_1_1managed_1a48b542729f1352f93f1c60950986517f" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator=</name></member>
-      <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1role_1a1ad528ff033da65ce622d3b05c730d06" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1role_1a4d724e631e0c7c2c3565c86750e0cfe6" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a48b542729f1352f93f1c60950986517f" prot="public" virt="non-virtual" ambiguityscope="dpp::managed::"><scope>dpp::role</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual" ambiguityscope="dpp::managed::"><scope>dpp::role</scope><name>operator=</name></member>
       <member refid="classdpp_1_1role_1a630f1f8f442b987743143e3749bf3944" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator==</name></member>
       <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual" ambiguityscope="dpp::managed::"><scope>dpp::role</scope><name>operator==</name></member>
       <member refid="classdpp_1_1role_1a9f67634c6559af28e6a11d446aa052e8" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>operator&gt;</name></member>
       <member refid="classdpp_1_1role_1ad6deb5559a2378196b92e496c4db501c" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>permissions</name></member>
       <member refid="classdpp_1_1role_1a08996823fc9ba1eb8c95b1e2e855d958" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>position</name></member>
-      <member refid="classdpp_1_1role_1aa23013a7a7d7c03c4ef44d6e6fc02baa" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>role</name></member>
+      <member refid="classdpp_1_1role_1a29cb3b0ae37af81ffec2ad50bda8ac94" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>role</name></member>
+      <member refid="classdpp_1_1role_1a4a8dc930d217a3e33d75e0767d427548" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>role</name></member>
+      <member refid="classdpp_1_1role_1a6728977a7b358f99d64756a2ead50de2" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>role</name></member>
       <member refid="classdpp_1_1role_1a50e37b69fd90533aae8d998c0dba3054" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>set_bot_id</name></member>
       <member refid="classdpp_1_1role_1acdf6e9513f3dffca42499ed9dcc255a9" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>set_color</name></member>
       <member refid="classdpp_1_1role_1ad5add725167aa1be8c43ec167ce14d4f" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>set_colour</name></member>
@@ -2255,7 +2415,7 @@
       <member refid="classdpp_1_1role_1a8e8c227b1166660d8297aa01880a7777" prot="protected" virt="virtual"><scope>dpp::role</scope><name>to_json_impl</name></member>
       <member refid="classdpp_1_1role_1ad84006ea16f3dc59cfd67559a60c5d10" prot="public" virt="non-virtual"><scope>dpp::role</scope><name>unicode_emoji</name></member>
       <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::role</scope><name>~managed</name></member>
-      <member refid="classdpp_1_1role_1afa628827db6ddae3e60d7e74e6653aab" prot="public" virt="virtual"><scope>dpp::role</scope><name>~role</name></member>
+      <member refid="classdpp_1_1role_1acb81ebcbb734da1bfc84d0f52586028a" prot="public" virt="virtual"><scope>dpp::role</scope><name>~role</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

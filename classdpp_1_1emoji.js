@@ -16,6 +16,7 @@ var classdpp_1_1emoji =
     [ "is_animated", "classdpp_1_1emoji.html#a0ae9784ca14fe91f695d88e5734058ad", null ],
     [ "is_available", "classdpp_1_1emoji.html#aa9447aeb490efc316f85363bb2b60220", null ],
     [ "is_managed", "classdpp_1_1emoji.html#ae92572e9263cf62cc3e1cc826d98f5ad", null ],
+    [ "load_image", "classdpp_1_1emoji.html#a5b54a477d94789e0360f54708af6b59e", null ],
     [ "load_image", "classdpp_1_1emoji.html#afb0fd2592f901c60d505bc4ac5226e49", null ],
     [ "operator!=", "classdpp_1_1emoji.html#a337e3e4ac1fd30d77279dc41ceba3995", null ],
     [ "operator=", "classdpp_1_1emoji.html#aad01d1822fa26f77d58aa1c7be16bcc0", null ],
@@ -27,7 +28,7 @@ var classdpp_1_1emoji =
     [ "json_interface< emoji >", "classdpp_1_1emoji.html#ac7b990811dc9ea7e8cc68847b75d0699", null ],
     [ "flags", "classdpp_1_1emoji.html#aa022607f3828123364721c6420b57f2f", null ],
     [ "id", "classdpp_1_1emoji.html#a40bf0c6cc03909910512808fa6caa112", null ],
-    [ "image_data", "classdpp_1_1emoji.html#aa67cddbafe111c20f8d2810b3a837417", null ],
+    [ "image_data", "classdpp_1_1emoji.html#a5b4d38550c198e725c59fed3b9fa65ce", null ],
     [ "name", "classdpp_1_1emoji.html#a54f464b7094256975294cfd3ed9efcc1", null ],
     [ "roles", "classdpp_1_1emoji.html#a6f59861790097073536480f3806d5a90", null ],
     [ "user_id", "classdpp_1_1emoji.html#a9032a433eae36211c7d3730543dea0db", null ]

@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/emoji.h" line="228" column="28" bodyfile="include/dpp/emoji.h" bodystart="55" bodyend="-1"/>
+        <location file="include/dpp/emoji.h" line="238" column="28" bodyfile="include/dpp/emoji.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -67,9 +67,9 @@
         </inbodydescription>
         <location file="include/dpp/emoji.h" line="87" column="11" bodyfile="include/dpp/emoji.h" bodystart="87" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1emoji_1aa67cddbafe111c20f8d2810b3a837417" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string dpp::emoji::image_data</definition>
+      <memberdef kind="variable" id="classdpp_1_1emoji_1a5b4d38550c198e725c59fed3b9fa65ce" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1image__data" kindref="compound">utility::image_data</ref></type>
+        <definition>utility::image_data dpp::emoji::image_data</definition>
         <argsstring></argsstring>
         <name>image_data</name>
         <briefdescription>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/emoji.h" line="92" column="13" bodyfile="include/dpp/emoji.h" bodystart="92" bodyend="-1"/>
+        <location file="include/dpp/emoji.h" line="92" column="21" bodyfile="include/dpp/emoji.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1emoji_1aa022607f3828123364721c6420b57f2f" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -460,7 +460,7 @@
           <declname>type</declname>
         </param>
         <briefdescription>
-<para>Load an image into the object as base64. </para>
+<para>Load an image into the object. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -497,6 +497,61 @@
         </inbodydescription>
         <location file="include/dpp/emoji.h" line="195" column="7"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1emoji_1a5b54a477d94789e0360f54708af6b59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1emoji" kindref="compound">emoji</ref> &amp;</type>
+        <definition>emoji &amp; dpp::emoji::load_image</definition>
+        <argsstring>(const std::byte *data, uint32_t size, const image_type type)</argsstring>
+        <name>load_image</name>
+        <param>
+          <type>const std::byte *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load an image into the object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_blob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image binary data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of image. It can be one of <computeroutput>i_gif</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>emoji&amp; Reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1length__exception" kindref="compound">dpp::length_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image content exceeds discord maximum of 256 kilobytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/emoji.h" line="205" column="7"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1emoji_1a180ce7e313d6ac86277798012e3b7ece" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string dpp::emoji::format</definition>
@@ -512,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/emoji.h" line="202" column="13"/>
+        <location file="include/dpp/emoji.h" line="212" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1emoji_1a772e74a4a2e929d7ccc4c242f932a8af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -529,7 +584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/emoji.h" line="209" column="13"/>
+        <location file="include/dpp/emoji.h" line="219" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1emoji_1aeb06ea76e01f0ed0f83a2ccd62534fc3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -586,7 +641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/emoji.h" line="222" column="13"/>
+        <location file="include/dpp/emoji.h" line="232" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr double</type>
@@ -862,7 +917,6 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
         <childnode refid="7" relation="usage">
-          <edgelabel>image_data</edgelabel>
           <edgelabel>name</edgelabel>
         </childnode>
         <childnode refid="9" relation="usage">
@@ -872,6 +926,9 @@
           <edgelabel>user_id</edgelabel>
         </childnode>
         <childnode refid="10" relation="usage">
+          <edgelabel>image_data</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
       </node>
@@ -893,6 +950,22 @@
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
+      <node id="10">
+        <label>dpp::utility::image_data</label>
+        <link refid="structdpp_1_1utility_1_1image__data"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>image_type</label>
+      </node>
       <node id="5">
         <label>dpp::json_interface&lt; emoji &gt;</label>
         <link refid="structdpp_1_1json__interface"/>
@@ -908,17 +981,23 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="11">
+        <label>unique_ptr&lt;</label>
+      </node>
       <node id="9">
         <label>vector&lt;</label>
+      </node>
+      <node id="12">
+        <label>uint32_t</label>
       </node>
       <node id="4">
         <label>uint64_t</label>
       </node>
-      <node id="10">
+      <node id="14">
         <label>uint8_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/emoji.h" line="53" column="1" bodyfile="include/dpp/emoji.h" bodystart="53" bodyend="223"/>
+    <location file="include/dpp/emoji.h" line="53" column="1" bodyfile="include/dpp/emoji.h" bodystart="53" bodyend="233"/>
     <listofallmembers>
       <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>build_json</name></member>
       <member refid="classdpp_1_1emoji_1a38985ff0fe5e74c4d6d9579783a6c36a" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>emoji</name></member>
@@ -934,12 +1013,13 @@
       <member refid="classdpp_1_1emoji_1a772e74a4a2e929d7ccc4c242f932a8af" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>get_mention</name></member>
       <member refid="classdpp_1_1emoji_1aeb06ea76e01f0ed0f83a2ccd62534fc3" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>get_url</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>id</name></member>
-      <member refid="classdpp_1_1emoji_1aa67cddbafe111c20f8d2810b3a837417" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>image_data</name></member>
+      <member refid="classdpp_1_1emoji_1a5b4d38550c198e725c59fed3b9fa65ce" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>image_data</name></member>
       <member refid="classdpp_1_1emoji_1a0ae9784ca14fe91f695d88e5734058ad" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>is_animated</name></member>
       <member refid="classdpp_1_1emoji_1aa9447aeb490efc316f85363bb2b60220" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>is_available</name></member>
       <member refid="classdpp_1_1emoji_1ae92572e9263cf62cc3e1cc826d98f5ad" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>is_managed</name></member>
       <member refid="classdpp_1_1emoji_1ac7b990811dc9ea7e8cc68847b75d0699" prot="protected" virt="non-virtual"><scope>dpp::emoji</scope><name>json_interface&lt; emoji &gt;</name></member>
       <member refid="classdpp_1_1emoji_1afb0fd2592f901c60d505bc4ac5226e49" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>load_image</name></member>
+      <member refid="classdpp_1_1emoji_1a5b54a477d94789e0360f54708af6b59e" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>load_image</name></member>
       <member refid="classdpp_1_1managed_1a49ce0d7fdbeab770ec46be27771c2285" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>managed</name></member>
       <member refid="classdpp_1_1managed_1aa3ee436836ab0e2bf4f842c2c2bc3b52" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>managed</name></member>
       <member refid="classdpp_1_1managed_1a198b514f7e6a2b26734fd2dad85f481d" prot="public" virt="non-virtual"><scope>dpp::emoji</scope><name>managed</name></member>
