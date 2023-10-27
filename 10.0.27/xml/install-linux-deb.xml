@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="install-linux-deb" kind="page">
+    <compoundname>install-linux-deb</compoundname>
+    <title>Installing from a .deb file (Debian, Ubuntu, Derivatives)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To install D++ on a system from <computeroutput>.deb</computeroutput> using <computeroutput>dpkg</computeroutput> (as root):</para>
+<para><programlisting><codeline><highlight class="normal">apt<sp/>install<sp/>wget</highlight></codeline>
+<codeline><highlight class="normal">wget<sp/>-O<sp/>dpp.deb<sp/>https://dl.dpp.dev/</highlight></codeline>
+<codeline><highlight class="normal">dpkg<sp/>-i<sp/>dpp.deb</highlight></codeline>
+</programlisting></para>
+<para>This will do the following three things:</para>
+<para><itemizedlist>
+<listitem><para>Install <computeroutput>wget</computeroutput></para>
+</listitem><listitem><para>Use <computeroutput>wget</computeroutput> to download the latest release of D++ to <computeroutput>dpp.deb</computeroutput></para>
+</listitem><listitem><para>Install <computeroutput>dpp.deb</computeroutput> to <computeroutput>/usr</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>You will now be able to use D++ by including its library on the command line:</para>
+<para><programlisting><codeline><highlight class="normal">g++<sp/>mybot.cpp<sp/>-o<sp/>mybot<sp/>-ldpp</highlight></codeline>
+</programlisting></para>
+<para><para><simplesect kind="note"><para>Compiling your bot with a raw <computeroutput>g++</computeroutput> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <ref refid="buildcmake" kindref="compound">Building a Discord Bot Using CMake (UNIX)</ref> or if you have not yet created a token for your bot, <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref> - If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</ulink>.</para>
+</simplesect>
+</para>
+ </para>
+    </detaileddescription>
+    <location file="docpages/install/install-linux-deb.md"/>
+  </compounddef>
+</doxygen>

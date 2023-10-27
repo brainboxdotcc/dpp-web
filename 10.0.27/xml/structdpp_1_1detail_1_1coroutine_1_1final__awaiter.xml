@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1detail_1_1coroutine_1_1final__awaiter" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::detail::coroutine::final_awaiter</compoundname>
+    <includes local="no">coroutine.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1final__awaiter_1a9bdd29522b75b0c39cbc73c88888e5f0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::detail::coroutine::final_awaiter&lt; R &gt;::await_ready</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>First function called by the standard library when reaching the end of a coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>false Always return false, we need to suspend to resume the parent </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="484" column="7" bodyfile="include/dpp/coro/coroutine.h" bodystart="484" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1final__awaiter_1a54c24bd62b0b576067aed3a7dea7c1a5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std_coroutine::coroutine_handle</type>
+        <definition>std_coroutine::coroutine_handle dpp::detail::coroutine::final_awaiter&lt; R &gt;::await_suspend</definition>
+        <argsstring>(std_coroutine::coroutine_handle&lt; promise_t&lt; R &gt; &gt; handle) const noexcept</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type>std_coroutine::coroutine_handle&lt; <ref refid="structdpp_1_1detail_1_1coroutine_1_1promise__t" kindref="compound">promise_t</ref>&lt; R &gt; &gt;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Second function called by the standard library when reaching the end of a coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::handle_t&lt;&gt; Coroutine handle to resume, this is either the parent if present or std::noop_coroutine() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="493" column="3" bodyfile="include/dpp/coro/coroutine.h" bodystart="493" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1coroutine_1_1final__awaiter_1ae4252038cb58d81db517a0a8ea7f5a87" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::coroutine::final_awaiter&lt; R &gt;::await_resume</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Function called by the standard library when this object is resumed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/coroutine.h" line="502" column="6" bodyfile="include/dpp/coro/coroutine.h" bodystart="502" bodyend="502"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct returned by a coroutine&apos;s final_suspend, resumes the continuation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/coro/coroutine.h" line="478" column="1" bodyfile="include/dpp/coro/coroutine.h" bodystart="478" bodyend="503"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1detail_1_1coroutine_1_1final__awaiter_1a9bdd29522b75b0c39cbc73c88888e5f0" prot="public" virt="non-virtual"><scope>dpp::detail::coroutine::final_awaiter</scope><name>await_ready</name></member>
+      <member refid="structdpp_1_1detail_1_1coroutine_1_1final__awaiter_1ae4252038cb58d81db517a0a8ea7f5a87" prot="public" virt="non-virtual"><scope>dpp::detail::coroutine::final_awaiter</scope><name>await_resume</name></member>
+      <member refid="structdpp_1_1detail_1_1coroutine_1_1final__awaiter_1a54c24bd62b0b576067aed3a7dea7c1a5" prot="public" virt="non-virtual"><scope>dpp::detail::coroutine::final_awaiter</scope><name>await_suspend</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

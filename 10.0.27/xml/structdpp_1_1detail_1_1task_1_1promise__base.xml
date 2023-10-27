@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1detail_1_1task_1_1promise__base" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::detail::task::promise_base</compoundname>
+    <derivedcompoundref refid="structdpp_1_1detail_1_1task_1_1promise__t" prot="public" virt="non-virtual">dpp::detail::task::promise_t&lt; R &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4" prot="public" virt="non-virtual">dpp::detail::task::promise_t&lt; void &gt;</derivedcompoundref>
+    <includes local="no">task.h</includes>
+    <innerclass refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter" prot="public">dpp::detail::task::promise_base::proxy_awaiter</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1task_1_1promise__base_1a5d41e402e3fe4e9bdba72a7f1e617d9b" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; <ref refid="namespacedpp_1_1detail_1_1task_1a6f686ce679d1979c011b31e1e6a9bb1d" kindref="member">state_t</ref> &gt;</type>
+        <definition>std::atomic&lt;state_t&gt; dpp::detail::task::promise_base::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>= <ref refid="namespacedpp_1_1detail_1_1task_1a6f686ce679d1979c011b31e1e6a9bb1da3bebb2f89180b03fa5ae736665f648d9" kindref="member">state_t::started</ref></initializer>
+        <briefdescription>
+<para>State of the task, used to keep track of lifetime and status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="523" column="13" bodyfile="include/dpp/coro/task.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1task_1_1promise__base_1a61bf5499f1fd06f99140c8fba0494433" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; dpp::detail::task::promise_base::cancelled</definition>
+        <argsstring></argsstring>
+        <name>cancelled</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether the task is cancelled or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="528" column="13" bodyfile="include/dpp/coro/task.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1task_1_1promise__base_1a1fabcf29bea4acf17d89be0b498dc8c5" prot="public" static="no" mutable="no">
+        <type>detail::std_coroutine::coroutine_handle</type>
+        <definition>detail::std_coroutine::coroutine_handle dpp::detail::task::promise_base::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Parent coroutine to return to for nested coroutines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="533" column="2" bodyfile="include/dpp/coro/task.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1aea388211600e747fb5e7304cb7302307" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std_coroutine::suspend_never</type>
+        <definition>std_coroutine::suspend_never dpp::detail::task::promise_base::initial_suspend</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>initial_suspend</name>
+        <briefdescription>
+<para>Function called by the standard library when the coroutine is created. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ulink url="https://en.cppreference.com/w/cpp/coroutine/suspend_never">std::suspend_never</ulink> Don&apos;t suspend, the coroutine starts immediately. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="557" column="31" bodyfile="include/dpp/coro/task.h" bodystart="557" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1a5a24ffcc89caed98e4fe8a9c6ac97d10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::task::promise_base::unhandled_exception</definition>
+        <argsstring>()</argsstring>
+        <name>unhandled_exception</name>
+        <briefdescription>
+<para>Function called by the standard library when an exception is thrown and not caught in the coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stores the exception pointer to rethrow on co_await. If the task object is destroyed and was not cancelled, throw instead </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="566" column="6" bodyfile="include/dpp/coro/task.h" bodystart="566" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1promise__base_1af75819e122ec25faa1523a023b032d39" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto dpp::detail::task::promise_base::await_transform</definition>
+        <argsstring>(T &amp;&amp;expr) const noexcept(noexcept(co_await_resolve(std::forward&lt; T &gt;(expr))))</argsstring>
+        <name>await_transform</name>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Function called whenever co_await is used inside of the task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On resumption if the task was cancelled</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter" kindref="compound">proxy_awaiter</ref> Returns a proxy awaiter that will check for cancellation on resumption </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="618" column="7" bodyfile="include/dpp/coro/task.h" bodystart="618" bodyend="621"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base implementation of <ref refid="structdpp_1_1detail_1_1task_1_1promise__t" kindref="compound">task::promise_t</ref>, without the logic that would depend on the return type. Meant to be inherited from. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::detail::task::promise_base</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__base"/>
+      </node>
+      <node id="2">
+        <label>dpp::detail::task::promise_t&lt; R &gt;</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::detail::task::promise_t&lt; void &gt;</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>coroutine_handle</label>
+      </node>
+      <node id="1">
+        <label>dpp::detail::task::promise_base</label>
+        <link refid="structdpp_1_1detail_1_1task_1_1promise__base"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cancelled</edgelabel>
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>atomic&lt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/task.h" line="519" column="1" bodyfile="include/dpp/coro/task.h" bodystart="519" bodyend="622"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1af75819e122ec25faa1523a023b032d39" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base</scope><name>await_transform</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1a61bf5499f1fd06f99140c8fba0494433" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base</scope><name>cancelled</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1aea388211600e747fb5e7304cb7302307" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base</scope><name>initial_suspend</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1a1fabcf29bea4acf17d89be0b498dc8c5" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base</scope><name>parent</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1a5d41e402e3fe4e9bdba72a7f1e617d9b" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base</scope><name>state</name></member>
+      <member refid="structdpp_1_1detail_1_1task_1_1promise__base_1a5a24ffcc89caed98e4fe8a9c6ac97d10" prot="public" virt="non-virtual"><scope>dpp::detail::task::promise_base</scope><name>unhandled_exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

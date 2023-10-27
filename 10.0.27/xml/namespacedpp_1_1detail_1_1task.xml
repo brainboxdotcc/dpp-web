@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespacedpp_1_1detail_1_1task" kind="namespace" language="C++">
+    <compoundname>dpp::detail::task</compoundname>
+    <innerclass refid="structdpp_1_1detail_1_1task_1_1final__awaiter" prot="public">dpp::detail::task::final_awaiter</innerclass>
+    <innerclass refid="structdpp_1_1detail_1_1task_1_1promise__base" prot="public">dpp::detail::task::promise_base</innerclass>
+    <innerclass refid="structdpp_1_1detail_1_1task_1_1promise__t" prot="public">dpp::detail::task::promise_t</innerclass>
+    <innerclass refid="structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4" prot="public">dpp::detail::task::promise_t&lt; void &gt;</innerclass>
+    <innerclass refid="classdpp_1_1detail_1_1task_1_1task__base" prot="public">dpp::detail::task::task_base</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacedpp_1_1detail_1_1task_1a6f686ce679d1979c011b31e1e6a9bb1d" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>state_t</name>
+        <enumvalue id="namespacedpp_1_1detail_1_1task_1a6f686ce679d1979c011b31e1e6a9bb1da3bebb2f89180b03fa5ae736665f648d9" prot="public">
+          <name>started</name>
+          <briefdescription>
+<para>Task was started but never co_await-ed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1task_1a6f686ce679d1979c011b31e1e6a9bb1da23a13b01435cba85c0a5ea07c8b5b37e" prot="public">
+          <name>awaited</name>
+          <briefdescription>
+<para>Task was co_await-ed and is pending completion. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1task_1a6f686ce679d1979c011b31e1e6a9bb1da6b2ded51d81a4403d8a4bd25fa1e57ee" prot="public">
+          <name>done</name>
+          <briefdescription>
+<para>Task is completed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1task_1a6f686ce679d1979c011b31e1e6a9bb1da4930128e58930768b1c1c75026ebc649" prot="public">
+          <name>dangling</name>
+          <briefdescription>
+<para>Task is still running but the actual <ref refid="classdpp_1_1task" kindref="compound">dpp::task</ref> object is destroyed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>State of a task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="55" column="1" bodyfile="include/dpp/coro/task.h" bodystart="55" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacedpp_1_1detail_1_1task_1ae4957e39d00220ebdbf911e94cfa1a8b" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type>std_coroutine::coroutine_handle&lt; <ref refid="structdpp_1_1detail_1_1task_1_1promise__t" kindref="compound">promise_t</ref>&lt; R &gt; &gt;</type>
+        <definition>using dpp::detail::task::handle_t = typedef std_coroutine::coroutine_handle&lt;promise_t&lt;R&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>handle_t</name>
+        <briefdescription>
+<para>Alias for &lt;a href=&quot;https://en.cppreference.com/w/cpp/coroutine/coroutine_handle&quot;std::coroutine_handle for a <ref refid="classdpp_1_1task" kindref="compound">task</ref>&apos;s <ref refid="structdpp_1_1detail_1_1task_1_1promise__t" kindref="compound">promise_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return type of the task </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/task.h" line="88" column="1" bodyfile="include/dpp/coro/task.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/coro/task.h" line="52" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="install-arch-aur" kind="page">
+    <compoundname>install-arch-aur</compoundname>
+    <title>Installing from AUR (Arch Linux)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To install <ulink url="https://aur.archlinux.org/packages/dpp">D++ from AUR</ulink>, follow the steps below (as root):</para>
+<para><programlisting><codeline><highlight class="normal">git<sp/>clone<sp/>https://aur.archlinux.org/dpp.git</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>dpp</highlight></codeline>
+<codeline><highlight class="normal">makepkg<sp/>-si</highlight></codeline>
+</programlisting></para>
+<para>or use your favorite package manager:</para>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">#<sp/>example<sp/>with<sp/>`yay`<sp/>(without<sp/>root)</highlight></codeline>
+<codeline><highlight class="normal">yay<sp/>-Sy<sp/>dpp</highlight></codeline>
+</programlisting></para>
+<para>This will do the following three things:</para>
+<para><itemizedlist>
+<listitem><para>Clone the D++ AUR repository to a directory called <computeroutput>dpp</computeroutput></para>
+</listitem><listitem><para>Change into the directory <computeroutput>dpp</computeroutput></para>
+</listitem><listitem><para>Make a pacman package from the AUR repository for D++, and install it</para>
+</listitem></itemizedlist>
+</para>
+<para>You will now be able to use D++ by including its library on the command line:</para>
+<para><programlisting><codeline><highlight class="normal">g++<sp/>mybot.cpp<sp/>-o<sp/>mybot<sp/>-ldpp</highlight></codeline>
+</programlisting></para>
+<para><para><simplesect kind="note"><para>Compiling your bot with a raw <computeroutput>g++</computeroutput> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <ref refid="buildcmake" kindref="compound">Building a Discord Bot Using CMake (UNIX)</ref> or if you have not yet created a token for your bot, <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref> - If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</ulink>.</para>
+</simplesect>
+</para>
+ </para>
+    </detaileddescription>
+    <location file="docpages/install/install-arch-aur.md"/>
+  </compounddef>
+</doxygen>

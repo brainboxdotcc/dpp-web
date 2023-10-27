@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1job" kind="class" language="C++" prot="public">
+    <compoundname>dpp::job</compoundname>
+    <includes local="no">coro/job.h</includes>
+    <briefdescription>
+<para>Extremely light coroutine object designed to send off a coroutine to execute on its own. Can be used in conjunction with coroutine events via <ref refid="classdpp_1_1event__router__t_1a1abf0dab2344fad5d1ce20d79c87dac0" kindref="member">event routers</ref>, or on its own. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This object stores no state and is the recommended way to use coroutines if you do not need to co_await the result.</para>
+<para><simplesect kind="warning"><para>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <ulink url="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</ulink> or to our <ulink url="https://discord.gg/dpp">Discord Server</ulink>. </para>
+</simplesect>
+<simplesect kind="warning"><para>- It cannot be co_awaited, which means the second it co_awaits something, the program jumps back to the calling function, which continues executing. At this point, if the function returns, every object declared in the function including its parameters are destroyed, which causes <ref refid="lambdas-and-locals" kindref="compound">dangling references</ref>. For this reason, <computeroutput>co_await</computeroutput> will error if any parameters are passed by reference. If you must pass a reference, pass it as a pointer or with std::ref, but you must fully understand the reason behind this warning, and what to avoid. If you prefer a safer type, use <computeroutput>coroutine</computeroutput> for synchronous execution, or <computeroutput>task</computeroutput> for parallel tasks, and co_await them. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/dpp/coro/job.h" line="55" column="1" bodyfile="include/dpp/coro/job.h" bodystart="55" bodyend="55"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
