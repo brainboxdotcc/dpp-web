@@ -116,8 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a31c8c44d69073feb6ce7bb62b407eed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always suspend at the end of the task. This allows us to clean up and resume the parent.  <a href="structdpp_1_1detail_1_1task_1_1final__awaiter.html#a31c8c44d69073feb6ce7bb62b407eed6">More...</a><br /></td></tr>
 <tr class="separator:a31c8c44d69073feb6ce7bb62b407eed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b72c931f33ff3321548645a41a12f4a"><td class="memItemLeft" align="right" valign="top">std_coroutine::coroutine_handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task_1_1final__awaiter.html#a6b72c931f33ff3321548645a41a12f4a">await_suspend</a> (<a class="el" href="namespacedpp_1_1detail_1_1task.html#ae4957e39d00220ebdbf911e94cfa1a8b">handle_t</a>&lt; R &gt; handle) const noexcept</td></tr>
+<tr class="memdesc:a6b72c931f33ff3321548645a41a12f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The suspension logic of the coroutine when it finishes. Always suspend the caller, meaning cleaning up the handle is on us.  <a href="structdpp_1_1detail_1_1task_1_1final__awaiter.html#a6b72c931f33ff3321548645a41a12f4a">More...</a><br /></td></tr>
 <tr class="separator:a6b72c931f33ff3321548645a41a12f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a5e2c7472081871780ff1d7f3e2d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1task_1_1final__awaiter.html#a90a5e2c7472081871780ff1d7f3e2d8c">await_resume</a> () const noexcept</td></tr>
+<tr class="memdesc:a90a5e2c7472081871780ff1d7f3e2d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when this object is co_awaited by the standard library at the end of final_suspend. Do nothing, return nothing.  <a href="structdpp_1_1detail_1_1task_1_1final__awaiter.html#a90a5e2c7472081871780ff1d7f3e2d8c">More...</a><br /></td></tr>
 <tr class="separator:a90a5e2c7472081871780ff1d7f3e2d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -185,6 +187,8 @@ template&lt;typename R &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Function called when this object is co_awaited by the standard library at the end of final_suspend. Do nothing, return nothing. </p>
+
 </div>
 </div>
 <a id="a6b72c931f33ff3321548645a41a12f4a" name="a6b72c931f33ff3321548645a41a12f4a"></a>
@@ -212,6 +216,15 @@ template&lt;typename R &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The suspension logic of the coroutine when it finishes. Always suspend the caller, meaning cleaning up the handle is on us. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The handle of this coroutine </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::coroutine_handle&lt;&gt; Handle to resume, which is either the parent if present or std::noop_coroutine() otherwise </dd></dl>
 
 </div>
 </div>

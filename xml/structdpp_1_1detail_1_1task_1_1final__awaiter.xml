@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="498" column="7" bodyfile="include/dpp/coro/task.h" bodystart="498" bodyend="500"/>
+        <location file="include/dpp/coro/task.h" line="509" column="7" bodyfile="include/dpp/coro/task.h" bodystart="509" bodyend="511"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1final__awaiter_1a6b72c931f33ff3321548645a41a12f4a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std_coroutine::coroutine_handle</type>
@@ -33,12 +33,25 @@
           <declname>handle</declname>
         </param>
         <briefdescription>
+<para>The suspension logic of the coroutine when it finishes. Always suspend the caller, meaning cleaning up the handle is on us. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of this coroutine </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::coroutine_handle&lt;&gt; Handle to resume, which is either the parent if present or std::noop_coroutine() otherwise </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="508" column="3" bodyfile="include/dpp/coro/task.h" bodystart="730" bodyend="748"/>
+        <location file="include/dpp/coro/task.h" line="519" column="3" bodyfile="include/dpp/coro/task.h" bodystart="741" bodyend="759"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1detail_1_1task_1_1final__awaiter_1a90a5e2c7472081871780ff1d7f3e2d8c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>void</type>
@@ -46,12 +59,13 @@
         <argsstring>() const noexcept</argsstring>
         <name>await_resume</name>
         <briefdescription>
+<para>Function called when this object is co_awaited by the standard library at the end of final_suspend. Do nothing, return nothing. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="513" column="6" bodyfile="include/dpp/coro/task.h" bodystart="513" bodyend="513"/>
+        <location file="include/dpp/coro/task.h" line="524" column="6" bodyfile="include/dpp/coro/task.h" bodystart="524" bodyend="524"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -70,7 +84,7 @@
 </parameterlist>
 </para>
     </detaileddescription>
-    <location file="include/dpp/coro/task.h" line="494" column="1" bodyfile="include/dpp/coro/task.h" bodystart="494" bodyend="514"/>
+    <location file="include/dpp/coro/task.h" line="505" column="1" bodyfile="include/dpp/coro/task.h" bodystart="505" bodyend="525"/>
     <listofallmembers>
       <member refid="structdpp_1_1detail_1_1task_1_1final__awaiter_1a31c8c44d69073feb6ce7bb62b407eed6" prot="public" virt="non-virtual"><scope>dpp::detail::task::final_awaiter</scope><name>await_ready</name></member>
       <member refid="structdpp_1_1detail_1_1task_1_1final__awaiter_1a90a5e2c7472081871780ff1d7f3e2d8c" prot="public" virt="non-virtual"><scope>dpp::detail::task::final_awaiter</scope><name>await_resume</name></member>

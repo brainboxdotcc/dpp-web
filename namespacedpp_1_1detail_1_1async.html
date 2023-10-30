@@ -147,10 +147,14 @@ Enumerations</h2></td></tr>
 
 <p>Represents the step an std::async is at. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9" name="a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9"></a>sent&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bdacb05cab65afefab8fd3831d92cfc68be" name="a7535e93a3c82431d3ff869d0cbb897bdacb05cab65afefab8fd3831d92cfc68be"></a>waiting&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda6b2ded51d81a4403d8a4bd25fa1e57ee" name="a7535e93a3c82431d3ff869d0cbb897bda6b2ded51d81a4403d8a4bd25fa1e57ee"></a>done&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda4930128e58930768b1c1c75026ebc649" name="a7535e93a3c82431d3ff869d0cbb897bda4930128e58930768b1c1c75026ebc649"></a>dangling&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9" name="a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9"></a>sent&#160;</td><td class="fielddoc"><p >Request was sent but not co_await-ed. handle is nullptr, result_storage is not constructed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bdacb05cab65afefab8fd3831d92cfc68be" name="a7535e93a3c82431d3ff869d0cbb897bdacb05cab65afefab8fd3831d92cfc68be"></a>waiting&#160;</td><td class="fielddoc"><p >Request was co_await-ed. handle is valid, result_storage is not constructed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda6b2ded51d81a4403d8a4bd25fa1e57ee" name="a7535e93a3c82431d3ff869d0cbb897bda6b2ded51d81a4403d8a4bd25fa1e57ee"></a>done&#160;</td><td class="fielddoc"><p >Request was completed. handle is unknown, result_storage is valid. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda4930128e58930768b1c1c75026ebc649" name="a7535e93a3c82431d3ff869d0cbb897bda4930128e58930768b1c1c75026ebc649"></a>dangling&#160;</td><td class="fielddoc"><p >Request was never co_await-ed. </p>
+</td></tr>
 </table>
 
 </div>
