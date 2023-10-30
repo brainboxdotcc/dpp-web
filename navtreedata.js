@@ -145,11 +145,11 @@ var NAVTREEINDEX =
 "structdpp_1_1message__reaction__remove__emoji__t.html",
 "structdpp_1_1param__info.html#a83b97805bed52aafbce70379a9e4cb18",
 "structdpp_1_1select__click__t.html#a163eb52d33f1b91333f62f5db98f9ce3",
-"structdpp_1_1stage__instance__create__t.html#a2d4777d1049d31ed943ecebfa2de7db9",
-"structdpp_1_1thread__list__sync__t.html#a2500c6d9987fbfc509fd0a960b1968e9",
-"structdpp_1_1user__context__menu__t.html#a63076b1d3b1fc2e1c3f97384f1fe8b4b",
-"structdpp_1_1voice__client__disconnect__t.html#ae250d3a1ee0ad2e90ad075e1aead5478",
-"structdpp_1_1voice__user__talking__t.html#af32126d4ed56366b4413c84b272383b7"
+"structdpp_1_1stage__instance__create__t.html#a5afbcd36109734ad0fca14ec848b73b7",
+"structdpp_1_1thread__list__sync__t.html#a4d5c139c862c5ed02227b1e9ffc38095",
+"structdpp_1_1user__context__menu__t.html#a8b0c69c156a1e532507a918c13414f14",
+"structdpp_1_1voice__client__speaking__t.html#a2500c6d9987fbfc509fd0a960b1968e9",
+"structdpp_1_1webhooks__update__t.html#a39a25531b301ffc214ddd17a7b3475f3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -322,10 +322,13 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ab78142eef6bd03926469a118778507da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread member of current user if joined to the thread. Note this is only set by certain api calls otherwise contains default data.  <a href="classdpp_1_1thread.html#ab78142eef6bd03926469a118778507da">More...</a><br /></td></tr>
 <tr class="separator:ab78142eef6bd03926469a118778507da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64231c8975f095c371b0a4ba478d33ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a64231c8975f095c371b0a4ba478d33ee">metadata</a></td></tr>
+<tr class="memdesc:a64231c8975f095c371b0a4ba478d33ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread metadata (threads)  <a href="classdpp_1_1thread.html#a64231c8975f095c371b0a4ba478d33ee">More...</a><br /></td></tr>
 <tr class="separator:a64231c8975f095c371b0a4ba478d33ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bf5e18b2098c25224953c88f7cef0de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a1bf5e18b2098c25224953c88f7cef0de">msg</a></td></tr>
+<tr class="memdesc:a1bf5e18b2098c25224953c88f7cef0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created message. Only filled within the <a class="el" href="classdpp_1_1cluster.html#ad96d8fcec4c69d82fd4f2fb85ddfa2bf" title="Create a thread in a forum or media channel.">cluster::thread_create_in_forum()</a> method.  <a href="classdpp_1_1thread.html#a1bf5e18b2098c25224953c88f7cef0de">More...</a><br /></td></tr>
 <tr class="separator:a1bf5e18b2098c25224953c88f7cef0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ab5e0ee2b50f2bab43090312749ce3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">applied_tags</a></td></tr>
+<tr class="memdesc:a8ab5e0ee2b50f2bab43090312749ce3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of <a class="el" href="structdpp_1_1forum__tag.html" title="Represents a tag that is able to be applied to a thread in a forum or media channel.">dpp::forum_tag</a> IDs that have been applied to a thread in a forum or media channel.  <a href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">More...</a><br /></td></tr>
 <tr class="separator:a8ab5e0ee2b50f2bab43090312749ce3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e243f06170d82c268c014a93a64354f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a6e243f06170d82c268c014a93a64354f">total_messages_sent</a></td></tr>
 <tr class="memdesc:a6e243f06170d82c268c014a93a64354f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of messages ever sent in the thread. It's similar to <a class="el" href="classdpp_1_1thread.html#a546adcc48a0b7853ade0f11544ebfcc7" title="Number of messages (not including the initial message or deleted messages) of the thread....">thread::message_count</a> on message creation, but will not decrement the number when a message is deleted.  <a href="classdpp_1_1thread.html#a6e243f06170d82c268c014a93a64354f">More...</a><br /></td></tr>
@@ -334,55 +337,73 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a546adcc48a0b7853ade0f11544ebfcc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of messages (not including the initial message or deleted messages) of the thread. For threads created before July 1, 2022, the message count is inaccurate when it's greater than 50.  <a href="classdpp_1_1thread.html#a546adcc48a0b7853ade0f11544ebfcc7">More...</a><br /></td></tr>
 <tr class="separator:a546adcc48a0b7853ade0f11544ebfcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7afa978603442b3a4c0cbf366fdf6e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#ace7afa978603442b3a4c0cbf366fdf6e">member_count</a></td></tr>
+<tr class="memdesc:ace7afa978603442b3a4c0cbf366fdf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate count of members in a thread (stops counting at 50)  <a href="classdpp_1_1thread.html#ace7afa978603442b3a4c0cbf366fdf6e">More...</a><br /></td></tr>
 <tr class="separator:ace7afa978603442b3a4c0cbf366fdf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065d6fbd4e21759354c2516b074078a8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a065d6fbd4e21759354c2516b074078a8">name</a></td></tr>
+<tr class="memdesc:a065d6fbd4e21759354c2516b074078a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel name (1-100 characters).  <a href="classdpp_1_1channel.html#a065d6fbd4e21759354c2516b074078a8">More...</a><br /></td></tr>
 <tr class="separator:a065d6fbd4e21759354c2516b074078a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57864fde3659243453d1ad1c9bf60983"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a57864fde3659243453d1ad1c9bf60983">topic</a></td></tr>
+<tr class="memdesc:a57864fde3659243453d1ad1c9bf60983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel topic (0-4096 characters for forum and media channels, 0-1024 characters for all others).  <a href="classdpp_1_1channel.html#a57864fde3659243453d1ad1c9bf60983">More...</a><br /></td></tr>
 <tr class="separator:a57864fde3659243453d1ad1c9bf60983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05f56fbd37e993e0fc36df06b3d65bad"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad">rtc_region</a></td></tr>
 <tr class="memdesc:a05f56fbd37e993e0fc36df06b3d65bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voice region if set for voice channel, otherwise empty string.  <a href="classdpp_1_1channel.html#a05f56fbd37e993e0fc36df06b3d65bad">More...</a><br /></td></tr>
 <tr class="separator:a05f56fbd37e993e0fc36df06b3d65bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d66636187a0382693d69c2ac2827e89"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a0d66636187a0382693d69c2ac2827e89">recipients</a></td></tr>
+<tr class="memdesc:a0d66636187a0382693d69c2ac2827e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">DM recipients.  <a href="classdpp_1_1channel.html#a0d66636187a0382693d69c2ac2827e89">More...</a><br /></td></tr>
 <tr class="separator:a0d66636187a0382693d69c2ac2827e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb698179af0d4c535cf5b7ed01b096e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdpp_1_1permission__overwrite.html">permission_overwrite</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a3eb698179af0d4c535cf5b7ed01b096e">permission_overwrites</a></td></tr>
+<tr class="memdesc:a3eb698179af0d4c535cf5b7ed01b096e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permission overwrites to apply to base permissions.  <a href="classdpp_1_1channel.html#a3eb698179af0d4c535cf5b7ed01b096e">More...</a><br /></td></tr>
 <tr class="separator:a3eb698179af0d4c535cf5b7ed01b096e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39f17a9a627d819d89e124fb944ad5c2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdpp_1_1forum__tag.html">forum_tag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a39f17a9a627d819d89e124fb944ad5c2">available_tags</a></td></tr>
+<tr class="memdesc:a39f17a9a627d819d89e124fb944ad5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of tags that can be used in a forum or media channel.  <a href="classdpp_1_1channel.html#a39f17a9a627d819d89e124fb944ad5c2">More...</a><br /></td></tr>
 <tr class="separator:a39f17a9a627d819d89e124fb944ad5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5576665c6f660702cb1ea8cd23339177"><td class="memItemLeft" align="right" valign="top">std::variant&lt; std::monostate, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a5576665c6f660702cb1ea8cd23339177">default_reaction</a></td></tr>
 <tr class="memdesc:a5576665c6f660702cb1ea8cd23339177"><td class="mdescLeft">&#160;</td><td class="mdescRight">The emoji to show as the default reaction button on a thread in a forum or media channel. Contains either nothing, the id of a guild's custom emoji or the unicode character of the emoji.  <a href="classdpp_1_1channel.html#a5576665c6f660702cb1ea8cd23339177">More...</a><br /></td></tr>
 <tr class="separator:a5576665c6f660702cb1ea8cd23339177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad8f9892c2daba2f3215e751bfb3351d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1utility_1_1iconhash.html">utility::iconhash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#aad8f9892c2daba2f3215e751bfb3351d">icon</a></td></tr>
-<tr class="memdesc:aad8f9892c2daba2f3215e751bfb3351d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel icon (for group DMs)  <a href="classdpp_1_1channel.html#aad8f9892c2daba2f3215e751bfb3351d">More...</a><br /></td></tr>
+<tr class="memdesc:aad8f9892c2daba2f3215e751bfb3351d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel icon (for group DMs).  <a href="classdpp_1_1channel.html#aad8f9892c2daba2f3215e751bfb3351d">More...</a><br /></td></tr>
 <tr class="separator:aad8f9892c2daba2f3215e751bfb3351d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb22659e9dc7fb8dd36d1c9f67eb7181"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#adb22659e9dc7fb8dd36d1c9f67eb7181">owner_id</a></td></tr>
+<tr class="memdesc:adb22659e9dc7fb8dd36d1c9f67eb7181"><td class="mdescLeft">&#160;</td><td class="mdescRight">User ID of the creator for group DMs or threads.  <a href="classdpp_1_1channel.html#adb22659e9dc7fb8dd36d1c9f67eb7181">More...</a><br /></td></tr>
 <tr class="separator:adb22659e9dc7fb8dd36d1c9f67eb7181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1e877475ccc7113683382f787cfbc48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#ae1e877475ccc7113683382f787cfbc48">parent_id</a></td></tr>
+<tr class="memdesc:ae1e877475ccc7113683382f787cfbc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent ID (for guild channels: id of the parent category, for threads: id of the text channel this thread was created).  <a href="classdpp_1_1channel.html#ae1e877475ccc7113683382f787cfbc48">More...</a><br /></td></tr>
 <tr class="separator:ae1e877475ccc7113683382f787cfbc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52a3d85468b8b6a1eb16c1bdb19cb499"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a52a3d85468b8b6a1eb16c1bdb19cb499">guild_id</a></td></tr>
+<tr class="memdesc:a52a3d85468b8b6a1eb16c1bdb19cb499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guild id of the guild that owns the channel.  <a href="classdpp_1_1channel.html#a52a3d85468b8b6a1eb16c1bdb19cb499">More...</a><br /></td></tr>
 <tr class="separator:a52a3d85468b8b6a1eb16c1bdb19cb499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa510e7eb5e93c1c885392c7fcdf24779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#aa510e7eb5e93c1c885392c7fcdf24779">last_message_id</a></td></tr>
+<tr class="memdesc:aa510e7eb5e93c1c885392c7fcdf24779"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of last message to be sent to the channel.  <a href="classdpp_1_1channel.html#aa510e7eb5e93c1c885392c7fcdf24779">More...</a><br /></td></tr>
 <tr class="separator:aa510e7eb5e93c1c885392c7fcdf24779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33f863adef0f0cc89a7324cd93bc752"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#ae33f863adef0f0cc89a7324cd93bc752">last_pin_timestamp</a></td></tr>
+<tr class="memdesc:ae33f863adef0f0cc89a7324cd93bc752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of last pinned message.  <a href="classdpp_1_1channel.html#ae33f863adef0f0cc89a7324cd93bc752">More...</a><br /></td></tr>
 <tr class="separator:ae33f863adef0f0cc89a7324cd93bc752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade0284d0c47688d1f3175850fd038583"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1permission.html">permission</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#ade0284d0c47688d1f3175850fd038583">permissions</a></td></tr>
 <tr class="memdesc:ade0284d0c47688d1f3175850fd038583"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is only filled when the channel is part of the <code>resolved</code> set sent within an interaction. Any other time it contains zero. When filled, it contains the calculated permission bitmask of the user issuing the command within this channel.  <a href="classdpp_1_1channel.html#ade0284d0c47688d1f3175850fd038583">More...</a><br /></td></tr>
 <tr class="separator:ade0284d0c47688d1f3175850fd038583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f31178c9e86ad1490b8619cb9bdbde4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a1f31178c9e86ad1490b8619cb9bdbde4">position</a></td></tr>
+<tr class="memdesc:a1f31178c9e86ad1490b8619cb9bdbde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorting position, lower number means higher up the list.  <a href="classdpp_1_1channel.html#a1f31178c9e86ad1490b8619cb9bdbde4">More...</a><br /></td></tr>
 <tr class="separator:a1f31178c9e86ad1490b8619cb9bdbde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab32308d8281aef6bfe4d5a6538c6306e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#ab32308d8281aef6bfe4d5a6538c6306e">bitrate</a></td></tr>
+<tr class="memdesc:ab32308d8281aef6bfe4d5a6538c6306e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bitrate (in kilobits) of the voice channel.  <a href="classdpp_1_1channel.html#ab32308d8281aef6bfe4d5a6538c6306e">More...</a><br /></td></tr>
 <tr class="separator:ab32308d8281aef6bfe4d5a6538c6306e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ec41d2c2a7d592c1a17888d3f401fd5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a2ec41d2c2a7d592c1a17888d3f401fd5">rate_limit_per_user</a></td></tr>
+<tr class="memdesc:a2ec41d2c2a7d592c1a17888d3f401fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of seconds a user has to wait before sending another message (0-21600). Bots, as well as users with the permission manage_messages or manage_channel, are unaffected.  <a href="classdpp_1_1channel.html#a2ec41d2c2a7d592c1a17888d3f401fd5">More...</a><br /></td></tr>
 <tr class="separator:a2ec41d2c2a7d592c1a17888d3f401fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a8cfa9de979b3c74b186d19997d82a7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a0a8cfa9de979b3c74b186d19997d82a7">default_thread_rate_limit_per_user</a></td></tr>
+<tr class="memdesc:a0a8cfa9de979b3c74b186d19997d82a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial <code>rate_limit_per_user</code> to set on newly created threads in a channel. This field is copied to the thread at creation time and does not live update.  <a href="classdpp_1_1channel.html#a0a8cfa9de979b3c74b186d19997d82a7">More...</a><br /></td></tr>
 <tr class="separator:a0a8cfa9de979b3c74b186d19997d82a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6dd4a18591a1297b5c24bd2b6817fc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8">auto_archive_duration_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#af6dd4a18591a1297b5c24bd2b6817fc1">default_auto_archive_duration</a></td></tr>
-<tr class="memdesc:af6dd4a18591a1297b5c24bd2b6817fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default duration, copied onto newly created threads. Used by the clients, not the API. Threads will stop showing in the channel list after the specified period of inactivity. Defaults to <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a" title="Auto archive duration of 1 day. (1440 minutes)">dpp::arc_1_day</a>.  <a href="classdpp_1_1channel.html#af6dd4a18591a1297b5c24bd2b6817fc1">More...</a><br /></td></tr>
+<tr class="memdesc:af6dd4a18591a1297b5c24bd2b6817fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default duration, copied onto newly created threads. Used by the clients, not the API. Threads will stop showing in the channel list after the specified period of inactivity. Defaults to <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a" title="Auto archive duration of 1 day (1440 minutes).">dpp::arc_1_day</a>.  <a href="classdpp_1_1channel.html#af6dd4a18591a1297b5c24bd2b6817fc1">More...</a><br /></td></tr>
 <tr class="separator:af6dd4a18591a1297b5c24bd2b6817fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d5b72cd22c98605f7cdbcb747f7775"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06">default_forum_sort_order_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a47d5b72cd22c98605f7cdbcb747f7775">default_sort_order</a></td></tr>
+<tr class="memdesc:a47d5b72cd22c98605f7cdbcb747f7775"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default sort order type used to order posts in forum and media channels.  <a href="classdpp_1_1channel.html#a47d5b72cd22c98605f7cdbcb747f7775">More...</a><br /></td></tr>
 <tr class="separator:a47d5b72cd22c98605f7cdbcb747f7775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4468e3981302301886f649d14b7ddcf7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a4468e3981302301886f649d14b7ddcf7">flags</a></td></tr>
+<tr class="memdesc:a4468e3981302301886f649d14b7ddcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags bitmap (<a class="el" href="namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9" title="Our flags as stored in the object.">dpp::channel_flags</a>)  <a href="classdpp_1_1channel.html#a4468e3981302301886f649d14b7ddcf7">More...</a><br /></td></tr>
 <tr class="separator:a4468e3981302301886f649d14b7ddcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79251adb1bc9dc6780af2afd21499769"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a79251adb1bc9dc6780af2afd21499769">user_limit</a></td></tr>
+<tr class="memdesc:a79251adb1bc9dc6780af2afd21499769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum user limit for voice channels (0-99)  <a href="classdpp_1_1channel.html#a79251adb1bc9dc6780af2afd21499769">More...</a><br /></td></tr>
 <tr class="separator:a79251adb1bc9dc6780af2afd21499769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40bf0c6cc03909910512808fa6caa112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1managed.html#a40bf0c6cc03909910512808fa6caa112">id</a> = {}</td></tr>
 <tr class="memdesc:a40bf0c6cc03909910512808fa6caa112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata.  <a href="classdpp_1_1managed.html#a40bf0c6cc03909910512808fa6caa112">More...</a><br /></td></tr>
@@ -2471,7 +2492,8 @@ false objects are not the same id </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >A list of <a class="el" href="structdpp_1_1forum__tag.html" title="Represents a tag that is able to be applied to a thread in a forum or media channel.">dpp::forum_tag</a> IDs that have been applied to a thread in a forum or media channel </p>
+
+<p>A list of <a class="el" href="structdpp_1_1forum__tag.html" title="Represents a tag that is able to be applied to a thread in a forum or media channel.">dpp::forum_tag</a> IDs that have been applied to a thread in a forum or media channel. </p>
 
 </div>
 </div>
@@ -2494,7 +2516,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >A set of tags that can be used in a forum or media channel </p>
+
+<p>A set of tags that can be used in a forum or media channel. </p>
 
 </div>
 </div>
@@ -2517,7 +2540,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >the bitrate (in kilobits) of the voice channel </p>
+
+<p>The bitrate (in kilobits) of the voice channel. </p>
 
 </div>
 </div>
@@ -2541,7 +2565,7 @@ false objects are not the same id </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Default duration, copied onto newly created threads. Used by the clients, not the API. Threads will stop showing in the channel list after the specified period of inactivity. Defaults to <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a" title="Auto archive duration of 1 day. (1440 minutes)">dpp::arc_1_day</a>. </p>
+<p>Default duration, copied onto newly created threads. Used by the clients, not the API. Threads will stop showing in the channel list after the specified period of inactivity. Defaults to <a class="el" href="namespacedpp.html#a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a" title="Auto archive duration of 1 day (1440 minutes).">dpp::arc_1_day</a>. </p>
 
 </div>
 </div>
@@ -2588,7 +2612,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >the default sort order type used to order posts in forum and media channels </p>
+
+<p>The default sort order type used to order posts in forum and media channels. </p>
 
 </div>
 </div>
@@ -2611,7 +2636,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >The initial <code>rate_limit_per_user</code> to set on newly created threads in a channel. This field is copied to the thread at creation time and does not live update </p>
+
+<p>The initial <code>rate_limit_per_user</code> to set on newly created threads in a channel. This field is copied to the thread at creation time and does not live update. </p>
 
 </div>
 </div>
@@ -2634,7 +2660,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Flags bitmap (<a class="el" href="namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9" title="Our flags as stored in the object.">dpp::channel_flags</a>) </p>
+
+<p>Flags bitmap (<a class="el" href="namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9" title="Our flags as stored in the object.">dpp::channel_flags</a>) </p>
 
 </div>
 </div>
@@ -2657,7 +2684,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Guild id of the guild that owns the channel </p>
+
+<p>Guild id of the guild that owns the channel. </p>
 
 </div>
 </div>
@@ -2681,7 +2709,7 @@ false objects are not the same id </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Channel icon (for group DMs) </p>
+<p>Channel icon (for group DMs). </p>
 
 </div>
 </div>
@@ -2728,7 +2756,9 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >ID of last message to be sent to the channel (may not point to an existing or valid message or thread) </p>
+
+<p>ID of last message to be sent to the channel. </p>
+<dl class="section warning"><dt>Warning</dt><dd>may not point to an existing or valid message/thread. </dd></dl>
 
 </div>
 </div>
@@ -2751,7 +2781,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Timestamp of last pinned message </p>
+
+<p>Timestamp of last pinned message. </p>
 
 </div>
 </div>
@@ -2782,7 +2813,8 @@ false objects are not the same id </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Approximate count of members in a thread (stops counting at 50) </p>
+
+<p>Approximate count of members in a thread (stops counting at 50) </p>
 
 </div>
 </div>
@@ -2813,7 +2845,8 @@ false objects are not the same id </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Thread metadata (threads) </p>
+
+<p>Thread metadata (threads) </p>
 
 </div>
 </div>
@@ -2828,7 +2861,8 @@ false objects are not the same id </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Created message. Only filled within the <a class="el" href="classdpp_1_1cluster.html#ad96d8fcec4c69d82fd4f2fb85ddfa2bf" title="Create a thread in a forum or media channel.">cluster::thread_create_in_forum()</a> method </p>
+
+<p>Created message. Only filled within the <a class="el" href="classdpp_1_1cluster.html#ad96d8fcec4c69d82fd4f2fb85ddfa2bf" title="Create a thread in a forum or media channel.">cluster::thread_create_in_forum()</a> method. </p>
 
 </div>
 </div>
@@ -2851,7 +2885,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Channel name (1-100 characters) </p>
+
+<p>Channel name (1-100 characters). </p>
 
 </div>
 </div>
@@ -2874,7 +2909,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >User ID of the creator for group DMs or threads </p>
+
+<p>User ID of the creator for group DMs or threads. </p>
 
 </div>
 </div>
@@ -2897,7 +2933,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Parent ID (for guild channels: id of the parent category, for threads: id of the text channel this thread was created) </p>
+
+<p>Parent ID (for guild channels: id of the parent category, for threads: id of the text channel this thread was created). </p>
 
 </div>
 </div>
@@ -2920,7 +2957,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Permission overwrites to apply to base permissions </p>
+
+<p>Permission overwrites to apply to base permissions. </p>
 
 </div>
 </div>
@@ -2967,7 +3005,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Sorting position, lower number means higher up the list </p>
+
+<p>Sorting position, lower number means higher up the list. </p>
 
 </div>
 </div>
@@ -2990,7 +3029,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >amount of seconds a user has to wait before sending another message (0-21600); bots, as well as users with the permission manage_messages or manage_channel, are unaffected </p>
+
+<p>Amount of seconds a user has to wait before sending another message (0-21600). Bots, as well as users with the permission manage_messages or manage_channel, are unaffected. </p>
 
 </div>
 </div>
@@ -3013,7 +3053,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >DM recipients </p>
+
+<p>DM recipients. </p>
 
 </div>
 </div>
@@ -3060,7 +3101,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Channel topic (0-4096 characters for forum and media channels, 0-1024 characters for all others) </p>
+
+<p>Channel topic (0-4096 characters for forum and media channels, 0-1024 characters for all others). </p>
 
 </div>
 </div>
@@ -3099,7 +3141,8 @@ false objects are not the same id </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Maximum user limit for voice channels (0-99) </p>
+
+<p>Maximum user limit for voice channels (0-99) </p>
 
 </div>
 </div>

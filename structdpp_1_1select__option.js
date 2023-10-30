@@ -1,6 +1,5 @@
 var structdpp_1_1select__option =
 [
-    [ "inner_select_emoji", "structdpp_1_1select__option_1_1inner__select__emoji.html", "structdpp_1_1select__option_1_1inner__select__emoji" ],
     [ "select_option", "structdpp_1_1select__option.html#aa6ca8ed29e8e1f81ab8ce82e2b9ed1fa", null ],
     [ "~select_option", "structdpp_1_1select__option.html#a4386959efc6c72b0e302e8644aec42af", null ],
     [ "select_option", "structdpp_1_1select__option.html#afdd887738c88c21cee80ce2ddd6a0f84", null ],
@@ -16,7 +15,7 @@ var structdpp_1_1select__option =
     [ "to_json", "structdpp_1_1select__option.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "json_interface< select_option >", "structdpp_1_1select__option.html#a7b3a369462032dd52e63de773d3e4e66", null ],
     [ "description", "structdpp_1_1select__option.html#a9e8b7f77dc54e0746d5781179d65f703", null ],
-    [ "emoji", "structdpp_1_1select__option.html#a87080e97f389b83a93c43198a1380f7b", null ],
+    [ "emoji", "structdpp_1_1select__option.html#a78c19b4d8d6a8819b2791f9fa7422e4c", null ],
     [ "is_default", "structdpp_1_1select__option.html#a0bbb221b08b77ffb46d1b352bf7f8222", null ],
     [ "label", "structdpp_1_1select__option.html#a9b69bce92e58e606f37964d60c99c799", null ],
     [ "value", "structdpp_1_1select__option.html#a9dbeb317e3612fb10d2f47cc8b61eb39", null ]

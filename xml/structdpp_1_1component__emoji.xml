@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1component__emoji" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::component_emoji</compoundname>
+    <includes local="no">message.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1component__emoji_1a13f51ca9bf514dd38ffaaf854e4f5eb7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::component_emoji::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <initializer>{&quot;&quot;}</initializer>
+        <briefdescription>
+<para>The name of the emoji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For built in unicode emojis, set this to the actual unicode value of the emoji e.g. &quot;😄&quot; and not for example &quot;:smile:&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="73" column="13" bodyfile="include/dpp/message.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1component__emoji_1aa4bb3111e48c4a01a47fdfb4bcc3df3d" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref></type>
+        <definition>dpp::snowflake dpp::component_emoji::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>The emoji ID value for emojis that are custom ones belonging to a guild. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The same rules apply as with other emojis, that the bot must be on the guild where the emoji resides and it must be available for use (e.g. not disabled due to lack of boosts, etc) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="84" column="16" bodyfile="include/dpp/message.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1component__emoji_1a11ac49686c29f79bba3bce060e5b1818" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::component_emoji::animated</definition>
+        <argsstring></argsstring>
+        <name>animated</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Is the emoji animated? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Only applies to custom emojis. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="91" column="6" bodyfile="include/dpp/message.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An emoji for a component (select menus included). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To set an emoji on your button, you must set one of either the name or id fields. The easiest way is to use the <ref refid="classdpp_1_1component_1a4fa1319e5119a258e3a80e028a4dff3c" kindref="member">dpp::component::set_emoji</ref> method.</para>
+<para><simplesect kind="note"><para>This is a <bold>very</bold> scaled down version of <ref refid="classdpp_1_1emoji" kindref="compound">dpp::emoji</ref>, we advise that you refrain from using this. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>dpp::component_emoji</label>
+        <link refid="structdpp_1_1component__emoji"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>animated</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/message.h" line="65" column="1" bodyfile="include/dpp/message.h" bodystart="65" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1component__emoji_1a11ac49686c29f79bba3bce060e5b1818" prot="public" virt="non-virtual"><scope>dpp::component_emoji</scope><name>animated</name></member>
+      <member refid="structdpp_1_1component__emoji_1aa4bb3111e48c4a01a47fdfb4bcc3df3d" prot="public" virt="non-virtual"><scope>dpp::component_emoji</scope><name>id</name></member>
+      <member refid="structdpp_1_1component__emoji_1a13f51ca9bf514dd38ffaaf854e4f5eb7" prot="public" virt="non-virtual"><scope>dpp::component_emoji</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

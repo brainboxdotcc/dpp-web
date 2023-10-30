@@ -166,6 +166,7 @@ var annotated_dup =
       [ "commandhandler", "classdpp_1_1commandhandler.html", "classdpp_1_1commandhandler" ],
       [ "component", "classdpp_1_1component.html", "classdpp_1_1component" ],
       [ "component_default_value", "structdpp_1_1component__default__value.html", "structdpp_1_1component__default__value" ],
+      [ "component_emoji", "structdpp_1_1component__emoji.html", "structdpp_1_1component__emoji" ],
       [ "component_interaction", "structdpp_1_1component__interaction.html", "structdpp_1_1component__interaction" ],
       [ "confirmation", "structdpp_1_1confirmation.html", "structdpp_1_1confirmation" ],
       [ "confirmation_callback_t", "structdpp_1_1confirmation__callback__t.html", "structdpp_1_1confirmation__callback__t" ],
