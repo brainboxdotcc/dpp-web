@@ -324,7 +324,6 @@ var annotated_dup =
       [ "user_context_menu_t", "structdpp_1_1user__context__menu__t.html", "structdpp_1_1user__context__menu__t" ],
       [ "user_identified", "classdpp_1_1user__identified.html", "classdpp_1_1user__identified" ],
       [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
-      [ "version_checker", "structdpp_1_1version__checker.html", "structdpp_1_1version__checker" ],
       [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
       [ "voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", "structdpp_1_1voice__client__disconnect__t" ],
       [ "voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", "structdpp_1_1voice__client__speaking__t" ],

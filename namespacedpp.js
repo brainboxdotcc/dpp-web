@@ -6404,7 +6404,6 @@ var namespacedpp =
     [ "user_context_menu_t", "structdpp_1_1user__context__menu__t.html", "structdpp_1_1user__context__menu__t" ],
     [ "user_identified", "classdpp_1_1user__identified.html", "classdpp_1_1user__identified" ],
     [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
-    [ "version_checker", "structdpp_1_1version__checker.html", "structdpp_1_1version__checker" ],
     [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
     [ "voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", "structdpp_1_1voice__client__disconnect__t" ],
     [ "voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", "structdpp_1_1voice__client__speaking__t" ],
@@ -6613,6 +6612,11 @@ var namespacedpp =
       [ "amod_type_spam", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a5ab9fd884c477842d67045e962097fa2", null ],
       [ "amod_type_keyword_preset", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05", null ],
       [ "amod_type_mention_spam", "namespacedpp.html#a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7", null ]
+    ] ],
+    [ "build_type", "namespacedpp.html#a82f764e7486a06178101b0db23ddadfc", [
+      [ "universal", "namespacedpp.html#a82f764e7486a06178101b0db23ddadfca1c8a2a7c1511c01ee5158ec2ed99b749", null ],
+      [ "debug", "namespacedpp.html#a82f764e7486a06178101b0db23ddadfcaad42f6697b035b7580e4fef93be20b4d", null ],
+      [ "release", "namespacedpp.html#a82f764e7486a06178101b0db23ddadfca123fead50246387983ee340507115ef4", null ]
     ] ],
     [ "cache_policy_setting_t", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52", [
       [ "cp_aggressive", "namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52a81a53a5c84326ed9419729871d0af46e", null ],
@@ -7312,12 +7316,13 @@ var namespacedpp =
     [ "ts_not_null", "namespacedpp.html#a90fa4e4bbd6aaf8884f3588f096ab251", null ],
     [ "ts_to_string", "namespacedpp.html#a11a29c34fa2bce39d743860fb6fdb572", null ],
     [ "uppercase", "namespacedpp.html#a81749d69bd220d0579617cb188e44e5a", null ],
+    [ "validate_configuration", "namespacedpp.html#a5546e9406901147259e107ce24b5ff72", null ],
     [ "when_any", "namespacedpp.html#adec042312c305da2b49380300bde130b", null ],
     [ "deletion_mutex", "namespacedpp.html#ae611302ba7fc914d4732b65541132651", null ],
     [ "deletion_queue", "namespacedpp.html#a5609082c12782be33f82b955a5d07b4f", null ],
     [ "DISCORD_HOST", "namespacedpp.html#a243e725d7b20f89395b3cce1215421ea", null ],
-    [ "dpp_vc", "namespacedpp.html#aefb3da6503cb501b9d2a0376663dbc6e", null ],
     [ "FORMAT_VERSION", "namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29", null ],
     [ "http_version", "namespacedpp.html#a03c3e59edb221a7d235cc9fda57a7d34", null ],
+    [ "is_valid_config", "namespacedpp.html#ae5545dbc7d5791902c0f940ad125b672", null ],
     [ "send_audio_raw_max_length", "namespacedpp.html#af9ada17b1b7470c57690031929bb7cff", null ]
 ];

@@ -768,8 +768,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1user__update__t.html">user_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">User update.  <a href="structdpp_1_1user__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1version__checker.html">version_checker</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1voice__buffer__send__t.html">voice_buffer_send_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">voice buffer send  <a href="structdpp_1_1voice__buffer__send__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1317,6 +1315,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ad775fb0c6c9e6923fb562c95907d26c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a token which identifies the type of value which follows it in the ETF binary structure.  <a href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2">More...</a><br /></td></tr>
 <tr class="separator:ad775fb0c6c9e6923fb562c95907d26c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f764e7486a06178101b0db23ddadfc"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfc">build_type</a> { <a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfca1c8a2a7c1511c01ee5158ec2ed99b749">universal</a>
+, <a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfcaad42f6697b035b7580e4fef93be20b4d">debug</a>
+, <a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfca123fead50246387983ee340507115ef4">release</a>
+ }</td></tr>
+<tr class="memdesc:a82f764e7486a06178101b0db23ddadfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a build configuration. On some platforms (e.g. Windows) release isn't compatible with debug, so we use this enum to detect it.  <a href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfc">More...</a><br /></td></tr>
+<tr class="separator:a82f764e7486a06178101b0db23ddadfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51891a9e382f9c396d378de00fa65099"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099">region</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099a9edcd6257d71d2339549f2a5b667a313">r_brazil</a>
 , <a class="el" href="namespacedpp.html#a51891a9e382f9c396d378de00fa65099aadbae70817769d6551c51f3da468dac8">r_central_europe</a>
@@ -2142,6 +2146,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7c64da3e6d42da998ed877c18025afa0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdpp_1_1dns__cache__entry.html">dns_cache_entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7c64da3e6d42da998ed877c18025afa0">resolve_hostname</a> (const std::string &amp;hostname, const std::string &amp;port)</td></tr>
 <tr class="memdesc:a7c64da3e6d42da998ed877c18025afa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a hostname to an addrinfo.  <a href="namespacedpp.html#a7c64da3e6d42da998ed877c18025afa0">More...</a><br /></td></tr>
 <tr class="separator:a7c64da3e6d42da998ed877c18025afa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5546e9406901147259e107ce24b5ff72"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfc">build_type</a> &gt; </td></tr>
+<tr class="memitem:a5546e9406901147259e107ce24b5ff72"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a5546e9406901147259e107ce24b5ff72">validate_configuration</a> ()</td></tr>
+<tr class="separator:a5546e9406901147259e107ce24b5ff72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177af60de5536cff95f417fce3d9487a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">from_json</a> (const nlohmann::json &amp;j, <a class="el" href="classdpp_1_1guild__member.html">guild_member</a> &amp;gm)</td></tr>
 <tr class="memdesc:a177af60de5536cff95f417fce3d9487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to deserialize a <a class="el" href="classdpp_1_1guild__member.html" title="Represents dpp::user membership upon a dpp::guild. This contains the user&#39;s nickname,...">guild_member</a> from json  <a href="namespacedpp.html#a177af60de5536cff95f417fce3d9487a">More...</a><br /></td></tr>
 <tr class="separator:a177af60de5536cff95f417fce3d9487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2265,12 +2272,12 @@ Variables</h2></td></tr>
 <tr class="memitem:af762f7c2f0c23de9fbba385e8f547d29"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29">FORMAT_VERSION</a> = 131</td></tr>
 <tr class="memdesc:af762f7c2f0c23de9fbba385e8f547d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current ETF format version in use.  <a href="namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29">More...</a><br /></td></tr>
 <tr class="separator:af762f7c2f0c23de9fbba385e8f547d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5545dbc7d5791902c0f940ad125b672"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae5545dbc7d5791902c0f940ad125b672">is_valid_config</a> = <a class="el" href="namespacedpp.html#a5546e9406901147259e107ce24b5ff72">validate_configuration</a>&lt;<a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfca1c8a2a7c1511c01ee5158ec2ed99b749">build_type::universal</a>&gt;()</td></tr>
+<tr class="separator:ae5545dbc7d5791902c0f940ad125b672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c3e59edb221a7d235cc9fda57a7d34"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a03c3e59edb221a7d235cc9fda57a7d34">http_version</a></td></tr>
 <tr class="separator:a03c3e59edb221a7d235cc9fda57a7d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a243e725d7b20f89395b3cce1215421ea"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a243e725d7b20f89395b3cce1215421ea">DISCORD_HOST</a> = &quot;https://discord.com&quot;</td></tr>
 <tr class="separator:a243e725d7b20f89395b3cce1215421ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefb3da6503cb501b9d2a0376663dbc6e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdpp_1_1version__checker.html">version_checker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aefb3da6503cb501b9d2a0376663dbc6e">dpp_vc</a></td></tr>
-<tr class="separator:aefb3da6503cb501b9d2a0376663dbc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The main namespace for D++ functions. classes and types. </p>
@@ -3651,6 +3658,38 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05" name="a6c4401c19cd7e8b05ba2c066f1fdddb6ad17b8d9b0d990b569290be887484fc05"></a>amod_type_keyword_preset&#160;</td><td class="fielddoc"><p >Check if content contains words from discord pre-defined wordsets (max 1 of this type per guild) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7" name="a6c4401c19cd7e8b05ba2c066f1fdddb6a731ef6151c387a4310d83b39ad34eea7"></a>amod_type_mention_spam&#160;</td><td class="fielddoc"><p >Check if content contains more mentions than allowed (max 1 of this type per guild) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a82f764e7486a06178101b0db23ddadfc" name="a82f764e7486a06178101b0db23ddadfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82f764e7486a06178101b0db23ddadfc">&#9670;&nbsp;</a></span>build_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfc">dpp::build_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Represents a build configuration. On some platforms (e.g. Windows) release isn't compatible with debug, so we use this enum to detect it. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a82f764e7486a06178101b0db23ddadfca1c8a2a7c1511c01ee5158ec2ed99b749" name="a82f764e7486a06178101b0db23ddadfca1c8a2a7c1511c01ee5158ec2ed99b749"></a>universal&#160;</td><td class="fielddoc"><p >Universal build, works with both debug and release. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a82f764e7486a06178101b0db23ddadfcaad42f6697b035b7580e4fef93be20b4d" name="a82f764e7486a06178101b0db23ddadfcaad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"><p >Debug build. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a82f764e7486a06178101b0db23ddadfca123fead50246387983ee340507115ef4" name="a82f764e7486a06178101b0db23ddadfca123fead50246387983ee340507115ef4"></a>release&#160;</td><td class="fielddoc"><p >Release build. </p>
 </td></tr>
 </table>
 
@@ -9326,6 +9365,25 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a5546e9406901147259e107ce24b5ff72" name="a5546e9406901147259e107ce24b5ff72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5546e9406901147259e107ce24b5ff72">&#9670;&nbsp;</a></span>validate_configuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfc">build_type</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::validate_configuration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adec042312c305da2b49380300bde130b" name="adec042312c305da2b49380300bde130b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adec042312c305da2b49380300bde130b">&#9670;&nbsp;</a></span>when_any()</h2>
 
@@ -9413,28 +9471,6 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="aefb3da6503cb501b9d2a0376663dbc6e" name="aefb3da6503cb501b9d2a0376663dbc6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefb3da6503cb501b9d2a0376663dbc6e">&#9670;&nbsp;</a></span>dpp_vc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structdpp_1_1version__checker.html">version_checker</a> dpp::dpp_vc</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af762f7c2f0c23de9fbba385e8f547d29" name="af762f7c2f0c23de9fbba385e8f547d29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af762f7c2f0c23de9fbba385e8f547d29">&#9670;&nbsp;</a></span>FORMAT_VERSION</h2>
 
@@ -9476,6 +9512,30 @@ template&lt;typename... Args&gt; </div>
 <div class="line">                                                + <a class="code hl_function" href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">to_hex</a>(DPP_VERSION_PATCH, <span class="keyword">false</span>) + <span class="stringliteral">&quot;)&quot;</span></div>
 <div class="ttc" id="anamespacedpp_html_a3c36c34216e24fa7c008164b669e5bd6"><div class="ttname"><a href="namespacedpp.html#a3c36c34216e24fa7c008164b669e5bd6">dpp::to_hex</a></div><div class="ttdeci">std::string to_hex(T i, bool leading_zeroes=true)</div><div class="ttdoc">Convert a numeric value to hex.</div><div class="ttdef"><b>Definition:</b> stringops.h:192</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ae5545dbc7d5791902c0f940ad125b672" name="ae5545dbc7d5791902c0f940ad125b672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5545dbc7d5791902c0f940ad125b672">&#9670;&nbsp;</a></span>is_valid_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool dpp::is_valid_config = <a class="el" href="namespacedpp.html#a5546e9406901147259e107ce24b5ff72">validate_configuration</a>&lt;<a class="el" href="namespacedpp.html#a82f764e7486a06178101b0db23ddadfca1c8a2a7c1511c01ee5158ec2ed99b749">build_type::universal</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Version checking, making sure the program is in a configuration compatible with DPP's.</p>
+<p >Do NOT make these variables constexpr. We want them to initialize at runtime so the function can be pulled from the shared library object. </p>
+
 </div>
 </div>
 <a id="af9ada17b1b7470c57690031929bb7cff" name="af9ada17b1b7470c57690031929bb7cff"></a>

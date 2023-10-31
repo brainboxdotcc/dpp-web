@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['default_5fforum_5fsort_5forder_5ft_0',['default_forum_sort_order_t',['../namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06',1,'dpp']]],
-  ['default_5fmessage_5fnotification_5ft_1',['default_message_notification_t',['../namespacedpp.html#a3be39a31818d9499750c3efd43281d13',1,'dpp']]]
+  ['cache_5fpolicy_5fsetting_5ft_0',['cache_policy_setting_t',['../namespacedpp.html#ace5c63d91b72c5bae7d8cf9d8f531e52',1,'dpp']]],
+  ['channel_5fflags_1',['channel_flags',['../namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9',1,'dpp']]],
+  ['channel_5ftype_2',['channel_type',['../namespacedpp.html#a732e832861149a278f27ea7840b8e4ca',1,'dpp']]],
+  ['command_5foption_5ftype_3',['command_option_type',['../namespacedpp.html#abc401d86119c6443bf72d736857c1a58',1,'dpp']]],
+  ['command_5fpermission_5ftype_4',['command_permission_type',['../namespacedpp.html#ac66e44bd22afee53242581010ddd3728',1,'dpp']]],
+  ['component_5fdefault_5fvalue_5ftype_5',['component_default_value_type',['../namespacedpp.html#a33007c1e6a21d250b7682025ebce9cdd',1,'dpp']]],
+  ['component_5fstyle_6',['component_style',['../namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5',1,'dpp']]],
+  ['component_5ftype_7',['component_type',['../namespacedpp.html#afce43206033521b990e3a72bb87481b7',1,'dpp']]]
 ];
