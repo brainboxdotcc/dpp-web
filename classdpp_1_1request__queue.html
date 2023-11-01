@@ -160,7 +160,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a28bdbc2d87929deda263ce8bfc0c1231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outbound queue thread Note that although there are many 'in queues', which handle the HTTP requests, there is only ever one 'out queue' which dispatches the results to the caller. This is to simplify thread management in bots that use the library, as less mutexing and thread safety boilerplate is required.  <a href="classdpp_1_1request__queue.html#a28bdbc2d87929deda263ce8bfc0c1231">More...</a><br /></td></tr>
 <tr class="separator:a28bdbc2d87929deda263ce8bfc0c1231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e4ca349f25239201a985adb1db64353"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a4e4ca349f25239201a985adb1db64353">out_ready</a></td></tr>
-<tr class="memdesc:a4e4ca349f25239201a985adb1db64353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outbound queue condition, signalled when there are requests completed to call callbacks for.  <a href="classdpp_1_1request__queue.html#a4e4ca349f25239201a985adb1db64353">More...</a><br /></td></tr>
+<tr class="memdesc:a4e4ca349f25239201a985adb1db64353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outbound queue condition. Signalled when there are requests completed to call callbacks for.  <a href="classdpp_1_1request__queue.html#a4e4ca349f25239201a985adb1db64353">More...</a><br /></td></tr>
 <tr class="separator:a4e4ca349f25239201a985adb1db64353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade3ecfd45592dfcea06e6e9de9b70583"><td class="memItemLeft" align="right" valign="top">std::queue&lt; std::pair&lt; <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> *, <a class="el" href="classdpp_1_1http__request.html">http_request</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#ade3ecfd45592dfcea06e6e9de9b70583">responses_out</a></td></tr>
 <tr class="memdesc:ade3ecfd45592dfcea06e6e9de9b70583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completed requests queue.  <a href="classdpp_1_1request__queue.html#ade3ecfd45592dfcea06e6e9de9b70583">More...</a><br /></td></tr>
@@ -178,7 +178,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a72a95ae8742f8d76d69ffbf63993b383"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if globally rate limited - makes the entire request thread wait.  <a href="classdpp_1_1request__queue.html#a72a95ae8742f8d76d69ffbf63993b383">More...</a><br /></td></tr>
 <tr class="separator:a72a95ae8742f8d76d69ffbf63993b383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4570a2b18fe55011495f956f807db8ef"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a4570a2b18fe55011495f956f807db8ef">globally_limited_for</a></td></tr>
-<tr class="memdesc:a4570a2b18fe55011495f956f807db8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many seconds we are globally rate limited for, if globally_ratelimited is true.  <a href="classdpp_1_1request__queue.html#a4570a2b18fe55011495f956f807db8ef">More...</a><br /></td></tr>
+<tr class="memdesc:a4570a2b18fe55011495f956f807db8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many seconds we are globally rate limited for.  <a href="classdpp_1_1request__queue.html#a4570a2b18fe55011495f956f807db8ef">More...</a><br /></td></tr>
 <tr class="separator:a4570a2b18fe55011495f956f807db8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55eefe311c71c787c779eb035aa9daea"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a55eefe311c71c787c779eb035aa9daea">in_thread_pool_size</a></td></tr>
 <tr class="memdesc:a55eefe311c71c787c779eb035aa9daea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of request threads in the thread pool.  <a href="classdpp_1_1request__queue.html#a55eefe311c71c787c779eb035aa9daea">More...</a><br /></td></tr>
@@ -446,7 +446,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>How many seconds we are globally rate limited for, if globally_ratelimited is true. </p>
+<p>How many seconds we are globally rate limited for. </p>
+<dl class="section note"><dt>Note</dt><dd>Only if globally_ratelimited is true. </dd></dl>
 
 </div>
 </div>
@@ -542,7 +543,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Outbound queue condition, signalled when there are requests completed to call callbacks for. </p>
+<p>Outbound queue condition. Signalled when there are requests completed to call callbacks for. </p>
 
 </div>
 </div>
