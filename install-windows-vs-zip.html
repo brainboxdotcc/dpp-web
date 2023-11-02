@@ -102,10 +102,10 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >To add D++ to a Visual Studio project, using <b>Visual Studio 2019</b> or <b>Visual Studio 2022</b>, follow the steps below. The steps below assume an empty project, if you are adding to an existing project simply skip steps 1 through 4, and step 13.</p>
-<dl class="section note"><dt>Note</dt><dd>It is possible to skip this entire tutorial, and obtain a <a href="https://github.com/brainboxdotcc/windows-bot-template/">pre-made visual studio template containing the latest D++ build (for 32 and 64 bit, release and debug profiles) by clicking here</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It is possible to skip this entire tutorial, and obtain a <a href="https://github.com/brainboxdotcc/windows-bot-template/">pre-made Visual Studio template containing the latest D++ build (for 32 and 64 bit, release and debug profiles) by clicking here</a>.</dd></dl>
 <ol type="1">
 <li>Make sure you have Visual Studio 2019 or 2022. Community, Professional or Enterprise work fine. These instructions are not for Visual Studio Code. You can <a href="https://visualstudio.microsoft.com/downloads/">download the correct version here</a>. Note that older versions of Visual Studio will not work as they do not support enough of the C++17 standard.</li>
-<li>Start visual studio and choose to create a new project <div class="image">
+<li>Start Visual Studio and choose to create a new project <div class="image">
 <img src="zip_vsproj_1.png" alt=""/>
 </div>
 </li>
@@ -113,15 +113,15 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 <img src="zip_vsproj_2.png" alt=""/>
 </div>
 </li>
-<li>Name your bot project. In this example i just chose the name 'MyBot'. You can have any name you like here. <div class="image">
+<li>Name your bot project. In this example, we'll use the name 'MyBot'. You can have any name you like here. <div class="image">
 <img src="zip_vsproj_3.png" alt=""/>
 </div>
 </li>
-<li>Open the zip file you downloaded which contains the D++ dlls, include files and lib file. Drag and drop this to your local machine and make note of where you placed it. This location will be important in later steps. <div class="image">
+<li>Open the zip file you downloaded which contains the D++ DLLs, include files, and lib file. Drag and drop this to your local machine and make note of where you placed it. This location will be important in later steps. <div class="image">
 <img src="zip_vsproj_4.png" alt=""/>
 </div>
 </li>
-<li>Back inside visual studio, right click on the project (not solution!) in the tree in your visual studio window. choose 'Properties'. <div class="image">
+<li>Back inside Visual Studio, right click on the project (not solution!) in the tree in your Visual Studio window. choose 'Properties'. <div class="image">
 <img src="zip_vsproj_5.png" alt=""/>
 </div>
 </li>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 <img src="zip_vsproj_7.png" alt=""/>
 </div>
 </li>
-<li>Going back to the previous window, now edit the library paths. Again click 'edit' when prompted to edit the library paths section. Add the path to the library folder you extracted to your machine, which we took note of earlier. Note that once more it is important to add the dpp-9.0 folder within it, not any other folder, to this list. Also be aware this is a <b>different folder</b> than the one you just added for includes! <div class="image">
+<li>Going back to the previous window, now edit the library paths. Again click 'edit' when prompted to edit the library paths section. Add the path to the library folder you extracted to your machine, which we took note of earlier. Note that once more it is important to add the dpp-10.0 folder within it, not any other folder, to this list. Also be aware this is a <b>different folder</b> than the one you just added for includes! <div class="image">
 <img src="zip_vsproj_8.png" alt=""/>
 </div>
 </li>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 <img src="zip_vsproj_9.png" alt=""/>
 </div>
 </li>
-<li>Go to the general section in the same window now, and look for the drop down list labelled "C++ Language Standard". Make sure the selected option is <b>C++17 Standard (/std:c++17)</b> <div class="image">
+<li>Go to the general section in the same window now, and look for the drop down list labelled "C++ Language Standard". Make sure the selected option is <b>C++17 Standard (/std:c++17)</b> or later. <div class="image">
 <img src="zip_vsproj_10.png" alt=""/>
 </div>
 </li>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 <img src="zip_vsproj_11.png" alt=""/>
 </div>
 </li>
-<li>Now you can paste some code into the editor, completely replacing the 'hello world' application that visual studio made for you. The example code here is the basic bot from the first example on this site. You should at this point also double check that the architecture you have selected (in this case x86) matches the version of the dll/lib files you downloaded from the website. This is <b>important</b> as if you mismatch them the compilation will just fail. <div class="image">
+<li>Now you can paste some code into the editor, completely replacing the 'hello world' application that Visual Studio made for you. The example code here is the basic bot from the first example on this site. You should at this point also double check that the architecture you have selected (in this case x86) matches the version of the dll/lib files you downloaded from the website. This is <b>important</b> as if you mismatch them the compilation will just fail. <div class="image">
 <img src="zip_vsproj_12.png" alt=""/>
 </div>
 </li>
@@ -162,10 +162,10 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 </div>
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md133"></a>
+<h2><a class="anchor" id="autotoc_md134"></a>
 Troubleshooting</h2>
 <ul>
-<li>If you get an error that a dll is missing (e.g. <code>dpp.dll</code> or <code>opus.dll</code>) when starting your bot, then simply copy all dlls from the <b>bin</b> directory of where you extracted the DPP zip file to, into the same directory where your bot's executable is. You only need to do this once. There should be several of these dll files: <code>dpp.dll</code>, <code>zlib.dll</code>, <code>openssl.dll</code> and <code>libcrypto.dll</code> (or similarly named SSL related files), <code>libsodium.dll</code> and <code>opus.dll</code>.</li>
+<li>If you get an error that a DLL is missing (e.g. <code>dpp.dll</code> or <code>opus.dll</code>) when starting your bot, then simply copy all DLLs from the <b>bin</b> directory of where you extracted the D++ zip file to, into the same directory where your bot's executable is. You only need to do this once. There should be several of these DLL files: <code>dpp.dll</code>, <code>zlib.dll</code>, <code>openssl.dll</code> and <code>libcrypto.dll</code> (or similarly named SSL related files), <code>libsodium.dll</code> and <code>opus.dll</code>.</li>
 <li>Please note that if you change the architecture (step 13) you must reconfigure all of steps 7 through 12 again as these configurations are specific to each architecture. This is to allow for different sets of precompiled libs, e.g. for <code>x86</code>, <code>x64</code>, etc.</li>
 <li>You should run your bot from a command prompt. If you do not, and it exits, you will not be able to see any output as the window will immediately close.</li>
 <li>If you need to update the <code>opus.dll</code> or <code>zlib.dll</code> (or any other prebuilt dll) these can be obtained by requesting them to be installed via <code>vcpkg</code> then copying the dlls, libraries and headers from the vcpkg <code>install</code> folder.</li>

@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="lambdas-and-locals" kind="page">
     <compoundname>lambdas-and-locals</compoundname>
-    <title>Ownership of local variables and safely transferring into a lambda</title>
+    <title>Ownership of Local Variables and Safely Transferring into a Lambda</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -26,7 +26,7 @@
 </listitem><listitem><para>D++ inserts your request to send a message into its queue, in another thread. The inner lambda, where you might later set <computeroutput>myvar = 42</computeroutput> is safely copied into the queue for later calling.</para>
 </listitem><listitem><para>The tablecloth is whipped away... in other words, <computeroutput>bot.on_message_create</computeroutput> ends, and all local variables including <computeroutput>myvar</computeroutput> become invalid</para>
 </listitem><listitem><para>At a later time (usually 80ms through to anything up to 4 seconds depending on rate limits!) the message is sent, and your inner lambda which was saved at the earlier step is called.</para>
-</listitem><listitem><para>Your inner lambda attempts to set <computeroutput>myvar</computeroutput> to 42... but <computeroutput>myvar</computeroutput> no longer exists, as the outer lambda has been destroyed....</para>
+</listitem><listitem><para>Your inner lambda attempts to set <computeroutput>myvar</computeroutput> to 42... but <computeroutput>myvar</computeroutput> no longer exists, as the outer lambda has been destroyed...</para>
 </listitem><listitem><para>The table wobbles... the cutlery shakes... and...</para>
 </listitem><listitem><para>Best case scenario: you access invalid RAM no longer owned by your program by trying to write to <computeroutput>myvar</computeroutput>, and <ulink url="https://www.youtube.com/watch?v=sm8qb2kP-fQ">your bot outright crashes horribly</ulink>!</para>
 </listitem><listitem><para>Worse case scenario: you silently corrupt ram and end up spending days trying to track down a bug that subtly breaks your bot...</para>
@@ -42,7 +42,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;here\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal">});</highlight></codeline>
 </programlisting></para>
-<para>Note, however that when you set <computeroutput>myvar</computeroutput> within the inner lambda, this does <bold>not affect</bold> the value of the var outside it. Lambdas should be considered self-contained silos, and as they execute in other threads should not be relied upon to set anything that exists <bold>outside of that lambda</bold>.</para>
+<para>Note, however that when you set <computeroutput>myvar</computeroutput> within the inner lambda, this does <bold>not affect</bold> the value of <computeroutput>myvar</computeroutput> outside it. Lambdas should be considered self-contained silos, and as they execute in other threads should not be relied upon to set anything that exists <bold>outside of that lambda</bold>.</para>
 <para><simplesect kind="warning"><para>Always avoid just using <computeroutput>[&amp;]</computeroutput> in a lambda to access all in the scope above. It is unlikely that half of this scope will still even be valid by the time you get a look at it!</para>
 </simplesect>
 Similarly, and important to note, your program <bold>will not wait for bot.message_create to send its message and call its lambda</bold> before continuing on to print <computeroutput>here</computeroutput>. It will instantly insert the request into its queue and bail straight back out (see the steps above) and immediately print the text.</para>

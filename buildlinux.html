@@ -102,27 +102,29 @@ $(document).ready(function(){initNavTree('buildlinux.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section note"><dt>Note</dt><dd>You might not need to build a copy of the library for Linux - precompiled deb files for 64 bit and 32 bit Debian and Ubuntu are provided in the GitHub version releases. Unless you are on a different Linux distribution which does not support the installation of deb files, or wish to submit fixes and enhancements to the library itself you should have an easier time installing the precompiled version instead.</dd></dl>
-<h2><a class="anchor" id="autotoc_md77"></a>
-1. Build Source Code</h2>
-<pre class="fragment">cmake -B ./build
-cmake --build ./build -j8
-</pre><p> Replace the number after <code>-j</code> with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
 <h2><a class="anchor" id="autotoc_md78"></a>
+1. Build Source Code</h2>
+<div class="fragment"><div class="line">cmake -B ./build</div>
+<div class="line">cmake --build ./build -j8</div>
+</div><!-- fragment --><p >Replace the number after <code>-j</code> with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
+<h2><a class="anchor" id="autotoc_md79"></a>
 2. Install to /usr/local/include and /usr/local/lib</h2>
-<pre class="fragment">cd build; sudo make install
-</pre> <h2><a class="anchor" id="autotoc_md79"></a>
-3. Installation to a different directory</h2>
-<p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>: </p><pre class="fragment">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install
-</pre><p> Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
-<h2><a class="anchor" id="autotoc_md80"></a>
-4. Using the library</h2>
-<p >Once installed to the <code>/usr/local</code> directory, you can make use of the library in standalone programs simply by including it and linking to it: </p><pre class="fragment">g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp
-</pre><p> The important flags in this command-line are:</p>
+<div class="fragment"><div class="line">cd build</div>
+<div class="line">sudo make install</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md80"></a>
+3. Installation to a Different Directory</h2>
+<p >If you want to install the library, its dependencies, and header files to a different directory, specify this directory when running <code>cmake</code>:</p>
+<div class="fragment"><div class="line">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</div>
+</div><!-- fragment --><p >Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
+<h2><a class="anchor" id="autotoc_md81"></a>
+4. Using the Library</h2>
+<p >Once installed to the <code>/usr/local</code> directory, you can make use of the library in standalone programs simply by including it and linking to it:</p>
+<div class="fragment"><div class="line">g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp</div>
+</div><!-- fragment --><p >The important flags in this command-line are:</p>
 <ul>
-<li><code>-std=c++17</code> - Required to compile the headers<ul>
+<li><code>-std=c++17</code> - Required to compile the headers</li>
+<li><code>-ldpp</code> - Link to libdpp.so</li>
 <li><code>mydppbot.cpp</code> - Your source code</li>
-</ul>
-</li>
 <li><code>dppbot</code> - The name of the executable to make</li>
 </ul>
 <p ><dl class="section note"><dt>Note</dt><dd>Compiling your bot with a raw <code>g++</code> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <a class="el" href="buildcmake.html">Building a Discord Bot Using CMake (UNIX)</a> or if you have not yet created a token for your bot, <a class="el" href="creating-a-bot-application.html">Creating a Bot Token</a> - If you are having trouble setting up CMake, you can try <a href="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</a>.</dd></dl>
@@ -133,7 +135,7 @@ cmake --build ./build -j8
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
-		<li class="navelem"><a class="el" href="installing.html">Installing D++</a></li><li class="navelem"><a class="el" href="install-from-source.html">Building D++ From Source</a></li>
+		<li class="navelem"><a class="el" href="installing.html">Installing D++</a></li><li class="navelem"><a class="el" href="install-from-source.html">Building D++ from Source</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

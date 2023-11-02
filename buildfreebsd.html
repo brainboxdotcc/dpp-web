@@ -102,11 +102,11 @@ $(document).ready(function(){initNavTree('buildfreebsd.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section note"><dt>Note</dt><dd>This page assumes you are the root user. If you are not, start the package install commands with <code>sudo</code>, along with <code>make install</code>. You will need <code>sudo</code> installed if you are not the root user.</dd></dl>
-<h2><a class="anchor" id="autotoc_md71"></a>
+<h2><a class="anchor" id="autotoc_md72"></a>
 1. Toolchain</h2>
 <p >Since the project uses <code>CMake</code>, you'll need to install it! If you don't have it, you can do the following:</p>
 <div class="fragment"><div class="line">pkg install cmake</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md72"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md73"></a>
 2. Install Voice Dependencies (Optional)</h2>
 <p >If you wish to use voice support, you'll need to install opus and libsodium:</p>
 <p >First, you need to install opus. </p><div class="fragment"><div class="line">cd /usr/ports/audio/opus</div>
@@ -114,21 +114,21 @@ $(document).ready(function(){initNavTree('buildfreebsd.html',''); initResizable(
 </div><!-- fragment --><p >Then, you need to install libsodium.</p>
 <div class="fragment"><div class="line">cd /usr/ports/security/libsodium</div>
 <div class="line">make &amp;&amp; make install</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md73"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md74"></a>
 3. Build Source Code</h2>
 <div class="fragment"><div class="line">cmake -B ./build</div>
 <div class="line">cmake --build ./build -j8</div>
 </div><!-- fragment --><p >Replace the number after <code>-j</code> with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
-<h2><a class="anchor" id="autotoc_md74"></a>
+<h2><a class="anchor" id="autotoc_md75"></a>
 4. Install Globally</h2>
 <div class="fragment"><div class="line">cd build</div>
 <div class="line">make install</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md75"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md76"></a>
 5. Installation to a Different Directory (Optional)</h2>
 <p >If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <code>cmake</code>:</p>
 <div class="fragment"><div class="line">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</div>
 </div><!-- fragment --><p >Then once the build is complete, run <code>sudo make install</code> to install to the location you specified.</p>
-<h2><a class="anchor" id="autotoc_md76"></a>
+<h2><a class="anchor" id="autotoc_md77"></a>
 6. Using the Library</h2>
 <p >Once installed, you can make use of the library in standalone programs simply by including it and linking to it:</p>
 <div class="fragment"><div class="line">clang++ -std=c++17 -L/usr/local/lib -I/usr/local/include -ldpp bot.cpp -o dppbot</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('buildfreebsd.html',''); initResizable(
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
-		<li class="navelem"><a class="el" href="installing.html">Installing D++</a></li><li class="navelem"><a class="el" href="install-from-source.html">Building D++ From Source</a></li>
+		<li class="navelem"><a class="el" href="installing.html">Installing D++</a></li><li class="navelem"><a class="el" href="install-from-source.html">Building D++ from Source</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

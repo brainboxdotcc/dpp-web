@@ -8,7 +8,7 @@
     <detaileddescription>
 <sect2 id="frequently-asked-questions_1autotoc_md0">
 <title>Is this library in production use?</title>
-<para>This library powers the bot <ulink url="https://triviabot.co.uk">TriviaBot</ulink> which has over <bold>151,000 servers</bold>, and <ulink url="https://sporks.gg">Sporks</ulink> which has over <bold>3,500 severs</bold>. The library&apos;s use in these bots shows that the library is production ready for bots of all sizes.</para>
+<para>This library powers the bot <ulink url="https://triviabot.co.uk">TriviaBot</ulink> which has over <bold>201,000 servers</bold>, and <ulink url="https://sporks.gg">Sporks</ulink> which has over <bold>3,500 servers</bold>. The library&apos;s use in these bots shows that the library is production ready for bots of all sizes.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md1">
 <title>How much RAM does this library use?</title>
@@ -17,7 +17,7 @@
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md2">
 <title>How do I use this library in Windows?</title>
-<para>The easiest way is to use our <ulink url="https://github.com/brainboxdotcc/windows-bot-template">template project</ulink>. If you are unable to do this, download the precompiled latest release from our GitHub releases, and take the dlls, <computeroutput>.lib</computeroutput> file, and header files (<computeroutput>bin</computeroutput>, <computeroutput>lib</computeroutput> and <computeroutput>include</computeroutput> directories), placing them in an easily accessible place on your computer. Go into Visual Studio project settings in a new project, and point the project directories (notably the library directories and include directories) at the correct locations. Add the <computeroutput>include</computeroutput> folder you extracted to your include directories, and add <computeroutput>dpp.lib</computeroutput> to your library directories. Ensure the project is set to C++17 standard in the settings. You should then be able to compile example programs within that project. When you run the program you have compiled you must ensure that all the dll files from the <computeroutput>bin</computeroutput> directory exist in the same directory as your executable.</para>
+<para>The easiest way is to use our <ulink url="https://github.com/brainboxdotcc/windows-bot-template">template project</ulink>. If you are unable to do this, download the precompiled latest release from our GitHub releases, and take the DLLs, <computeroutput>.lib</computeroutput> file, and header files (<computeroutput>bin</computeroutput>, <computeroutput>lib</computeroutput> and <computeroutput>include</computeroutput> directories), placing them in a easily accessible place on your computer. Go into Visual Studio project settings in a new project, and point the project directories (notably the library directories and and include directories) at the correct locations. Add the <computeroutput>include</computeroutput> folder you extracted to your include directories, and add <computeroutput>dpp.lib</computeroutput> to your library directories. Ensure the project is set to C++17 standard or later in the settings. You should then be able to compile example programs within that project. When you run the program you have compiled you must ensure that all the dll files from the <computeroutput>bin</computeroutput> directory exist in the same directory as your executable.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md3">
 <title>Does this library support Visual Studio 2022?</title>
@@ -39,12 +39,12 @@
 <title>What&apos;s the best way to learn C++?</title>
 <para>A simple search can find some learning tools, however not all are good. Here is a list of some (good) learning resources:</para>
 <para><itemizedlist>
-<listitem><para><ulink url="https://www.codecademy.com/learn/c-plus-plus">CodeAcademy</ulink></para>
+<listitem><para><ulink url="https://www.codecademy.com/learn/c-plus-plus">Codecademy</ulink></para>
 </listitem><listitem><para><ulink url="https://www.learncpp.com/">Learn CPP</ulink></para>
 </listitem><listitem><para><ulink url="https://www.learn-cpp.org/">Learn CPP (Very Basic)</ulink></para>
 </listitem></itemizedlist>
 </para>
-<para>If you don&apos;t understand something then feel free to ask in the <ulink url="https://discord.gg/dpp">Discord server</ulink> ...*we don&apos;t bite!*</para>
+<para>If you don&apos;t understand something then feel free to ask in the <ulink url="https://discord.gg/dpp">Discord server</ulink>... <emphasis>we don&apos;t bite!</emphasis></para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md8">
 <title>Do I need to be an expert in C++ to use this library?</title>
@@ -64,11 +64,11 @@
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md12">
 <title>Does this library support buttons/drop down menus (message components)?</title>
-<para>Yes! This library supports button message components, e.g. interactive buttons on the bottom of messages. For more information please see our <ref refid="components" kindref="compound">Using component interactions</ref> and <ref refid="components2" kindref="compound">Using component interactions (advanced)</ref> examples.</para>
+<para>Yes! This library supports button message components, e.g. interactive buttons on the bottom of messages. For more information please see our <ref refid="components" kindref="compound">Using Button Components</ref> and <ref refid="components2" kindref="compound">Advanced Button Components</ref> examples.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md13">
 <title>Is the library asynchronous?</title>
-<para>All functions within D++ are multi-threaded. You should still avoid doing long operations within event handlers or within callbacks, to prevent starvation of the threads managing each shard. Various blocking operations such as running files and making HTTP requests are offered as library functions (for example <ref refid="namespacedpp_1_1utility_1ac7d516c03d572fe65d01c4ec5e92c6f0" kindref="member">dpp::utility::exec</ref>)</para>
+<para>All functions within D++ are multi-threaded. You should still avoid doing long operations within event handlers or within callbacks, to prevent starvation of the threads managing each shard. Various blocking operations such as running files and making HTTP requests are offered as library functions (for example <ref refid="namespacedpp_1_1utility_1ac7d516c03d572fe65d01c4ec5e92c6f0" kindref="member">dpp::utility::exec</ref>).</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md14">
 <title>Does this library support voice?</title>
@@ -103,8 +103,8 @@
 <para>The libsodium package requires pkg-config, but does not check for it when installed. Install it as root, e.g. <computeroutput>sudo apt install pkg-config</computeroutput>. Rerun cmake, and rebuild the library.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md22">
-<title>When I try to instantiate a dpp::cluster in windows, a std::bad_alloc exception is thrown</title>
-<para>If this happens, ensure you are using the correct precompiled build of the library. Our precompiled binaries are built in two forms, <bold>release mode</bold> and <bold>debug mode</bold> for Visual Studio 2019/2022. These two versions of the library are not cross-compatible due to differences in the debug and release libstdc++. You should not need to build your own copy, but please see the section about <ref refid="buildwindows" kindref="compound">Building on Windows</ref> for more information on how to build your own copy, if needed.</para>
+<title>When I try to instantiate a dpp::cluster in windows, I get &quot;D++ Debug/Release mismatch&quot;</title>
+<para>If this happens, ensure you are using the correct precompiled build of the library. Our precompiled binaries are built in two forms, <bold>release mode</bold> and <bold>debug mode</bold> for Visual Studio 2019/2022. These two versions of the library are not cross-compatible due to differences in the debug and release STL (Microsoft standard library implementation). You should not need to build your own copy, but please see the section about <ref refid="buildwindows" kindref="compound">Building on Windows</ref> for more information on how to build your own copy, if needed.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md23">
 <title>Does this library build/run on Raspberry Pi?</title>
@@ -146,7 +146,7 @@
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md26">
 <title>Can I run a D++ bot in Replit?</title>
-<para>Yes! You can indeed run your bot in a replit.com container. <ulink url="https://replit.com/@braindigitalis/dpp-demo-bot">You can find a ready to go demo repl here</ulink>. We also have a <ref refid="building-a-cpp-discord-bot-in-repl" kindref="compound">guide showing how to do this</ref>.</para>
+<para>No. We used to support it (and still have our page about it <ref refid="building-a-cpp-discord-bot-in-repl" kindref="compound">which you can find here</ref>), however, Replit does not have up-to-date packages, meaning D++ can no longer run. We&apos;ve attempted to reach out to ask about this but we&apos;ve had no luck.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md27">
 <title>Why do the &quot;get&quot; functions like &quot;messages_get&quot; return void rather than what I&apos;m after?</title>
@@ -154,7 +154,11 @@
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md28">
 <title>Can I use a user token with this library (as opposed to a bot token)?</title>
-<para>No. This feature is not supported as it is against the Discord Terms Of Service, and therefore we have no plans to ever support it. You should not automate any user token. Some libraries used to support this, but it is a legacy feature of those libraries (where still available) dating back to before Discord offered an official public API. Please be aware that if Discord ever catch you automating a user token (or making a user client that uses a bot token) they can and do ban people for this. </para>
+<para>No. This feature is not supported as it is against the Discord Terms Of Service, and therefore we have no plans to ever support it. You should not automate any user token. Some libraries used to support this, but it is a legacy feature of those libraries (where still available) dating back to before Discord offered an official public API. Please be aware that if Discord ever catch you automating a user token (or making a user client that uses a bot token) they can and do ban people for this.</para>
+</sect2>
+<sect2 id="frequently-asked-questions_1autotoc_md29">
+<title>What are nightly builds?</title>
+<para>These are automatic builds that happen every night without any human supervision. They allow you to try the latest state of the library without having to build it yourself, but they come without any guarantees. </para>
 </sect2>
     </detaileddescription>
     <location file="docpages/01_frequently_asked_questions.md"/>

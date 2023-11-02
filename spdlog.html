@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('spdlog.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Integrating with spdlog </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >If you want to make your bot use spdlog, like aegis does, you can attach it to the on_log event. You can do this as follows:</p>
+<div class="textblock"><p >If you want to make your bot use spdlog, like aegis does, you can attach it to the <code>on_log</code> event. You can do this as follows:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;spdlog/spdlog.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;spdlog/async.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</span></div>
@@ -110,8 +110,7 @@ $(document).ready(function(){initNavTree('spdlog.html',''); initResizable(); });
 <div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;fmt/format.h&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> <span class="keyword">const</span> *argv[])</div>
-<div class="line">{</div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> <span class="keyword">const</span> *argv[]) {</div>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">const</span> std::string log_name = <span class="stringliteral">&quot;mybot.log&quot;</span>;</div>

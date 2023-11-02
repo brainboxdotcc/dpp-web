@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Clusters, Shards, and Guilds - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Clusters, Shards and Guilds - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Clusters, Shards, and Guilds - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library">
-<title>Clusters, Shards and Guilds - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Clusters, Shards, and Guilds - D++ - The lightweight C++ Discord API Library">
+<title>Clusters, Shards, and Guilds - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('clusters-shards-guilds.html',''); init
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Clusters, Shards and Guilds </div></div>
+  <div class="headertitle"><div class="title">Clusters, Shards, and Guilds </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >D++ takes a three-tiered highly scalable approach to bots, with three levels known as Clusters, Shards and Guilds as documented below.</p>
+<div class="textblock"><p >D++ takes a three-tiered highly scalable approach to bots, with three levels known as Clusters, Shards, and Guilds as documented below.</p>
 <div class="dotgraph">
 <iframe scrolling="no" frameborder="0" src="dot_inline_dotgraph_1.svg" width="1523" height="452"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<h2><a class="anchor" id="autotoc_md36"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 Clusters</h2>
 <p >A bot may be made of one or more clusters. Each cluster maintains a queue of commands waiting to be sent to Discord, a queue of replies from Discord for all commands executed, and zero or more <b>shards</b>. Usually, each process has one cluster, but the D++ library does not enforce this as a restriction. Small bots will require just one cluster. Clusters will split the required number of shards equally across themselves. There is no communication between clusters unless you add some yourself, they all remain independent without any central "controller" process. This ensures that there is no single point of failure in the design. Whenever you instantiate the library, you generally instantiate a cluster:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
@@ -115,7 +115,7 @@ Clusters</h2>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;Token goes here&quot;</span>);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:80</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md37"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md38"></a>
 Shards</h2>
 <p >A cluster contains zero or more shards. Each shard maintains a persistent connection to Discord via a websocket, which receives all events the bot is made aware of, e.g. messages, channel edits, etc. Requests to the API on the other hand go out to Discord as separate HTTP requests.</p>
 <p >Small bots will require only one shard and this is the default when you instantiate a cluster. The library will automatically determine and create the correct number of shards needed, if you do not configure it by hand. If you do want to specify a number of shards, you can specify this when creating a cluster:</p>
@@ -176,10 +176,10 @@ Shards</h2>
 <div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;Token goes here&quot;</span>, dpp::default_intents, total_shards, clusterid, maxclusters);</div>
 <div class="line">}</div>
 </div><!-- fragment --></dd></dl>
-<h3><a class="anchor" id="autotoc_md38"></a>
+<h3><a class="anchor" id="autotoc_md39"></a>
 Large Bot Sharding</h3>
 <p >Discord restricts how many shards you can connect to at any one time to one per five seconds, unless your bot is in at least 150,000 guilds. Once you reach 150,000 guilds, Discord allow your bot to connect to more guilds concurrently, and your number of shards must divide cleanly into this value. By default, at 150,000 guilds this concurrency value is 16 meaning D++ will attempt to connect 16 shards in parallel, then wait for all these to connect and then connect another 16, until all shards are connected. In practice, this means a large bot with many shards (read: hundreds!) will connect significantly faster after a full restart. <b>You do not need to manually configure large bot sharding and connection concurrency, the D++ library will handle this for you if you are able to use it</b>.</p>
-<h2><a class="anchor" id="autotoc_md39"></a>
+<h2><a class="anchor" id="autotoc_md40"></a>
 Guilds</h2>
 <p >Guilds are what servers are known as to the Discord API. There can be up to <b>2500</b> of these per shard. Once you reach 2500 guilds on your bot, Discord force your bot to shard, the D++ library will automatically create additional shards to accommodate if not explicitly configured with a larger number. Discord <em>does not restrict sharding</em> to bots on 2500 guilds or above. You can shard at any size of bot, although it would be a waste of resources to do so unless it is required. </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>

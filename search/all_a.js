@@ -19,7 +19,7 @@ var searchData=
   ['job_16',['job',['../structdpp_1_1job.html',1,'dpp']]],
   ['job_5fdummy_17',['job_dummy',['../structdpp_1_1job__dummy.html',1,'dpp']]],
   ['join_18',['join',['../structdpp_1_1activity__secrets.html#a09c5858de71722bf7c8cb43c68b1f23a',1,'dpp::activity_secrets']]],
-  ['join_20or_20switch_20to_20the_20voice_20channel_20of_20the_20user_20issuing_20a_20command_19',['Join or switch to the voice channel of the user issuing a command',['../joinvc.html',1,'music-and-audio']]],
+  ['join_20or_20switch_20to_20the_20voice_20channel_20of_20the_20user_20issuing_20a_20command_19',['Join or Switch to the Voice Channel of the User Issuing a Command',['../joinvc.html',1,'music-and-audio']]],
   ['joined_20',['joined',['../structdpp_1_1thread__member.html#a1b8e07233ef58b4a0b765b0e1e54e000',1,'dpp::thread_member']]],
   ['joined_5fat_21',['joined_at',['../classdpp_1_1guild__member.html#aae2dfc2f98671c98704db1fa4295b05f',1,'dpp::guild_member']]],
   ['joy_22',['joy',['../namespacedpp_1_1unicode__emoji.html#a3c4731ed5312c8a179b33e5bfb927703',1,'dpp::unicode_emoji']]],

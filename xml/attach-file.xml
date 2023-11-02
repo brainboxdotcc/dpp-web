@@ -2,14 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="attach-file" kind="page">
     <compoundname>attach-file</compoundname>
-    <title>Attaching a file to a message</title>
+    <title>Attaching a File to a Message</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Attached files must be locally stored.</para>
-<para>To attach a file to a message, you can upload a local image.</para>
-<para>D++ has this helper function to read a file: <ref refid="namespacedpp_1_1utility_1a4e85ceba20c4ed2bfda15d806890428b" kindref="member">dpp::utility::read_file</ref>.</para>
-<para>An example program:</para>
+<para>To attach a local file to an message, you can use <ref refid="namespacedpp_1_1utility_1a4e85ceba20c4ed2bfda15d806890428b" kindref="member">dpp::utility::read_file</ref>. It&apos;s a helper function from D++ that allows you to read the file&apos;s content and sent it to discord.</para>
+<para>An example of this:</para>
 <para><programlisting filename="attachments1.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
@@ -43,9 +41,9 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting></para>
-<para>Attachments via an url aren&apos;t possible. But there&apos;s a workaround for. You can download the file and then attach it to the message.</para>
-<para>To make requests, D++ also has a helper function: <ref refid="classdpp_1_1cluster_1aa4ead3406c471a64fa1fa578cc51cf2e" kindref="member">dpp::cluster::request</ref>.</para>
-<para>The following example program shows how to request a file and attach it to a message.</para>
+<para>Attachments via URL aren&apos;t possible. But there&apos;s a workaround for this! You can download the file and then attach it to the message.</para>
+<para>Amazingly, D++ also has a function for this! You can use <ref refid="classdpp_1_1cluster_1aa4ead3406c471a64fa1fa578cc51cf2e" kindref="member">dpp::cluster::request</ref> to make HTTP requests, allowing you to go ahead and pull the content from a URL.</para>
+<para>The following example program shows how to request a file and attach it to a message:</para>
 <para><programlisting filename="attachments2.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>

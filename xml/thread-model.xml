@@ -31,18 +31,18 @@ digraph &quot;Thread Model&quot; {
         &quot;Shard 1&quot; [style=filled, color=4]
         &quot;Shard 2&quot;
         &quot;Shard 3...&quot;
-        label = &quot;Shards (Each is a thread, one per 2500 discord guilds)&quot;;
+        label = &quot;Shards (Each is a thread, one per 2500 Discord guilds)&quot;;
     }
 
     subgraph cluster_1 {
         style=filled
         color=lightgrey;
         node [style=filled,color=4]
-            &quot;REST Requests&quot;
+        &quot;REST Requests&quot;
         &quot;Request In Queue 1&quot;
         &quot;Request In Queue 2&quot;
         &quot;Request In Queue 3...&quot;
-            &quot;Request Out Queue&quot;
+        &quot;Request Out Queue&quot;
         label = &quot;REST Requests (Each in queue, and the out queue, are threads)&quot;
     }
 
@@ -50,7 +50,7 @@ digraph &quot;Thread Model&quot; {
         style=filled
         color=lightgrey;
         node [style=filled,color=4]
-            &quot;Discord Events&quot; [style=filled,color=4]
+        &quot;Discord Events&quot; [style=filled,color=4]
         &quot;User Callback Functions&quot;
         label = &quot;Events and Callbacks&quot;
     }

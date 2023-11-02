@@ -129,7 +129,7 @@ var searchData=
   ['envelope_5fwith_5farrow_126',['envelope_with_arrow',['../namespacedpp_1_1unicode__emoji.html#a5f3ac163de5d3862303d255c942571ed',1,'dpp::unicode_emoji']]],
   ['ep_5fguild_5fonly_127',['ep_guild_only',['../namespacedpp.html#a6add40f37f2f043dede513edebaa67bda7a9a0ce0175498c5930244eaaf8cd959',1,'dpp']]],
   ['ephemeral_128',['ephemeral',['../structdpp_1_1attachment.html#a453d43c1a5bb073038cc2a0890cfdbec',1,'dpp::attachment']]],
-  ['ephemeral_20replies_20_28_27only_20you_20can_20see_20this_27_20replies_29_129',['Ephemeral replies (&apos;Only you can see this&apos; replies)',['../user-only-messages.html',1,'interactions-and-components']]],
+  ['ephemeral_20replies_20_28_27only_20you_20can_20see_20this_27_20replies_29_129',['Ephemeral Replies (&apos;Only You Can See This&apos; Replies)',['../user-only-messages.html',1,'interactions-and-components']]],
   ['error_130',['error',['../classdpp_1_1discord__client.html#a3898b3a8b7d9fbfdfa1efc18ce5aa3c3',1,'dpp::discord_client::error()'],['../classdpp_1_1websocket__client.html#abd1b3d59beb6a505e81e2bf3374e2532',1,'dpp::websocket_client::error()'],['../classdpp_1_1discord__voice__client.html#a769b1674cf88dc4f53d7609fc24b7961',1,'dpp::discord_voice_client::error()'],['../structdpp_1_1http__request__completion__t.html#a6e8e54c80c5b439ddfd0ddb6f9e4039b',1,'dpp::http_request_completion_t::error()']]],
   ['error_5fdetail_131',['error_detail',['../structdpp_1_1error__detail.html',1,'dpp']]],
   ['error_5finfo_132',['error_info',['../structdpp_1_1error__info.html',1,'dpp']]],

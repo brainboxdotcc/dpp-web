@@ -123,7 +123,7 @@ var searchData=
   ['receipt_120',['receipt',['../namespacedpp_1_1unicode__emoji.html#a2054006a8d3e9a30d4833db8527add72',1,'dpp::unicode_emoji']]],
   ['recipients_121',['recipients',['../classdpp_1_1channel.html#a0d66636187a0382693d69c2ac2827e89',1,'dpp::channel']]],
   ['reconnects_122',['reconnects',['../classdpp_1_1discord__client.html#af002768a9defc98dc3fcf777a95d8bcf',1,'dpp::discord_client']]],
-  ['record_20yourself_20in_20a_20vc_123',['Record yourself in a VC',['../record-user.html',1,'music-and-audio']]],
+  ['record_20yourself_20in_20a_20vc_123',['Record Yourself in a VC',['../record-user.html',1,'music-and-audio']]],
   ['record_5fbutton_124',['record_button',['../namespacedpp_1_1unicode__emoji.html#a9658e4c44deca77093ea5692ca1db287',1,'dpp::unicode_emoji']]],
   ['recycle_125',['recycle',['../namespacedpp_1_1unicode__emoji.html#a00415a84ed6fe30db1ebf99cf7bc0d1e',1,'dpp::unicode_emoji']]],
   ['red_126',['red',['../namespacedpp_1_1colors.html#afc7eaf251deb378cab526fee30720aaf',1,'dpp::colors']]],

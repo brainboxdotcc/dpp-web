@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Ownership of local variables and safely transferring into a lambda - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Ownership of Local Variables and Safely Transferring into a Lambda - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Ownership of local variables and safely transferring into a lambda - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Ownership of Local Variables and Safely Transferring into a Lambda - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Ownership of local variables and safely transferring into a lambda - D++ - The lightweight C++ Discord API Library">
-<title>Ownership of local variables and safely transferring into a lambda - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Ownership of Local Variables and Safely Transferring into a Lambda - D++ - The lightweight C++ Discord API Library">
+<title>Ownership of Local Variables and Safely Transferring into a Lambda - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('lambdas-and-locals.html',''); initResi
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Ownership of local variables and safely transferring into a lambda </div></div>
+  <div class="headertitle"><div class="title">Ownership of Local Variables and Safely Transferring into a Lambda </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >If you are reading this page, you have likely been sent here by someone helping you diagnose why your bot is crashing or why seemingly invalid values are being passed into lambdas within your program that uses D++.</p>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('lambdas-and-locals.html',''); initResi
 <li>D++ inserts your request to send a message into its queue, in another thread. The inner lambda, where you might later set <code>myvar = 42</code> is safely copied into the queue for later calling.</li>
 <li>The tablecloth is whipped away... in other words, <code>bot.on_message_create</code> ends, and all local variables including <code>myvar</code> become invalid</li>
 <li>At a later time (usually 80ms through to anything up to 4 seconds depending on rate limits!) the message is sent, and your inner lambda which was saved at the earlier step is called.</li>
-<li>Your inner lambda attempts to set <code>myvar</code> to 42... but <code>myvar</code> no longer exists, as the outer lambda has been destroyed....</li>
+<li>Your inner lambda attempts to set <code>myvar</code> to 42... but <code>myvar</code> no longer exists, as the outer lambda has been destroyed...</li>
 <li>The table wobbles... the cutlery shakes... and...</li>
 <li>Best case scenario: you access invalid RAM no longer owned by your program by trying to write to <code>myvar</code>, and <a href="https://www.youtube.com/watch?v=sm8qb2kP-fQ">your bot outright crashes horribly</a>!</li>
 <li>Worse case scenario: you silently corrupt ram and end up spending days trying to track down a bug that subtly breaks your bot...</li>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('lambdas-and-locals.html',''); initResi
 <div class="line">    });</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;here\n&quot;</span>;</div>
 <div class="line">});</div>
-</div><!-- fragment --><p >Note, however that when you set <code>myvar</code> within the inner lambda, this does <b>not affect</b> the value of the var outside it. Lambdas should be considered self-contained silos, and as they execute in other threads should not be relied upon to set anything that exists <b>outside of that lambda</b>.</p>
+</div><!-- fragment --><p >Note, however that when you set <code>myvar</code> within the inner lambda, this does <b>not affect</b> the value of <code>myvar</code> outside it. Lambdas should be considered self-contained silos, and as they execute in other threads should not be relied upon to set anything that exists <b>outside of that lambda</b>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Always avoid just using <code>[&amp;]</code> in a lambda to access all in the scope above. It is unlikely that half of this scope will still even be valid by the time you get a look at it!</dd></dl>
 <p>Similarly, and important to note, your program <b>will not wait for bot.message_create to send its message and call its lambda</b> before continuing on to print <code>here</code>. It will instantly insert the request into its queue and bail straight back out (see the steps above) and immediately print the text.</p>
 <p >If you do want to get variables out of your lambda, create a class, or call a separate function, and pass what you need into that function from the lambda <b>by value</b> or alternatively, you can use <code>std::bind</code> to bind a lambda directly to an object's method instead (this is great for modular bots).</p>

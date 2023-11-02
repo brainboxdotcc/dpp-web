@@ -10,7 +10,7 @@
 digraph &quot;Example Directory&quot; {
     graph [ranksep=1];
     node [colorscheme=&quot;blues9&quot;, fontname=&quot;helvetica&quot;];
-    
+
     &quot;Your bot&quot; [style=filled, color=1, shape=rect]
     &quot;Discord&quot; [style=filled, color=1, shape=rect]
     
@@ -20,10 +20,10 @@ digraph &quot;Example Directory&quot; {
         node [style=filled, color=3, shape=rect]
         &quot;guild::connect_member_voice&quot;;
         &quot;discord_client::connect_voice&quot;;
-        
+
         &quot;guild::connect_member_voice&quot; -&gt; &quot;discord_client::connect_voice&quot;;
-        
-        label = &quot;This is the front-end of DPP.\n&apos;connect_voice&apos; will now queue a JSON message.&quot;;
+
+        label = &quot;This is the front-end of D++.\n&apos;connect_voice&apos; will now queue a JSON message.&quot;;
     }
     
     subgraph cluster_1 {
@@ -31,7 +31,7 @@ digraph &quot;Example Directory&quot; {
         color=lightgrey;
         node [style=filled, color=2, shape=rect]
         &quot;message_queue&quot;;
-        
+
         label = &quot;This holds all our messages.\n&apos;one_second_timer&apos; reads this data&quot;;
     }
     
