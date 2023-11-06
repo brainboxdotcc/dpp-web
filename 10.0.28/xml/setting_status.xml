@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="setting_status" kind="page">
+    <compoundname>setting_status</compoundname>
+    <title>Setting the Bot&apos;s Status</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A bot status is pretty cool, and it&apos;d be cooler if you knew how to do it! This tutorial will cover how to set the bot status to say <computeroutput>Playing games!</computeroutput>, as well as covering how to set the status to the amount of guilds every two minutes.</para>
+<para><simplesect kind="note"><para><ref refid="namespacedpp_1a5ae7c530cff1cae7200e136bf8c1bf83" kindref="member">dpp::get_guild_cache</ref> requires the bot to have the guild cache enabled, if your bot has this disabled then you can&apos;t use that. Instead, you should look to use <ref refid="classdpp_1_1cluster_1ac3dc39069aaaa492727f39b35edd957e" kindref="member">dpp::cluster::current_application_get</ref> and get the <computeroutput>approximate_guild_count</computeroutput> from <ref refid="classdpp_1_1application" kindref="compound">dpp::application</ref> in the callback.</para>
+</simplesect>
+First, we&apos;ll cover setting the bot status to <computeroutput>Playing games!</computeroutput>.</para>
+<para><programlisting filename="setting_status1.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>the<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>don&apos;t<sp/>need<sp/>the<sp/>run_once<sp/>here<sp/>as<sp/>we&apos;re<sp/>not<sp/>registering<sp/>commands!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>bot<sp/>presence<sp/>as<sp/>online<sp/>and<sp/>&quot;Playing...&quot;!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.set_presence(<ref refid="classdpp_1_1presence" kindref="compound">dpp::presence</ref>(<ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96ae068013241cf08d0f4dbdd161e89aa2e" kindref="member">dpp::ps_online</ref>,<sp/><ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701" kindref="member">dpp::at_game</ref>,<sp/></highlight><highlight class="stringliteral">&quot;games!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>If all went well, your bot should now be online and say this on members list!</para>
+<para><image type="html" name="botonlinestatus.png"></image>
+</para>
+<para>Now, let&apos;s cover setting the bot status to say <computeroutput>Playing with x guilds!</computeroutput> every two minutes.</para>
+<para><programlisting filename="setting_status2.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>the<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>put<sp/>our<sp/>status<sp/>updating<sp/>inside<sp/>&quot;run_once&quot;<sp/>so<sp/>that<sp/>multiple<sp/>shards<sp/>don&apos;t<sp/>try<sp/>do<sp/>this<sp/>as<sp/>&quot;set_presence&quot;<sp/>updates<sp/>all<sp/>the<sp/>shards.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>update<sp/>the<sp/>presence<sp/>now<sp/>as<sp/>the<sp/>timer<sp/>will<sp/>do<sp/>the<sp/>first<sp/>execution<sp/>after<sp/>the<sp/>x<sp/>amount<sp/>of<sp/>seconds<sp/>we<sp/>specify<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.set_presence(<ref refid="classdpp_1_1presence" kindref="compound">dpp::presence</ref>(dpp::presence_status::ps_online,<sp/>dpp::activity_type::at_game,<sp/></highlight><highlight class="stringliteral">&quot;with<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="namespacedpp_1a5ae7c530cff1cae7200e136bf8c1bf83" kindref="member">dpp::get_guild_cache</ref>()-&gt;count())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>guilds!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>a<sp/>timer<sp/>that<sp/>runs<sp/>every<sp/>120<sp/>seconds,<sp/>that<sp/>sets<sp/>the<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.start_timer([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">dpp::timer</ref>&amp;<sp/>timer)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.set_presence(<ref refid="classdpp_1_1presence" kindref="compound">dpp::presence</ref>(dpp::presence_status::ps_online,<sp/>dpp::activity_type::at_game,<sp/></highlight><highlight class="stringliteral">&quot;with<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="namespacedpp_1a5ae7c530cff1cae7200e136bf8c1bf83" kindref="member">dpp::get_guild_cache</ref>()-&gt;count())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>guilds!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>120);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>If you followed that well, your bot should now say this on members list!</para>
+<para><image type="html" name="botonlinestatus2.png"></image>
+</para>
+<para>If we then add our bot to another server and wait a bit, we&apos;ll see it updates like so:</para>
+<para><image type="html" name="botonlinestatus3.png"></image>
+ </para>
+    </detaileddescription>
+    <location file="docpages/example_programs/misc/setting_status.md"/>
+  </compounddef>
+</doxygen>

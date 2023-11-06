@@ -1,0 +1,24 @@
+var structdpp_1_1message__reaction__add__t =
+[
+    [ "cancel_event", "structdpp_1_1message__reaction__add__t.html#a54af3a0990fe041d4f5e8ad897367f7f", null ],
+    [ "cancel_event", "structdpp_1_1message__reaction__add__t.html#a5afbcd36109734ad0fca14ec848b73b7", null ],
+    [ "event_dispatch_t", "structdpp_1_1message__reaction__add__t.html#ad761e8dec36073665f520aaa13fbe6dc", null ],
+    [ "event_dispatch_t", "structdpp_1_1message__reaction__add__t.html#ae250d3a1ee0ad2e90ad075e1aead5478", null ],
+    [ "event_dispatch_t", "structdpp_1_1message__reaction__add__t.html#af32126d4ed56366b4413c84b272383b7", null ],
+    [ "event_dispatch_t", "structdpp_1_1message__reaction__add__t.html#a4d5c139c862c5ed02227b1e9ffc38095", null ],
+    [ "event_dispatch_t", "structdpp_1_1message__reaction__add__t.html#aae35038ecb874c46e355fac3863615d0", null ],
+    [ "is_cancelled", "structdpp_1_1message__reaction__add__t.html#aca2880114f69b7ba62eb5137824c1432", null ],
+    [ "operator=", "structdpp_1_1message__reaction__add__t.html#a2500c6d9987fbfc509fd0a960b1968e9", null ],
+    [ "operator=", "structdpp_1_1message__reaction__add__t.html#a4645c2cc7dfe1def0b936d5726f7b8db", null ],
+    [ "cancelled", "structdpp_1_1message__reaction__add__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
+    [ "channel_id", "structdpp_1_1message__reaction__add__t.html#a69b2d42722333d146ca8ef54a9b08c45", null ],
+    [ "from", "structdpp_1_1message__reaction__add__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71", null ],
+    [ "message_author_id", "structdpp_1_1message__reaction__add__t.html#a8101a028326d0ad73e35cbfc4d83e9ad", null ],
+    [ "message_id", "structdpp_1_1message__reaction__add__t.html#a813043598fc5086d20086afe2df9d95b", null ],
+    [ "raw_event", "structdpp_1_1message__reaction__add__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
+    [ "reacting_channel", "structdpp_1_1message__reaction__add__t.html#a6fa97995b2c0bfd038259c51d38ea3b2", null ],
+    [ "reacting_emoji", "structdpp_1_1message__reaction__add__t.html#aea2cff2ccbbbaf2a7510e8285884f6dc", null ],
+    [ "reacting_guild", "structdpp_1_1message__reaction__add__t.html#a81f1e8b72e5e934c30caf5e77780f9e5", null ],
+    [ "reacting_member", "structdpp_1_1message__reaction__add__t.html#a9ef2eefe8aff22b96942aeff2b66183e", null ],
+    [ "reacting_user", "structdpp_1_1message__reaction__add__t.html#a08d7d65174dde5e0d50194738a16745b", null ]
+];

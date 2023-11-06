@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="clearing_slashcommands" kind="page">
+    <compoundname>clearing_slashcommands</compoundname>
+    <title>Clearing Registered Commands</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>After a while of creating commands, you may start to wonder &quot;hm, how can I clear these?&quot;. Well, this tutorial covers it! All you have to do is simply call <ref refid="classdpp_1_1cluster_1a7f38a6bbcec3107036217ae3de730c04" kindref="member">dpp::cluster::global_bulk_command_delete</ref> or <ref refid="classdpp_1_1cluster_1aaaf5e026f04f080021382bd73ffd424a" kindref="member">dpp::cluster::guild_bulk_command_delete</ref>.</para>
+<para><simplesect kind="note"><para>Clearing <bold>global commands</bold> will only clear commands that were <bold>made globally</bold>, same goes for the opposite way round. The example will demonstrate using both functions.</para>
+</simplesect>
+<programlisting filename="clearing_slashcommands.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>won&apos;t<sp/>be<sp/>performing<sp/>any<sp/>commands,<sp/>so<sp/>we<sp/>don&apos;t<sp/>need<sp/>to<sp/>add<sp/>the<sp/>event<sp/>here!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref><sp/>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>clear_bot_commands&gt;())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Now,<sp/>we&apos;re<sp/>going<sp/>to<sp/>wipe<sp/>our<sp/>commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_bulk_command_delete();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>one<sp/>requires<sp/>a<sp/>guild<sp/>id,<sp/>otherwise<sp/>it<sp/>won&apos;t<sp/>what<sp/>guild&apos;s<sp/>commands<sp/>it<sp/>needs<sp/>to<sp/>wipe!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.guild_bulk_command_delete(857692897221033129);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Because<sp/>the<sp/>run_once<sp/>above<sp/>uses<sp/>a<sp/>&apos;clear_bot_commands&apos;<sp/>struct,<sp/>you<sp/>can<sp/>continue<sp/>to<sp/>register<sp/>commands<sp/>below!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="docpages/example_programs/interactions_and_components/slashcommands/clearing_slashcommands.md"/>
+  </compounddef>
+</doxygen>

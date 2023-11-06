@@ -1,0 +1,1106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1webhook" kind="class" language="C++" prot="public">
+    <compoundname>dpp::webhook</compoundname>
+    <basecompoundref refid="classdpp_1_1managed" prot="public" virt="non-virtual">dpp::managed</basecompoundref>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; webhook &gt;</basecompoundref>
+    <includes local="no">webhook.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1webhook_1a99a6a96973afd054fc8632fc84970f15" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; webhook &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; webhook &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="176" column="28" bodyfile="include/dpp/webhook.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1webhook_1a2b988a9005bc38b8eebd99dabdf1ecbe" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::webhook::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of the webhook from <ref refid="namespacedpp_1a20f1f69fbf5558149824584aeab4ecc0" kindref="member">dpp::webhook_type</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="72" column="9" bodyfile="include/dpp/webhook.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1aeb4a3c383260167ef6a05fe2e31f2e75" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::webhook::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>The guild id this webhook is for. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This field is optional, and may also be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="78" column="11" bodyfile="include/dpp/webhook.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1ae553e70e26e0062648d0280aa74eaed0" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::webhook::channel_id</definition>
+        <argsstring></argsstring>
+        <name>channel_id</name>
+        <briefdescription>
+<para>The channel id this webhook is for. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="84" column="11" bodyfile="include/dpp/webhook.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1ad4c5750fd7038864b04a8c3daf2efa16" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref></type>
+        <definition>user dpp::webhook::user_obj</definition>
+        <argsstring></argsstring>
+        <name>user_obj</name>
+        <briefdescription>
+<para>The user this webhook was created by. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This field is optional. </para>
+</simplesect>
+<simplesect kind="warning"><para>This is not returned when getting a webhook with its token! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="91" column="6" bodyfile="include/dpp/webhook.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1af982ac0a68dd3f81fcb267a713d338f3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::webhook::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The default name of the webhook. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="97" column="13" bodyfile="include/dpp/webhook.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1aa9b4dd133a65bc6d575f749a58fd77d9" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::webhook::avatar</definition>
+        <argsstring></argsstring>
+        <name>avatar</name>
+        <briefdescription>
+<para>The default avatar of the webhook. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="103" column="19" bodyfile="include/dpp/webhook.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1a1500f11e74b9a859f0cd0c4cf9d135b0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::webhook::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <briefdescription>
+<para>The secure token of the webhook (returned for Incoming Webhooks). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This field is optional. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="109" column="13" bodyfile="include/dpp/webhook.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1af37345950a45e0b0b15b345625f26c85" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::webhook::application_id</definition>
+        <argsstring></argsstring>
+        <name>application_id</name>
+        <briefdescription>
+<para>The bot/OAuth2 application that created this webhook. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may be empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="115" column="11" bodyfile="include/dpp/webhook.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1a8a56d2b84cddfeb2f2d707a869e2b6f2" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1guild" kindref="compound">guild</ref></type>
+        <definition>guild dpp::webhook::source_guild</definition>
+        <argsstring></argsstring>
+        <name>source_guild</name>
+        <briefdescription>
+<para>The guild of the channel that this webhook is following (only for Channel Follower Webhooks). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This will be absent if the webhook creator has since lost access to the guild where the followed channel resides! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="121" column="7" bodyfile="include/dpp/webhook.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1ad02d00ed53119e5f4c622f793fe35d49" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref></type>
+        <definition>channel dpp::webhook::source_channel</definition>
+        <argsstring></argsstring>
+        <name>source_channel</name>
+        <briefdescription>
+<para>The channel that this webhook is following (only for Channel Follower Webhooks). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This will be absent if the webhook creator has since lost access to the guild where the followed channel resides! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="127" column="8" bodyfile="include/dpp/webhook.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1add569486c4ad5f4cf7880ef164b9298a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::webhook::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <briefdescription>
+<para>The url used for executing the webhook (returned by the webhooks OAuth2 flow). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="132" column="13" bodyfile="include/dpp/webhook.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1webhook_1a67866c51ecb586471139d5539ce9c835" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::webhook::image_data</definition>
+        <argsstring></argsstring>
+        <name>image_data</name>
+        <briefdescription>
+<para>base64 encoded image data if uploading a new image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>You should only ever read data from here. If you want to set the data, use <ref refid="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" kindref="member">dpp::webhook::load_image</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="138" column="13" bodyfile="include/dpp/webhook.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1webhook_1abb5ebdf5fbd976d5b8e329a2554193ea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref> &amp;</type>
+        <definition>webhook &amp; dpp::webhook::fill_from_json_impl</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json_impl</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Fill in object from json data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>webhook&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="58" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1webhook_1af20171d6423f311c5fe9aeccbb672cc7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
+        <definition>virtual json dpp::webhook::to_json_impl</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build JSON string from object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Include the ID of the webhook in the json </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string JSON encoded object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="66" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1webhook_1a7144cd4b090eaa5a22687230cf2d6bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::webhook::webhook</definition>
+        <argsstring>()</argsstring>
+        <name>webhook</name>
+        <briefdescription>
+<para>Construct a new webhook object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1webhook_1a50c826b1dfd536f839f2a71ddf60bedd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::webhook::webhook</definition>
+        <argsstring>(const std::string &amp;webhook_url)</argsstring>
+        <name>webhook</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>webhook_url</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new webhook object using the Webhook URL provided by Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>webhook_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a fully qualified web address of an existing webhook </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the webhook url could not be parsed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1webhook_1a4e3d93a96dace41ced1a91474847403d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::webhook::webhook</definition>
+        <argsstring>(const snowflake webhook_id, const std::string &amp;webhook_token)</argsstring>
+        <name>webhook</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>webhook_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>webhook_token</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new webhook object using the webhook ID and the webhook token. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>webhook_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id taken from a link of an existing webhook </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>webhook_token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>token taken from a link of an existing webhook </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref> &amp;</type>
+        <definition>webhook &amp; dpp::webhook::load_image</definition>
+        <argsstring>(const std::string &amp;image_blob, const image_type type, bool is_base64_encoded=false)</argsstring>
+        <name>load_image</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>image_blob</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_base64_encoded</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Base64 encode image data and allocate it to image_data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_blob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Binary image data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image type. It can be one of <computeroutput>i_gif</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_base64_encoded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the image data is already base64 encoded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>webhook&amp; Reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1length__exception" kindref="compound">dpp::length_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image data is larger than the maximum size of 256 kilobytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/webhook.h" line="170" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator==</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are not the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1webhook" kindref="compound">webhook</ref> &amp;</type>
+        <definition>webhook  &amp; dpp::json_interface&lt; webhook  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; webhook  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; webhook  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a discord webhook. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+      </node>
+      <node id="1">
+        <label>dpp::webhook</label>
+        <link refid="classdpp_1_1webhook"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; webhook &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; webhook &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>K</label>
+      </node>
+      <node id="25">
+        <label>T</label>
+      </node>
+      <node id="40">
+        <label>auto_archive_duration_t</label>
+      </node>
+      <node id="41">
+        <label>default_forum_sort_order_t</label>
+      </node>
+      <node id="31">
+        <label>default_message_notification_t</label>
+      </node>
+      <node id="37">
+        <label>dpp::channel</label>
+        <link refid="classdpp_1_1channel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>name</edgelabel>
+          <edgelabel>rtc_region</edgelabel>
+          <edgelabel>topic</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>available_tags</edgelabel>
+          <edgelabel>permission_overwrites</edgelabel>
+          <edgelabel>recipients</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>default_reaction</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>icon</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>last_message_id</edgelabel>
+          <edgelabel>owner_id</edgelabel>
+          <edgelabel>parent_id</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>last_pin_timestamp</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>permissions</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>bitrate</edgelabel>
+          <edgelabel>default_thread_rate_limit_per_user</edgelabel>
+          <edgelabel>flags</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>rate_limit_per_user</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>default_auto_archive_duration</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>default_sort_order</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>user_limit</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dpp::guild</label>
+        <link refid="classdpp_1_1guild"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>description</edgelabel>
+          <edgelabel>name</edgelabel>
+          <edgelabel>vanity_url_code</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>channels</edgelabel>
+          <edgelabel>emojis</edgelabel>
+          <edgelabel>roles</edgelabel>
+          <edgelabel>threads</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>voice_members</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>members</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>welcome_screen</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>banner</edgelabel>
+          <edgelabel>discovery_splash</edgelabel>
+          <edgelabel>icon</edgelabel>
+          <edgelabel>splash</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>afk_channel_id</edgelabel>
+          <edgelabel>application_id</edgelabel>
+          <edgelabel>owner_id</edgelabel>
+          <edgelabel>public_updates_channel_id</edgelabel>
+          <edgelabel>rules_channel_id</edgelabel>
+          <edgelabel>safety_alerts_channel_id</edgelabel>
+          <edgelabel>system_channel_id</edgelabel>
+          <edgelabel>widget_channel_id</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>flags</edgelabel>
+          <edgelabel>max_members</edgelabel>
+          <edgelabel>max_presences</edgelabel>
+          <edgelabel>member_count</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>flags_extra</edgelabel>
+          <edgelabel>premium_subscription_count</edgelabel>
+          <edgelabel>shard_id</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>afk_timeout</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>max_video_channel_users</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>default_message_notifications</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>premium_tier</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>verification_level</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>explicit_content_filter</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>mfa_level</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>nsfw_level</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dpp::guild_member</label>
+        <link refid="classdpp_1_1guild__member"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>nickname</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>roles</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>communication_disabled_until</edgelabel>
+          <edgelabel>joined_at</edgelabel>
+          <edgelabel>premium_since</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>dpp::permission</label>
+        <link refid="classdpp_1_1permission"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>global_name</edgelabel>
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>avatar</edgelabel>
+          <edgelabel>avatar_decoration</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>dpp::utility::icon</label>
+        <link refid="structdpp_1_1utility_1_1icon"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>hash_or_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::webhook</label>
+        <link refid="classdpp_1_1webhook"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>application_id</edgelabel>
+          <edgelabel>channel_id</edgelabel>
+          <edgelabel>guild_id</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>user_obj</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>image_data</edgelabel>
+          <edgelabel>name</edgelabel>
+          <edgelabel>token</edgelabel>
+          <edgelabel>url</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>source_guild</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>source_channel</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>dpp::welcome_screen</label>
+        <link refid="structdpp_1_1welcome__screen"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>description</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>welcome_channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>guild_afk_timeout_t</label>
+      </node>
+      <node id="34">
+        <label>guild_explicit_content_t</label>
+      </node>
+      <node id="36">
+        <label>guild_nsfw_level_t</label>
+      </node>
+      <node id="32">
+        <label>guild_premium_tier_t</label>
+      </node>
+      <node id="38">
+        <label>dpp::json_interface&lt; channel &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; channel &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>dpp::json_interface&lt; guild &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; guild &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>dpp::json_interface&lt; guild_member &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; guild_member &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dpp::json_interface&lt; user &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; user &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dpp::json_interface&lt; webhook &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; webhook &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>dpp::json_interface&lt; welcome_screen &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; welcome_screen &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>mfa_level_t</label>
+      </node>
+      <node id="11">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="18">
+        <label>map&lt;</label>
+      </node>
+      <node id="10">
+        <label>std::string</label>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>std::unordered_map&lt; K, T &gt;</label>
+        <childnode refid="24" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>variant&lt;</label>
+      </node>
+      <node id="17">
+        <label>vector&lt;</label>
+      </node>
+      <node id="22">
+        <label>time_t</label>
+      </node>
+      <node id="14">
+        <label>uint16_t</label>
+      </node>
+      <node id="13">
+        <label>uint32_t</label>
+      </node>
+      <node id="4">
+        <label>uint64_t</label>
+      </node>
+      <node id="7">
+        <label>uint8_t</label>
+      </node>
+      <node id="19">
+        <label>std::unordered_map&lt; snowflake, guild_member &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="template-instance">
+          <edgelabel>&lt; snowflake, guild_member &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>verification_level_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/webhook.h" line="48" column="1" bodyfile="include/dpp/webhook.h" bodystart="48" bodyend="171"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1webhook_1af37345950a45e0b0b15b345625f26c85" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>application_id</name></member>
+      <member refid="classdpp_1_1webhook_1aa9b4dd133a65bc6d575f749a58fd77d9" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>avatar</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1webhook_1ae553e70e26e0062648d0280aa74eaed0" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>channel_id</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>fill_from_json</name></member>
+      <member refid="classdpp_1_1webhook_1abb5ebdf5fbd976d5b8e329a2554193ea" prot="protected" virt="non-virtual"><scope>dpp::webhook</scope><name>fill_from_json_impl</name></member>
+      <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>get_creation_time</name></member>
+      <member refid="classdpp_1_1webhook_1aeb4a3c383260167ef6a05fe2e31f2e75" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>guild_id</name></member>
+      <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>id</name></member>
+      <member refid="classdpp_1_1webhook_1a67866c51ecb586471139d5539ce9c835" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>image_data</name></member>
+      <member refid="classdpp_1_1webhook_1a99a6a96973afd054fc8632fc84970f15" prot="protected" virt="non-virtual"><scope>dpp::webhook</scope><name>json_interface&lt; webhook &gt;</name></member>
+      <member refid="classdpp_1_1webhook_1ac170fa1d18eacf094fea2b8ad6c96e9b" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>load_image</name></member>
+      <member refid="classdpp_1_1managed_1a49ce0d7fdbeab770ec46be27771c2285" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1aa3ee436836ab0e2bf4f842c2c2bc3b52" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a198b514f7e6a2b26734fd2dad85f481d" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1ac7a876ad1764b89f0568a1f1bc6bf640" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>managed</name></member>
+      <member refid="classdpp_1_1webhook_1af982ac0a68dd3f81fcb267a713d338f3" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>name</name></member>
+      <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator!=</name></member>
+      <member refid="classdpp_1_1managed_1a48b542729f1352f93f1c60950986517f" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1webhook_1ad02d00ed53119e5f4c622f793fe35d49" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>source_channel</name></member>
+      <member refid="classdpp_1_1webhook_1a8a56d2b84cddfeb2f2d707a869e2b6f2" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>source_guild</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>to_json</name></member>
+      <member refid="classdpp_1_1webhook_1af20171d6423f311c5fe9aeccbb672cc7" prot="protected" virt="virtual"><scope>dpp::webhook</scope><name>to_json_impl</name></member>
+      <member refid="classdpp_1_1webhook_1a1500f11e74b9a859f0cd0c4cf9d135b0" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>token</name></member>
+      <member refid="classdpp_1_1webhook_1a2b988a9005bc38b8eebd99dabdf1ecbe" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>type</name></member>
+      <member refid="classdpp_1_1webhook_1add569486c4ad5f4cf7880ef164b9298a" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>url</name></member>
+      <member refid="classdpp_1_1webhook_1ad4c5750fd7038864b04a8c3daf2efa16" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>user_obj</name></member>
+      <member refid="classdpp_1_1webhook_1a7144cd4b090eaa5a22687230cf2d6bd3" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>webhook</name></member>
+      <member refid="classdpp_1_1webhook_1a50c826b1dfd536f839f2a71ddf60bedd" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>webhook</name></member>
+      <member refid="classdpp_1_1webhook_1a4e3d93a96dace41ced1a91474847403d" prot="public" virt="non-virtual"><scope>dpp::webhook</scope><name>webhook</name></member>
+      <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::webhook</scope><name>~managed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="voice-model" kind="page">
+    <compoundname>voice-model</compoundname>
+    <title>Voice Model</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><dot>
+digraph &quot;Example Directory&quot; {
+    graph [ranksep=1];
+    node [colorscheme=&quot;blues9&quot;, fontname=&quot;helvetica&quot;];
+
+    &quot;Your bot&quot; [style=filled, color=1, shape=rect]
+    &quot;Discord&quot; [style=filled, color=1, shape=rect]
+    
+    subgraph cluster_0 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;guild::connect_member_voice&quot;;
+        &quot;discord_client::connect_voice&quot;;
+
+        &quot;guild::connect_member_voice&quot; -&gt; &quot;discord_client::connect_voice&quot;;
+
+        label = &quot;This is the front-end of D++.\n&apos;connect_voice&apos; will now queue a JSON message.&quot;;
+    }
+    
+    subgraph cluster_1 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=2, shape=rect]
+        &quot;message_queue&quot;;
+
+        label = &quot;This holds all our messages.\n&apos;one_second_timer&apos; reads this data&quot;;
+    }
+    
+    subgraph cluster_2 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;discord_client::one_second_timer&quot;;
+        &quot;websocket_client::write&quot;;
+        &quot;ssl_client::write&quot;;
+        
+        &quot;discord_client::one_second_timer&quot; -&gt; &quot;websocket_client::write&quot;;
+        &quot;websocket_client::write&quot; -&gt; &quot;ssl_client::write&quot;;
+        &quot;ssl_client::write&quot; -&gt; &quot;Discord&quot;;
+        
+        label = &quot;This is where we start sending\nwebsocket connections to Discord.&quot;;
+    }
+    
+    subgraph cluster_3 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;ssl_client::read_loop&quot;;
+        &quot;Response from Discord?&quot;;
+        &quot;No&quot;;
+        &quot;HTTP/1.1 204 No Content...&quot;;
+        &quot;HTTP/1.1 101 Switching Protocols&quot;;
+        
+        &quot;ssl_client::read_loop&quot; -&gt; &quot;Response from Discord?&quot;;
+        &quot;Response from Discord?&quot; -&gt; &quot;No&quot;;
+        &quot;Response from Discord?&quot; -&gt; &quot;HTTP/1.1 204 No Content...&quot;;
+        &quot;Response from Discord?&quot; -&gt; &quot;HTTP/1.1 101 Switching Protocols&quot;;
+        &quot;No&quot; -&gt; &quot;ssl_client::read_loop&quot;;
+        
+        &quot;Discord&quot; -&gt; &quot;HTTP/1.1 204 No Content...&quot;;
+        &quot;Discord&quot; -&gt; &quot;HTTP/1.1 101 Switching Protocols&quot;;
+        
+        label = &quot;Now, we&apos;re waiting for a response from Discord.\nIf we receive 204, we&apos;ll start initiating voiceconn. However, if we receive 101, then we can do all the voice stuff.&quot;;
+    }
+    
+    subgraph cluster_4 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;voice_state_update::handle&quot;;
+        &quot;voice_server_update::handle&quot;;
+        
+        &quot;HTTP/1.1 204 No Content...&quot; -&gt; &quot;voice_state_update::handle&quot;;
+        &quot;HTTP/1.1 204 No Content...&quot; -&gt; &quot;voice_server_update::handle&quot;;
+        
+        label = &quot;These events can fire in any order. Discord picks whatever it likes.&quot;;
+    }
+    
+    subgraph cluster_5 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;voiceconn::connect&quot;;
+        &quot;new discord_voice_client&quot;
+        &quot;websocket_client::connect&quot;
+        &quot;discord_voice_client::run&quot;
+        &quot;discord_voice_client::thread_run&quot;
+        
+        &quot;voiceconn::connect&quot; -&gt; &quot;new discord_voice_client&quot;;
+        &quot;new discord_voice_client&quot; -&gt; &quot;websocket_client::connect&quot;;
+        &quot;websocket_client::connect&quot; -&gt; &quot;websocket_client::write&quot;;
+
+        &quot;voiceconn::connect&quot; -&gt; &quot;discord_voice_client::run&quot; [label=&quot;Once websocket_client has finished&quot;];
+        &quot;discord_voice_client::run&quot; -&gt; &quot;discord_voice_client::thread_run&quot;;
+        &quot;discord_voice_client::thread_run&quot; -&gt; &quot;ssl_client::read_loop&quot;;
+        
+        label = &quot;Voice initalisation.\nThis will only fire when &apos;voice_server_update&apos; AND &apos;voice_state_update&apos; has fired.\nIf everything goes well, Discord should send back &apos;101 Switching Protocals&apos;.&quot;;
+    }
+    
+    subgraph cluster_6 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;discord_voice_client::handle_frame&quot;;
+        
+        &quot;HTTP/1.1 101 Switching Protocols&quot; -&gt; &quot;discord_voice_client::handle_frame&quot;;
+        
+        label = &quot;Do the voice stuff.&quot;;
+    }
+    
+    &quot;Your bot&quot; -&gt; &quot;guild::connect_member_voice&quot;;
+    
+    &quot;discord_client::connect_voice&quot; -&gt; &quot;message_queue&quot;;
+    
+    &quot;message_queue&quot; -&gt; &quot;discord_client::one_second_timer&quot;;
+    &quot;discord_client::one_second_timer&quot; -&gt; &quot;message_queue&quot;;
+    
+    &quot;voice_state_update::handle&quot; -&gt; &quot;voiceconn::connect&quot;;
+    &quot;voice_server_update::handle&quot; -&gt; &quot;voiceconn::connect&quot;;
+}
+</dot>
+ </para>
+    </detaileddescription>
+    <location file="docpages/advanced_reference/voice_model.md"/>
+  </compounddef>
+</doxygen>
