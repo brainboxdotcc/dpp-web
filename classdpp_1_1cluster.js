@@ -532,7 +532,7 @@ var classdpp_1_1cluster =
     [ "operator=", "classdpp_1_1cluster.html#a17780ca53ef05b8d66df90185eb51a04", null ],
     [ "operator=", "classdpp_1_1cluster.html#adfece237b42b8a0ab4d81c000e159fd6", null ],
     [ "post_rest", "classdpp_1_1cluster.html#a4d102b15a0a4d74fd1f9ee4fc3aa8bbf", null ],
-    [ "post_rest_multipart", "classdpp_1_1cluster.html#a3c540c26342e8238a76b8ac252f7f262", null ],
+    [ "post_rest_multipart", "classdpp_1_1cluster.html#a548e19022b7d3ee825920888da07493b", null ],
     [ "request", "classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e", null ],
     [ "role_create", "classdpp_1_1cluster.html#a849017410297379997601daac5e99ce1", null ],
     [ "role_create_sync", "classdpp_1_1cluster.html#a8fa5c60e4a435244d30e2fea4bbc3dca", null ],

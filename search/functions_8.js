@@ -125,13 +125,12 @@ var searchData=
   ['is_5funavailable_122',['is_unavailable',['../classdpp_1_1guild.html#ab7b956f6c07d48e1184cb4b6c727af21',1,'dpp::guild']]],
   ['is_5furgent_123',['is_urgent',['../structdpp_1_1message.html#ad164b78c5ee2dc8a8237d1ec7a0d863f',1,'dpp::message']]],
   ['is_5fuser_5fsubscription_124',['is_user_subscription',['../classdpp_1_1sku.html#addbbf3d08da568fa8680647e6761bccb',1,'dpp::sku']]],
-  ['is_5fverified_125',['is_verified',['../classdpp_1_1user.html#aa08cdd77402ef1d08b003e2e5342004a',1,'dpp::user::is_verified()'],['../classdpp_1_1guild.html#af79641512c0342d3082174afa2e636e8',1,'dpp::guild::is_verified()']]],
+  ['is_5fverified_125',['is_verified',['../classdpp_1_1guild.html#af79641512c0342d3082174afa2e636e8',1,'dpp::guild::is_verified()'],['../classdpp_1_1user.html#aa08cdd77402ef1d08b003e2e5342004a',1,'dpp::user::is_verified() const']]],
   ['is_5fverified_5fbot_126',['is_verified_bot',['../classdpp_1_1user.html#a9aabc6989097e79dc8e3e8d00d7a0c5f',1,'dpp::user']]],
   ['is_5fverified_5fbot_5fdev_127',['is_verified_bot_dev',['../classdpp_1_1user.html#abe54bbcf190f3aba2aeaf8c2d6287152',1,'dpp::user']]],
   ['is_5fvideo_5f720p_128',['is_video_720p',['../classdpp_1_1channel.html#a311501db36692f1753254e1bf618e75d',1,'dpp::channel']]],
   ['is_5fvideo_5fauto_129',['is_video_auto',['../classdpp_1_1channel.html#afb783f82a86a5ed6f247aaa213164854',1,'dpp::channel']]],
-  ['is_5fvip_130',['is_vip',['../classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14',1,'dpp::voiceregion']]],
-  ['is_5fvoice_5fchannel_131',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
-  ['is_5fvoice_5fmessage_132',['is_voice_message',['../structdpp_1_1message.html#aa7d2ee420f88841ef69410fc02a2f90f',1,'dpp::message']]],
-  ['is_5fwelcome_5fscreen_5fenabled_133',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]]
+  ['is_5fvoice_5fchannel_130',['is_voice_channel',['../classdpp_1_1channel.html#a8ee69208f9cf16c18f2ceb460ada1916',1,'dpp::channel']]],
+  ['is_5fvoice_5fmessage_131',['is_voice_message',['../structdpp_1_1message.html#aa7d2ee420f88841ef69410fc02a2f90f',1,'dpp::message']]],
+  ['is_5fwelcome_5fscreen_5fenabled_132',['is_welcome_screen_enabled',['../classdpp_1_1guild.html#a7d1ad4ac2b329f47948c91fe4277932e',1,'dpp::guild']]]
 ];

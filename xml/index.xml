@@ -883,7 +883,7 @@
     <member refid="classdpp_1_1cluster_1a5c677c0d5c059e87cc01ce598d49487d" kind="function"><name>get_shard</name></member>
     <member refid="classdpp_1_1cluster_1af4d6195862e6d25c644902631a0b34d1" kind="function"><name>get_shards</name></member>
     <member refid="classdpp_1_1cluster_1a4d102b15a0a4d74fd1f9ee4fc3aa8bbf" kind="function"><name>post_rest</name></member>
-    <member refid="classdpp_1_1cluster_1a3c540c26342e8238a76b8ac252f7f262" kind="function"><name>post_rest_multipart</name></member>
+    <member refid="classdpp_1_1cluster_1a548e19022b7d3ee825920888da07493b" kind="function"><name>post_rest_multipart</name></member>
     <member refid="classdpp_1_1cluster_1aa4ead3406c471a64fa1fa578cc51cf2e" kind="function"><name>request</name></member>
     <member refid="classdpp_1_1cluster_1a61e03d7c6a19f6a652d3a80b1a8157ca" kind="function"><name>interaction_response_create</name></member>
     <member refid="classdpp_1_1cluster_1a983ac4283ea7ee5261475ec232a2c1bf" kind="function"><name>interaction_response_edit</name></member>
@@ -3613,9 +3613,7 @@
     <member refid="structdpp_1_1message_1afaaf4f44ce0631c49c15088b033d25e6" kind="variable"><name>nonce</name></member>
     <member refid="structdpp_1_1message_1ad1033bc27c5c1436c2e321d1be1d65ed" kind="variable"><name>webhook_id</name></member>
     <member refid="structdpp_1_1message_1a8ab53932e4cf4fa00d021a5ca3f4b906" kind="variable"><name>stickers</name></member>
-    <member refid="structdpp_1_1message_1ab8f84de9cb56e752254c0be0a950fd11" kind="variable"><name>filename</name></member>
-    <member refid="structdpp_1_1message_1aa7c15d549faf13726de9944c7d5ab230" kind="variable"><name>filecontent</name></member>
-    <member refid="structdpp_1_1message_1ae7476b174bee9fefba12e9c4ae720eeb" kind="variable"><name>filemimetype</name></member>
+    <member refid="structdpp_1_1message_1ad43914d349da800a674deb6fc246f05e" kind="variable"><name>file_data</name></member>
     <member refid="structdpp_1_1message_1adc283f0458df6fb0fc966c9f5040c19e" kind="variable"><name>message_reference</name></member>
     <member refid="structdpp_1_1message_1ab61c894afe6b0f7655b3908217878e68" kind="variable"><name>interaction</name></member>
     <member refid="structdpp_1_1message_1a389f295110a630b2e3f076013b617111" kind="variable"><name>allowed_mentions</name></member>
@@ -3789,6 +3787,11 @@
     <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
+  </compound>
+  <compound refid="structdpp_1_1message__file__data" kind="struct"><name>dpp::message_file_data</name>
+    <member refid="structdpp_1_1message__file__data_1aeb730613e5cb3269cbfe6f22484a3775" kind="variable"><name>name</name></member>
+    <member refid="structdpp_1_1message__file__data_1ac5984a75aa50d7a7f765d304c7ebd938" kind="variable"><name>content</name></member>
+    <member refid="structdpp_1_1message__file__data_1a579186a3b166130edb1ed1ea03517abf" kind="variable"><name>mimetype</name></member>
   </compound>
   <compound refid="structdpp_1_1message_1_1message__interaction__struct" kind="struct"><name>dpp::message::message_interaction_struct</name>
     <member refid="structdpp_1_1message_1_1message__interaction__struct_1a2965fcce0c89b0274527c2f81ceb933f" kind="variable"><name>id</name></member>
@@ -5545,7 +5548,6 @@
     <member refid="classdpp_1_1voiceregion_1ad8cc77b8def50a189e2b2c636fd6927e" kind="function"><name>is_optimal</name></member>
     <member refid="classdpp_1_1voiceregion_1af29355f165f2ee1aeed095f79136c039" kind="function"><name>is_deprecated</name></member>
     <member refid="classdpp_1_1voiceregion_1a2acea0a6fa26f8713e7ff712c21626b4" kind="function"><name>is_custom</name></member>
-    <member refid="classdpp_1_1voiceregion_1a2773af7f67f44b7c7cd45e04791c4d14" kind="function"><name>is_vip</name></member>
     <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" kind="function"><name>fill_from_json</name></member>
     <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" kind="function"><name>to_json</name></member>
     <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" kind="function"><name>build_json</name></member>
@@ -6354,7 +6356,6 @@
     <member refid="namespacedpp_1a03f707e068e2f7e7c7277094af901813afb06fc75de5270a1646e4ed14754ac1c" kind="enumvalue"><name>v_optimal</name></member>
     <member refid="namespacedpp_1a03f707e068e2f7e7c7277094af901813a7ffeb4c61fc6bdfc3c66fc45837df985" kind="enumvalue"><name>v_deprecated</name></member>
     <member refid="namespacedpp_1a03f707e068e2f7e7c7277094af901813a2e982013a8628fec52e4d04c2079aa8f" kind="enumvalue"><name>v_custom</name></member>
-    <member refid="namespacedpp_1a03f707e068e2f7e7c7277094af901813a17f33e1022039e04ac480b2956075cc2" kind="enumvalue"><name>v_vip</name></member>
     <member refid="namespacedpp_1a6a7cc94290184616d0267d751f02d53f" kind="enum"><name>voicestate_flags</name></member>
     <member refid="namespacedpp_1a6a7cc94290184616d0267d751f02d53fad67d4828942e6cb916ad2911f79a3948" kind="enumvalue"><name>vs_deaf</name></member>
     <member refid="namespacedpp_1a6a7cc94290184616d0267d751f02d53faa3f883725cc590d56f32a968eef566aa" kind="enumvalue"><name>vs_mute</name></member>

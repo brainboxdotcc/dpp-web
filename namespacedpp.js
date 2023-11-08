@@ -6341,6 +6341,7 @@ var namespacedpp =
     [ "message_create_t", "structdpp_1_1message__create__t.html", "structdpp_1_1message__create__t" ],
     [ "message_delete_bulk_t", "structdpp_1_1message__delete__bulk__t.html", "structdpp_1_1message__delete__bulk__t" ],
     [ "message_delete_t", "structdpp_1_1message__delete__t.html", "structdpp_1_1message__delete__t" ],
+    [ "message_file_data", "structdpp_1_1message__file__data.html", "structdpp_1_1message__file__data" ],
     [ "message_reaction_add_t", "structdpp_1_1message__reaction__add__t.html", "structdpp_1_1message__reaction__add__t" ],
     [ "message_reaction_remove_all_t", "structdpp_1_1message__reaction__remove__all__t.html", "structdpp_1_1message__reaction__remove__all__t" ],
     [ "message_reaction_remove_emoji_t", "structdpp_1_1message__reaction__remove__emoji__t.html", "structdpp_1_1message__reaction__remove__emoji__t" ],
@@ -7197,8 +7198,7 @@ var namespacedpp =
     [ "voiceregion_flags", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813", [
       [ "v_optimal", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813afb06fc75de5270a1646e4ed14754ac1c", null ],
       [ "v_deprecated", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813a7ffeb4c61fc6bdfc3c66fc45837df985", null ],
-      [ "v_custom", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813a2e982013a8628fec52e4d04c2079aa8f", null ],
-      [ "v_vip", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813a17f33e1022039e04ac480b2956075cc2", null ]
+      [ "v_custom", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813a2e982013a8628fec52e4d04c2079aa8f", null ]
     ] ],
     [ "voicestate_flags", "namespacedpp.html#a6a7cc94290184616d0267d751f02d53f", [
       [ "vs_deaf", "namespacedpp.html#a6a7cc94290184616d0267d751f02d53fad67d4828942e6cb916ad2911f79a3948", null ],

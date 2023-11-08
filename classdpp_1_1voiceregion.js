@@ -8,7 +8,6 @@ var classdpp_1_1voiceregion =
     [ "is_custom", "classdpp_1_1voiceregion.html#a2acea0a6fa26f8713e7ff712c21626b4", null ],
     [ "is_deprecated", "classdpp_1_1voiceregion.html#af29355f165f2ee1aeed095f79136c039", null ],
     [ "is_optimal", "classdpp_1_1voiceregion.html#ad8cc77b8def50a189e2b2c636fd6927e", null ],
-    [ "is_vip", "classdpp_1_1voiceregion.html#a2773af7f67f44b7c7cd45e04791c4d14", null ],
     [ "to_json", "classdpp_1_1voiceregion.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "to_json_impl", "classdpp_1_1voiceregion.html#a7870079b8e346a4c62eeb7f4439a3271", null ],
     [ "json_interface< voiceregion >", "classdpp_1_1voiceregion.html#a853f4ca945dfd5a9a433362e8ab70d79", null ],
