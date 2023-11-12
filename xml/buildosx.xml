@@ -17,9 +17,11 @@
 </sect2>
 <sect2 id="buildosx_1autotoc_md89">
 <title>2. Install External Dependencies</title>
-<para><programlisting filename=".bash"><codeline><highlight class="normal">brew<sp/>install<sp/>openssl</highlight></codeline>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">brew<sp/>install<sp/>openssl<sp/>pkgconfig</highlight></codeline>
 </programlisting></para>
-<para>For voice support, additional dependencies are required:</para>
+<para><simplesect kind="note"><para>Usually, you do not need pkgconfig. However, it seems that it throws errors about openssl without.</para>
+</simplesect>
+For voice support, additional dependencies are required:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">brew<sp/>install<sp/>libsodium<sp/>opus</highlight></codeline>
 </programlisting></para>
 </sect2>
@@ -41,7 +43,7 @@
 <para>If you want to install the library, its dependencies, and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>..<sp/>-DCMAKE_INSTALL_PREFIX=/path/to/install</highlight></codeline>
 </programlisting></para>
-<para>Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
+<para>Then once the build is complete, run <computeroutput>sudo make install</computeroutput> to install to the location you specified.</para>
 </sect2>
 <sect2 id="buildosx_1autotoc_md93">
 <title>6. Using the Library</title>
