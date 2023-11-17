@@ -31,7 +31,7 @@ var NAVTREE =
       [ "Library features", "index.html#autotoc_md124", null ],
       [ "Supported Operating Systems", "index.html#autotoc_md125", [
         [ "Linux", "index.html#autotoc_md126", null ],
-        [ "Mac OS X and FreeBSD", "index.html#autotoc_md127", null ],
+        [ "Mac OS X, FreeBSD, and OpenBSD", "index.html#autotoc_md127", null ],
         [ "Raspberry Pi", "index.html#autotoc_md128", null ],
         [ "Windows", "index.html#autotoc_md129", null ],
         [ "Other OS", "index.html#autotoc_md130", null ]
