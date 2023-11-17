@@ -33,10 +33,12 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para>The audio type to be sent. The default type is recorded audio. </para>
+<para>The audio type to be sent. </para>
         </briefdescription>
         <detaileddescription>
-<para>If the audio is recorded, the sending of audio packets is throttled. Otherwise, if the audio is live, the sending is not throttled.</para>
+<para><simplesect kind="note"><para>On Windows, the default type is overlap audio. On all other platforms, it is recorded audio.</para>
+</simplesect>
+If the audio is recorded, the sending of audio packets is throttled. Otherwise, if the audio is live, the sending is not throttled.</para>
 <para>Discord voice engine is expecting audio data as if they were from some audio device, e.g. microphone, where the data become available as they get captured from the audio device.</para>
 <para>In case of recorded audio, unlike from a device, the audio data are usually instantly available in large chunks. Throttling is needed to simulate audio data coming from an audio device. In case of live audio, the throttling is by nature, so no extra throttling is needed.</para>
 <para>Using live audio mode for recorded audio can cause Discord to skip audio data because Discord does not expect to receive, say, 3 minutes&apos; worth of audio data in 1 second.</para>
@@ -45,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="595" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="596" bodyend="600"/>
+        <location file="include/dpp/discordvoiceclient.h" line="598" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="599" bodyend="603"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-type">
@@ -659,14 +661,18 @@
         <definition>enum dpp::discord_voice_client::send_audio_type_t dpp::discord_voice_client::send_audio_type</definition>
         <argsstring></argsstring>
         <name>send_audio_type</name>
-        <initializer>= <ref refid="classdpp_1_1discord__voice__client_1a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483" kindref="member">satype_recorded_audio</ref></initializer>
+        <initializer>=
+
+
+
+	<ref refid="classdpp_1_1discord__voice__client_1a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483" kindref="member">satype_recorded_audio</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="600" column="18"/>
+        <location file="include/dpp/discordvoiceclient.h" line="607" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a982a3efeac04ddb820bbe87b08155640" kindref="member">socket_callback_t</ref></type>
@@ -1206,7 +1212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="618" column="6"/>
+        <location file="include/dpp/discordvoiceclient.h" line="626" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a7339b4ace2616cd9d251e4f7ed6b9476" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1247,7 +1253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="627" column="14"/>
+        <location file="include/dpp/discordvoiceclient.h" line="635" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ad13b56d904850d77205924d43697f0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1272,7 +1278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="633" column="14"/>
+        <location file="include/dpp/discordvoiceclient.h" line="641" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1aee5fcfe947f581ecce2c9096871f88a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1289,7 +1295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="641" column="6"/>
+        <location file="include/dpp/discordvoiceclient.h" line="649" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a1062401920a3462500f2c642138095c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1306,7 +1312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="648" column="6"/>
+        <location file="include/dpp/discordvoiceclient.h" line="656" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a017e7c98b75000d0bdc76cc16b31c093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
@@ -1323,7 +1329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="655" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="663" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a5b344a5989d67f0f0caf5b52236055bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1419,7 +1425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="666" column="1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="674" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a9248839dac635139fecaeceb903d8276" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -1433,7 +1439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="671" column="9"/>
+        <location file="include/dpp/discordvoiceclient.h" line="679" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a96d7c274062a8ed210bf15bdddaa3a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -1473,7 +1479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="679" column="14"/>
+        <location file="include/dpp/discordvoiceclient.h" line="687" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a769b1674cf88dc4f53d7609fc24b7961" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1502,7 +1508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="685" column="14"/>
+        <location file="include/dpp/discordvoiceclient.h" line="693" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a418f98812e850eb963e4b3a2a4dc0c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1516,7 +1522,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="690" column="6"/>
+        <location file="include/dpp/discordvoiceclient.h" line="698" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a6d52a32631231f3120ba9e5ebbe61a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1574,7 +1580,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="729" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="737" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a57dd66bc916543ce9ac2f809a7ba5251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1640,7 +1646,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="757" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="765" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ad58a06d5ad18e9feaef4c5e2993a5171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1695,7 +1701,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="784" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="792" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ac6d1422113278ad6049486d07ca06ae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1734,7 +1740,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="795" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="803" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a6404396de8a2641fcb3890658ce0e054" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1755,7 +1761,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="802" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="810" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a067cdfaf8a84c2bdf09febe974eb4730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1794,7 +1800,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="812" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="820" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a45085f49408bdeae9cd05dbf59d39972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -1811,7 +1817,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="820" column="10"/>
+        <location file="include/dpp/discordvoiceclient.h" line="828" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ae5456ed35a1a964a607e2abc8bd59691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1828,7 +1834,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="830" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="838" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a9cccd4ae3b80ed56dd8cf29236f9a530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1858,7 +1864,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="838" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="846" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a0bf262c6102ffdae95f999b79462a443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1875,7 +1881,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="845" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="853" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a1a98e05342f5c6b8de0f9324758f3fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1892,7 +1898,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="852" column="6"/>
+        <location file="include/dpp/discordvoiceclient.h" line="860" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a15ba91026079da2100714c12b7ade88e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -1909,7 +1915,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="860" column="7"/>
+        <location file="include/dpp/discordvoiceclient.h" line="868" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a4e75f5d97ca1691dde43ed8b0b8ca196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -1926,7 +1932,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="870" column="10"/>
+        <location file="include/dpp/discordvoiceclient.h" line="878" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a15ec0940d0a963dbb5e58d2eb895bcc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1utility_1_1uptime" kindref="compound">dpp::utility::uptime</ref></type>
@@ -1943,7 +1949,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="878" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="886" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1afe1408c1ad305aebedc7e99ba2128aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1974,7 +1980,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="896" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="904" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a6c45a33336db010eedf8853af16b94c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__voice__client" kindref="compound">discord_voice_client</ref> &amp;</type>
@@ -1993,7 +1999,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="911" column="22"/>
+        <location file="include/dpp/discordvoiceclient.h" line="919" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1a69727c9ff92f6e86f4ee51260de3d111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const std::vector&lt; std::string &gt;</type>
@@ -2010,7 +2016,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="918" column="19"/>
+        <location file="include/dpp/discordvoiceclient.h" line="926" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1aef426df9775031fed6c6f50554573a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2027,7 +2033,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="927" column="6"/>
+        <location file="include/dpp/discordvoiceclient.h" line="935" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__voice__client_1ae8e844ebb991eeb2d63771f6c5ea4938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -2046,7 +2052,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="935" column="13"/>
+        <location file="include/dpp/discordvoiceclient.h" line="943" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1a66ca960ed3dddc37340ecc5d32ff0e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -2713,7 +2719,7 @@ Generally when you&apos;re streaming and you know there will be more packet to c
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/discordvoiceclient.h" line="106" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="107" bodyend="936"/>
+    <location file="include/dpp/discordvoiceclient.h" line="106" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="107" bodyend="944"/>
     <listofallmembers>
       <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>buffer</name></member>
       <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" prot="protected" virt="non-virtual"><scope>dpp::discord_voice_client</scope><name>bytes_in</name></member>
