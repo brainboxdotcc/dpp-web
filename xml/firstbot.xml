@@ -167,7 +167,7 @@
 <sect2 id="firstbot_1autotoc_md116">
 <title>6. Add code to start the bot!</title>
 <para>To make the bot start, we must call the <ref refid="classdpp_1_1cluster_1a40e99d13e1380eccd30d13123014594f" kindref="member">dpp::cluster::start</ref> method, e.g. in our program by using <computeroutput>bot.start(dpp::st_wait)</computeroutput>.</para>
-<para>We also add a line to tell the library to output all its log information to the console, <computeroutput>bot.on_log(dpp::utility::cout_logger());</computeroutput> - if you wanted to do something more advanced, you can replace this parameter with a lambda just like all other events.</para>
+<para>We also add a line to tell the library to output all its log information to the console, use <computeroutput>bot.on_log(dpp::utility::cout_logger());</computeroutput> (<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>) - if you wanted to do something more advanced, you can replace this parameter with a lambda just like all other events.</para>
 <para>The parameter which we set to false indicates if the function should return once all shards are created. Passing <ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref> here tells the program you do not need to do anything once <computeroutput>bot.start</computeroutput> is called.</para>
 <para><programlisting filename="firstbot6.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
