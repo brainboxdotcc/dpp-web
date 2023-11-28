@@ -19,8 +19,8 @@ var NAVTREEINDEX21 =
 "functions_enum.html":[11,3,4],
 "functions_eval.html":[11,3,5],
 "functions_f.html":[11,3,0,5],
-"functions_func.html":[11,3,1],
 "functions_func.html":[11,3,1,0],
+"functions_func.html":[11,3,1],
 "functions_func_b.html":[11,3,1,1],
 "functions_func_c.html":[11,3,1,2],
 "functions_func_d.html":[11,3,1,3],
@@ -103,7 +103,8 @@ var NAVTREEINDEX21 =
 "index.html#autotoc_md145":[0,5],
 "index.html#autotoc_md146":[0,6],
 "install-arch-aur.html":[3,3],
-"install-from-source.html":[3,7],
+"install-brew.html":[3,7],
+"install-from-source.html":[3,8],
 "install-linux-deb.html":[3,0],
 "install-linux-rpm.html":[3,1],
 "install-vcpkg.html":[3,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da57a1690ffdfea4c9082a539aa966212b":[9,0,0,306,53],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da58a25fdc42553b266fabb6789c7581c1":[9,0,0,306,49],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da641b74bd5350c80129c119456fde402f":[9,0,0,306,3],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da68ed76145ad8869ff1c4cc0e71794a2f":[9,0,0,306,45],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da751a6146bc458b2d199fd54d321ab233":[9,0,0,306,41]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da68ed76145ad8869ff1c4cc0e71794a2f":[9,0,0,306,45]
 };

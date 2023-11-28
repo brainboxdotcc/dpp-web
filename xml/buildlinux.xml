@@ -10,10 +10,8 @@
 </simplesect>
 </para>
 <sect2 id="buildlinux_1autotoc_md91">
-<title>1. Copy &amp; Build Source code</title>
-<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/brainboxdotcc/DPP</highlight></codeline>
-<codeline><highlight class="normal">cd<sp/>DPP/</highlight></codeline>
-<codeline><highlight class="normal">cmake<sp/>-B<sp/>./build</highlight></codeline>
+<title>1. Build Source Code</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>-B<sp/>./build</highlight></codeline>
 <codeline><highlight class="normal">cmake<sp/>--build<sp/>./build<sp/>-j8</highlight></codeline>
 </programlisting></para>
 <para>Replace the number after <computeroutput>-j</computeroutput> with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
@@ -27,7 +25,7 @@
 <sect2 id="buildlinux_1autotoc_md93">
 <title>3. Installation to a Different Directory</title>
 <para>If you want to install the library, its dependencies, and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>:</para>
-<para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>-B<sp/>./build<sp/>-DCMAKE_INSTALL_PREFIX=/path/to/install</highlight></codeline>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>..<sp/>-DCMAKE_INSTALL_PREFIX=/path/to/install</highlight></codeline>
 </programlisting></para>
 <para>Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
 </sect2>
@@ -36,21 +34,12 @@
 <para>Once installed to the <computeroutput>/usr/local</computeroutput> directory, you can make use of the library in standalone programs simply by including it and linking to it:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">g++<sp/>-std=c++17<sp/>mydppbot.cpp<sp/>-o<sp/>dppbot<sp/>-ldpp</highlight></codeline>
 </programlisting></para>
-<para>If you are on <bold>Arch Linux</bold>, you will need to add <computeroutput>/usr/local</computeroutput> to your environment variables:</para>
-<para><programlisting filename=".bash"><codeline><highlight class="normal">export<sp/>LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH</highlight></codeline>
-<codeline><highlight class="normal">export<sp/>CPLUS_INCLUDE_PATH=/usr/local/include:$CPLUS_INCLUDE_PATH</highlight></codeline>
-</programlisting></para>
-<para>However, if you don&apos;t want to change your environment settings, you can use these flags to compile:</para>
-<para><programlisting filename=".bash"><codeline><highlight class="normal">g++<sp/>-std=c++17<sp/>-L/usr/local/lib<sp/>-I/usr/local/include<sp/>mydppbot.cpp<sp/>-o<sp/>dppbot<sp/>-ldpp</highlight></codeline>
-</programlisting></para>
 <para>The important flags in this command-line are:</para>
 <para><itemizedlist>
 <listitem><para><computeroutput>-std=c++17</computeroutput> - Required to compile the headers</para>
-</listitem><listitem><para><computeroutput>-L/usr/local/lib</computeroutput> - Required to tell the linker where libdpp is located.</para>
-</listitem><listitem><para><computeroutput>-I/usr/local/include</computeroutput> - Required to tell the linker where dpp headers are located.</para>
+</listitem><listitem><para><computeroutput>-ldpp</computeroutput> - Link to libdpp.so</para>
 </listitem><listitem><para><computeroutput>mydppbot.cpp</computeroutput> - Your source code</para>
 </listitem><listitem><para><computeroutput>dppbot</computeroutput> - The name of the executable to make</para>
-</listitem><listitem><para><computeroutput>-ldpp</computeroutput> - Link to libdpp.so</para>
 </listitem></itemizedlist>
 </para>
 <para><para><simplesect kind="note"><para>Compiling your bot with a raw <computeroutput>g++</computeroutput> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <ref refid="buildcmake" kindref="compound">Building a Discord Bot Using CMake (UNIX)</ref> or if you have not yet created a token for your bot, <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref> - If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</ulink>.</para>

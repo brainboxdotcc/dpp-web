@@ -41,6 +41,7 @@
 <para>Any code that will <bold>not</bold> build, for example: <programlisting filename=".cpp"><codeline><highlight class="normal">bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>code<sp/>will<sp/>not<sp/>build<sp/>as<sp/>it<sp/>has<sp/>no<sp/>entry<sp/>(int<sp/>main),<sp/>which<sp/>will<sp/>cause<sp/>CI<sp/>fails.<sp/>*/</highlight></codeline>
 </programlisting> should be placed in the file itself. This is so we do not have to worry about the CI testing your example when we know it will not work.</para>
+<para>Your examples <bold>need</bold> to be tested. For more information about this, visit the <bold>Testing Your Changes</bold> section.</para>
 </sect2>
 <sect2 id="docs-standards_1autotoc_md73">
 <title>Language (Not Programming)</title>
@@ -48,7 +49,7 @@
 </sect2>
 <sect2 id="docs-standards_1autotoc_md74">
 <title>Images</title>
-<para>Images are a great way to show people what they can expect at the end, a lot of tutorials don&apos;t have them but don&apos;t feel like you can&apos;t add any! We ask that you don&apos;t add images that are inappropriate and only add them if they make sense. Cut them down to a size that is readable and make sure it only contains information that is needed, for example, we don&apos;t need to see your server&apos;s channels list if the tutorial isn&apos;t covering it!</para>
+<para>Images are a great way to show people how their bot should act when they&apos;re finished with the tutorial! A lot of tutorials don&apos;t have them, however, we recommend that you add some as, not only does it tell us that you&apos;ve tested your example, but it helps users know if they&apos;ve went wrong! We ask that you don&apos;t add images that are inappropriate and only add them if they make sense. Cut them down to a size that is readable and make sure it only contains information that is needed, for example, we don&apos;t need to see your server&apos;s channels list if the tutorial isn&apos;t covering it!</para>
 <para>Take a look at some tutorial pages (for example, <ref refid="embed-message" kindref="compound">Sending Embeds</ref> and <ref refid="callback-functions" kindref="compound">Using Callback Functions</ref>) to understand what we mean.</para>
 <para>All your images should be placed in the <computeroutput>images</computeroutput> folder and should be named similar to your page&apos;s name. If you have multiple images, you can either do something like <computeroutput>image_name2</computeroutput>, <computeroutput>image_name3</computeroutput>, and so on. You can also give them unique names like <computeroutput>image_name_overview</computeroutput>, <computeroutput>image_name_end</computeroutput>, and so on.</para>
 </sect2>
@@ -73,7 +74,7 @@
 <title>Testing Your Changes</title>
 <para>To test your commits, you should install <computeroutput>doxygen</computeroutput> and <computeroutput>graphviz</computeroutput>. Then, inside your DPP folder, run <computeroutput>doxygen</computeroutput>. This will start generating a bunch of files inside a <computeroutput>docs</computeroutput> folder and may take a while. After that, view the .md file in your web browser.</para>
 <para>If this seems to fail, you can make your PR draft and use the netlify bot that replies with a link (the link may take a bit to generate) to preview your changes.</para>
-<para>If you are adding code with your commits, you <bold>need</bold> to test it with a bot. Our CI will test it too, but we expect that you at least test it on your end. </para>
+<para>If you are adding code with your commits, you <bold>need</bold> to test that it actually works with a bot. Our CI will test compile it but will not run it, we expect that you test it on your system and ensure you are giving the correct information to users. </para>
 </sect2>
     </detaileddescription>
     <location file="docpages/advanced_reference/docs-style-standards.md"/>
