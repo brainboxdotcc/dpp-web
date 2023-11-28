@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"structdpp_1_1user__context__menu__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[9,0,0,217,36],
 "structdpp_1_1user__context__menu__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[11,0,0,213,36],
 "structdpp_1_1user__context__menu__t.html#a8549c7355b20a240bb2b8f4349b21ea1":[9,0,0,217,7],
 "structdpp_1_1user__context__menu__t.html#a8549c7355b20a240bb2b8f4349b21ea1":[11,0,0,213,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "structdpp_1_1voice__client__disconnect__t.html#af32126d4ed56366b4413c84b272383b7":[11,0,0,217,4],
 "structdpp_1_1voice__client__disconnect__t.html#af32126d4ed56366b4413c84b272383b7":[9,0,0,221,4],
 "structdpp_1_1voice__client__speaking__t.html":[9,0,0,222],
-"structdpp_1_1voice__client__speaking__t.html":[11,0,0,218],
-"structdpp_1_1voice__client__speaking__t.html#a067067bfde4be0fe5f022a338fab657e":[9,0,0,222,14]
+"structdpp_1_1voice__client__speaking__t.html":[11,0,0,218]
 };

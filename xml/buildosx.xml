@@ -6,7 +6,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect2 id="buildosx_1autotoc_md88">
+<sect2 id="buildosx_1autotoc_md101">
 <title>1. Toolchain</title>
 <para>Before compiling make sure you have all the tools installed.</para>
 <para><orderedlist>
@@ -15,7 +15,7 @@
 </listitem></orderedlist>
 </para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md89">
+<sect2 id="buildosx_1autotoc_md102">
 <title>2. Install External Dependencies</title>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">brew<sp/>install<sp/>openssl<sp/>pkgconfig</highlight></codeline>
 </programlisting></para>
@@ -25,27 +25,27 @@ For voice support, additional dependencies are required:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">brew<sp/>install<sp/>libsodium<sp/>opus</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md90">
+<sect2 id="buildosx_1autotoc_md103">
 <title>3. Build Source Code</title>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>-B<sp/>./build</highlight></codeline>
 <codeline><highlight class="normal">cmake<sp/>--build<sp/>./build<sp/>-j8</highlight></codeline>
 </programlisting></para>
 <para>Replace the number after <computeroutput>-j</computeroutput> with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md91">
+<sect2 id="buildosx_1autotoc_md104">
 <title>4. Install Globally</title>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cd<sp/>build</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md92">
+<sect2 id="buildosx_1autotoc_md105">
 <title>5. Installation to a Different Directory</title>
 <para>If you want to install the library, its dependencies, and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>..<sp/>-DCMAKE_INSTALL_PREFIX=/path/to/install</highlight></codeline>
 </programlisting></para>
 <para>Then once the build is complete, run <computeroutput>sudo make install</computeroutput> to install to the location you specified.</para>
 </sect2>
-<sect2 id="buildosx_1autotoc_md93">
+<sect2 id="buildosx_1autotoc_md106">
 <title>6. Using the Library</title>
 <para>Once installed, you can make use of the library in standalone programs simply by including it and linking to it:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">clang++<sp/>-std=c++17<sp/>-ldpp<sp/>mydppbot.cpp<sp/>-o<sp/>dppbot</highlight></codeline>

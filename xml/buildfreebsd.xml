@@ -9,13 +9,13 @@
 <para><simplesect kind="note"><para>This page assumes you are the root user. If you are not, start the package install commands with <computeroutput>sudo</computeroutput>, along with <computeroutput>make install</computeroutput>. You will need <computeroutput>sudo</computeroutput> installed if you are not the root user.</para>
 </simplesect>
 </para>
-<sect2 id="buildfreebsd_1autotoc_md72">
+<sect2 id="buildfreebsd_1autotoc_md85">
 <title>1. Toolchain</title>
 <para>Since the project uses <computeroutput>CMake</computeroutput>, you&apos;ll need to install it! If you don&apos;t have it, you can do the following:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">pkg<sp/>install<sp/>cmake</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md73">
+<sect2 id="buildfreebsd_1autotoc_md86">
 <title>2. Install Voice Dependencies (Optional)</title>
 <para>If you wish to use voice support, you&apos;ll need to install opus and libsodium:</para>
 <para>First, you need to install opus. <programlisting filename=".bash"><codeline><highlight class="normal">cd<sp/>/usr/ports/audio/opus</highlight></codeline>
@@ -26,27 +26,27 @@
 <codeline><highlight class="normal">make<sp/>&amp;&amp;<sp/>make<sp/>install</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md74">
+<sect2 id="buildfreebsd_1autotoc_md87">
 <title>3. Build Source Code</title>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>-B<sp/>./build</highlight></codeline>
 <codeline><highlight class="normal">cmake<sp/>--build<sp/>./build<sp/>-j8</highlight></codeline>
 </programlisting></para>
 <para>Replace the number after <computeroutput>-j</computeroutput> with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md75">
+<sect2 id="buildfreebsd_1autotoc_md88">
 <title>4. Install Globally</title>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cd<sp/>build</highlight></codeline>
 <codeline><highlight class="normal">make<sp/>install</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md76">
+<sect2 id="buildfreebsd_1autotoc_md89">
 <title>5. Installation to a Different Directory (Optional)</title>
 <para>If you want to install the library, its dependencies and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>..<sp/>-DCMAKE_INSTALL_PREFIX=/path/to/install</highlight></codeline>
 </programlisting></para>
 <para>Then once the build is complete, run <computeroutput>sudo make install</computeroutput> to install to the location you specified.</para>
 </sect2>
-<sect2 id="buildfreebsd_1autotoc_md77">
+<sect2 id="buildfreebsd_1autotoc_md90">
 <title>6. Using the Library</title>
 <para>Once installed, you can make use of the library in standalone programs simply by including it and linking to it:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">clang++<sp/>-std=c++17<sp/>-L/usr/local/lib<sp/>-I/usr/local/include<sp/>-ldpp<sp/>bot.cpp<sp/>-o<sp/>dppbot</highlight></codeline>

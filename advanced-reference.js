@@ -4,6 +4,7 @@ var advanced_reference =
     [ "Thread Model", "thread-model.html", null ],
     [ "Voice Model", "voice-model.html", null ],
     [ "Coding Style Standards", "coding-standards.html", null ],
+    [ "Documentation Style Standards", "docs-standards.html", null ],
     [ "Unit Tests", "unit-tests.html", null ],
     [ "Ownership of Local Variables and Safely Transferring into a Lambda", "lambdas-and-locals.html", null ],
     [ "Governance and Project Development Structure", "governance.html", null ],

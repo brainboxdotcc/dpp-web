@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"namespacemembers_eval_g.html":[9,1,5,5],
 "namespacemembers_eval_h.html":[9,1,5,6],
 "namespacemembers_eval_i.html":[9,1,5,7],
 "namespacemembers_eval_l.html":[9,1,5,8],
@@ -70,9 +71,9 @@ var NAVTREEINDEX50 =
 "private-messaging.html":[5,0,2],
 "record-user.html":[5,2,3],
 "resolved-objects.html":[5,1,2],
-"roadmap.html":[6,7],
-"security.html":[6,8],
-"separate-events.html":[6,10],
+"roadmap.html":[6,8],
+"security.html":[6,9],
+"separate-events.html":[6,11],
 "setting_status.html":[5,4,8],
 "slashcommands-menu.html":[5,1,0],
 "slashcommands.html":[5,1,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "structdpp_1_1autocomplete__interaction.html#a52a8e3ebf0b6fafffe920b52b56e840f":[11,0,0,22,0],
 "structdpp_1_1autocomplete__interaction.html#a52a8e3ebf0b6fafffe920b52b56e840f":[9,0,0,26,0],
 "structdpp_1_1autocomplete__interaction.html#a6e1ddf18af43a38f4385ed418e5bfa7f":[11,0,0,22,2],
-"structdpp_1_1autocomplete__interaction.html#a6e1ddf18af43a38f4385ed418e5bfa7f":[9,0,0,26,2],
-"structdpp_1_1autocomplete__interaction.html#a7974cc6a20dcd24f8c25f1bdba549812":[9,0,0,26,6]
+"structdpp_1_1autocomplete__interaction.html#a6e1ddf18af43a38f4385ed418e5bfa7f":[9,0,0,26,2]
 };
