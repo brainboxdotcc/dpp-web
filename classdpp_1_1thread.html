@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1thread.html',''); initResi
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classdpp_1_1thread-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dpp::thread Class Reference</div></div>
@@ -112,7 +113,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1thread.html',''); initResi
 <p>A definition of a discord thread. A thread is a superset of a channel. Not to be confused with <code>std::thread</code>!  
  <a href="classdpp_1_1thread.html#details">More...</a></p>
 
-<p><code>#include &lt;channel.h&gt;</code></p>
+<p><code>#include &lt;thread.h&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for dpp::thread:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -132,21 +133,15 @@ $(document).ready(function(){initNavTree('classdpp_1_1thread.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa013c0c3c26e9109488c8e2e83e9e36a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#aa013c0c3c26e9109488c8e2e83e9e36a">thread</a> ()</td></tr>
-<tr class="memdesc:aa013c0c3c26e9109488c8e2e83e9e36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new thread object.  <a href="classdpp_1_1thread.html#aa013c0c3c26e9109488c8e2e83e9e36a">More...</a><br /></td></tr>
-<tr class="separator:aa013c0c3c26e9109488c8e2e83e9e36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a6fdcfef22b3aba9c41020e1811670"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#ab8a6fdcfef22b3aba9c41020e1811670">is_news_thread</a> () const</td></tr>
-<tr class="memdesc:ab8a6fdcfef22b3aba9c41020e1811670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the thread is within an announcement channel.  <a href="classdpp_1_1thread.html#ab8a6fdcfef22b3aba9c41020e1811670">More...</a><br /></td></tr>
-<tr class="separator:ab8a6fdcfef22b3aba9c41020e1811670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7e19705c6040c7593eb6a582fa017c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#af7e19705c6040c7593eb6a582fa017c1">is_public_thread</a> () const</td></tr>
-<tr class="memdesc:af7e19705c6040c7593eb6a582fa017c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a public thread.  <a href="classdpp_1_1thread.html#af7e19705c6040c7593eb6a582fa017c1">More...</a><br /></td></tr>
-<tr class="separator:af7e19705c6040c7593eb6a582fa017c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b23ff4092db13a836895efbd5ede669"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a8b23ff4092db13a836895efbd5ede669">is_private_thread</a> () const</td></tr>
-<tr class="memdesc:a8b23ff4092db13a836895efbd5ede669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a private thread.  <a href="classdpp_1_1thread.html#a8b23ff4092db13a836895efbd5ede669">More...</a><br /></td></tr>
-<tr class="separator:a8b23ff4092db13a836895efbd5ede669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee4da74894807f96c57401486cc417f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#afee4da74894807f96c57401486cc417f">~thread</a> ()=default</td></tr>
-<tr class="memdesc:afee4da74894807f96c57401486cc417f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the thread object.  <a href="classdpp_1_1thread.html#afee4da74894807f96c57401486cc417f">More...</a><br /></td></tr>
-<tr class="separator:afee4da74894807f96c57401486cc417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508363d81af12ca940a21429d6c64eb6"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a508363d81af12ca940a21429d6c64eb6">is_news_thread</a> () const noexcept</td></tr>
+<tr class="memdesc:a508363d81af12ca940a21429d6c64eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the thread is within an announcement channel.  <a href="classdpp_1_1thread.html#a508363d81af12ca940a21429d6c64eb6">More...</a><br /></td></tr>
+<tr class="separator:a508363d81af12ca940a21429d6c64eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74550a7062efce631ca069e29be51cf2"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a74550a7062efce631ca069e29be51cf2">is_public_thread</a> () const noexcept</td></tr>
+<tr class="memdesc:a74550a7062efce631ca069e29be51cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a public thread.  <a href="classdpp_1_1thread.html#a74550a7062efce631ca069e29be51cf2">More...</a><br /></td></tr>
+<tr class="separator:a74550a7062efce631ca069e29be51cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e5b9ed84105dd472e136a49e818aa7"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a33e5b9ed84105dd472e136a49e818aa7">is_private_thread</a> () const noexcept</td></tr>
+<tr class="memdesc:a33e5b9ed84105dd472e136a49e818aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the channel is a private thread.  <a href="classdpp_1_1thread.html#a33e5b9ed84105dd472e136a49e818aa7">More...</a><br /></td></tr>
+<tr class="separator:a33e5b9ed84105dd472e136a49e818aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a674755c169a3517361dc847511617"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a08a674755c169a3517361dc847511617">get_mention</a> () const</td></tr>
 <tr class="memdesc:a08a674755c169a3517361dc847511617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mention ping for the channel.  <a href="classdpp_1_1channel.html#a08a674755c169a3517361dc847511617">More...</a><br /></td></tr>
 <tr class="separator:a08a674755c169a3517361dc847511617"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,25 +313,25 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab78142eef6bd03926469a118778507da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1thread__member.html">thread_member</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#ab78142eef6bd03926469a118778507da">member</a></td></tr>
+<tr class="memitem:ab78142eef6bd03926469a118778507da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1thread__member.html">thread_member</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#ab78142eef6bd03926469a118778507da">member</a> = {}</td></tr>
 <tr class="memdesc:ab78142eef6bd03926469a118778507da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread member of current user if joined to the thread. Note this is only set by certain api calls otherwise contains default data.  <a href="classdpp_1_1thread.html#ab78142eef6bd03926469a118778507da">More...</a><br /></td></tr>
 <tr class="separator:ab78142eef6bd03926469a118778507da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64231c8975f095c371b0a4ba478d33ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a64231c8975f095c371b0a4ba478d33ee">metadata</a></td></tr>
+<tr class="memitem:a64231c8975f095c371b0a4ba478d33ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a64231c8975f095c371b0a4ba478d33ee">metadata</a> = {}</td></tr>
 <tr class="memdesc:a64231c8975f095c371b0a4ba478d33ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread metadata (threads)  <a href="classdpp_1_1thread.html#a64231c8975f095c371b0a4ba478d33ee">More...</a><br /></td></tr>
 <tr class="separator:a64231c8975f095c371b0a4ba478d33ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bf5e18b2098c25224953c88f7cef0de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a1bf5e18b2098c25224953c88f7cef0de">msg</a></td></tr>
+<tr class="memitem:a1bf5e18b2098c25224953c88f7cef0de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a1bf5e18b2098c25224953c88f7cef0de">msg</a> = {}</td></tr>
 <tr class="memdesc:a1bf5e18b2098c25224953c88f7cef0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created message. Only filled within the <a class="el" href="classdpp_1_1cluster.html#ad96d8fcec4c69d82fd4f2fb85ddfa2bf" title="Create a thread in a forum or media channel.">cluster::thread_create_in_forum()</a> method.  <a href="classdpp_1_1thread.html#a1bf5e18b2098c25224953c88f7cef0de">More...</a><br /></td></tr>
 <tr class="separator:a1bf5e18b2098c25224953c88f7cef0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ab5e0ee2b50f2bab43090312749ce3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">applied_tags</a></td></tr>
+<tr class="memitem:a8ab5e0ee2b50f2bab43090312749ce3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">applied_tags</a> = {}</td></tr>
 <tr class="memdesc:a8ab5e0ee2b50f2bab43090312749ce3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of <a class="el" href="structdpp_1_1forum__tag.html" title="Represents a tag that is able to be applied to a thread in a forum or media channel.">dpp::forum_tag</a> IDs that have been applied to a thread in a forum or media channel.  <a href="classdpp_1_1thread.html#a8ab5e0ee2b50f2bab43090312749ce3d">More...</a><br /></td></tr>
 <tr class="separator:a8ab5e0ee2b50f2bab43090312749ce3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e243f06170d82c268c014a93a64354f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a6e243f06170d82c268c014a93a64354f">total_messages_sent</a></td></tr>
+<tr class="memitem:a6e243f06170d82c268c014a93a64354f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a6e243f06170d82c268c014a93a64354f">total_messages_sent</a> = 0</td></tr>
 <tr class="memdesc:a6e243f06170d82c268c014a93a64354f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of messages ever sent in the thread. It's similar to <a class="el" href="classdpp_1_1thread.html#a546adcc48a0b7853ade0f11544ebfcc7" title="Number of messages (not including the initial message or deleted messages) of the thread....">thread::message_count</a> on message creation, but will not decrement the number when a message is deleted.  <a href="classdpp_1_1thread.html#a6e243f06170d82c268c014a93a64354f">More...</a><br /></td></tr>
 <tr class="separator:a6e243f06170d82c268c014a93a64354f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a546adcc48a0b7853ade0f11544ebfcc7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a546adcc48a0b7853ade0f11544ebfcc7">message_count</a></td></tr>
+<tr class="memitem:a546adcc48a0b7853ade0f11544ebfcc7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#a546adcc48a0b7853ade0f11544ebfcc7">message_count</a> = 0</td></tr>
 <tr class="memdesc:a546adcc48a0b7853ade0f11544ebfcc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of messages (not including the initial message or deleted messages) of the thread. For threads created before July 1, 2022, the message count is inaccurate when it's greater than 50.  <a href="classdpp_1_1thread.html#a546adcc48a0b7853ade0f11544ebfcc7">More...</a><br /></td></tr>
 <tr class="separator:a546adcc48a0b7853ade0f11544ebfcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7afa978603442b3a4c0cbf366fdf6e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#ace7afa978603442b3a4c0cbf366fdf6e">member_count</a></td></tr>
+<tr class="memitem:ace7afa978603442b3a4c0cbf366fdf6e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#ace7afa978603442b3a4c0cbf366fdf6e">member_count</a> = 0</td></tr>
 <tr class="memdesc:ace7afa978603442b3a4c0cbf366fdf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate count of members in a thread (stops counting at 50)  <a href="classdpp_1_1thread.html#ace7afa978603442b3a4c0cbf366fdf6e">More...</a><br /></td></tr>
 <tr class="separator:ace7afa978603442b3a4c0cbf366fdf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065d6fbd4e21759354c2516b074078a8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a065d6fbd4e21759354c2516b074078a8">name</a></td></tr>
@@ -417,6 +412,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:ad0cfb3971d7413504922bb6859593600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build json for this thread object.  <a href="classdpp_1_1thread.html#ad0cfb3971d7413504922bb6859593600">More...</a><br /></td></tr>
 <tr class="separator:ad0cfb3971d7413504922bb6859593600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a70e09ac3a48bd458579fb42434bda722"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1channel.html#a70e09ac3a48bd458579fb42434bda722">CHANNEL_TYPE_MASK</a> = 0b0000000000001111</td></tr>
+<tr class="separator:a70e09ac3a48bd458579fb42434bda722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:adb3d4b4d24393e70fea7dfaa37b28e92"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1thread.html#adb3d4b4d24393e70fea7dfaa37b28e92">json_interface&lt; thread &gt;</a></td></tr>
@@ -424,54 +424,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A definition of a discord thread. A thread is a superset of a channel. Not to be confused with <code>std::thread</code>! </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa013c0c3c26e9109488c8e2e83e9e36a" name="aa013c0c3c26e9109488c8e2e83e9e36a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa013c0c3c26e9109488c8e2e83e9e36a">&#9670;&nbsp;</a></span>thread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">dpp::thread::thread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct a new thread object. </p>
-
-</div>
-</div>
-<a id="afee4da74894807f96c57401486cc417f" name="afee4da74894807f96c57401486cc417f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afee4da74894807f96c57401486cc417f">&#9670;&nbsp;</a></span>~thread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual dpp::thread::~thread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destroy the thread object. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a189a5d675001b810199274201b15ea38" name="a189a5d675001b810199274201b15ea38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a189a5d675001b810199274201b15ea38">&#9670;&nbsp;</a></span>add_flag()</h2>
 
@@ -1321,19 +1274,27 @@ This is an alias for <a class="el" href="classdpp_1_1guild.html#ad33639446c930d4
 
 </div>
 </div>
-<a id="ab8a6fdcfef22b3aba9c41020e1811670" name="ab8a6fdcfef22b3aba9c41020e1811670"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8a6fdcfef22b3aba9c41020e1811670">&#9670;&nbsp;</a></span>is_news_thread()</h2>
+<a id="a508363d81af12ca940a21429d6c64eb6" name="a508363d81af12ca940a21429d6c64eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508363d81af12ca940a21429d6c64eb6">&#9670;&nbsp;</a></span>is_news_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool dpp::thread::is_news_thread </td>
+          <td class="memname">constexpr bool dpp::thread::is_news_thread </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns true if the thread is within an announcement channel. </p>
@@ -1397,19 +1358,27 @@ This is an alias for <a class="el" href="classdpp_1_1guild.html#ad33639446c930d4
 
 </div>
 </div>
-<a id="a8b23ff4092db13a836895efbd5ede669" name="a8b23ff4092db13a836895efbd5ede669"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b23ff4092db13a836895efbd5ede669">&#9670;&nbsp;</a></span>is_private_thread()</h2>
+<a id="a33e5b9ed84105dd472e136a49e818aa7" name="a33e5b9ed84105dd472e136a49e818aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e5b9ed84105dd472e136a49e818aa7">&#9670;&nbsp;</a></span>is_private_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool dpp::thread::is_private_thread </td>
+          <td class="memname">constexpr bool dpp::thread::is_private_thread </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns true if the channel is a private thread. </p>
@@ -1417,19 +1386,27 @@ This is an alias for <a class="el" href="classdpp_1_1guild.html#ad33639446c930d4
 
 </div>
 </div>
-<a id="af7e19705c6040c7593eb6a582fa017c1" name="af7e19705c6040c7593eb6a582fa017c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7e19705c6040c7593eb6a582fa017c1">&#9670;&nbsp;</a></span>is_public_thread()</h2>
+<a id="a74550a7062efce631ca069e29be51cf2" name="a74550a7062efce631ca069e29be51cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74550a7062efce631ca069e29be51cf2">&#9670;&nbsp;</a></span>is_public_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool dpp::thread::is_public_thread </td>
+          <td class="memname">constexpr bool dpp::thread::is_public_thread </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns true if the channel is a public thread. </p>
@@ -2488,7 +2465,7 @@ false objects are not the same id </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&gt; dpp::thread::applied_tags</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&gt; dpp::thread::applied_tags = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2542,6 +2519,28 @@ false objects are not the same id </dd></dl>
 </div><div class="memdoc">
 
 <p>The bitrate (in kilobits) of the voice channel. </p>
+
+</div>
+</div>
+<a id="a70e09ac3a48bd458579fb42434bda722" name="a70e09ac3a48bd458579fb42434bda722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e09ac3a48bd458579fb42434bda722">&#9670;&nbsp;</a></span>CHANNEL_TYPE_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint16_t dpp::channel::CHANNEL_TYPE_MASK = 0b0000000000001111</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2793,7 +2792,7 @@ false objects are not the same id </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdpp_1_1thread__member.html">thread_member</a> dpp::thread::member</td>
+          <td class="memname"><a class="el" href="structdpp_1_1thread__member.html">thread_member</a> dpp::thread::member = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2809,7 +2808,7 @@ false objects are not the same id </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t dpp::thread::member_count</td>
+          <td class="memname">uint8_t dpp::thread::member_count = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2825,7 +2824,7 @@ false objects are not the same id </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t dpp::thread::message_count</td>
+          <td class="memname">uint8_t dpp::thread::message_count = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2841,7 +2840,7 @@ false objects are not the same id </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a> dpp::thread::metadata</td>
+          <td class="memname"><a class="el" href="structdpp_1_1thread__metadata.html">thread_metadata</a> dpp::thread::metadata = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2857,7 +2856,7 @@ false objects are not the same id </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdpp_1_1message.html">message</a> dpp::thread::msg</td>
+          <td class="memname"><a class="el" href="structdpp_1_1message.html">message</a> dpp::thread::msg = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3113,7 +3112,7 @@ false objects are not the same id </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t dpp::thread::total_messages_sent</td>
+          <td class="memname">uint32_t dpp::thread::total_messages_sent = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -59,6 +59,7 @@ var classdpp_1_1channel =
     [ "json_interface< channel >", "classdpp_1_1channel.html#ab8bacef9a52013dfd6d8ab4a2fce3fc7", null ],
     [ "available_tags", "classdpp_1_1channel.html#a39f17a9a627d819d89e124fb944ad5c2", null ],
     [ "bitrate", "classdpp_1_1channel.html#ab32308d8281aef6bfe4d5a6538c6306e", null ],
+    [ "CHANNEL_TYPE_MASK", "classdpp_1_1channel.html#a70e09ac3a48bd458579fb42434bda722", null ],
     [ "default_auto_archive_duration", "classdpp_1_1channel.html#af6dd4a18591a1297b5c24bd2b6817fc1", null ],
     [ "default_reaction", "classdpp_1_1channel.html#a5576665c6f660702cb1ea8cd23339177", null ],
     [ "default_sort_order", "classdpp_1_1channel.html#a47d5b72cd22c98605f7cdbcb747f7775", null ],
