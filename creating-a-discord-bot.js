@@ -6,5 +6,6 @@ var creating_a_discord_bot =
     [ "Building a Discord Bot using CLion (Linux)", "build-a-discord-bot-linux-clion.html", null ],
     [ "Building a Discord Bot Using CMake (UNIX)", "buildcmake.html", null ],
     [ "Build a Discord Bot Using Meson", "buildmeson.html", null ],
-    [ "Creating a Discord Bot in Replit", "building-a-cpp-discord-bot-in-repl.html", null ]
+    [ "Creating a Discord Bot in Replit", "building-a-cpp-discord-bot-in-repl.html", null ],
+    [ "Building a Discord Bot using Xcode (OSX)", "build-a-bot-xcode.html", null ]
 ];
