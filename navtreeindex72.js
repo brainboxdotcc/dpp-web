@@ -4,6 +4,7 @@ var NAVTREEINDEX72 =
 "user-only-messages.html":[5,1,1],
 "using-cache.html":[5,0,6],
 "using-coroutines.html":[5,3],
+"using-emojis.html":[5,4,9],
 "voice-model.html":[6,2],
 "webhooks.html":[5,0,4],
 "":[9,0,1]

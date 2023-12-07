@@ -100,12 +100,13 @@ var searchData=
   ['using_20cache_97',['Using Cache',['../using-cache.html',1,'the-basics']]],
   ['using_20callback_20functions_98',['Using Callback Functions',['../callback-functions.html',1,'the-basics']]],
   ['using_20coroutines_99',['Using Coroutines',['../using-coroutines.html',1,'example-programs']]],
-  ['using_20file_20parameters_20for_20application_20commands_20_28slash_20commands_29_100',['Using File Parameters for Application Commands (Slash Commands)',['../discord-application-command-file-upload.html',1,'slashcommands-menu']]],
-  ['using_20resolved_20objects_101',['Using Resolved Objects',['../resolved-objects.html',1,'interactions-and-components']]],
-  ['using_20select_20menu_20components_102',['Using Select Menu Components',['../components3.html',1,'components-menu']]],
-  ['using_20slash_20commands_20and_20interactions_103',['Using Slash Commands and Interactions',['../slashcommands.html',1,'slashcommands-menu']]],
-  ['using_20sub_2dcommands_20in_20slash_20commands_104',['Using Sub-Commands in Slash Commands',['../subcommands.html',1,'slashcommands-menu']]],
-  ['usr_105',['usr',['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()'],['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()']]],
-  ['utf8len_106',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
-  ['utf8substr_107',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
+  ['using_20emojis_100',['Using Emojis',['../using-emojis.html',1,'misc']]],
+  ['using_20file_20parameters_20for_20application_20commands_20_28slash_20commands_29_101',['Using File Parameters for Application Commands (Slash Commands)',['../discord-application-command-file-upload.html',1,'slashcommands-menu']]],
+  ['using_20resolved_20objects_102',['Using Resolved Objects',['../resolved-objects.html',1,'interactions-and-components']]],
+  ['using_20select_20menu_20components_103',['Using Select Menu Components',['../components3.html',1,'components-menu']]],
+  ['using_20slash_20commands_20and_20interactions_104',['Using Slash Commands and Interactions',['../slashcommands.html',1,'slashcommands-menu']]],
+  ['using_20sub_2dcommands_20in_20slash_20commands_105',['Using Sub-Commands in Slash Commands',['../subcommands.html',1,'slashcommands-menu']]],
+  ['usr_106',['usr',['../classdpp_1_1interaction.html#af42be274f0c532e1b227d6725f25ecd3',1,'dpp::interaction::usr()'],['../structdpp_1_1message_1_1message__interaction__struct.html#a5c04b0bdf214a00f07d24f8ced952525',1,'dpp::message::message_interaction_struct::usr()']]],
+  ['utf8len_107',['utf8len',['../namespacedpp_1_1utility.html#a62cc8fc3994f6b3d49cf4923b993c231',1,'dpp::utility']]],
+  ['utf8substr_108',['utf8substr',['../namespacedpp_1_1utility.html#afa6985aaa798fa30b73c1decc418cd32',1,'dpp::utility']]]
 ];
