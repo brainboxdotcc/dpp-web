@@ -12,6 +12,8 @@ var structdpp_1_1ready__t =
     [ "operator=", "structdpp_1_1ready__t.html#a4645c2cc7dfe1def0b936d5726f7b8db", null ],
     [ "cancelled", "structdpp_1_1ready__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
     [ "from", "structdpp_1_1ready__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71", null ],
+    [ "guild_count", "structdpp_1_1ready__t.html#abbcd25ae36521bf0393c43992b1abbb9", null ],
+    [ "guilds", "structdpp_1_1ready__t.html#a395426b0db71f9c809872b5084ba729d", null ],
     [ "raw_event", "structdpp_1_1ready__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "session_id", "structdpp_1_1ready__t.html#a23affdff20fde573d1296cd21c3d56c8", null ],
     [ "shard_id", "structdpp_1_1ready__t.html#ad031e4a6c0354ac8ad28b61045c2c09d", null ]
