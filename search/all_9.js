@@ -227,7 +227,7 @@ var searchData=
   ['is_5flinked_224',['is_linked',['../classdpp_1_1role.html#a960be31089b54b425089ce212ce69963',1,'dpp::role']]],
   ['is_5floading_225',['is_loading',['../structdpp_1_1message.html#a25d4b0fbfcc698a74fa4f2b71796e874',1,'dpp::message']]],
   ['is_5flocked_5fpermissions_226',['is_locked_permissions',['../classdpp_1_1channel.html#ac8ce0b3fc552cfe96f46e6c55299a810',1,'dpp::channel']]],
-  ['is_5fmanaged_227',['is_managed',['../classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9',1,'dpp::role::is_managed()'],['../classdpp_1_1emoji.html#ae92572e9263cf62cc3e1cc826d98f5ad',1,'dpp::emoji::is_managed()']]],
+  ['is_5fmanaged_227',['is_managed',['../classdpp_1_1emoji.html#ae92572e9263cf62cc3e1cc826d98f5ad',1,'dpp::emoji::is_managed()'],['../classdpp_1_1role.html#a479bc27fe486bb70dd3fc1376df3c5b9',1,'dpp::role::is_managed()']]],
   ['is_5fmedia_5fchannel_228',['is_media_channel',['../classdpp_1_1channel.html#a3a970dbb51cd4270f2acceed77787e13',1,'dpp::channel']]],
   ['is_5fmentionable_229',['is_mentionable',['../classdpp_1_1role.html#a1d5a026fa3773f52b9c2cee6c590509f',1,'dpp::role']]],
   ['is_5fmfa_5fenabled_230',['is_mfa_enabled',['../classdpp_1_1user.html#a08cd09a04a75493693d60a99e0123905',1,'dpp::user']]],
@@ -286,9 +286,10 @@ var searchData=
   ['it_5fcomponent_5fbutton_283',['it_component_button',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1',1,'dpp']]],
   ['it_5fmodal_5fsubmit_284',['it_modal_submit',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a2260f71b08edd3a605b6bc6c49c0659b',1,'dpp']]],
   ['it_5fping_285',['it_ping',['../namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275',1,'dpp']]],
-  ['itt_5fembedded_5fapplication_286',['itt_embedded_application',['../namespacedpp.html#a7744393c99f4267d89195749406eed3ba5a920f5e05cfec0e34fba45ceebc3bcf',1,'dpp']]],
-  ['itt_5fnone_287',['itt_none',['../namespacedpp.html#a7744393c99f4267d89195749406eed3baaeef0e66699afa934ed716404a31ae06',1,'dpp']]],
-  ['itt_5fstream_288',['itt_stream',['../namespacedpp.html#a7744393c99f4267d89195749406eed3ba96dc2021651edfef0a9154744e386a8e',1,'dpp']]],
-  ['ivory_289',['ivory',['../namespacedpp_1_1colors.html#ab9d16d50348ea1c32901c4f7817f2b46',1,'dpp::colors']]],
-  ['izakaya_5flantern_290',['izakaya_lantern',['../namespacedpp_1_1unicode__emoji.html#a04c02bd0c26637356cf4d845a1bb93c4',1,'dpp::unicode_emoji']]]
+  ['iteration_5finterval_286',['iteration_interval',['../classdpp_1_1discord__voice__client.html#a931db7e49b13e5c8abbebb204fa62ed2',1,'dpp::discord_voice_client']]],
+  ['itt_5fembedded_5fapplication_287',['itt_embedded_application',['../namespacedpp.html#a7744393c99f4267d89195749406eed3ba5a920f5e05cfec0e34fba45ceebc3bcf',1,'dpp']]],
+  ['itt_5fnone_288',['itt_none',['../namespacedpp.html#a7744393c99f4267d89195749406eed3baaeef0e66699afa934ed716404a31ae06',1,'dpp']]],
+  ['itt_5fstream_289',['itt_stream',['../namespacedpp.html#a7744393c99f4267d89195749406eed3ba96dc2021651edfef0a9154744e386a8e',1,'dpp']]],
+  ['ivory_290',['ivory',['../namespacedpp_1_1colors.html#ab9d16d50348ea1c32901c4f7817f2b46',1,'dpp::colors']]],
+  ['izakaya_5flantern_291',['izakaya_lantern',['../namespacedpp_1_1unicode__emoji.html#a04c02bd0c26637356cf4d845a1bb93c4',1,'dpp::unicode_emoji']]]
 ];
