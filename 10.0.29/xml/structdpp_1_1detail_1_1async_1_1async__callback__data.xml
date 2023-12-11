@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1detail_1_1async_1_1async__callback__data" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::detail::async::async_callback_data</compoundname>
+    <includes local="no">async.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1async_1_1async__callback__data_1a3dc812ab81bb7e5b936802a33f2efd08" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; int &gt;</type>
+        <definition>std::atomic&lt;int&gt; dpp::detail::async::async_callback_data&lt; R &gt;::ref_count</definition>
+        <argsstring></argsstring>
+        <name>ref_count</name>
+        <initializer>{1}</initializer>
+        <briefdescription>
+<para>Number of references to this callback state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="90" column="13" bodyfile="include/dpp/coro/async.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1async_1_1async__callback__data_1add060165d41c5b0fb13d9bb8fafa9321" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; <ref refid="namespacedpp_1_1detail_1_1async_1a7535e93a3c82431d3ff869d0cbb897bd" kindref="member">state_t</ref> &gt;</type>
+        <definition>std::atomic&lt;state_t&gt; dpp::detail::async::async_callback_data&lt; R &gt;::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>= <ref refid="namespacedpp_1_1detail_1_1async_1a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9" kindref="member">state_t::sent</ref></initializer>
+        <briefdescription>
+<para>State of the awaitable and the API callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="95" column="13" bodyfile="include/dpp/coro/async.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1async_1_1async__callback__data_1a2381ea6baf7b98a4778fe9347f968595" prot="public" static="no" mutable="no">
+        <type>std::array&lt; std::byte, sizeof(R)&gt;</type>
+        <definition>std::array&lt;std::byte, sizeof(R)&gt; dpp::detail::async::async_callback_data&lt; R &gt;::result_storage</definition>
+        <argsstring></argsstring>
+        <name>result_storage</name>
+        <briefdescription>
+<para>The stored result of the API call, stored as an array of bytes to directly construct in place. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="100" column="20" bodyfile="include/dpp/coro/async.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1detail_1_1async_1_1async__callback__data_1a8f271f6034388e70c79e678dc85aafdb" prot="public" static="no" mutable="no">
+        <type>std_coroutine::coroutine_handle</type>
+        <definition>std_coroutine::coroutine_handle dpp::detail::async::async_callback_data&lt; R &gt;::coro_handle</definition>
+        <argsstring></argsstring>
+        <name>coro_handle</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Handle to the coroutine co_await-ing on this API call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://en.cppreference.com/w/cpp/coroutine/coroutine_handle">std::coroutine_handle</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="107" column="2" bodyfile="include/dpp/coro/async.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1detail_1_1async_1_1async__callback__data_1ac1b36f1c29879e9b4419edc51fce224e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::detail::async::async_callback_data&lt; R &gt;::construct_result</definition>
+        <argsstring>(Ts &amp;&amp;... ts)</argsstring>
+        <name>construct_result</name>
+        <param>
+          <type>Ts &amp;&amp;...</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to construct the result in the storage and initialize its lifetime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This is only a convenience function, ONLY CALL THIS IN THE CALLBACK, before setting state to done. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="115" column="6" bodyfile="include/dpp/coro/async.h" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1detail_1_1async_1_1async__callback__data_1aaa10d635f06a10ade6c9961330b0aae2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::async::async_callback_data&lt; R &gt;::~async_callback_data</definition>
+        <argsstring>()</argsstring>
+        <name>~async_callback_data</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Also destroys the result if present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="125" column="1" bodyfile="include/dpp/coro/async.h" bodystart="125" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>State of the async and its callback. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Defined outside of <ref refid="classdpp_1_1async" kindref="compound">dpp::async</ref> because this seems to work better with Intellisense. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::detail::async::async_callback_data&lt; R &gt;</label>
+        <link refid="structdpp_1_1detail_1_1async_1_1async__callback__data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ref_count</edgelabel>
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>result_storage</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>coro_handle</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>array&lt;</label>
+      </node>
+      <node id="2">
+        <label>atomic&lt;</label>
+      </node>
+      <node id="4">
+        <label>coroutine_handle</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/async.h" line="86" column="1" bodyfile="include/dpp/coro/async.h" bodystart="86" bodyend="130"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1detail_1_1async_1_1async__callback__data_1ac1b36f1c29879e9b4419edc51fce224e" prot="public" virt="non-virtual"><scope>dpp::detail::async::async_callback_data</scope><name>construct_result</name></member>
+      <member refid="structdpp_1_1detail_1_1async_1_1async__callback__data_1a8f271f6034388e70c79e678dc85aafdb" prot="public" virt="non-virtual"><scope>dpp::detail::async::async_callback_data</scope><name>coro_handle</name></member>
+      <member refid="structdpp_1_1detail_1_1async_1_1async__callback__data_1a3dc812ab81bb7e5b936802a33f2efd08" prot="public" virt="non-virtual"><scope>dpp::detail::async::async_callback_data</scope><name>ref_count</name></member>
+      <member refid="structdpp_1_1detail_1_1async_1_1async__callback__data_1a2381ea6baf7b98a4778fe9347f968595" prot="public" virt="non-virtual"><scope>dpp::detail::async::async_callback_data</scope><name>result_storage</name></member>
+      <member refid="structdpp_1_1detail_1_1async_1_1async__callback__data_1add060165d41c5b0fb13d9bb8fafa9321" prot="public" virt="non-virtual"><scope>dpp::detail::async::async_callback_data</scope><name>state</name></member>
+      <member refid="structdpp_1_1detail_1_1async_1_1async__callback__data_1aaa10d635f06a10ade6c9961330b0aae2" prot="public" virt="non-virtual"><scope>dpp::detail::async::async_callback_data</scope><name>~async_callback_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

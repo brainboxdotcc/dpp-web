@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1timed__listener" kind="class" language="C++" prot="public">
+    <compoundname>dpp::timed_listener</compoundname>
+    <includes local="no">timed_listener.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename attached_event</type>
+      </param>
+      <param>
+        <type>class listening_function</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1timed__listener_1a6d77daab7084623a666845d9a5c23ba2" prot="private" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+        <definition>cluster* dpp::timed_listener&lt; attached_event, listening_function &gt;::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+<para>Owning cluster. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timed_listener.h" line="46" column="9" bodyfile="include/dpp/timed_listener.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1timed__listener_1a6c19cd2fb8770b6ea608282917cbe1b9" prot="private" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::timed_listener&lt; attached_event, listening_function &gt;::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+<para>Duration of listen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timed_listener.h" line="51" column="8" bodyfile="include/dpp/timed_listener.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1timed__listener_1a352f132444f5821b219aa02ac5f700f7" prot="private" static="no" mutable="no">
+        <type>attached_event &amp;</type>
+        <definition>attached_event&amp; dpp::timed_listener&lt; attached_event, listening_function &gt;::ev</definition>
+        <argsstring></argsstring>
+        <name>ev</name>
+        <briefdescription>
+<para>Reference to attached event in cluster. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timed_listener.h" line="57" column="16" bodyfile="include/dpp/timed_listener.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1timed__listener_1aaaba852e03ba2d949f71a845dd9ef906" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a8b9ab0b8cf29978147a7df3947cd8f30" kindref="member">timer</ref></type>
+        <definition>timer dpp::timed_listener&lt; attached_event, listening_function &gt;::th</definition>
+        <argsstring></argsstring>
+        <name>th</name>
+        <briefdescription>
+<para>Timer handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timed_listener.h" line="62" column="7" bodyfile="include/dpp/timed_listener.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1timed__listener_1aa39631b511102f7d6682a7a9c76de173" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" kindref="member">event_handle</ref></type>
+        <definition>event_handle dpp::timed_listener&lt; attached_event, listening_function &gt;::listener_handle</definition>
+        <argsstring></argsstring>
+        <name>listener_handle</name>
+        <briefdescription>
+<para>Event handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timed_listener.h" line="67" column="14" bodyfile="include/dpp/timed_listener.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1timed__listener_1a8557fea6b073b1cce59dae3582b8cdba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::timed_listener&lt; attached_event, listening_function &gt;::timed_listener</definition>
+        <argsstring>(cluster *cl, uint64_t _duration, attached_event &amp;event, listening_function listener, timer_callback_t on_end={})</argsstring>
+        <name>timed_listener</name>
+        <param>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">cluster</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>_duration</declname>
+        </param>
+        <param>
+          <type>attached_event &amp;</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>listening_function</type>
+          <declname>listener</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1ad4658c417b9af90d3021253375580a61" kindref="member">timer_callback_t</ref></type>
+          <declname>on_end</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new timed listener object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Owning cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration of timed event in seconds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event to hook, e.g. <ref refid="classdpp_1_1cluster_1a1a632b3c2c8d3ff3a47372ffa770acf5" kindref="member">cluster.on_message_create</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>on_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional void() lambda to trigger when the <ref refid="classdpp_1_1timed__listener" kindref="compound">timed_listener</ref> times out. Calling the destructor before the timeout is reached does not call this lambda. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lambda to receive events. Type must match up properly with that passed into the &apos;event&apos; parameter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timed_listener.h" line="80" column="1" bodyfile="include/dpp/timed_listener.h" bodystart="80" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1timed__listener_1a60aecf4b71039950d7965adca65dc7d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::timed_listener&lt; attached_event, listening_function &gt;::~timed_listener</definition>
+        <argsstring>()</argsstring>
+        <name>~timed_listener</name>
+        <briefdescription>
+<para>Destroy the timed listener object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/timed_listener.h" line="98" column="1" bodyfile="include/dpp/timed_listener.h" bodystart="98" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classdpp_1_1timed__listener" kindref="compound">timed_listener</ref> is a way to temporarily attach to an event for a specific timeframe, then detach when complete. A lambda may also be optionally called when the timeout is reached. Destructing the <ref refid="classdpp_1_1timed__listener" kindref="compound">timed_listener</ref> detaches any attached event listeners, and cancels any created timers, but does not call any timeout lambda. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>attached_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event within cluster to attach to within the cluster::dispatch member (dpp::dispatcher object) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>listening_function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Definition of lambda function that matches up with the attached_event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="include/dpp/timed_listener.h" line="40" column="14" bodyfile="include/dpp/timed_listener.h" bodystart="41" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1timed__listener_1a6c19cd2fb8770b6ea608282917cbe1b9" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>duration</name></member>
+      <member refid="classdpp_1_1timed__listener_1a352f132444f5821b219aa02ac5f700f7" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>ev</name></member>
+      <member refid="classdpp_1_1timed__listener_1aa39631b511102f7d6682a7a9c76de173" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>listener_handle</name></member>
+      <member refid="classdpp_1_1timed__listener_1a6d77daab7084623a666845d9a5c23ba2" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>owner</name></member>
+      <member refid="classdpp_1_1timed__listener_1aaaba852e03ba2d949f71a845dd9ef906" prot="private" virt="non-virtual"><scope>dpp::timed_listener</scope><name>th</name></member>
+      <member refid="classdpp_1_1timed__listener_1a8557fea6b073b1cce59dae3582b8cdba" prot="public" virt="non-virtual"><scope>dpp::timed_listener</scope><name>timed_listener</name></member>
+      <member refid="classdpp_1_1timed__listener_1a60aecf4b71039950d7965adca65dc7d7" prot="public" virt="non-virtual"><scope>dpp::timed_listener</scope><name>~timed_listener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

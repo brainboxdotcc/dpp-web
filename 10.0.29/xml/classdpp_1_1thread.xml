@@ -1,0 +1,2683 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1thread" kind="class" language="C++" prot="public">
+    <compoundname>dpp::thread</compoundname>
+    <basecompoundref refid="classdpp_1_1channel" prot="public" virt="non-virtual">dpp::channel</basecompoundref>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; thread &gt;</basecompoundref>
+    <includes local="no">thread.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1thread_1adb3d4b4d24393e70fea7dfaa37b28e92" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; thread &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; thread &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="classdpp_1_1thread" kindref="compound">thread</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="101" column="6" bodyfile="include/dpp/thread.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1thread_1ab78142eef6bd03926469a118778507da" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1thread__member" kindref="compound">thread_member</ref></type>
+        <definition>thread_member dpp::thread::member</definition>
+        <argsstring></argsstring>
+        <name>member</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Thread member of current user if joined to the thread. Note this is only set by certain api calls otherwise contains default data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="134" column="15" bodyfile="include/dpp/thread.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1thread_1a64231c8975f095c371b0a4ba478d33ee" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1thread__metadata" kindref="compound">thread_metadata</ref></type>
+        <definition>thread_metadata dpp::thread::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Thread metadata (threads) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="139" column="17" bodyfile="include/dpp/thread.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1thread_1a1bf5e18b2098c25224953c88f7cef0de" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1message" kindref="compound">message</ref></type>
+        <definition>message dpp::thread::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Created message. Only filled within the <ref refid="classdpp_1_1cluster_1ad96d8fcec4c69d82fd4f2fb85ddfa2bf" kindref="member">cluster::thread_create_in_forum()</ref> method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="144" column="9" bodyfile="include/dpp/thread.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1thread_1a8ab5e0ee2b50f2bab43090312749ce3d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &gt;</type>
+        <definition>std::vector&lt;snowflake&gt; dpp::thread::applied_tags</definition>
+        <argsstring></argsstring>
+        <name>applied_tags</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>A list of <ref refid="structdpp_1_1forum__tag" kindref="compound">dpp::forum_tag</ref> IDs that have been applied to a thread in a forum or media channel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="149" column="13" bodyfile="include/dpp/thread.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1thread_1a6e243f06170d82c268c014a93a64354f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dpp::thread::total_messages_sent</definition>
+        <argsstring></argsstring>
+        <name>total_messages_sent</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Number of messages ever sent in the thread. It&apos;s similar to <ref refid="classdpp_1_1thread_1a546adcc48a0b7853ade0f11544ebfcc7" kindref="member">thread::message_count</ref> on message creation, but will not decrement the number when a message is deleted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="155" column="10" bodyfile="include/dpp/thread.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1thread_1a546adcc48a0b7853ade0f11544ebfcc7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::thread::message_count</definition>
+        <argsstring></argsstring>
+        <name>message_count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Number of messages (not including the initial message or deleted messages) of the thread. For threads created before July 1, 2022, the message count is inaccurate when it&apos;s greater than 50. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="161" column="9" bodyfile="include/dpp/thread.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1thread_1ace7afa978603442b3a4c0cbf366fdf6e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::thread::member_count</definition>
+        <argsstring></argsstring>
+        <name>member_count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Approximate count of members in a thread (stops counting at 50) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="166" column="9" bodyfile="include/dpp/thread.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a065d6fbd4e21759354c2516b074078a8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::channel::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>Channel name (1-100 characters). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="364" column="13" bodyfile="include/dpp/channel.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a57864fde3659243453d1ad1c9bf60983" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::channel::topic</definition>
+        <argsstring></argsstring>
+        <name>topic</name>
+        <briefdescription>
+<para>Channel topic (0-4096 characters for forum and media channels, 0-1024 characters for all others). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="369" column="13" bodyfile="include/dpp/channel.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a05f56fbd37e993e0fc36df06b3d65bad" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::channel::rtc_region</definition>
+        <argsstring></argsstring>
+        <name>rtc_region</name>
+        <briefdescription>
+<para>Voice region if set for voice channel, otherwise empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="374" column="13" bodyfile="include/dpp/channel.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a0d66636187a0382693d69c2ac2827e89" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &gt;</type>
+        <definition>std::vector&lt;snowflake&gt; dpp::channel::recipients</definition>
+        <argsstring></argsstring>
+        <name>recipients</name>
+        <briefdescription>
+<para>DM recipients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="379" column="13" bodyfile="include/dpp/channel.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a3eb698179af0d4c535cf5b7ed01b096e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1permission__overwrite" kindref="compound">permission_overwrite</ref> &gt;</type>
+        <definition>std::vector&lt;permission_overwrite&gt; dpp::channel::permission_overwrites</definition>
+        <argsstring></argsstring>
+        <name>permission_overwrites</name>
+        <briefdescription>
+<para>Permission overwrites to apply to base permissions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="384" column="13" bodyfile="include/dpp/channel.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a39f17a9a627d819d89e124fb944ad5c2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdpp_1_1forum__tag" kindref="compound">forum_tag</ref> &gt;</type>
+        <definition>std::vector&lt;forum_tag&gt; dpp::channel::available_tags</definition>
+        <argsstring></argsstring>
+        <name>available_tags</name>
+        <briefdescription>
+<para>A set of tags that can be used in a forum or media channel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="389" column="13" bodyfile="include/dpp/channel.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a5576665c6f660702cb1ea8cd23339177" prot="public" static="no" mutable="no">
+        <type>std::variant&lt; std::monostate, <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, std::string &gt;</type>
+        <definition>std::variant&lt;std::monostate, snowflake, std::string&gt; dpp::channel::default_reaction</definition>
+        <argsstring></argsstring>
+        <name>default_reaction</name>
+        <briefdescription>
+<para>The emoji to show as the default reaction button on a thread in a forum or media channel. Contains either nothing, the id of a guild&apos;s custom emoji or the unicode character of the emoji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="395" column="14" bodyfile="include/dpp/channel.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1aad8f9892c2daba2f3215e751bfb3351d" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::channel::icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <briefdescription>
+<para>Channel icon (for group DMs). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="400" column="19" bodyfile="include/dpp/channel.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1adb22659e9dc7fb8dd36d1c9f67eb7181" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::channel::owner_id</definition>
+        <argsstring></argsstring>
+        <name>owner_id</name>
+        <briefdescription>
+<para>User ID of the creator for group DMs or threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="405" column="11" bodyfile="include/dpp/channel.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1ae1e877475ccc7113683382f787cfbc48" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::channel::parent_id</definition>
+        <argsstring></argsstring>
+        <name>parent_id</name>
+        <briefdescription>
+<para>Parent ID (for guild channels: id of the parent category, for threads: id of the text channel this thread was created). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="410" column="11" bodyfile="include/dpp/channel.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a52a3d85468b8b6a1eb16c1bdb19cb499" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::channel::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>Guild id of the guild that owns the channel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="415" column="11" bodyfile="include/dpp/channel.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1aa510e7eb5e93c1c885392c7fcdf24779" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::channel::last_message_id</definition>
+        <argsstring></argsstring>
+        <name>last_message_id</name>
+        <briefdescription>
+<para>ID of last message to be sent to the channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>may not point to an existing or valid message/thread. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="422" column="11" bodyfile="include/dpp/channel.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1ae33f863adef0f0cc89a7324cd93bc752" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::channel::last_pin_timestamp</definition>
+        <argsstring></argsstring>
+        <name>last_pin_timestamp</name>
+        <briefdescription>
+<para>Timestamp of last pinned message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="427" column="8" bodyfile="include/dpp/channel.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1ade0284d0c47688d1f3175850fd038583" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1permission" kindref="compound">permission</ref></type>
+        <definition>permission dpp::channel::permissions</definition>
+        <argsstring></argsstring>
+        <name>permissions</name>
+        <briefdescription>
+<para>This is only filled when the channel is part of the <computeroutput>resolved</computeroutput> set sent within an interaction. Any other time it contains zero. When filled, it contains the calculated permission bitmask of the user issuing the command within this channel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="435" column="12" bodyfile="include/dpp/channel.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a1f31178c9e86ad1490b8619cb9bdbde4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+<para>Sorting position, lower number means higher up the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="440" column="10" bodyfile="include/dpp/channel.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1ab32308d8281aef6bfe4d5a6538c6306e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::bitrate</definition>
+        <argsstring></argsstring>
+        <name>bitrate</name>
+        <briefdescription>
+<para>The bitrate (in kilobits) of the voice channel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="445" column="10" bodyfile="include/dpp/channel.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a2ec41d2c2a7d592c1a17888d3f401fd5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::rate_limit_per_user</definition>
+        <argsstring></argsstring>
+        <name>rate_limit_per_user</name>
+        <briefdescription>
+<para>Amount of seconds a user has to wait before sending another message (0-21600). Bots, as well as users with the permission manage_messages or manage_channel, are unaffected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="451" column="10" bodyfile="include/dpp/channel.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a0a8cfa9de979b3c74b186d19997d82a7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::default_thread_rate_limit_per_user</definition>
+        <argsstring></argsstring>
+        <name>default_thread_rate_limit_per_user</name>
+        <briefdescription>
+<para>The initial <computeroutput>rate_limit_per_user</computeroutput> to set on newly created threads in a channel. This field is copied to the thread at creation time and does not live update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="457" column="10" bodyfile="include/dpp/channel.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1af6dd4a18591a1297b5c24bd2b6817fc1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a9ea85c1ebdea9ba69a289c812bd630f8" kindref="member">auto_archive_duration_t</ref></type>
+        <definition>auto_archive_duration_t dpp::channel::default_auto_archive_duration</definition>
+        <argsstring></argsstring>
+        <name>default_auto_archive_duration</name>
+        <briefdescription>
+<para>Default duration, copied onto newly created threads. Used by the clients, not the API. Threads will stop showing in the channel list after the specified period of inactivity. Defaults to <ref refid="namespacedpp_1a9ea85c1ebdea9ba69a289c812bd630f8ab732b80a7a0f8b1bb5b60c4f317dee4a" kindref="member">dpp::arc_1_day</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="463" column="25" bodyfile="include/dpp/channel.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a47d5b72cd22c98605f7cdbcb747f7775" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06" kindref="member">default_forum_sort_order_t</ref></type>
+        <definition>default_forum_sort_order_t dpp::channel::default_sort_order</definition>
+        <argsstring></argsstring>
+        <name>default_sort_order</name>
+        <briefdescription>
+<para>The default sort order type used to order posts in forum and media channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="468" column="28" bodyfile="include/dpp/channel.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a4468e3981302301886f649d14b7ddcf7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::channel::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Flags bitmap (<ref refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9" kindref="member">dpp::channel_flags</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="473" column="10" bodyfile="include/dpp/channel.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1channel_1a79251adb1bc9dc6780af2afd21499769" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::channel::user_limit</definition>
+        <argsstring></argsstring>
+        <name>user_limit</name>
+        <briefdescription>
+<para>Maximum user limit for voice channels (0-99) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="478" column="9" bodyfile="include/dpp/channel.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::managed::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+<para>Unique ID of object set by Discord. This value contains a timestamp, worker ID, internal server ID, and an incrementing value. Only the timestamp is relevant to us as useful metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="39" column="11" bodyfile="include/dpp/managed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1thread_1adeeb2204934b73eb6490d6d45725f9e8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1thread" kindref="compound">thread</ref> &amp;</type>
+        <definition>thread &amp; dpp::thread::fill_from_json_impl</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json_impl</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read class values from json object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A json object to read from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="115" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1thread_1ad0cfb3971d7413504922bb6859593600" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
+        <definition>json dpp::thread::to_json_impl</definition>
+        <argsstring>(bool with_id=false) const override</argsstring>
+        <name>to_json_impl</name>
+        <reimplements refid="classdpp_1_1channel_1ad694c336b76af8cfd02c629c18e080f4">to_json_impl</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build json for this thread object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>include the ID in the json </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string JSON string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="123" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1thread_1a508363d81af12ca940a21429d6c64eb6" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::thread::is_news_thread</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_news_thread</name>
+        <briefdescription>
+<para>Returns true if the thread is within an announcement channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if announcement thread </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="173" column="16" bodyfile="include/dpp/thread.h" bodystart="173" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1thread_1a74550a7062efce631ca069e29be51cf2" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::thread::is_public_thread</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_public_thread</name>
+        <briefdescription>
+<para>Returns true if the channel is a public thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if public thread </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="182" column="16" bodyfile="include/dpp/thread.h" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1thread_1a33e5b9ed84105dd472e136a49e818aa7" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::thread::is_private_thread</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_private_thread</name>
+        <briefdescription>
+<para>Returns true if the channel is a private thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if private thread </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="191" column="16" bodyfile="include/dpp/thread.h" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a08a674755c169a3517361dc847511617" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::channel::get_mention</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mention</name>
+        <briefdescription>
+<para>Get the mention ping for the channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string mention </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="681" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a304e19817c6bf0e363daf497a3011f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>set_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Set name of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained</para>
+</simplesect>
+<simplesect kind="note"><para>name will be truncated to 100 chars, if longer </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1length__exception" kindref="compound">dpp::length_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if length &lt; 1 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="502" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a70a34c9768892ba8813c6c3eacce5651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_topic</definition>
+        <argsstring>(const std::string &amp;topic)</argsstring>
+        <name>set_topic</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic</declname>
+        </param>
+        <briefdescription>
+<para>Set topic of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained</para>
+</simplesect>
+<simplesect kind="note"><para>topic will be truncated to 1024 chars, if longer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="512" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a910d364e4a3e8ed843189beb2d4cbc65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_type</definition>
+        <argsstring>(channel_type type)</argsstring>
+        <name>set_type</name>
+        <param>
+          <type><ref refid="namespacedpp_1a732e832861149a278f27ea7840b8e4ca" kindref="member">channel_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set type of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel type to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="520" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a5fa998ba750cd4f77321c0dfce0c10f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_default_forum_layout</definition>
+        <argsstring>(forum_layout_type layout_type)</argsstring>
+        <name>set_default_forum_layout</name>
+        <param>
+          <type><ref refid="namespacedpp_1a4659a9179785f523733a6a0ceeaa97bc" kindref="member">forum_layout_type</ref></type>
+          <declname>layout_type</declname>
+        </param>
+        <briefdescription>
+<para>Set the default forum layout type for the forum channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layout_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layout type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="528" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1adebc78b5bf833c8e5c42f8f6c156cdf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_default_sort_order</definition>
+        <argsstring>(default_forum_sort_order_t sort_order)</argsstring>
+        <name>set_default_sort_order</name>
+        <param>
+          <type><ref refid="namespacedpp_1ab8154fdded2c361ae6c91397cd3e4f06" kindref="member">default_forum_sort_order_t</ref></type>
+          <declname>sort_order</declname>
+        </param>
+        <briefdescription>
+<para>Set the default forum sort order for the forum channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sort_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sort order </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="536" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a6cfbf057e2f2d3b5b2ee9b2f43d03288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_flags</definition>
+        <argsstring>(const uint16_t flags)</argsstring>
+        <name>set_flags</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Set flags for this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag bitmask to set from <ref refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9" kindref="member">dpp::channel_flags</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="544" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a189a5d675001b810199274201b15ea38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::add_flag</definition>
+        <argsstring>(const channel_flags flag)</argsstring>
+        <name>add_flag</name>
+        <param>
+          <type>const <ref refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9" kindref="member">channel_flags</ref></type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Add (bitwise OR) a flag to this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag bit to add from <ref refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9" kindref="member">dpp::channel_flags</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="552" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a20f076ea45f524f1673137d1b7817f6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::remove_flag</definition>
+        <argsstring>(const channel_flags flag)</argsstring>
+        <name>remove_flag</name>
+        <param>
+          <type>const <ref refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9" kindref="member">channel_flags</ref></type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Remove (bitwise NOT AND) a flag from this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag bit to remove from <ref refid="namespacedpp_1a5ec9c45c4c6519489736761391fe9dd9" kindref="member">dpp::channel_flags</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="560" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1af4828e17f5b0391fae44461c6dac770a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_position</definition>
+        <argsstring>(const uint16_t position)</argsstring>
+        <name>set_position</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Set position of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="568" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1aa823c3a070bc37d70be28bd9b49820c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_guild_id</definition>
+        <argsstring>(const snowflake guild_id)</argsstring>
+        <name>set_guild_id</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <briefdescription>
+<para>Set guild_id of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild ID to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="576" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a8b5cd8634b4c8873be389b3d747615d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_parent_id</definition>
+        <argsstring>(const snowflake parent_id)</argsstring>
+        <name>set_parent_id</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>parent_id</declname>
+        </param>
+        <briefdescription>
+<para>Set parent_id of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent ID to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="584" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1aed49e707599019840d4715f6c2123a5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_user_limit</definition>
+        <argsstring>(const uint8_t user_limit)</argsstring>
+        <name>set_user_limit</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>user_limit</declname>
+        </param>
+        <briefdescription>
+<para>Set user_limit of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user_limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Limit to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="592" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1ab6bc88cdee70038c6544c7f44a4584be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_bitrate</definition>
+        <argsstring>(const uint16_t bitrate)</argsstring>
+        <name>set_bitrate</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>bitrate</declname>
+        </param>
+        <briefdescription>
+<para>Set bitrate of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitrate to set (in kilobits) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="600" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a602852256a543a6901aa5c87520aeb63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_nsfw</definition>
+        <argsstring>(const bool is_nsfw)</argsstring>
+        <name>set_nsfw</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_nsfw</declname>
+        </param>
+        <briefdescription>
+<para>Set nsfw property of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_nsfw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true, if channel is nsfw </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="608" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a8ee251e0b5faafd378b3fdabdf39a523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_lock_permissions</definition>
+        <argsstring>(const bool is_lock_permissions)</argsstring>
+        <name>set_lock_permissions</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_lock_permissions</declname>
+        </param>
+        <briefdescription>
+<para>Set lock permissions property of this channel object Used only with the reorder channels method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_lock_permissions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true, if we are to inherit permissions from the category </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="617" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a929b0d7a3eaed7ca144752196c2cf38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_rate_limit_per_user</definition>
+        <argsstring>(const uint16_t rate_limit_per_user)</argsstring>
+        <name>set_rate_limit_per_user</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>rate_limit_per_user</declname>
+        </param>
+        <briefdescription>
+<para>Set rate_limit_per_user of this channel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate_limit_per_user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate_limit_per_user (slowmode in sec) to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="625" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a386c8434a670e7ae1400c5a4bf07e688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::add_permission_overwrite</definition>
+        <argsstring>(const snowflake target, const overwrite_type type, const uint64_t allowed_permissions, const uint64_t denied_permissions)</argsstring>
+        <name>add_permission_overwrite</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a1111f17373e7a972e77ffc0a6e621522" kindref="member">overwrite_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>allowed_permissions</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>denied_permissions</declname>
+        </param>
+        <briefdescription>
+<para>Add permission overwrites for a user or role. If the channel already has permission overwrites for the passed target, the existing ones will be adjusted by the passed permissions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the role or the member you want to adjust overwrites for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of overwrite </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allowed_permissions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bitmask of <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> you want to allow for this user/role in this channel. Note: You can use the <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref> class </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>denied_permissions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bitmask of <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> you want to deny for this user/role in this channel. Note: You can use the <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref> class</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="638" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1ab706e02060df6f3ee63a76833f98558e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::set_permission_overwrite</definition>
+        <argsstring>(const snowflake target, const overwrite_type type, const uint64_t allowed_permissions, const uint64_t denied_permissions)</argsstring>
+        <name>set_permission_overwrite</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a1111f17373e7a972e77ffc0a6e621522" kindref="member">overwrite_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>allowed_permissions</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>denied_permissions</declname>
+        </param>
+        <briefdescription>
+<para>Set permission overwrites for a user or role on this channel object. Old permission overwrites for the target will be overwritten. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the role or the member you want to set overwrites for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of overwrite </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allowed_permissions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bitmask of allowed <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> for this user/role in this channel. Note: You can use the <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref> class </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>denied_permissions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bitmask of denied <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref> for this user/role in this channel. Note: You can use the <ref refid="classdpp_1_1permission" kindref="compound">dpp::permission</ref> class</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained</para>
+</simplesect>
+<simplesect kind="note"><para>If both <computeroutput>allowed_permissions</computeroutput> and <computeroutput>denied_permissions</computeroutput> parameters are 0, the permission overwrite for the target will be removed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="651" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a1b1b5b5907316b2efc2dd325b5810b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel &amp; dpp::channel::remove_permission_overwrite</definition>
+        <argsstring>(const snowflake target, const overwrite_type type)</argsstring>
+        <name>remove_permission_overwrite</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a1111f17373e7a972e77ffc0a6e621522" kindref="member">overwrite_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Remove channel specific permission overwrites of a user or role. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the role or the member you want to remove permission overwrites of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of overwrite</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self, so these method calls may be chained </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="660" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a8095c887b1cb49c81b9d3044da51955c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a732e832861149a278f27ea7840b8e4ca" kindref="member">channel_type</ref></type>
+        <definition>channel_type dpp::channel::get_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_type</name>
+        <briefdescription>
+<para>Get the channel type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>channel_type Channel type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="667" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1ae124cf9b7ab7c4dea5996f7259d52028" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1a4659a9179785f523733a6a0ceeaa97bc" kindref="member">forum_layout_type</ref></type>
+        <definition>forum_layout_type dpp::channel::get_default_forum_layout</definition>
+        <argsstring>() const</argsstring>
+        <name>get_default_forum_layout</name>
+        <briefdescription>
+<para>Get the default forum layout type used to display posts in forum channels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>forum_layout_types Forum layout type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="674" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1adfb656e912fba27c809ab8754e2855b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1permission" kindref="compound">permission</ref></type>
+        <definition>permission dpp::channel::get_user_permissions</definition>
+        <argsstring>(const class user *user) const</argsstring>
+        <name>get_user_permissions</name>
+        <param>
+          <type>const class <ref refid="classdpp_1_1user" kindref="compound">user</ref> *</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user to resolve the permissions for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>permission Permission overwrites for the member. Made of bits in <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>Requires role cache to be enabled (it&apos;s enabled by default).</para>
+</simplesect>
+<simplesect kind="note"><para>This is an alias for <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">guild::permission_overwrites</ref> and searches for the guild in the cache, so consider using <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">guild::permission_overwrites</ref> if you already have the guild object.</para>
+</simplesect>
+<simplesect kind="warning"><para>The method will search for the guild member in the cache by the users id. If the guild member is not in cache, the method will always return 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="696" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a0ff4cb376ed32919b1ee6a7246d36019" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1permission" kindref="compound">permission</ref></type>
+        <definition>permission dpp::channel::get_user_permissions</definition>
+        <argsstring>(const class guild_member &amp;member) const</argsstring>
+        <name>get_user_permissions</name>
+        <param>
+          <type>const class <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+          <declname>member</declname>
+        </param>
+        <briefdescription>
+<para>Get the overall permissions for a member in this channel, including channel overwrites, role permissions and admin privileges. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member to resolve the permissions for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>permission Permission overwrites for the member. Made of bits in <ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">dpp::permissions</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>Requires role cache to be enabled (it&apos;s enabled by default).</para>
+</simplesect>
+<simplesect kind="note"><para>This is an alias for <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">guild::permission_overwrites</ref> and searches for the guild in the cache, so consider using <ref refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kindref="member">guild::permission_overwrites</ref> if you already have the guild object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="708" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a2618252ea6ca24673074b4ac8243798c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, class <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> * &gt;</type>
+        <definition>std::map&lt; snowflake, class guild_member * &gt; dpp::channel::get_members</definition>
+        <argsstring>()</argsstring>
+        <name>get_members</name>
+        <briefdescription>
+<para>Return a map of members on the channel, built from the guild&apos;s member list based on which members have the VIEW_CHANNEL permission. Does not return reliable information for voice channels, use <ref refid="classdpp_1_1channel_1a915cc4ba3ec7514a684315594255253a" kindref="member">dpp::channel::get_voice_members()</ref> instead for this. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A map of guild members keyed by user id. </para>
+</simplesect>
+<simplesect kind="note"><para>If the guild this channel belongs to is not in the cache, the function will always return 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="718" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a915cc4ba3ec7514a684315594255253a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1voicestate" kindref="compound">voicestate</ref> &gt;</type>
+        <definition>std::map&lt; snowflake, voicestate &gt; dpp::channel::get_voice_members</definition>
+        <argsstring>()</argsstring>
+        <name>get_voice_members</name>
+        <briefdescription>
+<para>Get a map of members in this channel, if it is a voice channel. The map is keyed by snowflake id of the user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::map&lt;snowflake, voicestate&gt; The voice members of the channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="726" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a698e4379b6d4db96d16036ea5a78835a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::channel::get_icon_url</definition>
+        <argsstring>(uint16_t size=0, const image_type format=i_png) const</argsstring>
+        <name>get_icon_url</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" kindref="member">image_type</ref></type>
+          <declname>format</declname>
+          <defval><ref refid="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7" kindref="member">i_png</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get the channel&apos;s icon url (if its a group DM), otherwise returns an empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the icon in pixels. It can be any power of two between 16 and 4096, otherwise the default sized icon is returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format to use for the avatar. It can be one of <computeroutput>i_webp</computeroutput>, <computeroutput>i_jpg</computeroutput> or <computeroutput>i_png</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string icon url or an empty string, if required attributes are missing or an invalid format was passed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="736" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a292324b755409516f15e9996c7ef763c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::channel::get_url</definition>
+        <argsstring>() const</argsstring>
+        <name>get_url</name>
+        <briefdescription>
+<para>Returns string of URL to channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string of URL to channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="743" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a41631deb5f2cb740b4d124cde9f266d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_nsfw</definition>
+        <argsstring>() const</argsstring>
+        <name>is_nsfw</name>
+        <briefdescription>
+<para>Returns true if the channel is NSFW gated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if NSFW </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="750" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1ac8ce0b3fc552cfe96f46e6c55299a810" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_locked_permissions</definition>
+        <argsstring>() const</argsstring>
+        <name>is_locked_permissions</name>
+        <briefdescription>
+<para>Returns true if the permissions are to be synced with the category it is in. Used only and set manually when using the reorder channels method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if keeping permissions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="758" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a7b9bfb2f922e7cfcbbb1d60f02e5a901" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_text_channel</definition>
+        <argsstring>() const</argsstring>
+        <name>is_text_channel</name>
+        <briefdescription>
+<para>Returns true if the channel is a text channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if text channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="765" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a918afc6016a1114151a253e7caa35179" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_dm</definition>
+        <argsstring>() const</argsstring>
+        <name>is_dm</name>
+        <briefdescription>
+<para>Returns true if the channel is a DM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if is a DM </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="772" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a8ee69208f9cf16c18f2ceb460ada1916" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_voice_channel</definition>
+        <argsstring>() const</argsstring>
+        <name>is_voice_channel</name>
+        <briefdescription>
+<para>Returns true if the channel is a voice channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if voice channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="779" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a27a623072570b333f697bd01c3616208" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_group_dm</definition>
+        <argsstring>() const</argsstring>
+        <name>is_group_dm</name>
+        <briefdescription>
+<para>Returns true if the channel is a group DM channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if group DM </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="786" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a1b6b7a32e44eec70466a98b31252aa54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_category</definition>
+        <argsstring>() const</argsstring>
+        <name>is_category</name>
+        <briefdescription>
+<para>Returns true if the channel is a category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if a category </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="793" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a469a04064c0d9455e8decca30010c0b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_forum</definition>
+        <argsstring>() const</argsstring>
+        <name>is_forum</name>
+        <briefdescription>
+<para>Returns true if the channel is a forum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if a forum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="800" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a3a970dbb51cd4270f2acceed77787e13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_media_channel</definition>
+        <argsstring>() const</argsstring>
+        <name>is_media_channel</name>
+        <briefdescription>
+<para>Returns true if the channel is a media channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if media channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="807" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a9fb22156c167cb2c334ec3388502fdff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_news_channel</definition>
+        <argsstring>() const</argsstring>
+        <name>is_news_channel</name>
+        <briefdescription>
+<para>Returns true if the channel is an announcement channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if announcement channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="814" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a04256bb3015b9fa150d56a8025a6e1d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_store_channel</definition>
+        <argsstring>() const</argsstring>
+        <name>is_store_channel</name>
+        <briefdescription>
+<para>Returns true if the channel is a store channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000009"><xreftitle>Deprecated</xreftitle><xrefdescription><para>store channels are deprecated by Discord</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>true if store channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="822" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1ae95ae73f17ff4badd2001bcc07940709" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_stage_channel</definition>
+        <argsstring>() const</argsstring>
+        <name>is_stage_channel</name>
+        <briefdescription>
+<para>Returns true if the channel is a stage channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if stage channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="829" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1afb783f82a86a5ed6f247aaa213164854" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_video_auto</definition>
+        <argsstring>() const</argsstring>
+        <name>is_video_auto</name>
+        <briefdescription>
+<para>Returns true if video quality is auto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if video quality is auto </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="836" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1a311501db36692f1753254e1bf618e75d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_video_720p</definition>
+        <argsstring>() const</argsstring>
+        <name>is_video_720p</name>
+        <briefdescription>
+<para>Returns true if video quality is 720p. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if video quality is 720p </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="843" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1ad82aae3ca0ba7d93669851fa0a720870" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_pinned_thread</definition>
+        <argsstring>() const</argsstring>
+        <name>is_pinned_thread</name>
+        <briefdescription>
+<para>Returns true if channel is a pinned thread in forum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true, if channel is a pinned thread in forum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="850" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1ad33f11beae3555c835b805a7f6869063" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_tag_required</definition>
+        <argsstring>() const</argsstring>
+        <name>is_tag_required</name>
+        <briefdescription>
+<para>Returns true if a tag is required to be specified when creating a thread in a forum channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true, if a tag is required to be specified when creating a thread in a forum channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="857" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1channel_1ab797470989fe7a1eac86eef4eef73551" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::channel::is_download_options_hidden</definition>
+        <argsstring>() const</argsstring>
+        <name>is_download_options_hidden</name>
+        <briefdescription>
+<para>Returns true if embedded media download options are hidden in a media channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true, if embedded media download options are hidden in a media channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="864" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr double</type>
+        <definition>constexpr double dpp::managed::get_creation_time</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_creation_time</name>
+        <briefdescription>
+<para>Get the creation time of this object according to Discord. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double creation time inferred from the snowflake ID. The minimum possible value is the first second of 2015. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="89" column="18" bodyfile="include/dpp/managed.h" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator==</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are not the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="100" column="16" bodyfile="include/dpp/managed.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::managed::operator!=</definition>
+        <argsstring>(const managed &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1managed" kindref="compound">managed</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for comparing two managed objects by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other object to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true objects are not the same id </para>
+</simplesect>
+<simplesect kind="return"><para>false objects are the same id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/managed.h" line="111" column="16" bodyfile="include/dpp/managed.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1channel" kindref="compound">channel</ref> &amp;</type>
+        <definition>channel  &amp; dpp::json_interface&lt; channel  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; channel  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; channel  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1thread" kindref="compound">thread</ref> &amp;</type>
+        <definition>thread  &amp; dpp::json_interface&lt; thread  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; thread  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; thread  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdpp_1_1channel_1a70e09ac3a48bd458579fb42434bda722" prot="protected" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t dpp::channel::CHANNEL_TYPE_MASK</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_TYPE_MASK</name>
+        <initializer>= 0b0000000000001111</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="358" column="27" bodyfile="include/dpp/channel.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdpp_1_1channel_1a753a482bd7d99544684b49b6b46bbcb4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string dpp::channel::get_mention</definition>
+        <argsstring>(const snowflake &amp;id)</argsstring>
+        <name>get_mention</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Create a mentionable channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the channel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string The formatted mention of the channel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/channel.h" line="491" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A definition of a discord thread. A thread is a superset of a channel. Not to be confused with <computeroutput>std::thread</computeroutput>! </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dpp::channel</label>
+        <link refid="classdpp_1_1channel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="3">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+      </node>
+      <node id="1">
+        <label>dpp::thread</label>
+        <link refid="classdpp_1_1thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::json_interface&lt; channel &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; channel &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::json_interface&lt; thread &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; thread &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>auto_archive_duration_t</label>
+      </node>
+      <node id="25">
+        <label>bool</label>
+      </node>
+      <node id="38">
+        <label>cache_policy_setting_t</label>
+      </node>
+      <node id="18">
+        <label>default_forum_sort_order_t</label>
+      </node>
+      <node id="36">
+        <label>double</label>
+      </node>
+      <node id="37">
+        <label>dpp::cache_policy_t</label>
+        <link refid="structdpp_1_1cache__policy__t"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>channel_policy</edgelabel>
+          <edgelabel>emoji_policy</edgelabel>
+          <edgelabel>guild_policy</edgelabel>
+          <edgelabel>role_policy</edgelabel>
+          <edgelabel>user_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::channel</label>
+        <link refid="classdpp_1_1channel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>CHANNEL_TYPE_MASK</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>name</edgelabel>
+          <edgelabel>rtc_region</edgelabel>
+          <edgelabel>topic</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>available_tags</edgelabel>
+          <edgelabel>permission_overwrites</edgelabel>
+          <edgelabel>recipients</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>default_reaction</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>icon</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>last_message_id</edgelabel>
+          <edgelabel>owner_id</edgelabel>
+          <edgelabel>parent_id</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>last_pin_timestamp</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>permissions</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>bitrate</edgelabel>
+          <edgelabel>default_thread_rate_limit_per_user</edgelabel>
+          <edgelabel>flags</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>rate_limit_per_user</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>default_auto_archive_duration</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>default_sort_order</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>user_limit</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>dpp::cluster</label>
+        <link refid="classdpp_1_1cluster"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>last_identify</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>cluster_id</edgelabel>
+          <edgelabel>intents</edgelabel>
+          <edgelabel>maxclusters</edgelabel>
+          <edgelabel>numshards</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>rest_ping</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>me</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>cache_policy</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>ws_mode</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>on_autocomplete</edgelabel>
+          <edgelabel>on_automod_rule_create</edgelabel>
+          <edgelabel>on_automod_rule_delete</edgelabel>
+          <edgelabel>on_automod_rule_execute</edgelabel>
+          <edgelabel>on_automod_rule_update</edgelabel>
+          <edgelabel>on_button_click</edgelabel>
+          <edgelabel>on_channel_create</edgelabel>
+          <edgelabel>on_channel_delete</edgelabel>
+          <edgelabel>on_channel_pins_update</edgelabel>
+          <edgelabel>on_channel_update</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>dpp::guild_member</label>
+        <link refid="classdpp_1_1guild__member"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>nickname</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>roles</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>communication_disabled_until</edgelabel>
+          <edgelabel>joined_at</edgelabel>
+          <edgelabel>premium_since</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="3">
+        <label>dpp::managed</label>
+        <link refid="classdpp_1_1managed"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>dpp::message</label>
+        <link refid="structdpp_1_1message"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>webhook_id</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>author</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>member</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>content</edgelabel>
+          <edgelabel>nonce</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>attachments</edgelabel>
+          <edgelabel>components</edgelabel>
+          <edgelabel>embeds</edgelabel>
+          <edgelabel>file_data</edgelabel>
+          <edgelabel>mention_channels</edgelabel>
+          <edgelabel>mention_roles</edgelabel>
+          <edgelabel>mentions</edgelabel>
+          <edgelabel>reactions</edgelabel>
+          <edgelabel>stickers</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>edited</edgelabel>
+          <edgelabel>sent</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>message_reference</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>interaction</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>allowed_mentions</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mention_everyone</edgelabel>
+          <edgelabel>pinned</edgelabel>
+          <edgelabel>tts</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>dpp::message::allowed_ref</label>
+        <link refid="structdpp_1_1message_1_1allowed__ref"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>parse_everyone</edgelabel>
+          <edgelabel>parse_roles</edgelabel>
+          <edgelabel>parse_users</edgelabel>
+          <edgelabel>replied_user</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>roles</edgelabel>
+          <edgelabel>users</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>dpp::message::message_interaction_struct</label>
+        <link refid="structdpp_1_1message_1_1message__interaction__struct"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>usr</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>dpp::message::message_ref</label>
+        <link refid="structdpp_1_1message_1_1message__ref"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>channel_id</edgelabel>
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>message_id</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>fail_if_not_exists</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dpp::permission</label>
+        <link refid="classdpp_1_1permission"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::thread</label>
+        <link refid="classdpp_1_1thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>member</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>applied_tags</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>total_messages_sent</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>member_count</edgelabel>
+          <edgelabel>message_count</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>dpp::thread_member</label>
+        <link refid="structdpp_1_1thread__member"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>thread_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>joined</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>dpp::thread_metadata</label>
+        <link refid="structdpp_1_1thread__metadata"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>archive_timestamp</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>auto_archive_duration</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>archived</edgelabel>
+          <edgelabel>invitable</edgelabel>
+          <edgelabel>locked</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>dpp::user</label>
+        <link refid="classdpp_1_1user"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>global_name</edgelabel>
+          <edgelabel>username</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>avatar</edgelabel>
+          <edgelabel>avatar_decoration</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>discriminator</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>refcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>event_router_t&lt;</label>
+      </node>
+      <node id="6">
+        <label>dpp::json_interface&lt; channel &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; channel &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>dpp::json_interface&lt; guild_member &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; guild_member &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>dpp::json_interface&lt; message &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; message &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dpp::json_interface&lt; thread &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; thread &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>dpp::json_interface&lt; thread_member &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; thread_member &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>dpp::json_interface&lt; user &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; user &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>message_type</label>
+      </node>
+      <node id="8">
+        <label>static constexpr uint16_t</label>
+      </node>
+      <node id="10">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="40">
+        <label>condition_variable</label>
+      </node>
+      <node id="9">
+        <label>std::string</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>variant&lt;</label>
+      </node>
+      <node id="11">
+        <label>vector&lt;</label>
+      </node>
+      <node id="14">
+        <label>time_t</label>
+      </node>
+      <node id="16">
+        <label>uint16_t</label>
+      </node>
+      <node id="23">
+        <label>uint32_t</label>
+      </node>
+      <node id="5">
+        <label>uint64_t</label>
+      </node>
+      <node id="19">
+        <label>uint8_t</label>
+      </node>
+      <node id="39">
+        <label>websocket_protocol_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/thread.h" line="107" column="1" bodyfile="include/dpp/thread.h" bodystart="107" bodyend="194"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1channel_1a189a5d675001b810199274201b15ea38" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>add_flag</name></member>
+      <member refid="classdpp_1_1channel_1a386c8434a670e7ae1400c5a4bf07e688" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>add_permission_overwrite</name></member>
+      <member refid="classdpp_1_1thread_1a8ab5e0ee2b50f2bab43090312749ce3d" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>applied_tags</name></member>
+      <member refid="classdpp_1_1channel_1a39f17a9a627d819d89e124fb944ad5c2" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>available_tags</name></member>
+      <member refid="classdpp_1_1channel_1ab32308d8281aef6bfe4d5a6538c6306e" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>bitrate</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual" ambiguityscope="dpp::"><scope>dpp::thread</scope><name>build_json</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual" ambiguityscope="json_interface&lt; thread &gt;::"><scope>dpp::thread</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1channel_1a53bbf494148ceea48e3b78716d7a8b07" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>channel</name></member>
+      <member refid="classdpp_1_1channel_1a70e09ac3a48bd458579fb42434bda722" prot="protected" virt="non-virtual"><scope>dpp::thread</scope><name>CHANNEL_TYPE_MASK</name></member>
+      <member refid="classdpp_1_1channel_1af6dd4a18591a1297b5c24bd2b6817fc1" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>default_auto_archive_duration</name></member>
+      <member refid="classdpp_1_1channel_1a5576665c6f660702cb1ea8cd23339177" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>default_reaction</name></member>
+      <member refid="classdpp_1_1channel_1a47d5b72cd22c98605f7cdbcb747f7775" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>default_sort_order</name></member>
+      <member refid="classdpp_1_1channel_1a0a8cfa9de979b3c74b186d19997d82a7" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>default_thread_rate_limit_per_user</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual" ambiguityscope="dpp::"><scope>dpp::thread</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual" ambiguityscope="json_interface&lt; thread &gt;::"><scope>dpp::thread</scope><name>fill_from_json</name></member>
+      <member refid="classdpp_1_1thread_1adeeb2204934b73eb6490d6d45725f9e8" prot="protected" virt="non-virtual"><scope>dpp::thread</scope><name>fill_from_json_impl</name></member>
+      <member refid="classdpp_1_1channel_1a4468e3981302301886f649d14b7ddcf7" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>flags</name></member>
+      <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_creation_time</name></member>
+      <member refid="classdpp_1_1channel_1ae124cf9b7ab7c4dea5996f7259d52028" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_default_forum_layout</name></member>
+      <member refid="classdpp_1_1channel_1a698e4379b6d4db96d16036ea5a78835a" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_icon_url</name></member>
+      <member refid="classdpp_1_1channel_1a2618252ea6ca24673074b4ac8243798c" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_members</name></member>
+      <member refid="classdpp_1_1channel_1a753a482bd7d99544684b49b6b46bbcb4" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_mention</name></member>
+      <member refid="classdpp_1_1channel_1a08a674755c169a3517361dc847511617" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_mention</name></member>
+      <member refid="classdpp_1_1channel_1a8095c887b1cb49c81b9d3044da51955c" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_type</name></member>
+      <member refid="classdpp_1_1channel_1a292324b755409516f15e9996c7ef763c" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_url</name></member>
+      <member refid="classdpp_1_1channel_1adfb656e912fba27c809ab8754e2855b5" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_user_permissions</name></member>
+      <member refid="classdpp_1_1channel_1a0ff4cb376ed32919b1ee6a7246d36019" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_user_permissions</name></member>
+      <member refid="classdpp_1_1channel_1a915cc4ba3ec7514a684315594255253a" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>get_voice_members</name></member>
+      <member refid="classdpp_1_1channel_1a52a3d85468b8b6a1eb16c1bdb19cb499" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>guild_id</name></member>
+      <member refid="classdpp_1_1channel_1aad8f9892c2daba2f3215e751bfb3351d" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>icon</name></member>
+      <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>id</name></member>
+      <member refid="classdpp_1_1channel_1a1b6b7a32e44eec70466a98b31252aa54" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_category</name></member>
+      <member refid="classdpp_1_1channel_1a918afc6016a1114151a253e7caa35179" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_dm</name></member>
+      <member refid="classdpp_1_1channel_1ab797470989fe7a1eac86eef4eef73551" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_download_options_hidden</name></member>
+      <member refid="classdpp_1_1channel_1a469a04064c0d9455e8decca30010c0b4" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_forum</name></member>
+      <member refid="classdpp_1_1channel_1a27a623072570b333f697bd01c3616208" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_group_dm</name></member>
+      <member refid="classdpp_1_1channel_1ac8ce0b3fc552cfe96f46e6c55299a810" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_locked_permissions</name></member>
+      <member refid="classdpp_1_1channel_1a3a970dbb51cd4270f2acceed77787e13" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_media_channel</name></member>
+      <member refid="classdpp_1_1channel_1a9fb22156c167cb2c334ec3388502fdff" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_news_channel</name></member>
+      <member refid="classdpp_1_1thread_1a508363d81af12ca940a21429d6c64eb6" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_news_thread</name></member>
+      <member refid="classdpp_1_1channel_1a41631deb5f2cb740b4d124cde9f266d2" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_nsfw</name></member>
+      <member refid="classdpp_1_1channel_1ad82aae3ca0ba7d93669851fa0a720870" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_pinned_thread</name></member>
+      <member refid="classdpp_1_1thread_1a33e5b9ed84105dd472e136a49e818aa7" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_private_thread</name></member>
+      <member refid="classdpp_1_1thread_1a74550a7062efce631ca069e29be51cf2" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_public_thread</name></member>
+      <member refid="classdpp_1_1channel_1ae95ae73f17ff4badd2001bcc07940709" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_stage_channel</name></member>
+      <member refid="classdpp_1_1channel_1a04256bb3015b9fa150d56a8025a6e1d0" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_store_channel</name></member>
+      <member refid="classdpp_1_1channel_1ad33f11beae3555c835b805a7f6869063" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_tag_required</name></member>
+      <member refid="classdpp_1_1channel_1a7b9bfb2f922e7cfcbbb1d60f02e5a901" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_text_channel</name></member>
+      <member refid="classdpp_1_1channel_1a311501db36692f1753254e1bf618e75d" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_video_720p</name></member>
+      <member refid="classdpp_1_1channel_1afb783f82a86a5ed6f247aaa213164854" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_video_auto</name></member>
+      <member refid="classdpp_1_1channel_1a8ee69208f9cf16c18f2ceb460ada1916" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>is_voice_channel</name></member>
+      <member refid="classdpp_1_1thread_1adb3d4b4d24393e70fea7dfaa37b28e92" prot="protected" virt="non-virtual"><scope>dpp::thread</scope><name>json_interface&lt; thread &gt;</name></member>
+      <member refid="classdpp_1_1channel_1aa510e7eb5e93c1c885392c7fcdf24779" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>last_message_id</name></member>
+      <member refid="classdpp_1_1channel_1ae33f863adef0f0cc89a7324cd93bc752" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>last_pin_timestamp</name></member>
+      <member refid="classdpp_1_1managed_1a49ce0d7fdbeab770ec46be27771c2285" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1aa3ee436836ab0e2bf4f842c2c2bc3b52" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1a198b514f7e6a2b26734fd2dad85f481d" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>managed</name></member>
+      <member refid="classdpp_1_1managed_1ac7a876ad1764b89f0568a1f1bc6bf640" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>managed</name></member>
+      <member refid="classdpp_1_1thread_1ab78142eef6bd03926469a118778507da" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>member</name></member>
+      <member refid="classdpp_1_1thread_1ace7afa978603442b3a4c0cbf366fdf6e" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>member_count</name></member>
+      <member refid="classdpp_1_1thread_1a546adcc48a0b7853ade0f11544ebfcc7" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>message_count</name></member>
+      <member refid="classdpp_1_1thread_1a64231c8975f095c371b0a4ba478d33ee" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>metadata</name></member>
+      <member refid="classdpp_1_1thread_1a1bf5e18b2098c25224953c88f7cef0de" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>msg</name></member>
+      <member refid="classdpp_1_1channel_1a065d6fbd4e21759354c2516b074078a8" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>name</name></member>
+      <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>operator!=</name></member>
+      <member refid="classdpp_1_1managed_1a48b542729f1352f93f1c60950986517f" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1channel_1adb22659e9dc7fb8dd36d1c9f67eb7181" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>owner_id</name></member>
+      <member refid="classdpp_1_1channel_1ae1e877475ccc7113683382f787cfbc48" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>parent_id</name></member>
+      <member refid="classdpp_1_1channel_1a3eb698179af0d4c535cf5b7ed01b096e" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>permission_overwrites</name></member>
+      <member refid="classdpp_1_1channel_1ade0284d0c47688d1f3175850fd038583" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>permissions</name></member>
+      <member refid="classdpp_1_1channel_1a1f31178c9e86ad1490b8619cb9bdbde4" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>position</name></member>
+      <member refid="classdpp_1_1channel_1a2ec41d2c2a7d592c1a17888d3f401fd5" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>rate_limit_per_user</name></member>
+      <member refid="classdpp_1_1channel_1a0d66636187a0382693d69c2ac2827e89" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>recipients</name></member>
+      <member refid="classdpp_1_1channel_1a20f076ea45f524f1673137d1b7817f6f" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>remove_flag</name></member>
+      <member refid="classdpp_1_1channel_1a1b1b5b5907316b2efc2dd325b5810b46" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>remove_permission_overwrite</name></member>
+      <member refid="classdpp_1_1channel_1a05f56fbd37e993e0fc36df06b3d65bad" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>rtc_region</name></member>
+      <member refid="classdpp_1_1channel_1ab6bc88cdee70038c6544c7f44a4584be" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_bitrate</name></member>
+      <member refid="classdpp_1_1channel_1a5fa998ba750cd4f77321c0dfce0c10f4" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_default_forum_layout</name></member>
+      <member refid="classdpp_1_1channel_1adebc78b5bf833c8e5c42f8f6c156cdf8" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_default_sort_order</name></member>
+      <member refid="classdpp_1_1channel_1a6cfbf057e2f2d3b5b2ee9b2f43d03288" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_flags</name></member>
+      <member refid="classdpp_1_1channel_1aa823c3a070bc37d70be28bd9b49820c5" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_guild_id</name></member>
+      <member refid="classdpp_1_1channel_1a8ee251e0b5faafd378b3fdabdf39a523" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_lock_permissions</name></member>
+      <member refid="classdpp_1_1channel_1a304e19817c6bf0e363daf497a3011f3a" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_name</name></member>
+      <member refid="classdpp_1_1channel_1a602852256a543a6901aa5c87520aeb63" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_nsfw</name></member>
+      <member refid="classdpp_1_1channel_1a8b5cd8634b4c8873be389b3d747615d7" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_parent_id</name></member>
+      <member refid="classdpp_1_1channel_1ab706e02060df6f3ee63a76833f98558e" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_permission_overwrite</name></member>
+      <member refid="classdpp_1_1channel_1af4828e17f5b0391fae44461c6dac770a" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_position</name></member>
+      <member refid="classdpp_1_1channel_1a929b0d7a3eaed7ca144752196c2cf38f" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_rate_limit_per_user</name></member>
+      <member refid="classdpp_1_1channel_1a70a34c9768892ba8813c6c3eacce5651" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_topic</name></member>
+      <member refid="classdpp_1_1channel_1a910d364e4a3e8ed843189beb2d4cbc65" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_type</name></member>
+      <member refid="classdpp_1_1channel_1aed49e707599019840d4715f6c2123a5f" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>set_user_limit</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual" ambiguityscope="dpp::"><scope>dpp::thread</scope><name>to_json</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual" ambiguityscope="json_interface&lt; thread &gt;::"><scope>dpp::thread</scope><name>to_json</name></member>
+      <member refid="classdpp_1_1thread_1ad0cfb3971d7413504922bb6859593600" prot="protected" virt="virtual"><scope>dpp::thread</scope><name>to_json_impl</name></member>
+      <member refid="classdpp_1_1channel_1a57864fde3659243453d1ad1c9bf60983" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>topic</name></member>
+      <member refid="classdpp_1_1thread_1a6e243f06170d82c268c014a93a64354f" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>total_messages_sent</name></member>
+      <member refid="classdpp_1_1channel_1a79251adb1bc9dc6780af2afd21499769" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>user_limit</name></member>
+      <member refid="classdpp_1_1channel_1a019dcc538ed619ab255f60e69f716ae3" prot="public" virt="virtual"><scope>dpp::thread</scope><name>~channel</name></member>
+      <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::thread</scope><name>~managed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
