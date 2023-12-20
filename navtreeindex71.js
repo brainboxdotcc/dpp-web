@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"structdpp_1_1voice__receive__t.html#a6d6f1d1be9a65fa8b428fab5230dce6d":[9,0,0,226,15],
 "structdpp_1_1voice__receive__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71":[11,0,0,222,18],
 "structdpp_1_1voice__receive__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71":[9,0,0,226,18],
 "structdpp_1_1voice__receive__t.html#aae35038ecb874c46e355fac3863615d0":[9,0,0,226,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "structdpp_1_1when__any_1_1awaiter.html#a7c0b78ec88317aa2b4de445bab2cea9a":[9,0,0,239,0,1],
 "structdpp_1_1when__any_1_1awaiter.html#a81d9f05c1cdfbbfa54963c406d4400d8":[11,0,0,235,0,3],
 "structdpp_1_1when__any_1_1awaiter.html#a81d9f05c1cdfbbfa54963c406d4400d8":[9,0,0,239,0,3],
-"structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[11,0,1,0],
-"structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[9,0,1,0]
+"structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[11,0,1,0]
 };

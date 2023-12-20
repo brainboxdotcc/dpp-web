@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="1039" column="23" bodyfile="include/dpp/utility.h" bodystart="1039" bodyend="-1"/>
+        <location file="include/dpp/utility.h" line="1053" column="23" bodyfile="include/dpp/utility.h" bodystart="1053" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -1234,20 +1234,22 @@
         </inbodydescription>
         <location file="include/dpp/utility.h" line="738" column="24" declfile="include/dpp/utility.h" declline="738" declcolumn="24"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1a62cc8fc3994f6b3d49cf4923b993c231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacedpp_1_1utility_1a220f66858ece1eb786486e664f513569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t DPP_EXPORT</type>
         <definition>size_t DPP_EXPORT dpp::utility::utf8len</definition>
-        <argsstring>(const std::string &amp;str)</argsstring>
+        <argsstring>(std::string_view str)</argsstring>
         <name>utf8len</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>str</declname>
         </param>
         <briefdescription>
 <para>Returns the length of a UTF-8 string in codepoints. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para><simplesect kind="note"><para>Result is unspecified for strings that are not valid UTF-8.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>str</parametername>
 </parameternamelist>
@@ -1256,36 +1258,40 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>size_t length of string (0 for invalid utf8) </para>
+<simplesect kind="return"><para>size_t Length of string </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="746" column="19" declfile="include/dpp/utility.h" declline="746" declcolumn="19"/>
+        <location file="include/dpp/utility.h" line="747" column="19" declfile="include/dpp/utility.h" declline="747" declcolumn="19"/>
       </memberdef>
-      <memberdef kind="function" id="namespacedpp_1_1utility_1afa6985aaa798fa30b73c1decc418cd32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string DPP_EXPORT</type>
-        <definition>std::string DPP_EXPORT dpp::utility::utf8substr</definition>
-        <argsstring>(const std::string &amp;str, std::string::size_type start, std::string::size_type length)</argsstring>
-        <name>utf8substr</name>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1aaae8ecae4672d0f0fd9da0a2ab214b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string_view DPP_EXPORT</type>
+        <definition>std::string_view DPP_EXPORT dpp::utility::utf8subview</definition>
+        <argsstring>(std::string_view str, size_t start, size_t length)</argsstring>
+        <name>utf8subview</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>str</declname>
         </param>
         <param>
-          <type>std::string::size_type</type>
+          <type>size_t</type>
           <declname>start</declname>
         </param>
         <param>
-          <type>std::string::size_type</type>
+          <type>size_t</type>
           <declname>length</declname>
         </param>
         <briefdescription>
-<para>Return substring of a UTF-8 encoded string in codepoints. </para>
+<para>Return subview of a UTF-8 encoded string in codepoints. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para><simplesect kind="note"><para>You must ensure that the resulting view is not used after the lifetime of the viewed string has ended. </para>
+</simplesect>
+<simplesect kind="note"><para>Result is unspecified for strings that are not valid UTF-8.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>str</parametername>
 </parameternamelist>
@@ -1310,13 +1316,69 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>std::string Substring in UTF-8 or empty string if invalid UTF-8 passed in </para>
+<simplesect kind="return"><para>std::string_view The requested subview </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="756" column="24" declfile="include/dpp/utility.h" declline="756" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="759" column="29" declfile="include/dpp/utility.h" declline="759" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1_1utility_1adefca3fb7feb3a25f94e2aa1863cad90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string DPP_EXPORT</type>
+        <definition>std::string DPP_EXPORT dpp::utility::utf8substr</definition>
+        <argsstring>(std::string_view str, size_t start, size_t length)</argsstring>
+        <name>utf8substr</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Return substring of a UTF-8 encoded string in codepoints. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Result is unspecified for strings that are not valid UTF-8.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to return substring from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start codepoint offset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length in codepoints </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string The requested substring </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/utility.h" line="770" column="24" declfile="include/dpp/utility.h" declline="770" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a4e85ceba20c4ed2bfda15d806890428b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1359,7 +1421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="766" column="24" declfile="include/dpp/utility.h" declline="766" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="780" column="24" declfile="include/dpp/utility.h" declline="780" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a3da218e2645e8f07e3b83373505542ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1434,7 +1496,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="780" column="24" declfile="include/dpp/utility.h" declline="780" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="794" column="24" declfile="include/dpp/utility.h" declline="794" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a2e8cc2ce4c01244c9db877ab526ac9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1464,7 +1526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="788" column="24" declfile="include/dpp/utility.h" declline="788" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="802" column="24" declfile="include/dpp/utility.h" declline="802" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab65e758e198a195ad3fbcec3c534d2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::string &gt; DPP_EXPORT</type>
@@ -1507,7 +1569,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="797" column="24" declfile="include/dpp/utility.h" declline="797" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="811" column="24" declfile="include/dpp/utility.h" declline="811" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a4be90a8bb2dd9eecf61e934592656c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1563,7 +1625,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="807" column="24" declfile="include/dpp/utility.h" declline="807" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="821" column="24" declfile="include/dpp/utility.h" declline="821" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a2cd10adca7586a99a6fd350bb601f407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1606,7 +1668,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="819" column="24" declfile="include/dpp/utility.h" declline="819" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="833" column="24" declfile="include/dpp/utility.h" declline="833" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab1cc19c7021a057083658d7e2cca1013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1636,7 +1698,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="827" column="24" declfile="include/dpp/utility.h" declline="827" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="841" column="24" declfile="include/dpp/utility.h" declline="841" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab5e15dbccb96fdcd2ac075bf530290e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1691,7 +1753,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="836" column="24" declfile="include/dpp/utility.h" declline="836" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="850" column="24" declfile="include/dpp/utility.h" declline="850" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ad9ab04ef6d30a614f608364cb5751e56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1757,7 +1819,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="846" column="24" declfile="include/dpp/utility.h" declline="846" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="860" column="24" declfile="include/dpp/utility.h" declline="860" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a00f8e4bb0915722be20973c9cf356f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1787,7 +1849,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="853" column="24" declfile="include/dpp/utility.h" declline="853" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="867" column="24" declfile="include/dpp/utility.h" declline="867" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a7fc46cb2a13a958d7361ba96bb416edc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1817,7 +1879,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="860" column="24" declfile="include/dpp/utility.h" declline="860" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="874" column="24" declfile="include/dpp/utility.h" declline="874" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab8933e9c5ee35036923cc73fbd54a4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1872,7 +1934,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="869" column="24" declfile="include/dpp/utility.h" declline="869" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="883" column="24" declfile="include/dpp/utility.h" declline="883" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab7c346258eedffe57cff07d0b8b26c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1902,7 +1964,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="876" column="24" declfile="include/dpp/utility.h" declline="876" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="890" column="24" declfile="include/dpp/utility.h" declline="890" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a5549deccff07d29af834b310f1400495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1956,7 +2018,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="885" column="24" declfile="include/dpp/utility.h" declline="885" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="899" column="24" declfile="include/dpp/utility.h" declline="899" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a88b6beb222e83e05eef50db7d680495d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -1998,7 +2060,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="893" column="24" declfile="include/dpp/utility.h" declline="893" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="907" column="24" declfile="include/dpp/utility.h" declline="907" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ad9e7ba2e05161b18710e0071bdddd8dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2040,7 +2102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="901" column="24" declfile="include/dpp/utility.h" declline="901" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="915" column="24" declfile="include/dpp/utility.h" declline="915" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a64f2b1d22e175a91e0e6bd5292c7a09c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2070,7 +2132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="908" column="24" declfile="include/dpp/utility.h" declline="908" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="922" column="24" declfile="include/dpp/utility.h" declline="922" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a3c2eaf5d14e3c80965b990119dd6c624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2100,7 +2162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="918" column="24" declfile="include/dpp/utility.h" declline="918" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="932" column="24" declfile="include/dpp/utility.h" declline="932" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1abb150a54408656bf3660c950c08ec9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2130,7 +2192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="925" column="24" declfile="include/dpp/utility.h" declline="925" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="939" column="24" declfile="include/dpp/utility.h" declline="939" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ada68aa2fde414885eec777031c5cf768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2160,7 +2222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="932" column="24" declfile="include/dpp/utility.h" declline="932" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="946" column="24" declfile="include/dpp/utility.h" declline="946" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ae3096353914033c06d4c9e1ae9f2f518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2190,7 +2252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="939" column="24" declfile="include/dpp/utility.h" declline="939" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="953" column="24" declfile="include/dpp/utility.h" declline="953" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1a7d10e878ab1347eaed727b2e528206ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2207,7 +2269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="979" column="24" declfile="include/dpp/utility.h" declline="979" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="993" column="24" declfile="include/dpp/utility.h" declline="993" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1aeada90d27918093d9fe6a53d1a245f50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2237,7 +2299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="988" column="24" declfile="include/dpp/utility.h" declline="988" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="1002" column="24" declfile="include/dpp/utility.h" declline="1002" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ae97ccaf14820df924f86b32c6932d486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string DPP_EXPORT</type>
@@ -2267,7 +2329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="997" column="24" declfile="include/dpp/utility.h" declline="997" declcolumn="24"/>
+        <location file="include/dpp/utility.h" line="1011" column="24" declfile="include/dpp/utility.h" declline="1011" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1_1utility_1ab8b9842a7d3645607bf57d6803ee9509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void DPP_EXPORT</type>
@@ -2295,7 +2357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="1004" column="17" declfile="include/dpp/utility.h" declline="1004" declcolumn="17"/>
+        <location file="include/dpp/utility.h" line="1018" column="17" declfile="include/dpp/utility.h" declline="1018" declcolumn="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
