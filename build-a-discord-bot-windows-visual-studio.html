@@ -127,7 +127,7 @@ Text Tutorial</h2>
 <img src="vsproj_3.png" alt=""/>
 </div>
 </li>
-<li>Observe the build output. There may be warnings, but so long as the build output ends with "1 succeeded" then the process has worked. You may now run your bot! <div class="image">
+<li>Observe the build output, so long as the build output ends with "1 succeeded" then the process has worked. You may now run your bot! <div class="image">
 <img src="vsproj_14.png" alt=""/>
 </div>
 </li>
@@ -135,7 +135,16 @@ Text Tutorial</h2>
 <h2><a class="anchor" id="autotoc_md164"></a>
 Troubleshooting</h2>
 <ul>
+<li>If you get an error that looks like this: <div class="fragment"><div class="line"> 1&gt;MyBot.obj : error LNK2019: unresolved external symbol &quot;__declspec(dllimport) public: class dpp::async&lt;struct dpp::confirmation_callback_t&gt;</div>
+<div class="line">__cdecl dpp::interaction_create_t::co_reply(class std::basic_string&lt;char,struct std::char_traits&lt;char&gt;,class std::allocator&lt;char&gt; &gt; const &amp;)const</div>
+<div class="line">&quot; (__imp_?co_reply@interaction_create_t@dpp@@QEBA?AV?$async@Uconfirmation_callback_t@dpp@@@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)</div>
+<div class="line">referenced in function &quot;public: class dpp::task&lt;void&gt; __cdecl `int __cdecl main(void)&#39;::`2&#39;::&lt;lambda_2&gt;$_ResumeCoro$1::operator()(struct dpp::slashcommand_t const &amp;)const &quot;</div>
+<div class="line">(??R&lt;lambda_2&gt;$_ResumeCoro$1@?1??main@@YAHXZ@QEBA?AV?$task@X@dpp@@AEBUslashcommand_t@3@@Z)</div>
+<div class="line">1&gt;...\windows-bot-template-main\x64\Debug\MyBot.exe : fatal error LNK1120: 1 unresolved externals</div>
+<div class="line">1&gt;Done building project &quot;MyBot.vcxproj&quot; -- FAILED.</div>
+</div><!-- fragment --> Make sure your don't have another version of the library installed through vcpkg. The template uses a slightly different version of D++ that has coroutines, while the vcpkg version does not, and the latter overwrites it! Uninstalling the library through vcpkg should fix this issue.</li>
 <li>If you get an error that a DLL is missing (e.g. <code>dpp.dll</code> or <code>opus.dll</code>) when starting your bot, then simply copy all DLLs from the <b>bin</b> directory of where you cloned the D++ repository to, into the same directory where your bot's executable is. You only need to do this once. There should be several of these DLL files: <code>dpp.dll</code>, <code>zlib.dll</code>, <code>openssl.dll</code> and <code>libcrypto.dll</code> (or similarly named SSL related files), <code>libsodium.dll</code> and <code>opus.dll</code>. Note the template project does this for you, so you should never encounter this issue.</li>
+<li>If you get an error that says "Debug/Release mismatch", <b>you are using the wrong configuration of the D++ dll</b>. Your bot's executable and the dpp.dll file should both be built in the same configuration (Release or Debug), you get this error if they are different. <b>This also means you altered the template in a significant way,</b> we recommend you undo your modifications or reinstall the template.</li>
 <li>Stuck? You can find us on the <a href="https://discord.gg/dpp">official Discord server</a> - ask away! We don't bite! </li>
 </ul>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>

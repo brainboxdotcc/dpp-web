@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >To add D++ to a Visual Studio project, using <b>Visual Studio 2019</b> or <b>Visual Studio 2022</b>, follow the steps below. The steps below assume an empty project, if you are adding to an existing project simply skip steps 1 through 4, and step 13.</p>
-<dl class="section note"><dt>Note</dt><dd>It is possible to skip this entire tutorial, and obtain a <a href="https://github.com/brainboxdotcc/windows-bot-template/">pre-made Visual Studio template containing the latest D++ build (for 32 and 64 bit, release and debug profiles) by clicking here</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It is possible to skip this entire tutorial, and obtain a <a class="el" href="build-a-discord-bot-windows-visual-studio.html">pre-made Visual Studio template containing the latest D++ build (for 32 and 64 bit, release and debug profiles) by clicking here</a>.</dd></dl>
 <ol type="1">
 <li>Make sure you have Visual Studio 2019 or 2022. Community, Professional or Enterprise work fine. These instructions are not for Visual Studio Code. You can <a href="https://visualstudio.microsoft.com/downloads/">download the correct version here</a>. Note that older versions of Visual Studio will not work as they do not support enough of the C++17 standard.</li>
 <li>Start Visual Studio and choose to create a new project <div class="image">
@@ -164,9 +164,11 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 </ol>
 <h2><a class="anchor" id="autotoc_md148"></a>
 Troubleshooting</h2>
+<dl class="section note"><dt>Note</dt><dd>A much easier way of getting a bot running is available <a class="el" href="build-a-discord-bot-windows-visual-studio.html">here</a>! We recommend using that one if this process seems too complex or you run into too many issues.</dd></dl>
 <ul>
 <li>If you get an error that a DLL is missing (e.g. <code>dpp.dll</code> or <code>opus.dll</code>) when starting your bot, then simply copy all DLLs from the <b>bin</b> directory of where you extracted the D++ zip file to, into the same directory where your bot's executable is. You only need to do this once. There should be several of these DLL files: <code>dpp.dll</code>, <code>zlib.dll</code>, <code>openssl.dll</code> and <code>libcrypto.dll</code> (or similarly named SSL related files), <code>libsodium.dll</code> and <code>opus.dll</code>.</li>
 <li>Please note that if you change the architecture (step 13) you must reconfigure all of steps 7 through 12 again as these configurations are specific to each architecture. This is to allow for different sets of precompiled libs, e.g. for <code>x86</code>, <code>x64</code>, etc.</li>
+<li>If you get an error that says "Debug/Release mismatch", <b>you are using the wrong configuration of the D++ dll</b>. Your bot's executable and the dpp.dll file should both be built in either Release or Debug, you get this error if they are different. We recommend using <a class="el" href="build-a-discord-bot-windows-visual-studio.html">the bot template</a>, it has all those things already set up.</li>
 <li>You should run your bot from a command prompt. If you do not, and it exits, you will not be able to see any output as the window will immediately close.</li>
 <li>If you need to update the <code>opus.dll</code> or <code>zlib.dll</code> (or any other prebuilt dll) these can be obtained by requesting them to be installed via <code>vcpkg</code> then copying the dlls, libraries and headers from the vcpkg <code>install</code> folder.</li>
 <li>Stuck? You can find us on the <a href="https://discord.gg/dpp">official discord server</a> - ask away! We don't bite! </li>
