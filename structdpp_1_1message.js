@@ -14,6 +14,8 @@ var structdpp_1_1message =
     [ "add_component", "structdpp_1_1message.html#a85dbf0b4a0b294eac34ec49feb1d4540", null ],
     [ "add_embed", "structdpp_1_1message.html#a9ff92caceb655fa1f89710445a24c107", null ],
     [ "add_file", "structdpp_1_1message.html#af84e068f9c20a3389316179f9c018553", null ],
+    [ "add_sticker", "structdpp_1_1message.html#a21943f452317e1b4cc8a324c21fe661b", null ],
+    [ "add_sticker", "structdpp_1_1message.html#a9f3f938e687d01c1cd21ce51edf513ce", null ],
     [ "build_json", "structdpp_1_1message.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "structdpp_1_1message.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json", "structdpp_1_1message.html#a03cd35fe267a9cf6b88656668055c181", null ],
