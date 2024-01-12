@@ -1,5 +1,11 @@
 var NAVTREEINDEX59 =
 {
+"structdpp_1_1guild__emojis__update__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[11,0,0,101,13],
+"structdpp_1_1guild__emojis__update__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[9,0,0,105,9],
+"structdpp_1_1guild__emojis__update__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[11,0,0,101,9],
+"structdpp_1_1guild__emojis__update__t.html#a4d5c139c862c5ed02227b1e9ffc38095":[11,0,0,101,5],
+"structdpp_1_1guild__emojis__update__t.html#a4d5c139c862c5ed02227b1e9ffc38095":[9,0,0,105,5],
+"structdpp_1_1guild__emojis__update__t.html#a51c22afd4b65afc11ef1ea6877b39a19":[11,0,0,101,11],
 "structdpp_1_1guild__emojis__update__t.html#a51c22afd4b65afc11ef1ea6877b39a19":[9,0,0,105,11],
 "structdpp_1_1guild__emojis__update__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[9,0,0,105,0],
 "structdpp_1_1guild__emojis__update__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[11,0,0,101,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX59 =
 "structdpp_1_1guild__role__create__t.html#ad761e8dec36073665f520aaa13fbe6dc":[9,0,0,113,2],
 "structdpp_1_1guild__role__create__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[9,0,0,113,3],
 "structdpp_1_1guild__role__create__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[11,0,0,109,3],
-"structdpp_1_1guild__role__create__t.html#af32126d4ed56366b4413c84b272383b7":[11,0,0,109,4],
-"structdpp_1_1guild__role__create__t.html#af32126d4ed56366b4413c84b272383b7":[9,0,0,113,4],
-"structdpp_1_1guild__role__delete__t.html":[11,0,0,110],
-"structdpp_1_1guild__role__delete__t.html":[9,0,0,114],
-"structdpp_1_1guild__role__delete__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[9,0,0,114,8],
-"structdpp_1_1guild__role__delete__t.html#a2500c6d9987fbfc509fd0a960b1968e9":[11,0,0,110,8],
-"structdpp_1_1guild__role__delete__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[9,0,0,114,14]
+"structdpp_1_1guild__role__create__t.html#af32126d4ed56366b4413c84b272383b7":[11,0,0,109,4]
 };
