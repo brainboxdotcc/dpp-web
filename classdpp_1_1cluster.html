@@ -458,6 +458,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9afda69f8c99365001ec349f8dc70388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a9afda69f8c99365001ec349f8dc70388">guild_member_timeout</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, time_t communication_disabled_until, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a9afda69f8c99365001ec349f8dc70388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout of a guild member.  <a href="classdpp_1_1cluster.html#a9afda69f8c99365001ec349f8dc70388">More...</a><br /></td></tr>
 <tr class="separator:a9afda69f8c99365001ec349f8dc70388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ab877e61192084216bf5fefd205c19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a38ab877e61192084216bf5fefd205c19">guild_member_timeout_remove</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e">utility::log_error</a>())</td></tr>
+<tr class="memdesc:a38ab877e61192084216bf5fefd205c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id, user_id, 0, callback) Fires a <code>Guild Member Update</code> Gateway event.  <a href="classdpp_1_1cluster.html#a38ab877e61192084216bf5fefd205c19">More...</a><br /></td></tr>
+<tr class="separator:a38ab877e61192084216bf5fefd205c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00fe9bf79228a671d618e9fb27b5684a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a00fe9bf79228a671d618e9fb27b5684a">guild_ban_add</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, uint32_t delete_message_seconds=0, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback=<a class="el" href="namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e">utility::log_error</a>())</td></tr>
 <tr class="memdesc:a00fe9bf79228a671d618e9fb27b5684a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add guild ban.  <a href="classdpp_1_1cluster.html#a00fe9bf79228a671d618e9fb27b5684a">More...</a><br /></td></tr>
 <tr class="separator:a00fe9bf79228a671d618e9fb27b5684a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1073,6 +1076,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a023353280af3c99e0922052519b9ab95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1async.html">async</a>&lt; <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a023353280af3c99e0922052519b9ab95">co_guild_member_timeout</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, time_t communication_disabled_until)</td></tr>
 <tr class="memdesc:a023353280af3c99e0922052519b9ab95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout of a guild member.  <a href="classdpp_1_1cluster.html#a023353280af3c99e0922052519b9ab95">More...</a><br /></td></tr>
 <tr class="separator:a023353280af3c99e0922052519b9ab95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5f2295f991df14dbb94e248dae5cb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1async.html">async</a>&lt; <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a7b5f2295f991df14dbb94e248dae5cb7">co_guild_member_timeout_remove</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id)</td></tr>
+<tr class="memdesc:a7b5f2295f991df14dbb94e248dae5cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id, user_id, 0, callback) Fires a <code>Guild Member Update</code> Gateway event.  <a href="classdpp_1_1cluster.html#a7b5f2295f991df14dbb94e248dae5cb7">More...</a><br /></td></tr>
+<tr class="separator:a7b5f2295f991df14dbb94e248dae5cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8611f02a1c12ae31a709774584962a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1async.html">async</a>&lt; <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa8611f02a1c12ae31a709774584962a3">co_guild_member_delete_role</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> role_id)</td></tr>
 <tr class="memdesc:aa8611f02a1c12ae31a709774584962a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove role from guild member.  <a href="classdpp_1_1cluster.html#aa8611f02a1c12ae31a709774584962a3">More...</a><br /></td></tr>
 <tr class="separator:aa8611f02a1c12ae31a709774584962a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1643,6 +1649,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22ce81e0f2204d4217ac284a9163b8a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a22ce81e0f2204d4217ac284a9163b8a2">guild_member_timeout_sync</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, time_t communication_disabled_until)</td></tr>
 <tr class="memdesc:a22ce81e0f2204d4217ac284a9163b8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout of a guild member.  <a href="classdpp_1_1cluster.html#a22ce81e0f2204d4217ac284a9163b8a2">More...</a><br /></td></tr>
 <tr class="separator:a22ce81e0f2204d4217ac284a9163b8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab789c16e91ad6347370bd75b3d1918a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab789c16e91ad6347370bd75b3d1918a8">guild_member_timeout_remove_sync</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id)</td></tr>
+<tr class="memdesc:ab789c16e91ad6347370bd75b3d1918a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id, user_id, 0, callback) Fires a <code>Guild Member Update</code> Gateway event.  <a href="classdpp_1_1cluster.html#ab789c16e91ad6347370bd75b3d1918a8">More...</a><br /></td></tr>
+<tr class="separator:ab789c16e91ad6347370bd75b3d1918a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2e1667b47f46137b0abf1a994821da8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aa2e1667b47f46137b0abf1a994821da8">guild_member_delete_role_sync</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> role_id)</td></tr>
 <tr class="memdesc:aa2e1667b47f46137b0abf1a994821da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove role from guild member.  <a href="classdpp_1_1cluster.html#aa2e1667b47f46137b0abf1a994821da8">More...</a><br /></td></tr>
 <tr class="separator:aa2e1667b47f46137b0abf1a994821da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8827,6 +8836,48 @@ This method supports audit log reasons set by the <a class="el" href="classdpp_1
     <tr><td class="paramname">guild_id</td><td>Guild ID to timeout the member in </td></tr>
     <tr><td class="paramname">user_id</td><td>User ID to set the timeout for </td></tr>
     <tr><td class="paramname">communication_disabled_until</td><td>The timestamp when the user's timeout will expire (up to 28 days in the future). Set to 0 to remove the timeout </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>confirmation returned object on completion </dd></dl>
+
+</div>
+</div>
+<a id="a7b5f2295f991df14dbb94e248dae5cb7" name="a7b5f2295f991df14dbb94e248dae5cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5f2295f991df14dbb94e248dae5cb7">&#9670;&nbsp;</a></span>co_guild_member_timeout_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1async.html">async</a>&lt; <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &gt; co_guild_member_timeout_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id, user_id, 0, callback) Fires a <code>Guild Member Update</code> Gateway event. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#a38ab877e61192084216bf5fefd205c19" title="Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id,...">dpp::cluster::guild_member_timeout_remove</a> </dd>
+<dd>
+<a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild ID to remove the member timeout from </td></tr>
+    <tr><td class="paramname">user_id</td><td>User ID to remove the timeout for </td></tr>
   </table>
   </dd>
 </dl>
@@ -20407,6 +20458,101 @@ This method supports audit log reasons set by the <a class="el" href="classdpp_1
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a38ab877e61192084216bf5fefd205c19" name="a38ab877e61192084216bf5fefd205c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ab877e61192084216bf5fefd205c19">&#9670;&nbsp;</a></span>guild_member_timeout_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::cluster::guild_member_timeout_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code><a class="el" href="namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e">utility::log_error</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id, user_id, 0, callback) Fires a <code>Guild Member Update</code> Gateway event. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild ID to remove the member timeout from </td></tr>
+    <tr><td class="paramname">user_id</td><td>User ID to remove the timeout for </td></tr>
+    <tr><td class="paramname">callback</td><td>Function to call when the API call completes. On success the callback will contain a <a class="el" href="structdpp_1_1confirmation.html" title="Confirmation object represents any true or false simple REST request.">dpp::confirmation</a> object in <a class="el" href="structdpp_1_1confirmation__callback__t.html#a4725ef83209a64c0558a598ec01ad463" title="Value returned, wrapped in variant.">confirmation_callback_t::value</a>. On failure, the value is undefined and <a class="el" href="structdpp_1_1confirmation__callback__t.html#a17820d5f9fb0725d64a1bf23c8cc97c7" title="Returns true if the call resulted in an error rather than a legitimate value in the confirmation_call...">confirmation_callback_t::is_error()</a> method will return true. You can obtain full error details with <a class="el" href="structdpp_1_1confirmation__callback__t.html#a79dda1493a0788577d84a8ad82cf7e55" title="Get the error_info object. The error_info object contains the details of any REST error,...">confirmation_callback_t::get_error()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab789c16e91ad6347370bd75b3d1918a8" name="ab789c16e91ad6347370bd75b3d1918a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab789c16e91ad6347370bd75b3d1918a8">&#9670;&nbsp;</a></span>guild_member_timeout_remove_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdpp_1_1confirmation.html">confirmation</a> guild_member_timeout_remove_sync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>user_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id, user_id, 0, callback) Fires a <code>Guild Member Update</code> Gateway event. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdpp_1_1cluster.html#a38ab877e61192084216bf5fefd205c19" title="Remove the timeout of a guild member. A shortcut for guild_member_timeout(guild_id,...">dpp::cluster::guild_member_timeout_remove</a> </dd>
+<dd>
+<a href="https://discord.com/developers/docs/resources/guild#modify-guild-member">https://discord.com/developers/docs/resources/guild#modify-guild-member</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method supports audit log reasons set by the <a class="el" href="classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe" title="Set the audit log reason for the next REST call to be made. This is set per-thread,...">cluster::set_audit_reason()</a> method. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild ID to remove the member timeout from </td></tr>
+    <tr><td class="paramname">user_id</td><td>User ID to remove the timeout for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>confirmation returned object on completion</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1rest__exception.html" title="Represents an error on a REST API call, e.g. a HTTPS request.">dpp::rest_exception</a></td><td>upon failure to execute REST function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </dd></dl>
 
 </div>
 </div>
