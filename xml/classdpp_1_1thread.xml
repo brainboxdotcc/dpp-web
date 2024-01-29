@@ -129,6 +129,24 @@
         </inbodydescription>
         <location file="include/dpp/thread.h" line="166" column="9" bodyfile="include/dpp/thread.h" bodystart="166" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1thread_1a0a87405b296f38fdbb7f9469198e2dae" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::thread::newly_created</definition>
+        <argsstring></argsstring>
+        <name>newly_created</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Was this thread newly created? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This will only show in <ref refid="classdpp_1_1cluster_1ae3f2d6cbe1aa08646e2a336cee5fc4d8" kindref="member">dpp::cluster::on_thread_create</ref> if the thread was just made. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/thread.h" line="172" column="6" bodyfile="include/dpp/thread.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdpp_1_1channel_1a065d6fbd4e21759354c2516b074078a8" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string dpp::channel::name</definition>
@@ -535,7 +553,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/thread.h" line="173" column="16" bodyfile="include/dpp/thread.h" bodystart="173" bodyend="175"/>
+        <location file="include/dpp/thread.h" line="179" column="16" bodyfile="include/dpp/thread.h" bodystart="179" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1thread_1a74550a7062efce631ca069e29be51cf2" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -552,7 +570,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/thread.h" line="182" column="16" bodyfile="include/dpp/thread.h" bodystart="182" bodyend="184"/>
+        <location file="include/dpp/thread.h" line="188" column="16" bodyfile="include/dpp/thread.h" bodystart="188" bodyend="190"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1thread_1a33e5b9ed84105dd472e136a49e818aa7" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -569,7 +587,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/thread.h" line="191" column="16" bodyfile="include/dpp/thread.h" bodystart="191" bodyend="193"/>
+        <location file="include/dpp/thread.h" line="197" column="16" bodyfile="include/dpp/thread.h" bodystart="197" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1channel_1a08a674755c169a3517361dc847511617" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -2423,6 +2441,9 @@
           <edgelabel>member_count</edgelabel>
           <edgelabel>message_count</edgelabel>
         </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>newly_created</edgelabel>
+        </childnode>
       </node>
       <node id="21">
         <label>dpp::thread_member</label>
@@ -2575,7 +2596,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/thread.h" line="107" column="1" bodyfile="include/dpp/thread.h" bodystart="107" bodyend="194"/>
+    <location file="include/dpp/thread.h" line="107" column="1" bodyfile="include/dpp/thread.h" bodystart="107" bodyend="200"/>
     <listofallmembers>
       <member refid="classdpp_1_1channel_1a189a5d675001b810199274201b15ea38" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>add_flag</name></member>
       <member refid="classdpp_1_1channel_1a386c8434a670e7ae1400c5a4bf07e688" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>add_permission_overwrite</name></member>
@@ -2641,6 +2662,7 @@
       <member refid="classdpp_1_1thread_1a64231c8975f095c371b0a4ba478d33ee" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>metadata</name></member>
       <member refid="classdpp_1_1thread_1a1bf5e18b2098c25224953c88f7cef0de" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>msg</name></member>
       <member refid="classdpp_1_1channel_1a065d6fbd4e21759354c2516b074078a8" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>name</name></member>
+      <member refid="classdpp_1_1thread_1a0a87405b296f38fdbb7f9469198e2dae" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>newly_created</name></member>
       <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>operator!=</name></member>
       <member refid="classdpp_1_1managed_1a48b542729f1352f93f1c60950986517f" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>operator=</name></member>
       <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual"><scope>dpp::thread</scope><name>operator=</name></member>

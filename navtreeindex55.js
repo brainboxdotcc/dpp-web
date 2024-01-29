@@ -1,5 +1,11 @@
 var NAVTREEINDEX55 =
 {
+"structdpp_1_1command__option.html#a7059a6049828707b2eda2c5a649aeb79":[9,0,0,53,2],
+"structdpp_1_1command__option.html#a7555f4a8cc883bdaa08053f4513262a9":[11,0,0,49,11],
+"structdpp_1_1command__option.html#a7555f4a8cc883bdaa08053f4513262a9":[9,0,0,53,11],
+"structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026":[11,0,0,49,4],
+"structdpp_1_1command__option.html#a760d208354981f2866d6788b67dc4026":[9,0,0,53,4],
+"structdpp_1_1command__option.html#a7b9a89420e48ccd85cfdc6deaae63e50":[11,0,0,49,0],
 "structdpp_1_1command__option.html#a7b9a89420e48ccd85cfdc6deaae63e50":[9,0,0,53,0],
 "structdpp_1_1command__option.html#a82debcf96e4265cf7d8ea6b2aa47e481":[11,0,0,49,20],
 "structdpp_1_1command__option.html#a82debcf96e4265cf7d8ea6b2aa47e481":[9,0,0,53,20],
@@ -243,11 +249,5 @@ var NAVTREEINDEX55 =
 "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html#a54c24bd62b0b576067aed3a7dea7c1a5":[11,0,0,0,1,1,2],
 "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html#a9bdd29522b75b0c39cbc73c88888e5f0":[9,0,0,2,1,1,0],
 "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html#a9bdd29522b75b0c39cbc73c88888e5f0":[11,0,0,0,1,1,0],
-"structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html#ae4252038cb58d81db517a0a8ea7f5a87":[9,0,0,2,1,1,1],
-"structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html#ae4252038cb58d81db517a0a8ea7f5a87":[11,0,0,0,1,1,1],
-"structdpp_1_1detail_1_1coroutine_1_1promise__t.html":[11,0,0,0,1,2],
-"structdpp_1_1detail_1_1coroutine_1_1promise__t.html":[9,0,0,2,1,2],
-"structdpp_1_1detail_1_1coroutine_1_1promise__t.html#a0efa896ee32a8fe9bbabbd5cebf0e7ec":[11,0,0,0,1,2,0],
-"structdpp_1_1detail_1_1coroutine_1_1promise__t.html#a0efa896ee32a8fe9bbabbd5cebf0e7ec":[9,0,0,2,1,2,0],
-"structdpp_1_1detail_1_1coroutine_1_1promise__t.html#a1e2362ffe1cebef0d240f3145c90a1ff":[11,0,0,0,1,2,5]
+"structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html#ae4252038cb58d81db517a0a8ea7f5a87":[9,0,0,2,1,1,1]
 };

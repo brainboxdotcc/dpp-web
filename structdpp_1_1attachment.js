@@ -4,6 +4,8 @@ var structdpp_1_1attachment =
     [ "attachment", "structdpp_1_1attachment.html#aca59a273fa0fda00501c0df147506c5f", null ],
     [ "~attachment", "structdpp_1_1attachment.html#a0911f0f41b456e42ec31615b24042d63", null ],
     [ "download", "structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1", null ],
+    [ "get_expire_time", "structdpp_1_1attachment.html#a184a2a4ab7ca32132e942e4e12164af1", null ],
+    [ "get_issued_time", "structdpp_1_1attachment.html#a6d2e0be481f85cbab6c8b95c48f7ccfd", null ],
     [ "is_remix", "structdpp_1_1attachment.html#a24633e1ddba574692b949632b8b985e8", null ],
     [ "content_type", "structdpp_1_1attachment.html#a57c192b2925012e1d06913da80f1bafd", null ],
     [ "description", "structdpp_1_1attachment.html#a0b7feae87c4a22fcfa660b922f7d6ceb", null ],

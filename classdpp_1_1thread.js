@@ -81,6 +81,7 @@ var classdpp_1_1thread =
     [ "metadata", "classdpp_1_1thread.html#a64231c8975f095c371b0a4ba478d33ee", null ],
     [ "msg", "classdpp_1_1thread.html#a1bf5e18b2098c25224953c88f7cef0de", null ],
     [ "name", "classdpp_1_1thread.html#a065d6fbd4e21759354c2516b074078a8", null ],
+    [ "newly_created", "classdpp_1_1thread.html#a0a87405b296f38fdbb7f9469198e2dae", null ],
     [ "owner_id", "classdpp_1_1thread.html#adb22659e9dc7fb8dd36d1c9f67eb7181", null ],
     [ "parent_id", "classdpp_1_1thread.html#ae1e877475ccc7113683382f787cfbc48", null ],
     [ "permission_overwrites", "classdpp_1_1thread.html#a3eb698179af0d4c535cf5b7ed01b096e", null ],
