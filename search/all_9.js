@@ -120,7 +120,7 @@ var searchData=
   ['interaction_5fcreate_117',['interaction_create',['../classdpp_1_1events_1_1interaction__create.html',1,'dpp::events']]],
   ['interaction_5fcreate_5ft_118',['interaction_create_t',['../structdpp_1_1interaction__create__t.html',1,'dpp']]],
   ['interaction_5fevent_119',['interaction_event',['../structdpp_1_1command__source.html#acca58c533acf792deaccfa959665d06e',1,'dpp::command_source']]],
-  ['interaction_5ffollowup_5fcreate_120',['interaction_followup_create',['../classdpp_1_1cluster.html#a90096bfbf3b4469eb51f35f74604e902',1,'dpp::cluster']]],
+  ['interaction_5ffollowup_5fcreate_120',['interaction_followup_create',['../classdpp_1_1cluster.html#a868fd144c80f70af0dfc4a790dbb8b4c',1,'dpp::cluster']]],
   ['interaction_5ffollowup_5fcreate_5fsync_121',['interaction_followup_create_sync',['../classdpp_1_1cluster.html#a9b2db5193a9f78bde481df6534f08b7c',1,'dpp::cluster']]],
   ['interaction_5ffollowup_5fdelete_122',['interaction_followup_delete',['../classdpp_1_1cluster.html#ab0877de7e9587e932b4655681ca634db',1,'dpp::cluster']]],
   ['interaction_5ffollowup_5fdelete_5fsync_123',['interaction_followup_delete_sync',['../classdpp_1_1cluster.html#af5501b3f1ed610d5eaa30cebc0d272a0',1,'dpp::cluster']]],
