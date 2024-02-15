@@ -850,34 +850,40 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="2072" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a13389a16cb9bec891527d2405dfed913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1a8f359efd4da1030a66ec5238b495844f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
         <definition>message &amp; dpp::message::set_allowed_mentions</definition>
-        <argsstring>(bool _parse_users, bool _parse_roles, bool _parse_everyone, bool _replied_user, const std::vector&lt; snowflake &gt; &amp;users, const std::vector&lt; snowflake &gt; &amp;roles)</argsstring>
+        <argsstring>(bool _parse_users=false, bool _parse_roles=false, bool _parse_everyone=false, bool _replied_user=false, const std::vector&lt; snowflake &gt; &amp;users={}, const std::vector&lt; snowflake &gt; &amp;roles={})</argsstring>
         <name>set_allowed_mentions</name>
         <param>
           <type>bool</type>
           <declname>_parse_users</declname>
+          <defval>false</defval>
         </param>
         <param>
           <type>bool</type>
           <declname>_parse_roles</declname>
+          <defval>false</defval>
         </param>
         <param>
           <type>bool</type>
           <declname>_parse_everyone</declname>
+          <defval>false</defval>
         </param>
         <param>
           <type>bool</type>
           <declname>_replied_user</declname>
+          <defval>false</defval>
         </param>
         <param>
           <type>const std::vector&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &gt; &amp;</type>
           <declname>users</declname>
+          <defval>{}</defval>
         </param>
         <param>
           <type>const std::vector&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &gt; &amp;</type>
           <declname>roles</declname>
+          <defval>{}</defval>
         </param>
         <briefdescription>
 <para>Set the allowed mentions object for pings on the message. </para>
@@ -888,7 +894,7 @@
 <parametername>_parse_users</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>whether or not to parse users in the message content or embeds </para>
+<para>whether or not to parse users in the message content or embeds, default false </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -896,7 +902,7 @@
 <parametername>_parse_roles</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>whether or not to parse roles in the message content or embeds </para>
+<para>whether or not to parse roles in the message content or embeds, default false </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -904,7 +910,7 @@
 <parametername>_parse_everyone</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>whether or not to parse everyone/here in the message content or embeds </para>
+<para>whether or not to parse everyone/here in the message content or embeds, default false </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -912,7 +918,7 @@
 <parametername>_replied_user</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>if set to true and this is a reply, then ping the user we reply to </para>
+<para>if set to true and this is a reply, then ping the user we reply to, default false </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -920,7 +926,7 @@
 <parametername>users</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>list of user ids to allow pings for </para>
+<para>list of user ids to allow pings for, default an empty vector </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -928,7 +934,7 @@
 <parametername>roles</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>list of role ids to allow pings for </para>
+<para>list of role ids to allow pings for, default an empty vector </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -2227,7 +2233,7 @@
       <member refid="structdpp_1_1message_1a029932133e0a6aea2afdea5f2d98146e" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>pinned</name></member>
       <member refid="structdpp_1_1message_1af6c6ea9f1319adde40d068a2e9b230e7" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>reactions</name></member>
       <member refid="structdpp_1_1message_1a9991c58453a1deb7b785a6b7457372f2" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>sent</name></member>
-      <member refid="structdpp_1_1message_1a13389a16cb9bec891527d2405dfed913" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_allowed_mentions</name></member>
+      <member refid="structdpp_1_1message_1a8f359efd4da1030a66ec5238b495844f" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_allowed_mentions</name></member>
       <member refid="structdpp_1_1message_1a587f5433b73fb7fbffe4b50ce9dd69f8" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_channel_id</name></member>
       <member refid="structdpp_1_1message_1a18a1ebb4b981a0ef46f78f147aa12b66" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_content</name></member>
       <member refid="structdpp_1_1message_1a7063a512a6e7f078e2a81bad077dfcde" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_file_content</name></member>

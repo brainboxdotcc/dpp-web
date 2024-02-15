@@ -175,9 +175,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8649d77de4e7b1c89b90016d3692f283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283">set_reference</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> _message_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> _guild_id=0, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> _channel_id=0, bool fail_if_not_exists=false)</td></tr>
 <tr class="memdesc:a8649d77de4e7b1c89b90016d3692f283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the original message reference for replies/crossposts.  <a href="structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283">More...</a><br /></td></tr>
 <tr class="separator:a8649d77de4e7b1c89b90016d3692f283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13389a16cb9bec891527d2405dfed913"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913">set_allowed_mentions</a> (bool _parse_users, bool _parse_roles, bool _parse_everyone, bool _replied_user, const std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; &amp;users, const std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; &amp;roles)</td></tr>
-<tr class="memdesc:a13389a16cb9bec891527d2405dfed913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the allowed mentions object for pings on the message.  <a href="structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913">More...</a><br /></td></tr>
-<tr class="separator:a13389a16cb9bec891527d2405dfed913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f359efd4da1030a66ec5238b495844f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#a8f359efd4da1030a66ec5238b495844f">set_allowed_mentions</a> (bool _parse_users=false, bool _parse_roles=false, bool _parse_everyone=false, bool _replied_user=false, const std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; &amp;users={}, const std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; &amp;roles={})</td></tr>
+<tr class="memdesc:a8f359efd4da1030a66ec5238b495844f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the allowed mentions object for pings on the message.  <a href="structdpp_1_1message.html#a8f359efd4da1030a66ec5238b495844f">More...</a><br /></td></tr>
+<tr class="separator:a8f359efd4da1030a66ec5238b495844f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03cd35fe267a9cf6b88656668055c181"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdpp_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#a03cd35fe267a9cf6b88656668055c181">fill_from_json</a> (nlohmann::json *j, <a class="el" href="structdpp_1_1cache__policy__t.html">cache_policy_t</a> cp)</td></tr>
 <tr class="separator:a03cd35fe267a9cf6b88656668055c181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d12f89b617144b52da679ee19dd21c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedpp.html#ae9134a9d8edf8adcb87e979bb7a7343e">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message.html#ad4d12f89b617144b52da679ee19dd21c">to_json</a> (bool with_id, bool is_interaction_response) const</td></tr>
@@ -1326,8 +1326,8 @@ false objects are not the same id </dd></dl>
 
 </div>
 </div>
-<a id="a13389a16cb9bec891527d2405dfed913" name="a13389a16cb9bec891527d2405dfed913"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13389a16cb9bec891527d2405dfed913">&#9670;&nbsp;</a></span>set_allowed_mentions()</h2>
+<a id="a8f359efd4da1030a66ec5238b495844f" name="a8f359efd4da1030a66ec5238b495844f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f359efd4da1030a66ec5238b495844f">&#9670;&nbsp;</a></span>set_allowed_mentions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1336,37 +1336,37 @@ false objects are not the same id </dd></dl>
           <td class="memname"><a class="el" href="structdpp_1_1message.html">message</a> &amp; dpp::message::set_allowed_mentions </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_parse_users</em>, </td>
+          <td class="paramname"><em>_parse_users</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_parse_roles</em>, </td>
+          <td class="paramname"><em>_parse_roles</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_parse_everyone</em>, </td>
+          <td class="paramname"><em>_parse_everyone</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_replied_user</em>, </td>
+          <td class="paramname"><em>_replied_user</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>users</em>, </td>
+          <td class="paramname"><em>users</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>roles</em>&#160;</td>
+          <td class="paramname"><em>roles</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1379,12 +1379,12 @@ false objects are not the same id </dd></dl>
 <p>Set the allowed mentions object for pings on the message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_parse_users</td><td>whether or not to parse users in the message content or embeds </td></tr>
-    <tr><td class="paramname">_parse_roles</td><td>whether or not to parse roles in the message content or embeds </td></tr>
-    <tr><td class="paramname">_parse_everyone</td><td>whether or not to parse everyone/here in the message content or embeds </td></tr>
-    <tr><td class="paramname">_replied_user</td><td>if set to true and this is a reply, then ping the user we reply to </td></tr>
-    <tr><td class="paramname">users</td><td>list of user ids to allow pings for </td></tr>
-    <tr><td class="paramname">roles</td><td>list of role ids to allow pings for </td></tr>
+    <tr><td class="paramname">_parse_users</td><td>whether or not to parse users in the message content or embeds, default false </td></tr>
+    <tr><td class="paramname">_parse_roles</td><td>whether or not to parse roles in the message content or embeds, default false </td></tr>
+    <tr><td class="paramname">_parse_everyone</td><td>whether or not to parse everyone/here in the message content or embeds, default false </td></tr>
+    <tr><td class="paramname">_replied_user</td><td>if set to true and this is a reply, then ping the user we reply to, default false </td></tr>
+    <tr><td class="paramname">users</td><td>list of user ids to allow pings for, default an empty vector </td></tr>
+    <tr><td class="paramname">roles</td><td>list of role ids to allow pings for, default an empty vector </td></tr>
   </table>
   </dd>
 </dl>

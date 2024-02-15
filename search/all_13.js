@@ -129,7 +129,7 @@ var searchData=
   ['session_5fstart_5ftotal_126',['session_start_total',['../structdpp_1_1gateway.html#a64fe90aa1ef4e9f32e539b23fe0bf327',1,'dpp::gateway']]],
   ['sessionid_127',['sessionid',['../classdpp_1_1discord__voice__client.html#a8f011c857ff968e44a8e5ddf818a9160',1,'dpp::discord_voice_client::sessionid()'],['../classdpp_1_1discord__client.html#a66922f8fbb2df8c1c92744f4eb524a52',1,'dpp::discord_client::sessionid()']]],
   ['set_128',['set',['../classdpp_1_1permission.html#a9d55819ed11502a41b4d686eab54f4af',1,'dpp::permission::set()'],['../structdpp_1_1utility_1_1iconhash.html#ac675809d00cef53ef6887ef7ffcd095c',1,'dpp::utility::iconhash::set()'],['../structdpp_1_1utility_1_1image__data.html#a2e0c835cc8260562034b7f7f6a61af8b',1,'dpp::utility::image_data::set(image_type format, std::string_view bytes)'],['../structdpp_1_1utility_1_1image__data.html#ab046e715240cd12e353906a4dba3d2b1',1,'dpp::utility::image_data::set(image_type format, const std::byte *bytes, uint32_t byte_size)']]],
-  ['set_5fallowed_5fmentions_129',['set_allowed_mentions',['../structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913',1,'dpp::message']]],
+  ['set_5fallowed_5fmentions_129',['set_allowed_mentions',['../structdpp_1_1message.html#a8f359efd4da1030a66ec5238b495844f',1,'dpp::message']]],
   ['set_5fanimated_130',['set_animated',['../structdpp_1_1select__option.html#a841099bce27c36f02c3edd204a334a68',1,'dpp::select_option']]],
   ['set_5fapplication_5fid_131',['set_application_id',['../classdpp_1_1slashcommand.html#a0b5e048d0df9f02f09ab1117328e0c92',1,'dpp::slashcommand']]],
   ['set_5faudit_5freason_132',['set_audit_reason',['../classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe',1,'dpp::cluster']]],

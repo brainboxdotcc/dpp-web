@@ -37,7 +37,7 @@ var structdpp_1_1message =
     [ "operator=", "structdpp_1_1message.html#adcedcceded5e47efaa574642827beca7", null ],
     [ "operator=", "structdpp_1_1message.html#a1d503169213d056d3dc7700de10b2440", null ],
     [ "operator==", "structdpp_1_1message.html#a9d1b5a4d84b9c7938825c659813bf100", null ],
-    [ "set_allowed_mentions", "structdpp_1_1message.html#a13389a16cb9bec891527d2405dfed913", null ],
+    [ "set_allowed_mentions", "structdpp_1_1message.html#a8f359efd4da1030a66ec5238b495844f", null ],
     [ "set_channel_id", "structdpp_1_1message.html#a587f5433b73fb7fbffe4b50ce9dd69f8", null ],
     [ "set_content", "structdpp_1_1message.html#a18a1ebb4b981a0ef46f78f147aa12b66", null ],
     [ "set_file_content", "structdpp_1_1message.html#a7063a512a6e7f078e2a81bad077dfcde", null ],
