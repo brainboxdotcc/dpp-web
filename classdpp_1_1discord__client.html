@@ -185,6 +185,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3875af4631a5d4f0718163184108649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1discord__client.html">discord_client</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__client.html#ae3875af4631a5d4f0718163184108649">connect_voice</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, bool self_mute=false, bool self_deaf=false)</td></tr>
 <tr class="memdesc:ae3875af4631a5d4f0718163184108649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a voice channel.  <a href="classdpp_1_1discord__client.html#ae3875af4631a5d4f0718163184108649">More...</a><br /></td></tr>
 <tr class="separator:ae3875af4631a5d4f0718163184108649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d239650a1098248b64a792b24df3cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1discord__client.html">discord_client</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__client.html#a30d239650a1098248b64a792b24df3cf">change_voice_channel</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> channel_id, bool self_mute=false, bool self_deaf=false)</td></tr>
+<tr class="memdesc:a30d239650a1098248b64a792b24df3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change voice channel.  <a href="classdpp_1_1discord__client.html#a30d239650a1098248b64a792b24df3cf">More...</a><br /></td></tr>
+<tr class="separator:a30d239650a1098248b64a792b24df3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ebc6597287a863b7b739d6a4c796f78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1discord__client.html">discord_client</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__client.html#a4ebc6597287a863b7b739d6a4c796f78">disconnect_voice</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> guild_id)</td></tr>
 <tr class="memdesc:a4ebc6597287a863b7b739d6a4c796f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the connected voice channel on a guild.  <a href="classdpp_1_1discord__client.html#a4ebc6597287a863b7b739d6a4c796f78">More...</a><br /></td></tr>
 <tr class="separator:a4ebc6597287a863b7b739d6a4c796f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,6 +472,59 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a30d239650a1098248b64a792b24df3cf" name="a30d239650a1098248b64a792b24df3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30d239650a1098248b64a792b24df3cf">&#9670;&nbsp;</a></span>change_voice_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1discord__client.html">discord_client</a> &amp; dpp::discord_client::change_voice_channel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>guild_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
+          <td class="paramname"><em>channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>self_mute</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>self_deaf</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change voice channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guild_id</td><td>Guild where the voice channel is </td></tr>
+    <tr><td class="paramname">channel_id</td><td>Channel ID of the voice channel </td></tr>
+    <tr><td class="paramname">self_mute</td><td>True if the bot should mute itself </td></tr>
+    <tr><td class="paramname">self_deaf</td><td>True if the bot should deafen itself </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to self </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is NOT a synchronous blocking call! The bot isn't instantly ready to send or listen for audio, as we have to wait for the connection to the voice server to be established! e.g. wait for <a class="el" href="classdpp_1_1cluster.html#a8f2f865ac3492196a8167a319261ffb6" title="Called when a voice channel is connected and ready to send audio. Note that this is not directly atta...">dpp::cluster::on_voice_ready</a> event, and then send the audio within that event. </dd></dl>
+
+</div>
+</div>
 <a id="a0ea5213ee46a61afc7c901c66051db3f" name="a0ea5213ee46a61afc7c901c66051db3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ea5213ee46a61afc7c901c66051db3f">&#9670;&nbsp;</a></span>clear_queue()</h2>
 

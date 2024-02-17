@@ -2,6 +2,7 @@ var classdpp_1_1discord__client =
 [
     [ "discord_client", "classdpp_1_1discord__client.html#a5d2ce19636f235882ad32c285f645082", null ],
     [ "~discord_client", "classdpp_1_1discord__client.html#a513980a3c8eaf2bddb495f8f6b352006", null ],
+    [ "change_voice_channel", "classdpp_1_1discord__client.html#a30d239650a1098248b64a792b24df3cf", null ],
     [ "clear_queue", "classdpp_1_1discord__client.html#a0ea5213ee46a61afc7c901c66051db3f", null ],
     [ "close", "classdpp_1_1discord__client.html#a1f21cc8fce27ad72e9414dc9d0acd4d0", null ],
     [ "connect", "classdpp_1_1discord__client.html#aee1812f852a44ee1dc00e66477ffbfab", null ],

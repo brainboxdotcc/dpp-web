@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"namespacedpp_1_1unicode__emoji.html#afd5810bb01b459403ff7a6a701d1d916":[9,0,0,5,2796],
+"namespacedpp_1_1unicode__emoji.html#afd6a262c859cac3ea74b8a788f6effdd":[9,0,0,5,1192],
 "namespacedpp_1_1unicode__emoji.html#afd82aabecf64c37bbe917fb7499f0b96":[9,0,0,5,1925],
 "namespacedpp_1_1unicode__emoji.html#afd993956e047d1a10c004b1b7070ed72":[9,0,0,5,2868],
 "namespacedpp_1_1unicode__emoji.html#afda6a293452487e59833d4c772cac27f":[9,0,0,5,3725],
@@ -241,13 +243,11 @@ var NAVTREEINDEX51 =
 "stream-mp3-discord-bot.html":[5,2,2],
 "structdpp_1_1active__thread__info.html":[9,0,0,7],
 "structdpp_1_1active__thread__info.html":[11,0,0,3],
-"structdpp_1_1active__thread__info.html#a6b19f9963eb6f6174ef6b65a5920cdcf":[11,0,0,3,0],
 "structdpp_1_1active__thread__info.html#a6b19f9963eb6f6174ef6b65a5920cdcf":[9,0,0,7,0],
-"structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[11,0,0,3,1],
+"structdpp_1_1active__thread__info.html#a6b19f9963eb6f6174ef6b65a5920cdcf":[11,0,0,3,0],
 "structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[9,0,0,7,1],
-"structdpp_1_1activity__assets.html":[11,0,0,5],
+"structdpp_1_1active__thread__info.html#a80dd4c6396f6d06a54ac35bf112c5737":[11,0,0,3,1],
 "structdpp_1_1activity__assets.html":[9,0,0,9],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[9,0,0,9,4],
-"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[11,0,0,5,4],
-"structdpp_1_1activity__assets.html#a4fd911619f6da38746e3588eee0c5e80":[11,0,0,5,3]
+"structdpp_1_1activity__assets.html":[11,0,0,5],
+"structdpp_1_1activity__assets.html#a1660c3296a1d846b8a5e8cb2639cb846":[9,0,0,9,4]
 };
