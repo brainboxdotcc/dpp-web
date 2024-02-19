@@ -1503,76 +1503,6 @@
         </inbodydescription>
         <location file="include/dpp/discordclient.h" line="505" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1discord__client_1a30d239650a1098248b64a792b24df3cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> &amp;</type>
-        <definition>discord_client &amp; dpp::discord_client::change_voice_channel</definition>
-        <argsstring>(snowflake guild_id, snowflake channel_id, bool self_mute=false, bool self_deaf=false)</argsstring>
-        <name>change_voice_channel</name>
-        <param>
-          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-          <declname>guild_id</declname>
-        </param>
-        <param>
-          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-          <declname>channel_id</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>self_mute</declname>
-          <defval>false</defval>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>self_deaf</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Change voice channel. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>guild_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Guild where the voice channel is </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>channel_id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Channel ID of the voice channel </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>self_mute</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>True if the bot should mute itself </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>self_deaf</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>True if the bot should deafen itself </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>reference to self </para>
-</simplesect>
-<simplesect kind="note"><para>This is NOT a synchronous blocking call! The bot isn&apos;t instantly ready to send or listen for audio, as we have to wait for the connection to the voice server to be established! e.g. wait for <ref refid="classdpp_1_1cluster_1a8f2f865ac3492196a8167a319261ffb6" kindref="member">dpp::cluster::on_voice_ready</ref> event, and then send the audio within that event. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="519" column="16"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1a4ebc6597287a863b7b739d6a4c796f78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> &amp;</type>
         <definition>discord_client &amp; dpp::discord_client::disconnect_voice</definition>
@@ -1603,7 +1533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="528" column="16"/>
+        <location file="include/dpp/discordclient.h" line="514" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1discord__client_1add9c5c491ce195ec7f0127d6c8ec36b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> *</type>
@@ -1633,7 +1563,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="537" column="11"/>
+        <location file="include/dpp/discordclient.h" line="523" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1websocket__client_1a66ca960ed3dddc37340ecc5d32ff0e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -2090,12 +2020,11 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/discordclient.h" line="142" column="1" bodyfile="include/dpp/discordclient.h" bodystart="143" bodyend="538"/>
+    <location file="include/dpp/discordclient.h" line="142" column="1" bodyfile="include/dpp/discordclient.h" bodystart="143" bodyend="524"/>
     <listofallmembers>
       <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>buffer</name></member>
       <member refid="classdpp_1_1ssl__client_1a7b3bbb4e6a9e271c8f19736b36b71d5d" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>bytes_in</name></member>
       <member refid="classdpp_1_1ssl__client_1a8022a8002cfc6f394016546168ef4085" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>bytes_out</name></member>
-      <member refid="classdpp_1_1discord__client_1a30d239650a1098248b64a792b24df3cf" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>change_voice_channel</name></member>
       <member refid="classdpp_1_1ssl__client_1a5fc2e7836da5485216419bbf17e49428" prot="protected" virt="non-virtual"><scope>dpp::discord_client</scope><name>cipher</name></member>
       <member refid="classdpp_1_1discord__client_1a89e7fc69efa6e8e35123c31e13a5e479" prot="private" virt="non-virtual"><scope>dpp::discord_client</scope><name>cleanup</name></member>
       <member refid="classdpp_1_1discord__client_1a0ea5213ee46a61afc7c901c66051db3f" prot="public" virt="non-virtual"><scope>dpp::discord_client</scope><name>clear_queue</name></member>

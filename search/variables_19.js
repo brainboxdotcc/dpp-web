@@ -11,7 +11,8 @@ var searchData=
   ['yellow_5forange_8',['yellow_orange',['../namespacedpp_1_1colors.html#a1685b158dfb57b79981ce92ff9d0ed7c',1,'dpp::colors']]],
   ['yellow_5fsquare_9',['yellow_square',['../namespacedpp_1_1unicode__emoji.html#a47f81f74acd22c5eeea5c3d7fe9e26d5',1,'dpp::unicode_emoji']]],
   ['yen_10',['yen',['../namespacedpp_1_1unicode__emoji.html#a2e02593b3204a343489bba29a5266b23',1,'dpp::unicode_emoji']]],
-  ['yin_5fyang_11',['yin_yang',['../namespacedpp_1_1unicode__emoji.html#adab73b1777478c21cd754e8735bcee4c',1,'dpp::unicode_emoji']]],
-  ['yo_5fyo_12',['yo_yo',['../namespacedpp_1_1unicode__emoji.html#a4f9fd428cf68890edbf0c86db0be4acb',1,'dpp::unicode_emoji']]],
-  ['yum_13',['yum',['../namespacedpp_1_1unicode__emoji.html#a425893eb0983d73124dd8cdf97567ac3',1,'dpp::unicode_emoji']]]
+  ['yen_5fbanknote_11',['yen_banknote',['../namespacedpp_1_1unicode__emoji.html#a5743e8522db4d71b0c5803f3b8fa51eb',1,'dpp::unicode_emoji']]],
+  ['yin_5fyang_12',['yin_yang',['../namespacedpp_1_1unicode__emoji.html#adab73b1777478c21cd754e8735bcee4c',1,'dpp::unicode_emoji']]],
+  ['yo_5fyo_13',['yo_yo',['../namespacedpp_1_1unicode__emoji.html#a4f9fd428cf68890edbf0c86db0be4acb',1,'dpp::unicode_emoji']]],
+  ['yum_14',['yum',['../namespacedpp_1_1unicode__emoji.html#a425893eb0983d73124dd8cdf97567ac3',1,'dpp::unicode_emoji']]]
 ];
