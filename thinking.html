@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Interactions And Components - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Thinking - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Interactions And Components - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Thinking - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Interactions And Components - D++ - The lightweight C++ Discord API Library">
-<title>Interactions And Components - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Thinking - D++ - The lightweight C++ Discord API Library">
+<title>Thinking - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('interactions-and-components.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('thinking.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,25 +98,62 @@ $(document).ready(function(){initNavTree('interactions-and-components.html','');
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Interactions And Components </div></div>
+  <div class="headertitle"><div class="title">Thinking </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >Interactions are a unified way provided by Discord to handle <a class="el" href="slashcommands.html">slash commands</a> and <a class="el" href="components-menu.html">component interactions</a>, such as <a class="el" href="components.html">clicking a button</a>. Slash commands are much better than message commands as they are not rate limited as much, meaning your bot can handle a lot more at once. They also contain a lot of data about a command, for example by making a command take a user as a parameter, <a class="el" href="resolved-objects.html">the entire user object will be contained in the interaction</a> so you do not have to fetch it yourself, avoiding even more rate limits!</p>
-<ul>
-<li><a class="el" href="slashcommands-menu.html">Slash commands</a></li>
-<li><a class="el" href="user-only-messages.html">Ephemeral Replies ('Only You Can See This' Replies)</a></li>
-<li><a class="el" href="resolved-objects.html">Using Resolved Objects</a></li>
-<li><a class="el" href="components-menu.html">Message Components</a></li>
-<li><a class="el" href="modal-dialog-interactions.html">Modals</a></li>
-<li><a class="el" href="context-menu.html">Context Menus</a></li>
-<li><a class="el" href="thinking.html">Thinking</a> </li>
-</ul>
+<div class="textblock"><p >A common mistake people do is use <code>event.thinking</code> with <code>event.reply</code>, however, they always run into the <code>Interaction has already been acknowledged.</code> error! The reason for this is because <code>event.thinking</code> is a response to the interaction, meaning you have acknowledged it! You should use <a class="el" href="structdpp_1_1interaction__create__t.html#a10553ebb8d10ba58595f825e0a89eb1b" title="Edit original response message for this interaction.">dpp::interaction_create_t::edit_original_response</a> instead.</p>
+<p >Below is an example, showing how you should properly use the thinking method.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;dpp/dpp.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code hl_class" href="classdpp_1_1cluster.html">dpp::cluster</a> bot(<span class="stringliteral">&quot;token&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    bot.on_log(<a class="code hl_function" href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a>());</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/* The event is fired when someone issues your commands */</span></div>
+<div class="line">    bot.on_slashcommand([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a>&amp; event) {</div>
+<div class="line">        <span class="comment">/* Check which command they ran */</span></div>
+<div class="line">        <span class="keywordflow">if</span> (event.<a class="code hl_variable" href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">command</a>.<a class="code hl_function" href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">get_command_name</a>() == <span class="stringliteral">&quot;thinking&quot;</span>) {</div>
+<div class="line">            <span class="comment">/*</span></div>
+<div class="line"><span class="comment">             * true for Ephemeral. </span></div>
+<div class="line"><span class="comment">             * You can set this to false if you want everyone to see the thinking response.</span></div>
+<div class="line"><span class="comment">             */</span></div>
+<div class="line">            event.thinking(true, [event](const dpp::confirmation_callback_t&amp; callback) {</div>
+<div class="line">                event.edit_original_response(dpp::message(<span class="stringliteral">&quot;thonk&quot;</span>));</div>
+<div class="line">            });</div>
+<div class="line"> </div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    bot.on_ready([&amp;bot](<span class="keyword">const</span> <a class="code hl_struct" href="structdpp_1_1ready__t.html">dpp::ready_t</a>&amp; event) {</div>
+<div class="line">        <span class="keywordflow">if</span> (dpp::run_once&lt;struct register_bot_commands&gt;()) {</div>
+<div class="line">            <span class="comment">/* Create a new global command on ready event */</span></div>
+<div class="line">            <a class="code hl_class" href="classdpp_1_1slashcommand.html">dpp::slashcommand</a> newcommand(<span class="stringliteral">&quot;thinking&quot;</span>, <span class="stringliteral">&quot;Thinking example...&quot;</span>, bot.me.id);</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">/* Register the command */</span></div>
+<div class="line">            bot.global_command_create(newcommand);</div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    bot.start(<a class="code hl_enumvalue" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassdpp_1_1cluster_html"><div class="ttname"><a href="classdpp_1_1cluster.html">dpp::cluster</a></div><div class="ttdoc">The cluster class represents a group of shards and a command queue for sending and receiving commands...</div><div class="ttdef"><b>Definition:</b> cluster.h:80</div></div>
+<div class="ttc" id="aclassdpp_1_1interaction_html_aabbb8d58d708128098516ed443d5c140"><div class="ttname"><a href="classdpp_1_1interaction.html#aabbb8d58d708128098516ed443d5c140">dpp::interaction::get_command_name</a></div><div class="ttdeci">std::string get_command_name() const</div><div class="ttdoc">Get the command name for a command interaction.</div></div>
+<div class="ttc" id="aclassdpp_1_1slashcommand_html"><div class="ttname"><a href="classdpp_1_1slashcommand.html">dpp::slashcommand</a></div><div class="ttdoc">Represents an application command, created by your bot either globally, or on a guild.</div><div class="ttdef"><b>Definition:</b> appcommand.h:1339</div></div>
+<div class="ttc" id="anamespacedpp_1_1utility_html_a8c2cc04bb80ffd287b376d5977899277"><div class="ttname"><a href="namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277">dpp::utility::cout_logger</a></div><div class="ttdeci">std::function&lt; void(const dpp::log_t &amp;)&gt; DPP_EXPORT cout_logger()</div><div class="ttdoc">Get a default logger that outputs to std::cout. e.g.</div></div>
+<div class="ttc" id="anamespacedpp_html_af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"><div class="ttname"><a href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a></div><div class="ttdeci">@ st_wait</div><div class="ttdoc">Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will ...</div><div class="ttdef"><b>Definition:</b> cluster.h:63</div></div>
+<div class="ttc" id="astructdpp_1_1interaction__create__t_html_a8b0c69c156a1e532507a918c13414f14"><div class="ttname"><a href="structdpp_1_1interaction__create__t.html#a8b0c69c156a1e532507a918c13414f14">dpp::interaction_create_t::command</a></div><div class="ttdeci">interaction command</div><div class="ttdoc">command interaction</div><div class="ttdef"><b>Definition:</b> dispatcher.h:678</div></div>
+<div class="ttc" id="astructdpp_1_1ready__t_html"><div class="ttname"><a href="structdpp_1_1ready__t.html">dpp::ready_t</a></div><div class="ttdoc">Session ready.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:961</div></div>
+<div class="ttc" id="astructdpp_1_1slashcommand__t_html"><div class="ttname"><a href="structdpp_1_1slashcommand__t.html">dpp::slashcommand_t</a></div><div class="ttdoc">User has issued a slash command.</div><div class="ttdef"><b>Definition:</b> dispatcher.h:695</div></div>
+</div><!-- fragment --><p >This will make the bot think briefly, then change the response to "thonk"! </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
-		<li class="navelem"><a class="el" href="example-programs.html">Example Programs</a></li>
+		<li class="navelem"><a class="el" href="example-programs.html">Example Programs</a></li><li class="navelem"><a class="el" href="interactions-and-components.html">Interactions And Components</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
