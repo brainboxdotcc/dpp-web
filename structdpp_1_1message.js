@@ -48,6 +48,7 @@ var structdpp_1_1message =
     [ "set_reference", "structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283", null ],
     [ "set_type", "structdpp_1_1message.html#ada2f9404e7dbb12b3de0a382c3733587", null ],
     [ "suppress_embeds", "structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040", null ],
+    [ "suppress_embeds", "structdpp_1_1message.html#a045f98f4239c78a95d9b4ee77493971a", null ],
     [ "suppress_notifications", "structdpp_1_1message.html#ae65726dbbd34f0b70c7b63116d7a7c5c", null ],
     [ "to_json", "structdpp_1_1message.html#ad4d12f89b617144b52da679ee19dd21c", null ],
     [ "to_json", "structdpp_1_1message.html#ae169e4231b77955fc1b43a3b7be9770c", null ],

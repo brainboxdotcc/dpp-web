@@ -152,7 +152,7 @@ var searchData=
   ['str_149',['str',['../classdpp_1_1snowflake.html#a6231d024d2ab5d3123d456a90bb24b33',1,'dpp::snowflake']]],
   ['string_5fhas_5fprefix_150',['string_has_prefix',['../classdpp_1_1commandhandler.html#a064419ada0fd30cee04faec9f75ba04d',1,'dpp::commandhandler']]],
   ['string_5fnot_5fnull_151',['string_not_null',['../namespacedpp.html#adf57d9793b70d4b4da431491ab263298',1,'dpp']]],
-  ['suppress_5fembeds_152',['suppress_embeds',['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message']]],
+  ['suppress_5fembeds_152',['suppress_embeds',['../structdpp_1_1message.html#a045f98f4239c78a95d9b4ee77493971a',1,'dpp::message::suppress_embeds(bool suppress)'],['../structdpp_1_1message.html#ae6f7c8c7061f1b53da8c43e59d79d040',1,'dpp::message::suppress_embeds() const']]],
   ['suppress_5fnotifications_153',['suppress_notifications',['../structdpp_1_1message.html#ae65726dbbd34f0b70c7b63116d7a7c5c',1,'dpp::message']]],
   ['sync_154',['sync',['../namespacedpp.html#a6de81ad1777ea865ffb7bc2f91a4e330',1,'dpp']]]
 ];
