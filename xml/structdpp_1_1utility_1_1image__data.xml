@@ -96,13 +96,14 @@
         </inbodydescription>
         <location file="include/dpp/utility.h" line="361" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1utility_1_1image__data_1a4957664ac56c6e41e88106ff78957886" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1utility_1_1image__data_1a5408a57935375b69d892ac8a0b1c2532" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
         <definition>dpp::utility::image_data::image_data</definition>
-        <argsstring>(image_data &amp;&amp;) noexcept=default</argsstring>
+        <argsstring>(image_data &amp;&amp;rhs) noexcept=default</argsstring>
         <name>image_data</name>
         <param>
           <type><ref refid="structdpp_1_1utility_1_1image__data" kindref="compound">image_data</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
         </param>
         <briefdescription>
 <para>Move an image. </para>
@@ -150,7 +151,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>str</parametername>
+<parametername>bytes</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Data in a string </para>
@@ -196,15 +197,15 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>buf</parametername>
+<parametername>bytes</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Byte buffer </para>
+<para>Data of the image </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>size_t</parametername>
+<parametername>byte_size</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Image size in bytes </para>
@@ -301,12 +302,12 @@
 <parametername>format</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Format of the image </para>
+<para>Image format </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>data</parametername>
+<parametername>bytes</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Data of the image </para>
@@ -350,10 +351,18 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>data</parametername>
+<parametername>bytes</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Data of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byte_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image size in bytes </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -361,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="419" column="6"/>
+        <location file="include/dpp/utility.h" line="420" column="6"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1image__data_1a564d0dbfd98bbf88bdd8b4f2c4e57066" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -378,7 +387,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="426" column="13"/>
+        <location file="include/dpp/utility.h" line="427" column="13"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1image__data_1a9f6645ae333bc75200a3f39f57ea2838" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -395,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="434" column="13"/>
+        <location file="include/dpp/utility.h" line="435" column="13"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1image__data_1a829d0a147be49ba213f44e9a63451334" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -412,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="442" column="13"/>
+        <location file="include/dpp/utility.h" line="443" column="13"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1image__data_1af0508cbe6e52c30ac0e98a95d9c1f7b6" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -429,7 +438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="449" column="6"/>
+        <location file="include/dpp/utility.h" line="450" column="6"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1utility_1_1image__data_1a15fbf501af2d15710dedd36f9d8947c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
@@ -448,7 +457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/utility.h" line="457" column="6"/>
+        <location file="include/dpp/utility.h" line="458" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -481,7 +490,7 @@
         <label>uint32_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/utility.h" line="333" column="1" bodyfile="include/dpp/utility.h" bodystart="333" bodyend="458"/>
+    <location file="include/dpp/utility.h" line="333" column="1" bodyfile="include/dpp/utility.h" bodystart="333" bodyend="459"/>
     <listofallmembers>
       <member refid="structdpp_1_1utility_1_1image__data_1a564d0dbfd98bbf88bdd8b4f2c4e57066" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>base64_encode</name></member>
       <member refid="structdpp_1_1utility_1_1image__data_1a2a54dca08985afe1b55f427088743967" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>data</name></member>
@@ -490,7 +499,7 @@
       <member refid="structdpp_1_1utility_1_1image__data_1a829d0a147be49ba213f44e9a63451334" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>get_mime_type</name></member>
       <member refid="structdpp_1_1utility_1_1image__data_1af36acc26e03aeff56f2457b5e4c6c533" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>image_data</name></member>
       <member refid="structdpp_1_1utility_1_1image__data_1acaf93081cc297f4d444984305835e0fd" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>image_data</name></member>
-      <member refid="structdpp_1_1utility_1_1image__data_1a4957664ac56c6e41e88106ff78957886" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>image_data</name></member>
+      <member refid="structdpp_1_1utility_1_1image__data_1a5408a57935375b69d892ac8a0b1c2532" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>image_data</name></member>
       <member refid="structdpp_1_1utility_1_1image__data_1a414b2210afd26eb519e0a164da3edfd0" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>image_data</name></member>
       <member refid="structdpp_1_1utility_1_1image__data_1a0243a42b5b79106823565a4f9a054ed4" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>image_data</name></member>
       <member refid="structdpp_1_1utility_1_1image__data_1ab7544650ecbcb2605db851e99e2023d1" prot="public" virt="non-virtual"><scope>dpp::utility::image_data</scope><name>operator=</name></member>
