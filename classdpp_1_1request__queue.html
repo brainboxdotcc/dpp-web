@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1request__queue.html',''); 
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -121,6 +122,15 @@ $(document).ready(function(){initNavTree('classdpp_1_1request__queue.html',''); 
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1request__queue_1_1completed__request.html">completed_request</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A completed request. Contains both the request and the response.  <a href="structdpp_1_1request__queue_1_1completed__request.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1request__queue_1_1queued__deleting__request.html">queued_deleting_request</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A request queued for deletion in the queue.  <a href="structdpp_1_1request__queue_1_1queued__deleting__request.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afec7ef3d2deeef5687355cb1e6fb2eb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#afec7ef3d2deeef5687355cb1e6fb2eb3">request_queue</a> (class <a class="el" href="classdpp_1_1cluster.html">cluster</a> *owner, uint32_t request_threads=8)</td></tr>
@@ -135,9 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a5ccaae72d03d626852be0a0d3c6b86dd">~request_queue</a> ()</td></tr>
 <tr class="memdesc:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the request queue object. Side effects: Joins and deletes queue threads.  <a href="classdpp_1_1request__queue.html#a5ccaae72d03d626852be0a0d3c6b86dd">More...</a><br /></td></tr>
 <tr class="separator:a5ccaae72d03d626852be0a0d3c6b86dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3d4e87d99ad8cfb4e262aa71147b8c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#ad3d4e87d99ad8cfb4e262aa71147b8c5">post_request</a> (<a class="el" href="classdpp_1_1http__request.html">http_request</a> *req)</td></tr>
-<tr class="memdesc:ad3d4e87d99ad8cfb4e262aa71147b8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> into the request queue. You should ALWAYS "new" an object to pass to here &ndash; don't submit an object that's on the stack!  <a href="classdpp_1_1request__queue.html#ad3d4e87d99ad8cfb4e262aa71147b8c5">More...</a><br /></td></tr>
-<tr class="separator:ad3d4e87d99ad8cfb4e262aa71147b8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a3adde76b2c5ddb6c06b36d00a9646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a78a3adde76b2c5ddb6c06b36d00a9646">post_request</a> (std::unique_ptr&lt; <a class="el" href="classdpp_1_1http__request.html">http_request</a> &gt; req)</td></tr>
+<tr class="memdesc:a78a3adde76b2c5ddb6c06b36d00a9646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> into the request queue.  <a href="classdpp_1_1request__queue.html#a78a3adde76b2c5ddb6c06b36d00a9646">More...</a><br /></td></tr>
+<tr class="separator:a78a3adde76b2c5ddb6c06b36d00a9646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8d6cdce3298446bc199d8a04a9d158"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#adf8d6cdce3298446bc199d8a04a9d158">is_globally_ratelimited</a> () const</td></tr>
 <tr class="memdesc:adf8d6cdce3298446bc199d8a04a9d158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the bot is currently globally rate limited.  <a href="classdpp_1_1request__queue.html#adf8d6cdce3298446bc199d8a04a9d158">More...</a><br /></td></tr>
 <tr class="separator:adf8d6cdce3298446bc199d8a04a9d158"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,15 +172,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a4e4ca349f25239201a985adb1db64353"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a4e4ca349f25239201a985adb1db64353">out_ready</a></td></tr>
 <tr class="memdesc:a4e4ca349f25239201a985adb1db64353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outbound queue condition. Signalled when there are requests completed to call callbacks for.  <a href="classdpp_1_1request__queue.html#a4e4ca349f25239201a985adb1db64353">More...</a><br /></td></tr>
 <tr class="separator:a4e4ca349f25239201a985adb1db64353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade3ecfd45592dfcea06e6e9de9b70583"><td class="memItemLeft" align="right" valign="top">std::queue&lt; std::pair&lt; <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> *, <a class="el" href="classdpp_1_1http__request.html">http_request</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#ade3ecfd45592dfcea06e6e9de9b70583">responses_out</a></td></tr>
-<tr class="memdesc:ade3ecfd45592dfcea06e6e9de9b70583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completed requests queue.  <a href="classdpp_1_1request__queue.html#ade3ecfd45592dfcea06e6e9de9b70583">More...</a><br /></td></tr>
-<tr class="separator:ade3ecfd45592dfcea06e6e9de9b70583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa529254021faa302ad92f164042f01"><td class="memItemLeft" align="right" valign="top">std::queue&lt; <a class="el" href="structdpp_1_1request__queue_1_1completed__request.html">completed_request</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a1fa529254021faa302ad92f164042f01">responses_out</a></td></tr>
+<tr class="memdesc:a1fa529254021faa302ad92f164042f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completed requests queue.  <a href="classdpp_1_1request__queue.html#a1fa529254021faa302ad92f164042f01">More...</a><br /></td></tr>
+<tr class="separator:a1fa529254021faa302ad92f164042f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55e16f17459875caa27c1e34d2d8ad1e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdpp_1_1in__thread.html">in_thread</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a55e16f17459875caa27c1e34d2d8ad1e">requests_in</a></td></tr>
 <tr class="memdesc:a55e16f17459875caa27c1e34d2d8ad1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of inbound request threads forming a pool. There are a set number of these defined by a constant in queues.cpp. A request is always placed on the same element in this vector, based upon its url, so that two conditions are satisfied: 1) Any requests for the same ratelimit bucket are handled by the same thread in the pool so that they do not create unnecessary 429 errors, 2) Requests for different endpoints go into different buckets, so that they may be requested in parallel A global ratelimit event pauses all threads in the pool. These are few and far between.  <a href="classdpp_1_1request__queue.html#a55e16f17459875caa27c1e34d2d8ad1e">More...</a><br /></td></tr>
 <tr class="separator:a55e16f17459875caa27c1e34d2d8ad1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f22c2c802a90fddf160d13ffd0020e9"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; time_t, std::pair&lt; <a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a> *, <a class="el" href="classdpp_1_1http__request.html">http_request</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a9f22c2c802a90fddf160d13ffd0020e9">responses_to_delete</a></td></tr>
-<tr class="memdesc:a9f22c2c802a90fddf160d13ffd0020e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completed requests to delete.  <a href="classdpp_1_1request__queue.html#a9f22c2c802a90fddf160d13ffd0020e9">More...</a><br /></td></tr>
-<tr class="separator:a9f22c2c802a90fddf160d13ffd0020e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad976e7018a76e6d42daa103f665667"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdpp_1_1request__queue_1_1queued__deleting__request.html">queued_deleting_request</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a9ad976e7018a76e6d42daa103f665667">responses_to_delete</a></td></tr>
+<tr class="memdesc:a9ad976e7018a76e6d42daa103f665667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completed requests to delete. Sorted by deletion time.  <a href="classdpp_1_1request__queue.html#a9ad976e7018a76e6d42daa103f665667">More...</a><br /></td></tr>
+<tr class="separator:a9ad976e7018a76e6d42daa103f665667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fd6a3d04141f1d227d1253fa414b1fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1request__queue.html#a7fd6a3d04141f1d227d1253fa414b1fd">terminating</a></td></tr>
 <tr class="memdesc:a7fd6a3d04141f1d227d1253fa414b1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true if the threads should terminate.  <a href="classdpp_1_1request__queue.html#a7fd6a3d04141f1d227d1253fa414b1fd">More...</a><br /></td></tr>
 <tr class="separator:a7fd6a3d04141f1d227d1253fa414b1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,8 +358,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ad3d4e87d99ad8cfb4e262aa71147b8c5" name="ad3d4e87d99ad8cfb4e262aa71147b8c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3d4e87d99ad8cfb4e262aa71147b8c5">&#9670;&nbsp;</a></span>post_request()</h2>
+<a id="a78a3adde76b2c5ddb6c06b36d00a9646" name="a78a3adde76b2c5ddb6c06b36d00a9646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a3adde76b2c5ddb6c06b36d00a9646">&#9670;&nbsp;</a></span>post_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,14 +367,14 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdpp_1_1request__queue.html">request_queue</a> &amp; dpp::request_queue::post_request </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdpp_1_1http__request.html">http_request</a> *&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classdpp_1_1http__request.html">http_request</a> &gt;&#160;</td>
           <td class="paramname"><em>req</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Put a <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> into the request queue. You should ALWAYS "new" an object to pass to here &ndash; don't submit an object that's on the stack! </p>
+<p>Put a <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> into the request queue. </p>
 <dl class="section note"><dt>Note</dt><dd>Will use a simple hash function to determine which of the 'in queues' to place this request onto. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -595,8 +605,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ade3ecfd45592dfcea06e6e9de9b70583" name="ade3ecfd45592dfcea06e6e9de9b70583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade3ecfd45592dfcea06e6e9de9b70583">&#9670;&nbsp;</a></span>responses_out</h2>
+<a id="a1fa529254021faa302ad92f164042f01" name="a1fa529254021faa302ad92f164042f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa529254021faa302ad92f164042f01">&#9670;&nbsp;</a></span>responses_out</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +615,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::queue&lt;std::pair&lt;<a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a>*, <a class="el" href="classdpp_1_1http__request.html">http_request</a>*&gt; &gt; dpp::request_queue::responses_out</td>
+          <td class="memname">std::queue&lt;<a class="el" href="structdpp_1_1request__queue_1_1completed__request.html">completed_request</a>&gt; dpp::request_queue::responses_out</td>
         </tr>
       </table>
   </td>
@@ -619,8 +629,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f22c2c802a90fddf160d13ffd0020e9" name="a9f22c2c802a90fddf160d13ffd0020e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f22c2c802a90fddf160d13ffd0020e9">&#9670;&nbsp;</a></span>responses_to_delete</h2>
+<a id="a9ad976e7018a76e6d42daa103f665667" name="a9ad976e7018a76e6d42daa103f665667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad976e7018a76e6d42daa103f665667">&#9670;&nbsp;</a></span>responses_to_delete</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -629,7 +639,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::multimap&lt;time_t, std::pair&lt;<a class="el" href="structdpp_1_1http__request__completion__t.html">http_request_completion_t</a>*, <a class="el" href="classdpp_1_1http__request.html">http_request</a>*&gt; &gt; dpp::request_queue::responses_to_delete</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structdpp_1_1request__queue_1_1queued__deleting__request.html">queued_deleting_request</a>&gt; dpp::request_queue::responses_to_delete</td>
         </tr>
       </table>
   </td>
@@ -639,7 +649,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Completed requests to delete. </p>
+<p>Completed requests to delete. Sorted by deletion time. </p>
 
 </div>
 </div>

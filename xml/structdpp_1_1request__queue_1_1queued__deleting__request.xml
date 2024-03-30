@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1request__queue_1_1queued__deleting__request" kind="struct" language="C++" prot="protected">
+    <compoundname>dpp::request_queue::queued_deleting_request</compoundname>
+    <includes local="no">queues.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1request__queue_1_1queued__deleting__request_1a85216507825605eaf9348e7ab768ce57" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::request_queue::queued_deleting_request::time_to_delete</definition>
+        <argsstring></argsstring>
+        <name>time_to_delete</name>
+        <briefdescription>
+<para>Time to delete the request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="557" column="8" bodyfile="include/dpp/queues.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1request__queue_1_1queued__deleting__request_1a358760d026189aa3bdf13a842492c178" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1request__queue_1_1completed__request" kindref="compound">completed_request</ref></type>
+        <definition>completed_request dpp::request_queue::queued_deleting_request::request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <briefdescription>
+<para>The request to delete. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="562" column="19" bodyfile="include/dpp/queues.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1request__queue_1_1queued__deleting__request_1a99f504083968f238ce6f81282405312c" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::request_queue::queued_deleting_request::operator&lt;</definition>
+        <argsstring>(const queued_deleting_request &amp;other) const noexcept</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structdpp_1_1request__queue_1_1queued__deleting__request" kindref="compound">queued_deleting_request</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Comparator for sorting purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other queued request to compare the deletion time with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Whether this request comes before another in strict ordering </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="569" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1request__queue_1_1queued__deleting__request_1a86f2f42c869b9015818a26bd4231fdc0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::request_queue::queued_deleting_request::operator&lt;</definition>
+        <argsstring>(time_t time) const noexcept</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>time_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Comparator for sorting purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to compare with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Whether this request&apos;s deletion time is lower than the time given, for strict ordering </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/queues.h" line="576" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A request queued for deletion in the queue. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>dpp::request_queue::completed_request</label>
+        <link refid="structdpp_1_1request__queue_1_1completed__request"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>request</edgelabel>
+          <edgelabel>response</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::request_queue::queued_deleting_request</label>
+        <link refid="structdpp_1_1request__queue_1_1queued__deleting__request"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>time_to_delete</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>request</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>unique_ptr&lt;</label>
+      </node>
+      <node id="2">
+        <label>time_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/queues.h" line="553" column="1" bodyfile="include/dpp/queues.h" bodystart="553" bodyend="577"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1request__queue_1_1queued__deleting__request_1a99f504083968f238ce6f81282405312c" prot="public" virt="non-virtual"><scope>dpp::request_queue::queued_deleting_request</scope><name>operator&lt;</name></member>
+      <member refid="structdpp_1_1request__queue_1_1queued__deleting__request_1a86f2f42c869b9015818a26bd4231fdc0" prot="public" virt="non-virtual"><scope>dpp::request_queue::queued_deleting_request</scope><name>operator&lt;</name></member>
+      <member refid="structdpp_1_1request__queue_1_1queued__deleting__request_1a358760d026189aa3bdf13a842492c178" prot="public" virt="non-virtual"><scope>dpp::request_queue::queued_deleting_request</scope><name>request</name></member>
+      <member refid="structdpp_1_1request__queue_1_1queued__deleting__request_1a85216507825605eaf9348e7ab768ce57" prot="public" virt="non-virtual"><scope>dpp::request_queue::queued_deleting_request</scope><name>time_to_delete</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

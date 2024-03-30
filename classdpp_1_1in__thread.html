@@ -118,9 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d739e6980d29c21ec366d6723b3c7f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1in__thread.html#a1d739e6980d29c21ec366d6723b3c7f5">~in_thread</a> ()</td></tr>
 <tr class="memdesc:a1d739e6980d29c21ec366d6723b3c7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the in thread object This will end the thread that is owned by this object by joining it.  <a href="classdpp_1_1in__thread.html#a1d739e6980d29c21ec366d6723b3c7f5">More...</a><br /></td></tr>
 <tr class="separator:a1d739e6980d29c21ec366d6723b3c7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafd1339f015ed11175d0d01abe42031a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1in__thread.html#aafd1339f015ed11175d0d01abe42031a">post_request</a> (<a class="el" href="classdpp_1_1http__request.html">http_request</a> *req)</td></tr>
-<tr class="memdesc:aafd1339f015ed11175d0d01abe42031a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> to this thread.  <a href="classdpp_1_1in__thread.html#aafd1339f015ed11175d0d01abe42031a">More...</a><br /></td></tr>
-<tr class="separator:aafd1339f015ed11175d0d01abe42031a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85582889157177309e1725787a5aee58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1in__thread.html#a85582889157177309e1725787a5aee58">post_request</a> (std::unique_ptr&lt; <a class="el" href="classdpp_1_1http__request.html">http_request</a> &gt; req)</td></tr>
+<tr class="memdesc:a85582889157177309e1725787a5aee58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a <a class="el" href="classdpp_1_1http__request.html" title="A HTTP request.">http_request</a> to this thread.  <a href="classdpp_1_1in__thread.html#a85582889157177309e1725787a5aee58">More...</a><br /></td></tr>
+<tr class="separator:a85582889157177309e1725787a5aee58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a thread in the thread pool handling requests to HTTP(S) servers. There are several of these, the total defined by a constant in queues.cpp, and each one will always receive requests for the same rate limit bucket based on its endpoint portion of the url. This makes rate limit handling reliable and easy to manage. Each of these also has its own mutex, so that requests are less likely to block while waiting for internal containers to be usable. </p>
@@ -189,8 +189,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aafd1339f015ed11175d0d01abe42031a" name="aafd1339f015ed11175d0d01abe42031a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafd1339f015ed11175d0d01abe42031a">&#9670;&nbsp;</a></span>post_request()</h2>
+<a id="a85582889157177309e1725787a5aee58" name="a85582889157177309e1725787a5aee58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85582889157177309e1725787a5aee58">&#9670;&nbsp;</a></span>post_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +198,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void dpp::in_thread::post_request </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdpp_1_1http__request.html">http_request</a> *&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classdpp_1_1http__request.html">http_request</a> &gt;&#160;</td>
           <td class="paramname"><em>req</em></td><td>)</td>
           <td></td>
         </tr>

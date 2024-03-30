@@ -102,19 +102,19 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="434" column="10" bodyfile="include/dpp/queues.h" bodystart="434" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1in__thread_1a983a491d310f4c73425c3df23d00e1e6" prot="private" static="no" mutable="no">
-        <type>std::map&lt; std::string, std::vector&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> * &gt; &gt;</type>
-        <definition>std::map&lt;std::string, std::vector&lt;http_request*&gt; &gt; dpp::in_thread::requests_in</definition>
+      <memberdef kind="variable" id="classdpp_1_1in__thread_1a9fc0c87fcd7e3544906d266160bc799d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;http_request&gt; &gt; dpp::in_thread::requests_in</definition>
         <argsstring></argsstring>
         <name>requests_in</name>
         <briefdescription>
-<para>Queue of requests to be made. </para>
+<para>Queue of requests to be made. Sorted by <ref refid="classdpp_1_1http__request_1a31cf6b360a893292435ea56b8d6a94c6" kindref="member">http_request::endpoint</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="439" column="10" bodyfile="include/dpp/queues.h" bodystart="439" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="439" column="13" bodyfile="include/dpp/queues.h" bodystart="439" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -214,13 +214,13 @@
         </inbodydescription>
         <location file="include/dpp/queues.h" line="460" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1in__thread_1aafd1339f015ed11175d0d01abe42031a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1in__thread_1a85582889157177309e1725787a5aee58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::in_thread::post_request</definition>
-        <argsstring>(http_request *req)</argsstring>
+        <argsstring>(std::unique_ptr&lt; http_request &gt; req)</argsstring>
         <name>post_request</name>
         <param>
-          <type><ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> *</type>
+          <type>std::unique_ptr&lt; <ref refid="classdpp_1_1http__request" kindref="compound">http_request</ref> &gt;</type>
           <declname>req</declname>
         </param>
         <briefdescription>
@@ -257,9 +257,9 @@
       <member refid="classdpp_1_1in__thread_1ab43f5ed51219081d52143f7e3a32b6c7" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_ready</name></member>
       <member refid="classdpp_1_1in__thread_1a5367c50def21f9ff755a1efe3d880408" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_thr</name></member>
       <member refid="classdpp_1_1in__thread_1aa3facf9b1775708af491a17bbc9ce627" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>in_thread</name></member>
-      <member refid="classdpp_1_1in__thread_1aafd1339f015ed11175d0d01abe42031a" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>post_request</name></member>
+      <member refid="classdpp_1_1in__thread_1a85582889157177309e1725787a5aee58" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>post_request</name></member>
       <member refid="classdpp_1_1in__thread_1af879ab50fc6a4e0b584aa1af17700187" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>requests</name></member>
-      <member refid="classdpp_1_1in__thread_1a983a491d310f4c73425c3df23d00e1e6" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>requests_in</name></member>
+      <member refid="classdpp_1_1in__thread_1a9fc0c87fcd7e3544906d266160bc799d" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>requests_in</name></member>
       <member refid="classdpp_1_1in__thread_1a0ed20354f9c47a238702477ad3870d62" prot="private" virt="non-virtual"><scope>dpp::in_thread</scope><name>terminating</name></member>
       <member refid="classdpp_1_1in__thread_1a1d739e6980d29c21ec366d6723b3c7f5" prot="public" virt="non-virtual"><scope>dpp::in_thread</scope><name>~in_thread</name></member>
     </listofallmembers>
