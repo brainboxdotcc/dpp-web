@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"namespacedpp_1_1unicode__emoji.html#afd05a870f778c0cf4285721b3896093b":[9,0,0,5,4871],
+"namespacedpp_1_1unicode__emoji.html#afd09e1ebeb7897dddeccf8ccd9a90164":[9,0,0,5,3057],
 "namespacedpp_1_1unicode__emoji.html#afd1007c20914cb889990efb968d65e57":[9,0,0,5,4584],
 "namespacedpp_1_1unicode__emoji.html#afd27a72bf04b231297d5a0382fea4298":[9,0,0,5,2142],
 "namespacedpp_1_1unicode__emoji.html#afd29da1a87d150c0b4e39ff2249a7fb2":[9,0,0,5,1263],
@@ -202,8 +204,8 @@ var NAVTREEINDEX52 =
 "namespacemembers_type.html":[9,1,3],
 "namespacemembers_u.html":[9,1,0,21],
 "namespacemembers_v.html":[9,1,0,22],
-"namespacemembers_vars.html":[9,1,2,0],
 "namespacemembers_vars.html":[9,1,2],
+"namespacemembers_vars.html":[9,1,2,0],
 "namespacemembers_vars_a.html":[9,1,2,1],
 "namespacemembers_vars_b.html":[9,1,2,2],
 "namespacemembers_vars_c.html":[9,1,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "slashcommands-menu.html":[5,1,0],
 "slashcommands.html":[5,1,0,0],
 "soundboard.html":[5,2,0],
-"spdlog.html":[5,4,1],
-"stream-mp3-discord-bot.html":[5,2,2],
-"structdpp_1_1active__thread__info.html":[11,0,0,3]
+"spdlog.html":[5,4,1]
 };

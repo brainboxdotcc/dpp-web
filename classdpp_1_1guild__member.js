@@ -17,6 +17,7 @@ var classdpp_1_1guild__member =
     [ "has_started_onboarding", "classdpp_1_1guild__member.html#a7833e07576ea23023575d4f213825d82", null ],
     [ "is_communication_disabled", "classdpp_1_1guild__member.html#a5f914350fd3720e72e4857cc3075e09f", null ],
     [ "is_deaf", "classdpp_1_1guild__member.html#a1136b98c677fbbcbcc1291857cfe53ec", null ],
+    [ "is_guild_owner", "classdpp_1_1guild__member.html#a214a6f9f4ca7129252a9ab80c5715cec", null ],
     [ "is_muted", "classdpp_1_1guild__member.html#a0d9540b747d4f604088bc2d4b82f1695", null ],
     [ "is_pending", "classdpp_1_1guild__member.html#a0e8b71e030ad98f31831d7e0a079b873", null ],
     [ "operator==", "classdpp_1_1guild__member.html#a4a71ab5b4abfaf6d469bcbd7955bbcae", null ],
