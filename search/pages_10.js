@@ -11,5 +11,6 @@ var searchData=
   ['using_20resolved_20objects_8',['Using Resolved Objects',['../resolved-objects.html',1,'interactions-and-components']]],
   ['using_20select_20menu_20components_9',['Using Select Menu Components',['../components3.html',1,'components-menu']]],
   ['using_20slash_20commands_20and_20interactions_10',['Using Slash Commands and Interactions',['../slashcommands.html',1,'slashcommands-menu']]],
-  ['using_20sub_2dcommands_20in_20slash_20commands_11',['Using Sub-Commands in Slash Commands',['../subcommands.html',1,'slashcommands-menu']]]
+  ['using_20sub_2dcommands_20in_20slash_20commands_11',['Using Sub-Commands in Slash Commands',['../subcommands.html',1,'slashcommands-menu']]],
+  ['using_20timers_12',['Using Timers',['../using_timers.html',1,'misc']]]
 ];

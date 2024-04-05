@@ -9,5 +9,6 @@ var misc =
     [ "Making an eval Command in C++", "cpp-eval-command-discord.html", null ],
     [ "Checking Permissions", "checking-member-permissions.html", null ],
     [ "Setting the Bot's Status", "setting_status.html", null ],
-    [ "Using Emojis", "using-emojis.html", null ]
+    [ "Using Emojis", "using-emojis.html", null ],
+    [ "Using Timers", "using_timers.html", null ]
 ];

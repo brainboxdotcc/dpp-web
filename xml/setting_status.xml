@@ -35,7 +35,9 @@ First, we&apos;ll cover setting the bot status to <computeroutput>Playing games!
 </para>
 <para>If you want to make your bot show as Do Not Disturb, then you could change <ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96ae068013241cf08d0f4dbdd161e89aa2e" kindref="member">dpp::ps_online</ref> to <ref refid="namespacedpp_1a172aa830689e55f4bba337de1592db96a611b4149b435ab53bcba953a7818a760" kindref="member">dpp::ps_dnd</ref>. You can also play around with <ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2a509e5165f7314a42b403fb97e796b701" kindref="member">dpp::at_game</ref>, changing it to something like <ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2ad2f4a7cb64b961f30a1f98eb60b00400" kindref="member">dpp::at_custom</ref> or <ref refid="namespacedpp_1a1d07516cb637238ba721dc4d91ab6fc2a5fac5ede10ce3d8f563ddfa571367ae6" kindref="member">dpp::at_listening</ref>!</para>
 <para>Now, let&apos;s cover setting the bot status to say <computeroutput>Playing with x guilds!</computeroutput> every two minutes.</para>
-<para><programlisting filename="setting_status2.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para><simplesect kind="note"><para>This example uses timers to update the status every 2 minutes. If you aren&apos;t familiar with D++&apos;s own timers, please read <ref refid="using_timers" kindref="compound">this page on timers</ref> before you continue.</para>
+</simplesect>
+<programlisting filename="setting_status2.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>the<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
