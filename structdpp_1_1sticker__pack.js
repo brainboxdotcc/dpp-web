@@ -1,7 +1,5 @@
 var structdpp_1_1sticker__pack =
 [
-    [ "sticker_pack", "structdpp_1_1sticker__pack.html#ae50d2073e56542513b89e5a55a6e7a23", null ],
-    [ "~sticker_pack", "structdpp_1_1sticker__pack.html#a11bcc9cb57820586a5f49c2fe97fdc85", null ],
     [ "build_json", "structdpp_1_1sticker__pack.html#ad615544432a8a6da87f3bd70d6f6b92c", null ],
     [ "fill_from_json", "structdpp_1_1sticker__pack.html#a96011fc1c0d56e194f83c79d40c439c6", null ],
     [ "fill_from_json_impl", "structdpp_1_1sticker__pack.html#a8517ecc150b228c5e7af5debb80b9137", null ],

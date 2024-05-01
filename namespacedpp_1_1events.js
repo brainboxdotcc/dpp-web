@@ -44,6 +44,8 @@ var namespacedpp_1_1events =
     [ "message_create", "classdpp_1_1events_1_1message__create.html", "classdpp_1_1events_1_1message__create" ],
     [ "message_delete", "classdpp_1_1events_1_1message__delete.html", "classdpp_1_1events_1_1message__delete" ],
     [ "message_delete_bulk", "classdpp_1_1events_1_1message__delete__bulk.html", "classdpp_1_1events_1_1message__delete__bulk" ],
+    [ "message_poll_vote_add", "classdpp_1_1events_1_1message__poll__vote__add.html", "classdpp_1_1events_1_1message__poll__vote__add" ],
+    [ "message_poll_vote_remove", "classdpp_1_1events_1_1message__poll__vote__remove.html", "classdpp_1_1events_1_1message__poll__vote__remove" ],
     [ "message_reaction_add", "classdpp_1_1events_1_1message__reaction__add.html", "classdpp_1_1events_1_1message__reaction__add" ],
     [ "message_reaction_remove", "classdpp_1_1events_1_1message__reaction__remove.html", "classdpp_1_1events_1_1message__reaction__remove" ],
     [ "message_reaction_remove_all", "classdpp_1_1events_1_1message__reaction__remove__all.html", "classdpp_1_1events_1_1message__reaction__remove__all" ],

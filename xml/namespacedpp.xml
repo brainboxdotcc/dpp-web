@@ -56,7 +56,6 @@
     <innerclass refid="classdpp_1_1commandhandler" prot="public">dpp::commandhandler</innerclass>
     <innerclass refid="classdpp_1_1component" prot="public">dpp::component</innerclass>
     <innerclass refid="structdpp_1_1component__default__value" prot="public">dpp::component_default_value</innerclass>
-    <innerclass refid="structdpp_1_1component__emoji" prot="public">dpp::component_emoji</innerclass>
     <innerclass refid="structdpp_1_1component__interaction" prot="public">dpp::component_interaction</innerclass>
     <innerclass refid="structdpp_1_1confirmation" prot="public">dpp::confirmation</innerclass>
     <innerclass refid="structdpp_1_1confirmation__callback__t" prot="public">dpp::confirmation_callback_t</innerclass>
@@ -152,6 +151,8 @@
     <innerclass refid="structdpp_1_1message__delete__bulk__t" prot="public">dpp::message_delete_bulk_t</innerclass>
     <innerclass refid="structdpp_1_1message__delete__t" prot="public">dpp::message_delete_t</innerclass>
     <innerclass refid="structdpp_1_1message__file__data" prot="public">dpp::message_file_data</innerclass>
+    <innerclass refid="structdpp_1_1message__poll__vote__add__t" prot="public">dpp::message_poll_vote_add_t</innerclass>
+    <innerclass refid="structdpp_1_1message__poll__vote__remove__t" prot="public">dpp::message_poll_vote_remove_t</innerclass>
     <innerclass refid="structdpp_1_1message__reaction__add__t" prot="public">dpp::message_reaction_add_t</innerclass>
     <innerclass refid="structdpp_1_1message__reaction__remove__all__t" prot="public">dpp::message_reaction_remove_all_t</innerclass>
     <innerclass refid="structdpp_1_1message__reaction__remove__emoji__t" prot="public">dpp::message_reaction_remove_emoji_t</innerclass>
@@ -165,8 +166,13 @@
     <innerclass refid="classdpp_1_1oneshot__timer" prot="public">dpp::oneshot_timer</innerclass>
     <innerclass refid="structdpp_1_1param__info" prot="public">dpp::param_info</innerclass>
     <innerclass refid="classdpp_1_1parse__exception" prot="public">dpp::parse_exception</innerclass>
+    <innerclass refid="structdpp_1_1partial__emoji" prot="public">dpp::partial_emoji</innerclass>
     <innerclass refid="classdpp_1_1permission" prot="public">dpp::permission</innerclass>
     <innerclass refid="structdpp_1_1permission__overwrite" prot="public">dpp::permission_overwrite</innerclass>
+    <innerclass refid="structdpp_1_1poll" prot="public">dpp::poll</innerclass>
+    <innerclass refid="structdpp_1_1poll__answer" prot="public">dpp::poll_answer</innerclass>
+    <innerclass refid="structdpp_1_1poll__media" prot="public">dpp::poll_media</innerclass>
+    <innerclass refid="structdpp_1_1poll__results" prot="public">dpp::poll_results</innerclass>
     <innerclass refid="classdpp_1_1presence" prot="public">dpp::presence</innerclass>
     <innerclass refid="structdpp_1_1presence__update__t" prot="public">dpp::presence_update_t</innerclass>
     <innerclass refid="structdpp_1_1prune" prot="public">dpp::prune</innerclass>
@@ -6620,7 +6626,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="145" column="1" bodyfile="include/dpp/message.h" bodystart="145" bodyend="155"/>
+        <location file="include/dpp/message.h" line="152" column="1" bodyfile="include/dpp/message.h" bodystart="152" bodyend="162"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6673,7 +6679,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="160" column="1" bodyfile="include/dpp/message.h" bodystart="160" bodyend="185"/>
+        <location file="include/dpp/message.h" line="167" column="1" bodyfile="include/dpp/message.h" bodystart="167" bodyend="192"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a33007c1e6a21d250b7682025ebce9cdd" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6712,7 +6718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="192" column="1" bodyfile="include/dpp/message.h" bodystart="192" bodyend="196"/>
+        <location file="include/dpp/message.h" line="199" column="1" bodyfile="include/dpp/message.h" bodystart="199" bodyend="203"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a9ead2d4ab4b3a6035a7940e65027da1d" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6733,7 +6739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1054" column="1" bodyfile="include/dpp/message.h" bodystart="1054" bodyend="1059"/>
+        <location file="include/dpp/message.h" line="1061" column="1" bodyfile="include/dpp/message.h" bodystart="1061" bodyend="1066"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a1e48af4f3b8fd3f07ea0c2c55de99bff" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6763,7 +6769,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1194" column="1" bodyfile="include/dpp/message.h" bodystart="1194" bodyend="1204"/>
+        <location file="include/dpp/message.h" line="1201" column="1" bodyfile="include/dpp/message.h" bodystart="1201" bodyend="1211"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ae2ee458707682eabe7d539c9a13beac2" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6807,7 +6813,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1209" column="1" bodyfile="include/dpp/message.h" bodystart="1209" bodyend="1214"/>
+        <location file="include/dpp/message.h" line="1216" column="1" bodyfile="include/dpp/message.h" bodystart="1216" bodyend="1221"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>poll_layout_type</name>
+        <enumvalue id="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8ac45cb74df644621cc21706183ab043a6" prot="public">
+          <name>pl_default</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>According to Discord, quote, &quot;The, uhm, default layout type.&quot;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Poll layout types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>At the time of writing Discord only has 1, &quot;The, uhm, default layout type.&quot; </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/poll#layout-type">https://discord.com/developers/docs/resources/poll#layout-type</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1409" column="1" bodyfile="include/dpp/message.h" bodystart="1409" bodyend="1414"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107" prot="public" static="no" strong="no">
         <type>uint16_t</type>
@@ -6918,7 +6950,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1406" column="1" bodyfile="include/dpp/message.h" bodystart="1406" bodyend="1461"/>
+        <location file="include/dpp/message.h" line="1641" column="1" bodyfile="include/dpp/message.h" bodystart="1641" bodyend="1696"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1acd7f41dcc93c1cf48514d2b123e4d8bc" prot="public" static="no" strong="no">
         <type></type>
@@ -7209,7 +7241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1509" column="1" bodyfile="include/dpp/message.h" bodystart="1509" bodyend="1664"/>
+        <location file="include/dpp/message.h" line="1744" column="1" bodyfile="include/dpp/message.h" bodystart="1744" bodyend="1899"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52" prot="public" static="no" strong="no">
         <type></type>
@@ -7248,7 +7280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1669" column="1" bodyfile="include/dpp/message.h" bodystart="1669" bodyend="1689"/>
+        <location file="include/dpp/message.h" line="1904" column="1" bodyfile="include/dpp/message.h" bodystart="1904" bodyend="1924"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" prot="public" static="no" strong="no">
         <type></type>
@@ -9624,6 +9656,23 @@
         </inbodydescription>
         <location file="include/dpp/json.h" line="30" column="1" bodyfile="include/dpp/json.h" bodystart="30" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1a409d609e310268e04782e398a38f7c06" prot="public" static="no">
+        <type><ref refid="structdpp_1_1partial__emoji" kindref="compound">partial_emoji</ref></type>
+        <definition>using dpp::component_emoji = typedef partial_emoji</definition>
+        <argsstring></argsstring>
+        <name>component_emoji</name>
+        <briefdescription>
+<para>An emoji for a component. Alias to <ref refid="structdpp_1_1partial__emoji" kindref="compound">partial_emoji</ref>, for backwards compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structdpp_1_1partial__emoji" kindref="compound">partial_emoji</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="123" column="1" bodyfile="include/dpp/message.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1message" kindref="compound">message</ref> &gt;</type>
         <definition>typedef std::unordered_map&lt;snowflake, message&gt; dpp::message_map</definition>
@@ -9636,7 +9685,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="2324" column="28" bodyfile="include/dpp/message.h" bodystart="2324" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="2586" column="28" bodyfile="include/dpp/message.h" bodystart="2586" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
@@ -9650,7 +9699,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="2329" column="28" bodyfile="include/dpp/message.h" bodystart="2329" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="2591" column="28" bodyfile="include/dpp/message.h" bodystart="2591" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref> &gt;</type>
@@ -9664,7 +9713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="2334" column="28" bodyfile="include/dpp/message.h" bodystart="2334" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="2596" column="28" bodyfile="include/dpp/message.h" bodystart="2596" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a6d9fe4e502a90f9ffec8b90888a587e6" prot="public" static="no">
         <type><ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">permissions</ref></type>
@@ -12999,7 +13048,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restrequest.h" line="161" column="18" bodyfile="include/dpp/restrequest.h" bodystart="161" bodyend="174"/>
+        <location file="include/dpp/restrequest.h" line="162" column="18" bodyfile="include/dpp/restrequest.h" bodystart="162" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aa4e981e6b454756d9265524ed97d4681" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -13130,7 +13179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restrequest.h" line="189" column="18" bodyfile="include/dpp/restrequest.h" bodystart="189" bodyend="203"/>
+        <location file="include/dpp/restrequest.h" line="191" column="18" bodyfile="include/dpp/restrequest.h" bodystart="191" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a43f05271b81b42093a53760dabb66df8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -13261,7 +13310,153 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restrequest.h" line="218" column="18" bodyfile="include/dpp/restrequest.h" bodystart="218" bodyend="233"/>
+        <location file="include/dpp/restrequest.h" line="221" column="18" bodyfile="include/dpp/restrequest.h" bodystart="221" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1ad2187d36a805b9a62ea12ee121023d1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::rest_request_list</definition>
+        <argsstring>(dpp::cluster *c, const char *basepath, const std::string &amp;major, const std::string &amp;minor, http_method method, const std::string &amp;postdata, command_completion_event_t callback, const std::string &amp;key, const std::string &amp;root)</argsstring>
+        <name>rest_request_list</name>
+        <param>
+          <type><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>basepath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>major</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>minor</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a805ef1feb2862a208ec0e9d1be005c88" kindref="member">http_method</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>postdata</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+<para>Templated REST request helper to save on typing (for returned lists) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>singular type to return in lambda callback </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map type to return in lambda callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>calling cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>basepath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base path for API call </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>major</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>major API function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minor API function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP method </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>postdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Post data or empty string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key name of elements in the json list </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root element to look for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback lambda </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/restrequest.h" line="253" column="24" bodyfile="include/dpp/restrequest.h" bodystart="253" bodyend="266"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a94b9083871fc849024b4f4d2641320c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -13383,7 +13578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/restrequest.h" line="248" column="24" bodyfile="include/dpp/restrequest.h" bodystart="248" bodyend="261"/>
+        <location file="include/dpp/restrequest.h" line="281" column="24" bodyfile="include/dpp/restrequest.h" bodystart="281" bodyend="294"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a2aee5f8caf98a0dbebd4f1abb464dc00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>

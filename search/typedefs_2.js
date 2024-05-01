@@ -8,6 +8,7 @@ var searchData=
   ['command_5foption_5frange_5',['command_option_range',['../namespacedpp.html#a3e80cf6b8ecad18c951fec28be2377ba',1,'dpp']]],
   ['command_5fparameter_6',['command_parameter',['../namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd',1,'dpp']]],
   ['command_5fvalue_7',['command_value',['../namespacedpp.html#a710b32b577396ba92917d0578f0bedb6',1,'dpp']]],
-  ['confirmable_5ft_8',['confirmable_t',['../namespacedpp.html#a903ce3a37a8a89102ca5dba5ebab3031',1,'dpp']]],
-  ['connection_5fmap_9',['connection_map',['../namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a',1,'dpp']]]
+  ['component_5femoji_8',['component_emoji',['../namespacedpp.html#a409d609e310268e04782e398a38f7c06',1,'dpp']]],
+  ['confirmable_5ft_9',['confirmable_t',['../namespacedpp.html#a903ce3a37a8a89102ca5dba5ebab3031',1,'dpp']]],
+  ['connection_5fmap_10',['connection_map',['../namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a',1,'dpp']]]
 ];

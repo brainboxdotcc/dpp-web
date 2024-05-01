@@ -58,6 +58,11 @@
     <member refid="structdpp_1_1message_1_1allowed__ref_1a8e22776356f1b3029224dae4679eff22" kind="variable"><name>users</name></member>
     <member refid="structdpp_1_1message_1_1allowed__ref_1a87a12ac285f15e43bf0933d33fe4aad3" kind="variable"><name>roles</name></member>
   </compound>
+  <compound refid="structdpp_1_1poll__results_1_1answer__count" kind="struct"><name>dpp::poll_results::answer_count</name>
+    <member refid="structdpp_1_1poll__results_1_1answer__count_1a373d251edaee8c18c0a2aff8bba7ff90" kind="variable"><name>answer_id</name></member>
+    <member refid="structdpp_1_1poll__results_1_1answer__count_1a5971e77d2fc3a5e2277897f4ea49ab66" kind="variable"><name>count</name></member>
+    <member refid="structdpp_1_1poll__results_1_1answer__count_1aa6b5293f259a4be52ce7062c21600f18" kind="variable"><name>me_voted</name></member>
+  </compound>
   <compound refid="classdpp_1_1app__team" kind="class"><name>dpp::app_team</name>
     <member refid="classdpp_1_1app__team_1a37f6b11c2645ac81c5305b993c09de52" kind="variable"><name>icon</name></member>
     <member refid="classdpp_1_1app__team_1abdf2db17660f1fece856c5714b60bc5b" kind="variable"><name>id</name></member>
@@ -831,6 +836,8 @@
     <member refid="classdpp_1_1cluster_1a9a5f587275c656d4f76b52161bba5ec9" kind="variable"><name>on_message_update</name></member>
     <member refid="classdpp_1_1cluster_1a832e978df105033f7d3ea8ca0d0573cb" kind="variable"><name>on_user_update</name></member>
     <member refid="classdpp_1_1cluster_1a1a632b3c2c8d3ff3a47372ffa770acf5" kind="variable"><name>on_message_create</name></member>
+    <member refid="classdpp_1_1cluster_1a7e53bfbe055dfeb5bfd7eaaed0b4d7a0" kind="variable"><name>on_message_poll_vote_add</name></member>
+    <member refid="classdpp_1_1cluster_1abab02c09ee11dd9eda2921ea8e228427" kind="variable"><name>on_message_poll_vote_remove</name></member>
     <member refid="classdpp_1_1cluster_1aadcbe6998c78bb1e88c76adc8b1cf0dd" kind="variable"><name>on_guild_audit_log_entry_create</name></member>
     <member refid="classdpp_1_1cluster_1adc62294deed1a73261ba43400f942380" kind="variable"><name>on_guild_ban_add</name></member>
     <member refid="classdpp_1_1cluster_1ae5f02344b6d8d4cc56ff45ecc0a7602b" kind="variable"><name>on_guild_ban_remove</name></member>
@@ -939,6 +946,10 @@
     <member refid="classdpp_1_1cluster_1a36fc5115ae69378547f38f04ae435fc2" kind="function"><name>message_delete_reaction_emoji</name></member>
     <member refid="classdpp_1_1cluster_1a3aa3ef912199ea0ebac49dfe1cf5cd2f" kind="function"><name>message_delete</name></member>
     <member refid="classdpp_1_1cluster_1a945ff67bd26bdb38e74192389a660cb1" kind="function"><name>message_delete_bulk</name></member>
+    <member refid="classdpp_1_1cluster_1a45d8f0db605a5ef10791d10ef63839ae" kind="function"><name>poll_get_answer_voters</name></member>
+    <member refid="classdpp_1_1cluster_1a80bc3482d455c4983cedb4be942ed594" kind="function"><name>poll_get_answer_voters</name></member>
+    <member refid="classdpp_1_1cluster_1a3d51f8923037e591c74a3175b6d9ac45" kind="function"><name>poll_end</name></member>
+    <member refid="classdpp_1_1cluster_1a660c8339e3dd15ab38a723695a8951da" kind="function"><name>poll_end</name></member>
     <member refid="classdpp_1_1cluster_1a108f6f06b43709c8d47df5f94a3ca0a5" kind="function"><name>channel_get</name></member>
     <member refid="classdpp_1_1cluster_1a24e67431b79cc2c3d0f12d59afd5a1c8" kind="function"><name>channels_get</name></member>
     <member refid="classdpp_1_1cluster_1a66df9163f111cec5a180d642f521660a" kind="function"><name>channel_create</name></member>
@@ -1210,6 +1221,10 @@
     <member refid="classdpp_1_1cluster_1a8f781a40cc300d4054135147abe69c1b" kind="function"><name>co_message_pin</name></member>
     <member refid="classdpp_1_1cluster_1a10dca63f3bf462e40446b7b5ab650aff" kind="function"><name>co_messages_get</name></member>
     <member refid="classdpp_1_1cluster_1a0af92a0fdbaba430fe51f5936a6f4f75" kind="function"><name>co_message_unpin</name></member>
+    <member refid="classdpp_1_1cluster_1a6313a3a0707f3ac005a3100280a59297" kind="function"><name>co_poll_get_answer_voters</name></member>
+    <member refid="classdpp_1_1cluster_1a9aaae0e602ada669d44782631c32e076" kind="function"><name>co_poll_get_answer_voters</name></member>
+    <member refid="classdpp_1_1cluster_1a77ef0339e2f91b2cd706cb1bb3f9ef26" kind="function"><name>co_poll_end</name></member>
+    <member refid="classdpp_1_1cluster_1af8cd077adf0e06004dade278cdd31c51" kind="function"><name>co_poll_end</name></member>
     <member refid="classdpp_1_1cluster_1ad842325e9583a6b32c94865e139cedf6" kind="function"><name>co_channel_pins_get</name></member>
     <member refid="classdpp_1_1cluster_1a74773012e6fdf775013c324a800d73e1" kind="function"><name>co_role_create</name></member>
     <member refid="classdpp_1_1cluster_1a561e03e319b741e7c93ad3716750dc51" kind="function"><name>co_role_delete</name></member>
@@ -1646,7 +1661,7 @@
     <member refid="classdpp_1_1component_1ad364b789494d7888666173079bdb48ad" kind="variable"><name>disabled</name></member>
     <member refid="classdpp_1_1component_1a6a6312c0c598466aa87541745d2f7bff" kind="variable"><name>required</name></member>
     <member refid="classdpp_1_1component_1aea6ebd38924644607081d88d0a32213c" kind="variable"><name>value</name></member>
-    <member refid="classdpp_1_1component_1aabba8b97527336fdbf343ab76df6b9e0" kind="variable"><name>emoji</name></member>
+    <member refid="classdpp_1_1component_1ab6c5409437d791bbf7524ff1f10fe20f" kind="variable"><name>emoji</name></member>
     <member refid="classdpp_1_1component_1acb23c977bd82051cd5fdc982a69070e4" kind="function"><name>fill_from_json_impl</name></member>
     <member refid="classdpp_1_1component_1a69b9e60742f6a1f1622b264cd7712660" kind="function"><name>component</name></member>
     <member refid="classdpp_1_1component_1a790334ad68b127e95923c5f6cdb727a7" kind="function"><name>~component</name></member>
@@ -1676,11 +1691,6 @@
   <compound refid="structdpp_1_1component__default__value" kind="struct"><name>dpp::component_default_value</name>
     <member refid="structdpp_1_1component__default__value_1af95a2ab3a0b179976e0e6737bc7a734e" kind="variable"><name>type</name></member>
     <member refid="structdpp_1_1component__default__value_1a104bab3f784046535aa1e7e523a26fef" kind="variable"><name>id</name></member>
-  </compound>
-  <compound refid="structdpp_1_1component__emoji" kind="struct"><name>dpp::component_emoji</name>
-    <member refid="structdpp_1_1component__emoji_1a13f51ca9bf514dd38ffaaf854e4f5eb7" kind="variable"><name>name</name></member>
-    <member refid="structdpp_1_1component__emoji_1aa4bb3111e48c4a01a47fdfb4bcc3df3d" kind="variable"><name>id</name></member>
-    <member refid="structdpp_1_1component__emoji_1a11ac49686c29f79bba3bce060e5b1818" kind="variable"><name>animated</name></member>
   </compound>
   <compound refid="structdpp_1_1component__interaction" kind="struct"><name>dpp::component_interaction</name>
     <member refid="structdpp_1_1component__interaction_1a101d3c5e87f664d8b9d66ebc80a33a6d" kind="variable"><name>component_type</name></member>
@@ -3660,6 +3670,7 @@
     <member refid="structdpp_1_1message_1a029932133e0a6aea2afdea5f2d98146e" kind="variable"><name>pinned</name></member>
     <member refid="structdpp_1_1message_1a8f4ab5546606db3ea4bcdb41b60a5dba" kind="variable"><name>tts</name></member>
     <member refid="structdpp_1_1message_1a499cacfe6a270dca773fc7f91718ac70" kind="variable"><name>mention_everyone</name></member>
+    <member refid="structdpp_1_1message_1a786fc15343f5ac10c3bcd88c3e5d1d4c" kind="variable"><name>attached_poll</name></member>
     <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
     <member refid="structdpp_1_1message_1ae05eb6c8bf162498c988629c780a82a6" kind="function"><name>fill_from_json_impl</name></member>
     <member refid="structdpp_1_1message_1a1abeeaa362865c95be6f6dbe549b8cb0" kind="function"><name>to_json_impl</name></member>
@@ -3705,6 +3716,9 @@
     <member refid="structdpp_1_1message_1a96b7fd5ad473c2b4213bdbc541de2a0e" kind="function"><name>is_dm</name></member>
     <member refid="structdpp_1_1message_1abf316357d0fb594c6785f753daa182aa" kind="function"><name>has_remix_attachment</name></member>
     <member refid="structdpp_1_1message_1ab1f065195992aad72a8645376aa35104" kind="function"><name>get_url</name></member>
+    <member refid="structdpp_1_1message_1aaa845f092b809eee3314f909c07e0046" kind="function"><name>set_poll</name></member>
+    <member refid="structdpp_1_1message_1a64a6e7767d993f98d3342443d6d61ac4" kind="function"><name>get_poll</name></member>
+    <member refid="structdpp_1_1message_1a0132a16c404db3c094df2f2cbbb8bcbc" kind="function"><name>has_poll</name></member>
     <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" kind="function"><name>get_creation_time</name></member>
     <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" kind="function"><name>operator==</name></member>
     <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" kind="function"><name>operator!=</name></member>
@@ -3843,6 +3857,52 @@
     <member refid="structdpp_1_1message_1_1message__interaction__struct_1a69bd295380f5f5395bdb0cb21dcf9111" kind="variable"><name>type</name></member>
     <member refid="structdpp_1_1message_1_1message__interaction__struct_1a4d857d382686a0c8dde727ab934b2fee" kind="variable"><name>name</name></member>
     <member refid="structdpp_1_1message_1_1message__interaction__struct_1a5c04b0bdf214a00f07d24f8ced952525" kind="variable"><name>usr</name></member>
+  </compound>
+  <compound refid="classdpp_1_1events_1_1message__poll__vote__add" kind="class"><name>dpp::events::message_poll_vote_add</name>
+    <member refid="classdpp_1_1events_1_1message__poll__vote__add_1af92a061e3180bd67f7cc320b23ac7bc7" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="structdpp_1_1message__poll__vote__add__t" kind="struct"><name>dpp::message_poll_vote_add_t</name>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1aafd6caaca775aa728aa7049e4d90cfcb" kind="variable"><name>user_id</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1a065fded21ed6401eb6015f3d2d141828" kind="variable"><name>channel_id</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1a6bc35621706d74ca4b24e50f41d94d93" kind="variable"><name>message_id</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1a50668761e9fa9b233956b2b84e5fa8ed" kind="variable"><name>guild_id</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1a2b441c893247845b54a3783b4e553aae" kind="variable"><name>answer_id</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a9ef98cebb9c0a5ab75a4362d1b40fb71" kind="variable"><name>from</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" kind="variable"><name>cancelled</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1ad761e8dec36073665f520aaa13fbe6dc" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1ae250d3a1ee0ad2e90ad075e1aead5478" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1aae35038ecb874c46e355fac3863615d0" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1af32126d4ed56366b4413c84b272383b7" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1a4d5c139c862c5ed02227b1e9ffc38095" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1a2500c6d9987fbfc509fd0a960b1968e9" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1message__poll__vote__add__t_1a4645c2cc7dfe1def0b936d5726f7b8db" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
+  </compound>
+  <compound refid="classdpp_1_1events_1_1message__poll__vote__remove" kind="class"><name>dpp::events::message_poll_vote_remove</name>
+    <member refid="classdpp_1_1events_1_1message__poll__vote__remove_1a8bab5a75d90f7ef714599b5629beba81" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="structdpp_1_1message__poll__vote__remove__t" kind="struct"><name>dpp::message_poll_vote_remove_t</name>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1ab1eb955ad1fa2275b2e9f59d3af969c2" kind="variable"><name>user_id</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1a8888fcc8af9c8e60cc97b3ecad8ac0e2" kind="variable"><name>channel_id</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1a74d730103d75b2ec48a33bb6cb8b23f1" kind="variable"><name>message_id</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1aa23fe654ce712ccccb1246f817994510" kind="variable"><name>guild_id</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1ad432d13b61d8f54bc43cbc9e5560fd47" kind="variable"><name>answer_id</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a9ef98cebb9c0a5ab75a4362d1b40fb71" kind="variable"><name>from</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" kind="variable"><name>cancelled</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1ad761e8dec36073665f520aaa13fbe6dc" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1ae250d3a1ee0ad2e90ad075e1aead5478" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1aae35038ecb874c46e355fac3863615d0" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1af32126d4ed56366b4413c84b272383b7" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1a4d5c139c862c5ed02227b1e9ffc38095" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1a2500c6d9987fbfc509fd0a960b1968e9" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1message__poll__vote__remove__t_1a4645c2cc7dfe1def0b936d5726f7b8db" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
   <compound refid="classdpp_1_1events_1_1message__reaction__add" kind="class"><name>dpp::events::message_reaction_add</name>
     <member refid="classdpp_1_1events_1_1message__reaction__add_1a85177005f4c667cffcb296a18ea07775" kind="function"><name>handle</name></member>
@@ -4060,6 +4120,11 @@
     <member refid="classdpp_1_1exception_1a010588e4eec074c113ff36c82dde74f9" kind="function"><name>what</name></member>
     <member refid="classdpp_1_1exception_1a33e02b5616dd5e375b38aa7edfa93002" kind="function"><name>code</name></member>
   </compound>
+  <compound refid="structdpp_1_1partial__emoji" kind="struct"><name>dpp::partial_emoji</name>
+    <member refid="structdpp_1_1partial__emoji_1ad5596b85f37110f818f64f21562d3e03" kind="variable"><name>name</name></member>
+    <member refid="structdpp_1_1partial__emoji_1aa60e408493ee931d2069272d6912fb79" kind="variable"><name>id</name></member>
+    <member refid="structdpp_1_1partial__emoji_1a22343ae9e373cee0104a07ae8ae3979d" kind="variable"><name>animated</name></member>
+  </compound>
   <compound refid="classdpp_1_1permission" kind="class"><name>dpp::permission</name>
     <member refid="classdpp_1_1permission_1a351c22a0d447069a6833c9cb1b72fbbd" kind="variable"><name>value</name></member>
     <member refid="classdpp_1_1permission_1acaf85c0093795893cb9269aad04c2c22" kind="function"><name>permission</name></member>
@@ -4081,6 +4146,36 @@
     <member refid="structdpp_1_1permission__overwrite_1a61b144231337c0e10ad11dd693c152c3" kind="variable"><name>type</name></member>
     <member refid="structdpp_1_1permission__overwrite_1af3712e6601d179dccde4a8333a3b06c3" kind="function"><name>permission_overwrite</name></member>
     <member refid="structdpp_1_1permission__overwrite_1a24258c80e8df5435b1068f2687bf15c1" kind="function"><name>permission_overwrite</name></member>
+  </compound>
+  <compound refid="structdpp_1_1poll" kind="struct"><name>dpp::poll</name>
+    <member refid="structdpp_1_1poll_1a36305499b2df322987576dfa4e96d1f4" kind="variable"><name>question</name></member>
+    <member refid="structdpp_1_1poll_1a28a5c8a699caa4ab043bdfc2fb60514d" kind="variable"><name>answers</name></member>
+    <member refid="structdpp_1_1poll_1ab1b608584381a77e49e92076a3414757" kind="variable"><name>expiry</name></member>
+    <member refid="structdpp_1_1poll_1a0ac605149a83c71d22c826ec6e7c1275" kind="variable"><name>allow_multiselect</name></member>
+    <member refid="structdpp_1_1poll_1a13dbae0298c8e5e0ea7ad1de65511357" kind="variable"><name>layout_type</name></member>
+    <member refid="structdpp_1_1poll_1a53579a33985515e9720c494f5cfab6f0" kind="variable"><name>results</name></member>
+    <member refid="structdpp_1_1poll_1a9281acf3602fa7288feb3ddcf3f9193e" kind="function"><name>set_question</name></member>
+    <member refid="structdpp_1_1poll_1a4163907a59483dbeac6722b7ebc7eddd" kind="function"><name>set_duration</name></member>
+    <member refid="structdpp_1_1poll_1a652a498d6d3511f78824bbd8a012500b" kind="function"><name>set_allow_multiselect</name></member>
+    <member refid="structdpp_1_1poll_1ad5007b0ebd5ea5eb71d0c3fe618279e0" kind="function"><name>add_answer</name></member>
+    <member refid="structdpp_1_1poll_1a2143b0608c7cdb6e03d1fc2886020643" kind="function"><name>add_answer</name></member>
+    <member refid="structdpp_1_1poll_1a9515a9f8cb4cecc94b0fd5e931d591ee" kind="function"><name>add_answer</name></member>
+    <member refid="structdpp_1_1poll_1a7c5d98fb00b05fc60216023f4f26c4a9" kind="function"><name>add_answer</name></member>
+    <member refid="structdpp_1_1poll_1a6c0fd7a6310bd1f28080017b33b18446" kind="function"><name>get_question_text</name></member>
+    <member refid="structdpp_1_1poll_1a0234800573c1176e3eea8ebaf9fcd86a" kind="function"><name>find_answer</name></member>
+    <member refid="structdpp_1_1poll_1a1bc3ad5cf2a984ce2a85870296885e44" kind="function"><name>get_vote_count</name></member>
+  </compound>
+  <compound refid="structdpp_1_1poll__answer" kind="struct"><name>dpp::poll_answer</name>
+    <member refid="structdpp_1_1poll__answer_1a54046a19649c8fccf18562ffaa936be9" kind="variable"><name>id</name></member>
+    <member refid="structdpp_1_1poll__answer_1a9788db4dad2dbd406e8a2d7f18fbd5d0" kind="variable"><name>media</name></member>
+  </compound>
+  <compound refid="structdpp_1_1poll__media" kind="struct"><name>dpp::poll_media</name>
+    <member refid="structdpp_1_1poll__media_1a134461a027ab4e7eda6b7334b9014e8b" kind="variable"><name>text</name></member>
+    <member refid="structdpp_1_1poll__media_1a5235c4c5b956cc76331d006f49d485ae" kind="variable"><name>emoji</name></member>
+  </compound>
+  <compound refid="structdpp_1_1poll__results" kind="struct"><name>dpp::poll_results</name>
+    <member refid="structdpp_1_1poll__results_1a9698da0b31a8eec1bba6e8b411d99472" kind="variable"><name>is_finalized</name></member>
+    <member refid="structdpp_1_1poll__results_1abd1bd790e02239ba23da4b682b2d8d68" kind="variable"><name>answer_counts</name></member>
   </compound>
   <compound refid="classdpp_1_1presence" kind="class"><name>dpp::presence</name>
     <member refid="classdpp_1_1presence_1ad4d44093e20e6d9e71eaae258387cfc1" kind="friend"><name>json_interface&lt; presence &gt;</name></member>
@@ -4531,7 +4626,7 @@
     <member refid="structdpp_1_1select__option_1a9dbeb317e3612fb10d2f47cc8b61eb39" kind="variable"><name>value</name></member>
     <member refid="structdpp_1_1select__option_1a9e8b7f77dc54e0746d5781179d65f703" kind="variable"><name>description</name></member>
     <member refid="structdpp_1_1select__option_1a0bbb221b08b77ffb46d1b352bf7f8222" kind="variable"><name>is_default</name></member>
-    <member refid="structdpp_1_1select__option_1a78c19b4d8d6a8819b2791f9fa7422e4c" kind="variable"><name>emoji</name></member>
+    <member refid="structdpp_1_1select__option_1ac41c746d874ac185023f0dacdb97ec07" kind="variable"><name>emoji</name></member>
     <member refid="structdpp_1_1select__option_1a487e115b572fe3737323f07f3e744e70" kind="function"><name>fill_from_json_impl</name></member>
     <member refid="structdpp_1_1select__option_1aa6ca8ed29e8e1f81ab8ce82e2b9ed1fa" kind="function"><name>select_option</name></member>
     <member refid="structdpp_1_1select__option_1a4386959efc6c72b0e302e8644aec42af" kind="function"><name>~select_option</name></member>
@@ -4857,8 +4952,6 @@
     <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" kind="variable"><name>id</name></member>
     <member refid="structdpp_1_1sticker__pack_1a8517ecc150b228c5e7af5debb80b9137" kind="function"><name>fill_from_json_impl</name></member>
     <member refid="structdpp_1_1sticker__pack_1a079d0d1e419d648bb2cfd8cdfcfd2f11" kind="function"><name>to_json_impl</name></member>
-    <member refid="structdpp_1_1sticker__pack_1ae50d2073e56542513b89e5a55a6e7a23" kind="function"><name>sticker_pack</name></member>
-    <member refid="structdpp_1_1sticker__pack_1a11bcc9cb57820586a5f49c2fe97fdc85" kind="function"><name>~sticker_pack</name></member>
     <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" kind="function"><name>get_creation_time</name></member>
     <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" kind="function"><name>operator==</name></member>
     <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" kind="function"><name>operator!=</name></member>
@@ -6523,6 +6616,8 @@
     <member refid="namespacedpp_1ae2ee458707682eabe7d539c9a13beac2abbf65271f1c4d1763e3edb1e803731d2" kind="enumvalue"><name>sf_apng</name></member>
     <member refid="namespacedpp_1ae2ee458707682eabe7d539c9a13beac2a8d051716ffa935c99a5cf54c77a815b5" kind="enumvalue"><name>sf_lottie</name></member>
     <member refid="namespacedpp_1ae2ee458707682eabe7d539c9a13beac2a1eda394123de2355ba83675ebd905a76" kind="enumvalue"><name>sf_gif</name></member>
+    <member refid="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8" kind="enum"><name>poll_layout_type</name></member>
+    <member refid="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8ac45cb74df644621cc21706183ab043a6" kind="enumvalue"><name>pl_default</name></member>
     <member refid="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107" kind="enum"><name>message_flags</name></member>
     <member refid="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107aab96a9099e9e1de98d2e0270dae49851" kind="enumvalue"><name>m_crossposted</name></member>
     <member refid="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107ac60e9e9a6e22730c20443715ab88c04d" kind="enumvalue"><name>m_is_crosspost</name></member>
@@ -6810,6 +6905,7 @@
     <member refid="namespacedpp_1ad5f78f7b7bca070ac34c0267ca49013a" kind="typedef"><name>connection_map</name></member>
     <member refid="namespacedpp_1aa85b043fd45cf24caa23ab6004a2415a" kind="typedef"><name>invite_map</name></member>
     <member refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kind="typedef"><name>json</name></member>
+    <member refid="namespacedpp_1a409d609e310268e04782e398a38f7c06" kind="typedef"><name>component_emoji</name></member>
     <member refid="namespacedpp_1a44d4dd39b5d7c24c5fe97a76a73cf708" kind="typedef"><name>message_map</name></member>
     <member refid="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" kind="typedef"><name>sticker_map</name></member>
     <member refid="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" kind="typedef"><name>sticker_pack_map</name></member>
@@ -6914,6 +7010,7 @@
     <member refid="namespacedpp_1a0fc24406b890d9d830e2b0fff9a9ced3" kind="function"><name>rest_request_list&lt; voiceregion &gt;</name></member>
     <member refid="namespacedpp_1aa4e981e6b454756d9265524ed97d4681" kind="function"><name>rest_request_list&lt; ban &gt;</name></member>
     <member refid="namespacedpp_1a43f05271b81b42093a53760dabb66df8" kind="function"><name>rest_request_list&lt; sticker_pack &gt;</name></member>
+    <member refid="namespacedpp_1ad2187d36a805b9a62ea12ee121023d1c" kind="function"><name>rest_request_list</name></member>
     <member refid="namespacedpp_1a94b9083871fc849024b4f4d2641320c0" kind="function"><name>rest_request_vector</name></member>
     <member refid="namespacedpp_1a2aee5f8caf98a0dbebd4f1abb464dc00" kind="function"><name>close_socket</name></member>
     <member refid="namespacedpp_1a0c5e194a6e6cb7d653d73b19b5348dc3" kind="function"><name>set_nonblocking</name></member>
