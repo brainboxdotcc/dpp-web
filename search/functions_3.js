@@ -25,5 +25,6 @@ var searchData=
   ['double_5fnot_5fnull_22',['double_not_null',['../namespacedpp.html#a7fd4373c8570f0cf6e3736e9cd1c4436',1,'dpp']]],
   ['download_23',['download',['../structdpp_1_1attachment.html#a2f1e46240f30afbcfc6e51bb49b7ebc1',1,'dpp::attachment']]],
   ['dpp_5fcheck_5fabi_5fcompat_24',['DPP_CHECK_ABI_COMPAT',['../namespacedpp.html#a617b87100a40cead8c87add5e6adf4de',1,'dpp::DPP_CHECK_ABI_COMPAT(async&lt;&gt;, async_dummy)'],['../namespacedpp.html#a702b8ec12c8abc77c264d5a6876ac62c',1,'dpp::DPP_CHECK_ABI_COMPAT(coroutine&lt; void &gt;, coroutine_dummy) DPP_CHECK_ABI_COMPAT(coroutine&lt; uint64_t &gt;'],['../namespacedpp.html#a4788a37ace2799b30444c02f55110b78',1,'dpp::DPP_CHECK_ABI_COMPAT(task&lt; void &gt;, task_dummy) DPP_CHECK_ABI_COMPAT(task&lt; uint64_t &gt;']]],
-  ['dtemplate_25',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
+  ['dpp_5fdeprecated_25',['DPP_DEPRECATED',['../structdpp_1_1error__detail.html#a9fcd5855a0091b4a5b5e0b511e7182f5',1,'dpp::error_detail']]],
+  ['dtemplate_26',['dtemplate',['../classdpp_1_1dtemplate.html#a2dbcc0cbb9b829f95f93bf59ed416812',1,'dpp::dtemplate']]]
 ];
