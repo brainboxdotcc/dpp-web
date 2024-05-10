@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"namespacedpp.html#ad2187d36a805b9a62ea12ee121023d1c":[9,0,0,439],
+"namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4":[9,0,0,379],
+"namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4aadd1b9b1c6d956f1ca1ae6bf737e7230":[9,0,0,379,0],
+"namespacedpp.html#ad2ee47e8839a8445d88bf66e927cb0d4ac08ecf36ff4980d4b1cc5ed3d0e4cf31":[9,0,0,379,1],
+"namespacedpp.html#ad4658c417b9af90d3021253375580a61":[9,0,0,301],
+"namespacedpp.html#ad4c862611232b317153bcfc106534292":[9,0,0,261],
+"namespacedpp.html#ad5440c062424f43282b804b7b7de31c9":[9,0,0,342],
+"namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a477c960c0a00b66cc0e69ec2ae4a25c4":[9,0,0,342,4],
 "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a4e2eea7fdcda8cc71f12241444933143":[9,0,0,342,8],
 "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a5ba131da25d7cbac62c1e5475ebd2ad1":[9,0,0,342,7],
 "namespacedpp.html#ad5440c062424f43282b804b7b7de31c9a6fb4a086c12954347ccb438b53f8997e":[9,0,0,342,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "namespacedpp_1_1colors.html#a1f19174b12c3fe00663d55b4a3615374":[9,0,0,1,220],
 "namespacedpp_1_1colors.html#a1f6491816a0f2b62ee8effdd27101627":[9,0,0,1,380],
 "namespacedpp_1_1colors.html#a1fcf305393d4468af38d679efcfa9fba":[9,0,0,1,303],
-"namespacedpp_1_1colors.html#a202177fcd85f2b6f97927cbdac3e5522":[9,0,0,1,493],
-"namespacedpp_1_1colors.html#a20ee9b361d3669a6331821e0f584fda0":[9,0,0,1,90],
-"namespacedpp_1_1colors.html#a20f7d2174154a1f9d6cf5fd8fa51e7a4":[9,0,0,1,586],
-"namespacedpp_1_1colors.html#a211d733d6cd2b1da6542d56baa7ddaae":[9,0,0,1,79],
-"namespacedpp_1_1colors.html#a21ab326b611d6a7645104a685397cb1a":[9,0,0,1,474],
-"namespacedpp_1_1colors.html#a21cc6e8af9a53f40b65efb3d441b6deb":[9,0,0,1,198],
-"namespacedpp_1_1colors.html#a21dfeb202f4ace3ff89d65ff46f58126":[9,0,0,1,389],
-"namespacedpp_1_1colors.html#a21f2609f9e884bd63ec311b29be3eb44":[9,0,0,1,576],
-"namespacedpp_1_1colors.html#a2209ed28b602634fe57c459bdfcab215":[9,0,0,1,317]
+"namespacedpp_1_1colors.html#a202177fcd85f2b6f97927cbdac3e5522":[9,0,0,1,493]
 };
