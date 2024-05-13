@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1async" kind="class" language="C++" prot="public">
+    <compoundname>dpp::async</compoundname>
+    <basecompoundref refid="classdpp_1_1detail_1_1async_1_1async__base" prot="private" virt="non-virtual">dpp::detail::async::async_base&lt; R &gt;</basecompoundref>
+    <includes local="no">coro/async.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1async_1aa0a1550bb11ddf526579d1c10ab9a793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class detail::async::async_base&lt; R &gt;</definition>
+        <argsstring></argsstring>
+        <name>detail::async::async_base&lt; R &gt;</name>
+        <param>
+          <type><ref refid="classdpp_1_1detail_1_1async_1_1async__base" kindref="compound">detail::async::async_base</ref>&lt; R &gt;</type>
+        </param>
+        <briefdescription>
+<para>Internal use only base class. It serves to prevent await_suspend and await_resume from being used directly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>For internal use only, do not use. </para>
+</simplesect>
+<simplesect kind="see"><para>operator co_await() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="248" column="9" bodyfile="include/dpp/coro/async.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1async_1aacfe00bd5adfcdace79eaceb929e2b31" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Obj</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dpp::async&lt; R &gt;::async</definition>
+        <argsstring>(Obj &amp;&amp;obj, Fun &amp;&amp;fun, Args &amp;&amp;... args)</argsstring>
+        <name>async</name>
+        <param>
+          <type>Obj &amp;&amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>Fun &amp;&amp;</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Construct an async object wrapping an object method, the call is made immediately by forwarding to <ulink url="https://en.cppreference.com/w/cpp/utility/functional/invoke">std::invoke</ulink> and can be awaited later to retrieve the result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to call the method on </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The method of the object to call. Its last parameter must be a callback taking a parameter of type R </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters to pass to the method, excluding the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="428" column="10" bodyfile="include/dpp/coro/async.h" bodystart="428" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1a5d38b4712ab7f2d4b9dae3ce44377029" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dpp::async&lt; R &gt;::async</definition>
+        <argsstring>(Fun &amp;&amp;fun, Args &amp;&amp;... args)</argsstring>
+        <name>async</name>
+        <param>
+          <type>Fun &amp;&amp;</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Construct an async object wrapping an invokeable object, the call is made immediately by forwarding to <ulink url="https://en.cppreference.com/w/cpp/utility/functional/invoke">std::invoke</ulink> and can be awaited later to retrieve the result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to call using <ulink url="https://en.cppreference.com/w/cpp/utility/functional/invoke">std::invoke</ulink>. Its last parameter must be a callable taking a parameter of type R </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters to pass to the object, excluding the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="440" column="10" bodyfile="include/dpp/coro/async.h" bodystart="440" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1af82d13edfeb2f40977306ff5a6674546" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::async&lt; R &gt;::async</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>async</name>
+        <briefdescription>
+<para>Construct an empty async. Using <computeroutput>co_await</computeroutput> on an empty async is undefined behavior. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="446" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1aae89c11b1a858c061facb6311b2ec45f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::async&lt; R &gt;::~async</definition>
+        <argsstring>()</argsstring>
+        <name>~async</name>
+        <briefdescription>
+<para>Destructor. If any callback is pending it will be aborted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="451" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1a7b34045e700d1cfa35c9de00b8531530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::async&lt; R &gt;::async</definition>
+        <argsstring>(const async &amp;)</argsstring>
+        <name>async</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1async" kindref="compound">async</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor is disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="456" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1a8c9fa6c5067e90541eafd995588459de" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::async&lt; R &gt;::async</definition>
+        <argsstring>(async &amp;&amp;other) noexcept=default</argsstring>
+        <name>async</name>
+        <param>
+          <type><ref refid="classdpp_1_1async" kindref="compound">async</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Despite being marked noexcept, this function uses std::lock_guard which may throw. The implementation assumes this can never happen, hence noexcept. Report it if it does, as that would be a bug.</para>
+<para><simplesect kind="remark"><para>Using the moved-from async after this function is undefined behavior. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The async object to move the data from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="466" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1a8c382ce9ce0062b160934c9c16be09d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">async</ref> &amp;</type>
+        <definition>async &amp; dpp::async&lt; R &gt;::operator=</definition>
+        <argsstring>(const async &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1async" kindref="compound">async</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy assignment is disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="471" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1aa0ed0b75c888274ec2b2414b3289f7ba" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">async</ref> &amp;</type>
+        <definition>async &amp; dpp::async&lt; R &gt;::operator=</definition>
+        <argsstring>(async &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdpp_1_1async" kindref="compound">async</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Despite being marked noexcept, this function uses std::lock_guard which may throw. The implementation assumes this can never happen, hence noexcept. Report it if it does, as that would be a bug.</para>
+<para><simplesect kind="remark"><para>Using the moved-from async after this function is undefined behavior. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The async object to move the data from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="481" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1aac0eda40dd2b0fb1a59e971cb306af2e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::async&lt; R &gt;::await_ready</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>Check whether or not co_await-ing this would suspend the caller, i.e. if we have the result or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool Whether we already have the result of the API call or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="488" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1ad5f01ad842b1939dea83cb73829f588b" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" noexcept="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; dpp::async&lt; R &gt;::operator co_await</definition>
+        <argsstring>() &amp;noexcept</argsstring>
+        <name>operator co_await</name>
+        <briefdescription>
+<para>Suspend the caller until the request completes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>On resumption, this expression evaluates to the result object of type R, as a reference. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="496" column="7" bodyfile="include/dpp/coro/async.h" bodystart="496" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1ac2a2d25431b7ef48a10a2e5872dc1ec0" prot="public" static="no" const="yes" explicit="no" inline="yes" refqual="lvalue" noexcept="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; dpp::async&lt; R &gt;::operator co_await</definition>
+        <argsstring>() const &amp;noexcept</argsstring>
+        <name>operator co_await</name>
+        <briefdescription>
+<para>Suspend the caller until the request completes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>On resumption, this expression evaluates to the result object of type R, as a const reference. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="505" column="13" bodyfile="include/dpp/coro/async.h" bodystart="505" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1async_1ac8d032bf257e06c14745d70fa9076d68" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" noexcept="yes" virt="non-virtual">
+        <type>auto &amp;&amp;</type>
+        <definition>auto &amp;&amp; dpp::async&lt; R &gt;::operator co_await</definition>
+        <argsstring>() &amp;&amp;noexcept</argsstring>
+        <name>operator co_await</name>
+        <briefdescription>
+<para>Suspend the caller until the request completes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/async.h" line="514" column="7" bodyfile="include/dpp/coro/async.h" bodystart="514" bodyend="516"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A co_await-able object handling an API call in parallel with the caller. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is the return type of the dpp::cluster::co_* methods, but it can also be created manually to wrap any async call.</para>
+<para><simplesect kind="remark"><para>- The coroutine may be resumed in another thread, do not rely on thread_local variables. </para>
+</simplesect>
+<simplesect kind="warning"><para>- This feature is EXPERIMENTAL. The API may change at any time and there may be bugs. Please report any to <ulink url="https://github.com/brainboxdotcc/DPP/issues">GitHub issues</ulink> or to the <ulink url="https://discord.gg/dpp">D++ Discord server</ulink>. </para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The return type of the API call. Defaults to <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::async&lt; R &gt;</label>
+        <link refid="classdpp_1_1async"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::detail::async::async_base&lt; R &gt;</label>
+        <link refid="classdpp_1_1detail_1_1async_1_1async__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::async&lt; R &gt;</label>
+        <link refid="classdpp_1_1async"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::detail::async::async_base&lt; R &gt;</label>
+        <link refid="classdpp_1_1detail_1_1async_1_1async__base"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/coro/async.h" line="403" column="1" bodyfile="include/dpp/coro/async.h" bodystart="403" bodyend="517"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1async_1aacfe00bd5adfcdace79eaceb929e2b31" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>async</name></member>
+      <member refid="classdpp_1_1async_1a5d38b4712ab7f2d4b9dae3ce44377029" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>async</name></member>
+      <member refid="classdpp_1_1async_1af82d13edfeb2f40977306ff5a6674546" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>async</name></member>
+      <member refid="classdpp_1_1async_1a7b34045e700d1cfa35c9de00b8531530" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>async</name></member>
+      <member refid="classdpp_1_1async_1a8c9fa6c5067e90541eafd995588459de" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>async</name></member>
+      <member refid="classdpp_1_1async_1aac0eda40dd2b0fb1a59e971cb306af2e" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>await_ready</name></member>
+      <member refid="classdpp_1_1async_1aa0a1550bb11ddf526579d1c10ab9a793" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>detail::async::async_base&lt; R &gt;</name></member>
+      <member refid="classdpp_1_1async_1ad5f01ad842b1939dea83cb73829f588b" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>operator co_await</name></member>
+      <member refid="classdpp_1_1async_1ac2a2d25431b7ef48a10a2e5872dc1ec0" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>operator co_await</name></member>
+      <member refid="classdpp_1_1async_1ac8d032bf257e06c14745d70fa9076d68" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>operator co_await</name></member>
+      <member refid="classdpp_1_1async_1a8c382ce9ce0062b160934c9c16be09d3" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1async_1aa0ed0b75c888274ec2b2414b3289f7ba" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1async_1_1async__base_1a6cfd225579337608477425c9a37e2ec4" prot="private" virt="non-virtual" ambiguityscope="dpp::detail::async::async_base::"><scope>dpp::async</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1async_1_1async__base_1a86f88c921483a437847fb3d013eddc33" prot="private" virt="non-virtual" ambiguityscope="dpp::detail::async::async_base::"><scope>dpp::async</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1async_1aae89c11b1a858c061facb6311b2ec45f" prot="public" virt="non-virtual"><scope>dpp::async</scope><name>~async</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

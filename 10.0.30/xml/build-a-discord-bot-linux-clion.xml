@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="build-a-discord-bot-linux-clion" kind="page">
+    <compoundname>build-a-discord-bot-linux-clion</compoundname>
+    <title>Building a Discord Bot using CLion (Linux)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="warning"><para><bold>This tutorial assumes you are using Ubuntu</bold>. You might use other distros if you prefer, but keep in mind the setup process might be different! This tutorial also teaches you how to use DPP with CMake, using the JetBrains IDE <bold><ulink url="https://www.jetbrains.com/clion/">CLion</ulink></bold>. If you have not installed CLion, You can <ulink url="https://www.jetbrains.com/de-de/clion/download/">download CLion here</ulink>. If you do not have DPP installed, visit <ref refid="buildcmake" kindref="compound">this page</ref> on how to setup the project using a precompiled version of DPP. If you want to use source and haven&apos;t set that up, look towards <ref refid="buildlinux" kindref="compound">this page</ref> on how to do so. <bold>This tutorial will not teach you how to setup CMake and will assume you have already done so</bold>.</para>
+</simplesect>
+</para>
+<sect3 id="build-a-discord-bot-linux-clion_1autotoc_md149">
+<title>Add an example program</title>
+<para>Open up CLion and open the folder for your bot. You may notice that CLion will start doing the whole CMake process and it will create a folder called <computeroutput>cmake-build-debug</computeroutput>, this is normal so don&apos;t be alarmed! It is just CLion registering all the CMake stuff so it can build and give you auto-suggestions.</para>
+<para>Now, you can open your <computeroutput>main.cpp</computeroutput> file. If you have code there, then you&apos;re one step ahead! If not, copy and paste the following <ref refid="firstbot" kindref="compound">example program</ref> in the <computeroutput>main.cpp</computeroutput> and set your bot token (see <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref>). Here&apos;s how your <computeroutput>main.cpp</computeroutput> file should look:</para>
+<para><programlisting filename="firstbot.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>BOT_TOKEN<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;add<sp/>your<sp/>token<sp/>here&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(BOT_TOKEN);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_slashcommand([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1slashcommand__t" kindref="compound">dpp::slashcommand_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structdpp_1_1interaction__create__t_1a8b0c69c156a1e532507a918c13414f14" kindref="member">command</ref>.<ref refid="classdpp_1_1interaction_1aabbb8d58d708128098516ed443d5c140" kindref="member">get_command_name</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ping&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event.reply(</highlight><highlight class="stringliteral">&quot;Pong!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_ready([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1ready__t" kindref="compound">dpp::ready_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dpp::run_once&lt;struct<sp/>register_bot_commands&gt;())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.global_command_create(<ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref>(</highlight><highlight class="stringliteral">&quot;ping&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ping<sp/>pong!&quot;</highlight><highlight class="normal">,<sp/>bot.me.id));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Now, you can go ahead and hit the green &quot;Run&quot; button in the top-right to run the bot.</para>
+<para><bold>Congratulations, you&apos;ve successfully set up a bot!</bold></para>
+<para>If you&apos;re stuck, come find us on the <ulink url="https://discord.gg/dpp">official discord server</ulink>! Ask away! We don&apos;t bite! </para>
+</sect3>
+    </detaileddescription>
+    <location file="docpages/make_a_bot/clion.md"/>
+  </compounddef>
+</doxygen>

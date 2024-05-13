@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1poll__results" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::poll_results</compoundname>
+    <includes local="no">message.h</includes>
+    <innerclass refid="structdpp_1_1poll__results_1_1answer__count" prot="public">dpp::poll_results::answer_count</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1poll__results_1a9698da0b31a8eec1bba6e8b411d99472" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::poll_results::is_finalized</definition>
+        <argsstring></argsstring>
+        <name>is_finalized</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Whether the poll has finalized, and the answers are precisely counted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Discord states that due to the way they count and cache answers, while a poll is running the count of answers might not be accurate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1490" column="6" bodyfile="include/dpp/message.h" bodystart="1490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1poll__results_1abd1bd790e02239ba23da4b682b2d8d68" prot="public" static="no" mutable="no">
+        <type>std::map&lt; uint32_t, <ref refid="structdpp_1_1poll__results_1_1answer__count" kindref="compound">answer_count</ref> &gt;</type>
+        <definition>std::map&lt;uint32_t, answer_count&gt; dpp::poll_results::answer_counts</definition>
+        <argsstring></argsstring>
+        <name>answer_counts</name>
+        <briefdescription>
+<para>Count of votes for each answer. If an answer is not present in this list, then its vote count is 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/message.h" line="1496" column="10" bodyfile="include/dpp/message.h" bodystart="1496" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the results of a poll. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/poll#poll-results-object-poll-results-object-structure">https://discord.com/developers/docs/resources/poll#poll-results-object-poll-results-object-structure</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>dpp::poll_results</label>
+        <link refid="structdpp_1_1poll__results"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>is_finalized</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>answer_counts</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>map&lt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/message.h" line="1459" column="1" bodyfile="include/dpp/message.h" bodystart="1459" bodyend="1497"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1poll__results_1abd1bd790e02239ba23da4b682b2d8d68" prot="public" virt="non-virtual"><scope>dpp::poll_results</scope><name>answer_counts</name></member>
+      <member refid="structdpp_1_1poll__results_1a9698da0b31a8eec1bba6e8b411d99472" prot="public" virt="non-virtual"><scope>dpp::poll_results</scope><name>is_finalized</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

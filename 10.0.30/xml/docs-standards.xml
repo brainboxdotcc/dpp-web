@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="docs-standards" kind="page">
+    <compoundname>docs-standards</compoundname>
+    <title>Documentation Style Standards</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This page lists the documentation standards that you must follow when making PRs for files in <computeroutput>docpages</computeroutput>, this does not mean documentation for functions/variables inside actual code. If something is not covered here, ask on the <ulink url="https://discord.gg/dpp">official Discord server</ulink>!</para>
+<para>Please also follow the <ref refid="coding-standards" kindref="compound">Coding Style Standards</ref> for your PRs related to docs. This covers any code stuff that you may end up writing along with other stuff (for example, conventional commits).</para>
+<sect2 id="docs-standards_1autotoc_md67">
+<title>Adding Pages</title>
+<para>All pages should start off with <computeroutput>\ page &lt;page_name&gt; &lt;page title&gt;</computeroutput>, with the space between <computeroutput>\</computeroutput> and <computeroutput>page</computeroutput> removed.</para>
+<para>Adding a new page requires you to also add the page as a subpage to a section. For example, if you&apos;re creating a new page under &quot;The Basics&quot;, you should edit &quot;the_basics.md&quot; inside &quot;example_programs&quot; and add your page as a subpage.</para>
+<para>All subpages should be added like so: <computeroutput>* \ subpage &lt;page_name&gt;</computeroutput>, with the space between <computeroutput>\</computeroutput> and <computeroutput>subpage</computeroutput> removed.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md68">
+<title>Page and File Names</title>
+<para>The naming convention for page and file names are <computeroutput>kebab-case</computeroutput>, so you should name pages and files something like <computeroutput>name-of-page</computeroutput>, with <computeroutput>.md</computeroutput> added to the end of the file name.</para>
+<para>However, code files should be <computeroutput>snake_case</computeroutput> to follow the <ref refid="coding-standards" kindref="compound">Coding Style Standards</ref>. Images follow the same format.</para>
+<para><simplesect kind="note"><para>There are pages that do not follow this format, <bold>please do not change them</bold>. This is explained in the <bold>Renaming Files</bold> section.</para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md69">
+<title>Page Titles</title>
+<para>Page titles shouldn&apos;t be mistaken with page names! Page titles are the, sometimes, long-ish titles you see in the navbar on the left of the docs page or at the top of each page when you view it in a web browser. Try not to make these too long (80 chars is the max limit but reach for less) as it&apos;s a bit daunting seeing a long title!</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md70">
+<title>Renaming Files</title>
+<para>Renaming <computeroutput>.md</computeroutput> files is something that shouldn&apos;t really be done unless you have a very good reason. Changing it harms our SEO, meaning google will get a bit confused.</para>
+<para>Changing images in the <computeroutput>images</computeroutput> folder or files inside the <computeroutput>example_code</computeroutput> folder is more acceptable, however, still shouldn&apos;t be done without reason.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md71">
+<title>Referencing Other Pages</title>
+<para>Pages located within our file structure should be referenced like <computeroutput>\ ref &lt;page_name&gt;</computeroutput> (this will insert a reference with the actual page title) or <computeroutput>\ ref &lt;page_name&gt; &quot;text here&quot;</computeroutput> (instead of the page title, it&apos;ll be whatever is in quotation marks), with the space between <computeroutput>\</computeroutput> and <computeroutput>ref</computeroutput> removed. Pages outside of our file structure (like a discord invite link, or a github page, etc) should be referenced like <computeroutput>[text](url)</computeroutput>.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md72">
+<title>Adding Code to Examples</title>
+<para>All code needs to be a <computeroutput>.cpp</computeroutput> file in the <computeroutput>example_code</computeroutput> folder. You then reference it via <computeroutput>\ include{cpp} file.cpp</computeroutput>, with the space between <computeroutput>\</computeroutput> and <computeroutput>include{cpp}</computeroutput> removed.</para>
+<para>Any code that will <bold>not</bold> build, for example: <programlisting filename=".cpp"><codeline><highlight class="normal">bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>code<sp/>will<sp/>not<sp/>build<sp/>as<sp/>it<sp/>has<sp/>no<sp/>entry<sp/>(int<sp/>main),<sp/>which<sp/>will<sp/>cause<sp/>CI<sp/>fails.<sp/>*/</highlight></codeline>
+</programlisting> should be placed in the file itself. This is so we do not have to worry about the CI testing your example when we know it will not work.</para>
+<para>Your examples <bold>need</bold> to be tested. For more information about this, visit the <bold>Testing Your Changes</bold> section.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md73">
+<title>Language (Not Programming)</title>
+<para>Your text and images should be in English.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md74">
+<title>Images</title>
+<para>Images are a great way to show people how their bot should act when they&apos;re finished with the tutorial! A lot of tutorials don&apos;t have them, however, we recommend that you add some as, not only does it tell us that you&apos;ve tested your example, but it helps users know if they&apos;ve went wrong! We ask that you don&apos;t add images that are inappropriate and only add them if they make sense. Cut them down to a size that is readable and make sure it only contains information that is needed, for example, we don&apos;t need to see your server&apos;s channels list if the tutorial isn&apos;t covering it!</para>
+<para>Take a look at some tutorial pages (for example, <ref refid="embed-message" kindref="compound">Sending Embeds</ref> and <ref refid="callback-functions" kindref="compound">Using Callback Functions</ref>) to understand what we mean.</para>
+<para>All your images should be placed in the <computeroutput>images</computeroutput> folder and should be named similar to your page&apos;s name. If you have multiple images, you can either do something like <computeroutput>image_name2</computeroutput>, <computeroutput>image_name3</computeroutput>, and so on. You can also give them unique names like <computeroutput>image_name_overview</computeroutput>, <computeroutput>image_name_end</computeroutput>, and so on.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md75">
+<title>Grammar and Spelling</title>
+<para>Your spelling and grammar matters a lot, it&apos;s essential that you get it right. We do have a GitHub Action runner that may flag for incorrect spellings if you accidentally spell something incorrectly (We&apos;re all human!), so keep an eye out for that. If this falsely flags you, read the <ref refid="coding-standards" kindref="compound">Coding Style Standards</ref> page for more information about how to tell it to ignore a word.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md76">
+<title>Consistency</title>
+<para>Try to match other pages if you are making a similar guide (for example, the building from source pages). If the pages are inconsistent, they will start to confuse people. This also goes for pages that may not even be similar! For example, you should try keep your code examples similar to others, so that people don&apos;t get confused and can easily follow along.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md77">
+<title>Being Simplistic</title>
+<para>As you&apos;ll be writing tutorials, try be simplistic! Don&apos;t overcomplicate pages and don&apos;t make assumptions that, just because you know it, everyone else will, because some people may not know what you&apos;re talking about! An easy, yet informational, tutorial is key to ensuring that D++ has great documentation for newcomers.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md78">
+<title>AI and Desktop Utilities</title>
+<para>We are strongly against the use of AI within any part of code and docs. AI can be unreliable and may give the wrong information, so please look to research and test what you&apos;re documenting, without the use of AI. If we feel your entire PR was wrote by AI, we will close the PR.</para>
+<para>We also advise you do not use grammarly or other tools that fix your grammar/spelling for you. They can mess with text, get it wrong, not understand the context, etc. Whilst you can certainly use spell checkers and/or tools to see if there&apos;s issues with your text, you should look over each issue yourself to make sure if it matches the context and the issue is actually correct.</para>
+</sect2>
+<sect2 id="docs-standards_1autotoc_md79">
+<title>Testing Your Changes</title>
+<para>To test your commits, you should install <computeroutput>doxygen</computeroutput> and <computeroutput>graphviz</computeroutput>. Then, inside your DPP folder, run <computeroutput>doxygen</computeroutput>. This will start generating a bunch of files inside a <computeroutput>docs</computeroutput> folder and may take a while. After that, view the .md file in your web browser.</para>
+<para>If this seems to fail, you can make your PR draft and use the netlify bot that replies with a link (the link may take a bit to generate) to preview your changes.</para>
+<para>If you are adding code with your commits, you <bold>need</bold> to test that it actually works with a bot. Our CI will test compile it but will not run it, we expect that you test it on your system and ensure you are giving the correct information to users. </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/advanced_reference/docs-style-standards.md"/>
+  </compounddef>
+</doxygen>

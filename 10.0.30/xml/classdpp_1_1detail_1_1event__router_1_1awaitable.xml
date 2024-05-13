@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1detail_1_1event__router_1_1awaitable" kind="class" language="C++" prot="public">
+    <compoundname>dpp::detail::event_router::awaitable</compoundname>
+    <includes local="no">event_router.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1abc4b03217345719fe168249f765d7781" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class event_router_t&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>event_router_t&lt; T &gt;</name>
+        <param>
+          <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; T &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="159" column="16" bodyfile="include/dpp/event_router.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1a81b1e12aeef33fb9bdf8968c37d40085" prot="private" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; T &gt; *</type>
+        <definition>event_router_t&lt;T&gt;* dpp::detail::event_router::awaitable&lt; T &gt;::self</definition>
+        <argsstring></argsstring>
+        <name>self</name>
+        <briefdescription>
+<para>Event router that will manage this object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="79" column="16" bodyfile="include/dpp/event_router.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1ad5106f9369cd28caf88baf944ba88fd6" prot="private" static="no" mutable="no">
+        <type>std::function&lt; bool(const T &amp;)&gt;</type>
+        <definition>std::function&lt;bool (const T &amp;)&gt; dpp::detail::event_router::awaitable&lt; T &gt;::predicate</definition>
+        <argsstring></argsstring>
+        <name>predicate</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Predicate on the event, or nullptr for always match. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="82" column="15" bodyfile="include/dpp/event_router.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1ac6f2d87b7300126e68cfa181a7a8b607" prot="private" static="no" mutable="no">
+        <type>const T *</type>
+        <definition>const T* dpp::detail::event_router::awaitable&lt; T &gt;::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Event that triggered a resumption, to give to the resumer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="85" column="9" bodyfile="include/dpp/event_router.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1ac1942d47d76b1318e351dd3af580ccca" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* dpp::detail::event_router::awaitable&lt; T &gt;::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Coroutine handle, type-erased. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="88" column="6" bodyfile="include/dpp/event_router.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1aad76b88cae67691e89dfcf0eeacc03fd" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; <ref refid="namespacedpp_1_1detail_1_1event__router_1af9ce1f09309e4ce5bd9a1fa5efa6e252" kindref="member">awaiter_state</ref> &gt;</type>
+        <definition>std::atomic&lt;awaiter_state&gt; dpp::detail::event_router::awaitable&lt; T &gt;::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>= <ref refid="namespacedpp_1_1detail_1_1event__router_1af9ce1f09309e4ce5bd9a1fa5efa6e252a334c4a4c42fdb79d7ebc3e73b517e6f8" kindref="member">awaiter_state::none</ref></initializer>
+        <briefdescription>
+<para>The state of the awaiting coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="91" column="13" bodyfile="include/dpp/event_router.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1a0d2438a2bc342f3880dc974bfd8aba9e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::event_router::awaitable&lt; T &gt;::resume</definition>
+        <argsstring>()</argsstring>
+        <name>resume</name>
+        <briefdescription>
+<para>Resume the coroutine waiting on this object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="74" column="6" bodyfile="include/dpp/event_router.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1adc0d8ce516a2b6588e88679ab20117e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::event_router::awaitable&lt; T &gt;::awaitable</definition>
+        <argsstring>()=default</argsstring>
+        <name>awaitable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor is accessible only to <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1abd1bffd4b85b7473d819e31e3490e340" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dpp::detail::event_router::awaitable&lt; T &gt;::awaitable</definition>
+        <argsstring>(event_router_t&lt; T &gt; *router, F &amp;&amp;fun)</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type><ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref>&lt; T &gt; *</type>
+          <declname>router</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normal constructor is accessible only to <ref refid="classdpp_1_1event__router__t" kindref="compound">event_router_t</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="98" column="1" bodyfile="include/dpp/event_router.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1ae91c446e6ced3ab7e099450bb049d0fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::event_router::awaitable&lt; T &gt;::awaitable</definition>
+        <argsstring>(const awaitable &amp;)=delete</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This object is not copyable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1ac862ee9ad9fdb4f1414518484dc8277f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>dpp::detail::event_router::awaitable&lt; T &gt;::awaitable</definition>
+        <argsstring>(awaitable &amp;&amp;rhs) noexcept</argsstring>
+        <name>awaitable</name>
+        <param>
+          <type><ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">awaitable</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="105" column="1" bodyfile="include/dpp/event_router.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1a35a993253f16fe826239a46e29d199b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        <definition>awaitable &amp; dpp::detail::event_router::awaitable&lt; T &gt;::operator=</definition>
+        <argsstring>(const awaitable &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This object is not copyable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="108" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1a5937d249351881eba657f21e307488bd" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">awaitable</ref> &amp;</type>
+        <definition>awaitable &amp; dpp::detail::event_router::awaitable&lt; T &gt;::operator=</definition>
+        <argsstring>(awaitable &amp;&amp;rhs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable" kindref="compound">awaitable</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move assignment operator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="111" column="11" bodyfile="include/dpp/event_router.h" bodystart="111" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1a11157ce2665d9472b3242fb76d064609" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::event_router::awaitable&lt; T &gt;::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Request cancellation. This will detach this object from the event router and resume the awaiter, which will be thrown dpp::task_cancelled::exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>???</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>As this resumes the coroutine, it may throw any exceptions at the caller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>If state == none (was never awaited), do nothing If state == waiting, prevent resumption, resume on our end If state == resuming || cancelling, ignore</para>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="125" column="6" bodyfile="include/dpp/event_router.h" bodystart="729" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1af670ef1e02d0548f1e4bd90f8d1ad780" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool dpp::detail::event_router::awaitable&lt; T &gt;::await_ready</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>await_ready</name>
+        <briefdescription>
+<para>First function called by the standard library when awaiting this object. Returns true if we need to suspend. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>always. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="132" column="17" bodyfile="include/dpp/event_router.h" bodystart="743" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1ac3945dad074a8edb270a948bedb0ff2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::detail::event_router::awaitable&lt; T &gt;::await_suspend</definition>
+        <argsstring>(detail::std_coroutine::coroutine_handle&lt;&gt; caller)</argsstring>
+        <name>await_suspend</name>
+        <param>
+          <type>detail::std_coroutine::coroutine_handle&lt;&gt;</type>
+          <declname>caller</declname>
+        </param>
+        <briefdescription>
+<para>Second function called by the standard library when awaiting this object, after suspension. This will attach the object to its event router, to be resumed on the next event that satisfies the predicate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void never resume on call. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="140" column="6" bodyfile="include/dpp/event_router.h" bodystart="748" bodyend="752"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1detail_1_1event__router_1_1awaitable_1ab5e8182078eeaf433d1b08197ea829c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; dpp::detail::event_router::awaitable&lt; T &gt;::await_resume</definition>
+        <argsstring>()</argsstring>
+        <name>await_resume</name>
+        <briefdescription>
+<para>Third and final function called by the standard library, called when resuming the coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+ref <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">task_cancelled_exception</ref> if <ref refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1a11157ce2665d9472b3242fb76d064609" kindref="member">cancel()</ref> has been called <simplesect kind="return"><para>const T&amp; <bold>Reference</bold> to the event that matched </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/event_router.h" line="148" column="10" bodyfile="include/dpp/event_router.h" bodystart="755" bodyend="762"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Awaitable object representing an event. A user can co_await on this object to resume the next time the event is fired, optionally with a condition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/event_router.h" line="70" column="1" bodyfile="include/dpp/event_router.h" bodystart="70" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1af670ef1e02d0548f1e4bd90f8d1ad780" prot="public" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>await_ready</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1ab5e8182078eeaf433d1b08197ea829c5" prot="public" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>await_resume</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1ac3945dad074a8edb270a948bedb0ff2f" prot="public" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>await_suspend</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1adc0d8ce516a2b6588e88679ab20117e3" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1abd1bffd4b85b7473d819e31e3490e340" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1ae91c446e6ced3ab7e099450bb049d0fe" prot="public" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1ac862ee9ad9fdb4f1414518484dc8277f" prot="public" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>awaitable</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1a11157ce2665d9472b3242fb76d064609" prot="public" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>cancel</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1ac6f2d87b7300126e68cfa181a7a8b607" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>event</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1abc4b03217345719fe168249f765d7781" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>event_router_t&lt; T &gt;</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1ac1942d47d76b1318e351dd3af580ccca" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>handle</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1a35a993253f16fe826239a46e29d199b5" prot="public" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1a5937d249351881eba657f21e307488bd" prot="public" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>operator=</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1ad5106f9369cd28caf88baf944ba88fd6" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>predicate</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1a0d2438a2bc342f3880dc974bfd8aba9e" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>resume</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1a81b1e12aeef33fb9bdf8968c37d40085" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>self</name></member>
+      <member refid="classdpp_1_1detail_1_1event__router_1_1awaitable_1aad76b88cae67691e89dfcf0eeacc03fd" prot="private" virt="non-virtual"><scope>dpp::detail::event_router::awaitable</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
