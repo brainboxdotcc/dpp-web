@@ -154,10 +154,10 @@ $(document).ready(function(){initNavTree('application-command-autocomplete.html'
 <div class="line"><span class="comment">                 */</span></div>
 <div class="line">                std::string uservalue = std::get&lt;std::string&gt;(opt.value);</div>
 <div class="line">                bot.interaction_response_create(event.command.id, event.command.token, dpp::interaction_response(dpp::ir_autocomplete_reply)</div>
-<div class="line">                    .add_autocomplete_choice(dpp::command_option_choice(<span class="stringliteral">&quot;squids&quot;</span>, <span class="stringliteral">&quot;lots of squids&quot;</span>))</div>
-<div class="line">                    .add_autocomplete_choice(dpp::command_option_choice(<span class="stringliteral">&quot;cats&quot;</span>, <span class="stringliteral">&quot;a few cats&quot;</span>))</div>
-<div class="line">                    .add_autocomplete_choice(dpp::command_option_choice(<span class="stringliteral">&quot;dogs&quot;</span>, <span class="stringliteral">&quot;bucket of dogs&quot;</span>))</div>
-<div class="line">                    .add_autocomplete_choice(dpp::command_option_choice(<span class="stringliteral">&quot;elephants&quot;</span>, <span class="stringliteral">&quot;bottle of elephants&quot;</span>))</div>
+<div class="line">                    .add_autocomplete_choice(dpp::command_option_choice(<span class="stringliteral">&quot;squids&quot;</span>, std::string(<span class="stringliteral">&quot;lots of squids&quot;</span>)))</div>
+<div class="line">                    .add_autocomplete_choice(dpp::command_option_choice(<span class="stringliteral">&quot;cats&quot;</span>, std::string(<span class="stringliteral">&quot;a few cats&quot;</span>)))</div>
+<div class="line">                    .add_autocomplete_choice(dpp::command_option_choice(<span class="stringliteral">&quot;dogs&quot;</span>, std::string(<span class="stringliteral">&quot;bucket of dogs&quot;</span>)))</div>
+<div class="line">                    .add_autocomplete_choice(dpp::command_option_choice(<span class="stringliteral">&quot;elephants&quot;</span>, std::string(<span class="stringliteral">&quot;bottle of elephants&quot;</span>)))</div>
 <div class="line">                );</div>
 <div class="line">                bot.log(dpp::ll_debug, <span class="stringliteral">&quot;Autocomplete &quot;</span> + opt.name + <span class="stringliteral">&quot; with value &#39;&quot;</span> + uservalue + <span class="stringliteral">&quot;&#39; in field &quot;</span> + event.name);</div>
 <div class="line">                break;</div>
