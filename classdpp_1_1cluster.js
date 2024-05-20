@@ -566,7 +566,7 @@ var classdpp_1_1cluster =
     [ "roles_get", "classdpp_1_1cluster.html#a884dbb70619fcf92b06577dea8093219", null ],
     [ "roles_get_sync", "classdpp_1_1cluster.html#a4e9bb5386f8edd51c6f8c34653d74ac3", null ],
     [ "set_audit_reason", "classdpp_1_1cluster.html#adbcc02c388c197cf7050551ef89aeefe", null ],
-    [ "set_default_gateway", "classdpp_1_1cluster.html#af675c512fd018d72b6c96a042acb542f", null ],
+    [ "set_default_gateway", "classdpp_1_1cluster.html#a2f754a7853f01a16fd728fe239104a2d", null ],
     [ "set_dm_channel", "classdpp_1_1cluster.html#a3fc501cc0ebb334d09a7f4bb1ea6b3e6", null ],
     [ "set_presence", "classdpp_1_1cluster.html#a9b67c9455ac0378712e4c0fd0ba7f2a9", null ],
     [ "set_websocket_protocol", "classdpp_1_1cluster.html#a056e4191c03dd210c2a410b6599a0bf9", null ],
