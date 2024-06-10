@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="160" column="28" bodyfile="include/dpp/entitlement.h" bodystart="70" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="221" column="28" bodyfile="include/dpp/entitlement.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -31,13 +31,14 @@
         <name>sku_id</name>
         <initializer>{0}</initializer>
         <briefdescription>
-<para>ID of the SKU. </para>
+<para>ID of the entitlement event. </para>
         </briefdescription>
         <detaileddescription>
+<para>Not sure if this remains constant, it does not relate to the SKU, user, guild or subscription. Do not use it for anything except state tracking. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="90" column="11" bodyfile="include/dpp/entitlement.h" bodystart="90" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="108" column="11" bodyfile="include/dpp/entitlement.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1entitlement_1ac2d87bd3cdc5272eaf41f24ef50c5a5f" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -52,22 +53,86 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="95" column="11" bodyfile="include/dpp/entitlement.h" bodystart="95" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="113" column="11" bodyfile="include/dpp/entitlement.h" bodystart="113" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1entitlement_1a70b7d08db4c6758cbcdf075bacea4693" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1affa676fb9f3d11c9e8f635491f63edea" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
-        <definition>snowflake dpp::entitlement::owner_id</definition>
+        <definition>snowflake dpp::entitlement::subscription_id</definition>
         <argsstring></argsstring>
-        <name>owner_id</name>
+        <name>subscription_id</name>
         <initializer>{0}</initializer>
         <briefdescription>
-<para>Optional: ID of the user/guild that is granted access to the entitlement&apos;s SKU. </para>
+<para>Subscription ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a unique identifier of the user or guilds subscription to the SKU. It won&apos;t ever change. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="121" column="11" bodyfile="include/dpp/entitlement.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1af3f2420eb12fdf427b49dbe0bf04b2da" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::entitlement::promotion_id</definition>
+        <argsstring></argsstring>
+        <name>promotion_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Promotion id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These are undocumented but given in examples in the docs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="128" column="11" bodyfile="include/dpp/entitlement.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1a1cc323ff15797e4b99d8a6538c535508" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::entitlement::gift_code_flags</definition>
+        <argsstring></argsstring>
+        <name>gift_code_flags</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Gift Code Flags (undocumented) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Undocumented, but given in examples in the docs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="135" column="9" bodyfile="include/dpp/entitlement.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1ac88672adf248523c2ec8c38583ff8432" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::entitlement::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Optional: ID of the user that is granted access to the entitlement&apos;s SKU. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="100" column="11" bodyfile="include/dpp/entitlement.h" bodystart="100" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="140" column="11" bodyfile="include/dpp/entitlement.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1entitlement_1a0cf590530cb5e4e88398300ab4a471ac" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::entitlement::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>Optional: ID of the user that is granted access to the entitlement&apos;s SKU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If a guild is provided, according to the examples the user who triggered the purchase will also be passed in the user ID. The presence of a non-zero guild id snowflake is indication it is a guild subscription. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="149" column="11" bodyfile="include/dpp/entitlement.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1entitlement_1a7fa8c5d7cf387201728d52cc5219cf6e" prot="public" static="no" mutable="no">
         <type><ref refid="namespacedpp_1a0fd6672429865506411af5a83d065ab0" kindref="member">entitlement_type</ref></type>
@@ -82,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="105" column="18" bodyfile="include/dpp/entitlement.h" bodystart="105" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="154" column="18" bodyfile="include/dpp/entitlement.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1entitlement_1a8e5dc8e52f1b086c267284216166a1b6" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -100,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="112" column="8" bodyfile="include/dpp/entitlement.h" bodystart="112" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="161" column="8" bodyfile="include/dpp/entitlement.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1entitlement_1ab0368a98989b1333310cad3bd4a91dc2" prot="public" static="no" mutable="no">
         <type>time_t</type>
@@ -118,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="119" column="8" bodyfile="include/dpp/entitlement.h" bodystart="119" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="168" column="8" bodyfile="include/dpp/entitlement.h" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1entitlement_1a2368d7944df9433c0e2a1b0dacff9172" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -127,13 +192,13 @@
         <name>flags</name>
         <initializer>{0}</initializer>
         <briefdescription>
-<para>Flags bitmap from <ref refid="namespacedpp_1a2670a84fd3284e5aea4295855744073f" kindref="member">dpp::entitlement_flags</ref>. </para>
+<para>Flags bitmap from <ref refid="namespacedpp_1aa2595911ed68fd632b02c55fe5ab8248" kindref="member">dpp::entitlement_flags</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="124" column="10" bodyfile="include/dpp/entitlement.h" bodystart="124" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="173" column="10" bodyfile="include/dpp/entitlement.h" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" static="no" mutable="no">
         <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
@@ -179,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="76" column="13"/>
+        <location file="include/dpp/entitlement.h" line="90" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1entitlement_1aa8f6593d8ef44f929680dd5f85087bd6" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
@@ -210,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="84" column="6"/>
+        <location file="include/dpp/entitlement.h" line="98" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -226,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="129" column="1"/>
+        <location file="include/dpp/entitlement.h" line="178" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1entitlement_1a4737da4dfbae2458ad1aafce89cf0e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -298,7 +363,7 @@
 <parametername>flags</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The flags for the SKU from <ref refid="namespacedpp_1a2670a84fd3284e5aea4295855744073f" kindref="member">dpp::entitlement_flags</ref>. </para>
+<para>The flags for the SKU from <ref refid="namespacedpp_1aa2595911ed68fd632b02c55fe5ab8248" kindref="member">dpp::entitlement_flags</ref>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -306,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="140" column="1"/>
+        <location file="include/dpp/entitlement.h" line="189" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1entitlement_1ab654a9578a6e16bb91a3d25717ffbdbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacedpp_1a0fd6672429865506411af5a83d065ab0" kindref="member">entitlement_type</ref></type>
@@ -323,7 +388,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="147" column="18"/>
+        <location file="include/dpp/entitlement.h" line="196" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1entitlement_1ab1e697902564752aaacfc13a37373f61" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::entitlement::is_consumed</definition>
+        <argsstring>() const</argsstring>
+        <name>is_consumed</name>
+        <briefdescription>
+<para>Was the entitlement consumed? </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A consumed entitlement is a one off purchase which has been claimed as used by the application. for example in-app purchases.</para>
+<para><simplesect kind="return"><para>true if the entitlement was consumed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/entitlement.h" line="207" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1entitlement_1a25c8615f0a838ff5b003bb21f1e3311d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -340,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="154" column="6"/>
+        <location file="include/dpp/entitlement.h" line="214" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr double</type>
@@ -524,6 +607,7 @@
 <para>A definition of a discord entitlement. </para>
     </briefdescription>
     <detaileddescription>
+<para>An entitlement is a user&apos;s connection to an SKU, basically a subscription or a one-off purchase. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -560,17 +644,23 @@
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>application_id</edgelabel>
-          <edgelabel>owner_id</edgelabel>
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>promotion_id</edgelabel>
           <edgelabel>sku_id</edgelabel>
+          <edgelabel>subscription_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
         </childnode>
         <childnode refid="7" relation="usage">
-          <edgelabel>type</edgelabel>
+          <edgelabel>gift_code_flags</edgelabel>
         </childnode>
         <childnode refid="8" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
           <edgelabel>ends_at</edgelabel>
           <edgelabel>starts_at</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
       </node>
@@ -592,7 +682,7 @@
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>entitlement_type</label>
       </node>
       <node id="5">
@@ -602,17 +692,20 @@
           <edgelabel>&lt; entitlement &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>time_t</label>
       </node>
-      <node id="9">
+      <node id="10">
         <label>uint16_t</label>
       </node>
       <node id="4">
         <label>uint64_t</label>
       </node>
+      <node id="7">
+        <label>uint8_t</label>
+      </node>
     </collaborationgraph>
-    <location file="include/dpp/entitlement.h" line="68" column="1" bodyfile="include/dpp/entitlement.h" bodystart="68" bodyend="155"/>
+    <location file="include/dpp/entitlement.h" line="82" column="1" bodyfile="include/dpp/entitlement.h" bodystart="82" bodyend="216"/>
     <listofallmembers>
       <member refid="classdpp_1_1entitlement_1ac2d87bd3cdc5272eaf41f24ef50c5a5f" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>application_id</name></member>
       <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>build_json</name></member>
@@ -624,7 +717,10 @@
       <member refid="classdpp_1_1entitlement_1a2368d7944df9433c0e2a1b0dacff9172" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>flags</name></member>
       <member refid="classdpp_1_1managed_1a38d7b0a8ddf537cb9668c3c0ff202940" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>get_creation_time</name></member>
       <member refid="classdpp_1_1entitlement_1ab654a9578a6e16bb91a3d25717ffbdbf" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>get_type</name></member>
+      <member refid="classdpp_1_1entitlement_1a1cc323ff15797e4b99d8a6538c535508" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>gift_code_flags</name></member>
+      <member refid="classdpp_1_1entitlement_1a0cf590530cb5e4e88398300ab4a471ac" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>guild_id</name></member>
       <member refid="classdpp_1_1managed_1a40bf0c6cc03909910512808fa6caa112" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>id</name></member>
+      <member refid="classdpp_1_1entitlement_1ab1e697902564752aaacfc13a37373f61" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>is_consumed</name></member>
       <member refid="classdpp_1_1entitlement_1a25c8615f0a838ff5b003bb21f1e3311d" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>is_deleted</name></member>
       <member refid="classdpp_1_1entitlement_1a4998a2187a17a1a233011e16285cc8ef" prot="protected" virt="non-virtual"><scope>dpp::entitlement</scope><name>json_interface&lt; entitlement &gt;</name></member>
       <member refid="classdpp_1_1managed_1a49ce0d7fdbeab770ec46be27771c2285" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>managed</name></member>
@@ -635,12 +731,14 @@
       <member refid="classdpp_1_1managed_1a48b542729f1352f93f1c60950986517f" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>operator=</name></member>
       <member refid="classdpp_1_1managed_1a4a4be34febb174eaee3c0964d0bf1e21" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>operator=</name></member>
       <member refid="classdpp_1_1managed_1a9d1b5a4d84b9c7938825c659813bf100" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>operator==</name></member>
-      <member refid="classdpp_1_1entitlement_1a70b7d08db4c6758cbcdf075bacea4693" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>owner_id</name></member>
+      <member refid="classdpp_1_1entitlement_1af3f2420eb12fdf427b49dbe0bf04b2da" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>promotion_id</name></member>
       <member refid="classdpp_1_1entitlement_1a01ae035f91a97c993b74ab87bd40b3b8" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>sku_id</name></member>
       <member refid="classdpp_1_1entitlement_1a8e5dc8e52f1b086c267284216166a1b6" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>starts_at</name></member>
+      <member refid="classdpp_1_1entitlement_1affa676fb9f3d11c9e8f635491f63edea" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>subscription_id</name></member>
       <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>to_json</name></member>
       <member refid="classdpp_1_1entitlement_1aa8f6593d8ef44f929680dd5f85087bd6" prot="protected" virt="non-virtual"><scope>dpp::entitlement</scope><name>to_json_impl</name></member>
       <member refid="classdpp_1_1entitlement_1a7fa8c5d7cf387201728d52cc5219cf6e" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>type</name></member>
+      <member refid="classdpp_1_1entitlement_1ac88672adf248523c2ec8c38583ff8432" prot="public" virt="non-virtual"><scope>dpp::entitlement</scope><name>user_id</name></member>
       <member refid="classdpp_1_1managed_1af6f3e41995e49b5ce68772a9fa4b5fad" prot="public" virt="virtual"><scope>dpp::entitlement</scope><name>~managed</name></member>
     </listofallmembers>
   </compounddef>

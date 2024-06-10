@@ -198,7 +198,7 @@ var searchData=
   ['outbox_5ftray_195',['outbox_tray',['../namespacedpp_1_1unicode__emoji.html#a9c69bc0bb0548b0bae08b3a41a18dd87',1,'dpp::unicode_emoji']]],
   ['owl_196',['owl',['../namespacedpp_1_1unicode__emoji.html#a81e3f784de48c4016b562115c059cc6e',1,'dpp::unicode_emoji']]],
   ['owner_197',['owner',['../classdpp_1_1application.html#a5af52bd0ba8718a8bea8cd0c8898f1b6',1,'dpp::application::owner()'],['../classdpp_1_1collector.html#af7f9cfbcf647292a6eff59c63508171b',1,'dpp::collector::owner()'],['../classdpp_1_1commandhandler.html#a81203fb77ae98d8cfe81d95bf714fcf0',1,'dpp::commandhandler::owner()'],['../structdpp_1_1attachment.html#ac20e7cdbbb8f1d79ffc04212efea4eb1',1,'dpp::attachment::owner()'],['../structdpp_1_1message.html#a832bbd66e9a0caeaa003c119c9c91d29',1,'dpp::message::owner()']]],
-  ['owner_5fid_198',['owner_id',['../classdpp_1_1guild.html#a4f608587f82bc3deab0974aeb30b2f24',1,'dpp::guild::owner_id()'],['../classdpp_1_1channel.html#adb22659e9dc7fb8dd36d1c9f67eb7181',1,'dpp::channel::owner_id()'],['../classdpp_1_1entitlement.html#a70b7d08db4c6758cbcdf075bacea4693',1,'dpp::entitlement::owner_id()']]],
+  ['owner_5fid_198',['owner_id',['../classdpp_1_1guild.html#a4f608587f82bc3deab0974aeb30b2f24',1,'dpp::guild::owner_id()'],['../classdpp_1_1channel.html#adb22659e9dc7fb8dd36d1c9f67eb7181',1,'dpp::channel::owner_id()']]],
   ['owner_5fuser_5fid_199',['owner_user_id',['../classdpp_1_1app__team.html#aa8e196c3e03a80cab577c39ee446a98e',1,'dpp::app_team']]],
   ['ox_200',['ox',['../namespacedpp_1_1unicode__emoji.html#aa7601a695af937ed906b11e6f2db690b',1,'dpp::unicode_emoji']]],
   ['oyster_201',['oyster',['../namespacedpp_1_1unicode__emoji.html#aa41fe33d568fc405cd8e7cd7ea1b51de',1,'dpp::unicode_emoji']]]

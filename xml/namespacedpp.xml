@@ -1998,16 +1998,31 @@
         </inbodydescription>
         <location file="include/dpp/entitlement.h" line="36" column="1" bodyfile="include/dpp/entitlement.h" bodystart="36" bodyend="53"/>
       </memberdef>
-      <memberdef kind="enum" id="namespacedpp_1a2670a84fd3284e5aea4295855744073f" prot="public" static="no" strong="no">
-        <type>uint16_t</type>
+      <memberdef kind="enum" id="namespacedpp_1aa2595911ed68fd632b02c55fe5ab8248" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
         <name>entitlement_flags</name>
-        <enumvalue id="namespacedpp_1a2670a84fd3284e5aea4295855744073fa845d1b83ac87a5215ae45fb733323aae" prot="public">
+        <enumvalue id="namespacedpp_1aa2595911ed68fd632b02c55fe5ab8248a845d1b83ac87a5215ae45fb733323aae" prot="public">
           <name>ent_deleted</name>
-          <initializer>=		0b000000000000001</initializer>
+          <initializer>=		0b0000001</initializer>
           <briefdescription>
 <para>Entitlement was deleted. </para>
           </briefdescription>
           <detaileddescription>
+<para><simplesect kind="note"><para>Only discord staff can delete an entitlement via their internal tooling. It should rarely happen except in cases of fraud or chargeback. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1aa2595911ed68fd632b02c55fe5ab8248a6055eaf2f631f03e1e590742e44b3e90" prot="public">
+          <name>ent_consumed</name>
+          <initializer>= 		0b0000010</initializer>
+          <briefdescription>
+<para>Entitlement was consumed. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>A consumed entitlement is a used-up one-off purchase. </para>
+</simplesect>
+</para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
@@ -2017,7 +2032,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="58" column="1" bodyfile="include/dpp/entitlement.h" bodystart="58" bodyend="63"/>
+        <location file="include/dpp/entitlement.h" line="58" column="1" bodyfile="include/dpp/entitlement.h" bodystart="58" bodyend="74"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -9529,7 +9544,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="160" column="28" bodyfile="include/dpp/entitlement.h" bodystart="160" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="221" column="28" bodyfile="include/dpp/entitlement.h" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" prot="public" static="no">
         <type>size_t</type>

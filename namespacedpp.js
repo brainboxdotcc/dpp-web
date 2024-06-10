@@ -6962,8 +6962,9 @@ var namespacedpp =
       [ "e_animated", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca9036ca4ebc156999b7efd35de1adb2f5", null ],
       [ "e_available", "namespacedpp.html#a79e9b19c1aa69ef048c79d37801b947ca5acfa9eb7e214d29511692811b93890d", null ]
     ] ],
-    [ "entitlement_flags", "namespacedpp.html#a2670a84fd3284e5aea4295855744073f", [
-      [ "ent_deleted", "namespacedpp.html#a2670a84fd3284e5aea4295855744073fa845d1b83ac87a5215ae45fb733323aae", null ]
+    [ "entitlement_flags", "namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248", [
+      [ "ent_deleted", "namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248a845d1b83ac87a5215ae45fb733323aae", null ],
+      [ "ent_consumed", "namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248a6055eaf2f631f03e1e590742e44b3e90", null ]
     ] ],
     [ "entitlement_type", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0", [
       [ "GUILD_SUBSCRIPTION", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a953e4ad383b8da9c60310ecf55eb47e0", null ],

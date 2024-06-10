@@ -1311,10 +1311,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a0fd6672429865506411af5a83d065ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of entitlement.  <a href="namespacedpp.html#a0fd6672429865506411af5a83d065ab0">More...</a><br /></td></tr>
 <tr class="separator:a0fd6672429865506411af5a83d065ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2670a84fd3284e5aea4295855744073f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2670a84fd3284e5aea4295855744073f">entitlement_flags</a> : uint16_t { <a class="el" href="namespacedpp.html#a2670a84fd3284e5aea4295855744073fa845d1b83ac87a5215ae45fb733323aae">ent_deleted</a> = 0b000000000000001
+<tr class="memitem:aa2595911ed68fd632b02c55fe5ab8248"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248">entitlement_flags</a> : uint8_t { <a class="el" href="namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248a845d1b83ac87a5215ae45fb733323aae">ent_deleted</a> = 0b0000001
+, <a class="el" href="namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248a6055eaf2f631f03e1e590742e44b3e90">ent_consumed</a> = 0b0000010
  }</td></tr>
-<tr class="memdesc:a2670a84fd3284e5aea4295855744073f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entitlement flags.  <a href="namespacedpp.html#a2670a84fd3284e5aea4295855744073f">More...</a><br /></td></tr>
-<tr class="separator:a2670a84fd3284e5aea4295855744073f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:aa2595911ed68fd632b02c55fe5ab8248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entitlement flags.  <a href="namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248">More...</a><br /></td></tr>
+<tr class="separator:aa2595911ed68fd632b02c55fe5ab8248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad775fb0c6c9e6923fb562c95907d26c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2">etf_token_type</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a1f73d99cedad0b2bef42243ab11a7fd5">ett_distribution</a> = 'D'
 , <a class="el" href="namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2a32dd2a0b5c25dc0b1cafe45e17cbd565">ett_new_float</a> = 'F'
@@ -4513,21 +4514,25 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2670a84fd3284e5aea4295855744073f" name="a2670a84fd3284e5aea4295855744073f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2670a84fd3284e5aea4295855744073f">&#9670;&nbsp;</a></span>entitlement_flags</h2>
+<a id="aa2595911ed68fd632b02c55fe5ab8248" name="aa2595911ed68fd632b02c55fe5ab8248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2595911ed68fd632b02c55fe5ab8248">&#9670;&nbsp;</a></span>entitlement_flags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacedpp.html#a2670a84fd3284e5aea4295855744073f">dpp::entitlement_flags</a> : uint16_t</td>
+          <td class="memname">enum <a class="el" href="namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248">dpp::entitlement_flags</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Entitlement flags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2670a84fd3284e5aea4295855744073fa845d1b83ac87a5215ae45fb733323aae" name="a2670a84fd3284e5aea4295855744073fa845d1b83ac87a5215ae45fb733323aae"></a>ent_deleted&#160;</td><td class="fielddoc"><p >Entitlement was deleted. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa2595911ed68fd632b02c55fe5ab8248a845d1b83ac87a5215ae45fb733323aae" name="aa2595911ed68fd632b02c55fe5ab8248a845d1b83ac87a5215ae45fb733323aae"></a>ent_deleted&#160;</td><td class="fielddoc"><p >Entitlement was deleted. </p>
+<dl class="section note"><dt>Note</dt><dd>Only discord staff can delete an entitlement via their internal tooling. It should rarely happen except in cases of fraud or chargeback. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="aa2595911ed68fd632b02c55fe5ab8248a6055eaf2f631f03e1e590742e44b3e90" name="aa2595911ed68fd632b02c55fe5ab8248a6055eaf2f631f03e1e590742e44b3e90"></a>ent_consumed&#160;</td><td class="fielddoc"><p >Entitlement was consumed. </p>
+<dl class="section note"><dt>Note</dt><dd>A consumed entitlement is a used-up one-off purchase. </dd></dl>
 </td></tr>
 </table>
 
