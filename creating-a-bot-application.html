@@ -120,6 +120,7 @@ Creating a New Bot</h2>
  In this panel, you can get your bot token by clicking "Reset Token". A bot token looks like this: <code>OTAyOTMxODU1NTU1MzE3ODUw.YXlm0g.9oYCt-XHXVH_z9qAytzmVRzKWTg</code></li>
 </ol>
 <dl class="section warning"><dt>Warning</dt><dd><b>Do not share this token</b> with anybody! If you ever somehow compromise your current bot token or see your bot in danger, you can regenerate the token in the panel.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This token can only be seen once. We highly recommend that, if you're going to be reusing your token, you store it in a VERY safe place (like a password manager).</dd></dl>
 <h2><a class="anchor" id="autotoc_md167"></a>
 Adding the Bot to Your Server</h2>
 <p >Once you've created your bot in the discord developer portal, you may wonder:</p>
@@ -133,7 +134,10 @@ Adding the Bot to Your Server</h2>
 <img src="create_application_navigate_to_url_generator.png" alt=""/>
 </div>
 </li>
-<li>Select the <code>bot</code> scope. If your bot uses slash commands, also select <code>applications.commands</code>. You can read more about scopes and which you need for your application <a href="https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes">here</a>.</li>
+<li>Select the <code>bot</code> scope.</li>
+</ol>
+<dl class="section note"><dt>Note</dt><dd>For bots, you ONLY need the <code>bot</code> scope, nearly all of the other scopes are related to non-bot applications (external programs that communicate with Discord, such as Logitech G Hub). Whilst you can also select the <code>applications.commands</code> scope, the <code>bot</code> scope will automatically include this silently. You can read more about scopes and which ones you might need for your application <a href="https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes">here</a>.</dd></dl>
+<ol type="1">
 <li>Choose the permissions required for your bot to function in the "Bot Permissions" section.</li>
 <li>Copy and paste the resulting URL in your browser. Choose a server to invite the bot to, and click "Authorize".</li>
 </ol>
