@@ -1,5 +1,11 @@
 var NAVTREEINDEX22 =
 {
+"modal-dialog-interactions.html":[5,1,4],
+"music-and-audio.html":[5,2],
+"namespacedpp.html":[9,0,0],
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5":[9,0,0,352],
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a27810e825c157ded5d59df6dede23414":[9,0,0,352,15],
+"namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a311a6b6f7fc320d4c03ae72a851dce5c":[9,0,0,352,6],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a39ad4150b19142aad7ff4867e9ec9b69":[9,0,0,352,7],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a414f0f169996a09f8fd1d423517dc0d0":[9,0,0,352,1],
 "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a4278f54e9f1f408d43be33f7e0beac88":[9,0,0,352,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0a8fa6e6961f9500c23086730960c35bad":[9,0,0,350,4],
 "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0ac954473822136b410364f0e57b2f317f":[9,0,0,350,2],
 "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187":[9,0,0,350,0],
-"namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11":[9,0,0,350,1],
-"namespacedpp.html#a5ccea9f895c3e902f58f5d61ff748bf5":[9,0,0,412],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9":[9,0,0,321],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a0b0d31477f484ddc8b5da869e8a020bd":[9,0,0,321,0],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a2a077ab207d57bd628287ca042b480b9":[9,0,0,321,4],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a616b3dd8173ca7ca0d249d82c573e3c0":[9,0,0,321,2],
-"namespacedpp.html#a5ec9c45c4c6519489736761391fe9dd9a67f2e40744142ab1b837aacdf2025b84":[9,0,0,321,5]
+"namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0af10c00f79febd6633620cc60ff214e11":[9,0,0,350,1]
 };

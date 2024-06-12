@@ -1,5 +1,6 @@
 var classdpp_1_1coroutine =
 [
+    [ "result_type", "classdpp_1_1coroutine.html#a339932c88b7dbc063a4d3e242f94ebf7", null ],
     [ "coroutine", "classdpp_1_1coroutine.html#a6397dcd37c8813502852d8e97bc469c5", null ],
     [ "coroutine", "classdpp_1_1coroutine.html#a422280a0dbaa7fe2723eadc4727807cb", null ],
     [ "coroutine", "classdpp_1_1coroutine.html#a8a9da3db03fd3fd7b1b4c249c2aa460b", null ],

@@ -1,5 +1,6 @@
 var classdpp_1_1task =
 [
+    [ "result_type", "classdpp_1_1task.html#a3f2ba4f6b7968448ef9a244affa76d56", null ],
     [ "task", "classdpp_1_1task.html#abaeb36ad1e3c3d0e4ce53d46a47d61b5", null ],
     [ "task", "classdpp_1_1task.html#a04a2870d55bb2fb942ae1e9e072efe9f", null ],
     [ "task", "classdpp_1_1task.html#aa074990f5d5c24b11787d0fc7d385202", null ],

@@ -1,5 +1,6 @@
 var classdpp_1_1async =
 [
+    [ "result_type", "classdpp_1_1async.html#ad1561d13a56efc7f5c5063b44d18c8db", null ],
     [ "async", "classdpp_1_1async.html#aacfe00bd5adfcdace79eaceb929e2b31", null ],
     [ "async", "classdpp_1_1async.html#a5d38b4712ab7f2d4b9dae3ce44377029", null ],
     [ "async", "classdpp_1_1async.html#af82d13edfeb2f40977306ff5a6674546", null ],
