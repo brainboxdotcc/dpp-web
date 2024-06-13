@@ -1,5 +1,11 @@
 var NAVTREEINDEX74 =
 {
+"structdpp_1_1when__any_1_1awaiter.html#a2f05efe18ee11bdf39f0747b07510b51":[11,0,0,241,0,0],
+"structdpp_1_1when__any_1_1awaiter.html#a4b366cae6532be865e2e0f7a13cc8fc8":[11,0,0,241,0,2],
+"structdpp_1_1when__any_1_1awaiter.html#a4b366cae6532be865e2e0f7a13cc8fc8":[9,0,0,245,0,2],
+"structdpp_1_1when__any_1_1awaiter.html#a7c0b78ec88317aa2b4de445bab2cea9a":[11,0,0,241,0,1],
+"structdpp_1_1when__any_1_1awaiter.html#a7c0b78ec88317aa2b4de445bab2cea9a":[9,0,0,245,0,1],
+"structdpp_1_1when__any_1_1awaiter.html#a81d9f05c1cdfbbfa54963c406d4400d8":[9,0,0,245,0,3],
 "structdpp_1_1when__any_1_1awaiter.html#a81d9f05c1cdfbbfa54963c406d4400d8":[11,0,0,241,0,3],
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[9,0,1,0],
 "structstd_1_1hash_3_01dpp_1_1snowflake_01_4.html":[11,0,1,0],
