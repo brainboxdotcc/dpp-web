@@ -6967,8 +6967,13 @@ var namespacedpp =
       [ "ent_consumed", "namespacedpp.html#aa2595911ed68fd632b02c55fe5ab8248a6055eaf2f631f03e1e590742e44b3e90", null ]
     ] ],
     [ "entitlement_type", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0", [
-      [ "GUILD_SUBSCRIPTION", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a953e4ad383b8da9c60310ecf55eb47e0", null ],
-      [ "USER_SUBSCRIPTION", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a80e7ab8ef8ff1a2b757ca3260423ac32", null ],
+      [ "PURCHASE", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0abaf5e555009c825ca1806655459a17b6", null ],
+      [ "PREMIUM_SUBSCRIPTION", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a735330107efdf3e73ef5c44d8c73cbdb", null ],
+      [ "DEVELOPER_GIFT", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a7bdd329c1c81cd7ba4f1a4463882fd89", null ],
+      [ "TEST_MODE_PURCHASE", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a13710841fd5c9f13e3cec57cc9799edb", null ],
+      [ "FREE_PURCHASE", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a238e798c670b09f06e443b88318fc2af", null ],
+      [ "USER_GIFT", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a33bc6baf559bbad7cb4d9cc1da0d88b8", null ],
+      [ "PREMIUM_PURCHASE", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0a62730f13eef4576df70011c5ba962d68", null ],
       [ "APPLICATION_SUBSCRIPTION", "namespacedpp.html#a0fd6672429865506411af5a83d065ab0acbd9a23f03d32ab29b17375310df98ad", null ]
     ] ],
     [ "etf_token_type", "namespacedpp.html#ad775fb0c6c9e6923fb562c95907d26c2", [
@@ -7723,6 +7728,8 @@ var namespacedpp =
       [ "sku_user_subscription", "namespacedpp.html#a8976e5ec3bb1e3550f315a6472fa45d1a64b2d06297f2dca6284880357be33a53", null ]
     ] ],
     [ "sku_type", "namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63", [
+      [ "DURABLE", "namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a3ce5f95e901b50c6d7ad32dc720facfa", null ],
+      [ "CONSUMABLE", "namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63ad3d970e538b5dfe107e7139a66fc36f2", null ],
       [ "SUBSCRIPTION", "namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a3599f6e905c15cd919b5e9d256f0e9a7", null ],
       [ "SUBSCRIPTION_GROUP", "namespacedpp.html#a6ee29b216d20d308c19e3568e49b6a63a79367d62208b5cc4be64107fe5e8a200", null ]
     ] ],

@@ -1956,28 +1956,67 @@
       <memberdef kind="enum" id="namespacedpp_1a0fd6672429865506411af5a83d065ab0" prot="public" static="no" strong="no">
         <type>uint8_t</type>
         <name>entitlement_type</name>
-        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0a953e4ad383b8da9c60310ecf55eb47e0" prot="public">
-          <name>GUILD_SUBSCRIPTION</name>
+        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0abaf5e555009c825ca1806655459a17b6" prot="public">
+          <name>PURCHASE</name>
           <initializer>= 1</initializer>
           <briefdescription>
-<para>A subscription for a guild. </para>
+<para>Entitlement was purchased by user. </para>
           </briefdescription>
           <detaileddescription>
-<para><simplesect kind="warning"><para>This can only be used when creating a test entitlement. </para>
-</simplesect>
-</para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0a80e7ab8ef8ff1a2b757ca3260423ac32" prot="public">
-          <name>USER_SUBSCRIPTION</name>
+        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0a735330107efdf3e73ef5c44d8c73cbdb" prot="public">
+          <name>PREMIUM_SUBSCRIPTION</name>
           <initializer>= 2</initializer>
           <briefdescription>
-<para>A subscription for a user. </para>
+<para>Entitlement for Discord Nitro subscription. </para>
           </briefdescription>
           <detaileddescription>
-<para><simplesect kind="warning"><para>This can only be used when creating a test entitlement. </para>
-</simplesect>
-</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0a7bdd329c1c81cd7ba4f1a4463882fd89" prot="public">
+          <name>DEVELOPER_GIFT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Entitlement was gifted by developer. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0a13710841fd5c9f13e3cec57cc9799edb" prot="public">
+          <name>TEST_MODE_PURCHASE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Entitlement was purchased by a dev in application test mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0a238e798c670b09f06e443b88318fc2af" prot="public">
+          <name>FREE_PURCHASE</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Entitlement was granted when the SKU was free. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0a33bc6baf559bbad7cb4d9cc1da0d88b8" prot="public">
+          <name>USER_GIFT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Entitlement was gifted by another user. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0a62730f13eef4576df70011c5ba962d68" prot="public">
+          <name>PREMIUM_PURCHASE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Entitlement was claimed by user for free as a Nitro Subscriber. </para>
+          </briefdescription>
+          <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="namespacedpp_1a0fd6672429865506411af5a83d065ab0acbd9a23f03d32ab29b17375310df98ad" prot="public">
@@ -1996,7 +2035,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="36" column="1" bodyfile="include/dpp/entitlement.h" bodystart="36" bodyend="53"/>
+        <location file="include/dpp/entitlement.h" line="36" column="1" bodyfile="include/dpp/entitlement.h" bodystart="36" bodyend="76"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1aa2595911ed68fd632b02c55fe5ab8248" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -2032,7 +2071,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="58" column="1" bodyfile="include/dpp/entitlement.h" bodystart="58" bodyend="74"/>
+        <location file="include/dpp/entitlement.h" line="81" column="1" bodyfile="include/dpp/entitlement.h" bodystart="81" bodyend="97"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ad775fb0c6c9e6923fb562c95907d26c2" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -8609,6 +8648,24 @@
       <memberdef kind="enum" id="namespacedpp_1a6ee29b216d20d308c19e3568e49b6a63" prot="public" static="no" strong="no">
         <type>uint8_t</type>
         <name>sku_type</name>
+        <enumvalue id="namespacedpp_1a6ee29b216d20d308c19e3568e49b6a63a3ce5f95e901b50c6d7ad32dc720facfa" prot="public">
+          <name>DURABLE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Represents a durable one-time purchase. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a6ee29b216d20d308c19e3568e49b6a63ad3d970e538b5dfe107e7139a66fc36f2" prot="public">
+          <name>CONSUMABLE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Consumable one-time purchase. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="namespacedpp_1a6ee29b216d20d308c19e3568e49b6a63a3599f6e905c15cd919b5e9d256f0e9a7" prot="public">
           <name>SUBSCRIPTION</name>
           <initializer>= 5</initializer>
@@ -8637,7 +8694,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sku.h" line="36" column="1" bodyfile="include/dpp/sku.h" bodystart="36" bodyend="47"/>
+        <location file="include/dpp/sku.h" line="36" column="1" bodyfile="include/dpp/sku.h" bodystart="36" bodyend="55"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a8976e5ec3bb1e3550f315a6472fa45d1" prot="public" static="no" strong="no">
         <type>uint16_t</type>
@@ -8676,7 +8733,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sku.h" line="52" column="1" bodyfile="include/dpp/sku.h" bodystart="52" bodyend="67"/>
+        <location file="include/dpp/sku.h" line="60" column="1" bodyfile="include/dpp/sku.h" bodystart="60" bodyend="75"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a29954c9dfc5a906346177226d036a418" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -9544,7 +9601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/entitlement.h" line="221" column="28" bodyfile="include/dpp/entitlement.h" bodystart="221" bodyend="-1"/>
+        <location file="include/dpp/entitlement.h" line="244" column="28" bodyfile="include/dpp/entitlement.h" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4641626be7775de0b8b63a6e68d0934e" prot="public" static="no">
         <type>size_t</type>
@@ -9887,7 +9944,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/sku.h" line="166" column="28" bodyfile="include/dpp/sku.h" bodystart="166" bodyend="-1"/>
+        <location file="include/dpp/sku.h" line="174" column="28" bodyfile="include/dpp/sku.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a51156024d6211aef2731770340cfe452" prot="public" static="no">
         <type>int</type>

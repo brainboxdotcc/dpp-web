@@ -57,6 +57,5 @@ var searchData=
   ['gnt_5fguide_54',['gnt_guide',['../namespacedpp_1_1utility.html#aeba8b1b32778b3f59bc9d18d8a1ddd5da3d74707694a974d60641ce19970e9ba8',1,'dpp::utility']]],
   ['gom_5fadvanced_55',['gom_advanced',['../namespacedpp.html#a33441226d2ef32001d99891aa9ed5a20a6164ab9836dd470082ae99a4ba4adb83',1,'dpp']]],
   ['gom_5fdefault_56',['gom_default',['../namespacedpp.html#a33441226d2ef32001d99891aa9ed5a20a54d375e5d80311d2811110872d30cf2b',1,'dpp']]],
-  ['group_5fdm_57',['GROUP_DM',['../namespacedpp.html#a732e832861149a278f27ea7840b8e4caa0e46c57251ffbb0889dded66229de5e3',1,'dpp']]],
-  ['guild_5fsubscription_58',['GUILD_SUBSCRIPTION',['../namespacedpp.html#a0fd6672429865506411af5a83d065ab0a953e4ad383b8da9c60310ecf55eb47e0',1,'dpp']]]
+  ['group_5fdm_57',['GROUP_DM',['../namespacedpp.html#a732e832861149a278f27ea7840b8e4caa0e46c57251ffbb0889dded66229de5e3',1,'dpp']]]
 ];

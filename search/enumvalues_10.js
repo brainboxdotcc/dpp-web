@@ -25,5 +25,5 @@ var searchData=
   ['u_5fverified_5fbot_22',['u_verified_bot',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0aa07166e5a0e4e1e29a43e924b9c6d41f',1,'dpp']]],
   ['u_5fverified_5fbot_5fdev_23',['u_verified_bot_dev',['../namespacedpp.html#a99a238db04976402abb94ea0c989d8c0a52e7662e76e7375fdb2b2df4d3780d70',1,'dpp']]],
   ['universal_24',['universal',['../namespacedpp.html#a82f764e7486a06178101b0db23ddadfca1c8a2a7c1511c01ee5158ec2ed99b749',1,'dpp']]],
-  ['user_5fsubscription_25',['USER_SUBSCRIPTION',['../namespacedpp.html#a0fd6672429865506411af5a83d065ab0a80e7ab8ef8ff1a2b757ca3260423ac32',1,'dpp']]]
+  ['user_5fgift_25',['USER_GIFT',['../namespacedpp.html#a0fd6672429865506411af5a83d065ab0a33bc6baf559bbad7cb4d9cc1da0d88b8',1,'dpp']]]
 ];
