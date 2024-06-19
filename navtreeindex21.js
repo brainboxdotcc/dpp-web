@@ -1,5 +1,9 @@
 var NAVTREEINDEX21 =
 {
+"classdpp_1_1webhook.html#aeb4a3c383260167ef6a05fe2e31f2e75":[9,0,0,240,16],
+"classdpp_1_1webhook.html#af20171d6423f311c5fe9aeccbb672cc7":[11,0,0,236,11],
+"classdpp_1_1webhook.html#af20171d6423f311c5fe9aeccbb672cc7":[9,0,0,240,11],
+"classdpp_1_1webhook.html#af37345950a45e0b0b15b345625f26c85":[11,0,0,236,13],
 "classdpp_1_1webhook.html#af37345950a45e0b0b15b345625f26c85":[9,0,0,240,13],
 "classdpp_1_1webhook.html#af982ac0a68dd3f81fcb267a713d338f3":[9,0,0,240,19],
 "classdpp_1_1webhook.html#af982ac0a68dd3f81fcb267a713d338f3":[11,0,0,236,19],
@@ -226,8 +230,8 @@ var NAVTREEINDEX21 =
 "glossary-of-common-discord-terms.html":[2],
 "governance.html":[6,7],
 "hierarchy.html":[11,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md138":[0,0],
 "index.html#autotoc_md139":[0,1],
 "index.html#autotoc_md140":[0,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX21 =
 "install-from-source.html":[3,7],
 "install-linux-deb.html":[3,0],
 "install-linux-rpm.html":[3,1],
-"install-vcpkg.html":[3,2],
-"install-windows-clion-vcpkg.html":[4,3],
-"install-windows-vs-zip.html":[3,4],
-"install-xmake.html":[3,5],
-"installing.html":[3]
+"install-vcpkg.html":[3,2]
 };

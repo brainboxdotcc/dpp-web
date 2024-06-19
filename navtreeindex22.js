@@ -1,5 +1,9 @@
 var NAVTREEINDEX22 =
 {
+"install-windows-clion-vcpkg.html":[4,3],
+"install-windows-vs-zip.html":[3,4],
+"install-xmake.html":[3,5],
+"installing.html":[3],
 "interactions-and-components.html":[5,1],
 "joinvc.html":[5,2,4],
 "lambdas-and-locals.html":[6,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96":[9,0,0,354],
 "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a2260f71b08edd3a605b6bc6c49c0659b":[9,0,0,354,4],
 "namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a4daa10fcda2dd54b45128e86e40bfcc1":[9,0,0,354,2],
-"namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0":[9,0,0,354,1],
-"namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa1b23d55f5737159520e3accb8be8275":[9,0,0,354,0],
-"namespacedpp.html#a53805450964cf3ad4a26f673aebebd96aa7d743b466a7d074f308bf0671d98ed4":[9,0,0,354,3],
-"namespacedpp.html#a5546e9406901147259e107ce24b5ff72":[9,0,0,476],
-"namespacedpp.html#a5609082c12782be33f82b955a5d07b4f":[9,0,0,479]
+"namespacedpp.html#a53805450964cf3ad4a26f673aebebd96a5d50f8860f3910c3aa52b9ab866d11c0":[9,0,0,354,1]
 };

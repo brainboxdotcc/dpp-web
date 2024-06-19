@@ -443,9 +443,9 @@
 </simplesect>
 <simplesect kind="note"><para>Not available for autocomplete and ping interactions. </para>
 </simplesect>
-<simplesect kind="warning"><para>This response does not support using <computeroutput>content</computeroutput>, <computeroutput>embeds</computeroutput>, or <computeroutput>attachments</computeroutput>, so reply with no data when using this! </para>
+<simplesect kind="warning"><para>This response does not support using <computeroutput>content</computeroutput>, <computeroutput>embeds</computeroutput>, or <computeroutput>attachments</computeroutput>, so reply with no data when using this!</para>
 </simplesect>
-</para>
+@depreciated Replaced with buttons with a style of cos_premium This interaction type may stop working at any point </para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
@@ -455,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="400" column="1" bodyfile="include/dpp/appcommand.h" bodystart="400" bodyend="448"/>
+        <location file="include/dpp/appcommand.h" line="400" column="1" bodyfile="include/dpp/appcommand.h" bodystart="400" bodyend="451"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a53805450964cf3ad4a26f673aebebd96" prot="public" static="no" strong="no">
         <type></type>
@@ -512,7 +512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="746" column="1" bodyfile="include/dpp/appcommand.h" bodystart="746" bodyend="771"/>
+        <location file="include/dpp/appcommand.h" line="749" column="1" bodyfile="include/dpp/appcommand.h" bodystart="749" bodyend="774"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a3af415bd74cead2c665a6a507ce843fb" prot="public" static="no" strong="no">
         <type></type>
@@ -560,7 +560,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="776" column="1" bodyfile="include/dpp/appcommand.h" bodystart="776" bodyend="796"/>
+        <location file="include/dpp/appcommand.h" line="779" column="1" bodyfile="include/dpp/appcommand.h" bodystart="779" bodyend="799"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ac66e44bd22afee53242581010ddd3728" prot="public" static="no" strong="no">
         <type></type>
@@ -590,7 +590,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="1209" column="1" bodyfile="include/dpp/appcommand.h" bodystart="1209" bodyend="1219"/>
+        <location file="include/dpp/appcommand.h" line="1212" column="1" bodyfile="include/dpp/appcommand.h" bodystart="1212" bodyend="1222"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ad2ee47e8839a8445d88bf66e927cb0d4" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6689,7 +6689,7 @@
           <name>cos_primary</name>
           <initializer>= 1</initializer>
           <briefdescription>
-<para>Blurple. </para>
+<para>Blurple; Primary. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -6697,7 +6697,7 @@
         <enumvalue id="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5aab0deba2352e4cf8e36af9389dfef612" prot="public">
           <name>cos_secondary</name>
           <briefdescription>
-<para>Grey. </para>
+<para>Grey; Secondary. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -6705,7 +6705,7 @@
         <enumvalue id="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a3f0379def90d866804bfd164944ff300" prot="public">
           <name>cos_success</name>
           <briefdescription>
-<para>Green. </para>
+<para>Green; Success. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -6713,7 +6713,7 @@
         <enumvalue id="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5aa62ddfb05e437c4d4bf7a3ef1b73752b" prot="public">
           <name>cos_danger</name>
           <briefdescription>
-<para>Red. </para>
+<para>Red; danger. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -6721,9 +6721,23 @@
         <enumvalue id="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6" prot="public">
           <name>cos_link</name>
           <briefdescription>
-<para>An external hyperlink to a website. </para>
+<para>An external hyperlink to a website, requires url to be set. </para>
           </briefdescription>
           <detaileddescription>
+<para><simplesect kind="note"><para>Will not work unless url is set </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ad1aac955c38caa8b8581de35d6c432d5ad9509f5c009ec75f44e66b834499267b" prot="public">
+          <name>cos_premium</name>
+          <briefdescription>
+<para>Premium upsell button, requires sku_id to be set. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>Will not work unless sku is set </para>
+</simplesect>
+</para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
@@ -6733,7 +6747,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="167" column="1" bodyfile="include/dpp/message.h" bodystart="167" bodyend="192"/>
+        <location file="include/dpp/message.h" line="167" column="1" bodyfile="include/dpp/message.h" bodystart="167" bodyend="199"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a33007c1e6a21d250b7682025ebce9cdd" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6772,7 +6786,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="199" column="1" bodyfile="include/dpp/message.h" bodystart="199" bodyend="203"/>
+        <location file="include/dpp/message.h" line="206" column="1" bodyfile="include/dpp/message.h" bodystart="206" bodyend="210"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a9ead2d4ab4b3a6035a7940e65027da1d" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6793,7 +6807,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1061" column="1" bodyfile="include/dpp/message.h" bodystart="1061" bodyend="1066"/>
+        <location file="include/dpp/message.h" line="1084" column="1" bodyfile="include/dpp/message.h" bodystart="1084" bodyend="1089"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a1e48af4f3b8fd3f07ea0c2c55de99bff" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6823,7 +6837,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1201" column="1" bodyfile="include/dpp/message.h" bodystart="1201" bodyend="1211"/>
+        <location file="include/dpp/message.h" line="1224" column="1" bodyfile="include/dpp/message.h" bodystart="1224" bodyend="1234"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ae2ee458707682eabe7d539c9a13beac2" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6867,7 +6881,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1216" column="1" bodyfile="include/dpp/message.h" bodystart="1216" bodyend="1221"/>
+        <location file="include/dpp/message.h" line="1239" column="1" bodyfile="include/dpp/message.h" bodystart="1239" bodyend="1244"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ae5ffe09f834e517ee9574f04cb7b8cc8" prot="public" static="no" strong="no">
         <type></type>
@@ -6893,7 +6907,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1409" column="1" bodyfile="include/dpp/message.h" bodystart="1409" bodyend="1414"/>
+        <location file="include/dpp/message.h" line="1432" column="1" bodyfile="include/dpp/message.h" bodystart="1432" bodyend="1437"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ad0f89d72815d4d483f689baa5cca5107" prot="public" static="no" strong="no">
         <type>uint16_t</type>
@@ -7004,7 +7018,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1641" column="1" bodyfile="include/dpp/message.h" bodystart="1641" bodyend="1696"/>
+        <location file="include/dpp/message.h" line="1664" column="1" bodyfile="include/dpp/message.h" bodystart="1664" bodyend="1719"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1acd7f41dcc93c1cf48514d2b123e4d8bc" prot="public" static="no" strong="no">
         <type></type>
@@ -7238,7 +7252,7 @@
           <name>mt_interaction_premium_upsell</name>
           <initializer>= 26</initializer>
           <briefdescription>
-<para>Interaction premium upsell. </para>
+<para>Interaction premium upsell @depreciated Replaced with buttons with a style of cos_premium This message type may stop working at any point. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -7295,7 +7309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1744" column="1" bodyfile="include/dpp/message.h" bodystart="1744" bodyend="1899"/>
+        <location file="include/dpp/message.h" line="1767" column="1" bodyfile="include/dpp/message.h" bodystart="1767" bodyend="1924"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ace5c63d91b72c5bae7d8cf9d8f531e52" prot="public" static="no" strong="no">
         <type></type>
@@ -7334,7 +7348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="1904" column="1" bodyfile="include/dpp/message.h" bodystart="1904" bodyend="1924"/>
+        <location file="include/dpp/message.h" line="1929" column="1" bodyfile="include/dpp/message.h" bodystart="1929" bodyend="1949"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a7d622bf5ff000e82a44af1a8ac794e83" prot="public" static="no" strong="no">
         <type></type>
@@ -9317,7 +9331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="1584" column="28" bodyfile="include/dpp/appcommand.h" bodystart="1584" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="1587" column="28" bodyfile="include/dpp/appcommand.h" bodystart="1587" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a855d4fbe3b9026d08b31561a61a82e92" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1guild__command__permissions" kindref="compound">guild_command_permissions</ref> &gt;</type>
@@ -9331,7 +9345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="1589" column="28" bodyfile="include/dpp/appcommand.h" bodystart="1589" bodyend="-1"/>
+        <location file="include/dpp/appcommand.h" line="1592" column="28" bodyfile="include/dpp/appcommand.h" bodystart="1592" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a9cd9f77c18810c3ad68e06b0625099bd" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1application" kindref="compound">application</ref> &gt;</type>
@@ -9757,7 +9771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="2586" column="28" bodyfile="include/dpp/message.h" bodystart="2586" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="2611" column="28" bodyfile="include/dpp/message.h" bodystart="2611" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a0d09f413c01571a98b8ec9a267a0e48f" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1sticker" kindref="compound">sticker</ref> &gt;</type>
@@ -9771,7 +9785,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="2591" column="28" bodyfile="include/dpp/message.h" bodystart="2591" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="2616" column="28" bodyfile="include/dpp/message.h" bodystart="2616" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1adc1d24fba1d0f9fbdbe054d31efe5283" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="structdpp_1_1sticker__pack" kindref="compound">sticker_pack</ref> &gt;</type>
@@ -9785,7 +9799,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="2596" column="28" bodyfile="include/dpp/message.h" bodystart="2596" bodyend="-1"/>
+        <location file="include/dpp/message.h" line="2621" column="28" bodyfile="include/dpp/message.h" bodystart="2621" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a6d9fe4e502a90f9ffec8b90888a587e6" prot="public" static="no">
         <type><ref refid="namespacedpp_1a64f16cd622b3a09ae96803ba07fa75b7" kindref="member">permissions</ref></type>
@@ -10386,7 +10400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="742" column="6" declfile="include/dpp/appcommand.h" declline="742" declcolumn="6"/>
+        <location file="include/dpp/appcommand.h" line="745" column="6" declfile="include/dpp/appcommand.h" declline="745" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a1bfffa121ee7a78fe2c0e4d4a9a7fa17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10428,7 +10442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="859" column="6" declfile="include/dpp/appcommand.h" declline="859" declcolumn="6"/>
+        <location file="include/dpp/appcommand.h" line="862" column="6" declfile="include/dpp/appcommand.h" declline="862" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1aabc378142329f7d4fe1ac82c81027114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10470,7 +10484,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="895" column="6" declfile="include/dpp/appcommand.h" declline="895" declcolumn="6"/>
+        <location file="include/dpp/appcommand.h" line="898" column="6" declfile="include/dpp/appcommand.h" declline="898" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a965939ea98a0cc2a038250fc73bd6e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10512,7 +10526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="905" column="6" declfile="include/dpp/appcommand.h" declline="905" declcolumn="6"/>
+        <location file="include/dpp/appcommand.h" line="908" column="6" declfile="include/dpp/appcommand.h" declline="908" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a1d5a166cc8328a1d2728e9e451c966f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10554,7 +10568,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="1204" column="6" declfile="include/dpp/appcommand.h" declline="1204" declcolumn="6"/>
+        <location file="include/dpp/appcommand.h" line="1207" column="6" declfile="include/dpp/appcommand.h" declline="1207" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a752b7140de023c34db60c92363aacf3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10596,7 +10610,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="1278" column="6" declfile="include/dpp/appcommand.h" declline="1278" declcolumn="6"/>
+        <location file="include/dpp/appcommand.h" line="1281" column="6" declfile="include/dpp/appcommand.h" declline="1281" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a735482218b54177427bc882605fa1e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10638,7 +10652,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="1333" column="6" declfile="include/dpp/appcommand.h" declline="1333" declcolumn="6"/>
+        <location file="include/dpp/appcommand.h" line="1336" column="6" declfile="include/dpp/appcommand.h" declline="1336" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a85aad7db48e1fc97a00f92044fa2c1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -10680,7 +10694,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/appcommand.h" line="1579" column="6" declfile="include/dpp/appcommand.h" declline="1579" declcolumn="6"/>
+        <location file="include/dpp/appcommand.h" line="1582" column="6" declfile="include/dpp/appcommand.h" declline="1582" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1af9f0984484c2408f8bac07674720ef07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void DPP_EXPORT</type>

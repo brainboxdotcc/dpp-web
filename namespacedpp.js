@@ -6936,7 +6936,8 @@ var namespacedpp =
       [ "cos_secondary", "namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5aab0deba2352e4cf8e36af9389dfef612", null ],
       [ "cos_success", "namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5a3f0379def90d866804bfd164944ff300", null ],
       [ "cos_danger", "namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5aa62ddfb05e437c4d4bf7a3ef1b73752b", null ],
-      [ "cos_link", "namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6", null ]
+      [ "cos_link", "namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5a96d13813649e792fc6d88d29b70202d6", null ],
+      [ "cos_premium", "namespacedpp.html#ad1aac955c38caa8b8581de35d6c432d5ad9509f5c009ec75f44e66b834499267b", null ]
     ] ],
     [ "component_type", "namespacedpp.html#afce43206033521b990e3a72bb87481b7", [
       [ "cot_action_row", "namespacedpp.html#afce43206033521b990e3a72bb87481b7afd32ce8be4a99a9d84fb4815370a0bf8", null ],
