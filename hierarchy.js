@@ -23,6 +23,7 @@ var hierarchy =
     [ "dpp::audit_extra", "structdpp_1_1audit__extra.html", null ],
     [ "dpp::detail::event_router::awaitable< T >", "classdpp_1_1detail_1_1event__router_1_1awaitable.html", null ],
     [ "dpp::when_any< Args >::awaiter", "structdpp_1_1when__any_1_1awaiter.html", null ],
+    [ "dpp::bignumber", "classdpp_1_1bignumber.html", null ],
     [ "dpp::bucket_t", "structdpp_1_1bucket__t.html", null ],
     [ "dpp::cache< T >", "classdpp_1_1cache.html", null ],
     [ "dpp::cache_policy_t", "structdpp_1_1cache__policy__t.html", null ],

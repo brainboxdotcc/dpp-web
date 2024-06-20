@@ -6475,6 +6475,7 @@ var namespacedpp =
     [ "automod_rule_execute_t", "structdpp_1_1automod__rule__execute__t.html", "structdpp_1_1automod__rule__execute__t" ],
     [ "automod_rule_update_t", "structdpp_1_1automod__rule__update__t.html", "structdpp_1_1automod__rule__update__t" ],
     [ "ban", "classdpp_1_1ban.html", "classdpp_1_1ban" ],
+    [ "bignumber", "classdpp_1_1bignumber.html", "classdpp_1_1bignumber" ],
     [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
     [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],
     [ "cache", "classdpp_1_1cache.html", "classdpp_1_1cache" ],
