@@ -288,7 +288,7 @@
 <para>An array of file data to use for uploading files. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>You should use <ref refid="structdpp_1_1message_1af84e068f9c20a3389316179f9c018553" kindref="member">dpp::message::add_file</ref> to add data to this! </para>
+<para><simplesect kind="note"><para>You should use <ref refid="structdpp_1_1message_1ae85400249d50c40d261cb8ad749a7108" kindref="member">dpp::message::add_file</ref> to add data to this! </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -587,17 +587,17 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="2280" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a21466e050ee9c0646392ccf5940bb62a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1ae19a71fdd0dd03228d7b9fa420911ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::message::message</definition>
-        <argsstring>(snowflake channel_id, const std::string &amp;content, message_type type=mt_default)</argsstring>
+        <argsstring>(snowflake channel_id, std::string_view content, message_type type=mt_default)</argsstring>
         <name>message</name>
         <param>
           <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>channel_id</declname>
         </param>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>content</declname>
         </param>
         <param>
@@ -708,13 +708,13 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="2304" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a45a0883a10a19e933fbba682aba212f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1a49afcc8b39c7662e2b3bc0213a752853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::message::message</definition>
-        <argsstring>(const std::string &amp;content, message_type type=mt_default)</argsstring>
+        <argsstring>(std::string_view content, message_type type=mt_default)</argsstring>
         <name>message</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>content</declname>
         </param>
         <param>
@@ -1467,13 +1467,13 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="2510" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a95675acbf18ed30c5141d3180842611f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1a3f84137e4c2a4a2a70b9770f94cf7984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
         <definition>message &amp; dpp::message::set_filename</definition>
-        <argsstring>(const std::string &amp;fn)</argsstring>
+        <argsstring>(std::string_view fn)</argsstring>
         <name>set_filename</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>fn</declname>
         </param>
         <briefdescription>
@@ -1491,20 +1491,20 @@
 </parameterlist>
 <simplesect kind="return"><para>message&amp; reference to self </para>
 </simplesect>
-<xrefsect id="deprecated_1_deprecated000038"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="structdpp_1_1message_1af84e068f9c20a3389316179f9c018553" kindref="member">message::add_file</ref> instead </para>
+<xrefsect id="deprecated_1_deprecated000038"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="structdpp_1_1message_1ae85400249d50c40d261cb8ad749a7108" kindref="member">message::add_file</ref> instead </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="2519" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a7063a512a6e7f078e2a81bad077dfcde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1a03eee3a8225a6fa92fa486f683f434c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
         <definition>message &amp; dpp::message::set_file_content</definition>
-        <argsstring>(const std::string &amp;fc)</argsstring>
+        <argsstring>(std::string_view fc)</argsstring>
         <name>set_file_content</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>fc</declname>
         </param>
         <briefdescription>
@@ -1516,34 +1516,34 @@
 <parametername>fc</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>raw file content contained in std::string </para>
+<para>raw file content </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>message&amp; reference to self </para>
 </simplesect>
-<xrefsect id="deprecated_1_deprecated000039"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="structdpp_1_1message_1af84e068f9c20a3389316179f9c018553" kindref="member">message::add_file</ref> instead </para>
+<xrefsect id="deprecated_1_deprecated000039"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="structdpp_1_1message_1ae85400249d50c40d261cb8ad749a7108" kindref="member">message::add_file</ref> instead </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/message.h" line="2528" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1af84e068f9c20a3389316179f9c018553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1ae85400249d50c40d261cb8ad749a7108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
         <definition>message &amp; dpp::message::add_file</definition>
-        <argsstring>(const std::string &amp;filename, const std::string &amp;filecontent, const std::string &amp;filemimetype=&quot;&quot;)</argsstring>
+        <argsstring>(std::string_view filename, std::string_view filecontent, std::string_view filemimetype=&quot;&quot;)</argsstring>
         <name>add_file</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>filename</declname>
         </param>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>filecontent</declname>
         </param>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>filemimetype</declname>
           <defval>&quot;&quot;</defval>
         </param>
@@ -1564,7 +1564,7 @@
 <parametername>filecontent</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>raw file content contained in std::string </para>
+<para>raw file content </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -1584,13 +1584,13 @@
         </inbodydescription>
         <location file="include/dpp/message.h" line="2538" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="structdpp_1_1message_1a18a1ebb4b981a0ef46f78f147aa12b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structdpp_1_1message_1a5533af9fbf06198d72b3768d6f266d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1message" kindref="compound">message</ref> &amp;</type>
         <definition>message &amp; dpp::message::set_content</definition>
-        <argsstring>(const std::string &amp;c)</argsstring>
+        <argsstring>(std::string_view c)</argsstring>
         <name>set_content</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string_view</type>
           <declname>c</declname>
         </param>
         <briefdescription>
@@ -2313,7 +2313,7 @@
     <listofallmembers>
       <member refid="structdpp_1_1message_1a85dbf0b4a0b294eac34ec49feb1d4540" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_component</name></member>
       <member refid="structdpp_1_1message_1a9ff92caceb655fa1f89710445a24c107" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_embed</name></member>
-      <member refid="structdpp_1_1message_1af84e068f9c20a3389316179f9c018553" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_file</name></member>
+      <member refid="structdpp_1_1message_1ae85400249d50c40d261cb8ad749a7108" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_file</name></member>
       <member refid="structdpp_1_1message_1a9f3f938e687d01c1cd21ce51edf513ce" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_sticker</name></member>
       <member refid="structdpp_1_1message_1a21943f452317e1b4cc8a324c21fe661b" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>add_sticker</name></member>
       <member refid="structdpp_1_1message_1a389f295110a630b2e3f076013b617111" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>allowed_mentions</name></member>
@@ -2363,10 +2363,10 @@
       <member refid="structdpp_1_1message_1ab24159b47f496af758358a180d1e7c81" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1a214e13b1db63fb7304b3314ef651f8bc" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1a656487248fe1e16ba79930a2078a964d" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
-      <member refid="structdpp_1_1message_1a21466e050ee9c0646392ccf5940bb62a" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
+      <member refid="structdpp_1_1message_1ae19a71fdd0dd03228d7b9fa420911ee9" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1aca9a4bc73e7f598f0450967a9cb8570f" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1a0e71afdc706c7ae83934ddfd8c2ffc38" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
-      <member refid="structdpp_1_1message_1a45a0883a10a19e933fbba682aba212f6" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
+      <member refid="structdpp_1_1message_1a49afcc8b39c7662e2b3bc0213a752853" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message</name></member>
       <member refid="structdpp_1_1message_1adc283f0458df6fb0fc966c9f5040c19e" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>message_reference</name></member>
       <member refid="structdpp_1_1message_1afaaf4f44ce0631c49c15088b033d25e6" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>nonce</name></member>
       <member refid="classdpp_1_1managed_1a337e3e4ac1fd30d77279dc41ceba3995" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>operator!=</name></member>
@@ -2381,9 +2381,9 @@
       <member refid="structdpp_1_1message_1a9991c58453a1deb7b785a6b7457372f2" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>sent</name></member>
       <member refid="structdpp_1_1message_1a8f359efd4da1030a66ec5238b495844f" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_allowed_mentions</name></member>
       <member refid="structdpp_1_1message_1a587f5433b73fb7fbffe4b50ce9dd69f8" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_channel_id</name></member>
-      <member refid="structdpp_1_1message_1a18a1ebb4b981a0ef46f78f147aa12b66" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_content</name></member>
-      <member refid="structdpp_1_1message_1a7063a512a6e7f078e2a81bad077dfcde" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_file_content</name></member>
-      <member refid="structdpp_1_1message_1a95675acbf18ed30c5141d3180842611f" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_filename</name></member>
+      <member refid="structdpp_1_1message_1a5533af9fbf06198d72b3768d6f266d32" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_content</name></member>
+      <member refid="structdpp_1_1message_1a03eee3a8225a6fa92fa486f683f434c6" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_file_content</name></member>
+      <member refid="structdpp_1_1message_1a3f84137e4c2a4a2a70b9770f94cf7984" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_filename</name></member>
       <member refid="structdpp_1_1message_1a88f3b1fa926f7b2b524f7b58369b10ad" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_flags</name></member>
       <member refid="structdpp_1_1message_1aedfe51cc0ce0cc38a3b8e0dbeb530964" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_guild_id</name></member>
       <member refid="structdpp_1_1message_1aaa845f092b809eee3314f909c07e0046" prot="public" virt="non-virtual"><scope>dpp::message</scope><name>set_poll</name></member>
