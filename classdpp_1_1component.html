@@ -195,7 +195,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9ebca146649e8cff20a1b6e2479300c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a default value.  <a href="classdpp_1_1component.html#a9ebca146649e8cff20a1b6e2479300c5">More...</a><br /></td></tr>
 <tr class="separator:a9ebca146649e8cff20a1b6e2479300c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3693df30fb82d64bfabc4b86c28c8fce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1component.html">component</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html#a3693df30fb82d64bfabc4b86c28c8fce">set_emoji</a> (std::string_view name, <a class="el" href="classdpp_1_1snowflake.html">dpp::snowflake</a> id=0, bool animated=false)</td></tr>
-<tr class="memdesc:a3693df30fb82d64bfabc4b86c28c8fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the emoji of the current sub-component. Only valid for buttons. Adding an emoji to a component will automatically set this components type to <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" title="Clickable button.">dpp::cot_button</a>. One or both of name and id must be set. For a built in unicode emoji, you only need set name, and should set it to a unicode character e.g. "😄". For custom emojis, set the name to the name of the emoji on the guild, and the id to the emoji's ID. Setting the animated boolean is only valid for custom emojis.  <a href="classdpp_1_1component.html#a3693df30fb82d64bfabc4b86c28c8fce">More...</a><br /></td></tr>
+<tr class="memdesc:a3693df30fb82d64bfabc4b86c28c8fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the emoji of the current sub-component.  <a href="classdpp_1_1component.html#a3693df30fb82d64bfabc4b86c28c8fce">More...</a><br /></td></tr>
 <tr class="separator:a3693df30fb82d64bfabc4b86c28c8fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96011fc1c0d56e194f83c79d40c439c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1component.html">component</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1json__interface.html#a96011fc1c0d56e194f83c79d40c439c6">fill_from_json</a> (nlohmann::json *j)</td></tr>
 <tr class="memdesc:a96011fc1c0d56e194f83c79d40c439c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert object from nlohmann::json.  <a href="structdpp_1_1json__interface.html#a96011fc1c0d56e194f83c79d40c439c6">More...</a><br /></td></tr>
@@ -599,7 +599,7 @@ Friends</h2></td></tr>
 <p>Set the component to disabled. Defaults to false on all created components. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">disable</td><td>True to disable, false to disable. </td></tr>
+    <tr><td class="paramname">disable</td><td>True to disable the component, False to enable the component. </td></tr>
   </table>
   </dd>
 </dl>
@@ -639,7 +639,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the emoji of the current sub-component. Only valid for buttons. Adding an emoji to a component will automatically set this components type to <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" title="Clickable button.">dpp::cot_button</a>. One or both of name and id must be set. For a built in unicode emoji, you only need set name, and should set it to a unicode character e.g. "😄". For custom emojis, set the name to the name of the emoji on the guild, and the id to the emoji's ID. Setting the animated boolean is only valid for custom emojis. </p>
+<p>Set the emoji of the current sub-component. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Only valid for buttons.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Adding an emoji to a component will automatically set this components type to <a class="el" href="namespacedpp.html#afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" title="Clickable button.">dpp::cot_button</a>. <b>One or both of name and id must be set</b>. For a built in unicode emoji, you only need set name, and should set it to a unicode character e.g. "😄". For custom emojis, set the name to the name of the emoji on the guild, and the id to the emoji's ID. Setting the animated boolean is only valid for custom emojis.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Emoji name, or unicode character to use </td></tr>

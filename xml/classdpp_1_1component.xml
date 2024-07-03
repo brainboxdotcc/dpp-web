@@ -670,7 +670,7 @@
 <parametername>disable</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>True to disable, false to disable. </para>
+<para>True to disable the component, False to enable the component. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -982,10 +982,14 @@
           <defval>false</defval>
         </param>
         <briefdescription>
-<para>Set the emoji of the current sub-component. Only valid for buttons. Adding an emoji to a component will automatically set this components type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. One or both of name and id must be set. For a built in unicode emoji, you only need set name, and should set it to a unicode character e.g. &quot;😄&quot;. For custom emojis, set the name to the name of the emoji on the guild, and the id to the emoji&apos;s ID. Setting the animated boolean is only valid for custom emojis. </para>
+<para>Set the emoji of the current sub-component. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para><simplesect kind="warning"><para>Only valid for buttons.</para>
+</simplesect>
+<simplesect kind="note"><para>Adding an emoji to a component will automatically set this components type to <ref refid="namespacedpp_1afce43206033521b990e3a72bb87481b7a98228836af5d0c180cfc05eb1f0bfde9" kindref="member">dpp::cot_button</ref>. <bold>One or both of name and id must be set</bold>. For a built in unicode emoji, you only need set name, and should set it to a unicode character e.g. &quot;😄&quot;. For custom emojis, set the name to the name of the emoji on the guild, and the id to the emoji&apos;s ID. Setting the animated boolean is only valid for custom emojis.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>name</parametername>
 </parameternamelist>
@@ -1016,7 +1020,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/message.h" line="680" column="11"/>
+        <location file="include/dpp/message.h" line="683" column="11"/>
       </memberdef>
       <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classdpp_1_1component" kindref="compound">component</ref> &amp;</type>
@@ -1251,7 +1255,7 @@
         <label>uint64_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/message.h" line="348" column="1" bodyfile="include/dpp/message.h" bodystart="348" bodyend="681"/>
+    <location file="include/dpp/message.h" line="348" column="1" bodyfile="include/dpp/message.h" bodystart="348" bodyend="684"/>
     <listofallmembers>
       <member refid="classdpp_1_1component_1af83f1098e87ce1dd11e475dfd4740b16" prot="public" virt="non-virtual"><scope>dpp::component</scope><name>add_channel_type</name></member>
       <member refid="classdpp_1_1component_1a3707437be16cc7dfd5edcf321f8e842d" prot="public" virt="non-virtual"><scope>dpp::component</scope><name>add_component</name></member>
