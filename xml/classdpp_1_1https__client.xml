@@ -202,6 +202,94 @@
         <location file="include/dpp/httpsclient.h" line="210" column="15" bodyfile="include/dpp/httpsclient.h" bodystart="210" bodyend="-1"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1https__client_1a692403cf275abe733f85fb5a0eff9e55" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::https_client::timed_out</definition>
+        <argsstring></argsstring>
+        <name>timed_out</name>
+        <briefdescription>
+<para>If true the response timed out while waiting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/httpsclient.h" line="236" column="6" bodyfile="include/dpp/httpsclient.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a982a3efeac04ddb820bbe87b08155640" kindref="member">socket_callback_t</ref></type>
+        <definition>socket_callback_t dpp::ssl_client::custom_readable_fd</definition>
+        <argsstring></argsstring>
+        <name>custom_readable_fd</name>
+        <briefdescription>
+<para>Attaching an additional file descriptor to this function will send notifications when there is data to read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! Returning -1 means that you don&apos;t want to be notified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="183" column="19" bodyfile="include/dpp/sslclient.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1afa81c27a0b2fc2d68b3939e102bf2cbf" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a982a3efeac04ddb820bbe87b08155640" kindref="member">socket_callback_t</ref></type>
+        <definition>socket_callback_t dpp::ssl_client::custom_writeable_fd</definition>
+        <argsstring></argsstring>
+        <name>custom_writeable_fd</name>
+        <briefdescription>
+<para>Attaching an additional file descriptor to this function will send notifications when you are able to write to the socket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! You should toggle this to -1 when you do not have anything to write otherwise it&apos;ll keep triggering repeatedly (it is level triggered). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="192" column="19" bodyfile="include/dpp/sslclient.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a9f89983921c7ddfa7f91705bd05e2b9e" kindref="member">socket_notification_t</ref></type>
+        <definition>socket_notification_t dpp::ssl_client::custom_readable_ready</definition>
+        <argsstring></argsstring>
+        <name>custom_readable_ready</name>
+        <briefdescription>
+<para>This event will be called when you can read from the custom fd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="197" column="23" bodyfile="include/dpp/sslclient.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacedpp_1a9f89983921c7ddfa7f91705bd05e2b9e" kindref="member">socket_notification_t</ref></type>
+        <definition>socket_notification_t dpp::ssl_client::custom_writeable_ready</definition>
+        <argsstring></argsstring>
+        <name>custom_writeable_ready</name>
+        <briefdescription>
+<para>This event will be called when you can write to a custom fd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="202" column="23" bodyfile="include/dpp/sslclient.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::ssl_client::keepalive</definition>
+        <argsstring></argsstring>
+        <name>keepalive</name>
+        <briefdescription>
+<para>True if we are keeping the connection alive after it has finished. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/sslclient.h" line="207" column="6" bodyfile="include/dpp/sslclient.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classdpp_1_1https__client_1a45e64aadc54d356a6e9f7d0a64eb231e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -402,7 +490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="254" column="9"/>
+        <location file="include/dpp/httpsclient.h" line="259" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1ab2d6c00ba8ed56c1e06a42563d1b7026" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -416,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="259" column="17"/>
+        <location file="include/dpp/httpsclient.h" line="264" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1ab81b63e6837b5eccbf124804d040e93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -445,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="277" column="22"/>
+        <location file="include/dpp/httpsclient.h" line="282" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1a4f0f5052e8c71e201e6537f7ce82d5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -460,7 +548,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="282" column="22"/>
+        <location file="include/dpp/httpsclient.h" line="287" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1af37e3ada25e6243867bee042d2eb222c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -475,7 +563,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="287" column="14"/>
+        <location file="include/dpp/httpsclient.h" line="292" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1a58d8ae5c9949d7b066dbbc6fb2c13a77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::string</type>
@@ -509,7 +597,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="298" column="19"/>
+        <location file="include/dpp/httpsclient.h" line="303" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1a0c19fdc08d1d8cedcdd357af3f23e790" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -539,7 +627,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="306" column="8"/>
+        <location file="include/dpp/httpsclient.h" line="311" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1ad9b018960ad5f7687b48ee3a6bc99bb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::list&lt; std::string &gt;</type>
@@ -569,7 +657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="315" column="17"/>
+        <location file="include/dpp/httpsclient.h" line="320" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1acecf3bc12787b4115de00a4977d86c90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::multimap&lt; std::string, std::string &gt;</type>
@@ -586,7 +674,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="322" column="21"/>
+        <location file="include/dpp/httpsclient.h" line="327" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1affac629e0843afcdc9a77351a550d6be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::string</type>
@@ -603,7 +691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="329" column="19"/>
+        <location file="include/dpp/httpsclient.h" line="334" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1aad457d811e2b8655eef18d2f3b76e076" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -620,7 +708,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="338" column="10"/>
+        <location file="include/dpp/httpsclient.h" line="343" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1ssl__client_1aad4da6489c8f08030ca49c060a23740a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -839,7 +927,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="270" column="26"/>
+        <location file="include/dpp/httpsclient.h" line="275" column="26"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1https__client_1ab78d925b79646c8d0f2aa76065cd1397" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structdpp_1_1http__connect__info" kindref="compound">http_connect_info</ref></type>
@@ -870,7 +958,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/httpsclient.h" line="350" column="26"/>
+        <location file="include/dpp/httpsclient.h" line="355" column="26"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -1057,80 +1145,6 @@
         <location file="include/dpp/sslclient.h" line="145" column="6" bodyfile="include/dpp/sslclient.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa183564aac368ba97b653260ab5f5b6b" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a982a3efeac04ddb820bbe87b08155640" kindref="member">socket_callback_t</ref></type>
-        <definition>socket_callback_t dpp::ssl_client::custom_readable_fd</definition>
-        <argsstring></argsstring>
-        <name>custom_readable_fd</name>
-        <briefdescription>
-<para>Attaching an additional file descriptor to this function will send notifications when there is data to read. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! Returning -1 means that you don&apos;t want to be notified. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="183" column="19" bodyfile="include/dpp/sslclient.h" bodystart="183" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1afa81c27a0b2fc2d68b3939e102bf2cbf" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a982a3efeac04ddb820bbe87b08155640" kindref="member">socket_callback_t</ref></type>
-        <definition>socket_callback_t dpp::ssl_client::custom_writeable_fd</definition>
-        <argsstring></argsstring>
-        <name>custom_writeable_fd</name>
-        <briefdescription>
-<para>Attaching an additional file descriptor to this function will send notifications when you are able to write to the socket. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>NOTE: Only hook this if you NEED it as it can increase CPU usage of the thread! You should toggle this to -1 when you do not have anything to write otherwise it&apos;ll keep triggering repeatedly (it is level triggered). </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="192" column="19" bodyfile="include/dpp/sslclient.h" bodystart="192" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1a47fa1e38d3b5d26b6913577ffe9c73cd" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a9f89983921c7ddfa7f91705bd05e2b9e" kindref="member">socket_notification_t</ref></type>
-        <definition>socket_notification_t dpp::ssl_client::custom_readable_ready</definition>
-        <argsstring></argsstring>
-        <name>custom_readable_ready</name>
-        <briefdescription>
-<para>This event will be called when you can read from the custom fd. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="197" column="23" bodyfile="include/dpp/sslclient.h" bodystart="197" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1aa1a9af1a95e1fb4ac1504de8d591b650" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacedpp_1a9f89983921c7ddfa7f91705bd05e2b9e" kindref="member">socket_notification_t</ref></type>
-        <definition>socket_notification_t dpp::ssl_client::custom_writeable_ready</definition>
-        <argsstring></argsstring>
-        <name>custom_writeable_ready</name>
-        <briefdescription>
-<para>This event will be called when you can write to a custom fd. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="202" column="23" bodyfile="include/dpp/sslclient.h" bodystart="202" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1ssl__client_1ac8997404ef91c501c3e8ae1079e89152" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::ssl_client::keepalive</definition>
-        <argsstring></argsstring>
-        <name>keepalive</name>
-        <briefdescription>
-<para>True if we are keeping the connection alive after it has finished. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/sslclient.h" line="207" column="6" bodyfile="include/dpp/sslclient.h" bodystart="207" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
     <briefdescription>
 <para>Implements a HTTPS socket client based on the SSL client. </para>
     </briefdescription>
@@ -1159,6 +1173,9 @@
         <label>dpp::https_client</label>
         <link refid="classdpp_1_1https__client"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>timed_out</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -1226,7 +1243,7 @@
         <label>uint64_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/httpsclient.h" line="137" column="1" bodyfile="include/dpp/httpsclient.h" bodystart="137" bodyend="352"/>
+    <location file="include/dpp/httpsclient.h" line="137" column="1" bodyfile="include/dpp/httpsclient.h" bodystart="137" bodyend="357"/>
     <listofallmembers>
       <member refid="classdpp_1_1https__client_1a8c7302f1e9384a125f8a1f757b4329b3" prot="private" virt="non-virtual"><scope>dpp::https_client</scope><name>body</name></member>
       <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" prot="protected" virt="non-virtual"><scope>dpp::https_client</scope><name>buffer</name></member>
@@ -1280,6 +1297,7 @@
       <member refid="classdpp_1_1ssl__client_1a53c006d94ef782a5e138accb669871e1" prot="public" virt="non-virtual"><scope>dpp::https_client</scope><name>ssl_client</name></member>
       <member refid="classdpp_1_1https__client_1ad987631fa443685b10b7b46c3e9472d5" prot="private" virt="non-virtual"><scope>dpp::https_client</scope><name>state</name></member>
       <member refid="classdpp_1_1https__client_1ad8d80fde390cd6307e0c5008c0ad45d5" prot="private" virt="non-virtual"><scope>dpp::https_client</scope><name>status</name></member>
+      <member refid="classdpp_1_1https__client_1a692403cf275abe733f85fb5a0eff9e55" prot="public" virt="non-virtual"><scope>dpp::https_client</scope><name>timed_out</name></member>
       <member refid="classdpp_1_1https__client_1a1e85d7cad322c90c719f4434abfa1438" prot="private" virt="non-virtual"><scope>dpp::https_client</scope><name>timeout</name></member>
       <member refid="classdpp_1_1ssl__client_1acdfd527a84156e918dc93420ed0d45b8" prot="public" virt="virtual"><scope>dpp::https_client</scope><name>write</name></member>
       <member refid="classdpp_1_1https__client_1ab2d6c00ba8ed56c1e06a42563d1b7026" prot="public" virt="virtual"><scope>dpp::https_client</scope><name>~https_client</name></member>

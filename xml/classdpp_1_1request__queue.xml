@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="492" column="14" bodyfile="include/dpp/queues.h" bodystart="492" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="505" column="14" bodyfile="include/dpp/queues.h" bodystart="505" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="497" column="15" bodyfile="include/dpp/queues.h" bodystart="497" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="510" column="15" bodyfile="include/dpp/queues.h" bodystart="510" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a3e820d1ff86e88e36a07f859064a7fca" prot="protected" static="no" mutable="no">
         <type>std::shared_mutex</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="502" column="19" bodyfile="include/dpp/queues.h" bodystart="502" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="515" column="19" bodyfile="include/dpp/queues.h" bodystart="515" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" prot="protected" static="no" mutable="no">
         <type>std::thread *</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="511" column="13" bodyfile="include/dpp/queues.h" bodystart="511" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="524" column="13" bodyfile="include/dpp/queues.h" bodystart="524" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a4e4ca349f25239201a985adb1db64353" prot="protected" static="no" mutable="no">
         <type>std::condition_variable</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="517" column="25" bodyfile="include/dpp/queues.h" bodystart="517" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="530" column="25" bodyfile="include/dpp/queues.h" bodystart="530" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a1fa529254021faa302ad92f164042f01" prot="protected" static="no" mutable="no">
         <type>std::queue&lt; <ref refid="structdpp_1_1request__queue_1_1completed__request" kindref="compound">completed_request</ref> &gt;</type>
@@ -93,11 +93,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="537" column="12" bodyfile="include/dpp/queues.h" bodystart="537" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="550" column="12" bodyfile="include/dpp/queues.h" bodystart="550" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a55e16f17459875caa27c1e34d2d8ad1e" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classdpp_1_1in__thread" kindref="compound">in_thread</ref> * &gt;</type>
-        <definition>std::vector&lt;in_thread*&gt; dpp::request_queue::requests_in</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1abc7363f3fc7e0f8bf8b9437b669697d4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdpp_1_1in__thread" kindref="compound">in_thread</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;in_thread&gt; &gt; dpp::request_queue::requests_in</definition>
         <argsstring></argsstring>
         <name>requests_in</name>
         <briefdescription>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="548" column="13" bodyfile="include/dpp/queues.h" bodystart="548" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="561" column="13" bodyfile="include/dpp/queues.h" bodystart="561" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a9ad976e7018a76e6d42daa103f665667" prot="protected" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structdpp_1_1request__queue_1_1queued__deleting__request" kindref="compound">queued_deleting_request</ref> &gt;</type>
@@ -121,11 +121,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="582" column="13" bodyfile="include/dpp/queues.h" bodystart="582" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="595" column="13" bodyfile="include/dpp/queues.h" bodystart="595" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdpp_1_1request__queue_1a7fd6a3d04141f1d227d1253fa414b1fd" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool dpp::request_queue::terminating</definition>
+      <memberdef kind="variable" id="classdpp_1_1request__queue_1aea5ae71c447221809505b2a9b326da8b" prot="protected" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; dpp::request_queue::terminating</definition>
         <argsstring></argsstring>
         <name>terminating</name>
         <briefdescription>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="587" column="6" bodyfile="include/dpp/queues.h" bodystart="587" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="600" column="13" bodyfile="include/dpp/queues.h" bodystart="600" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a72a95ae8742f8d76d69ffbf63993b383" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="592" column="6" bodyfile="include/dpp/queues.h" bodystart="592" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="605" column="6" bodyfile="include/dpp/queues.h" bodystart="605" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a4570a2b18fe55011495f956f807db8ef" prot="protected" static="no" mutable="no">
         <type>uint64_t</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="599" column="10" bodyfile="include/dpp/queues.h" bodystart="599" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="612" column="10" bodyfile="include/dpp/queues.h" bodystart="612" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdpp_1_1request__queue_1a55eefe311c71c787c779eb035aa9daea" prot="protected" static="no" mutable="no">
         <type>uint32_t</type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="604" column="10" bodyfile="include/dpp/queues.h" bodystart="604" bodyend="-1"/>
+        <location file="include/dpp/queues.h" line="617" column="10" bodyfile="include/dpp/queues.h" bodystart="617" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="609" column="6"/>
+        <location file="include/dpp/queues.h" line="622" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="619" column="1"/>
+        <location file="include/dpp/queues.h" line="632" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1a0d0783d9546803f568b1de48898c5c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> &amp;</type>
@@ -271,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="629" column="15"/>
+        <location file="include/dpp/queues.h" line="642" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1a6a734c3fc440847f02980be0e3df0c2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -288,7 +288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="635" column="10"/>
+        <location file="include/dpp/queues.h" line="648" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1a5ccaae72d03d626852be0a0d3c6b86dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="641" column="1"/>
+        <location file="include/dpp/queues.h" line="654" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1a78a3adde76b2c5ddb6c06b36d00a9646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> &amp;</type>
@@ -334,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="650" column="15"/>
+        <location file="include/dpp/queues.h" line="663" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1request__queue_1adf8d6cdce3298446bc199d8a04a9d158" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -351,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/queues.h" line="656" column="6"/>
+        <location file="include/dpp/queues.h" line="669" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -360,10 +360,10 @@
     <detaileddescription>
 <para>It ensures asynchronous delivery of events and queueing of requests.</para>
 <para>It will spawn two threads, one to make outbound HTTP requests and push the returned results into a queue, and the second to call the callback methods with these results. They are separated so that if the user decides to take a long time processing a reply in their callback it won&apos;t affect when other requests are sent, and if a HTTP request takes a long time due to latency, it won&apos;t hold up user processing.</para>
-<para>There are usually two <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> objects in each <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref>, one of which is used internally for the various REST methods to Discord such as sending messages, and the other used to support user REST calls via <ref refid="classdpp_1_1cluster_1aa4ead3406c471a64fa1fa578cc51cf2e" kindref="member">dpp::cluster::request()</ref>. </para>
+<para>There are usually two <ref refid="classdpp_1_1request__queue" kindref="compound">request_queue</ref> objects in each <ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref>, one of which is used internally for the various REST methods to Discord such as sending messages, and the other used to support user REST calls via <ref refid="classdpp_1_1cluster_1a7a8e44c8d273e16c87b5f95c64495c09" kindref="member">dpp::cluster::request()</ref>. </para>
     </detaileddescription>
     <collaborationgraph>
-      <node id="26">
+      <node id="27">
         <label>bool</label>
       </node>
       <node id="18">
@@ -461,8 +461,10 @@
           <edgelabel>responses_to_delete</edgelabel>
         </childnode>
         <childnode refid="26" relation="usage">
-          <edgelabel>globally_ratelimited</edgelabel>
           <edgelabel>terminating</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>globally_ratelimited</edgelabel>
         </childnode>
         <childnode refid="11" relation="usage">
           <edgelabel>globally_limited_for</edgelabel>
@@ -521,6 +523,9 @@
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
+      <node id="26">
+        <label>atomic&lt;</label>
+      </node>
       <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
@@ -563,7 +568,7 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/queues.h" line="487" column="1" bodyfile="include/dpp/queues.h" bodystart="487" bodyend="657"/>
+    <location file="include/dpp/queues.h" line="500" column="1" bodyfile="include/dpp/queues.h" bodystart="500" bodyend="670"/>
     <listofallmembers>
       <member refid="classdpp_1_1request__queue_1a0d0783d9546803f568b1de48898c5c6e" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>add_request_threads</name></member>
       <member refid="classdpp_1_1request__queue_1afc5bd2c27798f38630d996d1666dbbca" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>creator</name></member>
@@ -579,10 +584,10 @@
       <member refid="classdpp_1_1request__queue_1a28bdbc2d87929deda263ce8bfc0c1231" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>out_thread</name></member>
       <member refid="classdpp_1_1request__queue_1a78a3adde76b2c5ddb6c06b36d00a9646" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>post_request</name></member>
       <member refid="classdpp_1_1request__queue_1afec7ef3d2deeef5687355cb1e6fb2eb3" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>request_queue</name></member>
-      <member refid="classdpp_1_1request__queue_1a55e16f17459875caa27c1e34d2d8ad1e" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>requests_in</name></member>
+      <member refid="classdpp_1_1request__queue_1abc7363f3fc7e0f8bf8b9437b669697d4" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>requests_in</name></member>
       <member refid="classdpp_1_1request__queue_1a1fa529254021faa302ad92f164042f01" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>responses_out</name></member>
       <member refid="classdpp_1_1request__queue_1a9ad976e7018a76e6d42daa103f665667" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>responses_to_delete</name></member>
-      <member refid="classdpp_1_1request__queue_1a7fd6a3d04141f1d227d1253fa414b1fd" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>terminating</name></member>
+      <member refid="classdpp_1_1request__queue_1aea5ae71c447221809505b2a9b326da8b" prot="protected" virt="non-virtual"><scope>dpp::request_queue</scope><name>terminating</name></member>
       <member refid="classdpp_1_1request__queue_1a5ccaae72d03d626852be0a0d3c6b86dd" prot="public" virt="non-virtual"><scope>dpp::request_queue</scope><name>~request_queue</name></member>
     </listofallmembers>
   </compounddef>

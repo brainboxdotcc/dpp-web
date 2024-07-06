@@ -557,7 +557,7 @@ var classdpp_1_1cluster =
     [ "poll_get_answer_voters_sync", "classdpp_1_1cluster.html#a4ccf964f3d4d49737ce585276c71f20b", null ],
     [ "post_rest", "classdpp_1_1cluster.html#a4d102b15a0a4d74fd1f9ee4fc3aa8bbf", null ],
     [ "post_rest_multipart", "classdpp_1_1cluster.html#a548e19022b7d3ee825920888da07493b", null ],
-    [ "request", "classdpp_1_1cluster.html#aa4ead3406c471a64fa1fa578cc51cf2e", null ],
+    [ "request", "classdpp_1_1cluster.html#a7a8e44c8d273e16c87b5f95c64495c09", null ],
     [ "role_create", "classdpp_1_1cluster.html#a849017410297379997601daac5e99ce1", null ],
     [ "role_create_sync", "classdpp_1_1cluster.html#a8fa5c60e4a435244d30e2fea4bbc3dca", null ],
     [ "role_delete", "classdpp_1_1cluster.html#a6d4cdab9c22eefdeba0d28105c006b2b", null ],
