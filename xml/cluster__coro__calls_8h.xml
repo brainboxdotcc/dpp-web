@@ -150,10 +150,10 @@
         </inbodydescription>
         <location file="include/dpp/cluster_coro_calls.h" line="2420" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2420" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="cluster__coro__calls_8h_1ad993aa673aae9aee9f4edfa8d0bac967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="cluster__coro__calls_8h_1ae4cae7284dad36b64d7d315b99d8a19b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>async&lt; http_request_completion_t &gt;</type>
         <definition>async&lt; http_request_completion_t &gt; co_request</definition>
-        <argsstring>(const std::string &amp;url, http_method method, const std::string &amp;postdata=&quot;&quot;, const std::string &amp;mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;headers={}, const std::string &amp;protocol=&quot;1.1&quot;)</argsstring>
+        <argsstring>(const std::string &amp;url, http_method method, const std::string &amp;postdata=&quot;&quot;, const std::string &amp;mimetype=&quot;text/plain&quot;, const std::multimap&lt; std::string, std::string &gt; &amp;headers={}, const std::string &amp;protocol=&quot;1.1&quot;, time_t request_timeout=5)</argsstring>
         <name>co_request</name>
         <param>
           <type>const std::string &amp;</type>
@@ -182,6 +182,11 @@
           <type>const std::string &amp;</type>
           <declname>protocol</declname>
           <defval>&quot;1.1&quot;</defval>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>request_timeout</declname>
+          <defval>5</defval>
         </param>
         <briefdescription>
         </briefdescription>

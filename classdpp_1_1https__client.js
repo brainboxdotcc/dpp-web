@@ -38,5 +38,6 @@ var classdpp_1_1https__client =
     [ "plaintext", "classdpp_1_1https__client.html#aa735feca3545e156e0607c06d55288c4", null ],
     [ "port", "classdpp_1_1https__client.html#a53cda56d5d61e3371bd7be2424e7ff07", null ],
     [ "sfd", "classdpp_1_1https__client.html#a423ca70d4046067ebe219f85c7baa540", null ],
-    [ "ssl", "classdpp_1_1https__client.html#a26db29793a38b8a9dad74581597b298a", null ]
+    [ "ssl", "classdpp_1_1https__client.html#a26db29793a38b8a9dad74581597b298a", null ],
+    [ "timed_out", "classdpp_1_1https__client.html#a692403cf275abe733f85fb5a0eff9e55", null ]
 ];
