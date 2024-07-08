@@ -309,7 +309,7 @@ var searchData=
   ['bucket_5ft_306',['bucket_t',['../structdpp_1_1bucket__t.html',1,'dpp']]],
   ['buf_307',['buf',['../structdpp_1_1etf__buffer.html#a43b8f9084fb86968add81fbf3de15f85',1,'dpp::etf_buffer']]],
   ['buffer_308',['buffer',['../classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa',1,'dpp::ssl_client']]],
-  ['buffer_5fsize_309',['buffer_size',['../structdpp_1_1voice__buffer__send__t.html#a2dca750294ff5b2e4e08fc3b759dd84c',1,'dpp::voice_buffer_send_t']]],
+  ['buffer_5fsize_309',['buffer_size',['../structdpp_1_1voice__buffer__send__t.html#acbf0184f5904907fd59fe3c78d7e73da',1,'dpp::voice_buffer_send_t']]],
   ['bug_310',['bug',['../namespacedpp_1_1unicode__emoji.html#acce782bd6db60b5a3ae4c2d0e4fa977a',1,'dpp::unicode_emoji']]],
   ['build_20a_20discord_20bot_20using_20meson_311',['Build a Discord Bot Using Meson',['../buildmeson.html',1,'creating-a-discord-bot']]],
   ['build_5fjson_312',['build_json',['../structdpp_1_1json__interface.html#ad615544432a8a6da87f3bd70d6f6b92c',1,'dpp::json_interface']]],

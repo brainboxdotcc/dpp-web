@@ -10,9 +10,10 @@ var structdpp_1_1voice__buffer__send__t =
     [ "is_cancelled", "structdpp_1_1voice__buffer__send__t.html#aca2880114f69b7ba62eb5137824c1432", null ],
     [ "operator=", "structdpp_1_1voice__buffer__send__t.html#a2500c6d9987fbfc509fd0a960b1968e9", null ],
     [ "operator=", "structdpp_1_1voice__buffer__send__t.html#a4645c2cc7dfe1def0b936d5726f7b8db", null ],
-    [ "buffer_size", "structdpp_1_1voice__buffer__send__t.html#a2dca750294ff5b2e4e08fc3b759dd84c", null ],
+    [ "buffer_size", "structdpp_1_1voice__buffer__send__t.html#acbf0184f5904907fd59fe3c78d7e73da", null ],
     [ "cancelled", "structdpp_1_1voice__buffer__send__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
     [ "from", "structdpp_1_1voice__buffer__send__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71", null ],
+    [ "packets_left", "structdpp_1_1voice__buffer__send__t.html#a6e4bf43cf13569896414aa5de576ab99", null ],
     [ "raw_event", "structdpp_1_1voice__buffer__send__t.html#a2d4777d1049d31ed943ecebfa2de7db9", null ],
     [ "voice_client", "structdpp_1_1voice__buffer__send__t.html#a5cb7cd0835a7a26001f4c650619eff0e", null ]
 ];

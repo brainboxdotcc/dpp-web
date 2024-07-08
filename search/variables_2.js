@@ -301,7 +301,7 @@ var searchData=
   ['bucket_298',['bucket',['../namespacedpp_1_1unicode__emoji.html#a8a67fb49c3efbc592bf0695d74b5379e',1,'dpp::unicode_emoji']]],
   ['buf_299',['buf',['../structdpp_1_1etf__buffer.html#a43b8f9084fb86968add81fbf3de15f85',1,'dpp::etf_buffer']]],
   ['buffer_300',['buffer',['../classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa',1,'dpp::ssl_client']]],
-  ['buffer_5fsize_301',['buffer_size',['../structdpp_1_1voice__buffer__send__t.html#a2dca750294ff5b2e4e08fc3b759dd84c',1,'dpp::voice_buffer_send_t']]],
+  ['buffer_5fsize_301',['buffer_size',['../structdpp_1_1voice__buffer__send__t.html#acbf0184f5904907fd59fe3c78d7e73da',1,'dpp::voice_buffer_send_t']]],
   ['bug_302',['bug',['../namespacedpp_1_1unicode__emoji.html#acce782bd6db60b5a3ae4c2d0e4fa977a',1,'dpp::unicode_emoji']]],
   ['building_5fconstruction_303',['building_construction',['../namespacedpp_1_1unicode__emoji.html#a3a95cffb3ba1c595e4815310214f855c',1,'dpp::unicode_emoji']]],
   ['bulb_304',['bulb',['../namespacedpp_1_1unicode__emoji.html#abdef2202edd28133516a2b75e806b592',1,'dpp::unicode_emoji']]],
