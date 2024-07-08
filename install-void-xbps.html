@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Installing D++ - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Installing from XBPS (Void Linux) - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Installing D++ - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Installing from XBPS (Void Linux) - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Installing D++ - D++ - The lightweight C++ Discord API Library">
-<title>Installing D++ - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Installing from XBPS (Void Linux) - D++ - The lightweight C++ Discord API Library">
+<title>Installing from XBPS (Void Linux) - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('installing.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('install-void-xbps.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,26 +98,38 @@ $(document).ready(function(){initNavTree('installing.html',''); initResizable();
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Installing D++ </div></div>
+  <div class="headertitle"><div class="title">Installing from XBPS (Void Linux) </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >There are many ways to install D++, either from a package manager, or from source. Please choose your desired option from the list below:</p>
-<ul>
-<li><a class="el" href="install-linux-deb.html">Installing from a .deb file (Debian, Ubuntu, and Derivatives)</a></li>
-<li><a class="el" href="install-linux-rpm.html">Installing from a .rpm file (RedHat, CentOS and Derivatives)</a></li>
-<li><a class="el" href="install-vcpkg.html">Installing from VCPKG (Windows)</a></li>
-<li><a class="el" href="install-arch-aur.html">Installing from AUR (Arch Linux)</a></li>
-<li><a class="el" href="install-void-xbps.html">Installing from XBPS (Void Linux)</a></li>
-<li><a class="el" href="install-windows-vs-zip.html">Installing from zip (Windows) for Visual Studio</a></li>
-<li><a class="el" href="install-xmake.html">Installing from XMake</a></li>
-<li><a class="el" href="install-brew.html">Installing from Homebrew (OSX)</a></li>
-<li><a class="el" href="install-from-source.html">Building D++ from Source</a> </li>
+<div class="textblock"><p >To install <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/dpp/template">D++ from XBPS source packages collection</a>, follow the step below (as root):</p>
+<div class="fragment"><div class="line">xbps-install -Sy dpp-devel</div>
+</div><!-- fragment --><p >This will install D++ development files and related libraries</p>
+<p >You will now be able to use D++ by including its library on the command line:</p>
+<div class="fragment"><div class="line">g++ mybot.cpp -o mybot -ldpp</div>
+</div><!-- fragment --><p ><dl class="section note"><dt>Note</dt><dd>Compiling your bot with a raw <code>g++</code> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <a class="el" href="buildcmake.html">Building a Discord Bot Using CMake (UNIX)</a> or if you have not yet created a token for your bot, <a class="el" href="creating-a-bot-application.html">Creating a Bot Token</a> - If you are having trouble setting up CMake, you can try <a href="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</a>.</dd></dl>
+</p>
+<p >To build D++ with coroutine support as an XBPS package, follow the steps below. Ensure that <a href="https://github.com/void-linux/void-packages?tab=readme-ov-file#quick-start">xbps-src is set up</a> beforehand:</p>
+<div class="fragment"><div class="line"># Inside the void-packages root folder</div>
+<div class="line">git checkout master &amp;&amp; git pull</div>
+<div class="line"># Modifies the configure arguments to include coroutine support (-DDPP_CORO=ON)</div>
+<div class="line">grep -q &#39;configure_args=.*-DDPP_CORO=ON&#39; srcpkgs/dpp/template || sed -i -e &#39;s/\&zwj;(configure_args=&quot;[^&quot;]*\&zwj;)&quot;/\1 -DDPP_CORO=ON&quot;/&#39; srcpkgs/dpp/template</div>
+<div class="line">./xbps-src -K pkg dpp</div>
+</div><!-- fragment --><p >Then as root: </p><div class="fragment"><div class="line"># Inside the void-packages root folder</div>
+<div class="line">xbps-install --repository hostdir/binpkgs dpp-devel</div>
+</div><!-- fragment --><p >This will do the following three things:</p><ul>
+<li>Update the void-packages repository to the latest commit on master</li>
+<li>Patch the template file of D++ to enable coroutine support</li>
+<li>Build an XBPS package for D++ and install it</li>
 </ul>
+<dl class="section note"><dt>Note</dt><dd>Cloning the void-packages repository may take some time</dd></dl>
+<p><dl class="section warning"><dt>Warning</dt><dd>D++ Coroutines are a very new feature and are currently only supported by D++ on g++ 13, clang/LLVM 14, and MSVC 19.37 or above. Additionally, D++ must be built with the CMake option DPP_CORO, and your program must both define the macro DPP_CORO and use C++20 or above. The feature is experimental and may have bugs or even crashes, please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</a> or to our <a href="https://discord.gg/dpp">Discord Server</a>. </dd></dl>
+ </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
+		<li class="navelem"><a class="el" href="installing.html">Installing D++</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

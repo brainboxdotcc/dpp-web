@@ -15,14 +15,15 @@ var NAVTREEINDEX22 =
 "index.html#autotoc_md148":[0,5],
 "index.html#autotoc_md149":[0,6],
 "install-arch-aur.html":[3,3],
-"install-brew.html":[3,6],
-"install-from-source.html":[3,7],
+"install-brew.html":[3,7],
+"install-from-source.html":[3,8],
 "install-linux-deb.html":[3,0],
 "install-linux-rpm.html":[3,1],
 "install-vcpkg.html":[3,2],
+"install-void-xbps.html":[3,4],
 "install-windows-clion-vcpkg.html":[4,3],
-"install-windows-vs-zip.html":[3,4],
-"install-xmake.html":[3,5],
+"install-windows-vs-zip.html":[3,5],
+"install-xmake.html":[3,6],
 "installing.html":[3],
 "interactions-and-components.html":[5,1],
 "joinvc.html":[5,2,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp.html#a494de7d152ac533c1283a759f5e7e344":[9,0,0,443],
 "namespacedpp.html#a4dbbdf54366910bacd95554ccbc705a2":[9,0,0,272],
 "namespacedpp.html#a4f48d1973cbdbdde424016e641109c50":[9,0,0,447],
-"namespacedpp.html#a51156024d6211aef2731770340cfe452":[9,0,0,292],
-"namespacedpp.html#a51891a9e382f9c396d378de00fa65099":[9,0,0,370]
+"namespacedpp.html#a51156024d6211aef2731770340cfe452":[9,0,0,292]
 };
