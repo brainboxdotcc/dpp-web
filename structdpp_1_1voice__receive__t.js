@@ -15,7 +15,7 @@ var structdpp_1_1voice__receive__t =
     [ "reassign", "structdpp_1_1voice__receive__t.html#a1d9d89f6baa1473bbfa16db073806529", null ],
     [ "discord_voice_client", "structdpp_1_1voice__receive__t.html#abc4e53e79731117ca95bca977baef820", null ],
     [ "audio", "structdpp_1_1voice__receive__t.html#abe0062119471690caacc95d849274413", null ],
-    [ "audio_data", "structdpp_1_1voice__receive__t.html#a6d6f1d1be9a65fa8b428fab5230dce6d", null ],
+    [ "audio_data", "structdpp_1_1voice__receive__t.html#a1f05677b4f919dd7db28a9a2977b3b09", null ],
     [ "audio_size", "structdpp_1_1voice__receive__t.html#abdc253b2799cb504caa9bd030838f668", null ],
     [ "cancelled", "structdpp_1_1voice__receive__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6", null ],
     [ "from", "structdpp_1_1voice__receive__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71", null ],
