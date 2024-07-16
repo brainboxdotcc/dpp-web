@@ -7477,11 +7477,11 @@ var namespacedpp =
       [ "HTTPS_CHUNK_LAST", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091aae0ac9fd46782eff729f30165376b78d", null ],
       [ "HTTPS_CHUNK_CONTENT", "namespacedpp.html#aaaa159f13811e8d13973c2794e171091af202968d765aaa0b2d9e262fbda347d7", null ]
     ] ],
-    [ "image_type", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83", [
-      [ "i_png", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83ace2c4de1f89397132561031f246f89f7", null ],
-      [ "i_jpg", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a29ece0fa9be4b57cbd1a5a9213f5a930", null ],
-      [ "i_gif", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a366092ea3e4a9f5a1c1c4962094d3b9f", null ],
-      [ "i_webp", "namespacedpp.html#a7d622bf5ff000e82a44af1a8ac794e83a629c56aafbf3660b0814a743bf9f3458", null ]
+    [ "image_type", "namespacedpp.html#ab4fba082389f572d696d97404a2bcb31", [
+      [ "i_png", "namespacedpp.html#ab4fba082389f572d696d97404a2bcb31ace2c4de1f89397132561031f246f89f7", null ],
+      [ "i_jpg", "namespacedpp.html#ab4fba082389f572d696d97404a2bcb31a29ece0fa9be4b57cbd1a5a9213f5a930", null ],
+      [ "i_gif", "namespacedpp.html#ab4fba082389f572d696d97404a2bcb31a366092ea3e4a9f5a1c1c4962094d3b9f", null ],
+      [ "i_webp", "namespacedpp.html#ab4fba082389f572d696d97404a2bcb31a629c56aafbf3660b0814a743bf9f3458", null ]
     ] ],
     [ "integration_flags", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0", [
       [ "if_enabled", "namespacedpp.html#a5ca6af921218321ff8f2f8640f5b2dd0aea01d18af1995c14b8f93a1def0c5187", null ],
