@@ -101,7 +101,9 @@ $(document).ready(function(){initNavTree('classdpp_1_1async.html',''); initResiz
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdpp_1_1async-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dpp::async&lt; R &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -116,7 +118,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1async.html',''); initResiz
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1async__inherit__graph.svg" width="156" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1async__inherit__graph.svg" width="371" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -124,7 +126,7 @@ $(document).ready(function(){initNavTree('classdpp_1_1async.html',''); initResiz
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1async__coll__graph.svg" width="156" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdpp_1_1async__coll__graph.svg" width="455" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -144,42 +146,61 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d38b4712ab7f2d4b9dae3ce44377029"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#a5d38b4712ab7f2d4b9dae3ce44377029">async</a> (Fun &amp;&amp;fun, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a5d38b4712ab7f2d4b9dae3ce44377029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an async object wrapping an invokeable object, the call is made immediately by forwarding to <a href="https://en.cppreference.com/w/cpp/utility/functional/invoke">std::invoke</a> and can be awaited later to retrieve the result.  <a href="classdpp_1_1async.html#a5d38b4712ab7f2d4b9dae3ce44377029">More...</a><br /></td></tr>
 <tr class="separator:a5d38b4712ab7f2d4b9dae3ce44377029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af82d13edfeb2f40977306ff5a6674546"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#af82d13edfeb2f40977306ff5a6674546">async</a> () noexcept</td></tr>
-<tr class="memdesc:af82d13edfeb2f40977306ff5a6674546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty async. Using <code>co_await</code> on an empty async is undefined behavior.  <a href="classdpp_1_1async.html#af82d13edfeb2f40977306ff5a6674546">More...</a><br /></td></tr>
-<tr class="separator:af82d13edfeb2f40977306ff5a6674546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae89c11b1a858c061facb6311b2ec45f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#aae89c11b1a858c061facb6311b2ec45f">~async</a> ()</td></tr>
-<tr class="memdesc:aae89c11b1a858c061facb6311b2ec45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. If any callback is pending it will be aborted.  <a href="classdpp_1_1async.html#aae89c11b1a858c061facb6311b2ec45f">More...</a><br /></td></tr>
-<tr class="separator:aae89c11b1a858c061facb6311b2ec45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b34045e700d1cfa35c9de00b8531530"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#a7b34045e700d1cfa35c9de00b8531530">async</a> (const <a class="el" href="classdpp_1_1async.html">async</a> &amp;)</td></tr>
-<tr class="memdesc:a7b34045e700d1cfa35c9de00b8531530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor is disabled.  <a href="classdpp_1_1async.html#a7b34045e700d1cfa35c9de00b8531530">More...</a><br /></td></tr>
-<tr class="separator:a7b34045e700d1cfa35c9de00b8531530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c9fa6c5067e90541eafd995588459de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#a8c9fa6c5067e90541eafd995588459de">async</a> (<a class="el" href="classdpp_1_1async.html">async</a> &amp;&amp;other) noexcept=default</td></tr>
-<tr class="memdesc:a8c9fa6c5067e90541eafd995588459de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="classdpp_1_1async.html#a8c9fa6c5067e90541eafd995588459de">More...</a><br /></td></tr>
-<tr class="separator:a8c9fa6c5067e90541eafd995588459de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d098f7733f9890192a480a5490553c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#a1d098f7733f9890192a480a5490553c0">async</a> (const <a class="el" href="classdpp_1_1async.html">async</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a1d098f7733f9890192a480a5490553c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor is disabled.  <a href="classdpp_1_1async.html#a1d098f7733f9890192a480a5490553c0">More...</a><br /></td></tr>
+<tr class="separator:a1d098f7733f9890192a480a5490553c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b8a635e0cbba12e750d0fb57497f866"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#a1b8a635e0cbba12e750d0fb57497f866">async</a> (<a class="el" href="classdpp_1_1async.html">async</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a1b8a635e0cbba12e750d0fb57497f866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor, moves the awaitable async object.  <a href="classdpp_1_1async.html#a1b8a635e0cbba12e750d0fb57497f866">More...</a><br /></td></tr>
+<tr class="separator:a1b8a635e0cbba12e750d0fb57497f866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c382ce9ce0062b160934c9c16be09d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1async.html">async</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#a8c382ce9ce0062b160934c9c16be09d3">operator=</a> (const <a class="el" href="classdpp_1_1async.html">async</a> &amp;)=delete</td></tr>
-<tr class="memdesc:a8c382ce9ce0062b160934c9c16be09d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment is disabled.  <a href="classdpp_1_1async.html#a8c382ce9ce0062b160934c9c16be09d3">More...</a><br /></td></tr>
+<tr class="memdesc:a8c382ce9ce0062b160934c9c16be09d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator is disabled.  <a href="classdpp_1_1async.html#a8c382ce9ce0062b160934c9c16be09d3">More...</a><br /></td></tr>
 <tr class="separator:a8c382ce9ce0062b160934c9c16be09d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0ed0b75c888274ec2b2414b3289f7ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1async.html">async</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#aa0ed0b75c888274ec2b2414b3289f7ba">operator=</a> (<a class="el" href="classdpp_1_1async.html">async</a> &amp;&amp;other) noexcept=default</td></tr>
-<tr class="memdesc:aa0ed0b75c888274ec2b2414b3289f7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="classdpp_1_1async.html#aa0ed0b75c888274ec2b2414b3289f7ba">More...</a><br /></td></tr>
-<tr class="separator:aa0ed0b75c888274ec2b2414b3289f7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac0eda40dd2b0fb1a59e971cb306af2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#aac0eda40dd2b0fb1a59e971cb306af2e">await_ready</a> () const noexcept</td></tr>
-<tr class="memdesc:aac0eda40dd2b0fb1a59e971cb306af2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether or not co_await-ing this would suspend the caller, i.e. if we have the result or not.  <a href="classdpp_1_1async.html#aac0eda40dd2b0fb1a59e971cb306af2e">More...</a><br /></td></tr>
-<tr class="separator:aac0eda40dd2b0fb1a59e971cb306af2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5f01ad842b1939dea83cb73829f588b"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#ad5f01ad842b1939dea83cb73829f588b">operator co_await</a> () &amp;noexcept</td></tr>
-<tr class="memdesc:ad5f01ad842b1939dea83cb73829f588b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend the caller until the request completes.  <a href="classdpp_1_1async.html#ad5f01ad842b1939dea83cb73829f588b">More...</a><br /></td></tr>
-<tr class="separator:ad5f01ad842b1939dea83cb73829f588b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a2d25431b7ef48a10a2e5872dc1ec0"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#ac2a2d25431b7ef48a10a2e5872dc1ec0">operator co_await</a> () const &amp;noexcept</td></tr>
-<tr class="memdesc:ac2a2d25431b7ef48a10a2e5872dc1ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend the caller until the request completes.  <a href="classdpp_1_1async.html#ac2a2d25431b7ef48a10a2e5872dc1ec0">More...</a><br /></td></tr>
-<tr class="separator:ac2a2d25431b7ef48a10a2e5872dc1ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d032bf257e06c14745d70fa9076d68"><td class="memItemLeft" align="right" valign="top">auto &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#ac8d032bf257e06c14745d70fa9076d68">operator co_await</a> () &amp;&amp;noexcept</td></tr>
-<tr class="memdesc:ac8d032bf257e06c14745d70fa9076d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend the caller until the request completes.  <a href="classdpp_1_1async.html#ac8d032bf257e06c14745d70fa9076d68">More...</a><br /></td></tr>
-<tr class="separator:ac8d032bf257e06c14745d70fa9076d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347ad32214c7142958e3718165de1af5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1async.html">async</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#a347ad32214c7142958e3718165de1af5">operator=</a> (<a class="el" href="classdpp_1_1async.html">async</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a347ad32214c7142958e3718165de1af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator, moves the awaitable async object.  <a href="classdpp_1_1async.html#a347ad32214c7142958e3718165de1af5">More...</a><br /></td></tr>
+<tr class="separator:a347ad32214c7142958e3718165de1af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae89c11b1a858c061facb6311b2ec45f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#aae89c11b1a858c061facb6311b2ec45f">~async</a> ()</td></tr>
+<tr class="memdesc:aae89c11b1a858c061facb6311b2ec45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor, signals to the callback that the async object is gone and shouldn't be notified of the result.  <a href="classdpp_1_1async.html#aae89c11b1a858c061facb6311b2ec45f">More...</a><br /></td></tr>
+<tr class="separator:aae89c11b1a858c061facb6311b2ec45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8ac296160fcb2a4f9c9b17f05c19d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html#a2e8ac296160fcb2a4f9c9b17f05c19d0">if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime</a> ()</td></tr>
+<tr class="memdesc:a2e8ac296160fcb2a4f9c9b17f05c19d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Title :)  <a href="classdpp_1_1awaitable.html#a2e8ac296160fcb2a4f9c9b17f05c19d0">More...</a><br /></td></tr>
+<tr class="separator:a2e8ac296160fcb2a4f9c9b17f05c19d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a9d38341cd3290adf06dabf74fc86e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html#af5a9d38341cd3290adf06dabf74fc86e">valid</a> () const noexcept</td></tr>
+<tr class="memdesc:af5a9d38341cd3290adf06dabf74fc86e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether this awaitable refers to a valid promise.  <a href="classdpp_1_1awaitable.html#af5a9d38341cd3290adf06dabf74fc86e">More...</a><br /></td></tr>
+<tr class="separator:af5a9d38341cd3290adf06dabf74fc86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e16ffda1db2dcc811334a2ba0c59be3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html#a1e16ffda1db2dcc811334a2ba0c59be3">await_ready</a> () const</td></tr>
+<tr class="memdesc:a1e16ffda1db2dcc811334a2ba0c59be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether or not co_await-ing this would suspend the caller, i.e. if we have the result or not.  <a href="classdpp_1_1awaitable.html#a1e16ffda1db2dcc811334a2ba0c59be3">More...</a><br /></td></tr>
+<tr class="separator:a1e16ffda1db2dcc811334a2ba0c59be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae532f5a8ec60af0b49e7c02780f36f0d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__awaitable.html#ae532f5a8ec60af0b49e7c02780f36f0d">sync_wait</a> ()</td></tr>
+<tr class="memdesc:ae532f5a8ec60af0b49e7c02780f36f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks this thread and waits for the awaitable to finish.  <a href="classdpp_1_1basic__awaitable.html#ae532f5a8ec60af0b49e7c02780f36f0d">More...</a><br /></td></tr>
+<tr class="separator:ae532f5a8ec60af0b49e7c02780f36f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c9ff53eb87f550aaba04ab7d92c183"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__awaitable.html#a44c9ff53eb87f550aaba04ab7d92c183">sync_wait_for</a> (const std::chrono::duration&lt; Rep, Period &gt; &amp;duration)</td></tr>
+<tr class="memdesc:a44c9ff53eb87f550aaba04ab7d92c183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks this thread and waits for the awaitable to finish.  <a href="classdpp_1_1basic__awaitable.html#a44c9ff53eb87f550aaba04ab7d92c183">More...</a><br /></td></tr>
+<tr class="separator:a44c9ff53eb87f550aaba04ab7d92c183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fe143781a89b19052b6e4d35d30ffe"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__awaitable.html#a39fe143781a89b19052b6e4d35d30ffe">sync_wait_until</a> (const std::chrono::time_point&lt; Clock, Duration &gt; &amp;time)</td></tr>
+<tr class="memdesc:a39fe143781a89b19052b6e4d35d30ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks this thread and waits for the awaitable to finish.  <a href="classdpp_1_1basic__awaitable.html#a39fe143781a89b19052b6e4d35d30ffe">More...</a><br /></td></tr>
+<tr class="separator:a39fe143781a89b19052b6e4d35d30ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa0a1550bb11ddf526579d1c10ab9a793"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1async.html#aa0a1550bb11ddf526579d1c10ab9a793">detail::async::async_base&lt; R &gt;</a></td></tr>
-<tr class="memdesc:aa0a1550bb11ddf526579d1c10ab9a793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal use only base class. It serves to prevent await_suspend and await_resume from being used directly.  <a href="classdpp_1_1async.html#aa0a1550bb11ddf526579d1c10ab9a793">More...</a><br /></td></tr>
-<tr class="separator:aa0a1550bb11ddf526579d1c10ab9a793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a9419b84ca1372b18abc65303f6055826"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html#a9419b84ca1372b18abc65303f6055826">shared_state</a> = detail::promise::promise_base&lt; R &gt;</td></tr>
+<tr class="separator:a9419b84ca1372b18abc65303f6055826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187e3c1460de31c7278c7593790684cf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html#a187e3c1460de31c7278c7593790684cf">state_flags</a> = detail::promise::state_flags</td></tr>
+<tr class="separator:a187e3c1460de31c7278c7593790684cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7d8e184c4b06848b3e46c780a8bfa5a2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html#a7d8e184c4b06848b3e46c780a8bfa5a2">abandon</a> ()</td></tr>
+<tr class="memdesc:a7d8e184c4b06848b3e46c780a8bfa5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abandons the promise.  <a href="classdpp_1_1awaitable.html#a7d8e184c4b06848b3e46c780a8bfa5a2">More...</a><br /></td></tr>
+<tr class="separator:a7d8e184c4b06848b3e46c780a8bfa5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad920651cfc75f83e7977a8dcd6f32a85"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__awaitable.html#ad920651cfc75f83e7977a8dcd6f32a85">sync_wait_impl</a> (auto &amp;&amp;do_wait)</td></tr>
+<tr class="memdesc:ad920651cfc75f83e7977a8dcd6f32a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation for sync_wait. This is code used by sync_wait, sync_wait_for, sync_wait_until.  <a href="classdpp_1_1basic__awaitable.html#ad920651cfc75f83e7977a8dcd6f32a85">More...</a><br /></td></tr>
+<tr class="separator:ad920651cfc75f83e7977a8dcd6f32a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ada827bdde416f47b2164d245b0bae838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1awaitable.html#a9419b84ca1372b18abc65303f6055826">shared_state</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html#ada827bdde416f47b2164d245b0bae838">state_ptr</a></td></tr>
+<tr class="memdesc:ada827bdde416f47b2164d245b0bae838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-owning pointer to the promise, which must be kept alive for the entire lifetime of the awaitable.  <a href="classdpp_1_1awaitable.html#ada827bdde416f47b2164d245b0bae838">More...</a><br /></td></tr>
+<tr class="separator:ada827bdde416f47b2164d245b0bae838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename R&gt;<br />
@@ -212,9 +233,53 @@ template&lt;typename R &gt; </div>
 
 </div>
 </div>
+<a id="a9419b84ca1372b18abc65303f6055826" name="a9419b84ca1372b18abc65303f6055826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9419b84ca1372b18abc65303f6055826">&#9670;&nbsp;</a></span>shared_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classdpp_1_1awaitable.html">dpp::awaitable</a>&lt; R  &gt;::<a class="el" href="classdpp_1_1awaitable.html#a9419b84ca1372b18abc65303f6055826">shared_state</a> =  detail::promise::promise_base&lt;R &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a187e3c1460de31c7278c7593790684cf" name="a187e3c1460de31c7278c7593790684cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187e3c1460de31c7278c7593790684cf">&#9670;&nbsp;</a></span>state_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classdpp_1_1awaitable.html">dpp::awaitable</a>&lt; R  &gt;::<a class="el" href="classdpp_1_1awaitable.html#a187e3c1460de31c7278c7593790684cf">state_flags</a> =  detail::promise::state_flags</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aacfe00bd5adfcdace79eaceb929e2b31" name="aacfe00bd5adfcdace79eaceb929e2b31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacfe00bd5adfcdace79eaceb929e2b31">&#9670;&nbsp;</a></span>async() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aacfe00bd5adfcdace79eaceb929e2b31">&#9670;&nbsp;</a></span>async() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,7 +335,7 @@ template&lt;typename Obj , typename Fun , typename... Args&gt; </div>
 </div>
 </div>
 <a id="a5d38b4712ab7f2d4b9dae3ce44377029" name="a5d38b4712ab7f2d4b9dae3ce44377029"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d38b4712ab7f2d4b9dae3ce44377029">&#9670;&nbsp;</a></span>async() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d38b4712ab7f2d4b9dae3ce44377029">&#9670;&nbsp;</a></span>async() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,8 +383,8 @@ template&lt;typename Fun , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="af82d13edfeb2f40977306ff5a6674546" name="af82d13edfeb2f40977306ff5a6674546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af82d13edfeb2f40977306ff5a6674546">&#9670;&nbsp;</a></span>async() <span class="overload">[3/5]</span></h2>
+<a id="a1d098f7733f9890192a480a5490553c0" name="a1d098f7733f9890192a480a5490553c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d098f7733f9890192a480a5490553c0">&#9670;&nbsp;</a></span>async() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,66 +397,24 @@ template&lt;typename R &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::<a class="el" href="classdpp_1_1async.html">async</a> </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdpp_1_1async.html">async</a>&lt; R &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-<p>Construct an empty async. Using <code>co_await</code> on an empty async is undefined behavior. </p>
-
-</div>
-</div>
-<a id="aae89c11b1a858c061facb6311b2ec45f" name="aae89c11b1a858c061facb6311b2ec45f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae89c11b1a858c061facb6311b2ec45f">&#9670;&nbsp;</a></span>~async()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename R &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::~<a class="el" href="classdpp_1_1async.html">async</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destructor. If any callback is pending it will be aborted. </p>
-
-</div>
-</div>
-<a id="a7b34045e700d1cfa35c9de00b8531530" name="a7b34045e700d1cfa35c9de00b8531530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b34045e700d1cfa35c9de00b8531530">&#9670;&nbsp;</a></span>async() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename R &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::<a class="el" href="classdpp_1_1async.html">async</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdpp_1_1async.html">async</a>&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 <p>Copy constructor is disabled. </p>
 
 </div>
 </div>
-<a id="a8c9fa6c5067e90541eafd995588459de" name="a8c9fa6c5067e90541eafd995588459de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c9fa6c5067e90541eafd995588459de">&#9670;&nbsp;</a></span>async() <span class="overload">[5/5]</span></h2>
+<a id="a1b8a635e0cbba12e750d0fb57497f866" name="a1b8a635e0cbba12e750d0fb57497f866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8a635e0cbba12e750d0fb57497f866">&#9670;&nbsp;</a></span>async() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,32 +428,23 @@ template&lt;typename R &gt; </div>
           <td class="memname"><a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::<a class="el" href="classdpp_1_1async.html">async</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdpp_1_1async.html">async</a>&lt; R &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Move constructor. </p>
-<p >NOTE: Despite being marked noexcept, this function uses std::lock_guard which may throw. The implementation assumes this can never happen, hence noexcept. Report it if it does, as that would be a bug.</p>
-<dl class="section remark"><dt>Remarks</dt><dd>Using the moved-from async after this function is undefined behavior. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>The async object to move the data from. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Move constructor, moves the awaitable async object. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aac0eda40dd2b0fb1a59e971cb306af2e" name="aac0eda40dd2b0fb1a59e971cb306af2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac0eda40dd2b0fb1a59e971cb306af2e">&#9670;&nbsp;</a></span>await_ready()</h2>
+<a id="aae89c11b1a858c061facb6311b2ec45f" name="aae89c11b1a858c061facb6311b2ec45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae89c11b1a858c061facb6311b2ec45f">&#9670;&nbsp;</a></span>~async()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,116 +455,105 @@ template&lt;typename R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::await_ready </td>
+          <td class="memname"><a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::~<a class="el" href="classdpp_1_1async.html">async</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor, signals to the callback that the async object is gone and shouldn't be notified of the result. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7d8e184c4b06848b3e46c780a8bfa5a2" name="a7d8e184c4b06848b3e46c780a8bfa5a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d8e184c4b06848b3e46c780a8bfa5a2">&#9670;&nbsp;</a></span>abandon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classdpp_1_1awaitable.html">dpp::awaitable</a>&lt; R  &gt;::abandon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Abandons the promise. </p>
+<p >Set the promise's state to broken and unlinks this awaitable.</p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t Flags previously held before setting them to broken </dd></dl>
+
+</div>
+</div>
+<a id="a1e16ffda1db2dcc811334a2ba0c59be3" name="a1e16ffda1db2dcc811334a2ba0c59be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e16ffda1db2dcc811334a2ba0c59be3">&#9670;&nbsp;</a></span>await_ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classdpp_1_1awaitable.html">dpp::awaitable</a>&lt; R  &gt;::await_ready</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Check whether or not co_await-ing this would suspend the caller, i.e. if we have the result or not. </p>
-<dl class="section return"><dt>Returns</dt><dd>bool Whether we already have the result of the API call or not </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Whether we already have the result or not </dd></dl>
 
 </div>
 </div>
-<a id="ac8d032bf257e06c14745d70fa9076d68" name="ac8d032bf257e06c14745d70fa9076d68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8d032bf257e06c14745d70fa9076d68">&#9670;&nbsp;</a></span>operator co_await() <span class="overload">[1/3]</span></h2>
+<a id="a2e8ac296160fcb2a4f9c9b17f05c19d0" name="a2e8ac296160fcb2a4f9c9b17f05c19d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8ac296160fcb2a4f9c9b17f05c19d0">&#9670;&nbsp;</a></span>if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto &amp;&amp; <a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::operator co_await </td>
+          <td class="memname">void <a class="el" href="classdpp_1_1awaitable.html">dpp::awaitable</a>&lt; R  &gt;::if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> &amp;&amp;</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Suspend the caller until the request completes. </p>
-<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as an rvalue reference. </dd></dl>
+<p>Title :) </p>
+<p >We use this in the destructor </p>
 
 </div>
 </div>
-<a id="ad5f01ad842b1939dea83cb73829f588b" name="ad5f01ad842b1939dea83cb73829f588b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5f01ad842b1939dea83cb73829f588b">&#9670;&nbsp;</a></span>operator co_await() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename R &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto &amp; <a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::operator co_await </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> &amp;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Suspend the caller until the request completes. </p>
-<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as a reference. </dd></dl>
-
-</div>
-</div>
-<a id="ac2a2d25431b7ef48a10a2e5872dc1ec0" name="ac2a2d25431b7ef48a10a2e5872dc1ec0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2a2d25431b7ef48a10a2e5872dc1ec0">&#9670;&nbsp;</a></span>operator co_await() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename R &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const auto &amp; <a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::operator co_await </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const &amp;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Suspend the caller until the request completes. </p>
-<dl class="section return"><dt>Returns</dt><dd>On resumption, this expression evaluates to the result object of type R, as a const reference. </dd></dl>
-
-</div>
-</div>
-<a id="aa0ed0b75c888274ec2b2414b3289f7ba" name="aa0ed0b75c888274ec2b2414b3289f7ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0ed0b75c888274ec2b2414b3289f7ba">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a347ad32214c7142958e3718165de1af5" name="a347ad32214c7142958e3718165de1af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a347ad32214c7142958e3718165de1af5">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,26 +567,18 @@ template&lt;typename R &gt; </div>
           <td class="memname"><a class="el" href="classdpp_1_1async.html">async</a> &amp; <a class="el" href="classdpp_1_1async.html">dpp::async</a>&lt; R &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdpp_1_1async.html">async</a>&lt; R &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Move assignment operator. </p>
-<p >NOTE: Despite being marked noexcept, this function uses std::lock_guard which may throw. The implementation assumes this can never happen, hence noexcept. Report it if it does, as that would be a bug.</p>
-<dl class="section remark"><dt>Remarks</dt><dd>Using the moved-from async after this function is undefined behavior. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>The async object to move the data from </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Move assignment operator, moves the awaitable async object. </p>
 
 </div>
 </div>
@@ -613,36 +608,207 @@ template&lt;typename R &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Copy assignment is disabled. </p>
+<p>Copy assignment operator is disabled. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="aa0a1550bb11ddf526579d1c10ab9a793" name="aa0a1550bb11ddf526579d1c10ab9a793"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a1550bb11ddf526579d1c10ab9a793">&#9670;&nbsp;</a></span>detail::async::async_base&lt; R &gt;</h2>
+<a id="ae532f5a8ec60af0b49e7c02780f36f0d" name="ae532f5a8ec60af0b49e7c02780f36f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae532f5a8ec60af0b49e7c02780f36f0d">&#9670;&nbsp;</a></span>sync_wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classdpp_1_1detail_1_1async_1_1async__base.html">detail::async::async_base</a>&lt; R &gt;</td>
+          <td class="memname">auto <a class="el" href="classdpp_1_1basic__awaitable.html">dpp::basic_awaitable</a>&lt; <a class="el" href="classdpp_1_1awaitable.html">awaitable</a>&lt; R &gt;  &gt;::sync_wait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Internal use only base class. It serves to prevent await_suspend and await_resume from being used directly. </p>
-<dl class="section warning"><dt>Warning</dt><dd>For internal use only, do not use. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>operator co_await() </dd></dl>
+<p>Blocks this thread and waits for the awaitable to finish. </p>
+<dl class="section attention"><dt>Attention</dt><dd>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </dd>
+<dd>
+If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </dd></dl>
+
+</div>
+</div>
+<a id="a44c9ff53eb87f550aaba04ab7d92c183" name="a44c9ff53eb87f550aaba04ab7d92c183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c9ff53eb87f550aaba04ab7d92c183">&#9670;&nbsp;</a></span>sync_wait_for()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classdpp_1_1basic__awaitable.html">dpp::basic_awaitable</a>&lt; <a class="el" href="classdpp_1_1awaitable.html">awaitable</a>&lt; R &gt;  &gt;::sync_wait_for </td>
+          <td>(</td>
+          <td class="paramtype">const std::chrono::duration&lt; Rep, Period &gt; &amp;&#160;</td>
+          <td class="paramname"><em>duration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Blocks this thread and waits for the awaitable to finish. </p>
+<dl class="section attention"><dt>Attention</dt><dd>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">duration</td><td>Maximum duration to wait for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </dd>
+<dd>
+If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </dd></dl>
+
+</div>
+</div>
+<a id="ad920651cfc75f83e7977a8dcd6f32a85" name="ad920651cfc75f83e7977a8dcd6f32a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad920651cfc75f83e7977a8dcd6f32a85">&#9670;&nbsp;</a></span>sync_wait_impl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classdpp_1_1basic__awaitable.html">dpp::basic_awaitable</a>&lt; <a class="el" href="classdpp_1_1awaitable.html">awaitable</a>&lt; R &gt;  &gt;::sync_wait_impl </td>
+          <td>(</td>
+          <td class="paramtype">auto &amp;&amp;&#160;</td>
+          <td class="paramname"><em>do_wait</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementation for sync_wait. This is code used by sync_wait, sync_wait_for, sync_wait_until. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Timed</td><td>Whether the wait function times out or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">do_wait</td><td>Function to do the actual wait on the cv </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </dd>
+<dd>
+If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </dd></dl>
+
+</div>
+</div>
+<a id="a39fe143781a89b19052b6e4d35d30ffe" name="a39fe143781a89b19052b6e4d35d30ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fe143781a89b19052b6e4d35d30ffe">&#9670;&nbsp;</a></span>sync_wait_until()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classdpp_1_1basic__awaitable.html">dpp::basic_awaitable</a>&lt; <a class="el" href="classdpp_1_1awaitable.html">awaitable</a>&lt; R &gt;  &gt;::sync_wait_until </td>
+          <td>(</td>
+          <td class="paramtype">const std::chrono::time_point&lt; Clock, Duration &gt; &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Blocks this thread and waits for the awaitable to finish. </p>
+<dl class="section attention"><dt>Attention</dt><dd>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>Maximum time point to wait for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </dd>
+<dd>
+If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </dd></dl>
+
+</div>
+</div>
+<a id="af5a9d38341cd3290adf06dabf74fc86e" name="af5a9d38341cd3290adf06dabf74fc86e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a9d38341cd3290adf06dabf74fc86e">&#9670;&nbsp;</a></span>valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classdpp_1_1awaitable.html">dpp::awaitable</a>&lt; R  &gt;::valid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check whether this awaitable refers to a valid promise. </p>
+<dl class="section return"><dt>Returns</dt><dd>bool Whether this awaitable refers to a valid promise or not </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ada827bdde416f47b2164d245b0bae838" name="ada827bdde416f47b2164d245b0bae838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada827bdde416f47b2164d245b0bae838">&#9670;&nbsp;</a></span>state_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1awaitable.html#a9419b84ca1372b18abc65303f6055826">shared_state</a>* <a class="el" href="classdpp_1_1awaitable.html">dpp::awaitable</a>&lt; R  &gt;::state_ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Non-owning pointer to the promise, which must be kept alive for the entire lifetime of the awaitable. </p>
 
 </div>
 </div>

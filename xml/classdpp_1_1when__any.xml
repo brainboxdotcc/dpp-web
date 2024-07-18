@@ -232,7 +232,7 @@
         <argsstring>()</argsstring>
         <name>~when_any</name>
         <briefdescription>
-<para>On destruction the <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> will try to call <ref refid="classdpp_1_1task_1a2787e1f8313004716ac12a78be8ed50d" kindref="member">dpp::task::cancel()</ref> cancel() on each of its awaitable if they have such a method. </para>
+<para>On destruction the <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> will try to call <ref refid="classdpp_1_1task_1a34273d4b33e3d3a54354ced1cce9ca4a" kindref="member">dpp::task::cancel()</ref> cancel() on each of its awaitable if they have such a method. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="note"><para>If you are looking to use a custom type with <ref refid="classdpp_1_1when__any" kindref="compound">when_any</ref> and want it to cancel on its destruction, make sure it has a cancel() method, which will trigger an await_resume() throwing a <ref refid="classdpp_1_1task__cancelled__exception" kindref="compound">dpp::task_cancelled_exception</ref>. This object will swallow the exception and return cleanly. Any other exception will be thrown back to the resumer. </para>

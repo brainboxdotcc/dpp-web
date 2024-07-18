@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespacedpp_1_1detail_1_1promise" kind="namespace" language="C++">
+    <compoundname>dpp::detail::promise</compoundname>
+    <innerclass refid="structdpp_1_1detail_1_1promise_1_1empty" prot="public">dpp::detail::promise::empty</innerclass>
+    <innerclass refid="classdpp_1_1detail_1_1promise_1_1promise__base" prot="public">dpp::detail::promise::promise_base</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacedpp_1_1detail_1_1promise_1a24e605d077b878cc41f1a218e223534c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>state_flags</name>
+        <enumvalue id="namespacedpp_1_1detail_1_1promise_1a24e605d077b878cc41f1a218e223534ca27450163ef2c3da5d3884700330b811e" prot="public">
+          <name>sf_none</name>
+          <initializer>= 0b0000000</initializer>
+          <briefdescription>
+<para>Promise is empty. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1promise_1a24e605d077b878cc41f1a218e223534ca8b1f6b4775b80626e40a148efe0d0c16" prot="public">
+          <name>sf_has_awaitable</name>
+          <initializer>= 0b00000001</initializer>
+          <briefdescription>
+<para>Promise has spawned an awaitable. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1promise_1a24e605d077b878cc41f1a218e223534ca4b0b29dd23a8fcd9d2d9d56b720350d3" prot="public">
+          <name>sf_awaited</name>
+          <initializer>= 0b00000010</initializer>
+          <briefdescription>
+<para>Promise is being awaited. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1promise_1a24e605d077b878cc41f1a218e223534cab01a5d668edd403f1d1ef95bc9a3fd50" prot="public">
+          <name>sf_ready</name>
+          <initializer>= 0b00000100</initializer>
+          <briefdescription>
+<para>Promise has a result. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1promise_1a24e605d077b878cc41f1a218e223534cadc30c405b3fc54025d33855ed889f001" prot="public">
+          <name>sf_done</name>
+          <initializer>= 0b00001000</initializer>
+          <briefdescription>
+<para>Promise has completed, no more results are expected. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1promise_1a24e605d077b878cc41f1a218e223534caf2e4b538012b2246a23c464ecaf0c640" prot="public">
+          <name>sf_broken</name>
+          <initializer>= 0b0010000</initializer>
+          <briefdescription>
+<para>Promise was broken - future or promise is gone. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>State of a promise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="54" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="54" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacedpp_1_1detail_1_1promise_1a5fd0e60be4c791b69232a7cb54567c1c" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::variant&lt; std::monostate, std::conditional_t&lt; std::is_void_v&lt; T &gt;, <ref refid="structdpp_1_1detail_1_1promise_1_1empty" kindref="compound">empty</ref>, T &gt;, std::exception_ptr &gt;</type>
+        <definition>using dpp::detail::promise::result_t = typedef std::variant&lt;std::monostate, std::conditional_t&lt;std::is_void_v&lt;T&gt;, empty, T&gt;, std::exception_ptr&gt;</definition>
+        <argsstring></argsstring>
+        <name>result_t</name>
+        <briefdescription>
+<para>Variant for the 3 conceptual values of a coroutine: </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="98" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedpp_1_1detail_1_1promise_1ac50045a98e93d5672ecd46cb4ec896a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dpp::detail::promise::spawn_sync_wait_job</definition>
+        <argsstring>(auto *awaitable, std::condition_variable &amp;cv, auto &amp;&amp;result)</argsstring>
+        <name>spawn_sync_wait_job</name>
+        <param>
+          <type>auto *</type>
+          <declname>awaitable</declname>
+        </param>
+        <param>
+          <type>std::condition_variable &amp;</type>
+          <declname>cv</declname>
+        </param>
+        <param>
+          <type>auto &amp;&amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="732" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="732" bodyend="746" declfile="include/dpp/coro/awaitable.h" declline="101" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/coro/awaitable.h" line="49" column="1"/>
+  </compounddef>
+</doxygen>

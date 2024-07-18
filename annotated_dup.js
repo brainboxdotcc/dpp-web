@@ -3,11 +3,9 @@ var annotated_dup =
     [ "dpp", "namespacedpp.html", [
       [ "detail", "namespacedpp_1_1detail.html", [
         [ "async", "namespacedpp_1_1detail_1_1async.html", [
-          [ "async_base", "classdpp_1_1detail_1_1async_1_1async__base.html", "classdpp_1_1detail_1_1async_1_1async__base" ],
-          [ "async_callback_data", "structdpp_1_1detail_1_1async_1_1async__callback__data.html", "structdpp_1_1detail_1_1async_1_1async__callback__data" ]
+          [ "callback", "structdpp_1_1detail_1_1async_1_1callback.html", "structdpp_1_1detail_1_1async_1_1callback" ]
         ] ],
         [ "coroutine", "namespacedpp_1_1detail_1_1coroutine.html", [
-          [ "coroutine_base", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base.html", "classdpp_1_1detail_1_1coroutine_1_1coroutine__base" ],
           [ "final_awaiter", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter.html", "structdpp_1_1detail_1_1coroutine_1_1final__awaiter" ],
           [ "promise_t", "structdpp_1_1detail_1_1coroutine_1_1promise__t.html", "structdpp_1_1detail_1_1coroutine_1_1promise__t" ],
           [ "promise_t< void >", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1coroutine_1_1promise__t_3_01void_01_4" ]
@@ -18,6 +16,10 @@ var annotated_dup =
         [ "job", "namespacedpp_1_1detail_1_1job.html", [
           [ "promise", "structdpp_1_1detail_1_1job_1_1promise.html", "structdpp_1_1detail_1_1job_1_1promise" ]
         ] ],
+        [ "promise", "namespacedpp_1_1detail_1_1promise.html", [
+          [ "empty", "structdpp_1_1detail_1_1promise_1_1empty.html", null ],
+          [ "promise_base", "classdpp_1_1detail_1_1promise_1_1promise__base.html", "classdpp_1_1detail_1_1promise_1_1promise__base" ]
+        ] ],
         [ "std_coroutine", "namespacedpp_1_1detail_1_1std__coroutine.html", [
           [ "coroutine_traits< dpp::coroutine< R >, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1coroutine_3_01_r_01_4_00_01_args_8_8_8_01_4" ],
           [ "coroutine_traits< dpp::job, Args... >", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4.html", "structdpp_1_1detail_1_1std__coroutine_1_1coroutine__traits_3_01dpp_1_1job_00_01_args_8_8_8_01_4" ],
@@ -27,15 +29,13 @@ var annotated_dup =
           [ "final_awaiter", "structdpp_1_1detail_1_1task_1_1final__awaiter.html", "structdpp_1_1detail_1_1task_1_1final__awaiter" ],
           [ "promise_base", "structdpp_1_1detail_1_1task_1_1promise__base.html", "structdpp_1_1detail_1_1task_1_1promise__base" ],
           [ "promise_t", "structdpp_1_1detail_1_1task_1_1promise__t.html", "structdpp_1_1detail_1_1task_1_1promise__t" ],
-          [ "promise_t< void >", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4" ],
-          [ "task_base", "classdpp_1_1detail_1_1task_1_1task__base.html", "classdpp_1_1detail_1_1task_1_1task__base" ]
+          [ "promise_t< void >", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4.html", "structdpp_1_1detail_1_1task_1_1promise__t_3_01void_01_4" ]
         ] ],
         [ "when_any", "namespacedpp_1_1detail_1_1when__any.html", [
           [ "arg_helper_s", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s" ],
           [ "arg_helper_s< dpp::event_router_t< T > >", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4.html", "structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4" ],
           [ "empty", "structdpp_1_1detail_1_1when__any_1_1empty.html", null ]
-        ] ],
-        [ "empty_tag_t", "structdpp_1_1detail_1_1empty__tag__t.html", null ]
+        ] ]
       ] ],
       [ "events", "namespacedpp_1_1events.html", [
         [ "automod_rule_create", "classdpp_1_1events_1_1automod__rule__create.html", "classdpp_1_1events_1_1automod__rule__create" ],
@@ -142,7 +142,11 @@ var annotated_dup =
       [ "automod_rule_delete_t", "structdpp_1_1automod__rule__delete__t.html", "structdpp_1_1automod__rule__delete__t" ],
       [ "automod_rule_execute_t", "structdpp_1_1automod__rule__execute__t.html", "structdpp_1_1automod__rule__execute__t" ],
       [ "automod_rule_update_t", "structdpp_1_1automod__rule__update__t.html", "structdpp_1_1automod__rule__update__t" ],
+      [ "awaitable", "classdpp_1_1awaitable.html", "classdpp_1_1awaitable" ],
+      [ "awaitable_dummy", "structdpp_1_1awaitable__dummy.html", "structdpp_1_1awaitable__dummy" ],
       [ "ban", "classdpp_1_1ban.html", "classdpp_1_1ban" ],
+      [ "basic_awaitable", "classdpp_1_1basic__awaitable.html", "classdpp_1_1basic__awaitable" ],
+      [ "basic_promise", "classdpp_1_1basic__promise.html", "classdpp_1_1basic__promise" ],
       [ "bignumber", "classdpp_1_1bignumber.html", "classdpp_1_1bignumber" ],
       [ "bucket_t", "structdpp_1_1bucket__t.html", "structdpp_1_1bucket__t" ],
       [ "button_click_t", "structdpp_1_1button__click__t.html", "structdpp_1_1button__click__t" ],
@@ -271,6 +275,7 @@ var annotated_dup =
       [ "message_reaction_remove_emoji_t", "structdpp_1_1message__reaction__remove__emoji__t.html", "structdpp_1_1message__reaction__remove__emoji__t" ],
       [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
       [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
+      [ "moveable_promise", "classdpp_1_1moveable__promise.html", "classdpp_1_1moveable__promise" ],
       [ "moving_averager", "structdpp_1_1moving__averager.html", "structdpp_1_1moving__averager" ],
       [ "multipart_content", "structdpp_1_1multipart__content.html", "structdpp_1_1multipart__content" ],
       [ "onboarding", "structdpp_1_1onboarding.html", "structdpp_1_1onboarding" ],

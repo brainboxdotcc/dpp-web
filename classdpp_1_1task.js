@@ -1,17 +1,26 @@
 var classdpp_1_1task =
 [
-    [ "result_type", "classdpp_1_1task.html#a3f2ba4f6b7968448ef9a244affa76d56", null ],
+    [ "result_type", "classdpp_1_1task.html#a41984e48e9df89627f052c27eb1a7be6", null ],
+    [ "shared_state", "classdpp_1_1task.html#a9419b84ca1372b18abc65303f6055826", null ],
+    [ "task", "classdpp_1_1task.html#aafa052599f44c86a5979ab64a472bd70", null ],
     [ "task", "classdpp_1_1task.html#abaeb36ad1e3c3d0e4ce53d46a47d61b5", null ],
     [ "task", "classdpp_1_1task.html#a04a2870d55bb2fb942ae1e9e072efe9f", null ],
     [ "task", "classdpp_1_1task.html#aa074990f5d5c24b11787d0fc7d385202", null ],
     [ "~task", "classdpp_1_1task.html#a23ee3394a7c7eee5d8c2fee6f829cb9e", null ],
-    [ "await_ready", "classdpp_1_1task.html#a3b11a1b3ed125c88ccfa24722fb2f3eb", null ],
-    [ "cancel", "classdpp_1_1task.html#a2787e1f8313004716ac12a78be8ed50d", null ],
+    [ "abandon", "classdpp_1_1task.html#a7d8e184c4b06848b3e46c780a8bfa5a2", null ],
+    [ "await_ready", "classdpp_1_1task.html#a1e16ffda1db2dcc811334a2ba0c59be3", null ],
+    [ "cancel", "classdpp_1_1task.html#a50e182306695d5775e93bb033b58f729", null ],
+    [ "cancel", "classdpp_1_1task.html#a34273d4b33e3d3a54354ced1cce9ca4a", null ],
+    [ "cleanup", "classdpp_1_1task.html#a5335593eaebfc5be94fd8d765b373b15", null ],
     [ "done", "classdpp_1_1task.html#ac030b9e766ceb3b427e88e926b92b81b", null ],
-    [ "operator co_await", "classdpp_1_1task.html#a22cf3d2c69226edfbb1585072ec25086", null ],
-    [ "operator co_await", "classdpp_1_1task.html#a007da70a7593ce74603ae96af1c381c7", null ],
-    [ "operator co_await", "classdpp_1_1task.html#aa410dbfe84a7281dafbe563b1d224123", null ],
+    [ "if_this_causes_an_invalid_read_your_promise_was_destroyed_before_your_awaitable____check_your_promise_lifetime", "classdpp_1_1task.html#a2e8ac296160fcb2a4f9c9b17f05c19d0", null ],
     [ "operator=", "classdpp_1_1task.html#a1f532c5ceff4fadc0fa9174e80ff183c", null ],
     [ "operator=", "classdpp_1_1task.html#af56fcd28c94944982bd585dd44bef472", null ],
-    [ "detail::task::task_base< R >", "classdpp_1_1task.html#ad0f512b321bc4024c16624781a67d578", null ]
+    [ "sync_wait", "classdpp_1_1task.html#ae532f5a8ec60af0b49e7c02780f36f0d", null ],
+    [ "sync_wait_for", "classdpp_1_1task.html#a44c9ff53eb87f550aaba04ab7d92c183", null ],
+    [ "sync_wait_impl", "classdpp_1_1task.html#ad920651cfc75f83e7977a8dcd6f32a85", null ],
+    [ "sync_wait_until", "classdpp_1_1task.html#a39fe143781a89b19052b6e4d35d30ffe", null ],
+    [ "valid", "classdpp_1_1task.html#af5a9d38341cd3290adf06dabf74fc86e", null ],
+    [ "detail::task::promise_t< R >", "classdpp_1_1task.html#a8a53f70e9a868e4a80cc1d9f629de1c1", null ],
+    [ "state_ptr", "classdpp_1_1task.html#ada827bdde416f47b2164d245b0bae838", null ]
 ];

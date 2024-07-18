@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1basic__awaitable" kind="class" language="C++" prot="public">
+    <compoundname>dpp::basic_awaitable</compoundname>
+    <includes local="no">awaitable.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Derived</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1basic__awaitable_1ad920651cfc75f83e7977a8dcd6f32a85" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>Timed</declname>
+            <defname>Timed</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto dpp::basic_awaitable&lt; Derived &gt;::sync_wait_impl</definition>
+        <argsstring>(auto &amp;&amp;do_wait)</argsstring>
+        <name>sync_wait_impl</name>
+        <param>
+          <type>auto &amp;&amp;</type>
+          <declname>do_wait</declname>
+        </param>
+        <briefdescription>
+<para>Implementation for sync_wait. This is code used by sync_wait, sync_wait_for, sync_wait_until. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Timed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the wait function times out or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>do_wait</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to do the actual wait on the cv </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="117" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="117" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1basic__awaitable_1ae532f5a8ec60af0b49e7c02780f36f0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::basic_awaitable&lt; Derived &gt;::sync_wait</definition>
+        <argsstring>()</argsstring>
+        <name>sync_wait</name>
+        <briefdescription>
+<para>Blocks this thread and waits for the awaitable to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="152" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="152" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1basic__awaitable_1a44c9ff53eb87f550aaba04ab7d92c183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Rep</type>
+          </param>
+          <param>
+            <type>class Period</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto dpp::basic_awaitable&lt; Derived &gt;::sync_wait_for</definition>
+        <argsstring>(const std::chrono::duration&lt; Rep, Period &gt; &amp;duration)</argsstring>
+        <name>sync_wait_for</name>
+        <param>
+          <type>const std::chrono::duration&lt; Rep, Period &gt; &amp;</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Blocks this thread and waits for the awaitable to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum duration to wait for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="169" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="169" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1basic__awaitable_1a39fe143781a89b19052b6e4d35d30ffe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Clock</type>
+          </param>
+          <param>
+            <type>class Duration</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto dpp::basic_awaitable&lt; Derived &gt;::sync_wait_until</definition>
+        <argsstring>(const std::chrono::time_point&lt; Clock, Duration &gt; &amp;time)</argsstring>
+        <name>sync_wait_until</name>
+        <param>
+          <type>const std::chrono::time_point&lt; Clock, Duration &gt; &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Blocks this thread and waits for the awaitable to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>This will BLOCK THE THREAD. It is likely you want to use co_await instead. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum time point to wait for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If T is void, returns a boolean for which true means the awaitable completed, false means it timed out. </para>
+</simplesect>
+<simplesect kind="return"><para>If T is non-void, returns a std::optional&lt;T&gt; for which an absence of value means timed out. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="186" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="186" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>dpp::awaitable&lt; R &gt;</label>
+        <link refid="classdpp_1_1awaitable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; R &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::basic_awaitable&lt; awaitable&lt; R &gt; &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; awaitable&lt; R &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dpp::basic_awaitable&lt; awaitable&lt; T &gt; &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; awaitable&lt; T &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dpp::basic_awaitable&lt; coroutine&lt; R &gt; &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; coroutine&lt; R &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dpp::async&lt; R &gt;</label>
+        <link refid="classdpp_1_1async"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dpp::awaitable&lt; T &gt;</label>
+        <link refid="classdpp_1_1awaitable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dpp::basic_awaitable&lt; Derived &gt;</label>
+        <link refid="classdpp_1_1basic__awaitable"/>
+      </node>
+      <node id="9">
+        <label>dpp::coroutine&lt; R &gt;</label>
+        <link refid="classdpp_1_1coroutine"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dpp::task&lt; R &gt;</label>
+        <link refid="classdpp_1_1task"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/dpp/coro/awaitable.h" line="106" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="106" bodyend="193"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1basic__awaitable_1ae532f5a8ec60af0b49e7c02780f36f0d" prot="public" virt="non-virtual"><scope>dpp::basic_awaitable</scope><name>sync_wait</name></member>
+      <member refid="classdpp_1_1basic__awaitable_1a44c9ff53eb87f550aaba04ab7d92c183" prot="public" virt="non-virtual"><scope>dpp::basic_awaitable</scope><name>sync_wait_for</name></member>
+      <member refid="classdpp_1_1basic__awaitable_1ad920651cfc75f83e7977a8dcd6f32a85" prot="protected" virt="non-virtual"><scope>dpp::basic_awaitable</scope><name>sync_wait_impl</name></member>
+      <member refid="classdpp_1_1basic__awaitable_1a39fe143781a89b19052b6e4d35d30ffe" prot="public" virt="non-virtual"><scope>dpp::basic_awaitable</scope><name>sync_wait_until</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

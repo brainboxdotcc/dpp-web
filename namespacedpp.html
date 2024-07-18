@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('namespacedpp.html',''); initResizable(
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#concepts">Concepts</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -221,8 +222,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1automod__rule__update__t.html">automod_rule_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update automod rule.  <a href="structdpp_1_1automod__rule__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1awaitable.html">awaitable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic awaitable class, represents a future value that can be co_await-ed on.  <a href="classdpp_1_1awaitable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1awaitable__dummy.html">awaitable_dummy</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ban.html">ban</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ban class represents a ban on a guild.  <a href="classdpp_1_1ban.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__awaitable.html">basic_awaitable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__promise.html">basic_promise</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic promise class, represents the owning potion of an asynchronous value.  <a href="classdpp_1_1basic__promise.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1bignumber.html">bignumber</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An arbitrary length integer number. Officially, the Discord documentation says that permission values can be any arbitrary number of digits. At time of writing there are only 50 bits of permissions, but this is set to grow larger and potentially past 64 bits. They will continue to send this data as a huge single integer at that point, because this is obviously sensible. /s.  <a href="classdpp_1_1bignumber.html#details">More...</a><br /></td></tr>
@@ -606,6 +617,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__update__t.html">message_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message update.  <a href="structdpp_1_1message__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html">moveable_promise</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic promise class, represents the owning potion of an asynchronous value.  <a href="classdpp_1_1moveable__promise.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1moving__averager.html">moving_averager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1multipart__content.html">multipart_content</a></td></tr>
@@ -854,6 +868,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Experimental class to co_await on a bunch of awaitable objects, resuming when the first one completes. On completion, returns a <a class="el" href="classdpp_1_1when__any_1_1result.html">result</a> object that contains the index of the awaitable that finished first. A user can call <a class="el" href="classdpp_1_1when__any_1_1result.html#ade4152f18a2f3c48fddd69c5946fcdf9">result::index()</a> and <a class="el" href="classdpp_1_1when__any_1_1result.html#a17e2a5a81f2e8c7c399fef1e1fd2a1f1">result::get&lt;N&gt;()</a> on the result object to get the result, similar to std::variant.  <a href="classdpp_1_1when__any.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptdpp_1_1awaitable__type.html">awaitable_type</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept to check if a type can be used with co_await. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a710b32b577396ba92917d0578f0bedb6"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; std::monostate, std::string, int64_t, bool, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a710b32b577396ba92917d0578f0bedb6">command_value</a></td></tr>
@@ -909,6 +929,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a72a8ab3231965d0e361f305a7fe431f3"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const std::string &amp;, const <a class="el" href="namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1">parameter_list_t</a> &amp;, <a class="el" href="structdpp_1_1command__source.html">command_source</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">command_handler</a></td></tr>
 <tr class="memdesc:a72a8ab3231965d0e361f305a7fe431f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function definition for a command handler. Expects a command name string, and a list of command parameters.  <a href="namespacedpp.html#a72a8ab3231965d0e361f305a7fe431f3">More...</a><br /></td></tr>
 <tr class="separator:a72a8ab3231965d0e361f305a7fe431f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd398eef0974f7504e37176b97157dfe"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acd398eef0974f7504e37176b97157dfe"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acd398eef0974f7504e37176b97157dfe">promise</a> = <a class="el" href="classdpp_1_1moveable__promise.html">moveable_promise</a>&lt; T &gt;</td></tr>
+<tr class="separator:acd398eef0974f7504e37176b97157dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a022dce6b086ec4515384eaece59c84c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> = std::function&lt; void(const <a class="el" href="structdpp_1_1confirmation__callback__t.html">confirmation_callback_t</a> &amp;)&gt;</td></tr>
 <tr class="memdesc:a022dce6b086ec4515384eaece59c84c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function used as a callback for any REST based command.  <a href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">More...</a><br /></td></tr>
 <tr class="separator:a022dce6b086ec4515384eaece59c84c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3344,6 +3367,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A container of presences. </p>
+
+</div>
+</div>
+<a id="acd398eef0974f7504e37176b97157dfe" name="acd398eef0974f7504e37176b97157dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd398eef0974f7504e37176b97157dfe">&#9670;&nbsp;</a></span>promise</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedpp.html#acd398eef0974f7504e37176b97157dfe">dpp::promise</a> = typedef <a class="el" href="classdpp_1_1moveable__promise.html">moveable_promise</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

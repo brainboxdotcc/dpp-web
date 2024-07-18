@@ -30,7 +30,11 @@
     <innerclass refid="structdpp_1_1automod__rule__delete__t" prot="public">dpp::automod_rule_delete_t</innerclass>
     <innerclass refid="structdpp_1_1automod__rule__execute__t" prot="public">dpp::automod_rule_execute_t</innerclass>
     <innerclass refid="structdpp_1_1automod__rule__update__t" prot="public">dpp::automod_rule_update_t</innerclass>
+    <innerclass refid="classdpp_1_1awaitable" prot="public">dpp::awaitable</innerclass>
+    <innerclass refid="structdpp_1_1awaitable__dummy" prot="public">dpp::awaitable_dummy</innerclass>
     <innerclass refid="classdpp_1_1ban" prot="public">dpp::ban</innerclass>
+    <innerclass refid="classdpp_1_1basic__awaitable" prot="public">dpp::basic_awaitable</innerclass>
+    <innerclass refid="classdpp_1_1basic__promise" prot="public">dpp::basic_promise</innerclass>
     <innerclass refid="classdpp_1_1bignumber" prot="public">dpp::bignumber</innerclass>
     <innerclass refid="structdpp_1_1bucket__t" prot="public">dpp::bucket_t</innerclass>
     <innerclass refid="structdpp_1_1button__click__t" prot="public">dpp::button_click_t</innerclass>
@@ -159,6 +163,7 @@
     <innerclass refid="structdpp_1_1message__reaction__remove__emoji__t" prot="public">dpp::message_reaction_remove_emoji_t</innerclass>
     <innerclass refid="structdpp_1_1message__reaction__remove__t" prot="public">dpp::message_reaction_remove_t</innerclass>
     <innerclass refid="structdpp_1_1message__update__t" prot="public">dpp::message_update_t</innerclass>
+    <innerclass refid="classdpp_1_1moveable__promise" prot="public">dpp::moveable_promise</innerclass>
     <innerclass refid="structdpp_1_1moving__averager" prot="public">dpp::moving_averager</innerclass>
     <innerclass refid="structdpp_1_1multipart__content" prot="public">dpp::multipart_content</innerclass>
     <innerclass refid="structdpp_1_1onboarding" prot="public">dpp::onboarding</innerclass>
@@ -9547,6 +9552,24 @@
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="224" column="23" bodyfile="include/dpp/commandhandler.h" bodystart="224" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1acd398eef0974f7504e37176b97157dfe" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdpp_1_1moveable__promise" kindref="compound">moveable_promise</ref>&lt; T &gt;</type>
+        <definition>using dpp::promise = typedef moveable_promise&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>promise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/awaitable.h" line="655" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="655" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &amp;)&gt;</type>
         <definition>typedef std::function&lt; void(const confirmation_callback_t &amp;)&gt; dpp::command_completion_event_t</definition>
@@ -11003,7 +11026,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/async.h" line="524" column="1" declfile="include/dpp/coro/async.h" declline="524" declcolumn="1"/>
+        <location file="include/dpp/coro/async.h" line="185" column="1" declfile="include/dpp/coro/async.h" declline="185" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a702b8ec12c8abc77c264d5a6876ac62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -11022,7 +11045,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/coroutine.h" line="585" column="1"/>
+        <location file="include/dpp/coro/coroutine.h" line="393" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a4788a37ace2799b30444c02f55110b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -11041,7 +11064,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/task.h" line="780" column="1"/>
+        <location file="include/dpp/coro/task.h" line="433" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1adec042312c305da2b49380300bde130b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>

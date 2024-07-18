@@ -99,66 +99,17 @@ $(document).ready(function(){initNavTree('namespacedpp_1_1detail_1_1async.html',
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">dpp::detail::async Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1detail_1_1async_1_1async__base.html">async_base</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class of <a class="el" href="classdpp_1_1async.html" title="A co_await-able object handling an API call in parallel with the caller.">dpp::async</a>.  <a href="classdpp_1_1detail_1_1async_1_1async__base.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1async_1_1callback.html">callback</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared state of the async and its callback, to be used across threads.  <a href="structdpp_1_1detail_1_1async_1_1callback.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1detail_1_1async_1_1async__callback__data.html">async_callback_data</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the async and its callback.  <a href="structdpp_1_1detail_1_1async_1_1async__callback__data.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a7535e93a3c82431d3ff869d0cbb897bd"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp_1_1detail_1_1async.html#a7535e93a3c82431d3ff869d0cbb897bd">state_t</a> { <a class="el" href="namespacedpp_1_1detail_1_1async.html#a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9">sent</a>
-, <a class="el" href="namespacedpp_1_1detail_1_1async.html#a7535e93a3c82431d3ff869d0cbb897bdacb05cab65afefab8fd3831d92cfc68be">waiting</a>
-, <a class="el" href="namespacedpp_1_1detail_1_1async.html#a7535e93a3c82431d3ff869d0cbb897bda6b2ded51d81a4403d8a4bd25fa1e57ee">done</a>
-, <a class="el" href="namespacedpp_1_1detail_1_1async.html#a7535e93a3c82431d3ff869d0cbb897bda4930128e58930768b1c1c75026ebc649">dangling</a>
- }</td></tr>
-<tr class="memdesc:a7535e93a3c82431d3ff869d0cbb897bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the step an std::async is at.  <a href="namespacedpp_1_1detail_1_1async.html#a7535e93a3c82431d3ff869d0cbb897bd">More...</a><br /></td></tr>
-<tr class="separator:a7535e93a3c82431d3ff869d0cbb897bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a7535e93a3c82431d3ff869d0cbb897bd" name="a7535e93a3c82431d3ff869d0cbb897bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7535e93a3c82431d3ff869d0cbb897bd">&#9670;&nbsp;</a></span>state_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="namespacedpp_1_1detail_1_1async.html#a7535e93a3c82431d3ff869d0cbb897bd">dpp::detail::async::state_t</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Represents the step an std::async is at. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9" name="a7535e93a3c82431d3ff869d0cbb897bda789183b7e98646c11d5f0544c8f3c4c9"></a>sent&#160;</td><td class="fielddoc"><p >Request was sent but not co_await-ed. handle is nullptr, result_storage is not constructed. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bdacb05cab65afefab8fd3831d92cfc68be" name="a7535e93a3c82431d3ff869d0cbb897bdacb05cab65afefab8fd3831d92cfc68be"></a>waiting&#160;</td><td class="fielddoc"><p >Request was co_await-ed. handle is valid, result_storage is not constructed. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda6b2ded51d81a4403d8a4bd25fa1e57ee" name="a7535e93a3c82431d3ff869d0cbb897bda6b2ded51d81a4403d8a4bd25fa1e57ee"></a>done&#160;</td><td class="fielddoc"><p >Request was completed. handle is unknown, result_storage is valid. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7535e93a3c82431d3ff869d0cbb897bda4930128e58930768b1c1c75026ebc649" name="a7535e93a3c82431d3ff869d0cbb897bda4930128e58930768b1c1c75026ebc649"></a>dangling&#160;</td><td class="fielddoc"><p >Request was never co_await-ed. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 </div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">

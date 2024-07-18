@@ -1,8 +1,8 @@
 var structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter =
 [
-    [ "await_ready", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#ae596e70a6448d5df9699bd0783e9a5b2", null ],
-    [ "await_resume", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a91301c1789bb010eb02e9e973065b734", null ],
-    [ "await_suspend", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#adb8f5081099eab73ae38039c769e678b", null ],
-    [ "awaitable", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a7b736cf8304ba64062dbf372f70c9650", null ],
-    [ "promise", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#ae8bf858599cca6cb940560aba4b1df44", null ]
+    [ "await_ready", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a5ab772b4f9d350bacd97ff4f1735c995", null ],
+    [ "await_resume", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a6f13eee3023713febc9671eda380ef06", null ],
+    [ "await_suspend", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#aa0cace4b54601738842b09c475f0df79", null ],
+    [ "awaitable", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a9e267f181213ddac7ea4ffc33fc0da25", null ],
+    [ "promise", "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#ac419c3790a58676dcd322939f68b2707", null ]
 ];
