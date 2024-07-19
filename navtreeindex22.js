@@ -1,11 +1,12 @@
 var NAVTREEINDEX22 =
 {
+"functions_d.html":[11,3,0,3],
 "functions_e.html":[11,3,0,4],
 "functions_enum.html":[11,3,4],
 "functions_eval.html":[11,3,5],
 "functions_f.html":[11,3,0,5],
-"functions_func.html":[11,3,1,0],
 "functions_func.html":[11,3,1],
+"functions_func.html":[11,3,1,0],
 "functions_func_b.html":[11,3,1,1],
 "functions_func_c.html":[11,3,1,2],
 "functions_func_d.html":[11,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8711f028368cf6df76e56b687d675006":[9,0,0,321,1],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8b0e4c2c57f07363bb91decc933a4e16":[9,0,0,321,23],
 "namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8f105ca0d6043b7f6df8500393410d3e":[9,0,0,321,14],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8f54bfcfce55fa27ce8f3ea279af90f5":[9,0,0,321,15],
-"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3daa7c2370a5ff71b2c746c6f84e9fbec35":[9,0,0,321,43]
+"namespacedpp.html#a29a51ae6f6d959baee7d5e77d53d6c3da8f54bfcfce55fa27ce8f3ea279af90f5":[9,0,0,321,15]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"namespacedpp_1_1colors.html#aa47f825dac2af29c2091bc36c812bb36":[9,0,0,1,154],
 "namespacedpp_1_1colors.html#aa56584aaae9c3f680e66eb5d2a420dee":[9,0,0,1,439],
 "namespacedpp_1_1colors.html#aa57e21d597466fcdb71e08e1cef46413":[9,0,0,1,615],
 "namespacedpp_1_1colors.html#aa5b0dc44a3931ff07442773a8d263117":[9,0,0,1,206],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "namespacedpp_1_1detail_1_1async.html":[9,0,0,2,0],
 "namespacedpp_1_1detail_1_1coroutine.html":[9,0,0,2,1],
 "namespacedpp_1_1detail_1_1coroutine.html#a8277dc2e5b05c0232a9237b4a5894e0f":[9,0,0,2,1,3],
-"namespacedpp_1_1detail_1_1event__router.html":[9,0,0,2,2],
-"namespacedpp_1_1detail_1_1event__router.html#af9ce1f09309e4ce5bd9a1fa5efa6e252":[9,0,0,2,2,1]
+"namespacedpp_1_1detail_1_1event__router.html":[9,0,0,2,2]
 };

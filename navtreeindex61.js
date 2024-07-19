@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"structdpp_1_1guild__delete__t.html#a9803eab1c4eb3347b6aa58839987219d":[9,0,0,108,11],
 "structdpp_1_1guild__delete__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71":[9,0,0,108,12],
 "structdpp_1_1guild__delete__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71":[11,0,0,104,12],
 "structdpp_1_1guild__delete__t.html#aae35038ecb874c46e355fac3863615d0":[9,0,0,108,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "structdpp_1_1guild__role__create__t.html#a4645c2cc7dfe1def0b936d5726f7b8db":[9,0,0,117,9],
 "structdpp_1_1guild__role__create__t.html#a4d5c139c862c5ed02227b1e9ffc38095":[11,0,0,113,5],
 "structdpp_1_1guild__role__create__t.html#a4d5c139c862c5ed02227b1e9ffc38095":[9,0,0,117,5],
-"structdpp_1_1guild__role__create__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[11,0,0,113,0],
-"structdpp_1_1guild__role__create__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[9,0,0,117,0]
+"structdpp_1_1guild__role__create__t.html#a54af3a0990fe041d4f5e8ad897367f7f":[11,0,0,113,0]
 };
