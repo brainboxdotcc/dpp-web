@@ -107,22 +107,6 @@ $(document).ready(function(){initNavTree('install-void-xbps.html',''); initResiz
 <p >You will now be able to use D++ by including its library on the command line:</p>
 <div class="fragment"><div class="line">g++ mybot.cpp -o mybot -ldpp</div>
 </div><!-- fragment --><p ><dl class="section note"><dt>Note</dt><dd>Compiling your bot with a raw <code>g++</code> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <a class="el" href="buildcmake.html">Building a Discord Bot Using CMake (UNIX)</a> or if you have not yet created a token for your bot, <a class="el" href="creating-a-bot-application.html">Creating a Bot Token</a> - If you are having trouble setting up CMake, you can try <a href="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</a>.</dd></dl>
-</p>
-<p >To build D++ with coroutine support as an XBPS package, follow the steps below. Ensure that <a href="https://github.com/void-linux/void-packages?tab=readme-ov-file#quick-start">xbps-src is set up</a> beforehand:</p>
-<div class="fragment"><div class="line"># Inside the void-packages root folder</div>
-<div class="line">git checkout master &amp;&amp; git pull</div>
-<div class="line"># Modifies the configure arguments to include coroutine support (-DDPP_CORO=ON)</div>
-<div class="line">grep -q &#39;configure_args=.*-DDPP_CORO=ON&#39; srcpkgs/dpp/template || sed -i -e &#39;s/\&zwj;(configure_args=&quot;[^&quot;]*\&zwj;)&quot;/\1 -DDPP_CORO=ON&quot;/&#39; srcpkgs/dpp/template</div>
-<div class="line">./xbps-src -K pkg dpp</div>
-</div><!-- fragment --><p >Then as root: </p><div class="fragment"><div class="line"># Inside the void-packages root folder</div>
-<div class="line">xbps-install --repository hostdir/binpkgs dpp-devel</div>
-</div><!-- fragment --><p >This will do the following three things:</p><ul>
-<li>Update the void-packages repository to the latest commit on master</li>
-<li>Patch the template file of D++ to enable coroutine support</li>
-<li>Build an XBPS package for D++ and install it</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>Cloning the void-packages repository may take some time</dd></dl>
-<p><dl class="section warning"><dt>Warning</dt><dd>D++ Coroutines are a very new feature and are currently only supported by D++ on g++ 13, clang/LLVM 14, and MSVC 19.37 or above. Additionally, D++ must be built with the CMake option DPP_CORO, and your program must both define the macro DPP_CORO and use C++20 or above. The feature is experimental and may have bugs or even crashes, please report any to <a href="https://github.com/brainboxdotcc/DPP/issues">GitHub Issues</a> or to our <a href="https://discord.gg/dpp">Discord Server</a>. </dd></dl>
  </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
