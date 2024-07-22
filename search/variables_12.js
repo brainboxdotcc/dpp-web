@@ -149,7 +149,7 @@ var searchData=
   ['replied_5fuser_146',['replied_user',['../structdpp_1_1message_1_1allowed__ref.html#a2b618e76580414b02526dfccc8564d39',1,'dpp::message::allowed_ref']]],
   ['req_5fheaders_147',['req_headers',['../classdpp_1_1http__request.html#a7248f6e47440f670e2a9adbfb50022bc',1,'dpp::http_request']]],
   ['request_148',['request',['../structdpp_1_1request__queue_1_1completed__request.html#ad0dfc7315e1a374f5ef2b2197713a6fd',1,'dpp::request_queue::completed_request::request()'],['../structdpp_1_1request__queue_1_1queued__deleting__request.html#a358760d026189aa3bdf13a842492c178',1,'dpp::request_queue::queued_deleting_request::request()']]],
-  ['request_5ftimeout_149',['request_timeout',['../classdpp_1_1http__request.html#a2bd3afc7740a578aab54d19fb8a5af40',1,'dpp::http_request']]],
+  ['request_5ftimeout_149',['request_timeout',['../classdpp_1_1cluster.html#a7ab5b992db2b53f80cc466deffec96b8',1,'dpp::cluster']]],
   ['request_5fto_5fspeak_150',['request_to_speak',['../classdpp_1_1voicestate.html#a76c063d943a4aae66f15e03b018aeea8',1,'dpp::voicestate']]],
   ['requests_5fin_151',['requests_in',['../classdpp_1_1request__queue.html#abc7363f3fc7e0f8bf8b9437b669697d4',1,'dpp::request_queue']]],
   ['required_152',['required',['../classdpp_1_1component.html#a6a6312c0c598466aa87541745d2f7bff',1,'dpp::component::required()'],['../structdpp_1_1command__option.html#ad203ab30a75ce7508f565f5821301bdb',1,'dpp::command_option::required()']]],
