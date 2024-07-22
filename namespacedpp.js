@@ -7943,5 +7943,6 @@ var namespacedpp =
     [ "FORMAT_VERSION", "namespacedpp.html#af762f7c2f0c23de9fbba385e8f547d29", null ],
     [ "http_version", "namespacedpp.html#a03c3e59edb221a7d235cc9fda57a7d34", null ],
     [ "is_valid_config", "namespacedpp.html#ae5545dbc7d5791902c0f940ad125b672", null ],
+    [ "MAX_AVATAR_SIZE", "namespacedpp.html#ae876818464d49870905285dd988de870", null ],
     [ "send_audio_raw_max_length", "namespacedpp.html#af9ada17b1b7470c57690031929bb7cff", null ]
 ];
