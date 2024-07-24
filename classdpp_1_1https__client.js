@@ -20,7 +20,7 @@ var classdpp_1_1https__client =
     [ "log", "classdpp_1_1https__client.html#a945ccd04f376174a64c0cceffca3bbcd", null ],
     [ "one_second_timer", "classdpp_1_1https__client.html#af37e3ada25e6243867bee042d2eb222c", null ],
     [ "read_loop", "classdpp_1_1https__client.html#a17d4e73c74413a5a79a3859615f913e2", null ],
-    [ "write", "classdpp_1_1https__client.html#acdfd527a84156e918dc93420ed0d45b8", null ],
+    [ "write", "classdpp_1_1https__client.html#a85cb0444e7c179c7dae331c62b73eceb", null ],
     [ "buffer", "classdpp_1_1https__client.html#ae0e5e0799448bf29506bfcc21168d3fa", null ],
     [ "bytes_in", "classdpp_1_1https__client.html#a7b3bbb4e6a9e271c8f19736b36b71d5d", null ],
     [ "bytes_out", "classdpp_1_1https__client.html#a8022a8002cfc6f394016546168ef4085", null ],

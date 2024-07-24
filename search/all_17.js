@@ -1009,7 +1009,7 @@ var searchData=
   ['wrench_1006',['wrench',['../namespacedpp_1_1unicode__emoji.html#a1d5c855c9fdb136eaea5cea242e04dc8',1,'dpp::unicode_emoji']]],
   ['wrestlers_1007',['wrestlers',['../namespacedpp_1_1unicode__emoji.html#aa2cfd30ad9816ab986cbfff6b8bff066',1,'dpp::unicode_emoji']]],
   ['wrestling_1008',['wrestling',['../namespacedpp_1_1unicode__emoji.html#a10d306edf09d2337bb7ac18ebbf13b44',1,'dpp::unicode_emoji']]],
-  ['write_1009',['write',['../classdpp_1_1ssl__client.html#acdfd527a84156e918dc93420ed0d45b8',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#a66ca960ed3dddc37340ecc5d32ff0e1c',1,'dpp::websocket_client::write()']]],
+  ['write_1009',['write',['../classdpp_1_1ssl__client.html#a85cb0444e7c179c7dae331c62b73eceb',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#a9e4a4fa84657f3c0557e2837e3aa2c00',1,'dpp::websocket_client::write()']]],
   ['writing_5fhand_1010',['writing_hand',['../namespacedpp_1_1unicode__emoji.html#ab809baab0c4c337c07777da6c8394097',1,'dpp::unicode_emoji']]],
   ['writing_5fhand_5ftone1_1011',['writing_hand_tone1',['../namespacedpp_1_1unicode__emoji.html#ad92c2c955eadde69f509749379ef3aaf',1,'dpp::unicode_emoji']]],
   ['writing_5fhand_5ftone2_1012',['writing_hand_tone2',['../namespacedpp_1_1unicode__emoji.html#aeca1fbfe89e09b0287d789e26f7abbd3',1,'dpp::unicode_emoji']]],
