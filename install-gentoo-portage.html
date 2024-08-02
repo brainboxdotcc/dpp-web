@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta property="og:title" content="Installing D++ - D++ - The lightweight C++ Discord API Library">
+<meta property="og:title" content="Installing with Portage (Gentoo) - D++ - The lightweight C++ Discord API Library">
 <meta property="og:description" content="A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
-<meta name="description" content="Installing D++ - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
+<meta name="description" content="Installing with Portage (Gentoo) - D++ - A lightweight C++ Discord API library supporting the entire Discord API, including Slash Commands, Voice/Audio, Sharding, Clustering and more!">
 <meta property="og:image" content="https://dpp.dev/DPP-Logo.png">
 <meta property="og:url" content="https://dpp.dev/">
 <meta property="og:type" content="website">
-<meta property="twitter:title" content="Installing D++ - D++ - The lightweight C++ Discord API Library">
-<title>Installing D++ - D++ - The lightweight C++ Discord API Library</title>
+<meta property="twitter:title" content="Installing with Portage (Gentoo) - D++ - The lightweight C++ Discord API Library">
+<title>Installing with Portage (Gentoo) - D++ - The lightweight C++ Discord API Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('installing.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('install-gentoo-portage.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,27 +98,29 @@ $(document).ready(function(){initNavTree('installing.html',''); initResizable();
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Installing D++ </div></div>
+  <div class="headertitle"><div class="title">Installing with Portage (Gentoo) </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >There are many ways to install D++, either from a package manager, or from source. Please choose your desired option from the list below:</p>
-<ul>
-<li><a class="el" href="install-linux-deb.html">Installing from a .deb file (Debian, Ubuntu, and Derivatives)</a></li>
-<li><a class="el" href="install-linux-rpm.html">Installing from a .rpm file (RedHat, CentOS and Derivatives)</a></li>
-<li><a class="el" href="install-vcpkg.html">Installing from VCPKG (Windows)</a></li>
-<li><a class="el" href="install-arch-aur.html">Installing from AUR (Arch Linux)</a></li>
-<li><a class="el" href="install-void-xbps.html">Installing from XBPS (Void Linux)</a></li>
-<li><a class="el" href="install-gentoo-portage.html">Installing with Portage (Gentoo)</a></li>
-<li><a class="el" href="install-windows-vs-zip.html">Installing from zip (Windows) for Visual Studio</a></li>
-<li><a class="el" href="install-xmake.html">Installing from XMake</a></li>
-<li><a class="el" href="install-brew.html">Installing from Homebrew (OSX)</a></li>
-<li><a class="el" href="install-from-source.html">Building D++ from Source</a> </li>
-</ul>
+<div class="textblock"><p >D++ is available on <a href="https://wiki.gentoo.org/wiki/Project:GURU">GURU</a>. To install D++, you must first enable the GURU repository. To do so, execute the following commands (as root):</p>
+<div class="fragment"><div class="line">emerge --ask app-eselect/eselect-repository</div>
+<div class="line">eselect repository enable guru</div>
+<div class="line">emaint sync --repo guru</div>
+</div><!-- fragment --><p >This enables the GURU repository, which consists of user-contributed packages, such as D++!</p>
+<p >If you wish, you may enable coroutine and voice support through USE flags. To do so, using your text editor of choice, add the following line to <code>/etc/portage/package.use/dpp</code> (as root):</p>
+<div class="fragment"><div class="line">dev-cpp/dpp voice coro</div>
+</div><!-- fragment --> <blockquote class="doxtable">
+<p >You may choose between voice, coro, or both, just pick and choose! </p>
+</blockquote>
+<p>You will now be able to use D++ by including its library on the command line:</p>
+<div class="fragment"><div class="line">g++ mybot.cpp -o mybot -ldpp</div>
+</div><!-- fragment --><p ><dl class="section note"><dt>Note</dt><dd>Compiling your bot with a raw <code>g++</code> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <a class="el" href="buildcmake.html">Building a Discord Bot Using CMake (UNIX)</a> or if you have not yet created a token for your bot, <a class="el" href="creating-a-bot-application.html">Creating a Bot Token</a> - If you are having trouble setting up CMake, you can try <a href="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</a>.</dd></dl>
+ </p>
 </div></div><!-- contents --><script src="https://giscus.app/client.js" data-repo="brainboxdotcc/dpp-comments" data-repo-id="R_kgDOHOY4xg" data-category="General" data-category-id="DIC_kwDOHOY4xs4CRYtj" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async></script>
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="nav-path" class="navpath">
 	<ul>
+		<li class="navelem"><a class="el" href="installing.html">Installing D++</a></li>
 	</ul>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->

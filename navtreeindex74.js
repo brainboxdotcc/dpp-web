@@ -1,5 +1,6 @@
 var NAVTREEINDEX74 =
 {
+"structdpp_1_1voice__receive__t.html#aca2880114f69b7ba62eb5137824c1432":[9,0,0,238,9],
 "structdpp_1_1voice__receive__t.html#ad761e8dec36073665f520aaa13fbe6dc":[11,0,0,234,4],
 "structdpp_1_1voice__receive__t.html#ad761e8dec36073665f520aaa13fbe6dc":[9,0,0,238,4],
 "structdpp_1_1voice__receive__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[9,0,0,238,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX74 =
 "using-cache.html":[5,0,6],
 "using-coroutines.html":[5,3],
 "using-emojis.html":[5,4,9],
-"using_timers.html":[5,4,10],
-"voice-model.html":[6,2]
+"using_timers.html":[5,4,10]
 };

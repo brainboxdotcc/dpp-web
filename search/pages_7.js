@@ -9,7 +9,8 @@ var searchData=
   ['installing_20from_20xbps_20_28void_20linux_29_6',['Installing from XBPS (Void Linux)',['../install-void-xbps.html',1,'installing']]],
   ['installing_20from_20xmake_7',['Installing from XMake',['../install-xmake.html',1,'installing']]],
   ['installing_20from_20zip_20_28windows_29_20for_20visual_20studio_8',['Installing from zip (Windows) for Visual Studio',['../install-windows-vs-zip.html',1,'installing']]],
-  ['integrating_20with_20spdlog_9',['Integrating with spdlog',['../spdlog.html',1,'misc']]],
-  ['interactions_20and_20components_10',['Interactions And Components',['../interactions-and-components.html',1,'example-programs']]],
-  ['introduction_20to_20coroutines_11',['Introduction to coroutines',['../coro-introduction.html',1,'using-coroutines']]]
+  ['installing_20with_20portage_20_28gentoo_29_9',['Installing with Portage (Gentoo)',['../install-gentoo-portage.html',1,'installing']]],
+  ['integrating_20with_20spdlog_10',['Integrating with spdlog',['../spdlog.html',1,'misc']]],
+  ['interactions_20and_20components_11',['Interactions And Components',['../interactions-and-components.html',1,'example-programs']]],
+  ['introduction_20to_20coroutines_12',['Introduction to coroutines',['../coro-introduction.html',1,'using-coroutines']]]
 ];

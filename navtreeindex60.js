@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"structdpp_1_1form__submit__t.html#a2d4777d1049d31ed943ecebfa2de7db9":[11,0,0,95,39],
 "structdpp_1_1form__submit__t.html#a34f374b358f8d2d49fa93bfe5a2c0493":[11,0,0,95,28],
 "structdpp_1_1form__submit__t.html#a34f374b358f8d2d49fa93bfe5a2c0493":[9,0,0,99,28],
 "structdpp_1_1form__submit__t.html#a3d19641b6ca6555ccbb3cdb8d6d5f6cb":[11,0,0,95,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "structdpp_1_1guild__create__t.html#a603cd7283124f0673e3779bc11d417a6":[9,0,0,107,18],
 "structdpp_1_1guild__create__t.html#a6a266af2a91170b3cccdb543040fef8e":[11,0,0,103,15],
 "structdpp_1_1guild__create__t.html#a6a266af2a91170b3cccdb543040fef8e":[9,0,0,107,15],
-"structdpp_1_1guild__create__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[11,0,0,103,10],
-"structdpp_1_1guild__create__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[9,0,0,107,10]
+"structdpp_1_1guild__create__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[11,0,0,103,10]
 };

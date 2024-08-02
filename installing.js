@@ -5,6 +5,7 @@ var installing =
     [ "Installing from VCPKG (Windows)", "install-vcpkg.html", null ],
     [ "Installing from AUR (Arch Linux)", "install-arch-aur.html", null ],
     [ "Installing from XBPS (Void Linux)", "install-void-xbps.html", null ],
+    [ "Installing with Portage (Gentoo)", "install-gentoo-portage.html", null ],
     [ "Installing from zip (Windows) for Visual Studio", "install-windows-vs-zip.html", null ],
     [ "Installing from XMake", "install-xmake.html", null ],
     [ "Installing from Homebrew (OSX)", "install-brew.html", null ],
