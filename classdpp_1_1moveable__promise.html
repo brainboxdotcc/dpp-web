@@ -117,18 +117,15 @@ requires (std::constructible_from&lt;T, Args...&gt;)</td></tr>
 <tr class="memitem:a2797eb86e36556a42d16e544bbebbd8a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a2797eb86e36556a42d16e544bbebbd8a">emplace_value</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a2797eb86e36556a42d16e544bbebbd8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result in place by forwarding the arguments, and by default resume any awaiter.  <a href="classdpp_1_1moveable__promise.html#a2797eb86e36556a42d16e544bbebbd8a">More...</a><br /></td></tr>
 <tr class="separator:a2797eb86e36556a42d16e544bbebbd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d61f3cbb1a7d115d754d75a5b5103ef"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true, typename U  = T&gt; <br />
-requires (std::convertible_to&lt;const U&amp;, T&gt;)</td></tr>
-<tr class="memitem:a2d61f3cbb1a7d115d754d75a5b5103ef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a2d61f3cbb1a7d115d754d75a5b5103ef">set_value</a> (const U &amp;v)</td></tr>
-<tr class="separator:a2d61f3cbb1a7d115d754d75a5b5103ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87053d96a226b1b10e0fe98a4c63bf87"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true, typename U  = T&gt; <br />
-requires (std::convertible_to&lt;const U&amp;, T&gt;)</td></tr>
-<tr class="memitem:a87053d96a226b1b10e0fe98a4c63bf87"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a87053d96a226b1b10e0fe98a4c63bf87">set_value</a> (U &amp;&amp;v)</td></tr>
-<tr class="separator:a87053d96a226b1b10e0fe98a4c63bf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true, typename U  = T&gt; <br />
+requires (std::convertible_to&lt;U&amp;&amp;, T&gt;)</td></tr>
+<tr class="memitem:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a4f5338a987325c6d49bc17bcb23dae6f">set_value</a> (U &amp;&amp;v)</td></tr>
+<tr class="memdesc:a4f5338a987325c6d49bc17bcb23dae6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result by forwarding reference, and resume any awaiter.  <a href="classdpp_1_1moveable__promise.html#a4f5338a987325c6d49bc17bcb23dae6f">More...</a><br /></td></tr>
+<tr class="separator:a4f5338a987325c6d49bc17bcb23dae6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d36fc2c3ae52ab8922a01df7be72451"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true&gt; <br />
 requires (std::is_void_v&lt;T&gt;)</td></tr>
 <tr class="memitem:a8d36fc2c3ae52ab8922a01df7be72451"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#a8d36fc2c3ae52ab8922a01df7be72451">set_value</a> ()</td></tr>
-<tr class="memdesc:a8d36fc2c3ae52ab8922a01df7be72451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result by move, and resume any awaiter.  <a href="classdpp_1_1moveable__promise.html#a8d36fc2c3ae52ab8922a01df7be72451">More...</a><br /></td></tr>
+<tr class="memdesc:a8d36fc2c3ae52ab8922a01df7be72451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a void result, and resume any awaiter.  <a href="classdpp_1_1moveable__promise.html#a8d36fc2c3ae52ab8922a01df7be72451">More...</a><br /></td></tr>
 <tr class="separator:a8d36fc2c3ae52ab8922a01df7be72451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5792560d88ecc4c4cc7f68a12124dd4"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true&gt; </td></tr>
 <tr class="memitem:ad5792560d88ecc4c4cc7f68a12124dd4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1moveable__promise.html#ad5792560d88ecc4c4cc7f68a12124dd4">set_exception</a> (std::exception_ptr ptr)</td></tr>
@@ -297,7 +294,7 @@ template&lt;bool Notify = true&gt; </div>
 </div>
 </div>
 <a id="a8d36fc2c3ae52ab8922a01df7be72451" name="a8d36fc2c3ae52ab8922a01df7be72451"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d36fc2c3ae52ab8922a01df7be72451">&#9670;&nbsp;</a></span>set_value() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d36fc2c3ae52ab8922a01df7be72451">&#9670;&nbsp;</a></span>set_value() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,7 +321,7 @@ requires (std::is_void_v&lt;T&gt;)</div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct the result by move, and resume any awaiter. </p>
+<p>Construct a void result, and resume any awaiter. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Notify</td><td>Whether to resume any awaiter or not. </td></tr>
@@ -340,8 +337,8 @@ requires (std::is_void_v&lt;T&gt;)</div>
 
 </div>
 </div>
-<a id="a2d61f3cbb1a7d115d754d75a5b5103ef" name="a2d61f3cbb1a7d115d754d75a5b5103ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d61f3cbb1a7d115d754d75a5b5103ef">&#9670;&nbsp;</a></span>set_value() <span class="overload">[2/3]</span></h2>
+<a id="a4f5338a987325c6d49bc17bcb23dae6f" name="a4f5338a987325c6d49bc17bcb23dae6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5338a987325c6d49bc17bcb23dae6f">&#9670;&nbsp;</a></span>set_value() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,40 +346,7 @@ requires (std::is_void_v&lt;T&gt;)</div>
 template&lt;typename T &gt; </div>
 <div class="memtemplate">
 template&lt;bool Notify = true, typename U  = T&gt; <br />
-requires (std::convertible_to&lt;const U&amp;, T&gt;)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classdpp_1_1moveable__promise.html">dpp::moveable_promise</a>&lt; T &gt;::set_value </td>
-          <td>(</td>
-          <td class="paramtype">const U &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p></p>
-
-</div>
-</div>
-<a id="a87053d96a226b1b10e0fe98a4c63bf87" name="a87053d96a226b1b10e0fe98a4c63bf87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87053d96a226b1b10e0fe98a4c63bf87">&#9670;&nbsp;</a></span>set_value() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<div class="memtemplate">
-template&lt;bool Notify = true, typename U  = T&gt; <br />
-requires (std::convertible_to&lt;const U&amp;, T&gt;)</div>
+requires (std::convertible_to&lt;U&amp;&amp;, T&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -402,7 +366,19 @@ requires (std::convertible_to&lt;const U&amp;, T&gt;)</div>
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Construct the result by forwarding reference, and resume any awaiter. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Notify</td><td>Whether to resume any awaiter or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1logic__exception.html" title="Represents an error in logic, e.g. you asked the library to do something the Discord API does not sup...">dpp::logic_exception</a></td><td>if the promise is not empty. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

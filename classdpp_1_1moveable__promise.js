@@ -5,6 +5,5 @@ var classdpp_1_1moveable__promise =
     [ "notify_awaiter", "classdpp_1_1moveable__promise.html#a89f291d78a63dfacc1f2d9becba25254", null ],
     [ "set_exception", "classdpp_1_1moveable__promise.html#ad5792560d88ecc4c4cc7f68a12124dd4", null ],
     [ "set_value", "classdpp_1_1moveable__promise.html#a8d36fc2c3ae52ab8922a01df7be72451", null ],
-    [ "set_value", "classdpp_1_1moveable__promise.html#a2d61f3cbb1a7d115d754d75a5b5103ef", null ],
-    [ "set_value", "classdpp_1_1moveable__promise.html#a87053d96a226b1b10e0fe98a4c63bf87", null ]
+    [ "set_value", "classdpp_1_1moveable__promise.html#a4f5338a987325c6d49bc17bcb23dae6f", null ]
 ];

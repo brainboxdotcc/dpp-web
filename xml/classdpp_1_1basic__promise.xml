@@ -61,7 +61,7 @@
         </inbodydescription>
         <location file="include/dpp/coro/awaitable.h" line="521" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="521" bodyend="534"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1basic__promise_1a30924cbb2b7a57ad302829cd6d6b1fa1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1basic__promise_1a447db9b10164abd6c003e1c0d7e8c8e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>bool</type>
@@ -76,15 +76,15 @@
         </templateparamlist>
         <type>void</type>
         <definition>void dpp::basic_promise&lt; T &gt;::set_value</definition>
-        <argsstring>(const U &amp;v)</argsstring>
+        <argsstring>(U &amp;&amp;v)</argsstring>
         <name>set_value</name>
         <param>
-          <type>const U &amp;</type>
+          <type>U &amp;&amp;</type>
           <declname>v</declname>
         </param>
-    <requiresclause>(std::convertible_to&lt;const U&amp;, T&gt;)    </requiresclause>
+    <requiresclause>(std::convertible_to&lt;U&amp;&amp;, T&gt;)    </requiresclause>
         <briefdescription>
-<para>Construct the result by copy, and resume any awaiter. </para>
+<para>Construct the result by forwarding reference, and resume any awaiter. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="templateparam"><parameteritem>
@@ -111,56 +111,6 @@
         </inbodydescription>
         <location file="include/dpp/coro/awaitable.h" line="544" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="544" bodyend="546"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1basic__promise_1a447db9b10164abd6c003e1c0d7e8c8e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>bool</type>
-            <declname>Notify</declname>
-            <defname>Notify</defname>
-            <defval>true</defval>
-          </param>
-          <param>
-            <type>typename U</type>
-            <defval>T</defval>
-          </param>
-        </templateparamlist>
-        <type>void</type>
-        <definition>void dpp::basic_promise&lt; T &gt;::set_value</definition>
-        <argsstring>(U &amp;&amp;v)</argsstring>
-        <name>set_value</name>
-        <param>
-          <type>U &amp;&amp;</type>
-          <declname>v</declname>
-        </param>
-    <requiresclause>(std::convertible_to&lt;U&amp;&amp;, T&gt;)    </requiresclause>
-        <briefdescription>
-<para>Construct the result by move, and resume any awaiter. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>Notify</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether to resume any awaiter or not. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="exception"><parameteritem>
-<parameternamelist>
-<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
-</parameternamelist>
-<parameterdescription>
-<para>if the promise is not empty. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/dpp/coro/awaitable.h" line="556" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="556" bodyend="558"/>
-      </memberdef>
       <memberdef kind="function" id="classdpp_1_1basic__promise_1a73fd19246018779cdb69160e858b61f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
@@ -176,7 +126,7 @@
         <name>set_value</name>
     <requiresclause>(std::is_void_v&lt;T&gt;)    </requiresclause>
         <briefdescription>
-<para>Construct the result by move, and resume any awaiter. </para>
+<para>Construct a void result, and resume any awaiter. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="templateparam"><parameteritem>
@@ -201,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/coro/awaitable.h" line="568" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="568" bodyend="577"/>
+        <location file="include/dpp/coro/awaitable.h" line="556" column="6" bodyfile="include/dpp/coro/awaitable.h" bodystart="556" bodyend="565"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1detail_1_1promise_1_1promise__base_1a3692b8c1d5876c3d5e5cbeacd80ccd21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -519,7 +469,7 @@
         <label>coroutine_handle</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/coro/awaitable.h" line="508" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="508" bodyend="578"/>
+    <location file="include/dpp/coro/awaitable.h" line="508" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="508" bodyend="566"/>
     <listofallmembers>
       <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1af9f80c93e2b4017965b49a4f38ee887c" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>awaiter</name></member>
       <member refid="classdpp_1_1basic__promise_1a0db85d35ebb20c8ae33fb7bcb8126be8" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>emplace_value</name></member>
@@ -532,7 +482,6 @@
       <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ac439a6106681c55058f73a27db3d4037" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>promise_base</name></member>
       <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1ab30a2a85e4a1dcdd3dd0bd9febcd01f4" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>release_awaiter</name></member>
       <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a3692b8c1d5876c3d5e5cbeacd80ccd21" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>set_exception</name></member>
-      <member refid="classdpp_1_1basic__promise_1a30924cbb2b7a57ad302829cd6d6b1fa1" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>set_value</name></member>
       <member refid="classdpp_1_1basic__promise_1a447db9b10164abd6c003e1c0d7e8c8e1" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>set_value</name></member>
       <member refid="classdpp_1_1basic__promise_1a73fd19246018779cdb69160e858b61f0" prot="public" virt="non-virtual"><scope>dpp::basic_promise</scope><name>set_value</name></member>
       <member refid="classdpp_1_1detail_1_1promise_1_1promise__base_1a14eff25d580b969666ea65ce8e8f3ee5" prot="protected" virt="non-virtual"><scope>dpp::basic_promise</scope><name>state</name></member>

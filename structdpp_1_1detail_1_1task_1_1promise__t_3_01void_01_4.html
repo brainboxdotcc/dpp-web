@@ -154,14 +154,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0db85d35ebb20c8ae33fb7bcb8126be8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__promise.html#a0db85d35ebb20c8ae33fb7bcb8126be8">emplace_value</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a0db85d35ebb20c8ae33fb7bcb8126be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result in place by forwarding the arguments, and by default resume any awaiter.  <a href="classdpp_1_1basic__promise.html#a0db85d35ebb20c8ae33fb7bcb8126be8">More...</a><br /></td></tr>
 <tr class="separator:a0db85d35ebb20c8ae33fb7bcb8126be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30924cbb2b7a57ad302829cd6d6b1fa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__promise.html#a30924cbb2b7a57ad302829cd6d6b1fa1">set_value</a> (const U &amp;v)</td></tr>
-<tr class="memdesc:a30924cbb2b7a57ad302829cd6d6b1fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result by copy, and resume any awaiter.  <a href="classdpp_1_1basic__promise.html#a30924cbb2b7a57ad302829cd6d6b1fa1">More...</a><br /></td></tr>
-<tr class="separator:a30924cbb2b7a57ad302829cd6d6b1fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a447db9b10164abd6c003e1c0d7e8c8e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__promise.html#a447db9b10164abd6c003e1c0d7e8c8e1">set_value</a> (U &amp;&amp;v)</td></tr>
-<tr class="memdesc:a447db9b10164abd6c003e1c0d7e8c8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result by move, and resume any awaiter.  <a href="classdpp_1_1basic__promise.html#a447db9b10164abd6c003e1c0d7e8c8e1">More...</a><br /></td></tr>
+<tr class="memdesc:a447db9b10164abd6c003e1c0d7e8c8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result by forwarding reference, and resume any awaiter.  <a href="classdpp_1_1basic__promise.html#a447db9b10164abd6c003e1c0d7e8c8e1">More...</a><br /></td></tr>
 <tr class="separator:a447db9b10164abd6c003e1c0d7e8c8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73fd19246018779cdb69160e858b61f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1basic__promise.html#a73fd19246018779cdb69160e858b61f0">set_value</a> ()</td></tr>
-<tr class="memdesc:a73fd19246018779cdb69160e858b61f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the result by move, and resume any awaiter.  <a href="classdpp_1_1basic__promise.html#a73fd19246018779cdb69160e858b61f0">More...</a><br /></td></tr>
+<tr class="memdesc:a73fd19246018779cdb69160e858b61f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a void result, and resume any awaiter.  <a href="classdpp_1_1basic__promise.html#a73fd19246018779cdb69160e858b61f0">More...</a><br /></td></tr>
 <tr class="separator:a73fd19246018779cdb69160e858b61f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3692b8c1d5876c3d5e5cbeacd80ccd21"><td class="memTemplParams" colspan="2">template&lt;bool Notify = true&gt; </td></tr>
 <tr class="memitem:a3692b8c1d5876c3d5e5cbeacd80ccd21"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1detail_1_1promise_1_1promise__base.html#a3692b8c1d5876c3d5e5cbeacd80ccd21">set_exception</a> (std::exception_ptr ptr)</td></tr>
@@ -577,7 +574,7 @@ template&lt;bool Notify = true&gt; </div>
 </div>
 </div>
 <a id="a73fd19246018779cdb69160e858b61f0" name="a73fd19246018779cdb69160e858b61f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73fd19246018779cdb69160e858b61f0">&#9670;&nbsp;</a></span>set_value() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fd19246018779cdb69160e858b61f0">&#9670;&nbsp;</a></span>set_value() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,47 +596,7 @@ template&lt;bool Notify = true&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct the result by move, and resume any awaiter. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Notify</td><td>Whether to resume any awaiter or not. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1logic__exception.html" title="Represents an error in logic, e.g. you asked the library to do something the Discord API does not sup...">dpp::logic_exception</a></td><td>if the promise is not empty. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a30924cbb2b7a57ad302829cd6d6b1fa1" name="a30924cbb2b7a57ad302829cd6d6b1fa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30924cbb2b7a57ad302829cd6d6b1fa1">&#9670;&nbsp;</a></span>set_value() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classdpp_1_1basic__promise.html">dpp::basic_promise</a>&lt; void  &gt;::set_value </td>
-          <td>(</td>
-          <td class="paramtype">const U &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct the result by copy, and resume any awaiter. </p>
+<p>Construct a void result, and resume any awaiter. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Notify</td><td>Whether to resume any awaiter or not. </td></tr>
@@ -656,7 +613,7 @@ template&lt;bool Notify = true&gt; </div>
 </div>
 </div>
 <a id="a447db9b10164abd6c003e1c0d7e8c8e1" name="a447db9b10164abd6c003e1c0d7e8c8e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a447db9b10164abd6c003e1c0d7e8c8e1">&#9670;&nbsp;</a></span>set_value() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a447db9b10164abd6c003e1c0d7e8c8e1">&#9670;&nbsp;</a></span>set_value() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -679,7 +636,7 @@ template&lt;bool Notify = true&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct the result by move, and resume any awaiter. </p>
+<p>Construct the result by forwarding reference, and resume any awaiter. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Notify</td><td>Whether to resume any awaiter or not. </td></tr>
