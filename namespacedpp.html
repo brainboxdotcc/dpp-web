@@ -1018,10 +1018,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a20f4dcbbb36ff72bc8e725a36bcb45c1"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="classdpp_1_1snowflake.html">snowflake</a>, <a class="el" href="classdpp_1_1sku.html">sku</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a20f4dcbbb36ff72bc8e725a36bcb45c1">sku_map</a></td></tr>
 <tr class="memdesc:a20f4dcbbb36ff72bc8e725a36bcb45c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group of SKUs.  <a href="namespacedpp.html#a20f4dcbbb36ff72bc8e725a36bcb45c1">More...</a><br /></td></tr>
 <tr class="separator:a20f4dcbbb36ff72bc8e725a36bcb45c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51156024d6211aef2731770340cfe452"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">socket</a></td></tr>
-<tr class="memdesc:a51156024d6211aef2731770340cfe452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a socket file descriptor. This is used to ensure parity between windows and unix-like systems.  <a href="namespacedpp.html#a51156024d6211aef2731770340cfe452">More...</a><br /></td></tr>
-<tr class="separator:a51156024d6211aef2731770340cfe452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a982a3efeac04ddb820bbe87b08155640"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; <a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a982a3efeac04ddb820bbe87b08155640">socket_callback_t</a></td></tr>
+<tr class="memitem:acfb6805855456fe93068c474c8f977c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">socket</a> = int</td></tr>
+<tr class="memdesc:acfb6805855456fe93068c474c8f977c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a socket file descriptor. This is used to ensure parity between windows and unix-like systems.  <a href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">More...</a><br /></td></tr>
+<tr class="separator:acfb6805855456fe93068c474c8f977c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982a3efeac04ddb820bbe87b08155640"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a982a3efeac04ddb820bbe87b08155640">socket_callback_t</a></td></tr>
 <tr class="memdesc:a982a3efeac04ddb820bbe87b08155640"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for socket status.  <a href="namespacedpp.html#a982a3efeac04ddb820bbe87b08155640">More...</a><br /></td></tr>
 <tr class="separator:a982a3efeac04ddb820bbe87b08155640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f89983921c7ddfa7f91705bd05e2b9e"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e">socket_notification_t</a></td></tr>
@@ -2699,10 +2699,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a94b9083871fc849024b4f4d2641320c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a94b9083871fc849024b4f4d2641320c0">rest_request_vector</a> (<a class="el" href="classdpp_1_1cluster.html">dpp::cluster</a> *c, const char *basepath, const std::string &amp;major, const std::string &amp;minor, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, const std::string &amp;postdata, <a class="el" href="namespacedpp.html#a022dce6b086ec4515384eaece59c84c3">command_completion_event_t</a> callback)</td></tr>
 <tr class="memdesc:a94b9083871fc849024b4f4d2641320c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Templated REST request helper to save on typing (for returned lists, specialised for objects which doesn't have ids)  <a href="namespacedpp.html#a94b9083871fc849024b4f4d2641320c0">More...</a><br /></td></tr>
 <tr class="separator:a94b9083871fc849024b4f4d2641320c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2aee5f8caf98a0dbebd4f1abb464dc00">close_socket</a> (<a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a> sfd)</td></tr>
+<tr class="memitem:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a2aee5f8caf98a0dbebd4f1abb464dc00">close_socket</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> sfd)</td></tr>
 <tr class="memdesc:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a socket.  <a href="namespacedpp.html#a2aee5f8caf98a0dbebd4f1abb464dc00">More...</a><br /></td></tr>
 <tr class="separator:a2aee5f8caf98a0dbebd4f1abb464dc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3">set_nonblocking</a> (<a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a> sockfd, bool non_blocking)</td></tr>
+<tr class="memitem:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3">set_nonblocking</a> (<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> sockfd, bool non_blocking)</td></tr>
 <tr class="memdesc:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a socket to blocking or non-blocking IO.  <a href="namespacedpp.html#a0c5e194a6e6cb7d653d73b19b5348dc3">More...</a><br /></td></tr>
 <tr class="separator:a0c5e194a6e6cb7d653d73b19b5348dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8227c717e1a550b3c3962cea1964d92"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -3533,14 +3533,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a51156024d6211aef2731770340cfe452" name="a51156024d6211aef2731770340cfe452"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51156024d6211aef2731770340cfe452">&#9670;&nbsp;</a></span>socket</h2>
+<a id="acfb6805855456fe93068c474c8f977c7" name="acfb6805855456fe93068c474c8f977c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb6805855456fe93068c474c8f977c7">&#9670;&nbsp;</a></span>socket</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int <a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a></td>
+          <td class="memname">using <a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a> = typedef int</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3556,7 +3556,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;<a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a>()&gt; <a class="el" href="namespacedpp.html#a982a3efeac04ddb820bbe87b08155640">dpp::socket_callback_t</a></td>
+          <td class="memname">typedef std::function&lt;<a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>()&gt; <a class="el" href="namespacedpp.html#a982a3efeac04ddb820bbe87b08155640">dpp::socket_callback_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6916,7 +6916,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">bool dpp::close_socket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>&#160;</td>
           <td class="paramname"><em>sfd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -9590,7 +9590,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">bool dpp::set_nonblocking </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedpp.html#a51156024d6211aef2731770340cfe452">dpp::socket</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacedpp.html#acfb6805855456fe93068c474c8f977c7">dpp::socket</a>&#160;</td>
           <td class="paramname"><em>sockfd</em>, </td>
         </tr>
         <tr>

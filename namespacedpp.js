@@ -6738,7 +6738,7 @@ var namespacedpp =
     [ "shard_list", "namespacedpp.html#a13c4d4e6238396245b349e6a637897e0", null ],
     [ "sku_map", "namespacedpp.html#a20f4dcbbb36ff72bc8e725a36bcb45c1", null ],
     [ "slashcommand_map", "namespacedpp.html#adfefe335636cdf5dbbba145a3828c554", null ],
-    [ "socket", "namespacedpp.html#a51156024d6211aef2731770340cfe452", null ],
+    [ "socket", "namespacedpp.html#acfb6805855456fe93068c474c8f977c7", null ],
     [ "socket_callback_t", "namespacedpp.html#a982a3efeac04ddb820bbe87b08155640", null ],
     [ "socket_notification_t", "namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e", null ],
     [ "stage_instance_map", "namespacedpp.html#a81bdee80b6fd684ea6959ec67e6ecafb", null ],

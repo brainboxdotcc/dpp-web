@@ -439,7 +439,7 @@ var searchData=
   ['sob_436',['sob',['../namespacedpp_1_1unicode__emoji.html#a58e5078201fa4a518f3bce941dd2588d',1,'dpp::unicode_emoji']]],
   ['soccer_437',['soccer',['../namespacedpp_1_1unicode__emoji.html#a4e0ddb5c217f764d0a08c17638576a50',1,'dpp::unicode_emoji']]],
   ['soccer_5fball_438',['soccer_ball',['../namespacedpp_1_1unicode__emoji.html#aaf4abffed3f42e45697efbf17151d00a',1,'dpp::unicode_emoji']]],
-  ['socket_439',['socket',['../namespacedpp.html#a51156024d6211aef2731770340cfe452',1,'dpp']]],
+  ['socket_439',['socket',['../namespacedpp.html#acfb6805855456fe93068c474c8f977c7',1,'dpp']]],
   ['socket_5fcallback_5ft_440',['socket_callback_t',['../namespacedpp.html#a982a3efeac04ddb820bbe87b08155640',1,'dpp']]],
   ['socket_5fnotification_5ft_441',['socket_notification_t',['../namespacedpp.html#a9f89983921c7ddfa7f91705bd05e2b9e',1,'dpp']]],
   ['socks_442',['socks',['../namespacedpp_1_1unicode__emoji.html#a3b3df5b96a56d8281b1fe6055e6bdfaa',1,'dpp::unicode_emoji']]],
