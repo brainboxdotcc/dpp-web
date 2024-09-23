@@ -274,6 +274,7 @@ var annotated_dup =
       [ "message_reaction_remove_all_t", "structdpp_1_1message__reaction__remove__all__t.html", "structdpp_1_1message__reaction__remove__all__t" ],
       [ "message_reaction_remove_emoji_t", "structdpp_1_1message__reaction__remove__emoji__t.html", "structdpp_1_1message__reaction__remove__emoji__t" ],
       [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
+      [ "message_snapshot", "structdpp_1_1message__snapshot.html", "structdpp_1_1message__snapshot" ],
       [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
       [ "moveable_promise", "classdpp_1_1moveable__promise.html", "classdpp_1_1moveable__promise" ],
       [ "moving_averager", "structdpp_1_1moving__averager.html", "structdpp_1_1moving__averager" ],

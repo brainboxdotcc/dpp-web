@@ -614,6 +614,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__reaction__remove__t.html">message_reaction_remove_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message reaction remove.  <a href="structdpp_1_1message__reaction__remove__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__snapshot.html">message_snapshot</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1message__update__t.html">message_update_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message update.  <a href="structdpp_1_1message__update__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2785,6 +2787,11 @@ Variables</h2></td></tr>
 <tr class="separator:a03c3e59edb221a7d235cc9fda57a7d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a243e725d7b20f89395b3cce1215421ea"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a243e725d7b20f89395b3cce1215421ea">DISCORD_HOST</a> = &quot;https://discord.com&quot;</td></tr>
 <tr class="separator:a243e725d7b20f89395b3cce1215421ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c541a98114325f4c6c0f138887a8eac"><td class="memItemLeft" align="right" valign="top">enum DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a1c541a98114325f4c6c0f138887a8eac">message_ref_type</a></td></tr>
+<tr class="memdesc:a1c541a98114325f4c6c0f138887a8eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message Reference type.  <a href="namespacedpp.html#a1c541a98114325f4c6c0f138887a8eac">More...</a><br /></td></tr>
+<tr class="separator:a1c541a98114325f4c6c0f138887a8eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e7e143b9572651ee47636e65ff8425"><td class="memItemLeft" align="right" valign="top">enum DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae7e7e143b9572651ee47636e65ff8425">mrt_forward</a> = 1</td></tr>
+<tr class="separator:ae7e7e143b9572651ee47636e65ff8425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae876818464d49870905285dd988de870"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#ae876818464d49870905285dd988de870">MAX_AVATAR_SIZE</a> = 10240 * 1000</td></tr>
 <tr class="separator:ae876818464d49870905285dd988de870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -9962,7 +9969,7 @@ template&lt;typename T , class F , class... Ts&gt; </div>
 <p >Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a> m = dpp::sync&lt;dpp::message&gt;(&amp;bot, &amp;<a class="code hl_function" href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a>, <a class="code hl_struct" href="structdpp_1_1message.html">dpp::message</a>(channel_id, <span class="stringliteral">&quot;moo.&quot;</span>));</div>
 <div class="ttc" id="aclassdpp_1_1cluster_html_aa6ae3dc32ebc2dd14264962710d35af7"><div class="ttname"><a href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7">dpp::cluster::message_create</a></div><div class="ttdeci">void message_create(const struct message &amp;m, command_completion_event_t callback=utility::log_error())</div><div class="ttdoc">Send a message to a channel. The callback function is called when the message has been sent.</div></div>
-<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:2016</div></div>
+<div class="ttc" id="astructdpp_1_1message_html"><div class="ttname"><a href="structdpp_1_1message.html">dpp::message</a></div><div class="ttdoc">Represents messages sent and received on Discord.</div><div class="ttdef"><b>Definition:</b> message.h:2034</div></div>
 </div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>As previously mentioned, this template will block. It is ill-advised to call this outside of a separate thread and this should never be directly used in any event such as <a class="el" href="classdpp_1_1cluster.html#aaaac4fce048efff1be42965c82235b3e" title="Called when a new interaction is created. Interactions are created by discord when commands you have ...">dpp::cluster::on_interaction_create</a>! </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -10627,6 +10634,37 @@ template&lt;typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c541a98114325f4c6c0f138887a8eac" name="a1c541a98114325f4c6c0f138887a8eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c541a98114325f4c6c0f138887a8eac">&#9670;&nbsp;</a></span>message_ref_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum DPP_EXPORT dpp::message_ref_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Message Reference type. </p>
+
+</div>
+</div>
+<a id="ae7e7e143b9572651ee47636e65ff8425" name="ae7e7e143b9572651ee47636e65ff8425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e7e143b9572651ee47636e65ff8425">&#9670;&nbsp;</a></span>mrt_forward</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum DPP_EXPORT dpp::mrt_forward = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >A forwarded message </p>
 
 </div>
 </div>

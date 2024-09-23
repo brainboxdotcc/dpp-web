@@ -93,7 +93,7 @@ var searchData=
   ['set_5fproxy_90',['set_proxy',['../structdpp_1_1embed__footer.html#a1fbd6e6dbf95e96bf42a090465888457',1,'dpp::embed_footer']]],
   ['set_5fquestion_91',['set_question',['../structdpp_1_1poll.html#afccc0bc6ea1caad627f09a5269c30d1a',1,'dpp::poll']]],
   ['set_5frate_5flimit_5fper_5fuser_92',['set_rate_limit_per_user',['../classdpp_1_1channel.html#a929b0d7a3eaed7ca144752196c2cf38f',1,'dpp::channel']]],
-  ['set_5freference_93',['set_reference',['../structdpp_1_1message.html#a8649d77de4e7b1c89b90016d3692f283',1,'dpp::message']]],
+  ['set_5freference_93',['set_reference',['../structdpp_1_1message.html#ad0e05fa5152eab67b35da29e1d7dbc2c',1,'dpp::message']]],
   ['set_5frequest_5ftimeout_94',['set_request_timeout',['../classdpp_1_1cluster.html#ac455802ef025cec97c8ec493e5feead7',1,'dpp::cluster']]],
   ['set_5frequired_95',['set_required',['../classdpp_1_1component.html#ad75a96f7fb63cc2721a605e7d61cc477',1,'dpp::component']]],
   ['set_5froles_96',['set_roles',['../classdpp_1_1guild__member.html#aef402cfcdaff6ace9ca96d94c2e7f98d',1,'dpp::guild_member']]],

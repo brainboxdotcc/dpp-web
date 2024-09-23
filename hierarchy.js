@@ -458,6 +458,7 @@ var hierarchy =
     [ "dpp::message_file_data", "structdpp_1_1message__file__data.html", null ],
     [ "dpp::message::message_interaction_struct", "structdpp_1_1message_1_1message__interaction__struct.html", null ],
     [ "dpp::message::message_ref", "structdpp_1_1message_1_1message__ref.html", null ],
+    [ "dpp::message_snapshot< T >", "structdpp_1_1message__snapshot.html", null ],
     [ "dpp::moveable_promise< T >", "classdpp_1_1moveable__promise.html", null ],
     [ "dpp::moving_averager", "structdpp_1_1moving__averager.html", null ],
     [ "dpp::multipart_content", "structdpp_1_1multipart__content.html", null ],

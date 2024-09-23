@@ -6606,6 +6606,7 @@ var namespacedpp =
     [ "message_reaction_remove_all_t", "structdpp_1_1message__reaction__remove__all__t.html", "structdpp_1_1message__reaction__remove__all__t" ],
     [ "message_reaction_remove_emoji_t", "structdpp_1_1message__reaction__remove__emoji__t.html", "structdpp_1_1message__reaction__remove__emoji__t" ],
     [ "message_reaction_remove_t", "structdpp_1_1message__reaction__remove__t.html", "structdpp_1_1message__reaction__remove__t" ],
+    [ "message_snapshot", "structdpp_1_1message__snapshot.html", "structdpp_1_1message__snapshot" ],
     [ "message_update_t", "structdpp_1_1message__update__t.html", "structdpp_1_1message__update__t" ],
     [ "moveable_promise", "classdpp_1_1moveable__promise.html", "classdpp_1_1moveable__promise" ],
     [ "moving_averager", "structdpp_1_1moving__averager.html", "structdpp_1_1moving__averager" ],
@@ -7944,5 +7945,7 @@ var namespacedpp =
     [ "http_version", "namespacedpp.html#a03c3e59edb221a7d235cc9fda57a7d34", null ],
     [ "is_valid_config", "namespacedpp.html#ae5545dbc7d5791902c0f940ad125b672", null ],
     [ "MAX_AVATAR_SIZE", "namespacedpp.html#ae876818464d49870905285dd988de870", null ],
+    [ "message_ref_type", "namespacedpp.html#a1c541a98114325f4c6c0f138887a8eac", null ],
+    [ "mrt_forward", "namespacedpp.html#ae7e7e143b9572651ee47636e65ff8425", null ],
     [ "send_audio_raw_max_length", "namespacedpp.html#af9ada17b1b7470c57690031929bb7cff", null ]
 ];

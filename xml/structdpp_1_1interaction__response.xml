@@ -423,19 +423,19 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="23">
+      <node id="24">
         <label>bool</label>
       </node>
-      <node id="29">
+      <node id="31">
         <label>cache_policy_setting_t</label>
       </node>
-      <node id="27">
+      <node id="29">
         <label>double</label>
       </node>
-      <node id="28">
+      <node id="30">
         <label>dpp::cache_policy_t</label>
         <link refid="structdpp_1_1cache__policy__t"/>
-        <childnode refid="29" relation="usage">
+        <childnode refid="31" relation="usage">
           <edgelabel>channel_policy</edgelabel>
           <edgelabel>emoji_policy</edgelabel>
           <edgelabel>guild_policy</edgelabel>
@@ -443,7 +443,7 @@
           <edgelabel>user_policy</edgelabel>
         </childnode>
       </node>
-      <node id="26">
+      <node id="28">
         <label>dpp::cluster</label>
         <link refid="classdpp_1_1cluster"/>
         <childnode refid="12" relation="usage">
@@ -458,25 +458,25 @@
           <edgelabel>maxclusters</edgelabel>
           <edgelabel>numshards</edgelabel>
         </childnode>
-        <childnode refid="27" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>rest_ping</edgelabel>
         </childnode>
         <childnode refid="10" relation="usage">
           <edgelabel>me</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>cache_policy</edgelabel>
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="32" relation="usage">
           <edgelabel>ws_mode</edgelabel>
         </childnode>
-        <childnode refid="31" relation="usage">
+        <childnode refid="33" relation="usage">
           <edgelabel>terminating</edgelabel>
         </childnode>
         <childnode refid="16" relation="usage">
           <edgelabel>request_timeout</edgelabel>
         </childnode>
-        <childnode refid="32" relation="usage">
+        <childnode refid="34" relation="usage">
           <edgelabel>on_autocomplete</edgelabel>
           <edgelabel>on_automod_rule_create</edgelabel>
           <edgelabel>on_automod_rule_delete</edgelabel>
@@ -583,34 +583,37 @@
         <childnode refid="22" relation="usage">
           <edgelabel>message_reference</edgelabel>
         </childnode>
-        <childnode refid="24" relation="usage">
-          <edgelabel>interaction</edgelabel>
-        </childnode>
         <childnode refid="25" relation="usage">
-          <edgelabel>allowed_mentions</edgelabel>
+          <edgelabel>message_snapshots</edgelabel>
         </childnode>
         <childnode refid="26" relation="usage">
+          <edgelabel>interaction</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>allowed_mentions</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
           <edgelabel>owner</edgelabel>
         </childnode>
-        <childnode refid="33" relation="usage">
+        <childnode refid="35" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="16" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="24" relation="usage">
           <edgelabel>mention_everyone</edgelabel>
           <edgelabel>pinned</edgelabel>
           <edgelabel>tts</edgelabel>
         </childnode>
-        <childnode refid="34" relation="usage">
+        <childnode refid="36" relation="usage">
           <edgelabel>attached_poll</edgelabel>
         </childnode>
       </node>
-      <node id="25">
+      <node id="27">
         <label>dpp::message::allowed_ref</label>
         <link refid="structdpp_1_1message_1_1allowed__ref"/>
-        <childnode refid="23" relation="usage">
+        <childnode refid="24" relation="usage">
           <edgelabel>parse_everyone</edgelabel>
           <edgelabel>parse_roles</edgelabel>
           <edgelabel>parse_users</edgelabel>
@@ -621,7 +624,7 @@
           <edgelabel>users</edgelabel>
         </childnode>
       </node>
-      <node id="24">
+      <node id="26">
         <label>dpp::message::message_interaction_struct</label>
         <link refid="structdpp_1_1message_1_1message__interaction__struct"/>
         <childnode refid="7" relation="usage">
@@ -640,12 +643,15 @@
       <node id="22">
         <label>dpp::message::message_ref</label>
         <link refid="structdpp_1_1message_1_1message__ref"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
         <childnode refid="7" relation="usage">
           <edgelabel>channel_id</edgelabel>
           <edgelabel>guild_id</edgelabel>
           <edgelabel>message_id</edgelabel>
         </childnode>
-        <childnode refid="23" relation="usage">
+        <childnode refid="24" relation="usage">
           <edgelabel>fail_if_not_exists</edgelabel>
         </childnode>
       </node>
@@ -689,7 +695,7 @@
           <edgelabel>second</edgelabel>
         </childnode>
       </node>
-      <node id="32">
+      <node id="34">
         <label>event_router_t&lt;</label>
       </node>
       <node id="4">
@@ -723,16 +729,22 @@
           <edgelabel>&lt; user &gt;</edgelabel>
         </childnode>
       </node>
-      <node id="33">
+      <node id="23">
+        <label>message_ref_type</label>
+      </node>
+      <node id="25">
+        <label>message_snapshot&lt;</label>
+      </node>
+      <node id="35">
         <label>message_type</label>
       </node>
       <node id="13">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="31">
+      <node id="33">
         <label>condition_variable</label>
       </node>
-      <node id="34">
+      <node id="36">
         <label>optional&lt;</label>
       </node>
       <node id="12">
@@ -758,7 +770,7 @@
       <node id="17">
         <label>uint8_t</label>
       </node>
-      <node id="30">
+      <node id="32">
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
