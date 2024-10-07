@@ -2,7 +2,10 @@ var advanced_reference =
 [
     [ "Clusters, Shards, and Guilds", "clusters-shards-guilds.html", null ],
     [ "Thread Model", "thread-model.html", null ],
-    [ "Voice Model", "voice-model.html", null ],
+    [ "Voice Model", "voice-model.html", [
+      [ "High Level Summary", "voice-model.html#autotoc_md85", null ],
+      [ "Flow Diagram", "voice-model.html#autotoc_md86", null ]
+    ] ],
     [ "Coding Style Standards", "coding-standards.html", null ],
     [ "Documentation Style Standards", "docs-standards.html", null ],
     [ "Unit Tests", "unit-tests.html", null ],

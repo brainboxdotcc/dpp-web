@@ -724,6 +724,7 @@ var classdpp_1_1cluster =
     [ "on_user_update", "classdpp_1_1cluster.html#a832e978df105033f7d3ea8ca0d0573cb", null ],
     [ "on_voice_buffer_send", "classdpp_1_1cluster.html#a4b702b26b73692e0aab0743f4ed07ef9", null ],
     [ "on_voice_client_disconnect", "classdpp_1_1cluster.html#ad0a97571a6609c6c6a7fb4393972eaed", null ],
+    [ "on_voice_client_platform", "classdpp_1_1cluster.html#a31655ceaf4c8c589c770cd6287dc604f", null ],
     [ "on_voice_client_speaking", "classdpp_1_1cluster.html#a64e8359d2f739a06f9a522c340ac38f5", null ],
     [ "on_voice_ready", "classdpp_1_1cluster.html#a8f2f865ac3492196a8167a319261ffb6", null ],
     [ "on_voice_receive", "classdpp_1_1cluster.html#a67227dd1f0d393d8a43c8b481c1fbbbe", null ],

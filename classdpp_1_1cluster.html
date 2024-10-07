@@ -2090,6 +2090,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a571d473f65f67265878fa4ba0e405f2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1voice__state__update__t.html">voice_state_update_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a571d473f65f67265878fa4ba0e405f2f">on_voice_state_update</a></td></tr>
 <tr class="memdesc:a571d473f65f67265878fa4ba0e405f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice state update event  <a href="classdpp_1_1cluster.html#a571d473f65f67265878fa4ba0e405f2f">More...</a><br /></td></tr>
 <tr class="separator:a571d473f65f67265878fa4ba0e405f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31655ceaf4c8c589c770cd6287dc604f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1voice__client__platform__t.html">voice_client_platform_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a31655ceaf4c8c589c770cd6287dc604f">on_voice_client_platform</a></td></tr>
+<tr class="memdesc:a31655ceaf4c8c589c770cd6287dc604f"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice client platform event After a client connects, or on joining a vc, you will receive the platform type of each client. This is either desktop or mobile.  <a href="classdpp_1_1cluster.html#a31655ceaf4c8c589c770cd6287dc604f">More...</a><br /></td></tr>
+<tr class="separator:a31655ceaf4c8c589c770cd6287dc604f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0a97571a6609c6c6a7fb4393972eaed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1voice__client__disconnect__t.html">voice_client_disconnect_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ad0a97571a6609c6c6a7fb4393972eaed">on_voice_client_disconnect</a></td></tr>
 <tr class="memdesc:ad0a97571a6609c6c6a7fb4393972eaed"><td class="mdescLeft">&#160;</td><td class="mdescRight">on voice client disconnect event  <a href="classdpp_1_1cluster.html#ad0a97571a6609c6c6a7fb4393972eaed">More...</a><br /></td></tr>
 <tr class="separator:ad0a97571a6609c6c6a7fb4393972eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -31313,6 +31316,23 @@ There are dedicated events to handle slashcommands (See <a class="el" href="clas
 </div><div class="memdoc">
 
 <p>on voice client disconnect event </p>
+<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1voice__client__disconnect__t.html" title="voice client disconnect event">voice_client_disconnect_t</a>&amp;, and returns void. </dd></dl>
+
+</div>
+</div>
+<a id="a31655ceaf4c8c589c770cd6287dc604f" name="a31655ceaf4c8c589c770cd6287dc604f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31655ceaf4c8c589c770cd6287dc604f">&#9670;&nbsp;</a></span>on_voice_client_platform</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt;<a class="el" href="structdpp_1_1voice__client__platform__t.html">voice_client_platform_t</a>&gt; dpp::cluster::on_voice_client_platform</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>on voice client platform event After a client connects, or on joining a vc, you will receive the platform type of each client. This is either desktop or mobile. </p>
 <dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1voice__client__disconnect__t.html" title="voice client disconnect event">voice_client_disconnect_t</a>&amp;, and returns void. </dd></dl>
 
 </div>

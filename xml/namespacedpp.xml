@@ -69,6 +69,7 @@
     <innerclass refid="structdpp_1_1context__menu__t" prot="public">dpp::context_menu_t</innerclass>
     <innerclass refid="classdpp_1_1coroutine" prot="public">dpp::coroutine</innerclass>
     <innerclass refid="structdpp_1_1coroutine__dummy" prot="public">dpp::coroutine_dummy</innerclass>
+    <innerclass refid="structdpp_1_1dave__binary__header__t" prot="public">dpp::dave_binary_header_t</innerclass>
     <innerclass refid="classdpp_1_1discord__client" prot="public">dpp::discord_client</innerclass>
     <innerclass refid="classdpp_1_1discord__voice__client" prot="public">dpp::discord_voice_client</innerclass>
     <innerclass refid="structdpp_1_1dns__cache__entry" prot="public">dpp::dns_cache_entry</innerclass>
@@ -230,6 +231,7 @@
     <innerclass refid="structdpp_1_1user__update__t" prot="public">dpp::user_update_t</innerclass>
     <innerclass refid="structdpp_1_1voice__buffer__send__t" prot="public">dpp::voice_buffer_send_t</innerclass>
     <innerclass refid="structdpp_1_1voice__client__disconnect__t" prot="public">dpp::voice_client_disconnect_t</innerclass>
+    <innerclass refid="structdpp_1_1voice__client__platform__t" prot="public">dpp::voice_client_platform_t</innerclass>
     <innerclass refid="structdpp_1_1voice__client__speaking__t" prot="public">dpp::voice_client_speaking_t</innerclass>
     <innerclass refid="classdpp_1_1voice__exception" prot="public">dpp::voice_exception</innerclass>
     <innerclass refid="structdpp_1_1voice__out__packet" prot="public">dpp::voice_out_packet</innerclass>
@@ -250,6 +252,7 @@
     <innerclass refid="classdpp_1_1when__any" prot="public">dpp::when_any</innerclass>
     <innernamespace refid="namespacedpp_1_1cache__policy">dpp::cache_policy</innernamespace>
     <innernamespace refid="namespacedpp_1_1colors">dpp::colors</innernamespace>
+    <innernamespace refid="namespacedpp_1_1dave">dpp::dave</innernamespace>
     <innernamespace refid="namespacedpp_1_1detail">dpp::detail</innernamespace>
     <innernamespace refid="namespacedpp_1_1embed__type">dpp::embed_type</innernamespace>
     <innernamespace refid="namespacedpp_1_1events">dpp::events</innernamespace>
@@ -1911,6 +1914,294 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/commandhandler.h" line="72" column="1" bodyfile="include/dpp/commandhandler.h" bodystart="72" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1ae4d631bf36ecccb5fcf937c964a49a0a" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>dave_version_t</name>
+        <enumvalue id="namespacedpp_1ae4d631bf36ecccb5fcf937c964a49a0aacb34998ebfcfafb992bf68f021805f83" prot="public">
+          <name>dave_version_none</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>DAVE disabled (default for now) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1ae4d631bf36ecccb5fcf937c964a49a0aa015a5fa481d645bf1547dfa5b7ab0b84" prot="public">
+          <name>dave_version_1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>DAVE enabled, version 1 (E2EE encryption on top of sodium) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Supported DAVE (Discord Audio Visual Encryption) protocol versions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="131" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="131" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1a589107ba48617812d4c260d95be99503" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>voice_websocket_opcode_t</name>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a3cdc4a920061526059640abebba89e10" prot="public">
+          <name>voice_opcode_connection_identify</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a13d7e83d40f71e726b58fd03ea4ca502" prot="public">
+          <name>voice_opcode_connection_select_protocol</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503ab6fff07fa01a971e6a8b6c653aed9739" prot="public">
+          <name>voice_opcode_connection_ready</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a12d166ae6d1d150393e9947cd7ba4d67" prot="public">
+          <name>voice_opcode_connection_heartbeat</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a84a424afa2d082835fd536fe8253fa74" prot="public">
+          <name>voice_opcode_connection_description</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503afc8c39dce3881469104370bebfa54b3c" prot="public">
+          <name>voice_opcode_client_speaking</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a1f05f311181fa1d6f11a6645b1a07a87" prot="public">
+          <name>voice_opcode_connection_heartbeat_ack</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a7a2fa206f34fc7d132b47e6f8b8f098f" prot="public">
+          <name>voice_opcode_connection_resume</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a81f4b0af1c66ba6ab4aa31a0413379b4" prot="public">
+          <name>voice_opcode_connection_hello</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a0e527f956dcb531ba339034cd78addb5" prot="public">
+          <name>voice_opcode_connection_resumed</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503ae1e419dac39cd63a1a4daa805dcd540f" prot="public">
+          <name>voice_opcode_multiple_clients_connect</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a21946a2100cbc6ea546bc5bcad77b05b" prot="public">
+          <name>voice_opcode_client_connect</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a27b2cd8fa3b0939b31c50c7853acf361" prot="public">
+          <name>voice_opcode_client_disconnect</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a8f10aed4407f76938bed358696f63473" prot="public">
+          <name>voice_opcode_media_sink</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a32d794de61cc74e5f1076bb17e24e3ca" prot="public">
+          <name>voice_client_flags</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a9e5b94e71c0de0508ec29c8e8efacef5" prot="public">
+          <name>voice_client_platform</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503abe8cd9cfcc9659dfe6756e3cc172939c" prot="public">
+          <name>voice_client_dave_prepare_transition</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503aa82512e2eaaa692be46f0ee9be2e4de5" prot="public">
+          <name>voice_client_dave_execute_transition</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503adb8a2b0f611a3c25350edd0f60b42f2e" prot="public">
+          <name>voice_client_dave_transition_ready</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503ac036d079715b2dff489c2e4240de2c0b" prot="public">
+          <name>voice_client_dave_prepare_epoch</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503ac154fa3a108b8e4c0881e7604351492e" prot="public">
+          <name>voice_client_dave_mls_external_sender</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a9202218953b2be20ea9c301713389a98" prot="public">
+          <name>voice_client_dave_mls_key_package</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503ab2e180a786ccac0c7c0728e6a66a4574" prot="public">
+          <name>voice_client_dave_mls_proposals</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503aa1c6f12c83b451d411274dc6271b9350" prot="public">
+          <name>voice_client_dave_mls_commit_message</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503acda11fe3b1df817a18ebb5e110e240ec" prot="public">
+          <name>voice_client_dave_announce_commit_transaction</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503afc6bc4b7f456158f9360a829576812ae" prot="public">
+          <name>voice_client_dave_mls_welcome</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1a589107ba48617812d4c260d95be99503a6ab60e1d35be60904850ccea87af5643" prot="public">
+          <name>voice_client_dave_mls_invalid_commit_welcome</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Discord voice websocket opcode types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="145" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="145" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedpp_1adb4889dd66bab821f51dba5136e07e81" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>client_platform_t</name>
+        <enumvalue id="namespacedpp_1adb4889dd66bab821f51dba5136e07e81a15940c3d7ddc8f65e480b5d4f24e65c7" prot="public">
+          <name>client_platform_desktop</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Web, Desktop. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1adb4889dd66bab821f51dba5136e07e81ad39c3fb55527b73fac1ed3167b174983" prot="public">
+          <name>client_platform_mobile</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Mobile device. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Discord voice platform types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dispatcher.h" line="2150" column="1" bodyfile="include/dpp/dispatcher.h" bodystart="2150" bodyend="2159"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a79e9b19c1aa69ef048c79d37801b947c" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6059,7 +6350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1718" column="1" bodyfile="include/dpp/guild.h" bodystart="1718" bodyend="1728"/>
+        <location file="include/dpp/guild.h" line="1720" column="1" bodyfile="include/dpp/guild.h" bodystart="1720" bodyend="1730"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1a8dac0d2a3e96824942b7c700dc4a526b" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6089,7 +6380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1733" column="1" bodyfile="include/dpp/guild.h" bodystart="1733" bodyend="1743"/>
+        <location file="include/dpp/guild.h" line="1735" column="1" bodyfile="include/dpp/guild.h" bodystart="1735" bodyend="1745"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1ae5c7aefdfff498b6e84e9f8f69d640e2" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -6128,7 +6419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1748" column="1" bodyfile="include/dpp/guild.h" bodystart="1748" bodyend="1764"/>
+        <location file="include/dpp/guild.h" line="1750" column="1" bodyfile="include/dpp/guild.h" bodystart="1750" bodyend="1766"/>
       </memberdef>
       <memberdef kind="enum" id="namespacedpp_1aaaa159f13811e8d13973c2794e171091" prot="public" static="no" strong="no">
         <type>uint8_t</type>
@@ -9285,6 +9576,15 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacedpp_1aa84690a0ba0251e8609440e93919da1ca3b445e535f31d7de2d862b4c44020e99" prot="public">
+          <name>OP_AUTO</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+<para>Automatic selection of type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
 <para>Low-level websocket opcodes for frames. </para>
         </briefdescription>
@@ -9292,7 +9592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/wsclient.h" line="65" column="1" bodyfile="include/dpp/wsclient.h" bodystart="65" bodyend="95"/>
+        <location file="include/dpp/wsclient.h" line="65" column="1" bodyfile="include/dpp/wsclient.h" bodystart="65" bodyend="100"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -9571,6 +9871,21 @@
         </inbodydescription>
         <location file="include/dpp/coro/awaitable.h" line="636" column="1" bodyfile="include/dpp/coro/awaitable.h" bodystart="636" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1ae225fa7236536ef5a433821171982dbf" prot="public" static="no">
+        <type>std::function&lt; void(const std::string &amp;)&gt;</type>
+        <definition>using dpp::privacy_code_callback_t = typedef std::function&lt;void(const std::string&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>privacy_code_callback_t</name>
+        <briefdescription>
+<para>A callback for obtaining a user&apos;s privacy code. The privacy code is returned as the parameter to the function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a callback function because DAVE requires use of a very resource intensive SCRYPT call, which uses lots of ram and cpu and take significant time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="232" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" prot="public" static="no">
         <type>std::function&lt; void(const <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &amp;)&gt;</type>
         <definition>typedef std::function&lt; void(const confirmation_callback_t &amp;)&gt; dpp::command_completion_event_t</definition>
@@ -9682,7 +9997,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="1673" column="28" bodyfile="include/dpp/guild.h" bodystart="1673" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="1675" column="28" bodyfile="include/dpp/guild.h" bodystart="1675" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a219aedbe5bf37835c4a65115fccba278" prot="public" static="no">
         <type>std::unordered_map&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref>, <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt;</type>
@@ -9696,7 +10011,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="2036" column="28" bodyfile="include/dpp/guild.h" bodystart="2036" bodyend="-1"/>
+        <location file="include/dpp/guild.h" line="2038" column="28" bodyfile="include/dpp/guild.h" bodystart="2038" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacedpp_1a4dbbdf54366910bacd95554ccbc705a2" prot="public" static="no">
         <type>std::multimap&lt; std::string, std::string &gt;</type>
@@ -10223,6 +10538,51 @@
         </inbodydescription>
         <location file="include/dpp/cache.h" line="34" column="30" declfile="include/dpp/cache.h" declline="34" declcolumn="30"/>
       </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a864cd30661fc496fae896ddf311ccdb4" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int32_t</type>
+        <definition>constexpr int32_t dpp::opus_sample_rate_hz</definition>
+        <argsstring></argsstring>
+        <name>opus_sample_rate_hz</name>
+        <initializer>= 48000</initializer>
+        <briefdescription>
+<para>Sample rate for OPUS (48khz) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="62" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a4382884d78d028b54f2eaf9ac5738313" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int32_t</type>
+        <definition>constexpr int32_t dpp::opus_channel_count</definition>
+        <argsstring></argsstring>
+        <name>opus_channel_count</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>Channel count for OPUS (stereo) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="67" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1afbbdf6864ee7fd1a425a854a76584917" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t dpp::voice_protocol_version</definition>
+        <argsstring></argsstring>
+        <name>voice_protocol_version</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+<para>Discord voice protocol version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="72" column="27" bodyfile="include/dpp/discordvoiceclient.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="namespacedpp_1af9ada17b1b7470c57690031929bb7cff" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr size_t</type>
         <definition>constexpr size_t dpp::send_audio_raw_max_length</definition>
@@ -10235,7 +10595,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordvoiceclient.h" line="65" column="25" bodyfile="include/dpp/discordvoiceclient.h" bodystart="65" bodyend="-1"/>
+        <location file="include/dpp/discordvoiceclient.h" line="86" column="25" bodyfile="include/dpp/discordvoiceclient.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedpp_1a8dacf5d2b88b00c076bed556cb622a40" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t dpp::secret_key_size</definition>
+        <argsstring></argsstring>
+        <name>secret_key_size</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="88" column="25" bodyfile="include/dpp/discordvoiceclient.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedpp_1af762f7c2f0c23de9fbba385e8f547d29" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -12382,7 +12756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="2031" column="6" declfile="include/dpp/guild.h" declline="2031" declcolumn="6"/>
+        <location file="include/dpp/guild.h" line="2033" column="6" declfile="include/dpp/guild.h" declline="2033" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a239ce3fb8b4d9873dffeb5cb9b249f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> DPP_EXPORT</type>
@@ -12433,7 +12807,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/guild.h" line="2047" column="25" declfile="include/dpp/guild.h" declline="2047" declcolumn="25"/>
+        <location file="include/dpp/guild.h" line="2049" column="25" declfile="include/dpp/guild.h" declline="2049" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a6da92d90e8b0847e2d8c2633aaf370f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>

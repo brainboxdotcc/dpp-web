@@ -9,5 +9,5 @@ var searchData=
   ['when_6',['when',['../classdpp_1_1event__router__t.html#a16c2527f66c8b74e5c0678ace4fa549e',1,'dpp::event_router_t']]],
   ['when_5fany_7',['when_any',['../classdpp_1_1when__any.html#ac39aad6084441a5d4b07388923a1ecc2',1,'dpp::when_any::when_any()=default'],['../classdpp_1_1when__any.html#a86200684f682373def017f5fa0358da4',1,'dpp::when_any::when_any(Args_ &amp;&amp;... args)'],['../classdpp_1_1when__any.html#a6579037dad6b5cbb02bcda852fb31142',1,'dpp::when_any::when_any(const when_any &amp;)=delete'],['../classdpp_1_1when__any.html#a10d02683e3c556b9f9b051ccdf679ea0',1,'dpp::when_any::when_any(when_any &amp;&amp;) noexcept=default'],['../namespacedpp.html#adec042312c305da2b49380300bde130b',1,'dpp::when_any()']]],
   ['widget_5fenabled_8',['widget_enabled',['../classdpp_1_1guild.html#afdfe3c2bd4025d259b42dedddc2301a1',1,'dpp::guild']]],
-  ['write_9',['write',['../classdpp_1_1ssl__client.html#a85cb0444e7c179c7dae331c62b73eceb',1,'dpp::ssl_client::write()'],['../classdpp_1_1websocket__client.html#a9e4a4fa84657f3c0557e2837e3aa2c00',1,'dpp::websocket_client::write()']]]
+  ['write_9',['write',['../classdpp_1_1websocket__client.html#a1a28fcb2647f4e1203c4aa1b842a2bc9',1,'dpp::websocket_client']]]
 ];

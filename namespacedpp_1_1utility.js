@@ -38,7 +38,7 @@ var namespacedpp_1_1utility =
     [ "cmyk", "namespacedpp_1_1utility.html#acfa947bc1c2e1863791a7ad60fe6cda7", null ],
     [ "cout_logger", "namespacedpp_1_1utility.html#a8c2cc04bb80ffd287b376d5977899277", null ],
     [ "current_date_time", "namespacedpp_1_1utility.html#a1a9168eaaf347543e55e607858f24eb3", null ],
-    [ "debug_dump", "namespacedpp_1_1utility.html#a02456e22a1d41893a9b321bf8ccaeec6", null ],
+    [ "debug_dump", "namespacedpp_1_1utility.html#a63de61350d94588d808b170e81228092", null ],
     [ "emoji_mention", "namespacedpp_1_1utility.html#ab8933e9c5ee35036923cc73fbd54a4db", null ],
     [ "exec", "namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0", null ],
     [ "file_extension", "namespacedpp_1_1utility.html#ada68aa2fde414885eec777031c5cf768", null ],

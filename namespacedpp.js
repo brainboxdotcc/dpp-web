@@ -711,6 +711,7 @@ var namespacedpp =
       [ "yellow_orange", "namespacedpp_1_1colors.html#a1685b158dfb57b79981ce92ff9d0ed7c", null ],
       [ "zombie_green", "namespacedpp_1_1colors.html#a9786cfa44906aa349ed3c66fceece1c5", null ]
     ] ],
+    [ "dave", "namespacedpp_1_1dave.html", "namespacedpp_1_1dave" ],
     [ "detail", "namespacedpp_1_1detail.html", "namespacedpp_1_1detail" ],
     [ "embed_type", "namespacedpp_1_1embed__type.html", [
       [ "emt_article", "namespacedpp_1_1embed__type.html#a0dcbd746be0d87674f228c25d677afc4", null ],
@@ -6513,6 +6514,7 @@ var namespacedpp =
     [ "context_menu_t", "structdpp_1_1context__menu__t.html", "structdpp_1_1context__menu__t" ],
     [ "coroutine", "classdpp_1_1coroutine.html", "classdpp_1_1coroutine" ],
     [ "coroutine_dummy", "structdpp_1_1coroutine__dummy.html", "structdpp_1_1coroutine__dummy" ],
+    [ "dave_binary_header_t", "structdpp_1_1dave__binary__header__t.html", "structdpp_1_1dave__binary__header__t" ],
     [ "discord_client", "classdpp_1_1discord__client.html", "classdpp_1_1discord__client" ],
     [ "discord_voice_client", "classdpp_1_1discord__voice__client.html", "classdpp_1_1discord__voice__client" ],
     [ "dns_cache_entry", "structdpp_1_1dns__cache__entry.html", "structdpp_1_1dns__cache__entry" ],
@@ -6674,6 +6676,7 @@ var namespacedpp =
     [ "user_update_t", "structdpp_1_1user__update__t.html", "structdpp_1_1user__update__t" ],
     [ "voice_buffer_send_t", "structdpp_1_1voice__buffer__send__t.html", "structdpp_1_1voice__buffer__send__t" ],
     [ "voice_client_disconnect_t", "structdpp_1_1voice__client__disconnect__t.html", "structdpp_1_1voice__client__disconnect__t" ],
+    [ "voice_client_platform_t", "structdpp_1_1voice__client__platform__t.html", "structdpp_1_1voice__client__platform__t" ],
     [ "voice_client_speaking_t", "structdpp_1_1voice__client__speaking__t.html", "structdpp_1_1voice__client__speaking__t" ],
     [ "voice_exception", "classdpp_1_1voice__exception.html", "classdpp_1_1voice__exception" ],
     [ "voice_out_packet", "structdpp_1_1voice__out__packet.html", "structdpp_1_1voice__out__packet" ],
@@ -6729,6 +6732,7 @@ var namespacedpp =
     [ "parameter_list_t", "namespacedpp.html#a632b6ae7b47a5feb95104644a487e4f1", null ],
     [ "parameter_registration_t", "namespacedpp.html#a6daf230da747f01eeaa36fd3d5e51a65", null ],
     [ "presence_map", "namespacedpp.html#aa71f7e347422516d1022707f1d3e5b1c", null ],
+    [ "privacy_code_callback_t", "namespacedpp.html#ae225fa7236536ef5a433821171982dbf", null ],
     [ "promise", "namespacedpp.html#acd398eef0974f7504e37176b97157dfe", null ],
     [ "reaction_collector_t", "namespacedpp.html#a04a972a0055376f744c81b0ac9129577", null ],
     [ "role_collector_t", "namespacedpp.html#a75c3daf035b2a2d9a5e0fcc5f11c936f", null ],
@@ -6918,6 +6922,10 @@ var namespacedpp =
       [ "CHANNEL_FORUM", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caadefa4b5b2fdae86eda8f8e90807ec922", null ],
       [ "CHANNEL_MEDIA", "namespacedpp.html#a732e832861149a278f27ea7840b8e4caa37ad4ff1eb103f9f918ede8baf7c65cd", null ]
     ] ],
+    [ "client_platform_t", "namespacedpp.html#adb4889dd66bab821f51dba5136e07e81", [
+      [ "client_platform_desktop", "namespacedpp.html#adb4889dd66bab821f51dba5136e07e81a15940c3d7ddc8f65e480b5d4f24e65c7", null ],
+      [ "client_platform_mobile", "namespacedpp.html#adb4889dd66bab821f51dba5136e07e81ad39c3fb55527b73fac1ed3167b174983", null ]
+    ] ],
     [ "command_option_type", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58", [
       [ "co_sub_command", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58a1b0940a3156aada72e6fc41b0e17612c", null ],
       [ "co_sub_command_group", "namespacedpp.html#abc401d86119c6443bf72d736857c1a58aaf7efc648d35b8a702480f916c904547", null ],
@@ -6957,6 +6965,10 @@ var namespacedpp =
       [ "cot_role_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a67095762bbcce1930f5751e24a6ce26a", null ],
       [ "cot_mentionable_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a3348650cc3c6324111def4ce383809e3", null ],
       [ "cot_channel_selectmenu", "namespacedpp.html#afce43206033521b990e3a72bb87481b7a67cb03df6c78061abb9605e50353da0e", null ]
+    ] ],
+    [ "dave_version_t", "namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0a", [
+      [ "dave_version_none", "namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0aacb34998ebfcfafb992bf68f021805f83", null ],
+      [ "dave_version_1", "namespacedpp.html#ae4d631bf36ecccb5fcf937c964a49a0aa015a5fa481d645bf1547dfa5b7ab0b84", null ]
     ] ],
     [ "default_forum_sort_order_t", "namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06", [
       [ "so_latest_activity", "namespacedpp.html#ab8154fdded2c361ae6c91397cd3e4f06aa98a3e666bb50cb225a1e31be8c7ae5f", null ],
@@ -7814,6 +7826,35 @@ var namespacedpp =
       [ "ver_high", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85a637cb88d1e072ae739f24ea01982c456", null ],
       [ "ver_very_high", "namespacedpp.html#a15724514db1d98eb10a8bd2d5ba44c85aba06f9c0033583341762686e4e76679b", null ]
     ] ],
+    [ "voice_websocket_opcode_t", "namespacedpp.html#a589107ba48617812d4c260d95be99503", [
+      [ "voice_opcode_connection_identify", "namespacedpp.html#a589107ba48617812d4c260d95be99503a3cdc4a920061526059640abebba89e10", null ],
+      [ "voice_opcode_connection_select_protocol", "namespacedpp.html#a589107ba48617812d4c260d95be99503a13d7e83d40f71e726b58fd03ea4ca502", null ],
+      [ "voice_opcode_connection_ready", "namespacedpp.html#a589107ba48617812d4c260d95be99503ab6fff07fa01a971e6a8b6c653aed9739", null ],
+      [ "voice_opcode_connection_heartbeat", "namespacedpp.html#a589107ba48617812d4c260d95be99503a12d166ae6d1d150393e9947cd7ba4d67", null ],
+      [ "voice_opcode_connection_description", "namespacedpp.html#a589107ba48617812d4c260d95be99503a84a424afa2d082835fd536fe8253fa74", null ],
+      [ "voice_opcode_client_speaking", "namespacedpp.html#a589107ba48617812d4c260d95be99503afc8c39dce3881469104370bebfa54b3c", null ],
+      [ "voice_opcode_connection_heartbeat_ack", "namespacedpp.html#a589107ba48617812d4c260d95be99503a1f05f311181fa1d6f11a6645b1a07a87", null ],
+      [ "voice_opcode_connection_resume", "namespacedpp.html#a589107ba48617812d4c260d95be99503a7a2fa206f34fc7d132b47e6f8b8f098f", null ],
+      [ "voice_opcode_connection_hello", "namespacedpp.html#a589107ba48617812d4c260d95be99503a81f4b0af1c66ba6ab4aa31a0413379b4", null ],
+      [ "voice_opcode_connection_resumed", "namespacedpp.html#a589107ba48617812d4c260d95be99503a0e527f956dcb531ba339034cd78addb5", null ],
+      [ "voice_opcode_multiple_clients_connect", "namespacedpp.html#a589107ba48617812d4c260d95be99503ae1e419dac39cd63a1a4daa805dcd540f", null ],
+      [ "voice_opcode_client_connect", "namespacedpp.html#a589107ba48617812d4c260d95be99503a21946a2100cbc6ea546bc5bcad77b05b", null ],
+      [ "voice_opcode_client_disconnect", "namespacedpp.html#a589107ba48617812d4c260d95be99503a27b2cd8fa3b0939b31c50c7853acf361", null ],
+      [ "voice_opcode_media_sink", "namespacedpp.html#a589107ba48617812d4c260d95be99503a8f10aed4407f76938bed358696f63473", null ],
+      [ "voice_client_flags", "namespacedpp.html#a589107ba48617812d4c260d95be99503a32d794de61cc74e5f1076bb17e24e3ca", null ],
+      [ "voice_client_platform", "namespacedpp.html#a589107ba48617812d4c260d95be99503a9e5b94e71c0de0508ec29c8e8efacef5", null ],
+      [ "voice_client_dave_prepare_transition", "namespacedpp.html#a589107ba48617812d4c260d95be99503abe8cd9cfcc9659dfe6756e3cc172939c", null ],
+      [ "voice_client_dave_execute_transition", "namespacedpp.html#a589107ba48617812d4c260d95be99503aa82512e2eaaa692be46f0ee9be2e4de5", null ],
+      [ "voice_client_dave_transition_ready", "namespacedpp.html#a589107ba48617812d4c260d95be99503adb8a2b0f611a3c25350edd0f60b42f2e", null ],
+      [ "voice_client_dave_prepare_epoch", "namespacedpp.html#a589107ba48617812d4c260d95be99503ac036d079715b2dff489c2e4240de2c0b", null ],
+      [ "voice_client_dave_mls_external_sender", "namespacedpp.html#a589107ba48617812d4c260d95be99503ac154fa3a108b8e4c0881e7604351492e", null ],
+      [ "voice_client_dave_mls_key_package", "namespacedpp.html#a589107ba48617812d4c260d95be99503a9202218953b2be20ea9c301713389a98", null ],
+      [ "voice_client_dave_mls_proposals", "namespacedpp.html#a589107ba48617812d4c260d95be99503ab2e180a786ccac0c7c0728e6a66a4574", null ],
+      [ "voice_client_dave_mls_commit_message", "namespacedpp.html#a589107ba48617812d4c260d95be99503aa1c6f12c83b451d411274dc6271b9350", null ],
+      [ "voice_client_dave_announce_commit_transaction", "namespacedpp.html#a589107ba48617812d4c260d95be99503acda11fe3b1df817a18ebb5e110e240ec", null ],
+      [ "voice_client_dave_mls_welcome", "namespacedpp.html#a589107ba48617812d4c260d95be99503afc6bc4b7f456158f9360a829576812ae", null ],
+      [ "voice_client_dave_mls_invalid_commit_welcome", "namespacedpp.html#a589107ba48617812d4c260d95be99503a6ab60e1d35be60904850ccea87af5643", null ]
+    ] ],
     [ "voiceregion_flags", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813", [
       [ "v_optimal", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813afb06fc75de5270a1646e4ed14754ac1c", null ],
       [ "v_deprecated", "namespacedpp.html#a03f707e068e2f7e7c7277094af901813a7ffeb4c61fc6bdfc3c66fc45837df985", null ],
@@ -7843,7 +7884,8 @@ var namespacedpp =
       [ "OP_BINARY", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1cac6c295924c27154cf564628ebb9677c9", null ],
       [ "OP_CLOSE", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1caf10fce37d364106c0d8d13472f031bb0", null ],
       [ "OP_PING", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1ca1cba9d927313c32ed6fdbf191018ee59", null ],
-      [ "OP_PONG", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1ca0dbab9ed2998b084825c4803c52fb7bc", null ]
+      [ "OP_PONG", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1ca0dbab9ed2998b084825c4803c52fb7bc", null ],
+      [ "OP_AUTO", "namespacedpp.html#aa84690a0ba0251e8609440e93919da1ca3b445e535f31d7de2d862b4c44020e99", null ]
     ] ],
     [ "ws_state", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519", [
       [ "HTTP_HEADERS", "namespacedpp.html#af3b7f3e861707f45beefa9449de70519ac4e7462fef7673f64bf129dde58c9f70", null ],
@@ -7947,5 +7989,9 @@ var namespacedpp =
     [ "MAX_AVATAR_SIZE", "namespacedpp.html#ae876818464d49870905285dd988de870", null ],
     [ "message_ref_type", "namespacedpp.html#a1c541a98114325f4c6c0f138887a8eac", null ],
     [ "mrt_forward", "namespacedpp.html#ae7e7e143b9572651ee47636e65ff8425", null ],
-    [ "send_audio_raw_max_length", "namespacedpp.html#af9ada17b1b7470c57690031929bb7cff", null ]
+    [ "opus_channel_count", "namespacedpp.html#a4382884d78d028b54f2eaf9ac5738313", null ],
+    [ "opus_sample_rate_hz", "namespacedpp.html#a864cd30661fc496fae896ddf311ccdb4", null ],
+    [ "secret_key_size", "namespacedpp.html#a8dacf5d2b88b00c076bed556cb622a40", null ],
+    [ "send_audio_raw_max_length", "namespacedpp.html#af9ada17b1b7470c57690031929bb7cff", null ],
+    [ "voice_protocol_version", "namespacedpp.html#afbbdf6864ee7fd1a425a854a76584917", null ]
 ];

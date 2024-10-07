@@ -153,9 +153,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeed0e3f51cc2ce2a6752be2ba7b6f8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac">rehash_members</a> ()</td></tr>
 <tr class="memdesc:aeed0e3f51cc2ce2a6752be2ba7b6f8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rehash members map.  <a href="classdpp_1_1guild.html#aeed0e3f51cc2ce2a6752be2ba7b6f8ac">More...</a><br /></td></tr>
 <tr class="separator:aeed0e3f51cc2ce2a6752be2ba7b6f8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d5e43e678d6a0448930bd31620d979e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e">connect_member_voice</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, bool self_mute=false, bool self_deaf=false)</td></tr>
-<tr class="memdesc:a0d5e43e678d6a0448930bd31620d979e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a voice channel another guild member is in.  <a href="classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e">More...</a><br /></td></tr>
-<tr class="separator:a0d5e43e678d6a0448930bd31620d979e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd7568623d6ee5c9c983f8c9b939fdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild.html#a5bd7568623d6ee5c9c983f8c9b939fdb">connect_member_voice</a> (<a class="el" href="classdpp_1_1snowflake.html">snowflake</a> user_id, bool self_mute=false, bool self_deaf=false, bool dave=false)</td></tr>
+<tr class="memdesc:a5bd7568623d6ee5c9c983f8c9b939fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a voice channel another guild member is in.  <a href="classdpp_1_1guild.html#a5bd7568623d6ee5c9c983f8c9b939fdb">More...</a><br /></td></tr>
+<tr class="separator:a5bd7568623d6ee5c9c983f8c9b939fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a480e1091c2a035c99643ae9ebf5d38d0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1guild.html#a480e1091c2a035c99643ae9ebf5d38d0">get_banner_url</a> (uint16_t size=0, const <a class="el" href="namespacedpp.html#ab4fba082389f572d696d97404a2bcb31">image_type</a> format=<a class="el" href="namespacedpp.html#ab4fba082389f572d696d97404a2bcb31ace2c4de1f89397132561031f246f89f7">i_png</a>, bool prefer_animated=true) const</td></tr>
 <tr class="memdesc:a480e1091c2a035c99643ae9ebf5d38d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the banner url of the guild if it have one, otherwise returns an empty string.  <a href="classdpp_1_1guild.html#a480e1091c2a035c99643ae9ebf5d38d0">More...</a><br /></td></tr>
 <tr class="separator:a480e1091c2a035c99643ae9ebf5d38d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -610,8 +610,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d5e43e678d6a0448930bd31620d979e" name="a0d5e43e678d6a0448930bd31620d979e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d5e43e678d6a0448930bd31620d979e">&#9670;&nbsp;</a></span>connect_member_voice()</h2>
+<a id="a5bd7568623d6ee5c9c983f8c9b939fdb" name="a5bd7568623d6ee5c9c983f8c9b939fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd7568623d6ee5c9c983f8c9b939fdb">&#9670;&nbsp;</a></span>connect_member_voice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -632,7 +632,13 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>self_deaf</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>self_deaf</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dave</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -648,9 +654,11 @@ Friends</h2></td></tr>
     <tr><td class="paramname">user_id</td><td>User id to join </td></tr>
     <tr><td class="paramname">self_mute</td><td>True if the bot should mute itself </td></tr>
     <tr><td class="paramname">self_deaf</td><td>True if the bot should deafen itself </td></tr>
+    <tr><td class="paramname">dave</td><td>True to enable DAVE E2EE </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section warning"><dt>Warning</dt><dd>DAVE is EXPERIMENTAL and subject to change. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the user specified is in a vc, false if they aren't </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This is NOT a synchronous blocking call! The bot isn't instantly ready to send or listen for audio, as we have to wait for the connection to the voice server to be established! e.g. wait for <a class="el" href="classdpp_1_1cluster.html#a8f2f865ac3492196a8167a319261ffb6" title="Called when a voice channel is connected and ready to send audio. Note that this is not directly atta...">dpp::cluster::on_voice_ready</a> event, and then send the audio within that event. </dd></dl>
 

@@ -152,9 +152,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0100372dd4c32d9faddaf69fffda7cfc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a0100372dd4c32d9faddaf69fffda7cfc">handle_buffer</a> (std::string &amp;<a class="el" href="classdpp_1_1ssl__client.html#ae0e5e0799448bf29506bfcc21168d3fa">buffer</a>)</td></tr>
 <tr class="memdesc:a0100372dd4c32d9faddaf69fffda7cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle input from the input buffer. This function will be called until all data in the buffer has been processed and the buffer is empty.  <a href="classdpp_1_1ssl__client.html#a0100372dd4c32d9faddaf69fffda7cfc">More...</a><br /></td></tr>
 <tr class="separator:a0100372dd4c32d9faddaf69fffda7cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85cb0444e7c179c7dae331c62b73eceb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a85cb0444e7c179c7dae331c62b73eceb">write</a> (const std::string_view data)</td></tr>
-<tr class="memdesc:a85cb0444e7c179c7dae331c62b73eceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to the output buffer.  <a href="classdpp_1_1ssl__client.html#a85cb0444e7c179c7dae331c62b73eceb">More...</a><br /></td></tr>
-<tr class="separator:a85cb0444e7c179c7dae331c62b73eceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8f5c577083d2a6b7e4f6558f29962f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#a5e8f5c577083d2a6b7e4f6558f29962f">socket_write</a> (const std::string_view data)</td></tr>
+<tr class="memdesc:a5e8f5c577083d2a6b7e4f6558f29962f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to the output buffer.  <a href="classdpp_1_1ssl__client.html#a5e8f5c577083d2a6b7e4f6558f29962f">More...</a><br /></td></tr>
+<tr class="separator:a5e8f5c577083d2a6b7e4f6558f29962f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae85df4b13fa64d701fb09f2bf44f100e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1ssl__client.html#ae85df4b13fa64d701fb09f2bf44f100e">close</a> ()</td></tr>
 <tr class="memdesc:ae85df4b13fa64d701fb09f2bf44f100e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close socket connection.  <a href="classdpp_1_1ssl__client.html#ae85df4b13fa64d701fb09f2bf44f100e">More...</a><br /></td></tr>
 <tr class="separator:ae85df4b13fa64d701fb09f2bf44f100e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -582,28 +582,20 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a85cb0444e7c179c7dae331c62b73eceb" name="a85cb0444e7c179c7dae331c62b73eceb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85cb0444e7c179c7dae331c62b73eceb">&#9670;&nbsp;</a></span>write()</h2>
+<a id="a5e8f5c577083d2a6b7e4f6558f29962f" name="a5e8f5c577083d2a6b7e4f6558f29962f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8f5c577083d2a6b7e4f6558f29962f">&#9670;&nbsp;</a></span>socket_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void dpp::ssl_client::write </td>
+          <td class="memname">void dpp::ssl_client::socket_write </td>
           <td>(</td>
           <td class="paramtype">const std::string_view&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Write to the output buffer. </p>
@@ -614,8 +606,6 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The data may not be written immediately and may be written at a later time to the socket. </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classdpp_1_1websocket__client.html#a9e4a4fa84657f3c0557e2837e3aa2c00">dpp::websocket_client</a>.</p>
 
 </div>
 </div>

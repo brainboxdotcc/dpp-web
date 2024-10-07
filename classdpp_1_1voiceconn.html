@@ -124,9 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2238afc107e4e97daa0693c81fe150fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1voiceconn.html#a2238afc107e4e97daa0693c81fe150fd">voiceconn</a> ()=default</td></tr>
 <tr class="memdesc:a2238afc107e4e97daa0693c81fe150fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new voiceconn object.  <a href="classdpp_1_1voiceconn.html#a2238afc107e4e97daa0693c81fe150fd">More...</a><br /></td></tr>
 <tr class="separator:a2238afc107e4e97daa0693c81fe150fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b0b033f371d814cf04e09ac7cf08ac1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1voiceconn.html#a7b0b033f371d814cf04e09ac7cf08ac1">voiceconn</a> (class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *o, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> _channel_id)</td></tr>
-<tr class="memdesc:a7b0b033f371d814cf04e09ac7cf08ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new voiceconn object.  <a href="classdpp_1_1voiceconn.html#a7b0b033f371d814cf04e09ac7cf08ac1">More...</a><br /></td></tr>
-<tr class="separator:a7b0b033f371d814cf04e09ac7cf08ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8abb717548b593bda59b9f124fb2328"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1voiceconn.html#af8abb717548b593bda59b9f124fb2328">voiceconn</a> (class <a class="el" href="classdpp_1_1discord__client.html">discord_client</a> *o, <a class="el" href="classdpp_1_1snowflake.html">snowflake</a> _channel_id, bool enable_dave)</td></tr>
+<tr class="memdesc:af8abb717548b593bda59b9f124fb2328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new voiceconn object.  <a href="classdpp_1_1voiceconn.html#af8abb717548b593bda59b9f124fb2328">More...</a><br /></td></tr>
+<tr class="separator:af8abb717548b593bda59b9f124fb2328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5200c6bba0b6219a0cdd29c6590d0c98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98">~voiceconn</a> ()</td></tr>
 <tr class="memdesc:a5200c6bba0b6219a0cdd29c6590d0c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the voiceconn object.  <a href="classdpp_1_1voiceconn.html#a5200c6bba0b6219a0cdd29c6590d0c98">More...</a><br /></td></tr>
 <tr class="separator:a5200c6bba0b6219a0cdd29c6590d0c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +160,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a812e4cdee1fc7ed2a024d78161c84f86"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classdpp_1_1discord__voice__client.html">discord_voice_client</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1voiceconn.html#a812e4cdee1fc7ed2a024d78161c84f86">voiceclient</a></td></tr>
 <tr class="memdesc:a812e4cdee1fc7ed2a024d78161c84f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">voice websocket client  <a href="classdpp_1_1voiceconn.html#a812e4cdee1fc7ed2a024d78161c84f86">More...</a><br /></td></tr>
 <tr class="separator:a812e4cdee1fc7ed2a024d78161c84f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc9cf608a4830f31f317066a28c5dcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1voiceconn.html#a0bc9cf608a4830f31f317066a28c5dcb">dave</a></td></tr>
+<tr class="memdesc:a0bc9cf608a4830f31f317066a28c5dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">True to enable DAVE E2EE.  <a href="classdpp_1_1voiceconn.html#a0bc9cf608a4830f31f317066a28c5dcb">More...</a><br /></td></tr>
+<tr class="separator:a0bc9cf608a4830f31f317066a28c5dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a connection to a voice channel. A client can only connect to one voice channel per guild at a time, so these are stored in a map in the <a class="el" href="classdpp_1_1discord__client.html" title="Implements a discord client. Each discord_client connects to one shard and derives from a websocket c...">dpp::discord_client</a> keyed by guild_id. </p>
@@ -191,8 +194,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b0b033f371d814cf04e09ac7cf08ac1" name="a7b0b033f371d814cf04e09ac7cf08ac1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b0b033f371d814cf04e09ac7cf08ac1">&#9670;&nbsp;</a></span>voiceconn() <span class="overload">[2/2]</span></h2>
+<a id="af8abb717548b593bda59b9f124fb2328" name="af8abb717548b593bda59b9f124fb2328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8abb717548b593bda59b9f124fb2328">&#9670;&nbsp;</a></span>voiceconn() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +210,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classdpp_1_1snowflake.html">snowflake</a>&#160;</td>
-          <td class="paramname"><em>_channel_id</em>&#160;</td>
+          <td class="paramname"><em>_channel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_dave</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -222,6 +231,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">o</td><td>owner </td></tr>
     <tr><td class="paramname">_channel_id</td><td>voice channel id </td></tr>
+    <tr><td class="paramname">enable_dave</td><td>True to enable DAVE E2EE @warn DAVE is an EXPERIMENTAL feature! </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,7 +282,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference to self </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>It can spawn a thread to establish the connection, so this is NOT a synchronous blocking call! You shouldn't call this directly. Use a wrapper function instead. e.g. <a class="el" href="classdpp_1_1guild.html#a0d5e43e678d6a0448930bd31620d979e" title="Connect to a voice channel another guild member is in.">dpp::guild::connect_member_voice</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It can spawn a thread to establish the connection, so this is NOT a synchronous blocking call! You shouldn't call this directly. Use a wrapper function instead. e.g. <a class="el" href="classdpp_1_1guild.html#a5bd7568623d6ee5c9c983f8c9b939fdb" title="Connect to a voice channel another guild member is in.">dpp::guild::connect_member_voice</a> </dd></dl>
 
 </div>
 </div>
@@ -350,6 +360,23 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Voice Channel ID. </p>
+
+</div>
+</div>
+<a id="a0bc9cf608a4830f31f317066a28c5dcb" name="a0bc9cf608a4830f31f317066a28c5dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc9cf608a4830f31f317066a28c5dcb">&#9670;&nbsp;</a></span>dave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::voiceconn::dave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True to enable DAVE E2EE. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This is an EXPERIMENTAL feature! </dd></dl>
 
 </div>
 </div>

@@ -90,6 +90,23 @@
         </inbodydescription>
         <location file="include/dpp/discordclient.h" line="88" column="28" bodyfile="include/dpp/discordclient.h" bodystart="88" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1voiceconn_1a0bc9cf608a4830f31f317066a28c5dcb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dpp::voiceconn::dave</definition>
+        <argsstring></argsstring>
+        <name>dave</name>
+        <briefdescription>
+<para>True to enable DAVE E2EE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This is an EXPERIMENTAL feature! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordclient.h" line="94" column="6" bodyfile="include/dpp/discordclient.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classdpp_1_1voiceconn_1a2238afc107e4e97daa0693c81fe150fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -104,12 +121,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="93" column="1"/>
+        <location file="include/dpp/discordclient.h" line="99" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classdpp_1_1voiceconn_1a7b0b033f371d814cf04e09ac7cf08ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdpp_1_1voiceconn_1af8abb717548b593bda59b9f124fb2328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>dpp::voiceconn::voiceconn</definition>
-        <argsstring>(class discord_client *o, snowflake _channel_id)</argsstring>
+        <argsstring>(class discord_client *o, snowflake _channel_id, bool enable_dave)</argsstring>
         <name>voiceconn</name>
         <param>
           <type>class <ref refid="classdpp_1_1discord__client" kindref="compound">discord_client</ref> *</type>
@@ -118,6 +135,10 @@
         <param>
           <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
           <declname>_channel_id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable_dave</declname>
         </param>
         <briefdescription>
 <para>Construct a new voiceconn object. </para>
@@ -139,12 +160,20 @@
 <para>voice channel id </para>
 </parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enable_dave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to enable DAVE E2EE @warn DAVE is an EXPERIMENTAL feature! </para>
+</parameterdescription>
+</parameteritem>
 </parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="101" column="1"/>
+        <location file="include/dpp/discordclient.h" line="109" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceconn_1a5200c6bba0b6219a0cdd29c6590d0c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -158,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="106" column="1"/>
+        <location file="include/dpp/discordclient.h" line="114" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceconn_1a7dd6504b406b5e08f9fd9337a275568d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -175,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="114" column="6"/>
+        <location file="include/dpp/discordclient.h" line="122" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceconn_1a8bb23d980d80e0d61c1cadc61bacf278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -192,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="121" column="6"/>
+        <location file="include/dpp/discordclient.h" line="129" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceconn_1ae8751945fb4ef1938e4b45f119aa49c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> &amp;</type>
@@ -218,13 +247,13 @@
 </parameterlist>
 <simplesect kind="return"><para>reference to self </para>
 </simplesect>
-<simplesect kind="note"><para>It can spawn a thread to establish the connection, so this is NOT a synchronous blocking call! You shouldn&apos;t call this directly. Use a wrapper function instead. e.g. <ref refid="classdpp_1_1guild_1a0d5e43e678d6a0448930bd31620d979e" kindref="member">dpp::guild::connect_member_voice</ref> </para>
+<simplesect kind="note"><para>It can spawn a thread to establish the connection, so this is NOT a synchronous blocking call! You shouldn&apos;t call this directly. Use a wrapper function instead. e.g. <ref refid="classdpp_1_1guild_1a5bd7568623d6ee5c9c983f8c9b939fdb" kindref="member">dpp::guild::connect_member_voice</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="132" column="11"/>
+        <location file="include/dpp/discordclient.h" line="140" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1voiceconn_1a05b4745343840f96e585ece0456bd831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1voiceconn" kindref="compound">voiceconn</ref> &amp;</type>
@@ -241,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/discordclient.h" line="138" column="11"/>
+        <location file="include/dpp/discordclient.h" line="146" column="11"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -474,6 +503,9 @@
         <childnode refid="6" relation="usage">
           <edgelabel>voiceclient</edgelabel>
         </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>dave</edgelabel>
+        </childnode>
       </node>
       <node id="7">
         <label>dpp::websocket_client</label>
@@ -545,11 +577,12 @@
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/discordclient.h" line="59" column="1" bodyfile="include/dpp/discordclient.h" bodystart="59" bodyend="139"/>
+    <location file="include/dpp/discordclient.h" line="59" column="1" bodyfile="include/dpp/discordclient.h" bodystart="59" bodyend="147"/>
     <listofallmembers>
       <member refid="classdpp_1_1voiceconn_1a9ae04af7ba5f3ed36e248ece6f2ad25b" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>channel_id</name></member>
       <member refid="classdpp_1_1voiceconn_1ae8751945fb4ef1938e4b45f119aa49c3" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>connect</name></member>
       <member refid="classdpp_1_1voiceconn_1a5db744340876d4b586756ea519d5db8a" prot="private" virt="non-virtual"><scope>dpp::voiceconn</scope><name>creator</name></member>
+      <member refid="classdpp_1_1voiceconn_1a0bc9cf608a4830f31f317066a28c5dcb" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>dave</name></member>
       <member refid="classdpp_1_1voiceconn_1a05b4745343840f96e585ece0456bd831" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>disconnect</name></member>
       <member refid="classdpp_1_1voiceconn_1a8bb23d980d80e0d61c1cadc61bacf278" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>is_active</name></member>
       <member refid="classdpp_1_1voiceconn_1a7dd6504b406b5e08f9fd9337a275568d" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>is_ready</name></member>
@@ -557,7 +590,7 @@
       <member refid="classdpp_1_1voiceconn_1a9c4ef16e1fb1c077f6adb18ce5ac9a41" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>token</name></member>
       <member refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>voiceclient</name></member>
       <member refid="classdpp_1_1voiceconn_1a2238afc107e4e97daa0693c81fe150fd" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>voiceconn</name></member>
-      <member refid="classdpp_1_1voiceconn_1a7b0b033f371d814cf04e09ac7cf08ac1" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>voiceconn</name></member>
+      <member refid="classdpp_1_1voiceconn_1af8abb717548b593bda59b9f124fb2328" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>voiceconn</name></member>
       <member refid="classdpp_1_1voiceconn_1a9c0868d279364472bf0c86a4b5ae8f1b" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>websocket_hostname</name></member>
       <member refid="classdpp_1_1voiceconn_1a5200c6bba0b6219a0cdd29c6590d0c98" prot="public" virt="non-virtual"><scope>dpp::voiceconn</scope><name>~voiceconn</name></member>
     </listofallmembers>

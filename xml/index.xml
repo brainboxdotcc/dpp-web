@@ -846,6 +846,7 @@
     <member refid="classdpp_1_1cluster_1a43e11def2111a4fc38db65d4d0b104e6" kind="variable"><name>terminating</name></member>
     <member refid="classdpp_1_1cluster_1a7ab5b992db2b53f80cc466deffec96b8" kind="variable"><name>request_timeout</name></member>
     <member refid="classdpp_1_1cluster_1a571d473f65f67265878fa4ba0e405f2f" kind="variable"><name>on_voice_state_update</name></member>
+    <member refid="classdpp_1_1cluster_1a31655ceaf4c8c589c770cd6287dc604f" kind="variable"><name>on_voice_client_platform</name></member>
     <member refid="classdpp_1_1cluster_1ad0a97571a6609c6c6a7fb4393972eaed" kind="variable"><name>on_voice_client_disconnect</name></member>
     <member refid="classdpp_1_1cluster_1a64e8359d2f739a06f9a522c340ac38f5" kind="variable"><name>on_voice_client_speaking</name></member>
     <member refid="classdpp_1_1cluster_1ab840686c7cd2e15f4a66ab64f62e106b" kind="variable"><name>on_log</name></member>
@@ -1897,6 +1898,15 @@
     <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a66d5c3373a4638926842693d6a7c6c99" kind="variable"><name>parked_voice_payloads</name></member>
     <member refid="structdpp_1_1discord__voice__client_1_1courier__shared__state__t_1a9783df70463317618eb9e325d2cfb2b5" kind="variable"><name>terminating</name></member>
   </compound>
+  <compound refid="structdpp_1_1dave__binary__header__t" kind="struct"><name>dpp::dave_binary_header_t</name>
+    <member refid="structdpp_1_1dave__binary__header__t_1ae49b0e6606bb31cf2ca14b34a1141414" kind="variable"><name>seq</name></member>
+    <member refid="structdpp_1_1dave__binary__header__t_1aeea77dd397cfb9be4c9754cf336683b6" kind="variable"><name>opcode</name></member>
+    <member refid="structdpp_1_1dave__binary__header__t_1acdaf4196a19f0a7a64c3bfd54810523e" kind="variable"><name>package</name></member>
+    <member refid="structdpp_1_1dave__binary__header__t_1a83a23879d48f736d25f1a66ab7665041" kind="variable"><name>transition_id</name></member>
+    <member refid="structdpp_1_1dave__binary__header__t_1abae4a7f3e177863d49b5de00a16c74b0" kind="function"><name>dave_binary_header_t</name></member>
+    <member refid="structdpp_1_1dave__binary__header__t_1a2ee1ac0f234a4de5f7a300af70d5765a" kind="function"><name>get_data</name></member>
+    <member refid="structdpp_1_1dave__binary__header__t_1a4788a679fedebac72e84387a4cdee3e9" kind="function"><name>get_transition_id</name></member>
+  </compound>
   <compound refid="classdpp_1_1discord__client" kind="class"><name>dpp::discord_client</name>
     <member refid="classdpp_1_1discord__client_1af5314358ae06ff298fbe659984648c86" kind="friend"><name>dpp::events::voice_state_update</name></member>
     <member refid="classdpp_1_1discord__client_1a38bd58112bc810d3a3ac9d88a316d2e9" kind="friend"><name>dpp::events::guild_create</name></member>
@@ -1973,13 +1983,13 @@
     <member refid="classdpp_1_1discord__client_1a5d2ce19636f235882ad32c285f645082" kind="function"><name>discord_client</name></member>
     <member refid="classdpp_1_1discord__client_1a513980a3c8eaf2bddb495f8f6b352006" kind="function"><name>~discord_client</name></member>
     <member refid="classdpp_1_1discord__client_1ade85ebcbf1a24079511436d504940fcf" kind="function"><name>get_decompressed_bytes_in</name></member>
-    <member refid="classdpp_1_1discord__client_1a2cb9540221a39c9050a2036928c7b7b4" kind="function"><name>handle_frame</name></member>
+    <member refid="classdpp_1_1discord__client_1a823846b37c42e99c942b3bc55bff90f3" kind="function"><name>handle_frame</name></member>
     <member refid="classdpp_1_1discord__client_1a3898b3a8b7d9fbfdfa1efc18ce5aa3c3" kind="function"><name>error</name></member>
     <member refid="classdpp_1_1discord__client_1ae659e7343de4a120d14f1b81e9535ea0" kind="function"><name>run</name></member>
-    <member refid="classdpp_1_1discord__client_1ae3875af4631a5d4f0718163184108649" kind="function"><name>connect_voice</name></member>
+    <member refid="classdpp_1_1discord__client_1a4aa6d61b499be3e88138e25bcf5209b0" kind="function"><name>connect_voice</name></member>
     <member refid="classdpp_1_1discord__client_1a4ebc6597287a863b7b739d6a4c796f78" kind="function"><name>disconnect_voice</name></member>
     <member refid="classdpp_1_1discord__client_1add9c5c491ce195ec7f0127d6c8ec36b7" kind="function"><name>get_voice</name></member>
-    <member refid="classdpp_1_1websocket__client_1a9e4a4fa84657f3c0557e2837e3aa2c00" kind="function"><name>write</name></member>
+    <member refid="classdpp_1_1websocket__client_1a1a28fcb2647f4e1203c4aa1b842a2bc9" kind="function"><name>write</name></member>
     <member refid="classdpp_1_1websocket__client_1aac9224e26db7b8589fcf9ba312752ca8" kind="function"><name>handle_buffer</name></member>
     <member refid="classdpp_1_1websocket__client_1a1f21cc8fce27ad72e9414dc9d0acd4d0" kind="function"><name>close</name></member>
     <member refid="classdpp_1_1websocket__client_1a2613fa8b73b1e7960c62bfe8cdef1dd7" kind="function"><name>send_close_packet</name></member>
@@ -1987,6 +1997,7 @@
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" kind="function"><name>get_cipher</name></member>
     <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kind="function"><name>read_loop</name></member>
+    <member refid="classdpp_1_1ssl__client_1a5e8f5c577083d2a6b7e4f6558f29962f" kind="function"><name>socket_write</name></member>
   </compound>
   <compound refid="classdpp_1_1discord__voice__client" kind="class"><name>dpp::discord_voice_client</name>
     <member refid="classdpp_1_1discord__voice__client_1a6eb4a952b8451906316fcdb746c2bd34" kind="enum"><name>send_audio_type_t</name></member>
@@ -1997,6 +2008,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a438b95ded97da933b2abcd13892a007d" kind="typedef"><name>rtp_timestamp_t</name></member>
     <member refid="classdpp_1_1discord__voice__client_1afe4e67fad90702358e32370a0aa4b0aa" kind="variable"><name>stream_mutex</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a959c6452e0ea0cea3855c48100a4dcf3" kind="variable"><name>queue_mutex</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a0dfd6ef262902a36dd897baf96e63847" kind="variable"><name>external_ip</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aa88ea27bc7f59500eb44486a782c5f49" kind="variable"><name>message_queue</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ab21439b24d61b2c1a0bd32a251ffe2f5" kind="variable"><name>runner</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a5df040856f3fd775e81d99224c0a2218" kind="variable"><name>connect_time</name></member>
@@ -2012,9 +2024,13 @@
     <member refid="classdpp_1_1discord__voice__client_1a99fb90437d53de82d76cff97c4faad54" kind="variable"><name>paused</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a98dc4764408e7bbf5a2eafff24391f9a" kind="variable"><name>encoder</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a7a494f997253706683168470ab695802" kind="variable"><name>repacketizer</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a8175929e6857660d26b39f5b9393e83d" kind="variable"><name>mls_state</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a1f9cabaab70951d2abcc912c4804802b" kind="variable"><name>dave_mls_user_list</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ab35d726d6130295f1948cb5fbeace3b3" kind="variable"><name>fd</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1a7c520f9a22acad2e2a7801910fc8097c" kind="variable"><name>secret_key</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a917ab0a295efb4324fe706c2cb9d6853" kind="variable"><name>secret_key</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1ae0f777580b2e2db9db05525db8b67d94" kind="variable"><name>has_secret_key</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aecd8c23811fac92dda3980af6dafacf4" kind="variable"><name>sequence</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a33a511bbc164e265641cbf1b8d1ad18a" kind="variable"><name>receive_sequence</name></member>
     <member refid="classdpp_1_1discord__voice__client_1accaef35c6259256403921302747be7b7" kind="variable"><name>timestamp</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ab2778a8b5a45b7067ff9f8cbdf629d43" kind="variable"><name>packet_nonce</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a6a9412b209fb4b40a0842fad31997b2d" kind="variable"><name>last_timestamp</name></member>
@@ -2024,6 +2040,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a2d072b4db0ec647bc5d9c9be99926781" kind="variable"><name>tracks</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a4b8067cc147c6acc59c88c36c3d2120b" kind="variable"><name>track_meta</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ad3f32f985611d9b7fb753b7ca0446f21" kind="variable"><name>encode_buffer</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a44ab87f96a17a48463358b24a1518c95" kind="variable"><name>dave_version</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a23cac9565c94195b8050df206d29d6b2" kind="variable"><name>creator</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a495139ab5289f6f7860177cf121ba2cb" kind="variable"><name>terminating</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a69388fa61302df65a43777bf472e8a92" kind="variable"><name>end_gain</name></member>
@@ -2065,9 +2082,9 @@
     <member refid="classdpp_1_1discord__voice__client_1aee5fcfe947f581ecce2c9096871f88a2" kind="function"><name>is_ready</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a1062401920a3462500f2c642138095c0" kind="function"><name>is_connected</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a017e7c98b75000d0bdc76cc16b31c093" kind="function"><name>get_uptime</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1a5b344a5989d67f0f0caf5b52236055bf" kind="function"><name>discord_voice_client</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a631da143d224aed3051ccc649fd248c0" kind="function"><name>discord_voice_client</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a9248839dac635139fecaeceb903d8276" kind="function"><name>~discord_voice_client</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1a96d7c274062a8ed210bf15bdddaa3a71" kind="function"><name>handle_frame</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1affeaa5a404871536c0233757ccb24e54" kind="function"><name>handle_frame</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a769b1674cf88dc4f53d7609fc24b7961" kind="function"><name>error</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a418f98812e850eb963e4b3a2a4dc0c74" kind="function"><name>run</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a6d52a32631231f3120ba9e5ebbe61a7a" kind="function"><name>send_audio_raw</name></member>
@@ -2091,7 +2108,10 @@
     <member refid="classdpp_1_1discord__voice__client_1a69727c9ff92f6e86f4ee51260de3d111" kind="function"><name>get_marker_metadata</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aef426df9775031fed6c6f50554573a0c" kind="function"><name>is_paused</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ae8e844ebb991eeb2d63771f6c5ea4938" kind="function"><name>discover_ip</name></member>
-    <member refid="classdpp_1_1websocket__client_1a9e4a4fa84657f3c0557e2837e3aa2c00" kind="function"><name>write</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1ad6aa98f7ce2b197cbe8b338c901edc83" kind="function"><name>is_end_to_end_encrypted</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a2d31c2395a9ec508cbff305c9e28c1b7" kind="function"><name>get_privacy_code</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a92ec2cba8cee44cbd3e0fa9c2a87ed66" kind="function"><name>get_user_privacy_code</name></member>
+    <member refid="classdpp_1_1websocket__client_1a1a28fcb2647f4e1203c4aa1b842a2bc9" kind="function"><name>write</name></member>
     <member refid="classdpp_1_1websocket__client_1aac9224e26db7b8589fcf9ba312752ca8" kind="function"><name>handle_buffer</name></member>
     <member refid="classdpp_1_1websocket__client_1a1f21cc8fce27ad72e9414dc9d0acd4d0" kind="function"><name>close</name></member>
     <member refid="classdpp_1_1websocket__client_1a2613fa8b73b1e7960c62bfe8cdef1dd7" kind="function"><name>send_close_packet</name></member>
@@ -2099,6 +2119,7 @@
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" kind="function"><name>get_cipher</name></member>
     <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kind="function"><name>read_loop</name></member>
+    <member refid="classdpp_1_1ssl__client_1a5e8f5c577083d2a6b7e4f6558f29962f" kind="function"><name>socket_write</name></member>
     <member refid="classdpp_1_1websocket__client_1aee1812f852a44ee1dc00e66477ffbfab" kind="function"><name>connect</name></member>
     <member refid="classdpp_1_1websocket__client_1a2d64dce5afa6a2e3a125b915316d7f6a" kind="function"><name>get_state</name></member>
     <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" kind="variable"><name>buffer</name></member>
@@ -2622,7 +2643,7 @@
     <member refid="classdpp_1_1guild_1ad33639446c930d418139a976c9c1a071" kind="function"><name>permission_overwrites</name></member>
     <member refid="classdpp_1_1guild_1a9688339669113aae291c5987beee9f24" kind="function"><name>permission_overwrites</name></member>
     <member refid="classdpp_1_1guild_1aeed0e3f51cc2ce2a6752be2ba7b6f8ac" kind="function"><name>rehash_members</name></member>
-    <member refid="classdpp_1_1guild_1a0d5e43e678d6a0448930bd31620d979e" kind="function"><name>connect_member_voice</name></member>
+    <member refid="classdpp_1_1guild_1a5bd7568623d6ee5c9c983f8c9b939fdb" kind="function"><name>connect_member_voice</name></member>
     <member refid="classdpp_1_1guild_1a480e1091c2a035c99643ae9ebf5d38d0" kind="function"><name>get_banner_url</name></member>
     <member refid="classdpp_1_1guild_1a93d1d4faed6aaa0a13455a8a29c09542" kind="function"><name>get_discovery_splash_url</name></member>
     <member refid="classdpp_1_1guild_1ae4ec3933e358da2036b547952b6758c8" kind="function"><name>get_icon_url</name></member>
@@ -3277,7 +3298,7 @@
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" kind="function"><name>get_cipher</name></member>
     <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kind="function"><name>read_loop</name></member>
-    <member refid="classdpp_1_1ssl__client_1a85cb0444e7c179c7dae331c62b73eceb" kind="function"><name>write</name></member>
+    <member refid="classdpp_1_1ssl__client_1a5e8f5c577083d2a6b7e4f6558f29962f" kind="function"><name>socket_write</name></member>
     <member refid="classdpp_1_1ssl__client_1a945ccd04f376174a64c0cceffca3bbcd" kind="function"><name>log</name></member>
     <member refid="classdpp_1_1https__client_1aa4e20ece223207e62c1006dcadfbe2a9" kind="function"><name>build_multipart</name></member>
     <member refid="classdpp_1_1https__client_1ab78d925b79646c8d0f2aa76065cd1397" kind="function"><name>get_host_info</name></member>
@@ -4948,7 +4969,7 @@
     <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kind="function"><name>read_loop</name></member>
     <member refid="classdpp_1_1ssl__client_1a892b774dc3832123c829d4f3bcef693a" kind="function"><name>~ssl_client</name></member>
     <member refid="classdpp_1_1ssl__client_1a0100372dd4c32d9faddaf69fffda7cfc" kind="function"><name>handle_buffer</name></member>
-    <member refid="classdpp_1_1ssl__client_1a85cb0444e7c179c7dae331c62b73eceb" kind="function"><name>write</name></member>
+    <member refid="classdpp_1_1ssl__client_1a5e8f5c577083d2a6b7e4f6558f29962f" kind="function"><name>socket_write</name></member>
     <member refid="classdpp_1_1ssl__client_1ae85df4b13fa64d701fb09f2bf44f100e" kind="function"><name>close</name></member>
     <member refid="classdpp_1_1ssl__client_1a945ccd04f376174a64c0cceffca3bbcd" kind="function"><name>log</name></member>
   </compound>
@@ -5636,6 +5657,24 @@
     <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
+  <compound refid="structdpp_1_1voice__client__platform__t" kind="struct"><name>dpp::voice_client_platform_t</name>
+    <member refid="structdpp_1_1voice__client__platform__t_1a59e411ae53d149390997e5d0e87536dc" kind="variable"><name>voice_client</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1ac19c8ea90c213b0b239bd39282d5507d" kind="variable"><name>user_id</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1a7a45e641e56fb41e450b64acdbfaf3cf" kind="variable"><name>platform</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a9ef98cebb9c0a5ab75a4362d1b40fb71" kind="variable"><name>from</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" kind="variable"><name>cancelled</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1ad761e8dec36073665f520aaa13fbe6dc" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1ae250d3a1ee0ad2e90ad075e1aead5478" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1aae35038ecb874c46e355fac3863615d0" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1af32126d4ed56366b4413c84b272383b7" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1a4d5c139c862c5ed02227b1e9ffc38095" kind="function"><name>event_dispatch_t</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1a2500c6d9987fbfc509fd0a960b1968e9" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1voice__client__platform__t_1a4645c2cc7dfe1def0b936d5726f7b8db" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kind="function"><name>cancel_event</name></member>
+    <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
+  </compound>
   <compound refid="structdpp_1_1voice__client__speaking__t" kind="struct"><name>dpp::voice_client_speaking_t</name>
     <member refid="structdpp_1_1voice__client__speaking__t_1aac2c4d59d345b6ed828a06b5f2b1b2c0" kind="variable"><name>voice_client</name></member>
     <member refid="structdpp_1_1voice__client__speaking__t_1a067067bfde4be0fe5f022a338fab657e" kind="variable"><name>user_id</name></member>
@@ -5799,8 +5838,9 @@
     <member refid="classdpp_1_1voiceconn_1aaaae5391243bb862501088170037b041" kind="variable"><name>session_id</name></member>
     <member refid="classdpp_1_1voiceconn_1a9c4ef16e1fb1c077f6adb18ce5ac9a41" kind="variable"><name>token</name></member>
     <member refid="classdpp_1_1voiceconn_1a812e4cdee1fc7ed2a024d78161c84f86" kind="variable"><name>voiceclient</name></member>
+    <member refid="classdpp_1_1voiceconn_1a0bc9cf608a4830f31f317066a28c5dcb" kind="variable"><name>dave</name></member>
     <member refid="classdpp_1_1voiceconn_1a2238afc107e4e97daa0693c81fe150fd" kind="function"><name>voiceconn</name></member>
-    <member refid="classdpp_1_1voiceconn_1a7b0b033f371d814cf04e09ac7cf08ac1" kind="function"><name>voiceconn</name></member>
+    <member refid="classdpp_1_1voiceconn_1af8abb717548b593bda59b9f124fb2328" kind="function"><name>voiceconn</name></member>
     <member refid="classdpp_1_1voiceconn_1a5200c6bba0b6219a0cdd29c6590d0c98" kind="function"><name>~voiceconn</name></member>
     <member refid="classdpp_1_1voiceconn_1a7dd6504b406b5e08f9fd9337a275568d" kind="function"><name>is_ready</name></member>
     <member refid="classdpp_1_1voiceconn_1a8bb23d980d80e0d61c1cadc61bacf278" kind="function"><name>is_active</name></member>
@@ -5908,10 +5948,10 @@
     <member refid="classdpp_1_1websocket__client_1a2d64dce5afa6a2e3a125b915316d7f6a" kind="function"><name>get_state</name></member>
     <member refid="classdpp_1_1websocket__client_1afb654507dbe469ad4f0f3f242769692b" kind="function"><name>websocket_client</name></member>
     <member refid="classdpp_1_1websocket__client_1a32f422f3a5a7a1aeb35a273be5c66d17" kind="function"><name>~websocket_client</name></member>
-    <member refid="classdpp_1_1websocket__client_1a9e4a4fa84657f3c0557e2837e3aa2c00" kind="function"><name>write</name></member>
+    <member refid="classdpp_1_1websocket__client_1a1a28fcb2647f4e1203c4aa1b842a2bc9" kind="function"><name>write</name></member>
     <member refid="classdpp_1_1websocket__client_1aac9224e26db7b8589fcf9ba312752ca8" kind="function"><name>handle_buffer</name></member>
     <member refid="classdpp_1_1websocket__client_1a1f21cc8fce27ad72e9414dc9d0acd4d0" kind="function"><name>close</name></member>
-    <member refid="classdpp_1_1websocket__client_1a066fe44ec020e9f2ab26b58a3d015bdf" kind="function"><name>handle_frame</name></member>
+    <member refid="classdpp_1_1websocket__client_1a44ecfaa8d4bf45ef4fe85633f486e7d7" kind="function"><name>handle_frame</name></member>
     <member refid="classdpp_1_1websocket__client_1abd1b3d59beb6a505e81e2bf3374e2532" kind="function"><name>error</name></member>
     <member refid="classdpp_1_1websocket__client_1a07ad6e7b32cfe760976d90409d5c47ae" kind="function"><name>one_second_timer</name></member>
     <member refid="classdpp_1_1websocket__client_1a2613fa8b73b1e7960c62bfe8cdef1dd7" kind="function"><name>send_close_packet</name></member>
@@ -5919,6 +5959,7 @@
     <member refid="classdpp_1_1ssl__client_1afa5d5654ce0b631d07045088ef347418" kind="function"><name>get_bytes_in</name></member>
     <member refid="classdpp_1_1ssl__client_1abf247ed0871e89e6a319c95841a315bd" kind="function"><name>get_cipher</name></member>
     <member refid="classdpp_1_1ssl__client_1a17d4e73c74413a5a79a3859615f913e2" kind="function"><name>read_loop</name></member>
+    <member refid="classdpp_1_1ssl__client_1a5e8f5c577083d2a6b7e4f6558f29962f" kind="function"><name>socket_write</name></member>
     <member refid="classdpp_1_1ssl__client_1a945ccd04f376174a64c0cceffca3bbcd" kind="function"><name>log</name></member>
     <member refid="classdpp_1_1ssl__client_1ae0e5e0799448bf29506bfcc21168d3fa" kind="variable"><name>buffer</name></member>
     <member refid="classdpp_1_1ssl__client_1a1f9600d4fd902c74c6d8b748c359eecc" kind="variable"><name>obuffer</name></member>
@@ -6164,6 +6205,40 @@
     <member refid="namespacedpp_1a9a2049904620e4f62b82f8dc818de864a3db63d1dc9d5c994cf5258372d40b270" kind="enumvalue"><name>pt_integer</name></member>
     <member refid="namespacedpp_1a9a2049904620e4f62b82f8dc818de864a095d2a7bbe72af8c679d3f02f4395650" kind="enumvalue"><name>pt_double</name></member>
     <member refid="namespacedpp_1a9a2049904620e4f62b82f8dc818de864acdd3703d49822d51598fa8575ce7bbd9" kind="enumvalue"><name>pt_boolean</name></member>
+    <member refid="namespacedpp_1ae4d631bf36ecccb5fcf937c964a49a0a" kind="enum"><name>dave_version_t</name></member>
+    <member refid="namespacedpp_1ae4d631bf36ecccb5fcf937c964a49a0aacb34998ebfcfafb992bf68f021805f83" kind="enumvalue"><name>dave_version_none</name></member>
+    <member refid="namespacedpp_1ae4d631bf36ecccb5fcf937c964a49a0aa015a5fa481d645bf1547dfa5b7ab0b84" kind="enumvalue"><name>dave_version_1</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503" kind="enum"><name>voice_websocket_opcode_t</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a3cdc4a920061526059640abebba89e10" kind="enumvalue"><name>voice_opcode_connection_identify</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a13d7e83d40f71e726b58fd03ea4ca502" kind="enumvalue"><name>voice_opcode_connection_select_protocol</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503ab6fff07fa01a971e6a8b6c653aed9739" kind="enumvalue"><name>voice_opcode_connection_ready</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a12d166ae6d1d150393e9947cd7ba4d67" kind="enumvalue"><name>voice_opcode_connection_heartbeat</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a84a424afa2d082835fd536fe8253fa74" kind="enumvalue"><name>voice_opcode_connection_description</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503afc8c39dce3881469104370bebfa54b3c" kind="enumvalue"><name>voice_opcode_client_speaking</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a1f05f311181fa1d6f11a6645b1a07a87" kind="enumvalue"><name>voice_opcode_connection_heartbeat_ack</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a7a2fa206f34fc7d132b47e6f8b8f098f" kind="enumvalue"><name>voice_opcode_connection_resume</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a81f4b0af1c66ba6ab4aa31a0413379b4" kind="enumvalue"><name>voice_opcode_connection_hello</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a0e527f956dcb531ba339034cd78addb5" kind="enumvalue"><name>voice_opcode_connection_resumed</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503ae1e419dac39cd63a1a4daa805dcd540f" kind="enumvalue"><name>voice_opcode_multiple_clients_connect</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a21946a2100cbc6ea546bc5bcad77b05b" kind="enumvalue"><name>voice_opcode_client_connect</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a27b2cd8fa3b0939b31c50c7853acf361" kind="enumvalue"><name>voice_opcode_client_disconnect</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a8f10aed4407f76938bed358696f63473" kind="enumvalue"><name>voice_opcode_media_sink</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a32d794de61cc74e5f1076bb17e24e3ca" kind="enumvalue"><name>voice_client_flags</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a9e5b94e71c0de0508ec29c8e8efacef5" kind="enumvalue"><name>voice_client_platform</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503abe8cd9cfcc9659dfe6756e3cc172939c" kind="enumvalue"><name>voice_client_dave_prepare_transition</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503aa82512e2eaaa692be46f0ee9be2e4de5" kind="enumvalue"><name>voice_client_dave_execute_transition</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503adb8a2b0f611a3c25350edd0f60b42f2e" kind="enumvalue"><name>voice_client_dave_transition_ready</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503ac036d079715b2dff489c2e4240de2c0b" kind="enumvalue"><name>voice_client_dave_prepare_epoch</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503ac154fa3a108b8e4c0881e7604351492e" kind="enumvalue"><name>voice_client_dave_mls_external_sender</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a9202218953b2be20ea9c301713389a98" kind="enumvalue"><name>voice_client_dave_mls_key_package</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503ab2e180a786ccac0c7c0728e6a66a4574" kind="enumvalue"><name>voice_client_dave_mls_proposals</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503aa1c6f12c83b451d411274dc6271b9350" kind="enumvalue"><name>voice_client_dave_mls_commit_message</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503acda11fe3b1df817a18ebb5e110e240ec" kind="enumvalue"><name>voice_client_dave_announce_commit_transaction</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503afc6bc4b7f456158f9360a829576812ae" kind="enumvalue"><name>voice_client_dave_mls_welcome</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a6ab60e1d35be60904850ccea87af5643" kind="enumvalue"><name>voice_client_dave_mls_invalid_commit_welcome</name></member>
+    <member refid="namespacedpp_1adb4889dd66bab821f51dba5136e07e81" kind="enum"><name>client_platform_t</name></member>
+    <member refid="namespacedpp_1adb4889dd66bab821f51dba5136e07e81a15940c3d7ddc8f65e480b5d4f24e65c7" kind="enumvalue"><name>client_platform_desktop</name></member>
+    <member refid="namespacedpp_1adb4889dd66bab821f51dba5136e07e81ad39c3fb55527b73fac1ed3167b174983" kind="enumvalue"><name>client_platform_mobile</name></member>
     <member refid="namespacedpp_1a79e9b19c1aa69ef048c79d37801b947c" kind="enum"><name>emoji_flags</name></member>
     <member refid="namespacedpp_1a79e9b19c1aa69ef048c79d37801b947cad9baba8ca224a0acb80019fcd3a9a0cb" kind="enumvalue"><name>e_require_colons</name></member>
     <member refid="namespacedpp_1a79e9b19c1aa69ef048c79d37801b947caa8e9ef37a91a1bbe4012548a0fd3bd82" kind="enumvalue"><name>e_managed</name></member>
@@ -7001,6 +7076,7 @@
     <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1caf10fce37d364106c0d8d13472f031bb0" kind="enumvalue"><name>OP_CLOSE</name></member>
     <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1ca1cba9d927313c32ed6fdbf191018ee59" kind="enumvalue"><name>OP_PING</name></member>
     <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1ca0dbab9ed2998b084825c4803c52fb7bc" kind="enumvalue"><name>OP_PONG</name></member>
+    <member refid="namespacedpp_1aa84690a0ba0251e8609440e93919da1ca3b445e535f31d7de2d862b4c44020e99" kind="enumvalue"><name>OP_AUTO</name></member>
     <member refid="namespacedpp_1a710b32b577396ba92917d0578f0bedb6" kind="typedef"><name>command_value</name></member>
     <member refid="namespacedpp_1a3e80cf6b8ecad18c951fec28be2377ba" kind="typedef"><name>command_option_range</name></member>
     <member refid="namespacedpp_1adfefe335636cdf5dbbba145a3828c554" kind="typedef"><name>slashcommand_map</name></member>
@@ -7020,6 +7096,7 @@
     <member refid="namespacedpp_1a632b6ae7b47a5feb95104644a487e4f1" kind="typedef"><name>parameter_list_t</name></member>
     <member refid="namespacedpp_1a72a8ab3231965d0e361f305a7fe431f3" kind="typedef"><name>command_handler</name></member>
     <member refid="namespacedpp_1acd398eef0974f7504e37176b97157dfe" kind="typedef"><name>promise</name></member>
+    <member refid="namespacedpp_1ae225fa7236536ef5a433821171982dbf" kind="typedef"><name>privacy_code_callback_t</name></member>
     <member refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kind="typedef"><name>command_completion_event_t</name></member>
     <member refid="namespacedpp_1ad4c862611232b317153bcfc106534292" kind="typedef"><name>dns_cache_t</name></member>
     <member refid="namespacedpp_1a9a1e92263bfa31397d459725d26e47b6" kind="typedef"><name>dtemplate_map</name></member>
@@ -7066,7 +7143,11 @@
     <member refid="namespacedpp_1a1cb0cc074a1653521bab47f83498e9ca" kind="typedef"><name>webhook_map</name></member>
     <member refid="namespacedpp_1a5609082c12782be33f82b955a5d07b4f" kind="variable"><name>deletion_queue</name></member>
     <member refid="namespacedpp_1ae611302ba7fc914d4732b65541132651" kind="variable"><name>deletion_mutex</name></member>
+    <member refid="namespacedpp_1a864cd30661fc496fae896ddf311ccdb4" kind="variable"><name>opus_sample_rate_hz</name></member>
+    <member refid="namespacedpp_1a4382884d78d028b54f2eaf9ac5738313" kind="variable"><name>opus_channel_count</name></member>
+    <member refid="namespacedpp_1afbbdf6864ee7fd1a425a854a76584917" kind="variable"><name>voice_protocol_version</name></member>
     <member refid="namespacedpp_1af9ada17b1b7470c57690031929bb7cff" kind="variable"><name>send_audio_raw_max_length</name></member>
+    <member refid="namespacedpp_1a8dacf5d2b88b00c076bed556cb622a40" kind="variable"><name>secret_key_size</name></member>
     <member refid="namespacedpp_1af762f7c2f0c23de9fbba385e8f547d29" kind="variable"><name>FORMAT_VERSION</name></member>
     <member refid="namespacedpp_1ae5545dbc7d5791902c0f940ad125b672" kind="variable"><name>is_valid_config</name></member>
     <member refid="namespacedpp_1a03c3e59edb221a7d235cc9fda57a7d34" kind="variable"><name>http_version</name></member>
@@ -7874,6 +7955,10 @@
     <member refid="namespacedpp_1_1colors_1aee64f2ca7ee6a7d7bef4b7b2b9e34798" kind="variable"><name>snow</name></member>
     <member refid="namespacedpp_1_1colors_1a476dd33506c46dd642ef43bf65ff7c53" kind="variable"><name>milk_white</name></member>
     <member refid="namespacedpp_1_1colors_1a588048bbee34f3bc1082a5b4662bc623" kind="variable"><name>half_white</name></member>
+  </compound>
+  <compound refid="namespacedpp_1_1dave" kind="namespace"><name>dpp::dave</name>
+  </compound>
+  <compound refid="namespacedpp_1_1dave_1_1mls" kind="namespace"><name>dpp::dave::mls</name>
   </compound>
   <compound refid="namespacedpp_1_1detail" kind="namespace"><name>dpp::detail</name>
     <member refid="namespacedpp_1_1detail_1afb0a0bcfb46ac28d58102ed8bb9c7e16" kind="typedef"><name>awaitable_result</name></member>
@@ -13700,7 +13785,7 @@
     <member refid="namespacedpp_1_1utility_1acfa947bc1c2e1863791a7ad60fe6cda7" kind="function"><name>cmyk</name></member>
     <member refid="namespacedpp_1_1utility_1af8c85e81902aeadc32adbef539356e84" kind="function"><name>hsl</name></member>
     <member refid="namespacedpp_1_1utility_1a39c53029f0f43d875974b98d346a14ac" kind="function"><name>hsl</name></member>
-    <member refid="namespacedpp_1_1utility_1a02456e22a1d41893a9b321bf8ccaeec6" kind="function"><name>debug_dump</name></member>
+    <member refid="namespacedpp_1_1utility_1a63de61350d94588d808b170e81228092" kind="function"><name>debug_dump</name></member>
     <member refid="namespacedpp_1_1utility_1a220f66858ece1eb786486e664f513569" kind="function"><name>utf8len</name></member>
     <member refid="namespacedpp_1_1utility_1aaae8ecae4672d0f0fd9da0a2ab214b52" kind="function"><name>utf8subview</name></member>
     <member refid="namespacedpp_1_1utility_1adefca3fb7feb3a25f94e2aa1863cad90" kind="function"><name>utf8substr</name></member>
