@@ -821,6 +821,9 @@
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
   </compound>
   <compound refid="classdpp_1_1cluster" kind="class"><name>dpp::cluster</name>
+    <member refid="classdpp_1_1cluster_1a4cd40c43fe191be9ee0483ce907480e2" kind="typedef"><name>slashcommand_handler_t</name></member>
+    <member refid="classdpp_1_1cluster_1a919757fd99c3c2c06fbf70eae1585809" kind="typedef"><name>co_slashcommand_handler_t</name></member>
+    <member refid="classdpp_1_1cluster_1ac52624bfa539f1614b8c3a5adeabc424" kind="typedef"><name>slashcommand_handler_variant</name></member>
     <member refid="classdpp_1_1cluster_1ab0d2c95628830a28f9abb09441914e40" kind="friend"><name>discord_client</name></member>
     <member refid="classdpp_1_1cluster_1abc4e53e79731117ca95bca977baef820" kind="friend"><name>discord_voice_client</name></member>
     <member refid="classdpp_1_1cluster_1ade2990d3e8a7f10094b806625a0bc545" kind="variable"><name>default_gateway</name></member>
@@ -833,6 +836,8 @@
     <member refid="classdpp_1_1cluster_1a0846d3ebce4cb2c346ef4947683cf058" kind="variable"><name>shards</name></member>
     <member refid="classdpp_1_1cluster_1a68804071670257a06ffe64c973265753" kind="variable"><name>timer_list</name></member>
     <member refid="classdpp_1_1cluster_1ac8f279f9245bbfe35888f213b011d3a4" kind="variable"><name>next_timer</name></member>
+    <member refid="classdpp_1_1cluster_1a4e3ad46e9ab1ac5c1eaa4636a955855e" kind="variable"><name>named_commands_mutex</name></member>
+    <member refid="classdpp_1_1cluster_1a172bbb8b351fe10955b16c0e0d9de9ea" kind="variable"><name>named_commands</name></member>
     <member refid="classdpp_1_1cluster_1a644b186bc4b386a8313e3c5dce456c4e" kind="variable"><name>token</name></member>
     <member refid="classdpp_1_1cluster_1a32ce7fc13658a25e2faeadcd36282b0b" kind="variable"><name>last_identify</name></member>
     <member refid="classdpp_1_1cluster_1a239af1e13449c85658fb37e6589745a0" kind="variable"><name>intents</name></member>
@@ -956,6 +961,9 @@
     <member refid="classdpp_1_1cluster_1a5c677c0d5c059e87cc01ce598d49487d" kind="function"><name>get_shard</name></member>
     <member refid="classdpp_1_1cluster_1af4d6195862e6d25c644902631a0b34d1" kind="function"><name>get_shards</name></member>
     <member refid="classdpp_1_1cluster_1ac455802ef025cec97c8ec493e5feead7" kind="function"><name>set_request_timeout</name></member>
+    <member refid="classdpp_1_1cluster_1a23b30a318b678865fe1e6e9ec778c711" kind="function"><name>register_command</name></member>
+    <member refid="classdpp_1_1cluster_1ab66cb8a3a2bc9e62d155df088af29081" kind="function"><name>register_command</name></member>
+    <member refid="classdpp_1_1cluster_1a2a2f07d8a9656fa7a3c1b5af6241d251" kind="function"><name>unregister_command</name></member>
     <member refid="classdpp_1_1cluster_1a4d102b15a0a4d74fd1f9ee4fc3aa8bbf" kind="function"><name>post_rest</name></member>
     <member refid="classdpp_1_1cluster_1a548e19022b7d3ee825920888da07493b" kind="function"><name>post_rest_multipart</name></member>
     <member refid="classdpp_1_1cluster_1a7a8e44c8d273e16c87b5f95c64495c09" kind="function"><name>request</name></member>
@@ -1698,28 +1706,6 @@
     <member refid="structdpp_1_1command__source_1acca58c533acf792deaccfa959665d06e" kind="variable"><name>interaction_event</name></member>
     <member refid="structdpp_1_1command__source_1aafc88011b6c193c8b900584fa0da0728" kind="function"><name>command_source</name></member>
     <member refid="structdpp_1_1command__source_1ae617d4cd6fe898f7ab77b33a76b8f52b" kind="function"><name>command_source</name></member>
-  </compound>
-  <compound refid="classdpp_1_1commandhandler" kind="class"><name>dpp::commandhandler</name>
-    <member refid="classdpp_1_1commandhandler_1ad24bee0504065fc7170bba93687c9411" kind="variable"><name>bulk_registration_list_guild</name></member>
-    <member refid="classdpp_1_1commandhandler_1a83db1736b0a7dba94c6f5c18cd64dfc1" kind="variable"><name>bulk_registration_list_global</name></member>
-    <member refid="classdpp_1_1commandhandler_1aaeb676a799cda302d4b08106f898a867" kind="variable"><name>commands</name></member>
-    <member refid="classdpp_1_1commandhandler_1acbbac80b9d8fd5b3f82fd5bfc919f9bc" kind="variable"><name>prefixes</name></member>
-    <member refid="classdpp_1_1commandhandler_1a29e869380af75e438094960b2e66a898" kind="variable"><name>slash_commands_enabled</name></member>
-    <member refid="classdpp_1_1commandhandler_1a81203fb77ae98d8cfe81d95bf714fcf0" kind="variable"><name>owner</name></member>
-    <member refid="classdpp_1_1commandhandler_1aa77b113d11ae040d9eb32a462bd88a7c" kind="variable"><name>app_id</name></member>
-    <member refid="classdpp_1_1commandhandler_1af8ca0a5c050b1774794de79e221a4b4e" kind="variable"><name>interactions</name></member>
-    <member refid="classdpp_1_1commandhandler_1ac2ed801cb8ac1697bd92799acfae2c0a" kind="variable"><name>messages</name></member>
-    <member refid="classdpp_1_1commandhandler_1a064419ada0fd30cee04faec9f75ba04d" kind="function"><name>string_has_prefix</name></member>
-    <member refid="classdpp_1_1commandhandler_1a7300779eb1aaf04041e48c756abafafb" kind="function"><name>commandhandler</name></member>
-    <member refid="classdpp_1_1commandhandler_1a62373f8cdd5b887eb78eb4f4cb265baf" kind="function"><name>~commandhandler</name></member>
-    <member refid="classdpp_1_1commandhandler_1a8640d327288a6dd1c5fdbde85726e7de" kind="function"><name>set_owner</name></member>
-    <member refid="classdpp_1_1commandhandler_1a69ce2bb96adb1a658b3a29c37274f2bb" kind="function"><name>add_prefix</name></member>
-    <member refid="classdpp_1_1commandhandler_1a791ed0c75ef77306af84be30ded619f8" kind="function"><name>add_command</name></member>
-    <member refid="classdpp_1_1commandhandler_1a208f3684f3987d87074824bd13699e42" kind="function"><name>register_commands</name></member>
-    <member refid="classdpp_1_1commandhandler_1a957dfe206c80cd7176e7ab663e9a1bf2" kind="function"><name>route</name></member>
-    <member refid="classdpp_1_1commandhandler_1a2a49a132a938c1952f77a31de8335cce" kind="function"><name>route</name></member>
-    <member refid="classdpp_1_1commandhandler_1ad8ddefafe9e85a86829775f385fe5f23" kind="function"><name>reply</name></member>
-    <member refid="classdpp_1_1commandhandler_1af41ce62f462d7bb8ea2046a9c7311c4f" kind="function"><name>thinking</name></member>
   </compound>
   <compound refid="structdpp_1_1request__queue_1_1completed__request" kind="struct"><name>dpp::request_queue::completed_request</name>
     <member refid="structdpp_1_1request__queue_1_1completed__request_1ad0dfc7315e1a374f5ef2b2197713a6fd" kind="variable"><name>request</name></member>
@@ -7182,6 +7168,7 @@
     <member refid="namespacedpp_1ad1383a88d06493bd0a9ab3fba5e11d22" kind="function"><name>get_emoji_cache</name></member>
     <member refid="namespacedpp_1a1728693a6b7bc12f1bb05e113e5c0428" kind="function"><name>get_emoji_count</name></member>
     <member refid="namespacedpp_1a7b4c7cea42e58d376ea1f7aa6d630c98" kind="function"><name>to_json</name></member>
+    <member refid="namespacedpp_1a4643f72c0feee6f4f8dbda0869786418" kind="function"><name>DPP_DEPRECATED</name></member>
     <member refid="namespacedpp_1a617b87100a40cead8c87add5e6adf4de" kind="function"><name>DPP_CHECK_ABI_COMPAT</name></member>
     <member refid="namespacedpp_1a702b8ec12c8abc77c264d5a6876ac62c" kind="function"><name>DPP_CHECK_ABI_COMPAT</name></member>
     <member refid="namespacedpp_1a4788a37ace2799b30444c02f55110b78" kind="function"><name>DPP_CHECK_ABI_COMPAT</name></member>

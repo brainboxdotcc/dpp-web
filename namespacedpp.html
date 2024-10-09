@@ -304,10 +304,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved snowflake ids to users, guild members, roles and channels. You can use the <code>interaction::get_resolved_*</code> methods to easily get a resolved set.  <a href="structdpp_1_1command__resolved.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdpp_1_1command__source.html">command_source</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the sending source of a command. This is passed to any command handler and should be passed back to <a class="el" href="classdpp_1_1commandhandler.html#ad8ddefafe9e85a86829775f385fe5f23" title="Reply to a command. You should use this method rather than cluster::message_create as the way you rep...">commandhandler::reply()</a>, allowing the reply method to route any replies back to the origin, which may be a slash command or a message. Both require different response facilities but we want this to be transparent if you use the command handler class.  <a href="structdpp_1_1command__source.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1commandhandler.html">commandhandler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The commandhandler class represents a group of commands, prefixed or slash commands with handling functions.  <a href="classdpp_1_1commandhandler.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the sending source of a command. This is passed to any command handler and should be passed back to commandhandler::reply(), allowing the reply method to route any replies back to the origin, which may be a slash command or a message. Both require different response facilities but we want this to be transparent if you use the command handler class.  <a href="structdpp_1_1command__source.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1component.html">component</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the component object. A component is a clickable button or drop down list within a discord message, where the buttons emit on_button_click events when the user interacts with them.  <a href="classdpp_1_1component.html#details">More...</a><br /></td></tr>
@@ -2623,6 +2620,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">to_json</a> (nlohmann::json &amp;j, const <a class="el" href="structdpp_1_1permission__overwrite.html">permission_overwrite</a> &amp;po)</td></tr>
 <tr class="memdesc:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="structdpp_1_1permission__overwrite.html" title="Channel permission overwrites.">permission_overwrite</a> object to json.  <a href="namespacedpp.html#a7b4c7cea42e58d376ea1f7aa6d630c98">More...</a><br /></td></tr>
 <tr class="separator:a7b4c7cea42e58d376ea1f7aa6d630c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4643f72c0feee6f4f8dbda0869786418"><td class="memItemLeft" align="right" valign="top">class DPP_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a4643f72c0feee6f4f8dbda0869786418">DPP_DEPRECATED</a> (&quot;commandhandler should not be used. Please consider using <a class="el" href="classdpp_1_1cluster.html#a23b30a318b678865fe1e6e9ec778c711">dpp::cluster::register_command</a> instead.&quot;) commandhandler</td></tr>
+<tr class="memdesc:a4643f72c0feee6f4f8dbda0869786418"><td class="mdescLeft">&#160;</td><td class="mdescRight">The commandhandler class represents a group of commands, prefixed or slash commands with handling functions.  <a href="namespacedpp.html#a4643f72c0feee6f4f8dbda0869786418">More...</a><br /></td></tr>
+<tr class="separator:a4643f72c0feee6f4f8dbda0869786418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a617b87100a40cead8c87add5e6adf4de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a617b87100a40cead8c87add5e6adf4de">DPP_CHECK_ABI_COMPAT</a> (<a class="el" href="classdpp_1_1async.html">async</a>&lt;&gt;, <a class="el" href="structdpp_1_1async__dummy.html">async_dummy</a>)</td></tr>
 <tr class="separator:a617b87100a40cead8c87add5e6adf4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a702b8ec12c8abc77c264d5a6876ac62c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedpp.html#a702b8ec12c8abc77c264d5a6876ac62c">DPP_CHECK_ABI_COMPAT</a> (<a class="el" href="classdpp_1_1coroutine.html">coroutine</a>&lt; void &gt;, <a class="el" href="structdpp_1_1coroutine__dummy.html">coroutine_dummy</a>) DPP_CHECK_ABI_COMPAT(<a class="el" href="classdpp_1_1coroutine.html">coroutine</a>&lt; uint64_t &gt;</td></tr>
@@ -7274,6 +7274,124 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4643f72c0feee6f4f8dbda0869786418" name="a4643f72c0feee6f4f8dbda0869786418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4643f72c0feee6f4f8dbda0869786418">&#9670;&nbsp;</a></span>DPP_DEPRECATED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class DPP_EXPORT dpp::DPP_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">&quot;commandhandler should not be used. Please consider using <a class="el" href="classdpp_1_1cluster.html#a23b30a318b678865fe1e6e9ec778c711">dpp::cluster::register_command</a> instead.&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The commandhandler class represents a group of commands, prefixed or slash commands with handling functions. </p>
+<p >It can automatically register slash commands, and handle routing of messages and interactions to separated command handler functions. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>commandhandler and message commands are deprecated and <a class="el" href="classdpp_1_1slashcommand.html" title="Represents an application command, created by your bot either globally, or on a guild.">dpp::slashcommand</a> is encouraged as a replacement. </dd></dl>
+<p >List of guild commands to bulk register</p>
+<p >List of global commands to bulk register</p>
+<p >Commands in the handler</p>
+<p >Valid prefixes</p>
+<p >Set to true automatically if one of the prefixes added is "/"</p>
+<p >Cluster we are attached to for issuing REST calls</p>
+<p >Application ID</p>
+<p >Interaction event handle</p>
+<p >Message event handle</p>
+<p >Returns true if the string has a known prefix on the start. Modifies string to remove prefix if it returns true.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>String to check and modify </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true string contained a prefix, prefix removed from string </dd>
+<dd>
+false string did not contain a prefix</dd></dl>
+<p>Construct a new commandhandler object</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>Owning cluster to attach to </td></tr>
+    <tr><td class="paramname">auto_hook_events</td><td>Set to true to automatically hook the on_slashcommand and on_message events. You should not need to set this to false unless you have a specific use case, as D++ supports multiple listeners to an event, so will allow the commandhandler to hook to your command events without disrupting other uses for the events you may have. </td></tr>
+    <tr><td class="paramname">application_id</td><td>The application id of the bot. If not specified, the class will look within the cluster object and use cluster::me::id instead.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Destroy the commandhandler object</p>
+<p >Set the application id after construction</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>Owning cluster to attach to</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Add a prefix to the command handler</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>Prefix to be handled by the command handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>commandhandler&amp; reference to self</dd></dl>
+<p>Add a command to the command handler</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Command to be handled. Note that if any one of your prefixes is "/" this will attempt to register a global command using the API and you will receive notification of this command via an interaction event. </td></tr>
+    <tr><td class="paramname">handler</td><td>Handler function </td></tr>
+    <tr><td class="paramname">parameters</td><td>Parameters to use for the command </td></tr>
+    <tr><td class="paramname">description</td><td>The description of the command, shown for slash commands </td></tr>
+    <tr><td class="paramname">guild_id</td><td>The guild ID to restrict the command to. For slash commands causes registration of a guild command as opposed to a global command. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>commandhandler&amp; reference to self </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1logic__exception.html" title="Represents an error in logic, e.g. you asked the library to do something the Discord API does not sup...">dpp::logic_exception</a></td><td>if application ID cannot be determined</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Register all slash commands with Discord This method must be called at least once if you are using the "/" prefix to mark the end of commands being added to the handler. Note that this uses bulk registration and will replace any existing slash commands.</p>
+<p >Note that if you have previously registered your commands and they have not changed, you do not need to call this again. Discord retains a cache of previously added commands.</p>
+<dl class="section return"><dt>Returns</dt><dd>commandhandler&amp; Reference to self for chaining method calls</dd></dl>
+<p>Route a command from the on_message_create function. Call this method from within your on_message_create with the received <a class="el" href="structdpp_1_1message.html" title="Represents messages sent and received on Discord.">dpp::message</a> object if you have disabled automatic registration of events.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>message create event to parse</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Route a command from the on_slashcommand function. Call this method from your on_slashcommand with the received <a class="el" href="structdpp_1_1interaction__create__t.html" title="Create interaction.">dpp::interaction_create_t</a> object if you have disabled automatic registration of events.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>command interaction event to parse</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Reply to a command. You should use this method rather than <a class="el" href="classdpp_1_1cluster.html#aa6ae3dc32ebc2dd14264962710d35af7" title="Send a message to a channel. The callback function is called when the message has been sent.">cluster::message_create</a> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>message to reply with. </td></tr>
+    <tr><td class="paramname">source</td><td>source of the command </td></tr>
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Reply to a command without a message, causing the discord client to display "Bot name is thinking...". The "thinking" message will persist for a maximum of 15 minutes. This counts as a reply for a slash command. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>source of the command </td></tr>
+    <tr><td class="paramname">callback</td><td>User function to execute when the api call completes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Easter egg (redefinition of dpp::commandhandler::thinking).</p>
 
 </div>
 </div>

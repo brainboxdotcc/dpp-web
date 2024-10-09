@@ -200,6 +200,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac455802ef025cec97c8ec493e5feead7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1cluster.html">cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ac455802ef025cec97c8ec493e5feead7">set_request_timeout</a> (uint16_t timeout)</td></tr>
 <tr class="memdesc:ac455802ef025cec97c8ec493e5feead7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the request timeout.  <a href="classdpp_1_1cluster.html#ac455802ef025cec97c8ec493e5feead7">More...</a><br /></td></tr>
 <tr class="separator:ac455802ef025cec97c8ec493e5feead7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b30a318b678865fe1e6e9ec778c711"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a23b30a318b678865fe1e6e9ec778c711">register_command</a> (const std::string &amp;name, const slashcommand_handler_t handler)</td></tr>
+<tr class="memdesc:a23b30a318b678865fe1e6e9ec778c711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a slash command handler.  <a href="classdpp_1_1cluster.html#a23b30a318b678865fe1e6e9ec778c711">More...</a><br /></td></tr>
+<tr class="separator:a23b30a318b678865fe1e6e9ec778c711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66cb8a3a2bc9e62d155df088af29081"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:ab66cb8a3a2bc9e62d155df088af29081"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_same_v&lt; std::invoke_result_t&lt; F, const slashcommand_handler_t &amp; &gt;, <a class="el" href="classdpp_1_1task.html">dpp::task</a>&lt; void &gt; &gt;, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#ab66cb8a3a2bc9e62d155df088af29081">register_command</a> (const std::string &amp;name, F &amp;&amp;handler)</td></tr>
+<tr class="memdesc:ab66cb8a3a2bc9e62d155df088af29081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a coroutine-based slash command handler.  <a href="classdpp_1_1cluster.html#ab66cb8a3a2bc9e62d155df088af29081">More...</a><br /></td></tr>
+<tr class="separator:ab66cb8a3a2bc9e62d155df088af29081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2f07d8a9656fa7a3c1b5af6241d251"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a2a2f07d8a9656fa7a3c1b5af6241d251">unregister_command</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a2a2f07d8a9656fa7a3c1b5af6241d251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a slash command.  <a href="classdpp_1_1cluster.html#a2a2f07d8a9656fa7a3c1b5af6241d251">More...</a><br /></td></tr>
+<tr class="separator:a2a2f07d8a9656fa7a3c1b5af6241d251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d102b15a0a4d74fd1f9ee4fc3aa8bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a4d102b15a0a4d74fd1f9ee4fc3aa8bbf">post_rest</a> (const std::string &amp;endpoint, const std::string &amp;major_parameters, const std::string &amp;parameters, <a class="el" href="namespacedpp.html#a805ef1feb2862a208ec0e9d1be005c88">http_method</a> method, const std::string &amp;postdata, <a class="el" href="namespacedpp.html#aafc7fb6792b12d92c4e77b46d20924ee">json_encode_t</a> callback, const std::string &amp;filename=&quot;&quot;, const std::string &amp;filecontent=&quot;&quot;, const std::string &amp;filemimetype=&quot;&quot;, const std::string &amp;protocol=&quot;1.1&quot;)</td></tr>
 <tr class="memdesc:a4d102b15a0a4d74fd1f9ee4fc3aa8bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a REST request. Where possible use a helper method instead like message_create.  <a href="classdpp_1_1cluster.html#a4d102b15a0a4d74fd1f9ee4fc3aa8bbf">More...</a><br /></td></tr>
 <tr class="separator:a4d102b15a0a4d74fd1f9ee4fc3aa8bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -26772,6 +26782,92 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
 
 </div>
 </div>
+<a id="a23b30a318b678865fe1e6e9ec778c711" name="a23b30a318b678865fe1e6e9ec778c711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b30a318b678865fe1e6e9ec778c711">&#9670;&nbsp;</a></span>register_command() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::cluster::register_command </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const slashcommand_handler_t&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a slash command handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the slash command to register </td></tr>
+    <tr><td class="paramname">handler</td><td>A handler function of type <code>slashcommand_handler_t</code></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Returns <code>true</code> if the command was registered successfully, or <code>false</code> if the command with the same name already exists </dd></dl>
+
+</div>
+</div>
+<a id="ab66cb8a3a2bc9e62d155df088af29081" name="ab66cb8a3a2bc9e62d155df088af29081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66cb8a3a2bc9e62d155df088af29081">&#9670;&nbsp;</a></span>register_command() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt; std::is_same_v&lt; std::invoke_result_t&lt; F, const slashcommand_handler_t &amp; &gt;, <a class="el" href="classdpp_1_1task.html">dpp::task</a>&lt; void &gt; &gt;, bool &gt; dpp::cluster::register_command </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F &amp;&amp;&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a coroutine-based slash command handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the slash command to register. </td></tr>
+    <tr><td class="paramname">handler</td><td>A coroutine handler function of type <code>co_slashcommand_handler_t</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Returns <code>true</code> if the command was registered successfully, or <code>false</code> if the command with the same name already exists. </dd></dl>
+
+</div>
+</div>
 <a id="a7a8e44c8d273e16c87b5f95c64495c09" name="a7a8e44c8d273e16c87b5f95c64495c09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a8e44c8d273e16c87b5f95c64495c09">&#9670;&nbsp;</a></span>request()</h2>
 
@@ -29329,6 +29425,34 @@ If any message provided older than 2 weeks or any duplicate message ID, it will 
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </dd></dl>
+
+</div>
+</div>
+<a id="a2a2f07d8a9656fa7a3c1b5af6241d251" name="a2a2f07d8a9656fa7a3c1b5af6241d251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a2f07d8a9656fa7a3c1b5af6241d251">&#9670;&nbsp;</a></span>unregister_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::cluster::unregister_command </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a slash command. </p>
+<p >This function unregisters (removes) a previously registered slash command by name. If the command is successfully removed, it returns <code>true</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the slash command to unregister.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Returns <code>true</code> if the command was successfully unregistered, or <code>false</code> if the command was not found. </dd></dl>
 
 </div>
 </div>

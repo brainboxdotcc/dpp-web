@@ -4,7 +4,7 @@ var searchData=
   ['template_5fget_1',['template_get',['../classdpp_1_1cluster.html#a52366e37144b166c6a2c773e14992b21',1,'dpp::cluster']]],
   ['template_5fget_5fsync_2',['template_get_sync',['../classdpp_1_1cluster.html#a0c79f31f217eb4d22c2f5192d562c241',1,'dpp::cluster']]],
   ['terminate_3',['terminate',['../classdpp_1_1in__thread.html#a62409705ba8fd26b0b9ee0421247cf7c',1,'dpp::in_thread']]],
-  ['thinking_4',['thinking',['../classdpp_1_1commandhandler.html#af41ce62f462d7bb8ea2046a9c7311c4f',1,'dpp::commandhandler::thinking()'],['../structdpp_1_1interaction__create__t.html#ab0c0133ac861e7752cd700903303b7fb',1,'dpp::interaction_create_t::thinking()']]],
+  ['thinking_4',['thinking',['../structdpp_1_1interaction__create__t.html#ab0c0133ac861e7752cd700903303b7fb',1,'dpp::interaction_create_t']]],
   ['thread_5fcollector_5',['thread_collector',['../classdpp_1_1thread__collector.html#aafd2c5685c5f06f974a7a9761b077e8b',1,'dpp::thread_collector']]],
   ['thread_5fcreate_6',['thread_create',['../classdpp_1_1cluster.html#a0c41c2fada744b16b48d8a5538e19fc5',1,'dpp::cluster']]],
   ['thread_5fcreate_5fin_5fforum_7',['thread_create_in_forum',['../classdpp_1_1cluster.html#ad96d8fcec4c69d82fd4f2fb85ddfa2bf',1,'dpp::cluster']]],

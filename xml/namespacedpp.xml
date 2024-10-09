@@ -58,7 +58,6 @@
     <innerclass refid="classdpp_1_1command__permission" prot="public">dpp::command_permission</innerclass>
     <innerclass refid="structdpp_1_1command__resolved" prot="public">dpp::command_resolved</innerclass>
     <innerclass refid="structdpp_1_1command__source" prot="public">dpp::command_source</innerclass>
-    <innerclass refid="classdpp_1_1commandhandler" prot="public">dpp::commandhandler</innerclass>
     <innerclass refid="classdpp_1_1component" prot="public">dpp::component</innerclass>
     <innerclass refid="structdpp_1_1component__default__value" prot="public">dpp::component_default_value</innerclass>
     <innerclass refid="structdpp_1_1component__interaction" prot="public">dpp::component_interaction</innerclass>
@@ -11426,6 +11425,219 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/dpp/channel.h" line="874" column="6" declfile="include/dpp/channel.h" declline="874" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedpp_1a4643f72c0feee6f4f8dbda0869786418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class DPP_EXPORT</type>
+        <definition>class DPP_EXPORT dpp::DPP_DEPRECATED</definition>
+        <argsstring>(&quot;commandhandler should not be used. Please consider using dpp::cluster::register_command instead.&quot;) commandhandler</argsstring>
+        <name>DPP_DEPRECATED</name>
+        <param>
+          <type>&quot;commandhandler should not be used. Please consider using <ref refid="classdpp_1_1cluster_1a23b30a318b678865fe1e6e9ec778c711" kindref="member">dpp::cluster::register_command</ref> instead.&quot;</type>
+        </param>
+        <briefdescription>
+<para>The commandhandler class represents a group of commands, prefixed or slash commands with handling functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It can automatically register slash commands, and handle routing of messages and interactions to separated command handler functions. <xrefsect id="deprecated_1_deprecated000025"><xreftitle>Deprecated</xreftitle><xrefdescription><para>commandhandler and message commands are deprecated and <ref refid="classdpp_1_1slashcommand" kindref="compound">dpp::slashcommand</ref> is encouraged as a replacement. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+<para>List of guild commands to bulk register</para>
+<para>List of global commands to bulk register</para>
+<para>Commands in the handler</para>
+<para>Valid prefixes</para>
+<para>Set to true automatically if one of the prefixes added is &quot;/&quot;</para>
+<para>Cluster we are attached to for issuing REST calls</para>
+<para>Application ID</para>
+<para>Interaction event handle</para>
+<para>Message event handle</para>
+<para>Returns true if the string has a known prefix on the start. Modifies string to remove prefix if it returns true.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to check and modify </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true string contained a prefix, prefix removed from string </para>
+</simplesect>
+<simplesect kind="return"><para>false string did not contain a prefix</para>
+</simplesect>
+Construct a new commandhandler object</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Owning cluster to attach to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>auto_hook_events</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to true to automatically hook the on_slashcommand and on_message events. You should not need to set this to false unless you have a specific use case, as D++ supports multiple listeners to an event, so will allow the commandhandler to hook to your command events without disrupting other uses for the events you may have. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>application_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application id of the bot. If not specified, the class will look within the cluster object and use cluster::me::id instead.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Destroy the commandhandler object</para>
+<para>Set the application id after construction</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Owning cluster to attach to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Add a prefix to the command handler</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix to be handled by the command handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>commandhandler&amp; reference to self</para>
+</simplesect>
+Add a command to the command handler</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Command to be handled. Note that if any one of your prefixes is &quot;/&quot; this will attempt to register a global command using the API and you will receive notification of this command via an interaction event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handler function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters to use for the command </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description of the command, shown for slash commands </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The guild ID to restrict the command to. For slash commands causes registration of a guild command as opposed to a global command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>commandhandler&amp; reference to self </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1logic__exception" kindref="compound">dpp::logic_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if application ID cannot be determined</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Register all slash commands with Discord This method must be called at least once if you are using the &quot;/&quot; prefix to mark the end of commands being added to the handler. Note that this uses bulk registration and will replace any existing slash commands.</para>
+<para>Note that if you have previously registered your commands and they have not changed, you do not need to call this again. Discord retains a cache of previously added commands.</para>
+<para><simplesect kind="return"><para>commandhandler&amp; Reference to self for chaining method calls</para>
+</simplesect>
+Route a command from the on_message_create function. Call this method from within your on_message_create with the received <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> object if you have disabled automatic registration of events.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message create event to parse</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Route a command from the on_slashcommand function. Call this method from your on_slashcommand with the received <ref refid="structdpp_1_1interaction__create__t" kindref="compound">dpp::interaction_create_t</ref> object if you have disabled automatic registration of events.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>command interaction event to parse</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Reply to a command. You should use this method rather than <ref refid="classdpp_1_1cluster_1aa6ae3dc32ebc2dd14264962710d35af7" kindref="member">cluster::message_create</ref> as the way you reply varies between slash commands and message commands. Note you should ALWAYS reply. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to reply with. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source of the command </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User function to execute when the api call completes.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Reply to a command without a message, causing the discord client to display &quot;Bot name is thinking...&quot;. The &quot;thinking&quot; message will persist for a maximum of 15 minutes. This counts as a reply for a slash command. Slash commands will emit an ugly error to the user if you do not emit some form of reply within 3 seconds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source of the command </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User function to execute when the api call completes.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Easter egg (redefinition of dpp::commandhandler::thinking).</para>
+        </inbodydescription>
+        <location file="include/dpp/commandhandler.h" line="256" column="17" bodyfile="include/dpp/commandhandler.h" bodystart="256" bodyend="426"/>
       </memberdef>
       <memberdef kind="function" id="namespacedpp_1a617b87100a40cead8c87add5e6adf4de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
