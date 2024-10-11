@@ -1808,7 +1808,7 @@
         <argsstring></argsstring>
         <name>on_voice_buffer_send</name>
         <briefdescription>
-<para>Called when packets are sent from the voice buffer. The voice buffer contains packets that are already encoded with Opus and encrypted with Sodium, and merged into packets by the repacketizer, which is done in the dpp::discord_voice_client::send_audio method. You should use the buffer size properties of <ref refid="structdpp_1_1voice__buffer__send__t" kindref="compound">dpp::voice_buffer_send_t</ref> to determine if you should fill the buffer with more content. </para>
+<para>Called when packets are sent from the voice buffer. The voice buffer contains packets that are already encoded with Opus and encrypted with XChaCha20-Poly1305, and merged into packets by the repacketizer, which is done in the dpp::discord_voice_client::send_audio method. You should use the buffer size properties of <ref refid="structdpp_1_1voice__buffer__send__t" kindref="compound">dpp::voice_buffer_send_t</ref> to determine if you should fill the buffer with more content. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="warning"><para>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</para>

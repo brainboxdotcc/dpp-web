@@ -9,27 +9,27 @@
 <para><simplesect kind="note"><para>You might not need to build a copy of the library for Linux - precompiled deb files for 64 bit and 32 bit Debian and Ubuntu are provided in the GitHub version releases. Unless you are on a different Linux distribution which does not support the installation of deb files, or wish to submit fixes and enhancements to the library itself you should have an easier time installing the precompiled version instead.</para>
 </simplesect>
 </para>
-<sect2 id="buildlinux_1autotoc_md93">
+<sect2 id="buildlinux_1autotoc_md92">
 <title>1. Build Source Code</title>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>-B<sp/>./build</highlight></codeline>
 <codeline><highlight class="normal">cmake<sp/>--build<sp/>./build<sp/>-j8</highlight></codeline>
 </programlisting></para>
 <para>Replace the number after <computeroutput>-j</computeroutput> with a number suitable for your setup, usually the same as the number of cores on your machine. <computeroutput>cmake</computeroutput> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</para>
 </sect2>
-<sect2 id="buildlinux_1autotoc_md94">
+<sect2 id="buildlinux_1autotoc_md93">
 <title>2. Install to /usr/local/include and /usr/local/lib</title>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cd<sp/>build</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildlinux_1autotoc_md95">
+<sect2 id="buildlinux_1autotoc_md94">
 <title>3. Installation to a Different Directory</title>
 <para>If you want to install the library, its dependencies, and header files to a different directory, specify this directory when running <computeroutput>cmake</computeroutput>:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">cmake<sp/>..<sp/>-DCMAKE_INSTALL_PREFIX=/path/to/install</highlight></codeline>
 </programlisting></para>
 <para>Then once the build is complete, run <computeroutput>make install</computeroutput> to install to the location you specified.</para>
 </sect2>
-<sect2 id="buildlinux_1autotoc_md96">
+<sect2 id="buildlinux_1autotoc_md95">
 <title>4. Using the Library</title>
 <para>Once installed to the <computeroutput>/usr/local</computeroutput> directory, you can make use of the library in standalone programs simply by including it and linking to it:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">g++<sp/>-std=c++17<sp/>mydppbot.cpp<sp/>-o<sp/>dppbot<sp/>-ldpp</highlight></codeline>

@@ -103,27 +103,27 @@ $(document).ready(function(){initNavTree('docs-standards.html',''); initResizabl
 <div class="contents">
 <div class="textblock"><p >This page lists the documentation standards that you must follow when making PRs for files in <code>docpages</code>, this does not mean documentation for functions/variables inside actual code. If something is not covered here, ask on the <a href="https://discord.gg/dpp">official Discord server</a>!</p>
 <p >Please also follow the <a class="el" href="coding-standards.html">Coding Style Standards</a> for your PRs related to docs. This covers any code stuff that you may end up writing along with other stuff (for example, conventional commits).</p>
-<h2><a class="anchor" id="autotoc_md67"></a>
+<h2><a class="anchor" id="autotoc_md66"></a>
 Adding Pages</h2>
 <p >All pages should start off with <code>\ page &lt;page_name&gt; &lt;page title&gt;</code>, with the space between <code>\</code> and <code>page</code> removed.</p>
 <p >Adding a new page requires you to also add the page as a subpage to a section. For example, if you're creating a new page under "The Basics", you should edit "the_basics.md" inside "example_programs" and add your page as a subpage.</p>
 <p >All subpages should be added like so: <code>* \ subpage &lt;page_name&gt;</code>, with the space between <code>\</code> and <code>subpage</code> removed.</p>
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md67"></a>
 Page and File Names</h2>
 <p >The naming convention for page and file names are <code>kebab-case</code>, so you should name pages and files something like <code>name-of-page</code>, with <code>.md</code> added to the end of the file name.</p>
 <p >However, code files should be <code>snake_case</code> to follow the <a class="el" href="coding-standards.html">Coding Style Standards</a>. Images follow the same format.</p>
 <dl class="section note"><dt>Note</dt><dd>There are pages that do not follow this format, <b>please do not change them</b>. This is explained in the <b>Renaming Files</b> section.</dd></dl>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md68"></a>
 Page Titles</h2>
 <p >Page titles shouldn't be mistaken with page names! Page titles are the, sometimes, long-ish titles you see in the navbar on the left of the docs page or at the top of each page when you view it in a web browser. Try not to make these too long (80 chars is the max limit but reach for less) as it's a bit daunting seeing a long title!</p>
-<h2><a class="anchor" id="autotoc_md70"></a>
+<h2><a class="anchor" id="autotoc_md69"></a>
 Renaming Files</h2>
 <p >Renaming <code>.md</code> files is something that shouldn't really be done unless you have a very good reason. Changing it harms our SEO, meaning google will get a bit confused.</p>
 <p >Changing images in the <code>images</code> folder or files inside the <code>example_code</code> folder is more acceptable, however, still shouldn't be done without reason.</p>
-<h2><a class="anchor" id="autotoc_md71"></a>
+<h2><a class="anchor" id="autotoc_md70"></a>
 Referencing Other Pages</h2>
 <p >Pages located within our file structure should be referenced like <code>\ ref &lt;page_name&gt;</code> (this will insert a reference with the actual page title) or <code>\ ref &lt;page_name&gt; "text here"</code> (instead of the page title, it'll be whatever is in quotation marks), with the space between <code>\</code> and <code>ref</code> removed. Pages outside of our file structure (like a discord invite link, or a github page, etc) should be referenced like <code>[text](url)</code>.</p>
-<h2><a class="anchor" id="autotoc_md72"></a>
+<h2><a class="anchor" id="autotoc_md71"></a>
 Adding Code to Examples</h2>
 <p >All code needs to be a <code>.cpp</code> file in the <code>example_code</code> folder. You then reference it via <code>\ include{cpp} file.cpp</code>, with the space between <code>\</code> and <code>include{cpp}</code> removed.</p>
 <p >Any code that will <b>not</b> build, for example: </p><div class="fragment"><div class="line">bot.start(<a class="code hl_enumvalue" href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a>);</div>
@@ -131,28 +131,28 @@ Adding Code to Examples</h2>
 <div class="ttc" id="anamespacedpp_html_af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726"><div class="ttname"><a href="namespacedpp.html#af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726">dpp::st_wait</a></div><div class="ttdeci">@ st_wait</div><div class="ttdoc">Wait forever on a condition variable. The cluster will spawn threads for each shard and start() will ...</div><div class="ttdef"><b>Definition:</b> cluster.h:63</div></div>
 </div><!-- fragment --><p> should be placed in the file itself. This is so we do not have to worry about the CI testing your example when we know it will not work.</p>
 <p >Your examples <b>need</b> to be tested. For more information about this, visit the <b>Testing Your Changes</b> section.</p>
-<h2><a class="anchor" id="autotoc_md73"></a>
+<h2><a class="anchor" id="autotoc_md72"></a>
 Language (Not Programming)</h2>
 <p >Your text and images should be in English.</p>
-<h2><a class="anchor" id="autotoc_md74"></a>
+<h2><a class="anchor" id="autotoc_md73"></a>
 Images</h2>
 <p >Images are a great way to show people how their bot should act when they're finished with the tutorial! A lot of tutorials don't have them, however, we recommend that you add some as, not only does it tell us that you've tested your example, but it helps users know if they've went wrong! We ask that you don't add images that are inappropriate and only add them if they make sense. Cut them down to a size that is readable and make sure it only contains information that is needed, for example, we don't need to see your server's channels list if the tutorial isn't covering it!</p>
 <p >Take a look at some tutorial pages (for example, <a class="el" href="embed-message.html">Sending Embeds</a> and <a class="el" href="callback-functions.html">Using Callback Functions</a>) to understand what we mean.</p>
 <p >All your images should be placed in the <code>images</code> folder and should be named similar to your page's name. If you have multiple images, you can either do something like <code>image_name2</code>, <code>image_name3</code>, and so on. You can also give them unique names like <code>image_name_overview</code>, <code>image_name_end</code>, and so on.</p>
-<h2><a class="anchor" id="autotoc_md75"></a>
+<h2><a class="anchor" id="autotoc_md74"></a>
 Grammar and Spelling</h2>
 <p >Your spelling and grammar matters a lot, it's essential that you get it right. We do have a GitHub Action runner that may flag for incorrect spellings if you accidentally spell something incorrectly (We're all human!), so keep an eye out for that. If this falsely flags you, read the <a class="el" href="coding-standards.html">Coding Style Standards</a> page for more information about how to tell it to ignore a word.</p>
-<h2><a class="anchor" id="autotoc_md76"></a>
+<h2><a class="anchor" id="autotoc_md75"></a>
 Consistency</h2>
 <p >Try to match other pages if you are making a similar guide (for example, the building from source pages). If the pages are inconsistent, they will start to confuse people. This also goes for pages that may not even be similar! For example, you should try keep your code examples similar to others, so that people don't get confused and can easily follow along.</p>
-<h2><a class="anchor" id="autotoc_md77"></a>
+<h2><a class="anchor" id="autotoc_md76"></a>
 Being Simplistic</h2>
 <p >As you'll be writing tutorials, try be simplistic! Don't overcomplicate pages and don't make assumptions that, just because you know it, everyone else will, because some people may not know what you're talking about! An easy, yet informational, tutorial is key to ensuring that D++ has great documentation for newcomers.</p>
-<h2><a class="anchor" id="autotoc_md78"></a>
+<h2><a class="anchor" id="autotoc_md77"></a>
 AI and Desktop Utilities</h2>
 <p >We are strongly against the use of AI within any part of code and docs. AI can be unreliable and may give the wrong information, so please look to research and test what you're documenting, without the use of AI. If we feel your entire PR was wrote by AI, we will close the PR.</p>
 <p >We also advise you do not use grammarly or other tools that fix your grammar/spelling for you. They can mess with text, get it wrong, not understand the context, etc. Whilst you can certainly use spell checkers and/or tools to see if there's issues with your text, you should look over each issue yourself to make sure if it matches the context and the issue is actually correct.</p>
-<h2><a class="anchor" id="autotoc_md79"></a>
+<h2><a class="anchor" id="autotoc_md78"></a>
 Testing Your Changes</h2>
 <p >To test your commits, you should install <code>doxygen</code> and <code>graphviz</code>. Then, inside your DPP folder, run <code>doxygen</code>. This will start generating a bunch of files inside a <code>docs</code> folder and may take a while. After that, view the .md file in your web browser.</p>
 <p >If this seems to fail, you can make your PR draft and use the netlify bot that replies with a link (the link may take a bit to generate) to preview your changes.</p>

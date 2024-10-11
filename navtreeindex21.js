@@ -1,7 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"classdpp_1_1voiceregion.html#ac1b4724cda0653699d9c6c98594491f1":[9,0,0,247,4],
-"classdpp_1_1voiceregion.html#ad615544432a8a6da87f3bd70d6f6b92c":[11,0,0,242,2],
 "classdpp_1_1voiceregion.html#ad615544432a8a6da87f3bd70d6f6b92c":[9,0,0,247,2],
 "classdpp_1_1voiceregion.html#ad8cc77b8def50a189e2b2c636fd6927e":[9,0,0,247,7],
 "classdpp_1_1voiceregion.html#ad8cc77b8def50a189e2b2c636fd6927e":[11,0,0,242,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX21 =
 "creating-a-bot-application.html":[4,0],
 "creating-a-discord-bot.html":[4],
 "default_select_value.html":[5,1,3,3],
-"deprecated.html":[7]
+"deprecated.html":[7],
+"detecting-messages.html":[5,0,7],
+"discord-application-command-file-upload.html":[5,1,0,4]
 };

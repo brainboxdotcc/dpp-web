@@ -162,11 +162,11 @@ $(document).ready(function(){initNavTree('install-windows-vs-zip.html',''); init
 </div>
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md153"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 Troubleshooting</h2>
 <dl class="section note"><dt>Note</dt><dd>A much easier way of getting a bot running is available <a class="el" href="build-a-discord-bot-windows-visual-studio.html">here</a>! We recommend using that one if this process seems too complex or you run into too many issues.</dd></dl>
 <ul>
-<li>If you get an error that a DLL is missing (e.g. <code>dpp.dll</code> or <code>opus.dll</code>) when starting your bot, then simply copy all DLLs from the <b>bin</b> directory of where you extracted the D++ zip file to, into the same directory where your bot's executable is. You only need to do this once. There should be several of these DLL files: <code>dpp.dll</code>, <code>zlib.dll</code>, <code>openssl.dll</code> and <code>libcrypto.dll</code> (or similarly named SSL related files), <code>libsodium.dll</code> and <code>opus.dll</code>.</li>
+<li>If you get an error that a DLL is missing (e.g. <code>dpp.dll</code> or <code>opus.dll</code>) when starting your bot, then simply copy all DLLs from the <b>bin</b> directory of where you extracted the D++ zip file to, into the same directory where your bot's executable is. You only need to do this once. There should be several of these DLL files: <code>dpp.dll</code>, <code>zlib.dll</code>, <code>openssl.dll</code> and <code>libcrypto.dll</code> (or similarly named SSL related files), and <code>opus.dll</code>.</li>
 <li>Please note that if you change the architecture (step 13) you must reconfigure all of steps 7 through 12 again as these configurations are specific to each architecture. This is to allow for different sets of precompiled libs, e.g. for <code>x86</code>, <code>x64</code>, etc.</li>
 <li>If you get an error that says "Debug/Release mismatch", <b>you are using the wrong configuration of the D++ dll</b>. Your bot's executable and the dpp.dll file should both be built in either Release or Debug, you get this error if they are different. We recommend using <a class="el" href="build-a-discord-bot-windows-visual-studio.html">the bot template</a>, it has all those things already set up.</li>
 <li>You should run your bot from a command prompt. If you do not, and it exits, you will not be able to see any output as the window will immediately close.</li>

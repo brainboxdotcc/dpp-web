@@ -101,34 +101,34 @@ $(document).ready(function(){initNavTree('buildosx.html',''); initResizable(); }
   <div class="headertitle"><div class="title">Building on OSX </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md103"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md102"></a>
 1. Toolchain</h2>
 <p >Before compiling make sure you have all the tools installed.</p>
 <ol type="1">
 <li>To install the dependencies, this guide will use Homebrew which has an <a href="https://brew.sh/">installation guide on their project page</a>.</li>
 <li>This project uses CMake to generate the makefiles. Install it with <code>brew install cmake</code>.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md104"></a>
+<h2><a class="anchor" id="autotoc_md103"></a>
 2. Install External Dependencies</h2>
 <div class="fragment"><div class="line">brew install openssl pkgconfig</div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Usually, you do not need pkgconfig. However, it seems that it throws errors about openssl without.</dd></dl>
-<p>For voice support, additional dependencies are required:</p>
-<div class="fragment"><div class="line">brew install libsodium opus</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md105"></a>
+<p>For voice support, additional dependency is required:</p>
+<div class="fragment"><div class="line">brew install opus</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md104"></a>
 3. Build Source Code</h2>
 <div class="fragment"><div class="line">cmake -B ./build</div>
 <div class="line">cmake --build ./build -j8</div>
 </div><!-- fragment --><p >Replace the number after <code>-j</code> with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
-<h2><a class="anchor" id="autotoc_md106"></a>
+<h2><a class="anchor" id="autotoc_md105"></a>
 4. Install Globally</h2>
 <div class="fragment"><div class="line">cd build</div>
 <div class="line">sudo make install</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md107"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md106"></a>
 5. Installation to a Different Directory</h2>
 <p >If you want to install the library, its dependencies, and header files to a different directory, specify this directory when running <code>cmake</code>:</p>
 <div class="fragment"><div class="line">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</div>
 </div><!-- fragment --><p >Then once the build is complete, run <code>sudo make install</code> to install to the location you specified.</p>
-<h2><a class="anchor" id="autotoc_md108"></a>
+<h2><a class="anchor" id="autotoc_md107"></a>
 6. Using the Library</h2>
 <p >Once installed, you can make use of the library in standalone programs simply by including it and linking to it:</p>
 <div class="fragment"><div class="line">clang++ -std=c++17 -ldpp mydppbot.cpp -o dppbot</div>

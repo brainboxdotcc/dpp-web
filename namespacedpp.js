@@ -7096,7 +7096,6 @@ var namespacedpp =
       [ "err_no_voice_support", "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6cf25f7dd0692a2b3174bad8b9083ed4", null ],
       [ "err_invalid_voice_packet_length", "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a4adc2d89aa161b23accf2fd794d1837d", null ],
       [ "err_opus", "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa86bc94e0b70c1408639f0791c28a3e6", null ],
-      [ "err_sodium", "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1aa0db0a86beb4f5a0314ac3c9592488b3", null ],
       [ "err_etf", "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1abb3c7711836d78caf6f6bbf9d60538b5", null ],
       [ "err_cache", "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a3ab5878430a5c1dbc27324de3276070d", null ],
       [ "err_icon_size", "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a7896d73d6ebddaa6eedddc88565f1083", null ],

@@ -79,7 +79,6 @@ var classdpp_1_1discord__voice__client =
     [ "server_id", "classdpp_1_1discord__voice__client.html#ac1d99be8bb3a89a43e5f5b368fe63f7d", null ],
     [ "sessionid", "classdpp_1_1discord__voice__client.html#a8f011c857ff968e44a8e5ddf818a9160", null ],
     [ "sfd", "classdpp_1_1discord__voice__client.html#a423ca70d4046067ebe219f85c7baa540", null ],
-    [ "sodium_initialised", "classdpp_1_1discord__voice__client.html#adfbadeaa50f485f0a0418c4570e1a4cd", null ],
     [ "ssl", "classdpp_1_1discord__voice__client.html#a26db29793a38b8a9dad74581597b298a", null ],
     [ "terminating", "classdpp_1_1discord__voice__client.html#a495139ab5289f6f7860177cf121ba2cb", null ],
     [ "thread_id", "classdpp_1_1discord__voice__client.html#aa16ac9036cb13658289f58dc9035e395", null ],

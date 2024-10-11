@@ -41,12 +41,12 @@
 </para>
 </listitem></orderedlist>
 </para>
-<sect2 id="install-windows-vs-zip_1autotoc_md153">
+<sect2 id="install-windows-vs-zip_1autotoc_md152">
 <title>Troubleshooting</title>
 <para><simplesect kind="note"><para>A much easier way of getting a bot running is available <ref refid="build-a-discord-bot-windows-visual-studio" kindref="compound">here</ref>! We recommend using that one if this process seems too complex or you run into too many issues.</para>
 </simplesect>
 <itemizedlist>
-<listitem><para>If you get an error that a DLL is missing (e.g. <computeroutput>dpp.dll</computeroutput> or <computeroutput>opus.dll</computeroutput>) when starting your bot, then simply copy all DLLs from the <bold>bin</bold> directory of where you extracted the D++ zip file to, into the same directory where your bot&apos;s executable is. You only need to do this once. There should be several of these DLL files: <computeroutput>dpp.dll</computeroutput>, <computeroutput>zlib.dll</computeroutput>, <computeroutput>openssl.dll</computeroutput> and <computeroutput>libcrypto.dll</computeroutput> (or similarly named SSL related files), <computeroutput>libsodium.dll</computeroutput> and <computeroutput>opus.dll</computeroutput>.</para>
+<listitem><para>If you get an error that a DLL is missing (e.g. <computeroutput>dpp.dll</computeroutput> or <computeroutput>opus.dll</computeroutput>) when starting your bot, then simply copy all DLLs from the <bold>bin</bold> directory of where you extracted the D++ zip file to, into the same directory where your bot&apos;s executable is. You only need to do this once. There should be several of these DLL files: <computeroutput>dpp.dll</computeroutput>, <computeroutput>zlib.dll</computeroutput>, <computeroutput>openssl.dll</computeroutput> and <computeroutput>libcrypto.dll</computeroutput> (or similarly named SSL related files), and <computeroutput>opus.dll</computeroutput>.</para>
 </listitem><listitem><para>Please note that if you change the architecture (step 13) you must reconfigure all of steps 7 through 12 again as these configurations are specific to each architecture. This is to allow for different sets of precompiled libs, e.g. for <computeroutput>x86</computeroutput>, <computeroutput>x64</computeroutput>, etc.</para>
 </listitem><listitem><para>If you get an error that says &quot;Debug/Release mismatch&quot;, <bold>you are using the wrong configuration of the D++ dll</bold>. Your bot&apos;s executable and the dpp.dll file should both be built in either Release or Debug, you get this error if they are different. We recommend using <ref refid="build-a-discord-bot-windows-visual-studio" kindref="compound">the bot template</ref>, it has all those things already set up.</para>
 </listitem><listitem><para>You should run your bot from a command prompt. If you do not, and it exits, you will not be able to see any output as the window will immediately close.</para>

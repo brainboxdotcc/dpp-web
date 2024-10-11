@@ -103,7 +103,6 @@ $(document).ready(function(){initNavTree('classdpp_1_1discord__voice__client.htm
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdpp_1_1discord__voice__client-members.html">List of all members</a>  </div>
@@ -337,12 +336,6 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ac8997404ef91c501c3e8ae1079e89152"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we are keeping the connection alive after it has finished.  <a href="classdpp_1_1ssl__client.html#ac8997404ef91c501c3e8ae1079e89152">More...</a><br /></td></tr>
 <tr class="separator:ac8997404ef91c501c3e8ae1079e89152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:adfbadeaa50f485f0a0418c4570e1a4cd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#adfbadeaa50f485f0a0418c4570e1a4cd">sodium_initialised</a></td></tr>
-<tr class="memdesc:adfbadeaa50f485f0a0418c4570e1a4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This needs to be static, we only initialise libsodium once per program start, so initialising it on first use in a voice connection is best.  <a href="classdpp_1_1discord__voice__client.html#adfbadeaa50f485f0a0418c4570e1a4cd">More...</a><br /></td></tr>
-<tr class="separator:adfbadeaa50f485f0a0418c4570e1a4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aee1812f852a44ee1dc00e66477ffbfab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1websocket__client.html#aee1812f852a44ee1dc00e66477ffbfab">connect</a> ()</td></tr>
@@ -492,7 +485,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classdpp_1_1voice__exception.html" title="Represents an error with voice processing.">dpp::voice_exception</a></td><td>Sodium or Opus failed to initialise, or D++ is not compiled with voice support </td></tr>
+    <tr><td class="paramname"><a class="el" href="classdpp_1_1voice__exception.html" title="Represents an error with voice processing.">dpp::voice_exception</a></td><td>Opus failed to initialise, or D++ is not compiled with voice support </td></tr>
   </table>
   </dd>
 </dl>
@@ -1358,7 +1351,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send opus packets to the voice channel. </p>
-<p >Some containers such as .ogg may contain OPUS encoded data already. In this case, we don't need to encode the frames using opus here. We can bypass the codec, only applying libsodium to the stream.</p>
+<p >Some containers such as .ogg may contain OPUS encoded data already. In this case, we don't need to encode the frames using opus here. We can bypass the codec, only applying opens to the stream.</p>
 <p >Duration is calculated internally</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1411,7 +1404,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send opus packets to the voice channel. </p>
-<p >Some containers such as .ogg may contain OPUS encoded data already. In this case, we don't need to encode the frames using opus here. We can bypass the codec, only applying libsodium to the stream.</p>
+<p >Some containers such as .ogg may contain OPUS encoded data already. In this case, we don't need to encode the frames using opus here. We can bypass the codec, only applying openssl to the stream.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">opus_packet</td><td>Opus packets. Discord expects opus frames to be encoded at 48000Hz</td></tr>
@@ -1458,7 +1451,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send raw audio to the voice channel. </p>
-<p >You should send an audio packet of <code>send_audio_raw_max_length</code> (11520) bytes. Note that this function can be costly as it has to opus encode the PCM audio on the fly, and also encrypt it with libsodium.</p>
+<p >You should send an audio packet of <code>send_audio_raw_max_length</code> (11520) bytes. Note that this function can be costly as it has to opus encode the PCM audio on the fly, and also encrypt it with openssl.</p>
 <dl class="section note"><dt>Note</dt><dd>Because this function encrypts and encodes packets before pushing them onto the output queue, if you have a complete stream ready to send and know its length it is advisable to call this method multiple times to enqueue the entire stream audio so that it is all encoded at once (unless you have set use_opus to false). <b>Constantly calling this from <a class="el" href="classdpp_1_1cluster.html#a4b702b26b73692e0aab0743f4ed07ef9" title="Called when packets are sent from the voice buffer. The voice buffer contains packets that are alread...">dpp::cluster::on_voice_buffer_send</a> can, and will, eat a TON of cpu!</b></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2330,7 +2323,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_enumvalue" href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483">satype_recorded_audio</a></div>
-<div class="ttc" id="aclassdpp_1_1discord__voice__client_html_a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483"><div class="ttname"><a href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483">dpp::discord_voice_client::satype_recorded_audio</a></div><div class="ttdeci">@ satype_recorded_audio</div><div class="ttdef"><b>Definition:</b> discordvoiceclient.h:788</div></div>
+<div class="ttc" id="aclassdpp_1_1discord__voice__client_html_a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483"><div class="ttname"><a href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483">dpp::discord_voice_client::satype_recorded_audio</a></div><div class="ttdeci">@ satype_recorded_audio</div><div class="ttdef"><b>Definition:</b> discordvoiceclient.h:782</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2387,30 +2380,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Raw file descriptor of connection. </p>
-
-</div>
-</div>
-<a id="adfbadeaa50f485f0a0418c4570e1a4cd" name="adfbadeaa50f485f0a0418c4570e1a4cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfbadeaa50f485f0a0418c4570e1a4cd">&#9670;&nbsp;</a></span>sodium_initialised</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dpp::discord_voice_client::sodium_initialised</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This needs to be static, we only initialise libsodium once per program start, so initialising it on first use in a voice connection is best. </p>
 
 </div>
 </div>

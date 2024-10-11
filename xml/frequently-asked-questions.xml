@@ -72,7 +72,7 @@
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md14">
 <title>Does this library support voice?</title>
-<para>Yes! This library supports voice and will automatically enable voice if your system has the libopus and libsodium libraries. When running <computeroutput>cmake</computeroutput> the script will identify if these libraries are found. See the example programs for information on how to send audio.</para>
+<para>Yes! This library supports voice and will automatically enable voice if your system has the libopus library. When running <computeroutput>cmake</computeroutput> the script will identify if this library is found. See the example programs for information on how to send audio.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md15">
 <title>Does this library support sharding?</title>
@@ -99,18 +99,14 @@
 <para>To fix this issue, run <computeroutput>ldconfig</computeroutput>: <computeroutput>sudo ldconfig</computeroutput> as root. Log out if your SSH session and log back in, and the bot should be able to find the library.</para>
 </sect2>
 <sect2 id="frequently-asked-questions_1autotoc_md21">
-<title>When compiling with voice support, I get an error: &quot;No rule to make target &apos;sodium_LIBRARY_DEBUG-NOTFOUND&apos;, needed by &apos;libdpp.so&apos;. Stop.&quot;</title>
-<para>The libsodium package requires pkg-config, but does not check for it when installed. Install it as root, e.g. <computeroutput>sudo apt install pkg-config</computeroutput>. Rerun cmake, and rebuild the library.</para>
-</sect2>
-<sect2 id="frequently-asked-questions_1autotoc_md22">
 <title>When I try to instantiate a dpp::cluster in windows, I get &quot;D++ Debug/Release mismatch&quot;</title>
 <para>If this happens, ensure you are using the correct precompiled build of the library. Our precompiled binaries are built in two forms, <bold>release mode</bold> and <bold>debug mode</bold> for Visual Studio 2019/2022. These two versions of the library are not cross-compatible due to differences in the debug and release STL (Microsoft standard library implementation). You should not need to build your own copy, but please see the section about <ref refid="buildwindows" kindref="compound">Building on Windows</ref> for more information on how to build your own copy, if needed.</para>
 </sect2>
-<sect2 id="frequently-asked-questions_1autotoc_md23">
+<sect2 id="frequently-asked-questions_1autotoc_md22">
 <title>Does this library build/run on Raspberry Pi?</title>
 <para>Yes! This project will build and run on Raspberry Pi and is very much suited to this kind of system. It may take some time (read: hours) to compile the project on your Raspberry Pi unless you build it using a cross compiler. We offer pre-built <computeroutput>.deb</computeroutput> files for arm6, arm7 and arm64, you should use these where possible to avoid having to compile it by hand, or you can use a cross-compiler to build it on your PC then transfer the compiled binaries across.</para>
 </sect2>
-<sect2 id="frequently-asked-questions_1autotoc_md24">
+<sect2 id="frequently-asked-questions_1autotoc_md23">
 <title>There are so many versions! Which deb file do I need for my Raspberry Pi?</title>
 <para>Depending on which Raspberry Pi version you have, you will need to download a different release binary: <table rows="5" cols="3"><row>
 <entry thead="yes"><para>Raspberry Pi Model </para>
@@ -140,23 +136,23 @@
 </table>
 </para>
 </sect2>
-<sect2 id="frequently-asked-questions_1autotoc_md25">
+<sect2 id="frequently-asked-questions_1autotoc_md24">
 <title>Are other ARM devices supported?</title>
 <para>Yes! We have confirmed that the D++ deb file will successfully install and operate on various forms of cellphone or non-pi ARM devices. If you get it working on any other devices please let us know, and we can build a compatibility chart.</para>
 </sect2>
-<sect2 id="frequently-asked-questions_1autotoc_md26">
+<sect2 id="frequently-asked-questions_1autotoc_md25">
 <title>Can I run a D++ bot in Replit?</title>
 <para>No. We used to support it (and still have our page about it <ref refid="building-a-cpp-discord-bot-in-repl" kindref="compound">which you can find here</ref>), however, Replit does not have up-to-date packages, meaning D++ can no longer run. We&apos;ve attempted to reach out to ask about this but we&apos;ve had no luck.</para>
 </sect2>
-<sect2 id="frequently-asked-questions_1autotoc_md27">
+<sect2 id="frequently-asked-questions_1autotoc_md26">
 <title>Why do the &quot;get&quot; functions like &quot;messages_get&quot; return void rather than what I&apos;m after?</title>
 <para>All the functions that obtain data directly from Discord (as opposed to the cache) perform HTTPS requests and may have to wait, either for the request itself or for their turn in a queue to respect rate limits. As such, it does not make sense that they should return a value, as this would mean they block execution of your event. Instead, each has a lambda, a function handler which receives the result of the request, which you can then read from within that function to get the data you are interested in. Note that this result will arrive on a different thread to the one which made the request. If you instead want the function to return a value, you can enable <ref refid="using-coroutines" kindref="compound">coroutines</ref> and use for example <computeroutput>co_await cluster-&gt;co_message_get(...)</computeroutput> to retrieve the result in your function.</para>
 </sect2>
-<sect2 id="frequently-asked-questions_1autotoc_md28">
+<sect2 id="frequently-asked-questions_1autotoc_md27">
 <title>Can I use a user token with this library (as opposed to a bot token)?</title>
 <para>No. This feature is not supported as it is against the Discord Terms Of Service, and therefore we have no plans to ever support it. You should not automate any user token. Some libraries used to support this, but it is a legacy feature of those libraries (where still available) dating back to before Discord offered an official public API. Please be aware that if Discord ever catch you automating a user token (or making a user client that uses a bot token) they can and do ban people for this.</para>
 </sect2>
-<sect2 id="frequently-asked-questions_1autotoc_md29">
+<sect2 id="frequently-asked-questions_1autotoc_md28">
 <title>What are nightly builds?</title>
 <para>These are automatic builds that happen every night without any human supervision. They allow you to try the latest state of the library without having to build it yourself, but they come without any guarantees. </para>
 </sect2>
