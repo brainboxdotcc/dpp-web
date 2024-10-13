@@ -1,0 +1,1141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdpp_1_1guild__member" kind="class" language="C++" prot="public">
+    <compoundname>dpp::guild_member</compoundname>
+    <basecompoundref refid="structdpp_1_1json__interface" prot="public" virt="non-virtual">dpp::json_interface&lt; guild_member &gt;</basecompoundref>
+    <includes local="no">guild.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdpp_1_1guild__member_1a742163d8899b9b30254d30d6ffb69f40" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct json_interface&lt; guild_member &gt;</definition>
+        <argsstring></argsstring>
+        <name>json_interface&lt; guild_member &gt;</name>
+        <param>
+          <type><ref refid="structdpp_1_1json__interface" kindref="compound">json_interface</ref>&lt; <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="2049" column="25" bodyfile="include/dpp/guild.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdpp_1_1guild__member_1a3f76a28758c1056b2cfb33b603abc32b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void from_json</definition>
+        <argsstring>(const nlohmann::json &amp;j, guild_member &amp;gm)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+          <declname>gm</declname>
+        </param>
+        <briefdescription>
+<para>helper function to deserialize a <ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> from json </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://github.com/nlohmann/json#arbitrary-types-conversions">https://github.com/nlohmann/json#arbitrary-types-conversions</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output json object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> to be deserialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="436" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1af305ded317e0fb05fc67d15713549efa" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::guild_member::nickname</definition>
+        <argsstring></argsstring>
+        <name>nickname</name>
+        <briefdescription>
+<para>Nickname. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Empty string if they don&apos;t have a nickname on this guild </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="424" column="13" bodyfile="include/dpp/guild.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1ae9419048b9b5a143f1b705e4dff83a93" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref> &gt;</type>
+        <definition>std::vector&lt;snowflake&gt; dpp::guild_member::roles</definition>
+        <argsstring></argsstring>
+        <name>roles</name>
+        <briefdescription>
+<para>List of roles this user has on this guild. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="429" column="13" bodyfile="include/dpp/guild.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1aef5b2d4061b4201157be72e1d08c6d5e" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::guild_member::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>A set of flags built from the bitmask defined by <ref refid="namespacedpp_1acd31b462e01d313c84ec3e7261168277" kindref="member">dpp::guild_member_flags</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="434" column="10" bodyfile="include/dpp/guild.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1abc1c9039f54691ae4e8938c2768ccf84" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::guild_member::guild_id</definition>
+        <argsstring></argsstring>
+        <name>guild_id</name>
+        <briefdescription>
+<para>Guild id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="442" column="11" bodyfile="include/dpp/guild.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1a127de740430a1f3ce4e793e21f94ce97" prot="public" static="no" mutable="no">
+        <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+        <definition>snowflake dpp::guild_member::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <briefdescription>
+<para>User id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="447" column="11" bodyfile="include/dpp/guild.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1aeb9413ebe5540ebd625a35166f5ad799" prot="public" static="no" mutable="no">
+        <type><ref refid="structdpp_1_1utility_1_1iconhash" kindref="compound">utility::iconhash</ref></type>
+        <definition>utility::iconhash dpp::guild_member::avatar</definition>
+        <argsstring></argsstring>
+        <name>avatar</name>
+        <briefdescription>
+<para>User avatar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Per-server avatar is a nitro only feature. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="454" column="19" bodyfile="include/dpp/guild.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1a6bf5f4ec4e76b15734782ff2fdd51170" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::guild_member::communication_disabled_until</definition>
+        <argsstring></argsstring>
+        <name>communication_disabled_until</name>
+        <briefdescription>
+<para>Timestamp of when the time out will be removed; until then, they cannot interact with the guild. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="459" column="8" bodyfile="include/dpp/guild.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1aae2dfc2f98671c98704db1fa4295b05f" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::guild_member::joined_at</definition>
+        <argsstring></argsstring>
+        <name>joined_at</name>
+        <briefdescription>
+<para>Date and time the user joined the guild. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="464" column="8" bodyfile="include/dpp/guild.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdpp_1_1guild__member_1ae262a3f3d68a9728a92654e2f5b9c758" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::guild_member::premium_since</definition>
+        <argsstring></argsstring>
+        <name>premium_since</name>
+        <briefdescription>
+<para>The Date and time the user started boosting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="469" column="8" bodyfile="include/dpp/guild.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdpp_1_1guild__member_1abaa573e21f5e41f36dc489c2086840a0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1ae9134a9d8edf8adcb87e979bb7a7343e" kindref="member">json</ref></type>
+        <definition>json dpp::guild_member::to_json_impl</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Build json for the member object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Add ID to output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>json JSON object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="416" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a22fc1a4cacec96dafe98277604823be0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::guild_member::guild_member</definition>
+        <argsstring>()</argsstring>
+        <name>guild_member</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="472" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a8388b6feb3be3972fa50d4665b461611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j, snowflake g_id, snowflake u_id)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>g_id</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>u_id</declname>
+        </param>
+        <briefdescription>
+<para>Fill this object from a json object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The json object to get data from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The guild id to associate the member with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user id to associate the member with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to self for call chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="481" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a5f914350fd3720e72e4857cc3075e09f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::is_communication_disabled</definition>
+        <argsstring>() const</argsstring>
+        <name>is_communication_disabled</name>
+        <briefdescription>
+<para>Returns true if the user is in time-out (communication disabled) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user is in time-out </para>
+</simplesect>
+<simplesect kind="return"><para>false user is not in time-out </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="489" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a1136b98c677fbbcbcc1291857cfe53ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::is_deaf</definition>
+        <argsstring>() const</argsstring>
+        <name>is_deaf</name>
+        <briefdescription>
+<para>Returns true if the user is deafened. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user is deafened </para>
+</simplesect>
+<simplesect kind="return"><para>false user is not deafened </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="497" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a0d9540b747d4f604088bc2d4b82f1695" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::is_muted</definition>
+        <argsstring>() const</argsstring>
+        <name>is_muted</name>
+        <briefdescription>
+<para>Returns true if the user is muted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user muted </para>
+</simplesect>
+<simplesect kind="return"><para>false user not muted </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="505" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a0e8b71e030ad98f31831d7e0a079b873" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::is_pending</definition>
+        <argsstring>() const</argsstring>
+        <name>is_pending</name>
+        <briefdescription>
+<para>Returns true if pending verification by membership screening. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user has completed membership screening </para>
+</simplesect>
+<simplesect kind="return"><para>false user has not completed membership screening </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="513" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a4a7c2ac25d5ecb22b540c4e46830786c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::has_rejoined</definition>
+        <argsstring>() const</argsstring>
+        <name>has_rejoined</name>
+        <briefdescription>
+<para>Returns true if the user has left and rejoined the guild. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user has left and rejoined the guild </para>
+</simplesect>
+<simplesect kind="return"><para>false user has not rejoined </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="521" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a214a6f9f4ca7129252a9ab80c5715cec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::is_guild_owner</definition>
+        <argsstring>() const</argsstring>
+        <name>is_guild_owner</name>
+        <briefdescription>
+<para>Is this user also the guild member? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the user is the guild owner. </para>
+</simplesect>
+<simplesect kind="return"><para>false if the user is not the guild owner or the guild is not in the cache. </para>
+</simplesect>
+<simplesect kind="note"><para>If the guild cache is disabled, this function will always return false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="529" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1acf3ca9039f668a1c11182f92fecdc2bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::has_completed_onboarding</definition>
+        <argsstring>() const</argsstring>
+        <name>has_completed_onboarding</name>
+        <briefdescription>
+<para>Returns true if the user has completed onboarding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user has completed onboarding </para>
+</simplesect>
+<simplesect kind="return"><para>false user has not completed onboarding </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="537" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a7833e07576ea23023575d4f213825d82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::has_started_onboarding</definition>
+        <argsstring>() const</argsstring>
+        <name>has_started_onboarding</name>
+        <briefdescription>
+<para>Returns true if the user has started onboarding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user has started onboarding </para>
+</simplesect>
+<simplesect kind="return"><para>false user has not started onboarding yet </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="545" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1ad57384049a04223ba4433bca70500512" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::has_bypasses_verification</definition>
+        <argsstring>() const</argsstring>
+        <name>has_bypasses_verification</name>
+        <briefdescription>
+<para>Returns true if the user is exempt from guild verification requirements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user bypasses verification </para>
+</simplesect>
+<simplesect kind="return"><para>false user doesn&apos;t bypass verification </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="553" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1ad785209b6ad322555a800510a5b4356c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::has_animated_guild_avatar</definition>
+        <argsstring>() const</argsstring>
+        <name>has_animated_guild_avatar</name>
+        <briefdescription>
+<para>Returns true if the user&apos;s per-guild custom avatar is animated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true user&apos;s custom avatar is animated </para>
+</simplesect>
+<simplesect kind="return"><para>false user&apos;s custom avatar is not animated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="561" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a6cb57dec0819d8224b1acab674f3a4fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::guild_member::get_avatar_url</definition>
+        <argsstring>(uint16_t size=0, const image_type format=i_png, bool prefer_animated=true) const</argsstring>
+        <name>get_avatar_url</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="namespacedpp_1ab4fba082389f572d696d97404a2bcb31" kindref="member">image_type</ref></type>
+          <declname>format</declname>
+          <defval><ref refid="namespacedpp_1ab4fba082389f572d696d97404a2bcb31ace2c4de1f89397132561031f246f89f7" kindref="member">i_png</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>prefer_animated</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Returns the member&apos;s per guild avatar url if they have one, otherwise returns an empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>per-server avatar is a nitro only feature so it might be not set. If you need the user avatar, use <ref refid="classdpp_1_1user_1a915b13d1b1729780e8670cbfecd75d21" kindref="member">user::get_avatar_url</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the avatar in pixels. It can be any power of two between 16 and 4096, otherwise the default sized avatar is returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format to use for the avatar. It can be one of <computeroutput>i_webp</computeroutput>, <computeroutput>i_jpg</computeroutput>, <computeroutput>i_png</computeroutput> or <computeroutput>i_gif</computeroutput>. When passing <computeroutput>i_gif</computeroutput>, it returns an empty string for non-animated images. Consider using the <computeroutput>prefer_animated</computeroutput> parameter instead. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefer_animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether you prefer gif format. If true, it&apos;ll return gif format whenever the image is available as animated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string avatar url or an empty string, if required attributes are missing or an invalid format was passed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="576" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1adf919401f5e69225fb9fee91de8b7983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::set_nickname</definition>
+        <argsstring>(const std::string &amp;nick)</argsstring>
+        <name>set_nickname</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>nick</declname>
+        </param>
+        <briefdescription>
+<para>Set the nickname. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nick</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nickname to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="585" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a2ff341fd940328b7ace0ff9a042b41b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::guild_member::get_nickname</definition>
+        <argsstring>() const</argsstring>
+        <name>get_nickname</name>
+        <briefdescription>
+<para>Get the nickname. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string nickname </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="592" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a14bf4d871976c25c0e8c66f8deb5d105" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt; dpp::snowflake &gt; &amp; dpp::guild_member::get_roles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_roles</name>
+        <briefdescription>
+<para>Get the roles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;dpp::snowflake&gt; roles </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="599" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a6763c8c9384e8e1cbc04befb33210eba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1user" kindref="compound">user</ref> *</type>
+        <definition>user * dpp::guild_member::get_user</definition>
+        <argsstring>() const</argsstring>
+        <name>get_user</name>
+        <briefdescription>
+<para>Find the <ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref> object for this member. This is an alias for <ref refid="namespacedpp_1aafb458435d5650149340555ecd43f93f" kindref="member">dpp::find_user</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref>* Pointer to the user object. If not in cache, it returns nullptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="605" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a4a71ab5b4abfaf6d469bcbd7955bbcae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dpp::guild_member::operator==</definition>
+        <argsstring>(guild_member const &amp;other_member) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> const &amp;</type>
+          <declname>other_member</declname>
+        </param>
+        <briefdescription>
+<para>Check if this member is equal to another member object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other_member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other member object to compare </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if their user ids are equal, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="613" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1ac9f046365607f85a95e1c0eb05a2c43c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::set_bypasses_verification</definition>
+        <argsstring>(const bool is_bypassing_verification)</argsstring>
+        <name>set_bypasses_verification</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_bypassing_verification</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the user is exempt from guild verification requirements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_bypassing_verification</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="622" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a91cf849628af76ad3fb4c58c8d54efab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::set_mute</definition>
+        <argsstring>(const bool is_muted)</argsstring>
+        <name>set_mute</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_muted</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the user is muted in voice channels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_muted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to set, true if mute in voice channels</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="631" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a51764b5c1960619ddc073224d2791ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::set_deaf</definition>
+        <argsstring>(const bool is_deafened)</argsstring>
+        <name>set_deaf</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_deafened</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the user is deafened in voice channels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_deafened</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to set, true if deaf in voice channels</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="640" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a5f8cb5390378a011a1d7fe36f5ab3441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::set_communication_disabled_until</definition>
+        <argsstring>(const time_t timestamp)</argsstring>
+        <name>set_communication_disabled_until</name>
+        <param>
+          <type>const time_t</type>
+          <declname>timestamp</declname>
+        </param>
+        <briefdescription>
+<para>Set communication_disabled_until. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timestamp until communication is disabled</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="649" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1afb9f40dbcd49dbf960d246582eaeca9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::guild_member::get_mention</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mention</name>
+        <briefdescription>
+<para>Return a ping/mention for the user by nickname. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string mention </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="656" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a7a2aacce9be1720ad36613dd434fcbb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::add_role</definition>
+        <argsstring>(dpp::snowflake role_id)</argsstring>
+        <name>add_role</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref></type>
+          <declname>role_id</declname>
+        </param>
+        <briefdescription>
+<para>Add a role to this member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This call sets the role change bit, which causes the new role list to be sent if this is passed to <ref refid="classdpp_1_1cluster_1ad793626d2733715381c3c5c440f31bd0" kindref="member">dpp::cluster::guild_edit_member</ref> or <ref refid="classdpp_1_1cluster_1a19819f7f2f2f3badecc1e29a928f2690" kindref="member">dpp::cluster::guild_add_member</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>role_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role ID to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="667" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1a1f19de94dad0475bc6c191a1c9049a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::remove_role</definition>
+        <argsstring>(dpp::snowflake role_id)</argsstring>
+        <name>remove_role</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref></type>
+          <declname>role_id</declname>
+        </param>
+        <briefdescription>
+<para>Remove a role from this member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This call sets the role change bit, which causes the new role list to be sent if this is passed to <ref refid="classdpp_1_1cluster_1ad793626d2733715381c3c5c440f31bd0" kindref="member">dpp::cluster::guild_edit_member</ref> or <ref refid="classdpp_1_1cluster_1a19819f7f2f2f3badecc1e29a928f2690" kindref="member">dpp::cluster::guild_add_member</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>role_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role ID to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="678" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1guild__member_1aef402cfcdaff6ace9ca96d94c2e7f98d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member &amp; dpp::guild_member::set_roles</definition>
+        <argsstring>(const std::vector&lt; dpp::snowflake &gt; &amp;role_ids)</argsstring>
+        <name>set_roles</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classdpp_1_1snowflake" kindref="compound">dpp::snowflake</ref> &gt; &amp;</type>
+          <declname>role_ids</declname>
+        </param>
+        <briefdescription>
+<para>Set a new role list for this member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This call sets the role change bit, which causes the new role list to be sent if this is passed to <ref refid="classdpp_1_1cluster_1ad793626d2733715381c3c5c440f31bd0" kindref="member">dpp::cluster::guild_edit_member</ref> or <ref refid="classdpp_1_1cluster_1a19819f7f2f2f3badecc1e29a928f2690" kindref="member">dpp::cluster::guild_add_member</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>role_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Roles to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref>&amp; Reference to self </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/guild.h" line="689" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdpp_1_1guild__member" kindref="compound">guild_member</ref> &amp;</type>
+        <definition>guild_member  &amp; dpp::json_interface&lt; guild_member  &gt;::fill_from_json</definition>
+        <argsstring>(nlohmann::json *j)</argsstring>
+        <name>fill_from_json</name>
+        <param>
+          <type>nlohmann::json *</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Convert object from nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nlohmann::json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp; Reference to self for fluent calling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="44" column="3" bodyfile="include/dpp/json_interface.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dpp::json_interface&lt; guild_member  &gt;::to_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to nlohmann::json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>json Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="56" column="6" bodyfile="include/dpp/json_interface.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string dpp::json_interface&lt; guild_member  &gt;::build_json</definition>
+        <argsstring>(bool with_id=false) const</argsstring>
+        <name>build_json</name>
+        <param>
+          <type>bool</type>
+          <declname>with_id</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Convert object to json string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>with_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to include the ID or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some fields are conditionally filled, do not rely on all fields being present </para>
+</simplesect>
+<simplesect kind="return"><para>std::string Json built from the structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/json_interface.h" line="68" column="13" bodyfile="include/dpp/json_interface.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents <ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref> membership upon a <ref refid="classdpp_1_1guild" kindref="compound">dpp::guild</ref>. This contains the user&apos;s nickname, guild roles, and any other guild-specific flags. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dpp::guild_member</label>
+        <link refid="classdpp_1_1guild__member"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; guild_member &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; guild_member &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::guild_member</label>
+        <link refid="classdpp_1_1guild__member"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>nickname</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>roles</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>guild_id</edgelabel>
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>avatar</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>communication_disabled_until</edgelabel>
+          <edgelabel>joined_at</edgelabel>
+          <edgelabel>premium_since</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dpp::json_interface&lt; T &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+      </node>
+      <node id="8">
+        <label>dpp::snowflake</label>
+        <link refid="classdpp_1_1snowflake"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dpp::utility::iconhash</label>
+        <link refid="structdpp_1_1utility_1_1iconhash"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>first</edgelabel>
+          <edgelabel>second</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dpp::json_interface&lt; guild_member &gt;</label>
+        <link refid="structdpp_1_1json__interface"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; guild_member &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector&lt;</label>
+      </node>
+      <node id="11">
+        <label>time_t</label>
+      </node>
+      <node id="7">
+        <label>uint16_t</label>
+      </node>
+      <node id="9">
+        <label>uint64_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/guild.h" line="406" column="1" bodyfile="include/dpp/guild.h" bodystart="406" bodyend="691"/>
+    <listofallmembers>
+      <member refid="classdpp_1_1guild__member_1a7a2aacce9be1720ad36613dd434fcbb4" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>add_role</name></member>
+      <member refid="classdpp_1_1guild__member_1aeb9413ebe5540ebd625a35166f5ad799" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>avatar</name></member>
+      <member refid="structdpp_1_1json__interface_1ad615544432a8a6da87f3bd70d6f6b92c" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>build_json</name></member>
+      <member refid="classdpp_1_1guild__member_1a6bf5f4ec4e76b15734782ff2fdd51170" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>communication_disabled_until</name></member>
+      <member refid="classdpp_1_1guild__member_1a8388b6feb3be3972fa50d4665b461611" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>fill_from_json</name></member>
+      <member refid="structdpp_1_1json__interface_1a96011fc1c0d56e194f83c79d40c439c6" prot="public" virt="non-virtual" ambiguityscope="json_interface&lt; guild_member &gt;::"><scope>dpp::guild_member</scope><name>fill_from_json</name></member>
+      <member refid="classdpp_1_1guild__member_1aef5b2d4061b4201157be72e1d08c6d5e" prot="protected" virt="non-virtual"><scope>dpp::guild_member</scope><name>flags</name></member>
+      <member refid="classdpp_1_1guild__member_1a3f76a28758c1056b2cfb33b603abc32b" prot="protected" virt="non-virtual"><scope>dpp::guild_member</scope><name>from_json</name></member>
+      <member refid="classdpp_1_1guild__member_1a6cb57dec0819d8224b1acab674f3a4fe" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_avatar_url</name></member>
+      <member refid="classdpp_1_1guild__member_1afb9f40dbcd49dbf960d246582eaeca9b" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_mention</name></member>
+      <member refid="classdpp_1_1guild__member_1a2ff341fd940328b7ace0ff9a042b41b4" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_nickname</name></member>
+      <member refid="classdpp_1_1guild__member_1a14bf4d871976c25c0e8c66f8deb5d105" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_roles</name></member>
+      <member refid="classdpp_1_1guild__member_1a6763c8c9384e8e1cbc04befb33210eba" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>get_user</name></member>
+      <member refid="classdpp_1_1guild__member_1abc1c9039f54691ae4e8938c2768ccf84" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>guild_id</name></member>
+      <member refid="classdpp_1_1guild__member_1a22fc1a4cacec96dafe98277604823be0" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>guild_member</name></member>
+      <member refid="classdpp_1_1guild__member_1ad785209b6ad322555a800510a5b4356c" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>has_animated_guild_avatar</name></member>
+      <member refid="classdpp_1_1guild__member_1ad57384049a04223ba4433bca70500512" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>has_bypasses_verification</name></member>
+      <member refid="classdpp_1_1guild__member_1acf3ca9039f668a1c11182f92fecdc2bc" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>has_completed_onboarding</name></member>
+      <member refid="classdpp_1_1guild__member_1a4a7c2ac25d5ecb22b540c4e46830786c" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>has_rejoined</name></member>
+      <member refid="classdpp_1_1guild__member_1a7833e07576ea23023575d4f213825d82" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>has_started_onboarding</name></member>
+      <member refid="classdpp_1_1guild__member_1a5f914350fd3720e72e4857cc3075e09f" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>is_communication_disabled</name></member>
+      <member refid="classdpp_1_1guild__member_1a1136b98c677fbbcbcc1291857cfe53ec" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>is_deaf</name></member>
+      <member refid="classdpp_1_1guild__member_1a214a6f9f4ca7129252a9ab80c5715cec" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>is_guild_owner</name></member>
+      <member refid="classdpp_1_1guild__member_1a0d9540b747d4f604088bc2d4b82f1695" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>is_muted</name></member>
+      <member refid="classdpp_1_1guild__member_1a0e8b71e030ad98f31831d7e0a079b873" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>is_pending</name></member>
+      <member refid="classdpp_1_1guild__member_1aae2dfc2f98671c98704db1fa4295b05f" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>joined_at</name></member>
+      <member refid="classdpp_1_1guild__member_1a742163d8899b9b30254d30d6ffb69f40" prot="protected" virt="non-virtual"><scope>dpp::guild_member</scope><name>json_interface&lt; guild_member &gt;</name></member>
+      <member refid="classdpp_1_1guild__member_1af305ded317e0fb05fc67d15713549efa" prot="protected" virt="non-virtual"><scope>dpp::guild_member</scope><name>nickname</name></member>
+      <member refid="classdpp_1_1guild__member_1a4a71ab5b4abfaf6d469bcbd7955bbcae" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>operator==</name></member>
+      <member refid="classdpp_1_1guild__member_1ae262a3f3d68a9728a92654e2f5b9c758" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>premium_since</name></member>
+      <member refid="classdpp_1_1guild__member_1a1f19de94dad0475bc6c191a1c9049a72" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>remove_role</name></member>
+      <member refid="classdpp_1_1guild__member_1ae9419048b9b5a143f1b705e4dff83a93" prot="protected" virt="non-virtual"><scope>dpp::guild_member</scope><name>roles</name></member>
+      <member refid="classdpp_1_1guild__member_1ac9f046365607f85a95e1c0eb05a2c43c" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>set_bypasses_verification</name></member>
+      <member refid="classdpp_1_1guild__member_1a5f8cb5390378a011a1d7fe36f5ab3441" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>set_communication_disabled_until</name></member>
+      <member refid="classdpp_1_1guild__member_1a51764b5c1960619ddc073224d2791ad3" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>set_deaf</name></member>
+      <member refid="classdpp_1_1guild__member_1a91cf849628af76ad3fb4c58c8d54efab" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>set_mute</name></member>
+      <member refid="classdpp_1_1guild__member_1adf919401f5e69225fb9fee91de8b7983" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>set_nickname</name></member>
+      <member refid="classdpp_1_1guild__member_1aef402cfcdaff6ace9ca96d94c2e7f98d" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>set_roles</name></member>
+      <member refid="structdpp_1_1json__interface_1ae169e4231b77955fc1b43a3b7be9770c" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>to_json</name></member>
+      <member refid="classdpp_1_1guild__member_1abaa573e21f5e41f36dc489c2086840a0" prot="protected" virt="non-virtual"><scope>dpp::guild_member</scope><name>to_json_impl</name></member>
+      <member refid="classdpp_1_1guild__member_1a127de740430a1f3ce4e793e21f94ce97" prot="public" virt="non-virtual"><scope>dpp::guild_member</scope><name>user_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

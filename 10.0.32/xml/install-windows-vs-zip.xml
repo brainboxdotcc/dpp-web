@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="install-windows-vs-zip" kind="page">
+    <compoundname>install-windows-vs-zip</compoundname>
+    <title>Installing from zip (Windows) for Visual Studio</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To add D++ to a Visual Studio project, using <bold>Visual Studio 2019</bold> or <bold>Visual Studio 2022</bold>, follow the steps below. The steps below assume an empty project, if you are adding to an existing project simply skip steps 1 through 4, and step 13.</para>
+<para><simplesect kind="note"><para>It is possible to skip this entire tutorial, and obtain a <ref refid="build-a-discord-bot-windows-visual-studio" kindref="compound">pre-made Visual Studio template containing the latest D++ build (for 32 and 64 bit, release and debug profiles) by clicking here</ref>.</para>
+</simplesect>
+<orderedlist>
+<listitem><para>Make sure you have Visual Studio 2019 or 2022. Community, Professional or Enterprise work fine. These instructions are not for Visual Studio Code. You can <ulink url="https://visualstudio.microsoft.com/downloads/">download the correct version here</ulink>. Note that older versions of Visual Studio will not work as they do not support enough of the C++17 standard.</para>
+</listitem><listitem><para>Start Visual Studio and choose to create a new project <image type="html" name="zip_vsproj_1.png"></image>
+</para>
+</listitem><listitem><para>Choose the project type &quot;Console Project&quot; and click next <image type="html" name="zip_vsproj_2.png"></image>
+</para>
+</listitem><listitem><para>Name your bot project. In this example, we&apos;ll use the name &apos;MyBot&apos;. You can have any name you like here. <image type="html" name="zip_vsproj_3.png"></image>
+</para>
+</listitem><listitem><para>Open the zip file you downloaded which contains the D++ DLLs, include files, and lib file. Drag and drop this to your local machine and make note of where you placed it. This location will be important in later steps. <image type="html" name="zip_vsproj_4.png"></image>
+</para>
+</listitem><listitem><para>Back inside Visual Studio, right click on the project (not solution!) in the tree in your Visual Studio window. choose &apos;Properties&apos;. <image type="html" name="zip_vsproj_5.png"></image>
+</para>
+</listitem><listitem><para>The next step is to populate the include directories and library directories sections with the paths to the D++ library and include files. The next steps will guide you through how to do this. <image type="html" name="zip_vsproj_6.png"></image>
+</para>
+</listitem><listitem><para>Click &apos;edit&apos; when prompted to edit the include paths section. Add the path to the include folder you extracted to your machine, which we took note of earlier. Note that it is important to add the dpp-10.0 folder, not any other folder, to this list: <image type="html" name="zip_vsproj_7.png"></image>
+</para>
+</listitem><listitem><para>Going back to the previous window, now edit the library paths. Again click &apos;edit&apos; when prompted to edit the library paths section. Add the path to the library folder you extracted to your machine, which we took note of earlier. Note that once more it is important to add the dpp-10.0 folder within it, not any other folder, to this list. Also be aware this is a <bold>different folder</bold> than the one you just added for includes! <image type="html" name="zip_vsproj_8.png"></image>
+</para>
+</listitem><listitem><para>Double check at this point that all the directories are filled in correctly. They should look generally like the ones in the screenshot below: <image type="html" name="zip_vsproj_9.png"></image>
+</para>
+</listitem><listitem><para>Go to the general section in the same window now, and look for the drop down list labelled &quot;C++ Language Standard&quot;. Make sure the selected option is <bold>C++17 Standard (/std:c++17)</bold> or later. <image type="html" name="zip_vsproj_10.png"></image>
+</para>
+</listitem><listitem><para>Again within the same window, go to the input section, under the linker category, and add &apos;<bold>dpp.lib;</bold>&apos; to the start of the libraries to include, as shown below: <image type="html" name="zip_vsproj_11.png"></image>
+</para>
+</listitem><listitem><para>Now you can paste some code into the editor, completely replacing the &apos;hello world&apos; application that Visual Studio made for you. The example code here is the basic bot from the first example on this site. You should at this point also double check that the architecture you have selected (in this case x86) matches the version of the dll/lib files you downloaded from the website. This is <bold>important</bold> as if you mismatch them the compilation will just fail. <image type="html" name="zip_vsproj_12.png"></image>
+</para>
+</listitem><listitem><para>Go to the build menu and choose Build Solution (A handy shortcut for this is to just press <bold>F7</bold>): <image type="html" name="zip_vsproj_13.png"></image>
+</para>
+</listitem><listitem><para>Observe the build output. There may be warnings, but so long as the build output ends with &quot;1 succeeded&quot; then the process has worked. You may now run your bot! <image type="html" name="zip_vsproj_14.png"></image>
+</para>
+</listitem></orderedlist>
+</para>
+<sect2 id="install-windows-vs-zip_1autotoc_md152">
+<title>Troubleshooting</title>
+<para><simplesect kind="note"><para>A much easier way of getting a bot running is available <ref refid="build-a-discord-bot-windows-visual-studio" kindref="compound">here</ref>! We recommend using that one if this process seems too complex or you run into too many issues.</para>
+</simplesect>
+<itemizedlist>
+<listitem><para>If you get an error that a DLL is missing (e.g. <computeroutput>dpp.dll</computeroutput> or <computeroutput>opus.dll</computeroutput>) when starting your bot, then simply copy all DLLs from the <bold>bin</bold> directory of where you extracted the D++ zip file to, into the same directory where your bot&apos;s executable is. You only need to do this once. There should be several of these DLL files: <computeroutput>dpp.dll</computeroutput>, <computeroutput>zlib.dll</computeroutput>, <computeroutput>openssl.dll</computeroutput> and <computeroutput>libcrypto.dll</computeroutput> (or similarly named SSL related files), and <computeroutput>opus.dll</computeroutput>.</para>
+</listitem><listitem><para>Please note that if you change the architecture (step 13) you must reconfigure all of steps 7 through 12 again as these configurations are specific to each architecture. This is to allow for different sets of precompiled libs, e.g. for <computeroutput>x86</computeroutput>, <computeroutput>x64</computeroutput>, etc.</para>
+</listitem><listitem><para>If you get an error that says &quot;Debug/Release mismatch&quot;, <bold>you are using the wrong configuration of the D++ dll</bold>. Your bot&apos;s executable and the dpp.dll file should both be built in either Release or Debug, you get this error if they are different. We recommend using <ref refid="build-a-discord-bot-windows-visual-studio" kindref="compound">the bot template</ref>, it has all those things already set up.</para>
+</listitem><listitem><para>You should run your bot from a command prompt. If you do not, and it exits, you will not be able to see any output as the window will immediately close.</para>
+</listitem><listitem><para>If you need to update the <computeroutput>opus.dll</computeroutput> or <computeroutput>zlib.dll</computeroutput> (or any other prebuilt dll) these can be obtained by requesting them to be installed via <computeroutput>vcpkg</computeroutput> then copying the dlls, libraries and headers from the vcpkg <computeroutput>install</computeroutput> folder.</para>
+</listitem><listitem><para>Stuck? You can find us on the <ulink url="https://discord.gg/dpp">official discord server</ulink> - ask away! We don&apos;t bite! </para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/install/install-windows-vs-zip.md"/>
+  </compounddef>
+</doxygen>

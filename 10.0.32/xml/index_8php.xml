@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="index_8php" kind="file" language="PHP">
+    <compoundname>index.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="index_8php_1a17c8948c68aa44fa9961ae169b6a8961" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$version</definition>
+        <argsstring></argsstring>
+        <name>$version</name>
+        <initializer>= !empty($version) ? $version : &apos;latest&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/index.php" line="12" column="1" bodyfile="docpages/dl.dpp.dev/index.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1a4619cf3d1eb32d06ce30bdb4562ac5d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$arch</definition>
+        <argsstring></argsstring>
+        <name>$arch</name>
+        <initializer>= !empty($arch) ? $arch : &apos;linux-x64&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/index.php" line="13" column="1" bodyfile="docpages/dl.dpp.dev/index.php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1a9a4a6fba2208984cabb3afacadf33919" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$type</definition>
+        <argsstring></argsstring>
+        <name>$type</name>
+        <initializer>= !empty($type) ? $type : &apos;deb&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/index.php" line="14" column="1" bodyfile="docpages/dl.dpp.dev/index.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1a0f9e84dcf855795f85f3d15e22a84fd9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$urls</definition>
+        <argsstring></argsstring>
+        <name>$urls</name>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/index.php" line="15" column="1" bodyfile="docpages/dl.dpp.dev/index.php" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1ae5524973b9f65cb65d60d78d6b5ce639" prot="public" static="no" mutable="no">
+        <type>if(preg_match(&apos;/^win/i&apos;, $arch) &amp;&amp;$type===&apos;deb&apos;) if($arch===&apos;win&apos;</type>
+        <definition>if(preg_match(&apos;/^win/i&apos;, $arch) &amp;&amp; $type===&apos;deb&apos;) if ( $arch===&apos;win&apos; $json) </definition>
+        <argsstring>)</argsstring>
+        <name>$json</name>
+        <initializer>= json_decode(file_get_contents(&apos;release.json&apos;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/index.php" line="27" column="1" bodyfile="docpages/dl.dpp.dev/index.php" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1a0137ba98e99b10311aa94b27053eac7c" prot="public" static="no" mutable="no">
+        <type>if($version===&apos;latest&apos;)</type>
+        <definition>if ( $version===&apos;latest&apos;) $searchName</definition>
+        <argsstring></argsstring>
+        <name>$searchName</name>
+        <initializer>= &apos;libdpp-&apos; . preg_replace(&apos;/^v/&apos;, &apos;&apos;, $version) . &apos;-&apos; . $arch . &apos;.&apos; . $type</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="docpages/dl.dpp.dev/index.php" line="35" column="1" bodyfile="docpages/dl.dpp.dev/index.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="docpages/dl.dpp.dev/index.php"/>
+  </compounddef>
+</doxygen>

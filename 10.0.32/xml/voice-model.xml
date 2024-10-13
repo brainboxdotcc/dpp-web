@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="voice-model" kind="page">
+    <compoundname>voice-model</compoundname>
+    <title>Voice Model</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="voice-model_1autotoc_md84">
+<title>High Level Summary</title>
+<para>Discord&apos;s audio system consists of several layers and inter-related systems as shown in the flow chart below.</para>
+<para>At the top level, connecting to a voice server requires the library to request the details of a voice server from Discord via the websocket for the shard where the server is located. Performing this request will make Discord reply with a websocket URI and an ephemeral token (not the bot token) which are used to establish an initial connection to this secondary websocket. Every connection to a voice channel creates a separate secondary websocket.</para>
+<para>Once connected to this websocket, the library negotiates which protocols it supports and what encryption schemes to use. If you enabled DAVE (Discord&apos;s end-to-end encryption scheme) this is negotiated first. An MLS (message layer security) group is joined or created. If you did not enable DAVE, this step is bypassed.</para>
+<para>The secondary websocket then gives the library a shared encryption secret and the hostname of an RTP server, which is used to encrypt RTP packets using libssl. This is stored for later.</para>
+<para>The next step is to send an initial packet to the RTP server so that the library can detect the public IP where the bot is running. Once the RTP server replies, the bot may tell the websocket what encryption protocols it is going to use to encrypt the RTP packet contents (leaving the RTP header somwhat intact).</para>
+<para>The library is now in an initialised state and will accept method calls for <computeroutput>send_audio_raw()</computeroutput> and <computeroutput>send_audio_opus()</computeroutput>. If you send raw audio, it will first be encoded as OPUS using libopus, and potentially repacketized to fit into UDP packets, with larger streams being split into multiple smaller packets that are scheduled to be sent in the future.</para>
+<para>If at this point DAVE is enabled, the contents of the OPUS encoded audio are encrypted using the AES 128 bit AEAD cipher and using the bot&apos;s MLS ratchet, derived during the MLS negotiation which was carried out earlier. All valid participants in the voice channel may use their private key, and the public key derived from their ratchets, to decrypt the OPUS audio.</para>
+<para>Regardless of if DAVE is enabled or not, the OPUS stream (encrypted by DAVE, or &quot;plaintext&quot;) is placed into an RTP packet, and then encrypted using the shared secret given by the websocket, known only to you and Discord, using the xchacha20 poly1305 cipher.</para>
+<para>The completed packet, potentially with two separate layers of encryption (one with a key only you and Discord know, and one with a key only you and participants in the voice chat know!), plus opus encoded audio is sent on its way via UDP to the RTP server, where Discord promptly distribute it to all participants in the chat.</para>
+<para><image type="html" name="audioframe.svg"></image>
+</para>
+<para>After reading all this, go get a coffee or something, you deserve it! ☕</para>
+</sect1>
+<sect1 id="voice-model_1autotoc_md85">
+<title>Flow Diagram</title>
+<para><dot>
+digraph &quot;Example Directory&quot; {
+    graph [ranksep=1];
+    node [colorscheme=&quot;blues9&quot;, fontname=&quot;helvetica&quot;];
+
+    &quot;Your bot&quot; [style=filled, color=1, shape=rect]
+    &quot;Discord&quot; [style=filled, color=1, shape=rect]
+    
+    subgraph cluster_0 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;guild::connect_member_voice&quot;;
+        &quot;discord_client::connect_voice&quot;;
+
+        &quot;guild::connect_member_voice&quot; -&gt; &quot;discord_client::connect_voice&quot;;
+
+        label = &quot;This is the front-end of D++.\n&apos;connect_voice&apos; will now queue a JSON message.&quot;;
+    }
+    
+    subgraph cluster_1 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=2, shape=rect]
+        &quot;message_queue&quot;;
+
+        label = &quot;This holds all our messages.\n&apos;one_second_timer&apos; reads this data&quot;;
+    }
+    
+    subgraph cluster_2 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;discord_client::one_second_timer&quot;;
+        &quot;websocket_client::write&quot;;
+        &quot;ssl_client::write&quot;;
+        
+        &quot;discord_client::one_second_timer&quot; -&gt; &quot;websocket_client::write&quot;;
+        &quot;websocket_client::write&quot; -&gt; &quot;ssl_client::write&quot;;
+        &quot;ssl_client::write&quot; -&gt; &quot;Discord&quot;;
+        
+        label = &quot;This is where we start sending\nwebsocket connections to Discord.&quot;;
+    }
+    
+    subgraph cluster_3 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;ssl_client::read_loop&quot;;
+        &quot;Response from Discord?&quot;;
+        &quot;No&quot;;
+        &quot;HTTP/1.1 204 No Content...&quot;;
+        &quot;HTTP/1.1 101 Switching Protocols&quot;;
+        
+        &quot;ssl_client::read_loop&quot; -&gt; &quot;Response from Discord?&quot;;
+        &quot;Response from Discord?&quot; -&gt; &quot;No&quot;;
+        &quot;Response from Discord?&quot; -&gt; &quot;HTTP/1.1 204 No Content...&quot;;
+        &quot;Response from Discord?&quot; -&gt; &quot;HTTP/1.1 101 Switching Protocols&quot;;
+        &quot;No&quot; -&gt; &quot;ssl_client::read_loop&quot;;
+        
+        &quot;Discord&quot; -&gt; &quot;HTTP/1.1 204 No Content...&quot;;
+        &quot;Discord&quot; -&gt; &quot;HTTP/1.1 101 Switching Protocols&quot;;
+        
+        label = &quot;Now, we&apos;re waiting for a response from Discord.\nIf we receive 204, we&apos;ll start initiating voiceconn. However, if we receive 101, then we can do all the voice stuff.&quot;;
+    }
+    
+    subgraph cluster_4 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;voice_state_update::handle&quot;;
+        &quot;voice_server_update::handle&quot;;
+        
+        &quot;HTTP/1.1 204 No Content...&quot; -&gt; &quot;voice_state_update::handle&quot;;
+        &quot;HTTP/1.1 204 No Content...&quot; -&gt; &quot;voice_server_update::handle&quot;;
+        
+        label = &quot;These events can fire in any order. Discord picks whatever it likes.&quot;;
+    }
+    
+    subgraph cluster_5 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;voiceconn::connect&quot;;
+        &quot;new discord_voice_client&quot;
+        &quot;websocket_client::connect&quot;
+        &quot;discord_voice_client::run&quot;
+        &quot;discord_voice_client::thread_run&quot;
+        
+        &quot;voiceconn::connect&quot; -&gt; &quot;new discord_voice_client&quot;;
+        &quot;new discord_voice_client&quot; -&gt; &quot;websocket_client::connect&quot;;
+        &quot;websocket_client::connect&quot; -&gt; &quot;websocket_client::write&quot;;
+
+        &quot;voiceconn::connect&quot; -&gt; &quot;discord_voice_client::run&quot; [label=&quot;Once websocket_client has finished&quot;];
+        &quot;discord_voice_client::run&quot; -&gt; &quot;discord_voice_client::thread_run&quot;;
+        &quot;discord_voice_client::thread_run&quot; -&gt; &quot;ssl_client::read_loop&quot;;
+        
+        label = &quot;Voice initalisation.\nThis will only fire when &apos;voice_server_update&apos; AND &apos;voice_state_update&apos; has fired.\nIf everything goes well, Discord should send back &apos;101 Switching Protocals&apos;.&quot;;
+    }
+    
+    subgraph cluster_6 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;discord_voice_client::handle_frame&quot;;
+        
+        &quot;HTTP/1.1 101 Switching Protocols&quot; -&gt; &quot;discord_voice_client::handle_frame&quot;;
+        
+        label = &quot;Do the voice stuff.&quot;;
+
+        &quot;discord_voice_client::handle_frame&quot;-&gt; &quot;DAVE enabled&quot;;
+        &quot;discord_voice_client::handle_frame&quot;-&gt; &quot;DAVE disabled&quot;;
+        &quot;DAVE disabled&quot;-&gt;&quot;discord_voice_client::send_audio_*()&quot;;
+ &quot;discord_voice_client::send_audio_*()&quot; -&gt; &quot;Dave encryption on&quot;;
+ &quot;discord_voice_client::send_audio_*()&quot; -&gt; &quot;Dave encryption off&quot;;
+ &quot;Dave encryption on&quot; -&gt; &quot;AES AEAD encryption\nof OPUS stream\nusing ratchet&quot;;
+ &quot;AES AEAD encryption\nof OPUS stream\nusing ratchet&quot; -&gt; &quot;XChaCha20-Poly1305 encryption&quot;;
+ &quot;Dave encryption off&quot; -&gt; &quot;XChaCha20-Poly1305 encryption&quot;;
+ &quot;XChaCha20-Poly1305 encryption&quot; -&gt; &quot;UDP sendto&quot;;
+ &quot;UDP sendto&quot; -&gt; &quot;Discord RTP server&quot;;
+ &quot;DAVE enabled&quot; -&gt; &quot;MLS send key package&quot;;
+ &quot;MLS send key package&quot; -&gt; &quot;MLS receive external sender&quot;;
+ &quot;MLS receive external sender&quot; -&gt; &quot;MLS proposals&quot;;
+ &quot;MLS proposals&quot; -&gt; &quot;MLS Welcome&quot;;
+ &quot;MLS proposals&quot; -&gt; &quot;MLS Commit&quot;;
+ &quot;MLS Commit&quot; -&gt; &quot;DAVE begin transition&quot;;
+ &quot;MLS Welcome&quot; -&gt; &quot;DAVE begin transition&quot;;
+ &quot;DAVE begin transition&quot; -&gt; &quot;Dave execute transition&quot;;
+ &quot;Dave execute transition&quot; -&gt; &quot;discord_voice_client::send_audio_*()&quot;;
+    }
+    
+    &quot;Your bot&quot; -&gt; &quot;guild::connect_member_voice&quot;;
+    
+    &quot;discord_client::connect_voice&quot; -&gt; &quot;message_queue&quot;;
+    
+    &quot;message_queue&quot; -&gt; &quot;discord_client::one_second_timer&quot;;
+    &quot;discord_client::one_second_timer&quot; -&gt; &quot;message_queue&quot;;
+    
+    &quot;voice_state_update::handle&quot; -&gt; &quot;voiceconn::connect&quot;;
+    &quot;voice_server_update::handle&quot; -&gt; &quot;voiceconn::connect&quot;;
+}
+</dot>
+ </para>
+</sect1>
+    </detaileddescription>
+    <location file="docpages/advanced_reference/voice_model.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="coding-standards" kind="page">
+    <compoundname>coding-standards</compoundname>
+    <title>Coding Style Standards</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This page lists the coding style we stick to when maintaining the D++ library. If you are submitting a pull request or other code contribution to the library, you should stick to the styles listed below. If something is not covered here, ask on the <ulink url="https://discord.gg/dpp">official Discord server</ulink>!</para>
+<sect2 id="coding-standards_1autotoc_md40">
+<title>Class Names, Function Names, and Method Names</title>
+<para>All class, variable/member, function and method names should use <computeroutput>snake_case</computeroutput>, similar to the style of the C++ standard library.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md41">
+<title>Enums</title>
+<para>Enums and their values should be <computeroutput>snake_case</computeroutput> as with class, function and method names. You do not need to use <computeroutput>enum class</computeroutput>, so make sure that enum values are prefixed with a prefix to make them unique and grouped within the IDE, e.g. <computeroutput>ll_debug</computeroutput>, <computeroutput>ll_trace</computeroutput>, etc.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md42">
+<title>Curly Braces, Brackets, etc.</title>
+<para>This covers your standard Curly Braces (commonly known as squiggly brackets), and lists.</para>
+<sect3 id="coding-standards_1autotoc_md43">
+<title>Curly Braces</title>
+<para>Curly Braces should be on the same line as the keyword, for example:</para>
+<para><programlisting filename="coding_style_standards/curly_braces.cpp"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>foo()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>==<sp/>b)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(a)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>This applies to functions, <computeroutput>while</computeroutput> statements, <computeroutput>if</computeroutput> statements, lambdas, nearly anything that uses curly braces with statements!</para>
+</sect3>
+<sect3 id="coding-standards_1autotoc_md44">
+<title>Lists</title>
+<para>Lists should have a space after the comma in parameter lists, and after opening brackets and before closing brackets except when calling a function, for example:</para>
+<para><programlisting filename="coding_style_standards/lists.cpp"><codeline><highlight class="normal">std::vector&lt;std::string&gt;<sp/>clowns<sp/>=<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;pennywise&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bobo&quot;</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">evaluate_clown(clowns[0],<sp/>evilness(2.5,<sp/>factor));</highlight></codeline>
+</programlisting></para>
+</sect3>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md45">
+<title>Dot (.) Notation</title>
+<para>When using the dot notation repeatedly (For example, creating an embed.), you should start each <computeroutput>.function()</computeroutput> on a new line, as such:</para>
+<para><programlisting filename="coding_style_standards/dot_notation.cpp"><codeline><highlight class="normal">stuff{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.add_stuff()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.add_stuff();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">event</highlight><highlight class="normal">.reply(</highlight><highlight class="stringliteral">&quot;This<sp/>reply<sp/>function<sp/>isn&apos;t<sp/>indented!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md46">
+<title>Indentation</title>
+<para>Indentation should always be tab characters. It is up to you how wide you set tab characters in your editor for your personal tastes. All code blocks delimited within curly braces should be indented neatly and uniformly.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md47">
+<title>Constants and #define Macros</title>
+<para>Constants and macros should be all <computeroutput>UPPERCASE</computeroutput> with <computeroutput>SNAKE_CASE</computeroutput> to separate words. Macros should not have any unexpected side effects.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md48">
+<title>Comments</title>
+<para>All comments should be in <computeroutput>doxygen</computeroutput> format (similar to javadoc). Please see existing class definitions for an example. You should use doxygen style comments in a class definition inside a header file. Be liberal with comments, especially if your code makes any assumptions! Comments should follow the format below:</para>
+<para><simplesect kind="note"><para>Comments that contain doxygen stuff need to use two stars at the beginning (/**). This example doesn&apos;t because doxygen gets confused and doesn&apos;t show the comments.</para>
+</simplesect>
+<programlisting filename="coding_style_standards/comments.cpp"><codeline><highlight class="comment">/*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@brief<sp/>This<sp/>is<sp/>a<sp/>function<sp/>that<sp/>does<sp/>some<sp/>cool<sp/>stuff.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>More<sp/>stuff<sp/>here<sp/>will<sp/>still<sp/>go<sp/>in<sp/>brief!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@warning<sp/>This<sp/>does<sp/>nothing!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">func_name();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@brief<sp/>This<sp/>turns<sp/>a<sp/>name<sp/>into<sp/>a<sp/>meme<sp/>name!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@param<sp/>name<sp/>The<sp/>name<sp/>of<sp/>the<sp/>user<sp/>that<sp/>you<sp/>want<sp/>to<sp/>meme-ify.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>@return<sp/>a<sp/>meme<sp/>name!</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">std::string<sp/>name_to_meme(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>--------------------<sp/>.cpp<sp/>file<sp/>--------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>are<sp/>now<sp/>going<sp/>to<sp/>do<sp/>some<sp/>cool<sp/>stuff.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>func_name();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Going<sp/>to<sp/>turn<sp/>brain<sp/>into<sp/>a<sp/>meme<sp/>name.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Why?</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Because<sp/>why<sp/>not.<sp/>That&apos;s<sp/>why.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>name_to_meme(</highlight><highlight class="stringliteral">&quot;Brain&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md49">
+<title>Spell Checks</title>
+<para>To prevent typos, a GitHub-Action checks the documentation. If it fails for a word that was falsely flagged, you can add them to <computeroutput>.cspell.json</computeroutput>.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md50">
+<title>Symbol Exporting</title>
+<para>If you export a class which is to be accessible to users, be sure to prefix it with the <computeroutput>DPP_EXPORT</computeroutput> macro, for example:</para>
+<para><programlisting filename="coding_style_standards/symbol_exporting.cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para>
+<para>The <computeroutput>DPP_EXPORT</computeroutput> macro ensures that on certain platforms (notably Windows) the symbol is exported to be available to the library user.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md51">
+<title>Public vs Private vs Protected</title>
+<para>It is a design philosophy of D++ that everything possible in a class should be public, unless the user really does not need it (you should consider justifying in comments why) or user adjustment of the variable could badly break the functioning of the library. Avoid the use of accessors for setting/getting values in a class, except for bit fields, where you should provide accessors for setting and getting individual bits (for example, see <computeroutput>user.h</computeroutput>), or in the event you want to provide a &quot;fluent&quot; interface. The exception to this is where you want to provide a logic validation of a field, for example if you have a string field with a minimum and maximum length, you can provide a setter the user can <emphasis>optionally use</emphasis> which will validate their input.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md52">
+<title>Exceptions</title>
+<para>All exceptions thrown should derive from <ref refid="classdpp_1_1exception" kindref="compound">dpp::exception</ref> (see <computeroutput>dpp/exception.h</computeroutput>) - when validating string lengths, a string which is too long should be truncated using <ref refid="namespacedpp_1_1utility_1adefca3fb7feb3a25f94e2aa1863cad90" kindref="member">dpp::utility::utf8substr</ref> and any strings that are too short should throw a <ref refid="classdpp_1_1length__exception" kindref="compound">dpp::length_exception</ref>.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md53">
+<title>Inheritance</title>
+<para>Keep levels of inheritance low. If you need to inherit more than 3 levels deep, it is probable that the design could be simplified. Remember that at scale, there can be tens of millions of certain classes and each level of virtual nesting adds to the <computeroutput>vtable</computeroutput> of that object&apos;s instance in RAM.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md54">
+<title>Bit Field Packing</title>
+<para>Where Discord provides boolean flags, if the user is expected to store many of the objects in RAM, or in cache, you should pack all these booleans into bit fields (see <computeroutput>user.h</computeroutput> and <computeroutput>channel.h</computeroutput> for examples). In the event that the object is transient, such as an interaction or a message, packing the data into bit fields is counter intuitive. Remember that you should provide specific accessors for bit field values!</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md55">
+<title>Keep Dependencies Internal!</title>
+<para>Where you are making use of an external dependency such as <computeroutput>opus</computeroutput> or <computeroutput>libssl</computeroutput>, do not place references to the types/structs, or the header files of these external libraries within the header files of D++. Doing so adds that library as a public dependency to the project (which is bad!). Instead make an opaque class, and/or forward-declare the structs (for examples see <computeroutput>sslclient.h</computeroutput> and <computeroutput>discordvoiceclient.h</computeroutput>).</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md56">
+<title>API Type Names</title>
+<para>Where Discord provides a name in PascalCase we should stick as closely to that name as possible but convert it to <computeroutput>snake_case</computeroutput>. For example, GuildMember would become <computeroutput>guild_member</computeroutput>.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md57">
+<title>Don&apos;t Introduce Any Platform-Specific Code</title>
+<para>Do not introduce platform specific (e.g. Windows only) code or libc functions. If you really must use these functions safely wrap them e.g. in <computeroutput>#ifdef _WIN32</computeroutput> and provide a cross-platform alternative so that it works for everyone.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md58">
+<title>C++ Version</title>
+<para>The code must work with the C++17 standard, unless, for an optional feature that can be enabled and that uses a more recent standard (e.g. Coroutines).</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md59">
+<title>Select the Right Size Type for Numeric Types</title>
+<para>If a value will only hold values up to 255, use <computeroutput>uint8_t</computeroutput>. If a value cannot hold over 65536, use <computeroutput>uint16_t</computeroutput>. These types can help use a lot less RAM at scale.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md60">
+<title>Fluent Design</title>
+<para>Where possible, if you are adding methods to a class you should consider fluent design. Fluent design is the use of class methods that return a reference to self (via <computeroutput>return *this</computeroutput>), so that you can chain object method calls together (in the way <ref refid="structdpp_1_1message" kindref="compound">dpp::message</ref> and <ref refid="structdpp_1_1embed" kindref="compound">dpp::embed</ref> do). For example:</para>
+<para><programlisting filename="coding_style_standards/fluent_design.cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">DPP_EXPORT<sp/>my_new_class<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hats;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clowns;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>my_new_class&amp;<sp/>set_hats(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_hats);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>my_new_class&amp;<sp/>set_clowns(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_clowns);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">my_new_class&amp;<sp/>my_new_class::set_hats(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_hats)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hats<sp/>=<sp/>new_hats;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">my_new_class&amp;<sp/>my_new_class::set_clowns(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_clowns)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>clowns<sp/>=<sp/>new_clowns;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>This would allow the user to do this:</para>
+<para><programlisting filename="coding_style_standards/fluent_design2.cpp"><codeline><highlight class="normal">dpp::my_new_class<sp/>nc;</highlight></codeline>
+<codeline><highlight class="normal">nc.set_hats(3).set_clowns(9001);</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md61">
+<title>Keep All D++ Related Types in the dpp Namespace</title>
+<para>All types for the library should be within the <computeroutput>dpp</computeroutput> namespace. There are a couple of additional namespaces, e.g. <ref refid="namespacedpp_1_1utility" kindref="compound">dpp::utility</ref> for static standalone helper functions and helper classes, and <ref refid="namespacedpp_1_1events" kindref="compound">dpp::events</ref> for internal websocket event handlers.</para>
+</sect2>
+<sect2 id="coding-standards_1autotoc_md62">
+<title>Commit Messages and Git</title>
+<para>All pull requests (&quot;PRs&quot;) should be submitted against the <computeroutput>dev</computeroutput> branch in GitHub.</para>
+<sect3 id="coding-standards_1autotoc_md63">
+<title>Naming Conventions</title>
+<para>It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your commit or the PR Created. Commits must be prefixed with a type, which consists of a noun, <computeroutput>feat</computeroutput>, <computeroutput>fix</computeroutput>, etc., followed by a colon and a space. Other commit types can be <computeroutput>breaking</computeroutput>, <computeroutput>docs</computeroutput>, <computeroutput>refactor</computeroutput>, <computeroutput>deprecate</computeroutput>, <computeroutput>perf</computeroutput>, <computeroutput>test</computeroutput>, <computeroutput>chore</computeroutput>, and <computeroutput>misc</computeroutput>. Read <ulink url="https://www.conventionalcommits.org/en/v1.0.0-beta.3/">conventional commits</ulink> for more information on how we like to format commit messages.</para>
+</sect3>
+<sect3 id="coding-standards_1autotoc_md64">
+<title>GitHub Actions</title>
+<para>All PRs must pass the <ulink url="https://github.com/brainboxdotcc/DPP/actions">GitHub Actions</ulink> tests before being allowed to be merged. This is to ensure that no code committed into the project fails to compile on any of our officially supported platforms or architectures.</para>
+</sect3>
+<sect3 id="coding-standards_1autotoc_md65">
+<title>Developer Certificate of Origin</title>
+<para>All code contributed to D++ must be submitted under agreement of the Linux Foundation Developer Certificate of Origin. This is a simple agreement which protects you and us from any potential legal issues:</para>
+<para><programlisting><codeline><highlight class="normal">Version<sp/>1.1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Copyright<sp/>(C)<sp/>2004,<sp/>2006<sp/>The<sp/>Linux<sp/>Foundation<sp/>and<sp/>its<sp/>contributors.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Everyone<sp/>is<sp/>permitted<sp/>to<sp/>copy<sp/>and<sp/>distribute<sp/>verbatim<sp/>copies<sp/>of<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">license<sp/>document,<sp/>but<sp/>changing<sp/>it<sp/>is<sp/>not<sp/>allowed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">By<sp/>making<sp/>a<sp/>contribution<sp/>to<sp/>this<sp/>project,<sp/>I<sp/>certify<sp/>that:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(a)<sp/>The<sp/>contribution<sp/>was<sp/>created<sp/>in<sp/>whole<sp/>or<sp/>in<sp/>part<sp/>by<sp/>me<sp/>and<sp/>I</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>have<sp/>the<sp/>right<sp/>to<sp/>submit<sp/>it<sp/>under<sp/>the<sp/>open<sp/>source<sp/>license</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>indicated<sp/>in<sp/>the<sp/>file;<sp/>or</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(b)<sp/>The<sp/>contribution<sp/>is<sp/>based<sp/>upon<sp/>previous<sp/>work<sp/>that,<sp/>to<sp/>the<sp/>best</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>of<sp/>my<sp/>knowledge,<sp/>is<sp/>covered<sp/>under<sp/>an<sp/>appropriate<sp/>open<sp/>source</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>license<sp/>and<sp/>I<sp/>have<sp/>the<sp/>right<sp/>under<sp/>that<sp/>license<sp/>to<sp/>submit<sp/>that</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>work<sp/>with<sp/>modifications,<sp/>whether<sp/>created<sp/>in<sp/>whole<sp/>or<sp/>in<sp/>part</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>by<sp/>me,<sp/>under<sp/>the<sp/>same<sp/>open<sp/>source<sp/>license<sp/>(unless<sp/>I<sp/>am</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>permitted<sp/>to<sp/>submit<sp/>under<sp/>a<sp/>different<sp/>license),<sp/>as<sp/>indicated</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>in<sp/>the<sp/>file;<sp/>or</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(c)<sp/>The<sp/>contribution<sp/>was<sp/>provided<sp/>directly<sp/>to<sp/>me<sp/>by<sp/>some<sp/>other</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>person<sp/>who<sp/>certified<sp/>(a),<sp/>(b)<sp/>or<sp/>(c)<sp/>and<sp/>I<sp/>have<sp/>not<sp/>modified</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(d)<sp/>I<sp/>understand<sp/>and<sp/>agree<sp/>that<sp/>this<sp/>project<sp/>and<sp/>the<sp/>contribution</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>are<sp/>public<sp/>and<sp/>that<sp/>a<sp/>record<sp/>of<sp/>the<sp/>contribution<sp/>(including<sp/>all</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>personal<sp/>information<sp/>I<sp/>submit<sp/>with<sp/>it,<sp/>including<sp/>my<sp/>sign-off)<sp/>is</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>maintained<sp/>indefinitely<sp/>and<sp/>may<sp/>be<sp/>redistributed<sp/>consistent<sp/>with</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>this<sp/>project<sp/>or<sp/>the<sp/>open<sp/>source<sp/>license(s)<sp/>involved.</highlight></codeline>
+</programlisting> </para>
+</sect3>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/advanced_reference/coding_style_standards.md"/>
+  </compounddef>
+</doxygen>

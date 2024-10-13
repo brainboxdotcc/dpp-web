@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="buildwindows" kind="page">
+    <compoundname>buildwindows</compoundname>
+    <title>Building on Windows</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To build on Windows follow these steps <emphasis>exactly</emphasis>. The build process depends on specific libraries being installed on your system in specific locations.</para>
+<sect2 id="buildwindows_1autotoc_md108">
+<title>Wait a minute! Read this first!</title>
+<para><simplesect kind="warning"><para><bold>You do not need to follow this tutorial unless you plan to contribute to or modify the library itself</bold>. Unless you consider yourself an <bold>advanced user</bold> with a specific <bold>requirement to build from source</bold> you should <ulink url="https://github.com/brainboxdotcc/windows-bot-template/">obtain a pre-made Visual Studio template containing the latest D++ build (for 32 and 64 bit, release and debug profiles) by clicking here</ulink> and completely skip this guide! Instead, read <ref refid="build-a-discord-bot-windows-visual-studio" kindref="compound">Building a Discord Bot on Windows Using Visual Studio</ref>.</para>
+</simplesect>
+</para>
+</sect2>
+<sect2 id="buildwindows_1autotoc_md109">
+<title>If you are absolutely sure you need this guide, read on:</title>
+<para><orderedlist>
+<listitem><para>Make sure you have Visual Studio 2019 or Visual Studio 2022. The Community, Professional or Enterprise versions all work, however you will probably want to install Community. You do <bold>NOT</bold> want to use <emphasis>Visual Studio Code</emphasis> for this. You can <ulink url="https://visualstudio.microsoft.com/downloads/">download the correct version here</ulink>.</para>
+</listitem><listitem><para>Check out the D++ project source using Git</para>
+</listitem><listitem><para>From within Visual Studio 2019, click the &quot;File&quot; menu, choose &quot;Open&quot; then &quot;CMake&quot;, and select the <computeroutput>CMakeLists.txt</computeroutput> within the project folder <image type="html" name="winbuild_1.png"></image>
+ <image type="html" name="winbuild_2.png"></image>
+</para>
+</listitem><listitem><para>Go to the &quot;Build&quot; menu and choose &quot;Build all&quot; or just press F7 <image type="html" name="winbuild_3.png"></image>
+</para>
+</listitem><listitem><para>Check that compilation succeeded. You may now use the library in your projects! <image type="html" name="winbuild_4.png"></image>
+</para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="buildwindows_1autotoc_md110">
+<title>Troubleshooting</title>
+<para><itemizedlist>
+<listitem><para>If you do not have an option to open the <computeroutput>CMakeLists.txt</computeroutput>, ensure that you have installed the C++ development portions of Visual Studio (not just web development portions) with at least the default options.</para>
+</listitem><listitem><para>If the project does not build, please ask for help on the <ulink url="https://discord.gg/dpp">official Discord server</ulink>.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="buildwindows_1autotoc_md111">
+<title>After compiling</title>
+<para>After compilation you can directly reference the compiled project in your own <computeroutput>CMakeLists.txt</computeroutput> as a library or use the <computeroutput>lib/dll/headers</computeroutput> as you wish. Note that <computeroutput>openssl</computeroutput> and <computeroutput>zlib</computeroutput> will also be an indirect dependency of your program (as <computeroutput>DLL</computeroutput> files) and should be copied alongside <computeroutput>dpp.dll</computeroutput>.</para>
+<para><bold>Have fun!</bold> </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/building/windows.md"/>
+  </compounddef>
+</doxygen>
