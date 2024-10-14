@@ -7836,7 +7836,6 @@ var namespacedpp =
       [ "voice_opcode_connection_hello", "namespacedpp.html#a589107ba48617812d4c260d95be99503a81f4b0af1c66ba6ab4aa31a0413379b4", null ],
       [ "voice_opcode_connection_resumed", "namespacedpp.html#a589107ba48617812d4c260d95be99503a0e527f956dcb531ba339034cd78addb5", null ],
       [ "voice_opcode_multiple_clients_connect", "namespacedpp.html#a589107ba48617812d4c260d95be99503ae1e419dac39cd63a1a4daa805dcd540f", null ],
-      [ "voice_opcode_client_connect", "namespacedpp.html#a589107ba48617812d4c260d95be99503a21946a2100cbc6ea546bc5bcad77b05b", null ],
       [ "voice_opcode_client_disconnect", "namespacedpp.html#a589107ba48617812d4c260d95be99503a27b2cd8fa3b0939b31c50c7853acf361", null ],
       [ "voice_opcode_media_sink", "namespacedpp.html#a589107ba48617812d4c260d95be99503a8f10aed4407f76938bed358696f63473", null ],
       [ "voice_client_flags", "namespacedpp.html#a589107ba48617812d4c260d95be99503a32d794de61cc74e5f1076bb17e24e3ca", null ],
@@ -7849,7 +7848,7 @@ var namespacedpp =
       [ "voice_client_dave_mls_key_package", "namespacedpp.html#a589107ba48617812d4c260d95be99503a9202218953b2be20ea9c301713389a98", null ],
       [ "voice_client_dave_mls_proposals", "namespacedpp.html#a589107ba48617812d4c260d95be99503ab2e180a786ccac0c7c0728e6a66a4574", null ],
       [ "voice_client_dave_mls_commit_message", "namespacedpp.html#a589107ba48617812d4c260d95be99503aa1c6f12c83b451d411274dc6271b9350", null ],
-      [ "voice_client_dave_announce_commit_transaction", "namespacedpp.html#a589107ba48617812d4c260d95be99503acda11fe3b1df817a18ebb5e110e240ec", null ],
+      [ "voice_client_dave_announce_commit_transition", "namespacedpp.html#a589107ba48617812d4c260d95be99503a70c8d578a940d7c99151b418bd86ab3b", null ],
       [ "voice_client_dave_mls_welcome", "namespacedpp.html#a589107ba48617812d4c260d95be99503afc6bc4b7f456158f9360a829576812ae", null ],
       [ "voice_client_dave_mls_invalid_commit_welcome", "namespacedpp.html#a589107ba48617812d4c260d95be99503a6ab60e1d35be60904850ccea87af5643", null ]
     ] ],

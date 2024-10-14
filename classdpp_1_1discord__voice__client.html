@@ -246,6 +246,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a92ec2cba8cee44cbd3e0fa9c2a87ed66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a92ec2cba8cee44cbd3e0fa9c2a87ed66">get_user_privacy_code</a> (const <a class="el" href="classdpp_1_1snowflake.html">dpp::snowflake</a> <a class="el" href="classdpp_1_1user.html">user</a>, <a class="el" href="namespacedpp.html#ae225fa7236536ef5a433821171982dbf">privacy_code_callback_t</a> callback) const</td></tr>
 <tr class="memdesc:a92ec2cba8cee44cbd3e0fa9c2a87ed66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the privacy code for a given user by id, if they are in the voice call, and enc-to-end encryption is enabled.  <a href="classdpp_1_1discord__voice__client.html#a92ec2cba8cee44cbd3e0fa9c2a87ed66">More...</a><br /></td></tr>
 <tr class="separator:a92ec2cba8cee44cbd3e0fa9c2a87ed66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c2f1be7861b8d8d2400a456044fd9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#af7c2f1be7861b8d8d2400a456044fd9a">ready_for_transition</a> (const std::string &amp;data)</td></tr>
+<tr class="memdesc:af7c2f1be7861b8d8d2400a456044fd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify gateway ready for a DAVE transition.  <a href="classdpp_1_1discord__voice__client.html#af7c2f1be7861b8d8d2400a456044fd9a">More...</a><br /></td></tr>
+<tr class="separator:af7c2f1be7861b8d8d2400a456044fd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b192cad8f1c6a215999ffb2faa4f26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#ae7b192cad8f1c6a215999ffb2faa4f26">recover_from_invalid_commit_welcome</a> ()</td></tr>
+<tr class="memdesc:ae7b192cad8f1c6a215999ffb2faa4f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset dave session, send voice_client_dave_mls_invalid_commit_welcome payload with current transition Id and our new key package to gateway.  <a href="classdpp_1_1discord__voice__client.html#ae7b192cad8f1c6a215999ffb2faa4f26">More...</a><br /></td></tr>
+<tr class="separator:ae7b192cad8f1c6a215999ffb2faa4f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9369b02d9e0f4c3e5c0c5b36fcf87550"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#a9369b02d9e0f4c3e5c0c5b36fcf87550">execute_pending_upgrade_downgrade</a> ()</td></tr>
+<tr class="memdesc:a9369b02d9e0f4c3e5c0c5b36fcf87550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute pending protocol upgrade/downgrade to/from dave.  <a href="classdpp_1_1discord__voice__client.html#a9369b02d9e0f4c3e5c0c5b36fcf87550">More...</a><br /></td></tr>
+<tr class="separator:a9369b02d9e0f4c3e5c0c5b36fcf87550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdaf2aecb41c9aab776bc1ef05c631a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#afbdaf2aecb41c9aab776bc1ef05c631a">reinit_dave_mls_group</a> ()</td></tr>
+<tr class="memdesc:afbdaf2aecb41c9aab776bc1ef05c631a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset dave session and prepare initial session group.  <a href="classdpp_1_1discord__voice__client.html#afbdaf2aecb41c9aab776bc1ef05c631a">More...</a><br /></td></tr>
+<tr class="separator:afbdaf2aecb41c9aab776bc1ef05c631a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5723044d2865b2bea5cfc9011636f59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1discord__voice__client.html#ab5723044d2865b2bea5cfc9011636f59">process_mls_group_rosters</a> (const std::map&lt; uint64_t, std::vector&lt; uint8_t &gt; &gt; &amp;rmap)</td></tr>
+<tr class="memdesc:ab5723044d2865b2bea5cfc9011636f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process roster map from commit/welcome.  <a href="classdpp_1_1discord__voice__client.html#ab5723044d2865b2bea5cfc9011636f59">More...</a><br /></td></tr>
+<tr class="separator:ab5723044d2865b2bea5cfc9011636f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a28fcb2647f4e1203c4aa1b842a2bc9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1websocket__client.html#a1a28fcb2647f4e1203c4aa1b842a2bc9">write</a> (const std::string_view data, <a class="el" href="namespacedpp.html#aa84690a0ba0251e8609440e93919da1c">ws_opcode</a> _opcode=<a class="el" href="namespacedpp.html#aa84690a0ba0251e8609440e93919da1ca3b445e535f31d7de2d862b4c44020e99">OP_AUTO</a>)</td></tr>
 <tr class="memdesc:a1a28fcb2647f4e1203c4aa1b842a2bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to websocket. Encapsulates data in frames if the status is CONNECTED.  <a href="classdpp_1_1websocket__client.html#a1a28fcb2647f4e1203c4aa1b842a2bc9">More...</a><br /></td></tr>
 <tr class="separator:a1a28fcb2647f4e1203c4aa1b842a2bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -633,6 +648,26 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="classdpp_1_1websocket__client.html#abd1b3d59beb6a505e81e2bf3374e2532">dpp::websocket_client</a>.</p>
+
+</div>
+</div>
+<a id="a9369b02d9e0f4c3e5c0c5b36fcf87550" name="a9369b02d9e0f4c3e5c0c5b36fcf87550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9369b02d9e0f4c3e5c0c5b36fcf87550">&#9670;&nbsp;</a></span>execute_pending_upgrade_downgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dpp::discord_voice_client::execute_pending_upgrade_downgrade </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute pending protocol upgrade/downgrade to/from dave. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if did an upgrade/downgrade </dd></dl>
 
 </div>
 </div>
@@ -1272,6 +1307,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab5723044d2865b2bea5cfc9011636f59" name="ab5723044d2865b2bea5cfc9011636f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5723044d2865b2bea5cfc9011636f59">&#9670;&nbsp;</a></span>process_mls_group_rosters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_voice_client::process_mls_group_rosters </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; uint64_t, std::vector&lt; uint8_t &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rmap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process roster map from commit/welcome. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rmap</td><td>Roster map </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a17d4e73c74413a5a79a3859615f913e2" name="a17d4e73c74413a5a79a3859615f913e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17d4e73c74413a5a79a3859615f913e2">&#9670;&nbsp;</a></span>read_loop()</h2>
 
@@ -1302,6 +1363,73 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="af7c2f1be7861b8d8d2400a456044fd9a" name="af7c2f1be7861b8d8d2400a456044fd9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c2f1be7861b8d8d2400a456044fd9a">&#9670;&nbsp;</a></span>ready_for_transition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_voice_client::ready_for_transition </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify gateway ready for a DAVE transition. </p>
+<p >Fires Voice Ready event when appropriate.</p>
+<p ><a href="https://daveprotocol.com/#commit-handling">https://daveprotocol.com/#commit-handling</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Websocket frame data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae7b192cad8f1c6a215999ffb2faa4f26" name="ae7b192cad8f1c6a215999ffb2faa4f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b192cad8f1c6a215999ffb2faa4f26">&#9670;&nbsp;</a></span>recover_from_invalid_commit_welcome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_voice_client::recover_from_invalid_commit_welcome </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset dave session, send voice_client_dave_mls_invalid_commit_welcome payload with current transition Id and our new key package to gateway. </p>
+<p ><a href="https://daveprotocol.com/#recovery-from-invalid-commit-or-welcome">https://daveprotocol.com/#recovery-from-invalid-commit-or-welcome</a> </p>
+
+</div>
+</div>
+<a id="afbdaf2aecb41c9aab776bc1ef05c631a" name="afbdaf2aecb41c9aab776bc1ef05c631a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdaf2aecb41c9aab776bc1ef05c631a">&#9670;&nbsp;</a></span>reinit_dave_mls_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dpp::discord_voice_client::reinit_dave_mls_group </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset dave session and prepare initial session group. </p>
 
 </div>
 </div>
@@ -2323,7 +2451,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_enumvalue" href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483">satype_recorded_audio</a></div>
-<div class="ttc" id="aclassdpp_1_1discord__voice__client_html_a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483"><div class="ttname"><a href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483">dpp::discord_voice_client::satype_recorded_audio</a></div><div class="ttdeci">@ satype_recorded_audio</div><div class="ttdef"><b>Definition:</b> discordvoiceclient.h:782</div></div>
+<div class="ttc" id="aclassdpp_1_1discord__voice__client_html_a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483"><div class="ttname"><a href="classdpp_1_1discord__voice__client.html#a6eb4a952b8451906316fcdb746c2bd34ae2b3cfe5518ced394ad9db0bbfa18483">dpp::discord_voice_client::satype_recorded_audio</a></div><div class="ttdeci">@ satype_recorded_audio</div><div class="ttdef"><b>Definition:</b> discordvoiceclient.h:793</div></div>
 </div><!-- fragment -->
 </div>
 </div>

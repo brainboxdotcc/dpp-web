@@ -102,21 +102,21 @@ $(document).ready(function(){initNavTree('buildlinux.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section note"><dt>Note</dt><dd>You might not need to build a copy of the library for Linux - precompiled deb files for 64 bit and 32 bit Debian and Ubuntu are provided in the GitHub version releases. Unless you are on a different Linux distribution which does not support the installation of deb files, or wish to submit fixes and enhancements to the library itself you should have an easier time installing the precompiled version instead.</dd></dl>
-<h2><a class="anchor" id="autotoc_md92"></a>
+<h2><a class="anchor" id="autotoc_md95"></a>
 1. Build Source Code</h2>
 <div class="fragment"><div class="line">cmake -B ./build</div>
 <div class="line">cmake --build ./build -j8</div>
 </div><!-- fragment --><p >Replace the number after <code>-j</code> with a number suitable for your setup, usually the same as the number of cores on your machine. <code>cmake</code> will fetch any dependencies that are required for you and ensure they are compiled alongside the library.</p>
-<h2><a class="anchor" id="autotoc_md93"></a>
+<h2><a class="anchor" id="autotoc_md96"></a>
 2. Install to /usr/local/include and /usr/local/lib</h2>
 <div class="fragment"><div class="line">cd build</div>
 <div class="line">sudo make install</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md94"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md97"></a>
 3. Installation to a Different Directory</h2>
 <p >If you want to install the library, its dependencies, and header files to a different directory, specify this directory when running <code>cmake</code>:</p>
 <div class="fragment"><div class="line">cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</div>
 </div><!-- fragment --><p >Then once the build is complete, run <code>make install</code> to install to the location you specified.</p>
-<h2><a class="anchor" id="autotoc_md95"></a>
+<h2><a class="anchor" id="autotoc_md98"></a>
 4. Using the Library</h2>
 <p >Once installed to the <code>/usr/local</code> directory, you can make use of the library in standalone programs simply by including it and linking to it:</p>
 <div class="fragment"><div class="line">g++ -std=c++17 mydppbot.cpp -o dppbot -ldpp</div>

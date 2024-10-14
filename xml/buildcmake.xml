@@ -9,7 +9,7 @@
 <para><simplesect kind="warning"><para><bold>This tutorial will assume that you have already installed DPP.</bold> If you haven&apos;t, please head over to <ref refid="install-linux-deb" kindref="compound">this page</ref>, or any install page that matches your OS. If you want to use source, then continue your journey over at <ref refid="buildlinux" kindref="compound">this page</ref> for a full explanation into using CMake with source.</para>
 </simplesect>
 </para>
-<sect2 id="buildcmake_1autotoc_md158">
+<sect2 id="buildcmake_1autotoc_md161">
 <title>1. Toolchain</title>
 <para>Before continuing, you will need to install <computeroutput>cmake</computeroutput> on your system. To be sure that <computeroutput>cmake</computeroutput> is installed, you can type the following command:</para>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">$<sp/>cmake<sp/>--version</highlight></codeline>
@@ -17,7 +17,7 @@
 </programlisting></para>
 <para>If your CMake version is not as shown above then don&apos;t worry! You can still follow along, even if you&apos;re ahead or behind!</para>
 </sect2>
-<sect2 id="buildcmake_1autotoc_md159">
+<sect2 id="buildcmake_1autotoc_md162">
 <title>2. Create a CMake project</title>
 <para>In an empty directory, create the following files and directories:</para>
 <para><dot>
@@ -70,7 +70,7 @@ digraph &quot;Example Directory&quot; {
 </dot>
 </para>
 </sect2>
-<sect2 id="buildcmake_1autotoc_md160">
+<sect2 id="buildcmake_1autotoc_md163">
 <title>3. Configure CMake</title>
 <para>You&apos;ll need to modify the <computeroutput>CMakeLists.txt</computeroutput> to tell CMake what it&apos;s looking for, and other information.</para>
 <para>Here is an example CMake configuration, you can adapt it according to your needs:</para>
@@ -116,7 +116,7 @@ digraph &quot;Example Directory&quot; {
 <codeline><highlight class="normal">find_package_handle_standard_args(DPP<sp/>DEFAULT_MSG<sp/>DPP_LIBRARIES<sp/>DPP_INCLUDE_DIR)</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="buildcmake_1autotoc_md161">
+<sect2 id="buildcmake_1autotoc_md164">
 <title>4. Build the bot.</title>
 <para>Now that we have our all our cmake stuff setup and we&apos;ve got our code in place, we can initalise CMake. You&apos;ll want to go inside the <computeroutput>build/</computeroutput> directory and do <computeroutput>cmake ..</computeroutput>.</para>
 <para>Once that&apos;s completed, you&apos;ll want to head back to your up-most folder (where all the folders are for your bot) and run <computeroutput>cmake --build build/ -j4</computeroutput> (replace -j4 with however many threads you want to use). This will start compiling your bot and creating the executable.</para>

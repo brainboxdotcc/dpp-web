@@ -1,5 +1,14 @@
 var NAVTREEINDEX73 =
 {
+"structdpp_1_1user__update__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71":[9,0,0,233,11],
+"structdpp_1_1user__update__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71":[11,0,0,228,11],
+"structdpp_1_1user__update__t.html#aae35038ecb874c46e355fac3863615d0":[9,0,0,233,6],
+"structdpp_1_1user__update__t.html#aae35038ecb874c46e355fac3863615d0":[11,0,0,228,6],
+"structdpp_1_1user__update__t.html#aca2880114f69b7ba62eb5137824c1432":[9,0,0,233,7],
+"structdpp_1_1user__update__t.html#aca2880114f69b7ba62eb5137824c1432":[11,0,0,228,7],
+"structdpp_1_1user__update__t.html#acf7350525a97e8a278cf103d2f8e79fe":[9,0,0,233,13],
+"structdpp_1_1user__update__t.html#acf7350525a97e8a278cf103d2f8e79fe":[11,0,0,228,13],
+"structdpp_1_1user__update__t.html#ad761e8dec36073665f520aaa13fbe6dc":[9,0,0,233,2],
 "structdpp_1_1user__update__t.html#ad761e8dec36073665f520aaa13fbe6dc":[11,0,0,228,2],
 "structdpp_1_1user__update__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[9,0,0,233,3],
 "structdpp_1_1user__update__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[11,0,0,228,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX73 =
 "structdpp_1_1voice__client__speaking__t.html#aae35038ecb874c46e355fac3863615d0":[9,0,0,237,6],
 "structdpp_1_1voice__client__speaking__t.html#aae35038ecb874c46e355fac3863615d0":[11,0,0,232,6],
 "structdpp_1_1voice__client__speaking__t.html#aca2880114f69b7ba62eb5137824c1432":[11,0,0,232,7],
-"structdpp_1_1voice__client__speaking__t.html#aca2880114f69b7ba62eb5137824c1432":[9,0,0,237,7],
-"structdpp_1_1voice__client__speaking__t.html#ad761e8dec36073665f520aaa13fbe6dc":[9,0,0,237,2],
-"structdpp_1_1voice__client__speaking__t.html#ad761e8dec36073665f520aaa13fbe6dc":[11,0,0,232,2],
-"structdpp_1_1voice__client__speaking__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[11,0,0,232,3],
-"structdpp_1_1voice__client__speaking__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[9,0,0,237,3],
-"structdpp_1_1voice__client__speaking__t.html#af32126d4ed56366b4413c84b272383b7":[11,0,0,232,4],
-"structdpp_1_1voice__client__speaking__t.html#af32126d4ed56366b4413c84b272383b7":[9,0,0,237,4],
-"structdpp_1_1voice__out__packet.html":[9,0,0,239],
-"structdpp_1_1voice__out__packet.html":[11,0,0,234],
-"structdpp_1_1voice__out__packet.html#ac6d63ea4575aadec0fff0d966c2c3191":[11,0,0,234,0]
+"structdpp_1_1voice__client__speaking__t.html#aca2880114f69b7ba62eb5137824c1432":[9,0,0,237,7]
 };

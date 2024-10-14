@@ -2012,6 +2012,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a7a494f997253706683168470ab695802" kind="variable"><name>repacketizer</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a8175929e6857660d26b39f5b9393e83d" kind="variable"><name>mls_state</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a1f9cabaab70951d2abcc912c4804802b" kind="variable"><name>dave_mls_user_list</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a4a5c7b4441e98ee8a1596d4fe616b730" kind="variable"><name>dave_mls_pending_remove_list</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ab35d726d6130295f1948cb5fbeace3b3" kind="variable"><name>fd</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a917ab0a295efb4324fe706c2cb9d6853" kind="variable"><name>secret_key</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ae0f777580b2e2db9db05525db8b67d94" kind="variable"><name>has_secret_key</name></member>
@@ -2060,6 +2061,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a87b60251b68583d9307a4f72d3ce3249" kind="function"><name>clear_queue</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ac0be468508d5b5d2afedee7b242fd23a" kind="function"><name>get_queue_size</name></member>
     <member refid="classdpp_1_1discord__voice__client_1aca97df078a5782b1ebd96287f4b2a0c8" kind="function"><name>encode</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1aba1326f21394c3aa1e566510b1cbf51f" kind="function"><name>update_ratchets</name></member>
     <member refid="classdpp_1_1discord__voice__client_1af5e73016b4f404a690a224827561b01f" kind="function"><name>voice_courier_loop</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a1790b206609d45aa1e124c701a4407f3" kind="function"><name>set_user_gain</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a7339b4ace2616cd9d251e4f7ed6b9476" kind="function"><name>log</name></member>
@@ -2096,6 +2098,11 @@
     <member refid="classdpp_1_1discord__voice__client_1ad6aa98f7ce2b197cbe8b338c901edc83" kind="function"><name>is_end_to_end_encrypted</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a2d31c2395a9ec508cbff305c9e28c1b7" kind="function"><name>get_privacy_code</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a92ec2cba8cee44cbd3e0fa9c2a87ed66" kind="function"><name>get_user_privacy_code</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1af7c2f1be7861b8d8d2400a456044fd9a" kind="function"><name>ready_for_transition</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1ae7b192cad8f1c6a215999ffb2faa4f26" kind="function"><name>recover_from_invalid_commit_welcome</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a9369b02d9e0f4c3e5c0c5b36fcf87550" kind="function"><name>execute_pending_upgrade_downgrade</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1afbdaf2aecb41c9aab776bc1ef05c631a" kind="function"><name>reinit_dave_mls_group</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1ab5723044d2865b2bea5cfc9011636f59" kind="function"><name>process_mls_group_rosters</name></member>
     <member refid="classdpp_1_1websocket__client_1a1a28fcb2647f4e1203c4aa1b842a2bc9" kind="function"><name>write</name></member>
     <member refid="classdpp_1_1websocket__client_1aac9224e26db7b8589fcf9ba312752ca8" kind="function"><name>handle_buffer</name></member>
     <member refid="classdpp_1_1websocket__client_1a1f21cc8fce27ad72e9414dc9d0acd4d0" kind="function"><name>close</name></member>
@@ -6205,7 +6212,6 @@
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a81f4b0af1c66ba6ab4aa31a0413379b4" kind="enumvalue"><name>voice_opcode_connection_hello</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a0e527f956dcb531ba339034cd78addb5" kind="enumvalue"><name>voice_opcode_connection_resumed</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503ae1e419dac39cd63a1a4daa805dcd540f" kind="enumvalue"><name>voice_opcode_multiple_clients_connect</name></member>
-    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a21946a2100cbc6ea546bc5bcad77b05b" kind="enumvalue"><name>voice_opcode_client_connect</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a27b2cd8fa3b0939b31c50c7853acf361" kind="enumvalue"><name>voice_opcode_client_disconnect</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a8f10aed4407f76938bed358696f63473" kind="enumvalue"><name>voice_opcode_media_sink</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a32d794de61cc74e5f1076bb17e24e3ca" kind="enumvalue"><name>voice_client_flags</name></member>
@@ -6218,7 +6224,7 @@
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a9202218953b2be20ea9c301713389a98" kind="enumvalue"><name>voice_client_dave_mls_key_package</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503ab2e180a786ccac0c7c0728e6a66a4574" kind="enumvalue"><name>voice_client_dave_mls_proposals</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503aa1c6f12c83b451d411274dc6271b9350" kind="enumvalue"><name>voice_client_dave_mls_commit_message</name></member>
-    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503acda11fe3b1df817a18ebb5e110e240ec" kind="enumvalue"><name>voice_client_dave_announce_commit_transaction</name></member>
+    <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a70c8d578a940d7c99151b418bd86ab3b" kind="enumvalue"><name>voice_client_dave_announce_commit_transition</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503afc6bc4b7f456158f9360a829576812ae" kind="enumvalue"><name>voice_client_dave_mls_welcome</name></member>
     <member refid="namespacedpp_1a589107ba48617812d4c260d95be99503a6ab60e1d35be60904850ccea87af5643" kind="enumvalue"><name>voice_client_dave_mls_invalid_commit_welcome</name></member>
     <member refid="namespacedpp_1adb4889dd66bab821f51dba5136e07e81" kind="enum"><name>client_platform_t</name></member>

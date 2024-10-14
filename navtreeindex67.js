@@ -1,5 +1,14 @@
 var NAVTREEINDEX67 =
 {
+"structdpp_1_1message__poll__vote__remove__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[9,0,0,163,11],
+"structdpp_1_1message__poll__vote__remove__t.html#a6cd7044ce4450c62ccd77f5f223ac9d6":[11,0,0,158,11],
+"structdpp_1_1message__poll__vote__remove__t.html#a74d730103d75b2ec48a33bb6cb8b23f1":[11,0,0,158,15],
+"structdpp_1_1message__poll__vote__remove__t.html#a74d730103d75b2ec48a33bb6cb8b23f1":[9,0,0,163,15],
+"structdpp_1_1message__poll__vote__remove__t.html#a8888fcc8af9c8e60cc97b3ecad8ac0e2":[9,0,0,163,12],
+"structdpp_1_1message__poll__vote__remove__t.html#a8888fcc8af9c8e60cc97b3ecad8ac0e2":[11,0,0,158,12],
+"structdpp_1_1message__poll__vote__remove__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71":[11,0,0,158,13],
+"structdpp_1_1message__poll__vote__remove__t.html#a9ef98cebb9c0a5ab75a4362d1b40fb71":[9,0,0,163,13],
+"structdpp_1_1message__poll__vote__remove__t.html#aa23fe654ce712ccccb1246f817994510":[11,0,0,158,14],
 "structdpp_1_1message__poll__vote__remove__t.html#aa23fe654ce712ccccb1246f817994510":[9,0,0,163,14],
 "structdpp_1_1message__poll__vote__remove__t.html#aae35038ecb874c46e355fac3863615d0":[11,0,0,158,6],
 "structdpp_1_1message__poll__vote__remove__t.html#aae35038ecb874c46e355fac3863615d0":[9,0,0,163,6],
@@ -240,14 +249,5 @@ var NAVTREEINDEX67 =
 "structdpp_1_1onboarding.html#a85cfd0e143a04b9e8de2bbb9dbbaac7a":[9,0,0,173,15],
 "structdpp_1_1onboarding.html#a85cfd0e143a04b9e8de2bbb9dbbaac7a":[11,0,0,168,15],
 "structdpp_1_1onboarding.html#a8e45110306b2a2370a7d0cef5c150381":[9,0,0,173,4],
-"structdpp_1_1onboarding.html#a8e45110306b2a2370a7d0cef5c150381":[11,0,0,168,4],
-"structdpp_1_1onboarding.html#a96011fc1c0d56e194f83c79d40c439c6":[9,0,0,173,3],
-"structdpp_1_1onboarding.html#a96011fc1c0d56e194f83c79d40c439c6":[11,0,0,168,3],
-"structdpp_1_1onboarding.html#a97bfd107f1a88e30349357f67da8aa7e":[11,0,0,168,13],
-"structdpp_1_1onboarding.html#a97bfd107f1a88e30349357f67da8aa7e":[9,0,0,173,13],
-"structdpp_1_1onboarding.html#a9b582f07cc56795deac91093a559a9be":[9,0,0,173,0],
-"structdpp_1_1onboarding.html#a9b582f07cc56795deac91093a559a9be":[11,0,0,168,0],
-"structdpp_1_1onboarding.html#aa93c4e0e285417bea2a430be79894044":[11,0,0,168,12],
-"structdpp_1_1onboarding.html#aa93c4e0e285417bea2a430be79894044":[9,0,0,173,12],
-"structdpp_1_1onboarding.html#ab158eff56a8fd67d532ddd9c17c67a68":[9,0,0,173,9]
+"structdpp_1_1onboarding.html#a8e45110306b2a2370a7d0cef5c150381":[11,0,0,168,4]
 };

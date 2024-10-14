@@ -1,5 +1,15 @@
 var NAVTREEINDEX21 =
 {
+"classdpp_1_1voiceregion.html#a853f4ca945dfd5a9a433362e8ab70d79":[9,0,0,247,10],
+"classdpp_1_1voiceregion.html#a96011fc1c0d56e194f83c79d40c439c6":[11,0,0,242,3],
+"classdpp_1_1voiceregion.html#a96011fc1c0d56e194f83c79d40c439c6":[9,0,0,247,3],
+"classdpp_1_1voiceregion.html#a9617792a8ad16a03a2ce0d8c281c048f":[9,0,0,247,1],
+"classdpp_1_1voiceregion.html#a9617792a8ad16a03a2ce0d8c281c048f":[11,0,0,242,1],
+"classdpp_1_1voiceregion.html#aa49a3a3f843f2f97f27ad262dff11c5c":[9,0,0,247,0],
+"classdpp_1_1voiceregion.html#aa49a3a3f843f2f97f27ad262dff11c5c":[11,0,0,242,0],
+"classdpp_1_1voiceregion.html#ac1b4724cda0653699d9c6c98594491f1":[11,0,0,242,4],
+"classdpp_1_1voiceregion.html#ac1b4724cda0653699d9c6c98594491f1":[9,0,0,247,4],
+"classdpp_1_1voiceregion.html#ad615544432a8a6da87f3bd70d6f6b92c":[11,0,0,242,2],
 "classdpp_1_1voiceregion.html#ad615544432a8a6da87f3bd70d6f6b92c":[9,0,0,247,2],
 "classdpp_1_1voiceregion.html#ad8cc77b8def50a189e2b2c636fd6927e":[9,0,0,247,7],
 "classdpp_1_1voiceregion.html#ad8cc77b8def50a189e2b2c636fd6927e":[11,0,0,242,7],
@@ -239,15 +249,5 @@ var NAVTREEINDEX21 =
 "conceptdpp_1_1awaitable__type.html":[10,0,1],
 "conceptdpp_1_1detail_1_1when__any_1_1void__result.html":[10,0,0,0,0],
 "conceptdpp_1_1detail_1_1when__any_1_1void__result.html":[9,0,0,3,7,3],
-"concepts.html":[10],
-"context-menu.html":[5,1,5],
-"coro-introduction.html":[5,3,0],
-"coro-simple-commands.html":[5,3,1],
-"cpp-eval-command-discord.html":[5,4,6],
-"creating-a-bot-application.html":[4,0],
-"creating-a-discord-bot.html":[4],
-"default_select_value.html":[5,1,3,3],
-"deprecated.html":[7],
-"detecting-messages.html":[5,0,7],
-"discord-application-command-file-upload.html":[5,1,0,4]
+"concepts.html":[10]
 };
