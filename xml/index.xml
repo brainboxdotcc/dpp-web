@@ -50,6 +50,13 @@
     <member refid="structdpp_1_1activity__secrets_1ab638a19c5dd15742513b1fd85fe48a68" kind="variable"><name>match</name></member>
     <member refid="structdpp_1_1activity__secrets_1aff32b69012cb609cb1fa2f083d7e3288" kind="function"><name>activity_secrets</name></member>
   </compound>
+  <compound refid="classdpp_1_1address__t" kind="class"><name>dpp::address_t</name>
+    <member refid="classdpp_1_1address__t_1aab0913bae63f05c737d99fdffbd8d78e" kind="variable"><name>socket_addr</name></member>
+    <member refid="classdpp_1_1address__t_1a81cd546960f4f466af81aa97cea2f987" kind="function"><name>address_t</name></member>
+    <member refid="classdpp_1_1address__t_1a536fc2ed0707c6edfa0e54680867e4af" kind="function"><name>get_socket_address</name></member>
+    <member refid="classdpp_1_1address__t_1a3e417d086cc24400f71903a00daba084" kind="function"><name>size</name></member>
+    <member refid="classdpp_1_1address__t_1a99574755cbe173ee09678dda099490d1" kind="function"><name>get_port</name></member>
+  </compound>
   <compound refid="structdpp_1_1message_1_1allowed__ref" kind="struct"><name>dpp::message::allowed_ref</name>
     <member refid="structdpp_1_1message_1_1allowed__ref_1a73f5845d44cb0c6ef4cf8c49fe093878" kind="variable"><name>parse_users</name></member>
     <member refid="structdpp_1_1message_1_1allowed__ref_1a2903ac1a5d93f152e08ff843e3b17226" kind="variable"><name>parse_everyone</name></member>
@@ -2007,6 +2014,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a4b8067cc147c6acc59c88c36c3d2120b" kind="variable"><name>track_meta</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ad3f32f985611d9b7fb753b7ca0446f21" kind="variable"><name>encode_buffer</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a44ab87f96a17a48463358b24a1518c95" kind="variable"><name>dave_version</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a898d7b9e2144f2ee595b0c96a47b77da" kind="variable"><name>destination</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a23cac9565c94195b8050df206d29d6b2" kind="variable"><name>creator</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a495139ab5289f6f7860177cf121ba2cb" kind="variable"><name>terminating</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a69388fa61302df65a43777bf472e8a92" kind="variable"><name>end_gain</name></member>
@@ -2108,8 +2116,11 @@
   </compound>
   <compound refid="structdpp_1_1dns__cache__entry" kind="struct"><name>dpp::dns_cache_entry</name>
     <member refid="structdpp_1_1dns__cache__entry_1a720c4119d31abe7ca9d27ee003f5509d" kind="variable"><name>addr</name></member>
-    <member refid="structdpp_1_1dns__cache__entry_1aaee5b7324a9d02c19725c795b56feddf" kind="variable"><name>ai_addr</name></member>
+    <member refid="structdpp_1_1dns__cache__entry_1abf6173c8e1b49d5fbd6d8ddfc0104f12" kind="variable"><name>resolved_addr</name></member>
     <member refid="structdpp_1_1dns__cache__entry_1accaac1bd8043c6166599c28066f209fe" kind="variable"><name>expire_timestamp</name></member>
+    <member refid="structdpp_1_1dns__cache__entry_1af59375b3b9dd1d395dca6f37a9ea98a3" kind="function"><name>size</name></member>
+    <member refid="structdpp_1_1dns__cache__entry_1a903ed38249ef261e29fd8c24da600e2f" kind="function"><name>get_connecting_address</name></member>
+    <member refid="structdpp_1_1dns__cache__entry_1a52c92242ce06923b9758c1cce6bd2068" kind="function"><name>make_connecting_socket</name></member>
   </compound>
   <compound refid="classdpp_1_1dtemplate" kind="class"><name>dpp::dtemplate</name>
     <member refid="classdpp_1_1dtemplate_1a7848f6a254844157a5faed450e512b23" kind="friend"><name>json_interface&lt; dtemplate &gt;</name></member>
@@ -4434,6 +4445,15 @@
     <member refid="structdpp_1_1request__queue_1_1queued__deleting__request_1a358760d026189aa3bdf13a842492c178" kind="variable"><name>request</name></member>
     <member refid="structdpp_1_1request__queue_1_1queued__deleting__request_1a99f504083968f238ce6f81282405312c" kind="function"><name>operator&lt;</name></member>
     <member refid="structdpp_1_1request__queue_1_1queued__deleting__request_1a86f2f42c869b9015818a26bd4231fdc0" kind="function"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="structdpp_1_1raii__socket" kind="struct"><name>dpp::raii_socket</name>
+    <member refid="structdpp_1_1raii__socket_1a076c1fbfc903f14529b6d7c7bdb7247c" kind="variable"><name>fd</name></member>
+    <member refid="structdpp_1_1raii__socket_1a360ba9282b4c45eb7c2f3da3cbe89308" kind="function"><name>raii_socket</name></member>
+    <member refid="structdpp_1_1raii__socket_1a03e56d3f9d867ba9129e88483ea7f62f" kind="function"><name>raii_socket</name></member>
+    <member refid="structdpp_1_1raii__socket_1a9ef4e5f89bb6b25d1fedfa336c01353f" kind="function"><name>raii_socket</name></member>
+    <member refid="structdpp_1_1raii__socket_1ac6e0bf827054b1e2b8c53ab8e0eebc01" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1raii__socket_1ae105345be5845bc1f19fee743f4cb253" kind="function"><name>operator=</name></member>
+    <member refid="structdpp_1_1raii__socket_1a3cb1d1eb105c51542291d10f70fa746b" kind="function"><name>~raii_socket</name></member>
   </compound>
   <compound refid="structdpp_1_1reaction" kind="struct"><name>dpp::reaction</name>
     <member refid="structdpp_1_1reaction_1ac7e46baa7c5cd668e43198670579af6e" kind="variable"><name>count</name></member>

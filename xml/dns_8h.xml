@@ -9,6 +9,8 @@
     <includes local="no">sys/types.h</includes>
     <includes local="no">string</includes>
     <includes local="no">unordered_map</includes>
+    <includes local="no">cstring</includes>
+    <includes refid="socket_8h" local="no">dpp/socket.h</includes>
     <incdepgraph>
       <node id="1">
         <label>dns.h</label>
@@ -27,9 +29,37 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>dpp/export.h</label>
+      </node>
+      <node id="10">
+        <label>dpp/socket.h</label>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="13">
+        <label>cstdint</label>
+      </node>
+      <node id="9">
+        <label>cstring</label>
       </node>
       <node id="4">
         <label>netdb.h</label>
@@ -39,6 +69,9 @@
       </node>
       <node id="7">
         <label>string</label>
+      </node>
+      <node id="12">
+        <label>string_view</label>
       </node>
       <node id="5">
         <label>sys/socket.h</label>
