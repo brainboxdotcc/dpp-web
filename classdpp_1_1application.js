@@ -13,6 +13,7 @@ var classdpp_1_1application =
     [ "to_json", "classdpp_1_1application.html#ae169e4231b77955fc1b43a3b7be9770c", null ],
     [ "json_interface< application >", "classdpp_1_1application.html#ab2d4a8b5319f1eda8661de4f0c95bb12", null ],
     [ "approximate_guild_count", "classdpp_1_1application.html#a789975e0fe7503223d30855934e48363", null ],
+    [ "approximate_user_install_count", "classdpp_1_1application.html#a441c3db1e1e39cfdaad9fd354f19bd8f", null ],
     [ "bot", "classdpp_1_1application.html#a0141f7b13726532e2bb41a6b672c2b35", null ],
     [ "bot_public", "classdpp_1_1application.html#a1724baabe72d957d04b0a30bc4604d8b", null ],
     [ "bot_require_code_grant", "classdpp_1_1application.html#a9942dd58f1ca9da0839f0a295612290c", null ],

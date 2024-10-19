@@ -1,5 +1,7 @@
 var NAVTREEINDEX62 =
 {
+"structdpp_1_1guild__update__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[9,0,0,128,3],
+"structdpp_1_1guild__update__t.html#ae250d3a1ee0ad2e90ad075e1aead5478":[11,0,0,123,3],
 "structdpp_1_1guild__update__t.html#af32126d4ed56366b4413c84b272383b7":[9,0,0,128,4],
 "structdpp_1_1guild__update__t.html#af32126d4ed56366b4413c84b272383b7":[11,0,0,123,4],
 "structdpp_1_1http__connect__info.html":[11,0,0,125],
@@ -247,7 +249,5 @@ var NAVTREEINDEX62 =
 "structdpp_1_1interaction__modal__response.html#a96011fc1c0d56e194f83c79d40c439c6":[9,0,0,143,8],
 "structdpp_1_1interaction__modal__response.html#a96011fc1c0d56e194f83c79d40c439c6":[9,0,0,143,9],
 "structdpp_1_1interaction__modal__response.html#a96011fc1c0d56e194f83c79d40c439c6":[11,0,0,138,8],
-"structdpp_1_1interaction__modal__response.html#a96011fc1c0d56e194f83c79d40c439c6":[11,0,0,138,9],
-"structdpp_1_1interaction__modal__response.html#a9cdbf5c9505ebc1f7f4f7c5b9f5793c5":[9,0,0,143,21],
-"structdpp_1_1interaction__modal__response.html#a9cdbf5c9505ebc1f7f4f7c5b9f5793c5":[11,0,0,138,21]
+"structdpp_1_1interaction__modal__response.html#a96011fc1c0d56e194f83c79d40c439c6":[11,0,0,138,9]
 };
