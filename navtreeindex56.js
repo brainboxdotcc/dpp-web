@@ -1,5 +1,7 @@
 var NAVTREEINDEX56 =
 {
+"structdpp_1_1confirmation.html":[11,0,0,63],
+"structdpp_1_1confirmation.html":[9,0,0,68],
 "structdpp_1_1confirmation.html#af16e812b41c01161a984498c0c52e66e":[9,0,0,68,0],
 "structdpp_1_1confirmation.html#af16e812b41c01161a984498c0c52e66e":[11,0,0,63,0],
 "structdpp_1_1confirmation__callback__t.html":[11,0,0,64],
@@ -247,7 +249,5 @@ var NAVTREEINDEX56 =
 "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html":[11,0,0,0,6,1,0],
 "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html":[9,0,0,3,6,1,0],
 "structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a5ab772b4f9d350bacd97ff4f1735c995":[9,0,0,3,6,1,0,0],
-"structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a5ab772b4f9d350bacd97ff4f1735c995":[11,0,0,0,6,1,0,0],
-"structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a6f13eee3023713febc9671eda380ef06":[9,0,0,3,6,1,0,1],
-"structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a6f13eee3023713febc9671eda380ef06":[11,0,0,0,6,1,0,1]
+"structdpp_1_1detail_1_1task_1_1promise__base_1_1proxy__awaiter.html#a5ab772b4f9d350bacd97ff4f1735c995":[11,0,0,0,6,1,0,0]
 };
