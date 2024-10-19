@@ -1,5 +1,13 @@
 var NAVTREEINDEX51 =
 {
+"namespacedpp_1_1unicode__emoji.html#af7ac9ad16b271a13c5c037063aa5b144":[9,0,0,6,4391],
+"namespacedpp_1_1unicode__emoji.html#af7aceb3c5f9812ef1370937b9b4e02c1":[9,0,0,6,258],
+"namespacedpp_1_1unicode__emoji.html#af7adfa88522403cffea68161a4a3459b":[9,0,0,6,3879],
+"namespacedpp_1_1unicode__emoji.html#af7cca86e99b3479d58b1f3340a6c6f24":[9,0,0,6,5424],
+"namespacedpp_1_1unicode__emoji.html#af7e01e2bc4b7ca659a9fb10b77481184":[9,0,0,6,2689],
+"namespacedpp_1_1unicode__emoji.html#af7e7bdaa68ff22e7fa6c0cf170586267":[9,0,0,6,5039],
+"namespacedpp_1_1unicode__emoji.html#af7f0906bd3bc15d3abc1b41ef9bbbdfc":[9,0,0,6,5267],
+"namespacedpp_1_1unicode__emoji.html#af7f9d0b71b5b9595333c1c90acc244fc":[9,0,0,6,192],
 "namespacedpp_1_1unicode__emoji.html#af7fdfdee8d01e30d4fb45cedadb87754":[9,0,0,6,2041],
 "namespacedpp_1_1unicode__emoji.html#af801d083e02ac4e1a4854f9aab82d923":[9,0,0,6,2553],
 "namespacedpp_1_1unicode__emoji.html#af801dae2dcfcbc8d0ecfab8cbab17b8c":[9,0,0,6,3289],
@@ -241,13 +249,5 @@ var NAVTREEINDEX51 =
 "namespacedpp_1_1utility.html#aaee05a9f5f440d06434de11804879479":[9,0,0,7,26],
 "namespacedpp_1_1utility.html#ab1b44934665a2561416383fb2229523e":[9,0,0,7,31],
 "namespacedpp_1_1utility.html#ab1cc19c7021a057083658d7e2cca1013":[9,0,0,7,50],
-"namespacedpp_1_1utility.html#ab5e15dbccb96fdcd2ac075bf530290e1":[9,0,0,7,44],
-"namespacedpp_1_1utility.html#ab65e758e198a195ad3fbcec3c534d2ec":[9,0,0,7,49],
-"namespacedpp_1_1utility.html#ab7c346258eedffe57cff07d0b8b26c73":[9,0,0,7,42],
-"namespacedpp_1_1utility.html#ab8933e9c5ee35036923cc73fbd54a4db":[9,0,0,7,22],
-"namespacedpp_1_1utility.html#ab8b9842a7d3645607bf57d6803ee9509":[9,0,0,7,43],
-"namespacedpp_1_1utility.html#abb150a54408656bf3660c950c08ec9d1":[9,0,0,7,38],
-"namespacedpp_1_1utility.html#ac7d516c03d572fe65d01c4ec5e92c6f0":[9,0,0,7,23],
-"namespacedpp_1_1utility.html#aca584abb7a9cddef381eaa768ad66478":[9,0,0,7,61],
-"namespacedpp_1_1utility.html#acae9e089e4b7cfd9745235f86455c045":[9,0,0,7,32]
+"namespacedpp_1_1utility.html#ab5e15dbccb96fdcd2ac075bf530290e1":[9,0,0,7,44]
 };

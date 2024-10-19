@@ -10,11 +10,12 @@ var searchData=
   ['user_5fapplication_5frole_5fconnection_5fupdate_7',['user_application_role_connection_update',['../classdpp_1_1cluster.html#ac6426506b0175419913b157ad9f10f71',1,'dpp::cluster']]],
   ['user_5fget_8',['user_get',['../classdpp_1_1cluster.html#a73483dbeb0f1946dc18b1d0a5331b0d0',1,'dpp::cluster']]],
   ['user_5fget_5fcached_9',['user_get_cached',['../classdpp_1_1cluster.html#a00caec14273460343d60830dcb6bea9f',1,'dpp::cluster']]],
-  ['user_5fidentified_10',['user_identified',['../classdpp_1_1user__identified.html#a1ceaae69857a8459a1a170313e214252',1,'dpp::user_identified::user_identified(const user &amp;u)'],['../classdpp_1_1user__identified.html#ac66ddd9e773d41eaeb7fc2d6c5eac255',1,'dpp::user_identified::user_identified()']]],
-  ['user_5fmention_11',['user_mention',['../namespacedpp_1_1utility.html#a00f8e4bb0915722be20973c9cf356f38',1,'dpp::utility']]],
-  ['user_5fset_5fvoice_5fstate_12',['user_set_voice_state',['../classdpp_1_1cluster.html#a66c65f30625391586fd4cf6614b6a1df',1,'dpp::cluster']]],
-  ['user_5furl_13',['user_url',['../namespacedpp_1_1utility.html#a64f2b1d22e175a91e0e6bd5292c7a09c',1,'dpp::utility']]],
-  ['utf8len_14',['utf8len',['../namespacedpp_1_1utility.html#a220f66858ece1eb786486e664f513569',1,'dpp::utility']]],
-  ['utf8substr_15',['utf8substr',['../namespacedpp_1_1utility.html#adefca3fb7feb3a25f94e2aa1863cad90',1,'dpp::utility']]],
-  ['utf8subview_16',['utf8subview',['../namespacedpp_1_1utility.html#aaae8ecae4672d0f0fd9da0a2ab214b52',1,'dpp::utility']]]
+  ['user_5fget_5fvoice_5fstate_10',['user_get_voice_state',['../classdpp_1_1cluster.html#a7645cf3dedd3aac0901558b0d494a829',1,'dpp::cluster']]],
+  ['user_5fidentified_11',['user_identified',['../classdpp_1_1user__identified.html#ac66ddd9e773d41eaeb7fc2d6c5eac255',1,'dpp::user_identified::user_identified()'],['../classdpp_1_1user__identified.html#a1ceaae69857a8459a1a170313e214252',1,'dpp::user_identified::user_identified(const user &amp;u)']]],
+  ['user_5fmention_12',['user_mention',['../namespacedpp_1_1utility.html#a00f8e4bb0915722be20973c9cf356f38',1,'dpp::utility']]],
+  ['user_5fset_5fvoice_5fstate_13',['user_set_voice_state',['../classdpp_1_1cluster.html#a66c65f30625391586fd4cf6614b6a1df',1,'dpp::cluster']]],
+  ['user_5furl_14',['user_url',['../namespacedpp_1_1utility.html#a64f2b1d22e175a91e0e6bd5292c7a09c',1,'dpp::utility']]],
+  ['utf8len_15',['utf8len',['../namespacedpp_1_1utility.html#a220f66858ece1eb786486e664f513569',1,'dpp::utility']]],
+  ['utf8substr_16',['utf8substr',['../namespacedpp_1_1utility.html#adefca3fb7feb3a25f94e2aa1863cad90',1,'dpp::utility']]],
+  ['utf8subview_17',['utf8subview',['../namespacedpp_1_1utility.html#aaae8ecae4672d0f0fd9da0a2ab214b52',1,'dpp::utility']]]
 ];

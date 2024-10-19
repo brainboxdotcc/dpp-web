@@ -13282,7 +13282,7 @@
 <para>Get all guild stickers. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#get-guild-stickers">https://discord.com/developers/docs/resources/sticker#get-guild-stickers</ulink> </para>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-guild-stickers">https://discord.com/developers/docs/resources/sticker#list-guild-stickers</ulink> </para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -13320,7 +13320,7 @@
 <para>Get a list of available sticker packs. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-nitro-sticker-packs">https://discord.com/developers/docs/resources/sticker#list-nitro-sticker-packs</ulink> </para>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-sticker-packs">https://discord.com/developers/docs/resources/sticker#list-sticker-packs</ulink> </para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -14004,6 +14004,48 @@
         </inbodydescription>
         <location file="include/dpp/cluster.h" line="3822" column="6"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1ae1c442184327ded45e8ceca164eecbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::current_user_get_voice_state</definition>
+        <argsstring>(snowflake guild_id, command_completion_event_t callback)</argsstring>
+        <name>current_user_get_voice_state</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Get the bot&apos;s voice state in a guild without a Gateway connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice#get-current-user-voice-state">https://discord.com/developers/docs/resources/voice#get-current-user-voice-state</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get the voice state for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="classdpp_1_1voicestate" kindref="compound">dpp::voicestate</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3832" column="6"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a66c65f30625391586fd4cf6614b6a1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void dpp::cluster::user_set_voice_state</definition>
@@ -14092,7 +14134,61 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3845" column="6"/>
+        <location file="include/dpp/cluster.h" line="3855" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a7645cf3dedd3aac0901558b0d494a829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dpp::cluster::user_get_voice_state</definition>
+        <argsstring>(snowflake guild_id, snowflake user_id, command_completion_event_t callback)</argsstring>
+        <name>user_get_voice_state</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>user_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedpp_1a022dce6b086ec4515384eaece59c84c3" kindref="member">command_completion_event_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Get a user&apos;s voice state in a guild without a Gateway connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice#get-user-voice-state">https://discord.com/developers/docs/resources/voice#get-user-voice-state</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get the voice state for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user to get the voice state of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call when the API call completes. On success the callback will contain a <ref refid="classdpp_1_1voicestate" kindref="compound">dpp::voicestate</ref> object in <ref refid="structdpp_1_1confirmation__callback__t_1a4725ef83209a64c0558a598ec01ad463" kindref="member">confirmation_callback_t::value</ref>. On failure, the value is undefined and <ref refid="structdpp_1_1confirmation__callback__t_1a17820d5f9fb0725d64a1bf23c8cc97c7" kindref="member">confirmation_callback_t::is_error()</ref> method will return true. You can obtain full error details with <ref refid="structdpp_1_1confirmation__callback__t_1a79dda1493a0788577d84a8ad82cf7e55" kindref="member">confirmation_callback_t::get_error()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster.h" line="3866" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1af88b9b913287a87b2d69cf26ebcf6394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14132,7 +14228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3854" column="6"/>
+        <location file="include/dpp/cluster.h" line="3875" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acb7e0e57232db6fa8365443d5868bec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14184,7 +14280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3864" column="6"/>
+        <location file="include/dpp/cluster.h" line="3885" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ac7d1f2dbbddfde9f7e7c06270c3e744f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14237,7 +14333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3874" column="6"/>
+        <location file="include/dpp/cluster.h" line="3895" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aafe2796940cd1429cab5471c168ef010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14290,7 +14386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3884" column="6"/>
+        <location file="include/dpp/cluster.h" line="3905" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a39fb700f0bbc716f63d03aa50783759b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14343,7 +14439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3894" column="6"/>
+        <location file="include/dpp/cluster.h" line="3915" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a083ef0c645696c075e1b616068c6151d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14465,7 +14561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3910" column="6"/>
+        <location file="include/dpp/cluster.h" line="3931" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a634bd52e7550f7e95f88972d0f8aae4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14508,7 +14604,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3923" column="6"/>
+        <location file="include/dpp/cluster.h" line="3944" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1afb4fa368555b136625b0238d098ba043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14551,7 +14647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3934" column="6"/>
+        <location file="include/dpp/cluster.h" line="3955" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa824bdd9621cef3f9e8ebf43e9bacb11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14594,7 +14690,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3944" column="6"/>
+        <location file="include/dpp/cluster.h" line="3965" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1abfb1e2eeb887a913cc131b95b0ad3918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14627,7 +14723,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3955" column="6"/>
+        <location file="include/dpp/cluster.h" line="3976" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a71bc078e39cf968613ee15d3ea37de6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -14682,7 +14778,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster.h" line="3966" column="6"/>
+        <location file="include/dpp/cluster.h" line="3987" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a336233c9d572ff34612fad878a741509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -21597,7 +21693,7 @@
         <detaileddescription>
 <para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1adccd1468d3f031c5bc786fdbd087d0a2" kindref="member">dpp::cluster::guild_stickers_get</ref> </para>
 </simplesect>
-<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#get-guild-stickers">https://discord.com/developers/docs/resources/sticker#get-guild-stickers</ulink> </para>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-guild-stickers">https://discord.com/developers/docs/resources/sticker#list-guild-stickers</ulink> </para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -21661,7 +21757,7 @@
         <detaileddescription>
 <para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1ae64421a4b2402238feb0536639009c18" kindref="member">dpp::cluster::sticker_packs_get</ref> </para>
 </simplesect>
-<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-nitro-sticker-packs">https://discord.com/developers/docs/resources/sticker#list-nitro-sticker-packs</ulink> </para>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-sticker-packs">https://discord.com/developers/docs/resources/sticker#list-sticker-packs</ulink> </para>
 </simplesect>
 <simplesect kind="return"><para>sticker_pack_map returned object on completion </para>
 </simplesect>
@@ -23036,6 +23132,40 @@
         </inbodydescription>
         <location file="include/dpp/cluster_coro_calls.h" line="2368" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2368" declcolumn="8"/>
       </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1acb71489891626db1f68be864cc358905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
+        <definition>async&lt; confirmation_callback_t &gt; co_current_user_get_voice_state</definition>
+        <argsstring>(snowflake guild_id)</argsstring>
+        <name>co_current_user_get_voice_state</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <briefdescription>
+<para>Get the bot&apos;s voice state in a guild without a Gateway connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1ae1c442184327ded45e8ceca164eecbca" kindref="member">dpp::cluster::current_user_get_voice_state</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice#get-current-user-voice-state">https://discord.com/developers/docs/resources/voice#get-current-user-voice-state</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get the voice state for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>voicestate returned object on completion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_coro_calls.h" line="2379" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2379" declcolumn="8"/>
+      </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a246f4c285e228c759fa582f14813317c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
         <definition>async&lt; confirmation_callback_t &gt; co_user_set_voice_state</definition>
@@ -23116,7 +23246,53 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2392" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2392" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2403" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2403" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classdpp_1_1cluster_1a472cb537213114b0774af72343d23a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
+        <definition>async&lt; confirmation_callback_t &gt; co_user_get_voice_state</definition>
+        <argsstring>(snowflake guild_id, snowflake user_id)</argsstring>
+        <name>co_user_get_voice_state</name>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>guild_id</declname>
+        </param>
+        <param>
+          <type><ref refid="classdpp_1_1snowflake" kindref="compound">snowflake</ref></type>
+          <declname>user_id</declname>
+        </param>
+        <briefdescription>
+<para>Get a user&apos;s voice state in a guild without a Gateway connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a7645cf3dedd3aac0901558b0d494a829" kindref="member">dpp::cluster::user_get_voice_state</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice#get-user-voice-state">https://discord.com/developers/docs/resources/voice#get-user-voice-state</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get the voice state for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user to get the voice state of </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>voicestate returned object on completion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_coro_calls.h" line="2415" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2415" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a6d32848095962bfcf68cfe9653c00257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23137,7 +23313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2403" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2403" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2426" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2426" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aa97fd6e309cf09128bb5a6de9b92123f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23158,7 +23334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2412" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2412" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2435" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2435" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a52c49f5a45904bfe3b7f1bae71299dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23192,7 +23368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2422" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2422" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2445" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2445" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a5524e88381051cded943e8f16be7ba17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23230,7 +23406,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2437" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2437" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2460" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2460" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9c3a9a57736a4cacf44184ffbf482c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23268,7 +23444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2452" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2452" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2475" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2475" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4c78ebc439accbd999a74d4c7f73d5e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23289,7 +23465,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2461" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2461" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2484" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2484" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aeeb491cf6cc246f9b2435d7127f87c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23324,7 +23500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2476" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2476" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2499" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2499" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a9cd4df063abb2a236b03c9e75b312e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23360,7 +23536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2490" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2490" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2513" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2513" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a8e7f8af35b10f7eb78a55eeeafc95bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23419,7 +23595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2503" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2503" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2526" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2526" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1acb3631dd6ed2ed66a76eb9952deb1d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23465,7 +23641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2514" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2514" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2537" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2537" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1ad58e2d7aa275757a0808ec748c879dba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23501,7 +23677,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2525" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2525" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2548" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2548" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aeb21146f7896406d8d6172c6d7ad4b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23563,7 +23739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2544" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2544" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2567" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2567" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a4e0ad166f697f18ebe934af146e066c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23597,7 +23773,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2554" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2554" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2577" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2577" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aaaa2fda3f082539a1ce1f84830555a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23684,7 +23860,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2570" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2570" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2593" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2593" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a1c09e2b72bcd1f6019bb8797628b8a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23718,7 +23894,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2580" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2580" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2603" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2603" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a3685d029b33131c282043ccaa1321a12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23752,7 +23928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2590" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2590" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2613" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2613" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a29a7262bcf1c340ed34ddc70079eaaf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23786,7 +23962,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2600" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2600" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2623" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2623" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1a61c288df0c096c522db9b3822a3cbc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23845,7 +24021,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2613" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2613" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2636" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2636" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="classdpp_1_1cluster_1aebed6516449a186f68ed8ec188166023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdpp_1_1async" kindref="compound">async</ref>&lt; <ref refid="structdpp_1_1confirmation__callback__t" kindref="compound">confirmation_callback_t</ref> &gt;</type>
@@ -23891,7 +24067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_coro_calls.h" line="2624" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2624" declcolumn="8"/>
+        <location file="include/dpp/cluster_coro_calls.h" line="2647" column="8" declfile="include/dpp/cluster_coro_calls.h" declline="2647" declcolumn="8"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -30990,7 +31166,7 @@ Delete a message from a channel. The callback function is called when the messag
         <detaileddescription>
 <para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1adccd1468d3f031c5bc786fdbd087d0a2" kindref="member">dpp::cluster::guild_stickers_get</ref> </para>
 </simplesect>
-<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#get-guild-stickers">https://discord.com/developers/docs/resources/sticker#get-guild-stickers</ulink> </para>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-guild-stickers">https://discord.com/developers/docs/resources/sticker#list-guild-stickers</ulink> </para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -31070,7 +31246,7 @@ Delete a message from a channel. The callback function is called when the messag
         <detaileddescription>
 <para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1ae64421a4b2402238feb0536639009c18" kindref="member">dpp::cluster::sticker_packs_get</ref> </para>
 </simplesect>
-<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-nitro-sticker-packs">https://discord.com/developers/docs/resources/sticker#list-nitro-sticker-packs</ulink> </para>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/sticker#list-sticker-packs">https://discord.com/developers/docs/resources/sticker#list-sticker-packs</ulink> </para>
 </simplesect>
 <simplesect kind="return"><para>sticker_pack_map returned object on completion</para>
 </simplesect>
@@ -32401,6 +32577,46 @@ Get current (bot) application</para>
         <name>DPP_DEPRECATED</name>
         <param><defname>"Please use coroutines instead of sync functions: https://dpp.dev/coro-introduction.html"</defname></param>
         <briefdescription>
+<para>Get the bot&apos;s voice state in a guild without a Gateway connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1ae1c442184327ded45e8ceca164eecbca" kindref="member">dpp::cluster::current_user_get_voice_state</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice#get-current-user-voice-state">https://discord.com/developers/docs/resources/voice#get-current-user-voice-state</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get the voice state for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>voicestate returned object on completion</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upon failure to execute REST function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000204"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+</xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_sync_calls.h" line="3111" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3111" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
+        <name>DPP_DEPRECATED</name>
+        <param><defname>"Please use coroutines instead of sync functions: https://dpp.dev/coro-introduction.html"</defname></param>
+        <briefdescription>
 <para>Set a user&apos;s voice state on a stage channel. </para>
         </briefdescription>
         <detaileddescription>
@@ -32463,14 +32679,62 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000204"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000205"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3124" column="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3139" column="1"/>
+      </memberdef>
+      <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
+        <name>DPP_DEPRECATED</name>
+        <param><defname>"Please use coroutines instead of sync functions: https://dpp.dev/coro-introduction.html"</defname></param>
+        <briefdescription>
+<para>Get a user&apos;s voice state in a guild without a Gateway connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classdpp_1_1cluster_1a7645cf3dedd3aac0901558b0d494a829" kindref="member">dpp::cluster::user_get_voice_state</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://discord.com/developers/docs/resources/voice#get-user-voice-state">https://discord.com/developers/docs/resources/voice#get-user-voice-state</ulink> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guild_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Guild to get the voice state for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user to get the voice state of </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>voicestate returned object on completion</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classdpp_1_1rest__exception" kindref="compound">dpp::rest_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upon failure to execute REST function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000206"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+</xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/cluster_sync_calls.h" line="3155" column="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32494,14 +32758,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000205"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000207"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3139" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3139" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3170" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3170" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32525,14 +32789,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000206"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000208"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3152" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3152" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3183" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3183" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32565,14 +32829,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000207"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000209"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3166" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3166" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3197" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3197" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32609,14 +32873,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000208"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000210"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3185" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3185" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3216" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3216" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32653,14 +32917,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000209"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000211"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3204" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3204" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3235" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3235" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32684,14 +32948,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000210"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000212"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3217" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3217" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3248" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3248" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32725,14 +32989,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000211"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000213"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3236" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3236" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3267" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3267" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32767,14 +33031,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000212"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000214"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3254" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3254" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3285" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3285" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32823,14 +33087,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000213"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000215"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3271" column="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3302" column="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32871,14 +33135,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000214"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000216"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3286" column="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3317" column="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32913,14 +33177,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000215"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000217"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3301" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3301" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3332" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3332" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -32972,14 +33236,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000216"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000218"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3324" column="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3355" column="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -33012,14 +33276,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000217"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000219"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3338" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3338" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3369" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3369" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -33086,14 +33350,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000218"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000220"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3358" column="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3389" column="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -33126,14 +33390,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000219"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000221"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3372" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3372" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3403" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3403" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -33166,14 +33430,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000220"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000222"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3386" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3386" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3417" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3417" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -33206,14 +33470,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000221"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000223"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3400" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3400" declcolumn="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3431" column="1" declfile="include/dpp/cluster_sync_calls.h" declline="3431" declcolumn="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -33262,14 +33526,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000222"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000224"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3417" column="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3448" column="1"/>
       </memberdef>
       <memberdef kind="define" id="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" static="no">
         <name>DPP_DEPRECATED</name>
@@ -33310,14 +33574,14 @@ Get current (bot) application</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="deprecated_1_deprecated000223"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
+<xrefsect id="deprecated_1_deprecated000225"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is deprecated, please use coroutines instead. </para>
 </xrefdescription></xrefsect><simplesect kind="warning"><para>This function is a blocking (synchronous) call and should only be used from within a separate thread. Avoid direct use of this function inside an event handler. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/dpp/cluster_sync_calls.h" line="3432" column="1"/>
+        <location file="include/dpp/cluster_sync_calls.h" line="3463" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -33481,7 +33745,7 @@ Get current (bot) application</para>
         <label>websocket_protocol_t</label>
       </node>
     </collaborationgraph>
-    <location file="include/dpp/cluster.h" line="80" column="1" bodyfile="include/dpp/cluster.h" bodystart="80" bodyend="3973"/>
+    <location file="include/dpp/cluster.h" line="80" column="1" bodyfile="include/dpp/cluster.h" bodystart="80" bodyend="3994"/>
     <listofallmembers>
       <member refid="classdpp_1_1cluster_1ac7da91963240dc59068dfd38eb8d37ac" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>application_emoji_create</name></member>
       <member refid="classdpp_1_1cluster_1aa2ec89c48e2265e53f772e087c302f87" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>application_emoji_delete</name></member>
@@ -33552,6 +33816,7 @@ Get current (bot) application</para>
       <member refid="classdpp_1_1cluster_1a62487f93b551a69efd8ec017706097b2" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_current_user_get</name></member>
       <member refid="classdpp_1_1cluster_1ab5f50a1379164c2c30f4e4ba9292a688" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_current_user_get_dms</name></member>
       <member refid="classdpp_1_1cluster_1aa97fd6e309cf09128bb5a6de9b92123f" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_current_user_get_guilds</name></member>
+      <member refid="classdpp_1_1cluster_1acb71489891626db1f68be864cc358905" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_current_user_get_voice_state</name></member>
       <member refid="classdpp_1_1cluster_1ab4e2464d8a0e2ee188fbba19e1c7bda4" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_current_user_join_thread</name></member>
       <member refid="classdpp_1_1cluster_1a52c49f5a45904bfe3b7f1bae71299dbd" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_current_user_leave_guild</name></member>
       <member refid="classdpp_1_1cluster_1a8328f64334d55de64b9b5356e2d766a1" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_current_user_leave_thread</name></member>
@@ -33720,6 +33985,7 @@ Get current (bot) application</para>
       <member refid="classdpp_1_1cluster_1a0b9bfa04e675ef90148da4110f9e6027" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_user_application_role_connection_update</name></member>
       <member refid="classdpp_1_1cluster_1a5524e88381051cded943e8f16be7ba17" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_user_get</name></member>
       <member refid="classdpp_1_1cluster_1a9c3a9a57736a4cacf44184ffbf482c87" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_user_get_cached</name></member>
+      <member refid="classdpp_1_1cluster_1a472cb537213114b0774af72343d23a92" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_user_get_voice_state</name></member>
       <member refid="classdpp_1_1cluster_1a246f4c285e228c759fa582f14813317c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>co_user_set_voice_state</name></member>
       <member refid="classdpp_1_1cluster_1a3334e0a3ee0cbf7e20a7a88e9b73f8df" prot="private" virt="non-virtual"><scope>dpp::cluster</scope><name>compressed</name></member>
       <member refid="classdpp_1_1cluster_1aab0538838d054a0c80c07cd0556a894c" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>create_dm_channel</name></member>
@@ -33730,6 +33996,7 @@ Get current (bot) application</para>
       <member refid="classdpp_1_1cluster_1aad927e85ed6b99e9b05f4190f1b19cae" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>current_user_get</name></member>
       <member refid="classdpp_1_1cluster_1a662fc0a998c62395f166da5e4a2acaf3" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>current_user_get_dms</name></member>
       <member refid="classdpp_1_1cluster_1a93c8fd5f22e0eae6bf357ad498b43f87" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>current_user_get_guilds</name></member>
+      <member refid="classdpp_1_1cluster_1ae1c442184327ded45e8ceca164eecbca" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>current_user_get_voice_state</name></member>
       <member refid="classdpp_1_1cluster_1aa62bc561994b7222712583e46cb68799" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>current_user_join_thread</name></member>
       <member refid="classdpp_1_1cluster_1a4fd6cc6c6635e6e0a9bdddcc6cda0e97" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>current_user_leave_guild</name></member>
       <member refid="classdpp_1_1cluster_1a3a313be1a4fd6bde99606047761c4518" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>current_user_leave_thread</name></member>
@@ -33794,6 +34061,8 @@ Get current (bot) application</para>
       <member refid="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>DPP_DEPRECATED</name></member>
       <member refid="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>DPP_DEPRECATED</name></member>
       <member refid="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" virt="pure-virtual"><scope>dpp::cluster</scope><name>DPP_DEPRECATED</name></member>
+      <member refid="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>DPP_DEPRECATED</name></member>
+      <member refid="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>DPP_DEPRECATED</name></member>
       <member refid="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>DPP_DEPRECATED</name></member>
       <member refid="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>DPP_DEPRECATED</name></member>
       <member refid="classdpp_1_1cluster_1ab7a28f2a89adc3c5a559478c36d38533" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>DPP_DEPRECATED</name></member>
@@ -34218,6 +34487,7 @@ Get current (bot) application</para>
       <member refid="classdpp_1_1cluster_1ac6426506b0175419913b157ad9f10f71" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>user_application_role_connection_update</name></member>
       <member refid="classdpp_1_1cluster_1a73483dbeb0f1946dc18b1d0a5331b0d0" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>user_get</name></member>
       <member refid="classdpp_1_1cluster_1a00caec14273460343d60830dcb6bea9f" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>user_get_cached</name></member>
+      <member refid="classdpp_1_1cluster_1a7645cf3dedd3aac0901558b0d494a829" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>user_get_voice_state</name></member>
       <member refid="classdpp_1_1cluster_1a66c65f30625391586fd4cf6614b6a1df" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>user_set_voice_state</name></member>
       <member refid="classdpp_1_1cluster_1ae10466db79966215a799fc2a30010551" prot="public" virt="non-virtual"><scope>dpp::cluster</scope><name>ws_mode</name></member>
       <member refid="classdpp_1_1cluster_1a6e6c0859b49fdb91edb74e6b16a87521" prot="public" virt="virtual"><scope>dpp::cluster</scope><name>~cluster</name></member>

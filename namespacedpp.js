@@ -6710,7 +6710,7 @@ var namespacedpp =
     [ "command_parameter", "namespacedpp.html#aeda63f2562bc6f52b50b793b70341abd", null ],
     [ "command_value", "namespacedpp.html#a710b32b577396ba92917d0578f0bedb6", null ],
     [ "component_emoji", "namespacedpp.html#a409d609e310268e04782e398a38f7c06", null ],
-    [ "confirmable_t", "namespacedpp.html#a903ce3a37a8a89102ca5dba5ebab3031", null ],
+    [ "confirmable_t", "namespacedpp.html#ab9d3c7966f425ceea724a1dcd4218bc4", null ],
     [ "connection_map", "namespacedpp.html#ad5f78f7b7bca070ac34c0267ca49013a", null ],
     [ "dns_cache_t", "namespacedpp.html#ad4c862611232b317153bcfc106534292", null ],
     [ "dtemplate_map", "namespacedpp.html#a9a1e92263bfa31397d459725d26e47b6", null ],
