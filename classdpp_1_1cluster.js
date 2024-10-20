@@ -537,7 +537,6 @@ var classdpp_1_1cluster =
     [ "on_voice_server_update", "classdpp_1_1cluster.html#a1b1388af7672f9eb4ad12de0419204fd", null ],
     [ "on_voice_state_update", "classdpp_1_1cluster.html#a571d473f65f67265878fa4ba0e405f2f", null ],
     [ "on_voice_track_marker", "classdpp_1_1cluster.html#adaad9d9e5d575b9d68eea94f5fcf0245", null ],
-    [ "on_voice_user_talking", "classdpp_1_1cluster.html#aec3fff428675781140071d95f06f1694", null ],
     [ "on_webhooks_update", "classdpp_1_1cluster.html#a45a46efdbb7a7b952bb113f8400ea110", null ],
     [ "request_timeout", "classdpp_1_1cluster.html#a7ab5b992db2b53f80cc466deffec96b8", null ],
     [ "rest_ping", "classdpp_1_1cluster.html#a6161f8d412b2e81a06594f727684a260", null ],

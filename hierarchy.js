@@ -235,7 +235,6 @@ var hierarchy =
       [ "dpp::voice_server_update_t", "structdpp_1_1voice__server__update__t.html", null ],
       [ "dpp::voice_state_update_t", "structdpp_1_1voice__state__update__t.html", null ],
       [ "dpp::voice_track_marker_t", "structdpp_1_1voice__track__marker__t.html", null ],
-      [ "dpp::voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", null ],
       [ "dpp::webhooks_update_t", "structdpp_1_1webhooks__update__t.html", null ]
     ] ],
     [ "dpp::event_entities", "structdpp_1_1event__entities.html", null ],

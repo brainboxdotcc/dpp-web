@@ -930,7 +930,6 @@
     <member refid="classdpp_1_1cluster_1ab55ea1d5f856ada2e80b024d8fc24385" kind="variable"><name>on_guild_scheduled_event_user_add</name></member>
     <member refid="classdpp_1_1cluster_1a44af186f16be598e2c00b33c820ae408" kind="variable"><name>on_guild_scheduled_event_user_remove</name></member>
     <member refid="classdpp_1_1cluster_1a4b702b26b73692e0aab0743f4ed07ef9" kind="variable"><name>on_voice_buffer_send</name></member>
-    <member refid="classdpp_1_1cluster_1aec3fff428675781140071d95f06f1694" kind="variable"><name>on_voice_user_talking</name></member>
     <member refid="classdpp_1_1cluster_1a8f2f865ac3492196a8167a319261ffb6" kind="variable"><name>on_voice_ready</name></member>
     <member refid="classdpp_1_1cluster_1a67227dd1f0d393d8a43c8b481c1fbbbe" kind="variable"><name>on_voice_receive</name></member>
     <member refid="classdpp_1_1cluster_1aece6405e1cde23b7dcf3a9043e477f91" kind="variable"><name>on_voice_receive_combined</name></member>
@@ -1985,6 +1984,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a6eb4a952b8451906316fcdb746c2bd34a1d950a0e94c2adf54d55d9ddf1332b4a" kind="enumvalue"><name>satype_overlap_audio</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a35a16d67874752977e6a4ff2bd7325e3" kind="typedef"><name>rtp_seq_t</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a438b95ded97da933b2abcd13892a007d" kind="typedef"><name>rtp_timestamp_t</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a13e2ca2b646c348597e239d3ab72f67b" kind="variable"><name>silence_packet</name></member>
     <member refid="classdpp_1_1discord__voice__client_1afe4e67fad90702358e32370a0aa4b0aa" kind="variable"><name>stream_mutex</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a959c6452e0ea0cea3855c48100a4dcf3" kind="variable"><name>queue_mutex</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a0dfd6ef262902a36dd897baf96e63847" kind="variable"><name>external_ip</name></member>
@@ -2001,6 +2001,7 @@
     <member refid="classdpp_1_1discord__voice__client_1a29a53aaa7f907d61d8bf9cee05ce2160" kind="variable"><name>voice_courier</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a25c7eb5700b095d16791b905d7dfa173" kind="variable"><name>voice_courier_shared_state</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a99fb90437d53de82d76cff97c4faad54" kind="variable"><name>paused</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a6009c0a046d090b47dcb3a2d97cc96ad" kind="variable"><name>sent_stop_frames</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a98dc4764408e7bbf5a2eafff24391f9a" kind="variable"><name>encoder</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a7a494f997253706683168470ab695802" kind="variable"><name>repacketizer</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a8175929e6857660d26b39f5b9393e83d" kind="variable"><name>mls_state</name></member>
@@ -2050,7 +2051,7 @@
     <member refid="classdpp_1_1discord__voice__client_1ad0351658362034bef3ffde9b91016561" kind="function"><name>want_read</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a88eb8bcc0d54ce5d600a9c2a1e690e01" kind="function"><name>write_ready</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ac285267f8471e7954b70ecba3f130a3f" kind="function"><name>read_ready</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1a5fb0aa6dd6e32f434e42ce76d3fcd6fc" kind="function"><name>send</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a27ebd515b66d51d5416b2472ae132715" kind="function"><name>send</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a406383b8c18a931d4c496e0d7a81cf43" kind="function"><name>queue_message</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a87b60251b68583d9307a4f72d3ce3249" kind="function"><name>clear_queue</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ac0be468508d5b5d2afedee7b242fd23a" kind="function"><name>get_queue_size</name></member>
@@ -2069,9 +2070,10 @@
     <member refid="classdpp_1_1discord__voice__client_1a769b1674cf88dc4f53d7609fc24b7961" kind="function"><name>error</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a418f98812e850eb963e4b3a2a4dc0c74" kind="function"><name>run</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a6d52a32631231f3120ba9e5ebbe61a7a" kind="function"><name>send_audio_raw</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1a57dd66bc916543ce9ac2f809a7ba5251" kind="function"><name>send_audio_opus</name></member>
-    <member refid="classdpp_1_1discord__voice__client_1ad58a06d5ad18e9feaef4c5e2993a5171" kind="function"><name>send_audio_opus</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a2770c71637347c4c2b5d50f73b18fd62" kind="function"><name>send_audio_opus</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1a84f153d97e620419b82a73b54ceb223e" kind="function"><name>send_audio_opus</name></member>
     <member refid="classdpp_1_1discord__voice__client_1ac6d1422113278ad6049486d07ca06ae4" kind="function"><name>send_silence</name></member>
+    <member refid="classdpp_1_1discord__voice__client_1abcc3a1b2934325268553f910b6a03103" kind="function"><name>send_stop_frames</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a6404396de8a2641fcb3890658ce0e054" kind="function"><name>set_send_audio_type</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a067cdfaf8a84c2bdf09febe974eb4730" kind="function"><name>set_timescale</name></member>
     <member refid="classdpp_1_1discord__voice__client_1a45085f49408bdeae9cd05dbf59d39972" kind="function"><name>get_timescale</name></member>
@@ -5807,24 +5809,6 @@
     <member refid="structdpp_1_1voice__track__marker__t_1a4d5c139c862c5ed02227b1e9ffc38095" kind="function"><name>event_dispatch_t</name></member>
     <member refid="structdpp_1_1voice__track__marker__t_1a2500c6d9987fbfc509fd0a960b1968e9" kind="function"><name>operator=</name></member>
     <member refid="structdpp_1_1voice__track__marker__t_1a4645c2cc7dfe1def0b936d5726f7b8db" kind="function"><name>operator=</name></member>
-    <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
-    <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kind="function"><name>cancel_event</name></member>
-    <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>
-  </compound>
-  <compound refid="structdpp_1_1voice__user__talking__t" kind="struct"><name>dpp::voice_user_talking_t</name>
-    <member refid="structdpp_1_1voice__user__talking__t_1ac496e63b6b2eba1f3ac9e172a558ec38" kind="variable"><name>voice_client</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1aeb9986889aec16ac0d5da675636218dd" kind="variable"><name>user_id</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1a9d52fb0412548166b6e54d81bdb8980b" kind="variable"><name>talking_flags</name></member>
-    <member refid="structdpp_1_1event__dispatch__t_1a2d4777d1049d31ed943ecebfa2de7db9" kind="variable"><name>raw_event</name></member>
-    <member refid="structdpp_1_1event__dispatch__t_1a9ef98cebb9c0a5ab75a4362d1b40fb71" kind="variable"><name>from</name></member>
-    <member refid="structdpp_1_1event__dispatch__t_1a6cd7044ce4450c62ccd77f5f223ac9d6" kind="variable"><name>cancelled</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1ad761e8dec36073665f520aaa13fbe6dc" kind="function"><name>event_dispatch_t</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1ae250d3a1ee0ad2e90ad075e1aead5478" kind="function"><name>event_dispatch_t</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1aae35038ecb874c46e355fac3863615d0" kind="function"><name>event_dispatch_t</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1af32126d4ed56366b4413c84b272383b7" kind="function"><name>event_dispatch_t</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1a4d5c139c862c5ed02227b1e9ffc38095" kind="function"><name>event_dispatch_t</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1a2500c6d9987fbfc509fd0a960b1968e9" kind="function"><name>operator=</name></member>
-    <member refid="structdpp_1_1voice__user__talking__t_1a4645c2cc7dfe1def0b936d5726f7b8db" kind="function"><name>operator=</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a5afbcd36109734ad0fca14ec848b73b7" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1a54af3a0990fe041d4f5e8ad897367f7f" kind="function"><name>cancel_event</name></member>
     <member refid="structdpp_1_1event__dispatch__t_1aca2880114f69b7ba62eb5137824c1432" kind="function"><name>is_cancelled</name></member>

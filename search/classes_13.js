@@ -13,8 +13,7 @@ var searchData=
   ['voice_5fstate_5fupdate_10',['voice_state_update',['../classdpp_1_1events_1_1voice__state__update.html',1,'dpp::events']]],
   ['voice_5fstate_5fupdate_5ft_11',['voice_state_update_t',['../structdpp_1_1voice__state__update__t.html',1,'dpp']]],
   ['voice_5ftrack_5fmarker_5ft_12',['voice_track_marker_t',['../structdpp_1_1voice__track__marker__t.html',1,'dpp']]],
-  ['voice_5fuser_5ftalking_5ft_13',['voice_user_talking_t',['../structdpp_1_1voice__user__talking__t.html',1,'dpp']]],
-  ['voiceconn_14',['voiceconn',['../classdpp_1_1voiceconn.html',1,'dpp']]],
-  ['voiceregion_15',['voiceregion',['../classdpp_1_1voiceregion.html',1,'dpp']]],
-  ['voicestate_16',['voicestate',['../classdpp_1_1voicestate.html',1,'dpp']]]
+  ['voiceconn_13',['voiceconn',['../classdpp_1_1voiceconn.html',1,'dpp']]],
+  ['voiceregion_14',['voiceregion',['../classdpp_1_1voiceregion.html',1,'dpp']]],
+  ['voicestate_15',['voicestate',['../classdpp_1_1voicestate.html',1,'dpp']]]
 ];

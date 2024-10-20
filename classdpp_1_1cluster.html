@@ -2268,9 +2268,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4b702b26b73692e0aab0743f4ed07ef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1voice__buffer__send__t.html">voice_buffer_send_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a4b702b26b73692e0aab0743f4ed07ef9">on_voice_buffer_send</a></td></tr>
 <tr class="memdesc:a4b702b26b73692e0aab0743f4ed07ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when packets are sent from the voice buffer. The voice buffer contains packets that are already encoded with Opus and encrypted with XChaCha20-Poly1305, and merged into packets by the repacketizer, which is done in the dpp::discord_voice_client::send_audio method. You should use the buffer size properties of <a class="el" href="structdpp_1_1voice__buffer__send__t.html" title="voice buffer send">dpp::voice_buffer_send_t</a> to determine if you should fill the buffer with more content.  <a href="classdpp_1_1cluster.html#a4b702b26b73692e0aab0743f4ed07ef9">More...</a><br /></td></tr>
 <tr class="separator:a4b702b26b73692e0aab0743f4ed07ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3fff428675781140071d95f06f1694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1voice__user__talking__t.html">voice_user_talking_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#aec3fff428675781140071d95f06f1694">on_voice_user_talking</a></td></tr>
-<tr class="memdesc:aec3fff428675781140071d95f06f1694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a user is talking on a voice channel.  <a href="classdpp_1_1cluster.html#aec3fff428675781140071d95f06f1694">More...</a><br /></td></tr>
-<tr class="separator:aec3fff428675781140071d95f06f1694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f2f865ac3492196a8167a319261ffb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt; <a class="el" href="structdpp_1_1voice__ready__t.html">voice_ready_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdpp_1_1cluster.html#a8f2f865ac3492196a8167a319261ffb6">on_voice_ready</a></td></tr>
 <tr class="memdesc:a8f2f865ac3492196a8167a319261ffb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a voice channel is connected and ready to send audio. Note that this is not directly attached to the READY event of the websocket, as there is further connection that needs to be done before audio is ready to send.  <a href="classdpp_1_1cluster.html#a8f2f865ac3492196a8167a319261ffb6">More...</a><br /></td></tr>
 <tr class="separator:a8f2f865ac3492196a8167a319261ffb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -22318,7 +22315,7 @@ There are dedicated events to handle slashcommands (See <a class="el" href="clas
 
 <p>Called when a voice channel is connected and ready to send audio. Note that this is not directly attached to the READY event of the websocket, as there is further connection that needs to be done before audio is ready to send. </p>
 <dl class="section warning"><dt>Warning</dt><dd>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1voice__ready__t.html" title="voice user talking">voice_ready_t</a>&amp;, and returns void. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1voice__ready__t.html" title="voice ready">voice_ready_t</a>&amp;, and returns void. </dd></dl>
 
 </div>
 </div>
@@ -22410,24 +22407,6 @@ Use operator() to attach a lambda to this event, and the detach method to detach
 
 <p>Called when sending of audio passes over a track marker. Track markers are arbitrarily placed "bookmarks" in the audio buffer, placed by the bot developer. Each track marker can have a string value associated with it which is specified in <a class="el" href="classdpp_1_1discord__voice__client.html#afe1408c1ad305aebedc7e99ba2128aa8" title="Insert a track marker into the audio output buffer. A track marker is an arbitrary flag in the buffer...">dpp::discord_voice_client::insert_marker</a> and returned to this event. </p>
 <dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1voice__track__marker__t.html" title="Voice state update.">voice_track_marker_t</a>&amp;, and returns void. </dd></dl>
-
-</div>
-</div>
-<a id="aec3fff428675781140071d95f06f1694" name="aec3fff428675781140071d95f06f1694"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3fff428675781140071d95f06f1694">&#9670;&nbsp;</a></span>on_voice_user_talking</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdpp_1_1event__router__t.html">event_router_t</a>&lt;<a class="el" href="structdpp_1_1voice__user__talking__t.html">voice_user_talking_t</a>&gt; dpp::cluster::on_voice_user_talking</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Called when a user is talking on a voice channel. </p>
-<dl class="section warning"><dt>Warning</dt><dd>If the cache policy has disabled guild caching, the pointer to the guild in this event may be nullptr.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Use operator() to attach a lambda to this event, and the detach method to detach the listener using the returned ID. The function signature for this event takes a single <code>const</code> reference of type <a class="el" href="structdpp_1_1voice__user__talking__t.html" title="voice user talking">voice_user_talking_t</a>&amp;, and returns void. </dd></dl>
 
 </div>
 </div>

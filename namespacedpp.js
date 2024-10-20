@@ -6686,7 +6686,6 @@ var namespacedpp =
     [ "voice_server_update_t", "structdpp_1_1voice__server__update__t.html", "structdpp_1_1voice__server__update__t" ],
     [ "voice_state_update_t", "structdpp_1_1voice__state__update__t.html", "structdpp_1_1voice__state__update__t" ],
     [ "voice_track_marker_t", "structdpp_1_1voice__track__marker__t.html", "structdpp_1_1voice__track__marker__t" ],
-    [ "voice_user_talking_t", "structdpp_1_1voice__user__talking__t.html", "structdpp_1_1voice__user__talking__t" ],
     [ "voiceconn", "classdpp_1_1voiceconn.html", "classdpp_1_1voiceconn" ],
     [ "voiceregion", "classdpp_1_1voiceregion.html", "classdpp_1_1voiceregion" ],
     [ "voicestate", "classdpp_1_1voicestate.html", "classdpp_1_1voicestate" ],
