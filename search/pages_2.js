@@ -12,5 +12,6 @@ var searchData=
   ['creating_20a_20discord_20bot_20in_20replit_9',['Creating a Discord Bot in Replit',['../building-a-cpp-discord-bot-in-repl.html',1,'creating-a-discord-bot']]],
   ['creating_20a_20sound_20board_10',['Creating a Sound Board',['../soundboard.html',1,'music-and-audio']]],
   ['creating_20and_20interacting_20with_20threads_11',['Creating and Interacting with Threads',['../making_threads.html',1,'misc']]],
-  ['creating_20your_20first_20bot_12',['Creating Your First Bot',['../firstbot.html',1,'the-basics']]]
+  ['creating_20user_20apps_12',['Creating User Apps',['../user-applications.html',1,'interactions-and-components']]],
+  ['creating_20your_20first_20bot_13',['Creating Your First Bot',['../firstbot.html',1,'the-basics']]]
 ];

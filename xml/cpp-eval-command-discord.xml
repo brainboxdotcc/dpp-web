@@ -6,7 +6,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect2 id="cpp-eval-command-discord_1autotoc_md120">
+<sect2 id="cpp-eval-command-discord_1autotoc_md126">
 <title>What is an eval command anyway?</title>
 <para>Many times people will ask: &quot;How do I make a command like &apos;eval&apos; in C++?&quot;. For the uninitiated, an <computeroutput>eval</computeroutput> command is a command often found in interpreted languages such as JavaScript and Python, which allows the developer to pass in raw interpreter statements which are then executed within the context of the running program, without any sandboxing. Eval commands are plain <bold>evil</bold>, if not properly coded in.</para>
 <para>Needless to say, this is very dangerous. If you are asking how to do this, and want to put this into your bot, we trust that you have a very good reason to do so and have considered alternatives before resorting to this. The code below is for educational purposes only and makes several assumptions:</para>
@@ -21,16 +21,16 @@
 <para>To create this program you must create two files, <computeroutput>eval.h</computeroutput> and <computeroutput>eval.cpp</computeroutput>. The header file lists forward declarations of functions that you will be able to use directly within your <computeroutput>eval</computeroutput> code. As well as this the entirety of D++ will be available to the eval command via the local variable <computeroutput>bot</computeroutput>, and the entire <computeroutput>on_message_create</computeroutput> event variable via a local variable called <computeroutput>event</computeroutput>.</para>
 <para>The evaluated code will run within its own thread, so can execute for as long as it needs (but use common sense, don&apos;t go spawning a tight <computeroutput>while</computeroutput> loop that runs forever, you&apos;ll lock a thread at 100% CPU that won&apos;t ever end!).</para>
 </sect2>
-<sect2 id="cpp-eval-command-discord_1autotoc_md121">
+<sect2 id="cpp-eval-command-discord_1autotoc_md127">
 <title>Implementation details</title>
 <para>This code operates by outputting your provided code to be evaluated into a simple boilerplate program which can be compiled to a shared object library (<computeroutput>.so</computeroutput>) file. This <computeroutput>.so</computeroutput> file is then compiled with <computeroutput>g++</computeroutput>, using the <computeroutput>-shared</computeroutput> and <computeroutput>-fPIC</computeroutput> flags. If the program can be successfully compiled, it is then loaded using <computeroutput>dlopen()</computeroutput>, and the symbol <computeroutput>so_exec()</computeroutput> searched for within it, and called. This <computeroutput>so_exec()</computeroutput> function will contain the body of the code given to the eval command. Once this has been called and it has returned, the <computeroutput>dlclose()</computeroutput> function is called to unload the library, and finally any temporary files (such as the <computeroutput>.so</computeroutput> file and its corresponding <computeroutput>.cpp</computeroutput> file) are cleaned up. Docker is definitely recommended if you code on Windows/macOS, because Docker desktop still uses a Linux VM, so your code can easily use the <computeroutput>.so</computeroutput> file and your code runs the same on your VPS (if it also uses Linux distro).</para>
 </sect2>
-<sect2 id="cpp-eval-command-discord_1autotoc_md122">
+<sect2 id="cpp-eval-command-discord_1autotoc_md128">
 <title>Source code</title>
 <para><simplesect kind="warning"><para>If you manage to get your system, network, or anything else harmed by use or misuse of this code, we are not responsible. Don&apos;t say we didn&apos;t warn you! Find another way to solve your problem!</para>
 </simplesect>
 </para>
-<sect3 id="cpp-eval-command-discord_1autotoc_md123">
+<sect3 id="cpp-eval-command-discord_1autotoc_md129">
 <title>eval.h</title>
 <para>Remember that <computeroutput>eval.h</computeroutput> contains forward-declarations of any functions you want to expose to the eval command. It is included both by the bot itself, and by any shared object files compiled for evaluation.</para>
 <para><programlisting filename="eval.h"><codeline><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
@@ -49,7 +49,7 @@
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_function();</highlight></codeline>
 </programlisting></para>
 </sect3>
-<sect3 id="cpp-eval-command-discord_1autotoc_md124">
+<sect3 id="cpp-eval-command-discord_1autotoc_md130">
 <title>eval.cpp</title>
 <para>This is the main body of the example program.</para>
 <para><programlisting filename="eval.cpp"><codeline><highlight class="normal"></highlight></codeline>
@@ -218,13 +218,13 @@
 </programlisting></para>
 </sect3>
 </sect2>
-<sect2 id="cpp-eval-command-discord_1autotoc_md125">
+<sect2 id="cpp-eval-command-discord_1autotoc_md131">
 <title>Compilation</title>
 <para>To compile this program you must link against <computeroutput>libdl</computeroutput>. It is also critically important to include the <computeroutput>-rdynamic</computeroutput> flag. For example:</para>
 <para><programlisting><codeline><highlight class="normal">g++<sp/>-std=c++17<sp/>-rdynamic<sp/>-oeval<sp/>eval.cpp<sp/>-ldpp<sp/>-ldl</highlight></codeline>
 </programlisting></para>
 </sect2>
-<sect2 id="cpp-eval-command-discord_1autotoc_md126">
+<sect2 id="cpp-eval-command-discord_1autotoc_md132">
 <title>Example usage</title>
 <para><image type="html" name="eval_example.png"></image>
  </para>

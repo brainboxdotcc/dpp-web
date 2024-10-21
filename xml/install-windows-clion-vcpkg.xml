@@ -9,7 +9,7 @@
 <para><simplesect kind="warning"><para>This page is for <bold>Windows only</bold>. If you want to use CLion on Linux, look to use <ref refid="build-a-discord-bot-linux-clion" kindref="compound">this page</ref>. Like always with windows, we highly recommends you use the <ulink url="https://github.com/brainboxdotcc/windows-bot-template/">pre-made Visual Studio template</ulink>. This tutorial also assumes you have installed D++ via VCPKG already. If you haven&apos;t, look at <ref refid="install-vcpkg" kindref="compound">this page</ref>.</para>
 </simplesect>
 </para>
-<sect3 id="install-windows-clion-vcpkg_1autotoc_md157">
+<sect3 id="install-windows-clion-vcpkg_1autotoc_md163">
 <title>Changing Toolchains</title>
 <para><simplesect kind="note"><para>If you have already configured your toolchain to use anything <bold>but</bold> MinGW64, then you can skip to the next section. Otherwise, it is <bold>critical</bold> that you follow along with this section. It should also be noted that you <bold>need</bold> Visual Studio for this.</para>
 </simplesect>
@@ -22,13 +22,13 @@ Head on over to <computeroutput>File &gt; Settings</computeroutput> (Ctrl+Alt+S)
 </para>
 <para>From there, you need to drag it to the top (if it didn&apos;t already add at the top) to ensure it&apos;s the default toolchain.</para>
 </sect3>
-<sect3 id="install-windows-clion-vcpkg_1autotoc_md158">
+<sect3 id="install-windows-clion-vcpkg_1autotoc_md164">
 <title>Using VCPKG with CLion</title>
 <para>To use vcpkg in CLion, add the following line to your CMake options in the settings (Located under <computeroutput>Settings &gt; Build, Execution, Deployment &gt; CMake</computeroutput>) <programlisting filename=".cmd"><codeline><highlight class="normal">-DCMAKE_TOOLCHAIN_FILE=path_to_vcpkg_root_folder/scripts/buildsystems/vcpkg.cmake</highlight></codeline>
 </programlisting> For example, if your root folder is <computeroutput>C:/vcpkg/</computeroutput> then the CMake option will be: <programlisting filename=".cmd"><codeline><highlight class="normal">-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake</highlight></codeline>
 </programlisting></para>
 </sect3>
-<sect3 id="install-windows-clion-vcpkg_1autotoc_md159">
+<sect3 id="install-windows-clion-vcpkg_1autotoc_md165">
 <title>Making a test application.</title>
 <para>Open your <computeroutput>main.cpp</computeroutput> file and then copy and paste the following <ref refid="firstbot" kindref="compound">example program</ref> in. Then, set your bot token (see <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref>). Here&apos;s how your <computeroutput>main.cpp</computeroutput> file should look:</para>
 <para><programlisting filename="firstbot.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -57,7 +57,7 @@ Head on over to <computeroutput>File &gt; Settings</computeroutput> (Ctrl+Alt+S)
 </programlisting></para>
 <para>If everything went well, you should now have a functioning bot! If not, feel free to ask us on the D++ <ulink url="https://discord.gg/dpp">discord server</ulink>.</para>
 </sect3>
-<sect3 id="install-windows-clion-vcpkg_1autotoc_md160">
+<sect3 id="install-windows-clion-vcpkg_1autotoc_md166">
 <title>Troubleshooting</title>
 <para>If you see a message like <computeroutput>Detecting C compiler ABI info - failed</computeroutput> or something along the lines of <computeroutput>&quot;cl.exe&quot; is not able to compile a simple test program</computeroutput>, then try to reinstall <computeroutput>Windows Build Tools</computeroutput> along with the <computeroutput>Windows SDK</computeroutput> from the Visual Studio Installer. </para>
 </sect3>

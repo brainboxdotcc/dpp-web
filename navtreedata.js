@@ -26,19 +26,19 @@ var NAVTREE =
 [
   [ "D++ (DPP)", "index.html", [
     [ "D++: A C++ Discord API Library for Bots", "index.html", [
-      [ "What is D++ (DPP)?", "index.html#autotoc_md142", null ],
-      [ "Downloads", "index.html#autotoc_md143", null ],
-      [ "Library features", "index.html#autotoc_md144", null ],
-      [ "Supported Operating Systems", "index.html#autotoc_md145", [
-        [ "Linux", "index.html#autotoc_md146", null ],
-        [ "Mac OS X, FreeBSD, and OpenBSD", "index.html#autotoc_md147", null ],
-        [ "Raspberry Pi", "index.html#autotoc_md148", null ],
-        [ "Windows", "index.html#autotoc_md149", null ],
-        [ "Other OS", "index.html#autotoc_md150", null ]
+      [ "What is D++ (DPP)?", "index.html#autotoc_md148", null ],
+      [ "Downloads", "index.html#autotoc_md149", null ],
+      [ "Library features", "index.html#autotoc_md150", null ],
+      [ "Supported Operating Systems", "index.html#autotoc_md151", [
+        [ "Linux", "index.html#autotoc_md152", null ],
+        [ "Mac OS X, FreeBSD, and OpenBSD", "index.html#autotoc_md153", null ],
+        [ "Raspberry Pi", "index.html#autotoc_md154", null ],
+        [ "Windows", "index.html#autotoc_md155", null ],
+        [ "Other OS", "index.html#autotoc_md156", null ]
       ] ],
-      [ "Getting started", "index.html#autotoc_md151", null ],
-      [ "Architecture", "index.html#autotoc_md152", null ],
-      [ "Learning Resources", "index.html#autotoc_md153", null ]
+      [ "Getting started", "index.html#autotoc_md157", null ],
+      [ "Architecture", "index.html#autotoc_md158", null ],
+      [ "Learning Resources", "index.html#autotoc_md159", null ]
     ] ],
     [ "Frequently Asked Questions (FAQ)", "frequently-asked-questions.html", null ],
     [ "A Glossary of Common Discord Terms", "glossary-of-common-discord-terms.html", null ],
@@ -100,7 +100,7 @@ var NAVTREEINDEX =
 "classdpp_1_1thread.html#a79251adb1bc9dc6780af2afd21499769",
 "classdpp_1_1user__identified.html#a5768865659ca76eebc37a8f02b1b7b9b",
 "classdpp_1_1webhook.html#af37345950a45e0b0b15b345625f26c85",
-"index.html#autotoc_md149",
+"index.html#autotoc_md155",
 "namespacedpp.html#a51891a9e382f9c396d378de00fa65099a8d6403af9f4d5b0b849c3f883d0e49e8",
 "namespacedpp.html#a953f1484a5140481ffab2b248618fb22abc482a9a0da8d6aa4542224637426864",
 "namespacedpp.html#aacfd9dabf035bd86026220ba73d36ba1a6e097067da6d6a83e6f83e9abee3c634",
