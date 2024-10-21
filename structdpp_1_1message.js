@@ -71,6 +71,7 @@ var structdpp_1_1message =
     [ "guild_id", "structdpp_1_1message.html#a5e75f7cd8a7e952e6621c520627d5b84", null ],
     [ "id", "structdpp_1_1message.html#a40bf0c6cc03909910512808fa6caa112", null ],
     [ "interaction", "structdpp_1_1message.html#ab61c894afe6b0f7655b3908217878e68", null ],
+    [ "interaction_metadata", "structdpp_1_1message.html#a21f63f361510e4a130cee97908cee648", null ],
     [ "member", "structdpp_1_1message.html#a550f3dc37e4b55cccc2e78d90fc047fb", null ],
     [ "mention_channels", "structdpp_1_1message.html#adcc2146a8b07c51a68ab314c548efa5b", null ],
     [ "mention_everyone", "structdpp_1_1message.html#a499cacfe6a270dca773fc7f91718ac70", null ],

@@ -33,6 +33,7 @@ var classdpp_1_1application =
     [ "install_params", "classdpp_1_1application.html#a3d59f66fb7f7132320c3b3c37013729a", null ],
     [ "integration_public", "classdpp_1_1application.html#a6daf0d8671bbd45398a426f86281aec2", null ],
     [ "integration_require_code_grant", "classdpp_1_1application.html#ae759b7853b28fb15c4a9e5ea62635f4f", null ],
+    [ "integration_types_config", "classdpp_1_1application.html#a3416e35c84d22b482ef445396b3f4966", null ],
     [ "interactions_endpoint_url", "classdpp_1_1application.html#a9fa53e459d55c33e09abe373577ce89a", null ],
     [ "interactions_event_types", "classdpp_1_1application.html#ac199705060761b9cfcf51ca783649541", null ],
     [ "interactions_version", "classdpp_1_1application.html#ad5bd45a56d2be7a803226ed428e8dec4", null ],

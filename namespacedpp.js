@@ -6577,11 +6577,13 @@ var namespacedpp =
     [ "integration", "classdpp_1_1integration.html", "classdpp_1_1integration" ],
     [ "integration_account", "structdpp_1_1integration__account.html", "structdpp_1_1integration__account" ],
     [ "integration_app", "structdpp_1_1integration__app.html", "structdpp_1_1integration__app" ],
+    [ "integration_configuration", "structdpp_1_1integration__configuration.html", "structdpp_1_1integration__configuration" ],
     [ "integration_create_t", "structdpp_1_1integration__create__t.html", "structdpp_1_1integration__create__t" ],
     [ "integration_delete_t", "structdpp_1_1integration__delete__t.html", "structdpp_1_1integration__delete__t" ],
     [ "integration_update_t", "structdpp_1_1integration__update__t.html", "structdpp_1_1integration__update__t" ],
     [ "interaction", "classdpp_1_1interaction.html", "classdpp_1_1interaction" ],
     [ "interaction_create_t", "structdpp_1_1interaction__create__t.html", "structdpp_1_1interaction__create__t" ],
+    [ "interaction_metadata_type", "structdpp_1_1interaction__metadata__type.html", "structdpp_1_1interaction__metadata__type" ],
     [ "interaction_modal_response", "structdpp_1_1interaction__modal__response.html", "structdpp_1_1interaction__modal__response" ],
     [ "interaction_response", "structdpp_1_1interaction__response.html", "structdpp_1_1interaction__response" ],
     [ "invalid_token_exception", "classdpp_1_1invalid__token__exception.html", "classdpp_1_1invalid__token__exception" ],
@@ -6790,6 +6792,10 @@ var namespacedpp =
       [ "apf_gateway_message_content", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a33aabc481930927e85b7a410bd456379", null ],
       [ "apf_gateway_message_content_limited", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a4d794600b5fa9f1479b0f43af7e31888", null ],
       [ "apf_application_command_badge", "namespacedpp.html#a9ee31b61c76a466e853bf04c22a25b72a401e761d72bd0b9bc94b95e4d2271d4e", null ]
+    ] ],
+    [ "application_integration_types", "namespacedpp.html#a772599e8a351acf3a1d4e0267ca15158", [
+      [ "ait_guild_install", "namespacedpp.html#a772599e8a351acf3a1d4e0267ca15158ae9361a04022a1040f16d28dcc6db5dbf", null ],
+      [ "ait_user_install", "namespacedpp.html#a772599e8a351acf3a1d4e0267ca15158a9601746fb7bd857786fc2729836e1211", null ]
     ] ],
     [ "application_role_connection_metadata_type", "namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33", [
       [ "rc_integer_less_than_or_equal", "namespacedpp.html#a9f181ce9f4b3bc1ac51bc499b5938b33a2bbd23aeabfa38d2010c61d4dc099e5a", null ],
@@ -7539,6 +7545,11 @@ var namespacedpp =
       [ "i_privileged_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5ad4af85bb8ca011125370342f0961bf05", null ],
       [ "i_all_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a76061cf60f9d06cf58ca38ddee1b825d", null ],
       [ "i_unverified_default_intents", "namespacedpp.html#a0042c0fc8164da4239b977d5be8e2ef5a78fe83dd74ee3a92448dc0142c168220", null ]
+    ] ],
+    [ "interaction_context_type", "namespacedpp.html#aae430aca529d808c16a22954928b3896", [
+      [ "itc_guild", "namespacedpp.html#aae430aca529d808c16a22954928b3896a3629f190a192f8b29d375e02a0061dd8", null ],
+      [ "itc_bot_dm", "namespacedpp.html#aae430aca529d808c16a22954928b3896a8217d72fa2d1d32d0030027d53732152", null ],
+      [ "itc_private_channel", "namespacedpp.html#aae430aca529d808c16a22954928b3896aaa37c2739be25aa73960f594949b85c2", null ]
     ] ],
     [ "interaction_response_type", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02", [
       [ "ir_pong", "namespacedpp.html#a83479ddaa45166def7719d5511b09d02a46a22844f01bdc70a45a67876e9eeede", null ],

@@ -267,6 +267,8 @@ var hierarchy =
     [ "dpp::in_thread", "classdpp_1_1in__thread.html", null ],
     [ "dpp::integration_account", "structdpp_1_1integration__account.html", null ],
     [ "dpp::integration_app", "structdpp_1_1integration__app.html", null ],
+    [ "dpp::integration_configuration", "structdpp_1_1integration__configuration.html", null ],
+    [ "dpp::interaction_metadata_type", "structdpp_1_1interaction__metadata__type.html", null ],
     [ "dpp::job", "structdpp_1_1job.html", null ],
     [ "dpp::job_dummy", "structdpp_1_1job__dummy.html", null ],
     [ "dpp::json_interface< T >", "structdpp_1_1json__interface.html", null ],
