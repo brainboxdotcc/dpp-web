@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1dns__cache__entry" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::dns_cache_entry</compoundname>
+    <includes local="no">dns.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1dns__cache__entry_1a720c4119d31abe7ca9d27ee003f5509d" prot="public" static="no" mutable="no">
+        <type>addrinfo</type>
+        <definition>addrinfo dpp::dns_cache_entry::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>Resolved address metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="47" column="10" bodyfile="include/dpp/dns.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1dns__cache__entry_1abf6173c8e1b49d5fbd6d8ddfc0104f12" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dpp::dns_cache_entry::resolved_addr</definition>
+        <argsstring></argsstring>
+        <name>resolved_addr</name>
+        <briefdescription>
+<para>Resolved address as string. The metadata is needed to know what type of address it is. Do not do silly stuff like just looking to see if &apos;.&apos; is in it! </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="54" column="13" bodyfile="include/dpp/dns.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1dns__cache__entry_1accaac1bd8043c6166599c28066f209fe" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t dpp::dns_cache_entry::expire_timestamp</definition>
+        <argsstring></argsstring>
+        <name>expire_timestamp</name>
+        <briefdescription>
+<para>Time at which this cache entry is invalidated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="59" column="8" bodyfile="include/dpp/dns.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1dns__cache__entry_1af59375b3b9dd1d395dca6f37a9ea98a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dpp::dns_cache_entry::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Get address length. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>address length </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="65" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1dns__cache__entry_1a903ed38249ef261e29fd8c24da600e2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdpp_1_1address__t" kindref="compound">address_t</ref></type>
+        <definition>const address_t dpp::dns_cache_entry::get_connecting_address</definition>
+        <argsstring>(uint16_t port) const</argsstring>
+        <name>get_connecting_address</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Get the <ref refid="classdpp_1_1address__t" kindref="compound">address_t</ref> that corresponds to this cache entry for use when connecting with ::connect() </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Port number to connect to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classdpp_1_1address__t" kindref="compound">address_t</ref> prefilled with the IP and port number </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="73" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1dns__cache__entry_1a52c92242ce06923b9758c1cce6bd2068" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacedpp_1acfb6805855456fe93068c474c8f977c7" kindref="member">socket</ref></type>
+        <definition>socket dpp::dns_cache_entry::make_connecting_socket</definition>
+        <argsstring>() const</argsstring>
+        <name>make_connecting_socket</name>
+        <briefdescription>
+<para>Allocate a socket file descriptor for the given dns address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>File descriptor ready for calling connect(), or INVALID_SOCKET on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/dns.h" line="80" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a cached DNS result. Used by the <ref refid="classdpp_1_1ssl__client" kindref="compound">ssl_client</ref> class to store cached copies of dns lookups. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>addrinfo</label>
+      </node>
+      <node id="1">
+        <label>dpp::dns_cache_entry</label>
+        <link refid="structdpp_1_1dns__cache__entry"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>resolved_addr</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>expire_timestamp</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>time_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/dns.h" line="43" column="1" bodyfile="include/dpp/dns.h" bodystart="43" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1dns__cache__entry_1a720c4119d31abe7ca9d27ee003f5509d" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>addr</name></member>
+      <member refid="structdpp_1_1dns__cache__entry_1accaac1bd8043c6166599c28066f209fe" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>expire_timestamp</name></member>
+      <member refid="structdpp_1_1dns__cache__entry_1a903ed38249ef261e29fd8c24da600e2f" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>get_connecting_address</name></member>
+      <member refid="structdpp_1_1dns__cache__entry_1a52c92242ce06923b9758c1cce6bd2068" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>make_connecting_socket</name></member>
+      <member refid="structdpp_1_1dns__cache__entry_1abf6173c8e1b49d5fbd6d8ddfc0104f12" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>resolved_addr</name></member>
+      <member refid="structdpp_1_1dns__cache__entry_1af59375b3b9dd1d395dca6f37a9ea98a3" prot="public" virt="non-virtual"><scope>dpp::dns_cache_entry</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

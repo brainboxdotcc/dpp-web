@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structdpp_1_1dave__binary__header__t" kind="struct" language="C++" prot="public">
+    <compoundname>dpp::dave_binary_header_t</compoundname>
+    <includes local="no">discordvoiceclient.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdpp_1_1dave__binary__header__t_1ae49b0e6606bb31cf2ca14b34a1141414" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::dave_binary_header_t::seq</definition>
+        <argsstring></argsstring>
+        <name>seq</name>
+        <briefdescription>
+<para>Sequence number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="181" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1dave__binary__header__t_1aeea77dd397cfb9be4c9754cf336683b6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dpp::dave_binary_header_t::opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+<para>Opcode type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="186" column="9" bodyfile="include/dpp/discordvoiceclient.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdpp_1_1dave__binary__header__t_1acdaf4196a19f0a7a64c3bfd54810523e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; dpp::dave_binary_header_t::package</definition>
+        <argsstring></argsstring>
+        <name>package</name>
+        <briefdescription>
+<para>Data package, an opaque structure passed to the Discord libdave functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="192" column="13" bodyfile="include/dpp/discordvoiceclient.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structdpp_1_1dave__binary__header__t_1a83a23879d48f736d25f1a66ab7665041" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::dave_binary_header_t::transition_id</definition>
+        <argsstring></argsstring>
+        <name>transition_id</name>
+        <briefdescription>
+<para>Transition id, only valid when the opcode is commit and welcome state. Use <ref refid="structdpp_1_1dave__binary__header__t_1a4788a679fedebac72e84387a4cdee3e9" kindref="member">get_transition_id()</ref> to obtain value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="220" column="10" bodyfile="include/dpp/discordvoiceclient.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdpp_1_1dave__binary__header__t_1abae4a7f3e177863d49b5de00a16c74b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dpp::dave_binary_header_t::dave_binary_header_t</definition>
+        <argsstring>(const std::string &amp;buffer)</argsstring>
+        <name>dave_binary_header_t</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Fill binary header from inbound buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inbound websocket buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1dave__binary__header__t_1a2ee1ac0f234a4de5f7a300af70d5765a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt; uint8_t &gt; dpp::dave_binary_header_t::get_data</definition>
+        <argsstring>() const</argsstring>
+        <name>get_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the data package from the packed binary frame, as a vector of uint8_t for use in the libdave functions</para>
+<para><simplesect kind="return"><para>data blob </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="206" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structdpp_1_1dave__binary__header__t_1a4788a679fedebac72e84387a4cdee3e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t dpp::dave_binary_header_t::get_transition_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_transition_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get transition ID for process_commit and process_welcome</para>
+<para><simplesect kind="return"><para>Transition ID </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/discordvoiceclient.h" line="213" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DAVE E2EE Binary frame header. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dpp::dave_binary_header_t</label>
+        <link refid="structdpp_1_1dave__binary__header__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>seq</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>opcode</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>package</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt;</label>
+      </node>
+      <node id="2">
+        <label>uint16_t</label>
+      </node>
+      <node id="3">
+        <label>uint8_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/dpp/discordvoiceclient.h" line="177" column="1" bodyfile="include/dpp/discordvoiceclient.h" bodystart="177" bodyend="221"/>
+    <listofallmembers>
+      <member refid="structdpp_1_1dave__binary__header__t_1abae4a7f3e177863d49b5de00a16c74b0" prot="public" virt="non-virtual"><scope>dpp::dave_binary_header_t</scope><name>dave_binary_header_t</name></member>
+      <member refid="structdpp_1_1dave__binary__header__t_1a2ee1ac0f234a4de5f7a300af70d5765a" prot="public" virt="non-virtual"><scope>dpp::dave_binary_header_t</scope><name>get_data</name></member>
+      <member refid="structdpp_1_1dave__binary__header__t_1a4788a679fedebac72e84387a4cdee3e9" prot="public" virt="non-virtual"><scope>dpp::dave_binary_header_t</scope><name>get_transition_id</name></member>
+      <member refid="structdpp_1_1dave__binary__header__t_1aeea77dd397cfb9be4c9754cf336683b6" prot="public" virt="non-virtual"><scope>dpp::dave_binary_header_t</scope><name>opcode</name></member>
+      <member refid="structdpp_1_1dave__binary__header__t_1acdaf4196a19f0a7a64c3bfd54810523e" prot="public" virt="non-virtual"><scope>dpp::dave_binary_header_t</scope><name>package</name></member>
+      <member refid="structdpp_1_1dave__binary__header__t_1ae49b0e6606bb31cf2ca14b34a1141414" prot="public" virt="non-virtual"><scope>dpp::dave_binary_header_t</scope><name>seq</name></member>
+      <member refid="structdpp_1_1dave__binary__header__t_1a83a23879d48f736d25f1a66ab7665041" prot="private" virt="non-virtual"><scope>dpp::dave_binary_header_t</scope><name>transition_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

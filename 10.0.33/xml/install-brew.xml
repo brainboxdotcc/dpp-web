@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="install-brew" kind="page">
+    <compoundname>install-brew</compoundname>
+    <title>Installing from Homebrew (OSX)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>To install D++ from brew, follow the steps below:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">brew<sp/>install<sp/>libdpp</highlight></codeline>
+<codeline><highlight class="normal">brew<sp/>link<sp/>libdpp</highlight></codeline>
+</programlisting></para>
+<para>This command will install libdpp and setup links.</para>
+<para>If it can&apos;t detect libdpp, please do <computeroutput>brew update</computeroutput> and repeat the steps above.</para>
+<para>You will now be able to use D++ by including its library on the command line:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">clang++<sp/>-std=c++17<sp/>-L/opt/homebrew/lib<sp/>-I/opt/homebrew/include<sp/>-ldpp<sp/>mybot.cpp<sp/>-o<sp/>mybot</highlight></codeline>
+</programlisting></para>
+<para><para><simplesect kind="note"><para>Compiling your bot with a raw <computeroutput>g++</computeroutput> command is not advised in any real project, and the example above should be used only as a test. From here, you should learn to create a bot in D++ by moving on to <ref refid="buildcmake" kindref="compound">Building a Discord Bot Using CMake (UNIX)</ref> or if you have not yet created a token for your bot, <ref refid="creating-a-bot-application" kindref="compound">Creating a Bot Token</ref> - If you are having trouble setting up CMake, you can try <ulink url="https://github.com/brainboxdotcc/templatebot">our template cmake bot project</ulink>.</para>
+</simplesect>
+</para>
+</para>
+<sect2 id="install-brew_1autotoc_md154">
+<title>Uninstalling &amp; Unlinking</title>
+<para>To unlink and uninstall dpp, run <programlisting filename=".bash"><codeline><highlight class="normal">brew<sp/>unlink<sp/>libdpp</highlight></codeline>
+<codeline><highlight class="normal">brew<sp/>uninstall<sp/>libdpp</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="note"><para>As a precaution, double check inside <computeroutput>/opt/homebrew/lib</computeroutput> and <computeroutput>/opt/homebrew/include</computeroutput> to make sure that libdpp does not exist. If it does, remove files/folders relating to libdpp. If there are files left here and you don&apos;t remove them, you may see issues arise with different versions of D++. Sometimes, it may still act like some version of D++ exists, if it does that then please restart your system!</para>
+</simplesect>
+<bold>Have fun!</bold> </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/install/install-brew.md"/>
+  </compounddef>
+</doxygen>

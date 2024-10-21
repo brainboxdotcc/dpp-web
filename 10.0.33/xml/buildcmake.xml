@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="buildcmake" kind="page">
+    <compoundname>buildcmake</compoundname>
+    <title>Building a Discord Bot Using CMake (UNIX)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="warning"><para><bold>This tutorial will assume that you have already installed DPP.</bold> If you haven&apos;t, please head over to <ref refid="install-linux-deb" kindref="compound">this page</ref>, or any install page that matches your OS. If you want to use source, then continue your journey over at <ref refid="buildlinux" kindref="compound">this page</ref> for a full explanation into using CMake with source.</para>
+</simplesect>
+</para>
+<sect2 id="buildcmake_1autotoc_md161">
+<title>1. Toolchain</title>
+<para>Before continuing, you will need to install <computeroutput>cmake</computeroutput> on your system. To be sure that <computeroutput>cmake</computeroutput> is installed, you can type the following command:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">$<sp/>cmake<sp/>--version</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>version<sp/>3.22.1</highlight></codeline>
+</programlisting></para>
+<para>If your CMake version is not as shown above then don&apos;t worry! You can still follow along, even if you&apos;re ahead or behind!</para>
+</sect2>
+<sect2 id="buildcmake_1autotoc_md162">
+<title>2. Create a CMake project</title>
+<para>In an empty directory, create the following files and directories:</para>
+<para><dot>
+digraph &quot;Example Directory&quot; {
+    graph [ranksep=1];
+    node [colorscheme=&quot;blues9&quot;, fontname=&quot;helvetica&quot;];
+    
+    &quot;Your Directory&quot; [style=filled, color=1, shape=rect]
+    
+    subgraph cluster_0 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=2, shape=rect]
+        build;
+        cmake;
+        src;
+        &quot;CMakeLists.txt&quot;;
+        label = &quot;The main area for your bot&apos;s files.&quot;;
+    }
+    
+    subgraph cluster_1 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;FindDPP.cmake&quot;;
+        label = &quot;This file is to tell CMake where DPP is.&quot;;
+    }
+    
+    subgraph cluster_2 {
+        style=filled;
+        color=lightgrey;
+        node [style=filled, color=3, shape=rect]
+        &quot;main.cpp&quot;;
+        &quot;main.h&quot;;
+        &quot;more code...&quot;;
+        label = &quot;This is where your bot&apos;s code will go.&quot;;
+    }
+    
+    &quot;Your Directory&quot; -&gt; build;
+    &quot;Your Directory&quot; -&gt; src;
+    &quot;Your Directory&quot; -&gt; cmake;
+    &quot;Your Directory&quot; -&gt; &quot;CMakeLists.txt&quot;;
+    
+    cmake -&gt; &quot;FindDPP.cmake&quot;;
+    
+    src -&gt; &quot;main.cpp&quot;;
+    src -&gt; &quot;main.h&quot;;
+    src -&gt; &quot;more code...&quot;;
+}
+</dot>
+</para>
+</sect2>
+<sect2 id="buildcmake_1autotoc_md163">
+<title>3. Configure CMake</title>
+<para>You&apos;ll need to modify the <computeroutput>CMakeLists.txt</computeroutput> to tell CMake what it&apos;s looking for, and other information.</para>
+<para>Here is an example CMake configuration, you can adapt it according to your needs:</para>
+<para><programlisting filename=".cmake"><codeline><highlight class="normal">#<sp/>Minimum<sp/>CMake<sp/>version<sp/>required,<sp/>we&apos;ll<sp/>just<sp/>use<sp/>the<sp/>latest<sp/>version.</highlight></codeline>
+<codeline><highlight class="normal">cmake_minimum_required(VERSION<sp/>3.22)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Project<sp/>name,<sp/>version<sp/>and<sp/>description</highlight></codeline>
+<codeline><highlight class="normal">project(discord-bot<sp/>VERSION<sp/>1.0<sp/>DESCRIPTION<sp/>&quot;A<sp/>discord<sp/>bot&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">list(APPEND<sp/>CMAKE_MODULE_PATH<sp/>${CMAKE_CURRENT_SOURCE_DIR}/cmake)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Create<sp/>an<sp/>executable</highlight></codeline>
+<codeline><highlight class="normal">add_executable(${PROJECT_NAME}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>src/main.cpp</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Find<sp/>our<sp/>pre-installed<sp/>DPP<sp/>package<sp/>(using<sp/>FindDPP.cmake).</highlight></codeline>
+<codeline><highlight class="normal">find_package(DPP<sp/>REQUIRED)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Link<sp/>the<sp/>pre-installed<sp/>DPP<sp/>package.</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(${PROJECT_NAME}<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>${DPP_LIBRARIES}</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Include<sp/>the<sp/>DPP<sp/>directories.</highlight></codeline>
+<codeline><highlight class="normal">target_include_directories(${PROJECT_NAME}<sp/>PRIVATE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>${DPP_INCLUDE_DIR}</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>C++<sp/>version</highlight></codeline>
+<codeline><highlight class="normal">set_target_properties(${PROJECT_NAME}<sp/>PROPERTIES</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD<sp/>17</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CXX_STANDARD_REQUIRED<sp/>ON</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+</programlisting></para>
+<para>We&apos;ll also need to populate our <computeroutput>FindDPP.cmake</computeroutput> file, inside the <computeroutput>cmake</computeroutput> directory!</para>
+<para>Here&apos;s what you should use:</para>
+<para><programlisting filename=".cmake"><codeline><highlight class="normal">find_path(DPP_INCLUDE_DIR<sp/>NAMES<sp/>dpp/dpp.h<sp/>HINTS<sp/>${DPP_ROOT_DIR})</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">find_library(DPP_LIBRARIES<sp/>NAMES<sp/>dpp<sp/>&quot;libdpp.a&quot;<sp/>HINTS<sp/>${DPP_ROOT_DIR})</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">include(FindPackageHandleStandardArgs)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">find_package_handle_standard_args(DPP<sp/>DEFAULT_MSG<sp/>DPP_LIBRARIES<sp/>DPP_INCLUDE_DIR)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="buildcmake_1autotoc_md164">
+<title>4. Build the bot.</title>
+<para>Now that we have our all our cmake stuff setup and we&apos;ve got our code in place, we can initalise CMake. You&apos;ll want to go inside the <computeroutput>build/</computeroutput> directory and do <computeroutput>cmake ..</computeroutput>.</para>
+<para>Once that&apos;s completed, you&apos;ll want to head back to your up-most folder (where all the folders are for your bot) and run <computeroutput>cmake --build build/ -j4</computeroutput> (replace -j4 with however many threads you want to use). This will start compiling your bot and creating the executable.</para>
+<para>After that has finished, you can head into <computeroutput>build/</computeroutput> and run your bot by doing <computeroutput>./discord-bot</computeroutput>! If everything went well, you should see your bot come online!</para>
+<para><bold>Have fun!</bold> </para>
+</sect2>
+    </detaileddescription>
+    <location file="docpages/make_a_bot/cmake.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="using-coroutines" kind="page">
+    <compoundname>using-coroutines</compoundname>
+    <title>Using Coroutines</title>
+    <innerpage refid="coro-introduction">Introduction to coroutines</innerpage>
+    <innerpage refid="coro-simple-commands">Making simple commands</innerpage>
+    <innerpage refid="awaiting-events">Waiting for events</innerpage>
+    <innerpage refid="expiring-buttons">Making expiring buttons with when_any</innerpage>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><para><simplesect kind="warning"><para>D++ Coroutines are a very new feature and are currently only supported by D++ on g++ 13, clang/LLVM 14, and MSVC 19.37 or above. Additionally, D++ must be built with the CMake option DPP_CORO, and your program must both define the macro DPP_CORO and use C++20 or above. </para>
+</simplesect>
+</para>
+</para>
+<para>One of the most anticipated features of C++20 is the addition of coroutines: in short, they are functions that can be paused while waiting for data and resumed when that data is ready. They make asynchronous programs much easier to write, but they do come with additional dangers and subtleties.</para>
+<para><itemizedlist>
+<listitem><para><ref refid="coro-introduction" kindref="compound">Introduction to coroutines</ref></para>
+</listitem><listitem><para><ref refid="coro-simple-commands" kindref="compound">Making simple commands</ref></para>
+</listitem><listitem><para><ref refid="awaiting-events" kindref="compound">Waiting for events</ref></para>
+</listitem><listitem><para><ref refid="expiring-buttons" kindref="compound">Making expiring buttons with when_any</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>Coroutines are currently disabled by default; to use them you will need to build D++ <ref refid="install-from-source" kindref="compound">from source</ref> and use the option <computeroutput>-DDPP_CORO=on</computeroutput> in your CMake command. Your application also needs to enable C++20 and define DPP_CORO, by using:<itemizedlist>
+<listitem><para><computeroutput>-std=c++20 -DDPP_CORO</computeroutput> in your build command if building manually, or</para>
+</listitem><listitem><para>if using CMake, add <computeroutput>target_compile_definitions(my_program PUBLIC DPP_CORO)</computeroutput> and <computeroutput>target_compile_features(my_program PUBLIC cxx_std_20)</computeroutput>. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="docpages/example_programs/using_coroutines.md"/>
+  </compounddef>
+</doxygen>

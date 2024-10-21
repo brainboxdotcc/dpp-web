@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="namespacedpp_1_1detail_1_1when__any" kind="namespace" language="C++">
+    <compoundname>dpp::detail::when_any</compoundname>
+    <innerclass refid="structdpp_1_1detail_1_1when__any_1_1arg__helper__s" prot="public">dpp::detail::when_any::arg_helper_s</innerclass>
+    <innerclass refid="structdpp_1_1detail_1_1when__any_1_1arg__helper__s_3_01dpp_1_1event__router__t_3_01_t_01_4_01_4" prot="public">dpp::detail::when_any::arg_helper_s&lt; dpp::event_router_t&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structdpp_1_1detail_1_1when__any_1_1empty" prot="public">dpp::detail::when_any::empty</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacedpp_1_1detail_1_1when__any_1a2e21fb5fc3cc30494804672faf85f3c1" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>await_state</name>
+        <enumvalue id="namespacedpp_1_1detail_1_1when__any_1a2e21fb5fc3cc30494804672faf85f3c1a3bebb2f89180b03fa5ae736665f648d9" prot="public">
+          <name>started</name>
+          <briefdescription>
+<para>Object was started but not awaited. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1when__any_1a2e21fb5fc3cc30494804672faf85f3c1acb05cab65afefab8fd3831d92cfc68be" prot="public">
+          <name>waiting</name>
+          <briefdescription>
+<para>Object is being awaited. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1when__any_1a2e21fb5fc3cc30494804672faf85f3c1a6b2ded51d81a4403d8a4bd25fa1e57ee" prot="public">
+          <name>done</name>
+          <briefdescription>
+<para>Object was resumed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacedpp_1_1detail_1_1when__any_1a2e21fb5fc3cc30494804672faf85f3c1a4930128e58930768b1c1c75026ebc649" prot="public">
+          <name>dangling</name>
+          <briefdescription>
+<para>Object was destroyed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Current state of a <ref refid="namespacedpp_1_1detail_1_1when__any" kindref="compound">when_any</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="56" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="56" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacedpp_1_1detail_1_1when__any_1ab93577972e3b54b64b033d6816f1e0d3" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>typename <ref refid="structdpp_1_1detail_1_1when__any_1_1arg__helper__s" kindref="compound">arg_helper_s</ref>&lt; T &gt;::type</type>
+        <definition>using dpp::detail::when_any::awaitable_type = typedef typename arg_helper_s&lt;T&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>awaitable_type</name>
+        <briefdescription>
+<para>Alias for the actual type that an awaitable will be stored as in a <ref refid="namespacedpp_1_1detail_1_1when__any" kindref="compound">when_any</ref>. For example if given an <ref refid="namespacedpp_1_1detail_1_1event__router" kindref="compound">event_router</ref>, store the awaitable, not the <ref refid="namespacedpp_1_1detail_1_1event__router" kindref="compound">event_router</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="108" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1_1detail_1_1when__any_1a1a0fb6b7f2a22baa4949f4d304d2acf7" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdpp_1_1detail_1_1when__any_1_1arg__helper__s" kindref="compound">arg_helper_s</ref>&lt; std::remove_cvref_t&lt; T &gt; &gt;</type>
+        <definition>using dpp::detail::when_any::arg_helper = typedef arg_helper_s&lt;std::remove_cvref_t&lt;T&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>arg_helper</name>
+        <briefdescription>
+<para>Helper struct with a method to convert an awaitable parameter to the actual value it will be stored as. For example if given an <ref refid="namespacedpp_1_1detail_1_1event__router" kindref="compound">event_router</ref>, store the awaitable, not the <ref refid="namespacedpp_1_1detail_1_1event__router" kindref="compound">event_router</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="115" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedpp_1_1detail_1_1when__any_1a5b63d61135c7b4af100dac2a2c08e8ad" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::conditional_t&lt; std::is_void_v&lt; T &gt;, <ref refid="structdpp_1_1detail_1_1when__any_1_1empty" kindref="compound">empty</ref>, T &gt;</type>
+        <definition>using dpp::detail::when_any::storage_type = typedef std::conditional_t&lt;std::is_void_v&lt;T&gt;, empty, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>storage_type</name>
+        <briefdescription>
+<para>Actual type a result will be stores as in <ref refid="namespacedpp_1_1detail_1_1when__any" kindref="compound">when_any</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dpp/coro/when_any.h" line="126" column="1" bodyfile="include/dpp/coro/when_any.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal cogwheels for <ref refid="classdpp_1_1when__any" kindref="compound">dpp::when_any</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dpp/coro/when_any.h" line="51" column="1"/>
+  </compounddef>
+</doxygen>

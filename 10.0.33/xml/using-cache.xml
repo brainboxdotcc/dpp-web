@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="using-cache" kind="page">
+    <compoundname>using-cache</compoundname>
+    <title>Using Cache</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Sometimes you may need information that is not directly available in the event callback object.</para>
+<para>To handle this DPP maintains a cache of commonly used data for you.</para>
+<para><simplesect kind="note"><para>As of August 30th, 2022, Discord made Guild Members a privileged intent. You must have GUILD_MEMBERS intent enabled for your app from discord developers portal to be able to look for members in cache.</para>
+</simplesect>
+Below is an example showing how to get a user from the cache</para>
+<para><programlisting filename="using_cache.cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;dpp/dpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Create<sp/>bot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1cluster" kindref="compound">dpp::cluster</ref><sp/>bot(</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a561a52b3c6883808735c41891351c68f" kindref="member">dpp::i_default_intents</ref><sp/>|<sp/><ref refid="namespacedpp_1a0042c0fc8164da4239b977d5be8e2ef5a414f0f169996a09f8fd1d423517dc0d0" kindref="member">dpp::i_guild_members</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_log(<ref refid="namespacedpp_1_1utility_1a8c2cc04bb80ffd287b376d5977899277" kindref="member">dpp::utility::cout_logger</ref>());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>event<sp/>is<sp/>fired<sp/>when<sp/>someone<sp/>removes<sp/>their<sp/>reaction<sp/>from<sp/>a<sp/>message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.on_message_reaction_remove([&amp;bot](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdpp_1_1message__reaction__remove__t" kindref="compound">dpp::message_reaction_remove_t</ref>&amp;<sp/>event)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Find<sp/>the<sp/>user<sp/>in<sp/>the<sp/>cache<sp/>using<sp/>his<sp/>discord<sp/>id<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdpp_1_1user" kindref="compound">dpp::user</ref>*<sp/>reacting_user<sp/>=<sp/><ref refid="namespacedpp_1aafb458435d5650149340555ecd43f93f" kindref="member">dpp::find_user</ref>(event.<ref refid="structdpp_1_1message__reaction__remove__t_1aa4086eee72124257c292aa11db1a7433" kindref="member">reacting_user_id</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>user<sp/>not<sp/>found<sp/>in<sp/>cache,<sp/>log<sp/>and<sp/>return<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!reacting_user)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a2219e945b7b3bff23816011423d2504a" kindref="member">dpp::ll_info</ref>,<sp/></highlight><highlight class="stringliteral">&quot;User<sp/>with<sp/>the<sp/>id<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(event.<ref refid="structdpp_1_1message__reaction__remove__t_1aa4086eee72124257c292aa11db1a7433" kindref="member">reacting_user_id</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>was<sp/>not<sp/>found.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot.log(<ref refid="namespacedpp_1a7d48d478ccc3bffb34637bdb48f629c2a2219e945b7b3bff23816011423d2504a" kindref="member">dpp::ll_info</ref>,<sp/>reacting_user-&gt;<ref refid="classdpp_1_1user_1aa8e70346690b38db060af1d0f84ac1d7" kindref="member">format_username</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>removed<sp/>his<sp/>reaction.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bot.start(<ref refid="namespacedpp_1af447e04d0490cd4a9de085e4a758faa4a155f7db65696b4c09b5fcc41787e4726" kindref="member">dpp::st_wait</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>DPP caches more than just users, which you can get using the below-mentioned functions:<itemizedlist>
+<listitem><para><computeroutput><ref refid="namespacedpp_1a608a89c45f1a0d89535b9165a1225ada" kindref="member">dpp::find_role()</ref></computeroutput></para>
+</listitem><listitem><para><computeroutput><ref refid="namespacedpp_1a165978ef81875d2798e78c6eaf4eeafd" kindref="member">dpp::find_channel()</ref></computeroutput></para>
+</listitem><listitem><para><computeroutput><ref refid="namespacedpp_1ae8d93509900eb7e29e07170369f79a3d" kindref="member">dpp::find_emoji()</ref></computeroutput></para>
+</listitem><listitem><para><computeroutput><ref refid="namespacedpp_1ac702a9b30627be07d4f23bf0ad14afcb" kindref="member">dpp::find_guild()</ref></computeroutput></para>
+</listitem><listitem><para><computeroutput><ref refid="namespacedpp_1a239ce3fb8b4d9873dffeb5cb9b249f5d" kindref="member">dpp::find_guild_member()</ref></computeroutput> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="docpages/example_programs/the_basics/using_cache.md"/>
+  </compounddef>
+</doxygen>
